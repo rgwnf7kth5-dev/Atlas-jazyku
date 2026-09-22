@@ -72,7 +72,7 @@ u každého pushe.
 ## Výkon
 
 Glóbus má čtyři plátna nad sebou: `#podklad` (koule, síť, hranice – 2D), `#gl` (31 741 teček pevniny
-a 7 967 světélek – WebGL, bez něj záložní 2D), `#popisky` a `#globus` (oblouky, prstenec, zaměřovač; bere myš).
+a 7 967 světélek – WebGL, bez něj záložní 2D), `#popisky` a `#globus` (oblouky a zaměřovač; bere myš).
 Každé se překresluje, jen když je potřeba. Neměř jen JS – drahá je rasterizace a skládání vrstev.
 `ctx.filter` (blur) stál 52 ms na snímek, proto se nepoužívá. Hustota pixelů 2D pláten je u velkého
 plátna omezená na 1,35. Koule s atmosférou se kreslí do zásoby, hranice států až od přiblížení 1,4×.
