@@ -1,0 +1,97 @@
+<svg aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
+ <symbol id="i-hvezda" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.6l2.7 5.8 6.3.8-4.6 4.4 1.2 6.3L12 16.8 6.4 19.9l1.2-6.3L3 9.2l6.3-.8z"/></symbol>
+ <symbol id="i-slunce" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.5 1.5M17.6 17.6l1.5 1.5M19.1 4.9l-1.5 1.5M6.4 17.6l-1.5 1.5"/></symbol>
+ <symbol id="i-mesic" viewBox="0 0 24 24"><path fill="currentColor" d="M20.7 14.6A8.6 8.6 0 0 1 9.4 3.3a8.6 8.6 0 1 0 11.3 11.3z"/></symbol>
+ <symbol id="i-kostka" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="4.4"/><circle cx="8.4" cy="8.4" r="1.4" fill="currentColor" stroke="none"/><circle cx="15.6" cy="15.6" r="1.4" fill="currentColor" stroke="none"/><circle cx="15.6" cy="8.4" r="1.4" fill="currentColor" stroke="none"/><circle cx="8.4" cy="15.6" r="1.4" fill="currentColor" stroke="none"/></symbol>
+ <symbol id="i-svet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="9.2"/><path d="M2.8 12h18.4M12 2.8c2.6 2.6 3.9 6 3.9 9.2s-1.3 6.6-3.9 9.2c-2.6-2.6-3.9-6-3.9-9.2S9.4 5.4 12 2.8z"/></symbol>
+ <symbol id="i-zvuk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M4 9.2h3.4L12 5v14l-4.6-4.2H4z" fill="currentColor"/><path d="M16 9.4a3.7 3.7 0 0 1 0 5.2M18.7 6.7a7.5 7.5 0 0 1 0 10.6" stroke-linecap="round"/></symbol>
+ <symbol id="i-lupa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="10.6" cy="10.6" r="6.6"/><path d="M15.4 15.4L21 21"/></symbol>
+ <symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></symbol>
+ <symbol id="i-minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M5 12h14"/></symbol>
+ <symbol id="i-krizek" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></symbol>
+</svg>
+
+<div class="app">
+ <header class="hlava">
+  <svg class="znak" viewBox="0 0 48 48" aria-hidden="true">
+   <circle cx="22" cy="24" r="17" fill="var(--ocean)" stroke="var(--inkoust)" stroke-width="2.6"/>
+   <path d="M15 11c4 7 4 19 0 26M29 11c4 7 4 19 0 26M5.6 18h32.8M5.6 30h32.8" fill="none" stroke="var(--inkoust)" stroke-width="1.5" opacity=".35"/>
+   <path d="M12 17c3-2 6 1 9-.5s6 2 8 .5c1 2 .5 4-1 5-4 2-7-1-10 .5s-6-1-7-3 0-2.5 1-2.5z" fill="var(--r-nk)" stroke="var(--inkoust)" stroke-width="1.6" stroke-linejoin="round"/>
+   <path d="M13 31c3-1.5 5 1 8 0s5 1.5 7 .5c.5 2-1 4-3 4.5-4 1-6-1-9 0s-4-1.5-4-3 .5-1.8 1-2z" fill="var(--r-afro)" stroke="var(--inkoust)" stroke-width="1.6" stroke-linejoin="round"/>
+   <g transform="translate(29 3)">
+    <path d="M2 0h13a3 3 0 0 1 3 3v7a3 3 0 0 1-3 3H8l-5 4 1-4H2a3 3 0 0 1-3-3V3a3 3 0 0 1 3-3z" fill="var(--akcent)" stroke="var(--inkoust)" stroke-width="2"/>
+    <circle cx="4.5" cy="6.5" r="1.3" fill="#fff"/><circle cx="9" cy="6.5" r="1.3" fill="#fff"/><circle cx="13.5" cy="6.5" r="1.3" fill="#fff"/>
+   </g>
+  </svg>
+  <div class="nadpisy">
+   <h1>{{nazev}}</h1>
+   <p class="podnadpis">{{podnadpis}}</p>
+  </div>
+  <p class="sbirka" title="{{sbirkaTitulek}}"><svg aria-hidden="true"><use href="#i-hvezda"/></svg><span id="sbirka-text"></span></p>
+  <a class="jazyk-prepinac" id="jazyk-prepinac" href="{{odkazJinam}}" hreflang="{{jinyKod}}" lang="{{jinyKod}}" title="{{jinyJazykPopis}}">{{jinyJazyk}}</a>
+  <button class="prepinac" id="prepinac" type="button" aria-label="{{motiv}}">
+   <svg aria-hidden="true"><use href="#i-mesic" id="ikona-rezim"/></svg>
+  </button>
+ </header>
+
+ <div class="mriz">
+  <section class="scena" id="scena" aria-label="{{scena}}">
+   <canvas id="globus" role="img" aria-label="{{platno}}"></canvas>
+   <div class="ovladani">
+    <button class="tl hlavni" id="tl-nahoda" type="button"><svg aria-hidden="true"><use href="#i-kostka"/></svg>{{prekvap}}</button>
+    <button class="tl" id="tl-cely" type="button" hidden><svg aria-hidden="true"><use href="#i-svet"/></svg>{{celySvet}}</button>
+    <div class="zoom-ovl" role="group" aria-label="{{zoomSkupina}}">
+     <button class="kolo" id="tl-oddal" type="button" aria-label="{{oddalit}}"><svg aria-hidden="true"><use href="#i-minus"/></svg></button>
+     <span class="zoom-hod" id="zoom-hod">1,0&times;</span>
+     <button class="kolo" id="tl-priblizi" type="button" aria-label="{{priblizit}}"><svg aria-hidden="true"><use href="#i-plus"/></svg></button>
+    </div>
+   </div>
+   <p class="napoveda" id="napoveda">{{napovedaStart}}</p>
+   <div class="zeme-okno" id="zeme-okno" hidden></div>
+   <div class="bublina-bod" id="bublina-bod" hidden></div>
+   <div class="vypadek" id="vypadek" hidden>
+    <strong>{{vypadekNadpis}}</strong>
+    <span>{{vypadekText}}</span>
+   </div>
+   <p class="legenda" id="legenda"><i></i>{{legenda}}</p>
+
+   <article class="karta" id="karta" hidden aria-live="polite">
+    <div class="karta-hlava">
+     <div>
+      <h2 id="k-nazev"></h2>
+      <p class="domaci" id="k-domaci"></p>
+      <span class="odznak" id="k-odznak" hidden></span>
+     </div>
+     <button class="zavrit" id="k-zavrit" type="button" aria-label="{{zavritKartu}}"><svg aria-hidden="true"><use href="#i-krizek"/></svg></button>
+    </div>
+    <p class="rejstrik-pozn" id="k-pozn" hidden></p>
+    <div id="k-plne">
+     <div class="bublina" id="k-bublina">
+      <p class="pozdrav" id="k-pozdrav"></p>
+      <p class="prepis" id="k-prepis"></p>
+      <button class="prehraj" id="k-prehraj" type="button"><svg aria-hidden="true"><use href="#i-zvuk"/></svg><span>{{poslechni}}</span></button>
+      <p class="stav" id="k-stav" hidden></p>
+     </div>
+     <dl class="udaje">
+      <div class="udaj"><dt>{{mluvcich}}</dt><dd id="k-mluvcich"></dd></div>
+      <div class="udaj"><dt>{{rodina}}</dt><dd id="k-rodina" class="rodina-txt"></dd></div>
+     </dl>
+     <p class="fakt"><b>{{vis}}</b><span id="k-fakt"></span></p>
+    </div>
+    <div class="kde" id="k-kde"><span>{{kdeMluvi}}</span><ul class="staty" id="k-staty"></ul></div>
+   </article>
+  </section>
+
+  <aside class="police" aria-label="{{seznam}}">
+   <div class="hledani">
+    <label class="pole">
+     <svg aria-hidden="true"><use href="#i-lupa"/></svg>
+     <input id="hledej" type="search" placeholder="{{hledejPlaceholder}}" aria-label="{{hledejPopisek}}">
+    </label>
+    <p class="pocet" id="pocet"></p>
+   </div>
+   <div class="seznam" id="seznam"></div>
+   <p class="zdroje">{{zdroje}}</p>
+  </aside>
+ </div>
+</div>

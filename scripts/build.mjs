@@ -1,0 +1,93 @@
+// Sestaví obě jazykové verze Atlasu jazyků z jedné šablony.
+//   node scripts/build.mjs                    → dist/index.html (česky), dist/en/index.html (anglicky)
+//   node scripts/build.mjs --artefakt SLOŽKA  → navíc samotné fragmenty pro publikování jako artefakt
+// Adresy druhé jazykové verze u artefaktů: proměnné ODKAZ_CS a ODKAZ_EN.
+import fs from "node:fs";
+import path from "node:path";
+
+const KOREN = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
+const cti = p => fs.readFileSync(path.join(KOREN, p), "utf8");
+const json = p => JSON.parse(cti(p));
+
+const jazykyAtlasu = json("data/languages.json");
+const nazvyZemi = json("data/country-names.json");
+const glottolog = json("data/glottolog.json");
+const rodinyCz = json("data/glottolog-families.cs.json");
+const svet = cti("data/countries-110m.json");
+const knihovny = ["vendor/d3-array.min.js", "vendor/d3-geo.min.js", "vendor/topojson-client.min.js"].map(cti);
+const styly = cti("src/styles.css");
+const telo = cti("src/body.html");
+const aplikace = cti("src/app.js");
+
+const RODINY_EN = { "Isolate": "isolate – no known relatives", "Sign Language": "sign language", "Pidgin": "pidgin" };
+const escHtml = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+// data jdou do <script>, proto „<“ zapíšu jako < – řetězec „</script>“ v datech by stránku rozbil
+const doSkriptu = hodnota => (typeof hodnota === "string" ? hodnota : JSON.stringify(hodnota)).replace(/</g, "\\u003c");
+
+function sestav(lang, { odkazJinam, artefakt }) {
+  const ui = json(`src/ui/${lang}.json`);
+  const jiny = lang === "cs" ? "en" : "cs";
+  const pocet = glottolog.body.length.toLocaleString(ui.locale);
+  const T = { ...ui, podnadpis: ui.podnadpis.replace("{pocet}", pocet), legenda: ui.legenda.replace("{pocet}", pocet) };
+
+  const JAZYKY = jazykyAtlasu.map(j => {
+    const p = j[lang];
+    return { id: j.id, sk: j.skupina, pis: p.pozdrav || j.pozdrav, dom: j.domaci, mlu: j.mluvcich, kod: j.kod,
+             stred: j.stred, zeme: j.zeme, ob: j.areal, n: p.nazev, prep: p.vyslovnost, rod: p.rodina, fakt: p.fakt };
+  });
+  const REJSTRIK = {
+    r: glottolog.rodiny.map(r => lang === "cs" ? (rodinyCz[r] || r) : (RODINY_EN[r] || r)),
+    m: glottolog.makro.map(m => (m && T.makro[m]) || ""),
+    b: glottolog.body
+  };
+
+  const zastupne = { ...T, odkazJinam, jinyKod: jiny };
+  let html = telo.replace(/\{\{(\w+)\}\}/g, (_, k) => {
+    if (!(k in zastupne)) throw new Error(`V šabloně je {{${k}}}, ale v src/ui/${lang}.json chybí.`);
+    return escHtml(zastupne[k]);
+  });
+  if (artefakt) html = html.replace('id="jazyk-prepinac"', 'id="jazyk-prepinac" target="_blank" rel="noopener"');
+
+  const skript = aplikace
+    .replace("/*__UI__*/null", () => doSkriptu(T))
+    .replace("/*__SVET__*/null", () => doSkriptu(svet))
+    .replace("/*__JAZYKY__*/null", () => doSkriptu(JAZYKY))
+    .replace("/*__STATY__*/null", () => doSkriptu(nazvyZemi[lang]))
+    .replace("/*__REJSTRIK__*/null", () => doSkriptu(REJSTRIK));
+  const skripty = knihovny.map(k => `<script>${k}</script>`).join("\n") + `\n<script>${skript}</script>`;
+
+  const hlavicka =
+    `<title>${escHtml(T.nazev)}</title>\n` +
+    `<meta name="description" content="${escHtml(T.popis)}">\n` +
+    `<link rel="preconnect" href="https://fonts.googleapis.com">\n` +
+    `<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n` +
+    `<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,700;1,800&display=swap">\n` +
+    `<style>\n${styly}</style>\n`;
+
+  const fragment = hlavicka + html + "\n" + skripty + "\n";
+  const dokument = `<!doctype html>\n<html lang="${lang}">\n<head>\n<meta charset="utf-8">\n` +
+    `<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n` +
+    hlavicka + `</head>\n<body>\n${html}\n${skripty}\n</body>\n</html>\n`;
+  return { fragment, dokument };
+}
+
+const argumenty = process.argv.slice(2);
+const i = argumenty.indexOf("--artefakt");
+const slozkaArtefaktu = i >= 0 ? path.resolve(argumenty[i + 1]) : null;
+
+const cs = sestav("cs", { odkazJinam: "en/index.html", artefakt: false });
+const en = sestav("en", { odkazJinam: "../index.html", artefakt: false });
+fs.mkdirSync(path.join(KOREN, "dist/en"), { recursive: true });
+fs.writeFileSync(path.join(KOREN, "dist/index.html"), cs.dokument);
+fs.writeFileSync(path.join(KOREN, "dist/en/index.html"), en.dokument);
+const kb = s => (Buffer.byteLength(s) / 1024).toFixed(0) + " kB";
+console.log(`dist/index.html (česky) ${kb(cs.dokument)}, dist/en/index.html (anglicky) ${kb(en.dokument)}`);
+
+if (slozkaArtefaktu) {
+  fs.mkdirSync(slozkaArtefaktu, { recursive: true });
+  const acs = sestav("cs", { odkazJinam: process.env.ODKAZ_EN || "#", artefakt: true });
+  const aen = sestav("en", { odkazJinam: process.env.ODKAZ_CS || "#", artefakt: true });
+  fs.writeFileSync(path.join(slozkaArtefaktu, "atlas-jazyku.html"), acs.fragment);
+  fs.writeFileSync(path.join(slozkaArtefaktu, "language-atlas.html"), aen.fragment);
+  console.log(`artefakty v ${slozkaArtefaktu}`);
+}

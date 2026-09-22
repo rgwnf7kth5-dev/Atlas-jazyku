@@ -1,0 +1,5921 @@
+[
+ {
+  "id": "cs",
+  "skupina": "ie",
+  "pozdrav": "Ahoj!",
+  "domaci": "čeština",
+  "mluvcich": 11,
+  "kod": "cs-CZ",
+  "stred": [
+   15.5,
+   49.8
+  ],
+  "zeme": [
+   "Czechia"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Čeština",
+   "vyslovnost": "ahoj",
+   "rodina": "indoevropská – slovanská",
+   "fakt": "Slovo „robot“ se z češtiny rozletělo do celého světa. Vymyslel ho Josef Čapek pro hru svého bratra Karla."
+  },
+  "en": {
+   "nazev": "Czech",
+   "vyslovnost": "AH-hoy",
+   "rodina": "Indo-European – Slavic",
+   "fakt": "The word “robot” comes from Czech. Josef Čapek invented it for a play by his brother Karel."
+  }
+ },
+ {
+  "id": "sk",
+  "skupina": "ie",
+  "pozdrav": "Ahoj!",
+  "domaci": "slovenčina",
+  "mluvcich": 5,
+  "kod": "sk-SK",
+  "stred": [
+   19.5,
+   48.7
+  ],
+  "zeme": [
+   "Slovakia"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Slovenština",
+   "vyslovnost": "ahoj",
+   "rodina": "indoevropská – slovanská",
+   "fakt": "Čeština a slovenština jsou si tak blízké, že si Češi a Slováci rozumějí bez učení. Málokteré dva jazyky to dokážou."
+  },
+  "en": {
+   "nazev": "Slovak",
+   "vyslovnost": "AH-hoy",
+   "rodina": "Indo-European – Slavic",
+   "fakt": "Czech and Slovak are so close that Czechs and Slovaks understand each other without ever studying the other language."
+  }
+ },
+ {
+  "id": "pl",
+  "skupina": "ie",
+  "pozdrav": "Cześć!",
+  "domaci": "polski",
+  "mluvcich": 45,
+  "kod": "pl-PL",
+  "stred": [
+   19.5,
+   52
+  ],
+  "zeme": [
+   "Poland"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Polština",
+   "vyslovnost": "čéšč",
+   "rodina": "indoevropská – slovanská",
+   "fakt": "Polština má slova, kde jde za sebou pět souhlásek, třeba „bezwzględny“. Zkus to vyslovit!"
+  },
+  "en": {
+   "nazev": "Polish",
+   "vyslovnost": "cheshch",
+   "rodina": "Indo-European – Slavic",
+   "fakt": "Polish has words with five consonants in a row, like “bezwzględny”. Try saying it!"
+  }
+ },
+ {
+  "id": "ru",
+  "skupina": "ie",
+  "pozdrav": "Привет!",
+  "domaci": "русский",
+  "mluvcich": 255,
+  "kod": "ru-RU",
+  "stred": [
+   60,
+   58
+  ],
+  "zeme": [
+   "Russia",
+   "Belarus",
+   "Kazakhstan",
+   "Kyrgyzstan"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Ruština",
+   "vyslovnost": "privjet",
+   "rodina": "indoevropská – slovanská",
+   "fakt": "Píše se azbukou. Písmeno „Я“ vypadá jako obrácené R, ale čte se „ja“ – a samo o sobě znamená „já“."
+  },
+  "en": {
+   "nazev": "Russian",
+   "vyslovnost": "pree-VYET",
+   "rodina": "Indo-European – Slavic",
+   "fakt": "It is written in Cyrillic. The letter “Я” looks like a backwards R, but it is read “ya” – and on its own it means “I”."
+  }
+ },
+ {
+  "id": "uk",
+  "skupina": "ie",
+  "pozdrav": "Привіт!",
+  "domaci": "українська",
+  "mluvcich": 40,
+  "kod": "uk-UA",
+  "stred": [
+   31,
+   49
+  ],
+  "zeme": [
+   "Ukraine"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Ukrajinština",
+   "vyslovnost": "pryvit",
+   "rodina": "indoevropská – slovanská",
+   "fakt": "Ukrajinština má nejvíc zdrobnělin ze všech slovanských jazyků – i sluníčko umí zdrobnit několikrát za sebou."
+  },
+  "en": {
+   "nazev": "Ukrainian",
+   "vyslovnost": "pry-VEET",
+   "rodina": "Indo-European – Slavic",
+   "fakt": "Ukrainian loves little words: you can make even the sun sound tiny and cute, again and again."
+  }
+ },
+ {
+  "id": "be",
+  "skupina": "ie",
+  "pozdrav": "Вітаю!",
+  "domaci": "беларуская",
+  "mluvcich": 5,
+  "kod": "be-BY",
+  "stred": [
+   28,
+   53.5
+  ],
+  "zeme": [
+   "Belarus"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Běloruština",
+   "vyslovnost": "vitaju",
+   "rodina": "indoevropská – slovanská",
+   "fakt": "Běloruština píše slova přesně tak, jak se vyslovují. Žádné chytáky v diktátu!"
+  },
+  "en": {
+   "nazev": "Belarusian",
+   "vyslovnost": "vee-TAH-yoo",
+   "rodina": "Indo-European – Slavic",
+   "fakt": "Belarusian is written almost exactly the way it sounds. No tricky spelling tests!"
+  }
+ },
+ {
+  "id": "sr",
+  "skupina": "ie",
+  "pozdrav": "Здраво!",
+  "domaci": "српски",
+  "mluvcich": 12,
+  "kod": "sr-RS",
+  "stred": [
+   20.5,
+   44
+  ],
+  "zeme": [
+   "Serbia",
+   "Bosnia and Herz.",
+   "Montenegro"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Srbština",
+   "vyslovnost": "zdravo",
+   "rodina": "indoevropská – slovanská",
+   "fakt": "Srbština se píše dvěma abecedami najednou – azbukou i latinkou. Noviny někdy střídají obě."
+  },
+  "en": {
+   "nazev": "Serbian",
+   "vyslovnost": "ZDRAH-vo",
+   "rodina": "Indo-European – Slavic",
+   "fakt": "Serbian is written in two alphabets at once – Cyrillic and Latin. Newspapers sometimes use both."
+  }
+ },
+ {
+  "id": "hr",
+  "skupina": "ie",
+  "pozdrav": "Bok!",
+  "domaci": "hrvatski",
+  "mluvcich": 6,
+  "kod": "hr-HR",
+  "stred": [
+   16.5,
+   45.2
+  ],
+  "zeme": [
+   "Croatia",
+   "Bosnia and Herz."
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Chorvatština",
+   "vyslovnost": "bok",
+   "rodina": "indoevropská – slovanská",
+   "fakt": "Chorvati říkají počítači „računalo“ a letišti „zračna luka“ – vzdušný přístav."
+  },
+  "en": {
+   "nazev": "Croatian",
+   "vyslovnost": "bok",
+   "rodina": "Indo-European – Slavic",
+   "fakt": "Croatians call a computer “računalo” – the counter – and an airport “zračna luka” – an air harbour."
+  }
+ },
+ {
+  "id": "sl",
+  "skupina": "ie",
+  "pozdrav": "Živjo!",
+  "domaci": "slovenščina",
+  "mluvcich": 2.5,
+  "kod": "sl-SI",
+  "stred": [
+   14.8,
+   46.1
+  ],
+  "zeme": [
+   "Slovenia"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Slovinština",
+   "vyslovnost": "živjo",
+   "rodina": "indoevropská – slovanská",
+   "fakt": "Slovinština má dvojné číslo: jinak se řekne „jeden strom“, „dva stromy“ a „tři stromy“."
+  },
+  "en": {
+   "nazev": "Slovene",
+   "vyslovnost": "ZHEEV-yo",
+   "rodina": "Indo-European – Slavic",
+   "fakt": "Slovene has a special form for pairs: one tree, two trees and three trees each use a different ending."
+  }
+ },
+ {
+  "id": "bg",
+  "skupina": "ie",
+  "pozdrav": "Здравей!",
+  "domaci": "български",
+  "mluvcich": 8,
+  "kod": "bg-BG",
+  "stred": [
+   25.4,
+   42.7
+  ],
+  "zeme": [
+   "Bulgaria"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Bulharština",
+   "vyslovnost": "zdravej",
+   "rodina": "indoevropská – slovanská",
+   "fakt": "V Bulharsku se kývnutím hlavy říká „ne“ a zavrtěním „ano“. Opačně než u nás."
+  },
+  "en": {
+   "nazev": "Bulgarian",
+   "vyslovnost": "zdra-VEY",
+   "rodina": "Indo-European – Slavic",
+   "fakt": "In Bulgaria a nod means “no” and a head shake means “yes” – the other way round from most of Europe."
+  }
+ },
+ {
+  "id": "mk",
+  "skupina": "ie",
+  "pozdrav": "Здраво!",
+  "domaci": "македонски",
+  "mluvcich": 2,
+  "kod": "mk-MK",
+  "stred": [
+   21.7,
+   41.6
+  ],
+  "zeme": [
+   "Macedonia"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Makedonština",
+   "vyslovnost": "zdravo",
+   "rodina": "indoevropská – slovanská",
+   "fakt": "Makedonština nemá skoro žádné pády – místo nich používá předložky, podobně jako angličtina."
+  },
+  "en": {
+   "nazev": "Macedonian",
+   "vyslovnost": "ZDRAH-vo",
+   "rodina": "Indo-European – Slavic",
+   "fakt": "Macedonian has almost no grammatical cases. It uses little words like “of” and “to” instead, a bit like English."
+  }
+ },
+ {
+  "id": "en",
+  "skupina": "ie",
+  "pozdrav": "Hello!",
+  "domaci": "English",
+  "mluvcich": 1500,
+  "kod": "en-GB",
+  "stred": [
+   -28,
+   42
+  ],
+  "zeme": [
+   "United Kingdom",
+   "United States of America",
+   "Canada",
+   "Australia",
+   "New Zealand",
+   "Ireland",
+   "South Africa",
+   "Nigeria",
+   "India",
+   "Kenya",
+   "Ghana",
+   "Jamaica",
+   "Uganda",
+   "Zambia",
+   "Zimbabwe",
+   "Botswana",
+   "Malawi",
+   "Liberia",
+   "Sierra Leone",
+   "Guyana",
+   "Bahamas",
+   "Trinidad and Tobago",
+   "Belize",
+   "Papua New Guinea",
+   "Fiji",
+   "Solomon Is.",
+   "Vanuatu",
+   "Lesotho",
+   "eSwatini",
+   "Rwanda",
+   "Philippines",
+   "Pakistan",
+   "Tanzania",
+   "Cameroon",
+   "Namibia",
+   "Gambia",
+   "S. Sudan"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Angličtina",
+   "vyslovnost": "helou",
+   "rodina": "indoevropská – germánská",
+   "fakt": "Anglicky mluví víc lidí, kteří se ji naučili, než těch, co s ní vyrostli. Je to jazyk letišť i internetu."
+  },
+  "en": {
+   "nazev": "English",
+   "vyslovnost": "heh-LOH",
+   "rodina": "Indo-European – Germanic",
+   "fakt": "More people speak English as a second language than as their first. It is the language of airports and the internet."
+  }
+ },
+ {
+  "id": "de",
+  "skupina": "ie",
+  "pozdrav": "Hallo!",
+  "domaci": "Deutsch",
+  "mluvcich": 135,
+  "kod": "de-DE",
+  "stred": [
+   10.5,
+   50.5
+  ],
+  "zeme": [
+   "Germany",
+   "Austria",
+   "Switzerland",
+   "Luxembourg",
+   "Belgium"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Němčina",
+   "vyslovnost": "halo",
+   "rodina": "indoevropská – germánská",
+   "fakt": "Němčina umí slepit slova do obřích řetězů. Nejdelší slova mají přes šedesát písmen."
+  },
+  "en": {
+   "nazev": "German",
+   "vyslovnost": "HAH-lo",
+   "rodina": "Indo-European – Germanic",
+   "fakt": "German glues words together into giant chains. The longest ones have more than sixty letters."
+  }
+ },
+ {
+  "id": "nl",
+  "skupina": "ie",
+  "pozdrav": "Hallo!",
+  "domaci": "Nederlands",
+  "mluvcich": 25,
+  "kod": "nl-NL",
+  "stred": [
+   5,
+   52.2
+  ],
+  "zeme": [
+   "Netherlands",
+   "Belgium",
+   "Suriname"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Nizozemština",
+   "vyslovnost": "halo",
+   "rodina": "indoevropská – germánská",
+   "fakt": "Z nizozemštiny máme slovo „jachta“. A v Jižní Americe se jí mluví taky – v Surinamu."
+  },
+  "en": {
+   "nazev": "Dutch",
+   "vyslovnost": "HAH-lo",
+   "rodina": "Indo-European – Germanic",
+   "fakt": "Yacht, cookie and boss all came into English from Dutch. It is spoken in South America too – in Suriname."
+  }
+ },
+ {
+  "id": "sv",
+  "skupina": "ie",
+  "pozdrav": "Hej!",
+  "domaci": "svenska",
+  "mluvcich": 13,
+  "kod": "sv-SE",
+  "stred": [
+   16,
+   61
+  ],
+  "zeme": [
+   "Sweden",
+   "Finland"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Švédština",
+   "vyslovnost": "hej",
+   "rodina": "indoevropská – germánská",
+   "fakt": "Švédské „hej“ znamená ahoj a „hej hej“ je na rozloučenou. Říct to dvakrát stačí."
+  },
+  "en": {
+   "nazev": "Swedish",
+   "vyslovnost": "hey",
+   "rodina": "Indo-European – Germanic",
+   "fakt": "In Swedish “hej” means hello and “hej hej” means goodbye. Just say it twice!"
+  }
+ },
+ {
+  "id": "no",
+  "skupina": "ie",
+  "pozdrav": "Hei!",
+  "domaci": "norsk",
+  "mluvcich": 5,
+  "kod": "nb-NO",
+  "stred": [
+   10,
+   62
+  ],
+  "zeme": [
+   "Norway"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Norština",
+   "vyslovnost": "hej",
+   "rodina": "indoevropská – germánská",
+   "fakt": "Norština má dvě úřední psané podoby, bokmål a nynorsk. Ve škole se učí obě."
+  },
+  "en": {
+   "nazev": "Norwegian",
+   "vyslovnost": "hay",
+   "rodina": "Indo-European – Germanic",
+   "fakt": "Norwegian has two official written forms, Bokmål and Nynorsk. Children learn both at school."
+  }
+ },
+ {
+  "id": "da",
+  "skupina": "ie",
+  "pozdrav": "Hej!",
+  "domaci": "dansk",
+  "mluvcich": 6,
+  "kod": "da-DK",
+  "stred": [
+   10,
+   56
+  ],
+  "zeme": [
+   "Denmark",
+   "Greenland"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Dánština",
+   "vyslovnost": "haj",
+   "rodina": "indoevropská – germánská",
+   "fakt": "Dánové vyslovují jen část toho, co napíšou. I Norové si stěžují, že jim nerozumí."
+  },
+  "en": {
+   "nazev": "Danish",
+   "vyslovnost": "hi",
+   "rodina": "Indo-European – Germanic",
+   "fakt": "Danes pronounce only part of what they write. Even Norwegians complain they can't understand them."
+  }
+ },
+ {
+  "id": "is",
+  "skupina": "ie",
+  "pozdrav": "Halló!",
+  "domaci": "íslenska",
+  "mluvcich": 0.36,
+  "kod": "is-IS",
+  "stred": [
+   -19,
+   65
+  ],
+  "zeme": [
+   "Iceland"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Islandština",
+   "vyslovnost": "haló",
+   "rodina": "indoevropská – germánská",
+   "fakt": "Islandština se za tisíc let skoro nezměnila. Děti čtou dávné ságy skoro bez slovníku."
+  },
+  "en": {
+   "nazev": "Icelandic",
+   "vyslovnost": "HAHL-loh",
+   "rodina": "Indo-European – Germanic",
+   "fakt": "Icelandic has barely changed in a thousand years. Children can read ancient sagas almost without a dictionary."
+  }
+ },
+ {
+  "id": "af",
+  "skupina": "ie",
+  "pozdrav": "Hallo!",
+  "domaci": "Afrikaans",
+  "mluvcich": 17,
+  "kod": "af-ZA",
+  "stred": [
+   22,
+   -30
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    19,
+    -32,
+    4.6
+   ],
+   [
+    24,
+    -29,
+    4
+   ],
+   [
+    17,
+    -23,
+    4.2
+   ],
+   [
+    26,
+    -26.5,
+    2.2
+   ]
+  ],
+  "cs": {
+   "nazev": "Afrikánština",
+   "vyslovnost": "halo",
+   "rodina": "indoevropská – germánská",
+   "fakt": "Vznikla z nizozemštiny na jihu Afriky. Je to jeden z nejmladších jazyků na světě."
+  },
+  "en": {
+   "nazev": "Afrikaans",
+   "vyslovnost": "HAH-lo",
+   "rodina": "Indo-European – Germanic",
+   "fakt": "It grew out of Dutch at the southern tip of Africa. It is one of the youngest languages in the world."
+  }
+ },
+ {
+  "id": "fr",
+  "skupina": "ie",
+  "pozdrav": "Bonjour!",
+  "domaci": "français",
+  "mluvcich": 310,
+  "kod": "fr-FR",
+  "stred": [
+   5,
+   25
+  ],
+  "zeme": [
+   "France",
+   "Belgium",
+   "Switzerland",
+   "Canada",
+   "Dem. Rep. Congo",
+   "Côte d'Ivoire",
+   "Senegal",
+   "Mali",
+   "Niger",
+   "Burkina Faso",
+   "Cameroon",
+   "Madagascar",
+   "Haiti",
+   "Benin",
+   "Togo",
+   "Guinea",
+   "Chad",
+   "Central African Rep.",
+   "Congo",
+   "Gabon",
+   "Luxembourg",
+   "Djibouti",
+   "Rwanda",
+   "Burundi",
+   "New Caledonia",
+   "Vanuatu"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Francouzština",
+   "vyslovnost": "bonžúr",
+   "rodina": "indoevropská – románská",
+   "fakt": "Nejvíc lidí dnes mluví francouzsky v Africe, ne v Evropě. Kinshasa je největší frankofonní město světa."
+  },
+  "en": {
+   "nazev": "French",
+   "vyslovnost": "bohn-ZHOOR",
+   "rodina": "Indo-European – Romance",
+   "fakt": "Most French speakers today live in Africa, not in Europe. Kinshasa is the biggest French-speaking city in the world."
+  }
+ },
+ {
+  "id": "es",
+  "skupina": "ie",
+  "pozdrav": "¡Hola!",
+  "domaci": "español",
+  "mluvcich": 560,
+  "kod": "es-ES",
+  "stred": [
+   -60,
+   5
+  ],
+  "zeme": [
+   "Spain",
+   "Mexico",
+   "Colombia",
+   "Argentina",
+   "Peru",
+   "Venezuela",
+   "Chile",
+   "Ecuador",
+   "Guatemala",
+   "Cuba",
+   "Bolivia",
+   "Dominican Rep.",
+   "Honduras",
+   "Paraguay",
+   "El Salvador",
+   "Nicaragua",
+   "Costa Rica",
+   "Panama",
+   "Uruguay",
+   "Eq. Guinea",
+   "Puerto Rico"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Španělština",
+   "vyslovnost": "ola",
+   "rodina": "indoevropská – románská",
+   "fakt": "Otázky se ve španělštině otevírají obráceným otazníkem ¿. Poznáš tak hned na začátku, že jde o otázku."
+  },
+  "en": {
+   "nazev": "Spanish",
+   "vyslovnost": "OH-lah",
+   "rodina": "Indo-European – Romance",
+   "fakt": "Spanish opens questions with an upside-down question mark ¿, so you know from the start that a question is coming."
+  }
+ },
+ {
+  "id": "pt",
+  "skupina": "ie",
+  "pozdrav": "Olá!",
+  "domaci": "português",
+  "mluvcich": 265,
+  "kod": "pt-BR",
+  "stred": [
+   -25,
+   -8
+  ],
+  "zeme": [
+   "Portugal",
+   "Brazil",
+   "Angola",
+   "Mozambique",
+   "Guinea-Bissau",
+   "Timor-Leste"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Portugalština",
+   "vyslovnost": "olá",
+   "rodina": "indoevropská – románská",
+   "fakt": "Nejvíc Portugalců žije v Brazílii – tedy nejvíc lidí, co mluví portugalsky. Je jich přes dvě stě milionů."
+  },
+  "en": {
+   "nazev": "Portuguese",
+   "vyslovnost": "oh-LAH",
+   "rodina": "Indo-European – Romance",
+   "fakt": "Most Portuguese speakers live in Brazil – more than two hundred million of them."
+  }
+ },
+ {
+  "id": "it",
+  "skupina": "ie",
+  "pozdrav": "Ciao!",
+  "domaci": "italiano",
+  "mluvcich": 68,
+  "kod": "it-IT",
+  "stred": [
+   12.5,
+   42.5
+  ],
+  "zeme": [
+   "Italy",
+   "Switzerland"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Italština",
+   "vyslovnost": "čao",
+   "rodina": "indoevropská – románská",
+   "fakt": "Skoro všechny hudební pokyny v notách jsou italské: piano, forte, allegro. Italština je jazyk hudby."
+  },
+  "en": {
+   "nazev": "Italian",
+   "vyslovnost": "chow",
+   "rodina": "Indo-European – Romance",
+   "fakt": "Almost all the instructions in sheet music are Italian: piano, forte, allegro. Italian is the language of music."
+  }
+ },
+ {
+  "id": "ro",
+  "skupina": "ie",
+  "pozdrav": "Bună!",
+  "domaci": "română",
+  "mluvcich": 25,
+  "kod": "ro-RO",
+  "stred": [
+   25.5,
+   46
+  ],
+  "zeme": [
+   "Romania",
+   "Moldova"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Rumunština",
+   "vyslovnost": "buná",
+   "rodina": "indoevropská – románská",
+   "fakt": "Rumunština je románský jazyk obklopený slovanskými sousedy. Je to potomek latiny na východě Evropy."
+  },
+  "en": {
+   "nazev": "Romanian",
+   "vyslovnost": "BOO-nuh",
+   "rodina": "Indo-European – Romance",
+   "fakt": "Romanian is a daughter of Latin surrounded by Slavic neighbours in Eastern Europe."
+  }
+ },
+ {
+  "id": "ca",
+  "skupina": "ie",
+  "pozdrav": "Hola!",
+  "domaci": "català",
+  "mluvcich": 10,
+  "kod": "ca-ES",
+  "stred": [
+   1.9,
+   41.6
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    1.9,
+    41.7,
+    1.7
+   ],
+   [
+    0.4,
+    40.4,
+    1.5
+   ],
+   [
+    2.9,
+    39.6,
+    0.9
+   ],
+   [
+    8.3,
+    40.6,
+    0.4
+   ],
+   [
+    2.5,
+    42.6,
+    0.8
+   ]
+  ],
+  "cs": {
+   "nazev": "Katalánština",
+   "vyslovnost": "ola",
+   "rodina": "indoevropská – románská",
+   "fakt": "Katalánština není nářečí španělštiny, je to samostatný jazyk. Mluví se jí i v celém státečku Andorra."
+  },
+  "en": {
+   "nazev": "Catalan",
+   "vyslovnost": "OH-lah",
+   "rodina": "Indo-European – Romance",
+   "fakt": "Catalan is not a dialect of Spanish but a language of its own. It is the official language of the tiny country of Andorra."
+  }
+ },
+ {
+  "id": "el",
+  "skupina": "ie",
+  "pozdrav": "Γειά σου!",
+  "domaci": "ελληνικά",
+  "mluvcich": 13,
+  "kod": "el-GR",
+  "stred": [
+   23,
+   38.5
+  ],
+  "zeme": [
+   "Greece",
+   "Cyprus"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Řečtina",
+   "vyslovnost": "ja su",
+   "rodina": "indoevropská – řecká",
+   "fakt": "Z řečtiny máme slova škola, telefon i dinosaurus. Řecky se píše a mluví bez přestávky přes tři tisíce let."
+  },
+  "en": {
+   "nazev": "Greek",
+   "vyslovnost": "YAH soo",
+   "rodina": "Indo-European – Greek",
+   "fakt": "School, telephone and dinosaur all come from Greek. Greek has been spoken and written for more than three thousand years."
+  }
+ },
+ {
+  "id": "ga",
+  "skupina": "ie",
+  "pozdrav": "Dia duit!",
+  "domaci": "Gaeilge",
+  "mluvcich": 1.8,
+  "kod": "ga-IE",
+  "stred": [
+   -8,
+   53.3
+  ],
+  "zeme": [
+   "Ireland"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Irština",
+   "vyslovnost": "ďa gvit",
+   "rodina": "indoevropská – keltská",
+   "fakt": "Irský pozdrav doslova znamená „Bůh s tebou“ a odpovídá se „Bůh a Maria s tebou“."
+  },
+  "en": {
+   "nazev": "Irish",
+   "vyslovnost": "JEE-uh gwit",
+   "rodina": "Indo-European – Celtic",
+   "fakt": "The Irish greeting literally means “God be with you”, and the reply is “God and Mary be with you”."
+  }
+ },
+ {
+  "id": "cy",
+  "skupina": "ie",
+  "pozdrav": "Shwmae!",
+  "domaci": "Cymraeg",
+  "mluvcich": 0.9,
+  "kod": "cy-GB",
+  "stred": [
+   -3.7,
+   52.4
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    -3.8,
+    52.4,
+    1.4
+   ],
+   [
+    -4.2,
+    53.2,
+    0.9
+   ]
+  ],
+  "cs": {
+   "nazev": "Velština",
+   "vyslovnost": "šumaj",
+   "rodina": "indoevropská – keltská",
+   "fakt": "Ve Walesu je vesnice s názvem o 58 písmenech. Jmenuje se Llanfairpwllgwyngyll… a ještě dlouho pokračuje."
+  },
+  "en": {
+   "nazev": "Welsh",
+   "vyslovnost": "SHOO-my",
+   "rodina": "Indo-European – Celtic",
+   "fakt": "Wales has a village whose name has 58 letters. It begins Llanfairpwllgwyngyll… and goes on for a long time."
+  }
+ },
+ {
+  "id": "lt",
+  "skupina": "ie",
+  "pozdrav": "Labas!",
+  "domaci": "lietuvių",
+  "mluvcich": 3,
+  "kod": "lt-LT",
+  "stred": [
+   24,
+   55.2
+  ],
+  "zeme": [
+   "Lithuania"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Litevština",
+   "vyslovnost": "labas",
+   "rodina": "indoevropská – baltská",
+   "fakt": "Litevština si uchovala nejvíc ze starobylé pradávné řeči, z níž vznikla většina evropských jazyků."
+  },
+  "en": {
+   "nazev": "Lithuanian",
+   "vyslovnost": "LAH-bahs",
+   "rodina": "Indo-European – Baltic",
+   "fakt": "Lithuanian has kept more than almost any other language of the ancient mother tongue that most European languages grew from."
+  }
+ },
+ {
+  "id": "lv",
+  "skupina": "ie",
+  "pozdrav": "Sveiki!",
+  "domaci": "latviešu",
+  "mluvcich": 1.7,
+  "kod": "lv-LV",
+  "stred": [
+   25,
+   56.9
+  ],
+  "zeme": [
+   "Latvia"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Lotyština",
+   "vyslovnost": "svejki",
+   "rodina": "indoevropská – baltská",
+   "fakt": "Spolu s litevštinou je poslední živý baltský jazyk. Ostatní vymřely."
+  },
+  "en": {
+   "nazev": "Latvian",
+   "vyslovnost": "SVAY-kee",
+   "rodina": "Indo-European – Baltic",
+   "fakt": "Together with Lithuanian it is the last living Baltic language. The others have died out."
+  }
+ },
+ {
+  "id": "sq",
+  "skupina": "ie",
+  "pozdrav": "Tungjatjeta!",
+  "domaci": "shqip",
+  "mluvcich": 7.5,
+  "kod": "sq-AL",
+  "stred": [
+   20,
+   41
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    20.1,
+    41.1,
+    2
+   ],
+   [
+    20.9,
+    42.6,
+    1.3
+   ],
+   [
+    20.9,
+    41.5,
+    1
+   ],
+   [
+    19.4,
+    42.3,
+    0.7
+   ]
+  ],
+  "cs": {
+   "nazev": "Albánština",
+   "vyslovnost": "tunďatjeta",
+   "rodina": "indoevropská – samostatná větev",
+   "fakt": "Albánština tvoří v indoevropské rodině úplně vlastní větev. Nemá žádného blízkého bratrance."
+  },
+  "en": {
+   "nazev": "Albanian",
+   "vyslovnost": "toon-jaht-YEH-tah",
+   "rodina": "Indo-European – a branch of its own",
+   "fakt": "Albanian forms a branch of the Indo-European family all by itself. It has no close cousins."
+  }
+ },
+ {
+  "id": "hy",
+  "skupina": "ie",
+  "pozdrav": "Բարև!",
+  "domaci": "հայերեն",
+  "mluvcich": 6,
+  "kod": "hy-AM",
+  "stred": [
+   45,
+   40.2
+  ],
+  "zeme": [
+   "Armenia"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Arménština",
+   "vyslovnost": "barev",
+   "rodina": "indoevropská – samostatná větev",
+   "fakt": "Arménské písmo vymyslel roku 405 jediný člověk, mnich Mesrop Maštoc. Používá se dodnes."
+  },
+  "en": {
+   "nazev": "Armenian",
+   "vyslovnost": "BAH-rev",
+   "rodina": "Indo-European – a branch of its own",
+   "fakt": "The Armenian alphabet was invented in the year 405 by one man, the monk Mesrop Mashtots. It is still used today."
+  }
+ },
+ {
+  "id": "hi",
+  "skupina": "ie",
+  "pozdrav": "नमस्ते!",
+  "domaci": "हिन्दी",
+  "mluvcich": 610,
+  "kod": "hi-IN",
+  "stred": [
+   79,
+   25
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    77.2,
+    28.6,
+    4
+   ],
+   [
+    80.9,
+    26.8,
+    4.6
+   ],
+   [
+    85.1,
+    25.6,
+    3
+   ],
+   [
+    78.5,
+    23.2,
+    4.2
+   ],
+   [
+    75.8,
+    26.9,
+    3.6
+   ],
+   [
+    81.6,
+    21.2,
+    3
+   ]
+  ],
+  "cs": {
+   "nazev": "Hindština",
+   "vyslovnost": "namasté",
+   "rodina": "indoevropská – indoárijská",
+   "fakt": "Písmo dévanágarí věší písmenka pod vodorovnou čáru, jako prádlo na šňůru."
+  },
+  "en": {
+   "nazev": "Hindi",
+   "vyslovnost": "nuh-MUS-tay",
+   "rodina": "Indo-European – Indo-Aryan",
+   "fakt": "The Devanagari script hangs its letters under a horizontal line, like laundry on a washing line."
+  }
+ },
+ {
+  "id": "bn",
+  "skupina": "ie",
+  "pozdrav": "নমস্কার!",
+  "domaci": "বাংলা",
+  "mluvcich": 270,
+  "kod": "bn-BD",
+  "stred": [
+   89,
+   23.7
+  ],
+  "zeme": [
+   "Bangladesh"
+  ],
+  "areal": [
+   [
+    88.4,
+    23.5,
+    2.7
+   ],
+   [
+    92,
+    24.5,
+    1.6
+   ],
+   [
+    85.8,
+    25.2,
+    1.4
+   ]
+  ],
+  "cs": {
+   "nazev": "Bengálština",
+   "vyslovnost": "nomoškar",
+   "rodina": "indoevropská – indoárijská",
+   "fakt": "Kvůli bengálštině vznikl Mezinárodní den mateřského jazyka, který se slaví 21. února."
+  },
+  "en": {
+   "nazev": "Bengali",
+   "vyslovnost": "NO-mosh-kar",
+   "rodina": "Indo-European – Indo-Aryan",
+   "fakt": "It is the language behind a world holiday: International Mother Language Day on 21 February."
+  }
+ },
+ {
+  "id": "ur",
+  "skupina": "ie",
+  "pozdrav": "السلام علیکم!",
+  "domaci": "اردو",
+  "mluvcich": 230,
+  "kod": "ur-PK",
+  "stred": [
+   70,
+   30
+  ],
+  "zeme": [
+   "Pakistan"
+  ],
+  "areal": [
+   [
+    78.5,
+    17.4,
+    1.7
+   ],
+   [
+    80.9,
+    26.8,
+    2.4
+   ],
+   [
+    77.2,
+    28.6,
+    1.4
+   ]
+  ],
+  "cs": {
+   "nazev": "Urdština",
+   "vyslovnost": "assalámu alajkum",
+   "rodina": "indoevropská – indoárijská",
+   "fakt": "Urdština a hindština znějí skoro stejně, ale píšou se úplně jinak: jedna zprava doleva, druhá zleva doprava."
+  },
+  "en": {
+   "nazev": "Urdu",
+   "vyslovnost": "us-sah-LAH-moo ah-LAY-kum",
+   "rodina": "Indo-European – Indo-Aryan",
+   "fakt": "Urdu and Hindi sound almost the same but are written completely differently: one right to left, the other left to right."
+  }
+ },
+ {
+  "id": "pa",
+  "skupina": "ie",
+  "pozdrav": "ਸਤਿ ਸ੍ਰੀ ਅਕਾਲ!",
+  "domaci": "ਪੰਜਾਬੀ",
+  "mluvcich": 150,
+  "kod": "pa-IN",
+  "stred": [
+   74,
+   31
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    73.4,
+    31,
+    2.7
+   ],
+   [
+    75.6,
+    31,
+    2.3
+   ],
+   [
+    74.5,
+    29.5,
+    1.5
+   ],
+   [
+    71.5,
+    30.2,
+    1.8
+   ]
+  ],
+  "cs": {
+   "nazev": "Pandžábština",
+   "vyslovnost": "sat šrí akál",
+   "rodina": "indoevropská – indoárijská",
+   "fakt": "Pandžábština je tónová – stejné slovo řečené jinou výškou hlasu znamená něco jiného. To je mezi evropskými příbuznými vzácnost."
+  },
+  "en": {
+   "nazev": "Punjabi",
+   "vyslovnost": "sut shree ah-KAHL",
+   "rodina": "Indo-European – Indo-Aryan",
+   "fakt": "Punjabi is tonal – the same word said at a different pitch means something else. That is rare among its European relatives."
+  }
+ },
+ {
+  "id": "mr",
+  "skupina": "ie",
+  "pozdrav": "नमस्कार!",
+  "domaci": "मराठी",
+  "mluvcich": 95,
+  "kod": "mr-IN",
+  "stred": [
+   75,
+   19
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    75.5,
+    19.5,
+    4
+   ],
+   [
+    73.5,
+    18.9,
+    2.3
+   ]
+  ],
+  "cs": {
+   "nazev": "Maráthština",
+   "vyslovnost": "namaskár",
+   "rodina": "indoevropská – indoárijská",
+   "fakt": "Mluví se jí hlavně kolem Bombaje, domova obřího indického filmového průmyslu."
+  },
+  "en": {
+   "nazev": "Marathi",
+   "vyslovnost": "nuh-mus-KAR",
+   "rodina": "Indo-European – Indo-Aryan",
+   "fakt": "It is spoken mainly around Mumbai, the home of India's enormous film industry."
+  }
+ },
+ {
+  "id": "gu",
+  "skupina": "ie",
+  "pozdrav": "કેમ છો!",
+  "domaci": "ગુજરાતી",
+  "mluvcich": 60,
+  "kod": "gu-IN",
+  "stred": [
+   71.5,
+   22.5
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    71.8,
+    22.3,
+    3.2
+   ],
+   [
+    73,
+    23.2,
+    1.9
+   ]
+  ],
+  "cs": {
+   "nazev": "Gudžarátština",
+   "vyslovnost": "kem čho",
+   "rodina": "indoevropská – indoárijská",
+   "fakt": "Její písmo je dévanágarí, kterému někdo ustřihl horní šňůru. Proto vypadá lehčeji."
+  },
+  "en": {
+   "nazev": "Gujarati",
+   "vyslovnost": "kem CHO",
+   "rodina": "Indo-European – Indo-Aryan",
+   "fakt": "Its script looks like Devanagari with the top line snipped off, which makes it look lighter."
+  }
+ },
+ {
+  "id": "ne",
+  "skupina": "ie",
+  "pozdrav": "नमस्ते!",
+  "domaci": "नेपाली",
+  "mluvcich": 32,
+  "kod": "ne-NP",
+  "stred": [
+   84,
+   28.3
+  ],
+  "zeme": [
+   "Nepal"
+  ],
+  "areal": [
+   [
+    88.2,
+    27.05,
+    1
+   ],
+   [
+    89.6,
+    26.9,
+    0.9
+   ]
+  ],
+  "cs": {
+   "nazev": "Nepálština",
+   "vyslovnost": "namasté",
+   "rodina": "indoevropská – indoárijská",
+   "fakt": "Nepálsky se domluvíš i v základním táboře pod Everestem. Horám se říká „himal“ – sněžné."
+  },
+  "en": {
+   "nazev": "Nepali",
+   "vyslovnost": "nuh-MUS-tay",
+   "rodina": "Indo-European – Indo-Aryan",
+   "fakt": "You can speak Nepali at Everest base camp. The big mountains there are called “himal” – the snowy ones."
+  }
+ },
+ {
+  "id": "si",
+  "skupina": "ie",
+  "pozdrav": "ආයුබෝවන්!",
+  "domaci": "සිංහල",
+  "mluvcich": 17,
+  "kod": "si-LK",
+  "stred": [
+   80.7,
+   7.5
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    80.3,
+    7,
+    2
+   ],
+   [
+    80,
+    6.2,
+    1.3
+   ]
+  ],
+  "cs": {
+   "nazev": "Sinhálština",
+   "vyslovnost": "ájubóvan",
+   "rodina": "indoevropská – indoárijská",
+   "fakt": "Sinhálské písmo je samá kulatá klička. Vzniklo psaním na palmové listy, které se rovnými čarami trhaly."
+  },
+  "en": {
+   "nazev": "Sinhala",
+   "vyslovnost": "AH-yoo-boh-wahn",
+   "rodina": "Indo-European – Indo-Aryan",
+   "fakt": "Sinhala letters are all round loops. It was written on palm leaves, and straight lines would have torn them."
+  }
+ },
+ {
+  "id": "fa",
+  "skupina": "ie",
+  "pozdrav": "سلام!",
+  "domaci": "فارسی",
+  "mluvcich": 85,
+  "kod": "fa-IR",
+  "stred": [
+   55,
+   33
+  ],
+  "zeme": [
+   "Iran",
+   "Afghanistan",
+   "Tajikistan"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Perština",
+   "vyslovnost": "salám",
+   "rodina": "indoevropská – íránská",
+   "fakt": "Z perštiny máme slova bazar, karavana, pyžamo i šach mat – „král je bezmocný“."
+  },
+  "en": {
+   "nazev": "Persian",
+   "vyslovnost": "sah-LAHM",
+   "rodina": "Indo-European – Iranian",
+   "fakt": "Bazaar, caravan, pyjamas and checkmate all come from Persian – checkmate means “the king is helpless”."
+  }
+ },
+ {
+  "id": "ps",
+  "skupina": "ie",
+  "pozdrav": "سلام!",
+  "domaci": "پښتو",
+  "mluvcich": 40,
+  "kod": "ps-AF",
+  "stred": [
+   68,
+   32
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    68.5,
+    33.5,
+    4
+   ],
+   [
+    70.5,
+    31.5,
+    3.2
+   ],
+   [
+    66.6,
+    31.6,
+    2.8
+   ],
+   [
+    71.5,
+    34,
+    2
+   ]
+  ],
+  "cs": {
+   "nazev": "Paštština",
+   "vyslovnost": "salám",
+   "rodina": "indoevropská – íránská",
+   "fakt": "Paštunové mají vlastní nepsaný zákon pohostinnosti. Jmenuje se paštúnvalí – doslova „paštunství“."
+  },
+  "en": {
+   "nazev": "Pashto",
+   "vyslovnost": "sah-LAHM",
+   "rodina": "Indo-European – Iranian",
+   "fakt": "Pashtuns follow an unwritten code of hospitality called Pashtunwali – literally “the Pashtun way”."
+  }
+ },
+ {
+  "id": "ku",
+  "skupina": "ie",
+  "pozdrav": "Silav!",
+  "domaci": "kurdî",
+  "mluvcich": 30,
+  "kod": "ku",
+  "stred": [
+   43,
+   37
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    44,
+    36,
+    2.5
+   ],
+   [
+    43,
+    37.3,
+    2.3
+   ],
+   [
+    40,
+    37.6,
+    2.3
+   ],
+   [
+    46.3,
+    35.3,
+    1.9
+   ],
+   [
+    41,
+    36.9,
+    1.4
+   ]
+  ],
+  "cs": {
+   "nazev": "Kurdština",
+   "vyslovnost": "silav",
+   "rodina": "indoevropská – íránská",
+   "fakt": "Kurdština se píše třemi různými abecedami podle toho, ve které zemi se zrovna nacházíš."
+  },
+  "en": {
+   "nazev": "Kurdish",
+   "vyslovnost": "SEE-lahv",
+   "rodina": "Indo-European – Iranian",
+   "fakt": "Kurdish is written in three different alphabets, depending on which country you are in."
+  }
+ },
+ {
+  "id": "eu",
+  "skupina": "ost",
+  "pozdrav": "Kaixo!",
+  "domaci": "euskara",
+  "mluvcich": 0.75,
+  "kod": "eu-ES",
+  "stred": [
+   -2.3,
+   43.1
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    -2.4,
+    43.1,
+    1.1
+   ],
+   [
+    -1.3,
+    43.2,
+    0.6
+   ]
+  ],
+  "cs": {
+   "nazev": "Baskičtina",
+   "vyslovnost": "kajšo",
+   "rodina": "izolovaný jazyk – nemá příbuzné",
+   "fakt": "Baskičtina je v Evropě úplně sama. Nikdo neví, odkud přišla – je starší než všichni její sousedé."
+  },
+  "en": {
+   "nazev": "Basque",
+   "vyslovnost": "KAI-sho",
+   "rodina": "isolate – no known relatives",
+   "fakt": "Basque is all alone in Europe. Nobody knows where it came from – it is older than all of its neighbours."
+  }
+ },
+ {
+  "id": "ar",
+  "skupina": "afro",
+  "pozdrav": "مرحبا!",
+  "domaci": "العربية",
+  "mluvcich": 400,
+  "kod": "ar-SA",
+  "stred": [
+   35,
+   25
+  ],
+  "zeme": [
+   "Egypt",
+   "Saudi Arabia",
+   "Algeria",
+   "Morocco",
+   "Iraq",
+   "Sudan",
+   "Syria",
+   "Yemen",
+   "Tunisia",
+   "Jordan",
+   "Libya",
+   "Lebanon",
+   "Palestine",
+   "Oman",
+   "Kuwait",
+   "United Arab Emirates",
+   "Qatar",
+   "Mauritania",
+   "W. Sahara",
+   "Somalia",
+   "Djibouti",
+   "Chad",
+   "Eritrea"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Arabština",
+   "vyslovnost": "marhaban",
+   "rodina": "afroasijská – semitská",
+   "fakt": "Píše se zprava doleva a písmenka mění tvar podle toho, kde ve slově stojí. Jedno písmeno má až čtyři podoby."
+  },
+  "en": {
+   "nazev": "Arabic",
+   "vyslovnost": "MAR-ha-ban",
+   "rodina": "Afroasiatic – Semitic",
+   "fakt": "It is written right to left, and letters change shape depending on where they sit in a word. One letter can have four forms."
+  }
+ },
+ {
+  "id": "he",
+  "skupina": "afro",
+  "pozdrav": "שלום!",
+  "domaci": "עברית",
+  "mluvcich": 9,
+  "kod": "he-IL",
+  "stred": [
+   35,
+   31.5
+  ],
+  "zeme": [
+   "Israel"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Hebrejština",
+   "vyslovnost": "šalom",
+   "rodina": "afroasijská – semitská",
+   "fakt": "Skoro dva tisíce let se jí nikde nemluvilo, jen se psala. Pak ji lidé znovu oživili – jediný takový případ na světě."
+  },
+  "en": {
+   "nazev": "Hebrew",
+   "vyslovnost": "shah-LOHM",
+   "rodina": "Afroasiatic – Semitic",
+   "fakt": "For almost two thousand years nobody spoke it at home – it was only written. Then people brought it back to life, the only case like it in the world."
+  }
+ },
+ {
+  "id": "am",
+  "skupina": "afro",
+  "pozdrav": "ሰላም!",
+  "domaci": "አማርኛ",
+  "mluvcich": 60,
+  "kod": "am-ET",
+  "stred": [
+   39,
+   9.5
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    38.7,
+    11.5,
+    3.4
+   ],
+   [
+    39.5,
+    9.3,
+    2.7
+   ],
+   [
+    37.5,
+    10.5,
+    2.2
+   ]
+  ],
+  "cs": {
+   "nazev": "Amharština",
+   "vyslovnost": "selam",
+   "rodina": "afroasijská – semitská",
+   "fakt": "Etiopské písmo má přes 200 znaků a každý znak je celá slabika, ne jen hláska."
+  },
+  "en": {
+   "nazev": "Amharic",
+   "vyslovnost": "seh-LAHM",
+   "rodina": "Afroasiatic – Semitic",
+   "fakt": "The Ethiopian script has more than 200 characters, and each one is a whole syllable, not just a single sound."
+  }
+ },
+ {
+  "id": "so",
+  "skupina": "afro",
+  "pozdrav": "Iska warran!",
+  "domaci": "Soomaali",
+  "mluvcich": 22,
+  "kod": "so-SO",
+  "stred": [
+   45,
+   5
+  ],
+  "zeme": [
+   "Somalia",
+   "Somaliland",
+   "Djibouti"
+  ],
+  "areal": [
+   [
+    44,
+    6.5,
+    3.2
+   ],
+   [
+    41,
+    1.5,
+    2.4
+   ]
+  ],
+  "cs": {
+   "nazev": "Somálština",
+   "vyslovnost": "iska waran",
+   "rodina": "afroasijská – kúšitská",
+   "fakt": "Úřední písemnou podobu dostala somálština až v roce 1972. Do té doby to byl jazyk básní, které se učily nazpaměť."
+  },
+  "en": {
+   "nazev": "Somali",
+   "vyslovnost": "IS-kah wah-RAHN",
+   "rodina": "Afroasiatic – Cushitic",
+   "fakt": "Somali was only officially written down in 1972. Before that it was a language of poems learned by heart."
+  }
+ },
+ {
+  "id": "om",
+  "skupina": "afro",
+  "pozdrav": "Akkam!",
+  "domaci": "Afaan Oromoo",
+  "mluvcich": 37,
+  "kod": "om",
+  "stred": [
+   39,
+   7
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    39,
+    8,
+    3.6
+   ],
+   [
+    37.5,
+    6.5,
+    2.7
+   ],
+   [
+    41,
+    9,
+    2.4
+   ]
+  ],
+  "cs": {
+   "nazev": "Oromština",
+   "vyslovnost": "akam",
+   "rodina": "afroasijská – kúšitská",
+   "fakt": "Oromsky mluví jako mateřštinou víc lidí než kterýmkoli jiným jazykem Etiopie, amharštinu nevyjímaje."
+  },
+  "en": {
+   "nazev": "Oromo",
+   "vyslovnost": "AH-kahm",
+   "rodina": "Afroasiatic – Cushitic",
+   "fakt": "More people in Ethiopia speak Oromo as their mother tongue than any other language, Amharic included."
+  }
+ },
+ {
+  "id": "ha",
+  "skupina": "afro",
+  "pozdrav": "Sannu!",
+  "domaci": "Hausa",
+  "mluvcich": 80,
+  "kod": "ha",
+  "stred": [
+   8,
+   12
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    8,
+    12.5,
+    4.2
+   ],
+   [
+    5,
+    12.5,
+    3.2
+   ],
+   [
+    12,
+    12,
+    3.2
+   ],
+   [
+    9,
+    14,
+    2.4
+   ],
+   [
+    6.5,
+    9.5,
+    2
+   ]
+  ],
+  "cs": {
+   "nazev": "Hauština",
+   "vyslovnost": "sanu",
+   "rodina": "afroasijská – čadská",
+   "fakt": "Hauština je obchodní jazyk celé západní Afriky. Domluvíš se s ní na tržnicích v šesti zemích."
+  },
+  "en": {
+   "nazev": "Hausa",
+   "vyslovnost": "SAHN-noo",
+   "rodina": "Afroasiatic – Chadic",
+   "fakt": "Hausa is the trading language of West Africa. You can use it in markets in six countries."
+  }
+ },
+ {
+  "id": "sw",
+  "skupina": "nk",
+  "pozdrav": "Jambo!",
+  "domaci": "Kiswahili",
+  "mluvcich": 200,
+  "kod": "sw-KE",
+  "stred": [
+   35,
+   -4
+  ],
+  "zeme": [
+   "Tanzania",
+   "Kenya",
+   "Uganda",
+   "Rwanda",
+   "Burundi"
+  ],
+  "areal": [
+   [
+    28,
+    -3,
+    2.7
+   ],
+   [
+    27,
+    -1,
+    2.2
+   ],
+   [
+    29,
+    -5,
+    2.2
+   ]
+  ],
+  "cs": {
+   "nazev": "Svahilština",
+   "vyslovnost": "džambo",
+   "rodina": "nigerokonžská – bantuská",
+   "fakt": "„Hakuna matata“ je opravdová svahilská věta a znamená „žádné starosti“."
+  },
+  "en": {
+   "nazev": "Swahili",
+   "vyslovnost": "JAHM-boh",
+   "rodina": "Niger-Congo – Bantu",
+   "fakt": "“Hakuna matata” is a real Swahili phrase and means “no worries”."
+  }
+ },
+ {
+  "id": "yo",
+  "skupina": "nk",
+  "pozdrav": "Báwo ni!",
+  "domaci": "Yorùbá",
+  "mluvcich": 46,
+  "kod": "yo",
+  "stred": [
+   4,
+   7.5
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    4,
+    7.6,
+    2.7
+   ],
+   [
+    5.5,
+    7.3,
+    1.9
+   ],
+   [
+    2.6,
+    7.5,
+    1.4
+   ],
+   [
+    3.4,
+    6.6,
+    1.2
+   ]
+  ],
+  "cs": {
+   "nazev": "Jorubština",
+   "vyslovnost": "bawo ni",
+   "rodina": "nigerokonžská",
+   "fakt": "Jorubština je tónová: „owo“ řečené třemi různými melodiemi znamená peníze, ruku i koště."
+  },
+  "en": {
+   "nazev": "Yoruba",
+   "vyslovnost": "BAH-woh nee",
+   "rodina": "Niger-Congo",
+   "fakt": "Yoruba is tonal: “owo” said with three different melodies means money, hand and broom."
+  }
+ },
+ {
+  "id": "ig",
+  "skupina": "nk",
+  "pozdrav": "Ndewo!",
+  "domaci": "Igbo",
+  "mluvcich": 31,
+  "kod": "ig",
+  "stred": [
+   7.4,
+   5.8
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    7.3,
+    5.9,
+    1.7
+   ],
+   [
+    7.5,
+    6.6,
+    1.2
+   ]
+  ],
+  "cs": {
+   "nazev": "Igboština",
+   "vyslovnost": "ndevo",
+   "rodina": "nigerokonžská",
+   "fakt": "Igboština má stovky nářečí. Ta spisovná byla složená z několika dohromady, aby si rozuměli všichni."
+  },
+  "en": {
+   "nazev": "Igbo",
+   "vyslovnost": "n-DEH-woh",
+   "rodina": "Niger-Congo",
+   "fakt": "Igbo has hundreds of dialects. The standard language was put together from several of them so everyone could understand it."
+  }
+ },
+ {
+  "id": "zu",
+  "skupina": "nk",
+  "pozdrav": "Sawubona!",
+  "domaci": "isiZulu",
+  "mluvcich": 28,
+  "kod": "zu-ZA",
+  "stred": [
+   30.5,
+   -28.5
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    30.8,
+    -28.6,
+    2.4
+   ],
+   [
+    30,
+    -26.5,
+    1.7
+   ]
+  ],
+  "cs": {
+   "nazev": "Zulština",
+   "vyslovnost": "sawubona",
+   "rodina": "nigerokonžská – bantuská",
+   "fakt": "„Sawubona“ znamená „vidím tě“. Odpovídá se „Ngikhona“ – „jsem tady“."
+  },
+  "en": {
+   "nazev": "Zulu",
+   "vyslovnost": "sah-woo-BOH-nah",
+   "rodina": "Niger-Congo – Bantu",
+   "fakt": "“Sawubona” means “I see you”. The reply is “Ngikhona” – “I am here”."
+  }
+ },
+ {
+  "id": "sn",
+  "skupina": "nk",
+  "pozdrav": "Mhoro!",
+  "domaci": "chiShona",
+  "mluvcich": 11,
+  "kod": "sn",
+  "stred": [
+   30,
+   -19
+  ],
+  "zeme": [
+   "Zimbabwe"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Šonština",
+   "vyslovnost": "mhoro",
+   "rodina": "nigerokonžská – bantuská",
+   "fakt": "Podle Šonů je pojmenované i Zimbabwe – „dzimba dza mabwe“ znamená kamenné domy."
+  },
+  "en": {
+   "nazev": "Shona",
+   "vyslovnost": "m-HOH-roh",
+   "rodina": "Niger-Congo – Bantu",
+   "fakt": "Zimbabwe is named after the Shona words “dzimba dza mabwe” – houses of stone."
+  }
+ },
+ {
+  "id": "wo",
+  "skupina": "nk",
+  "pozdrav": "Nanga def!",
+  "domaci": "Wolof",
+  "mluvcich": 10,
+  "kod": "wo",
+  "stred": [
+   -15,
+   15
+  ],
+  "zeme": [
+   "Senegal",
+   "Gambia"
+  ],
+  "areal": [
+   [
+    -16,
+    17,
+    1.3
+   ]
+  ],
+  "cs": {
+   "nazev": "Wolofština",
+   "vyslovnost": "nanga def",
+   "rodina": "nigerokonžská",
+   "fakt": "Slovo „banán“ prý doputovalo do Evropy právě z wolofštiny."
+  },
+  "en": {
+   "nazev": "Wolof",
+   "vyslovnost": "NAHN-gah def",
+   "rodina": "Niger-Congo",
+   "fakt": "The word “banana” probably reached Europe from Wolof."
+  }
+ },
+ {
+  "id": "ff",
+  "skupina": "nk",
+  "pozdrav": "Jam tan!",
+  "domaci": "Fulfulde",
+  "mluvcich": 37,
+  "kod": "ff",
+  "stred": [
+   0,
+   14
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    -12,
+    12,
+    2.7
+   ],
+   [
+    -9,
+    14,
+    2.7
+   ],
+   [
+    -4,
+    14.5,
+    2.7
+   ],
+   [
+    1,
+    13.5,
+    2.5
+   ],
+   [
+    6,
+    12.5,
+    2.7
+   ],
+   [
+    10,
+    11,
+    2.5
+   ],
+   [
+    14,
+    10.5,
+    2.5
+   ],
+   [
+    -14,
+    16,
+    1.9
+   ],
+   [
+    13,
+    7,
+    1.7
+   ]
+  ],
+  "cs": {
+   "nazev": "Fulbština",
+   "vyslovnost": "džam tan",
+   "rodina": "nigerokonžská",
+   "fakt": "Mluví jí pastevci, kteří se stády putují napříč Afrikou. Proto je rozeseta ve dvaceti zemích."
+  },
+  "en": {
+   "nazev": "Fula",
+   "vyslovnost": "jahm tahn",
+   "rodina": "Niger-Congo",
+   "fakt": "It is spoken by herders who travel with their cattle across Africa. That is why it is scattered over twenty countries."
+  }
+ },
+ {
+  "id": "zh",
+  "skupina": "st",
+  "pozdrav": "你好!",
+  "domaci": "中文",
+  "mluvcich": 1100,
+  "kod": "zh-CN",
+  "stred": [
+   110,
+   34
+  ],
+  "zeme": [
+   "Taiwan"
+  ],
+  "areal": [
+   [
+    116,
+    39.9,
+    5
+   ],
+   [
+    114,
+    34,
+    5
+   ],
+   [
+    120,
+    31.5,
+    4.2
+   ],
+   [
+    113,
+    28,
+    4.2
+   ],
+   [
+    108,
+    34,
+    4
+   ],
+   [
+    104,
+    30.5,
+    4.2
+   ],
+   [
+    123,
+    43,
+    4.6
+   ],
+   [
+    126,
+    46,
+    4
+   ],
+   [
+    110,
+    22,
+    3
+   ]
+  ],
+  "cs": {
+   "nazev": "Čínština (mandarínská)",
+   "vyslovnost": "ni-chao",
+   "rodina": "sinotibetská",
+   "fakt": "Nepíše se písmenky, ale znaky pro celá slova. Abys přečetl noviny, potřebuješ jich znát asi tři tisíce."
+  },
+  "en": {
+   "nazev": "Mandarin Chinese",
+   "vyslovnost": "nee how",
+   "rodina": "Sino-Tibetan",
+   "fakt": "It is not written with letters but with characters for whole words. To read a newspaper you need to know about three thousand of them."
+  }
+ },
+ {
+  "id": "yue",
+  "skupina": "st",
+  "pozdrav": "你好!",
+  "domaci": "粵語",
+  "mluvcich": 85,
+  "kod": "zh-HK",
+  "stred": [
+   113.5,
+   23
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    113.3,
+    23.1,
+    2.5
+   ],
+   [
+    112,
+    22.5,
+    1.9
+   ],
+   [
+    114.2,
+    22.3,
+    0.6
+   ],
+   [
+    110.4,
+    21.3,
+    1.3
+   ]
+  ],
+  "cs": {
+   "nazev": "Kantonština",
+   "vyslovnost": "nej-hou",
+   "rodina": "sinotibetská",
+   "fakt": "Má šest až devět tónů podle toho, jak se počítají. Mandarínština má jen čtyři."
+  },
+  "en": {
+   "nazev": "Cantonese",
+   "vyslovnost": "nay HOH",
+   "rodina": "Sino-Tibetan",
+   "fakt": "It has six to nine tones, depending on how you count. Mandarin has only four."
+  }
+ },
+ {
+  "id": "my",
+  "skupina": "st",
+  "pozdrav": "မင်္ဂလာပါ!",
+  "domaci": "မြန်မာ",
+  "mluvcich": 43,
+  "kod": "my-MM",
+  "stred": [
+   96,
+   21
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    96,
+    21,
+    4
+   ],
+   [
+    95,
+    17,
+    2.7
+   ]
+  ],
+  "cs": {
+   "nazev": "Barmština",
+   "vyslovnost": "mingalaba",
+   "rodina": "sinotibetská",
+   "fakt": "Barmské písmo je samé kolečko. Psalo se na palmové listy a rovná čára by je proříznula."
+  },
+  "en": {
+   "nazev": "Burmese",
+   "vyslovnost": "ming-gah-lah-BAH",
+   "rodina": "Sino-Tibetan",
+   "fakt": "Burmese letters are almost all circles. They were written on palm leaves, which a straight line would have split."
+  }
+ },
+ {
+  "id": "bo",
+  "skupina": "st",
+  "pozdrav": "བཀྲ་ཤིས་བདེ་ལེགས!",
+  "domaci": "བོད་སྐད",
+  "mluvcich": 6,
+  "kod": "bo",
+  "stred": [
+   90,
+   31
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    91,
+    29.7,
+    4
+   ],
+   [
+    88,
+    31,
+    4
+   ],
+   [
+    95,
+    31,
+    3.6
+   ],
+   [
+    101,
+    32,
+    2.7
+   ],
+   [
+    85.3,
+    27.7,
+    0.8
+   ],
+   [
+    77.6,
+    34.2,
+    1.5
+   ],
+   [
+    89.6,
+    27.5,
+    0.8
+   ]
+  ],
+  "cs": {
+   "nazev": "Tibetština",
+   "vyslovnost": "taši delek",
+   "rodina": "sinotibetská",
+   "fakt": "Tibetština píše spoustu písmen, které se už nevyslovují. Jako by si pamatovala, jak zněla před tisíci lety."
+  },
+  "en": {
+   "nazev": "Tibetan",
+   "vyslovnost": "TAH-shee DEH-lek",
+   "rodina": "Sino-Tibetan",
+   "fakt": "Tibetan writes many letters that are no longer pronounced, as if it remembered how it sounded a thousand years ago."
+  }
+ },
+ {
+  "id": "ta",
+  "skupina": "ost",
+  "pozdrav": "வணக்கம்!",
+  "domaci": "தமிழ்",
+  "mluvcich": 85,
+  "kod": "ta-IN",
+  "stred": [
+   78.5,
+   11
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    78.5,
+    11,
+    2.7
+   ],
+   [
+    79.5,
+    9.5,
+    1.9
+   ],
+   [
+    80.5,
+    9.3,
+    1.3
+   ],
+   [
+    81.5,
+    7.8,
+    1
+   ],
+   [
+    101.7,
+    3.1,
+    0.6
+   ]
+  ],
+  "cs": {
+   "nazev": "Tamilština",
+   "vyslovnost": "vanakkam",
+   "rodina": "drávidská",
+   "fakt": "Tamilština je jeden z nejstarších dodnes živých jazyků. Básně v ní psali před dvěma tisíci lety."
+  },
+  "en": {
+   "nazev": "Tamil",
+   "vyslovnost": "vah-NAHK-kum",
+   "rodina": "Dravidian",
+   "fakt": "Tamil is one of the oldest languages still spoken today. Poems were written in it two thousand years ago."
+  }
+ },
+ {
+  "id": "te",
+  "skupina": "ost",
+  "pozdrav": "నమస్కారం!",
+  "domaci": "తెలుగు",
+  "mluvcich": 96,
+  "kod": "te-IN",
+  "stred": [
+   79,
+   17
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    79,
+    16.5,
+    3.2
+   ],
+   [
+    78.5,
+    17.4,
+    2.3
+   ]
+  ],
+  "cs": {
+   "nazev": "Telugština",
+   "vyslovnost": "namaskáram",
+   "rodina": "drávidská",
+   "fakt": "Říká se jí „italština Východu“, protože skoro každé slovo končí samohláskou a jazyk pěkně zpívá."
+  },
+  "en": {
+   "nazev": "Telugu",
+   "vyslovnost": "nuh-mus-KAH-rum",
+   "rodina": "Dravidian",
+   "fakt": "It is called “the Italian of the East” because nearly every word ends in a vowel, so it sounds like singing."
+  }
+ },
+ {
+  "id": "ja",
+  "skupina": "ost",
+  "pozdrav": "こんにちは!",
+  "domaci": "日本語",
+  "mluvcich": 125,
+  "kod": "ja-JP",
+  "stred": [
+   138,
+   37
+  ],
+  "zeme": [
+   "Japan"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Japonština",
+   "vyslovnost": "konničiwa",
+   "rodina": "japonská",
+   "fakt": "Japonština míchá tři písma najednou: znaky kandži a dvě slabičné abecedy hiraganu a katakanu."
+  },
+  "en": {
+   "nazev": "Japanese",
+   "vyslovnost": "kon-nee-chee-wah",
+   "rodina": "Japonic",
+   "fakt": "Japanese mixes three scripts at once: kanji characters and two syllable alphabets, hiragana and katakana."
+  }
+ },
+ {
+  "id": "ko",
+  "skupina": "ost",
+  "pozdrav": "안녕하세요!",
+  "domaci": "한국어",
+  "mluvcich": 82,
+  "kod": "ko-KR",
+  "stred": [
+   127.5,
+   37
+  ],
+  "zeme": [
+   "South Korea",
+   "North Korea"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Korejština",
+   "vyslovnost": "annjonghasejo",
+   "rodina": "korejská",
+   "fakt": "Korejské písmo hangul vymysleli schválně tak, aby se dalo naučit za jedno dopoledne. Tvary písmen kreslí polohu jazyka v puse."
+  },
+  "en": {
+   "nazev": "Korean",
+   "vyslovnost": "ahn-yong-hah-seh-yo",
+   "rodina": "Koreanic",
+   "fakt": "The Korean alphabet, hangul, was designed to be learned in a single morning. The letter shapes show where your tongue goes."
+  }
+ },
+ {
+  "id": "mn",
+  "skupina": "ost",
+  "pozdrav": "Сайн байна уу!",
+  "domaci": "монгол",
+  "mluvcich": 6,
+  "kod": "mn-MN",
+  "stred": [
+   104,
+   47
+  ],
+  "zeme": [
+   "Mongolia"
+  ],
+  "areal": [
+   [
+    112,
+    43,
+    4
+   ],
+   [
+    118,
+    45,
+    3.2
+   ]
+  ],
+  "cs": {
+   "nazev": "Mongolština",
+   "vyslovnost": "sajn bajna uu",
+   "rodina": "mongolská",
+   "fakt": "Tradiční mongolské písmo je jedno z mála na světě, které se píše shora dolů ve svislých sloupcích."
+  },
+  "en": {
+   "nazev": "Mongolian",
+   "vyslovnost": "sain BAIN-oo",
+   "rodina": "Mongolic",
+   "fakt": "Traditional Mongolian script is one of the few in the world written from top to bottom, in vertical columns."
+  }
+ },
+ {
+  "id": "ka",
+  "skupina": "ost",
+  "pozdrav": "გამარჯობა!",
+  "domaci": "ქართული",
+  "mluvcich": 4,
+  "kod": "ka-GE",
+  "stred": [
+   43.5,
+   42
+  ],
+  "zeme": [
+   "Georgia"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Gruzínština",
+   "vyslovnost": "gamardžoba",
+   "rodina": "kartvelská",
+   "fakt": "Gruzínské písmo nemá velká ani malá písmena a nepodobá se žádnému jinému na světě."
+  },
+  "en": {
+   "nazev": "Georgian",
+   "vyslovnost": "gah-mar-JOH-bah",
+   "rodina": "Kartvelian",
+   "fakt": "The Georgian alphabet has no capital letters and looks like no other script in the world."
+  }
+ },
+ {
+  "id": "tr",
+  "skupina": "ost",
+  "pozdrav": "Merhaba!",
+  "domaci": "Türkçe",
+  "mluvcich": 85,
+  "kod": "tr-TR",
+  "stred": [
+   35,
+   39
+  ],
+  "zeme": [
+   "Turkey",
+   "N. Cyprus",
+   "Cyprus"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Turečtina",
+   "vyslovnost": "merhaba",
+   "rodina": "turkická",
+   "fakt": "Turečtina lepí přípony za sebe jako korálky. Jedno slovo tak může nahradit celou českou větu."
+  },
+  "en": {
+   "nazev": "Turkish",
+   "vyslovnost": "MER-hah-bah",
+   "rodina": "Turkic",
+   "fakt": "Turkish sticks endings onto words like beads on a string. One word can do the job of a whole English sentence."
+  }
+ },
+ {
+  "id": "az",
+  "skupina": "ost",
+  "pozdrav": "Salam!",
+  "domaci": "azərbaycan dili",
+  "mluvcich": 25,
+  "kod": "az-AZ",
+  "stred": [
+   48,
+   39
+  ],
+  "zeme": [
+   "Azerbaijan"
+  ],
+  "areal": [
+   [
+    46.5,
+    37.9,
+    2.7
+   ],
+   [
+    48.5,
+    38.2,
+    1.9
+   ]
+  ],
+  "cs": {
+   "nazev": "Ázerbájdžánština",
+   "vyslovnost": "salam",
+   "rodina": "turkická",
+   "fakt": "Je turečtině tak blízká, že si Turek a Ázerbájdžánec povídají každý svou řečí a rozumí si."
+  },
+  "en": {
+   "nazev": "Azerbaijani",
+   "vyslovnost": "sah-LAHM",
+   "rodina": "Turkic",
+   "fakt": "It is so close to Turkish that a Turk and an Azerbaijani can each speak their own language and still understand each other."
+  }
+ },
+ {
+  "id": "kk",
+  "skupina": "ost",
+  "pozdrav": "Сәлем!",
+  "domaci": "қазақ тілі",
+  "mluvcich": 14,
+  "kod": "kk-KZ",
+  "stred": [
+   67,
+   48
+  ],
+  "zeme": [
+   "Kazakhstan"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Kazaština",
+   "vyslovnost": "sälem",
+   "rodina": "turkická",
+   "fakt": "Kazaština právě přechází z azbuky na latinku. Jazyk mění kabát přímo před našima očima."
+  },
+  "en": {
+   "nazev": "Kazakh",
+   "vyslovnost": "SAH-lem",
+   "rodina": "Turkic",
+   "fakt": "Kazakh is switching from Cyrillic to the Latin alphabet – a language changing its clothes before our eyes."
+  }
+ },
+ {
+  "id": "uz",
+  "skupina": "ost",
+  "pozdrav": "Salom!",
+  "domaci": "oʻzbekcha",
+  "mluvcich": 35,
+  "kod": "uz",
+  "stred": [
+   64,
+   41.5
+  ],
+  "zeme": [
+   "Uzbekistan"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Uzbečtina",
+   "vyslovnost": "salom",
+   "rodina": "turkická",
+   "fakt": "Uzbečtina je nejrozšířenější turkický jazyk hned po turečtině."
+  },
+  "en": {
+   "nazev": "Uzbek",
+   "vyslovnost": "sah-LOHM",
+   "rodina": "Turkic",
+   "fakt": "Uzbek is the most widely spoken Turkic language after Turkish."
+  }
+ },
+ {
+  "id": "ug",
+  "skupina": "ost",
+  "pozdrav": "ياخشىمۇسىز!",
+  "domaci": "ئۇيغۇرچە",
+  "mluvcich": 11,
+  "kod": "ug",
+  "stred": [
+   85,
+   41
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    79,
+    39.5,
+    4
+   ],
+   [
+    87,
+    44,
+    3.6
+   ],
+   [
+    81,
+    43.5,
+    2.7
+   ]
+  ],
+  "cs": {
+   "nazev": "Ujgurština",
+   "vyslovnost": "jachšimusiz",
+   "rodina": "turkická",
+   "fakt": "Ujgurština je turkický jazyk, který se píše arabským písmem – kombinace, jakou jinde nenajdeš."
+  },
+  "en": {
+   "nazev": "Uyghur",
+   "vyslovnost": "yahkh-shee-moo-SEEZ",
+   "rodina": "Turkic",
+   "fakt": "Uyghur is a Turkic language written in Arabic script – a combination you won't find anywhere else."
+  }
+ },
+ {
+  "id": "fi",
+  "skupina": "ost",
+  "pozdrav": "Hei!",
+  "domaci": "suomi",
+  "mluvcich": 5.4,
+  "kod": "fi-FI",
+  "stred": [
+   26,
+   64
+  ],
+  "zeme": [
+   "Finland"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Finština",
+   "vyslovnost": "hej",
+   "rodina": "uralská",
+   "fakt": "Finština má patnáct pádů. Čeština jen sedm – a to si stěžujeme."
+  },
+  "en": {
+   "nazev": "Finnish",
+   "vyslovnost": "hay",
+   "rodina": "Uralic",
+   "fakt": "Finnish has fifteen grammatical cases – fifteen ways of changing a word's ending. English nouns hardly change at all."
+  }
+ },
+ {
+  "id": "hu",
+  "skupina": "ost",
+  "pozdrav": "Szia!",
+  "domaci": "magyar",
+  "mluvcich": 13,
+  "kod": "hu-HU",
+  "stred": [
+   19.4,
+   47.1
+  ],
+  "zeme": [
+   "Hungary"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Maďarština",
+   "vyslovnost": "sija",
+   "rodina": "uralská",
+   "fakt": "Maďarština není příbuzná s češtinou ani němčinou. Její nejbližší příbuzní žijí až na Sibiři."
+  },
+  "en": {
+   "nazev": "Hungarian",
+   "vyslovnost": "SEE-yah",
+   "rodina": "Uralic",
+   "fakt": "Hungarian is not related to any of its neighbours. Its closest relatives live far away in Siberia."
+  }
+ },
+ {
+  "id": "et",
+  "skupina": "ost",
+  "pozdrav": "Tere!",
+  "domaci": "eesti",
+  "mluvcich": 1.1,
+  "kod": "et-EE",
+  "stred": [
+   25.5,
+   58.7
+  ],
+  "zeme": [
+   "Estonia"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Estonština",
+   "vyslovnost": "tere",
+   "rodina": "uralská",
+   "fakt": "Estonština rozlišuje tři délky samohlásek. Stejné slovo tak může znamenat tři různé věci."
+  },
+  "en": {
+   "nazev": "Estonian",
+   "vyslovnost": "TEH-reh",
+   "rodina": "Uralic",
+   "fakt": "Estonian has three lengths of vowels. The same word can mean three different things."
+  }
+ },
+ {
+  "id": "se",
+  "skupina": "ost",
+  "pozdrav": "Bures!",
+  "domaci": "davvisámegiella",
+  "mluvcich": 0.025,
+  "kod": "se",
+  "stred": [
+   22,
+   69
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    23,
+    69,
+    3
+   ],
+   [
+    19,
+    68.5,
+    2.5
+   ],
+   [
+    27,
+    69,
+    2.3
+   ],
+   [
+    15,
+    66,
+    2
+   ]
+  ],
+  "cs": {
+   "nazev": "Severní sámština",
+   "vyslovnost": "bures",
+   "rodina": "uralská",
+   "fakt": "Sámové mají desítky slov pro sníh a stovky pro soba – podle věku, barvy i tvaru parohů."
+  },
+  "en": {
+   "nazev": "Northern Sami",
+   "vyslovnost": "BOO-res",
+   "rodina": "Uralic",
+   "fakt": "The Sami have dozens of words for snow and hundreds for reindeer – by age, colour and antler shape."
+  }
+ },
+ {
+  "id": "vi",
+  "skupina": "ost",
+  "pozdrav": "Xin chào!",
+  "domaci": "tiếng Việt",
+  "mluvcich": 86,
+  "kod": "vi-VN",
+  "stred": [
+   106,
+   16
+  ],
+  "zeme": [
+   "Vietnam"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Vietnamština",
+   "vyslovnost": "sin čao",
+   "rodina": "austroasijská",
+   "fakt": "Nad písmenky má až dva háčky a čárky najednou – jeden pro hlásku a druhý pro tón."
+  },
+  "en": {
+   "nazev": "Vietnamese",
+   "vyslovnost": "sin chow",
+   "rodina": "Austroasiatic",
+   "fakt": "It can put two accent marks on one letter – one for the sound and one for the tone."
+  }
+ },
+ {
+  "id": "km",
+  "skupina": "ost",
+  "pozdrav": "សួស្ដី!",
+  "domaci": "ភាសាខ្មែរ",
+  "mluvcich": 17,
+  "kod": "km-KH",
+  "stred": [
+   105,
+   12.5
+  ],
+  "zeme": [
+   "Cambodia"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Khmerština",
+   "vyslovnost": "suosdaj",
+   "rodina": "austroasijská",
+   "fakt": "Khmerská abeceda má 74 písmen – je to nejdelší abeceda na světě."
+  },
+  "en": {
+   "nazev": "Khmer",
+   "vyslovnost": "soo-uhs-DAY",
+   "rodina": "Austroasiatic",
+   "fakt": "The Khmer alphabet has 74 letters – the longest alphabet in the world."
+  }
+ },
+ {
+  "id": "th",
+  "skupina": "ost",
+  "pozdrav": "สวัสดี!",
+  "domaci": "ภาษาไทย",
+  "mluvcich": 61,
+  "kod": "th-TH",
+  "stred": [
+   100.5,
+   15.5
+  ],
+  "zeme": [
+   "Thailand"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Thajština",
+   "vyslovnost": "sawatdý",
+   "rodina": "kra-dajská",
+   "fakt": "Thajština nepíše mezery mezi slovy. Věta je jeden dlouhý had písmen."
+  },
+  "en": {
+   "nazev": "Thai",
+   "vyslovnost": "sah-waht-DEE",
+   "rodina": "Kra-Dai",
+   "fakt": "Thai doesn't put spaces between words. A sentence is one long snake of letters."
+  }
+ },
+ {
+  "id": "lo",
+  "skupina": "ost",
+  "pozdrav": "ສະບາຍດີ!",
+  "domaci": "ພາສາລາວ",
+  "mluvcich": 5,
+  "kod": "lo-LA",
+  "stred": [
+   103,
+   18.5
+  ],
+  "zeme": [
+   "Laos"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Laoština",
+   "vyslovnost": "sabajdý",
+   "rodina": "kra-dajská",
+   "fakt": "Laoština a thajština jsou si tak blízké, že Laosané rozumí thajské televizi bez překladu."
+  },
+  "en": {
+   "nazev": "Lao",
+   "vyslovnost": "sah-bai-DEE",
+   "rodina": "Kra-Dai",
+   "fakt": "Lao and Thai are so close that people in Laos watch Thai television without subtitles."
+  }
+ },
+ {
+  "id": "id",
+  "skupina": "an",
+  "pozdrav": "Halo!",
+  "domaci": "Bahasa Indonesia",
+  "mluvcich": 200,
+  "kod": "id-ID",
+  "stred": [
+   118,
+   -2
+  ],
+  "zeme": [
+   "Indonesia"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Indonéština",
+   "vyslovnost": "halo",
+   "rodina": "austronéská",
+   "fakt": "Množné číslo se dělá tak, že slovo řekneš dvakrát. Dítě je „anak“, děti jsou „anak-anak“."
+  },
+  "en": {
+   "nazev": "Indonesian",
+   "vyslovnost": "HAH-loh",
+   "rodina": "Austronesian",
+   "fakt": "To make a plural you just say the word twice. A child is “anak”, children are “anak-anak”."
+  }
+ },
+ {
+  "id": "ms",
+  "skupina": "an",
+  "pozdrav": "Selamat!",
+  "domaci": "Bahasa Melayu",
+  "mluvcich": 80,
+  "kod": "ms-MY",
+  "stred": [
+   110,
+   3
+  ],
+  "zeme": [
+   "Malaysia",
+   "Brunei"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Malajština",
+   "vyslovnost": "selamat",
+   "rodina": "austronéská",
+   "fakt": "Z malajštiny máme slova orangutan („lesní člověk“) i amok."
+  },
+  "en": {
+   "nazev": "Malay",
+   "vyslovnost": "seh-LAH-maht",
+   "rodina": "Austronesian",
+   "fakt": "Orangutan – “person of the forest” – and amok both come from Malay."
+  }
+ },
+ {
+  "id": "jv",
+  "skupina": "an",
+  "pozdrav": "Sugeng enjing!",
+  "domaci": "ꦧꦱꦗꦮ",
+  "mluvcich": 82,
+  "kod": "jv",
+  "stred": [
+   110,
+   -7.5
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    110.5,
+    -7.3,
+    2.3
+   ],
+   [
+    112.5,
+    -7.6,
+    1.9
+   ],
+   [
+    108.5,
+    -7,
+    1.4
+   ]
+  ],
+  "cs": {
+   "nazev": "Javánština",
+   "vyslovnost": "sugeng endžing",
+   "rodina": "austronéská",
+   "fakt": "Javánština má několik úrovní zdvořilosti. Jinými slovy mluvíš s kamarádem a jinými se starším člověkem."
+  },
+  "en": {
+   "nazev": "Javanese",
+   "vyslovnost": "soo-GENG en-JING",
+   "rodina": "Austronesian",
+   "fakt": "Javanese has several levels of politeness. You use different words with a friend and with an older person."
+  }
+ },
+ {
+  "id": "tl",
+  "skupina": "an",
+  "pozdrav": "Kumusta!",
+  "domaci": "Tagalog",
+  "mluvcich": 85,
+  "kod": "fil-PH",
+  "stred": [
+   122,
+   13
+  ],
+  "zeme": [
+   "Philippines"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Tagalog (filipínština)",
+   "vyslovnost": "kumusta",
+   "rodina": "austronéská",
+   "fakt": "Pozdrav „kumusta“ pochází ze španělského „¿cómo está?“ – jak se máš."
+  },
+  "en": {
+   "nazev": "Tagalog (Filipino)",
+   "vyslovnost": "koo-MOOS-tah",
+   "rodina": "Austronesian",
+   "fakt": "The greeting “kumusta” comes from the Spanish “¿cómo está?” – how are you?"
+  }
+ },
+ {
+  "id": "mg",
+  "skupina": "an",
+  "pozdrav": "Salama!",
+  "domaci": "Malagasy",
+  "mluvcich": 25,
+  "kod": "mg",
+  "stred": [
+   47,
+   -19
+  ],
+  "zeme": [
+   "Madagascar"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Malgaština",
+   "vyslovnost": "salama",
+   "rodina": "austronéská",
+   "fakt": "Madagaskar leží u Afriky, ale jeho jazyk je příbuzný s řečí z Bornea – 7 000 kilometrů daleko přes oceán."
+  },
+  "en": {
+   "nazev": "Malagasy",
+   "vyslovnost": "sah-LAH-mah",
+   "rodina": "Austronesian",
+   "fakt": "Madagascar lies next to Africa, but its language is related to one from Borneo – 7,000 kilometres away across the ocean."
+  }
+ },
+ {
+  "id": "mi",
+  "skupina": "an",
+  "pozdrav": "Kia ora!",
+  "domaci": "te reo Māori",
+  "mluvcich": 0.19,
+  "kod": "mi-NZ",
+  "stred": [
+   174,
+   -40
+  ],
+  "zeme": [
+   "New Zealand"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Maorština",
+   "vyslovnost": "kia ora",
+   "rodina": "austronéská",
+   "fakt": "„Kia ora“ znamená „buď zdráv“ a na Novém Zélandu ho dnes říkají i lidé, kteří maorsky neumí."
+  },
+  "en": {
+   "nazev": "Māori",
+   "vyslovnost": "kee-ah OH-rah",
+   "rodina": "Austronesian",
+   "fakt": "“Kia ora” means “be well”, and in New Zealand even people who don't speak Māori say it."
+  }
+ },
+ {
+  "id": "haw",
+  "skupina": "an",
+  "pozdrav": "Aloha!",
+  "domaci": "ʻŌlelo Hawaiʻi",
+  "mluvcich": 0.027,
+  "kod": "haw",
+  "stred": [
+   -157,
+   20.5
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    -156,
+    20.5,
+    1.2
+   ],
+   [
+    -158,
+    21.4,
+    0.7
+   ]
+  ],
+  "cs": {
+   "nazev": "Havajština",
+   "vyslovnost": "aloha",
+   "rodina": "austronéská",
+   "fakt": "Havajština má jen 13 písmen. „Aloha“ znamená ahoj, na shledanou i lásku zároveň."
+  },
+  "en": {
+   "nazev": "Hawaiian",
+   "vyslovnost": "ah-LOH-hah",
+   "rodina": "Austronesian",
+   "fakt": "Hawaiian has only 13 letters. “Aloha” means hello, goodbye and love all at once."
+  }
+ },
+ {
+  "id": "fj",
+  "skupina": "an",
+  "pozdrav": "Bula!",
+  "domaci": "Na Vosa Vakaviti",
+  "mluvcich": 0.65,
+  "kod": "fj",
+  "stred": [
+   178,
+   -17.8
+  ],
+  "zeme": [
+   "Fiji"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Fidžijština",
+   "vyslovnost": "bula",
+   "rodina": "austronéská",
+   "fakt": "„Bula“ doslova znamená „život“. Na Fidži se tím zdraví úplně všichni."
+  },
+  "en": {
+   "nazev": "Fijian",
+   "vyslovnost": "BOO-lah",
+   "rodina": "Austronesian",
+   "fakt": "“Bula” literally means “life”. In Fiji everybody greets everybody with it."
+  }
+ },
+ {
+  "id": "tpi",
+  "skupina": "ost",
+  "pozdrav": "Gude!",
+  "domaci": "Tok Pisin",
+  "mluvcich": 4,
+  "kod": "tpi",
+  "stred": [
+   145,
+   -6
+  ],
+  "zeme": [
+   "Papua New Guinea"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Tok Pisin",
+   "vyslovnost": "gudé",
+   "rodina": "kreolský jazyk (z angličtiny)",
+   "fakt": "Vznikl mícháním angličtiny s místními jazyky. Vousy jsou „gras bilong fes“ – tráva patřící obličeji."
+  },
+  "en": {
+   "nazev": "Tok Pisin",
+   "vyslovnost": "GOO-deh",
+   "rodina": "English-based creole",
+   "fakt": "It grew from English mixed with local languages. A beard is “gras bilong fes” – grass belonging to the face."
+  }
+ },
+ {
+  "id": "qu",
+  "skupina": "ost",
+  "pozdrav": "Rimaykullayki!",
+  "domaci": "Runa Simi",
+  "mluvcich": 8,
+  "kod": "qu",
+  "stred": [
+   -72,
+   -13
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    -72,
+    -13.5,
+    2.7
+   ],
+   [
+    -74,
+    -9,
+    2.5
+   ],
+   [
+    -76,
+    -12,
+    2.3
+   ],
+   [
+    -68.5,
+    -16.5,
+    2.3
+   ],
+   [
+    -78.5,
+    -1.5,
+    1.9
+   ],
+   [
+    -65.5,
+    -19,
+    1.9
+   ],
+   [
+    -65.5,
+    -22.5,
+    1.4
+   ]
+  ],
+  "cs": {
+   "nazev": "Kečuánština",
+   "vyslovnost": "rimajkulajki",
+   "rodina": "kečuánská",
+   "fakt": "Mluvili jí Inkové. Z kečuánštiny máme slova lama, kondor, puma i pončo."
+  },
+  "en": {
+   "nazev": "Quechua",
+   "vyslovnost": "ree-mai-koo-YAI-kee",
+   "rodina": "Quechuan",
+   "fakt": "It was the language of the Incas. Llama, condor, puma and poncho all come from Quechua."
+  }
+ },
+ {
+  "id": "ay",
+  "skupina": "ost",
+  "pozdrav": "Kamisaraki!",
+  "domaci": "Aymar aru",
+  "mluvcich": 1.7,
+  "kod": "ay",
+  "stred": [
+   -68,
+   -17
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    -68.8,
+    -16.3,
+    1.9
+   ],
+   [
+    -69.5,
+    -15.8,
+    1.4
+   ],
+   [
+    -68.2,
+    -19,
+    1.4
+   ]
+  ],
+  "cs": {
+   "nazev": "Ajmarština",
+   "vyslovnost": "kamisaraki",
+   "rodina": "ajmarská",
+   "fakt": "Ajmarové si představují budoucnost za zády a minulost před sebou – protože minulost je vidět, budoucnost ne."
+  },
+  "en": {
+   "nazev": "Aymara",
+   "vyslovnost": "kah-mee-sah-RAH-kee",
+   "rodina": "Aymaran",
+   "fakt": "The Aymara imagine the future behind them and the past in front – because you can see the past, but not the future."
+  }
+ },
+ {
+  "id": "gn",
+  "skupina": "ost",
+  "pozdrav": "Mbaʼéichapa!",
+  "domaci": "avañeʼẽ",
+  "mluvcich": 6.5,
+  "kod": "gn",
+  "stred": [
+   -58,
+   -24
+  ],
+  "zeme": [
+   "Paraguay"
+  ],
+  "areal": [
+   [
+    -56.5,
+    -27.3,
+    1.7
+   ],
+   [
+    -62,
+    -19.5,
+    1.3
+   ]
+  ],
+  "cs": {
+   "nazev": "Guaraní",
+   "vyslovnost": "mbaejčapa",
+   "rodina": "tupi-guaranijská",
+   "fakt": "V Paraguayi mluví guaransky skoro všichni, i lidé bez indiánských předků. Je to jediná taková země v Americe."
+  },
+  "en": {
+   "nazev": "Guarani",
+   "vyslovnost": "mbah-EY-chah-pah",
+   "rodina": "Tupi-Guarani",
+   "fakt": "In Paraguay almost everyone speaks Guarani, even people without Indigenous ancestors – the only country in the Americas like that."
+  }
+ },
+ {
+  "id": "nah",
+  "skupina": "ost",
+  "pozdrav": "Niltze!",
+  "domaci": "Nāhuatl",
+  "mluvcich": 1.7,
+  "kod": "es-MX",
+  "stred": [
+   -98.5,
+   19.5
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    -98.3,
+    19.5,
+    1.4
+   ],
+   [
+    -97.5,
+    18.5,
+    1.3
+   ],
+   [
+    -99.5,
+    18.8,
+    1
+   ],
+   [
+    -98,
+    20.5,
+    0.9
+   ]
+  ],
+  "cs": {
+   "nazev": "Nahuatl",
+   "vyslovnost": "niltse",
+   "rodina": "uto-aztécká",
+   "fakt": "Mluvili jí Aztékové. Dali nám slova čokoláda, rajče, avokádo i kojot."
+  },
+  "en": {
+   "nazev": "Nahuatl",
+   "vyslovnost": "NEEL-tseh",
+   "rodina": "Uto-Aztecan",
+   "fakt": "It was the language of the Aztecs. Chocolate, tomato, avocado and coyote all come from Nahuatl."
+  }
+ },
+ {
+  "id": "kl",
+  "skupina": "ost",
+  "pozdrav": "Aluu!",
+  "domaci": "kalaallisut",
+  "mluvcich": 0.057,
+  "kod": "kl",
+  "stred": [
+   -42,
+   72
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    -52,
+    64.5,
+    2.3
+   ],
+   [
+    -53,
+    68.5,
+    2.3
+   ],
+   [
+    -38,
+    65.6,
+    1.4
+   ],
+   [
+    -56,
+    71,
+    1.9
+   ]
+  ],
+  "cs": {
+   "nazev": "Grónština",
+   "vyslovnost": "alú",
+   "rodina": "eskymácko-aleutská",
+   "fakt": "Jedno grónské slovo může být celá věta. Skládá se z kousků, které se lepí za sebe jako vagony."
+  },
+  "en": {
+   "nazev": "Greenlandic",
+   "vyslovnost": "ah-LOO",
+   "rodina": "Eskimo-Aleut",
+   "fakt": "One Greenlandic word can be a whole sentence, built from pieces coupled together like railway carriages."
+  }
+ },
+ {
+  "id": "iu",
+  "skupina": "ost",
+  "pozdrav": "ᐊᐃᓐᖓᐃ!",
+  "domaci": "ᐃᓄᒃᑎᑐᑦ",
+  "mluvcich": 0.04,
+  "kod": "iu",
+  "stred": [
+   -85,
+   66
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    -68,
+    63,
+    3.2
+   ],
+   [
+    -85,
+    68,
+    3.6
+   ],
+   [
+    -78,
+    60,
+    2.5
+   ],
+   [
+    -63,
+    58,
+    2
+   ]
+  ],
+  "cs": {
+   "nazev": "Inuktitut",
+   "vyslovnost": "ajngaj",
+   "rodina": "eskymácko-aleutská",
+   "fakt": "Píše se slabičným písmem, kde otočení znaku mění samohlásku. Stejný trojúhelníček znamená čtyři různé slabiky."
+  },
+  "en": {
+   "nazev": "Inuktitut",
+   "vyslovnost": "AI-ngai",
+   "rodina": "Eskimo-Aleut",
+   "fakt": "It is written in a syllabic script where turning a sign changes its vowel. The same little triangle can be four different syllables."
+  }
+ },
+ {
+  "id": "kn",
+  "skupina": "ost",
+  "pozdrav": "ನಮಸ್ಕಾರ!",
+  "domaci": "ಕನ್ನಡ",
+  "mluvcich": 59,
+  "kod": "kn-IN",
+  "stred": [
+   76.5,
+   14.5
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    76,
+    14.5,
+    3.2
+   ],
+   [
+    77.6,
+    13,
+    1.7
+   ]
+  ],
+  "cs": {
+   "nazev": "Kannadština",
+   "vyslovnost": "namaskára",
+   "rodina": "drávidská",
+   "fakt": "Indický myslitel Vinóba Bhávé nazval kannadské písmo „královnou písem světa“."
+  },
+  "en": {
+   "nazev": "Kannada",
+   "vyslovnost": "nuh-mus-KAH-rah",
+   "rodina": "Dravidian",
+   "fakt": "The Indian thinker Vinoba Bhave called the Kannada script “the queen of the world's scripts”."
+  }
+ },
+ {
+  "id": "ml",
+  "skupina": "ost",
+  "pozdrav": "നമസ്കാരം!",
+  "domaci": "മലയാളം",
+  "mluvcich": 38,
+  "kod": "ml-IN",
+  "stred": [
+   76.3,
+   10.5
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    76.3,
+    10.5,
+    2.2
+   ],
+   [
+    75.8,
+    11.9,
+    1.4
+   ]
+  ],
+  "cs": {
+   "nazev": "Malajálamština",
+   "vyslovnost": "namaskáram",
+   "rodina": "drávidská",
+   "fakt": "Její jméno se čte stejně zepředu i zezadu – malayalam je palindrom."
+  },
+  "en": {
+   "nazev": "Malayalam",
+   "vyslovnost": "nuh-mus-KAH-rum",
+   "rodina": "Dravidian",
+   "fakt": "Its name reads the same forwards and backwards – Malayalam is a palindrome."
+  }
+ },
+ {
+  "id": "or",
+  "skupina": "ie",
+  "pozdrav": "ନମସ୍କାର!",
+  "domaci": "ଓଡ଼ିଆ",
+  "mluvcich": 38,
+  "kod": "or-IN",
+  "stred": [
+   85,
+   20.5
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    85,
+    20.5,
+    2.6
+   ]
+  ],
+  "cs": {
+   "nazev": "Urijština",
+   "vyslovnost": "namaskár",
+   "rodina": "indoevropská – indoárijská",
+   "fakt": "Psalo se rydlem na palmové listy, a tak má skoro každé písmeno nahoře oblouček, aby list nepraskl."
+  },
+  "en": {
+   "nazev": "Odia",
+   "vyslovnost": "nuh-mus-KAR",
+   "rodina": "Indo-European – Indo-Aryan",
+   "fakt": "It was scratched onto palm leaves with a stylus, so almost every letter has a rounded top that wouldn't tear the leaf."
+  }
+ },
+ {
+  "id": "as",
+  "skupina": "ie",
+  "pozdrav": "নমস্কাৰ!",
+  "domaci": "অসমীয়া",
+  "mluvcich": 24,
+  "kod": "as-IN",
+  "stred": [
+   92.5,
+   26.3
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    92.5,
+    26.3,
+    2.2
+   ]
+  ],
+  "cs": {
+   "nazev": "Asámština",
+   "vyslovnost": "nomoškar",
+   "rodina": "indoevropská – indoárijská",
+   "fakt": "Mluví se jí v údolí Brahmaputry, jedné z nejdivočejších řek světa."
+  },
+  "en": {
+   "nazev": "Assamese",
+   "vyslovnost": "NO-mosh-kar",
+   "rodina": "Indo-European – Indo-Aryan",
+   "fakt": "It is spoken along the Brahmaputra, one of the wildest rivers in the world."
+  }
+ },
+ {
+  "id": "sd",
+  "skupina": "ie",
+  "pozdrav": "سلام!",
+  "domaci": "سنڌي",
+  "mluvcich": 32,
+  "kod": "sd",
+  "stred": [
+   68.8,
+   25.5
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    68.8,
+    25.5,
+    2.6
+   ],
+   [
+    67,
+    25,
+    1.7
+   ]
+  ],
+  "cs": {
+   "nazev": "Sindhština",
+   "vyslovnost": "salám",
+   "rodina": "indoevropská – indoárijská",
+   "fakt": "Sindhština má 52 písmen – jednu z nejdelších verzí arabského písma."
+  },
+  "en": {
+   "nazev": "Sindhi",
+   "vyslovnost": "sah-LAHM",
+   "rodina": "Indo-European – Indo-Aryan",
+   "fakt": "Sindhi uses 52 letters – one of the longest versions of the Arabic script."
+  }
+ },
+ {
+  "id": "mai",
+  "skupina": "ie",
+  "pozdrav": "प्रणाम!",
+  "domaci": "मैथिली",
+  "mluvcich": 34,
+  "kod": "mai",
+  "stred": [
+   86,
+   26.3
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    86,
+    26.3,
+    1.9
+   ],
+   [
+    85.5,
+    26.8,
+    1.4
+   ]
+  ],
+  "cs": {
+   "nazev": "Maithilština",
+   "vyslovnost": "pranám",
+   "rodina": "indoevropská – indoárijská",
+   "fakt": "Měla vlastní písmo tirhuta. Dnes se píše stejně jako hindština."
+  },
+  "en": {
+   "nazev": "Maithili",
+   "vyslovnost": "prah-NAHM",
+   "rodina": "Indo-European – Indo-Aryan",
+   "fakt": "It once had a script of its own, Tirhuta. Today it is usually written the same way as Hindi."
+  }
+ },
+ {
+  "id": "su",
+  "skupina": "an",
+  "pozdrav": "Wilujeng!",
+  "domaci": "Basa Sunda",
+  "mluvcich": 42,
+  "kod": "su",
+  "stred": [
+   107.5,
+   -6.9
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    107.5,
+    -6.9,
+    1.9
+   ],
+   [
+    108,
+    -7.2,
+    1.4
+   ]
+  ],
+  "cs": {
+   "nazev": "Sundánština",
+   "vyslovnost": "vilujeng",
+   "rodina": "austronéská",
+   "fakt": "Druhý nejrozšířenější jazyk Indonésie. Má vlastní bambusový orchestr angklung."
+  },
+  "en": {
+   "nazev": "Sundanese",
+   "vyslovnost": "wee-loo-JENG",
+   "rodina": "Austronesian",
+   "fakt": "It is the second most spoken language of Indonesia, and the home of the angklung, a bamboo instrument."
+  }
+ },
+ {
+  "id": "ceb",
+  "skupina": "an",
+  "pozdrav": "Kumusta!",
+  "domaci": "Sinugbuanong Binisayâ",
+  "mluvcich": 27,
+  "kod": "ceb",
+  "stred": [
+   123.9,
+   10.3
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    123.9,
+    10.3,
+    1.4
+   ],
+   [
+    124.5,
+    8.5,
+    1.5
+   ],
+   [
+    125.5,
+    9.5,
+    1.3
+   ]
+  ],
+  "cs": {
+   "nazev": "Cebuánština",
+   "vyslovnost": "kumusta",
+   "rodina": "austronéská",
+   "fakt": "Mluví se jí na filipínských ostrovech Visayas. Spoustu slov, i pozdrav, si půjčila ze španělštiny."
+  },
+  "en": {
+   "nazev": "Cebuano",
+   "vyslovnost": "koo-MOOS-tah",
+   "rodina": "Austronesian",
+   "fakt": "It is the language of the Visayan islands of the Philippines. Many of its words, including the greeting, come from Spanish."
+  }
+ },
+ {
+  "id": "wuu",
+  "skupina": "st",
+  "pozdrav": "侬好!",
+  "domaci": "吳語",
+  "mluvcich": 82,
+  "kod": "zh",
+  "stred": [
+   121.5,
+   31.2
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    121.5,
+    31.2,
+    1.7
+   ],
+   [
+    120.2,
+    30.3,
+    1.4
+   ],
+   [
+    119.5,
+    32,
+    1.4
+   ]
+  ],
+  "cs": {
+   "nazev": "Wu (šanghajština)",
+   "vyslovnost": "non hó",
+   "rodina": "sinotibetská",
+   "fakt": "Šanghajština zní Číňanům z Pekingu jako cizí řeč. Nerozumí jí."
+  },
+  "en": {
+   "nazev": "Wu (Shanghainese)",
+   "vyslovnost": "nong HOH",
+   "rodina": "Sino-Tibetan",
+   "fakt": "Shanghainese sounds like a foreign language to people from Beijing. They can't understand it."
+  }
+ },
+ {
+  "id": "nan",
+  "skupina": "st",
+  "pozdrav": "你好!",
+  "domaci": "閩南語",
+  "mluvcich": 50,
+  "kod": "zh-TW",
+  "stred": [
+   120.9,
+   23.8
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    118,
+    25,
+    2.2
+   ],
+   [
+    120.9,
+    23.8,
+    1.4
+   ],
+   [
+    117.5,
+    23.5,
+    1.4
+   ],
+   [
+    101.7,
+    3.1,
+    0.6
+   ]
+  ],
+  "cs": {
+   "nazev": "Minnanština",
+   "vyslovnost": "lí-hó",
+   "rodina": "sinotibetská",
+   "fakt": "Říká se jí taky tchajwanština nebo hokkien. Doputovala s námořníky po celé jihovýchodní Asii."
+  },
+  "en": {
+   "nazev": "Hokkien",
+   "vyslovnost": "LEE-hoh",
+   "rodina": "Sino-Tibetan",
+   "fakt": "It is also called Taiwanese or Min Nan. Sailors carried it all over Southeast Asia."
+  }
+ },
+ {
+  "id": "hak",
+  "skupina": "st",
+  "pozdrav": "你好!",
+  "domaci": "客家話",
+  "mluvcich": 44,
+  "kod": "zh",
+  "stred": [
+   115.5,
+   24.5
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    115.5,
+    24.5,
+    1.9
+   ],
+   [
+    116.5,
+    25.5,
+    1.4
+   ]
+  ],
+  "cs": {
+   "nazev": "Hakkština",
+   "vyslovnost": "ngi hó",
+   "rodina": "sinotibetská",
+   "fakt": "Hakkové jsou „hosté“ – stěhovali se po Číně tak dlouho, až si přinesli vlastní jazyk i kulaté domy."
+  },
+  "en": {
+   "nazev": "Hakka",
+   "vyslovnost": "ngee HOH",
+   "rodina": "Sino-Tibetan",
+   "fakt": "The Hakka are the “guest people” – they moved around China for so long that they brought their own language and round fortress houses."
+  }
+ },
+ {
+  "id": "za",
+  "skupina": "ost",
+  "pozdrav": "Mwngz ndei!",
+  "domaci": "Vahcuengh",
+  "mluvcich": 16,
+  "kod": "za",
+  "stred": [
+   107.5,
+   23.5
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    107.5,
+    23.5,
+    2.5
+   ]
+  ],
+  "cs": {
+   "nazev": "Čuangština",
+   "vyslovnost": "mung ndej",
+   "rodina": "kra-dajská",
+   "fakt": "Je to největší menšinový jazyk Číny. Příbuzný thajštiny, ne čínštiny."
+  },
+  "en": {
+   "nazev": "Zhuang",
+   "vyslovnost": "mung ndei",
+   "rodina": "Kra-Dai",
+   "fakt": "It is the biggest minority language of China – related to Thai, not to Chinese."
+  }
+ },
+ {
+  "id": "hmn",
+  "skupina": "ost",
+  "pozdrav": "Nyob zoo!",
+  "domaci": "Hmoob",
+  "mluvcich": 4,
+  "kod": "hmn",
+  "stred": [
+   104,
+   26
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    104,
+    26,
+    2.5
+   ],
+   [
+    103,
+    22,
+    1.9
+   ],
+   [
+    101.5,
+    19.5,
+    1.7
+   ]
+  ],
+  "cs": {
+   "nazev": "Hmongština",
+   "vyslovnost": "ňo žong",
+   "rodina": "hmong-mienská",
+   "fakt": "Hmongové žijí v horách čtyř zemí. Latinský pravopis, který dnes používají nejčastěji, vznikl až v 50. letech 20. století."
+  },
+  "en": {
+   "nazev": "Hmong",
+   "vyslovnost": "nyaw zhong",
+   "rodina": "Hmong-Mien",
+   "fakt": "The Hmong live in the mountains of four countries. The Latin spelling they use most was only created in the 1950s."
+  }
+ },
+ {
+  "id": "rw",
+  "skupina": "nk",
+  "pozdrav": "Muraho!",
+  "domaci": "Ikinyarwanda",
+  "mluvcich": 15,
+  "kod": "rw",
+  "stred": [
+   29.9,
+   -1.9
+  ],
+  "zeme": [
+   "Rwanda"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Rwandština",
+   "vyslovnost": "muraho",
+   "rodina": "nigerokonžská – bantuská",
+   "fakt": "Rwanda je jedna z mála afrických zemí, kde skoro všichni mluví stejným jazykem."
+  },
+  "en": {
+   "nazev": "Kinyarwanda",
+   "vyslovnost": "moo-RAH-hoh",
+   "rodina": "Niger-Congo – Bantu",
+   "fakt": "Rwanda is one of the few African countries where nearly everyone speaks the same language."
+  }
+ },
+ {
+  "id": "lg",
+  "skupina": "nk",
+  "pozdrav": "Ki kati!",
+  "domaci": "Luganda",
+  "mluvcich": 11,
+  "kod": "lg",
+  "stred": [
+   32.3,
+   0.4
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    32.3,
+    0.4,
+    1.9
+   ]
+  ],
+  "cs": {
+   "nazev": "Gandština",
+   "vyslovnost": "ki kati",
+   "rodina": "nigerokonžská – bantuská",
+   "fakt": "Podle království Buganda dostala jméno celá Uganda."
+  },
+  "en": {
+   "nazev": "Luganda",
+   "vyslovnost": "kee KAH-tee",
+   "rodina": "Niger-Congo – Bantu",
+   "fakt": "The whole country of Uganda is named after the Buganda kingdom."
+  }
+ },
+ {
+  "id": "ln",
+  "skupina": "nk",
+  "pozdrav": "Mbote!",
+  "domaci": "Lingála",
+  "mluvcich": 40,
+  "kod": "ln",
+  "stred": [
+   18,
+   0
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    18,
+    0,
+    3.2
+   ],
+   [
+    15.3,
+    -4.3,
+    2.2
+   ],
+   [
+    21,
+    2,
+    2.6
+   ]
+  ],
+  "cs": {
+   "nazev": "Lingalština",
+   "vyslovnost": "mbote",
+   "rodina": "nigerokonžská – bantuská",
+   "fakt": "Vznikla na řece Kongo jako řeč lodníků. Zpívá se v ní nejtanečnější africká hudba."
+  },
+  "en": {
+   "nazev": "Lingala",
+   "vyslovnost": "m-BOH-teh",
+   "rodina": "Niger-Congo – Bantu",
+   "fakt": "It began on the Congo River as the language of boatmen. Some of Africa's most danceable music is sung in it."
+  }
+ },
+ {
+  "id": "kg",
+  "skupina": "nk",
+  "pozdrav": "Mbote!",
+  "domaci": "Kikongo",
+  "mluvcich": 8,
+  "kod": "kg",
+  "stred": [
+   14.5,
+   -5.5
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    14.5,
+    -5.5,
+    2.2
+   ],
+   [
+    13.5,
+    -7,
+    1.9
+   ]
+  ],
+  "cs": {
+   "nazev": "Kikongo",
+   "vyslovnost": "mbote",
+   "rodina": "nigerokonžská – bantuská",
+   "fakt": "Slovo zombie nejspíš pochází z kikongského „nzambi“ – duch nebo bůh."
+  },
+  "en": {
+   "nazev": "Kikongo",
+   "vyslovnost": "m-BOH-teh",
+   "rodina": "Niger-Congo – Bantu",
+   "fakt": "The word “zombie” probably comes from the Kikongo “nzambi” – a spirit or god."
+  }
+ },
+ {
+  "id": "ny",
+  "skupina": "nk",
+  "pozdrav": "Moni!",
+  "domaci": "Chichewa",
+  "mluvcich": 14,
+  "kod": "ny",
+  "stred": [
+   33.8,
+   -13.5
+  ],
+  "zeme": [
+   "Malawi"
+  ],
+  "areal": [
+   [
+    33,
+    -14.5,
+    2
+   ]
+  ],
+  "cs": {
+   "nazev": "Čičevština",
+   "vyslovnost": "moni",
+   "rodina": "nigerokonžská – bantuská",
+   "fakt": "Malawi znamená „plameny“ – podle odlesků slunce na hladině obřího jezera."
+  },
+  "en": {
+   "nazev": "Chichewa",
+   "vyslovnost": "MOH-nee",
+   "rodina": "Niger-Congo – Bantu",
+   "fakt": "Malawi means “flames” – after the sunlight flashing on its giant lake."
+  }
+ },
+ {
+  "id": "ti",
+  "skupina": "afro",
+  "pozdrav": "ሰላም!",
+  "domaci": "ትግርኛ",
+  "mluvcich": 9,
+  "kod": "ti",
+  "stred": [
+   38.9,
+   14.5
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    38.9,
+    14.1,
+    2
+   ],
+   [
+    38.5,
+    15.3,
+    1.7
+   ]
+  ],
+  "cs": {
+   "nazev": "Tigrinijština",
+   "vyslovnost": "selam",
+   "rodina": "afroasijská – semitská",
+   "fakt": "Píše se stejným písmem jako amharština, ale je to jiný jazyk."
+  },
+  "en": {
+   "nazev": "Tigrinya",
+   "vyslovnost": "seh-LAHM",
+   "rodina": "Afroasiatic – Semitic",
+   "fakt": "It is written in the same script as Amharic, but it is a different language."
+  }
+ },
+ {
+  "id": "xh",
+  "skupina": "nk",
+  "pozdrav": "Molo!",
+  "domaci": "isiXhosa",
+  "mluvcich": 19,
+  "kod": "xh-ZA",
+  "stred": [
+   27.5,
+   -32.5
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    27.5,
+    -32.5,
+    2.5
+   ],
+   [
+    18.6,
+    -33.9,
+    1
+   ]
+  ],
+  "cs": {
+   "nazev": "Xhoština",
+   "vyslovnost": "molo",
+   "rodina": "nigerokonžská – bantuská",
+   "fakt": "Má mlaskavé hlásky – zní jako cvaknutí jazykem. Xhoština byla mateřštinou Nelsona Mandely."
+  },
+  "en": {
+   "nazev": "Xhosa",
+   "vyslovnost": "MOH-loh",
+   "rodina": "Niger-Congo – Bantu",
+   "fakt": "Xhosa has click sounds, made by snapping the tongue. It was Nelson Mandela's first language."
+  }
+ },
+ {
+  "id": "st",
+  "skupina": "nk",
+  "pozdrav": "Lumela!",
+  "domaci": "Sesotho",
+  "mluvcich": 8,
+  "kod": "st",
+  "stred": [
+   28.2,
+   -29.6
+  ],
+  "zeme": [
+   "Lesotho"
+  ],
+  "areal": [
+   [
+    27.5,
+    -28.5,
+    1.7
+   ]
+  ],
+  "cs": {
+   "nazev": "Sotština",
+   "vyslovnost": "dumela",
+   "rodina": "nigerokonžská – bantuská",
+   "fakt": "Lesotho je jediná země světa, která celá leží výš než tisíc metrů nad mořem."
+  },
+  "en": {
+   "nazev": "Sesotho",
+   "vyslovnost": "doo-MEH-lah",
+   "rodina": "Niger-Congo – Bantu",
+   "fakt": "Lesotho is the only country in the world that lies entirely more than 1,000 metres above sea level."
+  }
+ },
+ {
+  "id": "tn",
+  "skupina": "nk",
+  "pozdrav": "Dumela!",
+  "domaci": "Setswana",
+  "mluvcich": 14,
+  "kod": "tn",
+  "stred": [
+   24.5,
+   -22.5
+  ],
+  "zeme": [
+   "Botswana"
+  ],
+  "areal": [
+   [
+    26,
+    -26,
+    2
+   ]
+  ],
+  "cs": {
+   "nazev": "Tswanština",
+   "vyslovnost": "dumela",
+   "rodina": "nigerokonžská – bantuská",
+   "fakt": "Botswanské peníze se jmenují pula, což v setswaně znamená déšť. V poušti je déšť vzácnější než zlato."
+  },
+  "en": {
+   "nazev": "Setswana",
+   "vyslovnost": "doo-MEH-lah",
+   "rodina": "Niger-Congo – Bantu",
+   "fakt": "Botswana's money is called pula, which means “rain” in Setswana. In the desert, rain is more precious than gold."
+  }
+ },
+ {
+  "id": "ak",
+  "skupina": "nk",
+  "pozdrav": "Ɛte sɛn?",
+  "domaci": "Akan",
+  "mluvcich": 11,
+  "kod": "ak",
+  "stred": [
+   -1.6,
+   6.7
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    -1.6,
+    6.7,
+    2.2
+   ],
+   [
+    -0.2,
+    5.7,
+    1.4
+   ]
+  ],
+  "cs": {
+   "nazev": "Akanština (twi)",
+   "vyslovnost": "ete sen",
+   "rodina": "nigerokonžská",
+   "fakt": "Akanové dávají dětem jméno podle dne, kdy se narodily. Kofi znamená „narozený v pátek“."
+  },
+  "en": {
+   "nazev": "Akan (Twi)",
+   "vyslovnost": "eh-teh SEN",
+   "rodina": "Niger-Congo",
+   "fakt": "Akan children are named after the day they were born. Kofi means “born on a Friday”."
+  }
+ },
+ {
+  "id": "ee",
+  "skupina": "nk",
+  "pozdrav": "Woezɔ!",
+  "domaci": "Eʋegbe",
+  "mluvcich": 7,
+  "kod": "ee",
+  "stred": [
+   0.9,
+   6.9
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    0.8,
+    6.8,
+    1.4
+   ],
+   [
+    1.2,
+    7.6,
+    1.2
+   ]
+  ],
+  "cs": {
+   "nazev": "Eveština",
+   "vyslovnost": "vezo",
+   "rodina": "nigerokonžská",
+   "fakt": "Eveština je tónová a má vlastní bubnovou řeč – bubny napodobí melodii slov a zpráva doletí přes celou vesnici."
+  },
+  "en": {
+   "nazev": "Ewe",
+   "vyslovnost": "WEH-zoh",
+   "rodina": "Niger-Congo",
+   "fakt": "Ewe is tonal and has a talking-drum language – drums copy the melody of words, so a message carries across the whole village."
+  }
+ },
+ {
+  "id": "bm",
+  "skupina": "nk",
+  "pozdrav": "I ni ce!",
+  "domaci": "Bamanankan",
+  "mluvcich": 15,
+  "kod": "bm",
+  "stred": [
+   -7.5,
+   12.6
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    -7.5,
+    12.6,
+    2.6
+   ],
+   [
+    -5,
+    13.5,
+    2.2
+   ]
+  ],
+  "cs": {
+   "nazev": "Bambarština",
+   "vyslovnost": "i ni če",
+   "rodina": "nigerokonžská – mandejská",
+   "fakt": "Má vlastní domorodé písmo n'ko, které se píše zprava doleva."
+  },
+  "en": {
+   "nazev": "Bambara",
+   "vyslovnost": "ee nee CHEH",
+   "rodina": "Niger-Congo – Mande",
+   "fakt": "It can be written in N'Ko, an African script that runs from right to left."
+  }
+ },
+ {
+  "id": "mos",
+  "skupina": "nk",
+  "pozdrav": "Ne y windga!",
+  "domaci": "Mòoré",
+  "mluvcich": 8,
+  "kod": "mos",
+  "stred": [
+   -1.5,
+   12.4
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    -1.5,
+    12.4,
+    2.2
+   ]
+  ],
+  "cs": {
+   "nazev": "Mooré",
+   "vyslovnost": "ne ji vindga",
+   "rodina": "nigerokonžská",
+   "fakt": "Pozdrav se mění podle denní doby – doslova se přeje „dobré dopoledne“ nebo „dobrý večer“."
+  },
+  "en": {
+   "nazev": "Mooré",
+   "vyslovnost": "neh yee WIND-gah",
+   "rodina": "Niger-Congo",
+   "fakt": "The greeting changes with the time of day – you wish someone a good morning or a good evening."
+  }
+ },
+ {
+  "id": "ber",
+  "skupina": "afro",
+  "pozdrav": "ⴰⵣⵓⵍ!",
+  "domaci": "ⵜⴰⵎⴰⵣⵉⵖⵜ",
+  "mluvcich": 25,
+  "kod": "ber",
+  "stred": [
+   -4,
+   32
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    -5,
+    31.5,
+    3
+   ],
+   [
+    4,
+    36.7,
+    2.5
+   ],
+   [
+    -6,
+    33.5,
+    2.2
+   ],
+   [
+    8,
+    32,
+    2.5
+   ],
+   [
+    2.5,
+    24,
+    3
+   ]
+  ],
+  "cs": {
+   "nazev": "Tamazight (berberština)",
+   "vyslovnost": "azul",
+   "rodina": "afroasijská – berberská",
+   "fakt": "Píše se písmem tifinagh, které vypadá jako geometrické značky. Je staré přes dva tisíce let."
+  },
+  "en": {
+   "nazev": "Tamazight (Berber)",
+   "vyslovnost": "ah-ZOOL",
+   "rodina": "Afroasiatic – Berber",
+   "fakt": "It is written in Tifinagh, a script that looks like geometric symbols and is more than two thousand years old."
+  }
+ },
+ {
+  "id": "kr",
+  "skupina": "ost",
+  "pozdrav": "Naa daa?",
+  "domaci": "Kanuri",
+  "mluvcich": 10,
+  "kod": "kr",
+  "stred": [
+   13,
+   12
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    13,
+    12,
+    2.5
+   ]
+  ],
+  "cs": {
+   "nazev": "Kanurijština",
+   "vyslovnost": "ná dá",
+   "rodina": "saharská",
+   "fakt": "Mluví se jí kolem Čadského jezera, které se za padesát let zmenšilo na desetinu."
+  },
+  "en": {
+   "nazev": "Kanuri",
+   "vyslovnost": "nah dah",
+   "rodina": "Saharan",
+   "fakt": "It is spoken around Lake Chad, which has shrunk to about a tenth of its size in fifty years."
+  }
+ },
+ {
+  "id": "mt",
+  "skupina": "afro",
+  "pozdrav": "Bonġu!",
+  "domaci": "Malti",
+  "mluvcich": 0.55,
+  "kod": "mt-MT",
+  "stred": [
+   14.4,
+   35.9
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    14.4,
+    35.9,
+    0.4
+   ]
+  ],
+  "cs": {
+   "nazev": "Maltština",
+   "vyslovnost": "bondžu",
+   "rodina": "afroasijská – semitská",
+   "fakt": "Jediný semitský jazyk, který se píše latinkou – a jediný úřední jazyk Unie příbuzný arabštině."
+  },
+  "en": {
+   "nazev": "Maltese",
+   "vyslovnost": "BON-joo",
+   "rodina": "Afroasiatic – Semitic",
+   "fakt": "It is the only Semitic language written in the Latin alphabet – and the only official EU language related to Arabic."
+  }
+ },
+ {
+  "id": "lb",
+  "skupina": "ie",
+  "pozdrav": "Moien!",
+  "domaci": "Lëtzebuergesch",
+  "mluvcich": 0.4,
+  "kod": "lb",
+  "stred": [
+   6.1,
+   49.8
+  ],
+  "zeme": [
+   "Luxembourg"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Lucemburština",
+   "vyslovnost": "mojen",
+   "rodina": "indoevropská – germánská",
+   "fakt": "Dlouho se brala jako nářečí němčiny. Úředním jazykem je teprve od roku 1984."
+  },
+  "en": {
+   "nazev": "Luxembourgish",
+   "vyslovnost": "MOY-en",
+   "rodina": "Indo-European – Germanic",
+   "fakt": "It was long seen as a German dialect. It only became an official language in 1984."
+  }
+ },
+ {
+  "id": "fo",
+  "skupina": "ie",
+  "pozdrav": "Halló!",
+  "domaci": "føroyskt",
+  "mluvcich": 0.07,
+  "kod": "fo",
+  "stred": [
+   -6.9,
+   62
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    -6.9,
+    62,
+    0.5
+   ]
+  ],
+  "cs": {
+   "nazev": "Faerština",
+   "vyslovnost": "haló",
+   "rodina": "indoevropská – germánská",
+   "fakt": "Na Faerských ostrovech žije víc ovcí než lidí – a ovce je faersky „seyður“."
+  },
+  "en": {
+   "nazev": "Faroese",
+   "vyslovnost": "HAHL-loh",
+   "rodina": "Indo-European – Germanic",
+   "fakt": "The Faroe Islands have more sheep than people – and in Faroese a sheep is “seyður”."
+  }
+ },
+ {
+  "id": "fy",
+  "skupina": "ie",
+  "pozdrav": "Goeie dei!",
+  "domaci": "Frysk",
+  "mluvcich": 0.5,
+  "kod": "fy",
+  "stred": [
+   5.8,
+   53.1
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    5.8,
+    53.1,
+    0.8
+   ]
+  ],
+  "cs": {
+   "nazev": "Fríština",
+   "vyslovnost": "chuje daj",
+   "rodina": "indoevropská – germánská",
+   "fakt": "Ze všech jazyků světa je angličtině nejblíž právě fríština."
+  },
+  "en": {
+   "nazev": "West Frisian",
+   "vyslovnost": "GOO-yeh day",
+   "rodina": "Indo-European – Germanic",
+   "fakt": "Of all the languages in the world, Frisian is the closest to English."
+  }
+ },
+ {
+  "id": "gl",
+  "skupina": "ie",
+  "pozdrav": "Ola!",
+  "domaci": "galego",
+  "mluvcich": 2.4,
+  "kod": "gl",
+  "stred": [
+   -8,
+   42.6
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    -8,
+    42.6,
+    1.3
+   ]
+  ],
+  "cs": {
+   "nazev": "Galicijština",
+   "vyslovnost": "ola",
+   "rodina": "indoevropská – románská",
+   "fakt": "Galicijština a portugalština byly kdysi jeden jazyk. Rozešly se až před 700 lety."
+  },
+  "en": {
+   "nazev": "Galician",
+   "vyslovnost": "OH-lah",
+   "rodina": "Indo-European – Romance",
+   "fakt": "Galician and Portuguese were once one language. They only drifted apart about 700 years ago."
+  }
+ },
+ {
+  "id": "oc",
+  "skupina": "ie",
+  "pozdrav": "Bonjorn!",
+  "domaci": "occitan",
+  "mluvcich": 0.5,
+  "kod": "oc",
+  "stred": [
+   2,
+   44
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    2,
+    44,
+    2.5
+   ]
+  ],
+  "cs": {
+   "nazev": "Okcitánština",
+   "vyslovnost": "bundžur",
+   "rodina": "indoevropská – románská",
+   "fakt": "Ve středověku v ní skládali písně trubadúři. Byl to jazyk milostné poezie celé Evropy."
+  },
+  "en": {
+   "nazev": "Occitan",
+   "vyslovnost": "boon-JOOR",
+   "rodina": "Indo-European – Romance",
+   "fakt": "Troubadours sang in it in the Middle Ages. It was the language of love poetry all over Europe."
+  }
+ },
+ {
+  "id": "sc",
+  "skupina": "ie",
+  "pozdrav": "Salude!",
+  "domaci": "sardu",
+  "mluvcich": 1,
+  "kod": "sc",
+  "stred": [
+   9,
+   40
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    9,
+    40,
+    1.3
+   ]
+  ],
+  "cs": {
+   "nazev": "Sardština",
+   "vyslovnost": "salude",
+   "rodina": "indoevropská – románská",
+   "fakt": "Ze všech živých jazyků se latině podobá nejvíc sardština."
+  },
+  "en": {
+   "nazev": "Sardinian",
+   "vyslovnost": "sah-LOO-deh",
+   "rodina": "Indo-European – Romance",
+   "fakt": "Of all living languages, Sardinian is the one closest to Latin."
+  }
+ },
+ {
+  "id": "br",
+  "skupina": "ie",
+  "pozdrav": "Demat!",
+  "domaci": "brezhoneg",
+  "mluvcich": 0.2,
+  "kod": "br",
+  "stred": [
+   -3.5,
+   48.2
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    -3.5,
+    48.2,
+    1.1
+   ]
+  ],
+  "cs": {
+   "nazev": "Bretonština",
+   "vyslovnost": "demat",
+   "rodina": "indoevropská – keltská",
+   "fakt": "Je to jediný keltský jazyk na evropské pevnině. Do Bretaně ho přivezli lidé z Británie."
+  },
+  "en": {
+   "nazev": "Breton",
+   "vyslovnost": "DEH-maht",
+   "rodina": "Indo-European – Celtic",
+   "fakt": "It is the only Celtic language on the European mainland. People from Britain brought it to Brittany."
+  }
+ },
+ {
+  "id": "gd",
+  "skupina": "ie",
+  "pozdrav": "Halò!",
+  "domaci": "Gàidhlig",
+  "mluvcich": 0.06,
+  "kod": "gd",
+  "stred": [
+   -6.3,
+   57.5
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    -6.3,
+    57.5,
+    1.2
+   ]
+  ],
+  "cs": {
+   "nazev": "Skotská gaelština",
+   "vyslovnost": "haló",
+   "rodina": "indoevropská – keltská",
+   "fakt": "Slovo whisky pochází z gaelského „uisge beatha“ – voda života."
+  },
+  "en": {
+   "nazev": "Scottish Gaelic",
+   "vyslovnost": "HAH-loh",
+   "rodina": "Indo-European – Celtic",
+   "fakt": "The word “whisky” comes from the Gaelic “uisge beatha” – water of life."
+  }
+ },
+ {
+  "id": "rom",
+  "skupina": "ie",
+  "pozdrav": "Sar san?",
+  "domaci": "romani čhib",
+  "mluvcich": 3.5,
+  "kod": "rom",
+  "stred": [
+   21,
+   45
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    21,
+    45,
+    4
+   ],
+   [
+    24,
+    45.5,
+    3
+   ],
+   [
+    19,
+    48,
+    2.5
+   ],
+   [
+    16,
+    47,
+    2
+   ],
+   [
+    15.5,
+    49.5,
+    1.6
+   ],
+   [
+    40,
+    41,
+    1.6
+   ]
+  ],
+  "cs": {
+   "nazev": "Romština",
+   "vyslovnost": "sar san",
+   "rodina": "indoevropská – indoárijská",
+   "fakt": "Romové přišli do Evropy z Indie. Poznáš to na slovech: voda je „paňi“, stejně jako v hindštině."
+  },
+  "en": {
+   "nazev": "Romani",
+   "vyslovnost": "sar SAHN",
+   "rodina": "Indo-European – Indo-Aryan",
+   "fakt": "The Roma came to Europe from India. You can hear it in the words: water is “pani”, just like in Hindi."
+  }
+ },
+ {
+  "id": "yi",
+  "skupina": "ie",
+  "pozdrav": "שלום־עליכם!",
+  "domaci": "ייִדיש",
+  "mluvcich": 0.6,
+  "kod": "yi",
+  "stred": [
+   19,
+   52
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    -74,
+    40.7,
+    0.9
+   ],
+   [
+    35,
+    32,
+    0.9
+   ],
+   [
+    19,
+    52,
+    1.4
+   ]
+  ],
+  "cs": {
+   "nazev": "Jidiš",
+   "vyslovnost": "šolem alejchem",
+   "rodina": "indoevropská – germánská",
+   "fakt": "Je to germánský jazyk psaný hebrejským písmem. Slova si půjčil z němčiny, hebrejštiny i slovanských jazyků."
+  },
+  "en": {
+   "nazev": "Yiddish",
+   "vyslovnost": "SHOH-lem ah-LAY-khem",
+   "rodina": "Indo-European – Germanic",
+   "fakt": "It is a Germanic language written in the Hebrew alphabet, with words borrowed from German, Hebrew and Slavic languages."
+  }
+ },
+ {
+  "id": "ce",
+  "skupina": "ost",
+  "pozdrav": "Салам!",
+  "domaci": "нохчийн мотт",
+  "mluvcich": 1.7,
+  "kod": "ce",
+  "stred": [
+   45.7,
+   43.3
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    45.7,
+    43.3,
+    1.2
+   ]
+  ],
+  "cs": {
+   "nazev": "Čečenština",
+   "vyslovnost": "salam",
+   "rodina": "nachsko-dagestánská",
+   "fakt": "Má kolem třiceti samohlásek. Čeština jich má deset."
+  },
+  "en": {
+   "nazev": "Chechen",
+   "vyslovnost": "sah-LAHM",
+   "rodina": "Nakh-Dagestanian",
+   "fakt": "Chechen has around thirty vowel sounds. Spanish has only five."
+  }
+ },
+ {
+  "id": "tt",
+  "skupina": "ost",
+  "pozdrav": "Исәнмесез!",
+  "domaci": "татар теле",
+  "mluvcich": 5,
+  "kod": "tt",
+  "stred": [
+   50,
+   55.5
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    50,
+    55.5,
+    2.2
+   ],
+   [
+    52,
+    55,
+    1.7
+   ]
+  ],
+  "cs": {
+   "nazev": "Tatarština",
+   "vyslovnost": "isänmesez",
+   "rodina": "turkická",
+   "fakt": "Mluví se jí v Kazani, jejíž bílý kreml je zapsaný na seznamu UNESCO."
+  },
+  "en": {
+   "nazev": "Tatar",
+   "vyslovnost": "ee-SEN-meh-sez",
+   "rodina": "Turkic",
+   "fakt": "It is spoken in Kazan, whose white kremlin is a UNESCO World Heritage Site."
+  }
+ },
+ {
+  "id": "sah",
+  "skupina": "ost",
+  "pozdrav": "Дорообо!",
+  "domaci": "саха тыла",
+  "mluvcich": 0.45,
+  "kod": "sah",
+  "stred": [
+   129,
+   63
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    130,
+    63,
+    5
+   ],
+   [
+    122,
+    66,
+    4
+   ]
+  ],
+  "cs": {
+   "nazev": "Jakutština",
+   "vyslovnost": "doróbo",
+   "rodina": "turkická",
+   "fakt": "Mluví se jí v nejchladnějším obydleném místě světa, kde klesá teplota pod −60 °C."
+  },
+  "en": {
+   "nazev": "Yakut (Sakha)",
+   "vyslovnost": "doh-ROH-boh",
+   "rodina": "Turkic",
+   "fakt": "It is spoken in the coldest inhabited place on Earth, where temperatures drop below −60 °C."
+  }
+ },
+ {
+  "id": "os",
+  "skupina": "ie",
+  "pozdrav": "Салам!",
+  "domaci": "ирон æвзаг",
+  "mluvcich": 0.6,
+  "kod": "os",
+  "stred": [
+   44,
+   43
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    44,
+    43,
+    1
+   ]
+  ],
+  "cs": {
+   "nazev": "Osetština",
+   "vyslovnost": "salam",
+   "rodina": "indoevropská – íránská",
+   "fakt": "Osetové jsou pokládáni za potomky Skythů a Alanů – dávných jezdců ze stepí."
+  },
+  "en": {
+   "nazev": "Ossetian",
+   "vyslovnost": "sah-LAHM",
+   "rodina": "Indo-European – Iranian",
+   "fakt": "The Ossetians are thought to descend from the Scythians and Alans – ancient horse riders of the steppes."
+  }
+ },
+ {
+  "id": "ab",
+  "skupina": "ost",
+  "pozdrav": "Бзиара!",
+  "domaci": "аҧсуа бызшәа",
+  "mluvcich": 0.2,
+  "kod": "ab",
+  "stred": [
+   41,
+   43
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    41,
+    43,
+    0.9
+   ]
+  ],
+  "cs": {
+   "nazev": "Abcházština",
+   "vyslovnost": "bziara",
+   "rodina": "abchazsko-adygská",
+   "fakt": "Má jen dvě samohlásky, zato kolem šedesáti souhlásek. Přesný opak havajštiny."
+  },
+  "en": {
+   "nazev": "Abkhaz",
+   "vyslovnost": "bzee-AH-rah",
+   "rodina": "Northwest Caucasian",
+   "fakt": "It has only two vowels but around sixty consonants – the exact opposite of Hawaiian."
+  }
+ },
+ {
+  "id": "dv",
+  "skupina": "ie",
+  "pozdrav": "ސަލާމް!",
+  "domaci": "ދިވެހި",
+  "mluvcich": 0.35,
+  "kod": "dv",
+  "stred": [
+   73.5,
+   4
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    73.5,
+    4,
+    1.3
+   ]
+  ],
+  "cs": {
+   "nazev": "Maledivština",
+   "vyslovnost": "salám",
+   "rodina": "indoevropská – indoárijská",
+   "fakt": "Její písmo thaana se píše zprava doleva a vzniklo z arabských číslic."
+  },
+  "en": {
+   "nazev": "Dhivehi",
+   "vyslovnost": "sah-LAHM",
+   "rodina": "Indo-European – Indo-Aryan",
+   "fakt": "Its script, Thaana, is written right to left, and its first letters grew out of Arabic numerals."
+  }
+ },
+ {
+  "id": "dz",
+  "skupina": "st",
+  "pozdrav": "བཀྲ་ཤིས་བདེ་ལེགས!",
+  "domaci": "རྫོང་ཁ",
+  "mluvcich": 0.2,
+  "kod": "dz",
+  "stred": [
+   90.4,
+   27.5
+  ],
+  "zeme": [
+   "Bhutan"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Dzongkha",
+   "vyslovnost": "kuzu zangpo",
+   "rodina": "sinotibetská",
+   "fakt": "Dzongkha znamená „řeč pevností“ – mluvilo se jí v klášterních hradech dzongách."
+  },
+  "en": {
+   "nazev": "Dzongkha",
+   "vyslovnost": "koo-zoo ZANG-poh",
+   "rodina": "Sino-Tibetan",
+   "fakt": "Dzongkha means “the language of the fortresses” – it was spoken in the monastery castles called dzongs."
+  }
+ },
+ {
+  "id": "sat",
+  "skupina": "ost",
+  "pozdrav": "ᱡᱚᱦᱟᱨ!",
+  "domaci": "ᱥᱟᱱᱛᱟᱲᱤ",
+  "mluvcich": 7.6,
+  "kod": "sat",
+  "stred": [
+   86.5,
+   23.5
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    86.5,
+    23.5,
+    1.9
+   ],
+   [
+    87,
+    24.5,
+    1.4
+   ]
+  ],
+  "cs": {
+   "nazev": "Santálština",
+   "vyslovnost": "džohár",
+   "rodina": "austroasijská",
+   "fakt": "Její písmo ol čiki vymyslel v roce 1925 jeden člověk, aby Santálové nemuseli psát cizí abecedou."
+  },
+  "en": {
+   "nazev": "Santali",
+   "vyslovnost": "joh-HAR",
+   "rodina": "Austroasiatic",
+   "fakt": "Its Ol Chiki script was invented in 1925 by one man, so the Santals would not have to use a foreign alphabet."
+  }
+ },
+ {
+  "id": "mni",
+  "skupina": "st",
+  "pozdrav": "ꯈꯨꯔꯨꯝꯖꯔꯤ!",
+  "domaci": "ꯃꯤꯇꯩꯂꯣꯟ",
+  "mluvcich": 1.8,
+  "kod": "mni",
+  "stred": [
+   94,
+   24.7
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    94,
+    24.7,
+    1
+   ]
+  ],
+  "cs": {
+   "nazev": "Mejtejština",
+   "vyslovnost": "khurumdžari",
+   "rodina": "sinotibetská",
+   "fakt": "Její staré písmo se přestalo používat na 200 let a pak se vrátilo do škol."
+  },
+  "en": {
+   "nazev": "Meitei (Manipuri)",
+   "vyslovnost": "khoo-room-JAH-ree",
+   "rodina": "Sino-Tibetan",
+   "fakt": "Its old script fell out of use for about 200 years and then came back into schools."
+  }
+ },
+ {
+  "id": "shn",
+  "skupina": "ost",
+  "pozdrav": "မႂ်ႇသုင်ၶႃႈ!",
+  "domaci": " လိၵ်ႈတႆး",
+  "mluvcich": 3.3,
+  "kod": "shn",
+  "stred": [
+   97.5,
+   21.5
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    97.5,
+    21.5,
+    2
+   ]
+  ],
+  "cs": {
+   "nazev": "Šanština",
+   "vyslovnost": "mai sung khá",
+   "rodina": "kra-dajská",
+   "fakt": "Šanové jsou příbuzní Thajců. Jejich jméno a slovo Siam mají stejný původ."
+  },
+  "en": {
+   "nazev": "Shan",
+   "vyslovnost": "mai soong KHAH",
+   "rodina": "Kra-Dai",
+   "fakt": "The Shan are relatives of the Thai. Their name and the old word Siam share the same origin."
+  }
+ },
+ {
+  "id": "tet",
+  "skupina": "an",
+  "pozdrav": "Bondia!",
+  "domaci": "Tetun",
+  "mluvcich": 0.5,
+  "kod": "tet",
+  "stred": [
+   125.6,
+   -8.8
+  ],
+  "zeme": [
+   "Timor-Leste"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Tetumština",
+   "vyslovnost": "bondia",
+   "rodina": "austronéská",
+   "fakt": "Půjčila si spoustu slov z portugalštiny – i pozdrav je portugalské „bom dia“."
+  },
+  "en": {
+   "nazev": "Tetum",
+   "vyslovnost": "bon-DEE-ah",
+   "rodina": "Austronesian",
+   "fakt": "It borrowed lots of words from Portuguese – even the greeting is the Portuguese “bom dia”."
+  }
+ },
+ {
+  "id": "ch",
+  "skupina": "an",
+  "pozdrav": "Håfa adai!",
+  "domaci": "Chamoru",
+  "mluvcich": 0.06,
+  "kod": "ch",
+  "stred": [
+   144.8,
+   13.4
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    144.8,
+    13.4,
+    0.4
+   ],
+   [
+    145.7,
+    15.2,
+    0.3
+   ]
+  ],
+  "cs": {
+   "nazev": "Chamorro",
+   "vyslovnost": "háfa adaj",
+   "rodina": "austronéská",
+   "fakt": "Mluví se jí na Marianách, u nejhlubšího místa oceánu na Zemi."
+  },
+  "en": {
+   "nazev": "Chamorro",
+   "vyslovnost": "HAH-fah dai",
+   "rodina": "Austronesian",
+   "fakt": "It is spoken in the Mariana Islands, next to the deepest point of any ocean on Earth."
+  }
+ },
+ {
+  "id": "sm",
+  "skupina": "an",
+  "pozdrav": "Talofa!",
+  "domaci": "Gagana Sāmoa",
+  "mluvcich": 0.5,
+  "kod": "sm",
+  "stred": [
+   -172,
+   -13.8
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    -172,
+    -13.8,
+    0.8
+   ],
+   [
+    -170.7,
+    -14.3,
+    0.4
+   ]
+  ],
+  "cs": {
+   "nazev": "Samojština",
+   "vyslovnost": "talofa",
+   "rodina": "austronéská",
+   "fakt": "Samojština má dvě sady slov – jednu běžnou a jednu zdvořilou pro náčelníky."
+  },
+  "en": {
+   "nazev": "Samoan",
+   "vyslovnost": "tah-LOH-fah",
+   "rodina": "Austronesian",
+   "fakt": "Samoan has two sets of words – an everyday one and a respectful one for chiefs."
+  }
+ },
+ {
+  "id": "to",
+  "skupina": "an",
+  "pozdrav": "Mālō e lelei!",
+  "domaci": "lea faka-Tonga",
+  "mluvcich": 0.19,
+  "kod": "to",
+  "stred": [
+   -175,
+   -21
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    -175,
+    -21,
+    0.8
+   ]
+  ],
+  "cs": {
+   "nazev": "Tongánština",
+   "vyslovnost": "málo e lelej",
+   "rodina": "austronéská",
+   "fakt": "Slovo tabu se do všech jazyků světa dostalo právě z tongánštiny."
+  },
+  "en": {
+   "nazev": "Tongan",
+   "vyslovnost": "MAH-loh eh leh-LAY",
+   "rodina": "Austronesian",
+   "fakt": "The word “taboo” reached languages all over the world from Tongan."
+  }
+ },
+ {
+  "id": "ty",
+  "skupina": "an",
+  "pozdrav": "Ia ora na!",
+  "domaci": "Reo Tahiti",
+  "mluvcich": 0.07,
+  "kod": "ty",
+  "stred": [
+   -149.5,
+   -17.6
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    -149.5,
+    -17.6,
+    0.6
+   ],
+   [
+    -151.5,
+    -16.7,
+    0.5
+   ]
+  ],
+  "cs": {
+   "nazev": "Tahitština",
+   "vyslovnost": "ja ora na",
+   "rodina": "austronéská",
+   "fakt": "Slovo tetování pochází z tahitského „tatau“ – klepání jehlou do kůže."
+  },
+  "en": {
+   "nazev": "Tahitian",
+   "vyslovnost": "yah OH-rah nah",
+   "rodina": "Austronesian",
+   "fakt": "The word “tattoo” comes from the Tahitian “tatau” – tapping ink into the skin."
+  }
+ },
+ {
+  "id": "rap",
+  "skupina": "an",
+  "pozdrav": "Iorana!",
+  "domaci": "Vananga Rapa Nui",
+  "mluvcich": 0.003,
+  "kod": "rap",
+  "stred": [
+   -109.35,
+   -27.1
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    -109.35,
+    -27.1,
+    0.3
+   ]
+  ],
+  "cs": {
+   "nazev": "Rapanujština",
+   "vyslovnost": "jorana",
+   "rodina": "austronéská",
+   "fakt": "Mluví se jí na Velikonočním ostrově u kamenných soch moai. Je to nejosamělejší obydlený ostrov světa."
+  },
+  "en": {
+   "nazev": "Rapa Nui",
+   "vyslovnost": "yoh-RAH-nah",
+   "rodina": "Austronesian",
+   "fakt": "It is spoken on Easter Island, next to the moai stone statues – one of the most remote inhabited islands on Earth."
+  }
+ },
+ {
+  "id": "nv",
+  "skupina": "ost",
+  "pozdrav": "Yáʼátʼééh!",
+  "domaci": "Diné bizaad",
+  "mluvcich": 0.17,
+  "kod": "nv",
+  "stred": [
+   -109.5,
+   36
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    -109.5,
+    36,
+    2
+   ]
+  ],
+  "cs": {
+   "nazev": "Navažština",
+   "vyslovnost": "já-at-é",
+   "rodina": "na-dené",
+   "fakt": "Za druhé světové války sloužila jako tajný kód. Nikdo ji nedokázal rozluštit."
+  },
+  "en": {
+   "nazev": "Navajo",
+   "vyslovnost": "YAH-at-eh",
+   "rodina": "Na-Dene",
+   "fakt": "In the Second World War it was used as a secret code, and nobody managed to crack it."
+  }
+ },
+ {
+  "id": "chr",
+  "skupina": "ost",
+  "pozdrav": "ᎣᏏᏲ!",
+  "domaci": "ᏣᎳᎩ",
+  "mluvcich": 0.002,
+  "kod": "chr",
+  "stred": [
+   -83.3,
+   35.5
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    -83.3,
+    35.5,
+    0.9
+   ],
+   [
+    -94.8,
+    35.9,
+    0.9
+   ]
+  ],
+  "cs": {
+   "nazev": "Čerokézština",
+   "vyslovnost": "osijo",
+   "rodina": "irokézská",
+   "fakt": "Písmo vymyslel roku 1821 Sequoyah, který sám neuměl číst žádné jiné. Za pár let uměl číst skoro celý kmen."
+  },
+  "en": {
+   "nazev": "Cherokee",
+   "vyslovnost": "oh-SEE-yoh",
+   "rodina": "Iroquoian",
+   "fakt": "Its writing was invented in 1821 by Sequoyah, who could not read any other script. Within a few years most of the nation could read."
+  }
+ },
+ {
+  "id": "oj",
+  "skupina": "ost",
+  "pozdrav": "Boozhoo!",
+  "domaci": "Anishinaabemowin",
+  "mluvcich": 0.05,
+  "kod": "oj",
+  "stred": [
+   -90,
+   47.5
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    -90,
+    47.5,
+    3
+   ],
+   [
+    -82,
+    46,
+    2.5
+   ]
+  ],
+  "cs": {
+   "nazev": "Odžibvejština",
+   "vyslovnost": "bóžó",
+   "rodina": "algická",
+   "fakt": "Slovo totem pochází právě z odžibvejštiny."
+  },
+  "en": {
+   "nazev": "Ojibwe",
+   "vyslovnost": "BOO-zhoo",
+   "rodina": "Algic",
+   "fakt": "The word “totem” comes from Ojibwe."
+  }
+ },
+ {
+  "id": "cr",
+  "skupina": "ost",
+  "pozdrav": "ᑖᓂᓯ!",
+  "domaci": "ᓀᐦᐃᔭᐍᐏᐣ",
+  "mluvcich": 0.096,
+  "kod": "cr",
+  "stred": [
+   -100,
+   54
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    -100,
+    54,
+    4
+   ],
+   [
+    -78,
+    52,
+    3
+   ]
+  ],
+  "cs": {
+   "nazev": "Krijština",
+   "vyslovnost": "tánisi",
+   "rodina": "algická",
+   "fakt": "Nejrozšířenější původní jazyk Kanady. Píše se stejným slabičným písmem jako inuktitut."
+  },
+  "en": {
+   "nazev": "Cree",
+   "vyslovnost": "TAH-nee-see",
+   "rodina": "Algic",
+   "fakt": "It is the most widely spoken Indigenous language of Canada, written in the same syllabic script as Inuktitut."
+  }
+ },
+ {
+  "id": "lkt",
+  "skupina": "ost",
+  "pozdrav": "Háu!",
+  "domaci": "Lakȟótiyapi",
+  "mluvcich": 0.002,
+  "kod": "lkt",
+  "stred": [
+   -101.5,
+   44
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    -101.5,
+    44,
+    1.9
+   ]
+  ],
+  "cs": {
+   "nazev": "Lakotština",
+   "vyslovnost": "hau",
+   "rodina": "siouxská",
+   "fakt": "Muži a ženy mluví lakotsky trochu jinak – některé koncovky vět jsou jen pro ženy, jiné jen pro muže."
+  },
+  "en": {
+   "nazev": "Lakota",
+   "vyslovnost": "how",
+   "rodina": "Siouan",
+   "fakt": "Men and women speak Lakota a little differently – some sentence endings are only for women, others only for men."
+  }
+ },
+ {
+  "id": "arn",
+  "skupina": "ost",
+  "pozdrav": "Mari mari!",
+  "domaci": "Mapudungun",
+  "mluvcich": 0.25,
+  "kod": "arn",
+  "stred": [
+   -72.5,
+   -38.5
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    -72.5,
+    -38.5,
+    2.2
+   ],
+   [
+    -71,
+    -39.5,
+    1.7
+   ]
+  ],
+  "cs": {
+   "nazev": "Mapudungun",
+   "vyslovnost": "mari mari",
+   "rodina": "araukánská",
+   "fakt": "Mapudungun znamená „řeč země“. Mapuche nikdy nedobyli Inkové a Španělé si je nepodmanili celá staletí."
+  },
+  "en": {
+   "nazev": "Mapudungun",
+   "vyslovnost": "MAH-ree MAH-ree",
+   "rodina": "Araucanian",
+   "fakt": "Mapudungun means “speech of the land”. The Inca never conquered the Mapuche, and the Spanish could not for centuries."
+  }
+ },
+ {
+  "id": "yua",
+  "skupina": "ost",
+  "pozdrav": "Baʼax ka waʼalik?",
+  "domaci": "Maayaʼ tʼaan",
+  "mluvcich": 0.8,
+  "kod": "yua",
+  "stred": [
+   -89,
+   20
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    -89,
+    20,
+    1.9
+   ]
+  ],
+  "cs": {
+   "nazev": "Jukatécká mayština",
+   "vyslovnost": "baaš ka valik",
+   "rodina": "mayská",
+   "fakt": "Je to potomek jazyka, kterým se psaly mayské nápisy na pyramidách."
+  },
+  "en": {
+   "nazev": "Yucatec Maya",
+   "vyslovnost": "bahsh kah WAH-lik",
+   "rodina": "Mayan",
+   "fakt": "It descends from the language of the Maya inscriptions on the pyramids."
+  }
+ },
+ {
+  "id": "quc",
+  "skupina": "ost",
+  "pozdrav": "Saqarik!",
+  "domaci": "Kʼicheʼ",
+  "mluvcich": 1.1,
+  "kod": "quc",
+  "stred": [
+   -91.2,
+   15
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    -91.2,
+    15,
+    1.3
+   ]
+  ],
+  "cs": {
+   "nazev": "Kičé",
+   "vyslovnost": "sakarik",
+   "rodina": "mayská",
+   "fakt": "V kičé je napsaná Popol Vuh, mayská kniha o stvoření světa."
+  },
+  "en": {
+   "nazev": "K'iche'",
+   "vyslovnost": "sah-kah-REEK",
+   "rodina": "Mayan",
+   "fakt": "The Popol Vuh, the Maya book of creation, was written in K'iche'."
+  }
+ },
+ {
+  "id": "zap",
+  "skupina": "ost",
+  "pozdrav": "Padiuxi!",
+  "domaci": "Diidxazá",
+  "mluvcich": 0.45,
+  "kod": "zap",
+  "stred": [
+   -96.5,
+   16.8
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    -96.5,
+    16.8,
+    1.4
+   ]
+  ],
+  "cs": {
+   "nazev": "Zapotéčtina",
+   "vyslovnost": "padjuši",
+   "rodina": "otomangejská",
+   "fakt": "Zapotékové měli vlastní písmo už před 2500 lety – jedno z nejstarších v Americe."
+  },
+  "en": {
+   "nazev": "Zapotec",
+   "vyslovnost": "pah-DYOO-shee",
+   "rodina": "Oto-Manguean",
+   "fakt": "The Zapotecs had their own writing 2,500 years ago – one of the oldest in the Americas."
+  }
+ },
+ {
+  "id": "ht",
+  "skupina": "ost",
+  "pozdrav": "Bonjou!",
+  "domaci": "Kreyòl ayisyen",
+  "mluvcich": 12,
+  "kod": "ht",
+  "stred": [
+   -72.3,
+   19
+  ],
+  "zeme": [
+   "Haiti"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Haitská kreolština",
+   "vyslovnost": "bonžu",
+   "rodina": "kreolský jazyk (z francouzštiny)",
+   "fakt": "Slova má z francouzštiny, ale mluvnici z afrických jazyků. Je to plnohodnotný jazyk, ne „zkomolená francouzština“."
+  },
+  "en": {
+   "nazev": "Haitian Creole",
+   "vyslovnost": "bon-ZHOO",
+   "rodina": "French-based creole",
+   "fakt": "Its words come from French but much of its grammar comes from African languages. It is a full language, not “broken French”."
+  }
+ },
+ {
+  "id": "pap",
+  "skupina": "ost",
+  "pozdrav": "Bon dia!",
+  "domaci": "Papiamentu",
+  "mluvcich": 0.3,
+  "kod": "pap",
+  "stred": [
+   -69,
+   12.2
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    -69,
+    12.2,
+    0.7
+   ]
+  ],
+  "cs": {
+   "nazev": "Papiamento",
+   "vyslovnost": "bon dia",
+   "rodina": "kreolský jazyk",
+   "fakt": "Míchá portugalštinu, španělštinu, nizozemštinu i africké jazyky. Vznikla na třech karibských ostrovech."
+  },
+  "en": {
+   "nazev": "Papiamento",
+   "vyslovnost": "bon DEE-ah",
+   "rodina": "creole",
+   "fakt": "It mixes Portuguese, Spanish, Dutch and African languages, and grew up on three Caribbean islands."
+  }
+ },
+ {
+  "id": "ain",
+  "skupina": "ost",
+  "pozdrav": "Irankarapte!",
+  "domaci": "アイヌ イタㇰ",
+  "mluvcich": 0.001,
+  "kod": "ain",
+  "stred": [
+   143,
+   43.5
+  ],
+  "zeme": [],
+  "areal": [
+   [
+    143,
+    43.5,
+    1.7
+   ]
+  ],
+  "cs": {
+   "nazev": "Ainština",
+   "vyslovnost": "irankarapte",
+   "rodina": "izolovaný jazyk – nemá příbuzné",
+   "fakt": "Jazyk původních obyvatel Hokkaida. Pozdrav znamená „dovol mi dotknout se tvého srdce“."
+  },
+  "en": {
+   "nazev": "Ainu",
+   "vyslovnost": "ee-rahn-kah-RAHP-teh",
+   "rodina": "isolate – no known relatives",
+   "fakt": "The language of the first people of Hokkaido. The greeting means “let me gently touch your heart”."
+  }
+ },
+ {
+  "id": "czj",
+  "skupina": "ost",
+  "pozdrav": "Ahoj (rukou)",
+  "domaci": "ČZJ",
+  "mluvcich": 0.01,
+  "kod": "",
+  "stred": [
+   15.5,
+   49.8
+  ],
+  "zeme": [
+   "Czechia"
+  ],
+  "areal": [],
+  "cs": {
+   "nazev": "Český znakový jazyk",
+   "vyslovnost": "dlaň od čela dopředu",
+   "rodina": "znakový jazyk",
+   "fakt": "Znakový jazyk není čeština ukazovaná rukama – má vlastní mluvnici a vlastní slovní zásobu. Ve světě jich je přes dvě stě."
+  },
+  "en": {
+   "nazev": "Czech Sign Language",
+   "vyslovnost": "the palm moves forward from the forehead",
+   "rodina": "sign language",
+   "fakt": "A sign language is not a spoken language shown with the hands – it has its own grammar and its own words. There are more than two hundred sign languages in the world.",
+   "pozdrav": "Ahoj (signed)"
+  }
+ }
+]
