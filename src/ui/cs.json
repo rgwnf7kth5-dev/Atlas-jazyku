@@ -271,5 +271,11 @@
  ],
  "pribuzniAtlas": "Příbuzní v atlasu",
  "pribuzniOblouky": "Na glóbu k nim vedou světelné oblouky.",
- "motiv": "Přepnout denní a noční vzhled"
+ "motiv": "Přepnout denní a noční vzhled",
+ "podnadpisDen": "Každý bod na glóbu je jeden ze {pocet} jazyků Země",
+ "legendaDen": "Každý bod je jeden ze {pocet} jazyků světa. Klikni na něj.",
+ "napovedaVyberDen": "Zatoč glóbem, přibliž kolečkem, klikni na bod nebo na zemi",
+ "vychoziPocetDen": "{a} jazyků s pozdravem · {b} bodů na glóbu",
+ "zemeBezPozdravuDen": "Odsud tu zatím nemám žádný pozdrav. Zkus kliknout na některý bod.",
+ "pribuzniObloukyDen": "Na glóbu k nim vedou oblouky."
 }

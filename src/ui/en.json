@@ -271,5 +271,11 @@
  ],
  "pribuzniAtlas": "Relatives in the atlas",
  "pribuzniOblouky": "Light arcs on the globe lead to them.",
- "motiv": "Switch between day and night look"
+ "motiv": "Switch between day and night look",
+ "podnadpisDen": "Every dot on the globe is one of Earth's {pocet} languages",
+ "legendaDen": "Every dot is one of the world's {pocet} languages. Click one.",
+ "napovedaVyberDen": "Spin the globe, zoom with the wheel, click a dot or a country",
+ "vychoziPocetDen": "{a} languages with a greeting · {b} dots on the globe",
+ "zemeBezPozdravuDen": "No greeting from here yet. Try clicking one of the dots.",
+ "pribuzniObloukyDen": "Arcs on the globe lead to them."
 }

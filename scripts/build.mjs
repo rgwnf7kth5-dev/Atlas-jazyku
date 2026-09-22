@@ -30,7 +30,8 @@ const UI = {};
 for (const l of ["cs", "en"]) {
   const ui = json(`src/ui/${l}.json`);
   const pocet = glottolog.body.length.toLocaleString(ui.locale);
-  UI[l] = { ...ui, podnadpis: ui.podnadpis.replace("{pocet}", pocet), legenda: ui.legenda.replace("{pocet}", pocet) };
+  UI[l] = { ...ui };
+  for (const k of ["podnadpis", "legenda", "podnadpisDen", "legendaDen"]) UI[l][k] = ui[k].replace("{pocet}", pocet);
 }
 // každá stránka nese oba jazyky, aby šlo přepnout na místě (bez nového listu a bez ztráty výběru)
 const JAZYKY = jazykyAtlasu.map(j => {

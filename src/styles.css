@@ -11,7 +11,7 @@
   --linka:rgba(150,205,255,.16); --linka2:rgba(150,205,255,.3); --plocha:rgba(255,255,255,.05); --plocha2:rgba(255,255,255,.08);
   --sklo-tl:rgba(14,22,56,.55); --vstup:rgba(3,6,20,.45); --stin:rgba(0,0,0,.7);
   --cyan-slabe:rgba(53,214,255,.14); --cyan-okraj:rgba(53,214,255,.4); --cyan-zare:rgba(53,214,255,.65);
-  --aktivni-text:#DFF8FF; --na-cyan:#050818; --hud-linka:rgba(127,233,255,.55);
+  --aktivni-text:#DFF8FF; --na-cyan:#050818;
   --nadpis-grad:linear-gradient(90deg,#FFFFFF,#BFF3FF 55%,#DDC6FF);
   /* glóbus (čte je i app.js) */
   --koule1:#0B1A45; --koule2:#02040E; --atmosfera:rgba(53,214,255,.5); --atmosfera2:rgba(80,120,255,.16);
@@ -38,7 +38,7 @@
   --linka:rgba(40,80,160,.14); --linka2:rgba(40,80,160,.28); --plocha:rgba(40,80,160,.05); --plocha2:rgba(40,80,160,.1);
   --sklo-tl:rgba(255,255,255,.62); --vstup:rgba(255,255,255,.75); --stin:rgba(40,70,140,.28);
   --cyan-slabe:rgba(10,119,173,.1); --cyan-okraj:rgba(10,119,173,.45); --cyan-zare:rgba(10,119,173,.35);
-  --aktivni-text:#064E73; --na-cyan:#FFFFFF; --hud-linka:rgba(10,119,173,.5);
+  --aktivni-text:#064E73; --na-cyan:#FFFFFF;
   --nadpis-grad:linear-gradient(90deg,#0E1838,#1F4FA8 55%,#6A36B0);
   --koule1:#FFFFFF; --koule2:#D3E1F5; --atmosfera:rgba(90,170,255,.42); --atmosfera2:rgba(140,190,255,.16);
   --sit:rgba(40,90,170,.1); --hranice:40,80,160; --okraj-koule:rgba(40,110,200,.45);
@@ -96,13 +96,8 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
 #podklad{z-index:1} #gl{z-index:2} #popisky{z-index:3} #globus{z-index:4; touch-action:none; cursor:grab}
 #globus.tahne{cursor:grabbing}
 .hud{position:absolute; inset:14px; z-index:5; pointer-events:none; font-family:var(--pismo-data); font-size:.64rem; letter-spacing:.1em; color:var(--cyan)}
-.hud i{position:absolute; width:20px; height:20px; border:0 solid var(--hud-linka)}
-.hud i:nth-of-type(1){left:0; top:0; border-width:1.5px 0 0 1.5px}
-.hud i:nth-of-type(2){right:0; top:0; border-width:1.5px 1.5px 0 0}
-.hud i:nth-of-type(3){left:0; bottom:0; border-width:0 0 1.5px 1.5px}
-.hud i:nth-of-type(4){right:0; bottom:0; border-width:0 1.5px 1.5px 0}
-.hud .souradnice{position:absolute; left:28px; bottom:3px; opacity:.85; font-variant-numeric:tabular-nums}
-.hud .stav-hud{position:absolute; right:28px; bottom:3px; opacity:.85}
+.hud .souradnice{position:absolute; left:4px; bottom:3px; opacity:.85; font-variant-numeric:tabular-nums}
+.hud .stav-hud{position:absolute; right:4px; bottom:3px; opacity:.85}
 
 .ovladani{position:absolute; z-index:6; right:16px; top:16px; display:flex; flex-direction:column; gap:9px; align-items:flex-end}
 .volby{display:flex; gap:8px}

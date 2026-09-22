@@ -10,6 +10,7 @@ const STATY_VSE = /*__STATY__*/null;
 const REJSTRIK = /*__REJSTRIK__*/null;
 const PD = /*__PODROBNOSTI__*/null;   // podrobnosti k tečkám (Glottolog, WALS, PHOIBLE, UDHR, CLDR)
 let T = UI[VYCHOZI];
+let denni = document.documentElement.getAttribute("data-theme") === "light";   // denní vzhled (viz níž)
 let STATY = STATY_VSE[VYCHOZI];
 
 const SKUPINY = ["ie", "st", "an", "afro", "nk", "ost"];   // pořadí je součást ověření palety
@@ -21,8 +22,10 @@ const bezDiakritiky = function(s){ return s.toLowerCase().normalize("NFD").repla
 const cislo = function(n, des){
   return n.toLocaleString(T.locale, {maximumFractionDigits: des || 0, minimumFractionDigits: des || 0});
 };
+/* text rozhraní; ve dne má pár textů vlastní znění („bod“ místo „světélka“) s příponou Den */
+function tx(klic){ return denni && T[klic + "Den"] != null ? T[klic + "Den"] : T[klic]; }
 function t(klic, promenne){
-  return String(T[klic]).replace(/\{(\w+)\}/g, function(_, k){ return promenne && k in promenne ? promenne[k] : ""; });
+  return String(tx(klic)).replace(/\{(\w+)\}/g, function(_, k){ return promenne && k in promenne ? promenne[k] : ""; });
 }
 function tvar(n, tvary){ /* [1, 2–4, 5+, desetinné] – čeština je potřebuje, angličtině stačí dva */
   if (!Array.isArray(tvary)) return tvary;
@@ -98,7 +101,6 @@ function obnovSbirku(){
 
 /* ---------- denní a noční vzhled: podle nastavení počítače, přepínač má přednost ---------- */
 const svetlySystem = window.matchMedia("(prefers-color-scheme: light)");
-let denni = document.documentElement.getAttribute("data-theme") === "light";
 function ulozenyMotiv(){ try { return localStorage.getItem("atlas-motiv"); } catch (e) { return null; } }
 function obnovPrepinacMotivu(){
   $("ikona-rezim").setAttribute("href", denni ? "#i-mesic" : "#i-slunce");
@@ -111,6 +113,7 @@ function nastavMotiv(den){
   denni = !!den;
   document.documentElement.setAttribute("data-theme", denni ? "light" : "dark");
   obnovPrepinacMotivu();
+  obnovTexty();
   kresliHvezdy();
   if (globusOk && ctx) {
     nactiBarvy(); koule.klic = ""; koule.kandidat = ""; SVETLA = null;
@@ -885,7 +888,7 @@ function klikDoMapy(e){
   okno.textContent = "";
   const h4 = document.createElement("h4"); h4.textContent = nazevZeme(nalezena.properties.name); okno.appendChild(h4);
   if (!zde.length) {
-    const p = document.createElement("p"); p.textContent = T.zemeBezPozdravu; okno.appendChild(p);
+    const p = document.createElement("p"); p.textContent = tx("zemeBezPozdravu"); okno.appendChild(p);
   } else {
     const ul = document.createElement("ul");
     zde.slice(0, 12).forEach(function(j){
@@ -908,7 +911,7 @@ function poVyberu(cilZoom){
   okno.hidden = true; bublinaBod.hidden = true;
   if (globusOk) { spoctiPosun(); letKe(vybrany.stred, cilZoom); }
   $("tl-cely").hidden = false;
-  $("napoveda").textContent = T.napovedaVyber;
+  $("napoveda").textContent = tx("napovedaVyber");
 }
 function nastavOtaceni(zapnout){
   autoOtaceni = !!zapnout;
@@ -999,7 +1002,7 @@ function ukazKartu(j){
       li.appendChild(b); seznamP.appendChild(li);
     });
     o.appendChild(seznamP);
-    if (globusOk) o.appendChild(prvek("p", "pozn", T.pribuzniOblouky));
+    if (globusOk) o.appendChild(prvek("p", "pozn", tx("pribuzniOblouky")));
     pr.appendChild(o);
   }
 
@@ -1200,7 +1203,7 @@ const puvodniOdkaz = odkazJinam.getAttribute("href");
 function prelozStranku(){
   document.documentElement.lang = T.lang;
   document.title = T.nazev;
-  Array.prototype.forEach.call(document.querySelectorAll("[data-t]"), function(el){ el.textContent = T[el.dataset.t]; });
+  Array.prototype.forEach.call(document.querySelectorAll("[data-t]"), function(el){ el.textContent = tx(el.dataset.t); });
   [["title", "tTitle"], ["aria-label", "tAriaLabel"], ["placeholder", "tPlaceholder"]].forEach(function(a){
     Array.prototype.forEach.call(document.querySelectorAll("[data-t-" + a[0] + "]"), function(el){ el.setAttribute(a[0], T[el.dataset[a[1]]]); });
   });
@@ -1209,16 +1212,21 @@ function prelozStranku(){
   if (!ARTEFAKT && location.protocol !== "file:") odkazJinam.setAttribute("href", jiny === "en" ? korenWebu + "en/" : korenWebu);
   else odkazJinam.setAttribute("href", T.lang === VYCHOZI ? puvodniOdkaz : "#");
 }
-function prepniJazyk(lang){
-  T = UI[lang]; STATY = STATY_VSE[lang];
-  prelozData(); prelozStranku(); zmerPopisky();
-  obnovSbirku();
+/* texty na stránce po změně jazyka nebo vzhledu */
+function obnovTexty(){
+  prelozStranku();
   postavPolici($("hledej").value);
-  zobrazenyZoom = ""; if (globusOk) { uplatniZoom(); hudTxt = ""; }
   okno.hidden = true; bublinaBod.hidden = true;
   if (vybrany && vybrany.typ === "atlas") { ukazKartu(PODLE_ID[vybrany.id]); oznacTlacitka(vybrany.id); }
   else if (vybrany && vybrany.typ === "rejstrik") ukazKartuBodu(vybrany.i);
-  $("napoveda").textContent = vybrany ? T.napovedaVyber : T.napovedaStart;
+  $("napoveda").textContent = vybrany ? tx("napovedaVyber") : T.napovedaStart;
+}
+function prepniJazyk(lang){
+  T = UI[lang]; STATY = STATY_VSE[lang];
+  prelozData(); zmerPopisky();
+  obnovSbirku();
+  obnovTexty();
+  zobrazenyZoom = ""; if (globusOk) { uplatniZoom(); hudTxt = ""; }
   if (!ARTEFAKT && location.protocol !== "file:" && history.replaceState) {
     try { history.replaceState(null, "", lang === "en" ? korenWebu + "en/" : korenWebu); } catch (e) {}
   }
@@ -1229,18 +1237,12 @@ odkazJinam.addEventListener("click", function(e){
 });
 
 /* ---------- start ---------- */
-obnovSbirku();
-const prvni = PODLE_ID[T.lang === "en" ? "en" : "cs"];
-vybrany = {typ: "atlas", id: prvni.id, sk: prvni.sk, zeme: prvni.zeme, ob: prvni.ob, stred: prvni.stred,
-           pribuzni: BOD_ATLASU[prvni.id] >= 0 ? pribuzniBodu(BOD_ATLASU[prvni.id], true, 6) : []};
-ukazKartu(prvni);
-$("tl-cely").hidden = false;
-if (!sbirka.has(prvni.id)) { sbirka.add(prvni.id); ulozSbirku(); }
-obnovSbirku(); postavPolici("");
+/* stránka začíná celým světem, bez vybraného jazyka (přání uživatele) */
+obnovSbirku(); prelozStranku(); postavPolici("");
 
 if (globusOk) {
   try {
-    rot = [-prvni.stred[0], -prvni.stred[1]];
+    rot = [-15, -25];                 // pohled na Evropu, Afriku a Asii
     ctx = platno.getContext("2d"); ctxPodklad = podklad.getContext("2d"); ctxPopisky = platnoPopisky.getContext("2d");
     if (!ctx || !ctxPodklad || !ctxPopisky) throw new Error("plátno neumí 2D");
     if (!pripravGl()) { ctxBody = platnoGl.getContext("2d"); if (!ctxBody) throw new Error("plátno neumí kreslit tečky"); }
@@ -1260,10 +1262,10 @@ if (globusOk) {
     try { ulozenePopisky = localStorage.getItem("atlas-popisky"); } catch (e) {}
     nastavPopisky(ulozenePopisky !== "0");
     requestAnimationFrame(smycka);
-    pulsDo = performance.now() + 2600; ozivit();
+    ozivit();
   } catch (e) { console.error("Kreslení glóbu selhalo:", e); globusOk = false; }
 }
 if (!globusOk) {
   [platno, podklad, platnoGl, platnoPopisky].forEach(function(c){ c.hidden = true; });
-  document.querySelector(".hud").hidden = true; $("legenda").hidden = true; $("napoveda").hidden = true; $("vypadek").hidden = false; }
+  $("hud").hidden = true; $("legenda").hidden = true; $("napoveda").hidden = true; $("vypadek").hidden = false; }
 })();

@@ -24,6 +24,7 @@ Nasazení přes Netlify z větve `main` podle `netlify.toml` (build `npm run che
 - **Stránka nesmí záviset na CDN.** d3-geo, d3-array a topojson-client jsou ve `vendor/` a build je vkládá
   do stránky. Dřívější verze tahala d3 z cdnjs a v náhledu artefaktu pak nefungovalo vůbec nic.
 - Glóbus je v pojistce: když selže, police jazyků a karty musí fungovat dál.
+- **Stránka začíná celým světem bez vybraného jazyka** (přání uživatele: neotevírat češtinou ani jiným jazykem).
 - **Přepnutí jazyka je na místě, ne odkazem do nového listu** (přání uživatele). Každá stránka nese oba jazyky;
   texty v šabloně mají `data-t`, `data-t-title`, `data-t-aria-label`, `data-t-placeholder` a JS je přepíše.
   Nový text v šabloně proto musí dostat i tuhle značku. Na webu se při přepnutí mění adresa `/` ↔ `/en/`.
@@ -55,13 +56,15 @@ u každého pushe.
 
 - **Vzhled „Hvězdná mapa se sklem“** (vybral uživatel 22. 9. 2026 ze tří návrhů: „B se sklem z A“).
   Tečky (světélka) na glóbu jsou **jen jazyky**. Pevnina je plná plocha – v noci světlejší než moře, ve dne
-  tmavší (přání uživatele: tečky pevniny stejně velké jako jazyky mátly). Území vybraného jazyka má barvu rodiny, kolem je atmosféra (prstenec ani obíhající satelit tam být nemají – uživatel je nechtěl), v rozích
-  HUD se souřadnicemi a počtem světélek na očích. Panely jsou „tekuté sklo“ (`.sklo`, `backdrop-filter`).
+  tmavší (přání uživatele: tečky pevniny stejně velké jako jazyky mátly). Území vybraného jazyka má barvu rodiny, kolem je atmosféra (prstenec ani obíhající satelit tam být nemají – uživatel je nechtěl). Dole je
+  souřadnice středu pohledu a počet jazyků na očích; rohy „zaměřovacího rámečku“ jsou pryč, protože mátly. Panely jsou „tekuté sklo“ (`.sklo`, `backdrop-filter`).
   Písma Chakra Petch (nadpisy), Outfit (text), JetBrains Mono (data).
 - **Noc a den.** Vzhled se řídí nastavením počítače (`prefers-color-scheme`, i za běhu), přepínač
   sluníčko/měsíček ho přebije. Volba se pamatuje (`atlas-motiv`); když se shoduje s počítačem, smaže se
   a stránka se zase řídí počítačem. Skript v hlavičce nastaví `data-theme` hned, aby stránka neblikla. Denní barvy jsou v `:root[data-theme="light"]`; glóbus je čte z CSS proměnných
   (`nactiBarvy`). Ve dne se světélka nesčítají (na světlé kouli by zmizela), kreslí se obyčejně.
+  Ve dne se neříká „světélko“, ale „bod“: texty s tímto slovem mají denní znění s příponou `Den`
+  (`podnadpisDen`, `legendaDen`…), vybírá je `tx()` a po přepnutí vzhledu se texty obnoví (`obnovTexty`).
 - Barvy rodin (`--r-*`): noční sada prošla validátorem palet (skill dataviz) na `#04060F` i `#101634`,
   denní sada (`#2E63D6 #E2544A #0A9BB5 #E09A18 #0A7541 #8A44C8`) na bílé. Zlatá má ve dne kontrast
   jen 2,4 : 1, proto nese tmavý text (`--t-afro`).
