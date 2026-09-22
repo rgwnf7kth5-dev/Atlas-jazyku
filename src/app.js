@@ -8,6 +8,7 @@ const SVET = /*__SVET__*/null;
 const JAZYKY = /*__JAZYKY__*/null;
 const STATY_VSE = /*__STATY__*/null;
 const REJSTRIK = /*__REJSTRIK__*/null;
+const PD = /*__PODROBNOSTI__*/null;   // podrobnosti k tečkám (Glottolog, WALS, PHOIBLE, UDHR, CLDR)
 let T = UI[VYCHOZI];
 let STATY = STATY_VSE[VYCHOZI];
 
@@ -65,10 +66,21 @@ const B = REJSTRIK.b, POCET_B = B.length;
 const bLon = new Float64Array(POCET_B), bSinLat = new Float64Array(POCET_B), bCosLat = new Float64Array(POCET_B);
 const bPx = new Float32Array(POCET_B), bPy = new Float32Array(POCET_B), bVid = new Uint8Array(POCET_B);
 const bHledat = new Array(POCET_B);
+const radek = function(i){ return PD.radky[i] || []; };
+const velke = function(s){ return s ? s.charAt(0).toUpperCase() + s.slice(1) : s; };
+const sourozenci = new Map();                     // skupina → tečky, které do ní patří
 for (let i = 0; i < POCET_B; i++) {
   const lat = B[i][2] * R;
   bLon[i] = B[i][1] * R; bSinLat[i] = Math.sin(lat); bCosLat[i] = Math.cos(lat);
-  bHledat[i] = bezDiakritiky(B[i][0]);
+  bHledat[i] = bezDiakritiky(B[i][0] + " " + (radek(i)[9] || ""));
+  const sk = radek(i)[2];
+  if (sk >= 0) { if (!sourozenci.has(sk)) sourozenci.set(sk, []); sourozenci.get(sk).push(i); }
+}
+function jmenoBodu(i){
+  const id = B[i][5];
+  if (id && PODLE_ID[id]) return PODLE_ID[id].n;
+  const cs = T.lang === "cs" && radek(i)[9];
+  return cs ? velke(cs) : B[i][0];
 }
 
 /* ---------- sbírka pozdravů (jen v tomto prohlížeči) ---------- */
@@ -156,7 +168,7 @@ function postavPolici(filtr){
       sekce.appendChild(nadpis(T.rejstrik + " (" + vRejstriku + (vRejstriku >= 80 ? "+" : "") + ")", null));
       const mrizka = document.createElement("div"); mrizka.className = "mrizka";
       nalez.forEach(function(i){
-        const tl = tlacitko(B[i][0], REJSTRIK.rr[B[i][3]], null, "tecka-jaz");
+        const tl = tlacitko(jmenoBodu(i), REJSTRIK.rr[B[i][3]], null, "tecka-jaz");
         tl.addEventListener("click", function(){ vyberBod(i); });
         mrizka.appendChild(tl);
       });
@@ -259,7 +271,7 @@ const poradiPopisku = new Int32Array(POCET_B);   // napřed jazyky z atlasu, pak
   for (let i = 0; i < POCET_B; i++) if (!B[i][5]) poradiPopisku[k++] = i; })();
 const sirka10 = new Float32Array(POCET_B);          // šířka popisku při písmu 10 px
 const PISMO = "px Nunito, system-ui, sans-serif";
-function textPopisku(i){ const id = B[i][5]; return id && PODLE_ID[id] ? PODLE_ID[id].n : B[i][0]; }
+function textPopisku(i){ return jmenoBodu(i); }
 function zmerPopisky(jenAtlas){
   if (!globusOk) return;
   ctx.save(); ctx.font = "700 10" + PISMO;
@@ -502,7 +514,7 @@ function najedNaBod(e){
   if (i === zvyraznenyBod && (i < 0 || !bublinaBod.hidden)) return;
   if (!(vybrany && vybrany.typ === "rejstrik")) { zvyraznenyBod = i; potrebaKresli = true; }
   if (i < 0) { bublinaBod.hidden = true; return; }
-  bublinaBod.textContent = B[i][0] + " · " + REJSTRIK.rr[B[i][3]];
+  bublinaBod.textContent = jmenoBodu(i) + " · " + REJSTRIK.rr[B[i][3]];
   bublinaBod.hidden = false;
   umisti(bublinaBod, e);
 }
@@ -605,6 +617,7 @@ function pocetMluvcich(m){
 const tlPrehraj = $("k-prehraj"), popisPrehraj = tlPrehraj.querySelector("span");
 function ukazKartu(j){
   $("karta").hidden = false; $("k-plne").hidden = false; $("k-pozn").hidden = true; $("k-odznak").hidden = true;
+  $("k-podrobnosti").hidden = true;
   $("k-nazev").textContent = j.n;
   $("k-domaci").textContent = t("domaciJmeno", {x: j.dom});
   const bub = $("k-bublina");
@@ -631,17 +644,131 @@ function ukazKartu(j){
   if (j.ob.length) { const li = document.createElement("li"); li.className = "vic"; li.textContent = T.areal; ul.appendChild(li); }
   $("k-kde").hidden = !jmena.length && !j.ob.length;
 }
+function prvek(tag, trida, text){
+  const e = document.createElement(tag);
+  if (trida) e.className = trida;
+  if (text != null) e.textContent = text;
+  return e;
+}
+function oddil(nadpisText){ const o = prvek("section"); o.appendChild(prvek("h3", null, nadpisText)); return o; }
+function lidi(n){
+  if (n < 1000) return cislo(n);
+  return pocetMluvcich(n / 1e6);
+}
+let srovnani = null;   // hlásky češtiny (nebo angličtiny) pro porovnání
+function hlaskySrovnani(){
+  const i = B.findIndex(function(b){ return b[5] === T.srovnavaciJazyk; });
+  const h = i >= 0 ? radek(i)[6] : null;
+  return Array.isArray(h) ? h : null;
+}
 function ukazKartuBodu(i){
-  $("karta").hidden = false; $("k-plne").hidden = true; $("k-kde").hidden = true;
-  $("k-nazev").textContent = B[i][0];
-  $("k-domaci").textContent = T.tecka;
+  const r = radek(i);
+  $("karta").hidden = false; $("k-plne").hidden = true; $("k-kde").hidden = true; $("k-pozn").hidden = true;
+  const jmeno = jmenoBodu(i);
+  $("k-nazev").textContent = jmeno;
+  $("k-domaci").textContent = jmeno !== B[i][0] ? t("teckaNazev", {x: B[i][0]}) : T.teckaMezinarodni;
   const od = $("k-odznak");
   const oblast = REJSTRIK.mm[B[i][4]];
   od.textContent = REJSTRIK.rr[B[i][3]] + (oblast ? " · " + oblast : "");
   od.hidden = false;
-  const p = $("k-pozn");
-  p.textContent = t("teckaPozn", {a: cislo(POCET_B), b: JAZYKY.length});
-  p.hidden = false;
+
+  const box = $("k-podrobnosti");
+  box.textContent = ""; box.hidden = false;
+
+  if (r[0] >= 0) {                                     /* ohrožení podle UNESCO */
+    const o = oddil(T.ohrozeni), stupen = T.aes[r[0]];
+    const m = prvek("div", "ohrozeni");
+    m.setAttribute("role", "img"); m.setAttribute("aria-label", stupen[0] + " (" + (r[0] + 1) + "/6)");
+    for (let k = 0; k < 6; k++) m.appendChild(prvek("i", k <= r[0] ? "plny" : null));
+    const p = prvek("p"); p.appendChild(prvek("span", "ohrozeni-nazev", stupen[0])); p.appendChild(document.createTextNode(" – " + stupen[1]));
+    o.appendChild(m); o.appendChild(p); box.appendChild(o);
+  }
+
+  const staty = (r[3] || "").split(" ").filter(Boolean);
+  if (staty.length) {
+    const o = oddil(T.kdeMluviTecka), ul = prvek("ul", "staty");
+    staty.slice(0, 12).forEach(function(k){ ul.appendChild(prvek("li", null, PD.staty[T.lang][k] || k)); });
+    if (staty.length > 12) ul.appendChild(prvek("li", "vic", t("aDalsich", {n: staty.length - 12})));
+    o.appendChild(ul); box.appendChild(o);
+  }
+  if (r[8] > 0 || r[4] > 0) {
+    const d = prvek("div", "dvojice");
+    if (r[8] > 0) {
+      const o = oddil(T.uzivatelu);
+      o.appendChild(prvek("p", null, t("uzivateluHodnota", {n: lidi(r[8])})));
+      o.appendChild(prvek("p", "pozn", T.uzivateluPozn));
+      d.appendChild(o);
+    }
+    if (r[4] > 0) { const o = oddil(T.nareci); o.appendChild(prvek("p", null, cislo(r[4]))); d.appendChild(o); }
+    box.appendChild(d);
+  }
+
+  if (r[7] >= 0) {                                     /* ukázka textu: článek 1 deklarace */
+    const u = PD.udhr[r[7]], o = oddil(T.ukazka);
+    const q = prvek("blockquote", "ukazka", u[0]);
+    if (u[1]) q.dir = "rtl";
+    o.appendChild(q); o.appendChild(prvek("p", "pozn", T.ukazkaPopis)); box.appendChild(o);
+  }
+
+  if (r[5]) {                                          /* stavba jazyka z WALS */
+    const ul = prvek("ul", "vlastnosti");
+    PD.wals.forEach(function(kod, k){
+      const v = +r[5][k], popis = T.wals[kod];
+      if (!v || !popis || !popis[1][v - 1]) return;
+      const li = prvek("li"); li.appendChild(prvek("b", null, popis[0])); li.appendChild(prvek("span", null, popis[1][v - 1]));
+      ul.appendChild(li);
+    });
+    if (ul.children.length) { const o = oddil(T.stavba); o.appendChild(ul); box.appendChild(o); }
+  }
+
+  if (Array.isArray(r[6])) {                           /* hlásky z PHOIBLE */
+    const h = r[6], o = oddil(T.hlasky);
+    let txt = t("hlaskyHodnota", {c: h[0], cs: tvar(h[0], T.souhlaska), v: h[1], vs: tvar(h[1], T.samohlaska)});
+    if (h[2] > 0) txt += t("hlaskyTony", {t: h[2], ts: tvar(h[2], T.ton)});
+    o.appendChild(prvek("p", null, txt + "."));
+    if (!srovnani || srovnani.lang !== T.lang) srovnani = {lang: T.lang, h: hlaskySrovnani()};
+    if (srovnani.h) o.appendChild(prvek("p", "pozn", t("hlaskySrovnani", {c: srovnani.h[0], v: srovnani.h[1]})));
+    box.appendChild(o);
+  }
+
+  if (r[2] >= 0) {                                     /* příbuzenstvo a nejbližší příbuzní */
+    const cesta = [];
+    for (let u = r[2]; u >= 0; u = PD.nad[u]) cesta.unshift(PD.uzly[u]);
+    cesta[0] = velke(REJSTRIK.rr[B[i][3]] || cesta[0]);
+    const zobrazit = cesta.length > 4 ? [cesta[0], "…", cesta[cesta.length - 2], cesta[cesta.length - 1]] : cesta;
+    const o = oddil(T.pribuzenstvo), p = prvek("p", "cesta");
+    zobrazit.forEach(function(x, k){
+      if (k) p.appendChild(prvek("span", "sipka", "›"));
+      p.appendChild(prvek("span", null, x));
+    });
+    o.appendChild(p); box.appendChild(o);
+
+    const bratri = (sourozenci.get(r[2]) || []).filter(function(j){ return j !== i; });
+    if (bratri.length) {
+      const o2 = oddil(T.sourozenci + " (" + bratri.length + ")"), ul = prvek("ul", "pribuzni");
+      bratri.slice(0, 8).forEach(function(j){
+        const li = prvek("li"), b = prvek("button", null, jmenoBodu(j));
+        b.type = "button";
+        b.addEventListener("click", function(){ vyberBod(j); });
+        li.appendChild(b); ul.appendChild(li);
+      });
+      if (bratri.length > 8) ul.appendChild(prvek("li", "vic", t("aDalsichPribuznych", {n: bratri.length - 8})));
+      o2.appendChild(ul); box.appendChild(o2);
+    }
+  }
+
+  if (r[1] >= 0) { const o = oddil(T.popsanost); o.appendChild(prvek("p", null, velke(T.med[r[1]]) + ".")); box.appendChild(o); }
+
+  const o = oddil(T.odkazyPopis), odk = prvek("div", "odkazy");
+  const hledat = T.lang === "cs" && r[9] ? r[9] : B[i][0] + " language";
+  [[T.odkazGlottolog, "https://glottolog.org/glottolog?search=" + encodeURIComponent(B[i][0])],
+   [T.odkazWikipedie, "https://" + T.wikiDomena + "/w/index.php?search=" + encodeURIComponent(hledat)]].forEach(function(x){
+    const a = prvek("a", null, x[0] + " ↗"); a.href = x[1]; a.target = "_blank"; a.rel = "noopener";
+    odk.appendChild(a);
+  });
+  o.appendChild(odk); box.appendChild(o);
+  box.appendChild(prvek("p", "pozn", T.teckaPozn));
+  $("karta").scrollTop = 0;
 }
 
 /* ---------- zvuk: rodilý hlas, jinak výslovnost hlasem stránky, jinak aspoň text ---------- */
@@ -695,7 +822,7 @@ function prelozStranku(){
 }
 function prepniJazyk(lang){
   T = UI[lang]; STATY = STATY_VSE[lang];
-  prelozData(); prelozStranku(); zmerPopisky(true);
+  prelozData(); prelozStranku(); zmerPopisky(false);
   obnovSbirku();
   postavPolici($("hledej").value);
   zobrazenyZoom = ""; if (globusOk) uplatniZoom();

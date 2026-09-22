@@ -45,6 +45,15 @@ if (!glottolog.body || glottolog.body.length < 5000) chyby.push("data/glottolog.
 const propojene = new Set(glottolog.body.map(b => b[5]).filter(Boolean));
 for (const id of propojene) if (!ids.has(id)) chyby.push(`Glottolog odkazuje na neexistující jazyk „${id}“`);
 
+const pd = json("data/podrobnosti.json");
+if (pd.radky.length !== glottolog.body.length) chyby.push(`data/podrobnosti.json má ${pd.radky.length} řádků, rejstřík ${glottolog.body.length} – spusť node scripts/podrobnosti.mjs`);
+if (pd.uzly.length !== pd.nad.length) chyby.push("data/podrobnosti.json: strom příbuzenstva je poškozený");
+for (const [l, ui] of [["cs", uiCs], ["en", uiEn]]) {
+  if (!Array.isArray(ui.aes) || ui.aes.length !== 6) chyby.push(`src/ui/${l}.json: „aes“ musí mít 6 stupňů ohrožení`);
+  if (!Array.isArray(ui.med) || ui.med.length !== 5) chyby.push(`src/ui/${l}.json: „med“ musí mít 5 stupňů popsanosti`);
+  for (const k of pd.wals) if (!ui.wals || !ui.wals[k]) chyby.push(`src/ui/${l}.json: chybí popisek vlastnosti ${k}`);
+}
+
 for (const v of varovani) console.log("upozornění: " + v);
 for (const c of chyby) console.log("CHYBA: " + c);
 console.log(`${jazyky.length} jazyků v atlasu, ${glottolog.body.length} v rejstříku, ${propojene.size} propojených · ${chyby.length} chyb, ${varovani.length} upozornění`);

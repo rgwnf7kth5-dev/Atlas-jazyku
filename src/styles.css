@@ -224,6 +224,36 @@ h1{
   margin:0 0 11px; font-size:.85rem; line-height:1.5; background:var(--papir3);
   border:2px dashed var(--linka2); border-radius:14px; padding:10px 12px;
 }
+/* ---------- podrobnosti o jazyku ze světového rejstříku ---------- */
+.podrobnosti{display:flex; flex-direction:column; gap:12px; margin-bottom:4px}
+.podrobnosti h3{margin:0 0 5px; font-size:.63rem; font-weight:800; letter-spacing:.07em; text-transform:uppercase; color:var(--inkoust2)}
+.podrobnosti p{margin:0; font-size:.86rem; line-height:1.45}
+.podrobnosti .pozn{font-size:.72rem; color:var(--inkoust2); font-weight:700; margin-top:2px}
+.ohrozeni{display:flex; gap:4px; margin:2px 0 6px}
+.ohrozeni i{flex:1; height:9px; border-radius:5px; background:var(--papir3); border:1.5px solid var(--linka2)}
+.ohrozeni i.plny{background:var(--inkoust); border-color:var(--inkoust)}
+.ohrozeni-nazev{font-weight:800}
+.dvojice{display:grid; grid-template-columns:1fr 1fr; gap:8px}
+.ukazka{
+  margin:0; padding:10px 12px; border-radius:14px; background:var(--papir3); border:2px solid var(--linka2);
+  font-family:"Noto Sans","Noto Sans Arabic","Noto Sans Devanagari","Noto Sans CJK SC","Segoe UI",system-ui,sans-serif;
+  font-size:.92rem; line-height:1.5; font-weight:600;
+}
+.vlastnosti{margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:6px}
+.vlastnosti li{display:grid; grid-template-columns:92px 1fr; gap:8px; font-size:.84rem; line-height:1.4}
+.vlastnosti b{font-size:.7rem; font-weight:800; color:var(--inkoust2); padding-top:2px}
+.cesta{font-size:.82rem; font-weight:700; line-height:1.5}
+.cesta span{white-space:nowrap}
+.cesta .sipka{color:var(--inkoust2); margin:0 4px}
+.pribuzni{display:flex; flex-wrap:wrap; gap:5px; margin:0; padding:0; list-style:none}
+.pribuzni button{cursor:pointer; font-size:.76rem; font-weight:800; padding:3px 10px; border-radius:999px;
+  background:var(--papir2); border:2px solid var(--linka2); color:var(--inkoust)}
+.pribuzni button:hover{border-color:var(--inkoust); background:var(--papir3)}
+.pribuzni .vic{font-size:.76rem; font-weight:700; color:var(--inkoust2); padding:4px 4px}
+.odkazy{display:flex; gap:8px; flex-wrap:wrap}
+.odkazy a{font-size:.78rem; font-weight:800; color:var(--inkoust); text-decoration:none; padding:4px 11px;
+  border-radius:999px; border:2px solid var(--inkoust); background:var(--papir3)}
+.odkazy a:hover{background:var(--akcent); color:var(--akcent-text); border-color:var(--akcent)}
 .odznak{
   display:inline-block; font-size:.62rem; font-weight:800; letter-spacing:.07em; text-transform:uppercase;
   padding:2px 8px; border-radius:999px; background:var(--papir3); border:1.5px solid var(--linka2);

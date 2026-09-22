@@ -61,14 +61,14 @@
  "vychoziPocet": "{a} jazyků s pozdravem · {b} teček na glóbu",
  "zemeBezPozdravu": "Odsud tu zatím nemám žádný pozdrav. Zkus kliknout na některou tečku.",
  "tecka": "mezinárodní název ze světového rejstříku Glottolog",
- "teckaPozn": "Tenhle jazyk je v atlasu zatím jen tečkou – pozdrav ani zajímavost k němu nemám. Ze {a} jazyků světa jich {b} umí v atlasu pozdravit.",
+ "teckaPozn": "Pozdrav k tomuhle jazyku v atlasu zatím nemám.",
  "zvukNeumi": "Tohle zařízení neumí číst nahlas. Zkus to říct sám podle výslovnosti „{x}“.",
  "zvukRodily": "Čte hlas rodilého mluvčího z tvého zařízení.",
  "zvukZalozni": "Tenhle jazyk tvoje zařízení neumí, tak ti výslovnost přečtu česky. Rodilý mluvčí to řekne o kousek jinak.",
  "zvukZadny": "Tvoje zařízení nemá žádný hlas. Zkus to přečíst sám: „{x}“.",
  "zvukChyba": "Přehrát se to nepovedlo. Zkus to přečíst sám: „{x}“.",
  "hlasZalozni": "cs-CZ",
- "zdroje": "Tečky: Glottolog (CC BY 4.0) · Mapa: Natural Earth",
+ "zdroje": "Tečky: Glottolog (CC BY 4.0) · Stavba jazyků: WALS (CC BY 4.0) · Hlásky: PHOIBLE (CC BY-SA 3.0) · Mapa: Natural Earth",
  "rodiny": {
   "ie": "Indoevropská rodina",
   "st": "Sinotibetská rodina",
@@ -88,5 +88,173 @@
  "otacet": "Otáčet",
  "otacetPopis": "Zeměkoule se bude sama pomalu otáčet",
  "jmena": "Jména",
- "jmenaPopis": "Při přiblížení ukázat u teček jména jazyků"
+ "jmenaPopis": "Při přiblížení ukázat u teček jména jazyků",
+ "teckaNazev": "název v rejstříku: {x}",
+ "teckaMezinarodni": "mezinárodní název ze světového rejstříku Glottolog",
+ "ohrozeni": "Ohrožení",
+ "aes": [
+  [
+   "Neohrožený",
+   "Děti se ho doma učí jako první jazyk."
+  ],
+  [
+   "Zranitelný",
+   "Děti jím mluví, ale jen někde nebo jen doma."
+  ],
+  [
+   "Ohrožený",
+   "Děti se ho už doma neučí."
+  ],
+  [
+   "Vážně ohrožený",
+   "Mluví jím hlavně babičky a dědečkové."
+  ],
+  [
+   "Kriticky ohrožený",
+   "Zbývá jen pár starých mluvčích."
+  ],
+  [
+   "Vymřelý",
+   "Už jím nikdo nemluví jako mateřštinou."
+  ]
+ ],
+ "uzivatelu": "Používá ho",
+ "uzivateluHodnota": "asi {n} lidí",
+ "uzivateluPozn": "odhad Unicode CLDR, včetně těch, kdo se ho naučili",
+ "nareci": "Nářečí",
+ "kdeMluviTecka": "Kde se jím mluví",
+ "ukazka": "Jak se píše",
+ "ukazkaPopis": "Takhle v tomhle jazyce začíná článek 1 Všeobecné deklarace lidských práv. Česky: „Všichni lidé rodí se svobodní a sobě rovní co do důstojnosti a práv…“",
+ "stavba": "Jak jazyk funguje",
+ "hlasky": "Hlásky",
+ "hlaskyHodnota": "{c} {cs} a {v} {vs}",
+ "hlaskyTony": ", k tomu {t} {ts}",
+ "hlaskySrovnani": "Pro srovnání čeština: {c} a {v}.",
+ "souhlaska": [
+  "souhláska",
+  "souhlásky",
+  "souhlásek"
+ ],
+ "samohlaska": [
+  "samohláska",
+  "samohlásky",
+  "samohlásek"
+ ],
+ "ton": [
+  "tón",
+  "tóny",
+  "tónů"
+ ],
+ "pribuzenstvo": "Příbuzenstvo",
+ "sourozenci": "Nejbližší příbuzní",
+ "aDalsichPribuznych": "a dalších {n}",
+ "popsanost": "Co o něm vědci sepsali",
+ "med": [
+  "podrobnou mluvnici (přes 300 stran)",
+  "mluvnici",
+  "krátký popis mluvnice",
+  "jen texty nebo popis výslovnosti",
+  "jen seznam slov nebo ještě méně – ví se o něm velmi málo"
+ ],
+ "odkazGlottolog": "Glottolog",
+ "odkazWikipedie": "Wikipedie",
+ "odkazyPopis": "Víc o jazyce",
+ "wikiDomena": "cs.wikipedia.org",
+ "srovnavaciJazyk": "cs",
+ "wals": {
+  "81A": [
+   "Pořadí ve větě",
+   [
+    "kdo – co – dělá: „Pes kost hryže.“",
+    "kdo – dělá – co: „Pes hryže kost.“ Stejně jako čeština.",
+    "dělá – kdo – co: „Hryže pes kost.“",
+    "dělá – co – kdo: „Hryže kost pes.“",
+    "co – dělá – kdo: „Kost hryže pes.“",
+    "co – kdo – dělá: „Kost pes hryže.“",
+    "Pořadí slov ve větě je volné."
+   ]
+  ],
+  "13A": [
+   "Tóny",
+   [
+    "Nemá – výška hlasu nemění, co slovo znamená.",
+    "Má – výška hlasu mění, co slovo znamená.",
+    "Má hodně tónů – stejná slabika řečená jinak vysoko znamená něco jiného."
+   ]
+  ],
+  "138A": [
+   "Čaj",
+   [
+    "Řekne se podobně jako „čaj“. Slovo přišlo z čínského „cha“ po souši.",
+    "Řekne se podobně jako „tí“. Slovo přišlo z čínského „te“ po moři.",
+    "Má vlastní slovo, nepřevzaté z čínštiny."
+   ]
+  ],
+  "131A": [
+   "Počítání",
+   [
+    "Po desítkách, stejně jako my.",
+    "Po desítkách i po dvacítkách.",
+    "Po dvacítkách – na prstech rukou i nohou.",
+    "Po jiných skupinách než po desítkách.",
+    "Na částech těla: ukazuje se na prsty, zápěstí, loket, rameno…",
+    "Má jen pár čísel, větší počty se říkají opisem."
+   ]
+  ],
+  "129A": [
+   "Ruka a paže",
+   [
+    "Je to jedno slovo, jako české „ruka“.",
+    "Jsou to dvě různá slova."
+   ]
+  ],
+  "133A": [
+   "Barvy",
+   [
+    "Má jen 3–4 základní barvy.",
+    "Má 5 základních barev.",
+    "Má 6 základních barev.",
+    "Má 7 základních barev.",
+    "Má 8 základních barev.",
+    "Má 9–10 základních barev.",
+    "Má 11 základních barev, stejně jako čeština."
+   ]
+  ],
+  "30A": [
+   "Rody",
+   [
+    "Nemá mluvnické rody – žádné „ten, ta, to“.",
+    "Má 2 mluvnické rody.",
+    "Má 3 mluvnické rody, stejně jako čeština.",
+    "Má 4 mluvnické rody.",
+    "Má 5 a víc mluvnických rodů."
+   ]
+  ],
+  "49A": [
+   "Pády",
+   [
+    "Nemá pády – slova nemění koncovky.",
+    "Má 2 pády.",
+    "Má 3 pády.",
+    "Má 4 pády.",
+    "Má 5 pádů.",
+    "Má 6–7 pádů, stejně jako čeština.",
+    "Má 8–9 pádů.",
+    "Má 10 a víc pádů!",
+    "Pády skoro nemá."
+   ]
+  ],
+  "19A": [
+   "Zvláštní hlásky",
+   [
+    "",
+    "Mlaskavé hlásky – cvaknutí jazykem.",
+    "Hlásky vyslovované rty i zadem jazyka zároveň, jako „kp“ a „gb“.",
+    "Hrdelní hlásky vyslovované hluboko v krku.",
+    "Šišlavé hlásky „th“, jako v angličtině.",
+    "Mlaskavé, hrdelní i šišlavé „th“.",
+    "Hrdelní hlásky i šišlavé „th“."
+   ]
+  ]
+ }
 }

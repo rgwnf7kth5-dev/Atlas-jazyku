@@ -61,14 +61,14 @@
  "vychoziPocet": "{a} languages with a greeting · {b} dots on the globe",
  "zemeBezPozdravu": "No greeting from here yet. Try clicking one of the dots.",
  "tecka": "name from the Glottolog world register",
- "teckaPozn": "This language is only a dot in the atlas so far – there's no greeting or fun fact for it yet. Of the world's {a} languages, {b} can say hello here.",
+ "teckaPozn": "There's no greeting for this language in the atlas yet.",
  "zvukNeumi": "This device can't read aloud. Try saying it yourself: “{x}”.",
  "zvukRodily": "A native-speaker voice from your device is reading it.",
  "zvukZalozni": "Your device doesn't have this language, so an English voice reads the pronunciation. A native speaker sounds a little different.",
  "zvukZadny": "Your device has no voices. Try reading it yourself: “{x}”.",
  "zvukChyba": "That didn't play. Try reading it yourself: “{x}”.",
  "hlasZalozni": "en-GB",
- "zdroje": "Dots: Glottolog (CC BY 4.0) · Map: Natural Earth",
+ "zdroje": "Dots: Glottolog (CC BY 4.0) · Grammar: WALS (CC BY 4.0) · Sounds: PHOIBLE (CC BY-SA 3.0) · Map: Natural Earth",
  "rodiny": {
   "ie": "Indo-European family",
   "st": "Sino-Tibetan family",
@@ -88,5 +88,173 @@
  "otacet": "Spin",
  "otacetPopis": "Let the globe spin slowly by itself",
  "jmena": "Names",
- "jmenaPopis": "Show language names next to the dots when zoomed in"
+ "jmenaPopis": "Show language names next to the dots when zoomed in",
+ "teckaNazev": "register name: {x}",
+ "teckaMezinarodni": "name from the Glottolog world register",
+ "ohrozeni": "Status",
+ "aes": [
+  [
+   "Safe",
+   "Children learn it at home as their first language."
+  ],
+  [
+   "Vulnerable",
+   "Children speak it, but only in some places or only at home."
+  ],
+  [
+   "Definitely endangered",
+   "Children no longer learn it at home."
+  ],
+  [
+   "Severely endangered",
+   "Mostly grandparents speak it."
+  ],
+  [
+   "Critically endangered",
+   "Only a few elderly speakers are left."
+  ],
+  [
+   "Extinct",
+   "Nobody speaks it as a mother tongue any more."
+  ]
+ ],
+ "uzivatelu": "Used by",
+ "uzivateluHodnota": "about {n} people",
+ "uzivateluPozn": "Unicode CLDR estimate, including people who learned it",
+ "nareci": "Dialects",
+ "kdeMluviTecka": "Where it is spoken",
+ "ukazka": "How it looks written",
+ "ukazkaPopis": "This is how Article 1 of the Universal Declaration of Human Rights begins in this language. In English: “All human beings are born free and equal in dignity and rights…”",
+ "stavba": "How the language works",
+ "hlasky": "Sounds",
+ "hlaskyHodnota": "{c} {cs} and {v} {vs}",
+ "hlaskyTony": ", plus {t} {ts}",
+ "hlaskySrovnani": "English, for comparison: {c} and {v}.",
+ "souhlaska": [
+  "consonant",
+  "consonants",
+  "consonants"
+ ],
+ "samohlaska": [
+  "vowel",
+  "vowels",
+  "vowels"
+ ],
+ "ton": [
+  "tone",
+  "tones",
+  "tones"
+ ],
+ "pribuzenstvo": "Family tree",
+ "sourozenci": "Closest relatives",
+ "aDalsichPribuznych": "and {n} more",
+ "popsanost": "What linguists have written",
+ "med": [
+  "a detailed grammar (300+ pages)",
+  "a grammar",
+  "a short grammar sketch",
+  "only texts or a description of its sounds",
+  "only a word list or less – very little is known about it"
+ ],
+ "odkazGlottolog": "Glottolog",
+ "odkazWikipedie": "Wikipedia",
+ "odkazyPopis": "More about it",
+ "wikiDomena": "en.wikipedia.org",
+ "srovnavaciJazyk": "en",
+ "wals": {
+  "81A": [
+   "Word order",
+   [
+    "who – what – does: “The dog the bone chews.”",
+    "who – does – what: “The dog chews the bone.” Just like English.",
+    "does – who – what: “Chews the dog the bone.”",
+    "does – what – who: “Chews the bone the dog.”",
+    "what – does – who: “The bone chews the dog.” (the dog is still the one chewing!)",
+    "what – who – does: “The bone the dog chews.”",
+    "Word order is free."
+   ]
+  ],
+  "13A": [
+   "Tones",
+   [
+    "None – the pitch of your voice doesn't change what a word means.",
+    "Yes – the pitch of your voice changes what a word means.",
+    "Lots of tones – the same syllable said higher or lower means different things."
+   ]
+  ],
+  "138A": [
+   "Tea",
+   [
+    "Sounds like “chai”. The word came overland from Chinese “cha”.",
+    "Sounds like “tea”. The word came by sea from Chinese “te”.",
+    "It has its own word, not borrowed from Chinese."
+   ]
+  ],
+  "131A": [
+   "Counting",
+   [
+    "In tens, like we do.",
+    "In tens and in twenties.",
+    "In twenties – on fingers and toes.",
+    "In groups other than tens.",
+    "On the body: you point to fingers, wrist, elbow, shoulder…",
+    "It has only a few numbers; bigger amounts are described in other ways."
+   ]
+  ],
+  "129A": [
+   "Hand and arm",
+   [
+    "The same word for both.",
+    "Two different words, like in English."
+   ]
+  ],
+  "133A": [
+   "Colours",
+   [
+    "Only 3–4 basic colour words.",
+    "5 basic colour words.",
+    "6 basic colour words.",
+    "7 basic colour words.",
+    "8 basic colour words.",
+    "9–10 basic colour words.",
+    "11 basic colour words, just like English."
+   ]
+  ],
+  "30A": [
+   "Genders",
+   [
+    "No grammatical gender at all.",
+    "2 grammatical genders, like French.",
+    "3 grammatical genders, like German.",
+    "4 grammatical genders.",
+    "5 or more grammatical genders."
+   ]
+  ],
+  "49A": [
+   "Cases",
+   [
+    "No cases – word endings don't change.",
+    "2 cases.",
+    "3 cases.",
+    "4 cases, like German.",
+    "5 cases.",
+    "6–7 cases.",
+    "8–9 cases.",
+    "10 or more cases!",
+    "Hardly any cases."
+   ]
+  ],
+  "19A": [
+   "Unusual sounds",
+   [
+    "",
+    "Click sounds – made by snapping the tongue.",
+    "Sounds made with the lips and the back of the tongue at once, like “kp” and “gb”.",
+    "Deep throat sounds made far back in the throat.",
+    "“th” sounds, like in English.",
+    "Clicks, throat sounds and “th”.",
+    "Throat sounds and “th”."
+   ]
+  ]
+ }
 }

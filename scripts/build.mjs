@@ -12,6 +12,7 @@ const json = p => JSON.parse(cti(p));
 const jazykyAtlasu = json("data/languages.json");
 const nazvyZemi = json("data/country-names.json");
 const glottolog = json("data/glottolog.json");
+const podrobnosti = json("data/podrobnosti.json");
 const rodinyCz = json("data/glottolog-families.cs.json");
 const svet = cti("data/countries-110m.json");
 const knihovny = ["vendor/d3-array.min.js", "vendor/d3-geo.min.js", "vendor/topojson-client.min.js"].map(cti);
@@ -45,7 +46,7 @@ const JAZYKY = jazykyAtlasu.map(j => {
 const REJSTRIK = {
   r: { cs: glottolog.rodiny.map(r => rodinyCz[r] || r), en: glottolog.rodiny.map(r => RODINY_EN[r] || r) },
   m: { cs: glottolog.makro.map(m => (m && UI.cs.makro[m]) || ""), en: glottolog.makro.map(m => (m && UI.en.makro[m]) || "") },
-  b: glottolog.body
+  b: glottolog.body.map(b => b.slice(0, 6))   // 7. pole (glottocode) stránka nepotřebuje
 };
 
 function sestav(lang, { odkazJinam, artefakt }) {
@@ -65,7 +66,9 @@ function sestav(lang, { odkazJinam, artefakt }) {
     .replace("/*__SVET__*/null", () => doSkriptu(svet))
     .replace("/*__JAZYKY__*/null", () => doSkriptu(JAZYKY))
     .replace("/*__STATY__*/null", () => doSkriptu(nazvyZemi))
-    .replace("/*__REJSTRIK__*/null", () => doSkriptu(REJSTRIK));
+    .replace("/*__REJSTRIK__*/null", () => doSkriptu(REJSTRIK))
+    .replace("/*__PODROBNOSTI__*/null", () => doSkriptu({ wals: podrobnosti.wals, uzly: podrobnosti.uzly, nad: podrobnosti.nad,
+                                                          staty: podrobnosti.staty, udhr: podrobnosti.udhr, radky: podrobnosti.radky }));
   const skripty = knihovny.map(k => `<script>${k}</script>`).join("\n") + `\n<script>${skript}</script>`;
 
   const hlavicka =

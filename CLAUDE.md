@@ -34,6 +34,14 @@ Nasazení přes Netlify z větve `main` podle `netlify.toml` (build `npm run che
 - Areál jazyka = seznam kruhů `[délka, šířka, poloměr ve stupních]`, kreslí se oříznutý na pevninu.
   Státy v `zeme` se kreslí celé – jen tam, kde se jazykem opravdu mluví v celém státě.
 
+## Podrobnosti k tečkám
+
+`scripts/podrobnosti.mjs` spojí k 7 967 tečkám data z Glottologu (ohrožení, popsanost, příbuzenstvo, státy,
+nářečí), WALS (stavba jazyka), PHOIBLE (hlásky), UDHR (ukázka textu) a CLDR (české názvy, odhad uživatelů).
+Zdroje stahuje do `.cache/` (není v gitu). Pořadí: `node scripts/glottolog.mjs`, pak `node scripts/podrobnosti.mjs`.
+Příbuzenstvo je uložené jako strom (uzel zná rodiče), cestu a „nejbližší příbuzné“ dopočítá stránka.
+Údaj bez doloženého zdroje nepřidávat – proto chybí počty mluvčích u většiny teček (Wikidata jsou odsud blokovaná).
+
 ## Barvy
 
 - Barvy rodin (`--r-*`) prošly validátorem palet (skill dataviz) ve světlém (bílý panel) i tmavém režimu.

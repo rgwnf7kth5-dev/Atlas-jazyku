@@ -10,6 +10,9 @@ const ZDROJ = "https://raw.githubusercontent.com/glottolog/glottolog-cldf/master
 const text = process.argv[2]
   ? fs.readFileSync(process.argv[2], "utf8")
   : await (await fetch(ZDROJ)).text();
+// kopie pro scripts/podrobnosti.mjs, ať se nestahuje dvakrát
+fs.mkdirSync(path.join(KOREN, ".cache"), { recursive: true });
+fs.writeFileSync(path.join(KOREN, ".cache/glottolog-languages.csv"), text);
 
 function nactiCsv(t) {
   const radky = []; let pole = [], bunka = "", uvozovky = false;
@@ -58,7 +61,8 @@ const body = jazyky.map(r => {
     Math.round(+r[ix.Latitude] * 100) / 100,
     index(rodiny, rodinyIx, jmenoRodiny[r[ix.Family_ID]] || "Isolate"),
     index(makro, makroIx, MAKRO[(r[ix.Macroarea] || "").split(";")[0]] || ""),
-    isoNaId[kod] || ""
+    isoNaId[kod] || "",
+    r[ix.Glottocode]          // jen pro propojování dat (scripts/podrobnosti.mjs), do stránky se nevkládá
   ];
 });
 
