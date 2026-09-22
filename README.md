@@ -13,6 +13,11 @@ Otáčivý glóbus se všemi jazyky světa, udělaný pro děti. Česky i anglic
 Stačí otevřít `dist/index.html` (česky) nebo `dist/en/index.html` (anglicky) v prohlížeči.
 Stránka nic nestahuje z cizích serverů kromě písem Google Fonts (bez nich funguje taky).
 
+## Web (Netlify)
+
+Netlify si stránku sestaví sám podle `netlify.toml`: spustí `npm run check` a zveřejní složku `dist/`.
+Česká verze je na hlavní adrese, anglická na `/en/`. Každý push do větve `main` web obnoví.
+
 ## Úpravy
 
 Potřeba je jen [Node.js](https://nodejs.org) 20 nebo novější, žádné další balíčky.

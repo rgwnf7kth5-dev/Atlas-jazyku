@@ -1,0 +1,20 @@
+# Netlify si stránku při každém pushi do main sestaví sám.
+# Když validace dat najde chybu, sestavení selže a na webu zůstane poslední dobrá verze.
+[build]
+  command = "npm run check"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# /en bez lomítka i bez index.html vede na anglickou verzi
+[[redirects]]
+  from = "/en"
+  to = "/en/"
+  status = 301
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

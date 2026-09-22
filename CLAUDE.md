@@ -10,6 +10,11 @@ npm run check      # validace + sestavení; spusť vždy před commitem
 npm run build -- --artefakt build   # navíc fragmenty pro publikování jako artefakt (ODKAZ_CS, ODKAZ_EN)
 ```
 
+## Web
+
+Nasazení přes Netlify z větve `main` podle `netlify.toml` (build `npm run check`, publikuje `dist/`).
+Česky na `/`, anglicky na `/en/`. Když validace spadne, Netlify nový web nezveřejní – tak to má být.
+
 ## Struktura a pravidla
 
 - `data/*.json` je jediný zdroj pravdy. `dist/` se generuje, needituj ho ručně.
