@@ -96,6 +96,28 @@ function obnovSbirku(){
   $("sbirka-text").textContent = n + " " + slovo;
 }
 
+/* ---------- denní a noční vzhled (volba se pamatuje; výchozí je noc) ---------- */
+let denni = document.documentElement.getAttribute("data-theme") === "light";
+function obnovPrepinacMotivu(){
+  $("ikona-rezim").setAttribute("href", denni ? "#i-mesic" : "#i-slunce");
+  $("prepinac").setAttribute("aria-pressed", denni ? "true" : "false");
+  const meta = document.querySelector('meta[name="theme-color"]');
+  if (meta) meta.setAttribute("content", denni ? "#E4EEFF" : "#02030A");
+}
+function nastavMotiv(den){
+  denni = !!den;
+  if (denni) document.documentElement.setAttribute("data-theme", "light"); else document.documentElement.removeAttribute("data-theme");
+  try { localStorage.setItem("atlas-motiv", denni ? "light" : "dark"); } catch (e) {}
+  obnovPrepinacMotivu();
+  kresliHvezdy();
+  if (globusOk && ctx) {
+    nactiBarvy(); koule.klic = ""; koule.kandidat = ""; SVETLA = null;
+    potrebaKresli = true; teckyZmeneny = true; popiskyZmeneny = true; ozivit();
+  }
+}
+$("prepinac").addEventListener("click", function(){ nastavMotiv(!denni); });
+obnovPrepinacMotivu();
+
 /* ---------- police ---------- */
 const seznam = $("seznam");
 function pridejHvezdu(tl){
@@ -199,6 +221,7 @@ function rgb(hex){
 function nactiBarvy(){
   const s = getComputedStyle(document.documentElement);
   ["tecka-pevnina", "tecka-jazyk", "tecka-bod", "cyan", "fialova", "cervena", "hvezda", "koule1", "koule2", "popisek", "popisek-lem",
+   "atmosfera", "atmosfera2", "sit", "hranice", "okraj-koule", "prstenec", "prstenec2", "zamerovac-lem",
    "r-ie", "r-st", "r-an", "r-afro", "r-nk", "r-ost"].forEach(function(k){ barvy[k] = s.getPropertyValue("--" + k).trim(); });
 }
 
@@ -228,8 +251,10 @@ const VS = [
   "uniform float u_l0, u_sf0, u_cf0, u_r, u_dpr;",
   "uniform vec2 u_stred, u_rozliseni;",
   "uniform vec4 u_b0, u_b1, u_b2, u_b3, u_vel, u_mek;",
-  "varying vec4 v_barva; varying float v_mek;",
+  "uniform float u_jadro;",
+  "varying vec4 v_barva; varying float v_mek; varying float v_jadro;",
   "void main(){",
+  "  v_jadro = u_jadro;",
   "  float dl = a_pos.x - u_l0, sl = sin(a_pos.y), cl = cos(a_pos.y), cdl = cos(dl);",
   "  float z = sl * u_sf0 + cl * u_cf0 * cdl;",
   "  vec2 p = u_stred + vec2(cl * sin(dl), -(u_cf0 * sl - u_sf0 * cl * cdl)) * u_r;",
@@ -244,12 +269,12 @@ const VS = [
   "}"].join("\n");
 const FS = [
   "precision mediump float;",
-  "varying vec4 v_barva; varying float v_mek;",
+  "varying vec4 v_barva; varying float v_mek; varying float v_jadro;",
   "void main(){",
   "  vec2 q = gl_PointCoord * 2.0 - 1.0; float d = dot(q, q);",
   "  if (d > 1.0) discard;",
   "  float a = mix(1.0 - smoothstep(0.45, 1.0, d), exp(-d * 4.0), v_mek) * v_barva.a;",
-  "  vec3 c = mix(v_barva.rgb, vec3(1.0), v_mek * smoothstep(0.14, 0.0, d) * 0.85);",
+  "  vec3 c = mix(v_barva.rgb, vec3(1.0), v_mek * smoothstep(0.14, 0.0, d) * v_jadro);",
   "  gl_FragColor = vec4(c * a, a);",
   "}"].join("\n");
 function pripravGl(){
@@ -268,7 +293,7 @@ function pripravGl(){
     if (!gl.getProgramParameter(glProg, gl.LINK_STATUS)) throw new Error(gl.getProgramInfoLog(glProg));
   } catch (e) { console.error("WebGL shader:", e); gl = null; return false; }
   gl.useProgram(glProg);
-  ["u_l0", "u_sf0", "u_cf0", "u_r", "u_dpr", "u_stred", "u_rozliseni", "u_b0", "u_b1", "u_b2", "u_b3", "u_vel", "u_mek"]
+  ["u_l0", "u_sf0", "u_cf0", "u_r", "u_dpr", "u_stred", "u_rozliseni", "u_b0", "u_b1", "u_b2", "u_b3", "u_vel", "u_mek", "u_jadro"]
     .forEach(function(k){ glU[k] = gl.getUniformLocation(glProg, k); });
   glA.pos = gl.getAttribLocation(glProg, "a_pos"); glA.flag = gl.getAttribLocation(glProg, "a_flag");
   const vrstva = function(lon, lat, priznaky){
@@ -314,17 +339,19 @@ function kresliBodyGl(){
   };
   /* pevnina: obyčejné míchání */
   gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
-  barvaGl(glU.u_b0, barvy["tecka-pevnina"], 0.72); barvaGl(glU.u_b1, vb, 1);
+  gl.uniform1f(glU.u_jadro, denni ? 0.35 : 0.85);
+  barvaGl(glU.u_b0, barvy["tecka-pevnina"], denni ? 0.8 : 0.72); barvaGl(glU.u_b1, vb, 1);
   barvaGl(glU.u_b2, vb, 0.95); barvaGl(glU.u_b3, vb, 0.95);
   gl.uniform4f(glU.u_vel, v.pev, v.pevVyber, v.pevVyber, v.pevVyber);
   gl.uniform4f(glU.u_mek, 0, 0.9, 0.9, 0.9);
   kresli(glPev);
-  /* světélka jazyků: sčítají se, takže hustá místa září víc */
-  gl.blendFunc(gl.ONE, gl.ONE);
-  barvaGl(glU.u_b0, barvy["tecka-jazyk"], 0.8); barvaGl(glU.u_b1, vb, 1);
+  /* světélka jazyků: v noci se sčítají, takže hustá místa září víc; ve dne by sčítání na světlé kouli zmizelo */
+  if (!denni) gl.blendFunc(gl.ONE, gl.ONE);
+  barvaGl(glU.u_b0, barvy["tecka-jazyk"], denni ? 0.9 : 0.8); barvaGl(glU.u_b1, vb, 1);
   barvaGl(glU.u_b2, barvy.fialova, 1); barvaGl(glU.u_b3, barvy["tecka-bod"], 1);
-  gl.uniform4f(glU.u_vel, v.jaz, v.jaz * 2.6, v.jaz * 2.1, v.jaz * 2.8);
-  gl.uniform4f(glU.u_mek, 1, 1, 1, 1);
+  if (denni) gl.uniform4f(glU.u_vel, v.jaz * 0.62, v.jaz * 1.9, v.jaz * 1.6, v.jaz * 2);
+  else gl.uniform4f(glU.u_vel, v.jaz, v.jaz * 2.6, v.jaz * 2.1, v.jaz * 2.8);
+  if (denni) gl.uniform4f(glU.u_mek, 0.25, 0.55, 0.55, 0.4); else gl.uniform4f(glU.u_mek, 1, 1, 1, 1);
   kresli(glJaz);
 }
 
@@ -436,12 +463,12 @@ function zoomProJazyk(j){
 const koule = {platno: null, klic: "", kandidat: ""};
 function kresliKouli(c, cx, cy, r){
   let g = c.createRadialGradient(cx, cy, r * 0.9, cx, cy, r * 1.36);
-  g.addColorStop(0, "rgba(53,214,255,.5)"); g.addColorStop(0.35, "rgba(80,120,255,.16)"); g.addColorStop(1, "rgba(53,214,255,0)");
+  g.addColorStop(0, barvy.atmosfera); g.addColorStop(0.35, barvy.atmosfera2); g.addColorStop(1, "rgba(0,0,0,0)");
   c.fillStyle = g; c.beginPath(); c.arc(cx, cy, r * 1.36, 0, 6.283185); c.fill();
   g = c.createRadialGradient(cx - r * 0.3, cy - r * 0.35, r * 0.1, cx, cy, r);
   g.addColorStop(0, barvy.koule1); g.addColorStop(1, barvy.koule2);
   c.fillStyle = g; c.beginPath(); c.arc(cx, cy, r, 0, 6.283185); c.fill();
-  c.beginPath(); c.arc(cx, cy, r, 0, 6.283185); c.strokeStyle = "rgba(127,233,255,.4)"; c.lineWidth = 1.2; c.stroke();
+  c.beginPath(); c.arc(cx, cy, r, 0, 6.283185); c.strokeStyle = barvy["okraj-koule"]; c.lineWidth = 1.2; c.stroke();
 }
 function kresliPodklad(){
   const c = ctxPodklad, cx = sirka / 2 + posun, cy = vyska / 2, r = polomer;
@@ -458,10 +485,10 @@ function kresliPodklad(){
     c.setTransform(1, 0, 0, 1, 0, 0); c.drawImage(koule.platno, 0, 0); c.setTransform(dpr, 0, 0, dpr, 0, 0);
   } else kresliKouli(c, cx, cy, r);
   c.lineWidth = 1;
-  c.beginPath(); cestaPodklad(sit); c.strokeStyle = "rgba(127,233,255,.07)"; c.stroke();
+  c.beginPath(); cestaPodklad(sit); c.strokeStyle = barvy.sit; c.stroke();
   if (zoom >= 1.4) {                   /* hranice států až při přiblížení – z dálky stačí tečky */
     c.beginPath(); ZEME.forEach(function(f){ cestaPodklad(f); });
-    c.strokeStyle = "rgba(120,170,255," + Math.min(0.34, (zoom - 1.4) * 0.12).toFixed(3) + ")"; c.lineWidth = 0.8; c.stroke();
+    c.strokeStyle = "rgba(" + barvy.hranice + "," + Math.min(0.34, (zoom - 1.4) * 0.12).toFixed(3) + ")"; c.lineWidth = 0.8; c.stroke();
   }
 }
 
@@ -596,39 +623,35 @@ function svetylko(barva, vel){
 }
 let SVETLA = null;
 const NAKLON = -0.38;
-function prstenec(c, cas, predni, cx, cy){
+function prstenec(c, predni, cx, cy){
   const alfa = Math.max(0, Math.min(1, (1.75 - zoom) / 0.55));
   if (!alfa) return;
   const rx = polomer * 1.3, ry = rx * 0.2;
   if (predni) {             // přední půlka: přes kouli jen slabě, ať nezakrývá tečky
     c.save(); c.beginPath(); c.arc(cx, cy, polomer, 0, 6.283185); c.clip();
-    prstenecKresli(c, cas, true, cx, cy, alfa * 0.4, rx, ry, true);
+    prstenecKresli(c, true, cx, cy, alfa * 0.4, rx, ry);
     c.restore();
   }
   c.save();
   c.beginPath(); c.rect(0, 0, sirka, vyska); c.arc(cx, cy, polomer, 0, 6.283185, true); c.clip();   // mimo kouli
-  prstenecKresli(c, cas, predni, cx, cy, alfa, rx, ry, true);
+  prstenecKresli(c, predni, cx, cy, alfa, rx, ry);
   c.restore();
 }
-function prstenecKresli(c, cas, predni, cx, cy, alfa, rx, ry, svetlo){
+function prstenecKresli(c, predni, cx, cy, alfa, rx, ry){
   c.save();
   c.translate(cx, cy); c.rotate(NAKLON); c.globalAlpha = alfa;
-  c.strokeStyle = "rgba(127,233,255,.34)"; c.lineWidth = 1;
+  c.strokeStyle = barvy.prstenec; c.lineWidth = 1;
   c.beginPath(); c.ellipse(0, 0, rx, ry, 0, predni ? 0 : Math.PI, predni ? Math.PI : 2 * Math.PI); c.stroke();
-  c.strokeStyle = "rgba(178,107,255,.16)"; c.lineWidth = 5;
+  c.strokeStyle = barvy.prstenec2; c.lineWidth = 5;
   c.beginPath(); c.ellipse(0, 0, rx * 1.035, ry * 1.035, 0, predni ? 0 : Math.PI, predni ? Math.PI : 2 * Math.PI); c.stroke();
-  const a = bezPohybu.matches ? 0.9 : (cas * 0.00032) % 6.283185;
-  if (svetlo && (a < Math.PI) === predni) {
-    c.globalCompositeOperation = "lighter";
-    c.drawImage(SVETLA.cyan, Math.cos(a) * rx - 9, Math.sin(a) * ry - 9, 18, 18);
-  }
   c.restore();
 }
 function kresliPopredi(cas){
   const c = ctx, cx = sirka / 2 + posun, cy = vyska / 2;
   c.clearRect(0, 0, sirka, vyska);
-  if (!SVETLA) SVETLA = {cyan: svetylko("rgba(90,220,255,.9)", 32), bila: svetylko("rgba(255,255,255,.9)", 32)};
-  prstenec(c, cas, false, cx, cy);
+  if (!SVETLA) SVETLA = {bila: svetylko(denni ? "rgba(10,119,173,.55)" : "rgba(255,255,255,.9)", 32)};
+  const skladani = denni ? "source-over" : "lighter";
+  prstenec(c, false, cx, cy);
 
   const l0 = -rot[0] * R, f0 = -rot[1] * R, sf0 = Math.sin(f0), cf0 = Math.cos(f0), cl0 = Math.cos(l0), sl0 = Math.sin(l0);
   const vb = barvaVyberu();
@@ -655,7 +678,7 @@ function kresliPopredi(cas){
     c.globalAlpha = 1;
     if (!bezPohybu.matches) {
       const f = ((cas * 0.00042) + k * 0.19) % 1, b = body[Math.floor(f * (body.length - 1))];
-      if (promitni(b, p)) { c.globalCompositeOperation = "lighter"; c.drawImage(SVETLA.bila, p[0] - 10, p[1] - 10, 20, 20); c.globalCompositeOperation = "source-over"; }
+      if (promitni(b, p)) { c.globalCompositeOperation = skladani; c.drawImage(SVETLA.bila, p[0] - 10, p[1] - 10, 20, 20); c.globalCompositeOperation = "source-over"; }
     }
   });
 
@@ -671,23 +694,23 @@ function kresliPopredi(cas){
         c.beginPath(); c.arc(x, y, 10 + faze * 26, 0, 6.283185);
         c.strokeStyle = vb; c.globalAlpha = 1 - faze; c.lineWidth = 2; c.stroke(); c.globalAlpha = 1;
       }
-      c.globalCompositeOperation = "lighter"; c.drawImage(SVETLA.bila, x - 12, y - 12, 24, 24); c.globalCompositeOperation = "source-over";
+      c.globalCompositeOperation = skladani; c.drawImage(SVETLA.bila, x - 12, y - 12, 24, 24); c.globalCompositeOperation = "source-over";
       c.beginPath(); c.arc(x, y, 10, 0, 6.283185);
-      c.lineWidth = 4; c.strokeStyle = "rgba(2,4,14,.7)"; c.stroke();
+      c.lineWidth = 4; c.strokeStyle = barvy["zamerovac-lem"]; c.stroke();
       c.lineWidth = 2; c.strokeStyle = vb; c.stroke();
       c.beginPath();
       [[0, -1], [0, 1], [-1, 0], [1, 0]].forEach(function(d){ c.moveTo(x + d[0] * 13, y + d[1] * 13); c.lineTo(x + d[0] * 19, y + d[1] * 19); });
       c.lineWidth = 1.6; c.stroke();
     }
   }
-  prstenec(c, cas, true, cx, cy);
+  prstenec(c, true, cx, cy);
 }
-/* okrasný pohyb (prstenec, světla na obloucích, obvod karty) po chvíli bez dotyku usne – šetří baterii */
+/* okrasný pohyb (světla na obloucích, obvod karty) po chvíli bez dotyku usne – šetří baterii */
 let zivoDo = 0, spi = false;
 function ozivit(){ zivoDo = performance.now() + 20000; }
 function animujePopredi(cas){
   if (bezPohybu.matches) return false;
-  return pulsDo > cas || (cas < zivoDo && (zoom < 1.75 || oblouky.length > 0));
+  return pulsDo > cas || (cas < zivoDo && oblouky.length > 0);
 }
 
 /* ---------- hvězdné nebe za stránkou (kreslí se jen při změně velikosti) ---------- */
@@ -696,6 +719,7 @@ function kresliHvezdy(){
   hv.width = Math.round(w * d); hv.height = Math.round(h * d);
   const g = hv.getContext("2d"); if (!g) return;
   g.setTransform(d, 0, 0, d, 0, 0);
+  if (denni) return;                   // ve dne hvězdy nesvítí
   let semeno = 11;
   const nahoda = function(){ semeno = (semeno * 16807) % 2147483647; return semeno / 2147483647; };
   const pocet = Math.min(900, Math.round(w * h / 2400));

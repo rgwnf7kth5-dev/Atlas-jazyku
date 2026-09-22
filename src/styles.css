@@ -7,11 +7,18 @@
   --sklo:rgba(14,22,56,.52); --sklo2:rgba(20,30,74,.66); --sklo-okraj:rgba(150,205,255,.22); --sklo-lesk:rgba(255,255,255,.12);
   --text:#EAF4FF; --text2:#A3B6D8; --text3:#6D80A8;
   --cyan:#35D6FF; --fialova:#B26BFF; --hvezda:#FFD45E; --cervena:#FF6B5E;
-  --tvrdy-stin:rgba(0,0,0,.45);
-  /* glóbus */
-  --koule1:#0B1A45; --koule2:#02040E; --atmosfera:rgba(53,214,255,.5);
+  --pozadi:radial-gradient(120% 90% at 60% 35%, #0B1433, #02030A 72%) fixed, #02030A;
+  --linka:rgba(150,205,255,.16); --linka2:rgba(150,205,255,.3); --plocha:rgba(255,255,255,.05); --plocha2:rgba(255,255,255,.08);
+  --sklo-tl:rgba(14,22,56,.55); --vstup:rgba(3,6,20,.45); --stin:rgba(0,0,0,.7);
+  --cyan-slabe:rgba(53,214,255,.14); --cyan-okraj:rgba(53,214,255,.4); --cyan-zare:rgba(53,214,255,.65);
+  --aktivni-text:#DFF8FF; --na-cyan:#050818; --hud-linka:rgba(127,233,255,.55);
+  --nadpis-grad:linear-gradient(90deg,#FFFFFF,#BFF3FF 55%,#DDC6FF);
+  /* glóbus (čte je i app.js) */
+  --koule1:#0B1A45; --koule2:#02040E; --atmosfera:rgba(53,214,255,.5); --atmosfera2:rgba(80,120,255,.16);
+  --sit:rgba(127,233,255,.07); --hranice:120,170,255; --okraj-koule:rgba(127,233,255,.4);
+  --prstenec:rgba(127,233,255,.34); --prstenec2:rgba(178,107,255,.16);
   --tecka-pevnina:#3F6FB8; --tecka-jazyk:#5ADCFF; --tecka-bod:#FFFFFF;
-  --popisek:#EAF4FF; --popisek-lem:rgba(2,4,14,.88); --prstenec:rgba(127,233,255,.34);
+  --popisek:#EAF4FF; --popisek-lem:rgba(2,4,14,.88); --zamerovac-lem:rgba(2,4,14,.7);
   /* barvy jazykových rodin a text na nich */
   --r-ie:#5E92EC; --r-st:#E4645A; --r-an:#12A3BC; --r-afro:#A5761A; --r-nk:#21AE70; --r-ost:#A268DC;
   --t-ie:#070A1E; --t-st:#070A1E; --t-an:#070A1E; --t-afro:#070A1E; --t-nk:#070A1E; --t-ost:#070A1E;
@@ -19,12 +26,34 @@
   --pismo-text:"Outfit",system-ui,"Segoe UI",sans-serif;
   --pismo-data:"JetBrains Mono",ui-monospace,"Cascadia Mono",monospace;
 }
+/* Denní vzhled (přání uživatele 22. 9. 2026): světlá obloha, bílé sklo, světlá planeta.
+   Barvy rodin jsou světlá sada, která prošla validátorem palet (skill dataviz) na bílém podkladu;
+   zlatá (afro) má na bílé kontrast jen 2,4 : 1, proto nese tmavý text. Pořadí rodin neměnit. */
+:root[data-theme="light"]{
+  color-scheme:light;
+  --pozadi:radial-gradient(110% 80% at 72% 0%, #FFFFFF, #E4EEFF 45%, #C8DAF8) fixed, #C8DAF8;
+  --sklo:rgba(255,255,255,.5); --sklo2:rgba(255,255,255,.74); --sklo-okraj:rgba(255,255,255,.9); --sklo-lesk:rgba(255,255,255,.95);
+  --text:#0E1838; --text2:#4A5A80; --text3:#66759B;
+  --cyan:#0A77AD; --fialova:#8A44C8; --hvezda:#D99A00; --cervena:#D8453A;
+  --linka:rgba(40,80,160,.14); --linka2:rgba(40,80,160,.28); --plocha:rgba(40,80,160,.05); --plocha2:rgba(40,80,160,.1);
+  --sklo-tl:rgba(255,255,255,.62); --vstup:rgba(255,255,255,.75); --stin:rgba(40,70,140,.28);
+  --cyan-slabe:rgba(10,119,173,.1); --cyan-okraj:rgba(10,119,173,.45); --cyan-zare:rgba(10,119,173,.35);
+  --aktivni-text:#064E73; --na-cyan:#FFFFFF; --hud-linka:rgba(10,119,173,.5);
+  --nadpis-grad:linear-gradient(90deg,#0E1838,#1F4FA8 55%,#6A36B0);
+  --koule1:#FFFFFF; --koule2:#B8CEEE; --atmosfera:rgba(90,170,255,.42); --atmosfera2:rgba(140,190,255,.16);
+  --sit:rgba(40,90,170,.1); --hranice:40,80,160; --okraj-koule:rgba(40,110,200,.45);
+  --prstenec:rgba(30,90,180,.3); --prstenec2:rgba(138,68,200,.12);
+  --tecka-pevnina:#8EA5CC; --tecka-jazyk:#0B7FBF; --tecka-bod:#0E1838;
+  --popisek:#0E1838; --popisek-lem:rgba(255,255,255,.92); --zamerovac-lem:rgba(255,255,255,.85);
+  --r-ie:#2E63D6; --r-st:#E2544A; --r-an:#0A9BB5; --r-afro:#E09A18; --r-nk:#0A7541; --r-ost:#8A44C8;
+  --t-ie:#FFFFFF; --t-st:#FFFFFF; --t-an:#FFFFFF; --t-afro:#161A3A; --t-nk:#FFFFFF; --t-ost:#FFFFFF;
+}
 *,*::before,*::after{box-sizing:border-box}
 [hidden]{display:none!important}
 html,body{height:100%}
 body{
   margin:0; color:var(--text); font-family:var(--pismo-text); font-size:15px; line-height:1.5;
-  background:radial-gradient(120% 90% at 60% 35%, var(--vesmir1), var(--vesmir2) 72%) fixed, var(--vesmir2);
+  background:var(--pozadi);
   -webkit-font-smoothing:antialiased;
 }
 button{font:inherit;color:inherit}
@@ -36,7 +65,7 @@ button{font:inherit;color:inherit}
   background:linear-gradient(150deg, var(--sklo2), var(--sklo) 60%);
   backdrop-filter:blur(18px) saturate(160%); -webkit-backdrop-filter:blur(18px) saturate(160%);
   border:1px solid var(--sklo-okraj);
-  box-shadow:inset 0 1px 0 var(--sklo-lesk), 0 18px 50px -20px rgba(0,0,0,.7);
+  box-shadow:inset 0 1px 0 var(--sklo-lesk), 0 18px 50px -20px var(--stin);
 }
 
 /* ---------- kostra ---------- */
@@ -46,14 +75,18 @@ button{font:inherit;color:inherit}
 .znak{width:44px;height:44px;flex:none}
 .nadpisy{margin-right:auto; min-width:0}
 h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8vw,1.8rem); line-height:1; margin:0; letter-spacing:.01em;
-  background:linear-gradient(90deg,#FFFFFF,#BFF3FF 55%,#DDC6FF); -webkit-background-clip:text; background-clip:text; color:transparent}
+  background:var(--nadpis-grad); -webkit-background-clip:text; background-clip:text; color:transparent}
 .podnadpis{margin:3px 0 0; font-family:var(--pismo-data); font-size:.7rem; letter-spacing:.06em; color:var(--text2)}
 .sbirka{display:flex; align-items:center; gap:7px; margin:0; font-family:var(--pismo-data); font-size:.74rem; color:var(--text);
   padding:6px 12px; border-radius:999px; background:rgba(255,212,94,.08); border:1px solid rgba(255,212,94,.35)}
 .sbirka svg{width:15px;height:15px;flex:none;color:var(--hvezda); filter:drop-shadow(0 0 6px rgba(255,212,94,.7))}
 .jazyk-prepinac{height:38px; display:grid; place-items:center; padding:0 14px; border-radius:12px; text-decoration:none; color:var(--text);
-  font-weight:600; font-size:.84rem; background:rgba(255,255,255,.05); border:1px solid var(--sklo-okraj); transition:border-color .15s, box-shadow .15s}
-.jazyk-prepinac:hover{border-color:var(--cyan); box-shadow:0 0 18px -4px rgba(53,214,255,.6)}
+  font-weight:600; font-size:.84rem; background:var(--plocha); border:1px solid var(--sklo-okraj); transition:border-color .15s, box-shadow .15s}
+.jazyk-prepinac:hover{border-color:var(--cyan); box-shadow:0 0 18px -4px var(--cyan-zare)}
+.prepinac{width:38px; height:38px; flex:none; display:grid; place-items:center; cursor:pointer; border-radius:12px; padding:0;
+  background:var(--plocha); border:1px solid var(--sklo-okraj); transition:border-color .15s, box-shadow .15s}
+.prepinac:hover{border-color:var(--cyan); box-shadow:0 0 18px -4px var(--cyan-zare)}
+.prepinac svg{width:18px; height:18px; color:var(--hvezda)}
 
 .mriz{flex:1; min-height:0; display:grid; grid-template-columns:minmax(0,1fr) 380px; gap:12px}
 
@@ -63,7 +96,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
 #podklad{z-index:1} #gl{z-index:2} #popisky{z-index:3} #globus{z-index:4; touch-action:none; cursor:grab}
 #globus.tahne{cursor:grabbing}
 .hud{position:absolute; inset:14px; z-index:5; pointer-events:none; font-family:var(--pismo-data); font-size:.64rem; letter-spacing:.1em; color:var(--cyan)}
-.hud i{position:absolute; width:20px; height:20px; border:0 solid rgba(127,233,255,.55)}
+.hud i{position:absolute; width:20px; height:20px; border:0 solid var(--hud-linka)}
 .hud i:nth-of-type(1){left:0; top:0; border-width:1.5px 0 0 1.5px}
 .hud i:nth-of-type(2){right:0; top:0; border-width:1.5px 1.5px 0 0}
 .hud i:nth-of-type(3){left:0; bottom:0; border-width:0 0 1.5px 1.5px}
@@ -75,32 +108,32 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
 .volby{display:flex; gap:8px}
 .tl{display:inline-flex; align-items:center; gap:8px; cursor:pointer; white-space:nowrap; font-weight:600; font-size:.84rem;
   padding:9px 15px; border-radius:999px; color:var(--text);
-  background:rgba(14,22,56,.55); backdrop-filter:blur(14px) saturate(160%); -webkit-backdrop-filter:blur(14px) saturate(160%);
+  background:var(--sklo-tl); backdrop-filter:blur(14px) saturate(160%); -webkit-backdrop-filter:blur(14px) saturate(160%);
   border:1px solid var(--sklo-okraj); box-shadow:inset 0 1px 0 var(--sklo-lesk);
   transition:border-color .15s, box-shadow .15s, transform .15s}
-.tl:hover{border-color:var(--cyan); box-shadow:inset 0 1px 0 var(--sklo-lesk), 0 0 20px -4px rgba(53,214,255,.65)}
+.tl:hover{border-color:var(--cyan); box-shadow:inset 0 1px 0 var(--sklo-lesk), 0 0 20px -4px var(--cyan-zare)}
 .tl:active{transform:scale(.97)}
 .tl svg{width:16px;height:16px;flex:none}
 .tl.hlavni{background:linear-gradient(120deg,#35D6FF,#8F7BFF 60%,#B26BFF); color:#050818; border-color:transparent;
-  box-shadow:0 0 26px -6px rgba(90,160,255,.9)}
+  box-shadow:0 0 26px -6px var(--cyan-zare)}
 .tl.volba{padding:7px 13px; font-size:.78rem}
-.tl.volba[aria-pressed="true"]{background:rgba(53,214,255,.16); border-color:var(--cyan); color:#DFF8FF}
+.tl.volba[aria-pressed="true"]{background:var(--cyan-slabe); border-color:var(--cyan); color:var(--aktivni-text)}
 .tl.volba[aria-pressed="true"] svg{filter:drop-shadow(0 0 5px var(--cyan))}
 .tl.otacet[aria-pressed="true"] svg{animation:toceni 2.4s linear infinite}
 @keyframes toceni{to{transform:rotate(360deg)}}
 .zoom-ovl{display:flex; align-items:center; gap:2px; padding:3px; border-radius:999px;
-  background:rgba(14,22,56,.55); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border:1px solid var(--sklo-okraj)}
+  background:var(--sklo-tl); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border:1px solid var(--sklo-okraj)}
 .kolo{width:32px;height:32px; flex:none; display:grid; place-items:center; cursor:pointer; border:0; border-radius:50%;
-  background:rgba(255,255,255,.06); color:var(--text)}
-.kolo:hover{background:var(--cyan); color:#050818}
+  background:var(--plocha); color:var(--text)}
+.kolo:hover{background:var(--cyan); color:var(--na-cyan)}
 .kolo:disabled{opacity:.3; cursor:default}
-.kolo:disabled:hover{background:rgba(255,255,255,.06); color:var(--text)}
+.kolo:disabled:hover{background:var(--plocha); color:var(--text)}
 .kolo svg{width:14px;height:14px}
 .zoom-hod{min-width:46px; text-align:center; font-family:var(--pismo-data); font-size:.72rem; color:var(--cyan); font-variant-numeric:tabular-nums}
 
 .napoveda,.legenda{position:absolute; z-index:5; margin:0; font-size:.76rem; color:var(--text2); pointer-events:none;
-  padding:6px 12px; border-radius:14px; background:rgba(8,12,32,.5); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
-  border:1px solid rgba(150,205,255,.14)}
+  padding:6px 12px; border-radius:14px; background:var(--sklo-tl); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
+  border:1px solid var(--linka)}
 .napoveda{left:44px; top:16px; max-width:min(300px,50%)}
 .legenda{right:44px; bottom:34px; display:flex; align-items:center; gap:8px; max-width:min(320px,55%)}
 .legenda i{width:7px;height:7px;border-radius:50%; background:var(--tecka-jazyk); box-shadow:0 0 8px var(--tecka-jazyk); flex:none}
@@ -121,7 +154,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
 .karta h2{font-family:var(--pismo-nadpis); font-weight:700; font-size:1.4rem; line-height:1.1; margin:0; letter-spacing:.01em}
 .karta .domaci{font-size:.82rem; color:var(--text2); margin:2px 0 0}
 .zavrit{margin-left:auto; flex:none; width:32px;height:32px; border-radius:10px; cursor:pointer; display:grid; place-items:center;
-  background:rgba(255,255,255,.06); border:1px solid var(--sklo-okraj)}
+  background:var(--plocha); border:1px solid var(--sklo-okraj)}
 .zavrit:hover{border-color:var(--cyan)}
 .zavrit svg{width:12px;height:12px}
 .bublina{position:relative; border-radius:18px; padding:13px 14px 12px; text-align:center; margin-bottom:12px;
@@ -136,7 +169,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
 .prehraj svg{width:14px;height:14px}
 .stav{margin:9px 0 0; font-size:.76rem; line-height:1.35; text-align:left; background:rgba(7,10,30,.88); color:#EAF4FF; border-radius:10px; padding:6px 9px}
 .udaje{display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:16px 0 11px}
-.udaj{background:rgba(255,255,255,.04); border:1px solid rgba(150,205,255,.16); border-radius:13px; padding:7px 10px}
+.udaj{background:var(--plocha); border:1px solid var(--linka); border-radius:13px; padding:7px 10px}
 .udaj dt{margin:0; font-family:var(--pismo-data); font-size:.6rem; letter-spacing:.1em; text-transform:uppercase; color:var(--text3)}
 .udaj dd{margin:2px 0 0; font-weight:600; font-size:.95rem; font-variant-numeric:tabular-nums}
 .udaj dd.rodina-txt{font-size:.8rem; line-height:1.25}
@@ -144,11 +177,11 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
 .fakt b{display:block; font-family:var(--pismo-data); font-weight:400; font-size:.6rem; letter-spacing:.12em; text-transform:uppercase; color:var(--text3); margin-bottom:3px}
 .kde > span{font-family:var(--pismo-data); font-size:.6rem; letter-spacing:.12em; text-transform:uppercase; color:var(--text3)}
 .staty{display:flex; flex-wrap:wrap; gap:5px; margin:6px 0 0; padding:0; list-style:none}
-.staty li{font-size:.76rem; padding:2px 9px; border-radius:999px; background:rgba(255,255,255,.05); border:1px solid rgba(150,205,255,.18)}
+.staty li{font-size:.76rem; padding:2px 9px; border-radius:999px; background:var(--plocha); border:1px solid var(--linka)}
 .staty li.vic{background:transparent; border-style:dashed; color:var(--text2)}
-.rejstrik-pozn{margin:0 0 11px; font-size:.85rem; line-height:1.5; background:rgba(255,255,255,.04); border:1px dashed rgba(150,205,255,.25); border-radius:14px; padding:10px 12px}
+.rejstrik-pozn{margin:0 0 11px; font-size:.85rem; line-height:1.5; background:var(--plocha); border:1px dashed var(--linka2); border-radius:14px; padding:10px 12px}
 .odznak{display:inline-block; font-family:var(--pismo-data); font-size:.58rem; letter-spacing:.1em; text-transform:uppercase;
-  padding:3px 9px; border-radius:999px; background:rgba(53,214,255,.08); border:1px solid rgba(53,214,255,.3); color:var(--cyan); margin-top:5px}
+  padding:3px 9px; border-radius:999px; background:var(--cyan-slabe); border:1px solid var(--cyan-okraj); color:var(--cyan); margin-top:5px}
 
 /* ---------- podrobnosti o jazyce ze světového rejstříku ---------- */
 .podrobnosti{display:flex; flex-direction:column; gap:13px; margin-bottom:4px}
@@ -156,11 +189,11 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
 .podrobnosti p{margin:0; font-size:.88rem; line-height:1.45}
 .podrobnosti .pozn{font-size:.72rem; color:var(--text2); margin-top:3px}
 .ohrozeni{display:flex; gap:4px; margin:2px 0 7px}
-.ohrozeni i{flex:1; height:7px; border-radius:4px; background:rgba(255,255,255,.08)}
-.ohrozeni i.plny{background:linear-gradient(90deg,var(--cyan),var(--fialova)); box-shadow:0 0 10px -2px rgba(53,214,255,.8)}
+.ohrozeni i{flex:1; height:7px; border-radius:4px; background:var(--plocha2)}
+.ohrozeni i.plny{background:linear-gradient(90deg,var(--cyan),var(--fialova)); box-shadow:0 0 10px -2px var(--cyan-zare)}
 .ohrozeni-nazev{font-weight:700}
 .dvojice{display:grid; grid-template-columns:1fr 1fr; gap:8px}
-.ukazka{margin:0; padding:10px 12px; border-radius:14px; background:rgba(255,255,255,.04); border:1px solid rgba(150,205,255,.18);
+.ukazka{margin:0; padding:10px 12px; border-radius:14px; background:var(--plocha); border:1px solid var(--linka);
   font-family:"Noto Sans","Noto Sans Arabic","Noto Sans Devanagari","Noto Sans CJK SC","Segoe UI",system-ui,sans-serif; font-size:.92rem; line-height:1.5}
 .vlastnosti{margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:7px}
 .vlastnosti li{display:grid; grid-template-columns:94px 1fr; gap:8px; font-size:.85rem; line-height:1.4}
@@ -173,31 +206,31 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
 .pribuzni button:hover{border-color:var(--fialova); box-shadow:0 0 14px -3px rgba(178,107,255,.8)}
 .pribuzni .vic{font-size:.76rem; color:var(--text2); padding:4px}
 .odkazy{display:flex; gap:8px; flex-wrap:wrap}
-.odkazy a{font-size:.78rem; font-weight:600; color:var(--text); text-decoration:none; padding:5px 12px; border-radius:999px; border:1px solid var(--sklo-okraj); background:rgba(255,255,255,.05)}
-.odkazy a:hover{border-color:var(--cyan); box-shadow:0 0 16px -4px rgba(53,214,255,.7)}
+.odkazy a{font-size:.78rem; font-weight:600; color:var(--text); text-decoration:none; padding:5px 12px; border-radius:999px; border:1px solid var(--sklo-okraj); background:var(--plocha)}
+.odkazy a:hover{border-color:var(--cyan); box-shadow:0 0 16px -4px var(--cyan-zare)}
 
 /* ---------- police jazyků ---------- */
 .police{display:flex; flex-direction:column; min-height:0; border-radius:24px; overflow:hidden}
-.hledani{padding:14px 16px 11px; border-bottom:1px solid rgba(150,205,255,.14); display:flex; flex-direction:column; gap:9px}
+.hledani{padding:14px 16px 11px; border-bottom:1px solid var(--linka); display:flex; flex-direction:column; gap:9px}
 .pole{position:relative; display:flex; align-items:center}
 .pole svg{position:absolute; left:13px; width:16px;height:16px; color:var(--cyan); pointer-events:none}
 #hledej{width:100%; font:inherit; color:var(--text); padding:10px 12px 10px 38px; border-radius:14px;
-  border:1px solid var(--sklo-okraj); background:rgba(3,6,20,.45)}
-#hledej:focus{outline:none; border-color:var(--cyan); box-shadow:0 0 0 3px rgba(53,214,255,.18), 0 0 22px -6px rgba(53,214,255,.7)}
+  border:1px solid var(--sklo-okraj); background:var(--vstup)}
+#hledej:focus{outline:none; border-color:var(--cyan); box-shadow:0 0 0 3px var(--cyan-slabe), 0 0 22px -6px var(--cyan-zare)}
 #hledej::placeholder{color:var(--text3)}
 .pocet{margin:0; font-family:var(--pismo-data); font-size:.66rem; letter-spacing:.06em; color:var(--text2)}
-.seznam{overflow-y:auto; padding:6px 16px 12px; min-height:0; flex:1; scrollbar-width:thin; scrollbar-color:rgba(150,205,255,.3) transparent}
-.zdroje{margin:0; padding:9px 16px; padding-bottom:calc(9px + env(safe-area-inset-bottom,0px)); border-top:1px solid rgba(150,205,255,.14);
+.seznam{overflow-y:auto; padding:6px 16px 12px; min-height:0; flex:1; scrollbar-width:thin; scrollbar-color:var(--linka2) transparent}
+.zdroje{margin:0; padding:9px 16px; padding-bottom:calc(9px + env(safe-area-inset-bottom,0px)); border-top:1px solid var(--linka);
   font-family:var(--pismo-data); font-size:.58rem; letter-spacing:.04em; color:var(--text3)}
 .rodina{margin-top:18px}
 .rodina:first-child{margin-top:8px}
 .rodina h3{display:flex; align-items:center; gap:8px; margin:0 0 9px; font-family:var(--pismo-data); font-weight:400; font-size:.62rem; letter-spacing:.12em; text-transform:uppercase; color:var(--text2)}
-.rodina h3::after{content:""; flex:1; height:1px; background:linear-gradient(90deg, rgba(150,205,255,.3), transparent)}
+.rodina h3::after{content:""; flex:1; height:1px; background:linear-gradient(90deg, var(--linka2), transparent)}
 .tecka{width:9px;height:9px;border-radius:50%; flex:none; box-shadow:0 0 10px currentColor}
 .mrizka{display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr)); gap:7px}
 .jaz{position:relative; text-align:left; cursor:pointer; padding:8px 10px 8px 11px; border-radius:14px;
-  background:linear-gradient(135deg, color-mix(in srgb, var(--r-barva, #5ADCFF) 12%, transparent), rgba(255,255,255,.03));
-  border:1px solid rgba(150,205,255,.14); display:flex; align-items:center; gap:10px; transition:border-color .15s, box-shadow .15s, transform .15s}
+  background:linear-gradient(135deg, color-mix(in srgb, var(--r-barva, #5ADCFF) 12%, transparent), var(--plocha));
+  border:1px solid var(--linka); display:flex; align-items:center; gap:10px; transition:border-color .15s, box-shadow .15s, transform .15s}
 .jaz:hover{transform:translateY(-1px); border-color:color-mix(in srgb, var(--r-barva, var(--cyan)) 70%, white);
   box-shadow:0 0 22px -8px var(--r-barva, var(--cyan))}
 .jaz[aria-pressed="true"]{border-color:var(--r-barva, var(--cyan)); box-shadow:0 0 24px -6px var(--r-barva, var(--cyan)), inset 0 0 0 1px var(--r-barva, var(--cyan))}
@@ -206,7 +239,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
 .jaz .nm{display:block; font-weight:600; font-size:.88rem; line-height:1.2; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
 .jaz .sub{display:block; font-size:.72rem; color:var(--text2); overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
 .jaz .znamka{position:absolute; top:-6px; right:-5px; width:17px;height:17px; color:var(--hvezda); filter:drop-shadow(0 0 6px rgba(255,212,94,.8))}
-.jaz.tecka-jaz{background:rgba(255,255,255,.03)}
+.jaz.tecka-jaz{background:var(--plocha)}
 .jaz.tecka-jaz .pruh{background:var(--tecka-jazyk); opacity:.6; box-shadow:0 0 8px var(--tecka-jazyk)}
 .prazdno{padding:26px 4px; text-align:center; color:var(--text2); font-size:.88rem}
 
@@ -215,7 +248,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
 .zeme-okno h4{margin:0 0 6px; font-family:var(--pismo-nadpis); font-weight:700; font-size:1rem}
 .zeme-okno p{margin:0; font-size:.8rem; color:var(--text2)}
 .zeme-okno ul{margin:0; padding:0; list-style:none; display:flex; flex-wrap:wrap; gap:5px}
-.zeme-okno button{cursor:pointer; font-size:.76rem; padding:3px 10px; border-radius:999px; background:rgba(255,255,255,.05); border:1px solid rgba(150,205,255,.3)}
+.zeme-okno button{cursor:pointer; font-size:.76rem; padding:3px 10px; border-radius:999px; background:var(--plocha); border:1px solid var(--linka2)}
 .zeme-okno button:hover{border-color:var(--cyan)}
 .bublina-bod{position:absolute; z-index:8; pointer-events:none; max-width:240px; font-family:var(--pismo-data); font-size:.7rem; letter-spacing:.02em;
   padding:5px 10px; border-radius:10px; color:#DFF8FF; background:rgba(4,8,24,.9); border:1px solid rgba(53,214,255,.5); box-shadow:0 0 18px -6px rgba(53,214,255,.8)}
@@ -234,6 +267,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
   .podnadpis{font-size:.62rem}
   .sbirka{font-size:.68rem; padding:5px 10px}
   .jazyk-prepinac{height:34px}
+  .prepinac{width:34px; height:34px}
 }
 @media (max-width:920px){
   .app{height:auto; min-height:100%}

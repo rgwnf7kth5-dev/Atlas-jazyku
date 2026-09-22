@@ -54,11 +54,17 @@ u každého pushe.
 ## Barvy
 
 - **Vzhled „Hvězdná mapa se sklem“** (vybral uživatel 22. 9. 2026 ze tří návrhů: „B se sklem z A“).
-  Jen tmavý vesmír, přepínač světlého režimu už není. Glóbus je z částic: pevnina jsou tečky
-  (`data/pevnina.json`), jazyky světélka, vybraný jazyk se rozzáří barvou rodiny, kolem je atmosféra
-  a prstenec, v rozích HUD se souřadnicemi a počtem světélek na očích. Panely jsou „tekuté sklo“
-  (`.sklo`, `backdrop-filter`). Písma Chakra Petch (nadpisy), Outfit (text), JetBrains Mono (data).
-- Barvy rodin (`--r-*`) prošly validátorem palet (skill dataviz) na tmavém pozadí `#04060F` i `#101634`.
+  Glóbus je z částic: pevnina jsou tečky (`data/pevnina.json`), jazyky světélka, vybraný jazyk se rozzáří
+  barvou rodiny, kolem je atmosféra a prstenec (bez obíhajícího satelitu – uživatel ho nechtěl), v rozích
+  HUD se souřadnicemi a počtem světélek na očích. Panely jsou „tekuté sklo“ (`.sklo`, `backdrop-filter`).
+  Písma Chakra Petch (nadpisy), Outfit (text), JetBrains Mono (data).
+- **Noc a den.** Výchozí je noční vesmír; tlačítko se sluníčkem přepne na denní vzhled (světlá obloha,
+  bílé sklo, světlá planeta), volba se pamatuje (`atlas-motiv`) a skript v hlavičce ji nastaví hned,
+  aby stránka neblikla. Denní barvy jsou v `:root[data-theme="light"]`; glóbus je čte z CSS proměnných
+  (`nactiBarvy`). Ve dne se světélka nesčítají (na světlé kouli by zmizela), kreslí se obyčejně.
+- Barvy rodin (`--r-*`): noční sada prošla validátorem palet (skill dataviz) na `#04060F` i `#101634`,
+  denní sada (`#2E63D6 #E2544A #0A9BB5 #E09A18 #0A7541 #8A44C8`) na bílé. Zlatá má ve dne kontrast
+  jen 2,4 : 1, proto nese tmavý text (`--t-afro`).
   **Pořadí ie → st → an → afro → nk → ost je součást ověření, neměnit.** Osm barev neprošlo, proto je
   šest skupin a menší rodiny jsou v „ostatních“ (přesná rodina je vždy napsaná na kartě).
   Každá barva má vždy i textový popisek (druhotné rozlišení – nerušit).
@@ -70,7 +76,7 @@ a 7 967 světélek – WebGL, bez něj záložní 2D), `#popisky` a `#globus` (o
 Každé se překresluje, jen když je potřeba. Neměř jen JS – drahá je rasterizace a skládání vrstev.
 `ctx.filter` (blur) stál 52 ms na snímek, proto se nepoužívá. Hustota pixelů 2D pláten je u velkého
 plátna omezená na 1,35. Koule s atmosférou se kreslí do zásoby, hranice států až od přiblížení 1,4×.
-Okrasný pohyb (prstenec, světla na obloucích, obvod karty) po 20 s bez dotyku usne.
+Okrasný pohyb (světla na obloucích, obvod karty) po 20 s bez dotyku usne.
 Tečky pevniny vyrábí `node scripts/pevnina.mjs` (Fibonacciho spirála, 120 000 bodů, bitová mapa + stát).
 
 ## Ověření faktů
