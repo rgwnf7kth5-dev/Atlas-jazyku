@@ -16,7 +16,6 @@
   /* glóbus (čte je i app.js) */
   --koule1:#0B1A45; --koule2:#02040E; --atmosfera:rgba(53,214,255,.5); --atmosfera2:rgba(80,120,255,.16);
   --sit:rgba(127,233,255,.07); --hranice:120,170,255; --okraj-koule:rgba(127,233,255,.4);
-  --prstenec:rgba(127,233,255,.34); --prstenec2:rgba(178,107,255,.16);
   --tecka-pevnina:#3F6FB8; --tecka-jazyk:#5ADCFF; --tecka-bod:#FFFFFF;
   --popisek:#EAF4FF; --popisek-lem:rgba(2,4,14,.88); --zamerovac-lem:rgba(2,4,14,.7);
   /* barvy jazykových rodin a text na nich */
@@ -42,7 +41,6 @@
   --nadpis-grad:linear-gradient(90deg,#0E1838,#1F4FA8 55%,#6A36B0);
   --koule1:#FFFFFF; --koule2:#B8CEEE; --atmosfera:rgba(90,170,255,.42); --atmosfera2:rgba(140,190,255,.16);
   --sit:rgba(40,90,170,.1); --hranice:40,80,160; --okraj-koule:rgba(40,110,200,.45);
-  --prstenec:rgba(30,90,180,.3); --prstenec2:rgba(138,68,200,.12);
   --tecka-pevnina:#8EA5CC; --tecka-jazyk:#0B7FBF; --tecka-bod:#0E1838;
   --popisek:#0E1838; --popisek-lem:rgba(255,255,255,.92); --zamerovac-lem:rgba(255,255,255,.85);
   --r-ie:#2E63D6; --r-st:#E2544A; --r-an:#0A9BB5; --r-afro:#E09A18; --r-nk:#0A7541; --r-ost:#8A44C8;

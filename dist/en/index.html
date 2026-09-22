@@ -6,7 +6,7 @@
 <title>Language Atlas</title>
 <meta name="description" content="A spinning globe with every language on Earth: pick one to see where it is spoken and how to say hello.">
 <meta name="theme-color" content="#02030A">
-<script>try{if(localStorage.getItem("atlas-motiv")==="light")document.documentElement.setAttribute("data-theme","light")}catch(e){}</script>
+<script>(function(){var m=null;try{m=localStorage.getItem("atlas-motiv")}catch(e){}if(!m)m=window.matchMedia&&matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";document.documentElement.setAttribute("data-theme",m)})()</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800&display=swap">
@@ -29,7 +29,6 @@
   /* glóbus (čte je i app.js) */
   --koule1:#0B1A45; --koule2:#02040E; --atmosfera:rgba(53,214,255,.5); --atmosfera2:rgba(80,120,255,.16);
   --sit:rgba(127,233,255,.07); --hranice:120,170,255; --okraj-koule:rgba(127,233,255,.4);
-  --prstenec:rgba(127,233,255,.34); --prstenec2:rgba(178,107,255,.16);
   --tecka-pevnina:#3F6FB8; --tecka-jazyk:#5ADCFF; --tecka-bod:#FFFFFF;
   --popisek:#EAF4FF; --popisek-lem:rgba(2,4,14,.88); --zamerovac-lem:rgba(2,4,14,.7);
   /* barvy jazykových rodin a text na nich */
@@ -55,7 +54,6 @@
   --nadpis-grad:linear-gradient(90deg,#0E1838,#1F4FA8 55%,#6A36B0);
   --koule1:#FFFFFF; --koule2:#B8CEEE; --atmosfera:rgba(90,170,255,.42); --atmosfera2:rgba(140,190,255,.16);
   --sit:rgba(40,90,170,.1); --hranice:40,80,160; --okraj-koule:rgba(40,110,200,.45);
-  --prstenec:rgba(30,90,180,.3); --prstenec2:rgba(138,68,200,.12);
   --tecka-pevnina:#8EA5CC; --tecka-jazyk:#0B7FBF; --tecka-bod:#0E1838;
   --popisek:#0E1838; --popisek-lem:rgba(255,255,255,.92); --zamerovac-lem:rgba(255,255,255,.85);
   --r-ie:#2E63D6; --r-st:#E2544A; --r-an:#0A9BB5; --r-afro:#E09A18; --r-nk:#0A7541; --r-ost:#8A44C8;
@@ -523,8 +521,10 @@ function obnovSbirku(){
   $("sbirka-text").textContent = n + " " + slovo;
 }
 
-/* ---------- denní a noční vzhled (volba se pamatuje; výchozí je noc) ---------- */
+/* ---------- denní a noční vzhled: podle nastavení počítače, přepínač má přednost ---------- */
+const svetlySystem = window.matchMedia("(prefers-color-scheme: light)");
 let denni = document.documentElement.getAttribute("data-theme") === "light";
+function ulozenyMotiv(){ try { return localStorage.getItem("atlas-motiv"); } catch (e) { return null; } }
 function obnovPrepinacMotivu(){
   $("ikona-rezim").setAttribute("href", denni ? "#i-mesic" : "#i-slunce");
   $("prepinac").setAttribute("aria-pressed", denni ? "true" : "false");
@@ -532,9 +532,9 @@ function obnovPrepinacMotivu(){
   if (meta) meta.setAttribute("content", denni ? "#E4EEFF" : "#02030A");
 }
 function nastavMotiv(den){
+  if (!!den === denni) return;
   denni = !!den;
-  if (denni) document.documentElement.setAttribute("data-theme", "light"); else document.documentElement.removeAttribute("data-theme");
-  try { localStorage.setItem("atlas-motiv", denni ? "light" : "dark"); } catch (e) {}
+  document.documentElement.setAttribute("data-theme", denni ? "light" : "dark");
   obnovPrepinacMotivu();
   kresliHvezdy();
   if (globusOk && ctx) {
@@ -542,7 +542,15 @@ function nastavMotiv(den){
     potrebaKresli = true; teckyZmeneny = true; popiskyZmeneny = true; ozivit();
   }
 }
-$("prepinac").addEventListener("click", function(){ nastavMotiv(!denni); });
+$("prepinac").addEventListener("click", function(){
+  nastavMotiv(!denni);
+  /* volba shodná s počítačem se nepamatuje – stránka se pak zase řídí počítačem */
+  try {
+    if (denni === svetlySystem.matches) localStorage.removeItem("atlas-motiv");
+    else localStorage.setItem("atlas-motiv", denni ? "light" : "dark");
+  } catch (e) {}
+});
+svetlySystem.addEventListener("change", function(){ if (!ulozenyMotiv()) nastavMotiv(svetlySystem.matches); });
 obnovPrepinacMotivu();
 
 /* ---------- police ---------- */
@@ -625,7 +633,7 @@ $("hledej").addEventListener("input", function(e){ postavPolici(e.target.value);
    #podklad  – atmosféra, koule, síť a hranice (2D, jen když se pohne pohled)
    #gl       – tečky pevniny a světélka jazyků (WebGL; když chybí, kreslí se 2D)
    #popisky  – jména jazyků
-   #globus   – oblouky k příbuzným, prstenec, značka vybraného místa; bere myš a prsty */
+   #globus   – oblouky k příbuzným a zaměřovač vybraného místa; bere myš a prsty */
 const scena = $("scena"), platno = $("globus"), podklad = $("podklad"), platnoGl = $("gl"), platnoPopisky = $("popisky");
 let ctx = null, ctxPodklad = null, ctxPopisky = null, ctxBody = null;
 const proj = globusOk ? d3.geoOrthographic().clipAngle(90).precision(0.9) : null;
@@ -648,7 +656,7 @@ function rgb(hex){
 function nactiBarvy(){
   const s = getComputedStyle(document.documentElement);
   ["tecka-pevnina", "tecka-jazyk", "tecka-bod", "cyan", "fialova", "cervena", "hvezda", "koule1", "koule2", "popisek", "popisek-lem",
-   "atmosfera", "atmosfera2", "sit", "hranice", "okraj-koule", "prstenec", "prstenec2", "zamerovac-lem",
+   "atmosfera", "atmosfera2", "sit", "hranice", "okraj-koule", "zamerovac-lem",
    "r-ie", "r-st", "r-an", "r-afro", "r-nk", "r-ost"].forEach(function(k){ barvy[k] = s.getPropertyValue("--" + k).trim(); });
 }
 
@@ -1041,7 +1049,7 @@ function pribuzniBodu(i, jenAtlas, max){
   return kand.slice(0, max).map(function(x){ return x[0]; });
 }
 
-/* ---------- popředí: prstenec, oblouky, značka ---------- */
+/* ---------- popředí: oblouky a zaměřovač ---------- */
 function svetylko(barva, vel){
   const c = document.createElement("canvas"); c.width = c.height = vel;
   const g = c.getContext("2d"), r = vel / 2, gr = g.createRadialGradient(r, r, 0, r, r, r);
@@ -1049,36 +1057,11 @@ function svetylko(barva, vel){
   g.fillStyle = gr; g.fillRect(0, 0, vel, vel); return c;
 }
 let SVETLA = null;
-const NAKLON = -0.38;
-function prstenec(c, predni, cx, cy){
-  const alfa = Math.max(0, Math.min(1, (1.75 - zoom) / 0.55));
-  if (!alfa) return;
-  const rx = polomer * 1.3, ry = rx * 0.2;
-  if (predni) {             // přední půlka: přes kouli jen slabě, ať nezakrývá tečky
-    c.save(); c.beginPath(); c.arc(cx, cy, polomer, 0, 6.283185); c.clip();
-    prstenecKresli(c, true, cx, cy, alfa * 0.4, rx, ry);
-    c.restore();
-  }
-  c.save();
-  c.beginPath(); c.rect(0, 0, sirka, vyska); c.arc(cx, cy, polomer, 0, 6.283185, true); c.clip();   // mimo kouli
-  prstenecKresli(c, predni, cx, cy, alfa, rx, ry);
-  c.restore();
-}
-function prstenecKresli(c, predni, cx, cy, alfa, rx, ry){
-  c.save();
-  c.translate(cx, cy); c.rotate(NAKLON); c.globalAlpha = alfa;
-  c.strokeStyle = barvy.prstenec; c.lineWidth = 1;
-  c.beginPath(); c.ellipse(0, 0, rx, ry, 0, predni ? 0 : Math.PI, predni ? Math.PI : 2 * Math.PI); c.stroke();
-  c.strokeStyle = barvy.prstenec2; c.lineWidth = 5;
-  c.beginPath(); c.ellipse(0, 0, rx * 1.035, ry * 1.035, 0, predni ? 0 : Math.PI, predni ? Math.PI : 2 * Math.PI); c.stroke();
-  c.restore();
-}
 function kresliPopredi(cas){
   const c = ctx, cx = sirka / 2 + posun, cy = vyska / 2;
   c.clearRect(0, 0, sirka, vyska);
   if (!SVETLA) SVETLA = {bila: svetylko(denni ? "rgba(10,119,173,.55)" : "rgba(255,255,255,.9)", 32)};
   const skladani = denni ? "source-over" : "lighter";
-  prstenec(c, false, cx, cy);
 
   const l0 = -rot[0] * R, f0 = -rot[1] * R, sf0 = Math.sin(f0), cf0 = Math.cos(f0), cl0 = Math.cos(l0), sl0 = Math.sin(l0);
   const vb = barvaVyberu();
@@ -1130,7 +1113,6 @@ function kresliPopredi(cas){
       c.lineWidth = 1.6; c.stroke();
     }
   }
-  prstenec(c, true, cx, cy);
 }
 /* okrasný pohyb (světla na obloucích, obvod karty) po chvíli bez dotyku usne – šetří baterii */
 let zivoDo = 0, spi = false;

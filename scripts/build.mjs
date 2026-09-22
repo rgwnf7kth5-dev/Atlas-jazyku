@@ -77,8 +77,10 @@ function sestav(lang, { odkazJinam, artefakt }) {
     `<title>${escHtml(T.nazev)}</title>\n` +
     `<meta name="description" content="${escHtml(T.popis)}">\n` +
     `<meta name="theme-color" content="#02030A">\n` +
-    // denní vzhled nastavím hned, ať stránka při načtení neblikne tmou
-    `<script>try{if(localStorage.getItem("atlas-motiv")==="light")document.documentElement.setAttribute("data-theme","light")}catch(e){}</script>\n` +
+    // vzhled (podle počítače, nebo podle přepínače) nastavím hned, ať stránka při načtení neblikne
+    `<script>(function(){var m=null;try{m=localStorage.getItem("atlas-motiv")}catch(e){}` +
+    `if(!m)m=window.matchMedia&&matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";` +
+    `document.documentElement.setAttribute("data-theme",m)})()</script>\n` +
     `<link rel="preconnect" href="https://fonts.googleapis.com">\n` +
     `<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n` +
     `<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800&display=swap">\n` +

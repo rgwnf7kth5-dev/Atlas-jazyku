@@ -55,12 +55,12 @@ u každého pushe.
 
 - **Vzhled „Hvězdná mapa se sklem“** (vybral uživatel 22. 9. 2026 ze tří návrhů: „B se sklem z A“).
   Glóbus je z částic: pevnina jsou tečky (`data/pevnina.json`), jazyky světélka, vybraný jazyk se rozzáří
-  barvou rodiny, kolem je atmosféra a prstenec (bez obíhajícího satelitu – uživatel ho nechtěl), v rozích
+  barvou rodiny, kolem je atmosféra (prstenec ani obíhající satelit tam být nemají – uživatel je nechtěl), v rozích
   HUD se souřadnicemi a počtem světélek na očích. Panely jsou „tekuté sklo“ (`.sklo`, `backdrop-filter`).
   Písma Chakra Petch (nadpisy), Outfit (text), JetBrains Mono (data).
-- **Noc a den.** Výchozí je noční vesmír; tlačítko se sluníčkem přepne na denní vzhled (světlá obloha,
-  bílé sklo, světlá planeta), volba se pamatuje (`atlas-motiv`) a skript v hlavičce ji nastaví hned,
-  aby stránka neblikla. Denní barvy jsou v `:root[data-theme="light"]`; glóbus je čte z CSS proměnných
+- **Noc a den.** Vzhled se řídí nastavením počítače (`prefers-color-scheme`, i za běhu), přepínač
+  sluníčko/měsíček ho přebije. Volba se pamatuje (`atlas-motiv`); když se shoduje s počítačem, smaže se
+  a stránka se zase řídí počítačem. Skript v hlavičce nastaví `data-theme` hned, aby stránka neblikla. Denní barvy jsou v `:root[data-theme="light"]`; glóbus je čte z CSS proměnných
   (`nactiBarvy`). Ve dne se světélka nesčítají (na světlé kouli by zmizela), kreslí se obyčejně.
 - Barvy rodin (`--r-*`): noční sada prošla validátorem palet (skill dataviz) na `#04060F` i `#101634`,
   denní sada (`#2E63D6 #E2544A #0A9BB5 #E09A18 #0A7541 #8A44C8`) na bílé. Zlatá má ve dne kontrast
