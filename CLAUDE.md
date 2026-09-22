@@ -40,7 +40,13 @@ Nasazení přes Netlify z větve `main` podle `netlify.toml` (build `npm run che
 nářečí), WALS (stavba jazyka), PHOIBLE (hlásky), UDHR (ukázka textu) a CLDR (české názvy, odhad uživatelů).
 Zdroje stahuje do `.cache/` (není v gitu). Pořadí: `node scripts/glottolog.mjs`, pak `node scripts/podrobnosti.mjs`.
 Příbuzenstvo je uložené jako strom (uzel zná rodiče), cestu a „nejbližší příbuzné“ dopočítá stránka.
-Údaj bez doloženého zdroje nepřidávat – proto chybí počty mluvčích u většiny teček (Wikidata jsou odsud blokovaná).
+Údaj bez doloženého zdroje nepřidávat.
+
+**Wikidata** jsou z prostředí Claude Code na webu blokovaná, proto je stahuje GitHub Actions
+(`.github/workflows/wikidata.yml`, 1. v měsíci a ručně přes Actions → Run workflow). Výsledek přijde jako pull request;
+Netlify k němu udělá náhled. Pro pull request musí být v Settings → Actions → General zapnuté
+„Allow GitHub Actions to create and approve pull requests“. `.github/workflows/kontrola.yml` spouští `npm run check`
+u každého pushe.
 
 ## Barvy
 

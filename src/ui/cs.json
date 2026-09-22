@@ -41,12 +41,14 @@
  "miliardy": [
   "miliarda",
   "miliardy",
+  "miliard",
   "miliardy"
  ],
  "milionu": [
   "milion",
   "miliony",
-  "milionů"
+  "milionů",
+  "milionu"
  ],
  "tisic": [
   "tisíc",
@@ -256,5 +258,9 @@
     "Hrdelní hlásky i šišlavé „th“."
    ]
   ]
- }
+ },
+ "mluvci": "Mluví jím",
+ "mluvciHodnota": "asi {n} lidí",
+ "mluvciPoznRodili": "rodilých mluvčích · Wikidata{rok}",
+ "mluvciPozn": "Wikidata{rok}"
 }

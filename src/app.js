@@ -24,8 +24,9 @@ const cislo = function(n, des){
 function t(klic, promenne){
   return String(T[klic]).replace(/\{(\w+)\}/g, function(_, k){ return promenne && k in promenne ? promenne[k] : ""; });
 }
-function tvar(n, tvary){ /* [1, 2–4, 5+] – čeština je potřebuje, angličtině stačí dva */
+function tvar(n, tvary){ /* [1, 2–4, 5+, desetinné] – čeština je potřebuje, angličtině stačí dva */
   if (!Array.isArray(tvary)) return tvary;
+  if (Math.floor(n) !== n) return tvary[3] || tvary[2];     // 1,6 milionu
   if (n === 1) return tvary[0];
   if (T.lang === "cs" && n >= 2 && n <= 4 && Math.floor(n) === n) return tvary[1];
   return tvary[2];
@@ -608,11 +609,9 @@ $("tl-nahoda").addEventListener("click", function(){
 });
 
 /* ---------- karty ---------- */
-function pocetMluvcich(m){
-  if (m >= 1000) return cislo(m / 1000, 1) + " " + tvar(2, T.miliardy);
-  if (m >= 1) { const n = Math.round(m); return cislo(n) + " " + tvar(n, T.milionu); }
-  if (m >= 0.001) { const n = Math.round(m * 1000); return cislo(n) + " " + tvar(n, T.tisic); }
-  return T.hrstka;
+function pocetMluvcich(m){          /* m = miliony, jak jsou v data/languages.json */
+  const n = Math.round(m * 1e6);
+  return n < 100 ? T.hrstka : lidi(n);
 }
 const tlPrehraj = $("k-prehraj"), popisPrehraj = tlPrehraj.querySelector("span");
 function ukazKartu(j){
@@ -651,9 +650,15 @@ function prvek(tag, trida, text){
   return e;
 }
 function oddil(nadpisText){ const o = prvek("section"); o.appendChild(prvek("h3", null, nadpisText)); return o; }
-function lidi(n){
-  if (n < 1000) return cislo(n);
-  return pocetMluvcich(n / 1e6);
+function lidi(n){                  /* počet lidí: malá čísla přesně, velká zaokrouhleně, ale ne hrubě */
+  if (n < 10000) return cislo(n);
+  if (n < 1e6) { const k = Math.round(n / 1000); return cislo(k) + " " + tvar(k, T.tisic); }
+  if (n < 1e9) {
+    const m = n < 1e7 ? Math.round(n / 1e5) / 10 : Math.round(n / 1e6);
+    return cislo(m, Math.floor(m) === m ? 0 : 1) + " " + tvar(m, T.milionu);
+  }
+  const g = Math.round(n / 1e8) / 10;
+  return cislo(g, Math.floor(g) === g ? 0 : 1) + " " + tvar(g, T.miliardy);
 }
 let srovnani = null;   // hlásky češtiny (nebo angličtiny) pro porovnání
 function hlaskySrovnani(){
@@ -691,9 +696,15 @@ function ukazKartuBodu(i){
     if (staty.length > 12) ul.appendChild(prvek("li", "vic", t("aDalsich", {n: staty.length - 12})));
     o.appendChild(ul); box.appendChild(o);
   }
-  if (r[8] > 0 || r[4] > 0) {
+  const wdm = Array.isArray(r[10]) ? r[10] : null;   // [počet, rok, rodilí?] z Wikidat
+  if (wdm || r[8] > 0 || r[4] > 0) {
     const d = prvek("div", "dvojice");
-    if (r[8] > 0) {
+    if (wdm) {
+      const o = oddil(T.mluvci);
+      o.appendChild(prvek("p", null, t("mluvciHodnota", {n: lidi(wdm[0])})));
+      o.appendChild(prvek("p", "pozn", t(wdm[2] ? "mluvciPoznRodili" : "mluvciPozn", {rok: wdm[1] ? " " + wdm[1] : ""})));
+      d.appendChild(o);
+    } else if (r[8] > 0) {
       const o = oddil(T.uzivatelu);
       o.appendChild(prvek("p", null, t("uzivateluHodnota", {n: lidi(r[8])})));
       o.appendChild(prvek("p", "pozn", T.uzivateluPozn));
@@ -761,8 +772,14 @@ function ukazKartuBodu(i){
 
   const o = oddil(T.odkazyPopis), odk = prvek("div", "odkazy");
   const hledat = T.lang === "cs" && r[9] ? r[9] : B[i][0] + " language";
+  let wiki = "https://" + T.wikiDomena + "/w/index.php?search=" + encodeURIComponent(hledat);
+  const clanky = r[12] || 0;                            // 1 = článek na cs Wikipedii, 2 = na en
+  if (r[11] && clanky) {
+    const web = (T.lang === "cs" && (clanky & 1)) || !(clanky & 2) ? "cswiki" : "enwiki";
+    wiki = "https://www.wikidata.org/wiki/Special:GoToLinkedPage/" + web + "/Q" + r[11];
+  }
   [[T.odkazGlottolog, "https://glottolog.org/glottolog?search=" + encodeURIComponent(B[i][0])],
-   [T.odkazWikipedie, "https://" + T.wikiDomena + "/w/index.php?search=" + encodeURIComponent(hledat)]].forEach(function(x){
+   [T.odkazWikipedie, wiki]].forEach(function(x){
     const a = prvek("a", null, x[0] + " ↗"); a.href = x[1]; a.target = "_blank"; a.rel = "noopener";
     odk.appendChild(a);
   });

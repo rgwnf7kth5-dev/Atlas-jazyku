@@ -47,6 +47,9 @@ for (const id of propojene) if (!ids.has(id)) chyby.push(`Glottolog odkazuje na 
 
 const pd = json("data/podrobnosti.json");
 if (pd.radky.length !== glottolog.body.length) chyby.push(`data/podrobnosti.json má ${pd.radky.length} řádků, rejstřík ${glottolog.body.length} – spusť node scripts/podrobnosti.mjs`);
+let divnychMluvcich = 0;
+for (const r of pd.radky) if (Array.isArray(r[10]) && !(r[10][0] > 0 && r[10][0] < 2e9 && (r[10][1] === 0 || (r[10][1] > 1800 && r[10][1] <= new Date().getFullYear() + 1)))) divnychMluvcich++;
+if (divnychMluvcich) chyby.push(`data/podrobnosti.json: ${divnychMluvcich} jazyků má nesmyslný počet mluvčích nebo rok (Wikidata)`);
 if (pd.uzly.length !== pd.nad.length) chyby.push("data/podrobnosti.json: strom příbuzenstva je poškozený");
 for (const [l, ui] of [["cs", uiCs], ["en", uiEn]]) {
   if (!Array.isArray(ui.aes) || ui.aes.length !== 6) chyby.push(`src/ui/${l}.json: „aes“ musí mít 6 stupňů ohrožení`);

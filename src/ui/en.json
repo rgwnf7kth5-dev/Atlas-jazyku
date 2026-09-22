@@ -41,9 +41,11 @@
  "miliardy": [
   "billion",
   "billion",
+  "billion",
   "billion"
  ],
  "milionu": [
+  "million",
   "million",
   "million",
   "million"
@@ -256,5 +258,9 @@
     "Throat sounds and “th”."
    ]
   ]
- }
+ },
+ "mluvci": "Speakers",
+ "mluvciHodnota": "about {n} people",
+ "mluvciPoznRodili": "native speakers · Wikidata{rok}",
+ "mluvciPozn": "Wikidata{rok}"
 }

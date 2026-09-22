@@ -1,0 +1,69 @@
+# Jednou měsíčně stáhne z Wikidat počty mluvčích, české názvy a odkazy na Wikipedii,
+# obnoví podrobnosti k tečkám (i z Glottologu, WALS, PHOIBLE, UDHR, CLDR) a navrhne změny jako pull request.
+# Ručně: záložka Actions → „Data z Wikidat“ → Run workflow.
+name: Data z Wikidat
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 4 1 * *"      # 1. den v měsíci v 4:17 UTC
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: wikidata
+  cancel-in-progress: false
+
+jobs:
+  wikidata:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Stáhnout data z Wikidat
+        run: node scripts/wikidata.mjs
+
+      - name: Přepočítat podrobnosti k tečkám
+        run: node scripts/podrobnosti.mjs
+
+      - name: Kontrola a sestavení
+        run: npm run check
+
+      - name: Navrhnout změny jako pull request
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if git diff --quiet -- data dist && [ -z "$(git ls-files --others --exclude-standard data)" ]; then
+            echo "Data se od minula nezměnila, pull request není potřeba."
+            exit 0
+          fi
+          DNES=$(date -u +%Y-%m-%d)
+          VETEV="data/wikidata-$DNES-$GITHUB_RUN_ID"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$VETEV"
+          git add data dist
+          git commit -m "Data z Wikidat a dalších zdrojů ($DNES)"
+          git push -u origin "$VETEV"
+          node -e "
+            const d = require('./data/wikidata.json'), z = Object.values(d.zaznamy);
+            console.log('Automatická aktualizace: počty mluvčích, české názvy a odkazy na Wikipedii z Wikidat;');
+            console.log('obnovené podrobnosti z Glottologu, WALS, PHOIBLE, UDHR a CLDR.');
+            console.log('');
+            console.log('- jazyků z Wikidat: ' + z.length);
+            console.log('- s počtem mluvčích: ' + z.filter(x => x.m).length);
+            console.log('- s českým názvem: ' + z.filter(x => x.cs).length);
+            console.log('');
+            console.log('Kontrola dat (npm run check) prošla. Netlify k tomuto pull requestu vytvoří náhled;');
+            console.log('po jeho prohlédnutí stačí kliknout na Merge.');
+          " > popis-pr.md
+          if ! gh pr create --base main --head "$VETEV" --title "Data z Wikidat ($DNES)" --body-file popis-pr.md; then
+            echo "::error::Pull request se nepodařilo založit. V Settings → Actions → General zapni „Allow GitHub Actions to create and approve pull requests“. Větev $VETEV je nahraná, pull request jde založit i ručně."
+            exit 1
+          fi

@@ -5862,7 +5862,7 @@
   "skupina": "ost",
   "pozdrav": "Irankarapte!",
   "domaci": "アイヌ イタㇰ",
-  "mluvcich": 0.001,
+  "mluvcich": 1e-05,
   "kod": "ain",
   "stred": [
    143,

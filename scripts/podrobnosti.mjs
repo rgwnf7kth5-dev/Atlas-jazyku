@@ -191,10 +191,25 @@ for (const l of ["cs", "en"]) {
   nazvyStatu[l] = Object.fromEntries(Object.entries(z).map(([k, v]) => [k, Array.isArray(v) ? v[0] : v]));
 }
 
+/* --- Wikidata (stahuje scripts/wikidata.mjs v GitHub Actions; bez souboru se přeskočí) --- */
+const wdSoubor = path.join(KOREN, "data/wikidata.json");
+const wd = fs.existsSync(wdSoubor) ? JSON.parse(fs.readFileSync(wdSoubor, "utf8")).zaznamy : {};
+const wdMluvci = new Array(kody.length).fill(0), wdQ = new Array(kody.length).fill(0), wdWiki = new Array(kody.length).fill(0);
+kody.forEach((gc, i) => {
+  const z = wd[gc];
+  if (!z) return;
+  if (z.m) wdMluvci[i] = z.m;
+  if (z.q) wdQ[i] = z.q;
+  if (z.w) wdWiki[i] = z.w;
+  // český název z Wikidat jen tam, kde ho nemá CLDR, a jen když to není opsané anglické jméno
+  if (!nazvyCs[i] && z.cs && z.cs !== rejstrik.body[i][0]) nazvyCs[i] = z.cs;
+});
+
 /* --- výstup: jeden řádek na tečku, ve stejném pořadí jako data/glottolog.json --- */
 const radky = kody.map((_, i) => {
   const w = wals[i].join("");
-  const r = [aes[i], med[i], rodic[i], staty[i], nareci[i], /[1-9]/.test(w) ? w : "", hlasky[i] || 0, udhrIndex[i], uzivatelu[i], nazvyCs[i]];
+  const r = [aes[i], med[i], rodic[i], staty[i], nareci[i], /[1-9]/.test(w) ? w : "", hlasky[i] || 0, udhrIndex[i], uzivatelu[i], nazvyCs[i],
+             wdMluvci[i], wdQ[i], wdWiki[i]];
   while (r.length && (r[r.length - 1] === "" || r[r.length - 1] === 0 || r[r.length - 1] === -1)) r.pop();   // ořízni prázdný konec
   return r;
 });
@@ -209,4 +224,6 @@ const pocet = f => radky.filter(f).length;
 console.log(`Podrobnosti pro ${kody.length} jazyků (${(fs.statSync(path.join(KOREN, "data/podrobnosti.json")).size / 1024).toFixed(0)} kB):`);
 console.log(`  ohroženost ${pocet(r => r[0] >= 0)}, popsanost ${pocet(r => r[1] >= 0)}, příbuzenstvo ${pocet(r => r[2] >= 0)}, státy ${pocet(r => r[3])}, nářečí ${pocet(r => r[4] > 0)}`);
 console.log(`  stavba jazyka (WALS) ${pocet(r => r[5] && /[1-9]/.test(r[5]))}, hlásky (PHOIBLE) ${pocet(r => Array.isArray(r[6]))}, ukázka textu (UDHR) ${pocet(r => r[7] >= 0)}`);
-console.log(`  odhad uživatelů (CLDR) ${pocet(r => r[8] > 0)}, český název (CLDR) ${pocet(r => r[9])}`);
+console.log(`  odhad uživatelů (CLDR) ${pocet(r => r[8] > 0)}, český název (CLDR/Wikidata) ${pocet(r => r[9])}`);
+console.log(`  Wikidata: mluvčí ${pocet(r => Array.isArray(r[10]))}, položka ${pocet(r => r[11] > 0)}, článek cs ${pocet(r => r[12] & 1)}, en ${pocet(r => r[12] & 2)}` +
+  (Object.keys(wd).length ? "" : "  (data/wikidata.json chybí – spusť node scripts/wikidata.mjs nebo GitHub Actions)"));
