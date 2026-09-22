@@ -15,6 +15,7 @@ const glottolog = json("data/glottolog.json");
 const podrobnosti = json("data/podrobnosti.json");
 const rodinyCz = json("data/glottolog-families.cs.json");
 const svet = cti("data/countries-110m.json");
+const pevnina = json("data/pevnina.json");   // tečky pevniny pro částicový glóbus (scripts/pevnina.mjs)
 const knihovny = ["vendor/d3-array.min.js", "vendor/d3-geo.min.js", "vendor/topojson-client.min.js"].map(cti);
 const styly = cti("src/styles.css");
 const telo = cti("src/body.html");
@@ -64,6 +65,7 @@ function sestav(lang, { odkazJinam, artefakt }) {
     .replace('/*__VYCHOZI__*/"cs"', () => JSON.stringify(lang))
     .replace("/*__ARTEFAKT__*/false", () => String(!!artefakt))
     .replace("/*__SVET__*/null", () => doSkriptu(svet))
+    .replace("/*__PEVNINA__*/null", () => doSkriptu(pevnina))
     .replace("/*__JAZYKY__*/null", () => doSkriptu(JAZYKY))
     .replace("/*__STATY__*/null", () => doSkriptu(nazvyZemi))
     .replace("/*__REJSTRIK__*/null", () => doSkriptu(REJSTRIK))
@@ -74,9 +76,10 @@ function sestav(lang, { odkazJinam, artefakt }) {
   const hlavicka =
     `<title>${escHtml(T.nazev)}</title>\n` +
     `<meta name="description" content="${escHtml(T.popis)}">\n` +
+    `<meta name="theme-color" content="#02030A">\n` +
     `<link rel="preconnect" href="https://fonts.googleapis.com">\n` +
     `<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n` +
-    `<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,700;1,800&display=swap">\n` +
+    `<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800&display=swap">\n` +
     `<style>\n${styly}</style>\n`;
 
   const fragment = hlavicka + html + "\n" + skripty + "\n";

@@ -51,10 +51,21 @@ let divnychMluvcich = 0;
 for (const r of pd.radky) if (Array.isArray(r[10]) && !(r[10][0] > 0 && r[10][0] < 2e9 && (r[10][1] === 0 || (r[10][1] >= 1900 && r[10][1] <= new Date().getFullYear() + 1)))) divnychMluvcich++;
 if (divnychMluvcich) chyby.push(`data/podrobnosti.json: ${divnychMluvcich} jazyků má nesmyslný počet mluvčích nebo rok (Wikidata)`);
 if (pd.uzly.length !== pd.nad.length) chyby.push("data/podrobnosti.json: strom příbuzenstva je poškozený");
+const pev = json("data/pevnina.json");
+{
+  const bity = Buffer.from(pev.bity || "", "base64"), staty = Buffer.from(pev.staty || "", "base64");
+  let pevniny = 0;
+  for (const b of bity) for (let k = 0; k < 8; k++) pevniny += (b >> k) & 1;
+  if (bity.length !== Math.ceil(pev.n / 8)) chyby.push("data/pevnina.json: bitová mapa nemá délku n/8 – spusť node scripts/pevnina.mjs");
+  if (pevniny !== staty.length) chyby.push(`data/pevnina.json: ${pevniny} teček pevniny, ale ${staty.length} čísel států`);
+  if (pevniny < 20000) chyby.push("data/pevnina.json vypadá neúplně – spusť node scripts/pevnina.mjs");
+  if (staty.some(k => k >= pev.nazvy.length)) chyby.push("data/pevnina.json odkazuje na neexistující stát");
+}
 for (const [l, ui] of [["cs", uiCs], ["en", uiEn]]) {
   if (!Array.isArray(ui.aes) || ui.aes.length !== 6) chyby.push(`src/ui/${l}.json: „aes“ musí mít 6 stupňů ohrožení`);
   if (!Array.isArray(ui.med) || ui.med.length !== 5) chyby.push(`src/ui/${l}.json: „med“ musí mít 5 stupňů popsanosti`);
   for (const k of pd.wals) if (!ui.wals || !ui.wals[k]) chyby.push(`src/ui/${l}.json: chybí popisek vlastnosti ${k}`);
+  if (!Array.isArray(ui.strany) || ui.strany.length !== 4) chyby.push(`src/ui/${l}.json: „strany“ musí mít 4 světové strany (sever, jih, východ, západ)`);
 }
 
 for (const v of varovani) console.log("upozornění: " + v);

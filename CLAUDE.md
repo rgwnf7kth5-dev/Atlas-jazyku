@@ -31,8 +31,11 @@ Nasazení přes Netlify z větve `main` podle `netlify.toml` (build `npm run che
   Výběr jazyka ho vypne. Při přiblížení se otáčí pomaleji (rychlost / zoom).
 - Od přiblížení 2× se u teček kreslí jména jazyků (přepínač „Jména“, výchozí zapnutý). Napřed jazyky z atlasu, pak ostatní; popisek, který by
   překryl jiný, se vynechá (mřížka obsazenosti 4 px). Nejvýš 450 popisků na snímek.
-- Areál jazyka = seznam kruhů `[délka, šířka, poloměr ve stupních]`, kreslí se oříznutý na pevninu.
-  Státy v `zeme` se kreslí celé – jen tam, kde se jazykem opravdu mluví v celém státě.
+  Vybraný jazyk a jeho příbuzní (konce oblouků) mají jméno vždy, i bez přiblížení.
+- Areál jazyka = seznam kruhů `[délka, šířka, poloměr ve stupních]`; rozsvítí se tečky pevniny uvnitř kruhů (×1,3).
+  Státy v `zeme` se rozsvítí celé – jen tam, kde se jazykem opravdu mluví v celém státě.
+- Od vybraného jazyka vedou světelné oblouky k nejbližším příbuzným (nejvýš 6, podle nejhlubšího společného
+  předka ve stromu Glottologu). U jazyka z atlasu jen k jiným jazykům atlasu, karta je vypisuje.
 
 ## Podrobnosti k tečkám
 
@@ -50,19 +53,25 @@ u každého pushe.
 
 ## Barvy
 
-- Barvy rodin (`--r-*`) prošly validátorem palet (skill dataviz) ve světlém (bílý panel) i tmavém režimu.
+- **Vzhled „Hvězdná mapa se sklem“** (vybral uživatel 22. 9. 2026 ze tří návrhů: „B se sklem z A“).
+  Jen tmavý vesmír, přepínač světlého režimu už není. Glóbus je z částic: pevnina jsou tečky
+  (`data/pevnina.json`), jazyky světélka, vybraný jazyk se rozzáří barvou rodiny, kolem je atmosféra
+  a prstenec, v rozích HUD se souřadnicemi a počtem světélek na očích. Panely jsou „tekuté sklo“
+  (`.sklo`, `backdrop-filter`). Písma Chakra Petch (nadpisy), Outfit (text), JetBrains Mono (data).
+- Barvy rodin (`--r-*`) prošly validátorem palet (skill dataviz) na tmavém pozadí `#04060F` i `#101634`.
   **Pořadí ie → st → an → afro → nk → ost je součást ověření, neměnit.** Osm barev neprošlo, proto je
   šest skupin a menší rodiny jsou v „ostatních“ (přesná rodina je vždy napsaná na kartě).
-- Zlatá (afro) má ve světlém režimu kontrast 2,4 : 1, proto nese tmavý text (`--t-afro`) a každá barva má
-  vždy i textový popisek. V tmavém režimu leží areály na světlé „měsíční“ pevnině s nízkým kontrastem,
-  proto mají tmavý obrys (`--obrys`). Obojí je druhotné rozlišení – nerušit.
-- Vzhled (22. 9. 2026, na přání uživatele pryč od krémové a jantarové): planeta v kobaltovém vesmíru se
-  hvězdami, bílé karty s tvrdým inkoustovým stínem, akcent růžový.
+  Každá barva má vždy i textový popisek (druhotné rozlišení – nerušit).
 
 ## Výkon
 
-Glóbus kreslí na canvas ~8 000 teček. Neměř jen JS – drahá je rasterizace. `ctx.filter` (blur) stál
-52 ms na snímek, proto se nepoužívá. Hustota pixelů je u velkého plátna omezená na 1,35.
+Glóbus má čtyři plátna nad sebou: `#podklad` (koule, síť, hranice – 2D), `#gl` (31 741 teček pevniny
+a 7 967 světélek – WebGL, bez něj záložní 2D), `#popisky` a `#globus` (oblouky, prstenec, zaměřovač; bere myš).
+Každé se překresluje, jen když je potřeba. Neměř jen JS – drahá je rasterizace a skládání vrstev.
+`ctx.filter` (blur) stál 52 ms na snímek, proto se nepoužívá. Hustota pixelů 2D pláten je u velkého
+plátna omezená na 1,35. Koule s atmosférou se kreslí do zásoby, hranice států až od přiblížení 1,4×.
+Okrasný pohyb (prstenec, světla na obloucích, obvod karty) po 20 s bez dotyku usne.
+Tečky pevniny vyrábí `node scripts/pevnina.mjs` (Fibonacciho spirála, 120 000 bodů, bitová mapa + stát).
 
 ## Ověření faktů
 

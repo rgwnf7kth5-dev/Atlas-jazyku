@@ -12,6 +12,7 @@
 | ↳ počty mluvčích, české názvy, články na Wikipedii | počet mluvčích (P1098) s rokem, zda jde o rodilé mluvčí, český popisek, odkaz na článek | [Wikidata](https://www.wikidata.org) – `data/wikidata.json`, stahuje `scripts/wikidata.mjs` v GitHub Actions jednou měsíčně | CC0 (volné dílo) |
 | ↳ názvy států, převod kódů | ISO 3166 česky/anglicky, ISO 639-1 → 639-3 | [`i18n-iso-countries`](https://github.com/michaelwittig/node-i18n-iso-countries), [`iso-639-3`](https://github.com/wooorm/iso-639-3) | MIT |
 | `countries-110m.json` | hranice států a pevnina | [world-atlas](https://github.com/topojson/world-atlas) z dat [Natural Earth](https://www.naturalearthdata.com) | ISC; Natural Earth je volné dílo |
+| `pevnina.json` | 31 741 teček pevniny pro částicový glóbus a stát, ve kterém každá leží | odvozeno z `countries-110m.json` skriptem `scripts/pevnina.mjs` | jako `countries-110m.json` |
 | `languages.json` | 163 jazyků s pozdravem, výslovností, zajímavostí a areálem | vlastní práce tohoto projektu | – |
 | `country-names.json` | české a anglické názvy států | vlastní práce | – |
 | `iso639.json` | převod kódů ISO 639-1 → 639-3 pro propojení s Glottologem | vlastní práce | – |
