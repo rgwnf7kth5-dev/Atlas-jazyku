@@ -10,5 +10,5 @@
     "check": "node scripts/validate.mjs && node scripts/build.mjs",
     "glottolog": "node scripts/glottolog.mjs"
   },
-  "engines": { "node": ">=20" }
+  "engines": { "node": ">=22" }
 }

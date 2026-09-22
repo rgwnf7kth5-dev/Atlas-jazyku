@@ -5,7 +5,7 @@
   publish = "dist"
 
 [build.environment]
-  NODE_VERSION = "20"
+  NODE_VERSION = "22"
 
 # /en bez lomítka i bez index.html vede na anglickou verzi
 [[redirects]]

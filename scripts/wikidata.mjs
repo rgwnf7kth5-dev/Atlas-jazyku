@@ -66,7 +66,9 @@ for (const r of mluvci) {
   if (hodnost === "DeprecatedRank") continue;
   const pocet = Math.round(+r.pocet.value);
   if (!(pocet > 0) || pocet > 2e9) continue;
-  const rok = r.cas ? +r.cas.value.slice(0, 4) : 0;
+  // rok z data typu „2010-01-01T…“; historické údaje (před rokem 1900, i před naším letopočtem) nepopisují dnešek
+  const rok = r.cas ? parseInt(r.cas.value, 10) : 0;
+  if (r.cas && !(rok >= 1900 && rok <= new Date().getFullYear() + 1)) continue;
   (kandidati[r.glotto.value] = kandidati[r.glotto.value] || []).push({
     pocet, rok, preferovany: hodnost === "PreferredRank", rodili: r.cast ? r.cast.value === PRVNI_JAZYK : false,
     druhy: !!r.cast && r.cast.value !== PRVNI_JAZYK
