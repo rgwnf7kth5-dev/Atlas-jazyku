@@ -35,7 +35,7 @@
  "hledejPlaceholder": "Search a language or country…",
  "domaciJmeno": "in its own words: {x}",
  "vyslovnost": "say it: “{x}”",
- "areal": "The glowing dots show the rough area where the language is spoken, not a country border.",
+ "areal": "The coloured patch is the rough area where the language is spoken, not a country border.",
  "aDalsich": "and {n} more",
  "miliardy": [
   "billion",

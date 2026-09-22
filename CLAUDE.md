@@ -32,8 +32,8 @@ Nasazení přes Netlify z větve `main` podle `netlify.toml` (build `npm run che
 - Od přiblížení 2× se u teček kreslí jména jazyků (přepínač „Jména“, výchozí zapnutý). Napřed jazyky z atlasu, pak ostatní; popisek, který by
   překryl jiný, se vynechá (mřížka obsazenosti 4 px). Nejvýš 450 popisků na snímek.
   Vybraný jazyk a jeho příbuzní (konce oblouků) mají jméno vždy, i bez přiblížení.
-- Areál jazyka = seznam kruhů `[délka, šířka, poloměr ve stupních]`; rozsvítí se tečky pevniny uvnitř kruhů (×1,3).
-  Státy v `zeme` se rozsvítí celé – jen tam, kde se jazykem opravdu mluví v celém státě.
+- Areál jazyka = seznam kruhů `[délka, šířka, poloměr ve stupních]`, kreslí se barvou rodiny oříznutý na pevninu
+  (jádro ×1,3, měkký okraj ×1,75). Státy v `zeme` se vybarví celé – jen tam, kde se jazykem opravdu mluví v celém státě.
 - Od vybraného jazyka vedou světelné oblouky k nejbližším příbuzným (nejvýš 6, podle nejhlubšího společného
   předka ve stromu Glottologu). U jazyka z atlasu jen k jiným jazykům atlasu, karta je vypisuje.
 
@@ -54,8 +54,8 @@ u každého pushe.
 ## Barvy
 
 - **Vzhled „Hvězdná mapa se sklem“** (vybral uživatel 22. 9. 2026 ze tří návrhů: „B se sklem z A“).
-  Glóbus je z částic: pevnina jsou tečky (`data/pevnina.json`), jazyky světélka, vybraný jazyk se rozzáří
-  barvou rodiny, kolem je atmosféra (prstenec ani obíhající satelit tam být nemají – uživatel je nechtěl), v rozích
+  Tečky (světélka) na glóbu jsou **jen jazyky**. Pevnina je plná plocha – v noci světlejší než moře, ve dne
+  tmavší (přání uživatele: tečky pevniny stejně velké jako jazyky mátly). Území vybraného jazyka má barvu rodiny, kolem je atmosféra (prstenec ani obíhající satelit tam být nemají – uživatel je nechtěl), v rozích
   HUD se souřadnicemi a počtem světélek na očích. Panely jsou „tekuté sklo“ (`.sklo`, `backdrop-filter`).
   Písma Chakra Petch (nadpisy), Outfit (text), JetBrains Mono (data).
 - **Noc a den.** Vzhled se řídí nastavením počítače (`prefers-color-scheme`, i za běhu), přepínač
@@ -71,13 +71,13 @@ u každého pushe.
 
 ## Výkon
 
-Glóbus má čtyři plátna nad sebou: `#podklad` (koule, síť, hranice – 2D), `#gl` (31 741 teček pevniny
-a 7 967 světélek – WebGL, bez něj záložní 2D), `#popisky` a `#globus` (oblouky a zaměřovač; bere myš).
+Glóbus má čtyři plátna nad sebou: `#podklad` (koule, pevnina, území vybraného jazyka, hranice – 2D),
+`#gl` (7 967 světélek – WebGL, bez něj záložní 2D), `#popisky` a `#globus` (oblouky a zaměřovač; bere myš).
 Každé se překresluje, jen když je potřeba. Neměř jen JS – drahá je rasterizace a skládání vrstev.
 `ctx.filter` (blur) stál 52 ms na snímek, proto se nepoužívá. Hustota pixelů 2D pláten je u velkého
-plátna omezená na 1,35. Koule s atmosférou se kreslí do zásoby, hranice států až od přiblížení 1,4×.
+plátna omezená na 1,35. Koule s atmosférou i stín koule se kreslí do zásoby; pevnina je jeden obrys
+(`objects.land`), hranice států se kreslí až od přiblížení 1,4×.
 Okrasný pohyb (světla na obloucích, obvod karty) po 20 s bez dotyku usne.
-Tečky pevniny vyrábí `node scripts/pevnina.mjs` (Fibonacciho spirála, 120 000 bodů, bitová mapa + stát).
 
 ## Ověření faktů
 

@@ -5,7 +5,6 @@ const UI = /*__UI__*/null;             // texty rozhraní obou jazyků {cs, en}
 const VYCHOZI = /*__VYCHOZI__*/"cs";   // jazyk, ve kterém stránka startuje
 const ARTEFAKT = /*__ARTEFAKT__*/false;
 const SVET = /*__SVET__*/null;
-const PEVNINA = /*__PEVNINA__*/null;   // tečky pevniny (bitová mapa, viz scripts/pevnina.mjs)
 const JAZYKY = /*__JAZYKY__*/null;
 const STATY_VSE = /*__STATY__*/null;
 const REJSTRIK = /*__REJSTRIK__*/null;
@@ -35,11 +34,12 @@ function tvar(n, tvary){ /* [1, 2–4, 5+, desetinné] – čeština je potřebu
 function plynule(t2){ return ((t2 *= 2) <= 1 ? t2 * t2 * t2 : (t2 -= 2) * t2 * t2 + 2) / 2; }
 
 /* ---------- mapa (smí selhat, stránka přežije) ---------- */
-let ZEME = [], globusOk = false;
+let ZEME = [], SOUS = null, globusOk = false;
 try {
   if (typeof d3 === "undefined" || !d3.geoOrthographic) throw new Error("chybí d3-geo");
   if (typeof topojson === "undefined") throw new Error("chybí topojson");
   ZEME = topojson.feature(SVET, SVET.objects.countries).features;
+  SOUS = topojson.feature(SVET, SVET.objects.land);
   globusOk = true;
 } catch (e) { console.error("Glóbus se nepodařilo připravit:", e); }
 const ZEME_PODLE_JMENA = {};
@@ -205,8 +205,8 @@ function postavPolici(filtr){
 $("hledej").addEventListener("input", function(e){ postavPolici(e.target.value); });
 
 /* ---------- glóbus: čtyři vrstvy nad sebou ----------
-   #podklad  – atmosféra, koule, síť a hranice (2D, jen když se pohne pohled)
-   #gl       – tečky pevniny a světélka jazyků (WebGL; když chybí, kreslí se 2D)
+   #podklad  – atmosféra, moře, pevnina, území vybraného jazyka, hranice (2D, jen když se pohne pohled)
+   #gl       – světélka jazyků (WebGL; když chybí, kreslí se 2D)
    #popisky  – jména jazyků
    #globus   – oblouky k příbuzným a zaměřovač vybraného místa; bere myš a prsty */
 const scena = $("scena"), platno = $("globus"), podklad = $("podklad"), platnoGl = $("gl"), platnoPopisky = $("popisky");
@@ -230,32 +230,15 @@ function rgb(hex){
 }
 function nactiBarvy(){
   const s = getComputedStyle(document.documentElement);
-  ["tecka-pevnina", "tecka-jazyk", "tecka-bod", "cyan", "fialova", "cervena", "hvezda", "koule1", "koule2", "popisek", "popisek-lem",
+  ["pevnina", "pobrezi", "stin-koule", "tecka-jazyk", "tecka-bod", "cyan", "fialova", "cervena", "hvezda", "koule1", "koule2", "popisek", "popisek-lem",
    "atmosfera", "atmosfera2", "sit", "hranice", "okraj-koule", "zamerovac-lem",
    "r-ie", "r-st", "r-an", "r-afro", "r-nk", "r-ost"].forEach(function(k){ barvy[k] = s.getPropertyValue("--" + k).trim(); });
 }
 
-/* tečky pevniny: rovnoměrně po kouli (Fibonacciho spirála), uložené jako bitová mapa – viz scripts/pevnina.mjs */
-let POCET_P = 0, pLon = null, pLat = null, pX = null, pY = null, pZ = null, pStat = null;
-function pripravPevninu(){
-  const dekoduj = function(b64){ const s = atob(b64), u = new Uint8Array(s.length); for (let i = 0; i < s.length; i++) u[i] = s.charCodeAt(i); return u; };
-  const bity = dekoduj(PEVNINA.bity), staty = dekoduj(PEVNINA.staty), N = PEVNINA.n, zlaty = Math.PI * (3 - Math.sqrt(5));
-  POCET_P = staty.length;
-  pLon = new Float32Array(POCET_P); pLat = new Float32Array(POCET_P);
-  pX = new Float32Array(POCET_P); pY = new Float32Array(POCET_P); pZ = new Float32Array(POCET_P); pStat = staty;
-  let k = 0;
-  for (let i = 0; i < N && k < POCET_P; i++) {
-    if (!(bity[i >> 3] & (1 << (i & 7)))) continue;
-    const f = Math.asin(1 - 2 * (i + 0.5) / N), l = (((zlaty * i * 180 / Math.PI) % 360 + 540) % 360 - 180) * R;
-    pLon[k] = l; pLat[k] = f;
-    pX[k] = Math.cos(f) * Math.cos(l); pY[k] = Math.cos(f) * Math.sin(l); pZ[k] = Math.sin(f);
-    k++;
-  }
-}
-let fPev = null; const fJaz = new Float32Array(POCET_B), zakladJaz = new Float32Array(POCET_B);   // příznaky teček: 0 obyčejná, 1 vybraná, 2 příbuzná, 3 pod myší
+const fJaz = new Float32Array(POCET_B), zakladJaz = new Float32Array(POCET_B);   // příznaky teček: 0 obyčejná, 1 vybraná, 2 příbuzná, 3 pod myší
 
 /* ---------- WebGL ---------- */
-let gl = null, glProg = null, glU = {}, glA = {}, glPev = null, glJaz = null;
+let gl = null, glProg = null, glU = {}, glA = {}, glJaz = null;
 const VS = [
   "attribute vec2 a_pos; attribute float a_flag;",
   "uniform float u_l0, u_sf0, u_cf0, u_r, u_dpr;",
@@ -315,7 +298,6 @@ function pripravGl(){
   };
   const jLon = new Float32Array(POCET_B), jLat = new Float32Array(POCET_B);
   for (let i = 0; i < POCET_B; i++) { jLon[i] = bLon[i]; jLat[i] = B[i][2] * R; }
-  glPev = vrstva(pLon, pLat, fPev);
   glJaz = vrstva(jLon, jLat, fJaz);
   gl.enable(gl.BLEND);
   return true;
@@ -323,12 +305,9 @@ function pripravGl(){
 function nahrajPriznaky(v){ if (!gl) return; gl.bindBuffer(gl.ARRAY_BUFFER, v.flag); gl.bufferSubData(gl.ARRAY_BUFFER, 0, v.data); }
 function barvaGl(u, hex, alfa){ const c = rgb(hex); gl.uniform4f(u, c[0], c[1], c[2], alfa); }
 
-/* velikosti teček v CSS pixelech; rostou s přiblížením, ať pevnina nezřídne */
+/* velikost světélek v CSS pixelech; s přiblížením mírně roste */
 function velikosti(){
-  const rozestup = 0.0102 * polomer;
-  const pev = Math.max(1.2, Math.min(8, rozestup * 0.55));
-  const jaz = Math.max(5, Math.min(13, 3.6 + polomer / 170));
-  return {pev: pev, pevVyber: Math.max(4, Math.min(24, rozestup * 1.7)), jaz: jaz};
+  return {jaz: Math.max(5, Math.min(13, 3.6 + polomer / 170))};
 }
 function barvaVyberu(){
   if (!vybrany) return barvy.cyan;
@@ -347,16 +326,9 @@ function kresliBodyGl(){
     gl.bindBuffer(gl.ARRAY_BUFFER, vrstva.flag); gl.enableVertexAttribArray(glA.flag); gl.vertexAttribPointer(glA.flag, 1, gl.FLOAT, false, 0, 0);
     gl.drawArrays(gl.POINTS, 0, vrstva.n);
   };
-  /* pevnina: obyčejné míchání */
-  gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
-  gl.uniform1f(glU.u_jadro, denni ? 0.35 : 0.85);
-  barvaGl(glU.u_b0, barvy["tecka-pevnina"], denni ? 0.8 : 0.72); barvaGl(glU.u_b1, vb, 1);
-  barvaGl(glU.u_b2, vb, 0.95); barvaGl(glU.u_b3, vb, 0.95);
-  gl.uniform4f(glU.u_vel, v.pev, v.pevVyber, v.pevVyber, v.pevVyber);
-  gl.uniform4f(glU.u_mek, 0, 0.9, 0.9, 0.9);
-  kresli(glPev);
   /* světélka jazyků: v noci se sčítají, takže hustá místa září víc; ve dne by sčítání na světlé kouli zmizelo */
-  if (!denni) gl.blendFunc(gl.ONE, gl.ONE);
+  gl.uniform1f(glU.u_jadro, denni ? 0.35 : 0.85);
+  if (denni) gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA); else gl.blendFunc(gl.ONE, gl.ONE);
   barvaGl(glU.u_b0, barvy["tecka-jazyk"], denni ? 0.9 : 0.8); barvaGl(glU.u_b1, vb, 1);
   barvaGl(glU.u_b2, barvy.fialova, 1); barvaGl(glU.u_b3, barvy["tecka-bod"], 1);
   if (denni) gl.uniform4f(glU.u_vel, v.jaz * 0.62, v.jaz * 1.9, v.jaz * 1.6, v.jaz * 2);
@@ -365,33 +337,10 @@ function kresliBodyGl(){
   kresli(glJaz);
 }
 
-/* ---------- záložní kreslení teček bez WebGL ---------- */
+/* ---------- záložní kreslení světélek bez WebGL ---------- */
 function kresliBody2D(){
-  const c = ctxBody, v = velikosti(), l0 = -rot[0] * R, f0 = -rot[1] * R, sf0 = Math.sin(f0), cf0 = Math.cos(f0);
-  const cx = sirka / 2 + posun, cy = vyska / 2, cl0 = Math.cos(l0), sl0 = Math.sin(l0), vb = barvaVyberu(), fp = fPev;
+  const c = ctxBody, v = velikosti(), vb = barvaVyberu();
   c.clearRect(0, 0, sirka, vyska);
-  const pasma = [[0, 0.35, 0.3], [0.35, 1.01, 0.75]], rp = v.pev / 2, kolecka = v.pev > 2.5;
-  c.fillStyle = barvy["tecka-pevnina"];
-  for (let p = 0; p < 2; p++) {
-    c.globalAlpha = pasma[p][2]; c.beginPath();
-    for (let i = 0; i < POCET_P; i++) {
-      const e = pX[i] * cl0 + pY[i] * sl0, z = sf0 * pZ[i] + cf0 * e;
-      if (z <= pasma[p][0] || z > pasma[p][1] || fp[i]) continue;
-      const x = cx + (pY[i] * cl0 - pX[i] * sl0) * polomer, y = cy - (cf0 * pZ[i] - sf0 * e) * polomer;
-      if (kolecka) { c.moveTo(x + rp, y); c.arc(x, y, rp, 0, 6.283185); } else c.rect(x - rp, y - rp, 2 * rp, 2 * rp);
-    }
-    c.fill();
-  }
-  c.globalAlpha = 0.85; c.fillStyle = vb; c.beginPath();
-  const rv = v.pevVyber * 0.3;
-  for (let i = 0; i < POCET_P; i++) {
-    if (!fp[i]) continue;
-    const e = pX[i] * cl0 + pY[i] * sl0;
-    if (sf0 * pZ[i] + cf0 * e <= 0) continue;
-    const x = cx + (pY[i] * cl0 - pX[i] * sl0) * polomer, y = cy - (cf0 * pZ[i] - sf0 * e) * polomer;
-    c.moveTo(x + rv, y); c.arc(x, y, rv, 0, 6.283185);
-  }
-  c.fill();
   c.globalAlpha = 0.85; c.fillStyle = barvy["tecka-jazyk"]; c.beginPath();
   const rj = v.jaz * 0.2;
   for (let i = 0; i < POCET_B; i++) { if (bVid[i] && !fJaz[i]) c.rect(bPx[i] - rj, bPy[i] - rj, 2 * rj, 2 * rj); }
@@ -468,9 +417,36 @@ function zoomProJazyk(j){
   return Math.max(1, Math.min(3.2, 0.8 / Math.max(Math.sin(Math.min(max, 1.45)), 0.02)));
 }
 
-/* ---------- podklad: atmosféra, koule, síť, hranice ---------- */
-/* koule s atmosférou se při otáčení nemění – kreslí se jednou do zásoby a pak se jen kopíruje */
-const koule = {platno: null, klic: "", kandidat: ""};
+/* ---------- podklad: atmosféra, moře, pevnina, území vybraného jazyka, hranice ---------- */
+/* koule s atmosférou a stín koule se při otáčení nemění – kreslí se jednou do zásoby a pak se jen kopírují */
+const koule = {platno: null, stin: null, klic: "", kandidat: ""};
+const kruh = globusOk ? d3.geoCircle() : null;
+function kresliStin(c, cx, cy, r){          /* koule k okraji tmavne, ať vypadá kulatě */
+  const g = c.createRadialGradient(cx - r * 0.3, cy - r * 0.35, r * 0.15, cx, cy, r);
+  g.addColorStop(0, "rgba(0,0,0,0)"); g.addColorStop(1, barvy["stin-koule"]);
+  c.fillStyle = g; c.beginPath(); c.arc(cx, cy, r, 0, 6.283185); c.fill();
+}
+function kresliUzemi(c){                    /* území vybraného jazyka barvou jeho rodiny */
+  if (!vybrany || vybrany.typ !== "atlas") return;
+  const barva = barvaVyberu();
+  if (vybrany.zeme.length) {
+    c.beginPath();
+    vybrany.zeme.forEach(function(n){ const f = ZEME_PODLE_JMENA[n]; if (f) cestaPodklad(f); });
+    c.globalAlpha = 0.9; c.fillStyle = barva; c.fill(); c.globalAlpha = 1;
+  }
+  if (vybrany.ob.length) {                  /* areál: kruhy oříznuté na pevninu, s měkkým okrajem */
+    c.save();
+    c.beginPath(); cestaPodklad(SOUS); c.clip();
+    c.fillStyle = barva;
+    c.globalAlpha = 0.35; c.beginPath();
+    vybrany.ob.forEach(function(o){ cestaPodklad(kruh.center([o[0], o[1]]).radius(o[2] * 1.75)()); });
+    c.fill();
+    c.globalAlpha = 0.9; c.beginPath();
+    vybrany.ob.forEach(function(o){ cestaPodklad(kruh.center([o[0], o[1]]).radius(o[2] * 1.3)()); });
+    c.fill();
+    c.restore();
+  }
+}
 function kresliKouli(c, cx, cy, r){
   let g = c.createRadialGradient(cx, cy, r * 0.9, cx, cy, r * 1.36);
   g.addColorStop(0, barvy.atmosfera); g.addColorStop(0.35, barvy.atmosfera2); g.addColorStop(1, "rgba(0,0,0,0)");
@@ -487,7 +463,11 @@ function kresliPodklad(){
     if (!koule.platno) koule.platno = document.createElement("canvas");
     koule.platno.width = podklad.width; koule.platno.height = podklad.height;
     const k = koule.platno.getContext("2d"); k.setTransform(dpr, 0, 0, dpr, 0, 0);
-    kresliKouli(k, cx, cy, r); koule.klic = klic;
+    kresliKouli(k, cx, cy, r);
+    if (!koule.stin) koule.stin = document.createElement("canvas");
+    koule.stin.width = podklad.width; koule.stin.height = podklad.height;
+    const st = koule.stin.getContext("2d"); st.setTransform(dpr, 0, 0, dpr, 0, 0);
+    kresliStin(st, cx, cy, r); koule.klic = klic;
   }
   koule.kandidat = klic;
   c.clearRect(0, 0, sirka, vyska);
@@ -496,10 +476,16 @@ function kresliPodklad(){
   } else kresliKouli(c, cx, cy, r);
   c.lineWidth = 1;
   c.beginPath(); cestaPodklad(sit); c.strokeStyle = barvy.sit; c.stroke();
-  if (zoom >= 1.4) {                   /* hranice států až při přiblížení – z dálky stačí tečky */
+  c.beginPath(); cestaPodklad(SOUS); c.fillStyle = barvy.pevnina; c.fill();
+  kresliUzemi(c);
+  if (zoom >= 1.4) {                   /* hranice států až při přiblížení – z dálky by jen rušily */
     c.beginPath(); ZEME.forEach(function(f){ cestaPodklad(f); });
-    c.strokeStyle = "rgba(" + barvy.hranice + "," + Math.min(0.34, (zoom - 1.4) * 0.12).toFixed(3) + ")"; c.lineWidth = 0.8; c.stroke();
+    c.strokeStyle = "rgba(" + barvy.hranice + "," + Math.min(0.4, (zoom - 1.4) * 0.14).toFixed(3) + ")"; c.lineWidth = 0.8; c.stroke();
   }
+  c.beginPath(); cestaPodklad(SOUS); c.strokeStyle = barvy.pobrezi; c.lineWidth = 0.9; c.stroke();
+  if (koule.klic === klic) {
+    c.setTransform(1, 0, 0, 1, 0, 0); c.drawImage(koule.stin, 0, 0); c.setTransform(dpr, 0, 0, dpr, 0, 0);
+  } else kresliStin(c, cx, cy, r);
 }
 
 /* ---------- jména jazyků malým písmem, bez překrývání ---------- */
@@ -721,20 +707,10 @@ window.addEventListener("resize", kresliHvezdy);
 /* ---------- příznaky teček podle výběru ---------- */
 let bodyVybranehoJazyka = [];
 function obnovPriznaky(){
-  const fp = fPev;
-  fp.fill(0); zakladJaz.fill(0);
+  zakladJaz.fill(0);
   dulezite = []; oblouky = [];
   bodyVybranehoJazyka = [];
   if (vybrany && vybrany.typ === "atlas") {
-    const staty = new Set(vybrany.zeme), kruhy = vybrany.ob.map(function(o){ const v = vektor(o[0], o[1]); v.push(Math.cos(o[2] * 1.3 * R)); return v; });
-    const vStatu = PEVNINA.nazvy.map(function(n){ return staty.has(n); });
-    for (let i = 0; i < POCET_P; i++) {
-      if (vStatu[pStat[i]]) { fp[i] = 1; continue; }
-      for (let k = 0; k < kruhy.length; k++) {
-        const c = kruhy[k];
-        if (pX[i] * c[0] + pY[i] * c[1] + pZ[i] * c[2] > c[3]) { fp[i] = 1; break; }
-      }
-    }
     for (let i = 0; i < POCET_B; i++) if (B[i][5] === vybrany.id) { zakladJaz[i] = 1; bodyVybranehoJazyka.push(i); }
     const hlavni = BOD_ATLASU[vybrany.id], pribuzni = vybrany.pribuzni;
     pribuzni.forEach(function(k){ zakladJaz[k] = 2; });
@@ -748,7 +724,7 @@ function obnovPriznaky(){
   }
   fJaz.set(zakladJaz);
   if (zvyraznenyBod >= 0) fJaz[zvyraznenyBod] = 3;
-  if (gl) { nahrajPriznaky(glPev); nahrajPriznaky(glJaz); }
+  if (gl) nahrajPriznaky(glJaz);
   teckyZmeneny = true; popiskyZmeneny = true; potrebaKresli = true;
 }
 function nastavZvyrazneni(i){
@@ -1265,13 +1241,11 @@ obnovSbirku(); postavPolici("");
 if (globusOk) {
   try {
     rot = [-prvni.stred[0], -prvni.stred[1]];
-    pripravPevninu();
-    fPev = new Float32Array(POCET_P);
     ctx = platno.getContext("2d"); ctxPodklad = podklad.getContext("2d"); ctxPopisky = platnoPopisky.getContext("2d");
     if (!ctx || !ctxPodklad || !ctxPopisky) throw new Error("plátno neumí 2D");
     if (!pripravGl()) { ctxBody = platnoGl.getContext("2d"); if (!ctxBody) throw new Error("plátno neumí kreslit tečky"); }
     platnoGl.addEventListener("webglcontextlost", function(e){ e.preventDefault(); });
-    platnoGl.addEventListener("webglcontextrestored", function(){ if (pripravGl()) { nahrajPriznaky(glPev); nahrajPriznaky(glJaz); teckyZmeneny = true; } });
+    platnoGl.addEventListener("webglcontextrestored", function(){ if (pripravGl()) { nahrajPriznaky(glJaz); teckyZmeneny = true; } });
     cestaPodklad = d3.geoPath(proj, ctxPodklad);
     nactiBarvy();
     new ResizeObserver(zmer).observe(platno);

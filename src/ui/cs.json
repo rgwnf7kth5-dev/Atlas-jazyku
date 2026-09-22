@@ -35,7 +35,7 @@
  "hledejPlaceholder": "Hledej jazyk nebo zemi…",
  "domaciJmeno": "vlastním jménem: {x}",
  "vyslovnost": "čteme „{x}“",
- "areal": "Rozsvícené tečky na glóbu ukazují přibližný jazykový areál, ne hranice státu.",
+ "areal": "Barevná plocha na glóbu je přibližný jazykový areál, ne hranice státu.",
  "aDalsich": "a dalších {n}",
  "miliardy": [
   "miliarda",

@@ -15,7 +15,6 @@ const glottolog = json("data/glottolog.json");
 const podrobnosti = json("data/podrobnosti.json");
 const rodinyCz = json("data/glottolog-families.cs.json");
 const svet = cti("data/countries-110m.json");
-const pevnina = json("data/pevnina.json");   // tečky pevniny pro částicový glóbus (scripts/pevnina.mjs)
 const knihovny = ["vendor/d3-array.min.js", "vendor/d3-geo.min.js", "vendor/topojson-client.min.js"].map(cti);
 const styly = cti("src/styles.css");
 const telo = cti("src/body.html");
@@ -65,7 +64,6 @@ function sestav(lang, { odkazJinam, artefakt }) {
     .replace('/*__VYCHOZI__*/"cs"', () => JSON.stringify(lang))
     .replace("/*__ARTEFAKT__*/false", () => String(!!artefakt))
     .replace("/*__SVET__*/null", () => doSkriptu(svet))
-    .replace("/*__PEVNINA__*/null", () => doSkriptu(pevnina))
     .replace("/*__JAZYKY__*/null", () => doSkriptu(JAZYKY))
     .replace("/*__STATY__*/null", () => doSkriptu(nazvyZemi))
     .replace("/*__REJSTRIK__*/null", () => doSkriptu(REJSTRIK))
