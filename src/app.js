@@ -245,6 +245,14 @@ function zoomProJazyk(j){
 
 /* ---------- jména jazyků malým písmem, bez překrývání ---------- */
 const POPISKY_OD = 2, POPISKU_MAX = 450, BUNKA = 4;
+let popiskyZapnute = true;
+function nastavPopisky(zapnout){
+  popiskyZapnute = !!zapnout;
+  $("tl-jmena").setAttribute("aria-pressed", popiskyZapnute ? "true" : "false");
+  try { localStorage.setItem("atlas-popisky", popiskyZapnute ? "1" : "0"); } catch (e) {}
+  potrebaKresli = true;
+}
+$("tl-jmena").addEventListener("click", function(){ nastavPopisky(!popiskyZapnute); });
 const poradiPopisku = new Int32Array(POCET_B);   // napřed jazyky z atlasu, pak ostatní
 (function(){ let k = 0;
   for (let i = 0; i < POCET_B; i++) if (B[i][5]) poradiPopisku[k++] = i;
@@ -261,7 +269,7 @@ function zmerPopisky(jenAtlas){
 let obsazeno = new Uint8Array(0);
 const umisteno = [];
 function kresliPopisky(rb){
-  if (zoom < POPISKY_OD) return;
+  if (!popiskyZapnute || zoom < POPISKY_OD) return;
   const vel = Math.min(11.5, 9.5 + (zoom - POPISKY_OD) * 0.4);
   const k = vel / 10, vys = vel + 3;
   const cw = Math.ceil(sirka / BUNKA) + 1, ch = Math.ceil(vyska / BUNKA) + 1;
@@ -393,7 +401,7 @@ function letKe(stred, cilZoom){
   if (bezPohybu.matches) { rot = cil; zoom = zc; uplatniZoom(); pulsDo = performance.now() + 2600; return; }
   prechod = {z: rot.slice(), k: cil, z2: zoom, k2: zc, zac: performance.now(), delka: 1100};
 }
-let posledni = 0;
+let posledni = 0, pulsBezi = false;
 function smycka(cas){
   requestAnimationFrame(smycka);
   let zmena = false;
@@ -408,7 +416,8 @@ function smycka(cas){
     zmena = true;
   }
   posledni = cas;
-  if (pulsDo > cas) zmena = true;
+  if (pulsDo > cas) { zmena = true; pulsBezi = true; }
+  else if (pulsBezi) { zmena = true; pulsBezi = false; }   // ještě jeden snímek, ať po pulzu nezůstane kroužek
   if (zmena || potrebaKresli) { kresli(cas); potrebaKresli = false; }
 }
 
@@ -722,6 +731,9 @@ if (globusOk) {
     let ulozeneOtaceni = null;
     try { ulozeneOtaceni = localStorage.getItem("atlas-otaceni"); } catch (e) {}
     nastavOtaceni(ulozeneOtaceni === "1");
+    let ulozenePopisky = null;
+    try { ulozenePopisky = localStorage.getItem("atlas-popisky"); } catch (e) {}
+    nastavPopisky(ulozenePopisky !== "0");
     requestAnimationFrame(smycka);
     pulsDo = performance.now() + 2600;
   } catch (e) { console.error("Kreslení glóbu selhalo:", e); globusOk = false; }

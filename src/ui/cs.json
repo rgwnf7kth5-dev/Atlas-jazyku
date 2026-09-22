@@ -86,5 +86,7 @@
   "Australia": "Austrálie"
  },
  "otacet": "Otáčet",
- "otacetPopis": "Zeměkoule se bude sama pomalu otáčet"
+ "otacetPopis": "Zeměkoule se bude sama pomalu otáčet",
+ "jmena": "Jména",
+ "jmenaPopis": "Při přiblížení ukázat u teček jména jazyků"
 }

@@ -7,6 +7,7 @@
  <symbol id="i-zvuk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M4 9.2h3.4L12 5v14l-4.6-4.2H4z" fill="currentColor"/><path d="M16 9.4a3.7 3.7 0 0 1 0 5.2M18.7 6.7a7.5 7.5 0 0 1 0 10.6" stroke-linecap="round"/></symbol>
  <symbol id="i-lupa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="10.6" cy="10.6" r="6.6"/><path d="M15.4 15.4L21 21"/></symbol>
  <symbol id="i-otacet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-2.4-5.7"/><path d="M20 4v4.5h-4.5"/></symbol>
+ <symbol id="i-jmena" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 12.2V5.5a2 2 0 0 1 2-2h6.7l8.3 8.3a2 2 0 0 1 0 2.8l-5.9 5.9a2 2 0 0 1-2.8 0z"/><circle cx="8" cy="8" r="1.5" fill="currentColor" stroke="none"/></symbol>
  <symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></symbol>
  <symbol id="i-minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M5 12h14"/></symbol>
  <symbol id="i-krizek" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></symbol>
@@ -41,7 +42,10 @@
    <div class="ovladani">
     <button class="tl hlavni" id="tl-nahoda" type="button"><svg aria-hidden="true"><use href="#i-kostka"/></svg><span data-t="prekvap">{{prekvap}}</span></button>
     <button class="tl" id="tl-cely" type="button" hidden><svg aria-hidden="true"><use href="#i-svet"/></svg><span data-t="celySvet">{{celySvet}}</span></button>
-    <button class="tl otacet" id="tl-otacet" type="button" aria-pressed="false" title="{{otacetPopis}}" data-t-title="otacetPopis"><svg aria-hidden="true"><use href="#i-otacet"/></svg><span data-t="otacet">{{otacet}}</span></button>
+    <div class="volby">
+     <button class="tl volba otacet" id="tl-otacet" type="button" aria-pressed="false" title="{{otacetPopis}}" data-t-title="otacetPopis"><svg aria-hidden="true"><use href="#i-otacet"/></svg><span data-t="otacet">{{otacet}}</span></button>
+     <button class="tl volba" id="tl-jmena" type="button" aria-pressed="true" title="{{jmenaPopis}}" data-t-title="jmenaPopis"><svg aria-hidden="true"><use href="#i-jmena"/></svg><span data-t="jmena">{{jmena}}</span></button>
+    </div>
     <div class="zoom-ovl" role="group" aria-label="{{zoomSkupina}}" data-t-aria-label="zoomSkupina">
      <button class="kolo" id="tl-oddal" type="button" aria-label="{{oddalit}}" data-t-aria-label="oddalit"><svg aria-hidden="true"><use href="#i-minus"/></svg></button>
      <span class="zoom-hod" id="zoom-hod">1,0&times;</span>

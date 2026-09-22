@@ -143,9 +143,9 @@ h1{
 .tl:active{transform:translate(2px,2px); box-shadow:1px 1px 0 var(--tvrdy-stin)}
 .tl svg{width:17px;height:17px;flex:none}
 .tl.hlavni{background:var(--akcent); color:var(--akcent-text)}
-.tl.otacet{padding:7px 13px; font-size:.8rem}
-.tl.otacet svg{transition:transform .3s ease}
-.tl.otacet[aria-pressed="true"]{background:var(--hvezda); color:#161A3A}
+.volby{display:flex; gap:8px}
+.tl.volba{padding:7px 13px; font-size:.8rem}
+.tl.volba[aria-pressed="true"]{background:var(--hvezda); color:#161A3A}
 .tl.otacet[aria-pressed="true"] svg{animation:toceni 2.4s linear infinite}
 @keyframes toceni{to{transform:rotate(360deg)}}
 .zoom-ovl{

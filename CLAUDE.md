@@ -29,7 +29,7 @@ Nasazení přes Netlify z větve `main` podle `netlify.toml` (build `npm run che
   Nový text v šabloně proto musí dostat i tuhle značku. Na webu se při přepnutí mění adresa `/` ↔ `/en/`.
 - **Samo-otáčení je volba, výchozí vypnutá** (přání uživatele: při přiblížení nešlo zaměřit bod).
   Výběr jazyka ho vypne. Při přiblížení se otáčí pomaleji (rychlost / zoom).
-- Od přiblížení 2× se u teček kreslí jména jazyků. Napřed jazyky z atlasu, pak ostatní; popisek, který by
+- Od přiblížení 2× se u teček kreslí jména jazyků (přepínač „Jména“, výchozí zapnutý). Napřed jazyky z atlasu, pak ostatní; popisek, který by
   překryl jiný, se vynechá (mřížka obsazenosti 4 px). Nejvýš 450 popisků na snímek.
 - Areál jazyka = seznam kruhů `[délka, šířka, poloměr ve stupních]`, kreslí se oříznutý na pevninu.
   Státy v `zeme` se kreslí celé – jen tam, kde se jazykem opravdu mluví v celém státě.
