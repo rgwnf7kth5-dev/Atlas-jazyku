@@ -13,6 +13,7 @@
   --sit:rgba(255,255,255,.5);
   --obrys:#161A3A;
   --tecky:#3F4873;
+  --popisek:#161A3A; --popisek-lem:rgba(255,255,255,.92);
   --akcent:#E8337F; --akcent-text:#FFFFFF;
   --hvezda:#FFB800;
   --r-ie:#2E63D6; --r-st:#E2544A; --r-an:#0A9BB5;
@@ -32,6 +33,7 @@
   --sit:rgba(255,255,255,.12);
   --obrys:#070A24;
   --tecky:#2B3563;
+  --popisek:#0B0F2E; --popisek-lem:rgba(213,222,240,.92);
   --akcent:#FF6FAE; --akcent-text:#1A0A20;
   --hvezda:#FFD45E;
   --r-ie:#5E92EC; --r-st:#E4645A; --r-an:#12A3BC;
@@ -50,6 +52,7 @@
   --sit:rgba(255,255,255,.12);
   --obrys:#070A24;
   --tecky:#2B3563;
+  --popisek:#0B0F2E; --popisek-lem:rgba(213,222,240,.92);
   --akcent:#FF6FAE; --akcent-text:#1A0A20;
   --hvezda:#FFD45E;
   --r-ie:#5E92EC; --r-st:#E4645A; --r-an:#12A3BC;
@@ -140,6 +143,11 @@ h1{
 .tl:active{transform:translate(2px,2px); box-shadow:1px 1px 0 var(--tvrdy-stin)}
 .tl svg{width:17px;height:17px;flex:none}
 .tl.hlavni{background:var(--akcent); color:var(--akcent-text)}
+.tl.otacet{padding:7px 13px; font-size:.8rem}
+.tl.otacet svg{transition:transform .3s ease}
+.tl.otacet[aria-pressed="true"]{background:var(--hvezda); color:#161A3A}
+.tl.otacet[aria-pressed="true"] svg{animation:toceni 2.4s linear infinite}
+@keyframes toceni{to{transform:rotate(360deg)}}
 .zoom-ovl{
   display:flex; align-items:center; gap:2px; padding:3px;
   background:var(--papir2); border:2.5px solid var(--inkoust); border-radius:999px;

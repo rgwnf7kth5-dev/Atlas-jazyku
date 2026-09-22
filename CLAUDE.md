@@ -24,6 +24,13 @@ Nasazení přes Netlify z větve `main` podle `netlify.toml` (build `npm run che
 - **Stránka nesmí záviset na CDN.** d3-geo, d3-array a topojson-client jsou ve `vendor/` a build je vkládá
   do stránky. Dřívější verze tahala d3 z cdnjs a v náhledu artefaktu pak nefungovalo vůbec nic.
 - Glóbus je v pojistce: když selže, police jazyků a karty musí fungovat dál.
+- **Přepnutí jazyka je na místě, ne odkazem do nového listu** (přání uživatele). Každá stránka nese oba jazyky;
+  texty v šabloně mají `data-t`, `data-t-title`, `data-t-aria-label`, `data-t-placeholder` a JS je přepíše.
+  Nový text v šabloně proto musí dostat i tuhle značku. Na webu se při přepnutí mění adresa `/` ↔ `/en/`.
+- **Samo-otáčení je volba, výchozí vypnutá** (přání uživatele: při přiblížení nešlo zaměřit bod).
+  Výběr jazyka ho vypne. Při přiblížení se otáčí pomaleji (rychlost / zoom).
+- Od přiblížení 2× se u teček kreslí jména jazyků. Napřed jazyky z atlasu, pak ostatní; popisek, který by
+  překryl jiný, se vynechá (mřížka obsazenosti 4 px). Nejvýš 450 popisků na snímek.
 - Areál jazyka = seznam kruhů `[délka, šířka, poloměr ve stupních]`, kreslí se oříznutý na pevninu.
   Státy v `zeme` se kreslí celé – jen tam, kde se jazykem opravdu mluví v celém státě.
 

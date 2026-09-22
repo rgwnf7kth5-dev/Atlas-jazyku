@@ -84,5 +84,7 @@
   "North America": "Severní Amerika",
   "South America": "Jižní Amerika",
   "Australia": "Austrálie"
- }
+ },
+ "otacet": "Otáčet",
+ "otacetPopis": "Zeměkoule se bude sama pomalu otáčet"
 }

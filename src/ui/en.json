@@ -84,5 +84,7 @@
   "North America": "North America",
   "South America": "South America",
   "Australia": "Australia"
- }
+ },
+ "otacet": "Spin",
+ "otacetPopis": "Let the globe spin slowly by itself"
 }

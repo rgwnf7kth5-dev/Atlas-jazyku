@@ -24,35 +24,47 @@ const escHtml = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").repl
 // data jdou do <script>, proto „<“ zapíšu jako < – řetězec „</script>“ v datech by stránku rozbil
 const doSkriptu = hodnota => (typeof hodnota === "string" ? hodnota : JSON.stringify(hodnota)).replace(/</g, "\\u003c");
 
-function sestav(lang, { odkazJinam, artefakt }) {
-  const ui = json(`src/ui/${lang}.json`);
-  const jiny = lang === "cs" ? "en" : "cs";
+// texty rozhraní obou jazyků; {pocet} doplním hned tady
+const UI = {};
+for (const l of ["cs", "en"]) {
+  const ui = json(`src/ui/${l}.json`);
   const pocet = glottolog.body.length.toLocaleString(ui.locale);
-  const T = { ...ui, podnadpis: ui.podnadpis.replace("{pocet}", pocet), legenda: ui.legenda.replace("{pocet}", pocet) };
+  UI[l] = { ...ui, podnadpis: ui.podnadpis.replace("{pocet}", pocet), legenda: ui.legenda.replace("{pocet}", pocet) };
+}
+// každá stránka nese oba jazyky, aby šlo přepnout na místě (bez nového listu a bez ztráty výběru)
+const JAZYKY = jazykyAtlasu.map(j => {
+  const t = {};
+  for (const l of ["cs", "en"]) {
+    const p = j[l];
+    t[l] = { n: p.nazev, prep: p.vyslovnost, rod: p.rodina, fakt: p.fakt };
+    if (p.pozdrav) t[l].pis = p.pozdrav;
+  }
+  return { id: j.id, sk: j.skupina, pis0: j.pozdrav, dom: j.domaci, mlu: j.mluvcich, kod: j.kod,
+           stred: j.stred, zeme: j.zeme, ob: j.areal, t };
+});
+const REJSTRIK = {
+  r: { cs: glottolog.rodiny.map(r => rodinyCz[r] || r), en: glottolog.rodiny.map(r => RODINY_EN[r] || r) },
+  m: { cs: glottolog.makro.map(m => (m && UI.cs.makro[m]) || ""), en: glottolog.makro.map(m => (m && UI.en.makro[m]) || "") },
+  b: glottolog.body
+};
 
-  const JAZYKY = jazykyAtlasu.map(j => {
-    const p = j[lang];
-    return { id: j.id, sk: j.skupina, pis: p.pozdrav || j.pozdrav, dom: j.domaci, mlu: j.mluvcich, kod: j.kod,
-             stred: j.stred, zeme: j.zeme, ob: j.areal, n: p.nazev, prep: p.vyslovnost, rod: p.rodina, fakt: p.fakt };
-  });
-  const REJSTRIK = {
-    r: glottolog.rodiny.map(r => lang === "cs" ? (rodinyCz[r] || r) : (RODINY_EN[r] || r)),
-    m: glottolog.makro.map(m => (m && T.makro[m]) || ""),
-    b: glottolog.body
-  };
+function sestav(lang, { odkazJinam, artefakt }) {
+  const T = UI[lang];
+  const jiny = lang === "cs" ? "en" : "cs";
 
   const zastupne = { ...T, odkazJinam, jinyKod: jiny };
   let html = telo.replace(/\{\{(\w+)\}\}/g, (_, k) => {
     if (!(k in zastupne)) throw new Error(`V šabloně je {{${k}}}, ale v src/ui/${lang}.json chybí.`);
     return escHtml(zastupne[k]);
   });
-  if (artefakt) html = html.replace('id="jazyk-prepinac"', 'id="jazyk-prepinac" target="_blank" rel="noopener"');
 
   const skript = aplikace
-    .replace("/*__UI__*/null", () => doSkriptu(T))
+    .replace("/*__UI__*/null", () => doSkriptu(UI))
+    .replace('/*__VYCHOZI__*/"cs"', () => JSON.stringify(lang))
+    .replace("/*__ARTEFAKT__*/false", () => String(!!artefakt))
     .replace("/*__SVET__*/null", () => doSkriptu(svet))
     .replace("/*__JAZYKY__*/null", () => doSkriptu(JAZYKY))
-    .replace("/*__STATY__*/null", () => doSkriptu(nazvyZemi[lang]))
+    .replace("/*__STATY__*/null", () => doSkriptu(nazvyZemi))
     .replace("/*__REJSTRIK__*/null", () => doSkriptu(REJSTRIK));
   const skripty = knihovny.map(k => `<script>${k}</script>`).join("\n") + `\n<script>${skript}</script>`;
 

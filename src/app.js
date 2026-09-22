@@ -1,11 +1,15 @@
 /* Atlas jazyků – glóbus, police jazyků a karty. Build sem vkládá data i texty rozhraní. */
 (function(){
 "use strict";
-const T = /*__UI__*/null;
+const UI = /*__UI__*/null;             // texty rozhraní obou jazyků {cs, en}
+const VYCHOZI = /*__VYCHOZI__*/"cs";   // jazyk, ve kterém stránka startuje
+const ARTEFAKT = /*__ARTEFAKT__*/false;
 const SVET = /*__SVET__*/null;
 const JAZYKY = /*__JAZYKY__*/null;
-const STATY = /*__STATY__*/null;
+const STATY_VSE = /*__STATY__*/null;
 const REJSTRIK = /*__REJSTRIK__*/null;
+let T = UI[VYCHOZI];
+let STATY = STATY_VSE[VYCHOZI];
 
 const SKUPINY = ["ie", "st", "an", "afro", "nk", "ost"];   // pořadí je součást ověření palety
 const R = Math.PI / 180;
@@ -26,7 +30,6 @@ function tvar(n, tvary){ /* [1, 2–4, 5+] – čeština je potřebuje, angličt
   return tvary[2];
 }
 function plynule(t2){ return ((t2 *= 2) <= 1 ? t2 * t2 * t2 : (t2 -= 2) * t2 * t2 + 2) / 2; }
-document.documentElement.lang = T.lang;
 
 /* ---------- mapa (smí selhat, stránka přežije) ---------- */
 let ZEME = [], PEVNINA = null, globusOk = false;
@@ -45,8 +48,19 @@ const PODLE_ID = {}, V_ZEMI = {};
 JAZYKY.forEach(function(j){
   PODLE_ID[j.id] = j;
   j.zeme.forEach(function(z){ (V_ZEMI[z] = V_ZEMI[z] || []).push(j); });
-  j.hledat = bezDiakritiky([j.n, j.dom, j.pis, j.prep, j.rod].concat(j.zeme.map(nazevZeme)).join(" "));
 });
+/* texty jazyků v aktuálním jazyce rozhraní; hledat jde oběma jazyky */
+function prelozData(){
+  JAZYKY.forEach(function(j){
+    const p = j.t[T.lang];
+    j.n = p.n; j.prep = p.prep; j.rod = p.rod; j.fakt = p.fakt; j.pis = p.pis || j.pis0;
+    j.hledat = bezDiakritiky([j.t.cs.n, j.t.en.n, j.dom, j.pis, j.prep, j.rod]
+      .concat(j.zeme.map(function(z){ return STATY_VSE.cs[z] + " " + STATY_VSE.en[z]; })).join(" "));
+  });
+  REJSTRIK.rr = REJSTRIK.r[T.lang];
+  REJSTRIK.mm = REJSTRIK.m[T.lang];
+}
+prelozData();
 const B = REJSTRIK.b, POCET_B = B.length;
 const bLon = new Float64Array(POCET_B), bSinLat = new Float64Array(POCET_B), bCosLat = new Float64Array(POCET_B);
 const bPx = new Float32Array(POCET_B), bPy = new Float32Array(POCET_B), bVid = new Uint8Array(POCET_B);
@@ -142,7 +156,7 @@ function postavPolici(filtr){
       sekce.appendChild(nadpis(T.rejstrik + " (" + vRejstriku + (vRejstriku >= 80 ? "+" : "") + ")", null));
       const mrizka = document.createElement("div"); mrizka.className = "mrizka";
       nalez.forEach(function(i){
-        const tl = tlacitko(B[i][0], REJSTRIK.r[B[i][3]], null, "tecka-jaz");
+        const tl = tlacitko(B[i][0], REJSTRIK.rr[B[i][3]], null, "tecka-jaz");
         tl.addEventListener("click", function(){ vyberBod(i); });
         mrizka.appendChild(tl);
       });
@@ -176,7 +190,7 @@ let vybrany = null;
 
 function nactiBarvy(){
   const s = getComputedStyle(document.documentElement);
-  ["ocean","ocean2","pevnina","pevnina-linka","sit","obrys","tecky","papir2","akcent","zare",
+  ["ocean","ocean2","pevnina","pevnina-linka","sit","obrys","tecky","papir2","akcent","zare","popisek","popisek-lem",
    "r-ie","r-st","r-an","r-afro","r-nk","r-ost"].forEach(function(k){ barvy[k] = s.getPropertyValue("--" + k).trim(); });
   barvyNeplatne = false; oceanGrad = null; zareGrad = null;
 }
@@ -227,6 +241,51 @@ function zoomProJazyk(j){
   });
   if (!max) return 3.2;
   return Math.max(1, Math.min(3.2, 0.8 / Math.max(Math.sin(Math.min(max, 1.45)), 0.02)));
+}
+
+/* ---------- jména jazyků malým písmem, bez překrývání ---------- */
+const POPISKY_OD = 2, POPISKU_MAX = 450, BUNKA = 4;
+const poradiPopisku = new Int32Array(POCET_B);   // napřed jazyky z atlasu, pak ostatní
+(function(){ let k = 0;
+  for (let i = 0; i < POCET_B; i++) if (B[i][5]) poradiPopisku[k++] = i;
+  for (let i = 0; i < POCET_B; i++) if (!B[i][5]) poradiPopisku[k++] = i; })();
+const sirka10 = new Float32Array(POCET_B);          // šířka popisku při písmu 10 px
+const PISMO = "px Nunito, system-ui, sans-serif";
+function textPopisku(i){ const id = B[i][5]; return id && PODLE_ID[id] ? PODLE_ID[id].n : B[i][0]; }
+function zmerPopisky(jenAtlas){
+  if (!globusOk) return;
+  ctx.save(); ctx.font = "700 10" + PISMO;
+  for (let i = 0; i < POCET_B; i++) if (!jenAtlas || B[i][5]) sirka10[i] = ctx.measureText(textPopisku(i)).width;
+  ctx.restore(); potrebaKresli = true;
+}
+let obsazeno = new Uint8Array(0);
+const umisteno = [];
+function kresliPopisky(rb){
+  if (zoom < POPISKY_OD) return;
+  const vel = Math.min(11.5, 9.5 + (zoom - POPISKY_OD) * 0.4);
+  const k = vel / 10, vys = vel + 3;
+  const cw = Math.ceil(sirka / BUNKA) + 1, ch = Math.ceil(vyska / BUNKA) + 1;
+  if (obsazeno.length < cw * ch) obsazeno = new Uint8Array(cw * ch); else obsazeno.fill(0, 0, cw * ch);
+  umisteno.length = 0;
+  for (let q = 0; q < POCET_B && umisteno.length < POPISKU_MAX; q++) {
+    const i = poradiPopisku[q];
+    if (!bVid[i]) continue;
+    const x = bPx[i] + rb + 3, y = bPy[i], w = sirka10[i] * k;
+    if (x < 2 || y < vys || y > vyska - vys || x + w > sirka - 2) continue;
+    const x0 = ((bPx[i] - rb - 2) / BUNKA) | 0, x1 = ((x + w + 3) / BUNKA) | 0;
+    const y0 = ((y - vys / 2) / BUNKA) | 0, y1 = ((y + vys / 2) / BUNKA) | 0;
+    let volno = true;
+    for (let yy = y0; yy <= y1 && volno; yy++) { const r = yy * cw; for (let xx = x0; xx <= x1; xx++) if (obsazeno[r + xx]) { volno = false; break; } }
+    if (!volno) continue;
+    for (let yy = y0; yy <= y1; yy++) { const r = yy * cw; for (let xx = x0; xx <= x1; xx++) obsazeno[r + xx] = 1; }
+    umisteno.push(i, x, y);
+  }
+  ctx.font = "700 " + vel.toFixed(1) + PISMO;
+  ctx.textBaseline = "middle"; ctx.lineJoin = "round";
+  ctx.lineWidth = 3; ctx.strokeStyle = barvy["popisek-lem"];
+  for (let n = 0; n < umisteno.length; n += 3) ctx.strokeText(textPopisku(umisteno[n]), umisteno[n + 1], umisteno[n + 2]);
+  ctx.fillStyle = barvy.popisek;
+  for (let n = 0; n < umisteno.length; n += 3) ctx.fillText(textPopisku(umisteno[n]), umisteno[n + 1], umisteno[n + 2]);
 }
 
 function spocitejBody(){
@@ -307,6 +366,7 @@ function kresli(cas){
     ctx.fillStyle = barvy.akcent; ctx.fill(); ctx.lineWidth = 2.2; ctx.strokeStyle = barvy.papir2; ctx.stroke();
   }
 
+  kresliPopisky(rb);
   ctx.beginPath(); cesta({type: "Sphere"}); ctx.lineWidth = 3; ctx.strokeStyle = barvy.obrys; ctx.stroke();
 
   if (vybrany) {
@@ -344,7 +404,7 @@ function smycka(cas){
     if (k >= 1) { const let2 = prechod.delka > 500; prechod = null; if (let2) pulsDo = cas + 2600; }
     zmena = true;
   } else if (autoOtaceni && !tahne) {
-    rot[0] = (rot[0] + Math.min(64, cas - (posledni || cas)) * 0.006) % 360;
+    rot[0] = (rot[0] + Math.min(64, cas - (posledni || cas)) * 0.006 / zoom) % 360;
     zmena = true;
   }
   posledni = cas;
@@ -433,7 +493,7 @@ function najedNaBod(e){
   if (i === zvyraznenyBod && (i < 0 || !bublinaBod.hidden)) return;
   if (!(vybrany && vybrany.typ === "rejstrik")) { zvyraznenyBod = i; potrebaKresli = true; }
   if (i < 0) { bublinaBod.hidden = true; return; }
-  bublinaBod.textContent = B[i][0] + " · " + REJSTRIK.r[B[i][3]];
+  bublinaBod.textContent = B[i][0] + " · " + REJSTRIK.rr[B[i][3]];
   bublinaBod.hidden = false;
   umisti(bublinaBod, e);
 }
@@ -471,11 +531,18 @@ document.addEventListener("keydown", function(e){ if (e.key === "Escape") { okno
 
 /* ---------- výběr ---------- */
 function poVyberu(cilZoom){
-  autoOtaceni = false; okno.hidden = true; bublinaBod.hidden = true;
+  if (autoOtaceni) nastavOtaceni(false);   // vybraný jazyk ať neujíždí z očí
+  okno.hidden = true; bublinaBod.hidden = true;
   if (globusOk) { letKe(vybrany.stred, cilZoom); potrebaKresli = true; }
   $("tl-cely").hidden = false;
   $("napoveda").textContent = T.napovedaVyber;
 }
+function nastavOtaceni(zapnout){
+  autoOtaceni = !!zapnout;
+  $("tl-otacet").setAttribute("aria-pressed", autoOtaceni ? "true" : "false");
+  try { localStorage.setItem("atlas-otaceni", autoOtaceni ? "1" : "0"); } catch (e) {}
+}
+$("tl-otacet").addEventListener("click", function(){ nastavOtaceni(!autoOtaceni); });
 function oznacTlacitka(id){
   Array.prototype.forEach.call(document.querySelectorAll(".jaz[data-id]"), function(el){
     const je = el.dataset.id === id;
@@ -503,8 +570,7 @@ function vyberBod(i){
   oznacTlacitka(null);
 }
 function odznac(){
-  vybrany = null; zvyraznenyBod = -1;
-  autoOtaceni = !bezPohybu.matches; prechod = null;
+  vybrany = null; zvyraznenyBod = -1; prechod = null;
   if (globusOk) plynulyZoom(1);
   $("karta").hidden = true; $("tl-cely").hidden = true;
   okno.hidden = true; bublinaBod.hidden = true; potrebaKresli = true;
@@ -561,8 +627,8 @@ function ukazKartuBodu(i){
   $("k-nazev").textContent = B[i][0];
   $("k-domaci").textContent = T.tecka;
   const od = $("k-odznak");
-  const oblast = REJSTRIK.m[B[i][4]];
-  od.textContent = REJSTRIK.r[B[i][3]] + (oblast ? " · " + oblast : "");
+  const oblast = REJSTRIK.mm[B[i][4]];
+  od.textContent = REJSTRIK.rr[B[i][3]] + (oblast ? " · " + oblast : "");
   od.hidden = false;
   const p = $("k-pozn");
   p.textContent = t("teckaPozn", {a: cislo(POCET_B), b: JAZYKY.length});
@@ -601,6 +667,42 @@ tlPrehraj.addEventListener("click", function(){
   } catch (e) { stav.textContent = t("zvukChyba", {x: j.prep}); }
 });
 
+/* ---------- přepnutí jazyka bez nového listu ---------- */
+const adresa = location.pathname.replace(/index\.html$/, "");
+const korenWebu = VYCHOZI === "en" ? adresa.replace(/en\/$/, "") : adresa;
+const odkazJinam = $("jazyk-prepinac");
+const puvodniOdkaz = odkazJinam.getAttribute("href");
+function prelozStranku(){
+  document.documentElement.lang = T.lang;
+  document.title = T.nazev;
+  Array.prototype.forEach.call(document.querySelectorAll("[data-t]"), function(el){ el.textContent = T[el.dataset.t]; });
+  [["title", "tTitle"], ["aria-label", "tAriaLabel"], ["placeholder", "tPlaceholder"]].forEach(function(a){
+    Array.prototype.forEach.call(document.querySelectorAll("[data-t-" + a[0] + "]"), function(el){ el.setAttribute(a[0], T[el.dataset[a[1]]]); });
+  });
+  const jiny = T.lang === "cs" ? "en" : "cs";
+  odkazJinam.setAttribute("hreflang", jiny); odkazJinam.setAttribute("lang", jiny);
+  if (!ARTEFAKT && location.protocol !== "file:") odkazJinam.setAttribute("href", jiny === "en" ? korenWebu + "en/" : korenWebu);
+  else odkazJinam.setAttribute("href", T.lang === VYCHOZI ? puvodniOdkaz : "#");
+}
+function prepniJazyk(lang){
+  T = UI[lang]; STATY = STATY_VSE[lang];
+  prelozData(); prelozStranku(); zmerPopisky(true);
+  obnovSbirku();
+  postavPolici($("hledej").value);
+  zobrazenyZoom = ""; if (globusOk) uplatniZoom();
+  okno.hidden = true; bublinaBod.hidden = true;
+  if (vybrany && vybrany.typ === "atlas") { ukazKartu(PODLE_ID[vybrany.id]); oznacTlacitka(vybrany.id); }
+  else if (vybrany && vybrany.typ === "rejstrik") ukazKartuBodu(vybrany.i);
+  $("napoveda").textContent = vybrany ? T.napovedaVyber : T.napovedaStart;
+  if (!ARTEFAKT && location.protocol !== "file:" && history.replaceState) {
+    try { history.replaceState(null, "", lang === "en" ? korenWebu + "en/" : korenWebu); } catch (e) {}
+  }
+}
+odkazJinam.addEventListener("click", function(e){
+  e.preventDefault();
+  prepniJazyk(T.lang === "cs" ? "en" : "cs");
+});
+
 /* ---------- start ---------- */
 obnovSbirku();
 const prvni = PODLE_ID[T.lang === "en" ? "en" : "cs"];
@@ -615,6 +717,11 @@ if (globusOk) {
     rot = [-prvni.stred[0], -prvni.stred[1]];
     new ResizeObserver(zmer).observe(platno);
     zmer();
+    zmerPopisky(false);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(function(){ zmerPopisky(false); });
+    let ulozeneOtaceni = null;
+    try { ulozeneOtaceni = localStorage.getItem("atlas-otaceni"); } catch (e) {}
+    nastavOtaceni(ulozeneOtaceni === "1");
     requestAnimationFrame(smycka);
     pulsDo = performance.now() + 2600;
   } catch (e) { console.error("Kreslení glóbu selhalo:", e); globusOk = false; }

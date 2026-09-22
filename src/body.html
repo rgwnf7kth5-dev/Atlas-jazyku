@@ -6,6 +6,7 @@
  <symbol id="i-svet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="9.2"/><path d="M2.8 12h18.4M12 2.8c2.6 2.6 3.9 6 3.9 9.2s-1.3 6.6-3.9 9.2c-2.6-2.6-3.9-6-3.9-9.2S9.4 5.4 12 2.8z"/></symbol>
  <symbol id="i-zvuk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M4 9.2h3.4L12 5v14l-4.6-4.2H4z" fill="currentColor"/><path d="M16 9.4a3.7 3.7 0 0 1 0 5.2M18.7 6.7a7.5 7.5 0 0 1 0 10.6" stroke-linecap="round"/></symbol>
  <symbol id="i-lupa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="10.6" cy="10.6" r="6.6"/><path d="M15.4 15.4L21 21"/></symbol>
+ <symbol id="i-otacet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-2.4-5.7"/><path d="M20 4v4.5h-4.5"/></symbol>
  <symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></symbol>
  <symbol id="i-minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M5 12h14"/></symbol>
  <symbol id="i-krizek" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></symbol>
@@ -24,36 +25,37 @@
    </g>
   </svg>
   <div class="nadpisy">
-   <h1>{{nazev}}</h1>
-   <p class="podnadpis">{{podnadpis}}</p>
+   <h1 data-t="nazev">{{nazev}}</h1>
+   <p class="podnadpis" data-t="podnadpis">{{podnadpis}}</p>
   </div>
-  <p class="sbirka" title="{{sbirkaTitulek}}"><svg aria-hidden="true"><use href="#i-hvezda"/></svg><span id="sbirka-text"></span></p>
-  <a class="jazyk-prepinac" id="jazyk-prepinac" href="{{odkazJinam}}" hreflang="{{jinyKod}}" lang="{{jinyKod}}" title="{{jinyJazykPopis}}">{{jinyJazyk}}</a>
-  <button class="prepinac" id="prepinac" type="button" aria-label="{{motiv}}">
+  <p class="sbirka" title="{{sbirkaTitulek}}" data-t-title="sbirkaTitulek"><svg aria-hidden="true"><use href="#i-hvezda"/></svg><span id="sbirka-text"></span></p>
+  <a class="jazyk-prepinac" id="jazyk-prepinac" href="{{odkazJinam}}" hreflang="{{jinyKod}}" lang="{{jinyKod}}" title="{{jinyJazykPopis}}" data-t="jinyJazyk" data-t-title="jinyJazykPopis">{{jinyJazyk}}</a>
+  <button class="prepinac" id="prepinac" type="button" aria-label="{{motiv}}" data-t-aria-label="motiv">
    <svg aria-hidden="true"><use href="#i-mesic" id="ikona-rezim"/></svg>
   </button>
  </header>
 
  <div class="mriz">
-  <section class="scena" id="scena" aria-label="{{scena}}">
-   <canvas id="globus" role="img" aria-label="{{platno}}"></canvas>
+  <section class="scena" id="scena" aria-label="{{scena}}" data-t-aria-label="scena">
+   <canvas id="globus" role="img" aria-label="{{platno}}" data-t-aria-label="platno"></canvas>
    <div class="ovladani">
-    <button class="tl hlavni" id="tl-nahoda" type="button"><svg aria-hidden="true"><use href="#i-kostka"/></svg>{{prekvap}}</button>
-    <button class="tl" id="tl-cely" type="button" hidden><svg aria-hidden="true"><use href="#i-svet"/></svg>{{celySvet}}</button>
-    <div class="zoom-ovl" role="group" aria-label="{{zoomSkupina}}">
-     <button class="kolo" id="tl-oddal" type="button" aria-label="{{oddalit}}"><svg aria-hidden="true"><use href="#i-minus"/></svg></button>
+    <button class="tl hlavni" id="tl-nahoda" type="button"><svg aria-hidden="true"><use href="#i-kostka"/></svg><span data-t="prekvap">{{prekvap}}</span></button>
+    <button class="tl" id="tl-cely" type="button" hidden><svg aria-hidden="true"><use href="#i-svet"/></svg><span data-t="celySvet">{{celySvet}}</span></button>
+    <button class="tl otacet" id="tl-otacet" type="button" aria-pressed="false" title="{{otacetPopis}}" data-t-title="otacetPopis"><svg aria-hidden="true"><use href="#i-otacet"/></svg><span data-t="otacet">{{otacet}}</span></button>
+    <div class="zoom-ovl" role="group" aria-label="{{zoomSkupina}}" data-t-aria-label="zoomSkupina">
+     <button class="kolo" id="tl-oddal" type="button" aria-label="{{oddalit}}" data-t-aria-label="oddalit"><svg aria-hidden="true"><use href="#i-minus"/></svg></button>
      <span class="zoom-hod" id="zoom-hod">1,0&times;</span>
-     <button class="kolo" id="tl-priblizi" type="button" aria-label="{{priblizit}}"><svg aria-hidden="true"><use href="#i-plus"/></svg></button>
+     <button class="kolo" id="tl-priblizi" type="button" aria-label="{{priblizit}}" data-t-aria-label="priblizit"><svg aria-hidden="true"><use href="#i-plus"/></svg></button>
     </div>
    </div>
    <p class="napoveda" id="napoveda">{{napovedaStart}}</p>
    <div class="zeme-okno" id="zeme-okno" hidden></div>
    <div class="bublina-bod" id="bublina-bod" hidden></div>
    <div class="vypadek" id="vypadek" hidden>
-    <strong>{{vypadekNadpis}}</strong>
-    <span>{{vypadekText}}</span>
+    <strong data-t="vypadekNadpis">{{vypadekNadpis}}</strong>
+    <span data-t="vypadekText">{{vypadekText}}</span>
    </div>
-   <p class="legenda" id="legenda"><i></i>{{legenda}}</p>
+   <p class="legenda" id="legenda"><i></i><span data-t="legenda">{{legenda}}</span></p>
 
    <article class="karta" id="karta" hidden aria-live="polite">
     <div class="karta-hlava">
@@ -62,7 +64,7 @@
       <p class="domaci" id="k-domaci"></p>
       <span class="odznak" id="k-odznak" hidden></span>
      </div>
-     <button class="zavrit" id="k-zavrit" type="button" aria-label="{{zavritKartu}}"><svg aria-hidden="true"><use href="#i-krizek"/></svg></button>
+     <button class="zavrit" id="k-zavrit" type="button" aria-label="{{zavritKartu}}" data-t-aria-label="zavritKartu"><svg aria-hidden="true"><use href="#i-krizek"/></svg></button>
     </div>
     <p class="rejstrik-pozn" id="k-pozn" hidden></p>
     <div id="k-plne">
@@ -73,25 +75,25 @@
       <p class="stav" id="k-stav" hidden></p>
      </div>
      <dl class="udaje">
-      <div class="udaj"><dt>{{mluvcich}}</dt><dd id="k-mluvcich"></dd></div>
-      <div class="udaj"><dt>{{rodina}}</dt><dd id="k-rodina" class="rodina-txt"></dd></div>
+      <div class="udaj"><dt data-t="mluvcich">{{mluvcich}}</dt><dd id="k-mluvcich"></dd></div>
+      <div class="udaj"><dt data-t="rodina">{{rodina}}</dt><dd id="k-rodina" class="rodina-txt"></dd></div>
      </dl>
-     <p class="fakt"><b>{{vis}}</b><span id="k-fakt"></span></p>
+     <p class="fakt"><b data-t="vis">{{vis}}</b><span id="k-fakt"></span></p>
     </div>
-    <div class="kde" id="k-kde"><span>{{kdeMluvi}}</span><ul class="staty" id="k-staty"></ul></div>
+    <div class="kde" id="k-kde"><span data-t="kdeMluvi">{{kdeMluvi}}</span><ul class="staty" id="k-staty"></ul></div>
    </article>
   </section>
 
-  <aside class="police" aria-label="{{seznam}}">
+  <aside class="police" aria-label="{{seznam}}" data-t-aria-label="seznam">
    <div class="hledani">
     <label class="pole">
      <svg aria-hidden="true"><use href="#i-lupa"/></svg>
-     <input id="hledej" type="search" placeholder="{{hledejPlaceholder}}" aria-label="{{hledejPopisek}}">
+     <input id="hledej" type="search" placeholder="{{hledejPlaceholder}}" aria-label="{{hledejPopisek}}" data-t-placeholder="hledejPlaceholder" data-t-aria-label="hledejPopisek">
     </label>
     <p class="pocet" id="pocet"></p>
    </div>
    <div class="seznam" id="seznam"></div>
-   <p class="zdroje">{{zdroje}}</p>
+   <p class="zdroje" data-t="zdroje">{{zdroje}}</p>
   </aside>
  </div>
 </div>
