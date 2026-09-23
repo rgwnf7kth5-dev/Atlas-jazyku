@@ -51,11 +51,9 @@
   "tisíc"
  ],
  "hrstka": "posledních pár mluvčích",
- "rejstrik": "Světový rejstřík jazyků",
  "nicNenalezeno": "Nic takového tu není. Zkus třeba „Brazílie“, „Aloha“ nebo „tónový“.",
- "nalezeno": "Našlo se {a} v atlasu",
- "nalezenoRejstrik": " a {b} v rejstříku",
- "vychoziPocet": "{a} s pozdravem · {b} světélek na glóbu",
+ "nalezeno": "Našlo se: {a}, z toho {b} s pozdravem",
+ "vychoziPocet": "{a} · {b} s pozdravem",
  "zemeBezPozdravu": "Odsud tu zatím nemám žádný pozdrav. Zkus kliknout na některé světélko.",
  "tecka": "mezinárodní název ze světového rejstříku Glottolog",
  "teckaPozn": "Pozdrav k tomuhle jazyku v atlasu zatím nemám.",
@@ -275,7 +273,6 @@
  "podnadpisDen": "Každý bod na glóbu je jeden ze {pocet} jazyků Země",
  "legendaDen": "Každý bod je jeden ze {pocet} jazyků světa. Klikni na něj.",
  "napovedaVyberDen": "Zatoč glóbem, přibliž kolečkem, klikni na bod nebo na zemi",
- "vychoziPocetDen": "{a} s pozdravem · {b} bodů na glóbu",
  "zemeBezPozdravuDen": "Odsud tu zatím nemám žádný pozdrav. Zkus kliknout na některý bod.",
  "pribuzniObloukyDen": "Na glóbu k nim vedou oblouky.",
  "zpetna": "Máš nápad, nebo ti něco nefunguje? Napiš na",
@@ -287,7 +284,6 @@
  "znakoveBez": "Bez znakových",
  "znakoveJen": "Jen znakové",
  "znakovePopis": "Znakovými jazyky mluví hlavně neslyšící – rukama, obličejem a celým tělem. Každá země má svůj.",
- "znakoveSeznam": "Znakové jazyky ve světovém rejstříku",
  "znakovyCo": "Co je znakový jazyk",
  "znakovyVysvetleni": "Znakový jazyk se nemluví, ale ukazuje – rukama, výrazem obličeje a pohyby těla. Používají ho hlavně neslyšící lidé a jejich rodiny. Není to mluvený jazyk přeložený do rukou: má vlastní slovíčka i vlastní mluvnici.",
  "aesZnak": [
@@ -363,5 +359,8 @@
  "raditSvetadil": "Podle světadílů",
  "svetadilOstatni": "Jinde",
  "zalozkaZajimavost": "Zajímavost",
- "zalozkaPribuzni": "Příbuzní"
+ "zalozkaPribuzni": "Příbuzní",
+ "izolovane": "Izolované jazyky – nemají příbuzné",
+ "nezarazene": "Nezařazené",
+ "dalsiJazyky": "Další jazyky ({a})"
 }

@@ -82,6 +82,20 @@ for (let i = 0; i < POCET_B; i++) {
 }
 const BOD_ATLASU = {};                            // jazyk z atlasu → jeho tečka v rejstříku
 for (let i = POCET_B - 1; i >= 0; i--) if (B[i][5]) BOD_ATLASU[B[i][5]] = i;
+/* rodina a světadíl jazyka z atlasu pro řazení police; pět jazyků atlasu (např. srbština) tečku nemá:
+   rodinu vezmu z jejího českého popisu, světadíl od nejbližší tečky */
+const RODINA_ATLASU = {}, OBLAST_ATLASU = {};
+JAZYKY.forEach(function(j){
+  const i = BOD_ATLASU[j.id];
+  if (i >= 0) { RODINA_ATLASU[j.id] = B[i][3]; OBLAST_ATLASU[j.id] = B[i][4]; return; }
+  RODINA_ATLASU[j.id] = REJSTRIK.r.cs.indexOf((j.t.cs.rod || "").split(" – ")[0]);
+  let nej = -1, d = Infinity;
+  for (let k = 0; k < POCET_B; k++) {
+    const dx = (B[k][1] - j.stred[0]) * Math.cos(j.stred[1] * R), dy = B[k][2] - j.stred[1], dd = dx * dx + dy * dy;
+    if (dd < d) { d = dd; nej = k; }
+  }
+  OBLAST_ATLASU[j.id] = nej >= 0 ? B[nej][4] : -1;
+});
 /* ---------- znakové jazyky: všechny / bez nich / jen ony ---------- */
 const ZNAKOVY = new Uint8Array(POCET_B);
 REJSTRIK.zn.forEach(function(i){ ZNAKOVY[i] = 1; });
@@ -190,7 +204,6 @@ function nadpis(text, barva){
 function postavPolici(filtr){
   const hledane = bezDiakritiky(filtr || "").trim();
   seznam.textContent = "";
-  let vAtlasu = 0;
   if (!hledane) {                            /* jazyk dne nahoře */
     const d = jazykDne();
     if (d) {
@@ -203,60 +216,109 @@ function postavPolici(filtr){
       seznam.appendChild(tl);
     }
   }
-  const vybrane = JAZYKY.filter(function(j){ return !atlasSkryty(j) && (!hledane || j.hledat.indexOf(hledane) !== -1); });
-  let skupiny;
-  if (razeni === "abeceda") {
-    skupiny = [{nazev: null, jazyky: vybrane.slice().sort(function(a, b){ return a.n.localeCompare(b.n, T.locale); })}];
-  } else if (razeni === "svetadil") {
-    const podle = new Map();
-    vybrane.forEach(function(j){
-      const i = BOD_ATLASU[j.id], m = i >= 0 ? B[i][4] : -1;
-      if (!podle.has(m)) podle.set(m, []);
-      podle.get(m).push(j);
-    });
-    skupiny = Array.from(podle.keys()).sort(function(a, b){ return (a < 0) - (b < 0) || podle.get(b).length - podle.get(a).length; })
-      .map(function(m){ return {nazev: (m >= 0 && REJSTRIK.mm[m]) || T.svetadilOstatni, jazyky: podle.get(m)}; });
-  } else {
-    skupiny = SKUPINY.map(function(sk){ return {nazev: T.rodiny[sk], barva: "var(--r-" + sk + ")", jazyky: vybrane.filter(function(j){ return j.sk === sk; })}; });
-  }
-  skupiny.forEach(function(g){
-    if (!g.jazyky.length) return;
-    vAtlasu += g.jazyky.length;
-    const sekce = document.createElement("section"); sekce.className = "rodina";
-    if (g.nazev) sekce.appendChild(nadpis(g.nazev + " (" + g.jazyky.length + ")", g.barva || null));
-    const mrizka = document.createElement("div"); mrizka.className = "mrizka";
-    g.jazyky.forEach(function(j){ mrizka.appendChild(dlazdice(j)); });
-    sekce.appendChild(mrizka); seznam.appendChild(sekce);
+  /* celý rejstřík: jazyky z atlasu jako dlaždice s pozdravem, ostatní tečky menší; kreslí se po dávkách */
+  const polozky = [];
+  JAZYKY.forEach(function(j){
+    if (atlasSkryty(j) || (hledane && j.hledat.indexOf(hledane) === -1)) return;
+    polozky.push({j: j, jm: j.n, rod: RODINA_ATLASU[j.id], mm: OBLAST_ATLASU[j.id]});
   });
+  for (let i = 0; i < POCET_B; i++) {
+    if (skryty[i] || (B[i][5] && PODLE_ID[B[i][5]]) || (hledane && bHledat[i].indexOf(hledane) === -1)) continue;
+    polozky.push({i: i, jm: jmenoBodu(i), rod: B[i][3], mm: B[i][4]});
+  }
+  const razic = new Intl.Collator(T.locale);
+  polozky.sort(function(a, b){ return razic.compare(a.jm, b.jm); });
+  const podle = new Map();
+  polozky.forEach(function(p){
+    const k = razeni === "abeceda" ? pismeno(p.jm) : razeni === "svetadil" ? p.mm : p.rod;
+    if (!podle.has(k)) podle.set(k, {klic: k, s: [], bez: []});
+    const g = podle.get(k);
+    (p.j ? g.s : g.bez).push(p);
+    if (p.j && !g.barva) g.barva = "var(--r-" + p.j.sk + ")";
+  });
+  let skupiny = Array.from(podle.values());
+  if (razeni === "abeceda") {
+    skupiny.sort(function(a, b){ return (a.klic === "#") - (b.klic === "#"); });
+    skupiny.forEach(function(g){ g.nazev = g.klic; g.barva = null; });
+  } else {
+    const izolat = REJSTRIK.r.en.findIndex(function(r){ return /^isolate/.test(r); }),
+          znakove = REJSTRIK.r.en.indexOf("sign language");
+    const nakonec = function(g){ return g.klic == null || g.klic < 0 || (razeni === "rodiny" && g.klic === izolat) ? 1 : 0; };
+    skupiny.sort(function(a, b){ return nakonec(a) - nakonec(b) || (b.s.length + b.bez.length) - (a.s.length + a.bez.length); });
+    skupiny.forEach(function(g){
+      if (razeni === "svetadil") { g.nazev = (g.klic >= 0 && REJSTRIK.mm[g.klic]) || T.svetadilOstatni; g.barva = null; }
+      else g.nazev = g.klic === izolat ? T.izolovane : g.klic === znakove ? T.znakoveSkupina : g.klic >= 0 ? velke(REJSTRIK.rr[g.klic]) : T.nezarazene;
+    });
+  }
+  fronta = skupiny;
+  seznam.appendChild(zarazka);
+  pridavej(true);
+  hlidej();
 
-  let vRejstriku = 0;
-  const vsechnyZnakove = rezimZnak === "jen" && hledane.length < 2;   // „jen znakové“ bez hledání: ukážu je všechny
-  if (hledane.length >= 2 || vsechnyZnakove) {
-    const nalez = [], max = vsechnyZnakove ? POCET_B : 80;
-    for (let i = 0; i < POCET_B && nalez.length < max; i++) {
-      if (!B[i][5] && !skryty[i] && (vsechnyZnakove || bHledat[i].indexOf(hledane) !== -1)) nalez.push(i);
-    }
-    if (vsechnyZnakove) nalez.sort(function(a, b){ return jmenoBodu(a).localeCompare(jmenoBodu(b), T.locale); });
-    vRejstriku = nalez.length;
-    if (vRejstriku) {
-      const sekce = document.createElement("section"); sekce.className = "rodina";
-      sekce.appendChild(nadpis((vsechnyZnakove ? T.znakoveSeznam : T.rejstrik) + " (" + vRejstriku + (vRejstriku >= max ? "+" : "") + ")", null));
-      const mrizka = document.createElement("div"); mrizka.className = "mrizka";
-      nalez.forEach(function(i){
-        const tl = tlacitko(jmenoBodu(i), REJSTRIK.rr[B[i][3]], null, "tecka-jaz");
-        tl.addEventListener("click", function(){ vyberBod(i); });
-        mrizka.appendChild(tl);
-      });
-      sekce.appendChild(mrizka); seznam.appendChild(sekce);
-    }
+  if (!polozky.length) {
+    const p = document.createElement("p"); p.className = "prazdno"; p.textContent = T.nicNenalezeno; seznam.insertBefore(p, zarazka);
   }
-  if (!vAtlasu && !vRejstriku) {
-    const p = document.createElement("p"); p.className = "prazdno"; p.textContent = T.nicNenalezeno; seznam.appendChild(p);
+  const sPozdravem = polozky.filter(function(p){ return p.j; }).length;
+  $("pocet").textContent = t(hledane ? "nalezeno" : "vychoziPocet",
+    {a: cislo(polozky.length) + " " + tvar(polozky.length, T.jazyk), b: cislo(sPozdravem)});
+}
+/* dávkové kreslení police: dalších ~240 dlaždic, když se k jejímu konci doroluje */
+const zarazka = document.createElement("div"); zarazka.className = "zarazka";
+let fronta = [], hlidac = null;
+const DAVKA = 240;
+function pridavej(prvni){
+  let n = 0;
+  while (fronta.length && n < (prvni ? DAVKA / 2 : DAVKA)) {
+    const g = fronta[0];
+    if (!g.sekce) {
+      g.sekce = document.createElement("section"); g.sekce.className = "rodina";
+      g.sekce.appendChild(nadpis(g.nazev + " (" + cislo(g.s.length + g.bez.length) + ")", g.barva));
+      if (g.s.length) {
+        const m = document.createElement("div"); m.className = "mrizka";
+        g.s.forEach(function(p){ m.appendChild(dlazdice(p.j)); });
+        g.sekce.appendChild(m); n += g.s.length;
+      }
+      if (g.s.length && g.bez.length) g.sekce.appendChild(prvek("p", "dalsi", t("dalsiJazyky", {a: cislo(g.bez.length)})));
+      g.m = document.createElement("div"); g.m.className = "mrizka drobne";
+      g.sekce.appendChild(g.m); g.od = 0;
+      seznam.insertBefore(g.sekce, zarazka);
+    }
+    const do_ = Math.min(g.bez.length, g.od + DAVKA - n);
+    for (; g.od < do_; g.od++, n++) {
+      const i = g.bez[g.od].i;
+      const tl = tlacitko(g.bez[g.od].jm, razeni === "abeceda" ? velke(REJSTRIK.rr[B[i][3]]) : kdeBod(i), null, "tecka-jaz");
+      tl.addEventListener("click", function(){ vyberBod(i); });
+      g.m.appendChild(tl);
+    }
+    if (g.od >= g.bez.length) fronta.shift();
   }
-  $("pocet").textContent = hledane
-    ? t("nalezeno", {a: vAtlasu}) + (vRejstriku ? t("nalezenoRejstrik", {b: vRejstriku}) : "")
-    : (function(){ const a = JAZYKY.filter(function(j){ return !atlasSkryty(j); }).length;
-        return t("vychoziPocet", {a: cislo(a) + " " + tvar(a, T.jazyk), b: cislo(povolenych)}); })();
+  zarazka.hidden = !fronta.length;
+}
+function hlidej(){
+  if (hlidac) hlidac.disconnect();
+  if (!fronta.length) return;
+  if (!("IntersectionObserver" in window)) { while (fronta.length) pridavej(); return; }
+  const vlastniRolovani = getComputedStyle(seznam).overflowY !== "visible";
+  hlidac = new IntersectionObserver(function(zaznamy){
+    if (!zaznamy.some(function(z){ return z.isIntersecting; })) return;
+    pridavej();
+    hlidej();                  // znovu pozorovat: když je zarážka pořád na očích, přijde další dávka
+  }, {root: vlastniRolovani ? seznam : null, rootMargin: "900px 0px"});
+  hlidac.observe(zarazka);
+}
+/* podtitul malé dlaždice: první stát (a kolik dalších), jinak světadíl */
+function kdeBod(i){
+  const staty = (radek(i)[3] || "").split(" ").filter(Boolean);
+  if (!staty.length) return REJSTRIK.mm[B[i][4]] || "";
+  return (PD.staty[T.lang][staty[0]] || staty[0]) + (staty.length > 1 ? " +" + (staty.length - 1) : "");
+}
+/* první písmeno pro řazení podle abecedy; čeština má Č, Ch, Ř, Š, Ž jako samostatná písmena */
+function pismeno(jm){
+  if (T.lang === "cs" && /^ch/i.test(jm)) return "Ch";
+  const c = jm.charAt(0).toUpperCase();
+  if (T.lang === "cs" && "ČŘŠŽ".indexOf(c) >= 0) return c;
+  const z = c.normalize("NFD").charAt(0);
+  return /[A-Z]/.test(z) ? z : "#";
 }
 $("hledej").addEventListener("input", function(e){ postavPolici(e.target.value); });
 

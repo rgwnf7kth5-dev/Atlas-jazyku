@@ -332,6 +332,8 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
 .rodina h3::after{content:""; flex:1; height:1px; background:linear-gradient(90deg, var(--linka2), transparent)}
 .tecka{width:9px;height:9px;border-radius:50%; flex:none; box-shadow:0 0 10px currentColor}
 .mrizka{display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr)); gap:7px}
+.mrizka + .mrizka{margin-top:7px}
+.zarazka{height:1px}
 .jaz{position:relative; text-align:left; cursor:pointer; padding:8px 10px 8px 11px; border-radius:14px;
   background:linear-gradient(135deg, color-mix(in srgb, var(--r-barva, #5ADCFF) 12%, transparent), var(--plocha));
   border:1px solid var(--linka); display:flex; align-items:center; gap:10px; transition:border-color .15s, box-shadow .15s, transform .15s}
@@ -362,6 +364,12 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
 .razeni{display:flex; background:var(--plocha); backdrop-filter:none; -webkit-backdrop-filter:none; padding:3px}
 .razeni button{flex:1}
 .jaz.tecka-jaz{background:var(--plocha)}
+.mrizka.drobne{grid-template-columns:repeat(auto-fill,minmax(130px,1fr)); gap:5px}
+.drobne .jaz{padding:5px 8px 5px 9px; border-radius:10px; gap:8px}
+.drobne .jaz .pruh{width:3px}
+.drobne .jaz .nm{font-size:.8rem}
+.drobne .jaz .sub{font-size:.66rem}
+.dalsi{margin:12px 0 6px; font-family:var(--pismo-data); font-size:.7rem; letter-spacing:.06em; text-transform:uppercase; color:var(--text3)}
 .jaz.tecka-jaz .pruh{background:var(--tecka-jazyk); opacity:.6; box-shadow:0 0 8px var(--tecka-jazyk)}
 .prazdno{padding:26px 4px; text-align:center; color:var(--text2); font-size:.88rem}
 

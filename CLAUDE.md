@@ -87,8 +87,11 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
   tečka: Přehled / Jak funguje / Příbuzní). Při výběru nového jazyka karta vjede (`vjezd`).
 - **Kouzlo výběru**: let k jazyku s „poskokem“ (u daleké cesty se glóbus cestou oddálí), po doletu se území
   rozlije vlnou od domovské tečky (`ODHALENI`, 950 ms) a oblouky k příbuzným vystřelí jeden po druhém.
-- **Police**: dlaždice s pozdravem, nahoře „Jazyk dne“ (každý den jiný, podle data), řazení podle rodin /
-  A–Z / světadílů (`atlas-razeni`).
+- **Police ukazuje všechny jazyky**, ne jen atlas (uživatel: jen pár desítek působilo neúplně). Ve skupině jsou
+  napřed jazyky z atlasu jako velké dlaždice s pozdravem, pod nimi „Další jazyky“ z rejstříku jako malé dlaždice
+  (podtitul stát, u abecedy rodina). Řazení podle rodin (rodiny Glottologu od největší, izolované jazyky na konec) /
+  A–Z (česky i Č, Ch, Ř, Š, Ž) / světadílů (`atlas-razeni`). Filtry i hledání platí i tady. Dlaždic je skoro 8 000,
+  proto se kreslí po dávkách 240 (`pridavej`, zarážka hlídaná `IntersectionObserver`). Nahoře „Jazyk dne“.
 - **Živější glóbus**: v noci světélka jemně třpytí (překresluje se jen WebGL, co 60 ms, usíná s okrasným
   pohybem), koule má odlesk slunce (ve dne výraznější).
 - **Mobil (≤ 920 px)**: karta je spodní vysouvací list (úchyt, tažení nahoru = celá, dolů = menší / zavřít),
