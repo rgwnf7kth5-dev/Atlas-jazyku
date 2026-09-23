@@ -25,6 +25,8 @@ Nasazení přes Netlify z větve `main` podle `netlify.toml` (build `npm run che
   do stránky. Dřívější verze tahala d3 z cdnjs a v náhledu artefaktu pak nefungovalo vůbec nic.
 - Glóbus je v pojistce: když selže, police jazyků a karty musí fungovat dál.
 - **Stránka začíná celým světem bez vybraného jazyka** (přání uživatele: neotevírat češtinou ani jiným jazykem).
+- Sbírka pozdravů (počítadlo v hlavičce, hvězdičky u otevřených jazyků) byla 23. 9. 2026 na přání uživatele
+  odstraněna – nedávala smysl. Znovu ji nepřidávat.
 - Dole v panelu se seznamem je odkaz na zpětnou vazbu e-mailem (`castor2@me.com`, klíče `zpetna…` v `src/ui/*.json`).
   Předmět e-mailu se nastaví podle jazyka; v artefaktu se odkaz otevírá v novém okně, jinak by ho náhled zablokoval.
 - **Přepnutí jazyka je na místě, ne odkazem do nového listu** (přání uživatele). Každá stránka nese oba jazyky;
