@@ -88,7 +88,15 @@ REJSTRIK.zn.forEach(function(i){ ZNAKOVY[i] = 1; });
 const skryty = new Uint8Array(POCET_B);   // tečka, kterou filtr schovává
 let rezimZnak = "vse", povolenych = POCET_B;
 function jeZnakovyJazyk(j){ const i = BOD_ATLASU[j.id]; return i >= 0 && ZNAKOVY[i] === 1; }
-function atlasSkryty(j){ return rezimZnak === "bez" ? jeZnakovyJazyk(j) : rezimZnak === "jen" ? !jeZnakovyJazyk(j) : false; }
+/* vitalita: 0–5 = šest stupňů UNESCO (bezpečný … vymřelý), 6 = probouzený, -1 = bez údaje */
+const VSECHNY_STUPNE = [0, 1, 2, 3, 4, 5, 6, -1], OHROZENE = [1, 2, 3, 4];
+let povoleneStupne = new Set(VSECHNY_STUPNE);
+function vitalitaBodu(i){ const v = radek(i)[0]; return v == null ? -1 : v; }
+function atlasSkryty(j){
+  const i = BOD_ATLASU[j.id];
+  if (!povoleneStupne.has(i >= 0 ? vitalitaBodu(i) : -1)) return true;
+  return rezimZnak === "bez" ? jeZnakovyJazyk(j) : rezimZnak === "jen" ? !jeZnakovyJazyk(j) : false;
+}
 function jmenoBodu(i){
   const id = B[i][5];
   if (id && PODLE_ID[id]) return PODLE_ID[id].n;
@@ -961,17 +969,15 @@ $("tl-nahoda").addEventListener("click", function(){
   vyber(moznosti[Math.floor(Math.random() * moznosti.length)].id);
 });
 
-/* ---------- přepínač znakových jazyků ---------- */
+/* ---------- filtry teček: znakové jazyky a vitalita ---------- */
 const tlZnak = Array.prototype.slice.call(document.querySelectorAll(".segment [data-znak]"));
-function nastavZnakove(rezim, ulozit){
-  if (["vse", "bez", "jen"].indexOf(rezim) < 0) rezim = "vse";
-  rezimZnak = rezim; povolenych = 0;
+function uplatniFiltry(start){
+  povolenych = 0;
   for (let i = 0; i < POCET_B; i++) {
-    skryty[i] = rezim === "bez" ? ZNAKOVY[i] : rezim === "jen" ? 1 - ZNAKOVY[i] : 0;
+    const znak = rezimZnak === "bez" ? ZNAKOVY[i] : rezimZnak === "jen" ? 1 - ZNAKOVY[i] : 0;
+    skryty[i] = znak || !povoleneStupne.has(vitalitaBodu(i)) ? 1 : 0;
     if (!skryty[i]) povolenych++;
   }
-  tlZnak.forEach(function(b){ b.setAttribute("aria-pressed", b.dataset.znak === rezim ? "true" : "false"); });
-  if (ulozit) { try { localStorage.setItem("atlas-znakove", rezim); } catch (e) {} }
   if (vybrany) {                            /* vybraný jazyk, který filtr schoval, se odznačí */
     const i = vybrany.typ === "atlas" ? BOD_ATLASU[vybrany.id] : vybrany.i;
     if ((vybrany.typ === "atlas" && atlasSkryty(PODLE_ID[vybrany.id])) || (i >= 0 && skryty[i])) odznac();
@@ -981,12 +987,67 @@ function nastavZnakove(rezim, ulozit){
     }
   }
   okno.hidden = true; bublinaBod.hidden = true;
-  if (!ulozit) return;                      // při startu se police a glóbus postaví samy
+  if (start) return;                        // při startu se police a glóbus postaví samy
   postavPolici($("hledej").value);
   if (vybrany && vybrany.typ === "atlas") oznacTlacitka(vybrany.id);
   if (globusOk && ctx) { if (zvyraznenyBod >= 0 && skryty[zvyraznenyBod]) zvyraznenyBod = -1; obnovPriznaky(); hudTxt2 = ""; ozivit(); }
 }
+function nastavZnakove(rezim, ulozit){
+  if (["vse", "bez", "jen"].indexOf(rezim) < 0) rezim = "vse";
+  rezimZnak = rezim;
+  tlZnak.forEach(function(b){ b.setAttribute("aria-pressed", b.dataset.znak === rezim ? "true" : "false"); });
+  if (ulozit) { try { localStorage.setItem("atlas-znakove", rezim); } catch (e) {} }
+  obnovVitalituPanel();
+  uplatniFiltry(!ulozit);
+}
 tlZnak.forEach(function(b){ b.addEventListener("click", function(){ nastavZnakove(b.dataset.znak, true); }); });
+
+/* výběr stupňů vitality (panel pod tlačítkem „Vitalita“) */
+const panelVit = $("vitalita-panel"), tlVit = $("tl-vitalita");
+const POCTY_STUPNU = {};
+for (let i = 0; i < POCET_B; i++) { const v = vitalitaBodu(i); POCTY_STUPNU[v] = (POCTY_STUPNU[v] || 0) + 1; }
+const PORADI_V_PANELU = [0, 1, 2, 3, 4, 5, 6, -1];
+function nazevStupne(v){ return v < 0 ? T.vitalitaBezUdaje : T.aes[v][0]; }
+function obnovVitalituPanel(){
+  const ul = $("vitalita-stupne");
+  ul.textContent = "";
+  PORADI_V_PANELU.forEach(function(v){
+    const li = prvek("li"), b = prvek("button");
+    b.type = "button"; b.setAttribute("aria-pressed", povoleneStupne.has(v) ? "true" : "false");
+    if (v >= 0) b.title = T.aes[v][1];
+    b.appendChild(prvek("span", "zatrzeni", povoleneStupne.has(v) ? "✓" : ""));
+    const mini = prvek("span", "mini" + (v === 6 ? " probouzi" : ""));
+    for (let k = 0; k < 6; k++) mini.appendChild(prvek("i", v >= 0 && k <= Math.min(v, 5) ? "plny" : null));
+    b.appendChild(mini);
+    b.appendChild(prvek("span", null, nazevStupne(v)));
+    b.appendChild(prvek("span", "pocet-st", cislo(POCTY_STUPNU[v] || 0)));
+    b.addEventListener("click", function(){
+      if (povoleneStupne.has(v)) povoleneStupne.delete(v); else povoleneStupne.add(v);
+      nastavVitalitu(Array.from(povoleneStupne));
+    });
+    li.appendChild(b); ul.appendChild(li);
+  });
+  const n = povoleneStupne.size, filtruje = n < VSECHNY_STUPNE.length;
+  $("vitalita-pocet").hidden = !filtruje;
+  $("vitalita-pocet").textContent = n + "/" + VSECHNY_STUPNE.length;
+  tlVit.setAttribute("aria-pressed", filtruje || !panelVit.hidden ? "true" : "false");
+}
+function nastavVitalitu(stupne, start){
+  povoleneStupne = new Set(stupne.filter(function(v){ return VSECHNY_STUPNE.indexOf(v) >= 0; }));
+  if (!start) { try { localStorage.setItem("atlas-vitalita", JSON.stringify(Array.from(povoleneStupne))); } catch (e) {} }
+  obnovVitalituPanel();
+  uplatniFiltry(!!start);
+}
+function otevriVitalitu(otevrit){
+  panelVit.hidden = !otevrit;
+  tlVit.setAttribute("aria-expanded", otevrit ? "true" : "false");
+  obnovVitalituPanel();
+}
+tlVit.addEventListener("click", function(){ otevriVitalitu(panelVit.hidden); });
+$("vitalita-zavrit").addEventListener("click", function(){ otevriVitalitu(false); tlVit.focus(); });
+$("vitalita-vse").addEventListener("click", function(){ nastavVitalitu(VSECHNY_STUPNE); });
+$("vitalita-ohrozene").addEventListener("click", function(){ nastavVitalitu(OHROZENE); });
+document.addEventListener("keydown", function(e){ if (e.key === "Escape" && !panelVit.hidden) otevriVitalitu(false); });
 
 /* ---------- karty ---------- */
 function pocetMluvcich(m){          /* m = miliony, jak jsou v data/languages.json */
@@ -1085,11 +1146,11 @@ function ukazKartuBodu(i){
 
   if (r[0] >= 0) {                                     /* ohrožení podle UNESCO */
     const o = oddil(T.ohrozeni), stupen = (znak ? T.aesZnak : T.aes)[r[0]];
-    const m = prvek("div", "ohrozeni");
-    m.setAttribute("role", "img"); m.setAttribute("aria-label", stupen[0] + " (" + (r[0] + 1) + "/6)");
-    for (let k = 0; k < 6; k++) m.appendChild(prvek("i", k <= r[0] ? "plny" : null));
+    const m = prvek("div", "ohrozeni" + (r[0] === 6 ? " probouzi" : ""));
+    m.setAttribute("role", "img"); m.setAttribute("aria-label", stupen[0] + " (" + Math.min(r[0] + 1, 6) + "/6)");
+    for (let k = 0; k < 6; k++) m.appendChild(prvek("i", k <= Math.min(r[0], 5) ? "plny" : null));
     const p = prvek("p"); p.appendChild(prvek("span", "ohrozeni-nazev", stupen[0])); p.appendChild(document.createTextNode(" – " + stupen[1]));
-    o.appendChild(m); o.appendChild(p); box.appendChild(o);
+    o.appendChild(m); o.appendChild(p); o.appendChild(prvek("p", "pozn", T.vitalitaZdroj)); box.appendChild(o);
   }
 
   const staty = (r[3] || "").split(" ").filter(Boolean);
@@ -1248,6 +1309,7 @@ function prelozStranku(){
 /* texty na stránce po změně jazyka nebo vzhledu */
 function obnovTexty(){
   prelozStranku();
+  obnovVitalituPanel();
   postavPolici($("hledej").value);
   okno.hidden = true; bublinaBod.hidden = true;
   if (vybrany && vybrany.typ === "atlas") { ukazKartu(PODLE_ID[vybrany.id]); oznacTlacitka(vybrany.id); }
@@ -1270,7 +1332,13 @@ odkazJinam.addEventListener("click", function(e){
 
 /* ---------- start ---------- */
 /* stránka začíná celým světem, bez vybraného jazyka (přání uživatele) */
-(function(){ let z = null; try { z = localStorage.getItem("atlas-znakove"); } catch (e) {} nastavZnakove(z || "vse", false); })();
+(function(){
+  let z = null, v = null;
+  try { z = localStorage.getItem("atlas-znakove"); v = JSON.parse(localStorage.getItem("atlas-vitalita") || "null"); } catch (e) {}
+  rezimZnak = ["vse", "bez", "jen"].indexOf(z) >= 0 ? z : "vse";
+  tlZnak.forEach(function(b){ b.setAttribute("aria-pressed", b.dataset.znak === rezimZnak ? "true" : "false"); });
+  nastavVitalitu(Array.isArray(v) && v.length ? v : VSECHNY_STUPNE, true);
+})();
 prelozStranku(); postavPolici("");
 
 if (globusOk) {

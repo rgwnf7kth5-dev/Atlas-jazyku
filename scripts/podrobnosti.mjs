@@ -74,7 +74,7 @@ for (const r of languoidy) {
   if (r.Level === "dialect" && naIndex.has(r.Language_ID)) nareci[naIndex.get(r.Language_ID)]++;
 }
 
-/* --- Glottolog: ohroženost, popsanost, příbuzenstvo --- */
+/* --- Glottolog: vitalita (stupnice AES = šest stupňů UNESCO), popsanost, příbuzenstvo --- */
 const AES = { "aes-not_endangered": 0, "aes-threatened": 1, "aes-shifting": 2, "aes-moribund": 3, "aes-nearly_extinct": 4, "aes-extinct": 5 };
 const MED = { "med-long_grammar": 0, "med-grammar": 1, "med-grammar_sketch": 2, "med-phonology_or_text": 3, "med-wordlist_or_less": 4 };
 const aes = new Array(kody.length).fill(-1), med = new Array(kody.length).fill(-1), rodic = new Array(kody.length).fill(-1);
@@ -87,7 +87,12 @@ const uzel = (kod, nadrazeny) => {
 for (const v of csv("gl-values.csv")) {
   const i = naIndex.get(v.Language_ID);
   if (i === undefined) continue;
-  if (v.Parameter_ID === "aes" && v.Code_ID in AES) aes[i] = AES[v.Code_ID];
+  if (v.Parameter_ID === "aes" && v.Code_ID in AES) {
+    aes[i] = AES[v.Code_ID];
+    // „probouzený“ (awakening, reawakening): na stupnici UNESCO patří mezi vymřelé, ale lidé ho vracejí do života.
+    // Glottolog to nemá jako stupeň, jen v komentáři s kategorií z původního zdroje (ElCat, Ethnologue).
+    if (aes[i] === 5 && /\b(re)?awakening\b/i.test(v.Comment || "")) aes[i] = 6;
+  }
   else if (v.Parameter_ID === "med" && v.Code_ID in MED) med[i] = MED[v.Code_ID];
   else if (v.Parameter_ID === "classification" && v.Value) {
     let predchozi = -1;
@@ -222,7 +227,7 @@ fs.writeFileSync(path.join(KOREN, "data/podrobnosti.json"), JSON.stringify(vystu
 
 const pocet = f => radky.filter(f).length;
 console.log(`Podrobnosti pro ${kody.length} jazyků (${(fs.statSync(path.join(KOREN, "data/podrobnosti.json")).size / 1024).toFixed(0)} kB):`);
-console.log(`  ohroženost ${pocet(r => r[0] >= 0)}, popsanost ${pocet(r => r[1] >= 0)}, příbuzenstvo ${pocet(r => r[2] >= 0)}, státy ${pocet(r => r[3])}, nářečí ${pocet(r => r[4] > 0)}`);
+console.log(`  vitalita ${pocet(r => r[0] >= 0)}, popsanost ${pocet(r => r[1] >= 0)}, příbuzenstvo ${pocet(r => r[2] >= 0)}, státy ${pocet(r => r[3])}, nářečí ${pocet(r => r[4] > 0)}`);
 console.log(`  stavba jazyka (WALS) ${pocet(r => r[5] && /[1-9]/.test(r[5]))}, hlásky (PHOIBLE) ${pocet(r => Array.isArray(r[6]))}, ukázka textu (UDHR) ${pocet(r => r[7] >= 0)}`);
 console.log(`  odhad uživatelů (CLDR) ${pocet(r => r[8] > 0)}, český název (CLDR/Wikidata) ${pocet(r => r[9])}`);
 console.log(`  Wikidata: mluvčí ${pocet(r => Array.isArray(r[10]))}, položka ${pocet(r => r[11] > 0)}, článek cs ${pocet(r => r[12] & 1)}, en ${pocet(r => r[12] & 2)}` +

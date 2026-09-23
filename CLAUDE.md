@@ -46,6 +46,16 @@ Nasazení přes Netlify z větve `main` podle `netlify.toml` (build `npm run che
   **Karta znakového jazyka nesmí používat texty pro mluvené jazyky** (uživatel: „vypadá to, že se děti napřed učí
   znakovou řeč“): má úvod „Co je znakový jazyk“, vlastní stupně ohrožení `aesZnak` (o neslyšících dětech)
   a „Kde se jím znakuje“ / „Znakuje jím“ místo „mluví“.
+- **Vitalita jazyka** (dřív „ohrožení“). Data jsou stupnice AES z Glottologu, která je 1:1 šestistupňová stupnice
+  UNESCO (Atlas of the World's Languages in Danger, Moseley 2010) – převod je v `glottolog/config/aes_status.ini`:
+  not endangered = safe, threatened = vulnerable, shifting = definitely endangered, moribund = severely endangered,
+  nearly extinct = critically endangered, extinct = extinct. Názvy proto používej UNESCO: **bezpečný, zranitelný,
+  jednoznačně ohrožený, vážně ohrožený, kriticky ohrožený, vymřelý** (safe … extinct), popisy podle definic UNESCO.
+  Navíc **probouzený** (awakening): na stupnici UNESCO vymřelý, ale oživovaný; Glottolog ho má jen v komentáři
+  z původního zdroje (ElCat „Awakening“, Ethnologue „Reawakening“), `scripts/podrobnosti.mjs` ho ukládá jako 6.
+  V `radky` je tedy vitalita -1 (bez údaje) až 6. Přepínač „Vitalita“ otevře panel se stupni (lze vybrat víc,
+  předvolby „Všechny“ a „Jen ohrožené“ = zranitelný až kriticky); volba se pamatuje (`atlas-vitalita`).
+  Filtry vitality a znakových jazyků se skládají v `uplatniFiltry()`.
 - Od vybraného jazyka vedou světelné oblouky k nejbližším příbuzným (nejvýš 6, podle nejhlubšího společného
   předka ve stromu Glottologu). U jazyka z atlasu jen k jiným jazykům atlasu, karta je vypisuje.
 

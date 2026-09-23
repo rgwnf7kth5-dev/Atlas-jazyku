@@ -50,10 +50,11 @@ if (pd.radky.length !== glottolog.body.length) chyby.push(`data/podrobnosti.json
 let divnychMluvcich = 0;
 for (const r of pd.radky) if (Array.isArray(r[10]) && !(r[10][0] > 0 && r[10][0] < 2e9 && (r[10][1] === 0 || (r[10][1] >= 1900 && r[10][1] <= new Date().getFullYear() + 1)))) divnychMluvcich++;
 if (divnychMluvcich) chyby.push(`data/podrobnosti.json: ${divnychMluvcich} jazyků má nesmyslný počet mluvčích nebo rok (Wikidata)`);
+if (pd.radky.some(r => !(Number.isInteger(r[0]) && r[0] >= -1 && r[0] <= 6))) chyby.push("data/podrobnosti.json: stupeň vitality musí být -1 až 6");
 if (pd.uzly.length !== pd.nad.length) chyby.push("data/podrobnosti.json: strom příbuzenstva je poškozený");
 for (const [l, ui] of [["cs", uiCs], ["en", uiEn]]) {
-  if (!Array.isArray(ui.aes) || ui.aes.length !== 6) chyby.push(`src/ui/${l}.json: „aes“ musí mít 6 stupňů ohrožení`);
-  if (!Array.isArray(ui.aesZnak) || ui.aesZnak.length !== 6) chyby.push(`src/ui/${l}.json: „aesZnak“ musí mít 6 stupňů ohrožení znakových jazyků`);
+  if (!Array.isArray(ui.aes) || ui.aes.length !== 7) chyby.push(`src/ui/${l}.json: „aes“ musí mít 7 položek (6 stupňů UNESCO + probouzený)`);
+  if (!Array.isArray(ui.aesZnak) || ui.aesZnak.length !== 7) chyby.push(`src/ui/${l}.json: „aesZnak“ musí mít 7 položek jako „aes“`);
   if (!Array.isArray(ui.med) || ui.med.length !== 5) chyby.push(`src/ui/${l}.json: „med“ musí mít 5 stupňů popsanosti`);
   for (const k of pd.wals) if (!ui.wals || !ui.wals[k]) chyby.push(`src/ui/${l}.json: chybí popisek vlastnosti ${k}`);
   if (!Array.isArray(ui.strany) || ui.strany.length !== 4) chyby.push(`src/ui/${l}.json: „strany“ musí mít 4 světové strany (sever, jih, východ, západ)`);

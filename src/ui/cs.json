@@ -88,31 +88,35 @@
  "jmenaPopis": "Při přiblížení ukázat u teček jména jazyků",
  "teckaNazev": "název v rejstříku: {x}",
  "teckaMezinarodni": "mezinárodní název ze světového rejstříku Glottolog",
- "ohrozeni": "Ohrožení",
+ "ohrozeni": "Vitalita jazyka",
  "aes": [
   [
-   "Neohrožený",
-   "Děti se ho doma učí jako první jazyk."
+   "Bezpečný",
+   "Mluví jím všechny generace a rodiče ho bez přerušení předávají dětem."
   ],
   [
    "Zranitelný",
-   "Děti jím mluví, ale jen někde nebo jen doma."
+   "Většina dětí jím mluví, ale jen v některých oblastech života – třeba jen doma."
   ],
   [
-   "Ohrožený",
-   "Děti se ho už doma neučí."
+   "Jednoznačně ohrožený",
+   "Děti se ho už doma neučí jako mateřský jazyk."
   ],
   [
    "Vážně ohrožený",
-   "Mluví jím hlavně babičky a dědečkové."
+   "Mluví jím prarodiče. Rodiče mu rozumějí, ale na děti ani mezi sebou jím nemluví."
   ],
   [
    "Kriticky ohrožený",
-   "Zbývá jen pár starých mluvčích."
+   "Nejmladší mluvčí jsou prarodiče a ještě starší lidé – a mluví jím jen málo a zřídka."
   ],
   [
    "Vymřelý",
-   "Už jím nikdo nemluví jako mateřštinou."
+   "Už nemá žádné žijící mluvčí."
+  ],
+  [
+   "Probouzený",
+   "Rodilé mluvčí už nemá, ale lidé se ho znovu učí a vracejí ho do života. Na stupnici UNESCO se počítá mezi vymřelé."
   ]
  ],
  "uzivatelu": "Používá ho",
@@ -288,7 +292,7 @@
  "znakovyVysvetleni": "Znakový jazyk se nemluví, ale ukazuje – rukama, výrazem obličeje a pohyby těla. Používají ho hlavně neslyšící lidé a jejich rodiny. Není to mluvený jazyk přeložený do rukou: má vlastní slovíčka i vlastní mluvnici.",
  "aesZnak": [
   [
-   "Neohrožený",
+   "Bezpečný",
    "Neslyšící děti ho přirozeně přebírají – od neslyšících rodičů, ve škole a mezi neslyšícími."
   ],
   [
@@ -296,20 +300,24 @@
    "Neslyšící děti ho používají, ale jen někde – třeba jen v některých školách nebo městech."
   ],
   [
-   "Ohrožený",
+   "Jednoznačně ohrožený",
    "Neslyšící děti se ho už většinou neučí."
   ],
   [
    "Vážně ohrožený",
-   "Znakují jím hlavně starší neslyšící."
+   "Znakují jím hlavně starší neslyšící, mladší ho už nepřebírají."
   ],
   [
    "Kriticky ohrožený",
-   "Zbývá jen pár starých uživatelů."
+   "Zbývá jen pár starých uživatelů, kteří ho používají jen zřídka."
   ],
   [
    "Vymřelý",
-   "Už ho nikdo nepoužívá jako svůj první jazyk."
+   "Už ho nikdo nepoužívá."
+  ],
+  [
+   "Probouzený",
+   "Rodilé uživatele už nemá, ale lidé se ho znovu učí. Na stupnici UNESCO se počítá mezi vymřelé."
   ]
  ],
  "kdeZnakuje": "Kde se jím znakuje",
@@ -320,5 +328,13 @@
   "jazyk",
   "jazyky",
   "jazyků"
- ]
+ ],
+ "vitalitaZdroj": "Šestistupňová stupnice UNESCO. Údaj je z Glottologu, který sjednocuje UNESCO, Ethnologue a Katalog ohrožených jazyků.",
+ "vitalita": "Vitalita",
+ "vitalitaPopis": "Ukázat jazyky podle toho, jak moc jsou ohrožené (stupnice UNESCO)",
+ "vitalitaNadpis": "Vitalita jazyka · stupnice UNESCO",
+ "vitalitaVse": "Všechny",
+ "vitalitaOhrozene": "Jen ohrožené",
+ "vitalitaBezUdaje": "Bez údaje",
+ "vitalitaZavrit": "Zavřít výběr vitality"
 }

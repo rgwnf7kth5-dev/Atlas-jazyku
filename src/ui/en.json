@@ -88,31 +88,35 @@
  "jmenaPopis": "Show language names next to the dots when zoomed in",
  "teckaNazev": "register name: {x}",
  "teckaMezinarodni": "name from the Glottolog world register",
- "ohrozeni": "Status",
+ "ohrozeni": "Language vitality",
  "aes": [
   [
    "Safe",
-   "Children learn it at home as their first language."
+   "Spoken by all generations; parents pass it on to their children without interruption."
   ],
   [
    "Vulnerable",
-   "Children speak it, but only in some places or only at home."
+   "Most children speak it, but only in some areas of life – for example at home."
   ],
   [
    "Definitely endangered",
-   "Children no longer learn it at home."
+   "Children no longer learn it at home as their mother tongue."
   ],
   [
    "Severely endangered",
-   "Mostly grandparents speak it."
+   "Grandparents speak it. Parents understand it, but don't speak it to their children or among themselves."
   ],
   [
    "Critically endangered",
-   "Only a few elderly speakers are left."
+   "The youngest speakers are grandparents and older – and they speak it only partly and rarely."
   ],
   [
    "Extinct",
-   "Nobody speaks it as a mother tongue any more."
+   "There are no living speakers left."
+  ],
+  [
+   "Awakening",
+   "It has no native speakers any more, but people are learning it again and bringing it back to life. On the UNESCO scale it counts as extinct."
   ]
  ],
  "uzivatelu": "Used by",
@@ -301,15 +305,19 @@
   ],
   [
    "Severely endangered",
-   "Mostly older Deaf people sign it."
+   "Mostly older Deaf people sign it; younger ones no longer pick it up."
   ],
   [
    "Critically endangered",
-   "Only a few elderly signers are left."
+   "Only a few elderly signers are left, and they rarely use it."
   ],
   [
    "Extinct",
-   "Nobody uses it as a first language any more."
+   "Nobody uses it any more."
+  ],
+  [
+   "Awakening",
+   "It has no native signers any more, but people are learning it again. On the UNESCO scale it counts as extinct."
   ]
  ],
  "kdeZnakuje": "Where it is used",
@@ -320,5 +328,13 @@
   "language",
   "languages",
   "languages"
- ]
+ ],
+ "vitalitaZdroj": "The six-level UNESCO scale. Data from Glottolog, which combines UNESCO, Ethnologue and the Catalogue of Endangered Languages.",
+ "vitalita": "Vitality",
+ "vitalitaPopis": "Show languages by how endangered they are (UNESCO scale)",
+ "vitalitaNadpis": "Language vitality · UNESCO scale",
+ "vitalitaVse": "All",
+ "vitalitaOhrozene": "Endangered only",
+ "vitalitaBezUdaje": "No data",
+ "vitalitaZavrit": "Close vitality filter"
 }
