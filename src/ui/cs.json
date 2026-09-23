@@ -336,5 +336,17 @@
  "vitalitaVse": "Všechny",
  "vitalitaOhrozene": "Jen ohrožené",
  "vitalitaBezUdaje": "Bez údaje",
- "vitalitaZavrit": "Zavřít výběr vitality"
+ "vitalitaZavrit": "Zavřít výběr vitality",
+ "nahledPopis": "Zeměkoule posetá světélky – každé je jeden z jazyků světa",
+ "legendaFiltr": "Podle filtru svítí {n} z {m} jazyků. Klikni na světélko.",
+ "legendaFiltrDen": "Podle filtru je vidět {n} z {m} jazyků. Klikni na bod.",
+ "legendaVitalita": "Barva světélka ukazuje vitalitu jazyka – stupně jsou v panelu vpravo.",
+ "legendaVitalitaDen": "Barva bodu ukazuje vitalitu jazyka – stupně jsou v panelu vpravo.",
+ "zemeRejstrik": "{n} ze světového rejstříku",
+ "zemeRozsvitit": "Rozsvítit je na glóbu",
+ "zemeRozsvititDen": "Zvýraznit je na glóbu",
+ "zemeZhasnout": "Zrušit zvýraznění",
+ "zemeAtlas": "S pozdravem v atlasu:",
+ "sdiletOdkaz": "Zkopírovat odkaz na tento jazyk",
+ "sdiletHotovo": "Odkaz je zkopírovaný – můžeš ho poslat dál."
 }

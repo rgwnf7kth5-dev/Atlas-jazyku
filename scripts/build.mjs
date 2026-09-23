@@ -21,6 +21,8 @@ const telo = cti("src/body.html");
 const aplikace = cti("src/app.js");
 
 const RODINY_EN = { "Isolate": "isolate – no known relatives", "Sign Language": "sign language", "Pidgin": "pidgin" };
+const WEB = "https://atlasoflanguages.netlify.app";   // adresa webu pro náhled při sdílení odkazu
+const ikona = cti("static/favicon.svg").trim();
 const escHtml = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 // data jdou do <script>, proto „<“ zapíšu jako < – řetězec „</script>“ v datech by stránku rozbil
 const doSkriptu = hodnota => (typeof hodnota === "string" ? hodnota : JSON.stringify(hodnota)).replace(/</g, "\\u003c");
@@ -47,8 +49,9 @@ const JAZYKY = jazykyAtlasu.map(j => {
 const REJSTRIK = {
   r: { cs: glottolog.rodiny.map(r => rodinyCz[r] || r), en: glottolog.rodiny.map(r => RODINY_EN[r] || r) },
   m: { cs: glottolog.makro.map(m => (m && UI.cs.makro[m]) || ""), en: glottolog.makro.map(m => (m && UI.en.makro[m]) || "") },
-  b: glottolog.body.map(b => b.slice(0, 6)),  // 7. pole (glottocode) stránka nepotřebuje
+  b: glottolog.body.map(b => b.slice(0, 6)),
   // znakové jazyky: rodina „Sign Language“ a pár dalších, které Glottolog řadí jinam (Rennellese Sign Language)
+  g: glottolog.body.map(b => b[6]),           // glottocode – stálý kód tečky pro odkaz #corn1251
   zn: glottolog.body.flatMap((b, i) => glottolog.rodiny[b[3]] === "Sign Language" || /\bsign language\b/i.test(b[0]) ? [i] : [])
 };
 
@@ -71,13 +74,15 @@ function sestav(lang, { odkazJinam, artefakt }) {
     .replace("/*__STATY__*/null", () => doSkriptu(nazvyZemi))
     .replace("/*__REJSTRIK__*/null", () => doSkriptu(REJSTRIK))
     .replace("/*__PODROBNOSTI__*/null", () => doSkriptu({ wals: podrobnosti.wals, uzly: podrobnosti.uzly, nad: podrobnosti.nad,
-                                                          staty: podrobnosti.staty, udhr: podrobnosti.udhr, radky: podrobnosti.radky }));
+                                                          staty: podrobnosti.staty, udhr: podrobnosti.udhr, mapaStatu: podrobnosti.mapaStatu,
+                                                          radky: podrobnosti.radky }));
   const skripty = knihovny.map(k => `<script>${k}</script>`).join("\n") + `\n<script>${skript}</script>`;
 
   const hlavicka =
     `<title>${escHtml(T.nazev)}</title>\n` +
     `<meta name="description" content="${escHtml(T.popis)}">\n` +
     `<meta name="theme-color" content="#02030A">\n` +
+    `<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,${encodeURIComponent(ikona)}">\n` +
     // vzhled (podle počítače, nebo podle přepínače) nastavím hned, ať stránka při načtení neblikne
     `<script>(function(){var m=null;try{m=localStorage.getItem("atlas-motiv")}catch(e){}` +
     `if(!m)m=window.matchMedia&&matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";` +
@@ -88,9 +93,20 @@ function sestav(lang, { odkazJinam, artefakt }) {
     `<style>\n${styly}</style>\n`;
 
   const fragment = hlavicka + html + "\n" + skripty + "\n";
+  // náhled při sdílení odkazu (Facebook, WhatsApp, Messenger…) – jen pro web, artefakt ho nepotřebuje
+  const adresa = WEB + (lang === "cs" ? "/" : "/en/");
+  const sdileni =
+    `<link rel="canonical" href="${adresa}">\n` +
+    `<link rel="alternate" hreflang="cs" href="${WEB}/">\n<link rel="alternate" hreflang="en" href="${WEB}/en/">\n` +
+    `<link rel="apple-touch-icon" href="/apple-touch-icon.png">\n` +
+    `<meta property="og:type" content="website">\n<meta property="og:url" content="${adresa}">\n` +
+    `<meta property="og:title" content="${escHtml(T.nazev)}">\n<meta property="og:description" content="${escHtml(T.popis)}">\n` +
+    `<meta property="og:image" content="${WEB}/nahled-${lang}.jpg">\n<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n` +
+    `<meta property="og:image:alt" content="${escHtml(T.nahledPopis)}">\n` +
+    `<meta property="og:locale" content="${lang === "cs" ? "cs_CZ" : "en_GB"}">\n<meta name="twitter:card" content="summary_large_image">\n`;
   const dokument = `<!doctype html>\n<html lang="${lang}">\n<head>\n<meta charset="utf-8">\n` +
     `<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n` +
-    hlavicka + `</head>\n<body>\n${html}\n${skripty}\n</body>\n</html>\n`;
+    hlavicka + sdileni + `</head>\n<body>\n${html}\n${skripty}\n</body>\n</html>\n`;
   return { fragment, dokument };
 }
 
@@ -103,6 +119,7 @@ const en = sestav("en", { odkazJinam: "../index.html", artefakt: false });
 fs.mkdirSync(path.join(KOREN, "dist/en"), { recursive: true });
 fs.writeFileSync(path.join(KOREN, "dist/index.html"), cs.dokument);
 fs.writeFileSync(path.join(KOREN, "dist/en/index.html"), en.dokument);
+for (const f of fs.readdirSync(path.join(KOREN, "static"))) fs.copyFileSync(path.join(KOREN, "static", f), path.join(KOREN, "dist", f));   // ikonky a náhledy
 const kb = s => (Buffer.byteLength(s) / 1024).toFixed(0) + " kB";
 console.log(`dist/index.html (česky) ${kb(cs.dokument)}, dist/en/index.html (anglicky) ${kb(en.dokument)}`);
 

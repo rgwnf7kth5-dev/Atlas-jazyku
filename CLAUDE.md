@@ -59,6 +59,20 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
   V `radky` je tedy vitalita -1 (bez údaje) až 6. Přepínač „Vitalita“ otevře panel se stupni (lze vybrat víc,
   předvolby „Všechny“ a „Jen ohrožené“ = zranitelný až kriticky); volba se pamatuje (`atlas-vitalita`).
   Filtry vitality a znakových jazyků se skládají v `uplatniFiltry()`.
+  Dokud je panel otevřený, tečky mají **barvu podle vitality**: ordinální stupnice jednoho odstínu (oranžová,
+  bezpečný → vymřelý, `--vit-0`…`--vit-5`), prošla validátorem palet `--ordinal` na pevnině v noci i ve dne;
+  probouzený zeleně (`--vit-6`), bez údaje šedě. Pořadí ani odstíny neměnit bez nového ověření.
+  Vitalita je na kartě tečky i na kartě jazyka z atlasu (`oddilVitality`).
+- Popisek dole na glóbu se mění podle filtru („Podle filtru svítí 4 095 z 7 967…“) a při barvení vitality.
+- **Odkaz na jazyk**: `#cs` (id jazyka z atlasu) nebo `#corn1251` (glottocode tečky, build ho dává do `REJSTRIK.g`).
+  Výběr zapíše adresu (`history.replaceState`), otevření odkazu jazyk vybere; když ho schovává filtr, filtry se zruší.
+  Tlačítko s řetízkem na kartě odkaz zkopíruje (v artefaktu je skryté).
+- **Klik na zemi** ukáže počet všech jazyků státu z rejstříku (Glottolog `Countries`; převod názvu státu z mapy
+  na kód je `mapaStatu` v `podrobnosti.json`) a tlačítko, které je na glóbu rozsvítí (příznak 5) a přiblíží stát.
+  Kosovo, Severní Kypr a Somaliland kód nemají – ukáže se jen seznam jazyků z atlasu.
+- Náhled pro sdílení odkazu (og:image) je `static/nahled-cs.jpg` / `nahled-en.jpg`, ikonka `static/favicon.svg`
+  (vkládá se do stránky) a `apple-touch-icon.png`. Build kopíruje `static/` do `dist/`. Obrázky vyrábí
+  `scripts/nahledy.mjs` (potřebuje Playwright) – po větší změně vzhledu je vyrob znovu. Adresa webu je v `build.mjs` (`WEB`).
 - Od vybraného jazyka vedou světelné oblouky k nejbližším příbuzným (nejvýš 6, podle nejhlubšího společného
   předka ve stromu Glottologu). U jazyka z atlasu jen k jiným jazykům atlasu, karta je vypisuje.
 
@@ -99,7 +113,7 @@ u každého pushe.
 ## Výkon
 
 Glóbus má čtyři plátna nad sebou: `#podklad` (koule, pevnina, území vybraného jazyka, hranice – 2D),
-`#gl` (7 967 světélek – WebGL, bez něj záložní 2D), `#popisky` a `#globus` (oblouky a zaměřovač; bere myš).
+`#gl` (7 967 světélek – WebGL, bez něj záložní 2D; barva a velikost podle příznaku 0–5 z polí `u_b`, `u_vel`, `u_mek`), `#popisky` a `#globus` (oblouky a zaměřovač; bere myš).
 Každé se překresluje, jen když je potřeba. Neměř jen JS – drahá je rasterizace a skládání vrstev.
 `ctx.filter` (blur) stál 52 ms na snímek, proto se nepoužívá. Hustota pixelů 2D pláten je u velkého
 plátna omezená na 1,35. Koule s atmosférou i stín koule se kreslí do zásoby; pevnina je jeden obrys

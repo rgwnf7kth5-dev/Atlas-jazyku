@@ -18,6 +18,10 @@
   --sit:rgba(127,233,255,.07); --hranice:120,170,255; --okraj-koule:rgba(127,233,255,.4);
   --pevnina:#1D3170; --pobrezi:rgba(120,175,255,.42); --stin-koule:rgba(0,0,10,.55);   /* pevnina světlejší než moře */
   --tecka-jazyk:#5ADCFF; --tecka-bod:#FFFFFF;
+  /* vitalita: ordinální stupnice jednoho odstínu (bezpečný → vymřelý), prošla validátorem palet (--ordinal)
+     na pevnině #1D3170; probouzený a bez údaje jsou mimo stupnici, proto jiný odstín / šedá */
+  --vit-0:#c96805; --vit-1:#e57c20; --vit-2:#fd923e; --vit-3:#feb582; --vit-4:#fed4b9; --vit-5:#fef3eb;
+  --vit-6:#21AE70; --vit-nic:#6D80A8;
   --popisek:#EAF4FF; --popisek-lem:rgba(2,4,14,.88); --zamerovac-lem:rgba(2,4,14,.7);
   /* barvy jazykových rodin a text na nich */
   --r-ie:#5E92EC; --r-st:#E4645A; --r-an:#12A3BC; --r-afro:#A5761A; --r-nk:#21AE70; --r-ost:#A268DC;
@@ -44,6 +48,9 @@
   --sit:rgba(40,90,170,.1); --hranice:40,80,160; --okraj-koule:rgba(40,110,200,.45);
   --pevnina:#A9BEE2; --pobrezi:rgba(40,80,160,.4); --stin-koule:rgba(40,70,140,.16);   /* pevnina tmavší než moře */
   --tecka-jazyk:#0A5A94; --tecka-bod:#0E1838;
+  /* denní stupnice vitality – ověřená na pevnině #A9BEE2 */
+  --vit-0:#d16022; --vit-1:#b84b03; --vit-2:#993e02; --vit-3:#7b3002; --vit-4:#5e2301; --vit-5:#431701;
+  --vit-6:#0A7541; --vit-nic:#8A96B0;
   --popisek:#0E1838; --popisek-lem:rgba(255,255,255,.92); --zamerovac-lem:rgba(255,255,255,.85);
   --r-ie:#2E63D6; --r-st:#E2544A; --r-an:#0A9BB5; --r-afro:#E09A18; --r-nk:#0A7541; --r-ost:#8A44C8;
   --t-ie:#FFFFFF; --t-st:#FFFFFF; --t-an:#FFFFFF; --t-afro:#161A3A; --t-nk:#FFFFFF; --t-ost:#FFFFFF;
@@ -137,11 +144,15 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
 .vp-stupne button[aria-pressed="true"] .zatrzeni{background:var(--cyan); border-color:var(--cyan); color:var(--na-cyan)}
 .vp-stupne .mini{display:flex; gap:2px}
 .vp-stupne .mini i{flex:1; height:6px; border-radius:3px; background:var(--plocha2)}
-.vp-stupne .mini i.plny{background:linear-gradient(90deg,var(--cyan),var(--fialova))}
-.vp-stupne .mini.probouzi i.plny:last-child{background:var(--r-nk)}
+.vp-stupne .mini i.plny{background:var(--vit-barva)}
 .vp-stupne .pocet-st{font-family:var(--pismo-data); font-weight:400; font-size:.68rem; color:var(--text3); font-variant-numeric:tabular-nums}
 .vp-zdroj{margin:9px 2px 0; font-size:.68rem; line-height:1.4; color:var(--text3)}
-.ohrozeni.probouzi i.plny:last-child{background:var(--r-nk)}
+.ohrozeni[style] i.plny{background:var(--vit-barva); box-shadow:none}
+#k-plne > .podrobnosti{margin:4px 0 12px}
+.zkopirovano{margin:0 0 10px; font-size:.8rem; padding:6px 10px; border-radius:10px; background:var(--cyan-slabe); border:1px solid var(--cyan-okraj); color:var(--text)}
+.zeme-okno .zeme-pocet{margin:0 0 7px; color:var(--text)}
+.zeme-okno .zeme-tl{margin:0 0 9px; font-weight:600; border-color:var(--cyan-okraj)}
+.zeme-okno .zeme-pozn{margin:0 0 5px; font-size:.72rem; color:var(--text3)}
 .zoom-ovl{display:flex; align-items:center; gap:2px; padding:3px; border-radius:999px;
   background:var(--sklo-tl); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border:1px solid var(--sklo-okraj)}
 .kolo{width:32px;height:32px; flex:none; display:grid; place-items:center; cursor:pointer; border:0; border-radius:50%;
@@ -170,7 +181,10 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
 .scena.spi .karta::before{animation-play-state:paused}   /* po chvíli bez dotyku ať se nepřekresluje */
 .scena .karta.sklo{backdrop-filter:blur(12px) saturate(150%); -webkit-backdrop-filter:blur(12px) saturate(150%)}
 @keyframes obvod{to{--uhel:360deg}}
-.karta-hlava{display:flex; align-items:flex-start; gap:10px; margin-bottom:10px}
+.karta-hlava{display:flex; align-items:flex-start; gap:6px; margin-bottom:10px}
+.karta-hlava > div{margin-right:auto}
+.karta-hlava .zavrit{margin-left:0}
+.karta-hlava #k-sdilet svg{width:15px;height:15px}
 .kod{margin:0 0 3px; font-family:var(--pismo-data); font-size:.6rem; letter-spacing:.14em; text-transform:uppercase; color:var(--cyan)}
 .karta h2{font-family:var(--pismo-nadpis); font-weight:700; font-size:1.4rem; line-height:1.1; margin:0; letter-spacing:.01em}
 .karta .domaci{font-size:.82rem; color:var(--text2); margin:2px 0 0}

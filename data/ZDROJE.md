@@ -10,7 +10,7 @@
 | ↳ ukázka textu | článek 1 Všeobecné deklarace lidských práv | [UDHR in Unicode](https://www.unicode.org/udhr/) přes balíček [`udhr`](https://github.com/wooorm/udhr); texty OHCHR | balíček MIT; jen hotové překlady (stupeň 4) |
 | ↳ odhad počtu uživatelů, české názvy jazyků | součet obyvatel států × podíl uživatelů jazyka; názvy jazyků | [Unicode CLDR](https://cldr.unicode.org) 48 (`cldr-core`, `cldr-localenames-full`) | Unicode License |
 | ↳ počty mluvčích, české názvy, články na Wikipedii | počet mluvčích (P1098) s rokem, zda jde o rodilé mluvčí, český popisek, odkaz na článek | [Wikidata](https://www.wikidata.org) – `data/wikidata.json`, stahuje `scripts/wikidata.mjs` v GitHub Actions jednou měsíčně | CC0 (volné dílo) |
-| ↳ názvy států, převod kódů | ISO 3166 česky/anglicky, ISO 639-1 → 639-3 | [`i18n-iso-countries`](https://github.com/michaelwittig/node-i18n-iso-countries), [`iso-639-3`](https://github.com/wooorm/iso-639-3) | MIT |
+| ↳ názvy států, převod kódů | ISO 3166 česky/anglicky, číselný kód státu na mapě → dvoupísmenný (`mapaStatu`), ISO 639-1 → 639-3 | [`i18n-iso-countries`](https://github.com/michaelwittig/node-i18n-iso-countries), [`iso-639-3`](https://github.com/wooorm/iso-639-3) | MIT |
 | `countries-110m.json` | hranice států a pevnina | [world-atlas](https://github.com/topojson/world-atlas) z dat [Natural Earth](https://www.naturalearthdata.com) | ISC; Natural Earth je volné dílo |
 | `languages.json` | 163 jazyků s pozdravem, výslovností, zajímavostí a areálem | vlastní práce tohoto projektu | – |
 | `country-names.json` | české a anglické názvy států | vlastní práce | – |

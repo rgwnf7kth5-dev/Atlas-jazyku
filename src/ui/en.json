@@ -336,5 +336,17 @@
  "vitalitaVse": "All",
  "vitalitaOhrozene": "Endangered only",
  "vitalitaBezUdaje": "No data",
- "vitalitaZavrit": "Close vitality filter"
+ "vitalitaZavrit": "Close vitality filter",
+ "nahledPopis": "A globe dotted with lights – each one is one of the world's languages",
+ "legendaFiltr": "The filter shows {n} of {m} languages. Click a light.",
+ "legendaFiltrDen": "The filter shows {n} of {m} languages. Click a dot.",
+ "legendaVitalita": "The colour of each light shows the language's vitality – see the levels in the panel.",
+ "legendaVitalitaDen": "The colour of each dot shows the language's vitality – see the levels in the panel.",
+ "zemeRejstrik": "{n} in the world register",
+ "zemeRozsvitit": "Light them up on the globe",
+ "zemeRozsvititDen": "Highlight them on the globe",
+ "zemeZhasnout": "Clear highlight",
+ "zemeAtlas": "With a greeting in the atlas:",
+ "sdiletOdkaz": "Copy a link to this language",
+ "sdiletHotovo": "Link copied – you can send it on."
 }

@@ -22,6 +22,7 @@ const ZDROJE = {
   "cldr-territory.json": `${NPM}/cldr-core@48.2.0/supplemental/territoryInfo.json`,
   "zeme-cs.json": `${NPM}/i18n-iso-countries@7.14.0/langs/cs.json`,
   "zeme-en.json": `${NPM}/i18n-iso-countries@7.14.0/langs/en.json`,
+  "zeme-kody.json": `${NPM}/i18n-iso-countries@7.14.0/codes.json`,
   "iso6393.js": `${NPM}/iso-639-3@3.0.1/iso6393.js`
 };
 
@@ -218,10 +219,17 @@ const radky = kody.map((_, i) => {
   while (r.length && (r[r.length - 1] === "" || r[r.length - 1] === 0 || r[r.length - 1] === -1)) r.pop();   // ořízni prázdný konec
   return r;
 });
+/* --- státy na mapě (číselný kód ISO 3166 z world-atlas) → dvoupísmenný kód, jaký používá Glottolog --- */
+const ciselne = {};
+for (const [a2, , num] of JSON.parse(cti("zeme-kody.json"))) ciselne[String(num).padStart(3, "0")] = a2;
+const svet = JSON.parse(fs.readFileSync(path.join(KOREN, "data/countries-110m.json"), "utf8"));
+const mapaStatu = {};
+for (const g of svet.objects.countries.geometries) if (g.id && ciselne[g.id]) mapaStatu[g.properties.name] = ciselne[g.id];
+
 const vystup = {
   stazeno: new Date().toISOString().slice(0, 10),
   wals: WALS_VLASTNOSTI,
-  uzly, nad, staty: nazvyStatu, udhr, radky
+  uzly, nad, staty: nazvyStatu, udhr, mapaStatu, radky
 };
 fs.writeFileSync(path.join(KOREN, "data/podrobnosti.json"), JSON.stringify(vystup));
 
