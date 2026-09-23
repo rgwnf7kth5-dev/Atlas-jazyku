@@ -814,7 +814,8 @@ function dlazdice(j){
 function jazykDne(){
   const moznosti = JAZYKY.filter(function(j){ return !atlasSkryty(j); });
   if (!moznosti.length) return null;
-  return moznosti[Math.floor(Date.now() / 864e5) % moznosti.length];
+  const den = Math.floor((Date.now() - new Date().getTimezoneOffset() * 6e4) / 864e5);   // místní den, ať sedí s datem na kartě
+  return moznosti[den % moznosti.length];
 }
 let razeni = "rodiny";
 try { razeni = localStorage.getItem("atlas-razeni") || "rodiny"; } catch (e) {}
