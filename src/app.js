@@ -244,7 +244,10 @@ function postavPolici(filtr){
     const izolat = REJSTRIK.r.en.findIndex(function(r){ return /^isolate/.test(r); }),
           znakove = REJSTRIK.r.en.indexOf("sign language");
     const nakonec = function(g){ return g.klic == null || g.klic < 0 || (razeni === "rodiny" && g.klic === izolat) ? 1 : 0; };
-    skupiny.sort(function(a, b){ return nakonec(a) - nakonec(b) || (b.s.length + b.bez.length) - (a.s.length + a.bez.length); });
+    /* napřed rodina a světadíl jazyka, ve kterém čtenář stránku čte (čeština i angličtina: indoevropská, Eurasie) */
+    const domov = PODLE_ID[T.lang] ? (razeni === "svetadil" ? OBLAST_ATLASU[T.lang] : RODINA_ATLASU[T.lang]) : null;
+    const doma = function(g){ return g.klic === domov ? 0 : 1; };
+    skupiny.sort(function(a, b){ return nakonec(a) - nakonec(b) || doma(a) - doma(b) || (b.s.length + b.bez.length) - (a.s.length + a.bez.length); });
     skupiny.forEach(function(g){
       if (razeni === "svetadil") { g.nazev = (g.klic >= 0 && REJSTRIK.mm[g.klic]) || T.svetadilOstatni; g.barva = null; }
       else g.nazev = g.klic === izolat ? T.izolovane : g.klic === znakove ? T.znakoveSkupina : g.klic >= 0 ? velke(REJSTRIK.rr[g.klic]) : T.nezarazene;

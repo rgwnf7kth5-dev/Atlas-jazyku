@@ -92,6 +92,7 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
   (podtitul stát, u abecedy rodina). Řazení podle rodin (rodiny Glottologu od největší, izolované jazyky na konec) /
   A–Z (česky i Č, Ch, Ř, Š, Ž) / světadílů (`atlas-razeni`). Filtry i hledání platí i tady. Dlaždic je skoro 8 000,
   proto se kreslí po dávkách 240 (`pridavej`, zarážka hlídaná `IntersectionObserver`). Nahoře „Jazyk dne“.
+  Skupiny začínají tam, kde je čtenář doma: u rodin indoevropská (rodina češtiny i angličtiny), u světadílů Eurasie.
 - **Živější glóbus**: v noci světélka jemně třpytí (překresluje se jen WebGL, co 60 ms, usíná s okrasným
   pohybem), koule má odlesk slunce (ve dne výraznější).
 - **Mobil (≤ 920 px)**: karta je spodní vysouvací list (úchyt, tažení nahoru = celá, dolů = menší / zavřít),
