@@ -92,10 +92,11 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
   (podtitul stát, u abecedy rodina). Řazení podle rodin (rodiny Glottologu od největší, izolované jazyky na konec) /
   A–Z (česky i Č, Ch, Ř, Š, Ž) / světadílů (`atlas-razeni`). Filtry i hledání platí i tady. Dlaždic je skoro 8 000,
   proto se kreslí po dávkách 240 (`pridavej`, zarážka hlídaná `IntersectionObserver`).
+  Skupiny začínají tam, kde je čtenář doma: u rodin indoevropská (rodina češtiny i angličtiny), u světadílů Eurasie.
 - **Jazyk dne** nahoře v polici musí být vidět (uživatel: malý a v barvě rodiny si ho nikdo nevšiml). Má vlastní
   přechod „východu slunce“ `#C2410C → #BE185D → #7E22CE` (bílý text min. 5,2 : 1), bílý štítek s hvězdičkou a dnešním
   datem, velký pozdrav, zajímavost a tlačítko „Ukaž mi ho na glóbu“. Barvu rodiny nepoužívá, aby nevypadal jako další dlaždice.
-  Skupiny začínají tam, kde je čtenář doma: u rodin indoevropská (rodina češtiny i angličtiny), u světadílů Eurasie.
+  Jazyk se mění o půlnoci místního času.
 - **Živější glóbus**: v noci světélka jemně třpytí (překresluje se jen WebGL, co 60 ms, usíná s okrasným
   pohybem), koule má odlesk slunce (ve dne výraznější).
 - **Mobil (≤ 920 px)**: karta je spodní vysouvací list (úchyt, tažení nahoru = celá, dolů = menší / zavřít),
