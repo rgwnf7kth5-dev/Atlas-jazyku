@@ -39,6 +39,13 @@ Nasazení přes Netlify z větve `main` podle `netlify.toml` (build `npm run che
   Vybraný jazyk a jeho příbuzní (konce oblouků) mají jméno vždy, i bez přiblížení.
 - Areál jazyka = seznam kruhů `[délka, šířka, poloměr ve stupních]`, kreslí se barvou rodiny oříznutý na pevninu
   (jádro ×1,3, měkký okraj ×1,75). Státy v `zeme` se vybarví celé – jen tam, kde se jazykem opravdu mluví v celém státě.
+- **Znakové jazyky** (225 teček: rodina „Sign Language“ v Glottologu + názvy se „Sign Language“; build je dává do
+  `REJSTRIK.zn`). Přepínač vpravo nahoře „Všechny / Bez znakových / Jen znakové“ schová tečky, popisky, výsledky
+  hledání i jazyky atlasu (z atlasu je znakový jen český znakový jazyk `czj`); volba se pamatuje (`atlas-znakove`).
+  V režimu „Jen znakové“ ukáže police všechny znakové jazyky i bez hledání.
+  **Karta znakového jazyka nesmí používat texty pro mluvené jazyky** (uživatel: „vypadá to, že se děti napřed učí
+  znakovou řeč“): má úvod „Co je znakový jazyk“, vlastní stupně ohrožení `aesZnak` (o neslyšících dětech)
+  a „Kde se jím znakuje“ / „Znakuje jím“ místo „mluví“.
 - Od vybraného jazyka vedou světelné oblouky k nejbližším příbuzným (nejvýš 6, podle nejhlubšího společného
   předka ve stromu Glottologu). U jazyka z atlasu jen k jiným jazykům atlasu, karta je vypisuje.
 

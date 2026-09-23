@@ -53,6 +53,7 @@ if (divnychMluvcich) chyby.push(`data/podrobnosti.json: ${divnychMluvcich} jazyk
 if (pd.uzly.length !== pd.nad.length) chyby.push("data/podrobnosti.json: strom příbuzenstva je poškozený");
 for (const [l, ui] of [["cs", uiCs], ["en", uiEn]]) {
   if (!Array.isArray(ui.aes) || ui.aes.length !== 6) chyby.push(`src/ui/${l}.json: „aes“ musí mít 6 stupňů ohrožení`);
+  if (!Array.isArray(ui.aesZnak) || ui.aesZnak.length !== 6) chyby.push(`src/ui/${l}.json: „aesZnak“ musí mít 6 stupňů ohrožení znakových jazyků`);
   if (!Array.isArray(ui.med) || ui.med.length !== 5) chyby.push(`src/ui/${l}.json: „med“ musí mít 5 stupňů popsanosti`);
   for (const k of pd.wals) if (!ui.wals || !ui.wals[k]) chyby.push(`src/ui/${l}.json: chybí popisek vlastnosti ${k}`);
   if (!Array.isArray(ui.strany) || ui.strany.length !== 4) chyby.push(`src/ui/${l}.json: „strany“ musí mít 4 světové strany (sever, jih, východ, západ)`);

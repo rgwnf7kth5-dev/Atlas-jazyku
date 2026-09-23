@@ -55,7 +55,7 @@
  "nicNenalezeno": "Nic takového tu není. Zkus třeba „Brazílie“, „Aloha“ nebo „tónový“.",
  "nalezeno": "Našlo se {a} v atlasu",
  "nalezenoRejstrik": " a {b} v rejstříku",
- "vychoziPocet": "{a} jazyků s pozdravem · {b} světélek na glóbu",
+ "vychoziPocet": "{a} s pozdravem · {b} světélek na glóbu",
  "zemeBezPozdravu": "Odsud tu zatím nemám žádný pozdrav. Zkus kliknout na některé světélko.",
  "tecka": "mezinárodní název ze světového rejstříku Glottolog",
  "teckaPozn": "Pozdrav k tomuhle jazyku v atlasu zatím nemám.",
@@ -271,11 +271,54 @@
  "podnadpisDen": "Každý bod na glóbu je jeden ze {pocet} jazyků Země",
  "legendaDen": "Každý bod je jeden ze {pocet} jazyků světa. Klikni na něj.",
  "napovedaVyberDen": "Zatoč glóbem, přibliž kolečkem, klikni na bod nebo na zemi",
- "vychoziPocetDen": "{a} jazyků s pozdravem · {b} bodů na glóbu",
+ "vychoziPocetDen": "{a} s pozdravem · {b} bodů na glóbu",
  "zemeBezPozdravuDen": "Odsud tu zatím nemám žádný pozdrav. Zkus kliknout na některý bod.",
  "pribuzniObloukyDen": "Na glóbu k nim vedou oblouky.",
  "zpetna": "Máš nápad, nebo ti něco nefunguje? Napiš na",
  "zpetnaAdresa": "castor2@me.com",
  "zpetnaPredmet": "Atlas jazyků – zpětná vazba",
- "zpetnaPopis": "Napsat e-mail se zpětnou vazbou"
+ "zpetnaPopis": "Napsat e-mail se zpětnou vazbou",
+ "znakoveSkupina": "Znakové jazyky",
+ "znakoveVse": "Všechny",
+ "znakoveBez": "Bez znakových",
+ "znakoveJen": "Jen znakové",
+ "znakovePopis": "Znakovými jazyky mluví hlavně neslyšící – rukama, obličejem a celým tělem. Každá země má svůj.",
+ "znakoveSeznam": "Znakové jazyky ve světovém rejstříku",
+ "znakovyCo": "Co je znakový jazyk",
+ "znakovyVysvetleni": "Znakový jazyk se nemluví, ale ukazuje – rukama, výrazem obličeje a pohyby těla. Používají ho hlavně neslyšící lidé a jejich rodiny. Není to mluvený jazyk přeložený do rukou: má vlastní slovíčka i vlastní mluvnici.",
+ "aesZnak": [
+  [
+   "Neohrožený",
+   "Neslyšící děti ho přirozeně přebírají – od neslyšících rodičů, ve škole a mezi neslyšícími."
+  ],
+  [
+   "Zranitelný",
+   "Neslyšící děti ho používají, ale jen někde – třeba jen v některých školách nebo městech."
+  ],
+  [
+   "Ohrožený",
+   "Neslyšící děti se ho už většinou neučí."
+  ],
+  [
+   "Vážně ohrožený",
+   "Znakují jím hlavně starší neslyšící."
+  ],
+  [
+   "Kriticky ohrožený",
+   "Zbývá jen pár starých uživatelů."
+  ],
+  [
+   "Vymřelý",
+   "Už ho nikdo nepoužívá jako svůj první jazyk."
+  ]
+ ],
+ "kdeZnakuje": "Kde se jím znakuje",
+ "znakuje": "Znakuje jím",
+ "uzivateluZnak": "Uživatelů",
+ "mluvciPoznRodiliZnak": "rodilých uživatelů · Wikidata{rok}",
+ "jazyk": [
+  "jazyk",
+  "jazyky",
+  "jazyků"
+ ]
 }

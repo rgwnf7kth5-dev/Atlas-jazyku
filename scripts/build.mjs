@@ -47,7 +47,9 @@ const JAZYKY = jazykyAtlasu.map(j => {
 const REJSTRIK = {
   r: { cs: glottolog.rodiny.map(r => rodinyCz[r] || r), en: glottolog.rodiny.map(r => RODINY_EN[r] || r) },
   m: { cs: glottolog.makro.map(m => (m && UI.cs.makro[m]) || ""), en: glottolog.makro.map(m => (m && UI.en.makro[m]) || "") },
-  b: glottolog.body.map(b => b.slice(0, 6))   // 7. pole (glottocode) stránka nepotřebuje
+  b: glottolog.body.map(b => b.slice(0, 6)),  // 7. pole (glottocode) stránka nepotřebuje
+  // znakové jazyky: rodina „Sign Language“ a pár dalších, které Glottolog řadí jinam (Rennellese Sign Language)
+  zn: glottolog.body.flatMap((b, i) => glottolog.rodiny[b[3]] === "Sign Language" || /\bsign language\b/i.test(b[0]) ? [i] : [])
 };
 
 function sestav(lang, { odkazJinam, artefakt }) {

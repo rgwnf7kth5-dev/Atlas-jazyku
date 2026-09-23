@@ -55,7 +55,7 @@
  "nicNenalezeno": "Nothing here. Try “Brazil”, “Aloha” or “tonal”.",
  "nalezeno": "Found {a} in the atlas",
  "nalezenoRejstrik": " and {b} in the register",
- "vychoziPocet": "{a} languages with a greeting · {b} lights on the globe",
+ "vychoziPocet": "{a} with a greeting · {b} lights on the globe",
  "zemeBezPozdravu": "No greeting from here yet. Try clicking one of the lights.",
  "tecka": "name from the Glottolog world register",
  "teckaPozn": "There's no greeting for this language in the atlas yet.",
@@ -271,11 +271,54 @@
  "podnadpisDen": "Every dot on the globe is one of Earth's {pocet} languages",
  "legendaDen": "Every dot is one of the world's {pocet} languages. Click one.",
  "napovedaVyberDen": "Spin the globe, zoom with the wheel, click a dot or a country",
- "vychoziPocetDen": "{a} languages with a greeting · {b} dots on the globe",
+ "vychoziPocetDen": "{a} with a greeting · {b} dots on the globe",
  "zemeBezPozdravuDen": "No greeting from here yet. Try clicking one of the dots.",
  "pribuzniObloukyDen": "Arcs on the globe lead to them.",
  "zpetna": "Got an idea, or is something not working? Write to",
  "zpetnaAdresa": "castor2@me.com",
  "zpetnaPredmet": "Language Atlas – feedback",
- "zpetnaPopis": "Send feedback by e-mail"
+ "zpetnaPopis": "Send feedback by e-mail",
+ "znakoveSkupina": "Sign languages",
+ "znakoveVse": "All",
+ "znakoveBez": "No sign languages",
+ "znakoveJen": "Sign only",
+ "znakovePopis": "Sign languages are used mainly by Deaf people – with hands, face and the whole body. Each country has its own.",
+ "znakoveSeznam": "Sign languages in the world register",
+ "znakovyCo": "What is a sign language",
+ "znakovyVysvetleni": "A sign language is not spoken but shown – with the hands, facial expressions and body movement. It is used mainly by Deaf people and their families. It is not a spoken language translated into hands: it has its own words and its own grammar.",
+ "aesZnak": [
+  [
+   "Safe",
+   "Deaf children pick it up naturally – from Deaf parents, at school and in the Deaf community."
+  ],
+  [
+   "Vulnerable",
+   "Deaf children use it, but only in some places – for example only in some schools or towns."
+  ],
+  [
+   "Definitely endangered",
+   "Most Deaf children no longer learn it."
+  ],
+  [
+   "Severely endangered",
+   "Mostly older Deaf people sign it."
+  ],
+  [
+   "Critically endangered",
+   "Only a few elderly signers are left."
+  ],
+  [
+   "Extinct",
+   "Nobody uses it as a first language any more."
+  ]
+ ],
+ "kdeZnakuje": "Where it is used",
+ "znakuje": "Signers",
+ "uzivateluZnak": "Signers",
+ "mluvciPoznRodiliZnak": "native signers · Wikidata{rok}",
+ "jazyk": [
+  "language",
+  "languages",
+  "languages"
+ ]
 }
