@@ -208,10 +208,17 @@ function postavPolici(filtr){
     const d = jazykDne();
     if (d) {
       const tl = prvek("button", "jazyk-dne");
-      tl.type = "button"; tl.style.setProperty("--r-barva", "var(--r-" + d.sk + ")"); tl.style.setProperty("--r-text", "var(--t-" + d.sk + ")");
-      tl.appendChild(prvek("span", "jd-stitek", T.jazykDne));
+      tl.type = "button";
+      const st = prvek("span", "jd-stitek");
+      st.innerHTML = '<svg aria-hidden="true"><use href="#i-hvezda"/></svg>';
+      st.appendChild(document.createTextNode(T.jazykDne + " · " + new Intl.DateTimeFormat(T.locale, {day: "numeric", month: "long"}).format(new Date())));
+      tl.appendChild(st);
       const pz = prvek("span", "jd-pozdrav", d.pis); if (d.kod) pz.lang = d.kod; tl.appendChild(pz);
       tl.appendChild(prvek("span", "jd-nazev", d.n + " · " + d.prep));
+      if (d.fakt) tl.appendChild(prvek("span", "jd-fakt", d.fakt));
+      const cta = prvek("span", "jd-akce", T.jazykDneUkaz);
+      cta.insertAdjacentHTML("beforeend", '<svg aria-hidden="true"><use href="#i-dal"/></svg>');
+      tl.appendChild(cta);
       tl.addEventListener("click", function(){ vyber(d.id); });
       seznam.appendChild(tl);
     }
