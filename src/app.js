@@ -89,15 +89,7 @@ function jmenoBodu(i){
   return cs ? velke(cs) : B[i][0];
 }
 
-/* ---------- sbírka pozdravů (jen v tomto prohlížeči) ---------- */
-let sbirka = new Set();
-try { sbirka = new Set(JSON.parse(localStorage.getItem("atlas-sbirka") || "[]")); } catch (e) {}
-function ulozSbirku(){ try { localStorage.setItem("atlas-sbirka", JSON.stringify(Array.from(sbirka))); } catch (e) {} }
-function obnovSbirku(){
-  const n = sbirka.size;
-  const slovo = n === 1 ? T.pozdrav1 : (T.lang === "cs" && n >= 2 && n <= 4 ? T.pozdrav2 : T.pozdrav5);
-  $("sbirka-text").textContent = n + " " + slovo;
-}
+try { localStorage.removeItem("atlas-sbirka"); } catch (e) {}   // úklid po zrušené sbírce pozdravů
 
 /* ---------- denní a noční vzhled: podle nastavení počítače, přepínač má přednost ---------- */
 const svetlySystem = window.matchMedia("(prefers-color-scheme: light)");
@@ -133,13 +125,6 @@ obnovPrepinacMotivu();
 
 /* ---------- police ---------- */
 const seznam = $("seznam");
-function pridejHvezdu(tl){
-  if (tl.querySelector(".znamka")) return;
-  const hv = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-  hv.setAttribute("class", "znamka"); hv.setAttribute("viewBox", "0 0 24 24"); hv.setAttribute("aria-hidden", "true");
-  const use = document.createElementNS("http://www.w3.org/2000/svg", "use");
-  use.setAttribute("href", "#i-hvezda"); hv.appendChild(use); tl.appendChild(hv);
-}
 function tlacitko(nazev, podtitul, barva, trida){
   const tl = document.createElement("button");
   tl.type = "button"; tl.className = "jaz" + (trida ? " " + trida : "");
@@ -172,7 +157,6 @@ function postavPolici(filtr){
       const tl = tlacitko(j.n, j.pis, "var(--r-" + j.sk + ")");
       tl.dataset.id = j.id;
       tl.setAttribute("aria-pressed", vybrany && vybrany.typ === "atlas" && vybrany.id === j.id ? "true" : "false");
-      if (sbirka.has(j.id)) pridejHvezdu(tl);
       tl.addEventListener("click", function(){ vyber(j.id); });
       mrizka.appendChild(tl);
     });
@@ -923,7 +907,6 @@ function oznacTlacitka(id){
   Array.prototype.forEach.call(document.querySelectorAll(".jaz[data-id]"), function(el){
     const je = el.dataset.id === id;
     el.setAttribute("aria-pressed", je ? "true" : "false");
-    if (je) pridejHvezdu(el);
   });
 }
 function vyber(id){
@@ -931,7 +914,6 @@ function vyber(id){
   vybrany = {typ: "atlas", id: j.id, sk: j.sk, zeme: j.zeme, ob: j.ob, stred: j.stred,
              pribuzni: BOD_ATLASU[j.id] >= 0 ? pribuzniBodu(BOD_ATLASU[j.id], true, 6) : []};
   if (globusOk) obnovPriznaky();
-  if (!sbirka.has(id)) { sbirka.add(id); ulozSbirku(); obnovSbirku(); }
   ukazKartu(j);
   poVyberu(globusOk ? zoomProJazyk(j) : 1);
   oznacTlacitka(id);
@@ -1227,7 +1209,6 @@ function obnovTexty(){
 function prepniJazyk(lang){
   T = UI[lang]; STATY = STATY_VSE[lang];
   prelozData(); zmerPopisky();
-  obnovSbirku();
   obnovTexty();
   zobrazenyZoom = ""; if (globusOk) { uplatniZoom(); hudTxt = ""; }
   if (!ARTEFAKT && location.protocol !== "file:" && history.replaceState) {
@@ -1241,7 +1222,7 @@ odkazJinam.addEventListener("click", function(e){
 
 /* ---------- start ---------- */
 /* stránka začíná celým světem, bez vybraného jazyka (přání uživatele) */
-obnovSbirku(); prelozStranku(); postavPolici("");
+prelozStranku(); postavPolici("");
 
 if (globusOk) {
   try {

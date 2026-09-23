@@ -77,9 +77,6 @@ button{font:inherit;color:inherit}
 h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8vw,1.8rem); line-height:1; margin:0; letter-spacing:.01em;
   background:var(--nadpis-grad); -webkit-background-clip:text; background-clip:text; color:transparent}
 .podnadpis{margin:3px 0 0; font-family:var(--pismo-data); font-size:.7rem; letter-spacing:.06em; color:var(--text2)}
-.sbirka{display:flex; align-items:center; gap:7px; margin:0; font-family:var(--pismo-data); font-size:.74rem; color:var(--text);
-  padding:6px 12px; border-radius:999px; background:rgba(255,212,94,.08); border:1px solid rgba(255,212,94,.35)}
-.sbirka svg{width:15px;height:15px;flex:none;color:var(--hvezda); filter:drop-shadow(0 0 6px rgba(255,212,94,.7))}
 .jazyk-prepinac{height:38px; display:grid; place-items:center; padding:0 14px; border-radius:12px; text-decoration:none; color:var(--text);
   font-weight:600; font-size:.84rem; background:var(--plocha); border:1px solid var(--sklo-okraj); transition:border-color .15s, box-shadow .15s}
 .jazyk-prepinac:hover{border-color:var(--cyan); box-shadow:0 0 18px -4px var(--cyan-zare)}
@@ -238,7 +235,6 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
 .jaz .txt{min-width:0}
 .jaz .nm{display:block; font-weight:600; font-size:.88rem; line-height:1.2; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
 .jaz .sub{display:block; font-size:.72rem; color:var(--text2); overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
-.jaz .znamka{position:absolute; top:-6px; right:-5px; width:17px;height:17px; color:var(--hvezda); filter:drop-shadow(0 0 6px rgba(255,212,94,.8))}
 .jaz.tecka-jaz{background:var(--plocha)}
 .jaz.tecka-jaz .pruh{background:var(--tecka-jazyk); opacity:.6; box-shadow:0 0 8px var(--tecka-jazyk)}
 .prazdno{padding:26px 4px; text-align:center; color:var(--text2); font-size:.88rem}
@@ -265,8 +261,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
   .znak{width:36px;height:36px}
   .nadpisy{flex:1 1 calc(100% - 60px)}
   .podnadpis{font-size:.62rem}
-  .sbirka{font-size:.68rem; padding:5px 10px}
-  .jazyk-prepinac{height:34px}
+    .jazyk-prepinac{height:34px}
   .prepinac{width:34px; height:34px}
 }
 @media (max-width:920px){
