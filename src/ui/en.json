@@ -277,5 +277,9 @@
  "napovedaVyberDen": "Spin the globe, zoom with the wheel, click a dot or a country",
  "vychoziPocetDen": "{a} languages with a greeting · {b} dots on the globe",
  "zemeBezPozdravuDen": "No greeting from here yet. Try clicking one of the dots.",
- "pribuzniObloukyDen": "Arcs on the globe lead to them."
+ "pribuzniObloukyDen": "Arcs on the globe lead to them.",
+ "zpetna": "Got an idea, or is something not working? Write to",
+ "zpetnaAdresa": "castor2@me.com",
+ "zpetnaPredmet": "Language Atlas – feedback",
+ "zpetnaPopis": "Send feedback by e-mail"
 }

@@ -1207,6 +1207,9 @@ function prelozStranku(){
   [["title", "tTitle"], ["aria-label", "tAriaLabel"], ["placeholder", "tPlaceholder"]].forEach(function(a){
     Array.prototype.forEach.call(document.querySelectorAll("[data-t-" + a[0] + "]"), function(el){ el.setAttribute(a[0], T[el.dataset[a[1]]]); });
   });
+  const zpetna = $("zpetna-odkaz");        // e-mail se zpětnou vazbou, předmět podle jazyka
+  zpetna.setAttribute("href", "mailto:" + T.zpetnaAdresa + "?subject=" + encodeURIComponent(T.zpetnaPredmet));
+  if (ARTEFAKT) { zpetna.target = "_blank"; zpetna.rel = "noopener"; }   // v náhledu artefaktu smí ven jen nové okno
   const jiny = T.lang === "cs" ? "en" : "cs";
   odkazJinam.setAttribute("hreflang", jiny); odkazJinam.setAttribute("lang", jiny);
   if (!ARTEFAKT && location.protocol !== "file:") odkazJinam.setAttribute("href", jiny === "en" ? korenWebu + "en/" : korenWebu);

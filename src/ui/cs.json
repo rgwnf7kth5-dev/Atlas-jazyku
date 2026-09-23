@@ -277,5 +277,9 @@
  "napovedaVyberDen": "Zatoč glóbem, přibliž kolečkem, klikni na bod nebo na zemi",
  "vychoziPocetDen": "{a} jazyků s pozdravem · {b} bodů na glóbu",
  "zemeBezPozdravuDen": "Odsud tu zatím nemám žádný pozdrav. Zkus kliknout na některý bod.",
- "pribuzniObloukyDen": "Na glóbu k nim vedou oblouky."
+ "pribuzniObloukyDen": "Na glóbu k nim vedou oblouky.",
+ "zpetna": "Máš nápad, nebo ti něco nefunguje? Napiš na",
+ "zpetnaAdresa": "castor2@me.com",
+ "zpetnaPredmet": "Atlas jazyků – zpětná vazba",
+ "zpetnaPopis": "Napsat e-mail se zpětnou vazbou"
 }

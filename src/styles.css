@@ -215,6 +215,11 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
 #hledej::placeholder{color:var(--text3)}
 .pocet{margin:0; font-family:var(--pismo-data); font-size:.66rem; letter-spacing:.06em; color:var(--text2)}
 .seznam{overflow-y:auto; padding:6px 16px 12px; min-height:0; flex:1; scrollbar-width:thin; scrollbar-color:var(--linka2) transparent}
+.zpetna{margin:0; padding:10px 16px 9px; border-top:1px solid var(--linka); display:flex; gap:9px; align-items:flex-start;
+  font-size:.8rem; line-height:1.4; color:var(--text2)}
+.zpetna svg{width:17px; height:17px; flex:none; margin-top:1px; color:var(--cyan)}
+.zpetna a{color:var(--cyan); font-weight:600; text-decoration:underline; text-underline-offset:2px; white-space:nowrap}
+.zpetna a:hover{text-decoration-thickness:2px}
 .zdroje{margin:0; padding:9px 16px; padding-bottom:calc(9px + env(safe-area-inset-bottom,0px)); border-top:1px solid var(--linka);
   font-family:var(--pismo-data); font-size:.58rem; letter-spacing:.04em; color:var(--text3)}
 .rodina{margin-top:18px}

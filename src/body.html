@@ -2,6 +2,7 @@
  <symbol id="i-hvezda" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.6l2.7 5.8 6.3.8-4.6 4.4 1.2 6.3L12 16.8 6.4 19.9l1.2-6.3L3 9.2l6.3-.8z"/></symbol>
  <symbol id="i-slunce" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.5 1.5M17.6 17.6l1.5 1.5M19.1 4.9l-1.5 1.5M6.4 17.6l-1.5 1.5"/></symbol>
  <symbol id="i-mesic" viewBox="0 0 24 24"><path fill="currentColor" d="M20.7 14.6A8.6 8.6 0 0 1 9.4 3.3a8.6 8.6 0 1 0 11.3 11.3z"/></symbol>
+ <symbol id="i-dopis" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"><rect x="3" y="5.5" width="18" height="13" rx="2.6"/><path d="M4 7.5l8 5.8 8-5.8" stroke-linecap="round"/></symbol>
  <symbol id="i-kostka" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="4.4"/><circle cx="8.4" cy="8.4" r="1.4" fill="currentColor" stroke="none"/><circle cx="15.6" cy="15.6" r="1.4" fill="currentColor" stroke="none"/><circle cx="15.6" cy="8.4" r="1.4" fill="currentColor" stroke="none"/><circle cx="8.4" cy="15.6" r="1.4" fill="currentColor" stroke="none"/></symbol>
  <symbol id="i-svet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="9.2"/><path d="M2.8 12h18.4M12 2.8c2.6 2.6 3.9 6 3.9 9.2s-1.3 6.6-3.9 9.2c-2.6-2.6-3.9-6-3.9-9.2S9.4 5.4 12 2.8z"/></symbol>
  <symbol id="i-zvuk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M4 9.2h3.4L12 5v14l-4.6-4.2H4z" fill="currentColor"/><path d="M16 9.4a3.7 3.7 0 0 1 0 5.2M18.7 6.7a7.5 7.5 0 0 1 0 10.6" stroke-linecap="round"/></symbol>
@@ -108,6 +109,8 @@
     <p class="pocet" id="pocet"></p>
    </div>
    <div class="seznam" id="seznam"></div>
+   <p class="zpetna"><svg aria-hidden="true"><use href="#i-dopis"/></svg><span><span data-t="zpetna">{{zpetna}}</span>
+    <a id="zpetna-odkaz" href="mailto:{{zpetnaAdresa}}" title="{{zpetnaPopis}}" data-t-title="zpetnaPopis">{{zpetnaAdresa}}</a></span></p>
    <p class="zdroje" data-t="zdroje">{{zdroje}}</p>
   </aside>
  </div>
