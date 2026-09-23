@@ -12,7 +12,10 @@ npm run build -- --artefakt build   # navíc fragmenty pro publikování jako ar
 
 ## Web
 
+Web běží na **https://atlasoflanguages.netlify.app** (anglicky `/en/`).
 Nasazení přes Netlify z větve `main` podle `netlify.toml` (build `npm run check`, publikuje `dist/`).
+Z prostředí Claude Code na webu je `*.netlify.app` blokované (curl i WebFetch vrací 403), živý web tedy odsud
+zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na uživateli.
 Česky na `/`, anglicky na `/en/`. Když validace spadne, Netlify nový web nezveřejní – tak to má být.
 
 ## Struktura a pravidla
