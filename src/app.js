@@ -153,6 +153,34 @@ function tlacitko(nazev, podtitul, barva, trida){
   txt.appendChild(nm); txt.appendChild(sub); tl.appendChild(pruh); tl.appendChild(txt);
   return tl;
 }
+/* dlaždice jazyka z atlasu: hlavní je pozdrav ve vlastním písmu, pod ním název */
+function dlazdice(j){
+  const tl = document.createElement("button");
+  tl.type = "button"; tl.className = "jaz s-pozdravem";
+  tl.style.setProperty("--r-barva", "var(--r-" + j.sk + ")");
+  const pz = prvek("span", "pz", j.pis);
+  if (j.kod) pz.lang = j.kod;
+  tl.appendChild(pz); tl.appendChild(prvek("span", "nm", j.n));
+  tl.dataset.id = j.id;
+  tl.setAttribute("aria-pressed", vybrany && vybrany.typ === "atlas" && vybrany.id === j.id ? "true" : "false");
+  tl.addEventListener("click", function(){ vyber(j.id); });
+  return tl;
+}
+/* jazyk dne: každý den jiný, stejný pro všechny */
+function jazykDne(){
+  const moznosti = JAZYKY.filter(function(j){ return !atlasSkryty(j); });
+  if (!moznosti.length) return null;
+  return moznosti[Math.floor(Date.now() / 864e5) % moznosti.length];
+}
+let razeni = "rodiny";
+try { razeni = localStorage.getItem("atlas-razeni") || "rodiny"; } catch (e) {}
+const tlRazeni = Array.prototype.slice.call(document.querySelectorAll("[data-razeni]"));
+function nastavRazeni(r2){
+  razeni = ["rodiny", "abeceda", "svetadil"].indexOf(r2) >= 0 ? r2 : "rodiny";
+  tlRazeni.forEach(function(b){ b.setAttribute("aria-pressed", b.dataset.razeni === razeni ? "true" : "false"); });
+  try { localStorage.setItem("atlas-razeni", razeni); } catch (e) {}
+}
+tlRazeni.forEach(function(b){ b.addEventListener("click", function(){ nastavRazeni(b.dataset.razeni); postavPolici($("hledej").value); }); });
 function nadpis(text, barva){
   const h3 = document.createElement("h3");
   if (barva) { const s = document.createElement("span"); s.className = "tecka"; s.style.background = barva; h3.appendChild(s); }
@@ -163,20 +191,41 @@ function postavPolici(filtr){
   const hledane = bezDiakritiky(filtr || "").trim();
   seznam.textContent = "";
   let vAtlasu = 0;
-  SKUPINY.forEach(function(sk){
-    const jazyky = JAZYKY.filter(function(j){ return j.sk === sk && !atlasSkryty(j) && (!hledane || j.hledat.indexOf(hledane) !== -1); });
-    if (!jazyky.length) return;
-    vAtlasu += jazyky.length;
-    const sekce = document.createElement("section"); sekce.className = "rodina";
-    sekce.appendChild(nadpis(T.rodiny[sk] + " (" + jazyky.length + ")", "var(--r-" + sk + ")"));
-    const mrizka = document.createElement("div"); mrizka.className = "mrizka";
-    jazyky.forEach(function(j){
-      const tl = tlacitko(j.n, j.pis, "var(--r-" + j.sk + ")");
-      tl.dataset.id = j.id;
-      tl.setAttribute("aria-pressed", vybrany && vybrany.typ === "atlas" && vybrany.id === j.id ? "true" : "false");
-      tl.addEventListener("click", function(){ vyber(j.id); });
-      mrizka.appendChild(tl);
+  if (!hledane) {                            /* jazyk dne nahoře */
+    const d = jazykDne();
+    if (d) {
+      const tl = prvek("button", "jazyk-dne");
+      tl.type = "button"; tl.style.setProperty("--r-barva", "var(--r-" + d.sk + ")"); tl.style.setProperty("--r-text", "var(--t-" + d.sk + ")");
+      tl.appendChild(prvek("span", "jd-stitek", T.jazykDne));
+      const pz = prvek("span", "jd-pozdrav", d.pis); if (d.kod) pz.lang = d.kod; tl.appendChild(pz);
+      tl.appendChild(prvek("span", "jd-nazev", d.n + " · " + d.prep));
+      tl.addEventListener("click", function(){ vyber(d.id); });
+      seznam.appendChild(tl);
+    }
+  }
+  const vybrane = JAZYKY.filter(function(j){ return !atlasSkryty(j) && (!hledane || j.hledat.indexOf(hledane) !== -1); });
+  let skupiny;
+  if (razeni === "abeceda") {
+    skupiny = [{nazev: null, jazyky: vybrane.slice().sort(function(a, b){ return a.n.localeCompare(b.n, T.locale); })}];
+  } else if (razeni === "svetadil") {
+    const podle = new Map();
+    vybrane.forEach(function(j){
+      const i = BOD_ATLASU[j.id], m = i >= 0 ? B[i][4] : -1;
+      if (!podle.has(m)) podle.set(m, []);
+      podle.get(m).push(j);
     });
+    skupiny = Array.from(podle.keys()).sort(function(a, b){ return (a < 0) - (b < 0) || podle.get(b).length - podle.get(a).length; })
+      .map(function(m){ return {nazev: (m >= 0 && REJSTRIK.mm[m]) || T.svetadilOstatni, jazyky: podle.get(m)}; });
+  } else {
+    skupiny = SKUPINY.map(function(sk){ return {nazev: T.rodiny[sk], barva: "var(--r-" + sk + ")", jazyky: vybrane.filter(function(j){ return j.sk === sk; })}; });
+  }
+  skupiny.forEach(function(g){
+    if (!g.jazyky.length) return;
+    vAtlasu += g.jazyky.length;
+    const sekce = document.createElement("section"); sekce.className = "rodina";
+    if (g.nazev) sekce.appendChild(nadpis(g.nazev + " (" + g.jazyky.length + ")", g.barva || null));
+    const mrizka = document.createElement("div"); mrizka.className = "mrizka";
+    g.jazyky.forEach(function(j){ mrizka.appendChild(dlazdice(j)); });
     sekce.appendChild(mrizka); seznam.appendChild(sekce);
   });
 
@@ -250,7 +299,7 @@ let gl = null, glProg = null, glU = {}, glA = {}, glJaz = null;
 /* příznak tečky: 0 obyčejná, 1 vybraná, 2 příbuzná, 3 pod myší, 4 schovaná filtrem, 5 v zvýrazněné zemi */
 const VS = [
   "attribute vec2 a_pos; attribute float a_flag; attribute float a_vit;",
-  "uniform float u_l0, u_sf0, u_cf0, u_r, u_dpr, u_jadro, u_barvit;",
+  "uniform float u_l0, u_sf0, u_cf0, u_r, u_dpr, u_jadro, u_barvit, u_cas;",
   "uniform vec2 u_stred, u_rozliseni;",
   "uniform vec4 u_b[6]; uniform float u_vel[6]; uniform float u_mek[6];",
   "uniform vec4 u_vit[8];",                    // barvy vitality: 0 = bez údaje, 1–6 = stupně UNESCO, 7 = probouzený
@@ -265,7 +314,8 @@ const VS = [
   "  vec4 b = u_b[f];",
   "  if (f == 0 && u_barvit > 0.5) b = u_vit[int(a_vit + 1.5)];",
   "  v_mek = u_mek[f];",
-  "  v_barva = vec4(b.rgb, b.a * (0.3 + 0.7 * z));",
+  "  float trpyt = u_cas > 0.0 && f == 0 ? 0.72 + 0.28 * sin(u_cas * 1.7 + fract(sin(dot(a_pos, vec2(12.9898, 78.233))) * 43758.5453) * 6.2832) : 1.0;",
+  "  v_barva = vec4(b.rgb, b.a * trpyt * (0.3 + 0.7 * z));",
   "  gl_PointSize = u_vel[f] * (0.6 + 0.4 * z) * u_dpr;",
   "  gl_Position = (z < 0.0 || f == 4) ? vec4(2.0, 2.0, 2.0, 1.0) : vec4(c.x, -c.y, 0.0, 1.0);",
   "}"].join("\n");
@@ -295,7 +345,7 @@ function pripravGl(){
     if (!gl.getProgramParameter(glProg, gl.LINK_STATUS)) throw new Error(gl.getProgramInfoLog(glProg));
   } catch (e) { console.error("WebGL shader:", e); gl = null; return false; }
   gl.useProgram(glProg);
-  ["u_l0", "u_sf0", "u_cf0", "u_r", "u_dpr", "u_stred", "u_rozliseni", "u_b", "u_vel", "u_mek", "u_jadro", "u_barvit", "u_vit"]
+  ["u_l0", "u_sf0", "u_cf0", "u_r", "u_dpr", "u_stred", "u_rozliseni", "u_b", "u_vel", "u_mek", "u_jadro", "u_barvit", "u_vit", "u_cas"]
     .forEach(function(k){ glU[k] = gl.getUniformLocation(glProg, k); });
   glA.pos = gl.getAttribLocation(glProg, "a_pos"); glA.flag = gl.getAttribLocation(glProg, "a_flag");
   glA.vit = gl.getAttribLocation(glProg, "a_vit");
@@ -354,6 +404,7 @@ function kresliBodyGl(){
   barvyVitality().forEach(function(x, k){ const c = rgb(x); vit.set([c[0], c[1], c[2], 0.95], k * 4); });
   gl.uniform4fv(glU.u_vit, vit);
   gl.uniform1f(glU.u_barvit, barvitVitalitu ? 1 : 0);
+  gl.uniform1f(glU.u_cas, !denni && !barvitVitalitu && !bezPohybu.matches ? (casSnimku / 1000) % 1000 + 0.001 : 0);
   gl.uniform1f(glU.u_jadro, denni ? 0.35 : (barvitVitalitu ? 0.4 : 0.85));
   /* světélka jazyků: v noci se sčítají, takže hustá místa září víc; ve dne (a při barvení podle vitality,
      kde musí barva zůstat pravdivá) se kreslí obyčejně */
@@ -416,11 +467,13 @@ function zmer(){
   uplatniZoom();
 }
 let zobrazenyZoom = "";
+let uvod = null, uvodK = 1, casSnimku = 0;
+const trpyt = {naposled: 0};
 function uplatniZoom(){
-  polomer = polomerZaklad * zoom;
+  polomer = polomerZaklad * zoom * uvodK;
   proj.scale(polomer).translate([sirka / 2 + posun, vyska / 2]);
   potrebaKresli = true;
-  const txt = cislo(zoom, 1) + "×";
+  const txt = cislo(Math.max(1, zoom), 1) + "×";
   if (txt !== zobrazenyZoom) {
     zobrazenyZoom = txt;
     $("zoom-hod").textContent = txt;
@@ -458,8 +511,12 @@ function zoomProJazyk(j){
 const koule = {platno: null, stin: null, klic: "", kandidat: ""};
 const kruh = globusOk ? d3.geoCircle() : null;
 function kresliStin(c, cx, cy, r){          /* koule k okraji tmavne, ať vypadá kulatě */
-  const g = c.createRadialGradient(cx - r * 0.3, cy - r * 0.35, r * 0.15, cx, cy, r);
+  let g = c.createRadialGradient(cx - r * 0.3, cy - r * 0.35, r * 0.15, cx, cy, r);
   g.addColorStop(0, "rgba(0,0,0,0)"); g.addColorStop(1, barvy["stin-koule"]);
+  c.fillStyle = g; c.beginPath(); c.arc(cx, cy, r, 0, 6.283185); c.fill();
+  /* odlesk světla vlevo nahoře: ve dne slunce, v noci jen slabý nádech */
+  g = c.createRadialGradient(cx - r * 0.42, cy - r * 0.46, 0, cx - r * 0.42, cy - r * 0.46, r * 0.62);
+  g.addColorStop(0, denni ? "rgba(255,255,255,.55)" : "rgba(150,210,255,.10)"); g.addColorStop(1, "rgba(255,255,255,0)");
   c.fillStyle = g; c.beginPath(); c.arc(cx, cy, r, 0, 6.283185); c.fill();
 }
 function kresliUzemi(c){                    /* území vybraného jazyka barvou jeho rodiny */
@@ -469,7 +526,13 @@ function kresliUzemi(c){                    /* území vybraného jazyka barvou 
     c.lineWidth = 1.6; c.strokeStyle = barvy.cyan; c.stroke(); c.globalAlpha = 1;
   }
   if (!vybrany || vybrany.typ !== "atlas") return;
-  const barva = barvaVyberu();
+  const barva = barvaVyberu(), p = odhaleni(casSnimku);
+  if (!p) return;                           // ještě se letí
+  c.save();
+  if (p < 1) {                              /* území se rozlévá od domovské tečky jako vlna */
+    const h = BOD_ATLASU[vybrany.id], stred = h >= 0 ? [B[h][1], B[h][2]] : vybrany.stred;
+    c.beginPath(); cestaPodklad(kruh.center(stred).radius(3 + 110 * (1 - Math.pow(1 - p, 3)))()); c.clip();
+  }
   if (vybrany.zeme.length) {
     c.beginPath();
     vybrany.zeme.forEach(function(n){ const f = ZEME_PODLE_JMENA[n]; if (f) cestaPodklad(f); });
@@ -487,6 +550,7 @@ function kresliUzemi(c){                    /* území vybraného jazyka barvou 
     c.fill();
     c.restore();
   }
+  c.restore();
 }
 function kresliKouli(c, cx, cy, r){
   let g = c.createRadialGradient(cx, cy, r * 0.9, cx, cy, r * 1.36);
@@ -674,14 +738,18 @@ function kresliPopredi(cas){
     return z > 0 || (x * x + y * y) * v[3] * v[3] > 1;     // nad povrchem je vidět i kousek za okrajem
   };
   const p = [0, 0], q = [0, 0];
+  const od = odhaleniOd < 0 ? -1 : odhaleniOd;
   oblouky.forEach(function(body, k){
-    promitni(body[0], p); promitni(body[body.length - 1], q);
+    const podil = od < 0 ? 0 : bezPohybu.matches || !od ? 1 : Math.max(0, Math.min(1, (cas - od - 250 - k * 150) / 480));
+    if (!podil) return;
+    const konec = Math.max(1, Math.round(podil * (body.length - 1)));
+    promitni(body[0], p); promitni(body[konec], q);
     const gr = c.createLinearGradient(p[0], p[1], q[0], q[1]);
     gr.addColorStop(0, vb); gr.addColorStop(1, barvy.fialova);
     [[6, 0.16], [1.6, 0.95]].forEach(function(s){
       c.beginPath();
       let kresli = false;
-      for (let n = 0; n < body.length; n++) {
+      for (let n = 0; n <= konec; n++) {
         const vid = promitni(body[n], p);
         if (vid) { if (kresli) c.lineTo(p[0], p[1]); else c.moveTo(p[0], p[1]); }
         kresli = vid;
@@ -689,7 +757,9 @@ function kresliPopredi(cas){
       c.globalAlpha = s[1]; c.lineWidth = s[0]; c.strokeStyle = gr; c.lineCap = "round"; c.stroke();
     });
     c.globalAlpha = 1;
-    if (!bezPohybu.matches) {
+    if (podil < 1) {                  // hlava letícího oblouku
+      if (promitni(body[konec], p)) { c.globalCompositeOperation = skladani; c.drawImage(SVETLA.bila, p[0] - 12, p[1] - 12, 24, 24); c.globalCompositeOperation = "source-over"; }
+    } else if (!bezPohybu.matches) {
       const f = ((cas * 0.00042) + k * 0.19) % 1, b = body[Math.floor(f * (body.length - 1))];
       if (promitni(b, p)) { c.globalCompositeOperation = skladani; c.drawImage(SVETLA.bila, p[0] - 10, p[1] - 10, 20, 20); c.globalCompositeOperation = "source-over"; }
     }
@@ -722,7 +792,7 @@ let zivoDo = 0, spi = false;
 function ozivit(){ zivoDo = performance.now() + 20000; }
 function animujePopredi(cas){
   if (bezPohybu.matches) return false;
-  return pulsDo > cas || (cas < zivoDo && oblouky.length > 0);
+  return pulsDo > cas || (cas < zivoDo && oblouky.length > 0) || (odhaleniOd > 0 && cas - odhaleniOd < 1400);
 }
 
 /* ---------- hvězdné nebe za stránkou (kreslí se jen při změně velikosti) ---------- */
@@ -783,7 +853,7 @@ function nastavZvyrazneni(i){
 function kresliVse(cas, pohled){
   if (pohled) {
     proj.rotate(rot).translate([sirka / 2 + posun, vyska / 2]).scale(polomer);
-    spocitejBody(); kresliPodklad(); obnovHud();
+    spocitejBody(); kresliPodklad(); obnovHud(); polohaUkazatele();
     teckyZmeneny = true; popiskyZmeneny = true;
   }
   if (teckyZmeneny) { if (gl) kresliBodyGl(); else kresliBody2D(); teckyZmeneny = false; }
@@ -795,19 +865,57 @@ function dlouheDo(a, b){ let d = (b - a) % 360; if (d > 180) d -= 360; if (d < -
 function letKe(stred, cilZoom){
   const cil = [dlouheDo(rot[0], -stred[0]), Math.max(-80, Math.min(80, -stred[1]))];
   const zc = cilZoom == null ? zoom : Math.max(1, Math.min(ZOOM_MAX, cilZoom));
-  if (bezPohybu.matches) { rot = cil; zoom = zc; uplatniZoom(); pulsDo = performance.now() + 2600; return; }
-  prechod = {z: rot.slice(), k: cil, z2: zoom, k2: zc, zac: performance.now(), delka: 1100};
+  if (bezPohybu.matches) { rot = cil; zoom = zc; uplatniZoom(); pulsDo = performance.now() + 2600; odhaleniOd = 0; return; }
+  /* daleký let: kamera se cestou oddálí a zase přiblíží, jako letadlo */
+  const vzd = d3.geoDistance([-rot[0], -rot[1]], stred);
+  const skok = vzd > 0.35 ? Math.min(0.75, 0.32 * vzd) : 0;
+  prechod = {z: rot.slice(), k: cil, z2: zoom, k2: zc, zac: performance.now(), delka: 1000 + 650 * Math.min(1, vzd / 2.2), skok: skok};
 }
+/* dok a panel „Zobrazení“ jezdí se středem glóbu (když karta odsune glóbus doprava) */
+let dokX = -1;
+function posunDok(){
+  if (!desktop.matches) return;
+  const w = $("dok").offsetWidth || 400;
+  const x = Math.round(Math.max(w / 2 + 12, Math.min(sirka - w / 2 - 12, sirka / 2 + posun)));
+  if (x !== dokX) { dokX = x; scena.style.setProperty("--dok-x", x + "px"); }
+}
+/* „Klikni na mě!“ u jedné tečky, dokud si člověk poprvé nevybere jazyk */
+const ukazatel = $("ukazatel");
+let ukazatelBod = -1;
+function ukazUkazatel(){
+  let uz = null; try { uz = localStorage.getItem("atlas-uvitano"); } catch (e) {}
+  if (uz || vybrany || !globusOk) return;
+  ukazatelBod = BOD_ATLASU[T.lang === "en" ? "en" : "cs"];
+  potrebaKresli = true;
+}
+function schovejUkazatel(trvale){
+  ukazatelBod = -1; ukazatel.hidden = true;
+  if (trvale) { try { localStorage.setItem("atlas-uvitano", "1"); } catch (e) {} }
+}
+function polohaUkazatele(){
+  if (ukazatelBod < 0) return;
+  if (!bVid[ukazatelBod]) { ukazatel.hidden = true; return; }
+  ukazatel.hidden = false;
+  ukazatel.style.transform = "translate(" + bPx[ukazatelBod].toFixed(1) + "px," + bPy[ukazatelBod].toFixed(1) + "px)";
+}
+
+/* rozlití území a oblouky začnou až po doletu; -1 = čeká se na přílet */
+let odhaleniOd = 0;
+const ODHALENI = 950;
+function odhaleni(cas){ return odhaleniOd < 0 ? 0 : Math.max(0.001, Math.min(1, (cas - odhaleniOd) / ODHALENI)); }
 let posledni = 0, popredBezelo = true;
 function smycka(cas){
   requestAnimationFrame(smycka);
   let zmena = potrebaKresli;
   const dt = Math.min(64, cas - (posledni || cas));
   if (prechod) {
-    const k = Math.min(1, (cas - prechod.zac) / prechod.delka), e = plynule(k);
+    const k = Math.max(0, Math.min(1, (cas - prechod.zac) / prechod.delka)), e = plynule(k);
     rot = [prechod.z[0] + (prechod.k[0] - prechod.z[0]) * e, prechod.z[1] + (prechod.k[1] - prechod.z[1]) * e];
-    if (prechod.k2 !== prechod.z2) { zoom = prechod.z2 * Math.pow(prechod.k2 / prechod.z2, e); uplatniZoom(); }
-    if (k >= 1) { const let2 = prechod.delka > 500; prechod = null; if (let2) pulsDo = cas + 2600; }
+    if (prechod.k2 !== prechod.z2 || prechod.skok) {
+      zoom = prechod.z2 * Math.pow(prechod.k2 / prechod.z2, e) * Math.exp(-(prechod.skok || 0) * Math.sin(Math.PI * k));
+      uplatniZoom();
+    }
+    if (k >= 1) { const let2 = prechod.delka > 500; prechod = null; if (let2) pulsDo = cas + 2600; if (odhaleniOd < 0) odhaleniOd = cas; }
     zmena = true;
   } else if (autoOtaceni && !tahne) {
     rot[0] = (rot[0] + dt * 0.006 / zoom) % 360;
@@ -817,9 +925,20 @@ function smycka(cas){
     posun = bezPohybu.matches ? posunCil : posun + (posunCil - posun) * Math.min(1, dt / 160);
     zmena = true;
   } else if (posun !== posunCil) { posun = posunCil; zmena = true; }
-  posledni = cas;
+  if (odhaleniOd > 0 && cas - odhaleniOd < ODHALENI + 40) zmena = true;   // území se právě rozlévá
+  if (uvod) {                                                            // úvodní přílet z vesmíru
+    const k = Math.max(0, Math.min(1, (cas - uvod.od) / uvod.delka)), e = 1 - Math.pow(1 - k, 3);
+    uvodK = 0.08 + 0.92 * e; rot[0] = uvod.rot - 150 * (1 - e);
+    uplatniZoom(); zmena = true;
+    if (k >= 1) { uvod = null; uvodK = 1; uplatniZoom(); ukazUkazatel(); }
+  }
+  if (trpyt && gl && !denni && !barvitVitalitu && !bezPohybu.matches && cas < zivoDo && cas - trpyt.naposled > 60) {
+    trpyt.naposled = cas; teckyZmeneny = true;                          // světélka se jemně třpytí
+  }
+  posledni = cas; casSnimku = cas;
   potrebaKresli = false;
   kresliVse(cas, zmena);
+  if (zmena) posunDok();
   const anim = animujePopredi(cas);
   if (spi !== (cas >= zivoDo)) { spi = !spi; scena.classList.toggle("spi", spi); }
   if (zmena || anim || popredBezelo) kresliPopredi(cas);
@@ -932,7 +1051,7 @@ function zoomProTvar(g, s){
   return max ? Math.max(1, Math.min(4, 0.8 / Math.max(Math.sin(Math.min(max, 1.45)), 0.02))) : 3;
 }
 function zvyrazniZemi(f){
-  if (vybrany) { vybrany = null; $("karta").hidden = true; oznacTlacitka(null); }
+  if (vybrany) { vybrany = null; karta.hidden = true; delete karta.dataset.jazyk; oznacTlacitka(null); }
   zeme = {f: f, body: bodyVeStatu(f.properties.name) || []};
   const s = d3.geoCentroid(f);
   obnovPriznaky(); spoctiPosun(); zapisOdkaz();
@@ -988,7 +1107,9 @@ document.addEventListener("keydown", function(e){ if (e.key === "Escape") { okno
 
 /* ---------- výběr ---------- */
 function poVyberu(cilZoom){
-  ozivit(); zapisOdkaz();
+  if (!desktop.matches && window.scrollY > 40) window.scrollTo({top: 0, behavior: bezPohybu.matches ? "auto" : "smooth"});
+  ozivit(); zapisOdkaz(); schovejUkazatel(true);
+  odhaleniOd = bezPohybu.matches ? 0 : -1;
   if (autoOtaceni) nastavOtaceni(false);   // vybraný jazyk ať neujíždí z očí
   okno.hidden = true; bublinaBod.hidden = true;
   if (globusOk) { spoctiPosun(); letKe(vybrany.stred, cilZoom); }
@@ -1017,7 +1138,7 @@ function vyber(id){
   poVyberu(globusOk ? zoomProJazyk(j) : 1);
   oznacTlacitka(id);
   const tl = document.querySelector('.jaz[data-id="' + id + '"]');
-  if (tl) tl.scrollIntoView({block: "center", behavior: bezPohybu.matches ? "auto" : "smooth"});
+  if (tl && desktop.matches) tl.scrollIntoView({block: "center", behavior: bezPohybu.matches ? "auto" : "smooth"});   // na mobilu naopak nahoru ke glóbu
 }
 function vyberBod(i){
   if (B[i][5] && PODLE_ID[B[i][5]]) { vyber(B[i][5]); return; }
@@ -1030,7 +1151,7 @@ function vyberBod(i){
 }
 function odznac(){
   vybrany = null; zeme = null; prechod = null; ozivit(); zapisOdkaz();
-  $("karta").hidden = true; $("tl-cely").hidden = true;
+  karta.hidden = true; delete karta.dataset.jazyk; $("tl-cely").hidden = true;
   if (globusOk) { obnovPriznaky(); spoctiPosun(); plynulyZoom(1); }
   okno.hidden = true; bublinaBod.hidden = true;
   $("napoveda").textContent = T.napovedaStart;
@@ -1079,6 +1200,7 @@ function nastavZnakove(rezim, ulozit){
   rezimZnak = rezim;
   tlZnak.forEach(function(b){ b.setAttribute("aria-pressed", b.dataset.znak === rezim ? "true" : "false"); });
   if (ulozit) { try { localStorage.setItem("atlas-znakove", rezim); } catch (e) {} }
+  obnovOdznakZobrazeni();
   obnovVitalituPanel();
   uplatniFiltry(!ulozit);
 }
@@ -1113,7 +1235,7 @@ function obnovVitalituPanel(){
   const n = povoleneStupne.size, filtruje = n < VSECHNY_STUPNE.length;
   $("vitalita-pocet").hidden = !filtruje;
   $("vitalita-pocet").textContent = n + "/" + VSECHNY_STUPNE.length;
-  tlVit.setAttribute("aria-pressed", filtruje || !panelVit.hidden ? "true" : "false");
+  obnovOdznakZobrazeni();
 }
 function nastavVitalitu(stupne, start){
   povoleneStupne = new Set(stupne.filter(function(v){ return VSECHNY_STUPNE.indexOf(v) >= 0; }));
@@ -1121,8 +1243,22 @@ function nastavVitalitu(stupne, start){
   obnovVitalituPanel();
   uplatniFiltry(!!start);
 }
+/* panel „Zobrazení“ nad dokem: přepínače a filtry; vitalita v něm má vlastní podstránku */
+const panelZob = $("panel-zobrazeni"), tlZob = $("tl-zobrazeni"), pzHlavni = $("pz-hlavni");
+function obnovOdznakZobrazeni(){
+  const n = (rezimZnak !== "vse" ? 1 : 0) + (povoleneStupne.size < VSECHNY_STUPNE.length ? 1 : 0);
+  $("zobrazeni-pocet").hidden = !n; $("zobrazeni-pocet").textContent = n;
+}
+function otevriZobrazeni(otevrit){
+  if (!otevrit && barvitVitalitu) otevriVitalitu(false);
+  panelZob.hidden = !otevrit;
+  tlZob.setAttribute("aria-expanded", otevrit ? "true" : "false");
+}
+tlZob.addEventListener("click", function(){ otevriZobrazeni(panelZob.hidden); });
+$("zobrazeni-zavrit").addEventListener("click", function(){ otevriZobrazeni(false); tlZob.focus(); });
 function otevriVitalitu(otevrit){
-  panelVit.hidden = !otevrit;
+  if (otevrit) panelZob.hidden = false, tlZob.setAttribute("aria-expanded", "true");
+  panelVit.hidden = !otevrit; pzHlavni.hidden = !!otevrit;
   tlVit.setAttribute("aria-expanded", otevrit ? "true" : "false");
   barvitVitalitu = !!otevrit;
   obnovVitalituPanel(); obnovLegendu();
@@ -1132,7 +1268,10 @@ tlVit.addEventListener("click", function(){ otevriVitalitu(panelVit.hidden); });
 $("vitalita-zavrit").addEventListener("click", function(){ otevriVitalitu(false); tlVit.focus(); });
 $("vitalita-vse").addEventListener("click", function(){ nastavVitalitu(VSECHNY_STUPNE); });
 $("vitalita-ohrozene").addEventListener("click", function(){ nastavVitalitu(OHROZENE); });
-document.addEventListener("keydown", function(e){ if (e.key === "Escape" && !panelVit.hidden) otevriVitalitu(false); });
+document.addEventListener("keydown", function(e){
+  if (e.key !== "Escape") return;
+  if (!panelVit.hidden) otevriVitalitu(false); else if (!panelZob.hidden) otevriZobrazeni(false);
+});
 
 /* ---------- popisek dole na glóbu: podle filtru a barvení ---------- */
 function obnovLegendu(){
@@ -1183,58 +1322,125 @@ function pocetMluvcich(m){          /* m = miliony, jak jsou v data/languages.js
   return n < 100 ? T.hrstka : lidi(n);
 }
 const tlPrehraj = $("k-prehraj"), popisPrehraj = tlPrehraj.querySelector("span");
+const karta = $("karta"), kartaTelo = $("k-telo"), kartaStitky = $("k-stitky"), kartaHero = $("k-hero");
+/* karta jako pohlednice: barevné záhlaví, štítky s hlavními údaji, zbytek v záložkách */
+function otevriKartu(barva, textBarva, novyJazyk){
+  karta.hidden = false;
+  kartaHero.style.setProperty("--r-barva", barva);
+  kartaHero.style.setProperty("--r-text", textBarva);
+  kartaTelo.textContent = ""; kartaStitky.textContent = "";
+  $("k-stav").hidden = true;
+  if (novyJazyk) {                          // nový jazyk: karta vjede znovu a začne sbalená (na mobilu)
+    karta.classList.remove("vjezd"); void karta.offsetWidth; karta.classList.add("vjezd");
+    karta.classList.remove("plna"); karta.scrollTop = 0;
+  }
+}
+function stitek(nazev, hodnota, vit){
+  const d = prvek("div", "stitek");
+  d.appendChild(prvek("span", "st-nazev", nazev));
+  const h = prvek("span", "st-hodnota");
+  if (vit != null) { const t2 = prvek("i", "st-tecka"); t2.style.background = promennaVitality(vit); h.appendChild(t2); }
+  h.appendChild(document.createTextNode(hodnota));
+  d.appendChild(h);
+  kartaStitky.appendChild(d);
+}
+let zalozkaVybrana = 0;
+function zalozky(skupiny){                  /* [{nazev, uzly: [prvky]}]; prázdné skupiny se vynechají */
+  skupiny = skupiny.filter(function(g){ return g.uzly.filter(Boolean).length; });
+  if (!skupiny.length) return;
+  const panely = [], tlacitka = [];
+  if (zalozkaVybrana >= skupiny.length) zalozkaVybrana = 0;
+  if (skupiny.length > 1) {
+    const lista = prvek("div", "zalozky"); lista.setAttribute("role", "tablist");
+    skupiny.forEach(function(g, k){
+      const b = prvek("button", null, g.nazev);
+      b.type = "button"; b.setAttribute("role", "tab");
+      b.addEventListener("click", function(){ zalozkaVybrana = k; ukaz(k); });
+      tlacitka.push(b); lista.appendChild(b);
+    });
+    kartaTelo.appendChild(lista);
+  }
+  skupiny.forEach(function(g){
+    const panel = prvek("div", "podrobnosti"); panel.setAttribute("role", "tabpanel");
+    g.uzly.forEach(function(u){ if (u) panel.appendChild(u); });
+    panely.push(panel); kartaTelo.appendChild(panel);
+  });
+  function ukaz(k){
+    panely.forEach(function(p2, n){ p2.hidden = n !== k; });
+    tlacitka.forEach(function(b, n){ b.setAttribute("aria-selected", n === k ? "true" : "false"); b.tabIndex = n === k ? 0 : -1; });
+  }
+  ukaz(zalozkaVybrana);
+}
+/* mobil: karta je list zespodu – klepnutím nebo tažením nahoru se roztáhne, tažením dolů sbalí nebo zavře */
+$("k-uchyt").addEventListener("click", function(){ karta.classList.toggle("plna"); });
+(function(){
+  let y0 = null;
+  const dolu = function(e){ if (!desktop.matches) y0 = e.clientY; };
+  const nahoru = function(e){
+    if (y0 == null) return;
+    const dy = e.clientY - y0; y0 = null;
+    if (dy < -30) karta.classList.add("plna");
+    else if (dy > 50) { if (karta.classList.contains("plna")) karta.classList.remove("plna"); else odznac(); }
+  };
+  [$("k-uchyt"), kartaHero].forEach(function(el){ el.addEventListener("pointerdown", dolu); });
+  window.addEventListener("pointerup", nahoru);
+  window.addEventListener("pointercancel", function(){ y0 = null; });
+})();
 function ukazKartu(j){
-  $("karta").hidden = false; $("k-plne").hidden = false; $("k-pozn").hidden = true; $("k-odznak").hidden = true;
-  $("k-podrobnosti").hidden = true;
+  const novy = !karta.dataset.jazyk || karta.dataset.jazyk !== j.id;
+  if (novy) zalozkaVybrana = 0;
+  karta.dataset.jazyk = j.id;
+  otevriKartu("var(--r-" + j.sk + ")", "var(--t-" + j.sk + ")", novy);
+  $("k-plne").hidden = false; $("k-odznak").hidden = true;
   const domov = BOD_ATLASU[j.id] >= 0 ? B[BOD_ATLASU[j.id]] : [0, j.stred[0], j.stred[1]];
   $("k-kod").textContent = souradnice(domov[1], domov[2]);
   $("k-nazev").textContent = j.n;
   $("k-domaci").textContent = t("domaciJmeno", {x: j.dom});
-  const bub = $("k-bublina");
-  bub.style.setProperty("--r-barva", "var(--r-" + j.sk + ")");
-  bub.style.setProperty("--r-text", "var(--t-" + j.sk + ")");
   const pz = $("k-pozdrav");
   pz.textContent = j.pis;
-  pz.style.fontSize = j.pis.length > 20 ? "1.25rem" : j.pis.length > 14 ? "1.5rem" : j.pis.length > 10 ? "1.75rem" : "";
+  pz.style.fontSize = j.pis.length > 20 ? "1.5rem" : j.pis.length > 14 ? "1.85rem" : j.pis.length > 10 ? "2.2rem" : "";
   if (j.kod) pz.setAttribute("lang", j.kod); else pz.removeAttribute("lang");
   $("k-prepis").textContent = t("vyslovnost", {x: j.prep});
-  $("k-mluvcich").textContent = pocetMluvcich(j.mlu);
-  $("k-rodina").textContent = j.rod;
-  const znakAtlas = jeZnakovyJazyk(j);                 /* u znakového jazyka se nemluví, ale znakuje */
-  document.querySelector('#k-plne [data-t="mluvcich"]').textContent = znakAtlas ? T.uzivateluZnak : T.mluvcich;
-  document.querySelector('#k-kde [data-t="kdeMluvi"]').textContent = znakAtlas ? T.kdeZnakuje : T.kdeMluvi;
-  $("k-fakt").textContent = j.fakt;
-  $("k-stav").hidden = true;
   tlPrehraj.hidden = !j.kod;
   popisPrehraj.textContent = T.poslechni;
 
-  const kv = $("k-vitalita"), bodJ = BOD_ATLASU[j.id], stupenJ = bodJ >= 0 ? vitalitaBodu(bodJ) : -1;
-  kv.textContent = ""; kv.hidden = stupenJ < 0;
-  if (stupenJ >= 0) kv.appendChild(oddilVitality(stupenJ, znakAtlas));
+  const znakAtlas = jeZnakovyJazyk(j);                 /* u znakového jazyka se nemluví, ale znakuje */
+  const bodJ = BOD_ATLASU[j.id], stupenJ = bodJ >= 0 ? vitalitaBodu(bodJ) : -1;
+  stitek(znakAtlas ? T.uzivateluZnak : T.mluvcich, pocetMluvcich(j.mlu));
+  stitek(T.rodina, j.rod);
+  if (stupenJ >= 0) stitek(T.vitalita, (znakAtlas ? T.aesZnak : T.aes)[stupenJ][0], stupenJ);
 
-  const pr = $("k-pribuzni"), ids = vybrany && vybrany.id === j.id ? vybrany.pribuzni : [];
-  pr.textContent = ""; pr.hidden = !ids.length;
+  const fakt = prvek("section", "fakt-oddil");
+  fakt.appendChild(prvek("p", "fakt", j.fakt));
+  let kde = null;
+  const jmena = j.zeme.map(nazevZeme);
+  if (jmena.length || j.ob.length) {
+    kde = oddil(znakAtlas ? T.kdeZnakuje : T.kdeMluvi);
+    const ul = prvek("ul", "staty");
+    jmena.slice(0, 14).forEach(function(z){ ul.appendChild(prvek("li", null, z)); });
+    if (jmena.length > 14) ul.appendChild(prvek("li", "vic", t("aDalsich", {n: jmena.length - 14})));
+    if (j.ob.length) ul.appendChild(prvek("li", "vic", T.areal));
+    kde.appendChild(ul);
+  }
+  let pribuzni = null;
+  const ids = vybrany && vybrany.id === j.id ? vybrany.pribuzni : [];
   if (ids.length) {
-    const o = oddil(T.pribuzniAtlas), seznamP = prvek("ul", "pribuzni");
+    pribuzni = oddil(T.pribuzniAtlas);
+    const seznamP = prvek("ul", "pribuzni");
     ids.forEach(function(k){
       const jj = PODLE_ID[B[k][5]], li = prvek("li"), b = prvek("button", null, jj.n);
       b.type = "button"; b.style.setProperty("--r-barva", "var(--r-" + jj.sk + ")");
       b.addEventListener("click", function(){ vyber(jj.id); });
       li.appendChild(b); seznamP.appendChild(li);
     });
-    o.appendChild(seznamP);
-    if (globusOk) o.appendChild(prvek("p", "pozn", tx("pribuzniOblouky")));
-    pr.appendChild(o);
+    pribuzni.appendChild(seznamP);
+    if (globusOk) pribuzni.appendChild(prvek("p", "pozn", tx("pribuzniOblouky")));
   }
-
-  const ul = $("k-staty"); ul.textContent = "";
-  const jmena = j.zeme.map(nazevZeme);
-  if (jmena.length) {
-    jmena.slice(0, 14).forEach(function(z){ const li = document.createElement("li"); li.textContent = z; ul.appendChild(li); });
-    if (jmena.length > 14) { const li = document.createElement("li"); li.className = "vic"; li.textContent = t("aDalsich", {n: jmena.length - 14}); ul.appendChild(li); }
-  }
-  if (j.ob.length) { const li = document.createElement("li"); li.className = "vic"; li.textContent = T.areal; ul.appendChild(li); }
-  $("k-kde").hidden = !jmena.length && !j.ob.length;
+  zalozky([
+    {nazev: T.zalozkaZajimavost, uzly: [fakt, kde]},
+    {nazev: T.vitalita, uzly: [stupenJ >= 0 ? oddilVitality(stupenJ, znakAtlas) : null]},
+    {nazev: T.zalozkaPribuzni, uzly: [pribuzni]}
+  ]);
 }
 /* vitalita jazyka: pruh se šesti stupni UNESCO v barvě stupně, název, vysvětlení a zdroj */
 function oddilVitality(stupen, znak){
@@ -1271,8 +1477,12 @@ function hlaskySrovnani(){
   return Array.isArray(h) ? h : null;
 }
 function ukazKartuBodu(i){
-  const r = radek(i);
-  $("karta").hidden = false; $("k-plne").hidden = true; $("k-kde").hidden = true; $("k-pozn").hidden = true;
+  const r = radek(i), kodB = "b" + i;
+  const novy = karta.dataset.jazyk !== kodB;
+  if (novy) zalozkaVybrana = 0;
+  karta.dataset.jazyk = kodB;
+  otevriKartu("var(--cyan)", "var(--na-cyan)", novy);
+  $("k-plne").hidden = true; tlPrehraj.hidden = true;
   const jmeno = jmenoBodu(i);
   $("k-kod").textContent = souradnice(B[i][1], B[i][2]);
   $("k-nazev").textContent = jmeno;
@@ -1282,43 +1492,39 @@ function ukazKartuBodu(i){
   od.textContent = REJSTRIK.rr[B[i][3]] + (oblast ? " · " + oblast : "");
   od.hidden = false;
 
-  const box = $("k-podrobnosti");
-  box.textContent = ""; box.hidden = false;
   const znak = ZNAKOVY[i] === 1;                       /* znakový jazyk: vlastní vysvětlení, ne „mluví se“ */
-  if (znak) { const o = oddil(T.znakovyCo); o.appendChild(prvek("p", null, T.znakovyVysvetleni)); box.appendChild(o); }
+  const wdm = Array.isArray(r[10]) ? r[10] : null;     // [počet, rok, rodilí?] z Wikidat
+  if (r[0] >= 0) stitek(T.vitalita, (znak ? T.aesZnak : T.aes)[r[0]][0], r[0]);
+  if (wdm) stitek(znak ? T.znakuje : T.mluvci, lidi(wdm[0]));
+  else if (r[8] > 0) stitek(T.uzivatelu, lidi(r[8]));
+  if (r[4] > 0) stitek(T.nareci, cislo(r[4]));
 
-  if (r[0] >= 0) box.appendChild(oddilVitality(r[0], znak));
-
+  const prehled = [], stavba = [], rod = [];
+  if (znak) { const o = oddil(T.znakovyCo); o.appendChild(prvek("p", null, T.znakovyVysvetleni)); prehled.push(o); }
+  if (r[0] >= 0) prehled.push(oddilVitality(r[0], znak));
   const staty = (r[3] || "").split(" ").filter(Boolean);
   if (staty.length) {
     const o = oddil(znak ? T.kdeZnakuje : T.kdeMluviTecka), ul = prvek("ul", "staty");
     staty.slice(0, 12).forEach(function(k){ ul.appendChild(prvek("li", null, PD.staty[T.lang][k] || k)); });
     if (staty.length > 12) ul.appendChild(prvek("li", "vic", t("aDalsich", {n: staty.length - 12})));
-    o.appendChild(ul); box.appendChild(o);
+    o.appendChild(ul); prehled.push(o);
   }
-  const wdm = Array.isArray(r[10]) ? r[10] : null;   // [počet, rok, rodilí?] z Wikidat
-  if (wdm || r[8] > 0 || r[4] > 0) {
-    const d = prvek("div", "dvojice");
-    if (wdm) {
-      const o = oddil(znak ? T.znakuje : T.mluvci);
-      o.appendChild(prvek("p", null, t("mluvciHodnota", {n: lidi(wdm[0])})));
-      o.appendChild(prvek("p", "pozn", t(wdm[2] ? (znak ? "mluvciPoznRodiliZnak" : "mluvciPoznRodili") : "mluvciPozn", {rok: wdm[1] ? " " + wdm[1] : ""})));
-      d.appendChild(o);
-    } else if (r[8] > 0) {
-      const o = oddil(T.uzivatelu);
-      o.appendChild(prvek("p", null, t("uzivateluHodnota", {n: lidi(r[8])})));
-      o.appendChild(prvek("p", "pozn", T.uzivateluPozn));
-      d.appendChild(o);
-    }
-    if (r[4] > 0) { const o = oddil(T.nareci); o.appendChild(prvek("p", null, cislo(r[4]))); d.appendChild(o); }
-    box.appendChild(d);
+  if (wdm) {
+    const o = oddil(znak ? T.znakuje : T.mluvci);
+    o.appendChild(prvek("p", null, t("mluvciHodnota", {n: lidi(wdm[0])})));
+    o.appendChild(prvek("p", "pozn", t(wdm[2] ? (znak ? "mluvciPoznRodiliZnak" : "mluvciPoznRodili") : "mluvciPozn", {rok: wdm[1] ? " " + wdm[1] : ""})));
+    prehled.push(o);
+  } else if (r[8] > 0) {
+    const o = oddil(T.uzivatelu);
+    o.appendChild(prvek("p", null, t("uzivateluHodnota", {n: lidi(r[8])})));
+    o.appendChild(prvek("p", "pozn", T.uzivateluPozn));
+    prehled.push(o);
   }
-
   if (r[7] >= 0) {                                     /* ukázka textu: článek 1 deklarace */
     const u = PD.udhr[r[7]], o = oddil(T.ukazka);
     const q = prvek("blockquote", "ukazka", u[0]);
     if (u[1]) q.dir = "rtl";
-    o.appendChild(q); o.appendChild(prvek("p", "pozn", T.ukazkaPopis)); box.appendChild(o);
+    o.appendChild(q); o.appendChild(prvek("p", "pozn", T.ukazkaPopis)); prehled.push(o);
   }
 
   if (r[5]) {                                          /* stavba jazyka z WALS */
@@ -1329,9 +1535,8 @@ function ukazKartuBodu(i){
       const li = prvek("li"); li.appendChild(prvek("b", null, popis[0])); li.appendChild(prvek("span", null, popis[1][v - 1]));
       ul.appendChild(li);
     });
-    if (ul.children.length) { const o = oddil(T.stavba); o.appendChild(ul); box.appendChild(o); }
+    if (ul.children.length) { const o = oddil(T.stavba); o.appendChild(ul); stavba.push(o); }
   }
-
   if (Array.isArray(r[6])) {                           /* hlásky z PHOIBLE */
     const h = r[6], o = oddil(T.hlasky);
     let txt = t("hlaskyHodnota", {c: h[0], cs: tvar(h[0], T.souhlaska), v: h[1], vs: tvar(h[1], T.samohlaska)});
@@ -1339,8 +1544,9 @@ function ukazKartuBodu(i){
     o.appendChild(prvek("p", null, txt + "."));
     if (!srovnani || srovnani.lang !== T.lang) srovnani = {lang: T.lang, h: hlaskySrovnani()};
     if (srovnani.h) o.appendChild(prvek("p", "pozn", t("hlaskySrovnani", {c: srovnani.h[0], v: srovnani.h[1]})));
-    box.appendChild(o);
+    stavba.push(o);
   }
+  if (r[1] >= 0) { const o = oddil(T.popsanost); o.appendChild(prvek("p", null, velke(T.med[r[1]]) + ".")); stavba.push(o); }
 
   if (r[2] >= 0) {                                     /* příbuzenstvo a nejbližší příbuzní */
     const cesta = [];
@@ -1352,7 +1558,7 @@ function ukazKartuBodu(i){
       if (k) p.appendChild(prvek("span", "sipka", "›"));
       p.appendChild(prvek("span", null, x));
     });
-    o.appendChild(p); box.appendChild(o);
+    o.appendChild(p); rod.push(o);
 
     const oblouk = vybrany && vybrany.i === i ? vybrany.pribuzni : [];   // ti, ke kterým vede oblouk, jdou první
     const bratri = (sourozenci.get(r[2]) || []).filter(function(j){ return j !== i; })
@@ -1366,11 +1572,10 @@ function ukazKartuBodu(i){
         li.appendChild(b); ul.appendChild(li);
       });
       if (bratri.length > 8) ul.appendChild(prvek("li", "vic", t("aDalsichPribuznych", {n: bratri.length - 8})));
-      o2.appendChild(ul); box.appendChild(o2);
+      o2.appendChild(ul); rod.push(o2);
     }
   }
-
-  if (r[1] >= 0) { const o = oddil(T.popsanost); o.appendChild(prvek("p", null, velke(T.med[r[1]]) + ".")); box.appendChild(o); }
+  zalozky([{nazev: T.zalozkaPrehled, uzly: prehled}, {nazev: T.zalozkaStavba, uzly: stavba}, {nazev: T.zalozkaPribuzni, uzly: rod}]);
 
   const o = oddil(T.odkazyPopis), odk = prvek("div", "odkazy");
   const hledat = T.lang === "cs" && r[9] ? r[9] : B[i][0] + " language";
@@ -1385,9 +1590,9 @@ function ukazKartuBodu(i){
     const a = prvek("a", null, x[0] + " ↗"); a.href = x[1]; a.target = "_blank"; a.rel = "noopener";
     odk.appendChild(a);
   });
-  o.appendChild(odk); box.appendChild(o);
-  box.appendChild(prvek("p", "pozn", T.teckaPozn));
-  $("karta").scrollTop = 0;
+  o.appendChild(odk); o.appendChild(prvek("p", "pozn", T.teckaPozn));
+  const pata = prvek("div", "podrobnosti k-pata"); pata.appendChild(o);
+  kartaTelo.appendChild(pata);
 }
 
 /* ---------- zvuk: rodilý hlas, jinak výslovnost hlasem stránky, jinak aspoň text ---------- */
@@ -1476,7 +1681,7 @@ odkazJinam.addEventListener("click", function(e){
   tlZnak.forEach(function(b){ b.setAttribute("aria-pressed", b.dataset.znak === rezimZnak ? "true" : "false"); });
   nastavVitalitu(Array.isArray(v) && v.length ? v : VSECHNY_STUPNE, true);
 })();
-prelozStranku(); postavPolici("");
+nastavRazeni(razeni); prelozStranku(); postavPolici("");
 
 if (globusOk) {
   try {
@@ -1501,6 +1706,10 @@ if (globusOk) {
     nastavPopisky(ulozenePopisky !== "0");
     requestAnimationFrame(smycka);
     ozivit();
+    /* úvod: glóbus přiletí z dálky a pootočí se; při odkazu na jazyk nebo omezeném pohybu se vynechá */
+    if (!bezPohybu.matches && !location.hash) { uvod = {od: performance.now(), delka: 2200, rot: rot[0]}; uvodK = 0.08; uplatniZoom(); }
+    else ukazUkazatel();
+    posunDok();
   } catch (e) { console.error("Kreslení glóbu selhalo:", e); globusOk = false; }
 }
 prectiOdkaz();                              // otevřeno přes odkaz na jazyk

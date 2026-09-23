@@ -43,7 +43,7 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
 - Areál jazyka = seznam kruhů `[délka, šířka, poloměr ve stupních]`, kreslí se barvou rodiny oříznutý na pevninu
   (jádro ×1,3, měkký okraj ×1,75). Státy v `zeme` se vybarví celé – jen tam, kde se jazykem opravdu mluví v celém státě.
 - **Znakové jazyky** (225 teček: rodina „Sign Language“ v Glottologu + názvy se „Sign Language“; build je dává do
-  `REJSTRIK.zn`). Přepínač vpravo nahoře „Všechny / Bez znakových / Jen znakové“ schová tečky, popisky, výsledky
+  `REJSTRIK.zn`). Přepínač „Všechny / Bez znakových / Jen znakové“ v panelu Zobrazení schová tečky, popisky, výsledky
   hledání i jazyky atlasu (z atlasu je znakový jen český znakový jazyk `czj`); volba se pamatuje (`atlas-znakove`).
   V režimu „Jen znakové“ ukáže police všechny znakové jazyky i bez hledání.
   **Karta znakového jazyka nesmí používat texty pro mluvené jazyky** (uživatel: „vypadá to, že se děti napřed učí
@@ -56,10 +56,10 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
   jednoznačně ohrožený, vážně ohrožený, kriticky ohrožený, vymřelý** (safe … extinct), popisy podle definic UNESCO.
   Navíc **probouzený** (awakening): na stupnici UNESCO vymřelý, ale oživovaný; Glottolog ho má jen v komentáři
   z původního zdroje (ElCat „Awakening“, Ethnologue „Reawakening“), `scripts/podrobnosti.mjs` ho ukládá jako 6.
-  V `radky` je tedy vitalita -1 (bez údaje) až 6. Přepínač „Vitalita“ otevře panel se stupni (lze vybrat víc,
+  V `radky` je tedy vitalita -1 (bez údaje) až 6. Řádek „Vitalita“ v panelu Zobrazení otevře podstránku se stupni (lze vybrat víc,
   předvolby „Všechny“ a „Jen ohrožené“ = zranitelný až kriticky); volba se pamatuje (`atlas-vitalita`).
   Filtry vitality a znakových jazyků se skládají v `uplatniFiltry()`.
-  Dokud je panel otevřený, tečky mají **barvu podle vitality**: ordinální stupnice jednoho odstínu (oranžová,
+  Dokud je podstránka otevřená, tečky mají **barvu podle vitality**: ordinální stupnice jednoho odstínu (oranžová,
   bezpečný → vymřelý, `--vit-0`…`--vit-5`), prošla validátorem palet `--ordinal` na pevnině v noci i ve dne;
   probouzený zeleně (`--vit-6`), bez údaje šedě. Pořadí ani odstíny neměnit bez nového ověření.
   Vitalita je na kartě tečky i na kartě jazyka z atlasu (`oddilVitality`).
@@ -75,6 +75,28 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
   `scripts/nahledy.mjs` (potřebuje Playwright) – po větší změně vzhledu je vyrob znovu. Adresa webu je v `build.mjs` (`WEB`).
 - Od vybraného jazyka vedou světelné oblouky k nejbližším příbuzným (nejvýš 6, podle nejhlubšího společného
   předka ve stromu Glottologu). U jazyka z atlasu jen k jiným jazykům atlasu, karta je vypisuje.
+
+## Rozhraní (grafické vylepšení 23. 9. 2026, uživatel schválil všech 7 bodů)
+
+- **Lišta dole na glóbu** (`.dok`): Náhodný jazyk (hlavní tlačítko), Celý svět (jen když je něco vybrané), zoom
+  a „Zobrazení“. Pod tím je **panel Zobrazení** (`#panel-zobrazeni`): otáčení, jména, znakové jazyky a řádek
+  Vitalita, který otevře podstránku se stupni (šipka Zpět, Escape zavře napřed ji, pak panel). Odznak na
+  tlačítku Zobrazení ukazuje počet zapnutých filtrů. Legenda je vpravo nahoře.
+- **Karta jako pohlednice**: nahoře „hero“ v barvě rodiny (u teček bez atlasu azurová) s velkým pozdravem,
+  pod ním štítky (mluvčích, rodina, vitalita) a záložky (atlas: Zajímavost / Vitalita / Příbuzní;
+  tečka: Přehled / Jak funguje / Příbuzní). Při výběru nového jazyka karta vjede (`vjezd`).
+- **Kouzlo výběru**: let k jazyku s „poskokem“ (u daleké cesty se glóbus cestou oddálí), po doletu se území
+  rozlije vlnou od domovské tečky (`ODHALENI`, 950 ms) a oblouky k příbuzným vystřelí jeden po druhém.
+- **Police**: dlaždice s pozdravem, nahoře „Jazyk dne“ (každý den jiný, podle data), řazení podle rodin /
+  A–Z / světadílů (`atlas-razeni`).
+- **Živější glóbus**: v noci světélka jemně třpytí (překresluje se jen WebGL, co 60 ms, usíná s okrasným
+  pohybem), koule má odlesk slunce (ve dne výraznější).
+- **Mobil (≤ 920 px)**: karta je spodní vysouvací list (úchyt, tažení nahoru = celá, dolů = menší / zavřít),
+  lišta je pod glóbem, pod 480 px jen ikony. Po výběru stránka odroluje nahoru ke glóbu.
+- **Úvod**: glóbus přiletí z vesmíru (2,2 s), pak ukazatel „Klikni na mě!“ ukáže na jazyk (česky na češtinu,
+  anglicky na angličtinu). Po prvním výběru se už nikdy neukáže (`atlas-uvitano`). Při
+  `prefers-reduced-motion` ani s odkazem `#…` přílet neběží (ukazatel se ukáže hned, pokud nic není vybrané).
+- Pořád platí: žádný satelit, prstenec, rohy zaměřovače ani sbírka pozdravů.
 
 ## Podrobnosti k tečkám
 
