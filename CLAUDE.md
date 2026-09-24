@@ -285,7 +285,11 @@ Dřívější náhledový artefakt https://claude.ai/artifact/XS67Gsv9d4y2pMu7UW
   knihovna v akvarely.js: `dum` (typy sedlo, valba, stit, stupne, plocha, dosky; hrázdění, okenice, komín),
   `kostel` (věže jehlan, barok, ctverec, kampanila, stupne, dreveny), `cibule`, `byzant`, `kyklady`, `hrad`,
   `mlyn`, `majak`, `horreo`, `kozolec`, `seno`, `studna`, `capi`, `kravy`, `portikus`; `vesnice` řadí domy odzadu.
-  Zbývá: Kavkaz a Turecko (ka, hy, az, ce, os, ab, ku, tr, he stále sdílejí), Asie, Afrika, Amerika, Oceánie.
+  Hotové také Kavkaz, Blízký východ a Střední Asie (15) a jižní Asie s Kazachstánem (20); další stavby: `kupole`
+  (pul, perska, ploska), `minaret` (tuzka, banka, hranol), `mesita`, `strazni` (svanetská/čečenská věž),
+  `armensky`, `iwan`, `sikhara`, `gopuram`, `stupa`, `pagoda`, `praporky`. Uživatel 24. 9. 2026: „pokračuj pořád
+  dál“ – dávky se po kontrole galerie rovnou pouštějí na web. Zbývá východní a jihovýchodní Asie, Afrika,
+  Amerika, Oceánie.
   Světlé barvy (sníh, domy, křída) se v akvarelu nesmí násobit, jinak zmizí (`svetla()`: všechny složky ≥ 0xE0).
   **Perokresbu / rytinu uživatel zamítl** („je na nic“) a chtěl akvarely „daleko jemnější, detailnější, propracovanější“
   (24. 9. 2026). Proto: hory mají rozeklaný obrys (`clenit`), stinnou stranu za žebrem od vrcholu až do sedla, žlaby
