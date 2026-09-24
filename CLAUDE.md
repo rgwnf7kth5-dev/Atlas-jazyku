@@ -118,6 +118,10 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
   posunu stránky rušil) posouvá list za prstem; nahoru = větší, dolů = menší, z lišty dolů = zavřít. Klepnutí
   na úchyt přepíná lištu a běžnou velikost. Tažení glóbu nebo stromu a otevření rodokmenu kartu samo uklidí
   do lišty (`uklidKartu`). Lišta je pod glóbem, pod 480 px jen ikony. Po výběru stránka odroluje nahoru ke glóbu.
+  **Počítání prstů** (glóbus i rodokmen, mapa `prsty`): první prst nového dotyku (`isPrimary`) paměť vymaže
+  a ztracené zachycení (`lostpointercapture`) prst uklidí. Telefon totiž občas zvednutí prstu neohlásí a „duch“
+  v paměti pak dělal z jednoho prstu dva – po výběru země nebo jazyka se glóbus jedním prstem jen přibližoval
+  a neotáčel (uživatel 24. 9. 2026). Test: v emulaci telefonu podstrčit `pointerdown` bez `pointerup` a táhnout.
   Rodokmen je na telefonu užší a protažený nahoru (elipsa `m.sx`/`m.sy`, `OKRAJ` 0,2 π), jinak byl moc široký.
 - **Úvod**: glóbus přiletí z vesmíru (2,2 s). Jedna tečka (česky čeština, anglicky angličtina) pak tiše pulzuje
   dvěma tenkými kroužky, dokud si člověk poprvé nevybere jazyk (`atlas-uvitano`). Při `prefers-reduced-motion`
