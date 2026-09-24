@@ -37,11 +37,6 @@ async function stahni(url, moznosti = {}, jako = "json") {
   }
   throw new Error("Nepodařilo se stáhnout " + url);
 }
-const sparql = dotaz => stahni("https://query.wikidata.org/sparql", {
-  method: "POST", headers: { "Accept": "application/sparql-results+json", "Content-Type": "application/x-www-form-urlencoded" },
-  body: "query=" + encodeURIComponent(dotaz)
-}).then(d => d.results.bindings);
-
 /* jazyk z atlasu → položka ve Wikidatech */
 const glottoPodleId = {};
 for (const b of glottolog.body) if (b[5] && !glottoPodleId[b[5]]) glottoPodleId[b[5]] = b[6];
@@ -52,43 +47,51 @@ for (const j of jazyky) {
 }
 console.log(`Jazyků v atlasu: ${jazyky.length}, s položkou ve Wikidatech: ${Object.keys(qJazyka).length}`);
 
-/* místa jazyka (P2341, jinak P17) a jejich obrázky; ruční místa z oprav také */
-const hodnoty = [...new Set(Object.values(qJazyka))].map(q => "wd:" + q).join(" ");
-const radky = await sparql(`
-SELECT ?jazyk ?misto ?typ ?obr ?souradnice ?cs ?en WHERE {
-  VALUES ?jazyk { ${hodnoty} }
-  { ?jazyk wdt:P2341 ?misto . BIND(1 AS ?typ) } UNION { ?jazyk wdt:P17 ?misto . BIND(2 AS ?typ) }
-  ?misto wdt:P18 ?obr .
-  OPTIONAL { ?misto wdt:P625 ?souradnice }
-  OPTIONAL { ?misto rdfs:label ?cs FILTER(LANG(?cs) = "cs") }
-  OPTIONAL { ?misto rdfs:label ?en FILTER(LANG(?en) = "en") }
-}`);
-const rucniMista = Object.values(opravy).map(o => o.misto).filter(Boolean);
-const rucni = rucniMista.length ? await sparql(`
-SELECT ?misto ?obr ?souradnice ?cs ?en WHERE {
-  VALUES ?misto { ${rucniMista.map(q => "wd:" + q).join(" ")} }
-  ?misto wdt:P18 ?obr .
-  OPTIONAL { ?misto wdt:P625 ?souradnice }
-  OPTIONAL { ?misto rdfs:label ?cs FILTER(LANG(?cs) = "cs") }
-  OPTIONAL { ?misto rdfs:label ?en FILTER(LANG(?en) = "en") }
-}`) : [];
-const qz = uri => uri.replace(/^.*\/(Q\d+)$/, "$1");
-const souborZ = uri => decodeURIComponent(uri.replace(/^.*Special:FilePath\//, "")).replace(/_/g, " ");
-const bod = s => { const m = s && s.match(/Point\(([-\d.eE]+) ([-\d.eE]+)\)/); return m ? [+m[1], +m[2]] : null; };
+/* položky z Wikidat po padesáti přes wbgetentities (dotaz SPARQL v Actions opakovaně vypršel) */
+async function polozky(qs) {
+  const vysledek = {};
+  const seznam = [...new Set(qs)];
+  for (let i = 0; i < seznam.length; i += 50) {
+    const u = "https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&props=claims|labels&languages=cs|en&ids=" + seznam.slice(i, i + 50).join("|");
+    const d = await stahni(u);
+    Object.assign(vysledek, d.entities || {});
+    await pockej(300);
+  }
+  return vysledek;
+}
+const hodnotyVlastnosti = (e, p) => ((e && e.claims && e.claims[p]) || [])
+  .filter(c => c.rank !== "deprecated" && c.mainsnak.datavalue)
+  .sort((a, b) => (b.rank === "preferred") - (a.rank === "preferred"))
+  .map(c => c.mainsnak.datavalue.value);
+const jazykovePolozky = await polozky(Object.values(qJazyka));
+const mistaJazyka = {};
+for (const [id, q] of Object.entries(qJazyka)) {
+  const e = jazykovePolozky[q];
+  mistaJazyka[id] = [
+    ...hodnotyVlastnosti(e, "P2341").map(v => ({ misto: v.id, typ: 1 })),
+    ...hodnotyVlastnosti(e, "P17").map(v => ({ misto: v.id, typ: 2 }))
+  ];
+}
+for (const [id, o] of Object.entries(opravy)) if (o.misto) mistaJazyka[id] = [{ misto: o.misto, typ: 0 }];
+const mistaPolozky = await polozky(Object.values(mistaJazyka).flat().map(m => m.misto));
+console.log(`Míst ve Wikidatech: ${Object.keys(mistaPolozky).length}`);
+function kandidatiPro(id) {
+  const vse = [];
+  for (const m of mistaJazyka[id] || []) {
+    const e = mistaPolozky[m.misto];
+    if (!e) continue;
+    const s = hodnotyVlastnosti(e, "P625")[0];
+    const kde = s ? [s.longitude, s.latitude] : null;
+    const lab = k => e.labels && e.labels[k] && e.labels[k].value;
+    for (const soubor of hodnotyVlastnosti(e, "P18")) vse.push({ misto: m.misto, typ: m.typ, soubor, kde, cs: lab("cs"), en: lab("en") });
+  }
+  return vse;
+}
 function vzdalenost(a, b) {
   if (!a || !b) return 1e9;
   const R = Math.PI / 180, dl = (a[0] - b[0]) * R;
   return Math.acos(Math.min(1, Math.sin(a[1] * R) * Math.sin(b[1] * R) + Math.cos(a[1] * R) * Math.cos(b[1] * R) * Math.cos(dl)));
 }
-const kandidatiMista = {};
-for (const r of radky) {
-  const q = qz(r.jazyk.value);
-  (kandidatiMista[q] = kandidatiMista[q] || []).push({ misto: qz(r.misto.value), typ: +r.typ.value, soubor: souborZ(r.obr.value),
-    kde: bod(r.souradnice && r.souradnice.value), cs: r.cs && r.cs.value, en: r.en && r.en.value });
-}
-const podleMista = {};
-for (const r of rucni) (podleMista[qz(r.misto.value)] = podleMista[qz(r.misto.value)] || []).push({ misto: qz(r.misto.value), typ: 0,
-  soubor: souborZ(r.obr.value), kde: bod(r.souradnice && r.souradnice.value), cs: r.cs && r.cs.value, en: r.en && r.en.value });
 
 /* údaje o souboru z Commons: náhled, rozměry, autor, licence */
 async function infoSouboru(soubor) {
@@ -119,9 +122,7 @@ for (const j of jazyky) {
   const oprava = opravy[j.id] || {};
   let kandidati = [];
   if (oprava.soubor) kandidati = [{ soubor: oprava.soubor, misto: null, typ: 0 }];
-  else if (oprava.misto) kandidati = podleMista[oprava.misto] || [];
-  else kandidati = (kandidatiMista[qJazyka[j.id]] || []).slice()
-    .sort((a, b) => (a.typ - b.typ) || (vzdalenost(a.kde, j.stred) - vzdalenost(b.kde, j.stred)));
+  else kandidati = kandidatiPro(j.id).sort((a, b) => (a.typ - b.typ) || (vzdalenost(a.kde, j.stred) - vzdalenost(b.kde, j.stred)));
   const cil = path.join(slozka, j.id + ".jpg");
   const stara = stare[j.id];
   if (!ZNOVU && stara && fs.existsSync(cil) && kandidati.some(k => k.soubor === stara.nazev)) { fotky[j.id] = stara; continue; }
