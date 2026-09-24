@@ -225,6 +225,8 @@ function postavPolici(filtr){
       const cta = prvek("span", "jd-akce", T.jazykDneUkaz);
       cta.insertAdjacentHTML("beforeend", '<svg aria-hidden="true"><use href="#i-dal"/></svg>');
       tl.appendChild(cta);
+      const malba = malbaJazyka(d.id);
+      if (malba) { const m = prvek("span", "jd-malba"); m.innerHTML = malba; tl.insertBefore(m, tl.firstChild); tl.classList.add("s-malbou"); }
       tl.addEventListener("click", function(){ vyber(d.id); });
       seznam.appendChild(tl);
     }
@@ -519,8 +521,14 @@ function kresliBodyGl(){
    Barvy dodá CSS (--more-*, --souse-*), takže z jednoho obrázku je denní i noční glóbus.
    Kreslí se do vlastního plátna mimo stránku a to se vloží do #podklad místo ploché koule a pevniny. */
 const RELIEF = /*__RELIEF__*/null;
-  el.style.backgroundImage = "url(\"" + f.soubor + "\")";
-  autor.textContent = popisekFotky(f); autor.href = f.zdroj; autor.title = f.nazev;
+/* krajina na pohlednici jazyka (data/krajiny.json, malují src/akvarely.js) */
+const KRAJINY = /*__KRAJINY__*/null || {};
+function malbaJazyka(id){ return KRAJINY[id] && typeof AKVARELY !== "undefined" ? AKVARELY.obraz(id, KRAJINY[id]) : ""; }
+function malbaNaKarte(id){
+  const svg = id ? malbaJazyka(id) : "", el = $("k-malba");
+  kartaHero.classList.toggle("s-malbou", !!svg);
+  el.hidden = !svg;
+  if (el.dataset.id !== (id || "")) { el.innerHTML = svg; el.dataset.id = id || ""; }
 }
 const relief = {platno: null, gl: null, u: {}, hotovo: false, sirkaTex: 1};
 function pripravRelief(){
@@ -1631,6 +1639,7 @@ const karta = $("karta"), kartaTelo = $("k-telo"), kartaStitky = $("k-stitky"), 
 function otevriKartu(barva, textBarva, novyJazyk){
   karta.hidden = false;
   kartaHero.classList.remove("srovnani", "vymysleny");    // karta srovnání a vymyšleného jazyka mají vlastní záhlaví
+  malbaNaKarte(null);
   const dvojice = kartaHero.querySelector(".k-dvojice"); if (dvojice) dvojice.remove();
   $("k-porovnat").hidden = false;
   kartaHero.style.setProperty("--r-barva", barva);
@@ -1728,6 +1737,7 @@ function ukazKartu(j){
   karta.dataset.jazyk = j.id;
   otevriKartu("var(--r-" + j.sk + ")", "var(--t-" + j.sk + ")", novy);
   $("k-plne").hidden = false; $("k-odznak").hidden = true;
+  malbaNaKarte(j.id);
   const domov = BOD_ATLASU[j.id] >= 0 ? B[BOD_ATLASU[j.id]] : [0, j.stred[0], j.stred[1]];
   $("k-kod").textContent = souradnice(domov[1], domov[2]);
   $("k-nazev").textContent = j.n;

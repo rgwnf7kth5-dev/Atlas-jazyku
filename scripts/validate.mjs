@@ -72,6 +72,14 @@ if (pd.uzly.length !== pd.nad.length) chyby.push("data/podrobnosti.json: strom p
   } }
 { const uzly = new Set(pd.uzly);                // české názvy větví pro rodokmen: jen větve, které ve stromu opravdu jsou
   for (const k of Object.keys(json("data/glottolog-branches.cs.json"))) if (!uzly.has(k)) chyby.push(`data/glottolog-branches.cs.json: větev „${k}“ v Glottologu není`); }
+/* krajina na pohlednici: každý jazyk atlasu ji má a druh krajiny existuje v src/akvarely.js */
+{ const druhy = new Set([...fs.readFileSync(path.join(KOREN, "src/akvarely.js"), "utf8").matchAll(/^    (\w+): function/gm)].map(m => m[1]));
+  const krajiny = json("data/krajiny.json");
+  for (const j of jazyky) {
+    const k = krajiny[j.id];
+    if (!k) chyby.push(`data/krajiny.json: jazyk „${j.id}“ nemá krajinu`);
+    else if (!druhy.has(k.split(":")[0])) chyby.push(`data/krajiny.json: „${j.id}“ má neznámou krajinu „${k}“`);
+  } }
 for (const [l, ui] of [["cs", uiCs], ["en", uiEn]]) {
   if (!Array.isArray(ui.aes) || ui.aes.length !== 7) chyby.push(`src/ui/${l}.json: „aes“ musí mít 7 položek (6 stupňů UNESCO + probouzený)`);
   if (!Array.isArray(ui.aesZnak) || ui.aesZnak.length !== 7) chyby.push(`src/ui/${l}.json: „aesZnak“ musí mít 7 položek jako „aes“`);

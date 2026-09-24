@@ -238,3 +238,25 @@ Okrasný pohyb (světla na obloucích, obvod karty) po 20 s bez dotyku usne.
 
 Zajímavosti jsou pro děti, ale musí být pravdivé. 22. 9. 2026 opraveno 19 nepřesností (např. zulská
 odpověď na pozdrav je „Ngikhona“, ne „shiboka“; „mrož“ není z nizozemštiny). Novou zajímavost ověř.
+
+## Redesign „obrázková encyklopedie“ (větev `redesign-encyklopedie`, náhled, zatím ne na webu)
+
+Podle obrázků uživatele (B: světlá encyklopedie, C: tmavá s bohatou kartou), 24. 9. 2026. Náhled je artefakt
+https://claude.ai/artifact/XS67Gsv9d4y2pMu7UWEGRi (soubor `build/atlas-nahled-redesignu.html` = `build/atlas-jazyku.html`).
+- **Reliéfní glóbus**: modré moře se dnem a stínovaná pevnina. Podklad `data/relief.jpg` vyrábí `scripts/relief.py`
+  z Natural Earth shaded relief a NOAA ETOPO1 (public domain, z pythonového balíčku basemap-data); šedý obrázek,
+  moře 0–0,45, pevnina 0,55–1. Kreslí ho WebGL 2 do plátna mimo stránku (`kresliRelief`), barvy z CSS
+  (`--more1/2`, `--souse1/2`), takže den i noc z jednoho obrázku. Stránka tím ztěžkla na ~3,3 MB.
+- **Území vybraného jazyka je plně oranžové** (`--uzemi`), ne v barvě rodiny: indoevropská modrá by na modrém
+  moři splývala s vodou. Šrafování uživatel zamítl („zaplnění plochy jako dosud, jen jiná barva“).
+- Patkové titulky Playfair Display, papírové pozadí `#F4F1EA`, bílé karty, červené hlavní tlačítko, nové logo.
+  Záhlaví bez karty, jen linka. Na kartě řádek „Rodokmen jazykové rodiny“ (cesta v Glottologu, `cestaRodokmenu`).
+- **Pohlednice jsou malované akvarely** (`src/akvarely.js`, build ho vkládá před `app.js`): krajina podle toho,
+  odkud jazyk pochází (`data/krajiny.json`, validace hlídá každý jazyk a existenci druhu), 19 druhů s variantami.
+  Uživatel zamítl: plakátové ploché ilustrace v barvě rodiny („nelíbí“), satelitní snímky („nic se nepozná“)
+  a nakonec i skutečné fotky z Wikimedia Commons (automatický výběr přes Wikidata dával mapy, vlajky,
+  cizí místa a u lakotštiny Mount Rushmore; uživatel práci zastavil). Památky a lidi na pohlednice nekreslit.
+  Světlé barvy (sníh, domy, křída) se v akvarelu nesmí násobit, jinak zmizí (`BILA`: všechny složky ≥ 0xE0).
+- Build zkouší skript stránky přeložit (`new Function`): při úklidu fotek zůstaly v kódu osiřelé řádky
+  a stránka byla úplně nefunkční, aniž by `npm run check` něco hlásil.
+- Zbývá: znovu ověřit barvy vitality na nové pevnině, zvážit menší podklad reliéfu, přeložit zbylé větve v cestě.
