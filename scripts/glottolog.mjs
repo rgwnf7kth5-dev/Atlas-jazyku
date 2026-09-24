@@ -53,15 +53,24 @@ const MAKRO = { "Africa": "Africa", "Eurasia": "Eurasia", "Papunesia": "Papunesi
 const rodiny = [], rodinyIx = {}, makro = [], makroIx = {};
 const index = (seznam, rejstrik, n) => (n in rejstrik) ? rejstrik[n] : (rejstrik[n] = seznam.push(n) - 1);
 
+// Některé spisovné jazyky vede Glottolog jen jako nářečí (lotyština lvs pod latv1249, norština bokmål nob pod norw1258).
+// Jazyk atlasu pak dostane tečku nadřazeného jazyka – ale jen když na ni nečeká jiný jazyk atlasu
+// (srbština a chorvatština jsou obě pod srbochorvatštinou, tu nedostane ani jedna).
+const pres = {};
+for (const r of zaznamy) {
+  const id = isoNaId[r[ix.ISO639P3code]];
+  if (r[ix.Level] === "dialect" && id && r[ix.Language_ID]) (pres[r[ix.Language_ID]] ||= new Set()).add(id);
+}
 const body = jazyky.map(r => {
   const kod = r[ix.ISO639P3code] || r[ix.Closest_ISO369P3code] || "";
+  const nahradni = !isoNaId[kod] && pres[r[ix.Glottocode]] && pres[r[ix.Glottocode]].size === 1 ? [...pres[r[ix.Glottocode]]][0] : "";
   return [
     r[ix.Name],
     Math.round(+r[ix.Longitude] * 100) / 100,
     Math.round(+r[ix.Latitude] * 100) / 100,
     index(rodiny, rodinyIx, jmenoRodiny[r[ix.Family_ID]] || "Isolate"),
     index(makro, makroIx, MAKRO[(r[ix.Macroarea] || "").split(";")[0]] || ""),
-    isoNaId[kod] || "",
+    isoNaId[kod] || nahradni,
     r[ix.Glottocode]          // jen pro propojování dat (scripts/podrobnosti.mjs), do stránky se nevkládá
   ];
 });

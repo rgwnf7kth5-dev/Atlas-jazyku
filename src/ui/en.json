@@ -292,7 +292,7 @@
  "znakoveVse": "All",
  "znakoveBez": "No sign languages",
  "znakoveJen": "Sign only",
- "znakovePopis": "Sign languages are used mainly by Deaf people – with hands, face and the whole body. Each country has its own.",
+ "znakovePopis": "Sign languages are used mainly by Deaf people – with hands, face and the whole body. There is no single sign language for the whole world: many countries have their own, some have several, and their borders do not match national borders.",
  "znakovyCo": "What is a sign language",
  "znakovyVysvetleni": "A sign language is not spoken but shown – with the hands, facial expressions and body movement. It is used mainly by Deaf people and their families. It is not a spoken language translated into hands: it has its own words and its own grammar.",
  "aesZnak": [
@@ -414,5 +414,12 @@
  "autorJazyka": "Created by",
  "vyznamPozdravu": "What the greeting means",
  "zJinychSvetu": "✦ From other worlds",
- "nareciPozn": "Glottolog lists these as dialects, not separate languages, so they have no dot of their own on the globe."
+ "nareciPozn": "Glottolog lists these as dialects, not separate languages, so they have no dot of their own on the globe.",
+ "pocetPozn": "Glottolog: {g} languages (it counts Serbian and Croatian as one and Hmong as several, hence {n} in the list).",
+ "hledejVymazat": "Clear search",
+ "preskocit": "Skip to the list of languages",
+ "filtryZapnute": "filters on: {n}",
+ "nenalezenaNadpis": "This page does not exist",
+ "nenalezenaText": "Maybe there is a typo in the address. All 7,967 languages of the world are waiting on the globe.",
+ "nenalezenaZpet": "Back to the globe"
 }

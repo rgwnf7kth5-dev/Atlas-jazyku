@@ -4,6 +4,7 @@
 // Adresy druhé jazykové verze u artefaktů: proměnné ODKAZ_CS a ODKAZ_EN.
 import fs from "node:fs";
 import path from "node:path";
+import crypto from "node:crypto";
 
 const KOREN = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
 const cti = p => fs.readFileSync(path.join(KOREN, p), "utf8");
@@ -62,19 +63,11 @@ const REJSTRIK = {
   zn: glottolog.body.flatMap((b, i) => glottolog.rodiny[b[3]] === "Sign Language" || /\bsign language\b/i.test(b[0]) ? [i] : [])
 };
 
-function sestav(lang, { odkazJinam, artefakt }) {
-  const T = UI[lang];
-  const jiny = lang === "cs" ? "en" : "cs";
-
-  const zastupne = { ...T, odkazJinam, jinyKod: jiny };
-  let html = telo.replace(/\{\{(\w+)\}\}/g, (_, k) => {
-    if (!(k in zastupne)) throw new Error(`V šabloně je {{${k}}}, ale v src/ui/${lang}.json chybí.`);
-    return escHtml(zastupne[k]);
-  });
-
+/* skript stránky s daty; na webu je jeden pro obě jazykové verze (jazyk si přečte z <html lang>) */
+function skriptStranky(vychozi, artefakt) {
   const skript = aplikace
     .replace("/*__UI__*/null", () => doSkriptu(UI))
-    .replace('/*__VYCHOZI__*/"cs"', () => JSON.stringify(lang))
+    .replace('/*__VYCHOZI__*/"cs"', () => vychozi)
     .replace("/*__ARTEFAKT__*/false", () => String(!!artefakt))
     .replace("/*__SVET__*/null", () => doSkriptu(svet))
     .replace("/*__JAZYKY__*/null", () => doSkriptu(JAZYKY))
@@ -88,13 +81,36 @@ function sestav(lang, { odkazJinam, artefakt }) {
                                                           radky: podrobnosti.radky, vetve: json("data/glottolog-branches.cs.json"),
                                                           nareci: glottolog.body.map(b => nareci[b[6]] || ""), nareciCs: json("data/nareci-cs.json") }));
   // pojistka: rozbitý skript by stránku úplně vyřadil (stalo se při úklidu kódu), proto ho build zkusí přeložit
-  try { new Function(skript); } catch (e) { throw new Error(`Skript stránky (${lang}) má chybu syntaxe: ${e.message}`); }
-  const skripty = knihovny.map(k => `<script>${k}</script>`).join("\n") + `\n<script>${skript}</script>`;
+  try { new Function(skript); } catch (e) { throw new Error(`Skript stránky má chybu syntaxe: ${e.message}`); }
+  return skript;
+}
+// Web: knihovny + aplikace + data v jednom souboru js/atlas.<otisk>.js. Otisk se mění s obsahem, takže ho prohlížeč
+// smí držet v mezipaměti natrvalo (_headers) a obě jazykové verze sdílejí jedno stažení. Dřív byl skript (2,3 MB)
+// vložený přímo do každé stránky a stahoval se znovu při každé návštěvě i při přechodu mezi / a /en/.
+const skriptWebu = knihovny.join("\n;\n") + "\n;\n" +
+  skriptStranky('document.documentElement.lang === "en" ? "en" : "cs"', false);
+const souborSkriptu = `js/atlas.${crypto.createHash("sha256").update(skriptWebu).digest("hex").slice(0, 10)}.js`;
+
+function sestav(lang, { odkazJinam, artefakt }) {
+  const T = UI[lang];
+  const jiny = lang === "cs" ? "en" : "cs";
+
+  const zastupne = { ...T, odkazJinam, jinyKod: jiny };
+  let html = telo.replace(/\{\{(\w+)\}\}/g, (_, k) => {
+    if (!(k in zastupne)) throw new Error(`V šabloně je {{${k}}}, ale v src/ui/${lang}.json chybí.`);
+    return escHtml(zastupne[k]);
+  });
+
+  // artefakt musí být jeden soubor, proto v něm zůstává všechno vložené
+  const skripty = artefakt
+    ? knihovny.map(k => `<script>${k}</script>`).join("\n") + `\n<script>${skriptStranky(JSON.stringify(lang), true)}</script>`
+    : `<script src="${lang === "cs" ? "" : "../"}${souborSkriptu}"></script>`;
 
   const hlavicka =
     `<title>${escHtml(T.nazev)}</title>\n` +
     `<meta name="description" content="${escHtml(T.popis)}">\n` +
-    `<meta name="theme-color" content="#02030A">\n` +
+    `<meta name="theme-color" content="#FBF9F4" media="(prefers-color-scheme: light)">\n` +
+    `<meta name="theme-color" content="#050914" media="(prefers-color-scheme: dark)">\n` +
     `<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,${encodeURIComponent(ikona)}">\n` +
     // vzhled (podle počítače, nebo podle přepínače) nastavím hned, ať stránka při načtení neblikne
     `<script>(function(){var m=null;try{m=localStorage.getItem("atlas-motiv")}catch(e){}` +
@@ -130,11 +146,65 @@ const slozkaArtefaktu = i >= 0 ? path.resolve(argumenty[i + 1]) : null;
 const cs = sestav("cs", { odkazJinam: "en/index.html", artefakt: false });
 const en = sestav("en", { odkazJinam: "../index.html", artefakt: false });
 fs.mkdirSync(path.join(KOREN, "dist/en"), { recursive: true });
+fs.rmSync(path.join(KOREN, "dist/js"), { recursive: true, force: true });   // starý skript s jiným otiskem pryč
+fs.mkdirSync(path.join(KOREN, "dist/js"), { recursive: true });
+fs.writeFileSync(path.join(KOREN, "dist", souborSkriptu), skriptWebu);
 fs.writeFileSync(path.join(KOREN, "dist/index.html"), cs.dokument);
 fs.writeFileSync(path.join(KOREN, "dist/en/index.html"), en.dokument);
 fs.cpSync(path.join(KOREN, "static"), path.join(KOREN, "dist"), { recursive: true });   // ikonky a náhledy
+
+// pro vyhledávače: obě jazykové verze a jejich vzájemné odkazy
+const dnes = process.env.DATUM_STAVU || new Date().toISOString().slice(0, 10);
+fs.writeFileSync(path.join(KOREN, "dist/robots.txt"), `User-agent: *\nAllow: /\n\nSitemap: ${WEB}/sitemap.xml\n`);
+fs.writeFileSync(path.join(KOREN, "dist/sitemap.xml"),
+  `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n` +
+  ["/", "/en/"].map(u => `  <url>\n    <loc>${WEB}${u}</loc>\n    <lastmod>${dnes}</lastmod>\n` +
+    `    <xhtml:link rel="alternate" hreflang="cs" href="${WEB}/"/>\n    <xhtml:link rel="alternate" hreflang="en" href="${WEB}/en/"/>\n  </url>\n`).join("") +
+  `</urlset>\n`);
+// vlastní stránka 404 (Netlify ji vrátí u neexistující adresy), dvojjazyčná a bez skriptů
+fs.writeFileSync(path.join(KOREN, "dist/404.html"), `<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>${escHtml(UI.cs.nenalezenaNadpis)} · ${escHtml(UI.cs.nazev)}</title>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<style>
+:root{color-scheme:light dark; --papir:#FBF9F4; --text:#15192B; --text2:#5A6073; --akcent:#D23A2B}
+@media (prefers-color-scheme:dark){:root{--papir:#050914; --text:#EAF4FF; --text2:#A3B6D8; --akcent:#E0503F}}
+body{margin:0; min-height:100vh; display:grid; place-items:center; background:var(--papir); color:var(--text);
+  font:17px/1.5 Georgia,"Times New Roman",serif; padding:24px; box-sizing:border-box; text-align:center}
+main{max-width:34rem}
+img{width:96px; height:96px}
+h1{font-size:2.2rem; margin:18px 0 6px; font-weight:600}
+p{margin:0 0 14px; color:var(--text2); font-family:system-ui,sans-serif; font-size:1rem}
+a.tl{display:inline-block; margin:6px; padding:11px 20px; border-radius:999px; background:var(--akcent); color:#fff;
+  text-decoration:none; font-family:system-ui,sans-serif; font-weight:600}
+a.tl:focus-visible{outline:3px solid var(--text); outline-offset:3px}
+hr{border:0; border-top:1px solid color-mix(in srgb,var(--text) 15%,transparent); margin:26px auto; width:60%}
+</style>
+</head>
+<body>
+<main>
+<img src="/favicon.svg" alt="">
+<h1>${escHtml(UI.cs.nenalezenaNadpis)}</h1>
+<p>${escHtml(UI.cs.nenalezenaText)}</p>
+<a class="tl" href="/">${escHtml(UI.cs.nenalezenaZpet)}</a>
+<hr>
+<div lang="en">
+<h1>${escHtml(UI.en.nenalezenaNadpis)}</h1>
+<p>${escHtml(UI.en.nenalezenaText)}</p>
+<a class="tl" href="/en/">${escHtml(UI.en.nenalezenaZpet)}</a>
+</div>
+</main>
+</body>
+</html>
+`);
+// skript s otiskem v názvu se nikdy nemění, smí zůstat v mezipaměti prohlížeče napořád
+fs.writeFileSync(path.join(KOREN, "dist/_headers"), `/js/*\n  Cache-Control: public, max-age=31536000, immutable\n`);
 const kb = s => (Buffer.byteLength(s) / 1024).toFixed(0) + " kB";
-console.log(`dist/index.html (česky) ${kb(cs.dokument)}, dist/en/index.html (anglicky) ${kb(en.dokument)}`);
+console.log(`dist/index.html (česky) ${kb(cs.dokument)}, dist/en/index.html (anglicky) ${kb(en.dokument)}, dist/${souborSkriptu} ${kb(skriptWebu)}`);
 
 if (slozkaArtefaktu) {
   fs.mkdirSync(slozkaArtefaktu, { recursive: true });

@@ -386,6 +386,39 @@ var AKVARELY = (function(){
     let t = ""; for (let i = 0; i < 9; i++) { const yy = y - h * (.1 + i * .09); t += tah("M" + f1(x - w * .7) + " " + f1(yy) + " q" + f1(w * .4) + " " + f1(-3) + " " + f1(w * .8) + " " + f1(-1), "#A8BC7A", .6, .45); }
     return kryt(F, d, F.jemna) + vrstva(F, d, "#4E6E48", "#2A4030", .95, F.jemna) + skupina(F, F.stetec, t);
   }
+  /* topol vlašský: vysoký štíhlý sloup, světlejší než cypřiš a roztřepený (Francie: aleje podél cest a řek) */
+  function topol(F, r, x, y, h){
+    const w = h * .085;
+    const d = "M" + f1(x - w * .4) + " " + f1(y) + " C" + f1(x - w * 1.4) + " " + f1(y - h * .35) + " " + f1(x - w * 1.1) + " " + f1(y - h * .8) + " " + f1(x) + " " + f1(y - h) +
+      " C" + f1(x + w * 1.2) + " " + f1(y - h * .8) + " " + f1(x + w * 1.5) + " " + f1(y - h * .35) + " " + f1(x + w * .4) + " " + f1(y) + " Z";
+    let t = ""; for (let i = 0; i < 12; i++) { const yy = y - h * (.1 + i * .07), sx = (r() - .5) * w * .6;
+      t += tah("M" + f1(x - w * .8 + sx) + " " + f1(yy) + " q" + f1(w * .5) + " -2 " + f1(w * 1.1) + " -.5", "#C4D094", .5, .5); }
+    return kryt(F, d, F.jemna) + vrstva(F, d, "#86A45C", "#46663A", .92, F.jemna) + skupina(F, F.stetec, t);
+  }
+  /* zámek na Loiře: světlý kámen, strmá břidlicová střecha s vikýři a kulaté nárožní věže s kuželovými střechami.
+     x, y = levý dolní roh hlavního křídla */
+  function zamek(F, r, x, y, s){
+    const stena = "#E6DECA", bridlice = "#5A6474", tmava = "#3A3E4A", w = 52 * s;
+    let out = dum(F, r, x, y, w, 16 * s, { typ: "valba", stena: stena, strecha: bridlice, patra: 2, okna: 6, dvere: false, rh: 13 * s, d: 14 * s });
+    /* vikýře ve střeše */
+    let vk = "", vs = "";
+    for (let i = 0; i < 4; i++) { const cx = x + (11 + i * 10) * s, yy = y - 18.5 * s;
+      vk += mnoho([[cx - 2.2 * s, yy], [cx + 2.2 * s, yy], [cx + 2.2 * s, yy - 4 * s], [cx, yy - 7 * s], [cx - 2.2 * s, yy - 4 * s]]);
+      vs += mnoho([[cx - 1 * s, yy - .6 * s], [cx + 1 * s, yy - .6 * s], [cx + 1 * s, yy - 3.6 * s], [cx - 1 * s, yy - 3.6 * s]]); }
+    out += kryt(F, vk, F.jemna) + nanes(F, vk, stena) + nanes(F, vs, tmava, .7);
+    const vez = function(cx, h){
+      const rw = 5.5 * s, top = y - h;
+      const telo = "M" + f1(cx - rw) + " " + f1(y) + " L" + f1(cx - rw) + " " + f1(top) + " L" + f1(cx + rw) + " " + f1(top) + " L" + f1(cx + rw) + " " + f1(y) +
+        " Q" + f1(cx) + " " + f1(y + 2.2 * s) + " " + f1(cx - rw) + " " + f1(y) + " Z";
+      const stin = mnoho([[cx + rw * .25, y + 1.6 * s], [cx + rw * .25, top], [cx + rw, top], [cx + rw, y]]);
+      const kuzel = mnoho([[cx - rw - 1.3 * s, top + .8 * s], [cx + rw + 1.3 * s, top + .8 * s], [cx, top - 21 * s]]);
+      let ok = ""; for (let p = 0; p < 2; p++) { const oy = top + (5 + p * 8) * s; ok += mnoho([[cx - 1.4 * s, oy], [cx + .6 * s, oy], [cx + .6 * s, oy + 3.6 * s], [cx - 1.4 * s, oy + 3.6 * s]]); }
+      return kryt(F, telo + kuzel, F.jemna) + nanes(F, telo, stena) + laz(F, stin, mix(stena, "#4A4E68", .35), .45) + nanes(F, ok, tmava, .7) +
+        nanes(F, kuzel, bridlice) + laz(F, mnoho([[cx, top - 21 * s], [cx + rw + 1.3 * s, top + .8 * s], [cx + rw * .3, top + .8 * s]]), tmava, .35) +
+        skupina(F, F.stetec, tah("M" + f1(cx) + " " + f1(top - 21 * s) + " l0 " + f1(-4 * s), tmava, .6 * s, .9));
+    };
+    return out + vez(x - 1 * s, 24 * s) + vez(x + w + 1 * s, 24 * s);
+  }
   /* pole v perspektivě: pruhy k obzoru, každý rozdělený na lány různých barev; bližší lány mají řádky k úběžníku */
   function pole(F, r, yh, vx, barvy, stromy){
     const kx = function(xb, y){ return vx + (xb - vx) * (y - yh) / (H - yh); }, by = [];
@@ -941,15 +974,18 @@ var AKVARELY = (function(){
       o += hrebeny(F, [[232, 4, 80, 3, "#7EA04E", 0]]) + strom(F, q, 30, 244, 1.3, "#5E8440") + strom(F, q, 356, 246, 1.2, "#5E8440");
       return o + trava(F, r, 120, 234, 254, ["#557F38", "#78A04A", "#46692E"]) + kvety(F, r, 14, 238, 252, ["#F4F0E4", "#E8D56A"], .9);
     },
-    /* Burgundsko (francouzština): vinice v řádcích k obzoru, kamenná vesnice s břidlicí a kostelní věží, topoly */
+    /* Francie (francouzština): vinice v řádcích k obzoru, na návrší zámek s kulatými věžemi a břidlicovými střechami,
+       vesnice s šedými střechami a kostelní věží, alej vlašských topolů (ne cypřiše – ty patří Toskánsku) */
     vinice: function(F, r){
       const q = nahoda(F.sem + 103);
-      let o = nebe(F, "#7EA8DA", "#F4E6CC") + mraky(F, r, 3, 30, 72, 90) + rasy(F, r, 2, 12, 28);
+      let o = nebe(F, "#7EA8DA", "#F2E8D4") + mraky(F, r, 3, 30, 72, 90) + rasy(F, r, 2, 12, 28);
       o += hrebeny(F, [[118, 6, 80, 1, "#8C9EB6", .5], [136, 8, 60, 2, "#8EA868", .25]]);
-      o += vesnice(F, q, [[170, 146, 16, 10, { typ: "valba", stena: "#E6D6B8", strecha: "#5E6878", okenice: "#7E8A96" }], [190, 147, 14, 9, { typ: "sedlo", stena: "#EADCC0", strecha: "#A85A3E" }],
-        [240, 146, 18, 11, { typ: "valba", stena: "#E6D6B8", strecha: "#5E6878", patra: 2, okenice: "#7E8A96" }], [262, 148, 14, 9, { typ: "sedlo", stena: "#EADCC0", strecha: "#A85A3E" }],
-        [214, 148, .8, 0, { kostel: 1, vez: "jehlan", stena: "#E2D2B2", strecha: "#5E6878", vezStrecha: "#4E5666" }]]);
-      for (let i = 0; i < 7; i++) o += cypris(F, q, 300 + i * 11, 150, 30 + q() * 6).replace(/#4E6E48/g, "#5E7E4A");
+      o += koruny(F, q, 20, 130, 146, .5, "#6E8E4E", .8, F.jemna);
+      o += vesnice(F, q, [[40, 147, 14, 9, { typ: "valba", stena: "#E6D6B8", strecha: "#5E6878", okenice: "#7E8A96" }], [58, 148, 12, 8, { typ: "sedlo", stena: "#EADCC0", strecha: "#5E6878" }],
+        [84, 147, 14, 9, { typ: "valba", stena: "#E2D2B2", strecha: "#5E6878", okenice: "#7E8A96" }], [70, 149, .7, 0, { kostel: 1, vez: "jehlan", stena: "#E2D2B2", strecha: "#5E6878", vezStrecha: "#4E5666" }]]);
+      o += zamek(F, q, 200, 142, 1.05);
+      o += koruny(F, q, 170, 290, 153, .45, "#5E7E46", .85, F.jemna);
+      for (let i = 0; i < 8; i++) o += topol(F, q, 300 + i * 12, 152 + i * .3, 38 + q() * 8);
       o += hrebeny(F, [[152, 3, 90, 3, "#9AB06A", 0]]);
       /* řádky vinné révy k úběžníku */
       const vx = 200, vy = 150; let rady = "", listy = "";

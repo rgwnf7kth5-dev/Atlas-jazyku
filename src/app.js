@@ -87,7 +87,8 @@ const BEZ_POLOHY = new Uint8Array(REJSTRIK.b.length);    // esperanto a spol.: v
 REJSTRIK.bp.forEach(function(i){ BEZ_POLOHY[i] = 1; });           // umělé jazyky, pidžiny, smíšené jazyky, zvláštní mluvy: nejsou rodina
 const BOD_ATLASU = {};                            // jazyk z atlasu → jeho tečka v rejstříku
 for (let i = POCET_B - 1; i >= 0; i--) if (B[i][5]) BOD_ATLASU[B[i][5]] = i;
-/* rodina a světadíl jazyka z atlasu pro řazení police; pět jazyků atlasu (např. srbština) tečku nemá:
+const POLOZEK_SEZNAMU = JAZYKY.length + POCET_B - Object.keys(BOD_ATLASU).length;   // jazyky atlasu + tečky bez jazyka atlasu
+/* rodina a světadíl jazyka z atlasu pro řazení police; tři jazyky atlasu (srbština, chorvatština, hmongština) tečku nemají:
    rodinu vezmu z jejího českého popisu, světadíl od nejbližší tečky */
 const RODINA_ATLASU = {}, OBLAST_ATLASU = {};
 JAZYKY.forEach(function(j){
@@ -254,6 +255,7 @@ function kartaDneJazyku(){
 }
 function postavPolici(filtr){
   const hledane = bezDiakritiky(filtr || "").trim();
+  $("hledej-x").hidden = !$("hledej").value;
   seznam.textContent = "";
   if (!hledane && denJazyku()) seznam.appendChild(kartaDneJazyku());
   if (!hledane) {                            /* jazyk dne nahoře */
@@ -405,6 +407,9 @@ function pismeno(jm){
   return /[A-Z]/.test(z) ? z : "#";
 }
 $("hledej").addEventListener("input", function(e){ postavPolici(e.target.value); });
+$("hledej-x").addEventListener("click", function(){ const h = $("hledej"); h.value = ""; postavPolici(""); h.focus(); });
+/* odkaz „Přeskočit na seznam“ pro klávesnici: jen přesune fokus, adresu (#jazyk) nemění */
+document.querySelector(".preskocit").addEventListener("click", function(e){ e.preventDefault(); $("hledej").focus(); });
 
 /* ---------- glóbus: čtyři vrstvy nad sebou ----------
    #podklad  – atmosféra, moře, pevnina, území vybraného jazyka, hranice (2D, jen když se pohne pohled)
@@ -949,7 +954,7 @@ function spocitejBody(){
 /* ---------- HUD: souřadnice středu pohledu a počet světélek na očích ---------- */
 function souradnice(lon, lat){
   lon = ((lon % 360) + 540) % 360 - 180;
-  return cislo(Math.abs(lat), 1) + "° " + T.strany[lat >= 0 ? 0 : 1] + " · " + cislo(Math.abs(lon), 1) + "° " + T.strany[lon >= 0 ? 2 : 3];
+  return cislo(Math.abs(lat), 1) + "°\u00a0" + T.strany[lat >= 0 ? 0 : 1] + " · " + cislo(Math.abs(lon), 1) + "°\u00a0" + T.strany[lon >= 0 ? 2 : 3];
 }
 const hudSouradnice = $("hud-souradnice"), hudStav = $("hud-stav");
 let hudTxt = "", hudTxt2 = "";
@@ -1404,7 +1409,7 @@ let zeme = null;                          // {f: tvar státu, body: tečky jeho 
 const EU_JAZYKY = ["bg", "cs", "da", "de", "el", "en", "es", "et", "fi", "fr", "ga", "hr", "hu", "it", "lt", "lv", "mt", "nl", "pl", "pt", "ro", "sk", "sl", "sv"];
 const EU_BOD = new Uint8Array(POCET_B);
 const EU = EU_JAZYKY.filter(function(id){ return PODLE_ID[id]; }).map(function(id){
-  const i = BOD_ATLASU[id], j = PODLE_ID[id];                 // chorvatština a lotyština tečku nemají: poloha z atlasu
+  const i = BOD_ATLASU[id], j = PODLE_ID[id];                 // chorvatština tečku nemá (Glottolog ji vede se srbštinou jako jeden jazyk): poloha z atlasu
   if (i >= 0) EU_BOD[i] = 1;
   const v = i >= 0 ? vektor(B[i][1], B[i][2]) : vektor(j.stred[0], j.stred[1]); v.push(1);
   return {id: id, i: i, v: v, sx: -1, sy: -1};
@@ -1432,7 +1437,7 @@ function zhasniZemi(){ if (!zeme) return; zeme = null; if (globusOk) obnovPrizna
 function klikDoMapy(e){
   const r = platno.getBoundingClientRect();
   const mx = e.clientX - r.left, my = e.clientY - r.top;
-  if (eu) {                                   // hvězdička jazyka EU má přednost (chorvatština a lotyština tečku nemají)
+  if (eu) {                                   // hvězdička jazyka EU má přednost (chorvatština tečku nemá)
     const h = EU.filter(function(x){ return x.sx >= 0 && Math.hypot(x.sx - mx, x.sy - my) < 13; })[0];
     if (h) { okno.hidden = true; vyber(h.id); return; }
   }
@@ -1549,7 +1554,7 @@ function domu(){
   if ($("hledej").value) { $("hledej").value = ""; postavPolici(""); }
   seznam.scrollTop = 0;
   if (globusOk) letKe([15, 25], 1);
-  if (!ARTEFAKT && history.replaceState) { try { history.replaceState(null, "", location.pathname); } catch (e) {} }
+  if (!ARTEFAKT && history.replaceState) { try { history.replaceState(null, "", location.pathname); obnovOdkazJinam(); } catch (e) {} }
   window.scrollTo({top: 0, behavior: bezPohybu.matches ? "auto" : "smooth"});
 }
 $("domu").addEventListener("click", function(e){ e.preventDefault(); domu(); });
@@ -1644,6 +1649,7 @@ const panelZob = $("panel-zobrazeni"), tlZob = $("tl-zobrazeni"), pzHlavni = $("
 function obnovOdznakZobrazeni(){
   const n = (rezimZnak !== "vse" ? 1 : 0) + (povoleneStupne.size < VSECHNY_STUPNE.length ? 1 : 0);
   $("zobrazeni-pocet").hidden = !n; $("zobrazeni-pocet").textContent = n;
+  $("tl-zobrazeni").setAttribute("aria-label", n ? T.zobrazeni + ", " + t("filtryZapnute", {n: n}) : T.zobrazeni);
 }
 function otevriZobrazeni(otevrit){
   if (!otevrit && barvitVitalitu) otevriVitalitu(false);
@@ -1680,7 +1686,7 @@ function kodVyberu(){
 function zapisOdkaz(){
   const k = kodVyberu();
   if (decodeURIComponent(location.hash.slice(1)) === k) return;
-  try { history.replaceState(null, "", location.pathname + location.search + (k ? "#" + k : "")); } catch (e) {}
+  try { history.replaceState(null, "", location.pathname + location.search + (k ? "#" + k : "")); obnovOdkazJinam(); } catch (e) {}
 }
 function zrusFiltry(){                    /* odkaz na jazyk, který filtr schovává: filtry pryč */
   rezimZnak = "vse"; povoleneStupne = new Set(VSECHNY_STUPNE);
@@ -1830,7 +1836,7 @@ function ukazKartu(j){
   $("k-plne").hidden = false; $("k-odznak").hidden = true;
   malbaNaKarte(j.id);
   const domov = BOD_ATLASU[j.id] >= 0 ? B[BOD_ATLASU[j.id]] : [0, j.stred[0], j.stred[1]];
-  $("k-kod").textContent = souradnice(domov[1], domov[2]);
+  $("k-kod").textContent = souradnice(domov[1], domov[2]); $("k-kod").classList.add("sour");
   $("k-nazev").textContent = j.n;
   $("k-domaci").textContent = t("domaciJmeno", {x: j.dom});
   const pz = $("k-pozdrav");
@@ -1953,7 +1959,7 @@ function ukazKartuBodu(i){
   otevriKartu("var(--cyan)", "var(--na-cyan)", novy);
   $("k-plne").hidden = true; tlPrehraj.hidden = true;
   const jmeno = jmenoBodu(i);
-  $("k-kod").textContent = BEZ_POLOHY[i] ? T.bezDomova : souradnice(B[i][1], B[i][2]);
+  $("k-kod").textContent = BEZ_POLOHY[i] ? T.bezDomova : souradnice(B[i][1], B[i][2]); $("k-kod").classList.add("sour");
   $("k-nazev").textContent = jmeno;
   $("k-domaci").textContent = jmeno !== B[i][0] ? t("teckaNazev", {x: B[i][0]}) : T.teckaMezinarodni;
   const od = $("k-odznak");
@@ -2121,9 +2127,17 @@ function prelozStranku(){
   if (ARTEFAKT) { zpetna.target = "_blank"; zpetna.rel = "noopener"; }   // v náhledu artefaktu smí ven jen nové okno
   const jiny = T.lang === "cs" ? "en" : "cs";
   odkazJinam.setAttribute("hreflang", jiny); odkazJinam.setAttribute("lang", jiny);
-  if (!ARTEFAKT && location.protocol !== "file:") odkazJinam.setAttribute("href", jiny === "en" ? korenWebu + "en/" : korenWebu);
+  obnovOdkazJinam();
+  /* seznam má o pár položek víc než glóbus teček: srbština a chorvatština jsou v Glottologu jeden jazyk, hmongština několik */
+  $("pocet-pozn").textContent = POLOZEK_SEZNAMU !== POCET_B ? " · " + t("pocetPozn", {g: cislo(POCET_B), n: cislo(POLOZEK_SEZNAMU)}) : "";
+}
+/* odkaz na druhou jazykovou verzi nese i otevřený jazyk (#cs~sk), aby ho šlo otevřít i v novém listu */
+function obnovOdkazJinam(){
+  const jiny = T.lang === "cs" ? "en" : "cs";
+  if (!ARTEFAKT && location.protocol !== "file:") odkazJinam.setAttribute("href", (jiny === "en" ? korenWebu + "en/" : korenWebu) + location.hash);
   else odkazJinam.setAttribute("href", T.lang === VYCHOZI ? puvodniOdkaz : "#");
 }
+window.addEventListener("hashchange", obnovOdkazJinam);
 /* texty na stránce po změně jazyka nebo vzhledu */
 function obnovTexty(){
   prelozStranku();
@@ -2773,7 +2787,7 @@ function ukazSrovnani(){
   otevriKartu(barvaL(a), textL(a), novy);
   kartaHero.classList.add("srovnani");
   $("k-porovnat").hidden = true;
-  $("k-kod").textContent = "⇄ " + T.srovnani;
+  $("k-kod").textContent = "⇄ " + T.srovnani; $("k-kod").classList.remove("sour");
   const dv = prvek("div", "k-dvojice");
   [a, b].forEach(function(L, n){
     if (n) dv.appendChild(prvek("span", "k-mezi", "⇄"));
@@ -3017,7 +3031,7 @@ function ukazVymysleny(id){
   kartaHero.classList.add("vymysleny");
   $("k-porovnat").hidden = true;
   $("k-plne").hidden = false;
-  $("k-kod").textContent = "✦ " + T.vymyslenyJazyk;
+  $("k-kod").textContent = "✦ " + T.vymyslenyJazyk; $("k-kod").classList.remove("sour");
   $("k-nazev").textContent = tj.nazev;
   $("k-domaci").textContent = j.domaci ? t("domaciJmeno", {x: j.domaci}) : "";
   const od = $("k-odznak"); od.hidden = false; od.textContent = tj.dilo;

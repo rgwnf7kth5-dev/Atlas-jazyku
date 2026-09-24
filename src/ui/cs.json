@@ -274,10 +274,10 @@
  "mluvciPozn": "Wikidata{rok}",
  "hudVidet": "vidíš {n} z {m} jazyků",
  "strany": [
-  "S",
-  "J",
-  "V",
-  "Z"
+  "s. š.",
+  "j. š.",
+  "v. d.",
+  "z. d."
  ],
  "pribuzniAtlas": "Příbuzní v atlasu",
  "pribuzniOblouky": "Na glóbu k nim vedou světelné oblouky.",
@@ -292,7 +292,7 @@
  "znakoveVse": "Všechny",
  "znakoveBez": "Bez znakových",
  "znakoveJen": "Jen znakové",
- "znakovePopis": "Znakovými jazyky mluví hlavně neslyšící – rukama, obličejem a celým tělem. Každá země má svůj.",
+ "znakovePopis": "Znakovými jazyky se domlouvají hlavně neslyšící – rukama, obličejem a celým tělem. Nejsou jedním jazykem pro celý svět: mnoho zemí má svůj vlastní, některé i víc, a jejich hranice se s hranicemi států nekryjí.",
  "znakovyCo": "Co je znakový jazyk",
  "znakovyVysvetleni": "Znakový jazyk se nemluví, ale ukazuje – rukama, výrazem obličeje a pohyby těla. Používají ho hlavně neslyšící lidé a jejich rodiny. Není to mluvený jazyk přeložený do rukou: má vlastní slovíčka i vlastní mluvnici.",
  "aesZnak": [
@@ -414,5 +414,12 @@
  "autorJazyka": "Vymyslel",
  "vyznamPozdravu": "Co pozdrav znamená",
  "zJinychSvetu": "✦ Z jiných světů",
- "nareciPozn": "Glottolog je vede jako nářečí, ne jako samostatné jazyky, proto nemají na glóbu vlastní tečku."
+ "nareciPozn": "Glottolog je vede jako nářečí, ne jako samostatné jazyky, proto nemají na glóbu vlastní tečku.",
+ "pocetPozn": "Glottolog: {g} jazyků (srbštinu s chorvatštinou počítá jako jeden, hmongštinu jako několik, proto je v seznamu {n}).",
+ "hledejVymazat": "Vymazat hledání",
+ "preskocit": "Přeskočit na seznam jazyků",
+ "filtryZapnute": "zapnuté filtry: {n}",
+ "nenalezenaNadpis": "Tahle stránka neexistuje",
+ "nenalezenaText": "Možná se v adrese spletlo písmenko. Všech 7 967 jazyků světa ale najdeš na glóbu.",
+ "nenalezenaZpet": "Zpátky na glóbus"
 }

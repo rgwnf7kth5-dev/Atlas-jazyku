@@ -173,7 +173,7 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
   políčka) nebo do hledání (kvůli telefonu), případně odkaz `#eulang`, přeletí glóbus nad Evropu, u všech
   24 úředních jazyků EU (`EU_JAZYKY`) vyskočí jedna po druhé zlaté hvězdičky se jménem (ostatní jména zmizí,
   tečky jazyků EU svítí příznakem 5) a vpravo nahoře se objeví panel s vlající vlajkou EU, jejíž hvězdy
-  naskočí postupně, a se seznamem jazyků. Chorvatština a lotyština v Glottologu tečku nemají, jejich hvězdička
+  naskočí postupně, a se seznamem jazyků. Chorvatština v Glottologu tečku nemá (je pod srbochorvatštinou), její hvězdička
   stojí na `stred` z atlasu a klik na ni funguje přes `EU` (ne přes tečku). Zavírá se křížkem, Escape
   a tlačítkem Celý svět. Barvy vlajky `#003399` a `#FFCC00` jsou oficiální a patří jen sem.
 - **Brána do jiných světů – vymyšlené jazyky** (nápad uživatele 24. 9. 2026): klingonština, quenijština,
@@ -199,6 +199,30 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
   Větve pro přehled: rozbalovat uzel, který nese přes 80 % rodiny (jinak je u indoevropské jediná větev
   „Classical Indo-European“). Náhledy kresli **písmy atlasu** (stáhnout z Google Fonts a vložit přes `@font-face`);
   první náhled se omylem vykreslil náhradním systémovým písmem a vypadal lacině.
+
+## Web: skript zvlášť, přístupnost, vyhledávače (podle dvou hodnocení webu, 24. 9. 2026)
+
+- **Na webu je skript v samostatném souboru** `dist/js/atlas.<otisk>.js` (knihovny + aplikace + data, ~2,4 MB),
+  sdílený českou i anglickou stránkou; jazyk si přečte z `<html lang>`. Otisk v názvu se mění s obsahem, proto
+  `dist/_headers` dovoluje prohlížeči držet ho v mezipaměti natrvalo. Stránky samy mají ~107 kB. Build starý
+  `dist/js/` maže. **Artefakt zůstává jeden soubor** se vším vloženým (`--artefakt`).
+- Build vyrábí i `robots.txt`, `sitemap.xml` (obě verze s hreflang) a dvojjazyčnou `404.html` (texty `nenalezena…`).
+  `theme-color` je zvlášť pro světlý a tmavý vzhled.
+- **Počty**: glóbus má 7 967 teček (jazyky Glottologu), seznam 7 970 položek. Srbštinu a chorvatštinu vede Glottolog
+  jako jeden jazyk a hmongštinu jako několik, atlas je má zvlášť – tečku nemají. Vysvětluje to věta v patičce
+  (`pocetPozn`, počty se dopočítají). Lotyštinu a norštinu vede Glottolog jen jako nářečí (`lvs`, `nob`) svého
+  jazyka; `scripts/glottolog.mjs` proto jazyk atlasu připojí k nadřazené tečce, když na ni nečeká jiný jazyk atlasu.
+- Přepínač English/Česky nese v odkazu i otevřený jazyk (`/en/#cs~sk`, `obnovOdkazJinam`).
+- Přístupnost: odkaz „Přeskočit na seznam jazyků“ (jen přesune fokus, adresu nemění), `<main>`, patička
+  `<footer class="paticka">` (`display:contents`), řádky v panelu Zobrazení mají jméno z `<b>` a popis ze `<small>`
+  (`aria-labelledby` / `aria-describedby`, dřív se slepovaly v „OtáčetZeměkoule…“), odznaky filtrů jsou pro čtečky
+  schované a počet je v `aria-label` tlačítka. Hledání má vlastní křížek `#hledej-x`.
+- Kontrast: `--text3` ve dne `#676D7E` (4,9 : 1 na papíře), v noci `#8494BA` (5,2 : 1). Drobné písmo nejméně ~11 px,
+  čtené poznámky (počet, zdroje, popisy voleb) 12,5 px. Na dotykových displejích mají zoom a křížky 40 px.
+- Souřadnice česky „48,0° s. š. · 2,0° v. d.“ (na kartě malými písmeny, `.kod.sour`).
+- V nočním vzhledu je malba ztlumená (`brightness(.8)`).
+- Francie (`vinice`) má zámek na Loiře (`zamek`: kulaté věže s kuželovými břidlicovými střechami, vikýře) a vlašské
+  topoly (`topol`); cypřiše patří Toskánsku a Provenci.
 
 ## Podrobnosti k tečkám
 

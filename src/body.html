@@ -22,6 +22,7 @@
  <symbol id="i-krizek" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></symbol>
 </svg>
 
+<a class="preskocit" href="#hledej" data-t="preskocit">{{preskocit}}</a>
 <canvas id="hvezdy" aria-hidden="true"></canvas>
 <div class="app">
  <header class="hlava sklo">
@@ -35,7 +36,7 @@
   </button>
  </header>
 
- <div class="mriz">
+ <main class="mriz" id="obsah">
   <section class="scena" id="scena" aria-label="{{scena}}" data-t-aria-label="scena">
    <div class="globus-misto" aria-hidden="true"></div>
    <canvas id="podklad" aria-hidden="true"></canvas>
@@ -63,24 +64,24 @@
      <button class="kolo" id="tl-priblizi" type="button" aria-label="{{priblizit}}" data-t-aria-label="priblizit"><svg aria-hidden="true"><use href="#i-plus"/></svg></button>
     </div>
     <button class="tl" id="tl-strom" type="button" aria-pressed="false" title="{{rodokmenPopis}}" data-t-title="rodokmenPopis"><svg aria-hidden="true"><use href="#i-strom"/></svg><span data-t="rodokmen">{{rodokmen}}</span></button>
-    <button class="tl" id="tl-zobrazeni" type="button" aria-expanded="false" aria-controls="panel-zobrazeni" title="{{zobrazeniPopis}}" data-t-title="zobrazeniPopis"><svg aria-hidden="true"><use href="#i-nastaveni"/></svg><span data-t="zobrazeni">{{zobrazeni}}</span><b class="odznak-filtr" id="zobrazeni-pocet" hidden></b></button>
+    <button class="tl" id="tl-zobrazeni" type="button" aria-expanded="false" aria-controls="panel-zobrazeni" title="{{zobrazeniPopis}}" data-t-title="zobrazeniPopis"><svg aria-hidden="true"><use href="#i-nastaveni"/></svg><span data-t="zobrazeni">{{zobrazeni}}</span><b class="odznak-filtr" id="zobrazeni-pocet" hidden aria-hidden="true"></b></button>
    </div>
    <div class="panel-zobrazeni sklo" id="panel-zobrazeni" hidden>
     <div id="pz-hlavni">
      <div class="vp-hlava"><strong data-t="zobrazeni">{{zobrazeni}}</strong>
       <button class="zavrit" id="zobrazeni-zavrit" type="button" aria-label="{{zavritPanel}}" data-t-aria-label="zavritPanel"><svg aria-hidden="true"><use href="#i-krizek"/></svg></button></div>
-     <button class="volba-radek" id="tl-otacet" type="button" aria-pressed="false"><svg aria-hidden="true"><use href="#i-otacet"/></svg><span><b data-t="otacet">{{otacet}}</b><small data-t="otacetPopis">{{otacetPopis}}</small></span><i class="spinac" aria-hidden="true"></i></button>
-     <button class="volba-radek" id="tl-jmena" type="button" aria-pressed="true"><svg aria-hidden="true"><use href="#i-jmena"/></svg><span><b data-t="jmena">{{jmena}}</b><small data-t="jmenaPopis">{{jmenaPopis}}</small></span><i class="spinac" aria-hidden="true"></i></button>
+     <button class="volba-radek" id="tl-otacet" type="button" aria-pressed="false" aria-labelledby="n-otacet" aria-describedby="p-otacet"><svg aria-hidden="true"><use href="#i-otacet"/></svg><span><b id="n-otacet" data-t="otacet">{{otacet}}</b> <small id="p-otacet" data-t="otacetPopis">{{otacetPopis}}</small></span><i class="spinac" aria-hidden="true"></i></button>
+     <button class="volba-radek" id="tl-jmena" type="button" aria-pressed="true" aria-labelledby="n-jmena" aria-describedby="p-jmena"><svg aria-hidden="true"><use href="#i-jmena"/></svg><span><b id="n-jmena" data-t="jmena">{{jmena}}</b> <small id="p-jmena" data-t="jmenaPopis">{{jmenaPopis}}</small></span><i class="spinac" aria-hidden="true"></i></button>
      <div class="volba-oddil">
       <p class="volba-nadpis"><svg aria-hidden="true"><use href="#i-ruka"/></svg><b data-t="znakoveSkupina">{{znakoveSkupina}}</b></p>
-      <div class="segment" role="group" aria-label="{{znakoveSkupina}}" data-t-aria-label="znakoveSkupina">
+      <div class="segment" role="group" aria-label="{{znakoveSkupina}}" aria-describedby="p-znakove" data-t-aria-label="znakoveSkupina">
        <button type="button" data-znak="vse" aria-pressed="true" data-t="znakoveVse">{{znakoveVse}}</button>
        <button type="button" data-znak="bez" aria-pressed="false" data-t="znakoveBez">{{znakoveBez}}</button>
        <button type="button" data-znak="jen" aria-pressed="false" data-t="znakoveJen">{{znakoveJen}}</button>
       </div>
-      <small class="volba-pozn" data-t="znakovePopis">{{znakovePopis}}</small>
+      <small class="volba-pozn" id="p-znakove" data-t="znakovePopis">{{znakovePopis}}</small>
      </div>
-     <button class="volba-radek dal" id="tl-vitalita" type="button" aria-expanded="false" aria-controls="vitalita-panel"><svg aria-hidden="true"><use href="#i-vitalita"/></svg><span><b data-t="vitalita">{{vitalita}}</b><small data-t="vitalitaPopis">{{vitalitaPopis}}</small></span><b class="odznak-filtr" id="vitalita-pocet" hidden></b><svg class="sipka-dal" aria-hidden="true"><use href="#i-dal"/></svg></button>
+     <button class="volba-radek dal" id="tl-vitalita" type="button" aria-expanded="false" aria-controls="vitalita-panel" aria-labelledby="n-vitalita" aria-describedby="p-vitalita"><svg aria-hidden="true"><use href="#i-vitalita"/></svg><span><b id="n-vitalita" data-t="vitalita">{{vitalita}}</b> <small id="p-vitalita" data-t="vitalitaPopis">{{vitalitaPopis}}</small></span><b class="odznak-filtr" id="vitalita-pocet" hidden aria-hidden="true"></b><svg class="sipka-dal" aria-hidden="true"><use href="#i-dal"/></svg></button>
     </div>
     <div class="vitalita-panel" id="vitalita-panel" hidden>
      <div class="vp-hlava"><button class="zpet" id="vitalita-zavrit" type="button" aria-label="{{vitalitaZavrit}}" data-t-aria-label="vitalitaZavrit"><svg aria-hidden="true"><use href="#i-zpet"/></svg></button><strong data-t="vitalitaNadpis">{{vitalitaNadpis}}</strong></div>
@@ -145,6 +146,7 @@
     <label class="pole">
      <svg aria-hidden="true"><use href="#i-lupa"/></svg>
      <input id="hledej" type="search" placeholder="{{hledejPlaceholder}}" aria-label="{{hledejPopisek}}" data-t-placeholder="hledejPlaceholder" data-t-aria-label="hledejPopisek">
+     <button class="hledej-x" id="hledej-x" type="button" hidden aria-label="{{hledejVymazat}}" title="{{hledejVymazat}}" data-t-aria-label="hledejVymazat" data-t-title="hledejVymazat"><svg aria-hidden="true"><use href="#i-krizek"/></svg></button>
     </label>
     <div class="razeni segment" role="group" aria-label="{{radit}}" data-t-aria-label="radit">
      <button type="button" data-razeni="rodiny" aria-pressed="true" data-t="raditRodiny">{{raditRodiny}}</button>
@@ -154,9 +156,11 @@
     <p class="pocet" id="pocet"></p>
    </div>
    <div class="seznam" id="seznam"></div>
+   <footer class="paticka">
    <p class="zpetna"><svg aria-hidden="true"><use href="#i-dopis"/></svg><span><span data-t="zpetna">{{zpetna}}</span>
     <a id="zpetna-odkaz" href="mailto:{{zpetnaAdresa}}" title="{{zpetnaPopis}}" data-t-title="zpetnaPopis">{{zpetnaAdresa}}</a></span></p>
-   <p class="zdroje" data-t="zdroje">{{zdroje}}</p>
+   <p class="zdroje"><span data-t="zdroje">{{zdroje}}</span><span id="pocet-pozn"></span></p>
+   </footer>
   </aside>
- </div>
+ </main>
 </div>
