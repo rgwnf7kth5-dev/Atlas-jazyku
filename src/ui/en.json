@@ -371,5 +371,9 @@
  "stromRodina": "Family",
  "stromCely": "Whole tree",
  "stromNapoveda": "At the bottom is the common ancestor of the whole family, and the languages sit at the ends of the branches. Each ring is a place where a language split into several; the thicker the branch, the more languages grew from it. Big dots have a greeting. Drag to move, scroll or pinch to zoom, click a branch or a language.",
- "stromUkazat": "Show in the family tree"
+ "stromUkazat": "Show in the family tree",
+ "euNadpis": "The 24 official languages of the European Union",
+ "euText": "You found the secret flag! The gold stars on the globe mark all 24 official EU languages. Click any of them.",
+ "euZavrit": "Close",
+ "euVlajka": "Flag of the European Union"
 }

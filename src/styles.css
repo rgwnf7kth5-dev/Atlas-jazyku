@@ -113,6 +113,22 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
 .strom-napoveda{position:absolute; z-index:5; left:18px; top:16px; max-width:min(330px,40%); margin:0; font-size:.76rem; line-height:1.45; color:var(--text2); pointer-events:none;
   padding:8px 12px; border-radius:14px; background:var(--sklo-tl); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border:1px solid var(--linka)}
 .scena:has(.karta:not([hidden])) .strom-napoveda{display:none}
+/* velikonoční vajíčko „eulang“: panel s vlajkou EU; hvězdičky vlajky naskočí jedna po druhé, vlajka vlaje */
+.scena.rezim-eu :is(.legenda,.napoveda){display:none}
+.eu-panel{position:absolute; z-index:7; top:16px; right:16px; width:min(350px, 44%); display:grid; grid-template-columns:auto 1fr auto; gap:6px 12px;
+  align-items:start; padding:12px; border-radius:20px; animation:eu-in .45s cubic-bezier(.2,.9,.3,1.2)}
+@keyframes eu-in{from{opacity:0; transform:translateY(-14px) scale(.92)}}
+.eu-vlajka{width:84px; height:56px; border-radius:6px; box-shadow:0 8px 22px -8px rgba(0,30,120,.6); transform-origin:left center; animation:eu-vlni 3.2s ease-in-out infinite}
+@keyframes eu-vlni{0%,100%{transform:perspective(300px) rotateY(0) skewY(0)} 50%{transform:perspective(300px) rotateY(-14deg) skewY(-2deg)}}
+.eu-h{transform-box:fill-box; transform-origin:center; animation:eu-hv .5s cubic-bezier(.3,1.6,.5,1) calc(var(--i) * 80ms + .25s) both}
+@keyframes eu-hv{from{opacity:0; transform:scale(0) rotate(-140deg)}}
+.eu-text strong{display:block; font-family:var(--pismo-nadpis); font-size:.95rem; line-height:1.2; color:var(--text)}
+.eu-text p{margin:4px 0 0; font-size:.76rem; line-height:1.4; color:var(--text2)}
+.eu-panel .zavrit{grid-column:3}
+.eu-jazyky{grid-column:1 / -1; display:flex; flex-wrap:wrap; gap:5px; max-height:132px; overflow:auto; scrollbar-width:thin}
+.eu-jazyky button{font:inherit; font-size:.74rem; font-weight:600; padding:4px 10px; border-radius:999px; cursor:pointer; color:#003399;
+  background:#FFCC00; border:1px solid #E0B000}
+.eu-jazyky button:hover{background:#FFE066}
 .tl-rodokmen{display:inline-flex; align-items:center; gap:8px; margin-top:12px; padding:8px 15px; border-radius:999px; cursor:pointer;
   border:1px solid var(--sklo-okraj); background:var(--plocha); color:var(--text); font:inherit; font-size:.8rem; font-weight:600}
 .tl-rodokmen svg{width:16px; height:16px; color:var(--cyan)}
@@ -445,6 +461,11 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
   .dok .zoom-hod{display:none}
   .panel-zobrazeni{position:relative; left:auto; bottom:auto; transform:none; width:auto; max-height:none; margin:0 12px 12px; animation:none}
   .strom-hlava{top:8px; left:8px; right:8px; max-width:none; justify-content:space-between}
+  .eu-panel{top:8px; left:8px; right:8px; width:auto; padding:9px; gap:4px 10px}
+  .eu-vlajka{width:60px; height:40px}
+  .eu-jazyky{display:none}
+  .eu-text p{display:none}                /* na telefonu jen nadpis, ať panel nezakrývá Evropu */
+  .eu-text strong{font-size:.88rem}
   .strom-hlava select{max-width:none; flex:1}
   .strom-napoveda{position:static; max-width:none; margin:0 12px 10px; order:5}
   /* karta jako list, který vyjede zespodu; tažením nahoru se roztáhne */

@@ -371,5 +371,9 @@
  "stromRodina": "Rodina",
  "stromCely": "Celý strom",
  "stromNapoveda": "Dole je společný předek celé rodiny, na koncích větví jsou jednotlivé jazyky. Každý kroužek je místo, kde se jazyk rozdělil na víc jazyků; čím tlustší větev, tím víc jazyků z ní vyrostlo. Velké tečky mají pozdrav. Táhni pro posun, kolečkem nebo dvěma prsty přibliž, klikni na větev nebo jazyk.",
- "stromUkazat": "Ukázat v rodokmenu"
+ "stromUkazat": "Ukázat v rodokmenu",
+ "euNadpis": "24 úředních jazyků Evropské unie",
+ "euText": "Našel jsi tajnou vlajku! Zlaté hvězdičky na glóbu ukazují všech 24 úředních jazyků EU. Klikni na kteroukoli.",
+ "euZavrit": "Zavřít",
+ "euVlajka": "Vlajka Evropské unie"
 }

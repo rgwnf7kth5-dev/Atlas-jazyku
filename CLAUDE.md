@@ -126,6 +126,13 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
   Příbuzní tlačítko „Ukázat v rodokmenu“ (`tlacitkoRodokmenu`). Filtry (znakové, vitalita) platí i ve stromu.
   Názvy větví jsou z Glottologu anglicky; české překlady hlavních větví jsou v `data/glottolog-branches.cs.json`
   (validace hlídá, že větev v Glottologu existuje). V české verzi se u větví ukazují popisky jen přeložených větví.
+- **Velikonoční vajíčko „eulang“** (přání uživatele 24. 9. 2026): napsání „eulang“ kdekoli na stránce (mimo
+  políčka) nebo do hledání (kvůli telefonu), případně odkaz `#eulang`, přeletí glóbus nad Evropu, u všech
+  24 úředních jazyků EU (`EU_JAZYKY`) vyskočí jedna po druhé zlaté hvězdičky se jménem (ostatní jména zmizí,
+  tečky jazyků EU svítí příznakem 5) a vpravo nahoře se objeví panel s vlající vlajkou EU, jejíž hvězdy
+  naskočí postupně, a se seznamem jazyků. Chorvatština a lotyština v Glottologu tečku nemají, jejich hvězdička
+  stojí na `stred` z atlasu a klik na ni funguje přes `EU` (ne přes tečku). Zavírá se křížkem, Escape
+  a tlačítkem Celý svět. Barvy vlajky `#003399` a `#FFCC00` jsou oficiální a patří jen sem.
 - Pořád platí: žádný satelit, prstenec, rohy zaměřovače ani sbírka pozdravů.
 
 ## Podrobnosti k tečkám

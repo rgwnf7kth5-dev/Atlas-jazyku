@@ -694,7 +694,7 @@ let dulezite = [];                                   // vybraný jazyk a příbu
 function kresliPopisky(){
   const c = ctxPopisky;
   c.clearRect(0, 0, sirka, vyska);
-  if (!popiskyZapnute) return;
+  if (!popiskyZapnute || eu) return;       // v režimu EU mají jména jen jazyky se zlatou hvězdičkou
   const vsechny = zoom >= POPISKY_OD;
   if (!vsechny && !dulezite.length) return;
   const vel = Math.min(11.5, 9.5 + Math.max(0, zoom - POPISKY_OD) * 0.4);
@@ -703,7 +703,7 @@ function kresliPopisky(){
   if (obsazeno.length < cw * ch) obsazeno = new Uint8Array(cw * ch); else obsazeno.fill(0, 0, cw * ch);
   umisteno.length = 0;
   const zkus = function(i, vetsi){
-    if (!bVid[i]) return;
+    if (!bVid[i] || (eu && EU_BOD[i])) return;       // jazyky EU mají jméno u zlaté hvězdičky
     const kk = vetsi ? k * 1.18 : k, w = sirka10[i] * kk, x = bPx[i] + (vetsi ? 23 : rb + 4), y = bPy[i];
     if (x < 2 || y < vys || y > vyska - vys || x + w > sirka - 2) return;
     const x0 = Math.max(0, ((bPx[i] - rb - 2) / BUNKA) | 0), x1 = ((x + w + 3) / BUNKA) | 0;
@@ -838,6 +838,39 @@ function kresliPopredi(cas){
     }
   });
 
+  if (eu) {                             /* zlaté hvězdičky jazyků EU, vyskakují jedna po druhé */
+    const obsazene = [];
+    c.font = "700 11.5" + PISMO; c.textBaseline = "middle"; c.lineJoin = "round";
+    EU.forEach(function(x, k){
+      x.sx = -1;
+      const v = x.v;
+      if (sf0 * v[2] + cf0 * (v[0] * cl0 + v[1] * sl0) <= 0.03) return;
+      const vstup = eu.od < 0 ? 0 : bezPohybu.matches || !eu.od ? 1 : Math.max(0, Math.min(1, (cas - eu.od - k * 55) / 420));
+      if (!vstup) return;
+      promitni(v, p);
+      x.sx = p[0]; x.sy = p[1];
+      const e = 1 + 2.7 * Math.pow(vstup - 1, 3) + 1.7 * Math.pow(vstup - 1, 2);     // mírné přeskočení
+      const r = 8 * e;
+      c.beginPath();
+      for (let n = 0; n < 10; n++) {
+        const rr = n % 2 ? r * 0.42 : r, a = -Math.PI / 2 + n * Math.PI / 5 + (1 - vstup) * 2.4;
+        if (n) c.lineTo(p[0] + rr * Math.cos(a), p[1] + rr * Math.sin(a)); else c.moveTo(p[0] + rr * Math.cos(a), p[1] + rr * Math.sin(a));
+      }
+      c.closePath();
+      c.fillStyle = "#FFCC00"; c.fill(); c.lineWidth = 1.6; c.strokeStyle = "#003399"; c.stroke();
+      if (vstup < 1) return;
+      const jm = PODLE_ID[x.id].n, w = c.measureText(jm).width;
+      const moznosti = [[p[0] + 12, p[1]], [p[0] - 12 - w, p[1]], [p[0] - w / 2, p[1] - 16], [p[0] - w / 2, p[1] + 16]];
+      for (let m2 = 0; m2 < moznosti.length; m2++) {
+        const tx0 = moznosti[m2][0], ty = moznosti[m2][1], box = [tx0 - 3, ty - 8, tx0 + w + 3, ty + 8];
+        if (obsazene.some(function(o){ return box[0] < o[2] && box[2] > o[0] && box[1] < o[3] && box[3] > o[1]; })) continue;
+        obsazene.push(box);
+        c.lineWidth = 3.2; c.strokeStyle = barvy["popisek-lem"]; c.strokeText(jm, tx0, ty);
+        c.fillStyle = barvy.popisek; c.fillText(jm, tx0, ty);
+        break;
+      }
+    });
+  }
   if (vybrany) {                        /* zaměřovač na vybraném místě */
     const hlavni = vybrany.typ === "atlas" ? BOD_ATLASU[vybrany.id] : vybrany.i;    // zaměřovač na domovské tečce jazyka
     const v = hlavni >= 0 ? vektor(B[hlavni][1], B[hlavni][2]) : vektor(vybrany.stred[0], vybrany.stred[1]); v.push(1);
@@ -865,7 +898,8 @@ let zivoDo = 0, spi = false;
 function ozivit(){ zivoDo = performance.now() + 20000; }
 function animujePopredi(cas){
   if (bezPohybu.matches) return false;
-  return pulsDo > cas || (cas < zivoDo && oblouky.length > 0) || (odhaleniOd > 0 && cas - odhaleniOd < 1400);
+  return pulsDo > cas || (cas < zivoDo && oblouky.length > 0) || (odhaleniOd > 0 && cas - odhaleniOd < 1400) ||
+    (eu && (eu.od < 0 || (eu.od > 0 && cas - eu.od < EU.length * 55 + 700)));
 }
 
 /* ---------- hvězdné nebe za stránkou (kreslí se jen při změně velikosti) ---------- */
@@ -908,6 +942,7 @@ function obnovPriznaky(){
     nastavOblouky([B[vybrany.i][1], B[vybrany.i][2]], pribuzni);
   }
   if (zeme) zeme.body.forEach(function(i){ if (!zakladJaz[i]) zakladJaz[i] = 5; });
+  if (eu) EU.forEach(function(x){ if (x.i >= 0 && !zakladJaz[x.i]) zakladJaz[x.i] = 5; });
   for (let i = 0; i < POCET_B; i++) if (skryty[i]) zakladJaz[i] = 4;
   fJaz.set(zakladJaz);
   if (zvyraznenyBod >= 0) fJaz[zvyraznenyBod] = 3;
@@ -989,7 +1024,7 @@ function smycka(cas){
       zoom = prechod.z2 * Math.pow(prechod.k2 / prechod.z2, e) * Math.exp(-(prechod.skok || 0) * Math.sin(Math.PI * k));
       uplatniZoom();
     }
-    if (k >= 1) { const let2 = prechod.delka > 500; prechod = null; if (let2) pulsDo = cas + 2600; if (odhaleniOd < 0) odhaleniOd = cas; }
+    if (k >= 1) { const let2 = prechod.delka > 500; prechod = null; if (let2) pulsDo = cas + 2600; if (odhaleniOd < 0) odhaleniOd = cas; if (eu && eu.od < 0) eu.od = cas; }
     zmena = true;
   } else if (autoOtaceni && !tahne) {
     rot[0] = (rot[0] + dt * 0.006 / zoom) % 360;
@@ -1110,6 +1145,16 @@ function najedNaBod(e){
 const okno = $("zeme-okno");
 /* ---------- země: všechny jazyky státu z rejstříku, na přání rozsvícené na glóbu ---------- */
 let zeme = null;                          // {f: tvar státu, body: tečky jeho jazyků}
+/* velikonoční vajíčko: napsáním „eulang“ se rozsvítí 24 úředních jazyků EU a objeví se vlajka EU */
+const EU_JAZYKY = ["bg", "cs", "da", "de", "el", "en", "es", "et", "fi", "fr", "ga", "hr", "hu", "it", "lt", "lv", "mt", "nl", "pl", "pt", "ro", "sk", "sl", "sv"];
+const EU_BOD = new Uint8Array(POCET_B);
+const EU = EU_JAZYKY.filter(function(id){ return PODLE_ID[id]; }).map(function(id){
+  const i = BOD_ATLASU[id], j = PODLE_ID[id];                 // chorvatština a lotyština tečku nemají: poloha z atlasu
+  if (i >= 0) EU_BOD[i] = 1;
+  const v = i >= 0 ? vektor(B[i][1], B[i][2]) : vektor(j.stred[0], j.stred[1]); v.push(1);
+  return {id: id, i: i, v: v, sx: -1, sy: -1};
+});
+let eu = null;                            // {od: kdy začaly vyskakovat hvězdičky; -1 = čeká se na přílet}
 function bodyVeStatu(nazev){
   const kod = PD.mapaStatu && PD.mapaStatu[nazev];
   if (!kod) return null;
@@ -1136,6 +1181,10 @@ function zhasniZemi(){ if (!zeme) return; zeme = null; if (globusOk) obnovPrizna
 function klikDoMapy(e){
   const r = platno.getBoundingClientRect();
   const mx = e.clientX - r.left, my = e.clientY - r.top;
+  if (eu) {                                   // hvězdička jazyka EU má přednost (chorvatština a lotyština tečku nemají)
+    const h = EU.filter(function(x){ return x.sx >= 0 && Math.hypot(x.sx - mx, x.sy - my) < 13; })[0];
+    if (h) { okno.hidden = true; vyber(h.id); return; }
+  }
   const i = nejblizsiBod(mx, my, 11);
   if (i >= 0) { okno.hidden = true; vyberBod(i); return; }
   const bod = proj.invert([mx, my]);
@@ -1226,6 +1275,7 @@ function vyberBod(i){
 }
 function odznac(){
   vybrany = null; zeme = null; prechod = null; ozivit(); zapisOdkaz();
+  if (eu) ukonciEU(true);
   karta.hidden = true; delete karta.dataset.jazyk; $("tl-cely").hidden = true;
   if (globusOk) { obnovPriznaky(); spoctiPosun(); plynulyZoom(1); }
   okno.hidden = true; bublinaBod.hidden = true;
@@ -1376,6 +1426,7 @@ function zrusFiltry(){                    /* odkaz na jazyk, který filtr schov�
 function prectiOdkaz(){
   const h = decodeURIComponent(location.hash.slice(1));
   if (!h || h === kodVyberu()) return;
+  if (h.toLowerCase() === "eulang") { spustEU(); return; }
   if (PODLE_ID[h]) { if (atlasSkryty(PODLE_ID[h])) zrusFiltry(); vyber(h); }
   else if (PODLE_KODU.has(h)) { const i = PODLE_KODU.get(h); if (skryty[i]) zrusFiltry(); vyberBod(i); }
 }
@@ -1765,6 +1816,7 @@ function obnovTexty(){
   else if (vybrany && vybrany.typ === "rejstrik") ukazKartuBodu(vybrany.i);
   $("napoveda").textContent = vybrany ? tx("napovedaVyber") : T.napovedaStart;
   if (strom) strom.texty();
+  if (eu) postavEuPanel();
 }
 function prepniJazyk(lang){
   T = UI[lang]; STATY = STATY_VSE[lang];
@@ -2216,6 +2268,56 @@ var strom = (function(){   // var: filtry a texty se na něj ptají dřív, než
     },
     zavrenaKarta: function(){ if (zapnuto) probud(); }
   };
+})();
+/* ---------- velikonoční vajíčko „eulang“ ---------- */
+function postavEuPanel(){
+  const el = $("eu-jazyky"); el.textContent = "";
+  EU.map(function(x){ return PODLE_ID[x.id]; }).sort(function(a, b){ return a.n.localeCompare(b.n, T.locale); }).forEach(function(j){
+    const b = prvek("button", null, j.n); b.type = "button";
+    b.addEventListener("click", function(){ vyber(j.id); });
+    el.appendChild(b);
+  });
+}
+function spustEU(){
+  if (strom && strom.zapnuto) strom.prepni(false);
+  if (vybrany) { vybrany = null; karta.hidden = true; delete karta.dataset.jazyk; oznacTlacitka(null); }
+  zeme = null; okno.hidden = true; bublinaBod.hidden = true;
+  schovejUkazatel(true);
+  eu = {od: -1};
+  postavEuPanel();
+  $("eu-panel").hidden = false; scena.classList.add("rezim-eu");
+  $("tl-cely").hidden = false;
+  if (globusOk && ctx) {
+    obnovPriznaky(); spoctiPosun();
+    letKe(desktop.matches ? [22, 54] : [14, 54], desktop.matches ? 2.4 : 2.6);   // Evropa mimo panel s vlajkou
+    if (bezPohybu.matches) eu.od = 0;
+    ozivit(); potrebaKresli = true;
+  }
+  if (!desktop.matches) window.scrollTo({top: 0, behavior: bezPohybu.matches ? "auto" : "smooth"});
+}
+function ukonciEU(bezZoomu){
+  eu = null;
+  $("eu-panel").hidden = true; scena.classList.remove("rezim-eu");
+  if (globusOk && ctx) { obnovPriznaky(); potrebaKresli = true; ozivit(); }
+  if (!bezZoomu && !vybrany) odznac();
+}
+$("eu-zavrit").addEventListener("click", function(){ ukonciEU(); });
+/* spouštěč: „eulang“ napsané kdekoli na stránce, nebo do hledání (na telefonu jiná klávesnice není) */
+(function(){
+  let napsano = "";
+  document.addEventListener("keydown", function(e){
+    if (e.key === "Escape" && eu) { ukonciEU(); return; }
+    const c = e.target;
+    if (e.ctrlKey || e.metaKey || e.altKey || e.key.length !== 1) return;
+    if (c && (c.tagName === "INPUT" || c.tagName === "TEXTAREA" || c.tagName === "SELECT" || c.isContentEditable)) return;
+    napsano = (napsano + e.key.toLowerCase()).slice(-6);
+    if (napsano === "eulang") { napsano = ""; spustEU(); }
+  });
+  $("hledej").addEventListener("input", function(e){
+    if (bezDiakritiky(e.target.value).trim() !== "eulang") return;
+    e.target.value = ""; postavPolici(""); e.target.blur();
+    spustEU();
+  });
 })();
 function tlacitkoRodokmenu(i){
   if (!strom.ma(i)) return null;
