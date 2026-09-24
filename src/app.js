@@ -712,7 +712,7 @@ function kresliPopisky(){
     for (let yy = y0; yy <= y1; yy++) { const r = yy * cw; for (let xx = x0; xx <= x1; xx++) obsazeno[r + xx] = 1; }
     umisteno.push(i, x, y, vetsi ? 1 : 0);
   };
-  dulezite.forEach(function(i, n){ zkus(i, n === 0 && zakladJaz[i] === 1); });
+  dulezite.forEach(function(i, n){ zkus(i, (n === 0 && zakladJaz[i] === 1) || (srovnani && srovnani.b.i === i)); });   // u kroužku druhého jazyka odsazené
   if (vsechny) for (let q = 0; q < POCET_B && umisteno.length < POPISKU_MAX * 4; q++) zkus(poradiPopisku[q], false);
   c.textBaseline = "middle"; c.lineJoin = "round"; c.lineWidth = 3; c.strokeStyle = barvy["popisek-lem"]; c.fillStyle = barvy.popisek;
   [0, 1].forEach(function(velky){
@@ -871,6 +871,15 @@ function kresliPopredi(cas){
       }
     });
   }
+  if (srovnani) {                       /* druhý jazyk srovnání: kroužek v jeho barvě */
+    const v = vektor(srovnani.b.lon, srovnani.b.lat); v.push(1);
+    if (sf0 * v[2] + cf0 * (v[0] * cl0 + v[1] * sl0) > 0.02) {
+      promitni(v, p);
+      c.beginPath(); c.arc(p[0], p[1], 10, 0, 6.283185);
+      c.lineWidth = 4; c.strokeStyle = barvy["zamerovac-lem"]; c.stroke();
+      c.lineWidth = 2; c.strokeStyle = srovnani.b.sk && srovnani.b.sk !== srovnani.a.sk ? barvy["r-" + srovnani.b.sk] : barvy.fialova; c.stroke();
+    }
+  }
   if (vybrany) {                        /* zaměřovač na vybraném místě */
     const hlavni = vybrany.typ === "atlas" ? BOD_ATLASU[vybrany.id] : vybrany.i;    // zaměřovač na domovské tečce jazyka
     const v = hlavni >= 0 ? vektor(B[hlavni][1], B[hlavni][2]) : vektor(vybrany.stred[0], vybrany.stred[1]); v.push(1);
@@ -941,12 +950,11 @@ function obnovPriznaky(){
     dulezite = [vybrany.i].concat(pribuzni);
     nastavOblouky([B[vybrany.i][1], B[vybrany.i][2]], pribuzni);
   }
-  if (srovnani) {                          /* srovnání: místo příbuzných jen oblouk k druhému jazyku */
+  if (srovnani) {                          /* srovnání: jen poloha obou jazyků, žádná čára mezi nimi (přání uživatele) */
     if (vybrany && vybrany.pribuzni) vybrany.pribuzni.forEach(function(k){ if (zakladJaz[k] === 2) zakladJaz[k] = 0; });
     const b = srovnani.b;
     if (b.i >= 0 && !zakladJaz[b.i]) zakladJaz[b.i] = 2;
-    const o = oblouk(vektor(srovnani.a.lon, srovnani.a.lat), vektor(b.lon, b.lat));
-    oblouky = o ? [o] : [];
+    oblouky = [];
     dulezite = [srovnani.a.i, b.i].filter(function(i){ return i >= 0; });
   }
   if (zeme) zeme.body.forEach(function(i){ if (!zakladJaz[i]) zakladJaz[i] = 5; });
