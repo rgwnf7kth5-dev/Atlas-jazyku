@@ -12,7 +12,7 @@ on:
         default: false
   push:
     branches: [redesign-encyklopedie]
-    paths: [scripts/fotky.mjs, data/fotky-opravy.json, .github/workflows/fotky.yml]
+    paths: [scripts/fotky.mjs, scripts/fotky-kandidati.mjs, scripts/fotky-listy.py, data/fotky-opravy.json, .github/workflows/fotky.yml]
 
 permissions:
   contents: write
@@ -32,8 +32,15 @@ jobs:
         with:
           node-version: 22
 
-      - name: Stáhnout fotky z Wikimedia Commons
+      - name: Najít kandidáty (kvalitní fotky míst)
+        run: node scripts/fotky-kandidati.mjs ${{ inputs.znovu && '--znovu' || '' }}
+
+      - name: Stáhnout vybrané fotky
         run: node scripts/fotky.mjs ${{ inputs.znovu && '--znovu' || '' }}
+
+      - name: Přehledové listy pro výběr
+        if: github.ref_name != 'main'
+        run: pip install --quiet pillow && python3 scripts/fotky-listy.py
 
       - name: Přehled vybraných fotek
         run: cat data/fotky-hlaseni.md >> "$GITHUB_STEP_SUMMARY"
@@ -45,7 +52,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          if git diff --quiet -- data static dist && [ -z "$(git ls-files --others --exclude-standard data static dist)" ]; then
+          if git diff --quiet -- data static dist .nahledy-fotek && [ -z "$(git ls-files --others --exclude-standard data static dist .nahledy-fotek)" ]; then
             echo "Fotky se od minula nezměnily."
             exit 0
           fi
@@ -53,7 +60,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           DNES=$(date -u +%Y-%m-%d)
           if [ "$GITHUB_REF_NAME" != "main" ]; then
-            git add data static dist
+            git add -A data static dist .nahledy-fotek
             git commit -m "Fotky na pohlednice z Wikimedia Commons ($DNES)"
             git push origin "HEAD:$GITHUB_REF_NAME"
             exit 0

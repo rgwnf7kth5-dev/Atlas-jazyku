@@ -529,10 +529,7 @@ function kresliBodyGl(){
 const RELIEF = /*__RELIEF__*/null;
 /* fotky na pohlednice z Wikimedia Commons (scripts/fotky.mjs): id jazyka → soubor, autor, licence, zdroj, místo */
 const FOTKY = /*__FOTKY__*/null || {};
-function popisekFotky(f){
-  const misto = T.lang === "cs" ? (f.mistoCs || f.mistoEn) : (f.mistoEn || f.mistoCs);
-  return (misto ? misto + " · " : "") + T.foto + " " + f.autor + ", " + f.licence;
-}
+function popisekFotky(f){ return T.foto + " " + f.autor + ", " + f.licence + " · Wikimedia Commons"; }
 /* pohlednice na kartě: fotka místa, odkud jazyk pochází, s autorem a licencí (CC BY to vyžaduje) */
 function fotkaNaKarte(id){
   const f = id && FOTKY[id], el = $("k-foto"), autor = $("k-foto-autor");
