@@ -2643,6 +2643,74 @@ function ukazSrovnani(){
    „vybraný“ jako skutečný (vybrany zůstává null): nemá tečku, rodinu, vitalitu ani srovnání. */
 let prechodBrany = false;
 function svetVym(id){ return VYMYSLENE.svety.filter(function(s){ return s.id === id; })[0]; }
+/* obrázky na koulích světů: vlastní kresby obecných motivů (čepele, elfský list, svítící rostliny, drak),
+   žádné postavy, znaky ani loga z filmů – ty jsou chráněné autorským právem */
+const OBRAZKY_SVETU = (function(){
+const STIN = (id) => `<radialGradient id="st-${id}" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#fff" stop-opacity=".28"/><stop offset=".45" stop-color="#fff" stop-opacity="0"/><stop offset=".8" stop-color="#000" stop-opacity=".25"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></radialGradient>`;
+function koule(id, pozadi, obsah, defs){
+  return `<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img">
+<defs><clipPath id="kr-${id}"><circle cx="100" cy="100" r="96"/></clipPath>${STIN(id)}${defs||""}</defs>
+<g clip-path="url(#kr-${id})">${pozadi}${obsah}<circle cx="100" cy="100" r="96" fill="url(#st-${id})"/></g>
+<circle cx="100" cy="100" r="95.5" fill="none" stroke="#fff" stroke-opacity=".18"/></svg>`;
+}
+const hvezdy = (n, seed, barva) => { let s = seed, o = ""; for (let i = 0; i < n; i++) { s = (s * 9301 + 49297) % 233280; const x = s / 233280 * 200; s = (s * 9301 + 49297) % 233280; const y = s / 233280 * 110; o += `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${(0.6 + (i % 3) * 0.4).toFixed(1)}" fill="${barva}" opacity=".8"/>`; } return o; };
+
+const QONOS = koule("qonos",
+  `<rect width="200" height="200" fill="url(#qn-nebe)"/><ellipse cx="120" cy="70" rx="90" ry="45" fill="url(#qn-mlha)"/>${hvezdy(22, 7, "#ffd9cc")}
+   <path d="M0 150 L22 118 L38 136 L58 96 L76 128 L96 104 L112 132 L134 92 L152 124 L170 106 L200 140 L200 200 L0 200Z" fill="#2a0906"/>
+   <path d="M0 168 L30 146 L56 162 L84 140 L118 160 L150 142 L176 158 L200 150 L200 200 L0 200Z" fill="#170403"/>`,
+  // dvě zkřížené zahnuté čepele – obecný válečnický motiv
+  `<g transform="translate(100 104)" stroke="#1a0503" stroke-width="2" stroke-linejoin="round">
+     <g transform="rotate(-35)"><path d="M-6 -58 C 14 -40 14 30 -6 52 C 4 30 4 -38 -6 -58Z" fill="url(#qn-kov)"/><rect x="-9" y="52" width="10" height="16" rx="3" fill="#5a1a10"/></g>
+     <g transform="rotate(35) scale(-1 1)"><path d="M-6 -58 C 14 -40 14 30 -6 52 C 4 30 4 -38 -6 -58Z" fill="url(#qn-kov)"/><rect x="-9" y="52" width="10" height="16" rx="3" fill="#5a1a10"/></g>
+   </g>`,
+  `<linearGradient id="qn-nebe" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a0a07"/><stop offset=".6" stop-color="#8e2417"/><stop offset="1" stop-color="#d4502e"/></linearGradient>
+   <radialGradient id="qn-mlha"><stop offset="0" stop-color="#ff9a6a" stop-opacity=".55"/><stop offset="1" stop-color="#ff9a6a" stop-opacity="0"/></radialGradient>
+   <linearGradient id="qn-kov" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f4e6dc"/><stop offset="1" stop-color="#9a8a84"/></linearGradient>`);
+
+const STREDOZEM = koule("stredozem",
+  `<rect width="200" height="200" fill="url(#sz-nebe)"/><circle cx="150" cy="58" r="15" fill="#fff6c8" opacity=".9"/>
+   <path d="M0 122 L34 70 L50 92 L78 48 L104 94 L122 76 L148 112 L200 96 L200 200 L0 200Z" fill="#7d8fa8"/>
+   <path d="M78 48 L88 64 L80 62 L72 66Z M34 70 L42 82 L36 80 L28 84Z" fill="#fff"/>
+   <path d="M0 140 C 40 118 70 134 100 124 C 132 114 160 132 200 120 L200 200 L0 200Z" fill="#4f8a32"/>
+   <path d="M0 162 C 50 146 90 170 130 154 C 160 142 180 154 200 150 L200 200 L0 200Z" fill="#2f6a22"/>
+   <g transform="translate(128 96)"><rect x="-5" y="0" width="10" height="34" fill="#e9e2cf"/><path d="M-8 0 L0 -14 L8 0Z" fill="#6b4c8a"/><rect x="-1.5" y="10" width="3" height="5" fill="#34405a"/></g>`,
+  // elfský list
+  `<g transform="translate(62 118) rotate(-25)"><path d="M0 -34 C 22 -18 22 18 0 36 C -22 18 -22 -18 0 -34Z" fill="url(#sz-list)" stroke="#e9f7c0" stroke-width="1.5"/>
+     <path d="M0 -30 L0 40 M0 -12 L10 -20 M0 -12 L-10 -20 M0 4 L12 -4 M0 4 L-12 -4 M0 20 L10 12 M0 20 L-10 12" stroke="#e9f7c0" stroke-width="1.4" fill="none" stroke-linecap="round"/></g>`,
+  `<linearGradient id="sz-nebe" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9fd0e8"/><stop offset="1" stop-color="#e7f3c8"/></linearGradient>
+   <linearGradient id="sz-list" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b9e07a"/><stop offset="1" stop-color="#4f9a2f"/></linearGradient>`);
+
+const PANDORA = koule("pandora",
+  `<rect width="200" height="200" fill="url(#pd-nebe)"/>${hvezdy(18, 3, "#bff9ff")}
+   <g fill="#0c3a4a"><path d="M40 60 C 60 50 88 52 92 62 C 86 74 70 86 58 84 C 50 80 44 70 40 60Z"/><path d="M120 40 C 140 34 164 38 168 46 C 162 58 146 64 136 62 C 128 58 122 50 120 40Z"/></g>
+   <path d="M62 84 L60 100 M146 62 L148 80" stroke="#8ff5ff" stroke-width="1.5" opacity=".6"/>
+   <path d="M0 150 C 40 136 70 150 110 140 C 150 130 176 146 200 138 L200 200 L0 200Z" fill="#06283a"/>`,
+  // svítící rostliny a poletující semínka
+  `<g stroke-linecap="round" fill="none">
+     <path d="M70 200 C 66 170 78 150 70 128" stroke="#1fd0c8" stroke-width="4"/>
+     <path d="M104 200 C 110 168 96 150 106 118" stroke="#1fd0c8" stroke-width="5"/>
+     <path d="M140 200 C 136 176 148 162 142 142" stroke="#1fd0c8" stroke-width="4"/></g>
+   <g fill="url(#pd-zar)"><circle cx="70" cy="126" r="11"/><circle cx="106" cy="114" r="14"/><circle cx="142" cy="140" r="10"/></g>
+   <g fill="#e6ffe0"><circle cx="70" cy="126" r="3.5"/><circle cx="106" cy="114" r="4.5"/><circle cx="142" cy="140" r="3.2"/></g>
+   <g fill="#d6fff2" opacity=".9"><circle cx="86" cy="94" r="1.8"/><circle cx="124" cy="88" r="1.5"/><circle cx="96" cy="76" r="1.2"/><circle cx="160" cy="112" r="1.6"/><circle cx="50" cy="108" r="1.4"/></g>`,
+  `<linearGradient id="pd-nebe" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#062a44"/><stop offset=".7" stop-color="#0d6d78"/><stop offset="1" stop-color="#23b3a8"/></linearGradient>
+   <radialGradient id="pd-zar"><stop offset="0" stop-color="#b8fff0"/><stop offset=".5" stop-color="#3be0d0" stop-opacity=".8"/><stop offset="1" stop-color="#3be0d0" stop-opacity="0"/></radialGradient>`);
+
+const ESSOS = koule("essos",
+  `<rect width="200" height="200" fill="url(#es-nebe)"/><circle cx="58" cy="70" r="20" fill="#fff1c2" opacity=".95"/>
+   <path d="M0 136 C 30 120 60 128 90 138 C 120 148 150 122 200 130 L200 200 L0 200Z" fill="#d99b52"/>
+   <path d="M0 160 C 40 146 80 166 120 156 C 150 148 176 158 200 152 L200 200 L0 200Z" fill="#b8763a"/>
+   <path d="M0 182 C 50 172 100 188 150 176 C 170 172 186 176 200 174 L200 200 L0 200Z" fill="#8f5526"/>`,
+  // obecný drak
+  `<g transform="translate(118 86) rotate(-8)" fill="#3a1a0c">
+     <path d="M-40 6 C -24 0 -10 2 0 4 C 14 6 26 2 36 -6 L42 -4 L34 4 C 26 12 12 14 0 12 C -14 10 -28 12 -44 18 C -52 22 -60 20 -64 14 C -56 16 -48 12 -40 6Z"/>
+     <path d="M-8 4 C -16 -18 -30 -32 -48 -38 C -40 -28 -40 -22 -44 -16 C -34 -18 -26 -12 -24 -4 C -18 -10 -10 -6 -8 4Z"/>
+     <path d="M8 4 C 6 -20 16 -40 32 -50 C 28 -38 30 -30 36 -24 C 26 -24 22 -16 22 -6 C 16 -10 10 -4 8 4Z"/>
+     <path d="M36 -6 L46 -12 L44 -4 L50 -2 L42 2Z"/></g>`,
+  `<linearGradient id="es-nebe" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2b25a"/><stop offset=".7" stop-color="#ffdca0"/><stop offset="1" stop-color="#ffe9c0"/></linearGradient>`);
+  return {qonos: QONOS, stredozem: STREDOZEM, pandora: PANDORA, essos: ESSOS};
+})();
 function postavBranu(){
   const el = $("brana-svety"); el.textContent = "";
   const zeme = prvek("button", "svet zeme"); zeme.type = "button";
@@ -2655,7 +2723,9 @@ function postavBranu(){
     const d = prvek("div", "svet"); d.dataset.svet = sv.id;
     d.style.setProperty("--k1", sv.barva[0]); d.style.setProperty("--k2", sv.barva[1]); d.style.setProperty("--k3", sv.barva[2]);
     d.style.setProperty("--i", k);
-    d.appendChild(prvek("span", "koule"));
+    const koule = prvek("span", "koule");
+    if (OBRAZKY_SVETU[sv.id]) { koule.classList.add("obrazek"); koule.innerHTML = OBRAZKY_SVETU[sv.id]; koule.firstChild.setAttribute("aria-hidden", "true"); }
+    d.appendChild(koule);
     d.appendChild(prvek("b", null, sv[T.lang].nazev));
     const jz = prvek("div", "svet-jazyky");
     VYMYSLENE.jazyky.filter(function(j){ return j.svet === sv.id; }).forEach(function(j){

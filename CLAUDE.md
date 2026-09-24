@@ -161,6 +161,9 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
   `#mellon` / `#mellon~klingon`, nebo hledání („elf“, „klingon“, „Avatar“, „Hra o trůny“…), které ukáže sekci
   „✦ Z jiných světů“. Glóbus se zmenší a zmizí (CSS přechod pláten, pak se nekreslí), ve hvězdách se vznášejí
   koule světů (vznáší se jen koule, tlačítka stojí – jinak se po nich špatně kliká); na telefonu mřížka.
+  Na koulích jsou vlastní SVG kresby (`OBRAZKY_SVETU`: zkřížené čepele, elfský list s horami a věží, svítící
+  rostliny, drak nad pouští). **Žádné postavy (Klingon, Na'vi…), znaky ani loga z filmů** – jsou chráněné
+  autorským právem a vadily by i v App Storu; uživatel variantu s obecnými motivy schválil.
   Karta vymyšleného jazyka má hologramové záhlaví, štítek „Vymyšlený jazyk“, dílo, svět a autora; `vybrany`
   zůstává null (žádná tečka, rodina, vitalita ani srovnání). Stopy k Bráně jsou na kartách finštiny a velštiny
   (`stopy`). Zajímavosti musí být pravdivé jako u skutečných jazyků.

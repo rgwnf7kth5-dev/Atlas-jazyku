@@ -168,10 +168,12 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
   pointer-events:auto; animation:svet-in .7s cubic-bezier(.2,1.4,.4,1) calc(.35s + var(--i, 0) * .12s) both}
 @keyframes svet-in{from{opacity:0; scale:.2}}
 @keyframes vznaset{50%{translate:0 -9px}}
-.svet .koule{display:block; width:92px; height:92px; border-radius:50%;
+.svet .koule{display:block; width:112px; height:112px; border-radius:50%;
   background:radial-gradient(circle at 34% 30%, var(--k1), var(--k2) 55%, var(--k3));
   box-shadow:0 0 34px -6px var(--k2), inset -12px -14px 26px rgba(0,0,0,.45);
   animation:vznaset 6s ease-in-out calc(var(--i, 0) * -1.4s) infinite}   /* vznáší se jen koule, tlačítka stojí */
+.svet .koule.obrazek{background:none; box-shadow:0 0 34px -6px var(--k2)}
+.svet .koule.obrazek svg{display:block; width:100%; height:100%}
 .svet > b{font-family:var(--pismo-nadpis); font-size:.95rem; color:var(--text); text-shadow:0 1px 8px var(--pozadi, transparent)}
 .svet.zeme{left:20%; top:78%; --k1:#A9E6FF; --k2:#2B6FD6; --k3:#0B2A66; cursor:pointer; border:0; background:none; font:inherit; color:inherit; padding:0}
 .svet.zeme .koule{width:62px; height:62px}
@@ -543,7 +545,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
   .brana-hlava .tl-rodokmen{flex:none}
   .brana-svety{position:static; display:grid; grid-template-columns:1fr 1fr; gap:16px 10px; padding:16px 8px 12px}
   .svet, .svet[data-svet]{position:static; transform:none}
-  .svet .koule{width:66px; height:66px}
+  .svet .koule{width:88px; height:88px}
   .svet.zeme{grid-column:1 / -1; order:9; flex-direction:row; justify-content:center; gap:10px}
   .svet.zeme .koule{width:36px; height:36px}
   .svet-jazyky{max-width:none}
