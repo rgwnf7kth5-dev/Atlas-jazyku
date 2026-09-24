@@ -1,7 +1,7 @@
 # Atlas jazyků – pokyny pro Claude Code
 
 Otáčivý glóbus se všemi jazyky světa pro děti, česky a anglicky. Komunikuj česky.
-Uživatel není programátor a pracuje na Windows: vysvětluj jednoduše a když něco chybí, řekni přesně co a odkud nainstalovat.
+Uživatel není programátor a pracuje na Macu (a iPhonu), ne na Windows: vysvětluj jednoduše a když něco chybí, řekni přesně co a odkud nainstalovat.
 
 ## Příkazy
 
