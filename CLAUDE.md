@@ -280,7 +280,7 @@ Dřívější náhledový artefakt https://claude.ai/artifact/XS67Gsv9d4y2pMu7UW
   **Přání uživatele 24. 9. 2026:** sousední země nesmí mít stejný obrázek („Německo a Francie nemohou mít
   ten samý“), obrázků má být aspoň trojnásobek a mají nést **architektonické znaky země** – typickou lidovou
   a městskou stavbu (hrázděné domy, břidlicové střechy, pagody, mešitové kopule…), ne konkrétní památku.
-  Postup po světadílech, po každém galerie k připomínkám. **Evropa hotová** (47 jazyků, každý jiný obrázek, druhy
+  Postup po světadílech, po každém galerie k připomínkám. **Evropa hotová a na webu (24. 9. 2026)** (47 jazyků, každý jiný obrázek, druhy
   pojmenované podle kraje: `porynsko`, `vinice`, `toskansko`, `tatry`, `maramures`, `laponsko`…). Stavby kreslí
   knihovna v akvarely.js: `dum` (typy sedlo, valba, stit, stupne, plocha, dosky; hrázdění, okenice, komín),
   `kostel` (věže jehlan, barok, ctverec, kampanila, stupne, dreveny), `cibule`, `byzant`, `kyklady`, `hrad`,
