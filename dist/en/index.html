@@ -4146,6 +4146,10 @@ if (globusOk) {
   const vzdalenostPrstu = function(){ const p = Array.from(prsty.values()); return Math.hypot(p[0].x - p[1].x, p[0].y - p[1].y); };
   platno.addEventListener("pointerdown", function(e){
     ozivit();
+    /* První prst nového dotyku (isPrimary) znamená, že žádný jiný na displeji není. Telefon občas zvednutí prstu
+       neohlásí (pod prstem se otevře karta nebo odroluje stránka) a v paměti zůstal „duch“; jeden prst se pak
+       počítal jako dva a glóbus jen přibližoval, místo aby se otáčel (uživatel 24. 9. 2026). */
+    if (e.isPrimary) { prsty.clear(); pinch = null; }
     try { platno.setPointerCapture(e.pointerId); } catch (x) {}
     prsty.set(e.pointerId, {x: e.clientX, y: e.clientY});
     prechod = null;
@@ -4178,6 +4182,7 @@ if (globusOk) {
   };
   platno.addEventListener("pointerup", function(e){ pustPrst(e, true); });
   platno.addEventListener("pointercancel", function(e){ pustPrst(e, false); });
+  platno.addEventListener("lostpointercapture", function(e){ if (prsty.has(e.pointerId)) pustPrst(e, false); });
   platno.addEventListener("pointerleave", function(){
     nastavZvyrazneni(-1);
     $("bublina-bod").hidden = true;
@@ -5344,6 +5349,7 @@ var strom = (function(){   // var: filtry a texty se na něj ptají dřív, než
     cil = [wx - (sx - z.cx) / k2, wy + (sy - z.cy) / k2]; mer = mer2;
   }
   platnoS.addEventListener("pointerdown", function(e){
+    if (e.isPrimary) { prsty.clear(); pinch = null; }   // „duch“ neohlášeného prstu, viz glóbus
     try { platnoS.setPointerCapture(e.pointerId); } catch (x) {}
     prsty.set(e.pointerId, {x: e.clientX, y: e.clientY});
     let_ = null;
@@ -5381,6 +5387,7 @@ var strom = (function(){   // var: filtry a texty se na něj ptají dřív, než
   }
   platnoS.addEventListener("pointerup", konec);
   platnoS.addEventListener("pointercancel", konec);
+  platnoS.addEventListener("lostpointercapture", function(e){ if (prsty.has(e.pointerId)) { prsty.delete(e.pointerId); if (prsty.size < 2) pinch = null; if (!prsty.size) { start = null; tahneS = false; platnoS.classList.remove("tahne"); } } });
   platnoS.addEventListener("pointerleave", function(e){ if (e.pointerType === "mouse" && !prsty.size) nastavNajeto(null); });
   platnoS.addEventListener("wheel", function(e){
     e.preventDefault(); let_ = null;
