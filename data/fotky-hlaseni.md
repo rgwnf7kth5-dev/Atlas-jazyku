@@ -1,165 +1,165 @@
-Fotek: 137 z 163
+Fotek: 151 z 163
 
-- **Čeština** – bez fotky (Czechia Montage.jpg: není na šířku; Czechia Montage.jpg: není na šířku)
-- **Slovenština** – Borsod-Abaúj-Zemplén: [Boldogkő Castle - view from the castle - Hungary.jpg](https://commons.wikimedia.org/wiki/File:Boldogk%C5%91_Castle_-_view_from_the_castle_-_Hungary.jpg) · CC BY-SA 3.0
-- **Polština** – Polsko: [Warsaw Old Town Market Square 10.JPG](https://commons.wikimedia.org/wiki/File:Warsaw_Old_Town_Market_Square_10.JPG) · CC BY-SA 3.0 pl
-- **Ruština** – Rusko: [Kremlin Moscow.jpg](https://commons.wikimedia.org/wiki/File:Kremlin_Moscow.jpg) · CC BY 2.0
-- **Ukrajinština** – Ukrajina: [Maidan Nezalezhnosti view.jpg](https://commons.wikimedia.org/wiki/File:Maidan_Nezalezhnosti_view.jpg) · CC BY-SA 4.0
-- **Běloruština** – Lotyšsko: [Satellite image of Latvia in March 2003.jpg](https://commons.wikimedia.org/wiki/File:Satellite_image_of_Latvia_in_March_2003.jpg) · Public domain
-- **Srbština** – Černá Hora: [R-1 regional road (Montenegro) 07.jpg](https://commons.wikimedia.org/wiki/File:R-1_regional_road_(Montenegro)_07.jpg) · CC BY-SA 4.0
-- **Chorvatština** – Chorvatsko: [Dubrovnik june 2011..JPG](https://commons.wikimedia.org/wiki/File:Dubrovnik_june_2011..JPG) · CC BY-SA 3.0
-- **Slovinština** – Provincie Trieste: [Palazzo Galatti - Piazza Vittorio Veneto 4.jpg](https://commons.wikimedia.org/wiki/File:Palazzo_Galatti_-_Piazza_Vittorio_Veneto_4.jpg) · CC BY-SA 4.0
-- **Bulharština** – Bulharsko: [Rila Monastery, August 2013.jpg](https://commons.wikimedia.org/wiki/File:Rila_Monastery,_August_2013.jpg) · CC BY-SA 3.0
-- **Makedonština** – Veles Municipality: [Veles panoram.JPG](https://commons.wikimedia.org/wiki/File:Veles_panoram.JPG) · CC BY-SA 3.0
-- **Angličtina** – Gibraltar: [Gibraltar aerial view looking northwest.jpg](https://commons.wikimedia.org/wiki/File:Gibraltar_aerial_view_looking_northwest.jpg) · CC BY-SA 2.0
-- **Němčina** – Německo: [Aerial view of Berlin (32881394137).jpg](https://commons.wikimedia.org/wiki/File:Aerial_view_of_Berlin_(32881394137).jpg) · CC BY 2.0
-- **Nizozemština** – Antverpy: [Provinciehuis Antwerpen 2018.jpg](https://commons.wikimedia.org/wiki/File:Provinciehuis_Antwerpen_2018.jpg) · CC BY-SA 4.0
-- **Švédština** – Ostrobotnija: [Hietalahden rantaa.jpg](https://commons.wikimedia.org/wiki/File:Hietalahden_rantaa.jpg) · CC BY-SA 4.0
-- **Norština** – bez fotky (Group portrait of women and children, Granvin. (3613024625).jpg: není na šířku)
-- **Dánština** – Dánsko: [Dannebrog.jpg](https://commons.wikimedia.org/wiki/File:Dannebrog.jpg) · CC BY-SA 2.5
-- **Islandština** – Dánsko: [Dannebrog.jpg](https://commons.wikimedia.org/wiki/File:Dannebrog.jpg) · CC BY-SA 2.5
-- **Afrikánština** – Jihoafrická republika: [Ciudad del Cabo desde Cabeza de León, Sudáfrica, 2018-07-22, DD 34.jpg](https://commons.wikimedia.org/wiki/File:Ciudad_del_Cabo_desde_Cabeza_de_Le%C3%B3n,_Sud%C3%A1frica,_2018-07-22,_DD_34.jpg) · CC BY-SA 4.0
-- **Francouzština** – Monako: [Panorama von Monaco-La Turbie.jpg](https://commons.wikimedia.org/wiki/File:Panorama_von_Monaco-La_Turbie.jpg) · CC BY-SA 3.0
-- **Španělština** – Venezuela: [Embalse la Vueltosa 2022.jpg](https://commons.wikimedia.org/wiki/File:Embalse_la_Vueltosa_2022.jpg) · CC BY-SA 4.0
-- **Portugalština** – Azory: [Açores 2010-07-19 (5047589237).jpg](https://commons.wikimedia.org/wiki/File:A%C3%A7ores_2010-07-19_(5047589237).jpg) · CC BY 2.0
-- **Italština** – San Marino: [View of Mount Titano - San Marino.jpg](https://commons.wikimedia.org/wiki/File:View_of_Mount_Titano_-_San_Marino.jpg) · CC BY-SA 4.0
-- **Rumunština** – Rumunsko: [Bucharest University Square (cropped).jpg](https://commons.wikimedia.org/wiki/File:Bucharest_University_Square_(cropped).jpg) · CC0
-- **Katalánština** – Andorra: [Andorra la Vella - footpath.jpg](https://commons.wikimedia.org/wiki/File:Andorra_la_Vella_-_footpath.jpg) · CC BY-SA 3.0
-- **Řečtina** – Řecko: [The Acropolis and Mount Hymettus from Philopappos Hill on July 18, 2019.jpg](https://commons.wikimedia.org/wiki/File:The_Acropolis_and_Mount_Hymettus_from_Philopappos_Hill_on_July_18,_2019.jpg) · CC BY-SA 4.0
-- **Irština** – Hrabství Mayo: [Beautiful Achill Islands in County Mayo of Ireland.jpg](https://commons.wikimedia.org/wiki/File:Beautiful_Achill_Islands_in_County_Mayo_of_Ireland.jpg) · CC BY-SA 4.0
-- **Velština** – Wales: [Arthog - Barmouth Bridge - 20070915150033.jpg](https://commons.wikimedia.org/wiki/File:Arthog_-_Barmouth_Bridge_-_20070915150033.jpg) · CC BY-SA 4.0
-- **Litevština** – Polsko: [Warsaw Old Town Market Square 10.JPG](https://commons.wikimedia.org/wiki/File:Warsaw_Old_Town_Market_Square_10.JPG) · CC BY-SA 3.0 pl
-- **Lotyština** – Lotyšsko: [Satellite image of Latvia in March 2003.jpg](https://commons.wikimedia.org/wiki/File:Satellite_image_of_Latvia_in_March_2003.jpg) · Public domain
-- **Albánština** – Epirus: [Vikos Gorge.jpg](https://commons.wikimedia.org/wiki/File:Vikos_Gorge.jpg) · CC BY 2.0
-- **Arménština** – bez fotky (místo ani obrázek ve Wikidatech)
-- **Hindština** – Madhjapradéš: [Stupa 1 - West Side - Sanchi Hill 2013-02-21 4311.JPG](https://commons.wikimedia.org/wiki/File:Stupa_1_-_West_Side_-_Sanchi_Hill_2013-02-21_4311.JPG) · CC BY 3.0
-- **Bengálština** – Tripura: [Ujjayanta palace Tripura State Museum Agartala India.jpg](https://commons.wikimedia.org/wiki/File:Ujjayanta_palace_Tripura_State_Museum_Agartala_India.jpg) · CC BY 2.0
-- **Urdština** – Pákistán: [Blue Hour at Pakistan Monument.jpg](https://commons.wikimedia.org/wiki/File:Blue_Hour_at_Pakistan_Monument.jpg) · CC BY-SA 4.0
-- **Pandžábština** – bez fotky (místo ani obrázek ve Wikidatech)
-- **Maráthština** – Maháráštra: [Cave 26, Ajanta.jpg](https://commons.wikimedia.org/wiki/File:Cave_26,_Ajanta.jpg) · CC BY-SA 3.0
-- **Gudžarátština** – Rádžasthán: [Thar desert Rajasthan India.jpg](https://commons.wikimedia.org/wiki/File:Thar_desert_Rajasthan_India.jpg) · CC BY 2.0
-- **Nepálština** – Nepál: [Satellite image of Nepal in October 2002.jpg](https://commons.wikimedia.org/wiki/File:Satellite_image_of_Nepal_in_October_2002.jpg) · Public domain
-- **Sinhálština** – bez fotky (Topography Sri Lanka.jpg: není na šířku; Topography Sri Lanka.jpg: není na šířku)
-- **Perština** – bez fotky (Iran - Location Map (2013) - IRN - UNOCHA.svg: není fotka (image/svg+xml))
-- **Paštština** – Pákistán: [Blue Hour at Pakistan Monument.jpg](https://commons.wikimedia.org/wiki/File:Blue_Hour_at_Pakistan_Monument.jpg) · CC BY-SA 4.0
-- **Kurdština** – Ninive: [Grand mosque of Mosul .jpg](https://commons.wikimedia.org/wiki/File:Grand_mosque_of_Mosul_.jpg) · CC BY-SA 4.0
-- **Baskičtina** – bez fotky (místo ani obrázek ve Wikidatech)
-- **Arabština** – bez fotky (místo ani obrázek ve Wikidatech)
-- **Hebrejština** – bez fotky (Часовая башня султана Абдул Хамида II - panoramio.jpg: není na šířku; Satellite image of Israel in January 2003.jpg: malé rozlišení)
-- **Amharština** – Addis Abeba: [AddisView.jpg](https://commons.wikimedia.org/wiki/File:AddisView.jpg) · CC BY-SA 4.0
-- **Somálština** – Somálsko: [A man carries a huge hammerhead through the streets of Mogadishu.jpg](https://commons.wikimedia.org/wiki/File:A_man_carries_a_huge_hammerhead_through_the_streets_of_Mogadishu.jpg) · CC BY-SA 4.0
-- **Oromština** – Marsabit County: [Marsabit-Moyale Rd.jpg](https://commons.wikimedia.org/wiki/File:Marsabit-Moyale_Rd.jpg) · CC BY 2.0
-- **Hauština** – Nigérie: [The City Gate of Abuja.jpg](https://commons.wikimedia.org/wiki/File:The_City_Gate_of_Abuja.jpg) · CC BY-SA 4.0
-- **Svahilština** – Lamu County: [Lamu, Lamu Island, Kenya.jpg](https://commons.wikimedia.org/wiki/File:Lamu,_Lamu_Island,_Kenya.jpg) · CC BY 2.0
-- **Jorubština** – Osun: [Templo Osun2.jpg](https://commons.wikimedia.org/wiki/File:Templo_Osun2.jpg) · CC BY-SA 3.0
-- **Igboština** – Nigérie: [The City Gate of Abuja.jpg](https://commons.wikimedia.org/wiki/File:The_City_Gate_of_Abuja.jpg) · CC BY-SA 4.0
-- **Zulština** – KwaZulu-Natal: [Monks Cowl (15127602555).jpg](https://commons.wikimedia.org/wiki/File:Monks_Cowl_(15127602555).jpg) · CC BY-SA 2.0
-- **Šonština** – Lusaka Province: [University of Zambia Ridgeway Campus.jpg](https://commons.wikimedia.org/wiki/File:University_of_Zambia_Ridgeway_Campus.jpg) · CC BY-SA 4.0
-- **Wolofština** – bez fotky (místo ani obrázek ve Wikidatech)
-- **Fulbština** – bez fotky (LocationGuinea.svg: není fotka (image/svg+xml); Mali - Location Map (2013) - MLI - UNOCHA.svg: není fotka (image/svg+xml); LocationGuinea.svg: není fotka (image/svg+xml); Guinea-Bissau - Location Map (2013) - GNB - UNOCHA.svg: není fotka (image/svg+xml))
-- **Čínština (mandarínská)** – Šen-si: [ISS016-E-9096 - View of China.jpg](https://commons.wikimedia.org/wiki/File:ISS016-E-9096_-_View_of_China.jpg) · Public domain
-- **Kantonština** – Kuang-tung: [Shenzhen CBD and River.jpg](https://commons.wikimedia.org/wiki/File:Shenzhen_CBD_and_River.jpg) · CC BY 3.0
-- **Barmština** – Myanmar: [@HaNgryBam.jpg](https://commons.wikimedia.org/wiki/File:@HaNgryBam.jpg) · CC BY-SA 4.0
-- **Tibetština** – Tibetská autonomní oblast: [ISS041-E-81025 - View of China.jpg](https://commons.wikimedia.org/wiki/File:ISS041-E-81025_-_View_of_China.jpg) · Public domain
-- **Tamilština** – Tamilnádu: [Tea Fields Nilgiris Ranges Mynala Dec25 A7CR 09866.jpg](https://commons.wikimedia.org/wiki/File:Tea_Fields_Nilgiris_Ranges_Mynala_Dec25_A7CR_09866.jpg) · CC BY-SA 4.0
-- **Telugština** – Ándhrapradéš: [Kambalakonda.jpg](https://commons.wikimedia.org/wiki/File:Kambalakonda.jpg) · Public domain
-- **Japonština** – bez fotky (Satellite image of Japan in May 2003.jpg: není na šířku; Satellite image of Japan in May 2003.jpg: není na šířku)
-- **Korejština** – Jižní Korea: [Seoul (175734251).jpeg](https://commons.wikimedia.org/wiki/File:Seoul_(175734251).jpeg) · CC BY-SA 3.0
-- **Mongolština** – Burjatsko: [Солнечный день на перевале.jpg](https://commons.wikimedia.org/wiki/File:%D0%A1%D0%BE%D0%BB%D0%BD%D0%B5%D1%87%D0%BD%D1%8B%D0%B9_%D0%B4%D0%B5%D0%BD%D1%8C_%D0%BD%D0%B0_%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%B0%D0%BB%D0%B5.jpg) · CC BY-SA 4.0
-- **Gruzínština** – Artvinská provincie: [Districts of Artvin.png](https://commons.wikimedia.org/wiki/File:Districts_of_Artvin.png) · CC BY-SA 4.0
-- **Turečtina** – Turecko: [Historical peninsula and modern skyline of Istanbul.jpg](https://commons.wikimedia.org/wiki/File:Historical_peninsula_and_modern_skyline_of_Istanbul.jpg) · CC0
-- **Ázerbájdžánština** – Kachetie: [Tsinandali Palace.jpg](https://commons.wikimedia.org/wiki/File:Tsinandali_Palace.jpg) · CC BY-SA 2.0
-- **Kazaština** – Navoiyská oblast: [Sentob valley.jpg](https://commons.wikimedia.org/wiki/File:Sentob_valley.jpg) · CC BY-SA 4.0
-- **Uzbečtina** – Daşoguz: [KonyeUrgenchTimurMinaret.jpg](https://commons.wikimedia.org/wiki/File:KonyeUrgenchTimurMinaret.jpg) · CC BY-SA 3.0
-- **Ujgurština** – Sin-ťiang: [Ürümqi skyline, Xinjiang, China, 2004.jpg](https://commons.wikimedia.org/wiki/File:%C3%9Cr%C3%BCmqi_skyline,_Xinjiang,_China,_2004.jpg) · CC BY-SA 3.0
-- **Finština** – Leningradská oblast: [Konevec 2.jpg](https://commons.wikimedia.org/wiki/File:Konevec_2.jpg) · Public domain
-- **Maďarština** – Maďarsko: [20190502 Widok na Budapeszt z Góry Gellerta 1651 2150 DxO.jpg](https://commons.wikimedia.org/wiki/File:20190502_Widok_na_Budapeszt_z_G%C3%B3ry_Gellerta_1651_2150_DxO.jpg) · CC BY-SA 4.0
-- **Estonština** – Estonci: [Eesti rahvarõivad-EE 1.jpg](https://commons.wikimedia.org/wiki/File:Eesti_rahvar%C3%B5ivad-EE_1.jpg) · Public domain
-- **Severní sámština** – Troms: [Arnøyhøgda, Laukslettinden, Tjuvtinden & Rødhetta, 2012 March.jpg](https://commons.wikimedia.org/wiki/File:Arn%C3%B8yh%C3%B8gda,_Laukslettinden,_Tjuvtinden_%26_R%C3%B8dhetta,_2012_March.jpg) · CC BY-SA 3.0
-- **Vietnamština** – Vietnam: [Hanoi Temple of Literature.jpg](https://commons.wikimedia.org/wiki/File:Hanoi_Temple_of_Literature.jpg) · CC BY-SA 3.0
-- **Khmerština** – Kambodža: [Angkor Wat W-Seite.jpg](https://commons.wikimedia.org/wiki/File:Angkor_Wat_W-Seite.jpg) · CC BY-SA 3.0
-- **Thajština** – Thajsko: [Temple of the Emerald of buddha or Wat Phra Kaew (cropped).jpg](https://commons.wikimedia.org/wiki/File:Temple_of_the_Emerald_of_buddha_or_Wat_Phra_Kaew_(cropped).jpg) · CC BY-SA 4.0
-- **Laoština** – Isán: [ปราสาทรเขาพนมรุ้งIDSC 0827.jpg](https://commons.wikimedia.org/wiki/File:%E0%B8%9B%E0%B8%A3%E0%B8%B2%E0%B8%AA%E0%B8%B2%E0%B8%97%E0%B8%A3%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B8%9E%E0%B8%99%E0%B8%A1%E0%B8%A3%E0%B8%B8%E0%B9%89%E0%B8%87IDSC_0827.jpg) · CC BY-SA 4.0
-- **Indonéština** – Austrálie: [Australia satellite plane.jpg](https://commons.wikimedia.org/wiki/File:Australia_satellite_plane.jpg) · Public domain
-- **Malajština** – Brunej: [BN-bsb-jame-asr-hassanil-m-2.jpg](https://commons.wikimedia.org/wiki/File:BN-bsb-jame-asr-hassanil-m-2.jpg) · CC BY-SA 3.0
-- **Javánština** – bez fotky (místo ani obrázek ve Wikidatech)
-- **Tagalog (filipínština)** – bez fotky (místo ani obrázek ve Wikidatech)
-- **Malgaština** – bez fotky (Satellite image of Madagascar in September 2003.jpg: není na šířku)
-- **Maorština** – Severní ostrov: [Sailing school - Lake Taupo.jpg](https://commons.wikimedia.org/wiki/File:Sailing_school_-_Lake_Taupo.jpg) · CC BY-SA 3.0 nz
-- **Havajština** – Havaj: [Hawaje-NoRedLine.jpg](https://commons.wikimedia.org/wiki/File:Hawaje-NoRedLine.jpg) · Public domain
-- **Fidžijština** – Fidži: [Куинс-роуд, город Нанди (Queens Rd., Nadi).jpg](https://commons.wikimedia.org/wiki/File:%D0%9A%D1%83%D0%B8%D0%BD%D1%81-%D1%80%D0%BE%D1%83%D0%B4,_%D0%B3%D0%BE%D1%80%D0%BE%D0%B4_%D0%9D%D0%B0%D0%BD%D0%B4%D0%B8_(Queens_Rd.,_Nadi).jpg) · CC BY-SA 4.0
-- **Tok Pisin** – Papua Nová Guinea: [Papua new guinea provinces (numbers) 2012.png](https://commons.wikimedia.org/wiki/File:Papua_new_guinea_provinces_(numbers)_2012.png) · CC BY-SA 3.0
-- **Kečuánština** – Cochabamba: [Caudal de ríos de Villa Tunari.jpg](https://commons.wikimedia.org/wiki/File:Caudal_de_r%C3%ADos_de_Villa_Tunari.jpg) · CC BY-SA 4.0
-- **Ajmarština** – Oruro: [Carnavales Oruro dia II (68).JPG](https://commons.wikimedia.org/wiki/File:Carnavales_Oruro_dia_II_(68).JPG) · CC BY 3.0
-- **Guaraní** – bez fotky (místo ani obrázek ve Wikidatech)
-- **Nahuatl** – Puebla: [ISS006-E-26509 - View of Mexico.jpg](https://commons.wikimedia.org/wiki/File:ISS006-E-26509_-_View_of_Mexico.jpg) · Public domain
-- **Grónština** – Grónsko: [Greenland 42.74746W 71.57394N.jpg](https://commons.wikimedia.org/wiki/File:Greenland_42.74746W_71.57394N.jpg) · Public domain
-- **Inuktitut** – Nunavut: [Baffin Island Northeast Coast 1997-08-07.jpg](https://commons.wikimedia.org/wiki/File:Baffin_Island_Northeast_Coast_1997-08-07.jpg) · CC BY-SA 2.5
-- **Kannadština** – Karnátaka: [ISS006-E-16702 - View of India.jpg](https://commons.wikimedia.org/wiki/File:ISS006-E-16702_-_View_of_India.jpg) · Public domain
-- **Malajálamština** – Tamilnádu: [Tea Fields Nilgiris Ranges Mynala Dec25 A7CR 09866.jpg](https://commons.wikimedia.org/wiki/File:Tea_Fields_Nilgiris_Ranges_Mynala_Dec25_A7CR_09866.jpg) · CC BY-SA 4.0
-- **Urijština** – Džhárkhand: [ISS012-E-10332 - View of India.jpg](https://commons.wikimedia.org/wiki/File:ISS012-E-10332_-_View_of_India.jpg) · Public domain
-- **Asámština** – Ásám: [ISS052-E-609 - View of India.jpg](https://commons.wikimedia.org/wiki/File:ISS052-E-609_-_View_of_India.jpg) · Public domain
-- **Sindhština** – Rádžasthán: [Thar desert Rajasthan India.jpg](https://commons.wikimedia.org/wiki/File:Thar_desert_Rajasthan_India.jpg) · CC BY 2.0
-- **Maithilština** – Bihár: [ISS012-E-21740 - View of India.jpg](https://commons.wikimedia.org/wiki/File:ISS012-E-21740_-_View_of_India.jpg) · Public domain
-- **Sundánština** – bez fotky (místo ani obrázek ve Wikidatech)
-- **Cebuánština** – Poloostrov Zamboanga: [Regatta2017.jpg](https://commons.wikimedia.org/wiki/File:Regatta2017.jpg) · CC BY-SA 4.0
-- **Wu (šanghajština)** – Šanghaj: [20191222陆家嘴.jpg](https://commons.wikimedia.org/wiki/File:20191222%E9%99%86%E5%AE%B6%E5%98%B4.jpg) · CC BY-SA 4.0
-- **Minnanština** – Tchaj-nan: [Downtown Tainan(2012).jpg](https://commons.wikimedia.org/wiki/File:Downtown_Tainan(2012).jpg) · CC BY-SA 3.0
-- **Hakkština** – Kuang-tung: [Shenzhen CBD and River.jpg](https://commons.wikimedia.org/wiki/File:Shenzhen_CBD_and_River.jpg) · CC BY 3.0
-- **Čuangština** – Kuang-si: [1 li jiang guilin yangshuo 2011.jpg](https://commons.wikimedia.org/wiki/File:1_li_jiang_guilin_yangshuo_2011.jpg) · CC BY-SA 4.0
-- **Hmongština** – bez fotky (místo ani obrázek ve Wikidatech)
-- **Rwandština** – Rwanda: [An aerial of Kigali Convention Center on June 19, 2019. Photo by Emmanuel Kwizera.jpg](https://commons.wikimedia.org/wiki/File:An_aerial_of_Kigali_Convention_Center_on_June_19,_2019._Photo_by_Emmanuel_Kwizera.jpg) · CC BY-SA 4.0
-- **Gandština** – bez fotky (Buganda map.jpg: vypadá jako mapa nebo znak; Uganda - Location Map (2013) - UGA - UNOCHA.svg: není fotka (image/svg+xml))
-- **Lingalština** – Brazzaville: [Quartier OCH.jpg](https://commons.wikimedia.org/wiki/File:Quartier_OCH.jpg) · CC BY-SA 4.0
-- **Kikongo** – bez fotky (místo ani obrázek ve Wikidatech)
-- **Čičevština** – Central Region: [Lilongwe Banner.png](https://commons.wikimedia.org/wiki/File:Lilongwe_Banner.png) · CC BY-SA 3.0
-- **Tigrinijština** – Tigraj: [Tigray, Ethiopia (8205210356).jpg](https://commons.wikimedia.org/wiki/File:Tigray,_Ethiopia_(8205210356).jpg) · CC BY-SA 2.0
-- **Xhoština** – Quthing District: [Quthing Senqu.jpg](https://commons.wikimedia.org/wiki/File:Quthing_Senqu.jpg) · CC BY-SA 3.0
-- **Sotština** – Svobodný stát: [City hall Bloemfontein.jpg](https://commons.wikimedia.org/wiki/File:City_hall_Bloemfontein.jpg) · CC BY-SA 3.0
-- **Tswanština** – Severozápadní provincie: [OldAnglicanChurchRustenburg 1.JPG](https://commons.wikimedia.org/wiki/File:OldAnglicanChurchRustenburg_1.JPG) · CC BY-SA 4.0
-- **Akanština (twi)** – Ghana: [Beach with palms Ghana.jpg](https://commons.wikimedia.org/wiki/File:Beach_with_palms_Ghana.jpg) · CC BY 2.0
-- **Eveština** – Volta Region: [Volta Region Ghana View from the Togo mountains.jpg](https://commons.wikimedia.org/wiki/File:Volta_Region_Ghana_View_from_the_Togo_mountains.jpg) · CC BY 2.0
-- **Bambarština** – bez fotky (Mali - Location Map (2013) - MLI - UNOCHA.svg: není fotka (image/svg+xml); Ivory Coast - Location Map (2013) - CIV - UNOCHA.svg: není fotka (image/svg+xml); Mali - Location Map (2013) - MLI - UNOCHA.svg: není fotka (image/svg+xml))
-- **Mooré** – Ghana: [Beach with palms Ghana.jpg](https://commons.wikimedia.org/wiki/File:Beach_with_palms_Ghana.jpg) · CC BY 2.0
-- **Tamazight (berberština)** – bez fotky (místo ani obrázek ve Wikidatech)
-- **Kanurijština** – Nigérie: [The City Gate of Abuja.jpg](https://commons.wikimedia.org/wiki/File:The_City_Gate_of_Abuja.jpg) · CC BY-SA 4.0
-- **Maltština** – Malta: [Malta, 2010 - panoramio - Bengt Nyman (23).jpg](https://commons.wikimedia.org/wiki/File:Malta,_2010_-_panoramio_-_Bengt_Nyman_(23).jpg) · CC BY 3.0
-- **Lucemburština** – Lucembursko: [Luxemburg.jpg](https://commons.wikimedia.org/wiki/File:Luxemburg.jpg) · CC BY-SA 3.0
-- **Faerština** – Dánské království: [Kronborg flygfoto 1, 2021.jpg](https://commons.wikimedia.org/wiki/File:Kronborg_flygfoto_1,_2021.jpg) · CC0
-- **Fríština** – bez fotky (Friesland montage image.jpg: není na šířku)
-- **Galicijština** – Galicie: [Cabo Ortegal (Spain).jpg](https://commons.wikimedia.org/wiki/File:Cabo_Ortegal_(Spain).jpg) · CC BY-SA 3.0
-- **Okcitánština** – Midi-Pyrénées: [Geu - Pic du Pibeste - 20150213 (1).jpg](https://commons.wikimedia.org/wiki/File:Geu_-_Pic_du_Pibeste_-_20150213_(1).jpg) · CC BY-SA 4.0
-- **Sardština** – bez fotky (Satellite image of Italy in March 2003.jpg: není na šířku)
-- **Bretonština** – Bretaň: [Satellite picture of Brittany - NASA, 2002.jpg](https://commons.wikimedia.org/wiki/File:Satellite_picture_of_Brittany_-_NASA,_2002.jpg) · Public domain
-- **Skotská gaelština** – Highland: [00 1448 Gairloch - Schottland.jpg](https://commons.wikimedia.org/wiki/File:00_1448_Gairloch_-_Schottland.jpg) · CC BY-SA 4.0
-- **Romština** – Dolj: [Craiova - Centrul.JPG](https://commons.wikimedia.org/wiki/File:Craiova_-_Centrul.JPG) · CC BY-SA 3.0
-- **Jidiš** – Ukrajina: [Maidan Nezalezhnosti view.jpg](https://commons.wikimedia.org/wiki/File:Maidan_Nezalezhnosti_view.jpg) · CC BY-SA 4.0
-- **Čečenština** – Čečensko: [Мечеть "Сердце Чечни".jpg](https://commons.wikimedia.org/wiki/File:%D0%9C%D0%B5%D1%87%D0%B5%D1%82%D1%8C_%22%D0%A1%D0%B5%D1%80%D0%B4%D1%86%D0%B5_%D0%A7%D0%B5%D1%87%D0%BD%D0%B8%22.jpg) · CC BY-SA 3.0
-- **Tatarština** – Tatarstán: [Yelabuga. The confluence of the river Toyma and Kama P6211077 2575.jpg](https://commons.wikimedia.org/wiki/File:Yelabuga._The_confluence_of_the_river_Toyma_and_Kama_P6211077_2575.jpg) · CC BY-SA 4.0
-- **Jakutština** – Sacha: [120 На стоянке в устье реки Ура.jpg](https://commons.wikimedia.org/wiki/File:120_%D0%9D%D0%B0_%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%BA%D0%B5_%D0%B2_%D1%83%D1%81%D1%82%D1%8C%D0%B5_%D1%80%D0%B5%D0%BA%D0%B8_%D0%A3%D1%80%D0%B0.jpg) · CC BY-SA 4.0
-- **Osetština** – Rusko: [Kremlin Moscow.jpg](https://commons.wikimedia.org/wiki/File:Kremlin_Moscow.jpg) · CC BY 2.0
-- **Abcházština** – Abcházie: [რიწის ტბა.jpg](https://commons.wikimedia.org/wiki/File:%E1%83%A0%E1%83%98%E1%83%AC%E1%83%98%E1%83%A1_%E1%83%A2%E1%83%91%E1%83%90.jpg) · CC BY-SA 4.0
-- **Maledivština** – Lakadivy: [Bangaram Island, Lakshadweep 20160325- DSC1780.jpg](https://commons.wikimedia.org/wiki/File:Bangaram_Island,_Lakshadweep_20160325-_DSC1780.jpg) · CC BY-SA 4.0
-- **Dzongkha** – Wangdue Phodrang District: [The households in the midst of green paddy field embraced by beautiful rainbow.JPG](https://commons.wikimedia.org/wiki/File:The_households_in_the_midst_of_green_paddy_field_embraced_by_beautiful_rainbow.JPG) · CC BY-SA 4.0
-- **Santálština** – Džhárkhand: [ISS012-E-10332 - View of India.jpg](https://commons.wikimedia.org/wiki/File:ISS012-E-10332_-_View_of_India.jpg) · Public domain
-- **Mejtejština** – Manípur: [Breathtaking beauty of Dzukou Valley in Manipur-Nagaland border (edit).jpg](https://commons.wikimedia.org/wiki/File:Breathtaking_beauty_of_Dzukou_Valley_in_Manipur-Nagaland_border_(edit).jpg) · CC BY-SA 4.0
-- **Šanština** – Sakainská oblast: [Sagaing, Myanmar.jpg](https://commons.wikimedia.org/wiki/File:Sagaing,_Myanmar.jpg) · CC BY 4.0
-- **Tetumština** – Manufahi Municipality: [2022-07-22 municipio Manufahi.jpg](https://commons.wikimedia.org/wiki/File:2022-07-22_municipio_Manufahi.jpg) · Public domain
-- **Chamorro** – bez fotky (Guam satellite photo map.jpg: vypadá jako mapa nebo znak; United States - Location Map (2013) - USA - UNOCHA.svg: není fotka (image/svg+xml))
-- **Samojština** – Samoa: [Beach on Upolu Island, Samoa, 2009.jpg](https://commons.wikimedia.org/wiki/File:Beach_on_Upolu_Island,_Samoa,_2009.jpg) · CC BY-SA 2.0
-- **Tongánština** – Niue: [A sandy oasis amongst coral (2762563840).jpg](https://commons.wikimedia.org/wiki/File:A_sandy_oasis_amongst_coral_(2762563840).jpg) · CC BY 2.0
-- **Tahitština** – Tahiti: [Tahiti ISS007 14626.jpg](https://commons.wikimedia.org/wiki/File:Tahiti_ISS007_14626.jpg) · Public domain
-- **Rapanujština** – Velikonoční ostrov: [Easter Island 5.jpg](https://commons.wikimedia.org/wiki/File:Easter_Island_5.jpg) · CC BY-SA 4.0
-- **Navažština** – Navažský národ: [Navajo Nation Council Chambers 6809.jpg](https://commons.wikimedia.org/wiki/File:Navajo_Nation_Council_Chambers_6809.jpg) · CC BY-SA 3.0
-- **Čerokézština** – Great Smoky Mountains: [Clifftops4-7-07.jpg](https://commons.wikimedia.org/wiki/File:Clifftops4-7-07.jpg) · Public domain
-- **Odžibvejština** – Ontario: [Algonquin Cache Lake Lookout.JPG](https://commons.wikimedia.org/wiki/File:Algonquin_Cache_Lake_Lookout.JPG) · CC BY-SA 3.0
-- **Krijština** – Saskatchewan: [Prairie Rainbow Canola Flax.jpg](https://commons.wikimedia.org/wiki/File:Prairie_Rainbow_Canola_Flax.jpg) · CC BY-SA 3.0
-- **Lakotština** – Jižní Dakota: [Mt. Rushmore (JPG2SVG2PNG).png](https://commons.wikimedia.org/wiki/File:Mt._Rushmore_(JPG2SVG2PNG).png) · CC BY-SA 4.0
-- **Mapudungun** – Bío-Bío: [Chenqueco.JPG](https://commons.wikimedia.org/wiki/File:Chenqueco.JPG) · CC0
-- **Jukatécká mayština** – Yucatán: [Parade in Rio Lagartos, 2012 along the shore.jpg](https://commons.wikimedia.org/wiki/File:Parade_in_Rio_Lagartos,_2012_along_the_shore.jpg) · CC BY-SA 2.0
-- **Kičé** – Quiché Department: [Amaneciendo en la Finca Acul.jpg](https://commons.wikimedia.org/wiki/File:Amaneciendo_en_la_Finca_Acul.jpg) · CC BY 2.0
-- **Zapotéčtina** – Oaxaca: [Catedral de Nuestra Señora de la Asunción, Oaxaca, Oax. 2.JPG](https://commons.wikimedia.org/wiki/File:Catedral_de_Nuestra_Se%C3%B1ora_de_la_Asunci%C3%B3n,_Oaxaca,_Oax._2.JPG) · CC BY-SA 4.0
-- **Haitská kreolština** – Haiti: [ISS020-E-43300 - View of Haiti.jpg](https://commons.wikimedia.org/wiki/File:ISS020-E-43300_-_View_of_Haiti.jpg) · Public domain
-- **Papiamento** – Curaçao: [Facades of Handelskade, Willemstad, Curaçao - February 2020.jpg](https://commons.wikimedia.org/wiki/File:Facades_of_Handelskade,_Willemstad,_Cura%C3%A7ao_-_February_2020.jpg) · CC BY-SA 4.0
-- **Ainština** – Hokkaido Ainu: [AinuGroup.JPG](https://commons.wikimedia.org/wiki/File:AinuGroup.JPG) · Public domain
-- **Český znakový jazyk** – bez fotky (Czechia Montage.jpg: není na šířku)
+- **Pandžábština** – bez fotky (žádný kandidát pro „?“)
+- **Baskičtina** – bez fotky (žádný kandidát pro „?“)
+- **Oromština** – bez fotky (žádný kandidát pro „Mandera County“)
+- **Javánština** – bez fotky (žádný kandidát pro „?“)
+- **Maithilština** – bez fotky (žádný kandidát pro „Janakpur Zone“)
+- **Sundánština** – bez fotky (žádný kandidát pro „?“)
+- **Hmongština** – bez fotky (žádný kandidát pro „?“)
+- **Tamazight (berberština)** – bez fotky (žádný kandidát pro „?“)
+- **Romština** – bez fotky (žádný kandidát pro „Dolj County“)
+- **Dzongkha** – bez fotky (žádný kandidát pro „Wangdue Phodrang District“)
+- **Tetumština** – bez fotky (žádný kandidát pro „Manufahi Municipality“)
+- **Kičé** – bez fotky (žádný kandidát pro „Quiché Department“)
+- **Čeština** – Czech Republic: [Czech Republic - landscape near Koryčany.jpg](https://commons.wikimedia.org/wiki/File:Czech_Republic_-_landscape_near_Kory%C4%8Dany.jpg) · CC BY-SA 4.0
+- **Slovenština** – Slovakia: [Sninský kameň (v zime) 001.jpg](https://commons.wikimedia.org/wiki/File:Sninsk%C3%BD_kame%C5%88_(v_zime)_001.jpg) · CC BY-SA 4.0
+- **Polština** – Poland: [Las w porannej mgle, gmina Czernichów, Rudniański Park Krajobrazowy, 20240225 0810 6625.jpg](https://commons.wikimedia.org/wiki/File:Las_w_porannej_mgle,_gmina_Czernich%C3%B3w,_Rudnia%C5%84ski_Park_Krajobrazowy,_20240225_0810_6625.jpg) · CC BY 4.0
+- **Ruština** – Russians: [Ingushetia, Russia, Armkhi, Ingush tower.jpg](https://commons.wikimedia.org/wiki/File:Ingushetia,_Russia,_Armkhi,_Ingush_tower.jpg) · CC BY 4.0
+- **Ukrajinština** – Eastern Europe: [Norderney, Dünenlandschaft, Wegweiser -- 2025 -- 9437.jpg](https://commons.wikimedia.org/wiki/File:Norderney,_D%C3%BCnenlandschaft,_Wegweiser_--_2025_--_9437.jpg) · CC BY-SA 4.0
+- **Běloruština** – Belarus: [Belarus Nesvizh Town Hall 7870 2060.jpg](https://commons.wikimedia.org/wiki/File:Belarus_Nesvizh_Town_Hall_7870_2060.jpg) · CC BY-SA 4.0
+- **Srbština** – Serbia: [Río Moraca, norte de Podgorica, Montenegro, 2014-04-14, DD 09.JPG](https://commons.wikimedia.org/wiki/File:R%C3%ADo_Moraca,_norte_de_Podgorica,_Montenegro,_2014-04-14,_DD_09.JPG) · CC BY-SA 4.0
+- **Chorvatština** – Croatia: [Vrbnik krk croatia.jpg](https://commons.wikimedia.org/wiki/File:Vrbnik_krk_croatia.jpg) · CC BY-SA 3.0 de
+- **Slovinština** – Slovenia: [Footbridge over Rak Creek, Rak Škocjan Landscape Park, Slovenia, 20240503 0831 7971.jpg](https://commons.wikimedia.org/wiki/File:Footbridge_over_Rak_Creek,_Rak_%C5%A0kocjan_Landscape_Park,_Slovenia,_20240503_0831_7971.jpg) · CC BY 4.0
+- **Bulharština** – Bulgaria: [Vihren & Kutelo Pirin Mountains Bulgaria 2025.jpg](https://commons.wikimedia.org/wiki/File:Vihren_%26_Kutelo_Pirin_Mountains_Bulgaria_2025.jpg) · CC BY-SA 4.0
+- **Makedonština** – North Macedonia: [Dülmen, Kirchspiel, Börnste, Felder und Bäume -- 2017 -- 3220-6.jpg](https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_Kirchspiel,_B%C3%B6rnste,_Felder_und_B%C3%A4ume_--_2017_--_3220-6.jpg) · CC BY-SA 4.0
+- **Angličtina** – England: [Seven Sisters Panorama, East Sussex, England - May 2009.jpg](https://commons.wikimedia.org/wiki/File:Seven_Sisters_Panorama,_East_Sussex,_England_-_May_2009.jpg) · CC BY-SA 3.0
+- **Němčina** – Germany: [Tuscan Landscape 6.JPG](https://commons.wikimedia.org/wiki/File:Tuscan_Landscape_6.JPG) · CC BY-SA 3.0
+- **Nizozemština** – Netherlands: [Ademwortels (pneumatoforen) van een moerascipres (Taxodium distichum) 09-02-2023 (d.j.b.).jpg](https://commons.wikimedia.org/wiki/File:Ademwortels_(pneumatoforen)_van_een_moerascipres_(Taxodium_distichum)_09-02-2023_(d.j.b.).jpg) · CC BY-SA 4.0
+- **Švédština** – Sweden: [Swedish landscape near Björnlunda (by Pudelek) 01.jpg](https://commons.wikimedia.org/wiki/File:Swedish_landscape_near_Bj%C3%B6rnlunda_(by_Pudelek)_01.jpg) · CC BY-SA 4.0
+- **Norština** – Norwegians: [Autumn landscape near Gullesfjordbotn, Hinnøya, 2010 September.jpg](https://commons.wikimedia.org/wiki/File:Autumn_landscape_near_Gullesfjordbotn,_Hinn%C3%B8ya,_2010_September.jpg) · CC BY-SA 3.0
+- **Dánština** – Denmark: [Winter Landscape with Brabrand Church.jpg](https://commons.wikimedia.org/wiki/File:Winter_Landscape_with_Brabrand_Church.jpg) · Public domain
+- **Islandština** – Iceland: [Icelandic Landscape near Neskaupstaður July 2014.JPG](https://commons.wikimedia.org/wiki/File:Icelandic_Landscape_near_Neskaupsta%C3%B0ur_July_2014.JPG) · CC BY-SA 4.0
+- **Afrikánština** – South Africa: [Tsitsikamma National Park (ZA), Kanus an der Küste -- 2024 -- 1990.jpg](https://commons.wikimedia.org/wiki/File:Tsitsikamma_National_Park_(ZA),_Kanus_an_der_K%C3%BCste_--_2024_--_1990.jpg) · CC BY-SA 4.0
+- **Francouzština** – Monaco: [Centro histórico, Mónaco, 2016-06-23, DD 01.jpg](https://commons.wikimedia.org/wiki/File:Centro_hist%C3%B3rico,_M%C3%B3naco,_2016-06-23,_DD_01.jpg) · CC BY-SA 4.0
+- **Španělština** – Spain: [Pajara (Fuerteventura, Spain), Mirador Astronómico de Sicasumbre, Ausblick -- 2025 -- 7140.jpg](https://commons.wikimedia.org/wiki/File:Pajara_(Fuerteventura,_Spain),_Mirador_Astron%C3%B3mico_de_Sicasumbre,_Ausblick_--_2025_--_7140.jpg) · CC BY-SA 4.0
+- **Portugalština** – Azores: [Vista de Horta desde Monte da Guia, isla de Fayal, Azores, Portugal, 2020-07-27, DD 07-18 HDR PAN.jpg](https://commons.wikimedia.org/wiki/File:Vista_de_Horta_desde_Monte_da_Guia,_isla_de_Fayal,_Azores,_Portugal,_2020-07-27,_DD_07-18_HDR_PAN.jpg) · CC BY-SA 4.0
+- **Italština** – Italy: [Tuscan Landscape 6.JPG](https://commons.wikimedia.org/wiki/File:Tuscan_Landscape_6.JPG) · CC BY-SA 3.0
+- **Rumunština** – Romania: [Romania - landscape near Iași.jpg](https://commons.wikimedia.org/wiki/File:Romania_-_landscape_near_Ia%C8%99i.jpg) · CC BY-SA 4.0
+- **Katalánština** – Catalonia: [Sant Pere de Rodes Catalonia Landscape.jpg](https://commons.wikimedia.org/wiki/File:Sant_Pere_de_Rodes_Catalonia_Landscape.jpg) · CC BY-SA 4.0
+- **Řečtina** – Greece: [Landscape Eretria Euboea Greece.jpg](https://commons.wikimedia.org/wiki/File:Landscape_Eretria_Euboea_Greece.jpg) · CC0
+- **Irština** – Ireland: [Tuscan Landscape 6.JPG](https://commons.wikimedia.org/wiki/File:Tuscan_Landscape_6.JPG) · CC BY-SA 3.0
+- **Velština** – Wales: [Sydney (AU), Coast, Australian Fur Seals -- 2019 -- 3489.jpg](https://commons.wikimedia.org/wiki/File:Sydney_(AU),_Coast,_Australian_Fur_Seals_--_2019_--_3489.jpg) · CC BY-SA 4.0
+- **Litevština** – Lithuania: [Dülmen, Merfeld, Feldweg am Mühlenbach -- 2021 -- 4278-80.jpg](https://commons.wikimedia.org/wiki/File:D%C3%BClmen,_Merfeld,_Feldweg_am_M%C3%BChlenbach_--_2021_--_4278-80.jpg) · CC BY-SA 4.0
+- **Lotyština** – Latvia: [Gaujas pļavās.jpg](https://commons.wikimedia.org/wiki/File:Gaujas_p%C4%BCav%C4%81s.jpg) · CC BY-SA 4.0
+- **Albánština** – Epirus Region: [Spending 24 h to Greek Mountains.jpg](https://commons.wikimedia.org/wiki/File:Spending_24_h_to_Greek_Mountains.jpg) · CC BY-SA 4.0
+- **Arménština** – Armenia: [Monasterio de Tatev, Armenia, 2016-10-01, DD 89-91 HDR.jpg](https://commons.wikimedia.org/wiki/File:Monasterio_de_Tatev,_Armenia,_2016-10-01,_DD_89-91_HDR.jpg) · CC BY-SA 4.0
+- **Hindština** – Madhya Pradesh: [Woman harvesting wheat, Raisen district, Madhya Pradesh, India ggia version.jpg](https://commons.wikimedia.org/wiki/File:Woman_harvesting_wheat,_Raisen_district,_Madhya_Pradesh,_India_ggia_version.jpg) · CC BY-SA 3.0
+- **Bengálština** – Bangladesh: [Tanguar haor, Bangladesh 01.jpg](https://commons.wikimedia.org/wiki/File:Tanguar_haor,_Bangladesh_01.jpg) · CC BY-SA 4.0
+- **Urdština** – Pakistan: [A foggy winter morning.jpg](https://commons.wikimedia.org/wiki/File:A_foggy_winter_morning.jpg) · CC BY-SA 4.0
+- **Maráthština** – Maharashtra: [Forest Owlet facts.jpg](https://commons.wikimedia.org/wiki/File:Forest_Owlet_facts.jpg) · CC BY 4.0
+- **Gudžarátština** – Gujarat: [Rani ki vav - Patan - Gujarat - Wall Decorations.jpg](https://commons.wikimedia.org/wiki/File:Rani_ki_vav_-_Patan_-_Gujarat_-_Wall_Decorations.jpg) · CC BY-SA 4.0
+- **Nepálština** – Khas people: [Kyrgyz man with ak-kalpak hat (ак-калпак шапкa).jpg](https://commons.wikimedia.org/wiki/File:Kyrgyz_man_with_ak-kalpak_hat_(%D0%B0%D0%BA-%D0%BA%D0%B0%D0%BB%D0%BF%D0%B0%D0%BA_%D1%88%D0%B0%D0%BF%D0%BAa).jpg) · CC BY-SA 4.0
+- **Sinhálština** – Sri Lanka: [Haputale, Sri Lanka, Tea plantations in fog 3.jpg](https://commons.wikimedia.org/wiki/File:Haputale,_Sri_Lanka,_Tea_plantations_in_fog_3.jpg) · CC BY 4.0
+- **Perština** – Iran: [Taleqan, iran.jpg](https://commons.wikimedia.org/wiki/File:Taleqan,_iran.jpg) · CC BY-SA 4.0
+- **Paštština** – Afghanistan: [Iraq-Afghanistan Memorial (36202).jpg](https://commons.wikimedia.org/wiki/File:Iraq-Afghanistan_Memorial_(36202).jpg) · CC BY-SA 4.0
+- **Kurdština** – Duhok: [Duhok dam at sunrise.jpg](https://commons.wikimedia.org/wiki/File:Duhok_dam_at_sunrise.jpg) · CC BY-SA 4.0
+- **Arabština** – Egypt: [Taranto - Duomo di San Cataldo - 04.jpg](https://commons.wikimedia.org/wiki/File:Taranto_-_Duomo_di_San_Cataldo_-_04.jpg) · CC BY-SA 4.0
+- **Hebrejština** – Israel: [Israel-2013-Aerial 00-Negev-Makhtesh Ramon.jpg](https://commons.wikimedia.org/wiki/File:Israel-2013-Aerial_00-Negev-Makhtesh_Ramon.jpg) · CC BY-SA 4.0
+- **Amharština** – Addis Ababa: [Addis Mercato, Adís Abeba, Etiopía, 2024-01-19, DD 27.jpg](https://commons.wikimedia.org/wiki/File:Addis_Mercato,_Ad%C3%ADs_Abeba,_Etiop%C3%ADa,_2024-01-19,_DD_27.jpg) · CC BY-SA 4.0
+- **Somálština** – Q1045: [A man carries a huge hammerhead through the streets of Mogadishu.jpg](https://commons.wikimedia.org/wiki/File:A_man_carries_a_huge_hammerhead_through_the_streets_of_Mogadishu.jpg) · CC BY-SA 4.0
+- **Hauština** – Nigeria: [2019 Klasztor Urszulanek Unii Rzymskiej w Bardzie 08.jpg](https://commons.wikimedia.org/wiki/File:2019_Klasztor_Urszulanek_Unii_Rzymskiej_w_Bardzie_08.jpg) · CC BY 3.0
+- **Svahilština** – Tanzania: [Paisaje en el parque nacional de Tarangire, Tanzania, 2024-05-24, DD 85-93 PAN.jpg](https://commons.wikimedia.org/wiki/File:Paisaje_en_el_parque_nacional_de_Tarangire,_Tanzania,_2024-05-24,_DD_85-93_PAN.jpg) · CC BY-SA 4.0
+- **Jorubština** – Osun State: [Rolling Hills and Forests of Osun State near Ayikunugba.jpg](https://commons.wikimedia.org/wiki/File:Rolling_Hills_and_Forests_of_Osun_State_near_Ayikunugba.jpg) · CC BY-SA 4.0
+- **Igboština** – Nigeria: [2019 Klasztor Urszulanek Unii Rzymskiej w Bardzie 08.jpg](https://commons.wikimedia.org/wiki/File:2019_Klasztor_Urszulanek_Unii_Rzymskiej_w_Bardzie_08.jpg) · CC BY 3.0
+- **Zulština** – KwaZulu-Natal: [Crowned lapwing in Zulu Nyala Reserve.jpg](https://commons.wikimedia.org/wiki/File:Crowned_lapwing_in_Zulu_Nyala_Reserve.jpg) · CC BY-SA 4.0
+- **Šonština** – Zimbabwe: [Cataratas Victoria, Zambia-Zimbabue, 2018-07-27, DD 29.jpg](https://commons.wikimedia.org/wiki/File:Cataratas_Victoria,_Zambia-Zimbabue,_2018-07-27,_DD_29.jpg) · CC BY-SA 4.0
+- **Wolofština** – Senegal: [Nolan warthogs (Phacochoerus africanus africanus) juveniles drinking.jpg](https://commons.wikimedia.org/wiki/File:Nolan_warthogs_(Phacochoerus_africanus_africanus)_juveniles_drinking.jpg) · CC BY-SA 4.0
+- **Fulbština** – Guinea: [Tuscan Landscape 6.JPG](https://commons.wikimedia.org/wiki/File:Tuscan_Landscape_6.JPG) · CC BY-SA 3.0
+- **Čínština (mandarínská)** – Shaanxi: [Ambulyx japonica japonica MHNT CUT 2010 0 59 Foping National Nature Reserve - Shaanxi Province, China male dorsal.jpg](https://commons.wikimedia.org/wiki/File:Ambulyx_japonica_japonica_MHNT_CUT_2010_0_59_Foping_National_Nature_Reserve_-_Shaanxi_Province,_China_male_dorsal.jpg) · CC BY-SA 4.0
+- **Kantonština** – Guangdong: [Guangdong Province, Yangjiang City, Sanshan Island.jpg](https://commons.wikimedia.org/wiki/File:Guangdong_Province,_Yangjiang_City,_Sanshan_Island.jpg) · CC BY-SA 4.0
+- **Barmština** – Myanmar: [Pangetkon, Shan Hills, Myanmar, Beautiful landscaped lawns in central Myanmar, Karen Hills, Asian Switzerland.jpg](https://commons.wikimedia.org/wiki/File:Pangetkon,_Shan_Hills,_Myanmar,_Beautiful_landscaped_lawns_in_central_Myanmar,_Karen_Hills,_Asian_Switzerland.jpg) · CC BY 4.0
+- **Tibetština** – Tibet Autonomous Region: [Bos grunniens at Yundrok Yumtso Lake.jpg](https://commons.wikimedia.org/wiki/File:Bos_grunniens_at_Yundrok_Yumtso_Lake.jpg) · CC BY-SA 3.0
+- **Tamilština** – Tamil Nadu: [Fields Akoni Nilgiris Tamil Nadu Nov24 A7CR 05287.jpg](https://commons.wikimedia.org/wiki/File:Fields_Akoni_Nilgiris_Tamil_Nadu_Nov24_A7CR_05287.jpg) · CC BY-SA 4.0
+- **Telugština** – Telangana: [Dandari Festival - Gussadi - VJIT Photography club.jpg](https://commons.wikimedia.org/wiki/File:Dandari_Festival_-_Gussadi_-_VJIT_Photography_club.jpg) · CC BY-SA 4.0
+- **Japonština** – Japan: [Wooden footbridge in Shinjuku Gyoen National Garden, Tokyo, Japan, a sunny day with blue sky.jpg](https://commons.wikimedia.org/wiki/File:Wooden_footbridge_in_Shinjuku_Gyoen_National_Garden,_Tokyo,_Japan,_a_sunny_day_with_blue_sky.jpg) · CC BY-SA 4.0
+- **Korejština** – South Korea: [Namdae stream water reflection of colorful clouds from Wolhwagyo bridge in Gangneung South Korea.jpg](https://commons.wikimedia.org/wiki/File:Namdae_stream_water_reflection_of_colorful_clouds_from_Wolhwagyo_bridge_in_Gangneung_South_Korea.jpg) · CC BY-SA 4.0
+- **Mongolština** – Buryatia: [Скала Англичанка 2.jpg](https://commons.wikimedia.org/wiki/File:%D0%A1%D0%BA%D0%B0%D0%BB%D0%B0_%D0%90%D0%BD%D0%B3%D0%BB%D0%B8%D1%87%D0%B0%D0%BD%D0%BA%D0%B0_2.jpg) · CC BY-SA 4.0
+- **Gruzínština** – Georgia: [Sioni, Georgian Military Road, Georgia.jpg](https://commons.wikimedia.org/wiki/File:Sioni,_Georgian_Military_Road,_Georgia.jpg) · CC BY 4.0
+- **Turečtina** – Turkey: [20110419 Ani North Walls Turkey Panorama.jpg](https://commons.wikimedia.org/wiki/File:20110419_Ani_North_Walls_Turkey_Panorama.jpg) · CC BY-SA 3.0
+- **Ázerbájdžánština** – Azerbaijan: [Landscape Arnisee-region.JPG](https://commons.wikimedia.org/wiki/File:Landscape_Arnisee-region.JPG) · CC BY-SA 2.5
+- **Kazaština** – Kazakhstan: [Кызылкуп на рассвете.jpg](https://commons.wikimedia.org/wiki/File:%D0%9A%D1%8B%D0%B7%D1%8B%D0%BB%D0%BA%D1%83%D0%BF_%D0%BD%D0%B0_%D1%80%D0%B0%D1%81%D1%81%D0%B2%D0%B5%D1%82%D0%B5.jpg) · CC BY-SA 4.0
+- **Uzbečtina** – Uzbekistan: [Kyzylkum Desert in Uzbekistan.jpg](https://commons.wikimedia.org/wiki/File:Kyzylkum_Desert_in_Uzbekistan.jpg) · CC0
+- **Ujgurština** – Xinjiang: [Northwest Portico Lustral Basin in the Knossos Palace, Crete 001.JPG](https://commons.wikimedia.org/wiki/File:Northwest_Portico_Lustral_Basin_in_the_Knossos_Palace,_Crete_001.JPG) · CC BY-SA 3.0
+- **Finština** – Finland: [Bisajärvi in evening light from the southwest in Sipoonkorpi, Vantaa, Finland, 2021 May.jpg](https://commons.wikimedia.org/wiki/File:Bisaj%C3%A4rvi_in_evening_light_from_the_southwest_in_Sipoonkorpi,_Vantaa,_Finland,_2021_May.jpg) · CC BY 3.0
+- **Maďarština** – Hungary: [Tuscan Landscape 6.JPG](https://commons.wikimedia.org/wiki/File:Tuscan_Landscape_6.JPG) · CC BY-SA 3.0
+- **Estonština** – Estonia: [Viru Bog, Parque Nacional Lahemaa, Estonia, 2012-08-12, DD 60.JPG](https://commons.wikimedia.org/wiki/File:Viru_Bog,_Parque_Nacional_Lahemaa,_Estonia,_2012-08-12,_DD_60.JPG) · CC BY-SA 3.0
+- **Severní sámština** – Troms: [Autumn landscape near Gullesfjordbotn, Hinnøya, 2010 September.jpg](https://commons.wikimedia.org/wiki/File:Autumn_landscape_near_Gullesfjordbotn,_Hinn%C3%B8ya,_2010_September.jpg) · CC BY-SA 3.0
+- **Vietnamština** – Vietnam: [Trang An Landscape Complex, Ninh Binh Province, Vietnam, 20240202 1456 5313.jpg](https://commons.wikimedia.org/wiki/File:Trang_An_Landscape_Complex,_Ninh_Binh_Province,_Vietnam,_20240202_1456_5313.jpg) · CC BY 4.0
+- **Khmerština** – Cambodia: [Khone Phapheng Falls, Si Phan Don, Laos, widest waterfall in the world.jpg](https://commons.wikimedia.org/wiki/File:Khone_Phapheng_Falls,_Si_Phan_Don,_Laos,_widest_waterfall_in_the_world.jpg) · CC BY-SA 4.0
+- **Thajština** – Thailand: [Karst landscape of Cheow Lan Lake, Thailand.jpg](https://commons.wikimedia.org/wiki/File:Karst_landscape_of_Cheow_Lan_Lake,_Thailand.jpg) · CC BY 4.0
+- **Laoština** – Luang Prabang Province: [Panoramic view of Mount Phou Si seen from Wat Chomphet in Luang Prabang Laos.jpg](https://commons.wikimedia.org/wiki/File:Panoramic_view_of_Mount_Phou_Si_seen_from_Wat_Chomphet_in_Luang_Prabang_Laos.jpg) · CC BY-SA 4.0
+- **Indonéština** – Indonesia: [Indonesian landscape of Celebes.jpg](https://commons.wikimedia.org/wiki/File:Indonesian_landscape_of_Celebes.jpg) · CC BY-SA 4.0
+- **Malajština** – Riau: [Raiyani Muharramah-Silat pengantin.jpg](https://commons.wikimedia.org/wiki/File:Raiyani_Muharramah-Silat_pengantin.jpg) · CC BY-SA 4.0
+- **Tagalog (filipínština)** – Philippines: [Nasipit - Summit Uno barge and landscape - Oct 2024.jpg](https://commons.wikimedia.org/wiki/File:Nasipit_-_Summit_Uno_barge_and_landscape_-_Oct_2024.jpg) · CC BY-SA 4.0
+- **Malgaština** – Madagascar: [Landscape Madagascar 05.jpg](https://commons.wikimedia.org/wiki/File:Landscape_Madagascar_05.jpg) · CC BY-SA 3.0
+- **Maorština** – North Island: [Landscape north Euboea Greece.jpg](https://commons.wikimedia.org/wiki/File:Landscape_north_Euboea_Greece.jpg) · CC0
+- **Havajština** – Hawaii: [Horses at South Point.jpg](https://commons.wikimedia.org/wiki/File:Horses_at_South_Point.jpg) · CC BY-SA 3.0
+- **Fidžijština** – Fiji: [Desierto de Lut, Irán, 2016-09-22, DD 71-86 HDR PAN.jpg](https://commons.wikimedia.org/wiki/File:Desierto_de_Lut,_Ir%C3%A1n,_2016-09-22,_DD_71-86_HDR_PAN.jpg) · CC BY-SA 4.0
+- **Tok Pisin** – Papua New Guinea: [Daphnis placida placida MHNT CUT 2010 0324 Wau, Papua New Guinea female ventral.jpg](https://commons.wikimedia.org/wiki/File:Daphnis_placida_placida_MHNT_CUT_2010_0324_Wau,_Papua_New_Guinea_female_ventral.jpg) · CC BY-SA 4.0
+- **Kečuánština** – Cochabamba Department: [Erinnyis crameri MHNT CUT 2010 0 524 Valle de Cochabamba Bolivia - male dorsal.jpg](https://commons.wikimedia.org/wiki/File:Erinnyis_crameri_MHNT_CUT_2010_0_524_Valle_de_Cochabamba_Bolivia_-_male_dorsal.jpg) · CC BY-SA 4.0
+- **Ajmarština** – Oruro Department: [Salar de Uyuni, Bolivia, 2016-02-04, DD 16-18 HDR.JPG](https://commons.wikimedia.org/wiki/File:Salar_de_Uyuni,_Bolivia,_2016-02-04,_DD_16-18_HDR.JPG) · CC BY-SA 4.0
+- **Guaraní** – Paraguay: [011 Jaguar drinking in Encontro das Águas State Park Photo by Giles Laurent.jpg](https://commons.wikimedia.org/wiki/File:011_Jaguar_drinking_in_Encontro_das_%C3%81guas_State_Park_Photo_by_Giles_Laurent.jpg) · CC BY-SA 4.0
+- **Nahuatl** – Puebla: [Zona arqueológica de Cantona, Puebla, México, 2013-10-11, DD 43.JPG](https://commons.wikimedia.org/wiki/File:Zona_arqueol%C3%B3gica_de_Cantona,_Puebla,_M%C3%A9xico,_2013-10-11,_DD_43.JPG) · CC BY-SA 4.0
+- **Grónština** – Greenland: [023 Aerial view of Jakobshavn Glacier at Disko Bay (Greenland) Photo by Giles Laurent.jpg](https://commons.wikimedia.org/wiki/File:023_Aerial_view_of_Jakobshavn_Glacier_at_Disko_Bay_(Greenland)_Photo_by_Giles_Laurent.jpg) · CC BY-SA 4.0
+- **Inuktitut** – Nunavut: [Nuluujaak Mountain.jpg](https://commons.wikimedia.org/wiki/File:Nuluujaak_Mountain.jpg) · CC BY-SA 2.5 ca
+- **Kannadština** – Karnataka: [Tungabhadra River and Coracle Boats.JPG](https://commons.wikimedia.org/wiki/File:Tungabhadra_River_and_Coracle_Boats.JPG) · CC BY-SA 3.0
+- **Malajálamština** – Kerala: [Mangrove Reflection Wide Ashtamudi Kollam Kerala Mar22 A7C 01464.jpg](https://commons.wikimedia.org/wiki/File:Mangrove_Reflection_Wide_Ashtamudi_Kollam_Kerala_Mar22_A7C_01464.jpg) · CC BY-SA 4.0
+- **Urijština** – Odisha: [Utkal University Main Gate.jpg](https://commons.wikimedia.org/wiki/File:Utkal_University_Main_Gate.jpg) · CC BY-SA 4.0
+- **Asámština** – Assam: [Breathtaking beauty of Dzukou Valley in Manipur-Nagaland border (edit).jpg](https://commons.wikimedia.org/wiki/File:Breathtaking_beauty_of_Dzukou_Valley_in_Manipur-Nagaland_border_(edit).jpg) · CC BY-SA 4.0
+- **Sindhština** – Sindh: [MiG-15 Vinnitsa 2010 G3.jpg](https://commons.wikimedia.org/wiki/File:MiG-15_Vinnitsa_2010_G3.jpg) · CC BY-SA 3.0
+- **Cebuánština** – Central Visayas: [Malapascua (island), Tropical beach, Philippines.jpg](https://commons.wikimedia.org/wiki/File:Malapascua_(island),_Tropical_beach,_Philippines.jpg) · CC BY 4.0
+- **Wu (šanghajština)** – Shanghai: [Pudong Shanghai November 2017 panorama.jpg](https://commons.wikimedia.org/wiki/File:Pudong_Shanghai_November_2017_panorama.jpg) · CC BY-SA 4.0
+- **Minnanština** – Changhua County: [Dou Shan Temple, Shetou, Changhua (Taiwan).jpg](https://commons.wikimedia.org/wiki/File:Dou_Shan_Temple,_Shetou,_Changhua_(Taiwan).jpg) · CC BY-SA 3.0
+- **Hakkština** – Guangdong: [Guangdong Province, Yangjiang City, Sanshan Island.jpg](https://commons.wikimedia.org/wiki/File:Guangdong_Province,_Yangjiang_City,_Sanshan_Island.jpg) · CC BY-SA 4.0
+- **Čuangština** – Q15176: [1 li jiang guilin yangshuo 2011.jpg](https://commons.wikimedia.org/wiki/File:1_li_jiang_guilin_yangshuo_2011.jpg) · CC BY-SA 4.0
+- **Rwandština** – Rwanda: [Rough chameleon (Trioceros rudis).jpg](https://commons.wikimedia.org/wiki/File:Rough_chameleon_(Trioceros_rudis).jpg) · CC BY-SA 4.0
+- **Gandština** – Buganda: [Ssezibwa from the Sky – Sacred Waters in Full View.jpg](https://commons.wikimedia.org/wiki/File:Ssezibwa_from_the_Sky_%E2%80%93_Sacred_Waters_in_Full_View.jpg) · CC BY-SA 4.0
+- **Lingalština** – Équateur: [Ecuador Oyambaro agri landscape 03.jpg](https://commons.wikimedia.org/wiki/File:Ecuador_Oyambaro_agri_landscape_03.jpg) · CC BY-SA 3.0
+- **Kikongo** – Democratic Republic of the Congo: [Bitobolo Village.jpg](https://commons.wikimedia.org/wiki/File:Bitobolo_Village.jpg) · CC BY-SA 4.0
+- **Čičevština** – Central Region: [Tuscan Landscape 6.JPG](https://commons.wikimedia.org/wiki/File:Tuscan_Landscape_6.JPG) · CC BY-SA 3.0
+- **Tigrinijština** – Tigray Region: [Sign in Tigray Region.jpg](https://commons.wikimedia.org/wiki/File:Sign_in_Tigray_Region.jpg) · CC BY-SA 3.0
+- **Xhoština** – Eastern Cape: [Tsitsikamma National Park (ZA), Kanus an der Küste -- 2024 -- 1990.jpg](https://commons.wikimedia.org/wiki/File:Tsitsikamma_National_Park_(ZA),_Kanus_an_der_K%C3%BCste_--_2024_--_1990.jpg) · CC BY-SA 4.0
+- **Sotština** – Lesotho: [MSC Lesotho in Naples.jpg](https://commons.wikimedia.org/wiki/File:MSC_Lesotho_in_Naples.jpg) · CC BY-SA 4.0
+- **Tswanština** – North West: [Looking north west from Solomon's Throne - Walls of Jerusalem.jpg](https://commons.wikimedia.org/wiki/File:Looking_north_west_from_Solomon%27s_Throne_-_Walls_of_Jerusalem.jpg) · CC BY-SA 3.0
+- **Akanština (twi)** – Ghana: [Mirny in Yakutia.jpg](https://commons.wikimedia.org/wiki/File:Mirny_in_Yakutia.jpg) · CC BY-SA 3.0
+- **Eveština** – Volta Region: [Volta, South Tongu (P1090943).jpg](https://commons.wikimedia.org/wiki/File:Volta,_South_Tongu_(P1090943).jpg) · CC BY-SA 4.0
+- **Bambarština** – Mali: [Mali i Thatë from Magaro Peak, September 2019.jpg](https://commons.wikimedia.org/wiki/File:Mali_i_That%C3%AB_from_Magaro_Peak,_September_2019.jpg) · CC BY-SA 4.0
+- **Mooré** – Burkina Faso: [Vendeuse d'arachides.jpg](https://commons.wikimedia.org/wiki/File:Vendeuse_d%27arachides.jpg) · CC BY-SA 3.0
+- **Kanurijština** – Nigeria: [2019 Klasztor Urszulanek Unii Rzymskiej w Bardzie 08.jpg](https://commons.wikimedia.org/wiki/File:2019_Klasztor_Urszulanek_Unii_Rzymskiej_w_Bardzie_08.jpg) · CC BY 3.0
+- **Maltština** – Malta: [The Watch-Tower.jpg](https://commons.wikimedia.org/wiki/File:The_Watch-Tower.jpg) · CC BY-SA 4.0
+- **Lucemburština** – Luxembourg: [Luxembourg SW of Lintgen – spring catchment area.jpg](https://commons.wikimedia.org/wiki/File:Luxembourg_SW_of_Lintgen_%E2%80%93_spring_catchment_area.jpg) · CC BY-SA 4.0
+- **Faerština** – Faroe Islands: [Hvannhagi 9.jpg](https://commons.wikimedia.org/wiki/File:Hvannhagi_9.jpg) · CC BY-SA 4.0
+- **Fríština** – Friesland: [Bomenlaan in mild avondlicht. Locatie, het Katlijker Schar (Ketliker Skar) 02.jpg](https://commons.wikimedia.org/wiki/File:Bomenlaan_in_mild_avondlicht._Locatie,_het_Katlijker_Schar_(Ketliker_Skar)_02.jpg) · CC BY-SA 4.0
+- **Galicijština** – Galicia: [Vista castelo, A Peroxa 2.jpg](https://commons.wikimedia.org/wiki/File:Vista_castelo,_A_Peroxa_2.jpg) · CC BY-SA 4.0
+- **Okcitánština** – Midi-Pyrénées: [Gentau Pic du Midi Ossau.jpg](https://commons.wikimedia.org/wiki/File:Gentau_Pic_du_Midi_Ossau.jpg) · CC BY-SA 3.0
+- **Sardština** – Italy: [Tuscan Landscape 6.JPG](https://commons.wikimedia.org/wiki/File:Tuscan_Landscape_6.JPG) · CC BY-SA 3.0
+- **Bretonština** – Brittany: [Bréhec - côte.JPG](https://commons.wikimedia.org/wiki/File:Br%C3%A9hec_-_c%C3%B4te.JPG) · CC BY 3.0
+- **Skotská gaelština** – Highland: [Cattle Leveäkari 5.jpg](https://commons.wikimedia.org/wiki/File:Cattle_Leve%C3%A4kari_5.jpg) · CC BY-SA 4.0
+- **Jidiš** – Ukraine: [Рожевий ранок в Ґорґанах.jpg](https://commons.wikimedia.org/wiki/File:%D0%A0%D0%BE%D0%B6%D0%B5%D0%B2%D0%B8%D0%B9_%D1%80%D0%B0%D0%BD%D0%BE%D0%BA_%D0%B2_%D2%90%D0%BE%D1%80%D2%91%D0%B0%D0%BD%D0%B0%D1%85.jpg) · CC BY-SA 4.0
+- **Čečenština** – Chechnya: [Grozny. Grozny-City Towers. Mosque The Heart of Chechnya PB040055 2200.jpg](https://commons.wikimedia.org/wiki/File:Grozny._Grozny-City_Towers._Mosque_The_Heart_of_Chechnya_PB040055_2200.jpg) · CC BY-SA 4.0
+- **Tatarština** – Tatarstan: [Kama River in Tatarstan. Cruise ship Kapitan Pushkaryov P6210927 2575.jpg](https://commons.wikimedia.org/wiki/File:Kama_River_in_Tatarstan._Cruise_ship_Kapitan_Pushkaryov_P6210927_2575.jpg) · CC BY-SA 4.0
+- **Jakutština** – Sakha: [В полночь у озера Ожогино.jpg](https://commons.wikimedia.org/wiki/File:%D0%92_%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE%D1%87%D1%8C_%D1%83_%D0%BE%D0%B7%D0%B5%D1%80%D0%B0_%D0%9E%D0%B6%D0%BE%D0%B3%D0%B8%D0%BD%D0%BE.jpg) · CC BY-SA 4.0
+- **Osetština** – Georgia: [Sioni, Georgian Military Road, Georgia.jpg](https://commons.wikimedia.org/wiki/File:Sioni,_Georgian_Military_Road,_Georgia.jpg) · CC BY 4.0
+- **Abcházština** – Abkhazia: [2014 Reliktowy Park Narodowy Rica, Widok na jezioro Rica od strony południowo-zachodniej (06).jpg](https://commons.wikimedia.org/wiki/File:2014_Reliktowy_Park_Narodowy_Rica,_Widok_na_jezioro_Rica_od_strony_po%C5%82udniowo-zachodniej_(06).jpg) · CC BY-SA 4.0
+- **Maledivština** – Maldives: [Floatplane at Bathala (Maldives).jpg](https://commons.wikimedia.org/wiki/File:Floatplane_at_Bathala_(Maldives).jpg) · CC BY-SA 4.0
+- **Santálština** – West Bengal: [Chamunda Kali, Balurghat, West Bengal (IMG 7872).jpg](https://commons.wikimedia.org/wiki/File:Chamunda_Kali,_Balurghat,_West_Bengal_(IMG_7872).jpg) · CC BY-SA 4.0
+- **Mejtejština** – Q1193: [Breathtaking beauty of Dzukou Valley in Manipur-Nagaland border (edit).jpg](https://commons.wikimedia.org/wiki/File:Breathtaking_beauty_of_Dzukou_Valley_in_Manipur-Nagaland_border_(edit).jpg) · CC BY-SA 4.0
+- **Šanština** – Shan State: [Pangetkon, Shan Hills, Myanmar, Beautiful landscaped lawns in central Myanmar, Karen Hills, Asian Switzerland.jpg](https://commons.wikimedia.org/wiki/File:Pangetkon,_Shan_Hills,_Myanmar,_Beautiful_landscaped_lawns_in_central_Myanmar,_Karen_Hills,_Asian_Switzerland.jpg) · CC BY 4.0
+- **Chamorro** – Guam: [Audi Q5 Sportback GU DSC 9268.jpg](https://commons.wikimedia.org/wiki/File:Audi_Q5_Sportback_GU_DSC_9268.jpg) · CC BY-SA 4.0
+- **Samojština** – Samoa: [Samoa Beach near Eureka, California.jpg](https://commons.wikimedia.org/wiki/File:Samoa_Beach_near_Eureka,_California.jpg) · CC BY-SA 4.0
+- **Tongánština** – Tonga: [Real tonga airlines 2.jpg](https://commons.wikimedia.org/wiki/File:Real_tonga_airlines_2.jpg) · CC BY-SA 3.0 de
+- **Tahitština** – Tahiti: [Narzisse 'Tahiti' im botanischen Garten in München 01.jpg](https://commons.wikimedia.org/wiki/File:Narzisse_%27Tahiti%27_im_botanischen_Garten_in_M%C3%BCnchen_01.jpg) · CC BY-SA 4.0
+- **Rapanujština** – Q14452: [Easter Island 5.jpg](https://commons.wikimedia.org/wiki/File:Easter_Island_5.jpg) · CC BY-SA 4.0
+- **Navažština** – Navajo Nation: [Chaistla Butte and landscape with moonrise, Navajo Nation, Arizona.jpg](https://commons.wikimedia.org/wiki/File:Chaistla_Butte_and_landscape_with_moonrise,_Navajo_Nation,_Arizona.jpg) · CC BY-SA 4.0
+- **Čerokézština** – Great Smoky Mountains: [Meadow in the Smoky Mountains (41665h).jpg](https://commons.wikimedia.org/wiki/File:Meadow_in_the_Smoky_Mountains_(41665h).jpg) · CC BY-SA 4.0
+- **Odžibvejština** – Ontario: [Wind turbines along North Middle Road, Essex County, Ontario, 2025-06-29.jpg](https://commons.wikimedia.org/wiki/File:Wind_turbines_along_North_Middle_Road,_Essex_County,_Ontario,_2025-06-29.jpg) · CC BY-SA 4.0
+- **Krijština** – Saskatchewan: [Tuscan Landscape 6.JPG](https://commons.wikimedia.org/wiki/File:Tuscan_Landscape_6.JPG) · CC BY-SA 3.0
+- **Lakotština** – South Dakota: [Little Missouri in Theodore Roosevelt NP ND1.jpg](https://commons.wikimedia.org/wiki/File:Little_Missouri_in_Theodore_Roosevelt_NP_ND1.jpg) · CC BY-SA 4.0
+- **Mapudungun** – Araucanía Region: [Pabellón El Amor de Chile, Temuco, 2019-01-07.jpg](https://commons.wikimedia.org/wiki/File:Pabell%C3%B3n_El_Amor_de_Chile,_Temuco,_2019-01-07.jpg) · CC BY-SA 4.0
+- **Jukatécká mayština** – Yucatan Peninsula: [Templo el Castillo - Chichen Itza-Yucatan-Mexico0222.jpg](https://commons.wikimedia.org/wiki/File:Templo_el_Castillo_-_Chichen_Itza-Yucatan-Mexico0222.jpg) · CC BY-SA 4.0
+- **Zapotéčtina** – Oaxaca: [Rocks El Torcal de Antequera karst Andalusia Spain.jpg](https://commons.wikimedia.org/wiki/File:Rocks_El_Torcal_de_Antequera_karst_Andalusia_Spain.jpg) · CC0
+- **Haitská kreolština** – Haiti: [Cour Napoléon at night - Louvre.jpg](https://commons.wikimedia.org/wiki/File:Cour_Napol%C3%A9on_at_night_-_Louvre.jpg) · CC BY 2.5
+- **Papiamento** – Q25279: [Facades of Handelskade, Willemstad, Curaçao - February 2020.jpg](https://commons.wikimedia.org/wiki/File:Facades_of_Handelskade,_Willemstad,_Cura%C3%A7ao_-_February_2020.jpg) · CC BY-SA 4.0
+- **Ainština** – Hokkaido Ainu: [140829 Ichiko of Shiretoko Goko Lakes Hokkaido Japan04s3.jpg](https://commons.wikimedia.org/wiki/File:140829_Ichiko_of_Shiretoko_Goko_Lakes_Hokkaido_Japan04s3.jpg) · CC BY 2.5
+- **Český znakový jazyk** – Czech Republic: [Czech Republic - landscape near Koryčany.jpg](https://commons.wikimedia.org/wiki/File:Czech_Republic_-_landscape_near_Kory%C4%8Dany.jpg) · CC BY-SA 4.0
