@@ -76,6 +76,7 @@ function sestav(lang, { odkazJinam, artefakt }) {
     .replace("/*__STATY__*/null", () => doSkriptu(nazvyZemi))
     .replace("/*__REJSTRIK__*/null", () => doSkriptu(REJSTRIK))
     .replace("/*__VYMYSLENE__*/null", () => doSkriptu(json("data/vymyslene.json")))
+    .replace("/*__FOTKY__*/null", () => doSkriptu(fs.existsSync(path.join(KOREN, "data/fotky.json")) ? json("data/fotky.json").fotky : {}))
     .replace("/*__RELIEF__*/null", () => JSON.stringify("data:image/jpeg;base64," + fs.readFileSync(path.join(KOREN, "data/relief.jpg")).toString("base64")))
     .replace("/*__PODROBNOSTI__*/null", () => doSkriptu({ wals: podrobnosti.wals, uzly: podrobnosti.uzly, nad: podrobnosti.nad,
                                                           staty: podrobnosti.staty, udhr: podrobnosti.udhr, mapaStatu: podrobnosti.mapaStatu,
@@ -124,7 +125,7 @@ const en = sestav("en", { odkazJinam: "../index.html", artefakt: false });
 fs.mkdirSync(path.join(KOREN, "dist/en"), { recursive: true });
 fs.writeFileSync(path.join(KOREN, "dist/index.html"), cs.dokument);
 fs.writeFileSync(path.join(KOREN, "dist/en/index.html"), en.dokument);
-for (const f of fs.readdirSync(path.join(KOREN, "static"))) fs.copyFileSync(path.join(KOREN, "static", f), path.join(KOREN, "dist", f));   // ikonky a náhledy
+fs.cpSync(path.join(KOREN, "static"), path.join(KOREN, "dist"), { recursive: true });   // ikonky, náhledy a fotky na pohlednice
 const kb = s => (Buffer.byteLength(s) / 1024).toFixed(0) + " kB";
 console.log(`dist/index.html (česky) ${kb(cs.dokument)}, dist/en/index.html (anglicky) ${kb(en.dokument)}`);
 

@@ -618,6 +618,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
   --pozadi:radial-gradient(120% 90% at 40% 30%, #0C1734, #050914 70%) fixed, #050914;
   --sklo:rgba(11,18,38,.82); --sklo2:rgba(14,23,48,.9); --sklo-okraj:rgba(170,195,255,.13); --sklo-lesk:rgba(255,255,255,.05);
   --akcent:#E0503F; --na-akcent:#FFFFFF;
+  --uzemi:#F2913D;   /* území vybraného jazyka na glóbu: oranžová, ať nesplývá s modrým mořem */
   --nadpis-grad:none;
   --atmosfera:rgba(90,150,255,.3); --atmosfera2:rgba(60,110,230,0);
   --sit:rgba(160,200,255,.07);
@@ -626,7 +627,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
   --pozadi:#F4F1EA;
   --sklo:#FFFFFF; --sklo2:#FFFFFF; --sklo-okraj:rgba(20,24,40,.08); --sklo-lesk:rgba(255,255,255,0);
   --text:#15192B; --text2:#5A6073; --text3:#8A90A0;
-  --cyan:#1F4FB8; --cervena:#D23A2B; --akcent:#D23A2B;
+  --cyan:#1F4FB8; --cervena:#D23A2B; --akcent:#D23A2B; --uzemi:#EE7A22;
   --linka:rgba(20,24,40,.09); --linka2:rgba(20,24,40,.18); --plocha:rgba(20,24,40,.035); --plocha2:rgba(20,24,40,.07);
   --sklo-tl:#FFFFFF; --vstup:#FFFFFF; --stin:rgba(25,32,60,.2);
   --cyan-slabe:rgba(31,79,184,.08); --cyan-okraj:rgba(31,79,184,.35); --cyan-zare:rgba(31,79,184,.25);
@@ -722,3 +723,20 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 .znak{color:var(--text); width:48px; height:48px}
 .hud{color:var(--text2)}
 .hlava.sklo,:root[data-theme="light"] .hlava.sklo{box-shadow:none; background:transparent}
+
+/* pohlednice s fotkou z Wikimedia Commons: fotka pod textem, tmavý přechod kvůli čitelnosti, autor v rohu */
+.k-hero > .k-foto{position:absolute; inset:0; z-index:0; background:center/cover no-repeat; border-radius:inherit}
+.k-hero.s-fotkou{--r-text:#FFFFFF; color:#fff; min-height:230px; display:flex; flex-direction:column}
+.k-hero.s-fotkou::before{z-index:1; opacity:1; background:linear-gradient(180deg, rgba(8,12,28,.28) 0%, rgba(8,12,28,.06) 38%, rgba(8,12,28,.62) 100%)}
+.k-hero.s-fotkou > :not(.k-foto){z-index:2}
+.k-hero.s-fotkou .k-pozdrav{margin-top:auto}
+.k-hero.s-fotkou .pozdrav,.k-hero.s-fotkou h2{text-shadow:0 2px 16px rgba(0,0,0,.35)}
+.k-hero .k-foto-autor{position:absolute; right:12px; bottom:9px; max-width:62%; font-size:.6rem; line-height:1.2; color:#fff; opacity:.8;
+  text-decoration:none; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; z-index:3}
+.k-hero .k-foto-autor:hover{opacity:1; text-decoration:underline}
+.k-hero.s-fotkou .prehraj{color:#15192B}
+/* jazyk dne s fotkou: fotka nahoře jako pohlednice, text pod ní */
+.jazyk-dne > .jd-foto{position:relative; display:block; align-self:stretch; height:150px; margin:-16px -18px 10px; border-radius:18px 18px 0 0;
+  background:center/cover no-repeat}
+.jazyk-dne.s-fotkou::before{display:none}
+.jd-autor{font-size:.6rem; color:var(--text3); margin-top:6px; max-width:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}

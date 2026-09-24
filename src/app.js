@@ -225,6 +225,14 @@ function postavPolici(filtr){
       const cta = prvek("span", "jd-akce", T.jazykDneUkaz);
       cta.insertAdjacentHTML("beforeend", '<svg aria-hidden="true"><use href="#i-dal"/></svg>');
       tl.appendChild(cta);
+      const f = FOTKY[d.id];
+      if (f) {                                   // fotka vpravo, rozplývá se do bílé karty (obrázek B)
+        tl.classList.add("s-fotkou");
+        const obr = prvek("span", "jd-foto"); obr.style.backgroundImage = "url(\"" + f.soubor + "\")";
+        tl.insertBefore(obr, tl.firstChild);
+        const a = prvek("span", "jd-autor", popisekFotky(f)); a.title = f.nazev;
+        tl.appendChild(a);
+      }
       tl.addEventListener("click", function(){ vyber(d.id); });
       seznam.appendChild(tl);
     }
@@ -388,7 +396,7 @@ function nactiBarvy(){
   ["vit-0", "vit-1", "vit-2", "vit-3", "vit-4", "vit-5", "vit-6", "vit-nic",
    "pevnina", "pobrezi", "stin-koule", "tecka-jazyk", "tecka-bod", "cyan", "fialova", "cervena", "hvezda", "koule1", "koule2", "popisek", "popisek-lem",
    "atmosfera", "atmosfera2", "sit", "hranice", "okraj-koule", "zamerovac-lem",
-   "r-ie", "r-st", "r-an", "r-afro", "r-nk", "r-ost", "more1", "more2", "souse1", "souse2"].forEach(function(k){ barvy[k] = s.getPropertyValue("--" + k).trim(); });
+   "r-ie", "r-st", "r-an", "r-afro", "r-nk", "r-ost", "more1", "more2", "souse1", "souse2", "uzemi"].forEach(function(k){ barvy[k] = s.getPropertyValue("--" + k).trim(); });
 }
 
 const fJaz = new Float32Array(POCET_B), zakladJaz = new Float32Array(POCET_B);   // příznaky teček: 0 obyčejná, 1 vybraná, 2 příbuzná, 3 pod myší
@@ -519,6 +527,21 @@ function kresliBodyGl(){
    Barvy dodá CSS (--more-*, --souse-*), takže z jednoho obrázku je denní i noční glóbus.
    Kreslí se do vlastního plátna mimo stránku a to se vloží do #podklad místo ploché koule a pevniny. */
 const RELIEF = /*__RELIEF__*/null;
+/* fotky na pohlednice z Wikimedia Commons (scripts/fotky.mjs): id jazyka → soubor, autor, licence, zdroj, místo */
+const FOTKY = /*__FOTKY__*/null || {};
+function popisekFotky(f){
+  const misto = T.lang === "cs" ? (f.mistoCs || f.mistoEn) : (f.mistoEn || f.mistoCs);
+  return (misto ? misto + " · " : "") + T.foto + " " + f.autor + ", " + f.licence;
+}
+/* pohlednice na kartě: fotka místa, odkud jazyk pochází, s autorem a licencí (CC BY to vyžaduje) */
+function fotkaNaKarte(id){
+  const f = id && FOTKY[id], el = $("k-foto"), autor = $("k-foto-autor");
+  kartaHero.classList.toggle("s-fotkou", !!f);
+  el.hidden = autor.hidden = !f;
+  if (!f) { el.style.backgroundImage = ""; return; }
+  el.style.backgroundImage = "url(\"" + f.soubor + "\")";
+  autor.textContent = popisekFotky(f); autor.href = f.zdroj; autor.title = f.nazev;
+}
 const relief = {platno: null, gl: null, u: {}, hotovo: false, sirkaTex: 1};
 function pripravRelief(){
   if (!RELIEF) return;
@@ -701,35 +724,14 @@ function kresliStin(c, cx, cy, r){          /* koule k okraji tmavne, ať vypad�
   g.addColorStop(0, denni ? "rgba(255,255,255,.55)" : "rgba(150,210,255,.10)"); g.addColorStop(1, "rgba(255,255,255,0)");
   c.fillStyle = g; c.beginPath(); c.arc(cx, cy, r, 0, 6.283185); c.fill();
 }
-/* území se šrafuje (jako v tištěném atlasu): plná barva rodiny by na modrém moři splývala s vodou */
-const vzorySrafy = {};
-function vzorSrafy(c, barva){
-  const k = barva + "|" + dpr;
-  if (vzorySrafy[k]) return vzorySrafy[k];
-  const t = document.createElement("canvas"), n = Math.max(6, Math.round(8 * dpr));
-  t.width = t.height = n;
-  const g = t.getContext("2d");
-  g.strokeStyle = barva; g.lineWidth = 2.1 * dpr; g.lineCap = "square";
-  g.beginPath();
-  [-n, 0, n].forEach(function(o){ g.moveTo(o, n); g.lineTo(o + n, 0); });
-  g.stroke();
-  const vzor = c.createPattern(t, "repeat");
-  if (vzor.setTransform) vzor.setTransform(new DOMMatrix().scale(1 / dpr));
-  return (vzorySrafy[k] = vzor);
-}
-function vyplnUzemi(c, barva, silne){
-  c.globalAlpha = silne ? 0.34 : 0.2; c.fillStyle = barva; c.fill();
-  c.globalAlpha = silne ? 0.9 : 0.55; c.fillStyle = vzorSrafy(c, barva); c.fill();
-  c.globalAlpha = 1;
-}
-function kresliUzemi(c){                    /* území vybraného jazyka barvou jeho rodiny */
+function kresliUzemi(c){                    /* území vybraného jazyka jednou oranžovou (--uzemi): barva rodiny by na modrém moři splývala */
   if (zeme) {                               /* zvýrazněná země */
     c.beginPath(); cestaPodklad(zeme.f);
     c.globalAlpha = 0.16; c.fillStyle = barvy.cyan; c.fill(); c.globalAlpha = 0.8;
     c.lineWidth = 1.6; c.strokeStyle = barvy.cyan; c.stroke(); c.globalAlpha = 1;
   }
   if (!vybrany || vybrany.typ !== "atlas") return;
-  const barva = barvaVyberu(), p = odhaleni(casSnimku);
+  const barva = barvy.uzemi || barvaVyberu(), p = odhaleni(casSnimku);
   if (!p) return;                           // ještě se letí
   c.save();
   if (p < 1) {                              /* území se rozlévá od domovské tečky jako vlna */
@@ -739,18 +741,18 @@ function kresliUzemi(c){                    /* území vybraného jazyka barvou 
   if (vybrany.zeme.length) {
     c.beginPath();
     vybrany.zeme.forEach(function(n){ const f = ZEME_PODLE_JMENA[n]; if (f) cestaPodklad(f); });
-    vyplnUzemi(c, barva, true);
-    c.globalAlpha = 0.95; c.lineWidth = 1.3; c.strokeStyle = barva; c.stroke(); c.globalAlpha = 1;
+    c.globalAlpha = 0.9; c.fillStyle = barva; c.fill(); c.globalAlpha = 1;
   }
   if (vybrany.ob.length) {                  /* areál: kruhy oříznuté na pevninu, s měkkým okrajem */
     c.save();
     c.beginPath(); cestaPodklad(SOUS); c.clip();
-    c.beginPath();
+    c.fillStyle = barva;
+    c.globalAlpha = 0.35; c.beginPath();
     vybrany.ob.forEach(function(o){ cestaPodklad(kruh.center([o[0], o[1]]).radius(o[2] * 1.75)()); });
-    vyplnUzemi(c, barva, false);
-    c.beginPath();
+    c.fill();
+    c.globalAlpha = 0.9; c.beginPath();
     vybrany.ob.forEach(function(o){ cestaPodklad(kruh.center([o[0], o[1]]).radius(o[2] * 1.3)()); });
-    vyplnUzemi(c, barva, true);
+    c.fill();
     c.restore();
   }
   c.restore();
@@ -1649,6 +1651,7 @@ const karta = $("karta"), kartaTelo = $("k-telo"), kartaStitky = $("k-stitky"), 
 function otevriKartu(barva, textBarva, novyJazyk){
   karta.hidden = false;
   kartaHero.classList.remove("srovnani", "vymysleny");    // karta srovnání a vymyšleného jazyka mají vlastní záhlaví
+  fotkaNaKarte(null);
   const dvojice = kartaHero.querySelector(".k-dvojice"); if (dvojice) dvojice.remove();
   $("k-porovnat").hidden = false;
   kartaHero.style.setProperty("--r-barva", barva);
@@ -1746,6 +1749,7 @@ function ukazKartu(j){
   karta.dataset.jazyk = j.id;
   otevriKartu("var(--r-" + j.sk + ")", "var(--t-" + j.sk + ")", novy);
   $("k-plne").hidden = false; $("k-odznak").hidden = true;
+  fotkaNaKarte(j.id);
   const domov = BOD_ATLASU[j.id] >= 0 ? B[BOD_ATLASU[j.id]] : [0, j.stred[0], j.stred[1]];
   $("k-kod").textContent = souradnice(domov[1], domov[2]);
   $("k-nazev").textContent = j.n;
@@ -1869,6 +1873,7 @@ function ukazKartuBodu(i){
   karta.dataset.jazyk = kodB;
   otevriKartu("var(--cyan)", "var(--na-cyan)", novy);
   $("k-plne").hidden = true; tlPrehraj.hidden = true;
+  fotkaNaKarte(B[i][5] || null);
   const jmeno = jmenoBodu(i);
   $("k-kod").textContent = BEZ_POLOHY[i] ? T.bezDomova : souradnice(B[i][1], B[i][2]);
   $("k-nazev").textContent = jmeno;

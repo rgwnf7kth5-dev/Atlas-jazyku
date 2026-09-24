@@ -1,0 +1,66 @@
+# Stáhne fotky na pohlednice jazyků z Wikimedia Commons (výběr přes Wikidata, viz scripts/fotky.mjs).
+# Ručně: Actions → „Fotky na pohlednice“ → Run workflow. Na větvi redesign-encyklopedie se spustí i po změně skriptu nebo oprav.
+# Na main navrhne změny jako pull request, na jiné větvi je rovnou přidá do ní.
+name: Fotky na pohlednice
+
+on:
+  workflow_dispatch:
+    inputs:
+      znovu:
+        description: "Stáhnout všechny fotky znovu"
+        type: boolean
+        default: false
+  push:
+    branches: [redesign-encyklopedie]
+    paths: [scripts/fotky.mjs, data/fotky-opravy.json, .github/workflows/fotky.yml]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: fotky-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  fotky:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      - name: Stáhnout fotky z Wikimedia Commons
+        run: node scripts/fotky.mjs ${{ inputs.znovu && '--znovu' || '' }}
+
+      - name: Přehled vybraných fotek
+        run: cat data/fotky-hlaseni.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Kontrola a sestavení
+        run: npm run check
+
+      - name: Uložit
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if git diff --quiet -- data static dist && [ -z "$(git ls-files --others --exclude-standard data static dist)" ]; then
+            echo "Fotky se od minula nezměnily."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          DNES=$(date -u +%Y-%m-%d)
+          if [ "$GITHUB_REF_NAME" != "main" ]; then
+            git add data static dist
+            git commit -m "Fotky na pohlednice z Wikimedia Commons ($DNES)"
+            git push origin "HEAD:$GITHUB_REF_NAME"
+            exit 0
+          fi
+          VETEV="data/fotky-$DNES-$GITHUB_RUN_ID"
+          git switch -c "$VETEV"
+          git add data static dist
+          git commit -m "Fotky na pohlednice z Wikimedia Commons ($DNES)"
+          git push -u origin "$VETEV"
+          gh pr create --base main --head "$VETEV" --title "Fotky na pohlednice ($DNES)" --body-file data/fotky-hlaseni.md
