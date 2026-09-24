@@ -400,5 +400,7 @@
  "zpetNa": "Back to: {a}",
  "porovnatJiny": "Compare with another",
  "stromObe": "Show both in the family tree",
- "bezRodu": "{a} is a {druh}. It did not develop gradually from a single ancestor like other languages, so it belongs to no language family and has no relatives."
+ "bezRodu": "{a} is a {druh}. It did not develop gradually from a single ancestor like other languages, so it belongs to no language family and has no relatives.",
+ "bezDomova": "Not on the map",
+ "bezDomovaText": "{a} did not grow up in any one place – people invented it so that speakers from different countries could understand each other. That is why it has no dot on the globe, only a place in the list."
 }

@@ -400,5 +400,7 @@
  "zpetNa": "Zpět na: {a}",
  "porovnatJiny": "Porovnat s jiným",
  "stromObe": "Ukázat obě v rodokmenu",
- "bezRodu": "{a} je {druh}. Nevznikl postupným vývojem z jednoho předka jako ostatní jazyky, a proto nepatří do žádné jazykové rodiny a nemá příbuzné."
+ "bezRodu": "{a} je {druh}. Nevznikl postupným vývojem z jednoho předka jako ostatní jazyky, a proto nepatří do žádné jazykové rodiny a nemá příbuzné.",
+ "bezDomova": "Bez místa na mapě",
+ "bezDomovaText": "{a} nevznikl na žádném místě – vymysleli ho lidé, aby se domluvili napříč zeměmi. Proto ho na glóbu nenajdeš, najdeš ho jen v seznamu."
 }

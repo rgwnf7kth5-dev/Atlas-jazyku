@@ -1,10 +1,15 @@
 {
- "_popis": "Opravy poloh teček, kde Glottolog odporuje sám sobě. Klíč je glottocode, poloha [délka, šířka]. Build je použije místo Glottologu, validace hlídá, že glottocode existuje.",
+ "_popis": "Úpravy poloh teček. Klíč je glottocode. \"poloha\": [délka, šířka] tečku přesune, null ji z glóbu schová (jazyk nemá domov na mapě). Vždy s důvodem. Validace hlídá, že glottocode existuje.",
  "espe1235": {
-  "poloha": [
-   21.01,
-   52.23
-  ],
-  "proc": "Glottolog klade esperanto do Francie (u Compiègne), ale jako zemi uvádí Polsko. Esperanto zveřejnil L. L. Zamenhof roku 1887 ve Varšavě (Unua Libro), tečka je proto ve Varšavě."
+  "poloha": null,
+  "proc": "Mezinárodní pomocný jazyk: vytvořili ho lidé, aby se domluvili napříč zeměmi, na žádném místě nevznikl. Glottolog mu přesto dává tečku (esperanto ve Francii se zemí Polsko), proto je bez polohy (přání uživatele 24. 9. 2026)."
+ },
+ "inte1239": {
+  "poloha": null,
+  "proc": "Mezinárodní pomocný jazyk: vytvořili ho lidé, aby se domluvili napříč zeměmi, na žádném místě nevznikl. Glottolog mu přesto dává tečku (esperanto ve Francii se zemí Polsko), proto je bez polohy (přání uživatele 24. 9. 2026). Jde o interlinguu (IALA)."
+ },
+ "inte1263": {
+  "poloha": null,
+  "proc": "Mezinárodní pomocný jazyk: vytvořili ho lidé, aby se domluvili napříč zeměmi, na žádném místě nevznikl. Glottolog mu přesto dává tečku (esperanto ve Francii se zemí Polsko), proto je bez polohy (přání uživatele 24. 9. 2026). Jde o interslovanštinu."
  }
 }

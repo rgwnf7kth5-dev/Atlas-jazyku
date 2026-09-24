@@ -53,7 +53,8 @@ const JAZYKY = jazykyAtlasu.map(j => {
 const REJSTRIK = {
   r: { cs: glottolog.rodiny.map(r => rodinyCz[r] || r), en: glottolog.rodiny.map(r => RODINY_EN[r] || r) },
   m: { cs: glottolog.makro.map(m => (m && UI.cs.makro[m]) || ""), en: glottolog.makro.map(m => (m && UI.en.makro[m]) || "") },
-  b: glottolog.body.map(b => { const o = opravyPoloh[b[6]]; const r = b.slice(0, 6); if (o) { r[1] = o.poloha[0]; r[2] = o.poloha[1]; } return r; }),
+  b: glottolog.body.map(b => { const o = opravyPoloh[b[6]]; const r = b.slice(0, 6); if (o && o.poloha) { r[1] = o.poloha[0]; r[2] = o.poloha[1]; } return r; }),
+  bp: glottolog.body.map((b, i) => opravyPoloh[b[6]] && opravyPoloh[b[6]].poloha === null ? i : -1).filter(i => i >= 0),   // tečky bez polohy
   nr: BEZ_RODU.map(n => glottolog.rodiny.indexOf(n)).filter(i => i >= 0),
   // znakové jazyky: rodina „Sign Language“ a pár dalších, které Glottolog řadí jinam (Rennellese Sign Language)
   g: glottolog.body.map(b => b[6]),           // glottocode – stálý kód tečky pro odkaz #corn1251

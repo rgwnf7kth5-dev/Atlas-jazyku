@@ -80,7 +80,9 @@ for (let i = 0; i < POCET_B; i++) {
   const sk = radek(i)[2];
   if (sk >= 0) { if (!sourozenci.has(sk)) sourozenci.set(sk, []); sourozenci.get(sk).push(i); }
 }
-const BEZ_RODU = new Set(REJSTRIK.nr);           // umělé jazyky, pidžiny, smíšené jazyky, zvláštní mluvy: nejsou rodina
+const BEZ_RODU = new Set(REJSTRIK.nr);
+const BEZ_POLOHY = new Uint8Array(REJSTRIK.b.length);    // esperanto a spol.: v seznamu jsou, na glóbu ne
+REJSTRIK.bp.forEach(function(i){ BEZ_POLOHY[i] = 1; });           // umělé jazyky, pidžiny, smíšené jazyky, zvláštní mluvy: nejsou rodina
 const BOD_ATLASU = {};                            // jazyk z atlasu → jeho tečka v rejstříku
 for (let i = POCET_B - 1; i >= 0; i--) if (B[i][5]) BOD_ATLASU[B[i][5]] = i;
 /* rodina a světadíl jazyka z atlasu pro řazení police; pět jazyků atlasu (např. srbština) tečku nemá:
@@ -320,6 +322,7 @@ function hlidej(){
 }
 /* podtitul malé dlaždice: první stát (a kolik dalších), jinak světadíl */
 function kdeBod(i){
+  if (BEZ_POLOHY[i]) return T.bezDomova;
   const staty = (radek(i)[3] || "").split(" ").filter(Boolean);
   if (!staty.length) return REJSTRIK.mm[B[i][4]] || "";
   return (PD.staty[T.lang][staty[0]] || staty[0]) + (staty.length > 1 ? " +" + (staty.length - 1) : "");
@@ -729,7 +732,7 @@ function spocitejBody(){
   const cx = sirka / 2 + posun, cy = vyska / 2;
   let n = 0;
   for (let i = 0; i < POCET_B; i++) {
-    if (skryty[i]) { bVid[i] = 0; continue; }
+    if (skryty[i] || BEZ_POLOHY[i]) { bVid[i] = 0; continue; }
     const dl = bLon[i] - l0, cdl = Math.cos(dl);
     if (bSinLat[i] * sf0 + bCosLat[i] * cf0 * cdl <= 0.002) { bVid[i] = 0; continue; }
     const x = cx + polomer * (bCosLat[i] * Math.sin(dl)), y = cy - polomer * (cf0 * bSinLat[i] - sf0 * bCosLat[i] * cdl);
@@ -872,7 +875,7 @@ function kresliPopredi(cas){
       }
     });
   }
-  if (srovnani) {                       /* druhý jazyk srovnání: kroužek v jeho barvě */
+  if (srovnani && !(srovnani.b.i >= 0 && BEZ_POLOHY[srovnani.b.i])) {   /* druhý jazyk srovnání: kroužek v jeho barvě */
     const v = vektor(srovnani.b.lon, srovnani.b.lat); v.push(1);
     if (sf0 * v[2] + cf0 * (v[0] * cl0 + v[1] * sl0) > 0.02) {
       promitni(v, p);
@@ -881,7 +884,7 @@ function kresliPopredi(cas){
       c.lineWidth = 2; c.strokeStyle = srovnani.b.sk && srovnani.b.sk !== srovnani.a.sk ? barvy["r-" + srovnani.b.sk] : barvy.fialova; c.stroke();
     }
   }
-  if (vybrany) {                        /* zaměřovač na vybraném místě */
+  if (vybrany && !vybrany.bezPolohy) {  /* zaměřovač na vybraném místě */
     const hlavni = vybrany.typ === "atlas" ? BOD_ATLASU[vybrany.id] : vybrany.i;    // zaměřovač na domovské tečce jazyka
     const v = hlavni >= 0 ? vektor(B[hlavni][1], B[hlavni][2]) : vektor(vybrany.stred[0], vybrany.stred[1]); v.push(1);
     const e = v[0] * cl0 + v[1] * sl0;
@@ -960,7 +963,7 @@ function obnovPriznaky(){
   }
   if (zeme) zeme.body.forEach(function(i){ if (!zakladJaz[i]) zakladJaz[i] = 5; });
   if (eu) EU.forEach(function(x){ if (x.i >= 0 && !zakladJaz[x.i]) zakladJaz[x.i] = 5; });
-  for (let i = 0; i < POCET_B; i++) if (skryty[i]) zakladJaz[i] = 4;
+  for (let i = 0; i < POCET_B; i++) if (skryty[i] || BEZ_POLOHY[i]) zakladJaz[i] = 4;
   fJaz.set(zakladJaz);
   if (zvyraznenyBod >= 0) fJaz[zvyraznenyBod] = 3;
   if (gl) nahrajPriznaky(glJaz);
@@ -1255,7 +1258,7 @@ function poVyberu(cilZoom){
   odhaleniOd = bezPohybu.matches ? 0 : -1;
   if (autoOtaceni) nastavOtaceni(false);   // vybraný jazyk ať neujíždí z očí
   okno.hidden = true; bublinaBod.hidden = true;
-  if (globusOk) { spoctiPosun(); letKe(vybrany.stred, cilZoom); }
+  if (globusOk) { spoctiPosun(); if (!vybrany.bezPolohy) letKe(vybrany.stred, cilZoom); }   // jazyk bez polohy: glóbus zůstane
   $("tl-cely").hidden = false;
   $("napoveda").textContent = tx("napovedaVyber");
   if (strom) strom.poVyberu();
@@ -1291,7 +1294,7 @@ function vyberBod(i){
   if (B[i][5] && PODLE_ID[B[i][5]]) { vyber(B[i][5]); return; }
   if (srovnani) ukonciSrovnani();
   zeme = null;
-  vybrany = {typ: "rejstrik", i: i, zeme: [], ob: [], stred: [B[i][1], B[i][2]], pribuzni: pribuzniBodu(i, false, 6)};
+  vybrany = {typ: "rejstrik", i: i, zeme: [], ob: [], stred: [B[i][1], B[i][2]], pribuzni: pribuzniBodu(i, false, 6), bezPolohy: !!BEZ_POLOHY[i]};
   if (globusOk) obnovPriznaky();
   ukazKartuBodu(i);
   poVyberu(Math.max(zoom, 2.6));
@@ -1682,11 +1685,11 @@ function ukazKartuBodu(i){
   otevriKartu("var(--cyan)", "var(--na-cyan)", novy);
   $("k-plne").hidden = true; tlPrehraj.hidden = true;
   const jmeno = jmenoBodu(i);
-  $("k-kod").textContent = souradnice(B[i][1], B[i][2]);
+  $("k-kod").textContent = BEZ_POLOHY[i] ? T.bezDomova : souradnice(B[i][1], B[i][2]);
   $("k-nazev").textContent = jmeno;
   $("k-domaci").textContent = jmeno !== B[i][0] ? t("teckaNazev", {x: B[i][0]}) : T.teckaMezinarodni;
   const od = $("k-odznak");
-  const oblast = REJSTRIK.mm[B[i][4]];
+  const oblast = BEZ_POLOHY[i] ? "" : REJSTRIK.mm[B[i][4]];
   od.textContent = REJSTRIK.rr[B[i][3]] + (oblast ? " · " + oblast : "");
   od.hidden = false;
 
@@ -1700,7 +1703,8 @@ function ukazKartuBodu(i){
   const prehled = [], stavba = [], rod = [];
   if (znak) { const o = oddil(T.znakovyCo); o.appendChild(prvek("p", null, T.znakovyVysvetleni)); prehled.push(o); }
   if (r[0] >= 0) prehled.push(oddilVitality(r[0], znak));
-  const staty = (r[3] || "").split(" ").filter(Boolean);
+  const staty = BEZ_POLOHY[i] ? [] : (r[3] || "").split(" ").filter(Boolean);
+  if (BEZ_POLOHY[i]) { const o = oddil(T.kdeMluviTecka); o.appendChild(prvek("p", null, t("bezDomovaText", {a: jmenoBodu(i)}))); prehled.push(o); }
   if (staty.length) {
     const o = oddil(znak ? T.kdeZnakuje : T.kdeMluviTecka), ul = prvek("ul", "staty");
     staty.slice(0, 12).forEach(function(k){ ul.appendChild(prvek("li", null, PD.staty[T.lang][k] || k)); });
@@ -2451,7 +2455,8 @@ function dokonciSrovnani(b){
   velikostKarty("");
   if (globusOk && ctx) {
     obnovPriznaky(); spoctiPosun();
-    const va = vektor(a.lon, a.lat), vb = vektor(b.lon, b.lat);
+    const bezA = a.i >= 0 && BEZ_POLOHY[a.i], bezB = b.i >= 0 && BEZ_POLOHY[b.i];   // jazyk bez polohy: jen k tomu druhému
+    const va = vektor(bezA ? b.lon : a.lon, bezA ? b.lat : a.lat), vb = vektor(bezB ? a.lon : b.lon, bezB ? a.lat : b.lat);
     const s2 = [va[0] + vb[0], va[1] + vb[1], va[2] + vb[2]], d = Math.hypot(s2[0], s2[1], s2[2]) || 1;
     const stred = [Math.atan2(s2[1], s2[0]) / R, Math.asin(s2[2] / d) / R];
     const uhel = Math.acos(Math.max(-1, Math.min(1, va[0] * vb[0] + va[1] * vb[1] + va[2] * vb[2])));

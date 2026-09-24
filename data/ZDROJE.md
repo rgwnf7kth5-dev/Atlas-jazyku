@@ -21,8 +21,9 @@ Knihovny ve `vendor/` jsou vložené přímo do stránky (stránka nesmí závis
 
 ## Úpravy oproti zdrojům
 
-- `polohy-opravy.json`: poloha tečky, kde Glottolog odporuje sám sobě. Esperanto má v Glottologu tečku
-  ve Francii, ale jako zemi Polsko; tečka je proto ve Varšavě, kde L. L. Zamenhof roku 1887 esperanto zveřejnil.
+- `polohy-opravy.json`: úpravy poloh teček. Esperanto, interlingua a interslovanština jsou mezinárodní
+  pomocné jazyky bez domovského území, proto na glóbu tečku nemají (Glottolog jim ji dává, esperantu dokonce
+  ve Francii se zemí Polsko). V seznamu a hledání zůstávají.
 
 ## Co je odhad
 

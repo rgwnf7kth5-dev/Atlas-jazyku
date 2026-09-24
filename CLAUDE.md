@@ -78,8 +78,11 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
   rodokmen ani společného předka ve srovnání; karta místo toho vysvětlí, proč do žádné rodiny nepatří.
   (Uživatel narazil na esperanto s oblouky k interslovanštině a znakovému jazyku na Šalamounových ostrovech.)
 - **Opravy poloh** jsou v `data/polohy-opravy.json` (glottocode → poloha a důvod), build je použije místo
-  Glottologu. Jen tam, kde Glottolog odporuje sám sobě: esperanto měl tečku ve Francii, ale zemi Polsko →
-  Varšava (Unua Libro, 1887). Glottolog jinak neopravovat bez doloženého důvodu.
+  Glottologu. `"poloha": null` tečku z glóbu schová (`REJSTRIK.bp`, v aplikaci `BEZ_POLOHY`): jazyk zůstane
+  v seznamu, hledání i srovnání, ale nemá tečku, zaměřovač ani let glóbu, karta místo států řekne proč.
+  Tak jsou esperanto, interlingua a interslovanština – mezinárodní pomocné jazyky nevznikly na žádném místě
+  (uživatel: „umělé jazyky by neměly mít polohu“). Efatština a rennellský znakový jazyk jsou v Glottologu také
+  „umělé“, ale patří ke konkrétním ostrovům, tečku si nechávají. Glottolog jinak neopravovat bez důvodu.
 - Od vybraného jazyka vedou světelné oblouky k nejbližším příbuzným (nejvýš 6, podle nejhlubšího společného
   předka ve stromu Glottologu). U jazyka z atlasu jen k jiným jazykům atlasu, karta je vypisuje.
 

@@ -56,7 +56,7 @@ if (pd.uzly.length !== pd.nad.length) chyby.push("data/podrobnosti.json: strom p
   for (const [k, o] of Object.entries(json("data/polohy-opravy.json"))) {
     if (k.startsWith("_")) continue;
     if (!kody.has(k)) chyby.push(`data/polohy-opravy.json: tečka „${k}“ v Glottologu není`);
-    if (!Array.isArray(o.poloha) || Math.abs(o.poloha[0]) > 180 || Math.abs(o.poloha[1]) > 90 || !o.proc) chyby.push(`data/polohy-opravy.json: „${k}“ potřebuje polohu [délka, šířka] a důvod`);
+    if (!o.proc || (o.poloha !== null && (!Array.isArray(o.poloha) || Math.abs(o.poloha[0]) > 180 || Math.abs(o.poloha[1]) > 90))) chyby.push(`data/polohy-opravy.json: „${k}“ potřebuje polohu [délka, šířka] nebo null a důvod`);
   } }
 { const uzly = new Set(pd.uzly);                // české názvy větví pro rodokmen: jen větve, které ve stromu opravdu jsou
   for (const k of Object.keys(json("data/glottolog-branches.cs.json"))) if (!uzly.has(k)) chyby.push(`data/glottolog-branches.cs.json: větev „${k}“ v Glottologu není`); }
