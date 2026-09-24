@@ -72,15 +72,6 @@ if (pd.uzly.length !== pd.nad.length) chyby.push("data/podrobnosti.json: strom p
   } }
 { const uzly = new Set(pd.uzly);                // české názvy větví pro rodokmen: jen větve, které ve stromu opravdu jsou
   for (const k of Object.keys(json("data/glottolog-branches.cs.json"))) if (!uzly.has(k)) chyby.push(`data/glottolog-branches.cs.json: větev „${k}“ v Glottologu není`); }
-/* fotky na pohlednice: každá musí mít autora, licenci a odkaz na zdroj (CC BY to vyžaduje) a soubor musí existovat */
-if (fs.existsSync(path.join(KOREN, "data/fotky.json"))) {
-  const idAtlasu = new Set(jazyky.map(j => j.id));
-  for (const [id, f] of Object.entries(json("data/fotky.json").fotky || {})) {
-    if (!idAtlasu.has(id)) chyby.push(`data/fotky.json: jazyk „${id}“ v atlasu není`);
-    if (!f.autor || !f.licence || !/^https:\/\/commons\.wikimedia\.org\//.test(f.zdroj || "")) chyby.push(`data/fotky.json: u „${id}“ chybí autor, licence nebo odkaz na Commons`);
-    if (!fs.existsSync(path.join(KOREN, "static", f.soubor || "-"))) chyby.push(`data/fotky.json: soubor ${f.soubor} pro „${id}“ chybí ve static/`);
-  }
-}
 for (const [l, ui] of [["cs", uiCs], ["en", uiEn]]) {
   if (!Array.isArray(ui.aes) || ui.aes.length !== 7) chyby.push(`src/ui/${l}.json: „aes“ musí mít 7 položek (6 stupňů UNESCO + probouzený)`);
   if (!Array.isArray(ui.aesZnak) || ui.aesZnak.length !== 7) chyby.push(`src/ui/${l}.json: „aesZnak“ musí mít 7 položek jako „aes“`);

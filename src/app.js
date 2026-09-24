@@ -225,14 +225,6 @@ function postavPolici(filtr){
       const cta = prvek("span", "jd-akce", T.jazykDneUkaz);
       cta.insertAdjacentHTML("beforeend", '<svg aria-hidden="true"><use href="#i-dal"/></svg>');
       tl.appendChild(cta);
-      const f = FOTKY[d.id];
-      if (f) {                                   // fotka vpravo, rozplývá se do bílé karty (obrázek B)
-        tl.classList.add("s-fotkou");
-        const obr = prvek("span", "jd-foto"); obr.style.backgroundImage = "url(\"" + f.soubor + "\")";
-        tl.insertBefore(obr, tl.firstChild);
-        const a = prvek("span", "jd-autor", popisekFotky(f)); a.title = f.nazev;
-        tl.appendChild(a);
-      }
       tl.addEventListener("click", function(){ vyber(d.id); });
       seznam.appendChild(tl);
     }
@@ -527,15 +519,6 @@ function kresliBodyGl(){
    Barvy dodá CSS (--more-*, --souse-*), takže z jednoho obrázku je denní i noční glóbus.
    Kreslí se do vlastního plátna mimo stránku a to se vloží do #podklad místo ploché koule a pevniny. */
 const RELIEF = /*__RELIEF__*/null;
-/* fotky na pohlednice z Wikimedia Commons (scripts/fotky.mjs): id jazyka → soubor, autor, licence, zdroj, místo */
-const FOTKY = /*__FOTKY__*/null || {};
-function popisekFotky(f){ return T.foto + " " + f.autor + ", " + f.licence + " · Wikimedia Commons"; }
-/* pohlednice na kartě: fotka místa, odkud jazyk pochází, s autorem a licencí (CC BY to vyžaduje) */
-function fotkaNaKarte(id){
-  const f = id && FOTKY[id], el = $("k-foto"), autor = $("k-foto-autor");
-  kartaHero.classList.toggle("s-fotkou", !!f);
-  el.hidden = autor.hidden = !f;
-  if (!f) { el.style.backgroundImage = ""; return; }
   el.style.backgroundImage = "url(\"" + f.soubor + "\")";
   autor.textContent = popisekFotky(f); autor.href = f.zdroj; autor.title = f.nazev;
 }
@@ -1648,7 +1631,6 @@ const karta = $("karta"), kartaTelo = $("k-telo"), kartaStitky = $("k-stitky"), 
 function otevriKartu(barva, textBarva, novyJazyk){
   karta.hidden = false;
   kartaHero.classList.remove("srovnani", "vymysleny");    // karta srovnání a vymyšleného jazyka mají vlastní záhlaví
-  fotkaNaKarte(null);
   const dvojice = kartaHero.querySelector(".k-dvojice"); if (dvojice) dvojice.remove();
   $("k-porovnat").hidden = false;
   kartaHero.style.setProperty("--r-barva", barva);
@@ -1746,7 +1728,6 @@ function ukazKartu(j){
   karta.dataset.jazyk = j.id;
   otevriKartu("var(--r-" + j.sk + ")", "var(--t-" + j.sk + ")", novy);
   $("k-plne").hidden = false; $("k-odznak").hidden = true;
-  fotkaNaKarte(j.id);
   const domov = BOD_ATLASU[j.id] >= 0 ? B[BOD_ATLASU[j.id]] : [0, j.stred[0], j.stred[1]];
   $("k-kod").textContent = souradnice(domov[1], domov[2]);
   $("k-nazev").textContent = j.n;
@@ -1870,7 +1851,6 @@ function ukazKartuBodu(i){
   karta.dataset.jazyk = kodB;
   otevriKartu("var(--cyan)", "var(--na-cyan)", novy);
   $("k-plne").hidden = true; tlPrehraj.hidden = true;
-  fotkaNaKarte(B[i][5] || null);
   const jmeno = jmenoBodu(i);
   $("k-kod").textContent = BEZ_POLOHY[i] ? T.bezDomova : souradnice(B[i][1], B[i][2]);
   $("k-nazev").textContent = jmeno;
