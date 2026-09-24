@@ -207,9 +207,55 @@ function nadpis(text, barva){
   h3.appendChild(document.createTextNode(text));
   return h3;
 }
+/* Evropský den jazyků (26. září, Rada Evropy od roku 2001): jen ten den milá karta nad Jazykem dne.
+   Vyzkoušet jde kdykoli adresou s ?den-jazyku. Zavřená karta se do dalšího roku neukáže. */
+const EVROPSKE = ["cs", "sk", "pl", "de", "en", "fr", "es", "it", "pt", "nl", "sv", "da", "no", "fi", "is", "ga", "cy", "el", "hu", "ro",
+  "bg", "hr", "sr", "sl", "uk", "ru", "be", "lt", "lv", "et", "sq", "mk", "mt", "ca", "eu", "gl", "lb", "fo", "br", "gd", "se", "hy", "ka", "tr"];
+let denJazykuZavren = false;
+function denJazyku(){
+  const d = new Date(), klic = "atlas-den-jazyku-" + d.getFullYear();
+  if (denJazykuZavren) return false;
+  try { if (localStorage.getItem(klic)) return false; } catch (e) {}
+  return (d.getMonth() === 8 && d.getDate() === 26) || /(^|[?&])den-jazyku/.test(location.search);
+}
+let pozdravyTimer = 0;
+function kartaDneJazyku(){
+  const jazyky = EVROPSKE.map(function(id){ return PODLE_ID[id]; }).filter(function(j){ return j && !atlasSkryty(j); });
+  const k = prvek("section", "den-jazyku");
+  k.setAttribute("aria-label", T.denJazyku);
+  const x = prvek("button", "dj-zavrit"); x.type = "button"; x.setAttribute("aria-label", T.denJazykuZavrit);
+  x.innerHTML = '<svg aria-hidden="true"><use href="#i-krizek"/></svg>';
+  x.addEventListener("click", function(){
+    denJazykuZavren = true; clearInterval(pozdravyTimer);
+    try { localStorage.setItem("atlas-den-jazyku-" + new Date().getFullYear(), "1"); } catch (e) {}
+    k.remove();
+  });
+  k.appendChild(x);
+  k.appendChild(prvek("span", "dj-stitek", T.denJazykuDatum));
+  const pz = prvek("span", "dj-pozdrav"), jm = prvek("span", "dj-jazyk");
+  k.appendChild(pz); k.appendChild(jm);
+  let n = Math.floor(Math.random() * jazyky.length);
+  function dalsi(){
+    const j = jazyky[n++ % jazyky.length];
+    pz.textContent = j.pis; if (j.kod) pz.lang = j.kod; jm.textContent = j.n;
+    pz.classList.remove("dj-vjezd"); void pz.offsetWidth; pz.classList.add("dj-vjezd");
+  }
+  dalsi();
+  clearInterval(pozdravyTimer);
+  if (!bezPohybu.matches) pozdravyTimer = setInterval(function(){ if (!k.isConnected) { clearInterval(pozdravyTimer); return; } dalsi(); }, 1800);
+  k.appendChild(prvek("p", "dj-text", T.denJazykuText));
+  const akce = prvek("div", "dj-akce");
+  const b1 = prvek("button", "dj-tl hlavni", T.denJazykuNahodny); b1.type = "button";
+  b1.addEventListener("click", function(){ vyber(jazyky[Math.floor(Math.random() * jazyky.length)].id); });
+  const b2 = prvek("button", "dj-tl", T.denJazykuEU); b2.type = "button";
+  b2.addEventListener("click", function(){ spustEU(); });
+  akce.appendChild(b1); akce.appendChild(b2); k.appendChild(akce);
+  return k;
+}
 function postavPolici(filtr){
   const hledane = bezDiakritiky(filtr || "").trim();
   seznam.textContent = "";
+  if (!hledane && denJazyku()) seznam.appendChild(kartaDneJazyku());
   if (!hledane) {                            /* jazyk dne nahoře */
     const d = jazykDne();
     if (d) {
