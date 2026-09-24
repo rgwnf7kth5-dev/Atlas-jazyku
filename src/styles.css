@@ -83,7 +83,6 @@ button{font:inherit;color:inherit}
 .nadpisy{margin-right:auto; min-width:0}
 h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8vw,1.8rem); line-height:1; margin:0; letter-spacing:.01em;
   background:var(--nadpis-grad); -webkit-background-clip:text; background-clip:text; color:transparent}
-.podnadpis{margin:3px 0 0; font-family:var(--pismo-data); font-size:.7rem; letter-spacing:.06em; color:var(--text2)}
 .jazyk-prepinac{height:38px; display:grid; place-items:center; padding:0 14px; border-radius:12px; text-decoration:none; color:var(--text);
   font-weight:600; font-size:.84rem; background:var(--plocha); border:1px solid var(--sklo-okraj); transition:border-color .15s, box-shadow .15s}
 .jazyk-prepinac:hover{border-color:var(--cyan); box-shadow:0 0 18px -4px var(--cyan-zare)}
@@ -102,7 +101,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
 /* rodokmen: 3D strom rodiny místo glóbu */
 #strom{z-index:4; touch-action:none; cursor:grab}
 #strom.tahne{cursor:grabbing}
-.scena.rezim-strom :is(#podklad,#gl,#popisky,#globus,.hud,.legenda,.napoveda,.ukazatel,.zoom-ovl,#tl-cely,.zeme-okno,.bublina-bod){display:none !important}
+.scena.rezim-strom :is(#podklad,#gl,#popisky,#globus,.hud,.napoveda,.tl-napoveda,.ukazatel,.zoom-ovl,#tl-cely,.zeme-okno,.bublina-bod){display:none !important}
 #tl-strom[aria-pressed="true"]{background:var(--cyan-slabe); color:var(--aktivni-text)}
 .strom-hlava{position:absolute; z-index:5; top:14px; right:16px; display:flex; align-items:center; gap:6px; padding:5px; border-radius:999px; max-width:calc(100% - 32px)}
 .strom-hlava label{display:flex; align-items:center; gap:8px; min-width:0; padding-left:8px; font-size:.78rem; font-weight:600; color:var(--text2)}
@@ -114,7 +113,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
   padding:8px 12px; border-radius:14px; background:var(--sklo-tl); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border:1px solid var(--linka)}
 .scena:has(.karta:not([hidden])) .strom-napoveda{display:none}
 /* velikonoční vajíčko „eulang“: panel s vlajkou EU; hvězdičky vlajky naskočí jedna po druhé, vlajka vlaje */
-.scena.rezim-eu :is(.legenda,.napoveda){display:none}
+.scena.rezim-eu :is(.napoveda,.tl-napoveda){display:none}
 .eu-panel{position:absolute; z-index:7; top:16px; right:16px; width:min(350px, 44%); display:grid; grid-template-columns:auto 1fr auto; gap:6px 12px;
   align-items:start; padding:12px; border-radius:20px; animation:eu-in .45s cubic-bezier(.2,.9,.3,1.2)}
 @keyframes eu-in{from{opacity:0; transform:translateY(-14px) scale(.92)}}
@@ -156,7 +155,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
 .sr-pata /* Brána do jiných světů („mellon“): glóbus odletí do dálky, ve hvězdách se vznášejí vymyšlené světy */
 .scena canvas{transition:transform .9s cubic-bezier(.5,0,.2,1), opacity .7s ease}
 .scena.rezim-brana :is(#podklad,#gl,#popisky,#globus){transform:scale(.08); transform-origin:20% 78%; opacity:0; pointer-events:none}
-.scena.rezim-brana :is(.hud,.legenda,.napoveda,.ukazatel,.zoom-ovl,#tl-cely,.zeme-okno,.bublina-bod,.srovnani-vyzva){display:none !important}
+.scena.rezim-brana :is(.hud,.napoveda,.tl-napoveda,.ukazatel,.zoom-ovl,#tl-cely,.zeme-okno,.bublina-bod,.srovnani-vyzva){display:none !important}
 .brana{position:absolute; inset:0; z-index:5; pointer-events:none}
 .brana > *{pointer-events:auto}
 .brana-hlava{position:absolute; top:16px; right:16px; width:min(420px, 56%); padding:12px 14px; border-radius:18px; animation:eu-in .5s .3s both}
@@ -265,11 +264,21 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
 .kolo svg{width:14px;height:14px}
 .zoom-hod{min-width:46px; text-align:center; font-family:var(--pismo-data); font-size:.72rem; color:var(--cyan); font-variant-numeric:tabular-nums}
 
-.napoveda,.legenda{position:absolute; z-index:5; margin:0; font-size:.76rem; color:var(--text2); pointer-events:none;
+.napoveda{position:absolute; z-index:5; margin:0; font-size:.76rem; color:var(--text2); pointer-events:none;
   padding:6px 12px; border-radius:14px; background:var(--sklo-tl); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
   border:1px solid var(--linka)}
-/* nápověda jen poprvé: tři kroky, hotový se odškrtne */
-.napoveda{left:44px; top:16px; max-width:min(330px,50%); padding:11px 36px 11px 12px; border-radius:16px; pointer-events:auto; font-size:.8rem;
+/* nápověda za otazníkem vpravo nahoře: tři kroky, hotový se odškrtne */
+.tl-napoveda{position:absolute; z-index:6; top:16px; right:16px; width:36px; height:36px; padding:0; border-radius:50%; cursor:pointer;
+  display:grid; place-items:center; font:700 1.05rem/1 var(--pismo-nadpis); color:var(--text); border:1px solid var(--sklo-okraj)}
+.tl-napoveda:hover,.tl-napoveda[aria-expanded="true"]{border-color:var(--cyan); color:var(--cyan)}
+@media (hover:hover){
+  .tl-napoveda::after{content:attr(aria-label); position:absolute; top:calc(100% + 7px); right:0; white-space:nowrap; pointer-events:none;
+    font:600 .62rem/1 var(--pismo-data); letter-spacing:.14em; text-transform:uppercase; color:var(--text); padding:6px 9px; border-radius:8px;
+    background:var(--sklo2); border:1px solid var(--sklo-okraj); opacity:0; transform:translateY(-3px); transition:opacity .15s, transform .15s}
+  .tl-napoveda:hover::after,.tl-napoveda:focus-visible::after{opacity:1; transform:none}
+  .tl-napoveda[aria-expanded="true"]::after{display:none}
+}
+.napoveda{z-index:7; right:16px; top:62px; max-width:min(330px,calc(100% - 32px)); padding:11px 36px 11px 12px; border-radius:16px; pointer-events:auto; font-size:.8rem;
   transition:opacity .5s, transform .5s}
 .napoveda.mizi{opacity:0; transform:translateY(-6px); transition-delay:.6s}
 .napoveda ol{list-style:none; margin:0; padding:0; display:grid; gap:8px; counter-reset:krok}
@@ -286,9 +295,6 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
   color:var(--text2); cursor:pointer; display:grid; place-items:center}
 .napoveda-x:hover{color:var(--text); background:var(--plocha)}
 .napoveda-x svg{width:12px; height:12px}
-.legenda{right:16px; top:16px; display:flex; align-items:center; gap:8px; max-width:min(330px,40%)}
-.scena:has(.karta:not([hidden])) .napoveda{display:none}
-.legenda i{width:7px;height:7px;border-radius:50%; background:var(--tecka-jazyk); box-shadow:0 0 8px var(--tecka-jazyk); flex:none}
 
 /* ---------- karta jazyka ---------- */
 .karta{position:absolute; z-index:6; left:18px; top:62px; width:min(360px,44%); max-height:calc(100% - 130px); overflow:auto;
@@ -532,8 +538,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
   .app{padding:8px; gap:8px}
   .hlava{gap:10px 12px; padding:9px 12px; border-radius:18px}
   .znak{width:36px;height:36px}
-  .nadpisy{flex:1 1 calc(100% - 60px)}
-  .podnadpis{font-size:.62rem}
+  .nadpisy{flex:1 1 auto}
     .jazyk-prepinac{height:34px}
   .prepinac{width:34px; height:34px}
 }
@@ -545,8 +550,8 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
   .scena .globus-misto{width:100%; aspect-ratio:1/1; max-height:58vh; flex:none}
   .hud{inset:10px; bottom:auto; height:calc(min(100vw - 16px, 58vh) - 20px)}
   .hud .souradnice{top:3px; bottom:auto}
-    .napoveda{position:relative; left:auto; top:auto; max-width:none; margin:0 12px 10px}
-  .legenda{position:static; transform:none; max-width:none; margin:0 12px 10px; justify-content:center; text-align:center; align-self:center}
+    .tl-napoveda{top:10px; right:10px}
+    .napoveda{top:54px; right:10px; max-width:calc(100% - 20px)}
   .dok{position:relative; left:auto; bottom:auto; transform:none; align-self:center; margin:4px auto 10px; max-width:calc(100% - 16px)}
   .dok .tl{padding:8px 11px}
   .dok .zoom-hod{display:none}

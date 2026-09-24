@@ -39,7 +39,6 @@
   </svg>
   <div class="nadpisy">
    <h1 data-t="nazev">{{nazev}}</h1>
-   <p class="podnadpis" data-t="podnadpis">{{podnadpis}}</p>
   </div>
   <a class="jazyk-prepinac" id="jazyk-prepinac" href="{{odkazJinam}}" hreflang="{{jinyKod}}" lang="{{jinyKod}}" title="{{jinyJazykPopis}}" data-t="jinyJazyk" data-t-title="jinyJazykPopis">{{jinyJazyk}}</a>
   <button class="prepinac" id="prepinac" type="button" aria-pressed="false" aria-label="{{motiv}}" title="{{motiv}}" data-t-aria-label="motiv" data-t-title="motiv">
@@ -101,6 +100,7 @@
      <p class="vp-zdroj" data-t="vitalitaZdroj">{{vitalitaZdroj}}</p>
     </div>
    </div>
+   <button class="tl-napoveda sklo" id="tl-napoveda" type="button" aria-expanded="false" aria-controls="napoveda" aria-label="{{napoveda}}" data-t-aria-label="napoveda">?</button>
    <div class="napoveda" id="napoveda" hidden role="note">
     <ol>
      <li data-krok="zatoc"><i></i><span><b data-t="krokZatoc">{{krokZatoc}}</b> <span data-t="krokZatocJak">{{krokZatocJak}}</span></span></li>
@@ -122,7 +122,6 @@
     <strong data-t="vypadekNadpis">{{vypadekNadpis}}</strong>
     <span data-t="vypadekText">{{vypadekText}}</span>
    </div>
-   <p class="legenda" id="legenda"><i></i><span data-t="legenda">{{legenda}}</span></p>
    <div class="ukazatel" id="ukazatel" hidden aria-hidden="true"><i></i><i></i></div>
 
    <article class="karta sklo" id="karta" hidden aria-live="polite">

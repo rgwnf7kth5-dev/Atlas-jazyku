@@ -63,7 +63,6 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
   bezpečný → vymřelý, `--vit-0`…`--vit-5`), prošla validátorem palet `--ordinal` na pevnině v noci i ve dne;
   probouzený zeleně (`--vit-6`), bez údaje šedě. Pořadí ani odstíny neměnit bez nového ověření.
   Vitalita je na kartě tečky i na kartě jazyka z atlasu (`oddilVitality`).
-- Popisek dole na glóbu se mění podle filtru („Podle filtru svítí 4 095 z 7 967…“) a při barvení vitality.
 - **Odkaz na jazyk**: `#cs` (id jazyka z atlasu) nebo `#corn1251` (glottocode tečky, build ho dává do `REJSTRIK.g`).
   Výběr zapíše adresu (`history.replaceState`), otevření odkazu jazyk vybere; když ho schovává filtr, filtry se zruší.
   Tlačítko s řetízkem na kartě odkaz zkopíruje (v artefaktu je skryté).
@@ -95,7 +94,7 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
 - **Lišta dole na glóbu** (`.dok`): Náhodný jazyk (hlavní tlačítko), Celý svět (jen když je něco vybrané), zoom
   a „Zobrazení“. Pod tím je **panel Zobrazení** (`#panel-zobrazeni`): otáčení, jména, znakové jazyky a řádek
   Vitalita, který otevře podstránku se stupni (šipka Zpět, Escape zavře napřed ji, pak panel). Odznak na
-  tlačítku Zobrazení ukazuje počet zapnutých filtrů. Legenda je vpravo nahoře.
+  tlačítku Zobrazení ukazuje počet zapnutých filtrů. Vpravo nahoře je jen otazník s nápovědou.
 - **Karta jako pohlednice**: nahoře „hero“ v barvě rodiny (u teček bez atlasu azurová) s velkým pozdravem,
   pod ním štítky (mluvčích, rodina, vitalita) a záložky (atlas: Zajímavost / Vitalita / Příbuzní;
   tečka: Přehled / Jak funguje / Příbuzní). Při výběru nového jazyka karta vjede (`vjezd`).
@@ -120,13 +119,16 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
   na úchyt přepíná lištu a běžnou velikost. Tažení glóbu nebo stromu a otevření rodokmenu kartu samo uklidí
   do lišty (`uklidKartu`). Lišta je pod glóbem, pod 480 px jen ikony. Po výběru stránka odroluje nahoru ke glóbu.
   Rodokmen je na telefonu užší a protažený nahoru (elipsa `m.sx`/`m.sy`, `OKRAJ` 0,2 π), jinak byl moc široký.
-- **Úvod**: glóbus přiletí z vesmíru (2,2 s). Pak se **jen poprvé** ukáže nápověda o třech krocích (Zatoč – Přibliž –
-  Klikni, `#napoveda`); hotový krok se sám odškrtne (tažení, kolečko / dva prsty / tlačítka zoomu, klik na tečku
-  nebo zemi) a po všech třech, po prvním výběru jazyka nebo křížkem nápověda zmizí navždy (`atlas-napoveda`).
-  Zároveň jedna tečka (česky čeština, anglicky angličtina) tiše pulzuje dvěma tenkými kroužky, dokud si člověk
-  poprvé nevybere jazyk (`atlas-uvitano`). Uživatel (24. 9. 2026): trvalý text „Chytni glóbus…“ a žlutá bublina
-  „Klikni na mě!“ po chvíli překážely a web působil nedodělaně – **žádnou trvalou instrukci na glóbus nevracet**,
-  ani do legendy (z ní „Klikni na něj“ zmizelo). Při `prefers-reduced-motion` ani s odkazem `#…` přílet neběží.
+- **Úvod**: glóbus přiletí z vesmíru (2,2 s). Jedna tečka (česky čeština, anglicky angličtina) pak tiše pulzuje
+  dvěma tenkými kroužky, dokud si člověk poprvé nevybere jazyk (`atlas-uvitano`). Při `prefers-reduced-motion`
+  ani s odkazem `#…` přílet neběží.
+- **Nápověda je jen za otazníkem** vpravo nahoře na glóbu (`#tl-napoveda`, po najetí myší štítek „NÁPOVĚDA“).
+  Klik otevře tři kroky Zatoč – Přibliž – Klikni (`#napoveda`); hotový krok se sám odškrtne (tažení, kolečko /
+  dva prsty / tlačítka zoomu, klik na tečku nebo zemi, výběr jazyka), po všech třech nápověda zmizí; zavírá ji
+  i křížek, Escape a druhý klik na otazník. Uživatel (24. 9. 2026): trvalý text „Chytni glóbus…“ a žlutá bublina
+  „Klikni na mě!“ po chvíli překážely a web působil nedodělaně, **sám se nápověda neotevírá a žádná trvalá
+  instrukce na glóbus nepatří**. Stejně zmizely **navždy** rámeček legendy vpravo nahoře („Každé světélko je
+  jeden ze 7 967 jazyků světa“) a podtitul pod „Atlas jazyků“ v záhlaví – byly zdvojené a zbytečné. Nevracet.
 - **Rodokmen** (tlačítko v liště, 24. 9. 2026): místo glóbu se na plátně `#strom` ukáže strom jedné rodiny
   z Glottologu (`PD.nad`, `PD.uzly`) jako **plochý vějíř**: kořen (společný předek) dole uprostřed, větve se
   rozbíhají nahoru do půlkruhu, vzdálenost od kořene = hloubka ve stromu, úhel = pořadí listů. Hrany jsou lomené
@@ -214,7 +216,7 @@ u každého pushe.
   a stránka se zase řídí počítačem. Skript v hlavičce nastaví `data-theme` hned, aby stránka neblikla. Denní barvy jsou v `:root[data-theme="light"]`; glóbus je čte z CSS proměnných
   (`nactiBarvy`). Ve dne se světélka nesčítají (na světlé kouli by zmizela), kreslí se obyčejně.
   Ve dne se neříká „světélko“, ale „bod“: texty s tímto slovem mají denní znění s příponou `Den`
-  (`podnadpisDen`, `legendaDen`…), vybírá je `tx()` a po přepnutí vzhledu se texty obnoví (`obnovTexty`).
+  (`krokKlikniJakDen`…), vybírá je `tx()` a po přepnutí vzhledu se texty obnoví (`obnovTexty`).
 - Barvy rodin (`--r-*`): noční sada prošla validátorem palet (skill dataviz) na `#04060F` i `#101634`,
   denní sada (`#2E63D6 #E2544A #0A9BB5 #E09A18 #0A7541 #8A44C8`) na bílé. Zlatá má ve dne kontrast
   jen 2,4 : 1, proto nese tmavý text (`--t-afro`).

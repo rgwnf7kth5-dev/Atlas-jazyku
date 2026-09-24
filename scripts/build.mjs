@@ -32,14 +32,9 @@ const escHtml = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").repl
 // data jdou do <script>, proto „<“ zapíšu jako < – řetězec „</script>“ v datech by stránku rozbil
 const doSkriptu = hodnota => (typeof hodnota === "string" ? hodnota : JSON.stringify(hodnota)).replace(/</g, "\\u003c");
 
-// texty rozhraní obou jazyků; {pocet} doplním hned tady
+// texty rozhraní obou jazyků
 const UI = {};
-for (const l of ["cs", "en"]) {
-  const ui = json(`src/ui/${l}.json`);
-  const pocet = glottolog.body.length.toLocaleString(ui.locale);
-  UI[l] = { ...ui };
-  for (const k of ["podnadpis", "legenda", "podnadpisDen", "legendaDen"]) UI[l][k] = ui[k].replace("{pocet}", pocet);
-}
+for (const l of ["cs", "en"]) UI[l] = json(`src/ui/${l}.json`);
 // každá stránka nese oba jazyky, aby šlo přepnout na místě (bez nového listu a bez ztráty výběru)
 const JAZYKY = jazykyAtlasu.map(j => {
   const t = {};

@@ -1029,9 +1029,9 @@ function posunDok(){
   const x = Math.round(Math.max(w / 2 + 12, Math.min(sirka - w / 2 - 12, sirka / 2 + posun)));
   if (x !== dokX) { dokX = x; scena.style.setProperty("--dok-x", x + "px"); }
 }
-/* Nápověda jen poprvé: tři kroky (zatoč, přibliž, klikni), které se odškrtávají, a pak zmizí navždy.
+/* Nápověda za otazníkem vpravo nahoře: tři kroky (zatoč, přibliž, klikni), které se odškrtávají; po všech třech zmizí.
    Místo bubliny „Klikni na mě“ jedna tečka slabě pulzuje, dokud si člověk poprvé nevybere jazyk. */
-const ukazatel = $("ukazatel"), napoveda = $("napoveda");
+const ukazatel = $("ukazatel"), napoveda = $("napoveda"), tlNapoveda = $("tl-napoveda");
 let ukazatelBod = -1;
 const pamet = function(k){ try { return localStorage.getItem(k); } catch (e) { return null; } };
 const zapamatuj = function(k){ try { localStorage.setItem(k, "1"); } catch (e) {} };
@@ -1039,11 +1039,10 @@ function ukazUkazatel(){
   if (pamet("atlas-uvitano") || vybrany || !globusOk) return;
   ukazatelBod = BOD_ATLASU[T.lang === "en" ? "en" : "cs"];
   potrebaKresli = true;
-  if (!pamet("atlas-napoveda")) napoveda.hidden = false;
 }
 function schovejUkazatel(trvale){
   ukazatelBod = -1; ukazatel.hidden = true;
-  if (trvale) { zapamatuj("atlas-uvitano"); krokNapovedy("klikni"); zavriNapovedu(); }
+  if (trvale) { zapamatuj("atlas-uvitano"); krokNapovedy("klikni"); }
 }
 function krokNapovedy(krok){
   if (napoveda.hidden) return;
@@ -1052,13 +1051,22 @@ function krokNapovedy(krok){
   li.classList.add("hotovo");
   if (napoveda.querySelectorAll("li:not(.hotovo)").length === 0) zavriNapovedu();
 }
-function zavriNapovedu(){
-  if (napoveda.hidden || napoveda.classList.contains("mizi")) return;
-  zapamatuj("atlas-napoveda");
-  napoveda.classList.add("mizi");            // ať je chvilku vidět poslední odškrtnutí
-  setTimeout(function(){ napoveda.hidden = true; napoveda.classList.remove("mizi"); }, bezPohybu.matches ? 0 : 1100);
+let mizeniNapovedy = 0;
+function otevriNapovedu(){
+  clearTimeout(mizeniNapovedy); napoveda.classList.remove("mizi");
+  napoveda.querySelectorAll("li.hotovo").forEach(function(li){ li.classList.remove("hotovo"); });
+  napoveda.hidden = false; tlNapoveda.setAttribute("aria-expanded", "true");
 }
-$("napoveda-x").addEventListener("click", zavriNapovedu);
+function zavriNapovedu(hned){
+  if (napoveda.hidden) return;
+  tlNapoveda.setAttribute("aria-expanded", "false");
+  if (hned === true || bezPohybu.matches) { napoveda.hidden = true; return; }
+  napoveda.classList.add("mizi");            // ať je chvilku vidět poslední odškrtnutí
+  mizeniNapovedy = setTimeout(function(){ napoveda.hidden = true; napoveda.classList.remove("mizi"); }, 1100);
+}
+tlNapoveda.addEventListener("click", function(){ if (napoveda.hidden || napoveda.classList.contains("mizi")) otevriNapovedu(); else zavriNapovedu(true); });
+$("napoveda-x").addEventListener("click", function(){ zavriNapovedu(true); });
+document.addEventListener("keydown", function(e){ if (e.key === "Escape") zavriNapovedu(true); });
 function polohaUkazatele(){
   if (ukazatelBod < 0) return;
   if (!bVid[ukazatelBod]) { ukazatel.hidden = true; return; }
@@ -1387,7 +1395,6 @@ function uplatniFiltry(start){
   }
   if (zeme) zeme.body = bodyVeStatu(zeme.f.properties.name) || [];
   okno.hidden = true; bublinaBod.hidden = true;
-  obnovLegendu();
   if (start) return;                        // při startu se police a glóbus postaví samy
   postavPolici($("hledej").value);
   if (vybrany && vybrany.typ === "atlas") oznacTlacitka(vybrany.id);
@@ -1460,7 +1467,7 @@ function otevriVitalitu(otevrit){
   panelVit.hidden = !otevrit; pzHlavni.hidden = !!otevrit;
   tlVit.setAttribute("aria-expanded", otevrit ? "true" : "false");
   barvitVitalitu = !!otevrit;
-  obnovVitalituPanel(); obnovLegendu();
+  obnovVitalituPanel();
   teckyZmeneny = true; ozivit();
 }
 tlVit.addEventListener("click", function(){ otevriVitalitu(panelVit.hidden); });
@@ -1471,14 +1478,6 @@ document.addEventListener("keydown", function(e){
   if (e.key !== "Escape") return;
   if (!panelVit.hidden) otevriVitalitu(false); else if (!panelZob.hidden) otevriZobrazeni(false);
 });
-
-/* ---------- popisek dole na glóbu: podle filtru a barvení ---------- */
-function obnovLegendu(){
-  const el = document.querySelector("#legenda span");
-  if (barvitVitalitu) el.textContent = tx("legendaVitalita");
-  else if (povolenych < POCET_B) el.textContent = t("legendaFiltr", {n: cislo(povolenych), m: cislo(POCET_B)});
-  else el.textContent = tx("legenda");
-}
 
 /* ---------- odkaz na jazyk: #cs (jazyk z atlasu) nebo #corn1251 (glottocode tečky) ---------- */
 const PODLE_KODU = new Map();
@@ -1915,7 +1914,6 @@ function prelozStranku(){
 /* texty na stránce po změně jazyka nebo vzhledu */
 function obnovTexty(){
   prelozStranku();
-  obnovLegendu();
   obnovVitalituPanel();
   postavPolici($("hledej").value);
   okno.hidden = true; bublinaBod.hidden = true;
@@ -2832,5 +2830,5 @@ function tlacitkoRodokmenu(i){
 prectiOdkaz();                              // otevřeno přes odkaz na jazyk
 if (!globusOk) {
   [platno, podklad, platnoGl, platnoPopisky].forEach(function(c){ c.hidden = true; });
-  $("hud").hidden = true; $("legenda").hidden = true; $("napoveda").hidden = true; $("vypadek").hidden = false; }
+  $("hud").hidden = true; $("napoveda").hidden = true; $("vypadek").hidden = false; }
 })();

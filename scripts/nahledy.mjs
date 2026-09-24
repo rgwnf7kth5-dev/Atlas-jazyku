@@ -9,7 +9,7 @@ for (const [lang, url, nadpis, pod] of [['cs','dist/index.html','Atlas jazyků',
   const p = await ctx.newPage();
   await p.route('**/*', r => r.request().url().startsWith('file://') ? r.continue() : r.abort());
   await p.goto('file://'+R+url); await p.waitForTimeout(800);
-  await p.addStyleTag({content:`.hlava,.police,.dok,.panel-zobrazeni,.ukazatel,.napoveda,.legenda,.hud{display:none!important}
+  await p.addStyleTag({content:`.hlava,.police,.dok,.panel-zobrazeni,.ukazatel,.napoveda,.hud{display:none!important}
     .app{padding:0}.mriz{display:block;height:630px}.scena{position:fixed;left:440px;top:-30px;width:820px;height:690px;border-radius:0}
     #og{position:fixed;left:64px;top:0;bottom:0;width:430px;display:flex;flex-direction:column;justify-content:center;gap:18px;z-index:10}
     #og h1{font-size:64px;line-height:1.02}#og p{margin:0;font-family:var(--pismo-text);font-size:27px;line-height:1.3;color:var(--text2)}
