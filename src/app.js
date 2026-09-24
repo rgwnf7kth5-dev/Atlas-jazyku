@@ -2206,7 +2206,7 @@ var strom = (function(){   // var: filtry a texty se na něj ptají dřív, než
     if (druhy_) cesta2.forEach(function(n){ if (n.i >= 0 || n.deti.length > 1) kandidati.push([n, n === druhy_ ? 3 : 2]); });
     kandidati.push([m.koren, 3]);
     velke_.forEach(function(n){ kandidati.push([n, 1]); });
-    m.uzly.filter(function(n){ return n.i < 0 && n.vid && n.deti.length > 1 && n !== m.koren && (T.lang !== "cs" || PD.vetve[PD.uzly[n.u]]); })
+    m.uzly.filter(function(n){ return n.i < 0 && n.vid && n.deti.length > 1 && n !== m.koren; })   // bez překladu anglický název z Glottologu
       .sort(function(a, b){ return b.listu - a.listu; }).forEach(function(n){ kandidati.push([n, 0]); });
     if (mer >= 2.5) tecky.forEach(function(n){ kandidati.push([n, 0]); });
     let pocet = 0;

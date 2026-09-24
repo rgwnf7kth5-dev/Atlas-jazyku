@@ -139,7 +139,9 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
   Výběr rodiny nabízí rodiny s aspoň třemi jazyky; izolované jazyky strom nemají. Na kartě je v záložce
   Příbuzní tlačítko „Ukázat v rodokmenu“ (`tlacitkoRodokmenu`). Filtry (znakové, vitalita) platí i ve stromu.
   Názvy větví jsou z Glottologu anglicky; české překlady hlavních větví jsou v `data/glottolog-branches.cs.json`
-  (validace hlídá, že větev v Glottologu existuje). V české verzi se u větví ukazují popisky jen přeložených větví.
+  (validace hlídá, že větev v Glottologu existuje). Popisky větví se ukazují ve stejném počtu česky i anglicky; kde
+  překlad chybí, je v české verzi anglický název z Glottologu (dřív se nepřeložené schovávaly a česká verze byla chudší).
+  Přeloženy jsou hlavní větve všech velkých rodin a skoro všechny viditelné větve indoevropské rodiny.
 - **Srovnání dvou jazyků** (nápad uživatele 24. 9. 2026, „třeba češtinu a arabštinu“): na kartě tlačítko
   „Porovnat s jiným jazykem“, pak se druhý jazyk vybere čímkoli (tečka na glóbu, dlaždice, hledání, Překvap mě,
   list v rodokmenu) – `vyber`/`vyberBod` ho při `cekaNaDruhy` jen předají do `dokonciSrovnani`. Stav `srovnani`
