@@ -272,7 +272,17 @@ https://claude.ai/artifact/XS67Gsv9d4y2pMu7UWEGRi (soubor `build/atlas-nahled-re
   Uživatel zamítl: plakátové ploché ilustrace v barvě rodiny („nelíbí“), satelitní snímky („nic se nepozná“)
   a nakonec i skutečné fotky z Wikimedia Commons (automatický výběr přes Wikidata dával mapy, vlajky,
   cizí místa a u lakotštiny Mount Rushmore; uživatel práci zastavil). Památky a lidi na pohlednice nekreslit.
-  Světlé barvy (sníh, domy, křída) se v akvarelu nesmí násobit, jinak zmizí (`BILA`: všechny složky ≥ 0xE0).
+  Světlé barvy (sníh, domy, křída) se v akvarelu nesmí násobit, jinak zmizí (`svetla()`: všechny složky ≥ 0xE0).
+  **Perokresbu / rytinu uživatel zamítl** („je na nic“) a chtěl akvarely „daleko jemnější, detailnější, propracovanější“
+  (24. 9. 2026). Proto: hory mají rozeklaný obrys (`clenit`), stinnou stranu za žebrem od vrcholu až do sedla, žlaby
+  a sníh s jazyky, u paty opar; bližší plochy leží na papíru (`kryt`), jinak by se jimi akvarel prosvítal; koruny
+  jsou vrstvené (`koruny`, `pas`), světlá temena se nenásobí; duny mají ostrý hřbet od vrcholu a stín za ním; pole
+  jsou v perspektivě k úběžníku (`pole`); stromy mají vlastní kresbu (`jehlicnan`, `briza`, `akacie`, `baobab`,
+  `oliva`, `cypris`, `palma`), stavby taky (`domky`, `chyse`, `mlyn`). Odraz ve vodě kreslí stejný tvar znovu
+  převrácený, proto má `hory` vlastní náhodu podle tvaru. Jedna malba má 30–110 filtrů a kreslí se 50–140 ms
+  (softwarově, 2× hustota) – víc nepřidávat bez měření (skript v poznámkách: generování a vykreslení každého druhu).
+- Build odmítne zdroj se značkou nedořešeného konfliktu (`<<<<<<<`, `=======`, `>>>>>>>`): po sloučení `main`
+  do větve zůstala v `styles.css` a tiše vyřadila pravidlo pod sebou (křížek Dne jazyků utekl do rohu stránky).
 - Build zkouší skript stránky přeložit (`new Function`): při úklidu fotek zůstaly v kódu osiřelé řádky
   a stránka byla úplně nefunkční, aniž by `npm run check` něco hlásil.
 - **Barvy vitality na reliéfu**: na stínovaných svazích neměl nejsvětlejší stupeň kontrast (1,4–1,6 : 1), proto je

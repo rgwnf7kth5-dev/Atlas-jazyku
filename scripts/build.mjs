@@ -19,6 +19,11 @@ const knihovny = ["vendor/d3-array.min.js", "vendor/d3-geo.min.js", "vendor/topo
 const styly = cti("src/styles.css");
 const telo = cti("src/body.html");
 const aplikace = cti("src/akvarely.js") + "\n" + cti("src/app.js");   // malované krajiny pohlednic + aplikace
+// pojistka: značka nedořešeného konfliktu po sloučení větví tiše vyřadí pravidlo stylu pod ní (stalo se u Dne jazyků)
+for (const [soubor, text] of [["src/styles.css", styly], ["src/body.html", telo], ["src/akvarely.js + src/app.js", aplikace]]) {
+  const m = text.match(/^(<{7}|={7}|>{7})(\s|$)/m);
+  if (m) throw new Error(`V ${soubor} zůstala značka konfliktu po sloučení (${m[1]}).`);
+}
 
 const RODINY_EN = { "Isolate": "isolate – no known relatives", "Sign Language": "sign language", "Pidgin": "pidgin",
   "Artificial Language": "constructed language", "Mixed Language": "mixed language", "Speech Register": "speech register" };
