@@ -1,6 +1,61 @@
 {
- "sr": {"jazyk": "Q9299", "proc": "srbština nemá v Glottologu vlastní tečku (srbochorvatština)"},
- "hr": {"jazyk": "Q6654", "proc": "chorvatština nemá v Glottologu vlastní tečku (srbochorvatština)"},
- "no": {"jazyk": "Q9043", "proc": "norština nemá v Glottologu vlastní tečku (bokmål a nynorsk zvlášť)"},
- "lv": {"jazyk": "Q9078", "proc": "lotyština nemá v Glottologu vlastní tečku"}
+ "sr": {
+  "jazyk": "Q9299",
+  "proc": "srbština nemá v Glottologu vlastní tečku (srbochorvatština)"
+ },
+ "hr": {
+  "jazyk": "Q6654",
+  "proc": "chorvatština nemá v Glottologu vlastní tečku (srbochorvatština)"
+ },
+ "no": {
+  "jazyk": "Q9043",
+  "proc": "norština nemá v Glottologu vlastní tečku (bokmål a nynorsk zvlášť)"
+ },
+ "lv": {
+  "jazyk": "Q9078",
+  "proc": "lotyština nemá v Glottologu vlastní tečku"
+ },
+ "pa": {
+  "kategorie": "Punjab"
+ },
+ "eu": {
+  "kategorie": "Basque Country"
+ },
+ "om": {
+  "kategorie": "Oromia Region"
+ },
+ "jv": {
+  "kategorie": "Central Java"
+ },
+ "mai": {
+  "kategorie": "Bihar"
+ },
+ "su": {
+  "kategorie": "West Java"
+ },
+ "hmn": {
+  "kategorie": "Laos"
+ },
+ "ber": {
+  "kategorie": "Atlas Mountains"
+ },
+ "dz": {
+  "kategorie": "Bhutan"
+ },
+ "tet": {
+  "kategorie": "East Timor"
+ },
+ "quc": {
+  "kategorie": "Guatemala"
+ },
+ "ar": {
+  "kategorie": "Arabian Peninsula"
+ },
+ "lkt": {
+  "kategorie": "Badlands National Park",
+  "proc": "ne Mount Rushmore: hlavy prezidentů vytesané do posvátných hor Lakotů"
+ },
+ "rom": {
+  "bez": "romština nemá jedno domovské místo, fotka jedné země by ji k ní falešně připoutala"
+ }
 }

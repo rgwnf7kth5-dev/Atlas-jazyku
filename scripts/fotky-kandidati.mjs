@@ -1,8 +1,9 @@
 // Kandidáti na fotky pohlednic: pro každý jazyk až 8 fotek z Wikimedia Commons → data/fotky-kandidati.json
 //   node scripts/fotky-kandidati.mjs
-// Hledá se jen mezi „kvalitními obrázky“ Commons (Category:Quality images – prošly hodnocením komunity),
+// Hledá se jen mezi „kvalitními obrázky“ Commons (Category:Quality images – prošly hodnocením komunity)
+// uvnitř kategorie místa (deepcat), takže fotka je opravdu z místa, odkud jazyk pochází;
 // na šířku, aspoň 1600 px, se svobodnou licencí. Hledaný výraz je místo, odkud jazyk pochází:
-// ruční výraz z data/fotky-opravy.json („hledat“), jinak místo z Wikidat (P2341, jinak P17), jinak první stát z atlasu.
+// kategorie místa na Commons: ruční „kategorie“ z data/fotky-opravy.json, jinak P373 místa z Wikidat (P2341, jinak P17).
 // Z kandidátů pak vybírá scripts/fotky.mjs (výchozí první, ručně „vyber“: pořadí v seznamu).
 import fs from "node:fs";
 import path from "node:path";
@@ -51,18 +52,19 @@ function vzdalenost(a, b) {
   const R = Math.PI / 180;
   return Math.acos(Math.min(1, Math.sin(a[1] * R) * Math.sin(b[1] * R) + Math.cos(a[1] * R) * Math.cos(b[1] * R) * Math.cos((a[0] - b[0]) * R)));
 }
+/* místo = kategorie na Commons (P373), ve které se hledá; ruční „kategorie“ v opravách má přednost */
 function misto(j) {
   const o = opravy[j.id] || {};
-  if (o.hledat) return o.hledat;
+  if (o.kategorie) return o.kategorie;
   const m = (mistaJ[j.id] || []).map(([q, typ]) => {
     const e = mp[q], s = hodnoty(e, "P625")[0];
-    return { jm: e && e.labels && e.labels.en && e.labels.en.value, typ, d: vzdalenost(s ? [s.longitude, s.latitude] : null, j.stred) };
-  }).filter(x => x.jm).sort((a, b) => a.typ - b.typ || a.d - b.d)[0];
-  return m ? m.jm : (j.zeme[0] || null);
+    return { kat: hodnoty(e, "P373")[0], typ, d: vzdalenost(s ? [s.longitude, s.latitude] : null, j.stred) };
+  }).filter(x => x.kat).sort((a, b) => a.typ - b.typ || a.d - b.d)[0];
+  return m ? m.kat : null;
 }
 
 const SVOBODNA = /^(CC0|CC[ -]BY(-SA)?( \d(\.\d)?)?|Public domain|PD\b)/i;
-const NE = /\b(map|mapa|flag|coat of arms|locator|logo|seal|emblem|portrait|interior|detail|macro|museum|insect|bird|flower|food)\b/i;
+const NE = /\b(map|mapa|flag|coat of arms|locator|logo|seal|emblem|portrait|interior|inside|detail|macro|museum|insect|bird|flower|food|car|cars|vehicle|automobile|bus|train|locomotive|aircraft|airplane|ship|boat|statue|sculpture|grave|tomb|church interior|altar|organ|fresco|painting)\b/i;
 async function hledej(dotaz) {
   const u = "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrnamespace=6&gsrlimit=40" +
     "&gsrsearch=" + encodeURIComponent(dotaz) + "&prop=imageinfo&iiprop=url|size|mime|extmetadata&iiurlwidth=330";
@@ -84,11 +86,13 @@ async function hledej(dotaz) {
 const soubor = path.join(KOREN, "data/fotky-kandidati.json");
 const vystup = fs.existsSync(soubor) && !process.argv.includes("--znovu") ? JSON.parse(fs.readFileSync(soubor, "utf8")) : {};
 for (const j of jazyky) {
-  if (vystup[j.id] && !(opravy[j.id] && opravy[j.id].hledat && opravy[j.id].hledat !== vystup[j.id].hledano)) continue;
+  if (vystup[j.id] && !(opravy[j.id] && opravy[j.id].kategorie && opravy[j.id].kategorie !== vystup[j.id].hledano)) continue;
   const kde = misto(j);
   if (!kde) { console.log(`${j.id}: bez místa`); continue; }
   const videne = new Set(), kandidati = [];
-  for (const dotaz of [`${kde} landscape incategory:Quality_images`, `${kde} incategory:Quality_images`, `${kde} landscape`]) {
+  // jen kvalitní fotky uvnitř kategorie místa (deepcat projde i podkategorie): fotka je opravdu odtamtud
+  const kat = `deepcat:"${kde.replace(/"/g, "")}" incategory:Quality_images`;
+  for (const dotaz of [`landscape ${kat}`, `(view OR panorama OR mountains OR village OR coast OR valley) ${kat}`, kat]) {
     for (const k of await hledej(dotaz)) if (!videne.has(k.soubor) && kandidati.length < 8) { videne.add(k.soubor); kandidati.push(k); }
     await pockej(400);
     if (kandidati.length >= 8) break;
