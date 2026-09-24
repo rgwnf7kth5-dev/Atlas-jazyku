@@ -804,6 +804,54 @@ var AKVARELY = (function(){
     let t = ""; for (let i = 0; i <= 3; i++) t += tah("M" + f1(x + 1 + (w - 2) * i / 3) + " " + y + " l0 " + f1(-k), "#5A4632", 1.3, .95);
     return skupina(F, F.stetec, t) + dum(F, r, x, y - k, w, h, o);
   }
+  /* úlovitá chýše z trávy (Zuluové, Fulbové, Somálci) */
+  function ul(F, x, y, s, barva){
+    barva = barva || "#C8A868";
+    const d = "M" + f1(x - 10 * s) + " " + f1(y) + " Q" + f1(x - 11 * s) + " " + f1(y - 14 * s) + " " + x + " " + f1(y - 16 * s) + " Q" + f1(x + 11 * s) + " " + f1(y - 14 * s) + " " + f1(x + 10 * s) + " " + f1(y) + " Z";
+    let t = ""; for (let i = 0; i < 5; i++) t += tah("M" + f1(x - 10 * s) + " " + f1(y - i * 3 * s) + " Q" + x + " " + f1(y - i * 3 * s - 4 * s) + " " + f1(x + 10 * s) + " " + f1(y - i * 3 * s), mix(barva, "#3A2A10", .4), .4 * s, .5);
+    return kryt(F, d, F.jemna) + vrstva(F, d, mix(barva, "#FFFFFF", .15), mix(barva, "#3A2A10", .3), .95, F.jemna) + skupina(F, F.stetec, t) + nanes(F, "M" + f1(x - 2.5 * s) + " " + f1(y) + " q" + f1(2.5 * s) + " " + f1(-7 * s) + " " + f1(5 * s) + " 0 z", "#3A2A1A", .85);
+  }
+  /* zebu / dlouhorohý skot */
+  function zebu(F, body, barva){
+    let k = "";
+    body.forEach(function(b){ const x = b[0], y = b[1], s = b[2];
+      k += '<path d="M' + f1(x) + " " + f1(y) + " l" + f1(.8 * s) + " " + f1(-7 * s) + " l" + f1(3 * s) + " " + f1(-2 * s) + " l" + f1(2 * s) + " " + f1(2 * s) + " l" + f1(8 * s) + " 0 l" + f1(3 * s) + " " + f1(-1.5 * s) + " l" + f1(1.5 * s) + " " + f1(3 * s) + " l" + f1(-2 * s) + " " + f1(1.5 * s) + " l0 " + f1(4 * s) + " l" + f1(-1.4 * s) + " 0 l0 " + f1(-3.5 * s) + " l" + f1(-11 * s) + " 0 l" + f1(-.8 * s) + " " + f1(3.5 * s) + ' z" fill="' + (b[3] || barva || "#A8886A") + '"/>' +
+        '<path d="M' + f1(x + 16 * s) + " " + f1(y - 9 * s) + " q" + f1(-2 * s) + " " + f1(-7 * s) + " " + f1(-6 * s) + " " + f1(-8 * s) + " M" + f1(x + 17 * s) + " " + f1(y - 9 * s) + " q" + f1(3 * s) + " " + f1(-7 * s) + " " + f1(8 * s) + " " + f1(-8 * s) + '" stroke="#E8DCC4" stroke-width="' + f1(.8 * s) + '" fill="none"/>'; });
+    return '<g filter="url(#' + F.jemna + ')" opacity=".93">' + k + '</g>';
+  }
+  /* velbloud */
+  function velbloud(F, body){
+    let k = "";
+    body.forEach(function(b){ const x = b[0], y = b[1], s = b[2];
+      k += '<path d="M' + f1(x) + " " + f1(y) + " l" + f1(1 * s) + " " + f1(-10 * s) + " q" + f1(3 * s) + " " + f1(-7 * s) + " " + f1(7 * s) + " " + f1(-1 * s) + " q" + f1(3 * s) + " " + f1(-4 * s) + " " + f1(6 * s) + " 0 l" + f1(4 * s) + " " + f1(-6 * s) + " l" + f1(3 * s) + " 0 l" + f1(-.5 * s) + " " + f1(2 * s) + " l" + f1(-3 * s) + " " + f1(6 * s) + " l0 " + f1(9 * s) + " l" + f1(-1.4 * s) + " 0 l0 " + f1(-7 * s) + " l" + f1(-11 * s) + " 0 l" + f1(-.8 * s) + " " + f1(7 * s) + ' z" fill="#B88A5A"/>'; });
+    return '<g filter="url(#' + F.jemna + ')" opacity=".93">' + k + '</g>';
+  }
+  /* hliněná mešita sahelského stylu: kuželovité věže, ze zdí trčí trámky */
+  function hlinenaMesita(F, x, y, s){
+    const st = "#C08A58", tel = mnoho([[x, y], [x + 70 * s, y], [x + 70 * s, y - 20 * s], [x, y - 20 * s]]);
+    let out = kryt(F, tel, F.jemna) + vrstva(F, tel, "#D0A070", "#A07048", .95, F.jemna), tr = "";
+    [[x + 4 * s, 34], [x + 30 * s, 42], [x + 56 * s, 34]].forEach(function(v){ const vx = v[0], h = v[1] * s, d = "M" + f1(vx) + " " + f1(y - 18 * s) + " L" + f1(vx + 2 * s) + " " + f1(y - h) + " Q" + f1(vx + 5 * s) + " " + f1(y - h - 6 * s) + " " + f1(vx + 8 * s) + " " + f1(y - h) + " L" + f1(vx + 10 * s) + " " + f1(y - 18 * s) + " Z";
+      out += kryt(F, d, F.jemna) + vrstva(F, d, "#D4A474", st, .95, F.jemna); for (let k = 0; k < 5; k++) tr += "M" + f1(vx - 1 * s) + " " + f1(y - 22 * s - k * (h - 24 * s) / 5) + " l" + f1(12 * s) + " 0 "; });
+    for (let k = 0; k < 3; k++) for (let i = 0; i < 12; i++) tr += "M" + f1(x + 2 * s + i * 6 * s) + " " + f1(y - 6 * s - k * 6 * s) + " l0 " + f1(-1.4 * s) + " ";
+    return out + skupina(F, F.stetec, '<path d="' + tr + '" stroke="#6A4A30" stroke-width="' + f1(.9 * s) + '" fill="none" opacity=".85"/>') + nanes(F, "M" + f1(x + 32 * s) + " " + y + " l0 " + f1(-9 * s) + " q" + f1(3 * s) + " " + f1(-3 * s) + " " + f1(6 * s) + " 0 l0 " + f1(9 * s) + " z", "#3A2A1A", .85);
+  }
+  /* loď dhau s trojúhelníkovou latinskou plachtou */
+  function dhau(F, x, y, s){
+    const t = "M" + f1(x - 20 * s) + " " + f1(y - 6 * s) + " Q" + x + " " + f1(y + 3 * s) + " " + f1(x + 24 * s) + " " + f1(y - 9 * s) + " L" + f1(x + 20 * s) + " " + y + " Q" + x + " " + f1(y + 5 * s) + " " + f1(x - 17 * s) + " " + y + " Z";
+    const p = "M" + f1(x - 16 * s) + " " + f1(y - 6 * s) + " L" + f1(x + 18 * s) + " " + f1(y - 44 * s) + " Q" + f1(x + 12 * s) + " " + f1(y - 20 * s) + " " + f1(x + 12 * s) + " " + f1(y - 7 * s) + " Z";
+    return kryt(F, t + p, F.jemna) + vrstva(F, t, "#8A5A3A", "#4A2E1E", .95, F.jemna) + nanes(F, p, "#F2EADA", .95) + laz(F, p, "#C8BEA8", .25) + skupina(F, F.stetec, tah("M" + f1(x + 2 * s) + " " + f1(y - 6 * s) + " l0 " + f1(-26 * s), "#4A2E1E", .9 * s, .9));
+  }
+  /* pestrá rybářská piroga (Senegal) */
+  function piroga(F, x, y, s, barvy){
+    const t = "M" + f1(x - 28 * s) + " " + f1(y - 9 * s) + " Q" + f1(x - 20 * s) + " " + f1(y + 2 * s) + " " + x + " " + f1(y + 2 * s) + " Q" + f1(x + 20 * s) + " " + f1(y + 2 * s) + " " + f1(x + 30 * s) + " " + f1(y - 11 * s) + " L" + f1(x + 24 * s) + " " + f1(y - 5 * s) + " L" + f1(x - 22 * s) + " " + f1(y - 4 * s) + " Z";
+    return kryt(F, t, F.jemna) + nanes(F, t, barvy[0], .95) + skupina(F, F.stetec, tah("M" + f1(x - 24 * s) + " " + f1(y - 5 * s) + " Q" + x + " " + f1(y - 1 * s) + " " + f1(x + 26 * s) + " " + f1(y - 7 * s), barvy[1], 1.6 * s, .9) + tah("M" + f1(x - 20 * s) + " " + f1(y - 2 * s) + " Q" + x + " " + f1(y + 1 * s) + " " + f1(x + 22 * s) + " " + f1(y - 4 * s), barvy[2], 1 * s, .9));
+  }
+  /* kapskoholandský štít: bílá zeď, zvlněný štít s volutami, došková střecha */
+  function kapskyStit(F, x, y, w, h, s){
+    let out = dum(F, null, x, y, w, h, { typ: "dosky", stena: "#FBFAF6", bok: "#C8CCD8", strecha: "#9A8A5A", okna: 4, okenice: "#3E6A4A", rh: 14 * s, d: 20 * s });
+    const cx = x + w / 2, st = "M" + f1(cx - 9 * s) + " " + f1(y - h) + " Q" + f1(cx - 11 * s) + " " + f1(y - h - 6 * s) + " " + f1(cx - 6 * s) + " " + f1(y - h - 8 * s) + " Q" + f1(cx - 7 * s) + " " + f1(y - h - 16 * s) + " " + cx + " " + f1(y - h - 20 * s) + " Q" + f1(cx + 7 * s) + " " + f1(y - h - 16 * s) + " " + f1(cx + 6 * s) + " " + f1(y - h - 8 * s) + " Q" + f1(cx + 11 * s) + " " + f1(y - h - 6 * s) + " " + f1(cx + 9 * s) + " " + f1(y - h) + " Z";
+    return out + kryt(F, st, F.jemna) + nanes(F, st, "#FBFAF6") + laz(F, st, "#C8CCD8", .2) + nanes(F, "M" + f1(cx - 2 * s) + " " + f1(y - h - 6 * s) + " l" + f1(4 * s) + " 0 l0 " + f1(-5 * s) + " l" + f1(-4 * s) + " 0 z", "#3E4656", .7);
+  }
   /* skupina domů: seřadí je odzadu dopředu, aby bližší zakryly vzdálenější. d = [x, y, w, h, volby] */
   function vesnice(F, r, domy){ return domy.slice().sort(function(a, b){ return a[1] - b[1]; }).map(function(d){ return d[4] && d[4].kostel ? kostel(F, r, d[0], d[1], d[2], d[4]) : dum(F, r, d[0], d[1], d[2], d[3], d[4]); }).join(""); }
   /* skála / pahorek pod stavbou */
@@ -2310,6 +2358,337 @@ var AKVARELY = (function(){
         o += skupina(F, F.stetec, k) + kryt(F, st, F.jemna) + vrstva(F, st, "#C8A868", "#8A6A3A", .95, F.jemna) + skupina(F, F.stetec, tah("M" + x + " " + f1(y - 56 * s) + " l0 " + f1(-4 * s) + " M" + f1(x - 3 * s) + " " + f1(y - 58 * s) + " l" + f1(6 * s) + " 0", "#5A4632", .8 * s, .9)); });
       [[60, 226, 1.4], [330, 230, 1.6], [380, 222, 1.2]].forEach(function(t){ o += skupina(F, F.stetec, tah("M" + t[0] + " " + t[1] + " l" + f1((q() - .5) * 3) + " -" + f1(34 * t[2]), "#D8CCB8", 1.3 * t[2], .95)) + koruny(F, q, t[0] - 10 * t[2], t[0] + 10 * t[2], t[1] - 30 * t[2], .4 * t[2], "#7E8A5A", .8, F.jemna); });
       return o + trava(F, r, 140, 216, 254, ["#A89A58", "#B8A868", "#8A8A48"]);
+    },
+    /* Etiopie (amharština): stolové hory amby nad náhorní plošinou, kulatý kostel s kuželovou střechou a křížem, chýše tukul, tef */
+    etiopie: function(F, r){
+      const q = nahoda(F.sem + 901);
+      let o = nebe(F, "#78AADE", "#F2E8D2") + mraky(F, r, 3, 26, 60, 90);
+      [[40, 120, 60], [170, 110, 80], [330, 116, 70]].forEach(function(a){ const d = "M" + (a[0] - a[2] * .8) + " 150 L" + (a[0] - a[2] * .45) + " " + (a[1] + 6) + " L" + (a[0] - a[2] * .4) + " " + a[1] + " L" + (a[0] + a[2] * .4) + " " + (a[1] - 1) + " L" + (a[0] + a[2] * .45) + " " + (a[1] + 6) + " L" + (a[0] + a[2] * .8) + " 150 Z"; o += vrstva(F, d, mix("#9A8E86", F.opar, .35), mix("#6A5E58", F.opar, .25), .85); });
+      o += hrebeny(F, [[150, 6, 70, 1, "#9AB064", .1], [178, 10, 60, 2.6, "#A8B870", 0]]);
+      /* kulatý kostel: válcová zeď, kuželová střecha, kříž */
+      const cx = 230, cy = 204, z = "M" + (cx - 26) + " " + cy + " L" + (cx - 26) + " " + (cy - 16) + " L" + (cx + 26) + " " + (cy - 16) + " L" + (cx + 26) + " " + cy + " Q" + cx + " " + (cy + 6) + " " + (cx - 26) + " " + cy + " Z", st = "M" + (cx - 32) + " " + (cy - 14) + " Q" + (cx - 14) + " " + (cy - 30) + " " + cx + " " + (cy - 44) + " Q" + (cx + 14) + " " + (cy - 30) + " " + (cx + 32) + " " + (cy - 14) + " Q" + cx + " " + (cy - 10) + " " + (cx - 32) + " " + (cy - 14) + " Z";
+      o += kryt(F, z + st, F.jemna) + vrstva(F, z, "#E8D8B8", "#A89878", .95, F.jemna) + vrstva(F, st, "#A8905A", "#6A5A34", .95, F.jemna) + nanes(F, "M" + (cx - 4) + " " + cy + " l0 -10 l8 0 l0 10 z", "#3A6A9A", .9) + skupina(F, F.stetec, tah("M" + cx + " " + (cy - 44) + " l0 -8 M" + (cx - 3) + " " + (cy - 49) + " l6 0 M" + (cx - 2) + " " + (cy - 46) + " l4 0", "#C8A040", 1, .95));
+      o += chyse(F, q, 110, 214, 1.3) + chyse(F, q, 140, 218, 1.1) + chyse(F, q, 330, 216, 1.2);
+      let tef = ""; for (let i = 0; i < 140; i++) { const x = q() * W, y = 224 + q() * 30; tef += tah("M" + f1(x) + " " + f1(y) + " q" + f1((q() - .5) * 2) + " -4 " + f1((q() - .5) * 3) + " -" + f1(6 + (y - 224) / 5), ["#C8B060", "#B8A050", "#A89040"][i % 3], .5, .75); }
+      return o + skupina(F, F.stetec, tef) + akacie(F, q, 380, 196, .8);
+    },
+    /* Tigraj/Eritrea (tigriňa): skalnaté amby, kamenné domy s plochou střechou, opuncie, kostel vtesaný do skály */
+    tigraj: function(F, r){
+      const q = nahoda(F.sem + 907);
+      let o = nebe(F, "#7AAEE0", "#F4E6CC") + rasy(F, r, 3, 12, 36);
+      o += hory(F, r, [[-10, 130], [40, 90], [60, 86], [110, 88], [150, 120], [220, 80], [260, 78], [300, 84], [360, 118], [410, 110]], 160, "#C0A890", "#8A7060", 0, .12);
+      const sk = "M250 170 L262 118 L340 116 L352 170 Z";
+      o += kryt(F, sk) + vrstva(F, sk, "#C89A7A", "#8A6A52", .92) + nanes(F, "M290 150 l0 -14 q6 -6 12 0 l0 14 z", "#3A2A20", .85) + nanes(F, "M296 136 l0 -6 M293 133 l6 0", "#3A2A20", .8);
+      o += hrebeny(F, [[166, 6, 70, 2, "#C8B088", 0]]);
+      const dm = [[40, 200, 30, 11], [80, 204, 26, 10], [150, 198, 32, 12], [200, 206, 26, 10]].map(function(d){ return d.concat([{ typ: "plocha", stena: "#B8A48A", bok: "#7E6E5A", okna: 2, okno: "#3A2A20", d: 12 }]); });
+      o += vesnice(F, q, dm);
+      let tr = ""; dm.forEach(function(d){ for (let k = 1; k < 4; k++) tr += tah("M" + d[0] + " " + f1(d[1] - d[3] * k / 4) + " l" + d[2] + " 0", "#6A5A4A", .5, .5); }); o += skupina(F, F.stetec, tr);
+      let op = ""; [[300, 226], [340, 234], [370, 222]].forEach(function(c){ [[0, 0, 6], [-6, -8, 5], [6, -9, 5], [0, -15, 4]].forEach(function(p){ op += '<ellipse cx="' + (c[0] + p[0]) + '" cy="' + (c[1] + p[1]) + '" rx="' + p[2] + '" ry="' + (p[2] * .75) + '"/>'; }); });
+      return o + '<g fill="#6E9A5A" opacity=".9" filter="url(#' + F.jemna + ')" style="mix-blend-mode:multiply">' + op + '</g>' + trava(F, r, 80, 222, 254, ["#A89858", "#B8A868"]);
+    },
+    /* Somálsko: suchá buš s akáciemi, kopulovité chýše aqal z rohoží, velbloudi, termitiště */
+    somalsko: function(F, r){
+      const q = nahoda(F.sem + 911);
+      let o = nebe(F, "#86B6E0", "#F6E6C8") + rasy(F, r, 2, 12, 30);
+      o += hrebeny(F, [[150, 3, 90, 1, "#C8A888", .4], [170, 6, 70, 2.5, "#D0A878", 0]]);
+      o += akacie(F, q, 70, 176, .6) + akacie(F, q, 330, 174, .5);
+      [[150, 206, 1.4, "#B89A70"], [184, 210, 1.2, "#A88A62"], [214, 204, 1.3, "#B89A70"]].forEach(function(u){ o += ul(F, u[0], u[1], u[2], u[3]); });
+      o += velbloud(F, [[260, 226, 1.6], [300, 232, 1.8], [80, 230, 1.5]]);
+      [[360, 214, 10, 24], [30, 206, 7, 16]].forEach(function(t){ o += vrstva(F, "M" + (t[0] - t[2]) + " " + t[1] + " Q" + (t[0] - t[2] * .6) + " " + (t[1] - t[3]) + " " + t[0] + " " + (t[1] - t[3] - 2) + " Q" + (t[0] + t[2] * .6) + " " + (t[1] - t[3]) + " " + (t[0] + t[2]) + " " + t[1] + " Z", "#C8885A", "#8A5A3A", .92, F.jemna); });
+      return o + trava(F, r, 120, 214, 254, ["#A8894A", "#C4A45A", "#8F7A40"]);
+    },
+    /* Hausové: hliněné domy se zdobenými reliéfy a rohatými cimbuřími, brána, baobab */
+    hausa: function(F, r){
+      const q = nahoda(F.sem + 919);
+      let o = nebe(F, "#8AB6DE", "#F6E2BE") + rasy(F, r, 2, 12, 30);
+      o += hrebeny(F, [[150, 2, 90, 1, "#C8B08A", .4], [160, 3, 80, 2, "#D4B478", 0]]);
+      const dm = [[40, 200, 60, 22], [130, 196, 70, 28], [230, 202, 56, 20], [300, 198, 60, 24]];
+      dm.forEach(function(d){ o += dum(F, q, d[0], d[1], d[2], d[3], { typ: "plocha", stena: "#C8905A", bok: "#8A5A36", okna: 2, okno: "#3A2A1A", d: 12 });
+        let orn = ""; for (let i = 0; i < 4; i++) orn += '<path d="M' + f1(d[0] + 6 + i * d[2] / 4) + " " + f1(d[1] - d[3] * .45) + " q" + f1(d[2] / 10) + " -8 " + f1(d[2] / 5) + " 0 q" + f1(-d[2] / 10) + " 6 " + f1(-d[2] / 5) + ' 0" stroke="#F2E0C0" stroke-width="1.2" fill="none"/>';
+        o += '<g opacity=".8">' + orn + '</g>';
+        let rohy = ""; [0, 1].forEach(function(k){ const x = d[0] + k * d[2]; rohy += "M" + f1(x - 3) + " " + f1(d[1] - d[3]) + " q" + f1(k ? 4 : -2) + " -6 " + f1(k ? 5 : 1) + " -10 l1 0 q" + f1(k ? 0 : 2) + " 5 " + f1(k ? 1 : 2) + " 10 z "; });
+        o += nanes(F, rohy, "#C0885A"); });
+      o += nanes(F, "M156 196 l0 -16 q9 -10 18 0 l0 16 z", "#4A3020", .85);
+      return o + baobab(F, q, 380, 230, 1) + trava(F, r, 100, 214, 254, ["#A8894A", "#C4A45A"]);
+    },
+    /* Senegal (wolofština): pláž s pestrými pirogami, rybářská vesnice, baobaby, Atlantik */
+    senegal: function(F, r){
+      const q = nahoda(F.sem + 929);
+      let o = nebe(F, "#7EB2E2", "#F4E8CE") + mraky(F, r, 3, 30, 70, 80);
+      o += voda(F, r, "M-10 140 L420 138 L420 190 L-10 194 Z", "#6EA6C8", "#3E7AA0", 142, 190, 16);
+      let pena = ""; for (let i = 0; i < 4; i++) pena += tah(cesta(clenit([[-10, 186 + i * 3], [200, 188 + i * 3], [420, 184 + i * 3]], q, 0, .04, 4)), "#FFFFFF", 1.2 - i * .2, .7); o += skupina(F, F.stetec, pena);
+      const pl = "M-10 256 L-10 192 Q200 184 420 188 L420 256 Z";
+      o += kryt(F, pl) + vrstva(F, pl, "#EEDCB4", "#D4BC8C", .9);
+      o += vesnice(F, q, [[250, 190, 26, 10, { typ: "plocha", stena: "#E8D8B8", bok: "#A89878", okna: 2, d: 8 }], [284, 188, 22, 9, { typ: "plocha", stena: "#D8E0E8", bok: "#98A0B0", okna: 1, d: 8 }], [312, 190, 26, 10, { typ: "plocha", stena: "#F0D8B0", bok: "#A89070", okna: 2, d: 8 }]]);
+      o += piroga(F, 80, 222, 1.3, ["#2E6AB0", "#E8C040", "#C8402E"]) + piroga(F, 170, 238, 1.6, ["#E8C040", "#3E8A4A", "#C8402E"]) + piroga(F, 300, 232, 1.4, ["#C8402E", "#2E6AB0", "#E8C040"]);
+      return o + baobab(F, q, 380, 196, .6) + baobab(F, q, 210, 192, .45);
+    },
+    /* Fulbové: savana s dlouhorohým skotem zebu, kopulovité travnaté chýše, akácie, stádo u napajedla */
+    fulbove: function(F, r){
+      const q = nahoda(F.sem + 937);
+      let o = nebe(F, "#8AB4DE", "#F6E2BC") + rasy(F, r, 2, 12, 30) + mraky(F, r, 2, 40, 60, 70);
+      o += hrebeny(F, [[150, 3, 90, 1, "#C4B08A", .4], [164, 4, 80, 2, "#C8B474", 0]]);
+      o += akacie(F, q, 60, 176, .7) + akacie(F, q, 350, 180, .9);
+      [[150, 196, 1.3, "#B89A68"], [180, 200, 1.1, "#A88A58"]].forEach(function(u){ o += ul(F, u[0], u[1], u[2], u[3]); });
+      o += voda(F, r, "M200 214 Q260 206 330 214 Q300 224 250 224 Q210 222 200 214 Z", "#A8B8B8", "#6E8890", 210, 222, 3);
+      o += zebu(F, [[40, 230, 1.8, "#8A5A3A"], [90, 240, 2, "#E8E0D0"], [230, 238, 1.9, "#A86A42"], [280, 244, 2.1, "#6A4A34"], [340, 232, 1.7, "#C8A07A"]]);
+      return o + trava(F, r, 150, 214, 254, ["#A8894A", "#C4A45A", "#8F7A40"]);
+    },
+    /* Botswana (setswanština): červený písek Kalahari, kulaté chýše s malovanými zdmi, akácie velbloudí trn, pštrosi */
+    kalahari: function(F, r){
+      const q = nahoda(F.sem + 941);
+      let o = nebe(F, "#78B0E4", "#F6E4C4") + rasy(F, r, 2, 12, 30);
+      o += hrebeny(F, [[150, 2, 90, 1, "#C8A080", .4]]);
+      const zem = "M-10 256 L-10 156 L420 156 L420 256 Z";
+      o += kryt(F, zem) + vrstva(F, zem, "#D8946A", "#B8704A", .9);
+      [[80, 200, 1.4], [120, 204, 1.2], [160, 200, 1.3]].forEach(function(h){ o += chyse(F, q, h[0], h[1], h[2]); let m = ""; for (let k = 0; k < 5; k++) m += '<path d="M' + f1(h[0] - 6 * h[2] + k * 3 * h[2]) + " " + f1(h[1] - 3 * h[2]) + " l" + f1(1.5 * h[2]) + " " + f1(-3 * h[2]) + " l" + f1(1.5 * h[2]) + " " + f1(3 * h[2]) + '" stroke="#FBFAF6" stroke-width="' + f1(.6 * h[2]) + '" fill="none"/>'; o += '<g opacity=".85">' + m + '</g>'; });
+      o += akacie(F, q, 300, 196, 1.1) + akacie(F, q, 380, 176, .5);
+      let ps = ""; [[240, 214, 1.3], [260, 220, 1.1]].forEach(function(p){ const x = p[0], y = p[1], s = p[2]; ps += '<path d="M' + x + " " + y + " l" + f1(2 * s) + " " + f1(-10 * s) + " q" + f1(5 * s) + " " + f1(-5 * s) + " " + f1(10 * s) + " " + f1(-1 * s) + " l" + f1(1 * s) + " " + f1(-10 * s) + " l" + f1(2 * s) + " 0 l0 " + f1(12 * s) + " q" + f1(-3 * s) + " " + f1(5 * s) + " " + f1(-8 * s) + " " + f1(3 * s) + " l" + f1(-1 * s) + " " + f1(8 * s) + " l" + f1(-1 * s) + " 0 l0 " + f1(-7 * s) + " l" + f1(-2 * s) + " 0 l" + f1(-1 * s) + " " + f1(7 * s) + ' z" fill="#3A3230"/>'; });
+      return o + '<g filter="url(#' + F.jemna + ')" opacity=".9">' + ps + '</g>' + trava(F, r, 90, 214, 254, ["#B8A060", "#C8B070"]);
+    },
+    /* Mali (bambarština): hliněná mešita s trámky nad řekou Niger, loďky pinasse, palmy */
+    mali: function(F, r){
+      const q = nahoda(F.sem + 947);
+      let o = nebe(F, "#88B4DC", "#F6E2BE") + rasy(F, r, 2, 12, 30);
+      o += hrebeny(F, [[146, 2, 90, 1, "#C8B08A", .4]]);
+      const zem = "M-10 200 L-10 150 L420 150 L420 200 Z";
+      o += kryt(F, zem) + vrstva(F, zem, "#D4B080", "#B08A5A", .9);
+      o += hlinenaMesita(F, 150, 184, 1.4);
+      o += vesnice(F, q, [[40, 188, 30, 11, { typ: "plocha", stena: "#C8905A", bok: "#8A5A36", okna: 1, d: 8 }], [290, 186, 30, 11, { typ: "plocha", stena: "#C8905A", bok: "#8A5A36", okna: 1, d: 8 }], [330, 190, 26, 9, { typ: "plocha", stena: "#D09A68", bok: "#8A5A36", okna: 1, d: 8 }]]);
+      o += voda(F, r, "M-10 198 L420 196 L420 256 L-10 256 Z", "#A8B8B0", "#6E8888", 200, 250, 14);
+      [[100, 226, 1.3], [270, 238, 1.6]].forEach(function(b){ const x = b[0], y = b[1], s = b[2]; o += vrstva(F, "M" + f1(x - 26 * s) + " " + f1(y - 7 * s) + " Q" + x + " " + f1(y + 2 * s) + " " + f1(x + 26 * s) + " " + f1(y - 8 * s) + " L" + f1(x + 22 * s) + " " + f1(y - 4 * s) + " L" + f1(x - 22 * s) + " " + f1(y - 3 * s) + " Z", "#6A4A34", "#3A2A20", .95, F.jemna) + vrstva(F, "M" + f1(x - 12 * s) + " " + f1(y - 4 * s) + " Q" + x + " " + f1(y - 13 * s) + " " + f1(x + 12 * s) + " " + f1(y - 4 * s) + " Z", "#C8402E", "#8A2A1E", .9, F.jemna); });
+      return o + palma(F, r, 20, 200, 1) + palma(F, r, 390, 198, 1.1);
+    },
+    /* Burkina Faso (mooré): malované hliněné domy s geometrickými vzory, sýpky, čirok */
+    burkina: function(F, r){
+      const q = nahoda(F.sem + 953);
+      let o = nebe(F, "#8AB6DE", "#F6E2BE") + rasy(F, r, 2, 12, 30);
+      o += hrebeny(F, [[150, 2, 90, 1, "#C4B08A", .4], [160, 3, 80, 2, "#C8A470", 0]]);
+      [[40, 200, 44, 18], [110, 196, 40, 20], [240, 202, 46, 16]].forEach(function(d){ o += dum(F, q, d[0], d[1], d[2], d[3], { typ: "plocha", stena: "#B8784A", bok: "#7A4A2E", okna: 0, dvere: true, okno: "#2A1A10", d: 12 });
+        let m = ""; for (let i = 0; i < 6; i++) { const x = d[0] + 2 + i * d[2] / 6; m += mnoho([[x, d[1] - 3], [x + d[2] / 12, d[1] - d[3] + 3], [x + d[2] / 6 - 1, d[1] - 3]]); }
+        o += '<path d="' + m + '" fill="#2A2020" opacity=".75"/>' + nanes(F, mnoho([[d[0], d[1] - d[3] * .45], [d[0] + d[2], d[1] - d[3] * .45], [d[0] + d[2], d[1] - d[3] * .55], [d[0], d[1] - d[3] * .55]]), "#FBFAF6", .9); });
+      [[190, 206, 1], [320, 204, 1.1]].forEach(function(s2){ const x = s2[0], y = s2[1], s = s2[2], d = "M" + f1(x - 7 * s) + " " + y + " L" + f1(x - 7 * s) + " " + f1(y - 12 * s) + " L" + f1(x + 7 * s) + " " + f1(y - 12 * s) + " L" + f1(x + 7 * s) + " " + y + " Z"; o += kryt(F, d, F.jemna) + vrstva(F, d, "#C8905A", "#8A5A36", .95, F.jemna) + vrstva(F, "M" + f1(x - 9 * s) + " " + f1(y - 11 * s) + " Q" + x + " " + f1(y - 26 * s) + " " + f1(x + 9 * s) + " " + f1(y - 11 * s) + " Z", "#C8A868", "#8A6A3A", .95, F.jemna); });
+      let cir = ""; for (let i = 0; i < 70; i++) { const x = q() * W, y = 218 + q() * 36; cir += tah("M" + f1(x) + " " + f1(y) + " l" + f1((q() - .5) * 2) + " -" + f1(14 + q() * 8) , "#8A9A48", .8, .8) + '<ellipse cx="' + f1(x) + '" cy="' + f1(y - 18) + '" rx="1.4" ry="3" fill="#A8502E" opacity=".8"/>'; }
+      return o + skupina(F, F.stetec, cir);
+    },
+    /* Čadské jezero (kanurijština): mělká voda s papyrem, rákosové čluny, písečné duny, chýše z rohoží */
+    cad: function(F, r){
+      const q = nahoda(F.sem + 959);
+      let o = nebe(F, "#8AB8E0", "#F6E4C4") + rasy(F, r, 2, 12, 30);
+      o += duna(F, r, 140, 6, 70, 1, "#ECC48C", "#C08A58");
+      o += voda(F, r, "M-10 168 L420 166 L420 256 L-10 256 Z", "#A8C4C0", "#6E9090", 170, 250, 14);
+      let pap = ""; for (let i = 0; i < 40; i++) { const x = q() < .5 ? q() * 120 : 280 + q() * 130, y = 172 + q() * 30; pap += tah("M" + f1(x) + " " + f1(y) + " l" + f1((q() - .5) * 3) + " -" + f1(12 + q() * 10), "#6E8A40", .8, .85) + '<ellipse cx="' + f1(x) + '" cy="' + f1(y - 20) + '" rx="3" ry="1.6" fill="#7E9A48" opacity=".85"/>'; }
+      o += skupina(F, F.stetec, pap);
+      [[160, 214, 1.3], [240, 232, 1.5]].forEach(function(b){ const x = b[0], y = b[1], s = b[2]; o += vrstva(F, "M" + f1(x - 20 * s) + " " + f1(y - 8 * s) + " Q" + x + " " + f1(y + 3 * s) + " " + f1(x + 20 * s) + " " + f1(y - 8 * s) + " Q" + x + " " + f1(y - 3 * s) + " " + f1(x - 20 * s) + " " + f1(y - 8 * s) + " Z", "#C8A860", "#8A7038", .95, F.jemna); });
+      return o + ul(F, 60, 168, 1.1, "#C8A868") + ul(F, 90, 170, .9, "#B89858");
+    },
+    /* Jorubové: město na kopcích s rezavými plechovými střechami, olejové palmy, tržiště s deštníky */
+    joruba: function(F, r){
+      const q = nahoda(F.sem + 967);
+      let o = nebe(F, "#8CB4D8", "#F2E6CE") + mraky(F, r, 4, 26, 70, 90);
+      o += hrebeny(F, [[132, 12, 60, 1, "#8EA2A0", .5], [150, 14, 60, 2.2, "#7EA060", .2]]);
+      const dm = []; for (let rada = 0; rada < 5; rada++) for (let i = 0; i < 10; i++) dm.push([-6 + i * 42 + rada * 10 + q() * 8, 160 + rada * 14 + (q() - .5) * 4, 24 + q() * 10, 9 + q() * 4, { typ: "sedlo", stena: ["#E8D8B8", "#D8C8A8", "#C8B494", "#E0C8A0"][Math.floor(q() * 4)], strecha: ["#9A5A3A", "#8A4A30", "#A86A44", "#7A5A48"][Math.floor(q() * 4)], okna: 2, dvere: false, rh: 5 }]);
+      o += vesnice(F, q, dm);
+      let de = ""; for (let i = 0; i < 10; i++) { const x = 40 + i * 34 + q() * 10, y = 238 + q() * 8; de += "M" + f1(x - 9) + " " + f1(y) + " Q" + f1(x) + " " + f1(y - 8) + " " + f1(x + 9) + " " + f1(y) + " Z "; }
+      o += nanes(F, de, "#E8A040", .9);
+      [[20, 214, 1.2], [380, 216, 1.1]].forEach(function(p){ o += palma(F, r, p[0], p[1], p[2], "#3F7A3E"); });
+      return o;
+    },
+    /* Igbové: vesnice v deštném pralese, dvorce s hliněnými zdmi a doškovými střechami, jamy na hrůbcích, olejové palmy */
+    igbo: function(F, r){
+      const q = nahoda(F.sem + 971);
+      let o = nebe(F, "#98B8D2", "#EEEEDC") + mraky(F, r, 3, 34, 64, 90);
+      o += pas(F, q, 146, .75, mix("#5E8A5A", F.opar, .3));
+      const zem = "M-10 256 L-10 176 L420 176 L420 256 Z";
+      o += kryt(F, zem) + vrstva(F, zem, "#B87A4E", "#8A5A36", .9);
+      o += vesnice(F, q, [[60, 198, 44, 14, { typ: "valba", stena: "#B8704A", bok: "#7A4A30", strecha: "#A8905A", okna: 2, rh: 14 }], [230, 194, 50, 15, { typ: "valba", stena: "#C07A50", bok: "#7A4A30", strecha: "#A8905A", okna: 2, rh: 15 }]]);
+      o += nanes(F, "M40 200 L380 198 L380 204 L40 206 Z", "#A8683E");
+      let hr = ""; for (let rada = 0; rada < 4; rada++) for (let x = -6; x < 420; x += 16) { const y = 222 + rada * 9, s = .8 + rada * .2; hr += '<ellipse cx="' + f1(x + (rada % 2) * 8) + '" cy="' + f1(y) + '" rx="' + f1(6 * s) + '" ry="' + f1(3 * s) + '" fill="#9A6038"/>' + tah("M" + f1(x + (rada % 2) * 8) + " " + f1(y - 3 * s) + " q2 -6 -1 -" + f1(10 * s), "#4E8A3A", .8, .85); }
+      o += '<g opacity=".9" filter="url(#' + F.jemna + ')">' + hr.replace(/<path[^>]*>/g, "") + '</g>' + skupina(F, F.stetec, hr.replace(/<ellipse[^>]*>/g, ""));
+      return o + palma(F, r, 20, 210, 1.3) + palma(F, r, 170, 200, 1.1) + palma(F, r, 390, 212, 1.2);
+    },
+    /* Kongo (lingala): široká řeka Kongo s pirogami a říčním člunem, hustý prales na březích */
+    kongo: function(F, r){
+      const q = nahoda(F.sem + 977);
+      let o = nebe(F, "#9CB8D2", "#EEEEDC") + mraky(F, r, 3, 30, 60, 90);
+      o += pas(F, q, 144, .6, mix("#4E7A50", F.opar, .35));
+      o += voda(F, r, "M-10 150 L420 148 L420 256 L-10 256 Z", "#B4A888", "#7E7A60", 152, 250, 16);
+      [["M-20 256 L-20 196 Q40 190 80 204 Q110 224 116 256 Z", -20, 110, 200], ["M300 256 Q306 214 340 196 Q380 184 420 188 L420 256 Z", 310, 420, 192]].forEach(function(b){ o += kryt(F, b[0]) + vrstva(F, b[0], "#4E7E48", "#2E5A34", .9) + koruny(F, q, b[1], b[2], b[3], 1.1, "#3E7044", .88, F.jemna); });
+      /* říční člun s palubou */
+      const bx = 220, by = 176, tr = "M" + (bx - 50) + " " + (by - 4) + " L" + (bx + 54) + " " + (by - 5) + " L" + (bx + 48) + " " + (by + 3) + " L" + (bx - 46) + " " + (by + 3) + " Z";
+      o += kryt(F, tr, F.jemna) + vrstva(F, tr, "#E8E0D0", "#A8A098", .95, F.jemna) + dum(F, q, bx - 30, by - 4, 60, 8, { typ: "plocha", stena: "#F2EEE4", bok: "#B8BCC8", okna: 5, d: 6 }) + nanes(F, mnoho([[bx - 34, by - 12], [bx + 34, by - 12], [bx + 30, by - 15], [bx - 30, by - 15]]), "#2E6AA8");
+      [[130, 214, 1.4], [300, 232, 1.6]].forEach(function(b){ const x = b[0], y = b[1], s = b[2]; o += vrstva(F, "M" + f1(x - 26 * s) + " " + f1(y - 5 * s) + " Q" + x + " " + f1(y + 3 * s) + " " + f1(x + 26 * s) + " " + f1(y - 6 * s) + " L" + f1(x + 22 * s) + " " + f1(y - 2 * s) + " L" + f1(x - 22 * s) + " " + f1(y - 2 * s) + " Z", "#5A3E2A", "#3A2A1E", .95, F.jemna); });
+      return o + ptaci(F, r, 3, 250, 70);
+    },
+    /* Kongo (kikongo): mozaika savany a lesa, vesnice obdélníkových chýší s doškem, maniokové pole, kopce */
+    kikongo: function(F, r){
+      const q = nahoda(F.sem + 983);
+      let o = nebe(F, "#8CB4DA", "#F0EAD6") + mraky(F, r, 4, 26, 70, 90);
+      o += hrebeny(F, [[128, 12, 60, 1, "#8EA2A0", .5], [150, 12, 50, 2.4, "#9AB064", .1]]);
+      [[40, 144, 60], [200, 150, 80], [340, 146, 70]].forEach(function(l){ o += koruny(F, q, l[0], l[0] + l[2], l[1], .55, "#4E7A48", .85, F.jemna); });
+      o += hrebeny(F, [[180, 6, 70, 3.5, "#A8B868", 0]]);
+      const ch = { typ: "sedlo", stena: "#B8784E", bok: "#7A4A30", strecha: "#A8905A", okna: 1, rh: 10 };
+      o += vesnice(F, q, [[60, 206, 30, 10, ch], [110, 210, 26, 9, ch], [270, 208, 30, 10, ch], [320, 212, 28, 9, ch]]);
+      let man = ""; for (let rada = 0; rada < 3; rada++) for (let x = -6; x < 420; x += 12) { const y = 230 + rada * 9; for (let k = 0; k < 5; k++) { const a = -2.6 + k * .5; man += tah("M" + f1(x + (rada % 2) * 6) + " " + f1(y) + " l" + f1(Math.cos(a) * 6) + " " + f1(Math.sin(a) * 6), "#4E8A3A", .8, .8); } }
+      return o + skupina(F, F.stetec, man) + palma(F, r, 200, 214, 1.1);
+    },
+    /* Akanové (Ghana): kakaovníky s plody pod stromy pralesa, vesnice hliněných domů, sušení kakaa na rohožích */
+    akan: function(F, r){
+      const q = nahoda(F.sem + 991);
+      let o = nebe(F, "#94B8D6", "#F0ECDC") + mraky(F, r, 3, 30, 64, 90);
+      o += pas(F, q, 142, .7, mix("#4E7A50", F.opar, .3));
+      const zem = "M-10 256 L-10 180 L420 180 L420 256 Z";
+      o += kryt(F, zem) + vrstva(F, zem, "#C08A5E", "#9A6A42", .9);
+      o += vesnice(F, q, [[40, 196, 40, 14, { typ: "valba", stena: "#D8B48A", bok: "#9A7450", strecha: "#8A7A6A", okna: 2, okenice: "#2E6A4A", rh: 8 }], [100, 198, 36, 13, { typ: "valba", stena: "#E0C098", bok: "#9A7450", strecha: "#8A7A6A", okna: 2, rh: 8 }]]);
+      [[250, 214, 1.4], [320, 206, 1.2], [370, 220, 1.5]].forEach(function(t){ o += strom(F, q, t[0], t[1], t[2], "#4E7A3A"); let pl = ""; for (let k = 0; k < 6; k++) pl += '<ellipse cx="' + f1(t[0] + (q() - .5) * 4) + '" cy="' + f1(t[1] - 4 - k * 1.8) + '" rx="1.4" ry="2.4" fill="' + ["#E8A030", "#C8602E", "#D8C040"][k % 3] + '"/>'; o += '<g opacity=".9">' + pl + '</g>'; });
+      let roh = ""; [[60, 230], [140, 238]].forEach(function(p){ roh += mnoho([[p[0], p[1]], [p[0] + 50, p[1]], [p[0] + 46, p[1] - 5], [p[0] + 4, p[1] - 5]]); });
+      o += nanes(F, roh, "#C8B088") + '<g fill="#6A3A22" opacity=".8">' + Array.from({length: 40}, function(){ return '<circle cx="' + f1(64 + q() * 120) + '" cy="' + f1(228 + q() * 8) + '" r=".9"/>'; }).join("") + '</g>';
+      return o + palma(F, r, 200, 200, 1.1);
+    },
+    /* Ewe (Togo): laguna s kokosovými palmami, rybářské sítě na kůlech, rákosové chýše na břehu */
+    ewe: function(F, r){
+      const q = nahoda(F.sem + 997);
+      let o = nebe(F, "#86B4DE", "#F4E8D0") + mraky(F, r, 3, 30, 66, 80);
+      o += koruny(F, q, -10, 410, 146, .4, mix("#4E8A46", F.opar, .3), .8, F.jemna);
+      o += voda(F, r, "M-10 150 L420 148 L420 256 L-10 256 Z", "#9EBEC4", "#5E8A98", 152, 250, 14);
+      let kul = ""; for (let i = 0; i < 16; i++) { const x = 140 + i * 14, y = 190 + Math.sin(i / 3) * 4; kul += tah("M" + x + " " + f1(y) + " l0 -14", "#6A5038", 1, .9); } kul += tah("M140 180 Q250 172 360 184", "#6A6A5A", .4, .6);
+      for (let k = 0; k < 5; k++) kul += tah("M140 " + (178 + k * 2.4) + " Q250 " + (170 + k * 2.4) + " 360 " + (182 + k * 2.4), "#6A6A5A", .3, .45);
+      o += skupina(F, F.stetec, kul);
+      const br = "M-10 256 L-10 206 Q60 196 130 212 Q170 224 180 256 Z";
+      o += kryt(F, br) + vrstva(F, br, "#E8D8B0", "#C8B488", .9) + dum(F, q, 20, 222, 36, 11, { typ: "sedlo", stena: "#C8B080", bok: "#8A7650", strecha: "#A8905A", okna: 1, rh: 12 });
+      return o + palma(F, r, 110, 226, 1.3) + palma(F, r, 150, 236, 1) + palma(F, r, 380, 170, .9) + palma(F, r, 350, 168, .7);
+    },
+    /* Svahilské pobřeží: plachetnice dhau, kamenné městečko z korálu s vyřezávanými dveřmi, minaret, palmy, bílá pláž */
+    svahili: function(F, r){
+      const q = nahoda(F.sem + 1009);
+      let o = nebe(F, "#76B2E6", "#F2E8D0") + mraky(F, r, 3, 34, 70, 80);
+      o += voda(F, r, "M-10 144 L420 142 L420 256 L-10 256 Z", "#4EA4C8", "#1E7098", 146, 250, 18);
+      o += kryt(F, "M-10 196 L420 192 L420 256 L-10 256 Z") + vrstva(F, "M-10 196 L420 192 L420 256 L-10 256 Z", "#8EE0D6", "#3EAEBE", .75);
+      const bre = "M200 196 Q230 150 280 140 L420 136 L420 200 Z";
+      o += kryt(F, bre) + vrstva(F, bre, "#F2E4BC", "#D8C08E", .9);
+      const dm = []; for (let i = 0; i < 6; i++) dm.push([250 + i * 26 + q() * 4, 170 + (i % 2) * 6, 22 + q() * 6, 14 + q() * 8, { typ: "plocha", stena: ["#F4EEE2", "#E8DCC4", "#F0E6D0"][i % 3], bok: "#B8B0A0", patra: 2, okna: 2, okno: "#5A3A26", d: 8 }]);
+      o += vesnice(F, q, dm) + minaret(F, 300, 168, 36, 1, { typ: "hranol", stena: "#F4EEE2" });
+      o += dhau(F, 110, 190, 1.4) + dhau(F, 200, 214, 1.8);
+      return o + palma(F, r, 390, 176, 1.1) + palma(F, r, 240, 170, .9);
+    },
+    /* Šonové (Zimbabwe): žulové kopje s balancujícími kameny, kulaté chýše, stromy msasa v podzimních barvách */
+    sona: function(F, r){
+      const q = nahoda(F.sem + 1013);
+      let o = nebe(F, "#86B4E0", "#F4E8D0") + mraky(F, r, 3, 30, 66, 80);
+      o += hrebeny(F, [[150, 4, 90, 1, "#A8A888", .4], [170, 6, 80, 2.4, "#B8B070", 0]]);
+      let bal = ""; [[90, 160, 40, 20], [92, 132, 18, 12], [96, 116, 10, 8], [300, 164, 50, 24], [310, 134, 20, 12]].forEach(function(b){ bal += "M" + (b[0] - b[2]) + " " + (b[1] + 6) + " Q" + (b[0] - b[2] * 1.05) + " " + (b[1] - b[3] * .9) + " " + b[0] + " " + (b[1] - b[3]) + " Q" + (b[0] + b[2] * 1.05) + " " + (b[1] - b[3] * .9) + " " + (b[0] + b[2]) + " " + (b[1] + 6) + " Z "; });
+      o += kryt(F, bal) + vrstva(F, bal, "#B8AEA0", "#7A726A", .92);
+      o += chyse(F, q, 170, 204, 1.4) + chyse(F, q, 206, 208, 1.2) + chyse(F, q, 240, 204, 1.3);
+      [[40, 226, 1.4, "#C8602E"], [360, 230, 1.5, "#A8402A"], [130, 234, 1.2, "#D8883A"]].forEach(function(t){ o += strom(F, q, t[0], t[1], t[2], t[3]); });
+      return o + trava(F, r, 120, 220, 254, ["#A8A050", "#B8A860"]);
+    },
+    /* Oromové: zelená etiopská vysočina, kulaté chýše s doškem, obrovský posvátný fíkovník odaa, dobytek */
+    oromo: function(F, r){
+      const q = nahoda(F.sem + 1019);
+      let o = nebe(F, "#80AEDE", "#F0EAD8") + mraky(F, r, 4, 26, 70, 90);
+      o += hrebeny(F, [[126, 14, 60, 1, "#8EA2B0", .5], [150, 12, 60, 2.4, "#8CB060", .1]]);
+      o += hrebeny(F, [[178, 8, 70, 3.5, "#98BC66", 0]]);
+      o += skupina(F, F.stetec, tah("M290 222 C288 200 296 186 290 170 M290 196 l-18 -12 M292 190 l20 -14", "#5A4A3A", 3.4, .9)) + koruny(F, q, 220, 370, 168, .9, "#4E7A40", .9, F.jemna) + koruny(F, q, 240, 350, 156, .8, "#5E8A48", .85, F.jemna);
+      o += chyse(F, q, 80, 212, 1.5) + chyse(F, q, 124, 216, 1.2) + chyse(F, q, 180, 210, 1.3);
+      return o + zebu(F, [[200, 236, 1.6, "#8A5A3A"], [330, 240, 1.8, "#E8E0D0"], [60, 242, 1.7, "#5A4030"]]) + trava(F, r, 120, 226, 254, ["#557F38", "#78A04A"]);
+    },
+    /* Zuluové: zvlněné zelené kopce, úlovité chýše v kruhu kolem ohrady pro dobytek, aloe */
+    zulu: function(F, r){
+      const q = nahoda(F.sem + 1021);
+      let o = nebe(F, "#82B0E0", "#F2EAD6") + mraky(F, r, 4, 26, 70, 90);
+      o += hrebeny(F, [[128, 12, 50, 1, "#8EA2B0", .5], [150, 14, 50, 2.6, "#8CB060", .15]]);
+      o += hrebeny(F, [[176, 10, 60, 3.2, "#9ABC64", 0]]);
+      const cx = 200, cy = 214;
+      for (let i = 0; i < 9; i++) { const a = Math.PI * (1.1 + i * .1), x = cx + Math.cos(a) * 110, y = cy + Math.sin(a) * 26; if (y < cy - 4) o += ul(F, x, y, 1.1, "#B89A62"); }
+      let pl = ""; for (let i = 0; i < 50; i++) { const a = i / 50 * 6.28, x = cx + Math.cos(a) * 40, y = cy + 6 + Math.sin(a) * 10; pl += tah("M" + f1(x) + " " + f1(y) + " l0 -6", "#6A5038", .8, .85); }
+      o += skupina(F, F.stetec, pl) + zebu(F, [[180, 220, 1.1, "#8A5A3A"], [205, 218, 1.1, "#E8E0D0"]]);
+      for (let i = 0; i < 9; i++) { const a = Math.PI * (.1 + i * .1), x = cx + Math.cos(a) * 110, y = cy + Math.sin(a) * 26; if (y > cy + 4) o += ul(F, x, y + 6, 1.4, "#B89A62"); }
+      let al = ""; [[30, 244], [380, 248]].forEach(function(p){ for (let k = 0; k < 7; k++) { const a = -2.9 + k * .3; al += tah("M" + p[0] + " " + p[1] + " q" + f1(Math.cos(a) * 6) + " " + f1(Math.sin(a) * 8) + " " + f1(Math.cos(a) * 12) + " " + f1(Math.sin(a) * 14), "#5E8A6A", 2, .85); } al += tah("M" + p[0] + " " + p[1] + " l0 -30", "#6A6A48", 1, .9) + tah("M" + (p[0] - 1) + " " + (p[1] - 30) + " l2 -8", "#E8602E", 3, .9); });
+      return o + skupina(F, F.stetec, al) + trava(F, r, 100, 230, 254, ["#557F38", "#78A04A"]);
+    },
+    /* Rwanda: tisíc kopců s terasami v ranní mlze, banánovníky, domy s plechovou střechou */
+    rwanda: function(F, r){
+      const q = nahoda(F.sem + 1031);
+      let o = nebe(F, "#8EB4DA", "#EEEAE0") + mraky(F, r, 2, 26, 50, 80);
+      o += hrebeny(F, [[104, 16, 40, 1, "#8E9EB4", .6], [122, 16, 36, 2.4, "#6E8E6A", .4]]) + mlha(F, 116, 140, .55);
+      o += terasy(F, r, 142, 9, 9, 14, 40, 3.2, ["#9CC064", "#B4C870", "#88B458", "#C4C47A"], "#6E7A3A");
+      o += vesnice(F, q, [[250, 176, 22, 9, { typ: "sedlo", stena: "#D8B888", bok: "#9A7A56", strecha: "#9AA2AA", okna: 2, rh: 6 }], [290, 182, 20, 8, { typ: "sedlo", stena: "#C8A478", bok: "#9A7A56", strecha: "#9AA2AA", okna: 1, rh: 6 }]]);
+      for (let i = 0; i < 6; i++) { const x = 20 + i * 24 + q() * 6, y = 236 + q() * 10; o += skupina(F, F.stetec, tah("M" + f1(x) + " " + f1(y) + " l" + f1((q() - .5) * 2) + " -20", "#6E7A48", 2, .9)); [-2.3, -1.7, -1.1, -.6, -2.8].forEach(function(u){ o += list(F, x, y - 19, 18 + q() * 5, u, "#5E9A48"); }); }
+      return o + mlha(F, 150, 168, .25);
+    },
+    /* Uganda (luganda): břeh Viktoriina jezera, plantáže banánovníků matoke, papyrus, rybářské čluny */
+    uganda: function(F, r){
+      const q = nahoda(F.sem + 1033);
+      let o = nebe(F, "#86B2DC", "#F0EAD6") + mraky(F, r, 4, 26, 70, 90);
+      o += voda(F, r, "M-10 140 L420 138 L420 194 L-10 196 Z", "#8EB4CC", "#5A86A8", 142, 192, 14);
+      let pap = ""; for (let i = 0; i < 30; i++) { const x = 250 + q() * 170, y = 190 + q() * 10; pap += tah("M" + f1(x) + " " + f1(y) + " l" + f1((q() - .5) * 3) + " -" + f1(14 + q() * 10), "#6E8A40", .8, .85); for (let k = 0; k < 6; k++) { const a = -2.8 + k * .4; pap += tah("M" + f1(x) + " " + f1(y - 22) + " l" + f1(Math.cos(a) * 4) + " " + f1(Math.sin(a) * 4), "#7E9A48", .5, .8); } }
+      o += skupina(F, F.stetec, pap);
+      [[80, 172, 1.2], [160, 180, 1]].forEach(function(b){ const x = b[0], y = b[1], s = b[2]; o += vrstva(F, "M" + f1(x - 22 * s) + " " + f1(y - 5 * s) + " Q" + x + " " + f1(y + 3 * s) + " " + f1(x + 22 * s) + " " + f1(y - 6 * s) + " L" + f1(x + 18 * s) + " " + f1(y - 2 * s) + " L" + f1(x - 18 * s) + " " + f1(y - 2 * s) + " Z", "#6A4A34", "#3A2A20", .95, F.jemna); });
+      const br = "M-10 256 L-10 198 Q200 190 420 198 L420 256 Z";
+      o += kryt(F, br) + vrstva(F, br, "#8CB85E", "#5E8A42", .9);
+      for (let i = 0; i < 9; i++) { const x = 10 + i * 46 + q() * 10, y = 230 + (i % 2) * 14; o += skupina(F, F.stetec, tah("M" + f1(x) + " " + f1(y) + " l" + f1((q() - .5) * 2) + " -22", "#6E7A48", 2.2, .9)); [-2.3, -1.7, -1.1, -.6, -2.8].forEach(function(u){ o += list(F, x, y - 21, 20 + q() * 5, u, "#5E9A48"); }); }
+      return o;
+    },
+    /* Malawi (čičeva): průzračné jezero s rybářskými kánoemi, písečná pláž, baobab, mangovníky, hory za jezerem */
+    malawi: function(F, r){
+      const q = nahoda(F.sem + 1039);
+      let o = nebe(F, "#7EB0E2", "#F4E8D0") + mraky(F, r, 3, 30, 66, 80);
+      o += hrebeny(F, [[132, 12, 50, 1, "#8EA0BA", .55]]);
+      o += voda(F, r, "M-10 144 L420 142 L420 256 L-10 256 Z", "#5EA8C8", "#2E7AA0", 146, 250, 16);
+      const pl = "M-10 256 L-10 206 Q120 196 240 214 Q300 224 330 256 Z";
+      o += kryt(F, pl) + vrstva(F, pl, "#F2E4BC", "#D8C08E", .9);
+      [[180, 176, 1], [260, 190, 1.2]].forEach(function(b){ const x = b[0], y = b[1], s = b[2]; o += vrstva(F, "M" + f1(x - 22 * s) + " " + f1(y - 4 * s) + " Q" + x + " " + f1(y + 3 * s) + " " + f1(x + 22 * s) + " " + f1(y - 5 * s) + " L" + f1(x + 18 * s) + " " + f1(y - 1 * s) + " L" + f1(x - 18 * s) + " " + f1(y - 1 * s) + " Z", "#5A3E2A", "#3A2A1E", .95, F.jemna); });
+      o += baobab(F, q, 70, 226, .9) + strom(F, q, 150, 230, 1.8, "#3E6A36") + chyse(F, q, 230, 230, 1.2);
+      return o + ptaci(F, r, 3, 300, 70);
+    },
+    /* Xhosové: zvlněné kopce Východního Kapska s tyrkysově a bíle natřenými kulatými chýšemi, pobřeží v dálce */
+    xhosa: function(F, r){
+      const q = nahoda(F.sem + 1049);
+      let o = nebe(F, "#86B2DE", "#F2EAD6") + mraky(F, r, 4, 26, 70, 90);
+      o += voda(F, r, "M-10 130 L420 128 L420 146 L-10 148 Z", "#7EAACC", "#4A7EA8", 132, 146, 4);
+      o += hrebeny(F, [[146, 10, 60, 1, "#9AB468", .15], [176, 12, 60, 2.8, "#8CB05A", 0]]);
+      [[70, 168, 1], [110, 172, .9], [210, 190, 1.4], [260, 194, 1.2], [330, 200, 1.5], [150, 206, 1.6]].forEach(function(h, i){ o += chyse(F, q, h[0], h[1], h[2]).replace(/#D6A87C/g, i % 2 ? "#6EC8C0" : "#F2EEE4").replace(/#A8784E/g, i % 2 ? "#3E9A94" : "#C8C0B0"); });
+      return o + trava(F, r, 150, 214, 254, ["#557F38", "#78A04A", "#46692E"]) + kvety(F, r, 18, 222, 252, ["#F4F0E4", "#E8D56A"], .9);
+    },
+    /* Lesotho (sesotho): vysoké hory, kamenné kulaté chýše s doškem, koně basutských jezdců, strmá údolí */
+    lesotho: function(F, r){
+      const q = nahoda(F.sem + 1051);
+      let o = nebe(F, "#76A8DC", "#F0EAE0") + mraky(F, r, 3, 24, 56, 80);
+      o += hory(F, r, [[-10, 110], [70, 70], [150, 96], [230, 60], [310, 90], [410, 74]], 170, "#A8A898", "#6E7064", 80, .15);
+      o += hrebeny(F, [[160, 10, 60, 2, "#A8B070", 0]]);
+      [[120, 208, 1.4], [160, 212, 1.2], [210, 206, 1.3]].forEach(function(h){ o += chyse(F, q, h[0], h[1], h[2]).replace(/#D6A87C/g, "#A8A090").replace(/#A8784E/g, "#6E6A60"); });
+      let kone = ""; [[260, 232, 1.6, "#6E5038"], [300, 238, 1.8, "#3A2E26"], [60, 236, 1.7, "#E8E0D0"]].forEach(function(k){ const x2 = k[0], y2 = k[1], s2 = k[2];
+        kone += '<path d="M' + f1(x2) + " " + f1(y2) + " l" + f1(1.5 * s2) + " " + f1(-7 * s2) + " l" + f1(12 * s2) + " 0 l" + f1(2.5 * s2) + " " + f1(-4 * s2) + " l" + f1(2.5 * s2) + " " + f1(.5 * s2) + " l" + f1(-1 * s2) + " " + f1(5 * s2) + " l0 " + f1(5.5 * s2) + " l" + f1(-1.6 * s2) + " 0 l0 " + f1(-4.5 * s2) + " l" + f1(-11 * s2) + " 0 l" + f1(-1 * s2) + " " + f1(4.5 * s2) + ' z" fill="' + k[3] + '"/>'; });
+      return o + '<g filter="url(#' + F.jemna + ')" opacity=".92">' + kone + '</g>' + trava(F, r, 120, 222, 254, ["#8A9A48", "#A8A858"]);
+    },
+    /* Kapsko (afrikánština): bílý statek s kapskoholandským štítem a doškovou střechou, vinice, stolová hora, duby */
+    kapsko: function(F, r){
+      const q = nahoda(F.sem + 1061);
+      let o = nebe(F, "#76AAE0", "#F2E8D4") + mraky(F, r, 2, 40, 70, 90);
+      const hora = "M-10 150 L40 140 L80 86 L240 82 L270 110 L330 124 L420 140 L420 156 L-10 156 Z";
+      o += kryt(F, hora) + vrstva(F, hora, "#8A96A8", "#5E6A7E", .9) + mok(F, "M80 86 L240 82 L250 92 L70 96 Z", "#FFFFFF", .6);
+      o += hrebeny(F, [[156, 4, 80, 1, "#9AB468", .1]]);
+      o += kapskyStit(F, 150, 186, 90, 14, 1.1) + strom(F, q, 110, 190, 2, "#4E7A40") + strom(F, q, 280, 190, 1.8, "#4E7A40");
+      const vx = 200, vy = 190; let listy = "", rady = "";
+      for (let k = -9; k <= 9; k++) { const xb = 200 + k * 46;
+        for (let t = .1; t <= 1.05; t += .04 + t * .03) { const x = vx + (xb - vx) * t, y = vy + (H - vy) * t, s = .4 + t * 2.2; if (y < 196) continue;
+          listy += '<ellipse cx="' + f1(x + (q() - .5) * s) + '" cy="' + f1(y - s * 1.2) + '" rx="' + f1(s * 1.3) + '" ry="' + f1(s * .9) + '" fill="' + mix("#5E8A3A", q() < .5 ? "#B4C050" : "#2E5A2E", q() * .4) + '"/>'; } }
+      o += vrstva(F, "M-10 256 L-10 196 L420 196 L420 256 Z", "#C8A878", "#A8845A", .55);
+      return o + '<g opacity=".88" filter="url(#' + F.jemna + ')" style="mix-blend-mode:multiply">' + listy + '</g>';
+    },
+    /* Berbeři (tamazight): pohoří Atlas se sněhem, hliněná kasba s nárožními věžemi, palmová oáza v údolí */
+    kasba: function(F, r){
+      const q = nahoda(F.sem + 1063);
+      let o = nebe(F, "#7AAEE2", "#F4E6CC") + rasy(F, r, 3, 12, 36);
+      o += hory(F, r, [[-10, 110], [70, 70], [150, 96], [230, 56], [310, 90], [410, 74]], 150, "#C0A890", "#86705E", 90, .15);
+      o += hrebeny(F, [[150, 6, 70, 1, "#C8A080", 0]]);
+      const kx = 130, ky = 196, zed = mnoho([[kx, ky], [kx + 120, ky], [kx + 120, ky - 26], [kx, ky - 26]]);
+      o += kryt(F, zed, F.jemna) + vrstva(F, zed, "#C8885A", "#9A6440", .95, F.jemna);
+      [kx - 6, kx + 110].forEach(function(x){ o += strazni(F, x, ky + 1, 16, 44, 1, { stena: "#C08A5C", strecha: "#B07A50" }); });
+      let orn = ""; for (let i = 0; i < 7; i++) orn += '<path d="M' + f1(kx + 12 + i * 15) + " " + f1(ky - 20) + ' l3 -4 l3 4 l-3 4 z" fill="none" stroke="#8A5A36" stroke-width=".8"/>';
+      o += '<g opacity=".85">' + orn + '</g>' + nanes(F, "M" + (kx + 54) + " " + ky + " l0 -12 q6 -6 12 0 l0 12 z", "#3A2418", .85);
+      [[40, 226, 1.1], [70, 232, .9], [300, 230, 1.2], [340, 226, 1], [380, 234, 1.1]].forEach(function(p){ o += palma(F, r, p[0], p[1], p[2], "#4E7A3A"); });
+      return o + hrebeny(F, [[236, 4, 70, 4, "#8EAA58", 0]]);
     },
     /* střední Evropa: zvlněná pole, remízky, vesnice s kostelíkem, vlčí máky */
     kopce: function(F, r){
