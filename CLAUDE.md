@@ -104,14 +104,19 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
 - **Úvod**: glóbus přiletí z vesmíru (2,2 s), pak ukazatel „Klikni na mě!“ ukáže na jazyk (česky na češtinu,
   anglicky na angličtinu). Po prvním výběru se už nikdy neukáže (`atlas-uvitano`). Při
   `prefers-reduced-motion` ani s odkazem `#…` přílet neběží (ukazatel se ukáže hned, pokud nic není vybrané).
-- **Rodokmen** (tlačítko v liště, 24. 9. 2026 podle videa rodokmenu ve 3D od uživatele): místo glóbu se na
-  plátně `#strom` ukáže 3D strom jedné rodiny z Glottologu (`PD.nad`, `PD.uzly`). Dole je kořen (společný předek),
-  výška = hloubka ve stromu, úhel = pořadí listů, poloměr roste s hloubkou, takže strom má tvar koruny; sourozenecké
-  listy jsou do vějíře. Kroužek („prstýnek“) jen u rozvětvení, průchozí uzly se nekreslí. Jazyky s pozdravem jsou
-  velké tečky v barvě rodiny. Vybraný jazyk má zvýrazněnou cestu ke kořeni a ostatní větve ztmavnou. Tažení otáčí,
-  kolečko / dva prsty přibližují, klik na větev na ni zaostří, klik na jazyk ho vybere (karta, glóbus). Strom
-  vyroste od kořene (1,5 s), pak se pomalu otáčí a po 20 s usne; `prefers-reduced-motion` obojí vypne.
-  Kreslí se vlastní perspektivou na 2D plátno (žádná knihovna). Glóbus se mezitím nepřekresluje.
+- **Rodokmen** (tlačítko v liště, 24. 9. 2026): místo glóbu se na plátně `#strom` ukáže strom jedné rodiny
+  z Glottologu (`PD.nad`, `PD.uzly`) jako **plochý vějíř**: kořen (společný předek) dole uprostřed, větve se
+  rozbíhají nahoru do půlkruhu, vzdálenost od kořene = hloubka ve stromu, úhel = pořadí listů. Hrany jsou lomené
+  (oblouk rodiče + paprsek), tloušťka větve roste s počtem jazyků pod ní. Jazyk je o krok za svou větví.
+  **Nic se neotáčí a není to 3D** – první verze byla 3D „kornout“ s otáčením podle videa rodokmenu, uživatel ji
+  zamítl („otáčení nedává smysl“): ve 3D se větve schovávaly za sebe a třetí rozměr nic nenesl. Nevracet.
+  Nestahovat ani všechny jazyky na obvod: stovky dlouhých paprsků splynuly v plochu.
+  Kroužek jen u rozvětvení, průchozí uzly se nekreslí. Jazyky s pozdravem jsou velké tečky v barvě rodiny.
+  Vybraný jazyk má zvýrazněnou cestu ke kořeni, ostatní větve ztmavnou; najetá větev zezlátne celá.
+  Tažení posouvá, kolečko a dva prsty přibližují k místu pod kurzorem, klik na větev na ni zaostří, klik na jazyk
+  ho vybere (karta, glóbus), dvojklik / „Celý strom“ vrátí celek. Strom při otevření vyroste od kořene (1,3 s,
+  `prefers-reduced-motion` vypne); v klidu se nepřekresluje. Měřítko se řídí skutečnou velikostí stromu (`m.sirka`,
+  `m.vyska`) a volnou plochou vedle karty. Glóbus se mezitím nepřekresluje.
   Výběr rodiny nabízí rodiny s aspoň třemi jazyky; izolované jazyky strom nemají. Na kartě je v záložce
   Příbuzní tlačítko „Ukázat v rodokmenu“ (`tlacitkoRodokmenu`). Filtry (znakové, vitalita) platí i ve stromu.
   Názvy větví jsou z Glottologu anglicky; české překlady hlavních větví jsou v `data/glottolog-branches.cs.json`

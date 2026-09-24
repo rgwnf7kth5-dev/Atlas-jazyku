@@ -367,9 +367,9 @@
  "rodokmen": "Family tree",
  "globus": "Globe",
  "rodokmenPopis": "Language family tree: how the languages of one family are related",
- "stromPlatno": "Three-dimensional family tree of a language family",
+ "stromPlatno": "Family tree of a language family",
  "stromRodina": "Family",
  "stromCely": "Whole tree",
- "stromNapoveda": "At the bottom is the common ancestor of the whole family. Each ring is a place where a language split into several, and today’s languages sit at the ends of the branches – big dots have a greeting. Drag to turn, scroll to zoom, click a branch or a language.",
+ "stromNapoveda": "At the bottom is the common ancestor of the whole family, and the languages sit at the ends of the branches. Each ring is a place where a language split into several; the thicker the branch, the more languages grew from it. Big dots have a greeting. Drag to move, scroll or pinch to zoom, click a branch or a language.",
  "stromUkazat": "Show in the family tree"
 }
