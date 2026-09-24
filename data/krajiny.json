@@ -1,6 +1,6 @@
 {
  "_pozn": "Krajina na pohlednici jazyka: jak to vypadá tam, odkud jazyk pochází (ne památky). Druhy a varianty jsou v src/akvarely.js; validace hlídá, že má krajinu každý jazyk atlasu.",
- "cs": "kopce", "sk": "tatry", "pl": "rovina", "ru": "rusko", "uk": "rovina:slunecnice", "be": "belorusko", "sr": "srbsko", "hr": "chorvatsko",
+ "cs": "rip", "sk": "tatry", "pl": "rovina", "ru": "rusko", "uk": "rovina:slunecnice", "be": "belorusko", "sr": "srbsko", "hr": "chorvatsko",
  "sl": "alpy", "bg": "bulharsko", "mk": "makedonie", "en": "anglie", "de": "porynsko", "nl": "rovina:mlyn", "sv": "svedsko", "no": "fjordy",
  "da": "dansko", "is": "island", "af": "kapsko", "fr": "vinice", "es": "andalusie", "pt": "douro", "it": "toskansko", "ro": "maramures",
  "ca": "katalansko", "el": "recko", "ga": "pobrezi", "cy": "wales", "lt": "litva", "lv": "lotyssko", "sq": "albanie", "hy": "armenie",

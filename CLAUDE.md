@@ -30,8 +30,7 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
 - **Stránka začíná celým světem bez vybraného jazyka** (přání uživatele: neotevírat češtinou ani jiným jazykem).
 - Sbírka pozdravů (počítadlo v hlavičce, hvězdičky u otevřených jazyků) byla 23. 9. 2026 na přání uživatele
   odstraněna – nedávala smysl. Znovu ji nepřidávat.
-- Dole v panelu se seznamem je odkaz na zpětnou vazbu e-mailem (`castor2@me.com`, klíče `zpetna…` v `src/ui/*.json`).
-  Předmět e-mailu se nastaví podle jazyka; v artefaktu se odkaz otevírá v novém okně, jinak by ho náhled zablokoval.
+- E-mail na zpětnou vazbu uživatel 24. 9. 2026 z webu smazal („nenahrazuj“) – žádný kontakt nepřidávat.
 - **Přepnutí jazyka je na místě, ne odkazem do nového listu** (přání uživatele). Každá stránka nese oba jazyky;
   texty v šabloně mají `data-t`, `data-t-title`, `data-t-aria-label`, `data-t-placeholder` a JS je přepíše.
   Nový text v šabloně proto musí dostat i tuhle značku. Na webu se při přepnutí mění adresa `/` ↔ `/en/`.
@@ -224,6 +223,26 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
 - Francie (`vinice`) má zámek na Loiře (`zamek`: kulaté věže s kuželovými břidlicovými střechami, vikýře) a vlašské
   topoly (`topol`); cypřiše patří Toskánsku a Provenci.
 
+## Stránky jazyků, O datech, klávesnice (24. 9. 2026)
+
+- **Samostatné stránky jazyků** (uživatel schválil): `scripts/stranky.mjs`, volá ho build, jen pro web.
+  `/jazyk/<jméno>/` česky (např. `/jazyk/baskictina/`) a `/en/language/<name>/`, přehled `/jazyky/` a
+  `/en/languages/`, O datech `/o-datech/` a `/en/about-data/`. Stránka je lehká (bez skriptu glóbu): malba,
+  pozdrav, výslovnost, vlastní jméno, mluvčí, rodina, vitalita, státy, zajímavost, příbuzní v atlasu
+  (nejhlubší společný předek jako oblouky; srbština, chorvatština a hmongština přes náhradní tečku) a tlačítko
+  „Najít na glóbu“ na `/#<id>`. Vlastní titulek, popis, canonical, hreflang a og:image = malba jazyka.
+  Adresa je z názvu bez diakritiky; build spadne, když by dva jazyky měly stejnou. Všechny jsou v `sitemap.xml`.
+  Na hlavní stránce vede v patičce seznamu odkaz „Jazyky s pozdravem“ (jen web; v artefaktu a z disku skrytý).
+- **Malby jako obrázky**: `static/malby/<id>.jpg` (800 × 500, ~36 kB) vyrábí `scripts/malby.mjs` (Playwright,
+  z `dist/index.html`). **Po změně krajiny v akvarely.js nebo krajiny.json je vyrob znovu** (lze jen pro dané id:
+  `node scripts/malby.mjs cs fr`), jinak stránka jazyka ukáže starou malbu. Aplikace malby dál kreslí živě.
+- **O datech**: okno `<dialog id="o-datech">` z odkazu v patičce seznamu (i v artefaktu), odkaz `#o-datech`
+  / `#about-data`; texty `oDatech` v `src/ui/*.json` (oddíly, verze dat, licence), data stažení dosadí build
+  (`VERZE`). Stejný text je na statické stránce. Údaje v něm musí odpovídat `data/ZDROJE.md`.
+- **Seznam z klávesnice**: do seznamu se vstoupí jedním Tabem (jedna dlaždice má `tabindex=0`), šipky
+  vlevo/vpravo o dlaždici, nahoru/dolů o řádek (nejbližší dlaždice), Home/End, PageUp/PageDown o 10 řádků;
+  další Tab seznam opustí. Při pohybu ke konci se dokreslí další dávka. Nadpisy skupin jsou `h2`.
+
 ## Podrobnosti k tečkám
 
 `scripts/podrobnosti.mjs` spojí k 7 967 tečkám data z Glottologu (ohrožení, popsanost, příbuzenstvo, státy,
@@ -300,7 +319,8 @@ Dřívější náhledový artefakt https://claude.ai/artifact/XS67Gsv9d4y2pMu7UW
   odkud jazyk pochází (`data/krajiny.json`, validace hlídá každý jazyk a existenci druhu), 19 druhů s variantami.
   Uživatel zamítl: plakátové ploché ilustrace v barvě rodiny („nelíbí“), satelitní snímky („nic se nepozná“)
   a nakonec i skutečné fotky z Wikimedia Commons (automatický výběr přes Wikidata dával mapy, vlajky,
-  cizí místa a u lakotštiny Mount Rushmore; uživatel práci zastavil). Památky a lidi na pohlednice nekreslit.
+  cizí místa a u lakotštiny Mount Rushmore; uživatel práci zastavil). Památky a lidi na pohlednice nekreslit
+  (výjimka: Říp u češtiny, viz níž).
   **Přání uživatele 24. 9. 2026:** sousední země nesmí mít stejný obrázek („Německo a Francie nemohou mít
   ten samý“), obrázků má být aspoň trojnásobek a mají nést **architektonické znaky země** – typickou lidovou
   a městskou stavbu (hrázděné domy, břidlicové střechy, pagody, mešitové kopule…), ne konkrétní památku.
@@ -314,7 +334,10 @@ Dřívější náhledový artefakt https://claude.ai/artifact/XS67Gsv9d4y2pMu7UW
   `armensky`, `iwan`, `sikhara`, `gopuram`, `stupa`, `pagoda`, `praporky`. Uživatel 24. 9. 2026: „pokračuj pořád
   dál“ – dávky se po kontrole galerie rovnou pouštějí na web. Hotová i východní a jihovýchodní Asie (23; `sin`, `mostek`, `torii`, `wat`, `buvol`, `naKulech`). Hotová i Afrika (28; `ul`, `zebu`, `velbloud`,
   `hlinenaMesita`, `dhau`, `piroga`, `kapskyStit`). Hotová i Amerika (17; `lamy`, `bizoni`, `tipi`, `agave`, `araukarie`, `misie`). Hotová i Oceánie (10). **Všech 163 jazyků má vlastní krajinu**
-  (162 druhů; čeština a český znakový jazyk sdílejí `kopce`). Nový jazyk atlasu potřebuje vlastní druh, ne sdílený.
+  (163 druhů). Nový jazyk atlasu potřebuje vlastní druh, ne sdílený.
+  **Čeština má horu Říp** (`rip`: zalesněná „obrácená mísa“ nad rovinou Polabí s rotundou sv. Jiří na temeni, lány,
+  vesnice s červenými střechami, vlčí máky) – výslovné přání uživatele 24. 9. 2026 („Říp, nebo Pražský hrad“), jediná
+  výjimka z pravidla bez památek. Český znakový jazyk má dál `kopce`.
   Světlé barvy (sníh, domy, křída) se v akvarelu nesmí násobit, jinak zmizí (`svetla()`: všechny složky ≥ 0xE0).
   **Perokresbu / rytinu uživatel zamítl** („je na nic“) a chtěl akvarely „daleko jemnější, detailnější, propracovanější“
   (24. 9. 2026). Proto: hory mají rozeklaný obrys (`clenit`), stinnou stranu za žebrem od vrcholu až do sedla, žlaby
@@ -340,4 +363,6 @@ Dřívější náhledový artefakt https://claude.ai/artifact/XS67Gsv9d4y2pMu7UW
 - Klik na zemi ji jedním kliknutím podbarví a rozsvítí její jazyky (příznak 5); tlačítko „Zvýraznit na glóbu“
   zmizelo, protože po kliknutí už nic viditelného nedělalo. Zavřením okna zvýraznění zmizí.
 - Brána do jiných světů má i ve dne tmavé hvězdné nebe (`.scena.rezim-brana` přepíná textové barvy na noční).
-- Zbývá: přeložit zbylé větve v cestě rodokmenu.
+- Přeložené jsou všechny větve na cestě rodokmenu u jazyků atlasu (576 názvů v `glottolog-branches.cs.json`,
+  24. 9. 2026). Zbývají větve, které se objeví jen u ostatních teček nebo ve stromu, a anglická jména teček
+  bez českého názvu (např. Dgèrnésiais, Jèrriais) – překládat postupně (přání uživatele).

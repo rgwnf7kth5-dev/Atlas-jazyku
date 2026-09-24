@@ -6,6 +6,7 @@ const VYCHOZI = /*__VYCHOZI__*/"cs";   // jazyk, ve kterém stránka startuje
 const ARTEFAKT = /*__ARTEFAKT__*/false;
 const SVET = /*__SVET__*/null;
 const JAZYKY = /*__JAZYKY__*/null;
+const VERZE = /*__VERZE__*/null;                 // kdy byla stažena data (stránka O datech)
 const STATY_VSE = /*__STATY__*/null;
 const REJSTRIK = /*__REJSTRIK__*/null;
 const VYMYSLENE = /*__VYMYSLENE__*/null; // jazyky z knih a filmů, jen v Bráně do jiných světů („mellon“)
@@ -203,10 +204,10 @@ function nastavRazeni(r2){
 }
 tlRazeni.forEach(function(b){ b.addEventListener("click", function(){ nastavRazeni(b.dataset.razeni); postavPolici($("hledej").value); }); });
 function nadpis(text, barva){
-  const h3 = document.createElement("h3");
-  if (barva) { const s = document.createElement("span"); s.className = "tecka"; s.style.background = barva; h3.appendChild(s); }
-  h3.appendChild(document.createTextNode(text));
-  return h3;
+  const h2 = document.createElement("h2");       // nadpis skupiny v seznamu (karta jazyka má h2 pro název, oddíly h3)
+  if (barva) { const s = document.createElement("span"); s.className = "tecka"; s.style.background = barva; h2.appendChild(s); }
+  h2.appendChild(document.createTextNode(text));
+  return h2;
 }
 /* Evropský den jazyků (26. září, Rada Evropy od roku 2001): jen ten den milá karta nad Jazykem dne.
    Vyzkoušet jde kdykoli adresou s ?den-jazyku. Zavřená karta se do dalšího roku neukáže. */
@@ -378,7 +379,69 @@ function pridavej(prvni){
     if (g.od >= g.bez.length) fronta.shift();
   }
   zarazka.hidden = !fronta.length;
+  pripravKlavesnici();
 }
+/* ---------- seznam z klávesnice ----------
+   Dlaždic je až 8 000, proto se tabulátorem do seznamu vstoupí jen jednou (na jednu dlaždici, tabindex 0)
+   a mezi dlaždicemi se chodí šipkami: vlevo/vpravo o jednu, nahoru/dolů o řádek (nejbližší dlaždice pod/nad),
+   Home/End na začátek a konec, PageUp/PageDown o deset řádků. Další Tab seznam opustí. */
+const DLAZDICE = "#seznam .mrizka > button, #seznam button.jazyk-dne";
+let aktivniDlazdice = null;
+function pripravKlavesnici(){
+  const vse = seznam.querySelectorAll(DLAZDICE);
+  if (!aktivniDlazdice || !seznam.contains(aktivniDlazdice)) aktivniDlazdice = vse[0] || null;
+  for (let k = 0; k < vse.length; k++) if (!vse[k].hasAttribute("tabindex")) vse[k].tabIndex = vse[k] === aktivniDlazdice ? 0 : -1;
+  if (aktivniDlazdice) aktivniDlazdice.tabIndex = 0;
+}
+function zamerDlazdici(el){
+  if (!el) return;
+  if (aktivniDlazdice && aktivniDlazdice !== el) aktivniDlazdice.tabIndex = -1;
+  aktivniDlazdice = el; el.tabIndex = 0; el.focus();
+  el.scrollIntoView({block: "nearest"});
+}
+/* dlaždice o řádek níž (smer 1) nebo výš (-1): první jiný řádek ve směru, v něm vodorovně nejbližší */
+function dlazdiceVRadku(vse, i, smer){
+  const r0 = vse[i].getBoundingClientRect(), x0 = r0.left + r0.width / 2;
+  let radek = null, nej = null, nejD = Infinity;
+  for (let k = i + smer; k >= 0 && k < vse.length; k += smer) {
+    const r = vse[k].getBoundingClientRect();
+    if (radek === null) { if (smer > 0 ? r.top > r0.top + 2 : r.top < r0.top - 2) radek = r.top; else continue; }
+    if (Math.abs(r.top - radek) > 2) break;
+    const d = Math.abs(r.left + r.width / 2 - x0);
+    if (d < nejD) { nejD = d; nej = vse[k]; }
+  }
+  return nej;
+}
+seznam.addEventListener("keydown", function(e){
+  if (e.altKey || e.ctrlKey || e.metaKey || !e.target.matches || !e.target.matches(DLAZDICE)) return;
+  const klic = e.key;
+  if (["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown", "Home", "End", "PageUp", "PageDown"].indexOf(klic) < 0) return;
+  e.preventDefault();
+  let vse = Array.prototype.slice.call(seznam.querySelectorAll(DLAZDICE));
+  let i = vse.indexOf(e.target), cil = null;
+  const dolu = klic === "ArrowDown" || klic === "ArrowRight" || klic === "PageDown" || klic === "End";
+  if (dolu && fronta.length && (klic === "End" || i > vse.length - 40)) {      // dokreslit další dávku, ať je kam jít
+    if (klic === "End") while (fronta.length) pridavej(); else pridavej();
+    vse = Array.prototype.slice.call(seznam.querySelectorAll(DLAZDICE)); i = vse.indexOf(e.target);
+  }
+  const rtl = getComputedStyle(seznam).direction === "rtl";
+  if (klic === "ArrowRight") cil = vse[i + (rtl ? -1 : 1)];
+  else if (klic === "ArrowLeft") cil = vse[i + (rtl ? 1 : -1)];
+  else if (klic === "Home") cil = vse[0];
+  else if (klic === "End") cil = vse[vse.length - 1];
+  else {
+    const smer = klic === "ArrowDown" || klic === "PageDown" ? 1 : -1, kroku = klic.indexOf("Page") === 0 ? 10 : 1;
+    let k = i;
+    for (let n = 0; n < kroku; n++) { const d = dlazdiceVRadku(vse, k, smer); if (!d) break; cil = d; k = vse.indexOf(d); }
+  }
+  zamerDlazdici(cil);
+});
+seznam.addEventListener("focusin", function(e){         // klik nebo Tab na dlaždici: ta se stane aktivní
+  if (e.target.matches && e.target.matches(DLAZDICE) && e.target !== aktivniDlazdice) {
+    if (aktivniDlazdice) aktivniDlazdice.tabIndex = -1;
+    aktivniDlazdice = e.target; aktivniDlazdice.tabIndex = 0;
+  }
+});
 function hlidej(){
   if (hlidac) hlidac.disconnect();
   if (!fronta.length) return;
@@ -1698,6 +1761,7 @@ function prectiOdkaz(){
   const h = decodeURIComponent(location.hash.slice(1));
   if (!h || h === kodVyberu()) return;
   if (h.toLowerCase() === "eulang") { spustEU(); return; }
+  if (/^(o-datech|about-data)$/i.test(h)) { otevriODatech(); return; }
   if (/^mellon(~|$)/i.test(h)) { otevriBranu(); const v = h.split("~")[1]; if (v) ukazVymysleny(v); return; }
   if (h.indexOf("~") > 0) {
     const d = h.split("~"), najdi = function(k){ return PODLE_ID[k] ? jazykAtlasu(k) : PODLE_KODU.has(k) ? jazykBodu(PODLE_KODU.get(k)) : null; };
@@ -2114,6 +2178,38 @@ tlPrehraj.addEventListener("click", function(){
 const adresa = location.pathname.replace(/index\.html$/, "");
 const korenWebu = VYCHOZI === "en" ? adresa.replace(/en\/$/, "") : adresa;
 const odkazJinam = $("jazyk-prepinac");
+/* ---------- O datech: odkud co je, co je odhad, verze dat a licence (texty T.oDatech, data VERZE z buildu) ---------- */
+const oDatech = $("o-datech");
+function postavODatech(){
+  const O = T.oDatech, datum = function(d){ return d ? new Date(d + "T12:00:00").toLocaleDateString(T.locale, {day: "numeric", month: "long", year: "numeric"}) : "–"; };
+  const dosad = function(s){ return s.replace(/\{(\w+)\}/g, function(_, k){
+    return {g: cislo(POCET_B), n: cislo(POLOZEK_SEZNAMU), a: cislo(JAZYKY.length), gdat: datum(VERZE.glottolog), pdat: datum(VERZE.podrobnosti), wdat: datum(VERZE.wikidata)}[k] || ""; }); };
+  oDatech.textContent = "";
+  const hlava = prvek("div", "od-hlava");
+  const h = prvek("h2", null, O.nadpis); h.id = "od-nadpis"; hlava.appendChild(h);
+  const x = prvek("button", "zavrit"); x.type = "button"; x.setAttribute("aria-label", O.zavrit);
+  x.innerHTML = '<svg aria-hidden="true"><use href="#i-krizek"/></svg>'; x.addEventListener("click", function(){ oDatech.close(); });
+  hlava.appendChild(x); oDatech.appendChild(hlava);
+  const telo = prvek("div", "od-telo");
+  telo.appendChild(prvek("p", "od-uvod", dosad(O.uvod)));
+  O.oddily.forEach(function(o){
+    const sekce = prvek("section"); sekce.appendChild(prvek("h3", null, dosad(o.h)));
+    o.p.forEach(function(t){ sekce.appendChild(prvek("p", null, dosad(t))); });
+    telo.appendChild(sekce);
+  });
+  const sekce = prvek("section"); sekce.appendChild(prvek("h3", null, O.verzeNadpis));
+  const tab = prvek("table", "od-verze"), tb = document.createElement("tbody");
+  O.verze.forEach(function(v){ const tr = document.createElement("tr"); v.forEach(function(b){ tr.appendChild(prvek("td", null, dosad(b))); }); tb.appendChild(tr); });
+  tab.appendChild(tb); sekce.appendChild(tab); telo.appendChild(sekce);
+  oDatech.appendChild(telo);
+}
+function otevriODatech(){
+  postavODatech();
+  if (oDatech.showModal) { if (!oDatech.open) oDatech.showModal(); } else oDatech.setAttribute("open", "");
+  oDatech.querySelector(".od-telo").scrollTop = 0;
+}
+$("tl-o-datech").addEventListener("click", otevriODatech);
+oDatech.addEventListener("click", function(e){ if (e.target === oDatech) oDatech.close(); });   // klik vedle okna zavře
 const puvodniOdkaz = odkazJinam.getAttribute("href");
 function prelozStranku(){
   document.documentElement.lang = T.lang;
@@ -2122,9 +2218,13 @@ function prelozStranku(){
   [["title", "tTitle"], ["aria-label", "tAriaLabel"], ["placeholder", "tPlaceholder"]].forEach(function(a){
     Array.prototype.forEach.call(document.querySelectorAll("[data-t-" + a[0] + "]"), function(el){ el.setAttribute(a[0], T[el.dataset[a[1]]]); });
   });
-  const zpetna = $("zpetna-odkaz");        // e-mail se zpětnou vazbou, předmět podle jazyka
-  zpetna.setAttribute("href", "mailto:" + T.zpetnaAdresa + "?subject=" + encodeURIComponent(T.zpetnaPredmet));
-  if (ARTEFAKT) { zpetna.target = "_blank"; zpetna.rel = "noopener"; }   // v náhledu artefaktu smí ven jen nové okno
+  $("tl-o-datech-text").textContent = T.oDatech.odkaz;
+  /* samostatné stránky jazyků (jen na webu, artefakt ani soubor z disku je nemají) */
+  const oj = $("odkaz-jazyky");
+  oj.hidden = ARTEFAKT || location.protocol === "file:";
+  oj.textContent = T.stranky.vsechnyOdkaz;
+  oj.setAttribute("href", korenWebu + (T.lang === "en" ? "en/languages/" : "jazyky/"));
+  if (oDatech.open) postavODatech();
   const jiny = T.lang === "cs" ? "en" : "cs";
   odkazJinam.setAttribute("hreflang", jiny); odkazJinam.setAttribute("lang", jiny);
   obnovOdkazJinam();

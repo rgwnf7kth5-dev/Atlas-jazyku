@@ -5,6 +5,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
+import { vyrobStranky } from "./stranky.mjs";
 
 const KOREN = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
 const cti = p => fs.readFileSync(path.join(KOREN, p), "utf8");
@@ -34,6 +35,7 @@ const opravyPoloh = json("data/polohy-opravy.json");
 const nareci = json("data/nareci.json");                 // jména nářečí z Glottologu (scripts/nareci.mjs)
 const WEB = "https://atlasoflanguages.netlify.app";   // adresa webu pro náhled při sdílení odkazu
 const ikona = cti("static/favicon.svg").trim();
+const FONTY = "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800&display=swap";
 const escHtml = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 // data jdou do <script>, proto „<“ zapíšu jako < – řetězec „</script>“ v datech by stránku rozbil
 const doSkriptu = hodnota => (typeof hodnota === "string" ? hodnota : JSON.stringify(hodnota)).replace(/</g, "\\u003c");
@@ -71,6 +73,7 @@ function skriptStranky(vychozi, artefakt) {
     .replace("/*__ARTEFAKT__*/false", () => String(!!artefakt))
     .replace("/*__SVET__*/null", () => doSkriptu(svet))
     .replace("/*__JAZYKY__*/null", () => doSkriptu(JAZYKY))
+    .replace("/*__VERZE__*/null", () => doSkriptu({ glottolog: glottolog.stazeno, podrobnosti: podrobnosti.stazeno, wikidata: json("data/wikidata.json").stazeno }))
     .replace("/*__STATY__*/null", () => doSkriptu(nazvyZemi))
     .replace("/*__REJSTRIK__*/null", () => doSkriptu(REJSTRIK))
     .replace("/*__VYMYSLENE__*/null", () => doSkriptu(json("data/vymyslene.json")))
@@ -118,7 +121,7 @@ function sestav(lang, { odkazJinam, artefakt }) {
     `document.documentElement.setAttribute("data-theme",m)})()</script>\n` +
     `<link rel="preconnect" href="https://fonts.googleapis.com">\n` +
     `<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n` +
-    `<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800&display=swap">\n` +
+    `<link rel="stylesheet" href="${FONTY}">\n` +
     `<style>\n${styly}</style>\n`;
 
   const fragment = hlavicka + html + "\n" + skripty + "\n";
@@ -153,13 +156,21 @@ fs.writeFileSync(path.join(KOREN, "dist/index.html"), cs.dokument);
 fs.writeFileSync(path.join(KOREN, "dist/en/index.html"), en.dokument);
 fs.cpSync(path.join(KOREN, "static"), path.join(KOREN, "dist"), { recursive: true });   // ikonky a náhledy
 
+// samostatné stránky jazyků, přehled a O datech (scripts/stranky.mjs); staré složky pryč, kdyby se jazyk přejmenoval
+for (const d of ["jazyk", "jazyky", "o-datech", "en/language", "en/languages", "en/about-data"]) fs.rmSync(path.join(KOREN, "dist", d), { recursive: true, force: true });
+const polozekSeznamu = JAZYKY.length + glottolog.body.length - new Set(glottolog.body.map(b => b[5]).filter(Boolean)).size;
+const { stranky } = vyrobStranky({ KOREN, WEB, UI, jazyky: jazykyAtlasu, glottolog, podrobnosti, nazvyZemi, ikona, fontyOdkaz: FONTY,
+  verze: { g: glottolog.body.length, n: polozekSeznamu, glottolog: glottolog.stazeno, podrobnosti: podrobnosti.stazeno, wikidata: json("data/wikidata.json").stazeno } });
+
 // pro vyhledávače: obě jazykové verze a jejich vzájemné odkazy
 const dnes = process.env.DATUM_STAVU || new Date().toISOString().slice(0, 10);
 fs.writeFileSync(path.join(KOREN, "dist/robots.txt"), `User-agent: *\nAllow: /\n\nSitemap: ${WEB}/sitemap.xml\n`);
 fs.writeFileSync(path.join(KOREN, "dist/sitemap.xml"),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n` +
-  ["/", "/en/"].map(u => `  <url>\n    <loc>${WEB}${u}</loc>\n    <lastmod>${dnes}</lastmod>\n` +
-    `    <xhtml:link rel="alternate" hreflang="cs" href="${WEB}/"/>\n    <xhtml:link rel="alternate" hreflang="en" href="${WEB}/en/"/>\n  </url>\n`).join("") +
+  [["/", "/en/", "cs"], ["/en/", "/", "en"]].concat(stranky).map(([u, jina, l]) => {
+    const cs = l === "cs" ? u : jina, en = l === "en" ? u : jina;
+    return `  <url>\n    <loc>${WEB}${u}</loc>\n    <lastmod>${dnes}</lastmod>\n` +
+      `    <xhtml:link rel="alternate" hreflang="cs" href="${WEB}${cs}"/>\n    <xhtml:link rel="alternate" hreflang="en" href="${WEB}${en}"/>\n  </url>\n`; }).join("") +
   `</urlset>\n`);
 // vlastní stránka 404 (Netlify ji vrátí u neexistující adresy), dvojjazyčná a bez skriptů
 fs.writeFileSync(path.join(KOREN, "dist/404.html"), `<!doctype html>
@@ -204,6 +215,7 @@ hr{border:0; border-top:1px solid color-mix(in srgb,var(--text) 15%,transparent)
 // skript s otiskem v názvu se nikdy nemění, smí zůstat v mezipaměti prohlížeče napořád
 fs.writeFileSync(path.join(KOREN, "dist/_headers"), `/js/*\n  Cache-Control: public, max-age=31536000, immutable\n`);
 const kb = s => (Buffer.byteLength(s) / 1024).toFixed(0) + " kB";
+console.log(`stránky jazyků: ${stranky.length} (včetně přehledů a O datech)`);
 console.log(`dist/index.html (česky) ${kb(cs.dokument)}, dist/en/index.html (anglicky) ${kb(en.dokument)}, dist/${souborSkriptu} ${kb(skriptWebu)}`);
 
 if (slozkaArtefaktu) {

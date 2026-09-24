@@ -451,17 +451,17 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
 #hledej::placeholder{color:var(--text3)}
 .pocet{margin:0; font-family:var(--pismo-data); font-size:.78rem; letter-spacing:.06em; color:var(--text2)}
 .seznam{overflow-y:auto; padding:6px 16px 12px; min-height:0; flex:1; scrollbar-width:thin; scrollbar-color:var(--linka2) transparent}
-.zpetna{margin:0; padding:10px 16px 9px; border-top:1px solid var(--linka); display:flex; gap:9px; align-items:flex-start;
+.o-datech-radek{margin:0; padding:10px 16px 9px; border-top:1px solid var(--linka); display:flex; gap:9px; align-items:flex-start;
   font-size:.8rem; line-height:1.4; color:var(--text2)}
-.zpetna svg{width:17px; height:17px; flex:none; margin-top:1px; color:var(--cyan)}
-.zpetna a{color:var(--cyan); font-weight:600; text-decoration:underline; text-underline-offset:2px; white-space:nowrap}
-.zpetna a:hover{text-decoration-thickness:2px}
+.odkaz-o-datech svg{width:17px; height:17px; flex:none; margin-top:1px; color:var(--cyan)}
+.odkaz-o-datech{color:var(--cyan); font-weight:600; text-decoration:underline; text-underline-offset:2px; white-space:nowrap}
+.odkaz-o-datech:hover{text-decoration-thickness:2px}
 .zdroje{margin:0; padding:9px 16px; padding-bottom:calc(9px + env(safe-area-inset-bottom,0px)); border-top:1px solid var(--linka);
   font-family:var(--pismo-data); font-size:.78rem; letter-spacing:.04em; color:var(--text3)}
 .rodina{margin-top:18px}
 .rodina:first-child{margin-top:8px}
-.rodina h3{display:flex; align-items:center; gap:8px; margin:0 0 9px; font-family:var(--pismo-data); font-weight:400; font-size:.7rem; letter-spacing:.12em; text-transform:uppercase; color:var(--text2)}
-.rodina h3::after{content:""; flex:1; height:1px; background:linear-gradient(90deg, var(--linka2), transparent)}
+.rodina h2{display:flex; align-items:center; gap:8px; margin:0 0 9px; font-family:var(--pismo-data); font-weight:400; font-size:.7rem; letter-spacing:.12em; text-transform:uppercase; color:var(--text2)}
+.rodina h2::after{content:""; flex:1; height:1px; background:linear-gradient(90deg, var(--linka2), transparent)}
 .tecka{width:9px;height:9px;border-radius:50%; flex:none; box-shadow:0 0 10px currentColor}
 .mrizka{display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr)); gap:7px}
 .mrizka + .mrizka{margin-top:7px}
@@ -661,7 +661,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 .prepis{font-family:var(--pismo-nadpis); font-weight:500}
 
 /* štítky nadpisů: řídké verzálky (kod, rodiny v seznamu, počty) */
-.kod,.rodina h3,.pocet,.stitek-nadpis,.k-stitky .stitek > :first-child{font-family:var(--pismo-text); letter-spacing:.16em; text-transform:uppercase; font-weight:600}
+.kod,.rodina h2,.pocet,.stitek-nadpis,.k-stitky .stitek > :first-child{font-family:var(--pismo-text); letter-spacing:.16em; text-transform:uppercase; font-weight:600}
 .pocet{letter-spacing:.08em; text-transform:none; font-weight:500}
 
 /* karta jazyka: bílý list s pohlednicí nahoře; bez svítícího obvodu */
@@ -698,8 +698,8 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 :root:not([data-theme="light"]) .jaz{background:rgba(255,255,255,.03)}
 .jaz.s-pozdravem::before{box-shadow:none}
 .jaz .pz{font-size:1.15rem}
-.rodina h3{font-size:.7rem; color:var(--text2)}
-.rodina h3::after{background:var(--linka)}
+.rodina h2{font-size:.7rem; color:var(--text2)}
+.rodina h2::after{background:var(--linka)}
 .tecka{box-shadow:none}
 
 /* jazyk dne jako pohlednice z obrázku B: bílá karta, červená tečka, velký patkový pozdrav */
@@ -826,3 +826,23 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 }
 /* souřadnice na kartě malými písmeny: „48,0° s. š.“ (verzálky „S. Š.“ se špatně čtou) */
 .kod.sour{text-transform:none; letter-spacing:.04em}
+
+/* O datech: odkaz v patičce seznamu a okno (<dialog>) */
+.odkaz-o-datech{display:inline-flex; align-items:center; gap:8px; padding:4px 0; border:0; background:none; font:inherit; font-size:.85rem; font-weight:600; color:var(--cyan); cursor:pointer}
+.o-datech{width:min(720px, calc(100vw - 32px)); max-height:min(86vh, 900px); padding:0; border:1px solid var(--sklo-okraj); border-radius:22px;
+  background:var(--sklo2); color:var(--text); box-shadow:0 30px 80px -30px rgba(0,0,0,.6); overflow:hidden}
+.o-datech[open]{display:flex; flex-direction:column}
+.o-datech::backdrop{background:rgba(8,12,28,.5); backdrop-filter:blur(3px)}
+.od-hlava{display:flex; align-items:center; gap:12px; padding:18px 20px 12px 24px; border-bottom:1px solid var(--linka)}
+.od-hlava h2{margin:0; font-family:var(--pismo-nadpis); font-weight:600; font-size:1.55rem; line-height:1.2}
+.od-telo{overflow:auto; padding:6px 24px 24px; line-height:1.55; font-size:.95rem}
+.od-telo h3{margin:22px 0 6px; font-family:var(--pismo-nadpis); font-weight:600; font-size:1.15rem}
+.od-telo p{margin:0 0 9px; color:var(--text2)}
+.od-telo .od-uvod{margin-top:14px; font-size:1.02rem; color:var(--text)}
+.od-verze{width:100%; border-collapse:collapse; font-size:.86rem}
+.od-verze td{padding:7px 8px 7px 0; border-bottom:1px solid var(--linka); vertical-align:top; color:var(--text2)}
+.od-verze td:first-child{color:var(--text)}
+.od-verze td:last-child{white-space:nowrap; text-align:right; padding-right:0}
+@media (max-width:620px){ .od-verze td:nth-child(2){display:none} .od-telo{padding:4px 18px 20px} }
+.o-datech-radek{flex-wrap:wrap; align-items:center; column-gap:18px}
+.odkaz-jazyky{font-size:.85rem; font-weight:600; color:var(--cyan); text-underline-offset:2px}

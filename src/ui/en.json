@@ -284,10 +284,6 @@
  "motiv": "Switch between day and night look",
  "zemeBezPozdravuDen": "No greeting from here yet. Try clicking one of the dots.",
  "pribuzniObloukyDen": "Arcs on the globe lead to them.",
- "zpetna": "Got an idea, or is something not working? Write to",
- "zpetnaAdresa": "castor2@me.com",
- "zpetnaPredmet": "Language Atlas – feedback",
- "zpetnaPopis": "Send feedback by e-mail",
  "znakoveSkupina": "Sign languages",
  "znakoveVse": "All",
  "znakoveBez": "No sign languages",
@@ -421,5 +417,107 @@
  "filtryZapnute": "filters on: {n}",
  "nenalezenaNadpis": "This page does not exist",
  "nenalezenaText": "Maybe there is a typo in the address. All 7,967 languages of the world are waiting on the globe.",
- "nenalezenaZpet": "Back to the globe"
+ "nenalezenaZpet": "Back to the globe",
+ "oDatech": {
+  "odkaz": "About the data",
+  "nadpis": "About the data and how the atlas was made",
+  "zavrit": "Close",
+  "uvod": "The atlas is built on open databases put together by linguists from all over the world. Here is where everything comes from, what is certain and what is only an estimate.",
+  "oddily": [
+   {
+    "h": "What is on the globe",
+    "p": [
+     "Each dot is one language. The list of languages comes from Glottolog, an open database of the world's languages run by the Max Planck Institute for Evolutionary Anthropology in Leipzig. The atlas takes everything Glottolog lists as a language and gives a location: {g} languages.",
+     "A dot stands where Glottolog places the language, usually in the middle of the area where it is spoken. Even a language spoken all over the world has just one dot, at its home.",
+     "Left out are only Glottolog's special bins: bookkeeping entries, languages known only by name and languages we know so little about that they cannot be classified. Esperanto, Interlingua and Interslavic have no dot because they did not arise in any one place; they are still in the list and in search."
+    ]
+   },
+   {
+    "h": "Language or dialect?",
+    "p": [
+     "There is no sharp line between a language and a dialect, and history and politics often play a part. The atlas follows Glottolog's decisions. That is why Bavarian has a dot but Australian English does not – Glottolog counts it as a variety of English. Dialects are listed on the language card, and searching for one finds its language.",
+     "Glottolog counts Serbian, Croatian and Bosnian as one language and Hmong as several languages. The atlas keeps Serbian, Croatian and Hmong as separate languages with a greeting, but they have no dot. That is why the list has {n} entries and the globe {g} dots."
+    ]
+   },
+   {
+    "h": "{a} languages with a greeting",
+    "p": [
+     "{a} languages have a greeting, a pronunciation guide, a fun fact, a number of speakers and the area where they are spoken. All of this is written by hand. The fun facts are for children, but they have to be true and they are checked.",
+     "The pronunciation guide is only an approximation. Speaker numbers are rounded estimates and include people who learned the language.",
+     "The orange area on the globe is drawn by hand and approximate, not measured. There is no open data with exact language borders for the whole world.",
+     "The Listen button uses the voice your computer or phone has. For some languages it has none.",
+     "The painted postcards show the typical landscape and buildings of the region the language comes from. They are not pictures of particular places."
+    ]
+   },
+   {
+    "h": "Details for the other languages",
+    "p": [
+     "Vitality: the UNESCO scale (safe to extinct) based on Glottolog data.",
+     "Grammar (word order, cases, tones…): WALS, the World Atlas of Language Structures.",
+     "Number of sounds: PHOIBLE. Sample text: Article 1 of the Universal Declaration of Human Rights (UDHR in Unicode).",
+     "Speaker numbers: Wikidata; where missing, an estimate from Unicode CLDR.",
+     "Relatives and the family tree: the Glottolog tree, with Glottolog's branch names.",
+     "Nothing is made up: if a source has no data, the card does not show it."
+    ]
+   },
+   {
+    "h": "Map",
+    "p": [
+     "Country borders and land come from Natural Earth (simplified, scale 1:110 million). Relief and the sea floor come from Natural Earth and NOAA ETOPO1."
+    ]
+   }
+  ],
+  "verzeNadpis": "Data versions and licences",
+  "verze": [
+   [
+    "Glottolog – languages, families, vitality, dialects",
+    "downloaded {gdat}",
+    "CC BY 4.0"
+   ],
+   [
+    "WALS Online (2013) – grammar",
+    "downloaded {pdat}",
+    "CC BY 4.0"
+   ],
+   [
+    "PHOIBLE 2.0 – sounds",
+    "downloaded {pdat}",
+    "CC BY-SA 3.0"
+   ],
+   [
+    "Wikidata – speaker numbers",
+    "downloaded {wdat}",
+    "CC0"
+   ],
+   [
+    "Unicode CLDR 48 – language names, estimates",
+    "",
+    "Unicode License"
+   ],
+   [
+    "UDHR in Unicode – sample texts",
+    "udhr package 6.0.0",
+    "MIT"
+   ],
+   [
+    "Natural Earth, NOAA ETOPO1 – map and relief",
+    "",
+    "public domain"
+   ]
+  ]
+ },
+ "stranky": {
+  "najit": "Find it on the globe",
+  "globus": "Spinning globe",
+  "vsechnyOdkaz": "Languages with a greeting",
+  "vsechnyNadpis": "{a} languages with a greeting",
+  "vsechnyPopis": "How to say hello in languages from all over the world: greeting, pronunciation, a painted landscape and a fun fact for children. Every language on Earth is on the spinning globe.",
+  "titulek": "{n} – greeting, pronunciation and a fun fact",
+  "malbaAlt": "Painted postcard of the landscape where {n} comes from",
+  "uzivatelu": "Users",
+  "kdeMluvi": "Where it is spoken",
+  "kdeZnakuje": "Where it is signed",
+  "aDalsi": "and {n} more",
+  "drobky": "Breadcrumbs"
+ }
 }

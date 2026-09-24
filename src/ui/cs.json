@@ -284,10 +284,6 @@
  "motiv": "Přepnout denní a noční vzhled",
  "zemeBezPozdravuDen": "Odsud tu zatím nemám žádný pozdrav. Zkus kliknout na některý bod.",
  "pribuzniObloukyDen": "Na glóbu k nim vedou oblouky.",
- "zpetna": "Máš nápad, nebo ti něco nefunguje? Napiš na",
- "zpetnaAdresa": "castor2@me.com",
- "zpetnaPredmet": "Atlas jazyků – zpětná vazba",
- "zpetnaPopis": "Napsat e-mail se zpětnou vazbou",
  "znakoveSkupina": "Znakové jazyky",
  "znakoveVse": "Všechny",
  "znakoveBez": "Bez znakových",
@@ -421,5 +417,107 @@
  "filtryZapnute": "zapnuté filtry: {n}",
  "nenalezenaNadpis": "Tahle stránka neexistuje",
  "nenalezenaText": "Možná se v adrese spletlo písmenko. Všech 7 967 jazyků světa ale najdeš na glóbu.",
- "nenalezenaZpet": "Zpátky na glóbus"
+ "nenalezenaZpet": "Zpátky na glóbus",
+ "oDatech": {
+  "odkaz": "O datech a jak atlas vznikl",
+  "nadpis": "O datech a jak atlas vznikl",
+  "zavrit": "Zavřít",
+  "uvod": "Atlas stojí na otevřených databázích, které sestavují jazykovědci z celého světa. Tady je, odkud co pochází, co je jisté a co jen odhad.",
+  "oddily": [
+   {
+    "h": "Co je na glóbu",
+    "p": [
+     "Každá tečka je jeden jazyk. Seznam jazyků je z Glottologu, otevřené databáze jazyků světa, kterou vede Institut Maxe Plancka pro evoluční antropologii v Lipsku. Atlas bere všechno, co Glottolog vede jako jazyk a má to polohu: {g} jazyků.",
+     "Tečka stojí tam, kam jazyk umisťuje Glottolog, obvykle doprostřed oblasti, kde se jím mluví. I jazyk, kterým se mluví po celém světě, má jen jednu tečku, u svého domova.",
+     "Vynechané jsou jen zvláštní přihrádky Glottologu: evidenční záznamy, jazyky doložené jen jménem a jazyky, o kterých se ví tak málo, že je nejde zařadit. Esperanto, interlingua a interslovanština tečku nemají, protože nevznikly na žádném místě; v seznamu a hledání jsou."
+    ]
+   },
+   {
+    "h": "Jazyk, nebo nářečí?",
+    "p": [
+     "Ostrá hranice mezi jazykem a nářečím neexistuje a často ji ovlivňují i dějiny a politika. Atlas přebírá rozhodnutí Glottologu. Proto má tečku bavorština, ale ne hanáčtina, která je nářečím češtiny. Nářečí najdeš na kartě jazyka a hledání přes ně najde jejich jazyk.",
+     "Srbštinu, chorvatštinu a bosenštinu vede Glottolog jako jeden jazyk a hmongštinu jako několik jazyků. Atlas má srbštinu, chorvatštinu i hmongštinu jako samostatné jazyky s pozdravem, tečku ale nemají. Proto je v seznamu {n} položek a na glóbu {g} teček."
+    ]
+   },
+   {
+    "h": "{a} jazyků s pozdravem",
+    "p": [
+     "U {a} jazyků je pozdrav, výslovnost, zajímavost, počet mluvčích a oblast, kde se jazykem mluví. To všechno je psané ručně. Zajímavosti jsou pro děti, ale musí být pravdivé a jsou ověřené.",
+     "Výslovnost je přiblížená českými písmeny, přesná být nemůže. Počty mluvčích jsou zaokrouhlené odhady a počítají i lidi, kteří se jazyk naučili.",
+     "Oranžová oblast na glóbu je ručně zakreslená a přibližná, není to měření. Otevřená data s přesnými hranicemi jazyků pro celý svět neexistují.",
+     "Tlačítko Poslechni si to používá hlas, který má tvůj počítač nebo telefon. Pro některé jazyky žádný hlas nemá.",
+     "Malované pohlednice ukazují typickou krajinu a stavby kraje, odkud jazyk pochází. Nejsou to fotky konkrétních míst."
+    ]
+   },
+   {
+    "h": "Podrobnosti u ostatních jazyků",
+    "p": [
+     "Vitalita: stupnice UNESCO (bezpečný až vymřelý) podle údajů Glottologu.",
+     "Stavba jazyka (pořadí slov, pády, tóny…): WALS, Světový atlas jazykových struktur.",
+     "Počet hlásek: PHOIBLE. Ukázka textu: článek 1 Všeobecné deklarace lidských práv (UDHR in Unicode).",
+     "Počty mluvčích: Wikidata, kde chybí, odhad z Unicode CLDR.",
+     "Příbuzenstvo a rodokmen: strom Glottologu. České názvy větví jsou překlad tohoto atlasu; kde překlad chybí, je tam anglický název z Glottologu.",
+     "Nic se nedomýšlí: když zdroj údaj nemá, karta ho neukáže."
+    ]
+   },
+   {
+    "h": "Mapa",
+    "p": [
+     "Hranice států a pevnina jsou z Natural Earth (zjednodušené, měřítko 1 : 110 milionů). Reliéf a mořské dno jsou z Natural Earth a NOAA ETOPO1."
+    ]
+   }
+  ],
+  "verzeNadpis": "Verze dat a licence",
+  "verze": [
+   [
+    "Glottolog – jazyky, rodiny, vitalita, nářečí",
+    "staženo {gdat}",
+    "CC BY 4.0"
+   ],
+   [
+    "WALS Online (2013) – stavba jazyka",
+    "staženo {pdat}",
+    "CC BY 4.0"
+   ],
+   [
+    "PHOIBLE 2.0 – hlásky",
+    "staženo {pdat}",
+    "CC BY-SA 3.0"
+   ],
+   [
+    "Wikidata – počty mluvčích",
+    "staženo {wdat}",
+    "CC0"
+   ],
+   [
+    "Unicode CLDR 48 – názvy jazyků, odhady",
+    "",
+    "Unicode License"
+   ],
+   [
+    "UDHR in Unicode – ukázky textu",
+    "balíček udhr 6.0.0",
+    "MIT"
+   ],
+   [
+    "Natural Earth, NOAA ETOPO1 – mapa a reliéf",
+    "",
+    "volné dílo"
+   ]
+  ]
+ },
+ "stranky": {
+  "najit": "Najít na glóbu",
+  "globus": "Otáčivý glóbus",
+  "vsechnyOdkaz": "Jazyky s pozdravem",
+  "vsechnyNadpis": "{a} jazyků s pozdravem",
+  "vsechnyPopis": "Jak se pozdraví v jazycích celého světa: pozdrav, výslovnost, malovaná krajina a zajímavost pro děti. Všechny jazyky světa najdeš na otáčivém glóbu.",
+  "titulek": "{n} – pozdrav, výslovnost a zajímavost",
+  "malbaAlt": "Malovaná pohlednice krajiny, odkud pochází jazyk {n}",
+  "uzivatelu": "Uživatelů",
+  "kdeMluvi": "Kde se mluví",
+  "kdeZnakuje": "Kde se znakuje",
+  "aDalsi": "a {n} dalších",
+  "drobky": "Kde jsem"
+ }
 }

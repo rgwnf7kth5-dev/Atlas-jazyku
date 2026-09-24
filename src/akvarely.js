@@ -3070,6 +3070,54 @@ var AKVARELY = (function(){
       o += vrstva(F, "M80 222 Q120 228 160 220 L156 216 Q120 224 84 218 Z", "#5A3E2A", "#3A2A1E", .95, F.jemna);
       return o + palma(F, r, 40, 192, 1.1) + palma(F, r, 330, 190, 1.2) + koruny(F, q, 270, 420, 180, .7, "#3E7044", .85, F.jemna);
     },
+    /* Čechy (čeština): hora Říp nad rovinou Polabí – osamělý zalesněný kopec jako obrácená mísa, na temeni románská
+       rotunda sv. Jiří; v popředí lány řepky a obilí, vesnice s červenými střechami, alej a vlčí máky.
+       Výjimka z pravidla „bez památek“ na přání uživatele (24. 9. 2026). Český znakový jazyk má dál „kopce“. */
+    rip: function(F, r){
+      const q = nahoda(F.sem + 211);
+      let o = nebe(F, "#84AEDC", "#F5E8CC") + rasy(F, r, 3, 16, 44) + mraky(F, r, 3, 26, 58, 80) + ptaci(F, r, 3, 300, 40);
+      o += hrebeny(F, [[136, 4, 70, 1, "#8E9FBC", .55], [142, 3, 90, 2.2, "#9AB08C", .35]]);
+      /* hora: obrácená mísa – oblé široké temeno, strmé boky a krátké úpatí do roviny */
+      const hx = 205, hy = 152, sirka = 118, vys = 60;
+      const vrch = function(x){ const u = (x - hx) / sirka; return Math.abs(u) >= 1 ? hy : hy - vys * Math.pow(1 - u * u, .8) * (1 - .12 * Math.pow(Math.abs(u), 3)); };
+      let obrys = "M" + (hx - sirka) + " " + hy;
+      for (let x = hx - sirka; x <= hx + sirka; x += 4) obrys += " L" + f1(x) + " " + f1(vrch(x) + (q() - .5) * .8);
+      obrys += " L" + (hx + sirka) + " " + hy + " Z";
+      o += kryt(F, obrys) + vrstva(F, obrys, "#7FA462", "#4A7040", .95);
+      let stin = "M" + f1(hx + 6) + " " + f1(vrch(hx + 6));
+      for (let x = hx + 10; x <= hx + sirka; x += 4) stin += " L" + f1(x) + " " + f1(vrch(x));
+      stin += " L" + f1(hx + sirka) + " " + hy + " L" + f1(hx + 30) + " " + hy + " Z";
+      o += laz(F, stin, "#2E4C34", .32);
+      /* koruny lesa na svazích: tmavší zespodu, světlá temena vlevo */
+      let k = "", sv = "";
+      for (let i = 0; i < 340; i++) { const x = hx - sirka * .96 + q() * sirka * 1.92, t = vrch(x), y = t + 2 + q() * (hy - t - 2);
+        if (y > hy) continue;
+        const rr = 1.6 + q() * 2.2, levo = x < hx - 8 ? .35 : 0;
+        k += '<ellipse cx="' + f1(x) + '" cy="' + f1(y) + '" rx="' + f1(rr) + '" ry="' + f1(rr * .75) + '" fill="' + mix("#5E8A48", q() < .5 ? "#2E5230" : "#8AAE62", q() * .5 + levo * .3) + '"/>';
+        if (q() < .3 + levo) sv += '<ellipse cx="' + f1(x - rr * .3) + '" cy="' + f1(y - rr * .35) + '" rx="' + f1(rr * .6) + '" ry="' + f1(rr * .35) + '"/>'; }
+      o += '<g opacity=".8" filter="url(#' + F.jemna + ')" style="mix-blend-mode:multiply">' + k + '</g><g fill="#D8E4B8" opacity=".5" filter="url(#' + F.jemna + ')">' + sv + '</g>';
+      /* rotunda na temeni: válcová loď s kuželovou střechou, apsida vpravo, hranolová věž vlevo */
+      const ry = vrch(hx) + 1.5, rx = hx + 2, stena = "#EAE0C8", strecha = "#6E5C4C";
+      const lod = "M" + f1(rx - 5.4) + " " + f1(ry) + " L" + f1(rx - 5.4) + " " + f1(ry - 8.1) + " L" + f1(rx + 5.4) + " " + f1(ry - 8.1) + " L" + f1(rx + 5.4) + " " + f1(ry) + " Q" + f1(rx) + " " + f1(ry + 1.35) + " " + f1(rx - 5.4) + " " + f1(ry) + " Z";
+      const apsida = "M" + f1(rx + 5.4) + " " + f1(ry) + " L" + f1(rx + 5.4) + " " + f1(ry - 4.86) + " Q" + f1(rx + 10.12) + " " + f1(ry - 4.59) + " " + f1(rx + 9.72) + " " + f1(ry) + " Z";
+      const vez = mnoho([[rx - 11.48, ry + .4], [rx - 5.4, ry + .4], [rx - 5.4, ry - 14.85], [rx - 11.48, ry - 14.85]]);
+      o += kryt(F, lod + apsida + vez, F.jemna) + nanes(F, vez + lod + apsida, stena) +
+        laz(F, mnoho([[rx + 2.03, ry + .6], [rx + 5.4, ry], [rx + 5.4, ry - 8.1], [rx + 2.03, ry - 8.1]]) + mnoho([[rx - 7.56, ry + .4], [rx - 5.4, ry + .4], [rx - 5.4, ry - 14.85], [rx - 7.56, ry - 14.85]]), "#6A6878", .4) +
+        nanes(F, mnoho([[rx - 6.48, ry - 7.83], [rx + 6.48, ry - 7.83], [rx, ry - 14.18]]) + mnoho([[rx - 12.42, ry - 14.58], [rx - 4.46, ry - 14.58], [rx - 8.44, ry - 20.25]]) + mnoho([[rx + 5.13, ry - 4.59], [rx + 10.53, ry - 4.32], [rx + 5.67, ry - 7.29]]), strecha) +
+        nanes(F, mnoho([[rx - 9.32, ry - 11.07], [rx - 7.83, ry - 11.07], [rx - 7.83, ry - 8.64], [rx - 9.32, ry - 8.64]]), "#3A3E4A", .7);
+      /* rovina Polabí: lány v perspektivě, zlatá řepka, obilí, zelené pruhy */
+      o += pole(F, q, 152, 150, ["#E4CC4A", "#C8C070", "#A8C468", "#DCC47A", "#8EB060", "#EAD45C"], true);
+      /* vesnice vlevo: domy štítem do návsi, kostel s barokní věží */
+      o += vesnice(F, q, [[36, 164, 13, 8, { typ: "stit", stena: "#F4EEE2", strecha: "#B84E36", okna: 2, dvere: false }], [52, 166, 12, 7, { typ: "stit", stena: "#F0E2C0", strecha: "#B84E36", okna: 2, dvere: false }],
+        [70, 163, .8, 0, { kostel: 1, vez: "barok", stena: "#F4EEE2", strecha: "#B84E36", vezStrecha: "#4E6E5E" }], [96, 166, 12, 8, { typ: "stit", stena: "#F4EEE2", strecha: "#A84632", okna: 2, dvere: false }], [18, 167, 11, 7, { typ: "stit", stena: "#EEDCB4", strecha: "#B84E36", okna: 2, dvere: false }]]);
+      o += koruny(F, q, 4, 120, 170, .5, "#5E8A48", .85, F.jemna);
+      /* alej ovocných stromů podél cesty vpravo */
+      const cesta_ = "M268 158 C 274 190 304 214 330 262";
+      o += skupina(F, F.stetec, tah(cesta_, "#E6D6AE", 4, .9) + tah(cesta_, "#B8A07A", .8, .5));
+      [[270, 168, .5], [276, 186, .7], [282, 204, .9], [304, 228, 1.15], [334, 258, 1.4]].forEach(function(t){ o += strom(F, r, t[0] + 12 * t[2], t[1], t[2], "#5E8A42"); });
+      o += hrebeny(F, [[222, 5, 80, 4, "#92B45E", 0]]) + trava(F, r, 200, 224, 252, ["#557F38", "#78A04A", "#46692E", "#98B45A"]);
+      return o + kvety(F, r, 44, 226, 252, ["#D23A2B", "#C9322A", "#E0452F"], 1.3) + kvety(F, r, 14, 228, 252, ["#F4F0E4", "#6E7FC4"], .9);
+    },
     /* střední Evropa: zvlněná pole, remízky, vesnice s kostelíkem, vlčí máky */
     kopce: function(F, r){
       let o = nebe(F, "#86ADDA", "#F4E6C8") + rasy(F, r, 3, 20, 50) + mraky(F, r, 3, 40, 75, 80) + ptaci(F, r, 3, 70, 44);
