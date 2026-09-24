@@ -11,14 +11,14 @@
  "ko": "korea", "mn": "step", "ka": "gruzie", "tr": "turecko", "az": "azerbajdzan", "kk": "kazachstan", "uz": "uzbekistan", "ug": "ujgursko",
  "fi": "finsko", "hu": "puszta", "et": "estonsko", "se": "laponsko", "vi": "vietnam", "km": "kambodza", "th": "thajsko", "lo": "laos",
  "id": "indonesie", "ms": "malajsko", "jv": "java", "tl": "filipiny", "mg": "prales:baobab", "mi": "pobrezi", "haw": "ostrovy", "fj": "ostrovy",
- "tpi": "prales", "qu": "andy", "ay": "andy:jezero", "gn": "prales", "nah": "sopka", "kl": "tundra", "iu": "tundra", "kn": "karnataka",
+ "tpi": "prales", "qu": "andy", "ay": "andy:jezero", "gn": "guarani", "nah": "mexiko", "kl": "gronsko", "iu": "tundra", "kn": "karnataka",
  "ml": "kerala", "or": "odisa", "as": "assam", "sd": "sindh", "mai": "mithila", "su": "sunda", "ceb": "visayas", "wuu": "vodnimesto",
  "nan": "minnan", "hak": "tulou", "za": "kras", "hmn": "hmong", "rw": "rwanda", "lg": "uganda", "ln": "kongo", "kg": "kikongo",
  "ny": "malawi", "ti": "tigraj", "xh": "xhosa", "st": "lesotho", "tn": "kalahari", "ak": "akan", "ee": "ewe", "bm": "mali",
  "mos": "burkina", "ber": "kasba", "kr": "cad", "mt": "malta", "lb": "lucembursko", "fo": "faerske", "fy": "frisko", "gl": "galicie",
  "oc": "levandule", "sc": "sardinie", "br": "bretan", "gd": "skotsko", "rom": "sady", "yi": "stetl", "ce": "cecensko", "tt": "tatarsko",
  "sah": "jakutsko", "os": "osetie", "ab": "abchazie", "dv": "ostrovy", "dz": "bhutan", "sat": "santal", "mni": "manipur", "shn": "sanove",
- "tet": "timor", "ch": "ostrovy", "sm": "ostrovy", "to": "ostrovy", "ty": "ostrovy", "rap": "ostrovy", "nv": "poust:kanon", "chr": "les",
- "oj": "les", "cr": "les", "lkt": "step", "arn": "sopka", "yua": "prales:cenote", "quc": "sopka:dve", "zap": "hory:suche", "ht": "ostrovy",
- "pap": "ostrovy", "ain": "ainu", "czj": "kopce"
+ "tet": "timor", "ch": "ostrovy", "sm": "ostrovy", "to": "ostrovy", "ty": "ostrovy", "rap": "ostrovy", "nv": "poust:kanon", "chr": "smoky",
+ "oj": "ojibwe", "cr": "kri", "lkt": "prerie", "arn": "araukanie", "yua": "prales:cenote", "quc": "guatemala", "zap": "oaxaka", "ht": "haiti",
+ "pap": "kurasao", "ain": "ainu", "czj": "kopce"
 }
