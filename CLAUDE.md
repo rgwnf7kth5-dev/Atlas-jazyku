@@ -99,8 +99,13 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
   Jazyk se mění o půlnoci místního času.
 - **Živější glóbus**: v noci světélka jemně třpytí (překresluje se jen WebGL, co 60 ms, usíná s okrasným
   pohybem), koule má odlesk slunce (ve dne výraznější).
-- **Mobil (≤ 920 px)**: karta je spodní vysouvací list (úchyt, tažení nahoru = celá, dolů = menší / zavřít),
-  lišta je pod glóbem, pod 480 px jen ikony. Po výběru stránka odroluje nahoru ke glóbu.
+- **Mobil (≤ 920 px)**: karta je spodní list ve třech velikostech: malá lišta jen s pozdravem a jménem (`.mala`),
+  běžná (50 vh) a celá (`.plna`). Uživatel si stěžoval, že zakrývá půl obrazovky a nejde uklidit, proto: tažení
+  za úchyt nebo barevné záhlaví (dotykové události, `touch-action:none` na záhlaví – ukazatelové události iOS při
+  posunu stránky rušil) posouvá list za prstem; nahoru = větší, dolů = menší, z lišty dolů = zavřít. Klepnutí
+  na úchyt přepíná lištu a běžnou velikost. Tažení glóbu nebo stromu a otevření rodokmenu kartu samo uklidí
+  do lišty (`uklidKartu`). Lišta je pod glóbem, pod 480 px jen ikony. Po výběru stránka odroluje nahoru ke glóbu.
+  Rodokmen je na telefonu užší a protažený nahoru (elipsa `m.sx`/`m.sy`, `OKRAJ` 0,2 π), jinak byl moc široký.
 - **Úvod**: glóbus přiletí z vesmíru (2,2 s), pak ukazatel „Klikni na mě!“ ukáže na jazyk (česky na češtinu,
   anglicky na angličtinu). Po prvním výběru se už nikdy neukáže (`atlas-uvitano`). Při
   `prefers-reduced-motion` ani s odkazem `#…` přílet neběží (ukazatel se ukáže hned, pokud nic není vybrané).
