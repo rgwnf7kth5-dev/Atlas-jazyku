@@ -130,11 +130,11 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
   „Porovnat s jiným jazykem“, pak se druhý jazyk vybere čímkoli (tečka na glóbu, dlaždice, hledání, Překvap mě,
   list v rodokmenu) – `vyber`/`vyberBod` ho při `cekaNaDruhy` jen předají do `dokonciSrovnani`. Stav `srovnani`
   stojí vedle `vybrany` (první jazyk zůstává vybraný), takže se nemusely měnit všechny výběrové cesty.
-  Glóbus: oblouk mezi oběma a vzdálenost v km uprostřed. Karta: dvě pole s pozdravy, záložky Příbuznost
+  Glóbus: oblouk mezi oběma, **bez vzdálenosti** (uživatel: vzdálenost přímkou je nesmysl, jen poloha na mapě). Karta: dvě pole s pozdravy, záložky Příbuznost
   (nejbližší společný předek ze stromu Glottologu a cesta od něj k oběma; různé rodiny = „Nejsou příbuzné“ s
   větou „podle toho, co dnes jazykovědci vědí“, izolované jazyky zvlášť), Jak funguje (jen vlastnosti WALS,
   které mají zapsané oba; texty „stejně jako čeština“ se tu vypouštějí – `bezOdkazuNaCtenare`), Čísla
-  (vzdálenost, mluvčí, vitalita, společné státy). Rodokmen ukáže obě cesty a přiblíží společného předka.
+  (mluvčí, vitalita, společné státy). Rodokmen ukáže obě cesty a přiblíží společného předka.
   Druhý jazyk má fialovou, když je ze stejné barevné skupiny jako první. Odkaz `#cs~ar`. Nic se nedomýšlí:
   výpůjčky slov ani podobnost slovní zásoby v datech nemáme, proto je srovnání neukazuje.
 - **Velikonoční vajíčko „eulang“** (přání uživatele 24. 9. 2026): napsání „eulang“ kdekoli na stránce (mimo

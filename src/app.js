@@ -838,17 +838,6 @@ function kresliPopredi(cas){
     }
   });
 
-  if (srovnani && oblouky.length && (od === 0 || (od > 0 && cas - od > 700) || bezPohybu.matches)) {   /* vzdálenost uprostřed oblouku */
-    const body = oblouky[0], stred = body[Math.floor(body.length / 2)];
-    if (promitni(stred, p)) {
-      const text = t("km", {n: cislo(srovnani.km)});
-      c.font = "700 12" + PISMO; c.textBaseline = "middle";
-      const w = c.measureText(text).width;
-      c.fillStyle = barvy["popisek-lem"]; c.globalAlpha = 0.9;
-      c.beginPath(); if (c.roundRect) c.roundRect(p[0] - w / 2 - 8, p[1] - 11, w + 16, 22, 11); else c.rect(p[0] - w / 2 - 8, p[1] - 11, w + 16, 22);
-      c.fill(); c.globalAlpha = 1; c.fillStyle = barvy.popisek; c.fillText(text, p[0] - w / 2, p[1] + 0.5);
-    }
-  }
   if (eu) {                             /* zlaté hvězdičky jazyků EU, vyskakují jedna po druhé */
     const obsazene = [];
     c.font = "700 11.5" + PISMO; c.textBaseline = "middle"; c.lineJoin = "round";
@@ -2411,12 +2400,6 @@ function nazevVetve(u, rod){
   const n = PD.uzly[u];
   return T.lang === "cs" && PD.vetve[n] ? velke(PD.vetve[n]) : n;
 }
-function vzdalenostKm(a, b){
-  const f1 = a.lat * R, f2 = b.lat * R, df = f2 - f1, dl = (b.lon - a.lon) * R;
-  const h = Math.sin(df / 2) * Math.sin(df / 2) + Math.cos(f1) * Math.cos(f2) * Math.sin(dl / 2) * Math.sin(dl / 2);
-  const km = 2 * 6371 * Math.asin(Math.min(1, Math.sqrt(h)));
-  return km < 100 ? Math.round(km / 5) * 5 : km < 1000 ? Math.round(km / 10) * 10 : Math.round(km / 100) * 100;
-}
 /* příbuznost: nejbližší společný předek ve stromu Glottologu */
 function vztah(a, b){
   if (a.rod == null || b.rod == null || a.rod < 0 || b.rod < 0) return {typ: "nevime"};
@@ -2448,7 +2431,7 @@ function dokonciSrovnani(b){
   if (!a) return;
   if ((a.i >= 0 && a.i === b.i) || (a.j && a.j === b.j)) return;       // stejný jazyk: čeká se dál
   zrusCekani();
-  srovnani = {a: a, b: b, km: vzdalenostKm(a, b)};
+  srovnani = {a: a, b: b};
   zapisOdkaz();
   ukazSrovnani();
   velikostKarty("");
@@ -2509,7 +2492,6 @@ function ukazSrovnani(){
   kartaHero.appendChild(dv);
 
   const v = vztah(a, b);
-  stitek(T.vzdalenost, t("km", {n: cislo(srovnani.km)}));
   stitek(T.pribuzne, v.typ === "predek" || v.typ === "rodina" ? T.ano : v.typ === "nevime" ? "?" : T.ne);
 
   /* příbuznost */
@@ -2574,7 +2556,6 @@ function ukazSrovnani(){
 
   /* čísla */
   const cisla = [];
-  const oV = oddil(T.vzdalenost); oV.appendChild(prvek("p", null, t("vzdalenostText", {km: t("km", {n: cislo(srovnani.km)})}))); cisla.push(oV);
   const mluvci = function(L){
     if (L.j) return pocetMluvcich(L.j.mlu);
     const r = radek(L.i);
