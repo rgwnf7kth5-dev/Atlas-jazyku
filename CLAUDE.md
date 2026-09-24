@@ -66,7 +66,7 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
 - **Odkaz na jazyk**: `#cs` (id jazyka z atlasu) nebo `#corn1251` (glottocode tečky, build ho dává do `REJSTRIK.g`).
   Výběr zapíše adresu (`history.replaceState`), otevření odkazu jazyk vybere; když ho schovává filtr, filtry se zruší.
   Tlačítko s řetízkem na kartě odkaz zkopíruje (v artefaktu je skryté).
-- **Klik na zemi** ukáže počet všech jazyků státu z rejstříku (Glottolog `Countries`; převod názvu státu z mapy
+- **Klik na zemi** stát hned obtáhne a jemně podbarví (`zemeOkna`, dokud je okno otevřené; uživatel: „dříve se země zvýrazňovala hned“) a ukáže počet všech jazyků státu z rejstříku (Glottolog `Countries`; převod názvu státu z mapy
   na kód je `mapaStatu` v `podrobnosti.json`) a tlačítko, které je na glóbu rozsvítí (příznak 5) a přiblíží stát.
   Kosovo, Severní Kypr a Somaliland kód nemají – ukáže se jen seznam jazyků z atlasu.
 - Náhled pro sdílení odkazu (og:image) je `static/nahled-cs.jpg` / `nahled-en.jpg`, ikonka `static/favicon.svg`
@@ -249,6 +249,7 @@ https://claude.ai/artifact/XS67Gsv9d4y2pMu7UWEGRi (soubor `build/atlas-nahled-re
   (`--more1/2`, `--souse1/2`), takže den i noc z jednoho obrázku. Stránka tím ztěžkla na ~3,3 MB.
 - **Území vybraného jazyka je plně oranžové** (`--uzemi`), ne v barvě rodiny: indoevropská modrá by na modrém
   moři splývala s vodou. Šrafování uživatel zamítl („zaplnění plochy jako dosud, jen jiná barva“).
+- Pevnina reliéfu je ve dne skoro bílá jako papír (`--souse1/2` `#D8CFBE`/`#FCF9F2`), reliéf jen jemně (přání uživatele).
 - Patkové titulky Playfair Display, papírové pozadí `#F4F1EA`, bílé karty, červené hlavní tlačítko, nové logo.
   Záhlaví bez karty, jen linka. Na kartě řádek „Rodokmen jazykové rodiny“ (cesta v Glottologu, `cestaRodokmenu`).
 - **Pohlednice jsou malované akvarely** (`src/akvarely.js`, build ho vkládá před `app.js`): krajina podle toho,

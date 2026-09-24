@@ -713,11 +713,13 @@ function kresliStin(c, cx, cy, r){          /* koule k okraji tmavne, ať vypad�
   c.fillStyle = g; c.beginPath(); c.arc(cx, cy, r, 0, 6.283185); c.fill();
 }
 function kresliUzemi(c){                    /* území vybraného jazyka jednou oranžovou (--uzemi): barva rodiny by na modrém moři splývala */
-  if (zeme) {                               /* zvýrazněná země */
-    c.beginPath(); cestaPodklad(zeme.f);
-    c.globalAlpha = 0.16; c.fillStyle = barvy.cyan; c.fill(); c.globalAlpha = 0.8;
-    c.lineWidth = 1.6; c.strokeStyle = barvy.cyan; c.stroke(); c.globalAlpha = 1;
-  }
+  const klepnuta = zemeOkna && !okno.hidden ? zemeOkna : null;
+  [zeme && zeme.f, klepnuta].forEach(function(f, k){   /* zvýrazněná země (tlačítkem) a kliknutá země (okno) */
+    if (!f || (k && zeme && zeme.f === f)) return;
+    c.beginPath(); cestaPodklad(f);
+    c.globalAlpha = k ? 0.22 : 0.3; c.fillStyle = barvy.uzemi || barvy.cyan; c.fill(); c.globalAlpha = 0.95;
+    c.lineWidth = 2; c.strokeStyle = barvy.uzemi || barvy.cyan; c.stroke(); c.globalAlpha = 1;
+  });
   if (!vybrany || vybrany.typ !== "atlas") return;
   const barva = barvy.uzemi || barvaVyberu(), p = odhaleni(casSnimku);
   if (!p) return;                           // ještě se letí
@@ -1313,6 +1315,7 @@ function najedNaBod(e){
 const okno = $("zeme-okno");
 /* ---------- země: všechny jazyky státu z rejstříku, na přání rozsvícené na glóbu ---------- */
 let zeme = null;                          // {f: tvar státu, body: tečky jeho jazyků}
+let zemeOkna = null;                      // stát, na který se právě kliklo (okno s jeho jazyky je otevřené)
 /* velikonoční vajíčko: napsáním „eulang“ se rozsvítí 24 úředních jazyků EU a objeví se vlajka EU */
 const EU_JAZYKY = ["bg", "cs", "da", "de", "el", "en", "es", "et", "fi", "fr", "ga", "hr", "hu", "it", "lt", "lv", "mt", "nl", "pl", "pt", "ro", "sk", "sl", "sv"];
 const EU_BOD = new Uint8Array(POCET_B);
@@ -1365,10 +1368,12 @@ function klikDoMapy(e){
   for (let k = 0; k < ZEME.length; k++) { if (d3.geoContains(ZEME[k], bod)) { nalezena = ZEME[k]; break; } }
   if (!nalezena) { okno.hidden = true; return; }
   ukazOknoZeme(nalezena);
+  zemeOkna = nalezena; koule.klic = ""; potrebaKresli = true;   // stát se obtáhne hned po kliknutí
   okno.hidden = false;
   umisti(okno, e);
   krokNapovedy("klikni");
 }
+new MutationObserver(function(){ if (okno.hidden && zemeOkna) { zemeOkna = null; potrebaKresli = true; } }).observe(okno, {attributes: true, attributeFilter: ["hidden"]});
 function ukazOknoZeme(f){
   const zde = (V_ZEMI[f.properties.name] || []).filter(function(j){ return !atlasSkryty(j); });
   const body = bodyVeStatu(f.properties.name);
