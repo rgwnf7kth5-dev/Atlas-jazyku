@@ -742,7 +742,10 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 :root[data-theme="light"] .k-hero.s-malbou{background:transparent}
 .k-hero.s-malbou::before,.k-hero.s-malbou::after{display:none}
 .k-hero > .k-malba{display:block; position:relative; margin:0 -16px 12px; aspect-ratio:400/250; overflow:hidden; border-radius:20px 20px 0 0; background:#FBF7EE}
-.k-malba svg,.jd-malba svg{display:block; width:100%; height:100%}
+.k-malba svg,.jd-malba svg,.k-malba img,.jd-malba img{display:block; width:100%; height:100%; object-fit:cover}
+.k-malba img,.jd-malba img{opacity:0; transition:opacity .6s ease}
+.k-malba img.ukazana,.jd-malba img.ukazana{opacity:1}
+@media (prefers-reduced-motion:reduce){ .k-malba img,.jd-malba img{transition:none} }
 .k-hero.s-malbou .k-lista{position:absolute; top:10px; left:12px; right:12px; z-index:2; margin:0}
 .k-hero.s-malbou .k-lista .kod{color:#15192B; opacity:1; background:rgba(255,255,255,.82); padding:3px 8px; border-radius:99px}
 .k-hero.s-malbou .zavrit{color:#15192B; background:rgba(255,255,255,.85); border-color:transparent}
@@ -2170,8 +2173,7 @@ function postavPolici(filtr){
       const cta = prvek("span", "jd-akce", T.jazykDneUkaz);
       cta.insertAdjacentHTML("beforeend", '<svg aria-hidden="true"><use href="#i-dal"/></svg>');
       tl.appendChild(cta);
-      const malba = malbaJazyka(d.id);
-      if (malba) { const m = prvek("span", "jd-malba"); m.innerHTML = malba; tl.insertBefore(m, tl.firstChild); tl.classList.add("s-malbou"); }
+      if (KRAJINY[d.id] && typeof AKVARELY !== "undefined") { const m = prvek("span", "jd-malba"); vlozMalbu(m, d.id); tl.insertBefore(m, tl.firstChild); tl.classList.add("s-malbou"); }
       tl.addEventListener("click", function(){ vyber(d.id); });
       seznam.appendChild(tl);
     }
@@ -2469,11 +2471,43 @@ const RELIEF = "data:image/webp;base64,UklGRuaTBABXRUJQVlA4INqTBACwwBWdASoADAAGP
 /* krajina na pohlednici jazyka (data/krajiny.json, malují src/akvarely.js) */
 const KRAJINY = {"_pozn":"Krajina na pohlednici jazyka: jak to vypadá tam, odkud jazyk pochází (ne památky). Druhy a varianty jsou v src/akvarely.js; validace hlídá, že má krajinu každý jazyk atlasu.","cs":"kopce","sk":"hory","pl":"rovina","ru":"les","uk":"rovina:slunecnice","be":"les","sr":"kopce","hr":"stredomori","sl":"hory","bg":"hory","mk":"hory:suche","en":"pobrezi","de":"kopce","nl":"rovina:mlyn","sv":"les","no":"fjordy","da":"rovina","is":"fjordy","af":"hory:suche","fr":"kopce","es":"stredomori","pt":"pobrezi","it":"stredomori","ro":"kopce","ca":"stredomori","el":"stredomori","ga":"pobrezi","cy":"pobrezi","lt":"les","lv":"les","sq":"hory:suche","hy":"hory:suche","hi":"ryze","bn":"ryze","ur":"rovina","pa":"rovina","mr":"hory:suche","gu":"rovina","ne":"velehory","si":"ryze:caj","fa":"poust","ps":"hory:suche","ku":"hory:suche","eu":"pobrezi","ar":"poust","he":"stredomori","am":"hory:suche","so":"sahel","om":"savana:zelena","ha":"sahel","sw":"savana","yo":"prales","ig":"prales","zu":"savana:zelena","sn":"savana","wo":"sahel","ff":"sahel","zh":"kras","yue":"kras","my":"ryze","bo":"velehory","ta":"ryze","te":"ryze","ja":"sopka","ko":"hory","mn":"step","ka":"hory","tr":"stredomori","az":"hory","kk":"step","uz":"poust","ug":"poust","fi":"les","hu":"rovina","et":"les","se":"tundra","vi":"kras","km":"ryze","th":"ryze","lo":"ryze","id":"ryze","ms":"prales","jv":"ryze","tl":"ryze","mg":"prales:baobab","mi":"pobrezi","haw":"ostrovy","fj":"ostrovy","tpi":"prales","qu":"andy","ay":"andy:jezero","gn":"prales","nah":"sopka","kl":"tundra","iu":"tundra","kn":"ryze","ml":"prales","or":"ryze","as":"ryze:caj","sd":"poust","mai":"ryze","su":"ryze","ceb":"ostrovy","wuu":"ryze","nan":"ryze:caj","hak":"ryze:caj","za":"kras","hmn":"ryze","rw":"savana:zelena","lg":"savana:zelena","ln":"prales","kg":"prales","ny":"savana:zelena","ti":"hory:suche","xh":"savana:zelena","st":"hory:suche","tn":"sahel","ak":"prales","ee":"prales","bm":"sahel","mos":"sahel","ber":"poust","kr":"sahel","mt":"stredomori","lb":"kopce","fo":"fjordy","fy":"rovina:mlyn","gl":"pobrezi","oc":"stredomori","sc":"stredomori","br":"pobrezi","gd":"fjordy","rom":"kopce","yi":"rovina","ce":"hory","tt":"les","sah":"les","os":"hory","ab":"hory","dv":"ostrovy","dz":"velehory","sat":"ryze","mni":"ryze","shn":"ryze","tet":"ostrovy","ch":"ostrovy","sm":"ostrovy","to":"ostrovy","ty":"ostrovy","rap":"ostrovy","nv":"poust:kanon","chr":"les","oj":"les","cr":"les","lkt":"step","arn":"sopka","yua":"prales:cenote","quc":"sopka:dve","zap":"hory:suche","ht":"ostrovy","pap":"ostrovy","ain":"les","czj":"kopce"} || {};
 function malbaJazyka(id){ return KRAJINY[id] && typeof AKVARELY !== "undefined" ? AKVARELY.obraz(id, KRAJINY[id]) : ""; }
+/* Malba je SVG s desítkami filtrů. Vložená přímo do stránky se při každém pohybu glóbu počítala znovu a animace
+   trhala (uživatel 24. 9. 2026: „všechno je trhané, pomalé“). Proto se jednou vykreslí do bitmapy a ukazuje se
+   jen obrázek; když by převod selhal, zůstane obrázek ze SVG. */
+const MALBY = {};
+function malbaObrazek(id){
+  if (MALBY[id]) return MALBY[id];
+  const svg = malbaJazyka(id);
+  if (!svg) return null;
+  const zdroj = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svg.replace("<svg ", '<svg width="800" height="500" '));
+  return (MALBY[id] = new Promise(function(hotovo){
+    const obr = new Image();
+    obr.onload = function(){
+      try {
+        const c = document.createElement("canvas"); c.width = 800; c.height = 500;
+        c.getContext("2d").drawImage(obr, 0, 0, 800, 500);
+        hotovo(c.toDataURL("image/jpeg", .9));
+      } catch (e) { hotovo(zdroj); }
+    };
+    obr.onerror = function(){ hotovo(null); };
+    obr.src = zdroj;
+  }));
+}
+/* Převod jedné malby blokuje stránku (desetiny sekundy), proto se nedělá během letu glóbu, vlny území a oblouků:
+   počká se, až animace doběhne a prohlížeč má volno. Hotová malba se pak jen plynule objeví. */
+function vlozMalbu(el, id){
+  const img = document.createElement("img");
+  img.alt = ""; img.decoding = "async"; img.setAttribute("aria-hidden", "true");
+  el.replaceChildren(img);
+  const ukaz = function(){ const cesta = malbaObrazek(id); if (cesta) cesta.then(function(url){ if (url && img.isConnected) { img.onload = function(){ img.classList.add("ukazana"); }; img.src = url; } }); };
+  if (MALBY[id]) ukaz();
+  else setTimeout(function(){ if (!img.isConnected) return; if (window.requestIdleCallback) requestIdleCallback(ukaz, {timeout: 1500}); else ukaz(); }, 2200);
+}
 function malbaNaKarte(id){
-  const svg = id ? malbaJazyka(id) : "", el = $("k-malba");
-  kartaHero.classList.toggle("s-malbou", !!svg);
-  el.hidden = !svg;
-  if (el.dataset.id !== (id || "")) { el.innerHTML = svg; el.dataset.id = id || ""; }
+  const ma = !!(id && KRAJINY[id] && typeof AKVARELY !== "undefined"), el = $("k-malba");
+  kartaHero.classList.toggle("s-malbou", ma);
+  el.hidden = !ma;
+  if (el.dataset.id !== (id || "")) { if (ma) vlozMalbu(el, id); else el.replaceChildren(); el.dataset.id = id || ""; }
 }
 const relief = {platno: null, gl: null, u: {}, hotovo: false, sirkaTex: 1};
 function pripravRelief(){
