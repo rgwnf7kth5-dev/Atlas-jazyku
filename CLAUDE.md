@@ -251,7 +251,13 @@ https://claude.ai/artifact/XS67Gsv9d4y2pMu7UWEGRi (soubor `build/atlas-nahled-re
   moři splývala s vodou. Šrafování uživatel zamítl („zaplnění plochy jako dosud, jen jiná barva“).
 - Pozadí stránky je světlý papír `#FBF9F4` („aby to vypadalo jako kniha“). Pevnina glóbu zůstává šedobílý reliéf
   (`--souse1/2` `#9EA6B2`/`#FCFBF7`) – zesvětlení pevniny uživatel nechtěl, myslel podklad stránky.
-- Patkové titulky Playfair Display, papírové pozadí, bílé karty, červené hlavní tlačítko, nové logo.
+- **Logo** (vybral uživatel 24. 9. 2026 z návrhů, varianta „písma světa“ plasticky): lesklá modrá koule s poledníky
+  a pěti vystouplými zlatými písmeny z pěti písem – A (latinka), Я (azbuka), א (hebrejština), ع (arabština), あ (japonština).
+  Bez mosazného oblouku nahoře a s malým odleskem (přání uživatele). Písmena jsou obrysy vytažené z písem
+  (Playfair Display, Noto Serif Hebrew/Naskh Arabic/Serif JP přes fonttools), ne text – vypadají všude stejně.
+  Stejné logo je `static/favicon.svg` a `apple-touch-icon.png`. Logo s nápisem je odkaz **„domů“** (`#domu`, `domu()`):
+  zavře kartu, rodokmen, Bránu, EU, srovnání, panely a hledání, zruší odkaz v adrese a vrátí glóbus do výchozího pohledu.
+- Patkové titulky Playfair Display (nápis v záhlaví větší), papírové pozadí, bílé karty, červené hlavní tlačítko.
   Záhlaví bez karty, jen linka. Na kartě řádek „Rodokmen jazykové rodiny“ (cesta v Glottologu, `cestaRodokmenu`).
 - **Pohlednice jsou malované akvarely** (`src/akvarely.js`, build ho vkládá před `app.js`): krajina podle toho,
   odkud jazyk pochází (`data/krajiny.json`, validace hlídá každý jazyk a existenci druhu), 19 druhů s variantami.

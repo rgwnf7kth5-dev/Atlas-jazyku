@@ -20,6 +20,6 @@ for (const [lang, url, nadpis, pod] of [['cs','dist/index.html','Atlas jazyků',
   await ctx.close();
 }
 const ctx = await b.newContext({viewport:{width:180,height:180}}); const p = await ctx.newPage();
-await p.setContent(`<body style="margin:0;background:#050a1f;display:grid;place-items:center;height:180px">@@</body>`.replace("@@", (await import('node:fs')).readFileSync(R+'static/favicon.svg','utf8').replace('<svg ','<svg width="150" height="150" ')));
+await p.setContent(`<body style="margin:0;background:#FBF9F4;display:grid;place-items:center;height:180px">@@</body>`.replace("@@", (await import('node:fs')).readFileSync(R+'static/favicon.svg','utf8').replace('<svg ','<svg width="146" height="146" ')));
 await p.screenshot({path:R+'static/apple-touch-icon.png'});
 await b.close(); console.log('hotovo');

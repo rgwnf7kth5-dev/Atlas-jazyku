@@ -1467,6 +1467,20 @@ function odznac(){
   if (strom) strom.zavrenaKarta();
 }
 $("tl-cely").addEventListener("click", odznac);
+/* logo = „domů“: zavře všechno (rodokmen, Bránu, EU, srovnání, panely, hledání) a vrátí glóbus do výchozího pohledu */
+function domu(){
+  zavriNapovedu(true);
+  if (brana) zavriBranu(true);
+  if (strom && strom.zapnuto) strom.prepni(false);
+  otevriZobrazeni(false);
+  odznac(); zhasniZemi();
+  if ($("hledej").value) { $("hledej").value = ""; postavPolici(""); }
+  seznam.scrollTop = 0;
+  if (globusOk) letKe([15, 25], 1);
+  if (!ARTEFAKT && history.replaceState) { try { history.replaceState(null, "", location.pathname); } catch (e) {} }
+  window.scrollTo({top: 0, behavior: bezPohybu.matches ? "auto" : "smooth"});
+}
+$("domu").addEventListener("click", function(e){ e.preventDefault(); domu(); });
 $("k-zavrit").addEventListener("click", odznac);
 $("tl-nahoda").addEventListener("click", function(){
   if ($("hledej").value) { $("hledej").value = ""; postavPolici(""); }
