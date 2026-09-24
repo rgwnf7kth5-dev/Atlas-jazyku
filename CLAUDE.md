@@ -280,7 +280,7 @@ https://claude.ai/artifact/XS67Gsv9d4y2pMu7UWEGRi (soubor `build/atlas-nahled-re
   jsou v perspektivě k úběžníku (`pole`); stromy mají vlastní kresbu (`jehlicnan`, `briza`, `akacie`, `baobab`,
   `oliva`, `cypris`, `palma`), stavby taky (`domky`, `chyse`, `mlyn`). Odraz ve vodě kreslí stejný tvar znovu
   převrácený, proto má `hory` vlastní náhodu podle tvaru. Jedna malba má 30–110 filtrů a kreslí se 50–140 ms
-  (softwarově, 2× hustota) – víc nepřidávat bez měření (skript v poznámkách: generování a vykreslení každého druhu).
+  (softwarově, 2× hustota) – víc nepřidávat bez změření.
 - Build odmítne zdroj se značkou nedořešeného konfliktu (`<<<<<<<`, `=======`, `>>>>>>>`): po sloučení `main`
   do větve zůstala v `styles.css` a tiše vyřadila pravidlo pod sebou (křížek Dne jazyků utekl do rohu stránky).
 - Build zkouší skript stránky přeložit (`new Function`): při úklidu fotek zůstaly v kódu osiřelé řádky
