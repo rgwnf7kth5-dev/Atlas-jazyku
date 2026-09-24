@@ -47,7 +47,7 @@
   --nadpis-grad:linear-gradient(90deg,#0E1838,#1F4FA8 55%,#6A36B0);
   --koule1:#FFFFFF; --koule2:#D3E1F5; --atmosfera:rgba(90,170,255,.42); --atmosfera2:rgba(140,190,255,.16);
   --sit:rgba(40,90,170,.1); --hranice:40,80,160; --okraj-koule:rgba(40,110,200,.45);
-  --more1:#0C3A8A; --more2:#3E80D4; --souse1:#D8CFBE; --souse2:#FCF9F2;   /* pevnina jako papír, reliéf jen jemně */
+  --more1:#0C3A8A; --more2:#3E80D4; --souse1:#9EA6B2; --souse2:#FCFBF7;
   --pevnina:#A9BEE2; --pobrezi:rgba(40,80,160,.4); --stin-koule:rgba(40,70,140,.16);   /* pevnina tmavší než moře */
   --tecka-jazyk:#0A5A94; --tecka-bod:#0E1838;
   /* denní stupnice vitality – ověřená na pevnině #A9BEE2 */
@@ -624,7 +624,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
   --sit:rgba(160,200,255,.07);
 }
 :root[data-theme="light"]{
-  --pozadi:#F4F1EA;
+  --pozadi:#FBF9F4;   /* světlý papír jako stránka knihy */
   --sklo:#FFFFFF; --sklo2:#FFFFFF; --sklo-okraj:rgba(20,24,40,.08); --sklo-lesk:rgba(255,255,255,0);
   --text:#15192B; --text2:#5A6073; --text3:#8A90A0;
   --cyan:#1F4FB8; --cervena:#D23A2B; --akcent:#D23A2B; --uzemi:#EE7A22;
@@ -633,7 +633,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
   --cyan-slabe:rgba(31,79,184,.08); --cyan-okraj:rgba(31,79,184,.35); --cyan-zare:rgba(31,79,184,.25);
   --aktivni-text:#15306E;
   --atmosfera:rgba(110,160,230,.32); --atmosfera2:rgba(160,195,240,0);
-  --sit:rgba(255,255,255,.2); --stin-koule:rgba(8,28,80,.13); --okraj-koule:rgba(20,60,140,.25);
+  --sit:rgba(255,255,255,.2); --stin-koule:rgba(8,28,80,.2); --okraj-koule:rgba(20,60,140,.25);
   --tecka-jazyk:#173A94;
 }
 .sklo{background:var(--sklo); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border:1px solid var(--sklo-okraj);
