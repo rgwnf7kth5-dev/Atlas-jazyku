@@ -80,6 +80,7 @@ for (let i = 0; i < POCET_B; i++) {
   const sk = radek(i)[2];
   if (sk >= 0) { if (!sourozenci.has(sk)) sourozenci.set(sk, []); sourozenci.get(sk).push(i); }
 }
+const BEZ_RODU = new Set(REJSTRIK.nr);           // umělé jazyky, pidžiny, smíšené jazyky, zvláštní mluvy: nejsou rodina
 const BOD_ATLASU = {};                            // jazyk z atlasu → jeho tečka v rejstříku
 for (let i = POCET_B - 1; i >= 0; i--) if (B[i][5]) BOD_ATLASU[B[i][5]] = i;
 /* rodina a světadíl jazyka z atlasu pro řazení police; pět jazyků atlasu (např. srbština) tečku nemá:
@@ -772,7 +773,7 @@ function nastavOblouky(odkud, kam){
 /* příbuzní podle stromu Glottologu: čím hlubší společný předek, tím bližší */
 function pribuzniBodu(i, jenAtlas, max){
   const u0 = radek(i)[2];
-  if (!(u0 >= 0)) return [];
+  if (!(u0 >= 0) || BEZ_RODU.has(B[i][3])) return [];   // umělé jazyky apod. spolu příbuzné nejsou
   const hloubka = new Map(), retez = [];
   for (let u = u0; u >= 0; u = PD.nad[u]) retez.push(u);
   retez.forEach(function(u, k){ hloubka.set(u, retez.length - k); });
@@ -1745,7 +1746,11 @@ function ukazKartuBodu(i){
   }
   if (r[1] >= 0) { const o = oddil(T.popsanost); o.appendChild(prvek("p", null, velke(T.med[r[1]]) + ".")); stavba.push(o); }
 
-  if (r[2] >= 0) {                                     /* příbuzenstvo a nejbližší příbuzní */
+  if (BEZ_RODU.has(B[i][3])) {                         /* umělý jazyk, pidžin…: žádná rodina, žádní příbuzní */
+    const o = oddil(T.pribuzenstvo);
+    o.appendChild(prvek("p", null, t("bezRodu", {a: jmenoBodu(i), druh: REJSTRIK.rr[B[i][3]]})));
+    rod.push(o);
+  } else if (r[2] >= 0) {                              /* příbuzenstvo a nejbližší příbuzní */
     const cesta = [];
     for (let u = r[2]; u >= 0; u = PD.nad[u]) cesta.unshift(PD.uzly[u]);
     cesta[0] = velke(REJSTRIK.rr[B[i][3]] || cesta[0]);
@@ -1943,7 +1948,7 @@ var strom = (function(){   // var: filtry a texty se na něj ptají dřív, než
   /* rodiny, které mají strom (aspoň tři jazyky; izolované jazyky strom nemají) */
   function rodinyStromu(){
     const pocet = new Map();
-    for (let i = 0; i < POCET_B; i++) if (!skryty[i] && B[i][3] !== IZOLAT && radek(i)[2] >= 0) pocet.set(B[i][3], (pocet.get(B[i][3]) || 0) + 1);
+    for (let i = 0; i < POCET_B; i++) if (!skryty[i] && B[i][3] !== IZOLAT && !BEZ_RODU.has(B[i][3]) && radek(i)[2] >= 0) pocet.set(B[i][3], (pocet.get(B[i][3]) || 0) + 1);
     return Array.from(pocet.entries()).filter(function(x){ return x[1] >= 3; }).sort(function(a, b){ return b[1] - a[1]; });
   }
   function naplnVyber(){
@@ -2292,7 +2297,7 @@ var strom = (function(){   // var: filtry a texty se na něj ptají dřív, než
     const popisek = tl.querySelector("span"); popisek.dataset.t = zapnuto ? "globus" : "rodokmen"; popisek.textContent = zapnuto ? T.globus : T.rodokmen;
     if (!zapnuto) { if (globusOk && ctx) { potrebaKresli = true; teckyZmeneny = true; popiskyZmeneny = true; ozivit(); } return; }
     const vl = vybranyList(), i = vybrany ? (vybrany.typ === "atlas" ? BOD_ATLASU[vybrany.id] : vybrany.i) : -1;
-    const cilova = f != null ? f : i >= 0 && B[i][3] !== IZOLAT && radek(i)[2] >= 0 ? B[i][3] : rodina >= 0 ? rodina : B[BOD_ATLASU[T.lang]][3];
+    const cilova = f != null ? f : i >= 0 && B[i][3] !== IZOLAT && !BEZ_RODU.has(B[i][3]) && radek(i)[2] >= 0 ? B[i][3] : rodina >= 0 ? rodina : B[BOD_ATLASU[T.lang]][3];
     uklidKartu();                              // na mobilu karta do lišty, ať je strom vidět
     if (cilova !== rodina || !m || !vl) postav(cilova);
     naplnVyber(); nactiBarvyS();
@@ -2307,11 +2312,11 @@ var strom = (function(){   // var: filtry a texty se na něj ptají dřív, než
     poVyberu: function(){
       if (!zapnuto || !vybrany) return;
       const i = vybrany.typ === "atlas" ? BOD_ATLASU[vybrany.id] : vybrany.i;
-      if (i >= 0 && B[i][3] !== rodina && B[i][3] !== IZOLAT && radek(i)[2] >= 0) { postav(B[i][3]); naplnVyber(); nactiBarvyS(); }
+      if (i >= 0 && B[i][3] !== rodina && B[i][3] !== IZOLAT && !BEZ_RODU.has(B[i][3]) && radek(i)[2] >= 0) { postav(B[i][3]); naplnVyber(); nactiBarvyS(); }
       probud();
     },
     /* má tečka strom? (izolované jazyky ne) */
-    ma: function(i){ return i >= 0 && B[i][3] !== IZOLAT && radek(i)[2] >= 0; },
+    ma: function(i){ return i >= 0 && B[i][3] !== IZOLAT && !BEZ_RODU.has(B[i][3]) && radek(i)[2] >= 0; },
     otevriPro: function(i){ prepni(true, B[i][3]); if (!desktop.matches) window.scrollTo({top: 0, behavior: bezPohybu.matches ? "auto" : "smooth"}); },
     obnov: function(){ if (zapnuto) { barvyDen = null; if (m && rodina >= 0) { postav(rodina); naplnVyber(); } probud(); } else m = null; },
     texty: function(){
@@ -2412,6 +2417,7 @@ function nazevVetve(u, rod){
 function vztah(a, b){
   if (a.rod == null || b.rod == null || a.rod < 0 || b.rod < 0) return {typ: "nevime"};
   if (a.rod === IZOLAT_R || b.rod === IZOLAT_R) return {typ: "izolat"};
+  if (BEZ_RODU.has(a.rod) || BEZ_RODU.has(b.rod)) return {typ: "bezrodu"};
   if (a.rod !== b.rod) return {typ: "ne"};
   if (a.i < 0 || b.i < 0 || !(radek(a.i)[2] >= 0) || !(radek(b.i)[2] >= 0)) return {typ: "rodina"};
   const retezA = [];
@@ -2504,9 +2510,10 @@ function ukazSrovnani(){
 
   /* příbuznost */
   const rod = oddil(T.zalozkaPribuznost);
-  if (v.typ === "ne" || v.typ === "izolat") {
+  if (v.typ === "ne" || v.typ === "izolat" || v.typ === "bezrodu") {
     rod.appendChild(prvek("p", "sr-verdikt", T.pribuzneNe));
-    if (v.typ === "izolat") [a, b].forEach(function(L){ if (L.rod === IZOLAT_R) rod.appendChild(prvek("p", null, t("izolatText", {a: jmenoL(L)}))); });
+    if (v.typ === "bezrodu") [a, b].forEach(function(L){ if (BEZ_RODU.has(L.rod)) rod.appendChild(prvek("p", null, t("bezRodu", {a: jmenoL(L), druh: REJSTRIK.rr[L.rod]}))); });
+    else if (v.typ === "izolat") [a, b].forEach(function(L){ if (L.rod === IZOLAT_R) rod.appendChild(prvek("p", null, t("izolatText", {a: jmenoL(L)}))); });
     else rod.appendChild(prvek("p", null, T.pribuzneNeText));
     [a, b].forEach(function(L){ if (L.rod !== IZOLAT_R) rod.appendChild(radekSrovnani(L, velke(REJSTRIK.rr[L.rod]))); });
   } else if (v.typ === "rodina") {

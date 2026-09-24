@@ -20,7 +20,11 @@ const styly = cti("src/styles.css");
 const telo = cti("src/body.html");
 const aplikace = cti("src/app.js");
 
-const RODINY_EN = { "Isolate": "isolate – no known relatives", "Sign Language": "sign language", "Pidgin": "pidgin" };
+const RODINY_EN = { "Isolate": "isolate – no known relatives", "Sign Language": "sign language", "Pidgin": "pidgin",
+  "Artificial Language": "constructed language", "Mixed Language": "mixed language", "Speech Register": "speech register" };
+/* skupiny Glottologu, které nejsou jazykovou rodinou (jazyky v nich spolu nejsou příbuzné) */
+const BEZ_RODU = ["Artificial Language", "Mixed Language", "Pidgin", "Speech Register"];
+const opravyPoloh = json("data/polohy-opravy.json");
 const WEB = "https://atlasoflanguages.netlify.app";   // adresa webu pro náhled při sdílení odkazu
 const ikona = cti("static/favicon.svg").trim();
 const escHtml = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -49,7 +53,8 @@ const JAZYKY = jazykyAtlasu.map(j => {
 const REJSTRIK = {
   r: { cs: glottolog.rodiny.map(r => rodinyCz[r] || r), en: glottolog.rodiny.map(r => RODINY_EN[r] || r) },
   m: { cs: glottolog.makro.map(m => (m && UI.cs.makro[m]) || ""), en: glottolog.makro.map(m => (m && UI.en.makro[m]) || "") },
-  b: glottolog.body.map(b => b.slice(0, 6)),
+  b: glottolog.body.map(b => { const o = opravyPoloh[b[6]]; const r = b.slice(0, 6); if (o) { r[1] = o.poloha[0]; r[2] = o.poloha[1]; } return r; }),
+  nr: BEZ_RODU.map(n => glottolog.rodiny.indexOf(n)).filter(i => i >= 0),
   // znakové jazyky: rodina „Sign Language“ a pár dalších, které Glottolog řadí jinam (Rennellese Sign Language)
   g: glottolog.body.map(b => b[6]),           // glottocode – stálý kód tečky pro odkaz #corn1251
   zn: glottolog.body.flatMap((b, i) => glottolog.rodiny[b[3]] === "Sign Language" || /\bsign language\b/i.test(b[0]) ? [i] : [])

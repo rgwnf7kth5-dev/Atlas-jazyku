@@ -19,6 +19,11 @@
 Knihovny ve `vendor/` jsou vložené přímo do stránky (stránka nesmí záviset na CDN):
 [d3-array a d3-geo](https://d3js.org) (ISC), [topojson-client](https://github.com/topojson/topojson-client) (ISC).
 
+## Úpravy oproti zdrojům
+
+- `polohy-opravy.json`: poloha tečky, kde Glottolog odporuje sám sobě. Esperanto má v Glottologu tečku
+  ve Francii, ale jako zemi Polsko; tečka je proto ve Varšavě, kde L. L. Zamenhof roku 1887 esperanto zveřejnil.
+
 ## Co je odhad
 
 - **Jazykové areály** (`areal` v `languages.json`) jsou ručně zakreslené přibližné oblasti, ne měření.

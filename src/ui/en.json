@@ -399,5 +399,6 @@
  "spolecneStaty": "Both are used in",
  "zpetNa": "Back to: {a}",
  "porovnatJiny": "Compare with another",
- "stromObe": "Show both in the family tree"
+ "stromObe": "Show both in the family tree",
+ "bezRodu": "{a} is a {druh}. It did not develop gradually from a single ancestor like other languages, so it belongs to no language family and has no relatives."
 }

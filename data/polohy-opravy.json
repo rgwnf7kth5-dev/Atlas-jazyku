@@ -1,0 +1,10 @@
+{
+ "_popis": "Opravy poloh teček, kde Glottolog odporuje sám sobě. Klíč je glottocode, poloha [délka, šířka]. Build je použije místo Glottologu, validace hlídá, že glottocode existuje.",
+ "espe1235": {
+  "poloha": [
+   21.01,
+   52.23
+  ],
+  "proc": "Glottolog klade esperanto do Francie (u Compiègne), ale jako zemi uvádí Polsko. Esperanto zveřejnil L. L. Zamenhof roku 1887 ve Varšavě (Unua Libro), tečka je proto ve Varšavě."
+ }
+}

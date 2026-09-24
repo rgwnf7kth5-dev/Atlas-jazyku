@@ -52,6 +52,12 @@ for (const r of pd.radky) if (Array.isArray(r[10]) && !(r[10][0] > 0 && r[10][0]
 if (divnychMluvcich) chyby.push(`data/podrobnosti.json: ${divnychMluvcich} jazyků má nesmyslný počet mluvčích nebo rok (Wikidata)`);
 if (pd.radky.some(r => !(Number.isInteger(r[0]) && r[0] >= -1 && r[0] <= 6))) chyby.push("data/podrobnosti.json: stupeň vitality musí být -1 až 6");
 if (pd.uzly.length !== pd.nad.length) chyby.push("data/podrobnosti.json: strom příbuzenstva je poškozený");
+{ const kody = new Set(glottolog.body.map(b => b[6]));   // opravy poloh jen pro tečky, které v Glottologu jsou
+  for (const [k, o] of Object.entries(json("data/polohy-opravy.json"))) {
+    if (k.startsWith("_")) continue;
+    if (!kody.has(k)) chyby.push(`data/polohy-opravy.json: tečka „${k}“ v Glottologu není`);
+    if (!Array.isArray(o.poloha) || Math.abs(o.poloha[0]) > 180 || Math.abs(o.poloha[1]) > 90 || !o.proc) chyby.push(`data/polohy-opravy.json: „${k}“ potřebuje polohu [délka, šířka] a důvod`);
+  } }
 { const uzly = new Set(pd.uzly);                // české názvy větví pro rodokmen: jen větve, které ve stromu opravdu jsou
   for (const k of Object.keys(json("data/glottolog-branches.cs.json"))) if (!uzly.has(k)) chyby.push(`data/glottolog-branches.cs.json: větev „${k}“ v Glottologu není`); }
 for (const [l, ui] of [["cs", uiCs], ["en", uiEn]]) {

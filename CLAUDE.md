@@ -73,6 +73,13 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
 - Náhled pro sdílení odkazu (og:image) je `static/nahled-cs.jpg` / `nahled-en.jpg`, ikonka `static/favicon.svg`
   (vkládá se do stránky) a `apple-touch-icon.png`. Build kopíruje `static/` do `dist/`. Obrázky vyrábí
   `scripts/nahledy.mjs` (potřebuje Playwright) – po větší změně vzhledu je vyrob znovu. Adresa webu je v `build.mjs` (`WEB`).
+- **Skupiny Glottologu, které nejsou rodinou**: umělé jazyky, pidžiny, smíšené jazyky a zvláštní způsoby mluvy
+  (`BEZ_RODU` v build.mjs → `REJSTRIK.nr`). Jazyky v nich spolu příbuzné nejsou, proto nemají oblouky k „příbuzným“,
+  rodokmen ani společného předka ve srovnání; karta místo toho vysvětlí, proč do žádné rodiny nepatří.
+  (Uživatel narazil na esperanto s oblouky k interslovanštině a znakovému jazyku na Šalamounových ostrovech.)
+- **Opravy poloh** jsou v `data/polohy-opravy.json` (glottocode → poloha a důvod), build je použije místo
+  Glottologu. Jen tam, kde Glottolog odporuje sám sobě: esperanto měl tečku ve Francii, ale zemi Polsko →
+  Varšava (Unua Libro, 1887). Glottolog jinak neopravovat bez doloženého důvodu.
 - Od vybraného jazyka vedou světelné oblouky k nejbližším příbuzným (nejvýš 6, podle nejhlubšího společného
   předka ve stromu Glottologu). U jazyka z atlasu jen k jiným jazykům atlasu, karta je vypisuje.
 
