@@ -129,6 +129,38 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
 .eu-jazyky button{font:inherit; font-size:.74rem; font-weight:600; padding:4px 10px; border-radius:999px; cursor:pointer; color:#003399;
   background:#FFCC00; border:1px solid #E0B000}
 .eu-jazyky button:hover{background:#FFE066}
+/* srovnání dvou jazyků */
+.k-porovnat{display:flex; align-items:center; justify-content:center; gap:8px; width:calc(100% - 28px); margin:10px 14px 0; padding:9px 14px;
+  border-radius:14px; cursor:pointer; font:inherit; font-size:.84rem; font-weight:700; color:var(--text);
+  background:var(--plocha); border:1px dashed var(--linka2)}
+.k-porovnat svg{width:18px; height:18px; color:var(--cyan)}
+.k-porovnat:hover{border-style:solid; border-color:var(--cyan)}
+:root .k-hero.srovnani, :root[data-theme="light"] .k-hero.srovnani{color:var(--text); background:linear-gradient(150deg, var(--plocha2), var(--plocha))}
+.k-hero.srovnani > :not(.k-lista):not(.k-dvojice){display:none}
+.k-dvojice{display:grid; grid-template-columns:minmax(0,1fr) auto minmax(0,1fr); gap:6px; align-items:stretch; margin-top:4px}
+.k-strana{display:flex; flex-direction:column; gap:3px; min-width:0; padding:11px 12px; border-radius:16px; background:var(--r-barva); color:var(--r-text)}
+.ks-pozdrav{font-family:"Noto Sans","Noto Sans Arabic","Noto Sans Devanagari","Noto Sans CJK SC","Segoe UI",system-ui,sans-serif; font-weight:800; font-size:1.3rem; line-height:1.15; overflow-wrap:anywhere}
+.ks-nazev{font-size:.98rem; line-height:1.2; overflow-wrap:anywhere}
+.ks-rodina{font-size:.7rem; opacity:.85}
+.k-mezi{align-self:center; font-size:1.3rem; font-weight:800; color:var(--text2)}
+.sr-verdikt{font-weight:800; font-size:1rem; color:var(--text); margin-bottom:4px}
+.sr-radek{display:block; margin-top:3px; font-size:.8rem; line-height:1.4; color:var(--text2)}
+.sr-radek b{color:var(--text); font-weight:700}
+.sr-tecka{display:inline-block; width:9px; height:9px; border-radius:50%; margin-right:6px; vertical-align:1px; box-shadow:0 0 0 1.5px var(--plocha)}
+.strom-mini{display:grid; grid-template-columns:1fr 1fr; gap:8px 12px; margin:10px 0 4px}
+.sm-predek{grid-column:1 / -1; justify-self:center; padding:6px 14px; border-radius:999px; font-weight:700; font-size:.82rem;
+  background:var(--plocha); border:1px solid var(--linka2); color:var(--text)}
+.sm-vetev{display:flex; flex-direction:column; gap:3px; min-width:0; padding-left:10px; border-left:3px solid var(--r-barva); font-size:.76rem; color:var(--text2)}
+.sm-vetev b{font-size:.86rem; color:var(--text)}
+.sr-pata{display:flex; flex-wrap:wrap; gap:8px}
+.sr-pata .tl-rodokmen{margin-top:0}
+.srovnani-vyzva{position:absolute; z-index:8; top:16px; left:50%; transform:translateX(-50%); display:flex; align-items:center; gap:10px;
+  width:max-content; max-width:calc(100% - 32px); padding:8px 8px 8px 14px; border-radius:18px; font-size:.82rem; font-weight:600; color:var(--text);
+  animation:panel-in .25s ease-out, vyzva-puls 2s ease-in-out .3s infinite}
+@keyframes vyzva-puls{50%{box-shadow:0 0 0 4px var(--cyan-slabe), 0 12px 30px -12px var(--cyan-zare)}}
+.srovnani-vyzva > svg{width:20px; height:20px; flex:none; color:var(--cyan)}
+.srovnani-vyzva button{flex:none; font:inherit; font-size:.78rem; font-weight:700; padding:6px 12px; border-radius:999px; cursor:pointer;
+  color:var(--text); background:var(--plocha); border:1px solid var(--linka2)}
 .tl-rodokmen{display:inline-flex; align-items:center; gap:8px; margin-top:12px; padding:8px 15px; border-radius:999px; cursor:pointer;
   border:1px solid var(--sklo-okraj); background:var(--plocha); color:var(--text); font:inherit; font-size:.8rem; font-weight:600}
 .tl-rodokmen svg{width:16px; height:16px; color:var(--cyan)}
@@ -462,6 +494,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
   .panel-zobrazeni{position:relative; left:auto; bottom:auto; transform:none; width:auto; max-height:none; margin:0 12px 12px; animation:none}
   .strom-hlava{top:8px; left:8px; right:8px; max-width:none; justify-content:space-between}
   .eu-panel{top:8px; left:8px; right:8px; width:auto; padding:9px; gap:4px 10px}
+  .srovnani-vyzva{top:8px; left:8px; right:8px; transform:none; width:auto; max-width:none; animation:vyzva-puls 2s ease-in-out infinite}
   .eu-vlajka{width:60px; height:40px}
   .eu-jazyky{display:none}
   .eu-text p{display:none}                /* na telefonu jen nadpis, ať panel nezakrývá Evropu */

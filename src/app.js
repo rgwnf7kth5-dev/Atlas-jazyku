@@ -838,6 +838,17 @@ function kresliPopredi(cas){
     }
   });
 
+  if (srovnani && oblouky.length && (od === 0 || (od > 0 && cas - od > 700) || bezPohybu.matches)) {   /* vzdálenost uprostřed oblouku */
+    const body = oblouky[0], stred = body[Math.floor(body.length / 2)];
+    if (promitni(stred, p)) {
+      const text = t("km", {n: cislo(srovnani.km)});
+      c.font = "700 12" + PISMO; c.textBaseline = "middle";
+      const w = c.measureText(text).width;
+      c.fillStyle = barvy["popisek-lem"]; c.globalAlpha = 0.9;
+      c.beginPath(); if (c.roundRect) c.roundRect(p[0] - w / 2 - 8, p[1] - 11, w + 16, 22, 11); else c.rect(p[0] - w / 2 - 8, p[1] - 11, w + 16, 22);
+      c.fill(); c.globalAlpha = 1; c.fillStyle = barvy.popisek; c.fillText(text, p[0] - w / 2, p[1] + 0.5);
+    }
+  }
   if (eu) {                             /* zlaté hvězdičky jazyků EU, vyskakují jedna po druhé */
     const obsazene = [];
     c.font = "700 11.5" + PISMO; c.textBaseline = "middle"; c.lineJoin = "round";
@@ -940,6 +951,14 @@ function obnovPriznaky(){
     pribuzni.forEach(function(k){ zakladJaz[k] = 2; });
     dulezite = [vybrany.i].concat(pribuzni);
     nastavOblouky([B[vybrany.i][1], B[vybrany.i][2]], pribuzni);
+  }
+  if (srovnani) {                          /* srovnání: místo příbuzných jen oblouk k druhému jazyku */
+    if (vybrany && vybrany.pribuzni) vybrany.pribuzni.forEach(function(k){ if (zakladJaz[k] === 2) zakladJaz[k] = 0; });
+    const b = srovnani.b;
+    if (b.i >= 0 && !zakladJaz[b.i]) zakladJaz[b.i] = 2;
+    const o = oblouk(vektor(srovnani.a.lon, srovnani.a.lat), vektor(b.lon, b.lat));
+    oblouky = o ? [o] : [];
+    dulezite = [srovnani.a.i, b.i].filter(function(i){ return i >= 0; });
   }
   if (zeme) zeme.body.forEach(function(i){ if (!zakladJaz[i]) zakladJaz[i] = 5; });
   if (eu) EU.forEach(function(x){ if (x.i >= 0 && !zakladJaz[x.i]) zakladJaz[x.i] = 5; });
@@ -1155,6 +1174,9 @@ const EU = EU_JAZYKY.filter(function(id){ return PODLE_ID[id]; }).map(function(i
   return {id: id, i: i, v: v, sx: -1, sy: -1};
 });
 let eu = null;                            // {od: kdy začaly vyskakovat hvězdičky; -1 = čeká se na přílet}
+/* srovnání dvou jazyků: první je zároveň vybraný (vybrany), druhý se k němu jen přidá */
+var srovnani = null;                      // {a: jazyk, b: jazyk} (viz jazykAtlasu / jazykBodu)
+var cekaNaDruhy = null;                   // první jazyk, dokud se vybírá druhý
 function bodyVeStatu(nazev){
   const kod = PD.mapaStatu && PD.mapaStatu[nazev];
   if (!kod) return null;
@@ -1254,6 +1276,8 @@ function oznacTlacitka(id){
 }
 function vyber(id){
   const j = PODLE_ID[id]; if (!j) return;
+  if (cekaNaDruhy) { dokonciSrovnani(jazykAtlasu(id)); return; }   // vybírá se druhý jazyk ke srovnání
+  if (srovnani) ukonciSrovnani();
   zeme = null;
   vybrany = {typ: "atlas", id: j.id, sk: j.sk, zeme: j.zeme, ob: j.ob, stred: j.stred,
              pribuzni: BOD_ATLASU[j.id] >= 0 ? pribuzniBodu(BOD_ATLASU[j.id], true, 6) : []};
@@ -1265,7 +1289,9 @@ function vyber(id){
   if (tl && desktop.matches) tl.scrollIntoView({block: "center", behavior: bezPohybu.matches ? "auto" : "smooth"});   // na mobilu naopak nahoru ke glóbu
 }
 function vyberBod(i){
+  if (cekaNaDruhy) { dokonciSrovnani(jazykBodu(i)); return; }
   if (B[i][5] && PODLE_ID[B[i][5]]) { vyber(B[i][5]); return; }
+  if (srovnani) ukonciSrovnani();
   zeme = null;
   vybrany = {typ: "rejstrik", i: i, zeme: [], ob: [], stred: [B[i][1], B[i][2]], pribuzni: pribuzniBodu(i, false, 6)};
   if (globusOk) obnovPriznaky();
@@ -1274,6 +1300,7 @@ function vyberBod(i){
   oznacTlacitka(null);
 }
 function odznac(){
+  srovnani = null; zrusCekani();
   vybrany = null; zeme = null; prechod = null; ozivit(); zapisOdkaz();
   if (eu) ukonciEU(true);
   karta.hidden = true; delete karta.dataset.jazyk; $("tl-cely").hidden = true;
@@ -1311,6 +1338,7 @@ function uplatniFiltry(start){
     else {
       vybrany.pribuzni = i >= 0 ? pribuzniBodu(i, vybrany.typ === "atlas", 6) : [];
       if (vybrany.typ === "atlas") ukazKartu(PODLE_ID[vybrany.id]); else ukazKartuBodu(vybrany.i);
+      if (srovnani) ukazSrovnani();
     }
   }
   if (zeme) zeme.body = bodyVeStatu(zeme.f.properties.name) || [];
@@ -1411,7 +1439,10 @@ function obnovLegendu(){
 /* ---------- odkaz na jazyk: #cs (jazyk z atlasu) nebo #corn1251 (glottocode tečky) ---------- */
 const PODLE_KODU = new Map();
 REJSTRIK.g.forEach(function(g, i){ if (g) PODLE_KODU.set(g, i); });
-function kodVyberu(){ return !vybrany ? "" : vybrany.typ === "atlas" ? vybrany.id : REJSTRIK.g[vybrany.i] || ""; }
+function kodVyberu(){
+  if (srovnani) return srovnani.a.kod + "~" + srovnani.b.kod;          // #cs~ar = srovnání dvou jazyků
+  return !vybrany ? "" : vybrany.typ === "atlas" ? vybrany.id : REJSTRIK.g[vybrany.i] || "";
+}
 function zapisOdkaz(){
   const k = kodVyberu();
   if (decodeURIComponent(location.hash.slice(1)) === k) return;
@@ -1427,6 +1458,15 @@ function prectiOdkaz(){
   const h = decodeURIComponent(location.hash.slice(1));
   if (!h || h === kodVyberu()) return;
   if (h.toLowerCase() === "eulang") { spustEU(); return; }
+  if (h.indexOf("~") > 0) {
+    const d = h.split("~"), najdi = function(k){ return PODLE_ID[k] ? jazykAtlasu(k) : PODLE_KODU.has(k) ? jazykBodu(PODLE_KODU.get(k)) : null; };
+    const a = najdi(d[0]), b = najdi(d[1]);
+    if (!a || !b) return;
+    if ((a.i >= 0 && skryty[a.i]) || (b.i >= 0 && skryty[b.i])) zrusFiltry();
+    if (a.j) vyber(a.kod); else vyberBod(a.i);
+    cekaNaDruhy = jazykZVyberu(); dokonciSrovnani(b);
+    return;
+  }
   if (PODLE_ID[h]) { if (atlasSkryty(PODLE_ID[h])) zrusFiltry(); vyber(h); }
   else if (PODLE_KODU.has(h)) { const i = PODLE_KODU.get(h); if (skryty[i]) zrusFiltry(); vyberBod(i); }
 }
@@ -1454,6 +1494,9 @@ const karta = $("karta"), kartaTelo = $("k-telo"), kartaStitky = $("k-stitky"), 
 /* karta jako pohlednice: barevné záhlaví, štítky s hlavními údaji, zbytek v záložkách */
 function otevriKartu(barva, textBarva, novyJazyk){
   karta.hidden = false;
+  kartaHero.classList.remove("srovnani");                 // karta srovnání má vlastní záhlaví
+  const dvojice = kartaHero.querySelector(".k-dvojice"); if (dvojice) dvojice.remove();
+  $("k-porovnat").hidden = false;
   kartaHero.style.setProperty("--r-barva", barva);
   kartaHero.style.setProperty("--r-text", textBarva);
   kartaTelo.textContent = ""; kartaStitky.textContent = "";
@@ -1627,7 +1670,7 @@ function lidi(n){                  /* počet lidí: malá čísla přesně, velk
   const g = Math.round(n / 1e8) / 10;
   return cislo(g, Math.floor(g) === g ? 0 : 1) + " " + tvar(g, T.miliardy);
 }
-let srovnani = null;   // hlásky češtiny (nebo angličtiny) pro porovnání
+let hlaskyVzor = null;   // hlásky češtiny (nebo angličtiny) pro porovnání
 function hlaskySrovnani(){
   const i = B.findIndex(function(b){ return b[5] === T.srovnavaciJazyk; });
   const h = i >= 0 ? radek(i)[6] : null;
@@ -1699,8 +1742,8 @@ function ukazKartuBodu(i){
     let txt = t("hlaskyHodnota", {c: h[0], cs: tvar(h[0], T.souhlaska), v: h[1], vs: tvar(h[1], T.samohlaska)});
     if (h[2] > 0) txt += t("hlaskyTony", {t: h[2], ts: tvar(h[2], T.ton)});
     o.appendChild(prvek("p", null, txt + "."));
-    if (!srovnani || srovnani.lang !== T.lang) srovnani = {lang: T.lang, h: hlaskySrovnani()};
-    if (srovnani.h) o.appendChild(prvek("p", "pozn", t("hlaskySrovnani", {c: srovnani.h[0], v: srovnani.h[1]})));
+    if (!hlaskyVzor || hlaskyVzor.lang !== T.lang) hlaskyVzor = {lang: T.lang, h: hlaskySrovnani()};
+    if (hlaskyVzor.h) o.appendChild(prvek("p", "pozn", t("hlaskySrovnani", {c: hlaskyVzor.h[0], v: hlaskyVzor.h[1]})));
     stavba.push(o);
   }
   if (r[1] >= 0) { const o = oddil(T.popsanost); o.appendChild(prvek("p", null, velke(T.med[r[1]]) + ".")); stavba.push(o); }
@@ -1814,6 +1857,8 @@ function obnovTexty(){
   okno.hidden = true; bublinaBod.hidden = true;
   if (vybrany && vybrany.typ === "atlas") { ukazKartu(PODLE_ID[vybrany.id]); oznacTlacitka(vybrany.id); }
   else if (vybrany && vybrany.typ === "rejstrik") ukazKartuBodu(vybrany.i);
+  if (srovnani) ukazSrovnani();
+  if (cekaNaDruhy) $("sv-text").textContent = t("porovnatVyzva", {a: jmenoL(cekaNaDruhy)});
   $("napoveda").textContent = vybrany ? tx("napovedaVyber") : T.napovedaStart;
   if (strom) strom.texty();
   if (eu) postavEuPanel();
@@ -1995,9 +2040,11 @@ var strom = (function(){   // var: filtry a texty se na něj ptají dřív, než
   function nactiBarvyS(){
     const st = getComputedStyle(document.documentElement), v = function(n){ return st.getPropertyValue(n).trim(); };
     barvy = {cara: v("--tecka-jazyk"), text: v("--text"), text2: v("--text2"), plocha: v("--plocha"), rodina: v(m ? m.barva : "--r-ost"),
-             krouzek: denni ? "#B07A10" : "#F2C25A", zvyrazneni: denni ? "#0E1838" : "#FFFFFF"};
-    barvyDen = denni + (m ? m.barva : "");
+             krouzek: denni ? "#B07A10" : "#F2C25A", zvyrazneni: denni ? "#0E1838" : "#FFFFFF",
+             druha: v(srovnani && srovnani.b.sk && srovnani.b.sk !== srovnani.a.sk ? "--r-" + srovnani.b.sk : "--fialova")};
+    barvyDen = klicBarev();
   }
+  function klicBarev(){ return denni + (m ? m.barva : "") + (srovnani ? srovnani.a.sk + "/" + srovnani.b.sk : ""); }
   function velikost(){
     const r = platnoS.getBoundingClientRect();
     dprS = Math.min(window.devicePixelRatio || 1, 1.5);
@@ -2021,7 +2068,7 @@ var strom = (function(){   // var: filtry a texty se na něj ptají dřív, než
   function kresli(cas){
     velikost();
     if (!m || !sw) return;
-    if (barvyDen !== denni + m.barva) nactiBarvyS();
+    if (barvyDen !== klicBarev()) nactiBarvyS();
     const c = cS, B_ = barvy, z = zaklad(), k = z.k * mer;
     c.setTransform(dprS, 0, 0, dprS, 0, 0); c.clearRect(0, 0, sw, sh);
     const rust = Math.min(1, (cas - rustOd) / RUST) * 1.12;
@@ -2033,6 +2080,8 @@ var strom = (function(){   // var: filtry a texty se na něj ptají dřív, než
     });
     const vyber_ = vybranyList(), cesta = new Set();
     for (let n = vyber_; n; n = n.rodic) cesta.add(n);
+    const druhy_ = srovnani && srovnani.b.i >= 0 ? m.podle.get(srovnani.b.i) || null : null, cesta2 = new Set();   // srovnání: cesta druhého jazyka
+    for (let n = druhy_; n; n = n.rodic) cesta2.add(n);
     const podNaj = podNajetym || new Set();
     const ox = z.cx - k * cil[0], oy = z.cy + k * cil[1];      // kořen = střed oblouků
     /* hrana jako v kruhovém rodokmenu: po oblouku rodiče k úhlu potomka, pak paprskem ven */
@@ -2047,12 +2096,12 @@ var strom = (function(){   // var: filtry a texty se na něj ptají dřív, než
     c.lineCap = "round";
     const tloustky = new Map();
     m.uzly.forEach(function(n){
-      if (!n.rodic || !n.ukaz || cesta.has(n) || podNaj.has(n)) return;   // i mimo obraz: oblouk může vést přes něj
+      if (!n.rodic || !n.ukaz || cesta.has(n) || cesta2.has(n) || podNaj.has(n)) return;   // i mimo obraz: oblouk může vést přes něj
       const t = Math.round(n.sila * 2) / 2;
       if (!tloustky.has(t)) tloustky.set(t, []);
       tloustky.get(t).push(n);
     });
-    c.strokeStyle = B_.cara; c.globalAlpha = (denni ? 0.6 : 0.5) * (cesta.size ? 0.6 : 1);
+    c.strokeStyle = B_.cara; c.globalAlpha = (denni ? 0.6 : 0.5) * (cesta.size || cesta2.size ? 0.6 : 1);
     tloustky.forEach(function(seznam, t){
       c.beginPath();
       seznam.forEach(function(n){ hrana(n, n.ukaz); });
@@ -2063,6 +2112,12 @@ var strom = (function(){   // var: filtry a texty se na něj ptají dřív, než
       c.beginPath();
       podNaj.forEach(function(n){ if (n.rodic && n.ukaz) hrana(n, n.ukaz); });
       c.strokeStyle = B_.krouzek; c.lineWidth = 1.6; c.stroke();
+    }
+    if (cesta2.size) {
+      c.beginPath();
+      cesta2.forEach(function(n){ if (n.rodic && n.ukaz && !cesta.has(n)) hrana(n, n.ukaz); });
+      c.shadowColor = B_.druha; c.shadowBlur = 14; c.strokeStyle = B_.druha; c.lineWidth = 5; c.stroke();
+      c.shadowBlur = 0; c.strokeStyle = B_.zvyrazneni; c.lineWidth = 1.6; c.stroke();
     }
     if (cesta.size) {
       c.beginPath();
@@ -2079,7 +2134,7 @@ var strom = (function(){   // var: filtry a texty se na něj ptají dřív, než
         const r = n === m.koren ? Math.max(5, Math.min(11, k * 0.018)) : Math.max(2, Math.min(6, k * 0.006));
         c.beginPath(); c.arc(n.sx, n.sy, r, 0, Math.PI * 2); c.fillStyle = B_.plocha; c.fill();
         c.lineWidth = cesta.has(n) || n === najeto ? 2.4 : 1.5; c.strokeStyle = cesta.has(n) ? B_.rodina : B_.krouzek; c.stroke();
-      } else if (n.atlas || n === vyber_) velke_.push(n);
+      } else if (n.atlas || n === vyber_ || n === druhy_) velke_.push(n);
       else tecky.push(n);
     });
     const rt = Math.max(1.5, Math.min(4, k * 0.0035));
@@ -2087,9 +2142,9 @@ var strom = (function(){   // var: filtry a texty se na něj ptají dřív, než
     tecky.forEach(function(n){ c.moveTo(n.sx + rt, n.sy); c.arc(n.sx, n.sy, rt, 0, Math.PI * 2); });
     c.fillStyle = B_.cara; c.fill();
     velke_.forEach(function(n){
-      const r = Math.max(4, Math.min(9, k * 0.01)) * (n === vyber_ ? 1.35 : 1);
+      const r = Math.max(4, Math.min(9, k * 0.01)) * (n === vyber_ || n === druhy_ ? 1.35 : 1);
       c.beginPath(); c.arc(n.sx, n.sy, r, 0, Math.PI * 2);
-      c.fillStyle = B_.rodina; c.fill(); c.lineWidth = 1.6; c.strokeStyle = B_.zvyrazneni; c.stroke();
+      c.fillStyle = n === druhy_ ? B_.druha : B_.rodina; c.fill(); c.lineWidth = 1.6; c.strokeStyle = B_.zvyrazneni; c.stroke();
       if (n === vyber_) { c.beginPath(); c.arc(n.sx, n.sy, r + 5, 0, Math.PI * 2); c.strokeStyle = B_.rodina; c.lineWidth = 2; c.stroke(); }
     });
     /* popisky: najetý, cesta vybraného, kořen, jazyky s pozdravem, přeložené velké větve, při přiblížení ostatní jazyky */
@@ -2101,6 +2156,7 @@ var strom = (function(){   // var: filtry a texty se na něj ptají dřív, než
     const kandidati = [];
     if (najeto) kandidati.push([najeto, 3]);
     if (vyber_) cesta.forEach(function(n){ if (n.i >= 0 || n.deti.length > 1 || n === m.koren) kandidati.push([n, n === vyber_ ? 3 : 2]); });
+    if (druhy_) cesta2.forEach(function(n){ if (n.i >= 0 || n.deti.length > 1) kandidati.push([n, n === druhy_ ? 3 : 2]); });
     kandidati.push([m.koren, 3]);
     velke_.forEach(function(n){ kandidati.push([n, 1]); });
     m.uzly.filter(function(n){ return n.i < 0 && n.vid && n.deti.length > 1 && n !== m.koren && (T.lang !== "cs" || PD.vetve[PD.uzly[n.u]]); })
@@ -2266,7 +2322,18 @@ var strom = (function(){   // var: filtry a texty se na něj ptají dřív, než
       m.uzly.forEach(function(n){ if (n.i >= 0) n.jm = jmenoBodu(n.i); });
       naplnVyber(); probud();
     },
-    zavrenaKarta: function(){ if (zapnuto) probud(); }
+    zavrenaKarta: function(){ if (zapnuto) probud(); },
+    /* srovnání: přiblíží nejbližšího společného předka obou jazyků */
+    zaostriNaDvojici: function(i1, i2){
+      if (!m) return;
+      velikost();                                   // plátno se právě ukázalo, ať je známá jeho velikost
+      const x = m.podle.get(i1), y = m.podle.get(i2);
+      if (!x || !y) return;
+      const predci = new Set();
+      for (let n = x; n; n = n.rodic) predci.add(n);
+      let n = y; while (n && !predci.has(n)) n = n.rodic;
+      if (n && n !== m.koren) zaostri(n);
+    }
   };
 })();
 /* ---------- velikonoční vajíčko „eulang“ ---------- */
@@ -2319,6 +2386,224 @@ $("eu-zavrit").addEventListener("click", function(){ ukonciEU(); });
     spustEU();
   });
 })();
+/* ---------- srovnání dvou jazyků ----------
+   Jazyk = {kod, j (jazyk z atlasu nebo null), i (tečka, nebo -1), lon, lat, rod (rodina Glottologu), sk (barevná skupina)}.
+   Příbuznost je ze stromu Glottologu (nejbližší společný předek), stavba z WALS, hlásky z PHOIBLE. Nic se nedomýšlí:
+   když údaj u jednoho z jazyků chybí, vlastnost se nesrovnává. */
+const IZOLAT_R = REJSTRIK.r.en.findIndex(function(r){ return /^isolate/.test(r); });
+function jazykAtlasu(id){
+  const j = PODLE_ID[id], i = BOD_ATLASU[id] >= 0 ? BOD_ATLASU[id] : -1;
+  return {kod: id, j: j, i: i, lon: i >= 0 ? B[i][1] : j.stred[0], lat: i >= 0 ? B[i][2] : j.stred[1], rod: i >= 0 ? B[i][3] : RODINA_ATLASU[id], sk: j.sk};
+}
+function jazykBodu(i){
+  if (B[i][5] && PODLE_ID[B[i][5]]) return jazykAtlasu(B[i][5]);
+  return {kod: REJSTRIK.g[i] || "", j: null, i: i, lon: B[i][1], lat: B[i][2], rod: B[i][3], sk: null};
+}
+function jazykZVyberu(){ return !vybrany ? null : vybrany.typ === "atlas" ? jazykAtlasu(vybrany.id) : jazykBodu(vybrany.i); }
+/* barva druhého jazyka: když je ze stejné barevné skupiny jako první, dostane fialovou, ať jdou rozlišit */
+function barvaDruheho(){ const a = srovnani.a, b = srovnani.b; return b.sk && b.sk !== a.sk ? barvaL(b) : "var(--fialova)"; }
+function barvaRole(L){ return srovnani && L === srovnani.b ? barvaDruheho() : barvaL(L); }
+function jmenoL(L){ return L.j ? L.j.n : jmenoBodu(L.i); }
+function barvaL(L){ return L.sk ? "var(--r-" + L.sk + ")" : "var(--cyan)"; }
+function textL(L){ return L.sk ? "var(--t-" + L.sk + ")" : "var(--na-cyan)"; }
+function nazevVetve(u, rod){
+  if (PD.nad[u] < 0) return velke(REJSTRIK.rr[rod] || PD.uzly[u]);
+  const n = PD.uzly[u];
+  return T.lang === "cs" && PD.vetve[n] ? velke(PD.vetve[n]) : n;
+}
+function vzdalenostKm(a, b){
+  const f1 = a.lat * R, f2 = b.lat * R, df = f2 - f1, dl = (b.lon - a.lon) * R;
+  const h = Math.sin(df / 2) * Math.sin(df / 2) + Math.cos(f1) * Math.cos(f2) * Math.sin(dl / 2) * Math.sin(dl / 2);
+  const km = 2 * 6371 * Math.asin(Math.min(1, Math.sqrt(h)));
+  return km < 100 ? Math.round(km / 5) * 5 : km < 1000 ? Math.round(km / 10) * 10 : Math.round(km / 100) * 100;
+}
+/* příbuznost: nejbližší společný předek ve stromu Glottologu */
+function vztah(a, b){
+  if (a.rod == null || b.rod == null || a.rod < 0 || b.rod < 0) return {typ: "nevime"};
+  if (a.rod === IZOLAT_R || b.rod === IZOLAT_R) return {typ: "izolat"};
+  if (a.rod !== b.rod) return {typ: "ne"};
+  if (a.i < 0 || b.i < 0 || !(radek(a.i)[2] >= 0) || !(radek(b.i)[2] >= 0)) return {typ: "rodina"};
+  const retezA = [];
+  for (let u = radek(a.i)[2]; u >= 0; u = PD.nad[u]) retezA.push(u);
+  const retezB = [];
+  let spolecny = -1;
+  for (let u = radek(b.i)[2]; u >= 0; u = PD.nad[u]) { if (retezA.indexOf(u) >= 0) { spolecny = u; break; } retezB.push(u); }
+  if (spolecny < 0) return {typ: "rodina"};
+  return {typ: "predek", u: spolecny, koren: PD.nad[spolecny] < 0,
+          cestaA: retezA.slice(0, retezA.indexOf(spolecny)).reverse(), cestaB: retezB.reverse()};
+}
+function zacniSrovnani(){
+  const a = jazykZVyberu(); if (!a) return;
+  if (srovnani) ukonciSrovnani(true);
+  cekaNaDruhy = a;
+  $("sv-text").textContent = t("porovnatVyzva", {a: jmenoL(a)});
+  $("srovnani-vyzva").hidden = false;
+  uklidKartu();
+}
+function zrusCekani(){ cekaNaDruhy = null; $("srovnani-vyzva").hidden = true; }
+$("sv-zrusit").addEventListener("click", zrusCekani);
+$("k-porovnat").addEventListener("click", zacniSrovnani);
+function dokonciSrovnani(b){
+  const a = cekaNaDruhy;
+  if (!a) return;
+  if ((a.i >= 0 && a.i === b.i) || (a.j && a.j === b.j)) return;       // stejný jazyk: čeká se dál
+  zrusCekani();
+  srovnani = {a: a, b: b, km: vzdalenostKm(a, b)};
+  zapisOdkaz();
+  ukazSrovnani();
+  velikostKarty("");
+  if (globusOk && ctx) {
+    obnovPriznaky(); spoctiPosun();
+    const va = vektor(a.lon, a.lat), vb = vektor(b.lon, b.lat);
+    const s2 = [va[0] + vb[0], va[1] + vb[1], va[2] + vb[2]], d = Math.hypot(s2[0], s2[1], s2[2]) || 1;
+    const stred = [Math.atan2(s2[1], s2[0]) / R, Math.asin(s2[2] / d) / R];
+    const uhel = Math.acos(Math.max(-1, Math.min(1, va[0] * vb[0] + va[1] * vb[1] + va[2] * vb[2])));
+    odhaleniOd = bezPohybu.matches ? 0 : -1;
+    letKe(stred, Math.max(1, Math.min(4.5, 1.5 / (uhel + 0.22))));
+    ozivit();
+  }
+  if (strom) strom.poVyberu();
+  if (!desktop.matches && window.scrollY > 40) window.scrollTo({top: 0, behavior: bezPohybu.matches ? "auto" : "smooth"});
+}
+function ukonciSrovnani(tise){
+  srovnani = null;
+  if (tise) return;
+  if (globusOk && ctx) { obnovPriznaky(); ozivit(); }
+}
+function zpetNaPrvni(){
+  ukonciSrovnani();
+  if (vybrany && vybrany.typ === "atlas") ukazKartu(PODLE_ID[vybrany.id]); else if (vybrany) ukazKartuBodu(vybrany.i);
+  zapisOdkaz();
+  if (strom) strom.poVyberu();
+}
+/* texty WALS se jinde vztahují ke čtenáři („stejně jako čeština“); ve srovnání dvou jiných jazyků to mate */
+function bezOdkazuNaCtenare(txt){
+  return txt.replace(/\s+(Stejně jako čeština|Just like English)\.?/g, "")
+            .replace(/,\s*(stejně jako (čeština|my)|just like English|like in English|like we do)/gi, "");
+}
+function radekSrovnani(L, text){
+  const d = prvek("div", "sr-radek"), te = prvek("i", "sr-tecka");
+  te.style.background = barvaRole(L);
+  d.appendChild(te); d.appendChild(prvek("b", null, jmenoL(L) + ": ")); d.appendChild(document.createTextNode(text));
+  return d;
+}
+function ukazSrovnani(){
+  const a = srovnani.a, b = srovnani.b, klic = "srovnani:" + a.kod + "~" + b.kod;
+  const novy = karta.dataset.jazyk !== klic;
+  if (novy) zalozkaVybrana = 0;
+  karta.dataset.jazyk = klic;
+  otevriKartu(barvaL(a), textL(a), novy);
+  kartaHero.classList.add("srovnani");
+  $("k-porovnat").hidden = true;
+  $("k-kod").textContent = "⇄ " + T.srovnani;
+  const dv = prvek("div", "k-dvojice");
+  [a, b].forEach(function(L, n){
+    if (n) dv.appendChild(prvek("span", "k-mezi", "⇄"));
+    const d = prvek("div", "k-strana");
+    d.style.setProperty("--r-barva", barvaL(L)); d.style.setProperty("--r-text", textL(L));
+    if (L.j) { const pz = prvek("span", "ks-pozdrav", L.j.pis); if (L.j.kod) pz.lang = L.j.kod; d.appendChild(pz); }
+    d.appendChild(prvek("strong", "ks-nazev", jmenoL(L)));
+    if (L.rod >= 0) d.appendChild(prvek("span", "ks-rodina", velke(REJSTRIK.rr[L.rod])));
+    dv.appendChild(d);
+  });
+  kartaHero.appendChild(dv);
+
+  const v = vztah(a, b);
+  stitek(T.vzdalenost, t("km", {n: cislo(srovnani.km)}));
+  stitek(T.pribuzne, v.typ === "predek" || v.typ === "rodina" ? T.ano : v.typ === "nevime" ? "?" : T.ne);
+
+  /* příbuznost */
+  const rod = oddil(T.zalozkaPribuznost);
+  if (v.typ === "ne" || v.typ === "izolat") {
+    rod.appendChild(prvek("p", "sr-verdikt", T.pribuzneNe));
+    if (v.typ === "izolat") [a, b].forEach(function(L){ if (L.rod === IZOLAT_R) rod.appendChild(prvek("p", null, t("izolatText", {a: jmenoL(L)}))); });
+    else rod.appendChild(prvek("p", null, T.pribuzneNeText));
+    [a, b].forEach(function(L){ if (L.rod !== IZOLAT_R) rod.appendChild(radekSrovnani(L, velke(REJSTRIK.rr[L.rod]))); });
+  } else if (v.typ === "rodina") {
+    rod.appendChild(prvek("p", "sr-verdikt", T.pribuzneAno));
+    rod.appendChild(prvek("p", null, t("pribuzneRodina", {r: REJSTRIK.rr[a.rod]})));
+  } else if (v.typ === "predek") {
+    rod.appendChild(prvek("p", "sr-verdikt", T.pribuzneAno));
+    rod.appendChild(prvek("p", null, v.koren ? t("pribuzneKoren", {r: REJSTRIK.rr[a.rod]}) : t("pribuzneSpolecny", {v: T.lang === "cs" && PD.vetve[PD.uzly[v.u]] ? nazevVetve(v.u, a.rod).toLowerCase() : nazevVetve(v.u, a.rod)})));
+    const mini = prvek("div", "strom-mini");
+    mini.appendChild(prvek("div", "sm-predek", nazevVetve(v.u, a.rod)));
+    [[a, v.cestaA], [b, v.cestaB]].forEach(function(x){
+      const L = x[0], cesta = x[1].map(function(u){ return nazevVetve(u, L.rod); });
+      const kratka = cesta.length > 4 ? [cesta[0], "…", cesta[cesta.length - 2], cesta[cesta.length - 1]] : cesta;
+      const sl = prvek("div", "sm-vetev"); sl.style.setProperty("--r-barva", barvaRole(L));
+      kratka.forEach(function(n){ sl.appendChild(prvek("span", null, "↓ " + n)); });
+      sl.appendChild(prvek("b", null, "↓ " + jmenoL(L)));
+      mini.appendChild(sl);
+    });
+    rod.appendChild(mini);
+    if (strom.ma(a.i)) {
+      const tl = prvek("button", "tl-rodokmen"); tl.type = "button";
+      tl.innerHTML = '<svg aria-hidden="true"><use href="#i-strom"/></svg>';
+      tl.appendChild(document.createTextNode(T.stromObe));
+      tl.addEventListener("click", function(){ strom.otevriPro(a.i); strom.zaostriNaDvojici(a.i, b.i); });
+      rod.appendChild(tl);
+    }
+  } else rod.appendChild(prvek("p", null, T.pribuzneNevime));
+
+  /* stavba: jen vlastnosti, které mají zapsané oba jazyky */
+  const stavba = [];
+  const ra = a.i >= 0 ? radek(a.i) : [], rb = b.i >= 0 ? radek(b.i) : [];
+  if (ra[5] && rb[5]) {
+    const stejne = prvek("ul", "vlastnosti"), jine = prvek("ul", "vlastnosti");
+    PD.wals.forEach(function(kod, k){
+      const x = +ra[5][k], y = +rb[5][k], popis = T.wals[kod];
+      if (!x || !y || !popis || !popis[1][x - 1] || !popis[1][y - 1]) return;
+      const li = prvek("li"); li.appendChild(prvek("b", null, popis[0]));
+      if (x === y) { li.appendChild(prvek("span", null, bezOdkazuNaCtenare(popis[1][x - 1]))); stejne.appendChild(li); }
+      else { li.appendChild(radekSrovnani(a, bezOdkazuNaCtenare(popis[1][x - 1]))); li.appendChild(radekSrovnani(b, bezOdkazuNaCtenare(popis[1][y - 1]))); jine.appendChild(li); }
+    });
+    if (stejne.children.length) { const o = oddil(T.spolecne); o.appendChild(stejne); stavba.push(o); }
+    if (jine.children.length) { const o = oddil(T.rozdily); o.appendChild(jine); stavba.push(o); }
+  }
+  if (Array.isArray(ra[6]) && Array.isArray(rb[6])) {
+    const o = oddil(T.hlasky);
+    [[a, ra[6]], [b, rb[6]]].forEach(function(x){
+      const h = x[1];
+      let txt = t("hlaskyHodnota", {c: h[0], cs: tvar(h[0], T.souhlaska), v: h[1], vs: tvar(h[1], T.samohlaska)});
+      if (h[2] > 0) txt += t("hlaskyTony", {t: h[2], ts: tvar(h[2], T.ton)});
+      o.appendChild(radekSrovnani(x[0], txt));
+    });
+    stavba.push(o);
+  }
+  if (!stavba.length) stavba.push(prvek("p", "pozn", T.bezUdaju));
+
+  /* čísla */
+  const cisla = [];
+  const oV = oddil(T.vzdalenost); oV.appendChild(prvek("p", null, t("vzdalenostText", {km: t("km", {n: cislo(srovnani.km)})}))); cisla.push(oV);
+  const mluvci = function(L){
+    if (L.j) return pocetMluvcich(L.j.mlu);
+    const r = radek(L.i);
+    return Array.isArray(r[10]) ? lidi(r[10][0]) : r[8] > 0 ? lidi(r[8]) : "?";
+  };
+  const oM = oddil(T.mluvcich); [a, b].forEach(function(L){ oM.appendChild(radekSrovnani(L, mluvci(L))); }); cisla.push(oM);
+  const va = a.i >= 0 ? vitalitaBodu(a.i) : -1, vb = b.i >= 0 ? vitalitaBodu(b.i) : -1;
+  if (va >= 0 || vb >= 0) {
+    const oVi = oddil(T.vitalita);
+    [[a, va], [b, vb]].forEach(function(x){ oVi.appendChild(radekSrovnani(x[0], x[1] >= 0 ? T.aes[x[1]][0] : "?")); });
+    cisla.push(oVi);
+  }
+  const statyA = (ra[3] || "").split(" ").filter(Boolean), statyB = (rb[3] || "").split(" ").filter(Boolean);
+  const spolecneStaty = statyA.filter(function(k){ return statyB.indexOf(k) >= 0; });
+  if (spolecneStaty.length) {
+    const oS = oddil(T.spolecneStaty), ul = prvek("ul", "staty");
+    spolecneStaty.slice(0, 12).forEach(function(k){ ul.appendChild(prvek("li", null, PD.staty[T.lang][k] || k)); });
+    oS.appendChild(ul); cisla.push(oS);
+  }
+  zalozky([{nazev: T.zalozkaPribuznost, uzly: [rod]}, {nazev: T.zalozkaStavba, uzly: stavba}, {nazev: T.zalozkaCisla, uzly: cisla}]);
+
+  const pata = prvek("div", "k-pata sr-pata");
+  const zpet = prvek("button", "tl-rodokmen", t("zpetNa", {a: jmenoL(a)})); zpet.type = "button";
+  zpet.addEventListener("click", zpetNaPrvni);
+  const jiny = prvek("button", "tl-rodokmen", T.porovnatJiny); jiny.type = "button";
+  jiny.addEventListener("click", function(){ zpetNaPrvni(); zacniSrovnani(); });
+  pata.appendChild(zpet); pata.appendChild(jiny);
+  kartaTelo.appendChild(pata);
+}
 function tlacitkoRodokmenu(i){
   if (!strom.ma(i)) return null;
   const b = prvek("button", "tl-rodokmen");

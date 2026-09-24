@@ -8,6 +8,7 @@
  <symbol id="i-nastaveni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2.2"/><circle cx="9" cy="17" r="2.2"/></symbol>
  <symbol id="i-hvezda" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.6l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z"/></symbol>
  <symbol id="i-strom" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M12 17.6V12M12 12L6 7.6M12 12V7.2M12 12l6-4.4"/><circle cx="12" cy="19.6" r="2"/><circle cx="5.2" cy="6" r="2"/><circle cx="12" cy="5" r="2"/><circle cx="18.8" cy="6" r="2"/></symbol>
+ <symbol id="i-porovnat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h15M15 4l4 4-4 4M20 16H5M9 12l-4 4 4 4"/></symbol>
  <symbol id="i-dal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></symbol>
  <symbol id="i-zpet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></symbol>
  <symbol id="i-kostka" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="4.4"/><circle cx="8.4" cy="8.4" r="1.4" fill="currentColor" stroke="none"/><circle cx="15.6" cy="15.6" r="1.4" fill="currentColor" stroke="none"/><circle cx="15.6" cy="8.4" r="1.4" fill="currentColor" stroke="none"/><circle cx="8.4" cy="15.6" r="1.4" fill="currentColor" stroke="none"/></symbol>
@@ -102,6 +103,7 @@
     <button class="zavrit" id="eu-zavrit" type="button" aria-label="{{euZavrit}}" data-t-aria-label="euZavrit"><svg aria-hidden="true"><use href="#i-krizek"/></svg></button>
     <div class="eu-jazyky" id="eu-jazyky"></div>
    </div>
+   <div class="srovnani-vyzva sklo" id="srovnani-vyzva" hidden role="status"><svg aria-hidden="true"><use href="#i-porovnat"/></svg><span id="sv-text"></span><button type="button" id="sv-zrusit" data-t="porovnatZrusit">{{porovnatZrusit}}</button></div>
    <div class="zeme-okno sklo" id="zeme-okno" hidden></div>
    <div class="bublina-bod" id="bublina-bod" hidden></div>
    <div class="vypadek" id="vypadek" hidden>
@@ -131,6 +133,7 @@
     <p class="stav" id="k-stav" hidden></p>
     <p class="zkopirovano" id="k-zkopirovano" role="status" hidden></p>
     <div class="k-stitky" id="k-stitky"></div>
+  <button class="k-porovnat" id="k-porovnat" type="button"><svg aria-hidden="true"><use href="#i-porovnat"/></svg><span data-t="porovnat">{{porovnat}}</span></button>
     <div class="k-telo" id="k-telo"></div>
    </article>
   </section>
