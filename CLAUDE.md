@@ -273,9 +273,15 @@ Dřívější náhledový artefakt https://claude.ai/artifact/XS67Gsv9d4y2pMu7UW
   Uživatel zamítl: plakátové ploché ilustrace v barvě rodiny („nelíbí“), satelitní snímky („nic se nepozná“)
   a nakonec i skutečné fotky z Wikimedia Commons (automatický výběr přes Wikidata dával mapy, vlajky,
   cizí místa a u lakotštiny Mount Rushmore; uživatel práci zastavil). Památky a lidi na pohlednice nekreslit.
-  **Další krok (přání uživatele 24. 9. 2026):** sousední země nesmí mít stejný obrázek („Německo a Francie nemohou mít
+  **Přání uživatele 24. 9. 2026:** sousední země nesmí mít stejný obrázek („Německo a Francie nemohou mít
   ten samý“), obrázků má být aspoň trojnásobek a mají nést **architektonické znaky země** – typickou lidovou
   a městskou stavbu (hrázděné domy, břidlicové střechy, pagody, mešitové kopule…), ne konkrétní památku.
+  Postup po světadílech, po každém galerie k připomínkám. **Evropa hotová** (47 jazyků, každý jiný obrázek, druhy
+  pojmenované podle kraje: `porynsko`, `vinice`, `toskansko`, `tatry`, `maramures`, `laponsko`…). Stavby kreslí
+  knihovna v akvarely.js: `dum` (typy sedlo, valba, stit, stupne, plocha, dosky; hrázdění, okenice, komín),
+  `kostel` (věže jehlan, barok, ctverec, kampanila, stupne, dreveny), `cibule`, `byzant`, `kyklady`, `hrad`,
+  `mlyn`, `majak`, `horreo`, `kozolec`, `seno`, `studna`, `capi`, `kravy`, `portikus`; `vesnice` řadí domy odzadu.
+  Zbývá: Kavkaz a Turecko (ka, hy, az, ce, os, ab, ku, tr, he stále sdílejí), Asie, Afrika, Amerika, Oceánie.
   Světlé barvy (sníh, domy, křída) se v akvarelu nesmí násobit, jinak zmizí (`svetla()`: všechny složky ≥ 0xE0).
   **Perokresbu / rytinu uživatel zamítl** („je na nic“) a chtěl akvarely „daleko jemnější, detailnější, propracovanější“
   (24. 9. 2026). Proto: hory mají rozeklaný obrys (`clenit`), stinnou stranu za žebrem od vrcholu až do sedla, žlaby
