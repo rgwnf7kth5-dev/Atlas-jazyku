@@ -62,6 +62,8 @@ if (pd.uzly.length !== pd.nad.length) chyby.push("data/podrobnosti.json: strom p
       if (!j[l] || !j[l][k]) chyby.push(`data/vymyslene.json: „${j.id}“ nemá ${l}.${k}`);
   }
   for (const id of Object.keys(v.stopy || {})) if (!ids.size || !jazyky.some(x => x.id === id)) chyby.push(`data/vymyslene.json: stopa u neznámého jazyka „${id}“`); }
+{ const nareci = json("data/nareci.json"), jmena = new Set(Object.values(nareci).join("|").split("|"));   // nářečí a jejich české názvy
+  for (const k of Object.keys(json("data/nareci-cs.json"))) if (!k.startsWith("_") && !jmena.has(k)) chyby.push(`data/nareci-cs.json: nářečí „${k}“ v Glottologu není`); }
 { const kody = new Set(glottolog.body.map(b => b[6]));   // opravy poloh jen pro tečky, které v Glottologu jsou
   for (const [k, o] of Object.entries(json("data/polohy-opravy.json"))) {
     if (k.startsWith("_")) continue;

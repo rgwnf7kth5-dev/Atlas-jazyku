@@ -77,7 +77,8 @@ const sourozenci = new Map();                     // skupina → tečky, které 
 for (let i = 0; i < POCET_B; i++) {
   const lat = B[i][2] * R;
   bLon[i] = B[i][1] * R; bSinLat[i] = Math.sin(lat); bCosLat[i] = Math.cos(lat);
-  bHledat[i] = bezDiakritiky(B[i][0] + " " + (radek(i)[9] || ""));
+  const nar = PD.nareci[i] ? PD.nareci[i].split("|") : [];          // hledání najde jazyk i podle jeho nářečí
+  bHledat[i] = bezDiakritiky(B[i][0] + " " + (radek(i)[9] || "") + " " + nar.join(" ") + " " + nar.map(function(n){ return PD.nareciCs[n] || ""; }).join(" "));
   const sk = radek(i)[2];
   if (sk >= 0) { if (!sourozenci.has(sk)) sourozenci.set(sk, []); sourozenci.get(sk).push(i); }
 }
@@ -231,7 +232,7 @@ function postavPolici(filtr){
   /* celý rejstřík: jazyky z atlasu jako dlaždice s pozdravem, ostatní tečky menší; kreslí se po dávkách */
   const polozky = [];
   JAZYKY.forEach(function(j){
-    if (atlasSkryty(j) || (hledane && j.hledat.indexOf(hledane) === -1)) return;
+    if (atlasSkryty(j) || (hledane && j.hledat.indexOf(hledane) === -1 && !(BOD_ATLASU[j.id] >= 0 && bHledat[BOD_ATLASU[j.id]].indexOf(hledane) !== -1))) return;
     polozky.push({j: j, jm: j.n, rod: RODINA_ATLASU[j.id], mm: OBLAST_ATLASU[j.id]});
   });
   for (let i = 0; i < POCET_B; i++) {
@@ -1665,7 +1666,7 @@ function ukazKartu(j){
     if (globusOk) pribuzni.appendChild(prvek("p", "pozn", tx("pribuzniOblouky")));
   }
   zalozky([
-    {nazev: T.zalozkaZajimavost, uzly: [fakt, kde]},
+    {nazev: T.zalozkaZajimavost, uzly: [fakt, kde, oddilNareci(BOD_ATLASU[j.id])]},
     {nazev: T.vitalita, uzly: [stupenJ >= 0 ? oddilVitality(stupenJ, znakAtlas) : null]},
     {nazev: T.zalozkaPribuzni, uzly: [pribuzni, tlacitkoRodokmenu(BOD_ATLASU[j.id])]}
   ]);
@@ -1686,6 +1687,17 @@ function prvek(tag, trida, text){
   if (trida) e.className = trida;
   if (text != null) e.textContent = text;
   return e;
+}
+/* nářečí jazyka podle Glottologu (na glóbu nemají vlastní tečku); česky jen tam, kde máme překlad */
+function oddilNareci(i){
+  if (!(i >= 0) || !PD.nareci[i]) return null;
+  const jmena = PD.nareci[i].split("|").map(function(n){ return T.lang === "cs" && PD.nareciCs[n] ? PD.nareciCs[n] : n; });
+  const o = oddil(T.nareci + " (" + cislo(jmena.length) + ")"), ul = prvek("ul", "staty");
+  jmena.slice(0, 24).forEach(function(n){ ul.appendChild(prvek("li", null, n)); });
+  if (jmena.length > 24) ul.appendChild(prvek("li", "vic", t("aDalsich", {n: jmena.length - 24})));
+  o.appendChild(ul);
+  o.appendChild(prvek("p", "pozn", T.nareciPozn));
+  return o;
 }
 function oddil(nadpisText){ const o = prvek("section"); o.appendChild(prvek("h3", null, nadpisText)); return o; }
 function lidi(n){                  /* počet lidí: malá čísla přesně, velká zaokrouhleně, ale ne hrubě */
@@ -1738,6 +1750,7 @@ function ukazKartuBodu(i){
     if (staty.length > 12) ul.appendChild(prvek("li", "vic", t("aDalsich", {n: staty.length - 12})));
     o.appendChild(ul); prehled.push(o);
   }
+  const narO = oddilNareci(i); if (narO) prehled.push(narO);
   if (wdm) {
     const o = oddil(znak ? T.znakuje : T.mluvci);
     o.appendChild(prvek("p", null, t("mluvciHodnota", {n: lidi(wdm[0])})));

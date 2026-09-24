@@ -77,6 +77,10 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
   (`BEZ_RODU` v build.mjs → `REJSTRIK.nr`). Jazyky v nich spolu příbuzné nejsou, proto nemají oblouky k „příbuzným“,
   rodokmen ani společného předka ve srovnání; karta místo toho vysvětlí, proč do žádné rodiny nepatří.
   (Uživatel narazil na esperanto s oblouky k interslovanštině a znakovému jazyku na Šalamounových ostrovech.)
+- **Nářečí** (dotaz z Twitteru: „proč bavorština a ne hanáčtina?“): tečky jsou jen jazyky Glottologu, nářečí ne.
+  Jejich jména jsou v `data/nareci.json` (`node scripts/nareci.mjs`), karta jazyka je vypíše (`oddilNareci`,
+  nejvýš 24) s poznámkou, proč nemají tečku, a hledání přes ně najde jejich jazyk („hanáčtina“ → čeština).
+  České názvy nářečí češtiny jsou v `data/nareci-cs.json` (validace hlídá, že nářečí v Glottologu existuje).
 - **Opravy poloh** jsou v `data/polohy-opravy.json` (glottocode → poloha a důvod), build je použije místo
   Glottologu. `"poloha": null` tečku z glóbu schová (`REJSTRIK.bp`, v aplikaci `BEZ_POLOHY`): jazyk zůstane
   v seznamu, hledání i srovnání, ale nemá tečku, zaměřovač ani let glóbu, karta místo států řekne proč.

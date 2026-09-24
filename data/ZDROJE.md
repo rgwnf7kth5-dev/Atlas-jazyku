@@ -3,6 +3,7 @@
 | Soubor | Co obsahuje | Zdroj | Licence |
 | --- | --- | --- | --- |
 | `glottolog.json` | 7 967 jazyků světa se souřadnicemi a rodinou (tečky na glóbu) | [Glottolog](https://glottolog.org), Hammarström, Forkel, Haspelmath, Bank; Max Planck Institute for Evolutionary Anthropology. Vyrobeno skriptem `scripts/glottolog.mjs` z `glottolog-cldf/cldf/languages.csv`. | CC BY 4.0 – **uvedení zdroje je povinné**, proto je v patičce stránky |
+| `nareci.json` | jména 13 706 nářečí u 3 122 jazyků (na kartě jazyka a v hledání) | [Glottolog](https://glottolog.org) `languages.csv` (úroveň „dialect“), vyrábí `scripts/nareci.mjs`; české názvy nářečí češtiny v `nareci-cs.json` jsou vlastní práce | CC BY 4.0 |
 | `podrobnosti.json` | podrobnosti k tečkám (vyrábí `scripts/podrobnosti.mjs`) | viz řádky níže | podle jednotlivých zdrojů |
 | ↳ vitalita, popsanost, příbuzenstvo, státy, nářečí | vitalita jazyka (AES = šestistupňová stupnice UNESCO, Moseley 2010; „probouzený“ podle komentáře Awakening/Reawakening z ElCat a Ethnologue), nejpodrobnější popis (MED), klasifikace | [Glottolog](https://glottolog.org) `glottolog-cldf/cldf/values.csv`, `languages.csv` | CC BY 4.0 |
 | ↳ stavba jazyka | pořadí slov (81A), tóny (13A), čaj (138A), počítání (131A), ruka a paže (129A), barvy (133A), rody (30A), pády (49A), zvláštní hlásky (19A) | [WALS Online](https://wals.info), Dryer & Haspelmath (eds.) 2013, Max Planck Institute for Evolutionary Anthropology; `cldf-datasets/wals` | CC BY 4.0 |

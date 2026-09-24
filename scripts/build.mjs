@@ -25,6 +25,7 @@ const RODINY_EN = { "Isolate": "isolate – no known relatives", "Sign Language"
 /* skupiny Glottologu, které nejsou jazykovou rodinou (jazyky v nich spolu nejsou příbuzné) */
 const BEZ_RODU = ["Artificial Language", "Mixed Language", "Pidgin", "Speech Register"];
 const opravyPoloh = json("data/polohy-opravy.json");
+const nareci = json("data/nareci.json");                 // jména nářečí z Glottologu (scripts/nareci.mjs)
 const WEB = "https://atlasoflanguages.netlify.app";   // adresa webu pro náhled při sdílení odkazu
 const ikona = cti("static/favicon.svg").trim();
 const escHtml = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -82,7 +83,8 @@ function sestav(lang, { odkazJinam, artefakt }) {
     .replace("/*__VYMYSLENE__*/null", () => doSkriptu(json("data/vymyslene.json")))
     .replace("/*__PODROBNOSTI__*/null", () => doSkriptu({ wals: podrobnosti.wals, uzly: podrobnosti.uzly, nad: podrobnosti.nad,
                                                           staty: podrobnosti.staty, udhr: podrobnosti.udhr, mapaStatu: podrobnosti.mapaStatu,
-                                                          radky: podrobnosti.radky, vetve: json("data/glottolog-branches.cs.json") }));
+                                                          radky: podrobnosti.radky, vetve: json("data/glottolog-branches.cs.json"),
+                                                          nareci: glottolog.body.map(b => nareci[b[6]] || ""), nareciCs: json("data/nareci-cs.json") }));
   const skripty = knihovny.map(k => `<script>${k}</script>`).join("\n") + `\n<script>${skript}</script>`;
 
   const hlavicka =
