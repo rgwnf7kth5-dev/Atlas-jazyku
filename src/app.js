@@ -271,8 +271,7 @@ function postavPolici(filtr){
       const cta = prvek("span", "jd-akce", T.jazykDneUkaz);
       cta.insertAdjacentHTML("beforeend", '<svg aria-hidden="true"><use href="#i-dal"/></svg>');
       tl.appendChild(cta);
-      const malba = malbaJazyka(d.id);
-      if (malba) { const m = prvek("span", "jd-malba"); m.innerHTML = malba; tl.insertBefore(m, tl.firstChild); tl.classList.add("s-malbou"); }
+      if (KRAJINY[d.id] && typeof AKVARELY !== "undefined") { const m = prvek("span", "jd-malba"); vlozMalbu(m, d.id); tl.insertBefore(m, tl.firstChild); tl.classList.add("s-malbou"); }
       tl.addEventListener("click", function(){ vyber(d.id); });
       seznam.appendChild(tl);
     }
@@ -570,11 +569,43 @@ const RELIEF = /*__RELIEF__*/null;
 /* krajina na pohlednici jazyka (data/krajiny.json, malují src/akvarely.js) */
 const KRAJINY = /*__KRAJINY__*/null || {};
 function malbaJazyka(id){ return KRAJINY[id] && typeof AKVARELY !== "undefined" ? AKVARELY.obraz(id, KRAJINY[id]) : ""; }
+/* Malba je SVG s desítkami filtrů. Vložená přímo do stránky se při každém pohybu glóbu počítala znovu a animace
+   trhala (uživatel 24. 9. 2026: „všechno je trhané, pomalé“). Proto se jednou vykreslí do bitmapy a ukazuje se
+   jen obrázek; když by převod selhal, zůstane obrázek ze SVG. */
+const MALBY = {};
+function malbaObrazek(id){
+  if (MALBY[id]) return MALBY[id];
+  const svg = malbaJazyka(id);
+  if (!svg) return null;
+  const zdroj = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svg.replace("<svg ", '<svg width="800" height="500" '));
+  return (MALBY[id] = new Promise(function(hotovo){
+    const obr = new Image();
+    obr.onload = function(){
+      try {
+        const c = document.createElement("canvas"); c.width = 800; c.height = 500;
+        c.getContext("2d").drawImage(obr, 0, 0, 800, 500);
+        hotovo(c.toDataURL("image/jpeg", .9));
+      } catch (e) { hotovo(zdroj); }
+    };
+    obr.onerror = function(){ hotovo(null); };
+    obr.src = zdroj;
+  }));
+}
+/* Převod jedné malby blokuje stránku (desetiny sekundy), proto se nedělá během letu glóbu, vlny území a oblouků:
+   počká se, až animace doběhne a prohlížeč má volno. Hotová malba se pak jen plynule objeví. */
+function vlozMalbu(el, id){
+  const img = document.createElement("img");
+  img.alt = ""; img.decoding = "async"; img.setAttribute("aria-hidden", "true");
+  el.replaceChildren(img);
+  const ukaz = function(){ const cesta = malbaObrazek(id); if (cesta) cesta.then(function(url){ if (url && img.isConnected) { img.onload = function(){ img.classList.add("ukazana"); }; img.src = url; } }); };
+  if (MALBY[id]) ukaz();
+  else setTimeout(function(){ if (!img.isConnected) return; if (window.requestIdleCallback) requestIdleCallback(ukaz, {timeout: 1500}); else ukaz(); }, 2200);
+}
 function malbaNaKarte(id){
-  const svg = id ? malbaJazyka(id) : "", el = $("k-malba");
-  kartaHero.classList.toggle("s-malbou", !!svg);
-  el.hidden = !svg;
-  if (el.dataset.id !== (id || "")) { el.innerHTML = svg; el.dataset.id = id || ""; }
+  const ma = !!(id && KRAJINY[id] && typeof AKVARELY !== "undefined"), el = $("k-malba");
+  kartaHero.classList.toggle("s-malbou", ma);
+  el.hidden = !ma;
+  if (el.dataset.id !== (id || "")) { if (ma) vlozMalbu(el, id); else el.replaceChildren(); el.dataset.id = id || ""; }
 }
 const relief = {platno: null, gl: null, u: {}, hotovo: false, sirkaTex: 1};
 function pripravRelief(){
