@@ -101,7 +101,14 @@
      <p class="vp-zdroj" data-t="vitalitaZdroj">{{vitalitaZdroj}}</p>
     </div>
    </div>
-   <p class="napoveda" id="napoveda">{{napovedaStart}}</p>
+   <div class="napoveda" id="napoveda" hidden role="note">
+    <ol>
+     <li data-krok="zatoc"><i></i><span><b data-t="krokZatoc">{{krokZatoc}}</b> <span data-t="krokZatocJak">{{krokZatocJak}}</span></span></li>
+     <li data-krok="pribliz"><i></i><span><b data-t="krokPribliz">{{krokPribliz}}</b> <span data-t="krokPriblizJak">{{krokPriblizJak}}</span></span></li>
+     <li data-krok="klikni"><i></i><span><b data-t="krokKlikni">{{krokKlikni}}</b> <span data-t="krokKlikniJak">{{krokKlikniJak}}</span></span></li>
+    </ol>
+    <button class="napoveda-x" id="napoveda-x" type="button" aria-label="{{napovedaZavrit}}" data-t-aria-label="napovedaZavrit"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></button>
+   </div>
    <div class="eu-panel sklo" id="eu-panel" hidden role="dialog" aria-labelledby="eu-nadpis">
     <svg class="eu-vlajka" viewBox="0 0 300 200" role="img" aria-label="{{euVlajka}}" data-t-aria-label="euVlajka"><rect width="300" height="200" rx="10" fill="#003399"/><g fill="#FFCC00"><path class="eu-h" style="--i:0" d="M150.0,22.2L152.5,29.9L160.6,29.9L154.0,34.6L156.5,42.3L150.0,37.5L143.5,42.3L146.0,34.6L139.4,29.9L147.5,29.9Z"/><path class="eu-h" style="--i:1" d="M183.3,31.1L185.8,38.8L193.9,38.8L187.4,43.5L189.9,51.2L183.3,46.5L176.8,51.2L179.3,43.5L172.8,38.8L180.9,38.8Z"/><path class="eu-h" style="--i:2" d="M207.8,55.6L210.3,63.2L218.3,63.2L211.8,68.0L214.3,75.6L207.8,70.9L201.2,75.6L203.7,68.0L197.2,63.2L205.3,63.2Z"/><path class="eu-h" style="--i:3" d="M216.7,88.9L219.2,96.6L227.3,96.6L220.7,101.3L223.2,109.0L216.7,104.2L210.2,109.0L212.7,101.3L206.1,96.6L214.2,96.6Z"/><path class="eu-h" style="--i:4" d="M207.8,122.2L210.3,129.9L218.3,129.9L211.8,134.7L214.3,142.3L207.8,137.6L201.2,142.3L203.7,134.7L197.2,129.9L205.3,129.9Z"/><path class="eu-h" style="--i:5" d="M183.3,146.7L185.8,154.3L193.9,154.3L187.4,159.1L189.9,166.7L183.3,162.0L176.8,166.7L179.3,159.1L172.8,154.3L180.9,154.3Z"/><path class="eu-h" style="--i:6" d="M150.0,155.6L152.5,163.3L160.6,163.3L154.0,168.0L156.5,175.7L150.0,170.9L143.5,175.7L146.0,168.0L139.4,163.3L147.5,163.3Z"/><path class="eu-h" style="--i:7" d="M116.7,146.7L119.1,154.3L127.2,154.3L120.7,159.1L123.2,166.7L116.7,162.0L110.1,166.7L112.6,159.1L106.1,154.3L114.2,154.3Z"/><path class="eu-h" style="--i:8" d="M92.2,122.3L94.7,129.9L102.8,129.9L96.3,134.7L98.8,142.3L92.2,137.6L85.7,142.3L88.2,134.7L81.7,129.9L89.7,129.9Z"/><path class="eu-h" style="--i:9" d="M83.3,88.9L85.8,96.6L93.9,96.6L87.3,101.3L89.8,109.0L83.3,104.2L76.8,109.0L79.3,101.3L72.7,96.6L80.8,96.6Z"/><path class="eu-h" style="--i:10" d="M92.2,55.5L94.7,63.2L102.8,63.2L96.3,68.0L98.8,75.6L92.2,70.9L85.7,75.6L88.2,68.0L81.7,63.2L89.7,63.2Z"/><path class="eu-h" style="--i:11" d="M116.6,31.1L119.1,38.8L127.2,38.8L120.7,43.5L123.2,51.2L116.6,46.5L110.1,51.2L112.6,43.5L106.1,38.8L114.2,38.8Z"/></g></svg>
     <div class="eu-text"><strong id="eu-nadpis" data-t="euNadpis">{{euNadpis}}</strong><p data-t="euText">{{euText}}</p></div>
@@ -116,7 +123,7 @@
     <span data-t="vypadekText">{{vypadekText}}</span>
    </div>
    <p class="legenda" id="legenda"><i></i><span data-t="legenda">{{legenda}}</span></p>
-   <div class="ukazatel" id="ukazatel" hidden aria-hidden="true"><i></i><span data-t="klikniNaMe">{{klikniNaMe}}</span></div>
+   <div class="ukazatel" id="ukazatel" hidden aria-hidden="true"><i></i><i></i></div>
 
    <article class="karta sklo" id="karta" hidden aria-live="polite">
     <button class="uchyt" id="k-uchyt" type="button" aria-label="{{kartaVic}}" data-t-aria-label="kartaVic"><i></i></button>

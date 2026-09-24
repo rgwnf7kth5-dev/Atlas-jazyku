@@ -120,9 +120,13 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
   na úchyt přepíná lištu a běžnou velikost. Tažení glóbu nebo stromu a otevření rodokmenu kartu samo uklidí
   do lišty (`uklidKartu`). Lišta je pod glóbem, pod 480 px jen ikony. Po výběru stránka odroluje nahoru ke glóbu.
   Rodokmen je na telefonu užší a protažený nahoru (elipsa `m.sx`/`m.sy`, `OKRAJ` 0,2 π), jinak byl moc široký.
-- **Úvod**: glóbus přiletí z vesmíru (2,2 s), pak ukazatel „Klikni na mě!“ ukáže na jazyk (česky na češtinu,
-  anglicky na angličtinu). Po prvním výběru se už nikdy neukáže (`atlas-uvitano`). Při
-  `prefers-reduced-motion` ani s odkazem `#…` přílet neběží (ukazatel se ukáže hned, pokud nic není vybrané).
+- **Úvod**: glóbus přiletí z vesmíru (2,2 s). Pak se **jen poprvé** ukáže nápověda o třech krocích (Zatoč – Přibliž –
+  Klikni, `#napoveda`); hotový krok se sám odškrtne (tažení, kolečko / dva prsty / tlačítka zoomu, klik na tečku
+  nebo zemi) a po všech třech, po prvním výběru jazyka nebo křížkem nápověda zmizí navždy (`atlas-napoveda`).
+  Zároveň jedna tečka (česky čeština, anglicky angličtina) tiše pulzuje dvěma tenkými kroužky, dokud si člověk
+  poprvé nevybere jazyk (`atlas-uvitano`). Uživatel (24. 9. 2026): trvalý text „Chytni glóbus…“ a žlutá bublina
+  „Klikni na mě!“ po chvíli překážely a web působil nedodělaně – **žádnou trvalou instrukci na glóbus nevracet**,
+  ani do legendy (z ní „Klikni na něj“ zmizelo). Při `prefers-reduced-motion` ani s odkazem `#…` přílet neběží.
 - **Rodokmen** (tlačítko v liště, 24. 9. 2026): místo glóbu se na plátně `#strom` ukáže strom jedné rodiny
   z Glottologu (`PD.nad`, `PD.uzly`) jako **plochý vějíř**: kořen (společný předek) dole uprostřed, větve se
   rozbíhají nahoru do půlkruhu, vzdálenost od kořene = hloubka ve stromu, úhel = pořadí listů. Hrany jsou lomené
@@ -174,6 +178,15 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
   zůstává null (žádná tečka, rodina, vitalita ani srovnání). Stopy k Bráně jsou na kartách finštiny a velštiny
   (`stopy`). Zajímavosti musí být pravdivé jako u skutečných jazyků.
 - Pořád platí: žádný satelit, prstenec, rohy zaměřovače ani sbírka pozdravů.
+- **Přehled všech rodin nad rodokmenem – odloženo** (24. 9. 2026). Kruhová „myšlenková mapa“ (rodiny v bublinách
+  kolem středu, svítící tečky, tučné popisky, kroucené čáry) uživatel zamítl: „strašně ošklivé, čiší z toho AI“.
+  Nenavrhovat znovu. Dva další náhledy uživatel viděl a nechal zatím ležet: **stará tištěná mapa** (rodokmen jako
+  v knižním atlasu: EB Garamond, tenké lomené čáry, rodiny ručně podbarvené, větve s počty a jazyky atlasu kurzívou,
+  menší rodiny ve sloupcích, poznámky pod čarou) a **výseče** (sunburst: šířka výseče = počet jazyků, vnitřní prstenec
+  rodiny, vnější větve, indoevropská nahoře, jazyky atlasu paprskovitě kolem; na telefonu kruh + seznam rodin).
+  Větve pro přehled: rozbalovat uzel, který nese přes 80 % rodiny (jinak je u indoevropské jediná větev
+  „Classical Indo-European“). Náhledy kresli **písmy atlasu** (stáhnout z Google Fonts a vložit přes `@font-face`);
+  první náhled se omylem vykreslil náhradním systémovým písmem a vypadal lacině.
 
 ## Podrobnosti k tečkám
 

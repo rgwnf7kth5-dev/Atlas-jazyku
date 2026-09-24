@@ -1029,19 +1029,36 @@ function posunDok(){
   const x = Math.round(Math.max(w / 2 + 12, Math.min(sirka - w / 2 - 12, sirka / 2 + posun)));
   if (x !== dokX) { dokX = x; scena.style.setProperty("--dok-x", x + "px"); }
 }
-/* „Klikni na mě!“ u jedné tečky, dokud si člověk poprvé nevybere jazyk */
-const ukazatel = $("ukazatel");
+/* Nápověda jen poprvé: tři kroky (zatoč, přibliž, klikni), které se odškrtávají, a pak zmizí navždy.
+   Místo bubliny „Klikni na mě“ jedna tečka slabě pulzuje, dokud si člověk poprvé nevybere jazyk. */
+const ukazatel = $("ukazatel"), napoveda = $("napoveda");
 let ukazatelBod = -1;
+const pamet = function(k){ try { return localStorage.getItem(k); } catch (e) { return null; } };
+const zapamatuj = function(k){ try { localStorage.setItem(k, "1"); } catch (e) {} };
 function ukazUkazatel(){
-  let uz = null; try { uz = localStorage.getItem("atlas-uvitano"); } catch (e) {}
-  if (uz || vybrany || !globusOk) return;
+  if (pamet("atlas-uvitano") || vybrany || !globusOk) return;
   ukazatelBod = BOD_ATLASU[T.lang === "en" ? "en" : "cs"];
   potrebaKresli = true;
+  if (!pamet("atlas-napoveda")) napoveda.hidden = false;
 }
 function schovejUkazatel(trvale){
   ukazatelBod = -1; ukazatel.hidden = true;
-  if (trvale) { try { localStorage.setItem("atlas-uvitano", "1"); } catch (e) {} }
+  if (trvale) { zapamatuj("atlas-uvitano"); krokNapovedy("klikni"); zavriNapovedu(); }
 }
+function krokNapovedy(krok){
+  if (napoveda.hidden) return;
+  const li = napoveda.querySelector('[data-krok="' + krok + '"]');
+  if (!li || li.classList.contains("hotovo")) return;
+  li.classList.add("hotovo");
+  if (napoveda.querySelectorAll("li:not(.hotovo)").length === 0) zavriNapovedu();
+}
+function zavriNapovedu(){
+  if (napoveda.hidden || napoveda.classList.contains("mizi")) return;
+  zapamatuj("atlas-napoveda");
+  napoveda.classList.add("mizi");            // ať je chvilku vidět poslední odškrtnutí
+  setTimeout(function(){ napoveda.hidden = true; napoveda.classList.remove("mizi"); }, bezPohybu.matches ? 0 : 1100);
+}
+$("napoveda-x").addEventListener("click", zavriNapovedu);
 function polohaUkazatele(){
   if (ukazatelBod < 0) return;
   if (!bVid[ukazatelBod]) { ukazatel.hidden = true; return; }
@@ -1114,11 +1131,12 @@ if (globusOk) {
   });
   platno.addEventListener("pointermove", function(e){
     if (prsty.has(e.pointerId)) prsty.set(e.pointerId, {x: e.clientX, y: e.clientY});
-    if (pinch && prsty.size >= 2) { const d = vzdalenostPrstu(); if (d > 0 && pinch.d > 0) nastavZoom(pinch.zoom * d / pinch.d); return; }
+    if (pinch && prsty.size >= 2) { const d = vzdalenostPrstu(); if (d > 0 && pinch.d > 0) { nastavZoom(pinch.zoom * d / pinch.d); krokNapovedy("pribliz"); } return; }
     ozivit();
     if (!start) { if (!prsty.size) najedNaBod(e); return; }
     const dx = e.clientX - start.x, dy = e.clientY - start.y;
     start.posun = Math.max(start.posun, Math.abs(dx) + Math.abs(dy));
+    if (start.posun > 40) krokNapovedy("zatoc");
     const k = 0.32 * (320 / Math.max(160, polomer));
     rot = [start.rot[0] + dx * k, Math.max(-88, Math.min(88, start.rot[1] - dy * k))];
     potrebaKresli = true;
@@ -1142,19 +1160,20 @@ if (globusOk) {
     e.preventDefault(); ozivit();
     const d = e.deltaMode === 1 ? e.deltaY * 16 : e.deltaMode === 2 ? e.deltaY * 400 : e.deltaY;
     nastavZoom(zoom * Math.exp(-d * 0.0015));
+    krokNapovedy("pribliz");
   }, {passive: false});
   platno.addEventListener("dblclick", function(e){
     const r = platno.getBoundingClientRect();
     const bod = proj.invert([e.clientX - r.left, e.clientY - r.top]);
-    if (bod && !isNaN(bod[0])) letKe(bod, zoom * 2);
+    if (bod && !isNaN(bod[0])) { letKe(bod, zoom * 2); krokNapovedy("pribliz"); }
   });
-  $("tl-priblizi").addEventListener("click", function(){ plynulyZoom(zoom * 1.6); });
-  $("tl-oddal").addEventListener("click", function(){ plynulyZoom(zoom / 1.6); });
+  $("tl-priblizi").addEventListener("click", function(){ plynulyZoom(zoom * 1.6); krokNapovedy("pribliz"); });
+  $("tl-oddal").addEventListener("click", function(){ plynulyZoom(zoom / 1.6); krokNapovedy("pribliz"); });
   document.addEventListener("keydown", function(e){
     const c = e.target;
     if (c && (c.tagName === "INPUT" || c.tagName === "TEXTAREA")) return;
-    if (e.key === "+" || e.key === "=") plynulyZoom(zoom * 1.6);
-    else if (e.key === "-" || e.key === "_") plynulyZoom(zoom / 1.6);
+    if (e.key === "+" || e.key === "=") { plynulyZoom(zoom * 1.6); krokNapovedy("pribliz"); }
+    else if (e.key === "-" || e.key === "_") { plynulyZoom(zoom / 1.6); krokNapovedy("pribliz"); }
   });
 }
 
@@ -1241,6 +1260,7 @@ function klikDoMapy(e){
   ukazOknoZeme(nalezena);
   okno.hidden = false;
   umisti(okno, e);
+  krokNapovedy("klikni");
 }
 function ukazOknoZeme(f){
   const zde = (V_ZEMI[f.properties.name] || []).filter(function(j){ return !atlasSkryty(j); });
@@ -1283,7 +1303,6 @@ function poVyberu(cilZoom){
   okno.hidden = true; bublinaBod.hidden = true;
   if (globusOk) { spoctiPosun(); if (!vybrany.bezPolohy) letKe(vybrany.stred, cilZoom); }   // jazyk bez polohy: glóbus zůstane
   $("tl-cely").hidden = false;
-  $("napoveda").textContent = tx("napovedaVyber");
   if (strom) strom.poVyberu();
 }
 function nastavOtaceni(zapnout){
@@ -1332,7 +1351,6 @@ function odznac(){
   karta.hidden = true; delete karta.dataset.jazyk; $("tl-cely").hidden = true;
   if (globusOk) { obnovPriznaky(); spoctiPosun(); plynulyZoom(1); }
   okno.hidden = true; bublinaBod.hidden = true;
-  $("napoveda").textContent = T.napovedaStart;
   oznacTlacitka(null);
   if (strom) strom.zavrenaKarta();
 }
@@ -1905,7 +1923,6 @@ function obnovTexty(){
   else if (vybrany && vybrany.typ === "rejstrik") ukazKartuBodu(vybrany.i);
   if (srovnani) ukazSrovnani();
   if (cekaNaDruhy) $("sv-text").textContent = t("porovnatVyzva", {a: jmenoL(cekaNaDruhy)});
-  $("napoveda").textContent = vybrany ? tx("napovedaVyber") : T.napovedaStart;
   if (strom) strom.texty();
   if (eu) postavEuPanel();
   if (brana) { postavBranu(); if (vymysleny) ukazVymysleny(vymysleny); }

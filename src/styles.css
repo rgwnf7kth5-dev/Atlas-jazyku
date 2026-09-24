@@ -268,7 +268,24 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
 .napoveda,.legenda{position:absolute; z-index:5; margin:0; font-size:.76rem; color:var(--text2); pointer-events:none;
   padding:6px 12px; border-radius:14px; background:var(--sklo-tl); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
   border:1px solid var(--linka)}
-.napoveda{left:44px; top:16px; max-width:min(300px,50%)}
+/* nápověda jen poprvé: tři kroky, hotový se odškrtne */
+.napoveda{left:44px; top:16px; max-width:min(330px,50%); padding:11px 36px 11px 12px; border-radius:16px; pointer-events:auto; font-size:.8rem;
+  transition:opacity .5s, transform .5s}
+.napoveda.mizi{opacity:0; transform:translateY(-6px); transition-delay:.6s}
+.napoveda ol{list-style:none; margin:0; padding:0; display:grid; gap:8px; counter-reset:krok}
+.napoveda li{display:flex; align-items:center; gap:10px; line-height:1.3; counter-increment:krok}
+.napoveda li i{flex:none; width:21px; height:21px; border-radius:50%; border:1.5px solid color-mix(in srgb,var(--text2) 60%,transparent); display:grid; place-items:center;
+  font:600 .68rem/1 var(--pismo-data); font-style:normal; color:var(--text); transition:background .3s, border-color .3s, color .3s}
+.napoveda li i::before{content:counter(krok)}
+.napoveda li b{color:var(--text); font-weight:600}
+.napoveda li > span{transition:opacity .3s}
+.napoveda li.hotovo i{background:var(--cyan); border-color:var(--cyan); color:var(--na-cyan)}
+.napoveda li.hotovo i::before{content:"\2713"}
+.napoveda li.hotovo > span{opacity:.5}
+.napoveda-x{position:absolute; top:7px; right:7px; width:24px; height:24px; padding:0; border:0; border-radius:8px; background:none;
+  color:var(--text2); cursor:pointer; display:grid; place-items:center}
+.napoveda-x:hover{color:var(--text); background:var(--plocha)}
+.napoveda-x svg{width:12px; height:12px}
 .legenda{right:16px; top:16px; display:flex; align-items:center; gap:8px; max-width:min(330px,40%)}
 .scena:has(.karta:not([hidden])) .napoveda{display:none}
 .legenda i{width:7px;height:7px;border-radius:50%; background:var(--tecka-jazyk); box-shadow:0 0 8px var(--tecka-jazyk); flex:none}
@@ -382,14 +399,13 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
 .zpet svg{width:14px; height:14px}
 .panel-zobrazeni .vitalita-panel{width:auto; max-height:none; overflow:visible; padding:2px}
 
-/* „Klikni na mě“ při prvním otevření */
+/* při prvním otevření jedna tečka tiše pulzuje: dá se na ni kliknout (dřív žlutá bublina „Klikni na mě“) */
 .ukazatel{position:absolute; z-index:5; left:0; top:0; pointer-events:none; width:0; height:0}
-.ukazatel i{position:absolute; left:-22px; top:-22px; width:44px; height:44px; border-radius:50%; border:2px solid var(--hvezda);
-  box-shadow:0 0 16px var(--hvezda); animation:pulz 1.6s ease-out infinite}
-.ukazatel span{position:absolute; left:26px; top:-14px; white-space:nowrap; font-weight:700; font-size:.82rem; padding:5px 12px; border-radius:999px;
-  background:var(--hvezda); color:#1A1200; box-shadow:0 6px 20px -6px rgba(0,0,0,.6); animation:houpani 1.6s ease-in-out infinite}
-@keyframes pulz{0%{transform:scale(.45); opacity:1} 100%{transform:scale(1.5); opacity:0}}
-@keyframes houpani{50%{transform:translateX(5px)}}
+.ukazatel i{position:absolute; left:-15px; top:-15px; width:30px; height:30px; border-radius:50%; border:1.5px solid var(--text);
+  opacity:0; animation:pulz 2.8s ease-out infinite}
+.ukazatel i + i{animation-delay:1.4s}
+@keyframes pulz{0%{transform:scale(.3); opacity:.75} 100%{transform:scale(1.2); opacity:0}}
+@media (prefers-reduced-motion:reduce){ .ukazatel i{animation:none !important; opacity:.5; transform:scale(.7)} .ukazatel i + i{display:none} }
 
 /* ---------- podrobnosti o jazyce ze světového rejstříku ---------- */
 .podrobnosti{display:flex; flex-direction:column; gap:13px; margin-bottom:4px}
@@ -529,7 +545,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
   .scena .globus-misto{width:100%; aspect-ratio:1/1; max-height:58vh; flex:none}
   .hud{inset:10px; bottom:auto; height:calc(min(100vw - 16px, 58vh) - 20px)}
   .hud .souradnice{top:3px; bottom:auto}
-    .napoveda{display:none}
+    .napoveda{position:relative; left:auto; top:auto; max-width:none; margin:0 12px 10px}
   .legenda{position:static; transform:none; max-width:none; margin:0 12px 10px; justify-content:center; text-align:center; align-self:center}
   .dok{position:relative; left:auto; bottom:auto; transform:none; align-self:center; margin:4px auto 10px; max-width:calc(100% - 16px)}
   .dok .tl{padding:8px 11px}
