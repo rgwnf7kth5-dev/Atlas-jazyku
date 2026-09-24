@@ -402,5 +402,15 @@
  "stromObe": "Ukázat obě v rodokmenu",
  "bezRodu": "{a} je {druh}. Nevznikl postupným vývojem z jednoho předka jako ostatní jazyky, a proto nepatří do žádné jazykové rodiny a nemá příbuzné.",
  "bezDomova": "Bez místa na mapě",
- "bezDomovaText": "{a} nevznikl na žádném místě – vymysleli ho lidé, aby se domluvili napříč zeměmi. Proto ho na glóbu nenajdeš, najdeš ho jen v seznamu."
+ "bezDomovaText": "{a} nevznikl na žádném místě – vymysleli ho lidé, aby se domluvili napříč zeměmi. Proto ho na glóbu nenajdeš, najdeš ho jen v seznamu.",
+ "branaNadpis": "✦ Brána do jiných světů",
+ "branaText": "Otevřelo ji heslo mellon – elfsky „přítel“. Tyhle jazyky nevznikly na Zemi, ale v knihách a filmech: vymysleli je spisovatelé a jazykovědci.",
+ "branaZpet": "Zpět na Zemi",
+ "branaZeme": "Země",
+ "branaZemePocet": "{n} skutečných jazyků",
+ "vymyslenyJazyk": "Vymyšlený jazyk",
+ "svet": "Svět",
+ "autorJazyka": "Vymyslel",
+ "vyznamPozdravu": "Co pozdrav znamená",
+ "zJinychSvetu": "✦ Z jiných světů"
 }

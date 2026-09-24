@@ -1,0 +1,219 @@
+{
+ "_popis": "Vymyšlené jazyky z knih a filmů – velikonoční vajíčko „mellon“. Nejsou na glóbu ani v běžném seznamu; ukážou se v Bráně do jiných světů a při hledání. Zajímavosti musí být pravdivé stejně jako u skutečných jazyků.",
+ "svety": [
+  {
+   "id": "qonos",
+   "barva": [
+    "#ff9a7a",
+    "#a3261b",
+    "#3a0a07"
+   ],
+   "cs": {
+    "nazev": "Qo'noS",
+    "popis": "Domovská planeta Klingonů ve Star Treku."
+   },
+   "en": {
+    "nazev": "Qo'noS",
+    "popis": "The home planet of the Klingons in Star Trek."
+   }
+  },
+  {
+   "id": "stredozem",
+   "barva": [
+    "#eef7b8",
+    "#5f9a3a",
+    "#1f3d19"
+   ],
+   "cs": {
+    "nazev": "Středozem",
+    "popis": "Svět Pána prstenů. Tolkien si ho představoval jako naši Zemi v dávné vymyšlené minulosti."
+   },
+   "en": {
+    "nazev": "Middle-earth",
+    "popis": "The world of The Lord of the Rings. Tolkien imagined it as our own Earth in an invented distant past."
+   }
+  },
+  {
+   "id": "pandora",
+   "barva": [
+    "#c4fff6",
+    "#1aa6a0",
+    "#0b3350"
+   ],
+   "cs": {
+    "nazev": "Pandora",
+    "popis": "Měsíc obří planety u hvězdy Alfa Centauri, domov Na'vijů z filmu Avatar."
+   },
+   "en": {
+    "nazev": "Pandora",
+    "popis": "A moon of a giant planet near the star Alpha Centauri, home of the Na'vi in the film Avatar."
+   }
+  },
+  {
+   "id": "essos",
+   "barva": [
+    "#ffe6a8",
+    "#c9803a",
+    "#4a2410"
+   ],
+   "cs": {
+    "nazev": "Essos",
+    "popis": "Světadíl ze světa Hry o trůny. Žijí tu Dothrakové a kdysi tu stála Valyrie."
+   },
+   "en": {
+    "nazev": "Essos",
+    "popis": "A continent in the world of Game of Thrones. The Dothraki live here, and Valyria once stood here."
+   }
+  }
+ ],
+ "jazyky": [
+  {
+   "id": "klingon",
+   "svet": "qonos",
+   "pozdrav": "nuqneH!",
+   "domaci": "tlhIngan Hol",
+   "autor": "Marc Okrand",
+   "cs": {
+    "nazev": "Klingonština",
+    "vyslovnost": "nuk-nech",
+    "dilo": "Star Trek (filmy)",
+    "vyznam": "Doslova „Co chceš?“ Klingoni se se zdvořilostmi nezdržují.",
+    "fakt": "Věty mají pořadí předmět – sloveso – podmět: místo „Pes hryže kost“ se řekne „Kost hryže pes“. Mezi jazyky na Zemi je takové pořadí velmi vzácné.",
+    "hledat": "klingon klingonstina star trek okrand"
+   },
+   "en": {
+    "nazev": "Klingon",
+    "vyslovnost": "NOOK-nekh",
+    "dilo": "Star Trek (films)",
+    "vyznam": "Literally “What do you want?” Klingons don't bother with politeness.",
+    "fakt": "Sentences go object – verb – subject: instead of “The dog chews the bone” you say “The bone chews the dog”. On Earth that word order is very rare.",
+    "hledat": "klingon star trek okrand"
+   }
+  },
+  {
+   "id": "quenya",
+   "svet": "stredozem",
+   "pozdrav": "Aiya!",
+   "domaci": "Quenya",
+   "autor": "J. R. R. Tolkien",
+   "cs": {
+    "nazev": "Quenijština",
+    "vyslovnost": "aja",
+    "dilo": "Pán prstenů (kniha)",
+    "vyznam": "„Buď zdráv!“ – jazyk vznešených elfů.",
+    "fakt": "Tolkien se při ní inspiroval hlavně finštinou. Říkal, že nejdřív vymýšlel jazyky a příběhy psal až proto, aby měly svět, ve kterém se jimi mluví.",
+    "hledat": "quenya quenijstina elf elfstina elfsky tolkien pan prstenu"
+   },
+   "en": {
+    "nazev": "Quenya",
+    "vyslovnost": "EYE-ya",
+    "dilo": "The Lord of the Rings (book)",
+    "vyznam": "“Hail!” – the language of the High Elves.",
+    "fakt": "Tolkien drew mainly on Finnish for it. He said he invented the languages first and wrote the stories so that the languages would have a world to be spoken in.",
+    "hledat": "quenya elf elvish tolkien lord of the rings"
+   }
+  },
+  {
+   "id": "sindarin",
+   "svet": "stredozem",
+   "pozdrav": "Mae govannen!",
+   "domaci": "Sindarin",
+   "autor": "J. R. R. Tolkien",
+   "cs": {
+    "nazev": "Sindarština",
+    "vyslovnost": "maj govanen",
+    "dilo": "Pán prstenů (kniha)",
+    "vyznam": "„Dobře, že se potkáváme.“",
+    "fakt": "Zní podobně jako velština, kterou měl Tolkien rád. Na dveřích do dolů Morie stojí sindarsky „Promluv, příteli, a vejdi“ – a heslo bylo prostě slovo „přítel“: mellon.",
+    "hledat": "sindarin sindarstina elf elfstina elfsky tolkien pan prstenu mellon"
+   },
+   "en": {
+    "nazev": "Sindarin",
+    "vyslovnost": "my go-VAN-en",
+    "dilo": "The Lord of the Rings (book)",
+    "vyznam": "“Well met.”",
+    "fakt": "It sounds a lot like Welsh, which Tolkien loved. The Doors of Moria say in Sindarin “Speak, friend, and enter” – and the password was simply the word “friend”: mellon.",
+    "hledat": "sindarin elf elvish tolkien lord of the rings mellon"
+   }
+  },
+  {
+   "id": "navi",
+   "svet": "pandora",
+   "pozdrav": "Kaltxì!",
+   "domaci": "Lì'fya leNa'vi",
+   "autor": "Paul Frommer",
+   "cs": {
+    "nazev": "Na'vijština",
+    "vyslovnost": "kal-ťi",
+    "dilo": "Avatar (film, 2009)",
+    "vyznam": "„Ahoj!“",
+    "fakt": "Jazykovědec Paul Frommer do ní dal hlásky kx, px a tx, které se vyslovují s „lusknutím“ v hrdle. V češtině ani angličtině takové hlásky nejsou.",
+    "hledat": "navi na'vi navijstina avatar pandora frommer"
+   },
+   "en": {
+    "nazev": "Na'vi",
+    "vyslovnost": "kal-T'EE",
+    "dilo": "Avatar (film, 2009)",
+    "vyznam": "“Hello!”",
+    "fakt": "The linguist Paul Frommer gave it the sounds kx, px and tx, spoken with a little “pop” in the throat. Neither English nor Czech has sounds like these.",
+    "hledat": "navi na'vi avatar pandora frommer"
+   }
+  },
+  {
+   "id": "dothraki",
+   "svet": "essos",
+   "pozdrav": "M'athchomaroon!",
+   "domaci": "lekh Dothraki",
+   "autor": "David J. Peterson",
+   "cs": {
+    "nazev": "Dothračtina",
+    "vyslovnost": "m-ath-čo-ma-rón",
+    "dilo": "Hra o trůny (seriál, 2011)",
+    "vyznam": "„S úctou!“ – tak se Dothrakové zdraví.",
+    "fakt": "George R. R. Martin v knihách použil jen pár dothrackých slov. Jazykovědec David J. Peterson z nich pro seriál vystavěl celý jazyk s vlastní mluvnicí.",
+    "hledat": "dothraki dothractina hra o truny game of thrones peterson"
+   },
+   "en": {
+    "nazev": "Dothraki",
+    "vyslovnost": "m-ath-cho-ma-ROON",
+    "dilo": "Game of Thrones (TV series, 2011)",
+    "vyznam": "“With respect!” – how the Dothraki greet each other.",
+    "fakt": "George R. R. Martin used only a handful of Dothraki words in his books. The linguist David J. Peterson built a whole language with its own grammar from them for the TV series.",
+    "hledat": "dothraki game of thrones peterson"
+   }
+  },
+  {
+   "id": "valyrian",
+   "svet": "essos",
+   "pozdrav": "Rytsas!",
+   "domaci": null,
+   "autor": "David J. Peterson",
+   "cs": {
+    "nazev": "Vznešená valyrijština",
+    "vyslovnost": "rycas",
+    "dilo": "Hra o trůny (seriál, 2011)",
+    "vyznam": "„Ahoj!“",
+    "fakt": "Vymyslel ji také David J. Peterson. Od roku 2017 se ji může kdokoli učit v aplikaci Duolingo.",
+    "hledat": "valyrian valyrijstina vznesena hra o truny game of thrones daenerys peterson"
+   },
+   "en": {
+    "nazev": "High Valyrian",
+    "vyslovnost": "RIT-sas",
+    "dilo": "Game of Thrones (TV series, 2011)",
+    "vyznam": "“Hello!”",
+    "fakt": "David J. Peterson invented this one too. Since 2017 anyone can learn it in the Duolingo app.",
+    "hledat": "valyrian high valyrian game of thrones daenerys peterson"
+   }
+  }
+ ],
+ "stopy": {
+  "fi": {
+   "cs": "Tolkien se finštinou inspiroval, když vymýšlel jazyk svých elfů.",
+   "en": "Tolkien drew on Finnish when he invented the language of his Elves."
+  },
+  "cy": {
+   "cs": "Velština se Tolkienovi tak líbila, že podle ní vymyslel další elfský jazyk.",
+   "en": "Tolkien loved Welsh so much that he modelled another Elvish language on it."
+  }
+ }
+}

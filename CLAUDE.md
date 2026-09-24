@@ -154,6 +154,16 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
   naskočí postupně, a se seznamem jazyků. Chorvatština a lotyština v Glottologu tečku nemají, jejich hvězdička
   stojí na `stred` z atlasu a klik na ni funguje přes `EU` (ne přes tečku). Zavírá se křížkem, Escape
   a tlačítkem Celý svět. Barvy vlajky `#003399` a `#FFCC00` jsou oficiální a patří jen sem.
+- **Brána do jiných světů – vymyšlené jazyky** (nápad uživatele 24. 9. 2026): klingonština, quenijština,
+  sindarština, na'vijština, dothračtina a vznešená valyrijština v `data/vymyslene.json` (světy Qo'noS, Středozem,
+  Pandora, Essos; validace hlídá strukturu). **Nejsou na glóbu, v běžném seznamu, v Jazyku dne ani v Překvap mě.**
+  Otevře je heslo **„mellon“** (elfsky „přítel“, heslo Durinových dveří) napsané kdekoli nebo do hledání, odkaz
+  `#mellon` / `#mellon~klingon`, nebo hledání („elf“, „klingon“, „Avatar“, „Hra o trůny“…), které ukáže sekci
+  „✦ Z jiných světů“. Glóbus se zmenší a zmizí (CSS přechod pláten, pak se nekreslí), ve hvězdách se vznášejí
+  koule světů (vznáší se jen koule, tlačítka stojí – jinak se po nich špatně kliká); na telefonu mřížka.
+  Karta vymyšleného jazyka má hologramové záhlaví, štítek „Vymyšlený jazyk“, dílo, svět a autora; `vybrany`
+  zůstává null (žádná tečka, rodina, vitalita ani srovnání). Stopy k Bráně jsou na kartách finštiny a velštiny
+  (`stopy`). Zajímavosti musí být pravdivé jako u skutečných jazyků.
 - Pořád platí: žádný satelit, prstenec, rohy zaměřovače ani sbírka pozdravů.
 
 ## Podrobnosti k tečkám

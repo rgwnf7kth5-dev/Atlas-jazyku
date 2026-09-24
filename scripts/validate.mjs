@@ -52,6 +52,16 @@ for (const r of pd.radky) if (Array.isArray(r[10]) && !(r[10][0] > 0 && r[10][0]
 if (divnychMluvcich) chyby.push(`data/podrobnosti.json: ${divnychMluvcich} jazyků má nesmyslný počet mluvčích nebo rok (Wikidata)`);
 if (pd.radky.some(r => !(Number.isInteger(r[0]) && r[0] >= -1 && r[0] <= 6))) chyby.push("data/podrobnosti.json: stupeň vitality musí být -1 až 6");
 if (pd.uzly.length !== pd.nad.length) chyby.push("data/podrobnosti.json: strom příbuzenstva je poškozený");
+{ const v = json("data/vymyslene.json"), svety = new Set(v.svety.map(s => s.id)), ids = new Set();   // vymyšlené jazyky („mellon“)
+  for (const s of v.svety) for (const l of ["cs", "en"]) if (!s[l] || !s[l].nazev || !s[l].popis) chyby.push(`data/vymyslene.json: svět „${s.id}“ nemá ${l}`);
+  for (const j of v.jazyky) {
+    if (ids.has(j.id)) chyby.push(`data/vymyslene.json: „${j.id}“ je dvakrát`); ids.add(j.id);
+    if (!svety.has(j.svet)) chyby.push(`data/vymyslene.json: „${j.id}“ má neznámý svět „${j.svet}“`);
+    if (!j.pozdrav || !j.autor) chyby.push(`data/vymyslene.json: „${j.id}“ nemá pozdrav nebo autora`);
+    for (const l of ["cs", "en"]) for (const k of ["nazev", "vyslovnost", "dilo", "vyznam", "fakt", "hledat"])
+      if (!j[l] || !j[l][k]) chyby.push(`data/vymyslene.json: „${j.id}“ nemá ${l}.${k}`);
+  }
+  for (const id of Object.keys(v.stopy || {})) if (!ids.size || !jazyky.some(x => x.id === id)) chyby.push(`data/vymyslene.json: stopa u neznámého jazyka „${id}“`); }
 { const kody = new Set(glottolog.body.map(b => b[6]));   // opravy poloh jen pro tečky, které v Glottologu jsou
   for (const [k, o] of Object.entries(json("data/polohy-opravy.json"))) {
     if (k.startsWith("_")) continue;

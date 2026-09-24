@@ -402,5 +402,15 @@
  "stromObe": "Show both in the family tree",
  "bezRodu": "{a} is a {druh}. It did not develop gradually from a single ancestor like other languages, so it belongs to no language family and has no relatives.",
  "bezDomova": "Not on the map",
- "bezDomovaText": "{a} did not grow up in any one place – people invented it so that speakers from different countries could understand each other. That is why it has no dot on the globe, only a place in the list."
+ "bezDomovaText": "{a} did not grow up in any one place – people invented it so that speakers from different countries could understand each other. That is why it has no dot on the globe, only a place in the list.",
+ "branaNadpis": "✦ The gate to other worlds",
+ "branaText": "The password mellon – Elvish for “friend” – opened it. These languages were not born on Earth but in books and films: writers and linguists invented them.",
+ "branaZpet": "Back to Earth",
+ "branaZeme": "Earth",
+ "branaZemePocet": "{n} real languages",
+ "vymyslenyJazyk": "Invented language",
+ "svet": "World",
+ "autorJazyka": "Created by",
+ "vyznamPozdravu": "What the greeting means",
+ "zJinychSvetu": "✦ From other worlds"
 }
