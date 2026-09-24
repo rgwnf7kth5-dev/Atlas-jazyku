@@ -66,8 +66,8 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
 - **Odkaz na jazyk**: `#cs` (id jazyka z atlasu) nebo `#corn1251` (glottocode tečky, build ho dává do `REJSTRIK.g`).
   Výběr zapíše adresu (`history.replaceState`), otevření odkazu jazyk vybere; když ho schovává filtr, filtry se zruší.
   Tlačítko s řetízkem na kartě odkaz zkopíruje (v artefaktu je skryté).
-- **Klik na zemi** stát hned obtáhne a jemně podbarví (`zemeOkna`, dokud je okno otevřené; uživatel: „dříve se země zvýrazňovala hned“) a ukáže počet všech jazyků státu z rejstříku (Glottolog `Countries`; převod názvu státu z mapy
-  na kód je `mapaStatu` v `podrobnosti.json`) a tlačítko, které je na glóbu rozsvítí (příznak 5) a přiblíží stát.
+- **Klik na zemi** stát hned podbarví, rozsvítí jeho jazyky (příznak 5) a ukáže počet všech jazyků státu z rejstříku
+  (Glottolog `Countries`; převod názvu státu z mapy na kód je `mapaStatu` v `podrobnosti.json`); zavřením okna vše zhasne.
   Kosovo, Severní Kypr a Somaliland kód nemají – ukáže se jen seznam jazyků z atlasu.
 - Náhled pro sdílení odkazu (og:image) je `static/nahled-cs.jpg` / `nahled-en.jpg`, ikonka `static/favicon.svg`
   (vkládá se do stránky) a `apple-touch-icon.png`. Build kopíruje `static/` do `dist/`. Obrázky vyrábí
@@ -243,10 +243,10 @@ odpověď na pozdrav je „Ngikhona“, ne „shiboka“; „mrož“ není z ni
 
 Podle obrázků uživatele (B: světlá encyklopedie, C: tmavá s bohatou kartou), 24. 9. 2026. Náhled je artefakt
 https://claude.ai/artifact/XS67Gsv9d4y2pMu7UWEGRi (soubor `build/atlas-nahled-redesignu.html` = `build/atlas-jazyku.html`).
-- **Reliéfní glóbus**: modré moře se dnem a stínovaná pevnina. Podklad `data/relief.jpg` vyrábí `scripts/relief.py`
+- **Reliéfní glóbus**: modré moře se dnem a stínovaná pevnina. Podklad `data/relief.webp` (3072 × 1536, ~0,3 MB) vyrábí `scripts/relief.py`
   z Natural Earth shaded relief a NOAA ETOPO1 (public domain, z pythonového balíčku basemap-data); šedý obrázek,
   moře 0–0,45, pevnina 0,55–1. Kreslí ho WebGL 2 do plátna mimo stránku (`kresliRelief`), barvy z CSS
-  (`--more1/2`, `--souse1/2`), takže den i noc z jednoho obrázku. Stránka tím ztěžkla na ~3,3 MB.
+  (`--more1/2`, `--souse1/2`), takže den i noc z jednoho obrázku. Dřív 4096 × 2048 JPEG (1,2 MB), zmenšeno na přání uživatele.
 - **Území vybraného jazyka je plně oranžové** (`--uzemi`), ne v barvě rodiny: indoevropská modrá by na modrém
   moři splývala s vodou. Šrafování uživatel zamítl („zaplnění plochy jako dosud, jen jiná barva“).
 - Pozadí stránky je světlý papír `#FBF9F4` („aby to vypadalo jako kniha“). Pevnina glóbu zůstává šedobílý reliéf
@@ -269,4 +269,11 @@ https://claude.ai/artifact/XS67Gsv9d4y2pMu7UWEGRi (soubor `build/atlas-nahled-re
   Světlé barvy (sníh, domy, křída) se v akvarelu nesmí násobit, jinak zmizí (`BILA`: všechny složky ≥ 0xE0).
 - Build zkouší skript stránky přeložit (`new Function`): při úklidu fotek zůstaly v kódu osiřelé řádky
   a stránka byla úplně nefunkční, aniž by `npm run check` něco hlásil.
-- Zbývá: znovu ověřit barvy vitality na nové pevnině, zvážit menší podklad reliéfu, přeložit zbylé větve v cestě.
+- **Barvy vitality na reliéfu**: na stínovaných svazích neměl nejsvětlejší stupeň kontrast (1,4–1,6 : 1), proto je
+  při barvení podle vitality pevnina jednolitá (`--souse-vit`: den `#E6E8EC`, noc `#1F2B55`) a tečky větší.
+  Obě stupnice na těchto plochách prošly validátorem `--ordinal` (světlý konec 3,2 : 1 a 3,6 : 1).
+- Glóbus se na počítači vejde nad lištu (`stredY`, rezerva výšky `#dok`); dřív ho lišta zakrývala.
+- Klik na zemi ji jedním kliknutím podbarví a rozsvítí její jazyky (příznak 5); tlačítko „Zvýraznit na glóbu“
+  zmizelo, protože po kliknutí už nic viditelného nedělalo. Zavřením okna zvýraznění zmizí.
+- Brána do jiných světů má i ve dne tmavé hvězdné nebe (`.scena.rezim-brana` přepíná textové barvy na noční).
+- Zbývá: přeložit zbylé větve v cestě rodokmenu.

@@ -77,7 +77,7 @@ function sestav(lang, { odkazJinam, artefakt }) {
     .replace("/*__REJSTRIK__*/null", () => doSkriptu(REJSTRIK))
     .replace("/*__VYMYSLENE__*/null", () => doSkriptu(json("data/vymyslene.json")))
     .replace("/*__KRAJINY__*/null", () => doSkriptu(json("data/krajiny.json")))
-    .replace("/*__RELIEF__*/null", () => JSON.stringify("data:image/jpeg;base64," + fs.readFileSync(path.join(KOREN, "data/relief.jpg")).toString("base64")))
+    .replace("/*__RELIEF__*/null", () => JSON.stringify("data:image/webp;base64," + fs.readFileSync(path.join(KOREN, "data/relief.webp")).toString("base64")))
     .replace("/*__PODROBNOSTI__*/null", () => doSkriptu({ wals: podrobnosti.wals, uzly: podrobnosti.uzly, nad: podrobnosti.nad,
                                                           staty: podrobnosti.staty, udhr: podrobnosti.udhr, mapaStatu: podrobnosti.mapaStatu,
                                                           radky: podrobnosti.radky, vetve: json("data/glottolog-branches.cs.json"),

@@ -1,4 +1,4 @@
-"""Podklad pro reliéfní glóbus: jeden šedý obrázek 4096 × 2048 (rovnoběžková projekce).
+"""Podklad pro reliéfní glóbus: jeden šedý obrázek 3072 × 1536 (rovnoběžková projekce), WebP.
 
 Pevnina: stínovaný reliéf z Natural Earth (Tom Patterson, shadedrelief.com, public domain).
 Moře:    tvar mořského dna z ETOPO1 (NOAA, public domain).
@@ -16,8 +16,8 @@ from scipy import ndimage
 
 KOREN = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ZDROJ = os.path.join(KOREN, ".cache", "relief")
-VYSTUP = os.path.join(KOREN, "data", "relief.jpg")
-W, H = 4096, 2048
+VYSTUP = os.path.join(KOREN, "data", "relief.webp")
+W, H = 3072, 1536
 
 def nacti(jmeno):
     return np.asarray(Image.open(os.path.join(ZDROJ, jmeno)).convert("RGB").resize((W, H), Image.LANCZOS), dtype=np.float32) / 255
@@ -38,10 +38,11 @@ stin = np.clip((jas / np.maximum(okoli, 1e-3) - 0.72) / 0.5, 0, 1)
 vyska_et = et @ np.array([0.3, 0.55, 0.15], dtype=np.float32)
 
 # moře: hloubka z barev ETOPO1 (mělčiny světlé, hlubiny tmavé) a jemná struktura dna
-dno = ndimage.gaussian_filter(vyska_et, 1.2)
+dno = ndimage.gaussian_filter(vyska_et, 2.2)   # dno hladší: zrnitost na glóbu nevidět a obrázek je o polovinu menší
 dno = np.clip((dno - 0.12) / 0.55, 0, 1)
 
 hodnota = np.where(more, 0.45 * dno, 0.55 + 0.45 * stin)
 os.makedirs(os.path.dirname(VYSTUP), exist_ok=True)
-Image.fromarray((hodnota * 255 + 0.5).astype(np.uint8), "L").save(VYSTUP, quality=82, optimize=True, progressive=True)
+# WebP je při stejné kvalitě asi o 35 % menší než JPEG (Safari ho umí od verze 14)
+Image.fromarray((hodnota * 255 + 0.5).astype(np.uint8), "L").save(VYSTUP, "WEBP", quality=76, method=6)
 print(VYSTUP, os.path.getsize(VYSTUP) // 1024, "kB")
