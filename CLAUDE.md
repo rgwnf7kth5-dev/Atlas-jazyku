@@ -245,10 +245,11 @@ Okrasný pohyb (světla na obloucích, obvod karty) po 20 s bez dotyku usne.
 Zajímavosti jsou pro děti, ale musí být pravdivé. 22. 9. 2026 opraveno 19 nepřesností (např. zulská
 odpověď na pozdrav je „Ngikhona“, ne „shiboka“; „mrož“ není z nizozemštiny). Novou zajímavost ověř.
 
-## Redesign „obrázková encyklopedie“ (větev `redesign-encyklopedie`, náhled, zatím ne na webu)
+## Vzhled „obrázková encyklopedie“ (redesign, na webu od 24. 9. 2026)
 
-Podle obrázků uživatele (B: světlá encyklopedie, C: tmavá s bohatou kartou), 24. 9. 2026. Náhled je artefakt
-https://claude.ai/artifact/XS67Gsv9d4y2pMu7UWEGRi (soubor `build/atlas-nahled-redesignu.html` = `build/atlas-jazyku.html`).
+Podle obrázků uživatele (B: světlá encyklopedie, C: tmavá s bohatou kartou), 24. 9. 2026. Vznikl na větvi
+`redesign-encyklopedie` a 24. 9. 2026 ho uživatel pustil na `main` („vše, co se změnilo, pusť na main a zveřejni“).
+Dřívější náhledový artefakt https://claude.ai/artifact/XS67Gsv9d4y2pMu7UWEGRi už jen dubluje hlavní artefakty.
 - **Reliéfní glóbus**: modré moře se dnem a stínovaná pevnina. Podklad `data/relief.webp` (3072 × 1536, ~0,3 MB) vyrábí `scripts/relief.py`
   z Natural Earth shaded relief a NOAA ETOPO1 (public domain, z pythonového balíčku basemap-data); šedý obrázek,
   moře 0–0,45, pevnina 0,55–1. Kreslí ho WebGL 2 do plátna mimo stránku (`kresliRelief`), barvy z CSS
@@ -272,6 +273,9 @@ https://claude.ai/artifact/XS67Gsv9d4y2pMu7UWEGRi (soubor `build/atlas-nahled-re
   Uživatel zamítl: plakátové ploché ilustrace v barvě rodiny („nelíbí“), satelitní snímky („nic se nepozná“)
   a nakonec i skutečné fotky z Wikimedia Commons (automatický výběr přes Wikidata dával mapy, vlajky,
   cizí místa a u lakotštiny Mount Rushmore; uživatel práci zastavil). Památky a lidi na pohlednice nekreslit.
+  **Další krok (přání uživatele 24. 9. 2026):** sousední země nesmí mít stejný obrázek („Německo a Francie nemohou mít
+  ten samý“), obrázků má být aspoň trojnásobek a mají nést **architektonické znaky země** – typickou lidovou
+  a městskou stavbu (hrázděné domy, břidlicové střechy, pagody, mešitové kopule…), ne konkrétní památku.
   Světlé barvy (sníh, domy, křída) se v akvarelu nesmí násobit, jinak zmizí (`svetla()`: všechny složky ≥ 0xE0).
   **Perokresbu / rytinu uživatel zamítl** („je na nic“) a chtěl akvarely „daleko jemnější, detailnější, propracovanější“
   (24. 9. 2026). Proto: hory mají rozeklaný obrys (`clenit`), stinnou stranu za žebrem od vrcholu až do sedla, žlaby
