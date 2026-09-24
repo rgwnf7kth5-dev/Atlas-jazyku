@@ -603,3 +603,25 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
   .dok .tl:not(.hlavni) span{position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap}
   .dok .tl:not(.hlavni){padding:9px 11px}
 }
+
+/* Evropský den jazyků (26. září): karta nad Jazykem dne, pozdravy evropských jazyků se střídají */
+.den-jazyku{position:relative; display:flex; flex-direction:column; align-items:flex-start; gap:4px; margin:12px 0 4px; padding:16px 18px;
+  border-radius:22px; color:#fff; overflow:hidden; background:linear-gradient(135deg, #1D4ED8 0%, #0E7490 60%, #0F766E 100%);
+  box-shadow:0 18px 40px -20px #1D4ED8, 0 0 0 1px rgba(255,255,255,.14) inset}
+.den-jazyku::before{content:"“"; position:absolute; right:14px; bottom:-58px; font:700 150px/1 Georgia, serif; color:rgba(255,255,255,.1); pointer-events:none}
+.den-jazyku > *{position:relative}
+.dj-stitek{display:inline-flex; padding:4px 11px; border-radius:99px; background:#fff; color:#1D4ED8; font-weight:700; font-size:.78rem}
+.dj-pozdrav{font-family:"Noto Sans","Noto Sans Arabic","Segoe UI",system-ui,sans-serif; font-weight:800; font-size:2.3rem; line-height:1.1; margin-top:6px; min-height:2.6rem}
+.dj-pozdrav.dj-vjezd{animation:dj-vjezd .5s cubic-bezier(.2,.8,.3,1)}
+@keyframes dj-vjezd{from{opacity:0; transform:translateY(8px)}}
+.dj-jazyk{font-weight:600; font-size:.9rem; opacity:.9}
+.dj-text{margin:6px 0 0; font-size:.86rem; line-height:1.45; opacity:.95}
+.dj-akce{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
+.dj-tl{font:inherit; font-weight:700; font-size:.82rem; padding:7px 14px; border-radius:99px; cursor:pointer; color:#fff;
+  background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.4)}
+.dj-tl.hlavni{background:#fff; color:#1D4ED8; border-color:#fff}
+.dj-tl:hover{transform:translateY(-1px)}
+.dj-zavrit{position:absolute; top:10px; right:10px; width:28px; height:28px; border-radius:50%; display:grid; place-items:center; cursor:pointer;
+  color:#fff; background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.3); padding:0}
+.dj-zavrit svg{width:11px; height:11px}
+@media (prefers-reduced-motion:reduce){ .dj-pozdrav.dj-vjezd{animation:none} }
