@@ -76,6 +76,7 @@ function sestav(lang, { odkazJinam, artefakt }) {
     .replace("/*__STATY__*/null", () => doSkriptu(nazvyZemi))
     .replace("/*__REJSTRIK__*/null", () => doSkriptu(REJSTRIK))
     .replace("/*__VYMYSLENE__*/null", () => doSkriptu(json("data/vymyslene.json")))
+    .replace("/*__RELIEF__*/null", () => JSON.stringify("data:image/jpeg;base64," + fs.readFileSync(path.join(KOREN, "data/relief.jpg")).toString("base64")))
     .replace("/*__PODROBNOSTI__*/null", () => doSkriptu({ wals: podrobnosti.wals, uzly: podrobnosti.uzly, nad: podrobnosti.nad,
                                                           staty: podrobnosti.staty, udhr: podrobnosti.udhr, mapaStatu: podrobnosti.mapaStatu,
                                                           radky: podrobnosti.radky, vetve: json("data/glottolog-branches.cs.json"),
@@ -93,7 +94,7 @@ function sestav(lang, { odkazJinam, artefakt }) {
     `document.documentElement.setAttribute("data-theme",m)})()</script>\n` +
     `<link rel="preconnect" href="https://fonts.googleapis.com">\n` +
     `<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n` +
-    `<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800&display=swap">\n` +
+    `<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800&display=swap">\n` +
     `<style>\n${styly}</style>\n`;
 
   const fragment = hlavicka + html + "\n" + skripty + "\n";

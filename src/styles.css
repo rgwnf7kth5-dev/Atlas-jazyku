@@ -16,6 +16,7 @@
   /* glóbus (čte je i app.js) */
   --koule1:#0B1A45; --koule2:#02040E; --atmosfera:rgba(53,214,255,.5); --atmosfera2:rgba(80,120,255,.16);
   --sit:rgba(127,233,255,.07); --hranice:120,170,255; --okraj-koule:rgba(127,233,255,.4);
+  --more1:#030817; --more2:#0C2352; --souse1:#1E2C58; --souse2:#5569A6;   /* reliéf: hluboké a mělké moře, stín a světlo pevniny */
   --pevnina:#1D3170; --pobrezi:rgba(120,175,255,.42); --stin-koule:rgba(0,0,10,.55);   /* pevnina světlejší než moře */
   --tecka-jazyk:#5ADCFF; --tecka-bod:#FFFFFF;
   /* vitalita: ordinální stupnice jednoho odstínu (bezpečný → vymřelý), prošla validátorem palet (--ordinal)
@@ -46,6 +47,7 @@
   --nadpis-grad:linear-gradient(90deg,#0E1838,#1F4FA8 55%,#6A36B0);
   --koule1:#FFFFFF; --koule2:#D3E1F5; --atmosfera:rgba(90,170,255,.42); --atmosfera2:rgba(140,190,255,.16);
   --sit:rgba(40,90,170,.1); --hranice:40,80,160; --okraj-koule:rgba(40,110,200,.45);
+  --more1:#0C3A8A; --more2:#3E80D4; --souse1:#9EA6B2; --souse2:#FCFBF7;
   --pevnina:#A9BEE2; --pobrezi:rgba(40,80,160,.4); --stin-koule:rgba(40,70,140,.16);   /* pevnina tmavší než moře */
   --tecka-jazyk:#0A5A94; --tecka-bod:#0E1838;
   /* denní stupnice vitality – ověřená na pevnině #A9BEE2 */
@@ -603,3 +605,120 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
   .dok .tl:not(.hlavni) span{position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap}
   .dok .tl:not(.hlavni){padding:9px 11px}
 }
+
+/* =====================================================================================================
+   REDESIGN (náhled 24. 9. 2026): „obrázková encyklopedie“ podle obrázku B (den) a C (noc).
+   Patkové titulky (Playfair Display), papírový podklad, bílé karty s jemným stínem, červené hlavní tlačítko,
+   reliéfní glóbus. Denní vzhled = B, noční = C (tmavá modř, tlumený reliéf, světélka).
+   ===================================================================================================== */
+:root{
+  --pismo-nadpis:"Playfair Display",Georgia,"Times New Roman",serif;
+  --pismo-data:"Outfit",system-ui,sans-serif;
+  --pismo-pozdrav:"Playfair Display","Noto Serif",Georgia,"Noto Sans Arabic","Noto Sans Devanagari","Noto Sans CJK SC",serif;
+  --pozadi:radial-gradient(120% 90% at 40% 30%, #0C1734, #050914 70%) fixed, #050914;
+  --sklo:rgba(11,18,38,.82); --sklo2:rgba(14,23,48,.9); --sklo-okraj:rgba(170,195,255,.13); --sklo-lesk:rgba(255,255,255,.05);
+  --akcent:#E0503F; --na-akcent:#FFFFFF;
+  --nadpis-grad:none;
+  --atmosfera:rgba(90,150,255,.3); --atmosfera2:rgba(60,110,230,0);
+  --sit:rgba(160,200,255,.07);
+}
+:root[data-theme="light"]{
+  --pozadi:#F4F1EA;
+  --sklo:#FFFFFF; --sklo2:#FFFFFF; --sklo-okraj:rgba(20,24,40,.08); --sklo-lesk:rgba(255,255,255,0);
+  --text:#15192B; --text2:#5A6073; --text3:#8A90A0;
+  --cyan:#1F4FB8; --cervena:#D23A2B; --akcent:#D23A2B;
+  --linka:rgba(20,24,40,.09); --linka2:rgba(20,24,40,.18); --plocha:rgba(20,24,40,.035); --plocha2:rgba(20,24,40,.07);
+  --sklo-tl:#FFFFFF; --vstup:#FFFFFF; --stin:rgba(25,32,60,.2);
+  --cyan-slabe:rgba(31,79,184,.08); --cyan-okraj:rgba(31,79,184,.35); --cyan-zare:rgba(31,79,184,.25);
+  --aktivni-text:#15306E;
+  --atmosfera:rgba(110,160,230,.32); --atmosfera2:rgba(160,195,240,0);
+  --sit:rgba(255,255,255,.2); --stin-koule:rgba(8,28,80,.2); --okraj-koule:rgba(20,60,140,.25);
+  --tecka-jazyk:#173A94;
+}
+.sklo{background:var(--sklo); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border:1px solid var(--sklo-okraj);
+  box-shadow:0 1px 0 var(--sklo-lesk) inset, 0 14px 40px -22px var(--stin)}
+:root[data-theme="light"] .sklo{backdrop-filter:none; -webkit-backdrop-filter:none; box-shadow:0 1px 2px rgba(20,24,40,.04), 0 18px 40px -26px var(--stin)}
+#hvezdy{opacity:.7}
+:root[data-theme="light"] #hvezdy{display:none}
+
+/* záhlaví: bez karty, jen tenká linka jako v knize */
+.hlava{background:transparent; box-shadow:none; border:0; border-bottom:1px solid var(--linka); border-radius:0; padding:6px 4px 12px;
+  backdrop-filter:none; -webkit-backdrop-filter:none}
+h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2vw,2.35rem); letter-spacing:-.005em; line-height:1.05;
+  background:none; color:var(--text); -webkit-background-clip:border-box; background-clip:border-box}
+.jazyk-prepinac,.prepinac{background:var(--sklo); border:1px solid var(--linka2); border-radius:999px}
+.prepinac{border-radius:50%}
+
+/* hlavní tlačítko červeně (obrázek B) */
+.tl.hlavni,.dok .tl.hlavni{background:var(--akcent); color:var(--na-akcent); border-color:transparent; box-shadow:0 8px 20px -10px var(--akcent)}
+.tl.hlavni:hover,.dok .tl.hlavni:hover{background:color-mix(in srgb, var(--akcent) 88%, #000); box-shadow:0 10px 22px -10px var(--akcent)}
+.dok{border-radius:999px; padding:6px}
+.tl:hover{box-shadow:none}
+
+/* pozdravy patkovým písmem */
+.pozdrav,.jaz .pz,.jd-pozdrav{font-family:var(--pismo-pozdrav); font-weight:700; letter-spacing:-.01em}
+.k-pozdrav .pozdrav{font-size:clamp(2.2rem,5.2vw,3rem); line-height:1.05}
+.karta h2,.k-hero h2{font-family:var(--pismo-nadpis); font-weight:600; font-size:1.55rem; letter-spacing:0}
+.prepis{font-family:var(--pismo-nadpis); font-weight:500}
+
+/* štítky nadpisů: řídké verzálky (kod, rodiny v seznamu, počty) */
+.kod,.rodina h3,.pocet,.stitek-nadpis,.k-stitky .stitek > :first-child{font-family:var(--pismo-text); letter-spacing:.16em; text-transform:uppercase; font-weight:600}
+.pocet{letter-spacing:.08em; text-transform:none; font-weight:500}
+
+/* karta jazyka: bílý list s pohlednicí nahoře; bez svítícího obvodu */
+.karta::before{display:none}
+.karta{border-radius:20px}
+:root[data-theme="light"] .scena .karta.sklo{background:#FFFFFF}
+.k-hero{margin:8px; border-radius:14px; padding:14px 16px 18px;
+  background:linear-gradient(160deg, color-mix(in srgb, var(--r-barva) 88%, #fff) 0%, var(--r-barva) 55%, color-mix(in srgb, var(--r-barva) 80%, #000) 100%);
+  box-shadow:0 12px 26px -18px var(--r-barva)}
+:root[data-theme="light"] .k-hero{background:linear-gradient(160deg, color-mix(in srgb, var(--r-barva) 88%, #fff) 0%, var(--r-barva) 55%, color-mix(in srgb, var(--r-barva) 80%, #000) 100%)}
+/* pohlednice: jemné papírové zrno a obvodová linka jako u známky */
+.k-hero::before{opacity:.5; background:
+  repeating-linear-gradient(0deg, rgba(255,255,255,.035) 0 1px, transparent 1px 3px),
+  radial-gradient(120% 80% at 100% 0%, rgba(255,255,255,.22), transparent 60%);
+  -webkit-mask-image:none; mask-image:none}
+.k-hero::after{content:""; position:absolute; inset:6px; border:1px solid rgba(255,255,255,.28); border-radius:10px; pointer-events:none}
+.k-stitky{padding:10px 14px 2px}
+.stitek{border-radius:12px; background:var(--plocha)}
+
+/* cesta v rodokmenu (obrázek C) */
+.k-cesta{display:flex; flex-wrap:wrap; align-items:center; gap:4px 5px; margin:12px 14px 0; padding:10px 12px; border-radius:14px;
+  border:1px solid var(--linka); background:var(--plocha)}
+.k-cesta::before{content:attr(aria-label); flex-basis:100%; font-size:.62rem; font-weight:600; letter-spacing:.16em; text-transform:uppercase; color:var(--text2); margin-bottom:3px}
+.k-cesta button{font:inherit; font-size:.76rem; font-weight:600; color:var(--text); cursor:pointer; padding:4px 10px; border-radius:999px;
+  background:var(--sklo); border:1px solid var(--linka2)}
+.k-cesta button:hover{border-color:var(--cyan); color:var(--cyan)}
+.k-cesta button.posledni{background:var(--r-barva, var(--cyan)); color:var(--r-text, #fff); border-color:transparent}
+.k-cesta-sip{color:var(--text3); font-size:.9rem}
+.k-porovnat{border-radius:999px}
+.zalozky{border-radius:999px}
+
+/* seznam: bílé dlaždice, patkový pozdrav */
+.jaz{background:var(--sklo); border:1px solid var(--linka); border-radius:12px}
+:root:not([data-theme="light"]) .jaz{background:rgba(255,255,255,.03)}
+.jaz.s-pozdravem::before{box-shadow:none}
+.jaz .pz{font-size:1.15rem}
+.rodina h3{font-size:.62rem; color:var(--text2)}
+.rodina h3::after{background:var(--linka)}
+.tecka{box-shadow:none}
+
+/* jazyk dne jako pohlednice z obrázku B: bílá karta, červená tečka, velký patkový pozdrav */
+.jazyk-dne{color:var(--text); background:var(--sklo); border:1px solid var(--linka); border-radius:18px;
+  box-shadow:0 18px 40px -26px var(--stin)}
+.jazyk-dne::before{right:auto; left:auto; top:auto; bottom:-70px; right:-50px; width:220px; height:220px;
+  background:radial-gradient(circle, color-mix(in srgb, var(--akcent) 22%, transparent), transparent 70%)}
+.jazyk-dne::after{display:none}
+.jazyk-dne:hover{box-shadow:0 22px 44px -24px var(--stin)}
+.jd-stitek{background:transparent; color:var(--text); box-shadow:none; padding:0; font-family:var(--pismo-nadpis); font-weight:600; font-size:1rem; letter-spacing:0}
+.jd-stitek svg{display:none}
+.jd-stitek::before{content:""; width:10px; height:10px; border-radius:50%; background:var(--akcent); margin-right:3px}
+.jd-pozdrav{font-size:2.9rem; line-height:1.02; color:var(--text); text-shadow:none}
+.jd-nazev{font-family:var(--pismo-nadpis); font-weight:500; font-size:1.2rem; color:var(--text)}
+.jd-fakt{color:var(--text2); opacity:1}
+.jd-akce{background:var(--akcent); color:var(--na-akcent); border:0}
+.jazyk-dne:hover .jd-akce{background:color-mix(in srgb, var(--akcent) 88%, #000)}
+
+.znak{color:var(--text); width:48px; height:48px}
+.hud{color:var(--text2)}
+.hlava.sklo,:root[data-theme="light"] .hlava.sklo{box-shadow:none; background:transparent}

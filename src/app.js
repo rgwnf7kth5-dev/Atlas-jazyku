@@ -388,7 +388,7 @@ function nactiBarvy(){
   ["vit-0", "vit-1", "vit-2", "vit-3", "vit-4", "vit-5", "vit-6", "vit-nic",
    "pevnina", "pobrezi", "stin-koule", "tecka-jazyk", "tecka-bod", "cyan", "fialova", "cervena", "hvezda", "koule1", "koule2", "popisek", "popisek-lem",
    "atmosfera", "atmosfera2", "sit", "hranice", "okraj-koule", "zamerovac-lem",
-   "r-ie", "r-st", "r-an", "r-afro", "r-nk", "r-ost"].forEach(function(k){ barvy[k] = s.getPropertyValue("--" + k).trim(); });
+   "r-ie", "r-st", "r-an", "r-afro", "r-nk", "r-ost", "more1", "more2", "souse1", "souse2"].forEach(function(k){ barvy[k] = s.getPropertyValue("--" + k).trim(); });
 }
 
 const fJaz = new Float32Array(POCET_B), zakladJaz = new Float32Array(POCET_B);   // příznaky teček: 0 obyčejná, 1 vybraná, 2 příbuzná, 3 pod myší
@@ -514,6 +514,89 @@ function kresliBodyGl(){
   gl.drawArrays(gl.POINTS, 0, glJaz.n);
 }
 
+/* ---------- reliéf: modré moře se dnem a stínovaná pevnina (WebGL 2, obrázek z scripts/relief.py) ----------
+   Šedý obrázek v rovnoběžkové projekci: 0–0,45 moře (tmavší = hlubší), 0,55–1 pevnina (tmavší = stín svahu).
+   Barvy dodá CSS (--more-*, --souse-*), takže z jednoho obrázku je denní i noční glóbus.
+   Kreslí se do vlastního plátna mimo stránku a to se vloží do #podklad místo ploché koule a pevniny. */
+const RELIEF = /*__RELIEF__*/null;
+const relief = {platno: null, gl: null, u: {}, hotovo: false, sirkaTex: 1};
+function pripravRelief(){
+  if (!RELIEF) return;
+  const p = document.createElement("canvas");
+  let g = null;
+  try { g = p.getContext("webgl2", {alpha: true, premultipliedAlpha: true, antialias: false, depth: false, stencil: false, preserveDrawingBuffer: true}); } catch (e) {}
+  if (!g) return;
+  const vs = "#version 300 es\nin vec2 a_p; void main(){ gl_Position = vec4(a_p, 0.0, 1.0); }";
+  const fs = [
+    "#version 300 es",
+    "precision highp float;",
+    "uniform sampler2D u_tex; uniform vec2 u_stred; uniform float u_r, u_l0, u_sf0, u_cf0, u_dpr, u_vyska, u_texw;",
+    "uniform vec3 u_more1, u_more2, u_souse1, u_souse2;",
+    "out vec4 barva;",
+    "void main(){",
+    "  vec2 px = vec2(gl_FragCoord.x, u_vyska - gl_FragCoord.y) / u_dpr;",
+    "  vec2 d = (px - u_stred) / u_r; float rr = dot(d, d);",
+    "  if (rr >= 1.0) { barva = vec4(0.0); return; }",
+    "  float z = sqrt(1.0 - rr), X = d.x, Y = -d.y;",
+    "  float lat = asin(clamp(z * u_sf0 + Y * u_cf0, -1.0, 1.0));",
+    "  float lon = u_l0 + atan(X, z * u_cf0 - Y * u_sf0);",
+    "  vec2 uv = vec2(lon / 6.2831853 + 0.5, 0.5 - lat / 3.1415927);",
+    "  float lod = max(0.0, log2(u_texw / (6.2831853 * u_r * u_dpr) / max(z, 0.2)));",   // bez švu na 180. poledníku
+    "  float v = textureLod(u_tex, uv, lod).r;",
+    "  float souse = smoothstep(0.47, 0.53, v);",
+    "  vec3 more = mix(u_more1, u_more2, clamp(v / 0.45, 0.0, 1.0));",
+    "  vec3 zeme = mix(u_souse1, u_souse2, clamp((v - 0.55) / 0.45, 0.0, 1.0));",
+    "  float a = clamp((1.0 - sqrt(rr)) * u_r * u_dpr, 0.0, 1.0);",           // hladký okraj koule
+    "  barva = vec4(mix(more, zeme, souse) * a, a);",
+    "}"].join("\n");
+  const shader = function(typ, zdroj){
+    const s = g.createShader(typ); g.shaderSource(s, zdroj); g.compileShader(s);
+    if (!g.getShaderParameter(s, g.COMPILE_STATUS)) throw new Error(g.getShaderInfoLog(s));
+    return s;
+  };
+  try {
+    const prog = g.createProgram();
+    g.attachShader(prog, shader(g.VERTEX_SHADER, vs)); g.attachShader(prog, shader(g.FRAGMENT_SHADER, fs));
+    g.linkProgram(prog);
+    if (!g.getProgramParameter(prog, g.LINK_STATUS)) throw new Error(g.getProgramInfoLog(prog));
+    g.useProgram(prog);
+    ["u_tex", "u_stred", "u_r", "u_l0", "u_sf0", "u_cf0", "u_dpr", "u_vyska", "u_texw", "u_more1", "u_more2", "u_souse1", "u_souse2"]
+      .forEach(function(k){ relief.u[k] = g.getUniformLocation(prog, k); });
+    const b = g.createBuffer(); g.bindBuffer(g.ARRAY_BUFFER, b);
+    g.bufferData(g.ARRAY_BUFFER, new Float32Array([-1, -1, 3, -1, -1, 3]), g.STATIC_DRAW);
+    const a = g.getAttribLocation(prog, "a_p"); g.enableVertexAttribArray(a); g.vertexAttribPointer(a, 2, g.FLOAT, false, 0, 0);
+  } catch (e) { console.error("Reliéf:", e); return; }
+  relief.platno = p; relief.gl = g;
+  const obr = new Image();
+  obr.onload = function(){
+    const t = g.createTexture(); g.bindTexture(g.TEXTURE_2D, t);
+    g.pixelStorei(g.UNPACK_ALIGNMENT, 1);
+    g.texImage2D(g.TEXTURE_2D, 0, g.R8, g.RED, g.UNSIGNED_BYTE, obr);
+    g.generateMipmap(g.TEXTURE_2D);
+    g.texParameteri(g.TEXTURE_2D, g.TEXTURE_MIN_FILTER, g.LINEAR_MIPMAP_LINEAR);
+    g.texParameteri(g.TEXTURE_2D, g.TEXTURE_MAG_FILTER, g.LINEAR);
+    g.texParameteri(g.TEXTURE_2D, g.TEXTURE_WRAP_S, g.REPEAT);
+    g.texParameteri(g.TEXTURE_2D, g.TEXTURE_WRAP_T, g.CLAMP_TO_EDGE);
+    relief.sirkaTex = obr.naturalWidth; relief.hotovo = true;
+    koule.klic = ""; potrebaKresli = true;
+  };
+  obr.src = RELIEF;
+}
+function kresliRelief(cx, cy, r){
+  const g = relief.gl, p = relief.platno, u = relief.u;
+  if (p.width !== podklad.width || p.height !== podklad.height) { p.width = podklad.width; p.height = podklad.height; }
+  g.viewport(0, 0, p.width, p.height);
+  g.clearColor(0, 0, 0, 0); g.clear(g.COLOR_BUFFER_BIT);
+  const f0 = -rot[1] * R;
+  g.uniform1i(u.u_tex, 0);
+  g.uniform2f(u.u_stred, cx, cy); g.uniform1f(u.u_r, r);
+  g.uniform1f(u.u_l0, -rot[0] * R); g.uniform1f(u.u_sf0, Math.sin(f0)); g.uniform1f(u.u_cf0, Math.cos(f0));
+  g.uniform1f(u.u_dpr, p.width / sirka); g.uniform1f(u.u_vyska, p.height); g.uniform1f(u.u_texw, relief.sirkaTex);
+  ["more1", "more2", "souse1", "souse2"].forEach(function(k){ const c = rgb(barvy[k]); g.uniform3f(u["u_" + k], c[0], c[1], c[2]); });
+  g.drawArrays(g.TRIANGLES, 0, 3);
+  return p;
+}
+
 /* ---------- záložní kreslení světélek bez WebGL ---------- */
 function kresliBody2D(){
   const c = ctxBody, v = velikosti(), n = nastaveniTecek(), rj = v.jaz * 0.2;
@@ -618,6 +701,27 @@ function kresliStin(c, cx, cy, r){          /* koule k okraji tmavne, ať vypad�
   g.addColorStop(0, denni ? "rgba(255,255,255,.55)" : "rgba(150,210,255,.10)"); g.addColorStop(1, "rgba(255,255,255,0)");
   c.fillStyle = g; c.beginPath(); c.arc(cx, cy, r, 0, 6.283185); c.fill();
 }
+/* území se šrafuje (jako v tištěném atlasu): plná barva rodiny by na modrém moři splývala s vodou */
+const vzorySrafy = {};
+function vzorSrafy(c, barva){
+  const k = barva + "|" + dpr;
+  if (vzorySrafy[k]) return vzorySrafy[k];
+  const t = document.createElement("canvas"), n = Math.max(6, Math.round(8 * dpr));
+  t.width = t.height = n;
+  const g = t.getContext("2d");
+  g.strokeStyle = barva; g.lineWidth = 2.1 * dpr; g.lineCap = "square";
+  g.beginPath();
+  [-n, 0, n].forEach(function(o){ g.moveTo(o, n); g.lineTo(o + n, 0); });
+  g.stroke();
+  const vzor = c.createPattern(t, "repeat");
+  if (vzor.setTransform) vzor.setTransform(new DOMMatrix().scale(1 / dpr));
+  return (vzorySrafy[k] = vzor);
+}
+function vyplnUzemi(c, barva, silne){
+  c.globalAlpha = silne ? 0.34 : 0.2; c.fillStyle = barva; c.fill();
+  c.globalAlpha = silne ? 0.9 : 0.55; c.fillStyle = vzorSrafy(c, barva); c.fill();
+  c.globalAlpha = 1;
+}
 function kresliUzemi(c){                    /* území vybraného jazyka barvou jeho rodiny */
   if (zeme) {                               /* zvýrazněná země */
     c.beginPath(); cestaPodklad(zeme.f);
@@ -635,18 +739,18 @@ function kresliUzemi(c){                    /* území vybraného jazyka barvou 
   if (vybrany.zeme.length) {
     c.beginPath();
     vybrany.zeme.forEach(function(n){ const f = ZEME_PODLE_JMENA[n]; if (f) cestaPodklad(f); });
-    c.globalAlpha = 0.9; c.fillStyle = barva; c.fill(); c.globalAlpha = 1;
+    vyplnUzemi(c, barva, true);
+    c.globalAlpha = 0.95; c.lineWidth = 1.3; c.strokeStyle = barva; c.stroke(); c.globalAlpha = 1;
   }
   if (vybrany.ob.length) {                  /* areál: kruhy oříznuté na pevninu, s měkkým okrajem */
     c.save();
     c.beginPath(); cestaPodklad(SOUS); c.clip();
-    c.fillStyle = barva;
-    c.globalAlpha = 0.35; c.beginPath();
+    c.beginPath();
     vybrany.ob.forEach(function(o){ cestaPodklad(kruh.center([o[0], o[1]]).radius(o[2] * 1.75)()); });
-    c.fill();
-    c.globalAlpha = 0.9; c.beginPath();
+    vyplnUzemi(c, barva, false);
+    c.beginPath();
     vybrany.ob.forEach(function(o){ cestaPodklad(kruh.center([o[0], o[1]]).radius(o[2] * 1.3)()); });
-    c.fill();
+    vyplnUzemi(c, barva, true);
     c.restore();
   }
   c.restore();
@@ -679,14 +783,19 @@ function kresliPodklad(){
     c.setTransform(1, 0, 0, 1, 0, 0); c.drawImage(koule.platno, 0, 0); c.setTransform(dpr, 0, 0, dpr, 0, 0);
   } else kresliKouli(c, cx, cy, r);
   c.lineWidth = 1;
-  c.beginPath(); cestaPodklad(sit); c.strokeStyle = barvy.sit; c.stroke();
-  c.beginPath(); cestaPodklad(SOUS); c.fillStyle = barvy.pevnina; c.fill();
+  if (relief.hotovo) {                 /* reliéf nahradí plochou kouli i pevninu */
+    c.setTransform(1, 0, 0, 1, 0, 0); c.drawImage(kresliRelief(cx, cy, r), 0, 0); c.setTransform(dpr, 0, 0, dpr, 0, 0);
+    c.beginPath(); cestaPodklad(sit); c.strokeStyle = barvy.sit; c.stroke();
+  } else {
+    c.beginPath(); cestaPodklad(sit); c.strokeStyle = barvy.sit; c.stroke();
+    c.beginPath(); cestaPodklad(SOUS); c.fillStyle = barvy.pevnina; c.fill();
+  }
   kresliUzemi(c);
   if (zoom >= 1.4) {                   /* hranice států až při přiblížení – z dálky by jen rušily */
     c.beginPath(); ZEME.forEach(function(f){ cestaPodklad(f); });
     c.strokeStyle = "rgba(" + barvy.hranice + "," + Math.min(0.4, (zoom - 1.4) * 0.14).toFixed(3) + ")"; c.lineWidth = 0.8; c.stroke();
   }
-  c.beginPath(); cestaPodklad(SOUS); c.strokeStyle = barvy.pobrezi; c.lineWidth = 0.9; c.stroke();
+  if (!relief.hotovo) { c.beginPath(); cestaPodklad(SOUS); c.strokeStyle = barvy.pobrezi; c.lineWidth = 0.9; c.stroke(); }
   if (koule.klic === klic) {
     c.setTransform(1, 0, 0, 1, 0, 0); c.drawImage(koule.stin, 0, 0); c.setTransform(dpr, 0, 0, dpr, 0, 0);
   } else kresliStin(c, cx, cy, r);
@@ -1651,6 +1760,7 @@ function ukazKartu(j){
 
   const znakAtlas = jeZnakovyJazyk(j);                 /* u znakového jazyka se nemluví, ale znakuje */
   const bodJ = BOD_ATLASU[j.id], stupenJ = bodJ >= 0 ? vitalitaBodu(bodJ) : -1;
+  cestaRodokmenu(bodJ);
   stitek(znakAtlas ? T.uzivateluZnak : T.mluvcich, pocetMluvcich(j.mlu));
   stitek(T.rodina, j.rod);
   if (stupenJ >= 0) stitek(T.vitalita, (znakAtlas ? T.aesZnak : T.aes)[stupenJ][0], stupenJ);
@@ -1733,6 +1843,25 @@ function hlaskySrovnani(){
   const h = i >= 0 ? radek(i)[6] : null;
   return Array.isArray(h) ? h : null;
 }
+/* cesta v rodokmenu jako řada štítků (rodina › větve › jazyk); klik otevře rodokmen */
+function cestaRodokmenu(i){
+  const nav = $("k-cesta");
+  nav.textContent = "";
+  if (!(i >= 0) || !strom || !strom.ma(i)) { nav.hidden = true; return; }
+  const uzly = [];
+  for (let u = radek(i)[2]; u >= 0; u = PD.nad[u]) uzly.unshift(u);
+  let zobraz = uzly.map(function(u){ return nazevVetve(u, B[i][3]); });
+  if (zobraz.length > 4) zobraz = [zobraz[0], "…"].concat(zobraz.slice(-2));
+  zobraz.push(jmenoBodu(i));
+  zobraz.forEach(function(n, k){
+    if (k) nav.appendChild(prvek("span", "k-cesta-sip", "›"));
+    const b = prvek("button", k === zobraz.length - 1 ? "posledni" : null, n);
+    b.type = "button";
+    b.addEventListener("click", function(){ strom.otevriPro(i); });
+    nav.appendChild(b);
+  });
+  nav.hidden = false;
+}
 function ukazKartuBodu(i){
   const r = radek(i), kodB = "b" + i;
   const novy = karta.dataset.jazyk !== kodB;
@@ -1749,6 +1878,7 @@ function ukazKartuBodu(i){
   od.textContent = REJSTRIK.rr[B[i][3]] + (oblast ? " · " + oblast : "");
   od.hidden = false;
 
+  cestaRodokmenu(i);
   const znak = ZNAKOVY[i] === 1;                       /* znakový jazyk: vlastní vysvětlení, ne „mluví se“ */
   const wdm = Array.isArray(r[10]) ? r[10] : null;     // [počet, rok, rodilí?] z Wikidat
   if (r[0] >= 0) stitek(T.vitalita, (znak ? T.aesZnak : T.aes)[r[0]][0], r[0]);
@@ -1960,6 +2090,7 @@ if (globusOk) {
     platnoGl.addEventListener("webglcontextrestored", function(){ if (pripravGl()) { nahrajPriznaky(glJaz); teckyZmeneny = true; } });
     cestaPodklad = d3.geoPath(proj, ctxPodklad);
     nactiBarvy();
+    pripravRelief();
     new ResizeObserver(zmer).observe(platno);
     zmer();
     obnovPriznaky();
