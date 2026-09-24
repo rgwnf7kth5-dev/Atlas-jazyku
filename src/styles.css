@@ -99,6 +99,24 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
 .scena canvas{position:absolute; inset:0; width:100%; height:100%}
 #podklad{z-index:1} #gl{z-index:2} #popisky{z-index:3} #globus{z-index:4; touch-action:none; cursor:grab}
 #globus.tahne{cursor:grabbing}
+/* rodokmen: 3D strom rodiny místo glóbu */
+#strom{z-index:4; touch-action:none; cursor:grab}
+#strom.tahne{cursor:grabbing}
+.scena.rezim-strom :is(#podklad,#gl,#popisky,#globus,.hud,.legenda,.napoveda,.ukazatel,.zoom-ovl,#tl-cely,.zeme-okno,.bublina-bod){display:none !important}
+#tl-strom[aria-pressed="true"]{background:var(--cyan-slabe); color:var(--aktivni-text)}
+.strom-hlava{position:absolute; z-index:5; top:14px; right:16px; display:flex; align-items:center; gap:6px; padding:5px; border-radius:999px; max-width:calc(100% - 32px)}
+.strom-hlava label{display:flex; align-items:center; gap:8px; min-width:0; padding-left:8px; font-size:.78rem; font-weight:600; color:var(--text2)}
+.strom-hlava svg{width:17px; height:17px; flex:none; color:var(--cyan)}
+.strom-hlava select{min-width:0; max-width:230px; font:inherit; font-size:.82rem; font-weight:600; color:var(--text); background:var(--plocha); border:1px solid var(--linka2); border-radius:999px; padding:6px 10px; cursor:pointer}
+.strom-hlava button{flex:none; font:inherit; font-size:.78rem; font-weight:600; color:var(--text); background:transparent; border:1px solid var(--linka2); border-radius:999px; padding:6px 12px; cursor:pointer}
+.strom-hlava button:hover,.strom-hlava select:hover{border-color:var(--cyan)}
+.strom-napoveda{position:absolute; z-index:5; left:18px; top:16px; max-width:min(330px,40%); margin:0; font-size:.76rem; line-height:1.45; color:var(--text2); pointer-events:none;
+  padding:8px 12px; border-radius:14px; background:var(--sklo-tl); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border:1px solid var(--linka)}
+.scena:has(.karta:not([hidden])) .strom-napoveda{display:none}
+.tl-rodokmen{display:inline-flex; align-items:center; gap:8px; margin-top:12px; padding:8px 15px; border-radius:999px; cursor:pointer;
+  border:1px solid var(--sklo-okraj); background:var(--plocha); color:var(--text); font:inherit; font-size:.8rem; font-weight:600}
+.tl-rodokmen svg{width:16px; height:16px; color:var(--cyan)}
+.tl-rodokmen:hover{border-color:var(--cyan)}
 .hud{position:absolute; inset:14px; z-index:5; pointer-events:none; font-family:var(--pismo-data); font-size:.64rem; letter-spacing:.1em; color:var(--cyan)}
 .hud .souradnice{position:absolute; left:4px; bottom:3px; opacity:.85; font-variant-numeric:tabular-nums}
 .hud .stav-hud{position:absolute; right:4px; bottom:3px; opacity:.85}
@@ -426,6 +444,9 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
   .dok .tl{padding:8px 11px}
   .dok .zoom-hod{display:none}
   .panel-zobrazeni{position:relative; left:auto; bottom:auto; transform:none; width:auto; max-height:none; margin:0 12px 12px; animation:none}
+  .strom-hlava{top:8px; left:8px; right:8px; max-width:none; justify-content:space-between}
+  .strom-hlava select{max-width:none; flex:1}
+  .strom-napoveda{position:static; max-width:none; margin:0 12px 10px; order:5}
   /* karta jako list, který vyjede zespodu; tažením nahoru se roztáhne */
   .karta{position:fixed; z-index:30; left:0; right:0; bottom:0; top:auto; width:auto; max-height:56vh; border-radius:26px 26px 0 0;
     transition:max-height .3s ease; overscroll-behavior:contain; padding-bottom:env(safe-area-inset-bottom,0px); box-shadow:0 -18px 50px -10px rgba(0,0,0,.55)}

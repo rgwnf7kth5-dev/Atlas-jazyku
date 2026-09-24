@@ -363,5 +363,13 @@
  "izolovane": "Izolované jazyky – nemají příbuzné",
  "nezarazene": "Nezařazené",
  "dalsiJazyky": "Další jazyky ({a})",
- "jazykDneUkaz": "Ukaž mi ho na glóbu"
+ "jazykDneUkaz": "Ukaž mi ho na glóbu",
+ "rodokmen": "Rodokmen",
+ "globus": "Glóbus",
+ "rodokmenPopis": "Rodokmen jazyků: jak jsou si jazyky jedné rodiny příbuzné",
+ "stromPlatno": "Trojrozměrný rodokmen jazykové rodiny",
+ "stromRodina": "Rodina",
+ "stromCely": "Celý strom",
+ "stromNapoveda": "Dole je společný předek celé rodiny. Každý kroužek je místo, kde se jazyk rozdělil na víc jazyků, na koncích větví jsou dnešní jazyky – velké tečky mají pozdrav. Táhni a otáčej, kolečkem přibliž, klikni na větev nebo jazyk.",
+ "stromUkazat": "Ukázat v rodokmenu"
 }

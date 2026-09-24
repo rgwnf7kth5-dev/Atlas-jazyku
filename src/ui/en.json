@@ -363,5 +363,13 @@
  "izolovane": "Isolates – no known relatives",
  "nezarazene": "Unclassified",
  "dalsiJazyky": "More languages ({a})",
- "jazykDneUkaz": "Show me on the globe"
+ "jazykDneUkaz": "Show me on the globe",
+ "rodokmen": "Family tree",
+ "globus": "Globe",
+ "rodokmenPopis": "Language family tree: how the languages of one family are related",
+ "stromPlatno": "Three-dimensional family tree of a language family",
+ "stromRodina": "Family",
+ "stromCely": "Whole tree",
+ "stromNapoveda": "At the bottom is the common ancestor of the whole family. Each ring is a place where a language split into several, and today’s languages sit at the ends of the branches – big dots have a greeting. Drag to turn, scroll to zoom, click a branch or a language.",
+ "stromUkazat": "Show in the family tree"
 }

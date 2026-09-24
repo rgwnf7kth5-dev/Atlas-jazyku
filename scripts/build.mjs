@@ -75,7 +75,7 @@ function sestav(lang, { odkazJinam, artefakt }) {
     .replace("/*__REJSTRIK__*/null", () => doSkriptu(REJSTRIK))
     .replace("/*__PODROBNOSTI__*/null", () => doSkriptu({ wals: podrobnosti.wals, uzly: podrobnosti.uzly, nad: podrobnosti.nad,
                                                           staty: podrobnosti.staty, udhr: podrobnosti.udhr, mapaStatu: podrobnosti.mapaStatu,
-                                                          radky: podrobnosti.radky }));
+                                                          radky: podrobnosti.radky, vetve: json("data/glottolog-branches.cs.json") }));
   const skripty = knihovny.map(k => `<script>${k}</script>`).join("\n") + `\n<script>${skript}</script>`;
 
   const hlavicka =

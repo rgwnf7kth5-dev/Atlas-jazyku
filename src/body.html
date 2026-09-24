@@ -7,6 +7,7 @@
  <symbol id="i-odkaz" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13.5a4.2 4.2 0 0 0 6 .4l3-3a4.2 4.2 0 0 0-6-6l-1.2 1.2"/><path d="M14 10.5a4.2 4.2 0 0 0-6-.4l-3 3a4.2 4.2 0 0 0 6 6l1.2-1.2"/></symbol>
  <symbol id="i-nastaveni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2.2"/><circle cx="9" cy="17" r="2.2"/></symbol>
  <symbol id="i-hvezda" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.6l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z"/></symbol>
+ <symbol id="i-strom" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M12 17.6V12M12 12L6 7.6M12 12V7.2M12 12l6-4.4"/><circle cx="12" cy="19.6" r="2"/><circle cx="5.2" cy="6" r="2"/><circle cx="12" cy="5" r="2"/><circle cx="18.8" cy="6" r="2"/></symbol>
  <symbol id="i-dal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></symbol>
  <symbol id="i-zpet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></symbol>
  <symbol id="i-kostka" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="4.4"/><circle cx="8.4" cy="8.4" r="1.4" fill="currentColor" stroke="none"/><circle cx="15.6" cy="15.6" r="1.4" fill="currentColor" stroke="none"/><circle cx="15.6" cy="8.4" r="1.4" fill="currentColor" stroke="none"/><circle cx="8.4" cy="15.6" r="1.4" fill="currentColor" stroke="none"/></symbol>
@@ -52,6 +53,12 @@
    <canvas id="gl" aria-hidden="true"></canvas>
    <canvas id="popisky" aria-hidden="true"></canvas>
    <canvas id="globus" role="img" aria-label="{{platno}}" data-t-aria-label="platno"></canvas>
+   <canvas id="strom" role="img" hidden aria-label="{{stromPlatno}}" data-t-aria-label="stromPlatno"></canvas>
+   <div class="strom-hlava sklo" id="strom-hlava" hidden>
+    <label><svg aria-hidden="true"><use href="#i-strom"/></svg><span data-t="stromRodina">{{stromRodina}}</span><select id="strom-rodina"></select></label>
+    <button type="button" id="strom-cely" data-t="stromCely">{{stromCely}}</button>
+   </div>
+   <p class="strom-napoveda" id="strom-napoveda" hidden data-t="stromNapoveda">{{stromNapoveda}}</p>
    <div class="hud" id="hud" aria-hidden="true"><span class="souradnice" id="hud-souradnice"></span><span class="stav-hud" id="hud-stav"></span></div>
    <div class="dok sklo" id="dok">
     <button class="tl hlavni" id="tl-nahoda" type="button"><svg aria-hidden="true"><use href="#i-kostka"/></svg><span data-t="prekvap">{{prekvap}}</span></button>
@@ -61,6 +68,7 @@
      <span class="zoom-hod" id="zoom-hod">1,0&times;</span>
      <button class="kolo" id="tl-priblizi" type="button" aria-label="{{priblizit}}" data-t-aria-label="priblizit"><svg aria-hidden="true"><use href="#i-plus"/></svg></button>
     </div>
+    <button class="tl" id="tl-strom" type="button" aria-pressed="false" title="{{rodokmenPopis}}" data-t-title="rodokmenPopis"><svg aria-hidden="true"><use href="#i-strom"/></svg><span data-t="rodokmen">{{rodokmen}}</span></button>
     <button class="tl" id="tl-zobrazeni" type="button" aria-expanded="false" aria-controls="panel-zobrazeni" title="{{zobrazeniPopis}}" data-t-title="zobrazeniPopis"><svg aria-hidden="true"><use href="#i-nastaveni"/></svg><span data-t="zobrazeni">{{zobrazeni}}</span><b class="odznak-filtr" id="zobrazeni-pocet" hidden></b></button>
    </div>
    <div class="panel-zobrazeni sklo" id="panel-zobrazeni" hidden>
