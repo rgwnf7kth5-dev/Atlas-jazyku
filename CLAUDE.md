@@ -221,6 +221,22 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a živý web workflow Diag
   (mluvčí, vitalita, společné státy). Rodokmen ukáže obě cesty a přiblíží společného předka.
   Druhý jazyk má fialovou, když je ze stejné barevné skupiny jako první. Odkaz `#cs~ar`. Nic se nedomýšlí:
   výpůjčky slov ani podobnost slovní zásoby v datech nemáme, proto je srovnání neukazuje.
+- **Typologické mapy (WALS)** (25. 9. 2026, první funkce nového „vážného“ směru): Zobrazení › **Typologie (WALS)**
+  nabídne 24 vlastností v pěti oblastech (fonologie, morfologie, slovosled, větná stavba, slovní zásoba). Výběr, odborné
+  texty cs/en (název, popis, přesné hodnoty WALS a skupiny pro barvy) jsou ručně v `data/typologie-popis.json`; hodnoty
+  pro každou tečku vyrábí `node scripts/typologie.mjs` → `data/typologie.json` (znak na tečku, 0 = bez údaje; nářečí
+  z WALS se připojí k jazyku). Build je vkládá jako `TYP`, validace hlídá, že skupiny pokrývají každou hodnotu a že
+  barevných skupin je nejvýš 5 (nominální, `kat`) / 7 (seřazené, `rada`). **Příklady v popisech musí odpovídat datům
+  WALS** – při psaní se ukázalo, že WALS vede češtinu u otázek jako „slovosled“, baskičtinu a gruzínštinu jako
+  aktivní–inaktivní a francouzštinu u záporu jako částici; ověřovat v `.cache/wals-values.csv`.
+  Tečky se barví stejnou cestou jako vitalita (`barvit()`, `barvyVrstvy()`, `hodnotaVrstvy()`, buffer `glJaz.typ`);
+  jedna barevná vrstva naráz, otevřené stupně vitality mají přednost (`typZobrazena`). Paleta `--typ-1…5`, `--typ-jine`
+  (barva inkoustu), `--typ-nic`, stupnice `--typ-r0…r6` na konci `styles.css` – ověřená pro všechny dvojice (mapa!),
+  pořadí neměnit. Legenda vpravo dole (na telefonu pod lištou) s popisky, počty, popisem a odkazem na kapitolu WALS;
+  klepnutí na hodnotu ji zvýrazní (`typIzolace`). Volba se pamatuje (`atlas-typologie`). Karta tečky i jazyka z atlasu
+  má záložku **Stavba** (`oddilTypologie`) s přesnými hodnotami; název vlastnosti ji ukáže na mapě. Srovnání dvou jazyků
+  bere stavbu také z `TYP`. Dřívější dětské texty WALS (`T.wals`, „Pes kost hryže“) jsou pryč; `r[5]` v podrobnostech
+  se už nepoužívá.
 - **Evropský den jazyků** (26. září, Rada Evropy od roku 2001): ten den **místo Jazyka dne** karta „Evropské jazyky“
   (přání uživatele 25. 9. 2026: „ukázat je najednou s odůvodněním proč“) – odstavec „Proč dnes?“ (Rada Evropy 2001,
   přes 200 jazyků v Evropě, povzbudit k učení), tlačítka „Ukaž je všechny na glóbu“ (`spustEU("evropa")`: stejné

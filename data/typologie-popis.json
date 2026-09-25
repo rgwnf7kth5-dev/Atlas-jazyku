@@ -1,0 +1,1659 @@
+{
+ "_pozn": "Vybrané vlastnosti WALS (Dryer & Haspelmath 2013, CC BY 4.0). Hodnoty = kódy WALS, třídy = skupiny pro barvy mapy (max. 5 barev + „jine“). Texty psané pro dospělé čtenáře, odborně. scripts/typologie.mjs z nich a z WALS vyrobí data/typologie.json.",
+ "oblasti": {
+  "fonologie": {
+   "cs": "Fonologie",
+   "en": "Phonology"
+  },
+  "morfologie": {
+   "cs": "Morfologie",
+   "en": "Morphology"
+  },
+  "slovosled": {
+   "cs": "Slovosled",
+   "en": "Word order"
+  },
+  "veta": {
+   "cs": "Větná stavba",
+   "en": "Clause structure"
+  },
+  "slovnik": {
+   "cs": "Slovní zásoba",
+   "en": "Lexicon"
+  }
+ },
+ "vlastnosti": [
+  {
+   "id": "1A",
+   "oblast": "fonologie",
+   "druh": "rada",
+   "nazev": {
+    "cs": "Souhláskový inventář",
+    "en": "Consonant inventories"
+   },
+   "popis": {
+    "cs": "Počet souhláskových fonémů jazyka. Hranice kategorií podle WALS: malý 6–14, středně malý 15–18, průměrný 19–25, středně velký 26–33, velký 34 a více.",
+    "en": "The number of consonant phonemes. WALS category limits: small 6–14, moderately small 15–18, average 19–25, moderately large 26–33, large 34 or more."
+   },
+   "hodnoty": {
+    "1": {
+     "cs": "malý (6–14)",
+     "en": "Small (6–14)"
+    },
+    "2": {
+     "cs": "středně malý (15–18)",
+     "en": "Moderately small (15–18)"
+    },
+    "3": {
+     "cs": "průměrný (19–25)",
+     "en": "Average (19–25)"
+    },
+    "4": {
+     "cs": "středně velký (26–33)",
+     "en": "Moderately large (26–33)"
+    },
+    "5": {
+     "cs": "velký (34 a více)",
+     "en": "Large (34 or more)"
+    }
+   },
+   "tridy": [
+    {
+     "wals": [
+      1
+     ],
+     "cs": "malý (6–14)",
+     "en": "small (6–14)"
+    },
+    {
+     "wals": [
+      2
+     ],
+     "cs": "středně malý (15–18)",
+     "en": "moderately small (15–18)"
+    },
+    {
+     "wals": [
+      3
+     ],
+     "cs": "průměrný (19–25)",
+     "en": "average (19–25)"
+    },
+    {
+     "wals": [
+      4
+     ],
+     "cs": "středně velký (26–33)",
+     "en": "moderately large (26–33)"
+    },
+    {
+     "wals": [
+      5
+     ],
+     "cs": "velký (34 a více)",
+     "en": "large (34 or more)"
+    }
+   ]
+  },
+  {
+   "id": "2A",
+   "oblast": "fonologie",
+   "druh": "rada",
+   "nazev": {
+    "cs": "Samohláskový inventář",
+    "en": "Vowel quality inventories"
+   },
+   "popis": {
+    "cs": "Počet samohláskových kvalit bez ohledu na délku, nosovost a další rysy, které kvalitu nemění.",
+    "en": "The number of vowel qualities, disregarding length, nasalization and other features that do not change quality."
+   },
+   "hodnoty": {
+    "1": {
+     "cs": "malý (2–4 kvality)",
+     "en": "Small (2–4)"
+    },
+    "2": {
+     "cs": "průměrný (5–6 kvalit)",
+     "en": "Average (5–6)"
+    },
+    "3": {
+     "cs": "velký (7–14 kvalit)",
+     "en": "Large (7–14)"
+    }
+   },
+   "tridy": [
+    {
+     "wals": [
+      1
+     ],
+     "cs": "malý (2–4)",
+     "en": "small (2–4)"
+    },
+    {
+     "wals": [
+      2
+     ],
+     "cs": "průměrný (5–6)",
+     "en": "average (5–6)"
+    },
+    {
+     "wals": [
+      3
+     ],
+     "cs": "velký (7–14)",
+     "en": "large (7–14)"
+    }
+   ]
+  },
+  {
+   "id": "12A",
+   "oblast": "fonologie",
+   "druh": "rada",
+   "nazev": {
+    "cs": "Stavba slabiky",
+    "en": "Syllable structure"
+   },
+   "popis": {
+    "cs": "Nejsložitější slabika, kterou jazyk dovoluje. Jednoduchá: nejvýš jedna souhláska před samohláskou (C)V. Středně složitá: CVC nebo dvě souhlásky na začátku, z nichž druhá je likvida nebo polosamohláska. Složitá: delší shluky souhlásek.",
+    "en": "The most complex syllable a language allows. Simple: at most one consonant before the vowel, (C)V. Moderately complex: CVC, or two initial consonants the second of which is a liquid or glide. Complex: longer consonant clusters."
+   },
+   "hodnoty": {
+    "1": {
+     "cs": "jednoduchá",
+     "en": "Simple"
+    },
+    "2": {
+     "cs": "středně složitá",
+     "en": "Moderately complex"
+    },
+    "3": {
+     "cs": "složitá",
+     "en": "Complex"
+    }
+   },
+   "tridy": [
+    {
+     "wals": [
+      1
+     ],
+     "cs": "jednoduchá",
+     "en": "simple"
+    },
+    {
+     "wals": [
+      2
+     ],
+     "cs": "středně složitá",
+     "en": "moderately complex"
+    },
+    {
+     "wals": [
+      3
+     ],
+     "cs": "složitá",
+     "en": "complex"
+    }
+   ]
+  },
+  {
+   "id": "13A",
+   "oblast": "fonologie",
+   "druh": "rada",
+   "nazev": {
+    "cs": "Tóny",
+    "en": "Tone"
+   },
+   "popis": {
+    "cs": "Zda výška tónu rozlišuje slova nebo mluvnické tvary. Jednoduchý systém má dvě tónové úrovně, složitý tři a více nebo tónové průběhy.",
+    "en": "Whether pitch distinguishes words or grammatical forms. A simple system has two tone levels, a complex one three or more, or contour tones."
+   },
+   "hodnoty": {
+    "1": {
+     "cs": "bez tónů",
+     "en": "No tones"
+    },
+    "2": {
+     "cs": "jednoduchý tónový systém",
+     "en": "Simple tone system"
+    },
+    "3": {
+     "cs": "složitý tónový systém",
+     "en": "Complex tone system"
+    }
+   },
+   "tridy": [
+    {
+     "wals": [
+      1
+     ],
+     "cs": "bez tónů",
+     "en": "no tones"
+    },
+    {
+     "wals": [
+      2
+     ],
+     "cs": "jednoduchý tónový systém",
+     "en": "simple tone system"
+    },
+    {
+     "wals": [
+      3
+     ],
+     "cs": "složitý tónový systém",
+     "en": "complex tone system"
+    }
+   ]
+  },
+  {
+   "id": "19A",
+   "oblast": "fonologie",
+   "druh": "kat",
+   "nazev": {
+    "cs": "Neobvyklé souhlásky",
+    "en": "Presence of uncommon consonants"
+   },
+   "popis": {
+    "cs": "Výskyt čtyř typů souhlásek, které jsou ve světě vzácné: mlaskavek (kliků), labiovelár (současné uzávěry rty a zadní částí jazyka, [k͡p], [ɡ͡b]), faryngál a zubních frikativ („th“, [θ], [ð]).",
+    "en": "The presence of four consonant types that are rare worldwide: clicks, labial-velars (simultaneous closure at the lips and velum, [k͡p], [ɡ͡b]), pharyngeals and dental fricatives ('th', [θ], [ð])."
+   },
+   "hodnoty": {
+    "1": {
+     "cs": "žádné z nich",
+     "en": "None"
+    },
+    "2": {
+     "cs": "mlaskavky",
+     "en": "Clicks"
+    },
+    "3": {
+     "cs": "labioveláry",
+     "en": "Labial-velars"
+    },
+    "4": {
+     "cs": "faryngály",
+     "en": "Pharyngeals"
+    },
+    "5": {
+     "cs": "zubní frikativy („th“)",
+     "en": "'Th' sounds"
+    },
+    "6": {
+     "cs": "mlaskavky, faryngály i „th“",
+     "en": "Clicks, pharyngeals and 'th'"
+    },
+    "7": {
+     "cs": "faryngály i „th“",
+     "en": "Pharyngeals and 'th'"
+    }
+   },
+   "tridy": [
+    {
+     "wals": [
+      2
+     ],
+     "cs": "mlaskavky",
+     "en": "clicks"
+    },
+    {
+     "wals": [
+      3
+     ],
+     "cs": "labioveláry",
+     "en": "labial-velars"
+    },
+    {
+     "wals": [
+      4
+     ],
+     "cs": "faryngály",
+     "en": "pharyngeals"
+    },
+    {
+     "wals": [
+      5
+     ],
+     "cs": "zubní frikativy („th“)",
+     "en": "'th' sounds"
+    },
+    {
+     "wals": [
+      6,
+      7
+     ],
+     "cs": "více těchto typů",
+     "en": "several of these types"
+    },
+    {
+     "wals": [
+      1
+     ],
+     "cs": "žádné z nich",
+     "en": "none",
+     "barva": "jine"
+    }
+   ]
+  },
+  {
+   "id": "26A",
+   "oblast": "morfologie",
+   "druh": "kat",
+   "nazev": {
+    "cs": "Předpony a přípony v ohýbání",
+    "en": "Prefixing vs. suffixing in inflectional morphology"
+   },
+   "popis": {
+    "cs": "Zda jazyk vyjadřuje mluvnické kategorie (pád, osobu, čas…) spíše příponami, nebo předponami. WALS rozlišuje silnou a slabou převahu; zde jsou obě sloučené.",
+    "en": "Whether a language expresses grammatical categories (case, person, tense…) mainly with suffixes or with prefixes. WALS distinguishes strong and weak preference; here the two are merged."
+   },
+   "hodnoty": {
+    "1": {
+     "cs": "málo afixace",
+     "en": "Little affixation"
+    },
+    "2": {
+     "cs": "výrazně příponový",
+     "en": "Strongly suffixing"
+    },
+    "3": {
+     "cs": "mírně příponový",
+     "en": "Weakly suffixing"
+    },
+    "4": {
+     "cs": "předpony a přípony stejně",
+     "en": "Equal prefixing and suffixing"
+    },
+    "5": {
+     "cs": "mírně předponový",
+     "en": "Weakly prefixing"
+    },
+    "6": {
+     "cs": "výrazně předponový",
+     "en": "Strongly prefixing"
+    }
+   },
+   "tridy": [
+    {
+     "wals": [
+      2,
+      3
+     ],
+     "cs": "převážně přípony",
+     "en": "mainly suffixing"
+    },
+    {
+     "wals": [
+      5,
+      6
+     ],
+     "cs": "převážně předpony",
+     "en": "mainly prefixing"
+    },
+    {
+     "wals": [
+      4
+     ],
+     "cs": "předpony i přípony stejně",
+     "en": "equal prefixing and suffixing"
+    },
+    {
+     "wals": [
+      1
+     ],
+     "cs": "málo afixace",
+     "en": "little affixation",
+     "barva": "jine"
+    }
+   ]
+  },
+  {
+   "id": "30A",
+   "oblast": "morfologie",
+   "druh": "rada",
+   "nazev": {
+    "cs": "Počet jmenných rodů",
+    "en": "Number of genders"
+   },
+   "popis": {
+    "cs": "Počet tříd podstatných jmen, které se projevují shodou (u přídavných jmen, zájmen, sloves). Sem patří i systémy jmenných tříd, např. v bantuských jazycích.",
+    "en": "The number of noun classes reflected in agreement (on adjectives, pronouns, verbs). This includes noun-class systems such as those of Bantu languages."
+   },
+   "hodnoty": {
+    "1": {
+     "cs": "žádný",
+     "en": "None"
+    },
+    "2": {
+     "cs": "dva",
+     "en": "Two"
+    },
+    "3": {
+     "cs": "tři",
+     "en": "Three"
+    },
+    "4": {
+     "cs": "čtyři",
+     "en": "Four"
+    },
+    "5": {
+     "cs": "pět a více",
+     "en": "Five or more"
+    }
+   },
+   "tridy": [
+    {
+     "wals": [
+      1
+     ],
+     "cs": "žádný",
+     "en": "none"
+    },
+    {
+     "wals": [
+      2
+     ],
+     "cs": "dva",
+     "en": "two"
+    },
+    {
+     "wals": [
+      3
+     ],
+     "cs": "tři",
+     "en": "three"
+    },
+    {
+     "wals": [
+      4
+     ],
+     "cs": "čtyři",
+     "en": "four"
+    },
+    {
+     "wals": [
+      5
+     ],
+     "cs": "pět a více",
+     "en": "five or more"
+    }
+   ]
+  },
+  {
+   "id": "49A",
+   "oblast": "morfologie",
+   "druh": "rada",
+   "nazev": {
+    "cs": "Počet pádů",
+    "en": "Number of cases"
+   },
+   "popis": {
+    "cs": "Počet pádů vyjadřovaných tvary podstatných jmen (koncovkami, předponami, změnou kmene). Předložky se nepočítají. „Okrajové“ jsou jazyky, kde pádové značení existuje jen v omezené míře.",
+    "en": "The number of cases expressed in the forms of nouns (endings, prefixes, stem changes). Adpositions are not counted. 'Borderline' languages have case marking only to a limited extent."
+   },
+   "hodnoty": {
+    "1": {
+     "cs": "žádné morfologické pády",
+     "en": "No morphological case-marking"
+    },
+    "2": {
+     "cs": "2 pády",
+     "en": "2 cases"
+    },
+    "3": {
+     "cs": "3 pády",
+     "en": "3 cases"
+    },
+    "4": {
+     "cs": "4 pády",
+     "en": "4 cases"
+    },
+    "5": {
+     "cs": "5 pádů",
+     "en": "5 cases"
+    },
+    "6": {
+     "cs": "6–7 pádů",
+     "en": "6–7 cases"
+    },
+    "7": {
+     "cs": "8–9 pádů",
+     "en": "8–9 cases"
+    },
+    "8": {
+     "cs": "10 a více pádů",
+     "en": "10 or more cases"
+    },
+    "9": {
+     "cs": "jen okrajové pádové značení",
+     "en": "Exclusively borderline case-marking"
+    }
+   },
+   "tridy": [
+    {
+     "wals": [
+      1
+     ],
+     "cs": "žádné",
+     "en": "none"
+    },
+    {
+     "wals": [
+      2,
+      3
+     ],
+     "cs": "2–3",
+     "en": "2–3"
+    },
+    {
+     "wals": [
+      4,
+      5
+     ],
+     "cs": "4–5",
+     "en": "4–5"
+    },
+    {
+     "wals": [
+      6
+     ],
+     "cs": "6–7",
+     "en": "6–7"
+    },
+    {
+     "wals": [
+      7
+     ],
+     "cs": "8–9",
+     "en": "8–9"
+    },
+    {
+     "wals": [
+      8
+     ],
+     "cs": "10 a více",
+     "en": "10 or more"
+    },
+    {
+     "wals": [
+      9
+     ],
+     "cs": "jen okrajové pádové značení",
+     "en": "borderline case-marking only",
+     "barva": "jine"
+    }
+   ]
+  },
+  {
+   "id": "37A",
+   "oblast": "morfologie",
+   "druh": "kat",
+   "nazev": {
+    "cs": "Určitý člen",
+    "en": "Definite articles"
+   },
+   "popis": {
+    "cs": "Zda má jazyk určitý člen (jako anglické the) a jakou má podobu: samostatné slovo, ukazovací zájmeno v roli členu, nebo afix (například přípona v rumunštině či ve skandinávských jazycích).",
+    "en": "Whether a language has a definite article (like English the) and in what form: a separate word, a demonstrative used as an article, or an affix (such as the suffix in Romanian or the Scandinavian languages)."
+   },
+   "hodnoty": {
+    "1": {
+     "cs": "samostatné slovo odlišné od ukazovacího zájmena",
+     "en": "Definite word distinct from demonstrative"
+    },
+    "2": {
+     "cs": "ukazovací zájmeno ve funkci členu",
+     "en": "Demonstrative word used as definite article"
+    },
+    "3": {
+     "cs": "afix",
+     "en": "Definite affix"
+    },
+    "4": {
+     "cs": "jen neurčitý člen",
+     "en": "No definite, but indefinite article"
+    },
+    "5": {
+     "cs": "bez členů",
+     "en": "No definite or indefinite article"
+    }
+   },
+   "tridy": [
+    {
+     "wals": [
+      1
+     ],
+     "cs": "samostatné slovo",
+     "en": "separate word"
+    },
+    {
+     "wals": [
+      2
+     ],
+     "cs": "ukazovací zájmeno jako člen",
+     "en": "demonstrative used as article"
+    },
+    {
+     "wals": [
+      3
+     ],
+     "cs": "afix",
+     "en": "affix"
+    },
+    {
+     "wals": [
+      4
+     ],
+     "cs": "jen neurčitý člen",
+     "en": "indefinite article only"
+    },
+    {
+     "wals": [
+      5
+     ],
+     "cs": "bez členů",
+     "en": "no articles",
+     "barva": "jine"
+    }
+   ]
+  },
+  {
+   "id": "38A",
+   "oblast": "morfologie",
+   "druh": "kat",
+   "nazev": {
+    "cs": "Neurčitý člen",
+    "en": "Indefinite articles"
+   },
+   "popis": {
+    "cs": "Zda má jazyk neurčitý člen (jako anglické a) a zda je shodný s číslovkou „jeden“.",
+    "en": "Whether a language has an indefinite article (like English a) and whether it is the same as the numeral 'one'."
+   },
+   "hodnoty": {
+    "1": {
+     "cs": "samostatné slovo odlišné od číslovky „jeden“",
+     "en": "Indefinite word distinct from 'one'"
+    },
+    "2": {
+     "cs": "stejné slovo jako „jeden“",
+     "en": "Indefinite word same as 'one'"
+    },
+    "3": {
+     "cs": "afix",
+     "en": "Indefinite affix"
+    },
+    "4": {
+     "cs": "jen určitý člen",
+     "en": "No indefinite, but definite article"
+    },
+    "5": {
+     "cs": "bez členů",
+     "en": "No definite or indefinite article"
+    }
+   },
+   "tridy": [
+    {
+     "wals": [
+      1
+     ],
+     "cs": "odlišné od „jeden“",
+     "en": "distinct from 'one'"
+    },
+    {
+     "wals": [
+      2
+     ],
+     "cs": "stejné jako „jeden“",
+     "en": "same as 'one'"
+    },
+    {
+     "wals": [
+      3
+     ],
+     "cs": "afix",
+     "en": "affix"
+    },
+    {
+     "wals": [
+      4
+     ],
+     "cs": "jen určitý člen",
+     "en": "definite article only"
+    },
+    {
+     "wals": [
+      5
+     ],
+     "cs": "bez členů",
+     "en": "no articles",
+     "barva": "jine"
+    }
+   ]
+  },
+  {
+   "id": "81A",
+   "oblast": "slovosled",
+   "druh": "kat",
+   "nazev": {
+    "cs": "Pořadí podmětu, předmětu a slovesa",
+    "en": "Order of subject, object and verb"
+   },
+   "popis": {
+    "cs": "Převládající pořadí podmětu (S), předmětu (O) a slovesa (V) v oznamovací větě s plnými jmennými frázemi. Čeština je podle WALS SVO. Pořadí se slovesem na začátku (VSO, VOS) a s předmětem na začátku (OVS, OSV) jsou zde sloučená.",
+    "en": "The dominant order of subject (S), object (O) and verb (V) in declarative clauses with full noun phrases. Czech is SVO according to WALS. Verb-initial (VSO, VOS) and object-initial (OVS, OSV) orders are merged here."
+   },
+   "hodnoty": {
+    "1": {
+     "cs": "SOV",
+     "en": "SOV"
+    },
+    "2": {
+     "cs": "SVO",
+     "en": "SVO"
+    },
+    "3": {
+     "cs": "VSO",
+     "en": "VSO"
+    },
+    "4": {
+     "cs": "VOS",
+     "en": "VOS"
+    },
+    "5": {
+     "cs": "OVS",
+     "en": "OVS"
+    },
+    "6": {
+     "cs": "OSV",
+     "en": "OSV"
+    },
+    "7": {
+     "cs": "bez převládajícího pořadí",
+     "en": "No dominant order"
+    }
+   },
+   "tridy": [
+    {
+     "wals": [
+      1
+     ],
+     "cs": "SOV",
+     "en": "SOV"
+    },
+    {
+     "wals": [
+      2
+     ],
+     "cs": "SVO",
+     "en": "SVO"
+    },
+    {
+     "wals": [
+      3,
+      4
+     ],
+     "cs": "sloveso na začátku (VSO, VOS)",
+     "en": "verb-initial (VSO, VOS)"
+    },
+    {
+     "wals": [
+      5,
+      6
+     ],
+     "cs": "předmět na začátku (OVS, OSV)",
+     "en": "object-initial (OVS, OSV)"
+    },
+    {
+     "wals": [
+      7
+     ],
+     "cs": "bez převládajícího pořadí",
+     "en": "no dominant order",
+     "barva": "jine"
+    }
+   ]
+  },
+  {
+   "id": "83A",
+   "oblast": "slovosled",
+   "druh": "kat",
+   "nazev": {
+    "cs": "Pořadí předmětu a slovesa",
+    "en": "Order of object and verb"
+   },
+   "popis": {
+    "cs": "Zda předmět převážně stojí před slovesem (OV), nebo za ním (VO). Patří k nejdůležitějším slovosledným parametrům, s nímž souvisí řada dalších.",
+    "en": "Whether the object mainly precedes the verb (OV) or follows it (VO). One of the most important word-order parameters, correlating with many others."
+   },
+   "hodnoty": {
+    "1": {
+     "cs": "OV",
+     "en": "OV"
+    },
+    "2": {
+     "cs": "VO",
+     "en": "VO"
+    },
+    "3": {
+     "cs": "bez převládajícího pořadí",
+     "en": "No dominant order"
+    }
+   },
+   "tridy": [
+    {
+     "wals": [
+      1
+     ],
+     "cs": "OV",
+     "en": "OV"
+    },
+    {
+     "wals": [
+      2
+     ],
+     "cs": "VO",
+     "en": "VO"
+    },
+    {
+     "wals": [
+      3
+     ],
+     "cs": "bez převládajícího pořadí",
+     "en": "no dominant order",
+     "barva": "jine"
+    }
+   ]
+  },
+  {
+   "id": "85A",
+   "oblast": "slovosled",
+   "druh": "kat",
+   "nazev": {
+    "cs": "Předložky a záložky",
+    "en": "Order of adposition and noun phrase"
+   },
+   "popis": {
+    "cs": "Zda jazyk užívá předložky (před jménem, „v domě“), nebo záložky (za jménem, turecké ev için „dům pro“). Vnitřní adpozice (uvnitř jmenné fráze) jsou vzácné a patří zde k „jiným“.",
+    "en": "Whether a language uses prepositions (before the noun, 'in the house') or postpositions (after it, Turkish ev için 'house for'). Inpositions (inside the noun phrase) are rare and grouped here with 'other'."
+   },
+   "hodnoty": {
+    "1": {
+     "cs": "záložky (postpozice)",
+     "en": "Postpositions"
+    },
+    "2": {
+     "cs": "předložky (prepozice)",
+     "en": "Prepositions"
+    },
+    "3": {
+     "cs": "vnitřní adpozice",
+     "en": "Inpositions"
+    },
+    "4": {
+     "cs": "bez převládajícího pořadí",
+     "en": "No dominant order"
+    },
+    "5": {
+     "cs": "bez adpozic",
+     "en": "No adpositions"
+    }
+   },
+   "tridy": [
+    {
+     "wals": [
+      1
+     ],
+     "cs": "záložky",
+     "en": "postpositions"
+    },
+    {
+     "wals": [
+      2
+     ],
+     "cs": "předložky",
+     "en": "prepositions"
+    },
+    {
+     "wals": [
+      5
+     ],
+     "cs": "bez adpozic",
+     "en": "no adpositions"
+    },
+    {
+     "wals": [
+      3,
+      4
+     ],
+     "cs": "jiné (vnitřní, bez převládajícího pořadí)",
+     "en": "other (inpositions, no dominant order)",
+     "barva": "jine"
+    }
+   ]
+  },
+  {
+   "id": "86A",
+   "oblast": "slovosled",
+   "druh": "kat",
+   "nazev": {
+    "cs": "Pořadí genitivu a jména",
+    "en": "Order of genitive and noun"
+   },
+   "popis": {
+    "cs": "Zda přivlastňovací (genitivní) člen stojí před řídícím jménem („Petrův dům“, angl. John's house), nebo za ním („dům Petra“).",
+    "en": "Whether the possessor (genitive) precedes the head noun (John's house) or follows it (the house of John)."
+   },
+   "hodnoty": {
+    "1": {
+     "cs": "genitiv – jméno",
+     "en": "Genitive–Noun"
+    },
+    "2": {
+     "cs": "jméno – genitiv",
+     "en": "Noun–Genitive"
+    },
+    "3": {
+     "cs": "bez převládajícího pořadí",
+     "en": "No dominant order"
+    }
+   },
+   "tridy": [
+    {
+     "wals": [
+      1
+     ],
+     "cs": "genitiv – jméno",
+     "en": "genitive–noun"
+    },
+    {
+     "wals": [
+      2
+     ],
+     "cs": "jméno – genitiv",
+     "en": "noun–genitive"
+    },
+    {
+     "wals": [
+      3
+     ],
+     "cs": "bez převládajícího pořadí",
+     "en": "no dominant order",
+     "barva": "jine"
+    }
+   ]
+  },
+  {
+   "id": "87A",
+   "oblast": "slovosled",
+   "druh": "kat",
+   "nazev": {
+    "cs": "Pořadí přídavného jména a jména",
+    "en": "Order of adjective and noun"
+   },
+   "popis": {
+    "cs": "Zda přívlastkové přídavné jméno převážně stojí před jménem („velký dům“), nebo za ním (franc. maison blanche).",
+    "en": "Whether an attributive adjective mainly precedes the noun (big house) or follows it (French maison blanche)."
+   },
+   "hodnoty": {
+    "1": {
+     "cs": "přídavné jméno – jméno",
+     "en": "Adjective–Noun"
+    },
+    "2": {
+     "cs": "jméno – přídavné jméno",
+     "en": "Noun–Adjective"
+    },
+    "3": {
+     "cs": "bez převládajícího pořadí",
+     "en": "No dominant order"
+    },
+    "4": {
+     "cs": "jen vnitřně řízené vztažné věty",
+     "en": "Only internally-headed relative clauses"
+    }
+   },
+   "tridy": [
+    {
+     "wals": [
+      1
+     ],
+     "cs": "přídavné jméno – jméno",
+     "en": "adjective–noun"
+    },
+    {
+     "wals": [
+      2
+     ],
+     "cs": "jméno – přídavné jméno",
+     "en": "noun–adjective"
+    },
+    {
+     "wals": [
+      3,
+      4
+     ],
+     "cs": "jiné (bez převládajícího pořadí)",
+     "en": "other (no dominant order)",
+     "barva": "jine"
+    }
+   ]
+  },
+  {
+   "id": "88A",
+   "oblast": "slovosled",
+   "druh": "kat",
+   "nazev": {
+    "cs": "Pořadí ukazovacího zájmena a jména",
+    "en": "Order of demonstrative and noun"
+   },
+   "popis": {
+    "cs": "Zda ukazovací zájmeno stojí před jménem („ten dům“), za ním, nebo je afixem připojeným ke jménu.",
+    "en": "Whether the demonstrative precedes the noun (that house), follows it, or is an affix attached to the noun."
+   },
+   "hodnoty": {
+    "1": {
+     "cs": "ukazovací zájmeno – jméno",
+     "en": "Demonstrative–Noun"
+    },
+    "2": {
+     "cs": "jméno – ukazovací zájmeno",
+     "en": "Noun–Demonstrative"
+    },
+    "3": {
+     "cs": "ukazovací předpona",
+     "en": "Demonstrative prefix"
+    },
+    "4": {
+     "cs": "ukazovací přípona",
+     "en": "Demonstrative suffix"
+    },
+    "5": {
+     "cs": "před i za jménem",
+     "en": "Demonstrative before and after noun"
+    },
+    "6": {
+     "cs": "smíšené",
+     "en": "Mixed"
+    }
+   },
+   "tridy": [
+    {
+     "wals": [
+      1
+     ],
+     "cs": "před jménem",
+     "en": "before the noun"
+    },
+    {
+     "wals": [
+      2
+     ],
+     "cs": "za jménem",
+     "en": "after the noun"
+    },
+    {
+     "wals": [
+      3,
+      4
+     ],
+     "cs": "afix (předpona, přípona)",
+     "en": "affix (prefix, suffix)"
+    },
+    {
+     "wals": [
+      5,
+      6
+     ],
+     "cs": "jiné (před i za jménem, smíšené)",
+     "en": "other (both sides, mixed)",
+     "barva": "jine"
+    }
+   ]
+  },
+  {
+   "id": "98A",
+   "oblast": "veta",
+   "druh": "kat",
+   "nazev": {
+    "cs": "Zarovnání pádového značení",
+    "en": "Alignment of case marking of full noun phrases"
+   },
+   "popis": {
+    "cs": "Jak pádové tvary plných jmenných frází odlišují podmět nepřechodného slovesa (S), činitele (A) a zasažený předmět (P) přechodného slovesa. Nominativ–akuzativ: S = A ≠ P (čeština). Ergativ–absolutiv: S = P ≠ A (např. lezginština). Tripartitní: všechny tři odlišné. Aktivní–inaktivní: podmět se značí podle toho, zda děj ovládá (WALS sem řadí baskičtinu a gruzínštinu). Neutrální: bez rozlišení.",
+    "en": "How the case forms of full noun phrases distinguish the single argument of an intransitive verb (S) from the agent (A) and patient (P) of a transitive verb. Nominative–accusative: S = A ≠ P. Ergative–absolutive: S = P ≠ A (e.g. Lezgian). Tripartite: all three differ. Active–inactive: marking depends on control (WALS places Basque and Georgian here). Neutral: no distinction."
+   },
+   "hodnoty": {
+    "1": {
+     "cs": "neutrální",
+     "en": "Neutral"
+    },
+    "2": {
+     "cs": "nominativ – akuzativ (standardní)",
+     "en": "Nominative–accusative (standard)"
+    },
+    "3": {
+     "cs": "nominativ – akuzativ (se značeným nominativem)",
+     "en": "Nominative–accusative (marked nominative)"
+    },
+    "4": {
+     "cs": "ergativ – absolutiv",
+     "en": "Ergative–absolutive"
+    },
+    "5": {
+     "cs": "tripartitní",
+     "en": "Tripartite"
+    },
+    "6": {
+     "cs": "aktivní – inaktivní",
+     "en": "Active–inactive"
+    }
+   },
+   "tridy": [
+    {
+     "wals": [
+      2,
+      3
+     ],
+     "cs": "nominativ – akuzativ",
+     "en": "nominative–accusative"
+    },
+    {
+     "wals": [
+      4
+     ],
+     "cs": "ergativ – absolutiv",
+     "en": "ergative–absolutive"
+    },
+    {
+     "wals": [
+      5
+     ],
+     "cs": "tripartitní",
+     "en": "tripartite"
+    },
+    {
+     "wals": [
+      6
+     ],
+     "cs": "aktivní – inaktivní",
+     "en": "active–inactive"
+    },
+    {
+     "wals": [
+      1
+     ],
+     "cs": "neutrální (bez rozlišení)",
+     "en": "neutral (no distinction)",
+     "barva": "jine"
+    }
+   ]
+  },
+  {
+   "id": "112A",
+   "oblast": "veta",
+   "druh": "kat",
+   "nazev": {
+    "cs": "Vyjádření záporu",
+    "en": "Negative morphemes"
+   },
+   "popis": {
+    "cs": "Jakým prostředkem jazyk tvoří zápor věty: afixem na slovese („ne-jdu“), zápornou částicí (angl. not), záporným pomocným slovesem (finština), nebo dvěma zápornými prvky zároveň.",
+    "en": "How a language negates a clause: with an affix on the verb, a negative particle (English not), a negative auxiliary verb (Finnish), or two negative elements at once."
+   },
+   "hodnoty": {
+    "1": {
+     "cs": "záporný afix",
+     "en": "Negative affix"
+    },
+    "2": {
+     "cs": "záporná částice",
+     "en": "Negative particle"
+    },
+    "3": {
+     "cs": "záporné pomocné sloveso",
+     "en": "Negative auxiliary verb"
+    },
+    "4": {
+     "cs": "záporné slovo nejasné povahy",
+     "en": "Negative word, unclear if verb or particle"
+    },
+    "5": {
+     "cs": "střídání záporného slova a afixu",
+     "en": "Variation between negative word and affix"
+    },
+    "6": {
+     "cs": "dvojí zápor",
+     "en": "Double negation"
+    }
+   },
+   "tridy": [
+    {
+     "wals": [
+      1
+     ],
+     "cs": "afix",
+     "en": "affix"
+    },
+    {
+     "wals": [
+      2
+     ],
+     "cs": "částice",
+     "en": "particle"
+    },
+    {
+     "wals": [
+      3
+     ],
+     "cs": "pomocné sloveso",
+     "en": "auxiliary verb"
+    },
+    {
+     "wals": [
+      6
+     ],
+     "cs": "dvojí zápor",
+     "en": "double negation"
+    },
+    {
+     "wals": [
+      4,
+      5
+     ],
+     "cs": "jiné (nejasné, střídání)",
+     "en": "other (unclear, variation)",
+     "barva": "jine"
+    }
+   ]
+  },
+  {
+   "id": "116A",
+   "oblast": "veta",
+   "druh": "kat",
+   "nazev": {
+    "cs": "Zjišťovací otázky",
+    "en": "Polar questions"
+   },
+   "popis": {
+    "cs": "Jak jazyk odlišuje otázku typu ano/ne od oznamovací věty: tázací částicí (pol. czy), tvarem slovesa, změnou slovosledu (podle WALS čeština a němčina: Kommst du?), nebo jen intonací (rumunština).",
+    "en": "How a language distinguishes yes/no questions from statements: with a question particle (Polish czy), verb morphology, a change of word order (German Kommst du?; WALS classes Czech here too), or intonation only (Romanian)."
+   },
+   "hodnoty": {
+    "1": {
+     "cs": "tázací částice",
+     "en": "Question particle"
+    },
+    "2": {
+     "cs": "tázací tvar slovesa",
+     "en": "Interrogative verb morphology"
+    },
+    "3": {
+     "cs": "částice i tvar slovesa",
+     "en": "Mixture of previous two types"
+    },
+    "4": {
+     "cs": "slovosled",
+     "en": "Interrogative word order"
+    },
+    "5": {
+     "cs": "absence oznamovacích morfémů",
+     "en": "Absence of declarative morphemes"
+    },
+    "6": {
+     "cs": "jen intonace",
+     "en": "Interrogative intonation only"
+    },
+    "7": {
+     "cs": "bez rozlišení",
+     "en": "No interrogative-declarative distinction"
+    }
+   },
+   "tridy": [
+    {
+     "wals": [
+      1
+     ],
+     "cs": "částice",
+     "en": "particle"
+    },
+    {
+     "wals": [
+      2
+     ],
+     "cs": "tvar slovesa",
+     "en": "verb morphology"
+    },
+    {
+     "wals": [
+      4
+     ],
+     "cs": "slovosled",
+     "en": "word order"
+    },
+    {
+     "wals": [
+      6
+     ],
+     "cs": "jen intonace",
+     "en": "intonation only"
+    },
+    {
+     "wals": [
+      3
+     ],
+     "cs": "částice i tvar slovesa",
+     "en": "particle and verb morphology"
+    },
+    {
+     "wals": [
+      5,
+      7
+     ],
+     "cs": "jiné",
+     "en": "other",
+     "barva": "jine"
+    }
+   ]
+  },
+  {
+   "id": "129A",
+   "oblast": "slovnik",
+   "druh": "kat",
+   "nazev": {
+    "cs": "Ruka a paže",
+    "en": "Hand and arm"
+   },
+   "popis": {
+    "cs": "Zda jazyk pojmenovává ruku (dlaň s prsty) a paži jedním slovem, jako česká „ruka“ nebo ruská „рука“, nebo dvěma (angl. hand a arm).",
+    "en": "Whether a language names the hand and the arm with one word (as Czech ruka does) or with two (English hand and arm)."
+   },
+   "hodnoty": {
+    "1": {
+     "cs": "stejné slovo",
+     "en": "Identical"
+    },
+    "2": {
+     "cs": "různá slova",
+     "en": "Different"
+    }
+   },
+   "tridy": [
+    {
+     "wals": [
+      1
+     ],
+     "cs": "jedno slovo",
+     "en": "identical"
+    },
+    {
+     "wals": [
+      2
+     ],
+     "cs": "dvě slova",
+     "en": "different"
+    }
+   ]
+  },
+  {
+   "id": "130A",
+   "oblast": "slovnik",
+   "druh": "kat",
+   "nazev": {
+    "cs": "Prst a ruka",
+    "en": "Finger and hand"
+   },
+   "popis": {
+    "cs": "Zda jazyk pojmenovává prst a ruku jedním slovem, nebo dvěma.",
+    "en": "Whether a language names the finger and the hand with one word or with two."
+   },
+   "hodnoty": {
+    "1": {
+     "cs": "stejné slovo",
+     "en": "Identical"
+    },
+    "2": {
+     "cs": "různá slova",
+     "en": "Different"
+    }
+   },
+   "tridy": [
+    {
+     "wals": [
+      1
+     ],
+     "cs": "jedno slovo",
+     "en": "identical"
+    },
+    {
+     "wals": [
+      2
+     ],
+     "cs": "dvě slova",
+     "en": "different"
+    }
+   ]
+  },
+  {
+   "id": "131A",
+   "oblast": "slovnik",
+   "druh": "kat",
+   "nazev": {
+    "cs": "Základ číselné soustavy",
+    "en": "Numeral bases"
+   },
+   "popis": {
+    "cs": "Na jakém základu stojí číslovky: desítkový (jako čeština), dvacítkový (jako řada mezoamerických jazyků), jejich kombinace, soustava částí těla, nebo jen omezená řada číslovek.",
+    "en": "The base of the numeral system: decimal, vigesimal (as in many Mesoamerican languages), a mixture of the two, a body-part system, or only a restricted set of numerals."
+   },
+   "hodnoty": {
+    "1": {
+     "cs": "desítková",
+     "en": "Decimal"
+    },
+    "2": {
+     "cs": "smíšená dvacítková a desítková",
+     "en": "Hybrid vigesimal-decimal"
+    },
+    "3": {
+     "cs": "čistě dvacítková",
+     "en": "Pure vigesimal"
+    },
+    "4": {
+     "cs": "jiný základ",
+     "en": "Other base"
+    },
+    "5": {
+     "cs": "rozšířená soustava částí těla",
+     "en": "Extended body-part system"
+    },
+    "6": {
+     "cs": "omezená",
+     "en": "Restricted"
+    }
+   },
+   "tridy": [
+    {
+     "wals": [
+      1
+     ],
+     "cs": "desítková",
+     "en": "decimal"
+    },
+    {
+     "wals": [
+      2
+     ],
+     "cs": "dvacítková i desítková",
+     "en": "hybrid vigesimal-decimal"
+    },
+    {
+     "wals": [
+      3
+     ],
+     "cs": "dvacítková",
+     "en": "pure vigesimal"
+    },
+    {
+     "wals": [
+      6
+     ],
+     "cs": "omezená",
+     "en": "restricted"
+    },
+    {
+     "wals": [
+      4,
+      5
+     ],
+     "cs": "jiná (jiný základ, části těla)",
+     "en": "other (other base, body parts)",
+     "barva": "jine"
+    }
+   ]
+  },
+  {
+   "id": "133A",
+   "oblast": "slovnik",
+   "druh": "rada",
+   "nazev": {
+    "cs": "Počet základních barevných kategorií",
+    "en": "Number of basic colour categories"
+   },
+   "popis": {
+    "cs": "Počet základních barevných pojmů podle metodiky Berlina a Kaye (World Color Survey). Poloviční hodnoty označují kategorii, která je v jazyce jen zčásti ustálená. Angličtina, francouzština, němčina a ruština mají podle WALS 11.",
+    "en": "The number of basic colour terms following Berlin and Kay's method (World Color Survey). Half values mark a category that is only partly established. English, French, German and Russian have 11 according to WALS."
+   },
+   "hodnoty": {
+    "1": {
+     "cs": "3–4",
+     "en": "3–4"
+    },
+    "2": {
+     "cs": "4,5–5,5",
+     "en": "4.5–5.5"
+    },
+    "3": {
+     "cs": "6–6,5",
+     "en": "6–6.5"
+    },
+    "4": {
+     "cs": "7–7,5",
+     "en": "7–7.5"
+    },
+    "5": {
+     "cs": "8–8,5",
+     "en": "8–8.5"
+    },
+    "6": {
+     "cs": "9–10",
+     "en": "9–10"
+    },
+    "7": {
+     "cs": "11",
+     "en": "11"
+    }
+   },
+   "tridy": [
+    {
+     "wals": [
+      1
+     ],
+     "cs": "3–4",
+     "en": "3–4"
+    },
+    {
+     "wals": [
+      2
+     ],
+     "cs": "4,5–5,5",
+     "en": "4.5–5.5"
+    },
+    {
+     "wals": [
+      3
+     ],
+     "cs": "6–6,5",
+     "en": "6–6.5"
+    },
+    {
+     "wals": [
+      4
+     ],
+     "cs": "7–7,5",
+     "en": "7–7.5"
+    },
+    {
+     "wals": [
+      5
+     ],
+     "cs": "8–8,5",
+     "en": "8–8.5"
+    },
+    {
+     "wals": [
+      6
+     ],
+     "cs": "9–10",
+     "en": "9–10"
+    },
+    {
+     "wals": [
+      7
+     ],
+     "cs": "11",
+     "en": "11"
+    }
+   ]
+  },
+  {
+   "id": "138A",
+   "oblast": "slovnik",
+   "druh": "kat",
+   "nazev": {
+    "cs": "Čaj",
+    "en": "Tea"
+   },
+   "popis": {
+    "cs": "Původ slova pro čaj. Z mandarínského chá se šířilo po souši (čeština „čaj“, ruština, hindština, turečtina), z minnanského te po moři přes nizozemské obchodníky (angl. tea, něm. Tee).",
+    "en": "The origin of the word for tea. Mandarin chá spread overland (Russian chai, Hindi, Turkish), Min Nan te by sea through Dutch traders (English tea, German Tee)."
+   },
+   "hodnoty": {
+    "1": {
+     "cs": "z čínského cha",
+     "en": "Words derived from Sinitic cha"
+    },
+    "2": {
+     "cs": "z minnanského te",
+     "en": "Words derived from Min Nan Chinese te"
+    },
+    "3": {
+     "cs": "jiné",
+     "en": "Others"
+    }
+   },
+   "tridy": [
+    {
+     "wals": [
+      1
+     ],
+     "cs": "z čínského cha",
+     "en": "from Sinitic cha"
+    },
+    {
+     "wals": [
+      2
+     ],
+     "cs": "z minnanského te",
+     "en": "from Min Nan te"
+    },
+    {
+     "wals": [
+      3
+     ],
+     "cs": "jiný původ",
+     "en": "other origin",
+     "barva": "jine"
+    }
+   ]
+  }
+ ]
+}

@@ -170,102 +170,6 @@
  "odkazyPopis": "More about it",
  "wikiDomena": "en.wikipedia.org",
  "srovnavaciJazyk": "en",
- "wals": {
-  "81A": [
-   "Word order",
-   [
-    "who – what – does: “The dog the bone chews.”",
-    "who – does – what: “The dog chews the bone.” Just like English.",
-    "does – who – what: “Chews the dog the bone.”",
-    "does – what – who: “Chews the bone the dog.”",
-    "what – does – who: “The bone chews the dog.” (the dog is still the one chewing!)",
-    "what – who – does: “The bone the dog chews.”",
-    "Word order is free."
-   ]
-  ],
-  "13A": [
-   "Tones",
-   [
-    "None – the pitch of your voice doesn't change what a word means.",
-    "Yes – the pitch of your voice changes what a word means.",
-    "Lots of tones – the same syllable said higher or lower means different things."
-   ]
-  ],
-  "138A": [
-   "Tea",
-   [
-    "Sounds like “chai”. The word came overland from Chinese “cha”.",
-    "Sounds like “tea”. The word came by sea from Chinese “te”.",
-    "It has its own word, not borrowed from Chinese."
-   ]
-  ],
-  "131A": [
-   "Counting",
-   [
-    "In tens, like we do.",
-    "In tens and in twenties.",
-    "In twenties – on fingers and toes.",
-    "In groups other than tens.",
-    "On the body: you point to fingers, wrist, elbow, shoulder…",
-    "It has only a few numbers; bigger amounts are described in other ways."
-   ]
-  ],
-  "129A": [
-   "Hand and arm",
-   [
-    "The same word for both.",
-    "Two different words, like in English."
-   ]
-  ],
-  "133A": [
-   "Colours",
-   [
-    "Only 3–4 basic colour words.",
-    "5 basic colour words.",
-    "6 basic colour words.",
-    "7 basic colour words.",
-    "8 basic colour words.",
-    "9–10 basic colour words.",
-    "11 basic colour words, just like English."
-   ]
-  ],
-  "30A": [
-   "Genders",
-   [
-    "No grammatical gender at all.",
-    "2 grammatical genders, like French.",
-    "3 grammatical genders, like German.",
-    "4 grammatical genders.",
-    "5 or more grammatical genders."
-   ]
-  ],
-  "49A": [
-   "Cases",
-   [
-    "No cases – word endings don't change.",
-    "2 cases.",
-    "3 cases.",
-    "4 cases, like German.",
-    "5 cases.",
-    "6–7 cases.",
-    "8–9 cases.",
-    "10 or more cases!",
-    "Hardly any cases."
-   ]
-  ],
-  "19A": [
-   "Unusual sounds",
-   [
-    "",
-    "Click sounds – made by snapping the tongue.",
-    "Sounds made with the lips and the back of the tongue at once, like “kp” and “gb”.",
-    "Deep throat sounds made far back in the throat.",
-    "“th” sounds, like in English.",
-    "Clicks, throat sounds and “th”.",
-    "Throat sounds and “th”."
-   ]
-  ]
- },
  "mluvci": "Speakers",
  "mluvciHodnota": "about {n} people",
  "mluvciPoznRodili": "native speakers · Wikidata{rok}",
@@ -346,7 +250,7 @@
  "zavritPanel": "Close",
  "kartaVic": "Show more",
  "zalozkaPrehled": "Overview",
- "zalozkaStavba": "How it works",
+ "zalozkaStavba": "Structure",
  "jazykDne": "Language of the day",
  "radit": "Sort",
  "raditRodiny": "By family",
@@ -450,7 +354,7 @@
     "h": "Details for the other languages",
     "p": [
      "Vitality: the UNESCO scale (safe to extinct) based on Glottolog data.",
-     "Grammar (word order, cases, tones…): WALS, the World Atlas of Language Structures.",
+     "Typology (word order, cases, tone, consonant inventory… – 24 features): WALS Online, the World Atlas of Language Structures (Dryer & Haspelmath 2013). WALS describes a sample of about 2,600 languages; the others have no value. For the map some values are merged into groups; the language card always shows the exact WALS value.",
      "Number of sounds: PHOIBLE. Sample text: Article 1 of the Universal Declaration of Human Rights (UDHR in Unicode).",
      "Speaker numbers: Wikidata; where missing, an estimate from Unicode CLDR.",
      "Relatives and the family tree: the Glottolog tree, with Glottolog's branch names.",
@@ -593,7 +497,14 @@
      "Surprise me picks a random language.",
      "Family tree shows the tree of a whole language family. Drag to move it, use the wheel or two fingers to zoom, click a branch to focus on it and click a language to select it.",
      "Vitality colours the languages by how endangered they are and shows a key. Tap the key to choose which levels to show.",
-     "View: auto-spin, language names, sign languages (all, none or only them) and vitality levels."
+     "View: auto-spin, language names, sign languages (all, none or only them), vitality levels and Typology (WALS)."
+    ]
+   },
+   {
+    "h": "Typology maps (WALS)",
+    "p": [
+     "In View › Typology (WALS) you choose one of 24 features – word order, adpositions, number of cases and genders, articles, tone, consonant inventory, negation, polar questions, numeral bases and more. The languages on the globe take the colour of their value and a key appears at the bottom right with the number of languages, a description of the feature and a link to the WALS chapter.",
+     "Click a value in the key to highlight only the languages with that value. Every language card has a Structure tab with all the features WALS describes for it; click a feature name to show it on the map. Only a sample of languages has data, the other dots stay grey."
     ]
    },
    {
@@ -630,5 +541,20 @@
   ]
  },
  "navodOdkaz": "Full guide",
- "navodNapoveda": "Full guide – everything the atlas can do"
+ "navodNapoveda": "Full guide – everything the atlas can do",
+ "typologie": "Typology (WALS)",
+ "typologiePopis": "Maps of language features: word order, cases, tone, consonants…",
+ "typologieNadpis": "Language typology",
+ "typologieUvod": "Choose a feature and the languages on the globe take its colours. The data come from the World Atlas of Language Structures (WALS), which describes a sample of languages – the other dots have no value.",
+ "typologieZdroj": "Dryer, Matthew S. & Haspelmath, Martin (eds.) 2013. The World Atlas of Language Structures Online. Leipzig: Max Planck Institute for Evolutionary Anthropology. Licence CC BY 4.0.",
+ "typologieVypnout": "Turn off the typology map",
+ "typologieBezUdaje": "no WALS data",
+ "typologieKapitola": "WALS, chapter {n} · {autor}",
+ "typologieOdkaz": "Open in WALS",
+ "typologieIzolace": "Highlight only this value (click again to undo)",
+ "typologieOPopisu": "About this feature",
+ "typologieKarta": "Typology (WALS)",
+ "typologieKartaPozn": "Features and values from WALS Online. Only those WALS describes for the language are listed.",
+ "typologieNaMape": "Show on the map",
+ "typologieJazykuWals": "{n} in the WALS data"
 }

@@ -92,7 +92,9 @@ function skriptStranky(vychozi, artefakt) {
     .replace("/*__VYMYSLENE__*/null", () => doSkriptu(json("data/vymyslene.json")))
     .replace("/*__KRAJINY__*/null", () => doSkriptu(json("data/krajiny.json")))
     .replace("/*__RELIEF__*/null", () => JSON.stringify("data:image/webp;base64," + fs.readFileSync(path.join(KOREN, "data/relief.webp")).toString("base64")))
-    .replace("/*__PODROBNOSTI__*/null", () => doSkriptu({ wals: podrobnosti.wals, uzly: podrobnosti.uzly, nad: podrobnosti.nad,
+    .replace("/*__TYPOLOGIE__*/null", () => { const d = json("data/typologie.json"), p = json("data/typologie-popis.json");   // typologické mapy (WALS)
+      return doSkriptu({ oblasti: p.oblasti, vlastnosti: p.vlastnosti.map(function(v, k){ return Object.assign({}, v, d.vlastnosti[k]); }) }); })
+    .replace("/*__PODROBNOSTI__*/null", () => doSkriptu({ uzly: podrobnosti.uzly, nad: podrobnosti.nad,
                                                           staty: podrobnosti.staty, udhr: podrobnosti.udhr, mapaStatu: podrobnosti.mapaStatu,
                                                           radky: podrobnosti.radky, vetve: json("data/glottolog-branches.cs.json"),
                                                           nareci: glottolog.body.map(b => nareci[b[6]] || ""), nareciCs: json("data/nareci-cs.json") }));

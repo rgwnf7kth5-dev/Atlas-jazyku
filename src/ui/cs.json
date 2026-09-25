@@ -170,102 +170,6 @@
  "odkazyPopis": "Víc o jazyce",
  "wikiDomena": "cs.wikipedia.org",
  "srovnavaciJazyk": "cs",
- "wals": {
-  "81A": [
-   "Pořadí ve větě",
-   [
-    "kdo – co – dělá: „Pes kost hryže.“",
-    "kdo – dělá – co: „Pes hryže kost.“ Stejně jako čeština.",
-    "dělá – kdo – co: „Hryže pes kost.“",
-    "dělá – co – kdo: „Hryže kost pes.“",
-    "co – dělá – kdo: „Kost hryže pes.“",
-    "co – kdo – dělá: „Kost pes hryže.“",
-    "Pořadí slov ve větě je volné."
-   ]
-  ],
-  "13A": [
-   "Tóny",
-   [
-    "Nemá – výška hlasu nemění, co slovo znamená.",
-    "Má – výška hlasu mění, co slovo znamená.",
-    "Má hodně tónů – stejná slabika řečená jinak vysoko znamená něco jiného."
-   ]
-  ],
-  "138A": [
-   "Čaj",
-   [
-    "Řekne se podobně jako „čaj“. Slovo přišlo z čínského „cha“ po souši.",
-    "Řekne se podobně jako „tí“. Slovo přišlo z čínského „te“ po moři.",
-    "Má vlastní slovo, nepřevzaté z čínštiny."
-   ]
-  ],
-  "131A": [
-   "Počítání",
-   [
-    "Po desítkách, stejně jako my.",
-    "Po desítkách i po dvacítkách.",
-    "Po dvacítkách – na prstech rukou i nohou.",
-    "Po jiných skupinách než po desítkách.",
-    "Na částech těla: ukazuje se na prsty, zápěstí, loket, rameno…",
-    "Má jen pár čísel, větší počty se říkají opisem."
-   ]
-  ],
-  "129A": [
-   "Ruka a paže",
-   [
-    "Je to jedno slovo, jako české „ruka“.",
-    "Jsou to dvě různá slova."
-   ]
-  ],
-  "133A": [
-   "Barvy",
-   [
-    "Má jen 3–4 základní barvy.",
-    "Má 5 základních barev.",
-    "Má 6 základních barev.",
-    "Má 7 základních barev.",
-    "Má 8 základních barev.",
-    "Má 9–10 základních barev.",
-    "Má 11 základních barev, stejně jako čeština."
-   ]
-  ],
-  "30A": [
-   "Rody",
-   [
-    "Nemá mluvnické rody – žádné „ten, ta, to“.",
-    "Má 2 mluvnické rody.",
-    "Má 3 mluvnické rody, stejně jako čeština.",
-    "Má 4 mluvnické rody.",
-    "Má 5 a víc mluvnických rodů."
-   ]
-  ],
-  "49A": [
-   "Pády",
-   [
-    "Nemá pády – slova nemění koncovky.",
-    "Má 2 pády.",
-    "Má 3 pády.",
-    "Má 4 pády.",
-    "Má 5 pádů.",
-    "Má 6–7 pádů, stejně jako čeština.",
-    "Má 8–9 pádů.",
-    "Má 10 a víc pádů!",
-    "Pády skoro nemá."
-   ]
-  ],
-  "19A": [
-   "Zvláštní hlásky",
-   [
-    "",
-    "Mlaskavé hlásky – cvaknutí jazykem.",
-    "Hlásky vyslovované rty i zadem jazyka zároveň, jako „kp“ a „gb“.",
-    "Hrdelní hlásky vyslovované hluboko v krku.",
-    "Šišlavé hlásky „th“, jako v angličtině.",
-    "Mlaskavé, hrdelní i šišlavé „th“.",
-    "Hrdelní hlásky i šišlavé „th“."
-   ]
-  ]
- },
  "mluvci": "Mluví jím",
  "mluvciHodnota": "asi {n} lidí",
  "mluvciPoznRodili": "rodilých mluvčích · Wikidata{rok}",
@@ -346,7 +250,7 @@
  "zavritPanel": "Zavřít",
  "kartaVic": "Ukázat víc",
  "zalozkaPrehled": "Přehled",
- "zalozkaStavba": "Jak funguje",
+ "zalozkaStavba": "Stavba",
  "jazykDne": "Jazyk dne",
  "radit": "Řadit",
  "raditRodiny": "Podle rodin",
@@ -450,7 +354,7 @@
     "h": "Podrobnosti u ostatních jazyků",
     "p": [
      "Vitalita: stupnice UNESCO (bezpečný až vymřelý) podle údajů Glottologu.",
-     "Stavba jazyka (pořadí slov, pády, tóny…): WALS, Světový atlas jazykových struktur.",
+     "Typologie (slovosled, pády, tóny, souhláskový inventář… – 24 vlastností): WALS Online, Světový atlas jazykových struktur (Dryer & Haspelmath 2013). WALS popisuje vybraný vzorek zhruba 2 600 jazyků, u ostatních údaj chybí. Hodnoty některých vlastností jsou pro mapu sloučené do skupin; na kartě jazyka je vždy přesná hodnota WALS.",
      "Počet hlásek: PHOIBLE. Ukázka textu: článek 1 Všeobecné deklarace lidských práv (UDHR in Unicode).",
      "Počty mluvčích: Wikidata, kde chybí, odhad z Unicode CLDR.",
      "Příbuzenstvo a rodokmen: strom Glottologu. České názvy větví jsou překlad tohoto atlasu; kde překlad chybí, je tam anglický název z Glottologu.",
@@ -593,7 +497,14 @@
      "Překvap mě vybere náhodný jazyk.",
      "Rodokmen ukáže strom celé jazykové rodiny. Tažením ho posouváš, kolečkem nebo dvěma prsty přibližuješ, kliknutím na větev se na ni zaměříš a kliknutím na jazyk ho vybereš.",
      "Vitalita obarví jazyky podle toho, jak moc jsou ohrožené, a ukáže vysvětlivku. Klepnutím na vysvětlivku vybereš, které stupně chceš vidět.",
-     "Zobrazení: samo-otáčení glóbu, jména jazyků, znakové jazyky (všechny, bez nich, nebo jen ony) a stupně vitality."
+     "Zobrazení: samo-otáčení glóbu, jména jazyků, znakové jazyky (všechny, bez nich, nebo jen ony), stupně vitality a Typologie (WALS)."
+    ]
+   },
+   {
+    "h": "Typologické mapy (WALS)",
+    "p": [
+     "V panelu Zobrazení › Typologie (WALS) vybereš jednu z 24 vlastností – slovosled, předložky a záložky, počet pádů a rodů, členy, tóny, souhláskový inventář, zápor, zjišťovací otázky, číselnou soustavu a další. Jazyky na glóbu se obarví podle hodnoty a vpravo dole se objeví legenda s počty jazyků, popisem vlastnosti a odkazem na kapitolu WALS.",
+     "Klepnutím na hodnotu v legendě zvýrazníš jen jazyky s touto hodnotou. Karta každého jazyka má záložku Stavba se všemi vlastnostmi, které u něj WALS popisuje; klepnutím na název vlastnosti ji ukážeš na mapě. Údaje má jen vzorek jazyků, ostatní tečky zůstanou šedé."
     ]
    },
    {
@@ -630,5 +541,20 @@
   ]
  },
  "navodOdkaz": "Podrobný návod",
- "navodNapoveda": "Podrobný návod – co všechno atlas umí"
+ "navodNapoveda": "Podrobný návod – co všechno atlas umí",
+ "typologie": "Typologie (WALS)",
+ "typologiePopis": "Mapy jazykových vlastností: slovosled, pády, tóny, souhlásky…",
+ "typologieNadpis": "Typologie jazyků",
+ "typologieUvod": "Vyber vlastnost a jazyky na glóbu se obarví podle ní. Údaje pocházejí z World Atlas of Language Structures (WALS), který popisuje vybraný vzorek jazyků – u ostatních teček údaj chybí.",
+ "typologieZdroj": "Dryer, Matthew S. & Haspelmath, Martin (eds.) 2013. The World Atlas of Language Structures Online. Leipzig: Max Planck Institute for Evolutionary Anthropology. Licence CC BY 4.0.",
+ "typologieVypnout": "Vypnout typologickou mapu",
+ "typologieBezUdaje": "bez údaje ve WALS",
+ "typologieKapitola": "WALS, kap. {n} · {autor}",
+ "typologieOdkaz": "Otevřít ve WALS",
+ "typologieIzolace": "Zvýraznit jen tuto hodnotu (znovu klepnutím zrušíš)",
+ "typologieOPopisu": "O této vlastnosti",
+ "typologieKarta": "Typologie (WALS)",
+ "typologieKartaPozn": "Vlastnosti a hodnoty podle WALS Online. Uvedeny jsou jen ty, které WALS u jazyka popisuje.",
+ "typologieNaMape": "Ukázat na mapě",
+ "typologieJazykuWals": "{n} v datech WALS"
 }

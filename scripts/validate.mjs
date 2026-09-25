@@ -52,6 +52,26 @@ for (const r of pd.radky) if (Array.isArray(r[10]) && !(r[10][0] > 0 && r[10][0]
 if (divnychMluvcich) chyby.push(`data/podrobnosti.json: ${divnychMluvcich} jazyků má nesmyslný počet mluvčích nebo rok (Wikidata)`);
 if (pd.radky.some(r => !(Number.isInteger(r[0]) && r[0] >= -1 && r[0] <= 6))) chyby.push("data/podrobnosti.json: stupeň vitality musí být -1 až 6");
 if (pd.uzly.length !== pd.nad.length) chyby.push("data/podrobnosti.json: strom příbuzenstva je poškozený");
+{ /* typologické mapy: popis (ručně) a data (scripts/typologie.mjs) musí sedět; barvy mapy jsou ověřené jen pro 5 odstínů + „jiné“ a 7 stupňů */
+  const p = json("data/typologie-popis.json"), d = json("data/typologie.json"), co = "data/typologie-popis.json";
+  if (p.vlastnosti.length !== d.vlastnosti.length || p.vlastnosti.some((v, k) => v.id !== d.vlastnosti[k].id)) chyby.push("data/typologie.json neodpovídá popisu – spusť node scripts/typologie.mjs");
+  for (const v of p.vlastnosti) {
+    if (!p.oblasti[v.oblast]) chyby.push(`${co}: ${v.id} má neznámou oblast „${v.oblast}“`);
+    if (v.druh !== "kat" && v.druh !== "rada") chyby.push(`${co}: ${v.id} má druh „${v.druh}“ (kat nebo rada)`);
+    for (const l of ["cs", "en"]) {
+      if (!v.nazev[l] || !v.popis[l]) chyby.push(`${co}: ${v.id} nemá název nebo popis (${l})`);
+      for (const [k, h] of Object.entries(v.hodnoty)) if (!h[l]) chyby.push(`${co}: ${v.id} hodnota ${k} nemá text (${l})`);
+      for (const t of v.tridy) if (!t[l]) chyby.push(`${co}: ${v.id} skupina bez textu (${l})`);
+    }
+    const kody = v.tridy.flatMap(t => t.wals).sort((a, b) => a - b), mame = Object.keys(v.hodnoty).map(Number).sort((a, b) => a - b);
+    if (kody.join() !== mame.join()) chyby.push(`${co}: ${v.id} skupiny nepokrývají každou hodnotu právě jednou`);
+    const barevne = v.tridy.filter(t => t.barva !== "jine").length;
+    if (v.tridy.filter(t => t.barva === "jine").length > 1) chyby.push(`${co}: ${v.id} má víc skupin „jine“`);
+    if (barevne > (v.druh === "kat" ? 5 : 7)) chyby.push(`${co}: ${v.id} má ${barevne} barevných skupin – ověřená paleta jich unese ${v.druh === "kat" ? 5 : 7}`);
+  }
+  const dv = d.vlastnosti.find(v => v.h.length !== glottolog.body.length);
+  if (dv) chyby.push(`data/typologie.json: ${dv.id} nemá hodnotu pro každou tečku – spusť node scripts/typologie.mjs`);
+}
 { const v = json("data/vymyslene.json"), svety = new Set(v.svety.map(s => s.id)), ids = new Set();   // vymyšlené jazyky („mellon“)
   for (const s of v.svety) for (const l of ["cs", "en"]) if (!s[l] || !s[l].nazev || !s[l].popis) chyby.push(`data/vymyslene.json: svět „${s.id}“ nemá ${l}`);
   for (const j of v.jazyky) {
@@ -98,7 +118,6 @@ for (const [l, ui] of [["cs", uiCs], ["en", uiEn]]) {
   if (!Array.isArray(ui.aes) || ui.aes.length !== 7) chyby.push(`src/ui/${l}.json: „aes“ musí mít 7 položek (6 stupňů UNESCO + probouzený)`);
   if (!Array.isArray(ui.aesZnak) || ui.aesZnak.length !== 7) chyby.push(`src/ui/${l}.json: „aesZnak“ musí mít 7 položek jako „aes“`);
   if (!Array.isArray(ui.med) || ui.med.length !== 5) chyby.push(`src/ui/${l}.json: „med“ musí mít 5 stupňů popsanosti`);
-  for (const k of pd.wals) if (!ui.wals || !ui.wals[k]) chyby.push(`src/ui/${l}.json: chybí popisek vlastnosti ${k}`);
   if (!Array.isArray(ui.strany) || ui.strany.length !== 4) chyby.push(`src/ui/${l}.json: „strany“ musí mít 4 světové strany (sever, jih, východ, západ)`);
 }
 

@@ -11,6 +11,7 @@ const STATY_VSE = /*__STATY__*/null;
 const REJSTRIK = /*__REJSTRIK__*/null;
 const VYMYSLENE = /*__VYMYSLENE__*/null; // jazyky z knih a filmů, jen v Bráně do jiných světů („mellon“)
 const PD = /*__PODROBNOSTI__*/null;   // podrobnosti k tečkám (Glottolog, WALS, PHOIBLE, UDHR, CLDR)
+const TYP = /*__TYPOLOGIE__*/null;      // typologické mapy: vybrané vlastnosti WALS, texty a hodnota pro každou tečku
 let T = UI[VYCHOZI];
 let denni = document.documentElement.getAttribute("data-theme") === "light";   // denní vzhled (viz níž)
 let STATY = STATY_VSE[VYCHOZI];
@@ -113,6 +114,8 @@ function jeZnakovyJazyk(j){ const i = BOD_ATLASU[j.id]; return i >= 0 && ZNAKOVY
 const VSECHNY_STUPNE = [0, 1, 2, 3, 4, 5, 6, -1], OHROZENE = [1, 2, 3, 4];
 let povoleneStupne = new Set(VSECHNY_STUPNE);
 let barvitVitalitu = false;              // tečky v barvách vitality: zapnuté tlačítkem v liště, nebo otevřený panel „Vitalita“
+let typVlastnost = -1, typIzolace = -1, typTr = null;   // typologická mapa: vlastnost WALS (index do TYP.vlastnosti), zvýrazněná skupina, skupina každé tečky
+function barvit(){ return barvitVitalitu || typVlastnost >= 0; }   // tečky v barvách vrstvy (vitalita nebo typologie): pevnina jednolitá, bez třpytu
 let vitalitaZap = false;                 // tlačítko „Vitalita“ v liště (pamatuje se, atlas-barvy-vitality)
 function promennaVitality(v){ return "var(--" + (v < 0 ? "vit-nic" : "vit-" + v) + ")"; }
 function vitalitaBodu(i){ const v = radek(i)[0]; return v == null ? -1 : v; }
@@ -569,6 +572,7 @@ function rgb(hex){
 function nactiBarvy(){
   const s = getComputedStyle(document.documentElement);
   ["vit-0", "vit-1", "vit-2", "vit-3", "vit-4", "vit-5", "vit-6", "vit-nic",
+   "typ-1", "typ-2", "typ-3", "typ-4", "typ-5", "typ-jine", "typ-nic", "typ-r0", "typ-r1", "typ-r2", "typ-r3", "typ-r4", "typ-r5", "typ-r6",
    "pevnina", "pobrezi", "stin-koule", "tecka-jazyk", "tecka-bod", "cyan", "fialova", "cervena", "hvezda", "koule1", "koule2", "popisek", "popisek-lem",
    "atmosfera", "atmosfera2", "sit", "hranice", "okraj-koule", "zamerovac-lem",
    "r-ie", "r-st", "r-an", "r-afro", "r-nk", "r-ost", "more1", "more2", "souse1", "souse2", "souse-vit", "uzemi",
@@ -664,12 +668,23 @@ function nastaveniTecek(){
   const vb = barvaVyberu();
   return {
     barvy: [[barvy["tecka-jazyk"], denni ? 0.9 : 0.8], [vb, 1], [barvy.fialova, 1], [barvy["tecka-bod"], 1], [vb, 0], [barvy.cyan, 1]],
-    vel: barvitVitalitu ? (denni ? [1.05, 1.9, 1.6, 2, 0, 1.9] : [1.25, 2.6, 2.1, 2.8, 0, 1.9]) : denni ? [0.62, 1.9, 1.6, 2, 0, 1.9] : [1, 2.6, 2.1, 2.8, 0, 1.9],
+    vel: barvit() ? (typZobrazena() ? (denni ? [1.4, 1.9, 1.6, 2, 0, 1.9] : [1.55, 2.6, 2.1, 2.8, 0, 1.9]) : denni ? [1.05, 1.9, 1.6, 2, 0, 1.9] : [1.25, 2.6, 2.1, 2.8, 0, 1.9]) : denni ? [0.62, 1.9, 1.6, 2, 0, 1.9] : [1, 2.6, 2.1, 2.8, 0, 1.9],
     mek: denni ? [0.25, 0.55, 0.55, 0.4, 0, 0.45] : [1, 1, 1, 1, 0, 1]
   };
 }
 /* barvy vitality v pořadí pro shader: bez údaje, stupně 0–5, probouzený */
 function barvyVitality(){ return ["vit-nic", "vit-0", "vit-1", "vit-2", "vit-3", "vit-4", "vit-5", "vit-6"].map(function(k){ return barvy[k]; }); }
+/* barvy a průhlednost vrstvy v pořadí pro shader: [0] bez údaje, [1…7] skupiny (vitalita: stupně; typologie: skupiny vlastnosti) */
+function typZobrazena(){ return typVlastnost >= 0 && !!typTr && panelVit.hidden; }   // otevřené stupně vitality mají přednost
+function nahrajTypologii(){ if (!gl || !glJaz || !typTr) return; if (!glJaz.typ) glJaz.typ = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, glJaz.typ); gl.bufferData(gl.ARRAY_BUFFER, Float32Array.from(typTr), gl.STATIC_DRAW); glJaz.typVl = typVlastnost; }
+function barvyVrstvy(){
+  if (!typZobrazena()) return barvyVitality().map(function(b){ return [b, 0.95]; });
+  const v = TYP.vlastnosti[typVlastnost], out = [[barvy["typ-nic"], denni ? 0.5 : 0.35]];
+  typBarvy(v).forEach(function(k, c){ out.push([barvy[k.slice(2)], typIzolace < 0 || typIzolace === c ? 0.95 : 0.12]); });
+  while (out.length < 8) out.push([barvy["typ-nic"], 0]);
+  return out;
+}
+function hodnotaVrstvy(i){ return typZobrazena() ? typTr[i] : vitalitaBodu(i); }   // -1 = bez údaje
 function kresliBodyGl(){
   const v = velikosti(), l0 = -rot[0] * R, f0 = -rot[1] * R, n = nastaveniTecek();
   gl.viewport(0, 0, platnoGl.width, platnoGl.height);
@@ -684,17 +699,18 @@ function kresliBodyGl(){
   gl.uniform1fv(glU.u_vel, n.vel.map(function(k){ return k * v.jaz; }));
   gl.uniform1fv(glU.u_mek, n.mek);
   const vit = new Float32Array(32);
-  barvyVitality().forEach(function(x, k){ const c = rgb(x); vit.set([c[0], c[1], c[2], 0.95], k * 4); });
+  barvyVrstvy().forEach(function(x, k){ const c = rgb(x[0]); vit.set([c[0], c[1], c[2], x[1]], k * 4); });
   gl.uniform4fv(glU.u_vit, vit);
-  gl.uniform1f(glU.u_barvit, barvitVitalitu ? 1 : 0);
-  gl.uniform1f(glU.u_cas, !denni && !barvitVitalitu && !bezPohybu.matches ? (casSnimku / 1000) % 1000 + 0.001 : 0);
-  gl.uniform1f(glU.u_jadro, denni ? 0.35 : (barvitVitalitu ? 0.4 : 0.85));
+  gl.uniform1f(glU.u_barvit, barvit() ? 1 : 0);
+  gl.uniform1f(glU.u_cas, !denni && !barvit() && !bezPohybu.matches ? (casSnimku / 1000) % 1000 + 0.001 : 0);
+  gl.uniform1f(glU.u_jadro, denni ? 0.35 : (barvit() ? 0.4 : 0.85));
   /* světélka jazyků: v noci se sčítají, takže hustá místa září víc; ve dne (a při barvení podle vitality,
      kde musí barva zůstat pravdivá) se kreslí obyčejně */
-  if (denni || barvitVitalitu) gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA); else gl.blendFunc(gl.ONE, gl.ONE);
+  if (denni || barvit()) gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA); else gl.blendFunc(gl.ONE, gl.ONE);
   gl.bindBuffer(gl.ARRAY_BUFFER, glJaz.poz); gl.enableVertexAttribArray(glA.pos); gl.vertexAttribPointer(glA.pos, 2, gl.FLOAT, false, 0, 0);
   gl.bindBuffer(gl.ARRAY_BUFFER, glJaz.flag); gl.enableVertexAttribArray(glA.flag); gl.vertexAttribPointer(glA.flag, 1, gl.FLOAT, false, 0, 0);
-  gl.bindBuffer(gl.ARRAY_BUFFER, glJaz.vit); gl.enableVertexAttribArray(glA.vit); gl.vertexAttribPointer(glA.vit, 1, gl.FLOAT, false, 0, 0);
+  if (typZobrazena() && glJaz.typVl !== typVlastnost) nahrajTypologii();
+  gl.bindBuffer(gl.ARRAY_BUFFER, typZobrazena() ? glJaz.typ : glJaz.vit); gl.enableVertexAttribArray(glA.vit); gl.vertexAttribPointer(glA.vit, 1, gl.FLOAT, false, 0, 0);
   gl.drawArrays(gl.POINTS, 0, glJaz.n);
 }
 
@@ -819,7 +835,7 @@ function kresliRelief(cx, cy, r){
   g.uniform1f(u.u_dpr, p.width / sirka); g.uniform1f(u.u_vyska, p.height); g.uniform1f(u.u_texw, relief.sirkaTex);
   /* při barvení podle vitality je pevnina jednolitá (--souse-vit): na stínovaném reliéfu by světlé stupně na svazích zmizely */
   ["more1", "more2", "souse1", "souse2"].forEach(function(k){
-    const c = rgb(barvitVitalitu && k.indexOf("souse") === 0 ? barvy["souse-vit"] : barvy[k]); g.uniform3f(u["u_" + k], c[0], c[1], c[2]); });
+    const c = rgb(barvit() && k.indexOf("souse") === 0 ? barvy["souse-vit"] : barvy[k]); g.uniform3f(u["u_" + k], c[0], c[1], c[2]); });
   g.drawArrays(g.TRIANGLES, 0, 3);
   return p;
 }
@@ -829,10 +845,11 @@ function kresliBody2D(){
   const c = ctxBody, v = velikosti(), n = nastaveniTecek(), rj = v.jaz * 0.2;
   c.clearRect(0, 0, sirka, vyska);
   c.globalAlpha = 0.85;
-  if (barvitVitalitu) {                   // obyčejné tečky po barvách vitality
-    barvyVitality().forEach(function(barva, k){
-      c.fillStyle = barva; c.beginPath();
-      for (let i = 0; i < POCET_B; i++) if (bVid[i] && !fJaz[i] && vitalitaBodu(i) + 1 === k) c.rect(bPx[i] - rj, bPy[i] - rj, 2 * rj, 2 * rj);
+  if (barvit()) {                         // obyčejné tečky po barvách vrstvy (vitalita, typologie)
+    barvyVrstvy().forEach(function(x, k){
+      if (!x[1]) return;
+      c.fillStyle = x[0]; c.globalAlpha = x[1] * 0.9; c.beginPath();
+      for (let i = 0; i < POCET_B; i++) if (bVid[i] && !fJaz[i] && hodnotaVrstvy(i) + 1 === k) c.rect(bPx[i] - rj, bPy[i] - rj, 2 * rj, 2 * rj);
       c.fill();
     });
   } else {
@@ -1449,7 +1466,7 @@ function smycka(cas){
     uplatniZoom(); zmena = true;
     if (k >= 1) { uvod = null; uvodK = 1; uplatniZoom(); ukazUkazatel(); }
   }
-  if (trpyt && gl && !denni && !barvitVitalitu && !bezPohybu.matches && cas < zivoDo && cas - trpyt.naposled > 60) {
+  if (trpyt && gl && !denni && !barvit() && !bezPohybu.matches && cas < zivoDo && cas - trpyt.naposled > 60) {
     trpyt.naposled = cas; teckyZmeneny = true;                          // světélka se jemně třpytí
   }
   posledni = cas; casSnimku = cas;
@@ -1813,6 +1830,7 @@ function obnovOdznakZobrazeni(){
 }
 function otevriZobrazeni(otevrit){
   if (!otevrit && !panelVit.hidden) otevriVitalitu(false);
+  if (!otevrit && !panelTyp.hidden) otevriTypologii(false);
   panelZob.hidden = !otevrit;
   tlZob.setAttribute("aria-expanded", otevrit ? "true" : "false");
   obnovLegenduVitality();
@@ -1836,6 +1854,7 @@ tlVit.addEventListener("click", function(){ otevriVitalitu(panelVit.hidden); });
    ukazuje jen se zapnutými barvami a volba se pamatuje) */
 const tlVitDok = $("tl-vitalita-dok"), legendaVit = $("vit-legenda");
 function nastavBarvyVitality(zap, start){
+  if (zap && typVlastnost >= 0) nastavTypologii(-1);   // jedna barevná vrstva naráz
   vitalitaZap = !!zap;
   tlVitDok.setAttribute("aria-pressed", vitalitaZap ? "true" : "false");
   if (!start) { try { if (vitalitaZap) localStorage.setItem("atlas-barvy-vitality", "1"); else localStorage.removeItem("atlas-barvy-vitality"); } catch (e) {} }
@@ -1877,6 +1896,131 @@ document.addEventListener("keydown", function(e){
   if (e.key !== "Escape") return;
   if (!panelVit.hidden) otevriVitalitu(false); else if (!panelZob.hidden) otevriZobrazeni(false);
 });
+
+/* ---------- typologické mapy (WALS, 25. 9. 2026) ----------
+   Vlastnost z panelu Zobrazení › Typologie obarví tečky podle hodnoty ve WALS (data/typologie.json, texty a skupiny
+   v data/typologie-popis.json). Nominální vlastnosti mají nejvýš 5 barev + „jiné“ (barva inkoustu), seřazené
+   (počet pádů…) modrou stupnici o 7 krocích; obě sady prošly validátorem palet (dataviz) pro všechny dvojice na
+   jednolité pevnině ve dne i v noci. Barvy nesou vždy i legendu s popisky a počty (druhotné rozlišení) a klepnutí
+   na hodnotu v legendě zvýrazní jen ji. Jedna barevná vrstva naráz: typologie vypne barvy vitality a naopak. */
+const RAMPA = {2: [1, 5], 3: [0, 3, 6], 4: [0, 2, 4, 6], 5: [0, 2, 3, 4, 6], 6: [0, 1, 2, 4, 5, 6], 7: [0, 1, 2, 3, 4, 5, 6]};
+function typBarvy(v){                        /* CSS proměnná pro každou skupinu vlastnosti */
+  const n = v.tridy.filter(function(t){ return t.barva !== "jine"; }).length;
+  let k = 0, r = 0;
+  return v.tridy.map(function(t){ return t.barva === "jine" ? "--typ-jine" : v.druh === "kat" ? "--typ-" + (++k) : "--typ-r" + RAMPA[n][r++]; });
+}
+function typSkupina(v, h){ for (let c = 0; c < v.tridy.length; c++) if (v.tridy[c].wals.indexOf(h) >= 0) return c; return -1; }
+function typHodnota(v, i){ return v.h.charCodeAt(i) - 48; }          // 0 = WALS jazyk nepopisuje
+const panelTyp = $("typologie-panel"), tlTyp = $("tl-typologie"), legendaTyp = $("typ-legenda");
+function nastavTypologii(k, start){
+  typVlastnost = k; typIzolace = -1; typTr = null;
+  if (k >= 0) {
+    if (vitalitaZap) nastavBarvyVitality(false);
+    const v = TYP.vlastnosti[k];
+    typTr = new Int8Array(POCET_B);
+    for (let i = 0; i < POCET_B; i++) { const h = typHodnota(v, i); typTr[i] = h > 0 ? typSkupina(v, h) : -1; }
+    nahrajTypologii();
+  }
+  if (!start) { try { if (k >= 0) localStorage.setItem("atlas-typologie", TYP.vlastnosti[k].id); else localStorage.removeItem("atlas-typologie"); } catch (e) {} }
+  $("typologie-stav").hidden = k < 0; $("typologie-stav").textContent = k >= 0 ? TYP.vlastnosti[k].id : "";
+  postavTypologiiPanel(); obnovLegenduTypologie();
+  if (vybrany) { if (vybrany.typ === "atlas") ukazKartu(PODLE_ID[vybrany.id]); else if (vybrany.typ === "rejstrik") ukazKartuBodu(vybrany.i); }
+  teckyZmeneny = true; potrebaKresli = true; ozivit();
+}
+function postavTypologiiPanel(){
+  const kam = $("typ-seznam"); kam.textContent = "";
+  if (typVlastnost >= 0) {
+    const vyp = prvek("button", "typ-vypnout", T.typologieVypnout); vyp.type = "button";
+    vyp.addEventListener("click", function(){ nastavTypologii(-1); });
+    kam.appendChild(vyp);
+  }
+  Object.keys(TYP.oblasti).forEach(function(o){
+    kam.appendChild(prvek("p", "volba-nadpis typ-oblast", TYP.oblasti[o][T.lang]));
+    const ul = prvek("ul", "typ-vlastnosti");
+    TYP.vlastnosti.forEach(function(v, k){
+      if (v.oblast !== o) return;
+      const li = prvek("li"), b = prvek("button");
+      b.type = "button"; b.setAttribute("aria-pressed", k === typVlastnost ? "true" : "false");
+      b.appendChild(prvek("span", "typ-jm", v.nazev[T.lang]));
+      b.appendChild(prvek("span", "pocet-st", cislo(v.pocet)));
+      b.title = t("typologieJazykuWals", {n: cislo(v.pocet) + " " + tvar(v.pocet, T.jazyk)});
+      b.addEventListener("click", function(){ nastavTypologii(k === typVlastnost ? -1 : k); });
+      li.appendChild(b); ul.appendChild(li);
+    });
+    kam.appendChild(ul);
+  });
+}
+function obnovLegenduTypologie(){
+  legendaTyp.hidden = typVlastnost < 0;
+  scena.classList.toggle("s-typologii", typVlastnost >= 0);
+  if (typVlastnost < 0) { legendaTyp.textContent = ""; return; }
+  const v = TYP.vlastnosti[typVlastnost], barvyS = typBarvy(v), pocty = v.tridy.map(function(){ return 0; });
+  let bez = 0;
+  for (let i = 0; i < POCET_B; i++) { if (typTr[i] >= 0) pocty[typTr[i]]++; else bez++; }
+  legendaTyp.textContent = "";
+  const hl = prvek("div", "typ-leg-hlava");
+  const h = prvek("h3", null, v.nazev[T.lang]); h.id = "typ-leg-nazev"; hl.appendChild(h);
+  const x = prvek("button", "zavrit"); x.type = "button"; x.setAttribute("aria-label", T.typologieVypnout); x.title = T.typologieVypnout;
+  x.innerHTML = '<svg aria-hidden="true"><use href="#i-krizek"/></svg>'; x.addEventListener("click", function(){ nastavTypologii(-1); });
+  hl.appendChild(x); legendaTyp.appendChild(hl);
+  const det = prvek("details", "typ-leg-popis"); det.appendChild(prvek("summary", null, T.typologieOPopisu));
+  det.appendChild(prvek("p", null, v.popis[T.lang])); legendaTyp.appendChild(det);
+  const ul = prvek("ul", "typ-leg-hodnoty");
+  v.tridy.forEach(function(tr, c){
+    const li = prvek("li"), b = prvek("button");
+    b.type = "button"; b.title = T.typologieIzolace;
+    b.setAttribute("aria-pressed", typIzolace === c ? "true" : "false");
+    if (typIzolace >= 0 && typIzolace !== c) b.classList.add("potlaceno");
+    const i = prvek("i", "typ-bod"); i.style.background = "var(" + barvyS[c] + ")"; b.appendChild(i);
+    b.appendChild(prvek("span", null, tr[T.lang]));
+    b.appendChild(prvek("span", "pocet-st", cislo(pocty[c])));
+    b.addEventListener("click", function(){ typIzolace = typIzolace === c ? -1 : c; obnovLegenduTypologie(); teckyZmeneny = true; potrebaKresli = true; });
+    li.appendChild(b); ul.appendChild(li);
+  });
+  const li = prvek("li", "typ-bez"), s0 = prvek("span");
+  const i0 = prvek("i", "typ-bod"); i0.style.background = "var(--typ-nic)"; s0.appendChild(i0);
+  s0.appendChild(prvek("span", null, T.typologieBezUdaje)); s0.appendChild(prvek("span", "pocet-st", cislo(bez)));
+  li.appendChild(s0); ul.appendChild(li);
+  legendaTyp.appendChild(ul);
+  const zdroj = prvek("p", "typ-leg-zdroj"), a = prvek("a", null, t("typologieKapitola", {n: v.kapitola, autor: v.autor}) + " ↗");
+  a.href = "https://wals.info/feature/" + v.id; a.target = "_blank"; a.rel = "noopener"; zdroj.appendChild(a);
+  legendaTyp.appendChild(zdroj);
+}
+function otevriTypologii(otevrit){
+  if (otevrit) { panelZob.hidden = false; tlZob.setAttribute("aria-expanded", "true"); if (!panelVit.hidden) otevriVitalitu(false); }
+  panelTyp.hidden = !otevrit; pzHlavni.hidden = !!otevrit;
+  tlTyp.setAttribute("aria-expanded", otevrit ? "true" : "false");
+  if (otevrit) { postavTypologiiPanel(); const b = panelTyp.querySelector('[aria-pressed="true"]') || panelTyp.querySelector(".typ-vlastnosti button"); if (b) b.focus({preventScroll: false}); }
+}
+tlTyp.addEventListener("click", function(){ otevriTypologii(panelTyp.hidden); });
+$("typologie-zpet").addEventListener("click", function(){ otevriTypologii(false); tlTyp.focus(); });
+$("typologie-x").addEventListener("click", function(){ otevriTypologii(false); otevriZobrazeni(false); tlZob.focus(); });
+document.addEventListener("keydown", function(e){ if (e.key === "Escape" && !panelTyp.hidden) otevriTypologii(false); });
+/* typologie na kartě jazyka: všechny vlastnosti, které WALS u jazyka popisuje, vybraná vlastnost zvýrazněná */
+function oddilTypologie(i){
+  if (!(i >= 0)) return null;
+  const radky = [];
+  TYP.vlastnosti.forEach(function(v, k){
+    const h = typHodnota(v, i); if (!h) return;
+    radky.push({v: v, k: k, text: v.hodnoty[h][T.lang], c: typSkupina(v, h)});
+  });
+  if (!radky.length) return null;
+  const o = oddil(T.typologieKarta), dl = prvek("dl", "typ-karta");
+  radky.forEach(function(r){
+    const dt = prvek("dt"), b = prvek("button", "typ-karta-vl", r.v.nazev[T.lang]);
+    b.type = "button"; b.title = T.typologieNaMape;
+    b.addEventListener("click", function(){ nastavTypologii(r.k); });
+    dt.appendChild(b);
+    const dd = prvek("dd"), i = prvek("i", "typ-bod"); i.style.background = "var(" + typBarvy(r.v)[r.c] + ")";
+    dd.appendChild(i); dd.appendChild(document.createTextNode(r.text));
+    if (r.k === typVlastnost) { dt.classList.add("vybrana"); dd.classList.add("vybrana"); }
+    dl.appendChild(dt); dl.appendChild(dd);
+  });
+  o.appendChild(dl);
+  o.appendChild(prvek("p", "pozn", T.typologieKartaPozn));
+  return o;
+}
+{ const ulozena = pamet("atlas-typologie"); if (ulozena) { const k = TYP.vlastnosti.findIndex(function(v){ return v.id === ulozena; }); if (k >= 0) nastavTypologii(k, true); } }
 
 /* ---------- odkaz na jazyk: #cs (jazyk z atlasu) nebo #corn1251 (glottocode tečky) ---------- */
 const PODLE_KODU = new Map();
@@ -2090,6 +2234,7 @@ function ukazKartu(j){
   zalozky([
     {nazev: T.zalozkaZajimavost, uzly: [fakt, kde, oddilNareci(BOD_ATLASU[j.id])]},
     {nazev: T.vitalita, uzly: [stupenJ >= 0 ? oddilVitality(stupenJ, znakAtlas) : null]},
+    {nazev: T.zalozkaStavba, uzly: [oddilTypologie(BOD_ATLASU[j.id])]},
     {nazev: T.zalozkaPribuzni, uzly: [pribuzni, tlacitkoRodokmenu(BOD_ATLASU[j.id])]}
   ]);
 }
@@ -2211,16 +2356,7 @@ function ukazKartuBodu(i){
     o.appendChild(q); o.appendChild(prvek("p", "pozn", T.ukazkaPopis)); prehled.push(o);
   }
 
-  if (r[5]) {                                          /* stavba jazyka z WALS */
-    const ul = prvek("ul", "vlastnosti");
-    PD.wals.forEach(function(kod, k){
-      const v = +r[5][k], popis = T.wals[kod];
-      if (!v || !popis || !popis[1][v - 1]) return;
-      const li = prvek("li"); li.appendChild(prvek("b", null, popis[0])); li.appendChild(prvek("span", null, popis[1][v - 1]));
-      ul.appendChild(li);
-    });
-    if (ul.children.length) { const o = oddil(T.stavba); o.appendChild(ul); stavba.push(o); }
-  }
+  { const ot = oddilTypologie(i); if (ot) stavba.push(ot); }   /* typologie z WALS (odborné názvy a hodnoty) */
   if (Array.isArray(r[6])) {                           /* hlásky z PHOIBLE */
     const h = r[6], o = oddil(T.hlasky);
     let txt = t("hlaskyHodnota", {c: h[0], cs: tvar(h[0], T.souhlaska), v: h[1], vs: tvar(h[1], T.samohlaska)});
@@ -2490,6 +2626,8 @@ function obnovTexty(){
   if (strom) strom.texty();
   if (eu) postavEuPanel();
   if (brana) { postavBranu(); if (vymysleny) ukazVymysleny(vymysleny); }
+  if (typVlastnost >= 0) obnovLegenduTypologie();
+  if (!panelTyp.hidden) postavTypologiiPanel();
 }
 function prepniJazyk(lang){
   T = UI[lang]; STATY = STATY_VSE[lang];
@@ -3114,11 +3252,6 @@ function zpetNaPrvni(){
   zapisOdkaz();
   if (strom) strom.poVyberu();
 }
-/* texty WALS se jinde vztahují ke čtenáři („stejně jako čeština“); ve srovnání dvou jiných jazyků to mate */
-function bezOdkazuNaCtenare(txt){
-  return txt.replace(/\s+(Stejně jako čeština|Just like English)\.?/g, "")
-            .replace(/,\s*(stejně jako (čeština|my)|just like English|like in English|like we do)/gi, "");
-}
 function radekSrovnani(L, text){
   const d = prvek("div", "sr-radek"), te = prvek("i", "sr-tecka");
   te.style.background = barvaRole(L);
@@ -3186,17 +3319,18 @@ function ukazSrovnani(){
   /* stavba: jen vlastnosti, které mají zapsané oba jazyky */
   const stavba = [];
   const ra = a.i >= 0 ? radek(a.i) : [], rb = b.i >= 0 ? radek(b.i) : [];
-  if (ra[5] && rb[5]) {
+  if (a.i >= 0 && b.i >= 0) {                /* typologie WALS: stejné hodnoty zvlášť, rozdílné vedle sebe */
     const stejne = prvek("ul", "vlastnosti"), jine = prvek("ul", "vlastnosti");
-    PD.wals.forEach(function(kod, k){
-      const x = +ra[5][k], y = +rb[5][k], popis = T.wals[kod];
-      if (!x || !y || !popis || !popis[1][x - 1] || !popis[1][y - 1]) return;
-      const li = prvek("li"); li.appendChild(prvek("b", null, popis[0]));
-      if (x === y) { li.appendChild(prvek("span", null, bezOdkazuNaCtenare(popis[1][x - 1]))); stejne.appendChild(li); }
-      else { li.appendChild(radekSrovnani(a, bezOdkazuNaCtenare(popis[1][x - 1]))); li.appendChild(radekSrovnani(b, bezOdkazuNaCtenare(popis[1][y - 1]))); jine.appendChild(li); }
+    TYP.vlastnosti.forEach(function(v){
+      const x = typHodnota(v, a.i), y = typHodnota(v, b.i);
+      if (!x || !y) return;
+      const li = prvek("li"); li.appendChild(prvek("b", null, v.nazev[T.lang]));
+      if (x === y) { li.appendChild(prvek("span", null, v.hodnoty[x][T.lang])); stejne.appendChild(li); }
+      else { li.appendChild(radekSrovnani(a, v.hodnoty[x][T.lang])); li.appendChild(radekSrovnani(b, v.hodnoty[y][T.lang])); jine.appendChild(li); }
     });
     if (stejne.children.length) { const o = oddil(T.spolecne); o.appendChild(stejne); stavba.push(o); }
     if (jine.children.length) { const o = oddil(T.rozdily); o.appendChild(jine); stavba.push(o); }
+    if (stejne.children.length || jine.children.length) stavba.push(prvek("p", "pozn", T.typologieKartaPozn));
   }
   if (Array.isArray(ra[6]) && Array.isArray(rb[6])) {
     const o = oddil(T.hlasky);
