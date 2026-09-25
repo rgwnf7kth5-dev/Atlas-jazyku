@@ -1,10 +1,8 @@
 {
  "domu": "Atlas jazyků – zpět na začátek",
  "denJazykuZavrit": "Zavřít",
- "denJazyku": "Evropský den jazyků",
  "denJazykuDatum": "26. září · Evropský den jazyků",
- "denJazykuText": "Dnes slaví Evropa všechny své jazyky – je jich přes 200. Rada Evropy tenhle den vyhlásila v roce 2001. Zkus dnes někoho pozdravit v jazyce, který je pro tebe nový.",
- "denJazykuNahodny": "Ukaž mi evropský jazyk",
+ "denJazykuText": "Proč dnes? 26. září je Evropský den jazyků. Vyhlásila ho Rada Evropy v roce 2001, aby připomněla, že se v Evropě mluví víc než 200 jazyky, a aby lidi povzbudila naučit se další. Proto dnes místo jednoho Jazyka dne ukazujeme všech {n} evropských jazyků z atlasu najednou. Zkus někoho pozdravit v jazyce, který je pro tebe nový!",
  "denJazykuEU": "24 jazyků Evropské unie",
  "napoveda": "Nápověda",
  "krokZatoc": "Zatoč",
@@ -525,5 +523,9 @@
  "zpetnaPopis": "Napsat e-mail se zpětnou vazbou",
  "patickaSouhrn": "O atlasu, zdroje a kontakt",
  "vitalitaDokPopis": "Obarvit jazyky podle toho, jak moc jsou ohrožené",
- "vitalitaLegendaPopis": "Stupně vitality – klepnutím můžeš vybrat, které ukázat"
+ "vitalitaLegendaPopis": "Stupně vitality – klepnutím můžeš vybrat, které ukázat",
+ "denJazykuNadpis": "Evropské jazyky",
+ "denJazykuGlobus": "Ukaž je všechny na glóbu",
+ "evropaNadpis": "{n} evropských jazyků",
+ "evropaText": "Dnes je Evropský den jazyků. Červené hvězdičky ukazují evropské jazyky z atlasu – klikni na kterýkoli."
 }

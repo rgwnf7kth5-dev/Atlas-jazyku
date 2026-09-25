@@ -182,12 +182,13 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
   (mluvčí, vitalita, společné státy). Rodokmen ukáže obě cesty a přiblíží společného předka.
   Druhý jazyk má fialovou, když je ze stejné barevné skupiny jako první. Odkaz `#cs~ar`. Nic se nedomýšlí:
   výpůjčky slov ani podobnost slovní zásoby v datech nemáme, proto je srovnání neukazuje.
-- **Evropský den jazyků** (26. září, Rada Evropy od roku 2001; přání uživatele 24. 9. 2026 „něco milého“): jen ten den
-  je nad Jazykem dne karta `.den-jazyku` se střídajícími se pozdravy evropských jazyků z atlasu (`EVROPSKE`, co 1,8 s;
-  `prefers-reduced-motion` střídání vypne), větou o více než 200 evropských jazycích a tlačítky „Ukaž mi evropský jazyk“
-  (náhodný z `EVROPSKE`) a „24 jazyků Evropské unie“ (`spustEU`). Křížek ji schová do dalšího roku
-  (`atlas-den-jazyku-RRRR`). Vyzkoušet jde kdykoli adresou s `?den-jazyku`. Den jazyků je Rady Evropy, ne EU –
-  proto karta nemá vlajku EU.
+- **Evropský den jazyků** (26. září, Rada Evropy od roku 2001): ten den **místo Jazyka dne** karta „Evropské jazyky“
+  (přání uživatele 25. 9. 2026: „ukázat je najednou s odůvodněním proč“) – odstavec „Proč dnes?“ (Rada Evropy 2001,
+  přes 200 jazyků v Evropě, povzbudit k učení), tlačítka „Ukaž je všechny na glóbu“ (`spustEU("evropa")`: stejné
+  hvězdičky jako u „eulang“, ale **bez vlajky EU a v červené** – Den jazyků je Rady Evropy, ne EU) a „24 jazyků
+  Evropské unie“, pod tím mřížka všech evropských jazyků atlasu s pozdravem (`EVROPSKE`, 52 včetně českého
+  znakového jazyka, fríštiny, okcitánštiny, sardštiny, romštiny, jidiš, čečenštiny a osetštiny). Křížek kartu
+  schová do dalšího roku (`atlas-den-jazyku-RRRR`) a vrátí Jazyk dne. Vyzkoušet jde kdykoli adresou s `?den-jazyku`.
 - **Velikonoční vajíčko „eulang“** (přání uživatele 24. 9. 2026): napsání „eulang“ kdekoli na stránce (mimo
   políčka) nebo do hledání (kvůli telefonu), případně odkaz `#eulang`, přeletí glóbus nad Evropu, u všech
   24 úředních jazyků EU (`EU_JAZYKY`) vyskočí jedna po druhé zlaté hvězdičky se jménem (ostatní jména zmizí,

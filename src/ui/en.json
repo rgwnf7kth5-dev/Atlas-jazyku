@@ -1,10 +1,8 @@
 {
  "domu": "The Language Atlas – back to the start",
  "denJazykuZavrit": "Close",
- "denJazyku": "European Day of Languages",
  "denJazykuDatum": "26 September · European Day of Languages",
- "denJazykuText": "Today Europe celebrates all its languages – there are more than 200 of them. The Council of Europe started this day in 2001. Try greeting someone today in a language that is new to you.",
- "denJazykuNahodny": "Show me a European language",
+ "denJazykuText": "Why today? 26 September is the European Day of Languages. The Council of Europe declared it in 2001 to celebrate the more than 200 languages spoken in Europe and to encourage people to learn more of them. So today, instead of one Language of the Day, here are all {n} European languages in the atlas at once. Try greeting someone in a language that is new to you!",
  "denJazykuEU": "The 24 languages of the EU",
  "napoveda": "Help",
  "krokZatoc": "Spin",
@@ -525,5 +523,9 @@
  "zpetnaPopis": "Send feedback by e-mail",
  "patickaSouhrn": "About, sources and contact",
  "vitalitaDokPopis": "Colour languages by how endangered they are",
- "vitalitaLegendaPopis": "Vitality levels – tap to choose which to show"
+ "vitalitaLegendaPopis": "Vitality levels – tap to choose which to show",
+ "denJazykuNadpis": "Languages of Europe",
+ "denJazykuGlobus": "Show them all on the globe",
+ "evropaNadpis": "{n} languages of Europe",
+ "evropaText": "It is the European Day of Languages. The red stars show the European languages in the atlas – click any of them."
 }

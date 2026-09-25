@@ -210,10 +210,13 @@ function nadpis(text, barva){
   h2.appendChild(document.createTextNode(text));
   return h2;
 }
-/* Evropský den jazyků (26. září, Rada Evropy od roku 2001): jen ten den milá karta nad Jazykem dne.
-   Vyzkoušet jde kdykoli adresou s ?den-jazyku. Zavřená karta se do dalšího roku neukáže. */
+/* Evropský den jazyků (26. září, Rada Evropy od roku 2001): ten den je místo Jazyka dne karta „Evropské jazyky“
+   s vysvětlením a se všemi evropskými jazyky atlasu najednou (přání uživatele 25. 9. 2026); tlačítko je rozsvítí
+   na glóbu (spustEU("evropa")). Vyzkoušet jde kdykoli adresou s ?den-jazyku. Zavřená karta se do dalšího roku
+   neukáže a místo ní je zase Jazyk dne. */
 const EVROPSKE = ["cs", "sk", "pl", "de", "en", "fr", "es", "it", "pt", "nl", "sv", "da", "no", "fi", "is", "ga", "cy", "el", "hu", "ro",
-  "bg", "hr", "sr", "sl", "uk", "ru", "be", "lt", "lv", "et", "sq", "mk", "mt", "ca", "eu", "gl", "lb", "fo", "br", "gd", "se", "hy", "ka", "tr"];
+  "bg", "hr", "sr", "sl", "uk", "ru", "be", "lt", "lv", "et", "sq", "mk", "mt", "ca", "eu", "gl", "lb", "fo", "br", "gd", "se", "hy", "ka", "tr",
+  "fy", "oc", "sc", "rom", "yi", "czj", "ce", "os"];
 let denJazykuZavren = false;
 function denJazyku(){
   const d = new Date(), klic = "atlas-den-jazyku-" + d.getFullYear();
@@ -221,46 +224,48 @@ function denJazyku(){
   try { if (localStorage.getItem(klic)) return false; } catch (e) {}
   return (d.getMonth() === 8 && d.getDate() === 26) || /(^|[?&])den-jazyku/.test(location.search);
 }
-let pozdravyTimer = 0;
 function kartaDneJazyku(){
-  const jazyky = EVROPSKE.map(function(id){ return PODLE_ID[id]; }).filter(function(j){ return j && !atlasSkryty(j); });
+  const razic = new Intl.Collator(T.locale);
+  const jazyky = EVROPSKE.map(function(id){ return PODLE_ID[id]; }).filter(function(j){ return j && !atlasSkryty(j); })
+    .sort(function(a, b){ return razic.compare(a.n, b.n); });
   const k = prvek("section", "den-jazyku");
-  k.setAttribute("aria-label", T.denJazyku);
+  k.setAttribute("aria-labelledby", "dj-nadpis");
   const x = prvek("button", "dj-zavrit"); x.type = "button"; x.setAttribute("aria-label", T.denJazykuZavrit);
   x.innerHTML = '<svg aria-hidden="true"><use href="#i-krizek"/></svg>';
   x.addEventListener("click", function(){
-    denJazykuZavren = true; clearInterval(pozdravyTimer);
+    denJazykuZavren = true;
     try { localStorage.setItem("atlas-den-jazyku-" + new Date().getFullYear(), "1"); } catch (e) {}
-    k.remove();
+    postavPolici($("hledej").value);           // místo karty se vrátí Jazyk dne
   });
   k.appendChild(x);
   k.appendChild(prvek("span", "dj-stitek", T.denJazykuDatum));
-  const pz = prvek("span", "dj-pozdrav"), jm = prvek("span", "dj-jazyk");
-  k.appendChild(pz); k.appendChild(jm);
-  let n = Math.floor(Math.random() * jazyky.length);
-  function dalsi(){
-    const j = jazyky[n++ % jazyky.length];
-    pz.textContent = j.pis; if (j.kod) pz.lang = j.kod; jm.textContent = j.n;
-    pz.classList.remove("dj-vjezd"); void pz.offsetWidth; pz.classList.add("dj-vjezd");
-  }
-  dalsi();
-  clearInterval(pozdravyTimer);
-  if (!bezPohybu.matches) pozdravyTimer = setInterval(function(){ if (!k.isConnected) { clearInterval(pozdravyTimer); return; } dalsi(); }, 1800);
-  k.appendChild(prvek("p", "dj-text", T.denJazykuText));
+  const h = prvek("h2", "dj-nadpis", T.denJazykuNadpis); h.id = "dj-nadpis"; k.appendChild(h);
+  k.appendChild(prvek("p", "dj-text", t("denJazykuText", {n: cislo(jazyky.length)})));
   const akce = prvek("div", "dj-akce");
-  const b1 = prvek("button", "dj-tl hlavni", T.denJazykuNahodny); b1.type = "button";
-  b1.addEventListener("click", function(){ vyber(jazyky[Math.floor(Math.random() * jazyky.length)].id); });
+  const b1 = prvek("button", "dj-tl hlavni", T.denJazykuGlobus); b1.type = "button";
+  b1.addEventListener("click", function(){ spustEU("evropa"); });
   const b2 = prvek("button", "dj-tl", T.denJazykuEU); b2.type = "button";
   b2.addEventListener("click", function(){ spustEU(); });
   akce.appendChild(b1); akce.appendChild(b2); k.appendChild(akce);
+  const m = prvek("div", "dj-jazyky");
+  jazyky.forEach(function(j){
+    const b = prvek("button", "dj-j"); b.type = "button";
+    b.style.setProperty("--r-barva", "var(--r-" + j.sk + ")");
+    const pz = prvek("span", "dj-pz", j.pis); if (j.kod) pz.lang = j.kod; pz.dir = "auto";
+    b.appendChild(pz); b.appendChild(prvek("span", "dj-jm", j.n));
+    b.addEventListener("click", function(){ vyber(j.id); });
+    m.appendChild(b);
+  });
+  k.appendChild(m);
   return k;
 }
 function postavPolici(filtr){
   const hledane = bezDiakritiky(filtr || "").trim();
   $("hledej-x").hidden = !$("hledej").value;
   seznam.textContent = "";
-  if (!hledane && denJazyku()) seznam.appendChild(kartaDneJazyku());
-  if (!hledane) {                            /* jazyk dne nahoře */
+  const evropskyDen = !hledane && denJazyku();
+  if (evropskyDen) seznam.appendChild(kartaDneJazyku());
+  if (!hledane && !evropskyDen) {            /* jazyk dne nahoře (na Evropský den jazyků místo něj evropské jazyky) */
     const d = jazykDne();
     if (d) {
       const tl = prvek("button", "jazyk-dne");
@@ -386,7 +391,7 @@ function pridavej(prvni){
    Dlaždic je až 8 000, proto se tabulátorem do seznamu vstoupí jen jednou (na jednu dlaždici, tabindex 0)
    a mezi dlaždicemi se chodí šipkami: vlevo/vpravo o jednu, nahoru/dolů o řádek (nejbližší dlaždice pod/nad),
    Home/End na začátek a konec, PageUp/PageDown o deset řádků. Další Tab seznam opustí. */
-const DLAZDICE = "#seznam .mrizka > button, #seznam button.jazyk-dne";
+const DLAZDICE = "#seznam .mrizka > button, #seznam button.jazyk-dne, #seznam .dj-jazyky > button";
 let aktivniDlazdice = null;
 function pripravKlavesnici(){
   const vse = seznam.querySelectorAll(DLAZDICE);
@@ -1133,7 +1138,8 @@ function kresliPopredi(cas){
         if (n) c.lineTo(p[0] + rr * Math.cos(a), p[1] + rr * Math.sin(a)); else c.moveTo(p[0] + rr * Math.cos(a), p[1] + rr * Math.sin(a));
       }
       c.closePath();
-      c.fillStyle = "#FFCC00"; c.fill(); c.lineWidth = 1.6; c.strokeStyle = "#003399"; c.stroke();
+      if (eu.druh === "evropa") { c.fillStyle = barvy.cervena; c.fill(); c.lineWidth = 1.6; c.strokeStyle = barvy["popisek-lem"]; c.stroke(); }   // barvy vlajky EU patří jen EU
+      else { c.fillStyle = "#FFCC00"; c.fill(); c.lineWidth = 1.6; c.strokeStyle = "#003399"; c.stroke(); }
       if (vstup < 1) return;
       const jm = PODLE_ID[x.id].n, w = c.measureText(jm).width;
       const moznosti = [[p[0] + 12, p[1]], [p[0] - 12 - w, p[1]], [p[0] - w / 2, p[1] - 16], [p[0] - w / 2, p[1] + 16]];
@@ -1472,13 +1478,18 @@ let zeme = null;                          // {f: tvar státu, body: tečky jeho 
 /* velikonoční vajíčko: napsáním „eulang“ se rozsvítí 24 úředních jazyků EU a objeví se vlajka EU */
 const EU_JAZYKY = ["bg", "cs", "da", "de", "el", "en", "es", "et", "fi", "fr", "ga", "hr", "hu", "it", "lt", "lv", "mt", "nl", "pl", "pt", "ro", "sk", "sl", "sv"];
 const EU_BOD = new Uint8Array(POCET_B);
-const EU = EU_JAZYKY.filter(function(id){ return PODLE_ID[id]; }).map(function(id){
-  const i = BOD_ATLASU[id], j = PODLE_ID[id];                 // chorvatština tečku nemá (Glottolog ji vede se srbštinou jako jeden jazyk): poloha z atlasu
-  if (i >= 0) EU_BOD[i] = 1;
-  const v = i >= 0 ? vektor(B[i][1], B[i][2]) : vektor(j.stred[0], j.stred[1]); v.push(1);
-  return {id: id, i: i, v: v, sx: -1, sy: -1};
-});
-let eu = null;                            // {od: kdy začaly vyskakovat hvězdičky; -1 = čeká se na přílet}
+/* hvězdičky na glóbu: 24 jazyků EU („eulang“), nebo na Evropský den jazyků všechny evropské jazyky atlasu */
+function hvezdyJazyku(ids){
+  EU_BOD.fill(0);
+  return ids.filter(function(id){ return PODLE_ID[id]; }).map(function(id){
+    const i = BOD_ATLASU[id], j = PODLE_ID[id];               // chorvatština tečku nemá (Glottolog ji vede se srbštinou jako jeden jazyk): poloha z atlasu
+    if (i >= 0) EU_BOD[i] = 1;
+    const v = i >= 0 ? vektor(B[i][1], B[i][2]) : vektor(j.stred[0], j.stred[1]); v.push(1);
+    return {id: id, i: i, v: v, sx: -1, sy: -1};
+  });
+}
+let EU = hvezdyJazyku(EU_JAZYKY);
+let eu = null;                            // {od: kdy začaly vyskakovat hvězdičky (-1 = čeká se na přílet), druh: "eu" | "evropa"}
 /* srovnání dvou jazyků: první je zároveň vybraný (vybrany), druhý se k němu jen přidá */
 var srovnani = null;                      // {a: jazyk, b: jazyk} (viz jazykAtlasu / jazykBodu)
 var cekaNaDruhy = null;                   // první jazyk, dokud se vybírá druhý
@@ -2772,6 +2783,10 @@ var strom = (function(){   // var: filtry a texty se na něj ptají dřív, než
 })();
 /* ---------- velikonoční vajíčko „eulang“ ---------- */
 function postavEuPanel(){
+  const evropa = eu && eu.druh === "evropa";
+  $("eu-panel").classList.toggle("evropa", evropa);
+  $("eu-nadpis").textContent = evropa ? t("evropaNadpis", {n: cislo(EU.length)}) : T.euNadpis;
+  $("eu-panel").querySelector(".eu-text p").textContent = evropa ? T.evropaText : T.euText;
   const el = $("eu-jazyky"); el.textContent = "";
   EU.map(function(x){ return PODLE_ID[x.id]; }).sort(function(a, b){ return a.n.localeCompare(b.n, T.locale); }).forEach(function(j){
     const b = prvek("button", null, j.n); b.type = "button";
@@ -2779,13 +2794,14 @@ function postavEuPanel(){
     el.appendChild(b);
   });
 }
-function spustEU(){
+function spustEU(druh){
   if (strom && strom.zapnuto) strom.prepni(false);
   if (brana) zavriBranu(true);
   if (vybrany) { vybrany = null; karta.hidden = true; delete karta.dataset.jazyk; oznacTlacitka(null); }
   zeme = null; okno.hidden = true; bublinaBod.hidden = true;
   schovejUkazatel(true);
-  eu = {od: -1};
+  EU = hvezdyJazyku(druh === "evropa" ? EVROPSKE : EU_JAZYKY);
+  eu = {od: -1, druh: druh === "evropa" ? "evropa" : "eu"};
   postavEuPanel();
   $("eu-panel").hidden = false; scena.classList.add("rezim-eu");
   $("tl-cely").hidden = false;
