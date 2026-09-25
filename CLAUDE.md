@@ -279,7 +279,7 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
   má proto 162 jazyků; na glóbu, v aplikaci a v kalendáři (23. 9., odkaz na `/#czj`) zůstávají.
   **Stránka jazyka je kartotéční lístek nad seznamem** (uživatel 25. 9. 2026: „z té obrazovky se nedá odejít jinak
   než do glóbu“): každá `/jazyk/<jméno>/` obsahuje celý seznam a nad ním lístek (`.listek`, krémový, červená linka,
-  linkovaný spodek, dírka). Šipky předchozí/další (abecedně, dokola, i klávesy ←/→), „n / 163“ a křížek. Z přehledu
+  linkovaný spodek, dírka). Šipky předchozí/další (abecedně, dokola, i klávesy ←/→), „n / 162“ a křížek. Z přehledu
   se lístek načte bez přechodu stránky (`fetch`, `pushState`); křížek, Escape i klik vedle vrátí seznam (`history.back()`),
   šipky adresu jen nahradí. Přímo otevřená stránka jazyka zavře lístek na `/jazyky/`. Na telefonu je lístek přes celou
   obrazovku. Patička statických stránek je sbalená (`<details>`, stejný souhrn jako v aplikaci). Vlastní titulek, popis, canonical, hreflang a og:image = malba jazyka.
