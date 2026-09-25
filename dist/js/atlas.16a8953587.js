@@ -6986,6 +6986,7 @@ function ukazVymysleny(id){
   otevriKartu("#6B3FB8", "#FFFFFF", novy);
   kartaHero.classList.add("vymysleny");
   $("k-porovnat").hidden = true;
+  $("k-cesta").hidden = true;                // rodokmen předchozího jazyka k vymyšlenému nepatří
   $("k-plne").hidden = false;
   $("k-kod").textContent = "✦ " + T.vymyslenyJazyk; $("k-kod").classList.remove("sour");
   $("k-nazev").textContent = tj.nazev;

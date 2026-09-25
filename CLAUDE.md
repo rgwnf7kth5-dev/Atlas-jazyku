@@ -121,6 +121,13 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
 - **Karta jako pohlednice**: nahoře „hero“ v barvě rodiny (u teček bez atlasu azurová) s velkým pozdravem,
   pod ním štítky (mluvčích, rodina, vitalita) a záložky (atlas: Zajímavost / Vitalita / Příbuzní;
   tečka: Přehled / Jak funguje / Příbuzní). Při výběru nového jazyka karta vjede (`vjezd`).
+  **Od 25. 9. 2026 vypadá jako kartotéční lístek** (uživatel: lístek na stránkách jazyků „velice povedený, nemohli bychom
+  touto cestou jít i u karet na glóbu?“): krémový papír `--listek`, červená linka nahoře, hlava lístku (poloha, odkaz,
+  křížek) nad červenou čarou, malba vsazená s okrajem, štítky jako linkované řádky (název vlevo, hodnota vpravo),
+  záložky jako výřezy kartotéky, linkovaný spodek a dírka dole. Záhlaví v barvě rodiny zmizelo i u teček; barva rodiny
+  zůstala na tlačítku Poslechni si to, rámečku odznaku a posledním štítku rodokmenu. Blok „kartotéční lístek“ na konci
+  `styles.css`. **Karta vymyšleného jazyka a Brána si nechávají hologram a hvězdné sklo.** Uklizená karta na telefonu
+  (`.mala`) má tlačítka vpravo a polohu schovanou.
 - **Kouzlo výběru**: let k jazyku s „poskokem“ (u daleké cesty se glóbus cestou oddálí), po doletu se území
   rozlije vlnou od domovské tečky (`ODHALENI`, 950 ms) a oblouky k příbuzným vystřelí jeden po druhém.
 - **Police ukazuje všechny jazyky**, ne jen atlas (uživatel: jen pár desítek působilo neúplně). Ve skupině jsou

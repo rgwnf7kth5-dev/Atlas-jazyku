@@ -959,6 +959,61 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
   text-decoration:underline; text-underline-offset:2px}
 .pat-det > summary{font-size:.76rem; gap:8px}
 .pat-det > summary > span{min-width:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+
+/* ---------- karta jazyka jako kartotéční lístek (25. 9. 2026, podle lístku na stránkách jazyků: uživatel „velice povedený“) ----------
+   Krémový papír, červená linka nahoře, pod ní řádek s polohou a tlačítky, malba vsazená do lístku, údaje jako linkované řádky,
+   záložky jako výřezy kartotéky a dírka dole. Brána do jiných světů si nechává hvězdné sklo (viz výš). */
+:root{--listek:#121A36; --linka-listku:rgba(140,180,255,.09); --dirka:#070C1C}
+:root[data-theme="light"]{--listek:#FFFDF6; --linka-listku:rgba(60,110,200,.11); --dirka:#C9CCD3}
+.scena:not(.rezim-brana) .karta.sklo, :root[data-theme="light"] .scena:not(.rezim-brana) .karta.sklo{background:var(--listek);
+  backdrop-filter:none; -webkit-backdrop-filter:none; border:0; border-top:4px solid var(--akcent); border-radius:6px 6px 10px 10px;
+  box-shadow:0 30px 70px -30px rgba(0,0,0,.6), 0 2px 0 rgba(0,0,0,.04)}
+.scena:not(.rezim-brana) .k-hero:not(.vymysleny){display:flex; flex-direction:column; align-items:flex-start; margin:0; padding:0 16px 10px;
+  border-radius:0; background:transparent; color:var(--text); box-shadow:none}
+.scena:not(.rezim-brana) .k-hero:not(.vymysleny)::before, .scena:not(.rezim-brana) .k-hero:not(.vymysleny)::after{display:none}
+.scena:not(.rezim-brana) .k-hero:not(.vymysleny) > *{align-self:stretch}
+.scena:not(.rezim-brana) .k-hero:not(.vymysleny) > :is(.prehraj,.odznak){align-self:flex-start}
+/* hlava lístku: poloha, odkaz a křížek na papíře, pod nimi červená linka */
+.scena:not(.rezim-brana) .k-hero:not(.vymysleny) .k-lista{order:-1; position:static; margin:0 -6px 12px; padding:9px 0 8px;
+  border-bottom:2px solid color-mix(in srgb, var(--akcent) 55%, transparent)}
+.scena:not(.rezim-brana) .k-hero:not(.vymysleny) .k-lista .kod{color:var(--text2); background:none; padding:0 0 0 6px; opacity:1}
+.scena:not(.rezim-brana) .k-hero:not(.vymysleny) .zavrit{width:34px; height:34px; color:var(--text); background:transparent; border:1px solid var(--linka2)}
+.scena:not(.rezim-brana) .k-hero:not(.vymysleny) .zavrit:hover{border-color:var(--akcent); color:var(--akcent)}
+.scena:not(.rezim-brana) .k-hero > .k-malba{margin:0 0 14px; border-radius:8px; box-shadow:0 10px 24px -16px rgba(0,0,0,.55)}
+.scena:not(.rezim-brana) .k-hero:not(.vymysleny) :is(.prepis,.domaci){color:var(--text2); opacity:1}
+.scena:not(.rezim-brana) .k-hero:not(.vymysleny) .odznak{color:var(--text); background:transparent;
+  border-color:color-mix(in srgb, var(--r-barva, var(--cyan)) 60%, transparent)}
+.scena:not(.rezim-brana) .k-hero:not(.vymysleny):not(.s-malbou) h2{margin-top:2px}
+.scena:not(.rezim-brana) .k-hero .prehraj{background:var(--r-barva, var(--cyan)); color:var(--r-text, #fff)}
+/* údaje jako řádky lístku: název vlevo, hodnota vpravo, tenká linka pod každým */
+.scena:not(.rezim-brana) .k-stitky{display:block; padding:2px 16px 0}
+.scena:not(.rezim-brana) .stitek{display:grid; grid-template-columns:minmax(6.5em,38%) 1fr; align-items:baseline; gap:8px;
+  padding:6px 0; background:none; border:0; border-bottom:1px solid var(--linka-listku); border-radius:0}
+.scena:not(.rezim-brana) .k-stitky .stitek > :first-child{font-size:.66rem; letter-spacing:.12em; color:var(--text2)}
+.scena:not(.rezim-brana) :is(.k-cesta){background:transparent; border-style:dashed; border-radius:8px; margin:14px 16px 0}
+.scena:not(.rezim-brana) .k-porovnat{width:calc(100% - 32px); margin:10px 16px 0}
+/* záložky jako výřezy kartotéky */
+.scena:not(.rezim-brana) .zalozky{gap:4px; padding:0; margin:6px 0 12px; background:none; border:0; border-bottom:2px solid color-mix(in srgb, var(--akcent) 55%, transparent); border-radius:0}
+.scena:not(.rezim-brana) .zalozky button{border-radius:8px 8px 0 0; padding:7px 8px 6px; background:color-mix(in srgb, var(--text) 5%, transparent); box-shadow:none}
+.scena:not(.rezim-brana) .zalozky button[aria-selected="true"]{background:color-mix(in srgb, var(--akcent) 16%, var(--listek)); color:var(--text); box-shadow:none}
+/* linkovaný spodek a dírka na konci lístku */
+.scena:not(.rezim-brana) .k-telo{padding:8px 16px 44px; position:relative;
+  background-image:repeating-linear-gradient(to bottom, transparent 0 31px, var(--linka-listku) 31px 32px)}
+.scena:not(.rezim-brana) .k-telo::after{content:""; position:absolute; left:50%; bottom:14px; width:14px; height:14px; margin-left:-7px; border-radius:50%;
+  background:var(--dirka); box-shadow:inset 0 1px 3px rgba(0,0,0,.4)}
+@media (max-width:920px){
+  .scena:not(.rezim-brana) .karta.sklo{border-radius:10px 10px 0 0}
+  .scena:not(.rezim-brana) .uchyt{color:var(--text2)}
+  .scena:not(.rezim-brana) .uchyt i{height:5px; margin-top:6px; box-shadow:none; opacity:.5}
+  .scena:not(.rezim-brana) .k-hero:not(.vymysleny) .k-lista{padding-top:26px}
+}
+@media (max-width:920px){
+  /* uklizená karta (jen lišta): tlačítka vpravo nahoře, poloha schovaná, ať se vejde pozdrav a jméno */
+  .scena:not(.rezim-brana) .karta.mala .k-hero:not(.vymysleny){padding:24px 104px 10px 16px}
+  .scena:not(.rezim-brana) .karta.mala .k-hero:not(.vymysleny) .k-lista{position:absolute; top:24px; right:10px; left:auto; margin:0; padding:0; border:0}
+  .scena:not(.rezim-brana) .karta.mala .k-hero:not(.vymysleny) .k-lista .kod{display:none}
+}
+@media (max-width:920px){ .scena:not(.rezim-brana) .karta.mala :is(.k-stitky,.k-cesta,.k-porovnat){display:none} }
 </style>
 <link rel="canonical" href="https://atlasoflanguages.netlify.app/">
 <link rel="alternate" hreflang="cs" href="https://atlasoflanguages.netlify.app/">
@@ -1156,6 +1211,6 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
  <dialog class="o-datech navod" id="navod" aria-labelledby="nav-nadpis"></dialog>
 </div>
 
-<script src="js/atlas.81296d5bfa.js"></script>
+<script src="js/atlas.16a8953587.js"></script>
 </body>
 </html>
