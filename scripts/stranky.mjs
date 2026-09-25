@@ -227,6 +227,9 @@ window.addEventListener("popstate",function(){if(JE.test(location.pathname))nact
 <meta property="og:image:height" content="${obrazek.h}">
 <meta property="og:locale" content="${lang === "cs" ? "cs_CZ" : "en_GB"}">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="${escHtml(titulek)}">
+<meta name="twitter:description" content="${escHtml(popis)}">
+<meta name="twitter:image" content="${WEB((lang === "en" ? "/en" : "") + obrazek.src)}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="${fontyOdkaz}">

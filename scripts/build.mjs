@@ -43,7 +43,7 @@ const ikona = cti("static/favicon.svg").trim();
 // obrázku by pod odkazem dál ukazovaly starý (uživatel 25. 9. 2026 na X: „pořád ještě ukazuje starou upoutávku“)
 // Soubor s otiskem build kopíruje do dist/ i dist/en/, aby ho anglická doména našla i bez zvláštního pravidla.
 const NAHLED = Object.fromEntries(["cs", "en"].map(l => [l, `/nahled-${l}.` +
-  crypto.createHash("sha256").update(fs.readFileSync(path.join(KOREN, `static/nahled-${l}.jpg`))).digest("hex").slice(0, 10) + ".jpg"]));
+  crypto.createHash("sha256").update("2").update(fs.readFileSync(path.join(KOREN, `static/nahled-${l}.jpg`))).digest("hex").slice(0, 10) + ".jpg"]));
 const FONTY = "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800&display=swap";
 const escHtml = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 // data jdou do <script>, proto „<“ zapíšu jako < – řetězec „</script>“ v datech by stránku rozbil
@@ -146,7 +146,10 @@ function sestav(lang, { odkazJinam, artefakt }) {
     `<meta property="og:title" content="${escHtml(T.nazev)}">\n<meta property="og:description" content="${escHtml(T.popis)}">\n` +
     `<meta property="og:image" content="${DOMENA[lang]}${NAHLED[lang]}">\n<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n` +
     `<meta property="og:image:alt" content="${escHtml(T.nahledPopis)}">\n` +
-    `<meta property="og:locale" content="${lang === "cs" ? "cs_CZ" : "en_GB"}">\n<meta name="twitter:card" content="summary_large_image">\n`;
+    `<meta property="og:locale" content="${lang === "cs" ? "cs_CZ" : "en_GB"}">\n<meta name="twitter:card" content="summary_large_image">\n` +
+    // X bere og: jen jako náhradu; vlastní značky twitter: náhled na X spolehlivěji ukážou
+    `<meta name="twitter:title" content="${escHtml(T.nazev)}">\n<meta name="twitter:description" content="${escHtml(T.popis)}">\n` +
+    `<meta name="twitter:image" content="${DOMENA[lang]}${NAHLED[lang]}">\n<meta name="twitter:image:alt" content="${escHtml(T.nahledPopis)}">\n`;
   const dokument = `<!doctype html>\n<html lang="${lang}">\n<head>\n<meta charset="utf-8">\n` +
     `<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n` +
     hlavicka + sdileni + `</head>\n<body>\n${html}\n${skripty}\n</body>\n</html>\n`;
