@@ -24,14 +24,14 @@ ani `www` platný certifikát** (Netlify posílal `*.netlify.app`), X ani Facebo
 **Adresy v buildu jsou od 25. 9. 2026 na nových doménách** (`DOMENA`, `WEB(cesta)` v build.mjs; Facebook ukazoval
 odkaz bez obrázku, protože og:url mířil na netlify.app): canonical, og:url, og:image a hreflang každé stránky míří na
 její doménu, anglické bez `/en/`. Každá doména má vlastní `robots.txt` a `sitemap.xml` (anglické v `dist/en/`).
-`atlasoflanguages.netlify.app` přesměrovává na domény (náhledy pull requestů ne). Odkaz na druhou jazykovou verzi
+`atlasoflanguages.netlify.app` zatím nepřesměrovává (dokud `atlasjazyku.cz` nemá certifikát, rozbilo by to web). Odkaz na druhou jazykovou verzi
 vede na vlastních doménách na druhou doménu (`korenVerze` v app.js, statické stránky přes `WEB`) a přepnutí na místě
 tam nemění adresu. Zbývá: Google Search Console pro obě domény.
 
 Anglický název je **The Language Atlas** (podle domény, 25. 9. 2026). Web dosud běží i na **https://atlasoflanguages.netlify.app** (anglicky `/en/`).
 Nasazení přes Netlify z větve `main` podle `netlify.toml` (build `npm run check`, publikuje `dist/`).
 Z prostředí Claude Code na webu je `*.netlify.app` blokované (curl i WebFetch vrací 403), živý web tedy odsud
-zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na uživateli.
+zkontrolovat nejde – ověřuj `dist/` v Playwrightu a živý web workflow Diagnóza webu (viz výš).
 Česky na `/`, anglicky na `/en/`. Když validace spadne, Netlify nový web nezveřejní – tak to má být.
 
 ## Struktura a pravidla
