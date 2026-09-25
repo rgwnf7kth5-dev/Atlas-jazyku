@@ -26,7 +26,9 @@ odkaz bez obrázku, protože og:url mířil na netlify.app): canonical, og:url, 
 její doménu, anglické bez `/en/`. Každá doména má vlastní `robots.txt` a `sitemap.xml` (anglické v `dist/en/`).
 `atlasoflanguages.netlify.app` zatím nepřesměrovává (dokud `atlasjazyku.cz` nemá certifikát, rozbilo by to web). Odkaz na druhou jazykovou verzi
 vede na vlastních doménách na druhou doménu (`korenVerze` v app.js, statické stránky přes `WEB`) a přepnutí na místě
-tam nemění adresu. Zbývá: Google Search Console pro obě domény.
+tam nemění adresu. **Google Search Console** (25. 9. 2026): služby s předponou URL `https://atlasjazyku.cz/`
+a `https://thelanguageatlas.com/`, ověření značkou HTML – kódy jsou v `GOOGLE_OVERENI` v build.mjs a build je dává
+na úvodní stránky obou domén. Nemazat, jinak Search Console ověření zruší. Pak odeslat `sitemap.xml` u obou služeb.
 
 Anglický název je **The Language Atlas** (podle domény, 25. 9. 2026). Web dosud běží i na **https://atlasoflanguages.netlify.app** (anglicky `/en/`).
 Nasazení přes Netlify z větve `main` podle `netlify.toml` (build `npm run check`, publikuje `dist/`).

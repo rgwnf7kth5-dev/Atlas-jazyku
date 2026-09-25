@@ -37,6 +37,9 @@ const nareci = json("data/nareci.json");                 // jména nářečí z 
 // Canonical, og:url a og:image musí mířit na tu doménu, na které stránka opravdu leží: Facebook podle og:url stránku
 // načte znovu a se starou adresou atlasoflanguages.netlify.app ukazoval odkaz bez obrázku (25. 9. 2026).
 const DOMENA = { cs: "https://atlasjazyku.cz", en: "https://thelanguageatlas.com" };
+// ověření vlastnictví v Google Search Console (značka HTML), na úvodních stránkách obou domén; kódy nemazat,
+// jinak Search Console ověření po čase zruší
+const GOOGLE_OVERENI = ["zyKCEYlegO4cJQmz22iaMH9QuphSUalznP-e4iU_Gzg"];
 const WEB = p => p === "/en" || p.startsWith("/en/") ? DOMENA.en + p.slice(3) : DOMENA.cs + p;   // cesta v dist/ → plná adresa
 const ikona = cti("static/favicon.svg").trim();
 // náhled pro sdílení s otiskem v adrese: X, Facebook a spol. si obrázek pamatují podle adresy, takže po změně
@@ -140,6 +143,7 @@ function sestav(lang, { odkazJinam, artefakt }) {
   const adresa = DOMENA[lang] + "/";
   const sdileni =
     `<link rel="canonical" href="${adresa}">\n` +
+    GOOGLE_OVERENI.map(k => `<meta name="google-site-verification" content="${k}">\n`).join("") +
     `<link rel="alternate" hreflang="cs" href="${DOMENA.cs}/">\n<link rel="alternate" hreflang="en" href="${DOMENA.en}/">\n` +
     `<link rel="apple-touch-icon" href="/apple-touch-icon.png">\n` +
     `<meta property="og:type" content="website">\n<meta property="og:url" content="${adresa}">\n` +
