@@ -26,7 +26,8 @@ jobs:
             echo "--- $h"; echo | openssl s_client -connect $h:443 -servername $h 2>/dev/null | openssl x509 -noout -subject -issuer -dates -ext subjectAltName 2>&1 | head -8
           done
           echo "=================== DNS"
-          for h in atlasjazyku.cz www.atlasjazyku.cz thelanguageatlas.com; do echo "--- $h"; dig +short A $h; dig +short AAAA $h; done
+          for h in atlasjazyku.cz www.atlasjazyku.cz thelanguageatlas.com; do echo "--- $h"; dig +short A $h; dig +short AAAA $h; echo "CAA:"; dig +short CAA $h; done
+          echo "CAA cz:"; dig +short CAA cz; echo "NS:"; dig +short NS atlasjazyku.cz; echo "www CNAME:"; dig +short CNAME www.atlasjazyku.cz
           echo "=================== obrázky z og:image"
           for u in https://atlasjazyku.cz/ https://thelanguageatlas.com/; do
             img=$(curl -sS -m 30 -A "$UA_FB" -L "$u" | grep -oE 'og:image" content="[^"]*"' | head -1 | sed 's/.*content="//;s/"$//')
