@@ -7,19 +7,10 @@ jobs:
     steps:
       - run: |
           set +e
-          for u in https://docs.netlify.com/manage/domains/secure-domains-with-https/https-ssl/ https://docs.netlify.com/domains-https/https-ssl/ https://docs.netlify.com/manage/domains/configure-domains/configure-external-dns/ https://docs.netlify.com/manage/domains/get-started-with-domains/; do
-            echo "=================== $u"
-            curl -sSL -m 40 "$u" | python3 -c "
-          import sys, html.parser, re
-          class P(html.parser.HTMLParser):
-              def __init__(s): super().__init__(); s.t=[]; s.skip=0
-              def handle_starttag(s,tag,a):
-                  if tag in ('script','style','nav','header','footer'): s.skip+=1
-                  if tag in ('p','li','h1','h2','h3','h4','br','tr'): s.t.append('\n')
-              def handle_endtag(s,tag):
-                  if tag in ('script','style','nav','header','footer'): s.skip-=1
-              def handle_data(s,d):
-                  if s.skip<=0: s.t.append(d)
-          p=P(); p.feed(sys.stdin.read()); print(re.sub(r'\n\s*\n+','\n',''.join(p.t)))
-          " | grep -iE -B2 -A6 "renew|provision|certificate|verify dns|HTTPS|awaiting|Domain management|Domains" | head -250
+          curl -sSL -m 40 https://docs.netlify.com/llms.txt > llms.txt
+          grep -iE "troubleshoot|https|ssl|certificate" llms.txt | head -30
+          for u in $(grep -oE 'https://docs\.netlify\.com[^ )]*' llms.txt | grep -iE "troubleshoot.*(ssl|https|domain)|ssl.*troubleshoot|https.*troubleshoot|domains/troubleshoot" | sort -u | head -4); do
+            md="${u%/}.md"; [[ "$u" == *.md ]] && md="$u"
+            echo "=================== $md"
+            curl -sSL -m 40 "$md" | grep -iE -B3 -A10 "renew|provision|verify dns|awaiting|pending|Domain management" | head -150
           done
