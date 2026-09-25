@@ -1,62 +1,303 @@
 {
  "_pozn": "Význačné dny pro Jazyk dne: MM-DD → jazyk atlasu a důvod česky i anglicky. Důvod musí být pravdivý a ověřený. Ostatní dny Jazyk dne cestuje kolem světa (app.js, cestaKolemSveta). 26. 9. je místo Jazyka dne Evropský den jazyků.",
- "01-01": {"id": "sk", "cs": "1. ledna 1993 vznikla samostatná Slovenská republika a slovenština se stala jejím úředním jazykem.", "en": "On 1 January 1993 Slovakia became an independent country, with Slovak as its official language."},
- "01-10": {"id": "hi", "cs": "Dnes je Světový den hindštiny. Připomíná první světovou konferenci o hindštině, která začala 10. ledna 1975.", "en": "Today is World Hindi Day. It marks the first World Hindi Conference, which opened on 10 January 1975."},
- "02-06": {"id": "se", "cs": "Dnes je Den Sámů, národní svátek Sámů v Norsku, Švédsku, Finsku a Rusku.", "en": "Today is Sámi National Day, celebrated by the Sámi in Norway, Sweden, Finland and Russia."},
- "02-08": {"id": "sl", "cs": "Dnes je v Slovinsku Prešernův den, svátek slovinské kultury. Básník France Prešeren zemřel 8. února 1849.", "en": "Today is Prešeren Day, Slovenia's day of culture. The poet France Prešeren died on 8 February 1849."},
- "02-09": {"id": "el", "cs": "Dnes je Světový den řečtiny. Je to výročí úmrtí básníka Dionysia Solomose, autora řecké hymny.", "en": "Today is World Greek Language Day, the anniversary of the death of Dionysios Solomos, who wrote the Greek national anthem."},
- "02-16": {"id": "lt", "cs": "16. února 1918 vyhlásila Litva nezávislost. Je to její státní svátek.", "en": "On 16 February 1918 Lithuania declared independence. It is a national holiday."},
- "02-21": {"id": "bn", "cs": "Dnes je Mezinárodní den mateřského jazyka (UNESCO). Připomíná studenty, kteří 21. února 1952 v Dháce demonstrovali za uznání bengálštiny.", "en": "Today is International Mother Language Day (UNESCO). It remembers the students who marched in Dhaka on 21 February 1952 for the recognition of Bengali."},
- "02-27": {"id": "mr", "cs": "Dnes je Den maráthštiny. Slaví se v den narozenin básníka Kusumagradže.", "en": "Today is Marathi Language Day, held on the birthday of the poet Kusumagraj."},
- "03-01": {"id": "cy", "cs": "Dnes je svátek svatého Davida, patrona Walesu.", "en": "Today is St David's Day, the day of the patron saint of Wales."},
- "03-11": {"id": "hr", "cs": "Od 11. března probíhají Dny chorvatského jazyka.", "en": "The Days of the Croatian Language begin on 11 March."},
- "03-14": {"id": "et", "cs": "Dnes je v Estonsku Den mateřského jazyka, v den narozenin básníka Kristjana Jaaka Petersona.", "en": "Today is Mother Tongue Day in Estonia, on the birthday of the poet Kristjan Jaak Peterson."},
- "03-17": {"id": "ga", "cs": "Dnes je svátek svatého Patrika, patrona Irska.", "en": "Today is St Patrick's Day, the day of the patron saint of Ireland."},
- "03-20": {"id": "fr", "cs": "Dnes je Den francouzštiny v OSN a Mezinárodní den frankofonie.", "en": "Today is the UN's French Language Day and the International Day of La Francophonie."},
- "04-08": {"id": "rom", "cs": "Dnes je Mezinárodní den Romů. Připomíná první světový romský kongres, který začal 8. dubna 1971.", "en": "Today is International Romani Day. It marks the first World Romani Congress, which opened on 8 April 1971."},
- "04-09": {"id": "fi", "cs": "Dnes je Den finštiny, výročí úmrtí Mikaela Agricoly, otce psané finštiny.", "en": "Today is the Day of the Finnish Language, the anniversary of the death of Mikael Agricola, the father of written Finnish."},
- "04-14": {"id": "ka", "cs": "Dnes je Den gruzínštiny. 14. dubna 1978 lidé v Tbilisi ubránili gruzínštinu jako úřední jazyk.", "en": "Today is Georgian Language Day. On 14 April 1978 people in Tbilisi defended Georgian as an official language."},
- "04-20": {"id": "zh", "cs": "Dnes je Den čínštiny v OSN. Připomíná Cchang Ťieho, který podle pověsti vymyslel čínské znaky.", "en": "Today is the UN's Chinese Language Day, honouring Cangjie, who according to legend invented Chinese characters."},
- "04-23": {"id": "en", "cs": "Dnes je Den angličtiny v OSN. Podle tradice se 23. dubna narodil i zemřel William Shakespeare.", "en": "Today is the UN's English Language Day. By tradition, William Shakespeare was born and died on 23 April."},
- "04-27": {"id": "nl", "cs": "Dnes je v Nizozemsku Den krále.", "en": "Today is King's Day in the Netherlands."},
- "05-03": {"id": "pl", "cs": "Dnes je v Polsku svátek Ústavy 3. května z roku 1791.", "en": "Today Poland celebrates its Constitution of 3 May 1791."},
- "05-05": {"id": "pt", "cs": "Dnes je Světový den portugalštiny (UNESCO).", "en": "Today is World Portuguese Language Day (UNESCO)."},
- "05-15": {"id": "fa", "cs": "V těchto dnech slaví Íránci Den básníka Ferdousího a perského jazyka.", "en": "Around this day Iranians celebrate the poet Ferdowsi and the Persian language."},
- "05-17": {"id": "gl", "cs": "Dnes je Den galicijské literatury (Día das Letras Galegas).", "en": "Today is Galician Literature Day (Día das Letras Galegas)."},
- "05-24": {"id": "bg", "cs": "Dnes slaví Bulharsko den bulharské osvěty a kultury a slovanského písma.", "en": "Today Bulgaria celebrates the Day of Bulgarian Education and Culture and of Slavic writing."},
- "06-02": {"id": "it", "cs": "Dnes je v Itálii Den republiky.", "en": "Today is Republic Day in Italy."},
- "06-05": {"id": "da", "cs": "Dnes je v Dánsku Den ústavy.", "en": "Today is Constitution Day in Denmark."},
- "06-06": {"id": "ru", "cs": "Dnes je Den ruštiny v OSN, v den narozenin básníka Alexandra Puškina.", "en": "Today is the UN's Russian Language Day, on the birthday of the poet Alexander Pushkin."},
- "06-21": {"id": "kl", "cs": "Dnes je v Grónsku státní svátek, nejdelší den roku.", "en": "Today is Greenland's National Day, the longest day of the year."},
- "06-23": {"id": "lb", "cs": "Dnes je Lucemburský státní svátek.", "en": "Today is Luxembourg's National Day."},
- "07-07": {"id": "sw", "cs": "Dnes je Světový den svahilštiny (UNESCO).", "en": "Today is World Kiswahili Language Day (UNESCO)."},
- "07-09": {"id": "iu", "cs": "Dnes je Den Nunavutu, kanadského území, kde se nejvíc mluví inuktitutem.", "en": "Today is Nunavut Day. In this Canadian territory most people speak Inuktitut."},
- "07-28": {"id": "fo", "cs": "Na Faerských ostrovech dnes začíná Ólavsøka, jejich státní svátek.", "en": "Ólavsøka, the national holiday of the Faroe Islands, begins today."},
- "07-29": {"id": "th", "cs": "Dnes je v Thajsku Den thajštiny.", "en": "Today is Thai Language Day in Thailand."},
- "08-05": {"id": "no", "cs": "5. srpna 1813 se narodil Ivar Aasen, který sestavil nynorsk, jednu ze dvou spisovných podob norštiny.", "en": "Ivar Aasen, who created Nynorsk, one of the two written forms of Norwegian, was born on 5 August 1813."},
- "08-09": {"id": "qu", "cs": "Dnes je Mezinárodní den původních obyvatel světa. Kečuánštinou, jazykem někdejší říše Inků, dnes v Andách mluví miliony lidí.", "en": "Today is the International Day of the World's Indigenous Peoples. Quechua, the language of the old Inca empire, is spoken by millions of people in the Andes today."},
- "08-14": {"id": "af", "cs": "Dnes je Den afrikánštiny. 14. srpna 1875 vznikl spolek, který ji začal prosazovat jako psaný jazyk.", "en": "Today is Afrikaans Language Day. On 14 August 1875 a society was founded to promote it as a written language."},
- "08-24": {"id": "gu", "cs": "Dnes je Den gudžarátštiny, v den narozenin básníka Narmada.", "en": "Today is Gujarati Language Day, on the birthday of the poet Narmad."},
- "08-29": {"id": "te", "cs": "Dnes je Den telugštiny, v den narozenin jazykovědce Giduguho Venkaty Ramamurthyho.", "en": "Today is Telugu Language Day, on the birthday of the linguist Gidugu Venkata Ramamurthy."},
- "08-31": {"id": "ro", "cs": "Dnes je Den rumunštiny.", "en": "Today is Romanian Language Day."},
- "09-14": {"id": "mi", "cs": "14. září 1972 předali Maorové parlamentu petici za výuku maorštiny. Kolem toho dne je Týden maorštiny.", "en": "On 14 September 1972 Māori handed Parliament a petition for teaching Māori. Māori Language Week is held around this day."},
- "09-16": {"id": "tpi", "cs": "Dnes je Den nezávislosti Papuy Nové Guineje.", "en": "Today is Independence Day in Papua New Guinea."},
- "09-23": {"id": "czj", "cs": "Dnes je Mezinárodní den znakových jazyků (OSN).", "en": "Today is the International Day of Sign Languages (UN)."},
- "09-24": {"id": "zu", "cs": "Dnes je v Jižní Africe Den dědictví, dříve Den krále Šaky, zakladatele zulské říše.", "en": "Today is Heritage Day in South Africa, once Shaka Day after the founder of the Zulu kingdom."},
- "10-03": {"id": "de", "cs": "Dnes je Den německé jednoty. 3. října 1990 se Německo znovu spojilo.", "en": "Today is German Unity Day. Germany was reunited on 3 October 1990."},
- "10-09": {"id": "ko", "cs": "Dnes je v Jižní Koreji Den hangulu, korejského písma.", "en": "Today is Hangul Day in South Korea, the day of the Korean alphabet."},
- "10-10": {"id": "fj", "cs": "Dnes je Den Fidži. 10. října 1970 získalo Fidži nezávislost.", "en": "Today is Fiji Day. Fiji became independent on 10 October 1970."},
- "10-12": {"id": "es", "cs": "Dnes je státní svátek Španělska.", "en": "Today is Spain's National Day."},
- "10-28": {"id": "cs", "cs": "28. října 1918 vzniklo Československo. Je to státní svátek.", "en": "Czechoslovakia was founded on 28 October 1918. It is a national holiday."},
- "10-29": {"id": "tr", "cs": "Dnes je Den republiky. 29. října 1923 bylo vyhlášeno Turecko.", "en": "Today is Republic Day. Turkey was proclaimed on 29 October 1923."},
- "11-01": {"id": "kn", "cs": "Dnes je Karnátaka Rádžjótsava, den vzniku indického státu Karnátaka, kde se mluví kannadštinou.", "en": "Today is Karnataka Rajyotsava, the day the Indian state of Karnataka, where Kannada is spoken, was formed."},
- "11-06": {"id": "sv", "cs": "Dnes je Den švédštiny, který slaví hlavně Švédové ve Finsku.", "en": "Today is Swedish Day, celebrated mainly by Swedish speakers in Finland."},
- "11-09": {"id": "uk", "cs": "Dnes je Den ukrajinského písemnictví a jazyka.", "en": "Today is the Day of Ukrainian Writing and Language."},
- "11-13": {"id": "hu", "cs": "Dnes je Den maďarštiny. 13. listopadu 1844 se maďarština stala úředním jazykem Uherska.", "en": "Today is Hungarian Language Day. Hungarian became the official language of Hungary on 13 November 1844."},
- "11-16": {"id": "is", "cs": "Dnes je Den islandštiny, v den narozenin básníka Jónase Hallgrímssona.", "en": "Today is Icelandic Language Day, on the birthday of the poet Jónas Hallgrímsson."},
- "11-18": {"id": "lv", "cs": "18. listopadu 1918 byla vyhlášena Lotyšská republika. Je to státní svátek.", "en": "The Republic of Latvia was proclaimed on 18 November 1918. It is a national holiday."},
- "11-22": {"id": "sq", "cs": "Dnes je Den albánské abecedy. 22. listopadu 1908 se na kongresu v Bitole dohodli, jak psát albánsky.", "en": "Today is Albanian Alphabet Day. On 22 November 1908 a congress in Bitola agreed how to write Albanian."},
- "11-30": {"id": "gd", "cs": "Dnes je svátek svatého Ondřeje, patrona Skotska.", "en": "Today is St Andrew's Day, the day of the patron saint of Scotland."},
- "12-03": {"id": "eu", "cs": "Dnes je Mezinárodní den baskičtiny.", "en": "Today is International Basque Language Day."},
- "12-18": {"id": "ar", "cs": "Dnes je Den arabštiny v OSN. 18. prosince 1973 se arabština stala úředním jazykem OSN.", "en": "Today is the UN's Arabic Language Day. Arabic became an official UN language on 18 December 1973."}
+ "01-01": {
+  "id": "sk",
+  "cs": "1. ledna 1993 vznikla samostatná Slovenská republika a slovenština se stala jejím úředním jazykem.",
+  "en": "On 1 January 1993 Slovakia became an independent country, with Slovak as its official language."
+ },
+ "01-10": {
+  "id": "hi",
+  "cs": "Dnes je Světový den hindštiny. Připomíná první světovou konferenci o hindštině, která začala 10. ledna 1975.",
+  "en": "Today is World Hindi Day. It marks the first World Hindi Conference, which opened on 10 January 1975."
+ },
+ "02-06": {
+  "id": "se",
+  "cs": "Dnes je Den Sámů, národní svátek Sámů v Norsku, Švédsku, Finsku a Rusku.",
+  "en": "Today is Sámi National Day, celebrated by the Sámi in Norway, Sweden, Finland and Russia."
+ },
+ "02-08": {
+  "id": "sl",
+  "cs": "Dnes je v Slovinsku Prešernův den, svátek slovinské kultury. Básník France Prešeren zemřel 8. února 1849.",
+  "en": "Today is Prešeren Day, Slovenia's day of culture. The poet France Prešeren died on 8 February 1849."
+ },
+ "02-09": {
+  "id": "el",
+  "cs": "Dnes je Světový den řečtiny. Je to výročí úmrtí básníka Dionysia Solomose, autora řecké hymny.",
+  "en": "Today is World Greek Language Day, the anniversary of the death of Dionysios Solomos, who wrote the Greek national anthem."
+ },
+ "02-16": {
+  "id": "lt",
+  "cs": "16. února 1918 vyhlásila Litva nezávislost. Je to její státní svátek.",
+  "en": "On 16 February 1918 Lithuania declared independence. It is a national holiday."
+ },
+ "02-21": {
+  "id": "bn",
+  "cs": "Dnes je Mezinárodní den mateřského jazyka (UNESCO). Připomíná studenty, kteří 21. února 1952 v Dháce demonstrovali za uznání bengálštiny.",
+  "en": "Today is International Mother Language Day (UNESCO). It remembers the students who marched in Dhaka on 21 February 1952 for the recognition of Bengali."
+ },
+ "02-27": {
+  "id": "mr",
+  "cs": "Dnes je Den maráthštiny. Slaví se v den narozenin básníka Kusumagradže.",
+  "en": "Today is Marathi Language Day, held on the birthday of the poet Kusumagraj."
+ },
+ "03-01": {
+  "id": "cy",
+  "cs": "Dnes je svátek svatého Davida, patrona Walesu.",
+  "en": "Today is St David's Day, the day of the patron saint of Wales."
+ },
+ "03-11": {
+  "id": "hr",
+  "cs": "Od 11. března probíhají Dny chorvatského jazyka.",
+  "en": "The Days of the Croatian Language begin on 11 March."
+ },
+ "03-14": {
+  "id": "et",
+  "cs": "Dnes je v Estonsku Den mateřského jazyka, v den narozenin básníka Kristjana Jaaka Petersona.",
+  "en": "Today is Mother Tongue Day in Estonia, on the birthday of the poet Kristjan Jaak Peterson."
+ },
+ "03-17": {
+  "id": "ga",
+  "cs": "Dnes je svátek svatého Patrika, patrona Irska.",
+  "en": "Today is St Patrick's Day, the day of the patron saint of Ireland."
+ },
+ "03-20": {
+  "id": "fr",
+  "cs": "Dnes je Den francouzštiny v OSN a Mezinárodní den frankofonie.",
+  "en": "Today is the UN's French Language Day and the International Day of La Francophonie."
+ },
+ "04-08": {
+  "id": "rom",
+  "cs": "Dnes je Mezinárodní den Romů. Připomíná první světový romský kongres, který začal 8. dubna 1971.",
+  "en": "Today is International Romani Day. It marks the first World Romani Congress, which opened on 8 April 1971."
+ },
+ "04-09": {
+  "id": "fi",
+  "cs": "Dnes je Den finštiny, výročí úmrtí Mikaela Agricoly, otce psané finštiny.",
+  "en": "Today is the Day of the Finnish Language, the anniversary of the death of Mikael Agricola, the father of written Finnish."
+ },
+ "04-14": {
+  "id": "ka",
+  "cs": "Dnes je Den gruzínštiny. 14. dubna 1978 lidé v Tbilisi ubránili gruzínštinu jako úřední jazyk.",
+  "en": "Today is Georgian Language Day. On 14 April 1978 people in Tbilisi defended Georgian as an official language."
+ },
+ "04-20": {
+  "id": "zh",
+  "cs": "Dnes je Den čínštiny v OSN. Připomíná Cchang Ťieho, který podle pověsti vymyslel čínské znaky.",
+  "en": "Today is the UN's Chinese Language Day, honouring Cangjie, who according to legend invented Chinese characters."
+ },
+ "04-23": {
+  "id": "en",
+  "cs": "Dnes je v OSN Den angličtiny i Den španělštiny. 23. dubna se připomínají dva velcí spisovatelé, William Shakespeare a Miguel de Cervantes.",
+  "en": "Today the UN celebrates both English Language Day and Spanish Language Day. 23 April honours two great writers, William Shakespeare and Miguel de Cervantes."
+ },
+ "04-27": {
+  "id": "nl",
+  "cs": "Dnes je v Nizozemsku Den krále.",
+  "en": "Today is King's Day in the Netherlands."
+ },
+ "05-03": {
+  "id": "pl",
+  "cs": "Dnes je v Polsku svátek Ústavy 3. května z roku 1791.",
+  "en": "Today Poland celebrates its Constitution of 3 May 1791."
+ },
+ "05-05": {
+  "id": "pt",
+  "cs": "Dnes je Světový den portugalštiny (UNESCO).",
+  "en": "Today is World Portuguese Language Day (UNESCO)."
+ },
+ "05-15": {
+  "id": "fa",
+  "cs": "V těchto dnech slaví Íránci Den básníka Ferdousího a perského jazyka.",
+  "en": "Around this day Iranians celebrate the poet Ferdowsi and the Persian language."
+ },
+ "05-17": {
+  "id": "gl",
+  "cs": "Dnes je Den galicijské literatury (Día das Letras Galegas).",
+  "en": "Today is Galician Literature Day (Día das Letras Galegas)."
+ },
+ "05-24": {
+  "id": "bg",
+  "cs": "Dnes je Den slovanského písemnictví a kultury, spojený s odkazem svatých Cyrila a Metoděje. Slaví ho hlavně Bulharsko, ale i Rusko a Severní Makedonie.",
+  "en": "Today is the Day of Slavic Literacy and Culture, linked to Saints Cyril and Methodius. It is celebrated mainly in Bulgaria, and also in Russia and North Macedonia."
+ },
+ "06-02": {
+  "id": "it",
+  "cs": "Dnes je v Itálii Den republiky.",
+  "en": "Today is Republic Day in Italy."
+ },
+ "06-05": {
+  "id": "da",
+  "cs": "Dnes je v Dánsku Den ústavy.",
+  "en": "Today is Constitution Day in Denmark."
+ },
+ "06-06": {
+  "id": "ru",
+  "cs": "Dnes je Den ruštiny v OSN, v den narozenin básníka Alexandra Puškina.",
+  "en": "Today is the UN's Russian Language Day, on the birthday of the poet Alexander Pushkin."
+ },
+ "06-21": {
+  "id": "kl",
+  "cs": "Dnes je v Grónsku státní svátek, nejdelší den roku.",
+  "en": "Today is Greenland's National Day, the longest day of the year."
+ },
+ "06-23": {
+  "id": "lb",
+  "cs": "Dnes je Lucemburský státní svátek.",
+  "en": "Today is Luxembourg's National Day."
+ },
+ "07-07": {
+  "id": "sw",
+  "cs": "Dnes je Světový den svahilštiny (UNESCO).",
+  "en": "Today is World Kiswahili Language Day (UNESCO)."
+ },
+ "07-09": {
+  "id": "iu",
+  "cs": "Dnes je Den Nunavutu, kanadského území, kde se nejvíc mluví inuktitutem.",
+  "en": "Today is Nunavut Day. In this Canadian territory most people speak Inuktitut."
+ },
+ "07-28": {
+  "id": "fo",
+  "cs": "Na Faerských ostrovech dnes začíná Ólavsøka, jejich státní svátek.",
+  "en": "Ólavsøka, the national holiday of the Faroe Islands, begins today."
+ },
+ "07-29": {
+  "id": "th",
+  "cs": "Dnes je v Thajsku Den thajštiny.",
+  "en": "Today is Thai Language Day in Thailand."
+ },
+ "08-05": {
+  "id": "no",
+  "cs": "5. srpna 1813 se narodil Ivar Aasen, který sestavil nynorsk, jednu ze dvou spisovných podob norštiny.",
+  "en": "Ivar Aasen, who created Nynorsk, one of the two written forms of Norwegian, was born on 5 August 1813."
+ },
+ "08-09": {
+  "id": "qu",
+  "cs": "Dnes je Mezinárodní den původních obyvatel světa. Kečuánštinou, jazykem někdejší říše Inků, dnes v Andách mluví miliony lidí.",
+  "en": "Today is the International Day of the World's Indigenous Peoples. Quechua, the language of the old Inca empire, is spoken by millions of people in the Andes today."
+ },
+ "08-14": {
+  "id": "af",
+  "cs": "Dnes je Den afrikánštiny. 14. srpna 1875 vznikl spolek, který ji začal prosazovat jako psaný jazyk.",
+  "en": "Today is Afrikaans Language Day. On 14 August 1875 a society was founded to promote it as a written language."
+ },
+ "08-24": {
+  "id": "gu",
+  "cs": "Dnes je Den gudžarátštiny, v den narozenin básníka Narmada.",
+  "en": "Today is Gujarati Language Day, on the birthday of the poet Narmad."
+ },
+ "08-29": {
+  "id": "te",
+  "cs": "Dnes je Den telugštiny, v den narozenin jazykovědce Giduguho Venkaty Ramamurthyho.",
+  "en": "Today is Telugu Language Day, on the birthday of the linguist Gidugu Venkata Ramamurthy."
+ },
+ "08-31": {
+  "id": "ro",
+  "cs": "Dnes je Den rumunštiny.",
+  "en": "Today is Romanian Language Day."
+ },
+ "09-14": {
+  "id": "mi",
+  "cs": "14. září 1972 předali Maorové parlamentu petici za výuku maorštiny. Kolem toho dne je Týden maorštiny.",
+  "en": "On 14 September 1972 Māori handed Parliament a petition for teaching Māori. Māori Language Week is held around this day."
+ },
+ "09-16": {
+  "id": "tpi",
+  "cs": "Dnes je Den nezávislosti Papuy Nové Guineje.",
+  "en": "Today is Independence Day in Papua New Guinea."
+ },
+ "09-23": {
+  "id": "czj",
+  "cs": "Dnes je Mezinárodní den znakových jazyků (OSN).",
+  "en": "Today is the International Day of Sign Languages (UN)."
+ },
+ "09-24": {
+  "id": "zu",
+  "cs": "Dnes je v Jižní Africe Den dědictví, dříve Den krále Šaky, zakladatele zulské říše.",
+  "en": "Today is Heritage Day in South Africa, once Shaka Day after the founder of the Zulu kingdom."
+ },
+ "10-03": {
+  "id": "de",
+  "cs": "Dnes je Den německé jednoty. 3. října 1990 se Německo znovu spojilo.",
+  "en": "Today is German Unity Day. Germany was reunited on 3 October 1990."
+ },
+ "10-09": {
+  "id": "ko",
+  "cs": "Dnes je v Jižní Koreji Den hangulu, korejského písma.",
+  "en": "Today is Hangul Day in South Korea, the day of the Korean alphabet."
+ },
+ "10-10": {
+  "id": "fj",
+  "cs": "Dnes je Den Fidži. 10. října 1970 získalo Fidži nezávislost.",
+  "en": "Today is Fiji Day. Fiji became independent on 10 October 1970."
+ },
+ "10-12": {
+  "id": "es",
+  "cs": "Dnes je státní svátek Španělska.",
+  "en": "Today is Spain's National Day."
+ },
+ "10-28": {
+  "id": "cs",
+  "cs": "28. října 1918 vzniklo Československo. Je to státní svátek.",
+  "en": "Czechoslovakia was founded on 28 October 1918. It is a national holiday."
+ },
+ "10-29": {
+  "id": "tr",
+  "cs": "Dnes je Den republiky. 29. října 1923 bylo vyhlášeno Turecko.",
+  "en": "Today is Republic Day. Turkey was proclaimed on 29 October 1923."
+ },
+ "11-01": {
+  "id": "kn",
+  "cs": "Dnes je Karnátaka Rádžjótsava, den vzniku indického státu Karnátaka, kde se mluví kannadštinou.",
+  "en": "Today is Karnataka Rajyotsava, the day the Indian state of Karnataka, where Kannada is spoken, was formed."
+ },
+ "11-05": {
+  "id": "rom",
+  "cs": "Dnes je Mezinárodní den romského jazyka. Slaví se od roku 2009, kdy s ním přišli Romové v Chorvatsku, a připomíná, že romština je živý a bohatý jazyk.",
+  "en": "Today is International Day of the Romani Language. It has been celebrated since 2009, when Roma in Croatia started it, and reminds us that Romani is a living, rich language."
+ },
+ "11-06": {
+  "id": "sv",
+  "cs": "Dnes je Den švédštiny, který slaví hlavně Švédové ve Finsku.",
+  "en": "Today is Swedish Day, celebrated mainly by Swedish speakers in Finland."
+ },
+ "11-09": {
+  "id": "uk",
+  "cs": "Dnes je Den ukrajinského písemnictví a jazyka.",
+  "en": "Today is the Day of Ukrainian Writing and Language."
+ },
+ "11-13": {
+  "id": "hu",
+  "cs": "Dnes je Den maďarštiny. 13. listopadu 1844 se maďarština stala úředním jazykem Uherska.",
+  "en": "Today is Hungarian Language Day. Hungarian became the official language of Hungary on 13 November 1844."
+ },
+ "11-16": {
+  "id": "is",
+  "cs": "Dnes je Den islandštiny, v den narozenin básníka Jónase Hallgrímssona.",
+  "en": "Today is Icelandic Language Day, on the birthday of the poet Jónas Hallgrímsson."
+ },
+ "11-18": {
+  "id": "lv",
+  "cs": "18. listopadu 1918 byla vyhlášena Lotyšská republika. Je to státní svátek.",
+  "en": "The Republic of Latvia was proclaimed on 18 November 1918. It is a national holiday."
+ },
+ "11-22": {
+  "id": "sq",
+  "cs": "Dnes je Den albánské abecedy. 22. listopadu 1908 se na kongresu v Bitole dohodli, jak psát albánsky.",
+  "en": "Today is Albanian Alphabet Day. On 22 November 1908 a congress in Bitola agreed how to write Albanian."
+ },
+ "11-30": {
+  "id": "gd",
+  "cs": "Dnes je svátek svatého Ondřeje, patrona Skotska.",
+  "en": "Today is St Andrew's Day, the day of the patron saint of Scotland."
+ },
+ "12-03": {
+  "id": "eu",
+  "cs": "Dnes je Mezinárodní den baskičtiny.",
+  "en": "Today is International Basque Language Day."
+ },
+ "12-18": {
+  "id": "ar",
+  "cs": "Dnes je Den arabštiny v OSN. 18. prosince 1973 se arabština stala úředním jazykem OSN.",
+  "en": "Today is the UN's Arabic Language Day. Arabic became an official UN language on 18 December 1973."
+ }
 }

@@ -550,7 +550,8 @@ function nactiBarvy(){
   ["vit-0", "vit-1", "vit-2", "vit-3", "vit-4", "vit-5", "vit-6", "vit-nic",
    "pevnina", "pobrezi", "stin-koule", "tecka-jazyk", "tecka-bod", "cyan", "fialova", "cervena", "hvezda", "koule1", "koule2", "popisek", "popisek-lem",
    "atmosfera", "atmosfera2", "sit", "hranice", "okraj-koule", "zamerovac-lem",
-   "r-ie", "r-st", "r-an", "r-afro", "r-nk", "r-ost", "more1", "more2", "souse1", "souse2", "souse-vit", "uzemi"].forEach(function(k){ barvy[k] = s.getPropertyValue("--" + k).trim(); });
+   "r-ie", "r-st", "r-an", "r-afro", "r-nk", "r-ost", "more1", "more2", "souse1", "souse2", "souse-vit", "uzemi",
+   "podlaha", "podlaha-2", "obzor", "stin-plochy", "stin-plochy-2"].forEach(function(k){ barvy[k] = s.getPropertyValue("--" + k).trim(); });
 }
 
 const fJaz = new Float32Array(POCET_B), zakladJaz = new Float32Array(POCET_B);   // příznaky teček: 0 obyčejná, 1 vybraná, 2 příbuzná, 3 pod myší
@@ -851,8 +852,9 @@ function zmer(){
   [ctx, ctxPodklad, ctxPopisky, ctxBody].forEach(function(c){ if (c) c.setTransform(dpr, 0, 0, dpr, 0, 0); });
   /* na počítači leží lišta přes spodek plátna: glóbus se vejde nad ni (dřív ho lišta zakrývala) */
   const dok = desktop.matches ? $("dok").offsetHeight + 30 : 26;   // na telefonu místo pro řádek „vidíš … jazyků“
-  stredY = (vyska - dok) / 2 + 6;
-  polomerZaklad = Math.max(40, Math.min(sirka, vyska - dok) / 2 - 18);
+  /* pod koulí je místo na stín (sahá do 1,26 r pod střed), proto je koule o kus menší a výš */
+  polomerZaklad = Math.max(40, Math.min(sirka / 2 - 18, (vyska - dok - 30) / 2.26));
+  stredY = (vyska - dok - polomerZaklad * 0.26) / 2 + 6;
   spoctiPosun(); posun = posunCil;
   uplatniZoom();
 }
@@ -942,7 +944,29 @@ function kresliUzemi(c){                    /* území vybraného jazyka jednou 
   }
   c.restore();
 }
+/* glóbus se vznáší nad hladkou plochou a vrhá na ni měkký stín (přání uživatele 25. 9. 2026: „stín, bez mřížky“).
+   Kreslí se do zásoby spolu s koulí; při přiblížení plocha i stín zmizí (koule pak vyplní scénu). */
+function kresliPlochu(c, cx, cy, r){
+  const a = Math.max(0, Math.min(1, (1.5 - r / Math.max(1, polomerZaklad)) / 0.5));
+  if (!a) return;
+  c.save(); c.globalAlpha = a;
+  const hy = cy + r * 0.55;                                      // obzor za koulí
+  let g;
+  if (desktop.matches) {                  // na telefonu je plátno úzké a plocha by vypadala jako šedý obdélník: jen stín
+  g = c.createLinearGradient(0, hy, 0, vyska);
+  g.addColorStop(0, "rgba(0,0,0,0)"); g.addColorStop(0.3, barvy.podlaha); g.addColorStop(0.75, barvy["podlaha-2"]); g.addColorStop(1, "rgba(0,0,0,0)");   // k okraji plátna vybledne (na telefonu nekončí hranou)
+  c.fillStyle = g; c.fillRect(0, hy, sirka, vyska - hy);
+  c.fillStyle = barvy.obzor; c.fillRect(sirka * 0.06, hy, sirka * 0.88, 1);
+  }
+  const sy = cy + r * 1.14, sw = r * 0.95;                       // měkký stín: kruhový přechod zploštělý do elipsy
+  c.translate(cx, sy); c.scale(1, 0.12);
+  g = c.createRadialGradient(0, 0, 0, 0, 0, sw);
+  g.addColorStop(0, barvy["stin-plochy"]); g.addColorStop(0.55, barvy["stin-plochy-2"]); g.addColorStop(1, "rgba(0,0,0,0)");
+  c.fillStyle = g; c.beginPath(); c.arc(0, 0, sw, 0, 6.283185); c.fill();
+  c.restore();
+}
 function kresliKouli(c, cx, cy, r){
+  kresliPlochu(c, cx, cy, r);
   let g = c.createRadialGradient(cx, cy, r * 0.9, cx, cy, r * 1.36);
   g.addColorStop(0, barvy.atmosfera); g.addColorStop(0.35, barvy.atmosfera2); g.addColorStop(1, "rgba(0,0,0,0)");
   c.fillStyle = g; c.beginPath(); c.arc(cx, cy, r * 1.36, 0, 6.283185); c.fill();

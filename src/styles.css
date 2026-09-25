@@ -912,3 +912,8 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 /* Jazyk dne: proč právě dnes */
 .jd-proc{display:block; margin-top:6px; font-size:.84rem; line-height:1.45; opacity:.96}
 .jd-proc b{font-weight:700}
+/* plocha pod glóbem a jeho stín (kreslí app.js do plátna, barvy odsud) */
+:root{--podlaha:rgba(60,95,180,.16); --podlaha-2:rgba(40,70,150,.10); --obzor:rgba(140,190,255,.18);
+  --stin-plochy:rgba(0,0,0,.62); --stin-plochy-2:rgba(0,0,0,.3)}
+:root[data-theme="light"]{--podlaha:rgba(120,110,90,.09); --podlaha-2:rgba(120,110,90,.15); --obzor:rgba(60,60,80,.13);
+  --stin-plochy:rgba(40,44,70,.34); --stin-plochy-2:rgba(40,44,70,.16)}

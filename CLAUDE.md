@@ -130,8 +130,9 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
   datem, velký pozdrav, zajímavost a tlačítko „Ukaž mi ho na glóbu“. Barvu rodiny nepoužívá, aby nevypadal jako další dlaždice.
   Jazyk se mění o půlnoci místního času.
   **Jazyk dne má vždy důvod** („Proč dnes?“, přání uživatele 25. 9. 2026). Význačné dny jsou v `data/dny-jazyku.json`
-  (MM-DD → jazyk a důvod cs/en: dny jazyků OSN a UNESCO, národní dny jazyka, státní svátky, výročí; 59 dní; validace
-  hlídá tvar, jazyk a oba texty). **Každý důvod musí být pravdivý** – nový den ověřit. Ostatní dny Jazyk dne
+  (MM-DD → jazyk a důvod cs/en: dny jazyků OSN a UNESCO, národní dny jazyka, státní svátky, výročí; validace
+  hlídá tvar, jazyk a oba texty; 60 dní – 23. 4. je v OSN den angličtiny i španělštiny, karta ukáže angličtinu a zmíní obě,
+  romština má 8. 4. Mezinárodní den Romů i 5. 11. Mezinárodní den romského jazyka). **Každý důvod musí být pravdivý** – nový den ověřit. Ostatní dny Jazyk dne
   **cestuje kolem světa** (`CESTA`: od češtiny vždy k nejbližšímu dosud nenavštívenému jazyku, index = místní den
   mod 163) a karta řekne, u kterého jazyka jsme byli včera a o kolik km a kterým směrem jsme dál. Den po 26. 9.
   (Evropský den jazyků, bez Jazyka dne) má vlastní větu. Skrytý jazyk (filtr) se přeskočí.
@@ -389,6 +390,11 @@ Dřívější náhledový artefakt https://claude.ai/artifact/XS67Gsv9d4y2pMu7UW
   při barvení podle vitality pevnina jednolitá (`--souse-vit`: den `#E6E8EC`, noc `#1F2B55`) a tečky větší.
   Obě stupnice na těchto plochách prošly validátorem `--ordinal` (světlý konec 3,2 : 1 a 3,6 : 1).
 - Glóbus se na počítači vejde nad lištu (`stredY`, rezerva výšky `#dok`); dřív ho lišta zakrývala.
+- **Glóbus se vznáší nad hladkou plochou a vrhá měkký stín** (uživatel 25. 9. 2026 ze dvou náhledů: „stín – bez mřížky“;
+  mřížku ubíhající k obzoru nechtěl). `kresliPlochu` v app.js kreslí do zásoby s koulí: na počítači plochu od obzoru
+  (0,55 r pod středem, tenká linka `--obzor`) dolů s přechodem `--podlaha`, na telefonu jen stín (úzké plátno by z plochy
+  udělalo šedý obdélník); stín je zploštělý kruhový přechod 1,14 r pod středem. Při přiblížení nad 1,5× zmizí.
+  Kvůli místu na stín je koule menší (`polomerZaklad` = výška / 2,26) a posunutá výš.
 - Klik na zemi ji jedním kliknutím podbarví a rozsvítí její jazyky (příznak 5); tlačítko „Zvýraznit na glóbu“
   zmizelo, protože po kliknutí už nic viditelného nedělalo. Zavřením okna zvýraznění zmizí.
 - Brána do jiných světů má i ve dne tmavé hvězdné nebe (`.scena.rezim-brana` přepíná textové barvy na noční).
