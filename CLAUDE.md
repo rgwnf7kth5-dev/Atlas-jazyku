@@ -19,8 +19,8 @@ Jeden web, obě domény v Netlify → Domain management. **Kterou verzi dostane 
 z kořene; `www.atlasjazyku.cz` → `atlasjazyku.cz`). Pravidla s doménou ve `from` v `netlify.toml` Netlify u tohoto webu
 nepoužíval – 25. 9. 2026 vracela anglická doména českou stránku. Živý web jde zvenku prověřit workflow
 `.github/workflows/diagnoza-webu.yml` (Actions → Diagnóza webu → Run workflow; spouští se i po změně `netlify.toml`
-nebo `netlify/`): přesměrování, certifikáty, DNS, značky og: a obrázek náhledu. **25. 9. 2026 neměla `atlasjazyku.cz`
-ani `www` platný certifikát** (Netlify posílal `*.netlify.app`), X ani Facebook ji proto nenačetly.
+nebo `netlify/`): přesměrování, certifikáty, DNS, značky og: a obrázek náhledu. 25. 9. 2026 dopoledne neměla `atlasjazyku.cz`
+ani `www` platný certifikát (Netlify posílal `*.netlify.app`) a X ani Facebook ji nenačetly; opraveno tlačítkem Renew certificate v Domain management > HTTPS, od 13:50 funguje.
 **Adresy v buildu jsou od 25. 9. 2026 na nových doménách** (`DOMENA`, `WEB(cesta)` v build.mjs; Facebook ukazoval
 odkaz bez obrázku, protože og:url mířil na netlify.app): canonical, og:url, og:image a hreflang každé stránky míří na
 její doménu, anglické bez `/en/`. Každá doména má vlastní `robots.txt` a `sitemap.xml` (anglické v `dist/en/`).
