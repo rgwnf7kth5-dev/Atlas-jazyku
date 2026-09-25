@@ -9,18 +9,30 @@
 
 # ---- Dvě domény, jeden web ----
 # atlasjazyku.cz = česká verze (kořen dist/), thelanguageatlas.com = anglická verze (dist/en/ servírovaná z kořene).
-# Pravidla platí shora dolů, použije se první, které sedí.
+# Pravidla platí shora dolů, použije se první, které sedí. Pravidlo s doménou platí jen pro uvedené schéma,
+# proto je každé dvakrát (https i http) – před vydáním certifikátu jde provoz přes http.
 
 # anglická doména: staré odkazy s /en/ na kořen (stránky zatím odkazují přes /en/)
 [[redirects]]
   from = "https://thelanguageatlas.com/en/*"
-  to = "https://thelanguageatlas.com/:splat"
+  to = "/:splat"
   status = 301
   force = true
 
 # anglická doména: společné soubory (skript, malby, ikony, náhledy) leží v kořeni dist/, berou se odtud
 [[redirects]]
+  from = "http://thelanguageatlas.com/en/*"
+  to = "/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "https://thelanguageatlas.com/js/*"
+  to = "/js/:splat"
+  status = 200
+
+[[redirects]]
+  from = "http://thelanguageatlas.com/js/*"
   to = "/js/:splat"
   status = 200
 
@@ -30,12 +42,27 @@
   status = 200
 
 [[redirects]]
+  from = "http://thelanguageatlas.com/malby/*"
+  to = "/malby/:splat"
+  status = 200
+
+[[redirects]]
   from = "https://thelanguageatlas.com/favicon.svg"
   to = "/favicon.svg"
   status = 200
 
 [[redirects]]
+  from = "http://thelanguageatlas.com/favicon.svg"
+  to = "/favicon.svg"
+  status = 200
+
+[[redirects]]
   from = "https://thelanguageatlas.com/apple-touch-icon.png"
+  to = "/apple-touch-icon.png"
+  status = 200
+
+[[redirects]]
+  from = "http://thelanguageatlas.com/apple-touch-icon.png"
   to = "/apple-touch-icon.png"
   status = 200
 
@@ -46,6 +73,11 @@
 
 # anglická doména: všechno ostatní z dist/en/ (force: jinak by kořen vrátil českou index.html)
 [[redirects]]
+  from = "http://thelanguageatlas.com/nahled-*"
+  to = "/nahled-:splat"
+  status = 200
+
+[[redirects]]
   from = "https://thelanguageatlas.com/*"
   to = "/en/:splat"
   status = 200
@@ -53,7 +85,19 @@
 
 # česká doména: www na holou adresu, anglická verze patří na anglickou doménu
 [[redirects]]
+  from = "http://thelanguageatlas.com/*"
+  to = "/en/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
   from = "https://www.atlasjazyku.cz/*"
+  to = "https://atlasjazyku.cz/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.atlasjazyku.cz/*"
   to = "https://atlasjazyku.cz/:splat"
   status = 301
   force = true
@@ -65,6 +109,12 @@
   force = true
 
 # /en bez lomítka i bez index.html vede na anglickou verzi
+[[redirects]]
+  from = "http://atlasjazyku.cz/en/*"
+  to = "https://thelanguageatlas.com/:splat"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "/en"
   to = "/en/"

@@ -91,7 +91,8 @@ function skriptStranky(vychozi, artefakt) {
 // smí držet v mezipaměti natrvalo (_headers) a obě jazykové verze sdílejí jedno stažení. Dřív byl skript (2,3 MB)
 // vložený přímo do každé stránky a stahoval se znovu při každé návštěvě i při přechodu mezi / a /en/.
 const skriptWebu = knihovny.join("\n;\n") + "\n;\n" +
-  skriptStranky('document.documentElement.lang === "en" ? "en" : "cs"', false);
+  // pojistka: na anglické doméně angličtina, i kdyby pravidlo v netlify.toml nevrátilo anglickou stránku
+  skriptStranky('document.documentElement.lang === "en" || /(^|\\.)thelanguageatlas\\.com$/.test(location.hostname) ? "en" : "cs"', false);
 const souborSkriptu = `js/atlas.${crypto.createHash("sha256").update(skriptWebu).digest("hex").slice(0, 10)}.js`;
 
 function sestav(lang, { odkazJinam, artefakt }) {
