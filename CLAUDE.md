@@ -39,7 +39,7 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
 - **Stránka začíná celým světem bez vybraného jazyka** (přání uživatele: neotevírat češtinou ani jiným jazykem).
 - Sbírka pozdravů (počítadlo v hlavičce, hvězdičky u otevřených jazyků) byla 23. 9. 2026 na přání uživatele
   odstraněna – nedávala smysl. Znovu ji nepřidávat.
-- **Patička seznamu je sbalená** do jednoho řádku „O atlasu, zdroje a kontakt“ (`<details class="pat-det">`, uživatel
+- **Patička seznamu je sbalená** do jednoho řádku „O atlasu, zdroje, kontakt, návod a kalendář“ (`<details class="pat-det">`, uživatel
   25. 9. 2026: „zabírá zbytečně moc místa, musí se schovávat“). Rozbalí se kontakt, O datech, Jazyky s pozdravem a zdroje.
 - Zpětná vazba e-mailem na **info@atlasjazyku.cz** (přesměrovaná na autora; 25. 9. 2026 místo dřívější soukromé adresy,
   kterou uživatel smazal – soukromou adresu na web nedávat). Řádek je v patičce seznamu i na statických stránkách,
@@ -143,7 +143,8 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
   Klíč může být i pohyblivý (`09-so2` = druhá sobota v září: Den německého jazyka) a den může patřit tečce rejstříku
   bez karty atlasu (`kod` = glottocode, `pozdrav`, `jazyk`, `vyslovnost`): esperanto 26. 7., latina 30. 9. (Den překladu).
   **Kalendář jazykových dnů** (přání uživatele 25. 9. 2026: „naklikávací seznam s linkem na jazyk“): okno `#kalendar`
-  z odkazu pod Jazykem dne, z patičky a z karty Dne jazyků (`#kalendar` / `#language-days`), po měsících, dnešek
+  jen z patičky seznamu (uživatel 25. 9. 2026: odkaz pod Jazykem dne pryč, „stačí v servisním menu“; odkaz
+  `#kalendar` / `#language-days`), po měsících, dnešek
   zvýrazněný, otevře se u nejbližšího dne; klik vybere jazyk (26. 9. rozsvítí evropské jazyky). Statická stránka
   `/kalendar-jazyku/` a `/en/language-days/` odkazuje na stránky jazyků.
 - **Živější glóbus**: v noci světélka jemně třpytí (překresluje se jen WebGL, co 60 ms, usíná s okrasným

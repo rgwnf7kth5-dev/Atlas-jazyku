@@ -307,9 +307,7 @@ function kartaDneJazyku(){
   b1.addEventListener("click", function(){ spustEU("evropa"); });
   const b2 = prvek("button", "dj-tl", T.denJazykuEU); b2.type = "button";
   b2.addEventListener("click", function(){ spustEU(); });
-  const b3 = prvek("button", "dj-tl", T.kalendarOdkaz); b3.type = "button";
-  b3.addEventListener("click", function(){ otevriKalendar(); });
-  akce.appendChild(b1); akce.appendChild(b2); akce.appendChild(b3); k.appendChild(akce);
+  akce.appendChild(b1); akce.appendChild(b2); k.appendChild(akce);
   const m = prvek("div", "dj-jazyky");
   jazyky.forEach(function(j){
     const b = prvek("button", "dj-j"); b.type = "button";
@@ -347,11 +345,6 @@ function postavPolici(filtr){
       if (KRAJINY[d.id] && typeof AKVARELY !== "undefined") { const m = prvek("span", "jd-malba"); vlozMalbu(m, d.id); tl.insertBefore(m, tl.firstChild); tl.classList.add("s-malbou"); }
       tl.addEventListener("click", function(){ if (d.bod >= 0) vyberBod(d.bod); else vyber(d.id); });
       seznam.appendChild(tl);
-      const kl = prvek("button", "jd-kalendar"); kl.type = "button"; kl.setAttribute("aria-haspopup", "dialog");
-      kl.innerHTML = '<svg aria-hidden="true"><use href="#i-kalendar"/></svg>';
-      kl.appendChild(document.createTextNode(T.kalendarOdkaz));
-      kl.addEventListener("click", otevriKalendar);
-      seznam.appendChild(kl);
     }
   }
   /* celý rejstřík: jazyky z atlasu jako dlaždice s pozdravem, ostatní tečky menší; kreslí se po dávkách */

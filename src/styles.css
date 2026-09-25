@@ -919,10 +919,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 :root[data-theme="light"]{--podlaha:rgba(120,110,90,.09); --podlaha-2:rgba(120,110,90,.15); --obzor:rgba(60,60,80,.13);
   --stin-plochy:rgba(40,44,70,.34); --stin-plochy-2:rgba(40,44,70,.16)}
 /* kalendář jazykových dnů: odkaz pod Jazykem dne a okno se seznamem dnů */
-.jd-kalendar{display:inline-flex; align-items:center; gap:7px; align-self:flex-start; margin:8px 0 2px 4px; padding:4px 2px; border:0; background:none;
   font:inherit; font-size:.84rem; font-weight:600; color:var(--cyan); cursor:pointer; text-decoration:underline; text-underline-offset:2px}
-.jd-kalendar svg{width:16px; height:16px; flex:none}
-.jd-kalendar:hover{text-decoration-thickness:2px}
 .kal-seznam{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:4px}
 .kal-den{display:flex; align-items:flex-start; gap:14px; width:100%; padding:9px 12px; border:1px solid var(--linka); border-radius:12px; background:var(--plocha);
   font:inherit; text-align:left; color:var(--text); cursor:pointer}
@@ -945,3 +942,5 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 .napoveda li.napoveda-navod i svg{width:17px; height:17px}
 #napoveda-navod{padding:2px 0; border:0; background:none; font:inherit; font-weight:600; color:var(--cyan); text-align:left; cursor:pointer;
   text-decoration:underline; text-underline-offset:2px}
+.pat-det > summary{font-size:.76rem; gap:8px}
+.pat-det > summary > span{min-width:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
