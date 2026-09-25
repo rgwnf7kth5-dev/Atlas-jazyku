@@ -33,7 +33,7 @@ function lidi(lang, T, n) {
   const g = Math.round(n / 1e8) / 10; return cislo(lang, g, Math.floor(g) === g ? 0 : 1) + " " + tvar(lang, g, T.miliardy);
 }
 
-export function vyrobStranky({ KOREN, WEB, UI, jazyky: vsechnyJazyky, glottolog, podrobnosti, nazvyZemi, ikona, fontyOdkaz, verze, dny }) {
+export function vyrobStranky({ KOREN, WEB, NAHLED, UI, jazyky: vsechnyJazyky, glottolog, podrobnosti, nazvyZemi, ikona, fontyOdkaz, verze, dny }) {
   const DIST = path.join(KOREN, "dist");
   const bodPodleKodu = new Map(glottolog.body.map((b, i) => [b[6], i]));
   const bodJazyka = {};
@@ -255,7 +255,7 @@ ${listek ? SKRIPT_LISTEK : ""}
 `;
   }
   const zapis = (adresa, html) => { const d = path.join(DIST, adresa); fs.mkdirSync(d, { recursive: true }); fs.writeFileSync(path.join(d, "index.html"), html); };
-  const obrazekWebu = lang => ({ src: `/nahled-${lang}.jpg`, w: 1200, h: 630 });
+  const obrazekWebu = lang => ({ src: NAHLED[lang], w: 1200, h: 630 });
   const vsechny = [];
 
   for (const lang of ["cs", "en"]) {

@@ -94,7 +94,9 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
   Kosovo, Severní Kypr a Somaliland kód nemají – ukáže se jen seznam jazyků z atlasu.
 - Náhled pro sdílení odkazu (og:image) je `static/nahled-cs.jpg` / `nahled-en.jpg`, ikonka `static/favicon.svg`
   (vkládá se do stránky) a `apple-touch-icon.png`. Build kopíruje `static/` do `dist/`. Obrázky vyrábí
-  `scripts/nahledy.mjs` (potřebuje Playwright) – po větší změně vzhledu je vyrob znovu. Adresa webu je v `build.mjs` (`WEB`).
+  `scripts/nahledy.mjs` (potřebuje Playwright) – po větší změně vzhledu je vyrob znovu. V `og:image` je adresa s otiskem obsahu
+  (`nahled-cs.jpg?v=…`, `NAHLED` v build.mjs): X a Facebook si obrázek pamatují podle adresy a po výměně obrázku ukazovaly
+  starou upoutávku (uživatel 25. 9. 2026). Adresa webu je v `build.mjs` (`WEB`).
 - **Skupiny Glottologu, které nejsou rodinou**: umělé jazyky, pidžiny, smíšené jazyky a zvláštní způsoby mluvy
   (`BEZ_RODU` v build.mjs → `REJSTRIK.nr`). Jazyky v nich spolu příbuzné nejsou, proto nemají oblouky k „příbuzným“,
   rodokmen ani společného předka ve srovnání; karta místo toho vysvětlí, proč do žádné rodiny nepatří.
