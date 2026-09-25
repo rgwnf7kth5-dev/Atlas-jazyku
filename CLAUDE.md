@@ -71,14 +71,18 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
   V `radky` je tedy vitalita -1 (bez údaje) až 6. Řádek „Vitalita“ v panelu Zobrazení otevře podstránku se stupni (lze vybrat víc,
   předvolby „Všechny“ a „Jen ohrožené“ = zranitelný až kriticky); volba se pamatuje (`atlas-vitalita`).
   Filtry vitality a znakových jazyků se skládají v `uplatniFiltry()`.
-  Dokud je podstránka otevřená, tečky mají **barvu podle vitality**: ordinální stupnice jednoho odstínu (oranžová,
-  bezpečný → vymřelý, `--vit-0`…`--vit-5`), prošla validátorem palet `--ordinal` na pevnině v noci i ve dne;
-  probouzený zeleně (`--vit-6`), bez údaje šedě. Pořadí ani odstíny neměnit bez nového ověření.
+  Dokud je podstránka otevřená, tečky mají **barvu podle vitality**, rozlišenou podle významu (25. 9. 2026 na přání
+  uživatele „výrazněji odlišit“ – jednobarevná oranžová stupnice na malých tečkách splývala): bezpečný **modře**,
+  čtyři stupně ohrožení **teplou stupnicí** zlatá → oranžová → červená → vínová (validátor palet `--ordinal` na
+  pevnině `--souse-vit`, v noci i ve dne; rozptyl odstínu do 40°), vymřelý **šedě** (v noci bledě, ve dne tmavě),
+  probouzený **zeleně** (fialová splývala s modrou při deuteranopii), bez údaje světle/tmavě šedě. Sousední dvojice
+  v legendě prošly kontrolou CVD. `--vit-0`…`--vit-6`, `--vit-nic`. Neměnit bez nového ověření.
   Vitalita je na kartě tečky i na kartě jazyka z atlasu (`oddilVitality`).
   **Tlačítko „Vitalita“ v liště** (25. 9. 2026, návrh schválený uživatelem místo barev vitality rovnou po otevření):
   zapne barvy vitality natrvalo (`vitalitaZap`, pamatuje se `atlas-barvy-vitality`) a nad lištou ukáže vysvětlivku
   stupňů `#vit-legenda` (bezpečný → vymřelý, probouzený, bez údaje) – jen dokud jsou barvy zapnuté, jinak žádná
-  vysvětlivka na glóbu (to uživatel nechce). Klepnutí na vysvětlivku otevře stupně (filtr). Barvy rovnou po otevření
+  vysvětlivka na glóbu (to uživatel nechce). Klepnutí na vysvětlivku otevře stupně (filtr). Podstránka otevřená z vysvětlivky
+  se zavře šipkou zpět i křížkem rovnou celá (`vitalitaZLegendy`); křížek `#vitalita-x` je v podstránce vždy. Barvy rovnou po otevření
   nedoporučeno: bez vysvětlivky nic neříkají, pevnina přijde o reliéf, noc o třpyt a oranžové území by splývalo.
   Lišta s tlačítkem Vitalita je širší: do 700 px a v užší scéně na počítači (`@container scena`, do 820 px) má
   tlačítka jen ikony, do 480 px schovává i + a − (zoom dvěma prsty).

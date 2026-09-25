@@ -34,10 +34,11 @@
   --more1:#030817; --more2:#0C2352; --souse1:#1E2C58; --souse2:#5569A6;   /* reliéf: hluboké a mělké moře, stín a světlo pevniny */
   --pevnina:#1D3170; --pobrezi:rgba(120,175,255,.42); --stin-koule:rgba(0,0,10,.55);   /* pevnina světlejší než moře */
   --tecka-jazyk:#5ADCFF; --tecka-bod:#FFFFFF;
-  /* vitalita: ordinální stupnice jednoho odstínu (bezpečný → vymřelý), prošla validátorem palet (--ordinal)
-     na pevnině #1D3170; probouzený a bez údaje jsou mimo stupnici, proto jiný odstín / šedá */
-  --vit-0:#c96805; --vit-1:#e57c20; --vit-2:#fd923e; --vit-3:#feb582; --vit-4:#fed4b9; --vit-5:#fef3eb;
-  --vit-6:#21AE70; --vit-nic:#6D80A8;
+  /* vitalita podle významu (uživatel 25. 9. 2026: „výrazněji odlišit“): bezpečný modře, čtyři stupně ohrožení
+     jako teplá stupnice (prošla validátorem palet --ordinal na #1F2B55: rozptyl odstínu 38°, kroky ΔL ≥ 0,06),
+     vymřelý bledě šedý („vybledl“), probouzený zeleně, bez údaje tmavě šedý; sousední dvojice prošly CVD */
+  --vit-0:#4EA3F2; --vit-1:#ffcc81; --vit-2:#ffa55b; --vit-3:#ef7e3c; --vit-4:#dc5426; --vit-5:#B8BFD0;
+  --vit-6:#21AE70; --vit-nic:#5E6C8E;
   --popisek:#EAF4FF; --popisek-lem:rgba(2,4,14,.88); --zamerovac-lem:rgba(2,4,14,.7);
   /* barvy jazykových rodin a text na nich */
   --r-ie:#5E92EC; --r-st:#E4645A; --r-an:#12A3BC; --r-afro:#A5761A; --r-nk:#21AE70; --r-ost:#A268DC;
@@ -65,9 +66,9 @@
   --more1:#0C3A8A; --more2:#3E80D4; --souse1:#9EA6B2; --souse2:#FCFBF7;
   --pevnina:#A9BEE2; --pobrezi:rgba(40,80,160,.4); --stin-koule:rgba(40,70,140,.16);   /* pevnina tmavší než moře */
   --tecka-jazyk:#0A5A94; --tecka-bod:#0E1838;
-  /* denní stupnice vitality – ověřená na pevnině #A9BEE2 */
-  --vit-0:#d16022; --vit-1:#b84b03; --vit-2:#993e02; --vit-3:#7b3002; --vit-4:#5e2301; --vit-5:#431701;
-  --vit-6:#0A7541; --vit-nic:#8A96B0;
+  /* denní vitalita: stupně ohrožení prošly --ordinal na #E6E8EC (rozptyl 35°), sousední dvojice prošly CVD */
+  --vit-0:#2F7FC1; --vit-1:#d07c00; --vit-2:#b35200; --vit-3:#932900; --vit-4:#6f0000; --vit-5:#4A4E5C;
+  --vit-6:#23A862; --vit-nic:#A3AAB8;
   --popisek:#0E1838; --popisek-lem:rgba(255,255,255,.92); --zamerovac-lem:rgba(255,255,255,.85);
   --r-ie:#2E63D6; --r-st:#E2544A; --r-an:#0A9BB5; --r-afro:#E09A18; --r-nk:#0A7541; --r-ost:#8A44C8;
   --t-ie:#FFFFFF; --t-st:#FFFFFF; --t-an:#FFFFFF; --t-afro:#161A3A; --t-nk:#FFFFFF; --t-ost:#FFFFFF;
@@ -950,6 +951,8 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 .kal-proc{font-size:.84rem; line-height:1.45; color:var(--text2)}
 .kal-dnes{align-self:flex-start; margin-top:3px; padding:1px 8px; border-radius:99px; background:var(--akcent); color:var(--na-akcent); font-size:.72rem; font-weight:700}
 .kal-pozn{margin-top:18px !important; font-style:italic}
+/* v podstránce Vitalita je vpravo i křížek, který zavře celý panel */
+#vitalita-panel .vp-hlava #vitalita-x{margin-left:auto}
 </style>
 <link rel="canonical" href="https://atlasoflanguages.netlify.app/en/">
 <link rel="alternate" hreflang="cs" href="https://atlasoflanguages.netlify.app/">
@@ -1057,7 +1060,8 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
      <button class="volba-radek dal" id="tl-vitalita" type="button" aria-expanded="false" aria-controls="vitalita-panel" aria-labelledby="n-vitalita" aria-describedby="p-vitalita"><svg aria-hidden="true"><use href="#i-vitalita"/></svg><span><b id="n-vitalita" data-t="vitalita">Vitality</b> <small id="p-vitalita" data-t="vitalitaPopis">Show languages by how endangered they are (UNESCO scale)</small></span><b class="odznak-filtr" id="vitalita-pocet" hidden aria-hidden="true"></b><svg class="sipka-dal" aria-hidden="true"><use href="#i-dal"/></svg></button>
     </div>
     <div class="vitalita-panel" id="vitalita-panel" hidden>
-     <div class="vp-hlava"><button class="zpet" id="vitalita-zavrit" type="button" aria-label="Back" data-t-aria-label="vitalitaZavrit"><svg aria-hidden="true"><use href="#i-zpet"/></svg></button><strong data-t="vitalitaNadpis">Language vitality · UNESCO scale</strong></div>
+     <div class="vp-hlava"><button class="zpet" id="vitalita-zavrit" type="button" aria-label="Back" data-t-aria-label="vitalitaZavrit"><svg aria-hidden="true"><use href="#i-zpet"/></svg></button><strong data-t="vitalitaNadpis">Language vitality · UNESCO scale</strong>
+      <button class="zavrit" id="vitalita-x" type="button" aria-label="Close" data-t-aria-label="zavritPanel"><svg aria-hidden="true"><use href="#i-krizek"/></svg></button></div>
      <div class="vp-predvolby"><button type="button" id="vitalita-vse" data-t="vitalitaVse">All</button><button type="button" id="vitalita-ohrozene" data-t="vitalitaOhrozene">Endangered only</button></div>
      <ul class="vp-stupne" id="vitalita-stupne"></ul>
      <p class="vp-zdroj" data-t="vitalitaZdroj">The six-level UNESCO scale. Data from Glottolog, which combines UNESCO, Ethnologue and the Catalogue of Endangered Languages.</p>
@@ -1144,6 +1148,6 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
  <dialog class="o-datech kalendar" id="kalendar" aria-labelledby="kal-nadpis"></dialog>
 </div>
 
-<script src="../js/atlas.ea45ec11ca.js"></script>
+<script src="../js/atlas.1ac704b83c.js"></script>
 </body>
 </html>

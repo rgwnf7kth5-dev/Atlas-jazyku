@@ -1826,7 +1826,9 @@ function otevriZobrazeni(otevrit){
 }
 tlZob.addEventListener("click", function(){ otevriZobrazeni(panelZob.hidden); });
 $("zobrazeni-zavrit").addEventListener("click", function(){ otevriZobrazeni(false); tlZob.focus(); });
+let vitalitaZLegendy = false;           // podstránka Vitalita otevřená z vysvětlivky pod glóbem
 function otevriVitalitu(otevrit){
+  vitalitaZLegendy = false;
   if (otevrit) panelZob.hidden = false, tlZob.setAttribute("aria-expanded", "true");
   panelVit.hidden = !otevrit; pzHlavni.hidden = !!otevrit;
   tlVit.setAttribute("aria-expanded", otevrit ? "true" : "false");
@@ -1869,8 +1871,13 @@ function obnovLegenduVitality(){
   if (!legendaVit.hidden) postavLegenduVitality();
 }
 tlVitDok.addEventListener("click", function(){ nastavBarvyVitality(!vitalitaZap); });
-$("vit-legenda-tl").addEventListener("click", function(){ otevriVitalitu(true); });   // vysvětlivka otevře stupně (filtr)
-$("vitalita-zavrit").addEventListener("click", function(){ otevriVitalitu(false); tlVit.focus(); });
+$("vit-legenda-tl").addEventListener("click", function(){ otevriVitalitu(true); vitalitaZLegendy = true; });   // vysvětlivka otevře stupně (filtr)
+/* šipka zpět vede do panelu Zobrazení; když se stupně otevřely z vysvětlivky pod glóbem, zavře rovnou všechno */
+$("vitalita-zavrit").addEventListener("click", function(){
+  if (vitalitaZLegendy) { otevriZobrazeni(false); $("vit-legenda-tl").focus(); return; }
+  otevriVitalitu(false); tlVit.focus();
+});
+$("vitalita-x").addEventListener("click", function(){ const zLeg = vitalitaZLegendy; otevriZobrazeni(false); (zLeg && !legendaVit.hidden ? $("vit-legenda-tl") : tlZob).focus(); });
 $("vitalita-vse").addEventListener("click", function(){ nastavVitalitu(VSECHNY_STUPNE); });
 $("vitalita-ohrozene").addEventListener("click", function(){ nastavVitalitu(OHROZENE); });
 document.addEventListener("keydown", function(e){
