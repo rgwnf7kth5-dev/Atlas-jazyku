@@ -56,6 +56,7 @@
     <div class="brana-svety" id="brana-svety"></div>
    </div>
    <div class="hud" id="hud" aria-hidden="true"><span class="souradnice" id="hud-souradnice"></span><span class="stav-hud" id="hud-stav"></span></div>
+   <div class="vit-legenda sklo" id="vit-legenda" hidden><button type="button" id="vit-legenda-tl"></button></div>
    <div class="dok sklo" id="dok">
     <button class="tl hlavni" id="tl-nahoda" type="button"><svg aria-hidden="true"><use href="#i-kostka"/></svg><span data-t="prekvap">{{prekvap}}</span></button>
     <button class="tl" id="tl-cely" type="button" hidden><svg aria-hidden="true"><use href="#i-svet"/></svg><span data-t="celySvet">{{celySvet}}</span></button>
@@ -65,6 +66,7 @@
      <button class="kolo" id="tl-priblizi" type="button" aria-label="{{priblizit}}" data-t-aria-label="priblizit"><svg aria-hidden="true"><use href="#i-plus"/></svg></button>
     </div>
     <button class="tl" id="tl-strom" type="button" aria-pressed="false" title="{{rodokmenPopis}}" data-t-title="rodokmenPopis"><svg aria-hidden="true"><use href="#i-strom"/></svg><span data-t="rodokmen">{{rodokmen}}</span></button>
+    <button class="tl" id="tl-vitalita-dok" type="button" aria-pressed="false" title="{{vitalitaDokPopis}}" data-t-title="vitalitaDokPopis"><svg aria-hidden="true"><use href="#i-vitalita"/></svg><span data-t="vitalita">{{vitalita}}</span></button>
     <button class="tl" id="tl-zobrazeni" type="button" aria-expanded="false" aria-controls="panel-zobrazeni" title="{{zobrazeniPopis}}" data-t-title="zobrazeniPopis"><svg aria-hidden="true"><use href="#i-nastaveni"/></svg><span data-t="zobrazeni">{{zobrazeni}}</span><b class="odznak-filtr" id="zobrazeni-pocet" hidden aria-hidden="true"></b></button>
    </div>
    <div class="panel-zobrazeni sklo" id="panel-zobrazeni" hidden>

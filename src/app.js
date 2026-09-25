@@ -112,7 +112,8 @@ function jeZnakovyJazyk(j){ const i = BOD_ATLASU[j.id]; return i >= 0 && ZNAKOVY
 /* vitalita: 0–5 = šest stupňů UNESCO (bezpečný … vymřelý), 6 = probouzený, -1 = bez údaje */
 const VSECHNY_STUPNE = [0, 1, 2, 3, 4, 5, 6, -1], OHROZENE = [1, 2, 3, 4];
 let povoleneStupne = new Set(VSECHNY_STUPNE);
-let barvitVitalitu = false;              // tečky v barvách vitality, dokud je otevřený panel „Vitalita“
+let barvitVitalitu = false;              // tečky v barvách vitality: zapnuté tlačítkem v liště, nebo otevřený panel „Vitalita“
+let vitalitaZap = false;                 // tlačítko „Vitalita“ v liště (pamatuje se, atlas-barvy-vitality)
 function promennaVitality(v){ return "var(--" + (v < 0 ? "vit-nic" : "vit-" + v) + ")"; }
 function vitalitaBodu(i){ const v = radek(i)[0]; return v == null ? -1 : v; }
 function atlasSkryty(j){
@@ -1715,9 +1716,10 @@ function obnovOdznakZobrazeni(){
   $("tl-zobrazeni").setAttribute("aria-label", n ? T.zobrazeni + ", " + t("filtryZapnute", {n: n}) : T.zobrazeni);
 }
 function otevriZobrazeni(otevrit){
-  if (!otevrit && barvitVitalitu) otevriVitalitu(false);
+  if (!otevrit && !panelVit.hidden) otevriVitalitu(false);
   panelZob.hidden = !otevrit;
   tlZob.setAttribute("aria-expanded", otevrit ? "true" : "false");
+  obnovLegenduVitality();
 }
 tlZob.addEventListener("click", function(){ otevriZobrazeni(panelZob.hidden); });
 $("zobrazeni-zavrit").addEventListener("click", function(){ otevriZobrazeni(false); tlZob.focus(); });
@@ -1725,11 +1727,46 @@ function otevriVitalitu(otevrit){
   if (otevrit) panelZob.hidden = false, tlZob.setAttribute("aria-expanded", "true");
   panelVit.hidden = !otevrit; pzHlavni.hidden = !!otevrit;
   tlVit.setAttribute("aria-expanded", otevrit ? "true" : "false");
-  barvitVitalitu = !!otevrit;
+  barvitVitalitu = vitalitaZap || !!otevrit;
   obnovVitalituPanel();
+  obnovLegenduVitality();
   teckyZmeneny = true; potrebaKresli = true; ozivit();
 }
 tlVit.addEventListener("click", function(){ otevriVitalitu(panelVit.hidden); });
+/* ---------- tlačítko „Vitalita“ v liště: barvy vitality na jedno klepnutí, s vysvětlivkou jen po dobu zapnutí ----------
+   (uživatel 25. 9. 2026: vitalita byla schovaná v podnabídce; trvalou vysvětlivku na glóbu ale nechce, proto se
+   ukazuje jen se zapnutými barvami a volba se pamatuje) */
+const tlVitDok = $("tl-vitalita-dok"), legendaVit = $("vit-legenda");
+function nastavBarvyVitality(zap, start){
+  vitalitaZap = !!zap;
+  tlVitDok.setAttribute("aria-pressed", vitalitaZap ? "true" : "false");
+  if (!start) { try { if (vitalitaZap) localStorage.setItem("atlas-barvy-vitality", "1"); else localStorage.removeItem("atlas-barvy-vitality"); } catch (e) {} }
+  barvitVitalitu = vitalitaZap || !panelVit.hidden;
+  obnovLegenduVitality();
+  teckyZmeneny = true; potrebaKresli = true; ozivit();
+}
+function postavLegenduVitality(){
+  const tl = $("vit-legenda-tl");
+  tl.textContent = "";
+  tl.setAttribute("title", T.vitalitaLegendaPopis);
+  tl.appendChild(prvek("span", "vl-krajni", T.aes[0][0]));
+  const pruh = prvek("span", "vl-pruh");
+  for (let v = 0; v <= 5; v++) { const i = prvek("i"); i.style.background = promennaVitality(v); i.title = T.aes[v][0]; pruh.appendChild(i); }
+  tl.appendChild(pruh);
+  tl.appendChild(prvek("span", "vl-krajni", T.aes[5][0]));
+  [[6, T.aes[6] ? T.aes[6][0] : ""], [-1, T.vitalitaBezUdaje]].forEach(function(d){
+    if (!d[1]) return;
+    const s = prvek("span", "vl-dalsi"), i = prvek("i"); i.style.background = promennaVitality(d[0]);
+    s.appendChild(i); s.appendChild(document.createTextNode(d[1])); tl.appendChild(s);
+  });
+}
+function obnovLegenduVitality(){
+  if (!legendaVit) return;
+  legendaVit.hidden = !(vitalitaZap && panelZob.hidden);
+  if (!legendaVit.hidden) postavLegenduVitality();
+}
+tlVitDok.addEventListener("click", function(){ nastavBarvyVitality(!vitalitaZap); });
+$("vit-legenda-tl").addEventListener("click", function(){ otevriVitalitu(true); });   // vysvětlivka otevře stupně (filtr)
 $("vitalita-zavrit").addEventListener("click", function(){ otevriVitalitu(false); tlVit.focus(); });
 $("vitalita-vse").addEventListener("click", function(){ nastavVitalitu(VSECHNY_STUPNE); });
 $("vitalita-ohrozene").addEventListener("click", function(){ nastavVitalitu(OHROZENE); });
@@ -2222,6 +2259,7 @@ function prelozStranku(){
   zpetna.setAttribute("href", "mailto:" + T.zpetnaAdresa + "?subject=" + encodeURIComponent(T.zpetnaPredmet));
   if (ARTEFAKT) { zpetna.target = "_blank"; zpetna.rel = "noopener"; }   // v náhledu artefaktu smí ven jen nové okno
   $("tl-o-datech-text").textContent = T.oDatech.odkaz;
+  obnovLegenduVitality();
   /* samostatné stránky jazyků (jen na webu, artefakt ani soubor z disku je nemají) */
   const oj = $("odkaz-jazyky");
   oj.hidden = ARTEFAKT || location.protocol === "file:";
@@ -2272,6 +2310,8 @@ odkazJinam.addEventListener("click", function(e){
 (function(){
   let z = null, v = null;
   try { z = localStorage.getItem("atlas-znakove"); v = JSON.parse(localStorage.getItem("atlas-vitalita") || "null"); } catch (e) {}
+  let bv = null; try { bv = localStorage.getItem("atlas-barvy-vitality"); } catch (e) {}
+  if (bv === "1") nastavBarvyVitality(true, true);
   rezimZnak = ["vse", "bez", "jen"].indexOf(z) >= 0 ? z : "vse";
   tlZnak.forEach(function(b){ b.setAttribute("aria-pressed", b.dataset.znak === rezimZnak ? "true" : "false"); });
   nastavVitalitu(Array.isArray(v) && v.length ? v : VSECHNY_STUPNE, true);

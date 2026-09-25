@@ -75,6 +75,13 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
   bezpečný → vymřelý, `--vit-0`…`--vit-5`), prošla validátorem palet `--ordinal` na pevnině v noci i ve dne;
   probouzený zeleně (`--vit-6`), bez údaje šedě. Pořadí ani odstíny neměnit bez nového ověření.
   Vitalita je na kartě tečky i na kartě jazyka z atlasu (`oddilVitality`).
+  **Tlačítko „Vitalita“ v liště** (25. 9. 2026, návrh schválený uživatelem místo barev vitality rovnou po otevření):
+  zapne barvy vitality natrvalo (`vitalitaZap`, pamatuje se `atlas-barvy-vitality`) a nad lištou ukáže vysvětlivku
+  stupňů `#vit-legenda` (bezpečný → vymřelý, probouzený, bez údaje) – jen dokud jsou barvy zapnuté, jinak žádná
+  vysvětlivka na glóbu (to uživatel nechce). Klepnutí na vysvětlivku otevře stupně (filtr). Barvy rovnou po otevření
+  nedoporučeno: bez vysvětlivky nic neříkají, pevnina přijde o reliéf, noc o třpyt a oranžové území by splývalo.
+  Lišta s tlačítkem Vitalita je širší: do 700 px a v užší scéně na počítači (`@container scena`, do 820 px) má
+  tlačítka jen ikony, do 480 px schovává i + a − (zoom dvěma prsty).
 - **Odkaz na jazyk**: `#cs` (id jazyka z atlasu) nebo `#corn1251` (glottocode tečky, build ho dává do `REJSTRIK.g`).
   Výběr zapíše adresu (`history.replaceState`), otevření odkazu jazyk vybere; když ho schovává filtr, filtry se zruší.
   Tlačítko s řetízkem na kartě odkaz zkopíruje (v artefaktu je skryté).

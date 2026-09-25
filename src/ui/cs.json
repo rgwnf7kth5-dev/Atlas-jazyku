@@ -523,5 +523,7 @@
  "zpetnaAdresa": "info@atlasjazyku.cz",
  "zpetnaPredmet": "Atlas jazyků – zpětná vazba",
  "zpetnaPopis": "Napsat e-mail se zpětnou vazbou",
- "patickaSouhrn": "O atlasu, zdroje a kontakt"
+ "patickaSouhrn": "O atlasu, zdroje a kontakt",
+ "vitalitaDokPopis": "Obarvit jazyky podle toho, jak moc jsou ohrožené",
+ "vitalitaLegendaPopis": "Stupně vitality – klepnutím můžeš vybrat, které ukázat"
 }
