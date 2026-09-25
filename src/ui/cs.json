@@ -603,13 +603,6 @@
     ]
    },
    {
-    "h": "Hra: Kde se tak mluví?",
-    "p": [
-     "Tlačítko Hra vpravo nahoře na glóbu spustí hru o deseti kolech. Atlas ukáže pozdrav (můžeš si ho i poslechnout) a ty klikneš na glóbus tam, kde si myslíš, že se tak lidé zdraví. Pak se ukáže, o který jazyk šlo, kde se jím mluví a jak daleko byl tvůj tip.",
-     "Za každé kolo dostaneš až 1 000 bodů – čím blíž, tím víc. Když se trefíš přímo do území jazyka, máš plný počet. Atlas si pamatuje tvůj rekord. Hru ukončí křížek nebo Escape."
-    ]
-   },
-   {
     "h": "Klávesnice",
     "p": [
      "Tab přeskakuje mezi ovládacími prvky. Do seznamu jazyků vstoupíš jedním Tabem a mezi dlaždicemi chodíš šipkami, Home a End skočí na začátek a konec. Enter jazyk vybere.",
@@ -637,34 +630,5 @@
   ]
  },
  "navodOdkaz": "Podrobný návod",
- "navodNapoveda": "Podrobný návod – co všechno atlas umí",
- "hra": "Hra",
- "hraPopis": "Hra: Kde se tak mluví?",
- "hraNadpis": "Kde se tak mluví?",
- "hraUvod": "Ukážu ti pozdrav z nějakého jazyka. Klikni na glóbus tam, kde se lidé takhle zdraví. Čím blíž, tím víc bodů – za kolo nejvýš 1 000. Hraje se deset kol.",
- "hraZacit": "Začít hru",
- "hraKolo": "Kolo {a} z {b}",
- "hraOtazka": "Kde se takhle zdraví?",
- "hraKlikni": "Klikni na glóbus tam, kde se tak mluví. Glóbus můžeš otáčet a přibližovat.",
- "hraTrefa": "Trefa! Tvůj tip je přímo tam, kde se tak mluví.",
- "hraVedle": "Tvůj tip je {km} km od míst, kde se tak mluví.",
- "hraDalsi": "Další kolo",
- "hraVysledky": "Ukaž výsledek",
- "hraHotovo": "Hotovo!",
- "hraCelkem": "{n} z {max} bodů",
- "hraRekord": "Tvůj rekord: {n}",
- "hraNovyRekord": "Nový rekord!",
- "hraZnovu": "Hrát znovu",
- "hraUkoncit": "Ukončit hru",
- "hraHodnoceni": [
-  "Pěkný začátek – zkus to znovu!",
-  "Dobrá práce, jazyky světa ti nejsou cizí.",
-  "Výborně! Jsi skutečný cestovatel po jazycích."
- ],
- "bod": [
-  "bod",
-  "body",
-  "bodů",
-  "bodu"
- ]
+ "navodNapoveda": "Podrobný návod – co všechno atlas umí"
 }
