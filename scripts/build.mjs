@@ -39,7 +39,7 @@ const nareci = json("data/nareci.json");                 // jména nářečí z 
 const DOMENA = { cs: "https://atlasjazyku.cz", en: "https://thelanguageatlas.com" };
 // ověření vlastnictví v Google Search Console (značka HTML), na úvodních stránkách obou domén; kódy nemazat,
 // jinak Search Console ověření po čase zruší
-const GOOGLE_OVERENI = ["zyKCEYlegO4cJQmz22iaMH9QuphSUalznP-e4iU_Gzg"];
+const GOOGLE_OVERENI = ["zyKCEYlegO4cJQmz22iaMH9QuphSUalznP-e4iU_Gzg", "R9cFXotbubItuaKstc9NVaT-CoYj0BqfVyLau7QR_GY"];
 const WEB = p => p === "/en" || p.startsWith("/en/") ? DOMENA.en + p.slice(3) : DOMENA.cs + p;   // cesta v dist/ → plná adresa
 const ikona = cti("static/favicon.svg").trim();
 // náhled pro sdílení s otiskem v adrese: X, Facebook a spol. si obrázek pamatují podle adresy, takže po změně
