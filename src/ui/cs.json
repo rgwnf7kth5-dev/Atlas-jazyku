@@ -584,7 +584,7 @@
     "p": [
      "Hledat můžeš jazyk, zemi i nářečí (třeba „hanáčtina“ najde češtinu). Křížek v políčku hledání vymaže.",
      "Jazyky jde řadit podle rodin, podle abecedy nebo podle světadílů. Nahoře jsou velké dlaždice jazyků s pozdravem, pod nimi ostatní jazyky.",
-     "Jazyk dne se mění každou půlnoc a vždy řekne, proč je dnes zrovna on – buď má svůj den, nebo s ním cestujeme kolem světa. Všechny takové dny najdeš v Kalendáři jazykových dnů."
+     "Jazyk dne se mění každou půlnoc a vždy řekne, proč je dnes zrovna on – buď má svůj den, nebo s ním cestujeme kolem světa. Všechny takové dny najdeš v Kalendáři jazykových dnů. Na Evropský den jazyků 26. září je místo Jazyka dne karta se všemi evropskými jazyky."
     ]
    },
    {
@@ -607,6 +607,17 @@
     "p": [
      "Tab přeskakuje mezi ovládacími prvky. Do seznamu jazyků vstoupíš jedním Tabem a mezi dlaždicemi chodíš šipkami, Home a End skočí na začátek a konec. Enter jazyk vybere.",
      "Klávesy + a − přibližují glóbus. Escape zavře okno, kartu nebo panel."
+    ]
+   },
+   {
+    "h": "O atlasu, zdroje, kontakt, návod a kalendář",
+    "p": [
+     "Úplně dole pod seznamem jazyků (na telefonu na konci stránky) je sbalený řádek s knížkou: O atlasu, zdroje, kontakt, návod a kalendář. Klepnutím se rozbalí a znovu sbalí.",
+     "Kalendář jazykových dnů: všechny dny v roce, kdy má nějaký jazyk svůj svátek – den jazyka, státní svátek nebo výročí. Otevře se u nejbližšího dne a kliknutím na jazyk ho atlas ukáže na glóbu.",
+     "O datech a jak atlas vznikl: odkud atlas bere údaje o jazycích (Glottolog, WALS a další), jak jsou staré a proč je v seznamu trochu víc jazyků než teček na glóbu.",
+     "Podrobný návod: to, co právě čteš.",
+     "Jazyky s pozdravem (jen na webu): všechny jazyky s pozdravem na jedné stránce. Každý se otevře jako lístek v kartotéce, šipkami listuješ na další a pozdrav si můžeš poslechnout.",
+     "Kontakt: nápad nebo chybu pošli e-mailem na info@atlasjazyku.cz. Pod tím jsou vypsané zdroje dat a jejich licence."
     ]
    },
    {
