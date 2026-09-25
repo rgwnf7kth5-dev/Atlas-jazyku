@@ -551,5 +551,70 @@
   "edl": "European Day of Languages (Council of Europe). Instead of one Language of the Day, all European languages in the atlas are shown at once.",
   "dnes": "today",
   "ostatni": "On all other days the Language of the Day travels around the world, each day to the next nearest language."
- }
+ },
+ "navod": {
+  "odkaz": "Full guide",
+  "napoveda": "Full guide – everything the atlas can do",
+  "nadpis": "How to use the atlas",
+  "uvod": "The atlas shows every language in the world on a spinning globe. Here is everything you can find in it and how to use it – with a mouse, a finger or the keyboard.",
+  "oddily": [
+   {
+    "h": "The globe",
+    "p": [
+     "Spin: grab the globe with the mouse or one finger and drag. Zoom: the mouse wheel, two fingers apart, the + and − buttons in the bar at the bottom, or the + and − keys.",
+     "Each dot is one language. Click it to open its card. From 2× zoom, language names appear next to the dots (you can turn them off in View).",
+     "Click a country away from the dots and the atlas shows how many languages are spoken there and lights them up.",
+     "The Whole world button brings the globe back to the start. Clicking the logo in the top left does the same."
+    ]
+   },
+   {
+    "h": "The language card",
+    "p": [
+     "Languages with a greeting have a painted postcard of their region, the greeting, how to say it and a Listen button (it uses your device's voice). Below are labels – how many people speak it, its family and how endangered it is – and tabs with a fun fact, vitality and relatives.",
+     "Other languages have the tabs Overview (where it is spoken, how endangered it is, dialects), How it works (word order, cases, tones, sounds) and Relatives.",
+     "Light arcs on the globe lead from the selected language to its closest relatives. The family tree line shows the path from their common ancestor.",
+     "The chain button copies a link to the language that you can send to a friend. On a phone the card sits at the bottom: drag it up to enlarge it, down to shrink or close it."
+    ]
+   },
+   {
+    "h": "The list on the right",
+    "p": [
+     "You can search for a language, a country or a dialect. The cross in the search box clears it.",
+     "Sort languages by family, alphabetically or by continent. Big tiles with a greeting come first, the other languages below.",
+     "The Language of the Day changes every midnight and always says why it was chosen – it has its own day, or we are travelling around the world with it. All such days are in the Calendar of language days."
+    ]
+   },
+   {
+    "h": "The bar at the bottom",
+    "p": [
+     "Surprise me picks a random language.",
+     "Family tree shows the tree of a whole language family. Drag to move it, use the wheel or two fingers to zoom, click a branch to focus on it and click a language to select it.",
+     "Vitality colours the languages by how endangered they are and shows a key. Tap the key to choose which levels to show.",
+     "View: auto-spin, language names, sign languages (all, none or only them) and vitality levels."
+    ]
+   },
+   {
+    "h": "Comparing two languages",
+    "p": [
+     "On a language card click Compare with another language and pick the second one – on the globe, in the list or by searching. The atlas shows whether they are related and where they split, how their grammar differs and how many people speak them."
+    ]
+   },
+   {
+    "h": "Keyboard",
+    "p": [
+     "Tab moves between controls. One Tab takes you into the language list; move between tiles with the arrow keys, Home and End jump to the start and end. Enter selects a language.",
+     "The + and − keys zoom the globe. Escape closes a window, the card or a panel."
+    ]
+   },
+   {
+    "h": "More",
+    "p": [
+     "In the top right you can switch the page language (Česky) and the day or night look. The atlas remembers your choices.",
+     "The atlas also hides a few secrets. Try searching for elves or Klingons…"
+    ]
+   }
+  ]
+ },
+ "navodOdkaz": "Full guide",
+ "navodNapoveda": "Full guide – everything the atlas can do"
 }

@@ -938,3 +938,10 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 .kal-pozn{margin-top:18px !important; font-style:italic}
 /* v podstránce Vitalita je vpravo i křížek, který zavře celý panel */
 #vitalita-panel .vp-hlava #vitalita-x{margin-left:auto}
+/* nápověda pod otazníkem: čtvrtý řádek je odkaz na podrobný návod, ne krok k odškrtnutí */
+.napoveda li.napoveda-navod{counter-increment:none; margin-top:2px; padding-top:8px; border-top:1px solid var(--linka)}
+.napoveda li.napoveda-navod i{border-color:transparent; color:var(--cyan)}
+.napoveda li.napoveda-navod i::before{content:none}
+.napoveda li.napoveda-navod i svg{width:17px; height:17px}
+#napoveda-navod{padding:2px 0; border:0; background:none; font:inherit; font-weight:600; color:var(--cyan); text-align:left; cursor:pointer;
+  text-decoration:underline; text-underline-offset:2px}

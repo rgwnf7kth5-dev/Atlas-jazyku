@@ -159,7 +159,7 @@ fs.writeFileSync(path.join(KOREN, "dist/en/index.html"), en.dokument);
 fs.cpSync(path.join(KOREN, "static"), path.join(KOREN, "dist"), { recursive: true });   // ikonky a náhledy
 
 // samostatné stránky jazyků, přehled a O datech (scripts/stranky.mjs); staré složky pryč, kdyby se jazyk přejmenoval
-for (const d of ["jazyk", "jazyky", "o-datech", "kalendar-jazyku", "en/language", "en/languages", "en/about-data", "en/language-days"]) fs.rmSync(path.join(KOREN, "dist", d), { recursive: true, force: true });
+for (const d of ["jazyk", "jazyky", "o-datech", "kalendar-jazyku", "navod", "en/language", "en/languages", "en/about-data", "en/language-days", "en/guide"]) fs.rmSync(path.join(KOREN, "dist", d), { recursive: true, force: true });
 const polozekSeznamu = JAZYKY.length + glottolog.body.length - new Set(glottolog.body.map(b => b[5]).filter(Boolean)).size;
 const { stranky } = vyrobStranky({ KOREN, WEB, UI, jazyky: jazykyAtlasu, glottolog, podrobnosti, nazvyZemi, ikona, fontyOdkaz: FONTY,
   verze: { g: glottolog.body.length, n: polozekSeznamu, glottolog: glottolog.stazeno, podrobnosti: podrobnosti.stazeno, wikidata: json("data/wikidata.json").stazeno },

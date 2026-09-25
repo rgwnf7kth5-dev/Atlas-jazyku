@@ -1397,7 +1397,7 @@ function krokNapovedy(krok){
   const li = napoveda.querySelector('[data-krok="' + krok + '"]');
   if (!li || li.classList.contains("hotovo")) return;
   li.classList.add("hotovo");
-  if (napoveda.querySelectorAll("li:not(.hotovo)").length === 0) zavriNapovedu();
+  if (napoveda.querySelectorAll("li[data-krok]:not(.hotovo)").length === 0) zavriNapovedu();   // odkaz na návod není krok
 }
 let mizeniNapovedy = 0;
 function otevriNapovedu(){
@@ -1910,6 +1910,7 @@ function prectiOdkaz(){
   if (h.toLowerCase() === "eulang") { spustEU(); return; }
   if (/^(o-datech|about-data)$/i.test(h)) { otevriODatech(); return; }
   if (/^(kalendar|language-days)$/i.test(h)) { otevriKalendar(); return; }
+  if (/^(navod|guide)$/i.test(h)) { otevriNavod(); return; }
   if (/^mellon(~|$)/i.test(h)) { otevriBranu(); const v = h.split("~")[1]; if (v) ukazVymysleny(v); return; }
   if (h.indexOf("~") > 0) {
     const d = h.split("~"), najdi = function(k){ return PODLE_ID[k] ? jazykAtlasu(k) : PODLE_KODU.has(k) ? jazykBodu(PODLE_KODU.get(k)) : null; };
@@ -2417,6 +2418,34 @@ function otevriKalendar(){
   telo.scrollTop = cil ? Math.max(0, cil.offsetTop - telo.offsetTop - 60) : 0;
 }
 $("tl-kalendar-pat").addEventListener("click", otevriKalendar);
+/* ---------- podrobný návod (přání uživatele 25. 9. 2026): okno z patičky a z nápovědy pod otazníkem ---------- */
+const navodOkno = $("navod");
+function postavNavod(){
+  const N = T.navod;
+  navodOkno.textContent = "";
+  const hlava = prvek("div", "od-hlava");
+  const h = prvek("h2", null, N.nadpis); h.id = "nav-nadpis"; hlava.appendChild(h);
+  const x = prvek("button", "zavrit"); x.type = "button"; x.setAttribute("aria-label", T.oDatech.zavrit);
+  x.innerHTML = '<svg aria-hidden="true"><use href="#i-krizek"/></svg>'; x.addEventListener("click", function(){ navodOkno.close(); });
+  hlava.appendChild(x); navodOkno.appendChild(hlava);
+  const telo = prvek("div", "od-telo");
+  telo.appendChild(prvek("p", "od-uvod", N.uvod));
+  N.oddily.forEach(function(o){
+    const sekce = prvek("section"); sekce.appendChild(prvek("h3", null, o.h));
+    o.p.forEach(function(t){ sekce.appendChild(prvek("p", null, t)); });
+    telo.appendChild(sekce);
+  });
+  navodOkno.appendChild(telo);
+}
+function otevriNavod(){
+  zavriNapovedu(true);
+  postavNavod();
+  if (navodOkno.showModal) { if (!navodOkno.open) navodOkno.showModal(); } else navodOkno.setAttribute("open", "");
+  navodOkno.querySelector(".od-telo").scrollTop = 0;
+}
+$("tl-navod-pat").addEventListener("click", otevriNavod);
+$("napoveda-navod").addEventListener("click", otevriNavod);
+navodOkno.addEventListener("click", function(e){ if (e.target === navodOkno) navodOkno.close(); });
 kalendar.addEventListener("click", function(e){ if (e.target === kalendar) kalendar.close(); });
 oDatech.addEventListener("click", function(e){ if (e.target === oDatech) oDatech.close(); });   // klik vedle okna zavře
 const puvodniOdkaz = odkazJinam.getAttribute("href");
@@ -2439,6 +2468,7 @@ function prelozStranku(){
   oj.setAttribute("href", korenWebu + (T.lang === "en" ? "en/languages/" : "jazyky/"));
   if (oDatech.open) postavODatech();
   if (kalendar.open) postavKalendar();
+  if (navodOkno.open) postavNavod();
   const jiny = T.lang === "cs" ? "en" : "cs";
   odkazJinam.setAttribute("hreflang", jiny); odkazJinam.setAttribute("lang", jiny);
   obnovOdkazJinam();

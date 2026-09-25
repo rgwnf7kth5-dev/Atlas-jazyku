@@ -551,5 +551,70 @@
   "edl": "Evropský den jazyků (Rada Evropy). Místo Jazyka dne se ukáží všechny evropské jazyky atlasu najednou.",
   "dnes": "dnes",
   "ostatni": "V ostatních dnech Jazyk dne cestuje kolem světa – každý den k nejbližšímu dalšímu jazyku."
- }
+ },
+ "navod": {
+  "odkaz": "Podrobný návod",
+  "napoveda": "Podrobný návod – co všechno atlas umí",
+  "nadpis": "Jak atlas používat",
+  "uvod": "Atlas ukazuje všechny jazyky světa na otáčivém glóbu. Tady je všechno, co v něm najdeš a jak to ovládat – myší, prstem i klávesnicí.",
+  "oddily": [
+   {
+    "h": "Glóbus",
+    "p": [
+     "Otáčení: chyť glóbus myší nebo jedním prstem a táhni. Přiblížení: kolečko myši, dva prsty od sebe, tlačítka + a − v liště dole, nebo klávesy + a −.",
+     "Každá tečka je jeden jazyk. Klikni na ni a otevře se jeho karta. Od přiblížení 2× se u teček ukazují jména jazyků (vypnout je jde v Zobrazení).",
+     "Klikni na zemi mimo tečky a atlas ukáže, kolik jazyků se ve státě mluví, a rozsvítí je.",
+     "Tlačítko Celý svět vrátí glóbus do výchozího pohledu. Na totéž stačí kliknout na logo Atlas jazyků vlevo nahoře."
+    ]
+   },
+   {
+    "h": "Karta jazyka",
+    "p": [
+     "Jazyky s pozdravem mají na kartě malovanou pohlednici kraje, pozdrav, výslovnost a tlačítko Poslechni si to (použije hlas tvého zařízení). Pod tím jsou štítky – kolik lidí jazykem mluví, do jaké rodiny patří a jak je ohrožený – a záložky se zajímavostí, vitalitou a příbuznými.",
+     "Ostatní jazyky mají záložky Přehled (kde se mluví, jak je ohrožený, nářečí), Jak funguje (pořadí slov, pády, tóny, hlásky) a Příbuzní.",
+     "Od vybraného jazyka vedou na glóbu světelné oblouky k nejbližším příbuzným. Řádek Rodokmen jazykové rodiny ukazuje cestu od společného předka.",
+     "Tlačítko s řetízkem zkopíruje odkaz na jazyk, který můžeš poslat kamarádovi. Na telefonu je karta dole: tažením nahoru ji zvětšíš, dolů zmenšíš nebo zavřeš."
+    ]
+   },
+   {
+    "h": "Seznam jazyků vpravo",
+    "p": [
+     "Hledat můžeš jazyk, zemi i nářečí (třeba „hanáčtina“ najde češtinu). Křížek v políčku hledání vymaže.",
+     "Jazyky jde řadit podle rodin, podle abecedy nebo podle světadílů. Nahoře jsou velké dlaždice jazyků s pozdravem, pod nimi ostatní jazyky.",
+     "Jazyk dne se mění každou půlnoc a vždy řekne, proč je dnes zrovna on – buď má svůj den, nebo s ním cestujeme kolem světa. Všechny takové dny najdeš v Kalendáři jazykových dnů."
+    ]
+   },
+   {
+    "h": "Lišta dole",
+    "p": [
+     "Překvap mě vybere náhodný jazyk.",
+     "Rodokmen ukáže strom celé jazykové rodiny. Tažením ho posouváš, kolečkem nebo dvěma prsty přibližuješ, kliknutím na větev se na ni zaměříš a kliknutím na jazyk ho vybereš.",
+     "Vitalita obarví jazyky podle toho, jak moc jsou ohrožené, a ukáže vysvětlivku. Klepnutím na vysvětlivku vybereš, které stupně chceš vidět.",
+     "Zobrazení: samo-otáčení glóbu, jména jazyků, znakové jazyky (všechny, bez nich, nebo jen ony) a stupně vitality."
+    ]
+   },
+   {
+    "h": "Srovnání dvou jazyků",
+    "p": [
+     "Na kartě jazyka klikni na Porovnat s jiným jazykem a vyber druhý jazyk – na glóbu, v seznamu nebo hledáním. Atlas ukáže, jestli jsou příbuzné a od kterého předka se rozešly, v čem se liší jejich stavba a kolik lidí jimi mluví."
+    ]
+   },
+   {
+    "h": "Klávesnice",
+    "p": [
+     "Tab přeskakuje mezi ovládacími prvky. Do seznamu jazyků vstoupíš jedním Tabem a mezi dlaždicemi chodíš šipkami, Home a End skočí na začátek a konec. Enter jazyk vybere.",
+     "Klávesy + a − přibližují glóbus. Escape zavře okno, kartu nebo panel."
+    ]
+   },
+   {
+    "h": "Další",
+    "p": [
+     "Vpravo nahoře přepneš jazyk stránky (English) a denní nebo noční vzhled. Atlas si volby pamatuje.",
+     "Atlas má i pár tajemství. Zkus hledat elfy nebo Klingony…"
+    ]
+   }
+  ]
+ },
+ "navodOdkaz": "Podrobný návod",
+ "navodNapoveda": "Podrobný návod – co všechno atlas umí"
 }

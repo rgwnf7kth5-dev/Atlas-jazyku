@@ -279,6 +279,10 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
 - **O datech**: okno `<dialog id="o-datech">` z odkazu v patičce seznamu (i v artefaktu), odkaz `#o-datech`
   / `#about-data`; texty `oDatech` v `src/ui/*.json` (oddíly, verze dat, licence), data stažení dosadí build
   (`VERZE`). Stejný text je na statické stránce. Údaje v něm musí odpovídat `data/ZDROJE.md`.
+- **Podrobný návod** (přání uživatele 25. 9. 2026): okno `#navod` (texty `navod` v `src/ui/*.json`: glóbus, karta,
+  seznam, lišta, srovnání, klávesnice, další; tajemství jen naznačit, hesla neprozrazovat), odkaz v patičce „O atlasu…“
+  a jako **čtvrtý řádek nápovědy pod otazníkem** – není to krok: nápověda zmizí po třech krocích jako dřív
+  (`li[data-krok]`). Odkaz `#navod` / `#guide`, statická stránka `/navod/` a `/en/guide/`. Při změně ovládání návod upravit.
 - **Seznam z klávesnice**: do seznamu se vstoupí jedním Tabem (jedna dlaždice má `tabindex=0`), šipky
   vlevo/vpravo o dlaždici, nahoru/dolů o řádek (nejbližší dlaždice), Home/End, PageUp/PageDown o 10 řádků;
   další Tab seznam opustí. Při pohybu ke konci se dokreslí další dávka. Nadpisy skupin jsou `h2`.

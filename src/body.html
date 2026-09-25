@@ -101,6 +101,7 @@
      <li data-krok="zatoc"><i></i><span><b data-t="krokZatoc">{{krokZatoc}}</b> <span data-t="krokZatocJak">{{krokZatocJak}}</span></span></li>
      <li data-krok="pribliz"><i></i><span><b data-t="krokPribliz">{{krokPribliz}}</b> <span data-t="krokPriblizJak">{{krokPriblizJak}}</span></span></li>
      <li data-krok="klikni"><i></i><span><b data-t="krokKlikni">{{krokKlikni}}</b> <span data-t="krokKlikniJak">{{krokKlikniJak}}</span></span></li>
+     <li class="napoveda-navod"><i><svg aria-hidden="true"><use href="#i-kniha"/></svg></i><button type="button" id="napoveda-navod" aria-haspopup="dialog" data-t="navodNapoveda">{{navodNapoveda}}</button></li>
     </ol>
     <button class="napoveda-x" id="napoveda-x" type="button" aria-label="{{napovedaZavrit}}" data-t-aria-label="napovedaZavrit"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></button>
    </div>
@@ -166,7 +167,7 @@
    <summary><svg aria-hidden="true"><use href="#i-kniha"/></svg><span data-t="patickaSouhrn">{{patickaSouhrn}}</span><svg class="pat-sipka" aria-hidden="true"><use href="#i-dal"/></svg></summary>
    <p class="zpetna"><svg aria-hidden="true"><use href="#i-dopis"/></svg><span><span data-t="zpetna">{{zpetna}}</span>
     <a id="zpetna-odkaz" href="mailto:{{zpetnaAdresa}}" title="{{zpetnaPopis}}" data-t-title="zpetnaPopis">{{zpetnaAdresa}}</a></span></p>
-   <p class="o-datech-radek"><button class="odkaz-o-datech" id="tl-o-datech" type="button" aria-haspopup="dialog"><span id="tl-o-datech-text"></span></button><button class="odkaz-o-datech" id="tl-kalendar-pat" type="button" aria-haspopup="dialog" data-t="kalendarOdkaz">{{kalendarOdkaz}}</button><a class="odkaz-jazyky" id="odkaz-jazyky" hidden></a></p>
+   <p class="o-datech-radek"><button class="odkaz-o-datech" id="tl-o-datech" type="button" aria-haspopup="dialog"><span id="tl-o-datech-text"></span></button><button class="odkaz-o-datech" id="tl-navod-pat" type="button" aria-haspopup="dialog" data-t="navodOdkaz">{{navodOdkaz}}</button><button class="odkaz-o-datech" id="tl-kalendar-pat" type="button" aria-haspopup="dialog" data-t="kalendarOdkaz">{{kalendarOdkaz}}</button><a class="odkaz-jazyky" id="odkaz-jazyky" hidden></a></p>
    <p class="zdroje" data-t="zdroje">{{zdroje}}</p>
    </details>
    </footer>
@@ -174,4 +175,5 @@
  </main>
  <dialog class="o-datech" id="o-datech" aria-labelledby="od-nadpis"></dialog>
  <dialog class="o-datech kalendar" id="kalendar" aria-labelledby="kal-nadpis"></dialog>
+ <dialog class="o-datech navod" id="navod" aria-labelledby="nav-nadpis"></dialog>
 </div>

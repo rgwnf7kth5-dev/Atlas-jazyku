@@ -953,6 +953,13 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 .kal-pozn{margin-top:18px !important; font-style:italic}
 /* v podstránce Vitalita je vpravo i křížek, který zavře celý panel */
 #vitalita-panel .vp-hlava #vitalita-x{margin-left:auto}
+/* nápověda pod otazníkem: čtvrtý řádek je odkaz na podrobný návod, ne krok k odškrtnutí */
+.napoveda li.napoveda-navod{counter-increment:none; margin-top:2px; padding-top:8px; border-top:1px solid var(--linka)}
+.napoveda li.napoveda-navod i{border-color:transparent; color:var(--cyan)}
+.napoveda li.napoveda-navod i::before{content:none}
+.napoveda li.napoveda-navod i svg{width:17px; height:17px}
+#napoveda-navod{padding:2px 0; border:0; background:none; font:inherit; font-weight:600; color:var(--cyan); text-align:left; cursor:pointer;
+  text-decoration:underline; text-underline-offset:2px}
 </style>
 <link rel="canonical" href="https://atlasoflanguages.netlify.app/">
 <link rel="alternate" hreflang="cs" href="https://atlasoflanguages.netlify.app/">
@@ -1073,6 +1080,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
      <li data-krok="zatoc"><i></i><span><b data-t="krokZatoc">Zatoč</b> <span data-t="krokZatocJak">– chyť glóbus a táhni</span></span></li>
      <li data-krok="pribliz"><i></i><span><b data-t="krokPribliz">Přibliž</b> <span data-t="krokPriblizJak">– kolečkem myši nebo dvěma prsty</span></span></li>
      <li data-krok="klikni"><i></i><span><b data-t="krokKlikni">Klikni</b> <span data-t="krokKlikniJak">na světélko a poznáš jazyk</span></span></li>
+     <li class="napoveda-navod"><i><svg aria-hidden="true"><use href="#i-kniha"/></svg></i><button type="button" id="napoveda-navod" aria-haspopup="dialog" data-t="navodNapoveda">Podrobný návod – co všechno atlas umí</button></li>
     </ol>
     <button class="napoveda-x" id="napoveda-x" type="button" aria-label="Zavřít nápovědu" data-t-aria-label="napovedaZavrit"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></button>
    </div>
@@ -1138,7 +1146,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
    <summary><svg aria-hidden="true"><use href="#i-kniha"/></svg><span data-t="patickaSouhrn">O atlasu, zdroje a kontakt</span><svg class="pat-sipka" aria-hidden="true"><use href="#i-dal"/></svg></summary>
    <p class="zpetna"><svg aria-hidden="true"><use href="#i-dopis"/></svg><span><span data-t="zpetna">Máš nápad, nebo ti něco nefunguje? Napiš na</span>
     <a id="zpetna-odkaz" href="mailto:info@atlasjazyku.cz" title="Napsat e-mail se zpětnou vazbou" data-t-title="zpetnaPopis">info@atlasjazyku.cz</a></span></p>
-   <p class="o-datech-radek"><button class="odkaz-o-datech" id="tl-o-datech" type="button" aria-haspopup="dialog"><span id="tl-o-datech-text"></span></button><button class="odkaz-o-datech" id="tl-kalendar-pat" type="button" aria-haspopup="dialog" data-t="kalendarOdkaz">Kalendář jazykových dnů</button><a class="odkaz-jazyky" id="odkaz-jazyky" hidden></a></p>
+   <p class="o-datech-radek"><button class="odkaz-o-datech" id="tl-o-datech" type="button" aria-haspopup="dialog"><span id="tl-o-datech-text"></span></button><button class="odkaz-o-datech" id="tl-navod-pat" type="button" aria-haspopup="dialog" data-t="navodOdkaz">Podrobný návod</button><button class="odkaz-o-datech" id="tl-kalendar-pat" type="button" aria-haspopup="dialog" data-t="kalendarOdkaz">Kalendář jazykových dnů</button><a class="odkaz-jazyky" id="odkaz-jazyky" hidden></a></p>
    <p class="zdroje" data-t="zdroje">Tečky: Glottolog (CC BY 4.0) · Stavba jazyků: WALS (CC BY 4.0) · Hlásky: PHOIBLE (CC BY-SA 3.0) · Mapa: Natural Earth</p>
    </details>
    </footer>
@@ -1146,8 +1154,9 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
  </main>
  <dialog class="o-datech" id="o-datech" aria-labelledby="od-nadpis"></dialog>
  <dialog class="o-datech kalendar" id="kalendar" aria-labelledby="kal-nadpis"></dialog>
+ <dialog class="o-datech navod" id="navod" aria-labelledby="nav-nadpis"></dialog>
 </div>
 
-<script src="js/atlas.1ac704b83c.js"></script>
+<script src="js/atlas.936eb150a2.js"></script>
 </body>
 </html>

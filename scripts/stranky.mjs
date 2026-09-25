@@ -53,7 +53,7 @@ export function vyrobStranky({ KOREN, WEB, UI, jazyky, glottolog, podrobnosti, n
       adresy[lang][j.id] = (lang === "cs" ? "/jazyk/" : "/en/language/") + s + "/";
     }
   }
-  const prehled = { cs: "/jazyky/", en: "/en/languages/" }, oDatech = { cs: "/o-datech/", en: "/en/about-data/" }, kalendarA = { cs: "/kalendar-jazyku/", en: "/en/language-days/" }, domov = { cs: "/", en: "/en/" };
+  const prehled = { cs: "/jazyky/", en: "/en/languages/" }, oDatech = { cs: "/o-datech/", en: "/en/about-data/" }, kalendarA = { cs: "/kalendar-jazyku/", en: "/en/language-days/" }, navodA = { cs: "/navod/", en: "/en/guide/" }, domov = { cs: "/", en: "/en/" };
 
   /* příbuzní v atlasu: nejhlubší společný předek ve stromu Glottologu (jako oblouky na glóbu) */
   const cesty = {};
@@ -162,7 +162,7 @@ footer a{color:inherit}
 ${obsah}
 </main>
 <footer>
- <p><a href="${prehled[lang]}">${escHtml(S.vsechnyOdkaz)}</a> · <a href="${kalendarA[lang]}">${escHtml(T.kalendarOdkaz)}</a> · <a href="${oDatech[lang]}">${escHtml(T.oDatech.odkaz)}</a> · <a href="${domov[lang]}">${escHtml(S.globus)}</a></p>
+ <p><a href="${prehled[lang]}">${escHtml(S.vsechnyOdkaz)}</a> · <a href="${kalendarA[lang]}">${escHtml(T.kalendarOdkaz)}</a> · <a href="${navodA[lang]}">${escHtml(T.navod.odkaz)}</a> · <a href="${oDatech[lang]}">${escHtml(T.oDatech.odkaz)}</a> · <a href="${domov[lang]}">${escHtml(S.globus)}</a></p>
  <p>${escHtml(T.zpetna)} <a href="mailto:${escHtml(T.zpetnaAdresa)}?subject=${encodeURIComponent(T.zpetnaPredmet)}">${escHtml(T.zpetnaAdresa)}</a></p>
  <p>${escHtml(T.zdroje)}</p>
 </footer>
@@ -235,6 +235,19 @@ ${O.oddily.map(o => `<h2>${escHtml(dosad(o.h))}</h2>\n${o.p.map(p => `<p>${escHt
 <table><tbody>${O.verze.map(v => `<tr>${v.map(b => `<td>${escHtml(dosad(b))}</td>`).join("")}</tr>`).join("")}</tbody></table>
 </div>` }));
     vsechny.push([oDatech[lang], oDatech[jiny], lang]);
+
+    /* podrobný návod: stejný text jako okno v aplikaci */
+    const N = T.navod;
+    zapis(navodA[lang], stranka({ lang, adresa: navodA[lang], jinaAdresa: navodA[jiny], titulek: N.nadpis + " · " + T.nazev,
+      popis: N.uvod, obrazek: obrazekWebu(lang),
+      obsah: `<nav class="drobky" aria-label="${escHtml(S.drobky)}"><a href="${domov[lang]}">${escHtml(T.nazev)}</a> › ${escHtml(N.nadpis)}</nav>
+<div class="text">
+<h1>${escHtml(N.nadpis)}</h1>
+<p class="uvod">${escHtml(N.uvod)}</p>
+${N.oddily.map(o => `<h2>${escHtml(o.h)}</h2>\n${o.p.map(p => `<p>${escHtml(p)}</p>`).join("\n")}`).join("\n")}
+<p><a class="tl" href="${domov[lang]}">${escHtml(S.globus)}</a></p>
+</div>` }));
+    vsechny.push([navodA[lang], navodA[jiny], lang]);
 
     /* kalendář jazykových dnů: stejný seznam jako okno v aplikaci, odkazy na stránky jazyků */
     const K = T.kalendar, TYDEN = ["ne", "po", "ut", "st", "ct", "pa", "so"], rok = 2026;
