@@ -2231,8 +2231,6 @@ function prelozStranku(){
   const jiny = T.lang === "cs" ? "en" : "cs";
   odkazJinam.setAttribute("hreflang", jiny); odkazJinam.setAttribute("lang", jiny);
   obnovOdkazJinam();
-  /* seznam má o pár položek víc než glóbus teček: srbština a chorvatština jsou v Glottologu jeden jazyk, hmongština několik */
-  $("pocet-pozn").textContent = POLOZEK_SEZNAMU !== POCET_B ? " · " + t("pocetPozn", {g: cislo(POCET_B), n: cislo(POLOZEK_SEZNAMU)}) : "";
 }
 /* odkaz na druhou jazykovou verzi nese i otevřený jazyk (#cs~sk), aby ho šlo otevřít i v novém listu */
 function obnovOdkazJinam(){

@@ -411,7 +411,6 @@
  "vyznamPozdravu": "Co pozdrav znamená",
  "zJinychSvetu": "✦ Z jiných světů",
  "nareciPozn": "Glottolog je vede jako nářečí, ne jako samostatné jazyky, proto nemají na glóbu vlastní tečku.",
- "pocetPozn": "Glottolog: {g} jazyků (srbštinu s chorvatštinou počítá jako jeden, hmongštinu jako několik, proto je v seznamu {n}).",
  "hledejVymazat": "Vymazat hledání",
  "preskocit": "Přeskočit na seznam jazyků",
  "filtryZapnute": "zapnuté filtry: {n}",
@@ -436,7 +435,7 @@
     "h": "Jazyk, nebo nářečí?",
     "p": [
      "Ostrá hranice mezi jazykem a nářečím neexistuje a často ji ovlivňují i dějiny a politika. Atlas přebírá rozhodnutí Glottologu. Proto má tečku bavorština, ale ne hanáčtina, která je nářečím češtiny. Nářečí najdeš na kartě jazyka a hledání přes ně najde jejich jazyk.",
-     "Srbštinu, chorvatštinu a bosenštinu vede Glottolog jako jeden jazyk a hmongštinu jako několik jazyků. Atlas má srbštinu, chorvatštinu i hmongštinu jako samostatné jazyky s pozdravem, tečku ale nemají. Proto je v seznamu {n} položek a na glóbu {g} teček."
+     "Srbština, chorvatština, bosenština a černohorština jsou si velmi dobře srozumitelné a stojí na stejném nářečním základě, štokavštině. Lingvisticky jde o blízké spisovné varianty společného jazyka, úředně a společensky jsou to dnes samostatné jazyky. Glottolog je vede jako jeden jazyk, srbochorvatštinu, a ta má na glóbu tečku. Srbštinu a chorvatštinu má atlas navíc jako samostatné jazyky s pozdravem, vlastní tečku ale nemají. Hmongštinu Glottolog naopak dělí na několik jazyků a atlas ji má i jako jeden celek. Proto je v seznamu {n} položek a na glóbu {g} teček."
     ]
    },
    {

@@ -219,8 +219,10 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
 - Build vyrábí i `robots.txt`, `sitemap.xml` (obě verze s hreflang) a dvojjazyčnou `404.html` (texty `nenalezena…`).
   `theme-color` je zvlášť pro světlý a tmavý vzhled.
 - **Počty**: glóbus má 7 967 teček (jazyky Glottologu), seznam 7 970 položek. Srbštinu a chorvatštinu vede Glottolog
-  jako jeden jazyk a hmongštinu jako několik, atlas je má zvlášť – tečku nemají. Vysvětluje to věta v patičce
-  (`pocetPozn`, počty se dopočítají). Lotyštinu a norštinu vede Glottolog jen jako nářečí (`lvs`, `nob`) svého
+  jako jeden jazyk (srbochorvatština má tečku) a hmongštinu jako několik, atlas je má zvlášť – tečku nemají.
+  Vysvětluje to jen stránka O datech (oddíl Jazyk, nebo nářečí). Věta v patičce seznamu byla 25. 9. 2026 na přání
+  uživatele odstraněna („co je to za blbost“ – zněla, jako by atlas srbštinu a chorvatštinu slučoval). Téma je citlivé:
+  psát neutrálně – lingvisticky blízké spisovné varianty na štokavském základě, úředně a společensky samostatné jazyky. Lotyštinu a norštinu vede Glottolog jen jako nářečí (`lvs`, `nob`) svého
   jazyka; `scripts/glottolog.mjs` proto jazyk atlasu připojí k nadřazené tečce, když na ni nečeká jiný jazyk atlasu.
 - Přepínač English/Česky nese v odkazu i otevřený jazyk (`/en/#cs~sk`, `obnovOdkazJinam`).
 - Přístupnost: odkaz „Přeskočit na seznam jazyků“ (jen přesune fokus, adresu nemění), `<main>`, patička

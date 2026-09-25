@@ -411,7 +411,6 @@
  "vyznamPozdravu": "What the greeting means",
  "zJinychSvetu": "✦ From other worlds",
  "nareciPozn": "Glottolog lists these as dialects, not separate languages, so they have no dot of their own on the globe.",
- "pocetPozn": "Glottolog: {g} languages (it counts Serbian and Croatian as one and Hmong as several, hence {n} in the list).",
  "hledejVymazat": "Clear search",
  "preskocit": "Skip to the list of languages",
  "filtryZapnute": "filters on: {n}",
@@ -436,7 +435,7 @@
     "h": "Language or dialect?",
     "p": [
      "There is no sharp line between a language and a dialect, and history and politics often play a part. The atlas follows Glottolog's decisions. That is why Bavarian has a dot but Australian English does not – Glottolog counts it as a variety of English. Dialects are listed on the language card, and searching for one finds its language.",
-     "Glottolog counts Serbian, Croatian and Bosnian as one language and Hmong as several languages. The atlas keeps Serbian, Croatian and Hmong as separate languages with a greeting, but they have no dot. That is why the list has {n} entries and the globe {g} dots."
+     "Serbian, Croatian, Bosnian and Montenegrin are very easy to understand for each other's speakers and rest on the same dialect base, Shtokavian. Linguistically they are close standard varieties of one shared language; officially and socially they are separate languages today. Glottolog lists them as one language, Serbo-Croatian, which has a dot on the globe. The atlas also has Serbian and Croatian as separate languages with a greeting, but they have no dot of their own. Hmong, on the other hand, is several languages in Glottolog and one entry in the atlas. That is why the list has {n} entries and the globe {g} dots."
     ]
    },
    {
