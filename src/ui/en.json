@@ -603,6 +603,13 @@
     ]
    },
    {
+    "h": "Game: Where do they say it?",
+    "p": [
+     "The Game button at the top right of the globe starts a game of ten rounds. The atlas shows a greeting (you can listen to it too) and you click the globe where you think people say hello like that. Then you see which language it was, where it is spoken and how far away your guess was.",
+     "Each round gives up to 1,000 points – the closer, the more. A guess right inside the language's area scores full marks. The atlas remembers your best score. The cross or Escape ends the game."
+    ]
+   },
+   {
     "h": "Keyboard",
     "p": [
      "Tab moves between controls. One Tab takes you into the language list; move between tiles with the arrow keys, Home and End jump to the start and end. Enter selects a language.",
@@ -630,5 +637,33 @@
   ]
  },
  "navodOdkaz": "Full guide",
- "navodNapoveda": "Full guide – everything the atlas can do"
+ "navodNapoveda": "Full guide – everything the atlas can do",
+ "hra": "Game",
+ "hraPopis": "Game: Where do they say it?",
+ "hraNadpis": "Where do they say it?",
+ "hraUvod": "I'll show you a greeting from a language. Click the globe where people say hello like that. The closer you are, the more points – up to 1,000 a round. There are ten rounds.",
+ "hraZacit": "Start the game",
+ "hraKolo": "Round {a} of {b}",
+ "hraOtazka": "Where do they say hello like this?",
+ "hraKlikni": "Click the globe where this language is spoken. You can spin and zoom the globe.",
+ "hraTrefa": "Bullseye! Your guess is right where it is spoken.",
+ "hraVedle": "Your guess is {km} km from where it is spoken.",
+ "hraDalsi": "Next round",
+ "hraVysledky": "See your score",
+ "hraHotovo": "Finished!",
+ "hraCelkem": "{n} of {max} points",
+ "hraRekord": "Your best: {n}",
+ "hraNovyRekord": "New best score!",
+ "hraZnovu": "Play again",
+ "hraUkoncit": "End the game",
+ "hraHodnoceni": [
+  "A good start – try again!",
+  "Well done, you know your way around the world's languages.",
+  "Excellent! You are a true language traveller."
+ ],
+ "bod": [
+  "point",
+  "points",
+  "points"
+ ]
 }

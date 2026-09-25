@@ -218,6 +218,15 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a živý web workflow Diag
   (mluvčí, vitalita, společné státy). Rodokmen ukáže obě cesty a přiblíží společného předka.
   Druhý jazyk má fialovou, když je ze stejné barevné skupiny jako první. Odkaz `#cs~ar`. Nic se nedomýšlí:
   výpůjčky slov ani podobnost slovní zásoby v datech nemáme, proto je srovnání neukazuje.
+- **Hra „Kde se tak mluví?“** (25. 9. 2026, první z nových funkcí, které uživatel nechal vybrat na mně): tlačítko **Hra**
+  vlevo od otazníku (`#tl-hra`), odkaz `#hra` / `#game`. Deset kol z jazyků atlasu s pozdravem a polohou (bez znakových),
+  pozdrav s výslovností a tlačítkem Poslechni si to (`rekniPozdrav`, stejná logika jako na kartě), klik na glóbus = tip.
+  Vzdálenost k nejbližšímu místu jazyka (celé státy `zeme`, kruhy areálu ×1,3, domovská tečka; uvnitř 0 km, pod 25 km
+  také 0), body `1000·e^(−km/1500)`. Po tipu se ukáže území jazyka, červený špendlík a čárkovaná čára k nejbližšímu místu,
+  jméno a zajímavost. Na konci hvězdičky (40 % / 70 % bodů) a rekord (`atlas-hra-rekord`). Při hádání se neukazují jména
+  u teček ani bublina při najetí (prozradily by odpověď), karta, lišta (kromě zoomu; na telefonu celá) a nápověda jsou
+  schované (`.scena.rezim-hra`). Panel hry je kartotéční lístek na místě karty, na telefonu spodní list. Výběr jazyka
+  odjinud (seznam, Překvap mě, logo) i křížek a Escape hru ukončí. Je popsaná v návodu.
 - **Evropský den jazyků** (26. září, Rada Evropy od roku 2001): ten den **místo Jazyka dne** karta „Evropské jazyky“
   (přání uživatele 25. 9. 2026: „ukázat je najednou s odůvodněním proč“) – odstavec „Proč dnes?“ (Rada Evropy 2001,
   přes 200 jazyků v Evropě, povzbudit k učení), tlačítka „Ukaž je všechny na glóbu“ (`spustEU("evropa")`: stejné

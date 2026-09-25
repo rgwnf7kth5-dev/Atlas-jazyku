@@ -1014,6 +1014,54 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
   .scena:not(.rezim-brana) .karta.mala .k-hero:not(.vymysleny) .k-lista .kod{display:none}
 }
 @media (max-width:920px){ .scena:not(.rezim-brana) .karta.mala :is(.k-stitky,.k-cesta,.k-porovnat){display:none} }
+
+/* ---------- hra „Kde se tak mluví?“ ----------
+   Tlačítko vlevo od otazníku; panel hry sedí tam, kde jinak bývá karta jazyka, a vypadá jako kartotéční lístek.
+   Během hry zmizí vše, co by prozradilo odpověď nebo odvádělo pozornost (karta, lišta kromě zoomu, nápověda). */
+.tl-hra{position:absolute; z-index:6; top:16px; right:62px; height:36px; display:flex; align-items:center; gap:7px; padding:0 13px 0 10px;
+  border-radius:999px; cursor:pointer; font:600 .82rem/1 var(--pismo-text); color:var(--text); border:1px solid var(--sklo-okraj)}
+.tl-hra svg{width:18px; height:18px; color:var(--akcent)}
+.tl-hra:hover,.tl-hra:focus-visible{border-color:var(--akcent)}
+.scena.rezim-hra :is(.karta,#tl-nahoda,#tl-cely,#tl-strom,#tl-vitalita-dok,#tl-zobrazeni,.panel-zobrazeni,.napoveda,.tl-napoveda,.tl-hra,
+  .bublina-bod,.zeme-okno,.ukazatel,.srovnani-vyzva,.vit-legenda){display:none !important}
+.scena:is(.rezim-strom,.rezim-brana,.rezim-eu) .tl-hra{display:none}
+.hra-panel{position:absolute; z-index:8; left:18px; top:62px; width:min(360px,44%); max-height:calc(100% - 130px); overflow:auto;
+  padding:0 18px 18px; background:var(--listek); color:var(--text); border-top:4px solid var(--akcent); border-radius:6px 6px 10px 10px;
+  box-shadow:0 30px 70px -30px rgba(0,0,0,.6), 0 2px 0 rgba(0,0,0,.04)}
+.hra-panel[hidden]{display:none}
+.hra-hlava{display:flex; align-items:center; gap:8px; margin:0 -4px 12px; padding:9px 0 8px; border-bottom:2px solid color-mix(in srgb, var(--akcent) 55%, transparent)}
+.hra-kolo{margin-right:auto; font:600 .72rem/1.2 var(--pismo-text); letter-spacing:.12em; text-transform:uppercase; color:var(--text2)}
+.hra-hlava .zavrit{width:34px; height:34px; color:var(--text); background:transparent; border:1px solid var(--linka2)}
+.hra-panel h3{font:600 1.5rem/1.15 var(--pismo-nadpis); margin:4px 0 8px}
+.hra-panel h3.hra-otazka{font:600 .78rem/1.2 var(--pismo-text); letter-spacing:.12em; text-transform:uppercase; color:var(--text2); margin:2px 0 4px}
+.hra-pozdrav{font:700 clamp(2.1rem,5vw,2.8rem)/1.08 var(--pismo-nadpis); margin:0; overflow-wrap:anywhere}
+.hra-prepis{font:italic .95rem/1.3 var(--pismo-nadpis); color:var(--text2); margin:4px 0 10px}
+.hra-text{margin:10px 0 0; font-size:.92rem; line-height:1.45}
+.hra-pozn{margin:8px 0 0; font-size:.8rem; color:var(--text2)}
+.hra-pozn.novy{color:var(--akcent); font-weight:700; font-size:.9rem}
+.hra-poslech{display:inline-flex; align-items:center; gap:7px; padding:8px 14px; border-radius:999px; border:0; cursor:pointer;
+  font:600 .85rem/1 var(--pismo-text); background:var(--cyan); color:#fff}
+.hra-poslech svg{width:16px; height:16px}
+.hra-vysledek{margin-top:12px; padding-top:10px; border-top:1px solid var(--linka-listku)}
+.hra-jazyk{display:flex; align-items:baseline; gap:10px; margin:0; font:600 1.35rem/1.2 var(--pismo-nadpis)}
+.hra-zisk{margin-left:auto; font:700 1.1rem/1 var(--pismo-data); color:var(--akcent)}
+.hra-fakt{margin:10px 0 0; font-size:.86rem; line-height:1.45; color:var(--text2);
+  background-image:repeating-linear-gradient(to bottom, transparent 0 23px, var(--linka-listku) 23px 24px)}
+.hra-akce{display:flex; flex-wrap:wrap; gap:8px; margin-top:16px}
+.hra-tl{padding:10px 16px; border-radius:999px; cursor:pointer; font:600 .9rem/1 var(--pismo-text); color:var(--text);
+  background:transparent; border:1px solid var(--linka2)}
+.hra-tl.hlavni{background:var(--akcent); color:var(--na-akcent); border-color:transparent; box-shadow:0 8px 20px -10px var(--akcent)}
+.hra-tl:focus-visible,.hra-poslech:focus-visible{outline:3px solid var(--cyan); outline-offset:2px}
+.hra-hvezdy{margin:2px 0 4px; font-size:2rem; letter-spacing:.12em; color:var(--linka2)}
+.hra-hvezdy .zapnuta{color:#E0A100}
+.hra-skore{margin:0; font:700 1.3rem/1.2 var(--pismo-nadpis)}
+@media (max-width:920px){
+  .tl-hra{top:10px; right:54px}
+  .hra-panel{position:fixed; z-index:30; left:0; right:0; bottom:0; top:auto; width:auto; max-height:52vh; border-radius:10px 10px 0 0;
+    padding-bottom:calc(16px + env(safe-area-inset-bottom,0px)); box-shadow:0 -18px 50px -10px rgba(0,0,0,.55)}
+  .scena.rezim-hra ~ .police{padding-bottom:54vh}
+}
+@media (max-width:920px){ .scena.rezim-hra .dok{display:none} }   /* na telefonu se přibližuje prsty; prázdná lišta by jen překážela */
 </style>
 <link rel="canonical" href="https://atlasjazyku.cz/">
 <meta name="google-site-verification" content="zyKCEYlegO4cJQmz22iaMH9QuphSUalznP-e4iU_Gzg">
@@ -1052,6 +1100,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
  <symbol id="i-porovnat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h15M15 4l4 4-4 4M20 16H5M9 12l-4 4 4 4"/></symbol>
  <symbol id="i-dal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></symbol>
  <symbol id="i-zpet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></symbol>
+ <symbol id="i-terc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5.2"/><circle cx="12" cy="12" r="1.6" fill="currentColor" stroke="none"/></symbol>
  <symbol id="i-kostka" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="4.4"/><circle cx="8.4" cy="8.4" r="1.4" fill="currentColor" stroke="none"/><circle cx="15.6" cy="15.6" r="1.4" fill="currentColor" stroke="none"/><circle cx="15.6" cy="8.4" r="1.4" fill="currentColor" stroke="none"/><circle cx="8.4" cy="15.6" r="1.4" fill="currentColor" stroke="none"/></symbol>
  <symbol id="i-svet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="9.2"/><path d="M2.8 12h18.4M12 2.8c2.6 2.6 3.9 6 3.9 9.2s-1.3 6.6-3.9 9.2c-2.6-2.6-3.9-6-3.9-9.2S9.4 5.4 12 2.8z"/></symbol>
  <symbol id="i-zvuk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M4 9.2h3.4L12 5v14l-4.6-4.2H4z" fill="currentColor"/><path d="M16 9.4a3.7 3.7 0 0 1 0 5.2M18.7 6.7a7.5 7.5 0 0 1 0 10.6" stroke-linecap="round"/></symbol>
@@ -1134,6 +1183,8 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
      <p class="vp-zdroj" data-t="vitalitaZdroj">Šestistupňová stupnice UNESCO. Údaj je z Glottologu, který sjednocuje UNESCO, Ethnologue a Katalog ohrožených jazyků.</p>
     </div>
    </div>
+   <button class="tl-hra sklo" id="tl-hra" type="button" title="Hra: Kde se tak mluví?" data-t-title="hraPopis"><svg aria-hidden="true"><use href="#i-terc"/></svg><span data-t="hra">Hra</span></button>
+   <section class="hra-panel" id="hra-panel" hidden aria-live="polite" aria-labelledby="hra-nadpis"></section>
    <button class="tl-napoveda sklo" id="tl-napoveda" type="button" aria-expanded="false" aria-controls="napoveda" aria-label="Nápověda" data-t-aria-label="napoveda">?</button>
    <div class="napoveda" id="napoveda" hidden role="note">
     <ol>
@@ -1217,6 +1268,6 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
  <dialog class="o-datech navod" id="navod" aria-labelledby="nav-nadpis"></dialog>
 </div>
 
-<script src="js/atlas.c77d345fea.js"></script>
+<script src="js/atlas.3265ad4f8c.js"></script>
 </body>
 </html>

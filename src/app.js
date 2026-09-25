@@ -559,6 +559,7 @@ let rot = [-14, -48];
 let autoOtaceni = false, tahne = false, prechod = null;
 let pulsDo = 0, potrebaKresli = true, teckyZmeneny = true, popiskyZmeneny = true;
 let zvyraznenyBod = -1;
+let hra = null;                            // hra „Kde se tak mluví?“ (viz níž); null = nehraje se
 let vybrany = null;
 const barvy = {};
 
@@ -1061,6 +1062,7 @@ function kresliPopisky(){
   const c = ctxPopisky;
   c.clearRect(0, 0, sirka, vyska);
   if (!popiskyZapnute || eu) return;       // v režimu EU mají jména jen jazyky se zlatou hvězdičkou
+  if (hra && hra.stav === "hada") return;  // při hádání by jména prozradila odpověď
   const vsechny = zoom >= POPISKY_OD;
   if (!vsechny && !dulezite.length) return;
   const vel = Math.min(11.5, 9.5 + Math.max(0, zoom - POPISKY_OD) * 0.4);
@@ -1245,6 +1247,27 @@ function kresliPopredi(cas){
       c.beginPath(); c.arc(p[0], p[1], 10, 0, 6.283185);
       c.lineWidth = 4; c.strokeStyle = barvy["zamerovac-lem"]; c.stroke();
       c.lineWidth = 2; c.strokeStyle = srovnani.b.sk && srovnani.b.sk !== srovnani.a.sk ? barvy["r-" + srovnani.b.sk] : barvy.fialova; c.stroke();
+    }
+  }
+  if (hra && hra.tip) {                 /* hra: tip jako červený špendlík, po vyhodnocení čárkovaná čára k nejbližšímu místu jazyka */
+    const vt = vektor(hra.tip[0], hra.tip[1]); vt.push(1);
+    if (hra.stav !== "hada" && hra.cil && hra.km > 0) {
+      const mezi = d3.geoInterpolate(hra.tip, hra.cil), kroku = 48;
+      c.beginPath();
+      let kresli = false;
+      for (let n = 0; n <= kroku; n++) {
+        const b = mezi(n / kroku), v = vektor(b[0], b[1]); v.push(1);
+        const vid = promitni(v, p);
+        if (vid) { if (kresli) c.lineTo(p[0], p[1]); else c.moveTo(p[0], p[1]); }
+        kresli = vid;
+      }
+      c.setLineDash([6, 5]); c.lineWidth = 2.2; c.strokeStyle = barvy.cervena; c.lineCap = "round"; c.stroke(); c.setLineDash([]);
+    }
+    if (promitni(vt, p) && sf0 * vt[2] + cf0 * (vt[0] * cl0 + vt[1] * sl0) > 0.02) {
+      const x = p[0], y = p[1];
+      c.beginPath(); c.moveTo(x, y); c.bezierCurveTo(x - 9, y - 12, x - 9, y - 23, x, y - 25); c.bezierCurveTo(x + 9, y - 23, x + 9, y - 12, x, y);
+      c.fillStyle = barvy.cervena; c.fill(); c.lineWidth = 2; c.strokeStyle = barvy["zamerovac-lem"]; c.stroke();
+      c.beginPath(); c.arc(x, y - 17, 3.2, 0, 6.283185); c.fillStyle = barvy["zamerovac-lem"]; c.fill();
     }
   }
   if (vybrany && !vybrany.bezPolohy) {  /* zaměřovač na vybraném místě */
@@ -1547,6 +1570,7 @@ function umisti(el, e){
 }
 const bublinaBod = $("bublina-bod");
 function najedNaBod(e){
+  if (hra && hra.stav === "hada") return;     // jméno jazyka by prozradilo odpověď
   const r = platno.getBoundingClientRect();
   const i = nejblizsiBod(e.clientX - r.left, e.clientY - r.top, 9);
   if (i === zvyraznenyBod && (i < 0 || !bublinaBod.hidden)) return;
@@ -1597,6 +1621,7 @@ function zhasniZemi(){ if (!zeme) return; zeme = null; if (globusOk) obnovPrizna
 function klikDoMapy(e){
   const r = platno.getBoundingClientRect();
   const mx = e.clientX - r.left, my = e.clientY - r.top;
+  if (hra) { if (hra.stav === "hada") hraTip(mx, my); return; }   // ve hře je klik tip, ne výběr
   if (eu) {                                   // hvězdička jazyka EU má přednost (chorvatština tečku nemá)
     const h = EU.filter(function(x){ return x.sx >= 0 && Math.hypot(x.sx - mx, x.sy - my) < 13; })[0];
     if (h) { okno.hidden = true; vyber(h.id); return; }
@@ -1668,6 +1693,7 @@ function oznacTlacitka(id){
 }
 function vyber(id){
   const j = PODLE_ID[id]; if (!j) return;
+  if (hra) ukonciHru();
   if (cekaNaDruhy) { dokonciSrovnani(jazykAtlasu(id)); return; }   // vybírá se druhý jazyk ke srovnání
   if (brana) zavriBranu(true);
   if (srovnani) ukonciSrovnani();
@@ -1682,6 +1708,7 @@ function vyber(id){
   if (tl && desktop.matches) tl.scrollIntoView({block: "center", behavior: bezPohybu.matches ? "auto" : "smooth"});   // na mobilu naopak nahoru ke glóbu
 }
 function vyberBod(i){
+  if (hra) ukonciHru();
   if (cekaNaDruhy) { dokonciSrovnani(jazykBodu(i)); return; }
   if (brana) zavriBranu(true);
   if (B[i][5] && PODLE_ID[B[i][5]]) { vyber(B[i][5]); return; }
@@ -1707,6 +1734,7 @@ $("tl-cely").addEventListener("click", odznac);
 /* logo = „domů“: zavře všechno (rodokmen, Bránu, EU, srovnání, panely, hledání) a vrátí glóbus do výchozího pohledu */
 function domu(){
   zavriNapovedu(true);
+  if (hra) ukonciHru();
   if (brana) zavriBranu(true);
   if (strom && strom.zapnuto) strom.prepni(false);
   otevriZobrazeni(false);
@@ -1904,6 +1932,7 @@ function prectiOdkaz(){
   if (/^(o-datech|about-data)$/i.test(h)) { otevriODatech(); return; }
   if (/^(kalendar|language-days)$/i.test(h)) { otevriKalendar(); return; }
   if (/^(navod|guide)$/i.test(h)) { otevriNavod(); return; }
+  if (/^(hra|game)$/i.test(h)) { spustHru(); return; }
   if (/^mellon(~|$)/i.test(h)) { otevriBranu(); const v = h.split("~")[1]; if (v) ukazVymysleny(v); return; }
   if (h.indexOf("~") > 0) {
     const d = h.split("~"), najdi = function(k){ return PODLE_ID[k] ? jazykAtlasu(k) : PODLE_KODU.has(k) ? jazykBodu(PODLE_KODU.get(k)) : null; };
@@ -2295,25 +2324,29 @@ function najdiHlas(kod){
   return hlasy.filter(function(v){ return norm(v) === k; })[0]
       || hlasy.filter(function(v){ return norm(v).split("-")[0] === zaklad; })[0] || null;
 }
-tlPrehraj.addEventListener("click", function(){
-  if (!vybrany || vybrany.typ !== "atlas") return;
-  const j = PODLE_ID[vybrany.id], stav = $("k-stav");
-  stav.hidden = false;
-  if (!("speechSynthesis" in window)) { stav.textContent = t("zvukNeumi", {x: j.prep}); return; }
+/* přečte pozdrav jazyka j; stav(text) dostane hlášku pro člověka, popis(text) popisek tlačítka (Poslouchej… / Ještě jednou) */
+function rekniPozdrav(j, stav, popis){
+  if (!("speechSynthesis" in window)) { stav(t("zvukNeumi", {x: j.prep})); return; }
   nactiHlasy();
   const rodily = najdiHlas(j.kod), zalozni = najdiHlas(T.hlasZalozni);
   let text, hlas, rychlost;
-  if (rodily) { text = j.pis.replace(/[!¡?¿]/g, ""); hlas = rodily; rychlost = 0.8; stav.textContent = T.zvukRodily; }
-  else if (zalozni) { text = T.lang === "en" ? j.prep.toLowerCase() : j.prep; hlas = zalozni; rychlost = 0.75; stav.textContent = T.zvukZalozni; }
-  else { stav.textContent = t("zvukZadny", {x: j.prep}); return; }
+  if (rodily) { text = j.pis.replace(/[!¡?¿]/g, ""); hlas = rodily; rychlost = 0.8; stav(T.zvukRodily); }
+  else if (zalozni) { text = T.lang === "en" ? j.prep.toLowerCase() : j.prep; hlas = zalozni; rychlost = 0.75; stav(T.zvukZalozni); }
+  else { stav(t("zvukZadny", {x: j.prep})); return; }
   try {
     const u = new SpeechSynthesisUtterance(text);
     u.voice = hlas; u.lang = hlas.lang; u.rate = rychlost;
-    popisPrehraj.textContent = T.posloucha;
-    u.onend = function(){ popisPrehraj.textContent = T.znovu; };
-    u.onerror = function(){ popisPrehraj.textContent = T.znovu; stav.textContent = t("zvukChyba", {x: j.prep}); };
+    popis(T.posloucha);
+    u.onend = function(){ popis(T.znovu); };
+    u.onerror = function(){ popis(T.znovu); stav(t("zvukChyba", {x: j.prep})); };
     window.speechSynthesis.cancel(); window.speechSynthesis.speak(u);
-  } catch (e) { stav.textContent = t("zvukChyba", {x: j.prep}); }
+  } catch (e) { stav(t("zvukChyba", {x: j.prep})); }
+}
+tlPrehraj.addEventListener("click", function(){
+  if (!vybrany || vybrany.typ !== "atlas") return;
+  const stav = $("k-stav");
+  stav.hidden = false;
+  rekniPozdrav(PODLE_ID[vybrany.id], function(x){ stav.textContent = x; }, function(x){ popisPrehraj.textContent = x; });
 });
 
 /* ---------- přepnutí jazyka bez nového listu ---------- */
@@ -2490,6 +2523,7 @@ function obnovTexty(){
   if (strom) strom.texty();
   if (eu) postavEuPanel();
   if (brana) { postavBranu(); if (vymysleny) ukazVymysleny(vymysleny); }
+  if (hra) postavHru();
 }
 function prepniJazyk(lang){
   T = UI[lang]; STATY = STATY_VSE[lang];
@@ -3404,6 +3438,148 @@ function tlacitkoRodokmenu(i){
   b.addEventListener("click", function(){ strom.otevriPro(i); });
   return b;
 }
+/* ---------- hra „Kde se tak mluví?“ (25. 9. 2026) ----------
+   Deset kol: atlas ukáže pozdrav (jde si ho i poslechnout), hráč klikne na glóbus. Vzdálenost se měří k nejbližšímu
+   místu, kde se jazykem mluví (celé státy ze `zeme`, kruhy areálu ×1,3 jako na glóbu, domovská tečka); uvnitř = 0 km.
+   Body 1000·e^(−km/1500), nejvýš 1 000 za kolo. Při hádání se neukazují jména jazyků ani bublina u teček.
+   Rekord se pamatuje (`atlas-hra-rekord`). Odkaz #hra / #game. Výběr jazyka odjinud (seznam, Překvap mě, logo) hru ukončí. */
+const HRA_KOL = 10, hraPanel = $("hra-panel"), tlHra = $("tl-hra");
+function hraRekord(){ try { return +localStorage.getItem("atlas-hra-rekord") || 0; } catch (e) { return 0; } }
+function hraKandidati(){
+  return JAZYKY.filter(function(j){ return j.pis && stredJazyka(j) && !jeZnakovyJazyk(j) && !(BOD_ATLASU[j.id] >= 0 && BEZ_POLOHY[BOD_ATLASU[j.id]]); });
+}
+function hraVzdalenost(tip, j){                 /* {km, cil}: km k nejbližšímu místu jazyka a to místo (pro čáru) */
+  if (j.zeme.some(function(n){ const f = ZEME_PODLE_JMENA[n]; return f && d3.geoContains(f, tip); })) return {km: 0, cil: null};
+  let nej = Infinity, cil = null;
+  const zkus = function(bod, polomerRad){
+    const d = Math.max(0, d3.geoDistance(tip, bod) - polomerRad);
+    if (d < nej) { nej = d; cil = bod; }
+  };
+  j.ob.forEach(function(o){ zkus([o[0], o[1]], o[2] * 1.3 * R); });
+  zkus(stredJazyka(j), 0);
+  j.zeme.forEach(function(n){                    // státy celé: nejbližší bod hranice (každý druhý kvůli rychlosti)
+    const f = ZEME_PODLE_JMENA[n], g = f && f.geometry;
+    if (!g) return;
+    const kruhy = g.type === "Polygon" ? g.coordinates : g.type === "MultiPolygon" ? [].concat.apply([], g.coordinates) : [];
+    kruhy.forEach(function(r){ for (let i = 0; i < r.length; i += 2) zkus(r[i], 0); });
+  });
+  const km = Math.round(nej * 6371);
+  return {km: km < 25 ? 0 : km, cil: cil};
+}
+function hraBody(km){ return km <= 0 ? 1000 : Math.round(1000 * Math.exp(-km / 1500)); }
+function spustHru(){
+  if (!globusOk) return;
+  if (brana) zavriBranu(true);
+  if (strom && strom.zapnuto) strom.prepni(false);
+  if (eu) ukonciEU(true);
+  otevriZobrazeni(false); zavriNapovedu(true);
+  odznac(); zhasniZemi(); okno.hidden = true; bublinaBod.hidden = true;
+  const k = hraKandidati();
+  for (let i = k.length - 1; i > 0; i--) { const n = Math.floor(Math.random() * (i + 1)); const x = k[i]; k[i] = k[n]; k[n] = x; }
+  hra = {kola: k.slice(0, HRA_KOL), kolo: 0, celkem: 0, stav: "uvod", tip: null};
+  scena.classList.add("rezim-hra");
+  if (autoOtaceni) nastavOtaceni(false);
+  letKe([15, 25], 1);
+  postavHru();
+}
+function hraKolo(){
+  hra.stav = "hada"; hra.tip = null; hra.cil = null; hra.km = 0;
+  vybrany = null; if (globusOk) obnovPriznaky();
+  potrebaKresli = true; popiskyZmeneny = true;
+  postavHru();
+}
+function hraTip(mx, my){
+  const bod = proj.invert([mx, my]);
+  if (!bod || isNaN(bod[0]) || d3.geoDistance(bod, [-rot[0], -rot[1]]) > Math.PI / 2) return;   // klik mimo kouli
+  const j = hra.kola[hra.kolo], v = hraVzdalenost(bod, j), zisk = hraBody(v.km);
+  hra.tip = bod; hra.cil = v.cil; hra.km = v.km; hra.zisk = zisk; hra.celkem += zisk; hra.stav = "vysledek";
+  /* ukázat území jazyka jako při výběru, ale bez karty a oblouků k příbuzným */
+  vybrany = {typ: "atlas", id: j.id, sk: j.sk, zeme: j.zeme, ob: j.ob, stred: j.stred, pribuzni: []};
+  obnovPriznaky(); ozivit();
+  odhaleniOd = bezPohybu.matches ? 0 : -1;
+  const s = stredJazyka(j), uhel = d3.geoDistance(bod, s), stredLetu = d3.geoInterpolate(bod, s)(0.5);
+  letKe(stredLetu, Math.min(zoomProJazyk(j), Math.max(1, 0.75 / Math.max(Math.sin(Math.min(uhel / 2 + 0.2, 1.45)), 0.05))));
+  popiskyZmeneny = true; potrebaKresli = true;
+  postavHru();
+}
+function ukonciHru(){
+  if (!hra) return;
+  hra = null; hraPanel.hidden = true; scena.classList.remove("rezim-hra");
+  try { window.speechSynthesis && window.speechSynthesis.cancel(); } catch (e) {}
+  vybrany = null; if (globusOk) obnovPriznaky();
+  potrebaKresli = true; popiskyZmeneny = true;
+  tlHra.focus({preventScroll: true});
+}
+function postavHru(){
+  if (!hra) return;
+  hraPanel.textContent = ""; hraPanel.hidden = false;
+  const hlava = prvek("div", "hra-hlava");
+  hlava.appendChild(prvek("span", "hra-kolo", hra.stav === "uvod" || hra.stav === "konec" ? T.hraNadpis :
+    t("hraKolo", {a: hra.kolo + 1, b: hra.kola.length}) + " · " + cislo(hra.celkem) + " " + tvar(hra.celkem, T.bod)));
+  const x = prvek("button", "zavrit"); x.type = "button"; x.setAttribute("aria-label", T.hraUkoncit); x.title = T.hraUkoncit;
+  x.innerHTML = '<svg aria-hidden="true"><use href="#i-krizek"/></svg>'; x.addEventListener("click", ukonciHru);
+  hlava.appendChild(x); hraPanel.appendChild(hlava);
+  const tlacitko = function(text, hlavni, akce){
+    const b = prvek("button", "hra-tl" + (hlavni ? " hlavni" : ""), text); b.type = "button"; b.addEventListener("click", akce); return b;
+  };
+  const dole = prvek("div", "hra-akce");
+  if (hra.stav === "uvod") {
+    const h = prvek("h3", null, T.hraNadpis); h.id = "hra-nadpis"; hraPanel.appendChild(h);
+    hraPanel.appendChild(prvek("p", "hra-text", T.hraUvod));
+    const r = hraRekord(); if (r) hraPanel.appendChild(prvek("p", "hra-pozn", t("hraRekord", {n: cislo(r)})));
+    dole.appendChild(tlacitko(T.hraZacit, true, hraKolo));
+  } else if (hra.stav === "konec") {
+    const h = prvek("h3", null, T.hraHotovo); h.id = "hra-nadpis"; hraPanel.appendChild(h);
+    const max = hra.kola.length * 1000, stupen = hra.celkem >= max * 0.7 ? 2 : hra.celkem >= max * 0.4 ? 1 : 0;
+    const hv = prvek("p", "hra-hvezdy"); hv.setAttribute("aria-hidden", "true");
+    for (let n = 0; n < 3; n++) hv.appendChild(prvek("span", n <= stupen ? "zapnuta" : null, "★"));
+    hraPanel.appendChild(hv);
+    hraPanel.appendChild(prvek("p", "hra-skore", t("hraCelkem", {n: cislo(hra.celkem), max: cislo(max)})));
+    hraPanel.appendChild(prvek("p", "hra-text", T.hraHodnoceni[stupen]));
+    const rekord = hraRekord();
+    if (hra.celkem > rekord) {
+      try { localStorage.setItem("atlas-hra-rekord", String(hra.celkem)); } catch (e) {}
+      if (rekord) hraPanel.appendChild(prvek("p", "hra-pozn novy", T.hraNovyRekord));
+    } else hraPanel.appendChild(prvek("p", "hra-pozn", t("hraRekord", {n: cislo(rekord)})));
+    dole.appendChild(tlacitko(T.hraZnovu, true, spustHru));
+    dole.appendChild(tlacitko(T.hraUkoncit, false, ukonciHru));
+  } else {
+    const j = hra.kola[hra.kolo];
+    const pz = prvek("p", "hra-pozdrav", j.pis); pz.setAttribute("dir", "auto"); if (j.kod) pz.setAttribute("lang", j.kod);
+    const h = prvek("h3", "hra-otazka", T.hraOtazka); h.id = "hra-nadpis";
+    hraPanel.appendChild(h); hraPanel.appendChild(pz);
+    hraPanel.appendChild(prvek("p", "hra-prepis", t("vyslovnost", {x: j.prep})));
+    const stav = prvek("p", "hra-pozn hra-zvuk-stav"); stav.hidden = true;
+    const posl = prvek("button", "hra-poslech"); posl.type = "button";
+    posl.innerHTML = '<svg aria-hidden="true"><use href="#i-zvuk"/></svg>';
+    const popis = prvek("span", null, T.poslechni); posl.appendChild(popis);
+    posl.addEventListener("click", function(){ stav.hidden = false; rekniPozdrav(j, function(x){ stav.textContent = x; }, function(x){ popis.textContent = x; }); });
+    if (j.kod) hraPanel.appendChild(posl);
+    hraPanel.appendChild(stav);
+    if (hra.stav === "hada") {
+      hraPanel.appendChild(prvek("p", "hra-text", T.hraKlikni));
+    } else {
+      const vys = prvek("div", "hra-vysledek");
+      const jm = prvek("p", "hra-jazyk"); jm.appendChild(prvek("b", null, j.n)); jm.appendChild(prvek("span", "hra-zisk", "+" + cislo(hra.zisk)));
+      vys.appendChild(jm);
+      vys.appendChild(prvek("p", "hra-text", hra.km ? t("hraVedle", {km: cislo(hra.km)}) : T.hraTrefa));
+      if (j.fakt) vys.appendChild(prvek("p", "hra-fakt", j.fakt));
+      hraPanel.appendChild(vys);
+      const posledni = hra.kolo + 1 >= hra.kola.length;
+      dole.appendChild(tlacitko(posledni ? T.hraVysledky : T.hraDalsi, true, function(){
+        hra.kolo++;
+        if (hra.kolo >= hra.kola.length) { hra.stav = "konec"; hra.tip = null; vybrany = null; obnovPriznaky(); potrebaKresli = true; letKe([15, 25], 1); postavHru(); }
+        else hraKolo();
+      }));
+    }
+  }
+  if (dole.childNodes.length) hraPanel.appendChild(dole);
+  const hl = hraPanel.querySelector(".hra-tl.hlavni"); if (hl) hl.focus({preventScroll: true});
+}
+tlHra.addEventListener("click", function(){ if (hra) ukonciHru(); else spustHru(); });
+document.addEventListener("keydown", function(e){ if (e.key === "Escape" && hra) ukonciHru(); });
+if (!globusOk) tlHra.hidden = true;
+
 prectiOdkaz();                              // otevřeno přes odkaz na jazyk
 if (!globusOk) {
   [platno, podklad, platnoGl, platnoPopisky].forEach(function(c){ c.hidden = true; });
