@@ -12,7 +12,16 @@ npm run build -- --artefakt build   # navíc fragmenty pro publikování jako ar
 
 ## Web
 
-Web běží na **https://atlasoflanguages.netlify.app** (anglicky `/en/`).
+**Domény (25. 9. 2026):** `atlasjazyku.cz` (česky; registrace a DNS u Českého hostingu, záznamy A na Netlify
+`75.2.60.5`, AAAA smazané) a `thelanguageatlas.com` (anglicky; koupená v Netlify, Netlify DNS, primary domain).
+Jeden web, obě domény v Netlify → Domain management. `netlify.toml` podle domény: anglická servíruje `dist/en/`
+z kořene (společné `/js`, `/malby`, ikony a náhledy z kořene dist/), `/en/…` na ní přesměruje na kořen,
+`www.atlasjazyku.cz` → `atlasjazyku.cz`, `atlasjazyku.cz/en/…` → anglická doména.
+**Zbývá (až obě domény poběží s HTTPS):** adresy v buildu (`WEB` → dvě domény: canonical, og, hreflang,
+odkazy stránek jazyků bez `/en/`), sitemap a robots zvlášť pro každou doménu, přesměrování
+`atlasoflanguages.netlify.app` na nové domény a přepínač jazyka bez změny cesty na vlastních doménách.
+
+Web dosud běží i na **https://atlasoflanguages.netlify.app** (anglicky `/en/`).
 Nasazení přes Netlify z větve `main` podle `netlify.toml` (build `npm run check`, publikuje `dist/`).
 Z prostředí Claude Code na webu je `*.netlify.app` blokované (curl i WebFetch vrací 403), živý web tedy odsud
 zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na uživateli.

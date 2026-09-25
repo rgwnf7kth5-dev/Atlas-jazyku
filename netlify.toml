@@ -7,6 +7,63 @@
 [build.environment]
   NODE_VERSION = "22"
 
+# ---- Dvě domény, jeden web ----
+# atlasjazyku.cz = česká verze (kořen dist/), thelanguageatlas.com = anglická verze (dist/en/ servírovaná z kořene).
+# Pravidla platí shora dolů, použije se první, které sedí.
+
+# anglická doména: staré odkazy s /en/ na kořen (stránky zatím odkazují přes /en/)
+[[redirects]]
+  from = "https://thelanguageatlas.com/en/*"
+  to = "https://thelanguageatlas.com/:splat"
+  status = 301
+  force = true
+
+# anglická doména: společné soubory (skript, malby, ikony, náhledy) leží v kořeni dist/, berou se odtud
+[[redirects]]
+  from = "https://thelanguageatlas.com/js/*"
+  to = "/js/:splat"
+  status = 200
+
+[[redirects]]
+  from = "https://thelanguageatlas.com/malby/*"
+  to = "/malby/:splat"
+  status = 200
+
+[[redirects]]
+  from = "https://thelanguageatlas.com/favicon.svg"
+  to = "/favicon.svg"
+  status = 200
+
+[[redirects]]
+  from = "https://thelanguageatlas.com/apple-touch-icon.png"
+  to = "/apple-touch-icon.png"
+  status = 200
+
+[[redirects]]
+  from = "https://thelanguageatlas.com/nahled-*"
+  to = "/nahled-:splat"
+  status = 200
+
+# anglická doména: všechno ostatní z dist/en/ (force: jinak by kořen vrátil českou index.html)
+[[redirects]]
+  from = "https://thelanguageatlas.com/*"
+  to = "/en/:splat"
+  status = 200
+  force = true
+
+# česká doména: www na holou adresu, anglická verze patří na anglickou doménu
+[[redirects]]
+  from = "https://www.atlasjazyku.cz/*"
+  to = "https://atlasjazyku.cz/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://atlasjazyku.cz/en/*"
+  to = "https://thelanguageatlas.com/:splat"
+  status = 301
+  force = true
+
 # /en bez lomítka i bez index.html vede na anglickou verzi
 [[redirects]]
   from = "/en"
