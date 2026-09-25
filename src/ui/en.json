@@ -519,5 +519,9 @@
   "kdeZnakuje": "Where it is signed",
   "aDalsi": "and {n} more",
   "drobky": "Breadcrumbs"
- }
+ },
+ "zpetna": "Got an idea, or is something not working? Write to",
+ "zpetnaAdresa": "info@atlasjazyku.cz",
+ "zpetnaPredmet": "The Language Atlas – feedback",
+ "zpetnaPopis": "Send feedback by e-mail"
 }

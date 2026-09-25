@@ -39,7 +39,9 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
 - **Stránka začíná celým světem bez vybraného jazyka** (přání uživatele: neotevírat češtinou ani jiným jazykem).
 - Sbírka pozdravů (počítadlo v hlavičce, hvězdičky u otevřených jazyků) byla 23. 9. 2026 na přání uživatele
   odstraněna – nedávala smysl. Znovu ji nepřidávat.
-- E-mail na zpětnou vazbu uživatel 24. 9. 2026 z webu smazal („nenahrazuj“) – žádný kontakt nepřidávat.
+- Zpětná vazba e-mailem na **info@atlasjazyku.cz** (přesměrovaná na autora; 25. 9. 2026 místo dřívější soukromé adresy,
+  kterou uživatel smazal – soukromou adresu na web nedávat). Řádek je v patičce seznamu i na statických stránkách,
+  předmět podle jazyka, v artefaktu se odkaz otevírá v novém okně. Klíče `zpetna…` v `src/ui/*.json`.
 - **Přepnutí jazyka je na místě, ne odkazem do nového listu** (přání uživatele). Každá stránka nese oba jazyky;
   texty v šabloně mají `data-t`, `data-t-title`, `data-t-aria-label`, `data-t-placeholder` a JS je přepíše.
   Nový text v šabloně proto musí dostat i tuhle značku. Na webu se při přepnutí mění adresa `/` ↔ `/en/`.

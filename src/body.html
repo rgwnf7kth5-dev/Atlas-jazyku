@@ -1,6 +1,7 @@
 <svg aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
  <symbol id="i-slunce" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.5 1.5M17.6 17.6l1.5 1.5M19.1 4.9l-1.5 1.5M6.4 17.6l-1.5 1.5"/></symbol>
  <symbol id="i-mesic" viewBox="0 0 24 24"><path fill="currentColor" d="M20.7 14.6A8.6 8.6 0 0 1 9.4 3.3a8.6 8.6 0 1 0 11.3 11.3z"/></symbol>
+ <symbol id="i-dopis" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"><rect x="3" y="5.5" width="18" height="13" rx="2.6"/><path d="M4 7.5l8 5.8 8-5.8" stroke-linecap="round"/></symbol>
  <symbol id="i-kniha" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round"><path d="M12 6.5C10.2 5 7.6 4.4 4 4.6v13.6c3.6-.2 6.2.4 8 1.9 1.8-1.5 4.4-2.1 8-1.9V4.6c-3.6-.2-6.2.4-8 1.9zM12 6.5v13.6"/></symbol>
  <symbol id="i-ruka" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 12.5V5.2a1.4 1.4 0 0 1 2.8 0v6.3M11.3 11V3.9a1.4 1.4 0 0 1 2.8 0V11M14.1 11V5.4a1.4 1.4 0 0 1 2.8 0v7.8M8.5 12.5l-1.6-2a1.5 1.5 0 0 0-2.3 1.9l3 4.3A7.2 7.2 0 0 0 13.4 20h.4a5 5 0 0 0 5-5v-3.2a1.4 1.4 0 0 0-2.8 0"/></symbol>
  <symbol id="i-vitalita" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 20V14M9.3 20V10M14.7 20V6.5M20 20V3.5"/></symbol>
@@ -157,6 +158,8 @@
    </div>
    <div class="seznam" id="seznam"></div>
    <footer class="paticka">
+   <p class="zpetna"><svg aria-hidden="true"><use href="#i-dopis"/></svg><span><span data-t="zpetna">{{zpetna}}</span>
+    <a id="zpetna-odkaz" href="mailto:{{zpetnaAdresa}}" title="{{zpetnaPopis}}" data-t-title="zpetnaPopis">{{zpetnaAdresa}}</a></span></p>
    <p class="o-datech-radek"><button class="odkaz-o-datech" id="tl-o-datech" type="button" aria-haspopup="dialog"><svg aria-hidden="true"><use href="#i-kniha"/></svg><span id="tl-o-datech-text"></span></button><a class="odkaz-jazyky" id="odkaz-jazyky" hidden></a></p>
    <p class="zdroje"><span data-t="zdroje">{{zdroje}}</span><span id="pocet-pozn"></span></p>
    </footer>

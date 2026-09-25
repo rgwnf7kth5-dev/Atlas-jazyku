@@ -846,3 +846,10 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 @media (max-width:620px){ .od-verze td:nth-child(2){display:none} .od-telo{padding:4px 18px 20px} }
 .o-datech-radek{flex-wrap:wrap; align-items:center; column-gap:18px}
 .odkaz-jazyky{font-size:.85rem; font-weight:600; color:var(--cyan); text-underline-offset:2px}
+/* zpětná vazba e-mailem (info@atlasjazyku.cz, přesměrovaná na autora) */
+.zpetna{margin:0; padding:10px 16px 9px; border-top:1px solid var(--linka); display:flex; gap:9px; align-items:flex-start;
+  font-size:.8rem; line-height:1.4; color:var(--text2)}
+.zpetna svg{width:17px; height:17px; flex:none; margin-top:1px; color:var(--cyan)}
+.zpetna a{color:var(--cyan); font-weight:600; text-decoration:underline; text-underline-offset:2px; white-space:nowrap}
+.zpetna a:hover{text-decoration-thickness:2px}
+.zpetna + .o-datech-radek{border-top:0; padding-top:0}

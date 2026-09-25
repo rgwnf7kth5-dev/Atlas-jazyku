@@ -2218,6 +2218,9 @@ function prelozStranku(){
   [["title", "tTitle"], ["aria-label", "tAriaLabel"], ["placeholder", "tPlaceholder"]].forEach(function(a){
     Array.prototype.forEach.call(document.querySelectorAll("[data-t-" + a[0] + "]"), function(el){ el.setAttribute(a[0], T[el.dataset[a[1]]]); });
   });
+  const zpetna = $("zpetna-odkaz");        // e-mail se zpětnou vazbou (info@atlasjazyku.cz), předmět podle jazyka
+  zpetna.setAttribute("href", "mailto:" + T.zpetnaAdresa + "?subject=" + encodeURIComponent(T.zpetnaPredmet));
+  if (ARTEFAKT) { zpetna.target = "_blank"; zpetna.rel = "noopener"; }   // v náhledu artefaktu smí ven jen nové okno
   $("tl-o-datech-text").textContent = T.oDatech.odkaz;
   /* samostatné stránky jazyků (jen na webu, artefakt ani soubor z disku je nemají) */
   const oj = $("odkaz-jazyky");

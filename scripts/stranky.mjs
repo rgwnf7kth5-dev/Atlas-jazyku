@@ -158,6 +158,7 @@ ${obsah}
 </main>
 <footer>
  <p><a href="${prehled[lang]}">${escHtml(S.vsechnyOdkaz)}</a> · <a href="${oDatech[lang]}">${escHtml(T.oDatech.odkaz)}</a> · <a href="${domov[lang]}">${escHtml(S.globus)}</a></p>
+ <p>${escHtml(T.zpetna)} <a href="mailto:${escHtml(T.zpetnaAdresa)}?subject=${encodeURIComponent(T.zpetnaPredmet)}">${escHtml(T.zpetnaAdresa)}</a></p>
  <p>${escHtml(T.zdroje)}</p>
 </footer>
 </body>
