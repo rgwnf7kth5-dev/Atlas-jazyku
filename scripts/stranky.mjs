@@ -211,18 +211,18 @@ window.addEventListener("popstate",function(){if(JE.test(location.pathname))nact
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${escHtml(titulek)}</title>
 <meta name="description" content="${escHtml(popis)}">
-<link rel="canonical" href="${WEB}${adresa}">
-<link rel="alternate" hreflang="cs" href="${WEB}${cs}">
-<link rel="alternate" hreflang="en" href="${WEB}${en}">
+<link rel="canonical" href="${WEB(adresa)}">
+<link rel="alternate" hreflang="cs" href="${WEB(cs)}">
+<link rel="alternate" hreflang="en" href="${WEB(en)}">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="theme-color" content="#FBF9F4" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#070C1C" media="(prefers-color-scheme: dark)">
 <meta property="og:type" content="website">
-<meta property="og:url" content="${WEB}${adresa}">
+<meta property="og:url" content="${WEB(adresa)}">
 <meta property="og:title" content="${escHtml(titulek)}">
 <meta property="og:description" content="${escHtml(popis)}">
-<meta property="og:image" content="${WEB}${obrazek.src}">
+<meta property="og:image" content="${WEB((lang === "en" ? "/en" : "") + obrazek.src)}">
 <meta property="og:image:width" content="${obrazek.w}">
 <meta property="og:image:height" content="${obrazek.h}">
 <meta property="og:locale" content="${lang === "cs" ? "cs_CZ" : "en_GB"}">
@@ -235,7 +235,7 @@ window.addEventListener("popstate",function(){if(JE.test(location.pathname))nact
 <body>
 <header class="hlava">
  <a class="domu" href="${domov[lang]}">${znak}<span>${escHtml(T.nazev)}</span></a>
- <a class="jinam" href="${jinaAdresa}" hreflang="${jiny}" lang="${jiny}">${escHtml(T.jinyJazyk)}</a>
+ <a class="jinam" href="${WEB(jinaAdresa)}" hreflang="${jiny}" lang="${jiny}">${escHtml(T.jinyJazyk)}</a>
 </header>
 <main>
 ${obsah}

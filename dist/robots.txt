@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://atlasoflanguages.netlify.app/sitemap.xml
+Sitemap: https://atlasjazyku.cz/sitemap.xml

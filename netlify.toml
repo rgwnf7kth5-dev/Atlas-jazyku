@@ -12,6 +12,20 @@
 # Pravidla platí shora dolů, použije se první, které sedí. Pravidlo s doménou platí jen pro uvedené schéma,
 # proto je každé dvakrát (https i http) – před vydáním certifikátu jde provoz přes http.
 
+# stará adresa atlasoflanguages.netlify.app → nové domény (náhledy pro Facebook a X, vyhledávače);
+# náhledy pull requestů (deploy-preview-…--atlasoflanguages.netlify.app) mají jinou adresu, těch se to netýká
+[[redirects]]
+  from = "https://atlasoflanguages.netlify.app/en/*"
+  to = "https://thelanguageatlas.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://atlasoflanguages.netlify.app/*"
+  to = "https://atlasjazyku.cz/:splat"
+  status = 301
+  force = true
+
 # anglická doména: staré odkazy s /en/ na kořen (stránky zatím odkazují přes /en/)
 [[redirects]]
   from = "https://thelanguageatlas.com/en/*"

@@ -17,9 +17,12 @@ npm run build -- --artefakt build   # navíc fragmenty pro publikování jako ar
 Jeden web, obě domény v Netlify → Domain management. `netlify.toml` podle domény: anglická servíruje `dist/en/`
 z kořene (společné `/js`, `/malby`, ikony a náhledy z kořene dist/), `/en/…` na ní přesměruje na kořen,
 `www.atlasjazyku.cz` → `atlasjazyku.cz`, `atlasjazyku.cz/en/…` → anglická doména.
-**Zbývá (až obě domény poběží s HTTPS):** adresy v buildu (`WEB` → dvě domény: canonical, og, hreflang,
-odkazy stránek jazyků bez `/en/`), sitemap a robots zvlášť pro každou doménu, přesměrování
-`atlasoflanguages.netlify.app` na nové domény a přepínač jazyka bez změny cesty na vlastních doménách.
+**Adresy v buildu jsou od 25. 9. 2026 na nových doménách** (`DOMENA`, `WEB(cesta)` v build.mjs; Facebook ukazoval
+odkaz bez obrázku, protože og:url mířil na netlify.app): canonical, og:url, og:image a hreflang každé stránky míří na
+její doménu, anglické bez `/en/`. Každá doména má vlastní `robots.txt` a `sitemap.xml` (anglické v `dist/en/`).
+`atlasoflanguages.netlify.app` přesměrovává na domény (náhledy pull requestů ne). Odkaz na druhou jazykovou verzi
+vede na vlastních doménách na druhou doménu (`korenVerze` v app.js, statické stránky přes `WEB`) a přepnutí na místě
+tam nemění adresu. Zbývá: Google Search Console pro obě domény.
 
 Anglický název je **The Language Atlas** (podle domény, 25. 9. 2026). Web dosud běží i na **https://atlasoflanguages.netlify.app** (anglicky `/en/`).
 Nasazení přes Netlify z větve `main` podle `netlify.toml` (build `npm run check`, publikuje `dist/`).
@@ -94,8 +97,8 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
   Kosovo, Severní Kypr a Somaliland kód nemají – ukáže se jen seznam jazyků z atlasu.
 - Náhled pro sdílení odkazu (og:image) je `static/nahled-cs.jpg` / `nahled-en.jpg`, ikonka `static/favicon.svg`
   (vkládá se do stránky) a `apple-touch-icon.png`. Build kopíruje `static/` do `dist/`. Obrázky vyrábí
-  `scripts/nahledy.mjs` (potřebuje Playwright) – po větší změně vzhledu je vyrob znovu. V `og:image` je adresa s otiskem obsahu
-  (`nahled-cs.jpg?v=…`, `NAHLED` v build.mjs): X a Facebook si obrázek pamatují podle adresy a po výměně obrázku ukazovaly
+  `scripts/nahledy.mjs` (potřebuje Playwright) – po větší změně vzhledu je vyrob znovu. V `og:image` je soubor s otiskem obsahu
+  v názvu (`nahled-cs.<otisk>.jpg`, `NAHLED` v build.mjs, kopie v `dist/` i `dist/en/`): X a Facebook si obrázek pamatují podle adresy a po výměně obrázku ukazovaly
   starou upoutávku (uživatel 25. 9. 2026). Adresa webu je v `build.mjs` (`WEB`).
 - **Skupiny Glottologu, které nejsou rodinou**: umělé jazyky, pidžiny, smíšené jazyky a zvláštní způsoby mluvy
   (`BEZ_RODU` v build.mjs → `REJSTRIK.nr`). Jazyky v nich spolu příbuzné nejsou, proto nemají oblouky k „příbuzným“,

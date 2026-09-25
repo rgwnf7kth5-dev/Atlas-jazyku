@@ -33,12 +33,17 @@ const RODINY_EN = { "Isolate": "isolate – no known relatives", "Sign Language"
 const BEZ_RODU = ["Artificial Language", "Mixed Language", "Pidgin", "Speech Register"];
 const opravyPoloh = json("data/polohy-opravy.json");
 const nareci = json("data/nareci.json");                 // jména nářečí z Glottologu (scripts/nareci.mjs)
-const WEB = "https://atlasoflanguages.netlify.app";   // adresa webu pro náhled při sdílení odkazu
+// adresy webu: česká verze na atlasjazyku.cz, anglická na thelanguageatlas.com (dist/en/ servírovaná z kořene).
+// Canonical, og:url a og:image musí mířit na tu doménu, na které stránka opravdu leží: Facebook podle og:url stránku
+// načte znovu a se starou adresou atlasoflanguages.netlify.app ukazoval odkaz bez obrázku (25. 9. 2026).
+const DOMENA = { cs: "https://atlasjazyku.cz", en: "https://thelanguageatlas.com" };
+const WEB = p => p === "/en" || p.startsWith("/en/") ? DOMENA.en + p.slice(3) : DOMENA.cs + p;   // cesta v dist/ → plná adresa
 const ikona = cti("static/favicon.svg").trim();
 // náhled pro sdílení s otiskem v adrese: X, Facebook a spol. si obrázek pamatují podle adresy, takže po změně
 // obrázku by pod odkazem dál ukazovaly starý (uživatel 25. 9. 2026 na X: „pořád ještě ukazuje starou upoutávku“)
-const NAHLED = Object.fromEntries(["cs", "en"].map(l => [l, `/nahled-${l}.jpg?v=` +
-  crypto.createHash("sha256").update(fs.readFileSync(path.join(KOREN, `static/nahled-${l}.jpg`))).digest("hex").slice(0, 10)]));
+// Soubor s otiskem build kopíruje do dist/ i dist/en/, aby ho anglická doména našla i bez zvláštního pravidla.
+const NAHLED = Object.fromEntries(["cs", "en"].map(l => [l, `/nahled-${l}.` +
+  crypto.createHash("sha256").update(fs.readFileSync(path.join(KOREN, `static/nahled-${l}.jpg`))).digest("hex").slice(0, 10) + ".jpg"]));
 const FONTY = "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800&display=swap";
 const escHtml = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 // data jdou do <script>, proto „<“ zapíšu jako < – řetězec „</script>“ v datech by stránku rozbil
@@ -132,14 +137,14 @@ function sestav(lang, { odkazJinam, artefakt }) {
 
   const fragment = hlavicka + html + "\n" + skripty + "\n";
   // náhled při sdílení odkazu (Facebook, WhatsApp, Messenger…) – jen pro web, artefakt ho nepotřebuje
-  const adresa = WEB + (lang === "cs" ? "/" : "/en/");
+  const adresa = DOMENA[lang] + "/";
   const sdileni =
     `<link rel="canonical" href="${adresa}">\n` +
-    `<link rel="alternate" hreflang="cs" href="${WEB}/">\n<link rel="alternate" hreflang="en" href="${WEB}/en/">\n` +
+    `<link rel="alternate" hreflang="cs" href="${DOMENA.cs}/">\n<link rel="alternate" hreflang="en" href="${DOMENA.en}/">\n` +
     `<link rel="apple-touch-icon" href="/apple-touch-icon.png">\n` +
     `<meta property="og:type" content="website">\n<meta property="og:url" content="${adresa}">\n` +
     `<meta property="og:title" content="${escHtml(T.nazev)}">\n<meta property="og:description" content="${escHtml(T.popis)}">\n` +
-    `<meta property="og:image" content="${WEB}${NAHLED[lang]}">\n<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n` +
+    `<meta property="og:image" content="${DOMENA[lang]}${NAHLED[lang]}">\n<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n` +
     `<meta property="og:image:alt" content="${escHtml(T.nahledPopis)}">\n` +
     `<meta property="og:locale" content="${lang === "cs" ? "cs_CZ" : "en_GB"}">\n<meta name="twitter:card" content="summary_large_image">\n`;
   const dokument = `<!doctype html>\n<html lang="${lang}">\n<head>\n<meta charset="utf-8">\n` +
@@ -171,14 +176,20 @@ const { stranky } = vyrobStranky({ KOREN, WEB, NAHLED, UI, jazyky: jazykyAtlasu,
 
 // pro vyhledávače: obě jazykové verze a jejich vzájemné odkazy
 const dnes = process.env.DATUM_STAVU || new Date().toISOString().slice(0, 10);
-fs.writeFileSync(path.join(KOREN, "dist/robots.txt"), `User-agent: *\nAllow: /\n\nSitemap: ${WEB}/sitemap.xml\n`);
-fs.writeFileSync(path.join(KOREN, "dist/sitemap.xml"),
-  `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n` +
-  [["/", "/en/", "cs"], ["/en/", "/", "en"]].concat(stranky).map(([u, jina, l]) => {
-    const cs = l === "cs" ? u : jina, en = l === "en" ? u : jina;
-    return `  <url>\n    <loc>${WEB}${u}</loc>\n    <lastmod>${dnes}</lastmod>\n` +
-      `    <xhtml:link rel="alternate" hreflang="cs" href="${WEB}${cs}"/>\n    <xhtml:link rel="alternate" hreflang="en" href="${WEB}${en}"/>\n  </url>\n`; }).join("") +
-  `</urlset>\n`);
+for (const l of ["cs", "en"]) {
+  const d = path.join(KOREN, l === "cs" ? "dist" : "dist/en");
+  for (const f of fs.readdirSync(d)) if (/^nahled-(cs|en)\.[0-9a-f]{10}\.jpg$/.test(f)) fs.rmSync(path.join(d, f));   // staré otisky pryč
+  for (const k of ["cs", "en"]) fs.copyFileSync(path.join(KOREN, `static/nahled-${k}.jpg`), path.join(d, NAHLED[k].slice(1)));
+  // každá doména má vlastní robots.txt a sitemap.xml (anglická je v dist/en/, tedy v kořeni thelanguageatlas.com)
+  fs.writeFileSync(path.join(d, "robots.txt"), `User-agent: *\nAllow: /\n\nSitemap: ${DOMENA[l]}/sitemap.xml\n`);
+  fs.writeFileSync(path.join(d, "sitemap.xml"),
+    `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n` +
+    [["/", "/en/", "cs"], ["/en/", "/", "en"]].concat(stranky).filter(x => x[2] === l).map(([u, jina]) => {
+      const cs = l === "cs" ? u : jina, en = l === "en" ? u : jina;
+      return `  <url>\n    <loc>${WEB(u)}</loc>\n    <lastmod>${dnes}</lastmod>\n` +
+        `    <xhtml:link rel="alternate" hreflang="cs" href="${WEB(cs)}"/>\n    <xhtml:link rel="alternate" hreflang="en" href="${WEB(en)}"/>\n  </url>\n`; }).join("") +
+    `</urlset>\n`);
+}
 // vlastní stránka 404 (Netlify ji vrátí u neexistující adresy), dvojjazyčná a bez skriptů
 fs.writeFileSync(path.join(KOREN, "dist/404.html"), `<!doctype html>
 <html lang="cs">

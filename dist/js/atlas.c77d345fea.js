@@ -5933,6 +5933,10 @@ tlPrehraj.addEventListener("click", function(){
 /* ---------- přepnutí jazyka bez nového listu ---------- */
 const adresa = location.pathname.replace(/index\.html$/, "");
 const korenWebu = VYCHOZI === "en" ? adresa.replace(/en\/$/, "") : adresa;
+/* na vlastních doménách leží každá verze na své: atlasjazyku.cz česky, thelanguageatlas.com anglicky (bez /en/) */
+const DOMENY = { cs: "https://atlasjazyku.cz/", en: "https://thelanguageatlas.com/" };
+const naDomene = /(^|\.)(atlasjazyku\.cz|thelanguageatlas\.com)$/.test(location.hostname);
+function korenVerze(l){ return naDomene ? DOMENY[l] : (l === "en" ? korenWebu + "en/" : korenWebu); }
 const odkazJinam = $("jazyk-prepinac");
 /* ---------- O datech: odkud co je, co je odhad, verze dat a licence (texty T.oDatech, data VERZE z buildu) ---------- */
 const oDatech = $("o-datech");
@@ -6072,7 +6076,7 @@ function prelozStranku(){
   const oj = $("odkaz-jazyky");
   oj.hidden = ARTEFAKT || location.protocol === "file:";
   oj.textContent = T.stranky.vsechnyOdkaz;
-  oj.setAttribute("href", korenWebu + (T.lang === "en" ? "en/languages/" : "jazyky/"));
+  oj.setAttribute("href", korenVerze(T.lang) + (T.lang === "en" ? "languages/" : "jazyky/"));
   if (oDatech.open) postavODatech();
   if (kalendar.open) postavKalendar();
   if (navodOkno.open) postavNavod();
@@ -6083,7 +6087,7 @@ function prelozStranku(){
 /* odkaz na druhou jazykovou verzi nese i otevřený jazyk (#cs~sk), aby ho šlo otevřít i v novém listu */
 function obnovOdkazJinam(){
   const jiny = T.lang === "cs" ? "en" : "cs";
-  if (!ARTEFAKT && location.protocol !== "file:") odkazJinam.setAttribute("href", (jiny === "en" ? korenWebu + "en/" : korenWebu) + location.hash);
+  if (!ARTEFAKT && location.protocol !== "file:") odkazJinam.setAttribute("href", korenVerze(jiny) + location.hash);
   else odkazJinam.setAttribute("href", T.lang === VYCHOZI ? puvodniOdkaz : "#");
 }
 window.addEventListener("hashchange", obnovOdkazJinam);
@@ -6106,8 +6110,8 @@ function prepniJazyk(lang){
   prelozData(); zmerPopisky();
   obnovTexty();
   zobrazenyZoom = ""; if (globusOk) { uplatniZoom(); hudTxt = ""; }
-  if (!ARTEFAKT && location.protocol !== "file:" && history.replaceState) {
-    try { history.replaceState(null, "", (lang === "en" ? korenWebu + "en/" : korenWebu) + location.hash); } catch (e) {}
+  if (!ARTEFAKT && location.protocol !== "file:" && !naDomene && history.replaceState) {   // doménu adresa změnit nemůže
+    try { history.replaceState(null, "", korenVerze(lang) + location.hash); } catch (e) {}
   }
 }
 odkazJinam.addEventListener("click", function(e){
