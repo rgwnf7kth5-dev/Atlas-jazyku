@@ -19,7 +19,7 @@ jobs:
           for u in http://atlasjazyku.cz/ https://atlasjazyku.cz/ https://thelanguageatlas.com/ https://www.thelanguageatlas.com/ https://thelanguageatlas.com/language/czech/ https://thelanguageatlas.com/en/guide/ https://thelanguageatlas.com/languages/ https://atlasoflanguages.netlify.app/ https://atlasoflanguages.netlify.app/en/; do
             echo "=================== $u"
             curl -sS -m 30 -A "$UA_X" -o /tmp/s.html -D - -L "$u" -w "KONEC: %{http_code} %{url_effective} ssl_verify=%{ssl_verify_result}\n" 2>&1 | grep -iE "^HTTP|^location|^server|^x-nf|KONEC|curl:" || true
-            grep -oE '<meta (property|name)="(og|twitter):[^"]*" content="[^"]*"|<link rel="canonical"[^>]*>' /tmp/s.html || echo "(žádné og značky)"
+            grep -oE '<meta (property|name)="(og|twitter):[^"]*" content="[^"]*"|<link rel="canonical"[^>]*>|<meta name="google-site-verification"[^>]*>' /tmp/s.html || echo "(žádné og značky)"
           done
           echo "=================== certifikáty"
           for h in atlasjazyku.cz www.atlasjazyku.cz thelanguageatlas.com; do
