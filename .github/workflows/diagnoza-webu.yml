@@ -1,0 +1,35 @@
+# Jednorázová kontrola živého webu zvenku (z prostředí Claude Code jsou domény blokované):
+# co vidí X a Facebook – přesměrování, certifikát, meta značky og: a obrázek náhledu.
+name: Diagnóza webu
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [.github/workflows/diagnoza-webu.yml]
+jobs:
+  diagnoza:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Kontrola
+        run: |
+          UA_X="Twitterbot/1.0"
+          UA_FB="facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)"
+          for u in http://atlasjazyku.cz/ https://atlasjazyku.cz/ "https://atlasjazyku.cz/?a" https://www.atlasjazyku.cz/ http://thelanguageatlas.com/ https://thelanguageatlas.com/ https://www.thelanguageatlas.com/ https://atlasoflanguages.netlify.app/ https://atlasoflanguages.netlify.app/en/; do
+            echo "=================== $u"
+            curl -sS -m 30 -A "$UA_X" -o /tmp/s.html -D - -L "$u" -w "KONEC: %{http_code} %{url_effective} ssl_verify=%{ssl_verify_result}\n" 2>&1 | grep -iE "^HTTP|^location|^server|^x-nf|KONEC|curl:" || true
+            grep -oE '<meta (property|name)="(og|twitter):[^"]*" content="[^"]*"|<link rel="canonical"[^>]*>' /tmp/s.html || echo "(žádné og značky)"
+          done
+          echo "=================== certifikáty"
+          for h in atlasjazyku.cz www.atlasjazyku.cz thelanguageatlas.com; do
+            echo "--- $h"; echo | openssl s_client -connect $h:443 -servername $h 2>/dev/null | openssl x509 -noout -subject -issuer -dates -ext subjectAltName 2>&1 | head -8
+          done
+          echo "=================== DNS"
+          for h in atlasjazyku.cz www.atlasjazyku.cz thelanguageatlas.com; do echo "--- $h"; dig +short A $h; dig +short AAAA $h; done
+          echo "=================== obrázky z og:image"
+          for u in https://atlasjazyku.cz/ https://thelanguageatlas.com/; do
+            img=$(curl -sS -m 30 -A "$UA_FB" -L "$u" | grep -oE 'og:image" content="[^"]*"' | head -1 | sed 's/.*content="//;s/"$//')
+            echo "--- $u -> $img"
+            [ -n "$img" ] && curl -sS -m 30 -A "$UA_FB" -o /tmp/i -L "$img" -w "HTTP %{http_code} typ=%{content_type} velikost=%{size_download} konec=%{url_effective}\n"
+          done
+          echo "=================== stará adresa obrázku"
+          curl -sS -m 30 -o /dev/null -L https://atlasoflanguages.netlify.app/nahled-cs.jpg -w "HTTP %{http_code} %{url_effective} %{size_download}\n"
