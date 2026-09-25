@@ -33,11 +33,15 @@ function lidi(lang, T, n) {
   const g = Math.round(n / 1e8) / 10; return cislo(lang, g, Math.floor(g) === g ? 0 : 1) + " " + tvar(lang, g, T.miliardy);
 }
 
-export function vyrobStranky({ KOREN, WEB, UI, jazyky, glottolog, podrobnosti, nazvyZemi, ikona, fontyOdkaz, verze, dny }) {
+export function vyrobStranky({ KOREN, WEB, UI, jazyky: vsechnyJazyky, glottolog, podrobnosti, nazvyZemi, ikona, fontyOdkaz, verze, dny }) {
   const DIST = path.join(KOREN, "dist");
   const bodPodleKodu = new Map(glottolog.body.map((b, i) => [b[6], i]));
   const bodJazyka = {};
   glottolog.body.forEach((b, i) => { if (b[5] && !(b[5] in bodJazyka)) bodJazyka[b[5]] = i; });
+  /* znakové jazyky tu stránku nemají: pozdrav se u nich neříká ani neposlouchá, znakuje se (uživatel 25. 9. 2026:
+     „znakový jazyk si poslechnout nejde, vyhoď to“). Na glóbu, v aplikaci a v kalendáři zůstávají. */
+  const znakovyId = id => { const i = bodJazyka[id]; return i >= 0 && glottolog.rodiny[glottolog.body[i][3]] === "Sign Language"; };
+  const jazyky = vsechnyJazyky.filter(j => !znakovyId(j.id));
   const cesta = i => { const c = []; for (let u = podrobnosti.radky[i][2]; u >= 0; u = podrobnosti.nad[u]) c.unshift(u); return c; };
   const bezRodu = new Set(BEZ_RODU.map(n => glottolog.rodiny.indexOf(n)));
 
@@ -318,7 +322,7 @@ ${dlazdice(serazene)}`;
 
     /* O datech: stejný obsah jako okno v aplikaci */
     const O = T.oDatech, datum = d => d ? new Date(d + "T12:00:00Z").toLocaleDateString(T.locale, { day: "numeric", month: "long", year: "numeric" }) : "–";
-    const dosad = s => s.replace(/\{(\w+)\}/g, (_, k) => ({ g: cislo(lang, verze.g), n: cislo(lang, verze.n), a: cislo(lang, jazyky.length),
+    const dosad = s => s.replace(/\{(\w+)\}/g, (_, k) => ({ g: cislo(lang, verze.g), n: cislo(lang, verze.n), a: cislo(lang, vsechnyJazyky.length),
       gdat: datum(verze.glottolog), pdat: datum(verze.podrobnosti), wdat: datum(verze.wikidata) })[k] ?? "");
     zapis(oDatech[lang], stranka({ lang, adresa: oDatech[lang], jinaAdresa: oDatech[jiny], titulek: O.nadpis + " · " + T.nazev,
       popis: dosad(O.uvod), obrazek: obrazekWebu(lang),
@@ -359,7 +363,7 @@ ${N.oddily.map(o => `<h2>${escHtml(o.h)}</h2>\n${o.p.map(p => `<p>${escHtml(p)}<
       if (x.k === "09-26") { odkaz = domov[lang] + "?den-jazyku"; jmeno = T.denJazykuNadpis; proc = K.edl; }
       else { const s2 = dny[x.k]; proc = s2[lang];
         if (s2.kod) { const b2 = glottolog.body.find(b => b[6] === s2.kod); odkaz = domov[lang] + "#" + s2.kod; jmeno = (lang === "cs" && podrobnosti.radky[glottolog.body.indexOf(b2)][9]) || b2[0]; pozdrav = s2.pozdrav; lg = s2.jazyk || ""; }
-        else { const j = jazyky.find(j => j.id === s2.id); odkaz = adresy[lang][j.id]; jmeno = j[lang].nazev; pozdrav = j[lang].pozdrav || j.pozdrav; lg = j.kod || ""; } }
+        else { const j = vsechnyJazyky.find(j => j.id === s2.id); odkaz = adresy[lang][j.id] || domov[lang] + "#" + j.id; jmeno = j[lang].nazev; pozdrav = j[lang].pozdrav || j.pozdrav; lg = j.kod || ""; } }
       if (jmeno) jmeno = jmeno.charAt(0).toUpperCase() + jmeno.slice(1);
       html += `<li><span class="kal-d">${escHtml(nazevDne(x, x.d))}</span><span><a href="${odkaz}">${pozdrav ? `<b dir="auto" lang="${escHtml(lg)}">${escHtml(pozdrav)}</b> ` : ""}${escHtml(jmeno)}</a><br><span class="kal-p">${escHtml(proc)}</span></span></li>\n`;
     }

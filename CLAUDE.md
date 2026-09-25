@@ -274,7 +274,9 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
   „Najít na glóbu“ na `/#<id>`. **Poslechni si to** je i tady (uživatel 25. 9. 2026: „musím proklikem až do glóbu,
   to je blbost“): na stránce jazyka velké tlačítko, v přehledu `/jazyky/` malý reproduktor v každé dlaždici; stejná
   logika jako v app.js (rodilý hlas zařízení, jinak výslovnost hlasem stránky, jinak text), hláška pod tlačítkem nebo
-  jako bublina. Bez kódu jazyka a u znakového jazyka se tlačítko neukazuje.
+  jako bublina. Bez kódu jazyka se tlačítko neukazuje.
+  **Znakové jazyky stránku ani dlaždici v přehledu nemají** (uživatel 25. 9. 2026: „poslechnout si nejde, vyhoď to“), přehled
+  má proto 162 jazyků; na glóbu, v aplikaci a v kalendáři (23. 9., odkaz na `/#czj`) zůstávají.
   **Stránka jazyka je kartotéční lístek nad seznamem** (uživatel 25. 9. 2026: „z té obrazovky se nedá odejít jinak
   než do glóbu“): každá `/jazyk/<jméno>/` obsahuje celý seznam a nad ním lístek (`.listek`, krémový, červená linka,
   linkovaný spodek, dírka). Šipky předchozí/další (abecedně, dokola, i klávesy ←/→), „n / 163“ a křížek. Z přehledu

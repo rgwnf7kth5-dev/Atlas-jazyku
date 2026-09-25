@@ -145,12 +145,6 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://atlasoflanguages.netlify.app/en/language/cherokee/"/>
   </url>
   <url>
-    <loc>https://atlasoflanguages.netlify.app/jazyk/cesky-znakovy-jazyk/</loc>
-    <lastmod>2026-09-25</lastmod>
-    <xhtml:link rel="alternate" hreflang="cs" href="https://atlasoflanguages.netlify.app/jazyk/cesky-znakovy-jazyk/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://atlasoflanguages.netlify.app/en/language/czech-sign-language/"/>
-  </url>
-  <url>
     <loc>https://atlasoflanguages.netlify.app/jazyk/cestina/</loc>
     <lastmod>2026-09-25</lastmod>
     <xhtml:link rel="alternate" hreflang="cs" href="https://atlasoflanguages.netlify.app/jazyk/cestina/"/>
@@ -1181,12 +1175,6 @@
     <lastmod>2026-09-25</lastmod>
     <xhtml:link rel="alternate" hreflang="cs" href="https://atlasoflanguages.netlify.app/jazyk/cestina/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://atlasoflanguages.netlify.app/en/language/czech/"/>
-  </url>
-  <url>
-    <loc>https://atlasoflanguages.netlify.app/en/language/czech-sign-language/</loc>
-    <lastmod>2026-09-25</lastmod>
-    <xhtml:link rel="alternate" hreflang="cs" href="https://atlasoflanguages.netlify.app/jazyk/cesky-znakovy-jazyk/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://atlasoflanguages.netlify.app/en/language/czech-sign-language/"/>
   </url>
   <url>
     <loc>https://atlasoflanguages.netlify.app/en/language/danish/</loc>
