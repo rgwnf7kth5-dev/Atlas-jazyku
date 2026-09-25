@@ -34,5 +34,16 @@ jobs:
             echo "--- $u -> $img"
             [ -n "$img" ] && curl -sS -m 30 -A "$UA_FB" -o /tmp/i -L "$img" -w "HTTP %{http_code} typ=%{content_type} velikost=%{size_download} konec=%{url_effective}\n"
           done
+          echo "=================== jako robot X (Twitterbot)"
+          for u in https://thelanguageatlas.com/robots.txt https://atlasoflanguages.netlify.app/robots.txt; do
+            echo "--- $u"; curl -sS -m 30 -A "$UA_X" -D - "$u" | head -20
+          done
+          for m in HEAD GET; do
+            for u in https://thelanguageatlas.com/nahled-en.5f24cb570d.jpg "https://thelanguageatlas.com/?b"; do
+              echo "--- $m $u"; curl -sS -m 30 -A "$UA_X" -X $m -o /tmp/o -D - "$u" -w "velikost=%{size_download}\n" | grep -viE "^(date|age|x-nf-request-id|strict)"
+            done
+          done
+          grep -oE '<meta (property|name)="(og|twitter):[^"]*" content="[^"]*"' /tmp/o
+          echo "--- HTTP/1.1"; curl -sS -m 30 --http1.1 -A "$UA_X" -o /tmp/i -D - https://thelanguageatlas.com/nahled-en.5f24cb570d.jpg | head -12; file /tmp/i
           echo "=================== stará adresa obrázku"
           curl -sS -m 30 -o /dev/null -L https://atlasoflanguages.netlify.app/nahled-cs.jpg -w "HTTP %{http_code} %{url_effective} %{size_download}\n"
