@@ -12,7 +12,7 @@ const b = await chromium.launch({ executablePath: process.env.CHROMIUM || undefi
   args:['--no-sandbox', '--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader'] });
 const TEXTY = {
   cs: { url:'dist/index.html', nadpis:'Atlas jazyků', pod:'Všech 7 967 jazyků světa na otáčivém glóbu', jazyk:'cs', pozdrav:'Ahoj!', nazev:'Čeština' },
-  en: { url:'dist/en/index.html', nadpis:'Language Atlas', pod:'All 7,967 languages of the world on a spinning globe', jazyk:'en', pozdrav:'Hello!', nazev:'English' },
+  en: { url:'dist/en/index.html', nadpis:'The Language Atlas', pod:'All 7,967 languages of the world on a spinning globe', jazyk:'en', pozdrav:'Hello!', nazev:'English' },
 };
 const POZDRAVY = ['Hola', 'Jambo', 'Привет', 'こんにちは', 'مرحبا', 'Kia ora'];
 const ZNAK = fs.readFileSync(R + 'static/favicon.svg', 'utf8').replace('<svg ', '<svg class="znak" ');

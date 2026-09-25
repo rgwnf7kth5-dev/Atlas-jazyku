@@ -21,7 +21,7 @@ z kořene (společné `/js`, `/malby`, ikony a náhledy z kořene dist/), `/en/�
 odkazy stránek jazyků bez `/en/`), sitemap a robots zvlášť pro každou doménu, přesměrování
 `atlasoflanguages.netlify.app` na nové domény a přepínač jazyka bez změny cesty na vlastních doménách.
 
-Web dosud běží i na **https://atlasoflanguages.netlify.app** (anglicky `/en/`).
+Anglický název je **The Language Atlas** (podle domény, 25. 9. 2026). Web dosud běží i na **https://atlasoflanguages.netlify.app** (anglicky `/en/`).
 Nasazení přes Netlify z větve `main` podle `netlify.toml` (build `npm run check`, publikuje `dist/`).
 Z prostředí Claude Code na webu je `*.netlify.app` blokované (curl i WebFetch vrací 403), živý web tedy odsud
 zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na uživateli.

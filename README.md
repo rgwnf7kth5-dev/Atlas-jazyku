@@ -1,4 +1,4 @@
-# Atlas jazyků / Language Atlas
+# Atlas jazyků / The Language Atlas
 
 Otáčivý glóbus se všemi jazyky světa, udělaný pro děti. Česky i anglicky.
 Web: **https://atlasoflanguages.netlify.app** (anglicky https://atlasoflanguages.netlify.app/en/)

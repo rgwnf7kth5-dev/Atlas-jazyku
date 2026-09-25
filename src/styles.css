@@ -753,7 +753,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 .domu .znak{width:56px; height:56px; flex:none; color:var(--text); --pozadi-loga:transparent; transition:transform .25s}
 .domu:hover .znak{transform:rotate(-8deg) scale(1.04)}
 .domu h1{font-size:clamp(1.9rem,3.8vw,2.8rem)}
-@media (max-width:620px){ .domu{gap:10px} .domu .znak{width:42px; height:42px} .domu h1{font-size:1.7rem} }
+@media (max-width:620px){ .domu{gap:10px} .domu .znak{width:42px; height:42px} .domu h1{font-size:clamp(1.05rem, 4.9vw, 1.7rem); white-space:nowrap} }
 @media (prefers-reduced-motion:reduce){ .domu:hover .znak{transform:none} }
 
 /* Brána do jiných světů má vždy tmavé hvězdné nebe, i v denním vzhledu (přání uživatele: světy nepatří na papír) */
