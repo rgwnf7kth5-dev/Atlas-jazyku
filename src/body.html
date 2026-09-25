@@ -158,10 +158,13 @@
    </div>
    <div class="seznam" id="seznam"></div>
    <footer class="paticka">
+   <details class="pat-det" id="paticka-det">
+   <summary><svg aria-hidden="true"><use href="#i-kniha"/></svg><span data-t="patickaSouhrn">{{patickaSouhrn}}</span><svg class="pat-sipka" aria-hidden="true"><use href="#i-dal"/></svg></summary>
    <p class="zpetna"><svg aria-hidden="true"><use href="#i-dopis"/></svg><span><span data-t="zpetna">{{zpetna}}</span>
     <a id="zpetna-odkaz" href="mailto:{{zpetnaAdresa}}" title="{{zpetnaPopis}}" data-t-title="zpetnaPopis">{{zpetnaAdresa}}</a></span></p>
-   <p class="o-datech-radek"><button class="odkaz-o-datech" id="tl-o-datech" type="button" aria-haspopup="dialog"><svg aria-hidden="true"><use href="#i-kniha"/></svg><span id="tl-o-datech-text"></span></button><a class="odkaz-jazyky" id="odkaz-jazyky" hidden></a></p>
+   <p class="o-datech-radek"><button class="odkaz-o-datech" id="tl-o-datech" type="button" aria-haspopup="dialog"><span id="tl-o-datech-text"></span></button><a class="odkaz-jazyky" id="odkaz-jazyky" hidden></a></p>
    <p class="zdroje" data-t="zdroje">{{zdroje}}</p>
+   </details>
    </footer>
   </aside>
  </main>

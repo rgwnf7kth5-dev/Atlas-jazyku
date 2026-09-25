@@ -39,6 +39,8 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
 - **Stránka začíná celým světem bez vybraného jazyka** (přání uživatele: neotevírat češtinou ani jiným jazykem).
 - Sbírka pozdravů (počítadlo v hlavičce, hvězdičky u otevřených jazyků) byla 23. 9. 2026 na přání uživatele
   odstraněna – nedávala smysl. Znovu ji nepřidávat.
+- **Patička seznamu je sbalená** do jednoho řádku „O atlasu, zdroje a kontakt“ (`<details class="pat-det">`, uživatel
+  25. 9. 2026: „zabírá zbytečně moc místa, musí se schovávat“). Rozbalí se kontakt, O datech, Jazyky s pozdravem a zdroje.
 - Zpětná vazba e-mailem na **info@atlasjazyku.cz** (přesměrovaná na autora; 25. 9. 2026 místo dřívější soukromé adresy,
   kterou uživatel smazal – soukromou adresu na web nedávat). Řádek je v patičce seznamu i na statických stránkách,
   předmět podle jazyka, v artefaktu se odkaz otevírá v novém okně. Klíče `zpetna…` v `src/ui/*.json`.

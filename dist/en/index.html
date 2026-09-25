@@ -868,6 +868,20 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 .zpetna a{color:var(--cyan); font-weight:600; text-decoration:underline; text-underline-offset:2px; white-space:nowrap}
 .zpetna a:hover{text-decoration-thickness:2px}
 .zpetna + .o-datech-radek{border-top:0; padding-top:0}
+/* patička seznamu je sbalená do jednoho řádku (uživatel 25. 9. 2026: „zabírá zbytečně moc místa“) */
+.pat-det{flex:none; border-top:1px solid var(--linka)}
+.pat-det > summary{display:flex; align-items:center; gap:9px; padding:9px 16px; padding-bottom:calc(9px + env(safe-area-inset-bottom,0px));
+  list-style:none; cursor:pointer; font-size:.8rem; font-weight:600; color:var(--text2); user-select:none}
+.pat-det > summary::-webkit-details-marker{display:none}
+.pat-det > summary > svg{width:16px; height:16px; flex:none; color:var(--cyan)}
+.pat-det > summary .pat-sipka{width:13px; height:13px; margin-left:auto; color:var(--text3); transform:rotate(-90deg); transition:transform .2s}
+.pat-det[open] > summary .pat-sipka{transform:rotate(90deg)}
+.pat-det > summary:hover{color:var(--text)}
+.pat-det > summary:focus-visible{outline:2px solid var(--cyan); outline-offset:-2px; border-radius:8px}
+.pat-det .zpetna{border-top:0; padding-top:0}
+.pat-det .o-datech-radek{padding-top:2px}
+.pat-det .zdroje{border-top:1px solid var(--linka)}
+@media (prefers-reduced-motion:reduce){ .pat-det > summary .pat-sipka{transition:none} }
 </style>
 <link rel="canonical" href="https://atlasoflanguages.netlify.app/en/">
 <link rel="alternate" hreflang="cs" href="https://atlasoflanguages.netlify.app/">
@@ -1045,16 +1059,19 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
    </div>
    <div class="seznam" id="seznam"></div>
    <footer class="paticka">
+   <details class="pat-det" id="paticka-det">
+   <summary><svg aria-hidden="true"><use href="#i-kniha"/></svg><span data-t="patickaSouhrn">About, sources and contact</span><svg class="pat-sipka" aria-hidden="true"><use href="#i-dal"/></svg></summary>
    <p class="zpetna"><svg aria-hidden="true"><use href="#i-dopis"/></svg><span><span data-t="zpetna">Got an idea, or is something not working? Write to</span>
     <a id="zpetna-odkaz" href="mailto:info@atlasjazyku.cz" title="Send feedback by e-mail" data-t-title="zpetnaPopis">info@atlasjazyku.cz</a></span></p>
-   <p class="o-datech-radek"><button class="odkaz-o-datech" id="tl-o-datech" type="button" aria-haspopup="dialog"><svg aria-hidden="true"><use href="#i-kniha"/></svg><span id="tl-o-datech-text"></span></button><a class="odkaz-jazyky" id="odkaz-jazyky" hidden></a></p>
+   <p class="o-datech-radek"><button class="odkaz-o-datech" id="tl-o-datech" type="button" aria-haspopup="dialog"><span id="tl-o-datech-text"></span></button><a class="odkaz-jazyky" id="odkaz-jazyky" hidden></a></p>
    <p class="zdroje" data-t="zdroje">Dots: Glottolog (CC BY 4.0) · Grammar: WALS (CC BY 4.0) · Sounds: PHOIBLE (CC BY-SA 3.0) · Map: Natural Earth</p>
+   </details>
    </footer>
   </aside>
  </main>
  <dialog class="o-datech" id="o-datech" aria-labelledby="od-nadpis"></dialog>
 </div>
 
-<script src="../js/atlas.044cc27c80.js"></script>
+<script src="../js/atlas.0c9f3dafc9.js"></script>
 </body>
 </html>

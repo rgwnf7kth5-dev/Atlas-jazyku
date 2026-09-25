@@ -853,3 +853,17 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 .zpetna a{color:var(--cyan); font-weight:600; text-decoration:underline; text-underline-offset:2px; white-space:nowrap}
 .zpetna a:hover{text-decoration-thickness:2px}
 .zpetna + .o-datech-radek{border-top:0; padding-top:0}
+/* patička seznamu je sbalená do jednoho řádku (uživatel 25. 9. 2026: „zabírá zbytečně moc místa“) */
+.pat-det{flex:none; border-top:1px solid var(--linka)}
+.pat-det > summary{display:flex; align-items:center; gap:9px; padding:9px 16px; padding-bottom:calc(9px + env(safe-area-inset-bottom,0px));
+  list-style:none; cursor:pointer; font-size:.8rem; font-weight:600; color:var(--text2); user-select:none}
+.pat-det > summary::-webkit-details-marker{display:none}
+.pat-det > summary > svg{width:16px; height:16px; flex:none; color:var(--cyan)}
+.pat-det > summary .pat-sipka{width:13px; height:13px; margin-left:auto; color:var(--text3); transform:rotate(-90deg); transition:transform .2s}
+.pat-det[open] > summary .pat-sipka{transform:rotate(90deg)}
+.pat-det > summary:hover{color:var(--text)}
+.pat-det > summary:focus-visible{outline:2px solid var(--cyan); outline-offset:-2px; border-radius:8px}
+.pat-det .zpetna{border-top:0; padding-top:0}
+.pat-det .o-datech-radek{padding-top:2px}
+.pat-det .zdroje{border-top:1px solid var(--linka)}
+@media (prefers-reduced-motion:reduce){ .pat-det > summary .pat-sipka{transition:none} }
