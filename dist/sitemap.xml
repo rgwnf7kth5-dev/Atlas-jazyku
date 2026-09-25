@@ -1003,6 +1003,12 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://atlasoflanguages.netlify.app/en/about-data/"/>
   </url>
   <url>
+    <loc>https://atlasoflanguages.netlify.app/kalendar-jazyku/</loc>
+    <lastmod>2026-09-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://atlasoflanguages.netlify.app/kalendar-jazyku/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://atlasoflanguages.netlify.app/en/language-days/"/>
+  </url>
+  <url>
     <loc>https://atlasoflanguages.netlify.app/en/language/czech/</loc>
     <lastmod>2026-09-25</lastmod>
     <xhtml:link rel="alternate" hreflang="cs" href="https://atlasoflanguages.netlify.app/jazyk/cestina/"/>
@@ -1991,5 +1997,11 @@
     <lastmod>2026-09-25</lastmod>
     <xhtml:link rel="alternate" hreflang="cs" href="https://atlasoflanguages.netlify.app/o-datech/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://atlasoflanguages.netlify.app/en/about-data/"/>
+  </url>
+  <url>
+    <loc>https://atlasoflanguages.netlify.app/en/language-days/</loc>
+    <lastmod>2026-09-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://atlasoflanguages.netlify.app/kalendar-jazyku/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://atlasoflanguages.netlify.app/en/language-days/"/>
   </url>
 </urlset>

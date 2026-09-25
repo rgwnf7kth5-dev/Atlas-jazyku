@@ -76,9 +76,12 @@ if (pd.uzly.length !== pd.nad.length) chyby.push("data/podrobnosti.json: strom p
 { const dny = json("data/dny-jazyku.json");
   for (const [k, d] of Object.entries(dny)) {
     if (k === "_pozn") continue;
-    const m = k.match(/^(\d\d)-(\d\d)$/);
-    if (!m || +m[1] < 1 || +m[1] > 12 || +m[2] < 1 || +m[2] > 31) chyby.push(`data/dny-jazyku.json: „${k}“ není den ve tvaru MM-DD`);
-    if (!ids.has(d.id)) chyby.push(`data/dny-jazyku.json: ${k} odkazuje na neznámý jazyk „${d.id}“`);
+    const m = k.match(/^(\d\d)-(\d\d|(po|ut|st|ct|pa|so|ne)[1-5])$/);
+    if (!m || +m[1] < 1 || +m[1] > 12 || (!m[3] && (+m[2] < 1 || +m[2] > 31))) chyby.push(`data/dny-jazyku.json: „${k}“ není den ve tvaru MM-DD ani MM-soN`);
+    if (d.kod) {
+      if (!glottolog.body.some(b => b[6] === d.kod)) chyby.push(`data/dny-jazyku.json: ${k} odkazuje na neznámou tečku „${d.kod}“`);
+      if (!d.pozdrav) chyby.push(`data/dny-jazyku.json: ${k} (tečka rejstříku) nemá pozdrav`);
+    } else if (!ids.has(d.id)) chyby.push(`data/dny-jazyku.json: ${k} odkazuje na neznámý jazyk „${d.id}“`);
     if (!d.cs || !d.en) chyby.push(`data/dny-jazyku.json: ${k} nemá důvod česky i anglicky`);
   }
   if (dny["09-26"]) chyby.push("data/dny-jazyku.json: 26. 9. je Evropský den jazyků, Jazyk dne ten den není");

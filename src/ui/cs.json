@@ -515,7 +515,8 @@
   "kdeMluvi": "Kde se mluví",
   "kdeZnakuje": "Kde se znakuje",
   "aDalsi": "a {n} dalších",
-  "drobky": "Kde jsem"
+  "drobky": "Kde jsem",
+  "druhaSobota": "2. sobota v září"
  },
  "zpetna": "Máš nápad, nebo ti něco nefunguje? Napiš na",
  "zpetnaAdresa": "info@atlasjazyku.cz",
@@ -542,5 +543,13 @@
   "západ",
   "severozápad"
  ],
- "cestaPoDniJazyku": "Po včerejším Evropském dni jazyků pokračujeme v cestě kolem světa, každý den k nejbližšímu dalšímu jazyku."
+ "cestaPoDniJazyku": "Po včerejším Evropském dni jazyků pokračujeme v cestě kolem světa, každý den k nejbližšímu dalšímu jazyku.",
+ "kalendarOdkaz": "Kalendář jazykových dnů",
+ "kalendar": {
+  "nadpis": "Kalendář jazykových dnů",
+  "uvod": "Dny v roce, které patří některému jazyku: dny jazyků OSN a UNESCO, národní dny jazyka, svátky a výročí. Ten den je jazyk Jazykem dne. Klikni na kterýkoli a ukáže se ti na glóbu.",
+  "edl": "Evropský den jazyků (Rada Evropy). Místo Jazyka dne se ukáží všechny evropské jazyky atlasu najednou.",
+  "dnes": "dnes",
+  "ostatni": "V ostatních dnech Jazyk dne cestuje kolem světa – každý den k nejbližšímu dalšímu jazyku."
+ }
 }

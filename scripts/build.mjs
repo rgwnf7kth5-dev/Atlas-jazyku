@@ -159,10 +159,11 @@ fs.writeFileSync(path.join(KOREN, "dist/en/index.html"), en.dokument);
 fs.cpSync(path.join(KOREN, "static"), path.join(KOREN, "dist"), { recursive: true });   // ikonky a náhledy
 
 // samostatné stránky jazyků, přehled a O datech (scripts/stranky.mjs); staré složky pryč, kdyby se jazyk přejmenoval
-for (const d of ["jazyk", "jazyky", "o-datech", "en/language", "en/languages", "en/about-data"]) fs.rmSync(path.join(KOREN, "dist", d), { recursive: true, force: true });
+for (const d of ["jazyk", "jazyky", "o-datech", "kalendar-jazyku", "en/language", "en/languages", "en/about-data", "en/language-days"]) fs.rmSync(path.join(KOREN, "dist", d), { recursive: true, force: true });
 const polozekSeznamu = JAZYKY.length + glottolog.body.length - new Set(glottolog.body.map(b => b[5]).filter(Boolean)).size;
 const { stranky } = vyrobStranky({ KOREN, WEB, UI, jazyky: jazykyAtlasu, glottolog, podrobnosti, nazvyZemi, ikona, fontyOdkaz: FONTY,
-  verze: { g: glottolog.body.length, n: polozekSeznamu, glottolog: glottolog.stazeno, podrobnosti: podrobnosti.stazeno, wikidata: json("data/wikidata.json").stazeno } });
+  verze: { g: glottolog.body.length, n: polozekSeznamu, glottolog: glottolog.stazeno, podrobnosti: podrobnosti.stazeno, wikidata: json("data/wikidata.json").stazeno },
+  dny: json("data/dny-jazyku.json") });
 
 // pro vyhledávače: obě jazykové verze a jejich vzájemné odkazy
 const dnes = process.env.DATUM_STAVU || new Date().toISOString().slice(0, 10);

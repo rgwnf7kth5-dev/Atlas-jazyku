@@ -932,6 +932,24 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
   --stin-plochy:rgba(0,0,0,.62); --stin-plochy-2:rgba(0,0,0,.3)}
 :root[data-theme="light"]{--podlaha:rgba(120,110,90,.09); --podlaha-2:rgba(120,110,90,.15); --obzor:rgba(60,60,80,.13);
   --stin-plochy:rgba(40,44,70,.34); --stin-plochy-2:rgba(40,44,70,.16)}
+/* kalendář jazykových dnů: odkaz pod Jazykem dne a okno se seznamem dnů */
+.jd-kalendar{display:inline-flex; align-items:center; gap:7px; align-self:flex-start; margin:8px 0 2px 4px; padding:4px 2px; border:0; background:none;
+  font:inherit; font-size:.84rem; font-weight:600; color:var(--cyan); cursor:pointer; text-decoration:underline; text-underline-offset:2px}
+.jd-kalendar svg{width:16px; height:16px; flex:none}
+.jd-kalendar:hover{text-decoration-thickness:2px}
+.kal-seznam{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:4px}
+.kal-den{display:flex; align-items:flex-start; gap:14px; width:100%; padding:9px 12px; border:1px solid var(--linka); border-radius:12px; background:var(--plocha);
+  font:inherit; text-align:left; color:var(--text); cursor:pointer}
+.kal-den:hover{background:var(--plocha2); border-color:var(--linka2)}
+.kal-den:focus-visible{outline:2px solid var(--cyan); outline-offset:2px}
+.kal-den.dnes{border-color:var(--akcent); box-shadow:inset 3px 0 0 var(--akcent)}
+.kal-datum{flex:none; width:3.6em; font-family:var(--pismo-nadpis); font-weight:600; font-size:1.05rem; line-height:1.3; color:var(--text)}
+.kal-stred{display:flex; flex-direction:column; gap:2px; min-width:0}
+.kal-jazyk{font-weight:700; font-size:.95rem}
+.kal-pz{font-family:var(--pismo-pozdrav); font-weight:700; margin-right:4px}
+.kal-proc{font-size:.84rem; line-height:1.45; color:var(--text2)}
+.kal-dnes{align-self:flex-start; margin-top:3px; padding:1px 8px; border-radius:99px; background:var(--akcent); color:var(--na-akcent); font-size:.72rem; font-weight:700}
+.kal-pozn{margin-top:18px !important; font-style:italic}
 </style>
 <link rel="canonical" href="https://atlasoflanguages.netlify.app/en/">
 <link rel="alternate" hreflang="cs" href="https://atlasoflanguages.netlify.app/">
@@ -953,6 +971,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
  <symbol id="i-slunce" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.5 1.5M17.6 17.6l1.5 1.5M19.1 4.9l-1.5 1.5M6.4 17.6l-1.5 1.5"/></symbol>
  <symbol id="i-mesic" viewBox="0 0 24 24"><path fill="currentColor" d="M20.7 14.6A8.6 8.6 0 0 1 9.4 3.3a8.6 8.6 0 1 0 11.3 11.3z"/></symbol>
  <symbol id="i-dopis" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"><rect x="3" y="5.5" width="18" height="13" rx="2.6"/><path d="M4 7.5l8 5.8 8-5.8" stroke-linecap="round"/></symbol>
+ <symbol id="i-kalendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="2.6"/><path d="M3.5 10h17M8 3v4M16 3v4"/><circle cx="12" cy="15" r="1.3" fill="currentColor" stroke="none"/></symbol>
  <symbol id="i-kniha" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round"><path d="M12 6.5C10.2 5 7.6 4.4 4 4.6v13.6c3.6-.2 6.2.4 8 1.9 1.8-1.5 4.4-2.1 8-1.9V4.6c-3.6-.2-6.2.4-8 1.9zM12 6.5v13.6"/></symbol>
  <symbol id="i-ruka" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 12.5V5.2a1.4 1.4 0 0 1 2.8 0v6.3M11.3 11V3.9a1.4 1.4 0 0 1 2.8 0V11M14.1 11V5.4a1.4 1.4 0 0 1 2.8 0v7.8M8.5 12.5l-1.6-2a1.5 1.5 0 0 0-2.3 1.9l3 4.3A7.2 7.2 0 0 0 13.4 20h.4a5 5 0 0 0 5-5v-3.2a1.4 1.4 0 0 0-2.8 0"/></symbol>
  <symbol id="i-vitalita" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 20V14M9.3 20V10M14.7 20V6.5M20 20V3.5"/></symbol>
@@ -1115,15 +1134,16 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
    <summary><svg aria-hidden="true"><use href="#i-kniha"/></svg><span data-t="patickaSouhrn">About, sources and contact</span><svg class="pat-sipka" aria-hidden="true"><use href="#i-dal"/></svg></summary>
    <p class="zpetna"><svg aria-hidden="true"><use href="#i-dopis"/></svg><span><span data-t="zpetna">Got an idea, or is something not working? Write to</span>
     <a id="zpetna-odkaz" href="mailto:info@atlasjazyku.cz" title="Send feedback by e-mail" data-t-title="zpetnaPopis">info@atlasjazyku.cz</a></span></p>
-   <p class="o-datech-radek"><button class="odkaz-o-datech" id="tl-o-datech" type="button" aria-haspopup="dialog"><span id="tl-o-datech-text"></span></button><a class="odkaz-jazyky" id="odkaz-jazyky" hidden></a></p>
+   <p class="o-datech-radek"><button class="odkaz-o-datech" id="tl-o-datech" type="button" aria-haspopup="dialog"><span id="tl-o-datech-text"></span></button><button class="odkaz-o-datech" id="tl-kalendar-pat" type="button" aria-haspopup="dialog" data-t="kalendarOdkaz">Calendar of language days</button><a class="odkaz-jazyky" id="odkaz-jazyky" hidden></a></p>
    <p class="zdroje" data-t="zdroje">Dots: Glottolog (CC BY 4.0) · Grammar: WALS (CC BY 4.0) · Sounds: PHOIBLE (CC BY-SA 3.0) · Map: Natural Earth</p>
    </details>
    </footer>
   </aside>
  </main>
  <dialog class="o-datech" id="o-datech" aria-labelledby="od-nadpis"></dialog>
+ <dialog class="o-datech kalendar" id="kalendar" aria-labelledby="kal-nadpis"></dialog>
 </div>
 
-<script src="../js/atlas.5f67be3daa.js"></script>
+<script src="../js/atlas.ea45ec11ca.js"></script>
 </body>
 </html>

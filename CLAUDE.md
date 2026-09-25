@@ -136,6 +136,12 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
   **cestuje kolem světa** (`CESTA`: od češtiny vždy k nejbližšímu dosud nenavštívenému jazyku, index = místní den
   mod 163) a karta řekne, u kterého jazyka jsme byli včera a o kolik km a kterým směrem jsme dál. Den po 26. 9.
   (Evropský den jazyků, bez Jazyka dne) má vlastní větu. Skrytý jazyk (filtr) se přeskočí.
+  Klíč může být i pohyblivý (`09-so2` = druhá sobota v září: Den německého jazyka) a den může patřit tečce rejstříku
+  bez karty atlasu (`kod` = glottocode, `pozdrav`, `jazyk`, `vyslovnost`): esperanto 26. 7., latina 30. 9. (Den překladu).
+  **Kalendář jazykových dnů** (přání uživatele 25. 9. 2026: „naklikávací seznam s linkem na jazyk“): okno `#kalendar`
+  z odkazu pod Jazykem dne, z patičky a z karty Dne jazyků (`#kalendar` / `#language-days`), po měsících, dnešek
+  zvýrazněný, otevře se u nejbližšího dne; klik vybere jazyk (26. 9. rozsvítí evropské jazyky). Statická stránka
+  `/kalendar-jazyku/` a `/en/language-days/` odkazuje na stránky jazyků.
 - **Živější glóbus**: v noci světélka jemně třpytí (překresluje se jen WebGL, co 60 ms, usíná s okrasným
   pohybem), koule má odlesk slunce (ve dne výraznější).
 - **Mobil (≤ 920 px)**: karta je spodní list ve třech velikostech: malá lišta jen s pozdravem a jménem (`.mala`),
@@ -392,7 +398,7 @@ Dřívější náhledový artefakt https://claude.ai/artifact/XS67Gsv9d4y2pMu7UW
 - Glóbus se na počítači vejde nad lištu (`stredY`, rezerva výšky `#dok`); dřív ho lišta zakrývala.
 - **Glóbus se vznáší nad hladkou plochou a vrhá měkký stín** (uživatel 25. 9. 2026 ze dvou náhledů: „stín – bez mřížky“;
   mřížku ubíhající k obzoru nechtěl). `kresliPlochu` v app.js kreslí do zásoby s koulí: na počítači plochu od obzoru
-  (0,55 r pod středem, tenká linka `--obzor`) dolů s přechodem `--podlaha`, na telefonu jen stín (úzké plátno by z plochy
+  (0,55 r pod středem) dolů s přechodem `--podlaha`, na telefonu jen stín (úzké plátno by z plochy
   udělalo šedý obdélník); stín je zploštělý kruhový přechod 1,14 r pod středem. Při přiblížení nad 1,5× zmizí.
   Kvůli místu na stín je koule menší (`polomerZaklad` = výška / 2,26) a posunutá výš.
 - Klik na zemi ji jedním kliknutím podbarví a rozsvítí její jazyky (příznak 5); tlačítko „Zvýraznit na glóbu“

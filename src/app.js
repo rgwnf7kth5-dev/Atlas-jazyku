@@ -208,9 +208,30 @@ const CESTA = (function(){
   return c;
 })();
 function mistniDen(d){ return Math.floor((d.getTime() - d.getTimezoneOffset() * 6e4) / 864e5); }   // místní den, ať sedí s datem na kartě
+const DNY_TYDNE = ["ne", "po", "ut", "st", "ct", "pa", "so"];
+function klicDne(d){ return String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0"); }
+function klicPohyblivy(d){ return String(d.getMonth() + 1).padStart(2, "0") + "-" + DNY_TYDNE[d.getDay()] + Math.ceil(d.getDate() / 7); }
+function dataPohyblivehoDne(k, rok){          /* „09-so2“ → datum druhé soboty v září daného roku */
+  const m = +k.slice(0, 2) - 1, wd = DNY_TYDNE.indexOf(k.slice(3, 5)), n = +k.slice(5);
+  const prvni = new Date(rok, m, 1), posun = (wd - prvni.getDay() + 7) % 7;
+  return new Date(rok, m, 1 + posun + (n - 1) * 7);
+}
+function bodDne(s){ return s && s.kod && PODLE_KODU.has(s.kod) ? PODLE_KODU.get(s.kod) : -1; }
+function platnyDen(s){
+  if (!s) return false;
+  if (s.kod) { const i = bodDne(s); return i >= 0 && !skryty[i]; }
+  return !!PODLE_ID[s.id] && !atlasSkryty(PODLE_ID[s.id]);
+}
 function svatekDne(d){
-  const k = String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0"), s = DNY && DNY[k];
-  return s && PODLE_ID[s.id] && !atlasSkryty(PODLE_ID[s.id]) ? s : null;
+  if (!DNY) return null;
+  const s = DNY[klicDne(d)], s2 = DNY[klicPohyblivy(d)];
+  return platnyDen(s) ? s : platnyDen(s2) ? s2 : null;
+}
+/* tečka rejstříku jako Jazyk dne (esperanto, latina): jméno z rejstříku, pozdrav a výslovnost z dny-jazyku.json */
+function jazykZDne(s){
+  if (!s.kod) return PODLE_ID[s.id];
+  const i = bodDne(s);
+  return {id: s.kod, n: jmenoBodu(i), pis: s.pozdrav, prep: s.vyslovnost ? s.vyslovnost[T.lang] : "", kod: s.jazyk || "", bod: i};
 }
 function jazykCesty(den){
   for (let n = 0; n < CESTA.length; n++) { const j = CESTA[((den - n) % CESTA.length + CESTA.length) % CESTA.length]; if (!atlasSkryty(j)) return j; }
@@ -223,10 +244,10 @@ function smerCesty(a, b){                  /* směr a vzdálenost z bodu a do bo
 }
 function jazykDne(){
   const dnes = new Date(), den = mistniDen(dnes), s = svatekDne(dnes);
-  if (s) return {j: PODLE_ID[s.id], duvod: s[T.lang]};
+  if (s) return {j: jazykZDne(s), duvod: s[T.lang]};
   const j = jazykCesty(den);
   if (!j) return null;
-  const vcera = new Date(dnes.getTime() - 864e5), sv = svatekDne(vcera), pred = sv ? PODLE_ID[sv.id] : jazykCesty(den - 1);
+  const vcera = new Date(dnes.getTime() - 864e5), sv = svatekDne(vcera), pred = sv ? jazykZDne(sv) : jazykCesty(den - 1);
   if (vcera.getMonth() === 8 && vcera.getDate() === 26) return {j: j, duvod: T.cestaPoDniJazyku};   // včera byl Evropský den jazyků, ne Jazyk dne
   if (!pred || pred === j) return {j: j, duvod: T.cestaUvod};
   const c = smerCesty(stredJazyka(pred), stredJazyka(j));
@@ -286,7 +307,9 @@ function kartaDneJazyku(){
   b1.addEventListener("click", function(){ spustEU("evropa"); });
   const b2 = prvek("button", "dj-tl", T.denJazykuEU); b2.type = "button";
   b2.addEventListener("click", function(){ spustEU(); });
-  akce.appendChild(b1); akce.appendChild(b2); k.appendChild(akce);
+  const b3 = prvek("button", "dj-tl", T.kalendarOdkaz); b3.type = "button";
+  b3.addEventListener("click", function(){ otevriKalendar(); });
+  akce.appendChild(b1); akce.appendChild(b2); akce.appendChild(b3); k.appendChild(akce);
   const m = prvek("div", "dj-jazyky");
   jazyky.forEach(function(j){
     const b = prvek("button", "dj-j"); b.type = "button";
@@ -315,15 +338,20 @@ function postavPolici(filtr){
       st.appendChild(document.createTextNode(T.jazykDne + " · " + new Intl.DateTimeFormat(T.locale, {day: "numeric", month: "long"}).format(new Date())));
       tl.appendChild(st);
       const pz = prvek("span", "jd-pozdrav", d.pis); if (d.kod) pz.lang = d.kod; tl.appendChild(pz);
-      tl.appendChild(prvek("span", "jd-nazev", d.n + " · " + d.prep));
+      tl.appendChild(prvek("span", "jd-nazev", d.prep ? d.n + " · " + d.prep : d.n));
       if (dd.duvod) { const pr = prvek("span", "jd-proc"); pr.appendChild(prvek("b", null, T.jazykDneProc + " ")); pr.appendChild(document.createTextNode(dd.duvod)); tl.appendChild(pr); }
       if (d.fakt) tl.appendChild(prvek("span", "jd-fakt", d.fakt));
       const cta = prvek("span", "jd-akce", T.jazykDneUkaz);
       cta.insertAdjacentHTML("beforeend", '<svg aria-hidden="true"><use href="#i-dal"/></svg>');
       tl.appendChild(cta);
       if (KRAJINY[d.id] && typeof AKVARELY !== "undefined") { const m = prvek("span", "jd-malba"); vlozMalbu(m, d.id); tl.insertBefore(m, tl.firstChild); tl.classList.add("s-malbou"); }
-      tl.addEventListener("click", function(){ vyber(d.id); });
+      tl.addEventListener("click", function(){ if (d.bod >= 0) vyberBod(d.bod); else vyber(d.id); });
       seznam.appendChild(tl);
+      const kl = prvek("button", "jd-kalendar"); kl.type = "button"; kl.setAttribute("aria-haspopup", "dialog");
+      kl.innerHTML = '<svg aria-hidden="true"><use href="#i-kalendar"/></svg>';
+      kl.appendChild(document.createTextNode(T.kalendarOdkaz));
+      kl.addEventListener("click", otevriKalendar);
+      seznam.appendChild(kl);
     }
   }
   /* celý rejstřík: jazyky z atlasu jako dlaždice s pozdravem, ostatní tečky menší; kreslí se po dávkách */
@@ -950,13 +978,12 @@ function kresliPlochu(c, cx, cy, r){
   const a = Math.max(0, Math.min(1, (1.5 - r / Math.max(1, polomerZaklad)) / 0.5));
   if (!a) return;
   c.save(); c.globalAlpha = a;
-  const hy = cy + r * 0.55;                                      // obzor za koulí
+  const hy = cy + r * 0.55;                                      // odkud plocha začíná (linku obzoru uživatel nechtěl)
   let g;
   if (desktop.matches) {                  // na telefonu je plátno úzké a plocha by vypadala jako šedý obdélník: jen stín
   g = c.createLinearGradient(0, hy, 0, vyska);
   g.addColorStop(0, "rgba(0,0,0,0)"); g.addColorStop(0.3, barvy.podlaha); g.addColorStop(0.75, barvy["podlaha-2"]); g.addColorStop(1, "rgba(0,0,0,0)");   // k okraji plátna vybledne (na telefonu nekončí hranou)
   c.fillStyle = g; c.fillRect(0, hy, sirka, vyska - hy);
-  c.fillStyle = barvy.obzor; c.fillRect(sirka * 0.06, hy, sirka * 0.88, 1);
   }
   const sy = cy + r * 1.14, sw = r * 0.95;                       // měkký stín: kruhový přechod zploštělý do elipsy
   c.translate(cx, sy); c.scale(1, 0.12);
@@ -1875,6 +1902,7 @@ function prectiOdkaz(){
   if (!h || h === kodVyberu()) return;
   if (h.toLowerCase() === "eulang") { spustEU(); return; }
   if (/^(o-datech|about-data)$/i.test(h)) { otevriODatech(); return; }
+  if (/^(kalendar|language-days)$/i.test(h)) { otevriKalendar(); return; }
   if (/^mellon(~|$)/i.test(h)) { otevriBranu(); const v = h.split("~")[1]; if (v) ukazVymysleny(v); return; }
   if (h.indexOf("~") > 0) {
     const d = h.split("~"), najdi = function(k){ return PODLE_ID[k] ? jazykAtlasu(k) : PODLE_KODU.has(k) ? jazykBodu(PODLE_KODU.get(k)) : null; };
@@ -2322,6 +2350,67 @@ function otevriODatech(){
   oDatech.querySelector(".od-telo").scrollTop = 0;
 }
 $("tl-o-datech").addEventListener("click", otevriODatech);
+/* ---------- kalendář jazykových dnů: všechny význačné dny Jazyka dne, klik vybere jazyk (přání uživatele 25. 9. 2026) ---------- */
+const kalendar = $("kalendar");
+function postavKalendar(){
+  const K = T.kalendar, dnes = new Date(), dnesKlic = String(dnes.getMonth() + 1).padStart(2, "0") + "-" + String(dnes.getDate()).padStart(2, "0");
+  kalendar.textContent = "";
+  const hlava = prvek("div", "od-hlava");
+  const h = prvek("h2", null, K.nadpis); h.id = "kal-nadpis"; hlava.appendChild(h);
+  const x = prvek("button", "zavrit"); x.type = "button"; x.setAttribute("aria-label", T.oDatech.zavrit);
+  x.innerHTML = '<svg aria-hidden="true"><use href="#i-krizek"/></svg>'; x.addEventListener("click", function(){ kalendar.close(); });
+  hlava.appendChild(x); kalendar.appendChild(hlava);
+  const telo = prvek("div", "od-telo");
+  telo.appendChild(prvek("p", "od-uvod", K.uvod));
+  const rok = dnes.getFullYear();
+  const dny = Object.keys(DNY).concat(["09-26"]).map(function(k){       // pohyblivé dny („09-so2“) na letošní datum
+    const d = /^\d\d-\d\d$/.test(k) ? new Date(rok, +k.slice(0, 2) - 1, +k.slice(3)) : dataPohyblivehoDne(k, rok);
+    return {k: k, d: d, t: klicDne(d)};
+  }).sort(function(a, b){ return a.d - b.d; });
+  let mesic = -1, seznamM = null, cil = null;
+  dny.forEach(function(x){
+    const k = x.k, m = x.d.getMonth() + 1, den = x.d.getDate(), edl = k === "09-26", s = DNY[k];
+    const j = edl ? null : s.kod ? (bodDne(s) >= 0 ? jazykZDne(s) : null) : PODLE_ID[s.id];
+    if (!edl && !j) return;
+    if (m !== mesic) {
+      mesic = m;
+      telo.appendChild(prvek("h3", null, new Date(2026, m - 1, 1).toLocaleDateString(T.locale, {month: "long"})));
+      seznamM = prvek("ul", "kal-seznam"); telo.appendChild(seznamM);
+    }
+    const jeDnes = x.t === dnesKlic;
+    const li = prvek("li"), b = prvek("button", "kal-den" + (jeDnes ? " dnes" : "")); b.type = "button";
+    b.appendChild(prvek("span", "kal-datum", T.lang === "cs" ? den + ". " + m + "." : new Date(2026, m - 1, den).toLocaleDateString(T.locale, {day: "numeric", month: "short"})));
+    const st = prvek("span", "kal-stred");
+    if (edl) { st.appendChild(prvek("b", "kal-jazyk", T.denJazykuNadpis)); st.appendChild(prvek("span", "kal-proc", K.edl)); }
+    else {
+      const jm = prvek("b", "kal-jazyk"); const pz = prvek("span", "kal-pz", j.pis); if (j.kod) pz.lang = j.kod; pz.dir = "auto";
+      jm.appendChild(pz); jm.appendChild(document.createTextNode(" " + j.n)); st.appendChild(jm);
+      st.appendChild(prvek("span", "kal-proc", s[T.lang]));
+    }
+    if (jeDnes) st.appendChild(prvek("span", "kal-dnes", K.dnes));
+    b.appendChild(st);
+    b.addEventListener("click", function(){
+      kalendar.close();
+      if (edl) { spustEU("evropa"); return; }
+      if (j.bod >= 0) { if (skryty[j.bod]) zrusFiltry(); vyberBod(j.bod); return; }
+      if (atlasSkryty(j)) zrusFiltry();
+      vyber(j.id);
+    });
+    li.appendChild(b); seznamM.appendChild(li);
+    if (!cil && x.t >= dnesKlic) cil = b;        // otevře se u dnešního nebo nejbližšího dalšího dne
+  });
+  telo.appendChild(prvek("p", "kal-pozn", K.ostatni));
+  kalendar.appendChild(telo);
+  return cil;
+}
+function otevriKalendar(){
+  const cil = postavKalendar();
+  if (kalendar.showModal) { if (!kalendar.open) kalendar.showModal(); } else kalendar.setAttribute("open", "");
+  const telo = kalendar.querySelector(".od-telo");
+  telo.scrollTop = cil ? Math.max(0, cil.offsetTop - telo.offsetTop - 60) : 0;
+}
+$("tl-kalendar-pat").addEventListener("click", otevriKalendar);
+kalendar.addEventListener("click", function(e){ if (e.target === kalendar) kalendar.close(); });
 oDatech.addEventListener("click", function(e){ if (e.target === oDatech) oDatech.close(); });   // klik vedle okna zavře
 const puvodniOdkaz = odkazJinam.getAttribute("href");
 function prelozStranku(){
@@ -2342,6 +2431,7 @@ function prelozStranku(){
   oj.textContent = T.stranky.vsechnyOdkaz;
   oj.setAttribute("href", korenWebu + (T.lang === "en" ? "en/languages/" : "jazyky/"));
   if (oDatech.open) postavODatech();
+  if (kalendar.open) postavKalendar();
   const jiny = T.lang === "cs" ? "en" : "cs";
   odkazJinam.setAttribute("hreflang", jiny); odkazJinam.setAttribute("lang", jiny);
   obnovOdkazJinam();

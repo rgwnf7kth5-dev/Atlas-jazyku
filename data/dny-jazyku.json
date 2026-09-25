@@ -1,5 +1,5 @@
 {
- "_pozn": "Význačné dny pro Jazyk dne: MM-DD → jazyk atlasu a důvod česky i anglicky. Důvod musí být pravdivý a ověřený. Ostatní dny Jazyk dne cestuje kolem světa (app.js, cestaKolemSveta). 26. 9. je místo Jazyka dne Evropský den jazyků.",
+ "_pozn": "Význačné dny pro Jazyk dne a kalendář: klíč MM-DD (pevné datum) nebo MM-soN (N-tá sobota v měsíci; po ut st ct pa so ne). Hodnota: id jazyka atlasu, nebo kod (glottocode tečky rejstříku) s pozdrav, jazyk (kód pro lang) a vyslovnost {cs, en}; důvod cs a en. Důvod musí být pravdivý a ověřený. Ostatní dny Jazyk dne cestuje kolem světa (app.js). 26. 9. je místo Jazyka dne Evropský den jazyků.",
  "01-01": {
   "id": "sk",
   "cs": "1. ledna 1993 vznikla samostatná Slovenská republika a slovenština se stala jejím úředním jazykem.",
@@ -9,6 +9,11 @@
   "id": "hi",
   "cs": "Dnes je Světový den hindštiny. Připomíná první světovou konferenci o hindštině, která začala 10. ledna 1975.",
   "en": "Today is World Hindi Day. It marks the first World Hindi Conference, which opened on 10 January 1975."
+ },
+ "01-15": {
+  "id": "ko",
+  "cs": "V Severní Koreji je dnes Den čosongülu – tak se tam říká korejskému písmu hangul.",
+  "en": "Today North Korea celebrates Chosŏn'gŭl Day, its name for the Korean alphabet hangul."
  },
  "02-06": {
   "id": "se",
@@ -155,6 +160,17 @@
   "cs": "Dnes je Den Nunavutu, kanadského území, kde se nejvíc mluví inuktitutem.",
   "en": "Today is Nunavut Day. In this Canadian territory most people speak Inuktitut."
  },
+ "07-26": {
+  "kod": "espe1235",
+  "pozdrav": "Saluton!",
+  "jazyk": "eo",
+  "vyslovnost": {
+   "cs": "salúton",
+   "en": "sah-LOO-tohn"
+  },
+  "cs": "Dnes je Den esperanta. 26. července 1887 vydal L. L. Zamenhof první učebnici tohoto mezinárodního plánovaného jazyka.",
+  "en": "Today is Esperanto Day. On 26 July 1887 L. L. Zamenhof published the first textbook of this international planned language."
+ },
  "07-28": {
   "id": "fo",
   "cs": "Na Faerských ostrovech dnes začíná Ólavsøka, jejich státní svátek.",
@@ -205,15 +221,36 @@
   "cs": "Dnes je Den nezávislosti Papuy Nové Guineje.",
   "en": "Today is Independence Day in Papua New Guinea."
  },
+ "09-19": {
+  "id": "en",
+  "cs": "Dnes je Mezinárodní den pirátské řeči, žertovný svátek, kdy lidé po celém světě mluví jako piráti: „Ahoy, matey!“",
+  "en": "Today is International Talk Like a Pirate Day, a joke holiday when people all over the world talk like pirates: “Ahoy, matey!”"
+ },
  "09-23": {
   "id": "czj",
-  "cs": "Dnes je Mezinárodní den znakových jazyků (OSN).",
-  "en": "Today is the International Day of Sign Languages (UN)."
+  "cs": "Dnes je Mezinárodní den znakových jazyků (OSN). Na světě je přes 300 znakových jazyků a každý má vlastní gramatiku.",
+  "en": "Today is the International Day of Sign Languages (UN). There are more than 300 sign languages in the world, each with its own grammar."
  },
  "09-24": {
   "id": "zu",
   "cs": "Dnes je v Jižní Africe Den dědictví, dříve Den krále Šaky, zakladatele zulské říše.",
   "en": "Today is Heritage Day in South Africa, once Shaka Day after the founder of the Zulu kingdom."
+ },
+ "09-30": {
+  "kod": "lati1261",
+  "pozdrav": "Salve!",
+  "jazyk": "la",
+  "vyslovnost": {
+   "cs": "salve",
+   "en": "SAL-weh"
+  },
+  "cs": "Dnes je Mezinárodní den překladu (OSN), svátek svatého Jeronýma, patrona překladatelů. Kolem roku 400 přeložil Bibli do latiny.",
+  "en": "Today is International Translation Day (UN), the feast of St Jerome, patron of translators. Around the year 400 he translated the Bible into Latin."
+ },
+ "09-so2": {
+  "id": "de",
+  "cs": "Dnes je Den německého jazyka (Tag der deutschen Sprache), který vyhlásil Spolek pro německý jazyk. Slaví se vždy druhou sobotu v září.",
+  "en": "Today is German Language Day (Tag der deutschen Sprache), started by the German Language Association. It is always the second Saturday in September."
  },
  "10-03": {
   "id": "de",
@@ -222,8 +259,8 @@
  },
  "10-09": {
   "id": "ko",
-  "cs": "Dnes je v Jižní Koreji Den hangulu, korejského písma.",
-  "en": "Today is Hangul Day in South Korea, the day of the Korean alphabet."
+  "cs": "Dnes je v Jižní Koreji Den hangulu, korejského písma. Dal ho v 15. století vytvořit král Sedžong Veliký.",
+  "en": "Today is Hangul Day in South Korea, the day of the Korean alphabet created in the 15th century under King Sejong the Great."
  },
  "10-10": {
   "id": "fj",

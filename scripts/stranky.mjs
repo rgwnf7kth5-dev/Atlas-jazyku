@@ -33,7 +33,7 @@ function lidi(lang, T, n) {
   const g = Math.round(n / 1e8) / 10; return cislo(lang, g, Math.floor(g) === g ? 0 : 1) + " " + tvar(lang, g, T.miliardy);
 }
 
-export function vyrobStranky({ KOREN, WEB, UI, jazyky, glottolog, podrobnosti, nazvyZemi, ikona, fontyOdkaz, verze }) {
+export function vyrobStranky({ KOREN, WEB, UI, jazyky, glottolog, podrobnosti, nazvyZemi, ikona, fontyOdkaz, verze, dny }) {
   const DIST = path.join(KOREN, "dist");
   const bodPodleKodu = new Map(glottolog.body.map((b, i) => [b[6], i]));
   const bodJazyka = {};
@@ -53,7 +53,7 @@ export function vyrobStranky({ KOREN, WEB, UI, jazyky, glottolog, podrobnosti, n
       adresy[lang][j.id] = (lang === "cs" ? "/jazyk/" : "/en/language/") + s + "/";
     }
   }
-  const prehled = { cs: "/jazyky/", en: "/en/languages/" }, oDatech = { cs: "/o-datech/", en: "/en/about-data/" }, domov = { cs: "/", en: "/en/" };
+  const prehled = { cs: "/jazyky/", en: "/en/languages/" }, oDatech = { cs: "/o-datech/", en: "/en/about-data/" }, kalendarA = { cs: "/kalendar-jazyku/", en: "/en/language-days/" }, domov = { cs: "/", en: "/en/" };
 
   /* příbuzní v atlasu: nejhlubší společný předek ve stromu Glottologu (jako oblouky na glóbu) */
   const cesty = {};
@@ -111,6 +111,11 @@ h2{font:600 1.35rem var(--nadpis); margin:30px 0 8px}
 .text p{max-width:46em; color:var(--text2)} .text .uvod{color:var(--text); font-size:1.08rem}
 table{border-collapse:collapse; width:100%; max-width:46em; font-size:.92rem}
 td{padding:7px 10px 7px 0; border-bottom:1px solid var(--linka); vertical-align:top}
+ul.kal{list-style:none; padding:0; margin:0 0 8px; max-width:46em}
+ul.kal li{display:flex; gap:14px; padding:9px 0; border-bottom:1px solid var(--linka)}
+.kal-d{flex:none; width:5.5em; font:600 1rem var(--nadpis)}
+ul.kal a{font-weight:600; text-decoration:none} ul.kal a:hover{text-decoration:underline}
+ul.kal b{font-family:var(--nadpis)} .kal-p{font-size:.92rem; color:var(--text2)}
 footer{max-width:980px; margin:0 auto; padding:18px 20px 32px; border-top:1px solid var(--linka); font-size:.85rem; color:var(--text2)}
 footer a{color:inherit}
 @media (max-width:760px){.jazyk{grid-template-columns:1fr; gap:18px} .hlava .domu{font-size:1.3rem} .hlava .domu svg{width:34px; height:34px}}
@@ -157,7 +162,7 @@ footer a{color:inherit}
 ${obsah}
 </main>
 <footer>
- <p><a href="${prehled[lang]}">${escHtml(S.vsechnyOdkaz)}</a> · <a href="${oDatech[lang]}">${escHtml(T.oDatech.odkaz)}</a> · <a href="${domov[lang]}">${escHtml(S.globus)}</a></p>
+ <p><a href="${prehled[lang]}">${escHtml(S.vsechnyOdkaz)}</a> · <a href="${kalendarA[lang]}">${escHtml(T.kalendarOdkaz)}</a> · <a href="${oDatech[lang]}">${escHtml(T.oDatech.odkaz)}</a> · <a href="${domov[lang]}">${escHtml(S.globus)}</a></p>
  <p>${escHtml(T.zpetna)} <a href="mailto:${escHtml(T.zpetnaAdresa)}?subject=${encodeURIComponent(T.zpetnaPredmet)}">${escHtml(T.zpetnaAdresa)}</a></p>
  <p>${escHtml(T.zdroje)}</p>
 </footer>
@@ -230,6 +235,36 @@ ${O.oddily.map(o => `<h2>${escHtml(dosad(o.h))}</h2>\n${o.p.map(p => `<p>${escHt
 <table><tbody>${O.verze.map(v => `<tr>${v.map(b => `<td>${escHtml(dosad(b))}</td>`).join("")}</tr>`).join("")}</tbody></table>
 </div>` }));
     vsechny.push([oDatech[lang], oDatech[jiny], lang]);
+
+    /* kalendář jazykových dnů: stejný seznam jako okno v aplikaci, odkazy na stránky jazyků */
+    const K = T.kalendar, TYDEN = ["ne", "po", "ut", "st", "ct", "pa", "so"], rok = 2026;
+    const denPohyblivy = k => { const m = +k.slice(0, 2) - 1, wd = TYDEN.indexOf(k.slice(3, 5)), n = +k.slice(5), p1 = new Date(rok, m, 1);
+      return new Date(rok, m, 1 + (wd - p1.getDay() + 7) % 7 + (n - 1) * 7); };
+    const radky = Object.keys(dny).filter(k => k !== "_pozn").concat(["09-26"]).map(k => ({ k, pohyb: !/^\d\d-\d\d$/.test(k),
+      d: /^\d\d-\d\d$/.test(k) ? new Date(rok, +k.slice(0, 2) - 1, +k.slice(3)) : denPohyblivy(k) })).sort((a, b) => a.d - b.d);
+    const nazevDne = (k, d) => k.pohyb ? S.druhaSobota : lang === "cs" ? d.getDate() + ". " + (d.getMonth() + 1) + "." : d.toLocaleDateString("en-GB", { day: "numeric", month: "short" });
+    let mes = -1, html = "";
+    for (const x of radky) {
+      if (x.d.getMonth() !== mes) { if (mes >= 0) html += "</ul>\n"; mes = x.d.getMonth(); html += `<h2>${escHtml(new Date(rok, mes, 1).toLocaleDateString(T.locale, { month: "long" }))}</h2>\n<ul class="kal">`; }
+      let odkaz, jmeno, pozdrav = "", lg = "", proc;
+      if (x.k === "09-26") { odkaz = domov[lang] + "?den-jazyku"; jmeno = T.denJazykuNadpis; proc = K.edl; }
+      else { const s2 = dny[x.k]; proc = s2[lang];
+        if (s2.kod) { const b2 = glottolog.body.find(b => b[6] === s2.kod); odkaz = domov[lang] + "#" + s2.kod; jmeno = (lang === "cs" && podrobnosti.radky[glottolog.body.indexOf(b2)][9]) || b2[0]; pozdrav = s2.pozdrav; lg = s2.jazyk || ""; }
+        else { const j = jazyky.find(j => j.id === s2.id); odkaz = adresy[lang][j.id]; jmeno = j[lang].nazev; pozdrav = j[lang].pozdrav || j.pozdrav; lg = j.kod || ""; } }
+      if (jmeno) jmeno = jmeno.charAt(0).toUpperCase() + jmeno.slice(1);
+      html += `<li><span class="kal-d">${escHtml(nazevDne(x, x.d))}</span><span><a href="${odkaz}">${pozdrav ? `<b dir="auto" lang="${escHtml(lg)}">${escHtml(pozdrav)}</b> ` : ""}${escHtml(jmeno)}</a><br><span class="kal-p">${escHtml(proc)}</span></span></li>\n`;
+    }
+    html += "</ul>";
+    zapis(kalendarA[lang], stranka({ lang, adresa: kalendarA[lang], jinaAdresa: kalendarA[jiny], titulek: K.nadpis + " · " + T.nazev,
+      popis: K.uvod, obrazek: obrazekWebu(lang),
+      obsah: `<nav class="drobky" aria-label="${escHtml(S.drobky)}"><a href="${domov[lang]}">${escHtml(T.nazev)}</a> › ${escHtml(K.nadpis)}</nav>
+<div class="text">
+<h1>${escHtml(K.nadpis)}</h1>
+<p class="uvod">${escHtml(K.uvod)}</p>
+${html}
+<p>${escHtml(K.ostatni)}</p>
+</div>` }));
+    vsechny.push([kalendarA[lang], kalendarA[jiny], lang]);
   }
   return { adresy, prehled, stranky: vsechny };
 }

@@ -515,7 +515,8 @@
   "kdeMluvi": "Where it is spoken",
   "kdeZnakuje": "Where it is signed",
   "aDalsi": "and {n} more",
-  "drobky": "Breadcrumbs"
+  "drobky": "Breadcrumbs",
+  "druhaSobota": "2nd Saturday of September"
  },
  "zpetna": "Got an idea, or is something not working? Write to",
  "zpetnaAdresa": "info@atlasjazyku.cz",
@@ -542,5 +543,13 @@
   "west",
   "north-west"
  ],
- "cestaPoDniJazyku": "After yesterday's European Day of Languages we continue our trip around the world, each day to the next nearest language."
+ "cestaPoDniJazyku": "After yesterday's European Day of Languages we continue our trip around the world, each day to the next nearest language.",
+ "kalendarOdkaz": "Calendar of language days",
+ "kalendar": {
+  "nadpis": "Calendar of language days",
+  "uvod": "Days of the year that belong to a language: UN and UNESCO language days, national language days, holidays and anniversaries. On that day the language is the Language of the Day. Click any of them to see it on the globe.",
+  "edl": "European Day of Languages (Council of Europe). Instead of one Language of the Day, all European languages in the atlas are shown at once.",
+  "dnes": "today",
+  "ostatni": "On all other days the Language of the Day travels around the world, each day to the next nearest language."
+ }
 }

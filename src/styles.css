@@ -917,3 +917,21 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
   --stin-plochy:rgba(0,0,0,.62); --stin-plochy-2:rgba(0,0,0,.3)}
 :root[data-theme="light"]{--podlaha:rgba(120,110,90,.09); --podlaha-2:rgba(120,110,90,.15); --obzor:rgba(60,60,80,.13);
   --stin-plochy:rgba(40,44,70,.34); --stin-plochy-2:rgba(40,44,70,.16)}
+/* kalendář jazykových dnů: odkaz pod Jazykem dne a okno se seznamem dnů */
+.jd-kalendar{display:inline-flex; align-items:center; gap:7px; align-self:flex-start; margin:8px 0 2px 4px; padding:4px 2px; border:0; background:none;
+  font:inherit; font-size:.84rem; font-weight:600; color:var(--cyan); cursor:pointer; text-decoration:underline; text-underline-offset:2px}
+.jd-kalendar svg{width:16px; height:16px; flex:none}
+.jd-kalendar:hover{text-decoration-thickness:2px}
+.kal-seznam{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:4px}
+.kal-den{display:flex; align-items:flex-start; gap:14px; width:100%; padding:9px 12px; border:1px solid var(--linka); border-radius:12px; background:var(--plocha);
+  font:inherit; text-align:left; color:var(--text); cursor:pointer}
+.kal-den:hover{background:var(--plocha2); border-color:var(--linka2)}
+.kal-den:focus-visible{outline:2px solid var(--cyan); outline-offset:2px}
+.kal-den.dnes{border-color:var(--akcent); box-shadow:inset 3px 0 0 var(--akcent)}
+.kal-datum{flex:none; width:3.6em; font-family:var(--pismo-nadpis); font-weight:600; font-size:1.05rem; line-height:1.3; color:var(--text)}
+.kal-stred{display:flex; flex-direction:column; gap:2px; min-width:0}
+.kal-jazyk{font-weight:700; font-size:.95rem}
+.kal-pz{font-family:var(--pismo-pozdrav); font-weight:700; margin-right:4px}
+.kal-proc{font-size:.84rem; line-height:1.45; color:var(--text2)}
+.kal-dnes{align-self:flex-start; margin-top:3px; padding:1px 8px; border-radius:99px; background:var(--akcent); color:var(--na-akcent); font-size:.72rem; font-weight:700}
+.kal-pozn{margin-top:18px !important; font-style:italic}
