@@ -5,16 +5,18 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: [.github/workflows/diagnoza-webu.yml]
+    paths: [.github/workflows/diagnoza-webu.yml, netlify.toml, 'netlify/**']
 jobs:
   diagnoza:
     runs-on: ubuntu-latest
     steps:
       - name: Kontrola
         run: |
+          set +e
+          [ "${{ github.event_name }}" = push ] && sleep 200   # Netlify mezitím nasadí novou verzi
           UA_X="Twitterbot/1.0"
           UA_FB="facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)"
-          for u in http://atlasjazyku.cz/ https://atlasjazyku.cz/ "https://atlasjazyku.cz/?a" https://www.atlasjazyku.cz/ http://thelanguageatlas.com/ https://thelanguageatlas.com/ https://www.thelanguageatlas.com/ https://atlasoflanguages.netlify.app/ https://atlasoflanguages.netlify.app/en/; do
+          for u in http://atlasjazyku.cz/ https://atlasjazyku.cz/ https://thelanguageatlas.com/ https://www.thelanguageatlas.com/ https://thelanguageatlas.com/language/czech/ https://thelanguageatlas.com/en/guide/ https://thelanguageatlas.com/languages/ https://atlasoflanguages.netlify.app/ https://atlasoflanguages.netlify.app/en/; do
             echo "=================== $u"
             curl -sS -m 30 -A "$UA_X" -o /tmp/s.html -D - -L "$u" -w "KONEC: %{http_code} %{url_effective} ssl_verify=%{ssl_verify_result}\n" 2>&1 | grep -iE "^HTTP|^location|^server|^x-nf|KONEC|curl:" || true
             grep -oE '<meta (property|name)="(og|twitter):[^"]*" content="[^"]*"|<link rel="canonical"[^>]*>' /tmp/s.html || echo "(žádné og značky)"
