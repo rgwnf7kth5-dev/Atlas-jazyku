@@ -52,6 +52,22 @@ dt{color:var(--text2)} dd{margin:0}
 h2{font:600 1.35rem var(--nadpis); margin:30px 0 8px}
 .fakt{font-size:1.1rem; max-width:44em}
 .mrizka{display:grid; grid-template-columns:repeat(auto-fill,minmax(170px,1fr)); gap:10px; padding:0; margin:0; list-style:none}
+.akce{display:flex; flex-wrap:wrap; align-items:center; gap:10px}
+.prehraj{display:inline-flex; align-items:center; gap:8px; padding:12px 20px; border-radius:999px; border:0; cursor:pointer; font:inherit; font-weight:700;
+  background:#1F4FB8; color:#fff}
+@media (prefers-color-scheme:dark){.prehraj{background:#4C7BE0}}
+.prehraj svg{width:18px; height:18px}
+.prehraj:focus-visible,.posl:focus-visible{outline:3px solid var(--text); outline-offset:3px}
+.zvuk-stav{margin:10px 0 0; font-size:.9rem; color:var(--text2)}
+.zvuk-stav.bublina{position:fixed; left:50%; bottom:18px; transform:translateX(-50%); z-index:10; max-width:min(520px, calc(100% - 32px)); margin:0;
+  padding:10px 16px; border-radius:14px; background:var(--karta); color:var(--text); border:1px solid var(--linka); box-shadow:0 12px 30px -12px rgba(0,0,0,.4)}
+.mrizka li{position:relative}
+.posl{position:absolute; top:8px; right:8px; width:34px; height:34px; display:grid; place-items:center; border-radius:50%; border:1px solid var(--linka);
+  background:var(--papir); color:var(--odkaz); cursor:pointer}
+.posl:hover{border-color:var(--odkaz)}
+.posl svg{width:16px; height:16px}
+.mrizka li:has(.posl) a{padding-right:48px}
+.mrizka a b{overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
 .mrizka a{display:block; padding:10px 14px; border-radius:14px; background:var(--karta); border:1px solid var(--linka); color:inherit; text-decoration:none}
 .mrizka a:hover,.mrizka a:focus-visible{border-color:var(--odkaz)}
 .mrizka b{display:block; font:600 1.25rem/1.25 var(--nadpis)}
@@ -83,14 +99,29 @@ footer a{color:inherit}
   <p class="cteme">say it: “kee-ah OH-rah”</p>
   <h1>Māori</h1>
   <p class="domaci">in its own words: te reo Māori</p>
-  <a class="tl" href="/en/#mi">Find it on the globe</a>
+  <div class="akce"><button type="button" class="prehraj" data-kod="mi-NZ" data-text="Kia ora!" data-prep="kee-ah OH-rah"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M4 9.2h3.4L12 5v14l-4.6-4.2H4z" fill="currentColor"/><path d="M16 9.4a3.7 3.7 0 0 1 0 5.2M18.7 6.7a7.5 7.5 0 0 1 0 10.6" stroke-linecap="round"/></svg><span>Listen</span></button><a class="tl" href="/en/#mi">Find it on the globe</a></div>
+  <p class="zvuk-stav" id="zvuk-stav" role="status" hidden></p>
   <dl><dt>Speakers</dt><dd>190 thousand</dd><dt>Family</dt><dd>Austronesian</dd><dt>Vitality</dt><dd>Definitely endangered</dd><dt>Where it is spoken</dt><dd>New Zealand</dd></dl>
  </div>
 </article>
 <h2>Fun fact</h2>
 <p class="fakt">“Kia ora” means “be well”, and in New Zealand even people who don't speak Māori say it.</p>
 <h2>Relatives in the atlas</h2>
-<ul class="mrizka"><li><a href="/en/language/tahitian/"><b dir="auto" lang="ty">Ia ora na!</b><span>Tahitian</span></a></li><li><a href="/en/language/hawaiian/"><b dir="auto" lang="haw">Aloha!</b><span>Hawaiian</span></a></li><li><a href="/en/language/rapa-nui/"><b dir="auto" lang="rap">Iorana!</b><span>Rapa Nui</span></a></li><li><a href="/en/language/samoan/"><b dir="auto" lang="sm">Talofa!</b><span>Samoan</span></a></li><li><a href="/en/language/tongan/"><b dir="auto" lang="to">Mālō e lelei!</b><span>Tongan</span></a></li><li><a href="/en/language/fijian/"><b dir="auto" lang="fj">Bula!</b><span>Fijian</span></a></li></ul>
+<ul class="mrizka"><li><a href="/en/language/tahitian/"><b dir="auto" lang="ty">Ia ora na!</b><span>Tahitian</span></a><button type="button" class="posl" data-kod="ty" data-text="Ia ora na!" data-prep="yah OH-rah nah" aria-label="Listen: Tahitian" title="Listen"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M4 9.2h3.4L12 5v14l-4.6-4.2H4z" fill="currentColor"/><path d="M16 9.4a3.7 3.7 0 0 1 0 5.2M18.7 6.7a7.5 7.5 0 0 1 0 10.6" stroke-linecap="round"/></svg></button></li><li><a href="/en/language/hawaiian/"><b dir="auto" lang="haw">Aloha!</b><span>Hawaiian</span></a><button type="button" class="posl" data-kod="haw" data-text="Aloha!" data-prep="ah-LOH-hah" aria-label="Listen: Hawaiian" title="Listen"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M4 9.2h3.4L12 5v14l-4.6-4.2H4z" fill="currentColor"/><path d="M16 9.4a3.7 3.7 0 0 1 0 5.2M18.7 6.7a7.5 7.5 0 0 1 0 10.6" stroke-linecap="round"/></svg></button></li><li><a href="/en/language/rapa-nui/"><b dir="auto" lang="rap">Iorana!</b><span>Rapa Nui</span></a><button type="button" class="posl" data-kod="rap" data-text="Iorana!" data-prep="yoh-RAH-nah" aria-label="Listen: Rapa Nui" title="Listen"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M4 9.2h3.4L12 5v14l-4.6-4.2H4z" fill="currentColor"/><path d="M16 9.4a3.7 3.7 0 0 1 0 5.2M18.7 6.7a7.5 7.5 0 0 1 0 10.6" stroke-linecap="round"/></svg></button></li><li><a href="/en/language/samoan/"><b dir="auto" lang="sm">Talofa!</b><span>Samoan</span></a><button type="button" class="posl" data-kod="sm" data-text="Talofa!" data-prep="tah-LOH-fah" aria-label="Listen: Samoan" title="Listen"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M4 9.2h3.4L12 5v14l-4.6-4.2H4z" fill="currentColor"/><path d="M16 9.4a3.7 3.7 0 0 1 0 5.2M18.7 6.7a7.5 7.5 0 0 1 0 10.6" stroke-linecap="round"/></svg></button></li><li><a href="/en/language/tongan/"><b dir="auto" lang="to">Mālō e lelei!</b><span>Tongan</span></a><button type="button" class="posl" data-kod="to" data-text="Mālō e lelei!" data-prep="MAH-loh eh leh-LAY" aria-label="Listen: Tongan" title="Listen"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M4 9.2h3.4L12 5v14l-4.6-4.2H4z" fill="currentColor"/><path d="M16 9.4a3.7 3.7 0 0 1 0 5.2M18.7 6.7a7.5 7.5 0 0 1 0 10.6" stroke-linecap="round"/></svg></button></li><li><a href="/en/language/fijian/"><b dir="auto" lang="fj">Bula!</b><span>Fijian</span></a><button type="button" class="posl" data-kod="fj" data-text="Bula!" data-prep="BOO-lah" aria-label="Listen: Fijian" title="Listen"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M4 9.2h3.4L12 5v14l-4.6-4.2H4z" fill="currentColor"/><path d="M16 9.4a3.7 3.7 0 0 1 0 5.2M18.7 6.7a7.5 7.5 0 0 1 0 10.6" stroke-linecap="round"/></svg></button></li></ul>
+<script>(function(){var T={"rodily":"A native-speaker voice from your device is reading it.","zalozni":"Your device doesn't have this language, so an English voice reads the pronunciation. A native speaker sounds a little different.","zadny":"Your device has no voices. Try reading it yourself: “{x}”.","neumi":"This device can't read aloud. Try saying it yourself: “{x}”.","chyba":"That didn't play. Try reading it yourself: “{x}”.","posloucha":"Listening…","znovu":"Once more","hlas":"en-GB","en":true},hlasy=[],ss=window.speechSynthesis;function nacti(){try{hlasy=ss.getVoices()||[]}catch(e){hlasy=[]}}
+if(ss){nacti();ss.addEventListener("voiceschanged",nacti)}
+function najdi(k){if(!k||!hlasy.length)return null;k=k.toLowerCase().replace("_","-");var z=k.split("-")[0],n=function(v){return v.lang.toLowerCase().replace("_","-")};
+return hlasy.filter(function(v){return n(v)===k})[0]||hlasy.filter(function(v){return n(v).split("-")[0]===z})[0]||null}
+var stav=document.getElementById("zvuk-stav");if(!stav){stav=document.createElement("p");stav.id="zvuk-stav";stav.className="zvuk-stav bublina";stav.setAttribute("role","status");stav.hidden=true;document.body.appendChild(stav)}
+var casStav=0;function rekni(t,x){stav.hidden=false;stav.textContent=t.replace("{x}",x);if(stav.classList.contains("bublina")){clearTimeout(casStav);casStav=setTimeout(function(){stav.hidden=true},6000)}}
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest("button[data-text]");if(!b)return;e.preventDefault();
+var prep=b.dataset.prep,sp=b.querySelector("span");if(!ss){rekni(T.neumi,prep);return}nacti();
+var r=najdi(b.dataset.kod),z=najdi(T.hlas),text,hlas,rych;
+if(r){text=b.dataset.text.replace(/[!¡?¿]/g,"");hlas=r;rych=.8;rekni(T.rodily,"")}
+else if(z&&prep){text=T.en?prep.toLowerCase():prep;hlas=z;rych=.75;rekni(T.zalozni,"")}
+else{rekni(T.zadny,prep);return}
+try{var u=new SpeechSynthesisUtterance(text);u.voice=hlas;u.lang=hlas.lang;u.rate=rych;if(sp)sp.textContent=T.posloucha;
+u.onend=function(){if(sp)sp.textContent=T.znovu};u.onerror=function(){if(sp)sp.textContent=T.znovu;rekni(T.chyba,prep)};ss.cancel();ss.speak(u)}catch(err){rekni(T.chyba,prep)}});})();</script>
 </main>
 <footer>
  <p><a href="/en/languages/">Languages with a greeting</a> · <a href="/en/language-days/">Calendar of language days</a> · <a href="/en/guide/">Full guide</a> · <a href="/en/about-data/">About the data</a> · <a href="/en/">Spinning globe</a></p>

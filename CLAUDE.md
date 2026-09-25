@@ -271,7 +271,10 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
   `/en/languages/`, O datech `/o-datech/` a `/en/about-data/`. Stránka je lehká (bez skriptu glóbu): malba,
   pozdrav, výslovnost, vlastní jméno, mluvčí, rodina, vitalita, státy, zajímavost, příbuzní v atlasu
   (nejhlubší společný předek jako oblouky; srbština, chorvatština a hmongština přes náhradní tečku) a tlačítko
-  „Najít na glóbu“ na `/#<id>`. Vlastní titulek, popis, canonical, hreflang a og:image = malba jazyka.
+  „Najít na glóbu“ na `/#<id>`. **Poslechni si to** je i tady (uživatel 25. 9. 2026: „musím proklikem až do glóbu,
+  to je blbost“): na stránce jazyka velké tlačítko, v přehledu `/jazyky/` malý reproduktor v každé dlaždici; stejná
+  logika jako v app.js (rodilý hlas zařízení, jinak výslovnost hlasem stránky, jinak text), hláška pod tlačítkem nebo
+  jako bublina. Bez kódu jazyka a u znakového jazyka se tlačítko neukazuje. Vlastní titulek, popis, canonical, hreflang a og:image = malba jazyka.
   Adresa je z názvu bez diakritiky; build spadne, když by dva jazyky měly stejnou. Všechny jsou v `sitemap.xml`.
   Na hlavní stránce vede v patičce seznamu odkaz „Jazyky s pozdravem“ (jen web; v artefaktu a z disku skrytý).
 - **Malby jako obrázky**: `static/malby/<id>.jpg` (800 × 500, ~36 kB) vyrábí `scripts/malby.mjs` (Playwright,

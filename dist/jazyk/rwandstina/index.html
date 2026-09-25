@@ -52,6 +52,22 @@ dt{color:var(--text2)} dd{margin:0}
 h2{font:600 1.35rem var(--nadpis); margin:30px 0 8px}
 .fakt{font-size:1.1rem; max-width:44em}
 .mrizka{display:grid; grid-template-columns:repeat(auto-fill,minmax(170px,1fr)); gap:10px; padding:0; margin:0; list-style:none}
+.akce{display:flex; flex-wrap:wrap; align-items:center; gap:10px}
+.prehraj{display:inline-flex; align-items:center; gap:8px; padding:12px 20px; border-radius:999px; border:0; cursor:pointer; font:inherit; font-weight:700;
+  background:#1F4FB8; color:#fff}
+@media (prefers-color-scheme:dark){.prehraj{background:#4C7BE0}}
+.prehraj svg{width:18px; height:18px}
+.prehraj:focus-visible,.posl:focus-visible{outline:3px solid var(--text); outline-offset:3px}
+.zvuk-stav{margin:10px 0 0; font-size:.9rem; color:var(--text2)}
+.zvuk-stav.bublina{position:fixed; left:50%; bottom:18px; transform:translateX(-50%); z-index:10; max-width:min(520px, calc(100% - 32px)); margin:0;
+  padding:10px 16px; border-radius:14px; background:var(--karta); color:var(--text); border:1px solid var(--linka); box-shadow:0 12px 30px -12px rgba(0,0,0,.4)}
+.mrizka li{position:relative}
+.posl{position:absolute; top:8px; right:8px; width:34px; height:34px; display:grid; place-items:center; border-radius:50%; border:1px solid var(--linka);
+  background:var(--papir); color:var(--odkaz); cursor:pointer}
+.posl:hover{border-color:var(--odkaz)}
+.posl svg{width:16px; height:16px}
+.mrizka li:has(.posl) a{padding-right:48px}
+.mrizka a b{overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
 .mrizka a{display:block; padding:10px 14px; border-radius:14px; background:var(--karta); border:1px solid var(--linka); color:inherit; text-decoration:none}
 .mrizka a:hover,.mrizka a:focus-visible{border-color:var(--odkaz)}
 .mrizka b{display:block; font:600 1.25rem/1.25 var(--nadpis)}
@@ -83,14 +99,29 @@ footer a{color:inherit}
   <p class="cteme">čteme „muraho“</p>
   <h1>Rwandština</h1>
   <p class="domaci">vlastním jménem: Ikinyarwanda</p>
-  <a class="tl" href="/#rw">Najít na glóbu</a>
+  <div class="akce"><button type="button" class="prehraj" data-kod="rw" data-text="Muraho!" data-prep="muraho"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M4 9.2h3.4L12 5v14l-4.6-4.2H4z" fill="currentColor"/><path d="M16 9.4a3.7 3.7 0 0 1 0 5.2M18.7 6.7a7.5 7.5 0 0 1 0 10.6" stroke-linecap="round"/></svg><span>Poslechni si to</span></button><a class="tl" href="/#rw">Najít na glóbu</a></div>
+  <p class="zvuk-stav" id="zvuk-stav" role="status" hidden></p>
   <dl><dt>Mluvčích</dt><dd>15 milionů</dd><dt>Rodina</dt><dd>nigerokonžská – bantuská</dd><dt>Vitalita</dt><dd>Bezpečný</dd><dt>Kde se mluví</dt><dd>Burundi, Demokratická republika Kongo, Rwanda, Tanzanie, Uganda</dd></dl>
  </div>
 </article>
 <h2>Zajímavost</h2>
 <p class="fakt">Rwanda je jedna z mála afrických zemí, kde skoro všichni mluví stejným jazykem.</p>
 <h2>Příbuzní v atlasu</h2>
-<ul class="mrizka"><li><a href="/jazyk/gandstina/"><b dir="auto" lang="lg">Ki kati!</b><span>Gandština</span></a></li><li><a href="/jazyk/svahilstina/"><b dir="auto" lang="sw-KE">Jambo!</b><span>Svahilština</span></a></li><li><a href="/jazyk/cicevstina/"><b dir="auto" lang="ny">Moni!</b><span>Čičevština</span></a></li><li><a href="/jazyk/sotstina/"><b dir="auto" lang="st">Lumela!</b><span>Sotština</span></a></li><li><a href="/jazyk/sonstina/"><b dir="auto" lang="sn">Mhoro!</b><span>Šonština</span></a></li><li><a href="/jazyk/tswanstina/"><b dir="auto" lang="tn">Dumela!</b><span>Tswanština</span></a></li></ul>
+<ul class="mrizka"><li><a href="/jazyk/gandstina/"><b dir="auto" lang="lg">Ki kati!</b><span>Gandština</span></a><button type="button" class="posl" data-kod="lg" data-text="Ki kati!" data-prep="ki kati" aria-label="Poslechni si to: Gandština" title="Poslechni si to"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M4 9.2h3.4L12 5v14l-4.6-4.2H4z" fill="currentColor"/><path d="M16 9.4a3.7 3.7 0 0 1 0 5.2M18.7 6.7a7.5 7.5 0 0 1 0 10.6" stroke-linecap="round"/></svg></button></li><li><a href="/jazyk/svahilstina/"><b dir="auto" lang="sw-KE">Jambo!</b><span>Svahilština</span></a><button type="button" class="posl" data-kod="sw-KE" data-text="Jambo!" data-prep="džambo" aria-label="Poslechni si to: Svahilština" title="Poslechni si to"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M4 9.2h3.4L12 5v14l-4.6-4.2H4z" fill="currentColor"/><path d="M16 9.4a3.7 3.7 0 0 1 0 5.2M18.7 6.7a7.5 7.5 0 0 1 0 10.6" stroke-linecap="round"/></svg></button></li><li><a href="/jazyk/cicevstina/"><b dir="auto" lang="ny">Moni!</b><span>Čičevština</span></a><button type="button" class="posl" data-kod="ny" data-text="Moni!" data-prep="moni" aria-label="Poslechni si to: Čičevština" title="Poslechni si to"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M4 9.2h3.4L12 5v14l-4.6-4.2H4z" fill="currentColor"/><path d="M16 9.4a3.7 3.7 0 0 1 0 5.2M18.7 6.7a7.5 7.5 0 0 1 0 10.6" stroke-linecap="round"/></svg></button></li><li><a href="/jazyk/sotstina/"><b dir="auto" lang="st">Lumela!</b><span>Sotština</span></a><button type="button" class="posl" data-kod="st" data-text="Lumela!" data-prep="dumela" aria-label="Poslechni si to: Sotština" title="Poslechni si to"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M4 9.2h3.4L12 5v14l-4.6-4.2H4z" fill="currentColor"/><path d="M16 9.4a3.7 3.7 0 0 1 0 5.2M18.7 6.7a7.5 7.5 0 0 1 0 10.6" stroke-linecap="round"/></svg></button></li><li><a href="/jazyk/sonstina/"><b dir="auto" lang="sn">Mhoro!</b><span>Šonština</span></a><button type="button" class="posl" data-kod="sn" data-text="Mhoro!" data-prep="mhoro" aria-label="Poslechni si to: Šonština" title="Poslechni si to"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M4 9.2h3.4L12 5v14l-4.6-4.2H4z" fill="currentColor"/><path d="M16 9.4a3.7 3.7 0 0 1 0 5.2M18.7 6.7a7.5 7.5 0 0 1 0 10.6" stroke-linecap="round"/></svg></button></li><li><a href="/jazyk/tswanstina/"><b dir="auto" lang="tn">Dumela!</b><span>Tswanština</span></a><button type="button" class="posl" data-kod="tn" data-text="Dumela!" data-prep="dumela" aria-label="Poslechni si to: Tswanština" title="Poslechni si to"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M4 9.2h3.4L12 5v14l-4.6-4.2H4z" fill="currentColor"/><path d="M16 9.4a3.7 3.7 0 0 1 0 5.2M18.7 6.7a7.5 7.5 0 0 1 0 10.6" stroke-linecap="round"/></svg></button></li></ul>
+<script>(function(){var T={"rodily":"Čte hlas rodilého mluvčího z tvého zařízení.","zalozni":"Tenhle jazyk tvoje zařízení neumí, tak ti výslovnost přečtu česky. Rodilý mluvčí to řekne o kousek jinak.","zadny":"Tvoje zařízení nemá žádný hlas. Zkus to přečíst sám: „{x}“.","neumi":"Tohle zařízení neumí číst nahlas. Zkus to říct sám podle výslovnosti „{x}“.","chyba":"Přehrát se to nepovedlo. Zkus to přečíst sám: „{x}“.","posloucha":"Poslouchej…","znovu":"Ještě jednou","hlas":"cs-CZ","en":false},hlasy=[],ss=window.speechSynthesis;function nacti(){try{hlasy=ss.getVoices()||[]}catch(e){hlasy=[]}}
+if(ss){nacti();ss.addEventListener("voiceschanged",nacti)}
+function najdi(k){if(!k||!hlasy.length)return null;k=k.toLowerCase().replace("_","-");var z=k.split("-")[0],n=function(v){return v.lang.toLowerCase().replace("_","-")};
+return hlasy.filter(function(v){return n(v)===k})[0]||hlasy.filter(function(v){return n(v).split("-")[0]===z})[0]||null}
+var stav=document.getElementById("zvuk-stav");if(!stav){stav=document.createElement("p");stav.id="zvuk-stav";stav.className="zvuk-stav bublina";stav.setAttribute("role","status");stav.hidden=true;document.body.appendChild(stav)}
+var casStav=0;function rekni(t,x){stav.hidden=false;stav.textContent=t.replace("{x}",x);if(stav.classList.contains("bublina")){clearTimeout(casStav);casStav=setTimeout(function(){stav.hidden=true},6000)}}
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest("button[data-text]");if(!b)return;e.preventDefault();
+var prep=b.dataset.prep,sp=b.querySelector("span");if(!ss){rekni(T.neumi,prep);return}nacti();
+var r=najdi(b.dataset.kod),z=najdi(T.hlas),text,hlas,rych;
+if(r){text=b.dataset.text.replace(/[!¡?¿]/g,"");hlas=r;rych=.8;rekni(T.rodily,"")}
+else if(z&&prep){text=T.en?prep.toLowerCase():prep;hlas=z;rych=.75;rekni(T.zalozni,"")}
+else{rekni(T.zadny,prep);return}
+try{var u=new SpeechSynthesisUtterance(text);u.voice=hlas;u.lang=hlas.lang;u.rate=rych;if(sp)sp.textContent=T.posloucha;
+u.onend=function(){if(sp)sp.textContent=T.znovu};u.onerror=function(){if(sp)sp.textContent=T.znovu;rekni(T.chyba,prep)};ss.cancel();ss.speak(u)}catch(err){rekni(T.chyba,prep)}});})();</script>
 </main>
 <footer>
  <p><a href="/jazyky/">Jazyky s pozdravem</a> · <a href="/kalendar-jazyku/">Kalendář jazykových dnů</a> · <a href="/navod/">Podrobný návod</a> · <a href="/o-datech/">O datech a jak atlas vznikl</a> · <a href="/">Otáčivý glóbus</a></p>

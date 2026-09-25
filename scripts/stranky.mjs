@@ -104,6 +104,22 @@ dt{color:var(--text2)} dd{margin:0}
 h2{font:600 1.35rem var(--nadpis); margin:30px 0 8px}
 .fakt{font-size:1.1rem; max-width:44em}
 .mrizka{display:grid; grid-template-columns:repeat(auto-fill,minmax(170px,1fr)); gap:10px; padding:0; margin:0; list-style:none}
+.akce{display:flex; flex-wrap:wrap; align-items:center; gap:10px}
+.prehraj{display:inline-flex; align-items:center; gap:8px; padding:12px 20px; border-radius:999px; border:0; cursor:pointer; font:inherit; font-weight:700;
+  background:#1F4FB8; color:#fff}
+@media (prefers-color-scheme:dark){.prehraj{background:#4C7BE0}}
+.prehraj svg{width:18px; height:18px}
+.prehraj:focus-visible,.posl:focus-visible{outline:3px solid var(--text); outline-offset:3px}
+.zvuk-stav{margin:10px 0 0; font-size:.9rem; color:var(--text2)}
+.zvuk-stav.bublina{position:fixed; left:50%; bottom:18px; transform:translateX(-50%); z-index:10; max-width:min(520px, calc(100% - 32px)); margin:0;
+  padding:10px 16px; border-radius:14px; background:var(--karta); color:var(--text); border:1px solid var(--linka); box-shadow:0 12px 30px -12px rgba(0,0,0,.4)}
+.mrizka li{position:relative}
+.posl{position:absolute; top:8px; right:8px; width:34px; height:34px; display:grid; place-items:center; border-radius:50%; border:1px solid var(--linka);
+  background:var(--papir); color:var(--odkaz); cursor:pointer}
+.posl:hover{border-color:var(--odkaz)}
+.posl svg{width:16px; height:16px}
+.mrizka li:has(.posl) a{padding-right:48px}
+.mrizka a b{overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
 .mrizka a{display:block; padding:10px 14px; border-radius:14px; background:var(--karta); border:1px solid var(--linka); color:inherit; text-decoration:none}
 .mrizka a:hover,.mrizka a:focus-visible{border-color:var(--odkaz)}
 .mrizka b{display:block; font:600 1.25rem/1.25 var(--nadpis)}
@@ -121,6 +137,27 @@ footer a{color:inherit}
 @media (max-width:760px){.jazyk{grid-template-columns:1fr; gap:18px} .hlava .domu{font-size:1.3rem} .hlava .domu svg{width:34px; height:34px}}
 `;
   const znak = ikona.replace("<svg ", '<svg aria-hidden="true" ');
+  const IKONA_ZVUK = '<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M4 9.2h3.4L12 5v14l-4.6-4.2H4z" fill="currentColor"/><path d="M16 9.4a3.7 3.7 0 0 1 0 5.2M18.7 6.7a7.5 7.5 0 0 1 0 10.6" stroke-linecap="round"/></svg>';
+  /* tlačítko Poslechni si to: data-kod (jazyk pro hlas), data-text (pozdrav), data-prep (výslovnost) */
+  const znakovyJ = j => { const i = bodJazyka[j.id]; return i >= 0 && glottolog.rodiny[glottolog.body[i][3]] === "Sign Language"; };
+  /* jako v atlasu: bez kódu jazyka (a u znakového jazyka) se nic nepřehrává */
+  const tlacitkoZvuk = (lang, j, maly) => !j.kod || znakovyJ(j) ? "" : `<button type="button" class="${maly ? "posl" : "prehraj"}" data-kod="${escHtml(j.kod || "")}" data-text="${escHtml(j[lang].pozdrav || j.pozdrav)}" data-prep="${escHtml(j[lang].vyslovnost || "")}"${maly ? ` aria-label="${escHtml(UI[lang].poslechni + ": " + j[lang].nazev)}" title="${escHtml(UI[lang].poslechni)}"` : ""}>${IKONA_ZVUK}${maly ? "" : `<span>${escHtml(UI[lang].poslechni)}</span>`}</button>`;
+  const skriptZvuk = lang => { const T = UI[lang], texty = JSON.stringify({ rodily: T.zvukRodily, zalozni: T.zvukZalozni, zadny: T.zvukZadny, neumi: T.zvukNeumi,
+      chyba: T.zvukChyba, posloucha: T.posloucha, znovu: T.znovu, hlas: T.hlasZalozni, en: lang === "en" }).replace(/</g, "\\u003c");
+    return `<script>(function(){var T=${texty},hlasy=[],ss=window.speechSynthesis;function nacti(){try{hlasy=ss.getVoices()||[]}catch(e){hlasy=[]}}
+if(ss){nacti();ss.addEventListener("voiceschanged",nacti)}
+function najdi(k){if(!k||!hlasy.length)return null;k=k.toLowerCase().replace("_","-");var z=k.split("-")[0],n=function(v){return v.lang.toLowerCase().replace("_","-")};
+return hlasy.filter(function(v){return n(v)===k})[0]||hlasy.filter(function(v){return n(v).split("-")[0]===z})[0]||null}
+var stav=document.getElementById("zvuk-stav");if(!stav){stav=document.createElement("p");stav.id="zvuk-stav";stav.className="zvuk-stav bublina";stav.setAttribute("role","status");stav.hidden=true;document.body.appendChild(stav)}
+var casStav=0;function rekni(t,x){stav.hidden=false;stav.textContent=t.replace("{x}",x);if(stav.classList.contains("bublina")){clearTimeout(casStav);casStav=setTimeout(function(){stav.hidden=true},6000)}}
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest("button[data-text]");if(!b)return;e.preventDefault();
+var prep=b.dataset.prep,sp=b.querySelector("span");if(!ss){rekni(T.neumi,prep);return}nacti();
+var r=najdi(b.dataset.kod),z=najdi(T.hlas),text,hlas,rych;
+if(r){text=b.dataset.text.replace(/[!¡?¿]/g,"");hlas=r;rych=.8;rekni(T.rodily,"")}
+else if(z&&prep){text=T.en?prep.toLowerCase():prep;hlas=z;rych=.75;rekni(T.zalozni,"")}
+else{rekni(T.zadny,prep);return}
+try{var u=new SpeechSynthesisUtterance(text);u.voice=hlas;u.lang=hlas.lang;u.rate=rych;if(sp)sp.textContent=T.posloucha;
+u.onend=function(){if(sp)sp.textContent=T.znovu};u.onerror=function(){if(sp)sp.textContent=T.znovu;rekni(T.chyba,prep)};ss.cancel();ss.speak(u)}catch(err){rekni(T.chyba,prep)}});})();</script>`; };
 
   function stranka({ lang, adresa, jinaAdresa, titulek, popis, obrazek, obsah }) {
     const T = UI[lang], jiny = lang === "cs" ? "en" : "cs", S = T.stranky;
@@ -160,6 +197,7 @@ footer a{color:inherit}
 </header>
 <main>
 ${obsah}
+${obsah.indexOf("data-text=") >= 0 ? skriptZvuk(lang) : ""}
 </main>
 <footer>
  <p><a href="${prehled[lang]}">${escHtml(S.vsechnyOdkaz)}</a> · <a href="${kalendarA[lang]}">${escHtml(T.kalendarOdkaz)}</a> · <a href="${navodA[lang]}">${escHtml(T.navod.odkaz)}</a> · <a href="${oDatech[lang]}">${escHtml(T.oDatech.odkaz)}</a> · <a href="${domov[lang]}">${escHtml(S.globus)}</a></p>
@@ -177,7 +215,7 @@ ${obsah}
   for (const lang of ["cs", "en"]) {
     const T = UI[lang], S = T.stranky, jiny = lang === "cs" ? "en" : "cs", razic = new Intl.Collator(lang);
     const serazene = jazyky.slice().sort((a, b) => razic.compare(a[lang].nazev, b[lang].nazev));
-    const dlazdice = seznam => `<ul class="mrizka">${seznam.map(j => `<li><a href="${adresy[lang][j.id]}"><b dir="auto" lang="${escHtml(j.kod || "")}">${escHtml(j[lang].pozdrav || j.pozdrav)}</b><span>${escHtml(j[lang].nazev)}</span></a></li>`).join("")}</ul>`;
+    const dlazdice = seznam => `<ul class="mrizka">${seznam.map(j => `<li><a href="${adresy[lang][j.id]}"><b dir="auto" lang="${escHtml(j.kod || "")}">${escHtml(j[lang].pozdrav || j.pozdrav)}</b><span>${escHtml(j[lang].nazev)}</span></a>${tlacitkoZvuk(lang, j, true)}</li>`).join("")}</ul>`;
 
     for (const j of jazyky) {
       const P = j[lang], pozdrav = P.pozdrav || j.pozdrav, i = bodJazyka[j.id], r = i >= 0 ? podrobnosti.radky[i] : null;
@@ -197,7 +235,8 @@ ${obsah}
   ${P.vyslovnost ? `<p class="cteme">${escHtml(T.vyslovnost.replace("{x}", P.vyslovnost))}</p>` : ""}
   <h1>${escHtml(P.nazev)}</h1>
   ${j.domaci ? `<p class="domaci">${escHtml(T.domaciJmeno.replace("{x}", j.domaci))}</p>` : ""}
-  <a class="tl" href="${domov[lang]}#${j.id}">${escHtml(S.najit)}</a>
+  <div class="akce">${tlacitkoZvuk(lang, j, false)}<a class="tl" href="${domov[lang]}#${j.id}">${escHtml(S.najit)}</a></div>
+  <p class="zvuk-stav" id="zvuk-stav" role="status" hidden></p>
   <dl>${udaje.map(u => `<dt>${escHtml(u[0])}</dt><dd>${escHtml(u[1])}</dd>`).join("")}</dl>
  </div>
 </article>
