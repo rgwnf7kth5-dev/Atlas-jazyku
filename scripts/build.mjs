@@ -73,6 +73,7 @@ function skriptStranky(vychozi, artefakt) {
     .replace("/*__ARTEFAKT__*/false", () => String(!!artefakt))
     .replace("/*__SVET__*/null", () => doSkriptu(svet))
     .replace("/*__JAZYKY__*/null", () => doSkriptu(JAZYKY))
+    .replace("/*__DNY__*/null", () => { const d = json("data/dny-jazyku.json"); delete d._pozn; return doSkriptu(d); })
     .replace("/*__VERZE__*/null", () => doSkriptu({ glottolog: glottolog.stazeno, podrobnosti: podrobnosti.stazeno, wikidata: json("data/wikidata.json").stazeno }))
     .replace("/*__STATY__*/null", () => doSkriptu(nazvyZemi))
     .replace("/*__REJSTRIK__*/null", () => doSkriptu(REJSTRIK))

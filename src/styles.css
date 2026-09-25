@@ -909,3 +909,6 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 .eu-panel.evropa .eu-jazyky button:hover{background:var(--plocha)}
 .den-jazyku .dj-zavrit{z-index:2}
 .den-jazyku .dj-stitek{max-width:calc(100% - 38px)}
+/* Jazyk dne: proč právě dnes */
+.jd-proc{display:block; margin-top:6px; font-size:.84rem; line-height:1.45; opacity:.96}
+.jd-proc b{font-weight:700}

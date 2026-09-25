@@ -527,5 +527,20 @@
  "denJazykuNadpis": "Languages of Europe",
  "denJazykuGlobus": "Show them all on the globe",
  "evropaNadpis": "{n} languages of Europe",
- "evropaText": "It is the European Day of Languages. The red stars show the European languages in the atlas – click any of them."
+ "evropaText": "It is the European Day of Languages. The red stars show the European languages in the atlas – click any of them.",
+ "jazykDneProc": "Why today?",
+ "cestaUvod": "The Language of the Day is travelling around the world, each day to the next nearest language.",
+ "cestaDuvod": "We are travelling around the world. Yesterday we visited {a}; today we are {km} km further {smer}.",
+ "cestaVedle": "We are travelling around the world. Yesterday we visited {a}, and today we stay right next door.",
+ "svetoveStrany": [
+  "north",
+  "north-east",
+  "east",
+  "south-east",
+  "south",
+  "south-west",
+  "west",
+  "north-west"
+ ],
+ "cestaPoDniJazyku": "After yesterday's European Day of Languages we continue our trip around the world, each day to the next nearest language."
 }

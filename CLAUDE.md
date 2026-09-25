@@ -129,6 +129,12 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
   přechod „východu slunce“ `#C2410C → #BE185D → #7E22CE` (bílý text min. 5,2 : 1), bílý štítek s hvězdičkou a dnešním
   datem, velký pozdrav, zajímavost a tlačítko „Ukaž mi ho na glóbu“. Barvu rodiny nepoužívá, aby nevypadal jako další dlaždice.
   Jazyk se mění o půlnoci místního času.
+  **Jazyk dne má vždy důvod** („Proč dnes?“, přání uživatele 25. 9. 2026). Význačné dny jsou v `data/dny-jazyku.json`
+  (MM-DD → jazyk a důvod cs/en: dny jazyků OSN a UNESCO, národní dny jazyka, státní svátky, výročí; 59 dní; validace
+  hlídá tvar, jazyk a oba texty). **Každý důvod musí být pravdivý** – nový den ověřit. Ostatní dny Jazyk dne
+  **cestuje kolem světa** (`CESTA`: od češtiny vždy k nejbližšímu dosud nenavštívenému jazyku, index = místní den
+  mod 163) a karta řekne, u kterého jazyka jsme byli včera a o kolik km a kterým směrem jsme dál. Den po 26. 9.
+  (Evropský den jazyků, bez Jazyka dne) má vlastní větu. Skrytý jazyk (filtr) se přeskočí.
 - **Živější glóbus**: v noci světélka jemně třpytí (překresluje se jen WebGL, co 60 ms, usíná s okrasným
   pohybem), koule má odlesk slunce (ve dne výraznější).
 - **Mobil (≤ 920 px)**: karta je spodní list ve třech velikostech: malá lišta jen s pozdravem a jménem (`.mala`),

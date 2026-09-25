@@ -189,11 +189,51 @@ function dlazdice(j){
   return tl;
 }
 /* jazyk dne: každý den jiný, stejný pro všechny */
+/* ---------- Jazyk dne má vždy důvod (přání uživatele 25. 9. 2026) ----------
+   Význačné dny (data/dny-jazyku.json: den jazyka, státní svátek, výročí) mají svůj jazyk a vysvětlení.
+   Ostatní dny Jazyk dne cestuje kolem světa: pořadí CESTA vede od češtiny vždy k nejbližšímu dosud
+   nenavštívenému jazyku a karta řekne, o kolik kilometrů a kterým směrem jsme se od včerejška posunuli. */
+const DNY = /*__DNY__*/null;
+function stredJazyka(j){ const i = BOD_ATLASU[j.id]; return i >= 0 && !BEZ_POLOHY[i] ? [B[i][1], B[i][2]] : j.stred; }
+const CESTA = (function(){
+  const zbyva = JAZYKY.slice(), c = [];
+  let ted = zbyva.splice(Math.max(0, zbyva.findIndex(function(j){ return j.id === "cs"; })), 1)[0];
+  while (ted) {
+    c.push(ted);
+    const p = stredJazyka(ted);
+    let nej = -1, d = Infinity;
+    zbyva.forEach(function(j, k){ const x = d3.geoDistance(p, stredJazyka(j)); if (x < d) { d = x; nej = k; } });
+    ted = nej >= 0 ? zbyva.splice(nej, 1)[0] : null;
+  }
+  return c;
+})();
+function mistniDen(d){ return Math.floor((d.getTime() - d.getTimezoneOffset() * 6e4) / 864e5); }   // místní den, ať sedí s datem na kartě
+function svatekDne(d){
+  const k = String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0"), s = DNY && DNY[k];
+  return s && PODLE_ID[s.id] && !atlasSkryty(PODLE_ID[s.id]) ? s : null;
+}
+function jazykCesty(den){
+  for (let n = 0; n < CESTA.length; n++) { const j = CESTA[((den - n) % CESTA.length + CESTA.length) % CESTA.length]; if (!atlasSkryty(j)) return j; }
+  return null;
+}
+function smerCesty(a, b){                  /* směr a vzdálenost z bodu a do bodu b (délka, šířka) */
+  const r = Math.PI / 180, f1 = a[1] * r, f2 = b[1] * r, dl = (b[0] - a[0]) * r;
+  const az = (Math.atan2(Math.sin(dl) * Math.cos(f2), Math.cos(f1) * Math.sin(f2) - Math.sin(f1) * Math.cos(f2) * Math.cos(dl)) / r + 360) % 360;
+  return {km: d3.geoDistance(a, b) * 6371, smer: Math.round(az / 45) % 8};
+}
 function jazykDne(){
-  const moznosti = JAZYKY.filter(function(j){ return !atlasSkryty(j); });
-  if (!moznosti.length) return null;
-  const den = Math.floor((Date.now() - new Date().getTimezoneOffset() * 6e4) / 864e5);   // místní den, ať sedí s datem na kartě
-  return moznosti[den % moznosti.length];
+  const dnes = new Date(), den = mistniDen(dnes), s = svatekDne(dnes);
+  if (s) return {j: PODLE_ID[s.id], duvod: s[T.lang]};
+  const j = jazykCesty(den);
+  if (!j) return null;
+  const vcera = new Date(dnes.getTime() - 864e5), sv = svatekDne(vcera), pred = sv ? PODLE_ID[sv.id] : jazykCesty(den - 1);
+  if (vcera.getMonth() === 8 && vcera.getDate() === 26) return {j: j, duvod: T.cestaPoDniJazyku};   // včera byl Evropský den jazyků, ne Jazyk dne
+  if (!pred || pred === j) return {j: j, duvod: T.cestaUvod};
+  const c = smerCesty(stredJazyka(pred), stredJazyka(j));
+  const km = c.km < 30 ? 0 : c.km < 1000 ? Math.round(c.km / 10) * 10 : Math.round(c.km / 50) * 50;
+  /* uprostřed věty česky malým písmenem („u jazyka čeština“); vlastní jména jako Tok Pisin nechat */
+  const jm = T.lang === "cs" && /ina( |$)|jazyk/.test(pred.n) ? pred.n.charAt(0).toLowerCase() + pred.n.slice(1) : pred.n;
+  return {j: j, duvod: km ? t("cestaDuvod", {a: jm, km: cislo(km), smer: T.svetoveStrany[c.smer]}) : t("cestaVedle", {a: jm})};
 }
 let razeni = "rodiny";
 try { razeni = localStorage.getItem("atlas-razeni") || "rodiny"; } catch (e) {}
@@ -266,7 +306,7 @@ function postavPolici(filtr){
   const evropskyDen = !hledane && denJazyku();
   if (evropskyDen) seznam.appendChild(kartaDneJazyku());
   if (!hledane && !evropskyDen) {            /* jazyk dne nahoře (na Evropský den jazyků místo něj evropské jazyky) */
-    const d = jazykDne();
+    const dd = jazykDne(), d = dd && dd.j;
     if (d) {
       const tl = prvek("button", "jazyk-dne");
       tl.type = "button";
@@ -276,6 +316,7 @@ function postavPolici(filtr){
       tl.appendChild(st);
       const pz = prvek("span", "jd-pozdrav", d.pis); if (d.kod) pz.lang = d.kod; tl.appendChild(pz);
       tl.appendChild(prvek("span", "jd-nazev", d.n + " · " + d.prep));
+      if (dd.duvod) { const pr = prvek("span", "jd-proc"); pr.appendChild(prvek("b", null, T.jazykDneProc + " ")); pr.appendChild(document.createTextNode(dd.duvod)); tl.appendChild(pr); }
       if (d.fakt) tl.appendChild(prvek("span", "jd-fakt", d.fakt));
       const cta = prvek("span", "jd-akce", T.jazykDneUkaz);
       cta.insertAdjacentHTML("beforeend", '<svg aria-hidden="true"><use href="#i-dal"/></svg>');

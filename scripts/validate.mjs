@@ -72,6 +72,17 @@ if (pd.uzly.length !== pd.nad.length) chyby.push("data/podrobnosti.json: strom p
   } }
 { const uzly = new Set(pd.uzly);                // české názvy větví pro rodokmen: jen větve, které ve stromu opravdu jsou
   for (const k of Object.keys(json("data/glottolog-branches.cs.json"))) if (!uzly.has(k)) chyby.push(`data/glottolog-branches.cs.json: větev „${k}“ v Glottologu není`); }
+/* Jazyk dne: význačné dny (MM-DD → jazyk atlasu a důvod česky i anglicky) */
+{ const dny = json("data/dny-jazyku.json");
+  for (const [k, d] of Object.entries(dny)) {
+    if (k === "_pozn") continue;
+    const m = k.match(/^(\d\d)-(\d\d)$/);
+    if (!m || +m[1] < 1 || +m[1] > 12 || +m[2] < 1 || +m[2] > 31) chyby.push(`data/dny-jazyku.json: „${k}“ není den ve tvaru MM-DD`);
+    if (!ids.has(d.id)) chyby.push(`data/dny-jazyku.json: ${k} odkazuje na neznámý jazyk „${d.id}“`);
+    if (!d.cs || !d.en) chyby.push(`data/dny-jazyku.json: ${k} nemá důvod česky i anglicky`);
+  }
+  if (dny["09-26"]) chyby.push("data/dny-jazyku.json: 26. 9. je Evropský den jazyků, Jazyk dne ten den není");
+}
 /* krajina na pohlednici: každý jazyk atlasu ji má a druh krajiny existuje v src/akvarely.js */
 { const druhy = new Set([...fs.readFileSync(path.join(KOREN, "src/akvarely.js"), "utf8").matchAll(/^    (\w+): function/gm)].map(m => m[1]));
   const krajiny = json("data/krajiny.json");

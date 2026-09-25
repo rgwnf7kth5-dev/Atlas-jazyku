@@ -527,5 +527,20 @@
  "denJazykuNadpis": "Evropské jazyky",
  "denJazykuGlobus": "Ukaž je všechny na glóbu",
  "evropaNadpis": "{n} evropských jazyků",
- "evropaText": "Dnes je Evropský den jazyků. Červené hvězdičky ukazují evropské jazyky z atlasu – klikni na kterýkoli."
+ "evropaText": "Dnes je Evropský den jazyků. Červené hvězdičky ukazují evropské jazyky z atlasu – klikni na kterýkoli.",
+ "jazykDneProc": "Proč dnes?",
+ "cestaUvod": "Cestujeme s Jazykem dne kolem světa, každý den k nejbližšímu dalšímu jazyku.",
+ "cestaDuvod": "Cestujeme kolem světa. Včera jsme byli u jazyka {a}, dnes jsme o {km} km dál na {smer}.",
+ "cestaVedle": "Cestujeme kolem světa. Včera jsme byli u jazyka {a} a dnes zůstáváme hned vedle.",
+ "svetoveStrany": [
+  "sever",
+  "severovýchod",
+  "východ",
+  "jihovýchod",
+  "jih",
+  "jihozápad",
+  "západ",
+  "severozápad"
+ ],
+ "cestaPoDniJazyku": "Po včerejším Evropském dni jazyků pokračujeme v cestě kolem světa, každý den k nejbližšímu dalšímu jazyku."
 }
