@@ -516,7 +516,10 @@
   "kdeZnakuje": "Where it is signed",
   "aDalsi": "and {n} more",
   "drobky": "Breadcrumbs",
-  "druhaSobota": "2nd Saturday of September"
+  "druhaSobota": "2nd Saturday of September",
+  "predchozi": "Previous language",
+  "dalsi": "Next language",
+  "zavrit": "Close and back to the list"
  },
  "zpetna": "Got an idea, or is something not working? Write to",
  "zpetnaAdresa": "info@atlasjazyku.cz",

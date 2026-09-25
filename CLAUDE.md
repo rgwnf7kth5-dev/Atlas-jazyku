@@ -274,7 +274,13 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a stav nasazení nech na u
   „Najít na glóbu“ na `/#<id>`. **Poslechni si to** je i tady (uživatel 25. 9. 2026: „musím proklikem až do glóbu,
   to je blbost“): na stránce jazyka velké tlačítko, v přehledu `/jazyky/` malý reproduktor v každé dlaždici; stejná
   logika jako v app.js (rodilý hlas zařízení, jinak výslovnost hlasem stránky, jinak text), hláška pod tlačítkem nebo
-  jako bublina. Bez kódu jazyka a u znakového jazyka se tlačítko neukazuje. Vlastní titulek, popis, canonical, hreflang a og:image = malba jazyka.
+  jako bublina. Bez kódu jazyka a u znakového jazyka se tlačítko neukazuje.
+  **Stránka jazyka je kartotéční lístek nad seznamem** (uživatel 25. 9. 2026: „z té obrazovky se nedá odejít jinak
+  než do glóbu“): každá `/jazyk/<jméno>/` obsahuje celý seznam a nad ním lístek (`.listek`, krémový, červená linka,
+  linkovaný spodek, dírka). Šipky předchozí/další (abecedně, dokola, i klávesy ←/→), „n / 163“ a křížek. Z přehledu
+  se lístek načte bez přechodu stránky (`fetch`, `pushState`); křížek, Escape i klik vedle vrátí seznam (`history.back()`),
+  šipky adresu jen nahradí. Přímo otevřená stránka jazyka zavře lístek na `/jazyky/`. Na telefonu je lístek přes celou
+  obrazovku. Patička statických stránek je sbalená (`<details>`, stejný souhrn jako v aplikaci). Vlastní titulek, popis, canonical, hreflang a og:image = malba jazyka.
   Adresa je z názvu bez diakritiky; build spadne, když by dva jazyky měly stejnou. Všechny jsou v `sitemap.xml`.
   Na hlavní stránce vede v patičce seznamu odkaz „Jazyky s pozdravem“ (jen web; v artefaktu a z disku skrytý).
 - **Malby jako obrázky**: `static/malby/<id>.jpg` (800 × 500, ~36 kB) vyrábí `scripts/malby.mjs` (Playwright,

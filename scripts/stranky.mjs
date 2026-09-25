@@ -77,9 +77,9 @@ export function vyrobStranky({ KOREN, WEB, UI, jazyky, glottolog, podrobnosti, n
   }
 
   const styl = `
-:root{color-scheme:light dark; --papir:#FBF9F4; --karta:#FFFFFF; --text:#15192B; --text2:#5A6073; --linka:rgba(20,24,40,.1); --akcent:#D23A2B; --odkaz:#1F4FB8;
+:root{color-scheme:light dark; --listek:#FFFDF6; --linka-listku:rgba(60,110,200,.10); --papir:#FBF9F4; --karta:#FFFFFF; --text:#15192B; --text2:#5A6073; --linka:rgba(20,24,40,.1); --akcent:#D23A2B; --odkaz:#1F4FB8;
   --nadpis:"Playfair Display",Georgia,serif; --pismo:"Outfit",system-ui,sans-serif}
-@media (prefers-color-scheme:dark){:root{--papir:#070C1C; --karta:#101834; --text:#EAF4FF; --text2:#A3B6D8; --linka:rgba(150,205,255,.16); --akcent:#E0503F; --odkaz:#8FB4FF}}
+@media (prefers-color-scheme:dark){:root{--listek:#121A36; --linka-listku:rgba(140,180,255,.08); --papir:#070C1C; --karta:#101834; --text:#EAF4FF; --text2:#A3B6D8; --linka:rgba(150,205,255,.16); --akcent:#E0503F; --odkaz:#8FB4FF}}
 *{box-sizing:border-box}
 body{margin:0; background:var(--papir); color:var(--text); font:17px/1.55 var(--pismo)}
 a{color:var(--odkaz)}
@@ -132,7 +132,28 @@ ul.kal li{display:flex; gap:14px; padding:9px 0; border-bottom:1px solid var(--l
 .kal-d{flex:none; width:5.5em; font:600 1rem var(--nadpis)}
 ul.kal a{font-weight:600; text-decoration:none} ul.kal a:hover{text-decoration:underline}
 ul.kal b{font-family:var(--nadpis)} .kal-p{font-size:.92rem; color:var(--text2)}
-footer{max-width:980px; margin:0 auto; padding:18px 20px 32px; border-top:1px solid var(--linka); font-size:.85rem; color:var(--text2)}
+footer{max-width:980px; margin:0 auto; padding:10px 20px 24px; border-top:1px solid var(--linka); font-size:.85rem; color:var(--text2)}
+footer summary{cursor:pointer; font-weight:600; padding:6px 0}
+footer details p{margin:8px 0}
+/* kartoteční lístek nad seznamem */
+body.s-listkem{overflow:hidden}
+.listek-pozadi{position:fixed; inset:0; z-index:50; overflow:auto; padding:32px 16px; background:rgba(20,24,40,.42); backdrop-filter:blur(2px)}
+.listek-pozadi[hidden]{display:none}
+.listek{position:relative; max-width:940px; margin:0 auto; padding:14px 28px 40px; border-radius:6px 6px 10px 10px; background:var(--listek);
+  box-shadow:0 30px 70px -30px rgba(0,0,0,.55), 0 2px 0 rgba(0,0,0,.04); border-top:4px solid var(--akcent)}
+.listek::after{content:""; position:absolute; left:50%; bottom:12px; width:16px; height:16px; margin-left:-8px; border-radius:50%;
+  background:rgba(20,24,40,.42); box-shadow:inset 0 1px 3px rgba(0,0,0,.35)}
+.listek-hlava{display:flex; align-items:center; gap:8px; margin:0 -12px 14px; padding-bottom:10px; border-bottom:2px solid color-mix(in srgb, var(--akcent) 55%, transparent)}
+.listek-poradi{font-size:.85rem; color:var(--text2); font-variant-numeric:tabular-nums}
+.listek-sip,.listek-x{display:grid; place-items:center; width:40px; height:40px; border-radius:50%; text-decoration:none; color:var(--text);
+  font-size:1.6rem; line-height:1; border:1px solid var(--linka)}
+.listek-x{margin-left:auto; font-size:1.7rem}
+.listek-sip:hover,.listek-x:hover{border-color:var(--odkaz); color:var(--odkaz)}
+.listek-sip:focus-visible,.listek-x:focus-visible{outline:3px solid var(--odkaz); outline-offset:2px}
+.listek-linky{margin-top:6px; background-image:repeating-linear-gradient(to bottom, transparent 0 31px, var(--linka-listku) 31px 32px)}
+.listek h1{font:600 2rem/1.2 var(--nadpis); margin:0}
+.nadpis-seznamu{font:600 2rem/1.2 var(--nadpis); margin:0}
+@media (max-width:760px){ .listek-pozadi{padding:0} .listek{min-height:100%; border-radius:0; padding:10px 16px 40px} }
 footer a{color:inherit}
 @media (max-width:760px){.jazyk{grid-template-columns:1fr; gap:18px} .hlava .domu{font-size:1.3rem} .hlava .domu svg{width:34px; height:34px}}
 `;
@@ -148,8 +169,7 @@ footer a{color:inherit}
 if(ss){nacti();ss.addEventListener("voiceschanged",nacti)}
 function najdi(k){if(!k||!hlasy.length)return null;k=k.toLowerCase().replace("_","-");var z=k.split("-")[0],n=function(v){return v.lang.toLowerCase().replace("_","-")};
 return hlasy.filter(function(v){return n(v)===k})[0]||hlasy.filter(function(v){return n(v).split("-")[0]===z})[0]||null}
-var stav=document.getElementById("zvuk-stav");if(!stav){stav=document.createElement("p");stav.id="zvuk-stav";stav.className="zvuk-stav bublina";stav.setAttribute("role","status");stav.hidden=true;document.body.appendChild(stav)}
-var casStav=0;function rekni(t,x){stav.hidden=false;stav.textContent=t.replace("{x}",x);if(stav.classList.contains("bublina")){clearTimeout(casStav);casStav=setTimeout(function(){stav.hidden=true},6000)}}
+var casStav=0;function rekni(t,x){var stav=document.getElementById("zvuk-stav");if(!stav){stav=document.createElement("p");stav.id="zvuk-stav";stav.className="zvuk-stav bublina";stav.setAttribute("role","status");document.body.appendChild(stav)}stav.hidden=false;stav.textContent=t.replace("{x}",x);if(stav.classList.contains("bublina")){clearTimeout(casStav);casStav=setTimeout(function(){stav.hidden=true},6000)}}
 document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest("button[data-text]");if(!b)return;e.preventDefault();
 var prep=b.dataset.prep,sp=b.querySelector("span");if(!ss){rekni(T.neumi,prep);return}nacti();
 var r=najdi(b.dataset.kod),z=najdi(T.hlas),text,hlas,rych;
@@ -159,7 +179,25 @@ else{rekni(T.zadny,prep);return}
 try{var u=new SpeechSynthesisUtterance(text);u.voice=hlas;u.lang=hlas.lang;u.rate=rych;if(sp)sp.textContent=T.posloucha;
 u.onend=function(){if(sp)sp.textContent=T.znovu};u.onerror=function(){if(sp)sp.textContent=T.znovu;rekni(T.chyba,prep)};ss.cancel();ss.speak(u)}catch(err){rekni(T.chyba,prep)}});})();</script>`; };
 
-  function stranka({ lang, adresa, jinaAdresa, titulek, popis, obrazek, obsah }) {
+  const SKRIPT_LISTEK = `<script>(function(){var poz=document.getElementById("listek-pozadi");if(!poz||!window.fetch||!window.DOMParser)return;
+var seznam=poz.dataset.seznam,titS=poz.dataset.titulek,JE=/\\/(jazyk|language)\\/[^\\/]+\\/$/;
+function otevreny(){return !poz.hidden}
+function schovej(){poz.hidden=true;document.body.classList.remove("s-listkem");document.title=titS}
+function zavri(){if(history.state&&history.state.zeSeznamu){history.back();return}schovej();history.replaceState(null,"",seznam)}
+function ukaz(html,url,tit,pridat){poz.innerHTML=html;poz.hidden=false;document.body.classList.add("s-listkem");document.title=tit;
+if(pridat)history.pushState({listek:1,zeSeznamu:1},"",url);else history.replaceState({listek:1,zeSeznamu:history.state&&history.state.zeSeznamu},"",url);
+poz.scrollTop=0;var x=poz.querySelector(".listek-x");if(x)x.focus({preventScroll:true})}
+function nacti(url,pridat){fetch(url).then(function(r){return r.text()}).then(function(t){var d=new DOMParser().parseFromString(t,"text/html"),l=d.getElementById("listek-pozadi");
+if(!l||!l.innerHTML.trim()){location.href=url;return}ukaz(l.innerHTML,url,d.title,pridat)}).catch(function(){location.href=url})}
+if(otevreny())document.body.classList.add("s-listkem");
+document.addEventListener("click",function(e){if(e.defaultPrevented||e.button!==0||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;
+if(e.target===poz){zavri();return}var a=e.target.closest&&e.target.closest("a");if(!a)return;
+if(a.classList.contains("listek-x")){e.preventDefault();zavri();return}
+var h=a.getAttribute("href");if(!h||!JE.test(h))return;e.preventDefault();nacti(h,!otevreny())});
+document.addEventListener("keydown",function(e){if(!otevreny())return;if(e.key==="Escape"){e.preventDefault();zavri();return}
+if((e.key==="ArrowLeft"||e.key==="ArrowRight")&&!(e.target.closest&&e.target.closest("input,textarea,select"))){var s=poz.querySelector(e.key==="ArrowLeft"?".listek-pred":".listek-dalsi");if(s){e.preventDefault();nacti(s.getAttribute("href"),false)}}});
+window.addEventListener("popstate",function(){if(JE.test(location.pathname))nacti(location.pathname,false);else schovej()});})();</script>`;
+  function stranka({ lang, adresa, jinaAdresa, titulek, popis, obrazek, obsah, listek }) {
     const T = UI[lang], jiny = lang === "cs" ? "en" : "cs", S = T.stranky;
     const cs = lang === "cs" ? adresa : jinaAdresa, en = lang === "en" ? adresa : jinaAdresa;
     return `<!doctype html>
@@ -198,11 +236,15 @@ u.onend=function(){if(sp)sp.textContent=T.znovu};u.onerror=function(){if(sp)sp.t
 <main>
 ${obsah}
 ${obsah.indexOf("data-text=") >= 0 ? skriptZvuk(lang) : ""}
+${listek ? SKRIPT_LISTEK : ""}
 </main>
 <footer>
- <p><a href="${prehled[lang]}">${escHtml(S.vsechnyOdkaz)}</a> · <a href="${kalendarA[lang]}">${escHtml(T.kalendarOdkaz)}</a> · <a href="${navodA[lang]}">${escHtml(T.navod.odkaz)}</a> · <a href="${oDatech[lang]}">${escHtml(T.oDatech.odkaz)}</a> · <a href="${domov[lang]}">${escHtml(S.globus)}</a></p>
- <p>${escHtml(T.zpetna)} <a href="mailto:${escHtml(T.zpetnaAdresa)}?subject=${encodeURIComponent(T.zpetnaPredmet)}">${escHtml(T.zpetnaAdresa)}</a></p>
- <p>${escHtml(T.zdroje)}</p>
+ <details>
+  <summary>${escHtml(T.patickaSouhrn)}</summary>
+  <p><a href="${domov[lang]}">${escHtml(S.globus)}</a> · <a href="${prehled[lang]}">${escHtml(S.vsechnyOdkaz)}</a> · <a href="${kalendarA[lang]}">${escHtml(T.kalendarOdkaz)}</a> · <a href="${navodA[lang]}">${escHtml(T.navod.odkaz)}</a> · <a href="${oDatech[lang]}">${escHtml(T.oDatech.odkaz)}</a></p>
+  <p>${escHtml(T.zpetna)} <a href="mailto:${escHtml(T.zpetnaAdresa)}?subject=${encodeURIComponent(T.zpetnaPredmet)}">${escHtml(T.zpetnaAdresa)}</a></p>
+  <p>${escHtml(T.zdroje)}</p>
+ </details>
 </footer>
 </body>
 </html>
@@ -217,7 +259,17 @@ ${obsah.indexOf("data-text=") >= 0 ? skriptZvuk(lang) : ""}
     const serazene = jazyky.slice().sort((a, b) => razic.compare(a[lang].nazev, b[lang].nazev));
     const dlazdice = seznam => `<ul class="mrizka">${seznam.map(j => `<li><a href="${adresy[lang][j.id]}"><b dir="auto" lang="${escHtml(j.kod || "")}">${escHtml(j[lang].pozdrav || j.pozdrav)}</b><span>${escHtml(j[lang].nazev)}</span></a>${tlacitkoZvuk(lang, j, true)}</li>`).join("")}</ul>`;
 
-    for (const j of jazyky) {
+    /* Stránka jazyka je kartotéční lístek otevřený nad seznamem všech jazyků s pozdravem (uživatel 25. 9. 2026:
+       „ze stránky se nedá odejít jinak než do glóbu“). Lístek zavře křížek, klik vedle nebo Escape a zůstane seznam;
+       šipkami se listuje na předchozí a další jazyk. S JavaScriptem se lístky načítají bez přechodu na jinou stránku. */
+    const nadpis = S.vsechnyNadpis.replace("{a}", cislo(lang, jazyky.length)), titulekSeznamu = nadpis + " · " + T.nazev;
+    const seznamHtml = uroven => `<nav class="drobky" aria-label="${escHtml(S.drobky)}"><a href="${domov[lang]}">${escHtml(T.nazev)}</a> › ${escHtml(S.vsechnyOdkaz)}</nav>
+<${uroven} class="nadpis-seznamu">${escHtml(nadpis)}</${uroven}>
+<p class="fakt">${escHtml(S.vsechnyPopis)}</p>
+${dlazdice(serazene)}`;
+    const pozadi = (vnitrek, skryte) => `<div class="listek-pozadi" id="listek-pozadi" data-seznam="${prehled[lang]}" data-titulek="${escHtml(titulekSeznamu)}"${skryte ? " hidden" : ""}>${vnitrek}</div>`;
+
+    serazene.forEach((j, poradi) => {
       const P = j[lang], pozdrav = P.pozdrav || j.pozdrav, i = bodJazyka[j.id], r = i >= 0 ? podrobnosti.radky[i] : null;
       const znakovy = r && glottolog.rodiny[glottolog.body[i][3]] === "Sign Language";
       const udaje = [];
@@ -227,36 +279,41 @@ ${obsah.indexOf("data-text=") >= 0 ? skriptZvuk(lang) : ""}
       const st = staty(j, lang);
       if (st.length) udaje.push([znakovy ? S.kdeZnakuje : S.kdeMluvi, st.slice(0, 12).join(", ") + (st.length > 12 ? " " + S.aDalsi.replace("{n}", st.length - 12) : "")]);
       const pr = pribuzni(j.id);
-      const obsah = `<nav class="drobky" aria-label="${escHtml(S.drobky)}"><a href="${domov[lang]}">${escHtml(T.nazev)}</a> › <a href="${prehled[lang]}">${escHtml(S.vsechnyOdkaz)}</a> › ${escHtml(P.nazev)}</nav>
-<article class="jazyk">
- <img class="malba" src="/malby/${j.id}.jpg" width="800" height="500" alt="${escHtml(S.malbaAlt.replace("{n}", P.nazev))}">
- <div>
-  <p class="pozdrav" dir="auto" lang="${escHtml(j.kod || "")}">${escHtml(pozdrav)}</p>
-  ${P.vyslovnost ? `<p class="cteme">${escHtml(T.vyslovnost.replace("{x}", P.vyslovnost))}</p>` : ""}
-  <h1>${escHtml(P.nazev)}</h1>
-  ${j.domaci ? `<p class="domaci">${escHtml(T.domaciJmeno.replace("{x}", j.domaci))}</p>` : ""}
-  <div class="akce">${tlacitkoZvuk(lang, j, false)}<a class="tl" href="${domov[lang]}#${j.id}">${escHtml(S.najit)}</a></div>
-  <p class="zvuk-stav" id="zvuk-stav" role="status" hidden></p>
-  <dl>${udaje.map(u => `<dt>${escHtml(u[0])}</dt><dd>${escHtml(u[1])}</dd>`).join("")}</dl>
+      const pred = serazene[(poradi - 1 + serazene.length) % serazene.length], dalsi = serazene[(poradi + 1) % serazene.length];
+      const listek = `<article class="listek" role="dialog" aria-modal="true" aria-labelledby="listek-nazev">
+ <div class="listek-hlava">
+  <a class="listek-sip listek-pred" href="${adresy[lang][pred.id]}" aria-label="${escHtml(S.predchozi + ": " + pred[lang].nazev)}" title="${escHtml(pred[lang].nazev)}">‹</a>
+  <span class="listek-poradi">${poradi + 1} / ${serazene.length}</span>
+  <a class="listek-sip listek-dalsi" href="${adresy[lang][dalsi.id]}" aria-label="${escHtml(S.dalsi + ": " + dalsi[lang].nazev)}" title="${escHtml(dalsi[lang].nazev)}">›</a>
+  <a class="listek-x" href="${prehled[lang]}" aria-label="${escHtml(S.zavrit)}" title="${escHtml(S.zavrit)}">×</a>
  </div>
-</article>
-${P.fakt ? `<h2>${escHtml(T.zalozkaZajimavost)}</h2>\n<p class="fakt">${escHtml(P.fakt)}</p>` : ""}
-${pr.length ? `<h2>${escHtml(T.pribuzniAtlas)}</h2>\n${dlazdice(pr)}` : ""}`;
+ <div class="jazyk">
+  <img class="malba" src="/malby/${j.id}.jpg" width="800" height="500" alt="${escHtml(S.malbaAlt.replace("{n}", P.nazev))}">
+  <div>
+   <p class="pozdrav" dir="auto" lang="${escHtml(j.kod || "")}">${escHtml(pozdrav)}</p>
+   ${P.vyslovnost ? `<p class="cteme">${escHtml(T.vyslovnost.replace("{x}", P.vyslovnost))}</p>` : ""}
+   <h1 id="listek-nazev">${escHtml(P.nazev)}</h1>
+   ${j.domaci ? `<p class="domaci">${escHtml(T.domaciJmeno.replace("{x}", j.domaci))}</p>` : ""}
+   <div class="akce">${tlacitkoZvuk(lang, j, false)}<a class="tl" href="${domov[lang]}#${j.id}">${escHtml(S.najit)}</a></div>
+   <p class="zvuk-stav" id="zvuk-stav" role="status" hidden></p>
+   <dl>${udaje.map(u => `<dt>${escHtml(u[0])}</dt><dd>${escHtml(u[1])}</dd>`).join("")}</dl>
+  </div>
+ </div>
+ <div class="listek-linky">
+ ${P.fakt ? `<h2>${escHtml(T.zalozkaZajimavost)}</h2>\n <p class="fakt">${escHtml(P.fakt)}</p>` : ""}
+ ${pr.length ? `<h2>${escHtml(T.pribuzniAtlas)}</h2>\n ${dlazdice(pr)}` : ""}
+ </div>
+</article>`;
       const titulek = S.titulek.replace("{n}", P.nazev) + " · " + T.nazev;
       const popis = `${pozdrav} ${P.vyslovnost ? T.vyslovnost.replace("{x}", P.vyslovnost) + ". " : ""}${P.fakt || ""}`.trim();
       zapis(adresy[lang][j.id], stranka({ lang, adresa: adresy[lang][j.id], jinaAdresa: adresy[jiny][j.id], titulek, popis,
-        obrazek: { src: `/malby/${j.id}.jpg`, w: 800, h: 500 }, obsah }));
+        obrazek: { src: `/malby/${j.id}.jpg`, w: 800, h: 500 }, obsah: seznamHtml("h2") + "\n" + pozadi(listek, false), listek: true }));
       vsechny.push([adresy[lang][j.id], adresy[jiny][j.id], lang]);
-    }
+    });
 
-    /* přehled všech jazyků s pozdravem */
-    const nadpis = S.vsechnyNadpis.replace("{a}", cislo(lang, jazyky.length));
-    zapis(prehled[lang], stranka({ lang, adresa: prehled[lang], jinaAdresa: prehled[jiny], titulek: nadpis + " · " + T.nazev,
-      popis: S.vsechnyPopis, obrazek: obrazekWebu(lang),
-      obsah: `<nav class="drobky" aria-label="${escHtml(S.drobky)}"><a href="${domov[lang]}">${escHtml(T.nazev)}</a> › ${escHtml(S.vsechnyOdkaz)}</nav>
-<h1>${escHtml(nadpis)}</h1>
-<p class="fakt">${escHtml(S.vsechnyPopis)}</p>
-${dlazdice(serazene)}` }));
+    /* přehled všech jazyků s pozdravem (lístky se nad ním otevírají) */
+    zapis(prehled[lang], stranka({ lang, adresa: prehled[lang], jinaAdresa: prehled[jiny], titulek: titulekSeznamu,
+      popis: S.vsechnyPopis, obrazek: obrazekWebu(lang), obsah: seznamHtml("h1") + "\n" + pozadi("", true), listek: true }));
     vsechny.push([prehled[lang], prehled[jiny], lang]);
 
     /* O datech: stejný obsah jako okno v aplikaci */
