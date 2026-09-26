@@ -401,6 +401,8 @@ ikonu mouseover, o co jde“). Další navržené: Řecko (lineární B
   Rosettské desce (je na obelisku z Philae), ústav 1958 vedl nejdřív Lexa a od 1960 Žába, arabské dobytí 639–642.
   U Mezopotámie: „život“ je til (ne ti), číslice se vtlačovaly, pečeť patří Hašhamerovi (ne Ur-Nammuovi), Rawlinson
   pracoval ze žebříků (na lanech visel kurdský chlapec), Grotefend luštil podle opisů z Persepole.
+  U Féničanů: české „abeceda“ je z a-b-c-d (z alfa–beta je „alfabeta“), Ahiram „asi 1000, sporné“, 1050 jen
+  konvenční datum, Pyrgi obdobné (ne stejné) věnování, jména písmen jsou rekonstrukce, murex = ostranka.
 - Nová civilizace: druh akvarelu v `src/akvarely.js`, fotky přes `data/fotky-hledat.json`, zmenšit (PIL) do
   `static/starovek/<id>/`, texty cs/en, ověření, `npm run check`, test v prohlížeči.
 

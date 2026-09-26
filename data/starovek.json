@@ -2937,8 +2937,8 @@
      "licence": "Public domain",
      "licenceUrl": "",
      "zdroj": "https://commons.wikimedia.org/wiki/File:Ahiram_Sarcophagus_1.JPG",
-     "cs": "Sarkofág krále Ahirama z Byblu s reliéfy a fénickým nápisem na okraji víka. Národní muzeum, Bejrút.",
-     "en": "The sarcophagus of King Ahiram of Byblos with reliefs and a Phoenician inscription along the lid. National Museum, Beirut."
+     "cs": "Sarkofág krále Ahirama z Byblu s reliéfy a fénickým nápisem na okraji a víku. Národní muzeum, Bejrút.",
+     "en": "The sarcophagus of King Ahiram of Byblos with reliefs and a Phoenician inscription on the rim and lid. National Museum, Beirut."
     },
     "ahiram-napis": {
      "soubor": "ahiram-napis.jpg",
@@ -2948,8 +2948,8 @@
      "licence": "Public domain",
      "licenceUrl": "",
      "zdroj": "https://commons.wikimedia.org/wiki/File:Ahiram_sarcophagus_closeup,_doctored.png",
-     "cs": "Detail nápisu na Ahiramově sarkofágu, psaného zprava doleva.",
-     "en": "Detail of the inscription on Ahiram's sarcophagus, written from right to left."
+     "cs": "Detail nápisu na Ahiramově sarkofágu, psaného zprava doleva (snímek s digitálně zvýrazněným nápisem).",
+     "en": "Detail of the inscription on Ahiram's sarcophagus, written from right to left (photo with the inscription digitally enhanced)."
     },
     "pyrgi": {
      "soubor": "pyrgi.jpg",
@@ -3014,8 +3014,8 @@
      "licence": "Public domain",
      "licenceUrl": "",
      "zdroj": "https://commons.wikimedia.org/wiki/File:David_Roberts_(1796-1864)_-_The_Ruins_of_Tyre,_Lebanon_-_VIS.377_-_Sheffield_Galleries_and_Museums_Trust.jpg",
-     "cs": "Ruiny Týru na obraze Davida Robertse (19. století). Týros byl nejmocnějším fénickým městem.",
-     "en": "The ruins of Tyre in a painting by David Roberts (19th century). Tyre was the most powerful Phoenician city."
+     "cs": "Ruiny Týru na obraze Davida Robertse (19. století). V 1. tisíciletí př. n. l. byl Týros nejmocnějším fénickým městem.",
+     "en": "The ruins of Tyre in a painting by David Roberts (19th century). In the 1st millennium BCE Tyre was the most powerful Phoenician city."
     },
     "tofet": {
      "soubor": "tofet.jpg",
@@ -3036,7 +3036,7 @@
      "licence": "CC BY-SA 4.0",
      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
      "zdroj": "https://commons.wikimedia.org/wiki/File:MurexShells-MurexHotel-TyreSour_RomanDeckert082019.jpg",
-     "cs": "Ulity ostnité (murex), z jejichž žláz se v Týru vyráběl drahý purpur.",
+     "cs": "Ulity ostranek (murex), z jejichž žláz se v Týru vyráběl drahý purpur.",
      "en": "Murex shells, whose glands were used in Tyre to make costly purple dye."
     },
     "nora": {
@@ -3069,8 +3069,8 @@
      "licence": "CC BY-SA 4.0",
      "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
      "zdroj": "https://commons.wikimedia.org/wiki/File:Relief_depicting_thin_gypsum_wall_panel_shows_a_Phoenician_war_galley_sailing_down_the_Euphrates_River.jpg",
-     "cs": "Fénická válečná loď na asyrském reliéfu z Ninive (asi 700 př. n. l.). Britské muzeum, Londýn.",
-     "en": "A Phoenician war galley on an Assyrian relief from Nineveh (c. 700 BCE). British Museum, London."
+     "cs": "Fénická válečná loď na asyrském reliéfu z doby krále Sinacheriba (asi 700 př. n. l.).",
+     "en": "A Phoenician war galley on an Assyrian relief from the reign of King Sennacherib (c. 700 BCE)."
     }
    },
    "cs": {
@@ -3115,8 +3115,8 @@
       "typ": "text",
       "h": "Obchodníci moře",
       "p": [
-       "Po rozpadu velkých říší doby bronzové kolem roku 1200 př. n. l. rozkvetla na úzkém pobřeží pod horami Libanonu samostatná přístavní města: Týros, Sidón, Byblos a Arvad. Sami se nazývali podle svých měst nebo Kanaánci; jméno Féničané jim dali Řekové a obvykle se spojuje s řeckým slovem pro purpurovou barvu.",
-       "Féničané vyváželi cedrové dřevo, sklo, slonovinu a především purpur z mořských plžů ulity ostnité. Zakládali osady na Kypru, na Sicílii, na Sardinii, ve Španělsku i v severní Africe. Nejslavnější z nich, Kartágo, založil podle tradice Týros roku 814 př. n. l.; po třech punských válkách s Římem bylo roku 146 př. n. l. zničeno."
+       "Po rozpadu velkých říší doby bronzové kolem roku 1200 př. n. l. rozkvetla na úzkém pobřeží pod horami Libanonu samostatná přístavní města: Týros, Sidón, Byblos a Arvad. Sami se označovali hlavně podle svých měst (zda si říkali i Kanaánci, je sporné); jméno Féničané jim dali Řekové a obvykle se spojuje s řeckým slovem pro purpurovou barvu.",
+       "Féničané vyváželi cedrové dřevo, sklo, slonovinu a především purpur z mořských plžů ostranek (murex). Zakládali osady na Kypru, na Sicílii, na Sardinii, ve Španělsku i v severní Africe. Nejslavnější z nich, Kartágo, založil podle tradice Týros roku 814 př. n. l.; po třech punských válkách s Římem bylo roku 146 př. n. l. zničeno."
       ]
      },
      {
@@ -3137,7 +3137,7 @@
       "typ": "text",
       "h": "Abeceda o dvaadvaceti písmenech",
       "p": [
-       "Fénická abeceda vyšla z protosinajského a protokanaánského písma, jehož znaky vznikly napodobením egyptských hieroglyfů. Kolem roku 1050 př. n. l. se ustálila v podobě o 22 písmenech. Zapisovala jen souhlásky (odborně abdžad), četla se zprava doleva a slova se často oddělovala tečkou nebo čárkou.",
+       "Fénická abeceda vyšla z protosinajského a protokanaánského písma, jehož znaky vznikly napodobením egyptských hieroglyfů. Za počátek fénické abecedy o 22 písmenech se obvykle klade rok 1050 př. n. l. Zapisovala jen souhlásky (odborně abdžad), četla se zprava doleva v nejstarších nápisech se slova oddělovala krátkou svislou čárkou nebo tečkou.",
        "Každé písmeno mělo jméno, které začínalo jeho hláskou: ʾalp „býk“, bet „dům“, mem „voda“, ʿain „oko“, roš „hlava“. Tvary písmen původně tyto věci zobrazovaly – a býčí hlava převrácená vzhůru nohama je dodnes naše A."
       ]
      },
@@ -3256,7 +3256,7 @@
         "značka"
        ]
       ],
-      "pozn": "Pod znakem je jméno písmene, jeho latinský potomek a význam jména. Významy označené otazníkem jsou nejisté. Řekové si ze souhlásek ʾalp, he, ʿain a yod udělali samohlásky A, E, O a I. Znaky vykresluje písmo Noto Sans Phoenician."
+      "pozn": "Pod znakem je jméno písmene, jeho latinský potomek a význam jména. Významy označené otazníkem jsou nejisté a i ostatní jsou obvyklé výklady. Fénická jména písmen nejsou přímo doložena; jsou rekonstruována z hebrejských a řeckých názvů. Řekové si ze souhlásek ʾalp, he, ʿain a yod udělali samohlásky A, E, O a I, z wau ypsilon (Y). Znaky vykresluje písmo Noto Sans Phoenician."
      },
      {
       "typ": "foto",
@@ -3294,7 +3294,7 @@
        ]
       ],
       "preklad": "„Tuto rakev udělal …, syn Ahiramův, král Byblu, pro Ahirama, svého otce.“",
-      "vyklad": "Začátek nápisu na sarkofágu krále Ahirama z Byblu, nejstaršího známého textu v plně vyvinuté fénické abecedě. Čte se zprava doleva a slova odděluje svislá značka 𐤟. Jméno syna je poškozené a jeho čtení je nejisté."
+      "vyklad": "Začátek nápisu na sarkofágu krále Ahirama z Byblu, považovaného za nejstarší známý text v plně vyvinuté fénické abecedě; obvykle se datuje kolem roku 1000 př. n. l., datování je však sporné. Čte se zprava doleva a slova odděluje svislá značka 𐤟. Jméno syna je poškozené a jeho čtení je nejisté."
      },
      {
       "typ": "foto",
@@ -3305,7 +3305,7 @@
       "typ": "rameček",
       "h": "Abeceda z klínků",
       "p": [
-       "Ve syrském přístavu Ugarit používali písaři ve 14. a 13. století př. n. l. klínové písmo, které nebylo slabičné jako v Mezopotámii, ale abecední: asi třicet znaků ze klínků. Nalezené cvičné tabulky s abecedou ukazují, že písmena měla v Ugaritu už téměř stejné pořadí jako ve fénické abecedě: 𐎀𐎁𐎂𐎃𐎄 (a, b, g, ch, d)."
+       "Ve syrském přístavu Ugarit používali písaři ve 14. a 13. století př. n. l. klínové písmo, které nebylo slabičné jako v Mezopotámii, ale abecední: asi třicet znaků ze klínků. Nalezené cvičné tabulky s abecedou ukazují, že písmena měla v Ugaritu už téměř stejné pořadí jako ve fénické abecedě: 𐎀𐎁𐎂𐎃𐎄 (ʾa, b, g, ḫ, d)."
       ]
      },
      {
@@ -3325,7 +3325,7 @@
       "typ": "text",
       "h": "Fénické písmo po celém Středomoří",
       "p": [
-       "Fénickou abecedou psali nejen Féničané. Stéla krále Kilamuwy ze Sam'alu v dnešním Turecku, kámen z Nory na Sardinii nebo zlaté destičky z Pyrgi v Itálii, na nichž stojí týž text etrusky a fénicky, ukazují, jak daleko se písmo dostalo. Velmi blízkým písmem je psána i stéla moábského krále Méši a nejstarší hebrejské nápisy."
+       "Fénickou abecedou psali nejen Féničané. Stéla krále Kilamuwy ze Sam'alu v dnešním Turecku, kámen z Nory na Sardinii nebo zlaté destičky z Pyrgi v Itálii, s obdobným věnováním etrusky a fénicky, ukazují, jak daleko se písmo dostalo. Velmi blízkým písmem je psána i stéla moábského krále Méši a nejstarší hebrejské nápisy."
       ]
      },
      {
@@ -3342,7 +3342,7 @@
       "typ": "text",
       "h": "Punština a Kartágo",
       "p": [
-       "V Kartágu a jeho osadách se féničtina vyvinula v punštinu. Přežila pád Kartága o staletí: v severní Africe se jí mluvilo ještě v době svatého Augustina (zemřel 430 n. l.), který ji znal. Několik vět v punštině obsahuje i římská komedie Plautova Punčák (Poenulus) – vzácně i se samohláskami."
+       "V Kartágu a jeho osadách se féničtina vyvinula v punštinu. Přežila pád Kartága o staletí: v severní Africe se jí mluvilo ještě v době svatého Augustina (zemřel 430 n. l.), který ji alespoň zčásti znal. Několik vět v punštině obsahuje i Plautova římská komedie Poenulus (Kartáginec) – zapsaných latinkou, a proto výjimečně i se samohláskami."
       ]
      },
      {
@@ -3354,7 +3354,7 @@
       "typ": "text",
       "h": "Potomci fénické abecedy",
       "p": [
-       "V 8. století př. n. l. převzali fénickou abecedu Řekové a doplnili do ní samohlásky; z řeckých jmen alfa a béta vzniklo slovo abeceda. Z řecké abecedy vzešlo etruské písmo a z něj latinka, kterou píšeme česky, a v 9. století n. l. i cyrilice.",
+       "V 8. století př. n. l. převzali fénickou abecedu Řekové a doplnili do ní samohlásky; z řeckých jmen alfa a béta vzniklo slovo alfabeta; české abeceda je utvořeno z prvních písmen latinky a, b, c, d. Z řecké abecedy vzešlo etruské písmo a z něj latinka, kterou píšeme česky, a koncem 9. století n. l. i cyrilice.",
        "Na východě se z fénického písma vyvinulo aramejské, z něj hebrejské čtvercové písmo, syrské a přes nabatejské i arabské. Také řecké slovo biblos, „papyrus, kniha“ – a tedy i Bible – souvisí se jménem města Byblos, přes které se do Řecka dovážel egyptský papyrus."
       ]
      },
@@ -3368,24 +3368,24 @@
       "h": "Časová osa",
       "udalosti": [
        [
-        "asi 1200 př. n. l.",
-        "Rozpad říší doby bronzové; rozkvět fénických měst."
-       ],
-       [
         "14.–13. st. př. n. l.",
         "Klínová abeceda v Ugaritu."
        ],
        [
-        "asi 1050 př. n. l.",
-        "Ustálená fénická abeceda o 22 písmenech."
+        "asi 1200 př. n. l.",
+        "Rozpad říší doby bronzové; rozkvět fénických měst."
        ],
        [
-        "10. st. př. n. l.",
+        "asi 1050 př. n. l.",
+        "Obvyklé datum počátku fénické abecedy o 22 písmenech."
+       ],
+       [
+        "asi 1000 př. n. l. (sporné)",
         "Nápis na Ahiramově sarkofágu z Byblu."
        ],
        [
         "9. st. př. n. l.",
-        "Stéla Kilamuwy, stéla Méši, kámen z Nory."
+        "Stéla Kilamuwy, stéla Méši; na přelomu 9. a 8. st. kámen z Nory."
        ],
        [
         "814 př. n. l.",
@@ -3477,7 +3477,7 @@
       "typ": "text",
       "h": "Merchants of the sea",
       "p": [
-       "After the collapse of the great Bronze Age empires around 1200 BCE, independent port cities flourished on the narrow coast below the mountains of Lebanon: Tyre, Sidon, Byblos and Arwad. They called themselves after their cities or Canaanites; the name Phoenicians was given to them by the Greeks and is usually linked with the Greek word for purple.",
+       "After the collapse of the great Bronze Age empires around 1200 BCE, independent port cities flourished on the narrow coast below the mountains of Lebanon: Tyre, Sidon, Byblos and Arwad. They identified themselves mainly by their cities (whether they also called themselves Canaanites is disputed); the name Phoenicians was given to them by the Greeks and is usually linked with the Greek word for purple.",
        "The Phoenicians exported cedar wood, glass, ivory and above all purple dye from murex sea snails. They founded settlements on Cyprus, Sicily and Sardinia, in Spain and in North Africa. The most famous, Carthage, was according to tradition founded by Tyre in 814 BCE; after three Punic Wars with Rome it was destroyed in 146 BCE."
       ]
      },
@@ -3499,7 +3499,7 @@
       "typ": "text",
       "h": "An alphabet of twenty-two letters",
       "p": [
-       "The Phoenician alphabet grew out of the Proto-Sinaitic and Proto-Canaanite scripts, whose signs imitated Egyptian hieroglyphs. Around 1050 BCE it settled into a form of 22 letters. It recorded only consonants (technically an abjad), ran from right to left, and words were often separated by a dot or stroke.",
+       "The Phoenician alphabet grew out of the Proto-Sinaitic and Proto-Canaanite scripts, whose signs imitated Egyptian hieroglyphs. Its emergence as a 22-letter script is conventionally dated to c. 1050 BCE. It recorded only consonants (technically an abjad), ran from right to left, and in the earliest inscriptions words were separated by a short stroke or dot.",
        "Each letter had a name beginning with its sound: ʾalp “ox”, bet “house”, mem “water”, ʿain “eye”, rosh “head”. The letter shapes originally depicted these things – and the ox head, turned upside down, is still our A."
       ]
      },
@@ -3618,7 +3618,7 @@
         "mark"
        ]
       ],
-      "pozn": "Below each sign: the letter's name, its Latin descendant and the meaning of the name. Meanings with a question mark are uncertain. The Greeks turned the consonants ʾalp, he, ʿain and yod into the vowels A, E, O and I. The signs are rendered with the Noto Sans Phoenician font."
+      "pozn": "Below each sign: the letter's name, its Latin descendant and the meaning of the name. Meanings with a question mark are uncertain, and the others are the usual interpretations. The Phoenician letter names are not directly attested; they are reconstructed from Hebrew and Greek names. The Greeks turned the consonants ʾalp, he, ʿain and yod into the vowels A, E, O and I, and wau became upsilon (Y). The signs are rendered with the Noto Sans Phoenician font."
      },
      {
       "typ": "foto",
@@ -3656,7 +3656,7 @@
        ]
       ],
       "preklad": "“This coffin … son of Ahiram, king of Byblos, made for Ahiram, his father.”",
-      "vyklad": "The opening of the inscription on the sarcophagus of King Ahiram of Byblos, the earliest known text in the fully developed Phoenician alphabet. It reads from right to left, and words are separated by the vertical mark 𐤟. The son's name is damaged and its reading uncertain."
+      "vyklad": "The opening of the inscription on the sarcophagus of King Ahiram of Byblos, considered the earliest known text in the fully developed Phoenician alphabet; it is usually dated to around 1000 BCE, but the date is disputed. It reads from right to left, and words are separated by the vertical mark 𐤟. The son's name is damaged and its reading uncertain."
      },
      {
       "typ": "foto",
@@ -3667,7 +3667,7 @@
       "typ": "rameček",
       "h": "An alphabet of wedges",
       "p": [
-       "In the Syrian port of Ugarit, scribes of the 14th and 13th centuries BCE used a cuneiform script that was not syllabic as in Mesopotamia but alphabetic: about thirty signs made of wedges. Practice tablets with the alphabet show that in Ugarit the letters already had almost the same order as in the Phoenician alphabet: 𐎀𐎁𐎂𐎃𐎄 (a, b, g, kh, d)."
+       "In the Syrian port of Ugarit, scribes of the 14th and 13th centuries BCE used a cuneiform script that was not syllabic as in Mesopotamia but alphabetic: about thirty signs made of wedges. Practice tablets with the alphabet show that in Ugarit the letters already had almost the same order as in the Phoenician alphabet: 𐎀𐎁𐎂𐎃𐎄 (ʾa, b, g, ḫ, d)."
       ]
      },
      {
@@ -3687,7 +3687,7 @@
       "typ": "text",
       "h": "Phoenician writing across the Mediterranean",
       "p": [
-       "The Phoenician alphabet was not used by Phoenicians alone. The stele of King Kilamuwa from Sam'al in modern Turkey, the Nora Stone from Sardinia and the gold tablets from Pyrgi in Italy, which carry the same text in Etruscan and Phoenician, show how far the script travelled. The stele of King Mesha of Moab and the earliest Hebrew inscriptions are written in very similar scripts."
+       "The Phoenician alphabet was not used by Phoenicians alone. The stele of King Kilamuwa from Sam'al in modern Turkey, the Nora Stone from Sardinia and the gold tablets from Pyrgi in Italy, which carry a parallel (not word-for-word) dedication in Etruscan and Phoenician, show how far the script travelled. The stele of King Mesha of Moab and the earliest Hebrew inscriptions are written in very similar scripts."
       ]
      },
      {
@@ -3704,7 +3704,7 @@
       "typ": "text",
       "h": "Punic and Carthage",
       "p": [
-       "In Carthage and its settlements Phoenician developed into Punic. It outlived Carthage by centuries: it was still spoken in North Africa in the time of Saint Augustine (d. 430 CE), who knew it. A few lines of Punic also appear in Plautus' Roman comedy Poenulus (The Little Carthaginian) – rarely, with vowels."
+       "In Carthage and its settlements Phoenician developed into Punic. It outlived Carthage by centuries: it was still spoken in North Africa in the time of Saint Augustine (d. 430 CE), who knew it at least in part. A few lines of Punic also appear in Plautus' Roman comedy Poenulus (The Little Carthaginian) – written in Latin letters and so, unusually, with their vowels."
       ]
      },
      {
@@ -3716,7 +3716,7 @@
       "typ": "text",
       "h": "Descendants of the Phoenician alphabet",
       "p": [
-       "In the 8th century BCE the Greeks adopted the Phoenician alphabet and added vowels; the Greek names alpha and beta gave us the word alphabet. From the Greek alphabet came the Etruscan script and from it the Latin alphabet in which English is written, and in the 9th century CE also Cyrillic.",
+       "In the 8th century BCE the Greeks adopted the Phoenician alphabet and added vowels; the Greek names alpha and beta gave us the word alphabet. From the Greek alphabet came the Etruscan script and from it the Latin alphabet in which English is written, and at the end of the 9th century CE also Cyrillic.",
        "In the east the Phoenician script developed into Aramaic, and from Aramaic came the Hebrew square script, Syriac and, via Nabataean, Arabic. The Greek word biblos, “papyrus, book” – and so the Bible – is also linked with the name of Byblos, through which Egyptian papyrus reached Greece."
       ]
      },
@@ -3730,24 +3730,24 @@
       "h": "Timeline",
       "udalosti": [
        [
-        "c. 1200 BCE",
-        "Collapse of the Bronze Age empires; the Phoenician cities flourish."
-       ],
-       [
         "14th–13th c. BCE",
         "The cuneiform alphabet of Ugarit."
        ],
        [
-        "c. 1050 BCE",
-        "The settled Phoenician alphabet of 22 letters."
+        "c. 1200 BCE",
+        "Collapse of the Bronze Age empires; the Phoenician cities flourish."
        ],
        [
-        "10th c. BCE",
+        "c. 1050 BCE",
+        "Conventional date for the start of the 22-letter Phoenician alphabet."
+       ],
+       [
+        "c. 1000 BCE (disputed)",
         "The inscription on Ahiram's sarcophagus at Byblos."
        ],
        [
         "9th c. BCE",
-        "The Kilamuwa stele, the Mesha stele, the Nora Stone."
+        "The Kilamuwa stele, the Mesha stele; around 800 the Nora Stone."
        ],
        [
         "814 BCE",
