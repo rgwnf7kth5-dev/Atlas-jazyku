@@ -34,6 +34,7 @@ function lidi(lang, T, n) {
 }
 
 /* adresa stránky o civilizaci: /starovek/chetite/, /en/ancient/hittites/ */
+const starovekA = { cs: "/starovek/", en: "/en/ancient/" };
 const civAdresa = (c, lang) => (lang === "cs" ? "/starovek/" : "/en/ancient/") + c.adresa[lang] + "/";
 export function vyrobStranky({ KOREN, WEB, NAHLED, UI, jazyky: vsechnyJazyky, glottolog, podrobnosti, nazvyZemi, ikona, fontyOdkaz, verze, dny, starovek, sablonaStarovek, stylStarovek }) {
   const DIST = path.join(KOREN, "dist");
@@ -398,18 +399,33 @@ ${html}
       const tecka = k => { const i = bodPodleKodu.get(k); if (i === undefined) return null;
         const n = (lang === "cs" && podrobnosti.radky[i][9]) || glottolog.body[i][0]; return { nazev: n.charAt(0).toUpperCase() + n.slice(1), href: domov[lang] + "#" + k }; };
       const clanek = STAROVEK.html(c, lang, { U: Us, foto: k => `/starovek/${c.id}/${c.fotky[k].soubor}`, fotoMala: k => `/starovek/${c.id}/${k}-720.jpg`,
-        malba: `<img src="/starovek/${c.id}/malba.jpg" alt="" width="1200" height="630">`, tecka });
+        malba: `<img src="/starovek/${c.id}/malba.jpg" alt="" width="1200" height="630">`, tecka,
+        vsechny: starovek.civilizace, odkazCiv: x => civAdresa(x, lang) });
       const pisma = STAROVEK.odkazPisma(c);
       zapis(adresa, stranka({ lang, adresa, jinaAdresa: jina, titulek: Us.titulek.replace("{n}", L.nazev) + " · " + T.nazev, popis: L.perex,
         obrazek: { src: `/starovek/${c.id}/malba.jpg`, w: 1200, h: 630 },
         obsah: `${pisma ? `<link rel="stylesheet" href="${escHtml(pisma)}">` : ""}<style>${stylStarovek}
 main{max-width:1100px} .civ{border-radius:18px; overflow:hidden; box-shadow:0 30px 70px -40px rgba(25,32,60,.55); border:1px solid var(--linka)}
 .civ dl{display:block} .civ .civ-glosy{display:flex}</style>
-<nav class="drobky" aria-label="${escHtml(S.drobky)}"><a href="${domov[lang]}">${escHtml(T.nazev)}</a> › ${escHtml(Us.stitek)} › ${escHtml(L.nazev)}</nav>
+<nav class="drobky" aria-label="${escHtml(S.drobky)}"><a href="${domov[lang]}">${escHtml(T.nazev)}</a> › <a href="${starovekA[lang]}">${escHtml(Us.stitek)}</a> › ${escHtml(L.nazev)}</nav>
 ${clanek}
 <p><a class="tl" href="${domov[lang]}#${c.adresa[lang]}">${escHtml(Us.zpet)}</a></p>` }));
       vsechny.push([adresa, jina, lang]);
     }
+    /* rozcestník Jazyky starověku: /starovek/, /en/ancient/ */
+    { const Us = T.starovek;
+      const karty = starovek.civilizace.map(c => `<li><a class="civ-rozcestnik" href="${civAdresa(c, lang)}"><img src="/starovek/${c.id}/malba.jpg" alt="" width="1200" height="630" loading="lazy"><b>${escHtml(c[lang].nazev)}</b><small>${escHtml(c[lang].podtitul)}</small><span>${escHtml(c[lang].perex)}</span></a></li>`).join("");
+      zapis(starovekA[lang], stranka({ lang, adresa: starovekA[lang], jinaAdresa: starovekA[jiny], titulek: Us.stitek + " · " + T.nazev, popis: Us.uvod,
+        obrazek: { src: `/starovek/${starovek.civilizace[0].id}/malba.jpg`, w: 1200, h: 630 },
+        obsah: `<style>.civ-rozcestniky{list-style:none; margin:18px 0 0; padding:0; display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:16px}
+.civ-rozcestnik{display:flex; flex-direction:column; gap:4px; height:100%; padding:0 0 16px; border-radius:16px; overflow:hidden; background:var(--karta); border:1px solid var(--linka); color:inherit; text-decoration:none}
+.civ-rozcestnik:hover{border-color:var(--odkaz)} .civ-rozcestnik img{width:100%; height:auto; aspect-ratio:16/9; object-fit:cover; display:block; margin-bottom:8px}
+.civ-rozcestnik b{font:600 1.35rem var(--nadpis); padding:0 16px} .civ-rozcestnik small{color:var(--text2); padding:0 16px} .civ-rozcestnik span{font-size:.92rem; padding:4px 16px 0}</style>
+<nav class="drobky" aria-label="${escHtml(S.drobky)}"><a href="${domov[lang]}">${escHtml(T.nazev)}</a> › ${escHtml(Us.stitek)}</nav>
+<h1>${escHtml(Us.stitek)}</h1>
+<p class="fakt">${escHtml(Us.uvod)}</p>
+<ul class="civ-rozcestniky">${karty}</ul>` }));
+      vsechny.push([starovekA[lang], starovekA[jiny], lang]); }
   }
   return { adresy, prehled, stranky: vsechny };
 }

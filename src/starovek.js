@@ -7,7 +7,7 @@
 var STAROVEK = (function(){
   function esc(s){ return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
   /* písma starověku v Unicode a třída, která jim dá písmo Noto (src/starovek.css) */
-  const PISMA = [["civ-klin", "\\u{12000}-\\u{1254F}"], ["civ-hier", "\\u{14400}-\\u{1467F}"], ["civ-egy", "\\u{13000}-\\u{1345F}"], ["civ-kopt", "\\u2C80-\\u2CFF\\u03E2-\\u03EF"], ["civ-fen", "\\u{10900}-\\u{1091F}"], ["civ-ugar", "\\u{10380}-\\u{1039F}"], ["civ-perskl", "\\u{103A0}-\\u{103DF}"]]
+  const PISMA = [["civ-klin", "\\u{12000}-\\u{1254F}"], ["civ-hier", "\\u{14400}-\\u{1467F}"], ["civ-egy", "\\u{13000}-\\u{1345F}"], ["civ-kopt", "\\u2C80-\\u2CFF\\u03E2-\\u03EF"], ["civ-fen", "\\u{10900}-\\u{1091F}"], ["civ-ugar", "\\u{10380}-\\u{1039F}"], ["civ-perskl", "\\u{103A0}-\\u{103DF}"], ["civ-linb", "\\u{10000}-\\u{100FF}"], ["civ-lina", "\\u{10600}-\\u{1077F}"], ["civ-mayc", "\\u{1D2E0}-\\u{1D2FF}"]]
     .map(function(p){ return [p[0], new RegExp("[" + p[1] + "]", "u"), new RegExp("([" + p[1] + "][" + p[1] + "\\u0300-\\u036F\\s]*)", "gu")]; });
   function tridaPisma(z){ for (const p of PISMA) if (p[1].test(z)) return p[0]; return ""; }
   /* úseky starověkých písem v textu dostanou vlastní písmo */
@@ -57,6 +57,15 @@ var STAROVEK = (function(){
     }
     return "";
   }
+  /* rozcestník na konci stránky: ostatní civilizace (v aplikaci tlačítka data-civ, na webu odkazy) */
+  function ostatni(c, lang, o){
+    const dalsi = (o.vsechny || []).filter(function(x){ return x.id !== c.id; });
+    if (!dalsi.length) return "";
+    return '<nav class="civ-dalsi" aria-label="' + esc(o.U.dalsi) + '"><h2>' + esc(o.U.dalsi) + "</h2><ul>" + dalsi.map(function(x){
+      const obsah = "<b>" + esc(x[lang].nazev) + "</b><small>" + esc(x[lang].podtitul) + "</small>";
+      return "<li>" + (o.odkazCiv ? '<a class="civ-dalsi-tl" href="' + esc(o.odkazCiv(x)) + '">' + obsah + "</a>" : '<button class="civ-dalsi-tl" type="button" data-civ="' + esc(x.id) + '">' + obsah + "</button>") + "</li>";
+    }).join("") + "</ul></nav>";
+  }
   function html(c, lang, o){
     const L = c[lang], U = o.U;
     return '<article class="civ" lang="' + lang + '">' +
@@ -66,6 +75,7 @@ var STAROVEK = (function(){
       L.fakta.map(function(f){ return "<div><dt>" + esc(f[0]) + "</dt><dd>" + text(f[1]) + "</dd></div>"; }).join("") + "</dl></aside>" +
       '<p class="civ-perex">' + text(L.perex) + "</p>" +
       L.oddily.map(function(b){ return oddil(c, b, lang, o); }).join("") +
+      ostatni(c, lang, o) +
       '<footer class="civ-pata"><p>' + esc(U.pata) + "</p></footer></div></article>";
   }
   /* znaky, pro které je potřeba stáhnout písmo Noto (Google Fonts s parametrem text=) */

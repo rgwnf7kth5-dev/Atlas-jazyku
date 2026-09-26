@@ -1909,6 +1909,56 @@ var AKVARELY = (function(){
       });
       return o + ptaci(F, r, 4, 250, 64);
     },
+    /* Řecko (stránka o civilizaci): Akropole se sloupovým chrámem na skále, olivovníky a cypřiše, v dálce Egejské moře */
+    akropole: function(F, r){
+      const q = nahoda(F.sem + 471);
+      let o = nebe(F, "#6FA6DE", "#F2EAD8") + rasy(F, r, 2, 14, 34) + mraky(F, r, 2, 30, 54, 70);
+      o += voda(F, q, "M-10 256 L-10 126 Q200 122 420 126 L420 256 Z", "#6CA8D2", "#2E6E9E", 128, 170, 10);
+      o += hrebeny(F, [[124, 6, 60, 1.5, "#A8B0C0", .5]]);
+      /* skála Akropole */
+      const skala = "M40 256 L60 176 Q90 150 140 144 L300 144 Q340 150 360 176 L380 256 Z";
+      o += kryt(F, skala) + vrstva(F, skala, "#D8C4A0", "#9E8864", .95);
+      let praskliny = ""; for (let i = 0; i < 14; i++) { const x = 70 + q() * 280, y = 160 + q() * 60; praskliny += tah("M" + f1(x) + " " + f1(y) + " l" + f1((q() - .5) * 8) + " " + f1(6 + q() * 10), "#8A7654", .5, .4); }
+      o += skupina(F, F.stetec, praskliny);
+      /* chrám: podnoží, řada sloupů, kladí a štít */
+      const cx = 210, zak = 146, w = 64, h = 30;
+      const podnozi = mnoho([[cx - w - 4, zak], [cx + w + 4, zak], [cx + w + 2, zak - 5], [cx - w - 2, zak - 5]]);
+      const kladi = mnoho([[cx - w - 2, zak - 5 - h], [cx + w + 2, zak - 5 - h], [cx + w + 2, zak - 12 - h], [cx - w - 2, zak - 12 - h]]);
+      const stit = mnoho([[cx - w - 3, zak - 12 - h], [cx + w + 3, zak - 12 - h], [cx, zak - 26 - h]]);
+      let sloupy = ""; for (let i = 0; i < 9; i++) { const x = cx - w + 3 + i * (2 * w - 6) / 8; sloupy += mnoho([[x - 3, zak - 5], [x + 3, zak - 5], [x + 2.4, zak - 5 - h], [x - 2.4, zak - 5 - h]]); }
+      o += kryt(F, podnozi + kladi + stit + sloupy, F.jemna) + nanes(F, podnozi, "#EFE4CE", .95) + nanes(F, sloupy, "#F2E8D4", .95) + nanes(F, kladi + stit, "#E8DCC2", .95);
+      let stin = ""; for (let i = 0; i < 9; i++) { const x = cx - w + 3 + i * (2 * w - 6) / 8; stin += tah("M" + f1(x + 1.6) + " " + (zak - 6) + " L" + f1(x + 1.4) + " " + (zak - 4 - h), "#B8A484", .8, .5); }
+      o += skupina(F, F.stetec, stin);
+      /* svah pod skálou s olivovníky a cypřiši */
+      const svah = "M-10 256 L-10 206 Q120 196 210 214 Q320 232 420 214 L420 256 Z";
+      o += kryt(F, svah) + vrstva(F, svah, "#A8A868", "#6E7A44", .92);
+      for (let i = 0; i < 6; i++) o += oliva(F, q, 20 + i * 72 + q() * 20, 238 + q() * 10, 1.1 + q() * .3);
+      [[34, 226, 44], [372, 222, 50], [392, 230, 38]].forEach(function(c){ o += cypris(F, q, c[0], c[1], c[2], 1); });
+      return o + ptaci(F, r, 3, 300, 56);
+    },
+    /* Mayové: prales, strmá stupňovitá pyramida s chrámem a hřebenem na střeše (jako v Tikalu), ceiby, mlha */
+    maya: function(F, r){
+      const q = nahoda(F.sem + 473);
+      let o = nebe(F, "#86B4D6", "#EEF0DC") + rasy(F, r, 2, 14, 34);
+      o += hrebeny(F, [[132, 8, 70, 1.2, "#6E9A7A", .45], [150, 10, 60, 2.2, "#4E8A5A", .25]]);
+      /* pyramida */
+      const px = 206, py = 170;
+      let st = "";
+      for (let i = 0; i < 8; i++) { const w = 46 - i * 4.2, y = py - i * 11; st += mnoho([[px - w, y], [px + w, y], [px + w - 2, y - 10], [px - w + 2, y - 10]]); }
+      const chram = mnoho([[px - 14, py - 88], [px + 14, py - 88], [px + 13, py - 104], [px - 13, py - 104]]);
+      const hreben = mnoho([[px - 9, py - 104], [px + 9, py - 104], [px + 7, py - 124], [px - 7, py - 124]]);
+      const schody = mnoho([[px - 7, py], [px + 7, py], [px + 5, py - 88], [px - 5, py - 88]]);
+      o += kryt(F, st + chram + hreben, F.jemna) + vrstva(F, st, "#D8CCB0", "#9A907A", .95, F.jemna) + nanes(F, schody, "#C8BCA0", .9) + nanes(F, chram, "#CFC2A6", .95) + nanes(F, hreben, "#C4B698", .95) +
+        nanes(F, mnoho([[px - 4, py - 88], [px + 4, py - 88], [px + 4, py - 97], [px - 4, py - 97]]), "#3E3A34", .85);
+      let spary = ""; for (let i = 0; i < 8; i++) { const w = 46 - i * 4.2, y = py - i * 11 - 10; spary += tah("M" + f1(px - w + 2) + " " + f1(y) + " L" + f1(px + w - 2) + " " + f1(y), "#7A7060", .5, .5); }
+      o += skupina(F, F.stetec, spary);
+      o += mlha(F, py - 8, py + 6, .55);
+      /* prales: vrstvy korun */
+      o += koruny(F, q, -20, 430, 176, 1.3, "#3E7A44", .95) + koruny(F, q, -20, 430, 204, 1.6, "#2E6A3A", .95) + koruny(F, q, -20, 430, 236, 2, "#245A30", .95);
+      /* ceiba vpředu vlevo: rovný kmen a plochá koruna */
+      o += skupina(F, F.stetec, tah("M52 256 L56 150", "#6A5A46", 4, .9)) + nanes(F, "M10 154 Q56 126 104 150 Q80 162 56 158 Q30 164 10 154 Z", "#2E5E34", .95);
+      return o + ptaci(F, r, 5, 250, 60);
+    },
     izrael: function(F, r){
       const q = nahoda(F.sem + 449);
       let o = nebe(F, "#7EB0E2", "#F6EAD0") + rasy(F, r, 2, 12, 30);

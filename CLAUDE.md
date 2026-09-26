@@ -373,7 +373,9 @@ kartě tečky jazyka civilizace (`tecky` v datech) a odkaz `#chetite` / `#hittit
 adresa `#egypt`, `/starovek/egypt/`, `/en/ancient/egypt/`). Dlaždice řadí civilizace chronologicky (pořadí
 v `data/starovek.json`). Tentýž den přibyly **Sumer a Akkad** (`#sumer-a-akkad`, id `mezopotamie`) a **Féničané**
 (`#fenicane` / `#phoenicians`); ikona chrámu v záhlaví má bublinu s vysvětlením při najetí myší (uživatel: „na tu
-ikonu mouseover, o co jde“). Další navržené: Řecko (lineární B
+ikonu mouseover, o co jde“). V okně civilizace je vlevo nahoře „‹ Jazyky starověku“ zpět do výběru a na konci
+rozcestník ostatních civilizací (uživatel: „nedostanu se zpátky na výběr civilizací“); web má rozcestník `/starovek/`
+a `/en/ancient/`. Další navržené: Řecko (lineární B
 → alfabeta), Řím, Etruskové, Čína (věštebné kosti), Indie (sanskrt, bráhmí, písmo Indu), Persie, Mayové, Aksum.
 
 - Data `data/starovek.json`: `civilizace[]` s `id`, `adresa{cs,en}`, `krajina` (druh akvarelu), `tecky` (glottocody),

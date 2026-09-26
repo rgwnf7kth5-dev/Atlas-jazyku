@@ -1101,7 +1101,10 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 .civ-fen{font-family:"Noto Sans Phoenician", sans-serif; font-weight:400; font-size:1.25em}
 .civ-ugar{font-family:"Noto Sans Ugaritic", sans-serif; font-weight:400; font-size:1.2em}
 .civ-perskl{font-family:"Noto Sans Old Persian", sans-serif; font-weight:400; font-size:1.2em}
-.civ-znak.civ-fen, .civ-znak.civ-ugar, .civ-znak.civ-perskl{font-size:2.4rem}
+.civ-linb{font-family:"Noto Sans Linear B", sans-serif; font-weight:400; font-size:1.3em}
+.civ-lina{font-family:"Noto Sans Linear A", sans-serif; font-weight:400; font-size:1.3em}
+.civ-mayc{font-family:"Noto Sans Mayan Numerals", sans-serif; font-weight:400; font-size:1.4em}
+.civ-znak.civ-fen, .civ-znak.civ-ugar, .civ-znak.civ-perskl, .civ-znak.civ-linb, .civ-znak.civ-lina, .civ-znak.civ-mayc{font-size:2.4rem}
 .civ-znak.civ-egy, .civ-znak-radek.civ-egy{font-size:2.5rem; vertical-align:0}
 .civ-hier{font-family:"Noto Sans Anatolian Hieroglyphs", sans-serif; font-weight:400; font-size:1.7em; line-height:1; vertical-align:-.2em}
 
@@ -1224,6 +1227,19 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 .civ-zavrit:focus-visible{outline:3px solid #A4472A; outline-offset:2px}
 @media (max-width:760px){ .civ-okno{width:100vw; height:100dvh; max-width:none; border-radius:0} }
 
+/* návrat do výběru civilizací (vlevo nahoře v okně) a rozcestník na konci stránky */
+.civ-zpet{position:absolute; top:12px; left:12px; z-index:2; height:42px; display:inline-flex; align-items:center; gap:6px; padding:0 16px 0 10px; border-radius:999px; border:0; cursor:pointer;
+  background:rgba(251,247,238,.92); color:#2B241C; font:600 .88rem var(--pismo-text, sans-serif); box-shadow:0 6px 18px -6px rgba(0,0,0,.45)}
+.civ-zpet svg{width:18px; height:18px}
+.civ-zpet:focus-visible{outline:3px solid #A4472A; outline-offset:2px}
+.civ-dalsi{clear:both; margin-top:34px}
+.civ-dalsi ul{list-style:none; margin:10px 0 0; padding:0; display:grid; grid-template-columns:repeat(auto-fill, minmax(220px, 1fr)); gap:10px}
+.civ-dalsi-tl{display:flex; flex-direction:column; gap:2px; width:100%; height:100%; padding:12px 16px; border-radius:12px; border:1px solid var(--civ-linka); background:var(--civ-papir2);
+  color:var(--civ-ink); font:inherit; text-align:left; text-decoration:none; cursor:pointer}
+.civ-dalsi-tl:hover{border-color:var(--civ-akcent)}
+.civ-dalsi-tl:focus-visible{outline:3px solid var(--civ-akcent); outline-offset:2px}
+.civ-dalsi-tl b{font-family:"Playfair Display", Georgia, serif; font-size:1.1rem; font-weight:600}
+.civ-dalsi-tl small{font-size:.8rem; color:var(--civ-ink3)}
 /* vstup ze seznamu jazyků: „Jazyky starověku“ */
 .starovek-karta{display:flex; flex-direction:column; gap:8px; width:100%; margin:0 0 12px; padding:12px; border-radius:18px; border:1px solid var(--sklo-okraj, rgba(0,0,0,.1)); background:var(--plocha, transparent)}
 .starovek-stitek{display:flex; align-items:center; gap:7px; margin:0 4px; font-size:.72rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:var(--text2)}
@@ -1475,6 +1491,6 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
  <dialog class="civ-okno" id="civ-okno" aria-labelledby="civ-nadpis"></dialog>
 </div>
 
-<script src="../js/atlas.5f55c170dc.js"></script>
+<script src="../js/atlas.d7de09b246.js"></script>
 </body>
 </html>

@@ -2644,14 +2644,20 @@ function postavCivilizaci(c){
     foto: function(k){ return F.zaklad ? F.zaklad + c.fotky[k].soubor : F[k]; },
     fotoMala: F.zaklad ? function(k){ return F.zaklad + k + "-720.jpg"; } : null,
     malba: F.zaklad ? '<img src="' + F.zaklad + 'malba.jpg" alt="" width="1200" height="630">' : '<img alt="" width="800" height="500">',
-    tecka: function(k){ return PODLE_KODU.has(k) ? {nazev: jmenoBodu(PODLE_KODU.get(k))} : null; }
+    tecka: function(k){ return PODLE_KODU.has(k) ? {nazev: jmenoBodu(PODLE_KODU.get(k))} : null; },
+    vsechny: STAROVEK_DATA.civilizace
   });
   if (!F.zaklad) { const img = svitek.querySelector(".civ-malba img"), cesta = malbaObrazek("civ-" + c.id); if (cesta) cesta.then(function(u){ if (u) img.src = u; }); }
   const x = prvek("button", "civ-zavrit"); x.type = "button"; x.setAttribute("aria-label", T.starovek.zavrit);
   x.innerHTML = '<svg aria-hidden="true"><use href="#i-krizek"/></svg>';
   x.addEventListener("click", function(){ civOkno.close(); });
-  civOkno.replaceChildren(x, svitek);
+  const zpet = prvek("button", "civ-zpet"); zpet.type = "button";      /* zpět do výběru civilizací (uživatel 26. 9. 2026) */
+  zpet.innerHTML = '<svg aria-hidden="true"><use href="#i-zpet"/></svg>'; zpet.appendChild(document.createTextNode(T.starovek.stitek));
+  zpet.addEventListener("click", function(){ civOkno.close(); otevriStarovek(); });
+  civOkno.replaceChildren(x, zpet, svitek);
   svitek.addEventListener("click", function(e){
+    const dc = e.target.closest && e.target.closest("[data-civ]");
+    if (dc) { otevriCivilizaci(dc.dataset.civ); return; }
     const b = e.target.closest && e.target.closest("[data-tecka]");
     if (!b || !PODLE_KODU.has(b.dataset.tecka)) return;
     const i = PODLE_KODU.get(b.dataset.tecka);
