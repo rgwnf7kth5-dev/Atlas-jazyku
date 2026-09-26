@@ -8,6 +8,13 @@ from PIL import Image
 KOREN = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 data = json.load(open(os.path.join(KOREN, "data/starovek.json")))
 celkem = 0
+# náhledy ilustrací do nabídky „Jazyky starověku“ a na tlačítka civilizací (240 × 150, 16:10 jako .starovek-malba);
+# hotový obrázek se ukáže hned, živé kreslení 19 akvarelů trvalo na telefonu několik sekund
+for c in data["civilizace"]:
+    im = Image.open(os.path.join(KOREN, "static/starovek", c["id"], "malba.jpg")).convert("RGB")
+    w, h = im.size; cw = min(w, int(h * 1.6)); x0 = (w - cw) // 2
+    im = im.crop((x0, 0, x0 + cw, h)).resize((240, 150), Image.LANCZOS)
+    im.save(os.path.join(KOREN, "static/starovek", c["id"], "nahled.jpg"), quality=78, optimize=True, progressive=True)
 for c in data["civilizace"]:
     cil = os.path.join(KOREN, "artefakt/starovek", c["id"]); os.makedirs(cil, exist_ok=True)
     for k in c["fotky"]:

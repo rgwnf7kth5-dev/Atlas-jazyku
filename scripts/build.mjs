@@ -82,12 +82,14 @@ const REJSTRIK = {
    s verzemi -720 by artefakt přesáhl limit 16 MB */
 const STAROVEK = json("data/starovek.json");
 function starovekDoSkriptu(artefakt) {
-  const foto = {};
+  const foto = {}, nahled = {};
   for (const c of STAROVEK.civilizace) {
+    const soubor = path.join(KOREN, `static/starovek/${c.id}/nahled.jpg`);
+    nahled[c.id] = artefakt ? "data:image/jpeg;base64," + fs.readFileSync(soubor).toString("base64") : `/starovek/${c.id}/nahled.jpg`;
     if (!artefakt) { foto[c.id] = { zaklad: `/starovek/${c.id}/` }; continue; }
     foto[c.id] = Object.fromEntries(Object.keys(c.fotky).map(k => [k, "data:image/jpeg;base64," + fs.readFileSync(path.join(KOREN, `artefakt/starovek/${c.id}/${k}.jpg`)).toString("base64")]));
   }
-  return { civilizace: STAROVEK.civilizace, foto };
+  return { civilizace: STAROVEK.civilizace, foto, nahled };
 }
 /* skript stránky s daty; na webu je jeden pro obě jazykové verze (jazyk si přečte z <html lang>) */
 function skriptStranky(vychozi, artefakt) {

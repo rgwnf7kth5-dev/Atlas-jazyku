@@ -2689,7 +2689,7 @@ function kartaStarovek(hledane){
   st.appendChild(document.createTextNode(T.starovek.stitek)); k.appendChild(st);
   civ.forEach(function(c){
     const b = prvek("button", "starovek-tl"); b.type = "button";
-    const m = prvek("span", "starovek-malba"); vlozMalbu(m, "civ-" + c.id); b.appendChild(m);
+    b.appendChild(malbaCivilizace(c));
     const t = prvek("span"); t.appendChild(prvek("b", null, c[T.lang].nazev)); t.appendChild(prvek("small", null, c[T.lang].podtitul)); b.appendChild(t);
     b.insertAdjacentHTML("beforeend", '<svg aria-hidden="true"><use href="#i-dal"/></svg>');
     b.addEventListener("click", function(){ otevriCivilizaci(c.id); });
@@ -2708,13 +2708,17 @@ function otevriStarovek(){
   hlava.appendChild(x); starovekOkno.appendChild(hlava);
   const telo = prvek("div", "od-telo");
   telo.appendChild(prvek("p", "od-uvod", T.starovek.uvod));
+  /* přehledy (rodokmen písem, slovníček) mají vlastní podbarvený blok, pod ním ozdobný předěl a pak civilizace */
+  const prehledy = prvek("div", "starovek-prehledy");
+  const predel = prvek("div", "starovek-predel"); predel.setAttribute("aria-hidden", "true"); predel.appendChild(prvek("span"));
   STAROVEK_DATA.civilizace.forEach(function(c){
     const b = prvek("button", "starovek-tl"); b.type = "button";
-    const m = prvek("span", "starovek-malba"); vlozMalbu(m, "civ-" + c.id); b.appendChild(m);
+    b.appendChild(malbaCivilizace(c));
     const t = prvek("span"); t.appendChild(prvek("b", null, c[T.lang].nazev)); t.appendChild(prvek("small", null, c[T.lang].podtitul)); b.appendChild(t);
     b.insertAdjacentHTML("beforeend", '<svg aria-hidden="true"><use href="#i-dal"/></svg>');
     b.addEventListener("click", function(){ starovekOkno.close(); otevriCivilizaci(c.id); });
-    telo.appendChild(b);
+    if (c.prehled) prehledy.appendChild(b);
+    else { if (prehledy.childNodes.length && !prehledy.parentNode) { telo.appendChild(prehledy); telo.appendChild(predel); } telo.appendChild(b); }
   });
   starovekOkno.appendChild(telo);
   if (starovekOkno.showModal) { if (!starovekOkno.open) starovekOkno.showModal(); } else starovekOkno.setAttribute("open", "");
@@ -2723,9 +2727,16 @@ $("tl-starovek").addEventListener("click", otevriStarovek);
 $("tl-starovek").hidden = !STAROVEK_DATA.civilizace.length;
 starovekOkno.addEventListener("click", function(e){ if (e.target === starovekOkno) starovekOkno.close(); });
 /* tlačítko na kartě tečky, jejíž jazyk patří k civilizaci (chetitština, luvijština…) */
+/* náhled ilustrace civilizace: hotový malý obrázek (nahled.jpg), jinak živě kreslený akvarel */
+function malbaCivilizace(c){
+  const m = prvek("span", "starovek-malba"), u = STAROVEK_DATA.nahled && STAROVEK_DATA.nahled[c.id];
+  if (u) { const i = prvek("img"); i.alt = ""; i.decoding = "async"; i.className = "ukazana"; i.src = u; m.appendChild(i); }
+  else vlozMalbu(m, "civ-" + c.id);
+  return m;
+}
 function tlacitkoCivilizace(c){
   const b = prvek("button", "k-civ"); b.type = "button";
-  const m = prvek("span", "starovek-malba"); vlozMalbu(m, "civ-" + c.id); b.appendChild(m);
+  b.appendChild(malbaCivilizace(c));
   const t = prvek("span"); t.appendChild(prvek("b", null, c[T.lang].nazev)); t.appendChild(prvek("small", null, T.starovek.karta)); b.appendChild(t);
   b.addEventListener("click", function(){ otevriCivilizaci(c.id); });
   return b;

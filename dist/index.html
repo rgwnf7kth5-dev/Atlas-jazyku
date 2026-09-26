@@ -1302,6 +1302,12 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 @media (hover:none){ .starovek-ikona .bublina{display:none} }
 .starovek-okno{width:min(520px, calc(100vw - 32px))}
 .starovek-okno .starovek-tl{margin:4px 0}
+/* přehledy nahoře nabídky: jemně podbarvený blok a pod ním ozdobný předěl (čára s kosočtvercem) */
+.starovek-prehledy{margin:6px 0 0; padding:4px 6px; border-radius:14px; background:color-mix(in srgb, var(--text) 5%, transparent); border:1px solid var(--linka)}
+.starovek-prehledy .starovek-tl:hover{background:color-mix(in srgb, var(--text) 6%, transparent)}
+.starovek-predel{display:flex; align-items:center; gap:12px; margin:16px 8px 10px; color:var(--text3)}
+.starovek-predel::before, .starovek-predel::after{content:""; flex:1; height:1px; background:linear-gradient(90deg, transparent, var(--linka2, var(--linka)) 30%, var(--linka2, var(--linka)) 70%, transparent)}
+.starovek-predel span{width:7px; height:7px; transform:rotate(45deg); border:1px solid currentColor; opacity:.7; box-shadow:0 0 0 3px color-mix(in srgb, currentColor 0%, transparent)}
 .starovek-okno .od-telo{padding-bottom:18px}
 /* rodokmen písem (oddíl „strom“): vnořený seznam s čarami; přerušovaná čára = sporné odvození */
 .civ-strom{clear:both; margin:28px 0}
@@ -1549,6 +1555,6 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
  <dialog class="civ-okno" id="civ-okno" aria-labelledby="civ-nadpis"></dialog>
 </div>
 
-<script src="js/atlas.6e9d3f2ecc.js"></script>
+<script src="js/atlas.6f06d2cee4.js"></script>
 </body>
 </html>

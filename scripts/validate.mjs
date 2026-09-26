@@ -74,6 +74,7 @@ if (pd.uzly.length !== pd.nad.length) chyby.push("data/podrobnosti.json: strom p
       if (f.licence !== "CC0" && f.licence !== "Public domain" && !f.autor) chyby.push(`${co}: fotka ${k} nemá autora (licence ho vyžaduje)`);
       if (!f.zdroj || !f.cs || !f.en) chyby.push(`${co}: fotka ${k} nemá zdroj nebo popisek v obou jazycích`);
     }
+    if (!fs.existsSync(path.join(KOREN, "static/starovek", c.id, "nahled.jpg"))) chyby.push(`${co}: chybí static/starovek/${c.id}/nahled.jpg (spusť python3 scripts/fotky-artefakt.py)`);
     if (!fs.existsSync(path.join(KOREN, "static/starovek", c.id, "malba.jpg"))) chyby.push(`${co}: chybí static/starovek/${c.id}/malba.jpg (náhled ilustrace)`);
     const typy = l => (c[l].oddily || []).map(b => b.typ).join(",");
     if (typy("cs") !== typy("en")) chyby.push(`${co}: ${c.id} má v češtině a angličtině jiné oddíly`);

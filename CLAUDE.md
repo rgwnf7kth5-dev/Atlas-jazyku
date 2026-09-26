@@ -395,7 +395,12 @@ na stránku; tabulka slova „král“ ve 20 písmech) a **Slovníček pojmů** 
 `pojmy`). Ilustrace přehledů je `pisarna` (stůl písaře). Přibyli **Hebrejci a Aramejci** (`#hebrejci`), **Keltové**
 (`#keltove`/`#celts`), **Arméni a Gruzínci** (`#armeni-a-gruzinci`), **Germáni a runy** (`#germani`/`#germanic-peoples`)
 a **Slované a Velká Morava** (`#slovane`/`#slavs`); tečku staroslověnštiny dostali Slované (ne Řecko), starohebrejštiny
-Hebrejci (ne Féničané), čeština vede na Slovany. Tlačítko civilizace je i na kartě jazyka z atlasu (záložka Zajímavost), nejen na kartě tečky. Rozcestník na konci stránek se jmenuje „Další stránky“.
+Hebrejci (ne Féničané), čeština vede na Slovany. Tlačítko civilizace je i na kartě jazyka z atlasu (záložka Zajímavost), nejen na kartě tečky.
+V nabídce Jazyků starověku jsou přehledy v jemně podbarveném bloku (`.starovek-prehledy`) a pod nimi ozdobný předěl
+(`.starovek-predel`: tenká čára s kosočtvercem), pak civilizace – uživatel 26. 9. 2026: „oddělit ty dva první body graficky“.
+Náhledy ilustrací v nabídce a na tlačítkách civilizací jsou hotové obrázky `static/starovek/<id>/nahled.jpg` (240 × 150,
+vyrábí `scripts/fotky-artefakt.py` z `malba.jpg`; v artefaktu jako data:), ne živě kreslené akvarely – 19 akvarelů se na
+iPhonu kreslilo několik sekund a uživatel viděl prázdné čtverce. Rozcestník na konci stránek se jmenuje „Další stránky“.
 **Písma se odvozují ze znaků**: `PISMA` v šabloně má i rodinu Noto a `rodinyPisma(c)` z textu, popisků fotek a tabulek
 zjistí, co stránka potřebuje; pole `pisma` v datech je jen kontrolní (validace upozorní na nesoulad). Validace hlídá, že
 každé písmo v `PISMA` má pravidlo ve `starovek.css` – bez něj se ukáže náhradní systémové písmo (stalo se u 14 nových písem).
