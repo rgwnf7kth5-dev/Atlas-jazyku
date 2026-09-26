@@ -2245,7 +2245,8 @@ function ukazKartu(j){
     if (globusOk) pribuzni.appendChild(prvek("p", "pozn", tx("pribuzniOblouky")));
   }
   zalozky([
-    {nazev: T.zalozkaZajimavost, uzly: [fakt, kde, oddilUredni(BOD_ATLASU[j.id], j.id), oddilPisma(BOD_ATLASU[j.id], j.id), oddilNareci(BOD_ATLASU[j.id])]},
+    {nazev: T.zalozkaZajimavost, uzly: [fakt, (function(){ const c = BOD_ATLASU[j.id] != null ? civPodleTecky(BOD_ATLASU[j.id]) : null; return c ? tlacitkoCivilizace(c) : null; })(),   /* jazyk z atlasu se stránkou civilizace (čeština → Slované) */
+      kde, oddilUredni(BOD_ATLASU[j.id], j.id), oddilPisma(BOD_ATLASU[j.id], j.id), oddilNareci(BOD_ATLASU[j.id])]},
     {nazev: T.vitalita, uzly: [stupenJ >= 0 ? oddilVitality(stupenJ, znakAtlas) : null]},
     {nazev: T.zalozkaStavba, uzly: [oddilTypologie(BOD_ATLASU[j.id])]},
     {nazev: T.zalozkaPribuzni, uzly: [pribuzni, tlacitkoRodokmenu(BOD_ATLASU[j.id])]}

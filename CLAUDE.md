@@ -395,7 +395,7 @@ na stránku; tabulka slova „král“ ve 20 písmech) a **Slovníček pojmů** 
 `pojmy`). Ilustrace přehledů je `pisarna` (stůl písaře). Přibyli **Hebrejci a Aramejci** (`#hebrejci`), **Keltové**
 (`#keltove`/`#celts`), **Arméni a Gruzínci** (`#armeni-a-gruzinci`), **Germáni a runy** (`#germani`/`#germanic-peoples`)
 a **Slované a Velká Morava** (`#slovane`/`#slavs`); tečku staroslověnštiny dostali Slované (ne Řecko), starohebrejštiny
-Hebrejci (ne Féničané), čeština vede na Slovany. Rozcestník na konci stránek se jmenuje „Další stránky“.
+Hebrejci (ne Féničané), čeština vede na Slovany. Tlačítko civilizace je i na kartě jazyka z atlasu (záložka Zajímavost), nejen na kartě tečky. Rozcestník na konci stránek se jmenuje „Další stránky“.
 **Písma se odvozují ze znaků**: `PISMA` v šabloně má i rodinu Noto a `rodinyPisma(c)` z textu, popisků fotek a tabulek
 zjistí, co stránka potřebuje; pole `pisma` v datech je jen kontrolní (validace upozorní na nesoulad). Validace hlídá, že
 každé písmo v `PISMA` má pravidlo ve `starovek.css` – bez něj se ukáže náhradní systémové písmo (stalo se u 14 nových písem).
