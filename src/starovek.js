@@ -6,11 +6,18 @@
          tecka(kod) → {nazev, href} (href jen na webu; v aplikaci tlačítko s data-tecka) } */
 var STAROVEK = (function(){
   function esc(s){ return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
-  const KLIN = /[\u{12000}-\u{1254F}]/u, HIER = /[\u{14400}-\u{1467F}]/u;
-  /* úseky klínového písma a hieroglyfů v textu dostanou vlastní písmo (Noto) */
+  /* písma starověku v Unicode a třída, která jim dá písmo Noto (src/starovek.css) */
+  const PISMA = [["civ-klin", "\\u{12000}-\\u{1254F}"], ["civ-hier", "\\u{14400}-\\u{1467F}"], ["civ-egy", "\\u{13000}-\\u{1345F}"], ["civ-kopt", "\\u2C80-\\u2CFF\\u03E2-\\u03EF"]]
+    .map(function(p){ return [p[0], new RegExp("[" + p[1] + "]", "u"), new RegExp("([" + p[1] + "][" + p[1] + "\\u0300-\\u036F\\s]*)", "gu")]; });
+  function tridaPisma(z){ for (const p of PISMA) if (p[1].test(z)) return p[0]; return ""; }
+  /* úseky starověkých písem v textu dostanou vlastní písmo */
   function text(s){
-    return esc(s).replace(/([\u{12000}-\u{1254F}]+)/gu, '<span class="civ-klin">$1</span>').replace(/([\u{14400}-\u{1467F}]+)/gu, '<span class="civ-hier">$1</span>');
+    let h = esc(s);
+    PISMA.forEach(function(p){ h = h.replace(p[2], function(m){ const t = m.replace(/\s+$/, ""); return '<span class="' + p[0] + '">' + t + "</span>" + m.slice(t.length); }); });
+    return h;
   }
+  /* řádek znaků (věta, příklad): třída podle prvního znaku */
+  function radekPisma(z, trida){ return '<span class="' + tridaPisma(z) + " " + trida + '" aria-hidden="true">' + esc(z) + "</span>"; }
   function kredit(f, U){
     const lic = f.licenceUrl ? '<a href="' + esc(f.licenceUrl) + '" rel="license noopener" target="_blank">' + esc(f.licence) + "</a>" : esc(f.licence === "Public domain" ? U.volneDilo : f.licence);
     return '<span class="civ-kredit">' + esc(U.foto) + ": " + (f.autor ? esc(f.autor) + ", " : "") + lic +
@@ -31,10 +38,10 @@ var STAROVEK = (function(){
       case "foto": return foto(c, b.f, lang, o, b.siroka ? "siroka" : b["na-vysku"] ? "na-vysku" : "");
       case "galerie": return '<section class="civ-galerie">' + h + '<div class="civ-mrizka">' + b.f.map(function(k){ return foto(c, k, lang, o, ""); }).join("") + "</div></section>";
       case "znaky": return '<section class="civ-znaky">' + h + '<ul class="civ-znaky-seznam">' + b.znaky.map(function(z){
-          return '<li><span class="civ-klin civ-znak" aria-hidden="true">' + esc(z[0]) + '</span><b lang="und">' + esc(z[1]) + "</b><small>" + esc(z[2]) + "</small></li>"; }).join("") + "</ul>" +
-        (b.priklad ? '<p class="civ-priklad"><span class="civ-klin civ-znak-radek" aria-hidden="true">' + esc(b.priklad.klin) + '</span><span class="civ-prepis">' + esc(b.priklad.prepis) + "</span><span>" + esc(b.priklad.vyznam) + "</span></p>" : "") +
+          return "<li>" + radekPisma(z[0], "civ-znak") + '<b lang="und">' + esc(z[1]) + "</b><small>" + esc(z[2]) + "</small></li>"; }).join("") + "</ul>" +
+        (b.priklad ? '<p class="civ-priklad">' + radekPisma(b.priklad.klin, "civ-znak-radek") + '<span class="civ-prepis">' + esc(b.priklad.prepis) + "</span><span>" + esc(b.priklad.vyznam) + "</span></p>" : "") +
         (b.pozn ? '<p class="civ-pozn">' + esc(b.pozn) + "</p>" : "") + "</section>";
-      case "veta": return '<figure class="civ-veta"><p class="civ-klin civ-veta-klin" aria-hidden="true">' + esc(b.klin) + '</p><p class="civ-prepis">' + esc(b.prepis) + "</p>" +
+      case "veta": return '<figure class="civ-veta"><p class="civ-veta-klin">' + radekPisma(b.klin, "") + '</p><p class="civ-prepis">' + esc(b.prepis) + "</p>" +
         '<dl class="civ-glosy">' + b.slova.map(function(s){ return "<div><dt>" + esc(s[0]) + "</dt><dd>" + esc(s[1]) + "</dd></div>"; }).join("") + "</dl>" +
         "<figcaption><q>" + esc(b.preklad.replace(/^[„“"]|[“”"]$/g, "")) + "</q><span>" + text(b.vyklad) + "</span></figcaption></figure>";
       case "slova": return '<section class="civ-slova">' + h + (b.uvod ? "<p>" + text(b.uvod) + "</p>" : "") + '<div class="civ-tabulka"><table><thead><tr>' +
@@ -64,7 +71,7 @@ var STAROVEK = (function(){
   /* znaky, pro které je potřeba stáhnout písmo Noto (Google Fonts s parametrem text=) */
   function znakyPisma(c){
     const s = JSON.stringify([c.cs, c.en]), m = {};
-    for (const z of s) if (KLIN.test(z) || HIER.test(z)) m[z] = 1;
+    for (const z of s) if (tridaPisma(z)) m[z] = 1;
     return Object.keys(m).join("");
   }
   function odkazPisma(c){

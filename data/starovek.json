@@ -2,6 +2,1156 @@
  "_pozn": "Stránky o civilizacích starověku (jazyk a písmo). Texty psané ručně a ověřené; fotky z Wikimedia Commons (scripts/fotky.mjs), soubory ve static/starovek/<id>/. Každá fotka musí mít autora (kromě volného díla), licenci a zdroj.",
  "civilizace": [
   {
+   "id": "egypt",
+   "adresa": {
+    "cs": "egypt",
+    "en": "egypt"
+   },
+   "krajina": "egypt",
+   "hledat": "egypt egyptstina egyptian hieroglyfy hieroglyphs koptstina coptic rosetta champollion faraon pharaoh nil nile pyramidy",
+   "tecky": [
+    "egyp1246",
+    "copt1239"
+   ],
+   "pisma": [
+    "Noto Sans Egyptian Hieroglyphs",
+    "Noto Sans Coptic"
+   ],
+   "fotky": {
+    "rosetta": {
+     "soubor": "rosetta.jpg",
+     "sirka": 940,
+     "vyska": 1100,
+     "autor": "Hans Hillewaert",
+     "licence": "CC BY-SA 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Rosetta_Stone.JPG",
+     "cs": "Rosettská deska (196 př. n. l.): tentýž kněžský výnos hieroglyfy, démoticky a řecky. Britské muzeum, Londýn.",
+     "en": "The Rosetta Stone (196 BCE): the same priestly decree in hieroglyphs, Demotic and Greek. British Museum, London."
+    },
+    "champollion": {
+     "soubor": "champollion.jpg",
+     "sirka": 458,
+     "vyska": 564,
+     "autor": "",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Jean-Francois_Champollion_2.jpg",
+     "cs": "Jean-François Champollion (1790–1832) na portrétu Léona Cognieta.",
+     "en": "Jean-François Champollion (1790–1832), portrait by Léon Cogniet."
+    },
+    "narmer": {
+     "soubor": "narmer.jpg",
+     "sirka": 761,
+     "vyska": 1100,
+     "autor": "",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Narmer_palette_(obverse).jpg",
+     "cs": "Narmerova paleta (asi 3100 př. n. l.), jeden z nejstarších dokladů egyptského písma: jméno krále nahoře je zapsané znaky sumce a dláta. Egyptské muzeum v Káhiře.",
+     "en": "The Narmer Palette (c. 3100 BCE), one of the earliest records of Egyptian writing: the king's name at the top is written with the signs of a catfish and a chisel. Egyptian Museum, Cairo."
+    },
+    "pisar": {
+     "soubor": "pisar.jpg",
+     "sirka": 985,
+     "vyska": 1100,
+     "autor": "Shonagon",
+     "licence": "CC0",
+     "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Le_Scribe_accroupi_-_Mus%C3%A9e_du_Louvre_Antiquit%C3%A9s_%C3%A9gyptiennes_E_3023.jpg",
+     "cs": "Sedící písař s rozvinutým papyrem na klíně, malovaný vápenec ze Sakkáry, doba Staré říše. Louvre, Paříž.",
+     "en": "The Seated Scribe with an unrolled papyrus on his lap, painted limestone from Saqqara, Old Kingdom. Louvre, Paris."
+    },
+    "hunefer": {
+     "soubor": "hunefer.jpg",
+     "sirka": 1200,
+     "vyska": 548,
+     "autor": "",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Book_of_the_Dead_of_Hunefer_sheet_3.jpg",
+     "cs": "Kniha mrtvých písaře Hunefera (asi 1300 př. n. l.): scéna vážení srdce a sloupce hieroglyfů psaných štětcem na papyrus. Britské muzeum, Londýn.",
+     "en": "The Book of the Dead of the scribe Hunefer (c. 1300 BCE): the weighing of the heart and columns of hieroglyphs painted with a brush on papyrus. British Museum, London."
+    },
+    "kartuse": {
+     "soubor": "kartuse.jpg",
+     "sirka": 1200,
+     "vyska": 657,
+     "autor": "",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Karnak_titul_ramses_2c.jpg",
+     "cs": "Kartuše Ramesse II. v chrámu v Karnaku. Oválný rámeček uzavírá královské jméno.",
+     "en": "Cartouches of Ramesses II in the temple of Karnak. The oval frame encloses the royal name."
+    },
+    "giza": {
+     "soubor": "giza.jpg",
+     "sirka": 1200,
+     "vyska": 798,
+     "autor": "Ricardo Liberato",
+     "licence": "CC BY-SA 2.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:All_Gizah_Pyramids.jpg",
+     "cs": "Pyramidy v Gíze, postavené pro krále 4. dynastie ve 26. století př. n. l.",
+     "en": "The pyramids of Giza, built for kings of the 4th Dynasty in the 26th century BCE."
+    },
+    "hieraticky": {
+     "soubor": "hieraticky.jpg",
+     "sirka": 968,
+     "vyska": 528,
+     "autor": "",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Sinuhe-Papyrus_(Papyrus_Berlin_3022).jpg",
+     "cs": "Začátek Příběhu Sinuhetova v hieratickém písmu (Papyrus Berlín 3022, Střední říše, asi 1800 př. n. l.), faksimile Georga Möllera.",
+     "en": "The opening of the Story of Sinuhe in hieratic script (Papyrus Berlin 3022, Middle Kingdom, c. 1800 BCE), facsimile by Georg Möller."
+    },
+    "demoticky": {
+     "soubor": "demoticky.jpg",
+     "sirka": 1200,
+     "vyska": 797,
+     "autor": "",
+     "licence": "CC0",
+     "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Demotic_papyrus_containing_two_payment_contracts_-_Museo_Egizio_Turin_S_6074_p02.jpg",
+     "cs": "Démotický papyrus se dvěma smlouvami o platbě. Egyptské muzeum v Turíně.",
+     "en": "A Demotic papyrus with two payment contracts. Museo Egizio, Turin."
+    },
+    "koptsky": {
+     "soubor": "koptsky.jpg",
+     "sirka": 790,
+     "vyska": 1100,
+     "autor": "",
+     "licence": "CC0",
+     "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Leaves_from_a_Coptic_Manuscript_MET_sf21-148-3s1.jpg",
+     "cs": "List koptského rukopisu. Metropolitní muzeum umění, New York.",
+     "en": "A leaf from a Coptic manuscript. Metropolitan Museum of Art, New York."
+    },
+    "abusir": {
+     "soubor": "abusir.jpg",
+     "sirka": 1200,
+     "vyska": 800,
+     "autor": "Vyacheslav Argenberg",
+     "licence": "CC BY 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Pyramids_of_Abusir,_Ancient_Egypt.jpg",
+     "cs": "Pyramidy v Abúsíru, kde od 60. let 20. století pracují čeští egyptologové.",
+     "en": "The pyramids of Abusir, where Czech Egyptologists have worked since the 1960s."
+    },
+    "protosinajske": {
+     "soubor": "protosinajske.jpg",
+     "sirka": 866,
+     "vyska": 577,
+     "autor": "",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Proto-Sinaitic_inscription_number_345_(cropped).jpg",
+     "cs": "Protosinajský nápis na sošce sfingy ze Serabit el-Chádim na Sinaji v kresbě Alana Gardinera.",
+     "en": "A Proto-Sinaitic inscription on a small sphinx from Serabit el-Khadim in Sinai, drawn by Alan Gardiner."
+    },
+    "paleta": {
+     "soubor": "paleta.jpg",
+     "sirka": 1200,
+     "vyska": 809,
+     "autor": "",
+     "licence": "CC0",
+     "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Scribe%27s_Palette_MET_DP307883.jpg",
+     "cs": "Dřevěná písařská paleta s prohlubněmi na černou a červenou barvu a štěrbinou na rákosová pera. Metropolitní muzeum umění, New York.",
+     "en": "A wooden scribe's palette with wells for black and red ink and a slot for reed pens. Metropolitan Museum of Art, New York."
+    },
+    "lexa": {
+     "soubor": "lexa.jpg",
+     "sirka": 1200,
+     "vyska": 882,
+     "autor": "Ludmila Zellner Rotbauerová",
+     "licence": "CC BY-SA 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Dr._Franti%C5%A1ek_Lexa,_pam%C4%9Btn%C3%AD_deska_na_rodn%C3%A9m_dom%C4%9B.jpg",
+     "cs": "Pamětní deska na rodném domě Františka Lexy v Pardubicích.",
+     "en": "Memorial plaque on František Lexa's birthplace in Pardubice."
+    },
+    "obelisk": {
+     "soubor": "obelisk.jpg",
+     "sirka": 1200,
+     "vyska": 900,
+     "autor": "PJMarriott",
+     "licence": "CC BY 3.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Obelisk_at_Kingston_Lacy_-_panoramio.jpg",
+     "cs": "Obelisk z Philae v zahradě zámku Kingston Lacy v Anglii. Jméno Kleopatry na něm pomohlo Champollionovi určit hodnoty dalších znaků.",
+     "en": "The Philae obelisk in the grounds of Kingston Lacy in England. Cleopatra's name on it helped Champollion fix the values of more signs."
+    }
+   },
+   "cs": {
+    "nazev": "Starověký Egypt",
+    "stitek": "Jazyky starověku",
+    "podtitul": "Říše na Nilu · asi 3100–30 př. n. l.",
+    "perex": "Egyptština patří k jazykům s nejdelší doloženou historií: první nápisy pocházejí z doby kolem roku 3200 př. n. l. a její poslední podoba, koptština, zní dodnes v bohoslužbách egyptských křesťanů. Hieroglyfy rozluštil v roce 1822 Jean-François Champollion; čeští egyptologové už přes šedesát let zkoumají pyramidové pole v Abúsíru.",
+    "fakta": [
+     [
+      "Území",
+      "údolí a delta Nilu, dnešní Egypt a sever Súdánu"
+     ],
+     [
+      "Hlavní města",
+      "Memfis, Théby, později Alexandrie"
+     ],
+     [
+      "Období",
+      "asi 3100–30 př. n. l., od sjednocení po připojení k Římu"
+     ],
+     [
+      "Jazyk",
+      "egyptština, vlastním jménem r n km.t, „řeč Egypta“"
+     ],
+     [
+      "Jazyková rodina",
+      "afroasijská, samostatná větev"
+     ],
+     [
+      "Písma",
+      "hieroglyfy, hieratické písmo, démotické písmo, koptské písmo"
+     ],
+     [
+      "Doba užívání",
+      "asi 3200 př. n. l. – dodnes (koptština v liturgii)"
+     ],
+     [
+      "Rozluštění",
+      "1822, Jean-François Champollion"
+     ]
+    ],
+    "nazvyTecek": {
+     "egyp1246": "Egyptština",
+     "copt1239": "Koptština"
+    },
+    "oddily": [
+     {
+      "typ": "text",
+      "h": "Dar Nilu",
+      "p": [
+       "Egypt vyrostl na úzkém pásu úrodné půdy podél Nilu, který každé léto zaplavoval břehy a zanechával na nich černé bahno. Kolem roku 3100 př. n. l. se Horní a Dolní Egypt spojily v jeden stát; jeho vládci, později zvaní faraoni, pak vládli téměř tři tisíciletí.",
+       "Ve Staré říši vznikly pyramidy v Gíze, ve Střední říši klasická literatura a v Nové říši sahala egyptská moc od Núbie po Sýrii. Po dobytí Alexandrem Velikým (332 př. n. l.) vládla Egyptu řecká dynastie Ptolemaiovců; smrtí Kleopatry VII. roku 30 př. n. l. se Egypt stal římskou provincií."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "giza",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "Jeden jazyk, pět podob",
+      "p": [
+       "Egyptština je samostatnou větví afroasijské rodiny; jejími vzdálenými příbuznými jsou semitské jazyky (arabština, hebrejština), berberské, kušitské a čadské jazyky. Za více než čtyři tisíciletí prošla vývojem, který egyptologové dělí na pět období: staroegyptštinu, střední egyptštinu (klasický jazyk literatury, psaný i dlouho poté, co se přestal mluvit), pozdní egyptštinu, démotickou egyptštinu a koptštinu.",
+       "Jako mluvený jazyk ustoupila koptština po arabském dobytí Egypta (641 n. l.) postupně arabštině a vymřela zhruba v 17. století. Jako liturgický jazyk koptské církve se užívá dodnes."
+      ]
+     },
+     {
+      "typ": "veta",
+      "klin": "𓂋𓏤𓈖𓆎𓅓𓏏𓊖",
+      "prepis": "r n km.t",
+      "slova": [
+       [
+        "r",
+        "ústa, řeč"
+       ],
+       [
+        "n",
+        "(přivlastnění)"
+       ],
+       [
+        "km.t",
+        "Černá (země) = Egypt"
+       ]
+      ],
+      "preklad": "„řeč Egypta“",
+      "vyklad": "Tak Egypťané nazývali svůj jazyk. Km.t, „Černá“, je úrodná nilská půda, na rozdíl od „Červené země“ pouště. Svislá čárka za znakem úst říká, že se znak čte jako celé slovo; znak na konci je určovatel země či města a nečte se. V koptštině se jazyk jmenuje ⲧⲙⲛ̄ⲧⲣⲙ̄ⲛ̄ⲕⲏⲙⲉ – i v tomto jménu žije stará km.t (koptsky kēme)."
+     },
+     {
+      "typ": "foto",
+      "f": "narmer",
+      "na-vysku": true
+     },
+     {
+      "typ": "text",
+      "h": "Nejstarší zápisy",
+      "p": [
+       "Egyptské písmo se objevuje na konci 4. tisíciletí př. n. l., zhruba ve stejné době jako klínové písmo v Mezopotámii. Mezi nejstarší doklady patří popisky z hrobky U-j v Abydu a Narmerova paleta, na níž je jméno krále zapsané dvěma znaky: sumcem (nꜥr) a dlátem (mr).",
+       "Zda Egypťané myšlenku písma převzali z Mezopotámie, nebo ji vynalezli sami, není rozhodnuto; znaky i způsob zápisu jsou každopádně vlastní, egyptské."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Hieroglyfy: obrázky, které se čtou",
+      "p": [
+       "Slovo hieroglyf pochází z řečtiny a znamená „posvátná řezba“; Egypťané mluvili o „božích slovech“. Hieroglyfy nejsou obrázkové písmo v prostém smyslu: kombinují znaky pro celá slova, znaky pro jednu, dvě nebo tři souhlásky a určovatele (determinativy), které se nečtou a jen upřesňují význam – například postavička muže u slov pro lidi.",
+       "Klasická střední egyptština používala asi sedm set znaků, v ptolemaiovské době jich kněží vytvořili několik tisíc. Písmo zapisovalo jen souhlásky; samohlásky neznáme, a proto egyptologové při výslovnosti vkládají mezi souhlásky e: nfr se čte nefer. Psalo se nejčastěji zprava doleva, ale také zleva doprava a ve sloupcích; postavy a zvířata vždy hledí k začátku řádku."
+      ]
+     },
+     {
+      "typ": "znaky",
+      "h": "Jednosouhláskové znaky a další",
+      "znaky": [
+       [
+        "𓄿",
+        "ꜣ",
+        "sup"
+       ],
+       [
+        "𓇋",
+        "j",
+        "rákos"
+       ],
+       [
+        "𓂝",
+        "ꜥ",
+        "paže"
+       ],
+       [
+        "𓅱",
+        "w",
+        "kuřátko křepelky"
+       ],
+       [
+        "𓃀",
+        "b",
+        "noha"
+       ],
+       [
+        "𓊪",
+        "p",
+        "rohož či stolička"
+       ],
+       [
+        "𓆑",
+        "f",
+        "rohatá zmije"
+       ],
+       [
+        "𓅓",
+        "m",
+        "sova"
+       ],
+       [
+        "𓈖",
+        "n",
+        "hladina vody"
+       ],
+       [
+        "𓂋",
+        "r",
+        "ústa"
+       ],
+       [
+        "𓋴",
+        "s",
+        "složená látka"
+       ],
+       [
+        "𓏏",
+        "t",
+        "bochník chleba"
+       ],
+       [
+        "𓎡",
+        "k",
+        "košík"
+       ],
+       [
+        "𓆓",
+        "ḏ",
+        "kobra"
+       ],
+       [
+        "𓋹",
+        "ꜥnḫ",
+        "trojsouhláskový znak „život“"
+       ],
+       [
+        "𓀀",
+        "A1",
+        "určovatel: člověk, muž"
+       ]
+      ],
+      "priklad": {
+       "klin": "𓄤𓆑𓂋",
+       "prepis": "nfr (+ f + r)",
+       "vyznam": "„dobrý, krásný“ – trojsouhláskový znak nfr, za ním znaky f a r jako nápověda ke čtení"
+      },
+      "pozn": "Asi dvacet čtyři jednosouhláskových znaků tvoří jakousi „abecedu“, Egypťané je však nikdy nepoužívali samostatně jako abecedu. Znaky vykresluje písmo Noto Sans Egyptian Hieroglyphs."
+     },
+     {
+      "typ": "foto",
+      "f": "kartuse",
+      "siroka": true
+     },
+     {
+      "typ": "foto",
+      "f": "pisar",
+      "na-vysku": true
+     },
+     {
+      "typ": "text",
+      "h": "Písaři",
+      "p": [
+       "Číst a psát uměla jen malá část Egypťanů. Písaři se učili léta, nejprve opisováním vzorových textů, a patřili ke vzdělané elitě úředníků, kněží a správců. Psali rákosovými pery na papyrus, dřevěné tabulky a střepy (ostraka) černou sazí; červeně zvýrazňovali nadpisy, začátky oddílů a data.",
+       "Na papyru a v každodenním psaní se hieroglyfy zjednodušovaly v rychlé písmo. Obrázkové hieroglyfy zůstaly hlavně pro nápisy na chrámech, hrobkách a sochách."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "paleta"
+     },
+     {
+      "typ": "text",
+      "h": "Hieratické a démotické písmo",
+      "p": [
+       "Hieratické písmo je zkrácená, psací podoba hieroglyfů, používaná od nejstarších dob pro úřední záznamy, dopisy i literaturu. Od 7. století př. n. l. se v každodenní správě prosadilo ještě rychlejší démotické písmo; hieratické zůstalo hlavně pro náboženské texty.",
+       "Poslední datovaný hieroglyfický nápis pochází z roku 394 n. l. a poslední démotický z roku 452 n. l.; oba jsou na ostrově Philae. Pak znalost egyptských písem na čtrnáct století zanikla."
+      ]
+     },
+     {
+      "typ": "galerie",
+      "h": "Písmo na papyru",
+      "f": [
+       "hunefer",
+       "hieraticky",
+       "demoticky"
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "koptsky",
+      "na-vysku": true
+     },
+     {
+      "typ": "text",
+      "h": "Koptština: egyptština řeckými písmeny",
+      "p": [
+       "Od 3. století n. l. psali egyptští křesťané svůj jazyk řeckou abecedou, doplněnou o šest až sedm písmen převzatých z démotického písma pro hlásky, které řečtina neměla. Poprvé se tak v egyptských textech zapisovaly i samohlásky.",
+       "Díky tomu je koptština pro egyptologii klíčová: prozrazuje, jak se egyptská slova vyslovovala, a Champollion, který koptsky uměl, v ní poznal jazyk, jenž se skrývá za hieroglyfy."
+      ]
+     },
+     {
+      "typ": "znaky",
+      "h": "Koptská písmena z démotického písma",
+      "znaky": [
+       [
+        "ϣ",
+        "š",
+        "šei"
+       ],
+       [
+        "ϥ",
+        "f",
+        "fei"
+       ],
+       [
+        "ϧ",
+        "ch",
+        "chei (bohairský dialekt)"
+       ],
+       [
+        "ϩ",
+        "h",
+        "hori"
+       ],
+       [
+        "ϫ",
+        "dž",
+        "džandža"
+       ],
+       [
+        "ϭ",
+        "č",
+        "čima"
+       ],
+       [
+        "ϯ",
+        "ti",
+        "ti"
+       ]
+      ],
+      "pozn": "Ostatní koptská písmena jsou řecká. Výslovnost se lišila podle dialektu."
+     },
+     {
+      "typ": "foto",
+      "f": "rosetta",
+      "na-vysku": true
+     },
+     {
+      "typ": "text",
+      "h": "Rozluštění: Rosettská deska",
+      "p": [
+       "V červenci 1799 našli francouzští vojáci Napoleonovy výpravy u města Rašíd (Rosetta) v deltě Nilu kámen s nápisem ve třech písmech: hieroglyfy, démoticky a řecky. Jde o výnos kněží z roku 196 př. n. l. na počest krále Ptolemaia V. Řecké znění bylo čitelné, a dávalo tak klíč k oběma egyptským. Po porážce Francouzů připadla deska Britům a od roku 1802 je v Britském muzeu.",
+       "Britský přírodovědec Thomas Young v letech 1814–1819 ukázal, že kartuše obsahují jméno Ptolemaia, a určil hodnoty některých znaků. Rozhodující krok však udělal Jean-François Champollion."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "champollion",
+      "na-vysku": true
+     },
+     {
+      "typ": "text",
+      "h": "Champollion: „Mám to!“",
+      "p": [
+       "Champollion porovnal jména Ptolemaia a Kleopatry v kartuších z Rosettské desky a z obelisku z Philae a získal hodnoty řady znaků. V září 1822 pak v kopiích nápisů z Abú Simbelu přečetl egyptská jména Ramesse a Thutmose – a pochopil, že fonetické znaky nesloužily jen k zápisu cizích jmen. Podle známé historky vběhl k bratrovi se slovy „Je tiens l’affaire!“ („Mám to!“) a omdlel.",
+       "Svůj objev ohlásil 27. září 1822 v Dopise panu Dacierovi a v roce 1824 vydal celkový popis písma: hieroglyfy kombinují znaky fonetické se znaky pro slova. Znalost koptštiny mu pomohla poznat, co jednotlivá slova znamenají."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "obelisk",
+      "siroka": true
+     },
+     {
+      "typ": "slova",
+      "h": "Slova, která pocházejí z egyptštiny",
+      "uvod": "Některá egyptská slova se přes řečtinu, hebrejštinu, koptštinu nebo arabštinu dostala až do češtiny:",
+      "hlavicka": [
+       "egyptsky",
+       "význam",
+       "v češtině"
+      ],
+      "radky": [
+       [
+        "pr-ꜥꜣ",
+        "velký dům (palác)",
+        "faraon"
+       ],
+       [
+        "hbnj",
+        "ebenové dřevo",
+        "eben"
+       ],
+       [
+        "wḥꜣt",
+        "oáza",
+        "oáza"
+       ],
+       [
+        "qmj.t",
+        "pryskyřice",
+        "guma"
+       ],
+       [
+        "hbj",
+        "ibis",
+        "ibis"
+       ],
+       [
+        "ḏbt",
+        "cihla",
+        "adobe (nepálená cihla)"
+       ]
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "protosinajske"
+     },
+     {
+      "typ": "text",
+      "h": "Z hieroglyfů abeceda",
+      "p": [
+       "V Serabit el-Chádim na Sinaji, kde Egypťané těžili tyrkys, objevil Flinders Petrie v letech 1904–1905 krátké nápisy v neznámém písmu. Alan Gardiner v roce 1916 ukázal, že jde o semitský jazyk zapsaný znaky, které napodobují hieroglyfy: každý znak označoval první hlásku svého jména. Kresba býčí hlavy (ʾalp, „býk“) znamenala ʾ, domek (bayt) b, vlnovka vody (mayim) m.",
+       "Z tohoto protosinajského písma se vyvinula fénická abeceda a z ní řecká, latinka i další abecedy. Písmeno A je tak vzdáleným potomkem býčí hlavy, převrácené vzhůru nohama."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Česká egyptologie",
+      "p": [
+       "Zakladatelem české egyptologie je František Lexa (1876–1960), rodák z Pardubic, profesor Univerzity Karlovy a autor rozsáhlé mluvnice démotštiny. Jeho žák Zbyněk Žába stál v čele Československého egyptologického ústavu, založeného roku 1958.",
+       "Čeští a slovenští egyptologové se v 60. letech zapojili do záchrany památek Núbie před zatopením Asuánskou přehradou a od roku 1960 zkoumají pyramidové pole v Abúsíru jižně od Káhiry. Pod vedením Miroslava Vernera a jeho nástupců zde objevili mimo jiné neporušenou hrobku kněze Iufaa a pyramidu královny Chentkaus II."
+      ]
+     },
+     {
+      "typ": "galerie",
+      "h": "Čeští egyptologové a Abúsír",
+      "f": [
+       "lexa",
+       "abusir"
+      ]
+     },
+     {
+      "typ": "osa",
+      "h": "Časová osa",
+      "udalosti": [
+       [
+        "asi 3250–3200 př. n. l.",
+        "Popisky z hrobky U-j v Abydu – nejstarší egyptské písmo."
+       ],
+       [
+        "asi 3100 př. n. l.",
+        "Sjednocení Egypta; Narmerova paleta."
+       ],
+       [
+        "26. st. př. n. l.",
+        "Pyramidy v Gíze (Stará říše)."
+       ],
+       [
+        "asi 2000–1700 př. n. l.",
+        "Střední říše; klasická literatura, Příběh Sinuhetův."
+       ],
+       [
+        "asi 1550–1070 př. n. l.",
+        "Nová říše; Ramesse II. vládne v 13. století."
+       ],
+       [
+        "7. st. př. n. l.",
+        "Nástup démotického písma."
+       ],
+       [
+        "332 př. n. l.",
+        "Alexandr Veliký dobývá Egypt; vláda Ptolemaiovců."
+       ],
+       [
+        "196 př. n. l.",
+        "Kněžský výnos na Rosettské desce."
+       ],
+       [
+        "30 př. n. l.",
+        "Smrt Kleopatry VII.; Egypt římskou provincií."
+       ],
+       [
+        "394 n. l.",
+        "Poslední datovaný hieroglyfický nápis (Philae)."
+       ],
+       [
+        "452 n. l.",
+        "Poslední datovaný démotický nápis (Philae)."
+       ],
+       [
+        "asi 17. st.",
+        "Koptština zaniká jako mluvený jazyk."
+       ],
+       [
+        "1799",
+        "Nález Rosettské desky."
+       ],
+       [
+        "1822",
+        "Champollion ohlašuje rozluštění hieroglyfů."
+       ],
+       [
+        "1958",
+        "Založen Československý egyptologický ústav."
+       ],
+       [
+        "1960",
+        "Začínají české výzkumy v Abúsíru."
+       ]
+      ]
+     },
+     {
+      "typ": "tecky",
+      "h": "Egyptština na glóbu",
+      "uvod": "Klepnutím se jazyk ukáže na glóbu:"
+     },
+     {
+      "typ": "zdroje",
+      "h": "Zdroje a další četba",
+      "p": [
+       "James P. Allen: Middle Egyptian. An Introduction to the Language and Culture of Hieroglyphs. Cambridge University Press, 3. vyd. 2014.",
+       "Antonio Loprieno: Ancient Egyptian. A Linguistic Introduction. Cambridge University Press 1995.",
+       "Alan Gardiner: Egyptian Grammar. Griffith Institute, 3. vyd. 1957.",
+       "Richard Parkinson: Cracking Codes. The Rosetta Stone and Decipherment. British Museum Press 1999.",
+       "Český egyptologický ústav Filozofické fakulty Univerzity Karlovy.",
+       "Glottolog 5 (jazyky a jejich zařazení)."
+      ]
+     }
+    ]
+   },
+   "en": {
+    "nazev": "Ancient Egypt",
+    "stitek": "Languages of antiquity",
+    "podtitul": "The kingdom on the Nile · c. 3100–30 BCE",
+    "perex": "Egyptian is one of the languages with the longest recorded history: the first inscriptions date from around 3200 BCE, and its last stage, Coptic, is still heard in the liturgy of Egypt's Christians. The hieroglyphs were deciphered in 1822 by Jean-François Champollion; Czech Egyptologists have been excavating the pyramid field of Abusir for more than sixty years.",
+    "fakta": [
+     [
+      "Territory",
+      "the Nile valley and delta, modern Egypt and northern Sudan"
+     ],
+     [
+      "Capitals",
+      "Memphis, Thebes, later Alexandria"
+     ],
+     [
+      "Period",
+      "c. 3100–30 BCE, from unification to annexation by Rome"
+     ],
+     [
+      "Language",
+      "Egyptian, called r n km.t, “the speech of Egypt”, by its speakers"
+     ],
+     [
+      "Language family",
+      "Afroasiatic, a branch of its own"
+     ],
+     [
+      "Scripts",
+      "hieroglyphs, hieratic, Demotic, Coptic"
+     ],
+     [
+      "In use",
+      "c. 3200 BCE – today (Coptic in the liturgy)"
+     ],
+     [
+      "Deciphered",
+      "1822, Jean-François Champollion"
+     ]
+    ],
+    "nazvyTecek": {
+     "egyp1246": "Egyptian",
+     "copt1239": "Coptic"
+    },
+    "oddily": [
+     {
+      "typ": "text",
+      "h": "The gift of the Nile",
+      "p": [
+       "Egypt grew up on a narrow strip of fertile land along the Nile, which flooded its banks every summer and left black silt behind. Around 3100 BCE Upper and Lower Egypt were united into one state; its rulers, later called pharaohs, reigned for almost three millennia.",
+       "The Old Kingdom built the pyramids of Giza, the Middle Kingdom produced the classical literature, and in the New Kingdom Egyptian power reached from Nubia to Syria. After the conquest by Alexander the Great (332 BCE) Egypt was ruled by the Greek Ptolemaic dynasty; with the death of Cleopatra VII in 30 BCE it became a Roman province."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "giza",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "One language, five stages",
+      "p": [
+       "Egyptian forms a branch of its own within the Afroasiatic family; its distant relatives are the Semitic languages (Arabic, Hebrew) and the Berber, Cushitic and Chadic languages. Over more than four millennia it developed through what Egyptologists divide into five stages: Old Egyptian, Middle Egyptian (the classical literary language, written long after it ceased to be spoken), Late Egyptian, Demotic and Coptic.",
+       "As a spoken language Coptic gradually gave way to Arabic after the Arab conquest of Egypt (641 CE) and died out around the 17th century. It is still used as the liturgical language of the Coptic Church."
+      ]
+     },
+     {
+      "typ": "veta",
+      "klin": "𓂋𓏤𓈖𓆎𓅓𓏏𓊖",
+      "prepis": "r n km.t",
+      "slova": [
+       [
+        "r",
+        "mouth, speech"
+       ],
+       [
+        "n",
+        "of"
+       ],
+       [
+        "km.t",
+        "the Black (Land) = Egypt"
+       ]
+      ],
+      "preklad": "“the speech of Egypt”",
+      "vyklad": "This is what the Egyptians called their language. Km.t, “the Black”, is the fertile soil of the Nile, as opposed to the “Red Land” of the desert. The stroke after the mouth sign shows that the sign is read as a whole word; the final sign is a determinative for a land or town and is not pronounced. In Coptic the language is called ⲧⲙⲛ̄ⲧⲣⲙ̄ⲛ̄ⲕⲏⲙⲉ – the old km.t (Coptic kēme) lives on in this name too."
+     },
+     {
+      "typ": "foto",
+      "f": "narmer",
+      "na-vysku": true
+     },
+     {
+      "typ": "text",
+      "h": "The earliest records",
+      "p": [
+       "Egyptian writing appears at the end of the 4th millennium BCE, at about the same time as cuneiform in Mesopotamia. Among the earliest examples are the labels from tomb U-j at Abydos and the Narmer Palette, on which the king's name is written with two signs: a catfish (nꜥr) and a chisel (mr).",
+       "Whether the Egyptians borrowed the idea of writing from Mesopotamia or invented it themselves is undecided; the signs and the way of writing are in any case their own."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Hieroglyphs: pictures that are read",
+      "p": [
+       "The word hieroglyph comes from Greek and means “sacred carving”; the Egyptians spoke of “the god's words”. Hieroglyphs are not picture writing in a simple sense: they combine signs for whole words, signs for one, two or three consonants, and determinatives, which are not read but only clarify the meaning – for example the figure of a man with words for people.",
+       "Classical Middle Egyptian used some seven hundred signs; in the Ptolemaic period the priests created several thousand. The script recorded only consonants; the vowels are unknown, so Egyptologists insert an e between consonants when pronouncing: nfr is read nefer. Writing ran most often from right to left, but also from left to right and in columns; people and animals always face the beginning of the line."
+      ]
+     },
+     {
+      "typ": "znaky",
+      "h": "One-consonant signs and more",
+      "znaky": [
+       [
+        "𓄿",
+        "ꜣ",
+        "vulture"
+       ],
+       [
+        "𓇋",
+        "j",
+        "reed"
+       ],
+       [
+        "𓂝",
+        "ꜥ",
+        "arm"
+       ],
+       [
+        "𓅱",
+        "w",
+        "quail chick"
+       ],
+       [
+        "𓃀",
+        "b",
+        "leg"
+       ],
+       [
+        "𓊪",
+        "p",
+        "mat or stool"
+       ],
+       [
+        "𓆑",
+        "f",
+        "horned viper"
+       ],
+       [
+        "𓅓",
+        "m",
+        "owl"
+       ],
+       [
+        "𓈖",
+        "n",
+        "ripple of water"
+       ],
+       [
+        "𓂋",
+        "r",
+        "mouth"
+       ],
+       [
+        "𓋴",
+        "s",
+        "folded cloth"
+       ],
+       [
+        "𓏏",
+        "t",
+        "loaf of bread"
+       ],
+       [
+        "𓎡",
+        "k",
+        "basket"
+       ],
+       [
+        "𓆓",
+        "ḏ",
+        "cobra"
+       ],
+       [
+        "𓋹",
+        "ꜥnḫ",
+        "three-consonant sign “life”"
+       ],
+       [
+        "𓀀",
+        "A1",
+        "determinative: person, man"
+       ]
+      ],
+      "priklad": {
+       "klin": "𓄤𓆑𓂋",
+       "prepis": "nfr (+ f + r)",
+       "vyznam": "“good, beautiful” – the three-consonant sign nfr followed by f and r as reading aids"
+      },
+      "pozn": "About twenty-four one-consonant signs form a kind of “alphabet”, but the Egyptians never used them on their own as an alphabet. The signs are rendered with the Noto Sans Egyptian Hieroglyphs font."
+     },
+     {
+      "typ": "foto",
+      "f": "kartuse",
+      "siroka": true
+     },
+     {
+      "typ": "foto",
+      "f": "pisar",
+      "na-vysku": true
+     },
+     {
+      "typ": "text",
+      "h": "Scribes",
+      "p": [
+       "Only a small part of Egyptians could read and write. Scribes trained for years, first by copying model texts, and belonged to the educated elite of officials, priests and administrators. They wrote with reed pens on papyrus, wooden boards and potsherds (ostraca) in black soot ink, using red for headings, section beginnings and dates.",
+       "On papyrus and in everyday writing the hieroglyphs were simplified into a quick hand. Pictorial hieroglyphs remained mainly for inscriptions on temples, tombs and statues."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "paleta"
+     },
+     {
+      "typ": "text",
+      "h": "Hieratic and Demotic",
+      "p": [
+       "Hieratic is an abbreviated, cursive form of hieroglyphs, used from the earliest times for official records, letters and literature. From the 7th century BCE the even faster Demotic script took over everyday administration, and hieratic remained mainly for religious texts.",
+       "The last dated hieroglyphic inscription is from 394 CE and the last Demotic one from 452 CE; both are on the island of Philae. After that, knowledge of the Egyptian scripts was lost for fourteen centuries."
+      ]
+     },
+     {
+      "typ": "galerie",
+      "h": "Writing on papyrus",
+      "f": [
+       "hunefer",
+       "hieraticky",
+       "demoticky"
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "koptsky",
+      "na-vysku": true
+     },
+     {
+      "typ": "text",
+      "h": "Coptic: Egyptian in Greek letters",
+      "p": [
+       "From the 3rd century CE Egyptian Christians wrote their language in the Greek alphabet, supplemented with six or seven letters taken from Demotic for sounds Greek lacked. For the first time, vowels were written in Egyptian texts.",
+       "That makes Coptic essential for Egyptology: it reveals how Egyptian words were pronounced, and Champollion, who knew Coptic, recognised in it the language hidden behind the hieroglyphs."
+      ]
+     },
+     {
+      "typ": "znaky",
+      "h": "Coptic letters from Demotic",
+      "znaky": [
+       [
+        "ϣ",
+        "š",
+        "shai"
+       ],
+       [
+        "ϥ",
+        "f",
+        "fai"
+       ],
+       [
+        "ϧ",
+        "kh",
+        "khai (Bohairic dialect)"
+       ],
+       [
+        "ϩ",
+        "h",
+        "hori"
+       ],
+       [
+        "ϫ",
+        "j",
+        "janja"
+       ],
+       [
+        "ϭ",
+        "ch",
+        "chima"
+       ],
+       [
+        "ϯ",
+        "ti",
+        "ti"
+       ]
+      ],
+      "pozn": "The other Coptic letters are Greek. Pronunciation varied by dialect."
+     },
+     {
+      "typ": "foto",
+      "f": "rosetta",
+      "na-vysku": true
+     },
+     {
+      "typ": "text",
+      "h": "Decipherment: the Rosetta Stone",
+      "p": [
+       "In July 1799 French soldiers of Napoleon's expedition found near the town of Rashid (Rosetta) in the Nile delta a stone inscribed in three scripts: hieroglyphs, Demotic and Greek. It is a decree issued by priests in 196 BCE in honour of King Ptolemy V. The Greek text could be read and so offered a key to the two Egyptian ones. After the French defeat the stone passed to the British, and since 1802 it has been in the British Museum.",
+       "Between 1814 and 1819 the British polymath Thomas Young showed that the cartouches contained the name of Ptolemy and identified the values of some signs. The decisive step, however, was taken by Jean-François Champollion."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "champollion",
+      "na-vysku": true
+     },
+     {
+      "typ": "text",
+      "h": "Champollion: “I've got it!”",
+      "p": [
+       "Champollion compared the names of Ptolemy and Cleopatra in cartouches from the Rosetta Stone and the Philae obelisk and obtained the values of a number of signs. In September 1822 he read the Egyptian names Ramesses and Thutmose in copies of inscriptions from Abu Simbel – and understood that phonetic signs were not used only for foreign names. According to a well-known story he ran to his brother crying “Je tiens l'affaire!” (“I've got it!”) and fainted.",
+       "He announced his discovery on 27 September 1822 in the Letter to Monsieur Dacier, and in 1824 published a full description of the script: hieroglyphs combine phonetic signs with signs for words. His knowledge of Coptic helped him recognise what individual words meant."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "obelisk",
+      "siroka": true
+     },
+     {
+      "typ": "slova",
+      "h": "Words that come from Egyptian",
+      "uvod": "Some Egyptian words reached English by way of Greek, Hebrew, Coptic or Arabic:",
+      "hlavicka": [
+       "Egyptian",
+       "meaning",
+       "in English"
+      ],
+      "radky": [
+       [
+        "pr-ꜥꜣ",
+        "great house (palace)",
+        "pharaoh"
+       ],
+       [
+        "hbnj",
+        "ebony wood",
+        "ebony"
+       ],
+       [
+        "wḥꜣt",
+        "oasis",
+        "oasis"
+       ],
+       [
+        "qmj.t",
+        "resin",
+        "gum"
+       ],
+       [
+        "hbj",
+        "ibis",
+        "ibis"
+       ],
+       [
+        "ḏbt",
+        "brick",
+        "adobe"
+       ]
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "protosinajske"
+     },
+     {
+      "typ": "text",
+      "h": "From hieroglyphs to the alphabet",
+      "p": [
+       "At Serabit el-Khadim in Sinai, where the Egyptians mined turquoise, Flinders Petrie discovered short inscriptions in an unknown script in 1904–1905. In 1916 Alan Gardiner showed that they record a Semitic language in signs imitating hieroglyphs: each sign stood for the first sound of its name. The drawing of an ox head (ʾalp, “ox”) stood for ʾ, a house (bayt) for b, a ripple of water (mayim) for m.",
+       "From this Proto-Sinaitic script developed the Phoenician alphabet, and from it the Greek and Latin alphabets and many others. The letter A is thus a distant descendant of an ox head, turned upside down."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Czech Egyptology",
+      "p": [
+       "The founder of Czech Egyptology is František Lexa (1876–1960), born in Pardubice, professor at Charles University in Prague and author of a comprehensive grammar of Demotic. His pupil Zbyněk Žába headed the Czechoslovak Institute of Egyptology, founded in 1958.",
+       "In the 1960s Czech and Slovak Egyptologists took part in the rescue of the monuments of Nubia before their flooding by the Aswan High Dam, and since 1960 they have been excavating the pyramid field of Abusir south of Cairo. Under Miroslav Verner and his successors they discovered, among other things, the intact tomb of the priest Iufaa and the pyramid of Queen Khentkaus II."
+      ]
+     },
+     {
+      "typ": "galerie",
+      "h": "Czech Egyptologists and Abusir",
+      "f": [
+       "lexa",
+       "abusir"
+      ]
+     },
+     {
+      "typ": "osa",
+      "h": "Timeline",
+      "udalosti": [
+       [
+        "c. 3250–3200 BCE",
+        "Labels from tomb U-j at Abydos – the earliest Egyptian writing."
+       ],
+       [
+        "c. 3100 BCE",
+        "Unification of Egypt; the Narmer Palette."
+       ],
+       [
+        "26th c. BCE",
+        "The pyramids of Giza (Old Kingdom)."
+       ],
+       [
+        "c. 2000–1700 BCE",
+        "Middle Kingdom; classical literature, the Story of Sinuhe."
+       ],
+       [
+        "c. 1550–1070 BCE",
+        "New Kingdom; Ramesses II reigns in the 13th century."
+       ],
+       [
+        "7th c. BCE",
+        "Demotic script comes into use."
+       ],
+       [
+        "332 BCE",
+        "Alexander the Great conquers Egypt; Ptolemaic rule."
+       ],
+       [
+        "196 BCE",
+        "The priestly decree on the Rosetta Stone."
+       ],
+       [
+        "30 BCE",
+        "Death of Cleopatra VII; Egypt becomes a Roman province."
+       ],
+       [
+        "394 CE",
+        "Last dated hieroglyphic inscription (Philae)."
+       ],
+       [
+        "452 CE",
+        "Last dated Demotic inscription (Philae)."
+       ],
+       [
+        "c. 17th c.",
+        "Coptic dies out as a spoken language."
+       ],
+       [
+        "1799",
+        "Discovery of the Rosetta Stone."
+       ],
+       [
+        "1822",
+        "Champollion announces the decipherment of hieroglyphs."
+       ],
+       [
+        "1958",
+        "The Czechoslovak Institute of Egyptology is founded."
+       ],
+       [
+        "1960",
+        "Czech excavations at Abusir begin."
+       ]
+      ]
+     },
+     {
+      "typ": "tecky",
+      "h": "Egyptian on the globe",
+      "uvod": "Tap to show the language on the globe:"
+     },
+     {
+      "typ": "zdroje",
+      "h": "Sources and further reading",
+      "p": [
+       "James P. Allen: Middle Egyptian. An Introduction to the Language and Culture of Hieroglyphs. Cambridge University Press, 3rd ed. 2014.",
+       "Antonio Loprieno: Ancient Egyptian. A Linguistic Introduction. Cambridge University Press 1995.",
+       "Alan Gardiner: Egyptian Grammar. Griffith Institute, 3rd ed. 1957.",
+       "Richard Parkinson: Cracking Codes. The Rosetta Stone and Decipherment. British Museum Press 1999.",
+       "Czech Institute of Egyptology, Faculty of Arts, Charles University.",
+       "Glottolog 5 (languages and their classification)."
+      ]
+     }
+    ]
+   }
+  },
+  {
    "id": "chetite",
    "adresa": {
     "cs": "chetite",

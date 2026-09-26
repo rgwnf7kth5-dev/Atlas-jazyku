@@ -1795,6 +1795,47 @@ var AKVARELY = (function(){
       o += trava(F, q, 90, 222, 252, ["#8A6E36", "#A88A48", "#6E5A30", "#C0A060"]) + kvety(F, q, 10, 228, 252, ["#8E5AA8", "#B07AC0"], 1.2);
       return o + ptaci(F, r, 3, 120, 52);
     },
+    /* Egypt (stránka o civilizaci): Nil s palmami a zelenými břehy, za pouští pyramidy v Gíze, na řece felúka */
+    egypt: function(F, r){
+      const q = nahoda(F.sem + 461);
+      let o = nebe(F, "#7FB0DE", "#F6E4BE") + rasy(F, r, 3, 14, 38);
+      /* pyramidy: osvětlená západní stěna, stinná jižní */
+      [[70, 122, 46, 40], [136, 123, 38, 33], [186, 124, 18, 16]].forEach(function(pp){
+        const x = pp[0], y = pp[1], w = pp[2], h = pp[3];
+        const svetla = mnoho([[x - w, y], [x, y - h], [x + w * .18, y]]), stinna = mnoho([[x + w * .18, y], [x, y - h], [x + w, y]]);
+        o += kryt(F, svetla + stinna, F.jemna) + nanes(F, svetla, "#E6C88E", .95) + nanes(F, stinna, "#B08A58", .95);
+        let rady = ""; for (let i = 1; i < 6; i++) { const t = i / 6; rady += tah("M" + f1(x - w * (1 - t)) + " " + f1(y - h * t) + " L" + f1(x + w * (1 - t)) + " " + f1(y - h * t), "#8A6A40", .3, .25); }
+        o += skupina(F, F.stetec, rady);
+      });
+      /* poušť, zelený pás polí a vzdálený břeh s palmovými háji */
+      const pou = "M-10 256 L-10 124 Q120 118 240 126 Q330 132 420 122 L420 256 Z";
+      o += kryt(F, pou) + vrstva(F, pou, "#E8CC8C", "#CCA664", .85);
+      o += skupina(F, F.stetec, (function(){ let t = ""; for (let i = 0; i < 12; i++) { const x = q() * 400, y = 128 + q() * 12; t += tah("M" + f1(x) + " " + f1(y) + " q12 -2 24 0", "#B8925A", .5, .35); } return t; })());
+      const breh = "M-10 256 L-10 152 Q100 146 210 150 Q320 155 420 148 L420 256 Z";
+      o += kryt(F, breh) + vrstva(F, breh, "#94B25E", "#62903E", .9);
+      let pole = ""; for (let i = 0; i < 14; i++) { const x = q() * 400, y = 158 + q() * 18; pole += tah("M" + f1(x) + " " + f1(y) + " l" + f1(18 + q() * 20) + " " + f1((q() - .5) * 2), q() < .5 ? "#B8C46A" : "#4E7A34", .9, .4); }
+      o += skupina(F, F.stetec, pole);
+      [[14, 1], [36, .8], [96, .95], [118, .7], [212, .9], [300, 1.05], [324, .8], [372, .95], [392, .75]].forEach(function(pl){ o += palma(F, q, pl[0] + q() * 6, 156 + q() * 4, .4 * pl[1], "#3E7A3C"); });
+      /* Nil s odlesky */
+      const nil = "M-10 256 L-10 186 Q90 176 200 183 Q300 190 420 178 L420 256 Z";
+      o += voda(F, q, nil, "#74AAC6", "#2E6E8E", 184, 250, 24);
+      /* felúka: trup a šikmá trojúhelníková plachta */
+      const fx = 250, fy = 206;
+      o += nanes(F, "M" + (fx - 26) + " " + fy + " Q" + fx + " " + (fy + 8) + " " + (fx + 28) + " " + (fy - 2) + " L" + (fx + 22) + " " + (fy + 4) + " Q" + fx + " " + (fy + 10) + " " + (fx - 20) + " " + (fy + 4) + " Z", "#5A3E2A", .95) +
+        kryt(F, "M" + (fx - 2) + " " + (fy - 2) + " L" + (fx + 4) + " " + (fy - 62) + " L" + (fx + 30) + " " + (fy - 6) + " Z", F.jemna) +
+        nanes(F, "M" + (fx - 2) + " " + (fy - 2) + " L" + (fx + 4) + " " + (fy - 62) + " L" + (fx + 30) + " " + (fy - 6) + " Z", "#FAF4E6", .95) +
+        skupina(F, F.stetec, tah("M" + fx + " " + (fy + 2) + " L" + (fx + 1) + " " + (fy - 50) + " M" + (fx - 6) + " " + (fy - 4) + " L" + (fx + 6) + " " + (fy - 64), "#4A3424", .8, .8) +
+          tah("M" + (fx - 30) + " " + (fy + 9) + " q30 4 60 -2", "#FFFFFF", .6, .6));
+      /* popředí: bahnitý břeh s papyrem (vějíře okolíků na štíhlých stoncích) */
+      const pop = "M-10 256 L-10 234 Q70 226 150 232 Q180 236 200 256 Z";
+      o += kryt(F, pop) + vrstva(F, pop, "#8AA456", "#557836", .95);
+      let pap = "";
+      for (let i = 0; i < 14; i++) { const x = 2 + i * 10 + q() * 5, h = 28 + q() * 20, top = 252 - h, nk = (q() - .5) * 6;
+        pap += tah("M" + f1(x) + " 252 q" + f1(nk * .3) + " " + f1(-h * .6) + " " + f1(nk) + " " + f1(-h), "#3E6A2C", .8, .9);
+        for (let k = -3; k <= 3; k++) { const u = k * .38 - Math.PI / 2; pap += tah("M" + f1(x + nk) + " " + f1(top) + " l" + f1(Math.cos(u) * 7) + " " + f1(Math.sin(u) * 6), "#6E9A42", .55, .85); } }
+      o += skupina(F, F.stetec, pap);
+      return o + ptaci(F, r, 4, 150, 60);
+    },
     izrael: function(F, r){
       const q = nahoda(F.sem + 449);
       let o = nebe(F, "#7EB0E2", "#F6EAD0") + rasy(F, r, 2, 12, 30);

@@ -368,7 +368,9 @@ Nápad uživatele: „pro starověké jazyky extra stránky o té které civiliz
 glóbem, jako stránka moderní ilustrované encyklopedie; hodně ilustrací, zajímavý text, fotky“. Vstupy jsou oba:
 dlaždice **Jazyky starověku** v seznamu (pod Jazykem dne; při hledání, když hledání sedí na `hledat`), tlačítko na
 kartě tečky jazyka civilizace (`tecky` v datech) a odkaz `#chetite` / `#hittites`. Vzorová stránka: **Chetité**
-(uživatel vybral ze dvou návrhů, Chetité vs. Egypt). Další navržené: Egypt, Sumer a Akkad, Féničané, Řecko (lineární B
+(uživatel vybral ze dvou návrhů, Chetité vs. Egypt), 26. 9. 2026 pak **Starověký Egypt** („pokračuj egyptem“;
+adresa `#egypt`, `/starovek/egypt/`, `/en/ancient/egypt/`). Dlaždice řadí civilizace chronologicky (pořadí
+v `data/starovek.json`). Další navržené: Sumer a Akkad, Féničané, Řecko (lineární B
 → alfabeta), Řím, Etruskové, Čína (věštebné kosti), Indie (sanskrt, bráhmí, písmo Indu), Persie, Mayové, Aksum.
 
 - Data `data/starovek.json`: `civilizace[]` s `id`, `adresa{cs,en}`, `krajina` (druh akvarelu), `tecky` (glottocody),
@@ -382,9 +384,11 @@ kartě tečky jazyka civilizace (`tecky` v datech) a odkaz `#chetite` / `#hittit
   ilustrace pro sdílení `malba.jpg` (1200 × 630, vyrenderovaný akvarel). **Wikimedia je z Claude Code na webu
   blokovaná**: kandidáty stahuje `scripts/fotky.mjs` v GitHub Actions (`.github/workflows/fotky.yml`, spustí se po
   změně `data/fotky-hledat.json`) na samostatnou větev `foto-kandidati` i s autorem a licencí; stejně tak `texty`
-  (wikitext Wikipedie) k ověření faktů. Brát jen CC0, public domain, CC BY, CC BY-SA; autora a licenci uvést u fotky.
+  (wikitext Wikipedie) k ověření faktů. Větev se při každém běhu přepíše (force push), proto stahovat s plusem:
+  `git fetch origin +foto-kandidati:refs/remotes/origin/foto-kandidati`. Brát jen CC0, public domain, CC BY, CC BY-SA; autora a licenci uvést u fotky.
 - Edge funkce pouští `/starovek/*` na obou doménách z kořene (fotky jsou společné).
-- Klínové písmo a hieroglyfy: Google Fonts s `&text=` (jen použité znaky), odkaz dělá `STAROVEK.odkazPisma()`.
+- Písma starověku (`PISMA` v šabloně: klínopis, anatolské a egyptské hieroglyfy, koptština) dostanou v textu třídu
+  a písmo Noto automaticky. Klínové písmo a hieroglyfy: Google Fonts s `&text=` (jen použité znaky), odkaz dělá `STAROVEK.odkazPisma()`.
   Znaky ověřit (`unicodedata.name`, hodnoty znaků podle chetitské tabulky znaků); písmo Unicode má mezopotámské tvary,
   stránka to říká.
 - **Postup ověření:** texty napsat, pak je nechat nezávisle zkontrolovat (agent proti staženým zdrojům) a opravit.
