@@ -27,7 +27,17 @@
 .civ-linb{font-family:"Noto Sans Linear B", sans-serif; font-weight:400; font-size:1.3em}
 .civ-lina{font-family:"Noto Sans Linear A", sans-serif; font-weight:400; font-size:1.3em}
 .civ-mayc{font-family:"Noto Sans Mayan Numerals", sans-serif; font-weight:400; font-size:1.4em}
-.civ-znak.civ-fen, .civ-znak.civ-ugar, .civ-znak.civ-perskl, .civ-znak.civ-linb, .civ-znak.civ-lina, .civ-znak.civ-mayc{font-size:2.4rem}
+.civ-ital{font-family:"Noto Sans Old Italic", sans-serif; font-weight:400; font-size:1.25em}
+.civ-brahmi{font-family:"Noto Sans Brahmi", sans-serif; font-weight:400; font-size:1.25em}
+.civ-khar{font-family:"Noto Sans Kharoshthi", sans-serif; font-weight:400; font-size:1.25em}
+.civ-deva{font-family:"Noto Serif Devanagari", serif; font-weight:400; font-size:1.15em}
+.civ-aram{font-family:"Noto Sans Imperial Aramaic", sans-serif; font-weight:400; font-size:1.25em}
+.civ-avest{font-family:"Noto Sans Avestan", sans-serif; font-weight:400; font-size:1.25em}
+.civ-pahl{font-family:"Noto Sans Inscriptional Pahlavi", sans-serif; font-weight:400; font-size:1.25em}
+.civ-sarab{font-family:"Noto Sans Old South Arabian", sans-serif; font-weight:400; font-size:1.25em}
+.civ-etio{font-family:"Noto Serif Ethiopic", serif; font-weight:400; font-size:1.15em}
+.civ-han{font-family:"Noto Serif TC", serif; font-weight:500; font-size:1.1em}
+.civ-znak.civ-fen, .civ-znak.civ-ugar, .civ-znak.civ-perskl, .civ-znak.civ-linb, .civ-znak.civ-lina, .civ-znak.civ-mayc, .civ-znak.civ-ital, .civ-znak.civ-brahmi, .civ-znak.civ-khar, .civ-znak.civ-deva, .civ-znak.civ-aram, .civ-znak.civ-avest, .civ-znak.civ-pahl, .civ-znak.civ-sarab, .civ-znak.civ-etio, .civ-znak.civ-han{font-size:2.4rem}
 .civ-znak-radek.civ-mayc{display:inline-flex; white-space:pre-line; line-height:1.05; text-align:center; font-size:2rem; align-self:center}
 .civ-priklad:has(.civ-mayc){align-items:center}
 .civ-znak.civ-egy, .civ-znak-radek.civ-egy{font-size:2.5rem; vertical-align:0}

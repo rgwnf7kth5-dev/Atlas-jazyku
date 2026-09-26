@@ -7,8 +7,10 @@
 var STAROVEK = (function(){
   function esc(s){ return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
   /* písma starověku v Unicode a třída, která jim dá písmo Noto (src/starovek.css) */
-  const PISMA = [["civ-klin", "\\u{12000}-\\u{1254F}"], ["civ-hier", "\\u{14400}-\\u{1467F}"], ["civ-egy", "\\u{13000}-\\u{1345F}"], ["civ-kopt", "\\u2C80-\\u2CFF\\u03E2-\\u03EF"], ["civ-fen", "\\u{10900}-\\u{1091F}"], ["civ-ugar", "\\u{10380}-\\u{1039F}"], ["civ-perskl", "\\u{103A0}-\\u{103DF}"], ["civ-linb", "\\u{10000}-\\u{100FF}"], ["civ-lina", "\\u{10600}-\\u{1077F}"], ["civ-mayc", "\\u{1D2E0}-\\u{1D2FF}"]]
+  const PISMA = [["civ-klin", "\\u{12000}-\\u{1254F}"], ["civ-hier", "\\u{14400}-\\u{1467F}"], ["civ-egy", "\\u{13000}-\\u{1345F}"], ["civ-kopt", "\\u2C80-\\u2CFF\\u03E2-\\u03EF"], ["civ-fen", "\\u{10900}-\\u{1091F}"], ["civ-ugar", "\\u{10380}-\\u{1039F}"], ["civ-perskl", "\\u{103A0}-\\u{103DF}"], ["civ-linb", "\\u{10000}-\\u{100FF}"], ["civ-lina", "\\u{10600}-\\u{1077F}"], ["civ-mayc", "\\u{1D2E0}-\\u{1D2FF}"], ["civ-ital", "\\u{10300}-\\u{1032F}"], ["civ-brahmi", "\\u{11000}-\\u{1107F}"], ["civ-khar", "\\u{10A00}-\\u{10A5F}"], ["civ-deva", "\\u0900-\\u097F"], ["civ-aram", "\\u{10840}-\\u{1085F}"], ["civ-avest", "\\u{10B00}-\\u{10B3F}"], ["civ-pahl", "\\u{10B60}-\\u{10B7F}"], ["civ-sarab", "\\u{10A60}-\\u{10A7F}"], ["civ-etio", "\\u1200-\\u139F\\u2D80-\\u2DDF"], ["civ-han", "\\u3400-\\u4DBF\\u4E00-\\u9FFF"]]
     .map(function(p){ return [p[0], new RegExp("[" + p[1] + "]", "u"), new RegExp("([" + p[1] + "][" + p[1] + "\\u0300-\\u036F\\s]*)", "gu")]; });
+  /* písma psaná zprava doleva: řádek znaků dostane dir="rtl" */
+  const RTL = ["civ-fen", "civ-khar", "civ-aram", "civ-avest", "civ-pahl", "civ-sarab"];
   function tridaPisma(z){ for (const p of PISMA) if (p[1].test(z)) return p[0]; return ""; }
   /* úseky starověkých písem v textu dostanou vlastní písmo */
   function text(s){
@@ -17,7 +19,7 @@ var STAROVEK = (function(){
     return h;
   }
   /* řádek znaků (věta, příklad): třída podle prvního znaku */
-  function radekPisma(z, trida){ const t = tridaPisma(z); return '<span class="' + t + " " + trida + '" aria-hidden="true"' + (t === "civ-fen" ? ' dir="rtl"' : "") + ">" + esc(z) + "</span>"; }
+  function radekPisma(z, trida){ const t = tridaPisma(z); return '<span class="' + t + " " + trida + '" aria-hidden="true"' + (RTL.indexOf(t) >= 0 ? ' dir="rtl"' : "") + ">" + esc(z) + "</span>"; }
   function kredit(f, U){
     const lic = f.licenceUrl ? '<a href="' + esc(f.licenceUrl) + '" rel="license noopener" target="_blank">' + esc(f.licence) + "</a>" : esc(f.licence === "Public domain" ? U.volneDilo : f.licence);
     return '<span class="civ-kredit">' + esc(U.foto) + ": " + (f.autor ? esc(f.autor) + ", " : "") + lic +
