@@ -1954,9 +1954,7 @@ var AKVARELY = (function(){
       o += skupina(F, F.stetec, spary);
       o += mlha(F, py - 8, py + 6, .55);
       /* prales: vrstvy korun */
-      o += koruny(F, q, -20, 430, 176, 1.3, "#3E7A44", .95) + koruny(F, q, -20, 430, 204, 1.6, "#2E6A3A", .95) + koruny(F, q, -20, 430, 236, 2, "#245A30", .95);
-      /* ceiba vpředu vlevo: rovný kmen a plochá koruna */
-      o += skupina(F, F.stetec, tah("M52 256 L56 150", "#6A5A46", 4, .9)) + nanes(F, "M10 154 Q56 126 104 150 Q80 162 56 158 Q30 164 10 154 Z", "#2E5E34", .95);
+      o += pas(F, q, 180, 1, "#4E8A4E", -20, 430, 256) + pas(F, q, 212, 1.3, "#356E3E", -20, 430, 256) + pas(F, q, 240, 1.6, "#26582E", -20, 430, 256);
       return o + ptaci(F, r, 5, 250, 60);
     },
     izrael: function(F, r){

@@ -1027,6 +1027,12 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/ancient/phoenicians/"/>
   </url>
   <url>
+    <loc>https://thelanguageatlas.com/ancient/greece/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/starovek/recko/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/ancient/greece/"/>
+  </url>
+  <url>
     <loc>https://thelanguageatlas.com/ancient/</loc>
     <lastmod>2026-09-26</lastmod>
     <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/starovek/"/>
