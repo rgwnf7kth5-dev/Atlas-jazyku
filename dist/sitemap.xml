@@ -1117,9 +1117,33 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/ancient/maya/"/>
   </url>
   <url>
+    <loc>https://atlasjazyku.cz/pribehy/caj/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/pribehy/caj/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/stories/tea/"/>
+  </url>
+  <url>
+    <loc>https://atlasjazyku.cz/pribehy/slova-z-cestiny/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/pribehy/slova-z-cestiny/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/stories/czech-words/"/>
+  </url>
+  <url>
+    <loc>https://atlasjazyku.cz/pribehy/obnova-jazyku/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/pribehy/obnova-jazyku/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/stories/language-revival/"/>
+  </url>
+  <url>
     <loc>https://atlasjazyku.cz/starovek/</loc>
     <lastmod>2026-09-26</lastmod>
     <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/starovek/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/ancient/"/>
+  </url>
+  <url>
+    <loc>https://atlasjazyku.cz/pribehy/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/pribehy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/stories/"/>
   </url>
 </urlset>

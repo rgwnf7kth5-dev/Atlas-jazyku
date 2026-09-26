@@ -236,7 +236,7 @@
 .starovek-okno{width:min(520px, calc(100vw - 32px))}
 .starovek-okno .starovek-tl{margin:4px 0}
 /* Příběhy jazyků: nadpisy skupin v nabídce (Slova na cestách, Jazyky v čase…) */
-.pribehy-skupina{display:flex; align-items:center; gap:10px; margin:18px 8px 6px; font:600 .72rem/1.2 var(--pismo-text); letter-spacing:.12em; text-transform:uppercase; color:var(--text3)}
+.pribehy-skupina{display:flex; align-items:center; gap:10px; margin:18px 8px 6px; font-family:inherit; font-size:.72rem; font-weight:700; line-height:1.2; letter-spacing:.1em; text-transform:uppercase; color:var(--text3)}
 .pribehy-skupina::after{content:""; flex:1; height:1px; background:var(--linka)}
 .od-uvod + .pribehy-skupina{margin-top:10px}
 /* přehledy nahoře nabídky: jemně podbarvený blok a pod ním ozdobný předěl (čára s kosočtvercem) */

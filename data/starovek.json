@@ -8267,7 +8267,7 @@
      ],
      [
       "Dnes",
-      "hebrejština úředním jazykem Izraele, asi 9 milionů mluvčích; novoaramejské jazyky ohrožené"
+      "hebrejština úředním jazykem Izraele, asi 9 milionů mluvčích (Ethnologue 2018); novoaramejské jazyky ohrožené"
      ]
     ],
     "nazvyTecek": {
@@ -8903,7 +8903,7 @@
      ],
      [
       "Today",
-      "Hebrew is an official language of Israel, with some 9 million speakers; the Neo-Aramaic languages are endangered"
+      "Hebrew is an official language of Israel, with some 9 million speakers (Ethnologue 2018); the Neo-Aramaic languages are endangered"
      ]
     ],
     "nazvyTecek": {
@@ -14129,7 +14129,7 @@
      ],
      [
       "Potomci",
-      "románské jazyky, přes 900 milionů rodilých mluvčích"
+      "románské jazyky, kolem 900 milionů rodilých mluvčích (Ethnologue, kolem 2020)"
      ],
      [
       "Dnes",
@@ -14439,7 +14439,7 @@
       "h": "Zrod románských jazyků",
       "p": [
        "Mezi 6. a 9. stoletím se mluvená latina v jednotlivých krajích bývalé říše rozrůznila natolik, že z ní vznikly samostatné jazyky. Psalo se však dál latinsky, takže románské jazyky se v písmu objevují až později. Mluvit „románsky“ (romanice loqui) se tehdy odlišovalo od mluvení latinsky (latine loqui).",
-       "Nejstarším souvislým textem psaným vědomě v raném románském jazyce Francie jsou Štrasburské přísahy ze 14. února 842. Vnuci Karla Velikého Ludvík Němec a Karel Holý v nich uzavřeli spojenectví proti bratru Lotharovi I. Ludvík přísahal románsky, aby mu rozuměli Karlovi vojáci, Karel starou horní němčinou kvůli Ludvíkovým vojákům. Text zachoval jejich bratranec, dějepisec Nithard. Z více než 900 milionů rodilých mluvčích románských jazyků dnes mluví zhruba polovina španělsky; následuje portugalština, francouzština, italština a rumunština."
+       "Nejstarším souvislým textem psaným vědomě v raném románském jazyce Francie jsou Štrasburské přísahy ze 14. února 842. Vnuci Karla Velikého Ludvík Němec a Karel Holý v nich uzavřeli spojenectví proti bratru Lotharovi I. Ludvík přísahal románsky, aby mu rozuměli Karlovi vojáci, Karel starou horní němčinou kvůli Ludvíkovým vojákům. Text zachoval jejich bratranec, dějepisec Nithard. Z asi 900 milionů rodilých mluvčích románských jazyků (odhady Ethnologue, kolem roku 2020) dnes mluví zhruba polovina španělsky; následuje portugalština, francouzština, italština a rumunština."
       ]
      },
      {
@@ -14567,7 +14567,7 @@
      ],
      [
       "Descendants",
-      "the Romance languages, more than 900 million native speakers"
+      "the Romance languages, about 900 million native speakers (Ethnologue, c. 2020)"
      ],
      [
       "Today",
@@ -14877,7 +14877,7 @@
       "h": "The birth of the Romance languages",
       "p": [
        "Between the 6th and 9th centuries, spoken Latin in the different regions of the former empire diverged so far that separate languages emerged. Writing, however, continued in Latin, so the Romance languages appear in writing only later. Speaking “in Roman” (romanice loqui) was then distinguished from speaking Latin (latine loqui).",
-       "The oldest continuous text deliberately written in an early Romance language of France is the Oaths of Strasbourg of 14 February 842. In them Charlemagne’s grandsons Louis the German and Charles the Bald made an alliance against their brother Lothair I. Louis swore in Romance so that Charles’s soldiers would understand him, and Charles in Old High German for Louis’s soldiers. The text was preserved by their cousin, the historian Nithard. Of the more than 900 million native speakers of Romance languages today, about half speak Spanish, followed by Portuguese, French, Italian and Romanian."
+       "The oldest continuous text deliberately written in an early Romance language of France is the Oaths of Strasbourg of 14 February 842. In them Charlemagne’s grandsons Louis the German and Charles the Bald made an alliance against their brother Lothair I. Louis swore in Romance so that Charles’s soldiers would understand him, and Charles in Old High German for Louis’s soldiers. The text was preserved by their cousin, the historian Nithard. Of the roughly 900 million native speakers of Romance languages today (Ethnologue estimates, c. 2020), about half speak Spanish, followed by Portuguese, French, Italian and Romanian."
       ]
      },
      {
@@ -20900,6 +20900,2200 @@
        "Stephen Houston, John Robertson, David Stuart: The Language of Classic Maya Inscriptions. Current Anthropology 41, 2000, pp. 321–356.",
        "Robert J. Sharer, Loa P. Traxler: The Ancient Maya. Stanford University Press, 6th ed. 2006.",
        "Glottolog 5 (languages and their classification)."
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "caj",
+   "sekce": "pribehy",
+   "skupina": "slova",
+   "adresa": {
+    "cs": "caj",
+    "en": "tea"
+   },
+   "krajina": "cajovnik",
+   "hledat": "caj tea cha te chai cajovnik tea plant putovni slovo wanderwort travelling word migrant word vypujcka prejate slovo loanword kognat cognate kalk calque etymologie etymology cinstina chinese mandarinstina mandarin min nan southern min amoy sia-men xiamen kantonstina cantonese macao portugalstina portuguese nizozemska vychodoindicka spolecnost dutch east india company persstina persian rustina russian cestina czech herbata wals dahl kava coffee cukr sugar pomeranc orange oranzovy rajce tomato cokolada chocolate",
+   "tecky": [
+    "minn1241",
+    "mand1415",
+    "yuec1235",
+    "port1283",
+    "dutc1256",
+    "stan1293",
+    "west2369",
+    "nucl1301",
+    "russ1263",
+    "czec1258",
+    "poli1260"
+   ],
+   "pisma": [
+    "Noto Serif TC",
+    "Noto Naskh Arabic",
+    "Noto Serif Devanagari"
+   ],
+   "fotky": {
+    "plantaz": {
+     "soubor": "plantaz.jpg",
+     "sirka": 1200,
+     "vyska": 431,
+     "autor": "Ingo Mehling",
+     "licence": "CC BY-SA 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Mattupetty_Lake_View.jpg",
+     "cs": "Čajové plantáže u přehradní nádrže Mattupetty v pohoří Kannan Devan (okres Idukki, stát Kérala, Indie).",
+     "en": "Tea plantations by the Mattupetty reservoir in the Kannan Devan Hills (Idukki district, Kerala, India)."
+    },
+    "sberacka": {
+     "soubor": "sberacka.jpg",
+     "sirka": 732,
+     "vyska": 1100,
+     "autor": "Bernard Gagnon",
+     "licence": "CC BY-SA 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Woman_harvesting_tea,_West_Bengal.jpg",
+     "cs": "Sběračka čaje v Západním Bengálsku v Indii.",
+     "en": "A woman picking tea in West Bengal, India."
+    },
+    "kava": {
+     "soubor": "kava.jpg",
+     "sirka": 1200,
+     "vyska": 797,
+     "autor": "P. Hughes",
+     "licence": "CC BY 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Vietnam_-_coffee_plantation.jpg",
+     "cs": "Kávová plantáž u Da Latu ve Vietnamu.",
+     "en": "A coffee plantation near Da Lat, Vietnam."
+    },
+    "cukr": {
+     "soubor": "cukr.jpg",
+     "sirka": 1200,
+     "vyska": 800,
+     "autor": "Hozyen",
+     "licence": "CC BY-SA 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Harvest_Sugar_Cane_1.jpg",
+     "cs": "Sklizená cukrová třtina odvážená oslím povozem.",
+     "en": "Harvested sugar cane carried off on a donkey cart."
+    }
+   },
+   "cs": {
+    "nazev": "Čaj a slova na cestách",
+    "stitek": "Příběhy jazyků",
+    "podtitul": "Čínské 茶 po souši a po moři · putovní slova",
+    "perex": "Ve většině jazyků, o nichž máme údaje, pochází slovo pro čaj z čínského 茶. Do světa se ale rozšířilo ve dvou podobách: jako cha, jak zní ve většině čínských nářečí, a jako te, jak se vyslovuje v jihočínském přístavu Sia-men. Kterou podobu jazyk má, prozrazuje, odkud a kudy k jeho mluvčím čaj přišel. Čeština patří k jazykům s podobou cha: slovo čaj převzala z ruštiny.",
+    "fakta": [
+     [
+      "Téma",
+      "putovní slova (Wanderwörter) a jejich cesty"
+     ],
+     [
+      "Výchozí slovo",
+      "čínské 茶 – mandarínsky chá, jihominsky tê"
+     ],
+     [
+      "Typ cha",
+      "perština, turečtina, ruština, čeština, hindština, portugalština, japonština"
+     ],
+     [
+      "Typ te",
+      "nizozemština, angličtina, němčina, francouzština, španělština, malajština"
+     ],
+     [
+      "Údaje WALS",
+      "230 jazyků, na glóbu 222 (kapitola 138, Östen Dahl)"
+     ],
+     [
+      "Čeština",
+      "čaj – z ruštiny, v 19. století (typ cha); starší thé"
+     ]
+    ],
+    "nazvyTecek": {
+     "minn1241": "Jihominská čínština (tê)",
+     "mand1415": "Mandarínská čínština (chá)",
+     "yuec1235": "Kantonština (caa)",
+     "port1283": "Portugalština (chá)",
+     "dutc1256": "Nizozemština (thee)",
+     "stan1293": "Angličtina (tea)",
+     "west2369": "Perština (čáj)",
+     "nucl1301": "Turečtina (çay)",
+     "russ1263": "Ruština (čaj)",
+     "czec1258": "Čeština (čaj)",
+     "poli1260": "Polština (herbata)"
+    },
+    "oddily": [
+     {
+      "typ": "text",
+      "h": "Jeden znak, mnoho výslovností",
+      "p": [
+       "Čínské slovo pro čaj se píše znakem 茶. Vznikl ze staršího znaku 荼 (tu), který označoval různé hořké rostliny a za dynastie Chan (202 př. n. l. – 220 n. l.) už i čaj; podoba 茶, o jeden vodorovný tah kratší, se ustálila za dynastie Tchang (618–907). Znak je jeden, výslovnost se však v čínských jazycích liší: mandarínsky chá (česky přepisováno čcha), kantonsky caa, šanghajsky zo, v jihominských nářečích na pobřeží provincie Fu-ťien tê.",
+       "Historičtí fonologové soudí, že všechny tyto výslovnosti vyšly z jednoho středočínského tvaru, rekonstruovaného zhruba jako dra (dr- tu značí jedinou retroflexní souhlásku), a rozrůznily se pravidelnými hláskovými změnami. Samo čínské slovo mohlo být podle jedné z hypotéz přejato z austroasijských jazyků v domovině čajovníku, v oblasti jihozápadní Číny a severní Barmy, kde se rekonstruuje kořen s významem ‚list‘. Tato domněnka není prokázaná.",
+       "Jazyky, které čaj poznaly z Číny, převzaly výslovnost, se kterou se setkaly. Slova pro čaj se proto dělí do dvou hlavních typů, cha a te. Vedle nich existují slova jiného původu, hlavně v oblastech, kde se čajovník užívá odedávna; barmsky se například nakládaným čajovým lístkům říká lahpet."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "plantaz",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "Cha: cesty po souši",
+      "p": [
+       "Podoba cha se šířila hlavně po pozemních cestách z vnitrozemí Číny do střední Asie a Persie. Cestou získala koncové -j: perština má čáj, turečtina çay, arabština šáj, hindština a urdština čáj. Podle Victora Maira a Erlinga Hoha jde o perskou koncovku, se kterou slovo putovalo dál na západ i na jih; do hindštiny a urdštiny se dostalo pod vlivem mughalského dvora.",
+       "Po souši přišel čaj i do Ruska. Roku 1638 dostal car Michail Fjodorovič darem od mongolského chána čtyři pudy (asi 65 kg) čaje a později se čaj do Ruska dovážel karavanami. Ruské чай (čaj) má stejné koncové -j jako perské slovo; kudy přesně do ruštiny přišlo, zda přes perštinu, turkické jazyky nebo mongolštinu, se vykládá různě.",
+       "Mnohem dříve převzaly slovo z čínštiny japonština, korejština a vietnamština, a to ze starších podob čínštiny, nezávisle na obchodu 16. století. Japonsky se čaji říká ča (zdvořile oča) a vedle toho i čtení sa, například ve slově sadó, ‚čajový obřad‘. Korejština má ča, vietnamština dvě podoby, trà a chè."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "sberacka",
+      "na-vysku": true
+     },
+     {
+      "typ": "text",
+      "h": "Te: cesty po moři",
+      "p": [
+       "Podoba te pochází z amojského nářečí jihominské čínštiny, kterým se mluví v přístavu Sia-men (pinyin Xiamen, dříve Amoy) v provincii Fu-ťien. Sia-men a nedaleké Čchüan-čou patřily k hlavním místům styku s cizími obchodníky. Výslovnost tê převzala od jihominských obchodníků i malajština (teh), jazyk obchodu v jihovýchodní Asii.",
+       "Do Evropy ji přinesli Nizozemci. Nizozemská Východoindická společnost převezla první náklad čaje roku 1607 z Macaa na Jávu a brzy se stala hlavním dovozcem čaje do Evropy. Nizozemské thee převzali její obchodníci buď přímo od jihominských obchodníků ve Fu-ťienu a na Tchaj-wanu, nebo prostřednictvím malajštiny v jávském přístavu Bantam; uvádějí se obě cesty.",
+       "Z nizozemštiny se slovo rozšířilo do dalších západoevropských jazyků: angličtina má tea, francouzština thé, němčina Tee, španělština té. Samuel Pepys si roku 1660 zapsal do deníku, že poprvé pil „a cup of tee (a China drink)“. Protože čaj do západní Evropy vozily lodě, spojuje se podoba te s námořním obchodem a podoba cha s pozemními cestami. Je to užitečné, ale zjednodušené pravidlo."
+      ]
+     },
+     {
+      "typ": "rameček",
+      "h": "Proč portugalština říká chá",
+      "p": [
+       "Portugalci připluli do Číny po moři, a přesto mají slovo chá. Od poloviny 16. století obchodovali v Macau u ústí Perlové řeky, kde se mluví kantonsky, a kantonština vyslovuje stejně jako mandarínština cha. Rozhodující tedy nebyla cesta sama, ale to, s jakou čínskou výslovností se obchodníci setkali.",
+       "Angličtina poznala nejdřív cha: roku 1598 v překladu Linschotenova cestopisu (chaa) a roku 1615 v dopise Richarda Wickhama, zaměstnance Anglické Východoindické společnosti v Japonsku, který žádal o „the best sort of chaw“. Portugalská princezna Kateřina z Braganzy přinesla roku 1662 zvyk pít čaj na dvůr Karla II. Angličtina si však nakonec ponechala nizozemské tea. V britské hovorové angličtině se říká i char (cha) a ve 20. století přibylo chai pro kořeněný čaj po indicku, přejaté z hindštiny a urdštiny. Angličtina tak zná všechny tři podoby."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Čeština: od thé k čaji",
+      "p": [
+       "Čeština patří k typu cha. Slovo čaj převzala podle českých etymologických slovníků z ruštiny; koncové -j ukazuje na větev, která prošla střední Asií. Stejné slovo má slovenština a jihoslovanské jazyky (srbsky a chorvatsky čaj, bulharsky чай).",
+       "Sousední jazyky mají jinou podobu. Němčina (Tee) a maďarština (tea) patří k typu te. Polština má herbata, z novolatinského herba thea (thee), ‚čajová bylina‘, a litevské arbata je převzaté z polštiny; te je v nich tedy také, jen skryté ve spojení se slovem pro bylinu. WALS proto polštinu řadí mezi jazyky s jiným slovem. Konvici se polsky přesto říká czajnik, z ruského чай.",
+       "Ani čeština neznala vždy jen čaj. Starší bylo thé (té), přejaté nejspíš z němčiny v pravopisu podle francouzštiny. Čaj pronikl do spisovné češtiny v 19. století jako rusismus a thé přibližně do počátku 20. století vytlačil; dnes je thé zastaralé. Slovem čaj se dnes označují i nálevy z jiných rostlin než z čajovníku, například ovocný nebo bylinný čaj."
+      ]
+     },
+     {
+      "typ": "slova",
+      "h": "Čaj v různých jazycích",
+      "uvod": "Výběr jazyků podle typu slova. Přepis nelatinkových písem je zjednodušený.",
+      "hlavicka": [
+       "slovo",
+       "jazyk",
+       "typ",
+       "odkud a kudy"
+      ],
+      "radky": [
+       [
+        "茶 chá",
+        "mandarínská čínština",
+        "cha",
+        "výslovnost většiny čínských nářečí (česky čcha)"
+       ],
+       [
+        "茶 tê",
+        "jihominská čínština (amojské nářečí)",
+        "te",
+        "přístav Sia-men, východisko námořního obchodu"
+       ],
+       [
+        "茶 caa4",
+        "kantonština",
+        "cha",
+        "Kanton a Macao; odtud portugalské chá"
+       ],
+       [
+        "茶 ča, oča",
+        "japonština",
+        "cha",
+        "starší přejímka z čínštiny"
+       ],
+       [
+        "trà, chè",
+        "vietnamština",
+        "cha",
+        "dvě podoby přejaté z čínštiny"
+       ],
+       [
+        "chá",
+        "portugalština",
+        "cha",
+        "po moři z kantonštiny v Macau, 16. století"
+       ],
+       [
+        "چای čáj",
+        "perština",
+        "cha",
+        "po souši přes střední Asii; koncové -j"
+       ],
+       [
+        "çay",
+        "turečtina",
+        "cha",
+        "z perského tvaru"
+       ],
+       [
+        "شاي šáj",
+        "arabština",
+        "cha",
+        "z perského tvaru"
+       ],
+       [
+        "चाय čáj",
+        "hindština",
+        "cha",
+        "z perštiny, pod vlivem mughalského dvora"
+       ],
+       [
+        "чай čaj",
+        "ruština",
+        "cha",
+        "po souši; čaj v Rusku od 17. století"
+       ],
+       [
+        "čaj",
+        "čeština",
+        "cha",
+        "z ruštiny, 19. století; dříve thé"
+       ],
+       [
+        "herbata",
+        "polština",
+        "jiné (WALS); te skryté ve spojení",
+        "z novolat. herba thea (thee)"
+       ],
+       [
+        "thee",
+        "nizozemština",
+        "te",
+        "od jihominských nebo malajských obchodníků, 17. století"
+       ],
+       [
+        "tea",
+        "angličtina",
+        "te",
+        "z nizozemštiny, 17. století; vedle toho cha a chai"
+       ],
+       [
+        "Tee",
+        "němčina",
+        "te",
+        "z nizozemštiny"
+       ],
+       [
+        "thé",
+        "francouzština",
+        "te",
+        "z nizozemštiny"
+       ],
+       [
+        "tea",
+        "maďarština",
+        "te",
+        "ze západoevropských jazyků"
+       ],
+       [
+        "teh",
+        "malajština",
+        "te",
+        "přímo od jihominských obchodníků"
+       ]
+      ]
+     },
+     {
+      "typ": "mapa",
+      "h": "Čaj na mapě světa",
+      "vlastnost": "138A",
+      "p": [
+       "Světový atlas jazykových struktur (WALS) věnuje slovu pro čaj samostatnou kapitolu, kterou napsal švédský lingvista Östen Dahl. U 230 jazyků rozlišuje tři hodnoty: slova z čínského cha, slova z jihominského te a slova jiného původu. Necelá polovina jazyků ve výběru má typ cha, o něco víc než třetina typ te a zbytek jiné slovo. Na glóbu je 222 z nich; zbylé jazyky WALS nemají v Glottologu polohu.",
+       "Mapa obarví jazyky na glóbu podle těchto tří hodnot. Typ te převládá v západní Evropě a v jazycích, které čaj poznaly od námořních obchodníků, typ cha v pásu od východní Evropy přes Blízký východ a střední Asii po Indii a východní Asii. Mapa zachycuje jen jazyky z výběru WALS, ne všechny jazyky světa."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Výpůjčka, nebo příbuznost?",
+      "p": [
+       "Podobnost slov v různých jazycích může mít dvě příčiny. Příbuzná slova (kognáty) zdědily příbuzné jazyky ze společného prajazyka: české tři, latinské trēs a anglické three si jsou podobná, protože pocházejí z téže indoevropské číslovky, a hláskové změny, které je od sebe vzdálily, jsou pravidelné. Přejatá slova (výpůjčky) naproti tomu jazyk převzal od jiného jazyka, s nímž vůbec nemusí být příbuzný. Anglické a maďarské tea se píší stejně, ačkoli angličtina je indoevropská a maďarština uralská; společné mají jen to, že obě slovo přejaly.",
+       "Výpůjčka, která se rozšířila do mnoha jazyků, často vzdálených a nepříbuzných, se nazývá putovní slovo; v lingvistice se užívá i německý termín Wanderwort (množné číslo Wanderwörter). Taková slova cestují obvykle se zbožím, plodinami, zvířaty nebo novými technikami. U starých putovních slov, jako jsou názvy mědi, stříbra, vína nebo konopí, bývá těžké určit, ze kterého jazyka vyšla. Čaj je výjimečný tím, že se rozšířil poměrně pozdě a jeho cesty jsou dobře doložené."
+      ]
+     },
+     {
+      "typ": "pojmy",
+      "h": "Pojmy",
+      "uvod": "Termíny, se kterými pracuje výklad původu slov:",
+      "pojmy": [
+       [
+        "výpůjčka (přejaté slovo)",
+        "Slovo převzaté z jiného jazyka, obvykle přizpůsobené hláskám a tvarosloví přejímajícího jazyka.",
+        "čaj z ruštiny, cukr z němčiny"
+       ],
+       [
+        "zprostředkující jazyk",
+        "Jazyk, přes který slovo prošlo na cestě od výchozího jazyka k přejímajícímu.",
+        "ruština pro české čaj, nizozemština pro anglické tea"
+       ],
+       [
+        "kalk",
+        "Přejímka, při níž se nepřevezme cizí slovo samo, ale napodobí se jeho stavba nebo význam domácími prostředky.",
+        "rajské jablko podle německého Paradiesapfel"
+       ],
+       [
+        "příbuzné slovo (kognát)",
+        "Slovo zděděné ze společného prajazyka; podobnost vznikla dědictvím, ne přejetím.",
+        "tři – trēs – three"
+       ],
+       [
+        "putovní slovo (Wanderwort)",
+        "Výpůjčka rozšířená mezi mnoho, často nepříbuzných jazyků, obvykle spolu s věcí, kterou označuje.",
+        "čaj, cukr, káva"
+       ]
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Káva, cukr, pomeranč a další",
+      "p": [
+       "Čaj není jediné slovo, které přicestovalo se zbožím. Podobně se šířily názvy plodin a pochutin, které Evropa poznala z Asie, Afriky a Ameriky. U většiny je cesta dobře doložená, u některých zůstává začátek nejistý.",
+       "Káva: arabské qahwa se do evropských jazyků dostalo přes osmanskou turečtinu (kahve); do angličtiny roku 1582 přes nizozemské koffie. Jde o arabské slovo, které dřív označovalo i víno; odvozuje se buď od slovesa s významem ‚nemít chuť k jídlu‘, nebo od kořene pro tmavou barvu. Často uváděné spojení s etiopskou oblastí Kaffa je méně jisté.",
+       "Čokoláda: španělské chocolate je doloženo od roku 1579, jeho starší původ je však sporný. Rozšířené tvrzení, že pochází z nahuatlského chocolatl, se neopírá o prameny: rané texty v nahuatlu nazývají čokoládový nápoj cacahuatl, ‚kakaová voda‘. Výklad z hypotetického xocoatl, ‚hořký nápoj‘, má hláskové potíže; část badatelů spojuje slovo s nawatským chikola:tl, ani to však není jisté."
+      ]
+     },
+     {
+      "typ": "slova",
+      "h": "Cesty dalších slov",
+      "uvod": "Zjednodušeně, od nejstaršího doloženého tvaru k češtině:",
+      "hlavicka": [
+       "česky",
+       "výchozí slovo",
+       "cesta"
+      ],
+      "radky": [
+       [
+        "káva",
+        "arabsky قهوة qahwa",
+        "osmanská turečtina kahve → evropské jazyky (it. caffè, niz. koffie, něm. Kaffee)"
+       ],
+       [
+        "cukr",
+        "sanskrt शर्करा śarkarā, ‚drcený či krystalický cukr‘",
+        "perština šakar → arabština sukkar → středověká latina succarum, italština zucchero → němčina Zucker → čeština"
+       ],
+       [
+        "pomeranč, oranžový",
+        "drávidský jazyk (snad tamilština nebo telugština) → sanskrt nāraṅga",
+        "perština nārang → arabština nāranj → italština arancia, francouzština orange (počáteční n- odpadlo; španělské naranja ho má); pomeranč přes něm. Pomeranze z it. pomo ‚jablko‘ + arancia, oranžový z francouzštiny"
+       ],
+       [
+        "rajče, tomatový",
+        "nahuatl tomatl (označovalo hlavně tomatillo; červené rajče je xitomatl)",
+        "španělština tomate → evropské jazyky (angl. tomato, něm. Tomate); české rajče je domácí slovo odvozené od výrazu rajské jablko, kalku německého Paradiesapfel; přejímka se drží v přídavném jméně tomatový"
+       ],
+       [
+        "čokoláda",
+        "španělsky chocolate (1579)",
+        "dál do evropských jazyků; odkud se slovo dostalo do španělštiny, je sporné"
+       ]
+      ]
+     },
+     {
+      "typ": "galerie",
+      "h": "Plodiny putovních slov",
+      "f": [
+       "kava",
+       "cukr"
+      ]
+     },
+     {
+      "typ": "osa",
+      "h": "Časová osa",
+      "udalosti": [
+       [
+        "202 př. n. l. – 220 n. l.",
+        "Dynastie Chan: znak 荼 (tu, ‚hořká rostlina‘) označuje i čaj."
+       ],
+       [
+        "618–907",
+        "Dynastie Tchang: ustaluje se znak 茶; v 8. století vzniká Lu Jüův spis o čaji Čcha-ťing."
+       ],
+       [
+        "50. léta 16. století",
+        "Portugalci obchodují v Macau a přejímají kantonské cha."
+       ],
+       [
+        "1559",
+        "Ve 2. svazku Ramusiova díla Navigationi et viaggi, vydaném posmrtně, se objevuje „Chiai Catai“ – obvykle pokládáno za nejstarší zmínku o čaji v evropské literatuře."
+       ],
+       [
+        "1598",
+        "Anglický překlad Linschotenova cestopisu uvádí chaa."
+       ],
+       [
+        "1607",
+        "Nizozemská Východoindická společnost převáží první náklad čaje z Macaa na Jávu."
+       ],
+       [
+        "1615",
+        "Richard Wickham píše o „chaw“ – jeden z nejstarších anglických dokladů."
+       ],
+       [
+        "1638",
+        "Car Michail Fjodorovič dostává čaj darem od mongolského chána."
+       ],
+       [
+        "1660",
+        "Samuel Pepys si zapisuje do deníku „a cup of tee“."
+       ],
+       [
+        "1662",
+        "Kateřina z Braganzy přináší zvyk pít čaj na anglický dvůr."
+       ],
+       [
+        "1836",
+        "Britové začínají v Indii pěstovat čínský čajovník."
+       ],
+       [
+        "20. století",
+        "Do angličtiny proniká chai (kořeněný čaj), z hindštiny a urdštiny."
+       ],
+       [
+        "2005",
+        "Světový atlas jazykových struktur (WALS) s kapitolou Östena Dahla o slově pro čaj."
+       ]
+      ]
+     },
+     {
+      "typ": "tecky",
+      "h": "Jazyky na glóbu",
+      "uvod": "Klepnutím se jazyk ukáže na glóbu:"
+     },
+     {
+      "typ": "zdroje",
+      "h": "Zdroje a další četba",
+      "p": [
+       "Victor H. Mair, Erling Hoh: The True History of Tea. Thames & Hudson 2009.",
+       "Östen Dahl: Tea. In: Matthew S. Dryer, Martin Haspelmath (ed.): The World Atlas of Language Structures Online, kap. 138. Max Planck Institute for Evolutionary Anthropology, Lipsko 2013.",
+       "Martin Haspelmath, Uri Tadmor (ed.): Loanwords in the World's Languages. A Comparative Handbook. De Gruyter Mouton 2009.",
+       "Jiří Rejzek: Český etymologický slovník. Leda 2001.",
+       "Václav Machek: Etymologický slovník jazyka českého. Academia, 2. vyd. 1968.",
+       "Sophie D. Coe, Michael D. Coe: The True History of Chocolate. Thames & Hudson 1996."
+      ]
+     }
+    ]
+   },
+   "en": {
+    "nazev": "Tea and other travelling words",
+    "stitek": "Language stories",
+    "podtitul": "Chinese 茶 by land and by sea · words that travel",
+    "perex": "In most languages for which we have data, the word for tea comes from Chinese 茶. It spread, however, in two forms: as cha, the pronunciation of most Chinese varieties, and as te, the pronunciation of the southern Chinese port of Xiamen. Which form a language has reveals where tea reached its speakers from, and by which route. Czech belongs to the cha languages: it borrowed čaj from Russian.",
+    "fakta": [
+     [
+      "Topic",
+      "travelling words (Wanderwörter) and their routes"
+     ],
+     [
+      "Source word",
+      "Chinese 茶 – Mandarin chá, Southern Min tê"
+     ],
+     [
+      "cha type",
+      "Persian, Turkish, Russian, Czech, Hindi, Portuguese, Japanese"
+     ],
+     [
+      "te type",
+      "Dutch, English, German, French, Spanish, Malay"
+     ],
+     [
+      "WALS data",
+      "230 languages, 222 on the globe (chapter 138, Östen Dahl)"
+     ],
+     [
+      "Czech",
+      "čaj – from Russian, 19th century (cha type); earlier thé"
+     ]
+    ],
+    "nazvyTecek": {
+     "minn1241": "Southern Min Chinese (tê)",
+     "mand1415": "Mandarin Chinese (chá)",
+     "yuec1235": "Cantonese (caa)",
+     "port1283": "Portuguese (chá)",
+     "dutc1256": "Dutch (thee)",
+     "stan1293": "English (tea)",
+     "west2369": "Persian (chāy)",
+     "nucl1301": "Turkish (çay)",
+     "russ1263": "Russian (chay)",
+     "czec1258": "Czech (čaj)",
+     "poli1260": "Polish (herbata)"
+    },
+    "oddily": [
+     {
+      "typ": "text",
+      "h": "One character, many pronunciations",
+      "p": [
+       "The Chinese word for tea is written 茶. The character developed from an older one, 荼 (tu), which denoted various bitter plants and, by the Han dynasty (202 BCE – 220 CE), tea as well; the form 茶, one horizontal stroke shorter, became standard under the Tang (618–907). There is one character but many pronunciations across the Chinese languages: chá in Mandarin, caa in Cantonese, zo in Shanghainese and tê in the Southern Min varieties of the Fujian coast.",
+       "Historical phonologists believe that all of these go back to a single Middle Chinese form, reconstructed roughly as dra (where dr- stands for a single retroflex consonant), and diverged through regular sound change. The Chinese word itself may, according to one hypothesis, have been borrowed from Austroasiatic languages in the tea plant's homeland in south-western China and northern Burma, where a root meaning 'leaf' is reconstructed. This remains unproven.",
+       "Languages that learned of tea from China adopted whichever pronunciation they encountered, so words for tea fall into two main types, cha and te. Besides these there are words of other origin, mainly in regions where the tea plant has been used since time immemorial; in Burmese, for example, pickled tea leaves are called lahpet."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "plantaz",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "Cha: the overland routes",
+      "p": [
+       "The cha form travelled mainly overland, from inland China to Central Asia and Persia. On the way it acquired a final -y: Persian has chāy, Turkish çay, Arabic shāy, Hindi and Urdu chāy. According to Victor Mair and Erling Hoh this is a Persian ending, with which the word moved on westwards and southwards; it reached Hindi and Urdu under the influence of the Mughal court.",
+       "Tea also reached Russia overland. In 1638 Tsar Michael received four poods (about 65 kg) of tea as a gift from a Mongol khan, and tea was later brought to Russia by caravan. Russian чай (chay) has the same final -y as the Persian word; exactly how it reached Russian – through Persian, Turkic languages or Mongolian – is explained in different ways.",
+       "Japanese, Korean and Vietnamese borrowed the word much earlier, from older stages of Chinese and independently of the sixteenth-century trade. Japanese says cha (politely ocha) and also has the reading sa, as in sadō, 'the tea ceremony'. Korean has cha, and Vietnamese two forms, trà and chè."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "sberacka",
+      "na-vysku": true
+     },
+     {
+      "typ": "text",
+      "h": "Te: the sea routes",
+      "p": [
+       "The te form comes from the Amoy dialect of Southern Min, spoken in the port of Xiamen (formerly Amoy) in Fujian province. Xiamen and nearby Quanzhou were among the main points of contact with foreign merchants. Malay, the trade language of South-East Asia, also took tê from Southern Min traders, as teh.",
+       "It was the Dutch who brought it to Europe. The Dutch East India Company shipped its first cargo of tea from Macao to Java in 1607 and soon became Europe's main tea importer. Its merchants took the word thee either directly from Southern Min traders in Fujian and Taiwan, or through Malay at the Javanese port of Bantam; both routes are proposed.",
+       "From Dutch the word spread to other Western European languages: English tea, French thé, German Tee, Spanish té. In 1660 Samuel Pepys noted in his diary that he had drunk 'a cup of tee (a China drink)' for the first time. Because tea reached Western Europe by ship, the te form is associated with sea trade and cha with overland routes. It is a useful rule of thumb, but a simplification."
+      ]
+     },
+     {
+      "typ": "rameček",
+      "h": "Why Portuguese says chá",
+      "p": [
+       "The Portuguese reached China by sea, yet their word is chá. From the mid-sixteenth century they traded at Macao, at the mouth of the Pearl River, where Cantonese is spoken – and Cantonese, like Mandarin, says cha. What mattered was not the route itself but which Chinese pronunciation the traders heard.",
+       "English met the cha form first: in 1598 in the English translation of Linschoten's travels (chaa), and in 1615 in a letter by Richard Wickham of the English East India Company in Japan, who asked for 'the best sort of chaw'. The Portuguese princess Catherine of Braganza brought tea drinking to the court of Charles II in 1662. In the end, though, English kept the Dutch tea. Colloquial British English also has char (cha), and the twentieth century added chai, borrowed from Hindi and Urdu, for Indian-style spiced tea. English thus has all three forms."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Czech: from thé to čaj",
+      "p": [
+       "Czech belongs to the cha type. According to Czech etymological dictionaries it borrowed čaj from Russian; the final -j points to the branch that passed through Central Asia. Slovak and the South Slavic languages have the same word (Serbian and Croatian čaj, Bulgarian чай).",
+       "Czech's neighbours differ. German (Tee) and Hungarian (tea) belong to the te type. Polish has herbata, from New Latin herba thea (thee), 'tea herb', and Lithuanian arbata was borrowed from Polish; so te is there too, hidden in a phrase with the word for 'herb'. WALS therefore classes Polish among the languages with another word. A kettle, however, is czajnik in Polish, from Russian чай.",
+       "Czech did not always have only čaj either. The older word was thé (té), probably borrowed from German but spelled after French. Čaj entered the standard language in the nineteenth century as a Russianism and had displaced thé by about the beginning of the twentieth; thé is now obsolete. Today čaj also covers infusions of plants other than the tea plant, such as fruit or herbal tea."
+      ]
+     },
+     {
+      "typ": "slova",
+      "h": "Tea in different languages",
+      "uvod": "A selection of languages by type. Transliterations of non-Latin scripts are simplified.",
+      "hlavicka": [
+       "word",
+       "language",
+       "type",
+       "source and route"
+      ],
+      "radky": [
+       [
+        "茶 chá",
+        "Mandarin Chinese",
+        "cha",
+        "the pronunciation of most Chinese varieties"
+       ],
+       [
+        "茶 tê",
+        "Southern Min Chinese (Amoy)",
+        "te",
+        "the port of Xiamen, starting point of the sea trade"
+       ],
+       [
+        "茶 caa4",
+        "Cantonese",
+        "cha",
+        "Canton and Macao; hence Portuguese chá"
+       ],
+       [
+        "茶 cha, ocha",
+        "Japanese",
+        "cha",
+        "an earlier borrowing from Chinese"
+       ],
+       [
+        "trà, chè",
+        "Vietnamese",
+        "cha",
+        "two forms borrowed from Chinese"
+       ],
+       [
+        "chá",
+        "Portuguese",
+        "cha",
+        "by sea, from Cantonese at Macao, 16th century"
+       ],
+       [
+        "چای chāy",
+        "Persian",
+        "cha",
+        "overland through Central Asia; final -y"
+       ],
+       [
+        "çay",
+        "Turkish",
+        "cha",
+        "from the Persian form"
+       ],
+       [
+        "شاي shāy",
+        "Arabic",
+        "cha",
+        "from the Persian form"
+       ],
+       [
+        "चाय chāy",
+        "Hindi",
+        "cha",
+        "from Persian, under Mughal influence"
+       ],
+       [
+        "чай chay",
+        "Russian",
+        "cha",
+        "overland; tea in Russia from the 17th century"
+       ],
+       [
+        "čaj",
+        "Czech",
+        "cha",
+        "from Russian, 19th century; earlier thé"
+       ],
+       [
+        "herbata",
+        "Polish",
+        "other (WALS); te hidden in a phrase",
+        "from New Latin herba thea (thee)"
+       ],
+       [
+        "thee",
+        "Dutch",
+        "te",
+        "from Southern Min or Malay traders, 17th century"
+       ],
+       [
+        "tea",
+        "English",
+        "te",
+        "from Dutch, 17th century; also cha and chai"
+       ],
+       [
+        "Tee",
+        "German",
+        "te",
+        "from Dutch"
+       ],
+       [
+        "thé",
+        "French",
+        "te",
+        "from Dutch"
+       ],
+       [
+        "tea",
+        "Hungarian",
+        "te",
+        "from Western European languages"
+       ],
+       [
+        "teh",
+        "Malay",
+        "te",
+        "directly from Southern Min traders"
+       ]
+      ]
+     },
+     {
+      "typ": "mapa",
+      "h": "Tea on the world map",
+      "vlastnost": "138A",
+      "p": [
+       "The World Atlas of Language Structures (WALS) devotes a whole chapter to the word for tea, written by the Swedish linguist Östen Dahl. For 230 languages it distinguishes three values: words derived from Chinese cha, words derived from Southern Min te, and words of other origin. Just under half of the languages in the sample have the cha type, a little over a third the te type, and the rest another word. The globe shows 222 of them; the remaining WALS languages have no location in Glottolog.",
+       "The map colours the languages on the globe by these three values. The te type prevails in Western Europe and in languages that learned of tea from seafaring traders, the cha type in a belt from Eastern Europe through the Middle East and Central Asia to India and East Asia. The map shows only the languages in the WALS sample, not all the languages of the world."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Borrowed or inherited?",
+      "p": [
+       "Words in different languages can resemble each other for two reasons. Cognates are inherited by related languages from a common ancestor: Czech tři, Latin trēs and English three are alike because they all go back to the same Indo-European numeral, and the sound changes that pulled them apart are regular. Loanwords, on the other hand, are taken over from another language, which need not be related at all. English and Hungarian tea are spelled the same although English is Indo-European and Hungarian Uralic; all they share is that both borrowed the word.",
+       "A loanword that has spread to many languages, often distant and unrelated ones, is called a travelling or migrant word; linguists also use the German term Wanderwort (plural Wanderwörter). Such words usually travel with goods, crops, animals or new techniques. For old Wanderwörter, such as the words for copper, silver, wine or hemp, it is often hard to tell which language they started from. Tea is unusual in that it spread relatively late and its routes are well documented."
+      ]
+     },
+     {
+      "typ": "pojmy",
+      "h": "Key terms",
+      "uvod": "Terms used in tracing the origin of words:",
+      "pojmy": [
+       [
+        "loanword",
+        "A word taken over from another language, usually adapted to the sounds and grammar of the borrowing language.",
+        "Czech čaj from Russian, cukr 'sugar' from German"
+       ],
+       [
+        "intermediary language",
+        "A language through which a word passed on its way from the source language to the borrowing one.",
+        "Russian for Czech čaj, Dutch for English tea"
+       ],
+       [
+        "calque (loan translation)",
+        "A borrowing in which the foreign word itself is not taken over; its structure or meaning is imitated with native material.",
+        "Czech rajské jablko 'paradise apple' after German Paradiesapfel"
+       ],
+       [
+        "cognate",
+        "A word inherited from a common ancestral language; the resemblance comes from descent, not borrowing.",
+        "tři – trēs – three"
+       ],
+       [
+        "Wanderwort (travelling word)",
+        "A loanword spread across many, often unrelated languages, usually together with the thing it names.",
+        "tea, sugar, coffee"
+       ]
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Coffee, sugar, orange and others",
+      "p": [
+       "Tea is not the only word that travelled with trade goods. Names of crops and foodstuffs that Europe came to know from Asia, Africa and the Americas spread in a similar way. For most of them the route is well documented; for some, the starting point remains uncertain.",
+       "Coffee: Arabic qahwa reached European languages through Ottoman Turkish (kahve), and English in 1582 through Dutch koffie. It is an Arabic word that once also meant wine; it is derived either from a verb meaning 'to have no appetite' or from a root denoting dark colour. The frequently cited link with the Kaffa region of Ethiopia is less certain.",
+       "Chocolate: Spanish chocolate is attested from 1579, but its earlier origin is disputed. The popular claim that it comes from Nahuatl chocolatl has no basis in the sources: early Nahuatl texts call the chocolate drink cacahuatl, 'cacao water'. A derivation from a hypothetical xocoatl, 'bitter drink', runs into phonological problems; some scholars link the word to Nawat chikola:tl, but that too is not certain."
+      ]
+     },
+     {
+      "typ": "slova",
+      "h": "Routes of other words",
+      "uvod": "Simplified, from the earliest attested form to Czech:",
+      "hlavicka": [
+       "Czech",
+       "source word",
+       "route"
+      ],
+      "radky": [
+       [
+        "káva 'coffee'",
+        "Arabic قهوة qahwa",
+        "Ottoman Turkish kahve → European languages (Italian caffè, Dutch koffie, German Kaffee)"
+       ],
+       [
+        "cukr 'sugar'",
+        "Sanskrit शर्करा śarkarā, 'ground or candied sugar'",
+        "Persian shakar → Arabic sukkar → Medieval Latin succarum, Italian zucchero → German Zucker → Czech"
+       ],
+       [
+        "pomeranč 'orange (fruit)', oranžový 'orange (colour)'",
+        "a Dravidian language (perhaps Tamil or Telugu) → Sanskrit nāraṅga",
+        "Persian nārang → Arabic nāranj → Italian arancia, French orange (the initial n- was lost; Spanish naranja keeps it); pomeranč via German Pomeranze from Italian pomo 'apple' + arancia, oranžový from French"
+       ],
+       [
+        "rajče 'tomato', tomatový",
+        "Nahuatl tomatl (mainly the tomatillo; the red tomato is xitomatl)",
+        "Spanish tomate → European languages (English tomato, German Tomate); Czech rajče is a native word derived from rajské jablko 'paradise apple', a calque of German Paradiesapfel; the loan survives in the adjective tomatový"
+       ],
+       [
+        "čokoláda 'chocolate'",
+        "Spanish chocolate (1579)",
+        "on into European languages; how the word entered Spanish is disputed"
+       ]
+      ]
+     },
+     {
+      "typ": "galerie",
+      "h": "Crops behind travelling words",
+      "f": [
+       "kava",
+       "cukr"
+      ]
+     },
+     {
+      "typ": "osa",
+      "h": "Timeline",
+      "udalosti": [
+       [
+        "202 BCE – 220 CE",
+        "Han dynasty: the character 荼 (tu, 'bitter plant') also denotes tea."
+       ],
+       [
+        "618–907",
+        "Tang dynasty: the character 茶 becomes standard; in the 8th century Lu Yu writes The Classic of Tea."
+       ],
+       [
+        "1550s",
+        "The Portuguese trade at Macao and adopt Cantonese cha."
+       ],
+       [
+        "1559",
+        "The second volume of Ramusio's Navigationi et viaggi, published posthumously, mentions 'Chiai Catai' – usually regarded as the earliest reference to tea in European literature."
+       ],
+       [
+        "1598",
+        "The English translation of Linschoten's travels has chaa."
+       ],
+       [
+        "1607",
+        "The Dutch East India Company ships its first cargo of tea from Macao to Java."
+       ],
+       [
+        "1615",
+        "Richard Wickham writes of 'chaw' – one of the earliest English records."
+       ],
+       [
+        "1638",
+        "Tsar Michael receives tea as a gift from a Mongol khan."
+       ],
+       [
+        "1660",
+        "Samuel Pepys notes 'a cup of tee' in his diary."
+       ],
+       [
+        "1662",
+        "Catherine of Braganza brings tea drinking to the English court."
+       ],
+       [
+        "1836",
+        "The British begin growing the Chinese tea plant in India."
+       ],
+       [
+        "20th century",
+        "Chai (spiced tea), from Hindi and Urdu, enters English."
+       ],
+       [
+        "2005",
+        "The World Atlas of Language Structures (WALS), with Östen Dahl's chapter on the word for tea."
+       ]
+      ]
+     },
+     {
+      "typ": "tecky",
+      "h": "Languages on the globe",
+      "uvod": "Click to show a language on the globe:"
+     },
+     {
+      "typ": "zdroje",
+      "h": "Sources and further reading",
+      "p": [
+       "Victor H. Mair, Erling Hoh: The True History of Tea. Thames & Hudson 2009.",
+       "Östen Dahl: Tea. In: Matthew S. Dryer, Martin Haspelmath (eds.): The World Atlas of Language Structures Online, ch. 138. Max Planck Institute for Evolutionary Anthropology, Leipzig 2013.",
+       "Martin Haspelmath, Uri Tadmor (eds.): Loanwords in the World's Languages. A Comparative Handbook. De Gruyter Mouton 2009.",
+       "Jiří Rejzek: Český etymologický slovník. Leda 2001.",
+       "Václav Machek: Etymologický slovník jazyka českého. Academia, 2nd ed. 1968.",
+       "Sophie D. Coe, Michael D. Coe: The True History of Chocolate. Thames & Hudson 1996."
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "slova-z-cestiny",
+   "sekce": "pribehy",
+   "skupina": "slova",
+   "adresa": {
+    "cs": "slova-z-cestiny",
+    "en": "czech-words"
+   },
+   "krajina": "jachymov",
+   "hledat": "slova z cestiny czech words cestina czech robot robota capek josef karel rur dolar dollar tolar thaler taler joachimsthaler jachymov joachimsthal houfnice howitzer haubitze pistole pistol pistala husite hussite polka semtex semtin pardubice kolac kolache hacek caron etymologie etymology prejimky loanwords",
+   "tecky": [
+    "czec1258"
+   ],
+   "pisma": [],
+   "fotky": {
+    "vozova-hradba": {
+     "soubor": "vozova-hradba.jpg",
+     "sirka": 826,
+     "vyska": 1100,
+     "autor": "",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:03-atl2021_arma-fogo-portatil-5_-_Image_207958.jpg",
+     "cs": "Husitská vozová hradba: na stanu kalich, na korouhvi bílý pták (snad husa), na vozech kuše a palné zbraně. Kresba z vojenského sborníku z doby kolem roku 1437, Rakouská národní knihovna ve Vídni (Cod. 3062).",
+     "en": "A Hussite wagon fort: a chalice on the tent, a white bird (perhaps a goose) on the banner, crossbows and firearms on the wagons. Drawing from a military manuscript of about 1437, Austrian National Library, Vienna (Cod. 3062)."
+    },
+    "tolar-lev": {
+     "soubor": "tolar-lev.jpg",
+     "sirka": 1164,
+     "vyska": 1100,
+     "autor": "NTNU Vitenskapsmuseet",
+     "licence": "CC BY 2.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Joachimsthaler_(19962171845).jpg",
+     "cs": "Jáchymovský tolar z roku 1525, strana s českým lvem a jménem krále Ludvíka Jagellonského. Minci našli roku 2000 v Norsku.",
+     "en": "A Joachimsthaler of 1525: the side with the Bohemian lion and the name of King Louis the Jagiellonian. The coin was found in Norway in 2000."
+    },
+    "tolar-joachim": {
+     "soubor": "tolar-joachim.jpg",
+     "sirka": 1148,
+     "vyska": 1100,
+     "autor": "NTNU Vitenskapsmuseet",
+     "licence": "CC BY 2.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Joachimsthaler_(19774165530).jpg",
+     "cs": "Druhá strana téže mince: svatý Jáchym nad erbem Šliků a letopočet 1525.",
+     "en": "The other side of the same coin: Saint Joachim above the arms of the Schlick family, with the date 1525."
+    },
+    "mincovna": {
+     "soubor": "mincovna.jpg",
+     "sirka": 1200,
+     "vyska": 795,
+     "autor": "Lubor Ferenc",
+     "licence": "CC BY-SA 3.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:J%C3%A1chymov_muzeum.jpg",
+     "cs": "Budova bývalé mincovny v Jáchymově, dnes muzeum.",
+     "en": "The former mint in Jáchymov, now a museum."
+    },
+    "capkove": {
+     "soubor": "capkove.jpg",
+     "sirka": 898,
+     "vyska": 701,
+     "autor": "",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Karel_Josef_Capkovi_radio.jpg",
+     "cs": "Josef Čapek (vlevo, s brýlemi) a Karel Čapek u rozhlasového přijímače.",
+     "en": "Josef Čapek (left, with glasses) and Karel Čapek at a radio set."
+    },
+    "rur-plakat": {
+     "soubor": "rur-plakat.jpg",
+     "sirka": 697,
+     "vyska": 1100,
+     "autor": "Federal Art Project (WPA), New York",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:R.U.R._by_Karel_%C4%8Capek_1939.jpg",
+     "cs": "Plakát k loutkovému uvedení R.U.R. v New Yorku v rámci Federal Theatre Project (režie Remo Bufano), sítotisk, 1939.",
+     "en": "Poster for a marionette production of R.U.R. in New York under the Federal Theatre Project (directed by Remo Bufano), screen print, 1939."
+    },
+    "rur-pariz": {
+     "soubor": "rur-pariz.jpg",
+     "sirka": 1200,
+     "vyska": 857,
+     "autor": "Henri Manuel",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:R._U._R._(Karel_%C4%8Capek)_-_Com%C3%A9die_des_Champs-%C3%89lys%C3%A9es,_26_mars_1924_-_photo_Henri_Manuel.jpg",
+     "cs": "R.U.R. v pařížském divadle Comédie des Champs-Élysées v režii Fjodora Komissarževského, 26. března 1924. Fotografie Henri Manuel.",
+     "en": "R.U.R. at the Comédie des Champs-Élysées in Paris, directed by Theodore Komisarjevsky, 26 March 1924. Photograph by Henri Manuel."
+    },
+    "rur-newyork": {
+     "soubor": "rur-newyork.jpg",
+     "sirka": 566,
+     "vyska": 442,
+     "autor": "",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Capek_RUR.jpg",
+     "cs": "Roboti na scéně: R.U.R. v podání zájezdového souboru newyorské Theatre Guild, 1928–1929.",
+     "en": "Robots on stage: R.U.R. performed by the Theatre Guild touring company from New York, 1928–1929."
+    }
+   },
+   "cs": {
+    "nazev": "Slova z češtiny ve světě",
+    "stitek": "Příběhy jazyků",
+    "podtitul": "Robot, dolar, houfnice, pistole, polka · co je doložené a co sporné",
+    "perex": "Čeština dala světovým jazykům jen několik slov, zato některá velmi rozšířená. Houfnice pochází ze zbraní husitských válek a podle převládajícího výkladu i pistole, dolar z mince ražené v Jáchymově, polka z tance, který vznikl v Čechách ve 30. letech 19. století, a robot ze hry Karla Čapka R.U.R. Ne všechno, co se o nich vypráví, je však doložené, a dolar dokonce není české slovo, ale německé.",
+    "fakta": [
+     [
+      "Patrně nejrozšířenější slovo",
+      "robot (hra R.U.R., 1920; slovo navrhl Josef Čapek)"
+     ],
+     [
+      "Nejstarší přejetí do angličtiny",
+      "houfnice a píšťala z husitských válek; německé aufeniz doloženo 1440"
+     ],
+     [
+      "Hlavní prostředník",
+      "němčina, odtud nizozemština, francouzština a angličtina"
+     ],
+     [
+      "Z Čech, ne z češtiny",
+      "dolar (německé Joachimsthaler podle Jáchymova)"
+     ],
+     [
+      "Sporný původ",
+      "název polky (Polka, nebo půlka); pistole z píšťaly je převládající, ne jediný výklad"
+     ]
+    ],
+    "nazvyTecek": {
+     "czec1258": "Čeština"
+    },
+    "oddily": [
+     {
+      "typ": "text",
+      "h": "Kudy slova odcházela",
+      "p": [
+       "Čeština patří k jazykům, které mnohem víc slov přejímaly, než jich daly jiným: v jejím slovníku jsou stovky slov z němčiny, latiny nebo francouzštiny. Do velkých západních jazyků jich odešlo jen několik (více jich převzaly sousední jazyky – polština, slovenština, lužická srbština, rakouská němčina). Starší z nich prošla nejdřív němčinou, sousedním jazykem, s nímž čeština sdílela stát, města i vojska, a teprve odtud se dostala do nizozemštiny, francouzštiny a angličtiny.",
+       "Slova, o nichž se mluví jako o „českých slovech ve světě“, nejsou všechna stejného druhu. Houfnice, polka nebo robot jsou česká slova, která převzaly jiné jazyky. Dolar pochází z českých zemí, ale ne z češtiny: je to zkrácené německé jméno mince ražené v Jáchymově. Semtex je obchodní název výrobku. A u několika slov, která se za česká vydávají, se český původ nepotvrdil.",
+       "U každého slova je proto třeba rozlišovat, co je doložené dobovými prameny, co je převládající výklad etymologů a co je jen jedna z možností nebo pozdější historka. Následující přehled tato rozlišení zachovává."
+      ]
+     },
+     {
+      "typ": "slova",
+      "h": "Slova z češtiny a z českých zemí",
+      "uvod": "Cesta slova je zjednodušená; uvedeny jsou jen hlavní mezistupně. Poslední sloupec říká, jak jistý je výklad.",
+      "hlavicka": [
+       "české slovo",
+       "cesta",
+       "podoba v jiných jazycích",
+       "jistota výkladu"
+      ],
+      "radky": [
+       [
+        "houfnice",
+        "husitské války (15. st.) → něm. aufeniz (doloženo 1440), Haubitze → niz. houwitser → angl.",
+        "angl. howitzer, něm. Haubitze, fr. obusier, rus. гаубица (gaubica)",
+        "doloženo"
+       ],
+       [
+        "píšťala",
+        "husitská ruční palná zbraň → něm. pitschale, Pistole → fr. pistolet → angl.",
+        "angl. pistol, něm. Pistole, fr. pistolet",
+        "převládající výklad; jiný spojuje slovo s italskou Pistoiou"
+       ],
+       [
+        "Joachimsthaler (česky tolar)",
+        "mince z Jáchymova (od 1519–1520) → něm. Taler → dolnoněm. daler, niz. daalder → angl.",
+        "angl. dollar, něm. Taler, slovin. tolar, rus. ефимок (jefimok)",
+        "doloženo; slovo je německé, ne české"
+       ],
+       [
+        "polka",
+        "tanec z Čech 30. let 19. st. → Praha, Paříž (asi 1840), Londýn (1844)",
+        "angl., něm., fr. polka, fin. polkka",
+        "tanec doložen; původ názvu sporný"
+       ],
+       [
+        "robot",
+        "Karel Čapek, R.U.R. (1920), slovo navrhl Josef Čapek; z robota „nucená práce“",
+        "angl., fr. robot, něm. Roboter, rus. робот (robot)",
+        "doloženo (vyjádření Karla Čapka z roku 1933)"
+       ],
+       [
+        "semtex",
+        "obchodní název výbušniny ze Semtína u Pardubic (od 1964 nebo 1966)",
+        "angl., něm., fr. Semtex",
+        "doloženo jako název výrobku"
+       ],
+       [
+        "koláč",
+        "čeští přistěhovalci v USA (19. st.)",
+        "am. angl. kolache",
+        "doloženo v amerických slovnících"
+       ],
+       [
+        "háček",
+        "odborný termín jazykovědy a typografie",
+        "angl. háček (vedle caron)",
+        "doloženo"
+       ]
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Houfnice a píšťala: zbraně husitských válek",
+      "p": [
+       "Nejstarší česká slova, která se rozšířila do západoevropských jazyků včetně angličtiny, přinesly husitské války (1419–1434/36). Starší přejetí zůstala v sousedních jazycích (např. něm. Petschaft „pečetidlo“ z č. pečeť, kolem 1300). Husité bojovali z vozových hradeb, pojízdných opevnění ze spojených vozů, a užívali v nich palné zbraně ve větší míře, než bylo v tehdejší Evropě obvyklé. S obávanými zbraněmi převzali sousedé i jejich jména.",
+       "Houfnice bylo krátké dělo s velkou ráží, které podle obvyklého výkladu dostalo jméno podle toho, že se jím střílelo do houfu, tedy do shluku nepřátel. Samo slovo houf je ovšem staré přejetí ze středohornoněmeckého hūfe (dnešní Haufen, hromada, dav), takže se slovo do němčiny vlastně vrátilo. Nejstarší německá podoba aufeniz je doložena v listině z roku 1440; později se ustálilo Haubitze. Z němčiny se slovo rozšířilo do většiny evropských jazyků: nizozemské houwitser dalo koncem 17. století anglické howitzer, z něm. Haubitze vycházejí i francouzské obusier, italské obice a ruské гаубица.",
+       "Píšťala znamenala v husitské době také lehkou ruční palnou zbraň, pojmenovanou podle tvaru hlavně. Podle převládajícího výkladu, který uvádějí německé etymologické slovníky (Kluge), přešlo slovo do němčiny v podobách jako pitschale nebo pitschole, z nichž se vyvinulo Pistole; odtud francouzské pistolet (doloženo kolem roku 1550) a anglické pistol (kolem roku 1570). Jiný výklad spojuje slovo s italským městem Pistoia, proslulým výrobou zbraní. Zastánci českého původu upozorňují, že německé podoby jsou doloženy dříve než italské pistola ve významu zbraně (to podle dostupných údajů až počátkem 17. století); spor ale za zcela uzavřený pokládat nelze."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "vozova-hradba",
+      "na-vysku": true
+     },
+     {
+      "typ": "text",
+      "h": "Dolar: slovo z Čech, ale ne z češtiny",
+      "p": [
+       "Kolem roku 1516 se v údolí v Krušných horách začalo těžit bohaté stříbro. Hrabata Šlikové tam založili horní město, které dostalo německé jméno Joachimsthal, „údolí svatého Jáchyma“ (Thal, dnes Tal, znamená údolí a je příbuzné s anglickým dale). Česky se mu říká Jáchymov. V letech 1519–1520 se tu začaly razit velké stříbrné mince, v němčině nazývané Joachimsthaler, tedy jáchymovské. Velké stříbrné mince razili už dřív v Tyrolsku (od roku 1486), jméno celé skupině ale dal až jáchymovský tolar.",
+       "Dlouhé jméno se brzy zkrátilo: podoba Taler je v němčině doložena od 30. let 16. století. Z němčiny pochází i české tolar. V dolnoněmeckých nářečích a v nizozemštině zněla mince daler, daalder; v angličtině je daler doloženo k polovině 16. století a kolem roku 1600 se změnilo v dollar. Angličtí osadníci v Americe pak takto označovali hlavně španělskou stříbrnou minci peso (Spanish dollar) a Spojené státy přijaly roku 1785 dolar za svou měnovou jednotku; zákon o ražbě mincí z roku 1792 ho pak přesně vymezil podle španělské mince.",
+       "Zatímco západní jazyky převzaly druhou část jména, do ruštiny se dostala první: ефимок (jefimok), podle Jáchyma. Ze stejného kořene pocházel i slovinský tolar, měna Slovinska v letech 1991–2006. Slovo dolar tedy vzniklo v českých zemích a jeho předek pojmenovává české město, jazykově je však německé. Hornickou krajinu Jáchymova zapsalo UNESCO roku 2019 na seznam světového dědictví jako součást Hornického regionu Krušnohoří."
+      ]
+     },
+     {
+      "typ": "galerie",
+      "h": "Jáchymovský tolar",
+      "f": [
+       "tolar-lev",
+       "tolar-joachim"
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "mincovna",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "Polka: tanec doložený, jméno sporné",
+      "p": [
+       "Polka, rychlý párový tanec ve dvoučtvrtečním taktu, vznikla v Čechách ve 30. letech 19. století. Kolem roku 1835 se tančila v pražských sálech a kolem roku 1840 ji podle obvyklého podání přinesl do Paříže pražský taneční mistr Johann Raab. V Londýně vyvolala roku 1844 takovou módu, že dobový dopis mluví o „polkománii“. S tancem se jeho jméno dostalo do většiny evropských jazyků a později i do Ameriky.",
+       "Původ jména je sporný. V anglických a dalších velkých slovnících se častěji uvádí výklad od slova Polka, tedy „polská žena“, případně „polský tanec“, spojovaný se sympatiemi k polskému listopadovému povstání let 1830–1831. Kulturní historik Čeněk Zíbrt (1895) dával přednost výkladu od slova půlka, podle krátkého polovičního kroku. Ani jeden výklad nemá přímou oporu v pramenech z doby vzniku tance.",
+       "Za nedoložené je třeba pokládat i vyprávění o vzniku tance, které se poprvé objevilo v pražském časopise Bohemia roku 1844 a které převzal Zíbrt: polku měla kolem roku 1830 vymyslet mladá venkovská dívka Anna Slezáková (rozená Chadimová) a učitel Josef Neruda ji zapsal a rozšířil. Jde o tradiční vyprávění, ne o doložený fakt."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Robot: slovo z divadla",
+      "p": [
+       "Divadelní hra Karla Čapka R.U.R. (Rossumovi univerzální roboti) vyšla knižně roku 1920. Světovou premiéru měla 2. ledna 1921 v Hradci Králové, 25. ledna 1921 ji uvedlo Národní divadlo v Praze. Roboti v ní nejsou stroje z kovu, ale uměle vyrobení lidé, levní a výkonní dělníci bez citů, kteří se nakonec proti lidstvu vzbouří.",
+       "Hra se rychle rozšířila: v říjnu 1922 ji uvedla newyorská Theatre Guild, v dubnu 1923 následoval Londýn a do roku 1923 byla přeložena do třiceti jazyků. S ní se po světě rozšířilo slovo robot, které v mnoha jazycích zatlačilo starší výrazy jako automat nebo android. Angličtina slovo nepřeložila a převzala ho v české podobě.",
+       "Základem je české robota, nucená práce, kterou poddaní odváděli vrchnosti; v českých a dalších rakouských zemích ji zrušil zákon ze 7. září 1848 (v Uhrách už dubnové zákony téhož roku). Slovo je praslovanské a podle etymologických slovníků je příbuzné se staročeským rob „otrok“ (církevněslovansky rab) i s německým Arbeit (práce). Slovo robota ve významu nucené práce přešlo ze slovanských jazyků už dříve do maďarštiny (robot) a do rakouské němčiny. V češtině se robot dodnes skloňuje dvojím způsobem: roboti ze sci-fi jako životné podstatné jméno (ti roboti), kuchyňské a průmyslové stroje spíš jako neživotné (ty roboty). Čapek sám užíval životné tvary."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "capkove"
+     },
+     {
+      "typ": "rameček",
+      "h": "Kdo slovo robot vymyslel",
+      "p": [
+       "Karel Čapek o tom napsal v Lidových novinách 24. prosince 1933. Umělé dělníky chtěl původně nazvat laboři (z latinského labor, práce), ale slovo mu připadalo „papírové“. Když se o tom radil s bratrem, malířem a spisovatelem Josefem Čapkem, Josef prý jen zamumlal „Tak jim řekni roboti“ – se štětcem v ústech – a maloval dál. Karel tak jako autora slova sám jmenoval bratra.",
+       "Jde o vzpomínku zapsanou s odstupem zhruba třinácti let. Odborné výklady vycházejí právě z ní; jiný dobový doklad není znám. Obecně rozšířené tvrzení, že slovo robot „vymyslel Karel Čapek“, je tedy nepřesné: Karel slovo uvedl do literatury, Josef ho podle Karlova svědectví navrhl."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "rur-plakat",
+      "na-vysku": true
+     },
+     {
+      "typ": "galerie",
+      "h": "R.U.R. na světových jevištích",
+      "f": [
+       "rur-pariz",
+       "rur-newyork"
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Semtex, kolache a háček",
+      "p": [
+       "Semtex je plastická trhavina, kterou vyvinuli chemici Stanislav Brebera a Radim Fukátko z chemického závodu v Semtíně, dnes části Pardubic. Název se obvykle vykládá jako spojení jména Semtín s koncovkou -ex (od explosive, výbušnina). Výroba začala roku 1964, podle jiných pramenů 1966. Do světových jazyků se slovo dostalo hlavně ve zpravodajství o teroristických útocích 80. let, mimo jiné o atentátu na let Pan Am 103 nad Lockerbie v prosinci 1988.",
+       "Jiná slova se udržela jen v menším okruhu. V americké angličtině, hlavně v Texasu a na Středozápadě, kam v 19. století mířili čeští vystěhovalci, se užívá kolache pro sladké kynuté pečivo s náplní; podoba pravděpodobně vychází z českého množného čísla koláče. Jazykovědci a typografové píší anglicky háček, česky „malý hák“, pro diakritické znaménko nad písmeny č, ř nebo š; vedle něj se užívá i termín caron. Obě slova uvádějí americké výkladové slovníky."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Co českého původu není",
+      "p": [
+       "Kolem českých slov ve světě koluje i řada tvrzení, která neplatí. Anglické hocus-pocus, kouzelnická formule doložená v angličtině od 17. století, se někdy spojuje s českým pokus; pro takový původ není žádný doklad. Pálenka slivovitz se v anglických seznamech „českých slov“ také objevuje, anglické slovníky ji ale obvykle odvozují ze srbochorvatského šljivovica.",
+       "Opatrnost je na místě i u slov, jejichž český původ je skutečný. Že dolar pochází z Jáchymova, je doložené, ale slovo samo je německé. Že pistole pochází z píšťaly, je převládající, ne jediný výklad. A že se polka jmenuje podle půlky, je jen jedna ze dvou hypotéz. Rozlišovat tyto stupně jistoty je pro etymologii stejně důležité jako samotný výsledek."
+      ]
+     },
+     {
+      "typ": "rameček",
+      "h": "Jak se dokládá původ slova",
+      "p": [
+       "Etymolog se nespokojí s tím, že si dvě slova znějí podobně. Hledá nejstarší datované doklady v každém jazyce (tak se zjistí, že německé aufeniz z roku 1440 je starší než anglické howitzer ze 17. století), sleduje, zda hláskové změny odpovídají známým zákonitostem, a zda cesta slova odpovídá doložené cestě věcí a lidí – husitských zbraní, jáchymovských mincí nebo divadelní hry.",
+       "Výsledky shrnují velké etymologické slovníky: pro češtinu Václav Machek a Jiří Rejzek, pro němčinu Friedrich Kluge, pro angličtinu Oxford English Dictionary, který u každého slova uvádí datované citace. Kde doklady chybějí, slovníky píší „nejasné“ nebo uvádějí několik možností. Historky o vzniku slov, jaké se vyprávějí o polce, tam mají místo jen tehdy, když je potvrdí dobový pramen."
+      ]
+     },
+     {
+      "typ": "osa",
+      "h": "Časová osa",
+      "udalosti": [
+       [
+        "1419–1434/36",
+        "Husitské války; ve vozových hradbách se uplatňují houfnice a píšťaly."
+       ],
+       [
+        "1440",
+        "Nejstarší doklad německé podoby aufeniz (houfnice)."
+       ],
+       [
+        "asi 1516",
+        "Počátek těžby stříbra v Jáchymovském údolí; Šlikové zakládají horní město Joachimsthal."
+       ],
+       [
+        "1519–1520",
+        "Začátek ražby jáchymovských tolarů."
+       ],
+       [
+        "30. léta 16. st.",
+        "V němčině doložena zkrácená podoba Taler."
+       ],
+       [
+        "kolem 1600",
+        "Anglické daler se mění v dollar."
+       ],
+       [
+        "1785 / 1792",
+        "Spojené státy přijímají dolar za měnovou jednotku; zákon o ražbě mincí ho roku 1792 vymezuje."
+       ],
+       [
+        "30. léta 19. st.",
+        "V Čechách vzniká polka; kolem roku 1840 v Paříži, 1844 v Londýně."
+       ],
+       [
+        "7. 9. 1848",
+        "Zrušení roboty v rakouských zemích."
+       ],
+       [
+        "1920",
+        "Vychází hra Karla Čapka R.U.R."
+       ],
+       [
+        "2. 1. 1921",
+        "Světová premiéra R.U.R. v Hradci Králové; 25. ledna Národní divadlo."
+       ],
+       [
+        "1922–1923",
+        "R.U.R. v New Yorku a v Londýně; slovo robot vstupuje do angličtiny."
+       ],
+       [
+        "24. 12. 1933",
+        "Karel Čapek v Lidových novinách jmenuje autorem slova robot bratra Josefa."
+       ],
+       [
+        "1964 / 1966",
+        "Začátek výroby semtexu v Semtíně u Pardubic (prameny se rozcházejí)."
+       ]
+      ]
+     },
+     {
+      "typ": "tecky",
+      "h": "Čeština na glóbu",
+      "uvod": "Klepnutím se jazyk ukáže na glóbu:"
+     },
+     {
+      "typ": "zdroje",
+      "h": "Zdroje a další četba",
+      "p": [
+       "Václav Machek: Etymologický slovník jazyka českého. Academia, 2. vyd. 1968.",
+       "Jiří Rejzek: Český etymologický slovník. Leda 2001.",
+       "Friedrich Kluge: Etymologisches Wörterbuch der deutschen Sprache. De Gruyter, 25. vyd. (zprac. Elmar Seebold) 2011.",
+       "Oxford English Dictionary. Oxford University Press (hesla robot, dollar, howitzer, pistol, polka).",
+       "Karel Čapek: O slově robot. Lidové noviny, 24. 12. 1933.",
+       "Čeněk Zíbrt: Jak se kdy v Čechách tancovalo. Praha 1895."
+      ]
+     }
+    ]
+   },
+   "en": {
+    "nazev": "Czech words in other languages",
+    "stitek": "Language stories",
+    "podtitul": "Robot, dollar, howitzer, pistol, polka · what is documented and what is disputed",
+    "perex": "Czech has given the world’s languages only a few words, but some of them have spread very widely. Howitzer goes back to the weapons of the Hussite Wars and, on the prevailing view, so does pistol; dollar to a coin struck in Jáchymov, polka to a dance that arose in Bohemia in the 1830s, and robot to Karel Čapek’s play R.U.R. Not everything told about these words is documented, however – and dollar is in fact not a Czech word at all, but a German one.",
+    "fakta": [
+     [
+      "Probably the most widespread word",
+      "robot (the play R.U.R., 1920; the word was suggested by Josef Čapek)"
+     ],
+     [
+      "Oldest loans into English",
+      "houfnice (howitzer) and píšťala (pistol) from the Hussite Wars; German aufeniz attested 1440"
+     ],
+     [
+      "Main intermediary",
+      "German, and from there Dutch, French and English"
+     ],
+     [
+      "From Bohemia, not from Czech",
+      "dollar (German Joachimsthaler, after Jáchymov)"
+     ],
+     [
+      "Disputed origin",
+      "the name polka (Polka ‘Polish woman’ or půlka ‘half’); pistol from píšťala is the prevailing, not the only, view"
+     ]
+    ],
+    "nazvyTecek": {
+     "czec1258": "Czech"
+    },
+    "oddily": [
+     {
+      "typ": "text",
+      "h": "How words left Bohemia",
+      "p": [
+       "Czech has taken in far more words than it has given away: its vocabulary holds hundreds of loans from German, Latin and French. Only a handful reached the major western languages (more were taken over by neighbouring languages – Polish, Slovak, Sorbian and Austrian German). The older ones passed through German first – the neighbouring language with which Czech shared a state, towns and armies – and only then reached Dutch, French and English.",
+       "The words usually listed as “Czech words abroad” are not all of one kind. Houfnice, polka and robot are Czech words borrowed by other languages. Dollar comes from the Czech lands but not from the Czech language: it is a shortened German name for a coin struck in Jáchymov. Semtex is a trade name. And for several words said to be Czech, a Czech origin has not been confirmed.",
+       "For each word one has to separate what period sources document, what is the prevailing view of etymologists, and what is only one possibility or a later anecdote. The overview below keeps these distinctions."
+      ]
+     },
+     {
+      "typ": "slova",
+      "h": "Words from Czech and from the Czech lands",
+      "uvod": "Each route is simplified to its main stages. The last column says how secure the explanation is.",
+      "hlavicka": [
+       "Czech word",
+       "route",
+       "forms in other languages",
+       "certainty"
+      ],
+      "radky": [
+       [
+        "houfnice (a short cannon)",
+        "Hussite Wars (15th c.) → German aufeniz (attested 1440), Haubitze → Dutch houwitser → English",
+        "English howitzer, German Haubitze, French obusier, Russian гаубица (gaubitsa)",
+        "documented"
+       ],
+       [
+        "píšťala (pipe; a hand gun)",
+        "Hussite hand firearm → German pitschale, Pistole → French pistolet → English",
+        "English pistol, German Pistole, French pistolet",
+        "prevailing view; another links the word to Pistoia in Italy"
+       ],
+       [
+        "Joachimsthaler (Czech tolar)",
+        "coin from Jáchymov (from 1519–1520) → German Taler → Low German daler, Dutch daalder → English",
+        "English dollar, German Taler, Slovene tolar, Russian ефимок (yefimok)",
+        "documented; the word is German, not Czech"
+       ],
+       [
+        "polka",
+        "dance from Bohemia, 1830s → Prague, Paris (c. 1840), London (1844)",
+        "English, German, French polka, Finnish polkka",
+        "the dance is documented; the origin of the name is disputed"
+       ],
+       [
+        "robot",
+        "Karel Čapek, R.U.R. (1920), word suggested by Josef Čapek; from robota ‘forced labour’",
+        "English, French robot, German Roboter, Russian робот (robot)",
+        "documented (Karel Čapek’s own account, 1933)"
+       ],
+       [
+        "semtex",
+        "trade name of an explosive from Semtín near Pardubice (from 1964 or 1966)",
+        "English, German, French Semtex",
+        "documented as a product name"
+       ],
+       [
+        "koláč (a filled pastry)",
+        "Czech immigrants in the United States (19th c.)",
+        "American English kolache",
+        "listed in American dictionaries"
+       ],
+       [
+        "háček (little hook)",
+        "technical term in linguistics and typography",
+        "English háček (alongside caron)",
+        "documented"
+       ]
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Howitzer and pistol: weapons of the Hussite Wars",
+      "p": [
+       "The oldest Czech words to spread into western European languages, English included, came with the Hussite Wars (1419–1434/36). Earlier loans stayed in neighbouring languages (for example German Petschaft ‘seal, signet’ from Czech pečeť, around 1300). The Hussites fought from wagon forts – mobile fortifications of wagons chained together – and used firearms on a larger scale than was usual in Europe at the time. Their neighbours adopted the names of these feared weapons along with the weapons themselves.",
+       "A houfnice was a short cannon of large calibre; according to the usual explanation it was named for firing into a houf, a crowd or cluster of enemies. The word houf is itself an old loan from Middle High German hūfe (modern Haufen, ‘heap, crowd’), so in a sense the word went back to German. The earliest German form, aufeniz, is recorded in a document of 1440; later the form Haubitze became established. From German the word spread to most European languages: Dutch houwitser gave English howitzer in the late 17th century, and French obusier, Italian obice and Russian гаубица also go back to German Haubitze.",
+       "In the Hussite period píšťala, literally ‘pipe, whistle’, also meant a light hand firearm, named after the shape of its barrel. According to the prevailing view, found in the German etymological dictionaries (Kluge), the word passed into German in forms such as pitschale or pitschole, which developed into Pistole; from there came French pistolet (attested around 1550) and English pistol (around 1570). Another explanation links the word to the Italian town of Pistoia, known for its gunsmiths. Supporters of the Czech origin point out that the German forms are attested earlier than Italian pistola in the sense of a weapon (by available accounts not until the early 17th century), but the question cannot be regarded as entirely settled."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "vozova-hradba",
+      "na-vysku": true
+     },
+     {
+      "typ": "text",
+      "h": "Dollar: from Bohemia, but not from Czech",
+      "p": [
+       "Around 1516 rich silver began to be mined in a valley of the Ore Mountains. The counts of Schlick founded a mining town there, which received the German name Joachimsthal, ‘Saint Joachim’s valley’ (Thal, now spelled Tal, means ‘valley’ and is related to English dale). In Czech the town is called Jáchymov. In 1519–1520 large silver coins began to be struck there, known in German as Joachimsthaler, ‘of Joachimsthal’. Large silver coins had been minted earlier in Tyrol (from 1486), but it was the Joachimsthaler that gave its name to the whole type.",
+       "The long name was soon shortened: the form Taler is recorded in German from the 1530s. Czech tolar also comes from German. In Low German dialects and in Dutch the coin was called daler, daalder; English daler is attested by the mid-16th century and became dollar around 1600. English settlers in America then used the word above all for the Spanish silver peso (the Spanish dollar), and in 1785 the United States adopted the dollar as its unit of currency; the Coinage Act of 1792 then defined it on the model of the Spanish coin.",
+       "While the western languages adopted the second half of the name, Russian took the first: ефимок (yefimok), after Joachim. The Slovenian tolar, Slovenia’s currency from 1991 to 2006, came from the same root. So the dollar was born in the Czech lands and its ancestor names a Czech town, but linguistically the word is German. In 2019 UNESCO inscribed the mining landscape of Jáchymov on the World Heritage List as part of the Erzgebirge/Krušnohoří Mining Region."
+      ]
+     },
+     {
+      "typ": "galerie",
+      "h": "The Joachimsthaler",
+      "f": [
+       "tolar-lev",
+       "tolar-joachim"
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "mincovna",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "Polka: the dance is documented, the name is not",
+      "p": [
+       "The polka, a lively couple dance in 2/4 time, arose in Bohemia in the 1830s. By around 1835 it was danced in the ballrooms of Prague, and around 1840, according to the usual account, the Prague dancing master Johann Raab brought it to Paris. In London in 1844 it became such a craze that a letter of the time speaks of “polkamania”. The name travelled with the dance into most European languages and later to the Americas.",
+       "The origin of the name is disputed. Major English dictionaries more often cite the derivation from Polka, ‘Polish woman’ – that is, ‘Polish dance’ – linked with sympathy for the Polish November Uprising of 1830–1831. The cultural historian Čeněk Zíbrt (1895) preferred a derivation from půlka, ‘half’, after the short half-step of the dance. Neither explanation is directly supported by sources from the time the dance appeared.",
+       "The story of how the dance was invented must also be treated as undocumented. It first appeared in the Prague periodical Bohemia in 1844 and was retold by Zíbrt: around 1830 a young country girl, Anna Slezáková (née Chadimová), was said to have made up the polka, and the teacher Josef Neruda wrote it down and spread it. It is a traditional tale, not an established fact."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Robot: a word from the theatre",
+      "p": [
+       "Karel Čapek’s play R.U.R. (Rossumovi univerzální roboti, ‘Rossum’s Universal Robots’) was published in 1920. It had its world premiere on 2 January 1921 in Hradec Králové, and the National Theatre in Prague staged it on 25 January 1921. Its robots are not metal machines but artificially made people – cheap, efficient workers without feelings who finally rise up against humanity.",
+       "The play spread quickly: the Theatre Guild staged it in New York in October 1922, London followed in April 1923, and by 1923 it had been translated into thirty languages. With it the word robot went round the world, displacing older terms such as automaton or android in many languages. English did not translate the word but took it over in its Czech form.",
+       "At its root is Czech robota, the forced labour that serfs owed their lords; in the Czech and other Austrian lands it was abolished by a law of 7 September 1848 (in Hungary already by the April Laws of the same year). The word is Common Slavic and, according to the etymological dictionaries, related both to Old Czech rob ‘slave’ (Church Slavonic rab) and to German Arbeit ‘work’. In the sense of forced labour, robota had long before passed from the Slavic languages into Hungarian (robot) and Austrian German. In Czech, robot is still declined in two ways: science-fiction robots as an animate noun (ti roboti), kitchen and industrial machines rather as an inanimate one (ty roboty). Čapek himself used the animate forms."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "capkove"
+     },
+     {
+      "typ": "rameček",
+      "h": "Who coined the word robot",
+      "p": [
+       "Karel Čapek told the story in the newspaper Lidové noviny on 24 December 1933. He had first wanted to call his artificial workers laboři (from Latin labor, ‘work’), but the word struck him as bookish. When he consulted his brother, the painter and writer Josef Čapek, Josef, a brush in his mouth, merely muttered ‘Call them roboti’ and went on painting. Karel thus named his brother as the author of the word.",
+       "This is a recollection written down some thirteen years after the event. Scholarly accounts rest on it; no other contemporary evidence is known. The common statement that Karel Čapek “invented” the word robot is therefore imprecise: Karel brought the word into literature; Josef, on Karel’s testimony, suggested it."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "rur-plakat",
+      "na-vysku": true
+     },
+     {
+      "typ": "galerie",
+      "h": "R.U.R. on the world’s stages",
+      "f": [
+       "rur-pariz",
+       "rur-newyork"
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Semtex, kolache and háček",
+      "p": [
+       "Semtex is a plastic explosive developed by the chemists Stanislav Brebera and Radim Fukátko at the chemical works in Semtín, now part of Pardubice. The name is usually explained as a combination of Semtín and the ending -ex (from explosive). Production began in 1964, or in 1966 according to other sources. The word entered the world’s languages mainly through news of terrorist attacks in the 1980s, among them the bombing of Pan Am Flight 103 over Lockerbie in December 1988.",
+       "Other words have survived only in narrower circles. In American English, especially in Texas and the Midwest, where Czech emigrants settled in the 19th century, kolache is used for a sweet yeast pastry with a filling; the form probably reflects the Czech plural koláče. Linguists and typographers use the word háček, Czech for ‘little hook’, for the diacritic over letters such as č, ř or š; the term caron is also used. Both words appear in American dictionaries."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "What is not of Czech origin",
+      "p": [
+       "Several claims about Czech words abroad do not hold. English hocus-pocus, a conjuror’s formula attested in English from the 17th century, is sometimes linked with Czech pokus, ‘attempt, experiment’; there is no evidence for such an origin. Slivovitz, plum brandy, also appears in English lists of “Czech words”, but English dictionaries usually derive it from Serbo-Croatian šljivovica.",
+       "Caution is also needed with words whose Czech origin is genuine. That the dollar comes from Jáchymov is documented, but the word itself is German. That pistol comes from píšťala is the prevailing view, not the only one. And that the polka is named after půlka, ‘half’, is only one of two hypotheses. Keeping these degrees of certainty apart matters as much in etymology as the result itself."
+      ]
+     },
+     {
+      "typ": "rameček",
+      "h": "How the origin of a word is established",
+      "p": [
+       "An etymologist is not satisfied that two words sound alike. They look for the earliest dated attestations in each language (which shows, for example, that German aufeniz of 1440 is older than English howitzer of the 17th century), check whether the sound changes match known regularities, and ask whether the route of the word matches the documented movement of things and people – Hussite weapons, Jáchymov coins or a stage play.",
+       "The results are summed up in the great etymological dictionaries: for Czech those of Václav Machek and Jiří Rejzek, for German Friedrich Kluge, for English the Oxford English Dictionary, which gives dated quotations for every word. Where evidence is lacking, the dictionaries say “obscure” or list several possibilities. Stories about how words arose, such as those told about the polka, belong there only when a contemporary source confirms them."
+      ]
+     },
+     {
+      "typ": "osa",
+      "h": "Timeline",
+      "udalosti": [
+       [
+        "1419–1434/36",
+        "The Hussite Wars; howitzers and hand guns are used in wagon forts."
+       ],
+       [
+        "1440",
+        "Earliest record of the German form aufeniz (houfnice)."
+       ],
+       [
+        "c. 1516",
+        "Silver mining begins in the Joachimsthal valley; the Schlicks found the mining town."
+       ],
+       [
+        "1519–1520",
+        "Minting of the Joachimsthaler begins."
+       ],
+       [
+        "1530s",
+        "The shortened form Taler is recorded in German."
+       ],
+       [
+        "c. 1600",
+        "English daler becomes dollar."
+       ],
+       [
+        "1785 / 1792",
+        "The United States adopts the dollar as its unit of currency; the Coinage Act of 1792 defines it."
+       ],
+       [
+        "1830s",
+        "The polka arises in Bohemia; Paris around 1840, London 1844."
+       ],
+       [
+        "7 Sept 1848",
+        "Robota (serf labour) is abolished in the Austrian lands."
+       ],
+       [
+        "1920",
+        "Karel Čapek’s play R.U.R. is published."
+       ],
+       [
+        "2 Jan 1921",
+        "World premiere of R.U.R. in Hradec Králové; the National Theatre follows on 25 January."
+       ],
+       [
+        "1922–1923",
+        "R.U.R. in New York and London; the word robot enters English."
+       ],
+       [
+        "24 Dec 1933",
+        "In Lidové noviny Karel Čapek names his brother Josef as the author of the word robot."
+       ],
+       [
+        "1964 / 1966",
+        "Production of Semtex begins in Semtín near Pardubice (sources differ)."
+       ]
+      ]
+     },
+     {
+      "typ": "tecky",
+      "h": "Czech on the globe",
+      "uvod": "Tap to show the language on the globe:"
+     },
+     {
+      "typ": "zdroje",
+      "h": "Sources and further reading",
+      "p": [
+       "Václav Machek: Etymologický slovník jazyka českého. Academia, 2nd ed. 1968.",
+       "Jiří Rejzek: Český etymologický slovník. Leda 2001.",
+       "Friedrich Kluge: Etymologisches Wörterbuch der deutschen Sprache. De Gruyter, 25th ed. (rev. Elmar Seebold) 2011.",
+       "Oxford English Dictionary. Oxford University Press (entries robot, dollar, howitzer, pistol, polka).",
+       "Karel Čapek: O slově robot [On the word robot]. Lidové noviny, 24 December 1933.",
+       "Čeněk Zíbrt: Jak se kdy v Čechách tancovalo [How people danced in Bohemia]. Prague 1895."
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "obnova-jazyku",
+   "sekce": "pribehy",
+   "skupina": "lide",
+   "adresa": {
+    "cs": "obnova-jazyku",
+    "en": "language-revival"
+   },
+   "krajina": "obnova",
+   "hledat": "obnova jazyku jazyky ktere se vraceji revitalizace revitalisation revitalization language revival languages coming back ohrozene jazyky endangered languages unesco jazykovy posun language shift jazykove hnizdo language nest imerzni skola immersion school novi mluvci new speakers probouzeny jazyk awakening velstina welsh cymraeg wales welsh language act maorstina maori te reo kohanga reo kura kaupapa te wiki o te reo manstina manx gaelg ned maddrell bunscoill ghaelgagh isle of man ostrov man hebrejstina hebrew ivrit ben jehuda ben yehuda",
+   "tecky": [
+    "wels1247",
+    "maor1246",
+    "manx1243",
+    "hebr1245"
+   ],
+   "pisma": [
+    "Noto Serif Hebrew"
+   ],
+   "fotky": {
+    "caernarfon": {
+     "soubor": "caernarfon.jpg",
+     "sirka": 702,
+     "vyska": 1060,
+     "autor": "",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Welsh_bilingual_road_sign_in_Caernarfon.jpg",
+     "cs": "Dvojjazyčný směrový ukazatel v Caernarfonu na severozápadě Walesu: velšský text stojí nad anglickým (Parcio ar gyfer canol y dref – Parking for town centre).",
+     "en": "A bilingual direction sign in Caernarfon, north-west Wales, with the Welsh text above the English (Parcio ar gyfer canol y dref – Parking for town centre)."
+    },
+    "cardiff": {
+     "soubor": "cardiff.jpg",
+     "sirka": 714,
+     "vyska": 1100,
+     "autor": "Dominic Nelson",
+     "licence": "CC BY-SA 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Bilingual_English-Welsh_no_parking_sign.jpg",
+     "cs": "Dvojjazyčný zákaz parkování na náměstí Loudoun Square v cardiffské čtvrti Butetown: Dim Parcio – No Parking.",
+     "en": "A bilingual no-parking sign on Loudoun Square in the Butetown district of Cardiff: Dim Parcio – No Parking."
+    },
+    "hongi": {
+     "soubor": "hongi.jpg",
+     "sirka": 1200,
+     "vyska": 800,
+     "autor": "US Embassy New Zealand",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Te_Wiki_o_te_Reo_M%C4%81ori_Reception_at_Wellington,_New_Zealand_on_19_September_2024_-_8.jpg",
+     "cs": "Pozdrav hongi, přitisknutí nosu a čela, na recepci k Týdnu maorského jazyka (Te Wiki o te Reo Māori) ve Wellingtonu 19. září 2024. Muž vlevo má tetování obličeje v maorském stylu (moko).",
+     "en": "A hongi, the greeting in which two people press noses and foreheads, at a reception for Māori Language Week (Te Wiki o te Reo Māori) in Wellington on 19 September 2024. The man on the left has a Māori-style facial tattoo (moko)."
+    },
+    "bunscoill": {
+     "soubor": "bunscoill.jpg",
+     "sirka": 1200,
+     "vyska": 900,
+     "autor": "Simon Ager",
+     "licence": "CC BY 2.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Bunscoill_Ghaelgagh.jpg",
+     "cs": "Základní škola Bunscoill Ghaelgagh v St John's na ostrově Man, kde se vyučuje v manštině. Název školy je na tabuli na průčelí.",
+     "en": "The Bunscoill Ghaelgagh, a Manx-medium primary school in St John's on the Isle of Man. The school's name is on the board on the façade."
+    }
+   },
+   "cs": {
+    "nazev": "Jazyky, které se vracejí",
+    "stitek": "Příběhy jazyků",
+    "podtitul": "Revitalizace jazyků · Wales, Nový Zéland, ostrov Man a Izrael",
+    "perex": "Jazyky obvykle nezanikají náhle: společenství postupně přechází na jiný jazyk a rodiče přestanou ten původní předávat dětem. Revitalizace se snaží tento přenos obnovit – předškolními zařízeními a školami v ohroženém jazyce, zákony, médii i kurzy pro dospělé. Velština, maorština a manština ukazují tři rozdílná východiska a tři rozdílné výsledky. Hebrejština je jediný obecně uznávaný případ, kdy se jazyk bez rodilých mluvčích znovu stal mateřským jazykem milionů lidí.",
+    "fakta": [
+     [
+      "Téma",
+      "revitalizace (oživování) ohrožených jazyků"
+     ],
+     [
+      "Hlavní případy",
+      "velština (Wales), maorština (Nový Zéland), manština (ostrov Man); hebrejština jako výjimečný případ"
+     ],
+     [
+      "Nástroje",
+      "jazyková hnízda, imerzní školy, úřední status, média, kurzy pro dospělé"
+     ],
+     [
+      "Stupnice",
+      "UNESCO: bezpečný, zranitelný, jednoznačně ohrožený, vážně ohrožený, kriticky ohrožený, vymřelý; v atlase navíc probouzený"
+     ],
+     [
+      "V atlase",
+      "velština zranitelná, maorština jednoznačně ohrožená, manština probouzená, moderní hebrejština bezpečná (podle Glottologu)"
+     ]
+    ],
+    "nazvyTecek": {
+     "wels1247": "Velština",
+     "maor1246": "Maorština",
+     "manx1243": "Manština",
+     "hebr1245": "Hebrejština (moderní)"
+    },
+    "oddily": [
+     {
+      "typ": "text",
+      "h": "Jak jazyky ustupují",
+      "p": [
+       "Většina jazyků, které dnes ubývají, nemizí proto, že by jejich mluvčí vymřeli, ale proto, že společenství postupně přechází na jiný, prestižnější nebo užitečnější jazyk. Jazykověda mluví o jazykovém posunu (language shift). Rozhodující chvíle nastává, když rodiče přestanou mluvit původním jazykem na své děti. Přerušený přenos mezi generacemi se projeví se zpožděním: jazyk ještě desítky let žije mezi dospělými a starými lidmi, ale nemá mladé mluvčí, kteří by ho předali dál.",
+       "Míru ohrožení nejčastěji popisuje šestistupňová stupnice UNESCO: bezpečný, zranitelný, jednoznačně ohrožený, vážně ohrožený, kriticky ohrožený a vymřelý jazyk. Skupina odborníků, kterou UNESCO pověřilo, roku 2003 navrhla devět měřítek vitality. Na prvním místě stojí právě přenos mezi generacemi, dále například počet mluvčích a jejich podíl v populaci, oblasti, v nichž se jazyk užívá, a postoje společenství i státu. Tento atlas přebírá stupně z Glottologu, který je na stupnici UNESCO převádí, a navíc odlišuje jazyky probouzené (awakening): bez rodilých mluvčích, ale znovu se učí a užívají.",
+       "Revitalizace (oživování) je cílené úsilí tento vývoj zastavit nebo zvrátit. Americký sociolingvista Joshua Fishman v knize Reversing Language Shift (1991) zdůraznil, že školy, úřady a média nestačí, pokud se jazyk znovu nestane řečí domácností a sousedství. Tři hlavní případy na této stránce – velština, maorština a manština – začínaly z velmi rozdílných pozic."
+      ]
+     },
+     {
+      "typ": "pojmy",
+      "h": "Základní pojmy",
+      "uvod": "Pojmy, se kterými pracuje výzkum ohrožených jazyků a tato stránka:",
+      "pojmy": [
+       [
+        "Jazykový posun",
+        "Postupný přechod společenství od jednoho jazyka k jinému, obvykle většinovému. Probíhá přes období dvojjazyčnosti, kdy původní jazyk ustupuje z úřadů, škol a nakonec i z rodin.",
+        "Maoři, kteří se po druhé světové válce stěhovali do měst, přecházeli na angličtinu a jejich děti už často maorsky nemluvily."
+       ],
+       [
+        "Přenos mezi generacemi",
+        "Předávání jazyka rodiči a prarodiči dětem jako jazyka mateřského. V dokumentu UNESCO (2003) první a nejčastěji používané měřítko vitality; malý jazyk, který se doma stále předává, může být stabilnější než velký jazyk, který se předávat přestal.",
+        "Na ostrově Man přestávali rodiče v 19. století mluvit na děti mansky, protože angličtinu pokládali za užitečnější."
+       ],
+       [
+        "Stupnice UNESCO",
+        "Šest stupňů od bezpečného po vymřelý podle Atlasu ohrožených jazyků světa (Moseley 2010). Zranitelným jazykem děti ještě mluví, ale jen v některých oblastech života; jednoznačně ohrožený se děti doma už neučí; u kriticky ohroženého jsou nejmladšími mluvčími prarodiče a starší a mluví jím jen částečně a zřídka.",
+        "V tomto atlase (podle Glottologu) je velština zranitelná, maorština jednoznačně ohrožená, manština probouzená a moderní hebrejština bezpečná."
+       ],
+       [
+        "Probouzený jazyk",
+        "Jazyk, který ztratil rodilé mluvčí, ale znovu se učí a užívá, obvykle na základě písemných pramenů a nahrávek. Anglicky awakening; blízký pojem je sleeping, spící jazyk – mnozí autoři se vyhýbají slovu „mrtvý“, protože jazyk lze znovu probudit. Tento atlas ukazuje probouzené jazyky jako zvláštní stupeň; na stupnici Glottologu, převedené na stupnici UNESCO, patří mezi vymřelé. UNESCO takové jazyky někdy hodnotí jinak.",
+        "Manština a kornština: v tomto atlase probouzené, UNESCO je dnes vede jako kriticky ohrožené."
+       ],
+       [
+        "Jazykové hnízdo",
+        "Předškolní zařízení, v němž s malými dětmi mluví celý den jen ohroženým jazykem jeho starší mluvčí. Vychází z toho, že malé děti si jazyk osvojí přirozeně, pokud ho slyší dost často.",
+        "Maorská kōhanga reo (doslova „hnízdo jazyka“) od roku 1982; podle jejich vzoru vznikla například havajská Pūnana Leo."
+       ],
+       [
+        "Imerzní škola",
+        "Škola, v níž se ohroženým jazykem vyučují všechny nebo téměř všechny předměty, ne jen jazyk sám (z angl. immersion, ponoření).",
+        "Maorské kura kaupapa Māori, manská Bunscoill Ghaelgagh, velšské školy s velštinou jako vyučovacím jazykem."
+       ],
+       [
+        "Noví mluvčí",
+        "Lidé, kteří se jazyk naučili mimo rodinu – ve škole, v kurzech nebo sami – a aktivně ho používají. U oživovaných jazyků často tvoří většinu mluvčích a jejich řeč se od řeči posledních rodilých mluvčích může lišit výslovností i slovní zásobou.",
+        "Téměř všichni dnešní mluvčí manštiny; také mnozí mladí mluvčí velštiny a maorštiny, kteří se jazyk naučili ve škole."
+       ]
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Velština: menšina ve vlastní zemi",
+      "p": [
+       "Velština (Cymraeg) je keltský jazyk britonské větve, příbuzný bretonštině a kornštině, a ve Walesu se jí mluví nepřetržitě od raného středověku. Zákony z let 1535 a 1542 však začlenily Wales do anglického právního systému a první z nich vyhradil úřady lidem, kteří užívají angličtinu. Velšské písemnictví přesto nepřestalo existovat; podle převládajícího názoru k tomu významně přispěl překlad Bible Williama Morgana z roku 1588, který se stal vzorem spisovného jazyka.",
+       "V 19. století se z velštiny stal jazyk, s nímž škola nepočítala. Vládní zpráva o stavu školství ve Walesu z roku 1847 hanlivě posuzovala velštinu i mravy Velšanů; ve Walesu vešla ve známost jako Zrada modrých knih (Brad y Llyfrau Gleision). Ve školách se učilo anglicky i tam, kde děti anglicky téměř nerozuměly, a některé školy užívaly tzv. Welsh Not, dřevěnou destičku, kterou musel nosit žák přistižený při velštině. Výuku angličtiny přitom podporovala i řada rodičů, kteří v ní viděli cestu k lepšímu uplatnění.",
+       "Ústup zachycuje sčítání lidu. Roku 1891 mluvilo velšsky 54 % obyvatel Walesu starších tří let (910 289 lidí), roku 1981 už jen 19 % (503 532) – to je nejnižší absolutní počet v řadě sčítání. Velština však nikdy nepřestala být mateřským jazykem části dětí, zejména na severu a západě země."
+      ]
+     },
+     {
+      "typ": "galerie",
+      "h": "Dvojjazyčné nápisy ve Walesu",
+      "f": [
+       "caernarfon",
+       "cardiff"
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Velština: školy, televize a zákony",
+      "p": [
+       "Obnova začala ve školství. Roku 1939 založil Ifan ab Owen Edwards v Aberystwythu první základní školu s velštinou jako vyučovacím jazykem (Ysgol Gymraeg Aberystwyth), roku 1956 vznikla v Rhylu první taková střední škola (Ysgol Glan Clwyd). Roku 1962 byla založena Společnost velšského jazyka (Cymdeithas yr Iaith Gymraeg), která kampaněmi, včetně občanské neposlušnosti, prosazovala velštinu na úřadech, na dopravních značkách i ve vysílání. Roku 1982 začala vysílat velšská televize S4C.",
+       "Následovaly zákony. Zákon o velštině z roku 1967 zaručil právo mluvit velšsky v soudním řízení ve Walesu. Zákon o velštině z roku 1993 (Welsh Language Act) zakotvil zásadu, že se ve veřejné správě a soudnictví ve Walesu má s velštinou a angličtinou zacházet rovnocenně, pokud je to rozumné a proveditelné; zřídil Radu pro velštinu (Welsh Language Board) a uložil veřejným institucím připravit jazykové plány. Předpis tehdejšího Národního shromáždění pro Wales z roku 2011 (Welsh Language (Wales) Measure 2011) dal velštině výslovně úřední status a místo rady zřídil úřad komisaře pro velštinu, který může vymáhat povinnosti úřadů a některých firem.",
+       "Při sčítání roku 2021 uvedlo, že umí mluvit velšsky, 538 300 obyvatel Walesu starších tří let, tedy 17,8 %. Je to víc než v letech 1981 a 1991, podíl je však nejnižší v historii sčítání a oproti roku 2001 (20,8 %) klesl. Výběrová šetření, například Annual Population Survey, dávají trvale vyšší čísla, hlavně proto, že se ptají jinak a lidé svou znalost hodnotí jinak. Velšská vláda si ve strategii Cymraeg 2050 stanovila cíl milionu mluvčích do roku 2050."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Maorština: od většinového jazyka k menšině",
+      "p": [
+       "Maorština (te reo Māori) je východopolynéský jazyk původních obyvatel Nového Zélandu a nejjižnější člen austronéské rodiny. V 19. století jí mluvila většina Maorů a ve venkovských oblastech ji znaly i některé děti evropských osadníků. Školská politika však prosazovala angličtinu: nařízení o školství z roku 1847 ji stanovilo hlavním jazykem škol a na počátku 20. století byli maorští žáci za maorštinu ve třídě i na hřišti trestáni, často i tělesně. Mnozí rodiče to přijímali, protože chtěli, aby jejich děti uspěly v anglicky mluvící společnosti.",
+       "Až do druhé světové války byla maorština pro většinu Maorů prvním jazykem. Úbytek se zrychlil po válce, kdy se Maoři hromadně stěhovali do měst a děti vyrůstaly daleko od prarodičů, kteří v rodinách tradičně hráli velkou roli. V 80. letech mluvilo maorsky na úrovni rodilého mluvčího méně než 20 % Maorů a mnozí z nich jazyk doma nepoužívali. Už v 70. letech proto skupiny mladých Maorů, mezi nimi Ngā Tamatoa, prosazovaly výuku maorštiny ve školách; roku 1972 byla parlamentu předána petice s desítkami tisíc podpisů. Od roku 1975 se každoročně koná Týden maorského jazyka (Te Wiki o te Reo Māori)."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "hongi",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "Hnízda, školy a úřední jazyk",
+      "p": [
+       "Nejznámějším nástrojem maorské obnovy jsou kōhanga reo, doslova „hnízda jazyka“. První vzniklo roku 1982 ve Wainuiomatě u Wellingtonu a o tři roky později jich bylo přes 300. Jsou to předškolní zařízení pro děti do šesti let, kde se mluví výhradně maorsky; vedou je samy rodiny (whānau) za účasti vážených starších (kaumātua). Na hnízda navázaly školy kura kaupapa Māori s maorštinou jako vyučovacím jazykem, první roku 1985; jejich postavení zakotvil zákon o školství z roku 1989. Myšlenku jazykových hnízd převzala i další společenství, například Havajci (Pūnana Leo).",
+       "Roku 1986 dospěl tribunál Waitangi, který posuzuje nároky Maorů vyplývající ze smlouvy z Waitangi (1840), k závěru, že maorský jazyk je taonga, poklad chráněný touto smlouvou. Parlament pak přijal zákon o maorském jazyce z roku 1987 (Māori Language Act), který z maorštiny učinil úřední jazyk, zaručil právo užívat ji před soudy a zřídil Komisi pro maorský jazyk (dnes Te Taura Whiri i te Reo Māori). Roku 2016 ho nahradil zákon Te Ture mō Te Reo Māori.",
+       "Při sčítání roku 2023 uvedlo 213 849 obyvatel Nového Zélandu (4,3 %), že v maorštině dokážou vést rozhovor o běžných věcech; roku 2013 jich bylo 148 395. Mezi lidmi, kteří se hlásí k maorskému etniku, to bylo 20,5 %. Úroveň těchto mluvčích se velmi liší a jen menšina užívá maorštinu doma jako hlavní jazyk. Tribunál Waitangi roku 2011 upozornil, že po skutečném oživení v 80. a první polovině 90. let jazyk opět slábne, mimo jiné proto, že ubývá starších rodilých mluvčích, kteří obnovu nesli."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Manština: jazyk, který nezmizel",
+      "p": [
+       "Manština (Gaelg) je goidelský keltský jazyk ostrova Man v Irském moři, blízce příbuzný irštině a skotské gaelštině. Podle odhadu Henryho Jennera jí roku 1874 mluvilo ještě asi 30 % obyvatel ostrova. Rodiče ji však přestávali předávat dětem, protože angličtinu pokládali za užitečnější, a při sčítání roku 1961 uvedlo znalost manštiny už jen 165 lidí.",
+       "Roku 1899 vznikla Manská jazyková společnost (Yn Çheshaght Ghailckagh). V polovině 20. století zbývalo jen několik starých rodilých mluvčích; roku 1948 je z podnětu Éamona de Valery nahrála Irská folkloristická komise (Irish Folklore Commission) a její nahrávky pozdější obnově pomohly. Ned Maddrell, který zemřel 27. prosince 1974, bývá označován za posledního rodilého mluvčího manštiny; přesněji za posledního, kdo vyrůstal v prostředí, kde se mansky běžně mluvilo. Označení „poslední mluvčí“ je u zanikajících jazyků vždy trochu zjednodušující, protože hranice mezi rodilými mluvčími, lidmi, kteří jazyk v dětství jen slyšeli, a těmi, kdo se ho naučili později, bývá neostrá.",
+       "Z užívání přitom manština nikdy úplně nevypadla. Nadšenci se ji učili od posledních mluvčích i z písemných pramenů, k nimž patří manský překlad Bible, poprvé vydaný celý v jednom svazku roku 1775. Roku 1992 vznikl útvar pro výuku manštiny v čele s Brianem Stowellem a dnes se manština jako volitelný předmět vyučuje na všech základních i středních školách ostrova. V St John's působí základní škola Bunscoill Ghaelgagh, kde děti dostávají téměř veškeré vzdělání v manštině (roku 2016 jich bylo 67), a s jazykem seznamují už předškolní skupiny Mooinjer Veggey. Roku 2006 vyšel první román v manštině.",
+       "Při sčítání roku 2021 uvedlo nějakou znalost manštiny přes 2 000 obyvatel ostrova, téměř všichni jako druhý jazyk; zda lze děti vychovávané v manštině od narození počítat za nové rodilé mluvčí, se posuzuje různě. Roku 2009 zařadil Atlas ohrožených jazyků světa UNESCO manštinu mezi vymřelé jazyky, přestože jí na ostrově mluvily stovky lidí; UNESCO hodnocení později změnilo na kriticky ohrožený. Tento atlas ji podle Glottologu (zdroj ElCat) vede jako jazyk probouzený."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "bunscoill",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "Hebrejština: výjimečný případ",
+      "p": [
+       "Hebrejština (hebrejsky עברית, ivrit) je jediný obecně uznávaný případ, kdy se jazyk, který po staletí neměl rodilé mluvčí, znovu stal mateřským jazykem celého společenství, dnes milionů lidí. Jako mateřský jazyk zanikla v pozdní antice, psát a číst se však nepřestala: sloužila k modlitbě, učenosti a literatuře i k dorozumění mezi židovskými obcemi s různými mateřskými jazyky. Obnova tedy nezačínala od nuly. Chyběla však slova pro moderní svět a především rodiny, které by jazyk předávaly dětem.",
+       "S obnovou se nejčastěji spojuje Eliezer Ben Jehuda (1858–1922), který se roku 1881 usadil v Jeruzalémě, v rodině mluvil jen hebrejsky, vydával hebrejské noviny, tvořil nová slova a začal sestavovat velký slovník. Jeho syn Itamar Ben Avi (nar. 1882) bývá označován za prvního rodilého mluvčího novohebrejštiny. Podle převládajícího výkladu však byla Ben Jehudova role spíše podnětná a symbolická. Rozhodující byly hebrejské školy v zemědělských osadách přistěhovalců – například v Rišon le-Cijon se od roku 1886 vyučovalo výhradně hebrejsky – a děti, které hebrejštinu přijaly za vlastní řeč. Roku 1890 vznikl Výbor pro hebrejský jazyk, předchůdce Akademie hebrejského jazyka (1953); roku 1922 se hebrejština stala jedním z úředních jazyků britské mandátní Palestiny a od roku 1948 je úředním jazykem Izraele. Podrobněji o tom pojednává stránka Hebrejci a Aramejci.",
+       "Proč se to podařilo právě zde, se obvykle vysvětluje souhrou okolností, které se jinde těžko opakují: přistěhovalci s různými mateřskými jazyky potřebovali společnou řeč, hebrejština měla bohatou písemnou tradici a pro nové společenství byla symbolem národní obnovy. Jak moc se obnovený jazyk liší od starého, je sporné. Lingvista Ghil'ad Zuckermann tvrdí, že dnešní izraelská hebrejština je smíšený jazyk se silným podílem jidiš a dalších evropských jazyků; jiní badatelé zdůrazňují její návaznost na starší hebrejštinu v mluvnici i slovní zásobě."
+      ]
+     },
+     {
+      "typ": "slova",
+      "h": "Čtyři jazyky v číslech",
+      "uvod": "Údaje ze sčítání lidu vycházejí z toho, co o sobě lidé sami uvedli, a každá země se ptá jinak; mezi jazyky je proto nelze přímo srovnávat. Stupeň ohrožení je uveden podle tohoto atlasu (Glottolog).",
+      "hlavicka": [
+       "jazyk",
+       "stav kdysi",
+       "opatření",
+       "stav dnes"
+      ],
+      "radky": [
+       [
+        "velština",
+        "1891: 54 % obyvatel Walesu (910 289 lidí); 1981: 19 % (503 532)",
+        "velšské školy od 1939; televize S4C (1982); zákony z let 1967, 1993 a 2011",
+        "2021: 538 300 lidí, 17,8 % (sčítání); zranitelná"
+       ],
+       [
+        "maorština",
+        "do 2. světové války první jazyk většiny Maorů; v 80. letech méně než 20 % Maorů na úrovni rodilého mluvčího",
+        "kōhanga reo (1982), kura kaupapa Māori (1985), úřední jazyk (1987)",
+        "2023: 213 849 lidí, 4,3 % obyvatel, zvládne rozhovor (sčítání); jednoznačně ohrožená"
+       ],
+       [
+        "manština",
+        "1874: asi 30 % obyvatel ostrova (odhad H. Jennera); 1961: 165 lidí (sčítání)",
+        "Yn Çheshaght Ghailckagh (1899); nahrávky posledních mluvčích (1948); soustavná výuka ve školách od 1992; Bunscoill Ghaelgagh",
+        "2021: přes 2 000 lidí s nějakou znalostí (sčítání); probouzená, podle UNESCO kriticky ohrožená"
+       ],
+       [
+        "hebrejština",
+        "od pozdní antiky (asi 200–400 n. l.) bez rodilých mluvčích; jazyk bohoslužby a písemnictví",
+        "hebrejské školy v osadách (od 80. let 19. století); úřední jazyk mandátní Palestiny (1922) a Izraele (1948)",
+        "asi 9 milionů mluvčích, z toho kolem 5 milionů rodilých (Ethnologue 2018); bezpečná"
+       ]
+      ]
+     },
+     {
+      "typ": "rameček",
+      "h": "Co revitalizace znamená a co nezaručuje",
+      "p": [
+       "Revitalizace neznamená návrat jazyka do stavu před úpadkem. Za měřítko úspěchu se v odborné literatuře obvykle nepokládá počet lidí, kteří se jazyk naučí, ale to, zda se jím znovu mluví doma a zda ho rodiče předávají dětem. Úřední status, dvojjazyčné nápisy a výuka ve škole jsou důležité, samy však přenos v rodinách nezajistí: mnozí absolventi imerzních škol užívají jazyk hlavně ve škole.",
+       "Čísla je třeba číst opatrně. Sčítání zaznamenávají sebehodnocení a různé průzkumy dávají pro tentýž jazyk různé výsledky. Oživený jazyk se také obvykle liší od původního: noví mluvčí do něj přinášejí výslovnost, slova i obraty z většinového jazyka. Někteří jazykovědci proto mluví o nových varietách, například o „neohavajštině“; jiní připomínají, že se mění každý živý jazyk."
+      ]
+     },
+     {
+      "typ": "osa",
+      "h": "Časová osa",
+      "udalosti": [
+       [
+        "1535 a 1542",
+        "Zákony začleňují Wales do anglického právního systému; první z nich vyhrazuje úřady lidem, kteří užívají angličtinu."
+       ],
+       [
+        "1847",
+        "Zpráva o školství ve Walesu, známá jako Zrada modrých knih; na Novém Zélandu nařízení o školství prosazuje angličtinu."
+       ],
+       [
+        "1899",
+        "Vzniká Manská jazyková společnost (Yn Çheshaght Ghailckagh)."
+       ],
+       [
+        "1922",
+        "Hebrejština se stává jedním z úředních jazyků mandátní Palestiny."
+       ],
+       [
+        "1939",
+        "V Aberystwythu vzniká první základní škola s velštinou jako vyučovacím jazykem."
+       ],
+       [
+        "1948",
+        "Irská folkloristická komise nahrává poslední rodilé mluvčí manštiny."
+       ],
+       [
+        "1962",
+        "Vzniká Společnost velšského jazyka (Cymdeithas yr Iaith Gymraeg)."
+       ],
+       [
+        "27. 12. 1974",
+        "Umírá Ned Maddrell, obvykle označovaný za posledního rodilého mluvčího manštiny."
+       ],
+       [
+        "1975",
+        "První Týden maorského jazyka (Te Wiki o te Reo Māori)."
+       ],
+       [
+        "1982",
+        "První kōhanga reo ve Wainuiomatě; začíná vysílat velšská televize S4C."
+       ],
+       [
+        "1987",
+        "Zákon o maorském jazyce: maorština úředním jazykem Nového Zélandu."
+       ],
+       [
+        "1993",
+        "Zákon o velštině: rovnocenné postavení velštiny a angličtiny ve veřejné správě Walesu."
+       ],
+       [
+        "2009",
+        "UNESCO řadí manštinu mezi vymřelé jazyky; později hodnocení mění na kriticky ohrožený."
+       ],
+       [
+        "2011",
+        "Velština získává úřední status ve Walesu (Welsh Language (Wales) Measure 2011)."
+       ]
+      ]
+     },
+     {
+      "typ": "tecky",
+      "h": "Jazyky na glóbu",
+      "uvod": "Klepnutím se jazyk ukáže na glóbu:"
+     },
+     {
+      "typ": "zdroje",
+      "h": "Zdroje a další četba",
+      "p": [
+       "Joshua A. Fishman: Reversing Language Shift. Theoretical and Empirical Foundations of Assistance to Threatened Languages. Multilingual Matters 1991.",
+       "David Crystal: Language Death. Cambridge University Press 2000.",
+       "Leanne Hinton, Ken Hale (ed.): The Green Book of Language Revitalization in Practice. Academic Press 2001.",
+       "Lenore A. Grenoble, Lindsay J. Whaley: Saving Languages. An Introduction to Language Revitalization. Cambridge University Press 2006.",
+       "Christopher Moseley (ed.): Atlas of the World's Languages in Danger. 3. vyd., UNESCO Publishing 2010.",
+       "Ghil'ad Zuckermann: Revivalistics. From the Genesis of Israeli to Language Reclamation in Australia and Beyond. Oxford University Press 2020."
+      ]
+     }
+    ]
+   },
+   "en": {
+    "nazev": "Languages coming back",
+    "stitek": "Language stories",
+    "podtitul": "Language revitalisation · Wales, New Zealand, the Isle of Man and Israel",
+    "perex": "Languages rarely disappear overnight. A community gradually shifts to another language, and parents stop passing the old one on to their children. Revitalisation tries to restore that transmission – through preschools and schools taught in the endangered language, legislation, media and adult classes. Welsh, Māori and Manx show three different starting points and three different outcomes. Hebrew is the only generally recognised case of a language without native speakers becoming the mother tongue of millions again.",
+    "fakta": [
+     [
+      "Topic",
+      "revitalisation of endangered languages"
+     ],
+     [
+      "Main cases",
+      "Welsh (Wales), Māori (New Zealand), Manx (Isle of Man); Hebrew as an exceptional case"
+     ],
+     [
+      "Tools",
+      "language nests, immersion schools, official status, media, adult classes"
+     ],
+     [
+      "Scale",
+      "UNESCO: safe, vulnerable, definitely endangered, severely endangered, critically endangered, extinct; this atlas adds awakening"
+     ],
+     [
+      "In this atlas",
+      "Welsh vulnerable, Māori definitely endangered, Manx awakening, Modern Hebrew safe (after Glottolog)"
+     ]
+    ],
+    "nazvyTecek": {
+     "wels1247": "Welsh",
+     "maor1246": "Māori",
+     "manx1243": "Manx",
+     "hebr1245": "Hebrew (modern)"
+    },
+    "oddily": [
+     {
+      "typ": "text",
+      "h": "How languages recede",
+      "p": [
+       "Most of the languages in decline today are not disappearing because their speakers are dying out, but because communities are gradually switching to another language with more prestige or practical value. Linguists call this language shift. The decisive moment comes when parents stop speaking the language to their children. A break in intergenerational transmission shows up with a delay: the language may live on among adults and the elderly for decades, but it has no young speakers to pass it on.",
+       "The degree of endangerment is most often described with UNESCO's six-point scale: safe, vulnerable, definitely endangered, severely endangered, critically endangered and extinct. In 2003 a group of experts commissioned by UNESCO proposed nine factors of language vitality. First among them is intergenerational transmission; others include the number of speakers and their proportion of the population, the domains in which the language is used, and the attitudes of the community and the state. This atlas takes its vitality grades from Glottolog, which maps onto the UNESCO scale, and also marks awakening languages: those with no native speakers that are being learned and used again.",
+       "Revitalisation is a deliberate effort to halt or reverse this process. The American sociolinguist Joshua Fishman argued in Reversing Language Shift (1991) that schools, government offices and media are not enough unless the language becomes the language of homes and neighbourhoods again. The three main cases on this page – Welsh, Māori and Manx – started from very different positions."
+      ]
+     },
+     {
+      "typ": "pojmy",
+      "h": "Key terms",
+      "uvod": "Terms used in the study of endangered languages and on this page:",
+      "pojmy": [
+       [
+        "Language shift",
+        "A community's gradual move from one language to another, usually a majority language. It passes through a period of bilingualism in which the original language retreats from government, schools and eventually families.",
+        "Māori who moved to the cities after the Second World War shifted to English, and their children often no longer spoke Māori."
+       ],
+       [
+        "Intergenerational transmission",
+        "Parents and grandparents passing a language on to children as their mother tongue. In the UNESCO framework (2003) it is the first and most widely used vitality factor; a small language that is still transmitted at home may be more stable than a large one that is no longer passed on.",
+        "On the Isle of Man, parents in the 19th century stopped speaking Manx to their children because they considered English more useful."
+       ],
+       [
+        "UNESCO scale",
+        "Six grades from safe to extinct, as used in the Atlas of the World's Languages in Danger (Moseley 2010). A vulnerable language is still spoken by children, but only in some areas of life; children no longer learn a definitely endangered language at home; in a critically endangered one the youngest speakers are grandparents and older, and they speak it only partially and rarely.",
+        "In this atlas (after Glottolog) Welsh is vulnerable, Māori definitely endangered, Manx awakening and Modern Hebrew safe."
+       ],
+       [
+        "Awakening language",
+        "A language that has lost its native speakers but is being learned and used again, usually from written sources and recordings. A closely related term is sleeping language; many authors avoid the word \"dead\" because a language can be woken up again. This atlas shows awakening languages as a separate grade; on Glottolog's scale, as mapped onto the UNESCO scale, they count as extinct. UNESCO itself sometimes classifies such languages differently.",
+        "Manx and Cornish: awakening in this atlas, listed by UNESCO today as critically endangered."
+       ],
+       [
+        "Language nest",
+        "A preschool in which older speakers talk to young children all day exclusively in the endangered language. It relies on small children acquiring a language naturally if they hear it often enough.",
+        "The Māori kōhanga reo (literally \"language nest\"), since 1982; the Hawaiian Pūnana Leo were modelled on them."
+       ],
+       [
+        "Immersion school",
+        "A school in which all or nearly all subjects are taught in the endangered language, not just the language itself.",
+        "Māori kura kaupapa Māori, the Manx Bunscoill Ghaelgagh, Welsh-medium schools in Wales."
+       ],
+       [
+        "New speakers",
+        "People who learned a language outside the family – at school, in classes or on their own – and actively use it. In revitalised languages they are often the majority, and their speech may differ from that of the last native speakers in pronunciation and vocabulary.",
+        "Almost all present-day speakers of Manx; also many young speakers of Welsh and Māori who learned the language at school."
+       ]
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Welsh: a minority in its own country",
+      "p": [
+       "Welsh (Cymraeg) is a Celtic language of the Brittonic branch, related to Breton and Cornish, and has been spoken in Wales continuously since the early Middle Ages. The Acts of 1535 and 1542, however, brought Wales into the English legal system, and the first of them reserved public office for those who used English. Welsh writing nonetheless carried on; in the prevailing view, William Morgan's translation of the Bible of 1588, which became the model for the literary language, played a major part in this.",
+       "In the 19th century Welsh became a language that schools did not allow for. A government report on education in Wales published in 1847 disparaged the Welsh language and the morals of the Welsh, and became known in Wales as the Treachery of the Blue Books (Brad y Llyfrau Gleision). Teaching was in English even where pupils barely understood it, and some schools used the Welsh Not, a piece of wood hung on a child caught speaking Welsh. Many parents supported English-language teaching themselves, seeing it as the way to get on in life.",
+       "The census records the decline. In 1891, 54% of the population of Wales aged three and over spoke Welsh (910,289 people); by 1981 the figure was only 19% (503,532), the lowest absolute number in the census series. Yet Welsh never stopped being the first language of some children, especially in the north and west of the country."
+      ]
+     },
+     {
+      "typ": "galerie",
+      "h": "Bilingual signs in Wales",
+      "f": [
+       "caernarfon",
+       "cardiff"
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Welsh: schools, television and legislation",
+      "p": [
+       "The revival began in education. In 1939 Ifan ab Owen Edwards founded the first Welsh-medium primary school in Aberystwyth (Ysgol Gymraeg Aberystwyth), and in 1956 the first Welsh-medium secondary school opened in Rhyl (Ysgol Glan Clwyd). The Welsh Language Society (Cymdeithas yr Iaith Gymraeg), founded in 1962, campaigned – including through civil disobedience – for Welsh in public administration, on road signs and in broadcasting. The Welsh-language television channel S4C began broadcasting in 1982.",
+       "Legislation followed. The Welsh Language Act 1967 guaranteed the right to speak Welsh in legal proceedings in Wales. The Welsh Language Act 1993 established the principle that in public business and the administration of justice in Wales, Welsh and English should be treated on a basis of equality, as far as reasonable and practicable; it set up the Welsh Language Board and required public bodies to draw up Welsh language schemes. The Welsh Language (Wales) Measure 2011, passed by what was then the National Assembly for Wales, gave Welsh explicit official status and replaced the Board with a Welsh Language Commissioner with powers to enforce the duties of public bodies and some companies.",
+       "In the 2021 census, 538,300 residents of Wales aged three and over, or 17.8%, said they could speak Welsh. That is more than in 1981 or 1991, but the lowest proportion in the history of the census, and down from 20.8% in 2001. Sample surveys such as the Annual Population Survey consistently give higher figures, largely because they ask the question differently and people rate their own ability differently. In its Cymraeg 2050 strategy the Welsh Government set a target of one million speakers by 2050."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Māori: from majority language to minority",
+      "p": [
+       "Māori (te reo Māori) is the Eastern Polynesian language of the indigenous people of New Zealand and the southernmost member of the Austronesian family. In the 19th century most Māori spoke it, and in rural areas some settler children knew it too. School policy, however, promoted English: the Education Ordinance of 1847 made it the main language of schools, and in the early 20th century Māori pupils were punished, often physically, for speaking Māori in the classroom or the playground. Many parents accepted this because they wanted their children to succeed in an English-speaking society.",
+       "Until the Second World War Māori remained the first language of most Māori. The decline accelerated after the war, when Māori moved to the cities in large numbers and children grew up far from the grandparents who had traditionally played a large part in family life. By the 1980s fewer than 20% of Māori spoke the language at the level of a native speaker, and many of them no longer used it at home. Already in the 1970s groups of young Māori, among them Ngā Tamatoa, campaigned for Māori to be taught in schools; in 1972 a petition with tens of thousands of signatures was presented to Parliament. Māori Language Week (Te Wiki o te Reo Māori) has been held every year since 1975."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "hongi",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "Nests, schools and official status",
+      "p": [
+       "The best-known instrument of the Māori revival is the kōhanga reo, literally \"language nest\". The first opened in 1982 in Wainuiomata near Wellington, and three years later there were more than 300. They are preschools for children up to six in which only Māori is spoken, run by the families (whānau) themselves with the involvement of respected elders (kaumātua). They were followed by kura kaupapa Māori, schools taught through Māori – the first in 1985 – whose status was set out in the Education Act 1989. Other communities adopted the idea of language nests, among them the Hawaiians (Pūnana Leo).",
+       "In 1986 the Waitangi Tribunal, which hears Māori claims under the Treaty of Waitangi (1840), found that the Māori language is a taonga, a treasure protected by the Treaty. Parliament then passed the Māori Language Act 1987, which made Māori an official language, guaranteed the right to use it in court and established the Māori Language Commission (now Te Taura Whiri i te Reo Māori). In 2016 it was replaced by Te Ture mō Te Reo Māori.",
+       "In the 2023 census, 213,849 residents of New Zealand (4.3%) said they could hold a conversation about everyday things in Māori, up from 148,395 in 2013. Among people of Māori ethnicity the figure was 20.5%. The proficiency of these speakers varies widely, and only a minority use Māori as their main language at home. In 2011 the Waitangi Tribunal warned that after a genuine revival in the 1980s and early to mid-1990s the language was weakening again, partly because of the loss of the older native speakers who had led the revival."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Manx: the language that did not disappear",
+      "p": [
+       "Manx (Gaelg) is the Goidelic Celtic language of the Isle of Man in the Irish Sea, closely related to Irish and Scottish Gaelic. Henry Jenner estimated in 1874 that about 30% of the island's population still spoke it. Parents, however, stopped passing it on to their children, considering English more useful, and in the 1961 census only 165 people reported knowing Manx.",
+       "The Manx Language Society (Yn Çheshaght Ghailckagh) was founded in 1899. By the mid-20th century only a few elderly native speakers remained; in 1948, at the instigation of Éamon de Valera, the Irish Folklore Commission recorded them, and the recordings later helped the revival. Ned Maddrell, who died on 27 December 1974, is often described as the last native speaker of Manx – more precisely, as the last person to have grown up in a community where Manx was the everyday language. \"Last speaker\" is always something of a simplification with dying languages, because the line between native speakers, people who only heard the language as children, and those who learned it later tends to be blurred.",
+       "Manx never fell entirely out of use. Enthusiasts learned it from the last speakers and from written sources, including the Manx translation of the Bible, first published complete in a single volume in 1775. A Manx language unit headed by Brian Stowell was set up in 1992, and today Manx is taught as an optional subject in all the island's primary and secondary schools. The Bunscoill Ghaelgagh, a primary school in St John's, provides nearly all its teaching in Manx (it had 67 pupils in 2016), and the Mooinjer Veggey playgroups introduce the language to even younger children. The first novel in Manx appeared in 2006.",
+       "In the 2021 census over 2,000 residents of the island reported some knowledge of Manx, nearly all as a second language; whether children raised in Manx from birth count as new native speakers is a matter of debate. In 2009 UNESCO's Atlas of the World's Languages in Danger listed Manx as extinct, although hundreds of people on the island spoke it; UNESCO later changed the classification to critically endangered. This atlas, following Glottolog (source: ElCat), lists Manx as an awakening language."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "bunscoill",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "Hebrew: an exceptional case",
+      "p": [
+       "Hebrew (עברית, ivrit) is the only generally recognised case of a language that had no native speakers for centuries becoming the mother tongue of a whole community again – today of millions of people. It ceased to be a mother tongue in late antiquity, but it never stopped being written and read: it served for prayer, scholarship and literature, and as a means of communication between Jewish communities with different mother tongues. The revival therefore did not start from nothing. What was missing were words for the modern world and, above all, families to pass the language on to their children.",
+       "The revival is most often associated with Eliezer Ben-Yehuda (1858–1922), who settled in Jerusalem in 1881, spoke only Hebrew at home, published Hebrew newspapers, coined new words and began compiling a large dictionary. His son Itamar Ben-Avi (born 1882) is often described as the first native speaker of Modern Hebrew. In the prevailing view, however, Ben-Yehuda's role was chiefly that of an initiator and a symbol. What proved decisive were the Hebrew schools in the agricultural settlements of immigrants – in Rishon LeZion, for example, teaching was entirely in Hebrew from 1886 – and the children who adopted Hebrew as their own language. The Hebrew Language Committee, forerunner of the Academy of the Hebrew Language (1953), was founded in 1890; in 1922 Hebrew became one of the official languages of British Mandatory Palestine, and since 1948 it has been an official language of Israel. The page on the Hebrews and the Arameans tells the story in more detail.",
+       "Why it succeeded here is usually explained by a combination of circumstances that are hard to repeat elsewhere: immigrants with different mother tongues needed a common language, Hebrew had a rich written tradition, and for the new community it was a symbol of national renewal. How far the revived language differs from the old one is disputed. The linguist Ghil'ad Zuckermann argues that present-day Israeli Hebrew is a hybrid language with a strong Yiddish and wider European component; other scholars stress its continuity with earlier Hebrew in grammar and vocabulary."
+      ]
+     },
+     {
+      "typ": "slova",
+      "h": "Four languages in figures",
+      "uvod": "Census figures reflect what people say about themselves, and each country asks the question differently, so the languages cannot be compared directly. Endangerment grades are those used in this atlas (Glottolog).",
+      "hlavicka": [
+       "language",
+       "then",
+       "measures",
+       "now"
+      ],
+      "radky": [
+       [
+        "Welsh",
+        "1891: 54% of the population of Wales (910,289 people); 1981: 19% (503,532)",
+        "Welsh-medium schools from 1939; S4C television (1982); Acts of 1967, 1993 and 2011",
+        "2021: 538,300 people, 17.8% (census); vulnerable"
+       ],
+       [
+        "Māori",
+        "first language of most Māori until the Second World War; by the 1980s fewer than 20% of Māori at native-speaker level",
+        "kōhanga reo (1982), kura kaupapa Māori (1985), official language (1987)",
+        "2023: 213,849 people, 4.3% of the population, can hold a conversation (census); definitely endangered"
+       ],
+       [
+        "Manx",
+        "1874: about 30% of the island's population (estimate by H. Jenner); 1961: 165 people (census)",
+        "Yn Çheshaght Ghailckagh (1899); recordings of the last speakers (1948); systematic teaching in schools from 1992; Bunscoill Ghaelgagh",
+        "2021: over 2,000 people with some knowledge (census); awakening, critically endangered according to UNESCO"
+       ],
+       [
+        "Hebrew",
+        "no native speakers from late antiquity (c. 200–400 CE); a language of worship and writing",
+        "Hebrew schools in the settlements (from the 1880s); official language of Mandatory Palestine (1922) and Israel (1948)",
+        "about 9 million speakers, around 5 million of them native (Ethnologue 2018); safe"
+       ]
+      ]
+     },
+     {
+      "typ": "rameček",
+      "h": "What revitalisation means – and what it does not guarantee",
+      "p": [
+       "Revitalisation does not mean returning a language to where it was before its decline. The specialist literature usually measures success not by how many people learn the language, but by whether it is spoken at home again and passed on by parents to their children. Official status, bilingual signs and school teaching matter, but they cannot secure transmission in families on their own: many graduates of immersion schools use the language mainly at school.",
+       "Figures need to be read with care. Censuses record self-assessment, and different surveys give different results for the same language. A revived language also usually differs from the original: new speakers bring in pronunciation, words and turns of phrase from the majority language. Some linguists therefore speak of new varieties, such as \"Neo-Hawaiian\"; others point out that every living language changes."
+      ]
+     },
+     {
+      "typ": "osa",
+      "h": "Timeline",
+      "udalosti": [
+       [
+        "1535 and 1542",
+        "Acts bring Wales into the English legal system; the first reserves public office for those who use English."
+       ],
+       [
+        "1847",
+        "The report on education in Wales known as the Treachery of the Blue Books; in New Zealand the Education Ordinance promotes English."
+       ],
+       [
+        "1899",
+        "The Manx Language Society (Yn Çheshaght Ghailckagh) is founded."
+       ],
+       [
+        "1922",
+        "Hebrew becomes one of the official languages of Mandatory Palestine."
+       ],
+       [
+        "1939",
+        "The first Welsh-medium primary school opens in Aberystwyth."
+       ],
+       [
+        "1948",
+        "The Irish Folklore Commission records the last native speakers of Manx."
+       ],
+       [
+        "1962",
+        "The Welsh Language Society (Cymdeithas yr Iaith Gymraeg) is founded."
+       ],
+       [
+        "27 Dec 1974",
+        "Death of Ned Maddrell, usually described as the last native speaker of Manx."
+       ],
+       [
+        "1975",
+        "The first Māori Language Week (Te Wiki o te Reo Māori)."
+       ],
+       [
+        "1982",
+        "The first kōhanga reo opens in Wainuiomata; the Welsh-language channel S4C begins broadcasting."
+       ],
+       [
+        "1987",
+        "The Māori Language Act makes Māori an official language of New Zealand."
+       ],
+       [
+        "1993",
+        "The Welsh Language Act: Welsh and English to be treated equally in public business in Wales."
+       ],
+       [
+        "2009",
+        "UNESCO lists Manx as extinct; the classification is later changed to critically endangered."
+       ],
+       [
+        "2011",
+        "Welsh gains official status in Wales (Welsh Language (Wales) Measure 2011)."
+       ]
+      ]
+     },
+     {
+      "typ": "tecky",
+      "h": "Languages on the globe",
+      "uvod": "Tap a language to show it on the globe:"
+     },
+     {
+      "typ": "zdroje",
+      "h": "Sources and further reading",
+      "p": [
+       "Joshua A. Fishman: Reversing Language Shift. Theoretical and Empirical Foundations of Assistance to Threatened Languages. Multilingual Matters 1991.",
+       "David Crystal: Language Death. Cambridge University Press 2000.",
+       "Leanne Hinton, Ken Hale (eds.): The Green Book of Language Revitalization in Practice. Academic Press 2001.",
+       "Lenore A. Grenoble, Lindsay J. Whaley: Saving Languages. An Introduction to Language Revitalization. Cambridge University Press 2006.",
+       "Christopher Moseley (ed.): Atlas of the World's Languages in Danger. 3rd ed., UNESCO Publishing 2010.",
+       "Ghil'ad Zuckermann: Revivalistics. From the Genesis of Israeli to Language Reclamation in Australia and Beyond. Oxford University Press 2020."
       ]
      }
     ]
