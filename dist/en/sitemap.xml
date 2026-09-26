@@ -1033,6 +1033,12 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/ancient/greece/"/>
   </url>
   <url>
+    <loc>https://thelanguageatlas.com/ancient/maya/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/starovek/mayove/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/ancient/maya/"/>
+  </url>
+  <url>
     <loc>https://thelanguageatlas.com/ancient/</loc>
     <lastmod>2026-09-26</lastmod>
     <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/starovek/"/>

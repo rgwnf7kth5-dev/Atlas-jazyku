@@ -375,8 +375,11 @@ v `data/starovek.json`). Tentýž den přibyly **Sumer a Akkad** (`#sumer-a-akka
 (`#fenicane` / `#phoenicians`); ikona chrámu v záhlaví má bublinu s vysvětlením při najetí myší (uživatel: „na tu
 ikonu mouseover, o co jde“). V okně civilizace je vlevo nahoře „‹ Jazyky starověku“ zpět do výběru a na konci
 rozcestník ostatních civilizací (uživatel: „nedostanu se zpátky na výběr civilizací“); web má rozcestník `/starovek/`
-a `/en/ancient/`. Další navržené: Řecko (lineární B
-→ alfabeta), Řím, Etruskové, Čína (věštebné kosti), Indie (sanskrt, bráhmí, písmo Indu), Persie, Mayové, Aksum.
+a `/en/ancient/`. Na přání uživatele („ano, Řecko, Mayové …“) přibyly **Starověké Řecko** (`#recko` / `#greece`: lineární
+písmo A a B, Ventris, abeceda, bústrofédon, nářečí a koiné, hlaholice) a **Mayové** (`#mayove` / `#maya`: logosylabické
+písmo, číslice a kalendář, kodexy, Knorozov). Mayské číslice v příkladu stojí nad sebou (znak nového řádku v datech
+a `.civ-znak-radek.civ-mayc`). Unicode má z mayského písma jen číslice, ostatní znaky se proto ukazují jen na fotkách
+a v přepisu. Další navržené: Řím, Etruskové, Čína (věštebné kosti), Indie (sanskrt, bráhmí, písmo Indu), Persie, Aksum.
 
 - Data `data/starovek.json`: `civilizace[]` s `id`, `adresa{cs,en}`, `krajina` (druh akvarelu), `tecky` (glottocody),
   `pisma` (písma Noto), `fotky{klic: soubor, sirka, vyska, autor, licence, licenceUrl, zdroj, cs, en}` a texty `cs`/`en`
@@ -392,7 +395,7 @@ a `/en/ancient/`. Další navržené: Řecko (lineární B
   (wikitext Wikipedie) k ověření faktů. Větev se při každém běhu přepíše (force push), proto stahovat s plusem:
   `git fetch origin +foto-kandidati:refs/remotes/origin/foto-kandidati`. Brát jen CC0, public domain, CC BY, CC BY-SA; autora a licenci uvést u fotky.
 - Edge funkce pouští `/starovek/*` na obou doménách z kořene (fotky jsou společné).
-- Písma starověku (`PISMA` v šabloně: klínopis, anatolské a egyptské hieroglyfy, koptština) dostanou v textu třídu
+- Písma starověku (`PISMA` v šabloně: klínopis, anatolské a egyptské hieroglyfy, koptština, fénické, ugaritské, staroperské, lineární A a B, mayské číslice) dostanou v textu třídu
   a písmo Noto automaticky. Klínové písmo a hieroglyfy: Google Fonts s `&text=` (jen použité znaky), odkaz dělá `STAROVEK.odkazPisma()`.
   Znaky ověřit (`unicodedata.name`, hodnoty znaků podle chetitské tabulky znaků); písmo Unicode má mezopotámské tvary,
   stránka to říká.
@@ -405,6 +408,10 @@ a `/en/ancient/`. Další navržené: Řecko (lineární B
   pracoval ze žebříků (na lanech visel kurdský chlapec), Grotefend luštil podle opisů z Persepole.
   U Féničanů: české „abeceda“ je z a-b-c-d (z alfa–beta je „alfabeta“), Ahiram „asi 1000, sporné“, 1050 jen
   konvenční datum, Pyrgi obdobné (ne stejné) věnování, jména písmen jsou rekonstrukce, murex = ostranka.
+  U Řecka: nejdelší písemná historie jen mezi **živými** indoevropskými jazyky (chetitština je starší) a ne „nepřetržitá“
+  (na Kypru se mezitím psalo kyperským slabičným písmem), tabulky 15.–14. st., paláce asi 1400–1200, ko-no-so ukazuje
+  pomocnou samohlásku u kn-, ostrakismus: kvórum 6 000 a část střepů popsali předem písaři (ne důkaz masové gramotnosti),
+  bústrofédon = otáčí se vůl, Kyjevské listy z 10. st. pravděpodobně z Čech nebo Moravy, chur1257 = církevní slovanština.
 - Nová civilizace: druh akvarelu v `src/akvarely.js`, fotky přes `data/fotky-hledat.json`, zmenšit (PIL) do
   `static/starovek/<id>/`, texty cs/en, ověření, `npm run check`, test v prohlížeči.
 
