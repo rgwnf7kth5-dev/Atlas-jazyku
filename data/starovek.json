@@ -23990,6 +23990,959 @@
      }
     ]
    }
+  },
+  {
+   "id": "zahady",
+   "sekce": "pribehy",
+   "skupina": "zahady",
+   "adresa": {
+    "cs": "jazykove-zahady",
+    "en": "linguistic-mysteries"
+   },
+   "krajina": "zahada",
+   "hledat": "jazykove zahady linguistic mysteries zahada mystery nerozlustena pisma undeciphered scripts rozlusteni decipherment linearni pismo a linear a kretske hieroglyfy cretan hieroglyphs pismo indu indus script protoelamske proto-elamite linearni elamske linear elamite desset bybloske byblos istmicke isthmian epiolmecke epi-olmec la mojarra rongorongo velikonocni ostrov easter island rapa nui meroitske meroitic meroe kus kush vinca tartaria voynichuv rukopis voynich manuscript rudolf ii marci izolovany jazyk izolat language isolate baskictina basque burusaski burushaski ainstina ainu kusunda nihali hadza sumerstina sumerian altajske altaic nostraticke nostratic dene-jenisejske dene-yeniseian ketstina ket vaskonske vasconic vennemann indouralske indo-uralic pravlast indoevropanu indo-european homeland stepni steppe kurgan anatolska anatolian renfrew greenberg masove srovnavani mass comparison makrorodina macrofamily",
+   "tecky": [
+    "basq1248",
+    "buru1296",
+    "ainu1240",
+    "kusu1250",
+    "niha1238",
+    "hadz1240",
+    "sume1241"
+   ],
+   "pisma": [],
+   "fotky": {
+    "voynich": {
+     "soubor": "voynich.jpg",
+     "sirka": 819,
+     "vyska": 1100,
+     "autor": "",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Voynich_Manuscript_(32).jpg",
+     "cs": "Stránka Voynichova rukopisu s kresbami květů a textem v neznámém písmu. Rostliny v rukopisu se jednoznačně určit nedají. Beineckeho knihovna, Yaleova univerzita (MS 408).",
+     "en": "A page of the Voynich manuscript with drawings of flowers and text in an unknown script. The plants in the manuscript cannot be identified with certainty. Beinecke Library, Yale University (MS 408)."
+    },
+    "rukopis": {
+     "soubor": "rukopis.jpg",
+     "sirka": 1200,
+     "vyska": 644,
+     "autor": "",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Voynich_Manuscript_(178).jpg",
+     "cs": "Rozložený list Voynichova rukopisu s kresbami částí rostlin, kořenů a nádob připomínajících lékárenské; popisky u kreseb jsou psané týmž neznámým písmem.",
+     "en": "A fold-out leaf of the Voynich manuscript with drawings of plant parts, roots and jars resembling apothecary vessels; the labels beside the drawings are in the same unknown script."
+    },
+    "rongorongo": {
+     "soubor": "rongorongo.jpg",
+     "sirka": 1200,
+     "vyska": 800,
+     "autor": "christopherhu",
+     "licence": "CC BY 2.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Rongorongo_tablet_(4275771908).jpg",
+     "cs": "Dřevěná tabulka T s nápisem rongorongo z Velikonočního ostrova. Bishop Museum, Honolulu.",
+     "en": "Tablet T, a wooden tablet from Easter Island inscribed in rongorongo. Bishop Museum, Honolulu."
+    },
+    "tartaria": {
+     "soubor": "tartaria.jpg",
+     "sirka": 970,
+     "vyska": 855,
+     "autor": "FlorinCB",
+     "licence": "CC BY 3.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:T%C4%83rt%C4%83ria_Amulet.png",
+     "cs": "Kruhová hliněná destička z Tărtărie v Rumunsku, nalezená roku 1961, s vyrytými znaky. Stáří ani okolnosti nálezu nejsou jisté a většina badatelů znaky za písmo nepokládá.",
+     "en": "A round clay tablet from Tărtăria in Romania, found in 1961, with incised signs. Neither its age nor the circumstances of the find are certain, and most scholars do not regard the signs as writing."
+    },
+    "meroe": {
+     "soubor": "meroe.jpg",
+     "sirka": 825,
+     "vyska": 1100,
+     "autor": "Jononmac46",
+     "licence": "CC BY-SA 3.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Hamadab_Stela_(2).JPG",
+     "cs": "Stéla z Hamadabu u Meroe (Súdán) s dlouhým nápisem v meroitském kurzívním písmu. Text lze přečíst nahlas, porozumět mu však lze jen zčásti. Britské muzeum, Londýn.",
+     "en": "The Hamadab stela from near Meroë (Sudan) with a long inscription in Meroitic cursive. The text can be read aloud but only partly understood. British Museum, London."
+    },
+    "protoelam": {
+     "soubor": "protoelam.jpg",
+     "sirka": 1200,
+     "vyska": 829,
+     "autor": "VIGNERON",
+     "licence": "CC BY 3.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Proto-Elamite_tablet.jpg",
+     "cs": "Protoelamská hliněná tabulka (asi 3100–2900 př. n. l.). Jako většina protoelamských textů jde patrně o hospodářský záznam; číselné znaky umíme vyložit, většinu ostatních ne.",
+     "en": "A Proto-Elamite clay tablet (c. 3100–2900 BCE). Like most Proto-Elamite texts it is probably an administrative record; the numerical signs can be interpreted, most of the others cannot."
+    }
+   },
+   "cs": {
+    "nazev": "Jazykové záhady",
+    "stitek": "Příběhy jazyků",
+    "podtitul": "Nerozluštěná písma · jazyky bez příbuzných · sporné rodiny",
+    "perex": "Jazykověda umí číst klínové písmo i hieroglyfy a rekonstruovat slova, kterými se mluvilo před pěti či šesti tisíci lety. Přesto zůstávají otevřené otázky: písma, která nikdo nepřečetl, jazyky, jejichž příbuzné neznáme, a velké rodiny, o nichž se odborníci přou. Tato stránka odděluje, co je doložené, co je hypotéza a co se opakuje, přestože to odbornou kontrolou neprošlo.",
+    "fakta": [
+     [
+      "Nerozluštěná písma (výběr)",
+      "lineární písmo A, krétské hieroglyfy, písmo Indu, protoelamské, bybloské a istmické písmo, rongorongo"
+     ],
+     [
+      "Čitelná, ale srozumitelná jen zčásti",
+      "meroitské písmo (přečteno 1909–1911), zčásti etruština"
+     ],
+     [
+      "Izolované jazyky (příklady)",
+      "baskičtina, burušaskí, kusunda, nihali, hadza; vymřelé sumerština a elamština"
+     ],
+     [
+      "Voynichův rukopis",
+      "pergamen z let 1404–1438 (radiokarbonové datování 2009); Beineckeho knihovna, Yaleova univerzita"
+     ],
+     [
+      "Pravlast Indoevropanů",
+      "převládá stepní hypotéza: pontsko-kaspická step, 5.–4. tisíciletí př. n. l."
+     ],
+     [
+      "Masové srovnávání",
+      "metoda Josepha Greenberga; většina lingvistů ji nepřijímá"
+     ]
+    ],
+    "nazvyTecek": {
+     "basq1248": "Baskičtina",
+     "buru1296": "Burušaskí",
+     "ainu1240": "Ainština (hokkaidská)",
+     "kusu1250": "Kusunda",
+     "niha1238": "Nihali",
+     "hadz1240": "Hadza",
+     "sume1241": "Sumerština"
+    },
+    "oddily": [
+     {
+      "typ": "text",
+      "h": "Tři druhy nevědění",
+      "p": [
+       "Slovo záhada tu neznamená nic tajemného ani nadpřirozeného. Jde o otevřené otázky, na které dosavadní doklady nestačí. Jsou trojího druhu: písma, jejichž nápisy neumíme přečíst nebo jim nerozumíme; jazyky, u nichž se nepodařilo prokázat příbuznost s žádným jiným; a navrhované velké rodiny, o kterých se odborníci přou, protože doklady pro ně jsou slabé.",
+       "U každé z těchto otázek je třeba rozlišovat tři věci. Fakt je to, co je doloženo nálezy a nezávisle ověřeno, například stáří pergamenu Voynichova rukopisu. Hypotéza je výklad, který doklady připouštějí, ale neprokazují, například příbuznost jenisejských jazyků Sibiře s jazyky na-dene v Severní Americe. Mýtus je tvrzení, které se šíří, ačkoli odbornou kontrolou neprošlo, například opakovaná ohlášení, že Voynichův rukopis je konečně přečten."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Přečíst neznamená rozumět",
+      "p": [
+       "Rozluštění má dvě stránky: zjistit, jak se čtou znaky, a porozumět jazyku, který zapisují. Obojí nemusí přijít najednou. Etruské nápisy přečteme, protože etruská abeceda pochází z řecké, jazyku však rozumíme jen zčásti. U lineárního písma A se hodnoty mnoha znaků dají odhadnout podle pozdějšího lineárního písma B, jazyk je ale neznámý. U písma Indu neznáme ani hodnoty znaků, ani jazyk.",
+       "Nejčistším příkladem písma, které umíme číst, ale ne mu rozumět, je meroitské písmo z říše Kuš na středním Nilu (dnešní Súdán). Užívalo se od 3. století př. n. l.; poslední známý nápis je z 5. století n. l. Mělo dvě podoby: kurzívu odvozenou z egyptského démotického písma a monumentální znaky podle egyptských hieroglyfů. Britský egyptolog Francis Llewellyn Griffith v letech 1909–1911 určil hodnoty jeho 23 znaků podle egyptských jmen zapsaných meroitsky. Od té doby lze nápisy vyslovit, rozumíme však hlavně jménům, titulům, ustáleným obratům náhrobních nápisů a jen části slovní zásoby.",
+       "Příbuzné meroitštiny dlouho nikdo neznal. Podle francouzského lingvisty Clauda Rillyho patří k severovýchodosúdánským jazykům, k nimž se řadí i núbijské jazyky; Glottolog ji dosud vede jako izolovaný jazyk. Bez delších dvojjazyčných textů postupuje porozumění jen pomalu."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "meroe",
+      "na-vysku": true
+     },
+     {
+      "typ": "rameček",
+      "h": "Co luštitel potřebuje",
+      "p": [
+       "Úspěšná rozluštění minulosti měla aspoň jednu z těchto opor: dostatek textu, aby se znaky daly počítat a porovnávat; dvojjazyčný nápis (bilingvu), v němž je jedna verze čitelná, jako Rosettská deska u egyptských hieroglyfů; nebo jazyk, který je známý či má známé příbuzné, jako řečtina u lineárního písma B.",
+       "Klíčem bývají i vlastní jména. Jména míst, králů a bohů se mezi jazyky mění málo, a proto posloužila jako první opora u staroperského klínového písma, u lineárního písma B (ko-no-so, Knóssos) i u lineárního elamského písma. Nerozluštěným písmům zpravidla chybí několik opor najednou."
+      ]
+     },
+     {
+      "typ": "slova",
+      "h": "Nerozluštěná písma",
+      "uvod": "Přehled písem, jejichž nápisy dosud nikdo spolehlivě nepřečetl nebo jejichž čtení zůstává sporné. Počty textů jsou přibližné a mění se s novými nálezy:",
+      "hlavicka": [
+       "písmo",
+       "kde a kdy",
+       "dochováno",
+       "proč je nelze přečíst"
+      ],
+      "radky": [
+       [
+        "krétské hieroglyfy",
+        "Kréta, asi 2100–1700 př. n. l.",
+        "přes 300 dokladů (soupis z roku 1996): pečetidla, jejich otisky a hliněné předměty",
+        "krátké nápisy, neznámý jazyk, žádná bilingva"
+       ],
+       [
+        "lineární písmo A",
+        "Kréta a egejské ostrovy, asi 1800–1450 př. n. l.",
+        "asi 1 400 nápisů, celkem asi 7 400 znaků",
+        "hodnoty znaků se odhadují podle lineárního písma B, jazyk je neznámý"
+       ],
+       [
+        "písmo Indu",
+        "povodí Indu, asi 2600–1900 př. n. l.",
+        "asi 4–5 tisíc předmětů s nápisy, v průměru asi pět znaků",
+        "velmi krátké texty, neznámý jazyk, chybí bilingva; sporné je i to, zda zapisuje jazyk"
+       ],
+       [
+        "protoelamské písmo",
+        "Írán, hlavně Súsy, asi 3100–2900 př. n. l.",
+        "asi 1 600 tabulek a zlomků",
+        "číselné znaky a část ostatních jsou srozumitelné, jazyk je neznámý"
+       ],
+       [
+        "lineární elamské písmo",
+        "Elam a jeho východní sousedé (Írán), asi 2300–1850 př. n. l.",
+        "asi 50 nápisů, většinou krátkých",
+        "jazyk (elamština) je známý z klínového písma; návrh čtení z roku 2022 je přijímán jen zčásti"
+       ],
+       [
+        "bybloské písmo",
+        "Byblos (Libanon), patrně 18.–15. st. př. n. l.",
+        "14 nápisů na bronzu a kameni, přes 1 000 znaků",
+        "málo textů, neznámý jazyk, žádná bilingva"
+       ],
+       [
+        "istmické (epiolmécké) písmo",
+        "šíje Tehuantepec (Mexiko), asi 500 př. n. l. – 500 n. l.",
+        "asi tucet předmětů, delší text jen na dvou až třech; nejdelší na stéle z La Mojarry",
+        "málo textů; návrh čtení z roku 1993 je sporný"
+       ],
+       [
+        "rongorongo",
+        "Velikonoční ostrov, doloženo v 19. st.",
+        "asi dvě desítky dřevěných předmětů",
+        "málo textů, starou rapanujštinu známe jen nepřímo; sporné je, zda jde o písmo"
+       ],
+       [
+        "Voynichův rukopis",
+        "původ neznámý; pergamen z let 1404–1438",
+        "jeden kodex, asi 240 stran",
+        "neví se, zda zapisuje jazyk, šifru, nebo nic"
+       ],
+       [
+        "vinčanské znaky",
+        "jihovýchodní Evropa, asi 4500–4000 př. n. l.",
+        "asi tisíc předmětů, většinou s jediným znakem",
+        "většina badatelů je za písmo nepokládá"
+       ]
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Písma doby bronzové",
+      "p": [
+       "Na Krétě se ve 2. tisíciletí př. n. l. užívala dvě písma, která nikdo nepřečetl. Krétské hieroglyfy, doložené hlavně na pečetidlech, se objevují o něco dříve než lineární písmo A, obě se však dlouho užívala vedle sebe. Lineární písmo A je předlohou lineárního písma B, a proto se jeho slabičné znaky dají přibližně vyslovit; jazyk mínojských písařů je však neznámý a podle toho, co z mluvnice lze vyčíst, nebyl blízce příbuzný s žádným známým jazykem. O lineárním písmu A a disku z Faistu podrobněji vypráví stránka Starověké Řecko.",
+       "Písmo harappské civilizace v povodí Indu je doloženo asi na čtyřech až pěti tisících předmětů, hlavně malých pečetí. Nápisy mají v průměru asi pět znaků, jazyk je neznámý a bilingva chybí. Nejčastěji se uvažuje o raném drávidském jazyce, doložit se to však nepodařilo, a podle menšinového názoru znaky jazyk vůbec nezapisují (podrobněji na stránce Starověká Indie).",
+       "Protoelamské písmo se užívalo asi v letech 3100–2900 př. n. l. v Íránu, od Sús v Chúzistánu po náhorní plošinu, zhruba současně s nejstarším klínovým písmem v Mezopotámii. Známe asi 1 600 tabulek a zlomků. Víme, že jde o hospodářské záznamy, a číselným znakům rozumíme, protože se podobají mezopotamským, takže víme, kolik se zapisovalo; co se počítalo, lze určit jen u části znaků. Většina ostatních znaků je abstraktní a jazyk písařů neznáme; že šlo o elamštinu, je jen domněnka.",
+       "Mladší lineární elamské písmo (asi 2300–1850 př. n. l.) je doloženo jen asi padesáti převážně krátkými nápisy. Jeho jazykem je elamština, kterou známe z klínových textů, a několik nápisů má akkadský protějšek; podle nich se už v letech 1905–1912 podařilo přečíst jména krále Puzur-Inšušinaka a boha Inšušinaka. Francouzský archeolog François Desset s kolegy roku 2022 publikoval návrh čtení téměř všech znaků. Část odborníků ho přijala, jiní čekají na podrobné překlady textů a sporné je i to, zda je písmo čistě hláskové. Za plně rozluštěné ho proto zatím pokládat nelze.",
+       "Z přístavu Byblos v dnešním Libanonu pochází čtrnáct nápisů na bronzových destičkách, bronzových „špachtlích“ a kamenných deskách. Vykopal je Maurice Dunand v letech 1928–1932; deset jich vydal roku 1945, další čtyři roku 1978. Patrně pocházejí z 18.–15. století př. n. l. Podle různých soupisů asi 90 až 114 různých znaků ukazuje na slabičné písmo a některé připomínají egyptské znaky; jazyk ani hodnoty znaků však doloženy nejsou."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "protoelam"
+     },
+     {
+      "typ": "text",
+      "h": "Šíje a ostrov: istmické písmo a rongorongo",
+      "p": [
+       "Na šíji Tehuantepec v jižním Mexiku se asi mezi lety 500 př. n. l. a 500 n. l. psalo istmickým, podle kultury také epiolméckým písmem. Nejdelší text nese kamenná stéla nalezená roku 1986 v La Mojarře ve Veracruzu; vedle nápisu jsou na ní data v mezoamerickém dlouhém počtu z poloviny 2. století n. l. (o dlouhém počtu viz stránku Mayové). John Justeson a Terrence Kaufman roku 1993 ohlásili částečné rozluštění a jazyk určili jako ranou podobu zoqueských jazyků (větev mixe-zoqueské rodiny). Stephen Houston a Michael Coe (2004) však jejich postup nedokázali uplatnit na další nápis a pokládají rozluštění za neprokázané. Spor nejspíš rozhodne až nový delší text.",
+       "Na Velikonočním ostrově (Rapa Nui) zaznamenal dřevěné tabulky s řádky drobných znaků roku 1864 misionář Eugène Eyraud; napsal, že je viděl v každé chýši. Ostrov tehdy procházel katastrofou: nájezdy peruánských otrokářů roku 1862 a následné epidemie snížily počet obyvatel v 70. letech 19. století pod dvě stě a znalost znaků se patrně ztratila. Dochovaly se asi dvě desítky dřevěných předmětů, rozptýlených po muzeích světa; na ostrově nezůstal žádný.",
+       "Znaky – obrysy lidí, zvířat, rostlin a geometrické tvary – jsou psané v obráceném bústrofédonu: po každém řádku se tabulka otočí vzhůru nohama. U jedné tabulky se podařilo rozpoznat úsek s měsíčním kalendářem, jinak žádnému textu nerozumíme. Brání tomu málo textů, chybějící souvislosti i to, že dnešní rapanujština je silně ovlivněná tahitštinou. Sporné je, zda jde o plné písmo, nebo o protopísmo či pomůcku pro paměť; žádný z výkladů není prokázán. Sporné je také, zda vzniklo samostatně, nebo až po setkání s Evropany. Radiokarbonové datování dřeva tabulek uložených v Římě, zveřejněné roku 2024, ukázalo u jedné z nich dobu dávno před prvním evropským kontaktem (1722); dřevo však mohlo být popsáno později."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "rongorongo",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "Je to vůbec písmo? Vinča a Tărtăria",
+      "p": [
+       "Na keramice, přeslenech a soškách neolitické vinčanské kultury v jihovýchodní Evropě se objevují vyryté značky, většinou z let asi 4500–4000 př. n. l. Poprvé je roku 1875 našla maďarská archeoložka Zsófia Tormová v Tordoši (dnes Turdaș v Rumunsku), roku 1908 je odkryl Miloje Vasić ve Vinči u Bělehradu, podle níž se kultura jmenuje. Přes 85 % nápisů tvoří jediný znak a u skupin znaků nelze určit pořadí ani směr čtení.",
+       "Roku 1961 našel Nicolae Vlassa u obce Tărtăria v Rumunsku tři hliněné destičky se znaky. Jejich stáří se odvozuje jen od jiných předmětů z naleziště, datovaných radiokarbonem před rok 4000 př. n. l.; destičky samy datovat nelze, protože byly po nálezu tepelně upraveny, a okolnosti nálezu jsou sporné. Archeoložka Marija Gimbutasová viděla ve vinčanských znacích „staroevropské písmo“; tento výklad přijat nebyl.",
+       "Většina badatelů značky za písmo nepokládá. Mohly označovat vlastnictví nebo výrobce, počty či obřadní významy. Proti výkladu jako písma se uvádí i to, že písmo vzniklo v Mezopotámii pro potřeby státní správy a účetnictví, a takové instituce vinčanská kultura patrně neměla. Vinča proto do dějin písma patří jako příklad toho, jak těžké je poznat, kde končí symbol a začíná zápis jazyka."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "tartaria"
+     },
+     {
+      "typ": "text",
+      "h": "Voynichův rukopis",
+      "p": [
+       "Voynichův rukopis je kodex o zhruba 240 stranách pergamenu, popsaný písmem, které se jinde nevyskytuje, a vyzdobený kresbami rostlin, astronomických a astrologických diagramů, koupajících se žen a nádob. Radiokarbonové datování pergamenu na Arizonské univerzitě roku 2009 dalo léta 1404–1438; kdy byl text napsán, tím přesně určeno není. Rostliny se jednoznačně určit nedají. Od roku 1969 je rukopis v Beineckeho knihovně Yaleovy univerzity pod signaturou MS 408.",
+       "Jeho doložené dějiny začínají v Praze. Roku 1639 poslal pražský alchymista Georg Baresch (Jiří Bareš) ukázky písma jezuitovi Athanasiu Kircherovi do Říma. Po Bareschově smrti získal rukopis rektor pražské univerzity Jan Marek Marci a roku 1665 nebo 1666 ho Kircherovi poslal. V průvodním dopise uvádí, co slyšel od svého přítele: rukopis prý koupil císař Rudolf II. za 600 dukátů. Je to svědectví z druhé ruky. Na první straně je téměř neviditelný podpis Jakuba Hořčického z Tepence, správce Rudolfových zahrad; jeho pravost je však sporná. Roku 1912 rukopis koupil z majetku jezuitů antikvář Wilfrid Voynich, podle něhož se jmenuje.",
+       "Text má statistické vlastnosti podobné přirozeným jazykům – četnost slov například odpovídá Zipfovu zákonu –, ale i neobvyklé rysy: téměř žádné slovo nemá méně než dva nebo víc než deset znaků. Zvažuje se přirozený jazyk v neznámém písmu, šifra, umělý jazyk i propracovaný podvrh bez obsahu; žádná z těchto možností nebyla prokázána. Novodobý podvrh je však nepravděpodobný, protože by vyžadoval zásobu nejméně čtrnácti nepopsaných telecích kůží z počátku 15. století."
+      ]
+     },
+     {
+      "typ": "galerie",
+      "h": "Stránky Voynichova rukopisu",
+      "f": [
+       "voynich",
+       "rukopis"
+      ]
+     },
+     {
+      "typ": "rameček",
+      "h": "Rozluštění, která neobstála",
+      "p": [
+       "Voynichův rukopis byl „rozluštěn“ mnohokrát. Roku 1921 William Romaine Newbold ohlásil, že písmena skrývají pod lupou řecký těsnopis a text dokládá autorství Rogera Bacona; John Matthews Manly roku 1931 ukázal, že drobné tahy jsou praskliny zasychajícího inkoustu a Newboldova metoda dovolovala vyčíst téměř cokoli. Roku 2017 Nicholas Gibbs v Times Literary Supplement tvrdil, že jde o zkratkovitou latinu; odborníci namítli, že jeho čtení nedává smysluplnou latinu. Roku 2019 Gerard Cheshire ohlásil, že rukopis je psán „protorománsky“; Bristolská univerzita pak zmínku o jeho práci ze svých stránek stáhla s poukazem na pochybnosti o platnosti výzkumu.",
+       "Taková ohlášení mají společné to, že metoda je natolik volná, že z textu vyčte, co luštitel předem čeká, a nikdo jiný ji nedokáže použít na další stránky se stejným výsledkem. Skutečné rozluštění se pozná podle toho, že je nezávisle opakovatelné a dává souvislé texty. Podobná neověřená „rozluštění“ se opakovaně objevují i u písma Indu, disku z Faistu nebo rongorongo."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Jazyky bez příbuzných",
+      "p": [
+       "Izolovaný jazyk (izolát) je jazyk, u něhož se nepodařilo prokázat příbuznost s žádným jiným; tvoří tedy jednočlennou rodinu. Neznamená to, že by příbuzné nikdy neměl. Buď vymřeli, aniž se dochovaly záznamy, nebo je příbuznost tak vzdálená, že ji srovnávací metoda nezachytí: po mnoha tisíciletích změn se pravidelné hláskové shody ztratí. Izolát proto není záhada v senzačním smyslu, ale běžný výsledek jazykových dějin. Podle přísnosti měřítek jich je přes sto (Glottolog jich vede kolem 180, včetně vymřelých), nejvíc v obou Amerikách.",
+       "Hranice mezi izolátem a rodinou se může posunout. Japonština se dříve uváděla jako izolát, dnes se s rjúkjúskými jazyky řadí do japonské rodiny. Ketština na Sibiři je posledním živým jenisejským jazykem, izolátem však není, protože její vymřelí příbuzní, třeba arinština, jsou zapsaní. Od izolátů je třeba odlišit nezařazené jazyky, o nichž víme tak málo, že je zařadit nelze.",
+       "Nejznámějším izolátem je baskičtina, jediný izolát Evropy a podle převládajícího názoru jediný přeživší jazyk západní Evropy z doby před příchodem indoevropských jazyků. Za jejího předka nebo blízkého příbuzného se pokládá akvitánština, známá jen ze jmen v latinských nápisech 1.–3. století n. l. (jméno Cison odpovídá baskickému gizon „muž“). Akvitánština se většinou pokládá za přímého předka baskičtiny, a baskičtina proto zůstává izolátem; kdyby šlo o sesterský jazyk, tvořily by obě malou vaskonskou rodinu. Spojení baskičtiny s gruzínštinou se dnes odmítá a vztah k iberštině se nepodařilo prokázat. Ze starověku jsou dobře doložené izoláty sumerština a elamština: textů je tolik, že kdyby měly živé příbuzné, dali by se rozpoznat."
+      ]
+     },
+     {
+      "typ": "slova",
+      "h": "Příklady izolovaných jazyků",
+      "uvod": "Počty mluvčích jsou přibližné, podle posledních dostupných odhadů:",
+      "hlavicka": [
+       "jazyk",
+       "kde",
+       "mluvčí",
+       "poznámka"
+      ],
+      "radky": [
+       [
+        "baskičtina",
+        "sever Španělska a jihozápad Francie",
+        "asi 806 000 (2021)",
+        "jediný izolát Evropy; akvitánština je patrně její předek"
+       ],
+       [
+        "burušaskí",
+        "Hunza, Nagar a Jásin v severním Pákistánu",
+        "asi 130 000 (odhad 2018–2020)",
+        "navrhované vazby na kavkazské, jenisejské i indoevropské jazyky nejsou prokázány"
+       ],
+       [
+        "ainština",
+        "ostrov Hokkaidó v Japonsku",
+        "jen několik polořečníků, přibývá nových mluvčích (2022)",
+        "s vymřelou sachalinskou a kurilskou ainštinou tvoří malou rodinu bez prokázaných příbuzných"
+       ],
+       [
+        "kusunda",
+        "západní a střední Nepál",
+        "23 podle sčítání 2021",
+        "dlouho mylně řazena k tibetobarmským jazykům"
+       ],
+       [
+        "nihali",
+        "okres Buldhána v Maháráštře (Indie)",
+        "asi 2 500 (2016)",
+        "velkou část slov převzala ze sousedních jazyků, hlavně z mundského korku; jádro slovní zásoby nemá protějšky"
+       ],
+       [
+        "hadza",
+        "u jezera Eyasi v Tanzanii",
+        "přes 1 000 (2012)",
+        "má mlaskavé hlásky, a proto se dříve řadila ke „khoisanským“ jazykům"
+       ],
+       [
+        "sumerština",
+        "jižní Mezopotámie",
+        "vymřelá",
+        "jako mluvený jazyk ustoupila akkadštině kolem přelomu 3. a 2. tisíciletí př. n. l."
+       ]
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Sporné rodiny",
+      "p": [
+       "Příbuznost jazyků se prokazuje srovnávací metodou: hledají se pravidelné hláskové shody v základní slovní zásobě a v mluvnických koncovkách a z nich se rekonstruuje společný prajazyk. Latinskému p odpovídá v germánských jazycích pravidelně f (pater – anglicky father, piscis – fish, pes, pedis – foot); taková soustava shod se nedá vysvětlit náhodou ani výpůjčkami. Čím hlouběji do minulosti, tím víc shod se ztrácí, a proto jsou návrhy velkých makrorodin sporné.",
+       "Altajská hypotéza spojovala turkické, mongolské a tunguzské jazyky, v širší podobě i korejštinu a japonštinu. Ve 20. století měla mnoho zastánců, dnes ji však většina srovnávacích lingvistů odmítá: společné rysy (řetězení přípon, sloveso na konci věty, část slovní zásoby) vykládá dlouhým soužitím a výpůjčkami, tedy jako jazykový svaz; menšina odborníků ji dál hájí. Nostratickou hypotézu navrhl roku 1903 dánský lingvista Holger Pedersen a v 60. letech ji rozpracovali Vladislav Illič-Svityč a Aharon Dolgopolskij; sdružuje indoevropské, uralské, altajské, kartvelské a podle autorů i další rodiny a dnes má jen malou podporu. Indouralská hypotéza předpokládá společného předka indoevropských a uralských jazyků; shody ve slovní zásobě se však většinou vykládají jako výpůjčky z doby, kdy spolu obě skupiny sousedily.",
+       "Dene-jenisejskou hypotézu pokládá řada odborníků za nejlépe podloženou z hypotéz o vzdálené příbuznosti; předložil ji roku 2008 (tiskem 2010) americký lingvista Edward Vajda. Spojuje ketštinu a vymřelé jenisejské jazyky Sibiře s jazyky na-dene v Severní Americe, k nimž patří například navažština. Jiní, například Lyle Campbell, považují doklady za nedostatečné. Naopak vaskonská substrátová hypotéza německého lingvisty Thea Vennemanna, podle níž se předchůdce baskičtiny po poslední době ledové rozšířil po velké části Evropy a zanechal stopy v místních jménech, je historickými lingvisty převážně odmítána. Jiná věc je vaskonská rodina v užším smyslu, tedy baskičtina s akvitánštinou; jejich příbuznost odborníci uznávají.",
+       "Zvláštní kapitolou je masové, později zvané vícestranné srovnávání amerického lingvisty Josepha Greenberga. Místo pravidelných shod porovnává naráz mnoho jazyků podle celkové podobnosti základních slov a mluvnických prvků. Takto Greenberg roku 1987 sloučil většinu původních jazyků Ameriky, kromě jazyků na-dene a eskymácko-aleutských, do jediné „amerindské“ rodiny. Většina lingvistů metodu nepřijímá: bez pravidelných shod nelze odlišit dědictví od náhody a výpůjček, a čím víc jazyků se srovnává, tím víc náhodných podobností se najde. Některá Greenbergova seskupení, například afroasijské nebo nigerokonžské jazyky, se uznávají, protože je doložily i jiné postupy (a navrhli je už jeho předchůdci); „amerindská“ a „eurasijská“ rodina se odmítají."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Odkud přišli Indoevropané",
+      "p": [
+       "Že indoevropské jazyky od Indie po Island mají společného předka, je prokázaný výsledek srovnávací jazykovědy. Kde a kdy se jejich prajazykem mluvilo, však přímo doložit nelze, protože předcházel písmu. Rozhodují nepřímé doklady: rekonstruovaná slovní zásoba, archeologie a v posledních letech i genetika dávných populací.",
+       "Dnes převládá stepní (kurganová) hypotéza, spojená s archeology Marijou Gimbutasovou a Davidem Anthonym. Klade pravlast do pontsko-kaspické stepi severně od Černého a Kaspického moře v 5.–4. tisíciletí př. n. l. Opírá se mimo jiné o to, že prajazyk měl slova pro kolo a vůz a pro chov koní a dobytka, takže nemohl být o mnoho starší než vynález kola. Podporují ji i genetické studie z roku 2015, které zjistily rozsáhlý přesun obyvatel ze stepi do střední Evropy asi před 4 500 lety.",
+       "Hlavní alternativou byla anatolská hypotéza britského archeologa Colina Renfrewa (1987), podle níž se indoevropské jazyky šířily z Anatolie spolu se zemědělstvím asi od 7. tisíciletí př. n. l. Podpořily ji některé statistické fylogenetické studie (2003, 2012), s jazykovými a genetickými doklady se však slučuje hůř a dnes má menšinovou podporu; sám Renfrew roku 2017 uznal velké migrace ze stepi do Evropy, starší fázi prajazyka však dál klade do Anatolie. Otevřené zůstávají podrobnosti, například odkud přišli předkové anatolských jazyků včetně chetitštiny a zda nejstarší fáze prajazyka nevznikla jižněji, v okolí Kavkazu. Tvrzení, že indoevropské jazyky vznikly v Indii nebo že se v Evropě mluví nepřetržitě od starší doby kamenné, se v odborné literatuře pokládají za okrajová a neobstála."
+      ]
+     },
+     {
+      "typ": "osa",
+      "h": "Časová osa",
+      "udalosti": [
+       [
+        "1639",
+        "Nejstarší doložená zmínka o Voynichově rukopisu: dopis pražského alchymisty Georga Barescha Athanasiu Kircherovi."
+       ],
+       [
+        "1864",
+        "Eugène Eyraud popisuje dřevěné tabulky rongorongo na Velikonočním ostrově."
+       ],
+       [
+        "1875",
+        "Zsófia Tormová nachází v Tordoši první předměty s vinčanskými znaky."
+       ],
+       [
+        "1903",
+        "Holger Pedersen navrhuje nostratickou makrorodinu."
+       ],
+       [
+        "1909–1911",
+        "Francis Llewellyn Griffith určuje hodnoty znaků meroitského písma."
+       ],
+       [
+        "1912",
+        "Wilfrid Voynich kupuje rukopis, který dnes nese jeho jméno."
+       ],
+       [
+        "1961",
+        "Nález destiček z Tărtărie v Rumunsku."
+       ],
+       [
+        "1986",
+        "Nález stély z La Mojarry s nejdelším istmickým nápisem."
+       ],
+       [
+        "1987",
+        "Colin Renfrew formuluje anatolskou hypotézu; Joseph Greenberg navrhuje „amerindskou“ rodinu."
+       ],
+       [
+        "1993",
+        "John Justeson a Terrence Kaufman ohlašují částečné rozluštění istmického písma."
+       ],
+       [
+        "2008",
+        "Edward Vajda předkládá dene-jenisejskou hypotézu."
+       ],
+       [
+        "2009",
+        "Radiokarbonové datování pergamenu Voynichova rukopisu: 1404–1438."
+       ],
+       [
+        "2015",
+        "Studie staré DNA podporují stepní původ indoevropských jazyků."
+       ],
+       [
+        "2022",
+        "François Desset a spolupracovníci publikují návrh čtení lineárního elamského písma."
+       ]
+      ]
+     },
+     {
+      "typ": "pojmy",
+      "h": "Pojmy",
+      "uvod": "Odborné výrazy, které se v debatách o nerozluštěných písmech a vzdálených příbuznostech opakují:",
+      "pojmy": [
+       [
+        "Izolovaný jazyk (izolát)",
+        "Jazyk bez prokázané příbuznosti s jiným jazykem; tvoří jednočlennou rodinu. Neznamená to, že příbuzné nikdy neměl, jen že se je nepodařilo doložit.",
+        "Baskičtina, burušaskí, hadza; z vymřelých sumerština a elamština."
+       ],
+       [
+        "Nezařazený jazyk",
+        "Jazyk doložený tak málo, že ho nelze zařadit do rodiny ani spolehlivě označit za izolát.",
+        "Mnohé jazyky starověku známé jen z několika krátkých nápisů nebo jmen."
+       ],
+       [
+        "Makrorodina",
+        "Navrhované seskupení několika prokázaných jazykových rodin pod společného předka. Žádná z velkých makrorodin není obecně přijata.",
+        "Nostratická, altajská v širším smyslu, dene-kavkazská."
+       ],
+       [
+        "Srovnávací metoda",
+        "Postup, který příbuznost dokazuje pravidelnými hláskovými shodami v základní slovní zásobě a mluvnici a rekonstrukcí prajazyka.",
+        "Latinské p odpovídá germánskému f: pater – father, piscis – fish."
+       ],
+       [
+        "Masové (vícestranné) srovnávání",
+        "Metoda Josepha Greenberga: porovnává naráz mnoho jazyků podle celkové podobnosti slov, bez požadavku pravidelných shod. Většina lingvistů ji nepřijímá.",
+        "Greenbergova „amerindská“ rodina (1987)."
+       ],
+       [
+        "Rozluštění",
+        "Zjištění, jak se čtou znaky neznámého písma, a porozumění jazyku, který zapisují. Obojí nemusí přijít současně.",
+        "Meroitské písmo umíme od let 1909–1911 přečíst, jazyku rozumíme jen zčásti."
+       ],
+       [
+        "Bilingva",
+        "Nápis se stejným textem ve dvou jazycích nebo písmech. Pro luštitele je nejcennější, když je jedna verze čitelná.",
+        "Akkadsko-elamská Table au Lion (Lví deska) v Louvru, podle níž se přečetla první jména v lineárním elamském písmu."
+       ],
+       [
+        "Protopísmo",
+        "Soustava značek, která zaznamenává čísla, vlastnictví nebo pojmy, ale nezapisuje soustavně mluvený jazyk.",
+        "Za protopísmo nebo za pouhé symboly se pokládají vinčanské znaky; u rongorongo je to jeden z výkladů."
+       ],
+       [
+        "Jazykový svaz",
+        "Skupina jazyků různého původu, které si dlouhým soužitím připodobnily hláskosloví, mluvnici nebo slovní zásobu.",
+        "Turkické, mongolské a tunguzské jazyky podle většinového výkladu altajské otázky."
+       ],
+       [
+        "Substrát",
+        "Stopy jazyka, který v oblasti zanikl, v jazyce, který ho vystřídal – obvykle v místních jménech a ve slovech pro místní rostliny, zvířata a věci.",
+        "Předřecká slova na -nthos v řečtině, například labyrinthos."
+       ]
+      ]
+     },
+     {
+      "typ": "tecky",
+      "h": "Izolované jazyky na glóbu",
+      "uvod": "Klepnutím se jazyk ukáže na glóbu:"
+     },
+     {
+      "typ": "zdroje",
+      "h": "Zdroje a další četba",
+      "p": [
+       "Andrew Robinson: Lost Languages. The Enigma of the World's Undeciphered Scripts. McGraw-Hill 2002.",
+       "Peter T. Daniels, William Bright (ed.): The World's Writing Systems. Oxford University Press 1996.",
+       "Lyle Campbell, William J. Poser: Language Classification. History and Method. Cambridge University Press 2008.",
+       "David W. Anthony: The Horse, the Wheel, and Language. Princeton University Press 2007.",
+       "R. L. Trask: The History of Basque. Routledge 1997.",
+       "Glottolog 5 (jazyky a jejich zařazení)."
+      ]
+     }
+    ]
+   },
+   "en": {
+    "nazev": "Linguistic mysteries",
+    "stitek": "Language stories",
+    "podtitul": "Undeciphered scripts · languages without relatives · disputed families",
+    "perex": "Linguists can read cuneiform and hieroglyphs and reconstruct words spoken five or six thousand years ago. Yet some questions remain open: scripts nobody has read, languages whose relatives are unknown, and large families that specialists still argue about. This page keeps apart what is documented, what is hypothesis, and what keeps being repeated although it has not survived scholarly scrutiny.",
+    "fakta": [
+     [
+      "Undeciphered scripts (selection)",
+      "Linear A, Cretan hieroglyphs, the Indus script, Proto-Elamite, the Byblos script, the Isthmian script, rongorongo"
+     ],
+     [
+      "Readable but only partly understood",
+      "Meroitic (read in 1909–1911), and in part Etruscan"
+     ],
+     [
+      "Language isolates (examples)",
+      "Basque, Burushaski, Kusunda, Nihali, Hadza; the extinct Sumerian and Elamite"
+     ],
+     [
+      "Voynich manuscript",
+      "parchment of 1404–1438 (radiocarbon dating, 2009); Beinecke Library, Yale University"
+     ],
+     [
+      "Indo-European homeland",
+      "prevailing view: the steppe hypothesis – the Pontic–Caspian steppe, 5th–4th millennium BCE"
+     ],
+     [
+      "Mass comparison",
+      "Joseph Greenberg's method; rejected by most linguists"
+     ]
+    ],
+    "nazvyTecek": {
+     "basq1248": "Basque",
+     "buru1296": "Burushaski",
+     "ainu1240": "Ainu (Hokkaido)",
+     "kusu1250": "Kusunda",
+     "niha1238": "Nihali",
+     "hadz1240": "Hadza",
+     "sume1241": "Sumerian"
+    },
+    "oddily": [
+     {
+      "typ": "text",
+      "h": "Three kinds of not knowing",
+      "p": [
+       "“Mystery” here means nothing occult or supernatural. These are open questions for which the evidence so far is not enough. They come in three kinds: scripts whose inscriptions we cannot read or cannot understand; languages that have not been shown to be related to any other; and proposed large families that specialists dispute because the evidence for them is weak.",
+       "For each of these questions three things need to be kept apart. A fact is what is documented by finds and independently verified, such as the age of the Voynich manuscript's parchment. A hypothesis is an interpretation the evidence allows but does not prove, such as a relationship between the Yeniseian languages of Siberia and the Na-Dene languages of North America. A myth is a claim that spreads although it has not survived scholarly scrutiny, such as the recurring announcements that the Voynich manuscript has finally been read."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Reading is not understanding",
+      "p": [
+       "Decipherment has two sides: working out how the signs are read, and understanding the language they record. The two need not come together. Etruscan inscriptions can be read because the Etruscan alphabet derives from the Greek, but the language is only partly understood. In Linear A the values of many signs can be estimated from the later Linear B, but the language is unknown. In the Indus script neither the sign values nor the language are known.",
+       "The clearest case of a script that can be read but not understood is Meroitic, from the kingdom of Kush on the middle Nile (today's Sudan). It was used from the 3rd century BCE; the last known inscription dates from the 5th century CE. It had two forms: a cursive derived from Egyptian Demotic and monumental signs modelled on Egyptian hieroglyphs. In 1909–1911 the British Egyptologist Francis Llewellyn Griffith worked out the values of its 23 signs from Egyptian names written in Meroitic. Since then the inscriptions can be pronounced, but what we understand is mainly names, titles, the set phrases of funerary texts and only part of the vocabulary.",
+       "For a long time Meroitic had no known relatives. According to the French linguist Claude Rilly it belongs to the Northern East Sudanic languages, the group that also includes the Nubian languages; Glottolog still lists it as an isolate. Without longer bilingual texts, understanding advances only slowly."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "meroe",
+      "na-vysku": true
+     },
+     {
+      "typ": "rameček",
+      "h": "What a decipherer needs",
+      "p": [
+       "Successful decipherments of the past had at least one of these supports: enough text for the signs to be counted and compared; a bilingual inscription in which one version is readable, like the Rosetta Stone for Egyptian hieroglyphs; or a language that is known or has known relatives, like Greek for Linear B.",
+       "Proper names are often the key. Names of places, kings and gods change little from one language to another, which is why they provided the first foothold for Old Persian cuneiform, for Linear B (ko-no-so, Knossos) and for Linear Elamite. Undeciphered scripts usually lack several of these supports at once."
+      ]
+     },
+     {
+      "typ": "slova",
+      "h": "Undeciphered scripts",
+      "uvod": "Scripts whose inscriptions nobody has yet read reliably, or whose reading remains disputed. The numbers of texts are approximate and change with new finds:",
+      "hlavicka": [
+       "script",
+       "where and when",
+       "surviving",
+       "why it cannot be read"
+      ],
+      "radky": [
+       [
+        "Cretan hieroglyphs",
+        "Crete, c. 2100–1700 BCE",
+        "over 300 items (corpus of 1996): seals, seal impressions and clay objects",
+        "short inscriptions, unknown language, no bilingual"
+       ],
+       [
+        "Linear A",
+        "Crete and the Aegean islands, c. 1800–1450 BCE",
+        "about 1,400 inscriptions, some 7,400 signs in all",
+        "sign values are estimated from Linear B; the language is unknown"
+       ],
+       [
+        "Indus script",
+        "Indus basin, c. 2600–1900 BCE",
+        "some 4,000–5,000 inscribed objects, about five signs on average",
+        "very short texts, unknown language, no bilingual; even whether it records language is disputed"
+       ],
+       [
+        "Proto-Elamite",
+        "Iran, mainly Susa, c. 3100–2900 BCE",
+        "about 1,600 tablets and fragments",
+        "numerical signs and some others are understood; the language is unknown"
+       ],
+       [
+        "Linear Elamite",
+        "Elam and its eastern neighbours (Iran), c. 2300–1850 BCE",
+        "about 50 inscriptions, mostly short",
+        "the language (Elamite) is known from cuneiform; a proposed reading of 2022 is only partly accepted"
+       ],
+       [
+        "Byblos script",
+        "Byblos (Lebanon), probably 18th–15th c. BCE",
+        "14 inscriptions on bronze and stone, over 1,000 signs",
+        "few texts, unknown language, no bilingual"
+       ],
+       [
+        "Isthmian (Epi-Olmec) script",
+        "Isthmus of Tehuantepec (Mexico), c. 500 BCE – 500 CE",
+        "about a dozen objects, longer texts on only two or three; the longest on the La Mojarra stela",
+        "few texts; the proposed reading of 1993 is disputed"
+       ],
+       [
+        "rongorongo",
+        "Easter Island, attested in the 19th c.",
+        "about two dozen wooden objects",
+        "few texts, Old Rapa Nui known only indirectly; whether it is writing is disputed"
+       ],
+       [
+        "Voynich manuscript",
+        "origin unknown; parchment of 1404–1438",
+        "one codex, about 240 pages",
+        "unknown whether it records a language, a cipher, or nothing"
+       ],
+       [
+        "Vinča symbols",
+        "south-eastern Europe, c. 4500–4000 BCE",
+        "about a thousand objects, mostly with a single sign",
+        "most scholars do not regard them as writing"
+       ]
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Scripts of the Bronze Age",
+      "p": [
+       "In the 2nd millennium BCE two scripts that nobody has read were in use on Crete. Cretan hieroglyphs, attested mainly on sealstones, appear somewhat earlier than Linear A, but the two were long used side by side. Linear A is the model for Linear B, so its syllabic signs can be roughly pronounced; the language of the Minoan scribes, however, is unknown, and what can be gleaned of its grammar suggests that it was not closely related to any known language. Linear A and the Phaistos Disc are covered in more detail on the Ancient Greece page.",
+       "The script of the Harappan civilization in the Indus basin is attested on some four to five thousand objects, mostly small seals. The inscriptions average about five signs, the language is unknown and there is no bilingual. An early Dravidian language is most often proposed, but this has not been demonstrated, and a minority view holds that the signs do not record language at all (see the Ancient India page).",
+       "Proto-Elamite was used around 3100–2900 BCE in Iran, from Susa in Khuzestan to the plateau, roughly at the same time as the earliest cuneiform in Mesopotamia. About 1,600 tablets and fragments are known. We know that they are administrative records, and the numerical signs are understood because they resemble the Mesopotamian ones, so we know the quantities recorded; what was being counted can be identified only for some of the signs. Most of the other signs are abstract, and the scribes' language is unknown; that it was Elamite is only a guess.",
+       "The later Linear Elamite script (c. 2300–1850 BCE) is attested in only about fifty inscriptions, most of them short. Its language is Elamite, known from cuneiform texts, and several inscriptions have an Akkadian counterpart; with their help the names of King Puzur-Inshushinak and the god Inshushinak were read as early as 1905–1912. In 2022 the French archaeologist François Desset and colleagues published a proposed reading of almost all the signs. Some specialists have accepted it, others are waiting for detailed translations of the texts, and it is also disputed whether the script is purely phonetic. For now it cannot be regarded as fully deciphered.",
+       "From the port of Byblos in present-day Lebanon come fourteen inscriptions on bronze plaques, bronze “spatulas” and stone slabs. Maurice Dunand excavated them in 1928–1932; he published ten in 1945 and four more in 1978. They probably date from the 18th–15th centuries BCE. Depending on the count, some 90 to 114 distinct signs point to a syllabary, and some resemble Egyptian signs; but neither the language nor the sign values are established."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "protoelam"
+     },
+     {
+      "typ": "text",
+      "h": "An isthmus and an island: Isthmian and rongorongo",
+      "p": [
+       "On the Isthmus of Tehuantepec in southern Mexico, between about 500 BCE and 500 CE, people wrote in the Isthmian script, also called Epi-Olmec after the culture. The longest text is on a stone stela found in 1986 at La Mojarra in Veracruz; beside the inscription it carries dates in the Mesoamerican Long Count from the mid-2nd century CE (on the Long Count, see the Maya page). In 1993 John Justeson and Terrence Kaufman announced a partial decipherment, identifying the language as an early form of Zoquean (a branch of the Mixe–Zoque family). Stephen Houston and Michael Coe (2004), however, could not apply their system to another inscription and consider the decipherment unproven. The dispute will probably be settled only by a new long text.",
+       "On Easter Island (Rapa Nui) wooden tablets with lines of small signs were first recorded in 1864 by the missionary Eugène Eyraud, who wrote that he had seen them in every hut. The island was then going through a catastrophe: Peruvian slave raids in 1862 and the epidemics that followed reduced the population to under two hundred by the 1870s, and knowledge of the signs was probably lost. About two dozen wooden objects survive, scattered among the world's museums; none remains on the island.",
+       "The signs – outlines of people, animals, plants and geometric shapes – are written in reverse boustrophedon: after each line the tablet is turned upside down. On one tablet a passage with a lunar calendar has been recognized; otherwise no text is understood. The obstacles are the small number of texts, the lack of context, and the fact that modern Rapa Nui has been heavily influenced by Tahitian. Whether it is full writing, or proto-writing or a memory aid, is disputed; none of these interpretations has been proven. It is also disputed whether it arose independently or only after contact with Europeans. Radiocarbon dating of the wood of the tablets kept in Rome, published in 2024, placed one of them long before the first European contact (1722); the wood, however, may have been inscribed later."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "rongorongo",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "Is it writing at all? Vinča and Tărtăria",
+      "p": [
+       "Incised marks appear on the pottery, spindle whorls and figurines of the Neolithic Vinča culture of south-eastern Europe, mostly from about 4500–4000 BCE. They were first found in 1875 by the Hungarian archaeologist Zsófia Torma at Tordos (today Turdaș in Romania), and in 1908 Miloje Vasić uncovered them at Vinča near Belgrade, after which the culture is named. Over 85 per cent of the inscriptions consist of a single sign, and in groups of signs neither the order nor the direction of reading can be determined.",
+       "In 1961 Nicolae Vlassa found three clay tablets with signs near the village of Tărtăria in Romania. Their age is inferred only from other objects at the site, radiocarbon-dated to before 4000 BCE; the tablets themselves cannot be dated because they were heat-treated after discovery, and the circumstances of the find are disputed. The archaeologist Marija Gimbutas saw in the Vinča signs an “Old European script”; this interpretation has not been accepted.",
+       "Most scholars do not regard the marks as writing. They may have indicated ownership or a maker, numbers or ritual meanings. Another argument against reading them as writing is that writing arose in Mesopotamia to serve state administration and accounting, institutions the Vinča culture apparently did not have. Vinča therefore belongs in the history of writing as an example of how hard it is to tell where a symbol ends and the recording of language begins."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "tartaria"
+     },
+     {
+      "typ": "text",
+      "h": "The Voynich manuscript",
+      "p": [
+       "The Voynich manuscript is a codex of about 240 parchment pages, written in a script found nowhere else and illustrated with drawings of plants, astronomical and astrological diagrams, bathing women and jars. Radiocarbon dating of the parchment at the University of Arizona in 2009 gave the years 1404–1438; this does not fix exactly when the text was written. The plants cannot be identified with certainty. Since 1969 the manuscript has been in Yale University's Beinecke Library as MS 408.",
+       "Its documented history begins in Prague. In 1639 the Prague alchemist Georg Baresch sent samples of the script to the Jesuit Athanasius Kircher in Rome. After Baresch's death the manuscript passed to Jan Marek Marci, rector of the university of Prague, who sent it to Kircher in 1665 or 1666. In his covering letter Marci reports what he had heard from a friend: the Emperor Rudolf II was said to have bought the manuscript for 600 ducats. This is second-hand testimony. On the first page is the now barely visible signature of Jakub Hořčický of Tepenec, keeper of Rudolf's gardens; its authenticity, however, is disputed. In 1912 the book dealer Wilfrid Voynich bought the manuscript from Jesuit holdings, and it bears his name.",
+       "The text has statistical properties similar to those of natural languages – word frequencies, for example, follow Zipf's law – but also unusual features: almost no word has fewer than two or more than ten characters. The possibilities considered include a natural language in an unknown script, a cipher, an invented language and an elaborate meaningless hoax; none has been proven. A modern forgery is unlikely, however, since it would have required a stock of at least fourteen blank calfskins from the early 15th century."
+      ]
+     },
+     {
+      "typ": "galerie",
+      "h": "Pages of the Voynich manuscript",
+      "f": [
+       "voynich",
+       "rukopis"
+      ]
+     },
+     {
+      "typ": "rameček",
+      "h": "Decipherments that did not hold",
+      "p": [
+       "The Voynich manuscript has been “deciphered” many times. In 1921 William Romaine Newbold announced that under magnification the letters concealed Greek shorthand and that the text proved Roger Bacon's authorship; in 1931 John Matthews Manly showed that the tiny strokes were cracks in drying ink and that Newbold's method could extract almost anything. In 2017 Nicholas Gibbs claimed in the Times Literary Supplement that the text was abbreviated Latin; specialists objected that his reading did not produce meaningful Latin. In 2019 Gerard Cheshire announced that the manuscript was written in “proto-Romance”; the University of Bristol then removed mention of his work from its website, citing concerns about the validity of the research.",
+       "What such announcements have in common is a method so loose that it finds in the text whatever the decipherer expects, and nobody else can apply it to further pages with the same result. A genuine decipherment can be recognized because it is independently repeatable and yields coherent texts. Similar unverified “decipherments” keep appearing for the Indus script, the Phaistos Disc and rongorongo."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Languages without relatives",
+      "p": [
+       "A language isolate is a language that has not been shown to be related to any other; it forms a family of one. This does not mean it never had relatives. Either they died out without leaving records, or the relationship is so distant that the comparative method can no longer detect it: after many millennia of change, regular sound correspondences are lost. An isolate is therefore not a mystery in the sensational sense but an ordinary outcome of linguistic history. Depending on how strict the criteria are, there are over a hundred of them (Glottolog lists about 180, including extinct ones), most of them in the Americas.",
+       "The line between an isolate and a family can shift. Japanese used to be listed as an isolate; today it is grouped with the Ryukyuan languages in the Japonic family. Ket in Siberia is the last living Yeniseian language, yet it is not an isolate, because its extinct relatives, such as Arin, were recorded. Isolates should also be distinguished from unclassified languages, about which too little is known to classify them at all.",
+       "The best-known isolate is Basque, the only isolate in Europe and, in the prevailing view, the only surviving language of western Europe from before the arrival of the Indo-European languages. Aquitanian, known only from names in Latin inscriptions of the 1st–3rd centuries CE, is regarded as its ancestor or close relative (the name Cison corresponds to Basque gizon ‘man’). Aquitanian is mostly regarded as the direct ancestor of Basque, which is why Basque remains an isolate; if it were a sister language, the two would form a small Vasconic family. Attempts to link Basque with Georgian are now rejected, and a connection with Iberian has not been demonstrated. From antiquity, Sumerian and Elamite are well-documented isolates: there are so many texts that any living relatives would be recognizable."
+      ]
+     },
+     {
+      "typ": "slova",
+      "h": "Examples of language isolates",
+      "uvod": "Speaker numbers are approximate, from the latest available estimates:",
+      "hlavicka": [
+       "language",
+       "where",
+       "speakers",
+       "note"
+      ],
+      "radky": [
+       [
+        "Basque",
+        "northern Spain and south-western France",
+        "about 806,000 (2021)",
+        "the only isolate in Europe; Aquitanian is probably its ancestor"
+       ],
+       [
+        "Burushaski",
+        "Hunza, Nagar and Yasin in northern Pakistan",
+        "about 130,000 (estimate 2018–2020)",
+        "proposed links with Caucasian, Yeniseian and Indo-European languages are unproven"
+       ],
+       [
+        "Ainu",
+        "Hokkaido, Japan",
+        "only a few semi-speakers; a growing number of new speakers (2022)",
+        "with extinct Sakhalin and Kuril Ainu forms a small family with no proven relatives"
+       ],
+       [
+        "Kusunda",
+        "western and central Nepal",
+        "23 in the 2021 census",
+        "long misclassified as Tibeto-Burman"
+       ],
+       [
+        "Nihali",
+        "Buldhana district, Maharashtra (India)",
+        "about 2,500 (2016)",
+        "has borrowed much of its vocabulary from neighbouring languages, above all Munda Korku; its core vocabulary has no counterparts"
+       ],
+       [
+        "Hadza",
+        "near Lake Eyasi, Tanzania",
+        "over 1,000 (2012)",
+        "has click consonants, which is why it was once grouped with the “Khoisan” languages"
+       ],
+       [
+        "Sumerian",
+        "southern Mesopotamia",
+        "extinct",
+        "gave way to Akkadian as a spoken language around the turn of the 3rd and 2nd millennia BCE"
+       ]
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Disputed families",
+      "p": [
+       "Relationship between languages is demonstrated by the comparative method: regular sound correspondences are sought in basic vocabulary and grammatical endings, and from them a common proto-language is reconstructed. Latin p corresponds regularly to f in the Germanic languages (pater – English father, piscis – fish, pes, pedis – foot); such a system of correspondences cannot be explained by chance or borrowing. The further back one goes, the more correspondences are lost, which is why proposals of large macrofamilies are disputed.",
+       "The Altaic hypothesis linked the Turkic, Mongolic and Tungusic languages, and in a wider form Korean and Japanese as well. It had many supporters in the 20th century, but today most comparative linguists reject it: they explain the shared features (strings of suffixes, verb-final order, part of the vocabulary) by long coexistence and borrowing, that is, as a linguistic area; a minority of specialists still defends it. The Nostratic hypothesis was proposed in 1903 by the Danish linguist Holger Pedersen and elaborated in the 1960s by Vladislav Illich-Svitych and Aharon Dolgopolsky; it groups Indo-European, Uralic, Altaic, Kartvelian and, depending on the author, further families, and today has little support. The Indo-Uralic hypothesis posits a common ancestor of Indo-European and Uralic; the shared vocabulary, however, is mostly interpreted as loans from a time when the two groups were neighbours.",
+       "Many specialists regard the Dene–Yeniseian hypothesis as the best supported of the long-range proposals; it was put forward in 2008 (in print in 2010) by the American linguist Edward Vajda. It links Ket and the extinct Yeniseian languages of Siberia with the Na-Dene languages of North America, such as Navajo. Others, such as Lyle Campbell, find the evidence insufficient. By contrast, the Vasconic substrate hypothesis of the German linguist Theo Vennemann, according to which a forerunner of Basque spread across much of Europe after the last Ice Age and left traces in place names, is largely rejected by historical linguists. The Vasconic family in the narrow sense – Basque together with Aquitanian – is a different matter; specialists accept that relationship.",
+       "A chapter of its own is the mass comparison, later called multilateral comparison, of the American linguist Joseph Greenberg. Instead of regular correspondences, it compares many languages at once by the overall similarity of basic words and grammatical elements. In this way Greenberg in 1987 united most of the indigenous languages of the Americas, apart from the Na-Dene and Eskimo–Aleut languages, into a single “Amerind” family. Most linguists reject the method: without regular correspondences, inheritance cannot be told apart from chance and borrowing, and the more languages are compared, the more chance resemblances turn up. Some of Greenberg's groupings, such as Afroasiatic and Niger–Congo, are accepted because other methods have supported them (and earlier scholars had proposed them); “Amerind” and “Eurasiatic” are rejected."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Where did the Indo-Europeans come from?",
+      "p": [
+       "That the Indo-European languages from India to Iceland share a common ancestor is an established result of comparative linguistics. Where and when their proto-language was spoken, however, cannot be documented directly, because it predates writing. The evidence is indirect: reconstructed vocabulary, archaeology and, in recent years, the genetics of ancient populations.",
+       "The prevailing view today is the steppe (Kurgan) hypothesis, associated with the archaeologists Marija Gimbutas and David Anthony. It places the homeland on the Pontic–Caspian steppe north of the Black and Caspian Seas in the 5th–4th millennium BCE. One of its arguments is that the proto-language had words for the wheel and the wagon and for keeping horses and cattle, so it cannot be much older than the invention of the wheel. It is also supported by genetic studies of 2015, which found a large-scale movement of people from the steppe into central Europe about 4,500 years ago.",
+       "The main alternative was the Anatolian hypothesis of the British archaeologist Colin Renfrew (1987), according to which the Indo-European languages spread from Anatolia together with farming from about the 7th millennium BCE. Some statistical phylogenetic studies (2003, 2012) supported it, but it fits the linguistic and genetic evidence less well and today has minority support; in 2017 Renfrew himself accepted large migrations from the steppe into Europe, while still placing the earlier stage of the proto-language in Anatolia. Details remain open, for example where the ancestors of the Anatolian languages, including Hittite, came from, and whether the earliest stage of the proto-language arose further south, near the Caucasus. Claims that the Indo-European languages originated in India, or have been spoken in Europe continuously since the Palaeolithic, are regarded in the scholarly literature as fringe and have not held up."
+      ]
+     },
+     {
+      "typ": "osa",
+      "h": "Timeline",
+      "udalosti": [
+       [
+        "1639",
+        "Earliest documented mention of the Voynich manuscript: a letter from the Prague alchemist Georg Baresch to Athanasius Kircher."
+       ],
+       [
+        "1864",
+        "Eugène Eyraud describes wooden rongorongo tablets on Easter Island."
+       ],
+       [
+        "1875",
+        "Zsófia Torma finds the first objects with Vinča signs at Tordos."
+       ],
+       [
+        "1903",
+        "Holger Pedersen proposes the Nostratic macrofamily."
+       ],
+       [
+        "1909–1911",
+        "Francis Llewellyn Griffith works out the sign values of the Meroitic script."
+       ],
+       [
+        "1912",
+        "Wilfrid Voynich buys the manuscript that now bears his name."
+       ],
+       [
+        "1961",
+        "The Tărtăria tablets are found in Romania."
+       ],
+       [
+        "1986",
+        "Discovery of the La Mojarra stela with the longest Isthmian inscription."
+       ],
+       [
+        "1987",
+        "Colin Renfrew sets out the Anatolian hypothesis; Joseph Greenberg proposes the “Amerind” family."
+       ],
+       [
+        "1993",
+        "John Justeson and Terrence Kaufman announce a partial decipherment of the Isthmian script."
+       ],
+       [
+        "2008",
+        "Edward Vajda puts forward the Dene–Yeniseian hypothesis."
+       ],
+       [
+        "2009",
+        "Radiocarbon dating of the Voynich manuscript's parchment: 1404–1438."
+       ],
+       [
+        "2015",
+        "Ancient DNA studies support a steppe origin of the Indo-European languages."
+       ],
+       [
+        "2022",
+        "François Desset and colleagues publish a proposed reading of Linear Elamite."
+       ]
+      ]
+     },
+     {
+      "typ": "pojmy",
+      "h": "Key terms",
+      "uvod": "Technical terms that recur in debates about undeciphered scripts and distant relationships:",
+      "pojmy": [
+       [
+        "Language isolate",
+        "A language with no demonstrated relationship to any other; it forms a family of one. This does not mean it never had relatives, only that none have been shown.",
+        "Basque, Burushaski, Hadza; among extinct languages Sumerian and Elamite."
+       ],
+       [
+        "Unclassified language",
+        "A language so poorly documented that it can be neither assigned to a family nor reliably called an isolate.",
+        "Many ancient languages known only from a few short inscriptions or names."
+       ],
+       [
+        "Macrofamily",
+        "A proposed grouping of several established language families under a common ancestor. None of the large macrofamilies is generally accepted.",
+        "Nostratic, Altaic in the wider sense, Dene–Caucasian."
+       ],
+       [
+        "Comparative method",
+        "The procedure that demonstrates relationship through regular sound correspondences in basic vocabulary and grammar, and by reconstructing the proto-language.",
+        "Latin p corresponds to Germanic f: pater – father, piscis – fish."
+       ],
+       [
+        "Mass (multilateral) comparison",
+        "Joseph Greenberg's method: it compares many languages at once by overall similarity of words, without requiring regular correspondences. Most linguists reject it.",
+        "Greenberg's “Amerind” family (1987)."
+       ],
+       [
+        "Decipherment",
+        "Working out how the signs of an unknown script are read, and understanding the language they record. The two need not come at the same time.",
+        "Meroitic has been readable since 1909–1911, but the language is only partly understood."
+       ],
+       [
+        "Bilingual",
+        "An inscription with the same text in two languages or scripts. Most valuable to a decipherer when one version is readable.",
+        "The Akkadian–Elamite Table au Lion in the Louvre, from which the first names in Linear Elamite were read."
+       ],
+       [
+        "Proto-writing",
+        "A system of marks that records numbers, ownership or concepts but does not systematically record spoken language.",
+        "The Vinča signs are regarded as proto-writing or as mere symbols; for rongorongo this is one interpretation."
+       ],
+       [
+        "Linguistic area (Sprachbund)",
+        "A group of languages of different origin that have grown alike in sounds, grammar or vocabulary through long coexistence.",
+        "The Turkic, Mongolic and Tungusic languages, in the majority view of the Altaic question."
+       ],
+       [
+        "Substrate",
+        "Traces of a language that died out in an area, left in the language that replaced it – usually in place names and in words for local plants, animals and things.",
+        "Pre-Greek words in -nthos in Greek, such as labyrinthos."
+       ]
+      ]
+     },
+     {
+      "typ": "tecky",
+      "h": "Language isolates on the globe",
+      "uvod": "Tap a language to show it on the globe:"
+     },
+     {
+      "typ": "zdroje",
+      "h": "Sources and further reading",
+      "p": [
+       "Andrew Robinson: Lost Languages. The Enigma of the World's Undeciphered Scripts. McGraw-Hill 2002.",
+       "Peter T. Daniels, William Bright (eds.): The World's Writing Systems. Oxford University Press 1996.",
+       "Lyle Campbell, William J. Poser: Language Classification. History and Method. Cambridge University Press 2008.",
+       "David W. Anthony: The Horse, the Wheel, and Language. Princeton University Press 2007.",
+       "R. L. Trask: The History of Basque. Routledge 1997.",
+       "Glottolog 5 (languages and their classification)."
+      ]
+     }
+    ]
+   }
   }
  ]
 }
