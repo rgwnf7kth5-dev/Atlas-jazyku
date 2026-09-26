@@ -679,7 +679,7 @@ function typZobrazena(){ return typVlastnost >= 0 && !!typTr && panelVit.hidden;
 function nahrajTypologii(){ if (!gl || !glJaz || !typTr) return; if (!glJaz.typ) glJaz.typ = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, glJaz.typ); gl.bufferData(gl.ARRAY_BUFFER, Float32Array.from(typTr), gl.STATIC_DRAW); glJaz.typVl = typVlastnost; }
 function barvyVrstvy(){
   if (!typZobrazena()) return barvyVitality().map(function(b){ return [b, 0.95]; });
-  const v = TYP.vlastnosti[typVlastnost], out = [[barvy["typ-nic"], denni ? 0.5 : 0.35]];
+  const v = TYP.vlastnosti[typVlastnost], out = [[barvy["typ-nic"], denni ? 0.3 : 0.28]];
   typBarvy(v).forEach(function(k, c){ out.push([barvy[k.slice(2)], typIzolace < 0 || typIzolace === c ? 0.95 : 0.12]); });
   while (out.length < 8) out.push([barvy["typ-nic"], 0]);
   return out;
@@ -1944,7 +1944,11 @@ function postavTypologiiPanel(){
       b.appendChild(prvek("span", "typ-jm", v.nazev[T.lang]));
       b.appendChild(prvek("span", "pocet-st", cislo(v.pocet)));
       b.title = t("typologieJazykuWals", {n: cislo(v.pocet) + " " + tvar(v.pocet, T.jazyk)});
-      b.addEventListener("click", function(){ nastavTypologii(k === typVlastnost ? -1 : k); });
+      b.addEventListener("click", function(){
+        const zap = k !== typVlastnost;
+        nastavTypologii(zap ? k : -1);
+        if (zap) { otevriTypologii(false); otevriZobrazeni(false); legendaTyp.querySelector(".typ-jina").focus({preventScroll: true}); }   // seznam nesmí zakrývat mapu (uživatel 26. 9. 2026)
+      });
       li.appendChild(b); ul.appendChild(li);
     });
     kam.appendChild(ul);
@@ -1963,6 +1967,9 @@ function obnovLegenduTypologie(){
   const x = prvek("button", "zavrit"); x.type = "button"; x.setAttribute("aria-label", T.typologieVypnout); x.title = T.typologieVypnout;
   x.innerHTML = '<svg aria-hidden="true"><use href="#i-krizek"/></svg>'; x.addEventListener("click", function(){ nastavTypologii(-1); });
   hl.appendChild(x); legendaTyp.appendChild(hl);
+  const jina = prvek("button", "typ-jina", T.typologieJina); jina.type = "button";
+  jina.addEventListener("click", function(){ otevriTypologii(true); });
+  legendaTyp.appendChild(jina);
   const det = prvek("details", "typ-leg-popis"); det.appendChild(prvek("summary", null, T.typologieOPopisu));
   det.appendChild(prvek("p", null, v.popis[T.lang])); legendaTyp.appendChild(det);
   const ul = prvek("ul", "typ-leg-hodnoty");

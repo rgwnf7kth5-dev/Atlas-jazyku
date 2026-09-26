@@ -556,5 +556,6 @@
  "typologieKarta": "Typology (WALS)",
  "typologieKartaPozn": "Features and values from WALS Online. Only those WALS describes for the language are listed.",
  "typologieNaMape": "Show on the map",
- "typologieJazykuWals": "{n} in the WALS data"
+ "typologieJazykuWals": "{n} in the WALS data",
+ "typologieJina": "Another feature…"
 }

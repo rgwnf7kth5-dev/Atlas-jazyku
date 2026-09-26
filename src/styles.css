@@ -1028,6 +1028,9 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 .typ-leg-hlava{display:flex; align-items:flex-start; gap:8px}
 .typ-leg-hlava h3{flex:1; margin:2px 0 0; font:600 1.02rem/1.25 var(--pismo-nadpis)}
 .typ-leg-hlava .zavrit{width:28px; height:28px; flex:none}
+.typ-jina{margin:2px 0 0; padding:3px 10px; border-radius:999px; border:1px solid var(--linka2); background:transparent; color:var(--text2);
+  font:600 .74rem/1.3 var(--pismo-text); cursor:pointer}
+.typ-jina:hover,.typ-jina:focus-visible{color:var(--text); border-color:var(--cyan)}
 .typ-leg-popis{margin:4px 0 6px; font-size:.8rem; color:var(--text2)}
 .typ-leg-popis summary{cursor:pointer; font-weight:600; color:var(--text2)}
 .typ-leg-popis p{margin:6px 0 0; line-height:1.45}

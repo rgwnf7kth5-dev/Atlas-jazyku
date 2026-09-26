@@ -556,5 +556,6 @@
  "typologieKarta": "Typologie (WALS)",
  "typologieKartaPozn": "Vlastnosti a hodnoty podle WALS Online. Uvedeny jsou jen ty, které WALS u jazyka popisuje.",
  "typologieNaMape": "Ukázat na mapě",
- "typologieJazykuWals": "{n} v datech WALS"
+ "typologieJazykuWals": "{n} v datech WALS",
+ "typologieJina": "Jiná vlastnost…"
 }

@@ -233,7 +233,7 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a živý web workflow Diag
   jedna barevná vrstva naráz, otevřené stupně vitality mají přednost (`typZobrazena`). Paleta `--typ-1…5`, `--typ-jine`
   (barva inkoustu), `--typ-nic`, stupnice `--typ-r0…r6` na konci `styles.css` – ověřená pro všechny dvojice (mapa!),
   pořadí neměnit. Legenda vpravo dole (na telefonu pod lištou) s popisky, počty, popisem a odkazem na kapitolu WALS;
-  klepnutí na hodnotu ji zvýrazní (`typIzolace`). Volba se pamatuje (`atlas-typologie`). Karta tečky i jazyka z atlasu
+  klepnutí na hodnotu ji zvýrazní (`typIzolace`). Výběr vlastnosti panel Zobrazení zavře, aby seznam nezakrýval mapu (uživatel 26. 9. 2026); jinou vlastnost otevře tlačítko „Jiná vlastnost…“ v legendě. Tečky bez údaje jsou jen slabě vidět (průhlednost 0,3). Volba se pamatuje (`atlas-typologie`). Karta tečky i jazyka z atlasu
   má záložku **Stavba** (`oddilTypologie`) s přesnými hodnotami; název vlastnosti ji ukáže na mapě. Srovnání dvou jazyků
   bere stavbu také z `TYP`. Dřívější dětské texty WALS (`T.wals`, „Pes kost hryže“) jsou pryč; `r[5]` v podrobnostech
   se už nepoužívá.
