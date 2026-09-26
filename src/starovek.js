@@ -45,7 +45,7 @@ var STAROVEK = (function(){
     ["civ-taml", "஀-௿", "Noto Serif Tamil"]]
     .map(function(p){ return [p[0], new RegExp("[" + p[1] + "]", "u"), new RegExp("([" + p[1] + "][" + p[1] + "\\u0300-\\u036F\\s]*)", "gu"), p[2]]; });
   /* písma psaná zprava doleva: řádek znaků dostane dir="rtl" */
-  const RTL = ["civ-fen", "civ-khar", "civ-aram", "civ-avest", "civ-pahl", "civ-sarab"];
+  const RTL = ["civ-fen", "civ-khar", "civ-aram", "civ-avest", "civ-pahl", "civ-sarab", "civ-hebr", "civ-syr", "civ-nab", "civ-palm", "civ-sam", "civ-arab"];
   function tridaPisma(z){ for (const p of PISMA) if (p[1].test(z)) return p[0]; return ""; }
   /* úseky starověkých písem v textu dostanou vlastní písmo */
   function text(s){

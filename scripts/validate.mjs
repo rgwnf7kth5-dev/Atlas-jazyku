@@ -78,6 +78,8 @@ if (pd.uzly.length !== pd.nad.length) chyby.push("data/podrobnosti.json: strom p
     const typy = l => (c[l].oddily || []).map(b => b.typ).join(",");
     if (typy("cs") !== typy("en")) chyby.push(`${co}: ${c.id} má v češtině a angličtině jiné oddíly`);
     for (const l of ["cs", "en"]) for (const b of c[l].oddily) for (const f of [].concat(b.f || [])) if (!c.fotky[f]) chyby.push(`${co}: ${c.id}/${l} odkazuje na neznámou fotku „${f}“`);
+    if (c === st.civilizace[0]) { const css = fs.readFileSync(path.join(KOREN, "src/starovek.css"), "utf8");
+      for (const t of fs.readFileSync(path.join(KOREN, "src/starovek.js"), "utf8").matchAll(/\[\s*"(civ-[a-z]+)", "[^"]*", "Noto/g)) if (!css.includes("." + t[1] + "{")) chyby.push(`src/starovek.css: písmo ${t[1]} je v PISMA, ale nemá pravidlo ve starovek.css (bez pravidla ve starovek.css se nenačte)`); }
     { const pot = STAROVEK_SABLONA.rodinyPisma(c), uv = c.pisma || [];
       for (const p of pot) if (!uv.includes(p)) varovani.push(`${co}: ${c.id} používá písmo ${p}, ale v „pisma“ chybí (stránka ho načte i tak)`);
       for (const p of uv) if (!pot.includes(p)) varovani.push(`${co}: ${c.id} má v „pisma“ ${p}, ale žádný jeho znak nepoužívá`); }

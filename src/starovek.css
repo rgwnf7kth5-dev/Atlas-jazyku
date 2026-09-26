@@ -37,7 +37,21 @@
 .civ-sarab{font-family:"Noto Sans Old South Arabian", sans-serif; font-weight:400; font-size:1.25em}
 .civ-etio{font-family:"Noto Serif Ethiopic", serif; font-weight:400; font-size:1.15em}
 .civ-han{font-family:"Noto Serif TC", serif; font-weight:500; font-size:1.1em}
-.civ-znak.civ-fen, .civ-znak.civ-ugar, .civ-znak.civ-perskl, .civ-znak.civ-linb, .civ-znak.civ-lina, .civ-znak.civ-mayc, .civ-znak.civ-ital, .civ-znak.civ-brahmi, .civ-znak.civ-khar, .civ-znak.civ-deva, .civ-znak.civ-aram, .civ-znak.civ-avest, .civ-znak.civ-pahl, .civ-znak.civ-sarab, .civ-znak.civ-etio, .civ-znak.civ-han{font-size:2.4rem}
+.civ-run{font-family:"Noto Sans Runic", sans-serif; font-weight:400; font-size:1.2em}
+.civ-got{font-family:"Noto Sans Gothic", sans-serif; font-weight:400; font-size:1.2em}
+.civ-ogam{font-family:"Noto Sans Ogham", sans-serif; font-weight:400; font-size:1.2em}
+.civ-hlah{font-family:"Noto Sans Glagolitic", sans-serif; font-weight:400; font-size:1.2em}
+.civ-hebr{font-family:"Noto Serif Hebrew", serif; font-weight:400; font-size:1.15em}
+.civ-syr{font-family:"Noto Sans Syriac", sans-serif; font-weight:400; font-size:1.2em}
+.civ-nab{font-family:"Noto Sans Nabataean", sans-serif; font-weight:400; font-size:1.25em}
+.civ-palm{font-family:"Noto Sans Palmyrene", sans-serif; font-weight:400; font-size:1.25em}
+.civ-sam{font-family:"Noto Sans Samaritan", sans-serif; font-weight:400; font-size:1.2em}
+.civ-arab{font-family:"Noto Naskh Arabic", serif; font-weight:400; font-size:1.2em}
+.civ-arm{font-family:"Noto Serif Armenian", serif; font-weight:400; font-size:1.1em}
+.civ-gruz{font-family:"Noto Serif Georgian", serif; font-weight:400; font-size:1.1em}
+.civ-tib{font-family:"Noto Serif Tibetan", serif; font-weight:400; font-size:1.2em}
+.civ-taml{font-family:"Noto Serif Tamil", serif; font-weight:400; font-size:1.1em}
+.civ-znak.civ-fen, .civ-znak.civ-ugar, .civ-znak.civ-perskl, .civ-znak.civ-linb, .civ-znak.civ-lina, .civ-znak.civ-mayc, .civ-znak.civ-ital, .civ-znak.civ-brahmi, .civ-znak.civ-khar, .civ-znak.civ-deva, .civ-znak.civ-aram, .civ-znak.civ-avest, .civ-znak.civ-pahl, .civ-znak.civ-sarab, .civ-znak.civ-etio, .civ-znak.civ-han, .civ-znak.civ-run, .civ-znak.civ-got, .civ-znak.civ-ogam, .civ-znak.civ-hlah, .civ-znak.civ-hebr, .civ-znak.civ-syr, .civ-znak.civ-nab, .civ-znak.civ-palm, .civ-znak.civ-sam, .civ-znak.civ-arab, .civ-znak.civ-arm, .civ-znak.civ-gruz, .civ-znak.civ-tib, .civ-znak.civ-taml{font-size:2.4rem}
 .civ-znak-radek.civ-mayc{display:inline-flex; white-space:pre-line; line-height:1.05; text-align:center; font-size:2rem; align-self:center}
 .civ-priklad:has(.civ-mayc){align-items:center}
 .civ-znak.civ-egy, .civ-znak-radek.civ-egy{font-size:2.5rem; vertical-align:0}
