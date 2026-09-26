@@ -35,6 +35,14 @@ Knihovny ve `vendor/` jsou vložené přímo do stránky (stránka nesmí závis
 - **Písmo a úřední status** (Unicode CLDR) jsou u 773 a 210 jazyků. Makrojazyk CLDR (arabština, čínština, perština…)
   patří k tečce jazyka, který za něj CLDR uvádí (standardní arabština, mandarínština, západní perština). Úřední status
   CLDR sleduje jen u části jazyků, u menšinových jazyků tedy často chybí i tam, kde nějaké úřední postavení mají.
+- **Odhad písma** (`r[15]`, 26. 9. 2026) je u dalších 5 984 jazyků, o kterých CLDR nevede `languageData`: „pravděpodobné
+  písmo“ z `likelySubtags` (CLDR ho přebírá z langtags SIL; písmo, kterým se jazyk zapisuje, pokud se zapisuje). Slouží jen
+  mapě písem (Zobrazení › Písmo) a karta tečky ho ukazuje výslovně jako odhad. Skupiny mapy: latinka (Latn, Latf), cyrilice,
+  arabské písmo (Arab, Aran), bráhmská písma (dévanágarí, bengálské … thajské, barmské, tibetské, jávské, tai…; výčet
+  `SKUPINY_PISEM` v app.js), čínské znaky s kanou a bopomofem (Hani, Hans, Hant, Jpan, Kana, Hira, Bopo) a ostatní
+  (mj. etiopské, hebrejské, řecké, gruzínské, arménské, korejské, yiské, kanadské slabičné). Rozhoduje první (nejběžnější)
+  písmo. Znakové jazyky se nepočítají. Sporně zařazená písma (kayah li, sorang sompeng, ol čiki, meitei mayek) jsou
+  v ostatních, ne v bráhmských.
   Srbština a chorvatština nemají v rejstříku vlastní tečku, údaj mají podle kódu jazyka (`atlasCldr`).
 - **Počty uživatelů** u teček jsou odhad z Unicode CLDR (zaokrouhleno na dvě platné číslice), jen u 649 jazyků.
   Balíček `speakers` z npm jsem zamítl: neuvádí, odkud čísla bere.

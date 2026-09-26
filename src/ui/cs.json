@@ -136,6 +136,15 @@
  "ukazkaPopis": "Začátek článku 1 Všeobecné deklarace lidských práv v tomto jazyce. Česky: „Všichni lidé rodí se svobodní a sobě rovní co do důstojnosti a práv…“",
  "pismo": "Písmo",
  "pismoPozn": "Podle Unicode CLDR. Je-li písem více, nejběžnější je uvedeno první.",
+ "pismoVrstva": "Písmo",
+ "pismoRadekPopis": "Barvy teček podle hlavního písma jazyka (Unicode CLDR)",
+ "pismoVrstvaPopis": "Barva tečky ukazuje hlavní písmo jazyka podle Unicode CLDR; má-li jazyk písem víc, rozhoduje nejběžnější. U jazyků, o nichž CLDR vede podrobné údaje (převážně spisovných), jde o doložené písmo. U ostatních jde o odhad CLDR (likely subtags): písmo, kterým se jazyk zapisuje, pokud se zapisuje – mnohé z těchto jazyků mají psanou podobu jen v omezené míře. Bráhmská písma pocházejí z indického písma bráhmí (dévanágarí, bengálské, tamilské, thajské, barmské, tibetské a další), kana a bopomofo vznikly z čínských znaků. Mezi ostatními písmy jsou mimo jiné etiopské, hebrejské, řecké, gruzínské, arménské a korejské písmo a kanadské slabičné písmo. Znakové jazyky se nepočítají.",
+ "pismoSkupiny": ["Latinka", "Cyrilice", "Arabské písmo", "Bráhmská písma (Indie, jihovýchodní Asie, Tibet)", "Čínské znaky, kana, bopomofo", "Ostatní písma"],
+ "pismoBezUdaje": "bez údaje v CLDR, znakové jazyky",
+ "pismoZdroj": "Unicode CLDR 48 · languageData, likelySubtags",
+ "pismoOdhad": "{p} (odhad)",
+ "pismoOdhadPozn": "Odhad Unicode CLDR (likely subtags): písmo, kterým se jazyk zapisuje, pokud se zapisuje. Podrobné údaje o jazyce CLDR nevede.",
+ "pismoOMape": "O mapě písem",
  "uredni": "Úřední jazyk",
  "uredniStav": [
   "",
@@ -368,7 +377,7 @@
      "Typologie (slovosled, pády, tóny, souhláskový inventář… – 24 vlastností): WALS Online, Světový atlas jazykových struktur (Dryer & Haspelmath 2013). WALS popisuje vybraný vzorek zhruba 2 600 jazyků, u ostatních údaj chybí. Hodnoty některých vlastností jsou pro mapu sloučené do skupin; na kartě jazyka je vždy přesná hodnota WALS.",
      "Počet hlásek: PHOIBLE. Ukázka textu: článek 1 Všeobecné deklarace lidských práv (UDHR in Unicode).",
      "Počty mluvčích: Wikidata, kde chybí, odhad z Unicode CLDR.",
-     "Písmo a úřední status: Unicode CLDR (languageData, territoryInfo). Úřední status je celostátní, de facto nebo regionální; CLDR ho eviduje jen u jazyků, pro které sleduje údaje o státech, takže u menšinových jazyků často chybí i tam, kde nějaké úřední postavení mají.",
+     "Písmo a úřední status: Unicode CLDR (languageData, territoryInfo). Úřední status je celostátní, de facto nebo regionální; CLDR ho eviduje jen u jazyků, pro které sleduje údaje o státech, takže u menšinových jazyků často chybí i tam, kde nějaké úřední postavení mají. U ostatních jazyků používá mapa písem (Zobrazení › Písmo) odhad písma z CLDR likelySubtags; dohromady tak mapa ukazuje písmo asi u 6 800 jazyků. Karta jazyka odhad jako odhad označí.",
      "Příbuzenstvo a rodokmen: strom Glottologu. České názvy větví jsou překlad tohoto atlasu; kde překlad chybí, je tam anglický název z Glottologu.",
      "Nic se nedomýšlí: když zdroj údaj nemá, karta ho neukáže."
     ]
@@ -530,6 +539,13 @@
     "p": [
      "V panelu Zobrazení › Typologie (WALS) lze vybrat jednu z 24 vlastností v pěti oblastech (fonologie, morfologie, slovosled, větná stavba, slovní zásoba). Jazyky se obarví podle hodnoty a vpravo dole se zobrazí legenda s počty jazyků, popisem vlastnosti a odkazem na příslušnou kapitolu WALS.",
      "Po výběru se seznam vlastností zavře; jinou vlastnost otevře tlačítko Jiná vlastnost… v legendě. Klepnutím na hodnotu v legendě se zvýrazní jen jazyky s touto hodnotou. WALS popisuje vzorek asi 2 600 jazyků, ostatní body zůstávají šedé."
+    ]
+   },
+   {
+    "h": "Mapa písem",
+    "p": [
+     "Přepínač Zobrazení › Písmo obarví jazyky podle hlavního písma: latinka, cyrilice, arabské písmo, bráhmská písma (Indie, jihovýchodní Asie, Tibet), čínské znaky s kanou a bopomofem a ostatní písma. Legenda vpravo dole uvádí počty jazyků; klepnutím na skupinu se zvýrazní jen ona.",
+     "Údaje pocházejí z Unicode CLDR. U jazyků, o nichž CLDR vede podrobné údaje, je písmo doložené; u ostatních jde o odhad CLDR (písmo, kterým se jazyk zapisuje, pokud se zapisuje) a karta jazyka ho tak i označí. Mapa písem a typologická mapa se nezobrazují současně."
     ]
    },
    {

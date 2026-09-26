@@ -217,6 +217,16 @@ for (const [k, z] of Object.entries(statusJazyka)) {
   if (i === undefined || uredni[i]) continue;
   uredni[i] = Object.entries(z).sort((a, b) => a[1] - b[1] || a[0].localeCompare(b[0])).map(([st, s]) => st + s).join(" ");
 }
+/* odhad písma pro vrstvu Písmo na glóbu: jazyky, o kterých CLDR nevede údaje (languageData), mají aspoň „pravděpodobné
+   písmo“ z likelySubtags (CLDR ho přebírá z langtags SIL: písmo, kterým se jazyk zapisuje, pokud se zapisuje). Na kartě se
+   neukazuje – je to odhad, ne doložený údaj. */
+const odhadPisma = new Array(kody.length).fill("");
+for (const [k, v] of Object.entries(pravdepodobne)) {
+  if (k.includes("-") || k === "und") continue;
+  const p = v.split("-")[1], i = cldrNaIndex(k);
+  if (i === undefined || pisma[i] || odhadPisma[i] || !/^[A-Z][a-z]{3}$/.test(p) || p === "Zyyy" || vyrazene.has(p)) continue;
+  odhadPisma[i] = p;
+}
 /* jazyky atlasu bez tečky v rejstříku (srbština, chorvatština…): podle kódu jazyka v languages.json */
 const atlasCldr = {};
 {
@@ -229,12 +239,12 @@ const atlasCldr = {};
     if (a || u) atlasCldr[j.id] = [a, u];
   }
 }
-const pouzitaPisma = new Set(pisma.concat(Object.values(atlasCldr).map(x => x[0])).join(" ").split(" ").filter(Boolean));
+const pouzitaPisma = new Set(pisma.concat(odhadPisma, Object.values(atlasCldr).map(x => x[0])).join(" ").split(" ").filter(Boolean));
 const nazvyPisem = {}, nazvyPisemEn = JSON.parse(cti("cldr-pisma-en.json")).main.en.localeDisplayNames.scripts;
 const PISMA_OPRAVY = {                       // kde CLDR uvádí jen přívlastek nebo odbornou zkratku
-  cs: { Hans: "čínské znaky (zjednodušené)", Hant: "čínské znaky (tradiční)", Olck: "ol čiki (santálské písmo)",
+  cs: { Hani: "čínské znaky", Latf: "lomená latinka (fraktura)", Hans: "čínské znaky (zjednodušené)", Hant: "čínské znaky (tradiční)", Olck: "ol čiki (santálské písmo)",
         Cher: "čerokézské slabičné písmo", Osge: "osedžské písmo" },
-  en: { Hans: "Chinese characters (simplified)", Hant: "Chinese characters (traditional)", Lisu: "Lisu (Fraser)" }
+  en: { Hani: "Chinese characters", Hans: "Chinese characters (simplified)", Hant: "Chinese characters (traditional)", Lisu: "Lisu (Fraser)" }
 };
 for (const l of ["cs", "en"]) {
   const n = JSON.parse(cti(`cldr-pisma-${l}.json`)).main[l].localeDisplayNames.scripts;
@@ -294,7 +304,7 @@ kody.forEach((gc, i) => {
 const radky = kody.map((_, i) => {
   const w = wals[i].join("");
   const r = [aes[i], med[i], rodic[i], staty[i], nareci[i], /[1-9]/.test(w) ? w : "", hlasky[i] || 0, udhrIndex[i], uzivatelu[i], nazvyCs[i],
-             wdMluvci[i], wdQ[i], wdWiki[i], pisma[i], uredni[i]];
+             wdMluvci[i], wdQ[i], wdWiki[i], pisma[i], uredni[i], odhadPisma[i]];
   while (r.length && (r[r.length - 1] === "" || r[r.length - 1] === 0 || r[r.length - 1] === -1)) r.pop();   // ořízni prázdný konec
   return r;
 });
@@ -316,6 +326,6 @@ const pocet = f => radky.filter(f).length;
 console.log(`Podrobnosti pro ${kody.length} jazyků (${(fs.statSync(path.join(KOREN, "data/podrobnosti.json")).size / 1024).toFixed(0)} kB):`);
 console.log(`  vitalita ${pocet(r => r[0] >= 0)}, popsanost ${pocet(r => r[1] >= 0)}, příbuzenstvo ${pocet(r => r[2] >= 0)}, státy ${pocet(r => r[3])}, nářečí ${pocet(r => r[4] > 0)}`);
 console.log(`  stavba jazyka (WALS) ${pocet(r => r[5] && /[1-9]/.test(r[5]))}, hlásky (PHOIBLE) ${pocet(r => Array.isArray(r[6]))}, ukázka textu (UDHR) ${pocet(r => r[7] >= 0)}`);
-console.log(`  odhad uživatelů (CLDR) ${pocet(r => r[8] > 0)}, český název (CLDR/Wikidata) ${pocet(r => r[9])}, písmo (CLDR) ${pocet(r => r[13])}, úřední status (CLDR) ${pocet(r => r[14])}`);
+console.log(`  odhad uživatelů (CLDR) ${pocet(r => r[8] > 0)}, český název (CLDR/Wikidata) ${pocet(r => r[9])}, písmo (CLDR) ${pocet(r => r[13])}, odhad písma ${pocet(r => r[15])}, úřední status (CLDR) ${pocet(r => r[14])}`);
 console.log(`  Wikidata: mluvčí ${pocet(r => Array.isArray(r[10]))}, položka ${pocet(r => r[11] > 0)}, článek cs ${pocet(r => r[12] & 1)}, en ${pocet(r => r[12] & 2)}` +
   (Object.keys(wd).length ? "" : "  (data/wikidata.json chybí – spusť node scripts/wikidata.mjs nebo GitHub Actions)"));

@@ -681,7 +681,7 @@ function typZobrazena(){ return typVlastnost >= 0 && !!typTr && panelVit.hidden;
 function nahrajTypologii(){ if (!gl || !glJaz || !typTr) return; if (!glJaz.typ) glJaz.typ = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, glJaz.typ); gl.bufferData(gl.ARRAY_BUFFER, Float32Array.from(typTr), gl.STATIC_DRAW); glJaz.typVl = typVlastnost; }
 function barvyVrstvy(){
   if (!typZobrazena()) return barvyVitality().map(function(b){ return [b, 0.95]; });
-  const v = TYP.vlastnosti[typVlastnost], out = [[barvy["typ-nic"], denni ? 0.3 : 0.28]];
+  const v = typVl(typVlastnost), out = [[barvy["typ-nic"], denni ? 0.3 : 0.28]];
   typBarvy(v).forEach(function(k, c){ out.push([barvy[k.slice(2)], typIzolace < 0 || typIzolace === c ? 0.95 : 0.12]); });
   while (out.length < 8) out.push([barvy["typ-nic"], 0]);
   return out;
@@ -1912,20 +1912,46 @@ function typBarvy(v){                        /* CSS proměnná pro každou skupi
   let k = 0, r = 0;
   return v.tridy.map(function(t){ return t.barva === "jine" ? "--typ-jine" : v.druh === "kat" ? "--typ-" + (++k) : "--typ-r" + RAMPA[n][r++]; });
 }
+/* vrstva Písmo (26. 9. 2026): stejná cesta jako typologie, ale skupiny plynou z hlavního písma podle CLDR – doložené
+   písmo r[13], jinak odhad r[15] (likelySubtags). Znakové jazyky se nepočítají. PISMO_K je index mimo TYP.vlastnosti,
+   takže se vrstva neukazuje v seznamu vlastností WALS, na kartě v záložce Stavba ani ve srovnání. */
+const SKUPINY_PISEM = [
+  ["Latn", "Latf"],
+  ["Cyrl"],
+  ["Arab", "Aran"],
+  ["Deva", "Beng", "Guru", "Gujr", "Orya", "Taml", "Telu", "Knda", "Mlym", "Sinh", "Tibt", "Mymr", "Thai", "Laoo", "Khmr",
+   "Bali", "Java", "Sund", "Batk", "Bugi", "Lepc", "Limb", "Cakm", "Lana", "Tavt", "Tale", "Talu", "Cham", "Saur", "Rjng", "Takr", "Sylo", "Tirh", "Shrd"],
+  ["Hani", "Hans", "Hant", "Jpan", "Kana", "Hira", "Bopo"]
+];
+const PISMO_K = TYP.vlastnosti.length;
+function pismoVl(){                        /* texty podle právě zvoleného jazyka stránky */
+  return {id: "pismo", druh: "kat", nazev: {cs: T.pismoVrstva, en: T.pismoVrstva}, popis: {cs: T.pismoVrstvaPopis, en: T.pismoVrstvaPopis},
+    tridy: T.pismoSkupiny.map(function(n, c){ return {cs: n, en: n, barva: c < SKUPINY_PISEM.length ? "" : "jine"}; })};
+}
+function hlavniPismo(i){ const r = radek(i); return ((r[13] || "").split(" ")[0]) || r[15] || ""; }
+function skupinaPisma(i){
+  if (ZNAKOVY[i]) return -1;
+  const p = hlavniPismo(i); if (!p) return -1;
+  for (let c = 0; c < SKUPINY_PISEM.length; c++) if (SKUPINY_PISEM[c].indexOf(p) >= 0) return c;
+  return SKUPINY_PISEM.length;             // ostatní písma
+}
+function typVl(k){ return k === PISMO_K ? pismoVl() : TYP.vlastnosti[k]; }
 function typSkupina(v, h){ for (let c = 0; c < v.tridy.length; c++) if (v.tridy[c].wals.indexOf(h) >= 0) return c; return -1; }
 function typHodnota(v, i){ return v.h.charCodeAt(i) - 48; }          // 0 = WALS jazyk nepopisuje
-const panelTyp = $("typologie-panel"), tlTyp = $("tl-typologie"), legendaTyp = $("typ-legenda");
+const panelTyp = $("typologie-panel"), tlTyp = $("tl-typologie"), legendaTyp = $("typ-legenda"), tlPismo = $("tl-pismo");
 function nastavTypologii(k, start){
   typVlastnost = k; typIzolace = -1; typTr = null;
   if (k >= 0) {
     if (vitalitaZap) nastavBarvyVitality(false);
-    const v = TYP.vlastnosti[k];
+    const v = typVl(k);
     typTr = new Int8Array(POCET_B);
-    for (let i = 0; i < POCET_B; i++) { const h = typHodnota(v, i); typTr[i] = h > 0 ? typSkupina(v, h) : -1; }
+    if (k === PISMO_K) for (let i = 0; i < POCET_B; i++) typTr[i] = skupinaPisma(i);
+    else for (let i = 0; i < POCET_B; i++) { const h = typHodnota(v, i); typTr[i] = h > 0 ? typSkupina(v, h) : -1; }
     nahrajTypologii();
   }
-  if (!start) { try { if (k >= 0) localStorage.setItem("atlas-typologie", TYP.vlastnosti[k].id); else localStorage.removeItem("atlas-typologie"); } catch (e) {} }
-  $("typologie-stav").hidden = k < 0; $("typologie-stav").textContent = k >= 0 ? TYP.vlastnosti[k].id : "";
+  if (!start) { try { if (k >= 0) localStorage.setItem("atlas-typologie", typVl(k).id); else localStorage.removeItem("atlas-typologie"); } catch (e) {} }
+  $("typologie-stav").hidden = k < 0 || k === PISMO_K; $("typologie-stav").textContent = k >= 0 ? typVl(k).id : "";
+  tlPismo.setAttribute("aria-pressed", k === PISMO_K ? "true" : "false");
   postavTypologiiPanel(); obnovLegenduTypologie();
   if (vybrany) { if (vybrany.typ === "atlas") ukazKartu(PODLE_ID[vybrany.id]); else if (vybrany.typ === "rejstrik") ukazKartuBodu(vybrany.i); }
   teckyZmeneny = true; potrebaKresli = true; ozivit();
@@ -1950,7 +1976,7 @@ function postavTypologiiPanel(){
       b.addEventListener("click", function(){
         const zap = k !== typVlastnost;
         nastavTypologii(zap ? k : -1);
-        if (zap) { otevriTypologii(false); otevriZobrazeni(false); legendaTyp.querySelector(".typ-jina").focus({preventScroll: true}); }   // seznam nesmí zakrývat mapu (uživatel 26. 9. 2026)
+        if (zap) { otevriTypologii(false); otevriZobrazeni(false); legendaTyp.querySelector(".typ-jina").focus({preventScroll: true}); nahoruKeGlobu(); }   // seznam nesmí zakrývat mapu (uživatel 26. 9. 2026)
       });
       li.appendChild(b); ul.appendChild(li);
     });
@@ -1961,7 +1987,7 @@ function obnovLegenduTypologie(){
   legendaTyp.hidden = typVlastnost < 0;
   scena.classList.toggle("s-typologii", typVlastnost >= 0);
   if (typVlastnost < 0) { legendaTyp.textContent = ""; return; }
-  const v = TYP.vlastnosti[typVlastnost], barvyS = typBarvy(v), pocty = v.tridy.map(function(){ return 0; });
+  const v = typVl(typVlastnost), barvyS = typBarvy(v), pocty = v.tridy.map(function(){ return 0; }), jePismo = typVlastnost === PISMO_K;
   let bez = 0;
   for (let i = 0; i < POCET_B; i++) { if (typTr[i] >= 0) pocty[typTr[i]]++; else bez++; }
   legendaTyp.textContent = "";
@@ -1972,8 +1998,8 @@ function obnovLegenduTypologie(){
   hl.appendChild(x); legendaTyp.appendChild(hl);
   const jina = prvek("button", "typ-jina", T.typologieJina); jina.type = "button";
   jina.addEventListener("click", function(){ otevriTypologii(true); });
-  legendaTyp.appendChild(jina);
-  const det = prvek("details", "typ-leg-popis"); det.appendChild(prvek("summary", null, T.typologieOPopisu));
+  if (!jePismo) legendaTyp.appendChild(jina);
+  const det = prvek("details", "typ-leg-popis"); det.appendChild(prvek("summary", null, jePismo ? T.pismoOMape : T.typologieOPopisu));
   det.appendChild(prvek("p", null, v.popis[T.lang])); legendaTyp.appendChild(det);
   const ul = prvek("ul", "typ-leg-hodnoty");
   v.tridy.forEach(function(tr, c){
@@ -1989,11 +2015,11 @@ function obnovLegenduTypologie(){
   });
   const li = prvek("li", "typ-bez"), s0 = prvek("span");
   const i0 = prvek("i", "typ-bod"); i0.style.background = "var(--typ-nic)"; s0.appendChild(i0);
-  s0.appendChild(prvek("span", null, T.typologieBezUdaje)); s0.appendChild(prvek("span", "pocet-st", cislo(bez)));
+  s0.appendChild(prvek("span", null, jePismo ? T.pismoBezUdaje : T.typologieBezUdaje)); s0.appendChild(prvek("span", "pocet-st", cislo(bez)));
   li.appendChild(s0); ul.appendChild(li);
   legendaTyp.appendChild(ul);
-  const zdroj = prvek("p", "typ-leg-zdroj"), a = prvek("a", null, t("typologieKapitola", {n: v.kapitola, autor: v.autor}) + " ↗");
-  a.href = "https://wals.info/feature/" + v.id; a.target = "_blank"; a.rel = "noopener"; zdroj.appendChild(a);
+  const zdroj = prvek("p", "typ-leg-zdroj"), a = prvek("a", null, (jePismo ? T.pismoZdroj : t("typologieKapitola", {n: v.kapitola, autor: v.autor})) + " ↗");
+  a.href = jePismo ? "https://cldr.unicode.org/" : "https://wals.info/feature/" + v.id; a.target = "_blank"; a.rel = "noopener"; zdroj.appendChild(a);
   legendaTyp.appendChild(zdroj);
 }
 function otevriTypologii(otevrit){
@@ -2002,7 +2028,14 @@ function otevriTypologii(otevrit){
   tlTyp.setAttribute("aria-expanded", otevrit ? "true" : "false");
   if (otevrit) { postavTypologiiPanel(); const b = panelTyp.querySelector('[aria-pressed="true"]') || panelTyp.querySelector(".typ-vlastnosti button"); if (b) b.focus({preventScroll: false}); }
 }
+/* na telefonu je panel Zobrazení pod lištou; po výběru mapy se stránka vrátí nahoru ke glóbu, aby byla mapa vidět */
+function nahoruKeGlobu(){ if (!desktop.matches && window.scrollY > 40) window.scrollTo({top: 0, behavior: bezPohybu.matches ? "auto" : "smooth"}); }
 tlTyp.addEventListener("click", function(){ otevriTypologii(panelTyp.hidden); });
+tlPismo.addEventListener("click", function(){
+  const zap = typVlastnost !== PISMO_K;
+  nastavTypologii(zap ? PISMO_K : -1);
+  if (zap) { otevriZobrazeni(false); const x = legendaTyp.querySelector(".zavrit"); if (x) x.focus({preventScroll: true}); nahoruKeGlobu(); }
+});
 $("typologie-zpet").addEventListener("click", function(){ otevriTypologii(false); tlTyp.focus(); });
 $("typologie-x").addEventListener("click", function(){ otevriTypologii(false); otevriZobrazeni(false); tlZob.focus(); });
 document.addEventListener("keydown", function(e){ if (e.key === "Escape" && !panelTyp.hidden) otevriTypologii(false); });
@@ -2030,7 +2063,7 @@ function oddilTypologie(i){
   o.appendChild(prvek("p", "pozn", T.typologieKartaPozn));
   return o;
 }
-{ const ulozena = pamet("atlas-typologie"); if (ulozena) { const k = TYP.vlastnosti.findIndex(function(v){ return v.id === ulozena; }); if (k >= 0) nastavTypologii(k, true); } }
+{ const ulozena = pamet("atlas-typologie"); if (ulozena) { const k = ulozena === "pismo" ? PISMO_K : TYP.vlastnosti.findIndex(function(v){ return v.id === ulozena; }); if (k >= 0) nastavTypologii(k, true); } }
 
 /* ---------- odkaz na jazyk: #cs (jazyk z atlasu) nebo #corn1251 (glottocode tečky) ---------- */
 const PODLE_KODU = new Map();
@@ -2289,6 +2322,12 @@ function cldrUdaje(i, id){
 function nazvyPisem(kody){ return velke(kody.map(function(k){ return PD.pisma[T.lang][k] || k; }).join(", ")); }
 function oddilPisma(i, id){
   const kody = cldrUdaje(i, id).pisma;
+  if (!kody.length && i >= 0 && radek(i)[15] && !ZNAKOVY[i]) {   // jen odhad CLDR (likelySubtags): ukázat jako odhad
+    const o = oddil(T.pismo);
+    o.appendChild(prvek("p", null, t("pismoOdhad", {p: nazvyPisem([radek(i)[15]])})));
+    o.appendChild(prvek("p", "pozn", T.pismoOdhadPozn));
+    return o;
+  }
   if (!kody.length) return null;
   const o = oddil(T.pismo);
   o.appendChild(prvek("p", null, nazvyPisem(kody)));

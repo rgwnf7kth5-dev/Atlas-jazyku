@@ -136,6 +136,15 @@
  "ukazkaPopis": "The beginning of Article 1 of the Universal Declaration of Human Rights in this language. In English: “All human beings are born free and equal in dignity and rights…”",
  "pismo": "Script",
  "pismoPozn": "According to Unicode CLDR. Where there are several scripts, the most common is listed first.",
+ "pismoVrstva": "Script",
+ "pismoRadekPopis": "Dots coloured by each language's main script (Unicode CLDR)",
+ "pismoVrstvaPopis": "The colour of a dot shows the language's main script according to Unicode CLDR; where a language uses several, the most common one counts. For languages about which CLDR keeps detailed data (mostly standardised written languages) the script is attested. For the rest it is a CLDR estimate (likely subtags): the script in which the language is written, if it is written at all – many of these languages are written only to a limited extent. Brahmic scripts descend from the Indian Brahmi script (Devanagari, Bengali, Tamil, Thai, Burmese, Tibetan and others); kana and bopomofo developed from Chinese characters. Other scripts include Ethiopic, Hebrew, Greek, Georgian, Armenian and Korean, and Canadian Aboriginal syllabics. Sign languages are not counted.",
+ "pismoSkupiny": ["Latin", "Cyrillic", "Arabic", "Brahmic scripts (India, Southeast Asia, Tibet)", "Chinese characters, kana, bopomofo", "Other scripts"],
+ "pismoBezUdaje": "no data in CLDR, sign languages",
+ "pismoZdroj": "Unicode CLDR 48 · languageData, likelySubtags",
+ "pismoOdhad": "{p} (estimate)",
+ "pismoOdhadPozn": "Unicode CLDR estimate (likely subtags): the script in which the language is written, if it is written at all. CLDR keeps no detailed data on the language itself.",
+ "pismoOMape": "About the script map",
  "uredni": "Official language",
  "uredniStav": [
   "",
@@ -368,7 +377,7 @@
      "Typology (word order, cases, tone, consonant inventory… – 24 features): WALS Online, the World Atlas of Language Structures (Dryer & Haspelmath 2013). WALS describes a sample of about 2,600 languages; the others have no value. For the map some values are merged into groups; the language card always shows the exact WALS value.",
      "Number of sounds: PHOIBLE. Sample text: Article 1 of the Universal Declaration of Human Rights (UDHR in Unicode).",
      "Speaker numbers: Wikidata; where missing, an estimate from Unicode CLDR.",
-     "Script and official status: Unicode CLDR (languageData, territoryInfo). Official status is national, de facto or regional; CLDR records it only for languages whose country data it tracks, so it is often missing for minority languages even where they have some official standing.",
+     "Script and official status: Unicode CLDR (languageData, territoryInfo). Official status is national, de facto or regional; CLDR records it only for languages whose country data it tracks, so it is often missing for minority languages even where they have some official standing. For other languages the script map (View › Script) uses the script estimate from CLDR likelySubtags, so that the map shows a script for about 6,800 languages in all. The language card marks an estimate as such.",
      "Relatives and the family tree: the Glottolog tree, with Glottolog's branch names.",
      "Nothing is made up: if a source has no data, the card does not show it."
     ]
@@ -530,6 +539,13 @@
     "p": [
      "In View › Typology (WALS) you can choose one of 24 features in five areas (phonology, morphology, word order, clause structure, lexicon). The languages take the colour of their value and a key appears at the bottom right with the number of languages, a description of the feature and a link to the relevant WALS chapter.",
      "After a choice the list closes; Another feature… in the key reopens it. Clicking a value in the key highlights only the languages with that value. WALS describes a sample of about 2,600 languages; the other dots stay grey."
+    ]
+   },
+   {
+    "h": "Map of scripts",
+    "p": [
+     "The View › Script switch colours languages by their main script: Latin, Cyrillic, Arabic, Brahmic scripts (India, Southeast Asia, Tibet), Chinese characters with kana and bopomofo, and other scripts. The legend at the bottom right gives the number of languages; tapping a group highlights it alone.",
+     "The data come from Unicode CLDR. For languages about which CLDR keeps detailed data the script is attested; for the rest it is a CLDR estimate (the script in which the language is written, if it is written at all), and the language card marks it as such. The script map and a typological map are not shown at the same time."
     ]
    },
    {

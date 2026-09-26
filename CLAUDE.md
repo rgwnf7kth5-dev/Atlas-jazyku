@@ -356,6 +356,15 @@ hindština latinkou) nebo `scriptMetadata` jako vyřazená (Shawova abeceda), se
 Zobrazuje se na kartě jazyka (Zajímavost / Přehled), ve srovnání (písmo) a na statických stránkách jazyků. Návod
 a O datech to popisují; při změně upravit obojí.
 
+**Mapa písem** (26. 9. 2026, podnět z hodnocení webu, uživatel vybral): přepínač Zobrazení › **Písmo** (`#tl-pismo`) obarví
+tečky podle hlavního písma: latinka, cyrilice, arabské, bráhmská písma, čínské znaky s kanou a bopomofem, ostatní (paleta
+typologie `--typ-1…5`, `--typ-jine` – ověřená pro všechny dvojice, neměnit pořadí). Jede stejnou cestou jako typologie:
+`PISMO_K` je index za koncem `TYP.vlastnosti` a `typVl(k)` vrací pro něj `pismoVl()`, takže se neobjeví v seznamu vlastností
+WALS, v záložce Stavba ani ve srovnání; jedna barevná vrstva naráz, volba se pamatuje v `atlas-typologie` jako `pismo`.
+Skupina tečky: `skupinaPisma(i)` z `r[13]` (doložené) nebo `r[15]` (odhad z CLDR `likelySubtags`, jen pro jazyky bez
+`languageData`; `scripts/podrobnosti.mjs`). Odhad karta ukazuje jako „latinka (odhad)“ s vysvětlením. Skupiny a sporná
+zařazení jsou v `data/ZDROJE.md`. Na telefonu se po výběru mapy (písmo i typologie) stránka vrátí ke glóbu (`nahoruKeGlobu`).
+
 **Wikidata** jsou z prostředí Claude Code na webu blokovaná, proto je stahuje GitHub Actions
 (`.github/workflows/wikidata.yml`, 1. v měsíci a ručně přes Actions → Run workflow). Výsledek přijde jako pull request;
 Netlify k němu udělá náhled. Pro pull request musí být v Settings → Actions → General zapnuté
