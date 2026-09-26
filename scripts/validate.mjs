@@ -67,6 +67,7 @@ if (pd.uzly.length !== pd.nad.length) chyby.push("data/podrobnosti.json: strom p
     if (!c.adresa || !c.adresa.cs || !c.adresa.en) chyby.push(`${co}: ${c.id} nemá adresu stránky`);
     for (const [k, f] of Object.entries(c.fotky)) {
       for (const soubor of [f.soubor, k + "-720.jpg"]) if (!fs.existsSync(path.join(KOREN, "static/starovek", c.id, soubor))) chyby.push(`${co}: fotka ${c.id}/${soubor} chybí ve static/starovek/`);
+      if (!fs.existsSync(path.join(KOREN, "artefakt/starovek", c.id, k + ".jpg"))) chyby.push(`${co}: fotka ${c.id}/${k} chybí v artefakt/starovek/ (spusť python3 scripts/fotky-artefakt.py)`);
       if (!volna.test(f.licence || "")) chyby.push(`${co}: fotka ${k} má licenci „${f.licence}“ (jen CC0, public domain, CC BY, CC BY-SA)`);
       if (f.licence !== "CC0" && f.licence !== "Public domain" && !f.autor) chyby.push(`${co}: fotka ${k} nemá autora (licence ho vyžaduje)`);
       if (!f.zdroj || !f.cs || !f.en) chyby.push(`${co}: fotka ${k} nemá zdroj nebo popisek v obou jazycích`);

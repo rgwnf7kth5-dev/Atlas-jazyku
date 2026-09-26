@@ -78,13 +78,14 @@ const REJSTRIK = {
 };
 
 /* stránky o civilizacích starověku: na webu fotky ze static/starovek/<id>/ (a menší verze -720.jpg),
-   v artefaktu (jeden soubor) vložené menší verze jako data: adresy */
+   v artefaktu (jeden soubor) vložené malé verze z artefakt/starovek/ (scripts/fotky-artefakt.py) jako data: adresy –
+   s verzemi -720 by artefakt přesáhl limit 16 MB */
 const STAROVEK = json("data/starovek.json");
 function starovekDoSkriptu(artefakt) {
   const foto = {};
   for (const c of STAROVEK.civilizace) {
     if (!artefakt) { foto[c.id] = { zaklad: `/starovek/${c.id}/` }; continue; }
-    foto[c.id] = Object.fromEntries(Object.keys(c.fotky).map(k => [k, "data:image/jpeg;base64," + fs.readFileSync(path.join(KOREN, `static/starovek/${c.id}/${k}-720.jpg`)).toString("base64")]));
+    foto[c.id] = Object.fromEntries(Object.keys(c.fotky).map(k => [k, "data:image/jpeg;base64," + fs.readFileSync(path.join(KOREN, `artefakt/starovek/${c.id}/${k}.jpg`)).toString("base64")]));
   }
   return { civilizace: STAROVEK.civilizace, foto };
 }

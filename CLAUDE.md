@@ -396,7 +396,9 @@ Tečka jazyka patří jen jedné civilizaci (karta tečky ukáže první), proto
 - Šablona `src/starovek.js` (vrací HTML jako text) je jedna pro okno v aplikaci i pro samostatnou stránku webu
   (`/starovek/chetite/`, `/en/ancient/hittites/`, v sitemapě). Styl `src/starovek.css` (papír a inkoust, v tmavém
   vzhledu sépiová noc, proměnné `--civ-*`). Okno je `<dialog id="civ-okno">`, text se posouvá v `.civ-svitek`.
-- Fotky: `static/starovek/<id>/<klic>.jpg` (1200 px) a `<klic>-720.jpg` (srcset, v artefaktu vložené jako data:),
+- Fotky: `static/starovek/<id>/<klic>.jpg` (1200 px) a `<klic>-720.jpg` (srcset); **artefakt** vkládá jako data: malé verze
+  z `artefakt/starovek/<id>/<klic>.jpg` (480 px, `python3 scripts/fotky-artefakt.py`, spustit po změně fotek) – s verzemi -720
+  měl artefakt s 12 civilizacemi 17,6 MB a limit je 16 MB; teď ~9 MB. Validace hlídá, že malé verze existují,
   ilustrace pro sdílení `malba.jpg` (1200 × 630, vyrenderovaný akvarel). **Wikimedia je z Claude Code na webu
   blokovaná**: kandidáty stahuje `scripts/fotky.mjs` v GitHub Actions (`.github/workflows/fotky.yml`, spustí se po
   změně `data/fotky-hledat.json`) na samostatnou větev `foto-kandidati` i s autorem a licencí; stejně tak `texty`
