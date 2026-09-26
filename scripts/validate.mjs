@@ -51,6 +51,14 @@ let divnychMluvcich = 0;
 for (const r of pd.radky) if (Array.isArray(r[10]) && !(r[10][0] > 0 && r[10][0] < 2e9 && (r[10][1] === 0 || (r[10][1] >= 1900 && r[10][1] <= new Date().getFullYear() + 1)))) divnychMluvcich++;
 if (divnychMluvcich) chyby.push(`data/podrobnosti.json: ${divnychMluvcich} jazyků má nesmyslný počet mluvčích nebo rok (Wikidata)`);
 if (pd.radky.some(r => !(Number.isInteger(r[0]) && r[0] >= -1 && r[0] <= 6))) chyby.push("data/podrobnosti.json: stupeň vitality musí být -1 až 6");
+{ /* písmo a úřední status (CLDR): každý kód písma má název v obou jazycích, stát je známý, status 1–3 */
+  let spatne = 0;
+  for (const r of pd.radky.concat(Object.values(pd.atlasCldr || {}).map(x => [,,,,,,,,,,,,, x[0], x[1]]))) {
+    for (const k of (r[13] || "").split(" ").filter(Boolean)) if (!pd.pisma || !pd.pisma.cs[k] || !pd.pisma.en[k]) spatne++;
+    for (const x of (r[14] || "").split(" ").filter(Boolean)) if (!/^[A-Z]{2}[123]$/.test(x) || !pd.staty.cs[x.slice(0, 2)]) spatne++;
+  }
+  if (spatne) chyby.push(`data/podrobnosti.json: ${spatne} neplatných údajů o písmu nebo úředním statusu – spusť node scripts/podrobnosti.mjs`);
+}
 if (pd.uzly.length !== pd.nad.length) chyby.push("data/podrobnosti.json: strom příbuzenstva je poškozený");
 { /* typologické mapy: popis (ručně) a data (scripts/typologie.mjs) musí sedět; barvy mapy jsou ověřené jen pro 5 odstínů + „jiné“ a 7 stupňů */
   const p = json("data/typologie-popis.json"), d = json("data/typologie.json"), co = "data/typologie-popis.json";

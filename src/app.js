@@ -2239,7 +2239,7 @@ function ukazKartu(j){
     if (globusOk) pribuzni.appendChild(prvek("p", "pozn", tx("pribuzniOblouky")));
   }
   zalozky([
-    {nazev: T.zalozkaZajimavost, uzly: [fakt, kde, oddilNareci(BOD_ATLASU[j.id])]},
+    {nazev: T.zalozkaZajimavost, uzly: [fakt, kde, oddilUredni(BOD_ATLASU[j.id], j.id), oddilPisma(BOD_ATLASU[j.id], j.id), oddilNareci(BOD_ATLASU[j.id])]},
     {nazev: T.vitalita, uzly: [stupenJ >= 0 ? oddilVitality(stupenJ, znakAtlas) : null]},
     {nazev: T.zalozkaStavba, uzly: [oddilTypologie(BOD_ATLASU[j.id])]},
     {nazev: T.zalozkaPribuzni, uzly: [pribuzni, tlacitkoRodokmenu(BOD_ATLASU[j.id])]}
@@ -2271,6 +2271,35 @@ function oddilNareci(i){
   if (jmena.length > 24) ul.appendChild(prvek("li", "vic", t("aDalsich", {n: jmena.length - 24})));
   o.appendChild(ul);
   o.appendChild(prvek("p", "pozn", T.nareciPozn));
+  return o;
+}
+/* písmo a úřední status podle Unicode CLDR: kódy ISO 15924 („Cyrl Latn“) a státy se stupněm („CZ1 SK3“:
+   1 úřední, 2 de facto, 3 regionálně). Jazyk atlasu bez tečky rejstříku (srbština…) je má v PD.atlasCldr. */
+function cldrUdaje(i, id){
+  const r = i >= 0 ? radek(i) : [], z = id && PD.atlasCldr[id] && !(r[13] || r[14]) ? PD.atlasCldr[id] : [r[13], r[14]];
+  return {pisma: (z[0] || "").split(" ").filter(Boolean), uredni: (z[1] || "").split(" ").filter(Boolean)};
+}
+function nazvyPisem(kody){ return velke(kody.map(function(k){ return PD.pisma[T.lang][k] || k; }).join(", ")); }
+function oddilPisma(i, id){
+  const kody = cldrUdaje(i, id).pisma;
+  if (!kody.length) return null;
+  const o = oddil(T.pismo);
+  o.appendChild(prvek("p", null, nazvyPisem(kody)));
+  o.appendChild(prvek("p", "pozn", T.pismoPozn));
+  return o;
+}
+function oddilUredni(i, id){
+  const jmeno = function(x){ return PD.staty[T.lang][x.slice(0, 2)] || x.slice(0, 2); };
+  const polozky = cldrUdaje(i, id).uredni.sort(function(x, y){ return x.slice(2) - y.slice(2) || jmeno(x).localeCompare(jmeno(y), T.locale); });
+  if (!polozky.length) return null;
+  const o = oddil(T.uredni), ul = prvek("ul", "staty");
+  polozky.slice(0, 16).forEach(function(x){
+    const stav = T.uredniStav[+x.slice(2)];
+    ul.appendChild(prvek("li", null, jmeno(x) + (stav ? " · " + stav : "")));
+  });
+  if (polozky.length > 16) ul.appendChild(prvek("li", "vic", t("aDalsich", {n: polozky.length - 16})));
+  o.appendChild(ul);
+  o.appendChild(prvek("p", "pozn", polozky.some(function(x){ return +x.slice(2) > 1; }) ? T.uredniPozn : T.uredniZdroj));
   return o;
 }
 function oddil(nadpisText){ const o = prvek("section"); o.appendChild(prvek("h3", null, nadpisText)); return o; }
@@ -2344,6 +2373,8 @@ function ukazKartuBodu(i){
     if (staty.length > 12) ul.appendChild(prvek("li", "vic", t("aDalsich", {n: staty.length - 12})));
     o.appendChild(ul); prehled.push(o);
   }
+  { const u = oddilUredni(i); if (u) prehled.push(u); }
+  { const p = oddilPisma(i); if (p) prehled.push(p); }
   const narO = oddilNareci(i); if (narO) prehled.push(narO);
   if (wdm) {
     const o = oddil(znak ? T.znakuje : T.mluvci);
@@ -3365,6 +3396,9 @@ function ukazSrovnani(){
     [[a, va], [b, vb]].forEach(function(x){ oVi.appendChild(radekSrovnani(x[0], x[1] >= 0 ? T.aes[x[1]][0] : "?")); });
     cisla.push(oVi);
   }
+  const pismoL = function(L){ const k = cldrUdaje(L.i, L.j && L.j.id).pisma; return k.length ? nazvyPisem(k) : ""; };
+  const pa = pismoL(a), pb = pismoL(b);
+  if (pa || pb) { const oP = oddil(T.pismo); oP.appendChild(radekSrovnani(a, pa || "?")); oP.appendChild(radekSrovnani(b, pb || "?")); cisla.push(oP); }
   const statyA = (ra[3] || "").split(" ").filter(Boolean), statyB = (rb[3] || "").split(" ").filter(Boolean);
   const spolecneStaty = statyA.filter(function(k){ return statyB.indexOf(k) >= 0; });
   if (spolecneStaty.length) {

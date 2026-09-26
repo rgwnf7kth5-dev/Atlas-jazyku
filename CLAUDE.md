@@ -342,10 +342,19 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a živý web workflow Diag
 ## Podrobnosti k tečkám
 
 `scripts/podrobnosti.mjs` spojí k 7 967 tečkám data z Glottologu (ohrožení, popsanost, příbuzenstvo, státy,
-nářečí), WALS (stavba jazyka), PHOIBLE (hlásky), UDHR (ukázka textu) a CLDR (české názvy, odhad uživatelů).
+nářečí), WALS (stavba jazyka), PHOIBLE (hlásky), UDHR (ukázka textu) a CLDR (české názvy, odhad uživatelů, písmo, úřední status).
 Zdroje stahuje do `.cache/` (není v gitu). Pořadí: `node scripts/glottolog.mjs`, pak `node scripts/podrobnosti.mjs`.
 Příbuzenstvo je uložené jako strom (uzel zná rodiče), cestu a „nejbližší příbuzné“ dopočítá stránka.
 Údaj bez doloženého zdroje nepřidávat.
+
+**Písmo a úřední status** (26. 9. 2026, „odborná data“ pro studenty): sloupce `r[13]` (kódy ISO 15924, nejběžnější
+první, např. `Cyrl Latn`) a `r[14]` (stát + stupeň: `RS1 AT3`; 1 úřední, 2 de facto, 3 regionálně) v `radky`,
+názvy písem v `pisma.cs/en`, jazyky atlasu bez tečky (srbština, chorvatština, hmongština) v `atlasCldr`. Zdroj CLDR
+`languageData` + `likelySubtags` + `territoryInfo`; písma, která CLDR vede jako vedlejší (`-alt-secondary`, např.
+hindština latinkou) nebo `scriptMetadata` jako vyřazená (Shawova abeceda), se vynechávají. Makrojazyk CLDR se přes
+`aliases.json` přiřadí k tečce jednotlivého jazyka (ar → arb). Jen státy ISO 3166 (bez Kanárských ostrovů, Sarku).
+Zobrazuje se na kartě jazyka (Zajímavost / Přehled), ve srovnání (písmo) a na statických stránkách jazyků. Návod
+a O datech to popisují; při změně upravit obojí.
 
 **Wikidata** jsou z prostředí Claude Code na webu blokovaná, proto je stahuje GitHub Actions
 (`.github/workflows/wikidata.yml`, 1. v měsíci a ručně přes Actions → Run workflow). Výsledek přijde jako pull request;

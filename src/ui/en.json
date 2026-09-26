@@ -134,6 +134,17 @@
  "kdeMluviTecka": "Where it is spoken",
  "ukazka": "Sample text",
  "ukazkaPopis": "The beginning of Article 1 of the Universal Declaration of Human Rights in this language. In English: “All human beings are born free and equal in dignity and rights…”",
+ "pismo": "Script",
+ "pismoPozn": "According to Unicode CLDR. Where there are several scripts, the most common is listed first.",
+ "uredni": "Official language",
+ "uredniStav": [
+  "",
+  "",
+  "de facto",
+  "regional"
+ ],
+ "uredniPozn": "According to Unicode CLDR. “De facto” means the language is used officially without explicit legal status; “regional” means it is official only in part of the country (a province, autonomous region, etc.).",
+ "uredniZdroj": "According to Unicode CLDR.",
  "stavba": "Structure",
  "hlasky": "Sounds",
  "hlaskyHodnota": "{c} {cs} and {v} {vs}",
@@ -357,6 +368,7 @@
      "Typology (word order, cases, tone, consonant inventory… – 24 features): WALS Online, the World Atlas of Language Structures (Dryer & Haspelmath 2013). WALS describes a sample of about 2,600 languages; the others have no value. For the map some values are merged into groups; the language card always shows the exact WALS value.",
      "Number of sounds: PHOIBLE. Sample text: Article 1 of the Universal Declaration of Human Rights (UDHR in Unicode).",
      "Speaker numbers: Wikidata; where missing, an estimate from Unicode CLDR.",
+     "Script and official status: Unicode CLDR (languageData, territoryInfo). Official status is national, de facto or regional; CLDR records it only for languages whose country data it tracks, so it is often missing for minority languages even where they have some official standing.",
      "Relatives and the family tree: the Glottolog tree, with Glottolog's branch names.",
      "Nothing is made up: if a source has no data, the card does not show it."
     ]
@@ -391,7 +403,7 @@
     "CC0"
    ],
    [
-    "Unicode CLDR 48 – language names, estimates",
+    "Unicode CLDR 48 – language names, script, official status, estimates",
     "",
     "Unicode License"
    ],
@@ -477,8 +489,9 @@
    {
     "h": "The language card",
     "p": [
-     "163 selected languages have a detailed card: an illustration of the region, a greeting with approximate pronunciation and a Play pronunciation button (it uses the device's speech synthesis). Below are the number of speakers, the language family and vitality, and the tabs Note, Vitality, Structure and Relatives.",
-     "All other languages have the tabs Overview (distribution, vitality, dialects, sample text), Structure (WALS typology, PHOIBLE sound inventory, documentation) and Relatives.",
+     "163 selected languages have a detailed card: an illustration of the region, a greeting with approximate pronunciation and a Play pronunciation button (it uses the device's speech synthesis). Below are the number of speakers, the language family and vitality, and the tabs Note (note, distribution, official status, script, dialects), Vitality, Structure and Relatives.",
+     "All other languages have the tabs Overview (vitality, distribution, official status, script, dialects, speaker numbers, sample text), Structure (WALS typology, PHOIBLE sound inventory, documentation) and Relatives.",
+     "Official status lists the countries where the language is official – nationally, de facto (without explicit legal status) or regionally (in part of the country only). Script lists the scripts the language is usually written in, the most common first. Both come from Unicode CLDR and are available for about 800 languages.",
      "The Structure tab gives the exact value for each WALS feature; click a feature name to open its typology map.",
      "Arcs on the globe lead from the selected language to its closest relatives. The language family tree line shows its classification in the Glottolog tree.",
      "The chain button copies a link to the language. On a phone the card sits at the bottom of the screen: drag it up to enlarge it, down to shrink or close it."
@@ -511,7 +524,7 @@
    {
     "h": "Comparing two languages",
     "p": [
-     "On a language card choose Compare with another language and select the second language on the globe, in the list or by searching. The comparison shows the relationship and the closest common ancestor, shared and differing WALS features, sound inventories and speaker numbers."
+     "On a language card choose Compare with another language and select the second language on the globe, in the list or by searching. The comparison shows the relationship and the closest common ancestor, shared and differing WALS features, sound inventories, speaker numbers and script."
     ]
    },
    {

@@ -95,7 +95,7 @@ function skriptStranky(vychozi, artefakt) {
     .replace("/*__TYPOLOGIE__*/null", () => { const d = json("data/typologie.json"), p = json("data/typologie-popis.json");   // typologické mapy (WALS)
       return doSkriptu({ oblasti: p.oblasti, vlastnosti: p.vlastnosti.map(function(v, k){ return Object.assign({}, v, d.vlastnosti[k]); }) }); })
     .replace("/*__PODROBNOSTI__*/null", () => doSkriptu({ uzly: podrobnosti.uzly, nad: podrobnosti.nad,
-                                                          staty: podrobnosti.staty, udhr: podrobnosti.udhr, mapaStatu: podrobnosti.mapaStatu,
+                                                          staty: podrobnosti.staty, udhr: podrobnosti.udhr, mapaStatu: podrobnosti.mapaStatu, pisma: podrobnosti.pisma, atlasCldr: podrobnosti.atlasCldr,
                                                           radky: podrobnosti.radky, vetve: json("data/glottolog-branches.cs.json"),
                                                           nareci: glottolog.body.map(b => nareci[b[6]] || ""), nareciCs: json("data/nareci-cs.json") }));
   // pojistka: rozbitý skript by stránku úplně vyřadil (stalo se při úklidu kódu), proto ho build zkusí přeložit

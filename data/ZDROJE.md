@@ -9,7 +9,7 @@
 | ↳ typologie (mapy a karta) | 24 vlastností: 1A, 2A, 12A, 13A, 19A, 26A, 30A, 49A, 37A, 38A, 81A, 83A, 85A, 86A, 87A, 88A, 98A, 112A, 116A, 129A, 130A, 131A, 133A, 138A (výběr a texty v `data/typologie-popis.json`, data `scripts/typologie.mjs` → `data/typologie.json`; autor kapitoly se uvádí v legendě) | [WALS Online](https://wals.info), Dryer & Haspelmath (eds.) 2013, Max Planck Institute for Evolutionary Anthropology; `cldf-datasets/wals` | CC BY 4.0 |
 | ↳ počet hlásek | souhlásky, samohlásky, tóny (medián přes zdroje v databázi) | [PHOIBLE 2.0](https://phoible.org), Moran & McCloy (eds.) 2019; `cldf-datasets/phoible` | **CC BY-SA 3.0** – odvozená čísla se šíří pod stejnou licencí |
 | ↳ ukázka textu | článek 1 Všeobecné deklarace lidských práv | [UDHR in Unicode](https://www.unicode.org/udhr/) přes balíček [`udhr`](https://github.com/wooorm/udhr); texty OHCHR | balíček MIT; jen hotové překlady (stupeň 4) |
-| ↳ odhad počtu uživatelů, české názvy jazyků | součet obyvatel států × podíl uživatelů jazyka; názvy jazyků | [Unicode CLDR](https://cldr.unicode.org) 48 (`cldr-core`, `cldr-localenames-full`) | Unicode License |
+| ↳ odhad počtu uživatelů, české názvy jazyků, písmo, úřední status | součet obyvatel států × podíl uživatelů jazyka; názvy jazyků; písma jazyka (`languageData`, `likelySubtags`, bez vedlejších a vyřazených písem podle `scriptMetadata`) a jejich české a anglické názvy; úřední status ve státech (`territoryInfo`: úřední, de facto, regionální) | [Unicode CLDR](https://cldr.unicode.org) 48 (`cldr-core`, `cldr-localenames-full`) | Unicode License |
 | ↳ počty mluvčích, české názvy, články na Wikipedii | počet mluvčích (P1098) s rokem, zda jde o rodilé mluvčí, český popisek, odkaz na článek | [Wikidata](https://www.wikidata.org) – `data/wikidata.json`, stahuje `scripts/wikidata.mjs` v GitHub Actions jednou měsíčně | CC0 (volné dílo) |
 | ↳ názvy států, převod kódů | ISO 3166 česky/anglicky, číselný kód státu na mapě → dvoupísmenný (`mapaStatu`), ISO 639-1 → 639-3 | [`i18n-iso-countries`](https://github.com/michaelwittig/node-i18n-iso-countries), [`iso-639-3`](https://github.com/wooorm/iso-639-3) | MIT |
 | `countries-110m.json` | hranice států a pevnina | [world-atlas](https://github.com/topojson/world-atlas) z dat [Natural Earth](https://www.naturalearthdata.com) | ISC; Natural Earth je volné dílo |
@@ -31,6 +31,10 @@ Knihovny ve `vendor/` jsou vložené přímo do stránky (stránka nesmí závis
 - **Jazykové areály** (`areal` v `languages.json`) jsou ručně zakreslené přibližné oblasti, ne měření.
   Otevřená data s polygony jazyků ve světovém měřítku neexistují.
 - **Počty mluvčích** u 163 jazyků atlasu jsou zaokrouhlené odhady (rodilí i ti, kdo se jazyk naučili).
+- **Písmo a úřední status** (Unicode CLDR) jsou u 773 a 210 jazyků. Makrojazyk CLDR (arabština, čínština, perština…)
+  patří k tečce jazyka, který za něj CLDR uvádí (standardní arabština, mandarínština, západní perština). Úřední status
+  CLDR sleduje jen u části jazyků, u menšinových jazyků tedy často chybí i tam, kde nějaké úřední postavení mají.
+  Srbština a chorvatština nemají v rejstříku vlastní tečku, údaj mají podle kódu jazyka (`atlasCldr`).
 - **Počty uživatelů** u teček jsou odhad z Unicode CLDR (zaokrouhleno na dvě platné číslice), jen u 649 jazyků.
   Balíček `speakers` z npm jsem zamítl: neuvádí, odkud čísla bere.
 - **Počty mluvčích z Wikidat** mají přednost před odhadem CLDR. Z více výroků se bere „preferovaný“,

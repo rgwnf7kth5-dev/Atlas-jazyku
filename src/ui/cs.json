@@ -134,6 +134,17 @@
  "kdeMluviTecka": "Kde se jím mluví",
  "ukazka": "Ukázka textu",
  "ukazkaPopis": "Začátek článku 1 Všeobecné deklarace lidských práv v tomto jazyce. Česky: „Všichni lidé rodí se svobodní a sobě rovní co do důstojnosti a práv…“",
+ "pismo": "Písmo",
+ "pismoPozn": "Podle Unicode CLDR. Je-li písem více, nejběžnější je uvedeno první.",
+ "uredni": "Úřední jazyk",
+ "uredniStav": [
+  "",
+  "",
+  "de facto",
+  "regionálně"
+ ],
+ "uredniPozn": "Podle Unicode CLDR. „De facto“ znamená, že se jazyk jako úřední užívá bez výslovného zakotvení v zákoně; „regionálně“, že je úřední jen v části státu (v provincii, autonomní oblasti apod.).",
+ "uredniZdroj": "Podle Unicode CLDR.",
  "stavba": "Stavba jazyka",
  "hlasky": "Hlásky",
  "hlaskyHodnota": "{c} {cs} a {v} {vs}",
@@ -336,7 +347,7 @@
    {
     "h": "Jazyk, nebo nářečí?",
     "p": [
-     "Ostrá hranice mezi jazykem a nářečím neexistuje a často ji ovlivňují i dějiny a politika. Atlas přebírá rozhodnutí Glottologu. Proto má tečku bavorština, ale ne hanáčtina, která je nářečím češtiny. Nářečí najdeš na kartě jazyka a hledání přes ně najde jejich jazyk.",
+     "Ostrá hranice mezi jazykem a nářečím neexistuje a často ji ovlivňují i dějiny a politika. Atlas přebírá rozhodnutí Glottologu. Proto má tečku bavorština, ale ne hanáčtina, která je nářečím češtiny. Nářečí jsou uvedena na kartě jazyka a vyhledávání přes ně najde příslušný jazyk.",
      "Srbština, chorvatština, bosenština a černohorština jsou si velmi dobře srozumitelné a stojí na stejném nářečním základě, štokavštině. Lingvisticky jde o blízké spisovné varianty společného jazyka, úředně a společensky jsou to dnes samostatné jazyky. Glottolog je vede jako jeden jazyk, srbochorvatštinu, a ta má na glóbu tečku. Srbštinu a chorvatštinu má atlas navíc jako samostatné jazyky s pozdravem, vlastní tečku ale nemají. Hmongštinu Glottolog naopak dělí na několik jazyků a atlas ji má i jako jeden celek. Proto je v seznamu {n} položek a na glóbu {g} teček."
     ]
    },
@@ -357,6 +368,7 @@
      "Typologie (slovosled, pády, tóny, souhláskový inventář… – 24 vlastností): WALS Online, Světový atlas jazykových struktur (Dryer & Haspelmath 2013). WALS popisuje vybraný vzorek zhruba 2 600 jazyků, u ostatních údaj chybí. Hodnoty některých vlastností jsou pro mapu sloučené do skupin; na kartě jazyka je vždy přesná hodnota WALS.",
      "Počet hlásek: PHOIBLE. Ukázka textu: článek 1 Všeobecné deklarace lidských práv (UDHR in Unicode).",
      "Počty mluvčích: Wikidata, kde chybí, odhad z Unicode CLDR.",
+     "Písmo a úřední status: Unicode CLDR (languageData, territoryInfo). Úřední status je celostátní, de facto nebo regionální; CLDR ho eviduje jen u jazyků, pro které sleduje údaje o státech, takže u menšinových jazyků často chybí i tam, kde nějaké úřední postavení mají.",
      "Příbuzenstvo a rodokmen: strom Glottologu. České názvy větví jsou překlad tohoto atlasu; kde překlad chybí, je tam anglický název z Glottologu.",
      "Nic se nedomýšlí: když zdroj údaj nemá, karta ho neukáže."
     ]
@@ -391,7 +403,7 @@
     "CC0"
    ],
    [
-    "Unicode CLDR 48 – názvy jazyků, odhady",
+    "Unicode CLDR 48 – názvy jazyků, písmo, úřední status, odhady",
     "",
     "Unicode License"
    ],
@@ -477,8 +489,9 @@
    {
     "h": "Karta jazyka",
     "p": [
-     "163 vybraných jazyků má podrobnou kartu: ilustraci kraje, pozdrav s přibližnou výslovností a tlačítko Přehrát výslovnost (používá syntézu řeči zařízení). Pod ní jsou počet mluvčích, jazyková rodina a vitalita a záložky Zajímavost, Vitalita, Stavba a Příbuzní.",
-     "Ostatní jazyky mají záložky Přehled (rozšíření, vitalita, nářečí, ukázka textu), Stavba (typologie podle WALS, hlásky podle PHOIBLE, popsanost) a Příbuzní.",
+     "163 vybraných jazyků má podrobnou kartu: ilustraci kraje, pozdrav s přibližnou výslovností a tlačítko Přehrát výslovnost (používá syntézu řeči zařízení). Pod ní jsou počet mluvčích, jazyková rodina a vitalita a záložky Zajímavost (zajímavost, rozšíření, úřední status, písmo, nářečí), Vitalita, Stavba a Příbuzní.",
+     "Ostatní jazyky mají záložky Přehled (vitalita, rozšíření, úřední status, písmo, nářečí, počet mluvčích, ukázka textu), Stavba (typologie podle WALS, hlásky podle PHOIBLE, popsanost) a Příbuzní.",
+     "Úřední status uvádí státy, v nichž je jazyk úřední – celostátně, de facto (bez výslovného zakotvení v zákoně) nebo regionálně (jen v části státu). Písmo uvádí písma, jimiž se jazyk běžně zapisuje, nejběžnější první. Oba údaje pocházejí z Unicode CLDR a jsou k dispozici asi u 800 jazyků.",
      "Záložka Stavba uvádí u každé vlastnosti WALS přesnou hodnotu; klepnutím na název vlastnosti se zobrazí typologická mapa.",
      "Od vybraného jazyka vedou na glóbu oblouky k nejbližším příbuzným. Řádek Rodokmen jazykové rodiny ukazuje zařazení ve stromu Glottologu.",
      "Tlačítko s řetízkem zkopíruje odkaz na jazyk. Na telefonu je karta ve spodní části obrazovky: tažením nahoru se zvětší, dolů zmenší nebo zavře."
@@ -511,7 +524,7 @@
    {
     "h": "Srovnání dvou jazyků",
     "p": [
-     "Na kartě jazyka zvolte Porovnat s jiným jazykem a vyberte druhý jazyk na glóbu, v seznamu nebo vyhledáním. Srovnání ukáže příbuznost a nejbližšího společného předka, shodné a rozdílné typologické vlastnosti podle WALS, hláskové inventáře a počty mluvčích."
+     "Na kartě jazyka zvolte Porovnat s jiným jazykem a vyberte druhý jazyk na glóbu, v seznamu nebo vyhledáním. Srovnání ukáže příbuznost a nejbližšího společného předka, shodné a rozdílné typologické vlastnosti podle WALS, hláskové inventáře, počty mluvčích a písmo."
     ]
    },
    {
@@ -552,7 +565,7 @@
  "typologieBezUdaje": "bez údaje ve WALS",
  "typologieKapitola": "WALS, kap. {n} · {autor}",
  "typologieOdkaz": "Otevřít ve WALS",
- "typologieIzolace": "Zvýraznit jen tuto hodnotu (znovu klepnutím zrušíš)",
+ "typologieIzolace": "Zvýraznit jen tuto hodnotu (opětovným klepnutím se výběr zruší)",
  "typologieOPopisu": "O této vlastnosti",
  "typologieKarta": "Typologie (WALS)",
  "typologieKartaPozn": "Vlastnosti a hodnoty podle WALS Online. Uvedeny jsou jen ty, které WALS u jazyka popisuje.",

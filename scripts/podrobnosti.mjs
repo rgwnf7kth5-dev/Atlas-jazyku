@@ -20,6 +20,12 @@ const ZDROJE = {
   "phoible-parameters.csv": `${PHOIBLE}/parameters.csv`,
   "cldr-cs.json": `${NPM}/cldr-localenames-full@48.2.0/main/cs/languages.json`,
   "cldr-territory.json": `${NPM}/cldr-core@48.2.0/supplemental/territoryInfo.json`,
+  "cldr-langdata.json": `${NPM}/cldr-core@48.2.0/supplemental/languageData.json`,
+  "cldr-likely.json": `${NPM}/cldr-core@48.2.0/supplemental/likelySubtags.json`,
+  "cldr-aliases.json": `${NPM}/cldr-core@48.2.0/supplemental/aliases.json`,
+  "cldr-pismo-meta.json": `${NPM}/cldr-core@48.2.0/scriptMetadata.json`,
+  "cldr-pisma-cs.json": `${NPM}/cldr-localenames-full@48.2.0/main/cs/scripts.json`,
+  "cldr-pisma-en.json": `${NPM}/cldr-localenames-full@48.2.0/main/en/scripts.json`,
   "zeme-cs.json": `${NPM}/i18n-iso-countries@7.14.0/langs/cs.json`,
   "zeme-en.json": `${NPM}/i18n-iso-countries@7.14.0/langs/en.json`,
   "zeme-kody.json": `${NPM}/i18n-iso-countries@7.14.0/codes.json`,
@@ -167,6 +173,79 @@ for (const t of Object.values(uzemi)) {
 const zaokrouhli = n => { if (n < 1) return 0; const r = Math.pow(10, Math.floor(Math.log10(n)) - 1); return Math.round(n / r) * r; };
 for (const [k, n] of Object.entries(soucty)) { const i = isoNaIndex.get(k); if (i !== undefined) uzivatelu[i] = zaokrouhli(n); }
 
+/* --- CLDR: písmo a úřední status ve státech ---
+   Makrojazyk CLDR (ar, zh, fa…) patří k tečce jazyka, který za něj CLDR uvádí (arb, cmn, pes…). */
+const zMakra = {};
+for (const [k, v] of Object.entries(JSON.parse(cti("cldr-aliases.json")).supplemental.metadata.alias.languageAlias))
+  if (v._reason === "macrolanguage" && !zMakra[v._replacement]) zMakra[v._replacement] = k;
+const cldrNaIndex = k => { const i = isoNaIndex.get(naTri(k)); return i !== undefined ? i : zMakra[k] ? isoNaIndex.get(zMakra[k]) : undefined; };
+const jazykData = JSON.parse(cti("cldr-langdata.json")).supplemental.languageData;
+const pravdepodobne = JSON.parse(cti("cldr-likely.json")).supplemental.likelySubtags;
+const pismaJazyka = {};                      // CLDR kód → [písmo, …], nejběžnější první
+const vyrazene = new Set(Object.entries(JSON.parse(cti("cldr-pismo-meta.json")).scriptMetadata)
+  .filter(([, m]) => m.idUsage === "EXCLUSION").map(([p]) => p));   // historická a kuriózní písma (Shawova abeceda…)
+const pridejPismo = (k, p) => {
+  const a = pismaJazyka[k] || (pismaJazyka[k] = []);
+  if (p && !a.includes(p) && !(a.length && vyrazene.has(p))) a.push(p);     // vyřazené jen jako jediné (egyptština)
+};
+for (const k of Object.keys(jazykData)) if (!k.includes("-alt")) {
+  const odhad = ((pravdepodobne[k] || "").split("-")[1]) || "";
+  if (/^[A-Z][a-z]{3}$/.test(odhad)) pridejPismo(k, odhad);
+  (jazykData[k]._scripts || []).forEach(p => pridejPismo(k, p));
+}
+const znameStaty = JSON.parse(cti("zeme-cs.json")).countries;
+const vedlejsi = k => (jazykData[k + "-alt-secondary"] || {})._scripts || [];   // hi_Latn, pa_Arab: CLDR je vede jako vedlejší
+const STATUS = { official: 1, de_facto_official: 2, official_regional: 3 };
+const statusJazyka = {};                     // CLDR kód → {stát: status}
+for (const [stat, t] of Object.entries(uzemi)) {
+  for (const [k, v] of Object.entries(t.languagePopulation || {})) {
+    const [zaklad, pismo] = k.split("_");
+    if (pismo && pismaJazyka[zaklad] && !vedlejsi(zaklad).includes(pismo)) pridejPismo(zaklad, pismo);   // sr_Latn, uz_Arab…
+    const s = STATUS[v._officialStatus];
+    if (!s || !znameStaty[stat]) continue;                          // jen státy ISO 3166 (ne Kanárské ostrovy, Sark…)
+    const z = statusJazyka[zaklad] || (statusJazyka[zaklad] = {});
+    if (!z[stat] || s < z[stat]) z[stat] = s;
+  }
+}
+const pisma = new Array(kody.length).fill(""), uredni = new Array(kody.length).fill("");
+for (const [k, a] of Object.entries(pismaJazyka)) {
+  const i = cldrNaIndex(k);
+  if (i !== undefined && !pisma[i] && a.length) pisma[i] = a.filter(p => p !== "Zyyy").slice(0, 4).join(" ");
+}
+for (const [k, z] of Object.entries(statusJazyka)) {
+  const i = cldrNaIndex(k);
+  if (i === undefined || uredni[i]) continue;
+  uredni[i] = Object.entries(z).sort((a, b) => a[1] - b[1] || a[0].localeCompare(b[0])).map(([st, s]) => st + s).join(" ");
+}
+/* jazyky atlasu bez tečky v rejstříku (srbština, chorvatština…): podle kódu jazyka v languages.json */
+const atlasCldr = {};
+{
+  const propojene = new Set(rejstrik.body.map(b => b[5]).filter(Boolean));
+  for (const j of JSON.parse(fs.readFileSync(path.join(KOREN, "data/languages.json"), "utf8"))) {
+    const k = (j.kod || "").split("-")[0];
+    if (propojene.has(j.id) || !k) continue;
+    const a = (pismaJazyka[k] || []).slice(0, 4).join(" "), u = Object.entries(statusJazyka[k] || {})
+      .sort((x, y) => x[1] - y[1] || x[0].localeCompare(y[0])).map(([st, s]) => st + s).join(" ");
+    if (a || u) atlasCldr[j.id] = [a, u];
+  }
+}
+const pouzitaPisma = new Set(pisma.concat(Object.values(atlasCldr).map(x => x[0])).join(" ").split(" ").filter(Boolean));
+const nazvyPisem = {}, nazvyPisemEn = JSON.parse(cti("cldr-pisma-en.json")).main.en.localeDisplayNames.scripts;
+const PISMA_OPRAVY = {                       // kde CLDR uvádí jen přívlastek nebo odbornou zkratku
+  cs: { Hans: "čínské znaky (zjednodušené)", Hant: "čínské znaky (tradiční)", Olck: "ol čiki (santálské písmo)",
+        Cher: "čerokézské slabičné písmo", Osge: "osedžské písmo" },
+  en: { Hans: "Chinese characters (simplified)", Hant: "Chinese characters (traditional)", Lisu: "Lisu (Fraser)" }
+};
+for (const l of ["cs", "en"]) {
+  const n = JSON.parse(cti(`cldr-pisma-${l}.json`)).main[l].localeDisplayNames.scripts;
+  nazvyPisem[l] = {};
+  for (const p of pouzitaPisma) {
+    let x = (PISMA_OPRAVY[l] || {})[p] || n[p + "-alt-stand-alone"] || n[p] || nazvyPisemEn[p] || p;
+    if (l === "cs" && /(é|ovo|psací)$/.test(x)) x += " písmo";   // „arabské“ → „arabské písmo“
+    nazvyPisem[l][p] = x;
+  }
+}
+
 /* --- UDHR: článek 1 Všeobecné deklarace lidských práv --- */
 const udhrMeta = cti("udhr/index.js");
 const udhr = [], udhrIndex = new Array(kody.length).fill(-1);
@@ -215,7 +294,7 @@ kody.forEach((gc, i) => {
 const radky = kody.map((_, i) => {
   const w = wals[i].join("");
   const r = [aes[i], med[i], rodic[i], staty[i], nareci[i], /[1-9]/.test(w) ? w : "", hlasky[i] || 0, udhrIndex[i], uzivatelu[i], nazvyCs[i],
-             wdMluvci[i], wdQ[i], wdWiki[i]];
+             wdMluvci[i], wdQ[i], wdWiki[i], pisma[i], uredni[i]];
   while (r.length && (r[r.length - 1] === "" || r[r.length - 1] === 0 || r[r.length - 1] === -1)) r.pop();   // ořízni prázdný konec
   return r;
 });
@@ -229,7 +308,7 @@ for (const g of svet.objects.countries.geometries) if (g.id && ciselne[g.id]) ma
 const vystup = {
   stazeno: new Date().toISOString().slice(0, 10),
   wals: WALS_VLASTNOSTI,
-  uzly, nad, staty: nazvyStatu, udhr, mapaStatu, radky
+  uzly, nad, staty: nazvyStatu, udhr, mapaStatu, pisma: nazvyPisem, atlasCldr, radky
 };
 fs.writeFileSync(path.join(KOREN, "data/podrobnosti.json"), JSON.stringify(vystup));
 
@@ -237,6 +316,6 @@ const pocet = f => radky.filter(f).length;
 console.log(`Podrobnosti pro ${kody.length} jazyků (${(fs.statSync(path.join(KOREN, "data/podrobnosti.json")).size / 1024).toFixed(0)} kB):`);
 console.log(`  vitalita ${pocet(r => r[0] >= 0)}, popsanost ${pocet(r => r[1] >= 0)}, příbuzenstvo ${pocet(r => r[2] >= 0)}, státy ${pocet(r => r[3])}, nářečí ${pocet(r => r[4] > 0)}`);
 console.log(`  stavba jazyka (WALS) ${pocet(r => r[5] && /[1-9]/.test(r[5]))}, hlásky (PHOIBLE) ${pocet(r => Array.isArray(r[6]))}, ukázka textu (UDHR) ${pocet(r => r[7] >= 0)}`);
-console.log(`  odhad uživatelů (CLDR) ${pocet(r => r[8] > 0)}, český název (CLDR/Wikidata) ${pocet(r => r[9])}`);
+console.log(`  odhad uživatelů (CLDR) ${pocet(r => r[8] > 0)}, český název (CLDR/Wikidata) ${pocet(r => r[9])}, písmo (CLDR) ${pocet(r => r[13])}, úřední status (CLDR) ${pocet(r => r[14])}`);
 console.log(`  Wikidata: mluvčí ${pocet(r => Array.isArray(r[10]))}, položka ${pocet(r => r[11] > 0)}, článek cs ${pocet(r => r[12] & 1)}, en ${pocet(r => r[12] & 2)}` +
   (Object.keys(wd).length ? "" : "  (data/wikidata.json chybí – spusť node scripts/wikidata.mjs nebo GitHub Actions)"));
