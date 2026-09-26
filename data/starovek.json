@@ -44,7 +44,8 @@
     "Noto Sans Anatolian Hieroglyphs",
     "Noto Sans Linear A",
     "Noto Sans Linear B",
-    "Noto Serif TC"
+    "Noto Serif TC",
+    "Noto Sans Old Turkic"
    ],
    "fotky": {},
    "cs": {
@@ -437,6 +438,16 @@
         "civ": "armeni",
         "jistota": "sporna",
         "pozn": "Původ je sporný: pořadí písmen a jejich číselné hodnoty odpovídají řecké abecedě, tvary jsou vlastní. Nejstarší datované nápisy jsou z 5. století (Bir el-Kutt u Betléma, Bolnisi). Ukázka je ve starém písmu asomtavruli."
+       },
+       {
+        "id": "staroturkicke",
+        "rodic": "sogdske",
+        "nazev": "Staroturkické (orchonské) písmo",
+        "doba": "od 8. st. n. l.",
+        "ukazka": "𐱅𐰇𐰼𐰚",
+        "civ": "orchon",
+        "jistota": "sporna",
+        "pozn": "Runové písmo Turkutů, psané zprava doleva; odvození ze sogdského písma je pravděpodobné, ale sporné."
        }
       ],
       "pozn": "Rodokmen je zjednodušený: písma se ovlivňovala i napříč větvemi a o mnoha přechodech se badatelé přou v podrobnostech. Středověká písma (například mongolské) jsou uvedena jen tam, kde ukazují, kam až starověké větve dosáhly."
@@ -585,6 +596,16 @@
         "civ": "indie",
         "jistota": "jista",
         "pozn": "Krátké nápisy hlavně na pečetích, v průměru asi pět znaků. Nerozluštěné; není jisté ani to, zda zapisují jazyk. Souvislost s pozdějším bráhmí se neprokázala. V Unicode není."
+       },
+       {
+        "id": "staroturkicke",
+        "rodic": "sogdske",
+        "nazev": "Staroturkické (orchonské) písmo",
+        "doba": "od 8. st. n. l.",
+        "ukazka": "𐱅𐰇𐰼𐰚",
+        "civ": "orchon",
+        "jistota": "sporna",
+        "pozn": "Runové písmo Turkutů, psané zprava doleva; odvození ze sogdského písma je pravděpodobné, ale sporné."
        }
       ],
       "pozn": "Kořeny nejsou navzájem propojené, protože jejich příbuznost se nepodařilo prokázat. Egyptské hieroglyfy stojí v čele rodokmenu abeced výše."
@@ -1133,6 +1154,16 @@
         "civ": "armeni",
         "jistota": "sporna",
         "pozn": "Its origin is disputed: the letter order and numerical values match the Greek alphabet, but the shapes are its own. The earliest dated inscriptions are from the 5th century (Bir el Qutt near Bethlehem, Bolnisi). The sample is in the old asomtavruli script."
+       },
+       {
+        "id": "staroturkicke",
+        "rodic": "sogdske",
+        "nazev": "Old Turkic (Orkhon) script",
+        "doba": "from the 8th c. AD",
+        "ukazka": "𐱅𐰇𐰼𐰚",
+        "civ": "orchon",
+        "jistota": "sporna",
+        "pozn": "Runic script of the Göktürks, written right to left; derivation from Sogdian is likely but disputed."
        }
       ],
       "pozn": "The tree is simplified: scripts also influenced one another across branches, and scholars disagree about the details of many transitions. Medieval scripts (such as Mongolian) are included only where they show how far the ancient branches reached."
@@ -1281,6 +1312,16 @@
         "civ": "indie",
         "jistota": "jista",
         "pozn": "Short inscriptions, mostly on seals, about five signs on average. Undeciphered; it is not even certain that they record language. No link to the later Brahmi has been shown. It is not in Unicode."
+       },
+       {
+        "id": "staroturkicke",
+        "rodic": "sogdske",
+        "nazev": "Old Turkic (Orkhon) script",
+        "doba": "from the 8th c. AD",
+        "ukazka": "𐱅𐰇𐰼𐰚",
+        "civ": "orchon",
+        "jistota": "sporna",
+        "pozn": "Runic script of the Göktürks, written right to left; derivation from Sogdian is likely but disputed."
        }
       ],
       "pozn": "The roots are not linked to one another because no relationship between them has been demonstrated. Egyptian hieroglyphs head the family tree of alphabets above."
@@ -19009,6 +19050,1102 @@
        "Thomas O. Lambdin: Introduction to Classical Ethiopic (Geʽez). Scholars Press, 1978.",
        "Gene Gragg: Geʽez (Aksum). In: Roger D. Woodard (ed.): The Cambridge Encyclopedia of the World’s Ancient Languages. Cambridge University Press, 2004.",
        "Wolf Leslau: Comparative Dictionary of Geʽez (Classical Ethiopic). Harrassowitz, 1987.",
+       "Glottolog 5 (languages and their classification)."
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "orchon",
+   "adresa": {
+    "cs": "orchon",
+    "en": "orkhon"
+   },
+   "krajina": "orchon",
+   "hledat": "turkuti turkutove gokturks gokturk turks orchon orkhon staroturkictina old turkic runy runic runes kultegin kul tigin bilge kagan qaghan khagan tonjukuk tonyukuk jenisej yenisei irk bitig thomsen radlov radloff mongolsko mongolia sibir siberia",
+   "tecky": [
+    "oldu1238"
+   ],
+   "pisma": [
+    "Noto Sans Old Turkic",
+    "Noto Serif TC"
+   ],
+   "fotky": {
+    "kultegin": {
+     "soubor": "kultegin.jpg",
+     "sirka": 733,
+     "vyska": 1100,
+     "autor": "Vezirtonyukuk",
+     "licence": "CC BY-SA 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Kultigin_Monument_of_Orkhon_Inscriptions.jpeg",
+     "cs": "Stéla Kültegina z roku 732, vysoká 3,3 m, v Muzeu Turkutů v Chašaatu (Archangajský ajmag, Mongolsko). Nápisy (turkický a čínský) pokrývají všechny čtyři strany kamene.",
+     "en": "The stele of Kül Tigin from 732, 3.3 m high, in the Göktürk Museum at Khashaat (Arkhangai Province, Mongolia). The inscriptions (Turkic and Chinese) cover all four sides of the stone."
+    },
+    "detail": {
+     "soubor": "detail.jpg",
+     "sirka": 825,
+     "vyska": 1100,
+     "autor": "Betta27",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Kultegin_monument_Mongolia.JPG",
+     "cs": "Horní část Külteginovy stély se svislými řádky runového nápisu. Kámen je popraskaný a místy odlomený.",
+     "en": "The upper part of the Kül Tigin stele, with vertical lines of the runic inscription. The stone is cracked and broken away in places."
+    },
+    "muzeum": {
+     "soubor": "muzeum.jpg",
+     "sirka": 1200,
+     "vyska": 900,
+     "autor": "Chongkian",
+     "licence": "CC BY-SA 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:G%C3%B6kt%C3%BCrk_Museum.jpg",
+     "cs": "Muzeum Turkutů v Chašaatu (Archangajský ajmag) v údolí Orchonu, poblíž lokality Chöšöö Cajdam.",
+     "en": "The Göktürk Museum at Khashaat (Arkhangai Province) in the Orkhon Valley, near the Khöshöö Tsaidam site."
+    },
+    "tonjukuk": {
+     "soubor": "tonjukuk.jpg",
+     "sirka": 1200,
+     "vyska": 800,
+     "autor": "Vezirtonyukuk",
+     "licence": "CC BY-SA 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Bilge_Tonyukuk_-_Orkhon_Inscriptions.jpeg",
+     "cs": "Dvě stély Tonjukukova nápisu v Bajn Cokto u Nalajchu nedaleko Ulánbátaru.",
+     "en": "The two steles of the Tonyukuk inscription at Bayn Tsokto near Nalaikh, not far from Ulaanbaatar."
+    },
+    "kyzyl": {
+     "soubor": "kyzyl.jpg",
+     "sirka": 337,
+     "vyska": 800,
+     "autor": "Philipp Roelli",
+     "licence": "CC BY-SA 3.0",
+     "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Kyzyl_orkhon_inscription.jpg",
+     "cs": "Kamenná stéla se staroturkickým runovým nápisem v Kyzylu v Tuvě (Rusko), v oblasti horního Jeniseje. Znaky jsou vytesány ve svislých řádcích.",
+     "en": "A stone stele with an Old Turkic runic inscription at Kyzyl in Tuva (Russia), in the upper Yenisei region. The letters are carved in vertical lines."
+    },
+    "turan": {
+     "soubor": "turan.jpg",
+     "sirka": 850,
+     "vyska": 1100,
+     "autor": "László Károly",
+     "licence": "CC BY-SA 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:AppelgrenKivalo1931Abb331.png",
+     "cs": "Kámen s nápisem z Ujuk-Turanu (Tuva) s řádky run a vyobrazeními zvířat, na kresbě z publikace Appelgrena-Kivala (1931). Kámen vysoký 277 cm byl nalezen v letech 1886–1887 a roku 1943 převezen do Kyzylu.",
+     "en": "The inscribed stone from Uyuk-Turan (Tuva), with lines of runes and figures of animals, in a drawing published by Appelgren-Kivalo (1931). The stone, 277 cm high, was found in 1886–1887 and taken to Kyzyl in 1943."
+    },
+    "ujbat": {
+     "soubor": "ujbat.jpg",
+     "sirka": 275,
+     "vyska": 642,
+     "autor": "Aarne Michaël Tallgren",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Minusinsk_stele.png",
+     "cs": "Náhrobní stéla Ujbat I z okolí Abakanu (Chakasko) s jenisejským runovým nápisem; kresba Finské archeologické společnosti (1889), otištěná A. M. Tallgrenem. Stélu roku 1721 našel Daniel Gottlieb Messerschmidt. Vytesaná tvář dole je podle I. V. Kormušina mnohem starší než nápis.",
+     "en": "The Uybat I funerary stele from near Abakan (Khakassia), bearing a Yenisei runic inscription; a drawing by the Finnish Archaeological Society (1889), reproduced by A. M. Tallgren. It was found in 1721 by Daniel Gottlieb Messerschmidt. According to I. V. Kormushin, the face carved at the bottom is much older than the inscription."
+    },
+    "irk": {
+     "soubor": "irk.jpg",
+     "sirka": 1200,
+     "vyska": 916,
+     "autor": "International Dunhuang Project",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Irk_bitig_06.jpg",
+     "cs": "První dvě strany textu Irk bitig (listy 5b a 6a). Řádky se čtou zprava doleva, slova oddělují červené kroužky. Britská knihovna, Londýn (Or.8212/161).",
+     "en": "The first two pages of the Irk Bitig text (folios 5b and 6a). The lines run from right to left, with words divided by red circles. British Library, London (Or.8212/161)."
+    },
+    "irkkonec": {
+     "soubor": "irkkonec.jpg",
+     "sirka": 1200,
+     "vyska": 889,
+     "autor": "International Dunhuang Project",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Irk_bitig_page_56.jpg",
+     "cs": "Poslední dvě strany hlavního textu Irk bitig (listy 55b a 56a), zčásti přepsané buddhistickými verši v čínštině. Britská knihovna, Londýn.",
+     "en": "The last two pages of the main text of the Irk Bitig (folios 55b and 56a), partly overwritten with Buddhist verses in Chinese. British Library, London."
+    },
+    "vestba": {
+     "soubor": "vestba.jpg",
+     "sirka": 501,
+     "vyska": 705,
+     "autor": "",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Irk_Bitig_omen_11.jpg",
+     "cs": "Věštba č. 11 z Irk bitig (list 13a). Nahoře tři skupiny červených teček (4-4-3) jako výsledek hodu kostkou, pod nimi výklad: posel na žlutém koni a vyslanec na tmavohnědém přinášejí dobré zprávy; znamení je velmi dobré.",
+     "en": "Omen 11 of the Irk Bitig (folio 13a). At the top, three groups of red dots (4-4-3) record the throw of the dice; below is the reading: a messenger on a yellow horse and an envoy on a dark brown horse bring good tidings; the omen is very good."
+    },
+    "thomsen": {
+     "soubor": "thomsen.jpg",
+     "sirka": 1016,
+     "vyska": 1100,
+     "autor": "Peter Elfelt",
+     "licence": "CC BY-SA 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Vilhelm_Thomsen,_1912.jpg",
+     "cs": "Vilhelm Thomsen (1842–1927), dánský jazykovědec, který roku 1893 rozluštil staroturkické runové písmo. Fotografie Petera Elfelta z roku 1912.",
+     "en": "Vilhelm Thomsen (1842–1927), the Danish linguist who deciphered the Old Turkic runic script in 1893. Photograph by Peter Elfelt, 1912."
+    },
+    "busta": {
+     "soubor": "busta.jpg",
+     "sirka": 825,
+     "vyska": 1100,
+     "autor": "Daderot",
+     "licence": "CC0",
+     "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Vilhelm_Ludwig_Peter_Thomsen_-_Frue_Plads.jpg",
+     "cs": "Bronzová busta Vilhelma Thomsena na náměstí Frue Plads v Kodani.",
+     "en": "Bronze bust of Vilhelm Thomsen on Frue Plads in Copenhagen."
+    }
+   },
+   "cs": {
+    "nazev": "Turkuti a orchonské písmo",
+    "stitek": "Jazyky starověku",
+    "podtitul": "Mongolská step a jižní Sibiř · runové nápisy 8.–10. století",
+    "perex": "Na kamenných stélách v mongolské stepi zanechali Turkuti nejstarší souvislé texty v turkickém jazyce. Jejich runové písmo, psané zprava doleva, má pro mnohé souhlásky dva znaky podle toho, zda slovo obsahuje přední, nebo zadní samohlásky. Nápisy z 8. století líčí vzestup, pád a obnovu stepní říše. Rozluštil je roku 1893 dánský jazykovědec Vilhelm Thomsen a jejich jazyk, nejstarší doložený turkický, je blízký předkům jazyků, jimiž dnes mluví asi 200 milionů lidí.",
+    "fakta": [
+     [
+      "Území",
+      "Mongolsko (údolí Orchonu), jižní Sibiř (Tuva a Chakasko na horním Jeniseji), Altaj, údolí Talasu, Sin-ťiang"
+     ],
+     [
+      "Období",
+      "turkutské kaganáty 552–744; runové nápisy a rukopisy asi 8.–10. st."
+     ],
+     [
+      "Jazyk",
+      "staroturkičtina, nejstarší doložený turkický jazyk"
+     ],
+     [
+      "Písmo",
+      "staroturkické (orchonsko-jenisejské) runové písmo, abeceda psaná zprava doleva; souhlásky ve dvou řadách podle vokálové harmonie"
+     ],
+     [
+      "Památky",
+      "asi 200 nápisů a několik rukopisů; nejznámější stély Kültegina (732), Bilge kagana (735) a Tonjukuka"
+     ],
+     [
+      "Rozluštění",
+      "1893, Vilhelm Thomsen"
+     ]
+    ],
+    "nazvyTecek": {
+     "oldu1238": "Staroturkičtina"
+    },
+    "oddily": [
+     {
+      "typ": "text",
+      "h": "Říše na mongolské stepi",
+      "p": [
+       "Turkuti (turkicky Türk, čínsky 突厥 Tchu-ťüe, v angličtině Göktürks) byli kočovný lid Vnitřní Asie, jemuž vládl rod Ašina. Pod vedením Bumin kagana (zemřel 552) a jeho synů se vymanili z nadvlády Žuan-žuanů a založili první turkutský kaganát, stepní říši, jejíž vládce nesl titul kagan. Na vrcholu moci koncem 6. století sahala od Mandžuska k Černému moři, brzy se však rozpadla na východní a západní část.",
+       "Roku 630 porazila čínská dynastie Tchang východní Turkuty a zajala jejich kagana; na půl století se ocitli pod čínskou vládou. Roku 682 se vzbouřili Ilteriš kagan a jeho rádce Tonjukuk a obnovili říši, dnes zvanou druhý turkutský kaganát. Za Ilterišových synů, Bilge kagana (683–734) a jeho bratra, vojevůdce Kültegina (684–731), dosáhla nového rozmachu. Po Bilgeho smrti ale slábla a roku 744 ji porazili Ujgurové, spojenci Tchangů. Z doby druhého kaganátu pocházejí nejstarší souvislé texty v turkickém jazyce."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "kultegin",
+      "na-vysku": true
+     },
+     {
+      "typ": "text",
+      "h": "Staroturkičtina",
+      "p": [
+       "Jazyk runových nápisů se nazývá staroturkičtina. Je to nejstarší doložený turkický jazyk; starší zmínky o Turcích a jejich slovech známe jen z cizích, hlavně čínských pramenů. Turkickými jazyky dnes mluví asi 200 milionů lidí, nejvíce turecky, dále uzbecky, ázerbájdžánsky, kazašsky, ujgursky, turkmensky, tatarsky, kyrgyzsky a v řadě dalších jazyků od Balkánu po Sibiř.",
+       "Staroturkičtina má rysy, které jsou v celé rodině téměř všeobecné: vokálovou harmonii (samohlásky v jednom slově jsou buď všechny přední, nebo všechny zadní), aglutinaci (gramatické významy vyjadřují přípony řazené za sebou), slovosled podmět – předmět – sloveso a žádný mluvnický rod. Patří do velké skupiny obecně turkických jazyků; stranou stojí oghurská větev, z níž dnes žije jen čuvaština (staroturkické toquz „devět“ proti čuvašskému tăχăr).",
+       "Jazyk nápisů z Mongolska a Jeniseje se jen málo liší od jazyka pozdějších ujgurských rukopisů z Východního Turkestánu (Sin-ťiangu), jde však podle Marcela Erdala o odlišná nářečí. V nápisech jsou i slova neturkického původu, například tituly převzaté z íránských jazyků."
+      ]
+     },
+     {
+      "typ": "slova",
+      "h": "Stará slova v dnešních jazycích",
+      "uvod": "Turkické jazyky jsou si dodnes blízké a u mnoha základních slov se liší jen hláskami. Staroturkická slova (v přepisu) a jejich protějšky v turečtině a kazaštině (kazašsky v cyrilici):",
+      "hlavicka": [
+       "staroturkicky",
+       "význam",
+       "turecky · kazašsky"
+      ],
+      "radky": [
+       [
+        "ata",
+        "otec",
+        "ata · ата"
+       ],
+       [
+        "qız",
+        "dívka, dcera",
+        "kız · қыз"
+       ],
+       [
+        "baš",
+        "hlava",
+        "baş · бас"
+       ],
+       [
+        "köz",
+        "oko",
+        "göz · көз"
+       ],
+       [
+        "qan",
+        "krev",
+        "kan · қан"
+       ],
+       [
+        "at",
+        "kůň",
+        "at · ат"
+       ],
+       [
+        "sub",
+        "voda",
+        "su · су"
+       ],
+       [
+        "ot",
+        "oheň",
+        "od (běžně ateş z perštiny) · от"
+       ],
+       [
+        "taɣ",
+        "hora",
+        "dağ · тау"
+       ],
+       [
+        "kök",
+        "modrý; nebe",
+        "gök · көк"
+       ],
+       [
+        "täŋri",
+        "nebe, nebeský bůh",
+        "tanrı „bůh“ · тәңір"
+       ],
+       [
+        "bir",
+        "jeden",
+        "bir · бір"
+       ],
+       [
+        "toquz",
+        "devět",
+        "dokuz · тоғыз"
+       ]
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Runy psané zprava doleva",
+      "p": [
+       "Staroturkické písmo se kvůli hranatým tvarům znaků, vhodným pro tesání do kamene, nazývá také turkické runy. S germánskými runami nemá nic společného; jde o abecedu. Píše se zprava doleva, na stélách ve svislých řádcích. Slova se oddělují dvojtečkou (v Unicode ⁚, TWO DOT PUNCTUATION), jinde kroužkem.",
+       "Písmo je přizpůsobeno vokálové harmonii. Osm samohlásek zapisují jen čtyři znaky (a/ä, ı/i, o/u, ö/ü) a samohlásky se uvnitř slova často nepíšou vůbec. Mnohé souhlásky ale mají dva znaky: jeden pro slova se zadními samohláskami (a, ı, o, u), druhý pro slova s předními (ä, i, ö, ü). Z tvaru souhlásky tak čtenář pozná, jakou samohlásku má doplnit. Vilhelm Thomsen je roku 1893 označil horními indexy ¹ a ², jak se v přepisu píšou dodnes. Několik dalších znaků zapisuje celé skupiny hlásek, například nt, lt, nč, ök nebo oq.",
+       "Jméno nebeského boha täŋri se tak píše čtyřmi znaky 𐱅𐰭𐰼𐰃 (t² ŋ r² i): souhlásky z přední řady prozrazují, že chybějící samohláska je přední ä."
+      ]
+     },
+     {
+      "typ": "znaky",
+      "h": "Staroturkické znaky (výběr)",
+      "znaky": [
+       [
+        "𐰀",
+        "a, ä",
+        "samohláska; uvnitř slova se často nepíše"
+       ],
+       [
+        "𐰃",
+        "ı, i",
+        "samohláska"
+       ],
+       [
+        "𐰆",
+        "o, u",
+        "samohláska"
+       ],
+       [
+        "𐰇",
+        "ö, ü",
+        "samohláska"
+       ],
+       [
+        "𐰉",
+        "b¹",
+        "b se zadními samohláskami (a, ı, o, u)"
+       ],
+       [
+        "𐰋",
+        "b²",
+        "b s předními samohláskami (ä, i, ö, ü)"
+       ],
+       [
+        "𐰺",
+        "r¹",
+        "zadní řada"
+       ],
+       [
+        "𐰼",
+        "r²",
+        "přední řada"
+       ],
+       [
+        "𐱃",
+        "t¹",
+        "zadní řada"
+       ],
+       [
+        "𐱅",
+        "t²",
+        "přední řada"
+       ],
+       [
+        "𐰴",
+        "q¹",
+        "zadní k [q]"
+       ],
+       [
+        "𐰚",
+        "k²",
+        "přední k"
+       ],
+       [
+        "𐰭",
+        "ŋ",
+        "pro obě řady"
+       ],
+       [
+        "𐰢",
+        "m",
+        "pro obě řady"
+       ]
+      ],
+      "priklad": {
+       "klin": "𐱅𐰇𐰼𐰚",
+       "prepis": "t² ü r² k² → türk",
+       "vyznam": "jméno Türků; čte se zprava doleva a všechny souhlásky jsou z přední řady"
+      },
+      "pozn": "Horní index ¹ označuje znak pro slova se zadními samohláskami, ² pro slova s předními (konvence Vilhelma Thomsena). Hodnoty podle běžných tabulek; tvary znaků se místně lišily. Unicode má staroturkické písmo od verze 5.2 (2009) v bloku U+10C00–U+10C4F a rozlišuje v něm orchonské a jenisejské tvary. Znaky vykresluje písmo Noto Sans Old Turkic, stránka je řadí zprava doleva."
+     },
+     {
+      "typ": "slova",
+      "h": "Slova v runách",
+      "uvod": "Jak se zapisují slova ze staroturkických nápisů a rukopisů. Znaky jsou uvedeny v pořadí čtení, tedy zprava doleva:",
+      "hlavicka": [
+       "runami",
+       "znaky",
+       "čtení a význam"
+      ],
+      "radky": [
+       [
+        "𐱅𐰭𐰼𐰃",
+        "t² ŋ r² i",
+        "täŋri „nebe, nebeský bůh“; samohláska ä se nepíše"
+       ],
+       [
+        "𐱅𐰇𐰼𐰚",
+        "t² ü r² k²",
+        "türk, jméno Türků; všechny souhlásky z přední řady"
+       ],
+       [
+        "𐰉𐰆𐰑𐰣",
+        "b¹ o d¹ n¹",
+        "bodun „lid“; souhlásky ze zadní řady, druhá samohláska se nepíše"
+       ],
+       [
+        "𐰚𐰇𐰜",
+        "k² ö ök",
+        "kök „modrý, nebeský“; poslední znak zapisuje skupinu ök/kö"
+       ],
+       [
+        "𐰋𐰃𐰠𐰏𐰀",
+        "b² i l² g² ä",
+        "bilgä „moudrý“, titul Bilge kagana i Tonjukuka"
+       ],
+       [
+        "𐱃𐰆𐰪𐰸𐰸",
+        "t¹ o ñ uq uq",
+        "Toñuquq, Tonjukuk; výklad jména je sporný"
+       ],
+       [
+        "𐰃𐰺𐰴 𐰋𐰃𐱅𐰃𐰏",
+        "ı r¹ q¹ · b² i t² i g²",
+        "ırq bitig „kniha věšteb“, název rukopisu z Tun-chuangu"
+       ]
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Odkud písmo pochází",
+      "p": [
+       "Původ písma není jistý. Už Thomsen soudil, že vychází z některého z písem odvozených od aramejštiny, a podle převládajícího výkladu je jeho nejbližším předkem sogdské písmo, kterým psali íránští obchodníci ze Soghdiany, vlivní i na turkutském dvoře. Shoduje se s ním však jen část znaků a přímé odvození se dokázat nepodařilo, takže otázka zůstává sporná. Starší domněnka, že znaky vznikly z tamg, značek, jimiž kočovníci označovali dobytek, se pokládá za neprokazatelnou.",
+       "Také čínské prameny ze 7. století si odporují. Dějiny dynastie Čou uvádějí, že Turkuti mají písmo podobné sogdskému, podle Dějin dynastie Suej a Dějin severních dynastií písmo neměli. Samy runové nápisy pocházejí až z 8. století; o případných starších podobách písma nevíme nic jistého."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "detail",
+      "na-vysku": true
+     },
+     {
+      "typ": "text",
+      "h": "Orchonské nápisy",
+      "p": [
+       "Roku 1889 objevila expedice Nikolaje Jadrinceva v údolí řeky Orchon ve středním Mongolsku, na lokalitě Chöšöö Cajdam, dvě velké kamenné stély s nápisy. Stály původně na kamenných želvách uvnitř zděných ohrad. Jednu dal Bilge kagan vztyčit roku 732 na památku svého bratra Kültegina, druhou nechal roku 735 zhotovit jeho syn pro Bilgeho samotného. Staroturkické texty na obou stélách sepsal podle nápisů princ Jollyg tegin, Bilgeho syn.",
+       "Nápisy jsou dvojjazyčné. Na Külteginově stéle je vedle turkického textu i nápis čínský, podle tradice složený jménem tchangského císaře Süan-cunga; turkický text však není jeho překladem a vypráví dějiny po svém. Líčí legendární počátky Turkutů, zlatý věk jejich říše, padesát let poddanství Číně, kdy „bekové opustili svá turkická jména a přijali čínská“, a osvobození za Ilteriše. Vyzývá Turkuty, aby zůstali v posvátných horách Ötüken a nepodléhali čínskému bohatství a lstivým slovům.",
+       "Údolí Orchonu je od roku 2004 zapsáno na Seznam světového dědictví UNESCO. Külteginova stéla je dnes v Muzeu Turkutů přímo na místě."
+      ]
+     },
+     {
+      "typ": "rameček",
+      "h": "Slyšte, bekové",
+      "p": [
+       "Jedna z pasáží Külteginova nápisu (východní strana) oslovuje beky (šlechtu) i prostý lid: „Slyšte, turkičtí a oghuzští bekové a lide! Dokud se nebe nahoře nezřítí a země dole se nepropadne, lide Türků, kdo by mohl zničit tvůj stát a tvůj řád?“ Bilge kagan v nápisech také uvádí, že si od čínského císaře vyžádal umělce, kteří mu vyzdobili pamětní síň; kámen dal vytesat."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "muzeum",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "Tonjukuk",
+      "p": [
+       "Třetím velkým nápisem druhého kaganátu je nápis Tonjukukův na dvou stélách v Bajn Cokto u Nalajchu, nedaleko dnešního Ulánbátaru. Tonjukuk (asi 646 – asi 726) sloužil jako rádce a vojevůdce čtyřem kaganům a byl tchánem Bilge kagana. Nápis vypráví v první osobě, jak pomáhal obnovit říši: „Já, moudrý Tonjukuk, jsem se narodil (či: vyrostl) v říši Tabgač“, tedy v Číně; „turkický lid byl poddán Číně.“",
+       "Protože text mluví ústy samotného Tonjukuka, klade se jeho vznik do doby jeho života. Přesná datace je nejistá: obvykle se uvádí doba krátce po roce 716, podle jiných badatelů až kolem roku 720 nebo později. Nápis je tedy o něco starší než stély Kültegina a Bilgeho."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "tonjukuk",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "Nápisy od Jeniseje",
+      "p": [
+       "Runové nápisy se našly nejen v Mongolsku, ale hlavně v povodí horního Jeniseje na jižní Sibiři, v dnešní Tuvě a Chakasku, a v menším počtu na Altaji, v údolí řeky Talas a v Sin-ťiangu. Přehled kazachstánského jazykového výboru jich uvádí 54 z oblasti Orchonu, 106 od Jeniseje, 15 z Talasu a 78 z Altaje; Marcel Erdal počítá celkem asi dvě stě nápisů.",
+       "Jenisejské nápisy jsou většinou krátké náhrobní texty, v nichž zemřelý promlouvá o své rodině, stádech a titulech. Připisují se převážně jenisejským Kyrgyzům a obvykle se kladou do 8.–10. století, datace jednotlivých kamenů je však nejistá. Znaky se v nich od orchonských místy liší. Právě od Jeniseje pochází první staroturkický nápis, který viděli Evropané: stélu Ujbat I u Abakanu našel roku 1721 badatel Daniel Gottlieb Messerschmidt."
+      ]
+     },
+     {
+      "typ": "galerie",
+      "h": "Kameny od Jeniseje",
+      "f": [
+       "kyzyl",
+       "turan",
+       "ujbat"
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Irk bitig, kniha věšteb",
+      "p": [
+       "Kromě kamenů se dochovalo i několik rukopisů v runovém písmu, z Východního Turkestánu a z Tun-chuangu. Nejvýznamnější je Irk bitig, „Kniha věšteb“, jediný úplný rukopisný text v tomto písmu. Našel ho roku 1907 Aurel Stein v zazděné „knihovní jeskyni“ buddhistických jeskyní Mo-kao u Tun-chuangu a dnes je v Britské knihovně v Londýně.",
+       "Je to sešitek z 58 listů o velikosti asi 13 × 8 cm. Staroturkický text zaujímá 104 strany a je psán černým inkoustem s červenými oddělovači slov. Obsahuje 65 věšteb. Každou uvádějí tři skupiny jedné až čtyř červených teček, patrně výsledek trojího hodu podlouhlou kostkou se čtyřmi popsanými stranami (nebo hodu třemi kostkami); následuje krátký obraz ze světa kočovníků (sokol na santálovém stromě, kůň ztracený v poušti, chán vracející se z vítězné bitvy) a verdikt „vězte: je to dobré“ nebo „špatné“. Hlavní text končí slovy „Nyní, moji milí synové, vězte: tato kniha věšteb je dobrá.“",
+       "Podle tiráže vznikl opis v roce tygra v manichejském klášteře; nejčastěji se klade do 9. století, podle Louise Bazina až do let 930 nebo 942. Chyby opisovače ukazují, že jde o opis staršího textu. Prázdné listy na začátku a konci později zaplnily buddhistické verše v čínštině."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "irk",
+      "siroka": true
+     },
+     {
+      "typ": "foto",
+      "f": "vestba"
+     },
+     {
+      "typ": "foto",
+      "f": "irkkonec"
+     },
+     {
+      "typ": "text",
+      "h": "Rozluštění",
+      "p": [
+       "Orchonské nápisy vydával Vasilij Radlov (Wilhelm Radloff, 1837–1918), německý rodák a přední ruský turkolog. Čínský text na Külteginově stéle nabízel vodítko: prozrazoval, komu byl kámen zasvěcen a kdy vznikl. Rozluštit runy se však podařilo dříve dánskému jazykovědci Vilhelmu Thomsenovi (1842–1927) z Kodaně.",
+       "Thomsen zjistil, že se písmo čte zprava doleva, a rozpoznal, že souhlásky tvoří dvě řady podle vokálové harmonie. Podle obvyklého líčení mu jako první klíče posloužila slova täŋri „nebe“, türk a jméno Kültegin, známé z čínské části nápisu. Výsledek předložil 15. prosince 1893 Královské dánské akademii věd. Radlov pak brzy vydal první překlady, Thomsen roku 1896 francouzsky svůj výklad Inscriptions de l'Orkhon déchiffrées a roku 1922 úplnější dánský překlad."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "thomsen"
+     },
+     {
+      "typ": "foto",
+      "f": "busta",
+      "na-vysku": true
+     },
+     {
+      "typ": "text",
+      "h": "Konec runového písma",
+      "p": [
+       "Runové písmo převzali po roce 744 i Ujgurové, kteří po Turkutech ovládli Mongolsko. Roku 840 jejich kaganát rozvrátili jenisejští Kyrgyzové a Ujgurové odešli do oáz Turfanu a do Kan-su. Tam se v turkických textech brzy prosadilo ujgurské písmo odvozené ze sogdského, s buddhismem a manicheismem i další písma, a od 10. a 11. století s islámem arabské písmo. Runy se používaly zhruba od 8. do 10. století a pak upadly v zapomnění.",
+       "Staroturkické nápisy jsou dnes chápány jako společné dědictví turkických národů. Znaky orchonského písma nese například ázerbájdžánská bankovka v hodnotě 5 manatů, vydávaná od roku 2006."
+      ]
+     },
+     {
+      "typ": "osa",
+      "h": "Časová osa",
+      "udalosti": [
+       [
+        "552",
+        "Bumin kagan zakládá první turkutský kaganát."
+       ],
+       [
+        "630",
+        "Tchangové porážejí východní Turkuty a zajímají jejich kagana."
+       ],
+       [
+        "636–659",
+        "Čínské Dějiny dynastií Čou a Suej a Dějiny severních dynastií si odporují v tom, zda Turkuti mají písmo."
+       ],
+       [
+        "682",
+        "Ilteriš kagan a Tonjukuk obnovují turkutskou říši."
+       ],
+       [
+        "asi 716–725",
+        "Tonjukukův nápis (datace nejistá)."
+       ],
+       [
+        "732",
+        "Stéla Kültegina, zemřelého roku 731."
+       ],
+       [
+        "735",
+        "Stéla Bilge kagana, zemřelého roku 734."
+       ],
+       [
+        "744",
+        "Ujgurové porážejí poslední turkutský kaganát."
+       ],
+       [
+        "840",
+        "Jenisejští Kyrgyzové rozvracejí ujgurský kaganát."
+       ],
+       [
+        "9.–10. st.",
+        "Rukopis Irk bitig (rok tygra)."
+       ],
+       [
+        "1721",
+        "D. G. Messerschmidt nachází jenisejskou stélu Ujbat I."
+       ],
+       [
+        "1889",
+        "Jadrincevova expedice objevuje orchonské nápisy."
+       ],
+       [
+        "15. 12. 1893",
+        "Thomsen ohlašuje rozluštění písma."
+       ],
+       [
+        "1907",
+        "Aurel Stein nachází Irk bitig v Tun-chuangu."
+       ],
+       [
+        "2004",
+        "Údolí Orchonu na Seznamu světového dědictví UNESCO."
+       ],
+       [
+        "2009",
+        "Staroturkické písmo v Unicode 5.2."
+       ]
+      ]
+     },
+     {
+      "typ": "tecky",
+      "h": "Staroturkičtina na glóbu",
+      "uvod": "Klepnutím se jazyk ukáže na glóbu:"
+     },
+     {
+      "typ": "zdroje",
+      "h": "Zdroje a další četba",
+      "p": [
+       "Talat Tekin: A Grammar of Orkhon Turkic. Indiana University, Bloomington – Mouton, Haag 1968 (Uralic and Altaic Series 69).",
+       "Marcel Erdal: A Grammar of Old Turkic. Brill, Leiden 2004.",
+       "Talat Tekin: Irk Bitig. The Book of Omens. Harrassowitz, Wiesbaden 1993.",
+       "Peter B. Golden: An Introduction to the History of the Turkic Peoples. Harrassowitz, Wiesbaden 1992.",
+       "Lars Johanson, Éva Á. Csató (ed.): The Turkic Languages. Routledge, London 1998.",
+       "Vilhelm Thomsen: Inscriptions de l'Orkhon déchiffrées. Société finno-ougrienne, Helsingfors 1896.",
+       "Glottolog 5 (jazyky a jejich zařazení)."
+      ]
+     }
+    ]
+   },
+   "en": {
+    "nazev": "The Göktürks and the Orkhon script",
+    "stitek": "Languages of antiquity",
+    "podtitul": "The Mongolian steppe and southern Siberia · runic inscriptions of the 8th–10th centuries",
+    "perex": "On stone steles in the Mongolian steppe the Göktürks left the oldest continuous texts in a Turkic language. Their runic script, written from right to left, has two letters for many consonants, depending on whether a word contains front or back vowels. The 8th-century inscriptions tell of the rise, fall and restoration of a steppe empire. They were deciphered in 1893 by the Danish linguist Vilhelm Thomsen, and their language, the earliest attested Turkic, is close to the ancestors of languages spoken today by some 200 million people.",
+    "fakta": [
+     [
+      "Region",
+      "Mongolia (Orkhon Valley), southern Siberia (Tuva and Khakassia on the upper Yenisei), the Altai, the Talas valley, Xinjiang"
+     ],
+     [
+      "Period",
+      "Göktürk khaganates 552–744; runic inscriptions and manuscripts c. 8th–10th c."
+     ],
+     [
+      "Language",
+      "Old Turkic, the earliest attested Turkic language"
+     ],
+     [
+      "Script",
+      "Old Turkic (Orkhon-Yenisei) runic script, an alphabet written from right to left; consonants in two sets according to vowel harmony"
+     ],
+     [
+      "Monuments",
+      "about 200 inscriptions and a few manuscripts; best known are the steles of Kül Tigin (732), Bilge Qaghan (735) and Tonyukuk"
+     ],
+     [
+      "Decipherment",
+      "1893, Vilhelm Thomsen"
+     ]
+    ],
+    "nazvyTecek": {
+     "oldu1238": "Old Turkic"
+    },
+    "oddily": [
+     {
+      "typ": "text",
+      "h": "An empire on the Mongolian steppe",
+      "p": [
+       "The Göktürks (Old Turkic Türk, Chinese 突厥 Tujue) were a nomadic people of Inner Asia ruled by the Ashina clan. Under Bumin Qaghan (d. 552) and his sons they threw off the rule of the Rouran and founded the First Turkic Khaganate, a steppe empire whose ruler bore the title qaghan. At its height in the late 6th century it reached from Manchuria to the Black Sea, but it soon split into eastern and western halves.",
+       "In 630 the Chinese Tang dynasty defeated the Eastern Turks and captured their qaghan, and for half a century they lived under Chinese rule. In 682 Ilterish Qaghan and his adviser Tonyukuk rose in revolt and restored the empire, now called the Second Turkic Khaganate. Under Ilterish's sons, Bilge Qaghan (683–734) and his brother, the general Kül Tigin (684–731), it flourished again. After Bilge's death it weakened, and in 744 it was defeated by the Uyghurs, allies of the Tang. The oldest continuous texts in any Turkic language date from the Second Khaganate."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "kultegin",
+      "na-vysku": true
+     },
+     {
+      "typ": "text",
+      "h": "Old Turkic",
+      "p": [
+       "The language of the runic inscriptions is called Old Turkic. It is the earliest attested Turkic language; anything older is known only from foreign, mainly Chinese, sources. Turkic languages are spoken today by some 200 million people, above all in Turkish, then Uzbek, Azerbaijani, Kazakh, Uyghur, Turkmen, Tatar, Kyrgyz and many others from the Balkans to Siberia.",
+       "Old Turkic shows features that are almost universal in the family: vowel harmony (the vowels of a word are either all front or all back), agglutination (grammatical meanings are expressed by suffixes added one after another), subject–object–verb word order and no grammatical gender. It belongs to the large Common Turkic group; the Oghur branch, whose only living member is Chuvash, stands apart (Old Turkic toquz ‘nine’ against Chuvash tăχăr).",
+       "The language of the inscriptions from Mongolia and the Yenisei differs only slightly from that of the later Uyghur manuscripts from Eastern Turkestan (Xinjiang), but according to Marcel Erdal they represent different dialects. The inscriptions also contain words of non-Turkic origin, such as titles borrowed from Iranian languages."
+      ]
+     },
+     {
+      "typ": "slova",
+      "h": "Old words in today's languages",
+      "uvod": "The Turkic languages are still close to one another, and many basic words differ only in their sounds. Old Turkic words (transliterated) and their counterparts in Turkish and Kazakh (Kazakh in Cyrillic):",
+      "hlavicka": [
+       "Old Turkic",
+       "meaning",
+       "Turkish · Kazakh"
+      ],
+      "radky": [
+       [
+        "ata",
+        "father",
+        "ata · ата"
+       ],
+       [
+        "qız",
+        "girl, daughter",
+        "kız · қыз"
+       ],
+       [
+        "baš",
+        "head",
+        "baş · бас"
+       ],
+       [
+        "köz",
+        "eye",
+        "göz · көз"
+       ],
+       [
+        "qan",
+        "blood",
+        "kan · қан"
+       ],
+       [
+        "at",
+        "horse",
+        "at · ат"
+       ],
+       [
+        "sub",
+        "water",
+        "su · су"
+       ],
+       [
+        "ot",
+        "fire",
+        "od (usually ateş, from Persian) · от"
+       ],
+       [
+        "taɣ",
+        "mountain",
+        "dağ · тау"
+       ],
+       [
+        "kök",
+        "blue; sky",
+        "gök · көк"
+       ],
+       [
+        "täŋri",
+        "sky, the sky god",
+        "tanrı ‘god’ · тәңір"
+       ],
+       [
+        "bir",
+        "one",
+        "bir · бір"
+       ],
+       [
+        "toquz",
+        "nine",
+        "dokuz · тоғыз"
+       ]
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Runes written from right to left",
+      "p": [
+       "Because of its angular letters, well suited to carving in stone, the Old Turkic script is also called the Turkic runes. It has nothing to do with the Germanic runes; it is an alphabet. It runs from right to left, on the steles in vertical lines. Words are divided by a colon-like sign (in Unicode ⁚, TWO DOT PUNCTUATION), elsewhere by a ring.",
+       "The script is adapted to vowel harmony. Its eight vowels are written with only four letters (a/ä, ı/i, o/u, ö/ü), and inside a word vowels are often not written at all. Many consonants, however, have two letters: one for words with back vowels (a, ı, o, u), the other for words with front vowels (ä, i, ö, ü). The shape of the consonant thus tells the reader which vowel to supply. In 1893 Vilhelm Thomsen marked the two sets with superscript ¹ and ², as transliterations still do. Several further letters write whole groups of sounds, such as nt, lt, nč, ök or oq.",
+       "The name of the sky god, täŋri, is therefore written with four letters, 𐱅𐰭𐰼𐰃 (t² ŋ r² i): the front-set consonants reveal that the missing vowel is the front ä."
+      ]
+     },
+     {
+      "typ": "znaky",
+      "h": "Old Turkic letters (a selection)",
+      "znaky": [
+       [
+        "𐰀",
+        "a, ä",
+        "vowel; often left unwritten inside a word"
+       ],
+       [
+        "𐰃",
+        "ı, i",
+        "vowel"
+       ],
+       [
+        "𐰆",
+        "o, u",
+        "vowel"
+       ],
+       [
+        "𐰇",
+        "ö, ü",
+        "vowel"
+       ],
+       [
+        "𐰉",
+        "b¹",
+        "b with back vowels (a, ı, o, u)"
+       ],
+       [
+        "𐰋",
+        "b²",
+        "b with front vowels (ä, i, ö, ü)"
+       ],
+       [
+        "𐰺",
+        "r¹",
+        "back set"
+       ],
+       [
+        "𐰼",
+        "r²",
+        "front set"
+       ],
+       [
+        "𐱃",
+        "t¹",
+        "back set"
+       ],
+       [
+        "𐱅",
+        "t²",
+        "front set"
+       ],
+       [
+        "𐰴",
+        "q¹",
+        "back k [q]"
+       ],
+       [
+        "𐰚",
+        "k²",
+        "front k"
+       ],
+       [
+        "𐰭",
+        "ŋ",
+        "both sets"
+       ],
+       [
+        "𐰢",
+        "m",
+        "both sets"
+       ]
+      ],
+      "priklad": {
+       "klin": "𐱅𐰇𐰼𐰚",
+       "prepis": "t² ü r² k² → türk",
+       "vyznam": "the name of the Türks; read from right to left, with all consonants from the front set"
+      },
+      "pozn": "Superscript ¹ marks the letter used in words with back vowels, ² the one used with front vowels (Vilhelm Thomsen's convention). Values follow the standard tables; letter shapes varied from place to place. Unicode has included the Old Turkic script since version 5.2 (2009), in the block U+10C00–U+10C4F, which distinguishes Orkhon and Yenisei forms. The letters are rendered in Noto Sans Old Turkic, and the page sets them from right to left."
+     },
+     {
+      "typ": "slova",
+      "h": "Words in runes",
+      "uvod": "How words from the Old Turkic inscriptions and manuscripts are written. The letters are listed in reading order, from right to left:",
+      "hlavicka": [
+       "in runes",
+       "letters",
+       "reading and meaning"
+      ],
+      "radky": [
+       [
+        "𐱅𐰭𐰼𐰃",
+        "t² ŋ r² i",
+        "täŋri ‘sky, the sky god’; the vowel ä is not written"
+       ],
+       [
+        "𐱅𐰇𐰼𐰚",
+        "t² ü r² k²",
+        "türk, the name of the Türks; all consonants from the front set"
+       ],
+       [
+        "𐰉𐰆𐰑𐰣",
+        "b¹ o d¹ n¹",
+        "bodun ‘people’; back-set consonants, the second vowel unwritten"
+       ],
+       [
+        "𐰚𐰇𐰜",
+        "k² ö ök",
+        "kök ‘blue, heavenly’; the last letter writes the group ök/kö"
+       ],
+       [
+        "𐰋𐰃𐰠𐰏𐰀",
+        "b² i l² g² ä",
+        "bilgä ‘wise’, a title of Bilge Qaghan and of Tonyukuk"
+       ],
+       [
+        "𐱃𐰆𐰪𐰸𐰸",
+        "t¹ o ñ uq uq",
+        "Toñuquq, Tonyukuk; the etymology of the name is disputed"
+       ],
+       [
+        "𐰃𐰺𐰴 𐰋𐰃𐱅𐰃𐰏",
+        "ı r¹ q¹ · b² i t² i g²",
+        "ırq bitig ‘book of omens’, the title of the Dunhuang manuscript"
+       ]
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Where the script came from",
+      "p": [
+       "The origin of the script is uncertain. Thomsen already believed it came from one of the scripts descended from Aramaic, and in the prevailing view its closest ancestor is the Sogdian script, used by the Iranian merchants of Sogdiana, who were influential at the Göktürk court. Only some of the letters match, however, and no direct derivation has been proven, so the question remains disputed. An older idea that the letters grew out of tamgas, the brands nomads used to mark their livestock, is considered unprovable.",
+       "Chinese sources of the 7th century contradict each other as well. The Book of Zhou says the Turks had a script similar to that of the Sogdians, while the Book of Sui and the History of the Northern Dynasties say they had none. The runic inscriptions themselves date only from the 8th century; nothing certain is known of any earlier forms of the script."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "detail",
+      "na-vysku": true
+     },
+     {
+      "typ": "text",
+      "h": "The Orkhon inscriptions",
+      "p": [
+       "In 1889 an expedition led by Nikolai Yadrintsev found two large inscribed stone steles in the valley of the Orkhon River in central Mongolia, at the site of Khöshöö Tsaidam. They originally stood on stone turtles within walled enclosures. Bilge Qaghan set up one in 732 in memory of his brother Kül Tigin; the other was made in 735 for Bilge himself by his son. According to the inscriptions, the Old Turkic texts on both were composed by Prince Yollıg Tigin, Bilge's son.",
+       "The inscriptions are bilingual. Beside the Turkic text, the Kül Tigin stele carries a Chinese inscription, traditionally said to have been composed in the name of the Tang emperor Xuanzong; the Turkic text is not a translation of it, however, and tells the story in its own way. It recounts the legendary origins of the Türks, the golden age of their empire, the fifty years of subjection to China when ‘the Turkic begs gave up their Turkic names and took Chinese ones’, and the liberation under Ilterish. It urges the Türks to stay in the sacred Ötüken mountains and not to be seduced by Chinese riches and cunning words.",
+       "The Orkhon Valley has been on the UNESCO World Heritage List since 2004. The Kül Tigin stele is now kept in the Göktürk Museum on the site."
+      ]
+     },
+     {
+      "typ": "rameček",
+      "h": "Hear this, begs",
+      "p": [
+       "One passage of the Kül Tigin inscription (east side) addresses the begs (nobles) and the common people: ‘Hear this, you Turkic and Oghuz begs and people! Unless the sky above collapses and the earth below gives way, O Turkic people, who could destroy your state and your order?’ Bilge Qaghan also says in the inscriptions that he asked the Chinese emperor for artists, who decorated his memorial hall; he had the stone carved."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "muzeum",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "Tonyukuk",
+      "p": [
+       "The third great inscription of the Second Khaganate is that of Tonyukuk, on two steles at Bayn Tsokto near Nalaikh, not far from present-day Ulaanbaatar. Tonyukuk (c. 646 – c. 726) served four qaghans as adviser and commander and was Bilge Qaghan's father-in-law. The inscription tells in the first person how he helped to restore the empire: ‘I, the wise Tonyukuk, was born (or: brought up) in the realm of Tabgach’, that is, China; ‘the Turkic people was subject to China.’",
+       "Since the text speaks in Tonyukuk's own voice, it is placed within his lifetime. The exact date is uncertain: it is usually put shortly after 716, by other scholars around 720 or later. Either way it is somewhat older than the steles of Kül Tigin and Bilge."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "tonjukuk",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "Inscriptions from the Yenisei",
+      "p": [
+       "Runic inscriptions have been found not only in Mongolia but above all in the upper Yenisei basin in southern Siberia, in present-day Tuva and Khakassia, and in smaller numbers in the Altai, the Talas valley and Xinjiang. The survey by Kazakhstan's language committee lists 54 from the Orkhon area, 106 from the Yenisei, 15 from Talas and 78 from the Altai; Marcel Erdal counts about two hundred inscriptions in all.",
+       "The Yenisei inscriptions are mostly short epitaphs in which the dead speak of their family, herds and titles. They are mostly attributed to the Yenisei Kyrgyz and usually placed in the 8th–10th centuries, although individual stones are hard to date. Some of their letters differ from the Orkhon forms. The first Old Turkic inscription seen by Europeans came from the Yenisei: the Uybat I stele near Abakan, found in 1721 by the explorer Daniel Gottlieb Messerschmidt."
+      ]
+     },
+     {
+      "typ": "galerie",
+      "h": "Stones from the Yenisei",
+      "f": [
+       "kyzyl",
+       "turan",
+       "ujbat"
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Irk Bitig, the Book of Omens",
+      "p": [
+       "Besides the stones, a few manuscripts in the runic script survive, from Eastern Turkestan and from Dunhuang. The most important is the Irk Bitig, the ‘Book of Omens’, the only complete manuscript text in this script. Aurel Stein found it in 1907 in the walled-up ‘Library Cave’ of the Buddhist Mogao caves near Dunhuang, and it is now in the British Library in London.",
+       "It is a small booklet of 58 folios, each page about 13 × 8 cm. The Old Turkic text fills 104 pages, written in black ink with red word dividers. It contains 65 omens. Each is headed by three groups of one to four red dots, probably the result of three throws of an oblong die with four marked sides (or of one throw of three such dice); then comes a short image from the nomads' world (a falcon in a sandalwood tree, a horse lost in the desert, a khan returning from a victorious battle) and the verdict ‘know thus: it is good’ or ‘bad’. The main text ends: ‘Now, my dear sons, know thus: this book of divination is good.’",
+       "According to its colophon the copy was written in a year of the tiger in a Manichaean monastery; it is most often dated to the 9th century, by Louis Bazin to 930 or 942. The copyist's errors show that it is a copy of an older text. The blank pages at the beginning and end were later filled with Buddhist verses in Chinese."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "irk",
+      "siroka": true
+     },
+     {
+      "typ": "foto",
+      "f": "vestba"
+     },
+     {
+      "typ": "foto",
+      "f": "irkkonec"
+     },
+     {
+      "typ": "text",
+      "h": "Decipherment",
+      "p": [
+       "The Orkhon inscriptions were published by Vasily Radlov (Wilhelm Radloff, 1837–1918), a German-born scholar and leading Russian Turkologist. The Chinese text on the Kül Tigin stele offered a lead: it revealed to whom the stone was dedicated and when it was made. Yet the runes were first deciphered by the Danish linguist Vilhelm Thomsen (1842–1927) of Copenhagen.",
+       "Thomsen established that the script runs from right to left and recognised that its consonants form two sets governed by vowel harmony. According to the usual account, his first keys were the words täŋri ‘sky’, türk and the name Kül Tigin, known from the Chinese part of the inscription. He presented his results to the Royal Danish Academy of Sciences on 15 December 1893. Radlov soon published the first translations, Thomsen his French study Inscriptions de l'Orkhon déchiffrées in 1896 and a fuller Danish translation in 1922."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "thomsen"
+     },
+     {
+      "typ": "foto",
+      "f": "busta",
+      "na-vysku": true
+     },
+     {
+      "typ": "text",
+      "h": "The end of the runic script",
+      "p": [
+       "After 744 the runic script was taken over by the Uyghurs, who succeeded the Göktürks in Mongolia. In 840 their khaganate was destroyed by the Yenisei Kyrgyz, and the Uyghurs moved to the oases of Turfan and to Gansu. There Turkic texts were soon written in the Old Uyghur script, derived from Sogdian, and in other scripts brought by Buddhism and Manichaeism, and from the 10th and 11th centuries, with Islam, in the Arabic script. The runes were used roughly from the 8th to the 10th century and then fell into oblivion.",
+       "Today the Old Turkic inscriptions are seen as a shared heritage of the Turkic peoples. Letters of the Orkhon script appear, for example, on the Azerbaijani 5-manat banknote issued since 2006."
+      ]
+     },
+     {
+      "typ": "osa",
+      "h": "Timeline",
+      "udalosti": [
+       [
+        "552",
+        "Bumin Qaghan founds the First Turkic Khaganate."
+       ],
+       [
+        "630",
+        "The Tang defeat the Eastern Turks and capture their qaghan."
+       ],
+       [
+        "636–659",
+        "The Chinese Book of Zhou, Book of Sui and History of the Northern Dynasties disagree on whether the Turks have a script."
+       ],
+       [
+        "682",
+        "Ilterish Qaghan and Tonyukuk restore the Turkic empire."
+       ],
+       [
+        "c. 716–725",
+        "The Tonyukuk inscription (date uncertain)."
+       ],
+       [
+        "732",
+        "Stele of Kül Tigin, who died in 731."
+       ],
+       [
+        "735",
+        "Stele of Bilge Qaghan, who died in 734."
+       ],
+       [
+        "744",
+        "The Uyghurs defeat the last Göktürk khaganate."
+       ],
+       [
+        "840",
+        "The Yenisei Kyrgyz destroy the Uyghur khaganate."
+       ],
+       [
+        "9th–10th c.",
+        "The Irk Bitig manuscript (a year of the tiger)."
+       ],
+       [
+        "1721",
+        "D. G. Messerschmidt finds the Uybat I stele on the Yenisei."
+       ],
+       [
+        "1889",
+        "Yadrintsev's expedition discovers the Orkhon inscriptions."
+       ],
+       [
+        "15 Dec 1893",
+        "Thomsen announces the decipherment."
+       ],
+       [
+        "1907",
+        "Aurel Stein finds the Irk Bitig at Dunhuang."
+       ],
+       [
+        "2004",
+        "The Orkhon Valley is inscribed on the UNESCO World Heritage List."
+       ],
+       [
+        "2009",
+        "The Old Turkic script is encoded in Unicode 5.2."
+       ]
+      ]
+     },
+     {
+      "typ": "tecky",
+      "h": "Old Turkic on the globe",
+      "uvod": "Select the language to show it on the globe:"
+     },
+     {
+      "typ": "zdroje",
+      "h": "Sources and further reading",
+      "p": [
+       "Talat Tekin: A Grammar of Orkhon Turkic. Indiana University, Bloomington – Mouton, The Hague 1968 (Uralic and Altaic Series 69).",
+       "Marcel Erdal: A Grammar of Old Turkic. Brill, Leiden 2004.",
+       "Talat Tekin: Irk Bitig. The Book of Omens. Harrassowitz, Wiesbaden 1993.",
+       "Peter B. Golden: An Introduction to the History of the Turkic Peoples. Harrassowitz, Wiesbaden 1992.",
+       "Lars Johanson, Éva Á. Csató (eds.): The Turkic Languages. Routledge, London 1998.",
+       "Vilhelm Thomsen: Inscriptions de l'Orkhon déchiffrées. Société finno-ougrienne, Helsingfors 1896.",
        "Glottolog 5 (languages and their classification)."
       ]
      }

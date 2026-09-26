@@ -1105,6 +1105,12 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/ancient/aksum/"/>
   </url>
   <url>
+    <loc>https://thelanguageatlas.com/ancient/orkhon/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/starovek/orchon/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/ancient/orkhon/"/>
+  </url>
+  <url>
     <loc>https://thelanguageatlas.com/ancient/slavs/</loc>
     <lastmod>2026-09-26</lastmod>
     <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/starovek/slovane/"/>
