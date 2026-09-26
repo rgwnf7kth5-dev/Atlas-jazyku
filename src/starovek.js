@@ -7,8 +7,43 @@
 var STAROVEK = (function(){
   function esc(s){ return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
   /* písma starověku v Unicode a třída, která jim dá písmo Noto (src/starovek.css) */
-  const PISMA = [["civ-klin", "\\u{12000}-\\u{1254F}"], ["civ-hier", "\\u{14400}-\\u{1467F}"], ["civ-egy", "\\u{13000}-\\u{1345F}"], ["civ-kopt", "\\u2C80-\\u2CFF\\u03E2-\\u03EF"], ["civ-fen", "\\u{10900}-\\u{1091F}"], ["civ-ugar", "\\u{10380}-\\u{1039F}"], ["civ-perskl", "\\u{103A0}-\\u{103DF}"], ["civ-linb", "\\u{10000}-\\u{100FF}"], ["civ-lina", "\\u{10600}-\\u{1077F}"], ["civ-mayc", "\\u{1D2E0}-\\u{1D2FF}"], ["civ-ital", "\\u{10300}-\\u{1032F}"], ["civ-brahmi", "\\u{11000}-\\u{1107F}"], ["civ-khar", "\\u{10A00}-\\u{10A5F}"], ["civ-deva", "\\u0900-\\u097F"], ["civ-aram", "\\u{10840}-\\u{1085F}"], ["civ-avest", "\\u{10B00}-\\u{10B3F}"], ["civ-pahl", "\\u{10B60}-\\u{10B7F}"], ["civ-sarab", "\\u{10A60}-\\u{10A7F}"], ["civ-etio", "\\u1200-\\u139F\\u2D80-\\u2DDF"], ["civ-han", "\\u3400-\\u4DBF\\u4E00-\\u9FFF"]]
-    .map(function(p){ return [p[0], new RegExp("[" + p[1] + "]", "u"), new RegExp("([" + p[1] + "][" + p[1] + "\\u0300-\\u036F\\s]*)", "gu")]; });
+  /* písmo: třída v textu, rozsah Unicode a rodina Noto (Google Fonts); rodiny pro stránku se odvodí ze znaků v ní */
+  const PISMA = [
+    ["civ-klin", "\\u{12000}-\\u{1254F}", "Noto Sans Cuneiform"],
+    ["civ-hier", "\\u{14400}-\\u{1467F}", "Noto Sans Anatolian Hieroglyphs"],
+    ["civ-egy", "\\u{13000}-\\u{1345F}", "Noto Sans Egyptian Hieroglyphs"],
+    ["civ-kopt", "Ⲁ-⳿Ϣ-ϯ", "Noto Sans Coptic"],
+    ["civ-fen", "\\u{10900}-\\u{1091F}", "Noto Sans Phoenician"],
+    ["civ-ugar", "\\u{10380}-\\u{1039F}", "Noto Sans Ugaritic"],
+    ["civ-perskl", "\\u{103A0}-\\u{103DF}", "Noto Sans Old Persian"],
+    ["civ-linb", "\\u{10000}-\\u{100FF}", "Noto Sans Linear B"],
+    ["civ-lina", "\\u{10600}-\\u{1077F}", "Noto Sans Linear A"],
+    ["civ-mayc", "\\u{1D2E0}-\\u{1D2FF}", "Noto Sans Mayan Numerals"],
+    ["civ-ital", "\\u{10300}-\\u{1032F}", "Noto Sans Old Italic"],
+    ["civ-brahmi", "\\u{11000}-\\u{1107F}", "Noto Sans Brahmi"],
+    ["civ-khar", "\\u{10A00}-\\u{10A5F}", "Noto Sans Kharoshthi"],
+    ["civ-deva", "ऀ-ॿ", "Noto Serif Devanagari"],
+    ["civ-aram", "\\u{10840}-\\u{1085F}", "Noto Sans Imperial Aramaic"],
+    ["civ-avest", "\\u{10B00}-\\u{10B3F}", "Noto Sans Avestan"],
+    ["civ-pahl", "\\u{10B60}-\\u{10B7F}", "Noto Sans Inscriptional Pahlavi"],
+    ["civ-sarab", "\\u{10A60}-\\u{10A7F}", "Noto Sans Old South Arabian"],
+    ["civ-etio", "ሀ-᎟ⶀ-⷟", "Noto Serif Ethiopic"],
+    ["civ-han", "㐀-䶿一-鿿", "Noto Serif TC"],
+    ["civ-run", "ᚠ-᛿", "Noto Sans Runic"],
+    ["civ-got", "\\u{10330}-\\u{1034F}", "Noto Sans Gothic"],
+    ["civ-ogam", " -᚟", "Noto Sans Ogham"],
+    ["civ-hlah", "Ⰰ-ⱟ\\u{1E000}-\\u{1E02F}", "Noto Sans Glagolitic"],
+    ["civ-hebr", "֐-׿", "Noto Serif Hebrew"],
+    ["civ-syr", "܀-ݏ", "Noto Sans Syriac"],
+    ["civ-nab", "\\u{10880}-\\u{108AF}", "Noto Sans Nabataean"],
+    ["civ-palm", "\\u{10860}-\\u{1087F}", "Noto Sans Palmyrene"],
+    ["civ-sam", "ࠀ-࠿", "Noto Sans Samaritan"],
+    ["civ-arab", "؀-ۿ", "Noto Naskh Arabic"],
+    ["civ-arm", "԰-֏", "Noto Serif Armenian"],
+    ["civ-gruz", "Ⴀ-ჿⴀ-⴯Ა-Ჿ", "Noto Serif Georgian"],
+    ["civ-tib", "ༀ-࿿", "Noto Serif Tibetan"],
+    ["civ-taml", "஀-௿", "Noto Serif Tamil"]]
+    .map(function(p){ return [p[0], new RegExp("[" + p[1] + "]", "u"), new RegExp("([" + p[1] + "][" + p[1] + "\\u0300-\\u036F\\s]*)", "gu"), p[2]]; });
   /* písma psaná zprava doleva: řádek znaků dostane dir="rtl" */
   const RTL = ["civ-fen", "civ-khar", "civ-aram", "civ-avest", "civ-pahl", "civ-sarab"];
   function tridaPisma(z){ for (const p of PISMA) if (p[1].test(z)) return p[0]; return ""; }
@@ -55,6 +90,25 @@ var STAROVEK = (function(){
           const nazev = (c[lang].nazvyTecek || {})[k] || t.nazev;
           const ikona = '<svg aria-hidden="true" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M1.8 8h12.4M8 1.8c2.2 2.4 2.2 10 0 12.4M8 1.8c-2.2 2.4-2.2 10 0 12.4" fill="none" stroke="currentColor" stroke-width="1.1"/></svg>';
           return "<li>" + (t.href ? '<a class="civ-tecka" href="' + esc(t.href) + '">' + ikona + esc(nazev) + "</a>" : '<button class="civ-tecka" type="button" data-tecka="' + esc(k) + '">' + ikona + esc(nazev) + "</button>") + "</li>"; }).join("") + "</ul></section>";
+      /* rodokmen písem: uzly s odkazem na rodiče, vnořený seznam; přerušovaná čára = sporné odvození */
+      case "strom": {
+        const deti = {}; b.uzly.forEach(function(u){ (deti[u.rodic || ""] = deti[u.rodic || ""] || []).push(u); });
+        const civ = function(id){ return (o.vsechny || []).find(function(x){ return x.id === id; }); };
+        const uzel = function(u){
+          const cc = u.civ && civ(u.civ);
+          const jmeno = cc ? (o.odkazCiv ? '<a href="' + esc(o.odkazCiv(cc)) + '">' + esc(u.nazev) + "</a>" : '<button type="button" data-civ="' + esc(cc.id) + '">' + esc(u.nazev) + "</button>") : esc(u.nazev);
+          const pod = deti[u.id] || [];
+          return '<li class="civ-uzel' + (u.jistota === "sporna" ? " sporna" : "") + '"><div class="civ-uzel-karta">' +
+            (u.ukazka ? radekPisma(u.ukazka, "civ-uzel-ukazka") : '<span class="civ-uzel-ukazka civ-bez-ukazky" aria-hidden="true">·</span>') +
+            '<span class="civ-uzel-text"><b>' + jmeno + "</b>" + (u.doba ? "<small>" + esc(u.doba) + "</small>" : "") + (u.pozn ? "<span>" + text(u.pozn) + "</span>" : "") + "</span></div>" +
+            (pod.length ? "<ul>" + pod.map(uzel).join("") + "</ul>" : "") + "</li>";
+        };
+        return '<section class="civ-strom">' + h + (b.uvod ? "<p>" + text(b.uvod) + "</p>" : "") + '<ul class="civ-strom-koren">' + (deti[""] || []).map(uzel).join("") + "</ul>" +
+          (b.pozn ? '<p class="civ-pozn">' + text(b.pozn) + "</p>" : "") + "</section>";
+      }
+      /* slovníček pojmů */
+      case "pojmy": return '<section class="civ-pojmy">' + h + (b.uvod ? "<p>" + text(b.uvod) + "</p>" : "") + "<dl>" + b.pojmy.map(function(p){
+          return "<div><dt>" + esc(p[0]) + "</dt><dd>" + text(p[1]) + (p[2] ? '<span class="civ-pojem-priklad">' + text(p[2]) + "</span>" : "") + "</dd></div>"; }).join("") + "</dl></section>";
       case "zdroje": return '<section class="civ-zdroje">' + h + "<ul>" + b.p.map(function(p){ return "<li>" + esc(p) + "</li>"; }).join("") + "</ul></section>";
     }
     return "";
@@ -73,8 +127,8 @@ var STAROVEK = (function(){
     return '<article class="civ" lang="' + lang + '">' +
       '<header class="civ-hero"><div class="civ-malba">' + (o.malba || "") + '</div><div class="civ-titul"><p class="civ-stitek">' + esc(L.stitek) + '</p><h1 id="civ-nadpis">' + esc(L.nazev) +
       '</h1><p class="civ-podtitul">' + esc(L.podtitul) + "</p></div></header>" +
-      '<div class="civ-telo"><aside class="civ-fakta" aria-label="' + esc(U.vKostce) + '"><h2>' + esc(U.vKostce) + "</h2><dl>" +
-      L.fakta.map(function(f){ return "<div><dt>" + esc(f[0]) + "</dt><dd>" + text(f[1]) + "</dd></div>"; }).join("") + "</dl></aside>" +
+      '<div class="civ-telo">' + (L.fakta && L.fakta.length ? '<aside class="civ-fakta" aria-label="' + esc(U.vKostce) + '"><h2>' + esc(U.vKostce) + "</h2><dl>" +
+      L.fakta.map(function(f){ return "<div><dt>" + esc(f[0]) + "</dt><dd>" + text(f[1]) + "</dd></div>"; }).join("") + "</dl></aside>" : "") +
       '<p class="civ-perex">' + text(L.perex) + "</p>" +
       L.oddily.map(function(b){ return oddil(c, b, lang, o); }).join("") +
       ostatni(c, lang, o) +
@@ -82,13 +136,19 @@ var STAROVEK = (function(){
   }
   /* znaky, pro které je potřeba stáhnout písmo Noto (Google Fonts s parametrem text=) */
   function znakyPisma(c){
-    const s = JSON.stringify([c.cs, c.en]), m = {};
+    const s = JSON.stringify([c.cs, c.en, Object.values(c.fotky || {}).map(function(f){ return [f.cs, f.en]; })]), m = {};
     for (const z of s) if (tridaPisma(z)) m[z] = 1;
     return Object.keys(m).join("");
   }
+  /* rodiny písem, které stránka potřebuje (podle znaků, které v ní opravdu jsou) */
+  function rodinyPisma(c){
+    const r = [];
+    for (const z of znakyPisma(c)) for (const p of PISMA) if (p[1].test(z) && r.indexOf(p[3]) < 0) r.push(p[3]);
+    return r;
+  }
   function odkazPisma(c){
     const z = znakyPisma(c);
-    return z ? "https://fonts.googleapis.com/css2?" + (c.pisma || []).map(function(p){ return "family=" + p.replace(/ /g, "+"); }).join("&") + "&text=" + encodeURIComponent(z) + "&display=swap" : "";
+    return z ? "https://fonts.googleapis.com/css2?" + rodinyPisma(c).map(function(p){ return "family=" + p.replace(/ /g, "+"); }).join("&") + "&text=" + encodeURIComponent(z) + "&display=swap" : "";
   }
-  return { html: html, odkazPisma: odkazPisma };
+  return { html: html, odkazPisma: odkazPisma, rodinyPisma: rodinyPisma };
 })();

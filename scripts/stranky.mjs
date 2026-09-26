@@ -402,7 +402,7 @@ ${html}
         malba: `<img src="/starovek/${c.id}/malba.jpg" alt="" width="1200" height="630">`, tecka,
         vsechny: starovek.civilizace, odkazCiv: x => civAdresa(x, lang) });
       const pisma = STAROVEK.odkazPisma(c);
-      zapis(adresa, stranka({ lang, adresa, jinaAdresa: jina, titulek: Us.titulek.replace("{n}", L.nazev) + " · " + T.nazev, popis: L.perex,
+      zapis(adresa, stranka({ lang, adresa, jinaAdresa: jina, titulek: (c.prehled ? L.nazev : Us.titulek.replace("{n}", L.nazev)) + " · " + T.nazev, popis: L.perex,
         obrazek: { src: `/starovek/${c.id}/malba.jpg`, w: 1200, h: 630 },
         obsah: `${pisma ? `<link rel="stylesheet" href="${escHtml(pisma)}">` : ""}<style>${stylStarovek}
 main{max-width:1100px} .civ{border-radius:18px; overflow:hidden; box-shadow:0 30px 70px -40px rgba(25,32,60,.55); border:1px solid var(--linka)}

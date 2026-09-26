@@ -3,6 +3,8 @@ import fs from "node:fs";
 import path from "node:path";
 
 const KOREN = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
+/* šablona stránek o civilizacích (src/starovek.js) – kvůli kontrole písem */
+const STAROVEK_SABLONA = new Function(fs.readFileSync(path.join(KOREN, "src/starovek.js"), "utf8") + ";return STAROVEK")();
 const json = p => JSON.parse(fs.readFileSync(path.join(KOREN, p), "utf8"));
 const chyby = [], varovani = [];
 
@@ -76,6 +78,9 @@ if (pd.uzly.length !== pd.nad.length) chyby.push("data/podrobnosti.json: strom p
     const typy = l => (c[l].oddily || []).map(b => b.typ).join(",");
     if (typy("cs") !== typy("en")) chyby.push(`${co}: ${c.id} má v češtině a angličtině jiné oddíly`);
     for (const l of ["cs", "en"]) for (const b of c[l].oddily) for (const f of [].concat(b.f || [])) if (!c.fotky[f]) chyby.push(`${co}: ${c.id}/${l} odkazuje na neznámou fotku „${f}“`);
+    { const pot = STAROVEK_SABLONA.rodinyPisma(c), uv = c.pisma || [];
+      for (const p of pot) if (!uv.includes(p)) varovani.push(`${co}: ${c.id} používá písmo ${p}, ale v „pisma“ chybí (stránka ho načte i tak)`);
+      for (const p of uv) if (!pot.includes(p)) varovani.push(`${co}: ${c.id} má v „pisma“ ${p}, ale žádný jeho znak nepoužívá`); }
     for (const k of c.tecky || []) if (!kody.has(k)) chyby.push(`${co}: ${c.id} má tečku „${k}“, kterou rejstřík nezná`);
   }
 }
