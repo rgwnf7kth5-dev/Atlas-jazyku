@@ -1,6 +1,6 @@
 // Fotky z Wikimedia Commons i s autorem a licencí (Commons je z Claude Code na webu blokované, běží v GitHub Actions).
 //   node scripts/fotky.mjs          podle data/fotky-hledat.json → kandidati/ (obrázky + meta.json)
-// „hledat“: dotazy pro výběr kandidátů, „soubory“: přesné názvy souborů („File:…“). Bere se jen volná licence
+// „hledat“: dotazy pro výběr kandidátů, „soubory“: přesné názvy souborů („File:…“), „texty“: stránky k ověření faktů. Bere se jen volná licence
 // (CC0, public domain, CC BY, CC BY-SA), ne NC ani ND. Výsledek pushne workflow na větev foto-kandidati.
 import fs from "node:fs";
 import path from "node:path";
@@ -62,6 +62,14 @@ for (const dotaz of zadani.hledat || []) {
 if ((zadani.soubory || []).length) {
   console.log("přesné soubory:");
   for (let i = 0; i < zadani.soubory.length; i += 20) await uloz("soubory", await info(zadani.soubory.slice(i, i + 20)));
+}
+/* texty k ověření faktů (Wikipedie apod. jsou z Claude Code na webu blokované): uloží se do kandidati/texty/ */
+for (const [nazev, url] of Object.entries(zadani.texty || {})) {
+  const o = await fetch(url, { headers: { "User-Agent": UA } });
+  fs.mkdirSync(path.join(CIL, "texty"), { recursive: true });
+  if (o.ok) fs.writeFileSync(path.join(CIL, "texty", nazev), await o.text());
+  console.log(`text ${nazev}: ${o.status}`);
+  await pockej(300);
 }
 fs.writeFileSync(path.join(CIL, "meta.json"), JSON.stringify(meta, null, 1) + "\n");
 console.log(`hotovo: ${meta.length} obrázků`);

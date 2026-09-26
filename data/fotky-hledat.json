@@ -17,5 +17,25 @@
   "Hittite rhyton museum",
   "Hittite chariot relief",
   "Bogazkoy tablet archive"
- ]
+ ],
+ "texty": {
+  "en-hittite-language.txt": "https://en.wikipedia.org/w/index.php?action=raw&title=Hittite_language",
+  "en-hittites.txt": "https://en.wikipedia.org/w/index.php?action=raw&title=Hittites",
+  "en-hattusa.txt": "https://en.wikipedia.org/w/index.php?action=raw&title=Hattusa",
+  "en-hrozny.txt": "https://en.wikipedia.org/w/index.php?action=raw&title=Bed%C5%99ich_Hrozn%C3%BD",
+  "cs-hrozny.txt": "https://cs.wikipedia.org/w/index.php?action=raw&title=Bed%C5%99ich_Hrozn%C3%BD",
+  "cs-chetite.txt": "https://cs.wikipedia.org/w/index.php?action=raw&title=Chetit%C3%A9",
+  "cs-chetitstina.txt": "https://cs.wikipedia.org/w/index.php?action=raw&title=Chetit%C5%A1tina",
+  "en-hittite-cuneiform.txt": "https://en.wikipedia.org/w/index.php?action=raw&title=Hittite_cuneiform",
+  "en-anatolian-hieroglyphs.txt": "https://en.wikipedia.org/w/index.php?action=raw&title=Anatolian_hieroglyphs",
+  "en-kadesh-treaty.txt": "https://en.wikipedia.org/w/index.php?action=raw&title=Egyptian%E2%80%93Hittite_peace_treaty",
+  "en-yazilikaya.txt": "https://en.wikipedia.org/w/index.php?action=raw&title=Yazılıkaya",
+  "en-anatolian-languages.txt": "https://en.wikipedia.org/w/index.php?action=raw&title=Anatolian_languages",
+  "en-laryngeal-theory.txt": "https://en.wikipedia.org/w/index.php?action=raw&title=Laryngeal_theory",
+  "en-hittite-laws.txt": "https://en.wikipedia.org/w/index.php?action=raw&title=Hittite_laws",
+  "en-nisantepe.txt": "https://en.wikipedia.org/w/index.php?action=raw&title=Nişantaş",
+  "en-karatepe.txt": "https://en.wikipedia.org/w/index.php?action=raw&title=Karatepe",
+  "en-hittite-grammar.txt": "https://en.wikipedia.org/w/index.php?action=raw&title=Hittite_grammar",
+  "en-knudtzon.txt": "https://en.wikipedia.org/w/index.php?action=raw&title=J%C3%B8rgen_Alexander_Knudtzon"
+ }
 }
