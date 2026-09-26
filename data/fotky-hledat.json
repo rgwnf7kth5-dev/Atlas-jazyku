@@ -1,0 +1,21 @@
+{
+ "_pozn": "Zadání pro scripts/fotky.mjs (GitHub Actions → větev foto-kandidati). Po změně souboru se workflow spustí samo.",
+ "sirka": 1280,
+ "pocet": 6,
+ "hledat": [
+  "Hattusa Lion Gate",
+  "Hattusa Sphinx Gate Yerkapi",
+  "Hattusa reconstructed city wall",
+  "Hattusa Great Temple ruins",
+  "Yazilikaya relief procession gods",
+  "Yazilikaya Tudhaliya IV relief",
+  "Hittite cuneiform tablet",
+  "Treaty of Kadesh tablet Istanbul",
+  "Bedrich Hrozny",
+  "Luwian hieroglyphs inscription",
+  "Nisantas inscription Hattusa",
+  "Hittite rhyton museum",
+  "Hittite chariot relief",
+  "Bogazkoy tablet archive"
+ ]
+}
