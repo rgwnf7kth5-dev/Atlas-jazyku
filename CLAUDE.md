@@ -417,6 +417,26 @@ Při ověřování opraveno mj.: nejstarší česká věta v litoměřické list
 „obvykle pokládané za nejstarší“, na Themistoklových střepech čtrnáct rukou, De orthographia bohemica anonymní, háček až
 z 16. st.; nejstarší nápis na českém území není runový (římské cihly z Mušova), jen nejstarší ze slovanského prostředí.
 
+**Příběhy jazyků** (26. 9. 2026, podněty z hodnocení webu, uživatel vybral „všechny čtyři“): druhá sekce ve stejné
+šabloně. Stránky jsou v `data/starovek.json` s `"sekce": "pribehy"` a `"skupina"` (`slova`, `promeny`, `lide`, `zahady`;
+názvy skupin v `src/ui/*.json` → `pribehy.skupiny`, validace je hlídá). Vstup: **ikona knihy v záhlaví** vedle chrámu
+(`#tl-pribehy`, `otevriSekci("pribehy")`, stejné okno `#starovek-okno` s nadpisy skupin), odkaz `#pribehy` / `#stories`,
+hledání; web `/pribehy/<adresa>/` a `/en/stories/<adresa>/` s rozcestníkem. Příběhy **nedávají tlačítko na kartu jazyka**
+a do „jedna tečka = jedna civilizace“ se nepočítají (`civPodleTecky` a validace je přeskakují). Rozcestník na konci stránky
+ukazuje jen stránky téže sekce (`o.dalsi`). Oddíl **`mapa`** `{h, p, vlastnost}` dá tlačítko „Ukázat na glóbu“, které zavře
+stránku a zapne typologickou mapu WALS (čaj → 138A; `ukazMapu`, odkaz `#mapa-138A`, `#mapa-pismo`). Stránky: Čaj a slova
+na cestách (`#caj`/`#tea`), Slova z češtiny ve světě, Jak z latiny vznikly románské jazyky, Jazyky, které se vracejí,
+Jazykové záhady. Při ověřování opraveno mj.: nejstarší česká přejetí nejsou husitská (něm. Petschaft z pečeť, kolem 1300),
+čeština měla dřív thé a čaj až od 19. st. jako rusismus, WALS vede polštinu (herbata) jako „jiné“, Ramusio 1559 (ne 1545),
+nejstarší anglický doklad cha je Linschoten 1598, manská Bible celá 1775, Neacșuův dopis není datovaný (jen přesně
+datovatelný), Glottolog vede manštinu jako „extinct“ a „awakening“ je jen v komentáři z ElCat, rongorongo – sporné, zda je to písmo.
+**Tři další civilizace** tentýž den: **Elam a Urartu** (`#elam-a-urartu`; tečka elamštiny se přesunula od Sumeru a Akkadu),
+**Turkuti a orchonské písmo** (`#orchon`/`#orkhon`; nové písmo `civ-orkh`, Noto Sans Old Turkic, zprava doleva; v rodokmenu
+písem uzel pod sogdským s přerušovanou čarou) a **Aztékové** (`#aztekove`/`#aztecs`; aztécké písmo Unicode nemá, jen fotky).
+Při ověřování opraveno mj.: Dessetův protoelamský návrh je z 2022 (2020 šlo o lineární elamské), není jisté, že protoelamské
+písmo zapisovalo elamštinu, urartské opasky tepané (ne lité), citát „Slyšte, bekové“ je z východní strany Külteginovy stély,
+staroturkičtina není předkem všech turkických jazyků. Anglický štítek civilizací je jednotně „Languages of antiquity“.
+
 - Data `data/starovek.json`: `civilizace[]` s `id`, `adresa{cs,en}`, `krajina` (druh akvarelu), `tecky` (glottocody),
   `pisma` (písma Noto), `fotky{klic: soubor, sirka, vyska, autor, licence, licenceUrl, zdroj, cs, en}` a texty `cs`/`en`
   (`nazev, stitek, podtitul, perex, fakta, nazvyTecek, oddily[]`). Oddíly: `text, foto (siroka / na-vysku), rameček,

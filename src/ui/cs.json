@@ -557,8 +557,15 @@
    {
     "h": "Jazyky starověku",
     "p": [
-     "Ikona chrámu vpravo nahoře (vedle přepínače jazyka) otevře nabídku Jazyky starověku; najde je i vyhledávání, například „egypt“. Každá položka otevře stránku o civilizaci zaměřenou na jazyk a písmo: dějiny, ukázky znaků, příběh rozluštění, příbuzná slova, stavbu jazyka, časovou osu, fotografie a literaturu. Na začátku nabídky jsou dva přehledy: rodokmen písem (odkud se která abeceda vzala, s tabulkou slova „král“ v dvaceti písmech) a slovníček pojmů (abdžad, abugida, determinativ, bústrofédon…). Hotové jsou stránky o Sumeru a Akkadu, starověkém Egyptě, starověké Indii, Chetitech, starověké Číně, Féničanech, Hebrejcích a Aramejcích, starověkém Řecku, Keltech, Etruscích, starověké Persii, starověkém Římě, Arménech a Gruzíncích, Germánech a runách, Aksumu, Slovanech a Velké Moravě a Mayích.",
+     "Ikona chrámu vpravo nahoře (vedle přepínače jazyka) otevře nabídku Jazyky starověku; najde je i vyhledávání, například „egypt“. Každá položka otevře stránku o civilizaci zaměřenou na jazyk a písmo: dějiny, ukázky znaků, příběh rozluštění, příbuzná slova, stavbu jazyka, časovou osu, fotografie a literaturu. Na začátku nabídky jsou dva přehledy: rodokmen písem (odkud se která abeceda vzala, s tabulkou slova „král“ v dvaceti písmech) a slovníček pojmů (abdžad, abugida, determinativ, bústrofédon…). Hotové jsou stránky o Sumeru a Akkadu, starověkém Egyptě, Elamu a Urartu, starověké Indii, Chetitech, starověké Číně, Féničanech, Hebrejcích a Aramejcích, starověkém Řecku, Keltech, Etruscích, starověké Persii, starověkém Římě, Arménech a Gruzíncích, Germánech a runách, Aksumu, Turkutech a orchonském písmu, Slovanech a Velké Moravě, Mayích a Aztécích.",
      "Stránka se otevře nad glóbem; zavře ji křížek, klávesa Escape nebo klepnutí vedle ní. Tlačítko „‹ Jazyky starověku“ vlevo nahoře vrátí do výběru civilizací a na konci stránky jsou odkazy na ostatní civilizace. Tlačítka v oddílu o jazycích na glóbu ukážou příslušné vymřelé jazyky na glóbu. Stránku otevře také tlačítko na kartě jazyka (například egyptštiny, koptštiny, chetitštiny nebo luvijštiny) a odkazy atlasjazyku.cz/#egypt a #chetite; na webu je i jako samostatná stránka."
+    ]
+   },
+   {
+    "h": "Příběhy jazyků",
+    "p": [
+     "Ikona knihy vpravo nahoře (vedle ikony chrámu) otevře nabídku Příběhy jazyků: tematické stránky ve stejné úpravě jako Jazyky starověku, seřazené do skupin Slova na cestách, Jazyky v čase, Lidé a jazyky a Záhady. Hotové jsou stránky Čaj a slova na cestách (proč se čaji ve světě říká „čaj“, nebo „tea“), Slova z češtiny ve světě (robot, dolar, houfnice, pistole, polka a co je doložené a co sporné), Jak z latiny vznikly románské jazyky, Jazyky, které se vracejí (velština, maorština, manština, hebrejština) a Jazykové záhady (nerozluštěná písma, izolované jazyky a sporné jazykové rodiny).",
+     "Tlačítko Ukázat na glóbu na stránce o čaji zavře stránku a obarví glóbus podle typologické mapy WALS o původu slova pro čaj. Stránky najde i vyhledávání (například „robot“), odkazy mají tvar atlasjazyku.cz/#caj a na webu jsou i jako samostatné stránky v oddílu /pribehy/."
     ]
    },
    {
