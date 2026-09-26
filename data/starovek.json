@@ -598,14 +598,14 @@
         "pozn": "Krátké nápisy hlavně na pečetích, v průměru asi pět znaků. Nerozluštěné; není jisté ani to, zda zapisují jazyk. Souvislost s pozdějším bráhmí se neprokázala. V Unicode není."
        },
        {
-        "id": "staroturkicke",
-        "rodic": "sogdske",
-        "nazev": "Staroturkické (orchonské) písmo",
-        "doba": "od 8. st. n. l.",
-        "ukazka": "𐱅𐰇𐰼𐰚",
-        "civ": "orchon",
-        "jistota": "sporna",
-        "pozn": "Runové písmo Turkutů, psané zprava doleva; odvození ze sogdského písma je pravděpodobné, ale sporné."
+        "id": "aztecke",
+        "rodic": null,
+        "nazev": "Aztécké písmo",
+        "doba": "14.–16. st. n. l.",
+        "ukazka": null,
+        "civ": "aztekove",
+        "jistota": "jista",
+        "pozn": "Obrázkový a logografický zápis se zárodky fonetického (rébusy v místních a osobních jménech); Unicode ho nekóduje."
        }
       ],
       "pozn": "Kořeny nejsou navzájem propojené, protože jejich příbuznost se nepodařilo prokázat. Egyptské hieroglyfy stojí v čele rodokmenu abeced výše."
@@ -1314,14 +1314,14 @@
         "pozn": "Short inscriptions, mostly on seals, about five signs on average. Undeciphered; it is not even certain that they record language. No link to the later Brahmi has been shown. It is not in Unicode."
        },
        {
-        "id": "staroturkicke",
-        "rodic": "sogdske",
-        "nazev": "Old Turkic (Orkhon) script",
-        "doba": "from the 8th c. AD",
-        "ukazka": "𐱅𐰇𐰼𐰚",
-        "civ": "orchon",
-        "jistota": "sporna",
-        "pozn": "Runic script of the Göktürks, written right to left; derivation from Sogdian is likely but disputed."
+        "id": "aztecke",
+        "rodic": null,
+        "nazev": "Aztec writing",
+        "doba": "14th–16th c. AD",
+        "ukazka": null,
+        "civ": "aztekove",
+        "jistota": "jista",
+        "pozn": "Pictorial and logographic notation with the beginnings of phonetic writing (rebuses in place and personal names); not encoded in Unicode."
        }
       ],
       "pozn": "The roots are not linked to one another because no relationship between them has been demonstrated. Egyptian hieroglyphs head the family tree of alphabets above."
@@ -23051,6 +23051,1106 @@
        "Simon Martin, Nikolai Grube: Chronicle of the Maya Kings and Queens. Thames & Hudson, 2nd ed. 2008.",
        "Stephen Houston, John Robertson, David Stuart: The Language of Classic Maya Inscriptions. Current Anthropology 41, 2000, pp. 321–356.",
        "Robert J. Sharer, Loa P. Traxler: The Ancient Maya. Stanford University Press, 6th ed. 2006.",
+       "Glottolog 5 (languages and their classification)."
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "aztekove",
+   "adresa": {
+    "cs": "aztekove",
+    "en": "aztecs"
+   },
+   "krajina": "tenochtitlan",
+   "hledat": "aztekove aztecs aztec azteca azteky mexica mexikove nahuatl klasicky classical nahuatl tenochtitlan texcoco mexiko mexico obrazkove pismo picture writing glyfy glyphs rebus kodex codex mendoza borbonicus boturini osuna florentsky florentine sahagun tonalpohualli kalendar calendar slunecni kamen sun stone piedra del sol templo mayor kipu quipu khipu inkove inca kecuanstina quechua",
+   "tecky": [
+    "clas1250",
+    "east2538",
+    "pipi1250",
+    "clas1251",
+    "cusc1236"
+   ],
+   "pisma": [],
+   "fotky": {
+    "mendoza": {
+     "soubor": "mendoza.jpg",
+     "sirka": 754,
+     "vyska": 1100,
+     "autor": "",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:CodexMendoza01.jpg",
+     "cs": "První obrazová strana Kodexu Mendoza (list 2r): založení Tenochtitlánu. Uprostřed orel na nopálu, který roste z kamene, pod ním štít se šípy a přípisek „tenochtitlan“; kolem zakladatelé se jmennými znaky, mezi nimi Tenoch. Okraj tvoří 51 znaků let jeho vlády, dole dobytí Colhuacanu a Tenayucanu, vlevo nahoře podpis André Theveta. Bodleyova knihovna, Oxford.",
+     "en": "The first pictorial page of the Codex Mendoza (folio 2r): the founding of Tenochtitlan. In the centre an eagle perches on a prickly pear growing from a stone, above a shield with arrows and the gloss “tenochtitlan”; around it sit the founders with their name glyphs, among them Tenoch. The border holds 51 year signs for his reign; below are the conquests of Colhuacan and Tenayucan, and at top left is André Thevet’s signature. Bodleian Library, Oxford."
+    },
+    "mendoza65": {
+     "soubor": "mendoza65.jpg",
+     "sirka": 859,
+     "vyska": 1100,
+     "autor": "",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Codex_Mendoza_folio_65r.png",
+     "cs": "List 65r Kodexu Mendoza: nahoře kněží-válečníci, kteří si podle počtu zajatců vysloužili odznaky a oděvy, dole vysocí hodnostáři se znaky svých titulů nad hlavou. Nahuatlské tituly (například tlacochcalcatl) a vysvětlivky připsal španělský tlumočník. Bodleyova knihovna, Oxford.",
+     "en": "Folio 65r of the Codex Mendoza: above, priest-warriors who earned insignia and costumes according to the number of captives they took; below, high officials with the glyphs of their titles above their heads. The Nahuatl titles (e.g. tlacochcalcatl) and the explanations were added by a Spanish interpreter. Bodleian Library, Oxford."
+    },
+    "borbonicus": {
+     "soubor": "borbonicus.jpg",
+     "sirka": 996,
+     "vyska": 983,
+     "autor": "",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Borbonicus_Codex_p13_Wiki.png",
+     "cs": "Strana 13 Borbonského kodexu: třinácté třináctidenní období věštebného kalendáře. Vlevo nahoře bohyně Tlazolteotl, dole a vpravo třináct znaků dnů počínaje dnem 1 pohyb, u každého červené tečky udávající číslo dne a pozdější španělský přípisek. Knihovna Národního shromáždění, Paříž (barevně upravená reprodukce).",
+     "en": "Page 13 of the Codex Borbonicus: the thirteenth 13-day period of the divinatory calendar. At top left is the goddess Tlazolteotl; along the bottom and the right side are the thirteen day signs, beginning with 1 Movement, each with red dots giving its number and a later Spanish gloss. Library of the National Assembly, Paris (colour-adjusted reproduction)."
+    },
+    "novyohen": {
+     "soubor": "novyohen.jpg",
+     "sirka": 1046,
+     "vyska": 996,
+     "autor": "",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Borbonicus_Codex_Wiki_34.png",
+     "cs": "Strana 34 Borbonského kodexu: obřad nového ohně na konci 52letého cyklu. Kněží nesou k chrámu, kde hoří nový oheň, svazky dřeva; vlevo nahoře znak roku 2 rákos. Knihovna Národního shromáždění, Paříž.",
+     "en": "Page 34 of the Codex Borbonicus: the New Fire ceremony at the end of a 52-year cycle. Priests carry bundles of wood to the temple where the new fire burns; at top left is the year sign 2 Reed. Library of the National Assembly, Paris."
+    },
+    "boturini": {
+     "soubor": "boturini.jpg",
+     "sirka": 1200,
+     "vyska": 872,
+     "autor": "El Comandante",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Boturini_Codex_(folio_10).JPG",
+     "cs": "List 10 Kodexu Boturini: v rámečcích znaky let (pazourek, dům, králík, rákos) s tečkami, uprostřed znak místa Tzompanco (lebka na stojanu, tzompantli), sedící postavy Mexiků a otisky chodidel, které značí cestu. Národní antropologické muzeum, Ciudad de México.",
+     "en": "Folio 10 of the Codex Boturini: framed year signs (flint, house, rabbit, reed) with dots, in the centre the place glyph of Tzompanco (a skull on a rack, tzompantli), seated Mexica and footprints marking their route. National Museum of Anthropology, Mexico City."
+    },
+    "osuna": {
+     "soubor": "osuna.jpg",
+     "sirka": 800,
+     "vyska": 368,
+     "autor": "",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Aztec_Triple_Alliance_Glyphs.jpg",
+     "cs": "Znaky tří měst aztéckého trojspolku z Kodexu Osuna (1565): zleva Texcoco, Tenochtitlán (nopál na kameni) a Tlacopan, u každého znak vládce (tlatoani). Upravená reprodukce.",
+     "en": "Glyphs of the three cities of the Aztec Triple Alliance from the Codex Osuna (1565): from left, Texcoco, Tenochtitlan (a prickly pear on a stone) and Tlacopan, each with the glyph for ruler (tlatoani). Adjusted reproduction."
+    },
+    "tanec": {
+     "soubor": "tanec.jpg",
+     "sirka": 1200,
+     "vyska": 819,
+     "autor": "",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Dancers_and_drummer_playing_the_huehuetl_in_Book_9_of_the_Florentine_Codex,_1577.jpg",
+     "cs": "Tanečníci s květinami a vějíři v rukou kolem hráče na velký buben huehuetl; ilustrace z IX. knihy Florentského kodexu, asi 1577. Biblioteca Medicea Laurenziana, Florencie.",
+     "en": "Dancers holding flowers and fans around a player of the huehuetl, an upright drum; an illustration from Book IX of the Florentine Codex, c. 1577. Biblioteca Medicea Laurenziana, Florence."
+    },
+    "zatmeni": {
+     "soubor": "zatmeni.jpg",
+     "sirka": 1200,
+     "vyska": 932,
+     "autor": "",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Lunar_eclipse_in_Book_7_of_the_Florentine_Codex,_1577.jpg",
+     "cs": "Zatmění na obrázku ze VII. knihy Florentského kodexu, věnované Slunci, Měsíci a hvězdám (asi 1577). Tváře Slunce a Měsíce prozrazují evropský vliv na malíře kodexu.",
+     "en": "An eclipse in an illustration from Book VII of the Florentine Codex, on the sun, the moon and the stars (c. 1577). The faces of the sun and moon show European influence on the codex painters."
+    },
+    "kamen": {
+     "soubor": "kamen.jpg",
+     "sirka": 1200,
+     "vyska": 800,
+     "autor": "Gary Todd",
+     "licence": "CC0",
+     "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Aztec_Sun_Stone_or_Calendar_Stone_(9754290101).jpg",
+     "cs": "Sluneční kámen (Piedra del Sol) v Národním antropologickém muzeu v Ciudad de México. Kotouč má průměr asi 3,6 metru; uprostřed tvář, kolem ní znak 4 pohyb a prstenec dvaceti znaků dnů.",
+     "en": "The Sun Stone (Piedra del Sol) in the National Museum of Anthropology, Mexico City. The disc is about 3.6 metres across; in the centre is a face, surrounded by the sign 4 Movement and a ring of the twenty day signs."
+    },
+    "templo": {
+     "soubor": "templo.jpg",
+     "sirka": 1200,
+     "vyska": 900,
+     "autor": "GAED",
+     "licence": "CC BY-SA 3.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Templo_Mayor_50.jpg",
+     "cs": "Vykopávky Templo Mayor, hlavního chrámu Tenochtitlánu, uprostřed historického centra Ciudad de México. Chrám se několikrát obestavoval novým pláštěm, a tak jsou vidět zbytky více stavebních fází.",
+     "en": "The excavated Templo Mayor, the main temple of Tenochtitlan, in the historic centre of Mexico City. The temple was repeatedly enlarged with new outer shells, so remains of several building phases are exposed."
+    },
+    "model": {
+     "soubor": "model.jpg",
+     "sirka": 1200,
+     "vyska": 800,
+     "autor": "Gary Todd",
+     "licence": "CC0",
+     "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Model_of_Tenochtitlan_Ceremonial_Center_(9755493573).jpg",
+     "cs": "Model obřadního okrsku Tenochtitlánu v Národním antropologickém muzeu v Ciudad de México; vzadu uprostřed dvojitý chrám Templo Mayor. Na stěně obraz města na ostrově v jezeře Texcoco, spojeného hrázemi s pevninou.",
+     "en": "A model of the ceremonial precinct of Tenochtitlan in the National Museum of Anthropology, Mexico City, with the twin temple of the Templo Mayor at the back in the centre. The painting on the wall shows the island city in Lake Texcoco, joined to the shore by causeways."
+    },
+    "kipu": {
+     "soubor": "kipu.jpg",
+     "sirka": 625,
+     "vyska": 380,
+     "autor": "Claus Ableiter",
+     "licence": "CC BY-SA 3.0",
+     "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Inca_Quipu.jpg",
+     "cs": "Inkské kipu v Muzeu Larco v Limě.",
+     "en": "An Inca khipu in the Larco Museum, Lima."
+    },
+    "locke": {
+     "soubor": "locke.jpg",
+     "sirka": 1200,
+     "vyska": 960,
+     "autor": "Leslie Leland Locke",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:The_Ancient_Quipu_Plate_XXI.jpg",
+     "cs": "Uzly kipu na tabuli z práce Leslieho Lelanda Locka The Ancient Quipu: vpravo uzly pro číslice 1 až 9 (dvojka až devítka jako dlouhé uzly s odpovídajícím počtem otáček).",
+     "en": "Khipu knots on a plate from Leslie Leland Locke’s The Ancient Quipu: on the right, the knots for the digits 1 to 9 (two to nine as long knots with the corresponding number of turns)."
+    }
+   },
+   "cs": {
+    "nazev": "Aztékové: nahuatl a obrázkové písmo",
+    "stitek": "Jazyky starověku",
+    "podtitul": "Střední Mexiko · od tradičního založení Tenochtitlánu (1325) po Florentský kodex",
+    "perex": "Aztékové z Tenochtitlánu mluvili klasickým nahuatlem; novodobými nářečími nahuatlu dnes mluví přes milion a půl lidí. Psali obrazy: malované knihy zachycovaly letopisy, daně i věštebný kalendář a jména míst a osob se skládala jako rébusy. Nakolik to byl zápis řeči, je dodnes sporné. Po dobytí roku 1521 se nahuatl začal psát latinkou a vzniklo v něm patrně nejbohatší písemnictví původní Ameriky. Pro srovnání stránka ukazuje i inkská kipu, záznamy z uzlů na šňůrách.",
+    "fakta": [
+     [
+      "Území",
+      "údolí Mexika a střední Mexiko; poplatná města sahala k Mexickému zálivu i Tichému oceánu"
+     ],
+     [
+      "Období",
+      "Tenochtitlán založen podle tradice 1325; trojspolek od 1428; město dobyto 13. 8. 1521"
+     ],
+     [
+      "Jazyk",
+      "klasický nahuatl (juto-aztécká rodina); dnes nahuatl asi 1,65 milionu mluvčích"
+     ],
+     [
+      "Písmo",
+      "obrázkové a logografické písmo s rébusy ve jménech; po dobytí latinka"
+     ],
+     [
+      "Kodexy",
+      "Boturini a Borbonský (datace sporná), Mendoza (asi 1541), Florentský kodex (asi 1577)"
+     ],
+     [
+      "Srovnání",
+      "kipu: inkské záznamy z uzlů v Andách, čísla v desítkové soustavě"
+     ]
+    ],
+    "nazvyTecek": {
+     "clas1250": "Klasický nahuatl",
+     "east2538": "Východohuastécký nahuatl",
+     "pipi1250": "Nawat (pipil)",
+     "clas1251": "Klasická kečuánština",
+     "cusc1236": "Kečuánština z Cuzca"
+    },
+    "oddily": [
+     {
+      "typ": "text",
+      "h": "Město na jezeře",
+      "p": [
+       "Aztékové sami sebe nazývali Mexikové (Mexica); jméno Aztékové, odvozené od bájné pravlasti Aztlán, se pro ně ujalo až později. Podle vlastní tradice přišli do údolí Mexika ze severu a svou metropoli Tenochtitlán založili roku 1325 na bažinatém ostrově v jezeře Texcoco. Znamením mělo být místo, kde orel sedí na nopálu rostoucím z kamene. Tento obraz dnes nese mexický státní znak i vlajka.",
+       "Roku 1428 uzavřel Tenochtitlán spojenectví s městy Texcoco a Tlacopan. Trojspolek během 15. století ovládl velkou část středního a jižního Mexika a podrobená města mu odváděla dávky. Když do Tenochtitlánu 8. listopadu 1519 vstoupil Hernán Cortés, žilo v něm podle odhadů 200 až 400 tisíc lidí; patřil tak k největším městům tehdejšího světa. Po dlouhém obléhání padl 13. srpna 1521 a na jeho troskách Španělé postavili město Mexiko."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "model",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "Klasický nahuatl",
+      "p": [
+       "Aztékové mluvili nahuatlem. Patří do juto-aztécké rodiny, jejíž jazyky sahají od Salvadoru po západ Spojených států: vzdálenými příbuznými jsou hopijština, šošonština nebo komančština, nejbližším nawat (pipil) v Salvadoru. Předkové mluvčích nahuatlu přišli do Mezoameriky ze severu, podle jazykovědných odhadů kolem roku 500 n. l. V době Aztéků byl nahuatl společným jazykem středního Mexika, jímž se domlouvali i lidé jiných mateřštin.",
+       "Klasickým nahuatlem se nazývá podoba jazyka zapsaná v 16. a 17. století latinkou a založená na řeči Tenochtitlánu. Patrně jde spíš o vybranou řeč šlechty (pipiltin) než o mluvu prostých lidí (macehualtin). Nahuatl je aglutinační a polysyntetický jazyk: k základu se připojuje řada předpon a přípon a jediné slovo může vyjádřit celou větu. Podstatná jména mají typickou koncovku -tl, -tli nebo -li: tetl „kámen“, coyotl „kojot“, calli „dům“.",
+       "Nahuatl žije dál. Při mexickém sčítání v roce 2020 ho uvedlo asi 1,65 milionu lidí, nejvíc mluvčích má nahuatl z oblasti Huasteca. Dnešní nářečí se od klasického nahuatlu i od sebe navzájem liší, některá natolik, že si jejich mluvčí nerozumějí."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "templo"
+     },
+     {
+      "typ": "text",
+      "h": "Obraz, znak a rébus",
+      "p": [
+       "Aztécké písmo patří k tradici obrázkového písma, kterou střední Mexiko sdílelo s Mixtéky a dalšími národy. Písař a malíř v jedné osobě, tlacuilo, nepsal řádky znaků, ale maloval obrazy: postavy, stopy chodidel naznačující pohyb, kalendářní data a znaky míst a jmen. Pojmy se vyjadřovaly obrazně: smrt znázorňovala mrtvola zabalená k pohřbu, válku štít a kyj, řeč malý svitek vycházející z úst. Pevné pořadí čtení, jaké mají mayské nápisy, znaky neměly.",
+       "Obrázkové znaky ale mohly zastupovat i slova (logogramy) a využívat jejich zvuk: obraz jednoho slova se použil pro jiné, které znělo stejně nebo podobně, jako v rébusu. Nejlépe je to vidět ve jménech míst a osob. Jméno Tenochtitlán se psalo kamenem (tetl), z něhož roste nopál (nochtli); příponu -tlan „místo, u“ vyjadřoval v jiných jménech obrázek zubů, nahuatlsky tlantli.",
+       "Jak daleko tato fonetičnost sahala, je předmětem sporu. Podle tradičního výkladu aztécké písmo nebylo úplným písmem, protože nedokázalo zapsat libovolnou větu jako mayské, a malované knihy se spíš vykládaly, než četly slovo po slově. Španělský epigrafik Alfonso Lacadena však roku 2008 dovozoval, že písaři v Texcocu měli v předvečer dobytí k dispozici soustavu slabičných znaků. Jiní namítají, že slabičné zápisy známe hlavně z raně koloniálních rukopisů a mohly vzniknout pod vlivem latinky.",
+       "Čísla se psala ve dvacítkové soustavě: jednotky tečkami, dvacet praporkem (pantli), čtyři sta znakem podobným peří či stromku (tzontli, „vlasy“), osm tisíc váčkem (xiquipilli). V daňových seznamech Kodexu Mendoza tak lze u každé položky přečíst, kolik jí provincie odváděla."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "osuna",
+      "siroka": true
+     },
+     {
+      "typ": "slova",
+      "h": "Jména míst jako rébusy",
+      "uvod": "Znak místa se skládal z obrázků, jejichž nahuatlská jména dohromady zněla jako jméno místa:",
+      "hlavicka": [
+       "jméno",
+       "co je nakresleno",
+       "význam jména"
+      ],
+      "radky": [
+       [
+        "Tenochtitlán",
+        "kámen (tetl), z něhož roste nopál (nochtli)",
+        "tradičně „u nopálu na kameni“; výklad není jistý"
+       ],
+       [
+        "Mapachtepec",
+        "mýval (mapachtli) na kopci (tepetl)",
+        "„mývalí kopec“"
+       ],
+       [
+        "Mazatlán",
+        "hlava jelena (mazatl) a zuby (tlantli)",
+        "„místo jelenů“"
+       ],
+       [
+        "Huitztlan",
+        "trn (huitztli) a zuby (tlantli)",
+        "„místo trnů“"
+       ],
+       [
+        "Chapultepec",
+        "kobylka (chapolin) na kopci (tepetl)",
+        "„kopec kobylek“"
+       ],
+       [
+        "Coatepec",
+        "had (coatl) na kopci (tepetl)",
+        "„hadí kopec“"
+       ]
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "mendoza",
+      "na-vysku": true
+     },
+     {
+      "typ": "text",
+      "h": "Malované knihy",
+      "p": [
+       "Aztécké knihy (amoxtli) se malovaly na dlouhé pruhy papíru z lýka fíkovníku (amatl), natřené podkladovou vrstvou a skládané jako harmonika. Obsahovaly letopisy, rodokmeny, mapy, daňové seznamy a věštebné kalendáře. Po dobytí jich většina zanikla; podle pozdějších zpráv dal první mexický biskup Juan de Zumárraga malované knihy pálit, rozsah ničení se ale posuzuje různě. Zda se z Tenochtitlánu a okolí dochoval vůbec nějaký předkolumbovský rukopis, není jisté.",
+       "Kodex Boturini (Tira de la Peregrinación) je pruh papíru amatl dlouhý 5,49 metru, složený do 21 a půl listu. Vypráví o putování Mexiků z Aztlánu: data jsou v rámečcích, místa ve znacích a cestu mezi nimi vyznačují otisky chodidel. Kdy vznikl, není známo. Pro svůj styl se dříve pokládal za předkolumbovský, dnes se spíš klade do doby krátce před dobytím nebo těsně po něm. Jméno má po italském sběrateli Lorenzu Boturinim Benaducim z 18. století.",
+       "Borbonský kodex (Codex Borbonicus) je jediný pruh papíru amatl dlouhý asi 14 metrů, původně složený do 40 stran, z nichž první dvě a poslední dvě chybějí. Obsahuje věštebný kalendář, přehled 52letého cyklu a obřady nového ohně. Zda vznikl před dobytím, nebo krátce po něm, je sporné: nad kalendářními obrazy je volné místo, jako by se už počítalo se španělskými přípisky. Od roku 1826 patří knihovně francouzského Národního shromáždění v Paříži.",
+       "Kodex Mendoza vznikl až po dobytí, patrně kolem roku 1541 a jistě mezi lety 1529 a 1553, na 71 listech evropského papíru. Nahuatlští malíři v něm tradičními znaky zachytili dějiny Tenochtitlánu od roku 1325 po dobytí, seznam poplatných měst s jejich dávkami a výjevy ze života; španělský tlumočník k obrazům připsal vysvětlivky. Jméno má po místokráli Nového Španělska Antoniovi de Mendozovi, který ho podle převládajícího výkladu dal pořídit pro krále. Roku 1553 však rukopis vlastnil francouzský kosmograf André Thevet a od roku 1659 je v Bodleyově knihovně v Oxfordu."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "mendoza65",
+      "na-vysku": true
+     },
+     {
+      "typ": "foto",
+      "f": "boturini",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "Počítání dnů",
+      "p": [
+       "Stejně jako Mayové používali Aztékové dva souběžné kalendáře. Věštebný tonalpohualli („počítání dnů“) měl 260 dní: dvacet znaků dnů se spojovalo s čísly 1 až 13, takže každý den měl jméno jako 1 krokodýl, 2 vítr, 3 dům. Po třinácti dnech začínalo nové období s vlastním božským patronem; tato období zachycuje první část Borbonského kodexu. Sluneční rok xiuhpohualli měl 365 dní: 18 měsíců po dvaceti dnech a pět zbylých dní (nemontemi), pokládaných za nešťastné.",
+       "Oba kalendáře se znovu sešly po 52 letech. Roky nesly jméno podle určitého dne (takzvaného nositele roku) a v úvahu připadaly jen čtyři znaky, dům, králík, rákos a pazourek, vždy s číslem 1 až 13. Konec 52letého cyklu provázel obřad nového ohně: ohně se hasily a kněží zapalovali nový. Rok 1519, kdy Cortés přistál v Mexiku, byl rokem 1 rákos (ce acatl).",
+       "Nejznámější aztéckou památkou s kalendářními znaky je Sluneční kámen (Piedra del Sol), často nazývaný aztécký kalendář. Kamenný kotouč o průměru asi 3,6 metru nalezli dělníci 17. prosince 1790 při úpravách hlavního náměstí v Ciudad de México. Tvář uprostřed se nejčastěji vykládá jako bůh slunce Tonatiuh, podle jiných jde o zemské božstvo Tlaltecuhtli. Obklopuje ji znak 4 pohyb (nahui ollin), jméno současného, pátého věku světa, a v dalším prstenci je všech dvacet znaků dnů. K odečítání dat kámen podle převládajícího výkladu nesloužil; byl to obřadní monument."
+      ]
+     },
+     {
+      "typ": "znaky",
+      "h": "Dvacet znaků dnů",
+      "znaky": [
+       [
+        "1",
+        "cipactli",
+        "krokodýl (kajman)"
+       ],
+       [
+        "2",
+        "ehecatl",
+        "vítr"
+       ],
+       [
+        "3",
+        "calli",
+        "dům"
+       ],
+       [
+        "4",
+        "cuetzpalin",
+        "ještěrka"
+       ],
+       [
+        "5",
+        "coatl",
+        "had"
+       ],
+       [
+        "6",
+        "miquiztli",
+        "smrt"
+       ],
+       [
+        "7",
+        "mazatl",
+        "jelen"
+       ],
+       [
+        "8",
+        "tochtli",
+        "králík"
+       ],
+       [
+        "9",
+        "atl",
+        "voda"
+       ],
+       [
+        "10",
+        "itzcuintli",
+        "pes"
+       ],
+       [
+        "11",
+        "ozomatli",
+        "opice"
+       ],
+       [
+        "12",
+        "malinalli",
+        "tráva"
+       ],
+       [
+        "13",
+        "acatl",
+        "rákos"
+       ],
+       [
+        "14",
+        "ocelotl",
+        "jaguár"
+       ],
+       [
+        "15",
+        "cuauhtli",
+        "orel"
+       ],
+       [
+        "16",
+        "cozcacuauhtli",
+        "sup"
+       ],
+       [
+        "17",
+        "ollin",
+        "pohyb"
+       ],
+       [
+        "18",
+        "tecpatl",
+        "pazourek (nůž)"
+       ],
+       [
+        "19",
+        "quiahuitl",
+        "déšť"
+       ],
+       [
+        "20",
+        "xochitl",
+        "květ"
+       ]
+      ],
+      "priklad": {
+       "klin": "1 acatl",
+       "prepis": "ce acatl, „1 rákos“",
+       "vyznam": "jméno dne i roku; rok 1 rákos připadl na rok 1519"
+      },
+      "pozn": "Unicode aztécké znaky zatím nekóduje (stav 2026), proto tabulka uvádí jen pořadí, nahuatlské jméno a význam znaku. Jejich podobu ukazují fotografie Borbonského kodexu, Kodexu Boturini a Slunečního kamene."
+     },
+     {
+      "typ": "foto",
+      "f": "borbonicus"
+     },
+     {
+      "typ": "foto",
+      "f": "kamen",
+      "siroka": true
+     },
+     {
+      "typ": "rameček",
+      "h": "Černá a červená",
+      "p": [
+       "Moudrost a písmo označoval nahuatl dvojicí slov in tlilli in tlapalli, „černá, červená“, podle barev, jimiž malíři kodexů pracovali. Takové spojení dvou obrazů do jednoho významu, zvané difrasismo, je pro klasický nahuatl typické: in xochitl in cuicatl, „květ, píseň“, znamenalo poezii. Malované knihy podle převládajícího výkladu nebyly určeny k tichému čtení; vykladač je předčítal a doplňoval z paměti a obraz byl oporou mluveného slova."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Nahuatl latinkou",
+      "p": [
+       "Po dobytí se nahuatl začal psát latinkou. První texty vznikly do dvaceti let po příchodu Španělů a nové písmo během 16. století obrázkové postupně vytlačilo, i když malované rukopisy s přípisky vznikaly ještě dlouho. Františkáni roku 1536 založili v Tlatelolku kolej Santa Cruz, kde se synové domorodé šlechty učili latině, španělštině i psaní vlastního jazyka. Andrés de Olmos dokončil roku 1547 mluvnici nahuatlu a Alonso de Molina vydal roku 1555 španělsko-nahuatlský slovník. Nahuatlem se psaly letopisy, závěti, soudní spisy, písně i divadelní hry.",
+       "Španělský pravopis ale nezachytil všechno, co nahuatl rozlišuje: délku samohlásek a ráz (saltillo) většina písařů nezapisovala. Přesně je označil až jezuita Horacio Carochi v mluvnici z roku 1645, délku vodorovnou čárkou nad samohláskou (makronem) a ráz hlavně obrácenou čárkou (gravisem). Písmeno x se v nahuatlu čte jako š, spřežka tl je jedna souhláska [tɬ] a hu před samohláskou zní jako w.",
+       "Nejslavnějším dílem je Florentský kodex. Františkán Bernardino de Sahagún (asi 1499–1590), který do Mexika přišel roku 1529, se po desetiletí s bývalými žáky z Tlatelolka vyptával starých znalců aztécké kultury a jejich výpovědi dával zapsat nahuatlem. Vzniklo dvanáct knih o bozích, obřadech, kalendáři, společnosti, přírodě a o dobytí Mexika, vyprávěném z pohledu poražených. Text je ve dvou sloupcích, nahuatlský vpravo a španělský vlevo, a doprovází ho přes dva tisíce obrázků domorodých malířů. Rukopis, dokončený kolem roku 1577, je dnes ve Florencii."
+      ]
+     },
+     {
+      "typ": "galerie",
+      "h": "Z kodexů",
+      "f": [
+       "novyohen",
+       "tanec",
+       "zatmeni"
+      ]
+     },
+     {
+      "typ": "slova",
+      "h": "Slova z nahuatlu",
+      "uvod": "Mnoho nahuatlských slov přejala španělština a z ní další jazyky. Koncovka -tl, -tli se ve španělštině obvykle změnila v -te nebo -le (tomate, coyote, chicle) a v dalších jazycích často odpadla:",
+      "hlavicka": [
+       "nahuatl",
+       "význam",
+       "česky"
+      ],
+      "radky": [
+       [
+        "tomatl",
+        "tomatillo, zelený plod; rajče se nazývalo xitomatl",
+        "rajče (přejímka jen v tomatový)"
+       ],
+       [
+        "ahuacatl",
+        "avokádo",
+        "avokádo"
+       ],
+       [
+        "chilli",
+        "paprička chilli",
+        "chilli"
+       ],
+       [
+        "coyotl",
+        "kojot",
+        "kojot"
+       ],
+       [
+        "ocelotl",
+        "jaguár",
+        "ocelot (jméno přešlo na menší kočkovitou šelmu)"
+       ],
+       [
+        "tzictli",
+        "lepkavá hmota, pryskyřice",
+        "čikle"
+       ],
+       [
+        "axolotl",
+        "druh mloka",
+        "axolotl"
+       ],
+       [
+        "Mexihco",
+        "jméno aztécké metropole",
+        "Mexiko"
+       ],
+       [
+        "nejisté",
+        "nápoj z kakaa",
+        "čokoláda; do španělštiny se slovo dostalo nejspíš z nahuatlu nebo nawatu, výchozí tvar je ale sporný (tvar chocolatl v raných pramenech doložen není; navrhuje se chicolatl)"
+       ]
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Kipu: uzly na šňůrách",
+      "p": [
+       "V Andách v Jižní Americe vedli záznamy úplně jinak. Inkové, kteří v 15. století vybudovali z Cuzca rozlehlou říši Tawantinsuyu, neznali písmo v obvyklém smyslu. Správa se opírala o kipu (kečuánsky khipu, „uzel“): svazky šňůr z bavlny nebo vlny lam a alpak, zavěšených na hlavní šňůře. Informaci nesla poloha a druh uzlů, barva, pořadí a délka šňůr; jedno kipu mohlo mít několik šňůr, ale i několik tisíc. Vázali a vykládali je zvláštní úředníci khipukamayuq, „znalci kipu“. Hlavním jazykem správy byla kečuánština; z ní se v koloniální době vyvinula spisovná klasická kečuánština psaná latinkou.",
+       "Kipu jsou starší než inkská říše: první nesporné exempláře pocházejí z let asi 600–1000 n. l. a připisují se říši Wari, starší nálezy z Caralu jsou sporné. Po dobytí Peru (od roku 1532) je Španělé zčásti využívali i pro vlastní správu, ale roku 1583 Třetí koncil v Limě nařídil některá kipu pálit jako modlářská. Podle soupisu z roku 2021 se jich dochovalo necelých 1400."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "kipu"
+     },
+     {
+      "typ": "foto",
+      "f": "locke"
+     },
+     {
+      "typ": "text",
+      "h": "Zapisovala kipu jazyk?",
+      "p": [
+       "Většina zkoumaných kipu obsahuje čísla. Američan Leslie Leland Locke roku 1912 ukázal, že jsou zapsána v desítkové poziční soustavě: skupiny uzlů v různé výšce šňůry představují jednotky, desítky, stovky a vyšší řády. V nejnižším řádu se jednička váže jako osmičkový uzel a dvojka až devítka jako dlouhý uzel s odpovídajícím počtem otáček; prázdné místo znamená nulu. Že jde o účty, potvrzují i součty: hodnota jedné šňůry často odpovídá součtu jiných.",
+       "Zda kipu zaznamenávala i jazyk, například jména nebo dějiny, je nejisté. Khipukamayuq podle koloniálních pramenů poskytovali Španělům údaje o sčítání lidu, dávkách, kalendáři i rodokmenech, jak přesně je ale kipu nesla, nevíme. Antropolog Gary Urton pokládá kipu za soustavu binárně kódovaných znaků a roku 2005 s Carrie Brezinovou navrhl, že trojice osmičkových uzlů na začátku kipu z Puruchuca u Limy může označovat jméno tohoto místa. Sabine Hylandová roku 2017 tvrdila, že koloniální „dopisní“ kipu z vesnice San Juan de Collata obsahují i fonetické znaky. Obecně přijaté rozluštění ale neexistuje, a proto se kipu obvykle nepovažují za písmo v užším smyslu, tedy za zápis mluvené řeči."
+      ]
+     },
+     {
+      "typ": "osa",
+      "h": "Časová osa",
+      "udalosti": [
+       [
+        "1325",
+        "Podle tradice založen Tenochtitlán."
+       ],
+       [
+        "1428",
+        "Trojspolek Tenochtitlánu, Texcoca a Tlacopanu."
+       ],
+       [
+        "8. 11. 1519",
+        "Hernán Cortés vstupuje do Tenochtitlánu."
+       ],
+       [
+        "13. 8. 1521",
+        "Pád Tenochtitlánu."
+       ],
+       [
+        "1536",
+        "Františkáni zakládají kolej Santa Cruz v Tlatelolku."
+       ],
+       [
+        "asi 1541",
+        "Vzniká Kodex Mendoza."
+       ],
+       [
+        "1547",
+        "Andrés de Olmos dokončuje mluvnici nahuatlu."
+       ],
+       [
+        "1555",
+        "Slovník Alonsa de Moliny."
+       ],
+       [
+        "1565",
+        "Kodex Osuna."
+       ],
+       [
+        "asi 1577",
+        "Sahagún a jeho spolupracovníci dokončují Florentský kodex."
+       ],
+       [
+        "1583",
+        "Třetí koncil v Limě nařizuje pálit některá kipu."
+       ],
+       [
+        "1645",
+        "Mluvnice Horacia Carochiho s přesným zápisem výslovnosti."
+       ],
+       [
+        "17. 12. 1790",
+        "Na hlavním náměstí v Mexiku nalezen Sluneční kámen."
+       ],
+       [
+        "1912",
+        "Leslie Leland Locke: kipu zapisují čísla v desítkové soustavě."
+       ],
+       [
+        "1978",
+        "Nález kamene bohyně Coyolxauhqui zahajuje hlavní etapu vykopávek Templo Mayor (1978–1982)."
+       ]
+      ]
+     },
+     {
+      "typ": "tecky",
+      "h": "Nahuatl a kečuánština na glóbu",
+      "uvod": "Klepnutím se jazyk ukáže na glóbu:"
+     },
+     {
+      "typ": "zdroje",
+      "h": "Zdroje a další četba",
+      "p": [
+       "Elizabeth Hill Boone: Stories in Red and Black. Pictorial Histories of the Aztecs and Mixtecs. University of Texas Press, 2000.",
+       "Frances F. Berdan, Patricia Rieff Anawalt: The Essential Codex Mendoza. University of California Press, 1997.",
+       "James Lockhart: The Nahuas After the Conquest. Stanford University Press, 1992.",
+       "Michel Launey: An Introduction to Classical Nahuatl. Cambridge University Press, 2011.",
+       "Marcia Ascher, Robert Ascher: Code of the Quipu. A Study in Media, Mathematics, and Culture. University of Michigan Press, 1981.",
+       "Gary Urton: Signs of the Inka Khipu. Binary Coding in the Andean Knotted-String Records. University of Texas Press, 2003.",
+       "Glottolog 5 (jazyky a jejich zařazení)."
+      ]
+     }
+    ]
+   },
+   "en": {
+    "nazev": "The Aztecs: Nahuatl and picture writing",
+    "stitek": "Languages of antiquity",
+    "podtitul": "Central Mexico · from the traditional founding of Tenochtitlan (1325) to the Florentine Codex",
+    "perex": "The Aztecs of Tenochtitlan spoke Classical Nahuatl; modern varieties of Nahuatl are spoken today by more than one and a half million people. They wrote in pictures: painted books recorded annals, tribute and the divinatory calendar, and the names of places and people were put together like rebuses. How far this amounted to writing down speech is still debated. After the conquest of 1521 Nahuatl came to be written in the Latin alphabet, and it produced what is probably the richest written literature of Indigenous America. For comparison, the page also looks at Inca khipus, records made of knotted cords.",
+    "fakta": [
+     [
+      "Region",
+      "the Valley of Mexico and central Mexico; tributary towns reached the Gulf of Mexico and the Pacific"
+     ],
+     [
+      "Period",
+      "Tenochtitlan founded by tradition in 1325; Triple Alliance from 1428; city conquered 13 August 1521"
+     ],
+     [
+      "Language",
+      "Classical Nahuatl (Uto-Aztecan family); some 1.65 million Nahuatl speakers today"
+     ],
+     [
+      "Script",
+      "pictorial and logographic writing with rebuses in names; the Latin alphabet after the conquest"
+     ],
+     [
+      "Codices",
+      "Boturini and Borbonicus (date disputed), Mendoza (c. 1541), Florentine Codex (c. 1577)"
+     ],
+     [
+      "Comparison",
+      "khipu: Inca knotted-cord records in the Andes, with numbers in base ten"
+     ]
+    ],
+    "nazvyTecek": {
+     "clas1250": "Classical Nahuatl",
+     "east2538": "Eastern Huasteca Nahuatl",
+     "pipi1250": "Nawat (Pipil)",
+     "clas1251": "Classical Quechua",
+     "cusc1236": "Cusco Quechua"
+    },
+    "oddily": [
+     {
+      "typ": "text",
+      "h": "A city in a lake",
+      "p": [
+       "The Aztecs called themselves Mexica; the name Aztecs, from their legendary homeland of Aztlan, came into use for them only later. According to their own tradition they came into the Valley of Mexico from the north and founded their capital, Tenochtitlan, in 1325 on a marshy island in Lake Texcoco. The sign was to be a place where an eagle sat on a prickly pear growing from a stone. That image appears today on Mexico’s coat of arms and flag.",
+       "In 1428 Tenochtitlan formed an alliance with the cities of Texcoco and Tlacopan. During the 15th century this Triple Alliance brought much of central and southern Mexico under its control, and subject towns paid it tribute. When Hernán Cortés entered Tenochtitlan on 8 November 1519, it had an estimated 200,000 to 400,000 inhabitants, placing it among the largest cities in the world at the time. It fell on 13 August 1521 after a long siege, and the Spanish built Mexico City on its ruins."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "model",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "Classical Nahuatl",
+      "p": [
+       "The Aztecs spoke Nahuatl. It belongs to the Uto-Aztecan family, whose languages range from El Salvador to the western United States: Hopi, Shoshone and Comanche are distant relatives, and the closest is Nawat (Pipil) in El Salvador. The ancestors of Nahuatl speakers entered Mesoamerica from the north, by linguists’ estimates around 500 CE. In Aztec times Nahuatl was the common language of central Mexico, used even by people with other mother tongues.",
+       "Classical Nahuatl is the form of the language written down in the Latin alphabet in the 16th and 17th centuries, based on the speech of Tenochtitlan. It probably reflects the refined speech of the nobility (pipiltin) rather than that of commoners (macehualtin). Nahuatl is agglutinative and polysynthetic: many prefixes and suffixes attach to a root, and a single word can express a whole sentence. Nouns carry a characteristic ending -tl, -tli or -li: tetl “stone”, coyotl “coyote”, calli “house”.",
+       "Nahuatl lives on. In Mexico’s 2020 census some 1.65 million people reported speaking it, and Huasteca Nahuatl has the most speakers. Today’s varieties differ from Classical Nahuatl and from one another, some so much that their speakers cannot understand each other."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "templo"
+     },
+     {
+      "typ": "text",
+      "h": "Picture, sign and rebus",
+      "p": [
+       "Aztec writing belongs to a tradition of pictorial writing that central Mexico shared with the Mixtecs and other peoples. The tlacuilo, painter and scribe in one, did not write lines of signs but painted images: figures, footprints showing movement, calendar dates, and the glyphs of places and names. Concepts were shown pictorially: death as a corpse wrapped for burial, war as a shield and club, speech as a small scroll coming from the mouth. The signs had no fixed reading order such as Maya inscriptions have.",
+       "Pictorial signs could, however, also stand for words (logograms) and exploit their sound: the picture of one word was used for another that sounded the same or similar, as in a rebus. This is clearest in the names of places and people. The name Tenochtitlan was written with a stone (tetl) from which a prickly pear (nochtli) grows; in other names the suffix -tlan “place, by” was represented by a picture of teeth, tlantli in Nahuatl.",
+       "How far this phoneticism went is a matter of debate. On the traditional view Aztec writing was not a full writing system, since it could not record any sentence the way Maya writing could, and the painted books were interpreted aloud rather than read word by word. The Spanish epigrapher Alfonso Lacadena argued in 2008, however, that on the eve of the conquest the scribes of Texcoco had a set of syllabic signs at their disposal. Others object that syllabic spellings are known mainly from early colonial manuscripts and may have arisen under the influence of the Latin alphabet.",
+       "Numbers were written in base twenty: units with dots, twenty with a flag (pantli), four hundred with a sign like a feather or a small tree (tzontli, “hair”), eight thousand with a pouch (xiquipilli). In the tribute lists of the Codex Mendoza one can therefore read how much of each item a province paid."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "osuna",
+      "siroka": true
+     },
+     {
+      "typ": "slova",
+      "h": "Place names as rebuses",
+      "uvod": "A place glyph was made of pictures whose Nahuatl names together sounded like the name of the place:",
+      "hlavicka": [
+       "name",
+       "what is drawn",
+       "meaning of the name"
+      ],
+      "radky": [
+       [
+        "Tenochtitlan",
+        "a stone (tetl) from which a prickly pear (nochtli) grows",
+        "traditionally “by the prickly pear on the stone”; the etymology is uncertain"
+       ],
+       [
+        "Mapachtepec",
+        "a raccoon (mapachtli) on a hill (tepetl)",
+        "“raccoon hill”"
+       ],
+       [
+        "Mazatlan",
+        "a deer’s head (mazatl) and teeth (tlantli)",
+        "“place of deer”"
+       ],
+       [
+        "Huitztlan",
+        "a thorn (huitztli) and teeth (tlantli)",
+        "“place of thorns”"
+       ],
+       [
+        "Chapultepec",
+        "a grasshopper (chapolin) on a hill (tepetl)",
+        "“grasshopper hill”"
+       ],
+       [
+        "Coatepec",
+        "a snake (coatl) on a hill (tepetl)",
+        "“snake hill”"
+       ]
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "mendoza",
+      "na-vysku": true
+     },
+     {
+      "typ": "text",
+      "h": "Painted books",
+      "p": [
+       "Aztec books (amoxtli) were painted on long strips of fig-bark paper (amatl), coated with a ground layer and folded like an accordion. They held annals, genealogies, maps, tribute lists and divinatory calendars. Most were lost after the conquest; according to later reports the first bishop of Mexico, Juan de Zumárraga, had painted books burned, though the extent of the destruction is judged differently. Whether any pre-Columbian manuscript from Tenochtitlan and its surroundings survives at all is uncertain.",
+       "The Codex Boturini (Tira de la Peregrinación) is a strip of amatl paper 5.49 metres long, folded into 21½ leaves. It tells of the Mexica migration from Aztlan: dates are framed, places are shown by glyphs, and footprints mark the route between them. When it was made is unknown. Its style once led scholars to regard it as pre-Columbian; today it is more often placed shortly before or just after the conquest. It is named after the 18th-century Italian collector Lorenzo Boturini Benaduci.",
+       "The Codex Borbonicus is a single strip of amatl paper about 14 metres long, originally folded into 40 pages, of which the first two and the last two are missing. It contains a divinatory calendar, an overview of the 52-year cycle and the New Fire ceremonies. Whether it was made before or shortly after the conquest is disputed: there is empty space above the calendar pictures, as if Spanish glosses were already expected. Since 1826 it has belonged to the library of the French National Assembly in Paris.",
+       "The Codex Mendoza was made after the conquest, probably around 1541 and certainly between 1529 and 1553, on 71 leaves of European paper. Nahua painters used traditional glyphs to record the history of Tenochtitlan from 1325 to the conquest, a list of tributary towns with their dues, and scenes of daily life; a Spanish interpreter added explanations. It is named after Antonio de Mendoza, viceroy of New Spain, who on the prevailing view had it made for the king. By 1553, however, the manuscript belonged to the French cosmographer André Thevet, and since 1659 it has been in the Bodleian Library in Oxford."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "mendoza65",
+      "na-vysku": true
+     },
+     {
+      "typ": "foto",
+      "f": "boturini",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "Counting the days",
+      "p": [
+       "Like the Maya, the Aztecs kept two calendars side by side. The divinatory tonalpohualli (“count of days”) had 260 days: twenty day signs were combined with the numbers 1 to 13, so that each day had a name such as 1 Crocodile, 2 Wind, 3 House. After thirteen days a new period began, with its own patron deity; the first part of the Codex Borbonicus depicts these periods. The solar year, xiuhpohualli, had 365 days: 18 months of twenty days plus five leftover days (nemontemi), considered unlucky.",
+       "The two calendars came round together every 52 years. Years were named after a particular day (the so-called year bearer), and only four signs were possible, House, Rabbit, Reed and Flint, each with a number from 1 to 13. The end of a 52-year cycle was marked by the New Fire ceremony: fires were put out and priests kindled a new one. The year 1519, when Cortés landed in Mexico, was the year 1 Reed (ce acatl).",
+       "The best-known Aztec monument bearing calendar signs is the Sun Stone (Piedra del Sol), often called the Aztec calendar. The stone disc, about 3.6 metres across, was found by workmen on 17 December 1790 during works on the main square of Mexico City. The face in the centre is most often interpreted as the sun god Tonatiuh, by others as the earth deity Tlaltecuhtli. It is surrounded by the sign 4 Movement (nahui ollin), the name of the present, fifth world age, and the next ring holds all twenty day signs. On the prevailing view the stone was not used to reckon dates; it was a ceremonial monument."
+      ]
+     },
+     {
+      "typ": "znaky",
+      "h": "The twenty day signs",
+      "znaky": [
+       [
+        "1",
+        "cipactli",
+        "crocodile (caiman)"
+       ],
+       [
+        "2",
+        "ehecatl",
+        "wind"
+       ],
+       [
+        "3",
+        "calli",
+        "house"
+       ],
+       [
+        "4",
+        "cuetzpalin",
+        "lizard"
+       ],
+       [
+        "5",
+        "coatl",
+        "serpent"
+       ],
+       [
+        "6",
+        "miquiztli",
+        "death"
+       ],
+       [
+        "7",
+        "mazatl",
+        "deer"
+       ],
+       [
+        "8",
+        "tochtli",
+        "rabbit"
+       ],
+       [
+        "9",
+        "atl",
+        "water"
+       ],
+       [
+        "10",
+        "itzcuintli",
+        "dog"
+       ],
+       [
+        "11",
+        "ozomatli",
+        "monkey"
+       ],
+       [
+        "12",
+        "malinalli",
+        "grass"
+       ],
+       [
+        "13",
+        "acatl",
+        "reed"
+       ],
+       [
+        "14",
+        "ocelotl",
+        "jaguar"
+       ],
+       [
+        "15",
+        "cuauhtli",
+        "eagle"
+       ],
+       [
+        "16",
+        "cozcacuauhtli",
+        "vulture"
+       ],
+       [
+        "17",
+        "ollin",
+        "movement"
+       ],
+       [
+        "18",
+        "tecpatl",
+        "flint (knife)"
+       ],
+       [
+        "19",
+        "quiahuitl",
+        "rain"
+       ],
+       [
+        "20",
+        "xochitl",
+        "flower"
+       ]
+      ],
+      "priklad": {
+       "klin": "1 acatl",
+       "prepis": "ce acatl, “1 Reed”",
+       "vyznam": "the name of a day and of a year; the year 1 Reed fell in 1519"
+      },
+      "pozn": "Unicode does not yet encode Aztec signs (as of 2026), so the table gives only the order, the Nahuatl name and the meaning of each sign. Their appearance can be seen in the photographs of the Codex Borbonicus, the Codex Boturini and the Sun Stone."
+     },
+     {
+      "typ": "foto",
+      "f": "borbonicus"
+     },
+     {
+      "typ": "foto",
+      "f": "kamen",
+      "siroka": true
+     },
+     {
+      "typ": "rameček",
+      "h": "The black and the red",
+      "p": [
+       "Nahuatl referred to wisdom and writing with the pair of words in tlilli in tlapalli, “the black, the red”, after the colours used by the codex painters. Such a pairing of two images into a single meaning, known as a difrasismo, is typical of Classical Nahuatl: in xochitl in cuicatl, “the flower, the song”, meant poetry. On the prevailing view the painted books were not meant for silent reading; an interpreter performed them aloud, filling in from memory, and the image served as a prompt for the spoken word."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Nahuatl in the Latin alphabet",
+      "p": [
+       "After the conquest Nahuatl began to be written in the Latin alphabet. The first texts appeared within twenty years of the Spanish arrival, and over the 16th century the new script gradually displaced the pictorial one, although painted manuscripts with glosses continued to be made for a long time. In 1536 the Franciscans founded the College of Santa Cruz at Tlatelolco, where sons of the Indigenous nobility learned Latin, Spanish and how to write their own language. Andrés de Olmos completed a grammar of Nahuatl in 1547, and Alonso de Molina published a Spanish–Nahuatl dictionary in 1555. Annals, wills, legal records, songs and plays were written in Nahuatl.",
+       "Spanish spelling, however, did not capture everything Nahuatl distinguishes: most writers did not mark vowel length or the glottal stop (saltillo). They were first marked accurately by the Jesuit Horacio Carochi in his grammar of 1645, length with a macron and the glottal stop mainly with a grave accent. In Nahuatl the letter x is pronounced like English sh, the digraph tl is a single consonant [tɬ], and hu before a vowel sounds like w.",
+       "The most famous work is the Florentine Codex. The Franciscan Bernardino de Sahagún (c. 1499–1590), who came to Mexico in 1529, spent decades with former students from Tlatelolco questioning elders versed in Aztec culture and having their accounts written down in Nahuatl. The result was twelve books on the gods, rituals, the calendar, society, nature and the conquest of Mexico, told from the point of view of the defeated. The text runs in two columns, Nahuatl on the right and Spanish on the left, accompanied by more than two thousand pictures by Indigenous painters. The manuscript, completed around 1577, is now in Florence."
+      ]
+     },
+     {
+      "typ": "galerie",
+      "h": "From the codices",
+      "f": [
+       "novyohen",
+       "tanec",
+       "zatmeni"
+      ]
+     },
+     {
+      "typ": "slova",
+      "h": "Words from Nahuatl",
+      "uvod": "Many Nahuatl words were borrowed into Spanish and passed from there into other languages. In Spanish the ending -tl, -tli usually became -te or -le (tomate, coyote, chicle), and in other languages it was often dropped:",
+      "hlavicka": [
+       "Nahuatl",
+       "meaning",
+       "English"
+      ],
+      "radky": [
+       [
+        "tomatl",
+        "tomatillo, a green fruit; the red tomato was xitomatl",
+        "tomato"
+       ],
+       [
+        "ahuacatl",
+        "avocado",
+        "avocado"
+       ],
+       [
+        "chilli",
+        "chili pepper",
+        "chili, chilli"
+       ],
+       [
+        "coyotl",
+        "coyote",
+        "coyote"
+       ],
+       [
+        "ocelotl",
+        "jaguar",
+        "ocelot (the name passed to a smaller cat)"
+       ],
+       [
+        "tzictli",
+        "sticky substance, gum",
+        "chicle"
+       ],
+       [
+        "axolotl",
+        "a kind of salamander",
+        "axolotl"
+       ],
+       [
+        "Mexihco",
+        "the name of the Aztec capital",
+        "Mexico"
+       ],
+       [
+        "uncertain",
+        "a cacao drink",
+        "chocolate; the word probably entered Spanish from Nahuatl or Nawat, but its source form is disputed (the form chocolatl is not attested in early sources; chicolatl has been proposed)"
+       ]
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Khipu: knots on cords",
+      "p": [
+       "In the Andes of South America records were kept in an entirely different way. The Incas, who in the 15th century built the vast empire of Tawantinsuyu from Cusco, had no writing in the usual sense. Their administration relied on khipus (Quechua khipu, “knot”): bundles of cotton or llama and alpaca wool cords hanging from a main cord. The information lay in the position and type of the knots and in the colour, order and length of the cords; a khipu could have a few cords or several thousand. They were tied and interpreted by specialist officials, the khipukamayuq, “khipu keepers”. The main language of administration was Quechua; in the colonial period it gave rise to the literary Classical Quechua, written in the Latin alphabet.",
+       "Khipus are older than the Inca empire: the first undisputed examples date from about 600–1000 CE and are attributed to the Wari state, while earlier finds from Caral are disputed. After the conquest of Peru (from 1532) the Spanish partly used them for their own administration, but in 1583 the Third Council of Lima ordered some khipus burned as idolatrous. According to a 2021 survey, just under 1,400 survive."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "kipu"
+     },
+     {
+      "typ": "foto",
+      "f": "locke"
+     },
+     {
+      "typ": "text",
+      "h": "Did khipus record language?",
+      "p": [
+       "Most of the khipus studied contain numbers. In 1912 the American Leslie Leland Locke showed that they are recorded in a decimal positional system: clusters of knots at different heights on a cord stand for units, tens, hundreds and higher places. In the lowest place a one is tied as a figure-eight knot and two to nine as a long knot with the corresponding number of turns; an empty position means zero. That these are accounts is confirmed by the sums: the value of one cord often equals the total of others.",
+       "Whether khipus also recorded language, such as names or histories, is uncertain. According to colonial sources the khipukamayuq supplied the Spanish with information on censuses, tribute, the calendar and genealogies, but exactly how khipus carried it is unknown. The anthropologist Gary Urton regards khipus as a system of binary-coded signs, and in 2005 he and Carrie Brezine proposed that a sequence of three figure-eight knots at the start of khipus from Puruchuco near Lima may stand for the name of that place. In 2017 Sabine Hyland argued that colonial “epistolary” khipus from the village of San Juan de Collata also contain phonetic signs. There is, however, no generally accepted decipherment, and khipus are therefore not usually regarded as writing in the narrow sense, that is, as a record of spoken language."
+      ]
+     },
+     {
+      "typ": "osa",
+      "h": "Timeline",
+      "udalosti": [
+       [
+        "1325",
+        "Traditional founding of Tenochtitlan."
+       ],
+       [
+        "1428",
+        "Triple Alliance of Tenochtitlan, Texcoco and Tlacopan."
+       ],
+       [
+        "8 Nov 1519",
+        "Hernán Cortés enters Tenochtitlan."
+       ],
+       [
+        "13 Aug 1521",
+        "Fall of Tenochtitlan."
+       ],
+       [
+        "1536",
+        "The Franciscans found the College of Santa Cruz at Tlatelolco."
+       ],
+       [
+        "c. 1541",
+        "The Codex Mendoza is made."
+       ],
+       [
+        "1547",
+        "Andrés de Olmos completes a grammar of Nahuatl."
+       ],
+       [
+        "1555",
+        "Alonso de Molina’s dictionary."
+       ],
+       [
+        "1565",
+        "The Codex Osuna."
+       ],
+       [
+        "c. 1577",
+        "Sahagún and his collaborators complete the Florentine Codex."
+       ],
+       [
+        "1583",
+        "The Third Council of Lima orders some khipus burned."
+       ],
+       [
+        "1645",
+        "Horacio Carochi’s grammar, with an exact notation of pronunciation."
+       ],
+       [
+        "17 Dec 1790",
+        "The Sun Stone is found on the main square of Mexico City."
+       ],
+       [
+        "1912",
+        "Leslie Leland Locke: khipus record numbers in base ten."
+       ],
+       [
+        "1978",
+        "The discovery of the Coyolxauhqui stone starts the main phase of excavation at the Templo Mayor (1978–1982)."
+       ]
+      ]
+     },
+     {
+      "typ": "tecky",
+      "h": "Nahuatl and Quechua on the globe",
+      "uvod": "Tap a language to show it on the globe:"
+     },
+     {
+      "typ": "zdroje",
+      "h": "Sources and further reading",
+      "p": [
+       "Elizabeth Hill Boone: Stories in Red and Black. Pictorial Histories of the Aztecs and Mixtecs. University of Texas Press, 2000.",
+       "Frances F. Berdan, Patricia Rieff Anawalt: The Essential Codex Mendoza. University of California Press, 1997.",
+       "James Lockhart: The Nahuas After the Conquest. Stanford University Press, 1992.",
+       "Michel Launey: An Introduction to Classical Nahuatl. Cambridge University Press, 2011.",
+       "Marcia Ascher, Robert Ascher: Code of the Quipu. A Study in Media, Mathematics, and Culture. University of Michigan Press, 1981.",
+       "Gary Urton: Signs of the Inka Khipu. Binary Coding in the Andean Knotted-String Records. University of Texas Press, 2003.",
        "Glottolog 5 (languages and their classification)."
       ]
      }
