@@ -1003,6 +1003,18 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/language-days/"/>
   </url>
   <url>
+    <loc>https://thelanguageatlas.com/ancient/family-of-scripts/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/starovek/rodokmen-pisem/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/ancient/family-of-scripts/"/>
+  </url>
+  <url>
+    <loc>https://thelanguageatlas.com/ancient/writing-glossary/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/starovek/slovnicek-pisma/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/ancient/writing-glossary/"/>
+  </url>
+  <url>
     <loc>https://thelanguageatlas.com/ancient/sumer-and-akkad/</loc>
     <lastmod>2026-09-26</lastmod>
     <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/starovek/sumer-a-akkad/"/>
@@ -1061,6 +1073,12 @@
     <lastmod>2026-09-26</lastmod>
     <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/starovek/rim/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/ancient/rome/"/>
+  </url>
+  <url>
+    <loc>https://thelanguageatlas.com/ancient/germanic-peoples/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/starovek/germani/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/ancient/germanic-peoples/"/>
   </url>
   <url>
     <loc>https://thelanguageatlas.com/ancient/aksum/</loc>

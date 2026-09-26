@@ -2,6 +2,2036 @@
  "_pozn": "Stránky o civilizacích starověku (jazyk a písmo). Texty psané ručně a ověřené; fotky z Wikimedia Commons (scripts/fotky.mjs), soubory ve static/starovek/<id>/. Každá fotka musí mít autora (kromě volného díla), licenci a zdroj.",
  "civilizace": [
   {
+   "id": "rodokmen-pisem",
+   "adresa": {
+    "cs": "rodokmen-pisem",
+    "en": "family-of-scripts"
+   },
+   "krajina": "pisarna",
+   "prehled": true,
+   "hledat": "rodokmen pisem family tree of scripts abeceda alphabet puvod pisma origin of writing abdzad abjad abugida hieroglyfy hieroglyphs protosinajske proto-sinaitic fenicke phoenician aramejske aramaic brahmi runy runes ogam ogham hlaholice glagolitic cyrilice cyrillic klinove pismo cuneiform kral king",
+   "tecky": [],
+   "pisma": [
+    "Noto Sans Egyptian Hieroglyphs",
+    "Noto Sans Ugaritic",
+    "Noto Sans Old South Arabian",
+    "Noto Serif Ethiopic",
+    "Noto Sans Phoenician",
+    "Noto Sans Samaritan",
+    "Noto Sans Imperial Aramaic",
+    "Noto Serif Hebrew",
+    "Noto Sans Nabataean",
+    "Noto Naskh Arabic",
+    "Noto Sans Palmyrene",
+    "Noto Sans Syriac",
+    "Noto Sans Inscriptional Pahlavi",
+    "Noto Sans Avestan",
+    "Noto Sans Kharoshthi",
+    "Noto Sans Brahmi",
+    "Noto Serif Devanagari",
+    "Noto Serif Tamil",
+    "Noto Serif Tibetan",
+    "Noto Sans Old Italic",
+    "Noto Sans Runic",
+    "Noto Sans Ogham",
+    "Noto Sans Gothic",
+    "Noto Sans Coptic",
+    "Noto Sans Glagolitic",
+    "Noto Serif Armenian",
+    "Noto Serif Georgian",
+    "Noto Sans Cuneiform",
+    "Noto Sans Old Persian",
+    "Noto Sans Anatolian Hieroglyphs",
+    "Noto Sans Linear A",
+    "Noto Sans Linear B",
+    "Noto Serif TC"
+   ],
+   "fotky": {},
+   "cs": {
+    "nazev": "Rodokmen písem",
+    "stitek": "Jazyky starověku · přehled",
+    "podtitul": "Od egyptských hieroglyfů k latince, arabskému písmu a dévanágarí",
+    "perex": "Písmo vzniklo nezávisle jen několikrát: v Mezopotámii, v Egyptě (možná z podnětu Mezopotámie), v Číně a v Mezoamerice. Většina abeced světa – latinka a cyrilice, hebrejské a arabské písmo a podle převládajícího výkladu i písma Indie – má však jediného předka: znaky, které si ve 2. tisíciletí př. n. l. semitsky mluvící lidé vypůjčili z egyptských hieroglyfů.",
+    "fakta": [
+     [
+      "Nezávislé vynálezy písma",
+      "Mezopotámie (asi 3300 př. n. l.), Egypt (konec 4. tis. př. n. l.), Čína (13. st. př. n. l.), Mezoamerika (mayské písmo od 3. st. př. n. l.)"
+     ],
+     [
+      "Nejstarší abeceda",
+      "protosinajské písmo, asi 19.–16. st. př. n. l. (datace sporná)"
+     ],
+     [
+      "Nejstarší doložené pořadí písmen",
+      "cvičné tabulky z Ugaritu, 14.–13. st. př. n. l."
+     ],
+     [
+      "První abeceda se samohláskami",
+      "řecká, 8. st. př. n. l."
+     ],
+     [
+      "Nerozluštěná písma (mimo jiné)",
+      "písmo Indu, lineární písmo A, kyperskomínojské písmo"
+     ]
+    ],
+    "oddily": [
+     {
+      "typ": "text",
+      "h": "Kolikrát lidé vynalezli písmo",
+      "p": [
+       "Písmo, které dokáže zapsat cokoli, co se dá říct, vzniklo podle většiny badatelů nezávisle jen několikrát. Nejstarší doklady pocházejí z Mezopotámie, kde se v Uruku kolem let 3300–3100 př. n. l. objevily tabulky s obrázkovými znaky, a z Egypta, kde se písmo objevuje na konci 4. tisíciletí př. n. l.; zda Egypťané myšlenku psaní převzali z Mezopotámie, není rozhodnuto. Nezávisle na nich vzniklo čínské písmo, doložené od 13. století př. n. l., a v Mezoamerice písma, z nichž nejlépe známe mayské (od 3. století př. n. l.).",
+       "Písmo harappské civilizace v povodí Indu (asi 2600–1900 př. n. l.) zůstává nerozluštěné a není jisté ani to, zda zapisovalo jazyk. Další písma vznikla tam, kde lidé o psaní věděli od sousedů: převzali myšlenku, znaky si však vytvořili vlastní. Tak podle převládajícího výkladu vznikla i první abeceda. Ve 2. tisíciletí př. n. l. si semitsky mluvící lidé v Egyptě a na Sinaji vybrali několik egyptských hieroglyfů a každým začali psát jen první hlásku jeho jména: kresba býčí hlavy, semitsky ʾalp, znamenala ʾ, domek (bayt) b. Z tohoto písma pochází přímo či nepřímo většina abeced světa."
+      ]
+     },
+     {
+      "typ": "strom",
+      "h": "Rodina abeced",
+      "uvod": "Rodokmen ukazuje, jak z egyptských znaků vzešly abecedy Evropy, Blízkého východu, Indie i Střední Asie. Plná čára znamená obecně přijatý původ. Přerušovaná čára znamená, že původ je sporný, nebo že písmo od předchůdce převzalo jen vzor či myšlenku, a ne tvary písmen. Znaky u písma jsou ukázka, obvykle jeho první písmena; data jsou přibližná.",
+      "uzly": [
+       {
+        "id": "egyptske",
+        "rodic": null,
+        "nazev": "Egyptské hieroglyfy",
+        "doba": "konec 4. tis. př. n. l. – 394 n. l.",
+        "ukazka": "𓃾𓉐𓈖𓁶",
+        "civ": "egypt",
+        "jistota": "jista",
+        "pozn": "Znaky pro slova, souhlásky i určovatele. Býčí hlava, dům, voda a hlava v ukázce jsou podle převládajícího výkladu vzory písmen ʾalp, bet, mem a reš."
+       },
+       {
+        "id": "protosinajske",
+        "rodic": "egyptske",
+        "nazev": "Protosinajské a protokanaánské písmo",
+        "doba": "asi 19.–11. st. př. n. l.",
+        "ukazka": null,
+        "civ": "egypt",
+        "jistota": "jista",
+        "pozn": "Nejstarší abeceda: znaky vypůjčené z hieroglyfů, z nichž každý zapisoval jen první souhlásku svého jména. Nápisy ze Sinaje (Serabit el-Chádim), z Egypta (Vádí el-Hól) a z Kanaánu; stáří nejstarších je sporné (asi 1850, nebo až 1550 př. n. l.)."
+       },
+       {
+        "id": "ugaritske",
+        "rodic": "protosinajske",
+        "nazev": "Ugaritská klínová abeceda",
+        "doba": "14.–13. st. př. n. l.",
+        "ukazka": "𐎀𐎁𐎂𐎃𐎄",
+        "civ": "fenicane",
+        "jistota": "sporna",
+        "pozn": "Asi třicet znaků vtlačovaných do hlíny jako mezopotámské klínové písmo. Tvary jsou vlastní, pořadí písmen však téměř odpovídá fénické abecedě, takže princip abecedy Ugaritští převzali ze západosemitské tradice. Cvičné tabulky zachycují i druhé pořadí (h, l, ḥ, m…), jaké má etiopské písmo."
+       },
+       {
+        "id": "jihoarabske",
+        "rodic": "protosinajske",
+        "nazev": "Jihoarabské písmo",
+        "doba": "ustálené kolem 800 př. n. l., do 6. st. n. l.",
+        "ukazka": "𐩠𐩡𐩢𐩣𐩤",
+        "civ": "aksum",
+        "jistota": "sporna",
+        "pozn": "Oddělilo se od kanaánské větve dřív než fénické písmo; kdy a jak, není jasné. Má 29 souhlásek. Ukázka je v jihosemitském pořadí h, l, ḥ, m, q."
+       },
+       {
+        "id": "geez",
+        "rodic": "jihoarabske",
+        "nazev": "Etiopské písmo (fidal)",
+        "doba": "se samohláskami od 4. st. n. l.",
+        "ukazka": "ሀለሐመ",
+        "civ": "aksum",
+        "jistota": "jista",
+        "pozn": "Zprvu jen souhlásky; za krále Ezany ve 4. století přibyly samohláskové značky a z písma se stala abugida. Na rozdíl od jihoarabské předlohy se píše zleva doprava. Dodnes jím píše amharština a tigrajština."
+       },
+       {
+        "id": "fenicke",
+        "rodic": "protosinajske",
+        "nazev": "Fénické písmo",
+        "doba": "od asi 1050 př. n. l.",
+        "ukazka": "𐤀𐤁𐤂𐤃",
+        "civ": "fenicane",
+        "jistota": "jista",
+        "pozn": "22 písmen jen pro souhlásky, psaných zprava doleva. Féničtí obchodníci je rozšířili po celém Středomoří."
+       },
+       {
+        "id": "paleohebrejske",
+        "rodic": "fenicke",
+        "nazev": "Paleohebrejské písmo",
+        "doba": "od 10. st. př. n. l.",
+        "ukazka": null,
+        "civ": "hebrejci",
+        "jistota": "jista",
+        "pozn": "Jihokanaánská obdoba fénického písma, jíž se psaly nejstarší hebrejské nápisy; Unicode ho od fénického nerozlišuje. U Židů ho od perské doby vytlačilo písmo aramejské."
+       },
+       {
+        "id": "samaritanske",
+        "rodic": "paleohebrejske",
+        "nazev": "Samaritánské písmo",
+        "doba": "užívá se dodnes",
+        "ukazka": "ࠀࠁࠂࠃ",
+        "civ": "hebrejci",
+        "jistota": "jista",
+        "pozn": "Přímý potomek paleohebrejského písma. Samaritáni jím dodnes píší svou Tóru."
+       },
+       {
+        "id": "aramejske",
+        "rodic": "fenicke",
+        "nazev": "Aramejské písmo",
+        "doba": "od 8. st. př. n. l.",
+        "ukazka": "𐡀𐡁𐡂𐡃",
+        "civ": "hebrejci",
+        "jistota": "jista",
+        "pozn": "Nejstarší aramejské nápisy jsou psané fénickým písmem, vlastní tvary se vyvinuly do 8. století. Jako písmo správy Asyrské, Babylonské a Perské říše se rozšířilo od Egypta po Indii a stalo se předkem většiny abeced Asie."
+       },
+       {
+        "id": "hebrejske",
+        "rodic": "aramejske",
+        "nazev": "Hebrejské čtvercové písmo",
+        "doba": "od 3. st. př. n. l.",
+        "ukazka": "אבגד",
+        "civ": "hebrejci",
+        "jistota": "jista",
+        "pozn": "Vyvinulo se z aramejského písma perské správy, které Židé přijali místo paleohebrejského. Píše se jím hebrejština a jidiš."
+       },
+       {
+        "id": "nabatejske",
+        "rodic": "aramejske",
+        "nazev": "Nabatejské písmo",
+        "doba": "od 2. st. př. n. l.",
+        "ukazka": "𐢁𐢃𐢄𐢅",
+        "civ": null,
+        "jistota": "jista",
+        "pozn": "Písmo Nabatejců s centrem v Petře. Z jeho psací podoby se postupně vyvinulo písmo arabské."
+       },
+       {
+        "id": "arabske",
+        "rodic": "nabatejske",
+        "nazev": "Arabské písmo",
+        "doba": "od pozdní antiky (4.–6. st. n. l.)",
+        "ukazka": "ابجد",
+        "civ": null,
+        "jistota": "jista",
+        "pozn": "Podle převládajícího výkladu vzniklo z nabatejského, podle menšiny ze syrského písma. S islámem se rozšířilo do velké části Asie a Afriky a je dnes po latince nejrozšířenější abecedou světa."
+       },
+       {
+        "id": "palmyrske",
+        "rodic": "aramejske",
+        "nazev": "Palmýrské písmo",
+        "doba": "1. st. př. n. l. – 3. st. n. l.",
+        "ukazka": "𐡠𐡡𐡢𐡣",
+        "civ": null,
+        "jistota": "jista",
+        "pozn": "Písmo karavanního města Palmýry, známé z tisíců nápisů. Zaniklo po dobytí města Římany roku 272."
+       },
+       {
+        "id": "syrske",
+        "rodic": "aramejske",
+        "nazev": "Syrské písmo",
+        "doba": "od 1. st. n. l.",
+        "ukazka": "ܐܒܓܕ",
+        "civ": null,
+        "jistota": "jista",
+        "pozn": "Písmo syrské aramejštiny, literárního a bohoslužebného jazyka křesťanů Blízkého východu. Užívá se dodnes."
+       },
+       {
+        "id": "pahlavske",
+        "rodic": "aramejske",
+        "nazev": "Pahlavská písma",
+        "doba": "od 2.–1. st. př. n. l.",
+        "ukazka": "𐭠𐭡𐭢𐭣",
+        "civ": "persie",
+        "jistota": "jista",
+        "pozn": "Písma partských a sásánovských Íránců. Mnohá slova se v nich psala aramejsky, ale četla persky (heterogramy)."
+       },
+       {
+        "id": "avestske",
+        "rodic": "pahlavske",
+        "nazev": "Avestské písmo",
+        "doba": "5.–6. st. n. l.",
+        "ukazka": "𐬀𐬁𐬂𐬃",
+        "civ": "persie",
+        "jistota": "jista",
+        "pozn": "Vzniklo za Sásánovců z knižní pahlavštiny, aby se daly zapsat posvátné texty Avesty. Na rozdíl od předlohy přesně zapisuje samohlásky; ukázka jsou čtyři z nich."
+       },
+       {
+        "id": "sogdske",
+        "rodic": "aramejske",
+        "nazev": "Sogdské písmo",
+        "doba": "asi 100–1200 n. l.",
+        "ukazka": null,
+        "civ": null,
+        "jistota": "jista",
+        "pozn": "Písmo sogdských kupců na Hedvábné stezce ve Střední Asii."
+       },
+       {
+        "id": "ujgurske",
+        "rodic": "sogdske",
+        "nazev": "Staroujgurské písmo",
+        "doba": "od 9. st. n. l.",
+        "ukazka": null,
+        "civ": null,
+        "jistota": "jista",
+        "pozn": "Psací sogdské písmo upravené pro turkické jazyky; psalo se ve svislých řádcích."
+       },
+       {
+        "id": "mongolske",
+        "rodic": "ujgurske",
+        "nazev": "Mongolské písmo",
+        "doba": "od 13. st. n. l.",
+        "ukazka": null,
+        "civ": null,
+        "jistota": "jista",
+        "pozn": "Podle tradice ho z ujgurského upravil ujgurský písař Tatatunga, zajatý Čingischánem. Ve Vnitřním Mongolsku se užívá dodnes; aramejská větev tak dosáhla až k Číně."
+       },
+       {
+        "id": "kharosthi",
+        "rodic": "aramejske",
+        "nazev": "Kharóšthí",
+        "doba": "asi 3. st. př. n. l. – 3. st. n. l.",
+        "ukazka": "𐨐𐨑𐨒𐨓",
+        "civ": "indie",
+        "jistota": "jista",
+        "pozn": "Písmo Gandháry, odvozené z aramejského písma perské správy; píše se zprava doleva jako jeho předloha. Samohlásky připojuje k souhláskám znaménky, stejně jako bráhmí."
+       },
+       {
+        "id": "brahmi",
+        "rodic": "aramejske",
+        "nazev": "Bráhmí",
+        "doba": "od 3. st. př. n. l.",
+        "ukazka": "𑀓𑀔𑀕𑀖",
+        "civ": "indie",
+        "jistota": "sporna",
+        "pozn": "Předek většiny písem jižní a jihovýchodní Asie. Většina badatelů soudí, že vzniklo podle vzoru semitského, nejspíš aramejského písma; jiní hájí vznik v Indii samé."
+       },
+       {
+        "id": "devanagari",
+        "rodic": "brahmi",
+        "nazev": "Dévanágarí",
+        "doba": "od 8. st. n. l.",
+        "ukazka": "कखगघ",
+        "civ": "indie",
+        "jistota": "jista",
+        "pozn": "Vzniklo přes guptovské písmo a nágarí. Píše se jím hindština, maráthština, nepálština i sanskrt."
+       },
+       {
+        "id": "tamilske",
+        "rodic": "brahmi",
+        "nazev": "Tamilské písmo",
+        "doba": "tamilské bráhmí od 3. st. př. n. l.",
+        "ukazka": "கஙசஞ",
+        "civ": null,
+        "jistota": "jista",
+        "pozn": "Z jižní větve bráhmí. Nejstarší tamilské nápisy jsou psány upraveným bráhmí, dnešní tvary se vyvinuly ve středověku."
+       },
+       {
+        "id": "tibetske",
+        "rodic": "brahmi",
+        "nazev": "Tibetské písmo",
+        "doba": "od 7. st. n. l.",
+        "ukazka": "ཀཁགང",
+        "civ": "indie",
+        "jistota": "jista",
+        "pozn": "Podle tibetské tradice ho podle indické předlohy, guptovského písma, vytvořil ministr Thonmi Sambhota za krále Songcän Gampa."
+       },
+       {
+        "id": "recke",
+        "rodic": "fenicke",
+        "nazev": "Řecká abeceda",
+        "doba": "od 8. st. př. n. l.",
+        "ukazka": "ΑΒΓΔ",
+        "civ": "recko",
+        "jistota": "jista",
+        "pozn": "Fénická písmena pro souhlásky, které řečtina neměla, použili Řekové pro samohlásky. Vznikla první abeceda, která soustavně zapisovala souhlásky i samohlásky."
+       },
+       {
+        "id": "etruske",
+        "rodic": "recke",
+        "nazev": "Etruská abeceda a staroitalská písma",
+        "doba": "od asi 700 př. n. l.",
+        "ukazka": "𐌀𐌁𐌂𐌃",
+        "civ": "etruskove",
+        "jistota": "jista",
+        "pozn": "Etruskové převzali abecedu od Řeků z Euboie usazených v Itálii. Podle převládajícího výkladu z ní vzešly i abecedy dalších jazyků Itálie, například oskičtiny, umberštiny a venetštiny."
+       },
+       {
+        "id": "latinka",
+        "rodic": "etruske",
+        "nazev": "Latinka",
+        "doba": "od 7.–6. st. př. n. l.",
+        "ukazka": "ABCD",
+        "civ": "rim",
+        "jistota": "jista",
+        "pozn": "Podle převládajícího výkladu vznikla z etruské abecedy. S Římem a později s církví se rozšířila po Evropě a dnes je nejrozšířenějším písmem světa."
+       },
+       {
+        "id": "runy",
+        "rodic": "etruske",
+        "nazev": "Runy",
+        "doba": "od 2. st. n. l.",
+        "ukazka": "ᚠᚢᚦᚨᚱ",
+        "civ": "germani",
+        "jistota": "sporna",
+        "pozn": "Předlohou bylo některé ze severoitalských písem, nebo latinka; které, je sporné. Nejstarší jisté nápisy jsou z Dánska a severního Německa. Podle prvních šesti znaků se řada run nazývá futhark."
+       },
+       {
+        "id": "ogam",
+        "rodic": "latinka",
+        "nazev": "Ogam",
+        "doba": "od 4. st. n. l.",
+        "ukazka": "ᚁᚂᚃᚄᚅ",
+        "civ": "keltove",
+        "jistota": "sporna",
+        "pozn": "Irské písmo z čárek a zářezů podél hrany kamene. Tvary nemá z jiného písma; soustava hlásek podle většiny badatelů vychází z latinské abecedy, jiní uvažují o runách nebo řečtině."
+       },
+       {
+        "id": "gotske",
+        "rodic": "recke",
+        "nazev": "Gótské písmo",
+        "doba": "4. st. n. l.",
+        "ukazka": "𐌰𐌱𐌲𐌳",
+        "civ": "germani",
+        "jistota": "jista",
+        "pozn": "Vytvořil ho biskup Wulfila pro překlad bible, převážně podle řecké abecedy, s několika písmeny z latinky a snad i z run."
+       },
+       {
+        "id": "koptske",
+        "rodic": "recke",
+        "nazev": "Koptské písmo",
+        "doba": "od 3. st. n. l.",
+        "ukazka": "ⲁⲃⲅϣϥ",
+        "civ": "egypt",
+        "jistota": "jista",
+        "pozn": "Řecká abeceda doplněná o šest až sedm písmen z démotického písma (například ϣ š, ϥ f) pro egyptské hlásky, které řečtina neměla."
+       },
+       {
+        "id": "hlaholice",
+        "rodic": "recke",
+        "nazev": "Hlaholice",
+        "doba": "od 863",
+        "ukazka": "ⰀⰁⰂⰃⰄ",
+        "civ": "slovane",
+        "jistota": "sporna",
+        "pozn": "Vytvořil ji Konstantin (Cyril) pro moravskou misi. Tvary písmen jsou z velké části nové; řada z nich vychází podle převládajícího výkladu z řecké minuskule."
+       },
+       {
+        "id": "cyrilice",
+        "rodic": "recke",
+        "nazev": "Cyrilice",
+        "doba": "konec 9. st.",
+        "ukazka": "АБВГД",
+        "civ": "slovane",
+        "jistota": "jista",
+        "pozn": "Vznikla v Bulharsku z řecké abecedy. Písmena pro slovanské hlásky, které řečtina neměla (například Ж, Ш, Ц, Ч), převzala podle převládajícího výkladu z hlaholice."
+       },
+       {
+        "id": "armenske",
+        "rodic": "recke",
+        "nazev": "Arménské písmo",
+        "doba": "asi 405 n. l.",
+        "ukazka": "ԱԲԳԴ",
+        "civ": "armeni",
+        "jistota": "sporna",
+        "pozn": "Vytvořil ho Mesrop Maštoc. Podle převládajícího názoru je pořadím písmen i řadou tvarů inspirováno řeckou abecedou; znaky pro arménské hlásky, které řečtina neměla, jsou jiného původu."
+       },
+       {
+        "id": "gruzinske",
+        "rodic": "recke",
+        "nazev": "Gruzínské písmo",
+        "doba": "nejstarší nápisy z 5. st. n. l.",
+        "ukazka": "ႠႡႢႣ",
+        "civ": "armeni",
+        "jistota": "sporna",
+        "pozn": "Původ je sporný: pořadí písmen a jejich číselné hodnoty odpovídají řecké abecedě, tvary jsou vlastní. Nejstarší datované nápisy jsou z 5. století (Bir el-Kutt u Betléma, Bolnisi). Ukázka je ve starém písmu asomtavruli."
+       }
+      ],
+      "pozn": "Rodokmen je zjednodušený: písma se ovlivňovala i napříč větvemi a o mnoha přechodech se badatelé přou v podrobnostech. Středověká písma (například mongolské) jsou uvedena jen tam, kde ukazují, kam až starověké větve dosáhly."
+     },
+     {
+      "typ": "text",
+      "h": "Jak se abeceda šířila a měnila",
+      "p": [
+       "První abecedy zapisovaly jen souhlásky. Semitským jazykům to stačilo, protože význam slova nesou hlavně souhlásky kořene: ze souhlásek m-l-k je fénické mlk, hebrejské melech i arabské malik, „král“. Takovému písmu se odborně říká abdžad. Samohlásky se později začaly naznačovat písmeny pro souhlásky ʾ, h, w a j a v hebrejštině, syrštině a arabštině nakonec i tečkami a čárkami nad písmeny a pod nimi.",
+       "Když Řekové v 8. století př. n. l. převzali fénické písmo, použili písmena pro hrdelní souhlásky, které řečtina neměla, pro samohlásky: z ʾalp se stala alfa, z ʿain omikron. Tak vznikla abeceda v užším smyslu, v níž mají samohlásky stejné místo jako souhlásky. Z řeckých místních abeced vzešla etruská abeceda a z ní latinka; v pozdní antice a raném středověku bylo řecké písmo předlohou či vzorem pro gótské, koptské a arménské písmo, hlaholici a cyrilici.",
+       "Na východ se abeceda šířila hlavně v aramejské podobě. Aramejština byla jazykem správy Asyrské, Babylonské a Perské říše a její písmo převzali lidé od Egypta po Indii. V Indii vznikl třetí typ písma, abugida: každý znak souhlásky obsahuje samohlásku a (𑀓 ka) a jiné samohlásky se k němu připojují znaménky (𑀓𑀺 ki). Podobně funguje etiopské písmo, které samohláskové značky dostalo ve 4. století n. l.; zda pod vlivem indických písem, se neví.",
+       "Pozoruhodně stálé zůstalo pořadí písmen. Cvičné tabulky z Ugaritu ze 14.–13. století př. n. l. mají téměř totéž pořadí jako fénická abeceda a to se v hrubých rysech udrželo v hebrejském, řeckém i latinském písmu: A, B, G (latinské C), D… Druhé staré pořadí, začínající h, l, ḥ, m, žije v etiopském písmu."
+      ]
+     },
+     {
+      "typ": "strom",
+      "h": "Další kořeny",
+      "uvod": "Klínové písmo, čínské znaky a mayské písmo patří spolu s egyptskými hieroglyfy k písmům, která podle většiny badatelů vznikla nezávisle. Anatolské hieroglyfy a krétská písma se objevila ve světě, kde se už psalo; podnět zvenčí je u nich možný, znaky však mají vlastní. Z těchto kořenů vzešla převážně písma pro slova a slabiky a kromě čínských znaků všechna zanikla.",
+      "uzly": [
+       {
+        "id": "klinove",
+        "rodic": null,
+        "nazev": "Klínové písmo",
+        "doba": "asi 3300 př. n. l. – 1. st. n. l.",
+        "ukazka": "𒀭𒆠𒂍𒈗",
+        "civ": "mezopotamie",
+        "jistota": "jista",
+        "pozn": "Vzniklo v Uruku z obrázkových znaků na účetních tabulkách. Znaky zapisovaly slova i slabiky; písaři je převzali pro řadu jazyků Předního východu. Nejprve sumerština."
+       },
+       {
+        "id": "akkadske",
+        "rodic": "klinove",
+        "nazev": "Akkadské klínové písmo",
+        "doba": "od pol. 3. tis. př. n. l.",
+        "ukazka": "𒀀𒂊𒄿𒌋",
+        "civ": "mezopotamie",
+        "jistota": "jista",
+        "pozn": "Akkaďané převzali sumerské znaky a akkadská slova jimi psali po slabikách, vedle sumerských znaků pro celá slova. Ukázka: slabiky a, e, i, u."
+       },
+       {
+        "id": "chetitske",
+        "rodic": "akkadske",
+        "nazev": "Chetitské klínové písmo",
+        "doba": "asi 17.–12. st. př. n. l.",
+        "ukazka": "𒀀𒈠𒉡𒍝",
+        "civ": "chetite",
+        "jistota": "jista",
+        "pozn": "Chetité převzali klínové písmo ze starobabylonské Mezopotámie, patrně přes severní Sýrii. Vedle chetitských slabik (v ukázce a, ma, nu, za) užívali sumerogramy a akkadogramy."
+       },
+       {
+        "id": "elamske",
+        "rodic": "akkadske",
+        "nazev": "Elamské klínové písmo",
+        "doba": "od konce 3. tis. př. n. l.",
+        "ukazka": null,
+        "civ": "persie",
+        "jistota": "jista",
+        "pozn": "Elamité převzali akkadské klínové písmo. V perské říši se jím vedly úřední záznamy, například tisíce tabulek z Persepole."
+       },
+       {
+        "id": "staroperske",
+        "rodic": "klinove",
+        "nazev": "Staroperské klínové písmo",
+        "doba": "6.–4. st. př. n. l.",
+        "ukazka": "𐎠𐎡𐎢𐎣𐎤",
+        "civ": "persie",
+        "jistota": "sporna",
+        "pozn": "Vypadá jako klínové písmo, ale je to jiný systém: 36 hláskových znaků, jejichž tvary ani hodnoty nepocházejí z babylonského písma. Většina badatelů ho pokládá za vědomě vytvořený nový systém; od klínového písma převzalo jen podnět a techniku."
+       },
+       {
+        "id": "anatolske",
+        "rodic": null,
+        "nazev": "Anatolské (luvijské) hieroglyfy",
+        "doba": "asi 14.–8. st. př. n. l.",
+        "ukazka": "𔐀𔐁𔐂",
+        "civ": "chetite",
+        "jistota": "jista",
+        "pozn": "Vlastní obrázkové písmo Anatolie, asi pět set znaků pro slova i slabiky, jímž se psala luvijština. S egyptskými hieroglyfy ho spojuje jen název. Znak 𔐀 znamená „já“."
+       },
+       {
+        "id": "linearniA",
+        "rodic": null,
+        "nazev": "Lineární písmo A",
+        "doba": "asi 1800–1450 př. n. l.",
+        "ukazka": "𐘀𐘁𐘂𐘃",
+        "civ": "recko",
+        "jistota": "jista",
+        "pozn": "Slabičné písmo mínojské Kréty. Znaky umíme přibližně vyslovit podle lineárního písma B, jazyk však neznáme. Vedle něj se na Krétě užívalo i krétské hieroglyfické písmo."
+       },
+       {
+        "id": "linearniB",
+        "rodic": "linearniA",
+        "nazev": "Lineární písmo B",
+        "doba": "asi 1450–1200 př. n. l.",
+        "ukazka": "𐀀𐀁𐀂𐀃𐀄",
+        "civ": "recko",
+        "jistota": "jista",
+        "pozn": "Mykénští písaři upravili lineární písmo A pro řečtinu. Rozluštil ho roku 1952 Michael Ventris; zaniklo s mykénskými paláci. Ukázka: slabiky a, e, i, o, u."
+       },
+       {
+        "id": "kyperskominojske",
+        "rodic": "linearniA",
+        "nazev": "Kyperskomínojské písmo",
+        "doba": "asi 16.–11. st. př. n. l.",
+        "ukazka": null,
+        "civ": null,
+        "jistota": "sporna",
+        "pozn": "Nerozluštěné písmo Kypru doby bronzové, podle převládajícího názoru odvozené z lineárního písma A."
+       },
+       {
+        "id": "kyperske",
+        "rodic": "kyperskominojske",
+        "nazev": "Kyperské slabičné písmo",
+        "doba": "11.–4. st. př. n. l.",
+        "ukazka": null,
+        "civ": "recko",
+        "jistota": "jista",
+        "pozn": "Řekové na Kypru jím psali řecky ještě v době, kdy jinde v Řecku vládla abeceda. S lineárním písmem B je příbuzné, není však z něj odvozené."
+       },
+       {
+        "id": "cinske",
+        "rodic": null,
+        "nazev": "Čínské znaky",
+        "doba": "od 13. st. př. n. l.",
+        "ukazka": "人日月王",
+        "civ": "cina",
+        "jistota": "jista",
+        "pozn": "Nejstarší doklady jsou šangské věštebné kosti. Jediné z nezávisle vzniklých písem, které se užívá dodnes. Převzalo je Japonsko, Korea i Vietnam a v Japonsku z nich vzešla slabičná písma."
+       },
+       {
+        "id": "mayske",
+        "rodic": null,
+        "nazev": "Mayské písmo",
+        "doba": "od 3. st. př. n. l.",
+        "ukazka": null,
+        "civ": "mayove",
+        "jistota": "jista",
+        "pozn": "Logogramy a slabičné znaky. Patří k mezoamerické písemné tradici, k níž se řadí i zapotécké nápisy z Oaxaky; vztahy mezoamerických písem nejsou vyjasněné. V Unicode zatím není."
+       },
+       {
+        "id": "indus",
+        "rodic": null,
+        "nazev": "Písmo Indu",
+        "doba": "asi 2600–1900 př. n. l.",
+        "ukazka": null,
+        "civ": "indie",
+        "jistota": "jista",
+        "pozn": "Krátké nápisy hlavně na pečetích, v průměru asi pět znaků. Nerozluštěné; není jisté ani to, zda zapisují jazyk. Souvislost s pozdějším bráhmí se neprokázala. V Unicode není."
+       }
+      ],
+      "pozn": "Kořeny nejsou navzájem propojené, protože jejich příbuznost se nepodařilo prokázat. Egyptské hieroglyfy stojí v čele rodokmenu abeced výše."
+     },
+     {
+      "typ": "rameček",
+      "h": "Myšlenka místo předlohy",
+      "p": [
+       "Ne každé nové písmo převzalo tvary znaků; někdy stačilo vědět, že psaní existuje. Písaři v Ugaritu sestavili abecedu z klínků, jako by psali akkadsky. Tvůrci staroperského písma napodobili vzhled klínového písma, ale znaky i jejich hodnoty vytvořili nově.",
+       "Nejlépe doložený příklad je z novověku: Čerokí Sequoyah, který neuměl číst, vytvořil kolem roku 1821 slabičné písmo pro čerokézštinu. Některé jeho znaky mají tvar latinských písmen, ale úplně jiné hodnoty. Badatelé tomu říkají podnětová difuze (anglicky stimulus diffusion)."
+      ]
+     },
+     {
+      "typ": "slova",
+      "h": "Jedno slovo, mnoho písem: král",
+      "uvod": "Slovo „král“ se vyskytuje v textech téměř všech starověkých kultur, a proto se hodí ke srovnání písem. Kde písmo mělo znak pro celé slovo, psali ho často i písaři jiných jazyků a četli ho po svém. Řádky jsou seřazené zhruba podle stáří dokladů.",
+      "hlavicka": [
+       "jazyk (písmo)",
+       "zápis",
+       "přepis",
+       "poznámka"
+      ],
+      "radky": [
+       [
+        "sumerština (klínové písmo)",
+        "𒈗",
+        "lugal",
+        "doslova „velký muž“: lu₂ „člověk“ a gal „velký“"
+       ],
+       [
+        "egyptština (hieroglyfy)",
+        "𓇓𓏏𓈖",
+        "nswt",
+        "rostlina sw stojí napřed, čte se však n-sw-t; v titulu nswt-bjtj „král Horního a Dolního Egypta“"
+       ],
+       [
+        "akkadština (klínové písmo)",
+        "𒈗",
+        "šarrum",
+        "týž sumerský znak LUGAL, čtený akkadsky; slovo se dalo psát i po slabikách (šar-ru-um)"
+       ],
+       [
+        "chetitština (klínové písmo)",
+        "𒈗",
+        "ḫaššuš",
+        "opět znak LUGAL jako sumerogram; chetitské čtení známe z řídčích zápisů po slabikách"
+       ],
+       [
+        "mykénská řečtina (lineární písmo B)",
+        "𐀷𐀙𐀏",
+        "wa-na-ka",
+        "wanax „vládce“, u Homéra ἄναξ; slovo qa-si-re-u, předek pozdějšího basileus, označovalo jen místního hodnostáře"
+       ],
+       [
+        "stará čínština (čínské znaky)",
+        "王",
+        "wáng (dnešní čtení)",
+        "znak je doložen už na věštebných kostech; podle rozšířeného výkladu zobrazoval čepel sekery, odznak moci"
+       ],
+       [
+        "féničtina (fénické písmo)",
+        "𐤌𐤋𐤊",
+        "mlk",
+        "jen souhlásky; samohlásky se doplňují podle příbuzných jazyků (asi milk)"
+       ],
+       [
+        "hebrejština (hebrejské písmo)",
+        "מֶלֶךְ",
+        "melech",
+        "tečky a čárky pod písmeny jsou samohláskové značky, přidávané až od raného středověku"
+       ],
+       [
+        "aramejština (aramejské písmo)",
+        "𐡌𐡋𐡊𐡀",
+        "malkā",
+        "koncové -ā (písmeno ʾ) má funkci členu: „ten král“"
+       ],
+       [
+        "staroperština (staroperské klínové písmo)",
+        "𐎧𐏁𐎠𐎹𐎰𐎡𐎹",
+        "xšāyaθiya",
+        "v nápisech ho může nahradit logogram 𐏋; odtud dnešní šáh"
+       ],
+       [
+        "řečtina (řecká abeceda)",
+        "βασιλεύς",
+        "basileús",
+        "u Homéra ještě vedle staršího ἄναξ"
+       ],
+       [
+        "latina (latinka)",
+        "REX",
+        "rēx",
+        "příbuzné se sanskrtským rājan i keltským -rīx ve jménech, jako je Vercingetorix"
+       ],
+       [
+        "sanskrt (dévanágarí)",
+        "राजन्",
+        "rājan",
+        "1. pád rājā; ve východním prákrtu Ašókových nápisů lājā"
+       ],
+       [
+        "středoperština (pahlavské písmo)",
+        "𐭬𐭫𐭪𐭠",
+        "MLKA, čteno šāh",
+        "aramejské slovo zapsané v perském textu, ale čtené persky (heterogram)"
+       ],
+       [
+        "klasická mayština (mayské písmo)",
+        "(v Unicode není)",
+        "AJAW, a-ja-wa",
+        "„pán, vládce“; titul kʼuhul ajaw, „posvátný pán“, nosili králové klasického období"
+       ],
+       [
+        "gótština (gótské písmo)",
+        "𐌸𐌹𐌿𐌳𐌰𐌽𐍃",
+        "þiudans",
+        "od þiuda „lid, národ“"
+       ],
+       [
+        "geʽez (etiopské písmo)",
+        "ንጉሥ",
+        "nəguś",
+        "odtud etiopský titul negus; každý znak je slabika"
+       ],
+       [
+        "arabština (arabské písmo)",
+        "مَلِك",
+        "malik",
+        "stejný semitský kořen m-l-k jako ve féničtině, hebrejštině a aramejštině"
+       ],
+       [
+        "stará severština (runy, mladší futhark)",
+        "ᚴᚢᚾᚢᚴᛦ",
+        "kunukʀ",
+        "konungr; tak nazývají runové kameny v Jellingu (10. st.) krále Gorma a Haralda. Mladší futhark neměl zvláštní runy pro o a g"
+       ],
+       [
+        "čeština (latinka)",
+        "král",
+        "–",
+        "z vlastního jména Karel, podle Karla Velikého (praslovansky *korľь); stejného původu je polské król a ruské король"
+       ]
+      ]
+     },
+     {
+      "typ": "zdroje",
+      "h": "Zdroje a další četba",
+      "p": [
+       "Peter T. Daniels, William Bright (ed.): The World's Writing Systems. Oxford University Press 1996.",
+       "Stephen D. Houston (ed.): The First Writing. Script Invention as History and Process. Cambridge University Press 2004.",
+       "Joseph Naveh: Early History of the Alphabet. An Introduction to West Semitic Epigraphy and Palaeography. Magnes Press, Jeruzalém 1982.",
+       "Andrew Robinson: The Story of Writing. Alphabets, Hieroglyphs and Pictograms. Thames & Hudson, 2. vyd. 2007.",
+       "Florian Coulmas: The Writing Systems of the World. Blackwell 1989."
+      ]
+     }
+    ]
+   },
+   "en": {
+    "nazev": "The family tree of scripts",
+    "stitek": "Languages of antiquity · overview",
+    "podtitul": "From Egyptian hieroglyphs to the Latin alphabet, Arabic script and Devanagari",
+    "perex": "Writing was invented independently only a few times: in Mesopotamia, in Egypt (perhaps prompted by Mesopotamia), in China and in Mesoamerica. Yet most of the world's alphabets – Latin and Cyrillic, the Hebrew and Arabic scripts and, on the prevailing view, the scripts of India – share a single ancestor: signs that Semitic-speaking people borrowed from Egyptian hieroglyphs in the 2nd millennium BCE.",
+    "fakta": [
+     [
+      "Independent inventions of writing",
+      "Mesopotamia (c. 3300 BCE), Egypt (late 4th millennium BCE), China (13th century BCE), Mesoamerica (Maya script from the 3rd century BCE)"
+     ],
+     [
+      "Earliest alphabet",
+      "Proto-Sinaitic, c. 19th–16th century BCE (date disputed)"
+     ],
+     [
+      "Earliest attested letter order",
+      "school tablets from Ugarit, 14th–13th century BCE"
+     ],
+     [
+      "First alphabet with vowels",
+      "Greek, 8th century BCE"
+     ],
+     [
+      "Undeciphered scripts (among others)",
+      "the Indus script, Linear A, Cypro-Minoan"
+     ]
+    ],
+    "oddily": [
+     {
+      "typ": "text",
+      "h": "How many times was writing invented?",
+      "p": [
+       "Writing that can record anything that can be said was, in the view of most scholars, invented independently only a few times. The earliest evidence comes from Mesopotamia, where tablets with pictorial signs appeared at Uruk around 3300–3100 BCE, and from Egypt, where writing appears at the end of the 4th millennium BCE; whether the Egyptians took the idea of writing from Mesopotamia is unresolved. Independently of both, Chinese writing arose, attested from the 13th century BCE, and so did the scripts of Mesoamerica, of which Maya (from the 3rd century BCE) is the best known.",
+       "The script of the Harappan civilization in the Indus valley (c. 2600–1900 BCE) remains undeciphered, and it is not even certain that it recorded language. Other scripts arose where people knew of writing from their neighbours: they took over the idea but made their own signs. On the prevailing view, this is also how the first alphabet came about. In the 2nd millennium BCE, Semitic-speaking people in Egypt and Sinai picked a few Egyptian hieroglyphs and used each to write only the first sound of its name: the drawing of an ox head, Semitic ʾalp, stood for ʾ, a house (bayt) for b. Directly or indirectly, most of the world's alphabets descend from this script."
+      ]
+     },
+     {
+      "typ": "strom",
+      "h": "The family of alphabets",
+      "uvod": "The tree shows how the alphabets of Europe, the Middle East, India and Central Asia grew out of Egyptian signs. A solid line means a generally accepted origin. A dashed line means the origin is disputed, or that the script took only a model or an idea from its predecessor rather than the letter shapes. The characters next to each script are a sample, usually its first letters; dates are approximate.",
+      "uzly": [
+       {
+        "id": "egyptske",
+        "rodic": null,
+        "nazev": "Egyptian hieroglyphs",
+        "doba": "late 4th millennium BCE – 394 CE",
+        "ukazka": "𓃾𓉐𓈖𓁶",
+        "civ": "egypt",
+        "jistota": "jista",
+        "pozn": "Signs for words, consonants and determinatives. The ox head, house, water and head shown here are, on the prevailing view, the models of the letters ʾalp, bet, mem and reš."
+       },
+       {
+        "id": "protosinajske",
+        "rodic": "egyptske",
+        "nazev": "Proto-Sinaitic and Proto-Canaanite",
+        "doba": "c. 19th–11th century BCE",
+        "ukazka": null,
+        "civ": "egypt",
+        "jistota": "jista",
+        "pozn": "The earliest alphabet: signs borrowed from hieroglyphs, each writing only the first consonant of its name. Inscriptions from Sinai (Serabit el-Khadim), Egypt (Wadi el-Hol) and Canaan; the date of the earliest is disputed (c. 1850 or as late as 1550 BCE)."
+       },
+       {
+        "id": "ugaritske",
+        "rodic": "protosinajske",
+        "nazev": "Ugaritic cuneiform alphabet",
+        "doba": "14th–13th century BCE",
+        "ukazka": "𐎀𐎁𐎂𐎃𐎄",
+        "civ": "fenicane",
+        "jistota": "sporna",
+        "pozn": "About thirty signs pressed into clay like Mesopotamian cuneiform. The shapes are new, but the letter order nearly matches the Phoenician alphabet, so the principle of the alphabet came from the West Semitic tradition. School tablets also record a second order (h, l, ḥ, m…), the one used by the Ethiopic script."
+       },
+       {
+        "id": "jihoarabske",
+        "rodic": "protosinajske",
+        "nazev": "Ancient South Arabian",
+        "doba": "mature form c. 800 BCE, used until the 6th century CE",
+        "ukazka": "𐩠𐩡𐩢𐩣𐩤",
+        "civ": "aksum",
+        "jistota": "sporna",
+        "pozn": "It branched off from the early Canaanite alphabet before Phoenician did; when and how is unclear. It has 29 consonants. The sample follows the South Semitic order h, l, ḥ, m, q."
+       },
+       {
+        "id": "geez",
+        "rodic": "jihoarabske",
+        "nazev": "Ethiopic script (fidäl)",
+        "doba": "with vowels from the 4th century CE",
+        "ukazka": "ሀለሐመ",
+        "civ": "aksum",
+        "jistota": "jista",
+        "pozn": "At first consonants only; under King Ezana in the 4th century vowel marks were added and the script became an abugida. Unlike its South Arabian model it runs left to right. Amharic and Tigrinya are still written in it."
+       },
+       {
+        "id": "fenicke",
+        "rodic": "protosinajske",
+        "nazev": "Phoenician alphabet",
+        "doba": "from c. 1050 BCE",
+        "ukazka": "𐤀𐤁𐤂𐤃",
+        "civ": "fenicane",
+        "jistota": "jista",
+        "pozn": "22 letters for consonants only, written right to left. Phoenician traders carried it across the Mediterranean."
+       },
+       {
+        "id": "paleohebrejske",
+        "rodic": "fenicke",
+        "nazev": "Paleo-Hebrew script",
+        "doba": "from the 10th century BCE",
+        "ukazka": null,
+        "civ": "hebrejci",
+        "jistota": "jista",
+        "pozn": "The southern Canaanite counterpart of Phoenician, used for the earliest Hebrew inscriptions; Unicode does not distinguish it from Phoenician. Among Jews it gave way to the Aramaic script from the Persian period on."
+       },
+       {
+        "id": "samaritanske",
+        "rodic": "paleohebrejske",
+        "nazev": "Samaritan script",
+        "doba": "still in use",
+        "ukazka": "ࠀࠁࠂࠃ",
+        "civ": "hebrejci",
+        "jistota": "jista",
+        "pozn": "A direct descendant of Paleo-Hebrew. The Samaritans still write their Torah in it."
+       },
+       {
+        "id": "aramejske",
+        "rodic": "fenicke",
+        "nazev": "Aramaic alphabet",
+        "doba": "from the 8th century BCE",
+        "ukazka": "𐡀𐡁𐡂𐡃",
+        "civ": "hebrejci",
+        "jistota": "jista",
+        "pozn": "The earliest Aramaic inscriptions use the Phoenician script; distinct letter shapes developed by the 8th century. As the script of the Assyrian, Babylonian and Persian administrations it spread from Egypt to India and became the ancestor of most alphabets of Asia."
+       },
+       {
+        "id": "hebrejske",
+        "rodic": "aramejske",
+        "nazev": "Hebrew square script",
+        "doba": "from the 3rd century BCE",
+        "ukazka": "אבגד",
+        "civ": "hebrejci",
+        "jistota": "jista",
+        "pozn": "It grew out of the Aramaic script of the Persian administration, which the Jews adopted in place of Paleo-Hebrew. Hebrew and Yiddish are written in it."
+       },
+       {
+        "id": "nabatejske",
+        "rodic": "aramejske",
+        "nazev": "Nabataean script",
+        "doba": "from the 2nd century BCE",
+        "ukazka": "𐢁𐢃𐢄𐢅",
+        "civ": null,
+        "jistota": "jista",
+        "pozn": "The script of the Nabataeans, centred on Petra. Its cursive form gradually turned into the Arabic script."
+       },
+       {
+        "id": "arabske",
+        "rodic": "nabatejske",
+        "nazev": "Arabic script",
+        "doba": "from late antiquity (4th–6th century CE)",
+        "ukazka": "ابجد",
+        "civ": null,
+        "jistota": "jista",
+        "pozn": "On the prevailing view it grew out of Nabataean, on a minority view out of Syriac. With Islam it spread across much of Asia and Africa; today it is the most widely used alphabet after the Latin one."
+       },
+       {
+        "id": "palmyrske",
+        "rodic": "aramejske",
+        "nazev": "Palmyrene script",
+        "doba": "1st century BCE – 3rd century CE",
+        "ukazka": "𐡠𐡡𐡢𐡣",
+        "civ": null,
+        "jistota": "jista",
+        "pozn": "The script of the caravan city of Palmyra, known from thousands of inscriptions. It died out after the Romans took the city in 272."
+       },
+       {
+        "id": "syrske",
+        "rodic": "aramejske",
+        "nazev": "Syriac script",
+        "doba": "from the 1st century CE",
+        "ukazka": "ܐܒܓܕ",
+        "civ": null,
+        "jistota": "jista",
+        "pozn": "The script of Syriac Aramaic, the literary and liturgical language of Middle Eastern Christians. It is still in use."
+       },
+       {
+        "id": "pahlavske",
+        "rodic": "aramejske",
+        "nazev": "Pahlavi scripts",
+        "doba": "from the 2nd–1st century BCE",
+        "ukazka": "𐭠𐭡𐭢𐭣",
+        "civ": "persie",
+        "jistota": "jista",
+        "pozn": "The scripts of Parthian and Sasanian Iran. Many words were written in Aramaic but read in Persian (heterograms)."
+       },
+       {
+        "id": "avestske",
+        "rodic": "pahlavske",
+        "nazev": "Avestan script",
+        "doba": "5th–6th century CE",
+        "ukazka": "𐬀𐬁𐬂𐬃",
+        "civ": "persie",
+        "jistota": "jista",
+        "pozn": "Created under the Sasanians from Book Pahlavi to write down the sacred texts of the Avesta. Unlike its model it records vowels precisely; the sample shows four of them."
+       },
+       {
+        "id": "sogdske",
+        "rodic": "aramejske",
+        "nazev": "Sogdian script",
+        "doba": "c. 100–1200 CE",
+        "ukazka": null,
+        "civ": null,
+        "jistota": "jista",
+        "pozn": "The script of Sogdian merchants on the Silk Road in Central Asia."
+       },
+       {
+        "id": "ujgurske",
+        "rodic": "sogdske",
+        "nazev": "Old Uyghur script",
+        "doba": "from the 9th century CE",
+        "ukazka": null,
+        "civ": null,
+        "jistota": "jista",
+        "pozn": "Cursive Sogdian adapted for Turkic languages and written in vertical columns."
+       },
+       {
+        "id": "mongolske",
+        "rodic": "ujgurske",
+        "nazev": "Mongolian script",
+        "doba": "from the 13th century CE",
+        "ukazka": null,
+        "civ": null,
+        "jistota": "jista",
+        "pozn": "According to tradition it was adapted from Old Uyghur by Tata-tonga, a Uyghur scribe captured by Genghis Khan. It is still used in Inner Mongolia; the Aramaic branch thus reached as far as China."
+       },
+       {
+        "id": "kharosthi",
+        "rodic": "aramejske",
+        "nazev": "Kharosthi",
+        "doba": "c. 3rd century BCE – 3rd century CE",
+        "ukazka": "𐨐𐨑𐨒𐨓",
+        "civ": "indie",
+        "jistota": "jista",
+        "pozn": "The script of Gandhara, derived from the Aramaic of the Persian administration; like its model it runs right to left. It attaches vowels to consonants with marks, as Brahmi does."
+       },
+       {
+        "id": "brahmi",
+        "rodic": "aramejske",
+        "nazev": "Brahmi",
+        "doba": "from the 3rd century BCE",
+        "ukazka": "𑀓𑀔𑀕𑀖",
+        "civ": "indie",
+        "jistota": "sporna",
+        "pozn": "The ancestor of most scripts of South and Southeast Asia. Most scholars hold that it was modelled on a Semitic script, probably Aramaic; others argue that it arose in India itself."
+       },
+       {
+        "id": "devanagari",
+        "rodic": "brahmi",
+        "nazev": "Devanagari",
+        "doba": "from the 8th century CE",
+        "ukazka": "कखगघ",
+        "civ": "indie",
+        "jistota": "jista",
+        "pozn": "It developed via the Gupta script and Nagari. Hindi, Marathi, Nepali and Sanskrit are written in it."
+       },
+       {
+        "id": "tamilske",
+        "rodic": "brahmi",
+        "nazev": "Tamil script",
+        "doba": "Tamil-Brahmi from the 3rd century BCE",
+        "ukazka": "கஙசஞ",
+        "civ": null,
+        "jistota": "jista",
+        "pozn": "From the southern branch of Brahmi. The earliest Tamil inscriptions use an adapted Brahmi; the modern letter shapes developed in the Middle Ages."
+       },
+       {
+        "id": "tibetske",
+        "rodic": "brahmi",
+        "nazev": "Tibetan script",
+        "doba": "from the 7th century CE",
+        "ukazka": "ཀཁགང",
+        "civ": "indie",
+        "jistota": "jista",
+        "pozn": "According to Tibetan tradition it was created from an Indian model, the Gupta script, by the minister Thonmi Sambhota under King Songtsen Gampo."
+       },
+       {
+        "id": "recke",
+        "rodic": "fenicke",
+        "nazev": "Greek alphabet",
+        "doba": "from the 8th century BCE",
+        "ukazka": "ΑΒΓΔ",
+        "civ": "recko",
+        "jistota": "jista",
+        "pozn": "The Greeks used Phoenician letters for consonants their language lacked to write vowels. The result was the first alphabet to write both consonants and vowels systematically."
+       },
+       {
+        "id": "etruske",
+        "rodic": "recke",
+        "nazev": "Etruscan and Old Italic alphabets",
+        "doba": "from c. 700 BCE",
+        "ukazka": "𐌀𐌁𐌂𐌃",
+        "civ": "etruskove",
+        "jistota": "jista",
+        "pozn": "The Etruscans took the alphabet from Greeks of Euboea settled in Italy. On the prevailing view the alphabets of other languages of Italy, such as Oscan, Umbrian and Venetic, also came from it."
+       },
+       {
+        "id": "latinka",
+        "rodic": "etruske",
+        "nazev": "Latin alphabet",
+        "doba": "from the 7th–6th century BCE",
+        "ukazka": "ABCD",
+        "civ": "rim",
+        "jistota": "jista",
+        "pozn": "On the prevailing view it came from the Etruscan alphabet. With Rome and later the Church it spread across Europe, and today it is the most widely used script in the world."
+       },
+       {
+        "id": "runy",
+        "rodic": "etruske",
+        "nazev": "Runes",
+        "doba": "from the 2nd century CE",
+        "ukazka": "ᚠᚢᚦᚨᚱ",
+        "civ": "germani",
+        "jistota": "sporna",
+        "pozn": "The model was one of the North Italic alphabets or the Latin alphabet; which one is disputed. The oldest certain inscriptions come from Denmark and northern Germany. The rune row is called the futhark after its first six letters."
+       },
+       {
+        "id": "ogam",
+        "rodic": "latinka",
+        "nazev": "Ogham",
+        "doba": "from the 4th century CE",
+        "ukazka": "ᚁᚂᚃᚄᚅ",
+        "civ": "keltove",
+        "jistota": "sporna",
+        "pozn": "An Irish script of strokes and notches along the edge of a stone. Its shapes come from no other script; most scholars think its set of sounds was modelled on the Latin alphabet, others suggest runes or Greek."
+       },
+       {
+        "id": "gotske",
+        "rodic": "recke",
+        "nazev": "Gothic alphabet",
+        "doba": "4th century CE",
+        "ukazka": "𐌰𐌱𐌲𐌳",
+        "civ": "germani",
+        "jistota": "jista",
+        "pozn": "Created by Bishop Wulfila for his Bible translation, mostly from the Greek alphabet, with a few letters from Latin and perhaps from the runes."
+       },
+       {
+        "id": "koptske",
+        "rodic": "recke",
+        "nazev": "Coptic alphabet",
+        "doba": "from the 3rd century CE",
+        "ukazka": "ⲁⲃⲅϣϥ",
+        "civ": "egypt",
+        "jistota": "jista",
+        "pozn": "The Greek alphabet with six or seven extra letters taken from Demotic (for example ϣ š, ϥ f) for Egyptian sounds that Greek lacked."
+       },
+       {
+        "id": "hlaholice",
+        "rodic": "recke",
+        "nazev": "Glagolitic",
+        "doba": "from 863",
+        "ukazka": "ⰀⰁⰂⰃⰄ",
+        "civ": "slovane",
+        "jistota": "sporna",
+        "pozn": "Created by Constantine (Cyril) for the mission to Moravia. The letter shapes are largely new; on the prevailing view a number of them derive from Greek minuscule."
+       },
+       {
+        "id": "cyrilice",
+        "rodic": "recke",
+        "nazev": "Cyrillic",
+        "doba": "late 9th century",
+        "ukazka": "АБВГД",
+        "civ": "slovane",
+        "jistota": "jista",
+        "pozn": "It arose in Bulgaria from the Greek alphabet. The letters for Slavic sounds that Greek lacked (such as Ж, Ш, Ц, Ч) were, on the prevailing view, taken from Glagolitic."
+       },
+       {
+        "id": "armenske",
+        "rodic": "recke",
+        "nazev": "Armenian alphabet",
+        "doba": "c. 405 CE",
+        "ukazka": "ԱԲԳԴ",
+        "civ": "armeni",
+        "jistota": "sporna",
+        "pozn": "Created by Mesrop Mashtots. The prevailing view is that its letter order and many letter shapes follow the Greek alphabet; the signs for Armenian sounds that Greek lacked have other sources."
+       },
+       {
+        "id": "gruzinske",
+        "rodic": "recke",
+        "nazev": "Georgian script",
+        "doba": "earliest inscriptions 5th century CE",
+        "ukazka": "ႠႡႢႣ",
+        "civ": "armeni",
+        "jistota": "sporna",
+        "pozn": "Its origin is disputed: the letter order and numerical values match the Greek alphabet, but the shapes are its own. The earliest dated inscriptions are from the 5th century (Bir el Qutt near Bethlehem, Bolnisi). The sample is in the old asomtavruli script."
+       }
+      ],
+      "pozn": "The tree is simplified: scripts also influenced one another across branches, and scholars disagree about the details of many transitions. Medieval scripts (such as Mongolian) are included only where they show how far the ancient branches reached."
+     },
+     {
+      "typ": "text",
+      "h": "How the alphabet spread and changed",
+      "p": [
+       "The first alphabets wrote only consonants. That was enough for Semitic languages, where the meaning of a word rests mainly on the consonants of its root: the consonants m-l-k give Phoenician mlk, Hebrew melekh and Arabic malik, ‘king’. Such a script is called an abjad. Vowels later came to be hinted at with the letters for the consonants ʾ, h, w and y, and in Hebrew, Syriac and Arabic eventually also with dots and dashes above and below the letters.",
+       "When the Greeks took over the Phoenician script in the 8th century BCE, they used the letters for guttural consonants that Greek lacked to write vowels: ʾalp became alpha, ʿain omicron. This produced an alphabet in the narrow sense, in which vowels stand on an equal footing with consonants. The local Greek alphabets gave rise to the Etruscan alphabet and through it to the Latin one; in late antiquity and the early Middle Ages Greek writing served as the source or model for the Gothic, Coptic and Armenian scripts, Glagolitic and Cyrillic.",
+       "Eastwards the alphabet spread mainly in its Aramaic form. Aramaic was the language of administration in the Assyrian, Babylonian and Persian empires, and its script was taken up from Egypt to India. In India a third type of script arose, the abugida: each consonant sign carries the vowel a (𑀓 ka), and other vowels are attached to it as marks (𑀓𑀺 ki). The Ethiopic script works in a similar way; it acquired its vowel marks in the 4th century CE, whether under the influence of Indian scripts is not known.",
+       "The order of the letters proved remarkably stable. School tablets from Ugarit of the 14th–13th century BCE have almost the same order as the Phoenician alphabet, and it survived in broad outline in the Hebrew, Greek and Latin scripts: A, B, G (Latin C), D… A second ancient order, beginning h, l, ḥ, m, lives on in the Ethiopic script."
+      ]
+     },
+     {
+      "typ": "strom",
+      "h": "Other roots",
+      "uvod": "Cuneiform, Chinese characters and the Maya script belong, with Egyptian hieroglyphs, to the scripts that most scholars consider independent inventions. Anatolian hieroglyphs and the Cretan scripts appeared in a world where writing already existed; an outside stimulus is possible, but their signs are their own. These roots mostly produced scripts for words and syllables, and all of them except Chinese characters have died out.",
+      "uzly": [
+       {
+        "id": "klinove",
+        "rodic": null,
+        "nazev": "Cuneiform",
+        "doba": "c. 3300 BCE – 1st century CE",
+        "ukazka": "𒀭𒆠𒂍𒈗",
+        "civ": "mezopotamie",
+        "jistota": "jista",
+        "pozn": "It arose at Uruk from pictorial signs on accounting tablets. The signs wrote words as well as syllables, and scribes adapted them to many languages of the Near East, beginning with Sumerian."
+       },
+       {
+        "id": "akkadske",
+        "rodic": "klinove",
+        "nazev": "Akkadian cuneiform",
+        "doba": "from the mid-3rd millennium BCE",
+        "ukazka": "𒀀𒂊𒄿𒌋",
+        "civ": "mezopotamie",
+        "jistota": "jista",
+        "pozn": "The Akkadians took over the Sumerian signs and used them to write Akkadian words syllable by syllable, alongside Sumerian signs for whole words. Sample: the syllables a, e, i, u."
+       },
+       {
+        "id": "chetitske",
+        "rodic": "akkadske",
+        "nazev": "Hittite cuneiform",
+        "doba": "c. 17th–12th century BCE",
+        "ukazka": "𒀀𒈠𒉡𒍝",
+        "civ": "chetite",
+        "jistota": "jista",
+        "pozn": "The Hittites took cuneiform from Old Babylonian Mesopotamia, probably via northern Syria. Besides Hittite syllables (sample: a, ma, nu, za) they used Sumerograms and Akkadograms."
+       },
+       {
+        "id": "elamske",
+        "rodic": "akkadske",
+        "nazev": "Elamite cuneiform",
+        "doba": "from the late 3rd millennium BCE",
+        "ukazka": null,
+        "civ": "persie",
+        "jistota": "jista",
+        "pozn": "The Elamites adopted Akkadian cuneiform. In the Persian Empire it was used for administrative records, such as the thousands of tablets from Persepolis."
+       },
+       {
+        "id": "staroperske",
+        "rodic": "klinove",
+        "nazev": "Old Persian cuneiform",
+        "doba": "6th–4th century BCE",
+        "ukazka": "𐎠𐎡𐎢𐎣𐎤",
+        "civ": "persie",
+        "jistota": "sporna",
+        "pozn": "It looks like cuneiform but is a different system: 36 phonetic signs whose shapes and values do not come from Babylonian writing. Most scholars regard it as a deliberately created new system that took only the idea and the wedge technique from cuneiform."
+       },
+       {
+        "id": "anatolske",
+        "rodic": null,
+        "nazev": "Anatolian (Luwian) hieroglyphs",
+        "doba": "c. 14th–8th century BCE",
+        "ukazka": "𔐀𔐁𔐂",
+        "civ": "chetite",
+        "jistota": "jista",
+        "pozn": "Anatolia's own pictorial script, about five hundred signs for words and syllables, used to write Luwian. It shares only its name with Egyptian hieroglyphs. The sign 𔐀 means ‘I’."
+       },
+       {
+        "id": "linearniA",
+        "rodic": null,
+        "nazev": "Linear A",
+        "doba": "c. 1800–1450 BCE",
+        "ukazka": "𐘀𐘁𐘂𐘃",
+        "civ": "recko",
+        "jistota": "jista",
+        "pozn": "The syllabic script of Minoan Crete. The signs can be roughly sounded out from Linear B, but the language is unknown. Cretan hieroglyphic writing was used on Crete alongside it."
+       },
+       {
+        "id": "linearniB",
+        "rodic": "linearniA",
+        "nazev": "Linear B",
+        "doba": "c. 1450–1200 BCE",
+        "ukazka": "𐀀𐀁𐀂𐀃𐀄",
+        "civ": "recko",
+        "jistota": "jista",
+        "pozn": "Mycenaean scribes adapted Linear A for Greek. Michael Ventris deciphered it in 1952; it died with the Mycenaean palaces. Sample: the syllables a, e, i, o, u."
+       },
+       {
+        "id": "kyperskominojske",
+        "rodic": "linearniA",
+        "nazev": "Cypro-Minoan",
+        "doba": "c. 16th–11th century BCE",
+        "ukazka": null,
+        "civ": null,
+        "jistota": "sporna",
+        "pozn": "The undeciphered Bronze Age script of Cyprus, thought to derive from Linear A."
+       },
+       {
+        "id": "kyperske",
+        "rodic": "kyperskominojske",
+        "nazev": "Cypriot syllabary",
+        "doba": "11th–4th century BCE",
+        "ukazka": null,
+        "civ": "recko",
+        "jistota": "jista",
+        "pozn": "The Greeks of Cyprus wrote Greek in it long after the rest of Greece had turned to the alphabet. It is related to Linear B but does not descend from it."
+       },
+       {
+        "id": "cinske",
+        "rodic": null,
+        "nazev": "Chinese characters",
+        "doba": "from the 13th century BCE",
+        "ukazka": "人日月王",
+        "civ": "cina",
+        "jistota": "jista",
+        "pozn": "The earliest evidence is the Shang oracle bones. The only independently invented script still in use. Japan, Korea and Vietnam adopted it, and in Japan it gave rise to the syllabic kana scripts."
+       },
+       {
+        "id": "mayske",
+        "rodic": null,
+        "nazev": "Maya script",
+        "doba": "from the 3rd century BCE",
+        "ukazka": null,
+        "civ": "mayove",
+        "jistota": "jista",
+        "pozn": "Logograms and syllabic signs. It belongs to the Mesoamerican writing tradition, which also includes the Zapotec inscriptions of Oaxaca; how the Mesoamerican scripts are related is not settled. It is not yet in Unicode."
+       },
+       {
+        "id": "indus",
+        "rodic": null,
+        "nazev": "Indus script",
+        "doba": "c. 2600–1900 BCE",
+        "ukazka": null,
+        "civ": "indie",
+        "jistota": "jista",
+        "pozn": "Short inscriptions, mostly on seals, about five signs on average. Undeciphered; it is not even certain that they record language. No link to the later Brahmi has been shown. It is not in Unicode."
+       }
+      ],
+      "pozn": "The roots are not linked to one another because no relationship between them has been demonstrated. Egyptian hieroglyphs head the family tree of alphabets above."
+     },
+     {
+      "typ": "rameček",
+      "h": "The idea, not the model",
+      "p": [
+       "Not every new script took over the shapes of its signs; sometimes it was enough to know that writing existed. The scribes of Ugarit built an alphabet out of wedges, as if they were writing Akkadian. The creators of the Old Persian script imitated the look of cuneiform but invented both the signs and their values.",
+       "The best-documented example is modern: Sequoyah, a Cherokee who could not read, created a syllabary for the Cherokee language around 1821. Some of its signs look like Latin letters but have entirely different values. Scholars call this stimulus diffusion."
+      ]
+     },
+     {
+      "typ": "slova",
+      "h": "One word, many scripts: king",
+      "uvod": "The word ‘king’ occurs in the texts of almost every ancient culture, which makes it useful for comparing scripts. Where a script had a sign for the whole word, scribes of other languages often wrote it too and read it in their own language. The rows are ordered roughly by the age of the evidence.",
+      "hlavicka": [
+       "language (script)",
+       "written",
+       "transliteration",
+       "note"
+      ],
+      "radky": [
+       [
+        "Sumerian (cuneiform)",
+        "𒈗",
+        "lugal",
+        "literally ‘big man’: lu₂ ‘person’ and gal ‘big’"
+       ],
+       [
+        "Egyptian (hieroglyphs)",
+        "𓇓𓏏𓈖",
+        "nswt",
+        "the sw plant is written first but the word is read n-sw-t; in the title nswt-bjtj ‘King of Upper and Lower Egypt’"
+       ],
+       [
+        "Akkadian (cuneiform)",
+        "𒈗",
+        "šarrum",
+        "the same Sumerian sign LUGAL, read in Akkadian; the word could also be spelled out in syllables (šar-ru-um)"
+       ],
+       [
+        "Hittite (cuneiform)",
+        "𒈗",
+        "ḫaššuš",
+        "again the sign LUGAL as a Sumerogram; the Hittite reading is known from rarer syllabic spellings"
+       ],
+       [
+        "Mycenaean Greek (Linear B)",
+        "𐀷𐀙𐀏",
+        "wa-na-ka",
+        "wanax ‘ruler’, Homer’s ἄναξ; qa-si-re-u, the ancestor of later basileus, meant only a local official"
+       ],
+       [
+        "Old Chinese (Chinese characters)",
+        "王",
+        "wáng (modern reading)",
+        "the character already appears on the oracle bones; a widely held view is that it depicted an axe blade, a symbol of power"
+       ],
+       [
+        "Phoenician (Phoenician alphabet)",
+        "𐤌𐤋𐤊",
+        "mlk",
+        "consonants only; the vowels are supplied from related languages (probably milk)"
+       ],
+       [
+        "Hebrew (Hebrew script)",
+        "מֶלֶךְ",
+        "melekh",
+        "the dots and dashes under the letters are vowel points, added only from the early Middle Ages"
+       ],
+       [
+        "Aramaic (Aramaic script)",
+        "𐡌𐡋𐡊𐡀",
+        "malkā",
+        "the final -ā (letter ʾ) works as an article: ‘the king’"
+       ],
+       [
+        "Old Persian (Old Persian cuneiform)",
+        "𐎧𐏁𐎠𐎹𐎰𐎡𐎹",
+        "xšāyaθiya",
+        "inscriptions may replace it with the logogram 𐏋; hence modern shah"
+       ],
+       [
+        "Greek (Greek alphabet)",
+        "βασιλεύς",
+        "basileús",
+        "in Homer still alongside the older ἄναξ"
+       ],
+       [
+        "Latin (Latin alphabet)",
+        "REX",
+        "rēx",
+        "related to Sanskrit rājan and to Celtic -rīx in names such as Vercingetorix"
+       ],
+       [
+        "Sanskrit (Devanagari)",
+        "राजन्",
+        "rājan",
+        "nominative rājā; in the eastern Prakrit of Ashoka’s edicts lājā"
+       ],
+       [
+        "Middle Persian (Pahlavi script)",
+        "𐭬𐭫𐭪𐭠",
+        "MLKA, read šāh",
+        "an Aramaic word written in a Persian text but read in Persian (a heterogram)"
+       ],
+       [
+        "Classic Maya (Maya script)",
+        "(v Unicode není)",
+        "AJAW, a-ja-wa",
+        "‘lord, ruler’; kings of the Classic period bore the title kʼuhul ajaw, ‘holy lord’"
+       ],
+       [
+        "Gothic (Gothic alphabet)",
+        "𐌸𐌹𐌿𐌳𐌰𐌽𐍃",
+        "þiudans",
+        "from þiuda ‘people, nation’"
+       ],
+       [
+        "Geʽez (Ethiopic script)",
+        "ንጉሥ",
+        "nəguś",
+        "hence the Ethiopian title negus; each sign is a syllable"
+       ],
+       [
+        "Arabic (Arabic script)",
+        "مَلِك",
+        "malik",
+        "the same Semitic root m-l-k as in Phoenician, Hebrew and Aramaic"
+       ],
+       [
+        "Old Norse (runes, Younger Futhark)",
+        "ᚴᚢᚾᚢᚴᛦ",
+        "kunukʀ",
+        "konungr; so the Jelling runestones (10th century) call kings Gorm and Harald. The Younger Futhark had no separate runes for o and g"
+       ],
+       [
+        "Czech (Latin alphabet)",
+        "král",
+        "–",
+        "from the name Karl, after Charlemagne (Proto-Slavic *korľь); Polish król and Russian король have the same origin"
+       ]
+      ]
+     },
+     {
+      "typ": "zdroje",
+      "h": "Sources and further reading",
+      "p": [
+       "Peter T. Daniels, William Bright (eds.): The World's Writing Systems. Oxford University Press 1996.",
+       "Stephen D. Houston (ed.): The First Writing. Script Invention as History and Process. Cambridge University Press 2004.",
+       "Joseph Naveh: Early History of the Alphabet. An Introduction to West Semitic Epigraphy and Palaeography. Magnes Press, Jerusalem 1982.",
+       "Andrew Robinson: The Story of Writing. Alphabets, Hieroglyphs and Pictograms. Thames & Hudson, 2nd ed. 2007.",
+       "Florian Coulmas: The Writing Systems of the World. Blackwell 1989."
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "slovnicek-pisma",
+   "adresa": {
+    "cs": "slovnicek-pisma",
+    "en": "writing-glossary"
+   },
+   "krajina": "pisarna",
+   "prehled": true,
+   "hledat": "slovnicek pojmu glossary terms pojmy pismo writing abdzad abjad abugida alfabeta alphabet hlaskove pismo slabicne pismo sylabar syllabary sylabogram syllabogram logogram logograficke logosylabicke logosyllabic rysove pismo featural hangul fonogram phonogram determinativ determinative urcovatel klasifikator foneticky komplement phonetic complement heterogram sumerogram rebus akrofonie acrophony ligatura ligature sprezka digraph virama viram mater lectionis diakritika diacritic cislice numerals nula zero bustrofedon boustrophedon kartuse cartouche scriptio continua oddelovac slov word divider interpunkce punctuation epigrafika epigraphy paleografie palaeography transliterace transliteration transkripce transcription bilingva bilingual rozlusteni decipherment ostrakon ostracon palimpsest svitek scroll kodex codex papyrus pergamen parchment hlinena tabulka clay tablet abecedarium abecedary",
+   "tecky": [],
+   "pisma": [
+    "Noto Sans Egyptian Hieroglyphs",
+    "Noto Sans Cuneiform",
+    "Noto Sans Old Persian",
+    "Noto Sans Phoenician",
+    "Noto Sans Ugaritic",
+    "Noto Sans Linear B",
+    "Noto Sans Brahmi",
+    "Noto Serif Devanagari",
+    "Noto Serif Ethiopic",
+    "Noto Serif Hebrew",
+    "Noto Sans Inscriptional Pahlavi",
+    "Noto Sans Mayan Numerals",
+    "Noto Serif TC"
+   ],
+   "fotky": {},
+   "cs": {
+    "nazev": "Slovníček pojmů",
+    "stitek": "Jazyky starověku · přehled",
+    "podtitul": "Druhy písem, znaky, směr psaní a obory, které je zkoumají",
+    "perex": "Abdžad, abugida, determinativ, bústrofédon, palimpsest: stránky o písmech starověku se neobejdou bez odborných pojmů. Tento slovníček je vysvětluje na příkladech, převážně z nápisů a rukopisů, o nichž píšeme u jednotlivých civilizací.",
+    "fakta": [
+     [
+      "Nejstarší písma",
+      "Mezopotámie a Egypt, konec 4. tisíciletí př. n. l."
+     ],
+     [
+      "Nezávislé vynálezy písma",
+      "nejméně Mezopotámie, Čína a Mezoamerika; u Egypta sporné"
+     ],
+     [
+      "Druhy znaků",
+      "znaky pro slova, znaky pro zvuk (slabiku, souhlásku, hlásku) a pomocné znaky, které se nečtou"
+     ],
+     [
+      "První hláskové písmo",
+      "řecká abeceda, 8. st. př. n. l."
+     ]
+    ],
+    "oddily": [
+     {
+      "typ": "text",
+      "h": "Jak písmo zapisuje jazyk",
+      "p": [
+       "Všechna písma stojí na několika málo principech. Znak může zastupovat celé slovo, může zapisovat zvuk (slabiku, souhlásku nebo jednotlivou hlásku), anebo se nečte vůbec a jen napovídá, jak číst znaky okolo. Starověká písma tyto principy většinou kombinovala a o typu písma rozhoduje, který z nich převládá.",
+       "Třídění písem v tomto slovníčku vychází z typologie amerického lingvisty Petera T. Danielse, která se v jazykovědě ujala nejvíc. Není jediná: jiní autoři, například Florian Coulmas, některé kategorie vymezují jinak, a hranice mezi typy jsou neostré. Pojmy jsou seřazené podle témat, ne podle abecedy."
+      ]
+     },
+     {
+      "typ": "pojmy",
+      "h": "Druhy písem",
+      "uvod": "Písma se třídí podle toho, jakou jednotku jazyka zapisuje jejich základní znak.",
+      "pojmy": [
+       [
+        "Logografické písmo",
+        "Písmo, jehož znaky (logogramy) zapisují slova, přesněji morfémy, nejmenší jednotky s vlastním významem. Čistě logografické písmo neexistuje: bez znaků pro zvuk by nešlo zapsat jména ani mluvnické tvary, a každé písmo tohoto typu proto nějakou zvukovou složku má.",
+        "Za logografické se obvykle pokládá čínské písmo: 人 rén „člověk“, 木 mù „strom“. Většinu čínských znaků však tvoří fonetickosémantické složeniny s významovou a zvukovou částí."
+       ],
+       [
+        "Logosylabické písmo",
+        "Písmo, které kombinuje logogramy se znaky pro slabiky (sylabogramy) a často i s determinativy. Sem patří klínové písmo, mayské písmo a anatolské (luvijské) hieroglyfy. Egyptské hieroglyfy mají místo slabičných znaků znaky pro souhlásky, a proto se přesněji nazývají logokonsonantické. Někteří lingvisté sem řadí i čínské písmo, protože každý jeho znak odpovídá jedné slabice (morfosylabické písmo).",
+        "Mayské slovo bʼalam „jaguár“ je doloženo jako logogram BʼALAM, jako slabiky bʼa-la-ma i jako kombinace obojího."
+       ],
+       [
+        "Slabičné písmo (sylabické písmo)",
+        "Písmo, v němž znak zapisuje slabiku, obvykle souhlásku se samohláskou nebo samotnou samohlásku; soubor jeho znaků se nazývá sylabář. Znaky pro slabiky se stejnou souhláskou si na rozdíl od abugidy tvarem nepodobají. Na pomezí stojí staroperské klínové písmo: většina jeho znaků zapisuje souhlásku se samohláskou a, ale může stát i za samotnou souhlásku.",
+        "Lineární písmo B: 𐀒𐀜𐀰 ko-no-so = Knóssos. Skupina kn- dostala pomocnou samohlásku a koncové -s se nepsalo; souhláskové skupiny činí slabičným písmům potíže. Slabičné je i kyperské písmo nebo japonské kany."
+       ],
+       [
+        "Abdžad (souhláskové písmo)",
+        "Písmo, jehož základní znaky zapisují jen souhlásky; samohlásky si čtenář doplní ze znalosti jazyka, případně je naznačí pomocná písmena (matres lectionis) nebo nepovinná znaménka. Název navrhl roku 1990 Peter T. Daniels podle prvních písmen starého semitského pořadí v arabštině (alif, bá, džím, dál). Patří sem fénické, aramejské, hebrejské i arabské písmo.",
+        "Fénické 𐤌𐤋𐤊 𐤂𐤁𐤋 mlk gbl na Ahiramově sarkofágu znamená „král Byblu“; jaké samohlásky slova měla, písmo neříká."
+       ],
+       [
+        "Abugida",
+        "Písmo, v němž základní znak zapisuje souhlásku s vlastní (inherentní) samohláskou; jiné samohlásky se vyjadřují soustavnou úpravou tvaru nebo připojeným znaménkem. Patří sem bráhmí a písma z něj odvozená (dévanágarí, tibetské, tamilské, thajské) a etiopské písmo. Název zvolil Peter T. Daniels podle prvních čtyř znaků etiopského písma ve starém semitském pořadí, አቡጊዳ (ʾä-bu-gi-da).",
+        "Bráhmí: 𑀓 ka, 𑀓𑀺 ki, 𑀓𑀼 ku. Etiopské písmo: በ bä, ቡ bu, ቢ bi, ባ ba, ቤ be, ብ bə (nebo b bez samohlásky), ቦ bo."
+       ],
+       [
+        "Hláskové písmo (alfabeta)",
+        "Písmo, v němž souhlásky i samohlásky zapisují samostatná, rovnocenná písmena. První takové písmo vzniklo v 8. století př. n. l., když Řekové převzali fénickou abecedu a písmena pro souhlásky, které řečtina neměla, použili pro samohlásky. Z řecké alfabety pocházejí mimo jiné etruské písmo a přes ně latinka, dále koptské písmo, gótské písmo a cyrilice. V běžné řeči se abecedou nazývá i fénické písmo; v užším odborném smyslu je to abdžad.",
+        "Z fénického ʾalp 𐤀 vzniklo řecké alfa (Α), z he epsilon (Ε), z ʿain omikron (Ο)."
+       ],
+       [
+        "Rysové písmo",
+        "Písmo, jehož tvary znaků soustavně vyjadřují fonetické rysy hlásek, například místo nebo způsob tvoření. Termín zavedl britský lingvista Geoffrey Sampson pro korejské písmo hangul, které je jeho jediným běžně uváděným příkladem.",
+        "Hangul vyhlásil roku 1446 korejský král Sedžong, jde tedy o středověké písmo, uvedené zde jen pro srovnání. Tvary základních souhláskových písmen podle dobového výkladu napodobují polohu mluvidel, přidaná čárka označuje přídech a písmena se skládají do slabičných bloků."
+       ]
+      ]
+     },
+     {
+      "typ": "pojmy",
+      "h": "Znaky",
+      "uvod": "Pojmy pro jednotlivé druhy znaků a pro to, jak spolu znaky v zápisu spolupracují.",
+      "pojmy": [
+       [
+        "Logogram",
+        "Znak, který zapisuje celé slovo nebo morfém. V přepisu klínového, chetitského a mayského písma se logogramy obvykle píší velkými písmeny.",
+        "Sumerský 𒈗 LUGAL „král“; staroperský 𐏋 pro xšāyaθiya „král“, jehož užití nebylo povinné. Logogramy jsou i dnešní číslice nebo znak &: 1 přečte každý ve svém jazyce."
+       ],
+       [
+        "Fonogram",
+        "Znak použitý pro svou zvukovou hodnotu bez ohledu na to, co původně zobrazoval. Může zapisovat hlásku, souhlásku, skupinu souhlásek nebo slabiku.",
+        "Egyptská sova 𓅓 se čte m a vodní hladina 𓈖 n, i když slovo se sovou ani vodou nesouvisí. Egyptské fonogramy zapisují jednu, dvě nebo tři souhlásky."
+       ],
+       [
+        "Sylabogram (slabičný znak)",
+        "Fonogram, který zapisuje slabiku. Tvoří základ slabičných písem a vedle logogramů i písem logosylabických.",
+        "Klínové 𒈠 ma, lineární B 𐀏 ka. Mayské jméno Pakal se píše pa-ka-la; samohláska posledního znaku se nečte."
+       ],
+       [
+        "Determinativ (určovatel, klasifikátor)",
+        "Znak, který se nečte a jen zařazuje slovo do významové skupiny: člověk, bůh, město, dřevo. Pomáhá rozlišit slova psaná stejnými fonogramy a často vyznačuje i začátek nebo konec slova.",
+        "Egyptský sedící muž 𓀀 za slovy pro lidi a znak sídla 𓊖 za jmény míst; v klínovém písmu 𒀭 DINGIR před jménem boha a 𒌷 URU před jménem města: 𒌷𒄩𒀜𒌅𒊭 URU Ḫa-at-tu-ša, „(město) Chattuša“."
+       ],
+       [
+        "Fonetický komplement",
+        "Fonogram připsaný k logogramu jako nápověda ke čtení. Nepřidává žádnou hlásku navíc, jen opakuje část výslovnosti a ukazuje, které z více možných čtení logogramu platí.",
+        "Egyptské 𓄤𓆑𓂋 nfr „dobrý, krásný“: trojsouhláskový znak nfr a za ním znaky f a r. Mayské PAKAL-la: logogram PAKAL „štít“ a slabika la, jejíž souhláska opakuje konec slova."
+       ],
+       [
+        "Heterogram (sumerogram, akkadogram)",
+        "Slovo psané tak, jak se píše v jiném jazyce, ale čtené v jazyce textu. Vzniká, když se s písmem přejímají i ustálené zápisy slov.",
+        "Chetitští písaři psali sumerogram 𒃻 NINDA „chléb“ a četli ho chetitsky; sásánovští písaři psali aramejské 𐭬𐭫𐭪𐭠 MLKA „král“ a četli ho šāh."
+       ],
+       [
+        "Rébusový princip",
+        "Užití znaku pro slovo, které zní stejně nebo podobně jako slovo, jež znak původně zobrazoval. Tak se obrázkové znaky mění ve fonogramy; na tomto kroku stojí zvuková složka klínového, egyptského i čínského písma.",
+        "Sumerský znak šípu (ti) posloužil i pro til „život“. Jméno krále Narmera je na jeho paletě zapsáno znaky sumce (nꜥr) a dláta (mr). Čínský obrázek pšenice 來 se začal psát pro podobně znějící slovo „přijít“."
+       ],
+       [
+        "Akrofonie",
+        "Princip, podle něhož znak nebo písmeno označuje první hlásku slova, které zobrazuje nebo podle něhož se jmenuje.",
+        "V protosinajském písmu znamenala býčí hlava (ʾalp, „býk“) ʾ, domek (bayt) b a vlnovka vody (mayim) m. Akrofonické jsou i attické číslice: Π (pente) = 5, Δ (deka) = 10."
+       ],
+       [
+        "Ligatura",
+        "Spojení dvou nebo více znaků do jednoho grafického celku. V hláskových písmech jde obvykle o písařskou zkratku nebo typografickou úpravu, v písmech odvozených z bráhmí o pravidelný způsob zápisu souhláskových skupin.",
+        "Znak & vznikl spojením latinských písmen e a t (et, „a“). V dévanágarí se k a ṣa spojují v jediný znak क्ष kṣa."
+       ],
+       [
+        "Spřežka (digraf)",
+        "Dvojice (i trojice) písmen, která společně zapisuje jednu hlásku. Na rozdíl od ligatury zůstávají písmena graficky samostatná.",
+        "České ch; ve staročeském pravopisu před zavedením háčků i cz pro č. Latina psala ph, th, ch pro řecké φ, θ, χ."
+       ],
+       [
+        "Viráma",
+        "Znaménko v abugidách odvozených z bráhmí, které ruší vlastní samohlásku souhlásky, takže znak zapisuje samotnou souhlásku. Užívá se hlavně na konci slova; souhláskové skupiny uvnitř slova se obvykle píší ligaturou. Sanskrtské virāma znamená „zastavení“.",
+        "Dévanágarí: क ka → क् k, वाक् vāk „řeč“. Bráhmí: 𑀓 ka → 𑀓𑁆 k."
+       ],
+       [
+        "Mater lectionis (mn. č. matres lectionis)",
+        "Souhláskové písmeno použité v abdžadu k označení samohlásky; latinsky „matka čtení“. V hebrejštině a aramejštině tuto úlohu mají hlavně písmena he, waw a jod, případně alef. Jejich užívání v 1. tisíciletí př. n. l. postupně přibývalo.",
+        "Jméno David se v knihách Samuelových píše דוד, v knihách Letopisů plněji דויד, s jod pro samohlásku i."
+       ],
+       [
+        "Diakritika",
+        "Znaménka připojená k základnímu znaku, která mění nebo upřesňují jeho hodnotu. Ve starověkých písmech se objevují hlavně jako pozdější doplněk, například samohláskové značky hebrejského a syrského písma nebo přízvuky v řečtině.",
+        "Masoreti v 7.–10. století doplnili k hebrejským souhláskám biblického textu tečky a čárky pro samohlásky: דָּוִד (David). Řecké přízvuky připisuje tradice alexandrijskému gramatikovi Aristofanovi Byzantskému (kolem 200 př. n. l.). Český háček a čárka vycházejí z pravopisu popsaného ve spisu De orthographia bohemica z počátku 15. století, připisovaném Janu Husovi."
+       ],
+       [
+        "Číslice a poziční zápis",
+        "Číslice jsou znaky pro čísla. V pozičním zápisu závisí hodnota číslice na jejím místě v čísle, a zápis proto potřebuje znak pro prázdný řád (nulu). Ve starověku vznikl poziční zápis nezávisle nejméně třikrát: v babylonské šedesátkové, mayské dvacítkové a indické desítkové soustavě. Egyptské, řecké, římské i rané číslice bráhmí poziční nebyly: měly zvláštní znaky pro desítky, stovky a vyšší řády.",
+        "Babylonská jednička mohla znamenat 1, 60 i 1/60 a znak pro prázdný řád se objevil až v 1. tisíciletí př. n. l. Mayské 𝋡 nad 𝋭 je 1 × 20 + 13 = 33, nulu značí lastura. Nejstarší bezpečně datovaný znak nuly v Indii je v nápisu z Gválijaru z roku 876."
+       ]
+      ]
+     },
+     {
+      "typ": "rameček",
+      "h": "Písmo není jazyk",
+      "p": [
+       "Tatáž soustava znaků může sloužit mnoha jazykům. Klínovým písmem, vytvořeným pro sumerštinu, psali Akkaďané, Chetité, Elamité, Churrité i Urartejci; fénickou abecedou a písmy jí velmi blízkými féničtina, hebrejština a moábština a v upravené podobě i řečtina. Latinkou se dnes píše přes tři tisíce jazyků.",
+       "Naopak jeden jazyk mívá písem víc. Egyptština se psala hieroglyfy, hieratickým a démotickým písmem a nakonec, jako koptština, abecedou odvozenou z řecké. Perština prošla staroperským klínovým, pahlavským a arabským písmem a v Tádžikistánu se píše cyrilicí. Luvijštinu zapisovalo klínové písmo i anatolské hieroglyfy. Dnes se srbština píše cyrilicí i latinkou a hindština a urdština, v běžné mluvě velmi blízké, dévanágarím a arabským písmem.",
+       "Proto se i rozluštění písma a porozumění jazyku mohou rozcházet: etruské nápisy přečteme, protože jejich písmo vychází z řeckého, ale jazyku rozumíme jen zčásti. A jméno písma není jménem jazyka: hieroglyfy se říká několika různým písmům, egyptskému, anatolskému, krétskému i mayskému."
+      ]
+     },
+     {
+      "typ": "pojmy",
+      "h": "Směr a úprava",
+      "uvod": "Kterým směrem se čte, jak jsou znaky rozložené na ploše a čím se text člení.",
+      "pojmy": [
+       [
+        "Směr psaní",
+        "Pořadí, v němž za sebou následují znaky a řádky. Fénické, aramejské, hebrejské a arabské písmo i z aramejského odvozené kharóšthí se píší zprava doleva; řecká abeceda po archaickém období, latinka, bráhmí a staroperské klínové písmo zleva doprava. Etruskové psali většinou zprava doleva.",
+        "Egyptské hieroglyfy se psaly nejčastěji zprava doleva, ale i zleva doprava a ve sloupcích; směr prozrazují postavy a zvířata, které hledí k začátku řádku."
+       ],
+       [
+        "Bústrofédon",
+        "Střídání směru po řádcích: jeden řádek zleva doprava, další zprava doleva. Název je řecký a znamená „jak se otáčí vůl při orbě“. V obrácených řádcích bývají zrcadlově otočená i písmena.",
+        "Zákoník z Gortyny na Krétě (5. st. př. n. l.), nápis Lapis Niger na římském fóru, některé jihoarabské nápisy. Střídavě se čtou i řádky luvijských hieroglyfů."
+       ],
+       [
+        "Psaní ve sloupcích",
+        "Znaky se kladou pod sebe a sloupce vedle sebe. Čínské písmo se tradičně psalo shora dolů ve sloupcích řazených zprava doleva, patrně pod vlivem úzkých bambusových proužků, na které se psalo.",
+        "Egyptské hieroglyfy stojí často ve sloupcích. Mayské znaky se skládají do čtvercových bloků a bloky se čtou po dvojicích sloupců zleva doprava a shora dolů."
+       ],
+       [
+        "Kartuše",
+        "Protáhlý ovál uzavřený na jednom konci čárkou, kterým Egypťané obtáčeli dvě z královských jmen, trůnní a rodné jméno panovníka. Pro luštitele hieroglyfů byla vodítkem, kde hledat jména.",
+        "Thomas Young ukázal, že kartuše na Rosettské desce obsahují jméno Ptolemaia. Champollion je porovnal s kartušemi Ptolemaia a Kleopatry z obelisku z Philae a získal hodnoty řady znaků."
+       ],
+       [
+        "Scriptio continua",
+        "Psaní bez mezer a jiných oddělovačů mezi slovy (latinsky „souvislé písmo“). Bylo normou klasických řeckých a později i latinských rukopisů, přestože nejstarší řecké a latinské nápisy slova oddělovaly. Mezery mezi slovy se v Evropě prosadily od irských a anglosaských rukopisů 7. a 8. století.",
+        "Starolatinský nápis Duenos je psán zprava doleva bez mezer; ani v Ašókových nápisech nejsou slova důsledně oddělena."
+       ],
+       [
+        "Oddělovač slov",
+        "Znak mezi slovy, který plní úlohu dnešní mezery: svislá čárka, tečka, dvojtečka nebo šikmý klín.",
+        "Staroperský šikmý klín 𐏐; fénická svislá čárka 𐤟 na Ahiramově sarkofágu; tečka nebo dvojtečka v etruských nápisech od 6. st. př. n. l.; svislá čárka v jihoarabském písmu; tečka ve výšce řádku (·) v latinských nápisech."
+       ],
+       [
+        "Interpunkce",
+        "Znaménka, která člení text na věty, verše a oddíly. Starověká písma ji znala jen v zárodcích a neužívala ji soustavně.",
+        "Egyptští písaři psali nadpisy, začátky oddílů a data červeně, podobně jako středověké rukopisy, jejichž červeným nadpisům se říká rubriky (z latinského ruber, „červený“). Soustavu teček v různé výšce řádku pro řeckou prózu připisuje tradice Aristofanovi Byzantskému."
+       ]
+      ]
+     },
+     {
+      "typ": "pojmy",
+      "h": "Obor a prameny",
+      "uvod": "Vědní obory, pracovní postupy a materiály, na nichž se starověké texty dochovaly.",
+      "pojmy": [
+       [
+        "Epigrafika",
+        "Obor, který čte, datuje, vydává a vykládá nápisy na trvanlivém materiálu: kameni, kovu, keramice. Rukopisy na papyru nebo pergamenu zkoumají paleografie a papyrologie.",
+        "Ašókovy edikty na skalách a sloupech, behistunský nápis Dáreia I., zákoník z Gortyny."
+       ],
+       [
+        "Paleografie",
+        "Nauka o starém ručně psaném písmu: o vývoji tvarů písmen, zkratkách a písařských zvyklostech. Umožňuje rukopis přečíst a podle tvaru písma odhadnout, kdy a kde vznikl.",
+        "Etruská lněná kniha (Liber linteus) se podle písma klade do doby kolem roku 250 př. n. l.; radiokarbonové datování ukazuje na starší plátno."
+       ],
+       [
+        "Transliterace × transkripce",
+        "Transliterace převádí text znak po znaku, takže z ní lze původní zápis zrekonstruovat. Transkripce zapisuje, jak se slovo četlo nebo vyslovovalo. Česky se pro obojí říká přepis. Transliterace mají ustálené konvence: velká písmena pro logogramy, pomlčky mezi slabičnými znaky a číselné indexy, které odlišují různé znaky se stejným čtením.",
+        "Staroperské 𐎧𐏁𐎠𐎹𐎰𐎡𐎹 je v transliteraci xa-ša-a-ya-θa-i-ya, v transkripci xšāyaθiya „král“. Sumerské e₂ „dům“ a du₃ „stavět“ mají index, protože stejně znějících znaků je víc. Egyptské nfr čtou egyptologové nefer, ale vložené e je jen dohodnutá výslovnost."
+       ],
+       [
+        "Dvojjazyčný a vícejazyčný nápis (bilingva, trilingva)",
+        "Nápis se stejným nebo obdobným textem ve dvou či více jazycích nebo písmech. Pro luštitele je nejcennější, když je jedna z verzí čitelná.",
+        "Rosettská deska (196 př. n. l.) nese dva jazyky, egyptštinu a řečtinu, ve třech písmech: hieroglyfech, démotice a řecké alfabetě. Behistunský nápis Dáreia I. je trojjazyčný, staroperský, elamský a babylonský. Dvojjazyčné jsou i fénicko-řecké cipy z Malty, luvijsko-fénický nápis z Karatepe a etrusko-fénické destičky z Pyrgi."
+       ],
+       [
+        "Rozluštění",
+        "Zjištění, jak se čtou znaky neznámého písma, a porozumění jazyku, který zapisují. Obojí nemusí přijít najednou: písmo může být čitelné a jazyk neznámý, nebo naopak.",
+        "Lineární písmo B rozluštil roku 1952 Michael Ventris; ukázalo se, že zapisuje řečtinu. Chetitské tabulky se daly přečíst, protože klínové písmo bylo známé, jazyku však porozuměl až Bedřich Hrozný (1915). Lineární písmo A lze přibližně vyslovit, jazyk je ale neznámý. Písmo z údolí Indu zůstává nerozluštěné."
+       ],
+       [
+        "Hliněná tabulka",
+        "Destička z vlhké hlíny, do níž se znaky vtlačovaly seříznutým rákosem (klínové písmo) nebo vyrývaly hrotem (egejská lineární písma). Obvykle se jen sušila; vypalovala se jen někdy, a mnoho tabulek se tak zachovalo díky požárům.",
+        "Tabulky lineárního písma B z Knóssu a Pylu vypálil požár, který paláce zničil. Persepolský pevnostní archiv Dáreia I. obsahuje desetitisíce tabulek a jejich zlomků."
+       ],
+       [
+        "Papyrus",
+        "Psací materiál z dřeně nilské rostliny šáchoru papírodárného: proužky se kladly ve dvou vrstvách křížem přes sebe, lisovaly a sušily a listy se slepovaly do svitků.",
+        "Nejstarší známý svitek, nepopsaný, pochází z hrobky hodnostáře Hemaky z 1. dynastie; nejstarší popsané papyry z přístavu Vádí al-Džarf jsou z doby krále Chufua. Z řeckého papyros pochází slovo papír a řecké biblos, „papyrus, kniha“, souvisí se jménem Byblu."
+       ],
+       [
+        "Pergamen",
+        "Zvířecí kůže (telecí, ovčí, kozí) zbavená chlupů, napnutá a usušená, nikoli vydělaná. Je pevnější než papyrus a dobře se popisuje z obou stran. Jméno má podle Pergamu v Malé Asii; vyprávění, že ho tam vynalezli, když Egypt přestal vyvážet papyrus, se pokládá za legendu, protože kůže se k psaní užívaly už dříve.",
+        "Z pergamenu je většina svitků od Mrtvého moře i Codex Argenteus s gótským překladem Bible."
+       ],
+       [
+        "Ostrakon (mn. č. ostraka)",
+        "Střep keramiky nebo úlomek vápence, na nějž se psalo inkoustem nebo se do něj rylo. Nic nestál, a proto sloužil pro poznámky, účty, dopisy a školní cvičení.",
+        "Egyptští písaři psali na ostraka běžně. V Aténách se na střepy psala jména při hlasování o vypovězení; asi 190 střepů se jménem Themistokla napsalo jen několik rukou."
+       ],
+       [
+        "Svitek × kodex",
+        "Svitek je pás papyru, pergamenu nebo jiného materiálu navinutý na sebe a čtený postupným odvíjením. Kodex tvoří listy složené a sešité ve hřbetu, jako dnešní kniha. Kodex se v Římské říši šířil od 1. století n. l., zvlášť mezi křesťany, a během 4. a 5. století svitek vytlačil.",
+        "Svitky jsou texty od Mrtvého moře i gandhárské buddhistické rukopisy z březové kůry; kodexem je Vergilius Vaticanus (asi 400 n. l.). Mayské kodexy jsou ve skutečnosti skládané jako harmonika, název kodex se však pro ně vžil."
+       ],
+       [
+        "Palimpsest",
+        "Rukopis, z něhož byl původní text seškrábán nebo smyt, aby se na drahý pergamen dalo psát znovu. Starší text často prosvítá a dá se přečíst při ultrafialovém světle nebo snímkováním v různých vlnových délkách.",
+        "Archimédův palimpsest: opis Archimédových spisů z 10. století byl ve 13. století přepsán na modlitební knihu. Jako jediný zachoval spis známý jako Metoda; Archiméda v něm roku 1906 poznal dánský filolog Johan Ludvig Heiberg."
+       ],
+       [
+        "Abecedarium",
+        "Nápis nebo cvičný text, který vypisuje písmena abecedy v ustáleném pořadí. Dokládá, jak staré je pořadí písmen.",
+        "Cvičné tabulky z Ugaritu (14.–13. st. př. n. l.) řadí klínová písmena 𐎀𐎁𐎂𐎃𐎄 (ʾa, b, g, ḫ, d) téměř stejně jako pozdější fénická abeceda."
+       ]
+      ]
+     },
+     {
+      "typ": "zdroje",
+      "h": "Zdroje a další četba",
+      "p": [
+       "Peter T. Daniels, William Bright (ed.): The World’s Writing Systems. Oxford University Press 1996.",
+       "Florian Coulmas: Writing Systems. An Introduction to Their Linguistic Analysis. Cambridge University Press 2003.",
+       "Henry Rogers: Writing Systems. A Linguistic Approach. Blackwell 2005.",
+       "Ignace J. Gelb: A Study of Writing. University of Chicago Press 1952, 2. vyd. 1963.",
+       "Maurice Pope: The Story of Decipherment. From Egyptian Hieroglyphs to Maya Script. Thames & Hudson, 2. vyd. 1999."
+      ]
+     }
+    ]
+   },
+   "en": {
+    "nazev": "Glossary of writing",
+    "stitek": "Languages of antiquity · overview",
+    "podtitul": "Types of script, signs, direction of writing and the disciplines that study them",
+    "perex": "Abjad, abugida, determinative, boustrophedon, palimpsest: the pages on ancient scripts cannot do without technical terms. This glossary explains them with examples, mostly taken from the inscriptions and manuscripts described on the pages about individual civilizations.",
+    "fakta": [
+     [
+      "Earliest scripts",
+      "Mesopotamia and Egypt, late 4th millennium BCE"
+     ],
+     [
+      "Independent inventions of writing",
+      "at least Mesopotamia, China and Mesoamerica; Egypt disputed"
+     ],
+     [
+      "Kinds of sign",
+      "signs for words, signs for sound (syllable, consonant, single sound) and silent auxiliary signs"
+     ],
+     [
+      "First alphabet with vowels",
+      "the Greek alphabet, 8th c. BCE"
+     ]
+    ],
+    "oddily": [
+     {
+      "typ": "text",
+      "h": "How writing records language",
+      "p": [
+       "All scripts rest on a handful of principles. A sign may stand for a whole word, it may record a sound (a syllable, a consonant or a single phoneme), or it may not be read at all and merely help the reader interpret the signs around it. Ancient scripts mostly combined these principles, and the type of a script depends on which of them prevails.",
+       "The classification used here follows the typology of the American linguist Peter T. Daniels, the one most widely adopted in linguistics. It is not the only one: other scholars, Florian Coulmas for instance, draw some categories differently, and the boundaries between types are fuzzy. The terms are grouped by theme, not alphabetically."
+      ]
+     },
+     {
+      "typ": "pojmy",
+      "h": "Types of writing systems",
+      "uvod": "Scripts are classified by the unit of language that their basic sign records.",
+      "pojmy": [
+       [
+        "Logographic script (logography)",
+        "A script whose signs (logograms) record words, or more precisely morphemes, the smallest units with a meaning of their own. No purely logographic script exists: without signs for sound, names and grammatical forms could not be written, so every script of this type has some phonetic component.",
+        "Chinese is usually described as logographic: 人 rén “person”, 木 mù “tree”. Most Chinese characters, however, are phono-semantic compounds with a meaning part and a sound part."
+       ],
+       [
+        "Logosyllabic script (logosyllabary)",
+        "A script combining logograms with signs for syllables (syllabograms), and often with determinatives. Cuneiform, Maya script and Anatolian (Luwian) hieroglyphs belong here. Egyptian hieroglyphs have signs for consonants instead of syllables and are therefore more precisely called logoconsonantal. Some linguists include Chinese here too, since each character corresponds to one syllable (a morphosyllabic script).",
+        "The Maya word bʼalam “jaguar” is attested as the logogram BʼALAM, as the syllables bʼa-la-ma, and as a combination of both."
+       ],
+       [
+        "Syllabic script (syllabary)",
+        "A script in which a sign records a syllable, usually a consonant plus vowel or a vowel alone; its set of signs is called a syllabary. Unlike in an abugida, signs for syllables with the same consonant do not resemble each other. Old Persian cuneiform stands on the border: most of its signs record a consonant with the vowel a, but can also stand for the bare consonant.",
+        "Linear B: 𐀒𐀜𐀰 ko-no-so = Knossos. The cluster kn- received a helping vowel and final -s was not written; consonant clusters are awkward for syllabic scripts. The Cypriot syllabary and Japanese kana are syllabic as well."
+       ],
+       [
+        "Abjad (consonantal script)",
+        "A script whose basic signs record only consonants; the reader supplies the vowels from knowledge of the language, or they are hinted at by helper letters (matres lectionis) or optional marks. The name was proposed in 1990 by Peter T. Daniels after the first letters of the old Semitic order in Arabic (alif, bāʾ, jīm, dāl). Phoenician, Aramaic, Hebrew and Arabic scripts are abjads.",
+        "Phoenician 𐤌𐤋𐤊 𐤂𐤁𐤋 mlk gbl on the sarcophagus of Ahiram means “king of Byblos”; which vowels the words had, the script does not say."
+       ],
+       [
+        "Abugida (alphasyllabary)",
+        "A script in which a basic sign records a consonant with an inherent vowel; other vowels are expressed by a systematic change of shape or an attached mark. Brahmi and the scripts derived from it (Devanagari, Tibetan, Tamil, Thai) belong here, as does the Ethiopic script. Peter T. Daniels chose the name after the first four signs of the Ethiopic script in the old Semitic order, አቡጊዳ (ʾä-bu-gi-da).",
+        "Brahmi: 𑀓 ka, 𑀓𑀺 ki, 𑀓𑀼 ku. Ethiopic: በ bä, ቡ bu, ቢ bi, ባ ba, ቤ be, ብ bə (or b with no vowel), ቦ bo."
+       ],
+       [
+        "Alphabet",
+        "A script in which consonants and vowels alike are written with separate letters of equal standing. The first such script arose in the 8th century BCE when the Greeks adopted the Phoenician alphabet and used letters for consonants that Greek lacked to write vowels. From the Greek alphabet descend, among others, the Etruscan script and through it the Latin alphabet, as well as the Coptic and Gothic scripts and Cyrillic. In everyday usage the Phoenician script is called an alphabet too; in the narrower technical sense it is an abjad.",
+        "Phoenician ʾalp 𐤀 became Greek alpha (Α), he became epsilon (Ε), ʿain omicron (Ο)."
+       ],
+       [
+        "Featural script",
+        "A script whose letter shapes systematically express phonetic features of sounds, such as place or manner of articulation. The term was introduced by the British linguist Geoffrey Sampson for the Korean script Hangul, its only commonly cited example.",
+        "Hangul was promulgated in 1446 by King Sejong of Korea, so it is a medieval script, included here only for comparison. According to the explanation of the time, the shapes of the basic consonant letters imitate the position of the speech organs; an added stroke marks aspiration, and letters are grouped into syllable blocks."
+       ]
+      ]
+     },
+     {
+      "typ": "pojmy",
+      "h": "Signs",
+      "uvod": "Terms for the different kinds of sign and for the ways signs work together in writing.",
+      "pojmy": [
+       [
+        "Logogram",
+        "A sign that records a whole word or morpheme. In transliterations of cuneiform, Hittite and Maya writing, logograms are usually written in capitals.",
+        "Sumerian 𒈗 LUGAL “king”; Old Persian 𐏋 for xšāyaθiya “king”, whose use was optional. Today’s digits and the sign & are logograms too: everyone reads 1 in their own language."
+       ],
+       [
+        "Phonogram",
+        "A sign used for its sound value regardless of what it originally depicted. It may record a single sound, a consonant, a group of consonants or a syllable.",
+        "The Egyptian owl 𓅓 reads m and the water ripple 𓈖 n, even when the word has nothing to do with owls or water. Egyptian phonograms record one, two or three consonants."
+       ],
+       [
+        "Syllabogram",
+        "A phonogram that records a syllable. Syllabograms are the basis of syllabic scripts and, alongside logograms, of logosyllabic ones.",
+        "Cuneiform 𒈠 ma, Linear B 𐀏 ka. The Maya name Pakal is written pa-ka-la; the vowel of the last sign is not pronounced."
+       ],
+       [
+        "Determinative (classifier)",
+        "A sign that is not read and only assigns a word to a semantic class: person, god, city, wood. It helps to distinguish words spelled with the same phonograms and often marks the beginning or end of a word.",
+        "The Egyptian seated man 𓀀 after words for people and the town sign 𓊖 after place names; in cuneiform 𒀭 DINGIR before a god’s name and 𒌷 URU before a city’s: 𒌷𒄩𒀜𒌅𒊭 URU Ḫa-at-tu-ša, “(the city of) Hattusa”."
+       ],
+       [
+        "Phonetic complement",
+        "A phonogram added to a logogram as a reading aid. It adds no extra sound, only repeats part of the pronunciation and shows which of several possible readings of the logogram is meant.",
+        "Egyptian 𓄤𓆑𓂋 nfr “good, beautiful”: the triconsonantal sign nfr followed by the signs f and r. Maya PAKAL-la: the logogram PAKAL “shield” and the syllable la, whose consonant repeats the end of the word."
+       ],
+       [
+        "Heterogram (Sumerogram, Akkadogram)",
+        "A word written as it is spelled in another language but read in the language of the text. Heterograms arise when fixed spellings of words are borrowed along with a script.",
+        "Hittite scribes wrote the Sumerogram 𒃻 NINDA “bread” and read it in Hittite; Sasanian scribes wrote Aramaic 𐭬𐭫𐭪𐭠 MLKA “king” and read it šāh."
+       ],
+       [
+        "Rebus principle",
+        "Using a sign for a word that sounds the same as, or similar to, the word the sign originally depicted. This is how pictorial signs turn into phonograms; the phonetic component of cuneiform, Egyptian and Chinese writing rests on this step.",
+        "The Sumerian sign for arrow (ti) also served for til “life”. The name of King Narmer is written on his palette with the signs for catfish (nꜥr) and chisel (mr). The Chinese picture of wheat 來 came to be used for the similar-sounding word “come”."
+       ],
+       [
+        "Acrophony",
+        "The principle by which a sign or letter stands for the first sound of the word it depicts or after which it is named.",
+        "In the Proto-Sinaitic script an ox head (ʾalp, “ox”) stood for ʾ, a house (bayt) for b and a water line (mayim) for m. Attic numerals are acrophonic too: Π (pente) = 5, Δ (deka) = 10."
+       ],
+       [
+        "Ligature",
+        "Two or more signs joined into a single graphic unit. In alphabets a ligature is usually a scribal abbreviation or a typographic device; in the scripts derived from Brahmi it is the regular way of writing consonant clusters.",
+        "The sign & arose from a ligature of the Latin letters e and t (et, “and”). In Devanagari, k and ṣa join into the single sign क्ष kṣa."
+       ],
+       [
+        "Digraph",
+        "A pair (or trio) of letters that together write a single sound. Unlike in a ligature, the letters remain graphically separate.",
+        "Czech ch; in Old Czech spelling, before diacritics were introduced, also cz for č. Latin wrote ph, th, ch for Greek φ, θ, χ."
+       ],
+       [
+        "Virama",
+        "A mark in the abugidas derived from Brahmi that cancels a consonant’s inherent vowel, so that the sign records the bare consonant. It is used mainly at the end of a word; consonant clusters inside a word are normally written as ligatures. Sanskrit virāma means “stop”.",
+        "Devanagari: क ka → क् k, वाक् vāk “speech”. Brahmi: 𑀓 ka → 𑀓𑁆 k."
+       ],
+       [
+        "Mater lectionis (pl. matres lectionis)",
+        "A consonant letter used in an abjad to indicate a vowel; Latin for “mother of reading”. In Hebrew and Aramaic the letters he, waw and yod, and sometimes aleph, play this role. Their use gradually increased during the 1st millennium BCE.",
+        "The name David is spelled דוד in the books of Samuel and more fully דויד in Chronicles, with yod for the vowel i."
+       ],
+       [
+        "Diacritic",
+        "A mark attached to a basic sign that changes or specifies its value. In ancient scripts diacritics appear mainly as later additions, such as the vowel points of Hebrew and Syriac or the accents of Greek.",
+        "In the 7th–10th centuries the Masoretes added dots and dashes for vowels to the consonants of the Hebrew biblical text: דָּוִד (David). Tradition attributes the Greek accents to the Alexandrian grammarian Aristophanes of Byzantium (c. 200 BCE). The Czech háček and acute accent go back to the spelling described in the treatise De orthographia bohemica of the early 15th century, attributed to Jan Hus."
+       ],
+       [
+        "Numerals and positional notation",
+        "Numerals are signs for numbers. In positional notation a digit’s value depends on its place in the number, so the notation needs a sign for an empty place (zero). In antiquity positional notation arose independently at least three times: in the Babylonian sexagesimal, the Maya vigesimal and the Indian decimal system. Egyptian, Greek, Roman and early Brahmi numerals were not positional: they had separate signs for tens, hundreds and higher orders.",
+        "A Babylonian one could mean 1, 60 or 1/60, and a sign for an empty place appeared only in the 1st millennium BCE. The Maya 𝋡 above 𝋭 is 1 × 20 + 13 = 33, with a shell for zero. The oldest securely dated zero sign in India itself is in an inscription from Gwalior of 876."
+       ]
+      ]
+     },
+     {
+      "typ": "rameček",
+      "h": "A script is not a language",
+      "p": [
+       "The same set of signs can serve many languages. Cuneiform, created for Sumerian, was used by Akkadians, Hittites, Elamites, Hurrians and Urartians; the Phoenician alphabet and scripts very close to it by Phoenician, Hebrew and Moabite and, in adapted form, by Greek. Today more than three thousand languages are written in the Latin alphabet.",
+       "Conversely, one language often has several scripts. Egyptian was written in hieroglyphs, hieratic and demotic and finally, as Coptic, in an alphabet derived from Greek. Persian passed through Old Persian cuneiform, Pahlavi and Arabic script and is written in Cyrillic in Tajikistan. Luwian was written both in cuneiform and in Anatolian hieroglyphs. Today Serbian is written in Cyrillic and Latin alike, and Hindi and Urdu, very close in everyday speech, in Devanagari and Arabic script.",
+       "This is also why deciphering a script and understanding its language can part ways: we can read Etruscan inscriptions because their script comes from the Greek alphabet, but understand the language only in part. And the name of a script is not the name of a language: “hieroglyphs” is used for several different scripts – Egyptian, Anatolian, Cretan and Maya."
+      ]
+     },
+     {
+      "typ": "pojmy",
+      "h": "Direction and layout",
+      "uvod": "Which way a text is read, how signs are arranged on the surface and how the text is divided.",
+      "pojmy": [
+       [
+        "Direction of writing",
+        "The order in which signs and lines follow each other. Phoenician, Aramaic, Hebrew and Arabic, and Kharosthi, derived from Aramaic, are written right to left; the Greek alphabet after the archaic period, the Latin alphabet, Brahmi and Old Persian cuneiform left to right. The Etruscans mostly wrote right to left.",
+        "Egyptian hieroglyphs were written most often right to left, but also left to right and in columns; the direction is revealed by human and animal figures, which face the beginning of the line."
+       ],
+       [
+        "Boustrophedon",
+        "Alternating direction line by line: one line left to right, the next right to left. The Greek name means “as the ox turns in ploughing”. In the reversed lines the letters themselves are often mirrored.",
+        "The law code of Gortyn in Crete (5th c. BCE), the Lapis Niger inscription in the Roman Forum, some South Arabian inscriptions. The lines of Luwian hieroglyphic inscriptions also alternate."
+       ],
+       [
+        "Writing in columns",
+        "Signs are placed one below another and the columns side by side. Chinese was traditionally written top to bottom in columns ordered right to left, probably under the influence of the narrow bamboo strips it was written on.",
+        "Egyptian hieroglyphs often stand in columns. Maya signs are grouped into square blocks, and the blocks are read in pairs of columns, left to right and top to bottom."
+       ],
+       [
+        "Cartouche",
+        "An elongated oval closed by a bar at one end, with which the Egyptians enclosed two of the royal names, the ruler’s throne name and birth name. For decipherers of the hieroglyphs it showed where to look for names.",
+        "Thomas Young showed that the cartouches on the Rosetta Stone contain the name of Ptolemy. Champollion compared them with the cartouches of Ptolemy and Cleopatra on the obelisk from Philae and obtained the values of a number of signs."
+       ],
+       [
+        "Scriptio continua",
+        "Writing without spaces or other dividers between words (Latin for “continuous script”). It was the norm in classical Greek and later also in Latin manuscripts, although the earliest Greek and Latin inscriptions did divide words. Spaces between words spread in Europe from Irish and Anglo-Saxon manuscripts of the 7th and 8th centuries.",
+        "The Old Latin Duenos inscription is written right to left without spaces; Ashoka’s inscriptions do not consistently separate words either."
+       ],
+       [
+        "Word divider",
+        "A sign between words that does the job of today’s space: a vertical stroke, a dot, a colon or an oblique wedge.",
+        "The Old Persian oblique wedge 𐏐; the Phoenician vertical stroke 𐤟 on the sarcophagus of Ahiram; a dot or colon in Etruscan inscriptions from the 6th c. BCE; a vertical stroke in the South Arabian script; a raised dot (·), the interpunct, in Latin inscriptions."
+       ],
+       [
+        "Punctuation",
+        "Marks that divide a text into sentences, verses and sections. Ancient scripts knew punctuation only in rudimentary form and did not use it consistently.",
+        "Egyptian scribes wrote headings, the beginnings of sections and dates in red, much like medieval manuscripts, whose red headings are called rubrics (from Latin ruber, “red”). Tradition attributes a system of dots at different heights for Greek prose to Aristophanes of Byzantium."
+       ]
+      ]
+     },
+     {
+      "typ": "pojmy",
+      "h": "Field and sources",
+      "uvod": "Disciplines, working methods and the materials on which ancient texts have survived.",
+      "pojmy": [
+       [
+        "Epigraphy",
+        "The discipline that reads, dates, edits and interprets inscriptions on durable materials: stone, metal, pottery. Manuscripts on papyrus or parchment are studied by palaeography and papyrology.",
+        "Ashoka’s edicts on rocks and pillars, the Behistun inscription of Darius I, the law code of Gortyn."
+       ],
+       [
+        "Palaeography",
+        "The study of old handwriting: the development of letter forms, abbreviations and scribal habits. It makes it possible to read a manuscript and to estimate from its script when and where it was written.",
+        "The Etruscan linen book (Liber linteus) is dated by its script to around 250 BCE; radiocarbon dating points to older linen."
+       ],
+       [
+        "Transliteration vs transcription",
+        "Transliteration renders a text sign by sign, so that the original spelling can be reconstructed from it. Transcription records how a word was read or pronounced. Transliterations follow fixed conventions: capitals for logograms, hyphens between syllabic signs, and index numbers distinguishing different signs with the same reading.",
+        "Old Persian 𐎧𐏁𐎠𐎹𐎰𐎡𐎹 is transliterated xa-ša-a-ya-θa-i-ya and transcribed xšāyaθiya “king”. Sumerian e₂ “house” and du₃ “build” carry an index because several signs have the same sound. Egyptologists read Egyptian nfr as nefer, but the inserted e is only a conventional pronunciation."
+       ],
+       [
+        "Bilingual and multilingual inscription (bilingual, trilingual)",
+        "An inscription with the same or a similar text in two or more languages or scripts. It is most valuable to decipherers when one of the versions can be read.",
+        "The Rosetta Stone (196 BCE) carries two languages, Egyptian and Greek, in three scripts: hieroglyphs, demotic and the Greek alphabet. The Behistun inscription of Darius I is trilingual: Old Persian, Elamite and Babylonian. The Phoenician–Greek cippi from Malta, the Luwian–Phoenician inscription of Karatepe and the Etruscan–Phoenician tablets of Pyrgi are bilingual too."
+       ],
+       [
+        "Decipherment",
+        "Establishing how the signs of an unknown script are read, and understanding the language they record. The two need not come together: a script may be readable while its language is unknown, or the other way round.",
+        "Linear B was deciphered in 1952 by Michael Ventris; it turned out to record Greek. Hittite tablets could be read because cuneiform was known, but the language was understood only by Bedřich Hrozný (1915). Linear A can be roughly sounded out, but its language is unknown. The Indus script remains undeciphered."
+       ],
+       [
+        "Clay tablet",
+        "A tablet of moist clay into which signs were pressed with a cut reed (cuneiform) or incised with a point (the Aegean linear scripts). Tablets were usually only dried and only sometimes fired, so many have survived thanks to fires.",
+        "The Linear B tablets from Knossos and Pylos were baked by the fires that destroyed the palaces. The Persepolis Fortification Archive of Darius I contains tens of thousands of tablets and fragments."
+       ],
+       [
+        "Papyrus",
+        "A writing material made from the pith of the Nile papyrus sedge: strips were laid in two layers crosswise, pressed and dried, and the sheets were glued into rolls.",
+        "The oldest known roll, uninscribed, comes from the tomb of the official Hemaka of the 1st Dynasty; the oldest inscribed papyri, from the harbour of Wadi al-Jarf, date from the reign of King Khufu. The word paper comes from Greek papyros, and Greek biblos, “papyrus, book”, is connected with the name of Byblos."
+       ],
+       [
+        "Parchment",
+        "Animal skin (calf, sheep, goat) cleaned of hair, stretched and dried, not tanned. It is tougher than papyrus and takes writing well on both sides. It is named after Pergamon in Asia Minor; the story that it was invented there when Egypt stopped exporting papyrus is regarded as a legend, since skins had been used for writing earlier.",
+        "Most of the Dead Sea Scrolls are on parchment, as is the Codex Argenteus with the Gothic translation of the Bible."
+       ],
+       [
+        "Ostracon (pl. ostraca)",
+        "A potsherd or limestone flake written on in ink or scratched. It cost nothing, and so served for notes, accounts, letters and school exercises.",
+        "Egyptian scribes used ostraca routinely. In Athens names were written on sherds in votes on banishment; some 190 sherds bearing the name of Themistocles were written by only a few hands."
+       ],
+       [
+        "Scroll vs codex",
+        "A scroll is a strip of papyrus, parchment or another material rolled up and read by gradually unrolling it. A codex consists of folded sheets sewn together at the spine, like a modern book. The codex spread in the Roman Empire from the 1st century CE, especially among Christians, and during the 4th and 5th centuries displaced the scroll.",
+        "The Dead Sea Scrolls and the Gandharan Buddhist birch-bark manuscripts are scrolls; the Vergilius Vaticanus (c. 400 CE) is a codex. The Maya codices are in fact folded like a screen, but the name codex has stuck."
+       ],
+       [
+        "Palimpsest",
+        "A manuscript whose original text was scraped or washed off so that the costly parchment could be written on again. The older text often shows through and can be read under ultraviolet light or by imaging at different wavelengths.",
+        "The Archimedes Palimpsest: a 10th-century copy of works by Archimedes was overwritten in the 13th century as a prayer book. It alone preserves the treatise known as the Method; the Danish philologist Johan Ludvig Heiberg recognized Archimedes in it in 1906."
+       ],
+       [
+        "Abecedary",
+        "An inscription or practice text listing the letters of an alphabet in a fixed order. Abecedaries show how old the order of letters is.",
+        "Practice tablets from Ugarit (14th–13th c. BCE) list the cuneiform letters 𐎀𐎁𐎂𐎃𐎄 (ʾa, b, g, ḫ, d) in almost the same order as the later Phoenician alphabet."
+       ]
+      ]
+     },
+     {
+      "typ": "zdroje",
+      "h": "Sources and further reading",
+      "p": [
+       "Peter T. Daniels, William Bright (eds.): The World’s Writing Systems. Oxford University Press 1996.",
+       "Florian Coulmas: Writing Systems. An Introduction to Their Linguistic Analysis. Cambridge University Press 2003.",
+       "Henry Rogers: Writing Systems. A Linguistic Approach. Blackwell 2005.",
+       "Ignace J. Gelb: A Study of Writing. University of Chicago Press 1952, 2nd ed. 1963.",
+       "Maurice Pope: The Story of Decipherment. From Egyptian Hieroglyphs to Maya Script. Thames & Hudson, 2nd ed. 1999."
+      ]
+     }
+    ]
+   }
+  },
+  {
    "id": "mezopotamie",
    "adresa": {
     "cs": "sumer-a-akkad",
@@ -10349,6 +12379,1414 @@
        "József Herman: Vulgar Latin. Trans. Roger Wright. Pennsylvania State University Press, 2000.",
        "Arthur E. Gordon: Illustrated Introduction to Latin Epigraphy. University of California Press, 1983.",
        "Alan K. Bowman: Life and Letters on the Roman Frontier: Vindolanda and its People. British Museum Press, 1994.",
+       "Glottolog 5 (languages and their classification)."
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "germani",
+   "adresa": {
+    "cs": "germani",
+    "en": "germanic-peoples"
+   },
+   "krajina": "runy",
+   "hledat": "germani germanske jazyky germanic peoples germanic languages runy runes runa futhark futhork gotstina gotove gothic goths wulfila ulfilas codex argenteus stribrna bible silver bible gallehus kylver vimose tune rok jelling negau pietroasele franks casket markomani marcomanni marobud maroboduus lany breclav stara norstina old norse stara anglictina old english vikingove vikings",
+   "tecky": [
+    "goth1244",
+    "oldn1244",
+    "olde1238",
+    "oldh1241",
+    "icel1247"
+   ],
+   "pisma": [
+    "Noto Sans Runic",
+    "Noto Sans Gothic",
+    "Noto Sans Old Italic"
+   ],
+   "fotky": {
+    "kylver": {
+     "soubor": "kylver.jpg",
+     "sirka": 1200,
+     "vyska": 960,
+     "autor": "Helena Bonnevier",
+     "licence": "CC BY-SA 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Kylverstenen_-_Historiska_museet_-_DIG_61030.jpg",
+     "cs": "Kámen z Kylveru (Gotland, asi 400) s nejstarším úplným výčtem 24 run staršího futharku. Za řadou run stojí znak podobný stromku a o kus dál slovo sueus neznámého významu. Švédské historické muzeum, Stockholm.",
+     "en": "The Kylver Stone (Gotland, c. 400), bearing the earliest complete listing of the 24 runes of the Elder Futhark. The row ends in a tree-like sign, and a little further on stands the word sueus, whose meaning is unknown. Swedish History Museum, Stockholm."
+    },
+    "gallehus": {
+     "soubor": "gallehus.jpg",
+     "sirka": 1100,
+     "vyska": 1100,
+     "autor": "Nationalmuseet",
+     "licence": "CC BY-SA 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Guldhornene_DO-10765_original_cropped.jpg",
+     "cs": "Kopie zlatých rohů z Gallehusu (jižní Jutsko, počátek 5. st.), zhotovené roku 1980 podle kreseb ze 17. a 18. století. Originály byly roku 1802 ukradeny a roztaveny. Runový nápis běží kolem ústí kratšího rohu (nahoře). Dánské národní muzeum, Kodaň.",
+     "en": "Replicas of the Golden Horns of Gallehus (southern Jutland, early 5th century), made in 1980 from 17th- and 18th-century drawings. The originals were stolen and melted down in 1802. The runic inscription runs round the mouth of the shorter horn (top). National Museum of Denmark, Copenhagen."
+    },
+    "vimose": {
+     "soubor": "vimose.jpg",
+     "sirka": 1200,
+     "vyska": 1059,
+     "autor": "Nationalmuseet, Roberto Fortuna, Kira Ursem",
+     "licence": "CC BY-SA 3.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Kam-med-runer-fra-Vimose_DO-4148_2000_(cropped).jpg",
+     "cs": "Hřeben z parohu z bažiny Vimose na ostrově Fyn (Dánsko), asi 150–200, s runovým nápisem harja, nejspíš mužským jménem. Patří k nejstarším jistě datovaným runovým nápisům. Dánské národní muzeum.",
+     "en": "An antler comb from the Vimose bog on the island of Funen (Denmark), c. 150–200, inscribed in runes harja, most likely a man's name. It is among the oldest securely dated runic inscriptions. National Museum of Denmark."
+    },
+    "vimose2": {
+     "soubor": "vimose2.jpg",
+     "sirka": 1200,
+     "vyska": 605,
+     "autor": "John Lee",
+     "licence": "CC BY 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:DO-1846.jpg",
+     "cs": "Zbraně a osobní výbava z Vimose na Fynu. V bažině se v době římské opakovaně ukládaly obětované zbraně; odtud pochází i hřeben s runami. Dánské národní muzeum.",
+     "en": "Weapons and personal equipment from Vimose on Funen. Weapons were deposited in the bog as offerings again and again during the Roman period; the comb with runes comes from the same site. National Museum of Denmark."
+    },
+    "tune": {
+     "soubor": "tune.jpg",
+     "sirka": 825,
+     "vyska": 1100,
+     "autor": "Skadinaujo",
+     "licence": "CC BY-SA 2.5",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Tune_stone_III.JPG",
+     "cs": "Runový kámen z Tune (Østfold, Norsko), asi 400, se svislými řádky run staršího futharku. Muzeum kulturních dějin, Oslo.",
+     "en": "The Tune runestone (Østfold, Norway), c. 400, with vertical lines of Elder Futhark runes. Museum of Cultural History, Oslo."
+    },
+    "rok": {
+     "soubor": "rok.jpg",
+     "sirka": 762,
+     "vyska": 1100,
+     "autor": "Nicklas Sjölund Larsson",
+     "licence": "CC BY-SA 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:The_R%C3%B6k_Runestone.jpg",
+     "cs": "Runový kámen z Röku (Östergötland, Švédsko), počátek 9. století. Nese nejdelší známý runový nápis v kameni, asi 760 znaků.",
+     "en": "The Rök runestone (Östergötland, Sweden), early 9th century. It carries the longest known runic inscription in stone, some 760 characters."
+    },
+    "jelling": {
+     "soubor": "jelling.jpg",
+     "sirka": 1200,
+     "vyska": 797,
+     "autor": "Ajepbah",
+     "licence": "CC BY-SA 3.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Jelling_rune_stones.2.ajb.jpg",
+     "cs": "Runové kameny v Jellingu (Dánsko) v ochranných skleněných schránkách: vlevo velký kámen krále Haralda Modrozuba, vpravo menší kámen jeho otce Gorma, oba z 10. století. Od roku 1994 jsou na seznamu světového dědictví UNESCO.",
+     "en": "The Jelling stones (Denmark) in their protective glass cases: on the left the large stone of King Harald Bluetooth, on the right the smaller stone of his father Gorm, both from the 10th century. They have been on the UNESCO World Heritage List since 1994."
+    },
+    "kodex": {
+     "soubor": "kodex.jpg",
+     "sirka": 724,
+     "vyska": 920,
+     "autor": "",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Codex_Argenteus_fol_97.jpg",
+     "cs": "List 97 Stříbrné bible (Codex argenteus), 6. století: gótský text evangelií psaný stříbrným inkoustem na purpurově barveném pergamenu, dole oblouky se zkratkami jmen evangelistů, na okraji pozdější latinská poznámka. Univerzitní knihovna v Uppsale.",
+     "en": "Folio 97 of the Silver Bible (Codex argenteus), 6th century: the Gothic text of the Gospels in silver ink on purple-dyed parchment, with arches enclosing abbreviated names of the Evangelists at the foot of the page and a later Latin note in the margin. Uppsala University Library."
+    },
+    "negau": {
+     "soubor": "negau.jpg",
+     "sirka": 962,
+     "vyska": 1100,
+     "autor": "Peter1936F",
+     "licence": "CC BY-SA 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Helm_von_Negau;_KHM,_Wien.jpg",
+     "cs": "Bronzová helma Negau B, jedna z 26 helem etruského typu nalezených roku 1812 v Ženjaku u Negau (dnes Negova ve Slovinsku), asi 450–350 př. n. l. Uměleckohistorické muzeum, Vídeň.",
+     "en": "The bronze helmet Negau B, one of 26 Etruscan-type helmets found in 1812 at Ženjak near Negau (now Negova, Slovenia), c. 450–350 BCE. Kunsthistorisches Museum, Vienna."
+    },
+    "negau2": {
+     "soubor": "negau2.jpg",
+     "sirka": 1200,
+     "vyska": 453,
+     "autor": "Peter1936F",
+     "licence": "CC BY-SA 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Helm_von_Negau;_KHM,_Wien_Inschrift.jpg",
+     "cs": "Nápis vyrytý na okraji helmy Negau B v severoetruské abecedě, čtený zprava doleva. Téměř všichni badatelé v něm čtou germánské jméno Harigast. Uměleckohistorické muzeum, Vídeň.",
+     "en": "The inscription scratched on the brim of helmet Negau B in a North Etruscan alphabet, read from right to left. Almost all scholars read in it the Germanic name Harigast. Kunsthistorisches Museum, Vienna."
+    },
+    "franks": {
+     "soubor": "franks.jpg",
+     "sirka": 899,
+     "vyska": 517,
+     "autor": "Wilhelm Viëtor",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Franks_Casket_-_Front_side.jpg",
+     "cs": "Přední stěna Franksovy skříňky z velrybí kosti (Northumbrie, 8. st.): vlevo kovář Weland z germánské pověsti, vpravo klanění tří králů. Kolem obrazů běží nápis anglosaskými runami ve staré angličtině. Britské muzeum, Londýn; starší fotografie Wilhelma Viëtora.",
+     "en": "The front panel of the whalebone Franks Casket (Northumbria, 8th century): on the left Weland the Smith from Germanic legend, on the right the Adoration of the Magi. Round the scenes runs an Old English inscription in Anglo-Saxon runes. British Museum, London; an early photograph by Wilhelm Viëtor."
+    },
+    "pietroasa": {
+     "soubor": "pietroasa.jpg",
+     "sirka": 856,
+     "vyska": 490,
+     "autor": "Asybaris01",
+     "licence": "CC BY-SA 3.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Tezaurul_de_la_Pietroasa_-_Colanul_cu_inscriptie_runica.jpg",
+     "cs": "Zlatý nákrčník s runovým nápisem z pokladu z Pietroasele (Rumunsko), asi 250–400. Při krádeži v 19. století byl rozlomen na dva kusy a část nápisu se poškodila.",
+     "en": "The gold neck-ring with a runic inscription from the Pietroasele treasure (Romania), c. 250–400. It was broken in two when it was stolen in the 19th century, and part of the inscription was damaged."
+    },
+    "wulfila": {
+     "soubor": "wulfila.jpg",
+     "sirka": 749,
+     "vyska": 853,
+     "autor": "Wilhelm Lindenschmit ml.",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Wulfila_translating_the_Bible,_illustration_1879_-_Wulfila_%C3%BCbersetzt_die_Bibel,_Illustration_von_1879.jpg",
+     "cs": "Wulfila překládá bibli: představa ilustrátora Wilhelma Lindenschmita ml. z roku 1879. Jak Wulfila skutečně vypadal, nevíme.",
+     "en": "Wulfila translating the Bible, as imagined by the illustrator Wilhelm Lindenschmit the Younger in 1879. What Wulfila actually looked like is unknown."
+    }
+   },
+   "cs": {
+    "nazev": "Germáni a runy",
+    "stitek": "Jazyky starověku",
+    "podtitul": "Severní a střední Evropa · runy od 2. století, gótská bible ze 4. století",
+    "perex": "Germáni psali nejdříve runami, písmem o 24 znacích, které vzniklo nejspíš v prvních dvou stoletích našeho letopočtu podle některé ze středomořských abeced. Runy ryli do zbraní, šperků a později do kamenů; nejstarší jistě datované nápisy pocházejí z dánských bažin z 2. století. Gótský biskup Wulfila ve 4. století vytvořil pro překlad bible vlastní abecedu podle řecké a gótština se tak stala prvním germánským jazykem s delšími texty. Z jazyků Germánů pocházejí angličtina, němčina, nizozemština i severské jazyky.",
+    "fakta": [
+     [
+      "Území",
+      "jižní Skandinávie a sever Německa; během stěhování národů i střední Evropa, Černomoří, Itálie a Hispánie"
+     ],
+     [
+      "Období",
+      "starší runy asi 2.–8. st.; gótské texty 4.–6. st.; vikinské runy asi 9.–12. st."
+     ],
+     [
+      "Jazyk",
+      "germánské jazyky (indoevropská rodina): gótština, stará norština, stará angličtina, stará horní němčina a další"
+     ],
+     [
+      "Písmo",
+      "runy (futhark o 24, později 16 znacích; anglosaský futhork o 28 a více); gótské písmo biskupa Wulfily"
+     ],
+     [
+      "Nápisy",
+      "asi 350 ve starším futharku; tisíce vikinských runových kamenů"
+     ],
+     [
+      "Nejslavnější rukopis",
+      "Stříbrná bible (Codex argenteus), 6. st., Uppsala"
+     ]
+    ],
+    "nazvyTecek": {
+     "goth1244": "Gótština",
+     "oldn1244": "Stará norština",
+     "olde1238": "Stará angličtina",
+     "oldh1241": "Stará horní němčina",
+     "icel1247": "Islandština"
+    },
+    "oddily": [
+     {
+      "typ": "text",
+      "h": "Germáni a jejich jazyk",
+      "p": [
+       "Germáni nebyli jeden národ, ale mnoho kmenů, které spojoval příbuzný jazyk. Jejich společný předek, pragermánština, se podle převládajícího názoru vyvinul v posledních staletích před naším letopočtem v jižní Skandinávii a na severu dnešního Německa. Nezachoval se v žádném textu; jazykovědci ho rekonstruují srovnáváním pozdějších jazyků. Římané znali Germány jako sousedy na Rýně a Dunaji a Tacitus jim kolem roku 98 věnoval spis Germánie.",
+       "Germánské jazyky se dělí do tří větví. Východní větev, k níž patřila gótština, vandalština a burgundština, dnes nemá živé potomky. Ze severní větve vzešla stará norština a z ní islandština, norština, švédština, dánština a faerština. Západní větev zahrnuje angličtinu, němčinu, nizozemštinu, fríštinu a jidiš."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "vimose2",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "Posunutí souhlásek",
+      "p": [
+       "Od ostatních indoevropských jazyků se germánské liší hlavně pravidelnou změnou souhlásek, kterou popsal Jacob Grimm a které se říká první germánské posouvání hlásek (Grimmův zákon). Kde latina, řečtina nebo čeština mají p, t, k, stojí v germánských jazycích f, þ (anglické th), h; z d se stalo t a z g se stalo k. Proto latinskému piscis odpovídá gótské fisks a anglické fish a latinskému nox, noctis gótské nahts a německé Nacht.",
+       "Gótština je ze všech doložených germánských jazyků nejstarší a stojí pragermánštině nejblíž, proto se v srovnávací jazykovědě cituje nejčastěji."
+      ]
+     },
+     {
+      "typ": "slova",
+      "h": "Příbuzná slova",
+      "uvod": "Gótská slova, jejich protějšky v angličtině, němčině a islandštině a příbuzná slova v jiných indoevropských jazycích:",
+      "hlavicka": [
+       "gótsky",
+       "anglicky · německy · islandsky",
+       "význam a srovnání"
+      ],
+      "radky": [
+       [
+        "fisks",
+        "fish · Fisch · fiskur",
+        "ryba; lat. piscis (p → f)"
+       ],
+       [
+        "nahts",
+        "night · Nacht · nótt",
+        "noc; lat. nox, noctis, č. noc (k → h)"
+       ],
+       [
+        "þata",
+        "that · das · það",
+        "to; č. to (t → þ)"
+       ],
+       [
+        "sitan",
+        "sit · sitzen · sitja",
+        "sedět; lat. sedēre, č. sedět (d → t)"
+       ],
+       [
+        "ik",
+        "I · ich · ég",
+        "já; lat. ego (g → k)"
+       ],
+       [
+        "kunnan",
+        "can · können · kunna",
+        "znát, umět; č. znát (g → k)"
+       ],
+       [
+        "dauhtar",
+        "daughter · Tochter · dóttir",
+        "dcera; č. dcera"
+       ]
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Odkud se vzaly runy",
+      "p": [
+       "Původ run je sporný. Většina badatelů soudí, že vznikly v 1. nebo 2. století podle některé z abeced, které se tehdy používaly v Itálii a v Alpách: podle latinky, nebo podle některé ze severoitalských abeced (rétské, venetské, severoetruské), které samy pocházely z etruské. Skandinávští badatelé se kloní spíš k latince, jiní upozorňují, že některé runy se tvarem i hláskou podobají písmenům alpských abeced. Asi polovina run se tvarem i hláskou shoduje s písmeny latinky i severoitalských abeced (například ᚠ f, ᚱ r, ᛏ t), u ostatních se výklady rozcházejí. Úhlové tvary bez vodorovných tahů se hodily pro rytí do dřeva.",
+       "Nejstarší doklad setkání Germánů s písmem je možná na bronzové helmě Negau B z pokladu nalezeného roku 1812 ve Slovinsku. Na jejím okraji je v severoetruské abecedě, zprava doleva, vyryto 𐌇𐌀𐌓𐌉𐌙𐌀𐌔𐌕𐌉𐌕𐌄𐌉𐌅𐌀 (zde zapsáno zleva doprava; přepis hariχasti teiva). Germánské jméno Harigast v něm čte téměř každý; zbytek se vykládá různě, například jako „Harigast, kněz“. Kdy byl nápis vyryt, je nejisté, snad ve 4. století př. n. l. Není to runový nápis, ale starší písmo, z jakého runy možná vzešly."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "negau",
+      "na-vysku": true
+     },
+     {
+      "typ": "foto",
+      "f": "negau2",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "Futhark o 24 znacích",
+      "p": [
+       "Nejstarší runové písmo se podle prvních šesti znaků (f, u, þ, a, r, k) nazývá futhark, přesněji starší futhark. Mělo 24 run v ustáleném pořadí, které se v novověku dělí na tři skupiny po osmi, zvané ætt (staroseversky „rod“). Každá runa měla jméno, obvykle slovo začínající její hláskou: ᚠ se jmenovala *fehu „dobytek, majetek“, ᛗ *mannaz „člověk“. Pragermánská jména nejsou nikde zapsána; rekonstruují se ze staroanglické runové básně, pozdějších severských jmen run a jmen gótských písmen.",
+       "Nejstarší úplný výčet všech 24 run je na kameni z Kylveru na Gotlandu z doby kolem roku 400. Runy se psaly zleva doprava i zprava doleva, někdy střídavě po řádcích, a slova se často neoddělovala. Nápisů ve starším futharku je známo asi 350, většinou krátkých: jméno majitele nebo řemeslníka, věnování, zaklínadlo. Znalost jejich čtení se ztratila a starší futhark rozluštil až roku 1865 norský badatel Sophus Bugge."
+      ]
+     },
+     {
+      "typ": "znaky",
+      "h": "Starší futhark",
+      "znaky": [
+       [
+        "ᚠ",
+        "f",
+        "*fehu „dobytek, majetek“"
+       ],
+       [
+        "ᚢ",
+        "u",
+        "*ūruz „pratur“"
+       ],
+       [
+        "ᚦ",
+        "þ",
+        "[θ]; jméno nejisté, sev. þurs „obr“"
+       ],
+       [
+        "ᚨ",
+        "a",
+        "*ansuz „bůh“"
+       ],
+       [
+        "ᚱ",
+        "r",
+        "*raidō „jízda“"
+       ],
+       [
+        "ᚲ",
+        "k",
+        "jméno nejisté"
+       ],
+       [
+        "ᚷ",
+        "g",
+        "*gebō „dar“"
+       ],
+       [
+        "ᚹ",
+        "w",
+        "*wunjō „radost“"
+       ],
+       [
+        "ᚺ",
+        "h",
+        "*hagalaz „kroupy“"
+       ],
+       [
+        "ᚾ",
+        "n",
+        "*naudiz „nouze“"
+       ],
+       [
+        "ᛁ",
+        "i",
+        "*īsaz „led“"
+       ],
+       [
+        "ᛃ",
+        "j",
+        "*jēran „rok, úroda“"
+       ],
+       [
+        "ᛇ",
+        "ï",
+        "hláska nejistá; *ī(h)waz „tis“"
+       ],
+       [
+        "ᛈ",
+        "p",
+        "vzácná; jméno nejasné"
+       ],
+       [
+        "ᛉ",
+        "z",
+        "později r (ʀ); původní jméno neznámé"
+       ],
+       [
+        "ᛊ",
+        "s",
+        "*sōwilō „slunce“"
+       ],
+       [
+        "ᛏ",
+        "t",
+        "*tīwaz, bůh Týr"
+       ],
+       [
+        "ᛒ",
+        "b",
+        "*berkanan „bříza“"
+       ],
+       [
+        "ᛖ",
+        "e",
+        "*ehwaz „kůň“"
+       ],
+       [
+        "ᛗ",
+        "m",
+        "*mannaz „člověk“"
+       ],
+       [
+        "ᛚ",
+        "l",
+        "*laguz „voda“"
+       ],
+       [
+        "ᛜ",
+        "ŋ",
+        "*ingwaz, bůh Ing"
+       ],
+       [
+        "ᛞ",
+        "d",
+        "*dagaz „den“"
+       ],
+       [
+        "ᛟ",
+        "o",
+        "*ōþalan „dědičná půda“"
+       ]
+      ],
+      "priklad": {
+       "klin": "ᚺᚨᚱᛃᚨ",
+       "prepis": "harja",
+       "vyznam": "nápis na hřebenu z Vimose (asi 150–200), nejspíš mužské jméno, snad „válečník“"
+      },
+      "pozn": "Jména run jsou rekonstruovaná (hvězdička označuje nedoložený tvar) a u několika run je jméno nebo hláska nejistá. Tvary run se místně i časově lišily; Unicode kóduje runy zleva doprava. Znaky vykresluje písmo Noto Sans Runic."
+     },
+     {
+      "typ": "foto",
+      "f": "kylver"
+     },
+     {
+      "typ": "text",
+      "h": "Hřebeny, šperky a zlaté rohy",
+      "p": [
+       "Nejstarší jistě datované runové nápisy pocházejí z dánských bažin, kam se v době římské ukládaly obětované zbraně a výstroj. Hřeben z Vimose na Fynu z doby kolem let 150–200 nese slovo harja. Roku 2023 ohlásili norští archeologové kámen ze Svingerudu (obec Hole), který podle datování hrobu vznikl někdy mezi 1. stoletím př. n. l. a 3. stoletím n. l.; mohl by tedy být ještě starší, datace je ale nejistá. Starší futhark se nepoužíval jen na severu: nápisy jsou známé i z Porýní, Alamanska a z východu až po Karpaty, například na zlatém nákrčníku z pokladu z Pietroasele v Rumunsku, jehož nápis se čte gutani… hailag a spojuje se s Góty.",
+       "Kolem roku 400 vznikly první runové kameny. Kámen z Tune v jihovýchodním Norsku připomíná muže jménem Woduridaz a podle obvyklého čtení zmiňuje i tři dcery a dědictví (þrijōz dohtrīz, „tři dcery“). Nejslavnějším nápisem starší doby je ale věta na zlatém rohu z Gallehusu."
+      ]
+     },
+     {
+      "typ": "galerie",
+      "h": "Runy na předmětech",
+      "f": [
+       "vimose",
+       "pietroasa",
+       "tune"
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "gallehus"
+     },
+     {
+      "typ": "veta",
+      "klin": "ᛖᚲ ᚺᛚᛖᚹᚨᚷᚨᛊᛏᛁᛉ ᛬ ᚺᛟᛚᛏᛁᛃᚨᛉ ᛬ ᚺᛟᚱᚾᚨ ᛬ ᛏᚨᚹᛁᛞᛟ ᛬",
+      "prepis": "ek hlewagastiz : holtijaz : horna : tawido :",
+      "slova": [
+       [
+        "ek",
+        "já"
+       ],
+       [
+        "hlewagastiz",
+        "Hlewagastiz (jméno, snad „host slávy“)"
+       ],
+       [
+        "holtijaz",
+        "Holtijaz (nejspíš „syn Holtův“)"
+       ],
+       [
+        "horna",
+        "roh (4. pád)"
+       ],
+       [
+        "tawido",
+        "jsem udělal"
+       ]
+      ],
+      "preklad": "„Já, Hlewagastiz Holtijaz, jsem udělal (tento) roh.“",
+      "vyklad": "Nápis byl na kratším ze dvou zlatých rohů, nalezeném roku 1734 v Gallehusu v jižním Jutsku; rohy pocházely z počátku 5. století. Roku 1802 je zloděj roztavil, takže nápis známe jen z kreseb. Je to jedna z nejstarších celých vět ve starším futharku a nejstarší dochovaný germánský verš: slova hlewagastiz, holtijaz a horna spojuje aliterace, opakování počáteční hlásky h. Jméno Holtijaz se většinou vykládá jako otcovské jméno, podle jiných znamená „z lesa“. Dvojtečky jsou oddělovače slov."
+     },
+     {
+      "typ": "text",
+      "h": "Vikinské runy a runové kameny",
+      "p": [
+       "Ve Skandinávii se v 7. a 8. století počet run zmenšil z 24 na 16. Vznikl mladší futhark, písmo vikinské doby, v dánské a švédsko-norské podobě. Jedna runa teď musela zastoupit několik hlásek: ᚢ psala u, o i y, ᚴ k i g. Přitom se staroseverština rozvíjela a hlásek v ní přibývalo. Mladšími runami je popsáno několik tisíc runových kamenů, nejvíce ve Švédsku, většinou jde o pomníky zemřelým příbuzným.",
+       "Kámen z Röku ve švédském Östergötlandu z počátku 9. století nese asi 760 znaků, nejdelší známý runový nápis v kameni. Otec jménem Varinn ho postavil na památku mrtvého syna Vámóða. Text je záměrně nesnadný, část je zašifrovaná a část psaná starším futharkem; zmínka o jezdci, který „sedí na koni“, se obvykle vykládá jako narážka na ostrogótského krále Theodoricha. Čtení run je většinou jisté, smysl celku se vykládá různě. V dánském Jellingu dal král Gorm v 10. století postavit kámen své ženě Thyře a jeho syn Harald Modrozub velký kámen rodičům; ten hlásá, že Harald „získal celé Dánsko a Norsko a učinil Dány křesťany“."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "rok",
+      "na-vysku": true
+     },
+     {
+      "typ": "foto",
+      "f": "jelling",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "Anglosaský futhork",
+      "p": [
+       "Angly, Sasové a Frísové si runy naopak rozšířili. Protože se ve staré angličtině a fríštině rozštěpila hláska a, vznikly z jedné runy tři: ᚪ āc, ᚫ æsc a ᚩ ōs. Podle nových hodnot se řada jmenuje futhork. Měla 28 znaků a v Anglii později až kolem 33. Runy se tu používaly zhruba od 5. století a přežily i příchod křesťanství: objevují se na křížích, rakvi svatého Cuthberta i na Franksově skříňce z velrybí kosti, kde se runy mísí s latinkou a pohanská pověst s biblickými výjevy. Od 7. století je ale postupně vytlačila latinka, do níž se dostaly dvě runy jako písmena: þ (thorn) a ƿ (wynn)."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "franks",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "Wulfila a gótské písmo",
+      "p": [
+       "Gótové se během 2. a 3. století usadili severně od Dunaje a Černého moře. Mezi nimi vyrostl Wulfila (latinsky Ulfilas, asi 311–383), zčásti potomek křesťanů z Malé Asie, které Gótové odvlekli do zajetí. Kolem roku 341 byl vysvěcen na biskupa Gótů, po pronásledování křesťanů se roku 348 se svými věřícími usadil na římském území v Moesii (dnešní Bulharsko) a zemřel v Konstantinopoli. Hlásil se k ariánskému výkladu víry, a proto byli Gótové i další germánské národy, které od nich křesťanství převzaly, dlouho ariány.",
+       "Pro překlad bible z řečtiny vytvořil Wulfila podle starověkých autorů vlastní abecedu. Většina písmen pochází z řecké abecedy, několik se tvarem podobá latinským písmenům a u dvou, j a u, se uvažuje o původu v runách; jak velký podíl měla latinka a runy, je sporné. Písmena měla jako řecká i číselné hodnoty. Překlad se tradičně připisuje Wulfilovi samotnému, podle rozboru textu na něm ale nejspíš pracovala skupina překladatelů, možná pod jeho vedením."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "wulfila",
+      "na-vysku": true
+     },
+     {
+      "typ": "znaky",
+      "h": "Gótská písmena (výběr)",
+      "znaky": [
+       [
+        "𐌰",
+        "a",
+        "1; z řeckého Α"
+       ],
+       [
+        "𐌱",
+        "b",
+        "2; z řeckého Β"
+       ],
+       [
+        "𐌲",
+        "g",
+        "3; z řeckého Γ"
+       ],
+       [
+        "𐌳",
+        "d",
+        "4; z řeckého Δ"
+       ],
+       [
+        "𐌴",
+        "e",
+        "5; dlouhé [eː]"
+       ],
+       [
+        "𐌵",
+        "q",
+        "6; [kʷ]"
+       ],
+       [
+        "𐌷",
+        "h",
+        "8; tvarem jako latinské h"
+       ],
+       [
+        "𐌸",
+        "þ",
+        "9; [θ], na místě řeckého θ"
+       ],
+       [
+        "𐌹",
+        "i",
+        "10; ei = dlouhé [iː]"
+       ],
+       [
+        "𐌾",
+        "j",
+        "60; tvar snad z lat. G nebo runy ᛃ"
+       ],
+       [
+        "𐌿",
+        "u",
+        "70; tvar snad z runy ᚢ"
+       ],
+       [
+        "𐍂",
+        "r",
+        "100; tvarem jako latinské R"
+       ],
+       [
+        "𐍃",
+        "s",
+        "200; tvarem jako latinské S"
+       ],
+       [
+        "𐍅",
+        "w",
+        "400; z řeckého Υ"
+       ],
+       [
+        "𐍆",
+        "f",
+        "500; tvarem jako latinské F"
+       ],
+       [
+        "𐍈",
+        "ƕ",
+        "700; [hʷ], zvláštní písmeno"
+       ],
+       [
+        "𐍉",
+        "o",
+        "800; dlouhé [oː]"
+       ]
+      ],
+      "priklad": {
+       "klin": "𐌷𐌻𐌰𐌹𐍆",
+       "prepis": "hlaif",
+       "vyznam": "chléb (4. pád), z gótského otčenáše; stejného germánského původu je i české chléb"
+      },
+      "pozn": "Číslo u každého písmena je jeho číselná hodnota. Abeceda měla 27 znaků, dva z nich (pro 90 a 900) sloužily jen jako číslice. Znaky vykresluje písmo Noto Sans Gothic."
+     },
+     {
+      "typ": "text",
+      "h": "Stříbrná bible",
+      "p": [
+       "Gótská bible se dochovala jen ve zlomcích, hlavně z evangelií a Pavlových listů. Nejvzácnější je Stříbrná bible (Codex argenteus) ze 6. století, psaná stříbrným a zlatým inkoustem na purpurově barveném pergamenu. Nejspíš vznikla v Itálii za vlády ostrogótského krále Theodoricha Velikého (zemřel 526), snad v Ravenně. Z původních 336 listů se dochovalo 188.",
+       "Kodex se v 16. století objevil v klášteře Werden u Essenu a dostal se do sbírek císaře Rudolfa II. v Praze. Roku 1648 ho odtud švédská vojska odvezla jako válečnou kořist do Stockholmu; v 60. letech 17. století ho hrabě Magnus Gabriel De la Gardie daroval univerzitě v Uppsale, kde je dodnes. Poslední list se našel roku 1970 ve Špýru. Od roku 2011 je kodex v rejstříku Paměť světa UNESCO."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "kodex",
+      "na-vysku": true
+     },
+     {
+      "typ": "veta",
+      "klin": "𐌰𐍄𐍄𐌰 𐌿𐌽𐍃𐌰𐍂 𐌸𐌿 𐌹𐌽 𐌷𐌹𐌼𐌹𐌽𐌰𐌼 𐍅𐌴𐌹𐌷𐌽𐌰𐌹 𐌽𐌰𐌼𐍉 𐌸𐌴𐌹𐌽",
+      "prepis": "atta unsar þu in himinam, weihnai namo þein",
+      "slova": [
+       [
+        "atta",
+        "otče"
+       ],
+       [
+        "unsar",
+        "náš"
+       ],
+       [
+        "þu",
+        "ty"
+       ],
+       [
+        "in himinam",
+        "na nebesích"
+       ],
+       [
+        "weihnai",
+        "ať se posvětí"
+       ],
+       [
+        "namo",
+        "jméno"
+       ],
+       [
+        "þein",
+        "tvé"
+       ]
+      ],
+      "preklad": "„Otče náš, jenž jsi na nebesích, posvěť se jméno tvé.“",
+      "vyklad": "Začátek modlitby Páně (Matouš 6,9) v gótském překladu, jak ho zachovává Stříbrná bible. Gótština tu má pro otce slovo atta; příbuzné fadar je v gótských textech doloženo jen jednou. Spřežka ei znamená dlouhé i, takže weihnai se četlo asi [wiːhnɛː]. O kus dál stojí v modlitbě hlaif unsarana „chléb náš“."
+     },
+     {
+      "typ": "text",
+      "h": "Germáni v českých zemích",
+      "p": [
+       "Po keltských Bójích, podle nichž se Čechy latinsky nazývají Boiohaemum (druhá část jména se obvykle vykládá z germánského *haimaz „domov“), přišli na konci 1. století př. n. l. do Čech germánští Markomani. Vedl je Marobud, který zde vybudoval mocný kmenový svaz; kde leželo jeho sídlo, se neví. Markomani a Kvádové pak po staletí sousedili s Římskou říší a v letech 166–180 s ní vedli markomanské války. Během stěhování národů prošly českými zeměmi další germánské skupiny, mimo jiné Langobardi, a v 6. století sem přišli Slované.",
+       "Nejstarší nápis z českého území je runový. Na žebru tura ze slovanského sídliště v Lánech u Břeclavi z doby kolem roku 600 je vyryto posledních sedm run staršího futharku. Nález zveřejnil roku 2021 tým Jiřího Macháčka; zda runy vyryl Slovan, nebo někdo z germánského prostředí, zůstává otevřené."
+      ]
+     },
+     {
+      "typ": "rameček",
+      "h": "Chléb, kněz a peníz",
+      "p": [
+       "Už praslovanština převzala od Germánů řadu slov. Slovo chléb pochází z germánského *hlaiba- (gótsky hlaifs), kněz z *kuningaz „vládce, král“ (odtud i německé König) a původně znamenalo knížete, peníz souvisí s germánským slovem, z něhož je německé Pfennig. Mnohem později přišly do češtiny stovky slov ze středověké a novější němčiny, například rytíř (Ritter) nebo šunka (Schinken)."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Germánské jazyky dnes",
+      "p": [
+       "Gótština zanikla v raném středověku; v 16. století však zapsal vlámský diplomat Ogier Ghiselin de Busbecq několik desítek slov krymské gótštiny, která na Krymu přežívala až do 18. století a nebyla přímým potomkem Wulfilovy gótštiny. Stará norština se zachovala v islandských ságách a Eddách a islandština je jí dodnes blízká. Germánskými jazyky mluví jako mateřským asi 515 milionů lidí; největší je angličtina (360–400 milionů rodilých mluvčích), následuje němčina (přes 100 milionů) a nizozemština (asi 24 milionů)."
+      ]
+     },
+     {
+      "typ": "osa",
+      "h": "Časová osa",
+      "udalosti": [
+       [
+        "4. st. př. n. l.?",
+        "Germánské jméno Harigast na helmě Negau B (datace nejistá)."
+       ],
+       [
+        "konec 1. st. př. n. l.",
+        "Markomani pod vedením Marobuda přicházejí do Čech."
+       ],
+       [
+        "asi 98",
+        "Tacitus píše Germánii."
+       ],
+       [
+        "asi 150–200",
+        "Hřeben z Vimose s nápisem harja."
+       ],
+       [
+        "166–180",
+        "Markomanské války Říma s Markomany a Kvády."
+       ],
+       [
+        "asi 341",
+        "Wulfila vysvěcen na biskupa Gótů."
+       ],
+       [
+        "asi 369",
+        "Tradiční datum dokončení gótského překladu bible."
+       ],
+       [
+        "asi 400",
+        "Kámen z Kylveru s celou řadou futharku; kámen z Tune."
+       ],
+       [
+        "počátek 5. st.",
+        "Zlaté rohy z Gallehusu."
+       ],
+       [
+        "6. st.",
+        "Stříbrná bible, nejspíš v ostrogótské Itálii."
+       ],
+       [
+        "asi 600",
+        "Runy na žebru z Lán u Břeclavi."
+       ],
+       [
+        "7.–8. st.",
+        "Ve Skandinávii vzniká mladší futhark o 16 runách."
+       ],
+       [
+        "počátek 9. st.",
+        "Kámen z Röku."
+       ],
+       [
+        "10. st.",
+        "Runové kameny krále Gorma a Haralda Modrozuba v Jellingu."
+       ],
+       [
+        "1648",
+        "Švédská vojska odvážejí Stříbrnou bibli z Prahy."
+       ],
+       [
+        "1865",
+        "Sophus Bugge rozluštil starší futhark."
+       ]
+      ]
+     },
+     {
+      "typ": "tecky",
+      "h": "Germánské jazyky na glóbu",
+      "uvod": "Klepnutím se jazyk ukáže na glóbu:"
+     },
+     {
+      "typ": "zdroje",
+      "h": "Zdroje a další četba",
+      "p": [
+       "R. I. Page: Runes. British Museum Press, 1987.",
+       "Michael P. Barnes: Runes: A Handbook. Boydell Press, 2012.",
+       "Klaus Düwel: Runenkunde. Metzler, 4. vyd. 2008.",
+       "D. Gary Miller: The Oxford Gothic Grammar. Oxford University Press, 2019.",
+       "Don Ringe: From Proto-Indo-European to Proto-Germanic. Oxford University Press, 2006.",
+       "Jiří Macháček a kol.: Runes from Lány (Czech Republic) – The oldest inscription among Slavs. Journal of Archaeological Science 127, 2021.",
+       "Glottolog 5 (jazyky a jejich zařazení)."
+      ]
+     }
+    ]
+   },
+   "en": {
+    "nazev": "The Germanic peoples and runes",
+    "stitek": "Languages of antiquity",
+    "podtitul": "Northern and central Europe · runes from the 2nd century, a Gothic Bible from the 4th",
+    "perex": "The Germanic peoples first wrote in runes, a script of 24 letters that most likely took shape in the first two centuries CE on the model of one of the Mediterranean alphabets. They cut runes into weapons, jewellery and, later, stones; the oldest securely dated inscriptions come from Danish bogs of the 2nd century. In the 4th century the Gothic bishop Wulfila devised an alphabet of his own, based on the Greek one, to translate the Bible, and Gothic thus became the first Germanic language with substantial texts. English, German, Dutch and the Nordic languages all descend from the speech of the early Germanic peoples.",
+    "fakta": [
+     [
+      "Territory",
+      "southern Scandinavia and northern Germany; during the Migration Period also central Europe, the Black Sea region, Italy and Hispania"
+     ],
+     [
+      "Period",
+      "Elder runes c. 2nd–8th centuries; Gothic texts 4th–6th centuries; Viking-Age runes c. 9th–12th centuries"
+     ],
+     [
+      "Language",
+      "the Germanic languages (Indo-European family): Gothic, Old Norse, Old English, Old High German and others"
+     ],
+     [
+      "Script",
+      "runes (the futhark of 24, later 16 letters; the Anglo-Saxon futhorc of 28 or more); the Gothic alphabet of Bishop Wulfila"
+     ],
+     [
+      "Inscriptions",
+      "some 350 in the Elder Futhark; thousands of Viking-Age runestones"
+     ],
+     [
+      "Most famous manuscript",
+      "the Silver Bible (Codex argenteus), 6th century, Uppsala"
+     ]
+    ],
+    "nazvyTecek": {
+     "goth1244": "Gothic",
+     "oldn1244": "Old Norse",
+     "olde1238": "Old English",
+     "oldh1241": "Old High German",
+     "icel1247": "Icelandic"
+    },
+    "oddily": [
+     {
+      "typ": "text",
+      "h": "The Germanic peoples and their language",
+      "p": [
+       "The Germanic peoples were not a single nation but many tribes linked by related speech. Their common ancestor, Proto-Germanic, is generally thought to have developed in the last centuries BCE in southern Scandinavia and what is now northern Germany. It survives in no text; linguists reconstruct it by comparing the later languages. The Romans knew the Germanic peoples as neighbours on the Rhine and the Danube, and around 98 CE Tacitus devoted a treatise, the Germania, to them.",
+       "The Germanic languages fall into three branches. The eastern branch, to which Gothic, Vandalic and Burgundian belonged, has no living descendants. The northern branch produced Old Norse and from it Icelandic, Norwegian, Swedish, Danish and Faroese. The western branch includes English, German, Dutch, Frisian and Yiddish."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "vimose2",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "The consonant shift",
+      "p": [
+       "What sets the Germanic languages apart from the other Indo-European languages is above all a regular change in the consonants, described by Jacob Grimm and known as the First Germanic Sound Shift (Grimm's law). Where Latin, Greek or Czech have p, t, k, the Germanic languages have f, þ (English th), h; d became t and g became k. So Latin piscis corresponds to Gothic fisks and English fish, and Latin nox, noctis to Gothic nahts and German Nacht.",
+       "Gothic is the oldest of all the attested Germanic languages and the closest to Proto-Germanic, which is why it is quoted more than any other in comparative linguistics."
+      ]
+     },
+     {
+      "typ": "slova",
+      "h": "Related words",
+      "uvod": "Gothic words, their counterparts in English, German and Icelandic, and related words in other Indo-European languages:",
+      "hlavicka": [
+       "Gothic",
+       "English · German · Icelandic",
+       "meaning and comparison"
+      ],
+      "radky": [
+       [
+        "fisks",
+        "fish · Fisch · fiskur",
+        "fish; Latin piscis (p → f)"
+       ],
+       [
+        "nahts",
+        "night · Nacht · nótt",
+        "night; Latin nox, noctis, Czech noc (k → h)"
+       ],
+       [
+        "þata",
+        "that · das · það",
+        "that; Czech to (t → þ)"
+       ],
+       [
+        "sitan",
+        "sit · sitzen · sitja",
+        "sit; Latin sedēre, Czech sedět (d → t)"
+       ],
+       [
+        "ik",
+        "I · ich · ég",
+        "I; Latin ego (g → k)"
+       ],
+       [
+        "kunnan",
+        "can · können · kunna",
+        "know, be able; Czech znát (g → k)"
+       ],
+       [
+        "dauhtar",
+        "daughter · Tochter · dóttir",
+        "daughter; Czech dcera"
+       ]
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Where the runes came from",
+      "p": [
+       "The origin of the runes is disputed. Most scholars think they arose in the 1st or 2nd century on the model of one of the alphabets then in use in Italy and the Alps: the Latin alphabet, or one of the North Italic alphabets (Raetic, Venetic, North Etruscan), themselves derived from Etruscan. Scandinavian scholars tend to favour Latin, while others point out that some runes resemble letters of the Alpine alphabets in both shape and sound. About half the runes match letters of the Latin and North Italic alphabets in both shape and sound (for example ᚠ f, ᚱ r, ᛏ t); for the rest, interpretations differ. The angular shapes without horizontal strokes suited carving in wood.",
+       "The earliest evidence of Germanic speakers meeting with writing may be the bronze helmet Negau B, from a hoard found in Slovenia in 1812. Scratched on its brim, right to left, in a North Etruscan alphabet, is 𐌇𐌀𐌓𐌉𐌙𐌀𐌔𐌕𐌉𐌕𐌄𐌉𐌅𐌀 (shown here left to right; transliterated hariχasti teiva). Nearly everyone reads the Germanic name Harigast in it; the rest is interpreted in various ways, for instance as ‘Harigast the priest’. When it was inscribed is uncertain, perhaps in the 4th century BCE. It is not a runic inscription but an older script of the kind from which the runes may have sprung."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "negau",
+      "na-vysku": true
+     },
+     {
+      "typ": "foto",
+      "f": "negau2",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "The futhark of 24 letters",
+      "p": [
+       "The oldest runic script is called the futhark after its first six letters (f, u, þ, a, r, k), or more precisely the Elder Futhark. It had 24 runes in a fixed order, which modern scholars divide into three groups of eight called ættir (Old Norse for ‘families’). Each rune had a name, usually a word beginning with its sound: ᚠ was called *fehu ‘cattle, wealth’, ᛗ *mannaz ‘man’. The Proto-Germanic names are nowhere written down; they are reconstructed from the Old English rune poem, the later Norse rune names and the names of the Gothic letters.",
+       "The earliest complete listing of all 24 runes is on the Kylver Stone from Gotland, from around 400. Runes were written left to right or right to left, sometimes alternating line by line, and words were often not separated. Some 350 Elder Futhark inscriptions are known, most of them short: an owner's or maker's name, a dedication, a charm. The knowledge of how to read them was lost, and the Elder Futhark was deciphered only in 1865, by the Norwegian scholar Sophus Bugge."
+      ]
+     },
+     {
+      "typ": "znaky",
+      "h": "The Elder Futhark",
+      "znaky": [
+       [
+        "ᚠ",
+        "f",
+        "*fehu ‘cattle, wealth’"
+       ],
+       [
+        "ᚢ",
+        "u",
+        "*ūruz ‘aurochs’"
+       ],
+       [
+        "ᚦ",
+        "þ",
+        "[θ]; name uncertain, Norse þurs ‘giant’"
+       ],
+       [
+        "ᚨ",
+        "a",
+        "*ansuz ‘god’"
+       ],
+       [
+        "ᚱ",
+        "r",
+        "*raidō ‘ride’"
+       ],
+       [
+        "ᚲ",
+        "k",
+        "name uncertain"
+       ],
+       [
+        "ᚷ",
+        "g",
+        "*gebō ‘gift’"
+       ],
+       [
+        "ᚹ",
+        "w",
+        "*wunjō ‘joy’"
+       ],
+       [
+        "ᚺ",
+        "h",
+        "*hagalaz ‘hail’"
+       ],
+       [
+        "ᚾ",
+        "n",
+        "*naudiz ‘need’"
+       ],
+       [
+        "ᛁ",
+        "i",
+        "*īsaz ‘ice’"
+       ],
+       [
+        "ᛃ",
+        "j",
+        "*jēran ‘year, harvest’"
+       ],
+       [
+        "ᛇ",
+        "ï",
+        "sound uncertain; *ī(h)waz ‘yew’"
+       ],
+       [
+        "ᛈ",
+        "p",
+        "rare; name obscure"
+       ],
+       [
+        "ᛉ",
+        "z",
+        "later r (ʀ); original name unknown"
+       ],
+       [
+        "ᛊ",
+        "s",
+        "*sōwilō ‘sun’"
+       ],
+       [
+        "ᛏ",
+        "t",
+        "*tīwaz, the god Týr"
+       ],
+       [
+        "ᛒ",
+        "b",
+        "*berkanan ‘birch’"
+       ],
+       [
+        "ᛖ",
+        "e",
+        "*ehwaz ‘horse’"
+       ],
+       [
+        "ᛗ",
+        "m",
+        "*mannaz ‘man’"
+       ],
+       [
+        "ᛚ",
+        "l",
+        "*laguz ‘water’"
+       ],
+       [
+        "ᛜ",
+        "ŋ",
+        "*ingwaz, the god Ing"
+       ],
+       [
+        "ᛞ",
+        "d",
+        "*dagaz ‘day’"
+       ],
+       [
+        "ᛟ",
+        "o",
+        "*ōþalan ‘inherited land’"
+       ]
+      ],
+      "priklad": {
+       "klin": "ᚺᚨᚱᛃᚨ",
+       "prepis": "harja",
+       "vyznam": "the inscription on the Vimose comb (c. 150–200), most likely a man's name, perhaps ‘warrior’"
+      },
+      "pozn": "The rune names are reconstructions (an asterisk marks an unattested form), and for several runes the name or sound is uncertain. Rune shapes varied from place to place and over time; Unicode encodes runes left to right. The characters are rendered in Noto Sans Runic."
+     },
+     {
+      "typ": "foto",
+      "f": "kylver"
+     },
+     {
+      "typ": "text",
+      "h": "Combs, jewellery and golden horns",
+      "p": [
+       "The oldest securely dated runic inscriptions come from Danish bogs, where weapons and equipment were deposited as offerings in the Roman period. The Vimose comb from Funen, of about 150–200, bears the word harja. In 2023 Norwegian archaeologists announced the Svingerud stone (Hole municipality), which on the dating of the grave was made at some point between the 1st century BCE and the 3rd century CE; it could thus be older still, but the date is uncertain. The Elder Futhark was not used only in the north: inscriptions are also known from the Rhineland, Alamannia and eastwards as far as the Carpathians, for example on the gold neck-ring from the Pietroasele treasure in Romania, whose inscription is read gutani… hailag and connected with the Goths.",
+       "The first runestones appeared around 400. The Tune stone in south-eastern Norway commemorates a man named Woduridaz and, on the usual reading, also mentions three daughters and an inheritance (þrijōz dohtrīz, ‘three daughters’). The most famous inscription of the early period, however, is the sentence on the golden horn of Gallehus."
+      ]
+     },
+     {
+      "typ": "galerie",
+      "h": "Runes on objects",
+      "f": [
+       "vimose",
+       "pietroasa",
+       "tune"
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "gallehus"
+     },
+     {
+      "typ": "veta",
+      "klin": "ᛖᚲ ᚺᛚᛖᚹᚨᚷᚨᛊᛏᛁᛉ ᛬ ᚺᛟᛚᛏᛁᛃᚨᛉ ᛬ ᚺᛟᚱᚾᚨ ᛬ ᛏᚨᚹᛁᛞᛟ ᛬",
+      "prepis": "ek hlewagastiz : holtijaz : horna : tawido :",
+      "slova": [
+       [
+        "ek",
+        "I"
+       ],
+       [
+        "hlewagastiz",
+        "Hlewagastiz (a name, perhaps ‘fame-guest’)"
+       ],
+       [
+        "holtijaz",
+        "Holtijaz (most likely ‘son of Holt’)"
+       ],
+       [
+        "horna",
+        "horn (accusative)"
+       ],
+       [
+        "tawido",
+        "made"
+       ]
+      ],
+      "preklad": "“I, Hlewagastiz Holtijaz, made the horn.”",
+      "vyklad": "The inscription was on the shorter of the two golden horns, found in 1734 at Gallehus in southern Jutland; the horns dated from the early 5th century. In 1802 a thief melted them down, so the inscription is known only from drawings. It is one of the earliest complete sentences in the Elder Futhark and the oldest surviving line of Germanic verse: the words hlewagastiz, holtijaz and horna are bound by alliteration, the repetition of the initial h. Holtijaz is usually taken as a patronymic; others read it as ‘of the wood’. The colons are word dividers."
+     },
+     {
+      "typ": "text",
+      "h": "Viking-Age runes and runestones",
+      "p": [
+       "In Scandinavia, during the 7th and 8th centuries, the number of runes shrank from 24 to 16. The result was the Younger Futhark, the script of the Viking Age, in a Danish and a Swedish-Norwegian form. One rune now had to stand for several sounds: ᚢ wrote u, o and y, ᚴ both k and g. Meanwhile Old Norse was developing and gaining sounds. Several thousand runestones are inscribed in the younger runes, most of them in Sweden, and most are memorials to dead relatives.",
+       "The Rök stone in Östergötland, Sweden, from the early 9th century, carries some 760 characters, the longest known runic inscription in stone. A father named Varinn raised it in memory of his dead son Vámóðr. The text is deliberately difficult: part of it is in cipher and part in the Elder Futhark; a passage about a rider who ‘sits on his horse’ is usually taken to refer to the Ostrogothic king Theodoric. The reading of the runes is mostly certain, the meaning of the whole is interpreted in different ways. At Jelling in Denmark, in the 10th century, King Gorm raised a stone for his wife Thyra, and his son Harald Bluetooth a large stone for his parents, proclaiming that Harald ‘won for himself all of Denmark and Norway and made the Danes Christian’."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "rok",
+      "na-vysku": true
+     },
+     {
+      "typ": "foto",
+      "f": "jelling",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "The Anglo-Saxon futhorc",
+      "p": [
+       "The Angles, Saxons and Frisians, by contrast, enlarged the runic row. Because the sound a split in Old English and Frisian, one rune became three: ᚪ āc, ᚫ æsc and ᚩ ōs. After the new values the row is called the futhorc. It had 28 letters, and in England later as many as about 33. Runes were used there from about the 5th century and survived the coming of Christianity: they appear on crosses, on St Cuthbert's coffin and on the whalebone Franks Casket, where runes mix with Latin letters and pagan legend with biblical scenes. From the 7th century, however, the Latin alphabet gradually displaced them, taking over two runes as letters: þ (thorn) and ƿ (wynn)."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "franks",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "Wulfila and the Gothic alphabet",
+      "p": [
+       "The Goths settled north of the Danube and the Black Sea during the 2nd and 3rd centuries. Among them grew up Wulfila (Latin Ulfilas, c. 311–383), descended in part from Christians of Asia Minor whom the Goths had carried off as captives. Around 341 he was consecrated bishop of the Goths; after a persecution of Christians he settled with his flock on Roman territory in Moesia (modern Bulgaria) in 348, and he died in Constantinople. He adhered to the Arian understanding of the faith, and so the Goths and the other Germanic peoples who took Christianity from them long remained Arians.",
+       "According to ancient authors, Wulfila devised an alphabet of his own for translating the Bible from Greek. Most of its letters come from the Greek alphabet, several resemble Latin letters in shape, and for two, j and u, a runic origin has been suggested; how much Latin and the runes contributed is disputed. Like the Greek letters, they also had numerical values. The translation is traditionally ascribed to Wulfila himself, but analysis of the text suggests that a team of translators worked on it, perhaps under his direction."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "wulfila",
+      "na-vysku": true
+     },
+     {
+      "typ": "znaky",
+      "h": "Gothic letters (a selection)",
+      "znaky": [
+       [
+        "𐌰",
+        "a",
+        "1; from Greek Α"
+       ],
+       [
+        "𐌱",
+        "b",
+        "2; from Greek Β"
+       ],
+       [
+        "𐌲",
+        "g",
+        "3; from Greek Γ"
+       ],
+       [
+        "𐌳",
+        "d",
+        "4; from Greek Δ"
+       ],
+       [
+        "𐌴",
+        "e",
+        "5; long [eː]"
+       ],
+       [
+        "𐌵",
+        "q",
+        "6; [kʷ]"
+       ],
+       [
+        "𐌷",
+        "h",
+        "8; shaped like Latin h"
+       ],
+       [
+        "𐌸",
+        "þ",
+        "9; [θ], in the place of Greek θ"
+       ],
+       [
+        "𐌹",
+        "i",
+        "10; ei = long [iː]"
+       ],
+       [
+        "𐌾",
+        "j",
+        "60; shape perhaps from Latin G or the rune ᛃ"
+       ],
+       [
+        "𐌿",
+        "u",
+        "70; shape perhaps from the rune ᚢ"
+       ],
+       [
+        "𐍂",
+        "r",
+        "100; shaped like Latin R"
+       ],
+       [
+        "𐍃",
+        "s",
+        "200; shaped like Latin S"
+       ],
+       [
+        "𐍅",
+        "w",
+        "400; from Greek Υ"
+       ],
+       [
+        "𐍆",
+        "f",
+        "500; shaped like Latin F"
+       ],
+       [
+        "𐍈",
+        "ƕ",
+        "700; [hʷ], a letter of its own"
+       ],
+       [
+        "𐍉",
+        "o",
+        "800; long [oː]"
+       ]
+      ],
+      "priklad": {
+       "klin": "𐌷𐌻𐌰𐌹𐍆",
+       "prepis": "hlaif",
+       "vyznam": "bread (accusative), from the Gothic Lord's Prayer; Czech chléb ‘bread’ comes from the same Germanic word"
+      },
+      "pozn": "The number beside each letter is its numerical value. The alphabet had 27 characters, two of which (for 90 and 900) served only as numerals. The characters are rendered in Noto Sans Gothic."
+     },
+     {
+      "typ": "text",
+      "h": "The Silver Bible",
+      "p": [
+       "The Gothic Bible survives only in fragments, mainly of the Gospels and the Pauline Epistles. The most precious is the Silver Bible (Codex argenteus) of the 6th century, written in silver and gold ink on purple-dyed parchment. It was most likely made in Italy under the Ostrogothic king Theodoric the Great (died 526), perhaps at Ravenna. Of its original 336 leaves, 188 survive.",
+       "The codex came to light in the 16th century at Werden Abbey near Essen and passed into the collections of Emperor Rudolf II in Prague. In 1648 Swedish troops carried it off from there as war booty to Stockholm; in the 1660s Count Magnus Gabriel De la Gardie gave it to Uppsala University, where it still is. The final leaf was found in 1970 at Speyer. Since 2011 the codex has been on UNESCO's Memory of the World Register."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "kodex",
+      "na-vysku": true
+     },
+     {
+      "typ": "veta",
+      "klin": "𐌰𐍄𐍄𐌰 𐌿𐌽𐍃𐌰𐍂 𐌸𐌿 𐌹𐌽 𐌷𐌹𐌼𐌹𐌽𐌰𐌼 𐍅𐌴𐌹𐌷𐌽𐌰𐌹 𐌽𐌰𐌼𐍉 𐌸𐌴𐌹𐌽",
+      "prepis": "atta unsar þu in himinam, weihnai namo þein",
+      "slova": [
+       [
+        "atta",
+        "father"
+       ],
+       [
+        "unsar",
+        "our"
+       ],
+       [
+        "þu",
+        "thou"
+       ],
+       [
+        "in himinam",
+        "in the heavens"
+       ],
+       [
+        "weihnai",
+        "may (it) be hallowed"
+       ],
+       [
+        "namo",
+        "name"
+       ],
+       [
+        "þein",
+        "thy"
+       ]
+      ],
+      "preklad": "“Our Father, who art in heaven, hallowed be thy name.”",
+      "vyklad": "The opening of the Lord's Prayer (Matthew 6:9) in the Gothic translation as preserved in the Silver Bible. For ‘father’ Gothic uses atta here; the related fadar occurs only once in the Gothic texts. The digraph ei stands for long i, so weihnai was pronounced roughly [wiːhnɛː]. A little further on the prayer has hlaif unsarana ‘our bread’."
+     },
+     {
+      "typ": "text",
+      "h": "Germanic peoples in the Czech lands",
+      "p": [
+       "After the Celtic Boii, after whom Bohemia is called Boiohaemum in Latin (the second part of the name is usually derived from Germanic *haimaz ‘home’), the Germanic Marcomanni came to Bohemia at the end of the 1st century BCE. They were led by Maroboduus, who built a powerful tribal confederation there; where his seat lay is not known. The Marcomanni and the Quadi were then neighbours of the Roman Empire for centuries, and from 166 to 180 they fought it in the Marcomannic Wars. During the Migration Period other Germanic groups passed through the Czech lands, among them the Langobards, and in the 6th century the Slavs arrived.",
+       "The oldest inscription from Czech territory is runic. A cattle rib from a Slavic settlement at Lány near Břeclav, from around 600, is carved with the last seven runes of the Elder Futhark. The find was published in 2021 by a team led by Jiří Macháček; whether the runes were carved by a Slav or by someone from a Germanic milieu remains open."
+      ]
+     },
+     {
+      "typ": "rameček",
+      "h": "Bread, priest and penny",
+      "p": [
+       "Proto-Slavic had already borrowed a number of words from Germanic. Czech chléb ‘bread’ comes from Germanic *hlaiba- (Gothic hlaifs), kněz ‘priest’ from *kuningaz ‘ruler, king’ (the source also of German König), where it originally meant ‘prince’, and peníz ‘coin’ is related to the Germanic word that gave German Pfennig. Much later hundreds of words entered Czech from medieval and modern German, such as rytíř ‘knight’ (Ritter) or šunka ‘ham’ (Schinken)."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "The Germanic languages today",
+      "p": [
+       "Gothic died out in the early Middle Ages; in the 16th century, however, the Flemish diplomat Ogier Ghiselin de Busbecq recorded a few dozen words of Crimean Gothic, which survived in Crimea until the 18th century and was not a direct descendant of Wulfila's Gothic. Old Norse is preserved in the Icelandic sagas and Eddas, and Icelandic remains close to it today. About 515 million people speak a Germanic language as their mother tongue; the largest is English (360–400 million native speakers), followed by German (over 100 million) and Dutch (about 24 million)."
+      ]
+     },
+     {
+      "typ": "osa",
+      "h": "Timeline",
+      "udalosti": [
+       [
+        "4th c. BCE?",
+        "The Germanic name Harigast on helmet Negau B (date uncertain)."
+       ],
+       [
+        "late 1st c. BCE",
+        "The Marcomanni under Maroboduus move into Bohemia."
+       ],
+       [
+        "c. 98",
+        "Tacitus writes the Germania."
+       ],
+       [
+        "c. 150–200",
+        "The Vimose comb inscribed harja."
+       ],
+       [
+        "166–180",
+        "Rome's Marcomannic Wars against the Marcomanni and Quadi."
+       ],
+       [
+        "c. 341",
+        "Wulfila consecrated bishop of the Goths."
+       ],
+       [
+        "c. 369",
+        "Traditional date for the completion of the Gothic Bible."
+       ],
+       [
+        "c. 400",
+        "The Kylver Stone with the full futhark row; the Tune stone."
+       ],
+       [
+        "early 5th c.",
+        "The Golden Horns of Gallehus."
+       ],
+       [
+        "6th c.",
+        "The Silver Bible, most likely in Ostrogothic Italy."
+       ],
+       [
+        "c. 600",
+        "Runes on the rib from Lány near Břeclav."
+       ],
+       [
+        "7th–8th c.",
+        "The 16-rune Younger Futhark emerges in Scandinavia."
+       ],
+       [
+        "early 9th c.",
+        "The Rök stone."
+       ],
+       [
+        "10th c.",
+        "The runestones of King Gorm and Harald Bluetooth at Jelling."
+       ],
+       [
+        "1648",
+        "Swedish troops carry the Silver Bible off from Prague."
+       ],
+       [
+        "1865",
+        "Sophus Bugge deciphers the Elder Futhark."
+       ]
+      ]
+     },
+     {
+      "typ": "tecky",
+      "h": "Germanic languages on the globe",
+      "uvod": "Tap a language to show it on the globe:"
+     },
+     {
+      "typ": "zdroje",
+      "h": "Sources and further reading",
+      "p": [
+       "R. I. Page: Runes. British Museum Press, 1987.",
+       "Michael P. Barnes: Runes: A Handbook. Boydell Press, 2012.",
+       "Klaus Düwel: Runenkunde. Metzler, 4th ed. 2008.",
+       "D. Gary Miller: The Oxford Gothic Grammar. Oxford University Press, 2019.",
+       "Don Ringe: From Proto-Indo-European to Proto-Germanic. Oxford University Press, 2006.",
+       "Jiří Macháček et al.: Runes from Lány (Czech Republic) – The oldest inscription among Slavs. Journal of Archaeological Science 127, 2021.",
        "Glottolog 5 (languages and their classification)."
       ]
      }
