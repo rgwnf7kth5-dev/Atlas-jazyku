@@ -1,6 +1,9 @@
 # Atlas jazyků – pokyny pro Claude Code
 
-Otáčivý glóbus se všemi jazyky světa pro děti, česky a anglicky. Komunikuj česky.
+Encyklopedický atlas jazyků světa na otáčivém glóbu, česky a anglicky. Komunikuj česky.
+**Publikum od 26. 9. 2026: studenti a výš** – vysokoškoláci, učitelé, dospělí zájemci i odborníci (uživatel: „pro studenty a výše, nejenom pro ně“). Česky se vyká. Texty věcné,
+encyklopedické, odborné termíny s vysvětlením, bez zvolání, výzev („Zkus to vyslovit!“) a zdrobnělin. Samostatná
+**varianta pro děti** (jiná grafika, animace, obrázky, mnohem méně jazyků) je nápad uživatele **na později, ne teď**.
 **Směr od 25. 9. 2026 (uživatel): „nechci nic pro děti, chci vážně, encyklopedické“.** Nové funkce navrhovat jako
 seriózní jazykovědný atlas pro dospělé (doložená data, zdroje, typologie), ne hry a dětské prvky. Hra „Kde se tak
 mluví?“ byla ze stejného důvodu odstraněna – nevracet.
@@ -382,8 +385,13 @@ Okrasný pohyb (světla na obloucích, obvod karty) po 20 s bez dotyku usne.
 
 ## Ověření faktů
 
-Zajímavosti jsou pro děti, ale musí být pravdivé. 22. 9. 2026 opraveno 19 nepřesností (např. zulská
+Zajímavosti musí být pravdivé. 22. 9. 2026 opraveno 19 nepřesností (např. zulská
 odpověď na pozdrav je „Ngikhona“, ne „shiboka“; „mrož“ není z nizozemštiny). Novou zajímavost ověř.
+26. 9. 2026 přepsány všechny zajímavosti (163 jazyků i vymyšlené jazyky) do věcného encyklopedického tónu:
+jedna až dvě věty, doložitelný údaj (letopočet, zákon, odborný termín s vysvětlením), žádná zvolání.
+Sporné výklady se tak i označují („jedno z vysvětlení“, „podle některých rozborů“, „původ je sporný“).
+Opraveno přitom: pončo není doloženě z kečuánštiny, klasické mayské nápisy nejsou v yucatécké mayštině
+(jsou v jazyce čolské větve), inuitské slabičné písmo pochází z kríjského, ne naopak.
 
 ## Vzhled „obrázková encyklopedie“ (redesign, na webu od 24. 9. 2026)
 

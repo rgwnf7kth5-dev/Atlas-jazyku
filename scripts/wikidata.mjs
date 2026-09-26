@@ -6,7 +6,7 @@ import path from "node:path";
 
 const KOREN = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
 const ENDPOINT = "https://query.wikidata.org/sparql";
-const UA = "AtlasJazyku/1.0 (https://github.com/rgwnf7kth5-dev/atlas-jazyku; educational project for children)";
+const UA = "AtlasJazyku/1.0 (https://github.com/rgwnf7kth5-dev/atlas-jazyku; educational encyclopedic project)";
 const PRVNI_JAZYK = "http://www.wikidata.org/entity/Q36870";      // „first language“ v kvalifikátoru P518
 
 async function dotaz(sparql, popis) {

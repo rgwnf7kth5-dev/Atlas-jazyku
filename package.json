@@ -2,7 +2,7 @@
   "name": "atlas-jazyku",
   "version": "1.0.0",
   "private": true,
-  "description": "Otáčivý glóbus se všemi jazyky světa – pro děti, česky i anglicky.",
+  "description": "Encyklopedický atlas jazyků světa na otáčivém glóbu, česky i anglicky.",
   "type": "module",
   "scripts": {
     "validate": "node scripts/validate.mjs",

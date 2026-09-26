@@ -2,43 +2,43 @@
  "domu": "The Language Atlas – back to the start",
  "denJazykuZavrit": "Close",
  "denJazykuDatum": "26 September · European Day of Languages",
- "denJazykuText": "Why today? 26 September is the European Day of Languages. The Council of Europe declared it in 2001 to celebrate Europe's some 225 indigenous languages and to encourage people to learn more of them. So today, instead of one Language of the Day, here are all {n} European languages in the atlas at once. Try greeting someone in a language that is new to you!",
+ "denJazykuText": "Why today? 26 September is the European Day of Languages, declared by the Council of Europe in 2001. It highlights the linguistic diversity of Europe, home to some 225 indigenous languages, and promotes language learning. Instead of a single Language of the Day, the atlas therefore shows all {n} European languages it contains.",
  "denJazykuEU": "The 24 languages of the EU",
  "napoveda": "Help",
- "krokZatoc": "Spin",
- "krokZatocJak": "– grab the globe and drag",
+ "krokZatoc": "Rotate",
+ "krokZatocJak": "– drag with the mouse or a finger",
  "krokPribliz": "Zoom",
  "krokPriblizJak": "– mouse wheel or two fingers",
- "krokKlikni": "Click",
- "krokKlikniJak": "a light to meet a language",
- "krokKlikniJakDen": "a dot to meet a language",
+ "krokKlikni": "Select",
+ "krokKlikniJak": "– click a point of light to open the language card",
+ "krokKlikniJakDen": "– click a dot to open the language card",
  "napovedaZavrit": "Close the tips",
  "lang": "en",
  "locale": "en-GB",
  "nazev": "The Language Atlas",
- "popis": "A spinning globe with every language on Earth: pick one to see where it is spoken and how to say hello.",
+ "popis": "An interactive atlas of all 7,967 languages of the world after Glottolog: distribution, language families and trees, vitality, typology from WALS and sound inventories from PHOIBLE.",
  "jinyJazyk": "Česky",
  "jinyJazykPopis": "Přepnout do češtiny",
  "scena": "Globe",
  "platno": "Spinning globe; the selected language's area is highlighted",
- "prekvap": "Surprise me",
+ "prekvap": "Random language",
  "celySvet": "Whole world",
  "zoomSkupina": "Globe zoom",
  "oddalit": "Zoom out",
  "priblizit": "Zoom in",
  "vypadekNadpis": "The globe could not start.",
- "vypadekText": "The language list still works – greetings, pronunciation and fun facts are all there. Try reloading the page.",
+ "vypadekText": "The language list and the language cards still work. Please try reloading the page.",
  "zavritKartu": "Close language card",
- "poslechni": "Listen",
- "posloucha": "Listening…",
- "znovu": "Once more",
+ "poslechni": "Play pronunciation",
+ "posloucha": "Playing…",
+ "znovu": "Play again",
  "mluvcich": "Speakers",
  "rodina": "Family",
- "vis": "Did you know…",
+ "vis": "Note",
  "kdeMluvi": "Where it is spoken",
  "seznam": "Language list",
  "hledejPopisek": "Search languages",
- "hledejPlaceholder": "Search a language or country…",
+ "hledejPlaceholder": "Search a language, country or dialect…",
  "domaciJmeno": "in its own words: {x}",
  "vyslovnost": "say it: “{x}”",
  "areal": "The coloured patch is the rough area where the language is spoken, not a country border.",
@@ -61,17 +61,17 @@
   "thousand"
  ],
  "hrstka": "only a few speakers left",
- "nicNenalezeno": "Nothing here. Try “Brazil”, “Aloha” or “tonal”.",
+ "nicNenalezeno": "No results. You can search for a language, a country or a dialect, e.g. “Brazil”, “Quechua” or “Scots”.",
  "nalezeno": "Found {a}, {b} with a greeting",
  "vychoziPocet": "{a} · {b} with a greeting",
- "zemeBezPozdravu": "No greeting from here yet. Try clicking one of the lights.",
+ "zemeBezPozdravu": "The atlas has no language with a detailed card for this country yet. Individual languages can be opened by clicking the points of light.",
  "tecka": "name from the Glottolog world register",
- "teckaPozn": "There's no greeting for this language in the atlas yet.",
- "zvukNeumi": "This device can't read aloud. Try saying it yourself: “{x}”.",
- "zvukRodily": "A native-speaker voice from your device is reading it.",
- "zvukZalozni": "Your device doesn't have this language, so an English voice reads the pronunciation. A native speaker sounds a little different.",
- "zvukZadny": "Your device has no voices. Try reading it yourself: “{x}”.",
- "zvukChyba": "That didn't play. Try reading it yourself: “{x}”.",
+ "teckaPozn": "A greeting, pronunciation and note are given for 163 selected languages; this one is not among them yet.",
+ "zvukNeumi": "This device does not support speech synthesis. Approximate pronunciation: “{x}”.",
+ "zvukRodily": "Read by your device's synthetic voice for this language.",
+ "zvukZalozni": "Your device has no voice for this language, so the approximate pronunciation is read by an English voice. The actual pronunciation differs.",
+ "zvukZadny": "Your device has no speech-synthesis voice. Approximate pronunciation: “{x}”.",
+ "zvukChyba": "Playback failed. Approximate pronunciation: “{x}”.",
  "hlasZalozni": "en-GB",
  "zdroje": "Dots: Glottolog (CC BY 4.0) · Grammar: WALS (CC BY 4.0) · Sounds: PHOIBLE (CC BY-SA 3.0) · Map: Natural Earth",
  "rodiny": {
@@ -132,9 +132,9 @@
  "uzivateluPozn": "Unicode CLDR estimate, including people who learned it",
  "nareci": "Dialects",
  "kdeMluviTecka": "Where it is spoken",
- "ukazka": "How it looks written",
- "ukazkaPopis": "This is how Article 1 of the Universal Declaration of Human Rights begins in this language. In English: “All human beings are born free and equal in dignity and rights…”",
- "stavba": "How the language works",
+ "ukazka": "Sample text",
+ "ukazkaPopis": "The beginning of Article 1 of the Universal Declaration of Human Rights in this language. In English: “All human beings are born free and equal in dignity and rights…”",
+ "stavba": "Structure",
  "hlasky": "Sounds",
  "hlaskyHodnota": "{c} {cs} and {v} {vs}",
  "hlaskyTony": ", plus {t} {ts}",
@@ -157,13 +157,13 @@
  "pribuzenstvo": "Family tree",
  "sourozenci": "Closest relatives",
  "aDalsichPribuznych": "and {n} more",
- "popsanost": "What linguists have written",
+ "popsanost": "Documentation",
  "med": [
   "a detailed grammar (300+ pages)",
   "a grammar",
-  "a short grammar sketch",
-  "only texts or a description of its sounds",
-  "only a word list or less – very little is known about it"
+  "a grammar sketch",
+  "only texts or a phonological description",
+  "only a word list or less – the language is barely documented"
  ],
  "odkazGlottolog": "Glottolog",
  "odkazWikipedie": "Wikipedia",
@@ -182,17 +182,17 @@
   "W"
  ],
  "pribuzniAtlas": "Relatives in the atlas",
- "pribuzniOblouky": "Light arcs on the globe lead to them.",
+ "pribuzniOblouky": "Arcs of light on the globe lead to them.",
  "motiv": "Switch between day and night look",
- "zemeBezPozdravuDen": "No greeting from here yet. Try clicking one of the dots.",
+ "zemeBezPozdravuDen": "The atlas has no language with a detailed card for this country yet. Individual languages can be opened by clicking the dots.",
  "pribuzniObloukyDen": "Arcs on the globe lead to them.",
  "znakoveSkupina": "Sign languages",
  "znakoveVse": "All",
  "znakoveBez": "No sign languages",
  "znakoveJen": "Sign only",
- "znakovePopis": "Sign languages are used mainly by Deaf people – with hands, face and the whole body. There is no single sign language for the whole world: many countries have their own, some have several, and their borders do not match national borders.",
+ "znakovePopis": "Sign languages are the natural languages of Deaf communities, using handshape and movement, facial expression and posture. There is no single universal sign language: many countries have their own, some several, and their boundaries do not coincide with national borders.",
  "znakovyCo": "What is a sign language",
- "znakovyVysvetleni": "A sign language is not spoken but shown – with the hands, facial expressions and body movement. It is used mainly by Deaf people and their families. It is not a spoken language translated into hands: it has its own words and its own grammar.",
+ "znakovyVysvetleni": "A sign language is a full natural language in the visual-gestural modality: it uses handshape and movement, facial expression and body movement. It is used mainly by Deaf people and their families. It is not a spoken language rendered in signs – it has its own vocabulary and grammar.",
  "aesZnak": [
   [
    "Safe",
@@ -241,10 +241,10 @@
  "vitalitaBezUdaje": "No data",
  "vitalitaZavrit": "Back",
  "nahledPopis": "A globe dotted with lights – each one is one of the world's languages",
- "zemeRejstrik": "{n} in the world register – lit up on the globe",
- "zemeAtlas": "With a greeting in the atlas:",
+ "zemeRejstrik": "{n} in the world register – highlighted on the globe",
+ "zemeAtlas": "Languages with a detailed card:",
  "sdiletOdkaz": "Copy a link to this language",
- "sdiletHotovo": "Link copied – you can send it on.",
+ "sdiletHotovo": "Link copied.",
  "zobrazeni": "View",
  "zobrazeniPopis": "Spin, names, sign languages and vitality",
  "zavritPanel": "Close",
@@ -259,24 +259,24 @@
  "svetadilOstatni": "Elsewhere",
  "zalozkaZajimavost": "Fun fact",
  "zalozkaPribuzni": "Relatives",
- "izolovane": "Isolates – no known relatives",
+ "izolovane": "Language isolates – no known relatives",
  "nezarazene": "Unclassified",
  "dalsiJazyky": "More languages ({a})",
- "jazykDneUkaz": "Show me on the globe",
+ "jazykDneUkaz": "Show on the globe",
  "rodokmen": "Family tree",
  "globus": "Globe",
  "rodokmenPopis": "Language family tree: how the languages of one family are related",
  "stromPlatno": "Family tree of a language family",
  "stromRodina": "Family",
  "stromCely": "Whole tree",
- "stromNapoveda": "At the bottom is the common ancestor of the whole family, and the languages sit at the ends of the branches. Each ring is a place where a language split into several; the thicker the branch, the more languages grew from it. Big dots have a greeting. Drag to move, scroll or pinch to zoom, click a branch or a language.",
+ "stromNapoveda": "The common ancestor of the whole family is at the bottom; individual languages are at the ends of the branches. Each ring marks a split; branch thickness reflects the number of languages descending from it. Large dots are languages with a detailed card. Drag to move, scroll or pinch to zoom, click a branch or a language to select it.",
  "stromUkazat": "Show in the family tree",
  "euNadpis": "The 24 official languages of the European Union",
- "euText": "You found the secret flag! The gold stars on the globe mark all 24 official EU languages. Click any of them.",
+ "euText": "The gold stars on the globe mark the 24 official languages of the European Union. Click a star to open the language card.",
  "euZavrit": "Close",
  "euVlajka": "Flag of the European Union",
  "porovnat": "Compare with another language",
- "porovnatVyzva": "Comparing: {a} ⇄ ? Pick the second language: click a dot on the globe, a language in the list, or search for one.",
+ "porovnatVyzva": "Comparing: {a} ⇄ ? Choose the second language: click a dot on the globe, a language in the list, or search for one.",
  "porovnatZrusit": "Cancel",
  "srovnani": "Comparison",
  "zalozkaPribuznost": "Kinship",
@@ -284,14 +284,14 @@
  "pribuzne": "Related",
  "ano": "yes",
  "ne": "no",
- "pribuzneAno": "They are related!",
- "pribuzneSpolecny": "Their closest common ancestor is the {v} branch. From there each went its own way:",
+ "pribuzneAno": "They are related.",
+ "pribuzneSpolecny": "Their closest common ancestor is the {v} branch. From there the lines of descent run as follows:",
  "pribuzneKoren": "They belong to the same family ({r}) but parted at its very first split. Their common ancestor is the ancestor of the whole family:",
  "pribuzneRodina": "Both belong to the same family ({r}).",
  "pribuzneNe": "They are not related.",
- "pribuzneNeText": "Each belongs to a different language family and, as far as linguists know today, they have no common ancestor.",
+ "pribuzneNeText": "Each belongs to a different language family and, as far as is currently known, they share no common ancestor.",
  "izolatText": "{a} is an isolate – it has no known relatives.",
- "pribuzneNevime": "We have no data on how they are related.",
+ "pribuzneNevime": "No data on their relationship are available.",
  "spolecne": "What they share",
  "rozdily": "How they differ",
  "bezUdaju": "We don't have enough data on how these languages work to compare them.",
@@ -301,9 +301,9 @@
  "stromObe": "Show both in the family tree",
  "bezRodu": "{a} is a {druh}. It did not develop gradually from a single ancestor like other languages, so it belongs to no language family and has no relatives.",
  "bezDomova": "Not on the map",
- "bezDomovaText": "{a} did not grow up in any one place – people invented it so that speakers from different countries could understand each other. That is why it has no dot on the globe, only a place in the list.",
- "branaNadpis": "✦ The gate to other worlds",
- "branaText": "The password mellon – Elvish for “friend” – opened it. These languages were not born on Earth but in books and films: writers and linguists invented them.",
+ "bezDomovaText": "{a} has no single place of origin – it was constructed as an international auxiliary language. It therefore has no dot on the globe and appears only in the list.",
+ "branaNadpis": "✦ Constructed languages from fiction",
+ "branaText": "These languages were constructed by writers and linguists for books, films and television. They are not part of the register of natural languages and therefore have no place on the globe.",
  "branaZpet": "Back to Earth",
  "branaZeme": "Earth",
  "branaZemePocet": "{n} real languages",
@@ -317,7 +317,7 @@
  "preskocit": "Skip to the list of languages",
  "filtryZapnute": "filters on: {n}",
  "nenalezenaNadpis": "This page does not exist",
- "nenalezenaText": "Maybe there is a typo in the address. All 7,967 languages of the world are waiting on the globe.",
+ "nenalezenaText": "There is no page at this address. All 7,967 languages of the world are available on the globe.",
  "nenalezenaZpet": "Back to the globe",
  "oDatech": {
   "odkaz": "About the data",
@@ -341,13 +341,13 @@
     ]
    },
    {
-    "h": "{a} languages with a greeting",
+    "h": "{a} languages with a detailed card",
     "p": [
-     "{a} languages have a greeting, a pronunciation guide, a fun fact, a number of speakers and the area where they are spoken. All of this is written by hand. The fun facts are for children, but they have to be true and they are checked.",
-     "The pronunciation guide is only an approximation. Speaker numbers are rounded estimates and include people who learned the language.",
-     "The orange area on the globe is drawn by hand and approximate, not measured. There is no open data with exact language borders for the whole world.",
-     "The Listen button uses the voice your computer or phone has. For some languages it has none.",
-     "The painted postcards show the typical landscape and buildings of the region the language comes from. They are not pictures of particular places."
+     "For 163 selected languages the atlas gives a greeting, an approximate pronunciation, a note, the number of speakers and the area of distribution. These are compiled by hand and the notes are fact-checked.",
+     "The pronunciation guide is only approximate. Speaker numbers are rounded estimates that include second-language speakers.",
+     "The orange area on the globe is drawn by hand and approximate, not measured. There are no open data with exact language boundaries for the whole world.",
+     "The Play pronunciation button uses the device's speech synthesis; for some languages the device has no voice.",
+     "The illustrations show the typical landscape and vernacular architecture of the region the language comes from. They do not depict particular places."
     ]
    },
    {
@@ -410,11 +410,11 @@
  "stranky": {
   "najit": "Find it on the globe",
   "globus": "Spinning globe",
-  "vsechnyOdkaz": "Languages with a greeting",
-  "vsechnyNadpis": "{a} languages with a greeting",
-  "vsechnyPopis": "How to say hello in languages from all over the world: greeting, pronunciation, a painted landscape and a fun fact for children. Every language on Earth is on the spinning globe.",
-  "titulek": "{n} – greeting, pronunciation and a fun fact",
-  "malbaAlt": "Painted postcard of the landscape where {n} comes from",
+  "vsechnyOdkaz": "Languages with a detailed card",
+  "vsechnyNadpis": "{a} languages with a detailed card",
+  "vsechnyPopis": "Selected languages of the world with a greeting, approximate pronunciation, number of speakers, distribution, relatives and a note. All 7,967 languages are on the interactive globe.",
+  "titulek": "{n} – distribution, relatives and pronunciation",
+  "malbaAlt": "Illustration of the landscape where {n} comes from",
   "uzivatelu": "Users",
   "kdeMluvi": "Where it is spoken",
   "kdeZnakuje": "Where it is signed",
@@ -425,21 +425,21 @@
   "dalsi": "Next language",
   "zavrit": "Close and back to the list"
  },
- "zpetna": "Got an idea, or is something not working? Write to",
+ "zpetna": "Comments and corrections:",
  "zpetnaAdresa": "info@atlasjazyku.cz",
  "zpetnaPredmet": "The Language Atlas – feedback",
  "zpetnaPopis": "Send feedback by e-mail",
  "patickaSouhrn": "About, sources, contact, guide and calendar",
- "vitalitaDokPopis": "Colour languages by how endangered they are",
- "vitalitaLegendaPopis": "Vitality levels – tap to choose which to show",
+ "vitalitaDokPopis": "Colour languages by degree of endangerment (UNESCO)",
+ "vitalitaLegendaPopis": "Vitality levels – click to choose which to show",
  "denJazykuNadpis": "Languages of Europe",
  "denJazykuGlobus": "Show them all on the globe",
  "evropaNadpis": "{n} languages of Europe",
- "evropaText": "It is the European Day of Languages. The red stars show the European languages in the atlas – click any of them.",
+ "evropaText": "Today is the European Day of Languages. The red stars mark the European languages in the atlas; click one to open its card.",
  "jazykDneProc": "Why today?",
- "cestaUvod": "The Language of the Day is travelling around the world, each day to the next nearest language.",
- "cestaDuvod": "We are travelling around the world. Yesterday we visited {a}; today we are {km} km further {smer}.",
- "cestaVedle": "We are travelling around the world. Yesterday we visited {a}, and today we stay right next door.",
+ "cestaUvod": "The Language of the Day moves around the world, each day to the next nearest language.",
+ "cestaDuvod": "Moving around the world: the previous Language of the Day was {a}; today's language lies {km} km further {smer}.",
+ "cestaVedle": "Moving around the world: the previous Language of the Day was {a}; today's language is its immediate neighbour.",
  "svetoveStrany": [
   "north",
   "north-east",
@@ -450,92 +450,93 @@
   "west",
   "north-west"
  ],
- "cestaPoDniJazyku": "After yesterday's European Day of Languages we continue our trip around the world, each day to the next nearest language.",
+ "cestaPoDniJazyku": "After the European Day of Languages, the Language of the Day continues around the world, each day to the next nearest language.",
  "kalendarOdkaz": "Calendar of language days",
  "kalendar": {
   "nadpis": "Calendar of language days",
-  "uvod": "Days of the year that belong to a language: UN and UNESCO language days, national language days, holidays and anniversaries. On that day the language is the Language of the Day. Click any of them to see it on the globe.",
+  "uvod": "Days of the year associated with a particular language: UN and UNESCO language days, national language days, public holidays and anniversaries. On such a day that language is the Language of the Day. Click one to show it on the globe.",
   "edl": "European Day of Languages (Council of Europe). Instead of one Language of the Day, all European languages in the atlas are shown at once.",
   "dnes": "today",
-  "ostatni": "On all other days the Language of the Day travels around the world, each day to the next nearest language."
+  "ostatni": "On all other days the Language of the Day moves around the world, each day to the next nearest language."
  },
  "navod": {
   "odkaz": "Full guide",
-  "napoveda": "Full guide – everything the atlas can do",
+  "napoveda": "Full guide – all features of the atlas",
   "nadpis": "How to use the atlas",
-  "uvod": "The atlas shows every language in the world on a spinning globe. Here is everything you can find in it and how to use it – with a mouse, a finger or the keyboard.",
+  "uvod": "The atlas shows all 7,967 languages of the world after Glottolog on an interactive globe. This guide describes every feature and how to use it with a mouse, touch or the keyboard.",
   "oddily": [
    {
     "h": "The globe",
     "p": [
-     "Spin: grab the globe with the mouse or one finger and drag. Zoom: the mouse wheel, two fingers apart, the + and − buttons in the bar at the bottom, or the + and − keys.",
-     "Each dot is one language. Click it to open its card. From 2× zoom, language names appear next to the dots (you can turn them off in View).",
-     "Click a country away from the dots and the atlas shows how many languages are spoken there and lights them up.",
-     "The Whole world button brings the globe back to the start. Clicking the logo in the top left does the same."
+     "Rotate: drag with the mouse or one finger. Zoom: mouse wheel, pinch with two fingers, the + and − buttons in the bar, or the + and − keys.",
+     "Each dot is one language, placed where Glottolog locates it, usually in the middle of the area where it is spoken. Click a dot to open the language card. From 2× zoom, language names are shown next to the dots (switch them off in View).",
+     "Clicking a country away from the dots highlights the country and all its languages and shows their number according to Glottolog.",
+     "The Whole world button and the Language Atlas logo in the top left return the globe to its initial view."
     ]
    },
    {
     "h": "The language card",
     "p": [
-     "Languages with a greeting have a painted postcard of their region, the greeting, how to say it and a Listen button (it uses your device's voice). Below are labels – how many people speak it, its family and how endangered it is – and tabs with a fun fact, vitality and relatives.",
-     "Other languages have the tabs Overview (where it is spoken, how endangered it is, dialects), How it works (word order, cases, tones, sounds) and Relatives.",
-     "Light arcs on the globe lead from the selected language to its closest relatives. The family tree line shows the path from their common ancestor.",
-     "The chain button copies a link to the language that you can send to a friend. On a phone the card sits at the bottom: drag it up to enlarge it, down to shrink or close it."
+     "163 selected languages have a detailed card: an illustration of the region, a greeting with approximate pronunciation and a Play pronunciation button (it uses the device's speech synthesis). Below are the number of speakers, the language family and vitality, and the tabs Note, Vitality, Structure and Relatives.",
+     "All other languages have the tabs Overview (distribution, vitality, dialects, sample text), Structure (WALS typology, PHOIBLE sound inventory, documentation) and Relatives.",
+     "The Structure tab gives the exact value for each WALS feature; click a feature name to open its typology map.",
+     "Arcs on the globe lead from the selected language to its closest relatives. The language family tree line shows its classification in the Glottolog tree.",
+     "The chain button copies a link to the language. On a phone the card sits at the bottom of the screen: drag it up to enlarge it, down to shrink or close it."
     ]
    },
    {
-    "h": "The list on the right",
+    "h": "The language list",
     "p": [
      "You can search for a language, a country or a dialect. The cross in the search box clears it.",
-     "Sort languages by family, alphabetically or by continent. Big tiles with a greeting come first, the other languages below.",
-     "The Language of the Day changes every midnight and always says why it was chosen – it has its own day, or we are travelling around the world with it. All such days are in the Calendar of language days. On the European Day of Languages, 26 September, a card with all the European languages takes its place."
+     "Sort by language family, alphabetically or by continent. Languages with a detailed card are shown as large tiles, the others below them.",
+     "The Language of the Day changes at midnight and always states why it was chosen: either a day associated with that language (see the Calendar of language days) or the journey around the world to the next nearest language. On the European Day of Languages (26 September) all European languages of the atlas are shown instead."
     ]
    },
    {
-    "h": "The bar at the bottom",
+    "h": "The bar below the globe",
     "p": [
-     "Surprise me picks a random language.",
-     "Family tree shows the tree of a whole language family. Drag to move it, use the wheel or two fingers to zoom, click a branch to focus on it and click a language to select it.",
-     "Vitality colours the languages by how endangered they are and shows a key. Tap the key to choose which levels to show.",
-     "View: auto-spin, language names, sign languages (all, none or only them), vitality levels and Typology (WALS)."
+     "Random language opens the card of a randomly selected language.",
+     "Family tree shows the tree of a whole language family after Glottolog. Drag to move, use the wheel or two fingers to zoom, click a branch to focus on it and click a language to select it.",
+     "Vitality colours the languages by degree of endangerment on the UNESCO scale and shows a key; click the key to choose which levels to show.",
+     "View: automatic rotation, language names, sign languages (all, none or only these), the vitality filter and typology maps."
     ]
    },
    {
     "h": "Typology maps (WALS)",
     "p": [
-     "In View › Typology (WALS) you choose one of 24 features – word order, adpositions, number of cases and genders, articles, tone, consonant inventory, negation, polar questions, numeral bases and more. The languages on the globe take the colour of their value and a key appears at the bottom right with the number of languages, a description of the feature and a link to the WALS chapter.",
-     "Click a value in the key to highlight only the languages with that value. Every language card has a Structure tab with all the features WALS describes for it; click a feature name to show it on the map. Only a sample of languages has data, the other dots stay grey."
+     "In View › Typology (WALS) you can choose one of 24 features in five areas (phonology, morphology, word order, clause structure, lexicon). The languages take the colour of their value and a key appears at the bottom right with the number of languages, a description of the feature and a link to the relevant WALS chapter.",
+     "After a choice the list closes; Another feature… in the key reopens it. Clicking a value in the key highlights only the languages with that value. WALS describes a sample of about 2,600 languages; the other dots stay grey."
     ]
    },
    {
     "h": "Comparing two languages",
     "p": [
-     "On a language card click Compare with another language and pick the second one – on the globe, in the list or by searching. The atlas shows whether they are related and where they split, how their grammar differs and how many people speak them."
+     "On a language card choose Compare with another language and select the second language on the globe, in the list or by searching. The comparison shows the relationship and the closest common ancestor, shared and differing WALS features, sound inventories and speaker numbers."
     ]
    },
    {
     "h": "Keyboard",
     "p": [
-     "Tab moves between controls. One Tab takes you into the language list; move between tiles with the arrow keys, Home and End jump to the start and end. Enter selects a language.",
+     "Tab moves between controls. One Tab enters the language list; the arrow keys move between tiles, Home and End jump to the start and end, and Enter selects a language.",
      "The + and − keys zoom the globe. Escape closes a window, the card or a panel."
     ]
    },
    {
     "h": "About, sources, contact, guide and calendar",
     "p": [
-     "At the very bottom of the language list (on a phone, at the end of the page) there is a folded line with a book: About, sources, contact, guide and calendar. Tap it to open it and tap again to fold it.",
-     "Calendar of language days: every day of the year when a language has its own celebration – a language day, a national holiday or an anniversary. It opens at the nearest day, and clicking a language shows it on the globe.",
-     "About the data: where the atlas gets its information about languages (Glottolog, WALS and more), how recent it is and why the list has a few more languages than there are dots on the globe.",
-     "Full guide: what you are reading right now.",
-     "Languages with a greeting (on the website only): every language with a greeting on one page. Each opens like a card in a card index; use the arrows to flip to the next one, and you can listen to the greeting.",
-     "Contact: send an idea or a mistake by email to info@atlasjazyku.cz. Below that are the data sources and their licences."
+     "At the end of the language list (on a phone, at the end of the page) there is a folded line: About, sources, contact, guide and calendar. Click it to expand it.",
+     "Calendar of language days: the days of the year associated with a particular language (language days, public holidays, anniversaries). It opens at the nearest day; click a language to show it on the globe.",
+     "About the data: the sources (Glottolog, WALS, PHOIBLE, Wikidata, Unicode CLDR and others), their versions and licences, and why the list has more entries than there are dots on the globe.",
+     "Full guide: this text.",
+     "Languages with a detailed card (website only): all 163 languages on one page. Each opens as a card; use the arrows to move to the next one.",
+     "Contact: comments and corrections to info@atlasjazyku.cz. Below are the data sources and their licences."
     ]
    },
    {
     "h": "More",
     "p": [
-     "In the top right you can switch the page language (Česky) and the day or night look. The atlas remembers your choices.",
-     "The atlas also hides a few secrets. Try searching for elves or Klingons…"
+     "In the top right you can switch the interface language (Česky) and the light or dark theme. Your choices are saved.",
+     "Search also knows languages constructed for literature and film (such as Quenya or Klingon); they are shown separately from natural languages."
     ]
    }
   ]
@@ -545,7 +546,7 @@
  "typologie": "Typology (WALS)",
  "typologiePopis": "Maps of language features: word order, cases, tone, consonants…",
  "typologieNadpis": "Language typology",
- "typologieUvod": "Choose a feature and the languages on the globe take its colours. The data come from the World Atlas of Language Structures (WALS), which describes a sample of languages – the other dots have no value.",
+ "typologieUvod": "After a feature is chosen, the languages on the globe take the colour of its value. The data come from the World Atlas of Language Structures (WALS), which describes a sample of languages – the other dots have no value.",
  "typologieZdroj": "Dryer, Matthew S. & Haspelmath, Martin (eds.) 2013. The World Atlas of Language Structures Online. Leipzig: Max Planck Institute for Evolutionary Anthropology. Licence CC BY 4.0.",
  "typologieVypnout": "Turn off the typology map",
  "typologieBezUdaje": "no WALS data",
