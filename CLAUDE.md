@@ -365,8 +365,9 @@ u každého pushe.
 ## Jazyky starověku: stránky o civilizacích (od 26. 9. 2026)
 
 Nápad uživatele: „pro starověké jazyky extra stránky o té které civilizaci zaměřené na řeč a písmo, plovoucí nad
-glóbem, jako stránka moderní ilustrované encyklopedie; hodně ilustrací, zajímavý text, fotky“. Vstupy jsou oba:
-dlaždice **Jazyky starověku** v seznamu (pod Jazykem dne; při hledání, když hledání sedí na `hledat`), tlačítko na
+glóbem, jako stránka moderní ilustrované encyklopedie; hodně ilustrací, zajímavý text, fotky“. Vstupy: **ikona chrámu v záhlaví**
+(vedle přepínače jazyka; uživatel 26. 9. 2026: „schovat do menu, ikona v rohu“) otevře nabídku `#starovek-okno`
+(i odkaz `#starovek` / `#ancient`); dlaždice v seznamu jazyků se ukáže jen při hledání (sedí-li na `hledat`); tlačítko na
 kartě tečky jazyka civilizace (`tecky` v datech) a odkaz `#chetite` / `#hittites`. Vzorová stránka: **Chetité**
 (uživatel vybral ze dvou návrhů, Chetité vs. Egypt), 26. 9. 2026 pak **Starověký Egypt** („pokračuj egyptem“;
 adresa `#egypt`, `/starovek/egypt/`, `/en/ancient/egypt/`). Dlaždice řadí civilizace chronologicky (pořadí

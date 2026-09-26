@@ -541,7 +541,7 @@
    {
     "h": "Languages of antiquity",
     "p": [
-     "In the language list, below the Language of the day, there is a Languages of antiquity tile. It opens a civilization page focused on language and script: history, sample signs, the story of decipherment, related words, grammar, a timeline, photographs and literature. Pages on Ancient Egypt and the Hittites are ready so far.",
+     "The temple icon at the top right (next to the language switch) opens the Languages of antiquity menu; the search also finds them, for example “egypt”. Each item opens a civilization page focused on language and script: history, sample signs, the story of decipherment, related words, grammar, a timeline, photographs and literature. Pages on Ancient Egypt and the Hittites are ready so far.",
      "The page opens above the globe; close it with the cross, the Escape key or by tapping outside it. The buttons in the section on languages on the globe show the extinct languages concerned on the globe. The page can also be opened from the language card (for example of Egyptian, Coptic, Hittite or Luwian) and with the links thelanguageatlas.com/#egypt and #hittites; on the website it is also a separate page."
     ]
    },
@@ -599,6 +599,8 @@
   "karta": "Civilization page: language and script",
   "pata": "Illustration: The Language Atlas. Photographs: Wikimedia Commons, with authors and licences given beside each image. Text: The Language Atlas, based on the scholarly literature listed above.",
   "titulek": "{n}: language and script",
-  "zpet": "Back to the globe"
- }
+  "zpet": "Back to the globe",
+  "uvod": "Pages on ancient civilizations focused on language and script: history, sample signs, decipherment, photographs. More are being added."
+ },
+ "starovekTlacitko": "Languages of antiquity: civilization pages"
 }

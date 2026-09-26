@@ -162,3 +162,9 @@
 .k-civ b{display:block; font-family:"Playfair Display", Georgia, serif; font-weight:600}
 .k-civ small{display:block; font-size:.78rem; color:var(--text2)}
 .civ-svitek:focus{outline:none}
+
+/* ikona chrámu v záhlaví a nabídka civilizací */
+.starovek-ikona svg{color:var(--text)}
+.starovek-okno{width:min(520px, calc(100vw - 32px))}
+.starovek-okno .starovek-tl{margin:4px 0}
+.starovek-okno .od-telo{padding-bottom:18px}

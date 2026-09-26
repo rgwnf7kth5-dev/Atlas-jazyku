@@ -351,7 +351,7 @@ function postavPolici(filtr){
       seznam.appendChild(tl);
     }
   }
-  { const ks = kartaStarovek(hledane); if (ks) seznam.appendChild(ks); }        /* jazyky starověku (stránky o civilizacích) */
+  { const ks = hledane ? kartaStarovek(hledane) : null; if (ks) seznam.appendChild(ks); }   /* jazyky starověku jen při hledání; jinak ikona chrámu v záhlaví */
   /* celý rejstřík: jazyky z atlasu jako dlaždice s pozdravem, ostatní tečky menší; kreslí se po dávkách */
   const polozky = [];
   JAZYKY.forEach(function(j){
@@ -2059,6 +2059,7 @@ function prectiOdkaz(){
   if (/^(o-datech|about-data)$/i.test(h)) { otevriODatech(); return; }
   if (/^(kalendar|language-days)$/i.test(h)) { otevriKalendar(); return; }
   if (/^(navod|guide)$/i.test(h)) { otevriNavod(); return; }
+  if (/^(starovek|ancient)$/i.test(h)) { otevriStarovek(); return; }
   if (civilizace(h)) { if (civOtevrena !== civilizace(h).id) otevriCivilizaci(h); return; }
   if (/^mellon(~|$)/i.test(h)) { otevriBranu(); const v = h.split("~")[1]; if (v) ukazVymysleny(v); return; }
   if (h.indexOf("~") > 0) {
@@ -2689,6 +2690,31 @@ function kartaStarovek(hledane){
   });
   return k;
 }
+/* nabídka Jazyky starověku pod ikonou chrámu v záhlaví (přání uživatele 26. 9. 2026: „schovat do menu, ikona v rohu“) */
+const starovekOkno = $("starovek-okno");
+function otevriStarovek(){
+  starovekOkno.textContent = "";
+  const hlava = prvek("div", "od-hlava");
+  const h = prvek("h2", null, T.starovek.stitek); h.id = "st-nadpis"; hlava.appendChild(h);
+  const x = prvek("button", "zavrit"); x.type = "button"; x.setAttribute("aria-label", T.oDatech.zavrit);
+  x.innerHTML = '<svg aria-hidden="true"><use href="#i-krizek"/></svg>'; x.addEventListener("click", function(){ starovekOkno.close(); });
+  hlava.appendChild(x); starovekOkno.appendChild(hlava);
+  const telo = prvek("div", "od-telo");
+  telo.appendChild(prvek("p", "od-uvod", T.starovek.uvod));
+  STAROVEK_DATA.civilizace.forEach(function(c){
+    const b = prvek("button", "starovek-tl"); b.type = "button";
+    const m = prvek("span", "starovek-malba"); vlozMalbu(m, "civ-" + c.id); b.appendChild(m);
+    const t = prvek("span"); t.appendChild(prvek("b", null, c[T.lang].nazev)); t.appendChild(prvek("small", null, c[T.lang].podtitul)); b.appendChild(t);
+    b.insertAdjacentHTML("beforeend", '<svg aria-hidden="true"><use href="#i-dal"/></svg>');
+    b.addEventListener("click", function(){ starovekOkno.close(); otevriCivilizaci(c.id); });
+    telo.appendChild(b);
+  });
+  starovekOkno.appendChild(telo);
+  if (starovekOkno.showModal) { if (!starovekOkno.open) starovekOkno.showModal(); } else starovekOkno.setAttribute("open", "");
+}
+$("tl-starovek").addEventListener("click", otevriStarovek);
+$("tl-starovek").hidden = !STAROVEK_DATA.civilizace.length;
+starovekOkno.addEventListener("click", function(e){ if (e.target === starovekOkno) starovekOkno.close(); });
 /* tlačítko na kartě tečky, jejíž jazyk patří k civilizaci (chetitština, luvijština…) */
 function tlacitkoCivilizace(c){
   const b = prvek("button", "k-civ"); b.type = "button";
@@ -2719,6 +2745,7 @@ function prelozStranku(){
   oj.textContent = T.stranky.vsechnyOdkaz;
   oj.setAttribute("href", korenVerze(T.lang) + (T.lang === "en" ? "languages/" : "jazyky/"));
   if (oDatech.open) postavODatech();
+  if (starovekOkno.open) otevriStarovek();
   if (civOtevrena) { const c = civilizace(civOtevrena), y = civOkno.querySelector(".civ-svitek").scrollTop; postavCivilizaci(c); civOkno.querySelector(".civ-svitek").scrollTop = y; }
   if (kalendar.open) postavKalendar();
   if (navodOkno.open) postavNavod();
