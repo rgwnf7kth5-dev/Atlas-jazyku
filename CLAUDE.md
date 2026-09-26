@@ -388,6 +388,20 @@ aramejština, avestánské, nápisná pahlavština, jihoarabské, etiopské a č
 doleva jsou v poli `RTL`. Popisky fotek i tabulky slov dostávají písmo přes `text()`; v tabulce slov je první sloupec
 kurzívou, ale znaky písem ne (`.civ-slova tbody th [class^="civ-"]`). Validace bere i jurisdikční licence („CC BY-SA 2.0 de“).
 Tečka jazyka patří jen jedné civilizaci (karta tečky ukáže první), proto Persie nemá elamštinu ani aramejštinu (má je Mezopotámie).
+**Přehledy a dalších pět civilizací** (26. 9. 2026, uživatel: „kdi do toho všeho, postupně“): v nabídce jsou první dva
+přehledy s `"prehled": true` (bez fotek, teček a faktů nemusí mít): **Rodokmen písem** (`#rodokmen-pisem` / `#family-of-scripts`,
+oddíl `strom`: uzly `{id, rodic, nazev, doba, ukazka, civ, jistota}`, `jistota: "sporna"` = přerušovaná čára, `civ` odkazuje
+na stránku; tabulka slova „král“ ve 20 písmech) a **Slovníček pojmů** (`#slovnicek-pisma` / `#writing-glossary`, oddíl
+`pojmy`). Ilustrace přehledů je `pisarna` (stůl písaře). Přibyli **Hebrejci a Aramejci** (`#hebrejci`), **Keltové**
+(`#keltove`/`#celts`), **Arméni a Gruzínci** (`#armeni-a-gruzinci`), **Germáni a runy** (`#germani`/`#germanic-peoples`)
+a **Slované a Velká Morava** (`#slovane`/`#slavs`); tečku staroslověnštiny dostali Slované (ne Řecko), starohebrejštiny
+Hebrejci (ne Féničané), čeština vede na Slovany. Rozcestník na konci stránek se jmenuje „Další stránky“.
+**Písma se odvozují ze znaků**: `PISMA` v šabloně má i rodinu Noto a `rodinyPisma(c)` z textu, popisků fotek a tabulek
+zjistí, co stránka potřebuje; pole `pisma` v datech je jen kontrolní (validace upozorní na nesoulad). Validace hlídá, že
+každé písmo v `PISMA` má pravidlo ve `starovek.css` – bez něj se ukáže náhradní systémové písmo (stalo se u 14 nových písem).
+Při ověřování opraveno mj.: nejstarší česká věta v litoměřické listině je ze začátku 13. st. (listina 1057), Kyjevské listy
+„obvykle pokládané za nejstarší“, na Themistoklových střepech čtrnáct rukou, De orthographia bohemica anonymní, háček až
+z 16. st.; nejstarší nápis na českém území není runový (římské cihly z Mušova), jen nejstarší ze slovanského prostředí.
 
 - Data `data/starovek.json`: `civilizace[]` s `id`, `adresa{cs,en}`, `krajina` (druh akvarelu), `tecky` (glottocody),
   `pisma` (písma Noto), `fotky{klic: soubor, sirka, vyska, autor, licence, licenceUrl, zdroj, cs, en}` a texty `cs`/`en`

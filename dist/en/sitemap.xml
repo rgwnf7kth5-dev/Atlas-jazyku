@@ -1051,10 +1051,22 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/ancient/phoenicians/"/>
   </url>
   <url>
+    <loc>https://thelanguageatlas.com/ancient/hebrews/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/starovek/hebrejci/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/ancient/hebrews/"/>
+  </url>
+  <url>
     <loc>https://thelanguageatlas.com/ancient/greece/</loc>
     <lastmod>2026-09-26</lastmod>
     <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/starovek/recko/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/ancient/greece/"/>
+  </url>
+  <url>
+    <loc>https://thelanguageatlas.com/ancient/celts/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/starovek/keltove/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/ancient/celts/"/>
   </url>
   <url>
     <loc>https://thelanguageatlas.com/ancient/etruscans/</loc>
@@ -1075,6 +1087,12 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/ancient/rome/"/>
   </url>
   <url>
+    <loc>https://thelanguageatlas.com/ancient/armenians-and-georgians/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/starovek/armeni-a-gruzinci/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/ancient/armenians-and-georgians/"/>
+  </url>
+  <url>
     <loc>https://thelanguageatlas.com/ancient/germanic-peoples/</loc>
     <lastmod>2026-09-26</lastmod>
     <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/starovek/germani/"/>
@@ -1085,6 +1103,12 @@
     <lastmod>2026-09-26</lastmod>
     <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/starovek/aksum/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/ancient/aksum/"/>
+  </url>
+  <url>
+    <loc>https://thelanguageatlas.com/ancient/slavs/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/starovek/slovane/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/ancient/slavs/"/>
   </url>
   <url>
     <loc>https://thelanguageatlas.com/ancient/maya/</loc>
