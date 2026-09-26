@@ -18,11 +18,11 @@ const podrobnosti = json("data/podrobnosti.json");
 const rodinyCz = json("data/glottolog-families.cs.json");
 const svet = cti("data/countries-110m.json");
 const knihovny = ["vendor/d3-array.min.js", "vendor/d3-geo.min.js", "vendor/topojson-client.min.js"].map(cti);
-const styly = cti("src/styles.css");
+const styly = cti("src/styles.css") + "\n" + cti("src/starovek.css");   // + stránky o civilizacích starověku
 const telo = cti("src/body.html");
-const aplikace = cti("src/akvarely.js") + "\n" + cti("src/app.js");   // malované krajiny pohlednic + aplikace
+const aplikace = cti("src/akvarely.js") + "\n" + cti("src/starovek.js") + "\n" + cti("src/app.js");   // malované krajiny pohlednic + šablona stránek o civilizacích + aplikace
 // pojistka: značka nedořešeného konfliktu po sloučení větví tiše vyřadí pravidlo stylu pod ní (stalo se u Dne jazyků)
-for (const [soubor, text] of [["src/styles.css", styly], ["src/body.html", telo], ["src/akvarely.js + src/app.js", aplikace]]) {
+for (const [soubor, text] of [["src/styles.css + src/starovek.css", styly], ["src/body.html", telo], ["src/akvarely.js + src/starovek.js + src/app.js", aplikace]]) {
   const m = text.match(/^(<{7}|={7}|>{7})(\s|$)/m);
   if (m) throw new Error(`V ${soubor} zůstala značka konfliktu po sloučení (${m[1]}).`);
 }
@@ -77,6 +77,17 @@ const REJSTRIK = {
   zn: glottolog.body.flatMap((b, i) => glottolog.rodiny[b[3]] === "Sign Language" || /\bsign language\b/i.test(b[0]) ? [i] : [])
 };
 
+/* stránky o civilizacích starověku: na webu fotky ze static/starovek/<id>/ (a menší verze -720.jpg),
+   v artefaktu (jeden soubor) vložené menší verze jako data: adresy */
+const STAROVEK = json("data/starovek.json");
+function starovekDoSkriptu(artefakt) {
+  const foto = {};
+  for (const c of STAROVEK.civilizace) {
+    if (!artefakt) { foto[c.id] = { zaklad: `/starovek/${c.id}/` }; continue; }
+    foto[c.id] = Object.fromEntries(Object.keys(c.fotky).map(k => [k, "data:image/jpeg;base64," + fs.readFileSync(path.join(KOREN, `static/starovek/${c.id}/${k}-720.jpg`)).toString("base64")]));
+  }
+  return { civilizace: STAROVEK.civilizace, foto };
+}
 /* skript stránky s daty; na webu je jeden pro obě jazykové verze (jazyk si přečte z <html lang>) */
 function skriptStranky(vychozi, artefakt) {
   const skript = aplikace
@@ -90,6 +101,7 @@ function skriptStranky(vychozi, artefakt) {
     .replace("/*__STATY__*/null", () => doSkriptu(nazvyZemi))
     .replace("/*__REJSTRIK__*/null", () => doSkriptu(REJSTRIK))
     .replace("/*__VYMYSLENE__*/null", () => doSkriptu(json("data/vymyslene.json")))
+    .replace("/*__STAROVEK__*/null", () => doSkriptu(starovekDoSkriptu(artefakt)))
     .replace("/*__KRAJINY__*/null", () => doSkriptu(json("data/krajiny.json")))
     .replace("/*__RELIEF__*/null", () => JSON.stringify("data:image/webp;base64," + fs.readFileSync(path.join(KOREN, "data/relief.webp")).toString("base64")))
     .replace("/*__TYPOLOGIE__*/null", () => { const d = json("data/typologie.json"), p = json("data/typologie-popis.json");   // typologické mapy (WALS)
@@ -174,14 +186,15 @@ fs.mkdirSync(path.join(KOREN, "dist/js"), { recursive: true });
 fs.writeFileSync(path.join(KOREN, "dist", souborSkriptu), skriptWebu);
 fs.writeFileSync(path.join(KOREN, "dist/index.html"), cs.dokument);
 fs.writeFileSync(path.join(KOREN, "dist/en/index.html"), en.dokument);
-fs.cpSync(path.join(KOREN, "static"), path.join(KOREN, "dist"), { recursive: true });   // ikonky a náhledy
+for (const d of ["starovek", "en/ancient"]) fs.rmSync(path.join(KOREN, "dist", d), { recursive: true, force: true });   // stránky o civilizacích (fotky se zkopírují znovu)
+fs.cpSync(path.join(KOREN, "static"), path.join(KOREN, "dist"), { recursive: true });   // ikonky, náhledy, fotky civilizací
 
 // samostatné stránky jazyků, přehled a O datech (scripts/stranky.mjs); staré složky pryč, kdyby se jazyk přejmenoval
 for (const d of ["jazyk", "jazyky", "o-datech", "kalendar-jazyku", "navod", "en/language", "en/languages", "en/about-data", "en/language-days", "en/guide"]) fs.rmSync(path.join(KOREN, "dist", d), { recursive: true, force: true });
 const polozekSeznamu = JAZYKY.length + glottolog.body.length - new Set(glottolog.body.map(b => b[5]).filter(Boolean)).size;
 const { stranky } = vyrobStranky({ KOREN, WEB, NAHLED, UI, jazyky: jazykyAtlasu, glottolog, podrobnosti, nazvyZemi, ikona, fontyOdkaz: FONTY,
   verze: { g: glottolog.body.length, n: polozekSeznamu, glottolog: glottolog.stazeno, podrobnosti: podrobnosti.stazeno, wikidata: json("data/wikidata.json").stazeno },
-  dny: json("data/dny-jazyku.json") });
+  dny: json("data/dny-jazyku.json"), starovek: STAROVEK, sablonaStarovek: cti("src/starovek.js"), stylStarovek: cti("src/starovek.css") });
 
 // pro vyhledávače: obě jazykové verze a jejich vzájemné odkazy
 const dnes = process.env.DATUM_STAVU || new Date().toISOString().slice(0, 10);

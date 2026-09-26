@@ -33,8 +33,11 @@ function lidi(lang, T, n) {
   const g = Math.round(n / 1e8) / 10; return cislo(lang, g, Math.floor(g) === g ? 0 : 1) + " " + tvar(lang, g, T.miliardy);
 }
 
-export function vyrobStranky({ KOREN, WEB, NAHLED, UI, jazyky: vsechnyJazyky, glottolog, podrobnosti, nazvyZemi, ikona, fontyOdkaz, verze, dny }) {
+/* adresa stránky o civilizaci: /starovek/chetite/, /en/ancient/hittites/ */
+const civAdresa = (c, lang) => (lang === "cs" ? "/starovek/" : "/en/ancient/") + c.adresa[lang] + "/";
+export function vyrobStranky({ KOREN, WEB, NAHLED, UI, jazyky: vsechnyJazyky, glottolog, podrobnosti, nazvyZemi, ikona, fontyOdkaz, verze, dny, starovek, sablonaStarovek, stylStarovek }) {
   const DIST = path.join(KOREN, "dist");
+  const STAROVEK = new Function(sablonaStarovek + "\nreturn STAROVEK;")();   // šablona stránky o civilizaci (i pro aplikaci)
   const bodPodleKodu = new Map(glottolog.body.map((b, i) => [b[6], i]));
   const bodJazyka = {};
   glottolog.body.forEach((b, i) => { if (b[5] && !(b[5] in bodJazyka)) bodJazyka[b[5]] = i; });
@@ -388,6 +391,25 @@ ${html}
 <p>${escHtml(K.ostatni)}</p>
 </div>` }));
     vsechny.push([kalendarA[lang], kalendarA[jiny], lang]);
+
+    /* jazyky starověku: stránky o civilizacích, stejná šablona (src/starovek.js) jako okno v aplikaci */
+    for (const c of starovek.civilizace) {
+      const adresa = civAdresa(c, lang), jina = civAdresa(c, jiny), L = c[lang], Us = T.starovek;
+      const tecka = k => { const i = bodPodleKodu.get(k); if (i === undefined) return null;
+        const n = (lang === "cs" && podrobnosti.radky[i][9]) || glottolog.body[i][0]; return { nazev: n.charAt(0).toUpperCase() + n.slice(1), href: domov[lang] + "#" + k }; };
+      const clanek = STAROVEK.html(c, lang, { U: Us, foto: k => `/starovek/${c.id}/${c.fotky[k].soubor}`, fotoMala: k => `/starovek/${c.id}/${k}-720.jpg`,
+        malba: `<img src="/starovek/${c.id}/malba.jpg" alt="" width="1200" height="630">`, tecka });
+      const pisma = STAROVEK.odkazPisma(c);
+      zapis(adresa, stranka({ lang, adresa, jinaAdresa: jina, titulek: Us.titulek.replace("{n}", L.nazev) + " · " + T.nazev, popis: L.perex,
+        obrazek: { src: `/starovek/${c.id}/malba.jpg`, w: 1200, h: 630 },
+        obsah: `${pisma ? `<link rel="stylesheet" href="${escHtml(pisma)}">` : ""}<style>${stylStarovek}
+main{max-width:1100px} .civ{border-radius:18px; overflow:hidden; box-shadow:0 30px 70px -40px rgba(25,32,60,.55); border:1px solid var(--linka)}
+.civ dl{display:block} .civ .civ-glosy{display:flex}</style>
+<nav class="drobky" aria-label="${escHtml(S.drobky)}"><a href="${domov[lang]}">${escHtml(T.nazev)}</a> › ${escHtml(Us.stitek)} › ${escHtml(L.nazev)}</nav>
+${clanek}
+<p><a class="tl" href="${domov[lang]}#${c.adresa[lang]}">${escHtml(Us.zpet)}</a></p>` }));
+      vsechny.push([adresa, jina, lang]);
+    }
   }
   return { adresy, prehled, stranky: vsechny };
 }

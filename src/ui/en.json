@@ -374,6 +374,12 @@
     ]
    },
    {
+    "h": "Languages of antiquity",
+    "p": [
+     "The Atlas writes the pages on ancient civilizations from the scholarly literature listed at the end of each page, and checks the facts before publication. The photographs come from Wikimedia Commons and have free licences (CC BY, CC BY-SA, CC0 or public domain); the author and licence are given with each image. Cuneiform signs and Anatolian hieroglyphs are rendered with the Noto fonts (SIL Open Font License)."
+    ]
+   },
+   {
     "h": "Map",
     "p": [
      "Country borders and land come from Natural Earth (simplified, scale 1:110 million). Relief and the sea floor come from Natural Earth and NOAA ETOPO1."
@@ -411,6 +417,11 @@
     "UDHR in Unicode – sample texts",
     "udhr package 6.0.0",
     "MIT"
+   ],
+   [
+    "Wikimedia Commons – photographs for the civilization pages",
+    "with each image",
+    "CC BY, CC BY-SA, CC0"
    ],
    [
     "Natural Earth, NOAA ETOPO1 – map and relief",
@@ -528,6 +539,13 @@
     ]
    },
    {
+    "h": "Languages of antiquity",
+    "p": [
+     "In the language list, below the Language of the day, there is a Languages of antiquity tile. It opens a civilization page focused on language and script: history, sample signs, the story of decipherment, related words, grammar, a timeline, photographs and literature. The page on the Hittites is ready so far.",
+     "The page opens above the globe; close it with the cross, the Escape key or by tapping outside it. The buttons in the section on languages on the globe show the extinct languages concerned on the globe. The page can also be opened from the language card (for example of Hittite or Luwian) and with the link thelanguageatlas.com/#hittites; on the website it is also a separate page."
+    ]
+   },
+   {
     "h": "Keyboard",
     "p": [
      "Tab moves between controls. One Tab enters the language list; the arrow keys move between tiles, Home and End jump to the start and end, and Enter selects a language.",
@@ -571,5 +589,16 @@
  "typologieKartaPozn": "Features and values from WALS Online. Only those WALS describes for the language are listed.",
  "typologieNaMape": "Show on the map",
  "typologieJazykuWals": "{n} in the WALS data",
- "typologieJina": "Another feature…"
+ "typologieJina": "Another feature…",
+ "starovek": {
+  "stitek": "Languages of antiquity",
+  "vKostce": "At a glance",
+  "foto": "Photo",
+  "volneDilo": "public domain",
+  "zavrit": "Close page",
+  "karta": "Civilization page: language and script",
+  "pata": "Illustration: The Language Atlas. Photographs: Wikimedia Commons, with authors and licences given beside each image. Text: The Language Atlas, based on the scholarly literature listed above.",
+  "titulek": "{n}: language and script",
+  "zpet": "Back to the globe"
+ }
 }

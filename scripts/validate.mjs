@@ -60,6 +60,24 @@ if (pd.radky.some(r => !(Number.isInteger(r[0]) && r[0] >= -1 && r[0] <= 6))) ch
   if (spatne) chyby.push(`data/podrobnosti.json: ${spatne} neplatných údajů o písmu nebo úředním statusu – spusť node scripts/podrobnosti.mjs`);
 }
 if (pd.uzly.length !== pd.nad.length) chyby.push("data/podrobnosti.json: strom příbuzenstva je poškozený");
+{ /* jazyky starověku (data/starovek.json): fotky s licencí a zdrojem, obě jazykové verze se stejnými oddíly, tečky v rejstříku */
+  const st = json("data/starovek.json"), co = "data/starovek.json", kody = new Set(glottolog.body.map(b => b[6]));
+  const volna = /^(CC0|Public domain|CC BY(-SA)? \d\.\d)$/;
+  for (const c of st.civilizace) {
+    if (!c.adresa || !c.adresa.cs || !c.adresa.en) chyby.push(`${co}: ${c.id} nemá adresu stránky`);
+    for (const [k, f] of Object.entries(c.fotky)) {
+      for (const soubor of [f.soubor, k + "-720.jpg"]) if (!fs.existsSync(path.join(KOREN, "static/starovek", c.id, soubor))) chyby.push(`${co}: fotka ${c.id}/${soubor} chybí ve static/starovek/`);
+      if (!volna.test(f.licence || "")) chyby.push(`${co}: fotka ${k} má licenci „${f.licence}“ (jen CC0, public domain, CC BY, CC BY-SA)`);
+      if (f.licence !== "CC0" && f.licence !== "Public domain" && !f.autor) chyby.push(`${co}: fotka ${k} nemá autora (licence ho vyžaduje)`);
+      if (!f.zdroj || !f.cs || !f.en) chyby.push(`${co}: fotka ${k} nemá zdroj nebo popisek v obou jazycích`);
+    }
+    if (!fs.existsSync(path.join(KOREN, "static/starovek", c.id, "malba.jpg"))) chyby.push(`${co}: chybí static/starovek/${c.id}/malba.jpg (náhled ilustrace)`);
+    const typy = l => (c[l].oddily || []).map(b => b.typ).join(",");
+    if (typy("cs") !== typy("en")) chyby.push(`${co}: ${c.id} má v češtině a angličtině jiné oddíly`);
+    for (const l of ["cs", "en"]) for (const b of c[l].oddily) for (const f of [].concat(b.f || [])) if (!c.fotky[f]) chyby.push(`${co}: ${c.id}/${l} odkazuje na neznámou fotku „${f}“`);
+    for (const k of c.tecky || []) if (!kody.has(k)) chyby.push(`${co}: ${c.id} má tečku „${k}“, kterou rejstřík nezná`);
+  }
+}
 { /* typologické mapy: popis (ručně) a data (scripts/typologie.mjs) musí sedět; barvy mapy jsou ověřené jen pro 5 odstínů + „jiné“ a 7 stupňů */
   const p = json("data/typologie-popis.json"), d = json("data/typologie.json"), co = "data/typologie-popis.json";
   if (p.vlastnosti.length !== d.vlastnosti.length || p.vlastnosti.some((v, k) => v.id !== d.vlastnosti[k].id)) chyby.push("data/typologie.json neodpovídá popisu – spusť node scripts/typologie.mjs");

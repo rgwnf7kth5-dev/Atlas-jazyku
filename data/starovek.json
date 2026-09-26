@@ -1,0 +1,943 @@
+{
+ "_pozn": "Stránky o civilizacích starověku (jazyk a písmo). Texty psané ručně a ověřené; fotky z Wikimedia Commons (scripts/fotky.mjs), soubory ve static/starovek/<id>/. Každá fotka musí mít autora (kromě volného díla), licenci a zdroj.",
+ "civilizace": [
+  {
+   "id": "chetite",
+   "adresa": {
+    "cs": "chetite",
+    "en": "hittites"
+   },
+   "krajina": "chattusa",
+   "hledat": "chetite chetitstina hittite hittites chattusa hattusa hrozny luvijstina luwian anatolie anatolia",
+   "tecky": [
+    "hitt1242",
+    "cune1239",
+    "hier1240",
+    "pala1331",
+    "hatt1246",
+    "hurr1240"
+   ],
+   "pisma": [
+    "Noto Sans Cuneiform",
+    "Noto Sans Anatolian Hieroglyphs"
+   ],
+   "fotky": {
+    "lvi-brana": {
+     "soubor": "lvi-brana.jpg",
+     "sirka": 1200,
+     "vyska": 800,
+     "autor": "Bernard Gagnon",
+     "licence": "CC BY-SA 3.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Lion_Gate,_Hattusa_02.jpg",
+     "cs": "Lví brána v Horním městě Chattuše (doba chetitské říše, 2. tisíciletí př. n. l.). Parabolický průchod mezi kamennými monolity střeží dva lvi vytesaní z pilířů.",
+     "en": "The Lion Gate in the Upper City of Hattusa (Hittite imperial period, 2nd millennium BCE). Two lions carved from the jambs guard the parabolic passage between the stone monoliths."
+    },
+    "lev": {
+     "soubor": "lev.jpg",
+     "sirka": 1200,
+     "vyska": 823,
+     "autor": "Bernard Gagnon",
+     "licence": "CC BY-SA 3.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Lion_Gate,_Hattusa_06.jpg",
+     "cs": "Pravý lev Lví brány. Tlama, hříva i přední tlapy vystupují přímo z pilíře brány.",
+     "en": "The right-hand lion of the Lion Gate. Its jaws, mane and forepaws emerge directly from the gate jamb."
+    },
+    "hradba": {
+     "soubor": "hradba.jpg",
+     "sirka": 1200,
+     "vyska": 809,
+     "autor": "Bernard Gagnon",
+     "licence": "CC BY-SA 3.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Hattusa_-_Hittite_city_wall_02.jpg",
+     "cs": "Rekonstruovaný úsek městské hradby v Dolním městě Chattuše: kamenná podezdívka, zdivo z nepálených cihel a věže s cimbuřím.",
+     "en": "A reconstructed section of the city wall in the Lower City of Hattusa: stone footing, mud-brick masonry and crenellated towers."
+    },
+    "sfingy": {
+     "soubor": "sfingy.jpg",
+     "sirka": 1200,
+     "vyska": 794,
+     "autor": "Carole Raddato",
+     "licence": "CC BY-SA 2.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Sphinx_Gate,_Hattusa_07.jpg",
+     "cs": "Sfingová brána na vrcholu valu Yerkapı v jižní části města.",
+     "en": "The Sphinx Gate on top of the Yerkapı rampart in the southern part of the city."
+    },
+    "tabulka": {
+     "soubor": "tabulka.jpg",
+     "sirka": 924,
+     "vyska": 1100,
+     "autor": "Mx. Granger",
+     "licence": "CC0",
+     "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Hittite_Cuneiform_Tablet-_Cultic_Festival_Script.jpg",
+     "cs": "Chetitská klínopisná tabulka s textem obřadu ke svátku bohyně Tetešchapi (Chattuša, asi 14. století př. n. l.). Institut pro studium starověkých kultur (dříve Oriental Institute), Chicago.",
+     "en": "A Hittite cuneiform tablet with a festival ritual for the goddess Teteshapi (Hattusa, c. 14th century BCE). Institute for the Study of Ancient Cultures (formerly the Oriental Institute), Chicago."
+    },
+    "kades": {
+     "soubor": "kades.jpg",
+     "sirka": 1200,
+     "vyska": 930,
+     "autor": "Osama Shukir Muhammed Amin FRCP(Glasg)",
+     "licence": "CC BY-SA 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:1._Part_of_the_clay_tablet_of_Kadesh_Treaty,_written_in_Akkadian._1269_BCE._From_Bo%C4%9Fazk%C3%B6y,_Turkey._Clay_tablet._Museum_of_the_Ancient_Orient,_Istanbul,_Turkey.jpg",
+     "cs": "Chetitské znění mírové smlouvy s Egyptem (asi 1259 př. n. l.), nalezené v Chattuši. Je psané akkadsky, jazykem tehdejší diplomacie. Muzeum starověkého Orientu, Archeologická muzea v Istanbulu.",
+     "en": "The Hittite version of the peace treaty with Egypt (c. 1259 BCE), found at Hattusa. It is written in Akkadian, the language of diplomacy at the time. Museum of the Ancient Orient, Istanbul Archaeology Museums."
+    },
+    "hrozny": {
+     "soubor": "hrozny.jpg",
+     "sirka": 511,
+     "vyska": 773,
+     "autor": "",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Bed%C5%99ich_Hrozn%C3%BD_v_20._letech.jpg",
+     "cs": "Bedřich Hrozný (1879–1952) ve 20. letech 20. století.",
+     "en": "Bedřich Hrozný (1879–1952) in the 1920s."
+    },
+    "yazilikaya": {
+     "soubor": "yazilikaya.jpg",
+     "sirka": 1200,
+     "vyska": 789,
+     "autor": "Klaus-Peter Simon",
+     "licence": "CC BY 3.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Yazilikaya_B_12erGruppe.jpg",
+     "cs": "Průvod dvanácti bohů podsvětí v komoře B skalní svatyně Yazılıkaya nedaleko Chattuše.",
+     "en": "The procession of the twelve underworld gods in Chamber B of the Yazılıkaya rock sanctuary near Hattusa."
+    },
+    "karatepe": {
+     "soubor": "karatepe.jpg",
+     "sirka": 1200,
+     "vyska": 799,
+     "autor": "Dosseman",
+     "licence": "CC BY-SA 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Karatepe_Azatiwada_inscription_Luwian_text_5243.jpg",
+     "cs": "Luvijský hieroglyfický text dvojjazyčného nápisu z Karatepe (8. století př. n. l.). Fénické znění vedle něj pomohlo hieroglyfy rozluštit.",
+     "en": "The hieroglyphic Luwian text of the Karatepe bilingual (8th century BCE). The Phoenician version beside it helped decipher the hieroglyphs."
+    },
+    "kanes": {
+     "soubor": "kanes.jpg",
+     "sirka": 1200,
+     "vyska": 893,
+     "autor": "Dosseman",
+     "licence": "CC BY-SA 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Museum_of_Anatolian_Civilizations_Hittite_Cup_type_rhyton_with_animal%27s_head_in_2014_06.jpg",
+     "cs": "Keramická nádoba v podobě zvířecí hlavy z Kültepe, starověkého Kaneše (Neši). Muzeum anatolských civilizací, Ankara.",
+     "en": "A ceramic vessel in the shape of an animal head from Kültepe, ancient Kanesh (Nesa). Museum of Anatolian Civilizations, Ankara."
+    },
+    "karkemis": {
+     "soubor": "karkemis.jpg",
+     "sirka": 1200,
+     "vyska": 799,
+     "autor": "Dosseman",
+     "licence": "CC BY-SA 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Ankara_Anatolian_Civilizations_Carchemish_orthostats_Long_Wall_Chariot_scene_A_in_2011_02.jpg",
+     "cs": "Válečný vůz na reliéfech z Karkemiše, jednoho z novochetitských států, které přežily pád říše. Muzeum anatolských civilizací, Ankara.",
+     "en": "A war chariot on reliefs from Carchemish, one of the Neo-Hittite states that outlived the empire. Museum of Anatolian Civilizations, Ankara."
+    }
+   },
+   "cs": {
+    "nazev": "Chetité",
+    "stitek": "Jazyky starověku",
+    "podtitul": "Říše Chatti v Anatolii · asi 1650–1180 př. n. l.",
+    "perex": "Chetité vybudovali v době bronzové na anatolské náhorní plošině říši, která soupeřila s Egyptem, Mitanni i Asýrií. Jejich jazyk, chetitština, je nejstarším doloženým indoevropským jazykem – a rozluštil ho český orientalista Bedřich Hrozný.",
+    "fakta": [
+     [
+      "Území",
+      "střední Anatolie, dnešní Turecko"
+     ],
+     [
+      "Hlavní město",
+      "Chattuša (u dnešního Boğazkale)"
+     ],
+     [
+      "Období",
+      "asi 1650–1180 př. n. l."
+     ],
+     [
+      "Jazyk",
+      "chetitština, vlastním jménem nešili"
+     ],
+     [
+      "Jazyková rodina",
+      "indoevropská – anatolská větev"
+     ],
+     [
+      "Písmo",
+      "klínové písmo; pro nápisy anatolské hieroglyfy"
+     ],
+     [
+      "Další jazyky říše",
+      "luvijština, palajština, chattijština, churrijština; v diplomacii akkadština"
+     ],
+     [
+      "Rozluštění",
+      "1915, Bedřich Hrozný"
+     ],
+     [
+      "Světové dědictví",
+      "Chattuša, UNESCO od roku 1986"
+     ]
+    ],
+    "oddily": [
+     {
+      "typ": "text",
+      "h": "Říše na anatolské plošině",
+      "p": [
+       "Jádrem chetitské říše byla oblast v ohybu řeky Kızılırmak, starověkého Halysu. Chetité ji nazývali zemí Chatti podle staršího obyvatelstva, Chattijců, jejichž nepříbuzný jazyk se dochoval v náboženských textech. Kolem roku 1650 př. n. l. přenesl král Labarna sídlo do Chattuše a přijal jméno Chattušili, „muž z Chattuše“.",
+       "Říše dosáhla vrcholu ve 14. a 13. století př. n. l. Ovládala většinu Anatolie i severní Sýrii a její králové si dopisovali s egyptskými faraony a babylonskými panovníky jako rovný s rovným. Město Chattuša se rozrostlo na zhruba 180 hektarů, obehnaných hradbami s branami, chrámy a královským hradem Büyükkale."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "lvi-brana",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "Nejstarší zapsaný indoevropský jazyk",
+      "p": [
+       "Chetité svůj jazyk nazývali nešili, „jazyk města Neši“ (Kaneše, dnes Kültepe). Nejstarší chetitská jména a slova se objevují už ve 20. až 18. století př. n. l. v zápisech asyrských kupců z Kaneše; souvislé texty z Chattuše pocházejí ze 17. až 13. století př. n. l. Chetitština je tak o několik století starší než nejstarší řecké texty psané lineárním písmem B.",
+       "Chetitština patří do anatolské větve indoevropských jazyků spolu s luvijštinou, palajštinou a pozdějšími jazyky lýkijštinou, lýdštinou a kárijštinou. Všechny vymřely. Anatolská větev se od ostatních indoevropských jazyků oddělila nejdříve, a proto má pro srovnávací jazykovědu mimořádnou cenu."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "kanes"
+     },
+     {
+      "typ": "rameček",
+      "h": "Hláska, kterou lingvisté předpověděli",
+      "p": [
+       "Ferdinand de Saussure v roce 1879 usoudil, že praindoevropština musela mít hlásky, které v žádném známém jazyce nepřežily (dnes se jim říká laryngály). V roce 1927 polský lingvista Jerzy Kuryłowicz ukázal, že chetitské ḫ stojí právě na místech, kde je teorie předpokládala: chetitské ḫant- „přední strana“ odpovídá latinskému ante, ḫastāi „kost“ latinskému os a řeckému osteon."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Klínové písmo na hliněných tabulkách",
+      "p": [
+       "Chetitští písaři převzali klínové písmo ze starobabylonské Mezopotámie, patrně přes severní Sýrii. Psali rákosovým rydlem do vlhké hlíny; tabulky pak sušili nebo vypalovali. Soubor chetitských znaků čítá asi 375 značek, značná část z nich má slabičnou hodnotu.",
+       "Písmo kombinovalo tři druhy znaků. Slabičné znaky zapisovaly chetitská slova po slabikách. Sumerogramy a akkadogramy byly slova převzatá z písma Sumerů a Akkaďanů, která se ale četla chetitsky – podobně jako čteme „&“ jako „a“. Determinativy se nečetly vůbec a jen označovaly druh slova: bůh, město, dřevo, muž."
+      ]
+     },
+     {
+      "typ": "znaky",
+      "h": "Ukázka znaků",
+      "znaky": [
+       [
+        "𒀀",
+        "a",
+        "slabika"
+       ],
+       [
+        "𒈠",
+        "ma",
+        "slabika"
+       ],
+       [
+        "𒉡",
+        "nu",
+        "slabika"
+       ],
+       [
+        "𒍝",
+        "za",
+        "slabika"
+       ],
+       [
+        "𒉿",
+        "wa",
+        "slabika"
+       ],
+       [
+        "𒋻",
+        "tar",
+        "slabika"
+       ],
+       [
+        "𒈗",
+        "LUGAL",
+        "sumerogram „král“"
+       ],
+       [
+        "𒃻",
+        "NINDA",
+        "sumerogram „chléb“"
+       ],
+       [
+        "𒀭",
+        "DINGIR",
+        "determinativ před jménem boha"
+       ],
+       [
+        "𒌷",
+        "URU",
+        "determinativ před jménem města"
+       ]
+      ],
+      "priklad": {
+       "klin": "𒌷𒄩𒀜𒌅𒊭",
+       "prepis": "URU Ḫa-at-tu-ša",
+       "vyznam": "město Chattuša – determinativ URU se nečte"
+      },
+      "pozn": "Znaky jsou vykreslené standardním písmem Unicode s mezopotámskými tvary; na chetitských tabulkách měly poněkud odlišnou podobu."
+     },
+     {
+      "typ": "foto",
+      "f": "tabulka",
+      "na-vysku": true
+     },
+     {
+      "typ": "text",
+      "h": "Rozluštění: Bedřich Hrozný",
+      "p": [
+       "Od roku 1906 odkrýval německý archeolog Hugo Winckler v Boğazköy archiv chetitských králů. Tisíce tabulek se daly přečíst, protože klínové písmo bylo známé, ale jejich jazyku nikdo nerozuměl. Norský lingvista Jørgen Alexander Knudtzon sice už roku 1902 podle dvou dopisů z egyptské Amarny usoudil, že jde o indoevropský jazyk, jeho názor však přijat nebyl a Knudtzon ho později sám odvolal.",
+       "Bedřich Hrozný, rodák z Lysé nad Labem, studoval tabulky v Istanbulu v roce 1914 a pokračoval ve Vídni. Rozluštění ohlásil 24. listopadu 1915 na přednášce v Berlíně a v článku „Die Lösung des hethitischen Problems“; roku 1917 vydal první mluvnici, Die Sprache der Hethiter. Důkaz opřel o tvarosloví a hláskové shody; proslavila se zejména jedna věta:"
+      ]
+     },
+     {
+      "typ": "veta",
+      "klin": "𒉡 𒃻𒀭 𒂊𒄑𒍝𒀜𒋼𒉌 𒉿𒀀𒋻𒈠 𒂊𒆪𒌓𒋼𒉌",
+      "prepis": "nu NINDA-an e-ez-za-at-te-ni wa-a-tar-ma e-ku-ut-te-ni",
+      "slova": [
+       [
+        "nu",
+        "a (Hrozný: nyní)"
+       ],
+       [
+        "NINDA-an",
+        "chléb (4. pád)"
+       ],
+       [
+        "ezzatteni",
+        "budete jíst"
+       ],
+       [
+        "wātar-ma",
+        "vodu však"
+       ],
+       [
+        "ekutteni",
+        "budete pít"
+       ]
+      ],
+      "preklad": "„Nyní budete jíst chléb, vodu však budete pít.“",
+      "vyklad": "Sumerogram NINDA znamenal chléb. Sloveso ezza- připomnělo Hroznému latinské edo a německé essen („jíst“), slovo wātar anglické water a německé Wasser. Z tvarů slov pak odvodil, že chetitština je indoevropská."
+     },
+     {
+      "typ": "foto",
+      "f": "hrozny",
+      "na-vysku": true
+     },
+     {
+      "typ": "text",
+      "h": "Hrozný po rozluštění",
+      "p": [
+       "Hrozný se stal profesorem Univerzity Karlovy, kde založil Seminář pro klínopisné bádání a dějiny starého Orientu; v letech 1939–1940 byl jejím rektorem. V roce 1925 vedl československé vykopávky v Kültepe a nalezl na tisíc tabulek asyrských kupců – právě z Kaneše, jehož jméno nese chetitské označení jazyka."
+      ]
+     },
+     {
+      "typ": "slova",
+      "h": "Slova, která poznáte",
+      "uvod": "Chetitština je vzdálenou příbuznou češtiny, latiny i angličtiny. Příbuznost prozrazují společná slova zděděná z praindoevropštiny:",
+      "hlavicka": [
+       "chetitsky",
+       "význam",
+       "příbuzná slova"
+      ],
+      "radky": [
+       [
+        "wātar",
+        "voda",
+        "č. voda, angl. water, něm. Wasser"
+       ],
+       [
+        "ed-, ezza-",
+        "jíst",
+        "č. jíst, lat. edere, něm. essen"
+       ],
+       [
+        "nepiš",
+        "nebe",
+        "č. nebe, řec. nefos „mrak“, lat. nebula"
+       ],
+       [
+        "newa-",
+        "nový",
+        "č. nový, lat. novus"
+       ],
+       [
+        "kard-",
+        "srdce",
+        "č. srdce, řec. kardia, lat. cor"
+       ],
+       [
+        "kuiš",
+        "kdo",
+        "č. kdo, lat. quis"
+       ],
+       [
+        "genu",
+        "koleno",
+        "lat. genu, řec. gony"
+       ]
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Jak chetitština fungovala",
+      "p": [
+       "Chetitština rozlišovala jen dva rody: společný (pro živé bytosti i věci) a střední. Ženský rod, známý z jiných indoevropských jazyků, v ní neexistoval. Sloveso mělo jen dva časy, přítomný a minulý; budoucnost se vyjadřovala přítomným časem – proto „ezzatteni“ znamená „jíte“ i „budete jíst“.",
+       "Věta měla obvykle pořadí podmět – předmět – sloveso. Na jejím začátku často stála spojka (nu, ta, šu) a za ní se řadily drobné příklonky, například zájmena a částice. Luvijská slova v chetitských textech písaři často označovali zvláštním klínem, takzvaným glosovým klínem."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Archiv osmi jazyků",
+      "p": [
+       "Z Chattuše pochází kolem 30 000 hliněných tabulek a jejich zlomků: zákony, smlouvy, letopisy, modlitby, věštby i rituály. Vedle chetitštiny obsahují texty v luvijštině, palajštině, chattijštině a churrijštině, v akkadštině a sumerštině a také indoárijská slova. Pojednání o výcviku válečných koní, sepsané podle mitannského trenéra Kikkuliho, počítá indoárijskými číslovkami: aika „jeden“, tera „tři“, panza „pět“, satta „sedm“.",
+       "Mezinárodním jazykem diplomacie byla akkadština. Proto i chetitské znění jedné z nejstarších dochovaných mírových smluv – dohody krále Chattušiliho III. s egyptským faraonem Ramessem II. z doby kolem roku 1259 př. n. l. – je psané akkadsky. Egyptské znění je vytesané hieroglyfy na zdech chrámů v Karnaku a v Ramesseu; zvětšená kopie chetitské tabulky visí v sídle OSN v New Yorku."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "kades",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "Hieroglyfy pro krále a bohy",
+      "p": [
+       "Pro pečeti a skalní nápisy užívali chetitští králové ještě jiné písmo: anatolské hieroglyfy. Zapisovala se jimi luvijština, jazyk, kterým v říši mluvilo mnoho lidí. Písmo má kolem pěti set znaků – obrázkových slov i slabik – a řádky se čtou střídavě zleva a zprava, jako když se orá pole.",
+       "Hieroglyfy přežily pád říše o pět století. K jejich rozluštění přispěl zejména dvojjazyčný nápis z Karatepe, zkoumaný od roku 1947: stejný text v něm stojí hieroglyficky luvijsky a fénickou abecedou, kterou lze přečíst. Znak 𔐀, postava ukazující na sebe, znamená „já“ – mnohé nápisy jím začínají: „Já jsem…“"
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "karatepe",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "Tisíc bohů země Chatti",
+      "p": [
+       "Chetité mluvili o „tisíci bozích země Chatti“: přejímali božstva podmaněných i sousedních národů a jejich jména zapisovali v jazyce původu. Ve skalní svatyni Yazılıkaya kousek od Chattuše vytesali ve 13. století př. n. l. dlouhé průvody bohů a bohyň, které se setkávají u boha bouře Teššuba a bohyně Chebat."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "yazilikaya",
+      "siroka": true
+     },
+     {
+      "typ": "galerie",
+      "h": "Chattuša dnes",
+      "f": [
+       "hradba",
+       "lev",
+       "sfingy"
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Konec a dědictví",
+      "p": [
+       "Kolem roku 1180 př. n. l., v době rozpadu řady států východního Středomoří, chetitská říše zanikla a Chattuša byla opuštěna. V severní Sýrii a jihovýchodní Anatolii však až do konce 8. století př. n. l. přetrvaly novochetitské státy, například Karkemiš, které psaly luvijskými hieroglyfy.",
+       "Na Chetity se pak na dva a půl tisíciletí zapomnělo; připomínala je jen Bible, která zná „Chetejce“. Ruiny u vesnice Boğazköy popsal francouzský cestovatel Charles Texier ve 30. letech 19. století, dlouho však nikdo nevěděl, čí město to bylo. Teprve archiv tabulek a Hrozného rozluštění vrátily Chetitům jejich dějiny i jazyk."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "karkemis",
+      "siroka": true
+     },
+     {
+      "typ": "osa",
+      "h": "Časová osa",
+      "udalosti": [
+       [
+        "20.–18. st. př. n. l.",
+        "Asyrští kupci v Kaneši zapisují chetitská jména – nejstarší stopy jazyka."
+       ],
+       [
+        "asi 1650 př. n. l.",
+        "Labarna přenáší sídlo do Chattuše a přijímá jméno Chattušili."
+       ],
+       [
+        "16. st. př. n. l.",
+        "Muršili I. vyplení Babylon."
+       ],
+       [
+        "14. st. př. n. l.",
+        "Za Šuppiluliumy I. se Chatti stává velmocí."
+       ],
+       [
+        "1274 př. n. l.",
+        "Bitva u Kadeše mezi Muwatallim II. a Ramessem II."
+       ],
+       [
+        "asi 1259 př. n. l.",
+        "Mírová smlouva s Egyptem."
+       ],
+       [
+        "13. st. př. n. l.",
+        "Reliéfy ve svatyni Yazılıkaya."
+       ],
+       [
+        "kolem 1180 př. n. l.",
+        "Zánik říše, Chattuša je opuštěna."
+       ],
+       [
+        "do konce 8. st. př. n. l.",
+        "Novochetitské státy píší luvijskými hieroglyfy."
+       ],
+       [
+        "1906",
+        "Hugo Winckler odkrývá archiv v Boğazköy."
+       ],
+       [
+        "1915",
+        "Bedřich Hrozný ohlašuje rozluštění chetitštiny."
+       ],
+       [
+        "1947",
+        "Začínají vykopávky v Karatepe s dvojjazyčným nápisem."
+       ],
+       [
+        "1986",
+        "Chattuša je zapsána na seznam světového dědictví UNESCO."
+       ]
+      ]
+     },
+     {
+      "typ": "tecky",
+      "h": "Jazyky říše na glóbu",
+      "uvod": "Všechny tyto jazyky jsou vymřelé. Klepnutím se ukážou na glóbu:"
+     },
+     {
+      "typ": "zdroje",
+      "h": "Zdroje a další četba",
+      "p": [
+       "Harry A. Hoffner, H. Craig Melchert: A Grammar of the Hittite Language. Eisenbrauns 2008.",
+       "Trevor Bryce: The Kingdom of the Hittites. Oxford University Press 2005.",
+       "Bedřich Hrozný: Die Sprache der Hethiter. Leipzig 1917.",
+       "The Chicago Hittite Dictionary; Hethitologie-Portal Mainz (hethiter.net).",
+       "Glottolog 5 (jazyky a jejich zařazení)."
+      ]
+     }
+    ],
+    "nazvyTecek": {
+     "cune1239": "Luvijština (klínopisná)",
+     "hier1240": "Luvijština (hieroglyfická)"
+    }
+   },
+   "en": {
+    "nazev": "The Hittites",
+    "stitek": "Languages of antiquity",
+    "podtitul": "The Kingdom of Hatti in Anatolia · c. 1650–1180 BCE",
+    "perex": "In the Bronze Age the Hittites built an empire on the Anatolian plateau that rivalled Egypt, Mitanni and Assyria. Their language, Hittite, is the earliest attested Indo-European language – and it was deciphered by the Czech orientalist Bedřich Hrozný.",
+    "fakta": [
+     [
+      "Territory",
+      "central Anatolia, modern Turkey"
+     ],
+     [
+      "Capital",
+      "Hattusa (near modern Boğazkale)"
+     ],
+     [
+      "Period",
+      "c. 1650–1180 BCE"
+     ],
+     [
+      "Language",
+      "Hittite, called nešili by its speakers"
+     ],
+     [
+      "Language family",
+      "Indo-European – Anatolian branch"
+     ],
+     [
+      "Script",
+      "cuneiform; Anatolian hieroglyphs for inscriptions"
+     ],
+     [
+      "Other languages of the empire",
+      "Luwian, Palaic, Hattic, Hurrian; Akkadian in diplomacy"
+     ],
+     [
+      "Deciphered",
+      "1915, Bedřich Hrozný"
+     ],
+     [
+      "World Heritage",
+      "Hattusa, on the UNESCO list since 1986"
+     ]
+    ],
+    "oddily": [
+     {
+      "typ": "text",
+      "h": "An empire on the Anatolian plateau",
+      "p": [
+       "The heart of the Hittite empire lay in the bend of the Kızılırmak river, the ancient Halys. The Hittites called it the land of Hatti after its earlier inhabitants, the Hattians, whose unrelated language survives in religious texts. Around 1650 BCE King Labarna moved his seat to Hattusa and took the name Hattusili, “the man from Hattusa”.",
+       "The empire reached its height in the 14th and 13th centuries BCE. It controlled most of Anatolia and northern Syria, and its kings corresponded with the pharaohs of Egypt and the rulers of Babylon as equals. Hattusa grew to some 180 hectares, enclosed by walls with gates, temples and the royal citadel of Büyükkale."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "lvi-brana",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "The earliest written Indo-European language",
+      "p": [
+       "The Hittites called their language nešili, “the language of the city of Neša” (Kanesh, modern Kültepe). The earliest Hittite names and words appear as early as the 20th to 18th centuries BCE in the records of Assyrian merchants at Kanesh; continuous texts from Hattusa date from the 17th to the 13th century BCE. Hittite is thus several centuries older than the earliest Greek texts written in Linear B.",
+       "Hittite belongs to the Anatolian branch of Indo-European, together with Luwian, Palaic and the later Lycian, Lydian and Carian. All of them are extinct. The Anatolian branch was the first to split off from the other Indo-European languages, which makes it exceptionally valuable for comparative linguistics."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "kanes"
+     },
+     {
+      "typ": "rameček",
+      "h": "A sound the linguists predicted",
+      "p": [
+       "In 1879 Ferdinand de Saussure concluded that Proto-Indo-European must have had sounds that survived in no known language (today called laryngeals). In 1927 the Polish linguist Jerzy Kuryłowicz showed that Hittite ḫ stands exactly where the theory predicted them: Hittite ḫant- “front” corresponds to Latin ante, and ḫastāi “bone” to Latin os and Greek osteon."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Cuneiform on clay tablets",
+      "p": [
+       "Hittite scribes adopted cuneiform from Old Babylonian Mesopotamia, probably by way of northern Syria. They wrote with a reed stylus in damp clay and then dried or baked the tablets. The Hittite sign inventory numbers about 375 signs, a large share of which have syllabic values.",
+       "The script combined three kinds of signs. Syllabic signs spelled Hittite words syllable by syllable. Sumerograms and Akkadograms were words taken over from Sumerian and Akkadian writing but read in Hittite – much as we read “&” as “and”. Determinatives were not read at all; they only marked the kind of word: god, city, wood, man."
+      ]
+     },
+     {
+      "typ": "znaky",
+      "h": "Sample signs",
+      "znaky": [
+       [
+        "𒀀",
+        "a",
+        "syllable"
+       ],
+       [
+        "𒈠",
+        "ma",
+        "syllable"
+       ],
+       [
+        "𒉡",
+        "nu",
+        "syllable"
+       ],
+       [
+        "𒍝",
+        "za",
+        "syllable"
+       ],
+       [
+        "𒉿",
+        "wa",
+        "syllable"
+       ],
+       [
+        "𒋻",
+        "tar",
+        "syllable"
+       ],
+       [
+        "𒈗",
+        "LUGAL",
+        "Sumerogram “king”"
+       ],
+       [
+        "𒃻",
+        "NINDA",
+        "Sumerogram “bread”"
+       ],
+       [
+        "𒀭",
+        "DINGIR",
+        "determinative before a god’s name"
+       ],
+       [
+        "𒌷",
+        "URU",
+        "determinative before a city name"
+       ]
+      ],
+      "priklad": {
+       "klin": "𒌷𒄩𒀜𒌅𒊭",
+       "prepis": "URU Ḫa-at-tu-ša",
+       "vyznam": "the city of Hattusa – the determinative URU is not read"
+      },
+      "pozn": "The signs are rendered with a standard Unicode font using Mesopotamian sign shapes; on Hittite tablets they looked somewhat different."
+     },
+     {
+      "typ": "foto",
+      "f": "tabulka",
+      "na-vysku": true
+     },
+     {
+      "typ": "text",
+      "h": "Decipherment: Bedřich Hrozný",
+      "p": [
+       "From 1906 the German archaeologist Hugo Winckler uncovered the archive of the Hittite kings at Boğazköy. Thousands of tablets could be read aloud, because cuneiform was known, but nobody understood their language. As early as 1902 the Norwegian linguist Jørgen Alexander Knudtzon had concluded from two letters found at Amarna in Egypt that the language was Indo-European, but his view was not accepted and Knudtzon later withdrew it himself.",
+       "Bedřich Hrozný, born in Lysá nad Labem in Bohemia, studied the tablets in Istanbul in 1914 and continued in Vienna. He announced the decipherment in a lecture in Berlin on 24 November 1915 and in the article “Die Lösung des hethitischen Problems”; in 1917 he published the first grammar, Die Sprache der Hethiter. He based his proof on morphology and sound correspondences; one sentence in particular became famous:"
+      ]
+     },
+     {
+      "typ": "veta",
+      "klin": "𒉡 𒃻𒀭 𒂊𒄑𒍝𒀜𒋼𒉌 𒉿𒀀𒋻𒈠 𒂊𒆪𒌓𒋼𒉌",
+      "prepis": "nu NINDA-an e-ez-za-at-te-ni wa-a-tar-ma e-ku-ut-te-ni",
+      "slova": [
+       [
+        "nu",
+        "and (Hrozný: now)"
+       ],
+       [
+        "NINDA-an",
+        "bread (accusative)"
+       ],
+       [
+        "ezzatteni",
+        "you will eat"
+       ],
+       [
+        "wātar-ma",
+        "water, however"
+       ],
+       [
+        "ekutteni",
+        "you will drink"
+       ]
+      ],
+      "preklad": "“Now you will eat bread, but water you will drink.”",
+      "vyklad": "The Sumerogram NINDA meant bread. The verb ezza- reminded Hrozný of Latin edo and German essen (“to eat”), and the word wātar of English water and German Wasser. From the forms of the words he then concluded that Hittite was Indo-European."
+     },
+     {
+      "typ": "foto",
+      "f": "hrozny",
+      "na-vysku": true
+     },
+     {
+      "typ": "text",
+      "h": "Hrozný after the decipherment",
+      "p": [
+       "Hrozný became a professor at Charles University in Prague, where he founded the Seminar for Cuneiform Research and the History of the Ancient Orient; in 1939–1940 he was its rector. In 1925 he led the Czechoslovak excavations at Kültepe and found some thousand tablets of Assyrian merchants – at Kanesh, the very city whose name the Hittite word for the language preserves."
+      ]
+     },
+     {
+      "typ": "slova",
+      "h": "Words you will recognise",
+      "uvod": "Hittite is a distant relative of English, Latin and Czech. The relationship shows in shared words inherited from Proto-Indo-European:",
+      "hlavicka": [
+       "Hittite",
+       "meaning",
+       "related words"
+      ],
+      "radky": [
+       [
+        "wātar",
+        "water",
+        "Eng. water, Ger. Wasser, Czech voda"
+       ],
+       [
+        "ed-, ezza-",
+        "to eat",
+        "Eng. eat, Lat. edere, Ger. essen"
+       ],
+       [
+        "nepiš",
+        "sky",
+        "Czech nebe, Gk. nephos “cloud”, Lat. nebula"
+       ],
+       [
+        "newa-",
+        "new",
+        "Eng. new, Lat. novus"
+       ],
+       [
+        "kard-",
+        "heart",
+        "Eng. heart, Gk. kardia, Lat. cor"
+       ],
+       [
+        "kuiš",
+        "who",
+        "Lat. quis, Eng. who"
+       ],
+       [
+        "genu",
+        "knee",
+        "Eng. knee, Lat. genu, Gk. gony"
+       ]
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "How Hittite worked",
+      "p": [
+       "Hittite distinguished only two genders: common (for living beings and things alike) and neuter. The feminine gender known from other Indo-European languages did not exist. The verb had only two tenses, present and past; the future was expressed by the present – which is why “ezzatteni” means both “you eat” and “you will eat”.",
+       "The usual word order was subject – object – verb. A sentence often opened with a connective (nu, ta, šu), followed by a chain of small enclitics such as pronouns and particles. Scribes often marked Luwian words in Hittite texts with a special wedge, the so-called gloss wedge."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "An archive in eight languages",
+      "p": [
+       "Around 30,000 clay tablets and fragments come from Hattusa: laws, treaties, annals, prayers, oracles and rituals. Besides Hittite they contain texts in Luwian, Palaic, Hattic and Hurrian, in Akkadian and Sumerian, and also Indo-Aryan words. A treatise on training chariot horses, compiled after the Mitannian trainer Kikkuli, counts with Indo-Aryan numerals: aika “one”, tera “three”, panza “five”, satta “seven”.",
+       "The international language of diplomacy was Akkadian. That is why even the Hittite version of one of the oldest surviving peace treaties – the agreement of King Hattusili III with the Egyptian pharaoh Ramesses II from around 1259 BCE – is written in Akkadian. The Egyptian version is carved in hieroglyphs on temple walls at Karnak and the Ramesseum; an enlarged copy of the Hittite tablet hangs at the United Nations headquarters in New York."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "kades",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "Hieroglyphs for kings and gods",
+      "p": [
+       "For seals and rock inscriptions the Hittite kings used yet another script: Anatolian hieroglyphs. They were used to write Luwian, a language spoken by many people in the empire. The script has some five hundred signs – word signs and syllables – and the lines run alternately left to right and right to left, like a field being ploughed.",
+       "The hieroglyphs outlived the empire by five centuries. Their decipherment owed much to the bilingual inscription of Karatepe, excavated from 1947: the same text stands there in hieroglyphic Luwian and in the readable Phoenician alphabet. The sign 𔐀, a figure pointing to itself, means “I” – many inscriptions begin with it: “I am…”"
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "karatepe",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "The thousand gods of Hatti",
+      "p": [
+       "The Hittites spoke of “the thousand gods of the land of Hatti”: they adopted the deities of conquered and neighbouring peoples and wrote their names in the language of origin. In the rock sanctuary of Yazılıkaya near Hattusa they carved, in the 13th century BCE, long processions of gods and goddesses meeting at the storm god Teššub and the goddess Hebat."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "yazilikaya",
+      "siroka": true
+     },
+     {
+      "typ": "galerie",
+      "h": "Hattusa today",
+      "f": [
+       "hradba",
+       "lev",
+       "sfingy"
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "End and legacy",
+      "p": [
+       "Around 1180 BCE, when many states of the eastern Mediterranean collapsed, the Hittite empire came to an end and Hattusa was abandoned. In northern Syria and south-eastern Anatolia, however, Neo-Hittite states such as Carchemish survived until the end of the 8th century BCE, writing in Luwian hieroglyphs.",
+       "The Hittites were then forgotten for two and a half millennia, remembered only in the Bible. The French traveller Charles Texier described the ruins near the village of Boğazköy in the 1830s, but for a long time nobody knew whose city it had been. Only the tablet archive and Hrozný’s decipherment gave the Hittites back their history and their language."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "karkemis",
+      "siroka": true
+     },
+     {
+      "typ": "osa",
+      "h": "Timeline",
+      "udalosti": [
+       [
+        "20th–18th c. BCE",
+        "Assyrian merchants at Kanesh record Hittite names – the earliest traces of the language."
+       ],
+       [
+        "c. 1650 BCE",
+        "Labarna moves his seat to Hattusa and takes the name Hattusili."
+       ],
+       [
+        "16th c. BCE",
+        "Mursili I sacks Babylon."
+       ],
+       [
+        "14th c. BCE",
+        "Under Suppiluliuma I, Hatti becomes a great power."
+       ],
+       [
+        "1274 BCE",
+        "Battle of Kadesh between Muwatalli II and Ramesses II."
+       ],
+       [
+        "c. 1259 BCE",
+        "Peace treaty with Egypt."
+       ],
+       [
+        "13th c. BCE",
+        "Reliefs in the Yazılıkaya sanctuary."
+       ],
+       [
+        "c. 1180 BCE",
+        "End of the empire; Hattusa is abandoned."
+       ],
+       [
+        "to the end of the 8th c. BCE",
+        "Neo-Hittite states write in Luwian hieroglyphs."
+       ],
+       [
+        "1906",
+        "Hugo Winckler uncovers the archive at Boğazköy."
+       ],
+       [
+        "1915",
+        "Bedřich Hrozný announces the decipherment of Hittite."
+       ],
+       [
+        "1947",
+        "Excavations begin at Karatepe with its bilingual inscription."
+       ],
+       [
+        "1986",
+        "Hattusa is inscribed on the UNESCO World Heritage List."
+       ]
+      ]
+     },
+     {
+      "typ": "tecky",
+      "h": "Languages of the empire on the globe",
+      "uvod": "All of these languages are extinct. Tap to show them on the globe:"
+     },
+     {
+      "typ": "zdroje",
+      "h": "Sources and further reading",
+      "p": [
+       "Harry A. Hoffner, H. Craig Melchert: A Grammar of the Hittite Language. Eisenbrauns 2008.",
+       "Trevor Bryce: The Kingdom of the Hittites. Oxford University Press 2005.",
+       "Bedřich Hrozný: Die Sprache der Hethiter. Leipzig 1917.",
+       "The Chicago Hittite Dictionary; Hethitologie-Portal Mainz (hethiter.net).",
+       "Glottolog 5 (languages and their classification)."
+      ]
+     }
+    ],
+    "nazvyTecek": {
+     "cune1239": "Luwian (cuneiform)",
+     "hier1240": "Luwian (hieroglyphic)",
+     "hitt1242": "Hittite",
+     "pala1331": "Palaic",
+     "hatt1246": "Hattic",
+     "hurr1240": "Hurrian"
+    }
+   }
+  }
+ ]
+}

@@ -374,6 +374,12 @@
     ]
    },
    {
+    "h": "Jazyky starověku",
+    "p": [
+     "Stránky o civilizacích starověku píše atlas podle odborné literatury, která je uvedena na konci každé stránky; údaje jsou před zveřejněním ověřené. Fotografie pocházejí z Wikimedia Commons a mají volnou licenci (CC BY, CC BY-SA, CC0 nebo volné dílo); autor a licence jsou uvedeni u každého snímku. Znaky klínového písma a anatolských hieroglyfů vykresluje písmo Noto (SIL Open Font License)."
+    ]
+   },
+   {
     "h": "Mapa",
     "p": [
      "Hranice států a pevnina jsou z Natural Earth (zjednodušené, měřítko 1 : 110 milionů). Reliéf a mořské dno jsou z Natural Earth a NOAA ETOPO1."
@@ -411,6 +417,11 @@
     "UDHR in Unicode – ukázky textu",
     "balíček udhr 6.0.0",
     "MIT"
+   ],
+   [
+    "Wikimedia Commons – fotografie ke stránkám o civilizacích",
+    "u každého snímku",
+    "CC BY, CC BY-SA, CC0"
    ],
    [
     "Natural Earth, NOAA ETOPO1 – mapa a reliéf",
@@ -528,6 +539,13 @@
     ]
    },
    {
+    "h": "Jazyky starověku",
+    "p": [
+     "V seznamu jazyků je pod Jazykem dne dlaždice Jazyky starověku. Otevře stránku o civilizaci zaměřenou na jazyk a písmo: dějiny, ukázky znaků, příběh rozluštění, příbuzná slova, stavbu jazyka, časovou osu, fotografie a literaturu. Zatím je hotová stránka o Chetitech.",
+     "Stránka se otevře nad glóbem; zavře ji křížek, klávesa Escape nebo klepnutí vedle ní. Tlačítka v oddílu o jazycích na glóbu ukážou příslušné vymřelé jazyky na glóbu. Stránku otevře také tlačítko na kartě jazyka (například chetitštiny nebo luvijštiny) a odkaz atlasjazyku.cz/#chetite; na webu je i jako samostatná stránka."
+    ]
+   },
+   {
     "h": "Klávesnice",
     "p": [
      "Tab přechází mezi ovládacími prvky. Do seznamu jazyků se vstoupí jedním stiskem Tab, mezi dlaždicemi se pohybuje šipkami, Home a End skočí na začátek a konec, Enter jazyk vybere.",
@@ -571,5 +589,16 @@
  "typologieKartaPozn": "Vlastnosti a hodnoty podle WALS Online. Uvedeny jsou jen ty, které WALS u jazyka popisuje.",
  "typologieNaMape": "Ukázat na mapě",
  "typologieJazykuWals": "{n} v datech WALS",
- "typologieJina": "Jiná vlastnost…"
+ "typologieJina": "Jiná vlastnost…",
+ "starovek": {
+  "stitek": "Jazyky starověku",
+  "vKostce": "V kostce",
+  "foto": "Foto",
+  "volneDilo": "volné dílo",
+  "zavrit": "Zavřít stránku",
+  "karta": "Stránka o civilizaci: jazyk a písmo",
+  "pata": "Ilustrace: Atlas jazyků. Fotografie: Wikimedia Commons, autoři a licence jsou uvedeni u snímků. Texty: Atlas jazyků podle odborné literatury uvedené výše.",
+  "titulek": "{n}: jazyk a písmo",
+  "zpet": "Zpět na glóbus"
+ }
 }

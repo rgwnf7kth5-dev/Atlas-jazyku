@@ -362,6 +362,37 @@ Netlify k němu udělá náhled. Pro pull request musí být v Settings → Acti
 „Allow GitHub Actions to create and approve pull requests“. `.github/workflows/kontrola.yml` spouští `npm run check`
 u každého pushe.
 
+## Jazyky starověku: stránky o civilizacích (od 26. 9. 2026)
+
+Nápad uživatele: „pro starověké jazyky extra stránky o té které civilizaci zaměřené na řeč a písmo, plovoucí nad
+glóbem, jako stránka moderní ilustrované encyklopedie; hodně ilustrací, zajímavý text, fotky“. Vstupy jsou oba:
+dlaždice **Jazyky starověku** v seznamu (pod Jazykem dne; při hledání, když hledání sedí na `hledat`), tlačítko na
+kartě tečky jazyka civilizace (`tecky` v datech) a odkaz `#chetite` / `#hittites`. Vzorová stránka: **Chetité**
+(uživatel vybral ze dvou návrhů, Chetité vs. Egypt). Další navržené: Egypt, Sumer a Akkad, Féničané, Řecko (lineární B
+→ alfabeta), Řím, Etruskové, Čína (věštebné kosti), Indie (sanskrt, bráhmí, písmo Indu), Persie, Mayové, Aksum.
+
+- Data `data/starovek.json`: `civilizace[]` s `id`, `adresa{cs,en}`, `krajina` (druh akvarelu), `tecky` (glottocody),
+  `pisma` (písma Noto), `fotky{klic: soubor, sirka, vyska, autor, licence, licenceUrl, zdroj, cs, en}` a texty `cs`/`en`
+  (`nazev, stitek, podtitul, perex, fakta, nazvyTecek, oddily[]`). Oddíly: `text, foto (siroka / na-vysku), rameček,
+  znaky, veta, slova, osa, galerie, tecky, zdroje`. Obě jazykové verze musí mít stejné pořadí oddílů (validace).
+- Šablona `src/starovek.js` (vrací HTML jako text) je jedna pro okno v aplikaci i pro samostatnou stránku webu
+  (`/starovek/chetite/`, `/en/ancient/hittites/`, v sitemapě). Styl `src/starovek.css` (papír a inkoust, v tmavém
+  vzhledu sépiová noc, proměnné `--civ-*`). Okno je `<dialog id="civ-okno">`, text se posouvá v `.civ-svitek`.
+- Fotky: `static/starovek/<id>/<klic>.jpg` (1200 px) a `<klic>-720.jpg` (srcset, v artefaktu vložené jako data:),
+  ilustrace pro sdílení `malba.jpg` (1200 × 630, vyrenderovaný akvarel). **Wikimedia je z Claude Code na webu
+  blokovaná**: kandidáty stahuje `scripts/fotky.mjs` v GitHub Actions (`.github/workflows/fotky.yml`, spustí se po
+  změně `data/fotky-hledat.json`) na samostatnou větev `foto-kandidati` i s autorem a licencí; stejně tak `texty`
+  (wikitext Wikipedie) k ověření faktů. Brát jen CC0, public domain, CC BY, CC BY-SA; autora a licenci uvést u fotky.
+- Edge funkce pouští `/starovek/*` na obou doménách z kořene (fotky jsou společné).
+- Klínové písmo a hieroglyfy: Google Fonts s `&text=` (jen použité znaky), odkaz dělá `STAROVEK.odkazPisma()`.
+  Znaky ověřit (`unicodedata.name`, hodnoty znaků podle chetitské tabulky znaků); písmo Unicode má mezopotámské tvary,
+  stránka to říká.
+- **Postup ověření:** texty napsat, pak je nechat nezávisle zkontrolovat (agent proti staženým zdrojům) a opravit.
+  U Chetitů tak opraveno např. Istanbul jen 1914 (ne 1914–1915), -ma = „však“, Lví brána bez pevné datace,
+  „jedna z nejstarších“ mírových smluv, Egyptské znění i v Ramesseu.
+- Nová civilizace: druh akvarelu v `src/akvarely.js`, fotky přes `data/fotky-hledat.json`, zmenšit (PIL) do
+  `static/starovek/<id>/`, texty cs/en, ověření, `npm run check`, test v prohlížeči.
+
 ## Barvy
 
 - **Vzhled „Hvězdná mapa se sklem“** (vybral uživatel 22. 9. 2026 ze tří návrhů: „B se sklem z A“).

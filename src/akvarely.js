@@ -1746,6 +1746,55 @@ var AKVARELY = (function(){
       return o + ptaci(F, r, 3, 60, 60);
     },
     /* Izrael (hebrejština): pahorky s olivovníky, město z pískově světlého kamene s plochými střechami a klenbami, na obzoru poušť */
+    /* Chattuša (Chetité, stránka o civilizaci): anatolská náhorní plošina, rekonstruovaný úsek hradeb z nepálených cihel
+       na kamenné podezdívce s věžemi a v popředí Lví brána – parabolický průchod mezi monolity, ze kterých vystupují lvi */
+    chattusa: function(F, r){
+      const q = nahoda(F.sem + 457);
+      let o = nebe(F, "#86B2DC", "#F4E2C0") + rasy(F, r, 3, 14, 40) + mraky(F, r, 2, 30, 56, 80);
+      o += hrebeny(F, [[112, 9, 80, 1.3, "#9AA0B8", .5], [126, 10, 64, 2.6, "#C4A474", .18]]);
+      /* pahorek s hradbou */
+      const pah = "M-10 256 L-10 150 Q60 128 150 132 Q230 136 300 150 Q360 160 420 158 L420 256 Z";
+      o += kryt(F, pah) + vrstva(F, pah, "#D2B478", "#A88850", .88);
+      o += trava(F, q, 50, 136, 170, ["#9A8048", "#B89A5A", "#7E6A3E"]);
+      /* hradba: podezdívka z kamene, nad ní nepálené cihly, věže s cimbuřím */
+      const vx = [-8, 44, 96, 148, 200], yv = function(x){ return 136 + Math.pow((x - 150) / 150, 2) * 10 - (x < 150 ? 2 : 0); };
+      let zed = "", pod = "", vez = "", cim = "", spary = "";
+      for (let x = -12; x < 214; x += 4) { const y = yv(x); zed += mnoho([[x, y - 4], [x + 4.4, y - 4], [x + 4.4, y - 17], [x, y - 17]]); pod += mnoho([[x, y + 1], [x + 4.4, y + 1], [x + 4.4, y - 4.5], [x, y - 4.5]]); }
+      vx.forEach(function(x){ const y = yv(x + 7);
+        vez += mnoho([[x, y + 1], [x + 15, y + 1], [x + 15, y - 30], [x, y - 30]]);
+        for (let k = 0; k < 3; k++) cim += mnoho([[x + .5 + k * 5.2, y - 30], [x + 4 + k * 5.2, y - 30], [x + 4 + k * 5.2, y - 33.5], [x + .5 + k * 5.2, y - 33.5]]);
+        spary += tah("M" + f1(x + 11) + " " + f1(y - 29) + " l0 29", "#8A6A48", .6, .35); });
+      for (let x = 6; x < 214; x += 11) { const y = yv(x); cim += mnoho([[x, y - 17], [x + 3.4, y - 17], [x + 3.4, y - 19.6], [x, y - 19.6]]); }
+      o += kryt(F, zed + pod + vez + cim, F.jemna) + vrstva(F, zed + vez + cim, "#E2BE8C", "#B48A5C", .95, F.jemna) + nanes(F, pod, "#A89C8A", .9);
+      for (let x = -10; x < 214; x += 9) spary += tah("M" + f1(x) + " " + f1(yv(x) - 10) + " l8 0", "#9A7650", .4, .3);
+      o += skupina(F, F.stetec, spary);
+      /* Lví brána: kamenný blok s parabolickým průchodem, obě strany střeží lvi */
+      const brana = "M240 240 L242 128 Q300 120 358 128 L360 240 L316 240 Q308 150 300 150 Q292 150 284 240 Z";
+      const pruchod = "M284 240 Q292 150 300 150 Q308 150 316 240 Z";
+      o += kryt(F, brana, F.jemna) + vrstva(F, brana, "#C4B6A0", "#8C7E6A", .95, F.jemna) + vrstva(F, pruchod, "#B4A07A", "#8E7650", .9, F.jemna);
+      let spoje = tah("M242 160 L250 160 M350 160 L358 160 M242 204 L250 204 M350 204 L358 204 M280 128 L282 150 M320 128 L318 150 M300 122 L300 150", "#6A5E50", .7, .45);
+      for (let i = 0; i < 26; i++) { const x = 244 + q() * 112, y = 132 + q() * 104; if (x > 282 && x < 318 && y > 150) continue; spoje += tah("M" + f1(x) + " " + f1(y) + " l" + f1(2 + q() * 5) + " " + f1((q() - .5) * 2), "#7A6E5E", .5, .3); }
+      o += skupina(F, F.stetec, spoje);
+      /* lvi vystupují z čel obou pilířů vedle průchodu, hledí dopředu: hříva, tvář, tlama, hruď a přední tlapy */
+      [264, 336].forEach(function(x){
+        let hr = ""; for (let k = 0; k < 20; k++) { const u = k / 20 * Math.PI * 2, u2 = (k + .5) / 20 * Math.PI * 2;
+          hr += (k ? " L" : "M") + f1(x + Math.cos(u) * 12.5) + " " + f1(177 + Math.sin(u) * 13.5) + " L" + f1(x + Math.cos(u2) * 14) + " " + f1(177 + Math.sin(u2) * 15.5); }
+        hr += " Z";
+        const hrud = "M" + (x - 10) + " 188 Q" + x + " 184 " + (x + 10) + " 188 L" + (x + 11) + " 238 L" + (x - 11) + " 238 Z";
+        const tvar = "M" + (x - 7) + " 170 Q" + x + " 164 " + (x + 7) + " 170 L" + (x + 6) + " 182 Q" + x + " 188 " + (x - 6) + " 182 Z";
+        o += kryt(F, hrud + hr, F.jemna) + vrstva(F, hrud, "#B8A890", "#7E7058", .95, F.jemna) + vrstva(F, hr, "#A89478", "#76684E", .95, F.jemna) +
+          nanes(F, tvar, "#CCBEA6", .95) + nanes(F, "M" + (x - 3.5) + " 180 L" + (x + 3.5) + " 180 Q" + (x + 3) + " 186 " + x + " 186.5 Q" + (x - 3) + " 186 " + (x - 3.5) + " 180 Z", "#4A3830", .85) +
+          nanes(F, "M" + (x - 2.2) + " 176.5 L" + (x + 2.2) + " 176.5 L" + x + " 179 Z", "#5A4A3E", .8) +
+          '<circle cx="' + (x - 3) + '" cy="173" r="1.1" fill="#3A302C" opacity=".85"/><circle cx="' + (x + 3) + '" cy="173" r="1.1" fill="#3A302C" opacity=".85"/>' +
+          skupina(F, F.stetec, tah("M" + x + " 175 l0 4 M" + (x - 5) + " 204 l0 33 M" + (x + 5) + " 204 l0 33 M" + (x - 8) + " 236 l6 0 M" + (x + 2) + " 236 l6 0", "#5E5242", .6, .45));
+      });
+      /* popředí: vyšlapaná cesta k bráně, suchá tráva a bodláky */
+      const pop = "M-10 256 L-10 222 Q120 212 240 228 Q330 240 420 230 L420 256 Z";
+      o += kryt(F, pop) + vrstva(F, pop, "#C8A462", "#94743E", .9);
+      o += mok(F, "M270 256 Q284 246 290 240 L312 240 Q322 248 342 256 Z", "#EAD6AA", .75);
+      o += trava(F, q, 90, 222, 252, ["#8A6E36", "#A88A48", "#6E5A30", "#C0A060"]) + kvety(F, q, 10, 228, 252, ["#8E5AA8", "#B07AC0"], 1.2);
+      return o + ptaci(F, r, 3, 120, 52);
+    },
     izrael: function(F, r){
       const q = nahoda(F.sem + 449);
       let o = nebe(F, "#7EB0E2", "#F6EAD0") + rasy(F, r, 2, 12, 30);

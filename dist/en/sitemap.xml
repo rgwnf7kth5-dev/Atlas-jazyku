@@ -1002,4 +1002,10 @@
     <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/kalendar-jazyku/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/language-days/"/>
   </url>
+  <url>
+    <loc>https://thelanguageatlas.com/ancient/hittites/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/starovek/chetite/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/ancient/hittites/"/>
+  </url>
 </urlset>
