@@ -4101,7 +4101,7 @@ var STAROVEK = (function(){
     if (!f) return "";
     const sada = o.fotoMala ? ' srcset="' + esc(o.fotoMala(klic)) + " " + Math.min(720, f.sirka) + "w, " + esc(o.foto(klic)) + " " + f.sirka + 'w" sizes="' + (trida === "siroka" ? "(max-width:1100px) 100vw, 1020px" : "(max-width:760px) 100vw, 360px") + '"' : "";
     return '<figure class="civ-foto' + (trida ? " " + trida : "") + '"><img src="' + esc(o.foto(klic)) + '"' + sada + ' width="' + f.sirka + '" height="' + f.vyska +
-      '" loading="lazy" decoding="async" alt="' + esc(f[lang]) + '"><figcaption>' + esc(f[lang]) + " " + kredit(f, o.U) + "</figcaption></figure>";
+      '" loading="lazy" decoding="async" alt="' + esc(f[lang]) + '"><figcaption>' + text(f[lang]) + " " + kredit(f, o.U) + "</figcaption></figure>";
   }
   function oddil(c, b, lang, o){
     const U = o.U, h = b.h ? "<h2>" + esc(b.h) + "</h2>" : "";
