@@ -11,5 +11,12 @@
  "inte1263": {
   "poloha": null,
   "proc": "Mezinárodní pomocný jazyk: vytvořili ho lidé, aby se domluvili napříč zeměmi, na žádném místě nevznikl. Glottolog mu přesto dává tečku (esperanto ve Francii se zemí Polsko), proto je bez polohy (přání uživatele 24. 9. 2026). Jde o interslovanštinu."
+ },
+ "clas1250": {
+  "poloha": [
+   -99.13,
+   19.43
+  ],
+  "proc": "Klasický nahuatl byl jazykem Tenochtitlánu v údolí Mexika (dnes Ciudad de México); Glottolog ho klade k Xalapě ve Veracruzu. Přesunuto při psaní stránky o Aztécích (26. 9. 2026)."
  }
 }
