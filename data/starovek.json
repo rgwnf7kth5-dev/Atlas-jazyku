@@ -33,7 +33,7 @@
      "soubor": "champollion.jpg",
      "sirka": 458,
      "vyska": 564,
-     "autor": "",
+     "autor": "Léon Cogniet",
      "licence": "Public domain",
      "licenceUrl": "",
      "zdroj": "https://commons.wikimedia.org/wiki/File:Jean-Francois_Champollion_2.jpg",
@@ -48,8 +48,8 @@
      "licence": "Public domain",
      "licenceUrl": "",
      "zdroj": "https://commons.wikimedia.org/wiki/File:Narmer_palette_(obverse).jpg",
-     "cs": "Narmerova paleta (asi 3100 př. n. l.), jeden z nejstarších dokladů egyptského písma: jméno krále nahoře je zapsané znaky sumce a dláta. Egyptské muzeum v Káhiře.",
-     "en": "The Narmer Palette (c. 3100 BCE), one of the earliest records of Egyptian writing: the king's name at the top is written with the signs of a catfish and a chisel. Egyptian Museum, Cairo."
+     "cs": "Narmerova paleta (asi 3100 př. n. l.), jeden z nejstarších dokladů egyptského písma: jméno krále nahoře je zapsané znaky sumce a dláta.",
+     "en": "The Narmer Palette (c. 3100 BCE), one of the earliest records of Egyptian writing: the king's name at the top is written with the signs of a catfish and a chisel."
     },
     "pisar": {
      "soubor": "pisar.jpg",
@@ -143,7 +143,7 @@
      "soubor": "protosinajske.jpg",
      "sirka": 866,
      "vyska": 577,
-     "autor": "",
+     "autor": "Alan H. Gardiner",
      "licence": "Public domain",
      "licenceUrl": "",
      "zdroj": "https://commons.wikimedia.org/wiki/File:Proto-Sinaitic_inscription_number_345_(cropped).jpg",
@@ -204,7 +204,7 @@
      ],
      [
       "Jazyk",
-      "egyptština, vlastním jménem r n km.t, „řeč Egypta“"
+      "egyptština; v Příběhu Sinuhetově r n km.t, „řeč Egypta“"
      ],
      [
       "Jazyková rodina",
@@ -246,7 +246,7 @@
       "h": "Jeden jazyk, pět podob",
       "p": [
        "Egyptština je samostatnou větví afroasijské rodiny; jejími vzdálenými příbuznými jsou semitské jazyky (arabština, hebrejština), berberské, kušitské a čadské jazyky. Za více než čtyři tisíciletí prošla vývojem, který egyptologové dělí na pět období: staroegyptštinu, střední egyptštinu (klasický jazyk literatury, psaný i dlouho poté, co se přestal mluvit), pozdní egyptštinu, démotickou egyptštinu a koptštinu.",
-       "Jako mluvený jazyk ustoupila koptština po arabském dobytí Egypta (641 n. l.) postupně arabštině a vymřela zhruba v 17. století. Jako liturgický jazyk koptské církve se užívá dodnes."
+       "Jako mluvený jazyk ustoupila koptština po arabském dobytí Egypta (639–642 n. l.) postupně arabštině a vymřela zhruba v 17. století. Jako liturgický jazyk koptské církve se užívá dodnes."
       ]
      },
      {
@@ -268,7 +268,7 @@
        ]
       ],
       "preklad": "„řeč Egypta“",
-      "vyklad": "Tak Egypťané nazývali svůj jazyk. Km.t, „Černá“, je úrodná nilská půda, na rozdíl od „Červené země“ pouště. Svislá čárka za znakem úst říká, že se znak čte jako celé slovo; znak na konci je určovatel země či města a nečte se. V koptštině se jazyk jmenuje ⲧⲙⲛ̄ⲧⲣⲙ̄ⲛ̄ⲕⲏⲙⲉ – i v tomto jménu žije stará km.t (koptsky kēme)."
+      "vyklad": "Tak egyptský jazyk nazývá Příběh Sinuhetův; jinde je toto označení doloženo jen výjimečně. Km.t, „Černá“, je úrodná nilská půda, na rozdíl od „Červené země“ pouště. Svislá čárka za znakem úst říká, že se znak čte jako celé slovo; znak na konci je určovatel země či města a nečte se. V koptštině se jazyk jmenuje (sahidsky) ⲧⲙⲛ̄ⲧⲣⲙ̄ⲛ̄ⲕⲏⲙⲉ – i v tomto jménu žije stará km.t (koptsky kēme)."
      },
      {
       "typ": "foto",
@@ -288,7 +288,7 @@
       "h": "Hieroglyfy: obrázky, které se čtou",
       "p": [
        "Slovo hieroglyf pochází z řečtiny a znamená „posvátná řezba“; Egypťané mluvili o „božích slovech“. Hieroglyfy nejsou obrázkové písmo v prostém smyslu: kombinují znaky pro celá slova, znaky pro jednu, dvě nebo tři souhlásky a určovatele (determinativy), které se nečtou a jen upřesňují význam – například postavička muže u slov pro lidi.",
-       "Klasická střední egyptština používala asi sedm set znaků, v ptolemaiovské době jich kněží vytvořili několik tisíc. Písmo zapisovalo jen souhlásky; samohlásky neznáme, a proto egyptologové při výslovnosti vkládají mezi souhlásky e: nfr se čte nefer. Psalo se nejčastěji zprava doleva, ale také zleva doprava a ve sloupcích; postavy a zvířata vždy hledí k začátku řádku."
+       "Klasická střední egyptština používala asi 700–800 znaků, v ptolemaiovské době jich kněží vytvořili několik tisíc. Písmo zapisovalo jen souhlásky; samohlásky neznáme, a proto egyptologové při výslovnosti vkládají mezi souhlásky e: nfr se čte nefer. Psalo se nejčastěji zprava doleva, ale také zleva doprava a ve sloupcích; postavy a zvířata vždy hledí k začátku řádku."
       ]
      },
      {
@@ -499,7 +499,7 @@
       "typ": "text",
       "h": "Champollion: „Mám to!“",
       "p": [
-       "Champollion porovnal jména Ptolemaia a Kleopatry v kartuších z Rosettské desky a z obelisku z Philae a získal hodnoty řady znaků. V září 1822 pak v kopiích nápisů z Abú Simbelu přečetl egyptská jména Ramesse a Thutmose – a pochopil, že fonetické znaky nesloužily jen k zápisu cizích jmen. Podle známé historky vběhl k bratrovi se slovy „Je tiens l’affaire!“ („Mám to!“) a omdlel.",
+       "Champollion porovnal jméno Ptolemaia z Rosettské desky se jmény Ptolemaia a Kleopatry z obelisku z Philae a získal hodnoty řady znaků. V září 1822 pak v kopiích nápisů z Abú Simbelu přečetl egyptská jména Ramesse a Thutmose – a pochopil, že fonetické znaky nesloužily jen k zápisu cizích jmen. Podle známé historky vběhl k bratrovi se slovy „Je tiens l’affaire!“ („Mám to!“) a omdlel.",
        "Svůj objev ohlásil 27. září 1822 v Dopise panu Dacierovi a v roce 1824 vydal celkový popis písma: hieroglyfy kombinují znaky fonetické se znaky pro slova. Znalost koptštiny mu pomohla poznat, co jednotlivá slova znamenají."
       ]
      },
@@ -558,15 +558,15 @@
       "typ": "text",
       "h": "Z hieroglyfů abeceda",
       "p": [
-       "V Serabit el-Chádim na Sinaji, kde Egypťané těžili tyrkys, objevil Flinders Petrie v letech 1904–1905 krátké nápisy v neznámém písmu. Alan Gardiner v roce 1916 ukázal, že jde o semitský jazyk zapsaný znaky, které napodobují hieroglyfy: každý znak označoval první hlásku svého jména. Kresba býčí hlavy (ʾalp, „býk“) znamenala ʾ, domek (bayt) b, vlnovka vody (mayim) m.",
-       "Z tohoto protosinajského písma se vyvinula fénická abeceda a z ní řecká, latinka i další abecedy. Písmeno A je tak vzdáleným potomkem býčí hlavy, převrácené vzhůru nohama."
+       "V Serabit el-Chádim na Sinaji, kde Egypťané těžili tyrkys, objevili Hilda a Flinders Petrieovi v letech 1904–1905 krátké nápisy v neznámém písmu. Alan Gardiner v roce 1916 ukázal, že jde o semitský jazyk zapsaný znaky, které napodobují hieroglyfy: každý znak označoval první hlásku svého jména. Kresba býčí hlavy (ʾalp, „býk“) znamenala ʾ, domek (bayt) b, vlnovka vody (mayim) m.",
+       "Z tohoto protosinajského písma a jeho kenaanských obdob se vyvinula fénická abeceda a z ní řecká, latinka i další abecedy. Písmeno A je tak vzdáleným potomkem býčí hlavy, převrácené vzhůru nohama."
       ]
      },
      {
       "typ": "text",
       "h": "Česká egyptologie",
       "p": [
-       "Zakladatelem české egyptologie je František Lexa (1876–1960), rodák z Pardubic, profesor Univerzity Karlovy a autor rozsáhlé mluvnice démotštiny. Jeho žák Zbyněk Žába stál v čele Československého egyptologického ústavu, založeného roku 1958.",
+       "Zakladatelem české egyptologie je František Lexa (1876–1960), rodák z Pardubic, profesor Univerzity Karlovy a autor rozsáhlé mluvnice démotštiny. Roku 1958 vznikl Československý egyptologický ústav; po Lexově smrti ho od roku 1960 vedl jeho žák Zbyněk Žába.",
        "Čeští a slovenští egyptologové se v 60. letech zapojili do záchrany památek Núbie před zatopením Asuánskou přehradou a od roku 1960 zkoumají pyramidové pole v Abúsíru jižně od Káhiry. Pod vedením Miroslava Vernera a jeho nástupců zde objevili mimo jiné neporušenou hrobku kněze Iufaa a pyramidu královny Chentkaus II."
       ]
      },
@@ -583,7 +583,7 @@
       "h": "Časová osa",
       "udalosti": [
        [
-        "asi 3250–3200 př. n. l.",
+        "asi 3300–3200 př. n. l.",
         "Popisky z hrobky U-j v Abydu – nejstarší egyptské písmo."
        ],
        [
@@ -608,7 +608,7 @@
        ],
        [
         "332 př. n. l.",
-        "Alexandr Veliký dobývá Egypt; vláda Ptolemaiovců."
+        "Alexandr Veliký dobývá Egypt; po jeho smrti vládnou Ptolemaiovci."
        ],
        [
         "196 př. n. l.",
@@ -687,7 +687,7 @@
      ],
      [
       "Language",
-      "Egyptian, called r n km.t, “the speech of Egypt”, by its speakers"
+      "Egyptian; in the Story of Sinuhe r n km.t, “the speech of Egypt”"
      ],
      [
       "Language family",
@@ -729,7 +729,7 @@
       "h": "One language, five stages",
       "p": [
        "Egyptian forms a branch of its own within the Afroasiatic family; its distant relatives are the Semitic languages (Arabic, Hebrew) and the Berber, Cushitic and Chadic languages. Over more than four millennia it developed through what Egyptologists divide into five stages: Old Egyptian, Middle Egyptian (the classical literary language, written long after it ceased to be spoken), Late Egyptian, Demotic and Coptic.",
-       "As a spoken language Coptic gradually gave way to Arabic after the Arab conquest of Egypt (641 CE) and died out around the 17th century. It is still used as the liturgical language of the Coptic Church."
+       "As a spoken language Coptic gradually gave way to Arabic after the Arab conquest of Egypt (639–642 CE) and died out around the 17th century. It is still used as the liturgical language of the Coptic Church."
       ]
      },
      {
@@ -751,7 +751,7 @@
        ]
       ],
       "preklad": "“the speech of Egypt”",
-      "vyklad": "This is what the Egyptians called their language. Km.t, “the Black”, is the fertile soil of the Nile, as opposed to the “Red Land” of the desert. The stroke after the mouth sign shows that the sign is read as a whole word; the final sign is a determinative for a land or town and is not pronounced. In Coptic the language is called ⲧⲙⲛ̄ⲧⲣⲙ̄ⲛ̄ⲕⲏⲙⲉ – the old km.t (Coptic kēme) lives on in this name too."
+      "vyklad": "This is what the Story of Sinuhe calls the Egyptian language; elsewhere the term is attested only exceptionally. Km.t, “the Black”, is the fertile soil of the Nile, as opposed to the “Red Land” of the desert. The stroke after the mouth sign shows that the sign is read as a whole word; the final sign is a determinative for a land or town and is not pronounced. In Coptic the language is called (in Sahidic) ⲧⲙⲛ̄ⲧⲣⲙ̄ⲛ̄ⲕⲏⲙⲉ – the old km.t (Coptic kēme) lives on in this name too."
      },
      {
       "typ": "foto",
@@ -771,7 +771,7 @@
       "h": "Hieroglyphs: pictures that are read",
       "p": [
        "The word hieroglyph comes from Greek and means “sacred carving”; the Egyptians spoke of “the god's words”. Hieroglyphs are not picture writing in a simple sense: they combine signs for whole words, signs for one, two or three consonants, and determinatives, which are not read but only clarify the meaning – for example the figure of a man with words for people.",
-       "Classical Middle Egyptian used some seven hundred signs; in the Ptolemaic period the priests created several thousand. The script recorded only consonants; the vowels are unknown, so Egyptologists insert an e between consonants when pronouncing: nfr is read nefer. Writing ran most often from right to left, but also from left to right and in columns; people and animals always face the beginning of the line."
+       "Classical Middle Egyptian used some 700–800 signs; in the Ptolemaic period the priests created several thousand. The script recorded only consonants; the vowels are unknown, so Egyptologists insert an e between consonants when pronouncing: nfr is read nefer. Writing ran most often from right to left, but also from left to right and in columns; people and animals always face the beginning of the line."
       ]
      },
      {
@@ -982,7 +982,7 @@
       "typ": "text",
       "h": "Champollion: “I've got it!”",
       "p": [
-       "Champollion compared the names of Ptolemy and Cleopatra in cartouches from the Rosetta Stone and the Philae obelisk and obtained the values of a number of signs. In September 1822 he read the Egyptian names Ramesses and Thutmose in copies of inscriptions from Abu Simbel – and understood that phonetic signs were not used only for foreign names. According to a well-known story he ran to his brother crying “Je tiens l'affaire!” (“I've got it!”) and fainted.",
+       "Champollion compared the name of Ptolemy on the Rosetta Stone with the names of Ptolemy and Cleopatra on the Philae obelisk and obtained the values of a number of signs. In September 1822 he read the Egyptian names Ramesses and Thutmose in copies of inscriptions from Abu Simbel – and understood that phonetic signs were not used only for foreign names. According to a well-known story he ran to his brother crying “Je tiens l'affaire!” (“I've got it!”) and fainted.",
        "He announced his discovery on 27 September 1822 in the Letter to Monsieur Dacier, and in 1824 published a full description of the script: hieroglyphs combine phonetic signs with signs for words. His knowledge of Coptic helped him recognise what individual words meant."
       ]
      },
@@ -1041,15 +1041,15 @@
       "typ": "text",
       "h": "From hieroglyphs to the alphabet",
       "p": [
-       "At Serabit el-Khadim in Sinai, where the Egyptians mined turquoise, Flinders Petrie discovered short inscriptions in an unknown script in 1904–1905. In 1916 Alan Gardiner showed that they record a Semitic language in signs imitating hieroglyphs: each sign stood for the first sound of its name. The drawing of an ox head (ʾalp, “ox”) stood for ʾ, a house (bayt) for b, a ripple of water (mayim) for m.",
-       "From this Proto-Sinaitic script developed the Phoenician alphabet, and from it the Greek and Latin alphabets and many others. The letter A is thus a distant descendant of an ox head, turned upside down."
+       "At Serabit el-Khadim in Sinai, where the Egyptians mined turquoise, Hilda and Flinders Petrie discovered short inscriptions in an unknown script in 1904–1905. In 1916 Alan Gardiner showed that they record a Semitic language in signs imitating hieroglyphs: each sign stood for the first sound of its name. The drawing of an ox head (ʾalp, “ox”) stood for ʾ, a house (bayt) for b, a ripple of water (mayim) for m.",
+       "From this Proto-Sinaitic script and its Canaanite counterparts developed the Phoenician alphabet, and from it the Greek and Latin alphabets and many others. The letter A is thus a distant descendant of an ox head, turned upside down."
       ]
      },
      {
       "typ": "text",
       "h": "Czech Egyptology",
       "p": [
-       "The founder of Czech Egyptology is František Lexa (1876–1960), born in Pardubice, professor at Charles University in Prague and author of a comprehensive grammar of Demotic. His pupil Zbyněk Žába headed the Czechoslovak Institute of Egyptology, founded in 1958.",
+       "The founder of Czech Egyptology is František Lexa (1876–1960), born in Pardubice, professor at Charles University in Prague and author of a comprehensive grammar of Demotic. The Czechoslovak Institute of Egyptology was founded in 1958; after Lexa’s death it was headed from 1960 by his pupil Zbyněk Žába.",
        "In the 1960s Czech and Slovak Egyptologists took part in the rescue of the monuments of Nubia before their flooding by the Aswan High Dam, and since 1960 they have been excavating the pyramid field of Abusir south of Cairo. Under Miroslav Verner and his successors they discovered, among other things, the intact tomb of the priest Iufaa and the pyramid of Queen Khentkaus II."
       ]
      },
@@ -1066,7 +1066,7 @@
       "h": "Timeline",
       "udalosti": [
        [
-        "c. 3250–3200 BCE",
+        "c. 3300–3200 BCE",
         "Labels from tomb U-j at Abydos – the earliest Egyptian writing."
        ],
        [
@@ -1091,7 +1091,7 @@
        ],
        [
         "332 BCE",
-        "Alexander the Great conquers Egypt; Ptolemaic rule."
+        "Alexander the Great conquers Egypt; after his death the Ptolemies rule."
        ],
        [
         "196 BCE",

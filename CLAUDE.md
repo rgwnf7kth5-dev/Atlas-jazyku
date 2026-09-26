@@ -394,6 +394,8 @@ v `data/starovek.json`). Další navržené: Sumer a Akkad, Féničané, Řecko 
 - **Postup ověření:** texty napsat, pak je nechat nezávisle zkontrolovat (agent proti staženým zdrojům) a opravit.
   U Chetitů tak opraveno např. Istanbul jen 1914 (ne 1914–1915), -ma = „však“, Lví brána bez pevné datace,
   „jedna z nejstarších“ mírových smluv, Egyptské znění i v Ramesseu.
+  U Egypta: r n km.t je doloženo jen v Příběhu Sinuhetově (ne „vlastní jméno jazyka“), Kleopatra není na
+  Rosettské desce (je na obelisku z Philae), ústav 1958 vedl nejdřív Lexa a od 1960 Žába, arabské dobytí 639–642.
 - Nová civilizace: druh akvarelu v `src/akvarely.js`, fotky přes `data/fotky-hledat.json`, zmenšit (PIL) do
   `static/starovek/<id>/`, texty cs/en, ověření, `npm run check`, test v prohlížeči.
 
