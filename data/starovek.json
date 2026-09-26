@@ -503,7 +503,7 @@
         "nazev": "Elamské klínové písmo",
         "doba": "od konce 3. tis. př. n. l.",
         "ukazka": null,
-        "civ": "persie",
+        "civ": "elam",
         "jistota": "jista",
         "pozn": "Elamité převzali akkadské klínové písmo. V perské říši se jím vedly úřední záznamy, například tisíce tabulek z Persepole."
        },
@@ -1219,7 +1219,7 @@
         "nazev": "Elamite cuneiform",
         "doba": "from the late 3rd millennium BCE",
         "ukazka": null,
-        "civ": "persie",
+        "civ": "elam",
         "jistota": "jista",
         "pozn": "The Elamites adopted Akkadian cuneiform. In the Persian Empire it was used for administrative records, such as the thousands of tablets from Persepolis."
        },
@@ -2085,7 +2085,6 @@
    "tecky": [
     "sume1241",
     "akka1240",
-    "elam1244",
     "impe1235"
    ],
    "pisma": [
@@ -2274,7 +2273,6 @@
     "nazvyTecek": {
      "sume1241": "Sumerština",
      "akka1240": "Akkadština",
-     "elam1244": "Elamština",
      "impe1235": "Aramejština"
     },
     "oddily": [
@@ -2603,7 +2601,6 @@
     "nazvyTecek": {
      "sume1241": "Sumerian",
      "akka1240": "Akkadian",
-     "elam1244": "Elamite",
      "impe1235": "Aramaic"
     },
     "oddily": [
@@ -4039,6 +4036,1024 @@
        "Alan Gardiner: Egyptian Grammar. Griffith Institute, 3rd ed. 1957.",
        "Richard Parkinson: Cracking Codes. The Rosetta Stone and Decipherment. British Museum Press 1999.",
        "Czech Institute of Egyptology, Faculty of Arts, Charles University.",
+       "Glottolog 5 (languages and their classification)."
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "elam",
+   "adresa": {
+    "cs": "elam-a-urartu",
+    "en": "elam-and-urartu"
+   },
+   "krajina": "cogazanbil",
+   "hledat": "elam elamove elamstina elamite elamites susy susa suza anshan ansan coga zanbil chogha zanbil untas napirisa untash napirisha inshushinak protoelamske proto-elamite linearni elamske linear elamite desset klinove pismo cuneiform urartu urartstina urartian urartejci ararat biainili van tuspa tushpa erebuni jerevan yerevan argisti argishti churrijstina hurrian behistun persepolis",
+   "tecky": [
+    "elam1244",
+    "urar1245"
+   ],
+   "pisma": [
+    "Noto Sans Cuneiform"
+   ],
+   "fotky": {
+    "cogazanbil": {
+     "soubor": "cogazanbil.jpg",
+     "sirka": 755,
+     "vyska": 620,
+     "autor": "Bazras55",
+     "licence": "CC BY-SA 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Temple_of_Chogha_Zhanbil_Ziggurat_Chogha_Zanbil-Photo_by_Abolfazl_Haddadzadeh_Niri.jpg",
+     "cs": "Zikkurat v Čoga Zanbílu (Chúzistán, Írán), postavený za krále Untaš-Napiriši, a zbytky staveb kolem něj.",
+     "en": "The ziggurat of Chogha Zanbil (Khuzestan, Iran), built under King Untash-Napirisha, with the remains of the buildings around it."
+    },
+    "susy": {
+     "soubor": "susy.jpg",
+     "sirka": 1200,
+     "vyska": 900,
+     "autor": "Pentocelo",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Royal_City_and_Acropolis_Tepes.jpg",
+     "cs": "Pahorky Královského města (vlevo) a Akropole (vpravo) v Súsách při pohledu z pahorku Apadany.",
+     "en": "The mounds of the Royal City (left) and the Acropolis (right) at Susa, seen from the Apadana mound."
+    },
+    "protoel": {
+     "soubor": "protoel.jpg",
+     "sirka": 1200,
+     "vyska": 801,
+     "autor": "Darafsh",
+     "licence": "CC BY 3.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Proto-elamite_tablet-_ca_3000_BCE_-_Tepe_Yahya_(Kerman_Province)_-_National_Museum_of_Iran_-_Inv._number_341_(cropped).jpg",
+     "cs": "Protoelamská hliněná tabulka z Tepe Jahjá v provincii Kermán, asi 3000 př. n. l. Kulaté a podlouhlé vtisky jsou čísla, vedle nich jsou znaky protoelamského písma. Národní muzeum Íránu, Teherán.",
+     "en": "A Proto-Elamite clay tablet from Tepe Yahya in Kerman Province, c. 3000 BCE. The round and elongated impressions are numbers, set beside signs of the Proto-Elamite script. National Museum of Iran, Tehran."
+    },
+    "byk": {
+     "soubor": "byk.jpg",
+     "sirka": 450,
+     "vyska": 660,
+     "autor": "Sajjadi Livejournal",
+     "licence": "CC BY 2.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by/2.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Proto-Elamite_kneeling_bull_holding_a_spouted_vessel.jpg",
+     "cs": "Stříbrná soška klečícího býka s nádobou s hubičkou, protoelamské období (asi 3100–2900 př. n. l.). Metropolitní muzeum umění, New York.",
+     "en": "A silver figure of a kneeling bull holding a spouted vessel, Proto-Elamite period (c. 3100–2900 BCE). Metropolitan Museum of Art, New York."
+    },
+    "lev": {
+     "soubor": "lev.jpg",
+     "sirka": 1200,
+     "vyska": 604,
+     "autor": "Jean-Vincent Scheil",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Bilingual_Linear_Elamite_Akkadian_inscription_of_king_Kutik-Inshushinak_Table_of_the_Lion_Louvre_Museum_Sb_17.jpg",
+     "cs": "„Lví deska“ (Table au lion) krále Puzur-Inšušinaka ze Sús s nápisem akkadským klínovým a lineárním elamským písmem, na staré fotografii, kterou publikoval Vincent Scheil. Louvre, Paříž (Sb 17).",
+     "en": "The “Table au lion” of King Puzur-Inshushinak from Susa, inscribed in Akkadian cuneiform and in Linear Elamite, in an early photograph published by Vincent Scheil. Louvre, Paris (Sb 17)."
+    },
+    "kamen": {
+     "soubor": "kamen.jpg",
+     "sirka": 1200,
+     "vyska": 521,
+     "autor": "Zunkir",
+     "licence": "CC BY-SA 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Sb_6_et_177_inscription_elamite_lineaire.jpg",
+     "cs": "Lineární elamský nápis na provrtaném vápencovém kameni Puzur-Inšušinaka ze Sús, asi 2100 př. n. l. Louvre, Paříž (Sb 6 a Sb 177).",
+     "en": "The Linear Elamite inscription on the perforated limestone block of Puzur-Inshushinak from Susa, c. 2100 BCE. Louvre, Paris (Sb 6 and Sb 177)."
+    },
+    "silhak": {
+     "soubor": "silhak.jpg",
+     "sirka": 1200,
+     "vyska": 800,
+     "autor": "Dorieo",
+     "licence": "CC BY-SA 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Inscripci%C3%B3n_cuneiforme_en_elamita_del_rey_Shilhak-Inshushinak_(Susa,_Ir%C3%A1n)_-_MARQ.jpg",
+     "cs": "Elamský klínový nápis krále Šilhak-Inšušinaka ze Sús, středoelamské období. Národní muzeum Íránu, Teherán.",
+     "en": "An Elamite cuneiform inscription of King Shilhak-Inshushinak from Susa, Middle Elamite period. National Museum of Iran, Tehran."
+    },
+    "deska": {
+     "soubor": "deska.jpg",
+     "sirka": 1159,
+     "vyska": 1100,
+     "autor": "Osama Shukir Muhammed Amin",
+     "licence": "CC BY-SA 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Glazed_(originally_blue)_door_plaque_with_boss._The_Elamite_cuneiform_inscription_reads_%22Palace_of_Untash-Napirisha,_King_of_Elam%22._13th_centiury_BCE._From_Choga_Zanbil,_Iran._British_Museum.jpg",
+     "cs": "Glazovaná (původně modrá) dveřní deska s puklicí z Čoga Zanbílu, 13. století př. n. l. Elamský klínový nápis na puklici zní „Palác Untaš-Napiriši, krále Elamu“. Britské muzeum, Londýn.",
+     "en": "A glazed (originally blue) door plaque with a boss from Chogha Zanbil, 13th century BCE. The Elamite cuneiform inscription on the boss reads “Palace of Untash-Napirisha, King of Elam”. British Museum, London."
+    },
+    "tabulka": {
+     "soubor": "tabulka.jpg",
+     "sirka": 1200,
+     "vyska": 896,
+     "autor": "",
+     "licence": "CC0",
+     "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Cuneiform_tablet_impressed_with_seals-_administrative_document_inscribed_in_Achaemenid_Elamite_MET_DP254535.jpg",
+     "cs": "Hliněná tabulka s otisky pečetí, správní záznam v achaimenovské elamštině. Metropolitní muzeum umění, New York.",
+     "en": "A clay tablet with seal impressions, an administrative record in Achaemenid Elamite. Metropolitan Museum of Art, New York."
+    },
+    "van": {
+     "soubor": "van.jpg",
+     "sirka": 1200,
+     "vyska": 501,
+     "autor": "Bjørn Christian Tørrissen",
+     "licence": "CC BY-SA 3.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Van_Fortress_From_Northwest.JPG",
+     "cs": "Skalní hrad ve Vanu ze severozápadu, místo urartské Tušpy, několik kilometrů západně od dnešního města Van ve východním Turecku.",
+     "en": "The rock of Van Fortress seen from the northwest, the site of Urartian Tushpa, a few kilometres west of the modern town of Van in eastern Turkey."
+    },
+    "sarduri": {
+     "soubor": "sarduri.jpg",
+     "sirka": 1200,
+     "vyska": 1009,
+     "autor": "Enlil2",
+     "licence": "CC BY-SA 3.0",
+     "licenceUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Urartian_inscription_for_granaries.jpg",
+     "cs": "Urartský klínový nápis krále Sarduriho o stavbě sýpky.",
+     "en": "A Urartian cuneiform inscription of King Sarduri recording the building of a granary."
+    },
+    "rusa": {
+     "soubor": "rusa.jpg",
+     "sirka": 721,
+     "vyska": 1100,
+     "autor": "Beko",
+     "licence": "CC BY-SA 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:A_cuneiform_inscription_of_Rusa_II.jpg",
+     "cs": "Stéla urartského krále Rusy II. o stavbě kanálu, který přiváděl vodu z řeky Ildaruni (Hrazdan) do města Quarlini. Muzeum ve Zvartnocu, Arménie.",
+     "en": "A stela of the Urartian king Rusa II recording a canal that brought water from the Ildaruni (Hrazdan) river to the town of Quarlini. Zvartnots museum, Armenia."
+    },
+    "erebuni": {
+     "soubor": "erebuni.jpg",
+     "sirka": 1200,
+     "vyska": 800,
+     "autor": "Marcin Konsek",
+     "licence": "CC BY-SA 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:2014_Erywa%C5%84,_Erebuni,_Ruiny_twierdzy_(04).jpg",
+     "cs": "Částečně rekonstruované hradby pevnosti Erebuni na pahorku Arin Berd v Jerevanu.",
+     "en": "The partly reconstructed walls of Erebuni Fortress on the Arin Berd hill in Yerevan."
+    },
+    "pas": {
+     "soubor": "pas.jpg",
+     "sirka": 1200,
+     "vyska": 692,
+     "autor": "Zunkir",
+     "licence": "CC BY-SA 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Bronze_belt_Urartu_-_BM.jpg",
+     "cs": "Zlomky urartského bronzového opasku ze 7. století př. n. l., později upravené na konce opasků: božstva stojící na býku a lvu, kotouče a stylizované stromy. Britské muzeum, Londýn.",
+     "en": "Fragments of a Urartian bronze belt, 7th century BCE, later reused as belt ends: deities standing on a bull and a lion, discs and stylised trees. British Museum, London."
+    }
+   },
+   "cs": {
+    "nazev": "Elam a Urartu",
+    "stitek": "Jazyky starověku",
+    "podtitul": "Jihozápadní Írán a Arménská vysočina · od protoelamských tabulek po perské úřady",
+    "perex": "Elamština a urartština nepatří mezi semitské ani indoevropské jazyky a nejsou příbuzné ani spolu navzájem. V jihozápadním Íránu vznikla vlastní písma; nejstarší z nich dodnes nikdo nepřečetl a není jisté, zda zapisovalo elamštinu. Elamité později psali klínovým písmem převzatým z Mezopotámie a jejich jazykem ještě vedli záznamy úředníci perských králů. Urartejci u jezera Van si klínové písmo vypůjčili z Asýrie a zanechali nápisy na skalách, stélách a pevnostech; jeden z nich připomíná založení města, z něhož vyrostl Jerevan.",
+    "fakta": [
+     [
+      "Území",
+      "Elam: jihozápadní Írán (Chúzistán, Fárs); Urartu: Arménská vysočina kolem jezera Van"
+     ],
+     [
+      "Období",
+      "Elam asi 3200–539 př. n. l., elamsky se psalo až do konce achaimenovské říše (330 př. n. l.); Urartu asi 860–590 př. n. l."
+     ],
+     [
+      "Jazyky",
+      "elamština (izolovaný jazyk); urartština (churrijsko-urartská rodina)"
+     ],
+     [
+      "Písma",
+      "protoelamské (nerozluštěné), lineární elamské, elamský klínopis; urartský klínopis podle asyrského"
+     ],
+     [
+      "Hlavní místa",
+      "Súsy, Anšan, Čoga Zanbíl; Tušpa (Van), Erebuni (Jerevan)"
+     ],
+     [
+      "Rozluštění",
+      "elamský klínopis v 19. st. díky Behistunu; urartština 1882 (A. H. Sayce); lineární elamské 2020–2022 (F. Desset a spol., přijímáno jen zčásti)"
+     ]
+    ],
+    "nazvyTecek": {
+     "elam1244": "Elamština",
+     "urar1245": "Urartština"
+    },
+    "oddily": [
+     {
+      "typ": "text",
+      "h": "Mimo velké rodiny",
+      "p": [
+       "Většina jazyků starověkého Předního východu, které známe z písemných pramenů, patří do dvou velkých rodin: semitské (akkadština, aramejština, hebrejština) a indoevropské (chetitština, staroperština). Vedle nich se ale mluvilo i jazyky, které do žádné z nich nepatří. Nejznámější z nich je sumerština (viz stránka o Mezopotámii), další dva jsou na této stránce: elamština z jihozápadního Íránu a urartština z Arménské vysočiny. Navzájem příbuzné nejsou a oba známe hlavně díky tomu, že jejich mluvčí převzali mezopotámské klínové písmo.",
+       "Elam ležel v dnešních íránských provinciích Chúzistán a Fárs, v nížině kolem Sús a v horách kolem Anšanu. Elamské texty sahají od 3. tisíciletí př. n. l. do konce perské říše Achaimenovců ve 4. století př. n. l. Urartu bylo království doby železné kolem jezera Van, na území dnešního východního Turecka, Arménie a severozápadního Íránu; jeho nápisy pocházejí z 9. až 7. století př. n. l."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "cogazanbil"
+     },
+     {
+      "typ": "text",
+      "h": "Elam: nížina a hory",
+      "p": [
+       "Súsy patří k nejstarším městům regionu; osídlení tam podle radiokarbonových dat vzniklo kolem roku 4200 př. n. l. Samo jméno Elam je mezopotámské (sumersky elam, akkadsky elamtu), Elamité svou zemi nazývali Haltamti, v lineárním písmu Hatamti. Dějiny Elamu známe z velké části z mezopotámských pramenů a dělí se na staroelamské, středoelamské a novoelamské období. Elam vznikl ze spojení menších horských států (Awan, Šimaški, Anšan) s nížinou kolem Sús, která střídavě patřila Elamu a mezopotámským říším.",
+       "Elamští králové opakovaně zasahovali do dějin Mezopotámie. Kolem roku 2004 př. n. l. dobyli Ur a odvedli jeho posledního krále Ibbi-Sína do zajetí. Ve 12. století př. n. l. vyplenil Šutruk-Nahhunte I. babylonská města a do Sús odvezl mimo jiné Chammurapiho stélu se zákoníkem; tam ji roku 1901 našli francouzští archeologové. Asyrský král Aššurbanipal Súsy kolem roku 646 př. n. l. vyplenil a v nápise se chlubil, že elamskou zemi posypal solí. Elamská knížectví přežila, ale v polovině 6. století př. n. l. se Súsy staly součástí perské říše."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "susy",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "Protoelamské písmo",
+      "p": [
+       "Nejstarší písmo Íránu se nazývá protoelamské. Používalo se jen krátce, asi v letech 3100–2900 př. n. l., tedy zhruba v době nejstarších protoklínových tabulek z mezopotámského Uruku, s nimiž má mnoho společného: stejně tvarované hliněné tabulky, stejný způsob zápisu i účetní účel. Znaky jsou však jiné. Známe asi 1 600 tabulek; naprostá většina pochází ze Sús, další z Anšanu (Tall-e Maljan), Tepe Jahjá, Tepe Sialku a několika dalších míst až na východě Íránu.",
+       "Písmo zůstává nerozluštěné. Čísla se číst dají, protože se podobají číslům mezopotámských tabulek, a obsah mnoha textů je proto znám: jsou to účty, například soupisy koz a ovcí. Vedle šedesátkové soustavy používali písaři i desítkovou. Ostatních znaků je přes tisíc a většina z nich patrně stála za celá slova. Zda písaři mluvili elamsky, nevíme, protože takové záznamy o jazyce téměř nic neprozradí. Jacob Dahl z Oxfordské univerzity od roku 2012 zveřejňuje fotografie tabulek na internetu, aby se na luštění mohli podílet i další badatelé. Roku 2022 navrhl François Desset číst část protoelamských znaků podle hodnot, které přisoudil lineárnímu elamskému písmu; většina odborníků, mimo jiné Dahlův tým, tento návrh nepřijala."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "protoel"
+     },
+     {
+      "typ": "foto",
+      "f": "byk",
+      "na-vysku": true
+     },
+     {
+      "typ": "text",
+      "h": "Lineární elamské písmo",
+      "p": [
+       "O několik století mladší je lineární elamské písmo, známé z nevelkého počtu nápisů na kameni, hlíně a stříbrných pohárech; podle soupisu z roku 2021 jde o 51 textů a zlomků. Nejznámější pocházejí z doby krále Puzur-Inšušinaka (jeho jméno se dříve četlo Kutik-Inšušinak), který v Súsách vládl koncem 22. století př. n. l. Písmo se používalo souběžně s klínovým a zapisovalo elamštinu. Zda se vyvinulo z protoelamského, je sporné.",
+       "První kroky k rozluštění umožnila dvojjazyčná „Lví deska“ (Table au lion) v Louvru s akkadským a lineárním elamským nápisem. Ferdinand Bork (1905) a Carl Frank (1912) v ní podle akkadského znění našli jména boha Inšušinaka a krále Puzur-Inšušinaka a určili tak s přijatelnou jistotou devět znaků. Potom se dlouho nepokročilo.",
+       "Průlom ohlásil francouzský archeolog François Desset. Na stříbrných pohárech ze soukromé sbírky, které se staly známými teprve nedávno, rozpoznal opakované skupiny znaků jako jména králů Šilhahy a Ebarata a boha Napiriši, podobně jako kdysi Grotefend u staroperského písma. Roku 2020 oznámil, že s mezinárodním týmem přečetl všechny známé nápisy, a roku 2022 tým rozluštění publikoval. Podle autorů jde o hláskové písmo, které znaky pro celá slova používalo nejvýš ojediněle. Příznivě ho přijali například asyrologové Manfred Krebernik, Matthew Stolper a Piotr Steinkeller. Jiní, například lingvista Michael Mäder, jsou zdrženlivější, pokládají asi třetinu znaků za znaky pro slova a čekají na podrobné překlady textů. Rozluštění je tedy přijímané jen zčásti."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "lev",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "Elamský klínopis a elamština",
+      "p": [
+       "Vedle vlastních písem převzali Elamité z Mezopotámie klínové písmo. Nejstarší známý elamský text psaný klínovým písmem je smlouva akkadského krále Narám-Sína s elamským vládcem z doby kolem roku 2250 př. n. l.: „Nepřítel Narám-Sínův je můj nepřítel, přítel Narám-Sínův je můj přítel.“ Elamští písaři soustavu výrazně zjednodušili. V každém období používali jen asi 130 znaků a za celé dějiny písma je jich doloženo 206; převažují znaky pro slabiky, znaků pro celá slova postupně přibývalo. Samohlásky písmo často nerozlišovalo a znaky typu tir nebo tar sloužily hlavně k zápisu dvou souhlásek.",
+       "Elamština je aglutinační jazyk, slova skládá z kořene a řady přípon. Zvláštností jsou přípony, které u podstatných jmen rozlišují osobu: sunki-k znamená „já, král“, sunki-r „(on,) král“, sunki-p „králové“. Tytéž přípony se přenášejí i na přívlastky, takže „já, král Elamu“ zní u sunki-k Hatamti-k. Sloveso stojí obvykle na konci věty. Za klasické období se považuje středoelamské (asi 1500–1000 př. n. l.), nejlépe je však doložena achaimenovská elamština z doby perských králů.",
+       "Podle převládajícího názoru je elamština izolovaný jazyk bez prokazatelných příbuzných. Nejznámější pokus o spojení, hypotézu elamo-drávidské rodiny, která by elamštinu spojila s drávidskými jazyky Indie a s jazykem bráhúí v Pákistánu, rozpracoval od 70. let 20. století americký lingvista David McAlpin. Většina lingvistů ji nepřijímá; podrobný rozbor z roku 2023 dospěl k závěru, že navržené shody slov jsou buď významově nejisté, nebo tak krátké, že mohou být náhodné. Neprosadily se ani návrhy na příbuznost se semitskými jazyky."
+      ]
+     },
+     {
+      "typ": "znaky",
+      "h": "Ukázka znaků",
+      "znaky": [
+       [
+        "𒁹",
+        "DIŠ",
+        "určující znak před jménem osoby"
+       ],
+       [
+        "𒀭",
+        "an",
+        "slabika; jako určující znak stojí před jménem boha"
+       ],
+       [
+        "𒆳",
+        "KUR",
+        "určující znak před jménem země"
+       ],
+       [
+        "𒋢",
+        "su",
+        "slabika"
+       ],
+       [
+        "𒌦",
+        "un",
+        "slabika"
+       ],
+       [
+        "𒆠",
+        "ki",
+        "slabika, v elamštině i ke"
+       ],
+       [
+        "𒅅",
+        "ik",
+        "slabika (znak IG)"
+       ],
+       [
+        "𒁉",
+        "bi",
+        "slabika"
+       ],
+       [
+        "𒀀",
+        "a",
+        "samohláska"
+       ],
+       [
+        "𒄿",
+        "i",
+        "samohláska"
+       ],
+       [
+        "𒉌",
+        "ni",
+        "slabika"
+       ],
+       [
+        "𒇷",
+        "li",
+        "slabika"
+       ]
+      ],
+      "priklad": {
+       "klin": "𒋢𒌦𒆠𒅅",
+       "prepis": "su-un-ki-ik",
+       "vyznam": "sunki-k „já, král“ (středoelamsky)"
+      },
+      "pozn": "Hodnoty platí v elamském i urartském klínopisu. Znaky jsou vykreslené standardním písmem Unicode s mezopotámskými tvary; na elamských a urartských památkách vypadaly poněkud jinak. Urartské jméno země Biainili se psalo 𒆳𒁉𒀀𒄿𒉌𒇷 (KUR bi-a-i-ni-li; KUR je určující znak země). Elamský klínopis vystačil s mnohem menší sadou znaků než akkadský, jehož písaři znali několik set znaků. Protoelamské ani lineární elamské písmo Unicode zatím neobsahuje (návrh na zakódování protoelamského písma byl podán roku 2023), proto je ukazují jen fotografie."
+     },
+     {
+      "typ": "text",
+      "h": "Čoga Zanbíl",
+      "p": [
+       "Asi 30 km jihovýchodně od Sús dal král Untaš-Napiriša postavit nové posvátné město. Elamsky se jmenovalo Al Untaš-Napiriša, později, v asyrských pramenech, Dur Untaš, „Untašovo město“; dnešní perský název Čoga Zanbíl se obvykle překládá jako „košíkový pahorek“. Datace jeho vlády je nejistá, stavba spadá do 14. nebo 13. století př. n. l.; obvykle se uvádí rok 1250 př. n. l. Uprostřed trojího opevnění stojí zikkurat zasvěcený hlavně bohu Inšušinakovi, jeden z mála zikkuratů mimo Mezopotámii a podle UNESCO nejzachovalejší stupňovitá stavba svého druhu. Měl základnu asi 105 × 105 m a původně asi 53 m výšky, dnes měří necelých 25 m.",
+       "Zikkurat je z nepálených cihel obložených pálenými a každá jedenáctá řada cihel nese nápis. Archeologové našli 5 257 popsaných cihel, většinou elamských a 67 akkadských. Jeden z nápisů zní: „Já, Untaš-Napiriša, syn Humbanumeny, král Anšanu a Sús, … chrám z pálených cihel a svatyni z glazovaných cihel jsem postavil, dal jsem je Inšušinakovi … a vztyčil jsem chrámovou věž.“ Město podle převládajícího názoru zničil Aššurbanipal kolem roku 645 př. n. l., podle některých badatelů však bylo opuštěno už koncem 12. století. Roku 1979 se Čoga Zanbíl stal první íránskou památkou na seznamu světového dědictví UNESCO."
+      ]
+     },
+     {
+      "typ": "galerie",
+      "h": "Nápisy elamských králů",
+      "f": [
+       "kamen",
+       "silhak",
+       "deska"
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Jazyk perských úředníků",
+      "p": [
+       "Když Súsy a Anšan připadly Peršanům, elamština nezanikla. Achaimenovští králové ji zařadili mezi tři jazyky svých nápisů, vedle staroperštiny a babylonštiny; na skále v Behistunu má elamské znění Dáreiova nápisu 260 řádků v osmi sloupcích. Trojjazyčný nápis dal Xerxés vytesat i na hradní skálu ve Vanu, v samém srdci bývalého Urartu. V perském jádru říše psali úředníci elamsky: pevnostní archiv v Persepoli z let 509–493 př. n. l. obsahuje přes 15 000 elamských záznamů o dodávkách a přídělech (podrobněji na stránce o Persii).",
+       "Elamské znění Behistunu se luštilo obtížně. Staroperské znění sice poskytlo klíč, ale elamština se nepodobala žádnému známému jazyku a lepší porozumění přinesla až 40. a 50. léta 19. století. Henry Rawlinson svěřil elamské znění Edwinu Norrisovi, který ho vydal roku 1855; jazyk se tehdy pokládal za skythský nebo médský. Název elamština podle obvyklého výkladu poprvé použil Archibald Henry Sayce roku 1874, první mluvnici vydal roku 1879 Julius Oppert. Starší elamské nápisy ze Sús zveřejňoval v prvních desetiletích 20. století dominikán Vincent Scheil."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "tabulka"
+     },
+     {
+      "typ": "rameček",
+      "h": "Poslední stopy elamštiny",
+      "p": [
+       "Poslední elamské klínové texty pocházejí z doby Achaimenovců, jazyk však mohl žít déle. Ve 2. a 1. století př. n. l. nesli někteří vládci Elymaidy elamské jméno Kamnaskires a Skutky apoštolů jmenují Elamity mezi národy, které o letnicích slyšely apoštoly mluvit svým jazykem. Arabští autoři 8.–13. století zmiňují v Chúzistánu jazyk chúzí, kterému nikdo jiný nerozuměl; naposledy o něm z vlastní zkušenosti psal kolem roku 988 al-Makdisí. Zda šlo o pozdní elamštinu, nelze prokázat."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Urartu: království u jezera Van",
+      "p": [
+       "Jméno Urartu je asyrské. V Bibli se táž země nazývá Ararat; odtud „hory araratské“, na nichž podle knihy Genesis přistála Noemova archa. Sami Urartejci svou zemi od doby krále Išpuiniho nazývali Biainili. Asyrské nápisy zmiňují Uruatri už ve 13. století př. n. l. a podle novějšího výkladu šlo o jeden z krajů země Nairi; jednotné království vzniklo v polovině 9. století př. n. l. Sarduri I. (asi 832–820 př. n. l.) přenesl sídlo do Tušpy na břehu jezera Van, kde u dnešního města Van stojí skalní hrad.",
+       "V 8. století př. n. l. patřilo Urartu k nejmocnějším státům Předního východu a soupeřilo s Asýrií. Vrcholu moci dosáhlo za Argištiho I. a jeho syna Sarduriho II.; Argišti rozšířil říši až k řece Araxu a jezeru Sevan. Roku 714 př. n. l. vyplenil asyrský král Sargon II. posvátné město Musasir s hlavním chrámem boha Chaldiho. Po nájezdech Kimmeriů a Skythů říše slábla a počátkem 6. století př. n. l. zanikla, podle častějšího výkladu po dobytí Médy kolem roku 590 př. n. l.; podle jiných badatelů přežila až do poloviny století."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "van",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "Urartština a její písmo",
+      "p": [
+       "Urartština patří spolu s churrijštinou, jazykem říše Mitanni a mnoha textů z chetitské Chattuše, do malé churrijsko-urartské rodiny. Oba jazyky se od sebe oddělily asi na počátku 2. tisíciletí př. n. l.; urartština má nejblíže ke staré churrijštině, známé z churrijsko-chetitských dvojjazyčných textů. Příbuznost s dalšími rodinami, například se severovýchodokavkazskými jazyky, se navrhuje, obecně přijata však není. Urartština je ergativní jazyk: podmět přechodného slovesa má zvláštní pád. Příklad z nápisu: Ḫaldi-ə ewri-ə inə É Argište-šə Menuaḫini-šə šidišt-u-nə, „Chaldimu, pánovi, tento chrám Argišti, syn Menuův, postavil“. Přípona -šə značí ergativ a přívlastek „syn Menuův“ ji přebírá od jména, k němuž patří.",
+       "Nejstarší nápisy z Tušpy, z doby Sarduriho I., jsou ještě asyrsky; urartsky začal psát jeho syn Išpuini. Písaři převzali novoasyrské klínové písmo a zjednodušili je: každý znak měl až na výjimky jen jednu slabičnou hodnotu a samohláska se často zdůrazňovala dalším znakem (ba-a). Z asyrštiny převzali i řadu znaků pro celá slova a určujících znaků. Dochovaly se hlavně královské nápisy na skalách, stélách a stavbách o válečných výpravách, stavbě pevností a zavlažovacích kanálů, vedle nich nápisy na bronzových předmětech a několik hliněných tabulek. Vzácně se urartština psala i anatolskými hieroglyfy; zda Urartu mělo vlastní obrázkové písmo, je nejisté.",
+       "Urartské nápisy u Vanu opisoval koncem 20. let 19. století německý učenec Friedrich Eduard Schulz, který byl roku 1829 v kraji zavražděn; jeho zápisky vyšly roku 1840. Číst se daly po rozluštění asyrského klínového písma, jazyk však nepřipomínal žádný známý. Rozluštil ho roku 1882 Archibald Henry Sayce, větší pokrok ale přinesly až urartsko-asyrské dvojjazyčné nápisy, zejména stéla z průsmyku Kelišin na dnešní irácko-íránské hranici. Mluvnici urartštiny vydal roku 1963 gruzínský historik Giorgi Melikišvili a příbuznost s churrijštinou v 70. letech soustavně doložil Igor Ďakonov."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "sarduri"
+     },
+     {
+      "typ": "foto",
+      "f": "rusa",
+      "na-vysku": true
+     },
+     {
+      "typ": "text",
+      "h": "Erebuni a Jerevan",
+      "p": [
+       "Roku 782 př. n. l. založil Argišti I. na pahorku Arin Berd nad Araratskou rovinou pevnost Erebuni. Na podzim roku 1950 tam archeologové vedení Konstantinem Hovhannisjanem našli nápis o jejím založení: „Velikostí boha Chaldiho Argišti, syn Menuův, postavil tuto mocnou pevnost a nazval ji Erebuni ke slávě Biainili a k postrachu nepřátel krále.“ Podobný nápis v Tušpě uvádí, že do nového města přesídlil 6 600 zajatců ze zemí Chate a Cupani.",
+       "Z Erebuni se vyvinul Jerevan, jehož jméno se od ní odvozuje. Město proto roku 1968 slavilo 2 750 let od založení a téhož roku se u pevnosti otevřelo muzeum Erebuni. Význam samotného jména je nejistý: jeden výklad ho spojuje s urartským slovesem „zmocnit se, uchvátit“, takže by mohlo znamenat „dobytí“ nebo „vítězství“. V pevnosti se našly i sklady obilí, vína a oleje s obřími zásobnicemi; nápis Sarduriho II. u vchodu do skladu uvádí, že dvě sýpky pojaly dohromady 24 100 měr obilí."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "erebuni",
+      "siroka": true
+     },
+     {
+      "typ": "slova",
+      "h": "Několik elamských a urartských slov",
+      "uvod": "Slova, jejichž význam je v nápisech spolehlivě doložen. Elamština a urartština spolu příbuzné nejsou, urartština ale sdílí mnoho slov s churrijštinou:",
+      "hlavicka": [
+       "slovo",
+       "význam",
+       "jazyk a poznámka"
+      ],
+      "radky": [
+       [
+        "sunki",
+        "král",
+        "elamsky; sunki-me „království“"
+       ],
+       [
+        "nap, napir",
+        "bůh",
+        "elamsky; nap-ip „bohové“"
+       ],
+       [
+        "hal",
+        "město, země",
+        "elamsky"
+       ],
+       [
+        "siyan",
+        "chrám",
+        "elamsky"
+       ],
+       [
+        "šak",
+        "syn",
+        "elamsky; v titulech „X, syn Y“"
+       ],
+       [
+        "Haltamti, Hatamti",
+        "Elam",
+        "elamské jméno vlastní země"
+       ],
+       [
+        "ewri, euri",
+        "pán",
+        "urartsky; churrijsky také ewri"
+       ],
+       [
+        "ebani",
+        "země",
+        "urartsky; ebani-uka-nə „z mé země“"
+       ],
+       [
+        "ar-",
+        "dát",
+        "urartsky i churrijsky"
+       ],
+       [
+        "Biainili",
+        "Urartu",
+        "urartské jméno vlastní země"
+       ],
+       [
+        "ulṭu",
+        "velbloud",
+        "urartsky; odtud podle rozšířeného výkladu arménské ułt"
+       ]
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Bronz a dědictví Urartu",
+      "p": [
+       "Urartejci byli zruční kovolitci. Metodou ztraceného vosku odlévali sošky, kování nábytku a ozdoby kotlů; z bronzového plechu tepali a zdobili přilby, opasky, štíty a nádoby. Šperků z drahých kovů, jimiž se Asyřané chlubili po vyplenění Musasiru, se však našlo jen málo. Urartští králové dávali budovat zavlažovací kanály; některé z doby Menuy a Argištiho I. slouží dodnes.",
+       "Po pádu Urartu se urartština přestala psát a patrně zanikla; na Arménské vysočině ji postupně nahradila arménština. Už babylonské znění Dáreiova nápisu v Behistunu nazývá Uraštu zemi, kterou staroperské znění jmenuje Armina, Arménie. Do arménštiny podle rozšířeného výkladu přešla i některá urartská slova a místní jména, například ulṭu „velbloud“ (arménsky ułt) nebo Ṭušpa (arménsky Tosp). Také jméno Van se často odvozuje od urartského Biainili; jde však jen o hypotézu."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "pas",
+      "siroka": true
+     },
+     {
+      "typ": "osa",
+      "h": "Časová osa",
+      "udalosti": [
+       [
+        "asi 3100–2900 př. n. l.",
+        "Protoelamské účetní tabulky."
+       ],
+       [
+        "asi 2250 př. n. l.",
+        "Smlouva Narám-Sína s Elamem, nejstarší elamský text v klínovém písmu."
+       ],
+       [
+        "kolem 2100 př. n. l.",
+        "Puzur-Inšušinak v Súsách; nápisy lineárním elamským písmem."
+       ],
+       [
+        "asi 1250 př. n. l.",
+        "Untaš-Napiriša staví Čoga Zanbíl (datace nejistá)."
+       ],
+       [
+        "12. st. př. n. l.",
+        "Šutruk-Nahhunte I. odváží do Sús Chammurapiho stélu."
+       ],
+       [
+        "asi 832–820 př. n. l.",
+        "Sarduri I. přenáší sídlo Urartu do Tušpy."
+       ],
+       [
+        "782 př. n. l.",
+        "Argišti I. zakládá Erebuni."
+       ],
+       [
+        "714 př. n. l.",
+        "Sargon II. plení urartský Musasir."
+       ],
+       [
+        "asi 646 př. n. l.",
+        "Aššurbanipal plení Súsy."
+       ],
+       [
+        "asi 590 př. n. l.",
+        "Konec Urartu (datace sporná)."
+       ],
+       [
+        "509–493 př. n. l.",
+        "Elamské tabulky pevnostního archivu v Persepoli."
+       ],
+       [
+        "1855",
+        "Edwin Norris vydává elamské znění Behistunu."
+       ],
+       [
+        "1882",
+        "Archibald Henry Sayce luští urartštinu."
+       ],
+       [
+        "1950",
+        "V Erebuni nalezen nápis o založení pevnosti."
+       ],
+       [
+        "1979",
+        "Čoga Zanbíl první íránskou památkou UNESCO."
+       ],
+       [
+        "2022",
+        "Desset a spol. publikují rozluštění lineárního elamského písma."
+       ]
+      ]
+     },
+     {
+      "typ": "tecky",
+      "h": "Elamština a urartština na glóbu",
+      "uvod": "Oba jazyky jsou vymřelé. Klepnutím se jazyk ukáže na glóbu:"
+     },
+     {
+      "typ": "zdroje",
+      "h": "Zdroje a další četba",
+      "p": [
+       "Daniel T. Potts: The Archaeology of Elam: Formation and Transformation of an Ancient Iranian State. Cambridge University Press 1999.",
+       "Matthew W. Stolper: Elamite. In: Roger D. Woodard (ed.), The Cambridge Encyclopedia of the World’s Ancient Languages. Cambridge University Press 2004, s. 60–95.",
+       "Gernot Wilhelm: Urartian. In: Roger D. Woodard (ed.), The Cambridge Encyclopedia of the World’s Ancient Languages. Cambridge University Press 2004.",
+       "François Desset, Kambiz Tabibzadeh, Matthieu Kervran, Gian Pietro Basello, Gianni Marchesi: The Decipherment of Linear Elamite Writing. Zeitschrift für Assyriologie 112, 2022, s. 11–60.",
+       "Paul E. Zimansky: Ancient Ararat: A Handbook of Urartian Studies. Caravan Books 1998.",
+       "Mirjo Salvini: Geschichte und Kultur der Urartäer. Wissenschaftliche Buchgesellschaft, Darmstadt 1995.",
+       "Glottolog 5 (jazyky a jejich zařazení)."
+      ]
+     }
+    ]
+   },
+   "en": {
+    "nazev": "Elam and Urartu",
+    "stitek": "Languages of antiquity",
+    "podtitul": "Southwestern Iran and the Armenian Highlands · from Proto-Elamite tablets to Persian officialdom",
+    "perex": "Elamite and Urartian are neither Semitic nor Indo-European, and they are not related to each other either. Southwestern Iran produced scripts of its own; the oldest of them has still not been read, and it is not certain that it wrote Elamite. Later the Elamites wrote in cuneiform borrowed from Mesopotamia, and the officials of the Persian kings still kept their records in Elamite. The Urartians around Lake Van borrowed cuneiform from Assyria and left inscriptions on rock faces, stelae and fortresses; one of them records the founding of the town from which Yerevan grew.",
+    "fakta": [
+     [
+      "Region",
+      "Elam: southwestern Iran (Khuzestan, Fars); Urartu: the Armenian Highlands around Lake Van"
+     ],
+     [
+      "Period",
+      "Elam c. 3200–539 BCE, with Elamite written until the end of the Achaemenid Empire (330 BCE); Urartu c. 860–590 BCE"
+     ],
+     [
+      "Languages",
+      "Elamite (a language isolate); Urartian (Hurro-Urartian family)"
+     ],
+     [
+      "Scripts",
+      "Proto-Elamite (undeciphered), Linear Elamite, Elamite cuneiform; Urartian cuneiform based on Assyrian"
+     ],
+     [
+      "Key sites",
+      "Susa, Anshan, Chogha Zanbil; Tushpa (Van), Erebuni (Yerevan)"
+     ],
+     [
+      "Decipherment",
+      "Elamite cuneiform in the 19th c. through Behistun; Urartian 1882 (A. H. Sayce); Linear Elamite 2020–2022 (F. Desset et al., only partly accepted)"
+     ]
+    ],
+    "nazvyTecek": {
+     "elam1244": "Elamite",
+     "urar1245": "Urartian"
+    },
+    "oddily": [
+     {
+      "typ": "text",
+      "h": "Outside the great families",
+      "p": [
+       "Most languages of the ancient Near East that we know from written sources belong to two large families: Semitic (Akkadian, Aramaic, Hebrew) and Indo-European (Hittite, Old Persian). Alongside them, however, people spoke languages that belong to neither. The best known is Sumerian (see the page on Mesopotamia); two others are on this page: Elamite from southwestern Iran and Urartian from the Armenian Highlands. They are not related to each other, and we know both mainly because their speakers adopted Mesopotamian cuneiform.",
+       "Elam lay in what are now the Iranian provinces of Khuzestan and Fars, in the lowland around Susa and in the highlands around Anshan. Elamite texts run from the 3rd millennium BCE to the end of the Achaemenid Persian Empire in the 4th century BCE. Urartu was an Iron Age kingdom around Lake Van, in today’s eastern Turkey, Armenia and northwestern Iran; its inscriptions date from the 9th to the 7th century BCE."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "cogazanbil"
+     },
+     {
+      "typ": "text",
+      "h": "Elam: lowland and highlands",
+      "p": [
+       "Susa is one of the oldest cities in the region; according to radiocarbon dates, settlement there began around 4200 BCE. The name Elam itself is Mesopotamian (Sumerian elam, Akkadian elamtu); the Elamites called their country Haltamti, or Hatamti in the linear script. Elamite history is known largely from Mesopotamian sources and is divided into Old, Middle and Neo-Elamite periods. Elam grew out of a union of smaller highland states (Awan, Shimashki, Anshan) with the lowland around Susa, which passed back and forth between Elam and the Mesopotamian empires.",
+       "Elamite kings repeatedly intervened in Mesopotamian affairs. Around 2004 BCE they captured Ur and led its last king, Ibbi-Sin, into captivity. In the 12th century BCE Shutruk-Nahhunte I raided the cities of Babylonia and carried off to Susa, among other trophies, the stele bearing Hammurabi’s laws; French archaeologists found it there in 1901. The Assyrian king Ashurbanipal sacked Susa around 646 BCE and boasted in an inscription that he had sown the land of Elam with salt. Elamite principalities survived, but by the middle of the 6th century BCE Susa had become part of the Persian Empire."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "susy",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "Proto-Elamite writing",
+      "p": [
+       "The oldest script of Iran is called Proto-Elamite. It was used only briefly, c. 3100–2900 BCE, roughly at the time of the earliest proto-cuneiform tablets from Uruk in Mesopotamia, with which it has much in common: clay tablets of the same shape, the same way of inscribing them and the same book-keeping purpose. The signs, however, are different. Some 1,600 tablets are known; the vast majority come from Susa, others from Anshan (Tall-e Malyan), Tepe Yahya, Tepe Sialk and a few other sites as far as eastern Iran.",
+       "The script remains undeciphered. The numbers can be read, because they resemble those on Mesopotamian tablets, so the content of many texts is known: they are accounts, for example tallies of goats and sheep. Besides a sexagesimal system the scribes also used a decimal one. The other signs number more than a thousand, and most of them probably stood for whole words. Whether the scribes spoke Elamite is unknown, since records of this kind reveal almost nothing about language. Since 2012 Jacob Dahl of the University of Oxford has been putting photographs of the tablets online so that other researchers can take part in the decipherment. In 2022 François Desset proposed reading some Proto-Elamite signs with the values he had assigned to Linear Elamite; most specialists, including Dahl’s team, have not accepted the proposal."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "protoel"
+     },
+     {
+      "typ": "foto",
+      "f": "byk",
+      "na-vysku": true
+     },
+     {
+      "typ": "text",
+      "h": "Linear Elamite",
+      "p": [
+       "Several centuries younger is Linear Elamite, known from a small number of inscriptions on stone, clay and silver beakers; a 2021 inventory counts 51 texts and fragments. The best known date from the reign of King Puzur-Inshushinak (whose name used to be read Kutik-Inshushinak), who ruled at Susa in the late 22nd century BCE. The script was used alongside cuneiform and wrote Elamite. Whether it developed from Proto-Elamite is disputed.",
+       "The first steps towards decipherment came from the bilingual “Table au lion” in the Louvre, inscribed in Akkadian and in Linear Elamite. Using the Akkadian text, Ferdinand Bork (1905) and Carl Frank (1912) found in it the names of the god Inshushinak and of King Puzur-Inshushinak, which fixed nine signs with reasonable certainty. After that, progress stalled for a long time.",
+       "A breakthrough was announced by the French archaeologist François Desset. On silver beakers from a private collection that had only recently come to light, he recognised recurring groups of signs as the names of the kings Shilhaha and Ebarat and of the god Napirisha, much as Grotefend had once done with Old Persian. In 2020 he announced that he and an international team had read all the known inscriptions, and in 2022 the team published the decipherment. According to the authors the script is phonetic and used signs for whole words only occasionally, if at all. It was welcomed by Assyriologists such as Manfred Krebernik, Matthew Stolper and Piotr Steinkeller. Others, such as the linguist Michael Mäder, are more cautious: they take about a third of the signs to be word signs and are waiting for detailed translations of the texts. The decipherment is therefore only partly accepted."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "lev",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "Elamite cuneiform and the Elamite language",
+      "p": [
+       "Alongside their own scripts, the Elamites adopted cuneiform from Mesopotamia. The earliest known Elamite text in cuneiform is a treaty between the Akkadian king Naram-Sin and an Elamite ruler from around 2250 BCE: “The enemy of Naram-Sin is my enemy, the friend of Naram-Sin is my friend.” Elamite scribes simplified the system considerably. In any one period they used only about 130 signs, and 206 are attested over the whole history of the script; most are syllable signs, while word signs gradually became more frequent. The script often failed to distinguish vowels, and signs such as tir or tar served mainly to write two consonants.",
+       "Elamite is an agglutinative language that builds words from a root and a chain of suffixes. A peculiarity is a set of suffixes that mark person on nouns: sunki-k means “I, the king”, sunki-r “(he,) the king”, sunki-p “kings”. The same suffixes are copied onto modifiers, so “I, the king of Elam” is u sunki-k Hatamti-k. The verb usually comes at the end of the sentence. The Middle Elamite period (c. 1500–1000 BCE) is regarded as the classical one, but the best-attested stage is Achaemenid Elamite from the time of the Persian kings.",
+       "In the prevailing view, Elamite is an isolate with no demonstrable relatives. The best-known attempt to connect it, the Elamo-Dravidian hypothesis linking Elamite with the Dravidian languages of India and with Brahui in Pakistan, was developed from the 1970s by the American linguist David McAlpin. Most linguists reject it; a detailed review in 2023 concluded that the proposed word matches are either uncertain in meaning or so short that they could be chance resemblances. Proposals of a link with the Semitic languages have not found acceptance either."
+      ]
+     },
+     {
+      "typ": "znaky",
+      "h": "Sample signs",
+      "znaky": [
+       [
+        "𒁹",
+        "DIŠ",
+        "determinative before a personal name"
+       ],
+       [
+        "𒀭",
+        "an",
+        "syllable; as a determinative it precedes a god’s name"
+       ],
+       [
+        "𒆳",
+        "KUR",
+        "determinative before the name of a land"
+       ],
+       [
+        "𒋢",
+        "su",
+        "syllable"
+       ],
+       [
+        "𒌦",
+        "un",
+        "syllable"
+       ],
+       [
+        "𒆠",
+        "ki",
+        "syllable, in Elamite also ke"
+       ],
+       [
+        "𒅅",
+        "ik",
+        "syllable (the sign IG)"
+       ],
+       [
+        "𒁉",
+        "bi",
+        "syllable"
+       ],
+       [
+        "𒀀",
+        "a",
+        "vowel"
+       ],
+       [
+        "𒄿",
+        "i",
+        "vowel"
+       ],
+       [
+        "𒉌",
+        "ni",
+        "syllable"
+       ],
+       [
+        "𒇷",
+        "li",
+        "syllable"
+       ]
+      ],
+      "priklad": {
+       "klin": "𒋢𒌦𒆠𒅅",
+       "prepis": "su-un-ki-ik",
+       "vyznam": "sunki-k “I, the king” (Middle Elamite)"
+      },
+      "pozn": "These values hold in both Elamite and Urartian cuneiform. The signs are rendered in a standard Unicode font with Mesopotamian shapes; on Elamite and Urartian monuments they looked somewhat different. The Urartian name of the country, Biainili, was written 𒆳𒁉𒀀𒄿𒉌𒇷 (KUR bi-a-i-ni-li; KUR is the determinative for a land). Elamite cuneiform made do with a much smaller set of signs than Akkadian, whose scribes knew several hundred. Neither Proto-Elamite nor Linear Elamite is yet in Unicode (a proposal to encode Proto-Elamite was submitted in 2023), so only the photographs show them."
+     },
+     {
+      "typ": "text",
+      "h": "Chogha Zanbil",
+      "p": [
+       "About 30 km southeast of Susa, King Untash-Napirisha had a new sacred city built. In Elamite it was called Al Untash-Napirisha, later, in Assyrian sources, Dur Untash, “town of Untash”; its modern Persian name, Chogha Zanbil, is usually translated as “basket mound”. The dates of his reign are uncertain and the construction falls in the 14th or 13th century BCE; 1250 BCE is the conventional date. At the centre of three concentric walls stands a ziggurat dedicated chiefly to the god Inshushinak, one of the few ziggurats outside Mesopotamia and, according to UNESCO, the best-preserved monument of its kind. Its base measured about 105 × 105 m and its original height was about 53 m; today it stands just under 25 m tall.",
+       "The ziggurat is built of mud brick faced with baked brick, and every eleventh course of bricks bears an inscription. Archaeologists found 5,257 inscribed bricks, most in Elamite and 67 in Akkadian. One reads: “I, Untash-Napirisha, son of Humbanumena, king of Anshan and Susa, … a temple of baked bricks and a sanctuary of glazed bricks I built; I gave it to Inshushinak … and I erected a temple tower.” In the prevailing view the city was destroyed by Ashurbanipal around 645 BCE, though some scholars think it was abandoned as early as the late 12th century. In 1979 Chogha Zanbil became the first Iranian site on the UNESCO World Heritage List."
+      ]
+     },
+     {
+      "typ": "galerie",
+      "h": "Inscriptions of Elamite kings",
+      "f": [
+       "kamen",
+       "silhak",
+       "deska"
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "The language of Persian officials",
+      "p": [
+       "When Susa and Anshan passed to the Persians, Elamite did not disappear. The Achaemenid kings made it one of the three languages of their inscriptions, alongside Old Persian and Babylonian; on the Behistun rock the Elamite version of Darius’s inscription runs to 260 lines in eight columns. Xerxes also had a trilingual inscription carved on the citadel rock at Van, in the very heart of former Urartu. In the Persian heartland officials wrote in Elamite: the Fortification Archive at Persepolis, from 509–493 BCE, contains more than 15,000 Elamite records of deliveries and rations (more on the page on Persia).",
+       "The Elamite version of Behistun proved hard to crack. The Old Persian text provided the key, but Elamite resembled no known language, and real progress came only in the 1840s and 1850s. Henry Rawlinson entrusted the Elamite version to Edwin Norris, who published it in 1855; at the time the language was thought to be Scythian or Median. The name Elamite is usually credited to Archibald Henry Sayce in 1874, and Julius Oppert published the first grammar in 1879. Older Elamite inscriptions from Susa were published in the first decades of the 20th century by the Dominican Vincent Scheil."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "tabulka"
+     },
+     {
+      "typ": "rameček",
+      "h": "Last traces of Elamite",
+      "p": [
+       "The last Elamite cuneiform texts date from the Achaemenid period, but the language may have lived on. In the 2nd and 1st centuries BCE some rulers of Elymais bore the Elamite name Kamnaskires, and the Acts of the Apostles list the Elamites among the peoples who heard the apostles speak in their own language at Pentecost. Arab writers of the 8th to 13th centuries mention a language called Khuzi in Khuzestan that nobody else understood; the last first-hand account of it was written around 988 by al-Maqdisi. Whether it was a late form of Elamite cannot be proved."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Urartu: the kingdom by Lake Van",
+      "p": [
+       "The name Urartu is Assyrian. In the Bible the same country is called Ararat, hence the “mountains of Ararat” on which, according to Genesis, Noah’s ark came to rest. The Urartians themselves, from the time of King Ishpuini, called their country Biainili. Assyrian inscriptions mention Uruatri as early as the 13th century BCE which according to more recent scholarship was one of the lands of Nairi; a unified kingdom emerged in the mid-9th century BCE. Sarduri I (c. 832–820 BCE) moved the seat of power to Tushpa on the shore of Lake Van, where a rock citadel stands near the modern town of Van.",
+       "In the 8th century BCE Urartu was one of the most powerful states of the Near East and a rival of Assyria. It reached the height of its power under Argishti I and his son Sarduri II; Argishti extended the kingdom as far as the Araxes river and Lake Sevan. In 714 BCE the Assyrian king Sargon II plundered the holy city of Musasir with the main temple of the god Haldi. Weakened by Cimmerian and Scythian raids, the kingdom declined and came to an end in the early 6th century BCE, most often dated to a Median conquest around 590 BCE; other scholars think it survived until the middle of the century."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "van",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "Urartian and its script",
+      "p": [
+       "Together with Hurrian, the language of the Mitanni kingdom and of many texts from Hittite Hattusa, Urartian forms the small Hurro-Urartian family. The two languages separated around the beginning of the 2nd millennium BCE; Urartian is closest to Old Hurrian, known from Hurrian–Hittite bilingual texts. Links with other families, such as Northeast Caucasian, have been proposed but are not generally accepted. Urartian is an ergative language: the subject of a transitive verb takes a special case. An example from an inscription: Ḫaldi-ə ewri-ə inə É Argište-šə Menuaḫini-šə šidišt-u-nə, “For Haldi the lord, Argishti son of Menua built this temple.” The suffix -šə marks the ergative, and the modifier “son of Menua” copies it from the name it belongs to.",
+       "The oldest inscriptions from Tushpa, from the reign of Sarduri I, are still in Assyrian; his son Ishpuini was the first to write in Urartian. The scribes adopted Neo-Assyrian cuneiform and simplified it: apart from a few exceptions each sign had only one syllabic value, and a vowel was often reinforced with an extra sign (ba-a). They also took over a number of word signs and determinatives from Assyrian. What survives is mostly royal inscriptions on rock faces, stelae and buildings, recording campaigns and the building of fortresses and irrigation canals, together with inscriptions on bronze objects and a few clay tablets. Urartian was occasionally written in Anatolian hieroglyphs as well; whether Urartu had a pictorial script of its own is uncertain.",
+       "The Urartian inscriptions at Van were copied in the late 1820s by the German scholar Friedrich Eduard Schulz, who was murdered in the region in 1829; his notes were published in 1840. The script could be read once Assyrian cuneiform had been deciphered, but the language resembled no known one. Archibald Henry Sayce deciphered it in 1882, though more substantial progress came only with Urartian–Assyrian bilingual inscriptions, above all the stele from the Kelishin pass on today’s Iraq–Iran border. The Georgian historian Giorgi Melikishvili published a grammar of Urartian in 1963, and in the 1970s Igor Diakonoff systematically demonstrated its relationship with Hurrian."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "sarduri"
+     },
+     {
+      "typ": "foto",
+      "f": "rusa",
+      "na-vysku": true
+     },
+     {
+      "typ": "text",
+      "h": "Erebuni and Yerevan",
+      "p": [
+       "In 782 BCE Argishti I founded the fortress of Erebuni on the Arin Berd hill above the Ararat plain. In the autumn of 1950 archaeologists led by Konstantine Hovhannisyan found there the inscription recording its foundation: “By the greatness of the god Haldi, Argishti, son of Menua, built this mighty stronghold and proclaimed it Erebuni for the glory of Biainili and to instil fear among the king’s enemies.” A similar inscription at Tushpa states that he settled 6,600 prisoners of war from the lands of Khate and Tsupani in the new town.",
+       "Erebuni grew into Yerevan, whose name derives from it. In 1968 the city therefore celebrated its 2,750th anniversary, and the Erebuni museum opened beside the fortress that year. The meaning of the name itself is uncertain: one interpretation links it to a Urartian verb meaning “to seize, capture”, so that it might mean “conquest” or “victory”. Storerooms for grain, wine and oil with huge storage jars were also found in the fortress; an inscription of Sarduri II at the entrance to a storeroom states that two granaries held 24,100 measures of grain between them."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "erebuni",
+      "siroka": true
+     },
+     {
+      "typ": "slova",
+      "h": "Some Elamite and Urartian words",
+      "uvod": "Words whose meaning is securely established from the inscriptions. Elamite and Urartian are unrelated, but Urartian shares many words with Hurrian:",
+      "hlavicka": [
+       "word",
+       "meaning",
+       "language and notes"
+      ],
+      "radky": [
+       [
+        "sunki",
+        "king",
+        "Elamite; sunki-me “kingdom”"
+       ],
+       [
+        "nap, napir",
+        "god",
+        "Elamite; nap-ip “gods”"
+       ],
+       [
+        "hal",
+        "town, land",
+        "Elamite"
+       ],
+       [
+        "siyan",
+        "temple",
+        "Elamite"
+       ],
+       [
+        "šak",
+        "son",
+        "Elamite; in titles “X, son of Y”"
+       ],
+       [
+        "Haltamti, Hatamti",
+        "Elam",
+        "the Elamite name of their own country"
+       ],
+       [
+        "ewri, euri",
+        "lord",
+        "Urartian; Hurrian also ewri"
+       ],
+       [
+        "ebani",
+        "land",
+        "Urartian; ebani-uka-nə “from my land”"
+       ],
+       [
+        "ar-",
+        "to give",
+        "Urartian and Hurrian"
+       ],
+       [
+        "Biainili",
+        "Urartu",
+        "the Urartian name of their own country"
+       ],
+       [
+        "ulṭu",
+        "camel",
+        "Urartian; widely held to be the source of Armenian ułt"
+       ]
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Bronze and the legacy of Urartu",
+      "p": [
+       "The Urartians were skilled metalworkers. Using the lost-wax method they cast figurines, furniture fittings and cauldron attachments; from sheet bronze they hammered and decorated helmets, belts, shields and vessels. Little has been found, however, of the jewellery in precious metals that the Assyrians boasted of carrying off from Musasir. Urartian kings had irrigation canals built, and some from the reigns of Menua and Argishti I are still in use.",
+       "After the fall of Urartu, Urartian ceased to be written and probably died out; in the Armenian Highlands it was gradually replaced by Armenian. Already the Babylonian version of Darius’s Behistun inscription calls Urashtu the country that the Old Persian version names Armina, Armenia. According to a widely held view, some Urartian words and place names passed into Armenian, such as ulṭu “camel” (Armenian ułt) or Tushpa (Armenian Tosp). The name Van is also often derived from Urartian Biainili, but this remains a hypothesis."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "pas",
+      "siroka": true
+     },
+     {
+      "typ": "osa",
+      "h": "Timeline",
+      "udalosti": [
+       [
+        "c. 3100–2900 BCE",
+        "Proto-Elamite accounting tablets."
+       ],
+       [
+        "c. 2250 BCE",
+        "Treaty of Naram-Sin with Elam, the oldest Elamite text in cuneiform."
+       ],
+       [
+        "c. 2100 BCE",
+        "Puzur-Inshushinak at Susa; inscriptions in Linear Elamite."
+       ],
+       [
+        "c. 1250 BCE",
+        "Untash-Napirisha builds Chogha Zanbil (date uncertain)."
+       ],
+       [
+        "12th c. BCE",
+        "Shutruk-Nahhunte I carries Hammurabi’s stele off to Susa."
+       ],
+       [
+        "c. 832–820 BCE",
+        "Sarduri I moves the seat of Urartu to Tushpa."
+       ],
+       [
+        "782 BCE",
+        "Argishti I founds Erebuni."
+       ],
+       [
+        "714 BCE",
+        "Sargon II plunders Urartian Musasir."
+       ],
+       [
+        "c. 646 BCE",
+        "Ashurbanipal sacks Susa."
+       ],
+       [
+        "c. 590 BCE",
+        "End of Urartu (date disputed)."
+       ],
+       [
+        "509–493 BCE",
+        "Elamite tablets of the Persepolis Fortification Archive."
+       ],
+       [
+        "1855",
+        "Edwin Norris publishes the Elamite version of Behistun."
+       ],
+       [
+        "1882",
+        "Archibald Henry Sayce deciphers Urartian."
+       ],
+       [
+        "1950",
+        "The foundation inscription of Erebuni is found."
+       ],
+       [
+        "1979",
+        "Chogha Zanbil becomes Iran’s first UNESCO World Heritage Site."
+       ],
+       [
+        "2022",
+        "Desset and colleagues publish their decipherment of Linear Elamite."
+       ]
+      ]
+     },
+     {
+      "typ": "tecky",
+      "h": "Elamite and Urartian on the globe",
+      "uvod": "Both languages are extinct. Tap a language to show it on the globe:"
+     },
+     {
+      "typ": "zdroje",
+      "h": "Sources and further reading",
+      "p": [
+       "Daniel T. Potts: The Archaeology of Elam: Formation and Transformation of an Ancient Iranian State. Cambridge University Press 1999.",
+       "Matthew W. Stolper: Elamite. In: Roger D. Woodard (ed.), The Cambridge Encyclopedia of the World’s Ancient Languages. Cambridge University Press 2004, pp. 60–95.",
+       "Gernot Wilhelm: Urartian. In: Roger D. Woodard (ed.), The Cambridge Encyclopedia of the World’s Ancient Languages. Cambridge University Press 2004.",
+       "François Desset, Kambiz Tabibzadeh, Matthieu Kervran, Gian Pietro Basello, Gianni Marchesi: The Decipherment of Linear Elamite Writing. Zeitschrift für Assyriologie 112, 2022, pp. 11–60.",
+       "Paul E. Zimansky: Ancient Ararat: A Handbook of Urartian Studies. Caravan Books 1998.",
+       "Mirjo Salvini: Geschichte und Kultur der Urartäer. Wissenschaftliche Buchgesellschaft, Darmstadt 1995.",
        "Glottolog 5 (languages and their classification)."
       ]
      }
