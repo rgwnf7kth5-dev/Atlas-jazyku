@@ -62,7 +62,7 @@ if (pd.radky.some(r => !(Number.isInteger(r[0]) && r[0] >= -1 && r[0] <= 6))) ch
 if (pd.uzly.length !== pd.nad.length) chyby.push("data/podrobnosti.json: strom příbuzenstva je poškozený");
 { /* jazyky starověku (data/starovek.json): fotky s licencí a zdrojem, obě jazykové verze se stejnými oddíly, tečky v rejstříku */
   const st = json("data/starovek.json"), co = "data/starovek.json", kody = new Set(glottolog.body.map(b => b[6]));
-  const volna = /^(CC0|Public domain|CC BY(-SA)? \d\.\d)$/;
+  const volna = /^(CC0|Public domain|CC BY(-SA)? \d\.\d( [a-z]{2})?)$/;   // i jurisdikční verze, např. „CC BY-SA 2.0 de“
   for (const c of st.civilizace) {
     if (!c.adresa || !c.adresa.cs || !c.adresa.en) chyby.push(`${co}: ${c.id} nemá adresu stránky`);
     for (const [k, f] of Object.entries(c.fotky)) {

@@ -116,6 +116,8 @@
 .civ-slova th, .civ-slova td{padding:9px 12px 9px 0; border-bottom:1px solid var(--civ-linka); text-align:left; vertical-align:top}
 .civ-slova thead th{font-size:.72rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--civ-ink3)}
 .civ-slova tbody th{font-family:"Playfair Display", Georgia, serif; font-style:italic; font-weight:600; font-size:1.05rem; color:var(--civ-akcent); white-space:nowrap}
+.civ-slova tbody th [class^="civ-"]{font-style:normal; font-weight:400; font-size:1.35em; line-height:1; margin-right:.25em; vertical-align:-.1em}
+.civ-slova td [class^="civ-"]{font-size:1.25em; line-height:1}
 .civ-slova td{color:var(--civ-ink2)}
 
 /* časová osa */

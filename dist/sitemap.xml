@@ -1015,10 +1015,22 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/ancient/egypt/"/>
   </url>
   <url>
+    <loc>https://atlasjazyku.cz/starovek/indie/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/starovek/indie/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/ancient/india/"/>
+  </url>
+  <url>
     <loc>https://atlasjazyku.cz/starovek/chetite/</loc>
     <lastmod>2026-09-26</lastmod>
     <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/starovek/chetite/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/ancient/hittites/"/>
+  </url>
+  <url>
+    <loc>https://atlasjazyku.cz/starovek/cina/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/starovek/cina/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/ancient/china/"/>
   </url>
   <url>
     <loc>https://atlasjazyku.cz/starovek/fenicane/</loc>
@@ -1031,6 +1043,30 @@
     <lastmod>2026-09-26</lastmod>
     <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/starovek/recko/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/ancient/greece/"/>
+  </url>
+  <url>
+    <loc>https://atlasjazyku.cz/starovek/etruskove/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/starovek/etruskove/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/ancient/etruscans/"/>
+  </url>
+  <url>
+    <loc>https://atlasjazyku.cz/starovek/persie/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/starovek/persie/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/ancient/persia/"/>
+  </url>
+  <url>
+    <loc>https://atlasjazyku.cz/starovek/rim/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/starovek/rim/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/ancient/rome/"/>
+  </url>
+  <url>
+    <loc>https://atlasjazyku.cz/starovek/aksum/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/starovek/aksum/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/ancient/aksum/"/>
   </url>
   <url>
     <loc>https://atlasjazyku.cz/starovek/mayove/</loc>

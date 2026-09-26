@@ -379,7 +379,15 @@ a `/en/ancient/`. Na přání uživatele („ano, Řecko, Mayové …“) přiby
 písmo A a B, Ventris, abeceda, bústrofédon, nářečí a koiné, hlaholice) a **Mayové** (`#mayove` / `#maya`: logosylabické
 písmo, číslice a kalendář, kodexy, Knorozov). Mayské číslice v příkladu stojí nad sebou (znak nového řádku v datech
 a `.civ-znak-radek.civ-mayc`). Unicode má z mayského písma jen číslice, ostatní znaky se proto ukazují jen na fotkách
-a v přepisu. Další navržené: Řím, Etruskové, Čína (věštebné kosti), Indie (sanskrt, bráhmí, písmo Indu), Persie, Aksum.
+a v přepisu. Na pokyn „postupně všechny“ (26. 9. 2026) přibyly **Indie** (`#indie`/`#india`), **Čína** (`#cina`/`#china`),
+**Etruskové** (`#etruskove`/`#etruscans`), **Persie** (`#persie`/`#persia`), **Řím** (`#rim`/`#rome`) a **Aksum** (`#aksum`);
+civilizací je 12, řazené zhruba podle počátku (`data/starovek.json`). Postup u nich: fotky a texty přes workflow najednou,
+každou stránku napsal samostatný pomocný agent podle `zadani-autor` (výběr fotek, `foto-prep.py`), jiný ji nezávisle
+zkontroloval a opravy šly zpět do stránky. Nová písma v `PISMA`: staroitalské, bráhmí, kharóšthí, dévanágarí, říšská
+aramejština, avestánské, nápisná pahlavština, jihoarabské, etiopské a čínské znaky (Noto Serif TC); písma psaná zprava
+doleva jsou v poli `RTL`. Popisky fotek i tabulky slov dostávají písmo přes `text()`; v tabulce slov je první sloupec
+kurzívou, ale znaky písem ne (`.civ-slova tbody th [class^="civ-"]`). Validace bere i jurisdikční licence („CC BY-SA 2.0 de“).
+Tečka jazyka patří jen jedné civilizaci (karta tečky ukáže první), proto Persie nemá elamštinu ani aramejštinu (má je Mezopotámie).
 
 - Data `data/starovek.json`: `civilizace[]` s `id`, `adresa{cs,en}`, `krajina` (druh akvarelu), `tecky` (glottocody),
   `pisma` (písma Noto), `fotky{klic: soubor, sirka, vyska, autor, licence, licenceUrl, zdroj, cs, en}` a texty `cs`/`en`
@@ -416,6 +424,10 @@ a v přepisu. Další navržené: Řím, Etruskové, Čína (věštebné kosti),
   je podle Houstona a spol. předkem východočolských jazyků (čortí), čol je jen blízce příbuzný; „jako latina“ jen jako
   pravděpodobný výklad; „jediné písmo Ameriky, o kterém víme…“ (jiná mezoamerická písma nejsou rozluštěná); nulu znali
   už mezoameričtí předchůdci; knih „patrně mnoho set, možná tisíce“; Ruz zvedl desku 1948 (jinde 1949).
+  U dalších šesti opraveno mj.: Aksum – datace mincí jsou datace Britského muzea, ne vlády, obelisk ležel povalený už před
+  odvozem 1937, ražba mincí „jediný stát subsaharské Afriky své doby“; Čína – 1600–1046 je novodobá, ne tradiční datace,
+  rekonstrukce Baxter–Sagart *pˤok, *mˤrˤək; Řím – Lapis Niger je dlažba, ne nápis, kostel/klášter/oltář/mše přišly přes
+  starou horní němčinu, na východě říše úřadovali řecky; Persie – Niebuhr v Persepoli 1765, středoperština (ne „středověká“).
 - Nová civilizace: druh akvarelu v `src/akvarely.js`, fotky přes `data/fotky-hledat.json`, zmenšit (PIL) do
   `static/starovek/<id>/`, texty cs/en, ověření, `npm run check`, test v prohlížeči.
 
