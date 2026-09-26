@@ -1,0 +1,670 @@
+{
+ "_popis": "Cesty slov na glóbu (Příběhy jazyků). Každé slovo má kroky jako strom: krok vede oblouk od tečky rodiče (rodic) k tečce jazyka (kod = glottocode). jazyk = název jazyka, když se liší od názvu tečky (historická podoba jazyka bez vlastní tečky). jistota „sporna“ = přerušovaný oblouk. Údaje podle ověřených stránek caj a slova-z-cestiny v data/starovek.json; každý krok musí být doložený.",
+ "slova": [
+  {
+   "id": "caj",
+   "pribeh": "caj",
+   "nazev": {
+    "cs": "čaj",
+    "en": "tea"
+   },
+   "uvod": {
+    "cs": "Čínský znak 茶 se čte různě: severní výslovnost cha se šířila hlavně po souši, kantonská cha po moři do portugalštiny, jihominská te po moři s nizozemskými obchodníky.",
+    "en": "The Chinese character 茶 is read in different ways: the northern pronunciation cha spread mainly overland, the Cantonese cha by sea into Portuguese, and the Southern Min te by sea with Dutch traders."
+   },
+   "kroky": [
+    {
+     "id": "zh",
+     "rodic": null,
+     "kod": "mand1415",
+     "jazyk": {
+      "cs": "čínština (mandarínská)",
+      "en": "Chinese (Mandarin)"
+     },
+     "tvar": "茶 chá",
+     "doba": {
+      "cs": "",
+      "en": ""
+     }
+    },
+    {
+     "id": "fa",
+     "rodic": "zh",
+     "kod": "west2369",
+     "tvar": "چای čáj",
+     "doba": {
+      "cs": "po souši přes Střední Asii",
+      "en": "overland through Central Asia"
+     }
+    },
+    {
+     "id": "tr",
+     "rodic": "fa",
+     "kod": "nucl1301",
+     "tvar": "çay",
+     "doba": {
+      "cs": "z perštiny",
+      "en": "from Persian"
+     }
+    },
+    {
+     "id": "ar",
+     "rodic": "fa",
+     "kod": "stan1318",
+     "tvar": "شاي šáj",
+     "doba": {
+      "cs": "z perštiny",
+      "en": "from Persian"
+     }
+    },
+    {
+     "id": "hi",
+     "rodic": "fa",
+     "kod": "hind1269",
+     "tvar": "चाय čáj",
+     "doba": {
+      "cs": "z perštiny",
+      "en": "from Persian"
+     }
+    },
+    {
+     "id": "ru",
+     "rodic": "zh",
+     "kod": "russ1263",
+     "tvar": "чай čaj",
+     "doba": {
+      "cs": "17. století",
+      "en": "17th century"
+     },
+     "jistota": "sporna",
+     "pozn": {
+      "cs": "cesta je sporná: přes perštinu, turkické jazyky, nebo mongolštinu",
+      "en": "the route is disputed: via Persian, Turkic languages or Mongolian"
+     }
+    },
+    {
+     "id": "cs",
+     "rodic": "ru",
+     "kod": "czec1258",
+     "tvar": "čaj",
+     "doba": {
+      "cs": "19. století; dříve thé",
+      "en": "19th century; earlier thé"
+     }
+    },
+    {
+     "id": "yue",
+     "rodic": null,
+     "kod": "yuec1235",
+     "jazyk": {
+      "cs": "kantonština",
+      "en": "Cantonese"
+     },
+     "tvar": "茶 caa4",
+     "doba": {
+      "cs": "Kanton a Macao",
+      "en": "Canton and Macau"
+     }
+    },
+    {
+     "id": "pt",
+     "rodic": "yue",
+     "kod": "port1283",
+     "tvar": "chá",
+     "doba": {
+      "cs": "po moři z Macaa, 16. století",
+      "en": "by sea from Macau, 16th century"
+     }
+    },
+    {
+     "id": "nan",
+     "rodic": null,
+     "kod": "minn1241",
+     "jazyk": {
+      "cs": "jihominská čínština",
+      "en": "Southern Min"
+     },
+     "tvar": "茶 tê",
+     "doba": {
+      "cs": "přístav Sia-men (Amoy)",
+      "en": "the port of Xiamen (Amoy)"
+     }
+    },
+    {
+     "id": "ms",
+     "rodic": "nan",
+     "kod": "stan1306",
+     "tvar": "teh",
+     "doba": {
+      "cs": "od jihominských obchodníků",
+      "en": "from Southern Min traders"
+     }
+    },
+    {
+     "id": "nl",
+     "rodic": "nan",
+     "kod": "dutc1256",
+     "tvar": "thee",
+     "doba": {
+      "cs": "17. století",
+      "en": "17th century"
+     },
+     "pozn": {
+      "cs": "od jihominských nebo malajských obchodníků",
+      "en": "from Southern Min or Malay traders"
+     }
+    },
+    {
+     "id": "en",
+     "rodic": "nl",
+     "kod": "stan1293",
+     "tvar": "tea",
+     "doba": {
+      "cs": "17. století",
+      "en": "17th century"
+     }
+    },
+    {
+     "id": "de",
+     "rodic": "nl",
+     "kod": "stan1295",
+     "tvar": "Tee",
+     "doba": {
+      "cs": "z nizozemštiny",
+      "en": "from Dutch"
+     }
+    },
+    {
+     "id": "fr",
+     "rodic": "nl",
+     "kod": "stan1290",
+     "tvar": "thé",
+     "doba": {
+      "cs": "z nizozemštiny",
+      "en": "from Dutch"
+     }
+    }
+   ]
+  },
+  {
+   "id": "kava",
+   "pribeh": "caj",
+   "nazev": {
+    "cs": "káva",
+    "en": "coffee"
+   },
+   "uvod": {
+    "cs": "Arabské slovo qahwa, které dřív označovalo i víno, se do Evropy dostalo přes osmanskou turečtinu.",
+    "en": "The Arabic word qahwa, which earlier also meant wine, reached Europe through Ottoman Turkish."
+   },
+   "kroky": [
+    {
+     "id": "ar",
+     "rodic": null,
+     "kod": "stan1318",
+     "jazyk": {
+      "cs": "arabština",
+      "en": "Arabic"
+     },
+     "tvar": "قهوة qahwa",
+     "doba": {
+      "cs": "",
+      "en": ""
+     }
+    },
+    {
+     "id": "tr",
+     "rodic": "ar",
+     "kod": "nucl1301",
+     "jazyk": {
+      "cs": "osmanská turečtina",
+      "en": "Ottoman Turkish"
+     },
+     "tvar": "قهوه kahve",
+     "doba": {
+      "cs": "z arabštiny",
+      "en": "from Arabic"
+     }
+    },
+    {
+     "id": "it",
+     "rodic": "tr",
+     "kod": "ital1282",
+     "tvar": "caffè",
+     "doba": {
+      "cs": "z turečtiny",
+      "en": "from Turkish"
+     }
+    },
+    {
+     "id": "fr",
+     "rodic": "it",
+     "kod": "stan1290",
+     "tvar": "café",
+     "doba": {
+      "cs": "z italštiny, 17. století",
+      "en": "from Italian, 17th century"
+     }
+    },
+    {
+     "id": "de",
+     "rodic": "fr",
+     "kod": "stan1295",
+     "tvar": "Kaffee",
+     "doba": {
+      "cs": "17. století",
+      "en": "17th century"
+     },
+     "pozn": {
+      "cs": "z francouzského café, vedle toho i z anglického coffee; do 18. století se psalo Kaffee i Koffee",
+      "en": "from French café, alongside English coffee; Kaffee and Koffee coexisted until the 18th century"
+     }
+    },
+    {
+     "id": "pl",
+     "rodic": "tr",
+     "kod": "poli1260",
+     "tvar": "kawa",
+     "doba": {
+      "cs": "z turečtiny",
+      "en": "from Turkish"
+     }
+    },
+    {
+     "id": "cs",
+     "rodic": "pl",
+     "kod": "czec1258",
+     "tvar": "káva",
+     "doba": {
+      "cs": "obrození, ustálilo se 1812–1830; dříve kafe z němčiny",
+      "en": "National Revival, established 1812–1830; earlier kafe from German"
+     },
+     "pozn": {
+      "cs": "obrozenci nahradili kafe podle polského kawa (uvádí se i srbochorvatské kava)",
+      "en": "Revival writers replaced kafe after Polish kawa (Serbo-Croatian kava is also cited)"
+     },
+     "jistota": "sporna"
+    },
+    {
+     "id": "nl",
+     "rodic": "tr",
+     "kod": "dutc1256",
+     "tvar": "koffie",
+     "doba": {
+      "cs": "17. století",
+      "en": "17th century"
+     },
+     "pozn": {
+      "cs": "z osmanské turečtiny; jiný výklad počítá i s přímým vlivem arabštiny z námořního obchodu s Jemenem",
+      "en": "from Ottoman Turkish; another view allows direct Arabic influence via the sea trade with Yemen"
+     }
+    },
+    {
+     "id": "en",
+     "rodic": "nl",
+     "kod": "stan1293",
+     "tvar": "coffee",
+     "doba": {
+      "cs": "1582, z nizozemštiny",
+      "en": "1582, from Dutch"
+     }
+    }
+   ]
+  },
+  {
+   "id": "cukr",
+   "pribeh": "caj",
+   "nazev": {
+    "cs": "cukr",
+    "en": "sugar"
+   },
+   "uvod": {
+    "cs": "Sanskrtské śarkarā, ‚drcený či krystalický cukr‘, putovalo s pěstováním a obchodem přes Persii a arabský svět do Evropy.",
+    "en": "Sanskrit śarkarā, ‘ground or candied sugar’, travelled with cultivation and trade through Persia and the Arab world to Europe."
+   },
+   "kroky": [
+    {
+     "id": "sa",
+     "rodic": null,
+     "kod": "sans1269",
+     "tvar": "शर्करा śarkarā",
+     "doba": {
+      "cs": "",
+      "en": ""
+     }
+    },
+    {
+     "id": "fa",
+     "rodic": "sa",
+     "kod": "west2369",
+     "jazyk": {
+      "cs": "perština",
+      "en": "Persian"
+     },
+     "tvar": "شکر šakar",
+     "doba": {
+      "cs": "ze sanskrtu",
+      "en": "from Sanskrit"
+     }
+    },
+    {
+     "id": "ar",
+     "rodic": "fa",
+     "kod": "stan1318",
+     "jazyk": {
+      "cs": "arabština",
+      "en": "Arabic"
+     },
+     "tvar": "سكر sukkar",
+     "doba": {
+      "cs": "z perštiny",
+      "en": "from Persian"
+     }
+    },
+    {
+     "id": "it",
+     "rodic": "ar",
+     "kod": "ital1282",
+     "jazyk": {
+      "cs": "středověká latina a italština",
+      "en": "Medieval Latin and Italian"
+     },
+     "tvar": "succarum, zucchero",
+     "doba": {
+      "cs": "z arabštiny",
+      "en": "from Arabic"
+     }
+    },
+    {
+     "id": "de",
+     "rodic": "it",
+     "kod": "stan1295",
+     "tvar": "Zucker",
+     "doba": {
+      "cs": "z italštiny",
+      "en": "from Italian"
+     }
+    },
+    {
+     "id": "cs",
+     "rodic": "de",
+     "kod": "czec1258",
+     "tvar": "cukr",
+     "doba": {
+      "cs": "z němčiny",
+      "en": "from German"
+     }
+    }
+   ]
+  },
+  {
+   "id": "pomeranc",
+   "pribeh": "caj",
+   "nazev": {
+    "cs": "pomeranč",
+    "en": "orange"
+   },
+   "uvod": {
+    "cs": "Sanskrtské nāraṅga je patrně přejaté z drávidského jazyka. Arabské nāranj dalo italské arancia a francouzské orange; české pomeranč je z němčiny, ze středolatinského pomerancia (pōmum ‚ovoce, jablko‘ + arancia).",
+    "en": "Sanskrit nāraṅga was probably borrowed from a Dravidian language. Arabic nāranj gave Italian arancia and French orange; Czech pomeranč comes through German, from Medieval Latin pomerancia (pōmum ‘fruit, apple’ + arancia)."
+   },
+   "kroky": [
+    {
+     "id": "dra",
+     "rodic": null,
+     "kod": "tami1289",
+     "jazyk": {
+      "cs": "drávidský jazyk (snad tamilština nebo telugština)",
+      "en": "a Dravidian language (perhaps Tamil or Telugu)"
+     },
+     "tvar": "?",
+     "doba": {
+      "cs": "",
+      "en": ""
+     }
+    },
+    {
+     "id": "sa",
+     "rodic": "dra",
+     "kod": "sans1269",
+     "tvar": "नारङ्ग nāraṅga",
+     "doba": {
+      "cs": "",
+      "en": ""
+     },
+     "jistota": "sporna",
+     "pozn": {
+      "cs": "drávidský původ je pravděpodobný, ne jistý",
+      "en": "a Dravidian origin is likely but not certain"
+     }
+    },
+    {
+     "id": "fa",
+     "rodic": "sa",
+     "kod": "west2369",
+     "jazyk": {
+      "cs": "perština",
+      "en": "Persian"
+     },
+     "tvar": "نارنگ nārang",
+     "doba": {
+      "cs": "ze sanskrtu",
+      "en": "from Sanskrit"
+     }
+    },
+    {
+     "id": "ar",
+     "rodic": "fa",
+     "kod": "stan1318",
+     "jazyk": {
+      "cs": "arabština",
+      "en": "Arabic"
+     },
+     "tvar": "نارنج nāranj",
+     "doba": {
+      "cs": "z perštiny",
+      "en": "from Persian"
+     }
+    },
+    {
+     "id": "es",
+     "rodic": "ar",
+     "kod": "stan1288",
+     "tvar": "naranja",
+     "doba": {
+      "cs": "z arabštiny",
+      "en": "from Arabic"
+     }
+    },
+    {
+     "id": "it",
+     "rodic": "ar",
+     "kod": "ital1282",
+     "tvar": "arancia",
+     "doba": {
+      "cs": "počáteční n- odpadlo",
+      "en": "the initial n- was lost"
+     }
+    },
+    {
+     "id": "fr",
+     "rodic": "it",
+     "kod": "stan1290",
+     "tvar": "orange",
+     "doba": {
+      "cs": "kolem 1200 pome d'orenge, kalk it. melarancia",
+      "en": "c. 1200 pome d'orenge, a calque of Italian melarancia"
+     },
+     "pozn": {
+      "cs": "o- snad podle města Orange nebo okcitánského auranja",
+      "en": "the o- perhaps after the town of Orange or Old Occitan auranja"
+     }
+    },
+    {
+     "id": "de",
+     "rodic": "it",
+     "kod": "stan1295",
+     "tvar": "Pomeranze",
+     "doba": {
+      "cs": "15. století, ze středolat. pomerancia (lat. pōmum ‚ovoce, jablko‘ + arancia)",
+      "en": "15th century, from Medieval Latin pomerancia (Latin pōmum ‘fruit, apple’ + arancia)"
+     },
+     "pozn": {
+      "cs": "hořký pomeranč (Citrus aurantium)",
+      "en": "the bitter orange (Citrus aurantium)"
+     }
+    },
+    {
+     "id": "cs",
+     "rodic": "de",
+     "kod": "czec1258",
+     "tvar": "pomeranč",
+     "doba": {
+      "cs": "z němčiny",
+      "en": "from German"
+     }
+    }
+   ]
+  },
+  {
+   "id": "robot",
+   "pribeh": "slova-z-cestiny",
+   "nazev": {
+    "cs": "robot",
+    "en": "robot"
+   },
+   "uvod": {
+    "cs": "Slovo robot poprvé zaznělo ve hře Karla Čapka R.U.R. (1920, premiéra 1921); podle Karla Čapka ho navrhl bratr Josef. Do světa se rozšířilo s překlady a inscenacemi hry.",
+    "en": "The word robot first appeared in Karel Čapek’s play R.U.R. (1920, premiered 1921); according to Karel Čapek, his brother Josef suggested it. It spread with translations and productions of the play."
+   },
+   "kroky": [
+    {
+     "id": "cs",
+     "rodic": null,
+     "kod": "czec1258",
+     "tvar": "robot",
+     "doba": {
+      "cs": "R.U.R., 1920",
+      "en": "R.U.R., 1920"
+     }
+    },
+    {
+     "id": "en",
+     "rodic": "cs",
+     "kod": "stan1293",
+     "tvar": "robot",
+     "doba": {
+      "cs": "New York 1922, Londýn 1923",
+      "en": "New York 1922, London 1923"
+     }
+    },
+    {
+     "id": "de",
+     "rodic": "cs",
+     "kod": "stan1295",
+     "tvar": "Roboter",
+     "doba": {
+      "cs": "1922, překlad Otto Picka (přípona -er)",
+      "en": "1922, Otto Pick’s translation (suffix -er)"
+     }
+    },
+    {
+     "id": "fr",
+     "rodic": "cs",
+     "kod": "stan1290",
+     "tvar": "robot",
+     "doba": {
+      "cs": "1924, pařížská inscenace (překlad Hanuše Jelínka)",
+      "en": "1924, Paris production (Hanuš Jelínek’s translation)"
+     }
+    },
+    {
+     "id": "ru",
+     "rodic": "cs",
+     "kod": "russ1263",
+     "tvar": "робот robot",
+     "doba": {
+      "cs": "",
+      "en": ""
+     }
+    }
+   ]
+  },
+  {
+   "id": "dolar",
+   "pribeh": "slova-z-cestiny",
+   "nazev": {
+    "cs": "dolar",
+    "en": "dollar"
+   },
+   "uvod": {
+    "cs": "Stříbrné mince z Jáchymova (Joachimsthal) se od let 1519–1520 jmenovaly Joachimsthaler, zkráceně Taler. Slovo je německé, ale pochází z Čech.",
+    "en": "The silver coins of Jáchymov (Joachimsthal) were called Joachimsthaler, short Taler, from 1519–1520. The word is German, but it comes from Bohemia."
+   },
+   "kroky": [
+    {
+     "id": "de",
+     "rodic": null,
+     "kod": "stan1295",
+     "jazyk": {
+      "cs": "němčina (Jáchymov v Čechách)",
+      "en": "German (Jáchymov in Bohemia)"
+     },
+     "tvar": "Joachimsthaler, Taler",
+     "doba": {
+      "cs": "mince od 1519–1520, zkrácené Taler od 30. let 16. století",
+      "en": "coin from 1519–1520, short form Taler from the 1530s"
+     }
+    },
+    {
+     "id": "cs",
+     "rodic": "de",
+     "kod": "czec1258",
+     "tvar": "tolar",
+     "doba": {
+      "cs": "",
+      "en": ""
+     }
+    },
+    {
+     "id": "nl",
+     "rodic": "de",
+     "kod": "dutc1256",
+     "tvar": "daalder",
+     "doba": {
+      "cs": "",
+      "en": ""
+     }
+    },
+    {
+     "id": "nds",
+     "rodic": "de",
+     "kod": "nort2627",
+     "jazyk": {
+      "cs": "dolnoněmčina",
+      "en": "Low German"
+     },
+     "tvar": "daler",
+     "doba": {
+      "cs": "16. století",
+      "en": "16th century"
+     }
+    },
+    {
+     "id": "en",
+     "rodic": "nds",
+     "kod": "stan1293",
+     "tvar": "dollar",
+     "doba": {
+      "cs": "daler kolem 1550, dollar kolem 1600; v USA od 1785",
+      "en": "daler c. 1550, dollar c. 1600; in the USA from 1785"
+     },
+     "pozn": {
+      "cs": "z dolnoněmeckého nebo vlámského daler",
+      "en": "from Low German or early Flemish daler"
+     }
+    }
+   ]
+  }
+ ]
+}

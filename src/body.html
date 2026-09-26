@@ -64,6 +64,12 @@
    </div>
    <div class="hud" id="hud" aria-hidden="true"><span class="souradnice" id="hud-souradnice"></span><span class="stav-hud" id="hud-stav"></span></div>
    <section class="typ-legenda sklo" id="typ-legenda" hidden aria-labelledby="typ-leg-nazev"></section>
+   <div class="eu-panel sklo cesta-panel" id="cesta-panel" hidden role="dialog" aria-labelledby="cesta-nadpis">
+    <div class="eu-text"><strong id="cesta-nadpis"></strong><p id="cesta-uvod"></p></div>
+    <button class="zavrit" id="cesta-zavrit" type="button" aria-label="{{cestaZavrit}}" data-t-aria-label="cestaZavrit"><svg aria-hidden="true"><use href="#i-krizek"/></svg></button>
+    <ol class="cesta-kroky" id="cesta-kroky"></ol>
+    <div class="cesta-dalsi" id="cesta-dalsi"></div>
+   </div>
    <div class="vit-legenda sklo" id="vit-legenda" hidden><button type="button" id="vit-legenda-tl"></button></div>
    <div class="dok sklo" id="dok">
     <button class="tl hlavni" id="tl-nahoda" type="button"><svg aria-hidden="true"><use href="#i-kostka"/></svg><span data-t="prekvap">{{prekvap}}</span></button>

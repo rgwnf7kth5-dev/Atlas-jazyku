@@ -97,6 +97,26 @@ if (pd.uzly.length !== pd.nad.length) chyby.push("data/podrobnosti.json: strom p
   const majitel = {};
   for (const c of st.civilizace) if (!c.sekce) for (const k of c.tecky || []) { if (majitel[k]) chyby.push(`${co}: tečku ${k} mají ${majitel[k]} i ${c.id}`); majitel[k] = c.id; }
 }
+{ /* cesty slov (data/cesty-slov.json): tečky v rejstříku, rodič existuje a stojí dřív, texty v obou jazycích, příběh existuje */
+  const co = "data/cesty-slov.json", d = json(co), kody = new Set(glottolog.body.filter(b => b[1] != null).map(b => b[6]));
+  const opravy = json("data/polohy-opravy.json"), stranky = new Set(json("data/starovek.json").civilizace.map(c => c.id)), idSlov = new Set();
+  for (const w of d.slova) {
+    if (idSlov.has(w.id)) chyby.push(`${co}: slovo ${w.id} je tam dvakrát`); idSlov.add(w.id);
+    if (!stranky.has(w.pribeh)) chyby.push(`${co}: ${w.id} odkazuje na neznámý příběh „${w.pribeh}“`);
+    for (const l of ["cs", "en"]) if (!w.nazev[l] || !w.uvod[l]) chyby.push(`${co}: ${w.id} nemá název nebo úvod (${l})`);
+    const videne = new Set();
+    for (const k of w.kroky) {
+      if (!kody.has(k.kod) || (opravy[k.kod] && opravy[k.kod].poloha === null)) chyby.push(`${co}: ${w.id}/${k.id} má tečku „${k.kod}“, která na glóbu není`);
+      if (k.rodic && !videne.has(k.rodic)) chyby.push(`${co}: ${w.id}/${k.id} má rodiče „${k.rodic}“, který nestojí před ním`);
+      if (!k.tvar) chyby.push(`${co}: ${w.id}/${k.id} nemá tvar slova`);
+      for (const pole of ["jazyk", "doba", "pozn"]) if (k[pole] && (k[pole].cs == null || k[pole].en == null)) chyby.push(`${co}: ${w.id}/${k.id} má „${pole}“ jen v jednom jazyce`);
+      if (k.jistota && k.jistota !== "sporna") chyby.push(`${co}: ${w.id}/${k.id} má jistotu „${k.jistota}“ (jen „sporna“)`);
+      videne.add(k.id);
+    }
+  }
+  for (const c of json("data/starovek.json").civilizace) for (const l of ["cs", "en"]) for (const b of c[l].oddily) if (b.typ === "cesta")
+    for (const s of b.slova) if (!idSlov.has(s)) chyby.push(`data/starovek.json: ${c.id} odkazuje na neznámou cestu slova „${s}“`);
+}
 { /* typologické mapy: popis (ručně) a data (scripts/typologie.mjs) musí sedět; barvy mapy jsou ověřené jen pro 5 odstínů + „jiné“ a 7 stupňů */
   const p = json("data/typologie-popis.json"), d = json("data/typologie.json"), co = "data/typologie-popis.json";
   if (p.vlastnosti.length !== d.vlastnosti.length || p.vlastnosti.some((v, k) => v.id !== d.vlastnosti[k].id)) chyby.push("data/typologie.json neodpovídá popisu – spusť node scripts/typologie.mjs");

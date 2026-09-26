@@ -117,6 +117,14 @@ var STAROVEK = (function(){
           : '<button class="civ-mapa-tl" type="button" data-mapa="' + esc(b.vlastnost) + '">' + ikona + esc(o.U.mapaTlacitko) + "</button>";
         return '<section class="civ-mapa">' + h + (b.p || []).map(function(p){ return "<p>" + text(p) + "</p>"; }).join("") + tl + "</section>";
       }
+      /* cesty slov na glóbu (Příběhy): tlačítko pro každé slovo; v aplikaci data-cesta, na webu odkaz #cesta-<id> */
+      case "cesta": {
+        const ikona = '<svg aria-hidden="true" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M4 10.5c1.5-3 3-4.2 5.5-4.2M9.5 6.3l-1.4-1.3M9.5 6.3l-1.2 1.5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>';
+        const nazev = function(id){ const w = (o.cesty || []).find(function(x){ return x.id === id; }); return w ? w.nazev[lang] : id; };
+        return '<section class="civ-mapa civ-cesta">' + h + (b.p || []).map(function(p){ return "<p>" + text(p) + "</p>"; }).join("") + '<div class="civ-cesty">' +
+          b.slova.map(function(id){ return o.odkazCesta ? '<a class="civ-mapa-tl" href="' + esc(o.odkazCesta(id)) + '">' + ikona + esc(nazev(id)) + "</a>"
+            : '<button class="civ-mapa-tl" type="button" data-cesta="' + esc(id) + '">' + ikona + esc(nazev(id)) + "</button>"; }).join("") + "</div></section>";
+      }
       case "zdroje": return '<section class="civ-zdroje">' + h + "<ul>" + b.p.map(function(p){ return "<li>" + esc(p) + "</li>"; }).join("") + "</ul></section>";
     }
     return "";

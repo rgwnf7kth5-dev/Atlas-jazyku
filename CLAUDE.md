@@ -430,6 +430,17 @@ Jazykové záhady. Při ověřování opraveno mj.: nejstarší česká přejet�
 čeština měla dřív thé a čaj až od 19. st. jako rusismus, WALS vede polštinu (herbata) jako „jiné“, Ramusio 1559 (ne 1545),
 nejstarší anglický doklad cha je Linschoten 1598, manská Bible celá 1775, Neacșuův dopis není datovaný (jen přesně
 datovatelný), Glottolog vede manštinu jako „extinct“ a „awakening“ je jen v komentáři z ElCat, rongorongo – sporné, zda je to písmo.
+**Cesty slov na glóbu** (26. 9. 2026, podnět z hodnocení webu; uživatel zvolil před nahrávkami rodilých mluvčích – ty si
+atlas nemůže poslechnout a ověřit a artefakt by přerostl 16 MB): `data/cesty-slov.json` (build → `CESTY`, validace hlídá tečky,
+pořadí rodičů a texty). Slovo má kroky jako strom `{id, rodic, kod, jazyk?, tvar, doba, pozn?, jistota?}`; `jazyk` přepíše název
+tečky, když historický jazyk tečku nemá (osmanská turečtina na tečce turečtiny, dolnoněmčina na `nort2627`). Režim `cesta`
+v app.js (`spustCestu`, `ukonciCestu`, kreslení v `kresliPopredi`): let nad střed teček, oblouky po `CESTA_KROK` ms od rodiče,
+sporné přerušovaně, u tečky tvar a jazyk (popisek, který by překryl jiný, se zkrátí na tvar nebo vynechá), tečky kroků svítí
+příznakem 5, běžná jména teček jsou schovaná. Panel `#cesta-panel` (třída `eu-panel`): na počítači vpravo nahoře a glóbus se
+posune do volné plochy vlevo (`spoctiPosun`), na telefonu pod glóbem jako legenda typologie. Vstupy: oddíl `cesta` v Příbězích
+(`{h, p, slova}`), řada „Cesty slov na glóbu“ nahoře v nabídce Příběhů, odkaz `#cesta-<id>`. Při ověření opraveno: něm. Kaffee
+přes fr. café (ne přímo z turečtiny), angl. dollar z dolnoněm. daler, Pomeranze ze středolat. pomerancia, české káva zavedli
+obrozenci podle pol. kawa (dříve kafe z němčiny; krok je přerušovaný). Nové slovo = kroky v datech + nezávislé ověření.
 **Tři další civilizace** tentýž den: **Elam a Urartu** (`#elam-a-urartu`; tečka elamštiny se přesunula od Sumeru a Akkadu),
 **Turkuti a orchonské písmo** (`#orchon`/`#orkhon`; nové písmo `civ-orkh`, Noto Sans Old Turkic, zprava doleva; v rodokmenu
 písem uzel pod sogdským s přerušovanou čarou) a **Aztékové** (`#aztekove`/`#aztecs`; aztécké písmo Unicode nemá, jen fotky).

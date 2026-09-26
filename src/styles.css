@@ -1059,3 +1059,26 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 .typ-karta-vl:hover{color:var(--text)}
 .typ-karta .vybrana{font-weight:700}
 .typ-karta dt.vybrana .typ-karta-vl{color:var(--text)}
+
+/* ---------- cesta slova na glóbu (Příběhy jazyků) ---------- */
+.cesta-panel{grid-template-columns:1fr auto; width:min(340px, 40%); max-height:calc(100% - 120px); overflow:auto; scrollbar-width:thin}
+.cesta-panel .zavrit{grid-column:2}
+.scena.rezim-cesta :is(.napoveda,.tl-napoveda,.typ-legenda){display:none}
+.cesta-kroky{grid-column:1 / -1; list-style:none; margin:2px 0 0; padding:0 0 0 12px; border-left:2px solid var(--cervena)}
+.cesta-kroky li{position:relative; animation:cesta-in .35s ease-out both}
+.cesta-kroky li::before{content:""; position:absolute; left:-18px; top:11px; width:8px; height:8px; border-radius:50%; background:var(--cervena); box-shadow:0 0 0 2px var(--popisek-lem)}
+.cesta-kroky li.sporna::before{background:var(--popisek-lem); box-shadow:inset 0 0 0 2px var(--cervena)}
+@keyframes cesta-in{from{opacity:0; transform:translateY(4px)}}
+.cesta-kroky button{display:grid; grid-template-columns:auto 1fr; gap:0 8px; width:100%; padding:4px 6px; border:0; border-radius:8px; background:transparent; color:var(--text); text-align:left; font:inherit; cursor:pointer}
+.cesta-kroky button:hover{background:var(--plocha2)}
+.cesta-kroky button:focus-visible{outline:2px solid var(--cyan); outline-offset:1px}
+.cesta-kroky b{font-size:.86rem}
+.cesta-kroky span{font-size:.76rem; color:var(--text2); align-self:center}
+.cesta-kroky small{grid-column:1 / -1; font-size:.7rem; line-height:1.35; color:var(--text3)}
+.cesta-dalsi{grid-column:1 / -1; display:flex; flex-wrap:wrap; gap:5px; padding-top:4px; border-top:1px solid var(--linka)}
+.cesta-dalsi button{font:inherit; font-size:.74rem; font-weight:600; padding:4px 10px; border-radius:999px; cursor:pointer; color:var(--text); background:var(--plocha2); border:1px solid var(--linka2, var(--linka))}
+.cesta-dalsi button:hover{background:var(--plocha)}
+.cesta-dalsi .cesta-znovu{border-color:var(--cervena)}
+.cesta-dalsi .cesta-pribeh{background:transparent}
+@media (prefers-reduced-motion: reduce){ .cesta-kroky li{animation:none} }
+@media (max-width:920px){ .cesta-panel{position:relative; top:auto; left:auto; right:auto; width:auto; max-height:none; margin:4px 12px 12px} .cesta-panel .eu-text p{display:block} }

@@ -41,7 +41,8 @@ const sekceA = c => c.sekce === "pribehy" ? pribehyA : starovekA;
 const civAdresa = (c, lang) => sekceA(c)[lang] + c.adresa[lang] + "/";
 export function vyrobStranky({ KOREN, WEB, NAHLED, UI, jazyky: vsechnyJazyky, glottolog, podrobnosti, nazvyZemi, ikona, fontyOdkaz, verze, dny, starovek, sablonaStarovek, stylStarovek }) {
   const DIST = path.join(KOREN, "dist");
-  const STAROVEK = new Function(sablonaStarovek + "\nreturn STAROVEK;")();   // šablona stránky o civilizaci (i pro aplikaci)
+  const STAROVEK = new Function(sablonaStarovek + "\nreturn STAROVEK;")();
+  const CESTY_SLOV = JSON.parse(fs.readFileSync(path.join(KOREN, "data/cesty-slov.json"), "utf8")).slova;   // cesty slov na glóbu (tlačítka v Příbězích)   // šablona stránky o civilizaci (i pro aplikaci)
   const bodPodleKodu = new Map(glottolog.body.map((b, i) => [b[6], i]));
   const bodJazyka = {};
   glottolog.body.forEach((b, i) => { if (b[5] && !(b[5] in bodJazyka)) bodJazyka[b[5]] = i; });
@@ -404,7 +405,7 @@ ${html}
       const clanek = STAROVEK.html(c, lang, { U: Us, foto: k => `/starovek/${c.id}/${c.fotky[k].soubor}`, fotoMala: k => `/starovek/${c.id}/${k}-720.jpg`,
         malba: `<img src="/starovek/${c.id}/malba.jpg" alt="" width="1200" height="630">`, tecka,
         vsechny: starovek.civilizace, dalsi: starovek.civilizace.filter(x => (x.sekce || "") === (c.sekce || "")), odkazCiv: x => civAdresa(x, lang),
-        odkazMapa: id => domov[lang] + "#mapa-" + id });
+        odkazMapa: id => domov[lang] + "#mapa-" + id, cesty: CESTY_SLOV, odkazCesta: id => domov[lang] + "#cesta-" + id });
       const pisma = STAROVEK.odkazPisma(c);
       zapis(adresa, stranka({ lang, adresa, jinaAdresa: jina, titulek: (c.prehled || c.sekce ? L.nazev : Us.titulek.replace("{n}", L.nazev)) + " · " + T.nazev, popis: L.perex,
         obrazek: { src: `/starovek/${c.id}/malba.jpg`, w: 1200, h: 630 },

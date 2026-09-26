@@ -565,7 +565,8 @@
     "h": "Příběhy jazyků",
     "p": [
      "Ikona knihy vpravo nahoře (vedle ikony chrámu) otevře nabídku Příběhy jazyků: tematické stránky ve stejné úpravě jako Jazyky starověku, seřazené do skupin Slova na cestách, Jazyky v čase, Lidé a jazyky a Záhady. Hotové jsou stránky Čaj a slova na cestách (proč se čaji ve světě říká „čaj“, nebo „tea“), Slova z češtiny ve světě (robot, dolar, houfnice, pistole, polka a co je doložené a co sporné), Jak z latiny vznikly románské jazyky, Jazyky, které se vracejí (velština, maorština, manština, hebrejština) a Jazykové záhady (nerozluštěná písma, izolované jazyky a sporné jazykové rodiny).",
-     "Tlačítko Ukázat na glóbu na stránce o čaji zavře stránku a obarví glóbus podle typologické mapy WALS o původu slova pro čaj. Stránky najde i vyhledávání (například „robot“), odkazy mají tvar atlasjazyku.cz/#caj a na webu jsou i jako samostatné stránky v oddílu /pribehy/."
+     "Tlačítko Ukázat na glóbu na stránce o čaji zavře stránku a obarví glóbus podle typologické mapy WALS o původu slova pro čaj. Stránky najde i vyhledávání (například „robot“), odkazy mají tvar atlasjazyku.cz/#caj a na webu jsou i jako samostatné stránky v oddílu /pribehy/.",
+     "Nahoře v nabídce Příběhů je řada Cesty slov na glóbu (čaj, káva, cukr, pomeranč, robot, dolar); stejná tlačítka jsou i na stránkách o čaji a o slovech z češtiny. Glóbus doletí nad oblast, kudy slovo putovalo, a oblouky se kreslí krok za krokem od výchozího jazyka; u každé tečky naskočí tvar slova a jazyk. Přerušovaný oblouk znamená spornou cestu. Panel vpravo nahoře (na telefonu pod glóbem) vypisuje kroky s dobou a poznámkou; klepnutím na krok se otevře karta jazyka. Tlačítko Přehrát znovu animaci zopakuje, další tlačítka přepnou na jiné slovo. Zavírá se křížkem, klávesou Escape nebo tlačítkem Celý svět; odkaz má tvar #cesta-caj."
     ]
    },
    {
@@ -638,6 +639,12 @@
    "zahady": "Záhady"
   }
  },
+ "cestaNadpis": "Cesta slova {s}",
+ "cestaZavrit": "Zavřít cestu slova",
+ "cestaZnovu": "Přehrát znovu",
+ "cestaPribeh": "Příběh: {n}",
+ "cestaTlacitko": "Cesta na glóbu",
+ "cestyNabidka": "Cesty slov na glóbu",
  "pribehyTlacitko": "Příběhy jazyků: cesty slov, proměny jazyků, obnova a záhady",
  "starovekTlacitko": "Jazyky starověku: stránky o civilizacích, jejich jazyce a písmu"
 }

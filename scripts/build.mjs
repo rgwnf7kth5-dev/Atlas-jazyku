@@ -105,6 +105,7 @@ function skriptStranky(vychozi, artefakt) {
     .replace("/*__REJSTRIK__*/null", () => doSkriptu(REJSTRIK))
     .replace("/*__VYMYSLENE__*/null", () => doSkriptu(json("data/vymyslene.json")))
     .replace("/*__STAROVEK__*/null", () => doSkriptu(starovekDoSkriptu(artefakt)))
+    .replace("/*__CESTY__*/null", () => doSkriptu(json("data/cesty-slov.json").slova))   // cesty slov na glóbu (Příběhy)
     .replace("/*__KRAJINY__*/null", () => doSkriptu(json("data/krajiny.json")))
     .replace("/*__RELIEF__*/null", () => JSON.stringify("data:image/webp;base64," + fs.readFileSync(path.join(KOREN, "data/relief.webp")).toString("base64")))
     .replace("/*__TYPOLOGIE__*/null", () => { const d = json("data/typologie.json"), p = json("data/typologie-popis.json");   // typologické mapy (WALS)

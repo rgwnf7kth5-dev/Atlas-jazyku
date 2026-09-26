@@ -565,7 +565,8 @@
     "h": "Language stories",
     "p": [
      "The book icon at the top right (next to the temple icon) opens the Language stories menu: thematic pages in the same style as Languages of antiquity, grouped into Travelling words, Languages through time, People and languages, and Mysteries. Ready so far: Tea and other travelling words (why the world says either “cha” or “tea”), Czech words in other languages (robot, dollar, howitzer, pistol, polka – what is attested and what is disputed), From Latin to the Romance languages, Languages coming back (Welsh, Māori, Manx, Hebrew) and Linguistic mysteries (undeciphered scripts, language isolates and disputed families).",
-     "The Show on the globe button on the tea page closes the page and colours the globe with the WALS map of the origin of the word for tea. The search finds the stories too (for example “robot”); links look like thelanguageatlas.com/#tea, and on the website each story is also a separate page under /stories/."
+     "The Show on the globe button on the tea page closes the page and colours the globe with the WALS map of the origin of the word for tea. The search finds the stories too (for example “robot”); links look like thelanguageatlas.com/#tea, and on the website each story is also a separate page under /stories/.",
+     "At the top of the Language stories menu is the row Word journeys on the globe (tea, coffee, sugar, orange, robot, dollar); the same buttons are on the pages about tea and about Czech words. The globe flies over the area the word travelled through and arcs are drawn step by step from the source language; the word form and the language appear at each dot. A dashed arc marks a disputed route. The panel at the top right (below the globe on a phone) lists the steps with dates and notes; tapping a step opens the language card. Play again repeats the animation and the other buttons switch to another word. Close it with the cross, the Escape key or the Whole world button; links look like #cesta-caj."
     ]
    },
    {
@@ -638,6 +639,12 @@
    "zahady": "Mysteries"
   }
  },
+ "cestaNadpis": "The journey of the word {s}",
+ "cestaZavrit": "Close the word journey",
+ "cestaZnovu": "Play again",
+ "cestaPribeh": "Story: {n}",
+ "cestaTlacitko": "Journey on the globe",
+ "cestyNabidka": "Word journeys on the globe",
  "pribehyTlacitko": "Language stories: travelling words, language change, revival and mysteries",
  "starovekTlacitko": "Languages of antiquity: pages on civilizations, their languages and scripts"
 }

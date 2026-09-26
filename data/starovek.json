@@ -24467,6 +24467,19 @@
       ]
      },
      {
+      "typ": "cesta",
+      "h": "Cesty slov na glóbu",
+      "p": [
+       "Jak slova čaj, káva, cukr a pomeranč putovala mezi jazyky, ukáže glóbus: oblouky se kreslí krok za krokem od výchozího jazyka, přerušovaná čára znamená spornou cestu."
+      ],
+      "slova": [
+       "caj",
+       "kava",
+       "cukr",
+       "pomeranc"
+      ]
+     },
+     {
       "typ": "text",
       "h": "Výpůjčka, nebo příbuznost?",
       "p": [
@@ -24528,7 +24541,7 @@
        [
         "káva",
         "arabsky قهوة qahwa",
-        "osmanská turečtina kahve → evropské jazyky (it. caffè, niz. koffie, něm. Kaffee)"
+        "osmanská turečtina kahve → evropské jazyky (it. caffè → fr. café → něm. Kaffee; niz. koffie → angl. coffee); české káva zavedli obrozenci podle polského kawa, dříve se říkalo kafe z němčiny"
        ],
        [
         "cukr",
@@ -24538,7 +24551,7 @@
        [
         "pomeranč, oranžový",
         "drávidský jazyk (snad tamilština nebo telugština) → sanskrt nāraṅga",
-        "perština nārang → arabština nāranj → italština arancia, francouzština orange (počáteční n- odpadlo; španělské naranja ho má); pomeranč přes něm. Pomeranze z it. pomo ‚jablko‘ + arancia, oranžový z francouzštiny"
+        "perština nārang → arabština nāranj → italština arancia, francouzština orange (počáteční n- odpadlo; španělské naranja ho má); pomeranč přes něm. Pomeranze ze středolat. pomerancia (lat. pōmum ‚ovoce, jablko‘ + arancia), oranžový z francouzštiny"
        ],
        [
         "rajče, tomatový",
@@ -24873,6 +24886,19 @@
       ]
      },
      {
+      "typ": "cesta",
+      "h": "Word journeys on the globe",
+      "p": [
+       "The globe shows how the words for tea, coffee, sugar and orange travelled between languages: arcs are drawn step by step from the source language, and a dashed line marks a disputed route."
+      ],
+      "slova": [
+       "caj",
+       "kava",
+       "cukr",
+       "pomeranc"
+      ]
+     },
+     {
       "typ": "text",
       "h": "Borrowed or inherited?",
       "p": [
@@ -24934,7 +24960,7 @@
        [
         "káva 'coffee'",
         "Arabic قهوة qahwa",
-        "Ottoman Turkish kahve → European languages (Italian caffè, Dutch koffie, German Kaffee)"
+        "Ottoman Turkish kahve → European languages (Italian caffè → French café → German Kaffee; Dutch koffie → English coffee); Czech káva was introduced by National Revival writers after Polish kawa, replacing kafe from German"
        ],
        [
         "cukr 'sugar'",
@@ -24944,7 +24970,7 @@
        [
         "pomeranč 'orange (fruit)', oranžový 'orange (colour)'",
         "a Dravidian language (perhaps Tamil or Telugu) → Sanskrit nāraṅga",
-        "Persian nārang → Arabic nāranj → Italian arancia, French orange (the initial n- was lost; Spanish naranja keeps it); pomeranč via German Pomeranze from Italian pomo 'apple' + arancia, oranžový from French"
+        "Persian nārang → Arabic nāranj → Italian arancia, French orange (the initial n- was lost; Spanish naranja keeps it); pomeranč via German Pomeranze from Medieval Latin pomerancia (Latin pōmum 'fruit, apple' + arancia), oranžový from French"
        ],
        [
         "rajče 'tomato', tomatový",
@@ -25250,6 +25276,17 @@
       ]
      },
      {
+      "typ": "cesta",
+      "h": "Cesty slov na glóbu",
+      "p": [
+       "Cestu slov robot a dolar z Čech do světa ukáže glóbus krok za krokem."
+      ],
+      "slova": [
+       "robot",
+       "dolar"
+      ]
+     },
+     {
       "typ": "text",
       "h": "Houfnice a píšťala: zbraně husitských válek",
       "p": [
@@ -25532,6 +25569,17 @@
         "English háček (alongside caron)",
         "documented"
        ]
+      ]
+     },
+     {
+      "typ": "cesta",
+      "h": "Word journeys on the globe",
+      "p": [
+       "The globe shows, step by step, how the words robot and dollar travelled from Bohemia into the world."
+      ],
+      "slova": [
+       "robot",
+       "dolar"
       ]
      },
      {
