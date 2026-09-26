@@ -412,6 +412,10 @@ a v přepisu. Další navržené: Řím, Etruskové, Čína (věštebné kosti),
   (na Kypru se mezitím psalo kyperským slabičným písmem), tabulky 15.–14. st., paláce asi 1400–1200, ko-no-so ukazuje
   pomocnou samohlásku u kn-, ostrakismus: kvórum 6 000 a část střepů popsali předem písaři (ne důkaz masové gramotnosti),
   bústrofédon = otáčí se vůl, Kyjevské listy z 10. st. pravděpodobně z Čech nebo Moravy, chur1257 = církevní slovanština.
+  U Mayů: Landa byl roku 1562 františkán, biskupem až od 1573; Thompson patří do poloviny 20. století; klasická mayština
+  je podle Houstona a spol. předkem východočolských jazyků (čortí), čol je jen blízce příbuzný; „jako latina“ jen jako
+  pravděpodobný výklad; „jediné písmo Ameriky, o kterém víme…“ (jiná mezoamerická písma nejsou rozluštěná); nulu znali
+  už mezoameričtí předchůdci; knih „patrně mnoho set, možná tisíce“; Ruz zvedl desku 1948 (jinde 1949).
 - Nová civilizace: druh akvarelu v `src/akvarely.js`, fotky přes `data/fotky-hledat.json`, zmenšit (PIL) do
   `static/starovek/<id>/`, texty cs/en, ověření, `npm run check`, test v prohlížeči.
 
