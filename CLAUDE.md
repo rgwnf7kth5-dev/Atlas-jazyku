@@ -371,7 +371,9 @@ glóbem, jako stránka moderní ilustrované encyklopedie; hodně ilustrací, za
 kartě tečky jazyka civilizace (`tecky` v datech) a odkaz `#chetite` / `#hittites`. Vzorová stránka: **Chetité**
 (uživatel vybral ze dvou návrhů, Chetité vs. Egypt), 26. 9. 2026 pak **Starověký Egypt** („pokračuj egyptem“;
 adresa `#egypt`, `/starovek/egypt/`, `/en/ancient/egypt/`). Dlaždice řadí civilizace chronologicky (pořadí
-v `data/starovek.json`). Další navržené: Sumer a Akkad, Féničané, Řecko (lineární B
+v `data/starovek.json`). Tentýž den přibyly **Sumer a Akkad** (`#sumer-a-akkad`, id `mezopotamie`) a **Féničané**
+(`#fenicane` / `#phoenicians`); ikona chrámu v záhlaví má bublinu s vysvětlením při najetí myší (uživatel: „na tu
+ikonu mouseover, o co jde“). Další navržené: Řecko (lineární B
 → alfabeta), Řím, Etruskové, Čína (věštebné kosti), Indie (sanskrt, bráhmí, písmo Indu), Persie, Mayové, Aksum.
 
 - Data `data/starovek.json`: `civilizace[]` s `id`, `adresa{cs,en}`, `krajina` (druh akvarelu), `tecky` (glottocody),
@@ -397,6 +399,8 @@ v `data/starovek.json`). Další navržené: Sumer a Akkad, Féničané, Řecko 
   „jedna z nejstarších“ mírových smluv, Egyptské znění i v Ramesseu.
   U Egypta: r n km.t je doloženo jen v Příběhu Sinuhetově (ne „vlastní jméno jazyka“), Kleopatra není na
   Rosettské desce (je na obelisku z Philae), ústav 1958 vedl nejdřív Lexa a od 1960 Žába, arabské dobytí 639–642.
+  U Mezopotámie: „život“ je til (ne ti), číslice se vtlačovaly, pečeť patří Hašhamerovi (ne Ur-Nammuovi), Rawlinson
+  pracoval ze žebříků (na lanech visel kurdský chlapec), Grotefend luštil podle opisů z Persepole.
 - Nová civilizace: druh akvarelu v `src/akvarely.js`, fotky přes `data/fotky-hledat.json`, zmenšit (PIL) do
   `static/starovek/<id>/`, texty cs/en, ověření, `npm run check`, test v prohlížeči.
 

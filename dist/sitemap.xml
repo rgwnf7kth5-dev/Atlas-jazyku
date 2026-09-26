@@ -1003,6 +1003,12 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/language-days/"/>
   </url>
   <url>
+    <loc>https://atlasjazyku.cz/starovek/sumer-a-akkad/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/starovek/sumer-a-akkad/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/ancient/sumer-and-akkad/"/>
+  </url>
+  <url>
     <loc>https://atlasjazyku.cz/starovek/egypt/</loc>
     <lastmod>2026-09-26</lastmod>
     <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/starovek/egypt/"/>
@@ -1013,5 +1019,11 @@
     <lastmod>2026-09-26</lastmod>
     <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/starovek/chetite/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/ancient/hittites/"/>
+  </url>
+  <url>
+    <loc>https://atlasjazyku.cz/starovek/fenicane/</loc>
+    <lastmod>2026-09-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/starovek/fenicane/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/ancient/phoenicians/"/>
   </url>
 </urlset>

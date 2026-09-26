@@ -2,6 +2,827 @@
  "_pozn": "Stránky o civilizacích starověku (jazyk a písmo). Texty psané ručně a ověřené; fotky z Wikimedia Commons (scripts/fotky.mjs), soubory ve static/starovek/<id>/. Každá fotka musí mít autora (kromě volného díla), licenci a zdroj.",
  "civilizace": [
   {
+   "id": "mezopotamie",
+   "adresa": {
+    "cs": "sumer-a-akkad",
+    "en": "sumer-and-akkad"
+   },
+   "krajina": "mezopotamie",
+   "hledat": "sumer akkad mezopotamie mesopotamia sumerstina sumerian akkadstina akkadian babylon asyrie assyria klinove pismo cuneiform gilgames gilgamesh chammurapi hammurabi",
+   "tecky": [
+    "sume1241",
+    "akka1240",
+    "elam1244",
+    "impe1235"
+   ],
+   "pisma": [
+    "Noto Sans Cuneiform"
+   ],
+   "fotky": {
+    "uruk": {
+     "soubor": "uruk.jpg",
+     "sirka": 980,
+     "vyska": 735,
+     "autor": "Daderot, Zunkir",
+     "licence": "CC BY-SA 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Proto_cuneiform_tablet_OIM_A12259.jpg",
+     "cs": "Protoklínopisná účetní tabulka z období Džemdet Nasr (asi 3200–3000 př. n. l.) z Tell Asmar. Obrázkové znaky se ještě kreslily do hlíny hrotem. Oriental Institute, Chicago.",
+     "en": "A proto-cuneiform accounting tablet from the Jemdet Nasr period (c. 3200–3000 BCE) from Tell Asmar. The pictorial signs were still drawn into the clay with a point. Oriental Institute, Chicago."
+    },
+    "zikkurat": {
+     "soubor": "zikkurat.jpg",
+     "sirka": 1200,
+     "vyska": 900,
+     "autor": "Hardnfast",
+     "licence": "CC BY 3.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Ancient_ziggurat_at_Ali_Air_Base_Iraq_2005.jpg",
+     "cs": "Zikkurat v Uru, postavený za krále Ur-Nammua ve 21. století př. n. l.; dolní stupeň a schodiště jsou z velké části rekonstruované.",
+     "en": "The ziggurat of Ur, built under King Ur-Nammu in the 21st century BCE; the lower stage and stairways are largely reconstructed."
+    },
+    "standarta": {
+     "soubor": "standarta.jpg",
+     "sirka": 1200,
+     "vyska": 525,
+     "autor": "",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Standard_of_Ur_-_War.jpg",
+     "cs": "Standarta z Uru, válečná strana (26. století př. n. l.): mozaika z mušlí, lazuritu a vápence z královského pohřebiště v Uru. Britské muzeum, Londýn.",
+     "en": "The Standard of Ur, war side (26th century BCE): a mosaic of shell, lapis lazuli and limestone from the Royal Cemetery at Ur. British Museum, London."
+    },
+    "obalka": {
+     "soubor": "obalka.jpg",
+     "sirka": 1200,
+     "vyska": 962,
+     "autor": "",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Cuneiform_tablet_in_envelope_with_cylinder_seal_impressions,_Ur_III_Period,_c._2100-2000_BC_-_Harvard_Semitic_Museum_-_Cambridge,_MA_-_DSC06154.jpg",
+     "cs": "Klínopisná tabulka v hliněné obálce s otisky válečkové pečeti (doba III. dynastie z Uru, asi 2100–2000 př. n. l.). Harvardovo semitské muzeum.",
+     "en": "A cuneiform tablet in a clay envelope with cylinder-seal impressions (Ur III period, c. 2100–2000 BCE). Harvard Semitic Museum."
+    },
+    "pecetidlo": {
+     "soubor": "pecetidlo.jpg",
+     "sirka": 1200,
+     "vyska": 654,
+     "autor": "Steve Harris",
+     "licence": "CC BY-SA 2.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Sumerian_Cylinder_Seal_of_King_Ur-Nammu.jpg",
+     "cs": "Válečková pečeť Hašhamera, místodržitele Iškun-Sinu, s výjevem před trůnícím králem Ur-Nammuem (21. století př. n. l.), a její novodobý otisk. Britské muzeum, Londýn.",
+     "en": "The cylinder seal of Hashhamer, governor of Ishkun-Sin, showing him before the enthroned King Ur-Nammu (21st century BCE), with a modern impression. British Museum, London."
+    },
+    "chammurapi": {
+     "soubor": "chammurapi.jpg",
+     "sirka": 1200,
+     "vyska": 900,
+     "autor": "Georgezhao",
+     "licence": "CC BY-SA 3.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Code_of_Hammurabi_Louvre_Sb8_-_08a.jpg",
+     "cs": "Horní část stély s Chammurapiho zákoníkem (18. století př. n. l.): král stojí před bohem slunce a spravedlnosti Šamašem. Pod reliéfem, mimo záběr, pokračuje text zákoníku. Louvre, Paříž.",
+     "en": "The top of the stele bearing the Code of Hammurabi (18th century BCE): the king stands before Shamash, god of the sun and justice. The text of the code continues below the relief, out of frame. Louvre, Paris."
+    },
+    "amarna": {
+     "soubor": "amarna.jpg",
+     "sirka": 1040,
+     "vyska": 1100,
+     "autor": "Osama Shukir Muhammed Amin",
+     "licence": "CC BY-SA 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Amarna_letter._Letter_from_Yapahu_(ruler_of_Gezer)_to_the_Egyptian_pharaoh_Amenhotep_III_or_son_Akhenaten.jpg",
+     "cs": "Dopis z Amarny: vládce Gezeru píše egyptskému faraonovi akkadsky, klínovým písmem (14. století př. n. l.). Britské muzeum, Londýn.",
+     "en": "An Amarna letter: the ruler of Gezer writes to the Egyptian pharaoh in Akkadian, in cuneiform (14th century BCE). British Museum, London."
+    },
+    "potopa": {
+     "soubor": "potopa.jpg",
+     "sirka": 972,
+     "vyska": 1100,
+     "autor": "",
+     "licence": "CC0",
+     "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:British_Museum_Flood_Tablet.jpg",
+     "cs": "Tabulka XI Eposu o Gilgamešovi s vyprávěním o potopě, z knihovny krále Aššurbanipala v Ninive (7. století př. n. l.). Britské muzeum, Londýn.",
+     "en": "Tablet XI of the Epic of Gilgamesh with the flood story, from the library of King Ashurbanipal at Nineveh (7th century BCE). British Museum, London."
+    },
+    "smith": {
+     "soubor": "smith.jpg",
+     "sirka": 830,
+     "vyska": 1100,
+     "autor": "Osama Shukir Muhammed Amin",
+     "licence": "CC BY-SA 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Mr._George_Smith,_the_man_who_transliterated_and_read_the_so-called_the_Babylonian_Flood_Story_of_Tablet_XI.jpg",
+     "cs": "George Smith (1840–1876), samouk z Britského muzea, který v roce 1872 přečetl vyprávění o potopě na tabulce z Ninive.",
+     "en": "George Smith (1840–1876), the self-taught British Museum scholar who in 1872 read the flood story on a tablet from Nineveh."
+    },
+    "plimpton": {
+     "soubor": "plimpton.jpg",
+     "sirka": 1200,
+     "vyska": 831,
+     "autor": "",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Plimpton_322.jpg",
+     "cs": "Tabulka Plimpton 322 (starobabylonské období, asi 1800 př. n. l.) se sloupci čísel v šedesátkové soustavě, které souvisejí s pravoúhlými trojúhelníky. Kolumbijská univerzita, New York.",
+     "en": "The Plimpton 322 tablet (Old Babylonian period, c. 1800 BCE) with columns of sexagesimal numbers related to right-angled triangles. Columbia University, New York."
+    },
+    "istar": {
+     "soubor": "istar.jpg",
+     "sirka": 1200,
+     "vyska": 900,
+     "autor": "Avi1111 dr. avishai teicher",
+     "licence": "CC BY-SA 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Ishtar_gate_in_Pergamon_museum.jpg",
+     "cs": "Ištařina brána z Babylonu, postavená za Nabukadnezara II. (6. století př. n. l.), rekonstruovaná v Pergamonském muzeu v Berlíně.",
+     "en": "The Ishtar Gate of Babylon, built under Nebuchadnezzar II (6th century BCE), reconstructed in the Pergamon Museum in Berlin."
+    },
+    "behistun": {
+     "soubor": "behistun.jpg",
+     "sirka": 1200,
+     "vyska": 900,
+     "autor": "Korosh.091",
+     "licence": "CC BY-SA 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:%DA%A9%D8%AA%DB%8C%D8%A8%D9%87_%D8%AF%D8%A7%D8%B1%DB%8C%D9%88%D8%B4_(_%D8%A8%DB%8C%D8%B3%D8%AA%D9%88%D9%86(.jpg",
+     "cs": "Behistunský nápis perského krále Dáreia I. (asi 520 př. n. l.) na skalní stěně v západním Íránu: stejný text staropersky, elamsky a babylonsky.",
+     "en": "The Behistun inscription of the Persian king Darius I (c. 520 BCE) on a cliff in western Iran: the same text in Old Persian, Elamite and Babylonian."
+    },
+    "rawlinson": {
+     "soubor": "rawlinson.jpg",
+     "sirka": 789,
+     "vyska": 1100,
+     "autor": "",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Rawlinson,_Sir_Henry_Creswick,_par_Arthur_J.Melhuish,_BNF_Gallica.jpg",
+     "cs": "Henry Creswicke Rawlinson (1810–1895), britský důstojník a orientalista, který opsal Behistunský nápis.",
+     "en": "Henry Creswicke Rawlinson (1810–1895), the British officer and orientalist who copied the Behistun inscription."
+    }
+   },
+   "cs": {
+    "nazev": "Sumer a Akkad",
+    "stitek": "Jazyky starověku",
+    "podtitul": "Mezopotámie · asi 3300–539 př. n. l.",
+    "perex": "V Mezopotámii, zemi mezi Eufratem a Tigridem, vzniklo kolem roku 3300 př. n. l. jedno z nejstarších písem světa. Klínovým písmem se tři tisíciletí zapisovala sumerština, jazyk bez známých příbuzných, i semitská akkadština, řeč Babylóňanů a Asyřanů – a v něm se dochovala i nejstarší velká epická báseň, Epos o Gilgamešovi.",
+    "fakta": [
+     [
+      "Území",
+      "Mezopotámie mezi Eufratem a Tigridem, dnešní Irák a části Sýrie a Turecka"
+     ],
+     [
+      "Města",
+      "Uruk, Ur, Lagaš, Akkad, Babylon, Aššur, Ninive"
+     ],
+     [
+      "Období",
+      "asi 3300–539 př. n. l., od vzniku písma po perské dobytí Babylonu"
+     ],
+     [
+      "Jazyky",
+      "sumerština (izolovaný jazyk), akkadština (semitská, nářečí babylonské a asyrské)"
+     ],
+     [
+      "Písmo",
+      "klínové písmo, užívané přes tři tisíciletí"
+     ],
+     [
+      "Materiál",
+      "hliněné tabulky, kámen, válečkové pečeti"
+     ],
+     [
+      "Rozluštění",
+      "1857, zkouška Královské asijské společnosti (Rawlinson, Hincks, Talbot, Oppert)"
+     ]
+    ],
+    "nazvyTecek": {
+     "sume1241": "Sumerština",
+     "akka1240": "Akkadština",
+     "elam1244": "Elamština",
+     "impe1235": "Aramejština"
+    },
+    "oddily": [
+     {
+      "typ": "text",
+      "h": "Země mezi řekami",
+      "p": [
+       "Řecké slovo Mezopotámie znamená „země mezi řekami“. Na jihu této roviny, kde se z Eufratu a Tigridu dalo zavlažovat, vyrostly ve 4. tisíciletí př. n. l. první města: Uruk měl kolem roku 3000 př. n. l. desítky tisíc obyvatel. Sumerské městské státy – Uruk, Ur, Lagaš, Kiš – spolu soupeřily o vodu a půdu.",
+       "Ve 24. století př. n. l. je sjednotil Sargon z Akkadu, zakladatel první říše v dějinách oblasti. Později se střídaly Ur, Babylon krále Chammurapiho, Asýrie a Novobabylonská říše Nabukadnezara II.; samostatné dějiny Mezopotámie ukončilo dobytí Babylonu perským králem Kýrem roku 539 př. n. l."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "zikkurat",
+      "siroka": true
+     },
+     {
+      "typ": "foto",
+      "f": "uruk",
+      "na-vysku": true
+     },
+     {
+      "typ": "text",
+      "h": "Písmo z účetnictví",
+      "p": [
+       "Nejstarší tabulky z Uruku, z doby kolem 3300–3100 př. n. l., jsou z velké části účetní záznamy chrámů: počty ovcí, dávky obilí, pivo, pracovníci. Písaři do vlhké hlíny kreslili hrotem obrázkové znaky a čísla vtlačovali tupým koncem rydla. Postupně je začali otiskovat seříznutým rákosem – a z čar se staly klínky, podle nichž má písmo jméno.",
+       "Znaky se během staletí zjednodušily a otočily o 90 stupňů, takže původní obrázky v nich dnes poznáme jen stěží. Časem se písmo naučilo zapisovat i zvuky: znak pro „šíp“ (sumersky ti) mohl znamenat i podobně znějící slovo til „život“, a tak se z obrázků staly slabiky."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "obalka"
+     },
+     {
+      "typ": "text",
+      "h": "Sumerština: jazyk bez příbuzných",
+      "p": [
+       "Sumerština je izolovaný jazyk: není příbuzná s žádným známým jazykem. Je aglutinační – k slovnímu kořeni se řadí předpony a přípony – a ergativní: podmět přechodného slovesa má zvláštní koncovku -e, jinou než podmět nepřechodného. Slovosled je podmět – předmět – sloveso.",
+       "Jako mluvený jazyk ustoupila sumerština kolem přelomu 3. a 2. tisíciletí př. n. l. akkadštině. Písaři ji však dál studovali a opisovali až do konce klínového písma, podobně jako se ve středověké Evropě pěstovala latina."
+      ]
+     },
+     {
+      "typ": "veta",
+      "klin": "𒈗𒂊 𒂍 𒈬𒌦𒆕",
+      "prepis": "lugal-e e₂ mu-un-du₃",
+      "slova": [
+       [
+        "lugal-e",
+        "král (-e = koncovka činitele)"
+       ],
+       [
+        "e₂",
+        "dům"
+       ],
+       [
+        "mu-un-du₃",
+        "postavil (-n- = on jako činitel)"
+       ]
+      ],
+      "preklad": "„Král postavil dům.“",
+      "vyklad": "Vzorová věta ukazuje sumerskou ergativní koncovku -e u činitele a sloveso na konci věty. Samo slovo lugal, „král“, je složené z lu₂ „člověk“ a gal „velký“; e₂-gal, „velký dům“, znamená palác a přes akkadské ekallum se dostalo až do hebrejštiny (hêḵāl, „chrám“)."
+     },
+     {
+      "typ": "znaky",
+      "h": "Ukázka znaků",
+      "znaky": [
+       [
+        "𒀭",
+        "AN / DINGIR",
+        "nebe; bůh; určovatel před jmény bohů"
+       ],
+       [
+        "𒆠",
+        "KI",
+        "země, místo"
+       ],
+       [
+        "𒂍",
+        "E₂",
+        "dům"
+       ],
+       [
+        "𒃲",
+        "GAL",
+        "velký"
+       ],
+       [
+        "𒇽",
+        "LU₂",
+        "člověk"
+       ],
+       [
+        "𒈗",
+        "LUGAL",
+        "král"
+       ],
+       [
+        "𒌓",
+        "UD",
+        "den, slunce"
+       ],
+       [
+        "𒀀",
+        "A",
+        "voda; slabika a"
+       ],
+       [
+        "𒆳",
+        "KUR",
+        "hora, cizí země"
+       ],
+       [
+        "𒊕",
+        "SAG",
+        "hlava"
+       ]
+      ],
+      "priklad": {
+       "klin": "𒂍𒃲",
+       "prepis": "e₂-gal",
+       "vyznam": "„velký dům“ = palác; akkadsky ekallum"
+      },
+      "pozn": "Jeden znak mívá několik čtení: 𒀭 se čte an „nebe“, dingir „bůh“, akkadsky ilu, a před jmény bohů se jako určovatel nečte vůbec. Znaky vykresluje písmo Noto Sans Cuneiform."
+     },
+     {
+      "typ": "text",
+      "h": "Akkadština: jazyk diplomacie",
+      "p": [
+       "Akkadština je nejstarší doložený semitský jazyk, příbuzný arabštině, hebrejštině a aramejštině. Akkaďané převzali sumerské klínové písmo, přestože se k jejich jazyku příliš nehodilo, a zapisovali jím akkadská slova po slabikách. Hlavní nářečí byla babylonské na jihu a asyrské na severu.",
+       "Ve 2. tisíciletí př. n. l. se akkadština stala mezinárodním jazykem Předního východu. Akkadsky si dopisovali egyptští faraoni s vládci Babylonu, Mitanni i s vazaly v Kanaánu, jak ukazují dopisy z egyptské Amarny, a akkadsky je psáno i chetitské znění mírové smlouvy s Egyptem. V 1. tisíciletí př. n. l. ji v běžném životě postupně vytlačila aramejština."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "amarna",
+      "na-vysku": true
+     },
+     {
+      "typ": "foto",
+      "f": "chammurapi",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "Chammurapiho zákoník",
+      "p": [
+       "Babylonský král Chammurapi dal v 18. století př. n. l. vytesat na čedičovou stélu soubor 282 paragrafů, jak je číslují dnešní badatelé. Zákoník řeší obchod, rodinu, dědictví, mzdy i škody a u některých provinění uplatňuje zásadu odplaty stejným: „Jestliže někdo vyrazí oko svobodnému muži, vyrazí mu oko.“ Stélu našli francouzští archeologové v roce 1901 v Súsách v Íránu, kam ji odvlekli Elamité; dnes je v Louvru."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Epos o Gilgamešovi",
+      "p": [
+       "Příběh krále Gilgameše z Uruku, jeho přítele Enkidua a marného hledání nesmrtelnosti je jedním z nejstarších velkých literárních děl. Nejúplnější je standardní babylonská verze na dvanácti tabulkách, známá hlavně z knihovny asyrského krále Aššurbanipala v Ninive (7. století př. n. l.).",
+       "V roce 1872 přečetl George Smith z Britského muzea na tabulce XI vyprávění o potopě, nápadně podobné biblickému příběhu o Noemovi, a vyvolal senzaci. Do češtiny epos přeložil asyriolog Lubor Matouš."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "potopa",
+      "na-vysku": true
+     },
+     {
+      "typ": "foto",
+      "f": "smith",
+      "na-vysku": true
+     },
+     {
+      "typ": "text",
+      "h": "Šedesátková soustava",
+      "p": [
+       "Mezopotámští písaři počítali v šedesátkové soustavě. Z ní dodnes pochází šedesát minut v hodině, šedesát sekund v minutě a 360 stupňů kruhu. Babylonští matematici řešili kvadratické úlohy a znali vztahy mezi stranami pravoúhlého trojúhelníku více než tisíc let před Pythagorem, jak ukazuje tabulka Plimpton 322."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "plimpton"
+     },
+     {
+      "typ": "foto",
+      "f": "behistun",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "Rozluštění: skála v Behistunu",
+      "p": [
+       "Klíčem k rozluštění se stal nápis perského krále Dáreia I. na skále v Behistunu v západním Íránu: stejný text ve třech jazycích a třech druzích klínového písma – staroperském, elamském a babylonském. Staroperské písmo, které má jen několik desítek znaků, začal luštit Georg Friedrich Grotefend už roku 1802 podle opisů nápisů z Persepole. Henry Rawlinson nápis ve 30. a 40. letech 19. století s velkým nasazením opsal, často z žebříků na úzké římse; nejhůře přístupné babylonské znění obtiskl roku 1847 kurdský chlapec zavěšený na lanech.",
+       "Na babylonském znění se ukázalo, že jeden znak může mít více čtení a že písmo míchá slabiky se znaky pro slova; významně k tomu přispěl irský duchovní Edward Hincks. Roku 1857 dostali Rawlinson, Hincks, William Henry Fox Talbot a Julius Oppert nezávisle na sobě k překladu tentýž nedávno nalezený nápis asyrského krále Tiglatpilesara I. Jejich překlady se shodovaly, a tím bylo rozluštění akkadštiny potvrzeno."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "rawlinson",
+      "na-vysku": true
+     },
+     {
+      "typ": "text",
+      "h": "Čeští badatelé",
+      "p": [
+       "Bedřich Hrozný, který rozluštil chetitštinu, vedl roku 1925 vykopávky v Kültepe v Turecku a nalezl tam přes tisíc staroasyrských tabulek obchodníků. Jejich zpracování se věnoval asyriolog Lubor Matouš, autor českého překladu Eposu o Gilgamešovi."
+      ]
+     },
+     {
+      "typ": "galerie",
+      "h": "Umění a stavby",
+      "f": [
+       "standarta",
+       "pecetidlo",
+       "istar"
+      ]
+     },
+     {
+      "typ": "osa",
+      "h": "Časová osa",
+      "udalosti": [
+       [
+        "asi 3300–3100 př. n. l.",
+        "Nejstarší protoklínopisné tabulky z Uruku."
+       ],
+       [
+        "asi 2600 př. n. l.",
+        "Královské pohřebiště v Uru; první literární texty v sumerštině."
+       ],
+       [
+        "24. st. př. n. l.",
+        "Sargon z Akkadu zakládá první říši."
+       ],
+       [
+        "21. st. př. n. l.",
+        "III. dynastie z Uru; zikkurat v Uru."
+       ],
+       [
+        "18. st. př. n. l.",
+        "Chammurapi z Babylonu a jeho zákoník."
+       ],
+       [
+        "14. st. př. n. l.",
+        "Dopisy z Amarny: akkadština jazykem diplomacie."
+       ],
+       [
+        "7. st. př. n. l.",
+        "Knihovna Aššurbanipala v Ninive."
+       ],
+       [
+        "6. st. př. n. l.",
+        "Nabukadnezar II.; Ištařina brána v Babylonu."
+       ],
+       [
+        "539 př. n. l.",
+        "Perský král Kýros dobývá Babylon."
+       ],
+       [
+        "1. st. n. l.",
+        "Poslední datované klínopisné tabulky (astronomické texty)."
+       ],
+       [
+        "1802",
+        "Grotefend začíná luštit staroperský klínopis."
+       ],
+       [
+        "1857",
+        "Zkouška Královské asijské společnosti potvrzuje rozluštění akkadštiny."
+       ],
+       [
+        "1872",
+        "George Smith čte vyprávění o potopě."
+       ]
+      ]
+     },
+     {
+      "typ": "tecky",
+      "h": "Jazyky Mezopotámie na glóbu",
+      "uvod": "Klepnutím se jazyk ukáže na glóbu:"
+     },
+     {
+      "typ": "zdroje",
+      "h": "Zdroje a další četba",
+      "p": [
+       "Irving Finkel, Jonathan Taylor: Cuneiform. British Museum Press 2015.",
+       "Marc Van De Mieroop: A History of the Ancient Near East, ca. 3000–323 BC. Wiley-Blackwell, 3. vyd. 2016.",
+       "Dietz Otto Edzard: Sumerian Grammar. Brill 2003.",
+       "John Huehnergard: A Grammar of Akkadian. Eisenbrauns, 3. vyd. 2011.",
+       "Epos o Gilgamešovi. Přeložil Lubor Matouš. Praha.",
+       "Cuneiform Digital Library Initiative (CDLI); Electronic Text Corpus of Sumerian Literature (ETCSL).",
+       "Glottolog 5 (jazyky a jejich zařazení)."
+      ]
+     }
+    ]
+   },
+   "en": {
+    "nazev": "Sumer and Akkad",
+    "stitek": "Languages of antiquity",
+    "podtitul": "Mesopotamia · c. 3300–539 BCE",
+    "perex": "In Mesopotamia, the land between the Euphrates and the Tigris, one of the world's earliest scripts arose around 3300 BCE. For three millennia cuneiform recorded Sumerian, a language with no known relatives, and Semitic Akkadian, the speech of the Babylonians and Assyrians – and it preserved the earliest great epic poem, the Epic of Gilgamesh.",
+    "fakta": [
+     [
+      "Territory",
+      "Mesopotamia between the Euphrates and the Tigris, modern Iraq and parts of Syria and Turkey"
+     ],
+     [
+      "Cities",
+      "Uruk, Ur, Lagash, Akkad, Babylon, Ashur, Nineveh"
+     ],
+     [
+      "Period",
+      "c. 3300–539 BCE, from the invention of writing to the Persian conquest of Babylon"
+     ],
+     [
+      "Languages",
+      "Sumerian (an isolate), Akkadian (Semitic, Babylonian and Assyrian dialects)"
+     ],
+     [
+      "Script",
+      "cuneiform, in use for over three millennia"
+     ],
+     [
+      "Materials",
+      "clay tablets, stone, cylinder seals"
+     ],
+     [
+      "Deciphered",
+      "1857, the Royal Asiatic Society test (Rawlinson, Hincks, Talbot, Oppert)"
+     ]
+    ],
+    "nazvyTecek": {
+     "sume1241": "Sumerian",
+     "akka1240": "Akkadian",
+     "elam1244": "Elamite",
+     "impe1235": "Aramaic"
+    },
+    "oddily": [
+     {
+      "typ": "text",
+      "h": "The land between the rivers",
+      "p": [
+       "The Greek word Mesopotamia means “the land between the rivers”. In the south of this plain, where the Euphrates and Tigris could be used for irrigation, the first cities grew up in the 4th millennium BCE: around 3000 BCE Uruk had tens of thousands of inhabitants. The Sumerian city-states – Uruk, Ur, Lagash, Kish – competed for water and land.",
+       "In the 24th century BCE they were united by Sargon of Akkad, founder of the region's first empire. Later came Ur, the Babylon of King Hammurabi, Assyria and the Neo-Babylonian empire of Nebuchadnezzar II; Mesopotamia's independent history ended when the Persian king Cyrus conquered Babylon in 539 BCE."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "zikkurat",
+      "siroka": true
+     },
+     {
+      "typ": "foto",
+      "f": "uruk",
+      "na-vysku": true
+     },
+     {
+      "typ": "text",
+      "h": "Writing born of bookkeeping",
+      "p": [
+       "The earliest tablets from Uruk, from around 3300–3100 BCE, are largely temple accounts: numbers of sheep, rations of grain, beer, workers. Scribes drew pictorial signs into damp clay with a point and impressed numbers with the blunt end of the stylus. Gradually they began to impress them with a cut reed – and the lines became wedges, which gave the script its name.",
+       "Over the centuries the signs were simplified and turned by 90 degrees, so that the original pictures are hard to recognise today. In time the script learned to record sounds as well: the sign for “arrow” (Sumerian ti) could also stand for the similar-sounding word til “life”, and so pictures became syllables."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "obalka"
+     },
+     {
+      "typ": "text",
+      "h": "Sumerian: a language without relatives",
+      "p": [
+       "Sumerian is a language isolate: it is not related to any known language. It is agglutinative – prefixes and suffixes are strung onto a root – and ergative: the subject of a transitive verb takes a special ending -e, different from the subject of an intransitive verb. Word order is subject – object – verb.",
+       "As a spoken language Sumerian gave way to Akkadian around the turn of the 3rd and 2nd millennia BCE. Scribes nevertheless went on studying and copying it until the end of cuneiform, much as Latin was cultivated in medieval Europe."
+      ]
+     },
+     {
+      "typ": "veta",
+      "klin": "𒈗𒂊 𒂍 𒈬𒌦𒆕",
+      "prepis": "lugal-e e₂ mu-un-du₃",
+      "slova": [
+       [
+        "lugal-e",
+        "king (-e = agent ending)"
+       ],
+       [
+        "e₂",
+        "house"
+       ],
+       [
+        "mu-un-du₃",
+        "(he) built (-n- = “he” as agent)"
+       ]
+      ],
+      "preklad": "“The king built the house.”",
+      "vyklad": "This model sentence shows the Sumerian ergative ending -e on the agent and the verb at the end of the sentence. The word lugal, “king”, is itself made of lu₂ “man” and gal “great”; e₂-gal, “great house”, means palace and, via Akkadian ekallum, reached Hebrew (hêḵāl, “temple”)."
+     },
+     {
+      "typ": "znaky",
+      "h": "Sample signs",
+      "znaky": [
+       [
+        "𒀭",
+        "AN / DINGIR",
+        "sky; god; determinative before gods' names"
+       ],
+       [
+        "𒆠",
+        "KI",
+        "earth, place"
+       ],
+       [
+        "𒂍",
+        "E₂",
+        "house"
+       ],
+       [
+        "𒃲",
+        "GAL",
+        "great"
+       ],
+       [
+        "𒇽",
+        "LU₂",
+        "man"
+       ],
+       [
+        "𒈗",
+        "LUGAL",
+        "king"
+       ],
+       [
+        "𒌓",
+        "UD",
+        "day, sun"
+       ],
+       [
+        "𒀀",
+        "A",
+        "water; syllable a"
+       ],
+       [
+        "𒆳",
+        "KUR",
+        "mountain, foreign land"
+       ],
+       [
+        "𒊕",
+        "SAG",
+        "head"
+       ]
+      ],
+      "priklad": {
+       "klin": "𒂍𒃲",
+       "prepis": "e₂-gal",
+       "vyznam": "“great house” = palace; Akkadian ekallum"
+      },
+      "pozn": "A single sign often has several readings: 𒀭 is read an “sky”, dingir “god”, Akkadian ilu, and before gods' names it is an unpronounced determinative. The signs are rendered with the Noto Sans Cuneiform font."
+     },
+     {
+      "typ": "text",
+      "h": "Akkadian: the language of diplomacy",
+      "p": [
+       "Akkadian is the earliest attested Semitic language, related to Arabic, Hebrew and Aramaic. The Akkadians adopted Sumerian cuneiform although it did not suit their language well, and used it to write Akkadian words syllable by syllable. The main dialects were Babylonian in the south and Assyrian in the north.",
+       "In the 2nd millennium BCE Akkadian became the international language of the Near East. Egyptian pharaohs corresponded in Akkadian with the rulers of Babylon and Mitanni and with vassals in Canaan, as the letters from Amarna in Egypt show, and even the Hittite version of the peace treaty with Egypt is written in Akkadian. In the 1st millennium BCE Aramaic gradually displaced it in everyday life."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "amarna",
+      "na-vysku": true
+     },
+     {
+      "typ": "foto",
+      "f": "chammurapi",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "The Code of Hammurabi",
+      "p": [
+       "In the 18th century BCE the Babylonian king Hammurabi had a set of 282 laws, as modern scholars number them, carved on a basalt stele. The code deals with trade, family, inheritance, wages and damages, and for some offences applies the principle of like for like: “If a man put out the eye of another free man, his eye shall be put out.” French archaeologists found the stele in 1901 at Susa in Iran, where the Elamites had carried it off; today it is in the Louvre."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "The Epic of Gilgamesh",
+      "p": [
+       "The story of King Gilgamesh of Uruk, his friend Enkidu and his vain search for immortality is one of the earliest great works of literature. The most complete is the Standard Babylonian version on twelve tablets, known mainly from the library of the Assyrian king Ashurbanipal at Nineveh (7th century BCE).",
+       "In 1872 George Smith of the British Museum read on Tablet XI a story of a flood strikingly similar to the biblical story of Noah, and caused a sensation. The epic was translated into Czech by the Assyriologist Lubor Matouš."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "potopa",
+      "na-vysku": true
+     },
+     {
+      "typ": "foto",
+      "f": "smith",
+      "na-vysku": true
+     },
+     {
+      "typ": "text",
+      "h": "Counting in sixties",
+      "p": [
+       "Mesopotamian scribes counted in base sixty. From it come the sixty minutes in an hour, sixty seconds in a minute and 360 degrees in a circle. Babylonian mathematicians solved quadratic problems and knew the relations between the sides of a right-angled triangle more than a thousand years before Pythagoras, as the Plimpton 322 tablet shows."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "plimpton"
+     },
+     {
+      "typ": "foto",
+      "f": "behistun",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "Decipherment: the rock at Behistun",
+      "p": [
+       "The key to decipherment was the inscription of the Persian king Darius I on a cliff at Behistun in western Iran: the same text in three languages and three kinds of cuneiform – Old Persian, Elamite and Babylonian. Old Persian script, with only a few dozen signs, was first tackled by Georg Friedrich Grotefend as early as 1802, from copies of inscriptions at Persepolis. In the 1830s and 1840s Henry Rawlinson copied the inscription with great effort, often from ladders on a narrow ledge; the least accessible Babylonian text was taken as paper squeezes in 1847 by a Kurdish boy hanging on ropes.",
+       "The Babylonian version showed that a single sign could have several readings and that the script mixed syllables with word signs; the Irish clergyman Edward Hincks contributed greatly to this. In 1857 Rawlinson, Hincks, William Henry Fox Talbot and Julius Oppert were independently given the same recently discovered inscription of the Assyrian king Tiglath-Pileser I to translate. Their translations agreed, confirming the decipherment of Akkadian."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "rawlinson",
+      "na-vysku": true
+     },
+     {
+      "typ": "text",
+      "h": "Czech scholars",
+      "p": [
+       "Bedřich Hrozný, who deciphered Hittite, led excavations at Kültepe in Turkey in 1925 and found there more than a thousand Old Assyrian merchants' tablets. The Assyriologist Lubor Matouš, author of the Czech translation of the Epic of Gilgamesh, devoted himself to editing them."
+      ]
+     },
+     {
+      "typ": "galerie",
+      "h": "Art and architecture",
+      "f": [
+       "standarta",
+       "pecetidlo",
+       "istar"
+      ]
+     },
+     {
+      "typ": "osa",
+      "h": "Timeline",
+      "udalosti": [
+       [
+        "c. 3300–3100 BCE",
+        "The earliest proto-cuneiform tablets from Uruk."
+       ],
+       [
+        "c. 2600 BCE",
+        "The Royal Cemetery at Ur; the first literary texts in Sumerian."
+       ],
+       [
+        "24th c. BCE",
+        "Sargon of Akkad founds the first empire."
+       ],
+       [
+        "21st c. BCE",
+        "The Third Dynasty of Ur; the ziggurat of Ur."
+       ],
+       [
+        "18th c. BCE",
+        "Hammurabi of Babylon and his code."
+       ],
+       [
+        "14th c. BCE",
+        "The Amarna letters: Akkadian as the language of diplomacy."
+       ],
+       [
+        "7th c. BCE",
+        "The library of Ashurbanipal at Nineveh."
+       ],
+       [
+        "6th c. BCE",
+        "Nebuchadnezzar II; the Ishtar Gate of Babylon."
+       ],
+       [
+        "539 BCE",
+        "The Persian king Cyrus conquers Babylon."
+       ],
+       [
+        "1st c. CE",
+        "The last dated cuneiform tablets (astronomical texts)."
+       ],
+       [
+        "1802",
+        "Grotefend begins deciphering Old Persian cuneiform."
+       ],
+       [
+        "1857",
+        "The Royal Asiatic Society test confirms the decipherment of Akkadian."
+       ],
+       [
+        "1872",
+        "George Smith reads the flood story."
+       ]
+      ]
+     },
+     {
+      "typ": "tecky",
+      "h": "The languages of Mesopotamia on the globe",
+      "uvod": "Tap to show a language on the globe:"
+     },
+     {
+      "typ": "zdroje",
+      "h": "Sources and further reading",
+      "p": [
+       "Irving Finkel, Jonathan Taylor: Cuneiform. British Museum Press 2015.",
+       "Marc Van De Mieroop: A History of the Ancient Near East, ca. 3000–323 BC. Wiley-Blackwell, 3rd ed. 2016.",
+       "Dietz Otto Edzard: Sumerian Grammar. Brill 2003.",
+       "John Huehnergard: A Grammar of Akkadian. Eisenbrauns, 3rd ed. 2011.",
+       "Epos o Gilgamešovi (the Epic of Gilgamesh in Czech). Translated by Lubor Matouš. Prague.",
+       "Cuneiform Digital Library Initiative (CDLI); Electronic Text Corpus of Sumerian Literature (ETCSL).",
+       "Glottolog 5 (languages and their classification)."
+      ]
+     }
+    ]
+   }
+  },
+  {
    "id": "egypt",
    "adresa": {
     "cs": "egypt",
@@ -2087,6 +2908,894 @@
      "hatt1246": "Hattic",
      "hurr1240": "Hurrian"
     }
+   }
+  },
+  {
+   "id": "fenicane",
+   "adresa": {
+    "cs": "fenicane",
+    "en": "phoenicians"
+   },
+   "krajina": "fenicie",
+   "hledat": "fenicane fenictina phoenicians phoenician abeceda alphabet kartago carthage tyros tyre byblos punstina punic",
+   "tecky": [
+    "phoe1239",
+    "puni1241",
+    "ugar1238",
+    "anci1244"
+   ],
+   "pisma": [
+    "Noto Sans Phoenician",
+    "Noto Sans Ugaritic"
+   ],
+   "fotky": {
+    "ahiram": {
+     "soubor": "ahiram.jpg",
+     "sirka": 1200,
+     "vyska": 900,
+     "autor": "",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Ahiram_Sarcophagus_1.JPG",
+     "cs": "Sarkofág krále Ahirama z Byblu s reliéfy a fénickým nápisem na okraji víka. Národní muzeum, Bejrút.",
+     "en": "The sarcophagus of King Ahiram of Byblos with reliefs and a Phoenician inscription along the lid. National Museum, Beirut."
+    },
+    "ahiram-napis": {
+     "soubor": "ahiram-napis.jpg",
+     "sirka": 1200,
+     "vyska": 295,
+     "autor": "",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Ahiram_sarcophagus_closeup,_doctored.png",
+     "cs": "Detail nápisu na Ahiramově sarkofágu, psaného zprava doleva.",
+     "en": "Detail of the inscription on Ahiram's sarcophagus, written from right to left."
+    },
+    "pyrgi": {
+     "soubor": "pyrgi.jpg",
+     "sirka": 1200,
+     "vyska": 815,
+     "autor": "O.Mustafin",
+     "licence": "CC BY-SA 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:The_Pyrgi_tablets.jpg",
+     "cs": "Zlaté destičky z Pyrgi v Itálii (asi 500 př. n. l.) s věnováním etruským a fénickým jazykem.",
+     "en": "The gold tablets from Pyrgi in Italy (c. 500 BCE) with a dedication in Etruscan and Phoenician."
+    },
+    "mesa": {
+     "soubor": "mesa.jpg",
+     "sirka": 825,
+     "vyska": 1100,
+     "autor": "",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Mesha_stele_(Louvre,_AO_5066).jpg",
+     "cs": "Stéla moábského krále Méši (asi 840 př. n. l.), psaná písmem velmi blízkým fénickému. Louvre, Paříž.",
+     "en": "The stele of King Mesha of Moab (c. 840 BCE), written in a script very close to Phoenician. Louvre, Paris."
+    },
+    "kilamuwa": {
+     "soubor": "kilamuwa.jpg",
+     "sirka": 1200,
+     "vyska": 800,
+     "autor": "Dosseman",
+     "licence": "CC BY-SA 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Pergamon_Museum_Kilamuwa_Stela_from_Sam%27al_Zincirli_1584.jpg",
+     "cs": "Stéla krále Kilamuwy ze Sam'alu (Zincirli, Turecko, asi 825 př. n. l.) s fénickým nápisem. Pergamonské muzeum, Berlín.",
+     "en": "The stele of King Kilamuwa from Sam'al (Zincirli, Turkey, c. 825 BCE) with a Phoenician inscription. Pergamon Museum, Berlin."
+    },
+    "esmunazar": {
+     "soubor": "esmunazar.jpg",
+     "sirka": 571,
+     "vyska": 1100,
+     "autor": "",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Sarcophagus_of_Eshmunazar_II.jpg",
+     "cs": "Sarkofág sidónského krále Ešmunazara II. (5. století př. n. l.) s dlouhým fénickým nápisem. Louvre, Paříž.",
+     "en": "The sarcophagus of King Eshmunazar II of Sidon (5th century BCE) with a long Phoenician inscription. Louvre, Paris."
+    },
+    "byblos": {
+     "soubor": "byblos.jpg",
+     "sirka": 1200,
+     "vyska": 900,
+     "autor": "Vyacheslav Argenberg",
+     "licence": "CC BY 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Byblos_ancient_ruins,_old_Phoenician_city_of_Byblos,_Lebanon.jpg",
+     "cs": "Pobřeží u Byblu v Libanonu, jednoho z nejstarších nepřetržitě obývaných měst světa.",
+     "en": "The coast at Byblos in Lebanon, one of the oldest continuously inhabited towns in the world."
+    },
+    "tyr": {
+     "soubor": "tyr.jpg",
+     "sirka": 1000,
+     "vyska": 500,
+     "autor": "",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:David_Roberts_(1796-1864)_-_The_Ruins_of_Tyre,_Lebanon_-_VIS.377_-_Sheffield_Galleries_and_Museums_Trust.jpg",
+     "cs": "Ruiny Týru na obraze Davida Robertse (19. století). Týros byl nejmocnějším fénickým městem.",
+     "en": "The ruins of Tyre in a painting by David Roberts (19th century). Tyre was the most powerful Phoenician city."
+    },
+    "tofet": {
+     "soubor": "tofet.jpg",
+     "sirka": 1200,
+     "vyska": 900,
+     "autor": "",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:St%C3%A8les_fun%C3%A9raire_du_tophet_de_Carthage_(Louvre).jpg",
+     "cs": "Punské stély z tofetu v Kartágu. Louvre, Paříž.",
+     "en": "Punic stelae from the tophet of Carthage. Louvre, Paris."
+    },
+    "murex": {
+     "soubor": "murex.jpg",
+     "sirka": 1200,
+     "vyska": 930,
+     "autor": "RomanDeckert",
+     "licence": "CC BY-SA 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:MurexShells-MurexHotel-TyreSour_RomanDeckert082019.jpg",
+     "cs": "Ulity ostnité (murex), z jejichž žláz se v Týru vyráběl drahý purpur.",
+     "en": "Murex shells, whose glands were used in Tyre to make costly purple dye."
+    },
+    "nora": {
+     "soubor": "nora.jpg",
+     "sirka": 826,
+     "vyska": 1100,
+     "autor": "Olaf Tausch",
+     "licence": "CC BY 3.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by/3.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Stele_von_Nora_07.jpg",
+     "cs": "Kámen z Nory na Sardinii, jeden z nejstarších fénických nápisů v západním Středomoří. Archeologické národní muzeum, Cagliari.",
+     "en": "The Nora Stone from Sardinia, one of the earliest Phoenician inscriptions in the western Mediterranean. National Archaeological Museum, Cagliari."
+    },
+    "melqart": {
+     "soubor": "melqart.jpg",
+     "sirka": 738,
+     "vyska": 1100,
+     "autor": "Shonagon",
+     "licence": "CC0",
+     "licenceUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Cippe_de_Melqart_-_Mus%C3%A9e_du_Louvre_Antiquit%C3%A9s_orientales_AO_4818.jpg",
+     "cs": "Jeden z dvojice mramorových cipů z Malty s věnováním bohu Melqartovi fénicky a řecky (2. století př. n. l.). Podle nich rozluštil Barthélemy roku 1758 fénické písmo. Louvre, Paříž.",
+     "en": "One of the pair of marble cippi from Malta dedicated to the god Melqart in Phoenician and Greek (2nd century BCE). From them Barthélemy deciphered the Phoenician script in 1758. Louvre, Paris."
+    },
+    "lod": {
+     "soubor": "lod.jpg",
+     "sirka": 857,
+     "vyska": 643,
+     "autor": "SpeakingArch",
+     "licence": "CC BY-SA 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Relief_depicting_thin_gypsum_wall_panel_shows_a_Phoenician_war_galley_sailing_down_the_Euphrates_River.jpg",
+     "cs": "Fénická válečná loď na asyrském reliéfu z Ninive (asi 700 př. n. l.). Britské muzeum, Londýn.",
+     "en": "A Phoenician war galley on an Assyrian relief from Nineveh (c. 700 BCE). British Museum, London."
+    }
+   },
+   "cs": {
+    "nazev": "Féničané",
+    "stitek": "Jazyky starověku",
+    "podtitul": "Pobřeží Levanty a Středomoří · asi 1200–146 př. n. l.",
+    "perex": "Féničané, obchodníci a mořeplavci z Týru, Sidónu a Byblu, rozšířili po celém Středomoří písmo o pouhých dvaadvaceti znacích. Z fénické abecedy vzešla řecká alfabeta, z ní latinka i cyrilice – a přes aramejštinu také hebrejské a arabské písmo. I písmena, jimiž je psán tento text, mají fénické předky.",
+    "fakta": [
+     [
+      "Území",
+      "pobřeží dnešního Libanonu, Sýrie a severu Izraele; osady po celém Středomoří"
+     ],
+     [
+      "Města",
+      "Týros, Sidón, Byblos, Arvad; Kartágo v severní Africe"
+     ],
+     [
+      "Období",
+      "asi 1200 př. n. l. – 146 př. n. l. (zničení Kartága)"
+     ],
+     [
+      "Jazyk",
+      "féničtina, semitský jazyk kanaánské větve; v Kartágu punština"
+     ],
+     [
+      "Písmo",
+      "fénická abeceda: 22 souhláskových písmen, psaná zprava doleva"
+     ],
+     [
+      "Rozluštění",
+      "1758, Jean-Jacques Barthélemy"
+     ]
+    ],
+    "nazvyTecek": {
+     "phoe1239": "Féničtina",
+     "puni1241": "Punština",
+     "ugar1238": "Ugaritština",
+     "anci1244": "Stará hebrejština"
+    },
+    "oddily": [
+     {
+      "typ": "text",
+      "h": "Obchodníci moře",
+      "p": [
+       "Po rozpadu velkých říší doby bronzové kolem roku 1200 př. n. l. rozkvetla na úzkém pobřeží pod horami Libanonu samostatná přístavní města: Týros, Sidón, Byblos a Arvad. Sami se nazývali podle svých měst nebo Kanaánci; jméno Féničané jim dali Řekové a obvykle se spojuje s řeckým slovem pro purpurovou barvu.",
+       "Féničané vyváželi cedrové dřevo, sklo, slonovinu a především purpur z mořských plžů ulity ostnité. Zakládali osady na Kypru, na Sicílii, na Sardinii, ve Španělsku i v severní Africe. Nejslavnější z nich, Kartágo, založil podle tradice Týros roku 814 př. n. l.; po třech punských válkách s Římem bylo roku 146 př. n. l. zničeno."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "byblos",
+      "siroka": true
+     },
+     {
+      "typ": "galerie",
+      "h": "Týros, purpur a lodě",
+      "f": [
+       "tyr",
+       "murex",
+       "lod"
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Abeceda o dvaadvaceti písmenech",
+      "p": [
+       "Fénická abeceda vyšla z protosinajského a protokanaánského písma, jehož znaky vznikly napodobením egyptských hieroglyfů. Kolem roku 1050 př. n. l. se ustálila v podobě o 22 písmenech. Zapisovala jen souhlásky (odborně abdžad), četla se zprava doleva a slova se často oddělovala tečkou nebo čárkou.",
+       "Každé písmeno mělo jméno, které začínalo jeho hláskou: ʾalp „býk“, bet „dům“, mem „voda“, ʿain „oko“, roš „hlava“. Tvary písmen původně tyto věci zobrazovaly – a býčí hlava převrácená vzhůru nohama je dodnes naše A."
+      ]
+     },
+     {
+      "typ": "znaky",
+      "h": "Fénická abeceda a latinka",
+      "znaky": [
+       [
+        "𐤀",
+        "ʾalp → A",
+        "býk"
+       ],
+       [
+        "𐤁",
+        "bet → B",
+        "dům"
+       ],
+       [
+        "𐤂",
+        "gaml → C, G",
+        "vrhací hůl? velbloud?"
+       ],
+       [
+        "𐤃",
+        "delt → D",
+        "dveře"
+       ],
+       [
+        "𐤄",
+        "he → E",
+        "?"
+       ],
+       [
+        "𐤅",
+        "wau → F, U, V, W, Y",
+        "hák, kolík"
+       ],
+       [
+        "𐤆",
+        "zai → Z",
+        "zbraň?"
+       ],
+       [
+        "𐤇",
+        "ḥet → H",
+        "ohrada?"
+       ],
+       [
+        "𐤈",
+        "ṭet → (řecká théta)",
+        "kolo?"
+       ],
+       [
+        "𐤉",
+        "yod → I, J",
+        "ruka"
+       ],
+       [
+        "𐤊",
+        "kaf → K",
+        "dlaň"
+       ],
+       [
+        "𐤋",
+        "lamd → L",
+        "bodec na dobytek"
+       ],
+       [
+        "𐤌",
+        "mem → M",
+        "voda"
+       ],
+       [
+        "𐤍",
+        "nun → N",
+        "had? ryba?"
+       ],
+       [
+        "𐤎",
+        "semk → (řecké ksí)",
+        "sloup? podpěra?"
+       ],
+       [
+        "𐤏",
+        "ʿain → O",
+        "oko"
+       ],
+       [
+        "𐤐",
+        "pe → P",
+        "ústa"
+       ],
+       [
+        "𐤑",
+        "ṣade → (řecké san)",
+        "?"
+       ],
+       [
+        "𐤒",
+        "qof → Q",
+        "?"
+       ],
+       [
+        "𐤓",
+        "roš → R",
+        "hlava"
+       ],
+       [
+        "𐤔",
+        "šin → S",
+        "zub"
+       ],
+       [
+        "𐤕",
+        "taw → T",
+        "značka"
+       ]
+      ],
+      "pozn": "Pod znakem je jméno písmene, jeho latinský potomek a význam jména. Významy označené otazníkem jsou nejisté. Řekové si ze souhlásek ʾalp, he, ʿain a yod udělali samohlásky A, E, O a I. Znaky vykresluje písmo Noto Sans Phoenician."
+     },
+     {
+      "typ": "foto",
+      "f": "ahiram",
+      "siroka": true
+     },
+     {
+      "typ": "veta",
+      "klin": "𐤀𐤓𐤍 𐤟 𐤆 𐤐𐤏𐤋 𐤟 … 𐤟 𐤁𐤍 𐤀𐤇𐤓𐤌 𐤟 𐤌𐤋𐤊 𐤂𐤁𐤋 𐤟 𐤋𐤀𐤇𐤓𐤌 𐤟 𐤀𐤁𐤄",
+      "prepis": "ʾrn z pʿl … bn ʾḥrm mlk gbl lʾḥrm ʾbh",
+      "slova": [
+       [
+        "ʾrn z",
+        "tuto rakev"
+       ],
+       [
+        "pʿl",
+        "udělal"
+       ],
+       [
+        "…",
+        "(jméno, poškozené)"
+       ],
+       [
+        "bn ʾḥrm",
+        "syn Ahiramův"
+       ],
+       [
+        "mlk gbl",
+        "král Byblu"
+       ],
+       [
+        "lʾḥrm ʾbh",
+        "pro Ahirama, svého otce"
+       ]
+      ],
+      "preklad": "„Tuto rakev udělal …, syn Ahiramův, král Byblu, pro Ahirama, svého otce.“",
+      "vyklad": "Začátek nápisu na sarkofágu krále Ahirama z Byblu, nejstaršího známého textu v plně vyvinuté fénické abecedě. Čte se zprava doleva a slova odděluje svislá značka 𐤟. Jméno syna je poškozené a jeho čtení je nejisté."
+     },
+     {
+      "typ": "foto",
+      "f": "ahiram-napis",
+      "siroka": true
+     },
+     {
+      "typ": "rameček",
+      "h": "Abeceda z klínků",
+      "p": [
+       "Ve syrském přístavu Ugarit používali písaři ve 14. a 13. století př. n. l. klínové písmo, které nebylo slabičné jako v Mezopotámii, ale abecední: asi třicet znaků ze klínků. Nalezené cvičné tabulky s abecedou ukazují, že písmena měla v Ugaritu už téměř stejné pořadí jako ve fénické abecedě: 𐎀𐎁𐎂𐎃𐎄 (a, b, g, ch, d)."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "melqart",
+      "na-vysku": true
+     },
+     {
+      "typ": "text",
+      "h": "Rozluštění: cipy z Malty",
+      "p": [
+       "Fénické písmo se luštilo snáze než hieroglyfy nebo klínopis: jazyk je blízký hebrejštině a písmena připomínají staré hebrejské a řecké. Rozhodující byla dvojice mramorových sloupků (cipů) z Malty ze 2. století př. n. l. se stejným věnováním bohu Melqartovi fénicky a řecky. Francouzský učenec Jean-Jacques Barthélemy podle nich roku 1758 určil hodnoty většiny fénických písmen.",
+       "Jeden z cipů je dnes v Louvru, druhý na Maltě. Fénických textů se dochovalo málo a jsou krátké – hlavně nápisy na kameni; knihy psané na papyru se nezachovaly."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Fénické písmo po celém Středomoří",
+      "p": [
+       "Fénickou abecedou psali nejen Féničané. Stéla krále Kilamuwy ze Sam'alu v dnešním Turecku, kámen z Nory na Sardinii nebo zlaté destičky z Pyrgi v Itálii, na nichž stojí týž text etrusky a fénicky, ukazují, jak daleko se písmo dostalo. Velmi blízkým písmem je psána i stéla moábského krále Méši a nejstarší hebrejské nápisy."
+      ]
+     },
+     {
+      "typ": "galerie",
+      "h": "Nápisy",
+      "f": [
+       "kilamuwa",
+       "nora",
+       "pyrgi",
+       "mesa"
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Punština a Kartágo",
+      "p": [
+       "V Kartágu a jeho osadách se féničtina vyvinula v punštinu. Přežila pád Kartága o staletí: v severní Africe se jí mluvilo ještě v době svatého Augustina (zemřel 430 n. l.), který ji znal. Několik vět v punštině obsahuje i římská komedie Plautova Punčák (Poenulus) – vzácně i se samohláskami."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "tofet",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "Potomci fénické abecedy",
+      "p": [
+       "V 8. století př. n. l. převzali fénickou abecedu Řekové a doplnili do ní samohlásky; z řeckých jmen alfa a béta vzniklo slovo abeceda. Z řecké abecedy vzešlo etruské písmo a z něj latinka, kterou píšeme česky, a v 9. století n. l. i cyrilice.",
+       "Na východě se z fénického písma vyvinulo aramejské, z něj hebrejské čtvercové písmo, syrské a přes nabatejské i arabské. Také řecké slovo biblos, „papyrus, kniha“ – a tedy i Bible – souvisí se jménem města Byblos, přes které se do Řecka dovážel egyptský papyrus."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "esmunazar",
+      "na-vysku": true
+     },
+     {
+      "typ": "osa",
+      "h": "Časová osa",
+      "udalosti": [
+       [
+        "asi 1200 př. n. l.",
+        "Rozpad říší doby bronzové; rozkvět fénických měst."
+       ],
+       [
+        "14.–13. st. př. n. l.",
+        "Klínová abeceda v Ugaritu."
+       ],
+       [
+        "asi 1050 př. n. l.",
+        "Ustálená fénická abeceda o 22 písmenech."
+       ],
+       [
+        "10. st. př. n. l.",
+        "Nápis na Ahiramově sarkofágu z Byblu."
+       ],
+       [
+        "9. st. př. n. l.",
+        "Stéla Kilamuwy, stéla Méši, kámen z Nory."
+       ],
+       [
+        "814 př. n. l.",
+        "Podle tradice založení Kartága."
+       ],
+       [
+        "8. st. př. n. l.",
+        "Řekové přebírají abecedu a přidávají samohlásky."
+       ],
+       [
+        "asi 500 př. n. l.",
+        "Zlaté destičky z Pyrgi."
+       ],
+       [
+        "332 př. n. l.",
+        "Alexandr Veliký dobývá Týros."
+       ],
+       [
+        "146 př. n. l.",
+        "Římané ničí Kartágo."
+       ],
+       [
+        "5. st. n. l.",
+        "Svatý Augustin zmiňuje živou punštinu."
+       ],
+       [
+        "1758",
+        "Barthélemy rozluštil fénické písmo."
+       ]
+      ]
+     },
+     {
+      "typ": "tecky",
+      "h": "Jazyky na glóbu",
+      "uvod": "Klepnutím se jazyk ukáže na glóbu:"
+     },
+     {
+      "typ": "zdroje",
+      "h": "Zdroje a další četba",
+      "p": [
+       "Charles R. Krahmalkov: A Phoenician-Punic Grammar. Brill 2001.",
+       "Josephine Quinn: In Search of the Phoenicians. Princeton University Press 2018.",
+       "Glenn E. Markoe: Phoenicians. British Museum Press 2000.",
+       "Joseph Naveh: Early History of the Alphabet. Magnes Press 1982.",
+       "Glottolog 5 (jazyky a jejich zařazení)."
+      ]
+     }
+    ]
+   },
+   "en": {
+    "nazev": "The Phoenicians",
+    "stitek": "Languages of antiquity",
+    "podtitul": "The Levantine coast and the Mediterranean · c. 1200–146 BCE",
+    "perex": "The Phoenicians, merchants and seafarers from Tyre, Sidon and Byblos, spread a script of only twenty-two signs across the Mediterranean. From the Phoenician alphabet came the Greek alphabet, and from it the Latin and Cyrillic scripts – and via Aramaic also the Hebrew and Arabic scripts. The letters of this very text have Phoenician ancestors.",
+    "fakta": [
+     [
+      "Territory",
+      "the coast of modern Lebanon, Syria and northern Israel; settlements across the Mediterranean"
+     ],
+     [
+      "Cities",
+      "Tyre, Sidon, Byblos, Arwad; Carthage in North Africa"
+     ],
+     [
+      "Period",
+      "c. 1200–146 BCE (destruction of Carthage)"
+     ],
+     [
+      "Language",
+      "Phoenician, a Canaanite Semitic language; Punic in Carthage"
+     ],
+     [
+      "Script",
+      "the Phoenician alphabet: 22 consonant letters, written right to left"
+     ],
+     [
+      "Deciphered",
+      "1758, Jean-Jacques Barthélemy"
+     ]
+    ],
+    "nazvyTecek": {
+     "phoe1239": "Phoenician",
+     "puni1241": "Punic",
+     "ugar1238": "Ugaritic",
+     "anci1244": "Ancient Hebrew"
+    },
+    "oddily": [
+     {
+      "typ": "text",
+      "h": "Merchants of the sea",
+      "p": [
+       "After the collapse of the great Bronze Age empires around 1200 BCE, independent port cities flourished on the narrow coast below the mountains of Lebanon: Tyre, Sidon, Byblos and Arwad. They called themselves after their cities or Canaanites; the name Phoenicians was given to them by the Greeks and is usually linked with the Greek word for purple.",
+       "The Phoenicians exported cedar wood, glass, ivory and above all purple dye from murex sea snails. They founded settlements on Cyprus, Sicily and Sardinia, in Spain and in North Africa. The most famous, Carthage, was according to tradition founded by Tyre in 814 BCE; after three Punic Wars with Rome it was destroyed in 146 BCE."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "byblos",
+      "siroka": true
+     },
+     {
+      "typ": "galerie",
+      "h": "Tyre, purple and ships",
+      "f": [
+       "tyr",
+       "murex",
+       "lod"
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "An alphabet of twenty-two letters",
+      "p": [
+       "The Phoenician alphabet grew out of the Proto-Sinaitic and Proto-Canaanite scripts, whose signs imitated Egyptian hieroglyphs. Around 1050 BCE it settled into a form of 22 letters. It recorded only consonants (technically an abjad), ran from right to left, and words were often separated by a dot or stroke.",
+       "Each letter had a name beginning with its sound: ʾalp “ox”, bet “house”, mem “water”, ʿain “eye”, rosh “head”. The letter shapes originally depicted these things – and the ox head, turned upside down, is still our A."
+      ]
+     },
+     {
+      "typ": "znaky",
+      "h": "The Phoenician alphabet and ours",
+      "znaky": [
+       [
+        "𐤀",
+        "ʾalp → A",
+        "ox"
+       ],
+       [
+        "𐤁",
+        "bet → B",
+        "house"
+       ],
+       [
+        "𐤂",
+        "gaml → C, G",
+        "throwing stick? camel?"
+       ],
+       [
+        "𐤃",
+        "delt → D",
+        "door"
+       ],
+       [
+        "𐤄",
+        "he → E",
+        "?"
+       ],
+       [
+        "𐤅",
+        "wau → F, U, V, W, Y",
+        "hook, peg"
+       ],
+       [
+        "𐤆",
+        "zai → Z",
+        "weapon?"
+       ],
+       [
+        "𐤇",
+        "ḥet → H",
+        "fence?"
+       ],
+       [
+        "𐤈",
+        "ṭet → (Greek theta)",
+        "wheel?"
+       ],
+       [
+        "𐤉",
+        "yod → I, J",
+        "hand"
+       ],
+       [
+        "𐤊",
+        "kaf → K",
+        "palm"
+       ],
+       [
+        "𐤋",
+        "lamd → L",
+        "ox-goad"
+       ],
+       [
+        "𐤌",
+        "mem → M",
+        "water"
+       ],
+       [
+        "𐤍",
+        "nun → N",
+        "snake? fish?"
+       ],
+       [
+        "𐤎",
+        "semk → (Greek xi)",
+        "pillar? support?"
+       ],
+       [
+        "𐤏",
+        "ʿain → O",
+        "eye"
+       ],
+       [
+        "𐤐",
+        "pe → P",
+        "mouth"
+       ],
+       [
+        "𐤑",
+        "ṣade → (Greek san)",
+        "?"
+       ],
+       [
+        "𐤒",
+        "qof → Q",
+        "?"
+       ],
+       [
+        "𐤓",
+        "roš → R",
+        "head"
+       ],
+       [
+        "𐤔",
+        "šin → S",
+        "tooth"
+       ],
+       [
+        "𐤕",
+        "taw → T",
+        "mark"
+       ]
+      ],
+      "pozn": "Below each sign: the letter's name, its Latin descendant and the meaning of the name. Meanings with a question mark are uncertain. The Greeks turned the consonants ʾalp, he, ʿain and yod into the vowels A, E, O and I. The signs are rendered with the Noto Sans Phoenician font."
+     },
+     {
+      "typ": "foto",
+      "f": "ahiram",
+      "siroka": true
+     },
+     {
+      "typ": "veta",
+      "klin": "𐤀𐤓𐤍 𐤟 𐤆 𐤐𐤏𐤋 𐤟 … 𐤟 𐤁𐤍 𐤀𐤇𐤓𐤌 𐤟 𐤌𐤋𐤊 𐤂𐤁𐤋 𐤟 𐤋𐤀𐤇𐤓𐤌 𐤟 𐤀𐤁𐤄",
+      "prepis": "ʾrn z pʿl … bn ʾḥrm mlk gbl lʾḥrm ʾbh",
+      "slova": [
+       [
+        "ʾrn z",
+        "this coffin"
+       ],
+       [
+        "pʿl",
+        "made"
+       ],
+       [
+        "…",
+        "(name, damaged)"
+       ],
+       [
+        "bn ʾḥrm",
+        "son of Ahiram"
+       ],
+       [
+        "mlk gbl",
+        "king of Byblos"
+       ],
+       [
+        "lʾḥrm ʾbh",
+        "for Ahiram, his father"
+       ]
+      ],
+      "preklad": "“This coffin … son of Ahiram, king of Byblos, made for Ahiram, his father.”",
+      "vyklad": "The opening of the inscription on the sarcophagus of King Ahiram of Byblos, the earliest known text in the fully developed Phoenician alphabet. It reads from right to left, and words are separated by the vertical mark 𐤟. The son's name is damaged and its reading uncertain."
+     },
+     {
+      "typ": "foto",
+      "f": "ahiram-napis",
+      "siroka": true
+     },
+     {
+      "typ": "rameček",
+      "h": "An alphabet of wedges",
+      "p": [
+       "In the Syrian port of Ugarit, scribes of the 14th and 13th centuries BCE used a cuneiform script that was not syllabic as in Mesopotamia but alphabetic: about thirty signs made of wedges. Practice tablets with the alphabet show that in Ugarit the letters already had almost the same order as in the Phoenician alphabet: 𐎀𐎁𐎂𐎃𐎄 (a, b, g, kh, d)."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "melqart",
+      "na-vysku": true
+     },
+     {
+      "typ": "text",
+      "h": "Decipherment: the cippi from Malta",
+      "p": [
+       "The Phoenician script was easier to decipher than hieroglyphs or cuneiform: the language is close to Hebrew and the letters resemble old Hebrew and Greek ones. Decisive was a pair of marble pillars (cippi) from Malta, from the 2nd century BCE, with the same dedication to the god Melqart in Phoenician and Greek. From them the French scholar Jean-Jacques Barthélemy determined the values of most Phoenician letters in 1758.",
+       "One cippus is now in the Louvre, the other in Malta. Few Phoenician texts survive and they are short – mostly inscriptions on stone; books written on papyrus have perished."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Phoenician writing across the Mediterranean",
+      "p": [
+       "The Phoenician alphabet was not used by Phoenicians alone. The stele of King Kilamuwa from Sam'al in modern Turkey, the Nora Stone from Sardinia and the gold tablets from Pyrgi in Italy, which carry the same text in Etruscan and Phoenician, show how far the script travelled. The stele of King Mesha of Moab and the earliest Hebrew inscriptions are written in very similar scripts."
+      ]
+     },
+     {
+      "typ": "galerie",
+      "h": "Inscriptions",
+      "f": [
+       "kilamuwa",
+       "nora",
+       "pyrgi",
+       "mesa"
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Punic and Carthage",
+      "p": [
+       "In Carthage and its settlements Phoenician developed into Punic. It outlived Carthage by centuries: it was still spoken in North Africa in the time of Saint Augustine (d. 430 CE), who knew it. A few lines of Punic also appear in Plautus' Roman comedy Poenulus (The Little Carthaginian) – rarely, with vowels."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "tofet",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "Descendants of the Phoenician alphabet",
+      "p": [
+       "In the 8th century BCE the Greeks adopted the Phoenician alphabet and added vowels; the Greek names alpha and beta gave us the word alphabet. From the Greek alphabet came the Etruscan script and from it the Latin alphabet in which English is written, and in the 9th century CE also Cyrillic.",
+       "In the east the Phoenician script developed into Aramaic, and from Aramaic came the Hebrew square script, Syriac and, via Nabataean, Arabic. The Greek word biblos, “papyrus, book” – and so the Bible – is also linked with the name of Byblos, through which Egyptian papyrus reached Greece."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "esmunazar",
+      "na-vysku": true
+     },
+     {
+      "typ": "osa",
+      "h": "Timeline",
+      "udalosti": [
+       [
+        "c. 1200 BCE",
+        "Collapse of the Bronze Age empires; the Phoenician cities flourish."
+       ],
+       [
+        "14th–13th c. BCE",
+        "The cuneiform alphabet of Ugarit."
+       ],
+       [
+        "c. 1050 BCE",
+        "The settled Phoenician alphabet of 22 letters."
+       ],
+       [
+        "10th c. BCE",
+        "The inscription on Ahiram's sarcophagus at Byblos."
+       ],
+       [
+        "9th c. BCE",
+        "The Kilamuwa stele, the Mesha stele, the Nora Stone."
+       ],
+       [
+        "814 BCE",
+        "Traditional date of the founding of Carthage."
+       ],
+       [
+        "8th c. BCE",
+        "The Greeks adopt the alphabet and add vowels."
+       ],
+       [
+        "c. 500 BCE",
+        "The gold tablets of Pyrgi."
+       ],
+       [
+        "332 BCE",
+        "Alexander the Great takes Tyre."
+       ],
+       [
+        "146 BCE",
+        "The Romans destroy Carthage."
+       ],
+       [
+        "5th c. CE",
+        "Saint Augustine mentions Punic as a living language."
+       ],
+       [
+        "1758",
+        "Barthélemy deciphers the Phoenician script."
+       ]
+      ]
+     },
+     {
+      "typ": "tecky",
+      "h": "Languages on the globe",
+      "uvod": "Tap to show a language on the globe:"
+     },
+     {
+      "typ": "zdroje",
+      "h": "Sources and further reading",
+      "p": [
+       "Charles R. Krahmalkov: A Phoenician-Punic Grammar. Brill 2001.",
+       "Josephine Quinn: In Search of the Phoenicians. Princeton University Press 2018.",
+       "Glenn E. Markoe: Phoenicians. British Museum Press 2000.",
+       "Joseph Naveh: Early History of the Alphabet. Magnes Press 1982.",
+       "Glottolog 5 (languages and their classification)."
+      ]
+     }
+    ]
    }
   }
  ]

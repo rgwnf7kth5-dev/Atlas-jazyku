@@ -541,7 +541,7 @@
    {
     "h": "Jazyky starověku",
     "p": [
-     "Ikona chrámu vpravo nahoře (vedle přepínače jazyka) otevře nabídku Jazyky starověku; najde je i vyhledávání, například „egypt“. Každá položka otevře stránku o civilizaci zaměřenou na jazyk a písmo: dějiny, ukázky znaků, příběh rozluštění, příbuzná slova, stavbu jazyka, časovou osu, fotografie a literaturu. Hotové jsou stránky o starověkém Egyptě a o Chetitech.",
+     "Ikona chrámu vpravo nahoře (vedle přepínače jazyka) otevře nabídku Jazyky starověku; najde je i vyhledávání, například „egypt“. Každá položka otevře stránku o civilizaci zaměřenou na jazyk a písmo: dějiny, ukázky znaků, příběh rozluštění, příbuzná slova, stavbu jazyka, časovou osu, fotografie a literaturu. Hotové jsou stránky o Sumeru a Akkadu, starověkém Egyptě, Chetitech a Féničanech.",
      "Stránka se otevře nad glóbem; zavře ji křížek, klávesa Escape nebo klepnutí vedle ní. Tlačítka v oddílu o jazycích na glóbu ukážou příslušné vymřelé jazyky na glóbu. Stránku otevře také tlačítko na kartě jazyka (například egyptštiny, koptštiny, chetitštiny nebo luvijštiny) a odkazy atlasjazyku.cz/#egypt a #chetite; na webu je i jako samostatná stránka."
     ]
    },
@@ -602,5 +602,5 @@
   "zpet": "Zpět na glóbus",
   "uvod": "Stránky o civilizacích starověku zaměřené na jazyk a písmo: dějiny, ukázky znaků, rozluštění, fotografie. Další přibývají."
  },
- "starovekTlacitko": "Jazyky starověku: stránky o civilizacích"
+ "starovekTlacitko": "Jazyky starověku: stránky o civilizacích, jejich jazyce a písmu"
 }
