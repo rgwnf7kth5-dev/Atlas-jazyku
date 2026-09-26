@@ -383,9 +383,9 @@
     ]
    },
    {
-    "h": "Languages of antiquity",
+    "h": "Languages of antiquity and Language stories",
     "p": [
-     "The Atlas writes the pages on ancient civilizations from the scholarly literature listed at the end of each page, and checks the facts before publication. The photographs come from Wikimedia Commons and have free licences (CC BY, CC BY-SA, CC0 or public domain); the author and licence are given with each image. Cuneiform signs and Anatolian hieroglyphs are rendered with the Noto fonts (SIL Open Font License)."
+     "The Atlas writes the pages on ancient civilizations and the Language stories from the scholarly literature listed at the end of each page, and checks the facts before publication. The photographs come from Wikimedia Commons and have free licences (CC BY, CC BY-SA, CC0 or public domain); the author and licence are given with each image. Cuneiform signs and Anatolian hieroglyphs are rendered with the Noto fonts (SIL Open Font License)."
     ]
    },
    {
@@ -617,8 +617,20 @@
   "titulek": "{n}: language and script",
   "zpet": "Back to the globe",
   "uvod": "Pages on ancient civilizations focused on language and script: history, sample signs, decipherment, photographs. Two overviews come first: the family tree of scripts and a glossary of terms.",
+  "mapaTlacitko": "Show on the globe",
   "dalsi": "More pages",
   "prehledUvod": "Pages on ancient civilizations focused on language and script: history, sample signs, decipherment, photographs. More are being added."
  },
+ "pribehy": {
+  "stitek": "Language stories",
+  "uvod": "Thematic pages about languages: how words travel between languages, how languages change, how they come back and what linguistics still does not know.",
+  "skupiny": {
+   "slova": "Travelling words",
+   "promeny": "Languages through time",
+   "lide": "People and languages",
+   "zahady": "Mysteries"
+  }
+ },
+ "pribehyTlacitko": "Language stories: travelling words, language change, revival and mysteries",
  "starovekTlacitko": "Languages of antiquity: pages on civilizations, their languages and scripts"
 }

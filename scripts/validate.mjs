@@ -85,7 +85,17 @@ if (pd.uzly.length !== pd.nad.length) chyby.push("data/podrobnosti.json: strom p
       for (const p of pot) if (!uv.includes(p)) varovani.push(`${co}: ${c.id} používá písmo ${p}, ale v „pisma“ chybí (stránka ho načte i tak)`);
       for (const p of uv) if (!pot.includes(p)) varovani.push(`${co}: ${c.id} má v „pisma“ ${p}, ale žádný jeho znak nepoužívá`); }
     for (const k of c.tecky || []) if (!kody.has(k)) chyby.push(`${co}: ${c.id} má tečku „${k}“, kterou rejstřík nezná`);
+    /* Příběhy jazyků: sekce „pribehy“, skupina z nabídky, odkaz na mapu jen na známou vlastnost WALS (nebo „pismo“) */
+    if (c.sekce !== undefined && c.sekce !== "pribehy") chyby.push(`${co}: ${c.id} má neznámou sekci „${c.sekce}“`);
+    if (c.sekce === "pribehy" && !(uiCs.pribehy.skupiny[c.skupina] && uiEn.pribehy.skupiny[c.skupina])) chyby.push(`${co}: ${c.id} má skupinu „${c.skupina}“, kterou src/ui/*.json (pribehy.skupiny) nezná`);
+    for (const l of ["cs", "en"]) for (const b of c[l].oddily) if (b.typ === "mapa" && b.vlastnost !== "pismo" && !json("data/typologie-popis.json").vlastnosti.some(v => v.id === b.vlastnost))
+      chyby.push(`${co}: ${c.id} odkazuje na mapu „${b.vlastnost}“, kterou data/typologie-popis.json nemá`);
+    const adresy = [c.adresa.cs, c.adresa.en];
+    for (const x of st.civilizace) if (x !== c && adresy.some(a => a === x.adresa.cs || a === x.adresa.en || a === x.id)) chyby.push(`${co}: adresa ${c.id} se kryje se stránkou ${x.id}`);
   }
+  /* jedna tečka = jedna civilizace (karta tečky ukazuje jen první); Příběhy se nepočítají, tlačítko na kartu nedávají */
+  const majitel = {};
+  for (const c of st.civilizace) if (!c.sekce) for (const k of c.tecky || []) { if (majitel[k]) chyby.push(`${co}: tečku ${k} mají ${majitel[k]} i ${c.id}`); majitel[k] = c.id; }
 }
 { /* typologické mapy: popis (ručně) a data (scripts/typologie.mjs) musí sedět; barvy mapy jsou ověřené jen pro 5 odstínů + „jiné“ a 7 stupňů */
   const p = json("data/typologie-popis.json"), d = json("data/typologie.json"), co = "data/typologie-popis.json";

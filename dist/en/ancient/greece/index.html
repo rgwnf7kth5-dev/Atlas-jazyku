@@ -155,6 +155,7 @@ footer a{color:inherit}
 .civ-etio{font-family:"Noto Serif Ethiopic", serif; font-weight:400; font-size:1.15em}
 .civ-han{font-family:"Noto Serif TC", serif; font-weight:500; font-size:1.1em}
 .civ-run{font-family:"Noto Sans Runic", sans-serif; font-weight:400; font-size:1.2em}
+.civ-orkh{font-family:"Noto Sans Old Turkic", sans-serif; font-weight:400; font-size:1.2em}
 .civ-got{font-family:"Noto Sans Gothic", sans-serif; font-weight:400; font-size:1.2em}
 .civ-ogam{font-family:"Noto Sans Ogham", sans-serif; font-weight:400; font-size:1.2em}
 .civ-hlah{font-family:"Noto Sans Glagolitic", sans-serif; font-weight:400; font-size:1.2em}
@@ -168,7 +169,7 @@ footer a{color:inherit}
 .civ-gruz{font-family:"Noto Serif Georgian", serif; font-weight:400; font-size:1.1em}
 .civ-tib{font-family:"Noto Serif Tibetan", serif; font-weight:400; font-size:1.2em}
 .civ-taml{font-family:"Noto Serif Tamil", serif; font-weight:400; font-size:1.1em}
-.civ-znak.civ-fen, .civ-znak.civ-ugar, .civ-znak.civ-perskl, .civ-znak.civ-linb, .civ-znak.civ-lina, .civ-znak.civ-mayc, .civ-znak.civ-ital, .civ-znak.civ-brahmi, .civ-znak.civ-khar, .civ-znak.civ-deva, .civ-znak.civ-aram, .civ-znak.civ-avest, .civ-znak.civ-pahl, .civ-znak.civ-sarab, .civ-znak.civ-etio, .civ-znak.civ-han, .civ-znak.civ-run, .civ-znak.civ-got, .civ-znak.civ-ogam, .civ-znak.civ-hlah, .civ-znak.civ-hebr, .civ-znak.civ-syr, .civ-znak.civ-nab, .civ-znak.civ-palm, .civ-znak.civ-sam, .civ-znak.civ-arab, .civ-znak.civ-arm, .civ-znak.civ-gruz, .civ-znak.civ-tib, .civ-znak.civ-taml{font-size:2.4rem}
+.civ-znak.civ-fen, .civ-znak.civ-ugar, .civ-znak.civ-perskl, .civ-znak.civ-linb, .civ-znak.civ-lina, .civ-znak.civ-mayc, .civ-znak.civ-ital, .civ-znak.civ-brahmi, .civ-znak.civ-khar, .civ-znak.civ-deva, .civ-znak.civ-aram, .civ-znak.civ-avest, .civ-znak.civ-pahl, .civ-znak.civ-sarab, .civ-znak.civ-etio, .civ-znak.civ-han, .civ-znak.civ-run, .civ-znak.civ-got, .civ-znak.civ-ogam, .civ-znak.civ-hlah, .civ-znak.civ-hebr, .civ-znak.civ-syr, .civ-znak.civ-nab, .civ-znak.civ-palm, .civ-znak.civ-sam, .civ-znak.civ-arab, .civ-znak.civ-arm, .civ-znak.civ-gruz, .civ-znak.civ-tib, .civ-znak.civ-taml, .civ-znak.civ-orkh{font-size:2.4rem}
 .civ-znak-radek.civ-mayc{display:inline-flex; white-space:pre-line; line-height:1.05; text-align:center; font-size:2rem; align-self:center}
 .civ-priklad:has(.civ-mayc){align-items:center}
 .civ-znak.civ-egy, .civ-znak-radek.civ-egy{font-size:2.5rem; vertical-align:0}
@@ -268,6 +269,15 @@ footer a{color:inherit}
 .civ-tecka svg{width:16px; height:16px; color:var(--civ-akcent)}
 .civ-tecka:hover{border-color:var(--civ-akcent)}
 .civ-tecka:focus-visible{outline:3px solid var(--civ-akcent); outline-offset:2px}
+/* odkaz na typologickou mapu na glóbu (Příběhy) */
+.civ-mapa{clear:both; margin:24px 0; padding:18px 22px; border:1px solid var(--civ-linka); border-radius:14px; background:var(--civ-papir2); max-width:44em}
+.civ-mapa h2{margin-top:0}
+.civ-mapa p{color:var(--civ-ink2)}
+.civ-mapa-tl{display:inline-flex; align-items:center; gap:8px; margin-top:4px; padding:10px 18px; border-radius:999px; border:0; background:var(--civ-akcent);
+  color:var(--civ-papir); font:inherit; font-weight:600; text-decoration:none; cursor:pointer}
+.civ-mapa-tl svg{width:18px; height:18px}
+.civ-mapa-tl:hover{filter:brightness(1.08)}
+.civ-mapa-tl:focus-visible{outline:3px solid var(--civ-akcent); outline-offset:3px}
 .civ-zdroje{clear:both}
 .civ-zdroje ul{margin:6px 0 0; padding-left:18px; color:var(--civ-ink2); font-size:.9rem; max-width:46em}
 .civ-pata{clear:both; margin-top:30px; padding-top:14px; border-top:1px solid var(--civ-linka); font-size:.8rem; color:var(--civ-ink3)}
@@ -342,6 +352,10 @@ footer a{color:inherit}
 @media (hover:none){ .starovek-ikona .bublina{display:none} }
 .starovek-okno{width:min(520px, calc(100vw - 32px))}
 .starovek-okno .starovek-tl{margin:4px 0}
+/* Příběhy jazyků: nadpisy skupin v nabídce (Slova na cestách, Jazyky v čase…) */
+.pribehy-skupina{display:flex; align-items:center; gap:10px; margin:18px 8px 6px; font:600 .72rem/1.2 var(--pismo-text); letter-spacing:.12em; text-transform:uppercase; color:var(--text3)}
+.pribehy-skupina::after{content:""; flex:1; height:1px; background:var(--linka)}
+.od-uvod + .pribehy-skupina{margin-top:10px}
 /* přehledy nahoře nabídky: jemně podbarvený blok a pod ním ozdobný předěl (čára s kosočtvercem) */
 .starovek-prehledy{margin:6px 0 0; padding:4px 6px; border-radius:14px; background:color-mix(in srgb, var(--text) 5%, transparent); border:1px solid var(--linka)}
 .starovek-prehledy .starovek-tl:hover{background:color-mix(in srgb, var(--text) 6%, transparent)}

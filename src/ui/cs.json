@@ -383,9 +383,9 @@
     ]
    },
    {
-    "h": "Jazyky starověku",
+    "h": "Jazyky starověku a Příběhy jazyků",
     "p": [
-     "Stránky o civilizacích starověku píše atlas podle odborné literatury, která je uvedena na konci každé stránky; údaje jsou před zveřejněním ověřené. Fotografie pocházejí z Wikimedia Commons a mají volnou licenci (CC BY, CC BY-SA, CC0 nebo volné dílo); autor a licence jsou uvedeni u každého snímku. Znaky klínového písma a anatolských hieroglyfů vykresluje písmo Noto (SIL Open Font License)."
+     "Stránky o civilizacích starověku a Příběhy jazyků píše atlas podle odborné literatury, která je uvedena na konci každé stránky; údaje jsou před zveřejněním ověřené. Fotografie pocházejí z Wikimedia Commons a mají volnou licenci (CC BY, CC BY-SA, CC0 nebo volné dílo); autor a licence jsou uvedeni u každého snímku. Znaky klínového písma a anatolských hieroglyfů vykresluje písmo Noto (SIL Open Font License)."
     ]
    },
    {
@@ -617,8 +617,20 @@
   "titulek": "{n}: jazyk a písmo",
   "zpet": "Zpět na glóbus",
   "uvod": "Stránky o civilizacích starověku zaměřené na jazyk a písmo: dějiny, ukázky znaků, rozluštění, fotografie. Na začátku jsou dva přehledy: rodokmen písem a slovníček pojmů.",
+  "mapaTlacitko": "Ukázat na glóbu",
   "dalsi": "Další stránky",
   "prehledUvod": "Stránky o civilizacích starověku zaměřené na jazyk a písmo: dějiny, ukázky znaků, rozluštění, fotografie. Další přibývají."
  },
+ "pribehy": {
+  "stitek": "Příběhy jazyků",
+  "uvod": "Tematické stránky o jazycích: jak slova putují mezi jazyky, jak se jazyky mění, jak se vracejí a co jazykověda dosud neví.",
+  "skupiny": {
+   "slova": "Slova na cestách",
+   "promeny": "Jazyky v čase",
+   "lide": "Lidé a jazyky",
+   "zahady": "Záhady"
+  }
+ },
+ "pribehyTlacitko": "Příběhy jazyků: cesty slov, proměny jazyků, obnova a záhady",
  "starovekTlacitko": "Jazyky starověku: stránky o civilizacích, jejich jazyce a písmu"
 }

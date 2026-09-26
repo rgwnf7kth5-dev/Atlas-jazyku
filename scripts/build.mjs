@@ -189,7 +189,7 @@ fs.mkdirSync(path.join(KOREN, "dist/js"), { recursive: true });
 fs.writeFileSync(path.join(KOREN, "dist", souborSkriptu), skriptWebu);
 fs.writeFileSync(path.join(KOREN, "dist/index.html"), cs.dokument);
 fs.writeFileSync(path.join(KOREN, "dist/en/index.html"), en.dokument);
-for (const d of ["starovek", "en/ancient"]) fs.rmSync(path.join(KOREN, "dist", d), { recursive: true, force: true });   // stránky o civilizacích (fotky se zkopírují znovu)
+for (const d of ["starovek", "en/ancient", "pribehy", "en/stories"]) fs.rmSync(path.join(KOREN, "dist", d), { recursive: true, force: true });   // stránky o civilizacích (fotky se zkopírují znovu)
 fs.cpSync(path.join(KOREN, "static"), path.join(KOREN, "dist"), { recursive: true });   // ikonky, náhledy, fotky civilizací
 
 // samostatné stránky jazyků, přehled a O datech (scripts/stranky.mjs); staré složky pryč, kdyby se jazyk přejmenoval

@@ -30,6 +30,7 @@ var STAROVEK = (function(){
     ["civ-etio", "ሀ-᎟ⶀ-⷟", "Noto Serif Ethiopic"],
     ["civ-han", "㐀-䶿一-鿿", "Noto Serif TC"],
     ["civ-run", "ᚠ-᛿", "Noto Sans Runic"],
+    ["civ-orkh", "\\u{10C00}-\\u{10C4F}", "Noto Sans Old Turkic"],
     ["civ-got", "\\u{10330}-\\u{1034F}", "Noto Sans Gothic"],
     ["civ-ogam", " -᚟", "Noto Sans Ogham"],
     ["civ-hlah", "Ⰰ-ⱟ\\u{1E000}-\\u{1E02F}", "Noto Sans Glagolitic"],
@@ -45,7 +46,7 @@ var STAROVEK = (function(){
     ["civ-taml", "஀-௿", "Noto Serif Tamil"]]
     .map(function(p){ return [p[0], new RegExp("[" + p[1] + "]", "u"), new RegExp("([" + p[1] + "][" + p[1] + "\\u0300-\\u036F\\s]*)", "gu"), p[2]]; });
   /* písma psaná zprava doleva: řádek znaků dostane dir="rtl" */
-  const RTL = ["civ-fen", "civ-khar", "civ-aram", "civ-avest", "civ-pahl", "civ-sarab", "civ-hebr", "civ-syr", "civ-nab", "civ-palm", "civ-sam", "civ-arab"];
+  const RTL = ["civ-fen", "civ-khar", "civ-aram", "civ-avest", "civ-pahl", "civ-sarab", "civ-hebr", "civ-syr", "civ-nab", "civ-palm", "civ-sam", "civ-arab", "civ-orkh"];
   function tridaPisma(z){ for (const p of PISMA) if (p[1].test(z)) return p[0]; return ""; }
   /* úseky starověkých písem v textu dostanou vlastní písmo */
   function text(s){
@@ -109,13 +110,20 @@ var STAROVEK = (function(){
       /* slovníček pojmů */
       case "pojmy": return '<section class="civ-pojmy">' + h + (b.uvod ? "<p>" + text(b.uvod) + "</p>" : "") + "<dl>" + b.pojmy.map(function(p){
           return "<div><dt>" + esc(p[0]) + "</dt><dd>" + text(p[1]) + (p[2] ? '<span class="civ-pojem-priklad">' + text(p[2]) + "</span>" : "") + "</dd></div>"; }).join("") + "</dl></section>";
+      /* odkaz na typologickou mapu na glóbu (Příběhy: čaj → WALS 138A); v aplikaci tlačítko data-mapa, na webu odkaz */
+      case "mapa": {
+        const ikona = '<svg aria-hidden="true" viewBox="0 0 16 16"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M1.8 8h12.4M8 1.8c2.2 2.4 2.2 10 0 12.4M8 1.8c-2.2 2.4-2.2 10 0 12.4" fill="none" stroke="currentColor" stroke-width="1.1"/></svg>';
+        const tl = o.odkazMapa ? '<a class="civ-mapa-tl" href="' + esc(o.odkazMapa(b.vlastnost)) + '">' + ikona + esc(o.U.mapaTlacitko) + "</a>"
+          : '<button class="civ-mapa-tl" type="button" data-mapa="' + esc(b.vlastnost) + '">' + ikona + esc(o.U.mapaTlacitko) + "</button>";
+        return '<section class="civ-mapa">' + h + (b.p || []).map(function(p){ return "<p>" + text(p) + "</p>"; }).join("") + tl + "</section>";
+      }
       case "zdroje": return '<section class="civ-zdroje">' + h + "<ul>" + b.p.map(function(p){ return "<li>" + esc(p) + "</li>"; }).join("") + "</ul></section>";
     }
     return "";
   }
   /* rozcestník na konci stránky: ostatní civilizace (v aplikaci tlačítka data-civ, na webu odkazy) */
   function ostatni(c, lang, o){
-    const dalsi = (o.vsechny || []).filter(function(x){ return x.id !== c.id; });
+    const dalsi = (o.dalsi || o.vsechny || []).filter(function(x){ return x.id !== c.id; });   // o.dalsi: jen stránky téže sekce
     if (!dalsi.length) return "";
     return '<nav class="civ-dalsi" aria-label="' + esc(o.U.dalsi) + '"><h2>' + esc(o.U.dalsi) + "</h2><ul>" + dalsi.map(function(x){
       const obsah = "<b>" + esc(x[lang].nazev) + "</b><small>" + esc(x[lang].podtitul) + "</small>";
