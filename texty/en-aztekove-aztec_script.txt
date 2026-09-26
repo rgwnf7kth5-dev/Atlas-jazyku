@@ -1,0 +1,79 @@
+{{Short description|Pre-Columbian writing system for Nahuatl}}
+{{Expand Spanish|Escritura mexica|date=May 2022}}
+{{Infobox writing system
+| name        = Aztec
+| type        = Pictographic and logosyllabic
+| languages   = [[Nahuatl language|Nahuatl]]
+| creator     = The Nahua peoples
+| time        = Most extant manuscripts from the 16th century
+| sisters     = [[Mixtec writing|Mixtec]]
+| direction   = top-to bottom, left-to right
+| sample      = Aztecwriting.jpg
+| imagesize   = 97px
+| unicode     = not
+}}
+{{Aztec civilization}}
+The '''Aztec''' or '''Nahuatl script''' is a [[pre-Columbian]] [[writing system]] that combines [[ideograph]]ic writing with [[Nahuatl]] specific phonetic logograms and syllabic signs<ref name="Lacadena">{{cite web|last=Lacadena|first=Alfonso|title=Regional Scribal Traditions: Methodological Implications for the Decipherment of Nahuatl Writing|url=http://www.mesoweb.com/pari/publications/journal/804/PARI0804.pdf}}</ref> which was used in [[central Mexico]] by the [[Nahua people]] in the [[Mesoamerican Epiclassic Period|Epiclassic]] and [[Mesoamerican chronology|Postclassic]] periods.<ref>{{Cite journal |last=Escamilla |first=Marlon V. |last2=Fowler |first2=William R. |title=Paisajes rituales nahua-pipiles del postclásico en la Costa del Bálsamo, El Salvador |url=http://portal.amelica.org/ameli/jatsRepo/366/3661944008/html/index.html |journal=Entorno |language=es |issue=53 |pages=67–75}}</ref> It was originally thought that its use was reserved for elites; however, the topographical codices and early colonial catechisms, recently deciphered, were used by ''tlacuilos'' (scribes),<ref>{{Cite journal |last=Corral |first=Aurelio López |date=2011 |title=Los glifos de suelo en códices acolhua de la Colonia temprana: un reanálisis de su significado |url=https://desacatos.ciesas.edu.mx/index.php/Desacatos/article/view/293 |journal=Desacatos. Revista de Ciencias Sociales |language=es |issue=37 |pages=145–162 |doi=10.29340/37.293 |issn=2448-5144|doi-access=free }}</ref> ''macehuallis'' (peasants), and ''[[pochteca]]s'' (merchants).<ref>{{Cite web |title=Tribute Roll. |url=https://www.loc.gov/item/2021667610/ |access-date=2024-06-05 |website=Library of Congress, Washington, D.C. 20540 USA}}</ref>
+
+== Origin==
+The Aztec writing system derives from writing systems used in Central Mexico, such as [[Zapotec script]]. [[Mixtec writing]] is also thought to descend from Zapotec. The first [[Oaxaca]]n inscriptions are thought to encode Zapotec, partially because of numerical suffixes characteristic of the [[Zapotec languages]].<ref>Justeson (1986, p.449)</ref>
+[[File:Aztec silabary in IPA Lacadena Wichmann 2004.jpg|thumb|Aztec syllabary (according to Lacadena and Wichmann, 2004)]]
+
+==Structure and use==
+Aztec was a [[pictogram|pictographic]] and [[ideographic]] [[proto-writing]], augmented by phonetic [[Rebus#Examples from history|rebuses]]. It also contained syllabic signs and logograms. Although Western languages distinguish between the painted and the written, Aztec script does not have such a distinction, showing both continuously <ref>Dehouve, D. (2020). THE RULES OF CONSTRUCTION OF AN AZTEC DEITY: CHALCHIUHTLICUE, THE GODDESS OF WATER. Ancient Mesoamerica, 31(1), p.20. https://doi.org/10.1017/S0956536118000056</ref>.There was no alphabet, but puns also contributed to recording sounds of the Aztec language. While some scholars have understood the system not to be considered a complete writing system, this is disputed by others. The existence of logograms and syllabic signs is being documented and a phonetic aspect of the writing system has emerged,<ref name="Lacadena"/> even though many of the syllabic characters have been documented since at least 1888 by Nuttall.<ref name="Zender">{{cite web|last=Zender|first=Marc|title=One Hundred and Fifty Years of Nahuatl Decipherment|url=http://www.mesoweb.com/pari/journal/archive/PARI0804.pdf|work=The PARI Journal}}</ref> There are conventional signs for syllables and logograms which act as word signs or for their rebus content.<ref name="Zender"/> Logosyllabic writing appears on both painted and carved artifacts, such as the [[Tizoc Stone]].<ref>{{cite book|last=VanEssendelft|first=Willem|title=The word made stone: deciphering and mapping the glyphs of the Tizoc stone|date=May 2011 |publisher=DingoFence |location=Harvard Special Collection|page=86|url=http://dingofence.com/content/VanEssendelftALMThesis_v2_6.pdf|access-date=2012-10-15|archive-date=Feb 2, 2014 |archive-url=https://web.archive.org/web/20140202144522/http://dingofence.com/content/VanEssendelftALMThesis_v2_6.pdf|url-status=dead}}</ref> However, instances of phonetic characters often appear within a significant artistic and pictorial context. In native manuscripts, the sequence of historical events is indicated by a line of footprints leading from one place or scene to another.
+
+The [[ideographic]] nature of the writing is apparent in abstract concepts, such as death, represented by a corpse wrapped for burial; night, drawn as a black sky and a closed eye; war, by a shield and a club; and speech, illustrated as a little scroll issuing from the mouth of the person who is talking. The concepts of motion and walking were indicated by a trail of footprints.<ref name="Bray, Warwick 1968 93-96">{{cite book |author=Bray, Warwick |year=1968 |title=Everyday Life of The Aztecs |url=https://archive.org/details/everydaylifeofaz00warw |url-access=registration |pages=[https://archive.org/details/everydaylifeofaz00warw/page/93 93]–96|publisher=Dorset Press |isbn=9780880291439 }}</ref> The illustration of concepts with graphic expressions contributed Aztec religions to denotation of roles and characterestics of deities in their pictures<ref>Dehouve, D. (2020). THE RULES OF CONSTRUCTION OF AN AZTEC DEITY: CHALCHIUHTLICUE, THE GODDESS OF WATER. Ancient Mesoamerica, 31(1), 7–28. https://doi.org/10.1017/S0956536118000056</ref>. An Aztec deity has different combinations of signs establishing a certain homogeneous meaning, rather than the use of a specific representation<ref>Dehouve, D. (2020). THE RULES OF CONSTRUCTION OF AN AZTEC DEITY: CHALCHIUHTLICUE, THE GODDESS OF WATER. Ancient Mesoamerica, 31(1), p.20. https://doi.org/10.1017/S0956536118000056</ref>. Thus, each graphic sign on the picture of deities is an element of the divine personality<ref>Dehouve, D. (2020). THE RULES OF CONSTRUCTION OF AN AZTEC DEITY: CHALCHIUHTLICUE, THE GODDESS OF WATER. Ancient Mesoamerica, 31(1), p.20. https://doi.org/10.1017/S0956536118000056</ref>.
+
+A glyph could be used as a rebus to represent a different word with the same sound or similar pronunciation. This is especially evident in the glyphs of town names.<ref>{{cite book |author=Spinden, Herbert J. |year=1928 |title=Ancient Civilizations of Mexico and Central America |url=https://archive.org/details/civilizat03spin |pages=[https://archive.org/details/civilizat03spin/page/n228 223]–229|publisher=New York }}</ref> For example, the glyph for Tenochtitlan, the Aztec capital, was represented by combining two pictograms: stone ''(te-tl)'' and cactus ''(noch-tli),'' and the relative direction of below ''(-ti-tlan)''.
+
+Aztec glyphs do not have a set reading order, unlike [[Maya hieroglyphs]]. As such, they may be read in any direction which forms the correct sound values in the context of the glyph. However, there is an internal reading order in that any sign will be followed in the direction being written by the sign for the following sound. 
+
+===Numerals===
+The Aztec numerical system was [[vigesimal]] as was the [[Maya numerals|Mayan numerical system]]. They indicated quantities up to twenty by the requisite number of dots. A flag was used to indicate twenty, repeating it for quantities up to four hundred, while a sign like a fir tree, meaning numerous as hairs, signified four hundred. The next unit, eight thousand, was indicated by an incense bag, which referred to the almost innumerable contents of a sack of cacao beans.<ref>{{cite book |author=Vaillant, George C. |year=1941 |title=Aztecs of Mexico |pages=206–209}}</ref>
+
+===Historical===
+Aztecs embraced the widespread manner of presenting history cartographically. A cartographic map would hold an elaborately detailed history recording events. The maps were painted to be read in sequence, so that time is established by the movement of the narrative through the map and by the succession of individual maps.
+
+Aztecs also used continuous year-count annals to record anything that would occur during that year. All the years are painted in a sequence and most of the years are generally in a single straight line that reads continually from left to right. Events, such as solar eclipses, floods, droughts, or famines, are painted around the years, often linked to the years by a line or just painted adjacent to them. Specific individuals were not mentioned often, but unnamed humans were often painted in order to represent actions or events.<ref>{{cite book |author=Boone, Elizabeth H. |year=1996 |title=Aztecs Imperial Strategies  |pages=181–206}}</ref> When individuals are named, they form the majority of the corpus of logosyllabic examples.
+
+== Disappearance ==
+Aztec script fell out of use due to colonial, ecclesiastical, and governmental authorities, with the help of the local inhabitants who were indoctrinated in Spanish culture. The evangelizers classified Aztec script as a creation of the devil and considered [[Syllabary|syllabic]] [[Ideogram|ideographic symbols]] as intangible characters. The Old Library of [[Texcoco de Mora|Texcoco]], which according to various contemporary sources, contained a larger literary, technical and historical collection than the Old Library of [[Tenochtitlan]], was destroyed by the colonial government under the orders of the religious [[Juan de Zumárraga]], who collected the Aztec documents to be incinerated.<ref>{{Cite web |last=Arbagi |first=Michael |title=The Catholic Church and the Preservation of Mesoamerican Archives: An Assessment |url=https://minds.wisconsin.edu/bitstream/handle/1793/72319/AI_Vol33_No2_MichaelArbagi1.pdf |access-date=March 7, 2024 |website=minds.wisconsin.edu}}</ref>
+
+==See also==
+*[[Aztec codices]]
+*[[Damago Soto]]
+*[[Hieroglyph]]
+*[[Mesoamerican writing systems]]
+*[[Nahuatl language]]
+
+==References==
+{{reflist}}
+
+==Notes==
+{{refbegin|indent=yes}}
+<!--BEGIN biblio format. --> 
+* {{cite journal|author=Lacadena, Alfonso|title=A Nahuatl Syllabary|journal=[[The PARI Journal]]|year=2008|volume=VIII|issue=4|url=http://www.mesoweb.com/pari/publications/journal/804/PARI0804.pdf}}
+* {{cite journal |author=Justeson, John S. |author-link=John S. Justeson |date=February 1986 |title=The Origin of Writing Systems: Preclassic Mesoamerica |url=http://history.missouristate.edu/chuchiak/template/Justeson.pdf |format=online facsimile |journal=[[World Archaeology]] |volume=17 |issue=3 |location=London |publisher=[[Routledge & Kegan Paul]] |pages=437–458 |doi=10.1080/00438243.1986.9979981 |issn=0043-8243 |oclc=2243103 |access-date=2009-06-09 |archive-url=https://web.archive.org/web/20091122144434/http://history.missouristate.edu/chuchiak/template/Justeson.pdf |archive-date=2009-11-22 |url-status=dead }}
+* {{cite book |author=Prem, Hanns J.   |year=1992 |chapter=Aztec Writing |title=[[Handbook of Middle American Indians|Supplement to the Handbook of Middle American Indians, Vol. 5: Epigraphy]] |editor=Victoria R. Bricker (volume ed.), with Patricia A. Andrews |others=[[Victoria Bricker|Victoria Reifler Bricker]] (general editor) |publisher=[[University of Texas Press]] |location=Austin |pages=53–69|isbn=0-292-77650-0 |oclc=23693597}} 
+* {{cite book|author=Soustelle, Jacques |author-link=Jacques Soustelle|year=1961|title=Daily Life of the Aztecs: On the Eve of the Spanish Conquest |others=Patrick O’Brian (trans.)|location=London|publisher=[[Phoenix Books|Phoenix]] |isbn=1-84212-508-7 |oclc=50217224}} 
+* {{cite journal|author=Zender, Marc|title=One Hundred and Fifty Years of Nahuatl Decipherment|journal=[[The PARI Journal]]|year=2008|volume=VIII|issue=4|url=http://www.mesoweb.com/pari/publications/journal/804/PARI0804.pdf}}
+* {{cite journal|author=Nuttall, Zelia|title=On the Complementary Signs of the Mexican Graphic System|journal=[[The PARI Journal]]|year=2008|volume=VIII|issue=4|url=http://www.mesoweb.com/pari/publications/journal/804/PARI0804.pdf}}
+* {{cite book|last=VanEssendelft|first=Willem|title=The word made stone: deciphering and mapping the glyphs of the Tizoc stone|date=May 2011 |publisher=DingoFence |location=Harvard Special Collection|page=86|url=http://dingofence.com/content/VanEssendelftALMThesis_v2_6.pdf|access-date=2012-10-15|archive-date=Feb 2, 2014 |archive-url=https://web.archive.org/web/20140202144522/http://dingofence.com/content/VanEssendelftALMThesis_v2_6.pdf|url-status=dead}}
+{{refend}}<!-- END biblio format style -->
+
+==Further reading==
+{{Commons}}
+*{{cite web |url=http://www.ancientscripts.com/aztec.html |archive-url=https://web.archive.org/web/20171028204843/http://www.ancientscripts.com/aztec.html |url-status=dead |archive-date=2017-10-28 |title=Aztec |author=Lawrence Lo |work=Ancient Scripts}}
+*{{cite book |author=Nicholson, H. B. |year=1974 |chapter=Phoneticism in the Late Pre-Hispanic Central Mexican Writing System |editor=E. P. Bensen |title=Mesoamerica Writing Systems |pages=1–46}}
+*{{cite book |author=Thouvenot, Marc |year=2002 |chapter=Nahuatl Script |editor=Anne-Marie Christin |title=A History of Writing: From Hieroglyph to Multimedia |publisher=Flammarion}}
+
+{{Writings systems of the Americas}}
+{{list of writing systems}}
+{{Authority control}}
+
+{{DEFAULTSORT:Aztec Writing}}
+[[Category:Mesoamerican writing systems]]
+[[Category:Aztec]]
+[[Category:Obsolete writing systems]]
+[[Category:Proto-writing]]
+[[Category:Vertical writing systems]]

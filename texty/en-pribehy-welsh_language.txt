@@ -1,0 +1,667 @@
+{{Short description|Brittonic language}} <!-- This specific branch of Celtic language family which extends all across Central and Western Europe -->
+
+{{Use British English|date=May 2020}}
+{{use dmy dates|date=August 2019}}
+{{Infobox language
+| name             = Welsh
+| nativename       = {{lang|cy|Cymraeg}}, {{lang|cy|y Gymraeg}}
+| image            = 
+| ethnicity        = [[Welsh people|Welsh]]
+| pronunciation    = {{IPA|cy|kəmˈraːiɡ||Cymraeg (cropped).wav}}
+| region           = United Kingdom ([[Wales]], [[England]]), Argentina ([[Chubut Province]])
+| speakers         = *[[Wales]]: 538,300 (2021) <br />(17.8% of the population of Wales at the [[2021–2022 United Kingdom censuses|2021 census]], including both [[First language|L1]] and [[Second language|L2]] speakers)
+*[[England]]: 110,000 (2007, estimated)<ref>{{cite web|url=https://calls.ac.uk/wp-content/uploads/4844.pdf |title= Estimation of the number of Welsh speakers in England |author=Hywel Jones|website=calls.ac.uk}}</ref>
+*[[Chubut Province|Argentina (Chubut)]]: 1,500–5,000<ref>{{cite web|title=Patagonia's Welsh settlement was 'cultural colonialism' says academic|last=Devine |first=Darren |url=https://www.walesonline.co.uk/news/wales-news/patagonias-welsh-settlement-cultural-colonialism-2514111 |website=[[Wales Online]] |publisher=[[Trinity Mirror]] |location=[[Cardiff]] |date=2013-03-30 |access-date=6 May 2017 |quote=Now, though 50,000 Patagonians are thought to be of Welsh descent, the number of Welsh speakers is believed to be between only 1,500 and 5,000.}}</ref><ref name="WAG">{{cite web |title=Wales and Patagonia |url=http://www.wales.com/Patagonia  |publisher=[[Welsh Government]] |access-date=2016-05-22 |df=dmy-all |website=Wales.com |quote=Today the province of Chubut, where most Welsh immigrants settled, has a population of 550,000 people. Of these, some 50,000 can claim Welsh ancestry and 5,000 speak the Welsh language. |archive-url= https://web.archive.org/web/20180405231745/https://www.wales.com/Patagonia |archive-date=2018-04-05}}</ref><ref name="Prior">{{Cite news |last=Prior |first=Neil |date=2015-05-30 |title=Patagonia 150 years on: A 'little Wales beyond Wales' |language=en-GB |work=BBC News |url=https://www.bbc.com/news/uk-wales-32919137 |access-date=2020-07-30}}</ref><ref>{{cite journal |last1=Harris |first1=Trevor |title=The Welsh language in Patagonia |journal=European Journal of Language Policy |date=October 2018 |volume=10 |issue=2 |pages=277–295 |doi=10.3828/ejlp.2018.15}}</ref>
+*[[Canada]]: <3,885 ([[First language|L1]])<ref>{{cite web|title=Population of immigrant mother tongue families, showing main languages comprising each family, Canada, 2011|url=https://www12.statcan.gc.ca/census-recensement/2011/as-sa/98-314-x/2011003/tbl/tbl3_2-1-eng.cfm|website=Statistics Canada|access-date=21 August 2017}}</ref> (2011)
+*[[United States]]: 2,003<ref name="lang-tables">{{Cite web |title=Detailed Languages Spoken at Home and Ability to Speak English for the Population 5 Years and Over: 2017-2021|url=https://www.census.gov/data/tables/time-series/demo/language-use/2017-2021-lang-tables.html |date= June 2025 |website=US Census Bureau }}</ref> 
+*[[Australia]]: 1,737<ref>{{cite web|title=Cultural diversity: Census 2021|url=https://www.abs.gov.au/statistics/people/people-and-communities/cultural-diversity-census/2021|website=Australian Bureau of Statistics|date=12 January 2022 |access-date=8 October 2023}}</ref>
+| speakers_label   = Speakers
+| familycolor      = Indo-European
+| fam2             = [[Celtic languages|Celtic]]
+| fam3             = [[Insular Celtic languages|Insular Celtic]]
+| fam4             = [[Brittonic languages|Brittonic]]
+| fam5             = [[Western Brittonic languages|Western Brittonic]]
+| ancestor         = [[Common Brittonic]]
+| ancestor2        = [[Old Welsh]]
+| ancestor3        = [[Middle Welsh]]
+| dia1             = [[Cofi dialect|Cofi]]
+| dia2             = [[Gwyndodeg]]
+| dia3             = [[Powyseg]]
+| dia4             = [[Dyfedeg]]
+| dia5             = [[Gwenhwyseg]]
+| dia6             = [[Patagonian Welsh]]
+| dia7             = [[Rhosllanerchrugog Welsh|Rhos]]
+| nation           = [[Wales]] ([[United Kingdom]])
+| minority         = [[Argentina]] ([[Chubut Province]])
+| script           = {{Unbulleted list|[[Latin script|Latin]] ([[Welsh orthography|Welsh alphabet]])|[[Welsh Braille]]}}
+| agency           = {{Unbulleted list|[[Welsh Language Commissioner]] (2012–present)|[[Welsh Language Board]] (1993–2012)}}
+| iso1             = cy
+| iso2b            = wel
+| iso2t            = cym
+| iso3             = cym
+| glotto           = wels1247
+| glottorefname    = Welsh
+| lingua           = 50-ABA    
+| notice           = IPA
+| map              = Welsh speakers in the 2021 census.svg
+| mapcaption       = [[Welsh-speaking population]] in [[Wales]] according to the 2021 census
+| coordinates      = 
+| map2             = Lang Status 80-VU.svg
+| mapcaption2      = {{center|Welsh is classified as [[Vulnerable language|Vulnerable]] by the UNESCO ''[[Atlas of the World's Languages in Danger]]'' (2010).<ref>{{Cite book| edition = 3rd ed. entirely revised, enlarged and updated.| isbn = 978-92-3-104095-5| publisher =  UNESCO, Intangible Cultural Heritage Section| last1 = Moseley| first1 = Christopher| last2 = Nicolas| first2 = Alexandre| title = Atlas of the world's languages in danger / editor-in-Chief, Christopher Moseley; cartographer, Alexandre Nicolas.| location = Paris| series = Memory of peoples series| date = 2010 |url= https://unesdoc.unesco.org/ark:/48223/pf0000187026}}</ref>}}
+}}
+
+[[File:WIKITONGUES- Sandra speaking Welsh.webm|thumb|Video of a Welsh speaker]]
+'''Welsh''' ({{lang|cy|Cymraeg}} {{IPA|cy|kəmˈraːiɡ||Cymraeg (cropped).wav}} or {{lang|cy|y Gymraeg}} {{IPA|cy|ə ɡəmˈraːiɡ|}}) is a [[Celtic languages|Celtic language]] of the [[Brittonic languages|Brittonic]] subgroup that is native to the [[Welsh people]]. Welsh is spoken natively in [[Wales]] by about 18% of the population, by some in [[England]], and in {{lang|cy|[[Y Wladfa]]|italic=no}} (the Welsh colony in [[Chubut Province]], Argentina).<ref>{{cite news |last=Edwards |first=Huw |author-link=Huw Edwards (journalist) |url=https://www.bbc.co.uk/guides/z9kr9j6 |title=Why do they speak Welsh in South America? |work=BBC iWonder |access-date=2017-09-16 |df=dmy-all |archive-date=9 July 2019 |archive-url=https://web.archive.org/web/20190709082910/http://www.bbc.co.uk/guides/z9kr9j6 }}</ref> Historically, it has also been known in English as '''Cambrian''',<ref>{{cite book|last=Nolan |first=Edward Henry |title=Great Britain As It Is |year=1859 |page=47 |publisher=[[John Lane (publisher)|John Lane & Co]] |location=[[London]] |url=https://books.google.com/books?id=78gHAAAAQAAJ&q=%22Great%20Britain%20As%20It%20Is%22&pg=PA47 |access-date=2018-09-10 |df=dmy-all}}</ref> '''Cambric'''<ref>{{cite book |last=Jackson |first=John |title=Chronological Antiquities |volume=III |url=https://books.google.com/books?id=_VvlAAAAMAAJ&q=%22Chronological%20Antiquities%22%20cambric&pg=PA143 |year=1752 |page=143 |publisher=J Noon |location=[[London]]}}</ref> and '''Cymric'''.<ref>{{citation |author-last1=Walter Thomas |author-first1=Mrs D |author-last2=Hughes |author-first2=Edward |title=The Cymric Language |year=1879 |publisher=D Duncan & Sons |location=[[Cardiff]] }}</ref>
+
+The [[Welsh Language (Wales) Measure 2011]] gave the Welsh language official status in Wales.<ref>{{cite web |title=Welsh Language (Wales) Measure 2011 |url=https://www.legislation.gov.uk/mwa/2011/1/contents |access-date=2016-05-30 |work=[[legislation.gov.uk]] |publisher=[[The National Archives (United Kingdom)|The National Archives]] |quote=The Welsh language has official status in Wales. |df=dmy-all}}</ref> Welsh and English are ''[[de jure]]'' official languages of the [[Senedd]] (the Welsh parliament).<ref>{{cite web |title=National Assembly for Wales (Official Languages) Act 2012 |url=https://www.legislation.gov.uk/anaw/2012/1 |access-date=2018-04-19 |website=www.[[legislation.gov.uk]] |publisher=[[The National Archives (United Kingdom)|The National Archives]] |quote=The official languages of the Assembly are English and Welsh. |df=dmy-all}}</ref><ref>{{cite book |last=Dunbar |first=R |author-link= |year=2007 |title=Diversity in addressing diversity: Canadian and British legislative approaches to linguistic minorities and their international legal context. In: Williams C (ed) ''Language and Governance'' |url= |location=Cardiff |publisher=University of Wales Press |page=104 |isbn=}}</ref> According to the [[2021 United Kingdom census|2021 census]], 538,300 usual residents in Wales aged three or over (17.8% of the population) were able to speak Welsh, while just over a quarter (25.1%) reported having some Welsh language skills.<ref>{{Cite web |date=2022-12-06 |title=Welsh language in Wales (Census 2021) [HTML] {{!}} GOV.WALES |url=https://www.gov.wales/welsh-language-wales-census-2021-html |access-date=2025-08-27 |website=www.gov.wales |language=en}}</ref>
+
+Other surveys have produced higher figures: a survey in 2022–2023 found that 34% of people aged 16 or over could speak Welsh (of whom 18 per cent said they could speak Welsh, and 16 per cent said they had some Welsh speaking ability).<ref>{{Cite web |date=2025-08-14 |title=Welsh language speaking ability and use (National Survey for Wales): April 2022 to March 2023 [HTML] {{!}} GOV.WALES |url=https://www.gov.wales/welsh-language-speaking-ability-and-use-national-survey-wales-april-2022-march-2023-html |access-date=2025-08-27 |website=www.gov.wales |language=en}}</ref> In March 2026, other survey data estimated that 843,700 people (27.3%) aged three or over in Wales could speak Welsh.<ref name=":2">{{Cite web |date=22 July 2026 |title=Welsh language data from the Annual Population Survey: April 2025 to March 2026 |url=https://www.gov.wales/welsh-language-data-annual-population-survey-april-2025-march-2026-html |url-status=live |access-date=1 September 2026 |website=Welsh Government}}</ref>
+
+Almost half of all Welsh speakers consider themselves fluent, while 20% are able to speak a fair amount.<ref name=":3">{{Cite web |date=2022-02-17 |title=Welsh language use in Wales (initial findings): July 2019 to March 2020 (revised) {{!}} GOV.WALES |url=https://www.gov.wales/welsh-language-use-wales-initial-findings-july-2019-march-2020-revised-html |access-date=2023-12-19 |website=www.gov.wales |language=en}}</ref> 56% of Welsh speakers speak the language daily, and 19% speak the language weekly.<ref name=":3" /> Since 1951, the number of Welsh speakers living in Wales has gone up, though the percentage of Welsh speakers with respect to the entire population of Wales has decreased every census year, with the exception of the [[1991 United Kingdom census|1991]] and the [[2001 United Kingdom census|2001 UK Census]].
+
+The [[Welsh Government]] plans to increase the number of Welsh-language speakers to one million, and to double the daily use of the language, by 2050.<ref>{{Cite web |date=2021-07-12 |title=Cymraeg 2050: work programme 2021 to 2026 [HTML] {{!}} GOV.WALES |url=https://www.gov.wales/cymraeg-2050-work-programme-2021-2026-html |access-date=2025-07-09 |website=www.gov.wales |language=en}}</ref> Since 1980, the number of children attending [[Welsh-medium education|Welsh-medium schools]] has increased, while the number going to Welsh bilingual and dual-medium schools has decreased.<ref>{{cite news|url=https://www.itv.com/news/2017-09-04/back-to-school-but-not-an-english-one/ |title=Almost a quarter of children in Wales are taught only in Welsh, as the language experiences a revival |publisher=ITV News |date=2017-09-04 |access-date=2020-06-01}}</ref> Welsh is considered the least endangered Celtic language by [[UNESCO]].<ref>{{Cite web |last=Luain |first=Cathal Ó |title=Unesco: Status of Celtic languages outlined by atlas |url=https://abp.bzh/unesco-status-of-celtic-languages-outlined-by-atlas-20850 |access-date=2023-05-25 |website=Agence Bretagne Presse |date=15 December 2010 |language=fr-FR}}</ref>
+
+==History==
+{{Main|History of the Welsh language}}
+The language of the Welsh developed from the language of [[Celtic Britons|Britons]].<ref>{{Cite book |chapter-url=https://books.google.com/books?id=AK_yn7Q3_x0C&q=Wales%20and%20the%20Britons%2C%20350%E2%80%931064&pg=PA75 |title=Wales and the Britons, 350–1064 |page=75 |chapter=2: Britons and their Languages |last=Charles-Edwards |first=Thomas M |author-link=Thomas Charles-Edwards |date=2013 |publisher=[[Oxford University Press]] |isbn=978-0-19-821731-2 |edition=1st |oclc=823319671}}</ref> The emergence of Welsh was not instantaneous and clearly identifiable. Instead, the shift occurred over a long period, with some historians claiming that it had happened by as late as the [[9th century]], with a watershed moment being that proposed by linguist [[Kenneth H. Jackson]], the [[Battle of Deorham|Battle of Dyrham]], a military battle between the [[Wessex|West Saxons]] and the Britons in 577&nbsp;AD,<ref name="koch" /> which split the South Western British from direct overland contact with the Welsh.
+
+Four periods are identified in the history of Welsh, with rather indistinct boundaries: Primitive Welsh, Old Welsh, Middle Welsh, and Modern Welsh. The period immediately following the language's emergence is sometimes referred to as Primitive Welsh,<ref name="koch">{{cite book |last= Koch |first= John T. |author-link=John T. Koch |title= Celtic Culture: A Historical Encyclopedia|publisher=[[ABC-CLIO]] |location=[[Santa Barbara, California|Santa Barbara]] |year=2006 |page=1757 |isbn= 9781851094400 |oclc= 266510465 |url=https://archive.org/details/celticculturehis0001unse |url-access=registration}}</ref> followed by the [[Old Welsh]] period – which is generally considered to stretch from the beginning of the 9th century to sometime during the 12th century.<ref name="koch"/> The [[Middle Welsh]] period is considered to have lasted from then until the 14th century, when the [[History of the Welsh language|Modern Welsh]] period began, which in turn is divided into Early and Late Modern Welsh.
+
+Late Modern Welsh, which is still the form spoken today started with [[William Morgan (Bible translator)|William Morgan]]'s 1588 translation of the Bible, and is still readable to most Welsh readers today. [[Y Beibl cyssegr-lan|This Bible]] was the first Welsh translation of the whole Bible, and due to the [[Christianity in Wales|Protestant Reformation in Wales]] emphasising literacy and vernacular reading of the Bible this [[Standard language|standardised]] the language across Wales.
+
+The first Welsh dictionary was the [[Antiquae linguae Britannicae]] as a Welsh-Latin dictionary published in 1632 by John Davies, who was an assistant in translating the 1588 Bible.<ref>{{Cite web |title=Antiquae linguae Britannicae |url=https://www.library.wales/discover-learn/digital-exhibitions/europeana-rise-of-literacy/dictionaries-and-grammars/antiquae-linguae-britannicae |website=The National Library of Wales}}</ref><ref>{{Cite web |date=1959 |title=DAVIES, JOHN (Dr. John Davies of Mallwyd, c. 1567 - 1644), one of the greatest of Welsh scholars |url=https://biography.wales/article/s-DAVI-JOH-1567 |website=Dictionary of Welsh Biography}}</ref> The first Welsh-English dictionary was published in fifteen parts between 1770 and 1794 by [[John Walters (priest and lexicographer)|John Walters]] based on the work of [[William Gambold]].<ref>{{Cite web |date=1959 |title=WALTERS, JOHN (1721 - 1797), cleric and lexicographer |url=https://biography.wales/article/s-WALT-JOH-1721 |website=Dictionary of Welsh Biography}}</ref>
+
+The word ''Welsh'' is a descendant, via Old English {{Lang|ang|wealh, wielisc}}, of the [[Proto-Germanic language|Proto-Germanic]] word {{lang|gem-x-proto|*[[Walhaz]]}}, which was derived from the name of the [[Celts|Celtic people]] known to the Romans as {{lang|la|[[Volcae]]}} and which came to refer to speakers of Celtic languages, and then indiscriminately to the people of the [[Western Roman Empire]]. In [[Old English]] the term went through [[semantic change|semantic narrowing]], coming to refer to either Britons in particular or, in some contexts, slaves.<ref>{{cite thesis |last=Miller |first= Katherine L. |date=2014 |title=The Semantic Field of Slavery in Old English: Wealh, Esne, Þræl |type=Doctoral dissertation |publisher=[[University of Leeds]] |url= https://etheses.whiterose.ac.uk/8031/1/Katherine%20Miller%20Semantic%20Field%20of%20Slavery%20in%20Old%20English%20v%203.pdf |pages=81–83 |access-date=8 August 2019}}</ref> The plural form {{lang|ang|Wēalas}} evolved into the name for their territory, Wales.<ref name="Wales Hist 71">[[John Davies (historian)|Davies, John]] (1994) ''[[iarchive:historyofwales0000davi g1b0|A History of Wales]]''. Penguin: p.71; {{ISBN|0-14-014581-8}}.</ref>
+
+The modern names for various [[Romance languages|Romance-speaking]] people in [[Continental Europe]] (e.g. [[Walloons]], [[Valaisan]]s, [[Vlachs]]/[[Wallachia]]ns, and {{lang|pl|Włosi}}, the [[Polish language|Polish]] name for Italians) have a similar etymology.<ref>{{cite web |url=https://www.etymonline.com/word/welsh |title=Welsh (adj.)  |website=Online Etymology Dictionary |access-date=18 November 2019 |quote=As a noun, "the Britons," also "the Welsh language," both from Old English. The word survives in Wales, Cornwall, Walloon, walnut, and in surnames Walsh and Wallace.}}</ref> The Welsh term for the language, {{lang|cy|Cymraeg}}, descends from the [[Common Brittonic|Brythonic]] word {{lang|cel|combrogi}}, meaning 'compatriots' or 'fellow countrymen'.<ref>{{cite web |title=Welsh: the only Celtic language not classified as "endangered" by UNESCO |url=https://unric.org/en/welsh-the-only-celtic-language-not-classified-as-endangered-by-unesco/ |website=UN Regional Information Centre for Western Europe |publisher=The United Nations |access-date=30 November 2019 |date=5 February 2015 |archive-date=8 March 2021 |archive-url=https://web.archive.org/web/20210308081142/https://unric.org/en/welsh-the-only-celtic-language-not-classified-as-endangered-by-unesco/ |url-status=dead }}</ref>
+
+===Origins===
+{{see also|Celtic languages#Classification}}
+[[File:1588 First Welsh Bible.jpg|thumb|upright 0.75|The 1588 Welsh Bible]]
+Welsh evolved from [[Common Brittonic]], the Celtic language spoken by the ancient [[Celtic Britons]]. Classified as [[Insular Celtic languages|Insular Celtic]], the British language probably arrived in [[Great Britain|Britain]] during the [[Bronze Age]] or [[British Iron Age|Iron Age]] and was probably spoken throughout the island south of the [[Firth of Forth]].<ref name="KochBritons">Koch, pp. 291–292.</ref> During the [[Early Middle Ages]] the British language began to fragment due to increased dialect differentiation, thus evolving into Welsh and the other Brittonic languages. It is not clear when Welsh became distinct.<ref name="koch" /><ref name=":1">{{Cite book |url=https://books.google.com/books?id=32WuBwAAQBAJ |title=The Welsh Language: A History |last=Janet |first=Davies |isbn=978-1-78316-019-8 |publisher=[[University of Wales Press]] |location=[[Cardiff]] |oclc=878137213|date=2014-01-15 }}</ref><ref name=":0">{{Cite journal |last=Higham |first=Nicholas |date=1 April 2014 |title=T. M. Charles-Edwards. ''Wales and the Britons, 350–1064'' |journal=[[The American Historical Review]] |volume=119 |issue=2 |pages=578–579 |doi=10.1093/ahr/119.2.578 |issn=0002-8762 }}</ref>
+
+Linguist [[Kenneth H. Jackson]] has suggested that the evolution in [[syllable|syllabic]] structure and sound pattern was complete by around 550&nbsp;AD, and labelled the period between then and about 800&nbsp;AD "Primitive Welsh".<ref name="Koch1757">Koch, p.&nbsp;1757.</ref> This Primitive Welsh may have been spoken in both Wales and the {{lang|cy|[[Hen Ogledd]]}} ('Old North') – the Brittonic-speaking areas of what are now northern England and southern [[Scotland]] – and therefore may have been the ancestor of [[Cumbric]] as well as Welsh. Jackson, however, believed that the two varieties were already distinct by that time.<ref name=koch/>
+
+The earliest Welsh poetry – that attributed to the {{lang|cy|[[Cynfeirdd]]}} or "Early Poets" – is generally considered to date to the Primitive Welsh period. However, much of this poetry was supposedly composed in the {{lang|cy|Hen Ogledd|italic=no}}, raising further questions about the dating of the material and language in which it was originally composed.<ref name=koch/> This discretion stems from the fact that Cumbric was widely believed to have been the language used in Hen Ogledd. An 8th-century inscription in [[Tywyn]] shows the language already dropping [[inflection]]s in the declension of nouns.<ref name="Jenkins">{{cite book |last=Jenkins |first=Simon |author-link=Simon Jenkins |title=Wales: Churches, Houses, Castles |url=https://books.google.com/books?id=NFk3AQAAIAAJ |year=2008 |publisher=[[Allen Lane (imprint)|Allen Lane]] |page=244 |isbn=9780141024127 |oclc=751732135}}</ref>
+
+Janet Davies proposed that the origins of the Welsh language were much less definite; in ''The Welsh Language: A History'', she proposes that Welsh may have been around even earlier than 600&nbsp;AD. This is evidenced by the dropping of final syllables from Brittonic: {{lang|cel|*bardos}} 'poet' became {{lang|cy|bardd}}, and {{lang|cel|*abona}} 'river' became {{lang|cy|afon}}.<ref name=":1" /> Though both Davies and Jackson cite minor changes in syllable structure and sounds as evidence for the creation of Old Welsh, Davies suggests it may be more appropriate to refer to this derivative language as {{lang|la|Lingua Britannica}} rather than characterising it as a new language altogether.
+
+=== Primitive Welsh ===
+{{unreferenced section|date=January 2026}}
+The argued dates for the period of "Primitive Welsh" are widely debated, with some{{who|date=January 2026}}historians' suggestions differing by hundreds of years.
+
+===Old Welsh===
+{{main|Old Welsh}}
+
+{{unreferenced section|date=January 2026}}
+The next main period is [[Old Welsh]] ({{lang|cy|Hen Gymraeg}}, 9th to 11th centuries); [[poetry]] from both Wales and [[Scotland]] has been preserved in this form of the language. As [[Anglo-Saxon settlement of Britain|Germanic]] and [[Gaels|Gaelic]] colonisation of Britain proceeded, the Brittonic speakers in Wales were split off from those in northern England, speaking Cumbric, and those in the southwest, speaking what would become [[Cornish language|Cornish]], so the languages diverged. Both the works of [[Aneirin]] ({{lang|cy|Canu Aneirin}}, {{circa|600}}) and the ''[[Book of Taliesin]]'' ({{Lang|cy|Canu Taliesin}}) were written during this era.
+
+===Middle Welsh===
+{{main|Middle Welsh}}
+
+{{unreferenced section|date=January 2026}}
+Middle Welsh ({{lang|cy|Cymraeg Canol}}) is the label attached to the Welsh of the 12th to 14th centuries, of which much more remains than for any earlier period. This is the language of nearly all surviving early manuscripts of the {{lang|cy|[[Mabinogion]]}}, although the tales themselves are certainly much older. It is also the language of the existing [[Welsh law]] manuscripts. Middle Welsh is reasonably intelligible to a modern-day Welsh speaker.
+<gallery mode="packed" heights="150" caption="Languages of Wales 1750–1900">
+File:Map o ieithoedd Cymru (A map of the languages of Wales) - 1750.svg|1750
+File:Map o ieithoedd Cymru (A map of the languages of Wales) - 1800.svg|1800
+File:Map o ieithoedd Cymru (A map of the languages of Wales) - 1850.svg|1850
+File:Map o ieithoedd Cymru (A map of the languages of Wales) - 1900.svg|1900
+</gallery>
+{{align|center|'''Key''': • Welsh {{color box|#80c040}} • Bilingual {{color box|Pink}} • English {{color box|White}}}}
+
+=== Modern Welsh ===
+{{More citations needed section|date=December 2017}}
+[[File:Still surviving... - geograph.org.uk - 406078.jpg|thumb|[[Bible translations into Welsh|Welsh Bible]] of 1620, in [[Llanwnda, Pembrokeshire|Llanwnda]] church, rescued from the hands of French invaders in 1797<ref>{{cite news |title=Llanwnda Bible damaged in last invasion of Britain on display |work=BBC News |date=3 January 2018 |url=https://www.bbc.co.uk/news/uk-wales-south-west-wales-42548146 |access-date=18 November 2019}}</ref>]]
+The [[Bible translations into Welsh]] helped maintain the use of Welsh in daily life, and standardised spelling. The [[New Testament]] was translated by [[William Salesbury]] in 1567,<ref>{{cite web|url=https://www.library.wales/discover/digital-gallery/printed-material/william-salesburys-new-testament |title=William Salesbury's New Testament &#124; The National Library of Wales |publisher=Library.wales |access-date=2020-06-01}}</ref> and the complete Bible by [[William Morgan (Bible translator)|William Morgan]] in 1588.<ref>{{cite web|url=https://www.britannica.com/biography/William-Morgan-Welsh-bishop |title=William Morgan &#124; Welsh bishop |publisher=Encyclopaedia Britannica |access-date=2020-06-01}}</ref> Modern Welsh is subdivided into Early Modern Welsh and Late Modern Welsh.<ref>{{cite web |url=https://whywelsh.wordpress.com/2013/08/20/welsh-is-the-oldest-language/ |title=Is Welsh the oldest language? |last=Llŷr |first=Dylan |date=2013-08-20 |access-date=2018-09-10 |df=dmy-all |website=Why Welsh? }}</ref> Early Modern Welsh ran from the 15th century through to the end of the 16th century,<ref>{{cite web |url=https://www.bbc.co.uk/wales/history/sites/themes/guide/ch14_culture_and_religion.shtml |title=History – Themes – Chapter 14: Culture and religion in early modern Wales |publisher=[[BBC Wales]] |date=1970-01-01 |access-date=2020-06-01}}</ref> and the Late Modern Welsh period roughly dates from the 16th century onwards. Contemporary Welsh differs greatly from the Welsh of the 16th century, but they are similar enough for a fluent Welsh speaker to have little trouble understanding it.
+
+During the Modern Welsh period, there has been a decline in the popularity of the Welsh language: the number of Welsh speakers declined to the point at which there was concern that the language would become extinct. During industrialisation in the late 19th century, immigrants from England led to the decline in Welsh speakers particularly in the South Wales Valleys.<ref>{{Cite web |title=Migration |url=https://www.agor.org.uk/cwm/themes/life/society/migration.asp |access-date=2023-12-27 |website=www.agor.org.uk}}</ref> Welsh government processes and legislation have worked to increase the proliferation of the Welsh language, for example through education.<ref>{{Cite journal |last=Brant |first=Colin |date=Spring 2020 |title=Communication and Culture: The Role of Language Policy on Regional Minority Languages in the Reduction of Political Conflict |url=https://scholarship.rollins.edu/honors/104/ |journal=Applied Linguistics Commons |pages=1–77 }}</ref>
+
+==Geographical distribution==
+=== Wales ===
+{{For|Welsh speaking population figures|#Status}}[[File:Welsh speakers in the 2021 census.svg|thumb|upright=1.0|The proportion of respondents in the 2021 census who said they could speak Welsh]]
+Welsh has been spoken continuously in Wales throughout history. By 1911, however, it had become a minority language, spoken by 43.5 per cent of the population.<ref>{{cite web |title=The Industrial Revolution |work=Wales History |publisher=[[BBC]] |url=http://www.bbc.co.uk/wales/history/sites/themes/society/language_industrialrevolution.shtml |access-date=30 December 2011 }}</ref> While this decline continued over the following decades, the language did not die out. The smallest number of speakers was recorded in [[1921 United Kingdom census|1981]] with 503,000, although the lowest percentage was recorded in the most recent census in [[2021 United Kingdom census|2021]] at 17.8 per cent.<ref name="auto">{{Cite web |date=2022-12-06 |title=Welsh language in Wales (Census 2021) {{!}} GOV.WALES |url=https://www.gov.wales/welsh-language-wales-census-2021-html |access-date=2023-12-27 |website=www.gov.wales |language=en}}</ref> By the start of the 21st century, numbers began to increase once more, at least partly as a result of the increase in [[Welsh-medium education]].<ref>{{cite news |last1=Morris |first1=Steven |title=Wales launches strategy to double number of Welsh speakers by 2050 |url=https://www.theguardian.com/uk-news/2017/dec/18/wales-launches-strategy-to-double-number-of-welsh-speakers-by-2050 |access-date=25 February 2019 |work=[[The Guardian]] |date=2017-12-18}}</ref><ref>{{cite news |title='Encouraging' survey suggests rise in Welsh language speakers |url=https://www.bbc.com/news/uk-wales-45611374 |access-date=25 February 2019 |work=[[BBC News Online]] |date=2018-09-22}}</ref>
+
+The 2004 Welsh Language Use Survey showed that 21.7 per cent of the population of Wales spoke Welsh,<ref name="2004Survey">{{cite web |url=http://linguistics.uoregon.edu/files/admin/file/Course_Documents/Survey_Methods/Survey%20Reports/Welsh%20Survey%20&%20Report%2004.pdf |title=2004 Welsh Language Use Survey: the report |access-date=5 June 2012 |archive-url=https://web.archive.org/web/20120427211017/http://linguistics.uoregon.edu/files/admin/file/Course_Documents/Survey_Methods/Survey%20Reports/Welsh%20Survey%20%26%20Report%2004.pdf |archive-date=27 April 2012 |df=dmy-all }}</ref> compared with 20.8 per cent in the [[United Kingdom Census 2001|2001 census]], and 18.5 per cent in the [[1991 census]]. Since 2001, however, the number of Welsh speakers has declined in both the [[2011 United Kingdom census|2011]] and 2021 censuses to about 538,300 or 17.8 per cent in 2021, lower than 1991, although it is still higher in absolute terms.<ref>{{cite web |title=2011 Census: Key Statistics for Wales, March 2011 |publisher=[[Office for National Statistics]] |url=http://ons.gov.uk/ons/rel/census/2011-census/key-statistics-for-unitary-authorities-in-wales/stb-2011-census-key-statistics-for-wales.html#tab---Proficiency-in-Welsh |access-date=12 December 2012 |archive-date=5 June 2013 |archive-url=https://web.archive.org/web/20130605111007/http://ons.gov.uk/ons/rel/census/2011-census/key-statistics-for-unitary-authorities-in-wales/stb-2011-census-key-statistics-for-wales.html#tab---Proficiency-in-Welsh |url-status=dead }}</ref><ref name="auto"/> The 2011 census also showed a "big drop" in the number of speakers in the Welsh-speaking heartlands, with the number dropping to under 50 per cent in [[Ceredigion]] and [[Carmarthenshire]] for the first time.<ref>{{cite news |title=2011 Census: Number of Welsh speakers falling |url=https://www.bbc.co.uk/news/uk-wales-20677528 |access-date=12 December 2012 |work=[[BBC News Online]] |date=11 December 2012 }}</ref> However, according to the Welsh Language Use Survey in 2019–20, 22 per cent of people aged three and over were able to speak Welsh.<ref>{{Cite web |title=Welsh language use in Wales (initial findings): July 2019 to March 2020 |url=https://gov.wales/welsh-language-use-wales-initial-findings-july-2019-march-2020-html |access-date=2021-09-16 |publisher=[[Welsh Government]] |language=en }}</ref>
+
+The [[Annual Population Survey]] (APS) by the [[Office for National Statistics]] (ONS) estimated for the year ending March 2026, approximately 843,700, or 27.3 per cent of the population of Wales aged 3 and over, were able to speak the language.<ref name=":2" /> Children and young people aged three to 15 years old were more likely to report that they could speak Welsh than any other age group (47.7 per cent, 231,600). Around 971,600 people, or 31.5 per cent, reported that they could understand spoken Welsh. 25.0 per cent (772,300) could read and  22.4 per cent (692,600) could write in Welsh. The APS estimates of Welsh language ability are historically higher than those produced by the census.<ref>{{Cite web |title=Annual Population Survey: Welsh language |url=https://statswales.gov.wales/Catalogue/Welsh-Language/Annual-Population-Survey-Welsh-Language |access-date=2021-10-07 |publisher=[[Welsh Government]]}}</ref>
+
+In terms of usage, ONS also reported that 14.5 per cent (446,800) of people aged three or older in Wales reported that they spoke Welsh daily in March 2026, with 4.9 per cent (151,900) speaking it weekly and 6.4 per cent (198,600) less often. Approximately 1.5 per cent (46,000) reported that they never spoke Welsh despite being able to speak the language, with the remaining 72.7 per cent of the population not being able to speak it.<ref>{{Cite web |title=Annual Population Survey - Frequency of speaking Welsh by age, sex and year {{!}} StatsWales |url=https://stats.gov.wales/en-GB/dfb77676-74c1-4d4c-9255-5863519a1515/pivot/wsv37gy1b2sr?page_size=25#dataset-nav |access-date=2026-09-01 |website=stats.gov.wales}}</ref>
+
+The National Survey for Wales, carried out by the Welsh Government, has also generally reported a higher proportion of Welsh speakers than the census. In 2022–2023, the survey found that 34 per cent of people aged 16 or over could speak Welsh (of whom 18 per cent said they could speak Welsh, and a further 16 per cent reported having some Welsh-speaking ability. This was broadly unchanged from the 2021–2022 results.<ref>{{Cite web |date=2025-08-14 |title=Welsh language speaking ability and use (National Survey for Wales): April 2022 to March 2023 [HTML] {{!}} GOV.WALES |url=https://www.gov.wales/welsh-language-speaking-ability-and-use-national-survey-wales-april-2022-march-2023-html |access-date=2025-08-27 |website=www.gov.wales |language=en}}</ref>
+
+Historically, large numbers of Welsh people spoke only Welsh.<ref>Janet Davies, [[University of Wales Press]], [[Bath, Somerset|Bath]] (1993). ''The Welsh Language'', page 34</ref> Over the course of the 20th century this monolingual population all but disappeared, but a small percentage remained at the time of the 1981 census.<ref>{{Citation |last=Williams |first=Colin H. |editor-last=Coupland |editor-first=Nikolas |title=English in Wales: Diversity, Conflict, and Change |place=[[Clevedon]], Avon |publisher=Multilingual Matters |year=1990 |contribution=The Anglicisation of Wales |contribution-url=https://books.google.com/books?id=tPwYt3gVbu4C&q=monoglot+welsh+speakers&pg=PA38 |pages=38–41 |url=https://books.google.com/books?id=tPwYt3gVbu4C&q=monoglot%20welsh%20speakers&pg=PP1 |isbn=9781853590313 }}
+</ref> Most Welsh-speaking people in Wales also speak English. However, many{{Quantify|date=April 2022}} Welsh-speaking people are more comfortable expressing themselves in Welsh than in English. A speaker's choice of language can vary according to the subject domain and the social context, even within a single [[discourse]] (known in linguistics as [[code-switching]]).<ref>{{cite journal |last1=Green |first1=David W. |last2=Wei |first2=Li |title=Code-switching and language control |journal=Bilingualism: Language and Cognition |date=November 2016 |volume=19 |issue=5 |pages=883–884 |doi=10.1017/S1366728916000018 |hdl=10072/406309 |hdl-access=free }}</ref>
+
+Welsh speakers are largely concentrated in the north and west of Wales, principally {{lang|cy|[[Gwynedd]]|italic=no}}, [[Conwy (county borough)|Conwy County Borough]], [[Denbighshire]], [[Anglesey]], [[Carmarthenshire]], north [[Pembrokeshire]], {{lang|cy|[[Ceredigion]]|italic=no}}, parts of [[Glamorgan]], and north-west and extreme south-west {{lang|cy|[[Powys]]|italic=no}}. However, first-language and other fluent speakers can be found throughout Wales.<ref>{{cite web |title=Welsh speakers by local authority, gender and detailed age groups, 2011 census |url=https://statswales.gov.wales/Catalogue/Welsh-Language/welshspeakers-by-localauthority-gender-detailedagegroups-2011census |archive-url=https://web.archive.org/web/20160616234714/https://statswales.gov.wales/Catalogue/Welsh-Language/WelshSpeakers-by-LocalAuthority-Gender-DetailedAgeGroups-2011Census |archive-date=16 June 2016 |publisher=[[Welsh Government]] |access-date=25 February 2019 }}</ref>
+
+=== Outside Wales ===
+==== The rest of the UK ====
+Welsh-speaking communities persisted well into the modern period across the border in England. [[Archenfield]] was still Welsh enough in the time of [[Elizabeth I of England|Elizabeth I]] for the [[Bishop of Hereford]] to be made responsible, together with the four Welsh bishops, for the translation of the Bible and the [[Book of Common Prayer]] into Welsh. Welsh was still commonly spoken there in the first half of the 19th century, and churchwardens' notices were put up in both Welsh and English until about 1860.<ref>Transactions Woolhope Naturalists' Field Club, 1887, page 173</ref> [[Alexander John Ellis]] in the 1880s identified a small part of [[Shropshire]] as still then speaking Welsh, with the "Celtic Border" passing from [[Llanymynech]] through [[Oswestry]] to [[Chirk]].<ref>{{cite journal |last1=Ellis |first1=A.J. |editor1-last=Powell |editor1-first=Thomas |title=On the delimitation of the English and Welsh languages |journal=Y Cymmrodor |date=1882 |volume=5 |pages=191, 196 |url=https://archive.org/details/ycymmrodor00socigoog/page/n210 |language=en}} (reprinted as {{cite journal |title=On the delimitation of the English and Welsh language. |journal=Transactions of the Philological Society |date=November 1884 |volume=19 |issue=1 |pages=5–40 |doi=10.1111/j.1467-968X.1884.tb00078.x|last1=Ellis |first1=Alexander J. |hdl=2027/hvd.hx57sj |hdl-access=free }}); {{cite book |series=Early English Pronunciation |volume=V. |title=The existing phonology of English dialects compared with that of West Saxon speech |page=14 [Text] 1446 [Series] |first=A.J. |last=Ellis |publisher=Trübner & Co. |chapter=Introduction; The Celtic Border; 4  |location=London |date=1889 |chapter-url=https://archive.org/details/onearlyenglishpr00elliuoft/page/14/  }}</ref>
+
+The number of Welsh-speaking people in the rest of Britain has not yet been counted for statistical purposes. In 1993, the Welsh-language television channel [[S4C]] published the results of a survey into the numbers of people who spoke or understood Welsh, which estimated that there were around 133,000 Welsh-speaking people living in England, about 50,000 of them in the Greater London area.<ref>{{cite web|url=https://www.ibiblio.org/pub/archives/welsh-l/welsh-l/1993/Mar/More-Welsh-Speakers|title=Nigel Callaghan (1993). ''More Welsh Speakers than Previously Believed'' (on-line). Accessed 21 March 2010|access-date=23 May 2010}}</ref> The [[Welsh Language Board]], on the basis of an analysis of the [[Office for National Statistics]] Longitudinal Study, estimated there were 110,000 Welsh-speaking people in England, and another thousand in Scotland and Northern Ireland.<ref>{{cite web |url=http://www.byig-wlb.org.uk/English/publications/Publications/4844.pdf |title=Estimation of the number of Welsh speakers in England |access-date=27 February 2014 }}{{dead link|date=January 2025|bot=medic}}{{cbignore|bot=medic}}</ref>
+
+In the [[United Kingdom Census 2011|2011 census]], 8,248 people in England gave Welsh in answer to the question "What is your main language?".<ref name="nomisweb1">{{cite web |url=https://www.nomisweb.co.uk/census/2011/QS204EW/view/2092957699?rows=cell&cols=rural_urban |title=QS204EW – Main language (detailed) |publisher=Nomis Official Labour Market Statistics }}</ref> The Office for National Statistics subsequently published a census glossary of terms to support the release of results from the census, including their definition of "main language" as referring to "first or preferred language" (though that wording was not in the census questionnaire itself).<ref>{{cite web|url=http://www.ons.gov.uk/ons/guide-method/census/2011/census-data/2011-census-data/2011-first-release/2011-census-definitions/2011-census-glossary.pdf|title=2011 Census Glossary of Terms|website=Office For National Statistics|access-date=10 July 2016|archive-date=28 September 2014|archive-url=https://web.archive.org/web/20140928104300/http://www.ons.gov.uk/ons/guide-method/census/2011/census-data/2011-census-data/2011-first-release/2011-census-definitions/2011-census-glossary.pdf|url-status=dead}}</ref><ref>{{cite web|url=https://www.ons.gov.uk/ons/guide-method/census/2011/the-2011-census/2011-census-questionnaire-content/2011-census-questionnaire-for-england.pdf|title=2011 Census Questionnaire for England|publisher=Office for National Statistics|access-date=6 June 2017|archive-date=24 September 2015|archive-url=https://web.archive.org/web/20150924075230/http://www.ons.gov.uk/ons/guide-method/census/2011/the-2011-census/2011-census-questionnaire-content/2011-census-questionnaire-for-england.pdf|url-status=dead}}</ref> The wards in England with the most people giving Welsh as their main language were the [[Liverpool]] wards of [[Central (Liverpool ward)|Central]] and [[Greenbank (ward)|Greenbank]]; and Oswestry South in [[Shropshire]].<ref name="nomisweb1" /> The wards of Oswestry South (1.15%), Oswestry East (0.86%) and St Oswald (0.71%) had the highest percentage of residents giving Welsh as their main language.
+
+The census also revealed that 3,528 wards in England, or 46% of the total number, contained at least one resident whose main language is Welsh. In terms of the [[regions of England]], North West England (1,945), London (1,310) and the West Midlands (1,265) had the highest number of people noting Welsh as their main language.<ref>{{cite web |url=https://www.nomisweb.co.uk/census/2011/QS204EW/view/2092957699?rows=cell&cols=rural_urban |title=Data Viewer |publisher=Nomis – Official Labour Market Statistics |language=en |access-date=2017-11-23 }}</ref> According to the [[2021 United Kingdom census|2021 census]], 7,349 people in England recorded Welsh to be their "main language".<ref>{{Cite web |title=Main language (detailed) – Office for National Statistics |url=https://www.ons.gov.uk/datasets/TS024/editions/2021/versions/1/filter-outputs/f775aa96-c2ec-491d-a379-6cefff63e3c7#get-data |access-date=2022-12-01 |website=www.ons.gov.uk}}</ref>
+
+In the 2011 census, 1,189 people aged three and over in Scotland noted that Welsh was a language (other than English) that they used at home.<ref>{{cite web|title=Language used at home other than English (detailed) |url=http://scotlandcensus.gov.uk/documents/censusresults/release2a/rel2A_Language_detailed_Scotland.pdf|website=National Records of Scotland |access-date=6 May 2020 |archive-date=31 March 2019 |archive-url=https://web.archive.org/web/20190331131214/http://scotlandcensus.gov.uk/documents/censusresults/release2a/rel2A_Language_detailed_Scotland.pdf }}</ref>
+
+==== Argentina ====
+It is believed that there are as many as 5,000 speakers of [[Patagonian Welsh]].<ref name="Prior">{{Cite news |last=Prior |first=Neil |date=2015-05-30 |title=Patagonia 150 years on: A 'little Wales beyond Wales' |language=en-GB |work=BBC News |url=https://www.bbc.com/news/uk-wales-32919137 |access-date=2020-07-30}}</ref>
+
+==== Australia ====
+In response to the question 'Does the person speak a language other than English at home?' in the [[2016 Australian census]], 1,688 people noted that they spoke Welsh.<ref>{{cite web|url=http://stat.data.abs.gov.au/Index.aspx?DataSetCode=ABS_C16_T09_LGA|title=Census 2016, Language spoken at home by Sex (LGA)|website=stat.data.abs.gov.au|access-date=2020-04-28|archive-date=2 May 2020|archive-url=https://web.archive.org/web/20200502180657/http://stat.data.abs.gov.au/Index.aspx?DataSetCode=ABS_C16_T09_LGA|url-status=dead}}</ref>
+
+==== Canada ====
+In the [[2011 Canadian Census|2011 Canadian census]], 3,885 people reported Welsh as their [[first language]].<ref>{{cite web|title=Population of immigrant mother tongue families, showing main languages comprising each family, Canada, 2011|url=https://www12.statcan.gc.ca/census-recensement/2011/as-sa/98-314-x/2011003/tbl/tbl3_2-1-eng.cfm|website=Statistics Canada|access-date=30 July 2020}}</ref> According to the [[2021 Canadian census]], 1,130 people noted that Welsh was their mother tongue.<ref>{{Cite web |last=Government of Canada |date=2022-08-17 |title=Mother tongue by geography, 2021 Census |url=https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/dv-vd/language-langue/index-en.html |access-date=2022-09-03 |website=Statistics Canada }}</ref><ref>{{Cite web |date=2022-08-18 |title=Welsh the language of the home for 100 people in Canada, country's census reveals |url=https://nation.cymru/news/welsh-the-language-of-the-home-for-100-people-in-canada-countrys-census-reveals/ |access-date=2022-09-03 |website=Nation.Cymru |language=en-GB}}</ref>
+
+====New Zealand====
+The [[2018 New Zealand census]] noted that 1,083 people in New Zealand spoke Welsh.<ref>{{Cite web|title=2018 Census totals by topic – national highlights (updated) {{!}} Stats NZ|url=https://www.stats.govt.nz/information-releases/2018-census-totals-by-topic-national-highlights-updated|access-date=2021-12-29|website=www.stats.govt.nz}}</ref>
+
+==== United States ====
+The [[American Community Survey]] 2017–2021 noted that 2,003 people aged five years and over in the [[United States]] spoke Welsh at home.<ref name="lang-tables"/>
+
+==Dialects==
+There is a great deal of variation among Welsh dialects in terms of vocabulary, grammar, and pronunciation. For example: consider the question "Do you want a cuppa ''[a cup of tea]''?" In Gwynedd, this would typically be {{lang|cy|Dach chi isio paned?}} while in the south of Dyfed one would be more likely to hear {{lang|cy|Ych chi'n moyn dishgled?}} (though, in other parts of the South, one could hear {{lang|cy|Ych chi isie paned?}} as well, among other possibilities). An example of a pronunciation difference is the tendency in some southern dialects to palatalise the letter "s", e.g. {{langnf|cy|mis|month|links=no}}, usually pronounced {{IPA|cy|miːs|IPA}}, but as {{IPA|cy|miːʃ|IPA}} in parts of the south. This normally occurs next to a high front [[vowel]] like /i/, although exceptions include the pronunciation of {{lang|cy|sut}} "how" as {{IPA|cy|ʃʊd|IPA}} in the southern dialects (compared with northern {{IPA|cy|sɨt|IPA}}).
+
+===The four traditional dialects===
+Although modern understanding often splits Welsh into northern ({{lang|cy|Gogledd}}) and southern ({{lang|cy|De}}) 'dialects', the traditional classification of four Welsh dialects remains the most academically useful:
+
+*{{lang|cy|[[Gwyndodeg]]}}, the [[Kingdom of Gwynedd|Gwynedd]] dialect
+*{{lang|cy|[[Powyseg]]}}, the [[Kingdom of Powys|Powys]] dialect
+*{{lang|cy|[[Dyfedeg]]}}, the [[Kingdom of Dyfed|Dyfed]] dialect
+*{{lang|cy|[[Gwenhwyseg]]}}, the dialect of [[Kingdom of Gwent|Gwent]] and [[Kingdom of Morgannwg|Morgannwg]]<ref>{{cite web |url=https://kimkat.org/amryw/1_cymraeg/cymraeg_tafodieitheg_gymraeg_mynegai_1385e.htm |title=Index to Welsh dialects |publisher=Kimkat.org |date=20 April 2006 |access-date=27 February 2014}}</ref>
+
+A fifth dialect is [[Patagonian Welsh]], which has developed since the start of {{lang|cy|[[Y Wladfa]]|italics=no}} (the Welsh settlement in Argentina) in 1865; it includes Spanish [[loanword]]s and terms for local features, with a survey in the 1970s showing that the language in [[Patagonia]] is consistent throughout the lower [[Chubut Valley]] and in the Andes.
+
+Subdialects exist within the main dialects (such as the [[Cofi dialect]]). The 1989 book {{langnf|cy|Cymraeg, Cymrâg, Cymrêg: Cyflwyno'r Tafodieithoedd|''Welsh, Welsh, Welsh: Introducing the Dialects''|links=no}} was accompanied by a cassette containing recordings of 14 different speakers demonstrating aspects of different regional dialects. The book also refers to the earlier ''Linguistic Geography of Wales'' (1973) as describing six different regions which could be identified as having words specific to those regions.<ref>{{cite book |last1=Thomas |first1=Beth |last2=Thomas |first2=Peter Wynn | title=Cymraeg, Cymrâg, Cymrêg: Cyflwyno'r Tafodieithoedd |language=cy |trans-title=Welsh, Welch, Walsh: Introducing the Dialects |publisher=Gwasg Taf |year=1989 |isbn=978-0-948469-14-5}}</ref><ref>{{cite book |last=Thomas |first=Alan R |year=1973 |title=Linguistic Geography of Wales |publisher=[[University of Wales Press]] for Board of Celtic Studies |location=[[Cardiff]]}}</ref>
+
+In the 1970s, there was an attempt to standardise the Welsh language by teaching {{lang|cy|Cymraeg Byw}} ('Living Welsh') – a colloquially based generic form of Welsh,<ref>{{cite web |url=http://www.madog.org/dysgwyr/adolygiadau/adolygu1.html |title=Teach Yourself Welsh |publisher=Cymdeithas Madog |date=15 March 2000 |access-date=25 March 2014 |archive-date=8 January 2015 |archive-url=https://web.archive.org/web/20150108234828/http://www.madog.org/dysgwyr/adolygiadau/adolygu1.html |url-status=dead }}</ref> but the attempt largely failed because it did not encompass the regional differences used by Welsh speakers.
+
+== Registers ==
+Modern Welsh can be considered to fall broadly into two main [[register (sociolinguistics)|registers]]—Colloquial Welsh ({{lang|cy|Cymraeg llafar}}) and Literary Welsh ({{lang|cy|Cymraeg llenyddol}}). Colloquial Welsh is used in most speech and informal writing. Literary Welsh is closer to the form of Welsh standardised by the 1588 translation of the Bible (although the 2004 {{langnf|cy|Beibl Cymraeg Newydd|''New Welsh Bible''|links=no}} is significantly less formal than the traditional 1588 Bible), and is found in official documents and other formal registers, including much literature. As a standardised form, literary Welsh shows little if any of the dialectal variation found in colloquial Welsh. Some differences include:
+
+{| class="wikitable"
+|-
+! Literary Welsh
+! Colloquial Welsh
+|-
+| Can omit subject pronouns ([[Pro-drop language|pro-drop]])
+| Subject pronouns rarely omitted
+|-
+| More extensive use of simple verb forms
+| More extensive use of [[periphrastic]] verb forms
+|-
+| No distinction between simple present and future<br /> (e.g. {{lang|cy|af}} 'I go' and 'I shall go')
+| Simple form most often expresses only future<br /> (e.g. {{lang|cy|af i}} 'I'll go')
+|-
+| Subjunctive verb forms
+| Subjunctive in fixed idioms only
+|-
+| 3rd.pl ending and pronoun {{lang|cy|-nt hwy}}
+| 3rd.pl ending and pronoun {{lang|cy|-n nhw}}
+|}<ref name="101languages">{{cite web |url=https://www.101languages.net/welsh/registers.html |title=Registers |work=Welsh 101 |publisher=101 Languages.net |access-date=2022-01-14 }}</ref>
+
+Amongst the characteristics of the literary, as against the spoken language are a higher dependence on inflected verb forms, different usage of some of the tenses, less frequent use of pronouns (since the information is usually conveyed in the verb/preposition inflections) and a much lesser tendency to substitute English loanwords for native Welsh words. In addition, more archaic pronouns and forms of mutation may be observed in Literary Welsh.<ref name="101languages" />
+
+===Examples of sentences in literary and colloquial Welsh===
+{| class="wikitable"
+|-
+! English
+! Literary Welsh
+! Colloquial Welsh
+|-
+| I get up early every day.
+| {{lang|cy|Codaf yn gynnar bob dydd}}.
+| {{lang|cy|Dw i'n codi'n gynnar bob dydd}}. (North)<br />{{lang|cy|Rydw i'n codi'n gynnar bob dydd}}. (South)
+|-
+| I'll get up early tomorrow.
+| {{lang|cy|Codaf yn gynnar yfory.}}
+| {{lang|cy|Mi goda i'n gynnar fory.}} (North)<br />{{lang|cy|Wna i godi'n gynnar fory.}} (South)
+|-
+| He had not stood there long.
+| {{lang|cy|Ni safasai yno yn hir}}.<!-- About "safasai", see: --><ref>{{Cite book|title=234 Welsh Verbs: Standard Literary Forms | first=Kathryn |last=Klingebiel |year=1994 |place=[[Belmont, Massachusetts|Belmont]], Massachusetts |publisher=Ford & Bailie |isbn=978-0-926689-04-6 |page=223}}</ref>
+| {{lang|cy|Doedd o ddim wedi sefyll yno'n hir}}. (North)<br />{{lang|cy|Doedd e ddim wedi sefyll yna'n hir}}. (South)
+|-
+| They'll sleep only when there's a need.
+| {{lang|cy|Ni chysgant ond pan fo angen}}.
+| {{lang|cy|Fyddan nhw'n cysgu ddim ond pan fydd angen}}.
+|}<ref name="101languages" />
+
+The differences between colloquial and literary Welsh are so stark as to lack mutual intelligibility, with Welsh grammarian Gareth King asserting that they are almost two different languages in practice.<ref>{{cite book|last=King |first=Gareth |title=Modern Welsh: A Comprehensive Grammar |publisher=[[Routledge]] |location=[[Abingdon-on-Thames|Abingdon]] |edition=3rd |year=2016 |url=https://books.google.com/books?id=0DY-CgAAQBAJ&q=Modern%20Welsh%3A%20A%20Comprehensive%20Grammar&pg=PR3 |isbn=978-1-138-82629-8 |page=3}}</ref> A grammar of Literary Welsh can be found in ''A Grammar of Welsh'' by Stephen J. Williams.<ref>{{cite book |last=Williams |first=Stephen J |year=1980 |title=A Welsh Grammar |publisher=[[University of Wales Press]] |location=[[Cardiff]] |isbn=978-0-7083-0735-9}}</ref> A more complete grammar can be found in {{lang|cy|Gramadeg y Gymraeg}} by Peter Wynn Thomas.<ref>{{cite book |last=Thomas |first=Peter Wynn |year=1996 |title= Gramadeg y Gymraeg |publisher=[[University of Wales Press]] |location=[[Cardiff]] |isbn=978-0-7083-1345-9}}</ref> No comprehensive grammar of formal literary Welsh exists in English. However, {{lang|cy|Dweud Eich Dweud}} by Ceri Jones functions as an English-language guide to colloquial Welsh forms and register and dialect differences.<ref>{{cite book |last=Jones |first=Ceri |year=2013 |title=Dweud Eich Dweud: A Guide to Colloquial and Idiomatic Welsh |publisher=[[Gomer Press]] |location=[[Llandysul]] |isbn=978-1-84851-748-6}}</ref>
+
+== Status ==
+<!--This heading is linked to from [[Status of the Welsh language]], etc., so preserve it with {{Anchor}} if you change it.-->
+{{Anchor|Current status|reason=Old section name, may be linked. "Current" is pretty useless here.}}
+
+[[File:Estación Gaiman (2).JPG|thumbnail|Trilingual (Spanish, Welsh and English) sign in [[Gaiman, Chubut|Gaiman, Chubut Province]], Argentina]]
+[[File:Wales.cardiff.slow.jpg|thumb|[[Road signs in Wales|Bilingual road markings]] near [[Cardiff Airport]]]]
+
+=== Number of speakers ===
+{| class="wikitable"
+|+Taken from the [[Census in the United Kingdom|Census]]<ref>{{Cite web |title=National Archives |url=http://gov.wales/statistics-and-research/digest-welsh-historical-statistics/?lang=en |access-date=17 January 2025 |archive-date=2 April 2015 |archive-url=http://webarchive.nationalarchives.gov.uk/20150402173126/http://gov.wales/statistics-and-research/digest-welsh-historical-statistics/?lang=en |url-status=bot: unknown }}</ref><ref>{{Cite web |title=Nomis |url=https://www.nomisweb.co.uk/query/select/getdatasetbytheme.asp?opt=3&theme=&subgrp=}}</ref>
+!Year
+!Welsh population over the age of 3
+! colspan="2" |Welsh speakers
+|-
+|1891
+|1,685,614
+|910,289
+|54.0%
+|-
+|1901
+|{{increase}} 1,864,696
+|{{increase}} 930,224
+|{{decrease}} 49.9%
+|-
+|1911
+|{{increase}} 2,279,056
+|{{increase}} 967,266
+|{{decrease}} 42.4%
+|-
+|1921
+|{{increase}} 2,492,995
+|{{decrease}} 922,092
+|{{decrease}} 37.0%
+|-
+|1931
+|{{decrease}} 2,472,378
+|{{decrease}} 909,261
+|{{decrease}} 36.8%
+|-
+|1951
+|{{increase}} 2,472,429
+|{{decrease}} 714,689
+|{{decrease}} 28.9%
+|-
+|1961
+|{{increase}} 2,518,711
+|{{decrease}} 656,000
+|{{decrease}} 26.0%
+|-
+|1971
+|{{increase}} 2,609,610
+|{{decrease}} 542,420
+|{{decrease}} 20.8%
+|-
+|1981
+|{{increase}} 2,645,094
+|{{decrease}} 503,532
+|{{decrease}} 19.0%
+|-
+|1991
+|{{increase}} 2,685,947
+|{{increase}} 508,344
+|{{decrease}} 18.9%
+|-
+|2001
+|{{increase}} 2,805,701
+|{{increase}} 582,368
+|{{increase}} 20.8%
+|-
+|2011
+|{{increase}} 2,955,841
+|{{decrease}} 562,016
+|{{decrease}} 19.0%
+|-
+|2021
+|{{increase}} 3,018,169
+|{{decrease}} 538,298
+|{{decrease}} 17.8%
+|}
+
+=== Legal status ===
+Calls for the Welsh language to be granted official status grew with the establishment of the nationalist political party [[Plaid Cymru]] in 1925, the establishment of the [[Welsh Language Society]] in 1962 and the rise of [[Welsh nationalism]] in the later 20th century. Of the six living Celtic languages (including two revived), Welsh has the highest number of native speakers who use the language on a daily basis, and it is the Celtic language which is considered the least endangered by [[UNESCO]].
+
+The [[Welsh Language Act 1993]] and the [[Government of Wales Act 1998]] provide that the Welsh and English languages be treated equally in the public sector, as far as is reasonable and practicable. Each public body is required to prepare for approval a Welsh Language Scheme, which indicates its commitment to the equality of treatment principle. This is sent out in draft form for public consultation for a three-month period, whereupon comments on it may be incorporated into a final version. It requires the final approval of the now defunct [[Welsh Language Board]] ({{lang|cy|Bwrdd yr Iaith Gymraeg}}). Thereafter, the public body is charged with implementing and fulfilling its obligations under the Welsh Language Scheme. The list of other public bodies which have to prepare Schemes could be added to by initially the Secretary of State for Wales, from 1993 to 1997, by way of [[Statutory Instrument (UK)|statutory instrument]]. Subsequent to the forming of the [[National Assembly for Wales]] in 1997, the Government Minister responsible for the Welsh language can and has passed statutory instruments naming public bodies who have to prepare Schemes. Neither the 1993 Act nor secondary legislation made under it covers the private sector, although some organisations, notably banks and some railway companies, provide some of their information in Welsh.<ref>{{cite web |url=https://www.hsbc.co.uk/help/hsbc-in-wales/cymru/ |title=Croeso i HSBC yng Nghymru |trans-title=Welcome to HSBC in Wales |website=[[HSBC Bank (Europe)|HSBC Bank]] |language=cy |access-date=2018-09-10 |df=dmy-all}}</ref><ref>{{cite web |url=http://www.arrivatrainswales.co.uk/Homepage.aspx?langtype=1106 |title=Eich cysylltu â'r hyn sy'n bwysig |trans-title=Connecting you to what's important |language=cy |website=[[Arriva Trains Wales]] |access-date=2018-09-10 |df=dmy-all |archive-url=https://web.archive.org/web/20181111033246/https://www.arrivatrainswales.co.uk/Homepage.aspx?langtype=1106 |archive-date=11 November 2018 }}</ref>
+
+On 7 December 2010, the Welsh Assembly unanimously approved a set of measures to develop the use of the Welsh language within Wales.<ref>{{cite web |url=https://www.assembly.wales/NAfW%20Documents/welsh_language_measure_as_passed-e.pdf%20-%2014122010/welsh_language_measure_as_passed-e-English.pdf |title=Proposed Welsh Language (Wales) Measure &#91;As Passed&#93; |access-date=12 September 2016 |website=[[Welsh Assembly]] }}</ref><ref name="bbcnews2010">{{cite news |title='Historic' vote for language law |url=https://www.bbc.co.uk/news/uk-wales-11934239 |work=[[BBC News]] |date=2010-12-07 |access-date=2018-09-10 |df=dmy-all |quote=A new law to promote the Welsh language has been unanimously passed by the Welsh Assembly. The measure makes Welsh an official language in Wales, and obliges public bodies and some private companies to provide services in it. A language commissioner will be appointed to enforce the measure and to protect the Welsh speakers' rights. Ministers hailed the vote as a "historic step forward for the Welsh language."}}</ref> On 9 February 2011 this measure, the [[Welsh Language (Wales) Measure 2011]], was passed and received Royal Assent, thus making the Welsh language an officially recognised language within Wales. The measure:
+* confirmed the official status of the Welsh language
+* created a new system of placing duties on bodies to provide services through the medium of Welsh
+* created a Welsh Language Commissioner with strong enforcement powers to protect the rights of Welsh-speaking people to access services through the medium of Welsh
+* established a Welsh Language Tribunal
+* gave individuals and bodies the right to appeal decisions made in relation to the provision of services through the medium of Welsh
+* created a Welsh Language Partnership Council to advise Government on its strategy in relation to the Welsh language
+* allowed for an official investigation by the Welsh Language Commissioner of instances where there is an attempt to interfere with the freedom of Welsh-speaking people to use the language with one another<ref name="wales.gov.uk">{{cite web |url=http://wales.gov.uk/newsroom/welshlanguage/2011/110211welshlang/?lang=en |title=Welsh Measure received Royal Assent |archive-url=https://web.archive.org/web/20130922140142/http://wales.gov.uk/newsroom/welshlanguage/2011/110211welshlang/?lang=en |archive-date=22 September 2013 |publisher=[[Welsh Assembly Government]] |date=11 February 2011 }}</ref>
+
+The measure required public bodies and some private companies to provide services in Welsh. The Welsh government's Minister for Heritage at the time, [[Alun Ffred Jones]], said, "The Welsh language is a source of great pride for the people of Wales, whether they speak it or not, and I am delighted that this measure has now become law. I am very proud to have steered legislation through the Assembly which confirms the official status of the Welsh language; which creates a strong advocate for Welsh speakers and will improve the quality and quantity of services available through the medium of Welsh. I believe that everyone who wants to access services in the Welsh language should be able to do so, and that is what this government has worked towards. This legislation is an important and historic step forward for the language, its speakers and for the nation."<ref name="wales.gov.uk" /> The measure was not welcomed warmly by all supporters: Bethan Williams, chairman of the Welsh Language Society, gave a mixed response to the move, saying,<ref>{{cite news |url=https://www.walesonline.co.uk/news/wales-news/royal-assent-official-status-welsh-1852353| title=Royal Assent for official status of Welsh language |website=[[Wales Online]] |location=[[Cardiff]] |publisher=[[Trinity Mirror]] |date=2011-02-12 |access-date=2018-09-10 |df=dmy-all |quote=Powers confirming the official status of Welsh received Royal Assent yesterday. The Welsh Language Measure will create the post of language commissioner and ensure services can be provided in Welsh.}}</ref><blockquote>Through this measure we have won official status for the language and that has been warmly welcomed. But there was a core principle missing in the law passed by the Assembly before Christmas. It doesn't give language rights to the people of Wales in every aspect of their lives. Despite that, an amendment to that effect was supported by 18 Assembly Members from three different parties, and that was a significant step forward.</blockquote>On 5 October 2011, [[Meri Huws]], Chair of the [[Welsh Language Board]], was appointed the new Welsh Language Commissioner.<ref>{{cite news |url=https://www.bbc.co.uk/news/uk-wales-politics-15186747 |work=[[BBC News]]  |title=Language board chief Meri Huws is Welsh commissioner |date=2011-10-05 |access-date=2018-09-10 |df=dmy-all |quote=The chairwoman of the Welsh Language Board has been appointed the first Welsh language commissioner. Meri Huws will act as a champion for the Welsh language, says First Minister Carwyn Jones.}}</ref> She released a statement that she was "delighted" to have been appointed to the "hugely important role", adding, "I look forward to working with the [[Welsh Government]] and organisations in Wales in developing the new system of standards. I will look to build on the good work that has been done by the Welsh Language Board and others to strengthen the Welsh language and ensure that it continues to thrive." First Minister [[Carwyn Jones]] said that Huws would act as a champion for the Welsh language, though some had concerns over her appointment: [[Plaid Cymru]] spokeswoman Bethan Jenkins said, "I have concerns about the transition from Meri Huws's role from the Welsh Language Board to the language commissioner, and I will be asking the Welsh government how this will be successfully managed. We must be sure that there is no conflict of interest, and that the Welsh Language Commissioner can demonstrate how she will offer the required fresh approach to this new role." Huws started her role as the Welsh Language Commissioner on 1 April 2012.
+
+[[Local government in Wales|Local councils]] and the [[Senedd]] use Welsh, issuing Welsh versions of their literature, to varying degrees.
+
+[[File:A5-llwybrhanesyddol.JPG|thumb|left|A bilingual road sign on the [[A5 road (Great Britain)|A5]] near [[Menai Bridge]]]]
+Road signs in Wales are in Welsh and English.<ref>{{cite web |url=https://www.bbc.co.uk/wales/livinginwales/sites/howdoisay/roadsigns/ |title=Living in Wales – Pronouncing road signs |publisher=[[BBC Wales]] |access-date=2020-02-11 }}</ref> Prior to 2016, the choice of which language to display first was the responsibility of the local council. Since then, as part of the Welsh Language (Wales) Measure 2011, all new signs have Welsh displayed first.<ref>{{cite news |url=https://roadsafetygb.org.uk/news/n-a-4985/ |title='Welsh first' for new traffic signs |work=Road Safety GB |date=31 March 2016 |access-date=10 February 2022 }}</ref> There have been incidents of one of the languages being vandalised, which may be considered a [[hate crime]].<ref>{{cite news |url=https://www.walesonline.co.uk/news/wales-news/canton-welsh-sign-graffiti-news-21911145 |title='Idiots' who vandalised Welsh language street sign in Cardiff 'won't stop policy of bilingual names' |work=[[Wales Online]] |date=20 October 2021 |access-date=10 February 2022 }}</ref><ref>{{cite news |url=https://www.leaderlive.co.uk/news/18883481.english-version-north-wales-place-names-road-signs-daubed-graffiti/ |title=English version of North Wales place names on road signs daubed with graffiti |work=The Leader |date=19 November 2020 |access-date=10 February 2022 }}</ref>
+
+Since 2000, the teaching of Welsh has been compulsory in all schools in Wales up to age 16; this has had an effect in stabilising and reversing the decline in the language.<ref>{{cite web |title=Current school curriculum |url=https://beta.gov.wales/current-school-curriculum |website=Welsh Government |access-date=25 February 2019 |archive-url=https://web.archive.org/web/20190225161900/https://beta.gov.wales/current-school-curriculum |archive-date=25 February 2019 }}</ref>
+
+Text on UK coins tends to be in English and Latin.  However, a Welsh-language edge inscription was used on pound coins dated 1985, 1990 and 1995, which circulated in all parts of the UK prior to their 2017 withdrawal. The wording is {{langnf|cy|Pleidiol wyf i'm gwlad|True am I to my country|links=no}}, and derives from the national anthem of Wales, "{{lang|cy|[[Hen Wlad Fy Nhadau]]}}".  Banknotes used in Wales are in English only, as these are issued by the [[Bank of England]] for both England and Wales.
+
+Some shops employ bilingual signage. Welsh sometimes appears on product packaging or instructions.
+
+The UK government has ratified the [[European Charter for Regional or Minority Languages]] in respect of Welsh.<ref>{{cite web |url=http://conventions.coe.int/treaty/Commun/ListeDeclarations.asp?NT=148&CM=1&DF=&CL=ENG&VL=1 |title=List of declarations made with respect to treaty No. 148 |publisher=Conventions.coe.int |access-date=23 May 2010 |archive-date=18 September 2015 |archive-url=https://web.archive.org/web/20150918164438/http://www.conventions.coe.int/Treaty/Commun/ListeDeclarations.asp?NT=148&CM=1&DF=&CL=ENG&VL=1 |url-status=dead }}</ref>
+
+[[File:Welsh sign in Wrexham 1.png|thumb|Bilingual road sign near [[Wrexham Central railway station|Wrexham Central station]]]]
+The language has greatly increased its prominence since the creation of the television channel [[S4C]] in November 1982, which until [[digital television transition|digital switchover]] in 2010 broadcast 70 per cent of Channel 4's programming along with a majority of Welsh language shows<ref>[https://www.s4c.co.uk/abouts4c/corporate/e_index.shtml Welsh language provision] at S4C Analogue</ref> during peak viewing hours. The all-Welsh-language digital station {{lang|cy|S4C Digidol|italic=no}} is available throughout Europe on satellite and online throughout the UK. Since the digital switchover was completed in South Wales on 31 March 2010, {{lang|cy|S4C Digidol|italic=no}} became the main broadcasting channel and fully in Welsh. The main evening television news provided by the [[BBC]] in Welsh is available for download.<ref>[https://www.bbc.co.uk/cymru/live/newyddion.ram BBC website] (Real Media).</ref> There is also a Welsh-language radio station, {{lang|cy|[[BBC Radio Cymru]]|italic=no}}, which was launched in 1977.<ref>{{cite book|last=Conboy|first=Martin|title=Journalism in Britain: A Historical Introduction |url=https://books.google.com/books?id=efTqgnFP9hAC&q=BBC+Radio+Cymru+1977&pg=PA188|publisher=[[SAGE Publications]] |page=188|year=2010|isbn=978-1-4462-0972-1}}</ref>
+
+The only Welsh-language national newspaper {{lang|cy|[[Y Cymro]]}} (''The Welshman'') was published weekly until 2017, and monthly thereafter, following a change in ownership. There is no daily newspaper in Welsh. A daily newspaper called {{lang|cy|[[Y Byd]]}} (''The World'') was scheduled to be launched on 3 March 2008, but was scrapped, owing to insufficient sales of subscriptions and the [[Welsh Government]] offering only one third of the £600,000 public funding it needed.<ref>{{Cite news |url=http://news.bbc.co.uk/1/hi/wales/mid/7245774.stm |title=Daily Welsh newspaper abandoned |date=15 February 2008 |work=BBC News |language=en-GB}}</ref> There is a Welsh-language online news service which publishes news stories in Welsh called {{lang|cy|[[Golwg360]]}} ('360 [degree] view').
+
+As of March 2021, there were 58 local Welsh language community newspapers, known as {{lang|cy|Papurau Bro}}, in circulation.<ref>{{Cite web |last=Rowe |first=Katrina |date=2021-03-23 |title=A website for all local Welsh language papers — The Papurau Bro |url=https://www.westwaleschronicle.co.uk/blog/2021/03/23/a-website-for-all-local-welsh-language-papers-the-papurau-bro/ |work=West Wales Chronicle |access-date=2021-10-18 |language=en-GB }}</ref>
+
+===In education===
+{{Main|Welsh medium education}}
+
+[[File:Welshclass.jpg|thumb|Welsh language as the medium of instruction]]
+
+The decade around 1840 was a period of great social upheaval in Wales, manifested in the [[Chartism|Chartist]] movement. In 1839, 20,000 people marched on [[Newport, Wales|Newport]], resulting in a riot when 20 people were killed by soldiers defending the Westgate Hotel, and the [[Rebecca Riots]] where [[Toll road|tollbooth]]s on [[Toll road|turnpikes]] were systematically destroyed.
+
+This unrest brought the state of education in Wales to the attention of the British government since social reformers of the time considered education as a means of dealing with social ills. ''[[The Times]]'' newspaper was prominent among those who considered that the lack of education of the Welsh people was the root cause of most of the problems.
+
+In July 1846, three commissioners, [[Ralph Lingen, 1st Baron Lingen|R.R.W. Lingen]], Jellynger C. Symons and H.R. Vaughan Johnson, were appointed to inquire into the state of education in Wales; the Commissioners were all [[Anglicanism|Anglicans]] and thus presumed unsympathetic to the [[Nonconformist (Protestantism)|nonconformist]] majority in Wales. The Commissioners presented [[Reports of the Commissioners of Inquiry into the State of Education in Wales|their report]] to the Government on 1 July 1847 in three large blue-bound volumes. This report quickly became known in Wales as the {{lang|cy|Brad y Llyfrau Gleision}} (''Treason of the Blue Books'') since,<ref>{{cite news |title='Treacherous' Blue Books online |url=http://news.bbc.co.uk/1/hi/wales/mid/4555702.stm |work=[[BBC News]]  |date=2005-12-23 |access-date=2017-01-21 |df=dmy-all |quote=A 19th Century report that became controversial for condemning the Welsh language has been published online by the National Library of Wales. The government report about Welsh education in 1847 was dubbed the Treachery of the Blue Books ({{lang|cy|Brad y Llyfrau Gleision}}).}}</ref> apart from documenting the state of education in Wales, the Commissioners were also free with their comments disparaging the language, [[nonconformity in Wales|nonconformity]], and the morals of the Welsh people in general. An immediate effect of the report was that ordinary Welsh people began to believe that the only way to get on in the world was through the medium of English, and an inferiority complex developed about the Welsh language whose effects have not yet been completely eradicated. The historian Professor [[Kenneth O. Morgan]] referred to the significance of the report and its consequences as "the [[Massacre of Glencoe|Glencoe]] and the [[Jallianwala Bagh massacre|Amritsar]] of Welsh history".<ref>{{cite book |last=Davies |first=John |title=A History of Wales |url=https://books.google.com/books?id=19ThaoZRcqEC|year=1993 |publisher=[[Penguin Books]] |location=[[London]] |isbn=978-0-14-014581-6 |oclc= 925144917}}</ref>
+
+In the later 19th century, the teaching of English in Welsh schools was generally supported by the Welsh public and parents who saw it as the language of economic advancement.<ref name="jones_social_15">{{cite book |last=Jones |first=Gareth Elwyn |url=https://books.google.com/books?id=qS54AAAAIAAJ&q=The%20Welsh%20Language%20and%20it%27s%20Social%20Domains |title=The Welsh Language and Its Social Domains |publisher=University of Wales Press |year=2000 |isbn=978-0708316047 |editor-last=Jenkins |editor-first=Geraint H. |editor-link=Geraint H. Jenkins |pages=431–457 |chapter=15 The Welsh Language and the Blue Books of 1847}}</ref>{{rp|453,457}} Virtually all teaching in the schools of Wales was in English, even in areas where the pupils barely understood English. Some schools used the [[Welsh Not]], a piece of wood, often bearing the letters "WN", which was hung around the neck of any pupil caught speaking Welsh. The pupil could pass it on to any schoolmate heard speaking Welsh, with the pupil wearing it at the end of the day being punished. One of the most famous Welsh-born pioneers of higher education in Wales was [[Hugh Owen (educator)|Sir Hugh Owen]]. He made great progress in the cause of education, and more especially the [[Aberystwyth University|University College of Wales]] at [[Aberystwyth]], of which he was chief founder. He has been credited{{By whom|date=November 2009}} with the [[Welsh Intermediate Education Act 1889]] (52 & 53 Vict c 40), following which several new Welsh schools were built. The first was completed in 1894 and named {{lang|cy|[[Ysgol Syr Hugh Owen]]}}.
+
+Towards the beginning of the 20th century this policy slowly began to change, partly owing to the efforts of [[Owen Morgan Edwards|O.M. Edwards]] when he became chief inspector of schools for Wales in 1907.
+[[File:Bilingualism boosts grades at Treorchy Comprehensive.webm|thumb|A Welsh Government video of an English medium school in [[Wales]], where introducing the Welsh language has boosted the exam results]]
+
+The {{lang|cy|[[Ysgol Gymraeg Aberystwyth]]|italics=no}} ('Aberystwyth Welsh School') was founded in 1939 by [[Ifan ab Owen Edwards|Sir Ifan ap Owen Edwards]], the son of O.M. Edwards, as the first Welsh Primary School.<ref>{{Cite news |url=https://www.bbc.co.uk/news/uk-wales-mid-wales-29360528 |title=Ysgol Gymraeg Aberystwyth celebrates 75th anniversary |date=2014-09-25 |work=[[BBC News]]  |access-date=2016-10-03 |df=dmy-all |quote=Former pupils and teachers of Wales' first Welsh-medium school will gather to celebrate its 75th anniversary. {{lang|cy|Ysgol Gymraeg Aberystwyth|italics=no}} was opened in September 1939 by Sir Ifan ab Owen Edwards, who feared children's spoken Welsh was being tarnished by the English language.}}</ref> The headteacher was [[Norah Isaac]]. {{lang|cy|Ysgol Gymraeg Aberystwyth|italics=no}} is still a very successful school, and now there are Welsh-language primary schools all over the country. {{lang|cy|[[Ysgol Glan Clwyd]]|italics=no}} was established in [[Rhyl]] in 1956 as the first Welsh-medium secondary school.<ref>{{cite web |url=http://www.ysgolglanclwyd.co.uk/welcome |title=Welcome |website=[[Ysgol Glan Clwyd]] |access-date=2016-10-03 |archive-url=https://web.archive.org/web/20161005105133/http://www.ysgolglanclwyd.co.uk/welcome |archive-date=2016-10-05|df=dmy-all |quote=The school was established in 1956 and was the first Welsh-medium secondary school in Wales. It was originally located in Rhyl.}}</ref>
+
+[[File:Defnyddiwch eich Cymraeg - Use your Welsh - geograph.org.uk - 488577.jpg|thumb|Sign promoting the learning of Welsh]]
+Welsh is now widely used in education, with 101,345 children and young people in Wales receiving their education in Welsh medium schools in 2014/15, 65,460 in primary and 35,885 in secondary.<ref>{{cite web |url=https://statswales.gov.wales/Catalogue/Education-and-Skills/Schools-and-Teachers/Schools-Census/Pupil-Level-Annual-School-Census/Schools/schools-by-localauthorityregion-welshmediumtype |title=Schools by local authority, region and Welsh medium type |publisher=Stats Wales |archive-url=https://web.archive.org/web/20160923050052/https://statswales.gov.wales/Catalogue/Education-and-Skills/Schools-and-Teachers/Schools-Census/Pupil-Level-Annual-School-Census/Schools/schools-by-localauthorityregion-welshmediumtype |archive-date=23 September 2016 }}</ref> 26 per cent of all schools in Wales are defined as Welsh medium schools, with a further 7.3 per cent offering some Welsh-medium instruction to pupils.<ref>{{cite web |url=http://www.comisiynyddygymraeg.cymru/English/Commissioner/Pages/5-year%20Report.aspx |title=5-year Report |publisher=[[Welsh Language Commissioner]] |archive-url=https://web.archive.org/web/20160923092846/http://www.comisiynyddygymraeg.cymru/English/Commissioner/Pages/5-year%20Report.aspx |archive-date=23 September 2016 }}</ref> 22 per cent of pupils are in schools in which Welsh is the primary language of instruction. Under the [[Curriculum for Wales (2022 to present)|National Curriculum]], it is compulsory that all students study Welsh up to the age of 16 as either a first or a second language.<ref>{{cite web |url=http://www.adviceguide.org.uk/index/your_world/communications_index_ew/the_welsh_language.htm |archive-url=https://archive.today/20120718080132/http://www.adviceguide.org.uk/index/your_world/communications_index_ew/the_welsh_language.htm |archive-date=2012-07-18 |title=The Welsh language |website=[[Citizens Advice]] |access-date=2014-02-27 |df=dmy-all |quote=Welsh is a subject in the national curriculum and is compulsory at all state schools in Wales, for pupils up to the age of 16. In English-medium schools, it is taught as a second language, and in Welsh-medium schools, as the first language.}}</ref> Some students choose to continue with their studies through the medium of Welsh for the completion of their A-levels as well as during their college years. All [[local education authority|local education authorities]] in Wales have schools providing bilingual or Welsh-[[medium of instruction|medium]] education.<ref>{{cite web |url=http://www.bwrdd-yr-iaith.org.uk/cynnwys.php?langID=2&pID=217|title=Welsh medium or bilingual provision |archive-url=https://web.archive.org/web/20071004225315/http://www.bwrdd-yr-iaith.org.uk/cynnwys.php?pID=217&langID=2 |archive-date=4 October 2007 |publisher=[[Welsh Language Board]] }}</ref> The remainder study Welsh as a second language in English-medium schools. Specialist teachers of Welsh called {{lang|cy|Athrawon Bro}} support the teaching of Welsh in the National Curriculum. Welsh is also taught in adult education classes. The Welsh Government has recently set up six centres of excellence in the teaching of Welsh for Adults, with centres in North Wales,<ref>learncymraeg.org</ref> Mid Wales, South West, Glamorgan, Gwent, and Cardiff.
+
+The ability to speak Welsh or to have Welsh as a qualification is desirable for certain career choices in Wales, such as teaching or customer service.<ref>More information can be found at [http://www.welshforadults.org Welsh for Adults.org]{{dead link|date=December 2017 |bot=InternetArchiveBot |fix-attempted=yes }}</ref> All universities in Wales teach courses in the language, with many undergraduate and post-graduate degree programmes offered in the medium of Welsh, ranging from law, modern languages, social sciences, and also other sciences such as biological sciences. Aberystwyth, [[Cardiff]], Bangor, and Swansea have all had chairs in Welsh since their virtual establishment, and all their schools of Welsh are successful centres for the study of the Welsh language and its literature, offering a [[Bachelor of Arts|BA]] in Welsh as well as post-graduate courses. At all Welsh universities and the [[Open University]], students have the right to submit assessed work and sit exams in Welsh even if the course was taught in English (usually the only exception is where the course requires demonstrating proficiency in another language). Following a commitment made in the [[One Wales]] coalition government between Labour and Plaid Cymru, the {{lang|cy|[[Coleg Cymraeg Cenedlaethol]]|italic=no}} (Welsh Language National College) was established. The purpose of the federal structured college, spread out between all the universities of Wales, is to provide and also advance Welsh medium courses and Welsh medium scholarship and research in Welsh universities. There is also a Welsh-medium academic journal called {{lang|cy|Gwerddon}} ('Oasis'),<ref>{{cite web |url=https://gwerddon.cymru |title=Gwerddon.Cymru |access-date=21 August 2024}}</ref> which is a platform for academic research in Welsh and is published quarterly. There have been calls for more teaching of Welsh in English-medium schools.
+
+===Use in professional engineering ===
+{{unreferenced section|date=January 2026}}
+When conducting applicants' professional reviews for [[Chartered Engineer]] status, the [[Institution of Engineering and Technology]] accepts applications in Welsh and will conduct face-to-face interviews in Welsh if requested to do so. One of the requirements for Chartered Engineer is also to be able to communicate effectively in English.
+
+===In information technology===
+{{further|List of Celtic-language media}}
+
+Like many of the world's languages, the Welsh language has seen an increased use and presence on the internet, ranging from formal lists of terminology in a variety of fields<ref>The [http://www.e-gymraeg.org/bwrdd-yr-iaith/termau/default.aspx?lang=en Welsh National Database of Standardised Terminology] was [http://www.bwrdd-yr-iaith.org.uk/cynnwys.php?pID=241&langID=2&nID=640 released in March 2006] {{webarchive|url=https://web.archive.org/web/20060925054244/http://www.bwrdd-yr-iaith.org.uk/cynnwys.php?pID=241&langID=2&nID=640 |date=25 September 2006 }}</ref> to Welsh language interfaces for [[Microsoft Windows XP]] and up, [[Microsoft Office]], [[LibreOffice]], [[OpenOffice.org]], [[Mozilla Firefox]] and a variety of [[Linux distribution]]s, and on-line services to [[blog]]s kept in Welsh.<ref>Selections of Welsh-language blogs are listed on the sites  [https://hedyn.net/wici/Categori:Blog_Cymraeg Hedyn] and [http://blogiadur.com Blogiadur] {{Webarchive|url=https://web.archive.org/web/20090107031440/http://blogiadur.com/ |date=7 January 2009 }}</ref> Wikipedia has had a Welsh version since July 2003 and [[Facebook]] since 2009.
+
+===Mobile phone technology===
+In 2006 the [[Welsh Language Board]] launched a free software pack which enabled the use of [[SMS]] predictive text in Welsh.<ref>{{cite web|url=http://www.cellular-news.com/story/18781.php |title=Cellular News webpage |publisher=Cellular-news.com |date=11 August 2006 |access-date=27 February 2014}}</ref> At the [[National Eisteddfod of Wales]] 2009, a further announcement was made by the Welsh Language Board that the mobile phone company [[Samsung]] was to work with the network provider [[Orange (UK)|Orange]] to provide the first mobile phone in the Welsh language,<ref>[https://web.archive.org/web/20120309115121/http://www.byig-wlb.org.uk/cymraeg/newyddion/Pages/Lansio%27rff%C3%B4nsymudolCymraegcyntafybyd.aspx World's first Welsh language mobile phone launched] (publish date: 25 August 2009)</ref> with the interface and the T9 dictionary on the Samsung S5600 available in the Welsh language. The model, available with the Welsh language interface, has been available since 1 September 2009, with plans to introduce it on other networks.<ref>{{cite news |url=http://news.bbc.co.uk/1/hi/wales/mid/8183247.stm |title=Mobile phone for Welsh-speakers |date=4 August 2009 |access-date=23 May 2010 |work=BBC News |language=en-GB}}</ref>
+
+On [[Android (operating system)|Android]] devices, both the built-in [[Google Keyboard]] and user-created keyboards can be used.<ref>{{cite web |url=http://troi.org/en/literatim.html |title=LiterIM external keyboard for Android |publisher=Troi.org |access-date=27 February 2014 |archive-date=23 February 2014 |archive-url=https://web.archive.org/web/20140223112635/http://troi.org/en/literatim.html }}</ref> [[iOS]] devices have fully supported the Welsh language since the release of iOS 8 in September 2014. Users can switch their device to Welsh to access apps that are available in Welsh. Date and time on iOS is also localised, as shown by the built-in Calendar application, as well as certain third-party apps that have been localised.<ref>{{cite news |url=https://applingua.com/free-welsh-localization-for-ios-developers/ |title=Free Welsh Localization for iOS Developers |publisher=Applingua |date=6 March 2015 |access-date=23 May 2010 |archive-url=https://web.archive.org/web/20150521133222/https://applingua.com/free-welsh-localization-for-ios-developers/ |archive-date=21 May 2015 }}</ref><ref>{{cite news|url=https://www.appsinwelsh.com/ |title=Apps in Welsh Directory |publisher=Apps in Welsh |date=29 October 2015 |access-date=23 May 2010}}</ref>
+
+===In warfare===
+Secure communications are often difficult to achieve in wartime. Just as [[Navajo code talker]]s were used by the [[Military of the United States|United States military]] during [[World War II]], the {{notatypo|[[Royal Welch Fusiliers]],}}<!-- "Welch" is not a typo; see their article --> a Welsh regiment serving in [[Bosnia and Herzegovina|Bosnia]], used Welsh for emergency communications that needed to be secure.<ref>{{Cite news |last=Heath |first=Tony |url=https://www.independent.co.uk/news/welsh-speak-up-for-their-ancient-tongue-1311562.html |title=Welsh speak up for their ancient tongue |work=[[The Independent]] |page=6 |date=26 August 1996 }}</ref>
+
+===Use within the British parliament ===
+In 2017, parliamentary rules were amended to allow the use of Welsh when the [[Welsh Grand Committee]] meets at [[British parliament|Westminster]]. The change did not alter the rules about debates within the House of Commons, where only English can be used.<ref>{{cite web |title=Welsh language to be allowed in MPs' Welsh Grand Committee |url=https://www.bbc.com/news/uk-wales-politics-39043308 |website=[[BBC News Online]] |access-date=8 February 2018 |date=22 February 2017 }}</ref>
+
+In February 2018, Welsh was first used when the Welsh Secretary, [[Alun Cairns]], delivered his welcoming speech at a sitting of the committee. He said, "I am proud to be using the language I grew up speaking, which is not only important to me, my family and the communities Welsh MPs represent, but is also an integral part of Welsh history and culture".<ref>{{cite web |title=MPs speak Welsh in parliamentary debate for first time |url=https://www.bbc.com/news/uk-wales-politics-42967899 |website=[[BBC News Online]] |access-date=8 February 2018 |date=7 February 2018 }}</ref><ref>{{cite news |last1=Williamson |first1=David |title=A historic first for Welsh at Westminster as language officially used for first time |url=https://www.dailypost.co.uk/news/north-wales-news/historic-first-welsh-westminster-language-14258799 |work=[[Daily Post (North Wales)|Daily Post]] |date=7 February 2018}}</ref><ref>{{cite news |last1=Williamson |first1=David |title=MPs use first ever bilingual debate in Westminster |url=https://www.walesonline.co.uk/news/politics/historic-moment-welsh-spoken-houses-14258358 |work=[[Walesonline|WalesOnline]] |date=7 February 2018 }}</ref>
+
+===Use at the European Union===
+In November 2008, the Welsh language was used at a meeting of the European Union's [[Council of the European Union|Council of Ministers]] for the first time. The Heritage Minister [[Alun Ffred Jones]] addressed his audience in Welsh and his words were interpreted into the EU's 23 official languages. The official use of the language followed years of campaigning. Jones said "In the UK we have one of the world's major languages, English, as the mother tongue of many. But there is a diversity of languages within our islands. I am proud to be speaking to you in one of the oldest of these, Welsh, the language of Wales." He described the breakthrough as "more than [merely] symbolic" saying "Welsh might be one of the oldest languages to be used in the UK, but it remains one of the most vibrant. Our literature, our arts, our festivals, our great tradition of song all find expression through our language. And this is a powerful demonstration of how our culture, the very essence of who we are, is expressed through language."<ref>{{cite web |author=David Williamson |url=https://www.walesonline.co.uk/news/wales-news/2008/11/21/breakthrough-as-minister-uses-welsh-at-eu-council-91466-22307749/ |title=Breakthrough as minister uses Welsh at EU council |date=21 November 2008 |work=[[WalesOnline]] |access-date=23 May 2010}}</ref>
+
+[[Jill Evans]] MEP used Welsh in a number of speeches in the European Parliament. In 2004, her using Welsh was the first use of the language in the European Parliament.<ref>{{cite web |title=Welsh language debut in EU |url=http://news.bbc.co.uk/1/hi/wales/4020467.stm |work=[[BBC News Online]] |date=17 November 2004 |access-date=26 June 2022}}</ref> The last time Welsh was spoken in the European Parliament was during Evans' last speech shortly before [[Brexit]].<ref>[https://www.europarl.europa.eu/doceo/document/CRE-9-2020-01-29-INT-1-098-0000_EN.html Speech transcript], European Parliament, 29 January 2020, accessed 26 June 2022]</ref>
+
+===Use by the Voyager programme===
+A greeting in Welsh is one of the [[Contents of the Voyager Golden Record#Greetings|55 languages]] included on the [[Voyager Golden Record]] chosen to be representative of Earth in NASA's [[Voyager program]]me launched in 1977.<ref>{{cite web |url=http://voyager.jpl.nasa.gov/spacecraft/languages/languages.html |title=Greetings to the Universe in 55 Different Languages |access-date=10 May 2009 |publisher=[[NASA]]}}</ref> The greetings are unique to each language, with the Welsh greeting being {{lang|cy|Iechyd da i chwi yn awr ac yn oesoedd}}, which translates into English as "Good health to you now and forever".<!--Please do not edit the Welsh greeting or the translation. Both are correct.--><ref>{{cite web |url=http://voyager.jpl.nasa.gov/spacecraft/languages/welsh.html |title=Welsh greetings |access-date=10 May 2009 |publisher=[[NASA]] }}</ref><ref>{{cite web |url=https://www.walesonline.co.uk/news/wales-news/welsh-message-hurtling-through-space-1826813 |title=The Welsh message hurtling through space 10 billion miles from its home |work=[[WalesOnline]] |date=10 June 2011 }}</ref>
+
+==Phonology==
+{{Main|Welsh phonology}}
+
+{{unreferenced section|date=January 2026}}
+The [[phonology]] of Welsh includes a number of sounds that do not occur in English and are [[linguistic typology|typologically]] rare in [[Languages of Europe|European languages]]. The [[voiceless dental and alveolar lateral fricatives|voiceless alveolar lateral fricative]] {{IPA|[ɬ]}}, the [[voiceless nasal]]s {{IPA|[m̥]}}, {{IPA|[n̥]}} and {{IPA|[ŋ̊]}}, and the [[voiceless alveolar trill]] {{IPA|[r̥]}} are distinctive features of the Welsh language. [[Stress (linguistics)|Stress]] usually falls on the penultimate syllable in polysyllabic words, and the word-final unstressed syllable receives a higher [[pitch (music)|pitch]] than the stressed syllable.
+{| class="wikitable" style="text-align: center"
+|+Consonant phonemes
+!
+! colspan="2" |[[Labial consonant|Labial]]
+! colspan="2" |[[Interdental consonant|Dental]]
+! colspan="2" |[[Alveolar consonant|Alveolar]]
+! colspan="2" |[[Lateral consonant|Lateral]]
+! colspan="2" |[[Postalveolar consonant|Post-<br />alveolar]]
+! colspan="2" |[[Palatal consonant|Palatal]]
+! colspan="2" |[[Velar consonant|Velar]]
+! colspan="2" |[[Uvular consonant|Uvular]]
+! colspan="2" |[[Glottal consonant|Glottal]]
+|-
+![[Nasal consonant|Nasal]]
+| style="border-right: 0;" |{{IPA link|m̥}}
+| style="border-left: 0;" |{{IPA link|m}}
+| colspan="2" |
+| style="border-right: 0;" |{{IPA link|n̥}}
+| style="border-left: 0;" |{{IPA link|n}}
+| colspan="2" |
+| colspan="2" |
+| colspan="2" |
+| style="border-right: 0;" |{{IPA link|ŋ̊}}
+| style="border-left: 0;" |{{IPA link|ŋ}}
+| colspan="2" |
+| colspan="2" |
+|-
+![[Stop consonant|Stop]]
+| style="border-right: 0;" |{{IPA link|p}}
+| style="border-left: 0;" |{{IPA link|b}}
+| colspan="2" |
+| style="border-right: 0;" |{{IPA link|t}}
+| style="border-left: 0;" |{{IPA link|d}}
+| colspan="2" |
+| style="border-right: 0;" |({{IPA link|tʃ}})
+| style="border-left: 0;" |({{IPA link|dʒ}})
+| colspan="2" |
+| style="border-right: 0;" |{{IPA link|k}}
+| style="border-left: 0;" |{{IPA link|ɡ}}
+| colspan="2" |
+| colspan="2" |
+|-
+![[Fricative consonant|Fricative]]
+| style="border-right: 0;" |{{IPA link|f}}
+| style="border-left: 0;" |{{IPA link|v}}
+| style="border-right: 0;" |{{IPA link|θ}}
+| style="border-left: 0;" |{{IPA link|ð}}
+| style="border-right: 0;" |{{IPA link|s}}
+| style="border-left: 0;" |({{IPA link|z}})
+| style="border-right: 0;" | {{IPA link|ɬ}}
+| style="border-left: 0;" |
+| style="border-right: 0;" |{{IPA link|ʃ}}
+| style="border-left: 0;" |
+| colspan="2" |
+| colspan="2" |
+| style="border-right: 0;" | {{IPA link|χ}}
+| style="border-left: 0;" |
+| style="border-right: 0;" |{{IPA link|h}}
+| style="border-left: 0;" |
+|-
+![[Trill consonant|Trill]]
+| colspan="2" |
+| colspan="2" |
+| style="border-right: 0;" | {{IPA link|r̥}}
+| style="border-left: 0;" |{{IPA link|r}}
+| colspan="2" |
+| colspan="2" |
+| colspan="2" |
+| colspan="2" |
+| colspan="2" |
+| colspan="2" |
+|-
+![[Approximant consonant|Approximant]]
+| colspan="2" |
+| colspan="2" |
+| colspan="2" |
+| style="border-right: 0;" |
+| style="border-left: 0;" |{{IPA link|l}}
+| style="border-right: 0;" |
+| style="border-left: 0;" |
+| style="border-right: 0;" |
+| style="border-left: 0;" |{{IPA link|j}}
+| style="border-right: 0;" |({{IPA link|ʍ}})
+| style="border-left: 0;" |{{IPA link|w}}
+| colspan="2" |
+| colspan="2" |
+|}
+Symbols in parentheses are either [[allophone]]s, or found only in [[loanword]]s.
+{| class="wikitable" style="text-align: center;"
+|+Vowel phonemes
+! rowspan="2" |
+! colspan="2" |[[Front vowel|Front]]
+! colspan="2" |[[Central vowel|Central]]
+! colspan="2" |[[Back vowel|Back]]
+|-
+!<small>short</small>
+!<small>long</small>
+!<small>short</small>
+!<small>long</small>
+!<small>short</small>
+!<small>long</small>
+|-
+![[Close vowel|Close]]
+|{{IPA link|ɪ}}
+|{{IPA link|iː}}
+|{{IPA link|ɨ̞}}
+|{{IPA link|ɨː}}
+|{{IPA link|ʊ}}
+|{{IPA link|uː}}
+|-
+![[Mid vowel|Mid]]
+|{{IPA link|ɛ}}
+|{{IPA link|eː}}
+|{{IPA link|ə}}
+|
+|{{IPA link|ɔ}}
+|{{IPA link|oː}}
+|-
+![[Open vowel|Open]]
+|
+|
+|{{IPA link|a}}
+|{{IPA link|aː}}
+|
+|
+|}
+The vowels /ɨ̞/ and /ɨ/ are only found in Northern varieties of Welsh. In the South these have merged with /ɪ/ and /i/ in all cases.
+
+==Orthography==
+{{Main|Welsh orthography}}
+
+Welsh is written in a [[Latin script|Latin alphabet]] of 29 [[letter (alphabet)|letter]]s, of which eight are [[digraph (orthography)|digraph]]s treated as single letters for [[collation]], for example {{lang|cy|fy}} comes before {{lang|cy|ffrwyth}} in the dictionary:
+
+: a, b, c, ch, d, dd, e, f, ff, g, ng, h, i, j, l, ll, m, n, o, p, ph, r, rh, s, t, th, u, w, y
+
+In contrast to English practice, {{vr|w}} is considered a vowel letter in Welsh along with {{vr|a, e, i, o, u, y}}.
+
+{{vr|j}} was not used traditionally but is now used in many everyday words borrowed from English such as {{lang|cy|jam}} ('jam'), {{lang|cy|jôc}} ('joke') and {{lang|cy|garej}} ('garage'). {{vr|k, q, v, x, z}} are used in some technical terms such as ''kilogram'', ''volt'' and ''zero'' but in all cases can be, and often are, replaced by Welsh letters (same pronunciation): {{lang|cy|cilogram}}, {{lang|cy|folt}} and {{lang|cy|sero}}.<ref>Thomas, Peter Wynn (1996) ''Gramadeg y Gymraeg.'' Cardiff: University of Wales Press: 757.</ref> {{vr|k}} was in common use until the 16th century but was dropped at the time of the publication of the New Testament in Welsh, as [[William Salesbury]] explained: "{{vr|c}} for {{vr|k}}, because the printers have not so many as the Welsh requireth". This change was not popular at the time.<ref>{{cite web|url=http://dohiyimir.typepad.com/eng_wel_tolkien.pdf|title=English and Welsh, an essay by J. R. R. Tolkien|website=typepad.com|access-date=9 April 2018|archive-url=https://web.archive.org/web/20180123213007/http://dohiyimir.typepad.com/eng_wel_tolkien.pdf|archive-date=23 January 2018}}</ref>
+
+The most common [[diacritic]] is the [[circumflex]] (called {{lang|cy|to bach}} in Welsh, lit. 'little roof'),<ref>{{cite web |title=to bach |url=https://welsh-dictionary.ac.uk/gpc/gpc.html?to+bach |website=[[Geiriadur Prifysgol Cymru]] |access-date=16 November 2023}}</ref> which usually disambiguates [[vowel length|long vowels]], most often in the case of [[homograph]]s, where the vowel is short in one word and long in the other: e.g. {{lang|cy|man}} ('place') v. {{lang|cy|mân}} ('fine, small').
+
+== Grammar ==
+{{Main|Welsh grammar}}
+
+{{unreferenced section|date=January 2026}}
+
+Welsh is a moderately inflecting language. Verbs inflect at least for person, number and mood, while nouns inflect for number and there is a masculine-feminine distinction, of which the latter is marked via consonant mutation.
+
+Colloquial and literary grammar show more differences than in English.
+
+=== Morphology ===
+{{Main|Colloquial Welsh morphology|Literary Welsh morphology}}
+
+{{unreferenced section|date=January 2026}}{{anchor|mutation|mutations}}
+Welsh [[morphology (linguistics)|morphology]] has much in common with that of the other modern [[Insular Celtic languages]], such as the use of initial [[consonant mutation]]s and of so-called "[[inflected preposition|conjugated prepositions]]" ([[preposition]]s that fuse with the [[personal pronoun]]s that are their [[object (grammar)|object]]). Welsh nouns belong to one of two [[grammatical gender]]s, masculine and feminine, but they are not inflected for [[grammatical case|case]]. Welsh has a variety of different endings and other methods to indicate the plural, and two endings to indicate the [[grammatical number|singular]] (technically the [[singulative number|singulative]]) of some nouns. In spoken Welsh, verbal features are indicated primarily by the use of [[auxiliary verb]]s rather than by the [[grammatical conjugation|inflection of the main verb]]. In literary Welsh, on the other hand, inflection of the main verb is usual.
+
+=== Syntax ===
+{{Main|Welsh syntax}}
+
+{{unreferenced section|date=January 2026}}
+The canonical word order in Welsh is [[verb–subject–object]] (VSO).
+
+Colloquial Welsh inclines very strongly towards the use of auxiliaries with its verbs, as in English. The present tense is constructed with {{lang|cy|bod}} ('to be') as an [[auxiliary verb]], with the main verb appearing as a [[verbnoun]] (used in a way loosely equivalent to an infinitive) after the particle {{lang|cy|yn}}:
+:{{lang|cy|Mae Siân yn mynd i Llanelli}}.
+:Siân is going to Llanelli.
+There, {{lang|cy|mae}} is a third-person singular present indicative form of {{lang|cy|bod}}, and {{lang|cy|mynd}} is the verb-noun meaning "to go". The [[imperfect]] is constructed in a similar manner, as are the [[periphrastic]] forms of the [[future tense|future]] and [[conditional mood|conditional]] tenses.
+
+In the [[preterite]], future and conditional mood tenses, there are [[inflected language|inflected]] forms of all verbs, which are used in the written language. However, speech now more commonly uses the verbnoun together with an inflected form of {{lang|cy|gwneud}} ('do'), so "I went" can be {{lang|cy|Mi es i}} or {{lang|cy|Mi wnes i fynd}} ('I did go'). {{lang|cy|Mi}} is an example of a preverbal particle; such particles are common in Welsh, though less so in the spoken language.
+
+Welsh lacks separate pronouns for constructing subordinate clauses; instead, special verb forms or relative pronouns that appear identical to some preverbal particles are used.
+
+===Possessives as direct objects of verbnouns===
+The Welsh for "I like Rhodri" is {{lang|cy|Dw i'n hoffi Rhodri}} (word for word, "am I [the] liking [of] Rhodri"), with ''Rhodri'' in a possessive relationship with ''hoffi''. With personal pronouns, the possessive form of the personal pronoun is used, as in "I like ''him''": [{{lang|cy|Dw i'n '''ei''' hoffi}}], literally, "am I ''his'' liking" – "I like ''you''" is [{{lang|cy|Dw i'n '''dy''' hoffi}}] ('am I ''your'' liking'). Very informally, the pronouns are often heard in their normal subject/object form and aping English word order: {{lang|cy|Dw i'n hoffi ti}} ('Am I liking you').
+
+===Pronoun doubling===
+In colloquial Welsh, possessive pronouns, whether they are used to mean "my", "your", etc. or to indicate the direct object of a verbnoun, are commonly reinforced by the use of the corresponding personal pronoun after the noun or verbnoun: {{lang|cy|ei dŷ '''e'''}} "his house" (literally "his house ''of him''"), {{lang|cy|Dw i'n dy hoffi '''di'''}} "I like you" ('I am [engaged in the action of] your liking ''of you''{{'}}), etc. The "reinforcement" (or, simply, "redoubling") adds no emphasis in the colloquial register. While the possessive pronoun alone may be used, especially in more formal registers, as shown above, it is considered incorrect to use only the personal pronoun. Such usage is nevertheless sometimes heard in very colloquial speech, mainly among young speakers: {{lang|cy|Ble 'dyn ni'n mynd? Tŷ ti neu dŷ fi?}} ('Where are we going? Your house or my house?').
+
+== Vocabulary ==
+Welsh supplements its core Brittonic vocabulary (words such as {{lang|cy|wy}} "egg", {{lang|cy|carreg}} "stone") with hundreds of word [[Lemma (morphology)|lemmas]] borrowed [[:wikt:Category:Welsh terms borrowed from Latin|from Latin]],<ref>{{cite book |title=Yr elfen Ladin yn yr iaith Gymraeg |date=1943 |publisher=Gwasg Prifysgol Cymru |isbn=9780708307694 |pages=10–31 |language=cy }}</ref> such as ({{lang|cy|ffenestr}} 'window' < Latin {{lang|la|fenestra}}, {{lang|cy|gwin}} 'wine' < Latin {{lang|la|vinum}}). It also borrows words from [[English language|English]], such as ({{lang|cy|silff}} 'shelf', {{lang|cy|giât}} 'gate').
+
+=== Counting system ===
+{{Main|Welsh numerals}}
+
+The traditional counting system used in the Welsh language is [[vigesimal]], i.e. it is based on twenties. Welsh numbers from 11 to 14 are "''x'' on ten" (e.g. {{lang|cy|un ar ddeg}}: 11), 16 to 19 are "''x'' on fifteen" (e.g. {{lang|cy|un ar bymtheg}}: 16), though 18 is {{lang|cy|deunaw}}, "two nines"; numbers from 21 to 39 are "1–19 on twenty"(e.g. {{lang|cy|deg ar hugain}}: 30), 40 is {{lang|cy|deugain}} "two twenties", 60 is {{lang|cy|trigain}} "three twenties", etc. This form continues to be used, especially by older people, and it is obligatory in certain circumstances (such as telling the time, and in ordinal numbers).<ref>King, G. ''Modern Welsh: A Comprehensive Grammar'', published by Routledge, {{ISBN|0-415-09269-8}} p. 114</ref>
+
+There is also a decimal counting system, which has become relatively widely used, though less so in giving the time, ages, and dates (it features no ordinal numbers). This system originated in Patagonian Welsh and was subsequently introduced to Wales in the 1940s.<ref>{{Cite book |url=https://books.google.com/books?id=ackmDAAAQBAJ&pg=PT112 |title=Count Us In: How to Make Maths Real for All of Us |last=Robert's |first=Gareth Ffowc |date=2016-02-15 |publisher=University of Wales Press |isbn=978-1-78316-798-2 |language=en}}</ref> Whereas 39 in the vigesimal system is {{lang|cy|pedwar ar bymtheg ar hugain}} ('four on fifteen on twenty') or even {{lang|cy|deugain namyn un}} ('two twenty minus one'), in the decimal system it is {{lang|cy|tri deg naw}} ('three tens nine').
+
+Although there is only one word for "one" ({{lang|cy|un}}), it triggers the [[Welsh morphology|soft mutation]] ({{lang|cy|treiglad meddal}}) of feminine nouns, where possible, other than those beginning with "ll" or "rh". There are separate masculine and feminine forms of the numbers 'two' ({{lang|cy|dau}} and {{lang|cy|dwy}}), 'three' ({{lang|cy|tri}} and {{lang|cy|tair}}) and 'four' ({{lang|cy|pedwar}} and {{lang|cy|pedair}}), which must [[Agreement (linguistics)|agree]] with the [[grammatical gender]] of the objects being counted. The objects being counted appear in the singular, not plural form.
+
+==Sample text==
+Article 1 of the [[Universal Declaration of Human Rights]]:
+
+{{Verse translation |lang=cy
+|Genir pawb yn rhydd ac yn gydradd â'i gilydd mewn urddas a hawliau. Fe'u cynysgaeddir â rheswm a chydwybod, a dylai pawb ymddwyn y naill at y llall mewn ysbryd cymodlon.<ref>{{Cite web |title=OHCHR {{!}} Universal Declaration of Human Rights – Welsh (Cymraeg) |url=https://www.ohchr.org/en/human-rights/universal-declaration/translations/welsh-cymraeg |access-date=2022-05-14 |website=OHCHR |language=en}}</ref>
+|All human beings are born free and equal in dignity and rights. They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood.<ref>{{cite web |url=https://www.un.org/en/about-us/universal-declaration-of-human-rights |title=Universal Declaration of Human Rights |publisher=[[United Nations]] }}</ref>
+}}
+
+==See also==
+{{Portal|Wales}}
+* [[Association of Welsh Translators and Interpreters]]
+* ''[[English and Welsh]]''
+* [[Honourable Society of Cymmrodorion]]
+* [[Languages in the United Kingdom]]
+* [[List of Welsh-language media]]
+* [[List of Welsh films]]
+* [[List of Welsh-language authors]]
+* [[List of Welsh-language poets (6th century to c. 1600)]]
+* [[List of Welsh people]]
+* [[List of Welsh areas by percentage of Welsh-speakers]]
+* [[Literature of Wales (Welsh language)|Welsh literature]]
+* {{lang|cy|[[Dal Ati]]}}
+* [[St Benet's, Paul's Wharf]]
+* [[Welsh Language Board]]
+* [[Welsh placenames]]
+* [[Welsh Tract]]
+* [[Sindarin]] <small>(A language invented by [[J. R. R. Tolkien]] for his [[Tolkien's legendarium|legendarium]] – a body of literary works, mostly set in [[Middle-earth]]. The language was strongly influenced by Welsh.)</small>
+
+==Notes==
+{{Reflist|2}}
+
+==References==
+* J.W. Aitchison; H. Carter (2000). ''Language, Economy and Society. The changing fortunes of the Welsh Language in the Twentieth Century''. Cardiff. University of Wales Press.
+* J.W. Aitchison; H. Carter (2004). ''Spreading the Word. The Welsh Language 2001''. Y Lolfa.
+
+== Further reading ==
+{{refbegin}}
+*{{Cite JIPA |author=Bell, Elise |author2=Archangeli, Diana B. |author3=Anderson, Skye J. |author4=Hammond, Michael |author5=Webb-Davies, Peredur |author6=Brooks, Heddwen |title=Northern Welsh|pages=1&ndash;24|doi=10.1017/S0025100321000165|onlinedate=2021-08-18|soundfiles=yes}}
+{{refend}}
+
+==External links==
+* Welsh Language (Wales) Measure 2011: available in [https://www.legislation.gov.uk/mwa/2011/1/contents/enacted/welsh Welsh] and **[https://www.legislation.gov.uk/mwa/2011/1/contents/enacted English].
+*{{Deprecated archive|url=https://archive.today/20130416045207/http://www.welshlanguagecommissioner.org/|title=Welsh Language Commissioner|sec=el}}
+*[https://web.archive.org/web/20080228200916/http://www.omniglot.com/writing/welsh.htm Welsh language at Omniglot]
+* [https://web.archive.org/web/20110716194934/http://www.byig-wlb.org.uk/English/publications/Publications/The%20Vitality%20of%20Welsh%20A%20Statistical%20Balance%20Sheet%20August%202010.pdf Welsh Language Board: ''The Vitality of Welsh: A Statistical Balance Sheet'', August 2010]
+* [https://web.archive.org/web/20110813122001/http://new.wales.gov.uk/topics/statistics/theme/welsh-language/?lang=en Link for Welsh language statistics] from the Welsh Assembly Government (accessed 10 January 2009)
+* [https://web.archive.org/web/20120812191405/http://neighbourhood.statistics.gov.uk/dissemination/LeadTableView.do?a=3&c=NP20&e=15&g=421314&i=1001x1012x1013x1003x1004&j=324960&m=1&p=-1&q=1&r=0&s=1210299776914&enc=1&dsFamilyId=888 Example knowledge of Welsh (KS25) data] ([[Newport, Wales|Newport]]) from the Office for National Statistics
+
+{{Sister bar|display=Welsh|auto=1|wikt=Category:Welsh language|s=Category:Welsh language |v=Topic:Welsh|d=y|iw=cy}}
+{{Welsh language}}
+{{Celtic languages}}
+{{navboxes|list1=
+{{Wales topics}}
+{{Culture of Wales}}
+{{Languages of Wales}}
+{{Languages of the United Kingdom}}
+{{Languages of Europe}}
+{{Authority control}}
+}}
+
+{{DEFAULTSORT:Welsh Language}}
+[[Category:Welsh language| ]]
+[[Category:Languages attested since the 6th century]]
+[[Category:Western Brittonic languages]]
+[[Category:Fusional languages]]
+[[Category:Languages of the United Kingdom]]
+[[Category:Verb–subject–object languages]]
+[[Category:Languages of Argentina]]
+[[Category:Languages of Wales]]
+[[Category:Vulnerable languages]]
+[[Category:Articles containing video clips]]
+[[Category:Endangered Celtic languages]]

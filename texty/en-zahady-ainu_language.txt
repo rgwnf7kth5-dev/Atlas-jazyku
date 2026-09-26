@@ -1,0 +1,755 @@
+{{Short description|Language of Hokkaido, Japan}}
+{{More footnotes needed|date=July 2026}}
+{{hatnote group|
+{{About|the language spoken on Hokkaido|the language family|Ainu languages}}
+{{Distinguish|Äynu language}}
+}}
+{{Use dmy dates|date=October 2025}}
+{{Infobox language
+| name             = Hokkaido Ainu
+| nativename       = {{lang|ain-Kana|アイヌ イタㇰ}} / {{lang|ain|aynu itak}} / ''{{lang|ain|lајну̜ lитак̚}}''
+| pronunciation    = {{IPA|ain|ʔájnu̜ ʔiták̚|}}
+| states           = [[Japan]]
+| region           = [[Hokkaido]]
+| ethnicity        = 25,000 (1986) to {{circa|200,000}} (no date) [[Ainu people]]<ref>{{Cite book |last=Poisson |first=Barbara Aoki |url=https://archive.org/details/ainuofjapan00pois/page/5 |title=The Ainu of Japan |publisher=Lerner Publications |year=2002 |location=Minneapolis |isbn=9780822541769 }}</ref>
+| speakers=[[first language|L1]]: "few" semispeakers|date=2022
+| speakers2        = "growing number of neo-speakers" (2022)
+| ref              = <ref>{{Cite book |url=https://www.degruyterbrill.com/document/doi/10.1515/9781501502859/html |title=Handbook of the Ainu Language |date=2022-10-10 |publisher=De Gruyter |isbn=978-1-5015-0285-9 |editor-last=Bugaeva |editor-first=Anna |doi=10.1515/9781501502859}}</ref>
+| familycolor      = paleosiberian
+| fam1             = [[Ainu languages|Ainu]]
+| fam2             = 
+| iso2             = ain
+| iso3             = ain
+| glotto           = ainu1240
+| glottorefname    = Hokkaido Ainu
+| script           = {{plainlist|
+* [[Katakana]] (current)
+* [[Latin script|Latin]] (current)
+* [[Cyrillic]] (current)
+}}
+| image            = Multilingual sign at Ainu Museum (Shiraoi).JPG
+| imagealt         = A multilingual exit sign.
+| imagecaption     = Multilingual sign in [[Japanese language|Japanese]], Ainu, [[English language|English]], [[Korean language|Korean]], and [[Written Chinese|Chinese]]. The Ainu text, in [[katakana]], is second down from the top and reads {{lang|ain-Kana|イヤイライケㇾ}} ({{lang|ain|iyairaiker}}).
+| notice           = IPA
+<!--| map2             = Lang Status 20-CR.svg
+| mapcaption2      = {{center|Ainu is classified as Critically Endangered by the [[UNESCO]] ''[[Atlas of the World's Languages in Danger]]''.<ref>{{cite web|url=https://en.wal.unesco.org/countries/japan/languages/hokkaido-ainu|title=Hokkaido Ainu in Japan {{!}} UNESCO WAL|archive-url=https://web.archive.org/web/20250220023646/https://en.wal.unesco.org/countries/japan/languages/hokkaido-ainu|archive-date=20 February 2025}}</ref>}}-->| mapcaption2      = 
+}}
+'''Ainu''',{{efn|{{langx|ain|アイヌ イタㇰ|aynu itak|label=none}}, {{IPA|ain|ʔájnu̜ ʔiták̚|pron}}}} also known as '''Hokkaido Ainu''' ({{langx|ja|北海道アイヌ語}}), is a language native to the [[Ainu people]] of the northern Japanese island of [[Hokkaido]]. It is a member of the [[Ainu languages|Ainu language family]], considered to be an independent [[language family]] with no academic consensus regarding its origin. Until the 20th century, the three Ainu languages – Hokkaido Ainu, [[Kuril Ainu language|Kuril Ainu]], and [[Sakhalin Ainu language|Sakhalin Ainu]] – were spoken throughout Hokkaido, the southern half of the island of [[Ainu in Russia|Sakhalin]] and by small communities in the [[Kuril Islands]], up to the southern tip of [[Kamchatka Peninsula|Kamchatka]].
+
+Following the [[Colonisation of Hokkaido|colonization of Hokkaido]], the number of Hokkaido Ainu speakers declined steadily throughout the 20th century, eventually becoming critically [[Endangered language|endangered]]. By 2008, only two [[First language|native speakers]] of Ainu remained, both elderly. By 2017, Ainu was reportedly [[Language death|dormant]].<ref name=Dougherty>{{cite book |first=Thomas |last=Dougherty |year=2017 |chapter=Ainu |editor-first=Lyle |editor-last=Campbell |title=Language Isolates |pages=100–116 |doi=10.4324/9781315750026-4 |isbn=9781315750026}}</ref><ref name="Tsukada-2021">{{Cite magazine |first=Arina |last=Tsukada |translator-first=Carrie |translator-last=Edwards |date=29 November 2021 |title=An Ainu-language expert illuminates their worldview |url=https://sustainable.japantimes.com/magazine/vol06/06-05 |access-date=11 August 2025 |magazine=Sustainable Japan |volume=6 |publisher=[[The Japan Times]] |language=en}}</ref> Hokkaido Ainu is now a [[heritage language]] with some native [[semi-speaker]]s.<ref name=":0" /><ref name=":1" />
+
+The term ''Ainu'' comes from the [[endonym]] of the [[Ainu people]], {{lang|ain|aynu}} ({{lang|ain-Kana|アイヌ}}), meaning 'person' or 'human'.
+
+==Speakers==
+[[File:WIKITONGUES- Teruyo speaking Ainu.webm|thumb|An Ainu speaker, recorded in Japan in 2016]]
+Although there are estimated to be at least 30,000 Ainu people in Japan,{{sfnp|Gayman|2011}} there is a low rate of self-identification as Ainu among people with Ainu ethnic roots.{{sfnp|Teeter|Okazaki|2011}} The Ainu language was already endangered by the 1960s and has continued to decline since. {{as of|alt=In 2011|2011}}, a total of 304 people within Japan were reported to understand the Ainu language to some extent.{{sfnp|Teeter|Okazaki|2011}}
+
+In 2017, linguistics researcher Thomas Dougherty stated that "Ainu is a dormant language isolate previously spoken on the northernmost Japanese island of Hokkaidō,"<ref name=Dougherty>{{cite book |first=Thomas |last=Dougherty |year=2017 |chapter=Ainu |editor-first=Lyle |editor-last=Campbell |title=Language Isolates |pages=100–116 |doi=10.4324/9781315750026-4 |isbn=9781315750026}}</ref> and on his website he repeats that the language is "dormant".<ref>{{Cite web |date=2017-01-14 |title=Thomas Dougherty |url=https://www.thomasdougherty.net/ |access-date=2026-09-20 |language=en-US}}</ref>
+
+In 2019, it was reported that "there remain only a few speakers in Hokkaido, who learned vocabularies from their parents or grandparents and who can use simple sentences in Ainu."<ref>Mika Fukazawa, 'Ainu language and Ainu speakers', in Patrick Heinrich & Yumiko Ohara, eds. (2019) ''Routledge Handbook of Japanese Sociolinguistics''</ref>
+
+In 2022, in the ''Handbook of the Ainu Language'', it was said that Ainu "is more or less extinct, or 'dormant', as a living medium [but] has still a few native semi-speakers, as well as a growing number of neo-speakers" (who include some non-Ainu) but no generational transmission of the language.<ref name=":0">{{Citation |last=Janhunen |first=Juha A. |chapter=2 Ainu ethnic origins |date=2022-10-10 |title=Handbook of the Ainu Language |pages=57–78 |editor-last=Bugaeva |editor-first=Anna |chapter-url=https://www.degruyterbrill.com/document/doi/10.1515/9781501502859-003/html |access-date=2026-02-03 |publisher=De Gruyter |doi=10.1515/9781501502859-003 |isbn=978-1-5015-0285-9|chapter-url-access=subscription }}</ref>
+
+{{as of|2025}}, the [[Endangered Languages Project]] (citing personal communication) reports two native speakers with 80% certainty.<ref>[https://www.endangeredlanguages.com/elp-context/context-19374-ainu-japan-source-personal-communication Endangered Languages Project: Ainu (Japan). No date.]</ref>
+
+===Vitality===
+In 2017, 671 people aged 15 or above from 291 randomly selected households participated in a Hokkaido government survey on the lives of Ainu people.<ref name="Hokkaido1">{{cite web |title=平成29年北海道アイヌ生活実態調査報告書 |trans-title=2017 Hokkaido Ainu Life Survey Report |url=https://www.pref.hokkaido.lg.jp/fs/1/0/3/0/2/8/2/7/_/★_第1回資料(10-1~17).pdf |website=Hokkaidō Government |publisher=北海道環境生活部 |access-date=27 October 2024}}</ref> Participants were believed to be descendants of Ainu people or those who joined Ainu families by marriage or adoption.<ref name="Hokkaido1"/> In response to survey questions about fluency in the Ainu language, 0.7% of participants answered that they "would be able to have a conversation" in Ainu, 3.4% answered that they "would be able to converse a little", 44.6% answered that they "couldn't speak but had some knowledge about Ainu language", and 48.1% answered that they "couldn't speak at all".<ref name="Hokkaido1"/>
+
+In a subsequent survey of 472 respondents in 2023, 0.8% of respondents answered that they "would be able to have a conversation" in Ainu, 8.9% answered that they "would be able to converse a little", 19.3% answered that they "could barely converse at all", and 69.3% answered that they "would not be able to converse at all".<ref name="Hokkaido2">{{cite web |title=令和5年北海道アイヌ生活実態調査報告書 |trans-title=2023 Hokkaido Ainu Life Survey Report |url=https://www.pref.hokkaido.lg.jp/fs/1/0/6/5/3/1/6/8/_/R5実態調査報告書(完全版).pdf |website=Hokkaidō Government |publisher=北海道環境生活部 |access-date=27 October 2024}}</ref>
+{| class="wikitable"
+|+ Ainu language usage amongst Ainu people in Hokkaido, surveys 1993–2023<ref>{{cite web|url=https://www.pref.hokkaido.lg.jp/ks/ass/new_jittai.html|title=生活実態調査の実施結果について|trans-title=About the results of living situation survey|language=Japanese|access-date=14 April 2025}}</ref>
+|-
+! Ainu language level !! 1993 !! 1999 !! 2006 !! 2013 !! 2017 !! 2023
+|-
+| Can hold a conversation (%) || 0.8 || 0.8 || 0.7 || 0.9 || 0.7 || 0.8
+|-
+| Can speak a little (%) || 5.4 || 4.5 || 3.9 || 6.3 || 3.4 || 8.9
+|-
+| Cannot speak but have some knowledge (%) || 37.1 || 38.3 || 32.4 || 44.2 || 44.6 || {{–}}
+|-
+| Neither speak nor understand (%) || 54.8 || 51.6 || 61.2 || 46.2 || 48.1 || {{–}}
+|-
+| Unknown (%) || 1.9 || 4.8 || 1.7 || 2.4 || 3.1 || 1.7
+|-
+| Sample size (# of Respondents) || 642 || 715 || 712 || 586 || 671 || 472
+|}
+
+== Recent history ==
+Many of the speakers of Ainu lost the language with the advent of Japanese colonization, which formally began with the establishment of the [[Hokkaidō Development Commission|Hokkaido Colonization Office]] in 1869. Japanese officials viewed the assimilation of Ainu a critical component of the Hokkaido colonization project, and developed policies designed to discourage or eliminate the use of the Ainu language, cultural practices, and traditional lifeways.{{sfnp|Cheung|2003}}{{sfnp|Maruyama|2014}} The assimilation included the exploitation of Ainu land, the commodification of their culture, and the placing of Ainu children in schools where they learned only Japanese.{{sfnp|Cheung|2003}}{{sfnp|Maruyama|2014}}<ref>{{Cite web |title=HLJ |url=http://www.heritagelanguages.org/Journal.aspx |url-status=dead |archive-url=https://web.archive.org/web/20180228014357/http://www.heritagelanguages.org/Journal.aspx |archive-date=28 February 2018 |access-date=13 November 2017 |website=www.heritagelanguages.org}}</ref>
+
+More recently, the Japanese government has acknowledged the Ainu people as an indigenous population. As of 1997 they were given indigenous rights under the United Nations Declaration on the Rights of Indigenous Peoples (UNDRIP) to their culture, heritage, and language.{{sfnp|Cheung|2003}}{{sfnp|Maruyama|2014}}{{sfnp|Savage|Longo|2013}}
+
+The Ainu Cultural Promotion Act in 1997 appointed the Foundation for Research and Promotion of Ainu Culture (FRPAC). This foundation is tasked with language education, where they promote Ainu language learning through training instructors, advanced language classes and creation and development of language materials.{{sfnp|Savage|Longo|2013}}
+
+==Revitalization==
+In general, Ainu people are hard to find because they tend to hide their identity as Ainu, especially in the young generation. Two-thirds of Ainu youth do not know that they are Ainu.{{sfnp|Gayman|2011}} In addition, because Ainu students were strongly discouraged from speaking their language at school,<ref>{{Cite journal |last=Hanks |first=H. D. |date=2017 |title=Policy Barriers to Ainu Language Revitalization in Japan: When Globalization Means English |url=https://repository.upenn.edu/wpel/vol32/iss1/5/ |journal=Working Papers in Educational Linguistics |volume=32 |issue=1 |pages=91–110}}</ref> it has been challenging for the Ainu language to be revitalized.
+
+Despite this, there is an active movement to [[Language revitalization|revitalize]] the language, mainly in Hokkaido but also elsewhere such as [[Kantō region|Kanto]].{{sfnp|Martin|2011}} Ainu oral literature has been documented both in hopes of safeguarding it for future generations, as well as using it as a teaching tool for language learners.{{sfnp|Miyaoka|Sakiyama|Krauss|2007}} Beginning in 1987, the [[Ainu Association of Hokkaido]], with approximately 500 members,{{sfnp|Martin|2011}} began hosting 14 Ainu language classes, Ainu language instructors training courses and Family Ainu Learning Initiative{{sfnp|Gayman|2011}} and have released instructional materials on the language, including a textbook.{{sfnp|Miyaoka|Sakiyama|Krauss|2007}} Also, [[Yamato people|Yamato]] linguists teach Ainu and train students to become Ainu instructors in university.{{sfnp|Gayman|2011}} In spite of these efforts, {{as of|2011|lc=y}} the Ainu language was not yet taught as a subject in any secondary school in Japan.{{sfnp|Martin|2011}}
+
+Due to the Ainu Cultural Promotion Act of 1997, Ainu dictionaries transformed and became tools for improving communication and preserving records of the Ainu language in order to revitalize the language and promote the culture.{{sfnp|Hansen|2014}} This act had aims to promote, disseminate, and advocate on behalf of Ainu cultural traditions.{{sfnp|Teeter|Okazaki|2011}} The main issue with this act however, was that not a single Ainu person was included in the "Expert" meetings prior to the law's passage, and as a result of this there was no mention of language education and how it should be carried out.{{sfnp|Teeter|Okazaki|2011}} The focus at this point was on Ainu culture revitalization rather than Ainu language revitalization.
+
+As of 2011, there has been an increasing number of second-language learners, especially in Hokkaido, in large part due to the pioneering efforts of the late Ainu folklorist, activist and former [[Japanese Diet|Diet]] member [[Shigeru Kayano]], himself a native speaker, who first opened an Ainu language school in 1987 funded by [[Ainu Kyokai]].{{sfnp|Teeter|Okazaki|2011}} The Ainu Association of Hokkaido is the main supporter of Ainu culture in Hokkaido.{{sfnp|Martin|2011}} Ainu language classes have been conducted in some areas in Japan and small numbers of young people are learning Ainu. Efforts have also been made to produce web-accessible materials for conversational Ainu because most documentation of the Ainu language focused on the recording of folktales.{{sfnp|Bugaeva|2010}} The Ainu language has been in media as well; the first Ainu radio program was called ''FM Pipaushi'',<ref>{{Cite web |title=FM Pipaushi |url=https://tunein.com/radio/FM-Pipaushi-p323895/ |website=TuneIn |language=English |date= |access-date=}}</ref> which has run since 2001 along with 15-minute radio Ainu language lessons funded by FRPAC,<ref>{{Cite web |url=https://www.frpac.or.jp/web/english/ |title=FRPAC |work=www.frpac.or.jp |access-date=23 April 2019 |archive-url=https://web.archive.org/web/20171214183443/https://www.frpac.or.jp/web/english/ |archive-date=14 December 2017 |url-status=dead}}</ref> and newspaper ''[[Ainu Times|The Ainu Times]]'' has been established since 1997.{{sfnp|Teeter|Okazaki|2011}} In 2016, a radio course was broadcast by the STVradio Broadcasting to introduce Ainu language. The course put extensive efforts in promoting the language, creating four textbooks in each season throughout the year.<ref>{{Cite book|title=Handbook of the changing world language map. Volume 1 |author1=Brunn, Stanley D. |author2=Kehrein, Roland |isbn=978-3-030-02438-3 |location=Cham, Switzerland |oclc=1125944248}}</ref>
+
+In addition, the Ainu language has been seen in public domains such as the outlet shopping complex's name, {{transliteration|ain|Rera}}, which means 'wind', in the [[Minami-Chitose Station|Minami Chitose]] area and the name {{transliteration|ain|Pewre}}, meaning 'young', at a shopping centre in the [[Chitose, Hokkaido|Chitose]] area. There is also a basketball team in [[Sapporo]] founded under the name {{transliteration|ain|Rera Kamuy Hokkaido}}, after {{transliteration|ain|rera kamuy}} 'god of the wind' (its current name is [[Levanga Hokkaido]]).{{sfnp|Martin|2011}} The well-known Japanese fashion magazine's name {{transliteration|ain|[[Non-no]]}} means 'flower' in Ainu.
+
+Another Ainu language revitalization program is Urespa, a university program to educate high-level persons on the language of the Ainu. The effort is a collaborative and cooperative program for individuals wishing to learn about Ainu languages. This includes performances which focus on the Ainu and their language, instead of using the dominant Japanese language.{{sfnp|Uzawa|2019}}
+
+Another form of Ainu language revitalization is an annual national competition, which is Ainu language-themed. People of many differing demographics are often encouraged to take part in the contest. Since 2017, the popularity of the contest has increased.<ref>{{Cite book|last=Kitahara|first=Jirota|title=Being Indigenous: Perspectives on Activism, Culture, Language and Identity|publisher=Routledge|year=2018|isbn=9780429454776|editor-last=Greymorning|editor-first=Neyooxet|url=https://www.taylorfrancis.com/books/e/9780429454776|pages=198|chapter=Current Status of Ainu Cultural Revitalization}}</ref>
+
+On 15 February 2019, Japan approved a bill to recognize the Ainu language for the first time<ref>{{Cite news|date=15 February 2019|title=Japan to Recognize Indigenous Ainu People for First Time|work=Japan Times Online|agency=AFP-JiJi|url=https://www.japantimes.co.jp/news/2019/02/15/national/japan-recognize-indigenous-ainu-people-first-time/|url-status=dead|access-date=1 March 2020|archive-url=https://web.archive.org/web/20190216230215/https://www.japantimes.co.jp/news/2019/02/15/national/japan-recognize-indigenous-ainu-people-first-time/|archive-date=16 February 2019}}</ref><ref>{{Cite news|last=Denyer|first=Simon|date=16 February 2019|title=Japan Prepares Law to Finally Recognize and Protect its Indigenous Ainu People|newspaper=Washington Post|url=https://www.washingtonpost.com/world/asia_pacific/japan-prepares-law-to-finally-recognize-and-protect-its-indigenous-ainu-people/2019/02/15/2c85a0d8-3113-11e9-ac6c-14eea99d5e24_story.html}}</ref> and enacted the law on 19 April 2019.<ref>{{Cite web|url=https://www.japantimes.co.jp/news/2019/04/19/national/japan-enacts-law-recognize-ainu-indigenous-despite-criticism-ethnic-group/|date=19 April 2019|title=Japan enacts law recognizing Ainu as indigenous, but activists say it falls short of U.N. declaration|access-date=30 June 2022|work=Japan Times Online}}</ref>
+
+Outside of Japan, there have also been efforts to revive the Ainu culture and language in other countries, including [[Australia]]<ref>{{cite web | url=https://jpf.org.au/senseis-voices/ainu-toytoy/ | title=Ainu ToyToy ようこそ |last=Whittle |first=Margo |website=Japan Foundation |language=en-AU |access-date=20 December 2023 |archive-url=https://web.archive.org/web/20180409153307/https://jpf.org.au/senseis-voices/ainu-toytoy/ |archive-date=9 April 2018}}</ref> and [[Russia]].<ref>{{cite news |url=https://asia.nikkei.com/Politics/Russian-Ainu-leader-calls-for-greater-respect2 | title=Russian Ainu leader calls for greater respect |website=Nikkei |place=Petropavlovsk-Kamchatsky, Russia |date=3 March 2017 |last=Tanaka |first=Takayuki |archive-url=https://web.archive.org/web/20231007091134/https://asia.nikkei.com/Politics/Russian-Ainu-leader-calls-for-greater-respect2 |archive-date=7 October 2023}}</ref>
+
+In 2019, researchers working together from both the Society for Academic Research of Ainu (SARC), representatives from Hokkaido University, and with the assistance of linguists spanning multiple universities and countries assisted in the creation of AI Pirika, an AI created with the goal of assisting with speech recognition and serving as a conversation partner.<ref>{{Cite web |title=Linguistic Revival: How Japan Restored the Native Ainu Language with 'AI Pirika' |last=Blanks |first=Keona |url=https://stanfordrewired.com/post/japan-restored-ainu-ai-pirika/ |access-date=26 March 2023 |website=stanfordrewired.com |language=en |archive-url=https://web.archive.org/web/20211022041147/https://stanfordrewired.com/post/japan-restored-ainu-ai-pirika |archive-date=22 October 2021}}</ref>
+
+==Official recognition==
+[[File:Pirka Kotan, Sapporo.JPG|thumb|alt=The entrance to the carpark of the Pirka Kotan Museum|Pirka Kotan Museum, an Ainu language and cultural center in [[Sapporo]] (Jozankei area)]]
+The [[Government of Japan|Japanese government]] made a decision to recognize Ainu as an [[indigenous language]] in June 2008.<ref>{{cite news |last1=Lewallen |first1=Ann-Elise |title=Indigenous at last! Ainu Grassroots Organizing and the Indigenous Peoples Summit in Ainu Mosir |url=https://apjjf.org/-ann-elise-lewallen/2971/article.html |work=The Asia Pacific Journal (Japan Focus) |issue=11 |date=1 November 2008 |archive-url=https://web.archive.org/web/20231023122729/https://apjjf.org/-ann-elise-lewallen/2971/article.html |archive-date=23 October 2023}}</ref>{{sfnp|Martin|2011}} The Japanese government approved and passed a [[Bill (law)|bill]] officially recognising the Ainu as an indigenous people in 2019.<ref>{{Cite web |title=Japan to recognise Ainu as 'indigenous people' for first time |url=https://www.aljazeera.com/news/2019/2/15/japan-to-recognise-ainu-as-indigenous-people-for-first-time |access-date=16 June 2023 |website=www.aljazeera.com |language=en}}</ref><ref name="Jozuka-2019">{{Cite web |last=Jozuka |first=Emiko |date=20 April 2019 |title=Japan's 'vanishing' Ainu will finally be recognized as indigenous people |url=https://www.cnn.com/2019/04/20/asia/japan-ainu-indigenous-peoples-bill-intl/index.html |access-date=16 June 2023 |website=CNN |language=en}}</ref>
+
+On 12 July 2020, the Japanese government opened the [[National Ainu Museum]] in [[Shiraoi, Hokkaido|Shiraoi]], [[Hokkaido]].<ref>{{Cite news |date=12 July 2020 |title=National Ainu Museum opens in Hokkaido after COVID-19 delay |url=https://www.japantimes.co.jp/news/2020/07/12/national/national-ainu-museum-opens/ |access-date=16 June 2023 |website=The Japan Times |place=Sapporo |language=en-US}}</ref> It forms one of three institutions named ''Upopoy'' ({{Literal translation|singing in a large group}} in Ainu), alongside the National Ainu Park and a memorial site on high ground on the east side of {{Nihongo3|Lake Poroto|ポロト湖|}} where Ainu services are held. Its director, Masahiro Nomoto, says that "One of our main objectives is to preserve and revive the language, as this is one of the most threatened elements of [[Ainu culture]]".<ref>{{Cite web |last1=Bassetti |first1=Francesco |last2=Budgen |first2=Mara |date=1 April 2023 |title=Ainu culture at the heart of Hokkaido's mindful tourism pivot |url=https://www.japantimes.co.jp/life/2023/04/01/lifestyle/ainu-culture-upopoy-museum-shiraoi/ |access-date=16 June 2023 |website=The Japan Times |language=en-US}}</ref>
+
+Announcements on some [[Public transport bus service|bus routes]] in Hokkaido can since be heard in Ainu, efforts are being undertaken to archive Ainu speech recordings by the [[Agency for Cultural Affairs]], and there is a popular educational [[Youtube channel|YouTube channel]] which teaches conversational Ainu.<ref name=":1">{{Cite web |last= |first= |date=21 February 2022 |title=Efforts underway to save Ainu language and culture |url=https://www.japantimes.co.jp/2022/02/21/special-supplements/efforts-underway-save-ainu-language-culture/ |access-date=16 June 2023 |website=The Japan Times |language=en-US}}</ref>
+
+While these measures have been praised for taking steps to protect the Ainu language and culture, the museum and related government efforts have been criticised for failing to acknowledge the history of Japanese [[discrimination]] against the Ainu people, and for the government's refusal to apologise for past misdeeds against the Ainu.<ref name="Jozuka-2019" /><ref>{{Cite news |title=Japan's Ainu people have a new museum. Many feel it omits a lot |newspaper=The Economist |url=https://www.economist.com/asia/2021/06/26/japans-ainu-people-have-a-new-museum-many-feel-it-omits-a-lot |access-date=16 June 2023 |issn=0013-0613}}</ref><!-- Should corroborate a bit - details of historical discrimination, treatment and (whatever) against Ainu during colonization period, etc.. -->
+
+==Phonology==
+Ainu [[syllable]]s are (C)V(C);{{efn|Consonant - Vowel - Consonant, where components in parentheses are optional (e.g., can be absent). For a detailed explanation see the example at the end of {{section link|Syllable|Grouping of components}}.}} they have an obligatory vowel, and an optional [[syllable onset]] and [[syllable coda|coda]] consisting of one consonant. There are few [[consonant cluster]]s.
+
+===Vowels===
+There are five [[vowel]]s in Ainu:
+
+{|class="wikitable" style="text-align: center"
+|-
+! &nbsp; !! [[Front vowel|Front]] !! [[Central vowel|Central]] !! [[Back vowel|Back]]
+|-
+! [[Close vowel|Close]]
+| {{IPA link|i}} || || {{IPA link|u}}
+|-
+! [[Mid vowel|Mid]]
+| {{IPA link|e}} || || {{IPA link|o}}
+|-
+! [[Open vowel|Open]]
+| || {{IPA link|a}} ||
+|}
+
+===Consonants===
+{|class="wikitable" style="text-align: center"
+|-
+!
+![[Bilabial consonant|Bilabial]]
+![[Alveolar consonant|Alveolar]]
+![[Palatal consonant|Palatal]]
+![[Velar consonant|Velar]]
+![[Glottal consonant|Glottal]]
+|-
+![[Nasal consonant|Nasal]]
+|{{IPA link|m}}
+|{{IPA link|n}}
+|
+|
+|
+|-
+![[Plosive]]
+|{{IPA link|p}}
+|{{IPA link|t}}
+|
+|{{IPA link|k}}
+| 
+|-
+![[Affricate]]
+|
+| colspan="2" |{{IPA link|t͡s}}
+|
+|
+|-
+![[Fricative]]
+|
+| colspan="2" |{{IPA link|s}}
+|
+|{{IPA link|h}}
+|-
+![[Flap consonant|Flap]]
+|
+|{{IPA link|ɾ}}
+|
+|
+|
+|-
+![[Semivowel]]
+|
+|
+|{{IPA link|j}}
+|{{IPA link|w}}
+|
+|}
+
+[[Obstruent]]s {{IPA|/p t ts~tʃ k/}} may be voiced {{IPA|[b d dz~dʒ ɡ]}} between vowels and after nasals. {{IPA|/t͡s/}} can be heard as {{IPAblink|t͡ʃ}} in free variation among speakers. Both {{IPA|/ti/}} and {{IPA|/tsi/}} are realized as {{IPA|[t͡ʃi]}}, and {{IPA|/s/}} becomes {{IPAblink|ʃ}} before {{IPA|/i/}} and at the end of syllables. {{IPA|/h/}} is heard as {{IPAblink|ɸ}} when occurring before {{IPA|/u/}}. {{IPA|/n/}} is heard as {{IPAblink|ŋ}} when before {{IPA|/k/}}, as well as in final position. A glottal stop {{IPAblink|ʔ}} is often inserted at the beginning of words, before an accented vowel, but is non-phonemic.
+
+The Ainu language also has a [[pitch accent]] system. Generally, words containing [[affix]]es have a high pitch on a syllable in the stem. This will typically fall on the first syllable if that is long (has a final consonant or a diphthong), and will otherwise fall on the second syllable, though there are exceptions to this generalization.
+
+==Grammar==
+[[linguistic typology|Typologically]], Ainu is similar in word order (and some aspects of phonology) to [[Japanese language|Japanese]].
+
+Ainu has a canonical word order of [[subject–object–verb|subject, object, verb]],<ref name="wals.info">{{Cite web |title=Ainu |url=http://wals.info/languoid/lect/wals_code_ain |access-date=29 July 2012 |website=World Atlas of Language Structures Online}}</ref> and uses postpositions rather than [[preposition]]s. [[Noun]]s can cluster to modify one another; the head comes at the end. Verbs, which are inherently either [[Transitivity (grammatical category)|transitive]] or intransitive, accept various [[Derivation (linguistics)|derivational affixes]]. Ainu does not have [[grammatical gender]]. Plurals are indicated by a suffix.<ref name="wals.info"/>
+
+Classical Ainu, the language of the {{transliteration|ain|[[yukar]]}}, is [[polysynthetic]], with [[Incorporation (linguistics)|incorporation]] of nouns and adverbs; this is greatly reduced in the modern colloquial language.
+
+[[Applicative voice|Applicatives]] may be used in Ainu to place nouns in [[Dative case|dative]], [[Instrumental case|instrumental]], [[Comitative case|comitative]], [[Locative case|locative]], [[Allative case|allative]], or [[Ablative case|ablative]] roles. Besides freestanding nouns, these roles may be assigned to incorporated nouns, and such use of applicatives is in fact mandatory for incorporating [[Oblique case|oblique]] nouns. Like incorporation, applicatives have grown less common in the modern language.
+
+Ainu has a closed class of [[plural verb]]s, and some of these are [[Suppletion|suppletive]].
+
+Ainu has a system of verbal affixes (shown below) which mark agreement for person and case. The specific cases that are marked differ by person, with [[nominative–accusative alignment|nominative–accusative marking]] for the first person singular, [[tripartite alignment|tripartite marking]] for the first person plural and [[indefinite pronoun|indefinite (or 'fourth')]] person, and [[Direct alignment|direct or 'neutral' marking]] for the second singular and plural, and third persons (i.e. the affixes do not differ by case).{{sfnp|Dal Corso|2016}}<ref>{{Cite book |url=https://books.google.com/books?id=drVhDwAAQBAJ&pg=PT833 |title=Valency Classes in the World's Languages |date=2015 |publisher=De Gruyter |isbn=978-3-11-039527-3 |editor-last=Malchukov |editor-first=Andrej |volume=1: Introducing the Framework, and Case Studies from Africa and Eurasia |page=833 |editor2-last=Comrie |editor2-first=Bernard}}</ref>
+
+{| class="wikitable" style="text-align: center"
+|+ Saru Ainu agreement affixes{{sfnp|Dal Corso|2016}}
+|-
+! rowspan="2" colspan="2" | 
+! colspan="2" | Subject
+! rowspan="2" | Object
+|-
+! Intransitive
+! Transitive<br />(Agent)
+|-
+! rowspan="2" | 1st person
+! {{small|singular}}
+| colspan="2" | ku-<br>ク- || en-<br>エン-
+|-
+! {{small|plural}}
+| -as<br>-アㇲ || ci-<br>チ- || un-<br>ウン-
+|-
+! rowspan="2" | 2nd person
+! {{small|singular}}
+| colspan="3" | e-<br>エ-
+|-
+! {{small|plural}}
+| colspan="3" | eci-<br>エチ-
+|-
+! colspan="2" | 3rd person
+| colspan="3" | Ø-
+|-
+! colspan="2" | 4th person
+| -an<br>-アン || a-<br>ア- || i-<br>イ
+|}
+
+{{fs interlinear|lang=ain|number=a.
+|クイタㇰ。
+|Ku-itak.
+|1SG-speak
+|'I spoke.'{{sfnp|Shibatani|1990}}
+}}
+
+{{fs interlinear|lang=ain|number=b.
+|エイタㇰ。
+|E-itak.
+|2SG-speak
+|You {{sc|(SG)}} spoke.'{{sfnp|Shibatani|1990}}
+}}
+
+{{fs interlinear|lang=ain|number=c.
+|イタㇰ。
+|Itak.
+|speak
+|'He spoke.'{{sfnp|Shibatani|1990}}
+}}
+
+===Sentence types===
+====Intransitive sentences====
+{{fs interlinear|lang=ain|number=a.
+|クアニ クイタㇰ。
+|Kuani ku-itak.
+|I 1SG-speak
+|'I spoke.'{{sfnp|Shibatani|1990}}
+}}
+
+{{fs interlinear|lang=ain|number=b.
+|アイヌ エㇰ。
+|Aynu ek.
+|person come
+|'A person came.'{{sfnp|Shibatani|1990}}
+}}
+
+{{fs interlinear|lang=ain|number=c.
+|ポン ツ゚レシ カ イサㇺ。|c1=（石狩）
+|Pon turesi ka isam.|c2=(Ishikari)
+|small sister too die
+|'The small sister too died.'{{sfnp|Shibatani|1990}}
+}}
+
+====Transitive and ditransitive sentences====
+{{fs interlinear|lang=ain|number=a.
+|アエコイキ。|c1=(虎杖)
+|A-e-koyki.|c2=(Itadori)
+|1SG-2SG-kill
+|'I kill you.'{{sfnp|Shibatani|1990}}
+}}
+
+{{fs interlinear|lang=ain|number=b.
+|金田一 殿 ニㇱパ クヌカㇻ。
+|Kindaichi tono nispa ku-nukar.|c2=(Ishikari)
+|Kindaichi chief sir 1SG-see
+|'I met Mr. Kindaichi.'{{sfnp|Shibatani|1990}}
+}}
+
+{{fs interlinear|lang=ain|number=c.
+|カムイ ウンマ ライケ。
+|Kamuy umma rayke.
+|bear horse kill
+|'A bear killed a horse.'{{sfnp|Shibatani|1990}}
+}}
+
+==Writing system==
+[[File:Yoanne-Batchelor-01.png|thumb|[[Gospel of John]] in Latin-script Ainu]]
+The Ainu language is written in a modified version of the Japanese [[Katakana|katakana syllabary]], although it is possible for Japanese loan words and names to be written in [[kanji]] (for example, "mobile phone" can be written {{lang|ain-Kana|ケイタイデンワ}} or {{lang|ain-Hani|携帯電話}}). There is also a [[Latin script|Latin-based alphabet]] in use. The ''[[Ainu Times]]'' publishes in both. In the Latin [[orthography]], {{IPA|/ts/}} is spelled ''c'' and {{IPA|/j/}} is spelled ''y''; the [[Syllable#Null onset|glottal stop]], {{IPA|[ʔ]}}, which only occurs initially before accented vowels, is not written. Other phonemes use the same character as the IPA transcription given above. An equals sign (=) is used to mark [[morpheme]] boundaries, such as after a prefix. Its pitch accent is denoted by [[acute accent]] in Latin script (e.g., ''á''). This is usually not denoted in katakana.
+
+The Rev. [[John Batchelor (missionary)|John Batchelor]] was an English missionary who lived among the Ainu, studied them and published many works on the Ainu language.<ref>{{Cite book |last=Frédéric |first=Louis |title=Japan Encyclopedia |publisher=Harvard University Press |year=2005 |isbn=978-0-674-01753-5 |edition=illustrated, reprint |page=13 |translator-last=Roth |translator-first=Käthe |chapter=Ainu |chapter-url=https://books.google.com/books?id=p2QnPijAEmEC&pg=PA13}}</ref><ref>{{Cite book |last=Ivar Lissner |url=https://books.google.com/books?id=0skIAQAAIAAJ&q=1877+theologian+john+batchelor++missionary+studied |title=The Living Past |publisher=Putnam's |year=1957 |edition=4 |page=204 |quote=In 1877 a young and industrious theologian went to visit the Ainu. His name was John Batchelor, and he was a scientist and missionary. He got to know the Ainu well, studied their language and customs, won their affection, and remained their staunch friend until the end of his days. It is to Batchelor that we owe our deepest insight into the |access-date=23 April 2012}} [Original from the University of California Digitized 27 January 2009 Length 444 pages]</ref> Batchelor wrote extensively, both works about the Ainu language and works in Ainu itself. He was the first to write in Ainu and use a writing system for it.<ref>{{Cite book |last=Patric |first=John |url=https://books.google.com/books?id=wbFCAAAAIAAJ&q=batchelor+ainu+hitherto+wrote+books |title=...Why Japan Was Strong |publisher=Doubleday, Doran & Company |year=1943 |edition=4 |page=72 |quote=John Batchelor set about to learn the Ainu language, which the Japanese had not troubled ever to learn. He laboriously compiled an Ainu dictionary. He singlehandedly turned this hitherto but spoken tongue into a written language, and himself wrote books in it. |access-date=23 April 2012}} [Original from the University of California Digitized 16 October 2007 Length 313 pages]</ref> [[Bible translations into Ainu|Batchelor's translation]]s of various books of the Bible were published from 1887, and his ''[[New Testament]]'' translation was published in Yokohama in 1897 by a joint committee of the [[British and Foreign Bible Society]], the [[American Bible Society]], and the [[Scottish Bible Society|National Bible Society of Scotland]]. Other books written in Ainu include dictionaries, a grammar, and books on Ainu culture and language.
+
+===Special katakana for the Ainu language===
+A [[Unicode]] standard exists for a set of extended katakana ([[Katakana Phonetic Extensions]]) for transliterating the Ainu language and other languages written with katakana.<ref>See [http://www.alanwood.net/unicode/katakana_phonetic_extensions.html this page] at alanwood.net and [https://www.unicode.org/charts/PDF/U31F0.pdf this section] of the Unicode specification.</ref> These characters are used to write final consonants and sounds that cannot be expressed using conventional katakana. The extended katakana are based on regular katakana and either are smaller in size or have a [[handakuten]]. As few fonts yet support these extensions, workarounds exist for many of the characters, such as using a smaller font with the regular katakana {{lang|ja|ク}} {{transliteration|ja|ku}} to produce <span style="font-size:70%;" lang="ja" class="t_nihongo_kana">ク</span> to represent the separate small katakana glyph {{lang|ain-Kana|ㇰ}} {{transliteration|ain|ku}} used as in {{lang|ain-Kana|アイヌイタㇰ}} ({{transliteration|ain|Ainu itak}}).
+
+This is a list of special katakana used in transcribing the Ainu language. Most of the characters are of the extended set of katakana, though a few have been used historically in Japanese,{{Citation needed|date=April 2009}} and thus are part of the main set of katakana. A number of previously proposed characters have not been added to Unicode as they can be represented as a sequence of two existing codepoints.
+
+{| class="wikitable"
+|-
+! Character
+! Unicode
+! Name
+! Ainu usage
+! Pronunciation
+|-
+|{{lang|ain-Kana|ㇰ}}
+| 31F0
+| Katakana Letter Small Ku
+| [[Syllable#Coda|Final]] ''k''
+|{{IPAslink|k}}
+|-
+|{{lang|ain-Kana|ㇱ}}
+| 31F1
+| Katakana Letter Small Shi
+| Final ''s'' {{IPAblink|ɕ}}
+|{{IPAslink|s}} or {{IPAslink|ɕ}}
+|-
+|{{lang|ain-Kana|ㇲ}}
+| 31F2
+| Katakana Letter Small Su
+| Final ''s'', used to emphasize its pronunciation as {{IPAblink|s}} rather than {{IPAblink|ɕ}}. {{IPAblink|s}} and {{IPAblink|ʃ}} are [[allophone]]s in Ainu.
+|{{IPAslink|s}}
+|-
+|{{lang|ain-Kana|ㇳ}}
+| 31F3
+| Katakana Letter Small To
+| Final ''t''
+|{{IPAslink|t}}
+|-
+|{{lang|ain-Kana|ㇴ}}
+| 31F4
+| Katakana Letter Small Nu
+| Final ''n''
+|{{IPAslink|n}}
+|-
+|{{lang|ain-Kana|ㇵ}}
+| 31F5
+| Katakana Letter Small Ha
+| Final ''h'' {{IPAblink|x}}, succeeding the vowel ''a''. (e.g. {{lang|ain-Kana|アㇵ}} ''ah'') Sakhalin Ainu only.
+|{{IPAslink|h}} or {{IPAslink|x}}
+|-
+|{{lang|ain-Kana|ㇶ}}
+| 31F6
+| Katakana Letter Small Hi
+| Final ''h'' {{IPAblink|ç}}, succeeding the vowel ''i''. (e.g. {{lang|ain-Kana|イㇶ}} ''ih'') Sakhalin Ainu only.
+|{{IPAslink|h}} or {{IPAslink|ç}}
+|-
+|{{lang|ain-Kana|ㇷ}}
+| 31F7
+| Katakana Letter Small Fu
+| Final ''h'' {{IPAblink|x}}, succeeding the vowel ''u''. (e.g. {{lang|ain-Kana|ウㇷ}} ''uh'') Sakhalin Ainu only.
+|{{IPAslink|h}} or {{IPAslink|x}}
+|-
+|{{lang|ain-Kana|ㇸ}}
+| 31F8
+| Katakana Letter Small He
+| Final ''h'' {{IPAblink|x}}, succeeding the vowel ''e''. (e.g. {{lang|ain-Kana|エㇸ}} ''eh'') Sakhalin Ainu only.
+|{{IPAslink|h}} or {{IPAslink|x}}
+|-
+|{{lang|ain-Kana|ㇹ}}
+| 31F9
+| Katakana Letter Small Ho
+| Final ''h'' {{IPAblink|x}}, succeeding the vowel ''o''. (e.g. {{lang|ain-Kana|オㇹ}} ''oh'') Sakhalin Ainu only.
+|{{IPAslink|h}} or {{IPAslink|x}}
+|-
+|{{lang|ain-Kana|ㇺ}}
+| 31FA
+| Katakana Letter Small Mu
+| Final ''m''
+|{{IPAslink|m}} Voiced bilabial nasal
+|-
+|{{lang|ain-Kana|ㇻ}}
+| 31FB
+| Katakana Letter Small Ra
+| Final ''r'' {{IPAblink|ɾ}}, succeeding the vowel ''a''. (e.g. {{lang|ain-Kana|アㇻ}} ''ar'') 
+|{{IPAslink|ɾ}} Voiced alveolar tap
+|-
+|{{lang|ain-Kana|ㇼ}}
+| 31FC
+| Katakana Letter Small Ri
+| Final ''r'' {{IPAblink|ɾ}}, succeeding the vowel ''i''. (e.g. {{lang|ain-Kana|イㇼ}} ''ir'')
+|{{IPAslink|ɾ}} Voiced alveolar tap
+|-
+|{{lang|ain-Kana|ㇽ}}
+| 31FD
+| Katakana Letter Small Ru
+| Final ''r'' {{IPAblink|ɾ}}, succeeding the vowel ''u''. (e.g. {{lang|ain-Kana|ウㇽ}} ''ur'')
+|{{IPAslink|ɾ}} Voiced alveolar tap
+|-
+|{{lang|ain-Kana|ㇾ}}
+| 31FE
+| Katakana Letter Small Re
+| Final ''r'' {{IPAblink|ɾ}}, succeeding the vowel ''e''. (e.g. {{lang|ain-Kana|エㇾ}} ''er'')
+|{{IPAslink|ɾ}} Voiced alveolar tap
+|-
+|{{lang|ain-Kana|ㇿ}}
+| 31FF
+| Katakana Letter Small Ro
+| Final ''r'' {{IPAblink|ɾ}}, succeeding the vowel ''o''. (e.g. {{lang|ain-Kana|オㇿ}} ''or'')
+|{{IPAslink|ɾ}} Voiced alveolar tap
+|-
+! colspan="5" style="text-align:left;"| Characters represented using [[combining character]]s
+|-
+| {{lang|ain-Kana|ㇷ゚}}
+| 31F7 + 309A
+| Katakana Letter Small Pu
+| Final ''p''
+|{{IPAslink|p}}
+|-
+| {{lang|ain-Kana|セ゚}}
+| 30BB + 309A
+| Katakana Letter Se With Semi-Voiced Sound Mark
+| ''ce'' {{IPA|[tse]}}
+|{{IPAslink|ts}} + {{IPAslink|e}}
+|-
+| {{lang|ain-Kana|ツ゚}}
+| 30C4 + 309A
+| Katakana Letter Tu With Semi-Voiced Sound Mark
+| rowspan=2 | ''tu''. {{lang|ja|ツ゚}} and {{lang|ja|ト゚}} are interchangeable.
+|{{IPAslink|t}} + {{IPAslink|u}}
+|-
+| {{lang|ain-Kana|ト゚}}
+| 30C8 + 309A
+| Katakana Letter To With Semi-Voiced Sound Mark
+|{{IPAslink|t}} + {{IPAslink|u}}
+|}
+
+===Basic syllables===
+{| class="wikitable"
+! !! a<br />{{IPAblink|a}} !! i<br />{{IPAblink|i}} !! u<br />{{IPAblink|u|u̜}} !! e<br />{{IPAblink|e}} !! o<br />{{IPAblink|o}}
+|-
+| || a ア<br />{{IPA|[a]}} || i イ<br />{{IPA|[i]}} || u ウ<br />{{IPA|[u̜]}} || e エ<br />{{IPA|[e]}} || o オ<br />{{IPA|[o]}}
+|-
+| rowspan=2 | k<br />{{IPAblink|k}}<ref group=note name=voicing>''k'', ''t'', ''c'', ''p'' are sometimes voiced {{IPAblink|ɡ}}, {{IPAblink|d}}, [dz~dʒ], {{IPAblink|b}}, respectively. It does not change the meaning of a word, but it sounds more rough/masculine. When they are voiced, they may be written as ''g'', ''d'', ''j'', ''dz'', ''b'', ガ, ダ, ヂャ, ヅァ, バ, etc.</ref> || ka カ<br />{{IPA|[ka]}} || ki キ<br />{{IPA|[ki]}} || ku ク<br />{{IPA|[ku̜]}} || ke ケ<br />{{IPA|[ke]}} || ko コ<br />{{IPA|[ko]}}
+|-
+| colspan=5 | <span style="color:gray;">-</span>k ㇰ<br />{{IPA|[}}<span style="color:gray;">{{IPA|-}}</span>{{IPA|k̚]}}
+|-
+| rowspan=2 | s<br />{{IPAblink|s}} ~ {{IPAblink|ʃ}} || sa シャ / サ<ref group=note name=allograph>Either may be used according to actual pronunciations, or to writer's preferred styles.</ref><br />{{IPA|[sa]}} ~ {{IPA|[ʃa]}} || si シ<br />{{IPA|[ʃi]}} || su シュ / ス<ref group=note name=allograph/><br />{{IPA|[su̜]}} ~ {{IPA|[ʃu̜]}} || se シェ / セ<ref group=note name=allograph/><br />{{IPA|[se]}} ~ {{IPA|[ʃe]}} || so ショ / ソ<ref group=note name=allograph/><br />{{IPA|[so]}} ~ {{IPA|[ʃo]}}
+|-
+| colspan=5 | <span style="color:gray;">-</span>s ㇱ / ㇲ<ref group=note name=allograph/><br />{{IPA|[}}<span style="color:gray;">{{IPA|-}}</span>{{IPA|ɕ]}}
+|-
+| rowspan=2 | t<br />{{IPAblink|t}}<ref group=note name=voicing/> || ta タ<br />{{IPA|[ta]}} || <span style="color:gray;">ci チ<br />{{IPA|[tʃi]}}</span> || tu {{lang|ja|ト゚}} / {{lang|ja|ツ゚}}<ref group=note name=allograph/><br />{{IPA|[tu̜]}} || te テ<br />{{IPA|[te]}} || to ト<br />{{IPA|[to]}}
+|-
+| colspan=5 | <span style="color:gray;">-</span>t ㇳ / ッ<ref group=note>ッ is final ''t'' at the end of a word (e.g. ''pet'' = ペッ = ペㇳ). In the middle of a polysyllabic word, it is a final consonant preceding the initial with a same value (e.g. ''orta'' /otta/ = オッタ; オㇿタ is not preferred).{{Clarify|date=December 2016|reason=The last sentence lacks clarity. Why is オッタ still romanized orta when all other sources uses otta?}}</ref><br />{{IPA|[}}<span style="color:gray;">{{IPA|-}}</span>{{IPA|t̚]}}
+|-
+| c<br />{{IPAblink|ts}} ~ {{IPAblink|tʃ}}<ref group=note name=voicing/> || ca チャ<br />{{IPA|[tsa]}} ~ {{IPA|[tʃa]}} || ci チ<br />{{IPA|[tʃi]}} || cu ツ / チュ<ref group=note name=allograph/><br />{{IPA|[tsu̜]}} ~ {{IPA|[tʃu̜]}} || ce {{lang|ja|セ゚}} / チェ<ref group=note name=allograph/><br />{{IPA|[tse]}} ~ {{IPA|[tʃe]}} || co チョ<br />{{IPA|[tso]}} ~ {{IPA|[tʃo]}}
+|-
+| rowspan=2 | n<br />{{IPAblink|n}} || na ナ<br />{{IPA|[na]}} || ni ニ<br />{{IPA|[nʲi]}} || nu ヌ<br />{{IPA|[nu̜]}} || ne ネ<br />{{IPA|[ne]}} || no ノ<br />{{IPA|[no]}}
+|-
+| colspan=5 | <span style="color:gray;">-</span>n ㇴ / ン<ref group=note>At the end of a word, ''n'' can be written either ㇴ or ン. In the middle of a polysyllabic word, it is ン. (e.g. ''tan-mosir'' = タンモシㇼ = タㇴ+モシㇼ, but not タㇴモシㇼ.)</ref><br />{{IPA|[}}<span style="color:gray;">{{IPA|-}}</span>{{IPA|n}}, <span style="color:gray;">{{IPA|-}}</span>{{IPA|m}}<span style="color:gray;">{{IPA|-}}</span>, <span style="color:gray;">{{IPA|-}}</span>{{IPA|ŋ}}<span style="color:gray;">{{IPA|-}}</span>{{IPA|]}}<ref group=note>{{IPAblink|m}} before {{IPAblink|p}}, {{IPAblink|ŋ}} before {{IPAblink|k}}, {{IPAblink|n}} elsewhere. Unlike Japanese, it does not become other sounds such as [[nasal vowel]]s.</ref>
+|-
+| h<ref group=note name=h>Initial ''h'' {{IPAblink|h}} and final ''h'' {{IPAblink|x}} are different phonemes. Final ''h'' exists in Sakhalin Ainu only.</ref><br />{{IPAblink|h}} || ha ハ<br />{{IPA|[ha]}} || hi ヒ<br />{{IPA|[çi]}} || hu フ<br />{{IPA|[ɸu̜]}} || he ヘ<br />{{IPA|[he]}} || ho ホ<br />{{IPA|[ho]}}
+|-
+| <span style="color:gray;">-</span>h<ref group=note name=h/><br />{{IPA|[}}<span style="color:gray;">{{IPA|-}}</span>{{IPA|{{IPA link|x}}]}} || <span style="color:gray;">-a</span>h ㇵ<br />{{IPA|[}}<span style="color:gray;">{{IPA|-a}}</span>{{IPA|x]}} || <span style="color:gray;">-i</span>h ㇶ<br />{{IPA|[}}<span style="color:gray;">{{IPA|-i}}</span>{{IPA|ç]}} || <span style="color:gray;">-u</span>h ㇷ<br />{{IPA|[}}<span style="color:gray;">{{IPA|-u̜}}</span>{{IPA|x]}} || <span style="color:gray;">-e</span>h ㇸ<br />{{IPA|[}}<span style="color:gray;">{{IPA|-e}}</span>{{IPA|x]}} || <span style="color:gray;">-o</span>h ㇹ<br />{{IPA|[}}<span style="color:gray;">{{IPA|-o}}</span>{{IPA|x]}}
+|-
+| rowspan=2 | p<br />{{IPAblink|p}}<ref group=note name=voicing/> || pa パ<br />{{IPA|[pa]}} || pi ピ<br />{{IPA|[pi]}} || pu プ<br />{{IPA|[pu̜]}} || pe ペ<br />{{IPA|[pe]}} || po ポ<br />{{IPA|[po]}}
+|-
+| colspan=5 | <span style="color:gray;">-</span>p ㇷ゚<br />{{IPA|[}}<span style="color:gray;">{{IPA|-}}</span>{{IPA|p̚]}}
+|-
+| rowspan=2 | m<br />{{IPAblink|m}} || ma マ<br />{{IPA|[ma]}} || mi ミ<br />{{IPA|[mi]}} || mu ム<br />{{IPA|[mu̜]}} || me メ<br />{{IPA|[me]}} || mo モ<br />{{IPA|[mo]}}
+|-
+| colspan=5 | <span style="color:gray;">-</span>m ㇺ<br />{{IPA|[}}<span style="color:gray;">{{IPA|-}}</span>{{IPA|m]}}
+|-
+| y<br />{{IPAblink|j}} || ya ヤ<br />{{IPA|[ja]}} || || yu ユ<br />{{IPA|[ju̜]}} || ye イェ<br />{{IPA|[je]}} || yo ヨ<br />{{IPA|[jo]}}
+|-
+| rowspan=3 | r<br />{{IPAblink|ɾ}} || ra ラ<br />{{IPA|[ɾa]}} || ri リ<br />{{IPA|[ɾi]}} || ru ル<br />{{IPA|[ɾu̜]}} || re レ<br />{{IPA|[ɾe]}} || ro ロ<br />{{IPA|[ɾo]}}
+|-
+| <span style="color:gray;">-a</span>r ㇻ<br />{{IPA|[}}<span style="color:gray;">{{IPA|-a}}</span>{{IPA|ɾ]}} || <span style="color:gray;">-i</span>r ㇼ<br />{{IPA|[}}<span style="color:gray;">{{IPA|-i}}</span>{{IPA|ɾ]}} || <span style="color:gray;">-u</span>r ㇽ<br />{{IPA|[}}<span style="color:gray;">{{IPA|-u̜}}</span>{{IPA|ɾ]}} || <span style="color:gray;">-e</span>r ㇾ<br />{{IPA|[}}<span style="color:gray;">{{IPA|-e}}</span>{{IPA|ɾ]}} || <span style="color:gray;">-o</span>r ㇿ<br />{{IPA|[}}<span style="color:gray;">{{IPA|-o}}</span>{{IPA|ɾ]}}
+|-
+| colspan=5 | <span style="color:gray;">-</span>r ㇽ<br />{{IPA|[}}<span style="color:gray;">{{IPA|-}}</span>{{IPA|ɾ]}}
+|-
+| w<br />{{IPAblink|w}} || wa ワ<br />{{IPA|[wa]}} || wi ウィ / ヰ<ref group=note name=allograph/><br />{{IPA|[wi]}} || || we ウェ / ヱ<ref group=note name=allograph/><br />{{IPA|[we]}} || wo ウォ / ヲ<ref group=note name=allograph/><br />{{IPA|[wo]}}
+|-
+| colspan=6 |{{Reflist|group=note}}
+|}
+
+===Diphthongs===
+[[Syllable coda|Final]] {{IPAblink|ɪ}} is spelled ''y'' in Latin, ordinal イ in katakana. Final {{IPAblink|ʊ}} is spelled ''w'' in Latin, ordinal ウ in katakana.<ref>{{cite web|url=https://ainugo.nam.go.jp/siror/rule/|title=アイヌ語の書き方のルール {{!}} 国立アイヌ民族博物館|archive-url=https://web.archive.org/web/20260109085509/https://ainugo.nam.go.jp/siror/rule/|archive-date=9 January 2026}}</ref>
+
+{| class="wikitable"
+|+ Example with [[Syllable onset|initial]] ''k'':
+! {{IPA|[kaɪ]}} !! {{IPA|[ku̜ɪ]}} !! {{IPA|[keɪ]}} !! {{IPA|[koɪ]}} !! {{IPA|[kaʊ]}} !! {{IPA|[kiʊ]}} !! {{IPA|[keʊ]}} !! {{IPA|[koʊ]}}
+|-
+| {{lang|ain-Latn|kay}} || {{lang|ain-Latn|kuy}} || {{lang|ain-Latn|key}} || {{lang|ain-Latn|koy}} || {{lang|ain-Latn|kaw}} || {{lang|ain-Latn|kiw}} || {{lang|ain-Latn|kew}} || {{lang|ain-Latn|kow}}
+|-
+| カイ || クイ || ケイ || コイ || カウ || キウ || ケウ || コウ
+|-
+! {{IPA|[ka.ɪ]}} !! {{IPA|[ku̜.ɪ]}} !! {{IPA|[ke.ɪ]}} !! {{IPA|[ko.ɪ]}} !! {{IPA|[ka.u̜]}} !! {{IPA|[ki.u̜]}} !! {{IPA|[ke.u̜]}} !! {{IPA|[ko.u̜]}}
+|-
+| {{lang|ain-Latn|ka{{=}}i}} || {{lang|ain-Latn|ku{{=}}i}} || {{lang|ain-Latn|ke{{=}}i}} || {{lang|ain-Latn|ko{{=}}i}} || {{lang|ain-Latn|ka{{=}}u}} || {{lang|ain-Latn|ki{{=}}u}} || {{lang|ain-Latn|ke{{=}}u}} || {{lang|ain-Latn|ko{{=}}u}}
+|-
+| カイ || クイ || ケイ || コイ || カウ || キウ || ケウ || コウ
+|}
+
+Since the above rule is used systematically, some katakana combinations have different sounds from conventional Japanese.
+
+{| class="wikitable"
+|-
+! !! ウィ !! クィ !! コウ !! スィ !! ティ !! トゥ !! フィ
+|-
+! Ainu
+|| {{IPA|[u̜ɪ]}} || {{IPA|[ku̜ɪ]}} || {{IPA|[ko.u̜]}} || {{IPA|[su̜ɪ]}} || {{IPA|[teɪ]}} || {{IPA|[toʊ]}} || {{IPA|[ɸu̜ɪ]}}
+|-
+! Japanese
+|| {{IPA|[wi]}} || {{IPA|[kwi]}} || {{IPA|[koː]}} || {{IPA|[si]}} || {{IPA|[ti]}} || {{IPA|[tu͍]}} || {{IPA|[ɸi]}}
+|-
+|}
+
+==Oral literature==
+The Ainu have a rich [[Oral literature|oral tradition]] of hero-sagas called {{transliteration|ain|[[yukar]]}}, which retain a number of grammatical and lexical archaisms. {{transliteration|ain|Yukar}} were memorized and told at get-togethers and ceremonies that often lasted hours or even days. The Ainu also have another form of narrative often used called {{transliteration|ain|[[Uepeker]]}}, which was used in the same contexts.
+
+A native written form of the Ainu language has never existed; therefore, the Ainu people traditionally relied on memorization and oral communication to pass down their literature to the next generation.{{sfnp|Nowakowski|Ptaszynski|Masui|Momouchi|2019|p=3}} Ainu literature includes nonfiction, such as their history and "hunting adventures", and fiction such as stories about spiritual avatars, magic,{{sfnp|Piłsudski|1912|p=25 (p.xv)}} myths, and heroes.{{sfnp|Nowakowski|Ptaszynski|Masui|Momouchi|2019|p=3}}
+
+=== Research on oral literature ===
+{{listen|type=music
+ | filename     = Audio recording of an Ainu song by Bronisław Piłsudski.mp3
+ | title        = Audio recording of an Ainu song by Bronisław Piłsudski
+ | description  = An audio recording of an Ainu song by [[Bronisław Piłsudski]] 
+}}
+The oral literature of the Ainu languages has been studied mainly by Japanese and European researchers;{{sfnp|Nowakowski|Ptaszynski|Masui|Momouchi|2019|p=4}} thus, Ainu literature has been transcribed using writing systems such as Japanese [[katakana]] (commonly used for foreign-language text) and the [[Latin alphabet]], and documented in the languages of the researchers themselves.{{sfnp|Nowakowski|Ptaszynski|Masui|Momouchi|2019|pp=3–4}} One prominent researcher of the Ainu languages is [[Bronisław Piłsudski]], a Polish anthropologist who lived in Sakhalin from 1886 to 1905,{{sfnp|Nowakowski|Ptaszynski|Masui|Momouchi|2019|p=4}} and who published "Materials for the Study of the Ainu Language and Folklore" in 1912.{{sfnp|Piłsudski|1912}} In addition, Piłsudski made audio recordings from 1902 to 1903, which is believed to be the first attempt to do so in the history of Ainu oral literature study.{{sfnp|Nowakowski|Ptaszynski|Masui|Momouchi|2019|p=4}} Japanese linguist Kyosuke Kindaichi is also famous for his work on the oral literature of the Ainu languages,{{sfnp|Nowakowski|Ptaszynski|Masui|Momouchi|2019|p=4}} and for his publication {{nihongo||あいぬ物語: 附・あいぬ語大意及語彙|Ainu monogatari: tsuketari Ainugo taii oyobi goi}} in 1913.<ref>{{cite book |last1=Kindaichi |first1=Kyōsuke |title=Ainu monogatari : tsuketari Ainugo taii oyobi goi |date=1913 |publisher=Hakubunkan |location=Tōkyō}}</ref>
+
+==Sample text==
+Below is a sample text from a traditional Ainu folktale, in Ainu, Japanese and English.<ref>{{cite web |last=Ager |first=Simon |url=https://omniglot.com/writing/ainu.htm |title=Ainu (アイヌ・イタㇰ / Aynu=itak) |website=omniglot.com |access-date=10 November 2022 |url-status=live |archive-url=https://archive.today/20221112170715/https://omniglot.com/writing/ainu.htm |archive-date=12 November 2022}}</ref>
+
+{| class="wikitable"
+! Ainu original
+! Latin transliteration
+! Japanese translation{{Clarify|reason=What do the parentheticals correspond to in the original Ainu?|date=August 2026}}
+! English translation
+|-
+| {{lang|ain-Kana|シネアン ト タ ぺテトㇰ ウン シノタㇱ クス パイェアㇱ アワ, ぺテトㇰタ シネ ポンルㇷ゚ネクㇿ ネスコ ウライ カㇿ クス ウライキㇰ ネアㇷ゚ コサニㇰケ ウカン プナㇱ・プナㇱ。}}
+| {{transliteration|ain|Sinean to ta petetok un sinotas kusu payeas awa, petetokta sine ponrupnekur nesko urai kar kusu uraikik neap kosanikkeukan punas-punas.}}
+| {{lang|ja|ある日に（川の）水源の方へ（私が）遊ぶに（私が）出かけたら（思いがけなく）（川の）水源に一人の小男が胡桃（くるみ）の木の梁（やな）をたてるため（胡桃の木の）杭を打っていた。 （それに下げた）腰を幾度も上げて立っている。(腰を曲げ曲げしている。)}}
+| One day, as I went out to play at the spring, there was a little man at the spring hitting stakes made of walnut wood, in order to erect (some) wooden beams. His hip bent (and he bent down) and he straightened out (as he worked, going up and down over and over). 
+|}
+
+==Notes==
+{{reflist|group=lower-alpha}}
+
+==References==
+{{Reflist}}
+
+===Bibliography===
+{{Refbegin}}
+* {{cite journal
+ |last=Bugaeva |first=Anna
+ |date=2010
+ |title=Internet applications for endangered languages: A talking dictionary of Ainu
+ |journal=Waseda Institute for Advanced Study Research Bulletin
+ |volume=3
+ |pages=73–81
+ |url=https://core.ac.uk/download/pdf/144456981.pdf
+ |archive-url=https://web.archive.org/web/20210512204441/https://core.ac.uk/download/pdf/144456981.pdf
+ |archive-date=12 May 2021
+}}
+* {{Cite journal
+ |last=Cheung |first=S.C.H.
+ |date=2003
+ |title=Ainu Culture in Transition
+ |journal=Futures
+ |volume=35
+ |issue=9
+ |pages=951–959
+ |doi=10.1016/s0016-3287(03)00051-x |doi-access=free
+}}
+* {{Cite journal
+ |last=Dal Corso |first=Elia
+ |date=2016
+ |title=Morphological alignment in Saru Ainu: A direct-inverse analysis
+ |journal=SOAS Working Papers in Linguistics
+ |volume=18
+ |pages=3–28
+ |access-date=4 July 2020
+ |url=https://www.soas.ac.uk/linguistics/research/workingpapers/volume-18/file116233.pdf
+ |url-status=dead
+ |archive-date=7 December 2020
+ |archive-url=https://web.archive.org/web/20201207060109/https://www.soas.ac.uk/linguistics/research/workingpapers/volume-18/file116233.pdf
+}}
+* {{cite journal
+ |last=Gayman |first=Jeffry
+ |date=2011
+ |title=Ainu right to education and Ainu practice of 'education': current situation and imminent issues in light of Indigenous education rights and theory
+ |journal=Intercultural Education
+ |volume=22
+ |issue=1
+ |pages=15–27
+ |doi=10.1080/14675986.2011.549642
+ |s2cid=144373133
+}}
+* {{Cite journal
+ |last=Hansen |first=A. S.
+ |date=2014
+ |title=Re-vitalizing an Indigenous Language: Dictionaries of Ainu Languages in Japan, 1625–2013
+ |journal=Lexicographica
+ |volume=30
+ |issue=1
+ |pages=547–578
+ |doi=10.1515/lexi-2014-0017
+ |s2cid=156901164
+}}
+* {{cite journal
+ |last=Maruyama |first=Hiroshi
+ |date=2014
+ |title=Japan's Policies Towards the Ainu Language and Culture with Special Reference to North Fennoscandian Sami Policies
+ |journal=Acta Borealia
+ |volume=31
+ |issue=2
+ |pages=152–175
+ |doi=10.1080/08003831.2014.967980
+ |s2cid=145497777
+}}
+* {{cite journal
+ |last=Martin |first=Kylie
+ |date=2011
+ |title=Aynu itak: On the Road to Ainu Language Revitalization
+ |journal=Media and Communication Studies
+ |script-journal=ja:メディア·コミュニケーション研究
+ |volume=60
+ |pages=57–93
+ |hdl=2115/47031 |hdl-access=free
+ |url=https://eprints.lib.hokudai.ac.jp/dspace/bitstream/2115/47031/1/MSC60_005.pdf
+ |url-status=live
+ |archiveurl=https://web.archive.org/web/20150421225339/https://eprints.lib.hokudai.ac.jp/dspace/bitstream/2115/47031/1/MSC60_005.pdf
+ |archivedate=21 April 2015
+}}
+* {{Cite book
+ |editor1-last=Miyaoka |editor1-first=Osahito
+ |editor2-last=Sakiyama |editor2-first=Osamu
+ |editor3-last=Krauss |editor3-first=Michael E.
+ |date=2007
+ |title=The Vanishing Languages of the Pacific Rim
+ |publisher=[[Oxford University Press]]
+ |location=Oxford
+ |isbn=978-0-19-153289-4
+ |pages=377–382
+ |doi=10.1093/oso/9780199266623.001.0001
+}}
+* {{cite journal
+ |last1=Nowakowski |first1=Karol
+ |last2=Ptaszynski |first2=Michal
+ |last3=Masui |first3=Fumito
+ |last4=Momouchi |first4=Yoshio
+ |date=November 2019
+ |title=Improving Basic Natural Language Processing Tools for the Ainu Language
+ |journal=Information
+ |volume=10
+ |issue=11
+ |page=329
+ |doi=10.3390/info10110329 |doi-access=free
+ |language=en
+}}
+* {{cite book
+ |last=Piłsudski |first=Bronisław
+ |date=1912
+ |title=Materials for the study of the Ainu language and folklore
+ |publisher=Imperial academy of science
+ |location=Poland
+}}
+* {{Cite journal
+ |last1=Savage |first1=Theresa
+ |last2=Longo |first2=Michael
+ |date=2013
+ |title=Legal Frameworks for the Protection of Ainu Language and Culture in Japan: International and European Perspectives
+ |journal=Japanese Studies
+ |volume=33
+ |issue=1
+ |pages=101–120
+ |doi=10.1080/10371397.2013.782098
+ |s2cid=145788025
+ |hdl=1959.3/313493 |url=https://figshare.com/articles/journal_contribution/26219816
+ |hdl-access=free
+|url-access=subscription
+ }}
+* {{cite book
+ |last=Shibatani |first=Masayoshi
+ |date=1990
+ |title=The Languages of Japan
+ |chapter=Part 1: The Ainu Language
+ |publisher=Cambridge University Press
+ |isbn=978-0-521-36918-3
+ |location=Cambridge
+}}
+* {{cite journal
+ |last1=Teeter |first1=Jennifer
+ |last2=Okazaki |first2=Takayuki
+ |date=2011
+ |title=Ainu as a Heritage Language of Japan: History, Current State and Future of Ainu Language Policy and Education
+ |journal=Heritage Language Journal
+ |volume=8
+ |issue=2
+ |pages=251–269
+ |doi=10.46538/hlj.8.2.5 |doi-access=free
+}}
+* {{Cite journal
+ |last=Uzawa |first=Kanako
+ |date=2019
+ |title=What Does Ainu Cultural Revitalisation Mean to Ainu and Wajin Youth in the 21st century? Case Study of Urespa as a Place to Learn Ainu Culture in the City of Sapporo, Japan
+ |journal=AlterNative
+ |volume=15
+ |issue=2
+ |pages=168–179
+ |doi=10.1177/1177180119846665 |doi-access=free
+ |s2cid=197693428
+}}
+{{Refend}}
+
+==Further reading==
+* {{cite book |last1=Hattori |first1=Shirō |editor-link=Shiro Hattori |year=1964 |title=Bunrui Ainugo hōgen jiten |trans-title=An Ainu dialect dictionary with Ainu, Japanese, and English indexes |location=Tokyo |publisher=Iwanami Shoten}}
+* {{cite book |last=Miller |first=Roy Andrew |title=The Japanese Language |publisher=University of Chicago Press |location=Chicago |year=1967 |lccn=67-16777 |url=https://archive.org/details/japaneselanguage0000mill_o3y1/page/n5/mode/2up |url-access=registration}}
+* {{cite web |author-link=Marc Miyake|last=Miyake |first=Marc |year=2010 |url=http://www.amritas.com/090725.htm#07232359 |title=Is the ''itak'' an isolate? |website=amritas.com}}
+* {{cite book |last=Refsing |first=Kirsten |title=The Ainu Language: The Morphology and Syntax of the Shizunai Dialect |publisher=Aarhus University Press | location=Aarhus |year=1986 |isbn=978-87-7288-020-4}}
+* {{cite book |last=Refsing |first=Kirsten |title=Early European Writings on the Ainu Language |publisher=Routledge |location=London |year=1996 |isbn=978-0-7007-0400-2}}
+* {{cite book |last=Tamura |first=Suzuko | title=The Ainu Language | publisher=Sanseido |location=Tokyo | year=2000 |isbn=978-4-385-35976-2}}
+* {{cite web |last=Vovin |first=Alexander |script-title=ja:萬葉集と風土記に見られる不思議な言葉 と上代日本列島に於けるアイヌ語の分布 |title=Man'yōshū to Fudoki ni Mirareru Fushigina Kotoba to Jōdai Nihon Retto ni Okeru Ainugo no Bunpu |trans-title=Strange Words in the ''Man'yoshū'' and the ''Fudoki'' and the Distribution of the Ainu Language in the Japanese Islands in Prehistory |year=2008 |publisher=Kokusai Nihon Bunka Kenkyū Sentā |url=http://www.nichibun.ac.jp/graphicversion/dbase/forum/pdf/fn215.pdf |access-date=17 January 2011 |archive-date=11 February 2014 |archive-url=https://web.archive.org/web/20140211234350/http://www.nichibun.ac.jp/graphicversion/dbase/forum/pdf/fn215.pdf |url-status=dead }}
+
+==External links==
+{{Incubator|prefix=Wp|code=ain}}
+{{wikivoyage|Ainu phrasebook|Ainu|a phrasebook}}
+* [http://jinbunweb.sgu.ac.jp/~ainu/biblio/european.html#AinuLib1 Literature and materials for learning Ainu] {{Webarchive|url=https://web.archive.org/web/20080917151117/http://jinbunweb.sgu.ac.jp/~ainu/biblio/european.html#AinuLib1 |date=17 September 2008 }}
+* [http://justus.anglican.org/resources/bcp/Japan/ainu.htm The Book of Common Prayer in Ainu], translated by John Batchelor, digitized by Richard Mammana and Charles Wohlers
+* [http://city.hokkai.or.jp/~ayaedu/ Institute for the Study of Languages and Cultures of Ainu] in [[Samani, Hokkaido]]
+* {{Deprecated archive|url=https://archive.today/20121223123331/http://www.bbc.co.uk/dna/h2g2/A17278257|title=''A Grammar of the Ainu Language''|sec=el}} by [[John Batchelor (missionary)|John Batchelor]]
+* [https://archive.org/details/ainuenglishjapan00batcuoft ''An Ainu-English-Japanese Dictionary'', including ''A Grammar of the Ainu Language''] by John Batchelor
+* [https://web.archive.org/web/20070926185708/http://jdbengt.net/articles/Austric.pdf "The 'Greater Austric' hypothesis"] by John Bengtson (undated)
+* [http://www.unilang.org/course.php?res=58 ''Ainu for Beginners''] {{Webarchive|url=https://web.archive.org/web/20081209055528/http://www.unilang.org/course.php?res=58 |date=9 December 2008 }} by Kane Kumagai, translated by Yongdeok Cho
+* [https://web.archive.org/web/20050105011134/http://www.stv.ne.jp/radio/ainugo/index.html Radio lessons on Ainu language presented by Sapporo TV] {{in lang|ja}}
+* ''[https://elar.soas.ac.uk/Collection/MPI585111 A talking dictionary of Ainu: a new version of Kanazawa's Ainu conversational dictionary]'', with recordings of Mrs. Setsu Kurokawa
+
+{{Paleo-Siberian languages}}
+{{Languages of Japan}}
+{{Authority control}}
+
+{{DEFAULTSORT:Ainu Language}}
+[[Category:Ainu languages]]
+[[Category:Extinct languages of Asia]]
+[[Category:Languages of Japan]]
+[[Category:Subject–object–verb languages]]
+[[Category:Endangered languages of Japan]]
+[[Category:Polysynthetic languages]]
+[[Category:Culture of Hokkaido]]
+[[Category:Pitch-accent language]]
+[[Category:Languages extinct in the 21st century]]

@@ -1,0 +1,136 @@
+{{Short description|Aztec manuscript}}
+{{Use dmy dates|date=April 2022}}
+{{Infobox manuscript
+<!----------Name---------->
+| name                  = ''Codex Mendoza''
+| location              = [[Bodleian Library]], England, {{flag|United Kingdom}} 
+| web =
+<!----------Image---------->
+| image                 = CodexMendoza01.jpg
+| width                 = 300px
+| caption               = The founding of the Aztec capital [[Tenochtitlan]]; first page of the Codex Mendoza, {{circa|1541}}
+<!----------General---------->
+| Also known as         = 
+| Type                  = Codex
+| Date                  = [[1541]] approximately
+| Place of origin       = Mexico
+| Language(s)           = Glosses in Spanish
+<!----------Form and content---------->
+| Material              = 
+| Size                  = {{convert|140|by|23.5|cm|in}}
+| Format                = Screenfold book
+| Condition             = 
+| Script                = [[Aztec script]]
+| Contents              = 
+| Additions             = 
+| Discovered            = 
+}}
+
+The '''Codex Mendoza''' is an [[Aztec codices|Aztec codex]], believed to have been created around the year 1541.{{sfn|Berdan|Anawalt|1992b}} It contains a history of both the Aztec rulers and their conquests as well as a description of the daily life of pre-conquest [[Aztec society]]. The codex is written using traditional [[Aztec pictograms]] with a translation and explanation of the text provided in [[Spanish language|Spanish]]. It is named after [[Don (honorific)|Don]] [[Antonio de Mendoza]] (1495–1552), the [[viceroy]] of [[New Spain]], who supervised its creation and who was a leading patron of native artists. 
+
+Mendoza knew that the ravages of the conquest had destroyed multiple native artifacts, and that the craft traditions that generated them had been effaced. When the Spanish crown ordered Mendoza to provide evidence of the Aztec political and tribute system, he invited skilled artists and scribes who were being schooled at the Franciscan college in Tlatelolco to gather in a workshop under the supervision of Spanish priests where they could recreate the document for him and the [[King of Spain]].<ref>{{cite book |last=Carrasco |first=David|title=City of Sacrifice : The Aztec Empire and the Role of Violence in Civilization |date=1999 |page=19}}</ref> The pictorial document that they produced became known as the Codex Mendoza: it consists of seventy-one folios made of Spanish paper measuring 20.6 × 30.6 centimetres (8.25 × 12.25 inches).<ref>{{cite book |last=Anawalt |first=Patricia |editor-last=Carrasco |editor-first=David L. |entry=Codex Mendoza |title=The Oxford Encyclopedia of Mesoamerican Cultures :The Civilizations of Mexico and Central America vol.1 |url=https://www.oxfordreference.com/view/10.1093/acref/9780195108156.001.0001/acref-9780195108156 |publisher=Oxford University Press |location=New York |date=2001 |pages=72–73 |isbn=978-0-19-514255-6 |oclc=872326807 |archive-date=9 August 2020 |access-date=16 April 2020 |archive-url=https://web.archive.org/web/20200809084502/https://www.oxfordreference.com/view/10.1093/acref/9780195108156.001.0001/acref-9780195108156 |url-status=live }}</ref> The document is crafted in the native style, but it now is bound at a spine in the manner of European books.
+
+The codex is also known as the '''Codex Mendocino''' and '''''La colección Mendoza''''', and has been held at the [[Bodleian Library]] at [[Oxford University]] since 1659. It was on display as part of the Bodleian's ''Gifts and Books'' exhibition from 16 June to 29 October 2023.<ref>{{Cite web |title=Gifts and Books |url=https://visit.bodleian.ox.ac.uk/event/gifts-and-books |access-date=2023-06-25 |website=visit.bodleian.ox.ac.uk |language=en |archive-date=25 June 2023 |archive-url=https://web.archive.org/web/20230625184827/https://visit.bodleian.ox.ac.uk/event/gifts-and-books |url-status=live }}</ref> The Bodleian Library holds four other [[Mesoamerican codices]]: [[Codex Bodley]], [[Codex Laud]], [[Codex Selden]], and the [[Selden Roll]].
+
+== History ==
+[[File:Codex Mendoza (cropped).jpg|right|thumb|The Codex Mendoza on display at the Bodleian Library]]
+The manuscript must date from after 6 July 1529, since [[Hernán Cortés]] is referred to on folio 15r as 'marques del Valle'.{{sfn|Berdan|Anawalt|1992b}} It must have been produced before 1553, when it was in the possession of the French cosmographer [[André Thevet]], who wrote his name on folios 1r, 2r, 70v, 71v.
+
+The final page of the manuscript explains some of the circumstances in which it was produced.<ref>{{cite book |last1=Berdan |first1=F. F. |last2=Anawalt |first2=P. R. |title=The Essential Codex Mendoza |url=https://archive.org/details/bub_gb_JQeAQZHev0IC |date=1997 |page=[https://archive.org/details/bub_gb_JQeAQZHev0IC/page/n433 148]|isbn=9780520204546 }}</ref> {{blockquote | text=The reader must excuse the rough style in the interpretation of the drawings in this history, because the interpreter did not take time or work at all slowly...The interpreter was given this history ten days prior to the departure of the fleet, and he interpreted it carelessly because the Indians came to agreement late; and so it was done in haste and he did not improve the style suitable for an interpretation, nor did he take time to polish the words and grammar or make a clean copy.}}
+
+The manuscript was therefore finished in haste and designed to be sent to Spain. More precise information regarding the exact date of the manuscript and the reasons it was produced is controversial. The testimony of the conquistador Jerónimo López, probably dating from 1547, may be relevant.{{sfn|Berdan|Anawalt|1992b}}
+{{blockquote | text=it must have been about six years ago more or less that entering one day into the home of an Indian who was called Francisco Gualpuyogualcal, master of the painters, I saw in his possession a book with covers of parchment and asking him what it was, in secret he showed it to me and told me that he had made it by the command of Your Lordship, in which he has to set down all the land since the founding of the city of Mexico and the lords that had governed and ruled until the coming of the Spaniards and the battles and clashes that they had and the taking of this great city and all the provinces that it ruled and had made subject and the assignment of these towns and provinces that was made by Moctezuma to the principal lords of this city and of the fee that each one of the knights gave him from the tributes of the towns that he had and the plan that he employed in the aforesaid assignment and how he sketched [?] the towns and provinces for it. (tr. H. B. Nicholson)}}
+
+Silvio Zavala argued that the book referred to was the Codex Mendoza,<ref>{{cite journal |last1=Zavala |first1=Silvio |title=Las encomiendas de Nueva España y el gobierno de don Antonio de Mendoza |journal=Revista de Historia de América |date=1938 |volume=1 |pages=59–75}}</ref> and his arguments were restated by Federico Gómez de Orozco.<ref>{{cite journal |last1=Gómez de Orozco |first1=Federico |title=¿Quien fue el autor material del Códice Mendocino y quien su interprete? |journal=Revista Mexicana de Estudios Antropológicos |date=1941 |volume=5 |pages=43–52}}</ref> If this is the case, then the Codex was written {{circa|1541}} ('six years ago more or less' from López's recollection) and was commissioned by Mendoza. As H. B. Nicolson has pointed out, however, the description is not an exact fit for the Codex, and the identification is not certain.{{sfn|Berdan|Anawalt|1992b}}
+
+According to a later account by [[Samuel Purchas]], a later owner of the Codex, writing in 1625, the Spanish fleet was attacked by French [[privateer]]s and all of the booty, including the codex, was taken to France.{{sfn|Berdan|Anawalt|1992b}}
+
+It was certainly in the possession of [[André Thévet]], [[cosmographer]] to King [[Henry II of France]]. Thévet wrote his name in five places on the codex, twice with the date 1553. It was later owned by the Englishman [[Richard Hakluyt]]. According again to Samuel Purchas, Hakluyt bought the Codex for 20 [[French livre|French francs]]. Some time after 1616 it was passed to Samuel Purchas, then to his son, and then to [[John Selden]]. The codex was deposited into the [[Bodleian Library]] at [[Oxford University]] in 1659, five years after Selden's death, where it remained in obscurity until 1831, when it was rediscovered by [[Edward King, Viscount Kingsborough|Viscount Kingsborough]] and brought to the attention of scholars.
+
+== Content ==
+[[File:Codex Mendoza Page 1 Annotations.png|thumb|[http://www.fordham.edu/vistas Iconography descriptions] of [https://www.gob.mx/cultura/articulos/codice-mendoza-la-cronica-mas-completa-de-mexico-tenochtitlan?idiom=es#:~:text=La%20primera%20secci%C3%B3n%20inicia%20con,sentado%20sobre%20un%20petate%20mientras Codex Mendoza] expanding on the foundation of Tenochtitlan as a civilization of power and authority.<ref>{{Cite journal |last=Carrasco |first=David |date=1981 |title=City as Symbol in Aztec Thought: The Clues from the Codex Mendoza |url=https://www.jstor.org/stable/1062365 |journal=History of Religions |volume=20 |issue=3 |pages=199–223 |doi=10.1086/462868 |jstor=1062365 |s2cid=161916200 |issn=0018-2710 |url-access=subscription |archive-date=28 February 2023 |access-date=28 February 2023 |archive-url=https://web.archive.org/web/20230228180700/https://www.jstor.org/stable/1062365 |url-status=live }}</ref>]]
+Written on European paper, it contains 71 pages, divided into three sections:
+*Section I, folios 1r to 17r or 18r, is a history of the Aztec people from 1325 through 1521 — from the founding of [[Tenochtitlan]] through the Spanish conquest. It lists the reign of each ruler and the towns conquered by them. It is uncertain whether folios 17v and 18r belong to Section I or Section II.{{sfn|Berdan|Anawalt|1992b}}
+*Section II, folios 17v or 18v to 54v, provides a list of the towns conquered by the [[Aztec Triple Alliance|Triple Alliance]] and the tributes paid by each. This section is closely related to, and probably copied from, the [[Matrícula de Tributos]], but the Codex Mendoza contains five provinces not included in the Matrícula. This probably represents material now missing from the Matrícula, but present when the Codex Mendoza was copied.<ref>{{cite journal |last1=Batalla Rosado |first1=J. J. |title=The scribes who painted the Matrícula de Tributos and the Codex Mendoza |journal=Ancient Mesoamerica |date=Spring 2007 |volume=18 |issue=1 |pages= 31–51 |doi=10.1017/s0956536107000077|s2cid=206292086 }}</ref>
+*Section III, folios 56v to 71v, is a pictorial depiction of the daily life of the Aztecs.
+
+Folios 73 to 85 of MS. Arch. Selden. A. 1, as currently foliated, do not form part of the Codex Mendoza. These folios comprise an originally separate manuscript, apparently written in England in the first half of the seventeenth century. This manuscript contains tables of the comparative value of Roman, Greek, English, and French money. The two manuscripts were bound together in England in the early seventeenth century.{{sfn|Berdan|Anawalt|1992b}}
+
+=== Section I ===
+
+==== Gallery ====
+<gallery>
+Image:Codex Mendoza folio 2r.jpg|Folio 2 recto<br />Founding of [[Tenochtitlan]]
+Image:Codex Mendoza folio 4v.jpg|Folio 4 verso<br />Conquests of [[Chimalpopoca]]
+Image:Codex Mendoza folio 5v.jpg|Folio 5 verso<br />Conquests of [[Itzcoatl]]
+Image:Codex Mendoza folio 10r.jpg|Folio 10 recto<br />Conquests of [[Axayacatl]]
+Image:Codex Mendoza folio 13r.jpg|Folio 13 recto<br />Conquests of [[Ahuitzotl]]
+</gallery>
+
+=== Section II ===
+
+==== Gallery ====
+<gallery>
+Image:Codex Mendoza folio 17v.jpg|Folio 17 verso
+Image:Codex Mendoza folio 20r.jpg|Folio 20 recto
+Image:Codex Mendoza folio 37r.jpg|Folio 37 recto
+Image:Codex Mendoza folio 43r.jpg|Folio 43 recto
+Image:Codex Mendoza folio 46r.jpg|Folio 46 recto
+Image:Codex Mendoza folio 47r.jpg|Folio 47 recto
+Image:Codex Mendoza folio 52r.jpg|Folio 52 recto
+</gallery>
+
+=== Section III ===
+
+==== Gallery ====
+<gallery>
+File:Codex Mendoza folio 57r.jpg|Folio 57 recto, A birth of a baby 
+File:Codex Mendoza folio 58r.jpg|Folio 58 recto
+File:Codex Mendoza folio 60r.jpg|Folio 60 recto, Punishments and chores of children, ages 11 to 14
+File:Codex Mendoza folio 61r.jpg|Folio 61 recto<br />''(top)'' 15-year-old boys beginning training in the military or the priesthood<br />''(bottom)'' A 15-year-old girl gets married
+File:Codex Mendoza folio 62r.jpg|Folio 62 recto, ''(top rest)'' Participation of students and punishments for misbehavior ''(bottom)'' Preparation to warriorhood
+File:Codex Mendoza folio 64r.jpg|Folio 64 recto<br />''(top)'' Duties of novice priests<br />''(bottom)'' Ranks awarded to warriors
+File:Codex Mendoza folio 65r.png|Folio 65 recto<br />''(top)'' Ranks award to priest-warriors<br />''(bottom)'' Imperial officers
+File:Codex Mendoza folio 67r.jpg|Folio 67 recto<br />''(top)'' Warriors scout a town at night in preparation for an attack<br />''(middle)'' Negotiations after surrender.<br />''(bottom)'' High-ranking commanders
+File:Codex Mendoza folio 69r.jpg|Folio 69 recto<br />[[Moctezuma II]]'s palace 
+</gallery>
+
+== See also ==
+*[[Mesoamerican Codices]]
+*[[Aztec codex]]
+*[[Maya codices]]
+
+== References ==
+{{Reflist}}
+
+== Bibliography ==
+*{{cite book |last1=Berdan |first1=F. F. |last2=Anawalt |first2=P. R. |title=The Codex Mendoza |date=1992a |publisher=University of California Press |location=Berkeley |isbn=9780520062344}}
+* {{cite journal |last1=Berdan |first1=F. F. |last2=Anawalt |first2=P. R. |title=Codex Mendoza |journal=Scientific American |date=1992b |volume=1 |issue=6 |pages=70–79|doi=10.1038/scientificamerican0692-70 |bibcode=1992SciAm.266f..70A }}
+*{{cite book |author1=Berdan, Frances F. |author2=Anawalt, Patricia Rieff |year=1997 |title=The Essential Codex Mendoza |url=https://archive.org/details/bub_gb_JQeAQZHev0IC |publisher=[[University of California Press]] |isbn=978-0-520-20454-6}}
+*{{cite book |author=Ross, Kurt |year=1978 |title=Codex Mendoza: Aztec Manuscript}}
+
+*{{cite book|ref=Kupriienko|last1=Kupriienko|first1=Sergii|last2=Talakh|first2=Viktor|title=Codex Mendoza|orig-year=2013|url=https://books.google.com/books?id=Z4sLdxO_R7MC|access-date=4 September 2013|year=2013|publisher=Видавець Купрієнко С.А.|location=Kyiv|isbn=978-617-7085-00-2|edition=russian}}
+
+== External links ==
+{{Commons category|Codex Mendoza}}
+{{Portal|Mexico}}
+*[https://posthegemony.blogspot.com/2005/10/codex-mendoza.html A description of the Codex]
+*[http://www.h-net.org/reviews/showrev.php?id=1359 Review of ''The Essential Codex Mendoza'']
+*[https://web.archive.org/web/20111004131630/http://treasures.bodleian.ox.ac.uk/the-treasures-exhibition Details of public exhibition]
+*[http://codicemendoza.inah.gob.mx/inicio.php Full digital facsimile with transcriptions, translations and commentary]
+*[https://medieval.bodleian.ox.ac.uk/catalog/manuscript_8834 MS. Arch. Selden. A. 1] In the Bodleian Libraries catalogue of Medieval Manuscripts
+*[https://digital.bodleian.ox.ac.uk/inquire/p/2fea788e-2aa2-4f08-b6d9-648c00486220 Full digital facsimile] available on Digital Bodleian
+*[https://codicemendoza.inah.gob.mx/inicio.php?lang=english Full digital facsimile] available on [[Instituto Nacional de Antropología e Historia|INAH]]
+
+{{Authority control}}
+
+[[Category:Aztec codices|Mendoza, Codex]]
+[[Category:1540s books]]
+[[Category:16th-century illuminated manuscripts]]
+[[Category:Aztec society]]
+[[Category:1540s in New Spain]]
+[[Category:Bodleian Library collection]]
+[[Category:Tourist attractions in Oxford]]
+[[Category:1540s in North America]]
+[[Category:16th century in the Aztec civilization]]
+[[Category:Aztec philosophy]]

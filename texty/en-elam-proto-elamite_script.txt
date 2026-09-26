@@ -1,0 +1,132 @@
+{{Short description|Early Bronze Age writing system in present-day Iran}}
+{{For|the historical period|Proto-Elamite (period)}}
+{{Infobox Writing system
+|name=Proto-Elamite
+|languages=
+|sample=
+|imagesize=
+|caption=
+|fam1=
+|fam2=
+|fam3=
+|time={{circa|3100|2900&nbsp;BC}}<ref>{{cite journal |last1=Yeganeh |first1=Sepideh Jamshidi | first2=Parviz |last2=Holakooei |first3=Jebrael |last3=Nokandeh |first4=Sedigheh |last4=Piran |first5=Jacob |last5=Dahl |date=2025 |title=Complexity of proto-elamite administration system: Insights from compositional data from sealings and tablets |journal=[[Journal of Archaeological Science: Reports]] |volume=61 |article-number=104973}}</ref>
+|type=
+|iso15924=Pelm
+|unicode=
+|note=none
+}}
+[[File:Proto-Elamite Tablets.jpg|thumb|upright=1.2|Proto-Elamite tablets from Shahr-i Sokhta]]
+The '''Proto-Elamite script''' is a [[writing system]] used briefly during the early [[Bronze Age]] before the introduction of [[Elamite cuneiform]]. It remains largely [[Undeciphered writing systems|undeciphered]], except for various numbers.<ref>Monroe, M. Willis, et al., "Recent Progress in Deciphering Proto-Elamite", [[Near Eastern Archaeology (journal)|Near Eastern Archaeology]] 88.4, pp. 314-323, 2025</ref>
+
+There are many similarities between the writing systems of the Proto-Elamite tablets and the contemporaneous [[proto-cuneiform]] tablets of the [[Uruk period|Uruk IV period]] in Mesopotamia. Both are relatively isolated. Singletons aside, tablets have been found at only five Proto-Elamite sites. For comparison, Proto-cuneiform tablets have only been found at [[Uruk]], [[Jemdet Nasr]], [[Khafajah]], and [[Tell Uqair]], and the vast majority of each type have been found at [[Susa]] and Uruk. The tablet blanks, the inscribing method, even the practice of using the reverse for summation, when needed, are the same. They serve the same basic function which is administrative accounting of goods in a centrally controlled society. From that base, there are also differences, the signs themselves being the most obvious but extending to smaller areas such as the order in which the tablet was inscribed, are clear.{{Clarify|reason=What does "are clear" apply to?|date=May 2026}} The many similarities between the numeric systems of Proto-cuneiform and Proto-Elamite have helped in understanding it. Proto-Elamite, in addition to the usual sexagesimal and base-120, also uses a decimal system.<ref>Friberg, Jöran, "Three Thousand Years of Sexagesimal Numbers in Mesopotamian Mathematical Texts", Archive for History of Exact Sciences, vol. 73, no. 2, pp. 183–216, 2019</ref><ref>Friberg, Jöran, "The Early Roots of Babylonian Mathematics: II. Metrological Relations in a Group of Semi-Pictographic Tablets of the Jemdet Nasr Type, Probably from Uruk-Warka", Research Report, 1979-15; University of Göteborg, Department of Mathematics, Chalmers, 1978–79</ref>
+
+[[File:P1180316 Louvre Suse III tablette économique Sb15200 rwk.jpg|thumb|upright=1.2|Economical tablet in Proto-Elamite, Suse III, [[Louvre Museum]], reference Sb 15200, {{circa|3100–2850&nbsp;BC}}]]
+[[File:Proto-Elamite tablet with transcription.jpg|thumb|upright=1.2|Proto-Elamite tablet with transcription]]
+Beginning around the 9th millennium&nbsp;BC, a token based system came into use in various parts of the ancient Near East. These evolved into marked tokens and later marked envelopes, often called [[Bulla (seal)|clay bullae]].<ref>Schmandt-Besserat, Denise, "The Envelopes That Bear the First Writing", Technology and Culture, vol. 21, no. 3, pp. 357–85, 1980</ref><ref>Schmandt-Besserat, Denise, "Decipherment of the Earliest Tablets", Science, vol. 211, no. 4479, pp. 283–85, 1981</ref><ref>Schmandt-Besserat, Denise. ''Before writing: From counting to cuneiform'', Vol. II, University of Texas Press, 1992</ref><ref>Overmann, Karenleigh A., ''The Material Origin of Numbers: Insights from the Archaeology of the Ancient Near East'', Piscataway, NJ, USA: Gorgias Press, Table 9.2, pp. 169-170, 2019</ref> These are believed to be the basis of Proto-Elamite as well as proto-cuneiform (with many of the tokens, about two-thirds, having been found in Susa). Tokens remained in use after the development of proto-cuneiform and Proto-Elamite.<ref>Denise Schmandt-Besserat, "An Archaic Recording System and the Origin of Writing", Syro Mesopotamian Studies, vol. 1, no. 1, pp. 1–32, 1977</ref><ref>Denise Schmandt-Besserat, "An Archaic Recording System in the Uruk-Jemdet Nasr Period", American Journal of Archaeology, vol. 83, no. 1, pp. 19–48, (Jan. 1979)</ref><ref>Lieberman, Stephen J., "Of Clay Pebbles, Hollow Clay Balls, and Writing: A Sumerian View", American Journal of Archaeology, vol. 84, no. 3, pp. 339–58, 1980</ref><ref>Schmandt-Besserat, D., "Tokens at Susa", Oriens Antiquus 25(1–2), pp. 93–125, 1986</ref>
+
+The earliest tablets contain only lists of numbers. They are found not only at Susa and Uruk, but also at sites without later Proto-Elamite and proto-cuneiform tablets, like [[Tell Brak]], [[Habuba Kabira]], [[Tepe Hissar]], [[Godin Tepe]] and [[Jebel Aruda]].<ref>Schmandt-Besserat, Denise, "The Earliest Precursor of Writing", Scientific American, vol. 238, no. 6, pp. 50–59, 1978</ref><ref>Strommenger, Eva, "The Chronological Division of the Archaic Levels of Uruk-Eanna VI to III/II: Past and Present", American Journal of Archaeology, vol. 84, no. 4, pp. 479–87, 1980</ref><ref>[https://tspace.library.utoronto.ca/bitstream/1807/27127/1/hallo%20report.pdf] Hallo, William W., "Godin Tepe: The Inscriptions", Yale University, 2011</ref><ref>Oates, Joan and Oates, David, "The Reattribution of Middle Uruk Materials at Brak". Leaving No Stones Unturned: Essays on the Ancient Near East and Egypt in Honor of Donald P. Hansen, edited by Erica Ehrenberg, University Park, USA: Penn State University Press, pp. 145–154, 2002</ref><ref>R. Dyson, "The relative and absolute chronology of Hissar H and the proto-Elamite of Northern Iran", In: Chronologie du Prochc Orient/Relative chrono-logics and absolute chronology 16,000–4,000 BC. CNRS International Symposium, Lyon France, 24–28  November, 1986, 13AR Internat. Scr. 379, Oxford, pp. 647–677, 1987</ref>
+
+[[Linear Elamite]] is attested much later, in the last quarter of the {{BCE|3rd millennium}}. It is uncertain whether the Proto-Elamite script was the direct predecessor of [[Linear Elamite]], since it remains largely undeciphered, and a postulated relationship between the two is speculative.
+
+Early on, similarities were noted between Proto-Elamite and the Cretan [[Linear A]] script.<ref>Brice, W., "A Comparison of the Account Tablets of Susa in the Proto-Elamite Script with Those of Hagia Triada in Linear A", KADMOS, 2(1), pp. 27–38, 1963</ref>
+
+==Corpus ==
+The Proto-Elamite writing system was used over a large area, from Susa in the west to [[Tepe Yahya]] in the east. The corpus consists of some 1600 tablets, the vast majority unearthed at Susa, where the first two
+tablets were found by [[Jacques de Morgan]] in the late 1800s.<ref name="Damerow1989" />
+
+Proto-Elamite tablets have been found at the following sites:
+*[[Susa]] (more than 1600 tablets and fragments)<ref>de Mecquenem, R., "Notes Protoélamites", Revue d’Assyriologie et d’archéologie Orientale, vol. 50, no. 4, pp. 200–04, 1956</ref><ref>Dahl, Jacob L., "Proto-Elamite Tablets and Fragments", Textes cunéiforme du Louvre 32, Khéops / Louvre Editions Publishing, Paris, 2019</ref>
+*[[Anshan (Persia)|Anshan]], or Tall-I Malyan (33 tablets and fragments)<ref>Stolper, M., "Proto-Elamite texts from Tall-I Malyan”, in: KADMOS, 24(1–2), pp. 1–12, 1985</ref>
+*[[Tepe Yahya]] (27 tablets, tablet blanks found)<ref>Lamberg-Karlovsky, Clifford Charles, "Proto-Elamite account tablets from Tepe Yahya, Iran", Kadmos 10,  pp. 97–9, 1971</ref><ref>[https://cnrs.hal.science/hal-02429709/file/Mutin_2013.pdf] Mutin, Benjamin, The Proto-Elamite Settlement and its Neighbors: Tepe Yahya Period IVC, ed. C.C. Lamberg-Karlovsky, Oxbow Books / American School of Prehistoric Research Publications, 2013 {{ISBN|978-1-78297-419-2}}</ref><ref name="Damerow1989" >Peter Damerow and Robert K. Englund, "The Proto-Elamite Texts from Tepe Yahya", The American School of Prehistoric Research Bulletin 39, Cambridge, MA, 1989</ref><ref>Lamberg-Karlovsky, C. C., "The Proto-Elamite Settlement at Tepe Yaḥyā", Iran, vol. 9, pp. 87–96, 1971</ref><ref>C. C. Lamberg-Karlovsky, [https://www.penn.museum/sites/expedition/the-early-bronze-age-of-iran-as-seen-from-tepe-yahya/ "The Early Bronze Age of Iran as seen from Tepe Yahya"] (with Philip Kohl) Expedition, Vol. 13, Nos. 3–4, pp. 14–22, 1971</ref>
+*[[Tepe Sofalin]] (12 tablets and fragments)<ref>[https://ijas.usb.ac.ir/article_1058_b17ce2f76181a06a5bce196b9f75a2e2.pdf] Dahl, J. L., Hessari, M., & Yousefi Zoshk, R., "The Proto-Elamite Tablets from Tape Sofalin", Iranian journal of archaeological studies, 2(1), pp. 57–73, 2012</ref><ref>Hessari, Morteza, and Rouhollah Yosefi, "A Clay Bullae and Five Tablets From Tepe Sofalin, Rey Plain, Iran", Journal of Archaeology and Archaeometry 1.1, pp. 13–25, 2022</ref>
+*[[Tepe Sialk]] (5 tablets)<ref>Ghirshman, R., "Une tablette proto-élamite du plateau iranien", Revue d’Assyriologie et d’archéologie Orientale, vol. 31, no. 3, pp. 115–19, 1934</ref><ref>Roman Ghirshman, "''Fouilles de Sialk près de Kashan'', 1933, 1934, 1937", vol. 1, Paul Geuthner, 1938</ref>
+*Ozbaki (one tablet)<ref>[https://www.persee.fr/docAsPDF/paleo_0153-9345_2001_num_27_1_4725.pdf] Madjidzadeh, Youssef, "Les fouilles d'Ozbaki (Iran). Campagnes 1998–2000", Paléorient, pp. 141–145, 2001</ref>
+*[[Shahr-e Sukhteh]] (one tablet)<ref>Amiet, Pierre, et al., "Phase 10 at Shahr-i Sokhta: Excavations in Square XDV and the Late 4th Millennium B.C. Assemblage of Sīstān", East and West, vol. 28, no. 1/4, pp. 9–31, 1978</ref>
+*[[Tall-e Geser]] (one numerical tablet fragment, not Proto-Elamite script)<ref>Alden, John R., et al., "Trade and Politics in Proto-Elamite Iran [and Comments and Reply]", Current Anthropology, vol. 23, no. 6, pp. 613–40, 1982</ref><ref>Caldwell, J. R., "Tell-i Ghazir", Reallexikon der Assyriologie 3 (5), pp. 348–355, 1986</ref>
+*[[Tepe Hissar]] (one tablet)<ref name="Damerow1989" />
+
+Glyphs found in Proto-Elamite texts are divided in numerical (with an N prefix) and text (with a M prefix). Of the 1000s of text glyphs in the current corpus, more than half are numerical. The meaning of a numerical glyph may depend on which system it is being used in, decimal (D), sexagesimal (S), bisexagesimal (B), or capacity (C).<ref>[https://aclanthology.org/2023.cawl-1.9.pdf]Born, Logan, et al., "Disambiguating Numeral Sequences to Decipher Ancient Accounting Corpora", Proceedings of the Workshop on Computation and Written Language (CAWL 2023), 2023</ref><ref> Alimirzoev, A. N. and Yu. B. Yusifov, "On the decipherment of numerical signs of the Proto-Elamite script", Vestnik drevnej istorii, pp. 3-20, 1993</ref><ref>[https://nbsh.basu.ac.ir/jufile?issue_pdf=760#page=91]Yousefi, R., Afshari Salaki, H. & Etemadifar, D., "The Scale of Accounting: An Examination of High-Volume Numerical Records in Proto-Elamite
+Tablets from Susa hosted in Iran National Museum", Archaeological Research of Iran, 15(45), pp. 91-113, 2025</ref>
+
+A significant number of Proto-Elamite tablets remain unpublished.<ref>Jacob L. Dahl, "Oxford Proto-Elamite", De Babylone aux routes d’Arabie, portrait d’une orientaliste: Hommage à Béatrice André-Salvini, pp. 85-88, 2025</ref>
+
+==Publications==
+*MDP 6 - V. Scheil, "Textes élamites-sémitiques (Troisième série)", Mémoires de La Délégation En Perse 6, Paris: Leroux, 1905
+*MDP 17 - V. Scheil, "Textes  de  Comptabilité  Proto-Élamites (Nouvelle  Série)", Mémoires de La Mission Archéologique de Perse, Tome 17, Paris, 1923
+*MDP 26 - V. Scheil, "Textes  de  Comptabilité  Proto-Élamites (Troisième Série)", Mémoires de La Mission Archéologique de Perse, Tome 26., Paris, 1935
+*MDP 31 - Mecquenem, Roland de, and Marguerite Rutten, "Épigraphie Proto-Élamite ; Archéologie Susienne", Mémoires de La Délégation Archéologique En Iran, Tome 31. Paris: Presses Universitaires de France, 1949
+*RA 50 - de MECQUENEM, R., "Notes Protoélamites", Revue d’Assyriologie et d’archéologie Orientale, vol. 50, no. 4, pp. 200–04, 1956
+*TCL 32 - Dahl, J. L., "Proto-Elamite Tablets and Fragments", Textes Cunéiforme du Louvre 32, Paris: Khéops /Louvre éditions Publishing, 2019
+
+== Decipherment attempts ==
+[[File:Tablilla del periodo protoelamita - MARQ.jpg|thumb|Proto-Elamite tablet found at Tepe Yahya]]
+The first step in deciphering an unknown writing system is publishing the corpus and developing a proposed sign list.<ref>Gelb, I. J., and R. M. Whiting, "Methods of Decipherment", Journal of the Royal Asiatic Society of Great Britain and Ireland, no. 2, pp. 95–104, 1975</ref> The texts have now been mostly published but the sign list is still in progress. Proto-Elamite has many singleton signs (like early stages of proto-cuneiform) because texts are primarily consumed locally. There is disagreement over whether some signs are different or merely variants; but by 1974 enough of a consensus on the signs was reached that decipherment could advance.
+<ref>Piero Meriggi, "La scritura proto-elamica. Parte Ia: La scritura e il contenuto dei testi", Rome, 1971</ref><ref>Piero Meriggi,"La scritura proto-elamica. Parte IIa: Catalogo dei segni", Rome, 1974</ref><ref>Piero Meriggi, "La scritura proto-elamica. Parte IIIa: Testi", Rome, 1974</ref><ref>Dahl, Jacob L., "The proto-Elamite writing system", in The Elamite World, pp. 383–396, 2018</ref>
+
+In 2012, Dr Jacob Dahl of the [[University of Oxford]] announced a project to publish high-quality images of Proto-Elamite clay tablets online. He hopes that [[crowdsourcing]]  by academics and amateurs working together will make progress.<ref>[https://www.bbc.co.uk/news/business-19964786 Breakthrough in world's oldest undeciphered writing – Sean Coughlan – 2012-10-25 BBC]</ref> Nearly 1600 Proto-Elamite tablets are now on line.<ref>[http://cdli.ucla.edu Cuneiform Digital Library Initiative]. [[University of California, Los Angeles]]. Retrieved 9 March 2015.</ref> Materials were put online<ref name="bbc_crowd">{{cite news |last1=Coughlan |first1=Sean |title='Crowd-sourcing' website to decipher ancient writing |url=https://www.bbc.com/news/education-20066885 |work=BBC News |date=24 October 2012}}</ref> on a wiki of the Cuneiform Digital Library Initiative.<ref>{{cite web |title=Proto-Elamite|publisher=Cuneiform Digital Library Initiative Wiki |url=https://cdli.ox.ac.uk/wiki/proto-elamite |website=cdli.ox.ac.uk |language=en}}</ref>
+
+In 2020, {{ill|François Desset|fr}}, of the Laboratoire Archéorient in Lyon, announced a proposed decipherment and translation.<ref>{{Cite web|url=https://www.sciencesetavenir.fr/archeo-paleo/archeologie/breaking-the-code-en-craquant-une-ecriture-non-dechiffree-vieille-de-plus-de-4000-ans-un-francais-remet-en-cause-la-seule-invention-de-l-ecriture-en-mesopotamie_149795|title = Un Français déchiffre une écriture de plus de 4000 ans|date = 7 December 2020}}</ref><ref>{{Cite web|url=https://www.tehrantimes.com/news/455638/Iranian-plateau-gave-birth-to-writing-French-archaeologist|title = Iranian plateau gave birth to writing: French archaeologist|date = 11 December 2020}}</ref> In 2022 he proposed sign forms for Proto-Elamite (recasting it as "Early Proto-Iranian").<ref>Desset, François, Tabibzadeh, Kambiz, Kervran, Matthieu, Basello, Gian Pietro and Marchesi, and Gianni, "The Decipherment of Linear Elamite Writing", Zeitschrift für Assyriologie und vorderasiatische Archäologie, vol. 112, no. 1, pp. 11–60, 2022</ref><ref>Kelley, Kathryn, et al., "On Newly Proposed Proto-Elamite Sign Values", Iranica Antiqua 57, pp. 1–25, 2022</ref> The proposal was not met with universal agreement.<ref>[https://ora.ox.ac.uk/objects/uuid:51adb1c2-61de-438c-9b29-125addf3d2a1/files/r6w924c626] Dahl, J., "Proto-Elamite and linear elamite, a misunderstood relationship?", Akkadica, 2023</ref>
+
+Although the decipherment of Proto-Elamite remains uncertain, the content of many texts is known. This is because certain signs, notably a majority of the numerical signs, are similar to the neighboring Mesopotamian proto-cuneiform. In addition, a number of the Proto-Elamite signs depict the objects they represent. However, the majority of the Proto-Elamite signs are abstract, and their meanings can only be deciphered through careful [[Graphemics|graphemic]] analysis.<ref>[https://www.mpiwg-berlin.mpg.de/Preprints/P183.PDF] Robert K. Englund, "The State of Decipherment of Proto-Elamite", in: Stephen Houston, ed. The First Writing: Script Invention as History and Process, Cambridge, UK: Cambridge University Press, pp.&nbsp;100–149, 2004</ref>
+
+An example from a small tablet (Sb 06355) from Susa where most signs are known:<ref>[https://cdli.ucla.edu/P008389]"MDP 17, 191 Artifact Entry", (2001) 2024. Cuneiform Digital Library Initiative (CDLI). July 3, 2024</ref>
+{{Text and translation
+	| M384<sub>ab</sub> M362, 4(N14) 7(N01) M367, 8(N01) M346, 6(N01)# [M006], [6(N01)?] M362<sub>a</sub> , 1(N14) M367<sub>a</sub># , 2(N01)# [M346<sub>a</sub>], [1(N01)] [M006@g]  [1(N01)] - Transliteration
+	| 47 nanny goats (belonging to) x, 8 billy goats, 6 female sheep, 6 male sheep, 10 female kids, 2 male kids, 1 female lamb, 1 male lamb - Translation
+}}
+
+While the Elamite language has been suggested as the language of the Proto-Elamite inscriptions, there is no positive evidence of this. The earliest Proto-Elamite inscriptions, being purely [[Ideogram|ideograph]]ic, do not in fact contain any linguistic information nor is it known what language was spoken in the area during the Proto-Elamite Period.<ref>Jöran Friberg, "The Third Millennium Roots of Babylonian Mathematics I-II", Göteborg, 1978/79</ref>
+
+{{gallery
+|perrow=4 |align=center
+|File:Clay accounting tokens Susa Louvre n2.jpg|Clay tokens; circa 3500 BC ([[Susa II]] or "[[Uruk period]]"); terracotta; from [[Susa]]; [[Louvre]] (Paris)
+|File:Accountancy clay envelope Louvre Sb1932.jpg|Globular envelope with a cluster of accounting tokens. Clay, Uruk period. From the Tell of the Acropolis in Susa. [[Susa II]] or "[[Uruk period]]"
+|File:Economic tablet Susa Louvre Sb3047.jpg|Economic tablet with numeric signs and Proto-Elamite script. Clay accounting tokens, Uruk period. From the Tell of the Acropolis in Susa. [[Susa III]]
+|File:Economic tablet Susa Louvre Sb15439.jpg|Economic tablet with numeric signs and Proto-Elamite script. Clay accounting tokens, Uruk period. From the Tell of the Acropolis in Susa. [[Susa III]]
+}}
+
+==References==
+{{reflist}}
+
+==Further reading==
+*Afshari, Hassan, and Ruhollah Yousefi Zashk, "An Investigation on Connection of Ideograms Related to the Chain of Phonetic Signs in the Proto-Elamite Writing System", Journal of Archaeological Studies 14.1, pp.&nbsp;1–22, 2022
+*Amiet, P., "Il y a 5000 ans les elamites inventaient l’ecriture", Archeologia 12, pp.&nbsp;16–23, 1966
+*[https://aclanthology.org/2021.findings-acl.362.pdf] Logan Born et al., "Compositionality of Complex Graphemes in the Undeciphered Proto-Elamite Script using Image and Text Embedding Models"[ in Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021, pp.&nbsp;3136–3146 August 2021
+*[https://aclanthology.org/2023.cawl-1.9.pdf] Born, Logan, et al., "Disambiguating Numeral Sequences to Decipher Ancient Accounting Corpora", Proceedings of the Workshop on Computation and Written Language (CAWL 2023), 2023
+*[https://aclanthology.org/W19-2516.pdf] Born, Logan, et al., "Sign clustering and topic extraction in Proto-Elamite", Proceedings of the 3rd Joint SIGHUM Workshop on Computational Linguistics for Cultural Heritage, Social Sciences, Humanities and Literature, 2019
+*Brice W.C., "The Writing System of the Proto-Elamite Account Tablets  of  Susa," Bulletin  of  the John Rylands Library 45, pp.&nbsp;15–39, 1962
+*[https://ora.ox.ac.uk/objects/uuid:4e617379-45da-444b-a9aa-1ca2d01f10bf/files/s9s161833v]Dahl, J. L., "The early development of the cuneiform writing system, and its regional adaptation", in National Museum of World Writing Academic Series, National Museum of World Writing, pp. 285-318, 2025
+*Dahl, J.L., Hawkins, LF., Kelley, K., "Labor Administration in Proto-Elamite Iran", in A. Garcia-Ventura (Ed.), What’s in a Name? Terminology related to Work Force and Job Categories in the Ancient Near East, (= Alter Orient und Altes Testament 440), Münster : Ugarit-Verlag, pp. 15-44, 2018
+* [https://cdli.mpiwg-berlin.mpg.de/articles/cdln/2014-1] Jacob L. Dahl, "The proto-Elamite seal MDP 16, pl. XII fig. 198",  in ''Cuneiform Digital Library Notes'', CDLN 2014:1, 2014
+* [https://cdli.mpiwg-berlin.mpg.de/articles/cdln/2012-6] Jacob L. Dahl, "New and old joins in the Louvre proto-Elamite tablet collection",  in ''Cuneiform Digital Library Notes'', CDLN 2012:6, 2012
+* Dahl, Jacob L, "Animal Husbandry in Susa during the Proto-Elamite Period" SMEA, vol.47,  pp.&nbsp;81–134, 2005
+*[https://cdli.mpiwg-berlin.mpg.de/articles/cdlj/2005-3.pdf] Jacob L. Dahl, "Complex Graphemes in Proto-Elamite", Cuneiform Digital Library Journal, CDLJ 2005–3, 2005
+*[https://cdli.mpiwg-berlin.mpg.de/articles/cdlb/2002-1.pdf] Dahl, Jacob L., "Proto-Elamite sign frequencies", Cuneiform Digital Library Bulletin 2002.1, 2002
+*Daneshmand, Parsa, "Against Cuneiform: The Dawn of Writing in Iran", Iranica Antiqua 59, pp. 1-24, 2024
+*[https://hal.science/hal-03471106v1] François Desset, "The Proto-Elamite writing in Iran", Archéo-Nil, pp.&nbsp;67–104, 2016
+*Dittmann, R., "Seals, Sealings and Tablets: Thoughts on the Changing Patterns of  Administrative Control from the Late-Uruk to Proto-Elamite Period at Susa",  Pp.&nbsp;332–366  in Ğamdat Nasr. Period or Regional Style? Papers given at a Symposium held in Tübingen November  1983. Beihefte zum Tubinger Atlas des Vorderen Orients. Reihe B 62, eds.U. Finkbeiner and W. Rollig. Wiesbaden: Reichert Verlag, 1986
+*[http://cdli.ucla.edu/staff/englund/publications/englund1996a.pdf] Englund, R.K, "The Proto-Elamite Script," in: Peter Daniels and William Bright, eds. The World's Writing Systems (1996). New York/Oxford, pp.&nbsp;160–164, 1996
+*[https://cdli.ucla.edu/pubs/cdlj/2015/cdlj2015_001.html] Laura F. Hawkins, "A New Edition of the Proto-Elamite Text MDP 17", ''Cuneiform Digital Library Journal'', CDLJ 2015:001, 2015
+*Kelley, Kathryn, et al., "Image-aware language modeling for Proto-Elamite", Lingue e linguaggio 21.2, pp.&nbsp;261–294, 2022
+*[https://www.degruyterbrill.com/document/doi/10.1515/janeh-2024-0027/pdf]Matthews, Roger, et al., "Information revolutions and information transitions: counting, sealing, writing in Iran 10,000–300 BC", Journal of Ancient Near Eastern History, 2025
+*Scheil, V., "Documents archaïques en écriture proto-élamite", Revue Biblique (1892–1940), vol. 2, no. 3, pp.&nbsp;372–76, 1905
+* [https://archive.org/download/TheMostAncientScriptsOfIranTheCurrentSituation/TheMostAncientScriptsOfIranTheCurrentSituation.pdf]Francois Vallat, "The Most Ancient Scripts of Iran: The Current Situation",  World Archaeology, vol. 17, no. 3, Early Writing Systems, pp.&nbsp;335–347, Feb. 1986
+*Francois Vallat, "Les Tablettes Proto-Elamites de l’Acropole (Campagne 1972)", Cahiers de la delegation archeologique francaise en Iran III, pp. 93-105, 1973
+*Walker, C. B. F., "Elamite Inscriptions in the British Museum", Iran, vol. 18,  pp. 75–81, 1980
+*Yeganeh, Sepideh Jamshidi, "Correlation of Sealings and Content on Proto-Elamite Tablets Four Unpublished Sealings in the National Museum of Iran", Iranica Antiqua 56, pp.&nbsp;171–187, 2021
+*[https://ora.ox.ac.uk/objects/uuid:a8f083aa-bb85-458b-bb40-915206867912/files/rcz30pv50c]Yeganeh, Sepideh Jamshidi, et al., "Complexity of proto-elamite administration system: Insights from compositional data from sealings and tablets", Journal of Archaeological Science: Reports 61, 104973, 2025
+*Yousefi Zoshk, Rouhollah, Hassan Afshari Salaki, and Donya Etemadifar, "Agricultural Practices in Proto-Elamite Susa: An Analysis of Proto-Elamite Tablets at Iran National Museum (MDP 26)", Journal of Iran National Museum 3.1,  e721176, 2025
+
+==External links==
+*[https://www.thepostil.com/francois-desset-on-the-decipherment-of-linear-elamite-writing-2/ Interview with Francois Desset on his proposed decipherment – The Postil Magazine – Sep 2021]
+*{{cite web |title=Proto-Elamite|author=Cuneiform Digital Library Initiative Wiki|publisher=[[University of Oxford]] |url=https://cdli.ox.ac.uk/wiki/proto-elamite |website=cdli.ox.ac.uk |language=en}} (crowdsourcing materials)
+*[https://www.unicode.org/L2/L2023/23196-proto-elamite.pdf Proposal to encode Proto-Elamite in Unicode - Anshuman Pandey - August 18, 2023]
+*[https://cdli.mpiwg-berlin.mpg.de/search?simple-value%5B0%5D=%2A&simple-field%5B0%5D=keyword&f%5Bperiod%5D%5B0%5D=Proto-Elamite+%28ca.+3100-2900+BC%29&f%5Bartifact_type%5D%5B0%5D=tablet+or+envelope+%3E+envelope&f%5Bartifact_type%5D%5B1%5D=tablet+or+envelope+%3E+tablet&f%5Bartifact_type%5D%5B2%5D=tablet+or+envelope+%3E+tablet+%26+envelope&limit=1000 Proto-Elamite tablets online at CDLI]
+
+{{list of writing systems}}
+{{Iran topics}}
+
+[[Category:Bronze Age writing systems]]
+[[Category:Elamite language]]
+[[Category:Obsolete writing systems]]
+[[Category:Undeciphered writing systems]]

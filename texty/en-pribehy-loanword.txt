@@ -1,0 +1,148 @@
+{{short description|Word borrowed from a donor language and incorporated into a recipient language}}
+{{Use dmy dates|date=April 2021}}
+{{parenthetical referencing|date=August 2026}}
+[[File:20140909-0248 Costa Mesa Mitsuwa.JPG|thumb|The [[English language|English]] word ''[[tofu]]'' is a loanword from the [[Japanese language|Japanese]] word {{Transliteration|ja|tōfu}}, which is itself a loanword from the [[Chinese language|Chinese]] word {{Transliteration|zh|dòufu}}.]]
+{{Sociolinguistics}}
+A '''loanword''' is a word at least partly assimilated from one language (the donor language) into another language (the recipient or target language), through the process of [[borrowing (linguistics)|borrowing]].<ref>{{cite web |title=loanword |url=https://www.merriam-webster.com/dictionary/loanword |website=Dictionary |publisher=Merriam-Webster |access-date=2 October 2022}}</ref><ref>{{cite book|
+last=Jespersen|first=Otto |author-link=Otto Jespersen
+|title=Language|place=New York|publisher=Norton Library|year=1964
+|isbn=978-0-393-00229-4|page=208
+|quote="Linguistic 'borrowing' is really nothing but imitation."}}</ref> Borrowing is a metaphorical term that is well established in the linguistic field despite its acknowledged descriptive flaws: nothing is taken away from the donor language and there is no expectation of returning anything (i.e., the loanword).<ref>{{cite book |last1=Dunkin |first1=Philip |title=Borrowed Words: A History of Loanwords in English |date=2014 |publisher=OUP Oxford |location=Google Books |isbn=9780199574995 |page=1 |edition=Online |url=https://doi.org/10.1093/acprof:oso/9780199574995.001.0001|chapter=1|doi=10.1093/acprof:oso/9780199574995.001.0001 }}</ref>
+
+Loanwords may be contrasted with [[calque]]s, in which a word is borrowed into the recipient language by being directly translated from the donor language rather than being adopted in (an approximation of) its original form. They must also be distinguished from [[cognate]]s, which are words in two or more [[language family|related languages]] that are similar because they share an [[etymological]] origin in the ancestral language, rather than because one borrowed the word from the other.
+
+== Examples and related terms ==
+A loanword is distinguished from a [[calque]] (or loan translation), which is a word or phrase whose [[Meaning (linguistics)|meaning]] or [[idiom]] is adopted from another language by word-for-word [[translation]] into existing words or word-forming roots of the recipient language.<ref>{{cite web |last1=Hoffer |first1=Bates L. |title=Language Borrowing and the Indices of Adaptability and Receptivity |url=https://web.uri.edu/iaics/files/05-Bates-L.-Hoffer.pdf |website=Intercultural Communication Studies |publisher=Trinity University |access-date=10 June 2022 |date=2005}}</ref> Loanwords, in contrast, are {{em|not}} translated.
+
+Examples of loanwords in the English language include ''[[café]]'' (from French {{Lang|fr|café}}, which means 'coffee'), [[bazaar]] (from Persian {{Transliteration|fa|bāzār}}, which means 'market'), and [[kindergarten]] (from German {{Lang|de|Kindergarten}}, which literally means 'children's garden'). The word ''calque'' is a loanword, while the word ''loanword'' is a calque: ''calque'' comes from the French noun {{Lang|fr|calque}} ("tracing; imitation; close copy");<ref>{{cite web|url=http://ahdictionary.com/word/search.html?q=Calque|title=The American Heritage Dictionary entry: Calque|publisher=Houghton Mifflin Harcourt Publishing Company|website=ahdictionary.com}}</ref> while the word ''loanword'' and the phrase ''loan translation'' are translated from German nouns {{Lang|de|Lehnwort}}<ref>{{cite book
+|first=Charles T. |last=Carr
+|series=Society for Pure English Tract No. 42
+|title=The German Influence on the English Language
+|date=1934
+|publisher=Clarendon Press|location=Oxford|page=75
+|url=https://books.google.com/books?id=DRYFAQAAIAAJ&q=%22Loan+word%22+1874++Lehnwort+-shark
+|access-date=25 February 2016}}</ref> and {{Lang|de|Lehnübersetzung}} ({{IPA|de|ˈleːnʔybɐˌzɛt͡sʊŋ|lang|De-Lehnübersetzung.ogg}}).<ref>{{cite web|url=http://germanenglishwords.com/|title=Robb: German English Words germanenglishwords.com|first=Robbin D.|last=Knapp|website=germanenglishwords.com}}</ref>
+
+Loans of multi-word phrases, such as the English use of the French term ''[[déjà vu]]'', are known as adoptions, adaptations, or lexical borrowings.<ref>{{Cite journal
+|last1=Chesley |first1=Paula |author-link1=<!-- No Wikipedia article --> 
+|first2=R. Harald |last2=Baayen |author-link2=<!-- No Wikipedia article -->
+|date=2010
+|title=Predicting New Words from Newer Words: Lexical Borrowings in French
+|journal=Linguistics |volume=48 |number=4  |pages=1343–74|doi=10.1515/ling.2010.043 |s2cid=51733037 }}</ref><ref>{{cite book
+|first=Sarah G. |last=Thomason |author-link=<!-- No Wikipedia article -->
+|title=Language Contact: An Introduction
+|publisher=Georgetown University Press |location=Washington
+|date=2001}}</ref>
+
+Although colloquial and [[informal register]] loanwords are typically spread by word-of-mouth, technical or academic loanwords tend to be first used in written language, often for scholarly, scientific, or literary purposes.<ref name="algeo 2009">{{Cite book|url=https://books.google.com/books?id=znFmBZ2D8rEC&q=%22popular+and+learned+loanwords%22&pg=PA248|title=The Origins and Development of the English Language|last=Algeo|first=John|date=2 February 2009|publisher=Cengage Learning|isbn=978-1428231450|language=en}}</ref><ref name="fiedler">{{cite journal |last1=Fiedler |first1=Sabine |title=Phraseological borrowing from English into German: Cultural and pragmatic implications |journal=Journal of Pragmatics |date=May 2017 |volume=113 |pages=89–102 |doi=10.1016/j.pragma.2017.03.002}}</ref>
+
+A [[Wanderwort]] is a word that has been borrowed across a wide range of languages remote from its original source; an example is the word ''tea'', which originated in [[Hokkien]] but has been borrowed into languages all over the world. For a sufficiently old Wanderwort, it may become difficult or impossible to determine in what language it actually originated.
+
+Most of the [[List of musical terms|technical vocabulary of classical music]] (such as [[concerto]], [[allegro (music)|allegro]], [[tempo]], [[aria]], [[opera]], and [[soprano]]) is borrowed from Italian,<ref>Shanet 1956: 155.</ref> and that of [[ballet]] from French.<ref>Kersley & Sinclair 1979: 3.</ref> Much of the [[Glossary of fencing|terminology]] of the sport of [[fencing]] also comes from French. Many loanwords come from prepared food, drink, fruits, vegetables, seafood and more from languages around the world. In particular, many come from [[French cuisine]] ([[crêpe]], [[crème brûlée]]), [[Italian cuisine|Italian]] ([[pasta]], [[linguine]], [[pizza]], [[espresso]]), and Chinese ([[dim sum]], [[chow mein]], [[wonton]]).
+
+==Linguistic classification==
+
+Loanwords are adapted from one language to another in a variety of ways.<ref>{{cite journal |last1=Kenstowicz |first1=Michael |title=Issues in loanword adaptation: A case study from Thai |journal=Lingua |date=June 2006 |volume=116 |issue=7 |pages=921–949 |doi=10.1016/j.lingua.2005.05.006 |url=https://www.sciencedirect.com/science/article/abs/pii/S0024384105001002|url-access=subscription }}</ref>
+The studies by [[Werner Betz]] (1971, 1901), [[Einar Haugen]] (1958, also 1956), and [[Uriel Weinreich]] (1963) are regarded as the classical theoretical works on loan influence.<ref>Compare the two survey articles by Oksaar (1992: 4f.), Stanforth (2021) and Grzega (2003, 2018).</ref> The basic theoretical statements all take Betz's nomenclature as their starting point. Duckworth enlarges Betz's scheme{{sfn|Duckworth|1977}} by the type "partial substitution" and supplements the system with English terms. A schematic illustration of these classifications is given below.<ref>The following comments and examples are taken from Grzega, Joachim (2004), ''Bezeichnungswandel: Wie, Warum, Wozu?'', Heidelberg: Winter, p. 139, and Grzega, Joachim (2003), [http://www1.ku-eichstaett.de/SLF/EngluVglSW/grzega1032.pdf "Borrowing as a Word-Finding Process in Cognitive Historical Onomasiology"], ''[http://www.onomasiology.de Onomasiology Online]'' 4: 22&ndash;42.</ref>
+
+The phrase "foreign word" used in the image below is a mistranslation of the German {{lang|de|Fremdwort}}, which refers to loanwords whose pronunciation, spelling, inflection or gender have not been adapted to the new language such that they no longer seem foreign. Such a separation of loanwords into two distinct categories is not used by linguists in English in talking about any language. Basing such a separation mainly on spelling is (or, in fact, was) not common except amongst German linguists, and only when talking about German and sometimes other languages that tend to adapt foreign spellings, which is rare in English unless the word has been widely used for a long time.
+
+According to the linguist Suzanne Kemmer, the expression "foreign word" can be defined as follows in English: "[W]hen most speakers do not know the word and if they hear it think it is from another language, the word can be called a foreign word. There are many foreign words and phrases used in English such as bon vivant (French), mutatis mutandis (Latin), and Schadenfreude (German)."<ref>[http://www.ruf.rice.edu/~kemmer/Words/loanwords.html Loanwords] by S. Kemmer, Rice University</ref> This is not how the term is used in this illustration:
+
+[[File:Loanword classification tree 3.gif|upright=3|frameless]]
+
+On the basis of an importation-substitution distinction, Haugen distinguishes three basic groups of borrowings: "(1) ''Loanwords'' show morphemic importation without substitution.... (2) ''Loanblends'' show morphemic substitution as well as importation.... (3) ''Loanshifts'' show morphemic substitution without importation".{{sfn|Haugen|1950|p=214f}} Haugen later refined his model{{sfn|Haugen|1956|}} in a review of Gneuss's book on Old English loan coinages,{{sfn|Gneuss|1955|}} whose classification, in turn, is the one by Betz again.{{sfn|Betz|1949|}}
+
+Weinreich differentiates between two mechanisms of lexical interference, namely those initiated by simple words and those initiated by compound words and phrases.{{sfn|Weinreich|1953|p=47ff}}{{full citation needed|date=August 2026}} He defines ''simple words'' "from the point of view of the bilinguals who perform the transfer, rather than that of the descriptive linguist. Accordingly, the category 'simple' words also includes compounds that are transferred in unanalysed form". After this general classification, Weinreich then resorts to Betz's (1949) terminology.
+
+== In English ==
+The English language has borrowed many words from other cultures or languages. For examples, see [[Lists of English words by country or language of origin]] and [[Anglicisation]].
+
+Some English loanwords remain relatively faithful to the original phonology even though a particular [[phoneme]] might not exist or have contrastive status in English. For example, the [[Hawaiian language|Hawaiian]] word ''[[Lava#ʻAʻā|{{lang|haw|{{okina}}a{{okina}}ā|nocat=yes}}]]'' is used by geologists to specify lava that is thick, chunky, and rough. The Hawaiian spelling indicates the two [[glottal stop]]s in the word, but the English pronunciation, {{IPAc-en|ˈ|ɑː|(|ʔ|)|ɑː}}, contains at most one. The English spelling usually removes the [[ʻokina]] and [[macron (diacritic)|macron]] diacritics.<ref>{{cite book|last1=Elbert|first1=Samuel H.|last2=Pukui|first2=Mary Kawena|title=Hawaiian Dictionary|place=Honolulu|publisher=University of Hawaiʻi Press|year=1986|edition=Revised and enlarged|isbn=978-0-8248-0703-0|page=389}}</ref>
+
+Most English affixes, such as ''{{wikt-lang|en|un-}}'', ''{{wikt-lang|en|-ing}}'', and ''{{wikt-lang|en|-ly}}'', were used in Old English. However, a few English affixes are borrowed. For example, the verbal suffix [[-ize|''{{lang|en-US|-ize|nocat=yes}}'' (American English) or ''{{lang|en-GB|-ise|nocat=yes}}'' (British English)]] comes from Greek {{lang|grc|-ιζειν}} (''{{translit|grc|-izein}}'') through Latin {{lang|la|-izare}}.
+
+Pronunciation often differs from the original language, occasionally dramatically, especially when dealing with [[place name]]s. This often leads to divergence when many speakers anglicize pronunciations as other speakers try to maintain the way the name would sound in the original language, as in the [[pronunciation of Louisville]].
+
+==Languages other than English==
+===Transmission in the Ottoman Empire===
+[[File:Backgammon and Dominos numbers in Ottoman Turkish, 1907.jpg|thumb|Backgammon and Dominos numbers in Ottoman Turkish, 1907 (see [[Tables game#Languages]])]]
+During more than 600 years of the [[Ottoman Empire]], the literary and administrative language of the empire was [[Turkish language|Turkish]], with many [[Persian (language)|Persian]] and [[Arabic]] loanwords, called [[Ottoman Turkish]], considerably differing from the everyday spoken Turkish of the time. Many such words were adopted by other languages of the empire, such as [[Albanian language|Albanian]], [[Bosnian language|Bosnian]], [[Bulgarian language|Bulgarian]], [[Croatian language|Croatian]], [[Greek language|Greek]], [[Hungarian language|Hungarian]], [[Ladino language|Ladino]], [[Macedonian language|Macedonian]], [[Montenegrin language|Montenegrin]] and [[Serbian language|Serbian]]. After the empire fell after [[World War I]] and the [[Republic of Turkey]] was founded, the Turkish language underwent an extensive [[language reform]] led by the newly founded [[Turkish Language Association]], during which [[List of replaced loanwords in Turkish|many adopted words]] were replaced with new formations derived from [[Turkic languages|Turkic]] roots. That was part of the ongoing cultural reform of the time, in turn a part in the broader framework of [[Atatürk's Reforms]], which also included the introduction of the new [[Turkish alphabet]].
+
+Turkish also has taken many words from [[French (language)|French]], such as {{lang|tr|pantolon}} for ''trousers'' (from French {{lang|fr|pantalon}}) and {{lang|tr|komik}} for ''funny'' (from French {{lang|fr|comique}}), most of them pronounced very similarly.
+
+Word usage in modern Turkey has acquired a political tinge: [[right-wing]] publications tend to use more Arabic-originated words, [[left-wing]] publications use more words adopted from Indo-European languages such as Persian and French, while centrist publications use more native Turkish root words.<ref>{{cite book|last=Lewis|first=Geoffrey|title=The Turkish Language Reform: A Catastrophic Success|place=London|publisher=Oxford University Press|year=2002|isbn=978-0-19-925669-3}}</ref>
+
+===Dutch words in Indonesian===
+Almost 350 years of Dutch presence in what is now [[Indonesia]] have left significant linguistic traces. Though very few Indonesians have a fluent knowledge of Dutch, the Indonesian language inherited many words from Dutch, both in words for everyday life (e.g., ''[[wikt:buncis#Indonesian|buncis]]'' from Dutch ''[[wikt:boontjes|boontjes]]'' for (green) beans) and as well in administrative, scientific or technological terminology (e.g., ''[[wikt:kantor#Indonesian|kantor]]'' from Dutch ''[[wikt:kantoor#Dutch|kantoor]]'' for office).<ref>Sneddon (2003), p.162.</ref> The Professor of Indonesian Literature at [[Leiden University]],<ref>{{cite web |title=Hendrik Maier |url=https://idwriters.com/authors/hendrik-maier/ |website=IDWRITERS |access-date=10 October 2021 |date=26 April 2017}}</ref> and of Comparative Literature at [[University of California, Riverside|UCR]],<ref>{{cite web |last1=UCR |last2=Department of Comparative Literature and Languages |title=Faculty: Hendrik Maier |url=https://complitlang.ucr.edu/people/faculty/maier/ |website=UCR Faculty |access-date=10 October 2021}}</ref> argues that roughly 20% of [[Indonesian language|Indonesian]] words can be traced back to Dutch words.<ref>{{cite journal |url=http://repositories.cdlib.org/ies/050208/ |title=A Hidden Language – Dutch in Indonesia |website=UC Berkeley: Institute of European Studies |via=eScholarship |date=8 February 2005 |access-date=29 March 2015|last1=Maier |first1=Hendrik M. }}</ref>
+
+===Dutch words in Russian===
+In the late 17th century, the [[Dutch Republic]] had a leading position in shipbuilding. Czar [[Peter the Great]], eager to improve his navy, studied shipbuilding in [[Zaandam]] and [[Amsterdam]]. Many Dutch naval terms have been incorporated in the Russian vocabulary, such as [[wikt:брамсель|бра́мсель]] ({{transliteration|ru|brámsel}}) from Dutch {{Lang|nl|bramzeil}} for the [[topgallant sail]], [[wikt:домкрат|домкра́т]] ({{transliteration|ru|domkrát}}) from Dutch ''[[wikt:dommekracht|dommekracht]]'' for [[jack (device)|jack]], and [[wikt:матрос|матро́с]] ({{transliteration|ru|matrós}}) from Dutch ''[[wikt:matroos#Dutch|matroos]]'' for sailor.
+
+===Romance languages===
+A large percentage of the lexicon of [[Romance languages]], themselves descended from [[Vulgar Latin]], consists of loanwords (later [[wikt:learned borrowing|learned or scholarly borrowings]]) from Latin. These words can be distinguished by lack of typical sound changes and other transformations found in descended words, or by meanings taken directly from [[Classical Latin|Classical]] or [[Ecclesiastical Latin]] that did not evolve or change over time as expected; in addition, there are also semi-learned terms which were adapted partially to the Romance language's character. Latin borrowings can be known by several names in Romance languages: in French, for example, they are usually referred to as {{Lang|fr|mots savants}}, in Spanish as {{Lang|es|cultismos}},<ref>{{cite web|url=http://aliso.pntic.mec.es/agalle17/latin/verba/definiciones.pdf|title=Definiciones de Cultismo, Semicultismo y Palabra Patrimonial|author=Ángel Luis Gallego Real}}</ref><ref>{{cite book|url=https://books.google.com/books?id=FtxywY_6g4UC&q=semi+cultismos&pg=PA150|title=The Romance Languages|first=Rebecca|last=Posner|date=5 September 1996|publisher=Cambridge University Press|via=Google Books|isbn=9780521281393}}</ref> and in Italian as {{Lang|it|latinismi}}.
+
+Latin is usually the most common source of loanwords in these languages, such as in Italian, Spanish, French, Portuguese, etc.,<ref>{{cite journal|title=On the Genealogical Structure of the Spanish Vocabulary|first=William T.|last=Patterson|date=1 January 1968|journal=Word|volume=24|issue=1–3|pages=309–339|doi=10.1080/00437956.1968.11435535|doi-access=free}}</ref><ref name="ulaval.ca">{{cite web|url=http://www.axl.cefan.ulaval.ca/francophonie/HIST_FR_s92_Emprunts.htm#3._Lapport_des_langues_anciennes_au_fran%C3%A7ais_|title=Chjapitre 10: Histoire du français - Les emprunts et la langue française|website=axl.cefan.ulaval.ca}}</ref> and in some cases the total number of loans may even outnumber inherited terms<ref>{{cite web|url=http://www.cnrtl.fr/etymologie/|title=Centre National de Ressources Textuelles et Lexicales|website=cnrtl.fr}}</ref><ref>{{Cite web |url=https://www.scribd.com/document/157203089/Diccionario-Critico-Etimologico-castellano-A-CA-Corominas-Joan-pdf |title=Diccionario Critico Etimologico castellano A-CA - Corominas, Joan.PDF |access-date=2 October 2018 |archive-date=29 July 2018 |archive-url=https://web.archive.org/web/20180729050841/https://www.scribd.com/document/157203089/Diccionario-Critico-Etimologico-castellano-A-CA-Corominas-Joan-pdf }}</ref> (although the learned borrowings are less often used in common speech, with the most common vocabulary being of inherited, orally transmitted origin from Vulgar Latin). This has led to many cases of etymological [[Doublet (linguistics)|doublets]] in these languages.
+
+For most Romance languages, these loans were initiated by scholars, clergy, or other learned people and occurred in medieval times, peaking in the late Middle Ages and early Renaissance era<ref name="ulaval.ca"/>; in Italian, the 14th century had the highest number of loans.{{citation needed|date=November 2019}} In the case of Romanian, the language underwent a "re-Latinization" process later than the others (see [[Romanian lexis]], {{section link|Romanian language|French, Italian, and English loanwords}}), in the 18th and 19th centuries, partially using French and Italian words (many of these themselves being earlier borrowings from Latin) as intermediaries,<ref>{{cite web|url=http://www.dex.ro/|title=dex.ro - Dicţionarul explicativ al limbii române|website=dex.ro}}</ref> in an effort to modernize the language, often adding concepts that did not exist until then, or replacing words of other origins. These common borrowings and features also essentially serve to raise mutual intelligibility of the Romance languages, particularly in academic/scholarly, literary, technical, and scientific domains. Many of these same words are also found in English (through its numerous borrowings from Latin and French) and other European languages.
+
+In addition to Latin loanwords, many words of Ancient Greek origin were also borrowed into Romance languages, often in part through scholarly Latin intermediates, and these also often pertained to academic, scientific, literary, and technical topics. Furthermore, to a lesser extent, Romance languages borrowed from a variety of other languages; in particular, English has become an important source in more recent times. The study of the origin of these words and their function and context within the language can illuminate some important aspects and characteristics of the language, and it can reveal insights on the phenomenon of lexical borrowing in linguistics as a method of enriching a language.<ref>{{cite journal|url=https://www.e-periodica.ch/cntmng?pid=rlr-001:1969:33::530|title=Loan-words and lexical borrowing in Romance|author=K.A. Goddard|journal=Revue de linguistique romane|year=1969}}</ref>
+
+==Cultural aspects==
+According to [[Hans Henrich Hock]] and Brian Joseph, "languages and dialects... do not exist in a vacuum": there is always linguistic contact between groups.<ref>{{cite book
+|last1=Hock |first1=Hans Henrich |first2=Brian D. |last2=Joseph.
+|chapter=Lexical Borrowing 
+|title=Language History, Language Change, and Language Relationship: An Introduction to Historical and Comparative Linguistics
+|edition=2nd |location=Berlin |publisher= Mouton de Gruyter
+|date=2009
+|pages=241–78}}.</ref> The contact influences what loanwords are integrated into the lexicon and which certain words are chosen over others.
+
+==Leaps in meaning==
+In some cases, the original meaning shifts considerably through unexpected logical leaps, creating [[false friend]]s. The English word ''Viking'' became Japanese [[wikt:バイキング|バイキング]] ({{Transliteration|ja|baikingu}}), meaning "buffet", because the first restaurant in Japan to offer [[buffet]]-style meals, inspired by the Nordic [[smörgåsbord]], was opened in 1958 by the Imperial Hotel under the name "Viking".<ref>{{cite web |title=The Imperial Viking Sal |publisher=Imperial Hotel Tokyo |url=https://www.imperialhotel.co.jp/e/tokyo/restaurant/sal/ |access-date=30 March 2019}}</ref> The German word ''[[wikt:Kachel#German|Kachel]]'', meaning "tile", became the Dutch word ''[[wikt:kachel|kachel]]'' meaning "stove", as a shortening of ''[[wikt:kacheloven|kacheloven]]'', from German ''[[wikt:Kachelofen|Kachelofen]]'', a [[cocklestove]]. The Indonesian word {{wikt-lang|id|manset}} primarily means "[[spandex]] clothing", "inner bolero", or "detachable sleeve", while its French etymon {{wikt-lang|fr|manchette}} means "cuff".
+
+== See also ==
+* [[Bilingual pun]]
+* [[Hybrid word]]
+* [[Inkhorn term]]
+* [[Language contact]]
+* [[Neologism]]
+* [[Phono-semantic matching]]
+* [[Reborrowing]]
+* [[Semantic loan]]
+
+==References==
+{{Reflist}}
+
+==Sources==
+* Best, Karl-Heinz, Kelih, Emmerich (eds.) (2014): ''Entlehnungen und Fremdwörter: Quantitative Aspekte.'' Lüdenscheid: RAM-Verlag. 
+* {{ cite book | last = Betz | first = Werner | year = 1949 | title = Deutsch und Lateinisch: Die Lehnbildungen der althochdeutschen Benediktinerregel | location = Bonn | publisher = Bouvier}}
+*Betz, Werner (1959): "Lehnwörter und Lehnprägungen im Vor- und Frühdeutschen". In: Maurer, Friedrich / Stroh, Friedrich (eds.): ''Deutsche Wortgeschichte''. 2nd ed. Berlin: Schmidt, vol. 1, 127&ndash;147.
+* Bloom, Dan (2010): "What's That Pho?". French Loan Words in Vietnam Today; Taipei Times, [http://taipeitimes.com/News/feat/archives/2010/05/29/2003474148 &#91; SOCIETY &#93; What's that 'pho'? - Taipei Times]
+*Cannon, Garland (1999): "Problems in studying loans", ''Proceedings of the annual meeting of the Berkeley Linguistics Society'' 25, 326&ndash;336.
+*{{cite book | last = Duckworth | first = David | year = 1977 | chapter = Zur terminologischen und systematischen Grundlage der Forschung auf dem Gebiet der englisch-deutschen Interferenz: Kritische Übersicht und neuer Vorschlag". | editor1-last = Kolb | editor1-first = Herbert | editor2-last = Lauffer | editor2-first = Hartmut | title = Sprachliche Interferenz: Festschrift für Werner Betz zum 65. Geburtstag | location = Tübingen | publisher = Niemeyer | pp = 36-56}}
+* {{ cite book | last = Gneuss | first = Helmut | year = 1955 | title = Lehnbildungen und Lehnbedeutungen im Altenglischen | location = Berlin | publisher = Schmidt}}
+*[[Joachim Grzega|Grzega, Joachim]] (2003): [http://www1.ku-eichstaett.de/SLF/EngluVglSW/grzega1032.pdf "Borrowing as a Word-Finding Process in Cognitive Historical Onomasiology"], ''[http://www.onomasiology.de Onomasiology Online]'' 4, 22&ndash;42.
+*Grzega, Joachim (2004): ''Bezeichnungswandel: Wie, Warum, Wozu?'' Heidelberg: Winter.
+* {{ cite journal | last = Haugen | first = Einar | year = 1950 | doi = 10.2307/410058 | title = The analysis of linguistic borrowing | journal = Language | volume = 26 | issue = 2 | pp =  210-231}}
+* {{ cite journal | last = Haugen | first = Einar | year = 1956 | doi = 10.2307/411105 | title = Review of ''Lehnbildungen und Lehnbedeutungen im Altenglischen'', by H. Gneuss | journal = Language | volume = 32 | issue = 4 | pp = 761–766}}
+*{{citation |last=Hitchings |first=Henry |author-link=Henry Hitchings |title=The Secret Life of Words: How English Became English |publisher=John Murray |location=London |year=2008 |isbn=978-0-7195-6454-3}}.
+*{{citation |last1=Kersley|first1=Leo|last2=Sinclair|first2=Janet |url=https://books.google.com/books?id=_viUlWzimvQC&q=french |title=A Dictionary of Ballet Terms |publisher=Da Capo Press |year=1979 |isbn=978-0-306-80094-8}}.
+*Koch, Peter (2002): "Lexical Typology from a Cognitive and Linguistic Point of View". In: Cruse, D. Alan et al. (eds.): ''Lexicology: An International on the Nature and Structure of Words and Vocabularies/Lexikologie: Ein internationales Handbuch zur Natur und Struktur von Wörtern und Wortschätzen''. Berlin/New York: Walter de Gruyter, 1142&ndash;1178.
+*Oksaar, Els (1996): "The history of contact linguistics as a discipline". In: Goebl, Hans et al. (eds.): ''Kontaktlinguistik/contact linguistics/linguistique de contact: ein internationales Handbuch zeitgenössischer Forschung/an international handbook of contemporary research/manuel international des recherches contemporaines''. Berlin/New York: Walter de Gruyter, 1&ndash;12.
+*{{citation |last=Shanet |first=Howard |title=Learn to Read Music |publisher=Simon & Schuster |location=New York |year=1956 |isbn=978-0-671-21027-4 |url-access=registration |url=https://archive.org/details/learntoreadmusic00shan }}.
+*Stanforth, Anthony W. (2002): "Effects of language contact on the vocabulary: an overview". In: Cruse, D. Alan et al. (eds.) (2002): Lexikologie: ein internationales Handbuch zur Natur und Struktur von Wörtern und Wortschätzen/Lexicology: an international handbook on the nature and structure of words and vocabularies. Berlin/New York: Walter de Gruyter, p.&nbsp;805&ndash;813.
+*[[Ghil'ad Zuckermann|Zuckermann, Ghil'ad]] (2003), [http://www.palgrave.com/br/book/9781403917232 ''Language Contact and Lexical Enrichment in Israeli Hebrew''], Houndmills: [[Palgrave Macmillan]], ({{ISBN|978-1-4039-3869-5}})
+
+==External links==
+{{Wiktionary}}
+* [http://wold.clld.org/ World Loanword Database (WOLD)]
+* [https://afbo.info/pairs AfBo: A world-wide survey of affix borrowing]
+* [https://lingconlab.github.io/Dagloan_database/DL_database.html Daghestanian loans database]
+
+{{Authority control}}
+
+[[Category:Historical linguistics]]
+[[Category:Etymology]]
+[[Category:Cultural assimilation]]
+[[Category:Translation]]
+[[Category:Sociolinguistics]]

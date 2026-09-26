@@ -1,0 +1,1348 @@
+{{short description|Language isolate spoken in northern Pakistan}}
+{{Use dmy dates|date=April 2020}}
+{{Infobox language
+| name             = Burushaski
+| nativename       = {{hlist|{{lang|bsk|{{nq|بُرُݸشَسکݵ}}}}|{{tlit|bsk|burúśaski}}}}
+| states           = [[Pakistan]], [[India]]
+| region           = [[Hunza District|Hunza]], [[Nagar District|Nagar]], [[Ghizer District (2019–)|Ghizer]], [[Gilgit District|Gilgit]] (Pakistan) and [[Hari Parbat]], [[Jammu and Kashmir (union territory)|Jammu and Kashmir]] (India)<ref name="Munshi2006" />
+| ethnicity        = [[Burusho people|Burusho]]
+| speakers         = {{sigfig|131,300|2}}
+| date             = 2018–2020
+| ref              = e27
+| familycolor      = Isolate
+| family           = [[Language isolate]]
+| dia1             = Yasin
+| dia2             = Hunza-Nagar
+| script           = [[Arabic script]]
+| iso3             = bsk
+| map              = Burshaski-lang.png
+| map2             = Lang Status 80-VU.svg
+| mapcaption2      = {{center|{{small|Burushaski is classified as Vulnerable by the [[UNESCO]] ''[[Atlas of the World's Languages in Danger]]''}}}}
+| mapcaption       = 
+| notice           = IPA
+| glotto           = buru1296
+| glottorefname    = Burushaski
+| image            = [[File:Burushaski in Perso-Arabic.png|200px]]
+| imagecaption     = Burushaski written in Nastaliq style.
+| pronunciation    = {{IPA|[bʊˈruːɕʌskiː]}}
+}}
+
+'''Burushaski''' ({{Lang|bsk|{{nq|بُرُݸشَسْکِݵ}}}}, ''burúśaski'', {{IPA|bsk|bʊˈruːɕʌskiː}}; [[Endonym and exonym|autonym]]: {{IPA|bsk|miɕáːski|}} 'our language'){{efn|English: {{IPAc-en|ˌ|b|ʊr|ʊ|ˈ|ʃ|æ|s|k|i}}<ref>Laurie Bauer, 2007, ''The Linguistics Student's Handbook'', Edinburgh</ref><ref name="b-u-dict-vol1" />}} is a [[language isolate]], spoken by the [[Burusho people]], native to northern [[Gilgit-Baltistan]] in [[Pakistan]].<ref name="npr">{{cite news| title=Pakistan's 'Burushaski' Language Finds New Relatives|url=https://www.npr.org/2012/06/20/155454736/pakistans-burushaski-language-finds-new-relatives|access-date=23 September 2017|agency=NPR|date=20 June 2012|quote=It's spoken by about 90,000 people, the Burusho people, and nearly all of them live in Pakistan. A few hundred live in India.}}</ref><ref>{{cite web|url=http://original.britannica.com/eb/article-9018245/ |title=Encyclopedia – Britannica Online Encyclopedia |publisher=Original.britannica.com |access-date=14 September 2013}}</ref> There are also a few hundred speakers of this language in [[Kashmir Valley]], [[India]].<ref name="npr" /><ref name="Ahmed2016">{{cite journal|last=Ahmed|first=Musavir|year=2016|title=Ethnicity, Identity and Group Vitality: A study of Burushos of Srinagar|journal=Journal of Ethnic and Cultural Studies|volume=3|issue=1|pages=1–10|doi=10.29333/ejecs/51|issn=2149-1291|language=en|doi-access=free}}</ref>
+
+In Pakistan, Burushaski is spoken by the people of the [[Hunza District]], the [[Nagar District]], the northern [[Gilgit District]], the [[Yasin Valley|Yasin]] Valley in the [[Gupis-Yasin District]], and the [[Ishkoman Valley|Ishkoman]] Valley of the northern [[Ghizer District (2019–)|Ghizer District]]. Their native region is in northern [[Gilgit-Baltistan|Gilgit–Baltistan]]. It also borders the [[Pamir corridor]] to the north. In India, Burushaski is spoken in [[Botraj Mohalla]] of the [[Hari Parbat]] region in [[Srinagar]].<ref name="Munshi2006">{{cite book|last=Munshi|first=Sadaf |title= Kashmir Burushashki: Language, Language Contact, and Change|year=2006|publisher=The University of Texas at Austin |language=en|page=6|quote=The Kashmir – speakers of the variety of Burushaski spoken in Kashmir Valley (henceforth "JKB") in India – are settled in and around a small locality by the foothills of Hari Parbat Fort in Srinagar, the capital of the state of Jammu and Kashmir (henceforth "J & K").}}</ref><ref>{{cite web |url=https://linguistlist.org/issues/?topic=Dissertation+Abstracts |title=Dissertation Abstracts |publisher=Linguist List |access-date=14 September 2013 |archive-date=2 February 2017 |archive-url=https://web.archive.org/web/20170202102405/http://linguistlist.org/pubs/diss/browse-diss-action.cfm?DissID=14723 |url-status=live }}</ref> It is generally believed that the language was spoken in a much wider area in the past, due to the two disconnected regions in which it is spoken currently, which are separated by more easily traversible regions of the [[Hunza Valley]] where the Indo-Aryan [[Shina language|Shina]] language is spoken.<ref>{{Cite journal |last=Urban |first=Matthias |date=2021-04-14 |title=The geography and development of language isolates |url=https://royalsocietypublishing.org/doi/10.1098/rsos.202232 |journal=Royal Society Open Science |volume=8 |issue=4 |article-number=202232 |doi=10.1098/rsos.202232  |doi-access=free|pmc=8059667 |pmid=33996125}}</ref> It is also known as ''Werchikwar'' and ''Miśa:ski''.<ref>{{cite web|url=http://www.ethnologue.com/show_language.asp?code=bsk |title=Burushaski |publisher=Ethnologue |date=19 February 1999 |access-date=14 September 2013}}</ref>
+
+== Classification ==
+Attempts have been made to establish links between Burushaski and several different language families, although none has been accepted by a majority of [[linguist]]s.
+
+Some hypotheses posit a genealogical relationship between Burushaski and the [[North Caucasian languages]], [[Kartvelian languages]],{{sfnp|Holst|2014|pp=15–16}}<ref>Jan Henrik Holst: ''Die Herkunft des Buruschaski.'' 2017. Aachen: Shaker Verlag</ref> [[Yeniseian languages]] and/or [[Indo-European languages]], usually in proposed [[macrofamily|macrofamilies]]:
+* The proposed but contended "[[Dené–Caucasian languages|Dené–Caucasian]]" macrofamily includes Burushaski alongside [[Basque language|Basque]], [[North Caucasian languages|North Caucasian]], [[Yeniseian languages|Yeniseian]], [[Sino-Tibetan languages|Sino-Tibetan]] and [[Na-Dene languages|Na-Dené]].<ref>[[John Bengtson]], ''Some features of Dene–Caucasian phonology (with special reference to Basque).'' Cahiers de l'Institut de Linguistique de Louvain (CILL) 30.4: 33-54,</ref><ref>John Bengtson and V. Blazek, "Lexica Dene–Caucasica". Central Asiatic Journal 39, 1995, 11-50 & 161-164</ref>
+* Another proposed family, known as "[[Karasuk languages|Karasuk]]",<ref>[[George van Driem]] (2001) ''Languages of the Himalayas: An Ethnolinguistic Handbook of the Greater Himalayan Region,'' Brill</ref> links Burushaski with Yeniseian.
+* A close relationship to a Northwestern group of [[Indo-European languages]] (including [[Germanic languages|Germanic]] and [[Slavic languages]] and e.g. the extinct [[Phrygian language|Phrygian]]) has been proposed by {{ill|Ilija Čašule|mk|Илија Чашуле}}.<ref>Casule, Ilija. 2003. Evidence for the Indo-European laryngeals in Burushaski and its genetic affiliation with Indo-European. ''The Journal of Indo-European Studies'' 31:1–2, pp 21–86.</ref><ref name=IC_JIES40>Čašule, Ilija. 2012. [http://www.jies.org/DOCS/jies_index/Vol40.html Correlation of the Burushaski Pronominal System with Indo-European and Phonological and Grammatical Evidence for a Genetic Relationship.] ''The Journal of Indo-European Studies'' 40:1–2, pp 59 ''ff'', with review by Hamp, Huld, and Bengtson & Blazek</ref><ref>{{Cite web |url=http://www.clarkriley.com/JIES4012web/059-153Casule.pdf |title=I. Čašule. Correlation of the Burushaski pronominal system with Indo-European and phonological and grammatical evidence for a genetic relationship |access-date=29 June 2014 |archive-date=6 December 2017 |archive-url=https://web.archive.org/web/20171206135912/http://www.clarkriley.com/JIES4012web/059-153Casule.pdf }}</ref>
+** Based on Čašule's investigations, [[Eric P. Hamp]] accepted a connection with Indoeuropean languages, but suggested that Burushaski is more remotely related, and rather belongs to a sister [[Clade#Terminology|clade]] of the proposed "[[Indo-Hittite]] clade".<ref name=hamp2013>{{cite journal|last=Hamp|first=Eric P.|title=The Expansion of the Indo-European Languages: An Indo-Europeanist's Evolving View|journal=Sino-Platonic Papers|date=August 2013|volume=239|page=8|url=http://sino-platonic.org/complete/spp239_indo_european_languages.pdf|access-date=5 April 2014}}</ref> (Čašule admitted that some of his proposed findings could be interpreted in this way, but stated that he preferred the Nortwestern IE alternative, based on perceived alignments in vocabulary.<ref name=IC_JIES40/>)<!--- Temporarily (2026-07-29) commented out; see the talk page.
+The various proposals linking Burushaski to Indo-[[Europe]]an make divergent—or in the case of Čašule even contradictory—claims about the nature of the relationship, and are rejected by mainstream scholarship.<ref>{{cite book |last=Smith |first=Alexander D. |year=2017 |chapter=Burushaski |editor=Lyle Campbell |title=Language isolates |pages=117–138 |series=Routledge Language Family Series |place=New York |publisher =Routledge}}</ref> --->
+* A possible connection specifically to the [[North Caucasian languages]].<ref>{{Cite web|url=http://jdbengt.net/biblio.htm|title=John D Bengtson|website=jdbengt.net|access-date=19 March 2019}}</ref>
+
+== Language contact ==
+Blench (2008) notes that the supposed evidence for external relationships of Burushaski rely on lexical data which may be better explained as originating from language contact. In particular, almost all Burushaski agricultural vocabulary appears to be borrowed from [[Dardic languages|Dardic]], [[Tibeto-Burman languages|Tibeto-Burman]], and [[North Caucasian languages|North Caucasian]] languages.<ref>{{cite journal |last1=Blench |first1=Roger |title=Re-evaluating the linguistic prehistory of South Asia |journal=Linguistics, Archaeology and the Human Past |date=2008 |page=169 |url=https://rogerblench.info/Archaeology/South%20Asia/Blench_paper%20LCHES%202007.pdf |access-date=10 September 2023}}</ref>
+
+Following Berger (1956), the ''[[The American Heritage Dictionary of the English Language|American Heritage]]'' dictionaries suggested that the word ''*abel'' '[[apple]]', the only name for a fruit (tree) reconstructed for [[Proto-Indo-European language|Proto-Indo-European]], may have been borrowed from a language ancestral to Burushaski. ("Apple" and "apple tree" are ''báalt'' in modern Burushaski.)
+
+Kashmiri linguist Sadaf Munshi stated that Burushaski may have developed alongside the [[Dravidian languages]] before the [[Indo-Aryan migration theory|Indo-Aryan migration]] to South Asia, mentioning the fact that both possess [[Retroflex consonant|retroflex sounds]].<ref name="Munshi">{{cite book|last=Munshi|first=Sadaf |title=Jammu and Kashmir Burushashki: Language, Language Contact, and Change|year=2006|publisher=The University of Texas at Austin |language=en|pages=12, 105}}</ref>
+
+Mueezuddin Hakal (2022) argues that Burushaski preserves a primary stratum of vernacular stems alongside later loan vocabulary acquired through cultural contact, particularly with [[Gandhari language|Gandhari]] Prakrit and Classical [[Sanskrit]] during the early centuries CE. Drawing on epigraphic and historical evidence from the Upper Indus region, he suggests that interaction between Burushaski-speaking communities and Indo Aryan linguistic traditions between the second and eighth centuries CE contributed to identifiable Sanskrit loanwords. While much core vocabulary remains vernacular in origin, certain lexical items, including terms such as tal "palate" and kapal "skull," are interpreted as reflecting Sanskrit influence.<ref>Hakal, Mueezuddin (2022). "Vernacular Stems and Loan Vocabulary in Burushaski: A Cultural Contact with Sanskrit as Expressed by the Names of Head Parts." Central European Management Journal 30(4): 2061–2072.</ref>
+
+== Varieties ==
+Burushaski is spoken by about 120,000 speakers in Pakistan, and also by a few hundred in India.<ref name="npr" /> In Pakistan, it is spoken in three main valleys: [[Yasin Valley|Yasin]], [[Hunza Valley|Hunza]], and [[Nagar Valley|Nagar]]. The varieties of Hunza and Nagar diverge slightly, but are clearly dialects of a single language. The Yasin variety, also known by the Khowar exonym ''Werchikwar'', is much more divergent. Intelligibility between Yasin and Hunza-Nagar is difficult, and Yasin is sometimes considered a distinct language and thought to be the "pure" or "original" Burushaski by the speakers of Yasin valley itself.<ref>Backstrom & Radloff (1992), Anderson (2006)</ref> Yasin is the least affected by [[language contact|contact with neighboring languages]], though speakers are bilingual in [[Khowar language|Khowar]]. Yasin is spoken by a quarter of Burushaski speakers.<ref>Anderson 1997: 1022</ref>
+
+In [[India]], Jammu & Kashmir Burushaski (JKB) "has developed divergent linguistic features which make it systematically different from the varieties spoken in Pakistan."<ref name="2006Munshi">{{cite book|last=Munshi|first=Sadaf |title=Jammu and Kashmir Burushashki: Language, Language Contact, and Change|year=2006|publisher=The University of Texas at Austin |language=en|pages=13, 19}}</ref> The dialect of Burushaski spoken in India has been influenced by [[Kashmiri language|Kashmiri]], as well as [[Hindi]] and [[Urdu]].<ref>{{cite book|last=Munshi|first=Sadaf |title=Jammu and Kashmir Burushashki: Language, Language Contact, and Change|year=2006|publisher=The University of Texas at Austin |language=en|pages=17–18|quote=Linguistic influence from Urdu on JKB is primarily via second language speakers of Urdu. This is because Urdu is the second language of the people of the state of Jammu & Kashmir. On the other hand, linguistic contact with Kashmiri is mediated through first language or native speakers of Kashmiri. In addition to language contact via spoken interaction, contact with Urdu is also mediated through local media and television. Television is also a source of linguistic influence from Hindi, which is very close to Urdu.}}</ref> Unique to JKB are the features of [[Syncope (phonology)|vowel syncopation]].<ref name="Munshi2006" /> Jammu & Kashmir Burushaski shares more similarities with the dialect spoken in Nagar than with that spoken in Hunza.<ref name="2006Munshi" /> The [[Srinagar]] variety of Burushaski has been described as "low toned" and as heavily influenced by other Kashmiri languages.<ref name="Srinagar Burushaski">{{cite book |last1=Munshi |first1=Sadaf |title=Srinagar Burushaski: A Descriptive and Comparative Account with Analyzed Texts |date=2018 |publisher=University of Austin |location=Srinagar |isbn=978-90-04-38789-8 |page=26 |url=https://books.google.com/books?id=LKWODwAAQBAJ&q=purgi+language+pakistan}}</ref> The Srinagar variety of Burushaski has only 300 speakers.
+
+== Phonology ==
+
+=== Vowels ===
+
+Burushaski primarily has five vowels, {{IPA|/i e a o u/}}. There are two sets of long vowels, distinguished by whether it is the first or the second [[Mora (linguistics)|mora]] that bears a stress or higher pitch. Various contractions result in long vowels; stressed vowels (marked with acute accents in Berger's transcription) tend to be longer and less "lax" (less centralised) than unstressed ones ({{IPA|[i e a o u]}} as opposed to {{IPA|[ɪ ɛ ʌ ɔ ʊ]}}). Some have described this as an intentional utterance of a rising tone or a falling tone. For example, a word {{tlit|bsk|óosanam}} {{#invoke:lang|lang|bsk|{{Script/Arabic|اوسَنَم}}}} 'I told them' has a falling tone and the stress is on first mora. Another word, {{tlit|bsk|oósanam}} {{#invoke:lang|lang|bsk|{{Script/Arabic|اݹسَنَم}}}} 'I did not say' has a rising tone and stress is on the second mora.<ref name="phonology">Piar, Karim. 2012. « Phonological Sketch of the Hunza Dialect of Burushaski: The CVX
+Theory and Burushaski Syllable Structure ». University of Texas. [https://www.academia.edu/10829671/Phonological_Sketch_of_the_Hunza_Dialect_of_Burushaski]</ref>
+
+Long vowels only ever appear in stressed syllables and will thus carry one tone or the other.<ref name="phonology" />
+
+As for short vowels, [[mid vowel]]s and [[open vowel]]s {{IPA|[e]}}, {{IPA|[o]}}, {{IPA|[a]}} can appear in either stressed syllables or [[unstressed syllable]]s. Short [[close vowel]]s {{IPA|[i]}} and {{IPA|[u]}} usually only appear in unstressed syllables. Furthermore, the pair {{IPA|[i]}} and {{IPA|[u]}} alternate with {{IPA|[e]}} and {{IPA|[o]}} respectively in a [[stressed syllable]].<ref name="phonology" />{{Clarify|date=October 2024}}
+
+{| class="wikitable" style=text-align:center
+! !! [[Front vowel|Front]] !! [[Central vowel|Central]]
+![[Back vowel|Back]]
+|-
+! [[Close vowel|Close]]
+|{{IPA link|i iː}}
+|
+|{{IPA link|u uː}}
+|-
+![[Mid vowel|Mid]]
+|{{IPA link|e eː}}
+|
+|{{IPA link|o oː}}
+|-
+![[Open vowel|Open]]
+|
+|{{IPA link|a aː}}
+|
+|}
+
+All vowels have nasal counterparts in Hunza (in some expressive words) and in Nagar (also in proper names and a few other words).
+
+=== Consonants ===
+
+Berger (1998) finds the following consonants to be [[Phoneme|phonemic]], shown below in the [[help:IPA|IPA]] and in his romanization scheme:
+
+{| class="wikitable" style="text-align:center"
+! colspan="2" |
+! [[Bilabial consonant|Bilabial]]
+! [[Dental consonant|Dental]]/<br />[[Alveolar consonant|Alveolar]]
+! [[Alveolo-palatal consonant|(Alveolo-)<br />palatal]]
+! [[Retroflex consonant|Retroflex]]
+! [[Velar consonant|Velar]]
+! [[Uvular consonant|Uvular]]
+! [[Glottal consonant|Glottal]]
+|-
+! colspan="2" |[[Nasal consonant|Nasal]]
+| {{IPA link|m}} {{grapheme|m}}
+| {{IPA link|n}} {{grapheme|n}}
+|
+|
+| {{IPA link|ŋ}} {{grapheme|ṅ}}
+|
+|
+|-
+! rowspan="3" | [[Plosive]]
+!<small>[[Aspiration (phonetics)|aspirated]]</small>
+| {{IPA link|pʰ}} {{grapheme|ph}}{{r|footnote1|group=decimal}}
+| {{IPA link|tʰ}} {{grapheme|th}}
+|
+| {{IPA link|ʈʰ}} {{grapheme|ṭh}}
+| {{IPA link|kʰ}} {{grapheme|kh}}
+| {{IPA link|qʰ}} {{grapheme|qh}}{{r|footnote2|group=decimal}}
+|
+|-
+!<small>[[voicelessness|voiceless]]</small>
+| {{IPA link|p}} {{grapheme|p}}
+| {{IPA link|t}} {{grapheme|t}}
+|
+| {{IPA link|ʈ}} {{grapheme|ṭ}}
+| {{IPA link|k}} {{grapheme|k}}
+| {{IPA link|q}} {{grapheme|q}}
+|
+|-
+! <small>[[Voice (phonetics)|voiced]]</small>
+| {{IPA link|b}} {{grapheme|b}}
+| {{IPA link|d}} {{grapheme|d}}
+|
+| {{IPA link|ɖ}} {{grapheme|ḍ}}
+| {{IPA link|ɡ}} {{grapheme|g}}
+|
+|
+|-
+! rowspan="3" | [[Affricate]]
+! <small>[[aspiration (phonetics)|aspirated]]</small>{{r|footnote3|group=decimal}}
+|
+| {{IPA link|t͡sʰ}} {{grapheme|ch}}
+| {{IPA link|t͡ɕʰ}} {{grapheme|ćh}}
+| {{IPA link|ʈ͡ʂʰ}} {{grapheme|c̣h}}
+|
+|
+|
+|-
+! <small>[[voicelessness|voiceless]]</small>
+|
+| {{IPA link|t͡s}} {{grapheme|c}}
+| {{IPA link|t͡ɕ}} {{grapheme|ć}}
+| {{IPA link|ʈ͡ʂ}} {{grapheme|c̣}}
+|
+|
+|
+|-
+!<small>[[voice (phonetics)|voiced]]</small>
+|
+|
+| {{IPA link|d͡ʑ}} {{grapheme|j}}{{r|footnote4|group=decimal}}
+| {{IPA link|ɖ͡ʐ}} {{grapheme|j̣}}{{r|footnote5|group=decimal}}
+|
+|
+|
+|-
+! rowspan="2" |[[Fricative consonant|Fricative]]
+!<small>[[Voicelessness|voiceless]]</small>
+|
+| {{IPA link|s}} {{grapheme|s}}
+| {{IPA link|ɕ}} {{grapheme|ś}}
+| {{IPA link|ʂ}} {{grapheme|ṣ}}
+|
+|
+| {{IPA link|h}} {{grapheme|h}}
+|-
+!<small>[[voice (phonetics)|voiced]]</small>
+|
+| {{IPA link|z}} {{grapheme|z}}
+|
+|
+|
+| {{IPA link|ʁ}} {{grapheme|ġ}}
+|
+|-
+! colspan="2" | [[Trill consonant|Trill]]
+|
+| {{IPA link|r}} {{grapheme|r}}
+|
+|
+|
+|
+|
+|-
+! colspan="2" |[[Approximant]]
+|
+| {{IPA link|l}} {{grapheme|l}}
+| {{IPA link|j}} {{grapheme|y}}{{r|footnote6|group=decimal}}
+| {{IPA link|ɻ}} {{grapheme|ỵ}}{{r|footnote7|group=decimal}}
+| {{IPA link|w}} {{grapheme|w}}{{r|footnote6|group=decimal}}
+|
+|
+|}
+Notes:
+{{reflist |group=decimal |refs=
+<ref name=footnote1>Pronunciation varies: {{IPA|[pʰ] ~ [p͡f] ~ [f]}}.</ref>
+<ref name=footnote2>Pronunciation varies: {{IPA|[qʰ] ~ [q͡χ] ~ [χ]}}.</ref>
+<ref name=footnote3>The Yasin dialect lacks aspirated affricates and uses the plain ones instead.</ref>
+<ref name=footnote4>Sometimes pronounced {{IPA|[ʑ]}}.</ref>
+<ref name=footnote5>Sometimes pronounced {{IPA|[ʐ]}}.</ref>
+<ref name=footnote6>Berger (1998) regards {{IPA|[w]}} and {{IPA|[j]}} as allophones of {{IPA|/u/}} and {{IPA|/i/}} that occur in front of stressed vowels.</ref>
+<ref name=footnote7>This phoneme has various pronunciations, all of which are rare sounds cross-linguistically. Descriptions include: "a voiced retroflex sibilant with simultaneous dorso-palatal narrowing" (apparently {{IPA|[ʐʲ]}}) (Berger 1998); "a fricative ''r'', pronounced with the tongue in the retroflex ('cerebral') position" (apparently {{IPA|[ɻ̝]/[ʐ̞]}}, a sound which also occurs in [[Standard Chinese]], written ''r'' in [[Pinyin]]) (Morgenstierne 1945); and "a curious sound whose phonetic realizations vary from a retroflex, spirantized glide to a retroflex velarized spirant" (Anderson forthcoming). In any case, it does not occur in the Yasin dialect, and in Hunza and Nagar it does not occur at the beginning of words.</ref>
+}}
+
+== Writing system ==
+=== Modern evolution ===
+Burushaski has predominantly been a spoken language. One of the earliest examples of modern Burushaski literature was the poetry written by [[Nasir al-Din Nasir Hunzai|Prof. Allamah Nasiruddin Nasir Hunzai]] in the 1940s. He began by using the [[Urdu alphabet]] to write the language, but soon realized that Urdu script was not adequate to the task, since it lacked the necessary letters to represent certain [[phoneme]]s unique to Burushaski. This led him to undertake the task of devising a standardised Urdu-derived alphabet geared specifically to the accurate transcription of the Burushaski language. To this end, he went on to create consonant letters ݼ [tsʰ], څ [ʈʂ], ڎ [ts], ݽ [ʂ], ڞ [ʈʂʰ], and ݣ [ŋ].<ref>{{cite web | url=https://www.unicode.org/L2/L2006/06149-bashir-prop.pdf | title=N3117: Proposal to add characters needed for Khowar, Torwali, and Burushaski | first1=Elena | last1=Bashir|author1-link=Elena Bashir | first2=Sarmad | last2=Hussain | first3=Deborah | last3=Anderson | publisher=ISO/IEC JTC1/SC2/WG2 | date=5 May 2006 }}</ref><ref>{{cite web |title=Shaping behavior of Burushaski characters and other Arabic additions in L2/06-149 |url=https://www.unicode.org/L2/L2007/07264-arabic-shaping.pdf |access-date=16 April 2020}}</ref> Furthermore, innovative writers of Burushaski began to use [[Subscript and superscript|superscript]] [[Eastern Arabic numerals|Urdu numbers]] to indicate different stress patterns, tones and vowel-lengths. For example, in Burushaski, the letter ـو (''waw'') represents a long vowel with a falling tone, "óo". The letter ـݸ (''waw'' with a superscript ''2'') represents a short vowel "o", and the letter ـݹ (''waw'' with a superscript 3) represents a long vowel with a rising tone, "oó".<ref name="b-u-dict-vol1" />{{Arabic-script sidebar|Burushaski}}
+
+During the mid-twentieth century, Ghulamuddin Ghulam Hunzai,<ref>{{Cite web | title=Photograph of Ghulamuddin Ghulam Hunzai - UNT Digital Library | url=https://digital.library.unt.edu/ark:/67531/metadc979540/ | access-date=2026-09-04 | website=digital.library.unt.edu}}</ref> a Burushaski poet and scholar, also contributed to the development of written Burushaski using a Persian-Arabic-based orthography. He published poetry in Burushaski using a modified Arabic script adapted to represent local sounds, contributing to one of the earliest substantial bodies of written literature in the language. His works include a Burushaski translation of the Qur’an and other religious and literary writings, which expanded the written corpus of Burushaski and informed subsequent discussions on orthographic standardization. Hunzai’s contributions, alongside those of other writers, form part of the broader historical development of modern Burushaski writing conventions.<ref>{{Cite web |date=2020-03-09 |title=Resuscitating Endangered Languages – Part IV |url=https://pamirtimes.net/2020/03/09/resuscitating-endangered-languages-part-iv/ |access-date=2026-05-30 |website=PAMIR TIMES |language=en-US}}</ref>
+
+Parallel to this, a Latin-derived orthography was created by Hermann Berger - a system which has found favour among many researchers and linguists. The "Burushaski Research Academy" currently recognises both the Urdu-based and the Latin-based orthography.
+
+In the years 2006, 2009, and 2013, a 3-volume Burushaski-[[Urdu language|Urdu]] Dictionary was compiled in a collaboration between the "Burushaski Research Academy" and the [[University of Karachi]], under the auspices of [[Nasir al-Din Nasir Hunzai|Prof. Allamah Nasiruddin Nasir Hunzai]] and published by the university's "Bureau of Composition, Compilation & Translation".<ref>{{Cite web |title=Karachi University {{!}} Burushaski Research Academy |url=https://www.burushopedia.org/burushaski_urdu/ |access-date=2026-05-30 |language=en-US}}</ref> This dictionary uses primarily the Urdu-derived alphabet, while employing Berger's Latin alphabet-derived orthography in a supplementary capacity.
+
+Recently (2022-2023), community-led efforts have sought to standardize the writing of Burushaski. Burusho Maʰraka, a cultural and linguistic organization representing Burusho communities of Hunza, Nagar, and Yasin, has promoted a standardized orthography based on the Persian-Arabic script.<ref>{{Cite web |date=2025-11-09 |title=Home |url=https://burusho.org/ |access-date=2026-05-30 |website=Burusho Maʰraka |language=en-US}}</ref> The organization has worked to harmonize spelling conventions and produce teaching and reference materials aimed at strengthening literacy and inter-regional consistency in written Burushaski. These initiatives build upon earlier scholarly work and aim to provide a unified writing system for educational and digital use.<ref name=":1">{{Cite web |title=Library |url=https://burusho.org/burusho-library |access-date=2026-05-30 |website=Burusho Maʰraka |language=en-US}}</ref>
+
+=== History ===
+
+[[Tibet]]an sources record a ''Bru zha'' language of the Gilgit valley, which appears to have been Burushaski and the script of which was one of five used also to write the extinct [[Zhangzhung language]]. Although Burushaski may once have been a significant [[literary language]], no ''Bru zha'' manuscripts are known to have survived.<ref>[[George van Driem]], ''Languages of the Himalayas,'' Brill 2001:921</ref> There is a very voluminous Buddhist tantra of the 'Ancient' (''rNying ma'') school of Tibetan Buddhism, preserved in Tibetan as the ''mDo dgongs 'dus'',<ref>Complete title: ''De bzhin gshegs pa thams cad kyi thugs gsang ba'i ye shes | don gyi snying po rdo rje bkod pa'i rgyud | rnal 'byor grub pa'i lung | kun 'dus rig pa'i mdo | theg pa chen po mngon par rtogs pa | chos kyi rnam grangs rnam par bkod pa zhes bya ba'i mdo'', in the mTshams brag edition of the rNying ma rgyud 'bum: vol. 16 (''Ma''), p. 2-617.</ref> which has been the subject of numerous Tibetological publications, including a recent monograph by Jacob P. Dalton, ''The Gathering of Intentions'',<ref>Dalton, Jacob P. 2016. Columbia University Press. {{ISBN|978-0231176002}}. This book is a state of the art history of this ''tantra'' in Tibet, but does not deal in depth with the issue of its original source and whether it was actually translated from the Burushaski.</ref> which is supposed to be translated from the Burushaski (''bru zha'i skad''). It contains words that are not Sanskrit but which have not, thus far, been demonstrated satisfactorily to be relatable either to Burushaski, or to any other language. If at least part of this text had actually been translated from Burushaski, it would make it one of the major monuments of an apparently lost literature.
+
+=== Alphabet ===
+The table below presents the orthography developed by [[Nasir al-Din Nasir Hunzai|Allamah Nasiruddin Nasir Hunzai]] and used in the ''Burushaski-Urdu Dictionary'' published by the [[University of Karachi]].<ref name="b-u-dict-vol1">Hunzai, A. N. N., ''Burushaski-Urdu Dictionary'', Burushaski Research Academy in collaboration with University of Karachi. (2006). ''Burushaski Urdu Dictionary – Volume 1'' / بروشسکی اردو لغت - جلد اول (الف تا څ). Bureau of Composition, Compilation & Translation, University of Karachi. {{oclc|873035571}} [https://archive.org/details/1_20230728_20230728/mode/2up Archive.org]</ref><ref name="b-u-dict-vol2">Hunzai, A. N. N., Burushaski Research Academy, & University of Karachi. (2009). ''Burushaski Urdu Dictionary – Volume 2'' / بروشسکی اردو لغت - جلد دوم (د تا غ). Bureau of Composition, Compilation & Translation, University of Karachi. [https://archive.org/details/2_20230728/mode/2up Archive.org]</ref><ref name="b-u-dict-vol3">Hunzai, A. N. N., Burushaski Research Academy, & University of Karachi. (2013). ''Burushaski Urdu Dictionary – Volume 3'' / بروشسکی اردو لغت - جلد دوم (ف تا ی). Bureau of Composition, Compilation & Translation, University of Karachi. [https://archive.org/details/3_20230728/mode/2up Archive.org]</ref>
+
+In addition, linguists working on Burushaski use various makeshift transcriptions based on the Latin alphabet, most commonly that by Berger(see below). Parallel to these Latin-based systems, several others, including those of Ghulamuddin Hunzai and the Burusho Maʰraka, have used modified Persian-Arabic orthographies.<ref>{{Cite web |url=https://www.academia.edu/16481172/Burushaski_Alphabet_a_Proposal|title=Burushaski Alphabet - a Proposal|first=Sadaf|last=Munshi|via=www.academia.edu}}</ref><ref name=":1" />
+
+==== Alphabets proposed by [[Nasir al-Din Nasir Hunzai|Allamah Nasiruddin Nasir Hunzai]]====
+Sources:<ref name="b-u-dict-vol1"/><ref name="b-u-dict-vol2"/><ref name="b-u-dict-vol3"/>
+
+{|class="wikitable" style="text-align: center;"
+! rowspan=2 | [[Transliteration]]
+! rowspan=2 | [[International Phonetic Alphabet|IPA]]
+! colspan="4" |Forms
+! rowspan=2 | [[Arabic script in Unicode|Unicode]]
+! rowspan="2" |Notes
+|-
+!Isolated
+!Final
+!Medial
+!Initial
+|-
+| - / A a / U u / I i
+|{{IPAblink|∅}}<br />({{IPAblink|a}}{{IPAblink|u}}{{IPAblink|i}})
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ا}}}}</span>
+| -
+| rowspan="4" | -
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ا}}}}</span>
+| [[:wiktionary: ا|U+0627]]
+| Letter ''alif'' at the beginning of a word can serve two functions. First, it precedes vowel letters ({{#invoke:lang|lang|bsk|{{Script/Arabic|اݸ}}}}) [o], ({{#invoke:lang|lang|bsk|{{Script/Arabic|او / اُو}}}}) [óo][úu], ({{#invoke:lang|lang|bsk|{{Script/Arabic|اݹ / اُݹ}}}}) [oó][uú], ({{#invoke:lang|lang|bsk|{{Script/Arabic|اِیـ / اِی}}}}) [íi], ({{#invoke:lang|lang|bsk|{{Script/Arabic|اِݶـ / اِݶ}}}}) [ií], ({{#invoke:lang|lang|bsk|{{Script/Arabic|اݵـ / اݺ}}}}) [e], ({{#invoke:lang|lang|bsk|{{Script/Arabic|ایـ / اے}}}}) [ée], or ({{#invoke:lang|lang|bsk|{{Script/Arabic|اݶـ / اݻ}}}}) [eé]. Second, it acts as a vowel carrier for diacritics of three short vowels of Burushaski, {{#invoke:lang|lang|bsk|{{Script/Arabic|اَ}}}} [a], ({{#invoke:lang|lang|bsk|{{Script/Arabic|اُ}}}}) [u], and ({{#invoke:lang|lang|bsk|{{Script/Arabic|اِ}}}}) [i].
+|-
+| Áa áa
+| {{IPAblink|a|aː˥˩}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|آ / ا}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـا}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|mnj|{{Script/Arabic|آ}}}}</span>
+| [[:wiktionary: آ|U+0622]]<br />[[:wiktionary: ا|U+0627]]
+| Vowel phoneme [aː˥˩] (long vowel [a] with a falling tone) is represented with ({{#invoke:lang|lang|bsk|{{Script/Arabic|آ}}}}) when at the beginning of a word, and with ({{#invoke:lang|lang|bsk|{{Script/Arabic|ـا / ا}}}}) when in the middle or end of a word.
+|-
+| a
+| {{IPAblink|a}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ݳ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـݳ}}}}</span>
+| -
+| [[:wiktionary: ݳ|U+0773]]
+| Only occurs at the end of the word. Elsewhere, the short vowel [a] is represented with a ''zabar/fatha'' diacritic ({{#invoke:lang|lang|bsk|{{Script/Arabic|اَ / ◌َ / ـَ}}}}). Alternatively, a final ''he'' letter ({{#invoke:lang|lang|bsk|{{Script/Arabic|ه / ـہ}}}}) can also be used for a word-final short vowel [a]
+|-
+| Aá aá
+| {{IPAblink|a|aː˨˦}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ݴ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـݴ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ݴ}}}}</span>
+| [[:wiktionary: ݴ|U+0774]]
+| Vowel phoneme [aː˨˦] represents a long vowel [a] with a rising tone.
+|-
+| B b
+|{{IPAblink|b}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ب}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـب}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـبـ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|بـ}}}}</span>
+| [[:wiktionary: ب|U+0628]]
+|
+|-
+| P p
+|{{IPAblink|p}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|پ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـپ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـپـ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|پـ}}}}</span>
+| [[:wiktionary: پ|U+067e]]
+|
+|-
+| T t
+|{{IPAblink|t̪}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ت}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـت}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـتـ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|تـ}}}}</span>
+| [[:wiktionary: ت|U+062a]]
+|
+|-
+| Ṭ ṭ
+|{{IPAblink|ʈ}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ٹ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـٹ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـٹـ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ٹـ}}}}</span>
+| [[:wiktionary: ٹ|U+0679]]
+|
+|-bgcolor="#FFEFD5"
+| S s
+| {{IPAblink|s}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ث}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـث}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـثـ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ثـ}}}}</span>
+| [[:wiktionary: ث|U+062b]]
+| Only used in loanwords of Arabic origin.
+|-
+| J j
+|[{{IPA link|d͡ʑ}} ~ {{IPA link|ʑ}}]
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ج}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـج}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـجـ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|جـ}}}}</span>
+| [[:wiktionary: ج|U+062c]]
+|
+|-
+| Ć ć
+|{{IPAblink|t͡ɕ}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|چ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـچ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـچـ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|چـ}}}}</span>
+| [[:wiktionary: چ|U+0686]]
+|
+|-bgcolor="#FFEFD5"
+| H h
+| {{IPAblink|h}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ح}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـح}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـحـ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|حـ}}}}</span>
+| [[:wiktionary: ح|U+062d]]
+| Only used in loanwords of Arabic origin.
+|-bgcolor="#d0dead"
+| Ċh ċh
+|{{IPAblink|t͡s|t͡sʰ}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ݼ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـݼ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـݼـ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ݼـ}}}}</span>
+| [[:wiktionary: ݼ|U+077C]]
+| Unique letter in Burushaski, not in Urdu alphabet.<br />In Burushaski orthography, it is more common to write a small [[Eastern Arabic numerals|Urdu number]] 4 ie <span style="font-size:120%;">{{urd|{{lang|ur|۴}}}}</span>, in place of 4 dots. However, the letter <span style="font-size:120%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ڇـ ـڇـ ـڇ ڇ}}}}</span> is also an acceptable alternative.
+|-
+| Qh qh
+|[{{IPA link|qʰ}}~{{IPA link|qχ}}~{{IPA link|χ}}]
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|خ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـخ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـخـ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|خـ}}}}</span>
+| [[:wiktionary: خ|U+062e]]
+|
+|-bgcolor="#d0dead"
+| C̣ c̣
+|{{IPAblink|ʈ͡ʂ}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|څ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـڅ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـڅـ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|څـ}}}}</span>
+| [[:wiktionary: څ|U+0685]]
+| Unique letter in Burushaski, not in Urdu alphabet.
+|-
+| D d
+|{{IPAblink|d}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|د}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـد}}}}</span>
+| colspan="2" rowspan="2" | -
+| [[:wiktionary: د|U+062f]]
+|
+|-
+| Ḍ ḍ
+|{{IPAblink|ɖ}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ڈ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـڈ}}}}</span>
+| [[:wiktionary: ڈ|U+0688]]
+|
+|-bgcolor="#FFEFD5"
+| Z z
+| {{IPAblink|z}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ذ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـذ}}}}</span>
+| colspan="2" | -
+| [[:wiktionary: ذ|U+0630]]
+| Only used in loanwords of Arabic origin.
+|-bgcolor="#d0dead"
+| Ċ ċ
+|{{IPAblink|t͡s}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ڎ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـڎ}}}}</span>
+| colspan="2" | -
+| [[:wiktionary: ڎ|U+068E]]
+| Unique letter in Burushaski, not in Urdu alphabet.
+|-
+| R r
+|{{IPAblink|r}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ر}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـر}}}}</span>
+| colspan="2" rowspan="4" | -
+| [[:wiktionary: ر|U+0631]]
+|
+|-
+| Ṛ ṛ
+|{{IPAblink|ɽ}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ڑ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـڑ}}}}</span>
+| [[:wiktionary: ڑ|U+0691]]
+| No word begins with this letter.
+|-
+| Z z
+|{{IPAblink|z}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ز}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـز}}}}</span>
+| [[:wiktionary: ز|U+0632]]
+|
+|-
+| Ż ż
+|[{{IPA link|d̠͡ʐ}}~{{IPA link|ʐ}}]
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ژ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـژ}}}}</span>
+| [[:wiktionary: ژ|U+0698]]
+|
+|-
+| S s
+|{{IPAblink|s}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|س}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـس}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـسـ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|سـ}}}}</span>
+| [[:wiktionary: س|U+0633]]
+|
+|-
+| Ś ś
+|{{IPAblink|ɕ}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ش}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـش}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـشـ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|شـ}}}}</span>
+| [[:wiktionary: ش|U+0634]]
+|
+|-bgcolor="#d0dead"
+| Ṣ ṣ
+|{{IPAblink|ʂ}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ݽ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـݽ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـݽـ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ݽـ}}}}</span>
+| [[:wiktionary: ݽ|U+077D]]
+| Unique letter in Burushaski, not in Urdu alphabet.<br />In Burushaski orthography, it is more common to write a small [[Eastern Arabic numerals|Urdu number]] 4 ie <span style="font-size:120%;">{{urd|{{lang|ur|۴}}}}</span>, in place of 4 dots. However, the letter <span style="font-size:120%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ݜـ ـݜـ ـݜ ݜ}}}}</span> is also an acceptable alternative.
+|-bgcolor="#FFEFD5"
+| S s
+| {{IPAblink|s}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ص}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـص}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـصـ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|صـ}}}}</span>
+| [[:wiktionary: ص|U+0635]]
+| rowspan="2" | Only used in loanwords of Arabic origin.
+|-bgcolor="#FFEFD5"
+| Z z
+| {{IPAblink|z}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ض}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـض}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـضـ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ضـ}}}}</span>
+| [[:wiktionary: ض|U+0636]]
+|-bgcolor="#d0dead"
+| C̣h c̣h
+|{{IPAblink|ʈ͡ʂ|ʈ͡ʂʰ}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ڞ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـڞ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـڞـ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ڞـ}}}}</span>
+| [[:wiktionary: ڞ|U+069E]]
+| Unique letter in Burushaski, not in Urdu alphabet.
+|-bgcolor="#FFEFD5"
+| T t
+|{{IPAblink|t}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ط}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـط}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـطـ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|طـ}}}}</span>
+| [[:wiktionary: ط|U+0637U]]
+| rowspan="3" | Only used in loanwords of Arabic origin.
+|-bgcolor="#FFEFD5"
+| Z z
+| {{IPAblink|z}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ظ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـظ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـظـ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ظـ}}}}</span>
+| [[:wiktionary: ظ|U+0638]]
+|-bgcolor="#FFEFD5"
+| -
+| {{IPAblink|∅}}/{{IPAblink|ʔ}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ع}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـع}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـعـ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|عـ}}}}</span>
+| [[:wiktionary: ع|U+0639]]
+|-
+| Ġ ġ
+| [{{IPA link|ɣ}}~{{IPA link|ʁ}}]
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|غ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـغ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـغـ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|غـ}}}}</span>
+| [[:wiktionary: غ|U+063a]]
+|
+|-bgcolor="#FFEFD5"
+| F f
+| [{{IPA link|p|pʰ}}~pf~{{IPA link|f}}]
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ف}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـف}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـفـ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|فـ}}}}</span>
+| [[:wiktionary: ف|U+0641]]
+| Only used in loanwords of foreign origin.
+|-
+| Q q
+| {{IPAblink|q}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ق}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـق}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـقـ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|قـ}}}}</span>
+| [[:wiktionary: ق|U+0642]]
+|
+|-
+| K k
+| {{IPAblink|k}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ک}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـک}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـکـ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|کـ}}}}</span>
+| [[:wiktionary: ک|U+06a9]]
+|
+|-bgcolor="#d0dead"
+| Ṅ ṅ
+| {{IPAblink|ŋ}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ݣ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـݣ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـݣـ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ݣـ}}}}</span>
+| [[:wiktionary: ݣ|U+0763]]
+| Unique letter in Burushaski, not in Urdu alphabet.<br />No word begins with this letter.
+|-
+| G g
+| {{IPAblink|ɡ}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|گ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـگ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـگـ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|گـ}}}}</span>
+| [[:wiktionary: گ|U+06af]]
+|
+|-
+| L l
+| {{IPAblink|l}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ل}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـل}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـلـ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|لـ}}}}</span>
+| [[:wiktionary: ل|U+0644]]
+|
+|-
+| M m
+| {{IPAblink|m}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|م}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـم}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـمـ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|مـ}}}}</span>
+| [[:wiktionary: م|U+0645]]
+|
+|-
+| N n
+| {{IPAblink|n}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ن}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـن}}}}</span>
+|rowspan=2 |<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـنـ}}}}</span>
+|rowspan=2 |<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|نـ}}}}</span>
+| [[:wiktionary: ن|U+0646]]
+|
+|-
+| Ṇ ṇ
+|  {{IPAblink|◌̃|◌̃}}
+| style="font-size:120%;" | {{#invoke:lang|lang|bsk|{{Script/Arabic| [[ں]] }}}}
+| style="font-size:120%;" | {{#invoke:lang|lang|bsk|{{Script/Arabic| ـں }}}}
+| [[:wiktionary: ں|U+06BA]]
+| No word begins with this letter.
+|-
+| W w / Óo óo / Úu úu
+| {{IPAblink|w}}{{IPAblink|o|oː˥˩}}{{IPAblink|u|uː˥˩}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|و}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـو}}}}</span>
+| rowspan="3" | -
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|او / و}}}}</span>
+| [[:wiktionary: و|U+0648]]
+|This letter represents three phonemes based on context, consonant [w], or long vowels with falling tone, [oː˥˩], and [uː˥˩].<br />In order for this letter to represent vowel [u] and not [o], the letter before will have to carry a ''pesh/damma'' diacritic ({{#invoke:lang|lang|bsk|{{Script/Arabic|◌ؙو / ـُو}}}}).<br />If used at the beginning of a word, if representing consonant [w], it will be written standalone ({{#invoke:lang|lang|bsk|{{Script/Arabic|و}}}}), if representing a vowel [oː˥˩] or [uː˥˩], it will be preceded by ''alif'' ({{#invoke:lang|lang|bsk|{{Script/Arabic|او / اُو}}}}). For [u], ''alef'' will carry the ''pesh/damma'' diacritic.
+|-
+| O o / u
+| {{IPAblink|o}}{{IPAblink|u}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ݸ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـݸ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|اݸ}}}}</span>
+| [[:wiktionary: ݸ|U+0778]]
+| This letter represents short vowel [o]. When a word begins with this vowel phoneme, the letter needs to be preceded by ''alif'' {{#invoke:lang|lang|bsk|{{Script/Arabic|اݸ}}}}. In a final position, this letter also represents short vowel [u], with the preceding letter carrying a ''pesh/damma'' diacritic ({{#invoke:lang|lang|bsk|{{Script/Arabic|◌ؙݸ / ـُݸ}}}}).
+|-
+| Oó oó / Uú uú
+| {{IPAblink|o|oː˨˦}}{{IPAblink|u|uː˨˦}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ݹ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـݹ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|اݹ}}}}</span>
+| [[:wiktionary: ݹ|U+0779]]
+| This letter represents vowel phonemes [oː˨˦] and [uː˨˦], long vowels [o] and [u] with a rising tone. When representing [u], the preceding letter will have to carry a ''pesh/damma'' diacritic ({{#invoke:lang|lang|bsk|{{Script/Arabic|◌ؙݹ / ـُݹ}}}}). When a word begins with this vowel phoneme, the letter needs to be preceded by ''alif'' ({{#invoke:lang|lang|bsk|{{Script/Arabic|اݸ / اُݸ}}}}). For [u], ''alef'' will carry the ''pesh/damma'' diacritic.
+|-
+|rowspan=2 | H h
+| {{IPAblink|h}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ہ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـہ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـہـ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ہـ}}}}</span>
+| [[:wiktionary: ہ|U+06C1]]
+| At the end of the word, depending on context, this letter can represent the consonant [h] or the short vowel [a]. For a word-final vowel, an ''alef with superscript "2"'' ({{#invoke:lang|lang|bsk|{{Script/Arabic|ݳ / ـݳ}}}}) can also be used.
+|-
+| [◌ʰ]/[◌ʱ]
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ھ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـھ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـھـ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ھـ}}}}</span>
+| [[:wiktionary: ھ|U+06BE]]
+| No word begins with this letter. Not a standalone letter, its only function is to be part of digraphs representing aspirated consonants.
+|-bgcolor="#d0dead"
+| Ỵ ỵ
+|  {{IPAblink|ɻ}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ݷ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـݷ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـݷـ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ݷـ}}}}</span>
+| [[:wiktionary: ݷ|U+0777]]
+| Unique letter in Burushaski, not in Urdu alphabet.<br />No word begins with this letter. In Burushaski orthography, it is more common to write a small [[Eastern Arabic numerals|Urdu number]] 4 ie <span style="font-size:120%;">{{urd|{{lang|ur|۴}}}}</span>, in place of 4 dots. However, a letter ''ye with 4 dots below'' ([[File:Yeh with four dots below.svg|x18px]][[File:Yeh with four dots below - final.svg|x18px]] [[File:Yeh with four dots below - medial.svg|x18px]] [[File:Yeh with four dots below - initial.svg|x18px]]) is also an acceptable alternative.
+|-
+| Y y
+| {{IPAblink|ʔ}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ئ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـئ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـئـ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ئـ}}}}</span>
+| [[:wiktionary: ئ|U+0626]]
+| No word begins with this letter.
+|-
+| Y y / Ée ée / Íi íi
+| {{IPAblink|j}}{{IPAblink|e|eː˥˩}}{{IPAblink|i|iː˥˩}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ی}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـی}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـیـ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ایـ / یـ}}}}</span>
+| [[:wiktionary: ی|U+06CC]]
+|This letter represents three phonemes based on context, consonant [j], or long vowels with falling tone, [eː˥˩], and [iː˥˩].<br />In order for this letter to represent vowel [i] and not [e], the letter before will have to carry a ''zer/kasra'' diacritic ({{#invoke:lang|lang|bsk|{{Script/Arabic|◌ِیـ / ـِیـ}}}}).<br />If used at the beginning of a word, if representing consonant [j], it will be written standalone ({{#invoke:lang|lang|bsk|{{Script/Arabic|یـ}}}}), if representing a vowel [eː˥˩] or [iː˥˩], it will be preceded by ''alif'' ({{#invoke:lang|lang|bsk|{{Script/Arabic|ایـ / اِیـ}}}}). For [i], ''alef'' will carry the ''zer/kasra'' diacritic. In final position, this letter does not represent the vowel [e]. Instead, the letter ''big ye'' ({{#invoke:lang|lang|bsk|{{Script/Arabic|ے}}}}) is used.
+|-
+| E e / i
+| {{IPAblink|e}}{{IPAblink|i}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ݵ}}}}</span>
+| -
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـݵـ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|اݵـ}}}}</span>
+| [[:wiktionary: ݵ|U+0775]]
+| This letter represents short vowel [e]. When a word begins with this vowel phoneme, the letter needs to be preceded by ''alif'' {{#invoke:lang|lang|bsk|{{Script/Arabic|اݵـ}}}}. In a final position, this letter represents short vowel [i]. For writing short vowel [e] in final position, the letter ''big ye with a superscript "2"'' ({{#invoke:lang|lang|bsk|{{Script/Arabic|ݺ}}}}) is used.
+|-
+| Eé eé / Ií ií
+| {{IPAblink|e|eː˨˦}}{{IPAblink|i|iː˨˦}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ݶ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـݶ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـݶـ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|اݶـ}}}}</span>
+| [[:wiktionary: ݹ|U+0779]]
+| This letter represents vowel phonemes [eː˨˦] and [iː˨˦], long vowels [e] and [i] with a rising tone. When representing [i], the preceding letter will have to carry a ''zer/kasra'' diacritic ({{#invoke:lang|lang|bsk|{{Script/Arabic|◌ِݶـ / ـِݶـ}}}}). When a word begins with this vowel phoneme, the letter needs to be preceded by ''alif'' {{#invoke:lang|lang|bsk|{{Script/Arabic|اݶـ / اِݶـ}}}}. For [i], ''alef'' will carry the ''zer/kasra'' diacritic. In final position, this letter does not represent the vowel [e]. Instead, the letter ''big ye with a superscript "3"''' ({{#invoke:lang|lang|bsk|{{Script/Arabic|ݻ}}}}) is used.
+|-
+| ée
+| {{IPAblink|e|eː˥˩}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ے}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـے}}}}</span>
+| colspan="2" rowspan="3" | -
+| [[:wiktionary: ے|U+06D2]]
+| This letter is only used at the end of a word and it represents long vowel with falling tone [eː˥˩].
+|-
+| e
+| {{IPAblink|e}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ݺ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـݺ}}}}</span>
+| [[:wiktionary: ݺ|U+077A]]
+| This letter is only used at the end of a word and it represents short vowel [e].
+|-
+| eé
+| {{IPAblink|e|eː˨˦}}
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ݻ}}}}</span>
+|<span style="font-size:160%;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ـݻ}}}}</span>
+| [[:wiktionary: ݻ|U+077B]]
+| This letter is only used at the end of a word and it represents long vowel with rising tone [eː˨˦].
+|}
+
+==== Aspirates ====
+
+Below table shows the digraphs, a combination of a consonant with the letter ''round he'' ({{#invoke:lang|lang|bsk|{{Script/Arabic|ھ}}}}) that represent [[aspirated consonant]]s that occur in Burushaski.<ref name="b-u-dict-vol1" /><ref name="b-u-dict-vol2" /><ref name="b-u-dict-vol3" />
+
+{| class="wikitable" style="text-align:center;"
+! Digraph
+! Transcription
+! IPA
+|-
+| style="font-size: 150%" |{{Nastaliq|پھ}}
+| ph
+| {{IPA|[pʰ]}}
+|-
+| style="font-size: 150%" |{{Nastaliq|تھ}}
+| th
+| {{IPA|[tʰ]}}
+|-
+| style="font-size: 150%" |{{Nastaliq|ٹھ}}
+| ṭh
+| {{IPA|[ʈʰ]}}
+|-
+| style="font-size: 150%" |{{Nastaliq|چھ}}
+| ćh
+| {{IPA|[t͡ɕʰ]}}
+|-
+| style="font-size: 150%" |{{Nastaliq|کھ}}
+| kh
+| {{IPA|[kʰ]}}
+|}
+
+==== Vowels ====
+
+Below tables show how vowels are written in different parts of the word.
+
+{| class="wikitable" style="text-align:center;"
+!colspan=5| Short Vowel
+|-
+! A || O || U || E || I
+|-
+!colspan=5| Vowel at the beginning of a word
+|-dir="rtl"
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|اَ}}}}</span>
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|اݸ}}}}</span>
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|اُ}}}}</span>
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|اݵـ}}}}</span>
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|اِ}}}}</span>
+|-
+!colspan=5| Vowel at the middle of a word
+|-dir="rtl"
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|◌َ}}}}</span>
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ݸ / ـݸ}}}}</span>
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|◌ُ}}}}</span>
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ݵـ / ـݵـ}}}}</span>
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|◌ِ}}}}</span>
+|-
+!colspan=5| Vowel at the end of a word
+|-dir="rtl"
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ݳ / ـݳ}}}}</span><br /><span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ہ / ـہ}}}}</span>
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ݸ / ـݸ}}}}</span>
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|◌ُ / ◌ُݸ / ـُݸ}}}}</span>
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ݺ / ـݺ}}}}</span>
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ݵ / ـݵ}}}}</span>
+|}
+
+{| class="wikitable" style="text-align:center;"
+!colspan=5| Long vowel, falling tone {{IPAslink|˥˩}}
+|-
+! Áa  || Óo || Úu || Ée || Íi
+|-
+!colspan=5| Vowel at the beginning of a word
+|-dir="rtl"
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|آ}}}}</span>
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|او}}}}</span>
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|اُو}}}}</span>
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ایـ}}}}</span>
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|اِیـ}}}}</span>
+|-
+!colspan=5| Vowel at the middle of a word
+|-dir="rtl"
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ا / ـا}}}}</span>
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|و / ـو}}}}</span>
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|◌ُو / ـُو}}}}</span>
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|یـ / ـیـ}}}}</span>
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|◌ِیـ / ـِیـ}}}}</span>
+|-
+!colspan=5| Vowel at the end of a word
+|-dir="rtl"
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ا / ـا}}}}</span>
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|و / ـو}}}}</span>
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|◌ُو / ـُو}}}}</span>
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ے / ـے}}}}</span>
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ی / ـی}}}}</span>
+|}
+
+{| class="wikitable" style="text-align:center;"
+!colspan=5| Long vowel, rising tone {{IPAslink|˨˦}}
+|-
+! Aá || Oó || Uú || Eé || Ií
+|-
+!colspan=5| Vowel at the beginning of a word
+|-dir="rtl"
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ݴ}}}}</span>
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|اݹ}}}}</span>
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|اُݹ}}}}</span>
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|اݶـ}}}}</span>
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|اِݶـ}}}}</span>
+|-
+!colspan=5| Vowel at the middle of a word
+|-dir="rtl"
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ݴ / ـݴ}}}}</span>
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ݹ / ـݹ}}}}</span>
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|◌ُݹ / ـُݹ}}}}</span>
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ݶـ / ـݶـ}}}}</span>
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|◌ِݶـ / ـِݶـ}}}}</span>
+|-
+!colspan=5| Vowel at the end of a word
+|-dir="rtl"
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ݴ / ـݴ}}}}</span>
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ݹ / ـݹ}}}}</span>
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|◌ُݹ / ـُݹ}}}}</span>
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ݻ / ـݻ}}}}</span>
+| <span style="font-size:200%;line-height:1.35;">{{#invoke:lang|lang|bsk|{{Script/Arabic|ݶ / ـݶ}}}}</span>
+|}
+
+=== Sample text ===
+
+Below poetry, written in praise of [[University of Karachi]] for its role in documentation and preservation of Burushaski language and literature, is presented as a sample text in Burushaski Arabic alphabet, alongside Urdu and English translation of each verse.<ref>Hunzai, A. N. N. (2005) ''Jawaahir Paaree – Some Glimps of Burushaski language'' Burushaski Research Academy. University of Karachi: Bureau of Composition, Compilation & Translation, University of Karachi. Pakistan Literature Academy. [https://www.ismaililiterature.com/wp-content/uploads/2018/06/Burushaski-Jawahir-Paray.pdf] ([https://web.archive.org/web/20240322162116/https://www.ismaililiterature.com/wp-content/uploads/2018/06/Burushaski-Jawahir-Paray.pdf Archive])</ref>
+
+{| cellpadding="6"
+! Burushaski || Urdu Translation || English Translation
+|-
+| style="width:23; text-align:right" |
+<poem>{{script/Arabic|ذاتِ خدا یَکُ ڎُم کھݸت بݺ اکھݵݽ رَحمتَن
+جامعهٔ کراچی میر اݹدِکِھرَس نِعمَتَن|size=140%}}</poem>
+| style="width:18em; text-align:right" |  {{nastaliq|ذات خدا کی طرف سے ہم پر یہ ایسی عجیب رحمت ہوئی کہ جامعہ کراچی کی نزدیکی اور ادبی سر پرستی کی لازوال نعمت ہمیں نصیب ہوئی.}}
+|It has been such an incredible blessing from God that we have been granted with the eternal gift of proximity and literary patronage of University of Karachi.
+|-
+| style="width:23em; text-align:right" |
+<poem>{{script/Arabic|جامعهٔ کراچی میر تازہ جَہانَن بِلݳ
+چشمِ بصیرت پُھٹ اݺ عَقَلݺ نِشانَن بِلݳ|size=140%}}</poem>
+| style="width:18em; text-align:right" | {{nastaliq|جامعہ کراچی ہمارے لئے ایک جدید کا ئنات ہے۔ ساتھیو! چشم دل سے دیکھو اس امر میں اللہ کا ایک معجزہ ہے۔}}
+|University of Karachi is a modern institution for us. Colleagues! Look with your eyes and heart, there is a miracle of Allah in this matter.
+|-
+| style="width:23em; text-align:right" |
+<poem>{{script/Arabic|رَبِّ تَعالیٰ کرم! علم و ادب بُٹ اُیَم!
+اَلتݸ جَہانِݣ ݽِقَم! شُکرݸ مَنِݽ یا خدا!|size=140%}}</poem>
+| style="width:18em; text-align:right" | {{nastaliq|اللہ تعالی کے فضل و کرم سے علم وادب بے حد شیریں ہیں، ان سے فیضیاب ہونے والوں کی دنیا و آخرت آباد ہو جاتی ہیں، یا اللہ ہمیں توفیق عطا فرما تا کہ ہم تیرا شکر کریں۔ }}
+|Knowledge and literature are a limitlessly sweet by the grace and mercy of Allah almighty. Bountiful in this world and the next are those who are blessed by them. Oh Allah, grant us the ability to thank You.
+|-
+| style="width:23em; text-align:right" |
+<poem>{{script/Arabic|علم و ادبݺ صاحِبان، فضل و ہُنرݺ کامِلان!
+اُیون کݺ اُیون دوستان! شُکرݸ مَنِݽ یا خدا!|size=140%}}</poem>
+| style="width:18em; text-align:right" |{{nastaliq|اس وسیلے سے علم وادب اور فضل و کامل والے تمام حضرات کی دوستی کی سعادت ہم کو نصیب ہوئی، خدایا اس نعمت پر ہم تیرا شکر کرتے ہیں۔}}
+|By means of this [university], we have been blessed with the friendship of all those who possess knowledge, literature, grace and perfection. God, we thank you for this blessing.
+|-
+| style="width:23em; text-align:right" |
+<poem>{{script/Arabic|جامِعَه کُڎ نامدار، اسپِ قلَمݺ شَہسَوار
+علم و ادبݺ تاجدار شُکرݸ مَنِݽ یا خدا!|size=140%}}</poem>
+| style="width:18em; text-align:right" |{{nastaliq|جامعہ والے تمام صاحبان نامور و نامدار ہیں، وہ رخش قلم کے میدان کے شہسوار ہیں۔ اور علم و ادب کے تاجدار بادشاہ ہیں۔ خدایا ہم تیرا شکر ادا کرتے ہیں۔}}
+|All the scholars of the University are famous and renowned, they are the knights of the field of pen. And the crowned kings of knowledge and literature. God we thank you.
+|-
+| style="width:23em; text-align:right" |
+<poem>{{script/Arabic|جامِعَه آبِ حیات مَعَلِّمِین اُبون باغبان
+شگِرِشݸ ڞا ݽِقَم بَسݵݣ شُکرݸ مَنِݽ یا خدا!|size=140%}}</poem>
+| style="width:18em; text-align:right" |{{nastaliq|جامعہ گویا سرچشمۂ آب حیات ہے، شاگرد سب اس معنی میں سدا بہار باغات ہیں کہ اساتذۂ کرام اُن کی آبیاری کرتے رہتے ہیں۔ خدایا ہم تیرا شکر ادا کرتے ہیں۔}}
+|The university is like the fountain of life, the students are all evergreen gardens in the sense that teachers keep irrigating them. God we thank you.
+|-
+| style="width:23em; text-align:right" |
+<poem>{{script/Arabic|تازہ گلابݺ نَس اُیَم، دوستیݺ تھݸمَلݺ تَھس اُیَم
+قَلَم گیݸ شان کݺ ہَس اُیَم شُکرݸ مَنِݽ یا خدا!|size=140%}}</poem>
+| style="width:18em; text-align:right" |{{nastaliq|جب گلاب نو شگفتہ ہو، تو اسکی خوشبو مثالی ہوتی ہے، جہاں دوستی کی دھنی اور اپنے ماضی کی دھنی بناتے ہیں تو اس کا دھواں بھی شیریں ہوتا ہے، اھل قلم کی شان و مرتبت لذیذ ہوتی ہے، یا اللہ تیرا شکر ہے۔}}
+|Just as a newly blooming rose, whose fragrance is ideal, where friendships and memories are made, then its scent is also sweet, the glory of the pen is delicious, O Allah, thanks be to you.
+|-
+| style="width:23em; text-align:right" |
+<poem>{{script/Arabic|یَرمݸ ہݸئیلتَرڎ نصیر! جامِعه گمَنا بݵیَم؟
+تِک نُمݳ سݵن تِل اَکول شُکرݸ مَنِݽ یا خدا!|size=140%}}</poem>
+| style="width:18em; text-align:right" |{{nastaliq|زمانہ قدیم کا چوپان نصیر! میں کیا جانوں کہ تو جامعہ ہو گیا ہے۔ خاک بن کرکہا کر «یا خدا تیرا شکر ہے»۔}}
+|Nasir, the shepherd of the old times! How should I know that you have completed university? By turning into dust and saying, "O God, thank you."
+|}
+
+== Grammar ==
+Burushaski is a [[double-marking language]] and word order is generally [[subject–object–verb]].
+
+[[Noun]]s in Burushaski are divided into four [[Grammatical gender|genders]]: human masculine, human feminine, countable objects, and uncountable ones (similar to [[mass noun]]s). The assignment of a noun to a particular gender is largely predictable. Some words can belong both to the countable and to the uncountable class, producing differences in meaning. For example, when countable, ''báalt'' means 'apple' but when uncountable, it means 'apple tree' (Grune 1998).
+
+Noun [[morphology (linguistics)|morphology]] consists of the noun stem, a [[possession (linguistics)|possessive]] [[prefix (linguistics)|prefix]] (mandatory for some nouns, and thus an example of inherent possession), and [[grammatical number|number]] and [[declension|case]] [[Affix|suffixes]]. Distinctions in number are singular, plural, indefinite, and grouped. Cases include [[Absolutive case|absolutive]], [[Ergative case|ergative]]/[[Oblique case|oblique]], [[Genitive case|genitive]], and several [[Locative case|locatives]]; the latter indicate both location and direction and may be compounded.
+
+Burushaski [[verb]]s have three basic stems: past tense, present tense, and consecutive. The past stem is the citation form and is also used for [[Imperative mood|imperatives]] and [[nominalization]]; the consecutive stem is similar to a past participle and is used for [[grammatical conjunction|coordination]]. [[Agreement (linguistics)|Agreement]] on the verb has both [[Nominative–accusative language|nominative]] and [[Ergative–absolutive language|ergative]] features: transitive verbs and unaccusatives mark both the subject and the object of a clause, while unergatives verbs mark only subject agreement on the verb.{{Clarify|date=July 2011}}{{Dubious|date=July 2011}} Altogether, a verb can take up to four prefixes and six suffixes.
+
+=== Nouns ===
+
+==== Noun classes ====
+In Burushaski, there are four [[noun class]]es, similar to declensional classes in [[Indo-European languages]], but unlike Indo-European, the nominal classes in Burushaski are associated with four grammatical "genders":
+* '''m''' = male human beings, gods and spirits
+* '''f''' = female human beings and spirits
+* '''x''' = animals, [[countable]] nouns
+* '''y''' = abstract concepts, fluids, uncountable nouns
+
+Below, the abbreviation "'''h'''" will stand for the combination of the m- and f-classes, while "'''hx'''" will stand for the combination of the m-, f- and x-classes. Nouns in the x-class typically refer to countable, non-human beings or things, for example animals, fruit, stones, eggs, or coins; conversely, nouns in the y-class are as a rule uncountable abstractions or mass nouns, such as rice, fire, water, snow, wool, etc.
+
+However, these rules are not universal – countable objects in the y-class are sometimes encountered, e.g. ''ha'', 'house'. Related words can subtly change their meanings when used in different classes – for example, ''bayú'', when a member of the x-class, means salt in clumps, but when in the y-class, it means powdered salt. Fruit trees are understood collectively and placed in the y-class, but their individual fruits belong to the x-class. Objects made of particular materials can belong to either the x- or the y- class: stone and wood are in the x-class, but metal and leather in the y-class. The [[Article (grammar)|article]], [[adjectives]], [[Numeral (linguistics)|numerals]] and other attributes must be in [[agreement (linguistics)|agreement]] with the noun class of their subject.
+
+==== Pluralisation ====
+There are two [[grammatical number|numbers]] in Burushaski: singular and [[plural]]. The singular is unmarked, while the plural is expressed by means of suffix, which vary depending on the class of the noun:
+* '''h-class''': possible suffixes {{transliteration|bsk|italic=no|-ting, -aro, -daro, -taro, -tsaro}}
+* '''h- and x-class''': possible suffixes {{transliteration|bsk|italic=no|-o, -išo, -ko, -iko, -juko; -ono, -u; -i, -ai; -ts, -uts, -muts, -umuts; -nts, -ants, -ints, -iants, -ingants, -ents, -onts}}
+* '''y-class''': possible suffixes {{transliteration|bsk|italic=no|-ng, -ang, -ing, -iang; -eng, -ong, -ongo; -ming, -čing, -ičing, -mičing, -ičang}} (Nagar dialect)
+
+Some nouns admit two or three different suffixes, while others have no distinctive suffix, and occur only in the plural, e.g. ''bras'' 'rice', ''gur'' 'wheat', ''bishké'', 'fur', (cf. [[plurale tantum]]). On the other hand, there are also nouns which have identical forms in the singular and plural, e.g. ''hagúr'' 'horses'. Adjectives have a unique plural suffix, whose form depends on the class of the noun they modify, e.g. ''burúm'' 'white' gives the x-class plural ''burum-išo'' and the y-class plural ''burúm-ing''.
+
+Examples of pluralisation in Burushaski:
+* {{transliteration|bsk|wazíir}} (m), pl. ''wazíirishu'' 'vizier, minister'
+* {{transliteration|bsk|hir}} (m), pl. ''hiri'' 'man' (stress shifts)
+* {{transliteration|bsk|gus}} (f), pl. ''gushínga'' 'woman' (stress shifts)
+* {{transliteration|bsk|dasín}} (f), pl. ''daseyoo'' 'girl', 'unmarried woman'
+* {{transliteration|bsk|huk}} (x), pl. ''huká'' 'dog'
+* {{transliteration|bsk|thely}} (x), pl. ''tilí'' 'walnut'
+* {{transliteration|bsk|thely}} (y), pl. ''theleng'' 'walnut tree'
+
+==== Declension ====
+Burushaski is an [[ergativity|ergative]] language. It has five primary [[case (linguistics)|cases]].
+
+{| class="wikitable"
+|- style="background:#c0f0f0;"
+!Case
+!Ending
+!Function
+|-
+| [[Absolutive case|Absolutive]] || unmarked || The subject of intransitive verbs and the object of transitive ones.
+|-
+| [[Ergative case|Ergative]] || ''-e'' || The subject of transitive verbs.
+|-
+| [[Oblique case|Oblique]] || ''-e''; ''-mo'' (f)|| [[Genitive]]; the basis of secondary case endings
+|-
+| [[Dative case|Dative]] || ''-ar'', ''-r'' || Dative, [[allative]].
+|-
+| [[Ablative case|Ablative]] || ''-um'', ''-m'', ''-mo'' || Indicates separation (e.g. 'from where?')
+|}
+
+The case suffixes are appended to the plural suffix, e.g. ''Huséiniukutse'', 'the people of Hussein' (ergative plural). The genitive ending is irregular, /mo/, for singular f-class nouns, but /-e/ in all others (identical to the ergative ending). The dative ending, /-ar/, /-r/ is attached to the genitive ending for singular f-class nouns, but to the stem for all others. Examples:
+* ''hir-e'' 'the man's', ''gus-mo'' 'the woman's' (gen.)
+* ''hir-ar'' 'to the man', ''gus-mu-r'' 'to the woman' (dat.)
+
+The genitive is placed before the thing possessed: ''Hunzue tham'', 'the Emir of Hunza.'
+
+The endings of the secondary cases are formed from a secondary case suffix (or infix) and one of the primary endings /-e/, /-ar/ or /-um/. These endings are used directionally: the oblique /-e/ is for where something is or happens, ('locative'), the dative /-ar/ is for where something is going towards ('allative'), and the ablative /-um/ is for where something is going away from. The infixes, and their basic meanings, are as follows:
+
+# ''-ts-'' 'at'
+# ''-ul-'' 'in'
+# ''-aṭ-'' 'on; with'
+# ''-al-'' 'near' (only in the Hunza dialect)
+
+From these, the following secondary or compound cases are formed:
+
+{| class="wikitable"
+|- style="background:#c0f0f0;"
+!Infix
+!Oblique
+!Dative
+!Ablative
+|-
+| '''-ts-''' || ''-ts-e'' 'at' || ''-ts-ar'' 'to' || ''-ts-um'' 'from'
+|-
+| '''-ul-''' || ''-ul-e'' 'in' || ''-ul-ar'' 'into' || ''-ul-um'' 'out of'
+|-
+| '''-aṭ-''' || ''-aṭ-e'' 'on','with' || ''-aṭ-ar'' 'up to' || ''-aṭ-um'' 'down from'
+|-
+| '''-al-''' || ''-al-e'' 'near' || ''-al-ar'' 'to' || ''-al-um'' 'from'
+|}
+
+The regular endings /-ul-e/ and /-ul-ar/ are archaic and are now replaced by /-ul-o/ and /-ar-ulo/ respectively.
+
+==== Pronouns and pronominal prefixes ====
+Nouns indicating parts of the body and kinship terms are accompanied by an obligatory pronominal prefix. Thus, one cannot simply say 'mother' or 'arm' in Burushaski, but only 'my arm', 'your mother', 'his father', etc. For example, the root ''mi'' 'mother', is never found in isolation, instead one finds:
+* ''i-mi'' 'his mother', ''mu-mi'' 'her mother', "gu-mi" 'your mother'(3f sg.), ''u-mi'' 'their mother' (3h pl.), ''u-mi-tsaro'' 'their mothers'(3h pl.).
+
+The pronominal, or personal, prefixes agree with the person, number and – in the third person, the class of their noun. A summary of the basic forms is given in the following table:
+
+{| class="wikitable" style="text-align:center;"
+! colspan="2" |
+! Singular
+! Plural
+|-
+! colspan="2" | 1st person
+| ''a-''
+| ''mi-, me-''
+|-
+! colspan="2" | 2nd person
+| ''gu-, go-''
+| ''ma-''
+|-
+! rowspan="4" | 3rd<br />person
+! m
+| ''i-, e-''
+| ''u-, o-''
+|-
+! f
+| ''mu-''
+| ''u-, o-''
+|-
+! x
+| ''i-, y-''
+| ''u-, o-''
+|-
+! y
+| colspan="2" | ''i-, e-''
+|}
+
+Personal pronouns in Burushaski distinguish proximal and distal forms, e.g. ''khin'' 'he, this one here', but ''in'', 'he, that one there'. In the oblique, there are additional abbreviated forms.
+
+=== Numerals ===
+The Burushaski number system is [[vigesimal]], i.e. based on the number 20. For example, 20 ''altar'', 40 ''alto-altar'' (2 times 20), 60 ''iski-altar'' (3 times 20) etc. The base numerals are:
+* 1 ''han'' (or ''hen'', ''hak'')
+* 2 ''altó'' (or ''altán'')
+* 3 ''isko'' (or ''iskey'')
+* 4 ''wálto''
+* 5 ''čindó''
+* 6 ''mishíndo''
+* 7 ''thaló''
+* 8 ''altámbo''
+* 9 ''hunchó''
+* 10 ''tóorumo'' (also ''toorimi'' and ''turma'')
+* 100 ''tha''
+
+Examples of compound numerals:
+
+11 ''turma-han'', 12 ''turma-alto'', 13 ''turma-isko'', ... , 19 ''turma-hunti'';
+20 ''altar'', 30 ''altar-toorumo'', 40 ''alto-altar'', 50 ''alto-altar-toorumo'', 60 ''iski-altar'' and so on;
+21 ''altar-hak'', 22 ''altar-alto'', 23 ''altar-isko'' and so on.
+
+=== Verbs ===
+
+==== Overview ====
+The verbal morphology of Burushaski is extremely complicated and rich in forms. Many sound changes can take place, including [[assimilation (linguistics)|assimilation]], [[deletion (linguistics)|deletion]] and [[Accent (dialect)|accent shift]], which are unique for almost every verb. Here, we can specify only certain basic principles.
+
+The Burushaski [[finite verb]] falls into the following categories:
+
+{| class="wikitable"
+|- style="background:#c0f0f0;"
+!Category
+!Possible forms
+|-
+| [[Grammatical tense|Tense]]/[[Grammatical aspect|Aspect]] || Present, [[Future tense|Future]], [[Imperfect]], [[Perfect (grammar)|Perfect]], [[Pluperfect]]
+|-
+| [[Mood (linguistics)|Mood]] || [[Conditional mood|Conditional]], three [[Optative]]s, [[Imperative mood|Imperative]], [[Conative]]
+|-
+| [[Grammatical number|Number]] || Singular, [[Plural]]
+|-
+| [[Grammatical person|Person]] || 1st, 2nd and 3rd Person (2nd person only in the imperative).
+|-
+| [[Noun class]] || the four noun classes m, f, x and y (only in the 3rd person)
+|}
+
+For many [[transitive verb]]s, in addition to the subject, the (direct) object is also indicated, also by pronominal prefixes which vary according to person, number and class. All verbs have negative forms, and many intransitive verbs also have derived transitive forms. The [[infinitive]] forms – which in Burushaski are the absolutives of the past and present, the perfect participle, and two infinitives – admit all the finite variations except tense and mood. Infinitive forms are made together with auxiliary verbs and periphrastic forms.
+
+==== The 11 positions of the finite verb ====
+All verb forms can be constructed according to a complex but regular position system. Berger describes a total of 11 possible positions, or slots, although not all of these will be filled in any given verb form. Many positions also have several alternative contents (indicated by A/B/C below). The verb stem is in position 5, preceded by four possible prefixes and followed by six possible suffixes. The following table gives an overview of the positions and their functions
+
+{| class="wikitable"
+|+ The positions of Burushaski finite verbs
+|- style="background:#c0f0f0;"
+!Position
+!Affixes and their meanings
+|-
+| 1 || Negative prefix ''a-''
+|-
+| 2a/b || d-prefix (creates intransitive verbs) / n-prefix (absolutive prefix)
+|-
+| 3 || '''Pronominal prefixes''': subject of intransitive, object of transitive verbs
+|-
+| 4 || s-prefix (creates secondary transitive verbs)
+|- style="background:#e8e8e8;"
+|| 5 || style="background:#e8e8e8;"| '''Verb Stem'''
+|-
+| 6 || Plural suffix ''-ya-'' on the verb stem
+|-
+| 7 || Present stem mark ''-č-'' (or ''š'', ''ts''..) forming the present, future and imperfect
+|-
+| 8a/b || '''Pronominal suffix''' of the 1.sg. ''-a-'' (subject) / linking vowel (no semantic meaning)
+|-
+| 9a || m-suffix: forms the m-participle and m-optative from the simple /
+|-
+| 9b || m-suffix: forms the future and conditional from the present stem /
+|-
+| 9c || n-suffix: marks the absolutive (see position 2) /
+|-
+| 9d || š-suffix: forms the š-optative and the -iš-Infinitive /
+|-
+| 9e || Infinitive ending ''-as'', ''-áas'' / optative suffix ''-áa'' (added directly to the stem)
+|-
+| 10a || '''Pronominal suffixes''' of the 2nd and 3rd Person and 1. pl. (subject) /
+|-
+| 10b || Imperative forms (added directly to the stem) /
+|-
+| 10c || Forms of the auxiliary verb ''ba-'' for forming the present, imperfect, perfect and pluperfect
+|-
+| 11 || Nominal endings and particles
+|}
+
+==== Formation of tenses and moods ====
+The formation of the tenses and moods involves the use of several positions, or slots, in complicated ways. The preterite, perfect, pluperfect and conative are formed from the 'simple stem,' whereas the present, imperfect, future and conditional are formed from the 'present stem,' which is itself formed from the simple stem by placing -č- in position 7. The optative and imperative are derived directly from the stem. Altogether, the schema is as follows:
+
+The formation of the tenses and moods of the verb ''her'' 'to cry', without prefixes:
+
+{| class="wikitable"
+|+ Simple stem tenses
+|- style="background:#c0f0f0;"
+! style="width:100px;"| Grammatical<br />category
+! style="width:350px;"| Construction
+! style="width:200px;"| Form and meaning
+|-
+| Conative || stem + personal suffix || ''her-i'' 'he starts to cry'
+|-
+| Preterite || stem [+ linking vowel] + m-suffix + personal suffix || ''her-i-m-i'' 'he cried'
+|-
+| Perfect || stem [+ linking vowel] + present auxiliary || ''her-a-i'' 'he has cried'
+|-
+| Pluperfect || stem [+ linking vowel] + perfect auxiliary || ''her-a-m'' 'he had cried'
+|}
+
+{| class="wikitable"
+|+ Present stem tenses
+|- style="background:#c0f0f0;"
+! style="width:100px;"| Grammatical<br />category
+! style="width:350px;"| Construction
+! style="width:200px;"| Form and meaning
+|-
+| Future || stem + present marker [+ linking vowel + m-suffix] + personal ending || ''her-č-i'' 'he will cry'
+|-
+| Present || stem + present marker + linking vowel + present auxiliary || ''her-č-a-i'' 'he is crying'
+|-
+| Imperfect || stem + present marker + linking vowel + perfect auxiliary || ''her-č-a-m'' 'he was crying, used to cry'
+|-
+| rowspan="2" | Conditional || stem + present marker + linking vowel + m-Suffix (except 1. pl.) + ''če'' || ''her-č-u-m-če'' '...{{nbsp}}he would cry',
+|-
+| stem + present marker + linking vowel + 1. pl. ending + ''če'' || ''her-č-an-če'' 'we would cry'
+|}
+
+{| class="wikitable"
+|+ Optatives and Imperative
+|- style="background:#c0f0f0;"
+! style="width:100px;"| Grammatical<br />category
+! style="width:350px;"| Construction
+! style="width:200px;"| Form and meaning
+|-
+| ''áa''-optative || stem + ''áa'' (in all persons) || ''her-áa'' "...{{nbsp}}should... cry"
+|-
+| ''m''-optative || stem [+ linking vowel] + m-suffix || ''her-u-m'' "...{{nbsp}}should... cry"
+|-
+| ''š''-optative || stem + ''(i)š'' + personal suffix || ''her-š-an'' "he should cry"
+|-
+| Imperative<br />singular || stem [+ ''é'' for ending-accented verbs] || ''her'' "cry!"
+|-
+| Imperative<br />plural || stem + ''in'' || ''her-in'' "cry!"
+|}
+
+==== Indication of the subject and object ====
+The subject and object of the verb are indicated by the use of personal prefixes and suffixes in positions 3, 8 and 10 as follows:
+
+{| class="wikitable"
+|- style="background:#c0f0f0;"
+!Affix
+!Position
+!Function
+|-
+| Prefixes || style="text-align:center;"| 3 || direct object of transitive verbs, subject of intransitive ones
+|-
+| Suffixes || style="text-align:center;"| 8/10 || subject of transitive and intransitive verbs
+|}
+
+The personal prefixes are identical to the pronominal prefixes of nouns (mandatory with body parts and kinship terms, as above). A simplified overview of the forms of the affixes is given in the following table:
+
+{| class="wikitable"
+|+ Personal prefix<br />{{no bold|(Position 3)}}
+|- style="background:#c0f0f0;"
+!Person/<br />noun class
+!Singular
+!Plural
+|-
+| 1st Person || style="text-align:center;"| ''a-'' || style="text-align:center;"| ''mi-''
+|-
+| 2nd Person || style="text-align:center;"| ''gu-'' || style="text-align:center;"| ''ma-''
+|-
+| 3rd Person m || style="text-align:center;"| ''i-'' || rowspan="3" style="text-align:center;" | ''u-''
+|-
+| 3rd Person f || style="text-align:center;"| ''mu-'' 
+|-
+| 3rd Person x || style="text-align:center;"| ''i-'' 
+|-
+| 3rd Person y || colspan="2" style="text-align:center;"| ''i-''
+|}
+
+{| class="wikitable"
+|+ Personal suffixes<br />{{no bold|(Positions 8 and 10)}}
+|- style="background:#c0f0f0;"
+!Person/<br />noun class
+!Singular
+!Plural
+|-
+| 1st/2nd Person || style="text-align:center;"| ''-a'' || rowspan="3" style="text-align:center;" | ''-an''
+|-
+| 3rd Person m || style="text-align:center;"| ''-i'' 
+|-
+| 3rd Person f || style="text-align:center;"| ''-o'' 
+|-
+| 3rd Person x || style="text-align:center;"| ''-i'' || style="text-align:center;"| ''-ie''
+|-
+| 3rd Person y || colspan="2" style="text-align:center;"| ''-i''
+|}
+
+For example, the construction of the preterite of the transitive verb ''phus'' 'to tie', with prefixes and suffixes separated by hyphens, is as follows:
+* ''i-phus-i-m-i'' "he ties him" (filled positions: 3-5-8-9-10)
+* ''mu-phus-i-m-i'' "he ties her (f)"
+* ''u-phus-i-m-i'' "he ties them (pl. hx)"
+* ''mi-phus-i-m-i'' "he ties us"
+* ''i-phus-i-m-an'' "we/you/they tie him"
+* ''mi-phus-i-m-an'' "you/they tie us"
+* ''i-phus-i-m-a'' "I tie it"
+* ''gu-phus-i-m-a'' "I tie you"
+
+The personal affixes are also used when the noun occupies the role of the subject or the object, e.g. ''hir i-ír-i-mi'' 'the man died'. With intransitive verbs, the subject function is indicated by both a prefix and a suffix, as in:
+* ''gu-ir-č-u-m-a'' "you will die" (future)
+* ''i-ghurts-i-m-i'' "he sank" (preterite)
+
+Personal prefixes do not occur in all verbs and all tenses. Some verbs do not admit personal prefixes, others still do so only under certain circumstances. Personal prefixes used with intransitive verbs often express a volitional function, with prefixed forms indicating an action contrary to the intention of the subject. For example:
+* ''hurúṭ-i-m-i'' "he sat down" (volitional action without prefix)
+* ''i-ír-i-m-i'' "he died" (involuntary action with prefix)
+* ''ghurts-i-mi'' "he went willingly underwater", "he dove" (without prefix)
+* ''i-ghurts-i-m-i'' "he went unwillingly underwater", "he sank" (with prefix)
+
+==== The d- prefix ====
+A number of verbs – mostly according to their root form – are found with the d-prefix in position 2, which occurs before a consonant according to [[vowel harmony]]. The precise semantic function of the d-prefix is unclear. With primary transitive verbs the d-prefix, always without personal prefixes, forms regular intransitives. Examples:
+* ''i-phalt-i-mi'' 'he breaks it open' (transitive)
+* ''du-phalt-as'' 'to break open, to explode' (intransitive)
+
+A master's thesis research work of a native speaker of Burushaski on Middle Voice Construction in the Hunza Dialect claims that the [dd-] verbal prefix is an overt morphological middle marker for MV constructions, while the [n-] verbal prefix is a morphological marker for passive voice. The data primarily come from the Hunza dialect of Burushaski, but analogous phenomena can be observed in other dialects. This research is based on a corpus of 120 dd-prefix verbs. This research has showed that position {-2} on the verb template is occupied by voice-marker in Burushaski. The author argues that the middle marker is a semantic category of its own and that it is clearly distinguished from the reflexive marker in this language. The middle marker (MM) means the grammatical device used to "indicate that the two semantic roles of Initiator and Endpoint refer to a single holistic entity" (Kemmer 1993: 47). In the view of that definition, I look at a middle marked verb in Burushaski and illustration follows the example.<ref name=":0">{{Cite book|url=https://digital.library.unt.edu/ark:/67531/metadc271839/m2/1/high_res_d/thesis.pdf|title=MIDDLE VOICE CONSTRUCTION IN BURUSHASKI: FROM THE PERSPECTIVE OF A NATIVE SPEAKER OF THE HUNZA DIALECT|last=Karim|first=Piar B.A.|publisher=UNIVERSITY OF NORTH TEXAS|year=2013|pages=1–10}}</ref>
+* ''hiles dd-i-il-imi'' 'the boy drenched'
+
+==== Auxiliary verb constructions ====
+Alternatively, the d- prefix might have historically derived from an original auxiliary element meaning 'to come', which may explain the doubled subject inflectional pattern in what appear to be partially lexicalized reflexes of earlier univerbated deictic AVCs.
+
+{{Interlinear|indent=3|a-'''t'''-i-man-im-i|NEG-'''AUX'''-3SG-become-PST-3SG|'He wasn't born.'}} 
+
+In fact, the root ''du'' is still found in certain doubled inflection AVCs in which it serves as the lexical head meaning 'come', not as the auxiliary:
+
+{{Interlinear|indent=3|abbreviations=AP:aorist participle|óo-du-móo b-o-m|NEG-come-3SG.FEM AUX-3SG-AP|'She didn't come.'}} 
+
+== See also ==
+* [[Wiktionary:Appendix:Burushaski Swadesh list|Burushaski Swadesh list]]
+* [[Wiktionary:Appendix:Burushaski comparative vocabulary list|Burushaski comparative vocabulary list]] ([[Wiktionary]])
+* [[Languages of Pakistan]]
+* [[Hunza Valley]]
+* [[Nagar Valley]]
+* [[Gilgit-Baltistan]]
+* [[Partawi Shah]]
+* [[Nihali language]]
+* [[Kusunda language]]
+
+== Notes ==
+{{notelist}}
+
+== References ==
+{{reflist}}
+
+== Bibliography ==
+* Anderson, Gregory D. S. 1997. Burushaski Morphology. In ''Morphologies of Asia and Africa'', ed. by Alan Kaye. Winona Lake, IN: Eisenbrauns.
+* Anderson, Gregory D. S. 1997. Burushaski Phonology. In ''Phonologies of Asia and Africa'', ed. by Alan Kaye. Winona Lake, IN: Eisenbrauns.
+* Anderson, Gregory D. S. 1999. M. Witzel's "South Asian Substrate Languages" from a Burushaski Perspective. ''Mother Tongue'' (Special Issue, October 1999).
+* Anderson, Gregory D. S. forthcoming b. Burushaski. In ''Language Islands: Isolates and Microfamilies of Eurasia'', ed. by D.A. Abondolo. London: Curzon Press.
+* Backstrom, Peter C. ''Burushaski'' in Backstrom and Radloff (eds.), ''Languages of northern areas, Sociolinguistic Survey of Northern Pakistan, 2. Islamabad'', National Institute of Pakistan Studies, Qaid-i-Azam University and [[Summer Institute of Linguistics]] (1992), 31–54.
+* Berger, Hermann. 1974. ''Das Yasin-Burushaski (Werchikwar)''. Volume 3 of ''Neuindische Studien'', ed. by Hermann Berger, Lothar Lutze and Günther Sontheimer. Wiesbaden: Otto Harrassowitz.
+* Berger, Hermann. 1998. ''Die Burushaski-Sprache von Hunza und Nager'' [The B. language of H. and N.]. Three volumes: ''Grammatik'' [grammar], ''Texte mit Übersetzungen'' [texts with translations], ''Wörterbuch'' [dictionary]. Altogether Volume 13 of ''Neuindische Studien'' (ed. by Hermann Berger, Heidrun Brückner and Lothar Lutze). Wiesbaden: Otto Harassowitz.
+* Grune, Dick. 1998. [http://www.few.vu.nl/~dick/Summaries/Languages/Burushaski.pdf Burushaski – An Extraordinary Language in the Karakoram Mountains].
+* {{cite book |last1=Holst |first1=Jan Henrik |title=Advances in Burushaski Linguistics |date=2014 |location=Tübingen |publisher=Narr |isbn=978-3-8233-6908-0 |url=https://books.google.com/books?id=oP9oBAAAQBAJ |language=en}}
+* Karim, Piar. 2013. ''Middle Voice Construction in Burushaski: From the Perspective of a Native Speaker of the Hunza Dialect. ''Unpublished MA Thesis. Denton: University of North Texas. Department of Linguistics.
+* [[Georg Morgenstierne|Morgenstierne, Georg]]. 1945. Notes on Burushaski Phonology. ''Norsk Tidsskrift for Sprogvidenskap'' 13: 61–95.
+* Lorimer, D. L. R. 1937. [https://mahraka.com/pdf/burushaski.pdf Burushaski and its Alien Neighbours].
+* Munshi, Sadaf. 2006. ''Jammu and Kashmir Burushaski: Language, language contact, and change.'' Unpublished Ph.D. Dissertation. Austin: University of Texas at Austin, Department of Linguistics.
+* Munshi, Sadaf. 2010. "Contact-induced language change in a trilingual context: the case of Burushaski in Srinagar". In Diachronica. John Benjamins Publishing Company. 27.1: pp32–72.
+
+== Further reading ==
+{{refbegin}}
+* [[Elena Bashir|Bashir, Elena]]. 2000. A Thematic Survey of Burushaski Research. ''History of Language'' 6.1: 1–14.
+* Berger, Hermann. 1956. Mittelmeerische Kulturpflanzennamen aus dem Burušaski [Names of Mediterranean cultured plants from B.]. ''Münchener Studien zur Sprachwissenschaft'' 9: 4-33.
+* Berger, Hermann. 1959. Die Burušaski-Lehnwörter in der Zigeunersprache [The B. loanwords in the [[Romani language|Gypsy language]]]. Indo-Iranian Journal 3.1: 17–43.
+* Casule Ilija. 2016. Evidence for the Indo-European and Balkan Origin of Burushaski.München: Lincom GmbH. 205 p.&nbsp;Lincom Etymological Studies 05.
+* Casule, Ilija. 2017. Burushaski etymological dictionary of the inherited Indo-European lexicon. München: Lincom GmbH. 325 p. (LINCOM Etymological Studies; no. 6)
+* Casule, Ilija. 2018, New Burushaski etymologies and the origin of the ethnonym Burúśo, Burúśaski, Brugaski and Miśáski. Acta Orientalia. Vol. 79: 27–71.
+* [[David Lockhart Robertson Lorimer|Lorimer, D. L. R.]] 1935–1938. ''The Burushaski Language'' (3 vols.). Oslo: Instituttet for Sammenlignende Kulturforskning.
+* Munshi, Sadaf. 2016. ''Burushaski Language Resource''. A digital collection of Burushaski oral literature available at URL: https://digital.library.unt.edu/explore/collections/BURUS/
+* van Skyhawk, Hugh. 1996. Libi Kisar. Ein Volksepos im Burushaski von Nager. ''Asiatische Studien'' 133. {{ISBN|3-447-03849-7}}.
+* van Skyhawk, Hugh. 2003. Burushaski-Texte aus Hispar. Materialien zum Verständnis einer archaischen Bergkultur in Nordpakistan. ''Beiträge zur Indologie'' 38. {{ISBN|3-447-04645-7}}.
+* Tiffou, Étienne. 1993. ''Hunza Proverbs''. University of Calgary Press. {{ISBN|1-895176-29-8}}
+* Tiffou, Étienne. 1999. ''Parlons Bourouchaski''. Paris: L'Harmattan. {{ISBN|2-7384-7967-7}}
+* Tiffou, Étienne. 2000. Current Research in Burushaski: A Survey. ''History of Language'' 6(1): 15–20.
+* Tikkanen, Bertil. 1988. On Burushaski and other ancient substrata in northwest South Asia. ''Studia Orientalia'' 64: 303–325.
+* Varma, Siddheshwar. 1941. Studies in Burushaski Dialectology. ''Journal of the Royal Asiatic Society of Bengal, Letters'' 7: 133–173.
+{{refend}}
+
+== External links ==
+{{Incubator|code=bsk}}
+{{Wikivoyage|Burushaski phrasebook|Burushaski|a phrasebook}}
+* [http://burushaskilanguage.com/ Burushaski Language Documentation Project]
+* [http://starling.rinet.ru/cgi-bin/response.cgi?root=new100&morpho=0&basename=new100\bur\bur&limit=-1 Burushaski basic lexicon at the Global Lexicostatistical Database]
+* [https://web.archive.org/web/20160304035525/http://jairo.nii.ac.jp/0041/00003352/en, Noboru. 2012. ''A reference grammar of Eastern Burushaski''.]
+* [https://web.archive.org/web/20160921060336/https://www.lib.utexas.edu/etd/d/2006/munshis96677/munshis96677.pdf Jammu and Kashmir Burushaski: Language, Language contact and change]
+* [https://digital.library.unt.edu/explore/collections/BURUS Burushaski Language Resource] collection of Burushaski language documentation in the Computational Resource for South Asian Languages (CoRSAL) archive
+
+{{Languages of South Asia}}
+{{Languages of Pakistan}}
+{{Languages of Jammu and Kashmir}}
+{{Language families}}
+{{Eurasian languages}}
+{{Arabic script}}
+
+{{Authority control}}
+
+[[Category:Burushaski| ]]
+[[Category:Language isolates of Asia]]
+[[Category:Languages of Pakistan]]
+[[Category:Languages of Gilgit-Baltistan]]
+[[Category:Languages of Jammu and Kashmir]]
+[[Category:Endangered languages of India]]
+[[Category:Hunza]]
+[[Category:Burusho people]]
+[[Category:Subject–object–verb languages]]

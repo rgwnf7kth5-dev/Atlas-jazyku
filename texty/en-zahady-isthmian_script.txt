@@ -1,0 +1,96 @@
+{{Short description|Mesoamerican set of symbols}}
+{{Multiple issues|{{Expert needed|1=Indigenous peoples of the Americas|reason=It does not seem appropriate to characterize it as a full writing system, when the decipherment and interpretation is disputed|date=February 2024}}
+{{Disputed|date=February 2024}}}}
+{{Infobox writing system
+| name        = Isthmian script
+| type        = Undeciphered
+| sample      = La Mojarra Inscription and Long Count date.jpg
+| caption     = Detail showing three columns of [[glyph (archaeology)|glyphs]] from [[La Mojarra Stela 1]]. The two right columns are Isthmian glyphs.  The left column gives a [[Mesoamerican Long Count calendar]] date of 8.5.16.9.7, or 156 CE.
+| typedesc    = (assumed to be [[logosyllabic]])
+| time        = {{circa|500 BCE{{snd}}500 CE}}
+| fam1        = [[Olmec hieroglyphs]] (proto-writing)?
+| languages   = [[Mixe–Zoque languages|Epi-Olmec]] ([[ISO639-3:xep]])
+| children    = * [[Maya script]]?
+* [[Zapotec script]]?
+| sisters     = * [[Maya script]]?
+* [[Zapotec script]]?
+| note        = none
+}}
+
+The '''Isthmian script''' is an early set of symbols found in inscriptions around the [[Isthmus of Tehuantepec]], dating to {{circa|500 BCE{{snd}}500 CE}}, though with dates subject to disagreement. It is also called the '''La Mojarra script''' and the '''Epi-Olmec script''' ('post-Olmec script').
+
+It has not been conclusively determined whether Isthmian script is a true [[writing system]] that represents a spoken language, or is a system of [[proto-writing]]. According to a disputed partial decipherment, it is structurally similar to the [[Maya script]] (an undisputed writing script), and like Maya uses one set of characters to represent [[morphemes]], and a second set to represent [[Syllabary|syllables]].
+
+==Recovered texts==
+The four most extensive Isthmian texts are those found on:
+
+* The [[La Mojarra Stela 1]] 
+* The [[Tuxtla Statuette]]
+* [[Tres Zapotes#Stela C|Tres Zapotes Stela C]]
+* A [[Teotihuacan]]-style mask
+
+Other texts include:
+
+* A few Isthmian [[glyph (archaeology)|glyph]]s on four badly weathered [[stela]]e — 5, 6, 8, and probably 15 — at [[Cerro de las Mesas]].
+* Approximately 23 glyphs on the O'Boyle "mask", a clay artifact of unknown provenance.<ref>{{Cite web |title=Mask with Incised Design in Epi-Olmec Script {{!}} Yale University Art Gallery |url=https://artgallery.yale.edu/collections/objects/196592 |access-date=2025-01-10 |website=artgallery.yale.edu}}</ref>
+* A small number of glyphs on a pottery-sherd from [[Chiapa de Corzo (Mesoamerican site)|Chiapa de Corzo]].  This sherd has been assigned the oldest date of any Isthmian script artifact: 450–300 BCE.<ref>Pérez de Lara and Justeson.</ref>
+
+==Decipherment==
+{{Infobox language
+| name             = Epi-Olmec
+| familycolor      = american
+| iso3             = xep
+| fam1             = [[Mixe–Zoque languages|Mixe–Zoque]]?<br>[[Mayan languages|Mayan]]?
+| script           = Isthmian script
+| era              = {{circa|500 BCE{{snd}}500 CE}}
+| states           = [[Mexico]]
+| region           = [[La Mojarra]]
+| acceptance       = controversial
+| glotto           = none
+}}
+
+In a 1993 paper, John Justeson and Terrence Kaufman proposed a partial decipherment of the Isthmian text found on the La Mojarra Stela, claiming that the language represented was a member of the [[Zoque languages|Zoquean]] language family.<ref>Justeson and Kaufman (1993).</ref>  In 1997, the same two epigraphers published a second paper on Epi-Olmec writing, in which they further claimed that a newly discovered text-section from the stela had yielded readily to the decipherment-system that they had established earlier for the longer section of text.<ref>Justeson and Kaufman (1997).</ref>  This led to a [[List of Guggenheim Fellowships awarded in 2003|Guggenheim Fellowship]] for their work, in 2003.
+[[File:Epi-olmec Syllabary in IPA Kaufman Justeson 1996.jpg|thumb|Epiolmec syllabary in the International Phonetic Alphabet according to Kaufman and Justeson 1996]]
+The following year, however, their interpretation of the La Mojarra text was disputed by [[Stephen D. Houston]] and [[Michael D. Coe]], who had tried unsuccessfully to apply the Justeson-Kaufman decipherment-system to the Isthmian text on the back of the hitherto unknown Teotihuacan-style mask (which is of unknown provenance and is now in a private collection).<ref>{{Cite web |date=2004-01-09 |title=Mesoamerican relic provides new clues to mysterious ancient writing system |url=https://news.byu.edu/news/mesoamerican-relic-provides-new-clues-mysterious-ancient-writing-system |access-date=2025-01-10 |website=News |language=en}} Despite the lack of provenance, Houston "is confident it [the mask text] was written sometime between A.D. 300 and 500" which would place it 150 to 250 years later than the La Mojarra stela.</ref>
+
+Along with proposing an alternative linguistic attribution of Epi-Olmec writing as proto-[[Huastecan languages|Huastecan]], Vonk (2020) argued that the size of the corpus compares unfavorably in comparison with the rate of repetition within the corpus, so that a ''unique decipherment'' is simply impossible given the current state of affairs. He goes on in illustrating the principal applicability of readings in random Old and New World languages (including Ancient Greek, Latin, Spanish and German) to demonstrate the coincidental nature of any such proposals.<ref>{{Cite journal |last=Vonk |first=Thomas |date=2020-02-12 |title=Yet Another "Decipherment" of the Isthmian Writing2 System |url=https://bonndoc.ulb.uni-bonn.de/xmlui/handle/20.500.11811/1429}}</ref>
+
+The matter is still under discussion. In ''Lost Languages'' (2008) [[W. Andrew Robinson|Andrew Robinson]] summarises the position as follows:
+
+{{blockquote|Overall, then, the case for the Justeson/Kaufman 'decipherment' of Isthmian is decidedly unproven and currently rests on shaky foundations ... What it needs, more urgently than some other 'decipherments' given its evident linguistic sophistication, is the discovery of a new text or texts as substantial as the one found at La Mojarra in 1986.<ref>Robinson, p. 263.</ref>}}
+
+==See also==
+* [[Cascajal block]]
+* [[San Andrés (Mesoamerican site)]]
+* [[Epi-Olmec culture]]
+* [[Olmec hieroglyphs]]
+
+==Notes==
+{{reflist}}
+
+==References==
+*[https://news.byu.edu/news/mesoamerican-relic-provides-new-clues-mysterious-ancient-writing-system Brigham Young University press-release] on behalf of Brigham Young University archaeologist Stephen Houston and Yale University professor emeritus Michael Coe disputing the Justeson-Kaufman findings.
+*Diehl, Richard A. (2004) ''The Olmecs: America's First Civilization'', Thames & Hudson, London.
+*Houston, Stephen, and Michael Coe (2004) "Has Isthmian Writing Been Deciphered?", ''Mexicon'' XXV: 151–161.
+*Justeson, John S., and Terrence Kaufman (1993), "A Decipherment of Epi-Olmec Hieroglyphic Writing" in ''Science'', Vol. 259, 19 March 1993, pp.&nbsp;1703–11.
+*Justeson, John S., and Terrence Kaufman (1997) [http://www.sciencemag.org/feature/data/justeson.dtl "A Newly Discovered Column in the Hieroglyphic Text on La Mojarra Stela 1: a Test of the Epi-Olmec Decipherment"], ''Science'', Vol. 277, 11 July 1997, pp.&nbsp;207–10.
+*Justeson, John S., and Terrence Kaufman (2001) [http://www.albany.edu/anthro/maldp/EOTEXTS.pdf ''Epi-Olmec Hieroglyphic Writing and Texts''] {{Webarchive|url=https://web.archive.org/web/20110525014933/http://www.albany.edu/anthro/maldp/EOTEXTS.pdf |date=2011-05-25 }}.
+*Lo, Lawrence; "[https://web.archive.org/web/20060212032446/http://www.ancientscripts.com/epiolmec.html Epi-Olmec]", at [https://web.archive.org/web/20110212023046/http://ancientscripts.com/ Ancient Scripts.com] (accessed January 2008).
+*Pérez de Lara, Jorge, and John Justeson [http://www.famsi.org/reports/05084/index.html "Photographic Documentation of Monuments with Epi-Olmec Script/Imagery"], Foundation for the Advancement of Mesoamerican Studies (FAMSI).
+*Robinson, Andrew (2008) ''Lost Languages: The Enigma of the World's Undeciphered Scripts'', Thames & Hudson, {{ISBN|978-0-500-51453-5}}.
+*Schuster, Angela M. H. (1997) "[https://web.archive.org/web/20071225222907/http://cat.he.net/~archaeol/online/news/la.mojarra.html Epi-Olmec Decipherment]" in ''Archaeology'', online (accessed January 2008).
+
+==External links==
+* [http://www.famsi.org/reports/05084/ "Photographic Documentation of Monuments with Epi-Olmec Script/Imagery"] from the Foundation for the Advancement of Mesoamerican Studies, Inc.
+* [https://web.archive.org/web/20030417091428/http://obelix.ee.duth.gr/~apostolo/Epi-Olmec/highres.html High resolution image of the Isthmian glyph table]
+* [https://web.archive.org/web/20070312102615/http://www.kennethgarrett.com/imageSubject/popitem.php?ID=237 Tuxtla Statuette photograph]
+* [http://www.pitt.edu/~pittanth/research/latin/photos/kaufman-full.jpg Drawing of La Mojarra Stela 1]
+* [https://web.archive.org/web/20070311041920/http://byunews.byu.edu/releases/archive04/Jan/Isthmian/Mask%20back-L.jpg High resolution photo of the Coe/Houston Mask]
+
+{{Writings systems of the Americas}}
+{{list of writing systems}}
+
+[[Category:Epi-Olmec culture]]
+[[Category:Mesoamerican writing systems]]
+[[Category:Undeciphered writing systems]]
+[[Category:Writing systems introduced in the 1st millennium BC]]

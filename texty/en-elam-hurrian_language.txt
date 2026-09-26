@@ -1,0 +1,1083 @@
+{{Short description|Extinct ancient language of Mesopotamia}}
+{{Infobox language
+| name             = Hurrian
+| states           = [[Mitanni]]
+| region           = [[Near East]]
+| era              = attested 2300–1000 BC
+| familycolor      = Caucasian
+| fam1             = [[Hurro-Urartian languages|Hurro-Urartian]]
+| iso3             = xhu
+| glotto           = hurr1240
+| glottorefname    = Hurrian
+| notice           = IPA
+| script           = [[Hittite cuneiform|Hittite]], [[Ugaritic alphabet|Ugaritic]]
+| ethnicity        = [[Hurrians]]
+| map              = File:Orientmitja2300aC.png
+| mapcaption       = {{legend inline|#b05e98|Hurrians}} in 2300 BC
+| imagecaption     = The [[Hurrian foundation pegs|Louvre lion]] and accompanying stone tablet bearing the earliest known text in Hurrian
+| image            = Hurrian foundation document-AO 19937-IMG 3470-gradient.jpg
+}}
+{{Contains special characters|cuneiform}}'''Hurrian''' is an extinct [[Hurro-Urartian language]] spoken by the [[Hurrians]] (Khurrites), a people who entered northern [[Mesopotamia]] around 2300&nbsp;BC and had mostly vanished by 1000&nbsp;BC. Hurrian was the language of the [[Mitanni]] kingdom in northern Mesopotamia and was likely spoken at least initially in Hurrian settlements in modern-day [[Syria]].
+
+==Classification==
+{{main|Hurro-Urartian languages}}
+Hurrian is closely related to [[Urartian language|Urartian]], the language of the ancient kingdom of [[Urartu]]. Together they constitute the [[Hurro-Urartian languages|Hurro-Urartian language family]]. The external connections of the Hurro-Urartian languages are disputed. There exist various proposals for a [[Hurro-Urartian languages#classification|genetic relationship to other language families]] (e.g. the [[Northeast Caucasian languages]], [[Indo-European languages]], or [[Kartvelian languages]] that are spoken in [[Georgia country|Georgia]]). It has also been speculated that it is related to "[[Sino-Caucasian]]".<ref>{{harvnb|Kassian|2010|p=206}}</ref>  However, none of these proposals are generally accepted.<ref>{{harvnb|Wilhelm|2008|p=81}}</ref>
+
+==History==
+The earliest Hurrian text fragments consist of lists of names and places from the end of the third millennium BC. The first full texts date to the reign of King [[Tish-atal]] of [[Urkesh]], at the start of the second millennium BC, and were found on a stone tablet accompanying the [[Hurrian foundation pegs]] known as the "Urkish lions".<ref name="louvre">{{cite web|url=http://www.louvre.fr/en/oeuvre-notices/hurrian-foundation-deposit-known-urkish-lion|title=A Hurrian foundation deposit known as the "Urkish Lion"|first1=Claire|last1=Iselin|last2=André-Salvini|first2=Béatrice|publisher=[[Musée du Louvre]]|access-date=2 December 2012|archive-date=17 October 2012|archive-url=https://web.archive.org/web/20121017141858/http://www.louvre.fr/en/oeuvre-notices/hurrian-foundation-deposit-known-urkish-lion|url-status=dead}}</ref> Archeologists have discovered the texts of numerous spells, incantations, prophecies and letters at sites including [[Hattusha]], [[Mari, Syria|Mari]], [[Tuttul]], [[Babylon]], [[Ugarit]] and others. Early study of the language, however, was entirely based on the [[Mitanni Letter]], found in 1887 at [[Amarna]] in Egypt, written by the Hurrian King [[Tushratta]] to the Pharaoh [[Amenhotep III]]. The Hurro-Urartian relation was recognized as early as 1890 by Sayce (ZA 5, 1890, 260–274) and Jensen (ZA 6, 1891, 34–72). After the fall of the [[Akkadian Empire]], [[Hurrians]] began to settle in northern [[Syria (region)|Syria]],{{sfn|Owen|2000|p=[https://books.google.com/books?id=qRtUqxkB7wkC&pg=PA618 618]}} and by 1725&nbsp;BC they constituted a sizable portion of the population of [[Yamhad]].{{sfn|Nathanson|2013|p=[https://books.google.com/books?id=odCmAQAAQBAJ&pg=PA72 72]}}{{better source needed|date=July 2023|reason=Self published  work by former surgeon and amateur historian}} The presence of a large Hurrian population brought Hurrian culture and religion to [[Aleppo]], as evidenced by the existence of certain religious festivals that bear Hurrian names.{{sfn|Kupper|1973|p=[https://books.google.com/books?id=FF5-7JVj4jYC&pg=PA41 41]}}
+
+[[File:Foundation tablet, dedication to God Nergal by Hurrian king Atalshen, king of Urkish and Nawar, Habur Bassin, circa 2000 BC Louvre Museum AO 5678.jpg|thumb|upright=1.5|Foundation tablet with a dedication to the god [[Nergal]] by the Hurrian king Atalshen, king of Urkish and Nawar, [[Habur]] Bassin, circa 2000 BC. (Louvre Museum AO 5678.) The text on the tablet reads:<blockquote>Of Nergal the lord of Hawalum, Atal-shen, the caring shepherd, the king of Urkesh and Nawar, the son of Sadar-mat the king, is the builder of the temple of Nergal, the one who overcomes opposition. Let [[Shamash]] and [[Ishtar]] destroy the seeds of whoever removes this tablet. Shaum-shen is the craftsman.<ref>{{cite web |title=Royal inscriptions |url=http://urkesh.org/pages/571.htm |website=urkesh.org}}</ref></blockquote>]]
+In the thirteenth century BC, invasions from the west by the Hittites and from the south by the [[Assyria]]ns brought the end of the Mitanni empire, which was divided between the two conquering powers. In the following century, attacks by the [[Sea Peoples]] brought a swift end to the last vestiges of the Hurrian language. It is around this time that other languages, such as the [[Hittite language]] and the [[Ugaritic language]], also became extinct, in what is known as the [[Bronze Age collapse]]. In the texts of these languages, as well as those of [[Akkadian language|Akkadian]] or Urartian, many Hurrian names and places can be found.
+
+Renewed interest in Hurrian was triggered by texts discovered in [[Boğazkale|Boğazköy]] in the 1910s and Ugarit in the 1930s. In 1941, Speiser published the first comprehensive grammar of Hurrian. Since the 1980s, the [[Nuzi]] corpus from the archive of Šilwa-Teššup has been edited by G. Wilhelm. Since the late 1980s, significant progress was made due to the discovery of a Hurrian-Hittite bilingual, edited by E. Neu ([[StBoT]] 32).
+
+==Dialects==
+The Hurrian of the Mitanni letter differs significantly from that used in the texts at Hattusha and other Hittite centers, as well as from earlier Hurrian texts from various locations. The non-Mitanni letter varieties, while not entirely homogeneous, are commonly subsumed under the designation ''Old Hurrian''. Whereas in Mitanni the vowel pairs ''i''/''e'' and ''u''/''o'' are differentiated, in the Hattusha dialect they have merged into ''i'' and ''u'', respectively. There are also differences in morphology, some of which are mentioned in the course of the exposition below. Nonetheless, it is clear that these represent [[dialects]] of one language. Another Hurrian dialect is likely represented in several texts from Ugarit, but they are so poorly preserved that little can be said about them, except that spelling patterns used elsewhere to represent Hurrian phonemes are virtually ignored in them. There was also a Hurrian-Akkadian creole, called [[Nuzi]], spoken in the Mitanni provincial capital of [[Arrapha]].
+
+==Phonology==
+===Consonants===
+{| class="wikitable"
+|+Consonant phonemes of Hurrian
+! &nbsp;
+![[Labial consonant|Labial]]
+![[alveolar consonant|Alveolar]]
+![[palatal consonant|Palatal]]
+![[velar consonant|Velar]]
+|- align=center
+![[Nasal stop|Nasal]]
+| {{IPA link|m}}
+| {{IPA link|n}}
+|
+|
+|- align=center
+![[Plosive consonant|Plosive]]
+| {{IPA link|p}}
+| {{IPA link|t}}
+|
+| {{IPA link|k}}
+|- align=center
+![[affricate consonant|Affricate]]
+|
+| ({{IPA link|ts}})
+|
+|
+|- align=center
+![[fricative consonant|Fricative]]
+| {{IPA link|f}}
+| {{IPA link|s}}
+|
+| {{IPA link|x}}
+|- align=center
+![[approximant consonant|Approximant]]
+| {{IPA link|w}}
+|
+| {{IPA link|j}}
+|
+|- align=center
+![[Rhotic consonant|Rhotic]]
+|
+|r
+|
+|
+|- align="center"
+![[lateral consonant|Lateral]]
+|
+| {{IPA link|l}}
+|
+|
+|}
+
+As can be seen from the table, Hurrian did not possess a [[voiced]]-[[voiceless]] distinction. There is no voiced consonant with an unvoiced counterpart, nor vice versa. However, based on evidence from the cuneiform script, there seem to have been voiced [[allophones]] of consonants other than /ts/, which occurred in certain environments: between two voiced phonemes (sonorants or vowels), and, surprisingly, also word-finally.<ref>{{harvnb|Wilhelm|2008|p=85}}</ref> Sometimes a voiced consonant is written in these situations, i.e. ''b'' (for ''p''), ''d'' (for ''t''), ''g'' (for ''k''), ''v'' (for ''f'') or ''ž'' (for ''š''), and, very rarely, ''ǧ'' (for ''h'', ''ḫ''). All consonants except /w/ and /j/ can be long or short. The long ([[geminate]]) consonants occur only between vowels. In the cuneiform, as in the Latin transcription, geminated consonants are indicated by doubling the corresponding symbol, so ''...VC-CV..''. Short consonants are written ''...V-CV...'', for example ''mānnatta'' ("I am") is written ''ma-a-a'''n-n'''a-a'''t-t'''a''.
+
+Since /f/ was not found in the [[Sumerian cuneiform]] script, the Hurrians used the symbols representing /p/, /b/ or /w/. An /f/ can be recognised in words where this transcription varies from text to text. In cases where a word occurs only once, with a ''p'', it cannot be known if it was originally meant to represent a /p/ or an /f/. In final syllables containing ''a'', /f/ becomes diphthongised to /u/, e.g. ''tānōšau'' (&lt;*tān-ōš-af)) "I did". /s/ is traditionally transcribed by /š/, because the cuneiform script adapted the sign indicating /š/ for this phoneme. /ts/ is regularly transcribed by ''z'', and /x/ by ''ḫ'' or ''h''. In Hurrian, /r/ and /l/ do not occur at the beginning of a word.
+
+===Vowels===
+{| class="wikitable"
+|-
+!
+![[Front vowel|Front]]
+![[Central vowel|Central]]
+![[Back vowel|Back]]
+|- align=center
+![[Close vowel|Close]]
+|{{IPA link|i}} || || {{IPA link|u}}
+|- align=center
+![[Mid vowel|Mid]]
+|{{IPA link|e}} || || {{IPA link|o}}
+|- align=center
+![[Open vowel|Open]]
+| || {{IPA link|a}} ||
+|}
+
+Vowels, just like consonants, can be either long or short. In the cuneiform script, this is indicated by placing an additional vowel symbol between the ''CV'' and ''VC'' syllables, giving ''CV-V-VC''. Short vowels are indicated by a simple ''CV-VC'' pairing. In the Latin transcription, long vowels are indicated with a macron, ''ā'', ''ē'', ''ī'', ''ō'', and ''ū''. For /o/, which is absent in the Sumerian script, the sign for ''U'' is used, whereas /u/ is represented by ''Ú''.
+
+==Grammar==
+===Word derivation===
+While Hurrian could not combine multiple stems to form new stems, a large number of [[suffix]]es could be attached to existing stems to form new words. For example, ''attardi'' (ancestor) from ''attai'' (father), ''futki'' (son) from ''fut'' (to beget), ''aštohhe'' (feminine) from ''ašti'' (woman). Hurrian also provided many verbal suffixes, which often changed the [[valency (linguistics)|valency]] of the verb they modify.
+
+===Morphology===
+====Nominal morphology====
+The nominal morphology of Hurrian employs numerous suffixes and/or enclitics, which always follow a certain order. The resulting "morpheme chain" is as follows:<ref>{{harvnb|Wegner|2000|pp=46–65}}</ref><ref>{{harvnb|Wilhelm|2008|p=88}}</ref>
+{| class="wikitable"
+! colspan="3" |1
+!2
+!3
+!4
+!5
+!6
+!7
+!8
+!9
+!10
+!11
+|-
+|[[Root (linguistics)|Root]]
+|[[Nominalization|Nominalizers]] (for verbs)
+|[[Thematic vowel]]
+|[[Derivational affix|Derivational Suffixes]]
+|[[Article (linguistics)|Article]]
+|[[Clitic|Possessive Pronoun Clitics]]
+|[[Plural]]
+|[[Grammatical case|Case]]
+|[[Anaphora (linguistics)|Anaphoric]]
+|[[Plural (grammar)|Plural]] (SA)
+|[[Grammatical case|Case]] (SA)
+|[[Clitic|Absolutive Pronoun Clitics]]
+|[[Enclitic|Enclitic Particles & Conjunctions]]
+|}
+<blockquote>Note: (SA) indicates morphemes added through [[Suffixaufnahme]], described below.</blockquote>These elements are not all obligatory, and in fact a noun can occur as a single root followed by nothing except zero-suffixes for case and number. Despite the general [[Agglutination|agglutinative]] structure of the language, the plural marker (5) merges with the case morphemes (6) in ways which do not seem to be entirely predictable, so singular and plural forms of the case endings are usually listed separately. The anaphoric marker (7) is formally identical to the article and anchors the Suffixaufnahme suffixes (8) and (9). While the absolutive pronoun clitics (10) attached to a noun are not necessarily connected to it syntactically, typically designating the object or intransitive subject of a nearby verb, the third plural pronoun clitic ''-lla'' can be used to signal the plural of the host noun in the absolutive.
+
+===== Thematic vowels =====
+Almost all Hurrian [[nouns]] end in a vowel, known as a ''[[thematic vowel]]'' or ''[[Stem (linguistics)|stem]] vowel''. This vowel will always appear on the word, and will not switch between types. Most nouns end with {{IPAslink|i}}; a few end with {{IPAslink|a}} (mostly words for relatives and divine names) and {{IPAslink|e}} (a few suffix derivations, possibly the same as /i/-stems).<ref>{{harvnb|Wilhelm|2008|pp=88, 90–91}}</ref> As well, in texts from [[Nuzi]], stems of {{IPAslink|u}} (or {{IPAslink|o}}?) are found, mainly on non-Hurrian names and a few Hurrian ones.
+
+This stem-final vowel disappears when certain endings are attached to it, such as case endings that begin with a vowel, certain derivational suffixes, or the [[Article (linguistics)|article]] suffix. Examples: ''kāz-ōš'' (like a cup) from ''kāzi'' (cup), ''awarra'' (the fields) from ''awari'' (field).
+
+A minority of Hurrian noun [[Root (linguistics)|roots]] have athematic stem vowels, such as ''šen'' (brother) in the forms ''šena'' and ''-šenni'', ''mad'' (wisdom; later becomes ''i''-stem in the form ''madi''), and ''muž'' (divine name). Some names of gods, heroes, persons and places are also athematic, e.g. [[Teshub|Teššob]] (Teššobi/a), [[Gilgamesh|Gilgaamiž]], [[Šeri and Ḫurri|Hurriž]] (later Hurri). These nouns seem to occur more frequently in the earliest Hurrian texts (end of the [[3rd millennium BC|third millennium BC]]).
+
+Note: This type of thematic stem vowel is completely different in function to Indo-European stem vowels. For a discussion of those, see [[Proto-Indo-European language|here]] and [[Proto-Indo-European phonology|here]].
+
+=====Case and number=====
+Hurrian has 13 [[Grammatical case|cases]] in its system of declension. One of these, the [[equative case]], has a different form in both of the main dialects. In Hattusha and Mari, the usual ending is ''-oš'', termed [[Equative case|equative&nbsp;I]], whereas in the Mitanni letter we find the form ''-nna'', called equative II. Another case, the so-called 'e-case', is very rare, and carries a [[genitive]] or [[allative]] meaning.
+[[File:Ergative alignment.svg|alt=A diagram with S and O circled together, with "A" off to the side.|thumb|In ergative languages like Hurrian, the subject (S) of an intransitive verb shares similarities with the object (O) of a transitive verb.|class=skin-invert-image]]
+Like many languages in the region, Hurrian is an [[ergativity|ergative]] language, which means that the same case is used for the [[Subject (linguistics)|subject]] of an [[intransitive verb]] as for the [[Object (linguistics)|object]] of a transitive one; this case is called the [[absolutive]]. For the subject of a transitive verb, however, the [[ergative case]] is used. Hurrian has two numbers, singular and plural. The following table outlines the case endings (the terms used for some of the more obscure cases vary between different authors).
+
+{| class="wikitable"
+|-
+! Case
+! Singular
+! Plural
+|-
+| style="background:#eee;"| '''[[Absolutive case|Absolutive]]''' || ''-Ø'' || ''-Ø'', ''-lla''
+|-
+| style="background:#eee;"| '''[[Ergative case|Ergative]]''' || ''-š'' || ''-(a)šuš''
+|-
+| style="background:#eee;"| '''[[Genitive case|Genitive]]''' || ''-fe'', ''-we'' || ''-(a)še''
+|-
+| style="background:#eee;"| '''[[Dative case|Dative]]''' || ''-fa'', ''-wa'' || ''-(a)ša''
+|-
+| style="background:#eee;"| '''[[Essive case|Essive]]'''<ref>{{harvnb|Wilhelm|2008|p=94}}</ref><ref name=wegnercase/><br/>(''in, at ...'') || ''-a'' || ''-(a)ša'', ''-a''
+|-
+| style="background:#eee;"| '''[[Allative case|Allative]]'''<br/>(''to ...'') || ''-ta'' || ''-(a)šta''
+|-
+| style="background:#eee;"| '''[[Ablative case|Ablative]]'''<br/>(''from ...'') || ''-tan'' || ''-(a)štan''
+|-
+| style="background:#eee;"| '''[[Instrumental case|Instrumental]]'''<br/>(''with ...'') || ''-ae'' || unattested
+|-
+| style="background:#eee;"| '''Ablative-Instrumental'''<br/>(''through/by ...'') || ''-n(i)'', ''-ne'' || ''-(a)šani'', ''-(a)šane''
+|-
+| style="background:#eee;"| '''[[Comitative case|Comitative]]'''<br/>(''together with ...'') || ''-ra'' || ''-(a)šura''
+|-
+| style="background:#eee;"| '''[[Associative case|Associative]]'''<br/>(''as ...'') || ''-nn(i)'' || unattested<br/>(often extrapolated ''-(a)šunn(i)'')
+|-
+| style="background:#eee;"| '''[[Equative case|Equative]] I'''<br/>(''like ...'') || ''-ōš'' || unattested
+|-
+| style="background:#eee;"| '''Equative II''' || ''-nna'' || ''-(a)šunna''
+|-
+| style="background:#eee;"| ''''e-Case'''' || ''-ē'' || unattested
+|}
+
+In certain phonological environments, these endings can vary. The ''f'' of the genitive and dative endings merges with a preceding ''p'' or ''t'' giving ''pp'' and ''tt'' respectively, e.g. ''Teššuppe'' (of Teššup), ''Hepat-te'' (of [[Ḫepat]]). The associative can be combined with the instrumental, as in ''šēna-nn-ae'' (brother-{{small|ASS.INSTR}}), meaning 'brotherly'.
+
+The so-called [[essive case]] can convey the meaning "as" and a condition, but also to express direction, the aim of a demand, the transition from one condition to another, the [[direct object]] in [[antipassive]] constructions (where the transitive subject receives the absolutive case instead of the ergative), and, in the variety of [[Nuzi]], also the dative.<ref name=wegnercase>{{harvnb|Wegner|2000|pp=56–57}}</ref>
+
+=====The article=====
+{| class="wikitable"
+|-
+! Case
+! Singular
+! Plural
+|-
+| style="background:#eee;"| '''Absolutive''' || ''-Ø'' || rowspan="2" style="vertical-align:middle;"| ''-na''
+|-
+| style="background:#eee;"| all other cases || ''-ne''
+|}
+
+In Hurrian, the function of the so-called "[[Article (grammar)|article]]" is not entirely clear, inasmuch as its use does not seem to resemble closely a typical [[definite article]].<ref>{{harvnb|Wegner|2000|pp=54–55}}</ref> It is attached directly to the noun, but before any case endings, e.g. ''tiwē-na-še'' (object.''art''.''gen.pl'') (of the objects). The article is unmarked in the absolutive singular – e.g. ''kāzi'' 'cup'. The /n/ of the article merges with a preceding {{IPAslink|n}}, {{IPAslink|l}} or {{IPAslink|r}} giving /nn/, /ll/ and /rr/ respectively, e.g. ''ēn-na'' (the gods), ''ōl-la'' (the others), ''awar-ra'' (the fields). In these cases, the stem-final vowel {{IPAslink|i}} has been dropped; the singulars of these words are ''ēni'' (god), ''ōli'' (another), ''awari'' (field). If there are two consonants preceding the final /i/, an epenthetic vowel {{IPAslink|u}} is inserted between them, e.g. ''hafur'''u'''n-ne-ta'' (heaven-{{small|ART-ALL.SG}}, to heaven), the stem of which is ''[[Earth and Heaven (Hurrian religion)|hafurni]]'' (heaven).
+
+=====Suffixaufnahme=====
+One prominent feature of Hurrian is the phenomenon of [[Suffixaufnahme]], or suffix absorption, which it shares with Urartian and the geographically proximate [[Kartvelian languages]]. In this process, the dependent modifiers of a noun share the noun's case suffixes. Between the suffix of the dependent noun and the case ending comes the article, which agrees with the referent in number, for example, with an adjective:
+
+{{interlinear|number=ex:|glossing2=no|glossing3=yes
+|ḫurwoḫḫeneš ōmīnneš
+|ḫurw-oḫḫe-ne-š ōmīn-ne-š
+|Hurrian-ADJ-ART.SG-ERG.SG land-ART.SG-ERG.SG
+|"the Hurrian land"
+}}
+
+Suffixaufnahme also occurs with other modifiers, such as a noun in the genitive modifying another noun, in which case the following noun takes a possessive pronoun.
+
+{{interlinear|number=ex:|glossing2=no|glossing3=yes
+|šēniffufenefe ōmīnīfe
+|šēn-iffu-fe-ne-fe ōmīni-i-fe
+|brother-my-GEN.SG-ART.SG-GEN.SG land-his-GEN.SG
+|"of the land of my brother" (lit, "of my brother his land")
+}}
+
+The phenomenon is also found when the head noun is in the locative, instrumental or equative. In the absolutive singular, Suffixaufnahme would be meaningless, as the case and number are unmarked. When more than two genitives occur, they are merged, so Suffixaufnahme only occurs on the innermost genitive, as in the following example:
+
+{{interlinear|number=ex:|glossing2=no|glossing3=yes
+|ōmīni Mizrinefenefe efrīfe aštīnna
+|ōmīni Mizri-ne-fe-ne-fe efri-i-fe ašti-i{{=}}nna
+|country Egypt-ART.SG-GEN.SG-ART.SG-GEN.SG ruler-its-GEN.SG lady-his{{=}}she
+|"she is the lady of the ruler of the country [[Ancient Egypt|Egypt]]"
+}}
+
+===Verbal morphology===
+The verbal morphology of Hurrian is extremely complex, but it is constructed only through the affixation of suffixes (indicated by '-') and [[clitic]]s (indicated by '='). Hurrian clitics stand for unique words, but are attached to other words as though they were suffixes. [[transitive verb|Transitivity]] and [[Intransitive verb|intransitivity]] are clearly indicated in the morphology; only transitive verbs take endings that agree with the person and number of their subject. The direct object and intransitive subject, when they are not represented by an independent noun, are expressed through the use of clitics, or pronouns (see below). Moreover, suffixes can be added to the verb stem that modify its meaning, including [[Valency (linguistics)|valency]]-changing morphemes such as ''-an(n)--'' ([[causative]]), ''-ant'' ([[Applicative voice|applicative]]) and ''-ukar'' ([[reciprocative]]). The meanings of many such suffixes have yet to be decoded.
+
+The "morpheme chain" of the verb is as follows:<ref>{{harvnb|Wegner|2000|pp=75–79}}</ref> 
+{| class="wikitable"
+!1
+!2
+!3
+!4
+!5
+!6
+!7
+!8
+!9
+!10
+!11
+|-
+| rowspan="2" |[[Root (linguistics)|Root]]
+| rowspan="2" |[[Derivational morphology|Derivational Suffixes]]
+| rowspan="2" |[[Tense–aspect–mood|Tense/Aspect]]
+| rowspan="2" |Non-Present Intransitive
+|''-imbu-''
+|[[Valency (linguistics)|Valency]]
+| rowspan="2" |[[Negation (linguistics)|Negation]]
+| rowspan="2" |[[Agreement (linguistics)#Person|Ergative Person]]
+| rowspan="2" |[[Agreement (linguistics)#Number|Ergative Number]]
+| rowspan="2" |[[Clitic|Absolutive Pronoun Clitics]]
+| rowspan="2" |[[Enclitic|Enclitic Particles & Conjunctions]]
+|-
+| colspan="2" |Ergative 3PL ''-it-'' (OH)
+|}
+As with the noun, not all of these elements must be present in each verb form, and indeed some of them are mutually incompatible. The marker -t- in position (4) may indicate intransitivity in non-present tenses. Position (5) may carry the suffix ''-imbu-'' (5) of unclear function or the ergative third-person plural suffix ''-it-'' , which is only attested in Old Hurrian.<ref name="wegnerOH" /> Valency suffixes (6) indicated the intransitive, transitive, or antipassive. The negative suffixes (7), the ergative person suffixes (8), and the ergative number suffixes (9) merge in ways which are not entirely predictable, so the person endings are usually listed in separate singular and plural versions. The absolutive person-number enclitics that may appear in slot (11) can also appear on other words in the sentence and are the same ones which were listed above in section ''[[Hurrian language#Personal pronouns|Personal pronouns]]''.
+
+==== Indicative mood ====
+After the derivational suffix come those marking [[Grammatical tense|tense]]. The [[present tense]] is unmarked, the [[preterite]] is marked by ''-ōš'' and the [[future tense|future]] by ''ēt''. The preterite and future suffixes also include the suffix ''-t'', which indicates intransitivity, but occurs only in truly intransitive forms, not in [[antipassive]] ones; in the present, this suffix never occurs. Another, separate, ''-t'' suffix is found in all tenses in transitive sentences – it indicates a 3rd person plural subject. In the [[indicative mood|indicative]] this suffix is mandatory, but in all other moods it is optional. Because these two suffixes are identical, ambiguous forms can occur; thus, ''unētta'' can mean "they will bring [something]" or "he/she/it will come", depending on the context.
+
+After these endings come the vowel of transitivity. It is ''-a'' when the verb is intransitive, ''-i'' when the verb is in the antipassive and ''-o'' (in the Mitanni letter, ''-i'') in transitive verbs. The suffix ''-o'' is dropped immediately after the derivational suffixes. In transitive verbs, the ''-o'' occurs only in the present, while in the other tenses transitivity is instead indicated by the presence (or absence) of the aforementioned ''-t'' suffixes.
+
+In the next position, the suffix of negation can occur; in transitive sentences, it is ''-wa'', whereas in intransitive and antipassive ones it is ''-kkV''. Here, the V represents a repetition of the vowel that precedes the negative suffix, although when this is /a/, both vowels become /o/. When the negative suffix is immediately followed by a clitic pronoun (except for ''=nna''), its vowel is /a/, regardless of the vowel that preceded it, e.g. ''mann-o-kka=til=an'' (be-''intr''-''neg''-''1.pl.abs''-and), "and we are not...". The following table gives the tense, transitivity and negation markers:
+
+{| class="wikitable"
+|-
+! Transitivity
+! &nbsp;
+! Present
+! Preterite
+! Future
+|-
+| rowspan="2"| intransitive
+| affirmative
+| ''-a''
+| ''-ōšta''
+| ''-ētta''
+|-
+| negative
+| ''-okko''
+| ''-ōštokko''
+| ''-ēttokko''
+|-
+| rowspan="2"| antipassive
+| affirmative
+| ''-i''
+| ''-ōši''
+| ''-ēti''
+|-
+| negative
+| ''-ikki''
+| ''-ōšikki''
+| ''-ētikki''
+|-
+| rowspan="2"| transitive<br/>without derivational suff.
+| affirmative
+| Mari/Hattusha ''-o''<br/>Mitanni ''-i''
+| Mari/Hattusha ''-ōšo''<br/>Mitanni ''-ōši''
+| Mari/Hattusha ''-ēto''<br/>Mitanni ''-ēti''
+|-
+| negative
+| Mari/Hattusha ''-owa''<br/>Mitanni ''-iwa''
+| Mari/Hattusha ''-ōšowa''<br/>Mitanni ''-ōšiwa''
+| Mari/Hattusha ''-ētowa''<br/>Mitanni ''-ētiwa''
+|-
+| rowspan="2"| transitive<br/>with derivational suff.
+| affirmative
+| ''-Ø''
+| Mari/Hattusha ''-ōšo''<br/>Mitanni ''-ōši''
+| Mari/Hattusha ''-ēto''<br/>Mitanni ''-ēti''
+|-
+| negative
+| ''-wa''
+| Mari/Hattusha ''-ōšowa''<br/>Mitanni ''-ōšiwa''
+| Mari/Hattusha ''-ētowa''<br/>Mitanni ''-ētiwa''
+|}
+
+After this, in transitive verbs, comes the ergative subject marker. The following forms are found:
+
+{| class="wikitable"
+|-
+!&nbsp;
+!1st person<br/>singular
+!1st person<br/>plural
+!2nd person<br/>singular
+!2nd person<br/>plural
+!3rd person<br/>sing/pl
+|-
+| with ''-i''<br/>(transitive)<br/>(only Mitanni)
+| ''-af'',<br/>''-au''
+| ''-auša''
+| ''-i-o''
+| ''-*aššo'',<br/>''-*aššu''
+| ''-i-a''
+|-
+| with ''-wa''<br/>(negated)
+| ''-uffu''
+| ''-uffuš(a)''
+| ''-wa-o''
+| ''-uššu''
+| ''-wa-a''
+|-
+| with other morphemes<br/>(no merging)
+| ''-...-af'',<br/>''-...-au''
+| ''-...-auša''
+| ''-...-o''
+| ''-...-aššo'',<br/>''-...-aššu''
+| ''-...-a''
+|}
+
+The suffixes of the first person, both plural and singular, and the second person plural suffix merge with the preceding suffixes ''-i'' and ''-wa''. However, in the Mari and Hattusha dialects, the suffix of transitivity ''-o'' does not merge with other endings. The distinction between singular and plural in the third person is provided by the suffix ''-t'', which comes directly after the tense marker. In the third person, when the suffix ''-wa'' occurs before the subject marker, it can be replaced by ''-ma'', also expressing the negative: ''irnōhoš-i-ā-ma'', (like-''trans''-''3rd''-''neg'') "He does not like [it]".
+
+In the Old Hurrian of Hattusha the ending of the third person singular ergative subject was ''-m''. A third person ''plural'' ergative subject was marked with the suffix ''-it-'', which, however, unlike the other ergative endings, occurred ''before'' instead of ''after'' the transitivity vowel: contrast ''uv-o-m'' "she slaughtered" with ''tun-it-o'' "they forced".<ref name=wegnerOH>{{harvnb|Wegner|2000|pp=110–113}}</ref><ref>{{harvnb|Wilhelm|2008|p=98}}</ref><ref>{{Harvnb|Дьяконов|1967}}: [[Igor Diakonoff]] cites the suffix as ''-ido-'', but also located it before the slot of the transitivity vowel ''-o-'' – an interpretation which is also justified by the place of the corresponding suffix in the related [[Urartian language]].</ref> In the intransitive and antipassive, there was also a subject marker, ''-p'' for the third person but unmarked for the others. It is unknown whether this suffix was also found on transitive objects.
+
+If a verb form is nominalised, e.g. to create a [[relative clause]], then another suffix is used: ''-šše''. Nominalised verbs can undergo Suffixaufnahme. Verb forms can also take other enclitic suffixes; see the section ''[[Hurrian language#Enclitic particles|Enclitic particles]]'' below.
+
+For a list of the enclitics that mark the person and number of the absolutive participant, see the section ''[[Hurrian language#Personal pronouns|Personal pronouns]]'' above.
+
+==== Other moods ====
+To express nuances of [[grammatical mood]], several special verb forms are used, which are derived from the indicative (non-modal) forms. Wishes and commands are formed with an [[optative]] system, whose principal characteristic is the element ''-i'', which is attached directly to the verb stem. There is no difference between the form for transitive and intransitive verbs, there being agreement with the subject of the sentence. Tense markers are unchanged in the optative.
+
+{| class="wikitable" 
+|-
+! Person
+! Number
+! Negation
+! Ending
+! Meaning
+|-
+! rowspan="3" | 1st person
+! rowspan="2" | singular
+! affirmative
+| ''-ile'', after /l/ or /r/, ''-le'' and ''-re''
+| "I want to..."
+|-
+! negative
+| ''-ifalli''
+| "I do not want to..."
+|-
+! plural
+! 
+| colspan="2" | unattested
+|-
+! rowspan="4" | 2nd person
+! rowspan="2" | singular
+! affirmative
+| ''-i'', ''-e''
+| "you will ([[Imperative mood|imperative]])
+|-
+! negative
+| ''-ifa'', ''-efa''
+| "you will not..."
+|-
+! rowspan="2" | plural
+! affirmative
+| ''-i(š)'', ''-e(š)''
+| "you will..."
+|-
+! negative
+| ''-ifa(š)'', ''-efa(š)''
+| "you will not..."
+|-
+! rowspan="4" | 3rd person
+! rowspan="2" | singular
+! affirmative
+| ''-ien''<sup>1</sup>
+| "he/she/it can..."
+|-
+! negative
+| ''-ifaen''<sup>1</sup>
+| "he/she/it cannot..."
+|-
+! rowspan="2" | plural
+! affirmative
+| ''-iten''<sup>1</sup>
+| "may they..."
+|-
+! negative
+| ''-itfaen''<sup>1</sup>
+| "may they not..."
+|}
+
+<sup>1</sup>&nbsp;In the optative forms of the third person, the /n/ ending is present in the Mari/Hattuša dialect when the following word begins with a consonant.
+
+The so-called final form, which is needed to express a purpose ("in order to"), has different endings. In the singular, the suffixes ''-ae'', ''-ai'', ''-ilae'' and ''-ilai'' are found, which after /l/ and /r/ become ''-lae''/''-lai'' and ''-rae''/''rai'' respectively. In the plural the same endings are used, although sometimes the plural suffix ''-ša'' is found as well, but this is not always the case.
+
+To express a possibility, the potential form must be used. For intransitive verbs, the ending is ''-ilefa'' or ''olefa'' (''-lefa'' and ''-refa'' after /l,r/), which does not need to agree with the subject. Transitive potential forms are formed with ''-illet'' and ''-allet'', which are suffixed to the normal endings of the transitive indicative forms. However, this form is only attested in Mitanni and only in the third person. The potential form is also occasionally used to express a wish.
+
+The desiderative form is used to express an urgent request. It is also only found in the third person, and only with transitive verbs. The ending for the third person singular is ''-ilanni'', and for the plural, ''-itanni''.
+
+==== Examples of finite verb forms ====
+The following tables give examples of verb forms in various syntactic environments, largely from the Mitanni letter:
+
+<section begin="list-of-glossing-abbreviations" /><div style="display:none;">
+TRANS:transitive verb
+</div><section end="list-of-glossing-abbreviations" />
+{| class="wikitable"
+|-
+!Ex.
+!Form
+|-
+!(4)
+| {{interlinear|koz-ōš-o|restrain-PRET-2SG|"You restrained"}}
+|-
+!(5)
+| {{interlinear|pal-i-a-mā-šše{{=}}mān|know-TRANS-''3rd''-NEG-NOM{{=}}but|"..., but which he doesn't know"}}
+|-
+!(6)
+| {{interlinear|pašš-ēt-i{{=}}t{{=}}ān šeniffuta|send-FUT-ANTIP{{=}}1SG.ABS{{=}}and to.my.brother|"and I will send to my brother"}}
+|-
+!(7)
+| {{interlinear|tiwēna tān-ōš-au-šše-na-Ø|the.things do-PRET-1SG-NOM-ART.PL-ABS|"the things I've done"}}
+|-
+!(8)
+| {{interlinear|ūr-i-uffu{{=}}nna{{=}}ān|want-TRANS-NEG+1SG{{=}}3PL.ABS{{=}}and|"and I don't want it"}}
+|-
+!(9)
+| {{interlinear|itt-ōš-t-a|go-PRET-INTR-INTR|"I went, you went, ..."}}
+|-
+!(10)
+| {{interlinear|kul-le|say-OPT.1SG|"I want to say"}}
+|-
+!(11)
+| {{interlinear|pašš-ien|send-OPT.3SG|"may he send"}}
+|-
+!(12)
+| {{interlinear|pal-lae{{=}}n|know-{{gcl|FINAL|final verbal aspect}}-3SG.ABS|"so he knows"}}
+|-
+!(13)
+| {{interlinear|kepānol-lefa{{=}}tta{{=}}ān|send-POT{{=}}1SG.ABS{{=}}and|"and I might send"}}
+|}
+
+==== Infinitive verb forms ====
+Infinitive forms of the verb in Hurrian include both nominalised verbs ([[participles]]) and a more conventional [[infinitive]]. The first nominalised participle, the present participle, is characterised by the ending ''-iri'' or ''-ire'', e.g. ''pairi'', "the one building, the builder", ''hapiri'', "the one moving, the nomad". The second nominalised participle, the perfect participle, is formed with the ending ''-aure'', and is only attested once, in Nuzi: ''hušaure'', "the bound one". Another special form is only found in the dialect of Hattusha. It can only be formed from transitive verbs, and it specifies an agent of the first person. Its ending is ''-ilia'', and this participle can undergo Suffixaufnahme.
+
+{{interlinear|number=ex:|glossing2=no|glossing3=yes
+|pailianeš šuḫnineš
+|pa-ilia-ne-š šuḫni-ne-š
+|build-I.PRET.PTCP-ART.SG-ERG.SG wall-ART.SG-ERG.SG
+|"the wall built by me" (here in the ergative, so a subject of a transitive verb)
+}}
+
+The infinitive, which can also be found nominalised, is formed with the suffix ''-umme'', e.g. ''fahrumme'', "to be good", "the state/property of being good"
+
+===Pronouns===
+====Personal pronouns====
+Hurrian uses both enclitic and independent personal pronouns. The independent pronouns can occur in any case, whereas the enclitic ones represent only the absolutive. It is irrelevant to the meaning of the sentence to which word in the sentence the enclitic pronoun is attached, so it is often attached either to the first phrase or to the verb. The following table gives the attested forms of the personal pronouns, omitting those that cannot be determined.
+
+{| class="wikitable"
+|- style="background:#c0f070;"
+! Case
+! 1st Singular<br/>(''I'')
+! 2nd Singular<br/>(''you'')
+! 3rd Singular<br/>(''he/she/it'')
+! 1st Plural<br/>(''we'')
+! 2nd Plural<br/>(''you'')
+! 3rd Plural<br/>(''they'')
+|-
+| style="background:#eee;"| '''Absolutive'''<br/>(indep.) || ''ište'' || ''fe'' || ''mane'', ''manni'' || ''šattil'', ''šattitil(la)'' || ''fella'' || ''manella''
+|-
+| style="background:#eee;"| '''Absolutive'''<br/>(enclit.) || ''-t(ta)'' || ''-m(ma)'' || ''-n(na)'', ''-me'', ''-ma'' || ''-til(la)'' || ''-f(fa)'' || ''-l(la)'', ''-lle''
+|-
+| style="background:#eee;"| '''Ergative''' || ''išaš'' || ''feš'' || ''manuš'' || ''šieš'' || ''fešuš'' || ''manšoš''
+|-
+| style="background:#eee;"| '''Genitive''' || ''šofe'' || ''fefe'' || || || ''feše'' ||
+|-
+| style="background:#eee;"| '''Dative''' || ''šofa'' || ''fefa'' || || ''šaša'' (?) || ''feša'' || ''manša''
+|-
+| style="background:#eee;"| '''Locative''' || || || || || ''feša'' (?) ||
+|-
+| style="background:#eee;"| '''Allative''' || ''šuta'' || || || ''šašuta'' (?) || ||
+|-
+| style="background:#eee;"| '''Ablative''' || || || ''manutan'' || || ||
+|-
+| style="background:#eee;"| '''Comitative''' || ''šura'' || || ''manura'' || || || ''manšura'', ''manšora''
+|-
+| style="background:#eee;"| '''Equative II''' || ''šonna'' || || ''manunna'' || || ||
+|}
+
+The variant forms ''-me'', ''-ma'' and ''-lle'' of the third person absolutive pronouns only before certain conjunctions, namely ''ai'' (when), ''inna'' (when), ''inu'', ''unu'' (who), ''panu'' (though), and the relative pronouns ''iya'' and ''iye''. When an enclitic personal pronoun is attached to a noun, an extensive system of sound changes determines the final form. The enclitic ''-nna'' of the third person singular  behaves differently from the other pronouns: when it is preceded by an ergative suffix it, unlike the other pronouns, combines with the suffix to form ''šša'', whereas with all other pronouns the ''š'' of the ergative is dropped. Moreover, a word-final vowel /i/ changes to /e/ or /a/ when any enclitic pronoun other than ''-nna'' is attached.
+
+====Possessive pronouns====
+The Hurrian [[possessive pronoun]]s cannot occur independently, but are only enclitic. They are attached to nouns or nominalised verbs. The form of the pronoun is dependent on that of the following morpheme. The table below outlines the possible forms:
+
+{| class="wikitable"
+|- style="background:#c0f070;"
+! Fall
+! 1st Singular<br/>(''my'')
+! 2nd Singular<br/>(''your'')
+! 3rd Singular<br/>(''his/her/its'')
+! 1st Plural<br/>(''our'')
+! 2nd Plural<br/>(''your'')
+! 3rd Plural<br/>(''their'')
+|-
+| word-finally || ''-iffe'' || ''-f'' || ''-i'' || ''-iffaš'' || ''-šše'' || ''-yaš''
+|-
+| before consonants (except /f,w/) || ''-iffu'' || ''-fu'' || ''-i'' || ''-iffaš'' || ''-šu'' || ''-yaš''
+|-
+| before vowels and /f,w/ || ''-iff'' || ''-f'' || ''-i'' || ''-iffaš'' || unattested || ''-yaš''
+|}
+
+The final vowel of the noun stem is dropped before an attached possessive pronoun, e.g. ''šeniffe'' ("my brother", from ''šena'' "brother"). It remains, however, when a consonant-initial pronoun is attached: ''attaif'' ("your father", from ''attai'', "father")
+
+====Other pronouns====
+Hurrian also has several [[demonstrative pronoun]]s: ''anni'' (this), ''anti/ani'' (that), ''akki...aki'' (one...the other). The final vowel /i/ of these pronouns is retained only in the absolutive, becoming /u/ in all other cases, e.g. ''akkuš'' "the one" (erg.), ''antufa'' ("to that [one]"). There are also the relative pronouns ''iya'' and ''iye''. Both forms are freely interchangeable. The pronoun has the function of the absolutive in the relative clause, and so represents an intransitive subject or a transitive object. The interrogative pronoun (who/what) is only attested in the ergative singular (''afeš''), and once in the absolutive singular (''au'').
+
+===Adpositions===
+Hurrian contains many expressions that denote spatial and abstract relations and serve as [[adposition]]s, most of them built on the dative and genitive cases. They are almost exclusively postpositions – only one preposition (''āpi'' + dative, "for"), is attested in the texts from Hattusha. All adpositions can themselves generally be in the allative, rarely in the dative or in the "e-case".
+
+Some examples: ''N-fa āyita'' or ''N-fenē āyē'' (in the presence of; from ''āyi'' "face"). ''N-fa etīta'' or ''N-fa etīfa'' (for, because of; from ''eti'' "body, person"), ''N-fenē etiyē'' (concerning), ''N-fa furīta'' (in sight of; from ''furi'', "sight, look"), and only in Hattusha ''N-fa āpita'' (in front of; from ''āpi'', "front"). Besides these, there is ''ištani'' "space between," which is used with a plural possessive pronoun and the locative, for "between us/you/them", e.g. ''ištaniffaša'' (between us, under us).
+
+===Conjunctions and adverbs===
+Only a few sentence-initial [[particle (linguistics)|particles]] are attested. In contract with nouns, which also end in /i/, the final vowel of the conjunctions ''ai'' (when) and ''anammi'' (therefore) is not dropped before an enclitic personal pronoun. Other conjunctions include ''alaše'' (if), ''inna'' (when), ''inu'' (like) and ''panu'' (although). Hurrian has only a small amount of adverbs. The temporal adverbs are ''henni'' (now), ''kuru'' (again) and ''unto'' (then). Also attested are ''atī'' (thus, so) and ''tiššan'' (very).
+
+===Enclitic particles===
+The enclitic particles can be attached to any word in a sentence, but most often they are attached to the first phrase of the sentence or to the verb. They are much more diverse and frequent in the Mitanni letter than in Old Hurrian. Common ones include ''=ān'' (and), ''=mān'' (but), ''=mmaman'' (to be sure) and ''=nīn'' (truly!).
+
+{{interlinear|number=ex:|glossing2=no|glossing3=yes
+|atīnīn mānnattamān
+|atī{{=}}nīn mānn-a{{=}}tta{{=}}mān
+|so{{=}}truly be-INTR{{=}}1.SG.ABS{{=}}but
+|"But I really am thus"
+}}
+
+===Numbers===
+In addition to the irregular number word ''šui'' (every), all the [[Names of numbers in English|cardinal numbers]] from 1 to 10 as well as a few higher ones are attested. [[Ordinal number (linguistics)|Ordinal numbers]] are formed with the suffix ''-(š)še'' or ''ši'', which becomes ''-ze'' or ''-zi'' after /n/. The following table gives an overview of the numeral system:
+
+{| class="wikitable" 
+!
+! Cardinal<br />number
+! Ordinal<br />number
+|-
+! 1
+| ''šukko,<br />šuki''
+| unattested
+|-
+! 2
+| ''šini''
+| ''šinzi''
+|-
+! 3
+| ''kike''
+| ''kiški''
+|-
+! 4
+| ''tumni''
+| ''tumnušše''
+|-
+! 5
+| ''nariya''
+| ''narišše''
+|-
+! 6
+| ''šeše''
+| unattested
+|-
+! 7
+| ''šinti''
+| ''šintišše''
+|-
+! 8
+| ''kiri,<br />kira''
+| unattested
+|-
+! 9
+| ''tamri''
+| unattested
+|-
+! 10
+| ''ēmani''
+| ''ēmanze''
+|-
+! 13 or 30
+| ''kikmani''
+| unattested
+|-
+! 17 or 70
+| ''šintimani''
+| unattested
+|-
+! 18 or 80
+| ''kirmani''
+| ''kirmanze''
+|-
+! 10000
+| ''nupi''
+| unattested
+|-
+! 30000
+| ''kike nupi''
+| unattested
+|}
+
+Distributive numbers carry the suffix ''-ate'', e.g. ''kikate'' (by threes), ''tumnate'' (by fours). The suffix ''-āmha'' denotes multiplicatives, e.g. ''šināmha'' (twice), ''ēmanāmha'' (thrice). All cardinal numbers end in a vowel, which drops when an enclitic is attached.
+
+===Syntax===
+Hurrian's basic [[word order]] is a matter of dispute. According to Speiser's 1941 grammar, the normal word order of a Hurrian sentence is essentially [[object–subject–verb]] (OSV). However, since Hurrian is an ergative–absolutive language, the syntactic roles of a Hurrian phrase do not exactly correspond to the "subject" and "object" of a [[nominative–accusative]] language (such as [[English language|English]]). For this reason, Speiser says that Hurrian's word order can be more accurately described as "goal–agent–action", with the absolutive case corresponding to the "grammatical subject" (i.e. [[specifier (linguistics)|specifier]]).<ref>{{Harvnb|Speiser|1941|pp=205–206}}</ref>
+
+{{interlinear|number=ex:|glossing2=no|glossing3=yes
+|šeniff išaš tatau
+|šen-iff-Ø iša-š tat-au
+|brother-my-ABS me-ERG.SG love-1.SG
+|"I love my brother"
+}}
+
+[[Geoffrey K. Pullum]] (1977) is doubtful of Speiser's analysis. He argues that the available corpus of Hurrian text is not large enough to definitively determine its word order, and that it can only be identified as generally verb-final (i.e. either OSV or [[subject–object–verb|SOV]]). Pullum gives the following example of a Hurrian sentence with SOV order:<ref>{{harvnb|Pullum|1977|pp=262–264}}</ref>
+
+{{interlinear|number=ex:|glossing2=no|glossing3=yes
+|Immuriyaššan zalamši tanoša
+|Immuriya-šš-an zalamši-Ø tan-oš-a
+|Immuriya-ERG.SG-and statue-ABS make-PRET-3
+|"And Immuriya made the statue"
+}}
+
+[[Maria Polinsky]] (1995) notes that the structure of Hurrian's [[ditransitive]] clauses is subject–object (as in SOV) rather than [[object–subject word order|object–subject]] (as in OSV). Specifically, the order is subject–indirect object–direct object–verb. However, she still refers to Hurrian as an example of an OSV language.<ref name=Polinsky1995>{{Harvnb|Polinsky|1995|p=190}}</ref>
+
+Within [[noun phrase]]s, the noun regularly comes at the end. Adjectives, numbers, and genitive modifiers come before the noun they modify. [[Relative clause]]s, however, tend to surround the noun, which means that the noun the relative clause modifies stands in the middle of the relative clause. Hurrian has at its disposal several paradigms for constructing relative clauses. It can either use the relative pronouns ''iya'' and ''iye'', which has already been described under 'pronouns' above, or the nominalising suffix ''-šše'' attached to a verb, which undergoes Suffixaufnahme. The third possibility is for both these markers to occur (see example 16 below). The noun, which is represented by the relative clause, can take any case, but within the relative clause can only have the function of the absolutive, i.e. it can only be the subject of an intransitive relative clause or the object of a transitive one.
+
+{{interlinear|number=ex:|glossing2=no|glossing3=yes
+|iyallānīn šēniffuš tiwēna tānōšāššena
+|iya{{=}}llā{{=}}nīn šēn-iffu-š tiwē-na-Ø tān-ōš-ā-šše-na-Ø
+|REL.PRO{{=}}3.PL.ABS{{=}}truly brother-my-ERG.SG object-ART.PL-ABS send-PRET-3.SG.SUBJ-NOM-ART.PL-ABS
+|"those, which my brother sent"
+}}
+
+As has been outlined above, Hurrian transitive verbs normally take a subject in the ergative and an object in the absolutive (except for the antipassive constructions, where these are replaced by the absolutive and the essive respectively). The indirect object of ditransitive verbs, however, can be in the dative, locative, allative, or with some verbs also in the absolutive.
+
+{{interlinear|number=ex:|glossing2=no|glossing3=yes
+|olaffa katulle
+|ola-Ø{{=}}ffa katul-le
+|other-ABS{{=}}2.PL.ABS say-OPT.1.SG
+|"I want to tell you<sub>abs</sub> something else<sub>abs</sub>"
+}}
+
+==Vocabulary==
+The attested Hurrian lexicon is quite homogeneous, containing only a small number of [[loanwords]] (e.g. ''tuppi'' ('clay tablet'), ''Mizri'' ('Egypt'; cf. Aramaic/Hebrew ''[[Mizraim]]'', 'id.') both from [[Akkadian language|Akkadian]]). The relative pronouns ''iya'' and ''iye'' may be a loan from the [[Indo-Aryan languages|Indo-Aryan]] language of the Mitanni people who had lived in the region before the Hurrians; cf. [[Sanskrit]] ''ya''. Conversely, Hurrian gave many loan words to the nearby Akkadian dialects, for example ''hāpiru'' ('nomad') from the Hurrian ''hāpiri'' ('nomad'). There may also be Hurrian loanwords among the [[languages of the Caucasus]], but this cannot be verified, as there are no written records of Caucasian languages from the time of the Hurrians. The source language of similar sounding words is thus unconfirmable.
+
+==Writing system==
+The Hurrian language was written using a modified form of the [[cuneiform]] script. Several non-standardized systems for writing Hurrian in cuneiform were in use across the various polities with a Hurrian scribal tradition. Generally, these systems are characterized by a limited use of [[logogram]]s and an emphasis on [[syllabary|syllabic writing]]. This sets Hurrian orthography apart from Sumero-Akkadian cuneiform, which is heavily reliant on logograms.
+
+Notably, in addition to the prototypical cuneiform vowel inventory consisting of ''{{Transliteration|Xsux|a}}'', ''{{Transliteration|Xsux|e}}'', ''{{Transliteration|Xsux|i}}'', and ''{{Transliteration|Xsux|u}}'', the syllabary of the Mitanni Letter also includes the vowel ''{{Transliteration|Xsux|o}}''. In this respect it is unique among all forms of cuneiform writing. The scribe of the Mitanni Letter also frequently employs independent vowel signs in order to disambiguate the readings of uncertain CV signs through a technique called "plene spelling." For example, the sign {{cuneiform|ana|𒊑}} ({{Transliteration|Xsux|RI}}) can be read as either {{Transliteration|xhu|ri}} or {{Transliteration|xhu|re}}. When necessary, the syllable {{Transliteration|xhu|ri}} could be written unambiguously as {{cuneiform|ana|𒊑𒄿}} ({{Transliteration|Xsux|RI-I}}) and the syllable {{Transliteration|xhu|re}} as {{cuneiform|ana|𒊑𒂊}} ({{Transliteration|Xsux|RI-E}}). It is uncertain whether plene-spelling was also used to mark vowel length.
+
+{| class="wikitable" style="text-align:center; border: none;"
+|+ Hurrian cuneiform syllabary (Mitanni Letter)<ref>{{harvnb|Van Soldt|2009}}</ref>
+|-
+! 
+!colspan=2|-a
+!colspan=2|-e
+!colspan=2|-i
+!colspan=2|-o 
+!colspan=2|-u
+!rowspan=14; style="border: none; background: white;"|
+!colspan=2|a-
+!colspan=2|e-
+!colspan=2|i-
+!colspan=2|o-
+!colspan=2|u-
+!
+|-
+!–
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|A}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒀀|𒀀]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|E}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒂊|𒂊]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|I}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒄿|𒄿]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|U}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒌋|𒌋]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|U₂}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒌑|𒌑]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|A}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒀀|𒀀]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|E}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒂊|𒂊]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|I}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒄿|𒄿]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|U}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒌋|𒌋]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|U₂}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒌑|𒌑]]}}
+!–
+|-
+!p-
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|PA}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒉺|𒉺]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|BE}} 
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒁁|𒁁]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|BI}} 
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒁉|𒁉]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|BU}} 
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒁍|𒁍]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|BU}} 
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒁍|𒁍]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|AB}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒀊|𒀊]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|IB}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒅁|𒅁]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|IB}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒅁|𒅁]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|UB}} 
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒌒|𒌒]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|UB}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒌒|𒌒]]}}
+!-p
+|-
+!t-
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|TA}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒋫|𒋫]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|TE}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒋼|𒋼]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|TI}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒋾|𒋾]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|DU}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒁺|𒁺]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|DU}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒁺|𒁺]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|AD}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒀜|𒀜]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|ID}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒀉|𒀉]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|ID}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒀉|𒀉]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|UD}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒌓|𒌓]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|UD}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒌓|𒌓]]}}
+!-t
+|-
+!k-
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|KA}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒅗|𒅗]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|GI}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒄀|𒄀]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|KI}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒆠|𒆠]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|KU}} 
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒆪|𒆪]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|GU}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒄖|𒄖]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|AG}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒀝|𒀝]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|IG}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒅅|𒅅]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|IG}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒅅|𒅅]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|UG}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒊌|𒊌]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|UG}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒊌|𒊌]]}}
+!-k
+|-
+!ḫ-
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|ḪA}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒄩|𒄩]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|ḪE₂}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒃶|𒃶]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|ḪI}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒄭|𒄭]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|ḪU}} 
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒄷|𒄷]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|ḪU}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒄷|𒄷]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|AḪ}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒄴|𒄴]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|AḪ}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒄴|𒄴]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|AḪ}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒄴|𒄴]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|AḪ}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒄴|𒄴]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|AḪ}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒄴|𒄴]]}}
+!-ḫ
+|-
+!l-
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|LA}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒆷|𒆷]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|LI}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒇷|𒇷]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|LI}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒇷|𒇷]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|LU}} 
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒇻|𒇻]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|LU}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒇻|𒇻]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|AL}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒀠|𒀠]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|EL}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒂖|𒂖]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|IL}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒅋|𒅋]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|UL}} 
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒌌|𒌌]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|UL}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒌌|𒌌]]}}
+!-l
+|-
+!m-
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|MA}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒈠|𒈠]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|ME}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒈨|𒈨]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|MI}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒈪|𒈪]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|MU}} 
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒈬|𒈬]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|MU}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒈬|𒈬]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|AM}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒄠|𒄠]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|IM}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒅎|𒅎]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|IM}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒅎|𒅎]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|UM}} 
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒌝|𒌝]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|UM}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒌝|𒌝]]}}
+!-m
+|-
+!n-
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|NA}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒈾|𒈾]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|NI}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒉌|𒉌]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|NI}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒉌|𒉌]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|NU}} 
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒉡|𒉡]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|NU}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒉡|𒉡]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|AN}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒀭|𒀭]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|EN}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒂗|𒂗]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|IN}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒅔|𒅔]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|UN}} 
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒌦|𒌦]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|UN}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒌦|𒌦]]}}
+!-n
+|-
+!r-
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|RA}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒊏|𒊏]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|RI}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒊑|𒊑]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|RI}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒊑|𒊑]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|RU}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒊒|𒊒]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|RU}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒊒|𒊒]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|AR}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒅈|𒅈]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|IR}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒅕|𒅕]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|IR}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒅕|𒅕]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|UR}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒌨|𒌨]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|UR}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒌨|𒌨]]}}
+!-r
+|-
+!s-
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|SA}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒊓|𒊓]]}}
+|style="border-style: solid none solid solid; text-align: right;"|[{{Transliteration|Xsux|SI}}]
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒋛|𒋛]]}}
+|style="border-style: solid none solid solid; text-align: right;"|[{{Transliteration|Xsux|SI}}]
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒋛|𒋛]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|SU}} 
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒋢|𒋢]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|SU}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒋢|𒋢]]}}
+|style="border-style: solid none solid solid; text-align: right;"|[{{Transliteration|Xsux|AZ}}]
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒊍|𒊍]]}}
+|style="border-style: solid none solid solid; text-align: right;"|[{{Transliteration|Xsux|IZ}}]
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒄑|𒄑]]}}
+|style="border-style: solid none solid solid; text-align: right;"|[{{Transliteration|Xsux|IZ}}]
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒄑|𒄑]]}}
+|style="border-style: solid none solid solid; text-align: right;"|[{{Transliteration|Xsux|UZ}}] 
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒊻|𒊻]]}}
+|style="border-style: solid none solid solid; text-align: right;"|[{{Transliteration|Xsux|UZ}}]
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒊻|𒊻]]}}
+!-s
+|-
+!š-
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|ŠA}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒊭|𒊭]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|ŠE}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒊺|𒊺]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|ŠI}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒅆|𒅆]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|ŠU}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒋗|𒋗]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|ŠU}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒋗|𒋗]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|AŠ}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒀸|𒀸]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|EŠ}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒌍|𒌍]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|IŠ}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒅖|𒅖]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|UŠ}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒍑|𒍑]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|UŠ}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒍑|𒍑]]}}
+!-š
+|-
+!z-
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|ZA}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒍝|𒍝]]}}
+|style="border-style: solid none solid solid; text-align: right;"|[{{Transliteration|Xsux|ZI}}]<br>[{{Transliteration|Xsux|ZE₂}}<sup>?</sup>]
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒍣|𒍣]]}}<br>{{cuneiform|ana|[[:wikt:𒍢|𒍢]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|ZI}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒍣|𒍣]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|ZU}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒍪|𒍪]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|ZU}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒍪|𒍪]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|AZ}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒊍|𒊍]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|IZ}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒄑|𒄑]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|IZ}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒄑|𒄑]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|UZ}} 
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒊻|𒊻]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|UZ}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒊻|𒊻]]}}
+!-z
+|-
+!w-
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|PI}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒉿|𒉿]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|PI}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒉿|𒉿]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|PI}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒉿|𒉿]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|PI}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒉿|𒉿]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|PI}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒉿|𒉿]]}}
+|style="border-style: solid none solid solid; text-align: right;"|[{{Transliteration|Xsux|AB}}]
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒀊|𒀊]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|IB}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒅁|𒅁]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|IB}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒅁|𒅁]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|UB}} 
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒌒|𒌒]]}}
+|style="border-style: solid none solid solid; text-align: right;"|{{Transliteration|Xsux|UB}}
+|style="font-size:75%; border-style: solid solid solid none; text-align: left;"|{{cuneiform|ana|[[:wikt:𒌒|𒌒]]}}
+!-w
+|}
+
+==Sample text==
+From the Mitanni-Letter, Column IV, Lines 30–32
+
+{{interlinear|indent=2|glossing2=no|glossing5=yes
+|abbreviations=MUL:multiplicative
+|{{noitalic|{{cuneiform|ana|𒌦𒁺𒈠𒀀𒀭}}}} {{noitalic|{{cuneiform|ana|𒄿𒄿𒀠𒇷𒂊𒉌𒄿𒅔}}}} {{noitalic|{{cuneiform|ana|𒋾𒉿𒂊𒈾𒎌}}}} {{noitalic|{{cuneiform|ana|𒋗𒌑𒀠𒆷𒈠𒀭}}}} {{noitalic|{{cuneiform|ana|𒊺𒂊𒉌𒅁𒉿𒍑}}}} {{noitalic|{{cuneiform|ana|𒅗𒁺𒌋𒊭𒀀𒀸𒊺𒈾}}}} {{noitalic|{{cuneiform|ana|𒌑𒌑𒊑𒀀𒀀𒀸𒊺𒈾}}}} {{noitalic|{{cuneiform|ana|𒀭𒌀𒆷𒀀𒀭}}}} {{noitalic|{{cuneiform|ana|𒂊𒂊𒈠𒈾𒀀𒄠𒄩}}}} {{noitalic|{{cuneiform|ana|𒋫𒀀𒉡𒊭𒀀𒌑}}}}
+|un-du-ma-a-an i-i-a-al-li-e-ni-i-in ti-we-e-na<sup>MEŠ</sup> šu-ú-al-la-ma-an še-e-ni-ib-wu-uš ka-du-u-ša-a-aš-še-na ú-ú-ri-a-a-aš-še-na an-til-la-a-an e-e-ma-na-a-am-ḫa ta-a-nu-ša-a-ú
+|Untomān iyallēnīn tiwēna šūallamān šēniffuš katōšāššena ūriāššena, antillān ēmanāmḫa tānōšau.
+|unto{{=}}mān iya{{=}}llē{{=}}nīn tiwē-na-Ø šū-a{{=}}lla{{=}}mān šēn-iffu-š kat-ōš-ā-šše-na-Ø ūr-i-ā-šše-na-Ø anti{{=}}lla{{=}}an ēman-āmḫa tān-ōš-au
+|now{{=}}but REL.PRO{{=}}3.PL.ABS{{=}}truly thing-ART.PL-ABS every-LOC{{=}}3.PL.ABS{{=}}but brother-my-ERG.SG say-PRT.TR-3.SG.SUBJ-NMZ-ART.PL-ABS want-TR-3.SG.SUBJ-NMZ-ART.PL-ABS those{{=}}PL.ABS{{=}}and ten-MUL do-PRT.TR-1.SG.SUBJ
+|"Those things, which my brother truly said and wanted as a whole, now I have done them, but tenfold."}}
+
+==Hurrian literature==
+Texts in the Hurrian language itself have been found at [[Hattusa]], [[Ugarit]] (Ras Shamra), and [[Sapinuwa]] (but unpublished). Also, one of the longest of the [[Amarna letters]] is Hurrian; written by King [[Tushratta]] of Mitanni to Pharaoh [[Amenhotep III]]. It was the only long Hurrian text known until a multi-tablet collection of literature in Hurrian with a [[Hittite language|Hittite]] translation was discovered at Hattusa in 1983.
+
+Important finds were made at [[Ortaköy, Çorum|Ortaköy]] (''Sapinuwa'') in the 1990s, including several bilinguals. Most of them remain unedited as of 2007.
+
+No Hurrian texts are attested from the first millennium BC (unless considering Urartian a late Hurrian dialect), but scattered loanwords persist in Assyrian, such as the goddess ''Savuska'' mentioned by [[Sargon II]].<ref>{{harvnb|Wegner|2000|p=25}}</ref>
+
+==See also==
+{{Portal|Languages|Asia}}
+*[[Indo-Aryan languages]]
+
+==References==
+{{Reflist}}
+
+==Bibliography==
+* {{cite book |author-last=Дьяконов |author-first=Игорь Михайлович |script-title=ru:Языки древней Передней Азии |location=Moskow |publisher=Наука |year=1967 |language=ru |trans-title=The Languages of Ancient Asia Minor}}
+* {{cite journal|author-last=Kassian |author-first=Alexei|title=Review of ''The Indo-European Elements in Hurrian'' |journal=Journal of Language Relationship • Вопросы языкового родства |issue=4 |year=2010 |pages=199–211 |issn=1998-6769}}
+* {{cite book |last=Kupper |first=J. R.
+ |chapter=Northern Mesopotamia and Syria: Hurrian elements in art and religion |editor-last1=Edwards |editor-first1=Iorwerth E. S. |editor-last2=Gadd |editor-first2=Cyril John |editor-last3=Hammond |editor-first3=Nicholas G. L. |editor-last4=Sollberger |editor-first4=Edmond |title=The Cambridge Ancient History |volume=2 |date=1973 |issue=1
+ |location=Cambridge |publisher=Cambridge University Press |isbn=978-0-521-08230-3 |language=en| doi=10.1017/CHOL9780521082303.002 |pages=1–41}}
+* {{cite book |last1=Nathanson |first1=Michael |title=Between Myth & Mandate |date=2013 |publisher=Author House |isbn=978-1-4918-2310-1 |url=https://books.google.com/books?id=odCmAQAAQBAJ |language=en}}
+* {{cite book |last=Owen |first=David I. |contribution=Hurrians |editor-last1=Freedman |editor-first1=David Noel |editor-last2=Myers |editor-first2=Allen C. |title=Eerdmans Dictionary of the Bible |date=2000 |publisher=Amsterdam University Press |isbn=978-90-5356-503-2 |url=https://books.google.com/books?id=qRtUqxkB7wkC |language=en}}
+* {{cite journal|author-last1=Polinsky|author-first1=Maria|author-link=Maria Polinsky|title=Double Objects in Causatives: Towards a Study of Coding Conflict|journal=Studies in Language|year=1995|volume=19|issue=1|pages=129–221 |doi=10.1075/sl.19.1.05pol}}
+* {{cite book |last1=Pullum |first1=Geoffrey K. |date=1977 |title=Grammatical Relations |chapter=Word order universals and grammatical relations |url= |series=Syntax and Semantics |volume=8 |editor-last1=Cole |editor-first1=Peter |editor-last2=Sadock |editor-first2=Jerrold M. |pages=249–277 |doi=10.1163/9789004368866_011|isbn=9789004368866 |publisher=Brill}}
+* {{cite book|last=Speiser |first=E. A. |year=1941 |title=Introduction to Hurrian |series=The Annual of the American Schools of Oriental Research. Vol. 20 |location=New Haven |publisher=The American Schools of Oriental Research }}
+* {{cite book|last=Van Soldt|first=Wilfred H.|date=2009|editor-last1=de Voogt|editor-first1=Alex|editor-last2=Finkel|editor-first2=Irving L.|title=The Idea of Writing: Play and Complexity|publisher=Brill|pages=117–127|chapter=The Adaptation Of The Cuneiform Script To Foreign Languages|isbn=978-90-47-42792-6}}
+* {{cite book |last1=Wegner |first1=Ilse |title=Einführung in die hurritische Sprache |date=2000 |publisher=Harrassowitz |location=Wiesbaden |isbn=9783447042628 |language=de |trans-title=Introduction to the Hurrian Language}}
+* {{cite book|author-last=Wilhelm |author-first=Gernot |chapter-url=https://www.academia.edu/24280726 |title=The Ancient Languages of Asia Minor |editor-first=Roger D. |editor-last=Woodard |location=Cambridge |publisher=Cambridge University Press |year=2008 |pages=81–104 |isbn=978-0-521-68496-5 |doi=10.1017/CBO9780511486845.012 |chapter=Hurrian}}
+
+==Further reading==
+* {{cite journal |last1=Andrason |first1=Alexander |last2=Vita |first2=Juan-Pablo |title=Contact Languages of the Ancient Near East – Three more Case Studies (Ugaritic-Hurrian, Hurro-Akkadian and Canaano-Akkadian) |journal=Journal of Language Contact |volume=9 |issue=2 |date=2016 |pages=293–334 |doi=10.1163/19552629-00902004|hdl=10261/193367 |hdl-access=free }}
+* {{cite book |author-last=Campbell |author-first=Dennis R. M |year=2020 |chapter=Hurrian |title=A Companion to Ancient Near Eastern Languages |editor-first=Rebecca |editor-last=Hasselbach-Andee |publisher=John Wiley & Sons |location=Hoboken |pages=203–219 |doi=10.1002/9781119193814.ch11| isbn=9781119193296}}
+* {{cite journal |author-last=Goetze |author-first=Albrecht |title=Enclitic Pronouns in Hurrian |journal=Journal of Cuneiform Studies |volume=2 |issue=4 |pages=255–69 |year=1948|doi=10.2307/3515927 |jstor=3515927 }}
+* {{cite journal |author-last=Goetze |author-first=Albrecht |title=The Ḫurrian Verbal System |journal=Language |volume=16 |issue=2 |pages=125–40 |year=1940|doi=10.2307/408947 |jstor=408947 }}
+*{{cite book |last=Laroche |first=Emmanuel |title=Glossaire de la langue Hourrite |series=Revue hittite et asianique |volume=34/35 |year=1980 |language=fr |location=Paris |publisher=Éditions Klincksieck |isbn=2-252-01984-0}}
+* {{cite journal |author-last=Purves |author-first=Pierre M |title=Hurrian Consonantal Pattern |journal=The American Journal of Semitic Languages and Literatures |volume=58 |issue=4 |pages=378–404 |year=1941|doi=10.1086/370621 }}
+* {{cite journal |last=Vita |first=Juan-Pablo |date=2007 |title=Two Hurrian Loanwords in Ugaritic Texts |journal=Altorientalische Forschungen |volume=34 |issue=1–2 |pages=181–184 |doi=10.1524/aofo.2007.34.12.185}}
+* {{cite book|author-last=Wegner |author-first=Ilse |title=Hurritisch, eine Einführung |publisher=Harassowitz |location=Wiesbaden |year=2007 |edition=2nd |isbn=978-3-447-05394-5 |language=de |trans-title=Hurrian, an Introduction}}
+
+==External links==
+* [http://starling.rinet.ru/cgi-bin/response.cgi?root=new100&morpho=0&basename=new100\hur\hur&limit=-1 Hurrian basic lexicon at the Global Lexicostatistical Database]
+
+{{Ancient Mesopotamia}}
+
+{{Authority control}}
+
+{{DEFAULTSORT:Hurrian Language}}
+[[Category:Hurro-Urartian languages]]
+[[Category:Languages attested since the 23rd century BC]]
+[[Category:Languages extinct in the 11th century BC]]
+
+[[fr:Hourrites#Langue]]

@@ -1,0 +1,215 @@
+{{Short description|Two alphasyllabaric scripts for the extinct Meroitic language}}
+{{Infobox Writing system
+| name        = Meroitic
+| languages   = [[Meroitic language]] and possibly [[Old Nubian language|Old Nubian]]
+| type        = [[Abugida]]
+| typedesc    = with inherent vowel /a/ except on the vocalic signs: {{angbr|a}}, {{angbr|e}}, {{angbr|i}}, {{angbr|o}} and the syllabic {{angbr|ne}}, {{angbr|se}}, {{angbr|te}}, and {{angbr|to}} signs
+| time        = 300 BC – 600 AD
+| fam1        = [[Egyptian hieroglyphs]]
+| fam2        = [[Hieratic]]
+| fam3        = [[Demotic Egyptian|Demotic]]
+| children    = {{nowrap|[[Old Nubian#Writing system|Nubian]] (influenced)}}
+| sample      = Meroitic.png
+| unicode     = {{ublist |class=nowrap |[https://www.unicode.org/charts/PDF/U10980.pdf U+10980–U+1099F] {{smaller|Meroitic Hieroglyphs}} |[https://www.unicode.org/charts/PDF/U109A0.pdf U+109A0–U+109FF] {{smaller|Meroitic Cursive}}}}
+| iso15924 note = <code>Mero, 100</code>: Meroitic Hieroglyphs<br /><code>Merc, 101</code>: Meroitic Cursive
+}}
+{{alphabet}}
+
+The '''Meroitic script''' consists of two [[Abugida|alphasyllabic]] scripts developed to write the [[Meroitic language]] at the beginning of the [[Meroë|Meroitic Period]] (3rd century BC) of the [[Kingdom of Kush]]. The two scripts are Meroitic Cursive, derived from [[Demotic Egyptian]], and Meroitic Hieroglyphs, derived from [[Egyptian hieroglyphs]]. Meroitic Cursive is the most widely attested script, constituting ~90% of all inscriptions,<ref>Claude Rilly (2011). Recent Research on Meroitic, the Ancient Language of Sudan. http://www.ityopis.org/Issues-1_files/ITYOPIS-I-Rilly.pdf, p. 13. Where Rilly states, "...For  all  the  other  purposes,  including  royal  chronicles  and even  some  royal  funerary  texts,  the  cursive  script  is  used,  so  that  90%  of  the current corpus is made of cursive inscriptions."</ref> and predates, by a century or more,<ref>Claude Rilly. Arnekhamani's sistrum. New Insights on the Appearance of the Meroitic script. 12th Conference for Meroitic Studies, Sep 2016, Prague, Czech Republic. http://www.nm.cz/m/Naprstek-Museum/Events-NpM/12th-International-Conference-for-Meroitic-Studies.html?xSET=lang&xLANG=2 {{Webarchive|url=https://web.archive.org/web/20170905003527/http://www.nm.cz/m/Naprstek-Museum/Events-NpM/12th-International-Conference-for-Meroitic-Studies.html?xSET=lang&xLANG=2 |date=2017-09-05 }}. <halshs-01482759>. Where Rilly states, "...For these reasons, some very early inscriptions in Meroitic cursive with signs that are more primitive than the sistrum's and that were tentatively dated to the early 2nd century must be placed now in the first half of the 3rd Cent. BC. It means that the appearance of the Meroitic script is probably linked with the rise of the Meroitic dynasty."</ref> the earliest surviving Meroitic hieroglyphic inscription. Greek historian [[Diodorus Siculus]] (ca. 50 BC) described the two scripts in his [[Bibliotheca historica]], Book III (Africa), Chapter 4. The last known Meroitic inscription is the Meroitic Cursive inscription of the [[Blemmyes|Blemmye]] king, Kharamadoye, from a column in the [[Temple of Kalabsha]] (REM 0094), which has recently been re-dated to AD 410/ 450 of the 5th century.<ref>Claude Rilly (2011). Recent Research on Meroitic, the Ancient Language of Sudan. http://www.ityopis.org/Issues-1_files/ITYOPIS-I-Rilly.pdf, p. 12. Where Rilly states, "The script actually outlived the fall of Meroe (ca. AD 350), for the latest known text is the inscription of King Kharamadoye from a column in the Kalabsha temple (REM 0094), which has recently been re-dated to AD 410/450 (Eide et al. 1998: 1103–1107)."</ref> Before the Meroitic Period, Egyptian hieroglyphs were used to write Kushite names and lexical items.
+
+Though the Kingdom of Kush ended with the fall of the royal capital of Meroë, use of the language and Cursive script continued for a time after that event. During the 6th century [[Christianization]] of Nubia, the Kushite language and Cursive script were replaced by [[Medieval Greek|Byzantine Greek]], [[Coptic language|Coptic]], and [[Old Nubian]]. The Old Nubian script, derived from the [[Uncial script|Uncial]] Greek script, added three Meroitic Cursive letters: {{angbr|ne}}, {{angbr|w(a)}}, and possibly {{angbr|kh(a)}}, for Old Nubian [[Palatal nasal|[ɲ]]], [[Voiced labio-velar approximant|[w]] – [[close back rounded vowel|u]]], and [[Velar nasal|[ŋ]]] respectively.<ref>Satzinger, Helmut (2004). Some Peculiarities of Greek and Coptic Epigraphy from Nubia. In Coptic Studies on the Threshold of a New Millennium I. Proceedings of the Seventh International Congress of Coptic Studies, Leiden, 27 August – 2 September 2000. Edited on behalf of the InternationalAssociation for Coptic Studies (IACS) by Mat Immerzeel and Jacques van der Vliet with the assistance of Maarten Kersten and Carolien van Zoes. Orientalia Lovaniensia Analecta 133. Uitgeverij Peeters en Departement Oosterse Studies Leuven – Paris – Dudley, MA. 2004. p. 529. https://homepage.univie.ac.at/helmut.satzinger/Texte/EpigrNubia.pdf – p. 535 of this pdf</ref> This addition of Meroitic Cursive letters suggests that the development of the Old Nubian script began at least two centuries before its first full attestation in the late 8th century and/or that knowledge of the Kushite language and script was retained until the 8th century.<ref>Ochała, Grzegorz. "Multilingualism in Christian Nubia: Qualitative and Quantitative Approaches." Dotawo 1 (2014): pp. 1–50. pp. 7, 8. "It has been pointed out many times that the Greek epitaph of (I)stephanou also called Eiñitta from Dongola (DBMNT 74), dated to 797 [CE], is the first appearance of Old Nubian, with its use of the words "Eiñitta, Maraña, choiakiššil, joknaiššil, and Puš." While this is demonstrably the first attestation of the Old Nubian alphabet, with its characteristic enchoric letters, the first Old Nubian word ever to occur in writing is "Samata", attested in the Coptic foundation inscription from Dendur (DBMNT 517), dated to the second half of the sixth century.<sup>29</sup>" Footnote 29: "…Cf. Millet, "Writing and literacy in ancient Sudan," p. 54, who supposes that the invention of the Old Nubian script might have taken place around ce 600, when the inhabitants of the Middle Nile Valley could still read and understand Meroitic. The evidence of the inscription from Dendur, so far unnoticed, may thus be seen as a 'missing linkʼ in his theory of development."</ref><ref>Rilly, C., & De Voogt, A. (2012). Introduction. In The Meroitic Language and Writing System (pp. 1–34). Cambridge: Cambridge University Press. doi:10.1017/CBO9780511920028.002. p. 8. "The oldest documents using the Old Nubian script date to the end of the eighth century AD, indicating that the Meroitic signs continued to be read at least two centuries after the Kharamadoye inscription. Perhaps one day, in Sudanese archaeology, other evidence will fill in the gaps in our understanding of this history."</ref><ref>Millet, N. B. (1974). Writing and literacy in Ancient Sudan. In Studies in ancient languages of the Sudan : papers presented at the Second International Conference on Language and Literature in the Sudan sponsored by the Sudan Research Unit, 7–12 December 1970, edited with an introd. by Abdelgadir Mahmoud Abdalla. p. 54. https://books.google.com/books?id=0B65AAAAIAAJ&q=A.D.%20600</ref>
+
+The script was deciphered in 1909 by [[Francis Llewellyn Griffith]], a British Egyptologist, based on the Meroitic spellings of Egyptian names. However, the [[Meroitic language]] itself remains poorly understood. In late 2008, the first complete royal dedication was found,<ref>[https://news.bbc.co.uk/2/hi/africa/7786361.stm "Sudan statues show ancient script"] (BBC 16 December 2008)</ref> which may help confirm or refute some of the current hypotheses.
+
+The longest inscription found is in the [[Museum of Fine Arts, Boston]].
+
+==Form and values==
+{{More citations needed section|date=September 2026}}<!--Practically none of the claims about the sound values is sourced.-->
+[[File:Detail of a sandstone showing meroitic hieroglyphs in 3 vertical columns, probably referring to Amun. From Meroe. Meroitic period. The Petrie Museum of Egyptian Archaeology, London.jpg|thumb|300px|Detail of a sandstone showing Meroitic hieroglyphs in 3 vertical columns, probably referring to Amun. From Meroe. Meroitic period. The Petrie Museum of Egyptian Archaeology, London]]
+[[File:Pyramids of Meroe in Bajrawiya, Sudan 08.jpg|thumb|300px|Relief inside one of the [[Pyramids of Meroe]] in Bajrawiya, Sudan, with hieroglyphic text.]]
+There were two graphic forms of the Meroitic alphasyllabary: monumental hieroglyphs, and a [[cursive]].<ref>{{cite web | url=https://www.unicode.org/L2/L2009/09250-n3665-meroitic.pdf | title=N3665: Proposal for encoding the Meroitic Hieroglyphic and the Meroitic Cursive scripts in the SMP of the UCS | first1=Michael | last1=Everson | publisher=Working Group Document, ISO/IEC JTC1/SC2/WG2 | date=2009-07-29 }}</ref> The majority of texts are cursive. Unlike Egyptian writing, there was a simple one-to-one correspondence between the two forms of Meroitic, except that in the cursive form, consonants are joined in [[Typographic ligature|ligature]]s to a following vowel '''i'''.
+
+The direction of cursive writing was from right to left, top to bottom, while the monumental form was written top to bottom in columns going right to left. Monumental letters were oriented to face the beginning of the text, a feature inherited from their hieroglyphic origin.
+
+Being primarily alphasyllabic, the Meroitic script worked differently than Egyptian hieroglyphs. Some scholars, such as [[Harald Haarmann]], believe that the vowel letters of Meroitic are evidence for an influence of the [[Greek alphabet]] in its development.
+
+There were 23 letters in the Meroitic alphasyllabary, including four vowels. In the transcription established by Hintze (based on earlier versions by Griffith), they are:
+*'''a''' appears only at the beginning of a word
+*'''e''' was used principally in foreign names
+*'''i''' and '''o''' were used like vowels in the Latin or Greek alphabets.
+The fifteen consonants are conventionally transcribed:
+*'''p''', '''b''', '''m''', '''d''', '''t''', '''s''', '''n''', '''r''', '''l''', '''k''', '''q''', '''ḫ''', '''ẖ''', '''w''', '''y'''
+These consonants are understood to have an inherent vowel value /a/, such that '''p''' should generally be understood as /pa/.
+An additional series of characters is understood to represent consonants with inherent vowels other than /a/:
+*'''ne''', '''se''', '''te''', '''to'''
+
+These values were established from evidence such as Egyptian names borrowed into Meroitic. That is, the Meroitic letter which looks like an owl in monumental inscriptions, or like a numeral three in cursive Meroitic, we transcribe as '''m''', and it is believed to have been pronounced as [m]. However, this is a historical reconstruction, and while '''m''' is not in much doubt, the pronunciations of some of the other letters are much less certain.
+
+The three vowels '''i a o''' were presumably pronounced /i a u/. '''Ḫ''' is thought to have been a [[voiceless velar fricative|velar fricative]], as the ''ch'' in Scottish ''loch'' or German ''Bach.'' '''H̱''' was a similar sound, perhaps [[uvular consonant|uvular]] as ''g'' in Dutch ''dag''{{fact|date=September 2026}} or [[palatal consonant|palatal]] as in German ''ich''. '''Q''' was perhaps a [[voiceless uvular stop|uvular stop]], as in Arabic ''Qatar''. '''S''' may have been like ''s'' in ''sun''. An /n/ was omitted in writing when it occurred before any of several other consonants within a word. '''D''' is uncertain. Griffith first transcribed it as ''r,'' and Rowan believes that was closer to its actual value. It corresponds to Egyptian and Greek /d/ when initial or after an /n/ (unwritten in Meroitic), but to /r/ between vowels, and does not seem to have affected the vowel '''a''' the way the other alveolar obstruents '''t n s''' did.
+
+Comparing late documents with early ones, it is apparent that the sequences ''sel-'' and ''nel-,'' which Rowan takes to be /sl/ and /nl/ and which commonly occurred with the determiner ''-l-,'' [[assimilation (linguistics)|assimilated]] over time to ''t'' and ''l'' (perhaps /t/ and /ll/).
+
+The only [[punctuation mark]] was a [[word divider|word and phrase divider]] of two to three dots.
+
+==Principles==
+Meroitic was a type of script called an [[abugida]]: The vowel /a/ was not normally written; rather it was assumed whenever a consonant was written alone. That is, the single letter '''m''' was read /ma/. All other vowels were overtly written: the letters '''mi''', for example, stood for the syllable /mi/, just as in the Latin alphabet. This system is broadly similar to the [[Brahmic family|Indian abugidas]] that arose around the same time as Meroitic.
+
+===Griffith and Hintze===
+Griffith identified the essential abugida nature of Meroitic when he deciphered the script in 1911. He noted in 1916 that certain consonant letters were never followed by a vowel letter, and varied with other consonant letters. He interpreted them as [[syllable|syllabic]], with the values ''ne, se, te,'' and ''to.'' ''Ne,'' for example, varied with ''na.'' ''Na'' could be followed by the vowels ''i'' and ''o'' to write the syllables ''ni'' and ''no,'' but was never followed by the vowel ''e.''
+
+He also noted that the vowel ''e'' was often omitted. It often occurred at the ends of Egyptian loanwords that had no final vowel in [[Coptic language|Coptic]]. He believed that ''e'' functioned both as a [[schwa]] {{IPA|[ə]}} and a [[virama|"killer" mark]] that marked the absence of a vowel. That is, the letter '''m''' by itself was read {{IPA|[ma]}}, while the sequence '''me''' was read {{IPA|[mə]}} or {{IPA|[m]}}. This is how [[Ethiopic script|Ethiopic]] works today. Later scholars such as Hitze and Rilly accepted this argument, or modified it so that ''e'' could represent either {{IPA|[e]}} or schwa–zero.
+
+It has long been puzzling to epigraphers why the syllabic principles that underlie the script, where every consonant is assumed to be followed by a vowel ''a,'' should have special letters for consonants followed by ''e.'' Such a mixed abugida–syllabary is not found among the abugidas of India, nor in Ethiopic. [[Old Persian cuneiform]] script is somewhat similar, with more than one inherent vowel, but is not an abugida because the non-inherent vowels are written with full letters{{clarify|date=September 2026}}, and are often redundantly written after an inherent vowel other than /a/.
+
+===Millet and Rowan===
+Millet (1970) proposed that Meroitic ''e'' was in fact an [[epenthetic vowel]] used to break up Egyptian [[consonant cluster]]s that could not be pronounced in the Meroitic language, or appeared after final Egyptian consonants such as ''m'' and ''k'' which could not occur finally in Meroitic. Rowan (2006) takes this further and proposes that the glyphs ''se, ne,'' and ''te'' were not syllabic at all, but stood for consonants {{IPA|/s/}}, {{IPA|/n/}}, and {{IPA|/t/}} at the end of a word or morpheme (as when followed by the [[determiner (linguistics)|determiner]] ''-l;'' she proposes Meroitic finals were restricted to [[alveolar consonant]]s such as these. An example is the Coptic word {{Coptic|ⲡⲣⲏⲧ}} ''prit'' "the agent", which in Meroitic was transliterated ''perite (pa-e-ra-i-te).'' If Rowan is right and this was pronounced {{IPA|/pᵊrit/}}, then Meroitic would have been a fairly typical abugida. She proposes that Meroitic had three vowels, {{IPA|/a i u/}}, and that {{IPA|/a/}} was raised to something like {{IPA|[e]}} or {{IPA|[ə]}} after the alveolar consonants {{IPA|/t s n/}}, explaining the lack of orthographic ''t, s, n'' followed by the vowel letter ''e.''
+
+Very rarely does one find the sequence [[Consonant|C]][[Vowel|V]]C, where the C's are both labials or both velars. This is similar to consonant restrictions found throughout the Afro-Asiatic language family, suggesting to Rowan that there is a good chance Meroitic was an [[Afro-Asiatic language]] like Egyptian.
+
+Rowan is not convinced that the system was completely alphabetic, and suggests that the glyph ''te'' also may have functioned as a [[determinative]] for place names, as it frequently occurs at the end of place names that are known not to have a /t/ in them. Similarly, ''ne'' may have marked royal or divine names.
+
+==Letters==
+{| class="wikitable sortable" id="letters_chart" style="text-align: center;"
+|-
+! colspan="2" | Letter in
+! rowspan="2" | [[Phoneme]]
+|-
+! Meroitic cursive
+! Meroitic hieroglyphic
+|-
+| {{lang|xmr|{{script|Merc|{{huge|𐦠}}}}}}
+| {{lang|xmr|{{script|Mero|{{huge|𐦀}}}}}}
+| {{transl|xmr|a}}
+|-
+| {{lang|xmr|{{script|Merc|{{huge|𐦡}}}}}}
+| {{lang|xmr|{{script|Mero|{{huge|𐦁}}}}}}
+| {{transl|xmr|e}}
+|-
+| {{lang|xmr|{{script|Merc|{{huge|𐦣}}}}}}
+| {{lang|xmr|{{script|Mero|{{huge|𐦃}}}}}}
+| {{transl|xmr|o}}
+|-
+| {{lang|xmr|{{script|Merc|{{huge|𐦢}}}}}}
+| {{lang|xmr|{{script|Mero|{{huge|𐦂‎}}}}}}
+| {{transl|xmr|i}}
+|-
+| {{lang|xmr|{{script|Merc|{{huge|𐦤}}}}}}
+| {{lang|xmr|{{script|Mero|{{huge|𐦄}}}}}}
+| {{transl|xmr|ya}}
+|-
+| {{lang|xmr|{{script|Merc|{{huge|𐦥‎}}}}}}
+| {{lang|xmr|{{script|Mero|{{huge|𐦅}}}}}}
+| {{transl|xmr|wa}}
+|-
+| {{lang|xmr|{{script|Merc|{{huge|𐦦‎}}}}}}
+| {{lang|xmr|{{script|Mero|{{huge|𐦆}}}}}}
+| {{transl|xmr|ba}}
+|-
+| {{lang|xmr|{{script|Merc|{{huge|𐦧}}}}}}
+| {{lang|xmr|{{script|Mero|{{huge|𐦈}}}}}}
+| {{transl|xmr|pa}}
+|-
+| {{lang|xmr|{{script|Merc|{{huge|𐦨}}}}}}
+| {{lang|xmr|{{script|Mero|{{huge|𐦉}}}}}}
+| {{transl|xmr|ma}}
+|-
+| {{lang|xmr|{{script|Merc|{{huge|𐦩‎}}}}}}
+| {{lang|xmr|{{script|Mero|{{huge|𐦊}}}}}}
+| {{transl|xmr|na}}
+|-
+| {{lang|xmr|{{script|Merc|{{huge|𐦪}}}}}}
+| {{lang|xmr|{{script|Mero|{{huge|𐦌}}}}}}
+| {{transl|xmr|ne}}
+|-
+| {{lang|xmr|{{script|Merc|{{huge|𐦫‎}}}}}}
+| {{lang|xmr|{{script|Mero|{{huge|𐦏}}}}}}
+| {{transl|xmr|ra}}
+|-
+| {{lang|xmr|{{script|Merc|{{huge|𐦬}}}}}}
+| {{lang|xmr|{{script|Mero|{{huge|𐦐}}}}}}
+| {{transl|xmr|la}}
+|-
+| {{lang|xmr|{{script|Merc|{{huge|𐦭‎}}}}}}
+| {{lang|xmr|{{script|Mero|{{huge|𐦑}}}}}}
+| {{transl|xmr|ḫa}}
+|-
+| {{lang|xmr|{{script|Merc|{{huge|𐦮}}}}}}
+| {{lang|xmr|{{script|Mero|{{huge|𐦒}}}}}}
+| {{transl|xmr|ẖa}}
+|-
+| {{lang|xmr|{{script|Merc|{{huge|𐦯‎}}}}}}
+| {{lang|xmr|{{script|Mero|{{huge|𐦓}}}}}}
+| {{transl|xmr|sa}}
+|-
+| {{lang|xmr|{{script|Merc|{{huge|𐦱}}}}}}
+| {{lang|xmr|{{script|Mero|{{huge|𐦕}}}}}}
+| {{transl|xmr|se}}
+|-
+| {{lang|xmr|{{script|Merc|{{huge|𐦲}}}}}}
+| {{lang|xmr|{{script|Mero|{{huge|𐦖}}}}}}
+| {{transl|xmr|ka}}
+|-
+| {{lang|xmr|{{script|Merc|{{huge|𐦳}}}}}}
+| {{lang|xmr|{{script|Mero|{{huge|𐦗‎}}}}}}
+| {{transl|xmr|qa}}
+|-
+| {{lang|xmr|{{script|Merc|{{huge|𐦴‎}}}}}}
+| {{lang|xmr|{{script|Mero|{{huge|𐦘}}}}}}
+| {{transl|xmr|ta}}
+|-
+| {{lang|xmr|{{script|Merc|{{huge|𐦵}}}}}}
+| {{lang|xmr|{{script|Mero|{{huge|𐦚}}}}}}
+| {{transl|xmr|te}}
+|-
+| {{lang|xmr|{{script|Merc|{{huge|𐦶}}}}}}
+| {{lang|xmr|{{script|Mero|{{huge|𐦜}}}}}}
+| {{transl|xmr|to}}
+|-
+| {{lang|xmr|{{script|Merc|{{huge|𐦷}}}}}}
+| {{lang|xmr|{{script|Mero|{{huge|𐦝}}}}}}
+| {{transl|xmr|da}}
+|}
+
+==Unicode==
+{{Main|Meroitic Hieroglyphs (Unicode block)|Meroitic Cursive (Unicode block)}}
+
+Meroitic scripts, both Hieroglyphic and Cursive, were added to the [[Unicode]] Standard in January, 2012 with the release of version 6.1.
+
+The Unicode block for Meroitic Hieroglyphs is U+10980–U+1099F.
+The Unicode block for Meroitic Cursive is U+109A0–U+109FF.
+
+{{Unicode chart Meroitic Hieroglyphs}}
+{{Unicode chart Meroitic Cursive}}
+
+As a Meroitic Unicode font you may use Aegyptus which can be downloaded from [https://dn-works.com/ufas/ Unicode Fonts for Ancient Scripts].
+
+==See also==
+* [[Afroasiatic languages]]
+
+==References==
+{{reflist}}
+
+==Sources==
+{{refbegin}}
+* {{cite web|url=https://eprints.soas.ac.uk/12837/|title=A phonological investigation into the Meroitic 'syllable' signs ''ne'' and ''se'' and their implications on the ''e'' sign|last=Rowan|first=Kirsty|year=2006|work=SOAS Working Papers in Linguistics, Volume 14|pages=131–167|access-date=2013-10-24}}
+* Török, László (1998). The Kingdom of Kush: Handbook of the Napatan-Meróitic Civilization (Handbook of Oriental Studies/Handbuch Der Orientalistik). New York: Brill Academic Publishers. {{ISBN|90-04-10448-8}}.
+{{refend}}
+
+==External links==
+* [http://www.ancientscripts.com/meroitic.html Meroitic – AncientScripts]
+* {{usurped|[https://web.archive.org/web/20081211191133/http://www.ancientsudan.org/writing_02_meroitic.htm Meroitic Writing]}}
+* [http://www.omniglot.com/writing/meroitic.htm Meroitic at Omniglot]
+* [http://reinhold.kainhofer.com/rk_fonts/rkaf_meroitic.html Meroitic font] {{Webarchive|url=https://web.archive.org/web/20060525083043/http://reinhold.kainhofer.com/rk_fonts/rkaf_meroitic.html |date=2006-05-25 }}
+* [http://www.digitalegypt.ucl.ac.uk/nubia/mwriting.html Examples of Meroitic script]
+* [https://www.persee.fr/doc/rem_0000-0000_2000_num_1_1_845 Leclant Jean, Heyler André, Berger el Naggar Catherine, Carrier Claude, Rilly Claude. ''Répertoire d'épigraphie méroïtique'', Tome I – REM 0001 à REM 0387, (2000), pp. 1–713]
+* [https://www.persee.fr/doc/rem_0000-0000_2000_num_2_1_847 Leclant Jean, Heyler André, Berger el Naggar Catherine, Carrier Claude, Rilly Claude. ''Répertoire d'épigraphie méroïtique'', Tome II – REM 0401 à REM 0851 (2000), pp. 715–1371.]
+* [https://www.persee.fr/doc/rem_0000-0000_2000_num_3_1_849 Leclant Jean, Heyler André, Berger el Naggar Catherine, Carrier Claude, Rilly Claude.  ''Répertoire d'épigraphie méroïtique'', Tome III – REM 1001 à REM 1278 (2000), pp. 1373–2083]
+
+{{list of writing systems}}
+[[Category:3rd-century BC establishments]]
+[[Category:Alphabets]]
+[[Category:Hieroglyphs]]
+[[Category:Writing systems of Africa]]
+[[Category:Obsolete writing systems]]
+[[Category:Kingdom of Kush]]
+[[Category:Blemmyes]]

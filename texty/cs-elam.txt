@@ -1,0 +1,82 @@
+{{Infobox - jazyk
+ | název = '''Elamština'''
+ | rozšíření = 
+ | mluvčích = 
+ | klasifikace = [[Izolované jazyky]]
+ | písmo = [[Klínové písmo]]
+ | úřední jazyk = [[Achaimenovská říše]]
+ | regulátor = není stanoven
+ | ISO6391 = 
+ | ISO6392B = 
+ | ISO6392T = 
+ | ISO6393 = 
+ | SILručně = 
+ | SIL = 
+ | wikipedie = 
+ | mapa rozšíření = Brick Shilhak-Inshushinak Louvre Sb11945.jpg
+ | popisek rozšíření = 
+}}
+'''Elamština''' je jeden z&nbsp;mrtvých jazyků [[Blízký východ|Blízkého východu]], který byl úředním jazykem [[Elam|Elamské říše]] a od 6.&nbsp;století i&nbsp;[[Achaimenovská říše|Achaimenovské říše]]. Společně se [[Staroperština|starou perštinou]] a babylonštinou ji lze nalézt na [[Achaimenovci|achaimenovských]] kamenných reliéfech v&nbsp;[[Behistunský nápis|Bísotúnu]], [[Gandž Náme]] a [[Persepolis|Persepoli]]. Poslední památky s&nbsp;výskytem elamštiny se objevily po dobytí perské říše [[Alexandr Veliký|Alexandrem Velikým]].
+
+== Elamské písemné památky ==
+Nejstarší elamské epigrafické památky lze najít v&nbsp;[[Súsy|Súsách]]. Tento jazyk nazýváme proto-elamštinou a její písmo je tvořeno více než 1000&nbsp;znaky, z&nbsp;nichž většina jsou ideogramy. Později, v&nbsp;době vlády Akkadských vládců, začali písaři používat nový druh písma odvozený od [[sumerština|sumerského písma]]. Tento druh písma se však používal pouze 250&nbsp;let.
+Mezi lety 2500–331&nbsp;př. n. l. se začalo pro zápis elamštiny [[Akkadské písmo|akkadského]] klínového písma, který se skládal ze 130&nbsp;znaků.
+
+== Příklady ==
+{{Pahýl část}}
+
+== Rozluštění ==
+Významný pokrok v rozluštění lineárního elamského písma přinesl výzkum francouzského archeologa a lingvisty [[François Desset|Françoise Desseta]] a jeho týmu. Desset pracoval především s nápisy na stříbrných nádobách a dalších starověkých předmětech. Zaměřil se na identifikaci vlastních jmen panovníků a božstev. Klíčovým momentem bylo rozpoznání jména elamského [[Šilhaha|vládce Šilhahy]], které umožnilo přiřadit fonetické hodnoty dalším znakům.
+
+V roce 2022 Desset se svými spolupracovníky publikoval rozsáhlé rozluštění většiny známých znaků.<ref>{{Citace periodika | příjmení = Desset | jméno = François | spoluautoři = Tabibzadeh, Kambiz; Kervran, Matthieu; Basello, Gian Pietro; Marchesi, Gianni | titul = The Decipherment of Linear Elamite Writing | periodikum = Zeitschrift für Assyriologie und Vorderasiatische Archäologie | ročník = 112 | číslo = 1 | rok = 2022 | strany = 11–60}}</ref>
+
+=== Číslovky ===
+{| cellspacing="7"
+|-
+| '''Elamsky''' || '''Česky'''
+|-
+| kiir || jeden 
+|-
+| mair || dva 
+|-
+| zíti || tři 
+|}
+
+== Vzorový text ==
+: u Darīamauiš eššana eššanaipinna eššana
+: Baršipikka eššana dāuišbena Mīšdāšba šākri
+: Iršama rūḫḫušākri Ḫakamannušīa.
+: āk Darīamauiš eššana nānri u addada Mīšdāšba
+: āk Mīšdāšba atteri Iršaumma āk Iršaumma atteri
+: Ḫarrīaraumna āk Ḫarrīaraumna atteri Zīšpiš
+: āk Zīšpiš atteri Ḫākamannuiš.
+
+== Odkazy ==
+
+=== Reference ===
+<references />
+
+=== Externí odkazy ===
+* {{Commonscat}}
+* {{Citace elektronického periodika
+ | příjmení1 = Karlík
+ | jméno1 = Tomáš
+ | titul = Prastaré íránské písmo rozluštil jediný vědec
+ | periodikum = ČT24
+ | vydavatel = Česká televize
+ | datum_vydání = 2026-05-04
+ | url = https://ct24.ceskatelevize.cz/clanek/veda/prastare-iranske-pismo-rozlustil-jediny-vedec-373062
+ | datum_přístupu = 2026-05-04
+}}
+
+{{Pahýl}}
+
+{{Izolované jazyky}}
+
+{{Autoritní data}}
+{{Portály|Írán|Jazyk|Starověk}}
+
+[[Kategorie:Mrtvé izolované jazyky]]
+[[Kategorie:Izolované jazyky Asie]]
+[[Kategorie:Elamsko-drávidské jazyky]]
+[[Kategorie:Starověké jazyky]]

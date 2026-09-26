@@ -1,0 +1,120 @@
+{{short description|Göktürk inscriptions dating to the 8th century}}
+{{Infobox artifact
+| name = Orkhon inscriptions
+| native_name = {{langx|otk|𐰏𐱃𐱁‎𐰋𐰃𐱅‎|bitig taš|lit=A stone where the old Turkic inscription was carved.}}<ref>[https://bitig.kz/?lang=e&mod=1&tid=1&oid=15&m=1]</ref> {{lang-zh|t=闕特勤碑|s=阙特勤碑|p=Què tèqín bēi}} ('Queteqin Monument')
+| image = Kultigin Monument of Orkhon Inscriptions.jpeg
+| alt = Kultigin Monument of Orkhon Inscriptions – Orkhun Museum, Kharkhorin, Mongolia
+| image_caption = The Kul Tigin stele at [[Göktürk Museum]], [[Khashaat]], Mongolia
+| type = Memorial
+| height = {{convert|3.3|m}}
+| width = {{convert|1.3|m}}
+| weight = <!-- {{convert|}} -->
+| long = <!-- {{convert|}} -->
+| writing = [[Middle Chinese]];<br /> [[Old Turkic]], written in [[Old Turkic alphabet]]
+| symbols = 
+| created = 8th century
+| discovered_place = [[Orkhon Valley]], Mongolia
+| discovered_coords = {{Coord|47|33|38|N|102|50|28|E|region:MN|display=inline,title}}
+| discovered_date = {{date|1889}}
+| discovered_by = [[Nikolai Yadrintsev]]
+| location = Bilge Khan and General Kul Tigin Complex
+| classification = 
+| culture = 
+| id = <!-- Identification code (numbers or letters) for the artifact, if known. -->
+}}
+
+The '''Orkhon inscriptions''' are bilingual texts in [[Middle Chinese]] and [[Old Turkic]], the latter written in the [[Old Turkic alphabet]], carved into two memorial [[stele]]s erected in the early 8th century by the [[Göktürks]] in the [[Orkhon Valley]] in what is modern-day [[Mongolia]]. They were created in honor of two Turkic princes, [[Kul Tigin]] and his brother [[Bilge Qaghan]].<ref name= Final>{{cite journal |last= Ross |first=E. Denison |title= The Orkhon Inscriptions: Being a Translation of Professor Vilhelm Thomsen's Final Danish Rendering |journal= Bulletin of the School of Oriental Studies |publisher= University of London |volume=5 |issue=4 |pages= 861–76 |year= 1930 |doi= 10.1017/S0041977X00090558 |s2cid= 140199091 |jstor= 607024}}</ref>
+
+The inscriptions relate in both languages the legendary origins of the Turks, the golden age of their history, their subjugation by the [[Tang dynasty]], and their liberation by [[Ilterish Qaghan]].<ref name= Poem>{{cite journal|title=The Earliest Turkic Poem|journal= Journal of the American Oriental Society|volume=82|issue=4|pages=557|jstor=597528|last1=Krueger|first1=John R.|year=1962|doi=10.2307/597528}}</ref> According to one source, the inscriptions contain "rhythmic and parallelistic passages" which resemble that of epics.<ref name= Final/>
+
+==Name==
+Orkhon can also be transcribed as Orhun. [[Orkhon Valley|Orkhon valley]] is where monuments were found and named after. They are also called Kul Tigin steles and Bilge Qaghan inscriptions.<ref>{{Cite journal |title=Descriptive Adjectives in the Bilge Qaghan Inscription |journal=International Journal of Social and Economic Sciences}}</ref>
+
+Inscriptions together also known as the Khöshöö Tsaidam Turkic memorial complex (also spelled ''Kocho-Tsaidam'',<ref>{{Cite news |last=Nakispekova |first=Aiman |date=15 December 2025 |title=Turkic Heritage Takes Spotlight on Global Cultural Stage |url=https://astanatimes.com/2025/12/turkic-heritage-takes-spotlight-on-global-cultural-stage/ |access-date=10 May 2026 |work=The Astana Times}}</ref> ''Khoshoo Tsaidam'',{{Citation needed|date=May 2026}} ''Koshu-Tsaidam''{{Citation needed|date=May 2026}} or ''Höshöö Caidam{{Citation needed|date=May 2026}}''), which comes from [[Khoshoo Tsaidam]] archaeological site where the monuments were found.<ref>{{Cite web |title=UNESCO Orkhon Valley Cultural Landscape |url=https://whc.unesco.org/uploads/nominations/1081rev.pdf |quote=Turkic memorials of Khöshöö Tsaidam: The Khöshöö Tsaidam Turkic monuments are located in the Tsaidam Lake Valley, along the western part of the Orkhon river.}}</ref>
+
+Kul Tigin (684–731; {{lang-zh|t=闕特勤|s=阙特勤|p=Què tèqín}}) is one of the two brothers to whom the monument was dedicated.
+
+==Discovery and translation==
+The inscriptions were discovered by [[Nikolai Yadrintsev]]'s expedition in 1889, published by [[Vasily Radlov]]. The original text was written in the [[Old Turkic alphabet]] and was deciphered by the [[Danes|Danish]] philologist [[Vilhelm Thomsen]] in 1893. Thomsen first published the translation in French in 1899, and then a more complete interpretation in Danish in 1922.<ref name= Final/><ref name=Brit>{{Cite encyclopedia | title =Orhon inscriptions | encyclopedia = Encyclopædia Britannica | access-date = November 10, 2010 |url= http://www.britannica.com/EBchecked/topic/432269/Orhon-inscriptions}}</ref>
+
+===Region===
+The [[Orkhon Valley]] is a region on the western [[Orkhon River]] in modern-day [[Mongolia]], near [[Ögii Lake]]. More specifically, they stand about {{Convert|50|mi|km|abbr=on|order=flip}} north of the [[Erdene Zuu Monastery]], and approximately {{Convert|25|mi|km|abbr=on|order=flip}} northwest of the [[Ordu-Baliq]].<ref name= Final/>
+
+===Importance===
+Before the Orkhon inscriptions were deciphered by [[Vilhelm Thomsen]], very little was known about [[Old Turkic script|Turkic script]]. The scripts are the oldest form of a Turkic language to be preserved. When the Orkhon inscriptions were first discovered, it was obvious that they were a [[rune|runic]]<ref>Mehmet Ölmez, “Some Specific Features of
+the Language of Siberian Runic Inscriptions,” in Interpreting the Turkic Runiform Sources and the Position of the Altai Corpus, eds. Irina Nevskaya and Marcel Erda (Klaus Schwarz Verla, Berlin, 2015), pp 122-130.</ref> type of script that had been discovered at other sites, but these versions also had a clear form, similar to an [[alphabet]]. When Vilhelm Thomsen deciphered the inscriptions it was a huge stepping stone in understanding Old Turkic script, providing much of the foundation for translating other Turkic writings.
+
+The script follows an alphabetical form, but also appears to have strong influences of rune carvings. The inscriptions are a great example of early signs of nomadic society's transitions from use of runes to a uniform alphabet, and the Orkhon alphabet is thought to have been derived from or inspired by a non-cursive version of the [[Sogdian script]].<ref name= run>{{cite journal|last=Kempf|first=Bela|title=Old Turkic runiform inscriptions|journal= Turkic Languages|volume=8 |pages=41–52| url=http://altaica.ru/LIBRARY/Kempf_2004.pdf}}</ref><ref name= OrkhonOT>{{cite web|title=Orkhon/Old Turkic|url=http://www.omniglot.com/writing/orkhon.htm|publisher=Omniglot}}</ref>
+
+==Historical context==
+[[File:Kultigin.png|thumb|right|200px|Reconstruction of Kül Tigin's memorial (after Nowgorodova 1981)]]
+
+The steles were erected by the [[Göktürks]] in the early 8th century. They commemorate the brothers [[Bilge Qaghan]] (683–734) and [[Kul Tigin]] (684–731), one a politician and the other a military commander. Both were descendants of [[Ilterish Qaghan]] of the [[Second Turkic Khaganate]], which was a prominent Turkic nomadic society during the [[Tang dynasty]].<ref name= Khazar>{{cite book |last= Golden |first= Peter B. |title= Turks and Khazars: origins, institutions, and interactions in pre-Mongol Eurasia |year= 2010 |publisher= Ashgate/Variorum |location= Farnham, England |isbn=978-1-4094-0003-5}}</ref>
+{{Location map|Asia|caption=Location of the Orkhon Valley in Asia|alt=Location of the Orkhon Valley in Asia|relief=1|lat_deg=47.55666666667|lon_deg=102.831389}}
+
+The Göktürks have left artifacts and installations all over their realm, from [[Manchuria]] to the [[Black Sea]], but only in modern-day Mongolia have any memorials to kings and other aristocrats been found. The ones in Khöshöö Tsaidam consist of tablets with inscriptions in [[Chinese characters |Chinese]] and [[Old Turkic script |Old Turkic]] characters. Both monuments are stone slabs originally erected on carved [[Bixi|stone turtles]] within walled enclosures. Bilge Qaghan's stone shows a carved [[ibex]] (the emblem of Göktürk qaghans) and a twisted dragon. In both enclosings, evidence of altars and carved depictions of human couples were found, possibly depicting the respective honorary and his spouse.
+
+The [[Old Turkic]] inscriptions on these monuments were written by [[Yollıg Khagan |Yollıg Tigin]], a son of Bilge Qaghan. These inscriptions, together with the [[Tonyukuk inscriptions]], are the oldest extant attestation of that language.<ref>{{Cite book |last= Sinor |first= Denis |author-link= Denis Sinor |title= "Old Turkic". History of Civilizations of Central Asia. 4 |publisher= UNESCO Publishing |year= 2002 |location= Paris |isbn=978-0-7007-0869-7|pages= 331–333}}</ref><ref>{{Cite book |last= Tekin |first= Talat |title=A Grammar of Orkhon Turkic (Uralic and Altaic) |publisher= Routledge |year=1997 |isbn= 978-0-7007-0869-7}}</ref><ref>{{Cite book |last= Tekin |first= Talat |title= Les inscriptions des l'Orkhon |publisher= Simurg |year= 1995 |location= Istanbul |isbn= 978-975-7172-06-2}}</ref> The inscriptions show the sacred importance of the region, as evidenced by the statement, "If you stay in the land of the Ötüken, and send caravans from there, you will have no trouble. If you stay at the Ötüken Mountains, you will live forever dominating the tribes!".<ref name= Drompp>{{cite journal |last= Drompp |first= Michael R. |year= 1999 |title= Breaking the Orkhon Tradition: Kirghiz Adherence to the Yenisei Region after A. D. 840 |journal=[[Journal of the American Oriental Society]] |volume= 119 |issue=3 |pages= 390–403 |jstor= 605932 |doi= 10.2307/605932}}</ref>
+
+== Content of the inscriptions ==
+[[File:Gok turk Epigraph Copy in Gazi University Ankara.jpg|thumb|200px|Replica of [[Bilge Khagan]]'s memorial complex in [[Gazi University]], Ankara]]
+
+The two monuments themselves have engravings on all four sides. However, some of the script was not preserved. One translation of the first and second monuments seems to indicate that the text continues from one side to the other.
+
+The first portion of the Turkic translations seems to be Bilge Qaghan discussing the commemoration of the tablet, as well as mentioning the extent of the empire: {{quote|"To the east I have made campaigns as far as the Shantung plain, and almost reached the sea; to the south I have made campaigns as far as Tokuz-Ersin and almost reached [[Tibet]]; to the west I have made campaigns beyond Yenchii-Iigiiz ('Pearl River') as far as Timir-Kapig ('the Iron Gate'); to the north I have made campaigns as far as the land of the Yer-Bayirku's. To all these lands have I led (the Turks). The forest of Mount Otiikin has no [foreign] overlord; the forest of Mount Otiikin is the place where the kingdom is held together."}} 
+
+The inscriptions also highlight Bilge Qaghan's accomplishment of uniting his people: {{quote|"By the will of Heaven, and because I was greatly deserving and it so brought it about, I brought the dying people back to life; for the naked people I found clothing, the poor people I made rich, the scanty people I made numerous. I have made the other, which has a kingdom and a kagan, to stand higher. All the peoples in the four quarters of the world I have brought to keeping the peace and making an end of hostilities; they all have obeyed me, and serve me."}}
+
+The rest of the inscriptions are broken up and fragmentary, but seem to detail the conquests against the [[Kyrgyz people|Kyrgyz]] and the [[Tangut people]]s and also the death of Kul Tigin in battle, and eventually the succession of Bilge Qaghan by his son.<ref name= Final/> Bilge Qaghan's mother, [[El Bilga Khatun]], was also mentioned in these inscriptions.<ref name= Pohl>{{cite book |last1=Pohl |first1=Walter |title=The Avars: A Steppe Empire in Central Europe, 567–822 |date=15 December 2018 |publisher=Cornell University Press |isbn=978-1-5017-2940-9 |pages=257 |url=https://books.google.com/books?id=ZoR1DwAAQBAJ&pg=PA257 |language=en}}</ref>
+
+The following is an excerpt from the last paragraph of the inscriptions (in Old Turkic and English languages):<ref>{{cite book |editor1-last=Sela |editor1-first=Ron |editor2-last=Cameron Levi |editor2-first=Scott |title=Islamic Central Asia An Anthology of Historical Sources |date=2010 |publisher=Indiana University Press |page=55}}</ref>
+
+{{quote|"You, Turk Oghuz lords and peoples, hear this! If the sky above did not collapse, and if the earth below did not give way, O Turkic people, who would be able to destroy your state and institutions?"}}
+
+===Relations with the Chinese===
+{{main article|Turks in the Tang military}}
+
+The inscriptions seem to have mixed views on [[Tang dynasty|Tang Chinese]] influence. On the one hand, it seems to contain the view that the Turks despise the Chinese. It appears as though Bilge Qaghan wanted to distinguish his people from the Chinese in order to remain a strong independent society. In the inscription Bilge Qaghan reprimands those Turks who have been influenced by Chinese culture and have adopted a Chinese way of life: 
+{{quote|"Because of want of harmony between the begs and the people, and because of the Chinese people's cunning and craft and its intrigues, and because the younger and the elder brothers chose to take counsel against one another and bring discord between begs and people, they brought the old realm of the Turkic people to dissolution, and brought destruction on its lawful kagans. The sons of the nobles became the bondsmen of the Chinese people, their unsullied daughters became its slaves. The Turkic begs gave up their Turkic names, and bearing the Chinese names of Chinese begs they obeyed the Chinese Emperor, and served him during fifty years. For him they waged war in the East towards the sun's rising, as far as [[Goguryeo|Bokli kagan]], in the West they made expeditions as far as Taimirkapig; for the Chinese Emperor they conquered kingdoms and power. The whole of the common Turkic people said thus: 'I have been a nation that had its own kingdom; where is now my kingdom? For whom do I win the kingdoms? said they. I have been a people that had its own kagan; where is my kagan? Which kagan is it I serve?'".<ref name= Silay>{{cite book|author=Kemal Silay|title=An Anthology of Turkish Literature|url=https://books.google.com/books?id=2sJlAAAAMAAJ&q=daughters+destined+|year=1996|publisher=The University|isbn=978-1-878318-11-4|pages=4, 5}}</ref><ref name= Saunders>{{cite book|author=J. J. Saunders|title=The History of the Mongol Conquests|url=https://books.google.com/books?id=nFx3OlrBMpQC&q=the+sons+of+turkish+nobles+became+the+slaves+of+the+chinese+people&pg=PA24|date=1 March 2001|publisher=University of Pennsylvania Press|isbn=978-0-8122-1766-7|pages=24–}}</ref><ref name= Grousset>{{cite book|author=René Grousset|title=The Rise and Splendour of the Chinese Empire|url=https://books.google.com/books?id=oncUz_U-joIC&q=the+sons+of+turkish+nobles+became+the+slaves+of+the+chinese+people&pg=PA130|year=1953|publisher=University of California Press|isbn=978-0-520-00525-9|pages=130–}}</ref><ref name= Lovell>{{cite book|author=[[Julia Lovell]]|title=The Great Wall: China Against the World, 1000 BC - AD 2000|url=https://books.google.com/books?id=IWS53cuiuVgC&q=the+sons+of+turkish+nobles+became+the+slaves+of+the+chinese+people&pg=PA142|date=1 December 2007|publisher=Grove/Atlantic, Incorporated|isbn=978-1-55584-832-3|pages=142–}}</ref><ref>{{cite book|title=Analecta Orientalia Posthumous Writings and Selected Minor Workds|url=https://books.google.com/books?id=P9oUAAAAIAAJ&q=the+sons+of+turkish+nobles+became+the+slaves+of+the+chinese+people&pg=PA42|publisher=Brill Archive|pages=42–|id=GGKEY:3S3JPXD29QD}}</ref><ref name= Goodrich>{{cite book|author=Luther Carrington Goodrich|title=A Short History of the Chinese People|url=https://books.google.com/books?id=BZf_L1V7NLUC&q=the+sons+of+turkish+nobles+became+the+slaves+of+the+chinese+people&pg=PA120|year=2002|publisher=Courier Corporation|isbn=978-0-486-42488-0|pages=120–}}</ref><ref name= Schafer>{{cite book|author=Edward H. Schafer|title=The Golden Peaches of Samarkand: A Study of Tʻang Exotics|url=https://books.google.com/books?id=jqAGIL02BWQC&q=the+sons+of+turkish+nobles+became+the+slaves+of+the+chinese+people&pg=PA49|year=1963|publisher=University of California Press|isbn=978-0-520-05462-2|pages=49–}}</ref><ref name= Twitchett>{{cite book|author=Denis C. Twitchett|title=The Cambridge History of China: Volume 3, Sui and T'ang China, 589-906 AD, Part One|url=https://books.google.com/books?id=ReCvuwAACAAJ&q=the+sons+of+turkish+nobles+became+the+slaves+of+the+chinese+people&pg=PA223|date=27 September 1979|publisher=Cambridge University Press|isbn=978-0-521-21446-9|pages=223–}}</ref>}}
+
+The claimed enslavement of the Turks also did not help the reputation of the Chinese. Bilge Qaghan seems to blame the Chinese for the disunion of his Turkic state. This Turkic view of the Chinese seems to be negative.<ref name= Final/><ref name= Tibet>{{cite journal|last=Scharlipp|first=Wolfgang-Ekkehard|title=China and Tibet as Referred to in the Old Turkic Inscriptions| journal = Diogenes |date= 1995 |volume=43|issue=171 | pages=45–42|doi=10.1177/039219219504317106 }}</ref>
+
+The Orkhon inscriptions indicate prisoners of war have often been designated with the status of slaves. Inscriptions found in the [[First Turkic Khaganate]] also imply that terms denoting slavery or other forms of subordinate status, such as ''qul'' (male slave; also do see [[coolie]], from where the term is derived as well) and ''küng'' (female slave or handmaiden), are frequently applied to a population of defeated political entities.<ref>Golden, "Terminology," p.&nbsp;29.</ref>
+
+However, the translation also reveals a degree of diplomacy with the neighboring Chinese, as evidenced by his statement, {{quote|"While I have ruled here, I have become reconciled with the Chinese people. The Chinese people, who give in abundance gold, silver, millet, and silk, have always used ingratiating words and have at their disposal enervating riches. While ensnaring them with their ingratiating talk and enervating riches, they have drawn the far-dwelling peoples nearer to themselves. But after settling down near them these we have come to see their cunning."}}
+
+Bilge Qaghan also references the hiring of Chinese artists when he claims, {{quote|"From the Chinese Emperor I have had artists to come, and have set them to work. My request has not been refused. They have sent the Chinese Emperor's court painters. I have bidden them set up a separate hall, and inside and out I have had them to make various paintings. I have had the stone hewn; that which lay in my heart to utter I have. Understand to see this all as far as the suns and subjects of the Ten Arrows. I have had the memorial stone hewn."}} To further complicate the already muddled view of the Chinese, the inscriptions contain both Turkic and Chinese translations. Thus, the inscription contains evidence that Bilge Qaghan had cultural interaction with the Tang dynasty.<ref name= Final/><ref name= Tibet/>
+
+==Restoration and access==
+Both inscriptions are part of the Orkhon Valley Cultural Landscape UNESCO [[World Heritage Site]] in Mongolia. The [[Turkish Cooperation and Coordination Agency|Turkish International Cooperation and Development Agency]] showed interest in the site in the late 20th century and finalized their project to restore and protect all three{{clarify |Which three? Until now only the 2 steles were mentioned, and they may be counted as 1 or 2. So 1 or 2 are so far kept secret :) |date= February 2025}} inscriptions. Since 2000, over 70 archaeologists from around the world (specifically from [[Uyghur language|Uighur]],{{clarify |Not a country. So who, what? |date= February 2025}} [[Turkmenistan]], [[Azerbaijan]], [[Uzbekistan]], [[Tataristan]]{{clarify |You mean Tatarstan, the republic from the Russia Fed.? |date= February 2025}} and [[Turkey]]) have studied the area and performed excavations. The site is now protected by fences with buildings for research work and storage of artifacts. The total cost of the project is around 20 million dollars and eventually will include building a museum to house the inscriptions and other recently discovered artifacts.<ref name= protect>{{cite news |title= Orkhon inscriptions placed under protection |newspaper=[[Hürriyet Daily News]] |url=http://www.hurriyetdailynews.com/default.aspx?pageid=438&n=orkhon-inscriptions-placed-under-protection-2000-03-16s}}</ref>{{better source needed |date= February 2025}}
+
+== See also ==
+* [[History of the Turkic peoples]]
+* [[Old Turkic alphabet]]
+
+== References ==
+=== Citations ===
+{{Reflist}}
+
+=== Sources ===
+{{refbegin}}
+* Report of the 28th Session of the [[World Heritage Committee]]
+* Sören Stark ''Die Alttürkenzeit in Mittel- und Zentralasien. Archäologische und historische Studien'' (Nomaden und Seshafte, Band 6). Reichert: Wiesbanden 2008, pp.&nbsp;76–78, plates 5-7.
+{{refend}}
+
+==External links==
+* [https://www.turkbitig.com/orhun-yazitlari/bilgekagan.html Orkhon Inscriptions Text]
+* [http://www.omniglot.com/writing/orkhon.htm Omniglot: Old Turkic Language]
+* [[iarchive:orkhoninscriptions|English translation]]
+
+{{Göktürks}}
+{{Turkic inscriptions}}
+{{Authority control}}
+
+[[Category:1889 archaeological discoveries]]
+[[Category:8th-century inscriptions]]
+[[Category:Archaeological sites in Mongolia]]
+[[Category:Multilingual texts]]
+[[Category:Chinese inscriptions]]
+[[Category:Göktürk inscriptions]]
+[[Category:Speeches by heads of state]]

@@ -1,0 +1,183 @@
+{{Short description|Undecyphered bronze-age Cretan writing system}}
+{{Use British English|date=December 2012}}
+{{Use dmy dates|date=August 2025}}
+{{Infobox writing system
+| name        = Cretan hieroglyphs
+| type        = Undeciphered
+| typedesc    = (presumed [[ideographic]], possibly with a [[Syllabary|syllabic]] component)
+| languages   = Unknown; possibly [[Minoan language|Minoan]]
+| time        = [[Minoan chronology|MM I to MM III]]
+2100–1700 BC
+| status      = Extinct
+| fam1        = [[Proto-writing]]
+| sisters     = [[Linear A]]
+| sample      = Pini-plombe-orig-II2 316d 3.2.jpg
+| caption     = A green [[jasper]] [[Minoan seals|Minoan seal]] with Cretan hieroglyphs, 1800 BC
+| imagesize   = 
+}}
+
+'''Cretan hieroglyphs''' are a [[hieroglyphic]] [[writing system]] used in early [[Bronze Age]] [[Crete]], during the [[Minoan civilization|Minoan era]]. It predates [[Linear A]] by about a century, but the two writing systems continued to be used in parallel for most of their history.{{sfnp|Yule|1981|pp=170–171}} {{As of|2026}}, it is [[Undeciphered writing systems|undeciphered]].<ref>{{cite book |url=https://cris.unibo.it/bitstream/11585/991459/1/Cretan%20Hieroglyphic_CUP_INTRO.pdf |last1=Civitillo |first1=Matilde |last2=Ferrara |first2=Silvia |last3=Meissner |first3=Torsten |chapter=Introduction |title=The Earliest Script on Crete: Semiotics, Linguistics, Archaeology and Palaeography, Cretan Hieroglyphic |publisher=[[Cambridge University Press]] |pages=1–12 |date=2024}}</ref>
+
+==Corpus==
+As of 1989, the corpus of Cretan hieroglyphic inscriptions included two parts:
+* Seals and sealings, 150 documents with 307 sign-groups, using 832 signs in all.
+* Other documents on clay, 120 documents with 274 sign-groups, using 723 signs.{{sfnp|Olivier|1990}}
+
+More documents, such as those from the [[Petras]] deposit, have been published since then. A four sided prism was found in 2011 at [[Vrysinas]] in western Crete.{{sfnp|Hallager|Papadopoulou|Tzachili|2012}}
+
+These inscriptions were mainly excavated at four locations:
+* "Quartier Mu" at [[Malia (archaeological site)|Malia]] ([[Minoan civilization#Middle Minoan|Middle Minoan II period]] = MM II)
+* Malia palace (MM III)
+* [[Knossos]] (MM II or III)
+* the Petras deposit (MM IIB), 12 clay documents, 5 seal impressions, and 6 seals, excavated starting in 1995 and published in 2010.{{sfnp|Tsipopoulou|Hallager|2010}}
+
+The first corpus of signs was published by [[Arthur Evans|Evans]] in 1909.{{sfnp|Evans|1909}} The current corpus (which excludes some of Evans' signs) was published in 1996 as the ''Corpus Hieroglyphicarum Inscriptionum Cretae'' (''CHIC'').{{sfnp|Olivier|Godart|1996}} It consists of:
+* clay documents with incised inscriptions (CHIC H: 1–122)
+* sealstone impressions (CHIC I: 123–179)
+* sealstones (CHIC S: 180–314)
+* the [[Malia altar stone]]
+* the [[Arkalochori Axe]]
+* seal fragment HM 992, showing a single symbol, identical to [[Phaistos Disk]] glyph 21.{{sfnp|Sanavia|2017}}
+
+The relation of the last two items with the script of the main corpus is uncertain; the Malia altar is listed as part of the Hieroglyphic corpus by most researchers.{{sfnp|Macdonald|1999}}
+
+Since the publication of the CHIC in 1996 refinements and changes have been proposed.{{sfnp|Jasink|2009}}{{sfnp|Montecchi|Ferrara|Valério|2021}} The main issue is that a number of symbols found on sealstones, tending to be more image-based, were deemed as purely decorative and not included in the sign list (or are transcribed when read). The concern is that this process may have resulted in actual signs being deprecated.{{sfnp|Kanta|Palaima|Perna|2022}}{{sfnp|Ferrara|Montecchi|Valério|2023}}
+
+Some Cretan Hieroglyphic (as well as Linear A) inscriptions were also found on the island of [[Samothrace]] in the northeastern Aegean.{{sfnp|Finkelberg|1998|pp=265–272}}
+
+Some scholars have suggested relations to [[Anatolian hieroglyphs]]:
+
+{{blockquote|The overlaps between the Cretan script and other scripts, such as the hieroglyphic scripts of Cyprus and the Hittite lands of Anatolia, may suggest ... that they all evolved from a common ancestor, a now-lost script perhaps originating in Syria.{{sfnp|Castleden|2002|p=[https://books.google.com/books?id=g8eIAgAAQBAJ&pg=PA100 100]}}}}
+
+New exemplars continue to be found. During recent excavation at the Neopalatial area of the Cult Centre of the City of Knossos a seal stone was found in a foundation deposit. The steatite seal had four inscribed faces and the deposit dated to Final Palatial Period into LM III B. The room where the deposit was found had a "religious sceptre" inscribed all over with Linear A.{{sfnp|Kanta|Palaima|Perna|2022}}
+
+At [[Zakros]] three sealings inscribed with Cretan hieroglyphs were found in the same deposit with a Linear A tablet and a [[Linear A]] inscribed roundel. The deposit was in a destruction layer dated between layers LM IA and LM IB.<ref>D. G. Hogarth, "The Zakro Sealings", JHS 22, pp. 76-93, 1902</ref><ref>Perna, Massimo, "The Roundel in Linear A from Zakro Wc 2 (HM 84)", Kadmos 33.1, pp. 29-37, 1994</ref>
+
+==Signs==
+[[File:Archanes Script, 2100-1800 BC, AMH, Sk 2260, 144882.jpg|thumb|The Archanes Script. MM IA / MMIB, 2100–1800 BC. [[Archanes]] type of Cretan hieroglyphs. Archanes Phourni. Archaeological Museum of Heraklion]]
+[[File:Cretan hieroglyphs2.png|thumb|Cretan hieroglyphs (1900–1600 BC) on a clay bar from Malia or Knossos, [[Crete]]. As exhibited at [[Heraklion Archaeological Museum]], Crete, Greece. Dots represent numerals]]
+
+Symbol inventories have been compiled by {{harvp|Evans|1909}}, {{harvp|Meijer|1982}}, and {{harvp|Olivier|Godart|1996}}.
+
+The glyph inventory in CHIC includes 96 [[syllabograms]] representing sounds, ten of which double as [[logograms]], representing words or portions of words.
+
+There are also 23 logograms representing four levels of numerals (units, tens, hundreds, thousands), nine signs for numerical fractions, and two types of punctuation.<ref>Nosch, Marie-Louise, et al., "The materiality of the Cretan Hieroglyphic Script: textile production-related referents to Hieroglyphic signs on seals and sealings from Middle Bronze Age Crete", The social and cultural contexts of historic writing practices. Contexts of and relations between writing systems 2, pp. 73-100, 2021</ref>
+
+Many symbols have apparent [[Linear A]] counterparts, so that it is tempting to insert [[Linear B]] sound values. Moreover, there are multiple parallels (words and phrases) from hieroglyphic inscriptions that occur also in Linear A and/or B in similar contexts (words for "total", toponyms, personal names etc.){{sfnp|Karnava|1999}}
+
+Several signs, according to Woudhuizen and Best, were influenced by Egyptian hieroglyphs.{{sfnp|Woudhuizen|2002}}{{sfnp|Best|2002}}
+
+==Chronology==
+[[File:The palace of Minos - a comparative account of the successive stages of the early Cretan civilization as illustrated by the discoveries at Knossos (1921) (14771199524).jpg|thumb|Cretan hieroglyphics as seen in seals (A) and tablets (B).]]
+{{Main|Minoan chronology}}
+{{See also|Linear A#Chronology|l1=Chronology of Linear A|Linear B#Chronology|l2=Chronology of Linear B}}
+
+The development of hieroglyphs passed three important stages:
+* [[Archanes script]] (signs look like pictograms, although their number and frequency rather suggest a syllabic script); this script was only described as a distinct stage in development of the Cretan hieroglyphic in the 1980s. Most of these seals contain a repetitive "Archanes formula" of 2–3 signs.{{sfnp|Decorte|2018}}
+* Hieroglyphic A (best represented in archaeological records; similar to Archanes, but images of animals are reduced to heads only)
+* Hieroglyphic B (mostly on clay, characters are essentially simplified, may have served as a prototype for Linear A and possibly the Cypro-Minoan script). Only this latter version of the hieroglyphic includes signs that can possibly match ideograms known from Linear A.
+
+The sequence and the geographical spread of Cretan hieroglyphs, Linear A, and Linear B, the five overlapping, but distinct, writing systems of Bronze Age Crete and the [[Greek mainland]] can be summarized as follows:{{sfnp|Olivier|1986|pp=377–389 (377f.)}}
+
+{| class="wikitable sortable" style="margin:1px; border:1px solid #ccc;"
+|- style="text-align:left; vertical-align:top;" "
+! Writing system
+! Geographical area
+! Time span{{efn|Beginning date refers to first attestations, the assumed origins of all scripts lie further back in the past.}}
+|-
+|Cretan Hieroglyphic
+|[[Crete]] (eastward from the Knossos-Phaistos axis)
+|c. 2100–1700 BC{{sfnp|Castleden|2002|p=[https://books.google.com/books?id=g8eIAgAAQBAJ&pg=PA100 100]}}{{sfnp|Robinson|2009|p=[https://books.google.com/books?id=zcXH52jICOEC&pg=PT55 55–]}}
+|-
+|[[Linear A]]
+|[[Crete]] (except extreme southwest), [[Aegean islands]] ([[Kea (island)|Kea]], [[Kythera]], [[Melos]], [[Santorini|Thera]]), and Greek mainland ([[Laconia]])
+|c. 1800–1450 BC{{sfnp|Haarmann|2008}}{{sfnp|Redmond|2007|pp=[https://books.google.com/books?id=K2zOhNL5skcC&pg=PA2 2–]}}{{sfnp|Jahandarie|1999|pp=[https://books.google.com/books?id=0R52Nzw_0c4C&pg=PA200 200–]}}{{sfnp|Wheatley|2008|pp=[https://books.google.com/books?id=Lb7jyuLpd0YC&pg=PA381 381–]}}
+|-
+|[[Linear B]]
+|[[Crete]] ([[Knossos]]), and [[Mainland Greece|mainland]] ([[Pylos]], [[Mycenae]], [[Ancient Thebes (Boeotia)|Thebes]], [[Tiryns]], [[Agios Vasileios, Laconia|Agios Vasileios]] – the ancient name of the latter is unknown)
+|c. 1450–1200 BC
+|-
+|[[Cypro-Minoan syllabary|Cypro-Minoan]]
+|[[Cyprus]]
+|c. 1550–1050 BC
+|-
+|[[Cypriot syllabary|Cypriot]] (Linear C)
+|[[Cyprus]] 
+|c. 11th–4th centuries BC
+|}
+
+==Fonts==
+The ''Aegean'' and ''Cretan Hieroglyphs'' fonts support Cretan hieroglyphs.<ref>[https://dn-works.com/ufas/ Unicode Fonts for Ancient Scripts] by George Douros</ref>
+
+==See also==
+* [[Eteocretan language]]
+
+==Notes==
+{{Reflist|group="A"}}
+
+{{Reflist|group=lower-alpha}}
+
+==References==
+{{Reflist|20em}}
+
+===Works cited===
+{{Refbegin|30em|indent=yes}}
+* {{Cite journal |last=Best |first=Jan |year=2002 |title=The Lotus Flower in Cretan Hieroglyphic |journal=Kadmos |volume=41 |issue=1 |pages=131–136 |doi=10.1515/kadm.2002.41.s1.131 |s2cid=162230027 |issn=0022-7498}}
+* {{Cite book |first=Rodney |last=Castleden |title=Minoans |publisher=[[Routledge]] |year=2002 |isbn=1134880642}}
+* {{Cite journal |last=Decorte |first=Roeland P.-J. E. |year=2018 |title=The First 'European' Writing: Redefining the Archanes Script |journal=[[Oxford Journal of Archaeology]] |volume=37 |issue=4 |pages=341–372 |doi=10.1111/ojoa.12152 |s2cid=59417289 | issn=0262-5253 |doi-access=free}}
+* {{Cite book |last=Evans |first=A. J. |title=Scripta Minoa: The Written Documents of Minoan Crete with Special Reference to the Archives of Knossos. Vol. I. The Hieroglyphic and Primitive Linear Classes with an Account of the Discovery of the Pre-Phoenician Scripts, their Place in Minoan Story and their Mediterranean Relations |year=1909 |location=Oxford}}
+* {{cite journal |last1=Ferrara |first1=Silvia |last2=Montecchi |first2=Barbara |last3=Valério |first3=Miguel |title=In Search of Lost Signs: A New Approach to the Issue of Writing and Non-Writing on Cretan Hieroglyphic Seals |journal=Oxford Journal of Archaeology |date=May 2023 |volume=42 |issue=2 |pages=107–130 |doi=10.1111/ojoa.12265 |s2cid=258091270 |language=en |issn=0262-5253|doi-access=free }}
+* {{Cite conference |last=Finkelberg |first=Margalit |author-link=Margalit Finkelberg |year=1998 |editor-last=Cline |editor-first=E. H. |editor2-last=Harris-Cline |editor2-first=D. |title=Bronze Age Writing: Contacts between East and West |url=http://www2.ulg.ac.be/archgrec/IMG/aegeum/aegaeum18(pdf)/31%20Finkelberg.pdf |conference=Aegeum 18 |location=Liège |pages=265–272 |archive-url=https://web.archive.org/web/20150319053424/http://www2.ulg.ac.be/archgrec/IMG/aegeum/aegaeum18(pdf)/31%20Finkelberg.pdf |archive-date=19 March 2015 |book-title=The Aegean and the Orient in the Second Millennium: Proceedings of the 50th Anniversary Symposium, Cincinnati, 18–20 April 1997}}
+* {{Cite journal |year=2008 |title=The Danube Script and Other Ancient Writing Systems: A Typology of Distinctive Features |first=Harald |last=Haarmann |journal=Journal of Archaeomythology |volume=4 |number=1 |url=https://www.archaeomythology.org/wp-content/uploads/2012/01/2008-vol4-a1-haarmann.pdf|issn=2162-6871}}
+* {{Cite journal |last1=Hallager |first1=Erik |last2=Papadopoulou |first2=Eleni |last3=Tzachili |first3=Iris |year=2012 |title=VRY S (4/4) 01 – The First Hieroglyphic Inscription from Western Crete |journal=Kadmos |volume=50 |issue=1 |pages=63–74|doi=10.1515/kadmos.2011.004 |s2cid=163980198 |issn=0022-7498 }}
+* {{Cite book |first=Khosrow |last=Jahandarie |title=Spoken and Written Discourse: A Multi-disciplinary Perspective |publisher=Greenwood Publishing Group |year=1999 |isbn=978-1-56750-427-9}}
+* {{Cite book |last=Jasink |first=Anna M. |title=Cretan hieroglyphic seals: A new classification of symbols and ornamental filling motifs |publisher=Fabrizio Serra |year=2009 |location=Pise-Rome}}
+* {{cite journal |last1=Kanta |first1=Athanasia |last2=Palaima |first2=Thomas G. |last3=Perna |first3=Massimo |title=A Hieroglyphic seal from the cult centre of the city of Knossos (KN S (4/4) 01): with an appendix by Alessandra Giumlia-Mair |journal=Kadmos |date=1 December 2022 |volume=61 |issue=1–2 |pages=61–96 |doi=10.1515/kadmos-2022-0003 |s2cid=257283511 |url=https://www.degruyter.com/document/doi/10.1515/kadmos-2022-0003/html |access-date= |language=de |issn=0022-7498 |url-access=subscription }}
+* {{Cite thesis |last=Karnava |first=Artemis |title=The Cretan Hieroglyphic Script of the Second Millennium BC: description, analysis, function and decipherment perspectives |url=https://difusion.ulb.ac.be/vufind/Record/ULB-DIPOT:oai:dipot.ulb.ac.be:2013/211862/Holdings |year=1999 |location=Bruxelles |volume=1–2}}
+* {{Cite journal |last=Macdonald |first=P. Jackson |date=1999 |title=A Statistical study of the Phaistos Disc |journal=Kadmos |volume=38 |issue=1–2 |pages=19–30 |doi=10.1515/kadm.1999.38.1-2.19 |s2cid=162209854 |issn=0022-7498}}
+* {{Cite journal |last1=Montecchi |first1=Barbara |last2=Ferrara |first2=Silvia |last3=Valério |first3=Miguel |year=2021 |title=Rationalizing the Cretan Hieroglyphic signlist |journal=Kadmos |volume=60 |issue=1–2 |pages=5–32 |doi=10.1515/kadmos-2021-0003 |s2cid=247979947 |issn=0022-7498 |doi-access=free |hdl=11585/881988 |hdl-access=free }}
+* {{Cite journal |last=Olivier |first=Jean-Pierre |title=Cretan Writing in the Second Millennium B.C. |url=https://dipot.ulb.ac.be/dspace/bitstream/2013/248436/4/53a239ae-5319-44a5-b013-69ca027964b7.txt |journal=World Archaeology |volume=17 |issue=3 |pages=377–389 |year=1986 |doi=10.1080/00438243.1986.9979977 |hdl=2013/ULB-DIPOT:oai:dipot.ulb.ac.be:2013/248436 | issn=0043-8243 }}
+* {{Cite book |last=Olivier |first=Jean-Pierre |url=http://www2.ulg.ac.be/archgrec/IMG/aegeum/Aegaeum5(pdf)/Olivier.pdf |title=Aegean Seals, Sealings, and Administration |publisher=Université de Liège, Histoire de l'art et archéologie de la Grèce antique |year=1990 |editor-last=Palaima |editor-first=Thomas G |chapter=The Relationship between Inscriptions on Hieroglyphic Seals and those Written on Archival Documents |archive-url=https://web.archive.org/web/20160303231548/http://www2.ulg.ac.be/archgrec/IMG/aegeum/Aegaeum5(pdf)/Olivier.pdf |archive-date=3 March 2016}}
+* {{Cite book |last1=Olivier |first1=Jean-Pierre |last2=Godart |first2=Louis |collaboration=Poursat, Jean-Claude |title=Corpus hieroglyphicarum inscriptionum Cretae |year=1996 |publisher=De Boccard |location=Paris |series=Études Crétoises 31 |pages=1–447 |isbn=2-86958-082-7 |url=https://cefael.efa.gr/detail.php?site_id=1&actionID=page&serie_id=EtCret&volume_number=31&issue_number=0&page_number=3&page_type=0 |language=fr}}
+* {{Cite book |last=Meijer |first=Louk C. |title=Eine strukturelle Analyse der Hagia Triada-Tafeln: ein Beitrag zur Linear A-Forschung |publisher=John Benjamins Publishing |year=1982 |isbn=978-90-6032-187-4 |language=de}}
+* {{Cite book |last=Redmond |first=Marian |title=Literacy and History: The Greeks |publisher=R.I.C. Publications |year=2007 |isbn=978-1-74126-506-4}}
+* {{Cite book |first=Andrew |last=Robinson |title=Writing and Script: A Very Short Introduction |date=27 August 2009 |publisher=OUP Oxford |isbn=978-0-19-157916-5}}
+* {{Cite journal |last=Sanavia |first=A. |year=2017 |title=An Overview of the Protopalatial Impressed Fine Ware from Phaistos and Some Comparisons with the Phaistos Disc |journal=LUME |volume=95 |page=81}}
+* {{Cite book |last1=Tsipopoulou |first1=Metaxia |last2=Hallager |first2=Erik |url=https://petras-excavations.gr/sites/petras-excavations.gr/files/M.Tsipopoulou-E.Hallager%202010.pdf |title=The Hieroglyphic Archive at Petras, Siteia (with contributions by Cesare D'Annibale & Dimitra Mylona) |publisher=Aarhus University Press |year=2010 |isbn=978-87-7934-293-4 |series=Monographs of the Danish Institute at Athens, 9 |location=Athens}}
+* {{Cite book |first=Paul |last=Wheatley |year=2008 |orig-year=1971 |title=The Origins and Character of the Ancient Chinese City, Volume 2: The Chinese City in Comparative Perspective |publisher=Transaction Publishers |isbn=978-0-202-36769-9}}
+* {{Cite journal |last=Woudhuizen |first=Fred C. |year=2002 |title=The "Trowel"-sign (Evans No. 18): Another Instance of Egyptian Influence on Cretan Hieroglyphic |journal=Kadmos |volume=41 |issue=1 |pages=129–130 |doi=10.1515/kadm.2002.41.s1.129 |s2cid=161315443 |issn=0022-7498}}
+* {{Cite book |last=Yule |first=Paul |title=Early Cretan Seals: A Study of Chronology |series=Marburger Studien zur Vor und Frühgeschichte 4 |url=https://digi.ub.uni-heidelberg.de/diglit/yule1981 |location=Mainz |year=1981 |doi=10.11588/diglit.3044 |isbn=3-8053-0490-0}}
+{{Refend}}
+
+==Further reading==
+* W. C. Brice, ''[https://www.degruyter.com/document/doi/10.1515/kadm.1990.29.1.1/html Notes on the Cretan Hieroglyphic Script: I. The Corpus. II. The Clay Bar from Malia, H20],'' Kadmos 29 (1990) 1-10.
+* W. C. Brice, ''Cretan Hieroglyphs & Linear A'', Kadmos 29 (1990) 171-2.
+* W. C. Brice, [https://www.degruyter.com/document/doi/10.1515/kadm.1991.30.2.93/html ''Notes on the Cretan Hieroglyphic Script: III. The Inscriptions from Mallia Quarteir Mu. IV. The Clay Bar from Knossos, P116''], Kadmos 30 (1991) 93–104.
+* W. C. Brice, "[https://www.degruyter.com/document/doi/10.1515/kadm.1992.31.1.21/html Notes on the Cretan Hieroglyphic Script]", Kadmos 31, pp. 21–24, 1992
+* M. Civitillo, "[https://iris.unikore.it/handle/11387/112886?mode=complete La scrittura geroglifica minoica sui sigilli. Il messaggio della glittica protopalaziale]", Biblioteca di Pasiphae XII, Pisa-Roma 2016. {{ISBN|978-88-6227-876-8}}
+* {{cite journal |last1=Facchetti |first1=Giulio M.|title=La questione della scrittura geroglifica cretese dopo la recente edizione del corpus dei testi |journal=Pasiphae: Rivista di filologia e antichità egee |date=2007 |issue=1 |doi=10.1400/132266 |isbn=978-88-6227-055-7 |url=https://irinsubria.uninsubria.it/handle/11383/1741657 |access-date= |issn=2037-738X}}
+* Silvia Ferrara, "[https://cris.unibo.it/handle/11585/759239 The Making of a Script: Cretan Hieroglyphic and the Quest for Its Origins"], Bulletin of ASOR, vol. 386, pp.&nbsp;1–22, November 2021  {{doi|10.1086/716098}}
+* {{Cite journal |last1=Ferrara |first1=Silvia |last2=Valério |first2=Miguel |last3=Montecchi |first3=Barbara |year=2022 |title=The Relationship between Cretan Hieroglyphic and Linear A: a palaeographic and structural approach |journal=Pasiphae – Journal of Aegean Philology and Antiquity |volume=26 |issue=16 |pages=81–109|url=https://cris.unibo.it/bitstream/11585/846045/1/FERRARA%20et%20al%202022%20Relationship%20Cretan%20Hieroglyphic%20Linear%20A%20OA.pdf |doi=10.19272/202233301006|issn=2037-738X}}
+* Ferrara, Silvia, "Icon, index, symbol: Language notation in the Cretan Hieroglyphic script", Representations: Material and Immaterial Modes of Communication in the Bronze Age Aegean, Oxford, pp. 211-240, 2021
+* Grumach  E., "The  Structure  of  the  Cretan  Hieroglyphic  Script",  Bulletin  of  the John  Rylands  Library  46, pp. 346-384, 1964
+* {{cite journal |last1=Jasink |first1=Anna Margherita |title=The So-called klasmatograms on Cretan Hieroglyphic Seals |journal= KADMOS |date=1 December 2005 |volume=44 |issue=1–2 |pages=23–39 |doi=10.1515/KADM.2005.006 |s2cid=162280405 |url=https://flore.unifi.it/handle/2158/212093 |access-date= |language=en |issn=0022-7498|url-access=subscription }}
+*  {{cite journal |last1=Owens |first1=Gareth A. |author1-link=Gareth Alun Owens |title=The Common Origin of Cretan Hieroglyphs and Linear A |journal=Kadmos | publisher=Walter de Gruyter GmbH  |date=1 January 1996 |volume=35 |issue=2 |pages=105–110 |doi=10.1515/kadm.1996.35.2.105 |s2cid=162282793 |url=https://pascal-francis.inist.fr/vibad/index.php?action=getRecordDetail&idt=2023473 |access-date= |language=  | issn=0022-7498|url-access=subscription }}
+* G. A. Owens, ''An Introduction to «Cretan Hieroglyphs»: A Study of «Cretan Hieroglyphic» Inscriptions in English Museums (excluding the Ashmolean Museum Oxford)'', Cretan Studies VIII (2002), 179–184.
+* {{cite journal |last1=Perna |first1=Massimo |title=A seal in the British Museum with a Cretan Hieroglyphic inscription (CR (?) S (1/1) 07) |journal=Kadmos |date=1 April 2019 |volume=58 |issue=1–2 |pages=49–60 |doi=10.1515/kadmos-2019-0003 |s2cid=220368364 |url=https://dx.doi.org/10.1515/kadmos-2019-0003 |access-date= |language= | issn=0022-7498|url-access=subscription }}
+* {{Cite journal |last=Salgarella |first=Ester |year=2021 |title=Imagining Cretan Scripts: the Influence of Visual Motifs on the Creation of Script Signs in Bronze Age Crete |journal=The Annual of the British School at Athens |language=en |volume=116 |pages=63–94 |doi=10.1017/S0068245421000034 |s2cid=244183664 |issn=0068-2454|url=https://www.repository.cam.ac.uk/handle/1810/319550 |hdl=  |doi-access=free |url-access=subscription }}
+* I. Schoep, ''[https://lirias.kuleuven.be/1799427?limo=0 A New Cretan Hieroglyphic Inscription from Malia (MA/V Yb 03)]'', Kadmos 34 (1995), 78–80. {{doi|10.1515/kadm.1995.34.1.78}}
+* [https://cris.unibo.it/bitstream/11585/855879/5/CRETAN%20HIEROGLYPHIC%20SEALS.pdf]Weingarten, Judith, and Silvia Ferrara, "Cretan Hieroglyphic seals and script: a view from the East", Pasiphae: rivista di filologia e antichità egee: XVI, pp. 111-121, 2022
+* {{Cite journal | last=Younger | first=John G. | title=The Cretan Hieroglyphic Script: A Review Article | journal=Minos |volume=31–32  |pages=379–400 | date=1996–1997 | url=https://kuscholarworks.ku.edu/bitstream/handle/1808/6394/Younger_HieroRev.pdf |hdl=1808/6394 |issn= 0544-3733 | access-date= }}
+
+==External links==
+* {{Commons-inline}}
+* [https://people.ku.edu/~jyounger/Hiero/ The Cretan Hieroglyphic Texts]
+* [https://mwenge.github.io/linear0.xyz/ Cretan Hieroglyphic Texts Explorer]
+
+{{list of writing systems}}
+{{Authority control}}
+{{Minoan civilization}}
+
+{{DEFAULTSORT:Cretan Hieroglyphs}}
+[[Category:Cretan hieroglyphs| ]]
+[[Category:Undeciphered writing systems]]

@@ -1,0 +1,703 @@
+{{Short description|Reconstructed ancestor of the Romance languages}}
+{{Infobox proto-language
+| name        = Proto-Romance
+| target      = [[Romance languages]]
+| region      = [[Roman Empire]]
+| familycolor = Indo-European
+| ancestor    = [[Proto-Indo-European language|Proto-Indo-European]]
+| ancestor2   = [[Proto-Italic language|Proto-Italic]]
+| child1      = [[Common Romanian]]
+| child2      = Proto-Italo-Western Romance
+}}
+'''Proto-Romance''' is the result of applying the [[comparative method]] to [[Linguistic reconstruction|reconstruct]] the latest common ancestor of the [[Romance languages]]. The closest real-life counterpart to Proto-Romance would have been a colloquial variety of [[Late Latin]] sometimes referred to as [[Vulgar Latin]].
+
+== Phonology ==
+
+=== Vowels ===
+
+==== Monophthongs ====
+{| class="wikitable" style="text-align: center;"
+!
+![[Front vowel|Front]]
+![[Central vowel|Central]]
+![[Back vowel|Back]]
+|-
+![[Close vowel|Close]]
+|{{IPA link|i}}
+|
+|{{IPA link|u}}
+|-
+![[Near-close vowel|Near-close]]
+|{{IPA link|ɪ}}
+|
+|{{IPA link|ʊ}}
+|-
+![[Close-mid vowel|Close-mid]]
+|{{IPA link|e}}
+|
+|{{IPA link|o}}
+|-
+![[Open-mid vowel|Open-mid]]
+|{{IPA link|ɛ}}
+|
+|{{IPA link|ɔ}}
+|-
+![[Open vowel|Open]]
+|
+|{{IPA link|ä|a}}
+|
+|}
+
+==== Diphthong ====
+{{IPA|/au̯/}} appears to be the only phonemic diphthong that can be reconstructed.<ref>{{harvcolnb|Ferguson|1976|p=84}}; {{harvcolnb|Gouvert|2015|p=81}}</ref>
+
+==== Phonetics ====
+* Vowels were lengthened in stressed open syllables.<ref>{{harvcolnb|Gouvert|2015|pp=118‒9}}; {{harvcolnb|Loporcaro|2015}}</ref>
+* Stressed {{IPA|/ɛ ɔ/}} may have yielded incipient [[diphthong]]s like {{IPA|[e͡ɛ o͡ɔ]}} in [[Metaphony (Romance languages)|metaphonic]] conditions.<ref>{{harvcolnb|Ferguson|1976|p=chapter 7}}</ref>{{efn|That is, when followed by a syllable containing a [[close vowel]]. |name=|group=lower-roman}}
+** Metaphony, if it can be projected back to Proto-Romance, may have initially been limited to open syllables. That is, it would have targeted allophonically lengthened {{IPA|/ɛ ɔ/}}.<ref>{{harvcolnb|Maiden|2016}}</ref>
+
+==== Constraints ====
+* {{IPA|/ɛ ɔ/}} did not occur in unstressed position.<ref name=":1">{{harvcolnb|Ferguson|1976|p=76}}; {{harvcolnb|Gouvert|2015|pp=78–81, 121–2}}</ref>
+* {{IPA|/i u/}} did not occur in the second syllable of words with the structure [[Syllable#Transcription|ˌσσˈσσ]].<ref>{{harvcolnb|Gouvert|2015|pp=78–9}}</ref>{{efn|Diachronically this reflects the ‘weakening’ of vowels in this context, for which see {{harvcolnb|Lausberg|1970|p=§§292–6}}. An example, per the latter, is Latin {{lang|la|dorm'''ī'''torium}} > French {{lang|fr|dortoir}}.|name=|group=lower-roman}}
+
+=== Consonants ===
+{| class="wikitable" style="text-align: center;"
+|+{{harvcoltxt|Burger|1955|p=25}}
+! colspan="2" |
+! colspan="2" |[[Labial consonant|Labial]]
+! colspan="2" |[[Alveolar consonant|Alveolar]]
+! colspan="2" |[[Palatal consonant|Palatal]]
+! colspan="2" |[[Dorsal consonant|Velar]]
+|-
+! colspan="2" |[[Nasal consonant|Nasal]]
+| style="border-right: 0;" |{{IPA link|m}}
+| style="border-left: 0;" |{{IPA link|mʲ}}
+| style="border-right: 0;" |[[Voiced dental, alveolar and postalveolar nasals|n]]
+| style="border-left: 0;" |{{IPA link|nʲ}}
+| colspan="2" |
+| colspan="2" |
+|-
+! rowspan="2" |[[Plosive]]
+![[Voicelessness|voiceless]]
+| style="border-right: 0;" |{{IPA link|p}}
+| style="border-left: 0;" |{{IPA link|pʲ}}
+| style="border-right: 0;" |[[Voiceless dental and alveolar plosives|t]]
+| style="border-left: 0;" |{{IPA link|tʲ}}
+| colspan="2" |
+| style="border-right: 0;" |{{IPA link|k}}
+| style="border-left: 0;" |{{IPA link|kʲ}}
+|-
+![[Voice (phonetics)|voiced]]
+| style="border-right: 0;" |{{IPA link|b}}
+| style="border-left: 0;" |{{IPA link|bʲ}}
+| style="border-right: 0;" |[[Voiced dental and alveolar plosives|d]]
+| style="border-left: 0;" |{{IPA link|dʲ}}
+| colspan="2" |
+| style="border-right: 0;" |{{IPA link|ɡ}}
+| style="border-left: 0;" |{{IPA link|ɡʲ}}
+|-
+! rowspan="2" |[[Fricative]]
+![[Voicelessness|voiceless]]
+| style="border-right: 0;" |{{IPA link|f}}
+| style="border-left: 0;" |{{IPA link|fʲ}}
+| style="border-right: 0;" |[[Voiceless dental, alveolar and postalveolar sibilants|s]]
+| style="border-left: 0;" |{{IPA link|sʲ}}
+| colspan="2" |
+| colspan="2" |
+|-
+![[Voice (phonetics)|voiced]]
+| style="border-right: 0;" |{{IPA link|β}}
+| style="border-left: 0;" |{{IPA link|βʲ}}
+| colspan="2" |
+| colspan="2" |
+| colspan="2" |
+|-
+! colspan="2" |[[Approximant]]
+| colspan="2" |
+| colspan="2" |
+| colspan="2" |({{IPA link|j}})
+| colspan="2" |({{IPA link|w}})
+|-
+! colspan="2" |[[Approximant#Lateral_approximants|Lateral approximant]]
+| colspan="2" |
+| style="border-right: 0;"|{{IPA link|l}}
+| style="border-left: 0;"|{{IPA link| lʲ}}
+| colspan="2" |
+| colspan="2" |
+|-
+! colspan="2" |[[Trill consonant|Trill]]
+| colspan="2" |
+| style="border-right: 0;" |{{IPA link|r}}
+| style="border-left: 0;" |{{IPA link|rʲ}}
+| colspan="2" |
+| colspan="2" |
+|}
+
+==== Palatalized consonants ====
+{{See also|Palatalization in the Romance languages#/Cj/}}
+* There is scholarly disagreement over whether palatalization was phonemic in Proto-Romance.<ref>{{harvcolnb|Operstein|2010|p=107}}</ref>{{efn|In representing it as such this article follows {{harvcolnb|Burger|1955}} and {{harvcolnb|Petrovici|1956}}. Similarly, {{harvcolnb|van den Bussche|1985}} proposes a Proto-Romance consonant inventory with /ʎʎ ɲɲ (t)tʲ (d)dʲ (k)kʲ (ɡ)ɡʲ/ (p. 226) and {{harvcolnb|Pope|1952}} reconstructs Proto-Gallo-Romance with a series of palatalized consonants (§168). {{harvcolnb|Gouvert|2015}} prefers a phonetic palatalization rule for Proto-Romance, as in /basiˈare/ [baˈsʲaːɾe] (p. 83).|name=|group=lower-roman}}
+* Palatalized consonants tended to [[Gemination|geminate]] between vowels. The extent of this varied by consonant.<ref>{{harvcolnb|Lausberg|1970|p=§§451–478}}; {{harvcolnb|Gouvert|2015|pages=95, 111, 115}}; {{harvcolnb|Repetti|2016|p=659}}; {{harvcolnb|Barbato|2022|p=§1}}</ref>''{{efn|Gouvert assumes regular (phonetic) gemination of palatalized intervocalic /n l k/ to [ɲɲ ʎʎ cc]. Repetti points out that there exists (mixed) Romance evidence for the gemination of all consonants in this context other than original /s/.|name=|group=lower-roman}}''
+* {{IPA|/tʲ/}} would have been an [[Voiceless alveolar affricate|affricate]] like {{IPA|[t͡sʲ]}}<ref>{{harvcolnb|Gouvert|2015|pp=86, 92}}</ref> or {{IPA|[t͡zʲ]}}.<ref>{{harvcolnb|Lausberg|1970|p=§452}}</ref>
+
+==== Phonetics ====
+* {{IPA|/sC/}} in word-initial position was assigned a [[Prothesis (linguistics)|prop-vowel]] [ɪ], as in {{IPA|/ˈstare/}} {{IPA|[ɪsˈtaːɾe]}}.<ref>{{harvcolnb|Lausberg|1970|p=§353}}; {{harvcolnb|Gouvert|2015|pp=125–6}}</ref>''{{efn|Example from Gouvert. Per Lausberg the prop-vowel would have been added only after a consonant or pause.|name=|group=lower-roman}}''
+*{{IPA|/ɡn/}} was likely {{IPA|[ɣn]}} at first, with later developments varying by region.<ref>{{harvcolnb|Lausberg|1970|p=§444–8}}; {{harvcolnb|Chambon|2013}} apud {{harvcolnb|Gouvert|2015|p=95}}; {{harvcolnb|Zampaulo|2019|p=80–2}}</ref>''{{efn|Lausberg supposes an initial [ɣn~i̯n].|name=|group=lower-roman}}''
+* {{IPA|/d ɡ/}} might have been fricatives or approximants between vowels.<ref>{{harvcolnb|Gouvert|2016|p=48}}</ref>
+* {{IPA|/ll/}} might have been [[Voiced retroflex lateral approximant|retroflex]].<ref>{{harvcolnb|Gouvert|2015|p=15}}</ref>''{{efn|For further discussion on /ll/, see {{harvcolnb|Zampaulo|2019|p=71–7}} and {{harvcolnb|Lausberg|1970|p=§§494–9}}.|name=|group=lower-roman}}''
+* {{IPA|/f/}} might have been [[Voiceless bilabial fricative|bilabial]].<ref>{{harvcolnb|Gouvert|2016|p=§1}}</ref>
+
+==== Constraints ====
+* {{IPA|/b/}} did not occur in intervocalic position.<ref>{{harvcolnb|Gouvert|2015|p=86}}</ref>{{efn|Diachronically this reflects the development of Latin intervocalic [b] to [β], and likewise [bj] to [βj], for which see {{harvcolnb|Lausberg|1970|p=§§366, 475}}.|name=|group=lower-roman}}
+
+== Morphology ==
+The forms below are spelt as they are in the cited sources, either in Latin style or in phonetic notation. The latter may not always agree with the phonology given above.
+
+=== Nouns ===
+Nouns are reconstructed as having three cases: a [[Nominative case|nominative]], an [[Accusative case|accusative]], and a [[Genitive case|genitive]]-[[Dative case|dative]]:<ref>{{harvcoltxt|Lausberg|1973|pp=§§590–600, 616–27}}</ref>''{{efn|{{harvcoltxt|de Dardel|Gaeng|1992|p=104}} differ from Lausberg on the following points: 1) They believe that the genitive-dative case was limited to animate nouns. 2) They reconstruct a universal gen-dat. plural ending -orum. 3) They reconstruct, for class -a type nouns, a nominative plural -ae, albeit one in competition with -as according to {{harvcoltxt|de Dardel|Wüest|1993|p=57}}. They are in agreement with Lausberg regarding the remaining inflections.|name=|group=lower-roman}}''
+{| class="wikitable" style="text-align: center;"
+!Type
+| rowspan="6" |
+! colspan="2" |-a (f)
+| rowspan="6" |
+! colspan="2" |-o (m)
+| rowspan="6" |
+! colspan="2" |-C (m)
+| rowspan="6" |
+! colspan="2" |-C (f)
+|-
+!Number
+!SG
+!PL
+!SG
+!PL
+!SG
+!PL
+!SG
+!PL
+|-
+!NOM
+| rowspan="2" |capra
+| rowspan="2" |capras
+|caballus
+|caballi
+|frater
+|fratres/-i
+|noctis
+| rowspan="2" |noctes
+|-
+!ACC
+|caballu
+|caballos
+|fratre
+|fratres
+|nocte
+|-
+!GEN-DAT
+|caprae
+|capris
+|caballo
+|caballis
+|fratri
+|fratris
+|nocti
+|noctis
+|-
+!Gloss
+| colspan="2" |‘goat’
+| colspan="2" |‘horse’
+| colspan="2" |‘brother’
+| colspan="2" |‘night’
+|}
+Some nouns of the –C type had inflections with alternating stress or syllable count:<ref>{{harvcoltxt|Lausberg|1973|pp=§§628–38}}</ref>
+{| class="wikitable" style="text-align: center;"
+!Type
+| rowspan="6" |
+! colspan="2" |-C (m)
+| rowspan="6" |
+! colspan="2" |-C (f)
+|-
+!Number
+!SG
+!PL
+!SG
+!PL
+|-
+!NOM
+|hómo
+|hómines/-i
+|múlier
+| rowspan="2" |muliéres
+|-
+!ACC
+|hómine
+|hómines
+|muliére
+|-
+!GEN-DAT
+|hómini
+|hóminis
+|muliéri
+|muliéris
+|-
+!Gloss
+| colspan="2" |‘man’
+| colspan="2" |‘woman’
+|}
+There were also ‘neuter’ nouns. In the singular they would have been treated as masculine and in the plural as feminine, often with a collective sense.<ref>{{harvcoltxt|Lausberg|1973|pp=§§601–15, 639–45, 668}}</ref>
+{| class="wikitable" style="text-align: center;"
+!Type
+| rowspan="6" |
+! colspan="2" |-o (n)
+| rowspan="6" |
+! colspan="2" |-C (n)
+|-
+!Number
+!SG
+!PL
+!SG
+!PL
+|-
+!NOM
+| rowspan="2" |bracchiu
+| rowspan="2" |bracchia
+| rowspan="2" |corpus
+| rowspan="2" |corpora
+|-
+!ACC
+|-
+!GEN-DAT
+|bracchio
+|bracchiis
+|corpori
+|corporis
+|-
+!Gloss
+| colspan="2" |‘arm’
+| colspan="2" |‘body’
+|}
+
+=== Adjectives ===
+
+==== Positive ====
+{| class="wikitable" style="text-align: center;"
+|+{{harvcoltxt|Lausberg|1973|pp=§§668–73}}
+!Type
+| rowspan="7" |
+! colspan="5" |-o/-a
+| rowspan="7" |
+! colspan="5" |
+|-
+!Gender
+! colspan="2" |M
+| rowspan="5" |
+! colspan="2" |F
+! colspan="2" |M
+| rowspan="5" |
+! colspan="2" |F
+|-
+!Number
+!SG
+!PL
+!SG
+!PL
+!SG
+!PL
+!SG
+!PL
+|-
+!NOM
+|bonus
+|boni
+| rowspan="2" |bona
+| rowspan="2" |bonas
+|virdis
+|virdes/-i
+|virdis
+| rowspan="2" |virdes
+|-
+!ACC
+|bonu
+|bonos
+|virde
+|virdes
+|virde
+|-
+!GEN-DAT
+|bono
+|bonis
+|bonae
+|bonis
+|virdi
+|virdis
+|virdi
+|virdis
+|-
+!Gloss
+| colspan="5" |‘good’
+| colspan="5" |‘green’
+|}
+
+==== Comparative ====
+For the most part, the typical way to form a comparative would have been to add ''magis'' or ''plus'' (‘more’) to a positive adjective. A few words can be reconstructed as having a comparative ending ''-ior'', which would have been inflected as follows:''<ref>{{harvcoltxt|Lausberg|1973|pp=§§679–81}}</ref>''
+{| class="wikitable" style="text-align: center;"
+!Number
+| rowspan="5" |
+! colspan="2" |SG
+|-
+!Gender
+!M or F
+!N
+|-
+!NOM
+|mélior
+| rowspan="2" |mélius
+|-
+!ACC
+|melióre
+|-
+!Gloss
+| colspan="2" |‘better’
+|}
+==== Superlative ====
+Superlatives would have been formed by adding definite articles to comparatives.<ref>{{harvcoltxt|Lausberg|1973|pp=§687}}</ref>
+
+=== Pronouns ===
+
+==== Personal ====
+
+===== Tonic =====
+The stressed or 'strong' forms:<ref>{{harvcoltxt|Lausberg|1973|pp=§§707–22}}</ref>
+{| class="wikitable" style="text-align: center;"
+!Person
+| rowspan="5" |
+! colspan="2" |1
+| rowspan="5" |
+! colspan="2" |2
+|-
+!Number
+!SG
+!PL
+!SG
+!PL
+|-
+!NOM
+|ego
+| rowspan="2" |nos
+|tu
+| rowspan="2" |vos
+|-
+!ACC
+|me/mene
+|te/tene
+|-
+!DAT
+|mi/mibi
+|nobis
+|ti/tibi
+|vobis
+|}
+{| class="wikitable" style="text-align: center;"
+!Person
+| rowspan="5" |
+! colspan="2" |3 (m)
+| rowspan="5" |
+! colspan="2" |3 (f)
+|-
+!Number
+!SG
+!PL
+!SG
+!PL
+|-
+!NOM
+|ille/illi/ipse
+|illi/ipsi
+| rowspan="2" |illa/ipsa
+| rowspan="2" |illas/ipsas
+|-
+!ACC
+|illu/ipsu
+|illos/ipsos
+|-
+!(GEN-)DAT
+|illui/ipsui
+|illoru/ipsoru
+|illaei/ipsaei
+|illoru/ipsoru
+|}
+
+===== Atonic =====
+The unstressed or 'weak' forms:<ref>{{harvcoltxt|Lausberg|1973|pp=§§723–37}}</ref>
+{| class="wikitable" style="text-align: center;"
+!Person
+| rowspan="4" |
+! colspan="2" |1
+| rowspan="4" |
+! colspan="2" |2
+| rowspan="4" |
+! colspan="2" |3 (m)
+| rowspan="4" |
+! colspan="2" |3 (f)
+|-
+!Number
+!SG
+!PL
+!SG
+!PL
+!SG
+!PL
+!SG
+!PL
+|-
+!ACC
+|me
+| rowspan="2" |nos
+|te
+| rowspan="2" |vos
+|lu
+|los
+|la
+|las
+|-
+!DAT
+|mi
+|tī
+|li
+|lis
+|li
+|lis
+|}
+
+==== Interrogative/relative ====
+As follows:<ref>{{harvcoltxt|Lausberg|1973|pp=§§746–7}}</ref>
+{| class="wikitable" style="text-align: center;"
+!Gender
+| rowspan="4" |
+!M or F
+!N
+|-
+!NOM
+|qui
+| rowspan="2" |quid
+(/quod?)
+|-
+!ACC
+|quem
+|-
+!DAT
+|cui
+|–
+|}
+=== Verbs ===
+==== Present ====
+{| class="wikitable" style="text-align: center;"
+|+{{harvcoltxt|van den Bussche|1985|pp=§2.3.2}}
+! rowspan="2" |Verb class
+| rowspan="9" |
+! colspan="2" |1P
+| rowspan="9" |
+! colspan="2" |2P
+| rowspan="9" |
+! colspan="2" |3P
+| rowspan="9" |
+! rowspan="2" |Infinitive
+|-
+!SG
+!PL
+!SG
+!PL
+!SG
+!PL
+|-
+!I
+|kánto
+|kantámųs
+|kántas
+|kantátįs
+|kántat
+|kántant
+|kantáre
+|-
+!IIa
+|dǫ́rm(j)o
+|dormímųs
+|dǫ́rmįs
+|dormítįs
+|dǫ́rmįt
+|dǫ́rmųnt/-ent
+|dormíre
+|-
+!IIb
+|florésko/-í-
+|florímųs
+|floréskįs/-í-
+|florítįs
+|floréskįt/-í-
+|floréskųnt/-í-
+|floríre
+|-
+!IIIa
+|wį́dd’o
+|wįdémųs
+|wį́des
+|wįdétįs
+|wį́det
+|wį́dųnt/-ent (wį́dd’ųnt)
+|wįdére
+|-
+!IIIb
+|wę́ndo
+|wę́ndįmųs
+|wę́ndįs
+|wę́ndįtįs
+|wę́ndįt
+|wę́ndųnt/-ent
+|wę́ndere
+|-
+! rowspan="2" |Irregular
+|dáo
+|dámųs
+|dás
+|dátįs
+|dát
+|dánt/dáųnt/dáent
+|dáre
+|-
+|ábjo/ájjo
+|abémųs
+|áes/ás
+|abétįs
+|áet/át
+|ánt/áųnt/áent
+|abére
+|}
+
+==== Preterite ====
+{| class="wikitable" style="text-align: center;"
+|+{{harvcoltxt|van den Bussche|1985|pp=§2.3.3}}
+! rowspan="2" |Verb class
+| rowspan="7" |
+! colspan="2" |1P
+| rowspan="7" |
+! colspan="2" |2P
+| rowspan="7" |
+! colspan="2" |3P
+| rowspan="7" |
+! rowspan="2" |Infinitive
+|-
+!SG
+!PL
+!SG
+!PL
+!SG
+!PL
+|-
+!I
+|kantáj
+|kantámmųs
+|kantásti
+|kantástįs
+|kantáwt/-át
+|kantárųnt
+|kantáre
+|-
+!IIa
+|dormíj
+|dormímmųs
+|dormísti
+|dormístįs
+|dormíwt/-ít
+|dormírųnt
+|dormíre
+|-
+!IIIb
+|battę́j
+|battę́mmųs
+|battę́sti 
+|battę́stįs
+|battę́wt/-ę́t
+|battę́rųnt
+|báttere
+|-
+! rowspan="2" |Irregular
+|féki
+|fékįmųs/-kį́mm-
+|fekį́sti
+|fekį́stįs
+|fékįt
+|fékerųnt/-ér-
+|fákere
+|-
+|díksi
+|díksįmųs/-kį́mm-
+|dikį́sti
+|dikį́stįs
+|díksįt
+|díkserųnt
+|díkere
+|}
+
+==== Participles ====
+{| class="wikitable" style="text-align: center;"
+|+{{harvcoltxt|van den Bussche|1985|pp=§2.3.4}}
+!Verb Class
+| rowspan="4" |
+!present
+!preterite
+|-
+!I
+|kantánte
+|kantátų
+|-
+!II
+|dormę́nte
+|dormítų
+|-
+!III
+|wendę́nte
+|(wę́ndįtų/-útų)
+|}
+
+== See also ==
+* [[Phonological changes from Classical Latin to Proto-Romance]]
+
+== Notes ==
+{{notelist-lr}}
+
+== References ==
+{{reflist}}
+
+== Bibliography ==
+* {{cite book |last=Adams |first=James Noel |year=2013 |doi=10.1017/CBO9780511843433 |title=Social variation and the Latin language |publisher=Cambridge University Press|isbn=978-0-511-84343-3 }}
+* {{cite book |last1=Alkire |first1=Ti |url=https://archive.org/details/romancelanguages0000alki/mode/2up |title=Romance languages: A historical introduction |last2=Rosen |first2=Carol |publisher=Cambridge University Press |year=2010|isbn=978-0-521-88915-5 }}
+* {{Cite web |last=Barbato |first=Marcello |date=2022 |title=The early history of Romance palatalizations |url=https://oxfordre.com/linguistics/display/10.1093/acrefore/9780199384655.001.0001/acrefore-9780199384655-e-750 |website=Oxford Research Encyclopedias|doi=10.1093/acrefore/9780199384655.013.750 |isbn=978-0-19-938465-5 }}
+* {{cite journal |last=Burger |first=André |date=1955 |title=Phonématique et diachronie à propos de la palatalisation des consonnes romanes |journal=Cahiers Ferdinand de Saussure |volume=13 |issue=13 |pages=19–33 |jstor=27757997}}
+*{{cite journal |last=Chambon |first=Jean-Pierre |year=2013 |title=Notes sur un problème de la reconstruction phonétique et phonologique du protoroman: Le groupe */ɡn/ |journal=Bulletin de la Société de Linguistique de Paris |volume=CVIII |issue=1 |pages=273–282 |doi=10.2143/BSL.108.1.3019219}}
+* {{cite journal |last1=de Dardel |first1=Robert |last2=Gaeng |first2=Paul Ami |year=1992 |title=La declinaison nominale du latin non classique: Essai d'une methode de synthese |journal=Probus |volume=4 |issue=2 |pages=91–125 |name-list-style=amp |doi=10.1515/prbs.1992.4.2.91}}
+* {{cite journal |last1=de Dardel |first1=Robert |last2=Wüest |first2=Jakob |year=1993 |title=Les systèmes casuels du protoroman: Les deux cycles de simplification |journal=Vox Romanica |issue=52 |pages=25–65 |name-list-style=amp}}
+* {{cite journal |last=Dworkin |first=Steven N. |year=2016 |title=Do romanists need to reconstruct Proto-Romance? The case of the Dictionnaire Étymologique Roman project |journal=Zeitschrift für romanische Philologie |issue=132 |pages=1–19 |doi=10.1515/zrp-2016-0001}}
+* {{cite book |last=Elcock |first=William Dennis |year=1960 |url=https://archive.org/details/romancelanguages0000elco |title=The Romance languages |location=London |publisher=Faber and Faber}}
+* {{cite book |last=Ferguson |first=Thaddeus |year=1976 |title=A history of the Romance vowel systems through paradigmatic reconstruction |location=Berlin |doi=10.1515/9783110806960 |publisher=De Gruyter|isbn=978-3-11-080696-0 }}
+* {{cite book |last=Gouvert |first=Xavier |year=2015 |chapter=Le système phonologique du protoroman: essai de reconstruction |doi=10.1515/9783110313482 |editor1=Buchi, Éva |location=Berlin |pages=61–128 |editor2=Schweickard, Wolfgang |title=Dictionnaire Étymologique Roman |publisher=De Gruyter|isbn=978-3-11-031244-7 }}
+* {{cite book |last=Gouvert |first=Xavier |year=2016 |chapter=Du protoitalique au protoroman: deux problèmes de reconstruction phonologique |doi=10.1515/9783110453614 |editor1=Buchi, Éva |editor2=Schweickard, Wolfgang |title=Dictionnaire Étymologique Roman 2 |publisher=De Gruyter |location=Berlin |pages=27–51 |isbn=978-3-11-045361-4 |name-list-style=amp}}
+* {{cite book |last=Grandgent |first=Charles Hall |year=1907 |url=https://archive.org/details/cu31924021623800 |title=An introduction to Vulgar Latin |location=Boston |publisher=D.C. Heath & Co}}
+* {{cite book |last=Hall |first=Robert Anderson |year=1976 |url=https://archive.org/details/protoromancephon0000hall |title=Proto-Romance phonology |location=New York |publisher=Elsevier|isbn=978-0-444-00183-2 }}
+* {{cite book |last=Hall |first=Robert Anderson |year=1983 |url=https://archive.org/details/protoromancemorp0000hall |title=Proto-Romance morphology |location=Philadelphia |publisher=John Benjamins|isbn=978-90-272-3522-0 }}
+*{{cite book |last=Lausberg |first=Heinrich |title=Lingüística románica |date=1970 |publisher=Gredos |edition=2nd |volume=I–II |location=Madrid |translator-last=Pérez Riesco |translator-first=José |orig-date=1965 |translator-last2=Pascual Rodríguez |translator-first2=E.}}
+** Original in German: {{cite book |title=Romanische Sprachwissenshaft |date=1956–62 |publisher=De Gruyter |location=Berlin}}
+* {{cite book |last=Loporcaro |first=Michele |year=2015 |doi=10.1093/acprof:oso/9780199656554.003.0001 |title=Vowel length from Latin to Romance |publisher=Oxford University Press}}
+* {{cite book |last=Lloyd |first=Paul Max |url=https://archive.org/details/fromlatintospani0000lloy/mode/2up |title=From Latin to Spanish: Historical phonology and morphology of the Spanish language |date=1987 |publisher=American Philosophical Society |location=Philadelphia|isbn=978-0-87169-173-6 }}
+* {{cite journal |last=Lyons |first=Christopher |year=1986 |title=On the origin of the Old French strong-weak possessive distinction |journal=Transactions of the Philological Society |volume=84 |issue=1 |pages=1–41 |doi=10.1111/j.1467-968X.1986.tb01046.x}}
+* {{cite book |last=Maiden |first=Martin |year=2016 |chapter=Diphthongization |doi=10.1093/acprof:oso/9780199677108.001.0001 |editor1-last=Ledgeway |editor1-first=Adam |editor2-last=Maiden |editor2-first=Martin |title=The Oxford guide to the Romance languages |pages=647–57 |publisher=Oxford University Press|isbn=978-0-19-967710-8 }}
+* {{cite book |last=Operstein |first=Natalie |title=Consonant structure and prevocalization |series=Current Issues in Linguistic Theory |date=2010 |volume=312 |publisher=John Benjamins |location=Amsterdam |doi=10.1075/cilt.312|isbn=978-90-272-4828-2 }}
+* {{Cite journal |last=Petrovici |first=Emil |date=1956 |title=Problema moştenirii din romanica comună a corelaţiei palatale a consoanelor în limba romînă |journal=Ştudii şi Cercetări Lingvistice |volume=7 |pages=163–9}}
+* {{cite book |last=Pope |first=Mildred Katherine |title=From Latin to Modern French |date=1952 |publisher=Manchester University Press |edition=2nd |orig-date=1934}}
+* {{cite book |last=Repetti |first=Lori |title=The Oxford guide to the Romance languages |date=2016 |publisher=Oxford University Press |editor-last=Ledgeway |editor-first=Adam |pages=658–68 |chapter=Palatalization |doi=10.1093/acprof:oso/9780199677108.001.0001 |isbn=978-0-19-967710-8 |editor-last2=Maiden |editor-first2=Martin}}
+* {{cite journal |last=van den Bussche |first=Henri |year=1985 |title=Proto-Romance inflectional morphology. Review of ''Proto-Romance morphology'' by Robert Hall. |journal=Lingua |volume=66 |issue=2–3 |pages=225–60 |doi=10.1016/S0024-3841(85)90336-5}}
+* {{cite book |last=Zampaulo |first=André |title=Palatal sound change in the Romance languages: Diachronic and synchronic perspectives |date=2019 |publisher=Oxford University Press |doi=10.1093/oso/9780198807384.001.0001|isbn=978-0-19-880738-4 }}
+
+{{Romance languages|state=collapsed}}
+
+[[Category:Forms of Latin]]
+[[Category:Romance languages|*]]
+[[Category:Proto-languages|Romance]]

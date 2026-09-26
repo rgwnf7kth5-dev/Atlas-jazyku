@@ -1,0 +1,481 @@
+{{Short description|Extinct language of the ancient Elamites of Iran}}
+{{distinguish|text=the [[Elymian language]]}}
+{{Infobox language
+| name             = Elamite
+| states           = [[Elam]]
+| region           = Western Asia, Iran
+| era              = c. 2800–300 BC
+(Later unwritten forms might have survived until AD 1000?)
+| familycolor      = Isolate
+| family           = [[Language isolate]]
+| ancestor         = language of [[Proto-Elamite (period)|Proto-Elamite]]?
+| script           = [[Linear Elamite]], [[Elamite cuneiform]]
+| iso2             = elx
+| iso3             = elx
+| image            = ElamischeStrichschrift.jpg
+| imagecaption     = Tablet in Proto-Elamite script
+| glotto           = elam1244
+| glottorefname    = Elamite
+}}
+
+'''Elamite''', also known as '''Hatamtite''' and formerly as '''Scythic''', '''Median''', '''Amardian''', '''Anshanian''' and '''Susian''', is an [[extinct language]] that was spoken by the ancient [[Elam]]ites. It was recorded in what is now southwestern [[Iran]] from 2600 BC to AD 330.<ref>{{Harvnb|Stolper|2004|pages=60–64}}</ref>  Elamite is generally thought to have no demonstrable relatives and is usually considered a [[language isolate]]. The lack of established relatives makes its interpretation difficult.<ref name="Gragg 2009 316">{{Harvnb|Gragg|2009|p=316}}</ref>
+
+A sizeable number of Elamite [[lexeme]]s are known from the [[Achaemenid royal inscriptions]] – trilingual inscriptions of the [[Achaemenid Empire]], in which Elamite was written using [[Elamite cuneiform]] (circa 5th century BC), which is fully deciphered. An important dictionary of the Elamite language, the ''Elamisches Wörterbuch'' was published in 1987 by W. Hinz and H. Koch.<ref>{{Harvnb|Hinz|Koch|1987a}}</ref><ref>{{Harvnb|Hinz|Koch|1987b}}</ref> The [[Linear Elamite]] script however, one of the scripts used to write the Elamite language {{Circa|2000 BC}}, had remained elusive until the 2010s.<ref name="LEW">{{cite journal |last1=Desset |first1=François |title=Linear Elamite writing |journal=The Elamite World |date=2018 |page=397 |doi=10.4324/9781315658032-21 |isbn=978-1-315-65803-2 |url=https://www.academia.edu/36567114}} in {{Harvnb|Álvarez-Mon|Basello|Wicks|2018|pages=405–406}}</ref><ref name="LEZ">{{cite journal |last1=Desset |first1=François |title=The Decipherment of Linear Elamite |journal=Zeitschrift für Assyriologie und vorderasiatische Archäologie |date=2022 |pages=11–60 |doi=10.1515/za-2022-0003 |issn=1613-1150 |url=https://www.degruyter.com/document/doi/10.1515/za-2022-0003/html|hdl=11585/890284 |hdl-access=free }}</ref>
+
+==History==
+[[File:Naram-Sin stele inscription in Elamite.jpg|thumb|upright=0.8|Inscription of [[Shutruk-Nahhunte]] in [[Elamite cuneiform]], circa 1150 BC, on the [[Victory Stele of Naram-Sin]].]]
+The history of Elamite is periodised as follows:
+
+* Old Elamite (c. 2600–1500 BC)
+* Middle Elamite (c. 1500–1000 BC)
+* Neo-Elamite (1000–550 BC)
+* Achaemenid Elamite (550–330 BC)
+* Late Elamite?
+* [[Khuzi language|Khuzi]]? (Unknown – AD 1000)
+
+Middle Elamite is considered the "classical" period of Elamite. The best-attested variety is Achaemenid Elamite,<ref name="Gragg 2009 316" /> which was widely used by the [[Achaemenid Empire]] for official inscriptions as well as administrative records and displays significant [[Old Persian]] influence.
+
+[[Persepolis Administrative Archives]] were found at [[Persepolis]] in the 1930s, and they are mostly in Elamite; the remains of more than 10,000 of these cuneiform documents have been uncovered. In comparison, [[Aramaic]] is represented by only 1,000 or so original records.<ref>[https://oi.uchicago.edu/research/projects/persepolis-fortification-archive Persepolis Fortification Archive.] Oriental Institute – The University of Chicago</ref> These documents represent administrative activity and data flow in Persepolis over more than fifty consecutive years (509 to 457&nbsp;BC).
+
+Documents from the Old Elamite and early Neo-Elamite stages are relatively scarce. Neo-Elamite is a transitional form in its structure between Middle and Achaemenid Elamite.
+
+The Elamite language may have remained in widespread use after the Achaemenid period. Several rulers of [[Elymais]] bore the Elamite name ''Kamnaskires'' in the 2nd and 1st centuries BC. The ''[[Acts of the Apostles]]'' (c. AD &nbsp;80–90) mentions the language as if it was still current.<ref>{{bibleverse|Acts|2:9}}</ref> There are no later direct references, but Elamite may be the local language in which, according to the [[Talmud]], the ''[[Book of Esther]]'' was recited annually to the [[History of the Jews in Iran|Jews of Susa]] in the [[Sasanian Empire]] (224–642).<ref>{{Cite web |title=Megillah 18a |url=https://www.sefaria.org/Megillah.18a |access-date=2026-01-18 |website=www.sefaria.org}}</ref>
+
+Between the 8th and 13th centuries AD, various [[Arabic]] authors refer to a language called ''[[Khuzi language|Khūzī]]'' or ''Khūz'' spoken in [[Khuzistan]], which was unlike any other language known to those writers. It is possible that it was "a late variant of Elamite".<ref>{{cite book|last=Tavernier |first=Jan |title=The Elamite Language}} in {{Harvnb|Álvarez-Mon|Basello|Wicks|2018|pages=421–422}}</ref> The last original report on the ''Khūz'' language was written circa 988 by [[al-Maqdisi]], characterizing the Khuzi as bilingual in Arabic and Persian but also speaking an "incomprehensible" language in [[Ramhormoz]]. The city had recently become prosperous again after the foundation of a market when it received an influx of foreigners and being a Khuzi was stigmatized at the time. The language probably [[Extinct language|went extinct]] in the 11th century.<ref>{{Harvnb|van Bladel|2021}}</ref> Later authors only mention the language when citing previous work.
+
+=== Study ===
+The study of Elamite language goes back to the first publications of Achaemenid royal inscriptions in Europe in the first half of the 19th century AD. A great step forward was the publication of the Elamite version of the [[Bisutun Inscription]] in the name of [[Darius I]], entrusted by [[Sir Henry Rawlinson, 1st Baronet|Henry Rawlinson]] to [[Edwin Norris]] and appeared in 1855. At that time, Elamite was believed to be [[Scythian languages|Scythian]], whose Indo-European affiliation was not yet established. The first grammar was published by [[Jules Oppert]] in 1879. The first to use the glottonym Elamite is considered to be [[Archibald Henry Sayce]] in 1874, though already in 1850 [[Isidore Löwenstern]] advanced this identification. The publication of pre-Achaemenid inscriptions from [[Susa]] is due along the first three decades of the 20th century by father [[Vincent Scheil]]. Then in 1933 the [[Persepolis Fortification Tablets]] were discovered, being the first administrative corpus in this language, even if published by [[Richard T. Hallock]] much later (1969). Another administrative corpus was discovered in the 1970s at [[Tall-i Malyan]], the ancient city of Anshan, and published in 1984 by [[Matthew W. Stolper]]. In the meantime (1967), the Middle Elamite inscriptions from [[Chogha Zanbil]] were published by father [[Marie-Joseph Steve]]. In the fourth quarter of the 20th century the French school was led by [[François Vallat]], with relevant studies by Françoise Grillot(-Susini) and Florence Malbran-Labat, while the American school of scholars, inaugurated by [[George G. Cameron]] and [[Herbert H. Paper]], focused on the administrative corpora with Stolper. Elamite studies have been revived in the 2000s by [[Wouter F.M. Henkelman]] with several contributions and a monograph focused on the Persepolis Fortification tablets. Elamite language is currently taught in three universities in Europe, by Henkelman at the [[École pratique des hautes études]], [[Gian Pietro Basello]] at the [[University of Naples "L'Orientale"]] and [[Jan Tavernier]] at the [[UCLouvain]].<ref name="Basello2004">{{cite book |author-last=Basello |author-first=Gian Pietro |year=2004 |chapter=Elam between Assyriology and Iranian Studies |editor-last=Panaino |editor-first=Antonio |title=Melammu Symposia IV |pages=1–40 |publisher=Università di Bologna & IsIAO |isbn=978-8884831071 |url=https://unora.unior.it/retrieve/dfd1bedd-2e97-d55a-e053-3705fe0af723/basello2004melammusymposia4.pdf}}</ref>
+
+==Classification==
+Elamite is regarded by the vast majority of [[linguists]] as a [[language isolate]],<ref name="Blench">{{Harvnb|Blench|Spriggs|1997|p=125}}</ref><ref>{{unbulleted list citebundle |{{Harvnb|Woodard|2008|pages=3}}|{{harvnb|Gnanadesikan|2009}}|{{Harvnb|Tavernier|2020|p=164}}}}</ref> as it has no demonstrable relationship to the neighbouring [[Semitic languages]], [[Indo-European languages]], or to [[Sumerian language|Sumerian]], despite having adopted the Sumerian-[[Akkadian language|Akkadian]] [[cuneiform]] script.
+
+An [[Elamo-Dravidian languages|Elamo-Dravidian]] family connecting Elamite with the [[Brahui language|Brahui]] language of Pakistan and [[Dravidian languages]] of India was suggested in 1967 by [[Igor M. Diakonoff]]<ref>{{Harvnb|Дьяконов|1967}}</ref> and later, in 1974, defended by [[David W. McAlpin|David McAlpin]] and others.<ref>{{unbulleted list citebundle |{{Harvnb|McAlpin|1974}} | {{Harvnb|McAlpin|1975}} |{{Harvnb|McAlpin|1979}} |{{Harvnb|McAlpin|1981|p=3}}}}</ref><ref>{{unbulleted list citebundle |{{harvnb|Khačikjan|1998|p=3}}|{{Harvnb|van Bladel|2021|p=448}}}}</ref> In 2012, Southworth proposed that Elamite forms the "Zagrosian family" along with [[Brahui language|Brahui]] and, further down the cladogram, the remaining Dravidian languages; this family would have originated in Southwest Asia (southern Iran) and was widely distributed in South Asia and parts of eastern West Asia before the Indo-Aryan migration.<ref name="Southworth 2012">{{harvnb|Southworth|2011}}</ref> Recent discoveries regarding early population migration based on ancient DNA analysis have revived interest in the possible connection between proto-Elamite and proto-Dravidian.<ref>{{harvnb|Joseph|2017}}</ref><ref>{{Harvnb|McAlpin|1981|p=1}}</ref><ref>{{harvnb|Zvelebil|1985}}: I admit that this [reconstruction] is somewhat farfetched. but so is a number of McAlpin's reconstructions. [...] There is no obvious systematic relationship between the morphologies of Elamite and Dravidian, apparent at first sight. Only after a hypothetical reinterpretation, three morphological patterns emerge as cognate systems: the basic cases, the personal pronouns, and the appellative endings. [...] I am also convinced that much additional work is to be done and many changes will be made to remove the genetic cognation in question from the realm of hypothesis and establish it as a fact acceptable to all.</ref><ref>{{harvnb|Krishnamurti|2003|pages=44–45}}: Many of the rules formulated by McAlpin lack intrinsic phonetic/phonological motivation and appear ad hoc, invented to fit the proposed correspondences: e.g. Proto-Elamo-Dravidian *i, *e > Ø Elamite, when followed by t, n, which are again followed by a; but these remain undisturbed in Dravidian (1974: 93). How does a language develop that kind of sound change? This rule was dropped a few years later, because the etymologies were abandoned (see 1979: 184). [...] We need more cognates of an atypical kind to rule out the possibility of chance.</ref> A detailed reassessment of the Elamo-Dravidian hypothesis by Pedron in 2023 reaffirmed the majority position that it was without good evidence, noting that the words and morphemes McAlpin identified as cognates tended either to not be proven to share a meaning or to be extremely simple syllables that could easily be chance resemblances, especially given the amount of time involved.<ref name="Pedron2023">{{Harvnb|Pedron|2023}}</ref>
+
+[[Václav Blažek]] proposed a relation with the [[Semitic languages]].<ref name="Blench96">{{Harvnb|Blench|2006|p=96}}</ref>
+
+In 2002 [[George Starostin]] published a [[lexicostatistic]] analysis finding Elamite to be approximately equidistant from [[Nostratic]] and Semitic.<ref>{{Harvnb|Starostin|2002}}</ref>
+
+None of these ideas have been accepted by mainstream historical linguists.<ref name="Blench" />{{Better source needed|reason=Section above cites numerous works from after the publication of this source. A more recent source for this claim is needed.|date=August 2026}}
+
+==Phonology==
+Because of the limitations of the language's scripts, its phonology is not well understood.
+
+Its consonants included at least stops {{IPA|/p/}}, {{IPA|/t/}} and {{IPA|/k/}}, sibilants {{IPA|/s/}}, {{IPA|/ʃ/}} and {{IPA|/z/}} (with an uncertain pronunciation), nasals {{IPA|/m/}} and {{IPA|/n/}}, liquids {{IPA|/l/}} and {{IPA|/r/}} and fricative {{IPA|/h/}}, which was lost in late Neo-Elamite. Some peculiarities of the spelling have been interpreted as suggesting that there was a contrast between two series of stops ({{IPA|/p/}}, {{IPA|/t/}}, {{IPA|/k/}} as opposed to {{IPA|/b/}}, {{IPA|/d/}}, {{IPA|/ɡ/}}), but in general, such a distinction was not consistently indicated by written Elamite.<ref>{{Harvnb|Stolper|2004|p=70}}</ref>
+
+Elamite had at least the vowels {{IPA|/a/}}, {{IPA|/i/}}, and {{IPA|/u/}} and may also have had {{IPA|/e/}}, which was not generally expressed unambiguously.<ref>{{Harvnb|Stolper|2004|p=72}}</ref>
+
+Roots were generally CV, (C)VC, (C)VCV or, more rarely, CVCCV<ref name="Stolper 73">{{Harvnb|Stolper|2004|p=73}}</ref> (the first C was usually a nasal).
+
+===Desset's reconstruction===
+Below is phonological system interpretation suggested by Desset.<ref name="LEZ" />
+
+====Vowels====
+{| class="wikitable"
+!
+![[Front vowel|Front]]
+![[Back vowel|Back]]
+|- align="center"
+![[Close vowel|Close]]
+|{{IPA link|i}} || {{IPA link|u}}
+|- align="center"
+![[Mid vowel|Mid]]
+|{{IPA link|e}} || {{IPA link|o}}
+|- align="center"
+![[Open vowel|Open]]
+| colspan="2" | {{IPA link|a}}
+|}
+Probably there were also long vowels and diphthongs, though written occurrences are rare.
+
+====Consonants====
+Transcription is given in brackets ⟨⟩, while non-verified consonants are in parentheses ().
+{| class="wikitable"
+|+Consonant phonemes of Elamite
+! &nbsp;
+![[Labial consonant|Labial]]
+![[alveolar consonant|Alveolar]]
+![[postalveolar consonant|Postalveolar]]
+![[velar consonant|Velar]]
+|- align="center"
+![[Nasal stop|Nasal]]
+| {{IPA link|m}}
+| {{IPA link|n}}
+|
+|
+|- align="center"
+![[Plosive consonant|Plosive]]
+| {{IPA link|p}} ({{IPA link|b}})
+| {{IPA link|t}} ({{IPA link|d}})
+|
+| {{IPA link|k}} ({{IPA link|g}})
+|- align="center"
+![[affricate consonant|Affricate]]?
+|
+| ⟨z⟩<sup>1</sup>
+|
+|
+|- align="center"
+![[fricative consonant|Fricative]]
+|
+| {{IPA link|ɬ}} ⟨s⟩
+| {{IPA link|ʃ}} ⟨š⟩
+| {{IPA link|x}} ⟨h⟩<sup>2</sup>
+|- align="center"
+![[approximant consonant|Approximant]]
+| {{IPA link|w}}
+|
+| ({{IPA link|j}})
+|
+|- align="center"
+![[Rhotic consonant|Rhotic]]
+|
+|⟨r⟩
+|
+|
+|- align="center"
+![[lateral consonant|Lateral]]
+|
+| {{IPA link|l}}
+|
+|
+|}
+# Either {{IPA link|ts}} or {{IPA link|θ}}.
+# Described as velar fricative by Desset. Two identified ⟨h⟩ signs possibly expressed two different /h/ phonemes.
+
+== Writing system ==
+[[File:Bilingual Linear Elamite Akkadian inscription of king Kutik-Inshushinak Table of the Lion Louvre Museum Sb 17 (Linear Elamite detail).jpg|thumb|[[Linear Elamite]] inscription of king [[Puzur-Inshushinak]], [[File:Puzur-Shushinak.jpg|100px]] in the "Table du Lion", [[Louvre Museum]] Sb 17.]]
+The following scripts are known or assumed to have encoded Elamite:<ref>{{Harvnb|Stolper|2004|p=65}}</ref>
+*[[Proto-Elamite script]] is the oldest known writing system from Iran. It was used during a brief period of time (c. 3100–2900 BC); clay tablets with Proto-Elamite writing have been found at different sites across Iran. It is thought to have developed from early [[cuneiform]] (proto-cuneiform) and consists of more than 1,000 signs. It is thought to be largely logographic and is not deciphered. 
+*[[Linear Elamite]] is attested in a few monumental inscriptions. It has been described either as a syllabic or logosyllabic writing system. At least part of the script has been deciphered and it has been argued to have developed from Proto-Elamite, although the exact nature of the relationship between the two is disputed (see the main article). Linear Elamite was used for a very brief period of time during the last quarter of the third millennium BC.
+
+Later, [[Elamite cuneiform]], adapted from [[Akkadian cuneiform]], was used from c.&nbsp;2500&nbsp;BC on.<ref>{{Harvnb|Stolper|2004|pages=65–66}}</ref> Elamite cuneiform was largely a [[syllabary]] of some 130 glyphs at any one time and retained only a few [[logogram]]s from Akkadian but, over time, the number of logograms increased. The complete [[corpus language|corpus]] of Elamite cuneiform consists of about 20,000 tablets and fragments. The majority belong to the [[Achaemenid]] era, and contain primarily economic records.
+
+==Typology==
+Elamite is an [[agglutinative language]],<ref>{{Harvnb|Stolper|2004|p=60}}</ref> and its [[grammar]] was characterized by an extensive and pervasive nominal class system. Animate nouns have separate markers for first, second and third person. It can be said to display a kind of [[Suffixaufnahme]] in that the nominal class markers of the head are also attached to any modifiers, including adjectives, [[noun adjunct]]s, possessor nouns and even entire clauses.
+
+==Morphology==
+Though an [[agglutinative language]], Elamite has fewer morphemes per word than, for example, [[Sumerian language|Sumerian]] or [[Hurrian language|Hurrian]] and [[Urartian language|Urartian]]. It is mostly suffixing.
+
+===Nouns===
+The Elamite nominal system is thoroughly pervaded by a [[noun class]] distinction, which combines a gender distinction between animate and inanimate with a personal class distinction, corresponding to the three persons of verbal inflection (first, second, third, plural). <br>
+The suffixes that express that system are as follows:<ref name="Stolper 73" /> <br>
+Animate: <br>
+:1st person singular: ''-k''
+:2nd person singular: ''-t''
+:3rd person singular: ''-r'' or ''-Ø''
+:3rd person plural: ''-p''
+:
+Inanimate: <br>
+:''-∅'', ''-me'', ''-n'', ''-t''<ref>Apart from the productive use of ''-me'' to form abstract nouns, the meaning (if any) of the difference between the various inanimate suffixes is unclear.</ref>
+
+[[File:Inscription in Elamite, in the Xerxes I inscription at Van, 5th century BCE.jpg|thumb|Inscription in Elamite, in the [[Xerxes I inscription at Van|Xerxes&nbsp;I inscription at Van]], 5th century BC]]
+The animate third-person suffix ''-r'' can serve as a nominalizing suffix and indicate [[nomen agentis]] or just members of a class. The inanimate third-person singular suffix ''-me'' forms abstracts.
+
+Some examples of the use of the noun class suffixes above are the following:
+
+:''sunki-k'' "a king (first person)" i.e. "I, a king"
+
+: ''sunki-r'' "a king (third person)"
+
+:''nap-Ø'' or ''nap-ir'' "a god (third person)"
+
+:''sunki-p'' "kings"
+
+:''nap-ip'' "gods"
+
+: ''sunki-me'' "kingdom, kingship"
+
+:''hal-Ø'' "town, land"
+
+: ''siya-n'' "temple"
+
+: ''hala-t'' "mud brick".
+
+Modifiers follow their (nominal) heads. In noun phrases and pronoun phrases, the suffixes referring to the head are appended to the modifier, regardless of whether the modifier is another noun (such as a possessor) or an adjective. Sometimes the suffix is preserved on the head as well:
+
+:''u šak X-k(i)'' = "I, the son of X"
+
+:''X šak Y-r(i)'' = "X, the son of Y"
+
+:''u sunki-k Hatamti-k'' = "I, the king of Elam"
+
+:''sunki Hatamti-p'' (or, sometimes, ''sunki-p Hatamti-p'') = "the kings of Elam"
+
+:''temti riša-r'' = "great lord" (lit. "lord great")
+
+:''riša-r nap-ip-ir'' = "greatest of the gods" (lit. "great of the gods")
+
+:''nap-ir u-ri'' = "my god" (lit. "god of me")
+
+:''hiya-n nap-ir u-ri-me'' = "the throne hall of my god"
+
+:''takki-me puhu nika-me-me'' = "the life of our children"
+
+:''sunki-p uri-p u-p(e)'' = "kings, my predecessors" (lit. "kings, predecessors of me")
+
+This system, in which the noun class suffixes function as derivational morphemes as well as agreement markers and indirectly as subordinating morphemes, is best seen in Middle Elamite. It was, to a great extent, broken down in Achaemenid Elamite, where possession and, sometimes, attributive relationships are uniformly expressed with the "[[genitive case]]" suffix ''-na'' appended to the modifier: e.g. ''šak X-na'' "son of X". The suffix ''-na'', which probably originated from the inanimate agreement suffix ''-n'' followed by the nominalizing particle ''-a'' (see below), appeared already in Neo-Elamite.<ref>{{Harvnb|Stolper|2004|p=74}}</ref>
+
+The personal pronouns distinguish nominative and accusative case forms. They are as follows:<ref name=":0">{{Harvnb|Stolper|2004|p=75}}</ref>
+
+{| class="wikitable"
+! rowspan="2" |
+! colspan="2" | Singular
+! colspan="2" | Plural
+|-
+! Nominative || Accusative
+! Nominative || Accusative
+|-
+! 1st person
+| u
+| un
+| nika/nuku
+| nukun
+|-
+! 2nd person
+| ni/nu
+| nun
+| num/numi
+| numun
+|-
+! 3rd person
+| i/hi
+| ir/in
+| ap/appi
+| appin
+|-
+! Inanimate
+| colspan="4" | i/in
+|}
+
+In general, no special possessive pronouns are needed in view of the construction with the noun class suffixes. Nevertheless, a set of separate third-person animate possessives ''-e'' (sing.) / ''appi-e'' (plur.) is occasionally used already in Middle Elamite: ''puhu-e'' "her children", ''hiš-api-e'' "their name".<ref name=":0" /> The relative pronouns are ''akka'' "who" and ''appa'' "what, which".<ref name=":0"/>
+
+===Verbs===
+[[File:Seal of Darius the Great British Museum.jpg|thumb|Seal of [[Darius the Great]] hunting in a chariot, reading "I am Darius, the Great King" in Old Persian ({{wikt-lang|peo|𐎠𐎭𐎶}}𐏐{{wikt-lang|peo|𐎭𐎠𐎼𐎹𐎺𐎢𐏁𐎴}} {{wikt-lang|peo|𐏋}}, "''adam Dārayavaʰuš xšāyaθiya''"), as well as in [[Elamite]] and [[Akkadian language|Babylonian]]. The word 'great' only appears in Babylonian. [[British Museum]].<ref>{{cite web |title=The Darius Seal |url=https://www.britishmuseum.org/research/collection_online/collection_object_details.aspx?objectId=282610&partId=1&people=92952&peoA=92952-3-18&page=1|access-date=24 January 2024 |website=British Museum}}</ref><ref>{{cite book |title=Darius' seal: photo – Livius |url=https://www.livius.org/pictures/a/iran/darius-seal-photo/}}</ref>]]
+The verb base can be simple (''ta-'' "put") or "[[reduplication|reduplicated]]" (''beti'' > ''bepti'' "rebel"). The pure verb base can function as a verbal noun, or "infinitive".<ref name=":1">{{Harvnb|Stolper|2004|p=81}}</ref>
+
+The verb distinguishes three forms functioning as [[finite verb]]s, known as '''"conjugations"'''.<ref name=":2">{{Harvnb|Stolper|2004|p=78}}</ref> Conjugation I is the only one with special endings characteristic of finite verbs as such, as shown below. Its use is mostly associated with active voice, transitivity (or verbs of motion), neutral aspect and past tense meaning. Conjugations II and III can be regarded as periphrastic constructions with participles; they are formed by the addition of the nominal personal class suffixes to a passive perfective participle in ''-k'' and to an active imperfective participle in ''-n'', respectively.<ref name=":1" /> Accordingly, conjugation II expresses a [[perfective aspect]], hence usually past tense, and an intransitive or passive voice, whereas conjugation III expresses an [[imperfective aspect|imperfective]] non-past action.
+
+The Middle Elamite '''conjugation I''' is formed with the following suffixes:<ref name=":2" />
+
+{| class="wikitable" 
+|+ Conjugation I
+|-
+! 
+! singular
+! plural
+|-
+! 1st person
+| -h
+| -hu
+|-
+! 2nd person
+| -t
+| -h-t
+|-
+! 3rd person
+| -š
+| -h-š
+|}
+
+: Examples: ''kulla-h'' "I prayed", ''hap-t'' "you heard", ''hutta-š'' "he did", ''kulla-hu'' "we prayed", ''hutta-h-t'' "you (plur.) did", ''hutta-h-š'' "they did".
+
+In Achaemenid Elamite, the loss of the /h/ reduces the transparency of the Conjugation I endings and leads to the merger of the singular and plural except in the first person; in addition, the first-person plural changes from ''-hu'' to ''-ut''.
+
+The '''participles''' can be exemplified as follows: perfective participle ''hutta-k'' "done", ''kulla-k'' "something prayed", i.e. "a prayer"; imperfective participle ''hutta-n'' "doing" or "who will do", also serving as a non-past infinitive. The corresponding conjugations ('''conjugation II and III''') are:
+
+{| class="wikitable" 
+|-
+! colspan="2" |
+! perfective<br>(= conj. II)
+! imperfective<br>(= conj. III)
+|-
+! 1st person
+! singular
+| hutta-k-k
+| hutta-n-k
+|-
+! 2nd person
+! singular
+| hutta-k-t
+| hutta-n-t
+|-
+! rowspan="2" | 3rd person
+! singular
+| hutta-k-r
+| hutta-n-r
+|-
+! plural
+| hutta-k-p
+| hutta-n-p
+|}
+
+In Achaemenid Elamite, the Conjugation 2 endings are somewhat changed:<ref>{{Harvnb|Stolper|2004|p=79}}</ref>
+
+{| class="wikitable" 
+|+ Conjugation II
+|-
+! 1st person
+! singular
+| hutta-k-ut
+|-
+! 2nd person
+! singular
+| hutta-k-t
+|-
+! rowspan="2" | 3rd person
+! singular
+| hutta-k (hardly ever attested in predicative use)
+|-
+! plural
+| hutta-p
+|}
+
+There is also a '''periphrastic construction''' with an [[auxiliary verb]] ''ma-'' following either Conjugation II and III stems (i.e. the perfective and imperfective participles), or ''nomina agentis'' in ''-r'', or a verb base directly. In Achaemenid Elamite, only the third option exists. There is no consensus on the exact meaning of the periphrastic forms with ''ma-'', but durative, intensive or volitional interpretations have been suggested.<ref name=":3">{{Harvnb|Stolper|2004|p=80}}</ref>
+
+The '''optative''' is expressed by the addition of the suffix ''-ni'' to Conjugations I and II.<ref name=":3" />
+
+The '''imperative''' is identical to the second person of Conjugation I in Middle Elamite. In Achaemenid Elamite, it is the third person that coincides with the imperative.<ref name=":1" />
+
+The '''prohibitative''' is formed by the particle ''anu/ani'' preceding Conjugation III.<ref name=":1" />
+
+Verbal forms can be converted into the heads of subordinate clauses through the addition of the '''nominalising suffix''' ''-a'', much as in [[Sumerian language|Sumerian]]: ''siyan in-me kuši-hš(i)-me-a'' "the temple which they did not build". ''-ti''/''-ta'' can be suffixed to verbs, chiefly of conjugation I, expressing possibly a meaning of anteriority (perfect and pluperfect tense).<ref>{{Harvnb|Stolper|2004|p=82}}</ref>
+
+The '''negative particle''' is ''in-''; it takes nominal class suffixes that agree with the subject of attention (which may or may not coincide with the grammatical subject): first-person singular ''in-ki'', third-person singular animate ''in-ri'', third-person singular inanimate ''in-ni''/''in-me''. In Achaemenid Elamite, the inanimate form ''in-ni'' has been generalized to all persons, and concord has been lost.
+
+==Syntax==
+Nominal heads are normally followed by their modifiers, but there are occasional inversions. Word order is [[subject–object–verb]] (SOV), with indirect objects preceding direct objects, but it becomes more flexible in Achaemenid Elamite.<ref name=":4">{{Harvnb|Stolper|2004|p=84}}</ref> There are often resumptive pronouns before the verb – often long sequences, especially in Middle Elamite (''ap u in duni-h'' "to-them I it gave").<ref>{{Harvnb|Stolper|2004|p=87}}</ref>
+
+The language uses [[postpositions]] such as ''-ma'' "in" and ''-na'' "of", but spatial and temporal relationships are generally expressed in Middle Elamite by means of "directional words" originating as nouns or verbs. They can precede or follow the governed nouns and tend to exhibit noun class agreement with whatever noun is described by the prepositional phrase: ''i-r pat-r u-r ta-t-ni'' "may you place him under me", lit. "him inferior of-me place-you-may". In Achaemenid Elamite, postpositions become more common and partly displace that type of construction.<ref name=":4" />
+
+A common conjunction is ''ak'' "and, or". Achaemenid Elamite also uses a number of subordinating conjunctions such as ''anka'' "if, when" and ''sap'' "as, when". Subordinate clauses usually precede the verb of the main clause. In Middle Elamite, the most common way to construct a relative clause is to attach a nominal class suffix to the clause-final verb, optionally followed by the relativizing suffix ''-a'': thus, ''lika-me i-r hani-š-r(i)'' "whose reign he loves", or optionally ''lika-me i-r hani-š-r-a''. The alternative construction by means of the relative pronouns ''akka'' "who" and ''appa'' "which" is uncommon in Middle Elamite, but gradually becomes dominant at the expense of the nominal class suffix construction in Achaemenid Elamite.<ref>{{Harvnb|Stolper|2004|p=88}}</ref>
+
+== Sample texts ==
+Middle Elamite (Šutruk-Nahhunte I, 1200–1160 BC; EKI 18, IRS 33):
+
+Transliteration:
+
+{{Blockquote|
+(1) ú <sup>DIŠ</sup>šu-ut-ru-uk-<sup>d</sup>nah-hu-un-te ša-ak <sup>DIŠ</sup>hal-lu-du-uš-<sup>d</sup>in-šu-ši-
+
+(2) -na-ak-gi-ik su-un-ki-ik an-za-an šu-šu-un-ka<sub>4</sub> e-ri-en-
+
+(3) -tu<sub>4</sub>-um ti-pu-uh a-ak hi-ya-an <sup>d</sup>in-šu-ši-na-ak na-pír
+
+(4) ú-ri-me a-ha-an ha-li-ih-ma hu-ut-tak ha-li-ku-me
+
+(5) <sup>d</sup>in-šu-ši-na-ak na-pír ú-ri in li-na te-la-ak-ni
+}}
+
+Transcription:
+{{Blockquote|
+{{Transliteration|elx|U Šutruk-Nahhunte, šak Halluduš-Inšušinak-(i)k, sunki-k Anzan Šušun-k(a). Erientum tipu-h ak hiya-n Inšušinak nap-(i)r u-r(i)-me ahan hali-h-ma. hutta-k hali-k u-me Inšušinak nap-(i)r u-r(i) in lina tela-k-ni.}}
+}}
+
+Translation:
+{{Blockquote|
+I, Šutruk-Nahhunte, son of Halluduš-Inšušinak, king of [[Anshan (Persia)|Anshan]] and [[Susa]]. I moulded bricks and made the throne hall of my god [[Inshushinak|Inšušinak]] with them. May my work come as an offering to my god Inšušinak.
+}}
+
+Achaemenid Elamite ([[Xerxes I of Persia|Xerxes I]], 486–465 BC; XPa):
+
+Transliteration:
+{{Blockquote|
+(01) [sect 01] <sup>d</sup>na-ap ir-šá-ir-ra <sup>d</sup>u-ra-mas-da ak-ka<sub>4</sub> <sup>AŠ</sup>mu-ru-un
+
+(02) hi pè-iš-tá ak-ka<sub>4</sub> <sup>d</sup>ki-ik hu-ip-pè pè-iš-tá ak-ka<sub>4</sub> <sup>DIŠ</sup>
+
+(03) LÚ.MEŠ-ir-ra ir pè-iš-tá ak-ka<sub>4</sub> ši-ia-ti-iš pè-iš-tá <sup>DIŠ</sup>
+
+(04) LÚ.MEŠ-ra-na ak-ka<sub>4</sub> <sup>DIŠ</sup>ik-še-ir-iš-šá <sup>DIŠ</sup>EŠŠANA ir hu-ut-taš-
+
+(05) tá ki-ir ir-še-ki-ip-in-na <sup>DIŠ</sup>EŠŠANA ki-ir ir-še-ki-ip-
+
+(06) in-na pír-ra-ma-ut-tá-ra-na-um
+}}
+
+Transcription:
+{{Blockquote|
+{{Transliteration|elx|Nap irša-r(a) Auramasda, akka muru-n hi pe-š-ta, akka kik hupe pe-š-ta, akka ruh-(i)r(a) ir pe-š-ta, akka šiatiš pe-š-ta ruh-r(a)-na, akka Ikšerša sunki ir hutta-š-ta kir iršeki-p-na sunki, kir iršeki-p-na piramataram.}}
+}}
+
+Translation:
+{{Blockquote|
+A great god is [[Ahura Mazda]], who created this earth, who created that sky, who created man, who created happiness of man, who made [[Xerxes I of Persia|Xerxes]] king, one king of many, one lord of many.
+}}
+
+==See also==
+* [[Proto-Elamite]]
+* [[Linear Elamite]]
+* [[Susa]]
+* [[Anshan (Persia)|Anshan]]
+* [[Achaemenid royal inscriptions]]
+* [[Persepolis Fortification Tablets]]
+
+==References==
+{{reflist|30em}}
+
+==Bibliography==
+{{refbegin}}
+
+===Introductions and overviews===
+* {{cite book |editor1-last=Álvarez-Mon |editor1-first=Javier |editor2-last=Basello |editor2-first=Gian Pietro |editor3-last=Wicks |editor3-first=Jasmina |title=The Elamite World |date=2018 |publisher=Routledge |location=London/New York |isbn=9781315658032}}
+* {{Cite journal |last=van Bladel |first=Kevin |url=http://archive.org/details/the-language-of-the-xuz-and-the-fate-of-elamite |title=The Language Of The Xūz And The Fate Of Elamite |date=2021 |journal=Journal of the Royal Asiatic Society |volume=31 |issue=3 | pages=447–462|doi=10.1017/S1356186321000092}}
+* {{cite book |editor1-last=Blench |editor1-first=Roger |editor2-last=Spriggs |editor2-first=Matthew |title=Theoretical and Methodological Orientations |series=Archaeology and Language |volume=1 |date=1997 |publisher=Routledge |location=London |isbn=9780415117609}}
+* {{cite book |last1=Gragg |first1=Gene B. |editor1-last=Brown |editor1-first=Edward Keith |editor2-last=Ogilvie |editor2-first=Sarah |title=Concise encyclopedia of languages of the world |date=2009 |publisher=Elsevier |location=Amsterdam/Oxford |isbn=978-0-08-087774-7 |pages=316–317 |chapter=Elamite}}
+* {{cite book |last1=Gnanadesikan |first1=Amalia Elisabeth |title=The writing revolution: cuneiform to the internet |date=2009 |publisher=Wiley-Blackwell |location=Oxford |isbn=978-1-405-15406-2}}
+* {{cite book |last=Potts |first=Daniel T. |title=The archaeology of Elam: formation and transformation of an ancient Iranian state |publisher=Cambridge University Press |location=Cambridge |year=1999 |isbn=9780511489617}}.
+* {{cite book|author-last1=Basello |author-first1=Gian Pietro |chapter=Elamite as Administrative Language: From Susa to Persepolis |editor-last1=Álvarez-Mon |editor-first1=Javier |editor-last2=Garrison |editor-first2=Mark B. |title=Elam and Persia |publisher=Penn State University Press |location=University Park |date=2011 |pages=61–88 |doi=10.1515/9781575066127-008 |isbn=9781575066127 |jstor=10.5325/j.ctv18r6qxh}}
+
+===Dictionaries===
+* {{cite book |last1=Hinz |first1=Walther |last2=Koch |first2=Heidemarie |title=Elamisches Wörterbuch |volume=1 |date=1987a |url=https://archive.org/details/ElamischesWorterbuch.1/page/n1/mode/2up |language=de |publisher=Reimer |location=Berlin |isbn=3-496-00923-3}}
+* {{cite book |last1=Hinz |first1=Walther |last2=Koch |first2=Heidemarie |title=Elamisches Wörterbuch |volume=2 |date=1987b |url=https://archive.org/details/ElamischesWorterbuch.2 |language=de |publisher=Reimer |location=Berlin |isbn=3-496-00923-3}}
+
+===Grammars===
+* {{cite book |author-last=Дьяконов |author-first=Игорь Михайлович |script-title=ru:Языки древней Передней Азии |location=Moskow |publisher=Наука |year=1967 |language=ru |trans-title=The Languages of Ancient Asia Minor}}
+* {{cite book |last=Khačikjan |first=Margaret |title=The Elamite Language |series=Documenta Asiana |volume=IV |publisher=Consiglio Nazionale delle Ricerche Istituto per gli Studi Micenei ed Egeo-Anatolici |location=Rome |year=1998 |isbn=88-87345-01-5}}
+* {{cite book |last=Paper |first=Herbert H. |year=1955 |title=The phonology and morphology of Royal Achaemenid Elamite |location=Ann Arbor |publisher=University of Michigan Press |lccn=55-10983}}
+* {{cite book |author-last=Stolper |author-first=Matthew W. |year=2004 |chapter=Elamite |editor-last=Woodard |editor-first=Roger D. |title=The Cambridge Encyclopedia of the World's Ancient Languages |pages=60–95 |publisher=Cambridge University Press |location=Cambridge |isbn=978-0-521-56256-0}}
+**Republished in {{cite book |editor-last=Woodard |editor-first=Roger D. |year=2008 |title=The Ancient Languages of Mesopotamia, Egypt, and Aksum |pages=60–95 |location=Cambridge |publisher=Cambridge University Press |isbn=9780521684972}}
+* {{cite book |last1=Tavernier |first1=Jan |editor1-last=Hasselbach-Andee |editor1-first=Rebecca |title=A companion to ancient Near Eastern languages |date=2020 |publisher=Wiley Blackwell |location=Hoboken |isbn=9781119193296 |pages=163–184 |chapter=Elamite}}
+* {{cite book |author-last=Basello |author-first=Gian Pietro |year=2023 |chapter=An Introduction to Elamite Language |editor-last=Basello |editor-first=Gian Pietro |title=Studies on Elamite & Mesopotamian Cuneiform Culture |pages=7–47 |publisher=Lulu |location=Durham, NC |isbn=978-1-4476-3979-4 |url=https://unora.unior.it/bitstream/11574/217200/1/basello2023introduction-elamite.pdf}}
+
+===Genetic affiliation===
+* {{cite book |last=Blench |first=Roger |author-link=Roger Blench |title=Archaeology, Language, and the African Past |url=https://books.google.com/books?id=esFy3Po57A8C |access-date=30 June 2013 |year=2006 |location=Lanham|publisher=Rowman AltaMira |isbn=978-0-7591-0466-2 |issn=2691-8773 |series=African Archaeology Series}}
+* {{Cite book |last=Joseph |first=Tony |title=Early Indians : the story of our ancestors and where we came from |publisher=Juggernaut |year=2017 |isbn=978-93-86228-98-7 |location=New Delh |oclc=1112882321}}
+* {{Cite book |last=Krishnamurti |first=Bhadriraju |title=The Dravidian Languages |publisher=Cambridge University Press |year=2003 |isbn=9781139435338 |location=Cambridge, United Kingdom |language=English}}
+* {{cite journal |first=David W. |last=McAlpin |title=Toward Proto-Elamo-Dravidian |journal=Language |volume=50 |issue=1 |year=1974 |pages=89–101 |doi=10.2307/412012 |jstor=412012}}
+* {{cite journal |first=David W. |last=McAlpin |title=Elamite and Dravidian, Further Evidence of Relationships |journal=Current Anthropology |volume=16 |issue=1 |year=1975 |doi=10.1086/201521}}
+* {{cite book|author-first=David W. |author-last=McAlpin |chapter=Linguistic prehistory: the Dravidian situation |editor-first1=Madhav M. |editor-last1=Deshpande |editor-first2=Peter Edwin |editor-last2=Hook |title=Aryan and Non-Aryan in India |publisher=University of Michigan Press |location=Ann Arbor |year=1979 |pages=175–190 |doi=10.3998/mpub.19419 |isbn=978-0-472-90168-5 |jstor=10.3998/mpub.19419.10 |jstor-access=free}}
+* {{Cite journal |last=McAlpin |first=David W. |date=1981 |title=Proto-Elamo-Dravidian: The Evidence and Its Implications |jstor=1006352 |journal=Transactions of the American Philosophical Society |volume=71 |issue=3 |pages=1–155 |doi=10.2307/1006352}}
+* {{Cite book |last=Pedron |first=Filippo |title=Elamite and Dravidian: A Reassessment |publisher=International School of Dravidian Linguistics |year=2023 |isbn=9788196007546 |location=Thiruvananthapuram, India |language=English}}
+* {{cite journal |last=Southworth |first=Franklin |year=2011 |title=Rice in Dravidian and its linguistic implications |journal=Rice |volume=4 |issue=3–4 |pages=142–148 |doi=10.1007/s12284-011-9076-9 |doi-access=free|bibcode=2011Rice....4..142S }}
+* {{cite journal |last=Starostin |first=George |title=On the genetic affiliation of the Elamite language |journal=Mother Tongue |issn=1087-0326 |volume=VII |year=2002 |pages=147–217}}
+* {{Cite journal |last=Zvelebil |first=Kamil V. |date=1985 |title=Review of Proto-Elamo-Dravidian: The Evidence and Its Implications |jstor=601741 |journal=Journal of the American Oriental Society |volume=105 |issue=2 |pages=364–372 |doi=10.2307/601741 |issn=0003-0279}}
+{{refend}}
+
+==External links==
+{{commons category|Elamite language}}
+{{wiktionary category}}
+{{sister project |project=wiktionary |text=[[Wiktionary]] has a word list at '''''[[Wiktionary:Appendix:Elamite word list|Appendix:Elamite word list]]'''''}}
+* {{cite book | title = Elamisches Wörterbuch | first1 = Walther | last1 = Hinz | first2 = Heidemarie | last2 = Koch | location = Berlin | publisher = Reimer | year = 1987 | isbn = 978-3-496-00923-8 }} [https://archive.org/details/ElamischesWorterbuch.1 Part 1: A–H], [https://archive.org/details/ElamischesWorterbuch.2 Part 2: I–Z].
+*[https://web.archive.org/web/20110513235032/http://www.ancientscripts.com/elamite.html Ancient Scripts: Elamite]
+*[http://homepages.fh-giessen.de/kausen/wordtexte/Elamisch.doc Elamisch] by Ernst Kausen {{in lang|de}}. An overview of Elamite.
+*[https://www.um.es/cepoat/elamita/ Elamite grammar, glossary, and a very comprehensive text corpus], by Enrique Quintana (in some respects, the author's views deviate from those generally accepted in the field) {{in lang|es}}
+*[http://www.philology.ru/linguistics4/dyakonov-79.htm Эламский язык], a detailed description by [[Igor Diakonov]] {{in lang|ru}}
+*[http://ochre.lib.uchicago.edu/PFA_Online/ Persepolis Fortification Archive] {{Webarchive|url=https://web.archive.org/web/20110823135258/http://ochre.lib.uchicago.edu/PFA_Online/ |date=2011-08-23 }} (requires Java)
+*[https://web.archive.org/web/20001018020458/http://www-oi.uchicago.edu/OI/PROJ/ARI/ARI.html Achaemenid Royal Inscriptions project] (the project is discontinued, but the texts, the translations and the glossaries remain accessible on the [[Internet Archive]] through the options "Corpus Catalogue" and "Browse Lexicon")
+*[https://starlingdb.org/Texts/elam.pdf On the genetic affiliation of the Elamite language] by [[George Starostin]] (the [[Nostratic languages|Nostratic theory]]; also with glossary)
+* [https://web.archive.org/web/20110921032858/http://www.kavehfarrokh.com/wp-content/uploads/2009/07/elamitedravidian.pdf Elamite and Dravidian: Further Evidence of Relationship] by David McAlpin
+
+{{language families}}
+{{Eurasian languages}}
+{{Ancient Mesopotamia}}
+
+{{Authority control}}
+
+[[Category:Elamite language| ]]
+[[Category:Subject–object–verb languages]]
+[[Category:Language isolates of Asia]]
+[[Category:Pre-Indo-European languages]]
+[[Category:Languages attested from the 3rd millennium BC]]
+[[Category:Languages extinct in the 1st millennium BC]]
+[[Category:Languages extinct in the 4th century BC]]

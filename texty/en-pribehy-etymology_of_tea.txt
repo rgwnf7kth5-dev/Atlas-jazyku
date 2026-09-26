@@ -1,0 +1,541 @@
+{{short description|History and origins of the word "tea"}}
+{{Use dmy dates|date=August 2021}}
+{{DISPLAYTITLE:Etymology of ''tea''}}
+[[File:Tea (Chinese characters).svg|thumb|180px|Chinese character for tea]]
+The [[etymology]] of the various words for ''[[Wikt:tea|tea]]'' reflects the history of transmission of tea drinking culture and trade from China to countries around the world.{{sfn|Mair|Hoh|2009|pp= 262–264}} In this context, ''[[tea]]'' generally refers to the plant ''[[Camellia sinensis]]'' and/or the aromatic beverage prepared by pouring hot boiling water over the leaves. Most of the words for tea worldwide originate from Chinese pronunciations of the word [[wikt:茶|茶]], and they fall into three broad groups: ''te'', ''cha'' and ''chai'', present in English as ''tea'', ''cha'' or ''char'', and ''chai''.  The earliest of the three to enter English is ''cha'', which came in the 1590s via the Portuguese, who traded in [[Macao]] and picked up the [[Cantonese]] pronunciation of the word.<ref name=oed>{{cite web|url=http://www.etymonline.com/index.php?term=tea&allowed_in_frame=0|title=tea|publisher=[[Online Etymology Dictionary]]}}</ref>{{sfn|Mair|Hoh|2009|p= 262}} The more common ''tea'' form arrived in the 17th century via the Dutch, who acquired it either indirectly from ''teh'' in [[Malay language|Malay]], or directly from the ''tê'' pronunciation in [[Min Chinese]].<ref name=oed /> The third form ''chai'' (used in English almost solely to refer to Indian-style spiced tea) originated from the Chinese pronunciation of ''cha'', which travelled overland to Central Asia via the [[Silk Road]] where it picked up a Persian ending ''yi'', and entered English via [[Hindustani language|Hindustani]] in the 20th century.{{sfn|Mair|Hoh|2009|pp= 264–265}}
+
+The different regional pronunciations of the word in China are believed to have arisen from the same root, which diverged due to [[sound change]]s through the centuries. The written form of the Chinese word for tea was created in the mid-[[Tang dynasty]] by modifying the character [[wikt:荼|荼]] pronounced ''tu'', meaning a "bitter vegetable". ''Tu'' was used to refer to a variety of plants in ancient China, and acquired the additional meaning of "tea" by the [[Han dynasty]].{{sfn|Mair|Hoh|2009|pp= 264–265}} The Chinese word for tea was likely ultimately derived from the non-Sinitic languages of the botanical homeland of the tea plant in southwest China (or [[Burma]]), possibly from an archaic [[Austroasiatic languages|Austro-Asiatic]] root word *''la'', meaning "leaf".{{sfn|Mair|Hoh|2009|p= 266}}
+
+==Origins==
+The pronunciations of the words for "tea" worldwide mostly fall into the three broad groups: ''te'', ''cha'' and ''chai''. The exceptions are those in some languages from Southwest China and Myanmar, the botanical homeland of the tea plant.{{sfn|Mair|Hoh|2009|pp= 264–265}} Examples are ''la'' (meaning tea purchased elsewhere) and ''miiem'' (wild tea gathered in the hills) from the [[Wa people]] of northeast [[Burma]] and southwest [[Yunnan]], ''[[letpet]]'' in [[Burmese language|Burmese]] and ''meng'' in [[Lamet language|Lamet]] meaning "fermented tea leaves", ''tshuaj yej'' in [[Hmong language]] as well as ''miang'' in [[Thai language|Thai]] ("fermented tea"). These languages belong to the [[Austroasiatic languages|Austro-Asiatic]], [[Tibeto-Burman languages|Tibeto-Burman]], [[Hmong-Mien languages|Hmong-Mien]], and [[Tai languages|Tai]] families of languages now found in South East Asia and southwest of China. Scholars have suggested that the Austro-Asiatic languages may be the ultimate source of the word tea, including the various Chinese words for tea such as ''tu'', ''cha'' and ''ming''. ''Cha'' for example may have been derived from an [[Proto-Austroasiatic]] root *slaʔ (cognate with Proto-[[Vietic]] *s-laːʔ), meaning "leaf", while ''ming'' may be from Proto-[[Palaungic language|Palaungic]] root *miɛm ("fermented tea leaves").<ref>{{Cite book |last=Sidwell |first=Paul |title=The Palaungic Languages: Classification, Reconstruction and Comparative Lexicon |date=2015 |publisher=Lincom Europa |location=München |language=en}}</ref> The Sinitic, Tibeto-Burman and Tai speakers who came into contact with the Austro-Asiatic speakers then borrowed their words for tea.{{sfn|Mair|Hoh|2009|pp= 265–267}}
+
+===Tea etymologies in various Asian languages===
+{| class="wikitable"
+|-
+! style="width:85px;"|Language
+! style="width:95px;"|Name
+! style="width:85px;"|Language
+! style="width:95px;"|Name
+! style="width:85px;"|Language
+! style="width:100px;"|Name
+! style="width:85px;"|Language
+! style="width:100px;"|Name
+|-
+| style="background:#eee;"| Japanese
+| だ ''da'', た ''ta''<sub>(1)</sub>
+| style="background:#eee;"| Korean
+| 다 ''da'' {{IPA|ko|ta|}}<sub>(1)</sub>
+| style="background:#eee;"| [[Old Chinese]]
+|  ''/*rlaː/'' 
+| style="background:#eee;"| [[Middle Chinese]]
+|  ''drae'' 
+|-
+| style="background:#eee;"| [[Mizo language|Mizo]] (Lushai, Hmar) 
+| ''thingpui'' 
+| style="background:#eee;"| [[Shan language|Shan]] 
+| ''nɯŋ''
+| style="background:#eee;"| [[Phake language|Tai Phake]] 
+| ''ning'' 
+| style="background:#eee;"| [[Khamti language|Tai Khamti]] 
+| ''ning'',''phalap''
+|-
+| style="background:#eee;"| [[Naga languages|Naga]] 
+| ''khalap''<sub>(3)</sub>, ''cho'' 
+| style="background:#eee;"| [[Mising language|Mising]] 
+| ''sa:ng'' 
+| style="background:#eee;"| [[Idu-Mishmi language|Mishmi]] 
+| ''phala''
+| style="background:#eee;"| [[Miju language|Miju]] 
+| ''phāla᷆p'' 
+|-
+| style="background:#eee;"| [[Dimasa language|Dimasa]] 
+| ''gedreh'' 
+| style="background:#eee;"| [[Qabiao language|Qabiao]]
+| ''qalơ3''
+| style="background:#eee;"| [[Xong language|Xong]] 
+| ''nu³¹dʑʰi³⁵''<sub>(2)</sub>
+| style="background:#eee;"| [[She language|She]]
+| ''kʰi⁴⁴''
+|-
+| style="background:#eee;"| [[Thai language|Thai]]
+| ''miang''<sub>(4)</sub>
+| style="background:#eee;"| [[Lamet language|Lamet]]
+| ''meng''
+| style="background:#eee;"| [[Wa language|Wa]]
+|  ''la'', ''miiem'' 
+| style="background:#eee;"| [[Palaung language|Palaung]]
+|  ''miem'' 
+|-
+| style="background:#eee;"| [[Lahu language|Lahu]]
+| ''la''
+| style="background:#eee;"| [[Lisu language|Lisu]]
+|  ''la ja''
+| style="background:#eee;"| [[Akha language|Akha]]
+| ''lor bor''
+| style="background:#eee;"| Burmese
+| ''lahpet'' {{IPA|my|ləpʰɛʔ|}}<sub>(5)</sub>
+|-
+| style="background:#eee;"| [[Mru language|Mru]]
+| ''lăʔpʰɑk⁻''
+| style="background:#eee;"| [[Kachin language|Kachin]]
+|  ''hpalap''
+| style="background:#eee;"| [[Karenic languages|Karen]]
+|  ''lah hpah''
+| style="background:#eee;"| [[Mon language|Mon]]
+| ''la pek'' 
+|-
+| style="background:#eee;"| [[Yi language|Yi (Lolo)]]
+|  ''la''<ref>{{cite thesis |last=Yang|first=Linxi 杨林溪|date=2020|title=Liangshan Yiyu Miheihua yanjiu 凉山彝语米黑话研究|type=MA dissertation|publisher=Southwest Minzu University 西南民族大学}}</ref><ref>{{cite journal |last=Bradley|first=David|date=1979|title=Proto-Loloish|journal=Scandinavian Institute of Asian Studies Monograph Series, no. 39|publisher=London and Malmö: Curzon Press}}</ref> 
+| style="background:#eee;"| [[Nusu language|Nusu]]
+|  ''la ja'' 
+| style="background:#eee;"| [[Hani language|Hani]]
+|  ''laqpeiv''
+| style="background:#eee;"| [[Sora language|Sora]]
+| ''wabol'' 
+|-
+| style="background:#eee;"| [[Pa'O language|Pa'O]]
+|  ''la'' 
+| style="background:#eee;"| [[Kayah language|Kayah]]
+|  ''le''
+| style="background:#eee;"| [[Naxi language|Naxi]]
+|  ''le'' 
+| style="background:#eee;"| [[Hmong language|Hmong]]
+|  ''tshuaj yej'', ''yej'' 
+|-
+| style="background:#eee;"| [[Tangut language|Tangut]]
+| ''tsiq'''<sub>(2)</sub>
+| style="background:#eee;"| [[Bai language|Bai]]
+| ''gu'' 
+| style="background:#eee;"| [[She language|She]]
+|  ''ku''
+| style="background:#eee;"| [[Waxiang language|Waxiang]]
+| ''khu'' 
+|}
+* <sup>(1)</sup> These are alternative Sino-xenic pronunciations, borrowed from [[Middle Chinese]]. Note that ''cha'' is the common pronunciation of "tea" in Japanese and Korean.
+* <sup>(2)</sup> Possible Sino-xenic origins
+* <sup>(3)</sup> Smoked tea aged in bamboo tubes
+* <sup>(4)</sup> Umbrella term for tea, including fermented tea leaves eaten as a meal 
+* <sup>(5)</sup> Fermented tea
+
+==Chinese etymologies==
+The [[Chinese character]] for tea is [[wikt:茶|茶]], originally written with an extra horizontal stroke as [[wikt:荼|荼]] (pronounced ''tu''), and acquired its current form in the [[Tang dynasty]] first used in the eighth-century treatise on tea ''[[The Classic of Tea]]''.<ref>{{cite book |url=https://books.google.com/books?id=0zp6iMZoqt0C&pg=PA362 |title=Six Dynasties Civilization |author= Albert E. Dien |publisher=Yale University Press |page=362 |year= 2007 |isbn=978-0-300-07404-8 }}</ref><ref>{{cite book |url=https://books.google.com/books?id=BdWpWha_0EsC&pg=PT14 |title= The ultimate guide to Chinese tea |author= Bret Hinsch |year= 2011|publisher= Bret Hinsch |isbn= 978-974-480-129-6 }}</ref><ref>{{cite book |url=https://books.google.com/books?id=XU-jAQAAQBAJ&pg=PA4 |title=Hot Water for Tea: An inspired collection of tea remedies and aromatic elixirs for your mind and body, beauty and soul|author=Nicola Salter |publisher=ArchwayPublishing |page=4 |year= 2013 |isbn=978-1-60693-247-6 }}</ref> The word '''tú''' {{Wikt-lang|zh|荼}} appears in ancient Chinese texts such as ''[[Shijing]]'' signifying a kind of "bitter vegetable" ({{lang|zh|苦菜}}) and refers to various plants such as [[sow thistle]], [[chicory]], or [[Polygonum|smartweed]],{{sfn|Benn|2015|p= [https://books.google.com/books?id=XF17CAAAQBAJ&pg=PA22 22]}} and also used to refer to tea during the [[Han dynasty]].{{sfn|Mair|Hoh|2009|p= 265}} By the [[Northern Wei]] the word ''tu'' also appeared with a wood radical, meaning a tea tree.{{sfn|Mair|Hoh|2009|p= 265}} The word [[wikt:茶|茶]] first introduced during the Tang dynasty refers exclusively to tea. It is pronounced differently in the different [[varieties of Chinese]], such as ''chá'' in [[Mandarin Chinese|Mandarin]], ''zo'' and ''dzo'' in [[Wu Chinese]], and ''ta'' and ''te'' in [[Min Chinese]].<ref>{{cite book |url=https://books.google.com/books?id=ospMAgAAQBAJ&pg=PA203 |title=The World's Writing Systems |editor= Peter T. Daniels |page= 203 |publisher=Oxford University Press |year= 1996 |isbn=978-0-19-507993-7 }}</ref><ref name="yyxx">{{cite web |url=http://www.yyxx.sdu.edu.cn/content/guojihuiyi/guojihy-ctx.htm |title=「茶」的字形與音韻變遷(提要) |archive-url=https://web.archive.org/web/20100929132810/http://www.yyxx.sdu.edu.cn/content/guojihuiyi/guojihy-ctx.htm |archive-date=29 September 2010 }}</ref> One suggestion is that the pronunciation of ''tu'' (荼) gave rise to ''tê'';<ref>{{cite book |url=https://books.google.com/books?id=Ku1Sr-q9KNUC&pg=PA97 |title=Warp and Weft, Chinese Language and Culture |author= Keekok Lee |publisher=Eloquent Books |page=97 |year= 2008 |isbn=978-1-60693-247-6 }}</ref> but historical phonologists believe that ''cha'', ''te'' and ''dzo'' all arose from the same root with a reconstructed hypothetical pronunciation ''dra'' (''dr''- represents a single consonant for a [[retroflex]] ''d''), which changed due to sound shift through the centuries.{{sfn|Mair|Hoh|2009|pp= 264–265}}  Other ancient words for tea include '''jia''' ([[wikt:檟|檟]], defined as "bitter ''tu''" during the [[Han dynasty]]), '''she''' ([[wikt:蔎|蔎]]), '''ming''' ([[wikt:茗|茗]], meaning "fine, special tender tea") and '''chuan''' ([[wikt:荈|荈]]), but ''ming'' is the only other word for tea that is still in common use.{{sfn|Mair|Hoh|2009|pp= 264–265}}<ref>{{citation |url=http://www.lcsd.gov.hk/ce/Museum/Arts/7thingsabouttea/en/ch1_4_0.htm |title=Why we call tea "cha" and "te"? |work=Hong Kong Museum of Tea Ware |access-date=25 August 2014 |archive-url=https://web.archive.org/web/20180116051252/http://www.lcsd.gov.hk/ce/Museum/Arts/7thingsabouttea/en/ch1_4_0.htm |archive-date=16 January 2018 }}</ref>
+
+Most Chinese languages, such as [[Mandarin Chinese|Mandarin]], [[Gan Chinese|Gan]] and [[Hakka Chinese|Hakka]], pronounce it along the lines of ''cha'', but [[Min Chinese|Min]] varieties along the Southern coast of China pronounce it like ''teh''. These two pronunciations have made their separate ways into other languages around the world:<ref>{{cite web
+| work=The World Atlas of Language Structures Online
+| title=Feature/Chapter 138: Tea
+| first=Östen
+| last=Dahl
+| publisher=Max Planck Digital Library
+| url=http://wals.info/feature/138
+| access-date=4 June 2008
+}}</ref>
+*'''Te''' is from the [[Amoy dialect|Amoy]] ''tê'' of [[Hokkien dialect]] in southern [[Fujian]]. The ports of [[Xiamen]] (Amoy) and [[Quanzhou]] were once major points of contact with foreign traders.  Western European traders such as the Dutch may have taken this pronunciation either directly from Fujian or [[Taiwan]] where they had established a port, or indirectly via Malay traders in [[Banten (town)|Bantam]], [[Java]].<ref name="dalgado">{{cite book |url=https://books.google.com/books?id=3qk-p5hKuccC&pg=PA95 |title=Portuguese Vocables in Asiatic Languages: From the Portuguese Original of Monsignor Sebastiao Rodolfo Dalgado |volume=1 |author=Sebastião Rodolfo Dalgado |author2=Anthony Xavier Soares |publisher=South Asia Books |date=June 1988|isbn= 978-81-206-0413-1 |pages=94&ndash;95 }}</ref> The Dutch pronunciation of ''thee'' then spread to other countries in Western Europe. This pronunciation gives rise to English "tea" and similar words in other languages, and is the most common form worldwide.
+*'''Cha'''  originated from different parts of China. The "cha" pronunciation may come from the [[Cantonese]] pronunciation ''tsa'' around [[Guangzhou]] (Canton) and the ports of Hong Kong and [[Macau]], also major points of contact, especially with the Portuguese, who spread it to India in the 16th century. The Korean and Japanese pronunciations of ''cha'', however, came not from Cantonese; rather, they were borrowed into Korean and Japanese during earlier periods of Chinese history. '''Chai''' ([[Persian language|Persian]]: چای ''chay''){{sfn|Mair|Hoh|2009|p= 263}} might have been derived from Northern Chinese pronunciation of ''chá'',<ref>{{cite web|url=http://education.yahoo.com/reference/dictionary/entry/chai |title=Chai |publisher=[[American Heritage Dictionary]] |quote=Chai: A beverage made from spiced black tea, honey, and milk. ETYMOLOGY: Ultimately from Chinese (Mandarin) chá. |archive-url=https://web.archive.org/web/20140218211943/http://education.yahoo.com/reference/dictionary/entry/chai |archive-date=18 February 2014 }}</ref> which passed [[Silk Road|overland]] to Central Asia and Persia, where it picked up the Persian ending ''-yi'' before passing on to Russian, Arabic, Turkish, etc.{{sfn|Mair|Hoh|2009|pp= 264–265}}<ref name=oed /> The ''chai'' pronunciation first entered English either via Russian or Arabic in the early 20th century,<ref>{{cite web|url=https://www.etymonline.com/word/chai|title=chai|publisher=[[Online Etymology Dictionary]]}}</ref> and then as a word for "[[Masala chai|spiced tea]]" via [[Hindi]]-[[Urdu]] which acquired the word under the influence of the [[Mughal Empire|Mughals]].{{sfn|Mair|Hoh|2009|p= 263}}
+
+English has all three forms: ''cha'' or ''char'' (both pronounced {{IPAc-en|ˈ|tʃ|ɑː}}), attested from the late 16th century;<ref>{{cite web |url=https://en.oxforddictionaries.com/definition/char |archive-url=https://web.archive.org/web/20160926074225/https://en.oxforddictionaries.com/definition/char |archive-date=26 September 2016 |title=char |work=Oxford English Dictionary }}</ref> ''tea'', from the 17th;<ref>{{cite web |url=http://www.merriam-webster.com/dictionary/tea |title=tea |work=Merriam-Webster Dictionary |date=18 March 2024 }}</ref> and ''chai'', from the 20th.<ref>{{cite web |url=http://www.merriam-webster.com/dictionary/chai |title=chai |work=Merriam-Webster Dictionary |date=16 March 2024 }}</ref>
+
+Languages in more intense contact with Chinese, [[Sinospheric languages]] like Korean, Vietnamese and Japanese, may have borrowed their pronunciations for tea at an earlier time and from a different variety of Chinese, in the so-called [[Sino-Xenic]] pronunciations.  Although normally pronounced as ''cha'' (commonly with an honorific prefix ''o-'' as ''ocha'') or occasionally as ''sa'' (as in ''[[Japanese tea ceremony|sadô]]'' or ''[[kissaten]]''), Japanese also retains the early but now uncommon pronunciations of ''ta'' and ''da''. Similarly Korean also has ''ta'' in addition to ''cha'', and Vietnamese ''trà'' in addition to ''chè''.{{sfn|Mair|Hoh|2009|p= 262}} The different pronunciations for tea in Japanese arose from the different times the pronunciations were borrowed into the language: ''Sa'' is the ''[[Tō-on]]'' reading (唐音, literally Tang reading but in fact post Tang), 'ta' is the ''[[Kan-on]]'' (漢音) from the [[Middle Chinese]] spoken at the [[Tang dynasty]] court at [[Chang'an]]; which is still preserved in modern [[Min Dong language|Min Dong]] ''da''. ''Ja'' is the ''[[Go-on]]'' (呉音) reading from [[Wuyue people|Wuyue]] region,{{Citation needed|date=October 2022}} and comes from the earlier [[Southern Dynasties|Wu]] language centered at [[Nanjing]], a place where the consonant was still [[Voice (phonetics)|voiced]], as it is today in [[Xiang Chinese|Hunanese]] ''za'' or [[Shanghainese]] ''zo''.{{sfn|Mair|Hoh|2009|p= 264}} [[Zhuang language]] also features southern ''cha''-type pronunciations.{{citation needed|date=July 2021}}
+
+===Pronunciations of 茶 in Sinitic languages===
+
+{| class="wikitable"
+|-
+! style="width:85px;"|Dialect
+! style="width:85px;"|Name
+! style="width:85px;"|Dialect
+! style="width:85px;"|Name
+! style="width:85px;"|Dialect
+! style="width:85px;"|Name
+! style="width:85px;"|Dialect
+! style="width:85px;"|Name
+! style="width:85px;"|Dialect
+! style="width:85px;"|Name
+|-
+| style="background:#eee;"| [[Standard Chinese]]
+| chá<br>/ʈ͡ʂʰä³⁵/
+| style="background:#eee;"| [[Standard Cantonese]]
+| caa4<br>/t͡sʰaː²¹/
+| style="background:#eee;"| [[Shanghainese dialect|Shanghainese]]
+| zo<br>/zo²³/
+| style="background:#eee;"| Minbei (Jian'ou)
+| dâ<br>/ta³³/
+| style="background:#eee;"| Hainanese (Haikou) 
+| dê<br>/ʔdɛ³¹/
+|-
+| style="background:#eee;"| Sichuanese (Chengdu) 
+| ca2<br>/t͡sʰa²¹/
+| style="background:#eee;"| Gan (Nanchang)
+| ca<br>/t͡sʰa²⁴/
+| style="background:#eee;"| Xiang (Changsha) 
+| za<br>/t͡sa̠¹³/
+| style="background:#eee;"| Mindong (Fuzhou) 
+| dà<br>/ta⁵³/
+| style="background:#eee;"| Southern Min (Literary) 
+| tâ,chhâ<br>/ta¹³/,/t͡sʰa²³/
+|-
+| style="background:#eee;"| Jin (Taiyuan)
+| ca1<br>/t͡sʰa¹¹/ 
+| style="background:#eee;"| Hakka ([[Sixian dialect|Sixian]]) 
+| chhà<br>/t͡sʰa¹¹/
+| style="background:#eee;"| Wenzhounese
+| dzo<br>/d͡zo³¹/
+| style="background:#eee;"| Teochew 
+| dê<br>/te⁵⁵/
+| style="background:#eee;"| Southern Min (Colloquial)
+| tê/têe<br>/te²³/,/tɛ¹³/
+|-
+| style="background:#eee;"| Nanjing 
+| cha<br>/ʈ͡ʂʰɑ²⁴/
+| style="background:#eee;"| Huizhou 
+| ca<br>/t͡sʰa⁴⁴/
+| style="background:#eee;"| Wu (Hangzhou) 
+| dza<br>/d͡zɑ²¹³/
+| style="background:#eee;"| Xiang ([[Xiangxiang dialect|Xiangtan]]) 
+| dzo<br>/d͡zɒ¹²/
+| style="background:#eee;"| [[Longyan dialect|Longyan]] 
+| tiêe<br>/ti̯ɛ¹¹/
+|}
+
+== Derivations from ''te'' and ''cha'' ==
+The different words for tea fall into two main groups: "''te''-derived" ([[Min Chinese|Min]]) and "''cha''-derived" ([[Cantonese]] and [[Mandarin Chinese|Mandarin]]).<ref name=oed/> Most notably through the [[Silk Road]];<ref>{{Cite web|title=Cultural Selection: The Diffusion of Tea and Tea Culture along the Silk Roads {{!}} Silk Roads Programme|url=https://en.unesco.org/silkroad/content/cultural-selection-diffusion-tea-and-tea-culture-along-silk-roads|access-date=20 June 2021|website=en.unesco.org}}</ref> global regions with a history of land trade with central regions of [[Imperial China]] (such as [[North Asia]], [[Central Asia]], [[South Asia]], and the [[Middle East]]) pronounce it along the lines of ''<nowiki/>'cha'<nowiki/>'', whilst most global maritime regions with a history of sea trade with certain southeast regions of Imperial China (such as Europe), pronounce it like ''<nowiki/>'teh'''.<ref>{{Cite web|last=Sonnad|first=Nikhil|title=Tea if by sea, cha if by land: Why the world only has two words for tea|url=https://qz.com/1176962/map-how-the-word-tea-spread-over-land-and-sea-to-conquer-the-world/|access-date=20 June 2021|website=Quartz|date=11 January 2018 |language=en}}</ref>
+
+The words that various languages use for "tea" reveal where those nations first acquired their tea and tea culture:
+* Portuguese traders were the first Europeans to import the herb in large amounts. The Portuguese borrowed their word for tea (''chá'') from Cantonese in the 1550s via their trading posts in the south of China, especially [[Macau]].<ref name="OEDTEA" />
+* In Central Asia, Mandarin ''cha'' developed into Persian ''chay'', and this form spread with Central Asian trade and cultural influence.
+* Russia ({{lang|ru|чай}}, ''chyai'') encountered tea in Central Asia.
+* The [[Nepali language|Nepali]] word for tea is Chiya (चिया), it comes directly from the [[Mandarin Chinese]] word ''chá'' (茶).<ref>{{Cite web |last= |first= |date=31 January 2004 |title=Spice up your tea |url=https://thehimalayantimes.com/entertainment/spice-up-your-tea |access-date=24 August 2026 |website=The Himalayan Times |language=en}}</ref>
+* The Dutch word for "tea" (''thee'') comes from [[Min Chinese]]. The Dutch may have borrowed their word for tea through trade directly from [[Fujian]] or [[Taiwan|Formosa]], or from Malay traders in [[Java]] who had adopted the Min pronunciation as ''teh''.<ref name="dalgado"/><ref name="OEDTEA"/> The Dutch first imported tea around 1606 from [[Macao]] via [[Banten (town)|Bantam]], Java,<ref>{{cite book |url=https://books.google.com/books?id=lXYFBQAAQBAJ&pg=PT16 |title=Tea: A Very British Beverage |first= Paul |last=Chrystal |date=15 October 2014 |publisher=Amberley Publishing Limited |isbn=978-1-4456-3360-2 }}</ref> and played a dominant role in the early European tea trade through the [[Dutch East India Company]], influencing other European languages, including English, French (''thé''), Spanish (''té''), and German (''Tee'').<ref name="OEDTEA">[http://www.etymonline.com/index.php?term=tea "Tea"]. ''Online Etymology Dictionary''. Retrieved 29 June 2012.</ref>
+* The Dutch first introduced tea to England in 1644.<ref name="OEDTEA" /> By the 19th century, most British tea was purchased directly from [[Canton System|merchants in Canton]], whose population uses ''cha'', the English however kept its Dutch-derived Min word for tea, although ''char'' is sometimes used colloquially to refer to the drink in British English (see below).
+
+At times, a ''te'' form will follow a ''cha'' form, or ''vice versa'', giving rise to both in one language, at times one an imported variant of the other:
+* In North America, the word ''chai'' is used to refer almost exclusively to the Indian ''[[masala chai]]'' (spiced tea) beverage, in contrast to tea itself.
+* The inverse pattern is seen in [[Moroccan Arabic]] where ''shay'' means "generic, or black Middle Eastern tea" whereas ''atay'' refers particularly to Zhejiang or Fujian green tea with fresh mint leaves. The Moroccans are said to have acquired this taste for green tea—unique in the Arab world— from British exports in the 19th century (see [[Moroccan tea culture]]).
+* The colloquial Greek word for tea is ''tsáï'', from Slavic ''chai''. Its formal equivalent, used in earlier centuries, is ''téïon'', from ''tê''.
+* The Polish word for a tea-kettle is ''czajnik'', which comes from the Russian word ''Чай'' (pronounced ''chai''). However, tea in Polish is ''herbata'', which, as well as Belarusian ''гарба́та'' (''harbáta'') and Lithuanian ''arbata'', was derived from the Dutch ''herba thee'', although a minority believes that it was derived Latin ''herba thea'', meaning "tea herb."{{sfn|Mair|Hoh|2009|p= 262}}
+* The normal word for tea in Finnish is ''tee'', which is a Swedish loan. However, it is often colloquially referred to, especially in Eastern Finland and in Helsinki, as ''tsai'', ''tsaiju'', ''saiju'' or ''saikka'', which is cognate to the Russian word ''chai''. The latter word refers always to black tea, while green tea is always ''tee''.
+* In Ireland, or at least in [[Dublin]], the term ''cha'' is sometimes used for "tea," as is [[Great Vowel Shift|pre-vowel-shift]] pronunciation "tay" (from which the [[Irish Gaelic]] word ''tae'' is derived{{Citation needed|date=January 2011}}). ''Char'' was a common slang term for tea throughout [[British Empire]] and [[Commonwealth of Nations|Commonwealth]] military forces in the 19th and 20th centuries, crossing over into civilian usage.
+* The [[British slang]] word "char" for "tea" arose from its [[Cantonese Chinese]] pronunciation "''cha''" with its spelling affected by the fact that ''ar'' is a more common way of representing the phoneme {{IPA|/ɑː/}} in British English.
+<!-- [vague: expose again if something other than Spanish ''té'' is offered as an example] One place in which a word unrelated to tea is used to describe the beverage is South America (particularly Andean countries), because a similar stimulant beverage, ''[[yerba maté]]'', was consumed there long before tea arrived. -->
+
+=== Derivatives of ''te''===
+{| class="wikitable"
+|-
+! style="width:85px;"|Language
+! style="width:85px;"|Name
+! style="width:85px;"|Language
+! style="width:85px;"|Name
+! style="width:85px;"|Language
+! style="width:85px;"|Name
+! style="width:85px;"|Language
+! style="width:85px;"|Name
+! style="width:85px;"|Language
+! style="width:85px;"|Name
+|-
+| style="background:#eee;"| [[Afrikaans]]
+|''tee''
+| style="background:#eee;"| [[Armenian language|Armenian]]
+|թեյ [tʰɛj]
+| style="background:#eee;"| [[Basque language|Basque]]
+|''tea''
+| style="background:#eee;"| [[Belarusian language|Belarusian]]
+|''гарба́та'' (''harbáta'')<sub>(1)</sub>
+| style="background:#eee;"| [[Berber language|Berber]]
+|ⵜⵢ, ''atay''
+|-
+| style="background:#eee;"| [[Catalan language|Catalan]]
+|''te''
+| style="background:#eee;"| [[Kashubian language|Kashubian]] 
+|''(h)arbata''<sub>(1)</sub>
+| style="background:#eee;"| [[Czech language|Czech]]
+|''té'' or ''thé''<sub>(2)</sub>
+| style="background:#eee;"| [[Danish language|Danish]]
+|''te''
+| style="background:#eee;"| [[Dutch language|Dutch]]
+|''thee''
+|-
+| style="background:#eee;"| English
+|''tea''
+| style="background:#eee;"| [[Esperanto]]
+|''teo''
+| style="background:#eee;"| [[Estonian language|Estonian]]
+|''tee''
+| style="background:#eee;"| [[Faroese language|Faroese]]
+|''te''
+| style="background:#eee;"| [[Finnish language|Finnish]]
+|''tee''
+|-
+| style="background:#eee;"| French
+|''thé''
+| style="background:#eee;"| [[West Frisian language|West Frisian]]
+|''tee''
+| style="background:#eee;"| [[Galician language|Galician]]
+|''té''
+| style="background:#eee;"| German
+|''Tee''
+| style="background:#eee;"| [[Greek language|Greek]]
+|τέϊον ''téïon''
+|-
+| style="background:#eee;"| [[Hebrew language|Hebrew]]
+|תה, ''te''
+| style="background:#eee;"| [[Hungarian language|Hungarian]]
+|''tea''
+| style="background:#eee;"| [[Icelandic language|Icelandic]]
+|''te''
+| style="background:#eee;"| Irish
+|tae
+| style="background:#eee;"| Italian
+|''tè''
+|-
+| style="background:#eee;"| [[Javanese language|Javanese]]
+| ꦠꦺꦃ ''tèh''
+| style="background:#eee;"| [[Kannada]]
+| ಟೀಸೊಪ್ಪು ''ṭīsoppu''
+| style="background:#eee;"| [[Khmer language|Khmer]]
+|តែ ''tae''
+| style="background:#eee;"| (scientific) [[Latin]]
+| ''thea''
+| style="background:#eee;"| [[Latvian language|Latvian]]
+| ''tēja''
+|-
+| style="background:#eee;"| [[Leonese dialect|Leonese]]
+|''té''
+| style="background:#eee;"| [[Limburgish language|Limburgish]]
+| ''tiè''
+| style="background:#eee;"| [[Lithuanian language|Lithuanian]]
+|''arbata''<sub>(1)</sub>
+| style="background:#eee;"| [[Low German|Low Saxon]]
+|''Tee'' {{IPA|[tʰɛˑɪ]}} or ''Tei'' {{IPA|[tʰaˑɪ]}}
+| style="background:#eee;"| [[Malay language|Malay]] (including [[Malaysian language|Malaysian]] and [[Indonesian language|Indonesian]] standards)
+|''teh''
+|-
+| style="background:#eee;"| [[Malayalam]]
+|തേയില ''tēyila''
+| style="background:#eee;"| [[Maltese language|Maltese]]
+|''tè''
+| style="background:#eee;"| [[Norwegian language|Norwegian]]
+| ''te''
+| style="background:#eee;"| [[Occitan language|Occitan]]
+|''tè''
+| style="background:#eee;"| [[Polish language|Polish]]
+|''herbata''<sub>(1)</sub>
+|-
+| style="background:#eee;"| [[Scots language|Scots]]
+|''tea'' {{IPA|[tiː] ~ [teː]}}
+| style="background:#eee;"| [[Scottish Gaelic]]
+|''tì'', ''teatha''
+| style="background:#eee;"| [[Sinhalese language|Sinhalese]]
+|'' tē ''තේ
+| style="background:#eee;"| Spanish
+|''té''
+| style="background:#eee;"| [[Sundanese language|Sundanese]]
+|''entèh''
+|-
+| style="background:#eee;"| [[Swedish language|Swedish]]
+|''te''
+| style="background:#eee;"| [[Tamil language|Tamil]]
+|தேநீர் ''tēnīr'' <sub>(3)</sub>
+| style="background:#eee;"| [[Telugu language|Telugu]]
+|తేనీరు ''tēnīr'' <sub>(4)</sub>
+| style="background:#eee;"| [[Ukrainian language|Western Ukrainian]]
+|''герба́та'' (''herbáta'')<sub>(1)</sub>
+| style="background:#eee;"| [[Welsh language|Welsh]]
+|''te''
+|-
+|}
+<small>Notes:</small>
+* <sup>(1)</sup> from Latin ''herba thea'', found in Polish,  Western Ukrainian, Lithuanian, Belarusian and Kashubian{{sfn|Mair|Hoh|2009|p= 262 }} 
+* <sup>(2)</sup> ''té'' or ''thé'', but this term is considered archaic and is a literary expression; since roughly the beginning of the 20th century, ''čaj'' is used for 'tea' in Czech; see the following table
+* <sup>(3)</sup> ''nīr'' means water; ''tēyilai'' means "tea leaf" (''ilai'' "leaf")
+* <sup>(4)</sup> ''nīru'' means water; ''ṭīyāku'' means "tea leaf" (āku = leaf in [[Telugu language|Telugu]])
+
+=== Derivatives of ''sa'', ''cha'' or ''chai''===
+{| class="wikitable"
+|-
+! style="width:85px;"|Language
+! style="width:85px;"|Name
+! style="width:85px;"|Language
+! style="width:85px;"|Name
+! style="width:85px;"|Language
+! style="width:85px;"|Name
+! style="width:85px;"|Language
+! style="width:85px;"|Name
+! style="width:85px;"|Language
+! style="width:85px;"|Name
+|-
+| style="background:#eee;"| [[Assamese language|Assamese]]
+|চাহ ''sah''
+| style="background:#eee;"| [[Bengali language|Bengali]]
+|চা ''cha'' (''sa'' in Eastern regions)
+| style="background:#eee;"| [[Cebuano language|Cebuano]]
+|''tsá''
+| style="background:#eee;"| Chinese
+|茶 ''Chá''
+| style="background:#eee;"| English
+|''cha'' or ''char''
+|-
+| style="background:#eee;"| [[Gujarati language|Gujarati]]
+|ચા ''chā''
+| style="background:#eee;"| Japanese
+|{{lang|ja|	
+茶, ちゃ}} ''cha''<sub>(1)</sub>
+| style="background:#eee;"| [[Kannada]]
+|ಚಹಾ ''chahā''
+| style="background:#eee;"| [[Kapampangan language|Kapampangan]]
+|''cha''
+| style="background:#eee;"| [[Khasi language|Khasi]]
+|''sha''
+|-
+| style="background:#eee;"| 
+[[Pnar language|Pnar]]
+|''cha''
+| style=" background:#eee;"|
+[[Punjabi language|Punjabi]]
+| چاہ ਚਾਹ ''chá''
+| style="background:#eee;"| Korean
+|{{lang|ko|차}} ''cha''<sub>(1)</sub>
+|style="background:#eee;" | [[Kurdish languages|Kurdish]]
+|''ça''
+| style="background:#eee;"| [[Lao language|Lao]]
+|ຊາ /saː˦˥/
+|-
+| style="background:#eee;"| [[Marathi language|Marathi]]
+|चहा ''chahā''
+| style="background:#eee;"| [[Odia language|Oḍiā]]
+|ଚା' ''cha'a''
+| style="background:#eee;"|[[Persian language|Persian]]
+|چای ''chā''
+| style="background:#eee;"| [[Portuguese language|Portuguese]]
+|''chá''
+| style="background:#eee;"| [[Sindhi language|Sindhi]]
+|''chahen چانهه''
+|-
+| style="background:#eee;"| [[Somali language|Somali]]
+|''shaah''
+| style="background:#eee;"| [[Tagalog language|Tagalog]]
+|''tsaá''
+| style="background:#eee;"| [[Thai language|Thai]]
+|ชา /t͡ɕʰaː˧/
+| style="background:#eee;"| [[Standard Tibetan|Tibetan]]
+|ཇ་ ''ja''
+| style="background:#eee;"| [[Vietnamese language|Vietnamese]]
+|''trà'' and ''chè''<sub>(2)</sub>
+|-
+|}
+<small>Notes: </small>
+* <sup>(1)</sup> The main pronunciations of [[wikt:茶|茶]] in Korea and Japan are [[wikt:차|차]] ''cha'' and [[wikt:ちゃ|ちゃ]] ''cha'', respectively. (Japanese ''ocha'' ([[wikt:おちゃ|おちゃ]]) is [[Honorific speech in Japanese|honorific]].) 
+* <sup>(2)</sup> ''Trà'' and ''chè'' are variant pronunciations of 茶; the latter is the colloquial reading (''âm Nôm'') and is solely used in Northern Vietnamese dialects to describe the tea plant, tea leaf and ''nước chè'', a drink made from freshly boiled raw tea leaves while ''trà'' is widely used for all contexts. [[Chè]] also has another meaning which is an umbrella term for puddings and desserts.
+
+{| class="wikitable"
+|-
+! style="width:85px;"|Language
+! style="width:85px;"|Name
+! style="width:85px;"|Language
+! style="width:85px;"|Name
+! style="width:85px;"|Language
+! style="width:85px;"|Name
+! style="width:85px;"|Language
+! style="width:85px;"|Name
+! style="width:85px;"|Language
+! style="width:85px;"|Name
+|-
+| style="background:#eee;"| [[Albanian language|Albanian]]
+|''çaj''
+| style="background:#eee;"| [[Amharic]]
+|ሻይ ''shay''
+| style="background:#eee;"| [[Arabic]]
+|شاي ''shāy''
+| style="background:#eee;"| [[Assyrian Neo-Aramaic]]
+|ܟ݈ܐܝ ''chai''
+| style="background:#eee;"| [[Armenian language|Armenian]]
+|թեյ ''tey''
+|-
+| style="background:#eee;"| [[Azerbaijani language|Azerbaijani]]
+|''çay''
+| style="background:#eee;"| [[Bosnian language|Bosnian]]
+|''čaj''
+| style="background:#eee;"| [[Bulgarian language|Bulgarian]]
+|чай ''chai''
+| style="background:#eee;"| [[Chechen language|Chechen]]
+|чай ''chay''
+| style="background:#eee;"| [[Croatian language|Croatian]]
+|''čaj''
+|-
+| style="background:#eee;"| [[Czech language|Czech]]
+|''čaj''
+| style="background:#eee;"| English
+|''chai''
+| style="background:#eee;"| [[Finnish language|Finnish]] dialectal
+|''tsai'', ''tsaiju'', ''saiju'' or ''saikka''
+| style="background:#eee;"| [[Georgian language|Georgian]]
+|ჩაი ''chai''
+| style="background:#eee;"| Greek
+|τσάι ''tsái''
+|-
+| style="background:#eee;"| [[Hindi]]
+|चाय ''chāy''
+| style="background:#eee;"| [[Kazakh language|Kazakh]]
+|шай ''shai''
+| style="background:#eee;"| [[Kyrgyz language|Kyrgyz]]
+|чай ''chai''
+| style="background:#eee;"| [[Kinyarwanda]]
+|''icyayi''
+| style="background:#eee;"| [[Judaeo-Spanish]]
+|צ'יי ''chai''
+|-
+| style="background:#eee;"| [[Macedonian language|Macedonian]]
+| чај ''čaj''
+| style="background:#eee;"| [[Malayalam]]
+|ചായ ''chaaya''
+| style="background:#eee;"| [[Mongolian language|Mongolian]]
+|цай ''tsai''
+| style="background:#eee;"| [[Nepali language|Nepali]]
+|''chiyā'' चिया
+| style="background:#eee;"| [[Pashto]]
+|چای ''chay''
+|-
+| style="background:#eee;"| [[Persian language|Persian]]
+|چای ''chāī'' <sub>(1)</sub>
+| style="background:#eee;"| [[Romanian language|Romanian]]
+|''ceai''
+| style="background:#eee;"| Russian
+|чай ''chay''
+| style="background:#eee;"| [[Serbian language|Serbian]]
+|чај ''čaj''
+| style="background:#eee;"| [[Slovak language|Slovak]]
+|''čaj''
+|-
+| style="background:#eee;"| [[Slovene language|Slovene]]
+|''čaj''
+| style="background:#eee;"| [[Swahili language|Swahili]]
+|''chai''
+| style="background:#eee;"| [[Tajik language|Tajik]]
+|чой ''choy''
+| style="background:#eee;"| [[Tatar language|Tatar]]
+|чәй ''çäy''
+| style="background:#eee;"| [[Tlingit language|Tlingit]]
+|''cháayu''
+|-
+| style="background:#eee;"| [[Turkish language|Turkish]]
+|''çay''
+| style="background:#eee;"| [[Turkmen language|Turkmen]]
+|''çaý''
+| style="background:#eee;"| [[Ukrainian language|Ukrainian]]
+|чай ''chai''
+| style="background:#eee;"| [[Urdu]]
+|چائے ''chai''
+| style="background:#eee;"| [[Uzbek language|Uzbek]]
+|''choy''
+|}
+<small>Notes: </small>
+* <sup>(1)</sup> Derived from the earlier pronunciation چا ''cha''.
+
+==References==
+{{reflist}}
+
+==Bibliography==
+*{{cite book |last=Benn |first=James A. |title=Tea in China: A Religious and Cultural History |url=https://books.google.com/books?id=XF17CAAAQBAJ|publisher=[[Hong Kong University Press]] |year=2015 |isbn=978-988-8208-73-9 }}
+*{{cite book |first1=Victor H. |last1=Mair |first2= Erling |last2=Hoh |title= The True History of Tea |pages=262–264 |publisher=Thames & Hudson |year=2009 |isbn= 978-0-500-25146-1 }}
+
+[[Category:Etymologies|Tea]]
+[[Category:Tea]]
+[[Category:English words|Tea]]

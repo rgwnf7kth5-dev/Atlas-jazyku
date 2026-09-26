@@ -1,0 +1,225 @@
+{{Short description|Script used to write the Elamite language}}
+{{Infobox Writing system
+| name        = Elamite cuneiform
+| sample      = Naram-Sin stele inscription in Elamite.jpg
+| imagesize   = 150
+| caption     = Inscription of [[Shutruk-Nahhunte]] in Elamite cuneiform on the [[Victory Stele of Naram-Sin]].
+| type        = [[Logogram]]
+| languages   = [[Elamite language]]
+| time        = 2300 BCE to 400 BCE
+| fam1        = [[Cuneiform|Sumerian cuneiform]]
+| fam2        = [[Akkadian language|Akkadian cuneiform]]
+| sisters     = [[Old Persian cuneiform]]
+}}
+'''Elamite cuneiform''' was a [[logosyllabary|logo-syllabic]] script used to write the [[Elamite language]]. The corpus of Elamite cuneiform consists of tablets and fragments. The majority were created during the [[Achaemenid]] era, and contain primarily economic records.
+
+== History and decipherment ==
+The [[Elamite language]] (c. 2600 BCE to 400 BCE<ref>{{Cite web |first=Salvatore |last=Gaspa |title=Elamite |url=https://mnamon.sns.it/index.php?page=Lingua&id=2&lang=en  |website=Mnamon}}</ref>) is the now-extinct language spoken by Elamites, who inhabited the regions of [[Khūzistān]] and [[Fārs]] in Southern [[Iran]].<ref name="margaret" /> It has long been an enigma for scholars due to the scarcity of resources for its research and the irregularities found in the language.<ref name="margaret" /> It seems to have no relation to its neighboring [[Semitic languages|Semitic]] and [[Indo-European languages]].<ref name="starostin">Starostin, George (2002)</ref> Scholars fiercely argue over several hypotheses about its origin, but have no definite theory.
+
+Elamite cuneiform comes in two variants: the first, derived from [[Akkadian language|Akkadian]], was used during the 3rd to 2nd millennia BCE, and a simplified form was used during the 1st millennium BCE.<ref name="margaret">Khačikjan (1998)</ref> The main difference between the two variants is the reduction of glyphs used in the simplified version.<ref name="daniels" /> At any one time, there would only be around 130 cuneiform signs in use. Throughout the script's history, only 206 different signs were used in total.
+
+==Archaeological sources==
+=== First document in Elamite cuneiform (2250 BCE) ===
+[[File:Alliance Naram-Sin Awan Louvre Sb8833.jpg|thumb|left|Probable treaty of alliance between [[Naram-Sin of Akkad|Naram-Sin]] and [[Khita]] of [[Susa]], king of [[Awan dynasty|Awan]]. Elamite cuneiforms, c. 2250, [[Susa]], [[Louvre Museum]].<ref>{{cite book |last1=Hansen |first1=Donald P. |title=Leaving No Stones Unturned: Essays on the Ancient Near East and Egypt in Honor of Donald P. Hansen |date=2002 |publisher=Eisenbrauns |isbn=978-1-57506-055-2 |page=233 |url=https://books.google.com/books?id=6lDgYxV0DN8C&pg=PA233 |language=en}}</ref><ref name="Louvre">{{cite web |title=Site officiel du musée du Louvre |url=http://cartelfr.louvre.fr/cartelfr/visite?srv=car_not_frame&idNotice=12105 |website=cartelfr.louvre.fr}}</ref>]]
+The [[:File:Alliance Naram-Sin Awan Louvre Sb8833.jpg|earliest text using Elamite cuneiform]], an adaptation of [[Akkadian cuneiform]], is a treaty between the Akkadian [[Naram-Sin of Akkad|Naram-Sin]] and the Elamite [[Khita]] that dates back to 2250 BCE.<ref name=margaret /> The Treaty enumerates the kings of Elam, as guarantors of the agreement, and states:<ref name="Louvre" />
+{{quote|The enemy of Naram-Sin is my enemy, the friend of Naram-Sin is my friend|Akkadian-Elamite Treaty of 2250 BCE<ref name="Louvre" />}}
+
+However, some believe that Elamite cuneiform might have been in use since 2500 BCE.<ref name=daniels>Peter Daniels and William Bright (1996)</ref> The tablets are poorly preserved, so only limited parts can be read, but it is understood that the text is a treaty between the Akkad king [[Naram-Sin of Akkad|Nāramsîn]] and Elamite ruler [[Awan dynasty#Awan king list|Hita]], as indicated by frequent references like "Nāramsîn's friend is my friend, Nāramsîn's enemy is my enemy".<ref name=margaret />
+
+===Persepolis Administrative Archives===
+{{main|Persepolis Administrative Archives}}
+In 1933–34, 33,000 Elamite cuneiform tablets were found as part of the [[Persepolis Administrative Archives]].<ref>Vollmers, Gloria L. “ACCOUNTING AND CONTROL IN THE PERSEPOLIS FORTIFICATION TABLETS.” The Accounting Historians Journal, vol. 36, no. 2, 2009, pp. 93–111</ref> The Archives are the most important primary source for an understanding of the internal workings of the [[Achaemenid Empire]].
+
+===Other Achaemenid inscriptions===
+The most famous Elamite writings and the ones that ultimately led to its decipherment are the ones found in the trilingual inscriptions of monuments commissioned by the Achaemenid Persian kings; the [[Achaemenid royal inscriptions]].<ref name=reiner>Reiner, Erica (2005)</ref> The inscriptions, like the [[Rosetta Stone]]'s, were written in three different writing systems. The first was [[Old Persian]], which was deciphered in 1802 by [[Georg Friedrich Grotefend]]. The second, [[Babylonian language|Babylonian]] cuneiform, was deciphered shortly after the Old Persian text. Because Elamite is unlike its neighboring [[Semitic languages]], the script's decipherment was delayed until the 1840s. Even today, lack of sources and comparative materials hinder further research of Elamite.<ref name=margaret />
+
+== Inventory ==
+Elamite radically reduced the number of cuneiform glyphs. From the entire history of the script, only 206 glyphs are used; at any one time, the number was fairly constant at about 130. In the earliest tablets the script is almost entirely syllabic, with almost all common Old Akkadian syllabic glyphs with [[consonant|C]][[vowel|V]] and VC values being adopted. Over time the number of syllabic glyphs is reduced while the number of logograms increases. About 40 CVC glyphs are also occasionally used, but they appear to have been used for the consonants and ignored the vocalic value. Several [[determinative]]s are also used.<ref name=daniels />
+
+{|class="wikitable" style="margin:1em auto;" width=75%
+ |+Elamite CV and VC syllabic glyphs<br />Monumental Achaemenid inscriptions, 5th century BCE
+ ! || Ca || Ce || Ci || Cu || ||aC || eC || iC || uC
+ |-style="text-align:center"
+ !p <br /> b
+| {{Cuneiform|𒉺}} pa <br /> {{Cuneiform|𒁀}} ba || <br /> {{Cuneiform|𒁁}} be || valign="top"| {{Cuneiform|𒉿}} pe ~ pi || valign="top"| {{Cuneiform|𒁍}} pu
+!
+| {{Cuneiform|𒀊}} ap || colspan="2"| {{Cuneiform|𒅁}} ip ({{Cuneiform|𒌈}} íp) || {{Cuneiform|𒌒}} up
+ |-style="text-align:center"
+ !k <br /> g
+| valign="top"| {{Cuneiform|𒋡}} ka<sub>4</sub> ||colspan="2"| {{Cuneiform|𒆠}} ke ~ ki <br /> {{Cuneiform|𒄀}} ge ~ gi || valign="top"| {{Cuneiform|𒆪}} ku
+!
+| {{Cuneiform|𒀝}} ak ||colspan="2"| {{Cuneiform|𒅅}} ik|| {{Cuneiform|𒊌}} uk
+ |-style="text-align:center"
+ !t <br /> d
+| <br />{{Cuneiform|𒆪}} da || valign="top"| {{Cuneiform|𒋼}} te || valign="top"| {{Cuneiform|𒋾}} ti || {{Cuneiform|𒌅}} tu, {{Cuneiform|𒌈}} tu<sub>4</sub> <br /> {{Cuneiform|𒁺}} du
+!
+| {{Cuneiform|𒀜}} at || colspan="2"| &nbsp; || {{Cuneiform|𒌓}} ut
+ |-style="text-align:center"
+ !š
+| {{Cuneiform|𒐼}} šá ({{Cuneiform|𒊮}} šà) || {{Cuneiform|𒊺}} še || {{Cuneiform|𒅆}} ši || {{Cuneiform|𒋗}} šu
+!
+| {{Cuneiform|𒀾}} aš || colspan="3" | {{Cuneiform|𒆜}} iš ~ uš
+ |-style="text-align:center"
+ !s <br /> z (č)
+| {{Cuneiform|𒊓}} sa <br /> {{Cuneiform|𒍝}} ca || colspan="2" |{{Cuneiform|𒋛}} se ~ si <br /> {{Cuneiform|𒍢}} ce ~ ci || valign="top" | {{Cuneiform|𒋢}} su
+!
+| {{Cuneiform|𒊍}} as/ac || colspan="2" | {{Cuneiform|𒄑}} is/ic ||
+ |-style="text-align:center"
+ !y
+| {{Cuneiform|𒅀}} ya || colspan="3" |
+!
+| colspan="4"|
+ |-style="text-align:center"
+ !l
+| {{Cuneiform|𒆷}} la || colspan="2" | {{Cuneiform|𒇷}} le ~ li || {{Cuneiform|𒇻}} lu
+!
+| colspan="3" | || {{Cuneiform|𒌌}} ul
+ |-style="text-align:center"
+ !m
+| {{Cuneiform|𒈠}} ma || {{Cuneiform|𒈨}} me || {{Cuneiform|𒈪}} mi || {{Cuneiform|𒈬}} mu
+!
+| {{Cuneiform|𒄠}} am || colspan="2" | || {{Cuneiform|𒌝}} um
+ |-style="text-align:center"
+ !n
+| {{Cuneiform|𒈾}} na || colspan="2" | {{Cuneiform|𒉌}} ne ~ ni || {{Cuneiform|𒉡}} nu
+!
+| {{Cuneiform|𒀭}} an || {{Cuneiform|𒂗}} en || {{Cuneiform|𒅔}} in || {{Cuneiform|𒌦}} un
+ |-style="text-align:center"
+ !r
+| {{Cuneiform|𒊏}} ra || colspan="2" | {{Cuneiform|𒊑}} re ~ ri || {{Cuneiform|𒊒}} ru
+!
+| || colspan="2" | {{Cuneiform|𒅕}} ir || {{Cuneiform|𒌨}} ur
+ |-style="text-align:center"
+ !h <br />0
+| {{Cuneiform|𒄩}} ha<br />{{Cuneiform|𒀀}} a || <br />{{Cuneiform|𒂊}} e ||{{Cuneiform|𒄭}} hi<br />{{Cuneiform|𒄿}} i || {{Cuneiform|𒄷}} hu<br />{{Cuneiform|𒌋}} u, {{Cuneiform|𒌑}} ú
+!
+| {{Cuneiform|𒄴}} ah<br /> || colspan="3" |
+|}
+Glyphs in parentheses in the table are not common.
+
+The script distinguished the four vowels of Akkadian and 15 consonants, /p/, /b/, /k/, /g/, /t/, /d/, /š/, /s/, /z/, /y/, /l/, /m/, /n/, /r/, and /h/.  The Akkadian voiced pairs /p, b/, /k, g/, and /t, d/ may not have been distinct in Elamite. The series transcribed ''z'' may have been an [[affricate]] such as /č/ or /c/ (ts). /hV/ was not always distinguished from simple vowels, suggesting that /h/ may have been dropping out of the language. The VC glyphs are often used for a [[syllable coda]] without any regard to the value of V, suggesting that they were in fact alphabetic C signs.<ref name=daniels />
+
+Much of the conflation of Ce and Ci, and also eC and iC, is inherited from Akkadian ''(pe-pi-bi, ke-ki, ge-gi, se-si, ze-zi, le-li, re-ri,'' and ''ḫe-ḫi''—that is, only ''ne-ni'' are distinguished in Akkadian but not Elamite; of the VC syllables, only ''eš-iš-uš).'' In addition, {{Cuneiform|𒄴}} is ''aḫ, eḫ, iḫ, uḫ'' in Akkadian, and so effectively is a coda consonant even there.
+
+=== Sumerograms ===
+Below is a partial list of Elamite Sumerograms.<ref name="margaret" /><ref>{{Cite web |title=Sumerian/List |url=https://en.wikibooks.org/wiki/Sumerian/List}}</ref>
+{| class="wikitable"
+| valign="top" |BAN
+| valign="top" |𒌉
+|-
+| valign="top" |DILBAD
+| valign="top" | 
+|-
+| valign="top" |DINGIR
+| valign="top" |𒀭
+|-
+| valign="top" |DUB
+| valign="top" |𒁾
+|-
+| valign="top" |GAL
+| valign="top" |𒃲
+|-
+| valign="top" |GESHTIN
+| valign="top" |𒃾
+|-
+| valign="top" |GUD
+| valign="top" |𒄞
+|-
+| valign="top" |GUL
+| valign="top" |𒄢
+|-
+| valign="top" |ITU
+| valign="top" | 
+|-
+| valign="top" |ITU-tanna
+| valign="top" | 
+|-
+| valign="top" |ITU-tinna
+| valign="top" | 
+|-
+| valign="top" |KAM
+| valign="top" |𒄰
+|-
+| valign="top" |KU-BABBAR
+| valign="top" |𒆬𒌓
+|-
+| valign="top" |KU-GI
+| valign="top" |𒆬𒄀
+|-
+| valign="top" |KUSH
+| valign="top" |𒋢
+|-
+| valign="top" |KUSH-ukku
+| valign="top" | 
+|-
+| valign="top" |LU
+| valign="top" |𒇽
+|-
+| valign="top" |LU-irra
+| valign="top" | 
+|-
+| valign="top" |LUGAL
+| valign="top" |𒈗
+|-
+| valign="top" |LUGAL-appi-ni
+| valign="top" | 
+|-
+| valign="top" |LUGAL-appi-ni-kut
+| valign="top" | 
+|-
+| valign="top" |PAP
+| valign="top" |𒉽
+|-
+| valign="top" |QA
+| valign="top" |𒋡
+|-
+| valign="top" |SAG
+| valign="top" |𒊕
+|-
+| valign="top" |SAG-appi-ni
+| valign="top" | 
+|-
+| valign="top" |SHE-BAR
+| valign="top" |𒊺𒁇
+|-
+| valign="top" |UDU-NITA
+| valign="top" |𒇻𒀴          
+|-
+| valign="top" |UN
+| valign="top" |𒌦
+|}
+
+== Syntax ==
+
+Elamite cuneiform is similar to that of [[Akkadian language|Akkadian cuneiform]] except for a few unusual features. For example, the primary function of CVC glyphs was to indicate the two consonants rather than the syllable.<ref name=daniels /> Thus certain words used the glyphs for "tir" and "tar" interchangeably and the vowel was ignored. Occasionally, the vowel is acknowledged such that "tir" will be used in the context "ti-rV". Thus "ti-ra" might be written with the glyphs for "tir" and "a" or "ti" and "ra".
+
+Elamite cuneiform allows for a lot of freedom when constructing syllables. For example, CVC syllables are sometimes represented by using a CV and VC glyph. The vowel in the second glyph is irrelevant so "sa-ad" and "sa-ud" are equivalent. Additionally, "VCV" syllable sequences are represented by combining "V" and "CV" glyphs or "VC" and "CV" glyphs that have a common consonant.  Thus "ap-pa" and "a-pa" are equivalent. This also happens in Sumerian and Akkadian.
+
+== See also ==
+{{Portal|Asia}}
+*[[Proto-Elamite]]
+*[[Linear Elamite]]
+*[[Cuneiform (Unicode block)]]
+
+== Notes ==
+{{Reflist|2}}
+
+== References ==
+*Reiner, Erica. 2005. "[http://www.oxfordreference.com/views/ENTRY.html?subview=Main&entry=t202.e0334 Elamite]" ''International Encyclopedia of Linguistics.'' Ed. William J. Frawley. Oxford University Press. Oxford Reference Online (accessed 5 November 2008)
+*Khačikjan, Margaret. 1998. "The Elamite Language". ''Documenta Asiana IV, Consiglio Nazionale delle Ricerche Istituto per gli Studi Micenei ed Egeo-Anatolici.'' {{ISBN|88-87345-01-5}}
+*Peter T. Daniels and William Bright. 1996. "The World's Writing Systems". Published by Oxford University Press. {{ISBN|0-19-507993-0}}
+*George S. Starostin. On the Genetic Affiliation of the Elamite Language. // Originally in: Mother Tongue, v. VII. 2002, pp.&nbsp;147–170
+
+== External links ==
+*[https://cdli.ucla.edu/pubs/cdlp/cdlp0018_20190420.pdf Elamite bricks from the Museum of Hotel Sandelin (France, Saint-Omer) – Pauline Leroy 2020]
+*[https://cdli.ucla.edu/pubs/cdlb/2017/cdlb2017_003.html A New Edition of the Elamite Version of the Behistun Inscription (I) – Saber Amiri Parian 2017]
+*[https://cdli.ucla.edu/pubs/cdlb/2020/cdlb2020_001.html A New Edition of the Elamite Version of the Behistun Inscription (II) – Saber Amiri Parian 2020]
+
+{{list of writing systems}}
+
+[[Category:Elamite language|Cuneiform]]
+[[Category:Old Persian language]]
+[[Category:Obsolete writing systems]]
+[[Category:Cuneiform]]
+[[Category:Persian scripts]]
+[[Category:Logographic writing systems]]

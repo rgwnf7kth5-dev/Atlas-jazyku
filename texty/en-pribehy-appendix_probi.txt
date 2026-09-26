@@ -1,0 +1,196 @@
+{{Short description|List of erroneous Latin words}}
+{{italic title}}
+[[File:Appendix Probi photocopy 1892 - 1a.jpg|thumb|1892 photocopy of the ''Appendix'']]
+{{wikisourcelang|la|Appendix Probi|Appendix Probi}}
+The '''{{lang|la|Appendix Probi}}''' {{gloss|mode=def|[[Marcus Valerius Probus|Probus]]' Appendix}} is the conventional name for a series of five documents believed to have been copied in the seventh or eighth century in [[Bobbio]], Italy.<ref>Quirk 2006</ref> Its name derives from the fact that the documents were found attached to a copy of the {{lang|la|Instituta Artium}}, a treatise named after (but probably not written by) the first-century grammarian [[Marcus Valerius Probus]].<ref>Powell 2007: §1</ref>
+
+The Appendix was likely composed in Rome{{efn|There is a reference on line 134 to {{lang|la|caput africae}}, the name of a grammar school known to have been located in that city.<ref>Barnett 2007: 705</ref>|name=|group=lower-roman}} around the first half of the fourth century AD.<ref>Quirk 2006: 16–21, 300</ref>
+
+It is specifically the third of the five documents that has attracted scholarly attention, as it contains a list of 227 spelling mistakes, along with their corrections, which shed light on the [[Romance linguistics#Phonology|phonological]] and [[Romance linguistics#Other changes|grammatical]] changes that the [[Vulgar Latin|local vernacular]] was experiencing in the early stages of its development into [[Romance languages|Romance]].
+
+The text survives only in a carelessly transcribed water-damaged manuscript of the 7th or 8th century<ref>Rohlfs 1969: 16</ref> which is kept at the {{lang|it|[[Biblioteca Nazionale Vittorio Emanuele III]]|italic=no}}<ref>Quirk 2006</ref> as MS Lat. 1 (formerly Vindobonensis 17).
+
+== Phenomena visible in the spelling mistakes ==
+Note that the format is "[correct spelling], not [incorrect spelling]".<ref>Elcock 1960: 28–34</ref> [[Scribal abbreviation]]s have been expanded.
+
+=== [[Syncope (phonology)|Syncope]]===
+
+* {{lang|la|[[wiktionary:speculum#Latin|speculum]] non speclum}}
+* {{lang|la|[[wiktionary:masculus#Latin|masculus]] non masclus}}
+* {{lang|la|[[wiktionary:vernaculus#Latin|uernaculus]] non uernaclus}}
+* {{lang|la|[[wiktionary:angulus#Latin|angulus]] non anglus}}
+* {{lang|la|[[wiktionary:vetulus#Latin|uetulus]] non ueclus}}{{efn|Note the regular dissimilation, after syncope, of {{IPA|/-tl-/}} to {{IPA|/-kl-/}}.|name=|group=lower-roman}}
+* {{lang|la|[[wiktionary:vitulus#Latin|uitulus]] non uiclus}}
+* {{lang|la|[[wiktionary:articulus#Latin|articulus]] non articlus}}
+* {{lang|la|[[wiktionary:oculus#Latin|oculus]] non oclus}}
+* {{lang|la|[[wiktionary:calida#Latin|calida]] non calda}}
+* {{lang|la|[[wiktionary:viridis#Latin|uiridis]] non uirdis}}
+
+=== Development of [[Voiced palatal approximant|yod]] from front vowels in [[Hiatus (linguistics)|hiatus]] ===
+
+* {{lang|la|[[wiktionary:vinea#Latin|uinea]] non uinia}}
+* {{lang|la|[[wiktionary:cavea#Latin|cauea]] non cauia}}
+* {{lang|la|[[wiktionary:lancea#Latin|lancea]] non lancia}}
+* {{lang|la|[[wiktionary:ostium#Latin|ostium]] non osteum}}
+* {{lang|la|[[wiktionary:lilium#Latin|lilium]] non lileum}}
+* {{lang|la|[[wiktionary:alium#Latin|alium]] non aleum}}
+* {{lang|la|tolonium non toloneum}}
+
+=== Change of {{IPA|/ŭ/}} to {{IPA|[o]|}} ===
+
+* {{lang|la|[[wiktionary:columna#Latin|columna]] non colomna}}
+* {{lang|la|[[wiktionary:turma#Latin|turma]] non torma}}
+* {{lang|la|[[wiktionary:coluber#Latin|coluber]] non colober}}
+
+=== Reduction of pretonic {{IPA|/au̯/}} to {{IPA|[o]|}} ===
+
+* {{lang|la|[[wiktionary:auris#Latin|auris]] non oricla}}{{efn|The diminutive of ''auris'' is ''auricula''.|name=|group=lower-roman}}
+
+=== Loss of final {{IPA|/m/}} ===
+
+* {{lang|la|[[wiktionary:pridem#Latin|pridem]] non pride}}
+* {{lang|la|[[wiktionary:olim#Latin|olim]] non oli}}
+* {{lang|la|[[wiktionary:idem#Latin|idem]] non ide}}
+* {{lang|la|[[wiktionary:nunquam#Latin|nunquam]] non nunqua}}
+* {{lang|la|[[wiktionary:passim#Latin|passim]] non passi}}
+
+=== Loss of {{IPA|/h/}} ===
+
+* {{lang|la|[[wikt:adhuc#Latin|adhuc]] non aduc}}
+* {{lang|la|[[wiktionary:hostiae#Latin|hostiae]] non ostiae}}
+
+=== Reduction of {{IPA|/-ns-/}} to {{IPA|/-s-/}} ===
+
+* {{lang|la|[[wiktionary:mensa#Latin|mensa]] non mesa}}
+* {{lang|la|[[wiktionary:ansa#Latin|ansa]] non asa}}
+* {{lang|la|[[wiktionary:formosus#Latin|formosus]] non formunsus}}{{efn|An example of [[hypercorrection]] (Elcock 1960: 30), in this case the improper insertion of a silent ⟨n⟩, {{abbrlink|cf.|confer}} the spellings {{lang|la|herculens}} and {{lang|la|occansio}} below.|name=|group=lower-roman}}
+* {{lang|la|[[wiktionary:Hercules#Latin|Hercules]] non Herculens}}
+* {{lang|la|[[wiktionary:occasio#Latin|occasio]] non occansio}}
+
+=== Loss of intervocalic {{IPA|/β/}} before a [[back vowel]] ===
+
+* {{lang|la|[[wiktionary:rivus#Latin|riuus]] non rius}}
+* {{lang|la|[[wiktionary:flavus#Latin|flauus]] non flaus}}
+* {{lang|la|[[wiktionary:avus#Latin|auus]] non aus}}
+* {{lang|la|[[wiktionary:pavor#Latin|pauor]] non paor}}
+
+=== Confusion of {{IPA|/b/}} and {{IPA|/β/}} ===
+
+* {{lang|la|[[wiktionary:baculus#Latin|baculus]] non uaclus}}
+* {{lang|la|[[wiktionary:bravium#Latin|brauium]] non brabium}}
+* {{lang|la|[[wiktionary:alveus#Latin|alueus]] non albeus}}
+* {{lang|la|[[wiktionary:plebes#Latin|plebes]] non pleuis}}
+* {{lang|la|[[wiktionary:vapulo#Latin|uapulo]] non baplo}}
+
+=== Confusion of singletons and [[Gemination|geminates]] ===
+
+* {{lang|la|[[wiktionary:camera#Latin|camera]] non cammara}}
+* {{lang|la|[[wiktionary:garrulus#Latin|garrulus]] non garulus}}
+* {{lang|la|[[wiktionary:basilica#Latin|basilica]] non bassilica}}
+* {{lang|la|[[wiktionary:aqua#Latin|aqua]] non acqua}}
+* {{lang|la|[[wiktionary:draco#Latin|draco]] non dracco}}
+
+=== Elimination of imparisyllabic nouns ===
+
+* {{lang|la|[[wiktionary:grus#Latin|grus]] non gruis}}
+* {{lang|la|[[wiktionary:pecten#Latin|pecten]] non pectinis}}
+* {{lang|la|[[wiktionary:glis#Latin|glis]] non glirus}}
+
+=== Adaptation of [[Latin grammar#Declension of adjectives|3rd-decl. adjectives]] to the 1st class ===
+
+* {{lang|la|[[wiktionary:tristis#Latin|tristis]] non tristus}}
+* {{lang|la|[[wiktionary:pauper#Latin|pauper]] [[wiktionary:mulier#Latin|mulier]] non paupera mulier}}
+* {{lang|la|[[wiktionary:acre#Latin|acre]] non acrum}}
+* {{lang|la|[[wiktionary:ipse#Latin|ipse]] non ipsus}}
+
+=== Adaptation of [[Latin grammar#4th and 5th declension|4th-decl.]] feminine nouns to the 1st decl. ===
+
+* {{lang|la|[[wiktionary:nurus#Latin|nurus]] non nura}}
+* {{lang|la|[[wiktionary:socrus#Latin|socrus]] non socra}}
+
+=== Adaptation of 3rd/4th decl. feminines to the 1st decl. via diminutive suffix ===
+
+* {{lang|la|[[wiktionary:auris#Latin|auris]] non [[wiktionary:auricula#Latin|oricla]]}}
+* {{lang|la|[[wiktionary:fax#Latin|fax]] non [[wiktionary:facula#Latin|facla]]}}
+* {{lang|la|[[wiktionary:neptis#Latin|neptis]] non nepticla}}
+* {{lang|la|[[wiktionary:anus#Etymology 2 2|anus]] non anucla}}
+
+=== Adaptation of neuter plural to the first declension ===
+
+* {{lang|la|[[wiktionary:vico#Latin|uico]] [[wiktionary:castrorum#Latin|castrorum]] non uico castrae}}
+
+=== Elimination of the ablative ===
+
+* {{lang|la|[[wiktionary:nobiscum#Latin|nobiscum]] non noscum}}
+* {{lang|la|[[wiktionary:vobiscum#Latin|uobiscum]] non uoscum}}
+
+=== Alteration of [[Nominative case|nom]]. {{lang|la|-es}} (in the third declension) to {{lang|la|-is}} ===
+
+* {{lang|la|[[wiktionary:cautes#Latin|cautes]] non cautis}}
+* {{lang|la|[[wiktionary:tabes#Latin|tabes]] non tabis}}
+* {{lang|la|[[wiktionary:vates#Latin|uates]] non uatis}}
+* {{lang|la|[[wiktionary:vulpes#Latin|uulpes]] non uulpis}}
+* {{lang|la|[[wiktionary:fames#Latin|fames]] non famis}}
+* {{lang|la|[[wiktionary:sedes#Latin|sedes]] non sedis}}
+
+=== Reduction of the endings {{lang|la|-es}} and {{lang|la|-is}} to {{lang|la|-s}}{{efn|Perhaps by analogy with existing words like {{lang|la|[[wiktionary:urbs#Latin|urbs]]}} or {{lang|la|[[wiktionary:plebs#Latin|plebs]]}} (Elcock 1960: 32).|name=|group=lower-roman}} ===
+* {{lang|la|[[wiktionary:orbis#Latin|orbis]] non orbs}}
+* {{lang|la|[[wiktionary:nubes#Latin|nubes]] non nubs}}
+
+=== Loss of the masculine flexion -us ===
+
+* {{lang|la|[[wiktionary:figulus#Latin|figulus]] non figel}}{{efn|The unusual forms {{lang|la|figel}} and {{lang|la|mascel}} may reflect the replacement of the [[diminutive]] ending {{lang|la|-ulus}} with {{lang|la|-ellus}}, followed by the loss of both final {{IPA|/s/}} and the unstressed {{IPA|/ŭ/}}. While the change may seem to foreshadow e.g. the Romansh form {{lang|la|maschel}}, such forms are unusual for the time period and would not be seen again until the [[Kassel glosses]] (Elcock 1960: 32).|name=|group=lower-roman}}
+* {{lang|la|[[wiktionary:masculus#Latin|masculus]] non mascel}}
+* {{lang|la|[[wiktionary:barbarus#Latin|barbarus]] non barbar}}
+
+=== [[Metathesis (linguistics)|Metathesis]], [[Assimilation (phonology)|assimilation]], [[Dissimilation (phonology)|dissimilation]], etc. ===
+
+* {{lang|la|[[wiktionary:persica#Latin|persica]] non pessica}}
+* {{lang|la|[[wiktionary:iuniperus#Latin|iuniperus]] non ieniperus}}
+* {{lang|la|[[wiktionary:grundio#Latin|grundio]] non grunnio}}
+* {{lang|la|[[wiktionary:sibilus#Latin|sibilus]] non sifilus}}
+* {{lang|la|[[wiktionary:pegma#Latin|pegma]] non peuma}}
+* {{lang|la|[[wiktionary:coquus#Latin|coqus]] non cocus}}
+* {{lang|la|[[wiktionary:coquens#Latin|coquens]] non cocens}} 
+* {{lang|la|[[wiktionary:coqui#Latin|coqui]] non coci}}
+
+== See also ==
+
+* [[Reichenau Glossary]]
+* [[Proto-Romance language]]
+* [[Palatalization in the Romance languages]]
+* [[Phonological changes from Classical Latin to Proto-Romance]]
+
+== Notes ==
+{{notelist-lr}}
+
+==References==
+{{Reflist}}
+
+==Sources==
+*Barnett, F. J. 2007. The sources of the "Appendix Probi": A new approach''. The Classical Quarterly'' 57(2). 701–736.  doi:10.1017/s000983880700064x.
+*Elcock, William Dennis. 1960. ''The Romance Languages''. London: Faber & Faber.
+*Rohfls, Gerhard. 1969. ''Sermo Vulgaris Latinus: Vulgarlateinisches Lesebuch''. 2nd edn. Tübingen: Max Niemeyer Verlag.
+*Leppänen, V., & Alho, T. 2018. On The Mergers Of Latin Close-Mid Vowels. ''Transactions of the Philological Society''. doi:10.1111/1467-968x.12130
+*Powell, Jonathan G. F. 2007. A new text of the "Appendix Probi". ''The Classical Quarterly'' 57(2). 687–700. doi:10.1017/S0009838807000638.
+*Quirk, Ronald J. 2005. The “Appendix Probi” as a compendium of Popular Latin: Description and bibliography. ''The Classical World'' 98(4). 397–409. doi:10.2307/4352974
+*Quirk, Ronald J. 2006. ''The Appendix Probi: A scholar's guide to text and context''. Newark: Juan de la Cuesta.
+*Quirk, Ronald J. 2017. Hypercorrection in the Appendix Probi. ''Philologus'' 161(2). 350–353. doi:10.1515/phil-2016-0119
+
+==External links==
+*[https://web.archive.org/web/20130429171733/http://ling.upenn.edu/~kurisuto/germanic/appendix_probi.html Transcription of the Appendix Probi] by Sean Crist, following W. A. Baehrens, 1922, ''Sprachlicher Kommentar zur vulgärlateinischen Appendix Probi''.
+
+{{Authority control}}
+
+[[Category:Manuscripts in Latin]]
+[[Category:Linguistic purism]]
+[[Category:Palimpsests]]
+[[Category:Bobbio]]
+[[Category:Culture in Naples]]
+[[Category:8th-century manuscripts]]
+[[Category:7th-century manuscripts]]
+[[Category:Culture in Emilia-Romagna]]
+[[Category:Latin-language education]]
+[[Category:Latin language in ancient Rome]]
+[[Category:History of Emilia-Romagna]]
+[[Category:4th century in Italy]]

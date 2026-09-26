@@ -1,0 +1,204 @@
+{{short description|Alphabet used by early Turks (8–10th centuries)}}
+{{More citations needed|date=June 2019}}
+{{Infobox writing system
+| name        = Old Turkic script
+| altname     = Orkhon script
+| type        = Alphabet
+| languages   = [[Old Turkic]]
+| fam1        = [[Egyptian hieroglyphics]]
+| fam2        = [[Proto-Sinaitic]]
+| fam3        = [[Phoenician alphabet]]
+| fam4        = [[Aramaic alphabet]]
+| fam5        = [[Syriac alphabet]]
+| fam6        = [[Sogdian alphabet]]
+| children    = [[Old Hungarian alphabet|Old Hungarian]]
+| time        = 8th to 10th centuries<ref name="Scharlipp"/>
+| unicode     = [https://www.unicode.org/charts/PDF/U10C00.pdf U+10C00&ndash;U+10C4F]
+| iso15924    = Orkh
+| sample      = Ongin inscription Bumin Qaghan.svg
+| caption     = A line dedicated to [[Bumin Qaghan]] in the [[Ongin inscription]]
+| imagesize   = 300px
+}}
+{{Location map|Asia|caption=Location of the Orkhon Valley in Asia|alt=Location of the Orkhon Valley in Asia|relief=1|lat_deg=47.55666666667|lon_deg=102.831389}}
+The '''Old Turkic script''' (also known variously as '''Göktürk script''', '''Orkhon script''', '''Orkhon-Yenisey script''', '''Turkic runes''') was the [[alphabet]] used by the [[Göktürks]] and other early [[Turkic peoples|Turkic]] [[khanate]]s from the 8th to 10th centuries to record the [[Old Turkic]] language.<ref name="Scharlipp">Scharlipp, Wolfgang (2000). ''An Introduction to the Old Turkish Runic Inscriptions''. Verlag auf dem Ruffel, Engelschoff. {{ISBN|978-3-933847-00-3}}.</ref>
+
+The script is named after the [[Orkhon Valley]] in [[Mongolia]], where early 8th-century inscriptions were discovered in an 1889 expedition by [[Nikolai Yadrintsev]].<ref name=sinor>{{cite encyclopedia|last=Sinor|first=Denis|title=Old Turkic|encyclopedia=History of Civilizations of Central Asia|volume=4|pages=331–333|publisher=[[UNESCO]]|location=Paris|year=2002}}</ref> These [[Orkhon inscriptions]] were published by [[Vasily Radlov]] and deciphered by the [[Denmark|Danish]] philologist [[Vilhelm Thomsen]] in 1893.<ref>Vilhelm Thomsen, [Turkic] ''Orkhon Inscriptions Deciphered'' (Helsinki : Society of Finnish Literature Press, 1893). Translated in French and later English (Ann Arbor MI: University Microfilms Intl., 1971). OCLC 7413840</ref>
+
+This writing system was later used within the [[Uyghur Khaganate]]. Additionally, a [[Yenisei River|Yenisei]] variant is known from 9th-century [[Yenisei Kyrgyz]] inscriptions, and it has likely cousins in the [[Talas River|Talas Valley]] of [[Turkestan]] and the [[Old Hungarian alphabet]] of the 10th century. Words were usually written [[Right-to-left script|from right to left]].
+
+== Origins ==
+Many scholars, starting with [[Vilhelm Thomsen]] (1893), suggest that the Old Turkic script is derived from descendants of the [[Aramaic alphabet]] in particular via the [[Pahlavi scripts|Pahlavi]] and [[Sogdian alphabet]]s,<ref>{{cite book |last1=Brill |first1=E. J. |title=E.J. Brill's First Encyclopaedia of Islam: 1913–1936. Morocco – Ruzzīk |date=1993 |publisher=Brill |location=Volume 6 |isbn=978-90-04-09792-6 |page=911 |url=https://books.google.com/books?id=fWNpIGNFz0IC |access-date=7 August 2024 |language=en}}</ref><ref>{{cite book|last1=Campbell|first1=George|author-link1=George L. Campbell|last2=Moseley|first2=Christopher|author-link2=Christopher Moseley|title=The Routledge Handbook of Scripts and Alphabets|url=https://books.google.com/books?id=6lQwRD2Cb8EC&pg=PT180|year=2013|publisher=Routledge|isbn=978-1-135-22296-3|page=40}}</ref><ref>{{Cite journal |last=Róna-Tas |first=András |title=On the Development and Origin of the East Turkic "Runic" Script |date=1987 |url=https://www.jstor.org/stable/23657716 |journal=Acta Orientalia Academiae Scientiarum Hungaricae |volume=41 |issue=1 |pages=7–14 |jstor=23657716 |issn=0001-6446}}</ref> or possibly via [[Kharosthi]] used to write [[Sanskrit]].<ref>{{cite book|title=The First Writing: Script Invention as History and Process|last=Cooper|first=J.S.|publisher=Cambridge University Press|year=2004|editor-last=Houston|editor-first=Stephen|pages=58–59|chapter=Babylonian beginnings: The origin of the cuneiform writing system in comparative perspective}}</ref><ref>{{cite book|last=Mabry|first=Tristan James|title=Nationalism, Language, and Muslim Exceptionalism|url=https://books.google.com/books?id=8xtrBgAAQBAJ&pg=PA1|year=2015|publisher=University of Pennsylvania Press|isbn=978-0-8122-4691-9|page=109}}</ref><ref>{{cite book|title=The World's Writing Systems|last=Kara|first=György|publisher=Oxford University Press|year=1996|isbn=978-0-19-507993-7|editor-last=Daniels|editor-first=Peter|location=New York|chapter=Aramaic scripts for Altaic languages|editor-last2=Bright|editor-first2=William|url-access=registration|url=https://archive.org/details/isbn_9780195079937}}</ref> It has also been speculated that [[tamgas]] (livestock brands used by Eurasian nomads) were one of the sources of the Old Turkic script,<ref>Aristov, N. (1896) Notes on Ethnic Composition of Turkic Tribes and People and Population Record. ZhS 3–4, 277–456 </ref> but despite similarities in shape and forms, this hypothesis has been widely rejected as unverifiable, largely because early tamgas are too poorly attested and understood to be subject to a thorough comparison.<ref>{{cite book |last1=Tekin |first1=Talat |title=A Grammar of Orkhon Turkic – ProQuest |date=1965 |publisher=UNiversity of California, Los Angeles |url=https://www.proquest.com/openview/0ef1aeb9458a313c40ff7232f515673f |access-date=7 August 2024 |language=en}}</ref> The text is most likely derived from Aramaic via the [[Sogdian alphabet]] and [[Syriac alphabet]].<ref>{{Cite web |url=https://www.georing.biz/ots.pdf |title=Old Turkic script |access-date=28 September 2024 |archive-date=18 January 2024 |archive-url=https://web.archive.org/web/20240118162945/http://www.georing.biz/ots.pdf |url-status=dead }}</ref>
+
+Contemporary Chinese sources conflict as to whether the Turks had a written language by the 6th century. The 7th-century ''[[Book of Zhou]]'' mentions that the Turks had a written language similar to that of the Sogdians. Two other likewise 7th-century sources, the ''[[Book of Sui]]'' and the ''[[History of the Northern Dynasties]]'', claim that the Turks did not have a written language.<ref>{{cite book |last=Lung |first=Rachel |title=Interpreters in Early Imperial China |year=2011 |publisher=John Benjamins Publishing |pages=54–55 |isbn=978-90-272-2444-6 |url=https://books.google.com/books?id=qsNoHtgkGPkC}}</ref> According to {{ill|István Vásáry (professor of Asian studies)|hu|Vásáry István (orientalista)}}, the Old Turkic script was invented under the rule of the first khagans and was modelled after the Sogdian fashion.<ref>{{cite journal |last=Tryjarski |first=Edward |title=Runes and runelike scripts of Eurasian area. Part 1 |year=2002 |journal=Archivum Ottomanicum |volume=20 |page=49 |publisher=Mouton}}</ref> Several variants of the script came into being as early as the first half of the 6th century.<ref>Sigfried J. de Laet, Joachim Herrmann, (1996), ''History of Humanity: From the seventh century B.C. to the seventh century A.D.'', p. 478</ref>
+
+==Corpus==
+The Old Turkic corpus consists of about two hundred<ref name=erdal>Erdal, Marcel. 2004. A grammar of Old Turkic. Leiden, Brill. p. 7.</ref> inscriptions, plus a number of manuscripts.<ref>{{cite book|title=Графический фонд памятников тюркской рунической письменности азиатского ареала (опыт систематизации).|last=Vasilʹiev|first=D.D.|year=1983|location=Leningrad: USSR Academy of Science|pages=37, 45|language=ru|trans-title=Graphical corpus of Turkic Runic writing monuments in the Asian area.|quote=Руника Восточного Туркестана представлена двояко: в виде рукописных текстов и как граффити на фресках и на штукатурке пещерных храмов в Турфанском оазисе. Образцы тюркского рунического письма на бумаге имеют особое значение, так как только к этой группе могут быть применены традиционные приемы и методы палеографического исследования. Эти памятники относятся к периоду расцвета древнеуйгурских городов и торговли, к периоду зарождения тюркской письменной литературы и науки. Функциональное изменение характера памятников может быть признано свидетельством возникшей потребности в более широком и утилитарном использовании рунической грамоты.}}</ref>
+The inscriptions, dating from the 8th to 10th century, were discovered in present-day Mongolia (the area of the [[Second Turkic Khaganate]] and the [[Uyghur Khaganate]] that succeeded it), in the upper [[Yenisei]] basin of central-south [[Siberia]], and, in smaller numbers, in the [[Altai Mountains]] and [[Xinjiang]]. The texts are mostly [[epitaph]]s (official or private), but there are also graffiti and a handful of short inscriptions found on archaeological artifacts, including a number of bronze mirrors.<ref name=erdal/>
+
+The website of the Language Committee of Ministry of Culture and Information of the Republic of Kazakhstan lists 54 inscriptions from the Orkhon area, 106 from the Yenisei area, 15 from the Talas area, and 78 from the Altai area. The most famous of the inscriptions are the [[Khöshöö Tsaidam Monuments|two monuments]] ([[obelisk]]s) which were erected in the [[Orkhon Valley]] between 732 and 735 in honor of the [[Göktürk]] prince [[Kül Tigin]] and his brother the emperor [[Bilge Kağan]].<ref name=":0" /> The [[Tonyukuk inscription]], a monument situated somewhat farther east, is slightly earlier, dating to {{circa|716}}. These inscriptions relate in epic language the legendary origins of the [[Ashina tribe|Turks]], the golden age of their history, their subjugation by the [[China|Chinese]] ([[Tang dynasty in Inner Asia|Tang-Gokturk wars]]), and their liberation by [[Bilge Qaghan|Bilge]].{{Citation needed|reason=This claim needs a reliable source; also for this whole paragraph|date=August 2014}}<ref name=":0">{{Cite web|url=https://bitig.kz/?lang=e&mod=1&tid=1&oid=15&m=1|title=Kultegin’s Memorial Complex|website=bitig.kz|access-date=2019-06-27|archive-url=https://web.archive.org/web/20251031063240/https://bitig.kz/?tid=1&oid=15&m=1&lang=e&mod=1|archive-date=31 October 2025|url-status=live}}</ref>
+
+The Old Turkic manuscripts, of which there are none earlier than the 9th century, were found in present-day Xinjiang and represent [[Old Uyghur]], a different Turkic dialect from the one represented in the Old Turkic inscriptions in the Orkhon valley and elsewhere.<ref name=erdal/> They include [[Irk Bitig]], a 9th-century manuscript book on divination.<ref>{{cite book|last=Tekin|first=Talât|title=Irk bitig = The Book of omens|date=1993|publisher=Harrassowitz Verlag|isbn=3-447-03426-2|location=Wiesbaden|oclc=32352166}}</ref>
+
+==Alphabet==
+[[File:Thomsen Orkhon table 1893.png|thumb|Table of characters as published by Thomsen (1893)]]
+
+Old Turkic being a [[vowel harmony|synharmonic language]], a number of consonant signs are divided into two "synharmonic sets", one for front vowels and the other for back vowels. Such vowels can be [[Inherent vowel|taken as intrinsic to the consonant sign]], giving the Old Turkic alphabet an aspect of an [[abugida]] script. In these cases, it is customary to use superscript numerals ¹ and ² to mark consonant signs used with back and front vowels, respectively. This convention was introduced by Thomsen (1893), and followed by Gabain (1941), Malov (1951) and Tekin (1968).{{Citation needed|reason=please create official citation|date=June 2019}}
+
+{| class="wikitable"
+|+Vowels, with Yeniseian variants
+|- 
+|{{letter|s=Orkh|ch1=𐰀|ch2=𐰁 𐰂|note=a, ä|ipa= /ɑ/, /æ/}}
+|{{letter|s=Orkh|ch1=𐰃|ch2=𐰄|note=ï/ı, i|ipa=/ɯ/, /i/}}
+|{{letter|s=Orkh|ch=𐰅|note=e|ipa=/e/}}
+|{{letter|s=Orkh|ch=𐰆|note=o, u|ipa=/o/, /u/}}
+|{{letter|s=Orkh|ch1=𐰇|ch2=𐰈|note=ö, ü|ipa=/ø/, /y/}}
+|}
+{| class="wikitable letters-table"
+|+ Consonant sets, with Yeniseian variants
+|- 
+!scope=row|Back{{br}}vowels
+|{{letter|s=Orkh|ch1=𐰉|ch2=𐰊|note=b¹|ipa={{IPAslink|b}}}}
+|{{letter|s=Orkh|ch1=𐰑|ch2=𐰒|note=d¹|ipa={{IPAslink|d}}}}
+|{{letter|s=Orkh|ch1=𐰍|ch2=𐰎|note=γ/g¹|ipa={{IPAslink|ɢ}}}}
+|{{letter|s=Orkh|ch1=𐰞|ch2=𐰟|note=l¹|ipa={{IPAslink|l}}}}
+|{{letter|s=Orkh|ch=𐰣|note=n¹|ipa={{IPAslink|n}}}}
+|{{letter|s=Orkh|ch1=𐰺|ch2=𐰻|note=r¹|ipa={{IPAslink|r}}}}
+|{{letter|s=Orkh|ch=𐰽|note=s¹|ipa={{IPAslink|s}}}}
+|{{letter|s=Orkh|ch1=𐱃|ch2=𐱄|note=t¹|ipa={{IPAslink|t}}}}
+|{{letter|s=Orkh|ch1=𐰖|ch2=𐰗|note=y¹/j¹|ipa={{IPAslink|j}}}}
+|{{letter|s=Orkh|ch1=𐰴|ch2=𐰵|note=q/k¹|ipa={{IPAslink|q}}}}
+|{{letter|s=Orkh|ch1=𐰸|ch2=𐰹|note=oq{{efn|name=oq|group=consonants|Other transcriptions: uq, qo, qu, q, IPA: {{IPA|/oq/, /uq/, /qo/, /qu/, /q/}}}}|ipa={{IPA|/oq/}}}}
+|-
+!scope=row|Front{{br}}vowels
+|{{letter|s=Orkh|ch1=𐰋|ch2=𐰌|note=b²|ipa={{IPAslink|b}}}}
+|{{letter|s=Orkh|ch=𐰓|note=d²|ipa={{IPAslink|d}}}}
+|{{letter|s=Orkh|ch1=𐰏|ch2=𐰐|note=g/g²|ipa={{IPAslink|ɡ}}}}
+|{{letter|s=Orkh|ch=𐰠|note=l²|ipa={{IPAslink|l}}}}
+|{{letter|s=Orkh|ch1=𐰤|ch2=𐰥|note=n²|ipa={{IPAslink|n}}}}
+|{{letter|s=Orkh|ch=𐰼|note=r²|ipa={{IPAslink|r}}}}
+|{{letter|s=Orkh|ch=𐰾|note=s²|ipa={{IPAslink|s}}}}
+|{{letter|s=Orkh|ch1=𐱅|ch2=𐱆|note=t²|ipa={{IPAslink|t}}}}
+|{{letter|s=Orkh|ch1=𐰘|ch2=𐰙|note=y²/j²|ipa={{IPAslink|j}}}}
+|{{letter|s=Orkh|ch1=𐰚|ch2=𐰛|note=k²|ipa={{IPAslink|k}}}}
+|{{letter|s=Orkh|ch1=𐰜|ch2=𐰝|note=ök{{efn|name=ok|group=consonants|Other transcriptions: ük, kö, kü, k, IPA: {{IPA|/yk/, /kø/, /ky/, /k/}}}}|ipa={{IPA|/øk/}}}}
+|-
+!scope=row rowspan=2|Others
+|{{letter|s=Orkh|ch1=𐰲|ch2=𐰳|note=č|ipa={{IPAslink|tʃ}}}}
+|{{letter|s=Orkh|ch=𐰢|note=m|ipa={{IPAslink|m}}}}
+|{{letter|s=Orkh|ch=𐰯|note=p|ipa={{IPAslink|p}}}}
+|{{letter|s=Orkh|ch1=𐱁|ch2=𐱀 𐱂|note=š{{efn|According to Gabain (1941)}}|ipa= {{IPAslink|ʃ}}}}
+|{{letter|s=Orkh|ch1=𐰔|ch2=𐰕|note=z|ipa={{IPAslink|z}}}}
+|{{letter|s=Orkh|ch1=𐰭|ch2=𐰮 𐰬|note= ñ, ň, ŋ|ipa={{IPAslink|ŋ}}}}
+|{{letter|s=Orkh|ch=𐰱|note=ič, či, č|ipa={{IPA|/itʃ/,{{br}}/tʃi/, /tʃ/}}}}
+|{{letter|s=Orkh|ch1=𐰶|ch2=𐰷|note= ıq, qı, q|ipa={{IPA|/ɯq/,{{br}}/qɯ/, /q/}}}}
+|{{letter|s=Orkh|ch1=𐰨|ch2=𐰩|note=-nč|ipa={{IPA|/ntʃ/}}}}
+|{{letter|s=Orkh|ch1=𐰪|ch2=𐰫|note=-nj, ny, ñ|ipa={{IPAslink|ɲ}}}}
+|{{letter|s=Orkh|ch=𐰡|note=-lt|ipa={{IPA|/lt/, /ld/}}}}
+|-
+|{{letter|s=Orkh|ch1=𐰦|ch2=𐰧|note=-nt|ipa={{IPA|/nt/, /nd/}}}}
+|{{letter|s=Orkh|ch=𐰿|note=aš|ipa={{IPA|/aʃ/}}}}
+|{{letter|s=Orkh|ch=𐱇|note=ot, ut{{efn|According to Gabain (1941), but not listed in Thomsen (1893)}}|ipa={{IPA|/ot/, /ut/}}}}
+|{{letter|s=Orkh|ch=𐱈|note=baš{{efn|According to Tekin (1968), but not listed in Thomsen (1893) or Gabain (1941); Malov (1951) lists the sign but gives no sound value.}}|ipa={{IPA|/baʃ/}}}}
+|}
+{{notelist|group=consonants}}
+
+A [[Colon (punctuation)|colon]]-like symbol ({{unichar|205A|two dot punctuation}}) is sometimes used as a word separator.<ref name="TUS">{{cite book|url=https://www.unicode.org/versions/Unicode13.0.0/ch14.pdf#G41975|title=The Unicode Standard, Chapter 14.8: Old Turkic|publisher=Unicode Consortium|date=March 2020|chapter=14|page=594}}</ref> In some cases a ring ({{unichar|2E30|ring point}}) is used instead.<ref name="TUS"/>
+
+A reading example (right to left): 𐱅𐰭𐰼𐰃 transliterated '''t²ñr²i''', this spells the name of the Turkic sky god, [[Tengri|Täñri]] ({{IPA|/tæŋri/}}).
+
+==Variants==
+{{Disputed section|date=November 2008}}
+
+[[File:5manat09b.jpg|thumb|Examples of the Orkhon-Yenisei alphabet are depicted on the [[Obverse and reverse|reverse]] of the Azerbaijani 5 [[Azerbaijani manat|manat]] banknote issued since 2006.<ref>[https://www.cbar.az Central Bank of Azerbaijan]. National currency: [https://web.archive.org/web/20100903172904/https://www.cbar.az/pages/national-currency/banknotes/azn/ 5 manat]. (in Azerbaijani). Retrieved 25 February 2010.</ref>
+]]
+[[File:ToyokAndRjukokuAlphabets.gif|thumb|Oldest known Turkic alphabet listings, Ryukoku and Toyok manuscripts. Toyok manuscript transliterates Turkic alphabet into the [[Old Uyghur alphabet]]. Per {{cite book|last=Кызласов|first=Игорь Леонидович|author-link=:ru:Игорь Леонидович Кызласов|title=Рунические письменности евразийских степей|url=https://books.google.com/books?id=xVFkAAAAMAAJ|year=1994|publisher=Восточная литература РАН|isbn=978-5-02-017741-3}}]]
+
+Variants of the script were found from Mongolia and [[Xinjiang]] in the east to the Balkans in the west. The preserved inscriptions were dated to between the 8th and 10th centuries.
+
+These alphabets are divided into four groups by Kyzlasov (1994)<ref>Kyzlasov I. L.; "Writings of Eurasian Steppes", Eastern Literature, Moscow, 1994, 327 pp. 321–323.</ref> 
+*[[Languages of Asia|Asiatic]] group (includes Orkhon proper)
+*[[Eurasia]]tic group
+*[[Southern Europe]] group
+
+The [[Languages of Asia|Asiatic]] group is further divided into three related alphabets:
+*Orkhon alphabet, Göktürks, 8th to 10th centuries
+*Yenisei alphabet,
+**Talas alphabet, a derivative of the Yenisei alphabet, [[Kangju|Kangly]] or [[Karluks]] 8th to 10th centuries. Talas inscriptions include Terek-Say rock inscriptions found in the 1897, Koysary text, Bakaiyr gorge inscriptions, Kalbak-Tash 6 and 12 inscriptions, Talas alphabet has 29 identified letters.<ref>Kyzlasov I. L.; "Writings of Eurasian Steppes", Eastern Literature, Moscow, 1994, pp. 98–100.</ref>
+
+The Eurasiatic group is further divided into five related alphabets:
+*Achiktash, used in [[Sogdia]] 8th to 10th centuries.
+*South-Yenisei, used by the Göktürks 8th to 10th centuries.
+*Two especially similar alphabets: the Don alphabet, used by the [[Khazars]], 8th to 10th centuries; and the Kuban alphabet, used by the [[Bulgars]], 8th to 13th centuries. Inscriptions in both alphabets are found in the [[Pontic–Caspian steppe]] and on the banks of the [[Kama (river)|Kama]] river.
+*Tisza, used by the [[Pechenegs]] 8th to 10th centuries.
+
+A number of alphabets are incompletely collected due to the limitations of the extant inscriptions. Evidence in the study of the Turkic scripts includes Turkic-Chinese bilingual inscriptions, contemporaneous Turkic inscriptions in the Greek alphabet, literal translations into Slavic languages, and paper fragments with Turkic cursive writing from religion, [[Manichaeism]], [[Buddhism|Buddhist]], and legal subjects of the 8th to 10th centuries found in [[Xinjiang]].
+
+==Sample text==
+
+Transcription of part of Bilge Kağan's inscription (lines 36–38).<ref>{{Cite web |title=Bilge kagan’s Memorial Complex |url=https://bitig.kz/?lang=e&m=1&mod=1&oid=16&tid=1 |url-status=live |archive-url=https://web.archive.org/web/20251211014544/https://bitig.kz/?lang=e&m=1&mod=1&oid=16&tid=1 |archive-date=2025-12-11 |access-date=2026-05-12 |website=bitig.kz}}</ref>
+
+{{lang|otk|{{Script|Orkh|𐰖𐰕𐰸𐰞𐱃----: 𐰋𐰃𐰼𐰘𐰀: 𐱃𐰉𐰍𐰲𐰑𐰀: 𐱃𐰃: 𐰚𐰇𐰾𐰃: {{br}}𐰖𐰸: 𐰉𐰆𐰡𐰃: 𐰉𐰆: 𐰘𐰼𐰓𐰀: 𐰢𐰭𐰀: 𐰴𐰆𐰺: 𐰉𐰆𐰡𐰃: {{br}}𐰢𐰤: 𐰇𐰕𐰢: 𐰴𐰍𐰣: 𐰆𐰞𐰺𐱃𐰸𐰢: 𐰇𐰲𐰤: 𐱅𐰇𐰼𐰰: {{br}}𐰉𐰆𐰑𐰣𐰍: ----𐰇----: 𐰴𐰞𐰢𐰑𐰢: 𐰃𐰠𐰏: 𐱅𐰇𐰼𐰇𐰏: {{br}}𐰘𐰏𐰓𐰃: 𐰴𐰕𐰍𐰦𐰢: 𐰃𐰑----: ----𐱅𐰃𐰼𐰠𐰯: 𐰘----: }}{{br}}
+{{Script|Orkh|𐰦𐰀: 𐰾𐰇𐰤𐱁𐰓𐰢: 𐰾𐰇𐰾𐰃𐰤: 𐰽𐰨𐰑𐰢: 𐰃𐰲𐰚𐰏𐰢𐰀: {{br}}𐰱𐰚𐰓𐰃: 𐰉𐰆𐰑𐰣: 𐰉𐰆𐰡𐰃: 𐰇𐰠𐰏𐰢𐰀: 𐰇𐰠𐱅𐰃: 𐰾𐰠𐰭𐰀: {{br}}𐰸𐰆𐰑𐰃: 𐰖𐰆𐰺𐰯𐰣: 𐰴𐰺𐰍𐰣: 𐰶𐰃𐰽𐰞𐱃𐰀: 𐰋𐰃𐰤: {{br}}𐰉𐰺𐰴𐰃𐰤: 𐰦𐰀: 𐰉𐰆𐰕𐰑𐰢: ----: 𐰘𐱁𐰴𐰀: 𐰍𐰑𐰃: {{br}}𐰆𐰖𐰍𐰺: 𐰠𐱅𐰋𐰼: 𐰘𐰇𐰕𐰲𐰀: 𐰼𐰏: 𐰃𐰠𐰏𐰼𐰇: 𐱅𐰕𐰯: {{br}}𐰉𐰺𐰑𐰃: ----:}}{{br}}
+{{Script|Orkh|𐱅𐰃: 𐱅𐰇𐰼𐰰: 𐰉𐰆𐰑𐰣: 𐰀𐰲: 𐰼𐱅𐰃: 𐰆𐰞: {{br}}𐰘𐰃𐰞𐰴𐰃𐰍: 𐰞𐰯: 𐰃𐰏𐱅𐰢: 𐰆𐱃𐰕: 𐰺𐱃𐰸𐰃: 𐱅𐰇𐰼𐱅: {{br}}𐰖𐱁𐰢𐰀: 𐰆𐰍𐰕: 𐱅𐰕𐰯: 𐱃𐰉𐰍𐰲𐰴𐰀: 𐰚𐰃𐰼𐱅𐰃: {{br}}𐰇𐰚𐰤𐰯: 𐰾𐰇𐰠𐰓𐰢: 𐰽𐰆𐰴𐰣: ----: 𐰆𐰍𐰞𐰃𐰤: {{br}}𐰖𐰆𐱃𐰕𐰃𐰤: 𐰦𐰀: 𐰞𐱃𐰢: 𐰚𐰃: 𐰠𐱅𐰋𐰼𐰠𐰏: 𐰉𐰆𐰑𐰣: }}}}
+
+== Unicode ==
+
+{{Main|Old Turkic (Unicode block)}}
+
+The Unicode block for Old Turkic is U+10C00&ndash;U+10C4F. It was added to the [[Unicode]] standard in October 2009, with the release of version 5.2. It includes separate "Orkhon" and "Yenisei" variants of individual characters.
+
+Since [[Windows 8]] Unicode Old Turkic writing support was added in the [[Segoe]] font.
+
+{{Unicode chart Old Turkic}}
+
+==See also==
+*{{section link|Neolithic signs in China|Banpo and Jiangzhai}}
+*[[Khazar language]]
+*[[Tariat inscriptions]]
+*[[Sükhbaatar inscriptions]]
+
+== References ==
+=== Citations ===
+{{Reflist}}
+
+=== Sources ===
+{{refbegin}}
+* [[Diringer, David]]. ''The Alphabet: a Key to the History of Mankind'', New York, NY: Philosophical Library, 1948, pp.&nbsp;313–315.
+* Erdal, Marcel. 2004. ''A grammar of Old Turkic''. Leiden & Boston: Brill.
+* Guzev, V.G., Kljashtornyj, S.G. [https://dspace.uni.lodz.pl/xmlui/handle/11089/43929 ''The Turkic Runic script: Is the hypothesis of its indigenous origin no more viable?''] Rocznik Orientalistyczny, T. 49, Z. 2 (1994), wyd. 1995 [19] 
+*  LFaulmann, Carl. 1990 (1880). ''Das Buch der Schrift. Frankfurt am Main: Eichborn''. {{ISBN|3-8218-1720-8}} {{in lang|de}}
+* Février, James G. ''Histoire de l'écriture'', Paris: Payot, 1948, pp.&nbsp;311–317 {{in lang|fr}}
+* Ishjatms, N. "Nomads in Eastern Central Asia", in the "History of civilizations of Central Asia", Volume 2, UNESCO Publishing, 1996, {{ISBN|92-3-102846-4}}
+* {{cite book|author=Jensen, Hans |year=1970|title=Sign Symbol and Script |location=London |publisher=George Allen and Unwin Ltd|isbn=0-04-400021-9 }}
+* Kyzlasov, I.L. "Runic Scripts of Eurasian Steppes", Moscow, Eastern Literature, 1994, {{ISBN|5-02-017741-5}}
+*Malov, S.E. 1951, ''Pamjatniki Drevnitjurkskoj Pisʹmennosti'' (Памятники Древнитюркской Письменности), Moskva & Leningrad. {{in lang|ru}}
+* Muxamadiev, Azgar. (1995). Turanian Writing (Туранская Письменность). In Zakiev, M. Z.(Ed.), Problemy lingvoėtnoistorii tatarskogo naroda (Проблемы лингвоэтноистории татарского народа). Kazan: Akademija Nauk Tatarstana. {{in lang|ru}}
+*Róna-Tas, A. 1991. ''An introduction to Turkology''. Szeged.
+* Tekin, Talat. ''A Grammar of Orkhon Turkic. Indiana University Uralic and Altaic Series'', vol. 69 (Bloomington/The Hague: Mouton, 1968)
+* Thomsen, Vilhelm. ''Inscriptions de l'Orkhon déchiffrées'', ''Suomalais-ugrilainen seura, Helsinki Toimituksia, no. 5'' Helsingfors: La société de littérature Finnoise [https://archive.org/stream/inscriptionsdel00thomgoog#page/n4/mode/2up] {{in lang|fr}}
+* Vasilʹiev, D.D. ''Korpus tjurkskix runičeskix pamjatnikov Bassina Eniseja'' [''Corpus of the Turkic Runic Monuments of the Yenisei Basin''], Leningrad: USSR Academy of Science, 1983 {{in lang|ru}}
+* von Gabain, A. 1941. ''Alttürkische Grammatik mit Bibliographie, Lesestücken und Wörterverzeichnis, auch Neutürkisch''. Mit vier Schrifttafeln und sieben Schriftproben. (Porta Linguarum Orientalium; 23) Leipzig: Otto Harrassowitz. {{in lang|de}}
+{{refend}}
+
+==External links==
+{{commons category|Old Turkic script}}
+{{Wikisourcelang||Main Page/𐱅𐰇𐰼𐰜𐰲𐰀|𐱅𐰇𐰼𐰜𐰲𐰀}}
+*[https://www.bitig.kz/?lang=e Türk bitig – Old Turkic inscriptions, Texts, Translations]
+*[http://www.omniglot.com/writing/orkhon.htm Orkhon Alphabet page from Omniglot]
+*[http://www.isa-sari.com/gokturkce/?id=en Gokturkish Keyboard by Isa SARI]
+*[https://pauctle.com/klavye/orhon_harfli/ Old Turkic Virtual Keyboard by Pamukkale University]
+*[https://web.archive.org/web/20070927213243/http://www.kyrgyz.ru/?page=148 glyph table] (kyrgyz.ru)
+*{{cite web|url=https://www.unicode.org/L2/L2008/08071-n3357r2-old-turkic.pdf|title=L2/08-071: Proposal for encoding the Old Turkic script in the SMP of the UCS|date=2008-01-25|first=Michael|last=Everson|author-link=Michael Everson}}
+*[https://web.archive.org/web/20160303174516/http://huhturug.comuv.com/index.html Хөх Түрүгийн Бичиг] (in Mongolian)
+*[http://www.turkbitig.com Göktürükçe çevirici] (An online converter for Turkish alphabet )
+
+{{Turkic topics}}
+{{Göktürks}}
+{{list of writing systems}}
+
+[[Category:Runiform scripts]]
+[[Category:Göktürks]]
+[[Category:History of literature in China]]
+[[Category:Obsolete writing systems]]
+[[Category:Turkic alphabets]]
+[[Category:Right-to-left writing systems]]

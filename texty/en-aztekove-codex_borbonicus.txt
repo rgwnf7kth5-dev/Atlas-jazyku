@@ -1,0 +1,57 @@
+{{Short description|Aztec codex}}
+[[Image:Codex Borbonicus (p. 13).jpg|right|thumb|The original page 13 of the Codex Borbonicus, showing the 13th [[trecena]] of the Aztec sacred calendar.  This 13th trecena was under the auspices of the goddess [[Tlazolteotl]], who is shown on the upper left wearing a flayed skin, giving birth to [[Cinteotl]].  The 13 day-signs of this trecena, starting with 1 Earthquake, 2 Flint/Knife, 3 Rain, etc., are shown on the bottom row and the right column.]]
+
+The '''Codex Borbonicus''' is an [[Aztec codices|Aztec codex]] written by Aztec priests shortly before or after the [[Spanish conquest of the Aztec Empire]]. It is named after the [[Palais Bourbon]] in [[France]] and kept at the Bibliothèque de l'Assemblée Nationale in Paris. The codex is an outstanding example of how Aztec manuscript painting is crucial for the understanding of [[Mexica]] calendric constructions, [[deities]], and ritual actions.<ref>Keber, Eloise Quiñones. "Borbonicus, Codex." In [[David Carrasco|Davíd Carrasco]] (ed). ''[https://www.oxfordreference.com/view/10.1093/acref/9780195108156.001.0001/acref-9780195108156 <nowiki>The Oxford Encyclopedia of Mesoamerican Cultures [vol 1]</nowiki>]'' . : Oxford University Press, 2001 {{ISBN|9780195188431|}}</ref>
+
+== History ==
+The Codex Borbonicus is one of a very few Aztec codices that survived the colonial Spanish inquisition. When the Spanish conquistadors (led by [[Hernán Cortés]]) entered Aztec cities, they would often find libraries filled with thousands of native works.<ref name=":0">{{Cite news |last=Ter Minassian |first=V. |date=November 28, 2014 |title=Aztec Manuscript Under the Microscope |work=The Guardian |url=https://www.theguardian.com/world/2014/nov/28/codex-borbonicus-aztec-manuscript-date |access-date=March 21, 2022}}</ref> However, most of the works were destroyed during the conquest.<ref name=":1">{{Cite book |last=Murray |first=S. |title=The Library: An Illustrated History |publisher=Skyhorse Publishing |year=2009 |isbn=978-1510733329 |pages=106–107}}</ref>
+
+The Codex Borbonicus was acquired in 1826 for 1,300 gold francs at auction by a French Benedictine monk, deputy-curator of the library of the National Assembly, Pierre-Paul Druon.<ref name=":0" /> At the time, he sought out and entrusted many rare and valuable works to the French Parliament. The Codex is considered a French national treasure and has not been allowed to leave the country since the 1960s.<ref name=":0" />
+
+== Production ==
+The early printed word of the early Mexica Civilization is quite interesting, as it contains only pictographs. It was not until the colonial era that Aztec scribes, after learning the Roman alphabet, began to incorporate text into their codices, both in Nahuatl (the native language) and Spanish.<ref name=":1" /> As a result, it is unknown whether Aztec codices were created by a native method or created with the help of imported methods after the arrival of the Spanish.<ref name=":0" />
+
+The Codex Borbonicus is a single {{convert|46.5|ft|m|adj=on}} long sheet of [[amatl]] paper.  Although there were originally 40 accordion-folded pages, the first two and the last two pages are missing.   It was originally pictorial and [[logogram|logographic]] as was usual for pre-Columbian Aztec codicies, although some Spanish descriptions have been added. There is dispute as to whether the Codex Borbonicus is pre-Columbian, as the calendar pictures all contain room above them for Spanish descriptions.
+
+== Sections ==
+{{Panorama
+|image   = Complete Codex Borbonicus.jpg
+|height  = 230
+|alt     = Complete Codex Borbonicus
+|caption = Complete Codex Borbonicus
+}}
+The first section is one of the most intricate surviving divinatory calendars (or ''[[tonalamatl]]'').  Each page represents one of the 20 [[trecena]] (or 13-day periods), in the ''[[tonalpohualli]]'' (or 260-day year).  Most of the page is taken up with a painting of the ruling deity or deities, with the remainder taken up with the 13 day-signs of the trecena and 13 other glyphs and deities.
+
+With these 26 symbols, the priests were able to create horoscopes and divine the future.  The first 18 pages of the codex (all that remain of the original 20) show considerably more wear than the last sections, very likely indicating that these pages were consulted more often.
+
+The second section of the codex documents the [[Mesoamerican]] 52-year cycle, showing in order the dates of the first days of each of these 52 solar years.   These days are correlated with the nine [[Lords of the Night]].
+
+The third section is focused on rituals and ceremonies, particularly those that end the 52-year cycle, when the "[[new Fire ceremony|new fire]]" must be lit.  This section is unfinished.
+
+==See also==
+*[[Aztec calendar]]
+*[[Aztec codices]]
+*[[Codex Borgia]]
+
+==Notes==
+{{reflist}}
+
+==References==
+
+{{refbegin}}
+* {{cite journal |author1=Jansen, Maarten   |authorlink1=Maarten Jansen |author2=Gabina Aurora Pérez Jiménez |year=2004 |title=Renaming the Mexican Codices |journal=Ancient Mesoamerica |volume=15 |issue=2 |pages=267–271 |issn=0956-5361 |doi=10.1017/S0956536104040179|url=https://openaccess.leidenuniv.nl/bitstream/handle/1887/16354/Renaming.pdf?sequence=1 |hdl=1887/16354 |s2cid=163136552 |hdl-access=free }}
+* {{cite book | author= Keber | first=Eloise Quiñones |year=2001 |chapter=Borbonicus, Codex |editor= David Carrasco|title=The Oxford Encyclopedia of Mesoamerican Cultures: The Civilizations of Mexico and Central America|volume=1 |publisher=Oxford University Press| isbn= 9780195188431}}
+*[http://www.famsi.org/research/graz/borbonicus/thumbs_0.html Famsi.org: Links to each of the 36 pages of Codex Borbonicus]
+*[https://www.theguardian.com/world/2014/nov/28/codex-borbonicus-aztec-manuscript-date The Guardian "Aztec manuscript under the microscope"]
+{{refend}}
+
+{{authority control}}
+{{Aztec mythology}}
+[[Category:Aztec codices|Borbonicus]]
+[[Category:1510s books]]
+[[Category:1520s books]]
+[[Category:1510s in the Aztec civilization]]
+[[Category:1520s in the Aztec civilization]]
+[[Category:16th-century illuminated manuscripts]]
+[[Category:Astrological texts]]
+[[Category:Aztec philosophy]]

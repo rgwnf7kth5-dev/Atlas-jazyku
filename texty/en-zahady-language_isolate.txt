@@ -1,0 +1,1343 @@
+{{Short description|Language that has no demonstrable genetic relationship with other languages}}
+{{Distinguish|Isolating language}}
+[[File:Isolated Languages.png|thumb|upright=1.2|Locations of a few examples of language isolates]]
+
+A '''language isolate''', sometimes called an '''isolated language''', is a [[language]] that has no demonstrable [[Genetic relationship (linguistics)|genealogical relationship]] with any other language.<ref name=":1">{{Cite journal|last=Campbell|first=Lyle|date=2010-08-24|title=Language Isolates and Their History, or, What's Weird, Anyway?|journal=Annual Meeting of the Berkeley Linguistics Society|language=en|volume=36|issue=1|pages=16–31|doi=10.3765/bls.v36i1.3900|issn=2377-1666|doi-access=free}}</ref><ref>{{Citation |last1=Salaberri |first1=Iker |chapter=State of the art of research on language isolates: Introduction |date=2025-01-16 |title=Investigating Language Isolates: Typological and diachronic perspectives |pages=2–19 |editor-last=Salaberri |editor-first=Iker |chapter-url=https://benjamins.com/catalog/tsl.135.intro |access-date=2025-01-17 |series=Typological Studies in Language |publisher=John Benjamins Publishing Company |language=en |doi=10.1075/tsl.135.intro |isbn=978-90-272-1899-5 |last2=Krajewska |first2=Dorota |last3=Santazilia |first3=Ekaitz |last4=Zuloaga |first4=Eneko |editor2-last=Krajewska |editor2-first=Dorota |editor3-last=Santazilia |editor3-first=Ekaitz |editor4-last=Zuloaga |editor4-first=Eneko|chapter-url-access=subscription }}</ref> That is, an isolate is a [[language family]] that only contains one member. [[Basque language|Basque]] in Europe, [[Ainu languages|Ainu]] (if counted as a single language) and [[Burushaski]] in Asia, [[Sandawe language|Sandawe]] and [[Hadza language|Hadza]] in Africa, [[Haida language|Haida]] and [[Zuni language|Zuni]] in North America, [[Kanoê language|Kanoê]] and [[Trumai language|Trumai]] in South America, [[Tiwi language|Tiwi]] and possibly [[Porome language|Porome]] in Oceania are examples of language isolates, as too are well attested extinct languages such as [[Sumerian language|Sumerian]] and [[Elamite language|Elamite]]. The exact number of language isolates is unknown due to insufficient data on several languages; that is, there is a fuzzy boundary between language isolates and [[unclassified language]]s. Researchers may have differing criteria on how much comparative work needs to be done before concluding that a language is an isolate.<ref>p. xi. Lyle Campbell. 2018. "Introduction". ''Language Isolates'' edited by Lyle Campbell, pp. xi–xiv. Routledge.</ref>
+
+"Isolate" does not mean that a language has no relatives, only that any relationships are too distant to be detectable. Most established families of oral languages &ndash; including isolates &ndash; are assumed to be related to each other at a time depth too great for us to reconstruct. (See [[linguistic monogenesis]].)
+
+Another possibility is that the language arose independently and does not share a common linguistic genesis with any other language. This possibility is often posited for [[sign languages]] that are thought to have developed independently of other oral or sign languages.<ref name=":1" /><ref>{{Cite journal|last=Urban|first=Matthias|date=April 2021|title=The geography and development of language isolates|journal=Royal Society Open Science|language=en|volume=8|issue=4|pages=rsos.202232, 202232|article-number=rsos.202232 |doi=10.1098/rsos.202232 |doi-access=free|pmid=33996125|pmc=8059667|bibcode=2021RSOS....802232U|issn=2054-5703}}</ref>
+
+In some classifications, a language may be counted as an isolate once all known relatives are extinct. An example is the [[Ket language|Ket]] language spoken in [[Central Siberian Plateau|central Siberia]], which belongs to the wider [[Yeniseian languages|Yeniseian]] family, all the others of which are now extinct. Ket is thus an isolate in the current context. However, most classifications do not count Ket as a language isolate because it does have demonstrable relatives, even if they no longer exist except in recorded data. If those relatives had gone extinct without being recorded, then Ket would be an isolate in the stricter sense.
+
+Isolates may be reclassified as larger families if some of their purported dialects are later judged to be sufficiently different from each other to count as different languages. Examples include the erstwhile isolates of Japanese and Georgian: Japanese is now considered to be the [[Japonic languages|Japonic language family]] (which includes the [[Ryukyuan languages]]), and Georgian to be the [[Kartvelian languages|Kartvelian language family]].
+
+There is a difference between language isolates and [[unclassified languages]], but they can be difficult to differentiate when data is limited.<ref name=":1" /> If comparative efforts do prove fruitful, a language previously considered an isolate may be reclassified as being part of a larger language family, as happened with the [[Yanyuwa language]] of northern [[Australia]], now placed in the [[Pama–Nyungan languages|Pama–Nyungan]] family.<ref>{{Cite book|last=Bradley|first=John|title=Wuka nya-nganunga li-Yanyuwa li-Anthawirriyarra = Language for us, the Yanyuwa Saltwater People: a Yanyuwa encyclopaedia|volume =1|date=2016|others=Jean F. Kirton, Elfreda MacDonald|isbn=978-1-925003-67-3|location=North Melbourne, Vic|oclc=957570810}}</ref> Since linguists do not always agree on whether a genetic relationship has been demonstrated, it is often disputed whether a particular language is an isolate.
+
+==Genetic relationships==
+{{Main|Genetic relationship (linguistics)}}
+A genetic relationship is when two different languages are descended from a common ancestral language.<ref name=":4">{{Cite book|last=Thomason|first=Sarah Grey|title=Language contact, creolization, and genetic linguistics|date=1988|others=Terrence Kaufman|isbn=0-520-07893-4|location=Berkeley|oclc=16525266}}</ref> This is what makes up a [[language family]], which is a set of languages for which sufficient evidence exists to demonstrate that they descend from a single ancestral language and are therefore genetically related.<ref name=":1" /> For example, [[English language|English]] is related to other [[Indo-European languages]] and [[Mandarin Chinese]] is related to other [[Sino-Tibetan languages]]. By this criterion, each language isolate constitutes a family of its own.<ref name=":4" />
+
+Isolates at the family level are not to be confused with lower-level isolates, single languages that form a primary branch of a larger language family. Examples are [[Armenian language|Armenian]], an isolate within the Indo-European family, and [[Paiwan language|Paiwan]], an isolate within the [[Austronesian languages|Austronesian]] family.
+
+==Extinct isolates==
+Caution is required when speaking of [[extinct language]]s as language isolates. Despite their great age, [[Sumerian language|Sumerian]] and [[Elamite language|Elamite]] can be safely classified as isolates, as the languages are well enough documented that, if modern relatives existed, they would be recognizably related.<ref>{{Cite book|title=The Cambridge Encyclopedia of the World's Ancient Languages|date=2004|publisher=Cambridge University Press|editor=Roger D. Woodard|isbn=0-521-56256-2 |oclc=59471649}}</ref> A language thought to be an isolate may turn out to be related to other languages once enough material is recovered, but this is unlikely for extinct languages whose written records have not been preserved.<ref name=":1" />
+
+Many extinct languages are very poorly attested, which may lead to them being considered [[unclassified language]]s (or even unclassifiable languages) rather than language isolates. This occurs when linguists do not have enough information on a language to classify it as either a language isolate or as a part of another language family.<ref name=":1" />
+
+== Isolates v. unclassified languages ==
+[[Unclassified language]]s are different from language isolates in that they have no demonstrable genetic relationships to other languages due to a lack of sufficient data. In order to be considered a language isolate, a language needs to have sufficient data for comparisons with other languages through methods of [[Historical linguistics|historical-comparative linguistics]] to show that it does not have any detectable genetic relationships.<ref name=":1" />
+
+Many extinct and living languages today are very poorly attested, and the fact that they cannot be linked to other languages may be a reflection of linguists' poor knowledge of them. [[Hattic language|Hattic]], [[Gutian language|Gutian]], and [[Kassite language|Kassite]] are all considered unclassified languages, but their status is disputed by a minority of linguists who count them as isolates.<ref>{{Cite book|last1=Mallory|first1=J. P.|title=The Tarim mummies: ancient China and the mystery of the earliest peoples from the West, with 190 illustrations, 13 in color|date=2000|publisher=Thames & Hudson|first2=Victor H. |last2=Mair|isbn=0-500-05101-1|location=New York City|oclc=43378559}}</ref> Many extinct languages of the [[Americas]] such as [[Cayuse language|Cayuse]] and [[Majena language|Majena]] may likewise have been isolates.<ref>{{Cite book|first1=Barbara Leitch |last1=LePoer |first2=Kendall T. |last2=LePoer |title=A Concise dictionary of Indian tribes of North America |date=1979 |publisher=Reference Publications |location=Algonac, Michigan |oclc=868981165|isbn=9780917256097}}</ref>
+
+==Oral language isolates==
+Below is a list of spoken language isolates, arranged by continent, along with notes on possible relationships to other languages.
+
+The status column indicates the [[degree of endangerment]] of the language, according to the definitions of the UNESCO ''[[Red Book of Endangered Languages|Atlas of the World's Languages in Danger]]''.<ref name="UNESCO Atlas End.">{{cite web |title=UNESCO Interactive Atlas of the World's Languages in Danger |url=http://www.unesco.org/languages-atlas/ |website=unesco.org |publisher=UNESCO |url-status=dead |archive-url=https://web.archive.org/web/20210214005202if_/https://www.unesco.org/languages-atlas/ |archive-date=2021-02-14 |access-date=13 February 2021}}</ref> "Vibrant" languages are those in full use by speakers of every generation, with consistent native acquisition by children. "Vulnerable" languages have a similarly wide base of native speakers, but a restricted use and the long-term risk of [[language shift]]. "Endangered" languages are either acquired irregularly or spoken only by older generations. "Moribund" languages have only a few remaining native speakers, with no new acquisition, highly restricted use, and near-universal multilingualism. "Extinct" languages have no native speakers, but are sufficiently documented to be classified as isolates.
+<!-- Sort order data-sort-value: 1 = Vibrant, 2 = Vulnerable, 3 = Endangered, 4 = Moribund, 5 = Extinct -->
+
+===Africa===
+{{Further|Languages of Africa#Unclassified languages}}
+
+All of Africa's languages had once been gathered into four major phyla: [[Afroasiatic languages|Afroasiatic]], [[Niger–Congo languages|Niger–Congo]], [[Nilo-Saharan languages|Nilo-Saharan]] and [[Khoisan languages|Khoisan]].<ref>Blench, Roger. 2017. African language isolates. In ''Language Isolates'', edited by Lyle Campbell, pp. 176–206. Routledge.</ref> Of these, only Afroasiatic has been established as a valid family, and even there there are doubts that some of the peripheral languages are actually Afroasiatic. Khoisan has been completely abandoned, the two major branches of Niger–Congo (as well as several smaller branches) cannot be shown to be related, and there has been persistent doubt about Nilo-Saharan.<ref>{{Cite web |last=Starostin|first=George|title=The Nilo-Saharan hypothesis tested through lexicostatistics: current state of affairs |website=Academia |date=5 February 2016 |url=https://www.academia.edu/21582071|language=en}}</ref><ref>{{Citation|last1=Harald Hammarström|title=glottolog/glottolog: Glottolog database 4.2.1|date=2020-04-16|chapter-url=https://zenodo.org/record/3754591|doi=10.5281/zenodo.3754591|access-date=2020-08-12|last2=Robert Forkel|last3=Martin Haspelmath|last4=Sebastian Bank|chapter=Linguistics }}</ref> Data for several African languages, especially extinct ones like [[Kwisi language|Kwisi]], is not sufficient for classification. In addition, [[Jalaa language|Jalaa]], [[Shabo language|Shabo]], [[Laal language|Laal]], [[Kujargé language|Kujargé]], and a few other languages within Nilo-Saharan and Afroasiatic-speaking areas may turn out to be isolates upon further investigation. [[Defaka language|Defaka]] and [[Ega language|Ega]] are highly divergent languages located within [[Niger–Congo languages|Niger–Congo]]-speaking areas, and may also possibly be language isolates.<ref>{{cite web|url=http://www.rogerblench.info/Language/Niger-Congo/General/Niger-Congo%20an%20alternative%20view.pdf|title=Niger-Congo: an Alternative View|last=Blench|first=Roger}}</ref>
+{| class="wikitable sortable" RULES="ALL"
+|-
+! Language
+! data-sort-type=number | Speakers
+! Status
+! Countries
+! Comments
+|-
+| [[Bangime language|Bangime]]
+|3,500
+| data-sort-value=1 rowspan="2" | Vibrant
+|[[Mali]]
+| Spoken in the [[Bandiagara Escarpment]]. Used as an [[anti-language]].<ref>{{Cite book|last1=Hantgan|first1=Abbie|url=https://hal.archives-ouvertes.fr/hal-01867003|title=Bangime: Secret Language, Language Isolate, or Language Island?|last2=List|first2=Johann-Mattis|date=September 2018}}</ref>
+|-
+|[[Bayot language|Bayot]] 
+|35,000
+|[[Senegal]], [[Guinea-Bissau]]
+|Basic vocabulary shows no relation to other languages.<ref>{{Cite web| title=Some Hypotheses About Possible Isolates within the Atlantic Branch of the Niger-Congo Phylum | url=https://journals.linguisticsociety.org/proceedings/index.php/BLS/article/download/3924/3619/5154 | archive-url=https://web.archive.org/web/20250227144746/https://journals.linguisticsociety.org/proceedings/index.php/BLS/article/download/3924/3619/5154 | archive-date=2025-02-27}}</ref>
+|-
+| [[Gule language|Gule]]
+| style="text-align: center;" colspan="2" data-sort-value=6 |Extinct
+|[[Sudan]]
+| Although this language is poorly known, Zamponi (2025) unambiguously classified it as an isolate.<ref>Zamponi, Raoul (2025, forthcoming). ''[https://www.academia.edu/126721374/Zamponi_R_2025_Gule_Routledge_London_and_New_York Gule]''. Routledge World Languages. London: Routledge.</ref> Not enough evidence exists to classify it as one of the [[Koman languages]].<ref name="glot">{{cite web| editor-last1= Hammarström| editor-first1 = Harald| editor-last2 = Forke| editor-first2 = Robert| editor-last3 = Haspelmath| editor-first3 = Martin| editor-last4 = Bank| editor-first4 = Sebastian| year = 2020|title = Gule | work = [[Glottolog]] 4.3| url = https://glottolog.org/resource/languoid/id/gule1241}}</ref>
+|-
+| [[Hadza language|Hadza]]
+|1,000
+| data-sort-value=2 |Vulnerable
+|[[Tanzania]]
+| Spoken on the southern shore of [[Lake Eyasi]] in the southwest of [[Arusha Region]]. Once listed as an outlier among the [[Khoisan languages]].<ref name="Witzlack-Nakagawa">{{cite book |last1=Witzlack-Makarevich |first1=Alena |last2=Nakagawa |first2=Hirosi |editor1-last=Ekkehard-Wolff |editor1-first=H. |title=The Cambridge Handbook of African Linguistics |date=2019 |publisher=CUP |pages=382–416 |chapter=Linguistic Features and Typologies in Languages Commonly Referred to as 'Khoisan'}}</ref> Language use is vigorous, though there are fewer than 1,000 speakers.<ref>{{cite web |last1=Miller |first1=Kirk |title=Highlights of Hadza Fieldwork |website=Academia |date=29 April 2018 |url=https://www.academia.edu/36533860}}</ref>
+|-
+|[[Jalaa language|Jalaa]]
+| style="text-align: center;" colspan="2" data-sort-value=6 |Extinct
+|[[Nigeria]]
+|Strongly influenced by [[Dikaka language|Dikaka]], but most vocabulary is very unusual.<ref>{{cite journal |last1=Kleinewillinghofer |first1=Ulrich |title=Jalaa: An Almost Forgotten Language of Northeastern Nigeria: A Language Isolate? |journal=Sprache und Geschichte in Afrika |date=2001 |volume=16–17 |pages=239–271}}</ref>
+|-
+|[[Laal language|Laal]]
+|750
+| data-sort-value=4 |Moribund
+|[[Chad]]
+|Spoken in three villages along the [[Chari River]] in [[Moyen-Chari Region]]. Poorly known. Also known as Gori. Possibly a distinct branch of [[Niger–Congo]], [[Chadic languages|Chadic]] of the [[Afroasiatic languages]], or mixed.{{citation needed|date=February 2021}}
+|-
+|[[Mpra language|Mpra]] 
+| style="text-align: center;" colspan="2" |Extinct
+|[[Ghana]]
+|It is known only from a 70-word list given in a 1931 article. Blench (2007) considers it to be a possible language isolate.<ref>Blench, Roger (2007) ''[http://www.ddl.ish-lyon.cnrs.fr/projets/clhass/PageWeb/ressources/Isolats/Mpra%20%20Blench%202007.pdf Recovering data on Mpra (=Mpre) a possible language isolate in North-Central Ghana]''</ref>
+|-
+|[[Ongota language|Ongota]] 
+|12
+|Moribund
+|[[Ethiopia]]
+|Likely isolate.<ref>{{cite book|first=Gerrit J.|last=Dimmendaal|title=Historical Linguistics and the Comparative Study of African Languages|year=2011|publisher=John Benjamins|isbn=978-90-272-8722-9}}</ref><ref>{{cite book|first=Gerrit J.|last=Dimmendaal |year=2020 |chapter=33. Linguistic Isolates |editor1=Rainer Vossen |editor2=Gerrit J. Dimmendaal |title=The Oxford Handbook of African Languages |publisher=Oxford University Press |pages=428–436}}</ref><ref>{{Cite book |title=The Languages and Linguistics of Africa |last=Güldemann |first=Tom |editor-last=Güldemann |editor-first=Tom |publisher=De Gruyter Mouton |chapter=Historical linguistics and genealogical language classification in Africa |year=2018|isbn=978-3-11-042606-9 |doi=10.1515/9783110421668-002 |location=Berlin |pages=58–444 |series=The World of Linguistics series |volume=11 |s2cid=133888593 }}</ref>
+|-
+| [[Sandawe language|Sandawe]]
+|60,000
+| data-sort-value=1 |Vibrant
+|[[Tanzania]]
+|Spoken in the northwest of [[Dodoma Region]]. Tentatively linked to the [[Khoe languages]].<ref name="Witzlack-Nakagawa" />
+|-
+|[[Shabo language|Shabo]]
+|400
+| data-sort-value=3 |Endangered
+|[[Ethiopia]]
+|Spoken in [[Anderaccha]], Gecha, and Kaabo of the [[Southern Nations, Nationalities, and Peoples' Region]]. Linked to the [[Gumuz language|Gumuz]] and [[Koman languages|Koman]] families in the proposed [[Komuz languages|Komuz]] branch of the [[Nilo-Saharan languages]].<ref>{{cite journal |last1=Ahland |first1=Colleen |title=The Classification of Gumuz and Koman Languages |journal=Language Isolates in Africa Workshop |date=2010}}</ref>
+|-
+|[[Siamou language|Siamou]]
+|40,000
+|Vibrant
+|[[Burkina Faso]], [[Mali]], [[Ivory Coast]]
+|Traditionally classified as [[Kru languages|Kru]]. Due to lack of evidence or any resemblance is classified now as an isolate.<ref name="Guldemann">{{Cite book |last=Güldemann |first=Tom |title=The Languages and Linguistics of Africa |publisher=De Gruyter Mouton |year=2018 |isbn=978-3-11-042606-9 |editor-last=Güldemann |editor-first=Tom |series=The World of Linguistics series |volume=11 |location=Berlin |pages=58–444 |chapter=Historical linguistics and genealogical language classification in Africa |doi=10.1515/9783110421668-002 |s2cid=133888593}}</ref>
+|}
+
+===Asia===
+{| class="wikitable sortable" rules="ALL
+|-
+! Language
+! data-sort-type=number | Speakers
+! Status
+! Countries
+! Comments
+|-
+| [[Ainu language|Ainu]]
+| 3
+| data-sort-value = 3 |Endangered
+|[[Japan]]
+| Spoken on the island of [[Hokkaido]] in [[Japan]]. Sometimes hypothesized to be related to [[Korean language|Korean]] and [[Japanese language|Japanese]],<ref name=grenberg2000>Joseph Greenberg (2000–2002): ''Indo-European and Its Closest Relatives: The Eurasiatic Language Family'', 2 volumes. Stanford University Press.</ref> while at other times proposed to be a branch of [[Altaic languages|Altaic]].<ref name=patrie78>James Tyrone Patrie (1978): ''The genetic relationship of the Ainu language''. PhD thesis, University of Hawaii.</ref><ref name=patrie82>James Tyrone Patrie (1982): ''The Genetic Relationship of the Ainu Language.'' University of Hawaii Press. {{ISBN|0-8248-0724-3}}</ref>
+|-
+|[[Bugun language|Bugun]]
+|900
+| data-sort-value=3 |Endangered
+|[[India]]
+| Possible language isolate spoken by the [[Bugun]] people of [[Arunachal Pradesh]] in India.<ref name="auto">Blench, Roger. 2011. [http://www.rogerblench.info/Language/South%20Asia/NEI/General/Lingres/Declassifying%20Arunachal.pdf ''(De)classifying Arunachal languages: Reconsidering the evidence''] {{webarchive|url=https://web.archive.org/web/20130526230734/http://www.rogerblench.info/Language/South%20Asia/NEI/General/Lingres/Declassifying%20Arunachal.pdf |date=2013-05-26 }}</ref>
+|-
+| [[Burushaski]]
+|130,000<ref>{{e27|Burushaski}}</ref>
+| data-sort-value=2 |Vulnerable
+|[[Pakistan]], [[India]]
+| Spoken in the [[Yasin Valley]] and [[Hunza Valley]] of [[Gilgit-Baltistan]] and [[Hari Parbat]] of [[Jammu and Kashmir (union territory)|Jammu and Kashmir]]. Linked to [[Languages of the Caucasus|Caucasian languages]],<ref>{{cite web|url=http://jdbengt.net/biblio.htm|title=John D Bengtson|website=jdbengt.net|access-date=19 March 2019}}</ref> [[Indo-European languages|Indo-European]],<ref name=hamp2013>{{cite journal|last=Hamp|first=Eric P.|title=The Expansion of the Indo-European Languages: An Indo-Europeanist's Evolving View|journal=Sino-Platonic Papers|date=August 2013|volume=239|page=8|url=http://sino-platonic.org/complete/spp239_indo_european_languages.pdf|access-date=5 April 2014}}</ref><ref>Casule, Ilija. 2003. Evidence for the Indo-European laryngeals in Burushaski and its genetic affiliation with Indo-European. ''The Journal of Indo-European Studies'' 31:1–2, pp 21–86.</ref> and [[Na-Dene languages]]<ref>[[John Bengtson]], ''Some features of Dene–Caucasian phonology (with special reference to Basque).'' Cahiers de l'Institut de Linguistique de Louvain (CILL) 30.4: 33–54,</ref><ref>John Bengtson and V. Blazek, "Lexica Dene–Caucasica". Central Asiatic Journal 39, 1995, 11–50 & 161–164</ref> in various proposals. 
+|-
+| [[Elamite language|Elamite]]
+| style="text-align: center;" colspan="2" |Extinct
+|[[Iran]]
+| Formerly spoken in [[Elam]], along the northeast coast of the [[Persian Gulf]]. Attested from around 2800 BC to 300&nbsp;BC.<ref>Stolper, Matthew W. 2008. ''Elamite''. In ''The Ancient Languages of Mesopotamia, Egypt, and Aksum''. pp. 47–50.</ref> Some propose a relationship to the [[Dravidian languages]] (see [[Elamo-Dravidian languages|Elamo-Dravidian]]), but this is not well-supported.<ref>David McAlpin, "Toward Proto-Elamo-Dravidian", ''Language'' vol. 50 no. 1 (1974); David McAlpin:  "Elamite and Dravidian, Further Evidence of Relationships", ''Current Anthropology'' vol. 16 no. 1 (1975); David McAlpin: "Linguistic prehistory: the Dravidian situation", in Madhav M. Deshpande and Peter Edwin Hook: ''Aryan and Non-Aryan in India'', Center for South and Southeast Asian Studies, University of Michigan, Ann Arbor (1979); David McAlpin, "Proto-Elamo-Dravidian: The Evidence and its Implications", ''Transactions of the American Philosophical Society'' vol. 71 pt. 3, (1981)</ref> Some scholars also believe a language called [[Khuzi language|Khuzi]], spoken perhaps until 1000 AD and reported in Medieval Islamic sources, may have represented Elamite.
+|-
+| [[Hruso language|Hruso]]
+| 3,000
+| data-sort-value=2 | Vulnerable
+| [[India]]
+| Possible language isolate spoken by the [[Hruso people]] of [[Arunachal Pradesh]] in India.<ref name="auto"/>
+|-
+| [[Kusunda language|Kusunda]]
+|23<ref>{{Cite web |title=caste-ethnicity-report {{!}} national_population and housing_census_year results |url=https://censusnepal.cbs.gov.np/results/downloads/caste-ethnicity?type=data |access-date=2025-04-23 |website=censusnepal.cbs.gov.np}}</ref>
+| data-sort-value=4 | Moribund
+|[[Nepal]]
+| Spoken in [[Gandaki Province]]. The recent discovery of a few speakers shows that it is not demonstrably related to anything else.<ref>{{cite web|url=https://kathmandupost.com/national/2019/01/04/resuscitating-dying-kusunda-language |title=Resuscitating dying Kusunda language |publisher=Kathmandupost.com |date=2019-01-04 |access-date=2022-09-03}}</ref>
+|-
+| [[Miju language|Miju]]
+| 18,000
+| data-sort-value=3 rowspan="2" | Endangered
+| rowspan="2" | [[India]]
+| Possible language isolate spoken by the [[Miju Mishmi tribe|Miju Mishmi]] of [[Arunachal Pradesh]] in India.<ref name="auto"/>
+|-
+| [[Nihali language|Nihali]]
+|2,500<ref>{{Citation|last=Seidel|first=Frank|title=Language Documentation and Endangerment in Africa|chapter=Describing endangered languages|date=2015-10-09|chapter-url=http://dx.doi.org/10.1075/clu.17.12sei|series=Culture and Language Use|volume=17|pages=277–312|place=Amsterdam|publisher=John Benjamins Publishing Company|doi=10.1075/clu.17.12sei|isbn=978-90-272-4452-9|access-date=2020-12-14}}</ref>
+| Spoken in northern [[Maharashtra]] along the [[Tapti River]]. Strong lexical [[Munda languages|Munda]] influence from [[Korku language|Korku]],<ref>{{cite web |title=Nihali |url=http://www.endangeredlanguages.com/lang/nll |website=Endangered Languages Project |access-date=30 January 2021}}</ref> as well as [[Dravidian languages|Dravidian]] and [[Indo-Aryan languages]]. Used as [[anti-language]] by speakers.<ref name=":2">{{Cite book|title=The Nihali Language|last=Nagaraja|first=K.S|publisher=Central Institute of Indian Languages|year=2014|isbn=978-81-7343-144-9|location=Mysore |page=250}}</ref>
+|-
+| [[Nivkh language|Nivkh]]
+|200
+| data-sort-value=4 | Moribund
+|[[Russia]]
+| Also known as Gilyak. Spoken in the lower [[Amur River]] basin and in the northern part of [[Sakhalin]]. Dialects sometimes considered two languages.<ref name="Fortescue2016">Fortescue, Michael. 2016. ''Comparative Nivkh Dictionary''. Languages of the World/Dictionaries (LW/D) 62. Munich: Lincom Europa. {{ISBN|978-3-86288-687-6}}</ref> Has been linked to [[Chukotko-Kamchatkan languages]].<ref>{{cite journal | last1 = Fortescue | first1 = Michael | year = 2011 | title = The relationship of Nivkh to Chukotko-Kamchatkan revisited | journal = Lingua | volume = 121 | issue = 8| pages = 1359–1376 | doi = 10.1016/j.lingua.2011.03.001 }}</ref>
+|-
+|[[Northern Andamanese language|Northern Andamanese]]
+|3
+|Moribund
+|[[India]]
+|Once part of the larger [[Great Andamanese languages]], now the sole surviving language.
+|-
+| [['Ole language|'Ole]]
+|1
+| data-sort-value=4 | Moribund
+|[[Bhutan]]
+|ʼOle, also called ʼOlekha or Black Mountain Monpa, is a moribund, possibly [[Sino-Tibetan languages|Sino-Tibetan language]] spoken natively by 1 person in the [[Black Mountains (Bhutan)|Black Mountains]] of [[Wangdue Phodrang District|Wangdue Phodrang]] and [[Trongsa District]]s in western [[Bhutan]]. The term ʼOle refers to a clan of speakers.<ref>{{cite journal|journal=Center of Nepal and Asian Studies Journal |title=In Quest of Mahākirānti |last=van Driem |first=George |author-link=George van Driem |volume=19 |number=2   |pages=241–247 |url=http://www.thlib.org/static/reprints/contributions/CNAS_19_02_05.pdf|accessdate=2011-10-23 |date=July 1992}}</ref>
+|-
+| [[Puroik language|Puroik]]
+| 20,000
+| data-sort-value=3 | Vulnerable
+| [[India]], [[China]]
+| Possible language isolate spoken by the [[Puroik people]] of [[Arunachal Pradesh]] in India and of [[Lhünzê County]], Tibet, in [[China]].<ref name="auto"/>
+|-
+| [[Sumerian language|Sumerian]]
+| style="text-align: center;" colspan="2" rowspan="2" |Extinct
+|[[Iraq]]
+| Spoken in Mesopotamia until around 1800&nbsp;BC, but used as a [[classical language]] until 100&nbsp;AD.<ref name=oates79>[[Joan Oates]] (1979). ''Babylon'' [Revised Edition] Thames and Hudston, Ltd. 1986 p. 30, 52–53.</ref> Long-extinct, but well-attested language of ancient [[Sumer]]. 
+|-
+| [[Tambora language|Tambora]]
+| [[Indonesia]]
+| Poorly documented, extinct since the [[1815 eruption of Mount Tambora]], basic vocabulary points towards it being an isolate.
+|-
+|[[Vedda language|Vedda]] 
+|300<ref>{{Cite web|url=http://www.unesco.org/languages-atlas/index.php|title=UNESCO Atlas of the World's Languages in danger|website=www.unesco.org|language=en|access-date=2017-12-25}}</ref>
+|Endangered
+|[[Sri Lanka]]
+|Highly influenced by [[Sinhala language|Sinhala]] and [[Tamil language|Tamil]] to the extent some linguists have classed it as a [[creole language]].
+|}
+
+===Oceania===
+Current research considers that the [[Papuan languages|"Papuasphere"]] centered in [[New Guinea]] includes as many as 37 isolates.<ref>{{Cite book| publisher = De Gruyter| isbn = 978-3-11-029525-2| pages = 1–20 |editor=Bill Palmer | last = Palmer| first = Bill| title = The Languages and Linguistics of the New Guinea Area| chapter = Language families of the New Guinea Area| location = Berlin, Boston |access-date=2020-08-03| date = 2017| chapter-url = https://books.google.com/books?id=v2VCDwAAQBAJ&pg=PA9 | doi=10.1515/9783110295252-001}}</ref> (The more is known about these languages in the future, the more likely it is for these languages to be later assigned to a known language family.) To these, one must add several isolates found among non-[[Pama-Nyungan languages|Pama-Nyungan]] [[Australian Aboriginal languages|languages of Australia]]:<ref name="Evans 2003" />
+{| class="wikitable sortable" RULES="ALL"
+|-
+! Language
+! data-sort-type=number | Speakers
+! Status
+! Countries
+! Comments
+|-
+| [[Abinomn language|Abinomn]]
+|300
+| rowspan="6" data-sort-value="1" | Vibrant
+| rowspan="2" |[[Indonesia]]
+| Spoken in the far north of [[New Guinea]]. Also known as Bas or Foia. Language is considered safe by UNESCO but endangered by [[Ethnologue]].<ref>{{cite web|title=Size and vitality of Abinomn|url=https://www.ethnologue.com/size-and-vitality/bsa|access-date=2020-08-12|website=Ethnologue|language=en}}</ref>
+|-
+|[[Abun language|Abun]]
+|3,000
+| Spoken in the northern area of [[Bird's Head Peninsula]] located in the province of [[Southwest Papua]]. Linked to [[West Papuan languages]] but Palmer (2018), ''[[Ethnologue]]'', and [[Glottolog]] consider it an isolate.<ref>{{e25|Abun}}</ref><ref>{{cite web| editor1-last= Hammarström| editor1-first = Harald| editor2-last = Forke| editor2-first = Robert| editor3-last = Haspelmath| editor3-first = Martin| editor4-last = Bank| editor4-first = Sebastian| year = 2020|title = Abun | work = [[Glottolog]] 4.3| url = https://glottolog.org/resource/languoid/id/abun1252}}</ref><ref name="Palmer-LLNGA">{{cite book |last=Palmer |first=Bill |editor1-last=Palmer |editor1-first=Bill |date=2018 |title=The Languages and Linguistics of the New Guinea Area: A Comprehensive Guide |chapter=Language families of the New Guinea Area |series= The World of Linguistics |volume=4 |location=Berlin |publisher=De Gruyter Mouton |pages=1–20 |isbn=978-3-11-028642-7}}</ref>
+|-
+| [[Anêm language|Anêm]]
+|800
+| rowspan="2" |[[Papua New Guinea]]
+| Spoken on the northwest coast of [[New Britain]].<ref name="Ethnologue22-PNG">{{cite web |url=https://www.ethnologue.com/country/PG/languages |title=Papua New Guinea languages |work=[[Ethnologue]]: Languages of the World |edition=22nd |editor1-last=Eberhard |editor1-first=David M. |editor2-last=Simons |editor2-first=Gary F. |editor3-last=Fennig |editor3-first=Charles D. |date=2019 |location=Dallas |publisher=[[SIL International]]}}</ref> Perhaps related to Yélî Dnye and Ata.<ref name="Stebbins-Island">{{cite book |last1=Stebbins |first1=Tonya |last2=Evans |first2=Bethwyn |last3=Terrill |first3=Angela |editor1-last=Palmer |editor1-first=Bill |date=2018 |title=The Languages and Linguistics of the New Guinea Area: A Comprehensive Guide |chapter=The Papuan languages of Island Melanesia |series= The World of Linguistics |volume=4 |location=Berlin |publisher=De Gruyter Mouton |pages=775–894 |isbn=978-3-11-028642-7}}</ref>
+|-
+| [[Ata language|Ata]]
+|2,000
+| Spoken in the central highlands of [[New Britain]]. Also known as Wasi. Perhaps related to Yélî Dnye and Anem.<ref>{{Citation|last=Ross|first=Malcolm|title=Is there an East Papuan phylum? Evidence from pronouns|date=2001|url=https://openresearch-repository.anu.edu.au/handle/1885/94801|publisher=Pacific Linguistics|language=en-AU|isbn=978-0-85883-445-3|access-date=2020-08-12}}</ref><ref>{{Citation|last=Ross|first=Malcolm|title=Pronouns as a preliminary diagnostic for grouping Papuan languages|date=2005|url=https://openresearch-repository.anu.edu.au/handle/1885/84328|publisher=Pacific Linguistics|language=en-AU|isbn=978-0-85883-562-7|access-date=2020-08-12}}</ref>
+|-
+|[[Burmeso language|Burmeso]]
+|250
+|[[Indonesia]]
+|Spoken in [[Mamberamo Raya Regency]], [[Papua (province)|Papua Province]]. Linked to [[West Papuan languages]] but Stephen Wurm and William A. Foley consider it an isolate.<ref>Foley, William A. (2018). "The languages of Northwest New Guinea". In Palmer, Bill (ed.). The Languages and Linguistics of the New Guinea Area: A Comprehensive Guide. The World of Linguistics. Vol. 4. Berlin: De Gruyter Mouton. pp. 433–568. {{ISBN|978-3-11-028642-7}}.</ref>
+|-
+|[[Busa language (Papuan)|Busa]]
+|370
+|[[Papua New Guinea]]
+|Spoken in [[Sandaun Province]], northwestern Papua New Guinea. Added to [[Senu River languages|Senu River]].<ref>[https://sites.google.com/site/newguineaworld/families/senu-river NewGuineaWorld, Senu River]</ref>
+|-
+| [[Giimbiyu language|Giimbiyu]]
+|style="text-align: center;" colspan="2" |Extinct
+|[[Australia]]
+|Spoken in the northern part of [[Arnhem Land]] until the early 1980s. Sometimes considered a small language family consisting of Mengerrdji, Urningangk and Erre.<ref name="Campbell 2006">Campbell, R. "A Sketch Grammar of Urningangk, Erre and Mengerrdji: the Giimbiyu languages of Western Arnhem Land". Honours thesis. University of Melbourne, 2006.</ref> Part of a proposal for the undemonstrated [[Arnhem Land languages|Arnhem Land language family]].
+|-
+|[[Isirawa language|Isirawa]]
+|1,800
+| rowspan="3" |Vibrant
+| rowspan="3" |[[Papua New Guinea]]
+|Whilst classed as a [[Kwerbic languages|Kwerbic language]], it only shares 20% of its vocabulary and is considered by some linguists to be an isolate.
+|-
+| [[Kol language (Papua New Guinea)|Kol]]
+|4,000
+| Spoken in the northeastern part of [[New Britain]]. Possibly related to the poorly known [[Sulka language|Sulka]], or the [[Baining languages]], suggested as part of the [[East Papuan languages]].<ref>{{cite web |title=Kol |url=http://www.endangeredlanguages.com/lang/10809 |website=Endangered Language Project}}</ref><ref name="Dunn">{{cite journal |last1=Dunn |first1=Michael |last2=Reesnik |first2=Ger |last3=Terrill |first3=Angela |title=The East Papuan Languages: A Preliminary Typological Appraisal |journal=Oceanic Linguistics |date=2002 |volume=41 |issue=1 |pages=28–62 |doi=10.1353/ol.2002.0019 |hdl=11858/00-001M-0000-0013-1ADC-1 |s2cid=143012930 |url=https://www.eva.mpg.de/documents/Linguistic%20Society%20of%20America,%20MUSE/Dunn_East_OceanLing_2002_1555925.pdf |access-date=6 February 2021}}</ref>
+|-
+| [[Kuot language|Kuot]]
+|1,500
+| Spoken on [[New Ireland (island)|New Ireland]]. Also known as Panaras. Suggested to form part of the [[East Papuan languages|East Papuan family]].<ref name="Dunn" />
+|-
+|[[Lavukaleve language|Lavukaleve]]
+|1,700
+|Vulnerable
+|[[Solomon Islands]]
+|Classified as an isolate by [[Endangered Languages Project]];<ref>{{Cite web |title=Did you know Lavukaleve is threatened? |url=http://www.endangeredlanguages.com/lang/10269 |access-date=2025-07-07 |website=Endangered Languages |language=en}}</ref> historically classified as a [[Central Solomon languages|Central Solomon language]], but little evidence was found of a relationship by Muller.<ref name="ASJP-4">Müller, André, Viveka Velupillai, Søren Wichmann, Cecil H. Brown, Eric W. Holman, Sebastian Sauppe, Pamela Brown, Harald Hammarström, Oleg Belyaev, Johann-Mattis List, Dik Bakker, Dmitri Egorov, Matthias Urban, Robert Mailhammer, Matthew S. Dryer, Evgenia Korovina, David Beck, Helen Geyer, Pattie Epps, Anthony Grant, and Pilar Valenzuela. 2013. ''[https://asjp.clld.org/static/WorldLanguageTree-004.zip ASJP World Language Trees of Lexical Similarity: Version 4 (October 2013)]''.</ref>
+|-
+| [[Malak-Malak language|Malak-Malak]]
+|10
+|Moribund
+| rowspan="2" |[[Australia]]
+|Spoken in northern [[Australia]]. Often considered part of one Northern Daly family together with [[Tyeraity language|Tyeraity]]. Used to be considered genetically related to the [[Wagaydyic languages]], but nowadays they are considered genetically distinct.<ref>{{cite book |last=Nordlinger |first=Rachel |author-link=Rachel Nordlinger |editor-last1= Fortescue |editor-first1= Michael |editor-link1= Michael Fortescue |editor-link2=Marianne Mithun |editor-last2= Mithun |editor-first2= Marianne |editor-last3= Evans |editor-first3= Nicholas |editor-link3=Nicholas Evans (linguist) |title=Oxford Handbook of Polysynthesis |publisher=Oxford: Oxford University Press |date=2017 |pages=782–807 |chapter=Chapter 37: The languages of the Daly region (Northern Australia)}}</ref>
+|-
+|[[Marrgu language|Marrgu]] 
+|style="text-align: center;" colspan="2" rowspan="2" |Extinct
+|Marrgu had been assumed to be an [[Iwaidjan language]] like its neighbours. However, Evans (2006) has produced evidence that it was a language isolate, with possible connection to the extinct and poorly attested [[Wurrugu language|Wurrugu]].<ref>{{AIATSIS|N45}}</ref>
+|-
+|[[Mawes language|Mawes]] 
+| rowspan="4" |[[Indonesia]]
+|Likely isolate.<ref>Foley (2018)</ref><ref>Harald Hammarström. 2010. The Genetic Position of the Mawes Language. Paper presented at the Workshop on the Languages of Papua 2, 8–12 February 2010, Manokwari, Indonesia.</ref>
+|-
+|[[Maybrat language|Maybrat]] 
+|25,000
+|Vibrant
+|Spoken in the central area of the [[Bird's Head Peninsula]] located in the province of [[Southwest Papua]]. Sometimes linked to [[West Papuan languages]] but others consider it an isolate.
+|-
+|[[Molof language|Molof]]
+|230
+|Vulnerable
+|Usher (2020) tentatively suggests it may be related to [[Pauwasi languages]].<ref name=ngw>[https://newguineaworld.linguistik.uzh.ch/families/pauwasi-river New Guinea World]</ref> However, [[Søren Wichmann]] (2018) and Foley (2018) consider it to be an isolate.<ref name="Wichmann2013">Wichmann, Søren. 2013. [http://www.langlxmelanesia.com/wichmann313-386.pdf A classification of Papuan languages] {{Webarchive|url=https://web.archive.org/web/20201125143227/https://www.langlxmelanesia.com/wichmann313-386.pdf |date=2020-11-25 }}. In: Hammarström, Harald and Wilco van den Heuvel (eds.), History, contact and classification of Papuan languages (Language and Linguistics in Melanesia, Special Issue 2012), 313-386. Port Moresby: Linguistic Society of Papua New Guinea.</ref><ref name="Foley-NWNG">{{cite book |last=Foley |first=William A. |title=The Languages and Linguistics of the New Guinea Area: A Comprehensive Guide |date=2018 |publisher=De Gruyter Mouton |isbn=978-3-11-028642-7 |editor1-last=Palmer |editor1-first=Bill |series=The World of Linguistics |volume=4 |location=Berlin |pages=433–568 |chapter=The languages of Northwest New Guinea}}</ref>
+|-
+|[[Mpur language|Mpur]]
+|5,000
+| rowspan="2" |Vibrant
+|Spoken in the Mpur and Amberbaken Districts, [[Tambrauw Regency]] on the north coast of the [[Bird's Head Peninsula]].
+|-
+| [[Murrinh-patha language|Murrinh-patha]]
+|2,100<ref>{{cite web|title=SBS Australian Census Explorer|url=https://www.sbs.com.au/news/creative/census-explorer|access-date=12 October 2022}}</ref>
+| rowspan="2" |[[Australia]]
+|Spoken on the eastern coast of [[Joseph Bonaparte Gulf]] in the [[Top End]]. The proposed linkage to [[Ngan'gityemerri language|Ngan'gityemerri]] in one [[Southern Daly languages|Southern Daly]] family<ref name="Green 2003">Green, I. "The Genetic Status of Murrinh-patha" in Evans, N., ed. "The Non-Pama-Nyungan Languages of Northern Australia: comparative studies of the continent's most linguistically complex region". ''Studies in Language Change'', 552. Canberra: Pacific Linguistics, 2003.</ref> is generally accepted to be valid.
+|-
+| [[Ngan'gityemerri language|Ngan'gityemerri]]
+|26
+| data-sort-value="4" |Moribund
+|Spoken in the [[Top End]] along the Daly River. The proposed linkage to [[Murrinh-patha language|Murrinh-patha]] in one [[Southern Daly languages|Southern Daly]] family<ref name="Green 2003" /> is generally accepted to be valid.
+|-
+|[[Porome language|Porome]]
+|1,200
+|Vibrant
+| rowspan="3" |[[Papua New Guinea]]
+|Spoken in 6 villages in [[West Kikori Rural LLG]] and [[East Kikori Rural LLG]] of [[Gulf Province]], near the [[Aird Hills]] and [[Kikori River]] tributaries.
+|-
+|[[Pyu language (Papuan)|Pyu]]
+|250
+|Vulnerable
+|Spoken in [[Green River Rural LLG]] in [[Sandaun Province]], near the Indonesian border. Linked to neighboring [[Left May languages|Left May]] and [[Amto–Musan languages|Amto-Musan]] in a proposed [[Arai–Samaia languages|Arai-Samaia]] family.<ref>{{Cite web |url=https://sites.google.com/site/newguineaworld/families/arai-and-samaia-rivers |title=NewGuineaWorld, Arai and Samaia Rivers |access-date=2024-01-24 |archive-date=2022-10-04 |archive-url=https://web.archive.org/web/20221004211633/https://sites.google.com/site/newguineaworld/families/arai-and-samaia-rivers |url-status=dead }}</ref>
+|-
+| [[Sulka language|Sulka]]
+|2,500
+|Vibrant
+|Spoken across the eastern end of New Britain. Suggested to form part of the [[East Papuan languages|East Papuan family]].<ref name="Dunn" />
+|-
+|[[Tause language|Tause]]
+|500
+|Vulnerable
+|[[Indonesia]]
+|Was classified to encourage research as a [[Lakes Plain languages|Lakes Plain language]], but there has been little evidence so has been classed as an isolate.
+|-
+| [[Tayap language|Tayap]]
+| data-sort-value="49" |<50
+| data-sort-value="4" | Moribund
+|[[Papua New Guinea]]
+| Formerly spoken in the village of [[Gapun]]. Links to [[Lower Sepik languages]] and [[Torricelli languages]] have been explored, but the general consensus among linguists is that it is an isolate unrelated to surrounding languages.<ref>{{Cite book |url=https://books.google.com/books?id=VXWcDwAAQBAJ |title=A Grammar and Dictionary of Tayap: The Life and Death of a Papuan Language |last1=Kulick |first1=Don |last2=Terrill |first2=Angela |series=Pacific Linguistics 661 |publisher=Walter de Gruyter Inc. |year=2019 |isbn=978-1-5015-1220-9 |location=Boston/Berlin }}</ref>
+|-
+| [[Tiwi language|Tiwi]]
+|2,100<ref>{{cite web|title=SBS Australian Census Explorer|url=https://www.sbs.com.au/news/creative/census-explorer|access-date=9 Jan 2023}}</ref>
+| rowspan="2" data-sort-value="2" | Vulnerable
+|[[Australia]]
+| Spoken in the [[Tiwi Islands]] in the [[Timor Sea]]. Traditionally Tiwi is polysynthetic, but the Tiwi spoken by younger generations is not.<ref>{{Cite journal|last=Lee|first=Jennifer|date=1987|title=Tiwi Today: A Study of Language Change in a Contact Situation|url=https://openresearch-repository.anu.edu.au/bitstream/1885/145421/1/PL-C96.pdf|journal=Pacific Linguistics|page=50}}</ref>
+|-
+|[[Touo language|Touo]]
+|1,900
+|[[Solomon Islands]]
+|Classified as an isolate by Glottolog.<ref>{{Cite web |title=Glottolog 5.2 - Touo |url=https://glottolog.org/resource/languoid/id/touo1238 |access-date=2025-07-07 |website=glottolog.org}}</ref>
+|-
+|[[Umbugarla language|Umbugarla]]
+| colspan="2" style="text-align: center;" |Extinct
+|[[Australia]]
+|Possibly a language isolate. [[Ngomburr language|Ngomburr]] likely a dialect.
+|-
+|[[Usku language|Usku]]
+|20 ~ 160
+| rowspan="3" data-sort-value="4" |Moribund
+|[[Indonesia]]
+|Foley (2018) classifies it as a language isolate.<ref name="Foley-NWNG"/>
+|-
+| [[Wagiman language|Wagiman]]
+|11
+| rowspan="2" |[[Australia]]
+|Spoken in the southern part of the [[Top End]]. May be distantly related to the [[Wardaman language|Yangmanic languages]],<ref name="Merlan 1994">Merlan, F. "A Grammar of Wardaman: a language of the Northern Territory of Australia." Berlin; New York: Mouton de Gruyter, 1994.</ref> which might in turn be a member of the [[Macro-Gunwinyguan languages|Macro-Gunwinyguan]] family,<ref name="Evans 2003">Evans, N. "Introduction" in Evans, N., ed. "The Non-Pama-Nyungan Languages of Northern Australia: comparative studies of the continent's most linguistically complex region". ''Studies in Language Change'', 552. Canberra: Pacific Linguistics, 2003.</ref> but neither link has been demonstrated.
+|-
+| [[Wardaman language|Wardaman]]
+|50
+|Spoken in the southern part of the [[Top End]]. The extinct and poorly attested Dagoman and Yangman dialects are sometimes treated as separate languages, forming a [[Yangmanic languages|Yangmanic]] family, to which [[Wagiman language|Wagiman]] may be distantly related.<ref name="Merlan 1994"/> Possibly a member of the [[Macro-Gunwinyguan languages|Macro-Gunwinyguan]] family,<ref name="Evans 2003"/> but this has yet to be demonstrated.
+|-
+|[[Yele language|Yele]]
+|5,000
+|Vibrant
+|[[Papua New Guinea]]
+|Stebbins et al. (2018) classifies Yélî Dnye as an isolate.<ref>Stebbins et al. 2018</ref> They explain similarities with Austronesian as being due to contact and diffusion.
+|}
+
+===Europe===
+{| class="wikitable" RULES="ALL"
+|-
+! Language
+! Speakers
+! Status
+! Countries
+! Comments
+|-
+| [[Basque language|Basque]]
+|806,000 (2021),<ref name=basquetribune>{{cite web | url=https://basquetribune.com/the-basque-language-gains-speakers-but-no-surge-in-usage/ | title=The Basque Language Gains Speakers, but No Surge in Usage – Basque Tribune }}</ref> 434,000 [[passive speaker (language)|passive speakers]]<ref name="inkesta2016">{{in lang|fr}} [http://www.mintzaira.fr/fileadmin/documents/Aktualitateak/015_VI_ENQUETE_PB__Fr.pdf VI° Enquête Sociolinguistique en Euskal herria (Communauté Autonome d'Euskadi, Navarre et Pays Basque Nord)] {{Webarchive|url=https://web.archive.org/web/20180821114111/http://www.mintzaira.fr/fileadmin/documents/Aktualitateak/015_VI_ENQUETE_PB__Fr.pdf |date=21 August 2018 }} (2016).)</ref>
+| data-sort-value=2 | Vulnerable
+|[[Spain]], [[France]]
+| Natively known as ''Euskara'', the Basque language is found in the historical region of the [[Basque Country (greater region)|Basque Country]] between France and Spain. It has no known living relatives, although [[Aquitanian language|Aquitanian]] is commonly regarded as related to or a direct ancestor of Basque. Some linguists have claimed similarities with various [[languages of the Caucasus]]<ref>{{Cite book|last1=Hualde|first1=José Ignacio|title=Towards a history of the Basque language|last2=Lakarra|first2=Joseba.|last3=Trask|first3=R. L. (Robert Lawrence)|date=1995|publisher=J. Benjamins Pub. Co|isbn=978-90-272-8567-6|location=Amsterdam|page=81|oclc=709596553}}</ref><ref>{{Cite book|last=Mallory, J.P.|title=In search of the Indo-Europeans: language, archaeology, and myth|date=1989|publisher=Thames and Hudson|isbn=0-500-05052-X|location=New York|oclc=20394139}}</ref> that are indicative of a relationship, while others have proposed a relation to [[Iberian language|Iberian]]<ref>{{Cite journal|last=Orduña Aznar|first=Eduardo|date=2005|title=Sobre algunos posibles numerales en textos ibéricos|url=https://ifc.dpz.es/publicaciones/ver/id/2622|journal=Palaeohispanica|volume=5|pages=491–506}}</ref> and to the hypothetical [[Dené–Caucasian languages]].<ref>{{cite journal |last1=Bengtson |first1=John |title=Some features of Dene-Caucasian Phonology (with special reference to Basque) |journal=Cahiers de l'Institut de Linguistique de Louvain |date=2004 |volume=30 |issue=4 |pages=33–54 |doi=10.2143/CILL.30.4.2003307 |url=http://jdbengt.net/articles/CILL30a.pdf |archive-url=https://web.archive.org/web/20110728041607/http://jdbengt.net/articles/CILL30a.pdf |access-date=20 February 2021|archive-date=2011-07-28 }}</ref>
+|-
+|}
+
+===North America===
+{| class="wikitable sortable" RULES="ALL"
+|-
+! Language
+! data-sort-type=number | Speakers
+! Status
+! Countries
+! Comments
+|-
+|[[Alsea language|Alsea]]
+| style="text-align: center;" colspan="2" rowspan="9" |Extinct
+| rowspan="5" |[[United States]]
+|Poorly attested. Spoken along the central coast of [[Oregon]] until the early 1950s.<ref>{{cite journal |last1=Buckley |first1=Eugene |title=The Structure of the Alsea Verb Root: Papers from the 1989 Hokan-Penutian Workshop. Ed. Scott DeLancey |journal=University of Oregon Papers in Linguistics |date=1989 |volume=2 |issue=17}}</ref> Sometimes regarded as two separate languages. Often included in the [[Penutian languages|Penutian]] hypothesis in a [[Coast Oregon Penutian languages|Coast Oregon Penutian]] branch.<ref name="journals.uchicago.edu">{{cite journal |last1=Grant |first1=A.P. |title=Coast Oregon Penutian: Problems and Possibilities |journal=International Journal of American Linguistics |date=1997 |volume=63 |issue=1 |pages=144–156 |doi=10.1086/466316 |s2cid=143822361 |url=https://www.journals.uchicago.edu/doi/pdf/10.1086/466316 |access-date=7 February 2021|url-access=subscription }}</ref>
+|-
+| [[Atakapa language|Atakapa]]
+| Spoken on the Gulf coast of eastern [[Texas]] and southwestern [[Louisiana]] until the early 1900s. Often linked to [[Muskogean languages|Muskogean]] in a [[Gulf languages|Gulf]] hypothesis.<ref>{{Cite journal|last=Munro|first=Pamela|date=1994|title=Gulf and Yuki-Gulf|journal=Anthropological Linguistics|volume=36|issue=2|pages=125–222|jstor=30028292|issn=0003-5483}}</ref>
+|-
+| [[Cayuse language|Cayuse]]
+| Spoken in [[Oregon]] until the 1930s. Classified as a language isolate per Campbell (2024).<ref>{{Citation |last=Campbell |first=Lyle |chapter=North American Indian Languages North of Mexico |date=2024-06-25 |title=The Indigenous Languages of the Americas |pages=28–145 |chapter-url=https://academic.oup.com/book/57386/chapter/464713514 |access-date=2025-06-25 |edition=1 |publisher=Oxford University PressNew York |language=en |doi=10.1093/oso/9780197673461.003.0002 |isbn=978-0-19-767346-1|chapter-url-access=subscription }}</ref>
+|-
+| [[Chimariko language|Chimariko]]
+| Spoken in northern [[California]] until the 1950s.<ref>{{cite book |last1=Golla |first1=Victor |title=Californian Indian Languages |date=2011 |publisher=University of California Press |page=89}}</ref> Part of the [[Hokan languages|Hokan]] hypothesis.<ref>{{cite book |last1=Jany |first1=Carmen |title=Chimariko Grammar: Areal and Typographical Perspective |date=2009 |publisher=University of California Press |location=Santa Barbara |page=3 |isbn=978-0-520-09875-6 |url=https://books.google.com/books?id=AWklDQAAQBAJ&q=jany+chimariko&pg=PR13 |access-date=7 February 2021}}</ref>
+|-
+| [[Chitimacha language|Chitimacha]]
+| Well-attested. Spoken along the Gulf coast of southeastern [[Louisiana]] until 1940.<ref name="chitmacha">{{cite journal |last1=Brown |first1=Cecil |last2=Wichmann |first2=Soren |last3=Beck |first3=Dacid |title=Chitimacha: a Mesoamerican Language Spoken in the Lower Mississippi Valley |journal=International Journal of American Linguistics |date=2014 |volume=80 |issue=4 |pages=426–484|doi=10.1086/677911 |s2cid=145538166 }}</ref> Possibly in the [[Totozoquean languages|Totozoquean]] family of Mesoamerica.<ref name="chitmacha" />
+|-
+| [[Coahuilteco language|Coahuilteco]]
+| rowspan="2" |[[United States]], [[Mexico]]
+| Spoken in southern [[Texas]] and northeastern [[Mexico]] until the 1700s. Part of the [[Pakawan languages|Pakawan]] hypothesis,<ref name="Campbell">{{cite journal |last1=Campbell |first1=Lyle |journal=Anthropological Linguistics |date=1996 |volume=38 |issue=4 |pages=620–634 |title=Coahuiltecan: A Closer Look |jstor=30013048}}</ref> has been linked to the hypothesised [[Hokan languages]] in a larger group.<ref name="Langdon">{{cite book |last1=Langdon |first1=Margaret |title=Comparative Hokan-Coahuiltecan Studies: A Survey and Appraisal |date=2011 |publisher=De Gruyter |isbn=978-3-11-088783-9 |url=https://books.google.com/books?id=spa8TemcC3IC&q=hokan+coahuiltecan |access-date=9 February 2021}}</ref>
+|-
+| [[Cotoname language|Cotoname]]
+| Spoken in extreme southern [[Texas]] and northeastern [[Mexico]] until {{circa|1900}}. Part of the [[Pakawan languages|Pakawan]] hypothesis, has been linked to the hypothesised [[Hokan languages]] in a larger group.
+|-
+| [[Cuitlatec language|Cuitlatec]]
+|[[Mexico]]
+| Spoken in northern [[Guerrero]] until the 1960s.<ref name="El Cuitlateco">{{cite book |last1=Escalante Hernández |first1=Robert |title=El Cuitlateco |date=1982 |publisher=Instituto Nacional de Antropología e Historia |location=México, D.F.}}</ref> Has been proposed to be part of [[Macro-Chibchan languages|Macro-Chibchan]]<ref name="Amerind Dictionary">{{cite book |last1=Greenberg |first1=Joseph |last2=Ruhlen |first2=Merritt |title=An Amerind Etymological Dictionary |publisher=Dept. of Anthropological Sciences Stanford University |page=276 |url=http://www.merrittruhlen.com/files/AED5.pdf |archive-url=https://web.archive.org/web/20101225141018/http://www.merrittruhlen.com/files/AED5.pdf |access-date=9 February 2021|archive-date=2010-12-25 }}</ref> and [[Uto-Aztecan languages|Uto-Aztecan]].<ref name="El Cuitlateco"/>
+|-
+| [[Esselen language|Esselen]]
+|[[United States]]
+| Poorly known. Spoken in the [[Big Sur]] region of [[California]] until the early 1800s. Part of the [[Hokan languages|Hokan]] hypothesis.<ref>{{cite journal |last1=Leedom Shaul |first1=David |title=The Huelel (Esselen) language |journal=International Journal of American Linguistics |date=1995 |volume=61 |issue=5 |pages=191–239 |doi=10.1086/466251 |s2cid=144781879 |url=https://www.journals.uchicago.edu/doi/10.1086/466251 |access-date=10 February 2021|url-access=subscription }}</ref>
+|-
+| [[Haida language|Haida]]
+|13
+| data-sort-value=4 | Moribund
+|[[Canada]], [[United States]]
+| Spoken in the [[Haida Gwaii]] archipelago off the northwest coast of [[British Columbia]], and the southern islands of the [[Alexander Archipelago]] in southeastern [[Alaska]]. Some proposals connect it to the [[Na-Dené languages]], but these have fallen into disfavor.<ref>{{cite journal |last1=Levine |first1=Robert D. |title=Haida and Na-Dene: A new look at the evidence |journal=International Journal of American Linguistics |date=1979 |volume=45 |issue=2 |pages=151–170 |doi=10.1086/465587 |s2cid=143503584 }}</ref>
+|-
+| [[Huave language|Huave]]
+|20,000
+| data-sort-value=3 | Vulnerable
+|[[Mexico]]
+| Spoken in the [[Isthmus of Tehuantepec]], in the southeast of [[Oaxaca]] state. Has been linked to various language families, but is still generally considered an isolate.<ref name="AmerIndLang-Campbell">{{cite book |last1=Campbell |first1=Lyle |title=American Indian Languages – The Historical Linguistics of Native America |date=1997 |publisher=Oxford Studies in Anthropological Linguistics, Oxford University Press. |location=Oxford }}</ref>
+|-
+| [[Karuk language|Karuk]]
+|12
+| data-sort-value=4 | Moribund
+| rowspan="2" |[[United States]]
+| Spoken along the [[Klamath River]] in northwestern [[California]]. Part of the [[Hokan languages|Hokan]] hypothesis, but little evidence for this.<ref name="AmerIndLang-Campbell" />
+|-
+|[[Keres language|Keres]]
+|13,200
+| data-sort-value=3 |Endangered
+|Spoken in several pueblos throughout [[New Mexico]], including [[Cochiti, New Mexico|Cochiti]] and [[Acoma Pueblo|Acoma]] Pueblos. Has two main dialects: Eastern and Western. Sometimes those two dialects are separated into languages in a Keresan family.<ref>{{cite journal |last1=Miller |first1=Wick |title=Proto-Keresan Phonology |journal=International Journal of American Linguistics |date=1963 |volume=29 |issue=4 |pages=310–330 |doi=10.1086/464748 |s2cid=143519987 |url=https://www.journals.uchicago.edu/doi/10.1086/464748 |access-date=11 February 2021|url-access=subscription }}</ref>
+|-
+| [[Kutenai language|Kutenai]]
+|345
+| data-sort-value=4 | Moribund
+|[[Canada]], [[United States]]
+| Spoken in the [[Rocky Mountains|Rockies]] of northeastern [[Idaho]], northwestern [[Montana]] and southeastern [[British Columbia]]. Attempts have been made to place it in a Macro-Algic or Macro-Salishan family, but these have not gained significant support.<ref name="AmerIndLang-Campbell" />
+|-
+| [[Natchez language|Natchez]]
+| style="text-align: center;" colspan="2" |Extinct
+|[[United States]]
+| Spoken in southern [[Mississippi]] and eastern [[Louisiana]] until 1957.<ref name=kimball2>{{cite book|last=Kimball|first=Geoffry|chapter-url=https://books.google.com/books?id=nd5o9juMePEC&pg=PA385|chapter=Natchez|title=Native Languages of the Southeastern United States |editor=Janine Scancarelli |editor2=Heather Kay Hardy |publisher=University of Nebraska Press|year=2005|pages=385–453|isbn=978-0-8032-4235-7}}</ref> Often linked to [[Muskogean languages|Muskogean]] in a [[Gulf languages|Gulf]] hypothesis.<ref>{{cite journal |last1=Haas |first1=M.R. |title=Natchez and the Muskogean languages |journal=Language |date=1956 |volume=32 |issue=1 |pages=61–72|doi=10.2307/410653 |jstor=410653 }}</ref> Attempts at revival have produced six people with some fluency.<ref>{{Cite news
+| last = Smith
+| first = Diane
+| title = University helps Native Americans save languages: Project aims to increase field linguists.
+| work = Seattle Times Newspaper
+| access-date = 2013-06-02
+| date = 2011-06-15
+| url = http://seattletimes.com/html/living/2015308947_native16.html#.Tf91h9keT90;facebook
+}}</ref>
+|-
+| [[Purépecha language|Purépecha]]
+|142,500<ref>[http://cuentame.inegi.org.mx/hipertexto/todas_lenguas.htm Lenguas indígenas y hablantes de 3 años y más, 2020] {{Webarchive|url=https://web.archive.org/web/20160303165419/http://cuentame.inegi.org.mx/hipertexto/todas_lenguas.htm |date=2016-03-03 }} INEGI. Censo de Población y Vivienda 2020.</ref>
+| data-sort-value=3 | Endangered
+|[[Mexico]]
+| Spoken in the north of [[Michoacán]] state. Language of the ancient [[Tarascan state|Tarascan]] kingdom. Sometimes regarded as two languages.<ref name="AmerIndLang-Campbell" />
+|-
+| [[Salinan language|Salinan]]
+| style="text-align: center;" colspan="2" |Extinct
+|[[United States]]
+| Spoken along the south-central coast of [[California]]. Part of the [[Hokan languages|Hokan]] hypothesis.<ref>{{cite journal |last1=Turner |first1=Katherina |title=Areal and Genetic linguistic affiliations of the Salinan |journal=Kansas Working Papers in Linguistics |date=1983 |volume=8 |issue=2 |pages=215–247 |url=https://kuscholarworks.ku.edu/bitstream/handle/1808/482/ling.wp.v8.n2.paper6.pdf;sequence=1 |access-date=12 February 2021 |archive-date=22 July 2021 |archive-url=https://web.archive.org/web/20210722025627/https://kuscholarworks.ku.edu/bitstream/handle/1808/482/ling.wp.v8.n2.paper6.pdf;sequence=1 |url-status=dead }}</ref>
+|-
+| [[Seri language|Seri]]
+|720
+| data-sort-value=2 | Vulnerable
+| [[Mexico]]
+| Spoken along the coast of the [[Gulf of California]], in the southwest of [[Sonora]] state. Part of the [[Hokan languages|Hokan]] hypothesis.<ref>{{cite web |last1=Marlett |first1=Stephen |title=La situación sociolingüística de la lengua seri en 2006 |url=http://www.lengamer.org/publicaciones/trabajos/seri_socio.pdf |website=Lenguas de las Americas |publisher=lengamer.org |access-date=12 February 2021}}</ref>
+|-
+| [[Siuslaw language|Siuslaw]]
+| style="text-align: center;" colspan="2" rowspan="5" |Extinct
+| rowspan="9" | [[United States]]
+| Spoken on the southwest coast of [[Oregon]] until 1960. Likely related to [[Alsea language|Alsea]], [[Coosan languages]], or possibly the [[Wintuan languages]]. Part of the [[Penutian]] hypothesis.<ref name="journals.uchicago.edu"/>
+|-
+| [[Takelma language|Takelma]]
+| Spoken in western [[Oregon]] until mid 20th century.<ref name="jstor.org">{{cite journal |last1=Kendall |first1=Daythall |title=The Takelma Verb: Towards Proto-Takelma-Kalapuyan |journal=International Journal of American Linguistics |date=1997 |volume=63 |issue=1 |pages=1–17 |doi=10.1086/466312 |jstor=1265863 |s2cid=144593968}}</ref> Part of the [[Penutian]] hypothesis.<ref name="jstor.org"/>
+|-
+| [[Timucua language|Timucua]]
+| Well attested. Spoken in northern [[Florida]] and southern [[Georgia (U.S. state)|Georgia]] until the mid- to late 1700s. Briefly spoken in Cuba by a migrant community established in 1763. A connection with the poorly known [[Tawasa language]] has been suggested, but this may be a dialect.<ref>{{cite journal |last1=Granberry |first1=Julian |title=A grammatical sketch of Timucua |journal=International Journal of American Linguistics |year=1990 |volume=56 |issue=1 |pages=60–101 |doi=10.1086/466138 |s2cid=143759206 |url=https://www.journals.uchicago.edu/doi/pdf/10.1086/466138|url-access=subscription }}</ref>
+|-
+| [[Tonkawa language|Tonkawa]]
+| Spoken in central and northern [[Texas]] until the early 1940s.<ref>{{Cite book |last=Frawley |first=William |title=International encyclopedia of linguistics |date=2003 |publisher=Oxford University Press |isbn=9780195307450 |edition=2nd |location=New York, NY |oclc=66910002}}</ref>
+|-
+| [[Tunica language|Tunica]]
+| Spoken in western [[Mississippi]], northeastern [[Louisiana]], and southeastern [[Arkansas]] until 1948.<ref>Pierite, Joseph. 1964. Letter to Mary Haas. ''Mary R. Haas Papers''. Mss.Ms.Coll.94. American Philosophical Society Library. Philadelphia.</ref>
+|-
+| [[Washo language|Washo]]
+|20
+| data-sort-value=4 | Moribund
+| Spoken along the [[Truckee River]] in the Sierra Nevada of eastern [[California]] and northwestern [[Nevada]]. Part of the [[Hokan languages|Hokan]] hypothesis.<ref>{{cite book |last1=Mithun |first1=Marianne |title=The Languages of Native North America |date=2001 |publisher=Cambridge University Press |location=Cambridge |page=303 |isbn=978-0-521-29875-9 |url=https://books.google.com/books?id=ALnf3s2m7PkC&q=yuchi |access-date=17 February 2021}}</ref>
+|-
+| [[Yana language|Yana]]
+| style="text-align: center;" rowspan="2" colspan="2" |Extinct
+| Well-attested. Spoken in northern [[California]] until 1916. Part of the [[Hokan languages|Hokan]] hypothesis.<ref>{{cite book |last1=Mithun |first1=Marianne |title=The Languages of Native North America |date=2001 |publisher=Cambridge University Press |location=Cambridge |page=564 |isbn=978-0-521-29875-9 |url=https://books.google.com/books?id=ALnf3s2m7PkC&q=yuchi |access-date=17 February 2021}}</ref>
+|-
+| [[Yuchi language|Yuchi]]
+| Spoken in Oklahoma, but formerly spoken in eastern Tennessee. A connection to the [[Siouan-Catawban languages]] has been proposed.<ref>{{cite book |last1=Mithun |first1=Marianne |title=The Languages of Native North America |date=2001 |publisher=Cambridge University Press |location=Cambridge |page=571 |isbn=978-0-521-29875-9 |url=https://books.google.com/books?id=ALnf3s2m7PkC&q=yuchi |access-date=17 February 2021}}</ref> The last native speaker died in 2021, but there is an ongoing revitalization project that has trained a small number of L2s.
+|-
+| [[Zuni language|Zuni]]
+|9,600
+| data-sort-value=2 | Vulnerable
+|Spoken in [[Zuni Pueblo, New Mexico|Zuni Pueblo]] in northwestern [[New Mexico]]. Links to [[Penutian languages|Penutian]]<ref name="goddard">{{cite book |last1=Goddard |first1=Ives |editor1-last=Goddard |editor1-first=I |title= Handbook of North American Indians: Languages |date=1996 |pages=290–323 |chapter=The classification of the native languages of North America. }}</ref> and [[Keres language|Keres]]<ref>{{cite book |last1=Campbell |first1=L |last2=Mithun |first2=M |title=The Languages of Native America:Historical and Comparative Assessment |date=2014 |publisher=University of Texas Press |location=Austin |page=418 |isbn=978-0-292-76850-5 |url=https://books.google.com/books?id=maGDBAAAQBAJ |access-date=17 February 2021}}</ref> have been proposed.
+|}
+
+===South America===
+{| class="wikitable sortable" RULES="ALL"
+|-
+! Language
+! data-sort-type=number | Speakers
+! Status
+! Countries
+! Comments
+|-
+| [[Aikanã language|Aikanã]]
+|150
+| data-sort-value="3" | Endangered
+| rowspan="2" | [[Brazil]]
+| Spoken in the [[Amazon rainforest|Amazon]] of eastern [[Rondônia]]. Links to [[Kanoê language|Kanoê]] and [[Kwaza language|Kwaza]] have been tentatively proposed.<ref name="Voort, Hein 2005">Van der Voort, Hein. 2005. Kwaza in a comparative perspective. ''International Journal of American Linguistics'' 71: 365–412.</ref> [[Arawakan languages|Arawakan]] has been suggested.{{Citation needed|reason=Arawakan not mentioned in main article|date=January 2021}}
+|-
+|[[Mato Grosso Arára language|Mato Grosso Arára]]
+| colspan="2" rowspan="2" |Extinct
+|Spoken in [[Mato Grosso]], Brazil until sometime in the 20th century.
+|-
+| [[Andaqui language|Andaqui]]
+| [[Colombia]]
+| Spoken in the southern highlands of [[Colombia]] until the 1970s. It has been linked to the [[Paezan languages|Paezan]] or [[Barbacoan languages]], but no connections have been sufficiently demonstrated. Adelaar (2004) classifies it as a language isolate, but lists similarities with Páez.<ref name=":5">{{Cite book |last1=Adelaar |first1=Willem F. H. |title=The languages of the Andes |last2=Muysken |first2=Pieter |date=2004 |publisher=Cambridge University Press |isbn=978-0-511-48685-2 |series=Cambridge language surveys |location=Cambridge, UK New York}}</ref>
+|-
+| [[Andoque language|Andoque]]
+| 370
+| data-sort-value="3" | Endangered
+| [[Colombia]], [[Peru]]
+| Spoken on the upper reaches of the [[Japurá River]]. Extinct in Peru. Extinct [[Urequena language|Urequena]] is close.<ref>{{Cite book |last=Adelaar|first=Willem F. H.|url=https://scholarlypublications.universiteitleiden.nl/handle/1887/71532|title=Archiv 63-64|last2=Brijnen|first2=Hélène B.|date=2014|isbn=978-3-643-99824-8|editor-last=Weltmuseum Wien Friends|chapter=Natterer’s Linguistic Heritage}}</ref>
+|-
+| [[Arutani language|Arutani]]
+| 6
+| data-sort-value=4 | Moribund
+| [[Brazil]], [[Venezuela]]
+| Spoken along the [[Paragua River]] and [[Uraricaá River]] in the far southern area of [[Bolívar (state)|Bolívar State]], [[Venezuela]] and the far northern area of [[Roraima]], [[Brazil]]. Part of the proposed [[Arutani–Sape languages|Arutani–Sape language family]] but more likely to be an isolate.<ref>{{cite journal|last=Hammarström|first=Harald|title=The status of the least documented language families in the world|journal=Language Documentation & Conservation|year=2010|volume=4|pages=183|url=http://scholarspace.manoa.hawaii.edu/bitstream/handle/10125/4478/hammarstrom.pdf}}</ref><ref>{{Cite book | publisher = Cambridge University Press Cambridge | last = Dixon | first = R. M. W. |author2=A. Y. Aikhenvald | title = The Amazonian languages | series = Cambridge Language Surveys | date = 1999 | page = 343}}</ref>
+|-
+| [[Betoi language|Betoi]]
+|  style="text-align:center; text-align:center;" colspan="2"|Extinct
+|[[Venezuela]]
+| Spoken in the [[Apure River]] basin near the Colombian border until the 19th century. [[Paezan languages|Paezan]] and [[Tucanoan languages|Tucanoan]] affiliation have been suggested.<ref name=":0">{{cite encyclopedia|title=South America|encyclopedia=Atlas of the World's Languages|year=2007|publisher=Routledge|location=London}}</ref>
+|-
+| [[Candoshi-Shapra language|Candoshi-Shapra]]
+|1,100
+| data-sort-value="3" | Endangered
+| [[Peru]]
+| Spoken along the Chapuli, Huitoyacu, Pastaza, and Morona river valleys in southwestern [[Department of Loreto|Loreto]]. Has been linked to various language families, but no agreement exists on its classification.<ref>{{cite web |last1=Fabre |first1=Alain |title=Diccionario etnolingüístico y guía bibliográfica de los pueblos indígenas sudamericanos. CANDOSHI |url=http://www.ling.fi/Entradas%20diccionario/Dic=Candoshi.pdf |access-date=19 February 2021}}</ref>
+|-
+| [[Canichana language|Canichana]]
+| style="text-align: center;" colspan="2" |Extinct
+| rowspan="3" | [[Bolivia]]
+| Spoken in the [[Llanos de Moxos]] region of [[Beni Department]] until around 2000. Connections with various language families have been proposed, none widely accepted.<ref>{{cite web |last1=Crevils |first1=Mily |title=Tomo II: Amazonia – Canichana |url=https://www.ru.nl/cls/our-research/completed-research-projects/completed-projects/lenguas-de-bolivia-es/lenguas-de-bolivia/tomo-ii-amazonia/ |website=Lenguas de Bolivia |publisher=Centre for Language Studies-Radboud University |access-date=19 February 2021}}</ref>
+|-
+| [[Cayuvava language|Cayuvava]]
+|12
+| data-sort-value=4 | Moribund
+| Spoken in the [[Amazon rainforest|Amazon]] west of [[Mamore River]], north of [[Santa Ana del Yacuma]] in the [[Beni Department]].<ref>{{cite web |last1=Crevils |first1=Mily |title=Tomo II: Amazonia – Cayubaba |url=https://www.ru.nl/cls/our-research/completed-research-projects/completed-projects/lenguas-de-bolivia-es/lenguas-de-bolivia/tomo-ii-amazonia/ |website=Lenguas de Bolivia |publisher=Centre for Language Studies-Radboud University |access-date=19 February 2021}}</ref>
+|-
+|[[Chimane language|Chimane]]
+|5,300
+| data-sort-value=2 |Vulnerable
+|Spoken along the Beni river in [[Beni Department]]. Also spelled Tsimané. Sometimes split into multiple languages in a Moséten family. Linked to the [[Chonan languages]] in a [[Moseten–Chonan languages|Moseten-Chonan]] hypothesis.<ref>{{cite web |last1=Sakel |first1=Jeanette |title=Tomo I: Ámbito andino – Mosetén y Chimane (Tsimane') |url=https://www.ru.nl/cls/our-research/completed-research-projects/completed-projects/lenguas-de-bolivia-es/lenguas-de-bolivia/tomo-ambito-andino/|website=Lenguas de Bolivia |publisher=Centre for Language Studies-Radboud University |access-date=19 February 2021}}</ref>
+|-
+|[[Chiquitano language|Chiquitano]]
+|2,400
+| data-sort-value="3" |Endangered
+| [[Bolivia]], [[Brazil]]
+|Spoken in the eastern part of Santa Cruz department and the southwestern part of [[Mato Grosso]] state. Has been linked to the [[Macro-Jê languages|Macro-Jê]] family.<ref>{{cite web |last1=Galeote |first1=Jesús |title=Tomo III: Oriente – Chiquitano |url=https://www.ru.nl/cls/our-research/completed-research-projects/completed-projects/lenguas-de-bolivia-es/lenguas-de-bolivia/tomo-iii-oriente/|website=Lenguas de Bolivia |publisher=Centre for Language Studies-Radboud University |access-date=19 February 2021}}</ref><ref>{{cite book |last1=Adelaar |first1=Willem |editor1-last=elles de Araujo Pereira Lima |editor1-first=S.V |editor2-last=Santos de Paula |editor2-first=A |title=Topicalizando Macro-Jê |date=2008 |publisher=Nectar |pages=9–28 |chapter=Chapter 1: Relações externas do Macro-Jê: O caso do chiquitano}}</ref>
+|-
+|[[Chono language|Chono]]
+| style="text-align: center;" colspan="2" |Extinct
+| [[Chile]]
+|Spoken in [[Chonos Archipelago]] and [[Chiloé Archipelago]] until around 1875. ''[[Glottolog]]'' and Campbell (2024) characterize it as a language isolate.
+|-
+| [[Cofán language|Cofán]]
+|1,500
+| data-sort-value="3" |Endangered
+| [[Colombia]], [[Ecuador]]
+|Spoken in northern [[Sucumbíos Province]] and southern [[Putumayo Department]]. Also called A'ingae.<ref>{{cite web |title=Cofan |url=http://www.endangeredlanguages.com/lang/1043 |website=Endangered Languages Project |access-date=19 February 2021}}</ref> Sometimes classified as [[Chibchan languages|Chibchan]], but the similarities appear to be due to borrowings. Seriously endangered in Colombia.<ref>{{cite book |last1=Stark |first1=Louisa |editor1-last=Manells Klein |editor1-first=Harriet |editor2-last=Stark |editor2-first=Louisa |title=South American Indian Languages: Retrospect and Prospect |date=1985 |publisher=University of Texas Press |page=165 |url=https://books.google.com/books?id=GxMaDQAAQBAJ&q=Cofan |access-date=21 February 2021 |chapter=Chapter 3: Indigenous Languages of Lowland Ecuador: History and Current Status|isbn=978-0-292-73732-7 }}</ref>
+|-
+|[[Culle language|Culle]]
+| colspan="2" rowspan="4" |Extinct
+|[[Peru]]
+|Spoken in Peru until the mid-20th century.
+|-
+|[[Esmeralda language|Esmeralda]]
+|[[Ecuador]]
+|Spoken in Ecuador by a mixed Black-Indigenous population in the late 19th century.<ref name=":5" />
+|-
+|[[Guachi language|Guachí]]
+| [[Argentina]]
+| Formerly spoken in [[Argentina]] by the Guachí. Linkage has been proposed to the [[Mataco–Guaicuru languages|Mataco–Guaicuru language family]], however Campbell (2012) classifies it as an isolate.<ref name="Campbell-SAmerica" />
+|-
+|[[Guamo language|Guamo]]
+|[[Venezuela]]
+|Spoken in Venezuela until some time after 1778.
+|-
+|[[Guató language|Guató]]
+|2<ref name="Amazonian isolates 1">{{cite book |url=https://www.degruyterbrill.com/document/doi/10.1515/9783110419405/html |title=Amazonian Languages: Language Isolates. Volume I: Aikanã to Kandozi-Chapra |date=2023 |publisher=Walter de Gruyter |isbn=978-3-11-041940-5 |editor-last=Epps |editor-first=Patience |location=Berlin |doi=10.1515/9783110419405 |editor-last2=Michael |editor-first2=Lev}}</ref>
+| data-sort-value="4" |Moribund
+| [[Brazil]]
+|Spoken in the far south of [[Mato Grosso]] near the Bolivian border. Has been classified as [[Macro-Jê languages|Macro-Jê]], but this is disputed.<ref>{{cite book |last1=Campbell |first1=Lyle |editor1-last=Campbell |editor1-first=Lyle |editor2-last=Grondona |editor2-first=Veronica |title=Classification of the Indigenous Languages of South America: A Comprehensive Guide |date=2012 |publisher=De Gruyter |page=136 |chapter-url=https://books.google.com/books?id=pA-ryJRcG3AC&q=Guat%C3%B3&pg=PA59 |access-date=21 February 2021 |chapter=Chapter II: Classification of the Indigenous Languages of South America|isbn=978-3-11-025803-5 }}</ref>
+|-
+|[[Hodï language|Hodï]]
+|640
+|Vulnerable
+|[[Venezuela]]
+|Spoken in [[Amazonas (Venezuelan state)|Amazonas]] state in Venezuela. Linked with the [[Macro-Puinavean languages|Macro-Puinavean]] hypothesis.
+|-
+|[[Iatê language|Iatê]]
+|1,000
+| data-sort-value="4" |Moribund
+| rowspan="2" |[[Brazil]]
+|Spoken in the states of [[Paraíba]], [[Pernambuco]], [[Alagoas]], [[Sergipe]], and the northern part of [[Bahia]]. Divided into two dialects, Fulniô and Yatê.<ref>{{cite web |title=Yaté |url=http://www.endangeredlanguages.com/lang/1642 |website=Endangered Languages Project |access-date=20 February 2021}}</ref> Sometimes classified as a [[Macro-Jê languages|Macro-Jê]] language.<ref>{{cite book |last1=Crevils |first1=Mily |editor1-last=Campbell |editor1-first=Lyle |editor2-last=Grondona |editor2-first=Veronica |title=Classification of the Indigenous Languages of South America: A Comprehensive Guide |date=2012 |publisher=De Gruyter |page=185 |chapter-url=https://books.google.com/books?id=pA-ryJRcG3AC&q=Guat%C3%B3&pg=PA59 |access-date=21 February 2021 |chapter=Chapter III: Language Endangerment in South America:The Clock is Ticking|isbn=978-3-11-025803-5 }}</ref><ref>{{cite web |last1=Melatti |first1=Julio Cezar |title=Aspectos culturais (não linguísticos) dos povos falantes de línguas do tronco Macro-Jê-Roteiro para discussão no IX Encontro Macro-Jê |url=http://www.juliomelatti.pro.br/notas/n-aspectos-culturais-macro-je.pdf |access-date=20 February 2021}}</ref>
+|-
+| [[Irantxe language|Irantxe]]
+|90
+| data-sort-value="3" | Endangered
+| Spoken by the Irántxe and Mỹky peoples in the state of [[Mato Grosso]] in [[Brazil]]. Recent descriptions of the language analyze it as a language isolate.<ref>{{Cite web |title=Documenting Manoki (Mỹky), an isolate of Brazilian Amazonia {{!}} Endangered Languages Archive |url=https://www.elararchive.org/dk0498/ |access-date=2025-01-25 |website=www.elararchive.org}}</ref> According to Arruda (2003), it "bears no similarity with other language families".
+|-
+| [[Itonama language|Itonama]]
+|1
+| data-sort-value="4" | Moribund
+| [[Bolivia]]
+| Spoken in the far-eastern part of [[Beni Department]]. A relationship to [[Paezan languages|Paezan]] has been suggested.<ref>{{cite web |last1=Crevils |first1=Mily |title=Tomo II: Amazonia – Itonama |url=https://www.ru.nl/cls/our-research/completed-research-projects/completed-projects/lenguas-de-bolivia-es/lenguas-de-bolivia/tomo-ii-amazonia/ |website=Lenguas de Bolivia |publisher=Centre for Language Studies-Radboud University |access-date=19 February 2021}}</ref>
+|-
+| [[Kamëntšá language|Kamëntšá]]
+|4,000
+| data-sort-value="3" | Endangered
+| [[Colombia]]
+| Spoken in [[Sibundoy]] in the [[Putumayo Department]]. Also known as Camsa, Coche, Sibundoy, Kamentxa, Kamse, or Camëntsëá.{{citation needed|date=February 2021}}
+|-
+|[[Kanoê language|Kanoê]]
+|3
+| data-sort-value=4 | Moribund
+| [[Brazil]]
+| Spoken in southeastern [[Rondônia]]. Also known as ''Kapishana''. Tentatively linked to [[Kwaza language|Kwaza]] and [[Aikanã language|Aikanã]].<ref name="Voort, Hein 2005"/> Part of a [[Macro-Paesan languages|Macro-Paesan]] proposal.<ref name="Kaufman, Terrence 1994">Kaufman, Terrence. 1994. The native languages of South America. In: Christopher Moseley and R. E. Asher (eds.), ''Atlas of the World's Languages'', 59–93. London: Routledge.</ref>
+|-
+| [[Kunza language|Kunza]]
+| style="text-align: center;" colspan="2" |Extinct
+| [[Chile]]
+| Spoken in areas near [[Salar de Atacama]] until the 1950s. Also known as ''Atacameño''. Part of a [[Macro-Paesan languages|Macro-Paesan]] proposal.<ref name="Kaufman, Terrence 1994"/>
+|-
+|[[Kwaza language|Kwaza]]
+|25
+| rowspan="2" data-sort-value="4" |Moribund
+|[[Brazil]]
+|Spoken in eastern [[Rondônia]]. Connections have been proposed with [[Aikanã language|Aikanã]] and [[Kanoê language|Kanoê]].<ref name="Voort, Hein 2005"/>
+|-
+| [[Leco language|Leco]]
+|20
+| [[Bolivia]]
+| Spoken at the foot of the [[Andes]] in the [[La Paz Department (Bolivia)|department of La Paz]].<ref>{{cite web |last1=Van der Kerke |first1=Simon |title=Tomo I: Ámbito andino – Leco |url=https://www.ru.nl/cls/our-research/completed-research-projects/completed-projects/lenguas-de-bolivia-es/lenguas-de-bolivia/tomo-ambito-andino/|website=Lenguas de Bolivia |publisher=Centre for Language Studies-Radboud University |access-date=19 February 2021}}</ref>
+|-
+| [[Maku language of Auari|Máku of Auari]]
+| style="text-align: center;" colspan="2" |Extinct
+| [[Brazil]]
+| Spoken on the [[Brazil]]–[[Venezuela]] border in [[Roraima]] until 2000. Also known as ''Jukude'' or ''Maku''. Likely language isolate. Has been linked to the [[Arutani–Sape languages|Arutani–Sape]] and the [[Macro-Puinavean languages|Macro-Puinavean language families]].
+|-
+| [[Mapuche language|Mapuche]]
+|260,000
+| data-sort-value=2 | Vulnerable
+| [[Chile]], [[Argentina]]
+| Spoken in areas of the far-southern Andes and in the [[Chiloé Archipelago]]. Also known as ''Mapudungun'', ''Araucano'' or ''Araucanian''.<ref>{{cite book |last1=Zúñiga |first1=Fernando |title=Los mapuches y su lengua |date=2006 |publisher=Centro de Estudios Públicos |location=Santiago de Chile |page=402}}</ref> Variously part of [[Andean languages|Andean]],<ref name="Amerind Dictionary" /> [[Macro-Panoan languages|Macro-Panoan]],<ref name="Kaufman, Terrence 1994"/> or [[Mataco–Guaicuru languages|Mataco–Guaicuru]]<ref>{{cite journal |last1=Viegas Barros |first1=Jose Pedro |title=La hipótesis de parentesco Guaicurú-Mataguayo: estado actual de la cuestión |journal=Revista Brasileira de Linguística Antropológica |date=2013 |volume=5 |issue=2 |pages=293–333 |doi=10.26512/rbla.v5i2.16269 |doi-broken-date=21 January 2026 |url=https://ri.conicet.gov.ar/handle/11336/28247 |access-date=21 February 2021|doi-access=free |hdl=11336/28247 |hdl-access=free }}</ref> proposals. Sometimes [[Huilliche language|Huilliche]] is treated as a separate language, reclassifying Mapuche into an [[Araucanian languages|Araucanian]] family.<ref>{{cite book |last1=Mason |first1=John Alden |editor1-last=steward |editor1-first=Julian |title=Handbook of South American Indians |date=1950 |publisher=Government Printing Office: Smithsonian Institution, Bureau of American Ethnology Bulletin |location=Washington D.C. |pages=157–317 |chapter="The Languages of South America"}}</ref>
+|-
+| [[Matanawi language|Matanawi]]
+| style="text-align: center;" colspan="2" rowspan="2" | Extinct
+| [[Brazil]]
+| Spoken on the Castanha River and [[Madeirinha River]] in [[Amazonas (Brazilian state)|Amazonas]] in [[Brazil]] until the middle of the 20th century. Has been linked to the [[Mura language|Mura-Pirahã language]].
+|-
+| [[Mochica language|Mochica]]
+| [[Peru]]
+| Spoken along the northwest coast of [[Peru]] and in an inland village until {{circa|1920}}. Usually considered to be a language isolate,<ref name="Campbell-SAmerica">{{cite book |last=Campbell |first=Lyle |author-link=Lyle Campbell |editor1-last=Grondona |editor1-first=Verónica |editor2-last=Campbell |editor2-first=Lyle |date=2012 |title=The Indigenous Languages of South America |chapter=Classification of the indigenous languages of South America |series=The World of Linguistics |volume=2 |location=Berlin |publisher=De Gruyter Mouton |pages=59–166 |isbn=978-3-11-025513-3}}</ref> but has also been hypothesized as belonging to a wider [[Chimuan languages|Chimuan]] language family.
+|-
+| [[Movima language|Movima]]
+| 1,400
+| data-sort-value=2 | Vulnerable
+| [[Bolivia]]
+| Spoken in the [[Llanos de Moxos]], in the north of [[Beni Department]]. Affiliations with [[Canichana language|Canichana]], [[Chibcha language|Chibcha]] and [[Macro-Tucanoan]] have been proposed, none of these have been proven.<ref>{{cite web |last1=Haude |first1=Katharina |title=Tomo II: Amazonia – Movima |url=https://www.ru.nl/cls/our-research/completed-research-projects/completed-projects/lenguas-de-bolivia-es/lenguas-de-bolivia/tomo-ii-amazonia/ |website=Lenguas de Bolivia |publisher=Centre for Language Studies-Radboud University |access-date=19 February 2021}}</ref>
+|-
+| [[Munichi language|Munichi]]
+| style="text-align: center;" colspan="2" rowspan="2" |Extinct
+| [[Peru]]
+|Spoken in the southern part of [[Loreto Region]] until the late 1990s. Possibly evolved either from a [[mixed language]] or a sister language to [[Arawakan languages|Proto-Arawak]].<ref>{{cite book |last1=Gibson |first1=Michael Luke |title=El Munichi: Un idioma que se extingue |date=2008 |publisher=Instituto Linguistico de Verano |location=Yarinacocha |page=19 |url=http://repositorio.cultura.gob.pe/bitstream/handle/CULTURA/444/El_munichi_un_idioma_que_se_extingue-slp42_myr_.pdf?sequence=3&isAllowed=y |access-date=21 February 2021}}</ref>
+|-
+| [[Mure language|Mure]]
+| [[Bolivia]]
+| Formerly spoken in the [[Jesuit Missions of Moxos]] in [[Beni Department]]. Isolate according to ''Glottolog'', but past proposals include links to [[Chapacuran languages|Chapacuran]]<ref>{{Cite web |title=Glottolog 5.2 - Mure |url=https://glottolog.org/resource/languoid/id/mure1235 |access-date=2025-10-01 |website=glottolog.org}}</ref>
+|-
+| [[Nasayuwe language|Nasayuwe]]
+| 60,000
+| data-sort-value=2 | Vulnerable
+| [[Colombia]]
+| Spoken in the northern part of [[Cauca Department]]. Also known as ''Páez''. Several proposed relationships in the [[Paezan languages|Paezan]] hypothesis but nothing conclusive.<ref>{{cite book |last1=Adelaar |first1=Willem |last2=Muysken |first2=Pieter |title=The Languages of the Andes |date=2004 |publisher=Cambridge University Press |location=Cambridge |pages=393–397}}</ref> 
+|-
+| [[Omurano language|Omurano]]
+| colspan="2" rowspan="3" style="text-align: center;" |Extinct
+| [[Peru]]
+| Spoken near the [[Marañón River]] until 2006. Linkage to the [[Saparo–Yawan languages|Saparo–Yawan language family]] has been proposed.
+|-
+| [[Oti language|Oti]]
+| [[Brazil]]
+| Spoken in [[São Paulo]] until the early 1900s. [[Macro-Jê languages|Macro-Jê]] affiliation has been suggested, but not accepted.<ref>{{cite book |last1=Rodrigues |first1=Aryon |editor1-last=Dixon |editor1-first=R.M.W |title=The Amazonian Languages |date=1999 |publisher=Cambridge University Press |location=Cambridge |chapter=6: The Amazonian Languages}}</ref>
+|-
+| [[Payagua language|Payaguá]]
+| [[Argentina]], [[Paraguay]]
+| Spoken in [[Argentina]] and [[Paraguay]] by the [[Payaguá]] until 1943. Linkage has been proposed to the [[Mataco–Guaicuru languages|Mataco–Guaicuru language family]], however Campbell (2012) classifies it as an isolate.<ref name="Campbell-SAmerica"/>
+|-
+| [[Pirahã language|Pirahã]]
+|380
+| data-sort-value=1 | Vibrant
+| [[Brazil]]
+| Spoken along the [[Maici River]] in [[Amazonas (Brazilian state)|Amazonas]], [[Brazil]]. The only living dialect of [[Mura language]].
+|-
+| [[Gününa Küne language|Gününa Küne]]
+| style="text-align: center;" colspan="2" |Extinct
+| [[Argentina]], [[Chile]]
+| Spoken in the Pampas region, last speaker died around 1960.<ref>{{cite web |last1=Viegas Barros |first1=J. Pedro |title=Un nuevo análisis fonológico del Gününa Yajüch |url=http://www.adilq.com.ar/FONOLOGIA%20GUNUNA.pdf |website=ADILQ |publisher=Asociación de Investigadores en Lengua Quechua |access-date=21 February 2021 |archive-date=5 March 2016 |archive-url=https://web.archive.org/web/20160305072046/http://www.adilq.com.ar/FONOLOGIA%20GUNUNA.pdf |url-status=dead }}</ref> Sometimes linked to [[Het language|Het]], as part of the [[Chonan languages]].<ref>{{cite journal |last1=Viegas Barros |first1=J. Pedro |title=La familia lingüística tehuelche |journal=Revista Patagónica |date=1992 |volume=54 |issue=13 |pages=39–46}}</ref> Included in a proposed [[Macro-Jibaro languages|Macro-Jibaro]] family.<ref>{{cite book |last1=Kaufman |first1=Ternece |editor1-last=Payne |editor1-first=Doris |title=Amazonian Linguistics Studies in Lowland South American Languages |date=1990 |publisher=University of Texas Press |chapter=Language History in South America: What We Know and How to Know More}}</ref>
+|-
+| [[Puinave language|Puinave]]
+|3,000
+| data-sort-value=3 | Endangered
+| [[Colombia]], [[Venezuela]]
+| Spoken in 32 communities along the banks of the [[Inírida River]] in [[Guainía Department]], Colombia and in 10 communities along the [[Orinoco|Orinoco River]], in the Colombia–Venezuela border region. Generally considered to be a language isolate, but has been linked frequently to [[Nadahup languages|Nadahup]] and [[Nukak language|Nukak]]-[[Kakwa language (Colombia)|Kakwa]].
+|-
+|[[Pumé language|Pumé]]
+| style="text-align: center;" |7,900
+| style="text-align: center;" |Vibrant
+|[[Venezuela]]
+|Spoken along the [[Orinoco]], [[Cinaruco River|Cinaruco]], [[Meta River|Meta]], and [[Apure River|Apure]] rivers. Linked to the extinct [[Esmeralda language]].<ref>{{cite book | last1 = Adelaar| first1 = William F. H. | last2 = Muysken | first2 = Pieter C.| title = The languages of the Andes| publisher = Cambridge University Press| series = Cambridge Language Surveys| date = 2004| pages = 156–161| url = https://books.google.com/books?id=UiwaUY6KsY8C&q=Esmeralde%CB%9Cno&pg=PA34| isbn = 978-1-139-45112-3}}</ref>
+|-
+|[[Puquina language|Puquina]]
+| colspan="2" rowspan="2" |Extinct
+|
+|Spoken around [[Lake Titicaca]] until the 19th century.
+|-
+|[[Puri language|Puri]]
+|[[Brazil]]
+|Spoken in [[Minas Gerais]] and [[Rio de Janeiro (state)|Rio de Janeiro]] states of [[Brazil]] until the late 19th century, Formerly considered Macro-Jê, but affiliation has been disproven.<ref>{{Cite journal |last=Ramirez |first=Henri |last2=Vegini |first2=Valdir |last3=França |first3=Maria Cristina Victorino de |date=2015-09-26 |title=Koropó, puri, kamakã e outras línguas do Leste Brasileiro |url=http://periodicos.sbu.unicamp.br/ojs/index.php/liames/article/view/8642302 |journal=LIAMES: Línguas Indígenas Americanas |language=pt |volume=15 |issue=2 |pages=223–277 |doi=10.20396/liames.v15i2.8642302 |issn=2177-7160}}</ref>
+|-
+| [[Ramanos language|Ramanos]]
+| colspan="2" rowspan="4" style="text-align: center;" |Extinct
+| [[Bolivia]]
+| Spoken in [[Moxos Province]] in [[Bolivia]] until the 1790s. Isolate according to ''Glottolog''.<ref>{{Cite web |title=Glottolog 5.2 - Ramanos |url=https://glottolog.org/resource/languoid/id/rama1271 |access-date=2025-07-15 |website=glottolog.org}}</ref>
+|-
+| [[Sapé language|Sapé]]
+| [[Venezuela]]
+| Spoken along the [[Paragua River]] and Karuna River in [[Venezuela]] until 2018. Also known as ''Kaliana'' or ''Caliana''. Part of the proposed [[Arutani–Sape languages|Arutani–Sape language family]] but more likely to be an isolate.
+|-
+|[[Sechura language|Sechura]]
+| rowspan="2" |[[Peru]]
+|Spoken in Peru until the late 19th century. Known from only two short wordlists, but linked to the [[Tallán language]].<ref name=":02">{{Cite book |last=Urban |first=Matthias |url=https://core.ac.uk/download/pdf/304709916.pdf |title=Lost languages of the Peruvian north coast |date=2019 |publisher=Gebr. Mann Verlag |isbn=978-3-7861-2826-7 |series=Estudios Indiana |location=Berlin |pages=73–96 |chapter=Sechura |oclc=on1090545680}}</ref>
+|-
+|[[Tallán language|Tallán]]
+|Spoken in Peru until the late 19th century. Known from only two short wordlists, but linked to the [[Sechura language]].<ref name=":03">{{Cite book |last=Urban |first=Matthias |url=https://core.ac.uk/download/pdf/304709916.pdf |title=Lost languages of the Peruvian north coast |date=2019 |publisher=Gebr. Mann Verlag |isbn=978-3-7861-2826-7 |series=Estudios Indiana |location=Berlin |pages=73–96 |chapter=The Tallán languages |oclc=on1090545680}}</ref>
+|-
+| [[Taruma language|Taruma]]
+|3
+| data-sort-value=4 rowspan="2" | Moribund
+|[[Brazil]], [[Guyana]] and [[Suriname]]
+| Originally spoken around the mouth of the [[Rio Negro (Amazon)|Rio Negro]] river, now located in [[Maruranau]] village among the [[Wapishana]]. Kaufman (1990) proposed it to be distantly related to [[Katembri language|Katembri]], but this relationship has not been repeated in recent surveys of South American languages by Campbell (2012), confirming that this language is an isolate.<ref name="Serke22">{{Cite thesis |last=Serke |first=Anna K. |title=A description of Taruma phonology |date=2022 |publisher=Universitat Leiden |url=https://studenttheses.universiteitleiden.nl/access/item%3A3454579/view}}</ref><ref name="Campbell-SAmerica"/>
+|-
+| [[Taushiro language|Taushiro]]
+|1
+| rowspan="2" | [[Peru]]
+| Spoken in the northeastern area of the [[Loreto province]]. Linkage to the [[Saparo–Yawan languages|Saparo–Yawan language family]] has been proposed.
+|-
+| [[Tequiraca language|Tequiraca]]
+| style="text-align: center;" colspan="2" | Extinct
+| Spoken in the central part of [[Department of Loreto|Loreto]] until the 1950s. Also known as Auishiri. A connection with [[Canichana language|Canichana]] has been proposed by Kaufman (1994).<ref>Kaufman, Terrence. (1994). The native languages of South America. In C. Mosley & R. E. Asher (Eds.), ''Atlas of the world's languages'' (pp.&nbsp;46–76). London: Routledge.</ref>
+|-
+|[[Tinigua language|Tinigua]]
+| style="text-align: center;" |1
+| style="text-align: center;" |Moribund
+|[[Colombia]]
+|Once part of a larger language family, is the sole surviving member of the [[Tiniguan languages]]
+|-
+| [[Trumai language|Trumai]]
+|51
+| data-sort-value=4 | Moribund
+| [[Brazil]]
+| Settled on the upper Xingu River. Currently reside in the [[Xingu National Park]] in the northern part of [[Mato Grosso]].<ref>{{cite web |last1=Angelis |first1=Wimar |title="Línguas Indígenas no Brasil: urgência de ações para que sobrevivam." Paper presented at the round table: "A situação atual das línguas indígenas brasileiras", no IX ELESI – Encontro sobre Leitura e Escrita em Sociedades Indígenas (Porto Seguro, BA, 22 a 26 de outubro de 2012). Publicada em: Anari Braz Bomfim & Francisco Vanderlei F. da Costa (orgs), Revitalização de língua indígena e educação escolar indígena inclusiva (Salvador: Egba, 2014, p. 93-117).|url=https://d1wqtxts1xzle7.cloudfront.net/58350913/Linguas_Indigenas_-_para_que_sobrevivam.pdf?1549532226=&response-content-disposition=inline%3B+filename%3DLinguas_Indigenas_no_Brasil_urgencia_de.pdf&Expires=1614430091&Signature=Pcis05y7U0nTc4oEfbeoIF5iGR3zzkzWpARPSQOnHq2kZfRPoV2RDQcSTscjKcquVKFEq5fB2Ly6DKezbbp8nIygMST3IjG36BaxxDR9W-35oYGwKst5EpcURqAS7Jzx0mO57IWerkAWByK6uu2SO-T7l1NYUu-WdzkhL~Y~tYIjhPk8ovsxIiFw42AMDpbNlEYvVU~Rx7QXDro7~faYRrzVaWSdjhViCIEWaMEXGshLvjKPUIrBIVXjo48O19FiDZIY2P0B0Lu3ajzRkwMPz0LPOn7Nb9qNCAQoKNCHqO1Wgg6-FOHHZjtV0p8yEvHTMJzQFcxHHP01MCh8FLdFyg__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA |access-date=27 February 2021}}{{dead link|date=May 2021|bot=medic}}{{cbignore|bot=medic}}</ref>
+|-
+| [[Urarina language|Urarina]]
+|3,000
+| rowspan="2" data-sort-value="2" | Vulnerable
+| [[Peru]]
+| Spoken in the central part of the [[Loreto Region]].<ref>{{cite book |last1=Olawsky |first1=Knut |title=A Grammar of Urarina |date=2006 |publisher=De Gruyter |isbn=978-3-11-019020-5 |page=3 |edition=First |url=https://books.google.com/books?id=2hIxb1XM1AYC&q=urarina+language&pg=PR15 |access-date=21 January 2021}}</ref> Part of the [[Macro-Jibaro languages|Macro-Jibaro]] proposal.<ref>Kaufman, Terrence. (1990). Language history in South America: What we know and how to know more. In D. L. Payne (Ed.), ''Amazonian linguistics: Studies in lowland South American languages'' (pp.&nbsp;13–67). Austin: University of Texas Press. {{ISBN|0-292-70414-3}}.</ref>
+|-
+| [[Waorani language|Waorani]]
+|2,000
+| [[Ecuador]], [[Peru]]
+| Also known as Sabela. Spoken between the [[Napo River|Napo]] and [[Curaray River|Curaray]] rivers. Could be spoken by several groups living in isolation.<ref>{{cite book |last1=Colleoni |first1=Paola |last2=Proaño |first2=José |title=CAMINANTES DE LA SELVA | trans-title=JUNGLE WALKERS |date=2010 |publisher=Grupo Internacional de Trabajo sobre Asuntos Indígenas (IWGIA) |location=Quito |page=10 |url=http://sgpwe.izt.uam.mx/files/users/uami/lauv/Caminantes_de_la_Selva_PP_aislados_Venezuela-_Informe_7.pdf |access-date=27 February 2021}}</ref>
+|-
+| [[Warao language|Warao]]
+|32,800
+| data-sort-value=3 | Endangered
+| [[Guyana]], [[Suriname]] and [[Venezuela]]
+| Spoken in the [[Orinoco Delta]].<ref name="Kaufman, Terrence 1994"/>
+|-
+|[[Xukuru language|Xukuru]]
+| style="text-align: center;"  colspan="2" rowspan="2" |Extinct
+|[[Brazil]]
+|Spoken in [[Pernambuco]] state, Brazil until the early 20th century. Only attestation is from wordlists collected in the 1950s-60s from rememberers.<ref>{{Cite journal |last=Hohenthal |first=Jr., W. D. |date=1954 |title=Notes on the Shucurú Indians of Serra de Ararobá, Pernambuco, Brazil |url=https://etnolinguistica.wdfiles.com/local--files/biblio%3Ahohenthal-1954-notes/Hohenthal_1954_NotesOnShukuru.pdf |journal=Revista do Museu Paulista (Nova Série) |volume=8 |pages=93–164}}</ref>
+|-
+| [[Yahgan language|Yahgan]]
+| [[Chile]]
+| Spoken in far-southern [[Tierra del Fuego]] until 2022. Also called Yámana.<ref>{{cite web |last1=Vega |first1=Jorge |title=In Chile's remote south, the last speaker of an ancient language fights to keep it alive |url=https://www.reuters.com/article/us-chile-language-indigenous/in-chiles-remote-south-the-last-speaker-of-an-ancient-language-fights-to-keep-it-alive-idUSKCN1T11YU |publisher=Reuters |access-date=3 June 2019 |date=31 May 2019}}</ref>
+|-
+| [[Yuracaré language|Yuracaré]]
+|2,700
+| data-sort-value=3 | Endangered
+| [[Bolivia]]
+| Spoken in the foothills of the Andes, in [[Cochabamba Department|Cochabamba]] and [[Beni Department|Beni]] Departments. Connections to [[Mosetenan]], [[Pano–Tacanan]], [[Arawakan]], and [[Chonan languages|Chonan]] have been suggested.<ref>{{cite web |last1=Van Gijn |first1=Rik |title=Tomo III: Oriente – Yurakare|url=https://www.ru.nl/cls/our-research/completed-research-projects/completed-projects/lenguas-de-bolivia-es/lenguas-de-bolivia/tomo-iii-oriente/|website=Lenguas de Bolivia |publisher=Centre for Language Studies-Radboud University |access-date=19 February 2021}}</ref>
+|-
+|[[Yurumanguí language|Yurumanguí]]
+| colspan="2" |Extinct
+|[[Colombia]]
+|Spoken in Colombia until sometime after 1768. Linked with the [[Hokan languages]] by [[Paul Rivet]], but this is now rejected.<ref>{{Cite journal |last=Rivet |first=Paul |date=1942 |title=Un dialecte hoka colombien : le Yurumangí. |url=https://www.persee.fr/doc/jsa_0037-9174_1942_num_34_1_2334 |journal=Journal de la société des américanistes |volume=34 |issue=1 |pages=1–59 |doi=10.3406/jsa.1942.2334}}</ref>
+|}
+
+==Sign language isolates==
+{{Further|Deaf-community sign language|Village sign language}}
+
+A number of [[sign language]]s have arisen independently, without any ancestral language, and thus are true language isolates. (See [[linguistic polygenesis]].) These include [[Nicaraguan Sign Language]], a well-documented case of what has happened in schools for the deaf in many countries.<ref name="journals.sagepub.com">{{Cite journal|last1=Senghas|first1=Ann|last2=Coppola|first2=Marie|date=July 2001|title=Children Creating Language: How Nicaraguan Sign Language Acquired a Spatial Grammar|url=http://journals.sagepub.com/doi/10.1111/1467-9280.00359|journal=Psychological Science|language=en|volume=12|issue=4|pages=323–328|doi=10.1111/1467-9280.00359|pmid=11476100|s2cid=9978841|issn=0956-7976|url-access=subscription}}</ref> In Tanzania, for example, there are seven schools for the deaf, each with its own [[Tanzanian sign languages|sign language]] with no connection to any other language.<ref>{{Cite book|last=T.|first=Muzale, H. R.|title=Kamusi ya Lugha ya Alama ya Tanzania (LAT) = Tanzanian Sign Language (TSL) dictionary: Kiswahili-TSL-English|date=2004|publisher=Languages of Tanzania Project, University of Dar es Salaam|isbn=9987-691-02-1|oclc=67947374}}</ref> Sign languages have also developed outside schools, in communities with high incidences of deafness, such as [[Kata Kolok]] in Bali, and half a dozen sign languages of the hill tribes in Thailand including the [[Ban Khor Sign Language]],<ref name=":3">{{Cite journal|last=de Vos|first=Connie|date=March 2011|title=Kata Kolok Color Terms and the Emergence of Lexical Signs in Rural Signing Communities|url=http://www.tandfonline.com/doi/full/10.2752/174589311X12893982233795|journal=The Senses and Society|language=en|volume=6|issue=1|pages=68–76|doi=10.2752/174589311X12893982233795|hdl=11858/00-001M-0000-0012-BB5A-6|s2cid=218839277 |issn=1745-8927|hdl-access=free}}</ref><ref>{{Cite journal|last=Nonaka|first=Angela M.|date=July 2009|title=Estimating size, scope, and membership of the speech/sign communities of undocumented indigenous/village sign languages: The Ban Khor case study|url=https://linkinghub.elsevier.com/retrieve/pii/S0271530909000202|journal=Language & Communication|language=en|volume=29|issue=3|pages=210–229|doi=10.1016/j.langcom.2009.02.004|url-access=subscription}}</ref> or in cities when people immigrate from the countryside and deaf children meet other deaf people for the first time, even without attending a school for the deaf.
+
+These and more are all presumed to be absolute isolates or small independent families, because many deaf communities are made up of people whose hearing parents do not use sign language, and have manifestly, as shown by the language itself, not borrowed their sign language from other deaf communities during the recorded history of these languages.<ref name=":3" />
+
+=== List ===
+{| class="wikitable sortable" rules="ALL"
+|-
+! Language
+! data-sort-type="number" | Users
+! Status
+! Countries
+! Comments
+|-
+| [[Adamorobe Sign Language|Adamorobe Sign]]
+|40
+| data-sort-value="1" | Endangered
+|[[Ghana]]
+| AdaSL is believed to have emerged over 200 years ago, alongside the settlement's founding.<ref name=":04">{{Cite book |last=Nyst|first=Victoria|title=A descriptive analysis of Adamorobe Sign Language (Ghana)|date=2007|publisher=LOT|isbn=978-90-78328-22-3|series=LOT|location=Utrecht}}</ref>
+|-
+|[[Afghan Sign Language|Afghan Sign]] 
+|190,000
+| rowspan="2" |Vibrant
+|[[Afghanistan]]
+|
+|-
+|[[Albanian Sign Language|Albanian Sign]]
+|24,000
+|[[Albania]]
+|It is unrelated to other sign languages of the Balkans.
+|-
+|[[Albarradas Sign Language|Albarradas]]
+|1,000
+|Vulnerable
+|[[Mexico]]
+|
+|-
+|[[Algerian Jewish Sign Language|Algerian Jewish]]
+|Unknown
+|Moribund
+|[[Algeria]]
+|
+|-
+|[[Alipur Sign Language|Alipur]]
+|150-250
+|Endangered
+| rowspan="2" |[[India]]
+|
+|-
+|[[Angami Naga Sign Language|Angami Naga Sign]]
+| colspan="2" |Extinct
+|
+|-
+|[[Armenian Sign Language|Armenian Sign]]
+|3,200–16,000
+| rowspan="3" |Vulnerable
+|[[Armenia]]
+|Wittmann (1991)<ref>[[Henri Wittmann|Wittmann, Henri]] (1991).  "Classification linguistique des langues signées non vocalement." Revue québécoise de linguistique théorique et appliquée 10:1.215–88.[http://www.nou-la.org/ling/1991a-class.pdf] {{Webarchive|url=https://web.archive.org/web/20190412133912/http://www.nou-la.org/ling/1991a-class.pdf|date=2019-04-12}}</ref> posits that ArSL is a language isolate (a 'prototype' sign language).
+|-
+|[[Bamako Sign Language|Bamako]] 
+|25,000
+|[[Mali]]
+|A [[sign language]] that developed outside the Malian educational system, in the urban tea-circles of [[Bamako]] where deaf men gathered after work. It is used predominantly by men, and is threatened by the educational use of [[American Sign Language]], which is the language of instruction for those deaf children who go to school.
+|-
+|[[Ban Khor Sign Language|Ban Khor]]
+|400
+|[[Thailand]]
+|
+|-
+|[[Bay Islands Sign Language|Bay Islands]]
+| colspan="2" |Unknown
+|[[Honduras]]
+|
+|-
+|[[Berbey Sign Language|Berbey]]
+|5
+|Moribund
+|[[Mali]]
+|Used by two families.
+|-
+|[[Bouakako Sign Language|Bouakako]]
+|24
+|Endangered
+|[[Ivory Coast]]
+|LaSiBo has been used by several generations of deaf people, most of whom are related. 9 deaf and 15 fluent hearing speakers known<!-- Cite error: <ref name="Tano2016" /> -->
+|-
+|[[Brazilian Sign Language|Brazilian]]
+|630,000
+|'''Vibrant'''
+|[[Brazil]]
+|Brazilian Sign Language is a well-established language and legally recognized.
+|-
+|[[Bribri Sign Language]]
+| colspan="2" |Extinct
+| rowspan="2" |[[Costa Rica]]
+|
+|-
+|[[Brunca Sign Language|Brunca]]
+| colspan="2" rowspan="3" |Unknown
+|
+|-
+|[[Bura Sign Language|Bura]]
+|[[Nigeria]]
+|Used by the Bura people around the village of [[Kukurpu]], 40&nbsp;km (25 miles) south-east of [[Biu, Nigeria|Biu]], [[Nigeria]], an area with a high degree of [[Hearing loss#Genetic|congenital deafness]].
+|-
+|[[Carhuahuaran Sign Language|Carhuahuaran]]
+|[[Peru]]
+|a multigenerational [[family sign language]] of the Quechua-speaking region of Peru.<ref name="Clark">Brenda Clark, [http://ling.hawaii.edu/wp-content/uploads/Clark_Brenda-Dissertation-Draft.pdf A Grammatical Sketch of Sivia Sign Language] {{Webarchive|url=https://web.archive.org/web/20210515121841/http://ling.hawaii.edu/wp-content/uploads/Clark_Brenda-Dissertation-Draft.pdf|date=2021-05-15}}</ref>
+|-
+|[[Caucasian Sign Language|Caucasian]]
+| colspan="2" |Extinct
+|[[Armenia]]
+|
+|-
+|[[Central Taurus Sign Language|Central Taurus]]
+|Unknown
+|Vulnerable
+|[[Turkey]]
+|
+|-
+|[[Chatino Sign Language|Chatino]]
+|11
+|Moribund
+|[[Mexico]]
+|
+|-
+|[[Douentza Sign Language|Douentza]]
+|700~1300
+|Vulnerable
+|[[Mali]]
+|Also known as Dogon Sign language.
+|-
+|[[Enga Sign Language|Enga Sign]]
+| colspan="2" |Unknown
+|[[Papua New Guinea]]
+|an apparent [[village sign language]] among the Tato Enga people in [[Enga province]], [[Papua New Guinea]]. It was reported in 1980 in three articles by [[Adam Kendon]], based on ethnographic films of three signers (one deaf, two hearing) in the upper valley of the Lagaip River, but with reports of wider use in the surrounding region.<ref>{{cite journal |last1=Kendon|first1=Adam|title=A description of a deaf-mute sign language from the Enga Province of Papua New Guinea with some comparative discussion, Part I: The formational properties of Enga signs|journal=Semiotica|date=1980|volume=31|issue=1/2|pages=1–34|doi=10.1515/semi.1980.31.1-2.1|s2cid=201699673}}</ref><ref>{{cite journal |last1=Kendon|first1=Adam|title=A description of a deaf-mute sign language from the Enga Province of Papua New Guinea with some comparative discussion, Part II: The semiotic functioning of Enga signs|journal=Semiotica|date=1980|volume=32|issue=1/2|pages=81–117}}</ref><ref>{{cite journal |last1=Kendon|first1=Adam|title=A description of a deaf-mute sign language from the Enga Province of Papua New Guinea with some comparative discussion, Part III: Aspects of utterance construction|journal=Semiotica|date=1980|volume=32|issue=3/4|pages=245–313}}</ref> Its current status is unknown, as no more recent information is available.
+|-
+|[[Ghandruk Sign Language|Ghandruk]]
+|20
+|Moribund
+|[[Nepal]]
+|
+|-
+|[[Guatemalan Sign Language|Guatemalan]]
+|50,000
+|Vibrant
+|[[Guatemala]]
+|
+|-
+|[[Guinea-Bissau Sign Language|Guinea-Bissau]]
+|Unknown
+| rowspan="2" |Vibrant
+|[[Guinea-Bissau]]
+|An incipient [[sign language]] evolving from the single school for the deaf in Guinea-Bissau, which was founded in [[Bissau]] in 2003. In 2005 a linguist and [[Portuguese Sign Language]] teacher found GBSL to still be basic, but with some consistency among students in the school and village use when the students went home. It is not directly related to the Portuguese sign language, although it has borrowed the alphabet from it.<ref>{{Cite web |title=República da Guiné-Bissau (Republic of Guinea-Bissau)|url=https://africansignlanguagesresourcecenter.com/guine-bissau/|access-date=2024-05-13|website=African Sign Languages Resource Center|language=en-US}}</ref>
+|-
+|[[Hausa Sign Language|Hausa Sign]]
+|20,000~5,000,000
+|[[Nigeria]]
+|There are no statistics on the number of deaf people in northern Nigeria or in Nigeria in general or on the number of people who use Hausa Sign Language. Estimates as to the number of signers using this language "vary greatly, from 70,000 to five million".<ref>Schmaling, Constanze. 2015. ''Sign Languages of the World: A Comparative Handbook'', Julie Bakken Jepsen, Goedele De Clerck, Sam Lutalo-Kiingi, William B. McGregor, (eds.), 362-390. Berlin: Walter de Gruyter. DOI: https://doi.org/10.1515/9781614518174</ref>
+|-
+|[[Hawaiʻi Sign Language|Hawaiʻi Sign]]
+|40
+|Moribund
+| rowspan="2" |[[United States]]
+|
+|-
+|[[Henniker Sign Language|Henniker]]
+| colspan="2" |Extinct
+|Was a [[village sign language]] of 19th-century [[Henniker, New Hampshire]] and surrounding villages in the US. It was one of the three local languages which formed the basis of [[American Sign Language]].
+|-
+|[[Inuit Sign Language|Inuit Sign]]
+|47
+| rowspan="2" |Endangered
+|[[Canada]] and [[Greenland]]
+|
+|-
+|[[Jamaican Country Sign Language|Jamaican Country]]
+|7,500
+|[[Jamaica]]
+|In 2007 it was estimated that the language would become extinct in the next twenty to thirty years
+|-
+|[[Jhankot Sign Language|Jhankot]]
+| colspan="2" |Unknown
+| rowspan="2" |[[Nepal]]
+|
+|-
+|[[Jumla Sign Language]]
+|8
+|Moribund
+|a [[village sign language]] of the town of [[Jumla (town)|Jumla]] in western [[Nepal]].  There is a [[Nepalese Sign Language]] school in Jumla, and that the students come from a 1–2-day walk away and do not speak Jumla Sign Language.
+|-
+|[[Kaʼapor Sign Language|Kaʼapor Sign]]
+|507
+|Vulnerable
+|[[Brazil]]
+|a [[village sign language]] used by the small community of [[Kaʼapor]] people in the Brazilian state of [[Maranhão]]
+|-
+|[[Kafr Qasem Sign Language|Kafr Qasem]] 
+|50
+|Endangered
+|[[Israel-Palestine]]
+|
+|-
+|[[Kailge Sign Language|Kailge Sign]] 
+| colspan="2" |Unknown
+|[[Papua New Guinea]]
+|
+|-
+|[[Kajana Sign Language|Kajana]]
+|Unknown
+|Endangered
+|[[Suriname]]
+|a [[village sign language]] of [[Suriname]]. It is spoken in [[Kajana, Suriname|Kajana]], a village of just three families.
+|-
+|[[Kata Kolok]]
+|1,240
+|Vulnerable
+|[[Indonesia]]
+|Deaf people in the village express themselves using special cultural forms such as deaf dance and [[martial arts]] and occupy special ritual and social roles, including digging graves and maintaining water pipes. Deaf and hearing villagers alike share a belief in a deaf god.
+|-
+|[[Keresan Sign Language|Keresign]]
+|15
+| rowspan="2" |Moribund
+|[[United States]]
+|Developed locally, and is unrelated to the trade language [[Plains Indian Sign Language]].
+|-
+|[[Koniya Sign Language|Koniya]]
+|4
+|[[Japan]]
+|
+|-
+|[[Old Cayman Sign Language|Old Cayman]]
+| colspan="2" |Extinct
+|[[Cayman Islands]]
+|
+|-
+|[[Old Costa Rican Sign Language|Old Costa Rican]]
+|100
+|Moribund
+|[[Costa Rica]]
+|A [[deaf-community sign language]] of [[San Jose, Costa Rica|San Jose]], spoken by people born before about 1945. Along with [[American Sign Language]], it is one of the sources of [[New Costa Rican Sign Language]].<!-- Cite error: {{sfn|Woodward|1991}} -->
+|-
+|[[Old Kentish Sign Language|Old Kentish]]
+| colspan="2" |Extinct
+|[[United Kingdom]]
+|Was a [[village sign language]] of 17th-century [[Kent]] in the [[United Kingdom]], that has been incorporated along with other [[village sign language]]s into [[British Sign Language]].
+|-
+|[[Orocovis Sign Language|Orocovis]]
+|25-50
+|Endangered
+|[[Puerto Rico]]
+|
+|-
+|[[Ottoman Sign Language|Ottoman]]
+| colspan="2" |Extinct
+|[[Turkey]]
+|It is not known whether Ottoman Sign Language was ancestral to modern [[Turkish Sign Language]], as no signs were recorded.<ref>{{cite web |first=Aslı|last=Özyürek|author-link=Aslı Özyürek|title=Turkish Sign Language (TİD) General Info|website=Koç University|url=http://turkisaretdili.ku.edu.tr/en/tid.aspx|archive-url=https://web.archive.org/web/20120415064343/http://turkisaretdili.ku.edu.tr/en/tid.aspx|archive-date=2012-04-15}}</ref>
+|-
+|[[Maldives Sign Language|Maldives Sign]]
+|2,700
+| rowspan="2" |Vulnerable
+|[[Maldives]]
+|
+|-
+|[[Maltese Sign Language|Maltese Sign]]
+|200
+|[[Malta]]
+|LSM courses have been offered by the [[University of Malta]] since 2015.<ref name=":05">{{Cite web |last=Zammit|first=Juliana|date=2025-01-07|title=The lesser known third official language of Malta|url=https://www.maltatoday.com.mt/news/national/133026/the_lesser_known_third_official_language_of_malta|access-date=2025-04-02|website=[[Malta Today]]|language=en}}</ref><ref name=":12">{{Cite web |last=Pace|first=Yannick|date=2021-11-24|title=Malta's First Ever Crop Of Maltese Sign Language Interpreters Graduate From University|url=https://lovinmalta.com/news/maltas-first-ever-crop-of-maltese-sign-language-interpreters-graduate-from-university/|access-date=2025-04-02|website=Lovin Malta|language=en-GB}}</ref> Despite official recognition, the Deaf community in Malta has struggled with shortages of qualified LSM interpreters.
+|-
+|[[Mardin Sign Language|Mardin]]
+|40
+|Moribund
+|[[Turkey]]
+|
+|-
+|[[Maroua Sign Language|Maroua]]
+|150
+|Endangered
+|[[Cameroon]]
+|Used by approximately 150 people in and around the town of [[Maroua]], capital of the [[Far North Region, Cameroon|Far North Region]] of [[Cameroon]].<ref>{{Cite journal |last=Atindogbe|first=Gratien G.|date=September 2019|title=Deaf education and Language-Based Curriculum: The case of the Buea School for the Deaf|url=https://hdl.handle.net/11599/3226|journal=|hdl=11599/3226|language=en}}</ref>
+|-
+|[[Martha's Vineyard Sign Language|Martha's Vineyard]]
+| colspan="2" |Extinct
+|[[United States]]
+|was a [[village sign language]] that was once widely used on the island of [[Martha's Vineyard]], United States, from the early 18th century to 1952. It was used by both [[deaf]] and [[Hearing (person)|hearing]] people in the community; consequently, deafness was not a barrier to participation in public life.
+|-
+|[[Maunabudhuk–Bodhe Sign Language|Maunabudhuk–Bodhe]]
+| colspan="2" |Unknown
+|[[Nepal]]
+|
+|-
+|[[Mauritian Sign Language|Mauritian]]
+|1,000
+|Vibrant
+|[[Mauritius]]
+|
+|-
+|[[Mayan Sign Language|Mayan Sign]]
+|417
+|Endangered
+|[[Mexico]] and [[Guatemala]]
+|Only 17 of the 417 users are deaf.
+|-
+|[[Mbour Sign Language|Mbour]]
+| colspan="2" |Unknown
+|[[Senegal]]
+|Used in a neighborhood of the city of [[M'Bour]] in [[Senegal]]. Deaf people in the neighborhood meet regularly.
+|-
+|[[Mehek Sign Language|Mehek Sign]] 
+|102
+|Vulnerable
+|[[Papua New Guinea]]
+|
+|-
+|[[Miyakubo Sign Language|Miyakubo]]
+|70
+|Vulnerable
+|[[Japan]]
+|
+|-
+|[[Mount Avejaha Sign Language|Mount Avejaha]] 
+|Unknown
+|Vibrant
+|[[Papua New Guinea]]
+|a [[village sign language]] of [[Papua New Guinea]]. It is spoken in a remote village with many deaf children in the foothills of [[Mount Avejaha]], in [[Oro Province]]. It is dissimilar from other village sign languages in New Guinea. The deaf are well integrated into the community.
+|-
+|[[Nanabin Sign Language|Nanabin]]
+|25-30
+|Endangered
+|[[Ghana]]
+|a [[Village sign language|family sign language]] of the coastal [[Fante people|Fante]] village of [[Ekumfi Nanabin]] in the [[Central Region (Ghana)|Central Region]] of [[Ghana]], ca. 8&nbsp;km east of [[Mankessim]]. It is used by three generations of a single family which is mostly deaf. The second generation are bilingual in [[Ghanaian Sign Language]].
+|-
+|[[Navajo Family Sign|Navajo Family]]
+| colspan="2" |Unknown
+|[[Navajo Nation]], [[United States]]
+|a [[sign language]] used by a small [[Deafness|deaf]] community of the [[Navajo]] People.<ref name="Supalla">{{cite book
+|last=Supalla|first=Samuel J.|date=1992|title=The Book of Name Signs|page=22}}</ref><ref>{{cite book 
+|last1=Davis|first1=Jeffrey|last2=Supalla|first2=Samuel|date=1995|chapter=A Sociolinguistic Description of Sign Language Use in a Navajo Family|editor-link1=Ceil Lucas|editor-last=Ceil|editor-first=Lucas|title=Sociolinguistics in Deaf Communities|publisher=Gallaudet University Press|pages=77–106|isbn=978-1-563-68036-6}}</ref><ref name="Hand Talk">{{cite book|last1=Davis|first1=Jeffrey E.|title=Hand Talk: Sign Language Among American Indian Nations|date=29 July 2010|publisher=Cambridge University Press|isbn=9780521870108|page=178|url=https://books.google.com/books?id=XDsvau6__D4C&q=Navajo+Family+Sign&pg=PA178|accessdate=14 February 2017|language=en|archive-date=26 May 2024|archive-url=https://web.archive.org/web/20240526080114/https://books.google.com/books?id=XDsvau6__D4C&q=Navajo+Family+Sign&pg=PA178#v=snippet&q=Navajo%20Family%20Sign&f=false|url-status=live}}</ref>
+|-
+|[[Nicaraguan Sign Language|Nicaraguan]]
+|3,000
+|Vibrant
+|[[Nicaragua]]
+|a [[sign language]] developed by deaf children in several schools in Nicaragua.
+|-
+|[[Plains Indian Sign Language|Plains Indian]]
+|Unknown
+| rowspan="2" |Vulnerable
+|[[United States]] and [[Canada]]
+|
+|-
+|[[Providence Island Sign Language|Providence Island]]
+|19
+|[[Colombia]]
+|a [[village sign language]] of the small island community of [[San Andrés and Providencia|Providence Island]] in the Western [[Caribbean]], off the coast of [[Nicaragua]] but belonging to [[Colombia]]. The island is about {{convert|15|sqmi|km2}} and the total population is about 5000, of which an unusual proportion are deaf (5 in 1,000).<ref>{{cite journal |vauthors=Lattig MC, Gelvez N, Plaza SL, Tamayo G, Uribe JI, Salvatierra I, Bernal JE, Tamayo ML|title=Deafness on the island of Providencia - Colombia: different etiology, different genetic counseling.|journal=Genetic Counseling|volume=19|issue=4|pages=403–12|year=2008|pmid=19239084}}</ref>
+|-
+|[[Rossel Island Sign Language|Rossel Island Sign]]
+| colspan="2" |Unknown
+|[[Papua New Guinea]]
+|
+|-
+|[[Salvadoran Sign Language|Salvadoran]]
+|26,000
+|Vibrant
+|[[El Salvador]]
+|a language used by the [[Deaf culture|deaf community]] in [[El Salvador]]. Its main purpose is to communicate and is used by about 15,000 people, or 0.25% of the population.<ref>{{Cite web |last=Project|first=Joshua|title=Deaf in El Salvador|url=https://joshuaproject.net/people_groups/19007/ES|access-date=2024-09-29|website=joshuaproject.net|language=en}}</ref>
+|-
+|[[Sandy River Valley Sign Language|Sandy River Valley]]
+| colspan="2" |Extinct
+|[[United States]]
+|was a [[village sign language]] of the 19th-century [[Sandy River (Kennebec River)|Sandy River Valley]] in [[Maine]]. Together with the more famous [[Martha's Vineyard Sign Language]] and [[Henniker Sign Language]], it was one of three local languages which formed the basis of [[American Sign Language]].
+|-
+|[[Saudi Sign Language|Saudi]]
+|100,000
+|Vibrant
+|[[Saudi Arabia]]
+|Unrelated to other Arab Sign languages
+|-
+|[[Sinasina Sign Language|Sinasina Sign]] 
+|30-55
+|Vulnerable
+|[[Papua New Guinea]]
+|
+|-
+|[[Sivia Sign Language|Sivia]]
+|27~30
+|Vulnerable
+|[[Peru]]
+|the [[deaf sign language]] of the Quechua town of [[Sivia]] in Peru. It is not related to [[Peruvian Sign Language]].<ref>{{cite web |url=https://iso639-3.sil.org/sites/iso639-3/files/change_requests/2018/2018-009.pdf|access-date=12 March 2024|page=3|title=Request for Change to ISO 639-3 Language Code|first=Brenda|last=Clark|date=2018-03-12|publisher=ISO 639-3 Registration Authority}}</ref>
+|-
+|[[South Rupununi Sign Language]]
+|"Seven plus villages"
+|Vulnerable
+|[[Guyana]] and [[Brazil]]
+|An indigenous [[village sign language]] used in at least seven [[Wapishana]] villages with a high degree of congenital deafness. The villages are located south of the town of [[Lethem, Guyana|Lethem]] in the [[Rupununi savannah]] of [[Guyana]] and [[Brazil]].
+|-
+|[[Solomon Islands Sign Language|Solomon Islands]]
+|3,000
+| rowspan="3" |Vibrant
+|[[Solomon Islands]]
+|Main sign language in [[Solomon Islands]]
+|-
+|[[Spanish Sign Language|Spanish Sign]]
+|60,000
+|[[Spain]]
+|
+|-
+|[[Sri Lankan Sign Language|Sri Lankan Sign]] 
+|13,000
+|[[Sri Lanka]]
+|Wittmann (1991)<ref>{{cite journal |language=fr|last=Wittmann|first=Henri|author-link=Henri Wittmann|year=1991|title=Classification linguistique des langues signées non vocalement|journal=Revue québécoise de linguistique théorique et appliquée|volume=10|issue=1|pages=215–88|s2cid=162499258|url=http://www.nou-la.org/ling/1991a-class.pdf}}</ref> posits that the Sri Lankan languages, as a group, are a language isolate ('prototype' sign language), though one developed through [[stimulus diffusion]] from an existing sign language. It is not known if they are related to each other, nor how many there are.
+|-
+|[[Tebul Sign Language|Tebul]]
+|500
+| rowspan="2" |Vulnerable
+|[[Mali]]
+|a [[village sign language]] of the village of [[Uluban]] in the [[Dogon people|Dogon]] region of [[Mali]], among speakers of [[Tebul Dogon]].
+|-
+|[[Terena Sign Language|Terena Sign]]
+|Unknown
+|[[Brazil]]
+|a [[village sign language]] used by deaf [[Terena people]] in southern Brazil. Deaf Terena who attend school use [[LIBRAS]] there, but switch to Terena Sign when they return home.<ref>Sumaio Soares, Priscilla Alyne (2018) ''Língua Terena de sinais: análise descritiva inicial da língua de.'' Doctoral dissertation, Araraquara: Universidade Estadual Paulista "Júlio de Mesquita Filho".</ref>
+|-
+|[[Tibetan Sign Language|Tibetan Sign]]
+|500
+|Endangered
+|[[China]]
+|
+|-
+|[[Trinidad and Tobago Sign Language|Trinidad and Tobago]]
+|2,000
+|Vulnerable
+|[[Trinidad and Tobago]]
+|
+|-
+|[[Turkish Sign Language|Turkish Sign]]
+|250,000
+| rowspan="3" |Vibrant
+|[[Turkey]]
+|
+|-
+|[[Ugandan Sign Language|Ugandan]] 
+|160,000
+|[[Uganda]]
+|
+|-
+|[[Venezuelan Sign Language|Venezuelan]]
+|86,000
+|[[Venezuela]]
+|The national [[deaf sign language]] of [[Venezuela]].
+|-
+|[[Wanib Sign Language|Wanib]]
+| colspan="2" |Unknown
+|[[Papua New Guinea]]
+|
+|-
+|[[Yolŋu Sign Language|Yolngu / Penguin Sign]]
+|5,000
+|Vibrant
+|[[Australia]]
+|Ritual Sign language of the [[Yolŋu]]
+|-
+|[[Yoruba Sign Language|Yoruba Sign]]
+|32
+|Endangered
+|[[Nigeria]]
+|
+|}
+
+==See also==
+*[[Unclassified language]]s
+*[[List of language families]]
+
+==References==
+{{reflist|colwidth=30em}}
+
+==Bibliography==
+* [[Lyle Campbell|Campbell, Lyle]], ed. 2017. ''Language Isolates''. Routledge.
+* Campbell, Lyle. (1997). ''American Indian languages: The Historical Linguistics of Native America''. New York: [[Oxford University Press]]. {{ISBN |0-19-509427-1}}.
+* Goddard, Ives (Ed.). (1996). ''Languages''. Handbook of North American Indians (W. C. Sturtevant, General Ed.) (Vol. 17). Washington, D.C.: Smithsonian Institution. {{ISBN |0-16-048774-9}}.
+* Goddard, Ives. (1999). ''Native Languages and Language Families of North America'' (rev. and enlarged ed. with additions and corrections). [Map]. Lincoln, NE: [[University of Nebraska Press]] (Smithsonian Institution). (Updated version of the map in Goddard 1996). {{ISBN |0-8032-9271-6}}.
+* Grimes, Barbara F. (Ed.). (2000). ''Ethnologue: Languages of the world'', (14th ed.). Dallas, TX: [[SIL International]]. {{ISBN |1-55671-106-9}}. (Online edition: [http://www.ethnologue.com/ Ethnologue: Languages of the World]).
+* [[Marianne Mithun|Mithun, Marianne]]. (1999). ''The languages of Native North America''. Cambridge: [[Cambridge University Press]]. {{ISBN |0-521-23228-7}} (hbk); {{ISBN |0-521-29875-X}}.
+* Salaberri, Iker, Krajewska, Dorota, Santazilia, Ekaitz & Zuloaga, Eneko (eds.). (2025). ''Investigating Language Isolates. Typological and Diachronic Perspectives''. Amsterdam & Philadelphia: [[John Benjamins Publishing Company|John Benjamins]]. {{ISBN|9789027218995|9789027246295}} {{doi|10.1075/tsl.135}}
+* Sturtevant, William C. (Ed.). (1978–present). ''Handbook of North American Indians'' (Vol. 1–20). Washington, D. C.: Smithsonian Institution. (Vols. 1–3, 16, 18–20 not yet published).
+
+==External links==
+* [https://www.ethnologue.com/subgroups/language-isolate Ethnologue's list of language isolates]
+
+{{Language families}}
+{{Authority control}}
+
+{{DEFAULTSORT:Language Isolate}}
+[[Category:Language isolates| ]]

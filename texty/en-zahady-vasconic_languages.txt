@@ -1,0 +1,121 @@
+{{About|the contemporary language group|the proposal by Theo Vennemann|Vasconic substratum theory}}
+{{short description|Proposed language family including Basque and Aquitanian}}
+{{Infobox language family
+| name          = Vasconic
+| region        = France, Spain
+| familycolor   = Isolate
+| family        = 
+| child1        = ''[[Aquitanian language|Aquitanian]]'' (Aquitanian proper and Vasconic) †
+| child2        = ''[[Basque language|Basque]]''
+| child3        = ? ''[[Iberian language|Iberian]]'' †
+| iso5          = euq <!-- ISO 639-5 only, not ISO 639-2 -->
+| glotto        = none
+| notes         = † denotes an [[extinct language]]
+| acceptance    = 
+}}
+
+The '''Vasconic languages''' (from [[Latin language|Latin]] {{lang|la|vasco}} 'Basque'), also called '''Euskarian''' or '''Basque-Aquitanian''',{{Sfn|Gorrochategui|1995|p=54|ps=: "... linguistic strata: Indo-European, Iberian and Euskarian (Basque-Aquitanian)."}}{{Sfn|Hualde|2021|pp=31–32}} are a putative [[language family]] that includes [[Basque language|Basque]] and the extinct [[Aquitanian language]] (also called ''Vasco-Aquitanian''), spoken in ancient times by the [[Vasco-Aquitanian peoples]]. Aquitanian was itself probably divided into several dialects or languages.{{Sfn|Hualde|2021|pp=21, 31–32}}{{sfn|de Hoz|2012|p=546}}{{sfn|Gorrochategui|2020|pp=722–724}} [[Joaquín Gorrochategui]] distinguishes ''Aquitanian proper'', the language of the [[Aquitani]] in the north, from ''Vasconic'', the language of the [[Vascones]] in the south.{{sfn|Gorrochategui|2020|pp=722–724}}
+
+While specialists agree that Basque and Aquitanian are genetically related, the status of the family itself remains uncertain. It is debated whether Aquitanian (or one of its dialects) is the direct ancestor of Basque (in which case it would not constitute a language family but a single language lineage), or whether the two instead represent sister languages descended from a common ancestor (making the language family valid). The extinct [[Iberian language]]s are sometimes tentatively included in this family, although this remains controversial.
+
+== Ancient evidence ==
+The ancient stage of the family has left no continuous text. It is known almost only from personal and divine names, chiefly those of the [[Aquitanian language|Aquitanian]] of Roman times, preserved in Latin inscriptions of the 1st to 3rd centuries AD.{{sfn|Gorrochategui|Vallejo|2019|p=361}}{{sfn|Gorrochategui|2020|pp=725–726}} Because this material is purely onomastic, and a name reflects the sounds and word-formation of its language but not its meaning, some forms remain difficult to classify.{{sfn|Gorrochategui|2020|p=743}} The task is made harder by the absence of any contemporary related language against which the forms could be checked, unlike the Gaulish available for [[Celtiberian language|Celtiberian]].{{sfn|Ulibarri|2013|p=94}}
+
+[[Joaquín Gorrochategui]]'s 1984 survey assembled more than 600 of these onomastic elements, and about a hundred more have since been found, some of them outside the historically Basque-speaking area.{{sfn|Ulibarri|2013|p=93}} Most come from north of the Pyrenees, along the [[Garonne]] and densest in its upper basin and on the plain of the Gers, whereas the regions where Basque was later spoken have yielded very little, a single name in [[Gipuzkoa]] and none in [[Biscay]]. Names of Vasconic type reach as far south as the uplands of Soria and La Rioja, evidence that the language covered a considerably wider area in Roman times than in the historical period.{{sfn|Ulibarri|2013|pp=90, 94}} The names are transmitted through Latin epigraphy and carry Latin inflection, but comparison with historical Basque matches several of them to later common nouns, among them kinship terms, names of animals and colours, and numerals: ''Cison'' corresponds to ''gizon'' ('man'), ''Andere'' to ''andre'' ('woman'), and ''Sesenco'' to ''zezen'' ('bull').{{sfn|Ulibarri|2013|pp=93–95}} This yields information about the phonology and vocabulary of the language, but because the inscriptions contain no sentences they reveal almost nothing of its grammar.{{sfn|Ulibarri|2013|pp=90, 93}} The [[Hand of Irulegi]], discovered in 2021 and dated to the 1st century BC, bears a short inscription that may be written in Vasconic, a dialect of Aquitanian. It reads {{Square capitals|sorioneku ⋅ kunekebeekiŕateŕe/ /n oTiŕtan ⋅ eseakaŕi eŕaukon}}.{{Sfn|Aiestaran|Velaza|Gorrochategui|2024}}
+== Internal classification ==
+There is broad scholarly agreement that Aquitanian was a [[Paleo-European language]] genetically related to [[Basque language|Basque]], but the nature of that relationship is disputed.<ref name=":02" /> Part of the difficulty is that the term ''Aquitanian'' is used in two senses. In a narrow sense it denotes only the language spoken by the [[Aquitani]] north of the Pyrenees. In the broad sense it takes in the whole set of related ancient varieties on both slopes of the mountain range, Aquitanian proper in the north together with ''Vasconic'', the far more sparsely attested language of the [[Vascones]] in the south. Taken broadly, Aquitanian therefore covers the ancient domain to which the ancestor of Basque itself belongs.{{sfn|Gorrochategui|2020|pp=722–724}}{{sfn|Gorrochategui|2022|pp=114–115, 122}} Because the northern and southern records are each too sparse to be analysed on their own, scholars have conventionally pooled them and treated the whole as one language, called ''Aquitanian'', a working simplification rather than a claim that the two were identical.{{sfn|Ulibarri|2013|p=92}}
+[[File:Basque_Geographical_Traces.svg|right|thumb|400x400px|Geographical extent of the Vasco-Aquitanian dialects in Roman times.{{Sfn|Gorrochategui|1995|p=57}}{{Sfn|Hualde|2021|pp=21, 31–32}} Blue dots: place names; red dots: epigraphic traces; blue patch: maximum territorial extension.]]
+The scholarly dispute over ancestry has focused on the far more attested northern material. [[R. L. Trask]] held it so close to Basque that it can be treated, for practical purposes, as its more-or-less direct ancestor, whereas [[Lyle Campbell]] judged the differences large enough for it to be instead a [[sister language]], each representing a branch descending from an original [[proto-language]].<ref name=":02">*{{harvnb|Trask|1997|p=402}}: "Aquitanian is so closely related to Basque that we can, for practical purposes, regard it as being the more-or-less direct ancestor of Basque. It follows that an ancestral form of Basque was spoken in a large area of southwestern Gaul, as well as throughout the greater part of the Pyrenees and, most likely, in at least the east and north of the modern Basque Country."
+*{{harvnb|Campbell|2010|p=18}}: "Although these attestations are sufficiently detailed to confirm that modern Basque and Aquitanian are related, they also show sufficient differences from Basque to suggest the possibility not of a direct ancestor, but as a relative, that possibly Aquitanian and Basque are sister languages representing two branches of the original proto-language."
+*{{harvnb|Ulibarri|2013|p=92}}: "When analyzing the relationship between Aquitanian and the current Basque language, we have two possibilities: to consider Aquitanian to be an old phase of Basque, or to think of it as a sister language of archaic Basque (the mother of all Basque historical dialects), from which Common Basque would descend. Since evidence is extremely scarce, it is impossible to prove either theory."
+*{{Harvnb|Hualde|2021|p=21}}: "The Aquitanian(-Vasconic) names show an evident relation to Basque, but what the exact nature of this relation is remains uncertain. The language of the Aquitanian names may be either the direct ancestor of [Proto-Basque] or a close relative."
+*{{harvnb|Gorrochategui|2022|p=106}}: "Research in the second half of the twentieth century (Michelena 1954; Caro Baroja 1954; Gorrochategui 1984) has demonstrated convincingly that Aquitanian was genetically related to the Basque language, in a much stronger and clearer way than with any other language"</ref> The linguist Koldo Ulibarri notes that the surviving evidence is too scarce to prove either.{{sfn|Ulibarri|2013|p=92}} Gorrochategui finds Campbell's sister-language reading credible. He concludes that a real but unmeasurable difference separated the attested Aquitanian material from the ancestor of historical Basque, perhaps no greater than the differences among the modern Basque dialects, which are counted as one language, perhaps larger, but that the question cannot be settled since the grammatical evidence and connected texts needed to decide are lacking.{{sfn|Gorrochategui|2022|pp=106, 117}}{{efn|The comparison rests on a small set of lexical cognates found in names, mostly terms for age, sex and kinship, and lacks the grammatical correspondences that would more firmly establish the relationship. Gorrochategui adds that the impression of direct descent is partly an artefact of the method, the cognates being selected in advance to agree with the known history of Basque, so that inferring descent rather than a collateral relationship "may be a methodological corollary more than a reflection of the reality".{{sfn|Gorrochategui|2022|pp=109–111, 122}}}}
+
+The reconstructed stages of the Basque language are Common Basque (5th–6th centuries AD), the common language from which all historical Basque dialects diverged, and [[Proto-Basque language|Proto-Basque]] (first centuries BC), an earlier stage preceding contacts with [[Latin]].{{sfn|Areta|2013|p=9}}{{efn|Some scholars further divide Proto-Basque into sub-phases, such as Joseba Lakarra's subdivision between Pre-Proto-Basque and Old Proto-Basque.{{sfn|Areta|2013|p=9}}}} The study of Latin and later [[Romance languages|Romance]] loanwords in Basque has been a principal source for the reconstruction of Proto-Basque, since their datable [[sound changes]] anchor a relative chronology of the language's development.{{sfn|Ulibarri|2013|pp=92, 96}} According to Gorrochategui, the consensual dating of Common Basque to the period between Late Antiquity and the Early Middle Ages, rather than to the pre-Roman tribal period, means that the distinction between Aquitanian and Vasconic cannot simply be identified with an early stage of the later dialectal division of Basque.{{sfn|Gorrochategui|2020|pp=743–744}}
+
+[[José Ignacio Hualde]] notes that Aquitanian in the broad sense was spoken over a vast area, with names of Aquitanian origin found as far south as [[Soria]] in Castile, and so probably comprised several dialects. On his account Basque may have descended from one of them, although it remains uncertain which of the attested names belong to the direct ancestor of Basque and which to related sister dialects. He uses the term ''Proto-Basque-Aquitanian'' for the reconstructed common ancestor of Proto-Basque and the other Aquitanian dialects.{{sfn|Hualde|2021|pp=21, 31–32}} [[Javier de Hoz]] likewise argues that the native inscriptions from Aquitania and Navarre may underlie a set of related dialects, or possibly a small language family.{{sfn|de Hoz|2012|p=546}} Within this broad Aquitanian domain, Gorrochategui locates the line ancestral to historical Basque in the west, where he holds that the common ancestor of the later Basque dialects formed by convergence among western Pyrenean varieties. On this view, the southern Vasconic material would stand closer to later Basque, sharing some of its innovations, whereas the northern Aquitanian proper would be the more divergent of the attested varieties.{{sfn|Gorrochategui|2022|pp=115, 122}}
+
+The following trees set out the scenarios that have been proposed. In the first, Aquitanian as attested north of the Pyrenees is essentially the ancestor of Basque, as proposed by Trask.{{Sfn|Trask|1997|p=402}} In the second, it is a sister dialect or language of Basque. Campbell treats it as an extinct sister language, and Gorrochategui specifies this by splitting the attested material into a northern ''Aquitanian proper'' and a southern ''Vasconic'' grouped with the western varieties from which Basque would descend. Hualde's account, on which Basque comes from one of several Aquitanian dialects without it being settled which, belongs to this same family of scenarios.{{Sfn|Campbell|2010|p=18}}{{sfn|Gorrochategui|2022|pp=115, 122}}{{sfn|Hualde|2021|pp=21, 31–32}}{{efn|A tree can only approximate Gorrochategui's account, since he holds that Common Basque formed by convergence among the western Pyrenean varieties rather than descending from a single one.{{sfn|Gorrochategui|2022|pp=115, 117, 122}}}}
+
+{{col-begin|width=100%}}
+{{col-3}}
+'''Proto-Basque as equivalent to Aquitanian (Trask)'''
+{{tree list}}
+* Proto-Basque (Aquitanian)
+** Common Basque
+*** Modern Basque dialects
+{{tree list/end}}
+{{col-break}}
+'''Northern Aquitanian and southern Vasconic as sister dialects or languages (Campbell; refined by Gorrochategui)'''
+{{tree list}}
+* Proto-Basque-Aquitanian
+** Northern Aquitanian proper (extinct sister)
+** Southern Vasconic and other western varieties
+*** Common Basque
+**** Modern Basque dialects
+{{tree list/end}}
+{{col-end}}
+
+== Classification of Iberian ==
+Writing in the 1st century AD, [[Strabo]] mentions that "the Aquitanians differ from the Gallic nation in their bodily build and in their language, being more similar to the Iberians."{{Sfn|Gorrochategui|1995|pp=38–39}} However, the idea that [[Basque language|Basque]] and Iberian are related lost favour in the 20th century, following key decipherments of [[Iberian scripts]] by [[Manuel Gómez-Moreno Martínez|Manuel Gómez Moreno]] in 1925 and the critical reassessments of that relationship by [[Antonio Tovar]] and Luis Michelena in the 1950s..{{Sfn|Gorrochategui|1995|p=53}}{{Sfn|Trask|1997|p=380}}{{sfn|Areta|2013|p=5}}
+
+Although some recent research, including by Eduardo Orduña and Joan Ferrer i Jané, have revisited the connection in the early 21st century (focusing primarily on numerals and some lexical items), the theory that Basque and [[Iberian language|Iberian]] are genetically related remains controversial among linguists.{{sfn|Areta|2013|p=5}} Most scholars accept that some similarities between Basque, Aquitanian and Iberian do exist, but they divide over whether the agreements come from contact and borrowing or from a shared ancestor. All agree that Iberian texts cannot at present be read through Basque.{{sfn|Orduña|2019|pp=238–239}}
+
+=== Vasco-Iberian theory ===
+In a 2019 survey of the question, Eduardo Orduña lists the following agreements between Basque and Iberian: the phonological system, the genitive ending ''-en'', the derivational suffixes ''-taŕ'' and ''-ko'', the verbal form ''ekiar'', some points of nominal and verbal morphology, the word order of the noun phrase, a few words of cultural or commercial vocabulary, and the system of numerals. He regards the numerals as the strongest case, which according to him would point to a common origin. The Iberian sequence ''oŕkei''-''abaŕ'', for instance, matches Basque ''hogei-ta-hamar'' ('thirty', literally 'twenty and ten') in the Basque base-twenty system.{{sfn|Orduña|2019|pp=238–239}} 
+
+According to Orduña, the closest matches between Iberian and the Basque-Aquitanian material are in personal names. Iberian elements such as ''baiser'', ''beleś''/''bels'', ''iltun'' and ''laur'' have near-identical Aquitanian counterparts, a set so much larger than the lexical parallels that Michelena spoke of a shared "onomastic pool". Joaquín Gorrochategui rejects most of these as evidence of kinship and keeps only ''beleś''/''BELEX''. Some elements are common in one language but rare in the other, some appear in the wrong position, and some that lack a Basque match may simply be Iberian names borrowed by Aquitanian speakers.{{sfn|Orduña|2019|pp=235–236}}
+
+=== Criticism ===
+According to Mikel Martínez Areta, the Iberian inscriptions potentially linked to Basque are extremely limited and questionable. Some of the similarities might be explained by borrowings or areal influence. Moreover, it is unclear whether Iberian was a unified language across the entire eastern [[Iberian Peninsula]] or restricted to a limited area (perhaps that of the [[Contestani]]). In regions closer to the Basque-speaking area, Iberian inscriptions may simply indicate that the language was used as a [[lingua franca]], as proposed by [[Javier de Hoz]].{{sfn|Areta|2013|p=5}}
+
+In place names, the most-cited argument has been the Iberian series in ''ili-'' (as in ''Iliberris''), which recurs in Basque and Aquitanian lands (''Elimberris'', Auch) and was equated with Basque ''iri'' ('city'). The match is not straightforward: in Iberian inscriptions the word appears as ''iltiŕ'', whose dental does not correspond regularly to Basque ''iri''. This led Javier de Hoz to treat ''il-'' as only one element of a compound, and the resemblance as a shared cultural word rather than proof of genetic relationship.{{sfn|Orduña|2019|pp=236–237}}
+
+== Relationship with other languages ==
+Various attempts have been made to tie Basque to other languages or language families, such as [[Indo-European languages|Indo-European]], [[Minoan language|Minoan]], [[Pictish language|Pictish]], or [[Languages of the Caucasus|Caucasian]]. None of these theories have been able to provide convincing data, and they are rejected by most mainstream linguists.{{Sfn|Trask|1997|pp=358–415}}[[File:Expansion_of_farming_in_western_Eurasia,_9600–4000_BCE.png|thumb|The spread of farming in Europe (6700 –4000 BC) is associated by some scholars to the diffusion of certain [[Paleo-European languages]].{{Sfn|Hualde|2021|p=35}}]]
+Blasco Ferrer (2016) has interpreted several Sardinian toponyms as aligning with the roots that Joseba Lakarra identifies as 'Pre-Proto-Basque-Aquitanian'. However, critics contend that the meanings attributed to these hypothetical [[paleo-Sardinian]] morphemes are based solely on toponymic evidence, and that the time depth separating Basque and paleo-Sardinian would be too great to allow for meaningful comparison. Recent paleogenetic research shows that the spread of agriculture from Anatolia about 10,000 years ago involved significant human genetic replacement. Although it is possible that both Paleo-Sardinian and Basque derive from the languages of these [[Early European Farmers|early European farmers]], Hualde argues that it is unlikely the ancestral language remained unchanged over such a long period.{{Sfn|Hualde|2021|p=35}}
+
+Linguist [[Theo Vennemann]] (2003) has also proposed a [[Vasconic substratum hypothesis]], suggesting that the ancestors of the Basque language spread across Europe at the end of the [[Last Glacial Period]], when [[Cro-Magnon]] populations entered the continent and left traces in modern European languages. However, like other theories linking Basque to languages around the world, this hypothesis is widely rejected by historical linguists.{{sfn|Baldi|Page|2006}}
+
+According to Hualde, standard [[Linguistic reconstruction|reconstruction methods]] allow linguists to trace pre-Proto-Basque-Aquitanian only a short distance back in time. Without significant new evidence, it is unlikely that scholars will ever be able to convincingly demonstrate a close genetic relationship between Basque-Aquitanian and any other language.{{Sfn|Hualde|2021|p=42}}
+
+==See also==
+* [[Paleohispanic languages]]
+* [[Paleohispanic scripts]]
+* [[Prehistoric Iberia]]
+* [[Pre-Roman peoples of the Iberian Peninsula]]
+* [[Proto-language]]
+* [[Vasconic substrate hypothesis]]
+* [[Artenacian culture]]
+
+== References ==
+===Notes===
+{{notelist}}
+
+===Citations===
+{{reflist}}
+
+=== Bibliography ===
+{{refbegin|40em|indent=yes}}
+* {{Cite journal |last=Aiestaran |first=Mattin |last2=Velaza |first2=Javier |last3=Gorrochategui |first3=Joaquín |date=2024 |title=A Vasconic inscription on a bronze hand: writing and rituality in the Iron Age Irulegi settlement in the Ebro Valley |journal=Antiquity |language=en |volume=98 |issue=397 |pages=66–84 |doi=10.15184/aqy.2023.199 |issn=0003-598X|doi-access=free }}
+* {{Cite book |last=Areta |first=Mikel Martínez |title=Basque and Proto-basque: Language-internal and Typological Approaches to Linguistic Reconstruction |year=2013 |publisher=Peter Lang |isbn=978-3-631-62649-8}}
+* {{Cite journal |last=Baldi |first=Philip |last2=Page |first2=B. Richard |date=2006 |title=Europa Vasconica-Europa Semitica: Theo Vennemann, Gen. Nierfeld, in: Patrizia Noel Aziz Hanna (Ed.), Trends in Linguistics, Studies and Monographs 138, Mouton de Gruyter, Berlin, 2003, pp. xxii + 977 |journal=Lingua |volume=116 |issue=12 |pages=2183–2220 |doi=10.1016/j.lingua.2005.03.011 |issn=0024-3841}}
+* {{Cite journal |last=Campbell |first=Lyle |year=2010 |title=Language Isolates and Their History |journal=Annual Meeting of the Berkeley Linguistics Society |pages=16–31 |doi=10.3765/bls.v36i1.3900 |issn=2377-1666|author-link=Lyle Campbell}}
+* {{Cite book |last=de Hoz |first=Javier |title=Historia lingüística de la Península Ibérica en la antigüedad. II |location=Madrid |publisher=Consejo Superior de Investigaciones Científicas |series=Manuales y Anejos de Emérita |volume=II |year=2012 |isbn=978-84-00-09259-7 |author-link=Javier de Hoz}}
+*{{Cite journal |last=Hualde |first=José Ignacio |year=2021 |title=On the comparative method, internal reconstruction, and other analytical tools for the reconstruction of the evolution of the Basque language: An assessment |journal=Anuario del Seminario de Filología Vasca "Julio de Urquijo" |volume=54 |issue=1-2 |pages=19–52 |doi=10.1387/asju.23021 |issn=2444-2992|doi-access=free |hdl=10810/59003 |hdl-access=free }}
+* {{Cite book |last=Gorrochategui |first=Joaquín |editor-last=Hualde |editor-first=José Ignacio |title=Towards a History of the Basque Language |editor-last2=Lakarra |editor-first2=Joseba |editor-last3=Trask |editor-first3=Robert Lawrence |year=1995 |publisher=John Benjamins Publishing |isbn=978-90-272-3634-0 |chapter=The Basque language and its neighbors in Antiquity}}
+* {{Cite book |last1=Gorrochategui |first1=Joaquín |last2=Vallejo |first2=José María |year=2019 |chapter=The parts of Hispania without epigraphy |editor1-last=Sinner |editor1-first=Alejandro G. |editor2-last=Velaza |editor2-first=Javier |title=Palaeohispanic Languages and Epigraphies |location=Oxford |publisher=Oxford University Press |pages=335–364 |isbn=978-0-19-879082-2}}
+*{{Cite journal |last=Gorrochategui |first=Joaquín |year=2020 |title=Aquitano y Vascónico |trans-title=Aquitanian and Vasconic |journal=Palaeohispanica |volume=20 |pages=721–748 |language=es |doi=10.36707/palaeohispanica.v0i20.405 |doi-access=free |issn=1578-5386}}
+* {{Cite book |last=Gorrochategui |first=Joaquín |title=Language Change and Linguistic Diversity: Studies in Honour of Lyle Campbell |date=2022 |publisher=Edinburgh University Press |isbn=978-1-4744-8814-3 |editor-last=Chacon |editor-first=Thiago Costa |pages=105–129 |chapter=The Relationship between Aquitanian and Basque: Achievements and Challenges of the Comparative Method in a Context of Poor Documentation |doi=10.1515/9781474488143-010}}
+* {{Cite book |last=Orduña |first=Eduardo |year=2019 |chapter=The Vasco-Iberian theory |editor1-last=Sinner |editor1-first=Alejandro G. |editor2-last=Velaza |editor2-first=Javier |title=Palaeohispanic Languages and Epigraphies |location=Oxford |publisher=Oxford University Press |pages=219–239 |isbn=978-0-19-879082-2}}
+* {{Cite book |last=Ulibarri |first=Koldo |chapter=External History. Sources for historical research |editor-last=Areta |editor-first=Mikel Martínez |title=Basque and Proto-basque: Language-internal and Typological Approaches to Linguistic Reconstruction |year=2013 |publisher=Peter Lang |isbn=978-3-631-62649-8}}
+*{{Cite book |last=Trask |first=R. L. |title=The History of Basque |year=1997 |publisher=Routledge |isbn=978-1-136-16763-8|author-link=R. L. Trask}}
+{{refend}}
+
+{{Aquitani}}
+{{Language families}}
+{{Eurasian languages}}
+
+[[Category:Pre-Indo-European languages]]
+[[Category:Basque language]]
+[[Category:Proposed language families]]

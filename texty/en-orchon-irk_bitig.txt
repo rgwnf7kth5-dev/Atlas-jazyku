@@ -1,0 +1,417 @@
+{{Short description|9th-century manuscript book on divination}}
+{{Tengrianism}}
+{{Manichaeism sidebar}}
+{{italic title}}
+[[File:Irk bitig 06.jpg|thumb|right|300px|First two pages of the ''Irk Bitig'' (folios 5b and 6a).]]
+{{SpecialChars}}
+'''''Irk Bitig''''' or '''''Irq Bitig''''' ({{langx|otk|{{OldTurkicUnicode|𐰃𐰺𐰴 𐰋𐰃𐱅𐰃𐰏}}}}), known as the '''''Book of Omens''''' or '''''Book of Divination''''' in English, is a 9th-century manuscript book on [[divination]] that was discovered in the "Library Cave" of the [[Mogao Caves]] in [[Dunhuang]], [[China]], by [[Aurel Stein]] in 1907, and is now in the collection of the [[British Library]] in [[London]], [[England]]. The book is written in [[Old Turkic language|Old Turkic]] using the [[Old Turkic script]] (also known as "Orkhon" or "Turkic runes"); it is the only known complete manuscript text written in the Old Turkic script.<ref name="tekin-1993-1">{{harvnb|Tekin|1993|p=1}}</ref> It is also an important source for early [[Turkic mythology]].
+
+== British Library manuscript ==
+[[File:Irk bitig page 56.jpg|thumb|left|300px|Last two pages of the main text of ''Irk Bitig'' (folios 55b and 56a), partially overwritten with Buddhist verses in Chinese.]]
+The only extant version of the ''Irk Bitig'' is a manuscript from the Dunhuang Library Cave that is now held at the British Library ([[shelfmark]] {{IDP|Or.8212/161}}).
+
+The manuscript is in the form of a booklet comprising 58 folios folded in half, each page being about 13.1 × 8.1&nbsp;cm in size. The pages of the booklet turn to the right (opposite to that of Western books), and the Old Turkic text is laid out in horizontal [[right-to-left]] lines running top-to-bottom down the page. The text of ''Irk Bitig'' consists of 104 pages in 52 folios (folios 5b–57a), with 40–70 characters per page.<ref name="nadelyaev-1969">{{harvnb|Nadelyaev|Nasilov|Tenishev|Shcherbak|1969}}</ref> The text is written in black ink with red punctuation marks marking word division, except for the colophon on the last two pages, which is written in red ink. The first four and a half folios (including one line overwriting the start of the Old Turkic text) and the last three folios (of which one and a half folios overwrite the Old Turkic colophon) are Buddhist devotional verses written in [[Chinese character|Chinese]]. As the Chinese text overwrites the beginning and end of the Old Turkic text, it is believed that the text of ''Irk Bitig'' was written first, and that the blank pages at the start and end of the booklet were later filled with the Chinese Buddhist verses.<ref name="tekin-1993-1"/>
+
+The title by which the book is known, ''Irk Bitig'', meaning "Book of Omens", is given at the bottom of the last page of the main text (folio 55b), but the author is not mentioned anywhere.<ref name="tekin-1993-1"/>
+
+A number of transcription errors and textual omissions have been identified in the manuscript text, which suggest that it is not an original composition but a copy of an earlier text that was probably written in the [[Old Uyghur alphabet|Old Uyghur script]].<ref name="tekin-1993-6">{{harvnb|Tekin|1993|p=6}}</ref> On the basis of its linguistic features, [[Marcel Erdal]] has dated the composition of the original work to the 8th and 9th centuries, among the earliest group of Old Turkic texts.<ref name="tekin-1993-2"/>
+
+=== Date ===
+The manuscript text is not precisely dated, but its colophon states that it was written on the 15th day of the second month of the [[Tiger (zodiac)|year of the tiger]] at the Taygüntan ({{zh|c=大雲堂|p=Dàyúntáng}}) [[Manichaeism|Manichaean]] monastery by an anonymous monk for his "elder brother", General İtaçuk (Saŋun İtaçuk).<ref name="tekin-1993-1"/> As the Library Cave was sealed in the early 11th century, it is thought that this year of the tiger must be sometime during the 9th or 10th centuries. [[Louis Bazin]] suggests that the year of the tiger could here be 930 or 942, but [[Gerard Clauson]] and [[Talat Tekin]] both date the manuscript to the 9th century (i.e. one of the years 810, 822, 834, 846, 858, 870, 882 or 894).<ref name="tekin-1993-2">{{harvnb|Tekin|1993|p=2}}</ref><ref name="clauson-1962-72">{{harvnb|Clauson|1962|p=72}}</ref>
+
+== Linguistic features ==
+According to [[Annemarie von Gabain]] (1901–1993) the ''Irk Bitig'' is written in a "Manichaean" dialect of Old Turkic, reflecting the fact that it was written at a [[Manichaeism|Manichaean]] monastery, but Clauson has noted that the language of this text is virtually identical to that of the corpus of secular inscriptions in the Old Turkic script from the [[Orkhon Valley]], and so "Manichaean" is not a valid linguistic term.<ref name="clauson-1961-218">{{harvnb|Clauson|1961|p=218}}</ref>
+
+The British Library manuscript exhibits a number of orthographic peculiarities that may reflect the dialect of its scribe. In particular, it uses the [[front vowel]] forms of the letter ''s'' {{OldTurkicUnicode|𐰾|s}} and ''n'' {{OldTurkicUnicode|𐰤|n}} in certain situations where a [[back vowel]] form of the letters would be expected. The manuscript also uses two signs, {{OldTurkicUnicode|𐱇|ot}} (used to write the word ''ot'' meaning "grass") and {{OldTurkicUnicode|𐰰|[u]p}} (used to represent a syllabic ''up'' or the letter ''p'' after the letter ''u''), that are not attested in other manuscript texts or inscriptions.<ref name="tekin-1993-4-5">{{harvnb|Tekin|1993|pp=4–5}}</ref>
+
+The Old Turkic text does not have any sentence [[punctuation]], but uses two black lines in a red circle as a [[Word divider|word separation]] mark in order to indicate word boundaries.
+
+== Contents ==
+[[File:Irk Bitig omen 11.jpg|thumb|200px|right|Omen 11 (4-4-3 dice) of the ''Irk Bitig'' (folio 13a): "There comes a messenger on a yellow horse (and) an envoy on a dark brown horse, bringing good tidings, it says. Know thus: (The omen) is extremely good."<ref>{{harvnb|Tekin|1993|p=11}}</ref>]]
+
+The main text of the book comprises 65 sections, each representing a particular divination, which is headed by three groups of between one and four circles filled with red ink. These three groups of circles are the [[omen]] (''ırk'' in Old Turkic) that are the subject of the divination, and are thought to represent the pips on a four-sided [[dice]] made from a rectangular piece of wood that would be thrown three times (or three such dice thrown once) as part of the divination ceremony.<ref name="clauson-1961-218"/><ref name="tekin-1993-3">{{harvnb|Tekin|1993|p=3}}</ref> The groups of circles are followed by a short explanation of their meaning, such as "I am a white-spotted falcon. I enjoy sitting on a sandal-wood tree" (no.4), "A man comes hurriedly. He comes bringing good tiding" (no.7), and "An old ox was eaten by ants, gnawing around its belly. It lays down without being able to move" (no.37).<ref name="tekin-1993-9">{{harvnb|Tekin|1993|pp=9, 11 and 19 }}</ref> After the explanation is a prognostication in the form "Know thus, it is ..." "good" (33 times), "very good" (7 times), "bad" (17 times) or "very bad" (2 times). In a few cases the prognostication after "know thus" is missing.<ref name="clauson-1961-219">{{harvnb|Clauson|1961|p=219}}</ref>
+
+There are 64 combinations of three groups of one to four pips, but the book gives a total of sixty-five omens, with some errors, including two missing omens (3-1-1 and 1-2-4) and some duplicate omens (3-4-1 occurs three times, and 3-1-3 occurs twice).
+
+The omens comprise short stories about the world in which the nomadic Turkic people lived. Animals feature prominently in most of the omens, sometimes domesticated animals such as horse and camels, and sometimes wild animals such as tigers and deer. When wild animals fight each other or are injured the omen is bad (nos. 6, 8, 37, 43, 44, 45, 46, and 61). Likewise, when domestic animals are mistreated, sick or stolen the omen is bad (nos. 16, 25, 39, 50, and 65). On the other hand, animals giving birth are good omens (nos. 5 and 41). A couple of the omens show a threefold pattern of parallelism between two animals and a human: a white mare, a she-camel and a princess give birth (no. 5); young birds, fawns, and children get lost in the fog (no. 15).<ref name="baldick-2000-48">{{harvnb|Baldick|2000|p=48}}</ref>
+
+The Sky God [[Tengri]] is featured in some of the omens (nos. 12, 15, 17, 38, 41, 47, 54, 60), and he is normally shown to be benign, for instance rescuing lost or exhausted animals (nos. 15 and 17). Also featured is the god of the road, who bestows his favour on travellers (no. 2), and mends old things and brings order to the country (no. 48).<ref name="baldick-2000-48"/>
+
+The title [[Khan (title)|Khan]] also features in several omens, establishing a royal camp (no. 28), coming back from a victorious battle (no. 34), and going hunting (no. 63), which are all good omens. Omen 63 mentions the custom of the khan killing an animal with his own hands after it has been surrounded by his retinue.<ref name="baldick-2000-48"/>
+
+After the final divination, the book concludes, "Now, my dear sons, know thus: this book of divination is good. Thus everyone is master of his own fate."<ref name="tekin-1993-27">{{harvnb|Tekin|1993|p=27}}</ref>
+
+The divination text is written in a mix of prose and poetry, and although it does not have a fixed [[Meter (poetry)|poetic metre]], it does exhibit poetic features such as [[Parallelism (rhetoric)|stylistic parallelism]], [[alliteration]] and [[rhyme]].<ref name="bayat-2006-39-40">{{harvnb|Bayat|2006|pp=39–40}}</ref>
+
+{| class="wikitable sortable" style="width: 100%"
+|-
+! width="10%" | Number
+!! width="10%" | Omen
+!! width="60%" | Summary of the interpretation
+!! width="20%" | Prognostication
+|-
+| 1
+|| 2-2-2
+|| The Son of Heaven sits on a golden throne.
+|| good
+|-
+| 2
+|| 4-4-4
+|| The god of the road riding on a dappled horse bestows his favour on two travellers.
+|| good
+|-
+| 3
+|| 3-3-3
+|| An eagle with golden wings catches and eats whatever it wants.
+|| good
+|-
+| 4
+|| 1-1-1
+|| A white-spotted falcon perches in a sandalwood tree.
+|| none
+|-
+| 5
+|| 2-4-2
+|| A [[Bey|chieftain]] sees a white mare, a white camel and the third princess giving birth.
+|| very good
+|-
+| 6
+|| 1-2-2
+|| A bear and a boar fight together, and are both injured.
+|| bad
+|-
+| 7
+|| 2-1-2
+|| A man arrives with good news.
+|| good
+|-
+| 8
+|| 1-2-3
+|| A golden-headed snake.
+|| bad
+|-
+| 9
+|| 3-2-1
+|| A big house burns down.
+|| bad
+|-
+| 10
+|| 2-4-3
+|| A leopard yawns in the reeds.
+|| none
+|-
+| 11
+|| 4-4-3
+|| Messengers on a yellow horse and a dark brown horse bring good news.
+|| very good
+|-
+| 12
+|| 3-4-3
+|| A hunter falls over.
+|| bad
+|-
+| 13
+|| 3-4-2
+|| An abandoned old woman stays alive by licking a greasy spoon.
+|| none
+|-
+| 14
+|| 2-3-4
+|| A raven is tied to a tree.
+|| none
+|-
+| 15
+|| 1-4-1
+|| Chicks, fawns and children lost in the fog are found safe after three years.
+|| good
+|-
+| 16
+|| 2-1-4
+|| A fat horse is stolen.
+|| bad
+|-
+| 17
+|| 2-3-3
+|| A horse that is lost in the desert finds grass to eat and water to drink.
+|| good
+|-
+| 18
+|| 2-4-1
+|| A tent is in good condition.
+|| very good
+|-
+| 19
+|| 4-1-3
+|| A white horse.
+|| good
+|-
+| 20
+|| 2-2-3
+|| A white male camel.
+|| good
+|-
+| 21
+|| 3-3-1
+|| An old hoopoe sings at the new year.
+|| none
+|-
+| 22
+|| 1-1-2
+|| A woman drops her mirror in a lake.
+|| distressing and very bad
+|-
+| 23
+|| 4-4-2
+|| A boy finds some eagle droppings.
+|| good
+|-
+| 24
+|| 3-1-3
+|| A blind foal tries to suckle at a stallion.
+|| bad
+|-
+| 25
+|| 3-1-3
+|| A yoke of oxen harnessed to a plough cannot move.
+|| bad
+|-
+| 26
+|| 4-2-1
+|| The sun rises and shines on the world.
+|| good
+|-
+| 27
+|| 4-2-2
+|| A sheep encounters a wolf but remains safe.
+|| good
+|-
+| 28
+|| 2-1-1
+|| A [[Khan (title)|khan]] rules a stable country, and has many good men at his court.
+|| good
+|-
+| 29
+|| 4-3-2
+|| A butcher gains ninety sheep.
+|| good
+|-
+| 30
+|| 4-2-3
+|| A poor man's son returns home after earning some money.
+|| good
+|-
+| 31
+|| 1-4-4
+|| A tiger returns to its den after finding some prey.
+|| good
+|-
+| 32
+|| 1-1-3
+|| A single [[Spiraea|meadowsweet]] shrub multiplies to become many thousand plants.
+|| good
+|-
+| 33
+|| 4-2-4
+|| Some felt falls into the water.
+|| bad
+|-
+| 34
+|| 2-4-4
+|| A khan returns victorious from battle.
+|| good
+|-
+| 35
+|| 4-3-4
+|| A man returning from war encounters a swan who leads him home.
+|| good
+|-
+| 36
+|| 4-1-1
+|| A man has no titles and a bad reputation.
+|| very bad
+|-
+| 37
+|| 1-3-4
+|| An old ox is bitten by ants.
+|| bad
+|-
+| 38
+|| 3-1-4
+|| Heaven decrees that a slave girl becomes a queen.
+|| good
+|-
+| 39
+|| 2-2-4
+|| A roan horse is fettered and cannot move.
+|| bad
+|-
+| 40
+|| 4-4-1
+|| A stout-hearted young man shoots an arrow that splits a rock.
+|| good
+|-
+| 41
+|| 3-2-4
+|| A white-spotted cow gives birth to a white-spotted male calf.
+|| good
+|-
+| 42
+|| 4-1-4
+|| A woman who has left her cups and bowls behind returns and finds them where she left them.
+|| good
+|-
+| 43
+|| 3-3-4
+|| A falcon hunting water birds encounters an eagle.
+|| bad
+|-
+| 44
+|| 1-4-2
+|| A hawk pounces on a rabbit, but it injures its claws and the rabbit escapes.
+|| bad
+|-
+| 45
+|| 1-3-2
+|| A fawn is without grass and water.
+|| bad
+|-
+| 46
+|| 1-3-3
+|| A camel is stuck in a marsh, and is eaten by a fox.
+|| bad
+|-
+| 47
+|| 1-1-4
+|| A man encounters a god who wishes him plentiful livestock and long life.
+|| good
+|-
+| 48
+|| 3-4-4
+|| The old god of the road who mends things brings order to the country.
+|| none
+|-
+| 49
+|| 3-4-1
+|| A tiger encounters a wild goat, but the goat escapes down a cliff.
+|| good
+|-
+| 50
+|| 1-4-3
+|| A roan horse and a bay horse are made to run until they are exhausted.
+|| bad
+|-
+| 51
+|| 4-3-3
+|| An eagle summers on a green rock, and winters on a red rock.
+|| none
+|-
+| 52
+|| 3-1-2
+|| When a man is depressed and the sky is cloudy the sun comes out.
+|| good
+|-
+| 53
+|| 2-3-2
+|| It rains and the grass grows.
+|| good
+|-
+| 54
+|| 1-3-1
+|| A slave speaks to his master; a raven speaks to heaven.
+|| good
+|-
+| 55
+|| 4-1-2
+|| A man goes to war, and makes a name for himself.
+|| very good
+|-
+| 56
+|| 2-3-1
+|| A stallion summers beneath the nut trees, and winters beneath the trees where the birds roost.
+|| good
+|-
+| 57
+|| 2-2-1
+|| A girl's lover has died, and the water in her pail has frozen.
+|| painful to start with, and good later
+|-
+| 58
+|| 3-2-2
+|| A son who argued with his parents runs away and later comes back home.
+|| good
+|-
+| 59
+|| 3-2-3
+|| Something to do with not making a "year stink" (?) or a "month go bad" (?).
+|| good
+|-
+| 60
+|| 4-3-1
+|| A stag with nine-pronged antlers bellows.
+|| good
+|-
+| 61
+|| 3-4-1
+|| A crane lands but is caught in a snare.
+|| bad
+|-
+| 62
+|| 2-1-3
+|| A ''yargun'' (?) deer climbs the mountains during the summer.
+|| good
+|-
+| 63
+|| 1-2-1
+|| The khan went hunting and caught a roe buck.
+|| good
+|-
+| 64
+|| 3-4-1
+|| A grey falcon with a white neck sits on a rock, and summers in a poplar tree.
+|| very good
+|-
+| 65
+|| 3-3-2
+|| A fat horse has a hard mouth that will not heal.
+|| bad
+|-
+|}
+
+== See also ==
+* [[Book of Dede Korkut]]
+* [[Dīwān Lughāt al-Turk]]
+* [[Mo (divination)]]
+
+== Notes ==
+{{Reflist|colwidth=20em}}
+
+== References ==
+* {{Cite book | last=Baldick | first=Julian | title=Animal and Shaman: Ancient Religions of Central Asia | place=London | publisher=I.B.Tauris | year=2000 | isbn=978-1-86064-431-3 }}
+* {{Cite journal | language=tr | last=Bayat | first=Fuzuli | title=Irk Bitig Metninin Poetik Yapısı |trans-title=The Poetic Structure of ''Irk Bitig'' | journal=Türkiyat Araştırmaları | year=2006 | issue=4 | pages=39–65 | issn=1305-5992 | url=http://turkoloji.cu.edu.tr/ESKI%20TURK%20DILI/fuzuli_bayat_irk_bitik_metni_poetik_yapi.pdf }}
+* {{Cite journal| last=Clauson | first=Gerard | author-link=Gerard Clauson | title=Notes on the Irk Bitig | journal=Ural-Altaische Jahrbücher | year=1961 | volume=33 | pages=218–225 | issn=0042-0786 }}
+* {{Cite book | last=Clauson | first=Gerard | title=Turkish and Mongolian Studies | place=London | publisher=Luzac | year=1962 | work = Prize Publication Fund, Royal Asiatic Society | volume = 20 | isbn = 978-90-04-04427-2}}
+* {{Cite journal| last=Erdal | first=Marcel | title=Further Notes on the Irk Bitig | journal=Turkic Languages| volume=1| year=1997 | pages=63–100 | url=http://turkoloji.cu.edu.tr/ESKI%20TURK%20DILI/marcel_erdal_further_notes_irk_bitig.pdf }}
+* {{Cite book |first1=V.M. |last1=Nadelyaev |first2=D.M. |last2=Nasilov |first3=Edkhyam| last3 = Tenishev |author3-link =Edkhyam Tenishev |first4=A.M. |last4 = Shcherbak |script-title=ru:Древнетюрксий словарь |trans-title=Dictionary of Old Turkic |place=Leningrad |publisher=Nauka |year=1969 |language=ru}}
+* {{Cite book | last=Tekin | first=Talat | title=Irk bitig (the book of omens) | place=Wiesbaden | publisher=Otto Harrassowitz | year=1993 | isbn=978-3-447-03426-5 | url=http://altaica.ru/LIBRARY/Tekin%20Talat/Tekin_Irk%20Bitig%20-%20The%20Book%20of%20Omens%201993.pdf }}
+
+== External links ==
+{{Commons category|Irk Bitig}}
+{{Wikisourcelang||𐰃𐰺𐰴 𐰋𐰃𐱅𐰃𐰏|𐰃𐰺𐰴 𐰋𐰃𐱅𐰃𐰏}}
+{{Wikisourcelang|tr|Irk Bitig|Irk Bitig}}
+*{{Deprecated archive|url=https://archive.today/20130419141031/http://idp.bl.uk/database/oo_loader.a4d?pm=Or.8212/161|title=Irk Bitig manuscript at the International Dunhuang Project|sec=el}}
+*[http://vatec2.fkidg1.uni-frankfurt.de/vatecasp/Irk_Bitig.htm Transliteration with German glosses and parallel English translation]
+*[http://bitig.org/?mod=1&tid=4&oid=80&lang=e Runic font text with parallel transliteration and translation]
+{{Manichaeism footer}}
+{{Authority control}}
+
+{{DEFAULTSORT:Irk Bitig}}
+[[Category:British Library oriental manuscripts]]
+[[Category:Central Asian manuscripts]]
+[[Category:Objects used for divination]]
+[[Category:Uyghurs]]
+[[Category:Turkic languages]]
+[[Category:Turkic mythology]]
+[[Category:Chinese-language books]]
+[[Category:Manichaean texts]]
+[[Category:9th-century books]]
+[[Category:Chinese artifacts held abroad]]

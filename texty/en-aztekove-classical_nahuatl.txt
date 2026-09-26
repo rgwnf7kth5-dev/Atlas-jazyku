@@ -1,0 +1,297 @@
+{{Short description|Lingua franca spoken in the Valley of Mexico in the 16th century}}
+{{more footnotes needed|date=May 2025}}
+{{use mdy dates|date=May 2025}}
+{{Infobox language
+| name             = Classical Nahuatl
+| nativename       = {{lang|nci|Nāhuatlāhtōlli}}
+| pronunciation    = {{IPA|nah|naːwat͡ɬaʔˈtoːlːi|}}
+| states           = [[Mexico]]
+| region           = [[Aztec Empire]]. Postclassic [[Mesoamerica]]
+| era              = 14th to 16th century, during the [[Mesoamerican chronology|Late Postclassic]] and after [[Spanish conquest of the Aztec Empire|Conquest of Mexico]] in the [[New Spain|Early Colonial Period]]
+| familycolor      = Uto-Aztecan
+| fam1             = [[Uto-Aztecan languages]]
+| fam2             = [[Nahuan languages]]
+| fam3             = [[Nahuatl]]
+| fam4             = [[Central Nahuatl languages]]
+| fam5             = Nuclear Nahuatl
+| iso3             = nci
+| glotto           = clas1250
+| glottorefname    = Classical Nahuatl
+| notice           = IPA
+| Writing system   = 
+| stand1           = Tecpillāhtōlli<br />Colonial Nahuatl
+| script           = [[Aztec script]]<br />[[Latin alphabet]] (Nahuatl alphabet)
+}}
+'''Classical Nahuatl''', also known simply as ''Aztec'' or ''Nahuatl'', is a set of variants of [[Nahuatl]] spoken in the [[Valley of Mexico]] and central Mexico as a ''[[lingua franca]]'' at the time of the 16th-century [[Spanish conquest of the Aztec Empire]]. Indigenous languages, including Classical Nahuatl, remained dominant until the time when [[New Spain]] (Mexico) became independent in 1821.<ref>{{Citation |last=de León |first=Lourdes |chapter=Indigenous Language Policy and Education in Mexico |date=2017 |title=Language Policy and Political Issues in Education |pages=415–433 |chapter-url=https://link.springer.com/rwe/10.1007/978-3-319-02344-1_31 |access-date=2026-04-11 |publisher=Springer, Cham |language=en |doi=10.1007/978-3-319-02344-1_31 |isbn=978-3-319-02344-1|chapter-url-access=subscription }}</ref> However, during the subsequent centuries, it was largely displaced by [[Spanish language|Spanish]] and evolved into some of the modern [[Nahuan languages]] in use (other modern dialects descend more directly from other 16th-century variants). Although classified as an [[extinct language]],<ref>{{Cite web |url=http://www.ethnologue.com/show_language.asp?code=nci |title=Ethnologue summary for Classical Nahuatl |access-date=2006-06-09 |archive-url=https://web.archive.org/web/20130218111931/http://www.ethnologue.com/show_language.asp?code=nci |archive-date=2013-02-18 |url-status=dead }}</ref> Classical Nahuatl has survived through a multitude of written sources transcribed by [[Nahua peoples]] and Spaniards in the Latin script.
+
+Classical Nahuatl may be called ''Codical Nahuatl'' (when referring to the variants employed in the [[Mesoamerican codices]] through the medium of the [[Aztec script]]) or ''Colonial Nahuatl'' (if written in post-conquest documents in the [[Latin script|Latin alphabet]]).
+
+==Classification==
+Classical Nahuatl is one of the [[Nahuan languages]] within the [[Uto-Aztecan languages|Uto-Aztecan family]]. It is classified as a central dialect and is most closely related to the modern dialects of Nahuatl spoken in the valley of Mexico in colonial and modern times. It is probable that the Classical Nahuatl documented by 16th- and 17th-century written sources represents a particularly prestigious [[sociolect]]. That is to say, the variety of Nahuatl recorded in these documents is most likely to be more particularly representative of the speech of Aztec nobles ({{lang|nci|[[pipiltin|pīpiltin]]}}), while the commoners ({{lang|nci|[[Macehualtin|mācēhualtin]]}}) spoke a somewhat different variety.
+
+==Phonology==
+
+===Vowels===
+{| class="wikitable" style="text-align:center;"
+!
+! [[Front vowel|Front]]
+! [[Back vowel|Back]]
+|-
+! [[Close vowel|Close]]
+| {{IPA link|i}}, {{IPA link|iː}}
+|rowspan="2"| {{IPA link|o}}, {{IPA link|oː}}
+|-
+! [[Mid vowel|Mid]]
+| {{IPA link|e}}, {{IPA link|eː}}
+|-
+! [[Open vowel|Open]]
+|colspan="2"| {{IPA link|a}}, {{IPA link|aː}}
+|}
+
+===Consonants===
+{| class="wikitable" style="text-align:center;"
+! rowspan="2"|
+! rowspan="2"|[[Bilabial consonant|Bilabial]]
+! colspan="2"|[[Alveolar consonant|Alveolar]]
+! rowspan="2"|[[Palatal consonant|Palatal]]
+! colspan="2"|[[Velar consonant|Velar]]
+! rowspan="2"|[[Glottal consonant|Glottal]]
+|-
+!<small>[[median consonant|median]]</small>
+!<small>[[lateral consonant|lateral]]</small>
+!<small>plain</small>
+!<small>[[labialization|labial]]</small>
+|-
+! [[Plosive]]
+| {{IPA link|p}}
+| {{IPA link|t}}
+|
+|
+| {{IPA link|k}}
+| {{IPA link|kʷ}}
+| {{IPA link|ʔ}}
+|-
+! [[Affricate]]
+|
+| {{IPA link|ts}}
+| {{IPA link|tɬ}}
+| {{IPA link|tʃ}}
+|
+|
+|
+|-
+! [[Fricative]]
+|
+| {{IPA link|s}}
+|
+| {{IPA link|ʃ}}
+|
+|
+|
+|-
+! [[Sonorant]]
+| {{IPA link|m}}
+|{{IPA link|n}}
+| {{IPA link|l}}
+| {{IPA link|j}}
+|
+| {{IPA link|w}}
+|
+|}
+
+===Accent===
+[[Stress (linguistics)|Stress]] generally falls on the penultimate syllable. The one exception is the [[vocative]] suffix (used by men) {{lang|nci|-é}}, which is added to the end of a word and is always stressed, e.g. {{lang|nci|Cuāuhtli<u>quetz</u>qui}} (a name, meaning "[[eagle warrior|Eagle Warrior]]"), but {{lang|nci|Cuāuhtliquetz<u>qué</u>}} "O Cuauhtliquetzqui!"
+
+When women use the vocative, the stress is shifted to the final syllable without adding any suffix. {{lang|nci|Oquichtli}} means "man", and {{lang|nci|oquichtlí}} means "O man!"
+
+===Phonotactics===
+Maximally complex Nahuatl syllables are of the form CVC;<ref>
+{{Harvnb|Aguilar|2013}}, citing {{Harvnb|Andrews|2003}}, {{Harvnb|Bedell|2011}}, {{Harvnb|Brockway|1963}}, and {{Harvnb|Goller|Goller|Waterhouse|1974}}
+</ref>
+that is, there can be at most one consonant at the beginning and end of every syllable. In contrast, [[English language|English]], for example, allows up to three consonants syllable-initially and up to four  [[consonant]]s to occur at the end of syllables (e.g. ''<u>str</u>e<u>ngths</u>)'' (''ngths'' = {{IPA|/ŋkθs/}}).<ref>
+{{cite book |last1=Aslam |first1=Mohammed |last2=Kak |first2=Aadil Amin |date=2011 |title=Introduction to English Phonetics and Phonology |url= |location= |publisher=Foundation Books |pages=60–68 |isbn=9788175968653 |chapter=4 - English Syllable Structure |doi=10.1017/UPO9788175968653.005}}
+</ref>
+Consonant clusters are only allowed word-medially, Nahuatl uses processes of both epenthesis (usually of {{IPA|/i/}}) and deletion to deal with this constraint.
+
+For such purposes, ''tl'' {{IPA|/tɬ/}}, like all other affricates, is treated as a single sound, and not all consonants can occur in both syllable-initial and syllable-final position.
+
+The sonorants /n/, {{IPA|/l/}} and {{IPA|/w/}} are [[devoiced]] in syllable-final position. Likewise, {{IPA|/j/}} is also devoiced and merged into {{IPA|/ʃ/}} in syllable-final position.{{sfn|Launey|2011|p=8}} The sonorant /m/ is the only one that is not devoiced in final position because it never appears in that position to begin with.{{sfn|Andrews|2003|p=27}}
+
+==Grammar==
+{{main|Classical Nahuatl grammar}}
+
+==Writing system==
+{{main|Nahuatl orthography}}
+At the time of the Spanish conquest, Aztec writing used mostly [[pictogram]]s supplemented with a few [[ideogram]]s. When needed, it also used syllabic equivalences{{citation needed|date=January 2016}}; [[Diego Durán]] recorded how the {{lang|es|tlacuilos}} could render a prayer in [[Latin]] using this system but it was difficult to use. The writing system was adequate for keeping such records as genealogies, astronomical information, and tribute lists, but it could not represent a full vocabulary of spoken language in the way that the [[writing system]]s of the [[Old World]] or the [[Maya civilization]]'s [[Maya script|script]] could.
+
+The Spanish introduced the [[Latin script]], which was then used to record a large body of Aztec prose and poetry, which somewhat diminished the devastating loss caused by the burning of thousands of [[Aztec codices]] by the Spanish authorities.
+
+{| class="wikitable" id="letters_chart"
+|+ Classical Nahuatl Romanisation schemes
+|-
+! rowspan="2" | [[Phoneme]]
+! rowspan="2" | [[International Phonetic Alphabet|IPA]]
+! colspan="7" |Romanisation scheme
+|-
+! Michel Launey<ref>Launey (2011: 4-5)</ref>
+|-
+| /a/
+| {{IPAblink|a}}
+| {{Transliteration|nci|a}}
+|-
+| /e/
+| {{IPAblink|e}}
+| {{Transliteration|nci|e}}
+|-
+| /i/
+| {{IPAblink|i}}
+| {{Transliteration|nci|i}}
+|-
+| /o/
+| {{IPAblink|o}}
+| {{Transliteration|nci|o}}
+|-
+| /aː/
+| {{IPAblink|aː}}
+| {{Transliteration|nci|ā}}
+|-
+| /eː/
+| {{IPAblink|eː}}
+| {{Transliteration|nci|ē}}
+|-
+|/iː/
+| {{IPAblink|iː}}
+| {{Transliteration|nci|ī}}
+|-
+| /oː/
+| {{IPAblink|oː}}
+| {{Transliteration|nci|ō}}
+|-
+| /p/
+| {{IPAblink|p}}
+| {{Transliteration|nci|p}}
+|-
+| /t/
+| {{IPAblink|t}}
+| {{Transliteration|nci|t}}
+|-
+| /k/
+| {{IPAblink|k}}
+| {{Transliteration|nci|qu}} (before i and e)<br>{{Transliteration|nci|c}} (in all other cases)
+|-
+| /ts/
+| {{IPAblink|ts}}
+| {{Transliteration|nci|tz}}
+|-
+| /tʃ/
+| {{IPAblink|tʃ}}
+| {{Transliteration|nci|ch}}
+|-
+| /tɬ/
+| {{IPAblink|tɬ}}
+| {{Transliteration|nci|tl}}
+|-
+| /kʷ/
+| {{IPAblink|kʷ}}
+| {{Transliteration|nci|cu}} (before vowels)<br/>{{Transliteration|nci|uc}} (in all other cases)
+|-
+| /m/
+| {{IPAblink|m}}
+| {{Transliteration|nci|m}}
+|-
+| /n/
+| {{IPAblink|n}}
+| {{Transliteration|nci|n}}
+|-
+| /s/
+| {{IPAblink|s}}
+| {{Transliteration|nci|c}} (before e and i)<br/>{{Transliteration|nci|z}} (in all other cases)
+|-
+| /ʃ/
+| {{IPAblink|ʃ}}
+| {{Transliteration|nci|x}}
+|-
+| /j/
+| {{IPAblink|j}}
+| {{Transliteration|nci|y}}
+|-
+| /w/
+| {{IPAblink|w}}
+| {{Transliteration|nci|hu}} (before vowels)<br/>{{Transliteration|nci|uh}} (in all other cases)
+|-
+| /l/
+| {{IPAblink|l}}
+| {{Transliteration|nci|l}}
+|-
+| /ll/
+| {{IPAblink|lː}}
+| {{Transliteration|nci|ll}}
+|-
+| /ʔ/
+| {{IPAblink|ʔ}}, {{IPAblink|h}}
+| {{Transliteration|nci|◌̀ }} (on the preceding vowel within word)<br/>{{Transliteration|nci|◌̂ }} (on the preceding vowel at the end of a word)
+|}
+
+==Literature==
+[[Mesoamerican literature|Nahuatl literature]] is extensive (probably the most extensive of all Indigenous languages of the Americas), including a relatively large corpus of [[poetry]] (see also [[Nezahualcoyotl (tlatoani)|Nezahualcoyotl]]). The {{lang|nci|[[Huei tlamahuiçoltica]]}} is an early sample of literary Nahuatl.
+
+A [[bilingual]] dictionary with Spanish, {{lang|es|[[Vocabulario manual de las lenguas castellana y mexicana]]}}, was first published in 1611 and is "the most important and most frequently reprinted Spanish work on Nahuatl," according to the [[World Digital Library]].<ref>{{Cite web| title = Manual Vocabulary of the Spanish and Mexican Languages: In Which are Contained the Words, Questions, and Answers Commonly and Usually Found in the Treatment and Communication Between Spaniards and Indians | work = [[World Digital Library]] | access-date = 2013-05-23 | url = http://www.wdl.org/en/item/2836/}} {{dead link|date=May 2025}}</ref>
+
+==See also==
+{{Portal|Mexico|Language}}
+{{InterWiki|code=nah}}
+{{Incubator|nci|language=Classical Nahuatl}}
+* [[Aztec codices]]
+* [[List of extinct languages of North America]]
+* [[Mesoamerican language area]]
+{{Clear}}
+
+==References==
+{{reflist}}
+
+==Sources==
+{{refbegin|indent=yes}}<!--BEGIN biblio format. -->
+* {{cite thesis |last=Aguilar |first=Andrés Ehecatl |date=2013 |title= Phonological description of Huasteca Nahuatl from Chicontepec, Veracruz |publisher=California State University |location=Northridge |hdl=10211.2/3997 |page=25}}
+* {{cite book |last1=Andrews |first1=J. Richard |title=Introduction to classical Nahuatl |date=2003 |publisher=University of Oklahoma Press |location=Norman |isbn=978-0-8061-3452-9 |edition=Rev.}}
+* {{cite book |last=Arenas |first=Pedro de |title=Vocabulario manual de las lenguas castellana y mexicana |orig-year=1611 |location=México |year=1982 |language=es |publisher=UNAM |oclc=9683091 |series=Facsímiles de lingüística y filología nahuas |volume=1 |isbn=9789685802826}}
+* {{cite journal |last1=Bedell |first1=George |date=2011 |title=The Nahuatl Language |url=http://languageinindia.com/nov2011/bedellnawatorugo.pdf |journal=Language in India |volume=11 |access-date=October 5, 2021 |issn=1930-2940}}
+* {{cite journal |last1=Brockway |first1=Earl |title=The Phonemes of North Puebla Nahuatl |journal=Anthropological Linguistics |date=1963 |volume=5 |issue=2 |pages=14–18 |jstor=30022406 |issn=0003-5483}}
+* {{cite book |last=Carochi |first=Horacio |title=Arte de la lengua mexicana: con la declaración de los adverbios della |orig-year=1645 |location=Porrúa, México |year=1983 |language=es |publisher=UNAM |series=Facsímiles de lingüística y filología nahuas |volume=2 |oclc=11443323 |isbn=9789685805865}}
+* {{cite book |url=http://red-coral.net/Hungry.html |last=Curl |first=John |title=Ancient American Poets |location=Tempe, AZ |publisher=Bilingual Press |year=2005 |isbn=9781931010214 |oclc=52813965}}
+* {{cite book |last=Garibay |first=Angel María |title=Historia de la literatura náhuatl |location=México |year=1953 |language=es}}
+* {{cite book |last=Garibay |first=Angel Maria |title=Llave de Náhuatl |location=México |year=1962 |edition=2nd |oclc=460458910 |language=es}}
+* {{cite book |last=Garibay |first=Angel María |title=Poesía náhuatl |volume=1–3 |location=México |year=1964 |language=es}}
+* {{cite journal |last1=Goller |first1=Theodore R. |last2=Goller |first2=Patricia L. |last3=Waterhouse |first3=Viola G. |date=1974 |title= The Phonemes of Orizaba Nahuatl |journal=International Journal of American Linguistics |volume=40 |issue=2 |pages=126–131 |doi= 10.1086/465295|s2cid=142992381}}
+* {{cite book |last=Humboldt |first=Wilhelm von |author-link=Wilhelm von Humboldt |title=Mexicanische Grammatik |publisher=Paderborn/München |year=1994 |language=de}}
+* {{cite book |last=Karttunen |first=Frances |title=An analytical dictionary of Nahuatl |location=Norman |year=1992 |isbn=9780806124216 |publisher=University of Oklahoma Press |oclc=24846061}}
+* {{cite book |last1=Karttunen |first1=Frances |last2=Lockhart |first2=James |title=Nahuatl in the Middle Years: Language Contact Phenomena in Texts of the Colonial Period |location=Berkeley |publisher=University of California Press |year=1976 |isbn=9780520095618 |series=University of California publications in linguistics |volume=85 |oclc=2905788}}
+* {{cite book |last=Launey |first=Michel |title=Introduction à la langue et à la littérature aztèques |language=fr |location=Paris |year=1980 |volume=1-2 |oclc=6054103 |publisher=L'Harmattan}}
+* {{cite book |last=Launey |first=Michel |title=Introducción a la lengua y a la literatura Náhuatl |language=es |publisher=UNAM |location=México |year=1992 |oclc=29376295 |isbn=9789683619440}}
+* {{cite book |last1=Launey |first1=Michel |title=An introduction to classical Nahuatl |date=2011 |publisher=Cambridge University Press |location=Cambridge |isbn=9780521518406}}
+* {{cite book |last=León-Portilla |first=Ascensión H. de |title=Tepuztlahcuilolli, Impresos en Nahuatl: Historia y Bibliografia |volume=1–2 |location=México |year=1988 |publisher=UNAM |oclc=21031029 |language=es}}
+* {{cite book |last=León-Portilla |first=Miguel |title=Literaturas Indígenas de México |language=es |location=Madrid |year=1992}}
+* {{cite book |editor-last=Lockhart |editor-first=James |title=We people here. Nahuatl Accounts of the conquest of Mexico |location=Los Angeles |year=1993}}
+* {{cite book |last=Molina |first=Fray Alonso de |language=es |title=Vocabulario en Lengua Castellana y Mexicana y Mexicana y Castellana |orig-year=1555 |publisher=[[Librería Porrúa]] |location=México |year=1992}}
+* {{cite book |last=Olmos |first=Fray Andrés de |title=Arte de la lengua mexicana concluído en el convento de San Andrés de Ueytlalpan, en la provincia de Totonacapan que es en la Nueva España |orig-year=1547 |location=México |year=1993 |language=es}}
+* {{cite book |last=Rincón |first=Antonio del |title=Arte mexicana compuesta por el padre Antonio del Rincón |language=es |orig-year=1595 |location=México |year=1885}}
+* Sahagún, Fray Bernardino de (1499–1590): ''Florentine Codex. General History of the Things of New Spain'' (Historia General de las Cosas de la Nueva España). Eds Charles Dibble/Arthr Anderson, vol I-XII Santa Fe 1950–71
+* {{cite book |last=Siméon |first=Rémi |title=Dictionnaire de la Langue Nahuatl ou Mexicaine |orig-year=1885, Paris |year=1963 |location=Graz |language=fr}}
+* {{cite book |last=Siméon |first=Rémi |title=Diccionario de la Lengua Nahuatl o Mexicana |orig-year=1885, Paris |year=2001 |location= México |language=es}}
+* {{cite book |last=Sullivan |first=Thelma D. |title=Thelma D. Sullivan's Compendium of Nahuatl Grammar |location=Salt Lake City |publisher=University of Utah Press |year=1988}}
+* The Nahua Newsletter: edited by the Center for Latin American and Caribbean Studies of the Indiana University (Chief Editor Alan Sandstrom)
+* Estudios de Cultura Nahuatl: ''special interest-yearbook of the Instituto de Investigaciones Historicas (IIH) of the Universidad Autonoma de México (UNAM)'', Ed.: Miguel Leon Portilla
+{{refend}}<!-- END biblio format style -->
+
+== External links ==
+{{commons category-inline|Classical Nahuatl language}}
+* {{Cite web
+| title = Vocabulario manual de las lenguas castellana, y mexicana. : En que se contienen las palabras, preguntas, y respuestas mas co[m]munes, y ordinarias que se suelen offrecer en el trato, y communicacion entre Españoles, é Indios
+| work = [[World Digital Library]]
+| access-date = 2013-05-23
+| url = http://www.wdl.org/en/item/2836/
+}}
+
+{{Uto-Aztecan languages}}
+{{Authority control}}
+
+[[Category:Classical Nahuatl| ]]

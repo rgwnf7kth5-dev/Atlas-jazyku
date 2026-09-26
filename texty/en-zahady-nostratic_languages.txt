@@ -1,0 +1,258 @@
+{{multiple issues|
+{{Fringe theories|date=June 2023}}
+{{Cleanup rewrite|it currently reads like it's making a case for Nostratic instead of presenting the understanding of what it is and its current standing in historical linguistics|article|date=June 2023}}}}
+
+{{Short description|Proposed superfamily of Eurasian and African languages}}
+{{Infobox language family
+| name          = Nostratic
+| acceptance    = widely rejected<ref>{{cite book |last1=Campbell |first1=Lyle |title=Historical Linguistics: An Introduction |date=1998 |publisher=The MIT Press |isbn=978-0262518499 |page=311}}</ref>
+| region        = [[Europe]], [[Asia]] except for the [[classification schemes for Southeast Asian languages|southeast]], [[North Africa|North]] and [[Horn of Africa|Northeast Africa]], the [[Arctic]]
+| familycolor   = superfamily
+| family        = Hypothetical macrofamily
+| child1        = [[Indo-European languages|Indo-European]]
+| child2        = [[Uralic languages|Uralic]]
+| child3        = [[Altaic languages|Altaic]] ([[Turkic languages|Turkic]], [[Mongolic languages|Mongolic]] and [[Tungusic languages|Tungusic]])
+| child4        = [[Kartvelian languages|Kartvelian]]
+| child5        = [[Afroasiatic languages|Afroasiatic]] (not always considered)
+| child6        = [[Koreanic languages|Koreanic]]
+| child7        = [[Japonic languages|Japonic]]
+| child8        = [[Dravidian languages|Dravidian]]
+| child9        = [[Elamite language|Elamite]] (sometimes included) {{extinct}}
+| child10       = [[Sumerian language|Sumerian]] (sometimes included) {{extinct}}
+| child11       = [[Nivkh languages|Nivkh]] (sometimes included)
+| child12       = [[Yukaghir languages|Yukaghir]] (not always considered)
+| child13       = [[Chukotko-Kamchatkan languages|Chukotko-Kamchatkan]] (not always considered)
+| child14       = [[Eskaleut languages|Eskaleut]] (not always considered)
+| glotto        = none
+| map           = 
+| mapcaption    = 
+| ancestor      = 
+| glottoname    = 
+| glottorefname = 
+| notes         = † indicates a dead language
+}}
+[[File:Nostratic tree.svg|thumb|330px|A phylogenetic representation of Nostratic proposed by [[Allan R. Bomhard|Allan Bomhard]] in 2008]]
+'''Nostratic''' is a hypothetical language [[macrofamily]] including many of the [[language families]] of northern Eurasia, first proposed in 1903. Though the Nostratic hypothesis once had a measure of support among mainstream linguists, it is now generally considered a [[fringe theory]] with very low support. The exact composition of languages families included in Nostrastic varies based on proponent; it typically includes the [[Kartvelian languages|Kartvelian]], [[Indo-European languages|Indo-European]], and the controversial [[Ural-Altaic languages|Ural-Altaic]] family, as well as the [[Afroasiatic languages]] and the hypothetical [[Elamo-Dravidian languages]].
+
+The Nostratic hypothesis originated with [[Holger Pedersen (linguist)|Holger Pedersen]] in the early 20th century. The name "Nostratic" was put forth by Pedersen (1903) and is derived from the Latin ''[[:wikt:nostras|nostrates]]'' "fellow countrymen." The hypothesis was significantly expanded in the 1960s by Soviet linguists, notably [[Vladislav Illich-Svitych]] and [[Aharon Dolgopolsky]].
+
+The hypothesis has fallen out of favour since the latter half of the 20th century and has limited degrees of acceptance, predominantly among a minority of Russian linguists. Linguists worldwide mostly reject many macrofamily hypotheses, including the Nostratic, with the exception of [[Dené–Yeniseian languages]], which has been met with some degree of acceptance.<ref>{{Cite book |last=Campbell |first=Lyle |title=Historical linguistics : an introduction |date=2013 |isbn=978-0-7486-7559-3 |edition=Third |location=Edinburgh |pages=346 |oclc=828792941}}</ref> In [[Russia]], the Nostratic hypothesis is endorsed by a minority of linguists, such as [[Vladimir Dybo]], but is not a generally accepted hypothesis.{{Citation needed|date=December 2020}} Some linguists take an agnostic view.<ref>For instance [[Philip Baldi]]: "No particular side on the issue is taken in this book" (Baldi 2002:18).</ref><ref>{{Cite book|last1=Salmons|first1=Joseph C.|title=Nostratic: Sifting the Evidence|last2=Joseph|first2=Brian D.|date=1998|publisher=John Benjamins Publishing|isbn=978-90-272-3646-3|language=en|quote=On the other hand, Comrie baldly states, in answer to his own question of the relatedness of Altaic, Uralic and Indo-European pronominal systems, 'I do not know'. Other agnostics represented in this volume, such as Ringe, Vine, Campbell, and even Hamp, demonstrate that the hypothesis is being taken seriously indeed by skeptics specializing in Indo-European and Uralic, at least. While these scholars seek to test the hypothesis, Nostratic has been around long enough and has been discussed widely enough that some regard the genetic affiliations as established.}}</ref><ref>{{Cite web|last1=Manaster Ramer|first1=Alexis|last2=Michalove|first2=Peter A.|title=Nostratic hypothesis {{!}} proposed language family|url=https://www.britannica.com/topic/Nostratic-hypothesis|website=Encyclopedia Britannica|language=en|quote=The Nostratic theory is among the most promising of the many currently controversial theories of linguistic classification. It remains the best-argued of all the solutions hitherto presented for the affiliations of the languages of northern Eurasia, a problem that goes back to the German Franz Bopp and the Dane Rasmus Rask, two of the founders of Indo-European studies.}}</ref><ref>{{Cite book|last1=Kallio|first1=Petri|title=Handbook of Comparative and Historical Indo-European Linguistics|last2=Koivulehto|first2=Jorma|date=2017|publisher=Walter de Gruyter|isbn=978-3-11-054243-1|editor-last=Klein|editor-first=Jared|volume=3|pages=2280–2291|language=en|chapter=Beyond Proto-Indo-European|quote=In general, Nostratic studies have failed to meet the same methodological standards as Indo-European studies, but then again so have most non-Indo-European studies.|editor-last2=Joseph|editor-first2=Brian|editor-last3=Fritz|editor-first3=Matthias}}</ref> [[Eurasiatic languages|Eurasiatic]], a similar grouping, was proposed by [[Joseph Greenberg]] (2000) and endorsed by [[Merritt Ruhlen]].
+
+==History of research==
+
+===Origin of the Nostratic hypothesis===
+The last quarter of the 19th century saw various linguists putting forward proposals linking the [[Indo-European languages]] to other language families, such as [[Finno-Ugric languages|Finno-Ugric]] and [[Altaic languages|Altaic]].<ref>[[Henry Sweet|Sweet]] 1900: vii, 112–132.</ref>
+
+These proposals were taken much further in 1903 when [[Holger Pedersen (linguist)|Holger Pedersen]] proposed "Nostratic" as a common ancestor for the [[Indo-European languages|Indo-European]], [[Finno-Ugric languages|Finno-Ugric]], [[Samoyedic languages|Samoyed]], [[Turkish language|Turkish]], [[Mongolian language|Mongolian]], [[Manchu language|Manchu]], [[Yukaghir languages|Yukaghir]], [[Eskimo–Aleut languages|Eskimo]], [[Semitic languages|Semitic]], and [[Afroasiatic languages|Hamitic]] languages, with the door left open to the eventual inclusion of others.
+
+The name ''Nostratic'' derives from the [[Latin]] word {{Lang|la|nostrās}}, with plural {{Lang|la|nostrātēs}}, meaning "our fellow-countryman," and has been defined, since Pedersen, as consisting of those language families that are related to Indo-European.<ref>Pedersen as cited by Ruhlen, 1991: 384.</ref> [[Merritt Ruhlen]] notes that this definition is not properly taxonomic but amorphous, since there are broader and narrower degrees of relatedness, and moreover, some linguists who broadly accept the concept (such as Greenberg and Ruhlen himself) have criticised the name as reflecting the [[ethnocentrism]] frequent among Europeans at the time.<ref>Ruhlen 1991: 384-5.</ref> [[Martin Bernal]] has described the term as distasteful because it implies that speakers of other language families are excluded from academic discussion.<ref>{{cite book|last=Bernal|author-link=Martin Bernal|title=[[Black Athena]]|chapter=Nostratic and Euroasiatic|chapter-url=https://books.google.com/books?id=yFLm_M_OdK4C|year=1987|publisher=Rutgers University Press|isbn= 0-8135-3655-3}}</ref> However, some people like Pedersen's older contemporary [[Henry Sweet]] attributed some of the resistance by Indo-European specialists to hypotheses of wider genetic relationships as "prejudice against dethroning [Indo-European] from its proud isolation and affiliating it to the languages of yellow races."<ref>Sweet (1900), ''The History of Language'', cit in Ruhlen 1991: 381-2.</ref> Proposed alternative names such as ''Mitian'', formed from [[M–T and N–M pronoun patterns|the characteristic Nostratic first- and second-person pronouns]] ''mi'' "I" and ''ti'' "you" (more accurately "[[thee]]"'),<ref>Ruhlen 1991:259.</ref> have not attained the same currency.
+
+An early supporter was the French linguist [[Albert Cuny]]—better known for his role in the development of the [[laryngeal theory]]<ref>Szemerényi 1996:124.</ref>—who published his ''Recherches sur le vocalisme, le consonantisme et la formation des racines en « nostratique », ancêtre de l'indo-européen et du chamito-sémitique'' (''Researches on the Vocalism, Consonantism, and Formation of Roots in "Nostratic," Ancestor of Indo-European and Hamito-Semitic'') in 1943. Although Cuny enjoyed a high reputation as a linguist, the work was coldly received.
+
+===Moscow School of Comparative Linguistics===
+{{main|Moscow School of Comparative Linguistics}}
+[[File:NostraticLanguageTree.png|thumb|273x273px|More detailed tree of the Nostratic languages]]
+While Pedersen's Nostratic hypothesis did not make much headway in the West, it became quite popular in the [[Soviet Union]]. Working independently at first, [[Vladislav Illich-Svitych]] and [[Aharon Dolgopolsky]] elaborated the first version of the contemporary form of the hypothesis during the 1960s. They expanded it to include additional language families. Illich-Svitych also prepared the first dictionary of the hypothetical language. Dolgopolsky's most recent ''Nostratic Dictionary'', published in 2008, is considered the most up-to-date attempt at a Nostratic lexicon.<ref>{{Cite book|url=https://www.repository.cam.ac.uk/handle/1810/196512|title=Nostratic Dictionary|first=Aharon|last=Dolgopolsky|date=May 7, 2008|isbn=9781902937441|via=www.repository.cam.ac.uk}}</ref>
+
+A principal source for the items in Illich-Svitych's dictionary was the earlier work of [[Alfredo Trombetti]] (1866–1929), an Italian linguist who had developed a classification scheme for all the world's languages, widely reviled at the time<ref>Cf. Trombetti’s defense against his critics in ''Come si fa la critica di un libro'' (1907).</ref> and subsequently ignored by almost all linguists. In Trombetti's time, a widely held view on classifying languages was that similarity in inflections is the surest proof of [[Genetic relationship (linguistics)|genetic relationship]]. In the interim, the view had taken hold that the [[comparative method]]—previously used as a means of studying languages already known to be related and without any thought of classification<ref>Cf. Greenberg 2005:159. See also Saussure's remarks on Franz Bopp, the founder of comparative linguistics, after Saussure has described the discovery of Indo-European by Cœurdoux and William Jones: "Bopp's originality is great. His merit is not to have discovered the kinship of Sanskrit with other European languages, but to have conceived that there was a subject for study in the precise relations of one related language to another related language." (From course notes by R. Engler, quoted by Tullio De Mauro in his critical edition of Ferdinand de Saussure, ''Cours de linguistique générale'', Paris: Payot, 1972, p. 412; cp. ''Cours'' p. 14.)</ref>—is the most effective means to establish genetic relationship, eventually hardening into the conviction that it is the only legitimate means to do so. This view was basic to the outlook of the new Nostraticists. Although Illich-Svitych adopted many of Trombetti's etymologies, he sought to validate them by a systematic comparison of the sound systems of the languages concerned.
+
+==Constituent language families==
+The language families proposed for inclusion in Nostratic vary, but all Nostraticists agree on a common core of language families, with differences of opinion over the inclusion of additional families.
+
+The three groups universally accepted among Nostraticists are Indo-European, [[Uralic languages|Uralic]], and [[Altaic languages|Altaic]]. While the validity of Altaic itself is generally rejected by linguists, it is taken for granted by Nostraticists. Nearly all proponents also include the [[South Caucasian languages|Kartvelian]] and [[Dravidian language]] families.<ref>{{cite book|url=https://books.google.com/books?id=iNUSDAAAQBAJ&pg=PA84|first1=J.P.|publisher=Oxford University Press|last1=Mallory|first2=D.Q.|last2=Adams|isbn=0199296685 |title=The Oxford Introduction to Proto-Indo-European & the Proto-Indo-European World (Oxford Linguistics)|date=2006|page=84|access-date=2019-07-23}}</ref>
+
+Following Pedersen, Illich-Svitych, and Dolgopolsky, most advocates of the theory have included [[Afroasiatic languages|Afroasiatic]], though criticisms by [[Joseph Greenberg]] and others from the late 1980s onward suggested a reassessment of this position.
+
+The [[Sumerian language|Sumerian]] and [[Etruscan language|Etruscan]] languages, regarded as [[language isolate]]s by mainstream linguists, are thought by some{{Who|date=November 2023}} Nostraticists to be Nostratic languages as well. Others, however, consider one or both to be members of another macrofamily called [[Dené–Caucasian languages|Dené–Caucasian]]. Another notional isolate, the [[Elamite language]], also figures in a number of Nostratic classifications.
+
+In 1987 Joseph Greenberg proposed a similar macrofamily which he called [[Eurasiatic languages|Eurasiatic]].<ref>Greenberg, J., "The Indo-European First and Second Person Pronouns in the Perspective of Eurasiatic, Especially Chukotkan", ''Anthropological Linguistics Vol. 39'', No. 2 (Summer, 1997), p. 187.</ref> It included the same "Euraltaic" core (Indo-European, Uralic, and Altaic), but excluded some of the above-listed families, most notably Afroasiatic. At about this time Russian Nostraticists, notably [[Sergei Starostin]], constructed a revised version of Nostratic which was slightly broader than Greenberg's grouping but which similarly omitted Afroasiatic.
+
+Beginning in the early 2000s, a consensus emerged among proponents of the Nostratic hypothesis. Greenberg basically agreed with the Nostratic concept, though he stressed a deep internal division between its northern "tier" (his Eurasiatic) and a southern "tier'"(principally Afroasiatic and Dravidian). [[Georgiy Starostin]] (2002) arrives at a tripartite overall grouping: he considers Afroasiatic, Nostratic, and Elamite to be roughly equidistant and more closely related to each other than to anything else.<ref>[http://starling.rinet.ru/Texts/elam.pdf Elamite]. ''Starling''.</ref> Sergei Starostin's school has now re-included Afroasiatic in a broadly defined Nostratic, while reserving the term Eurasiatic to designate the narrower subgrouping which comprises the rest of the macrofamily. Recent proposals thus differ mainly on the precise placement of Kartvelian and Dravidian.
+
+According to Greenberg, Eurasiatic and [[Amerind languages|Amerind]] form a genetic node, being more closely related to each other than either is to "the other families of the Old World."<ref>Greenberg 2002:2.</ref> There are a number of hypotheses incorporating Nostratic into an even broader linguistic "mega-phylum," sometimes called [[Borean languages|Borean]], which would also include at least the Dené–Caucasian and perhaps also the Amerind and [[Austric languages|Austric]] superfamilies. The term SCAN has been used for a group that would include Sino-Caucasian, Amerind, and Nostratic.<ref>Pinker, Steven. ''The Language Instinct: How the Mind Creates Language''. William Morrow and Company: New York, 1994. p. 256</ref> None of these proposed links have found wider acceptance outside of Nostraticists.
+
+The following table summarizes the constituent language families of Nostratic, as described by [[Holger Pedersen (linguist)|Holger Pedersen]], [[Vladislav Illich-Svitych]], [[Sergei Starostin]], and [[Aharon Dolgopolsky]].
+
+{| class="wikitable"
+
+! Linguist
+! Indo-European
+! Afroasiatic
+! Uralic
+! Altaic
+! Dravidian
+! Kartvelian
+! Eskaleut
+! Yukaghir
+! Sumerian
+! Chukchi-Kamchatkan
+! [[Nivkh languages|Gilyak]]
+! Etruscan
+|-
+
+| Pedersen<ref>{{Cite book |title=Nostratic : sifting the evidence |date=1998 |publisher=J. Benjamins |others=Joe Salmons, Brian D. Joseph, Workshop on Comparative Linguistics |isbn=978-90-272-7571-4 |location=Amsterdam |pages=53 |oclc=769188796}}</ref>
+| {{ya}}
+| {{ya}}{{efn|Represented by "Semitic"}}
+| {{ya}}{{efn|Pedersen did not group Finno-Ugric and Samoyedic into a single Uralic language family}}
+| {{ya}}
+| {{na}}
+| {{na}}
+| {{ya}}
+| {{ya}}
+| {{na}}
+| {{na}}
+| {{na}}
+| {{na}}
+|-
+
+| Illich-Svitych<ref>{{Cite book |title=Nostratic : sifting the evidence |date=1998 |publisher=J. Benjamins |others=Joe Salmons, Brian D. Joseph, Workshop on Comparative Linguistics |isbn=978-90-272-7571-4 |location=Amsterdam |pages=25 |oclc=769188796}}</ref>
+| {{ya}}
+| {{ya}}
+| {{ya}}
+| {{ya}}
+| {{ya}}
+| {{ya}}
+| {{na}}
+| {{na}}
+| {{na}}
+| {{na}}
+| {{na}}
+| {{na}}
+|-
+
+| Starostin<ref>{{Cite book |first=Vitaly |last=Shevoroshkin|title=Explorations in language macrofamilies : Materials from the first International Interdisciplinary Symposium on Language and Prehistory, Ann Arbor 8-12 November 1988 |date=1989 |publisher=Studienverlag Brockmeyer |isbn=3-88339-751-2 |pages=44 |oclc=475815004}}</ref>
+| {{ya}}
+| {{na}}
+| {{ya}}
+| {{ya}}
+| {{ya}}
+| {{ya}}
+| {{ya}}
+| {{na}}
+| {{na}}
+| {{na}}
+| {{na}}
+| {{na}}
+|-
+
+| Dolgopolsky<ref>{{Cite book |last=Dolgopolsky|first=A. B. |title=The Nostratic macrofamily and linguistic palaeontology |date=1998 |publisher=McDonald Institute for Archaeological Research |others=Colin Renfrew, McDonald Institute for Archaeological Research |isbn=0-9519420-7-7 |location=Cambridge |oclc=40689120}}</ref>
+| {{ya}}
+| {{ya}}
+| {{ya}}
+| {{ya}}
+| {{ya}}
+| {{ya}}
+| {{ya}}
+| {{ya}}
+| {{na}}
+| {{ya}}
+| {{ya}}
+| {{ya}}
+|-
+
+| colspan=13| {{notelist}}
+
+|}
+
+==Proposed features of Proto-Nostratic==
+
+According to [[Aharon Dolgopolsky|Dolgopolsky]], the Proto-Nostratic language had [[Isolating language|analytic structure]], which he argues by diverging of post- and prepositions of auxiliary words in descendant languages. Dolgopolsky posits three lexical categories in the Proto-Nostratic language:
+* Lexical words
+* [[Pronoun]]s
+* Auxiliary words
+Word order was [[subject–object–verb]] when the [[Subject (grammar)|subject]] was a noun, and [[object–verb–subject]] when it was a [[pronoun]]. An attributive lexical word preceded its head; a pronominal attributive ("my," "this") might follow the noun. Auxiliary words are considered to be [[postposition]]s.
+
+==Status within comparative linguistics==
+
+The Nostratic hypothesis is not endorsed by the mainstream of [[comparative linguistics]].
+
+Nostraticists tend to refuse to include in their schema language families for which no proto-language has yet been reconstructed. This approach was criticized by [[Joseph Greenberg]] on the ground that genetic classification is necessarily prior to linguistic reconstruction,<ref>Greenberg 2005:337.</ref> but this criticism has so far had no effect on Nostraticist theory and practice.
+
+Certain critiques have pointed out that the data from individual established language families that is cited in Nostratic comparisons often involves a high degree of errors; Campbell (1998), for example, demonstrates this for [[Uralic languages|Uralic]] data. Defenders of the Nostratic theory argue that were this to be true, it would remain that in classifying languages genetically, positives count for vastly more than negatives (Ruhlen 1994). The reason for this is that, above a certain threshold, resemblances in sound/meaning correspondences are highly improbable mathematically.
+
+Pedersen's original Nostratic proposal synthesized earlier macrofamilies, some of which, including [[Indo-Uralic languages|Indo-Uralic]], involved extensive comparison of inflections.<ref>Cf. Sweet 1900:115–120.</ref> It is true that the Russian Nostraticists initially emphasized lexical comparisons. Critics argue that were one to collect all the words from the various known Indo-European languages and dialects which have at least one of any four meanings, one could easily form a list that would cover any conceivable combination of two consonants and a vowel (of which there are only about 20×20×5&nbsp;=&nbsp;2000). Nostraticists respond that they do not compare isolated lexical items but reconstructed proto-languages. To include a word for a proto-language it must be found in a number of languages and the forms must be relatable by regular sound changes. In addition, many languages have restrictions on [[Proto-Indo-European root|root structure]], reducing the number of possible root-forms far below its mathematical maximum. These languages include, among others, Indo-European, Uralic, and Altaic—all the core languages of the Nostratic hypothesis. For a highly critical assessment of the work of the [[Moscow School of Comparative Linguistics|Moscow School]], especially the work of Illich-Svitych, see Campbell and Poser 2008:243-264. Campbell and Poser argue that Nostratic, as reconstructed by Illich-Svitych and others, is "typologically flawed." For instance, they point out that, surprisingly, very few Nostratic roots contain two voiceless stops, which are less marked and should therefore occur more frequently, and where such roots do occur, in almost all cases the second stop occurs after a sonorant.<ref>{{Cite book |last=Campbell |first=Lyle |title=Language classification : history and method |date=2008 |publisher=Cambridge University Press |others=William John Poser |isbn=978-0-511-41450-3 |location=Cambridge, UK |pages=250 |oclc=263493207}}</ref> In summary, Campbell and Poser reject the Nostratic hypothesis and, as a parting shot, state that they "seriously doubt that further research will result in any significant support for this hypothesized macro-family."{{sfn|Campbell|2008|p=264}}
+
+Proto-Indo-European {{Lang|ine-x-proto|*b[h]ars-}} seems to be a cultural loanword from Semitic (though several reputable Indo-Europeanists dispute this and consider it to be a native IE word). Much of the IE agricultural lexicon is not shared among all branches and seems to have been borrowed, thus supporting the view that the expansion of IE languages was post-Neolithic rather than Neolithic as postulated by Renfrew's theory.
+
+==See also==
+{{div col|colwidth=23em}}
+*[[Borean languages]]
+*[[Classification of Japanese]]
+*[[Indo-Semitic languages]]
+*[[Indo-Uralic languages]]
+*[[Proto-Human language]]
+*[[Proto-Uralic language]]
+*[[Ural-Altaic languages]]
+*[[Uralic-Yukaghir languages]]
+*[[Uralo-Siberian languages]]
+{{div col end}}
+
+== Notes ==
+{{NoteFoot}}
+
+== References ==
+{{Reflist}}
+
+==Bibliography==
+*[[Philip Baldi|Baldi, Philip]] (2002). ''The Foundations of Latin''. Berlin: Mouton de Gruyter.
+*Bengtson, John D. (1998). "The 'Far East' of Nostratic". [http://www.people.fas.harvard.edu/~witzel/MT-31.htm ''Mother Tongue Newsletter'' '''31''']:35–38 (image files)
+*Campbell, Lyle (1998). "Nostratic: a personal assessment". In Joseph C. Salmons and Brian D. Joseph (eds.), ''Nostratic: Sifting the Evidence.'' Current Issues in Linguistic Theory 142. John Benjamins.
+*Campbell, Lyle, and William J. Poser (2008). ''Language Classification: History and Method''. Cambridge: Cambridge University Press.
+*Campbell, Lyle (2004). ''Historical Linguistics: An Introduction'' (2nd ed.). Cambridge: The MIT Press.
+*Cuny, Albert (1924). ''Etudes prégrammaticales sur le domaine des langues indo-européennes et chamito-sémitiques.'' Paris: Champion.
+*Cuny, Albert (1943). ''Recherches sur le vocalisme, le consonantisme et la formation des racines en « nostratique », ancêtre de l'indo-européen et du chamito-sémitique.'' Paris: Adrien Maisonneuve.
+*Cuny, Albert (1946). ''Invitation à l'étude comparative des langues indo-européennes et des langues chamito-sémitiques.'' Bordeaux: Brière.
+*Dolgopolsky, Aharon (1998). ''The Nostratic Macrofamily and Linguistic Paleontology.'' McDonald Institute for Archaeological Research. {{ISBN|978-0-9519420-7-9}}
+*Dolgopolsky, Aharon (2008). ''Nostratic Dictionary''. McDonald Institute for Archaeological Research. [http://www.dspace.cam.ac.uk/handle/1810/196512] {{Webarchive|url=https://web.archive.org/web/20081215104636/http://www.dspace.cam.ac.uk/handle/1810/196512 |date=2008-12-15 }}
+*Dybo, Vladimir (2004). "On Illič-Svityč's study ‘Basic Features of the Proto-Language of the Nostratic Language Family'." In ''Nostratic Centennial Conference: The Pécs Papers'', edited by Irén Hegedűs and Paul Sidwell, 115-119. Pécs: Lingua Franca Group.
+*Flannery, Kent V. (1969). In: P. J. Ucko and G. W. Dimbleby (eds.), ''The Domestication and Exploitation of Plants and Animals'' 73-100. Aldine, Chicago, IL.
+*Gamkrelidze, Thomas V., and Vjačeslav V. Ivanov (1995). ''Indo-European and the Indo-Europeans'', translated by [[Johanna Nichols]], 2 volumes. Berlin and New York: Mouton de Gruyter. {{ISBN|3-11-014728-9}}
+*Greenberg, Joseph (2000, 2002). ''Indo-European and its Closest Relatives. The Eurasiatic Language Family''. (Stanford University), v.1 Grammar, v.2 Lexicon.
+*Greenberg, Joseph (2005). ''Genetic Linguistics: Essays on Theory and Method'', edited by William Croft. Oxford: Oxford University Press.
+*[[Vladislav Illich-Svitych|Illich-Svitych, V. M.]] В. М. Иллич-Свитыч (1971-1984). Опыт сравнения ностратических языков (семитохамитский, картвельский, индоевропейский, уральский, дравидийский, алтайский). Введение. Сравнительный словарь. 3 vols. Moscow: Наука.
+*{{Cite journal | doi = 10.1146/annurev.an.17.100188.001521 | last1 = Kaiser | first1 = M. | last2 = Shevoroshkin | first2 = V. | year = 1988 | title = Nostratic | journal = Annu. Rev. Anthropol. | volume = 17 | pages = 309–329 }}
+*Kaiser, M. (1989). [http://www.nostratic.ru/books/(64)kaiser-npie%20phonology1.pdf "Remarks on Historical Phonology: From Nostratic to Indo-European"] {{Webarchive|url=https://web.archive.org/web/20120305113109/http://www.nostratic.ru/books/(64)kaiser-npie%20phonology1.pdf |date=2012-03-05 }}. ''Reconstructing Languages and Cultures'' BPX 20:51-56.
+*Manaster Ramer, Alexis (?). [http://www.nostratic.ru/books/(40)ramer-glottalic.pdf ''A "Glottalic" Theory of Nostratic''] {{Webarchive|url=https://web.archive.org/web/20120305113225/http://www.nostratic.ru/books/(40)ramer-glottalic.pdf |date=2012-03-05 }}.
+*Norquest, Peter (1998). "Greenberg's Visit to Arizona". [http://www.people.fas.harvard.edu/~witzel/MT-31.htm ''Mother Tongue Newsletter'' '''31''']:25f. (image files)
+*{{Cite journal | doi = 10.1017/S0959774300000238 | last1 = Renfrew | first1 = Colin | year = 1991 | title = Before Babel: Speculations on the Origins of Linguistic Diversity | journal = Cambridge Archaeological Journal | volume = 1 | issue = 1| pages = 3–23 | s2cid = 161811559 }}
+*Renfrew, Colin, and Daniel Nettle, editors (1999). ''Nostratic: Examining a Linguistic Macrofamily.'' McDonald Institute for Archaeological Research. {{ISBN|978-1-902937-00-7}}
+*Ruhlen, Merritt (1991). ''A Guide to the World's Languages, Volume 1: Classification''. [[Edward Arnold (publisher)|Edward Arnold]]. {{ISBN|0-340-56186-6}}
+*Ruhlen, Merritt (1994). ''On the Origin of Languages: Studies in Linguistic Taxonomy.'' Stanford, California: Stanford University Press.
+*Ruhlen, Merritt (1998). "Toutes parentes, toutes différentes". ''La Recherche'' 306:69–75. (French translation of a ''Scientific American'' article.)
+*Ruhlen, Merritt (2001). "Taxonomic Controversies in the Twentieth Century". In: Jürgen Trabant and Sean Ward (eds.), ''New Essays on the Origin of Language'' 197–214. Berlin: Mouton de Gruyter.
+*Salmons, Joseph C., and Brian D. Joseph, editors (1998). ''Nostratic: Sifting the Evidence.'' John Benjamins. {{ISBN|1-55619-597-4}}
+*Stachowski, Marek, [https://web.archive.org/web/20170810003635/http://www2.filg.uj.edu.pl/ifo/kjasis/~stachowski.marek/store/pub/2011%20Teoria%20nostratyczna,%20LV.pdf "Teoria nostratyczna i szkoła moskiewska"].(pdf)&nbsp;– ''LingVaria'' 6/1 (2011): 241-274
+*Starostin, Georgiy S. (1998). [http://starling.rinet.ru/Texts/alveol.pdf "Alveolar Consonants in Proto-Dravidian: One or More?"]. (pdf) Pages 1–14 (?) in ''Proceedings on South Asian languages''
+*Starostin, Georgiy S. (2002). [http://starling.rinet.ru/Texts/elam.pdf "On the Genetic Affiliation of the Elamite Language"]. (pdf) ''Mother Tongue'' 7.
+*Starostin, George; Kassian, Alexei; Trofimov, Artem; Zhivlov, Mikhail. 2017. ''[http://starling.rinet.ru/new400 400-item basic wordlist for potentially "Nostratic" languages]''. Moscow: Laboratory for Oriental and Comparative Studies of the School of Advanced Studies in the Humanities, Russian Presidential Academy.
+*Sweet, Henry (1900, 1995, 2007). ''The History of Language''. {{ISBN|81-85231-04-4}} (1995); {{ISBN|1-4326-6993-1}} (2007)
+*Szemerényi, Oswald (1996). ''Introduction to Indo-European Linguistics.'' Oxford: Oxford University Press.
+*Trask, R. L. (1996). ''Historical Linguistics''. New York: Oxford University Press.
+*Yakubovich, I. (1998). [https://web.archive.org/web/20080425042445/http://popgen.well.ox.ac.uk/eurasia/htdocs/nostratic.html Nostratic studies in Russia]
+
+==Further reading==
+{{refbegin}}
+* Hage, Per. “On the Reconstruction of the Proto-Nostratic Kinship System”. In: ''Zeitschrift Für Ethnologie'' 128, no. 2 (2003): 311–25. http://www.jstor.org/stable/25842921.
+* Manaster Ramer, Alexis (1993). “On Illič-Svityč's Nostratic Theory”. In: ''Studies in Language'' 17: 205—250
+* WITCZAK K.T., KOWALSKI A.P. (2012). "Nostratyka. Wspólnota językowa indoeuropejska". In: ''Przeszłość społeczna. Próba konceptualizacji'', red. S. Tabaczyński i in. (red.), Poznań, pp.&nbsp;826–837.
+{{refend}}
+
+==External links==
+*Stefan Georg, 2013, [https://www.academia.edu/3356726/Review_of_Nostratic_Sifting_the_Evidence._Edited_by_JOSEPH_C._SALMONS_and_BRIAN_D._JOSEPH._in_Anthropological_Linguistics Review] of Salmons & Joseph, eds, ''Nostratic: Sifting the Evidence'', 1997
+*[http://www.santafe.edu/~johnson/articles.nostratic.html "Linguists debating deepest roots of language"]&nbsp;– ''New York Times'' article on Nostratic (June 27, 1995)
+*[http://www.people.fas.harvard.edu/~witzel/MT-31.htm "What is Nostratic?"] by [[John Bengtson]], in ''Mother Tongue Newsletter'' 31 (1998), pages 33–38
+*[http://www.suduva.com/virdainas/nostraticist.htm "Nostraticist Vladislav Markovich Illich-Svitych"]&nbsp;– photograph, Nostratic poem (2002)
+*[http://starling.rinet.ru/images/globet.png Proposed descent tree for Borean languages, including Nostratic] by Sergei Starostin
+*[http://starling.rinet.ru/cgi-bin/query.cgi?root=config&morpho=0&basename=\data\nostr\nostret Database query to Nostratic etymology] on StarLing database (last modified 2006)
+*[http://www.dspace.cam.ac.uk/handle/1810/196512 ''Nostratic Dictionary'' by Aharon Dolgopolsky (2006): main page at Cambridge University DSpace] {{Webarchive|url=https://web.archive.org/web/20081215104636/http://www.dspace.cam.ac.uk/handle/1810/196512 |date=2008-12-15 }} and [https://web.archive.org/web/20110611070603/http://www.dspace.cam.ac.uk/bitstream/1810/196512/48/00ND_Prelims_i-viii.pdf "Preface"] by [[Colin Renfrew]]
+
+{{Long-range comparative linguistics}}
+{{Authority control}}
+
+{{DEFAULTSORT:Nostratic Languages}}
+[[Category:Nostratic languages| ]]
+[[Category:Proposed language families]]
+[[Category:Linguistic theories and hypotheses]]
+[[Category:Moscow School of Comparative Linguistics]]
+[[Category:1903 in science]]
+[[Category:Fringe theories]]

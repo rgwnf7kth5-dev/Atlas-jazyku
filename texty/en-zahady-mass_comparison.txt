@@ -1,0 +1,195 @@
+{{Short description|Controversial method in historical linguistics}}
+{{Fringe theories|date=September 2023}}
+{{Cleanup rewrite|article|date=September 2023}}
+
+'''Mass comparison''' is a method developed by [[Joseph Greenberg]] to determine the level of [[genetic relationship (linguistics)|genetic relatedness]] between languages. It is now usually called '''multilateral comparison'''. Mass comparison is rejected by most linguists, and its continued use is primarily restricted to [[Fringe theory|fringe]] linguistics.<ref>{{cite book |last1=Adrian |first1=Pearce |last2=Beresford-Jones |first2=David |last3=Heggarty |first3=Paul |title=Rethinking the Andes-Amazonia divide: a cross disciplinary exploration |date=2020 |publisher=UCL Press |location=London |isbn=9781787357471 |pages=94–102}}</ref><ref>{{Harv|Campbell|2001|p=45}}</ref>
+
+Some of the top-level relationships Greenberg named are now generally accepted thanks to analysis with other, more widely accepted linguistic techniques, though they had already been posited by others (e.g. [[Afro-Asiatic languages|Afro-Asiatic]] and [[Niger–Congo languages|Niger–Congo]]). Others are accepted by many though disputed by some prominent specialists (e.g. [[Nilo-Saharan languages|Nilo-Saharan]]), while others are almost universally rejected (e.g. [[Eurasiatic languages|Eurasiatic]], [[Khoisan languages|Khoisan]] and [[Amerind languages|Amerind]]).
+
+== Methodology ==
+
+The idea of mass comparison method is that a group of languages is related when they show numerous resemblances in vocabulary, including [[pronoun]]s, and [[morpheme]]s, forming an interlocking pattern common to the group. Unlike the [[comparative method (linguistics)|comparative method]], mass comparison does not require any regular or systematic correspondences between the languages compared; all that is required is an impressionistic feeling of similarity. Greenberg does not establish a clear standard for determining relatedness; he does not set a standard for what he considers a "resemblance" or how many resemblances are needed to prove relationship.<ref name="Campbell and Poser 2008">{{cite book |last1=Campbell |first1=Lyle |author-link=Lyle Campbell|last2=Poser|first2=William J.|author-link2=William Poser|date=2008 |title=Language Classification: History and Method|location=Cambridge |publisher=[[Cambridge University Press]]|isbn=978-0-511-41381-0}}</ref>
+
+Mass comparison is done by setting up a table of basic vocabulary items and their forms in the languages to be compared for resemblances. The table can also include common morphemes. The following table was used by Greenberg<ref>{{Harvtxt|Greenberg|1957|p=41}}</ref> to illustrate the technique. It shows the forms of six items of basic vocabulary in nine different languages, identified by letters.
+
+{| class="wikitable"
+|-
+!width="40"|
+!width="40"|A
+!width="40"|B
+!width="40"|C
+!width="40"|D
+!width="40"|E
+!width="40"|F
+!width="40"|G
+!width="40"|H
+!width="40"|I
+|-
+|Head ||kar ||kar ||se ||kal ||tu ||tu ||to ||fi ||pi
+|-
+|Eye ||min ||ku ||min ||miŋ ||min ||aš ||min ||idi ||iri
+|-
+|Nose ||tor ||tör ||ni ||tol ||was ||waš ||was ||ik ||am
+|-
+|One ||mit ||kan ||kan ||kaŋ ||ha ||kan ||kεn ||he ||čak
+|-
+|Two ||ni ||ta ||ne ||kil ||ne ||ni ||ne ||gum ||gun
+|-
+|Blood ||kur ||sem ||sem ||šam ||i ||sem ||sem ||fik ||pix
+|}
+
+According to Greenberg, basic relationships can be determined without any experience in the case of languages that are fairly closely related, though knowledge of probable paths of sound change acquired through [[linguistic typology|typology]] allows one to go farther faster. For instance, the path ''p'' > ''f'' is extremely frequent, but the path ''f'' > ''p'' is much less so, enabling one to hypothesize that ''fi'' : ''pi'' and ''fik'' : ''pix'' are indeed related and go back to protoform *''pi'' and *''pik/x''. Similarly, while knowledge that ''k'' > ''x'' is extremely frequent, ''x'' > ''k'' is much less so enables one to choose *''pik'' over *''pix''. Thus, according to Greenberg (2005:318), phonological considerations come into play from the very beginning, even though mass comparison does not attempt to produce reconstructions of [[Proto-language|protolanguages]] as these belong to a later phase of study. The tables used in actual mass comparison involve much larger numbers of items and languages. The items included may be either lexical, such as 'hand', 'sky', and 'go', or morphological, such as [[Plural|PLURAL]] and [[Grammatical gender|MASCULINE]].<ref>{{Harv|Ruhlen|1987|p=120}}</ref> For Greenberg, the results achieved through mass comparison approached certainty:<ref>{{Harv|Greenberg|1957|p=39}}</ref> "The presence of fundamental vocabulary resemblances and resemblances in items with grammatical function, particularly if recurrent through a number of languages, is a sure indication of genetic relationship."
+
+== Relation to the comparative method ==
+
+As a tool for identifying [[Genetic relationship (linguistics)|genetic relationships]] between languages, mass comparison is an alternative to the [[comparative method (linguistics)|comparative method]]. Proponents of mass comparison, such as Greenberg, claim that the comparative method is unnecessary to identify genetic relationships; furthermore, they claim that it can only be used once relationships are identified using mass comparison, making mass comparison the "first step" in determining relationships (1957:44). This contrasts with mainstream [[comparative linguistics]], which relies on the comparative method to aid in identifying genetic relationships; specifically, it involves comparing data from two or more languages. If sets of recurrent sound correspondences are found, the languages are most likely related; if further investigation confirms the potential relationship, [[Linguistic reconstruction|reconstructed ancestral forms]] can be set up using the collated sound correspondences.<ref name="Campbell and Poser 2008"/>
+
+However, Greenberg did not entirely disavow the comparative method; he stated that "once we have a well-established stock I go about comparing and reconstructing just like anyone else, as can be seen in my various contributions to historical linguistics" (1990, quoted in Ruhlen 1994:285) and accused mainstream linguists of spreading "the strange and widely disseminated notion that I seek to replace the comparative method with a new and strange invention of my own" (2002:2). Earlier in his career, before he fully developed mass comparison, he even stated that his methodology did not "conflict in any fashion with the traditional comparative method" (1957:44). However, Greenberg sees the comparative method as playing no role in determining relationships, significantly reducing its importance compared to traditional methods of linguistic comparison. In effect, his approach of mass comparison sidelined the comparative method with a "new and strange invention of his own".<ref name="Campbell and Poser 2008"/>
+
+Reflecting the methodological [[empiricism]] also present in his [[linguistic typology|typological]] work, he viewed facts as of greater weight than their interpretations, stating (1957:45):
+
+:[R]econstruction of an original sound system has the status of an explanatory theory to account for etymologies already strong on other grounds. Between the *''vaida'' of Bopp and the *''γwoidxe'' of Sturtevant lie more than a hundred years of the intensive development of Indo-European phonological reconstruction. What has remained constant has been the validity of the etymologic relationship among Sanskrit ''veda'', Greek ''woida'', Gothic ''wita'', all meaning "I know", and many other unshakable etymologies both of root and of non-root morphemes recognized at the outset. And who will be bold enough to conjecture from what original the Indo-Europeanist one hundred years from now will derive these same forms?
+
+== Criticism ==
+
+=== Errors in application ===
+{{see also|Amerind languages|Eurasiatic languages|Indo-Pacific languages}}
+
+The presence of frequent errors in Greenberg's data has been pointed out by linguists such as [[Lyle Campbell]] and [[Alexander Vovin]], who see it as fatally undermining Greenberg's attempt to demonstrate the reliability of mass comparison. Campbell notes in his discussion of Greenberg's [[Amerind languages|Amerind]] proposal that "nearly every specialist finds extensive distortions and inaccuracies in Greenberg's data"; for example, [[Willem Adelaar]], a specialist in Andean languages, has stated that "the number of erroneous forms [in Greenberg's data] probably exceeds that of the correct forms". Some forms in Greenberg's data even appear to be attributed to the wrong language. Greenberg also neglects known [[sound change]]s that languages have undergone; once these are taken into account, many of the resemblances he points out vanish. Greenberg's data also contains errors of a more systematic sort: for instance, he groups unrelated languages together based on outdated classifications or because they have similar names.<ref name="Campbell and Poser 2008"/><ref name="Campbell 1997">{{cite book |last=Campbell |first=Lyle |author-link=Lyle Campbell |date=1997 |title=American Indian Languages|series=Oxford Studies in Anthropological Linguistics|location=New York |publisher=[[Oxford University Press]]|isbn=0-19-509427-1 }}</ref><ref>{{cite book|last=Adelaar |first=Willem |author-link=Willem Adelaar|date=10 June 2004|title=The Languages of the Andes|location=Cambridge|publisher=[[Cambridge University Press]]|series=Cambridge Language Surveys|isbn=9781139451123|pages=41–45}}</ref>
+
+Greenberg also arbitrarily deems certain portions of a word to be [[affix]]es when affixes of the requisite [[phonological]] shape are unknown to make words cohere better with his data. Conversely, Greenberg frequently employs affixed forms in his data, failing to recognise actual morphemic boundaries; when affixes are removed, the words often no longer bear any resemblance to his "Amerind" reconstructions.<ref name="Campbell 1997"/><ref name="Heggarty 2020">{{cite book |chapter=Deep time and first settlement: What, if anything, can linguistics tell us?|last=Heggarty |first=Paul |editor-last1=Pearce|editor-first1=Adrian J.|editor-last2=Beresford-Jones|editor-first2=David G.|editor-last3=Heggarty|editor-first3=Paul|date=21 October 2020|title=Rethinking the Andes–Amazonia Divide: A cross-disciplinary exploration|location=London|publisher=UCL Press|isbn=9781787357358}}</ref> Greenberg has responded to this criticism by claiming that "the method of multilateral comparison is so powerful that it will give reliable results even with the poorest data. Incorrect material should merely have a randomizing effect”. This has hardly reassured critics of the method, who are far from convincing of the method's "power".<ref name="Heggarty 2020"/>
+
+=== Borrowing ===
+
+A prominent criticism of mass comparison is that it cannot distinguish [[Borrowing (linguistics)|borrowed]] forms from inherited ones, unlike comparative reconstruction, which is able to do so through regular sound correspondences. Undetected borrowings within Greenberg's data support this claim; for instance, he lists "[[cognate]]s" of [[Uwa language|Uwa]] ''baxita'' "machete", even though it is a borrowing from [[Spanish language|Spanish]] {{Wikt-lang|es|machete}}.<ref name="Campbell 1997"/> Greenberg<ref>{{Harvtxt|Greenberg|1957|p=39}}</ref> admits that "in particular and infrequent instances the question of borrowing may be doubtful" when using mass comparison, but claims that basic vocabulary is unlikely to be borrowed compared to cultural vocabulary, stating that "where a mass of resemblances is due to borrowing, they will tend to appear in cultural vocabulary and to cluster in certain semantic areas which reflect the cultural nature of the contact." Mainstream linguists accept this premise, but claim that it does not suffice for distinguishing borrowings from [[Genetic relationship (linguistics)|inherited vocabulary]].<ref name="Campbell 1997"/>
+
+According to him, any type of linguistic item may be borrowed "on occasion", but "fundamental vocabulary is proof against mass borrowing". However, languages can and do borrow basic vocabulary. For instance, in the words of Campbell, [[Finnish language|Finnish]] has borrowed "from its [[Baltic languages|Baltic]] and [[Germanic languages|Germanic]] neighbors various terms for basic kinship and body parts, including 'mother', 'daughter', 'sister', 'tooth', 'navel', 'neck', 'thigh', and 'fur{{'"}}. Greenberg continues by stating that "[D]erivational, inflectional, and pronominal morphemes and morph alternations are the least subject of all to borrowing"; he does incorporate [[Morphology (linguistics)|morphological]] and [[pronominal]] correlations when performing mass comparison, but they are peripheral and few in number compared to his [[Lexis (linguistics)|lexical]] comparisons. Greenberg himself acknowledges the peripheral role they play in his data by saying that they are "not really necessary". Furthermore, the correlations he lists are neither exclusive to or universally found within the languages which he compares. Greenberg is correct in pointing out that borrowing of pronouns or morphology is rare, but it cannot be ruled out without recourse to a method more sophisticated than mass comparison.<ref name="Campbell and Poser 2008"/><ref name="Campbell 1997"/><ref name="Campbell 1994">{{Cite journal|last=Campbell |first=Lyle |author-link=Lyle Campbell|title=Inside the American Indian Language Classification Debate|journal=Mother Tongue|issue=23|pages=41–54|date=November 1994}}</ref>
+
+Greenberg continues by claiming that "[R]ecurrent sound correspondences" do not suffice to detect borrowing, since "where loans are numerous, they often show such correspondences".<ref>{{Harv|Greenberg|1957|pp=39&ndash;40}}</ref> However, Greenberg misrepresents the practices of mainstream [[comparative linguistics]] here; few linguists advocate using sound correspondences to the exclusion of all other kinds of evidence. This additional evidence often helps separate borrowings from inherited vocabulary; for instance, Campbell mentions how "[c]ertain sorts of patterned grammatical evidence (that which resists explanation from borrowing, accident, or [[Typology (linguistics)|typology]] and [[Linguistic universal|universals]]) can be important testimony, independent of the issue of sound correspondences".<ref name="Campbell 1994"/> It may not always be possible to separate borrowed and inherited material, but any method has its limits; in the vast majority of cases, the difference can discerned.<ref name="Campbell and Poser 2008"/>
+
+=== Chance resemblances ===
+
+Cross-linguistically, chance resemblances between unrelated lexical items are common, due to the large amount of [[lexemes]] present across the world's languages; for instance, English {{Wikt-lang|en|much}} and Spanish {{Wikt-lang|es|mucho}} are demonstrably unrelated, despite their similar phonological shape. This means that many of the resemblances found through mass comparison are likely to be coincidental. Greenberg worsens this issue by reconstructing a common ancestor when only a small proportion of the languages he compares actually display a match for any given lexical item, effectively allowing him to cherry-pick similar-looking lexical items from a wide array of languages.<ref name="Heggarty 2020"/> Though they are less susceptible to borrowing, pronouns and morphology also typically display a restricted subset of a language's [[phonemic inventory]], making cross-linguistic chance resemblances more likely.<ref name="Campbell and Poser 2008"/>
+
+Greenberg also allows for a wide semantic latitude when comparing items; while widely accepted linguistic comparisons do allow for a degree of semantic latitude, what he allows for is incommensurably greater; for instance, one of his comparisons involves words for "night", "excrement", and "grass".<ref name="Heggarty 2020"/>
+
+==== Sound symbolism and onomatopoeia ====
+
+Proponents of mass comparison often neglect to exclude classes of words that are usually considered to be unreliable for proving linguistic relationships. For instance, Greenberg made no attempt to exclude [[onomatopoeic]] words from his data. Onomatopoeic words are often excluded from linguistic comparison, as similar-sounding onomatopoeic words can easily evolve in parallel. Though it is impossible to make a definite judgement as to whether a word is onomatopoeic, certain [[semantic field]]s, such as "blow" and "suck", show a cross-linguistic tendency to be onomatopoeic; making such a judgement may require deep analysis of a type that mass comparison makes difficult. Similarly, Greenberg neglected to exclude items affected by [[sound symbolism]], which often distorts the original shape of lexical items, from his data. Finally, "nursery words", such as [[Mama and papa|"mama" and "papa"]] lack evidential value in linguistic comparison, as they are usually thought to derive from the sounds [[infants]] make when beginning to [[language acquisition|acquire languages]]. Advocates of mass comparison often avoid taking sufficient care to exclude nursery words; one, [[Merritt Ruhlen]] has even attempted to downplay the problems inherent in using them in linguistic comparison.<ref name="Campbell and Poser 2008"/><ref name="Campbell 1997"/> The fact that many of [[indigenous languages of the Americas]] have pronouns that begin with [[nasal stops]], which Greenberg sees as evidence of common ancestry, may ultimately also be linked to early speech development; [[Algonquian languages|Algonquian]] specialist [[Ives Goddard]] notes that "A gesture equivalent to that used to articulate the sound ''n'' is the single most important voluntary muscular activity of a nursing infant".<ref>{{Cite book|chapter=Sapir's Comparative Method|last=Goddard|first=Ives|author-link=Ives Goddard|date=1986|series=Amsterdam Studies in the History and Theory of the Language Sciences|title=New perspectives in language, culture, and personality: Proceedings of the Edward Sapir Centenary Conference (Ottawa, 1-3 October 1984)|volume=41 |editor-last1=Cowan|editor-first1=William|editor-last2=Foster|editor-first2=Michael K.|editor-last3=Koerner|editor-first3=Konrad|page=202|location=Amsterdam|publisher=John Benjamins|doi=10.1075/sihols.41.09god|isbn=978-90-272-4522-9 }}</ref>
+
+=== Position of Greenberg's detractors ===
+
+Since the development of [[comparative linguistics]] in the 19th century, a linguist who claims that two languages are related, whether or not there exists historical evidence, is expected to back up that claim by presenting general rules that describe the differences between their lexicons, morphologies, and grammars. The procedure is described in detail in the [[Comparative method (linguistics)|comparative method]] article.
+
+For instance, one could demonstrate that [[Spanish language|Spanish]] is related to [[Italian language|Italian]] by showing that many words of the former can be mapped to corresponding words of the latter by a relatively small set of replacement rules—such as the correspondence of initial ''es-'' and ''s-'', final ''-os'' and ''-i'', etc. Many similar correspondences exist between the grammars of the two languages. Since those systematic correspondences are extremely unlikely to be random coincidences, the most likely explanation by far is that the two languages have evolved from a single ancestral tongue ([[Latin]], in this case).
+
+All pre-historical language groupings that are widely accepted today—such as the [[Indo-European languages|Indo-European]], [[Uralic languages|Uralic]], [[Algonquian languages|Algonquian]], and [[Bantu languages|Bantu]] families—have been established this way.
+
+=== Response of Greenberg's defenders ===
+
+The actual development of the comparative method was a more gradual process than Greenberg's detractors suppose. It has three decisive moments. The first was [[Rasmus Christian Rask|Rasmus Rask]]'s observation in 1818 of a possible regular sound change in Germanic consonants. The second was [[Jacob Grimm]]'s extension of this observation into a general principle ([[Grimm's law]]) in 1822. The third was [[Karl Verner]]'s resolution of an irregularity in this sound change ([[Verner's law]]) in 1875. Only in 1861 did [[August Schleicher]], for the first time, present systematic reconstructions of Indo-European proto-forms (Lehmann 1993:26). Schleicher, however, viewed these reconstructions as extremely tentative (1874:8). He never claimed that they proved the existence of the Indo-European family, which he accepted as a given from previous research—primarily that of [[Franz Bopp]], his great predecessor in Indo-European studies.
+
+[[Karl Brugmann]], who succeeded Schleicher as the leading authority on Indo-European, and the other [[Neogrammarian]]s of the late 19th century, distilled the work of these scholars into the famous (if often disputed) principle that "every sound change, insofar as it occurs automatically, takes place according to laws that admit of no exception" (Brugmann 1878).<ref>{{cite web |last=Lehmann |first=Winfred P. |url=http://www.utexas.edu/cola/centers/lrc/books/read14.html |title=A Reader in Nineteenth Century Historical Indo-European Linguistics: Preface to 'Morphological Investigations in the Sphere of the Indo-European Languages' I |publisher=Utexas.edu |date=2007-03-20 |access-date=2012-03-11 |archive-date=2012-08-05 |archive-url=https://archive.today/20120805232443/http://www.utexas.edu/cola/centers/lrc/books/read14.html |url-status=dead }}</ref>
+
+The Neogrammarians did not, however, regard regular sound correspondences or comparative reconstructions as relevant to the proof of genetic relationship between languages. In fact, they made almost no statements on how languages are to be classified (Greenberg 2005:158). The only Neogrammarian to deal with this question was [[Berthold Delbrück]], Brugmann's collaborator on the ''[[Grundriß der vergleichenden Grammatik der indogermanischen Sprachen]]'' (Greenberg 2005:158-159, 288). According to Delbrück (1904:121-122, quoted in Greenberg 2005:159), Bopp had claimed to prove the existence of Indo-European in the following way:
+
+:The proof was produced by juxtaposing words and forms of similar meanings. When one considers that in these languages the formation of the inflectional forms of the verb, noun and pronoun agrees in essentials and likewise that an extraordinary number of inflected words agree in their lexical parts, the assumption of chance agreement must appear absurd.
+
+Furthermore, Delbrück took the position later enunciated by Greenberg on the priority of etymologies to sound laws (1884:47, quoted in Greenberg 2005:288): "obvious etymologies are the material from which sound laws are drawn."
+
+The opinion that sound correspondences or, in another version of the opinion, reconstruction of a proto-language are necessary to show relationship between languages thus dates from the 20th, not the 19th century, and was never a position of the Neogrammarians. Indo-European was recognized by scholars such as [[William Jones (philologist)|William Jones]] (1786) and Franz Bopp (1816) long before the development of the comparative method.
+
+Furthermore, Indo-European was not the first language family to be recognized by students of language. [[Semitic languages|Semitic]] had been recognized by European scholars in the 17th century, [[Finno-Ugric languages|Finno-Ugric]] in the 18th. [[Dravidian languages|Dravidian]] was recognized in the mid-19th century by [[Robert Caldwell]] (1856), well before the publication of Schleicher's comparative reconstructions.
+
+Finally, the supposition that all of the language families generally accepted by linguists today have been established by the comparative method is untrue. Some families were accepted for decades before comparative reconstructions of them were put forward, for example [[Afro-Asiatic languages|Afro-Asiatic]] and [[Sino-Tibetan languages|Sino-Tibetan]]. Many languages are generally accepted as belonging to a language family even though no comparative reconstruction exists, often because the languages are only attested in fragmentary form, such as the [[Anatolian languages|Anatolian]] language [[Lydian language|Lydian]] (Greenberg 2005:161). Conversely, detailed comparative reconstructions exist for some language families which nonetheless remain controversial, such as [[Altaic languages#Comparative grammar of the proposed Altaic language family|Altaic]]. Detractors of Altaic point out that the data collected to show by comparativism the existence of the family is scarce, wrong and non sufficient. Keep in mind that regular phonological correspondences need thousands of lexicon lists to be prepared and compared before being established, and these lists are lacking for many of the proposed  families identified through mass comparison. Furthermore, other specific problems affect "comparative" lists of both proposals, like the late attestation for Altaic languages, or the comparison of not certain proto-forms.<ref name="test1">[[R.L. Trask]], Historical Linguistics (1996), chapters 8 to 13 for an intensive lookout on language comparison.</ref><ref name="test2">Claudia A. Ciancaglini, [https://www.torrossa.com/gs/resourceProxy?an=2402691&publisher=F34885 "How to prove genetic relationships among languages: the cases of Japanese and Corean"], 2005, "La Sapienza" University, Rome</ref>
+
+=== A continuation of earlier methods? ===
+
+Greenberg claimed that he was at bottom merely continuing the simple but effective method of language classification that had resulted in the discovery of numerous language families prior to the elaboration of the [[comparative method (linguistics)|comparative method]] (1955:1-2, 2005:75) and that had continued to do so thereafter, as in the classification of [[Hittite language|Hittite]] as Indo-European in 1917 (Greenberg 2005:160-161). This method consists in essentially two things: resemblances in basic vocabulary and resemblances in inflectional morphemes. If mass comparison differs from it in any obvious way, it would seem to be in the theoretization of an approach that had previously been applied in a relatively ad hoc manner and in the following additions:
+
+*The explicit preference for basic vocabulary over cultural vocabulary.
+*The explicit emphasis on comparison of multiple languages rather than bilateral comparisons.
+*The very large number of languages simultaneously compared (up to several hundred).
+*The introduction of typologically based paths of sound change.
+
+The positions of Greenberg and his critics therefore appear to provide a starkly contrasted alternative:
+
+*According to Greenberg, the identification of sound correspondences and the reconstruction of protolanguages arise from genetic classification.
+*According to Greenberg's critics, genetic classification arises from the identification of sound correspondences or (others state) the reconstruction of protolanguages.
+
+=== Time limits of the comparative method ===
+
+Besides systematic changes, languages are also subject to random mutations (such as borrowings from other languages, irregular inflections, compounding, and abbreviation) that affect one word at a time, or small subsets of words. For example, Spanish ''perro'' (dog), which does not come from Latin, cannot be rule-mapped to its Italian equivalent ''cane'' (the Spanish word ''can'' is the Latin-derived equivalent but is much less used in everyday conversations, being reserved for more formal purposes). As those sporadic changes accumulate, they will increasingly obscure the systematic ones—just as enough dirt and scratches on a photograph will eventually make the face unrecognisable.<ref name="Heggarty 2020"/>
+
+== See also ==
+* [[Comparative method (linguistics)]]
+* [[Comparative linguistics]]
+* [[Moscow School of Comparative Linguistics]]
+* [[Swadesh list]]
+
+== References ==
+{{Reflist}}
+
+== Bibliography ==
+
+=== Works cited ===
+
+* Baxter, William H. and Alexis Manaster Ramer. 1999. [https://web.archive.org/web/20110810020556/http://www.nostratic.ru/books/(270)beyond-lumping-and-splitting.pdf "Beyond lumping and splitting: Probabilistic issues in historical linguistics."]
+* Bomhard, Allan R. 2008. ''Reconstructing Proto-Nostratic: Comparative Phonology, Morphology, and Vocabulary'', 2 volumes. Leiden: Brill.
+* Bopp, Franz. 1816. ''Über das Conjugationssystem der Sanskritsprache in Vergleichung mit jenem der griechischen, lateinischen, persischen und germanischen Sprache.'' Frankfurt-am-Main: Andreäischen Buchhandlung.
+* Brugmann, Karl. 1878. Preface to the first issue of ''Morphologische Untersuchungen auf dem Gebiete der indogermanischen Sprachen.'' Leipzig: S. Hirzel. (The preface is signed Hermann Osthoff and Karl Brugmann but was written by Brugmann alone.)
+* Brugmann, Karl and Berthold Delbrück. 1886–1893. ''Grundriß der vergleichenden Grammatik der indogermanischen Sprachen'', 5 volumes (some multi-part, for a total of 8 volumes). Strassburg: Trübner.
+* Caldwell, Robert. 1856. ''A Comparative Grammar of the Dravidian or South-Indian Family of Languages. '' London: Harrison.
+*{{cite conference|title= Beyond the Comparative Method |first= Lyle |last= Campbell |author-link= Lyle Campbell |year= 2001 |conference= 15th International Conference on Historical Linguistics, Melbourne, 13–17 August 2001 |editor= Blake, Barry J. |editor2=Burridge, Kate |editor3=Taylor, Jo. |book-title= Historical Linguistics 2001 }}
+*{{cite book|last= Campbell |first= Lyle |author-link= Lyle Campbell |year= 2004 |title= Historical Linguistics: An Introduction |edition= 2d |location= Cambridge, Massachusetts |publisher= [[MIT Press]] }}
+* Delbrück, Berthold. 1884. ''Einleitung in das Sprachstudium'', 2d edition. Leipzig: Breitkopf und Härtel.
+* Delbrück, Berthold. 1904. ''Einleitung in das Studium der indogermanischer Sprachen'', 4th and renamed edition of ''Einleitung in das Sprachstudium'', 1880. Leipzig: Breitkopf und Härtel.
+*{{cite journal|last1= Georg |first1= Stefan |author-link1= Stefan Georg |last2= Vovin |first2= Alexander |author-link2= Alexander Vovin |year= 2003 |title= From Mass Comparison to Mess Comparison: Greenberg's "Eurasiatic" Theory |journal= Diachronica |volume= 20|issue= 2 |pages=331–362 |doi= 10.1075/dia.20.2.06geo}}
+*{{cite book|last=Greenberg|first=Joseph H.|year=1955|title=Studies in African Linguistic Classification|location=New Haven|publisher=Compass Publishing Company}} (Photo-offset reprint of eight articles published in the ''Southwestern Journal of Anthropology'' from 1949 to 1954, with minor corrections.)
+*{{cite book|last= Greenberg |first= Joseph H. |author-link= Joseph Greenberg |year= 1957 |title= Essays in Linguistics |url= https://archive.org/details/essaysinlinguist00gree |url-access= registration |location= Chicago |publisher= [[University of Chicago Press]] }}
+* Greenberg, Joseph H. 1960. "The general classification of Central and South American languages." In ''Selected Papers of the Fifth International Congress of Anthropological and Ethnological Sciences, 1956,'' edited by Anthony F.C. Wallace, 791–94. Philadelphia|publisher=University of Pennsylvania Press. (Reprinted in Greenberg 2005, 59–64.)
+*{{cite book|last=Greenberg|first=Joseph H.|year=1963|title=The Languages of Africa|location=Bloomington|publisher=Indiana University Press|title-link=The Languages of Africa}} (Heavily revised version of Greenberg 1955.)(From the same publisher: second, revised edition, 1966; third edition, 1970. All three editions simultaneously published at The Hague by Mouton & Co.)
+* Greenberg, Joseph H. 1971. "The Indo-Pacific hypothesis." ''Current Trends in Linguistics, Volume 8: Linguistics in Oceania'', edited by Thomas F. Sebeok, 807–871. The Hague: Mouton. (Reprinted in Greenberg 2005.)
+*{{cite book|last= Greenberg |first= Joseph H. |author-link= Joseph Greenberg |year= 1987 |title= Language in the Americas |location= Stanford |publisher= [[Stanford University Press]] }}
+*{{cite conference|title= Observations concerning Ringe's 'Calculating the factor of chance in language comparison |first= Joseph |last= Greenberg |author-link= Joseph Greenberg |year= 1993 |volume= 137 |issue= 1 |book-title= Proceedings |publisher= American Philosophical Society |pages= 79–90 |jstor = 986946}}{{dead link|date=January 2018|bot=medic}}{{cbignore|bot=medic}}
+*{{cite book|last=Greenberg|first=Joseph H.|year=2000|title=Indo-European and Its Closest Relatives: The Eurasiatic Language Family |volume= 1: Grammar |publisher= Stanford University Press|url=https://books.google.com/books?id=z4ISPKGtl9YC|isbn=9780804764414}}
+* {{cite book|last=Greenberg|first=Joseph H.|year=2002|title=Indo-European and Its Closest Relatives: The Eurasiatic Language Family |volume= 2: Lexicon |publisher= Stanford University Press}}
+* {{cite book|last=Greenberg|first=Joseph H.|year=2005|title=Genetic Linguistics: Essays on Theory and Method|editor-first=William|editor-last=Croft|publisher=Oxford University Press}}
+*{{cite book|title= The Significance of Word Lists: Statistical Tests for Investigating Historical Connections Between Languages |last= Kessler |first= Brett |year= 2001 |publisher= [[List of Stanford University Centers and Institutes#Center for the Study of Language and Information|CSLI]] Publications |location= [[Stanford, California]] }}
+* [[Johanna Laakso|Laakso, Johanna]]. 2003. [http://homepage.univie.ac.at/Johanna.Laakso/am_rev.html "Linguistic shadow-boxing."] Review of ''The Uralic Language Family: Facts, Myths and Statistics'' by Angela Marcantonio.
+* Lehmann, Winfred P. 1993. ''Theoretical Bases of Indo-European Linguistics.'' London: Routledge
+* Ringe, Donald. 1992. "On calculating the factor of chance in language comparison." ''American Philosophical Society, Transactions'' 82.1, 1–110.
+* Ringe, Donald. 1993. "A reply to Professor Greenberg." ''American Philosophical Society, Proceedings'' 137, 91–109.
+* Ringe, Donald A., Jr. 1995. {{"'}}Nostratic' and the factor of chance." ''Diachronica'' 12.1, 55–74.
+* Ringe, Donald A., Jr. 1996. "The mathematics of 'Amerind'." ''Diachronica'' 13, 135–54.
+*{{cite book|last= Ruhlen |first= Merritt |author-link= Merritt Ruhlen |year= 1987 |title= A Guide to the World's Languages |location= Stanford |publisher= [[Stanford University Press]] }}
+* Ruhlen, Merritt. 1994. ''On the Origin of Languages: Studies in Linguistic Taxonomy.'' Stanford: Stanford University Press.
+* Schleicher, August. 1861–1862. ''Compendium der vergleichenden Grammatik der indogermanischen Sprachen. Kurzer Abriss der indogermanischen Ursprache, des Altindischen, Altiranischen, Altgriechischen, Altitalischen, Altkeltischen, Altslawischen, Litauischen und Altdeutschen'', 2 volumes. Weimar: H. Boehlau.
+* Schleicher, August. 1874. ''[https://books.google.com/books?id=zCdZAAAAMAAJ A Compendium of the Comparative Grammar of the Indo-European, Sanskrit, Greek, and Latin Languages]'', translated from the third German edition by Herbert Bendall. London: Trübner and Co.  (An abridgement of the German original.)
+
+=== Further reading ===
+
+'''Anti-Greenbergian'''
+
+* Clifton, John. 2002. [https://web.archive.org/web/20020828154356/http://linguistlist.org/issues/13/13-491.html LINGUIST List 13.491: Review of Kessler 2001.]
+* Hock, Hans Henrich and Brian D. Joseph. 1996. ''Language History, Language Change, and Language Relationship: An Introduction to Historical and Comparative Linguistics.'' Berlin: Mouton de Gruyter.
+* Kessler, Brett. 2003. [https://web.archive.org/web/20060627150544/http://brettkessler.com/~bkessler/TimeDepth_review/ Review of ''Time Depth in Historical Linguistics''.] ''Diachronica'' 20, 373–377.
+* Kessler, Brett and A. Lehtonen. 2006. "[http://spell.psychology.wustl.edu/McDonald/paper/Kessler--Multilateral.pdf Multilateral comparison and significance testing of the Indo-Uralic question]." In ''Phylogenetic Methods and the Prehistory of Languages'', edited by Peter Foster and Colin Renfrew. McDonald Institute for Archaeological Research. (Also: [https://web.archive.org/web/20060627150318/http://brettkessler.com/McDonald/ Unofficial prepublication draft] (2004).)
+* Matisoff, James. 1990. "[http://www.ling.ohio-state.edu/~bjoseph/Ling611/Lx611Matisoff1990.pdf On megalocomparison] {{Webarchive|url=https://web.archive.org/web/20220301004309/https://www.asc.ohio-state.edu/joseph.1/Ling611/Lx611Matisoff1990.pdf |date=2022-03-01 }}." ''Language'' 66, 109–20.
+* Poser, William J. and Lyle Campbell. 1992. [http://www.billposer.org/Papers/iephm.pdf "Indo-European Practice and Historical Methodology."] ''Proceedings of the Eighteenth Annual Meeting of the Berkeley Linguistics Society'', 214–236.
+
+'''Greenbergian'''
+
+* Greenberg, Joseph H. 1990. "The American Indian language controversy." ''Review of Archaeology'' 11, 5–14.
+* Newman, Paul. 1995. ''On Being Right: Greenberg's African Linguistic Classification and the Methodological Principles Which Underlie It.'' Bloomington: Institute for the Study of Nigerian Languages and Cultures, African Studies Program, Indiana University.
+* Ruhlen, Merritt. 1994. ''The Origin of Language: Tracing the Evolution of the Mother Tongue.'' New York: John Wiley and Sons.
+
+== External links ==
+*[http://www.zompist.com/chance.htm "How likely are chance resemblances between languages?"] by Mark Rosenfelder (2002)
+
+{{Long-range comparative linguistics}}
+
+{{DEFAULTSORT:Mass Comparison}}
+[[Category:Historical linguistics]]
+[[Category:Comparative linguistics]]
+[[Category:Long-range comparative linguistics]]

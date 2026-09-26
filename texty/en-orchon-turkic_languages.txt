@@ -1,0 +1,1885 @@
+{{Short description|Language family of Eurasia}}
+{{hatnote group|
+{{About|the language family|the journal|Turkic Languages (journal){{!}}''Turkic Languages'' (journal)}}
+{{Distinguish|Turkish language}}
+}}
+{{Use dmy dates|date=September 2025}}
+{{Infobox language family
+| name          = Turkic
+| region        = [[Eurasia]]
+| familycolor   = Altaic
+| protoname     = [[Proto-Turkic language|Proto-Turkic]]
+| family        = One of the world's primary [[language family|language families]]
+| child1        = [[Common Turkic languages|Common Turkic]]
+| child2        = [[Oghuric languages|Oghuric]]
+| iso5          = trk
+| glotto        = turk1311
+| glottorefname = Turkic
+| map           = Turkic Languages distribution map.png
+| mapcaption    = The distribution of the Turkic languages
+| glottoname    = 
+| notes         = 
+| ethnicity     = [[Turkic peoples]]
+| speakers      = {{c.|200 million}}
+| date          = 2020
+| ref           = <ref name=Rybatzki/>
+}}
+
+The '''Turkic languages''' are a [[language family]] of more than 35<ref name=Dybo>{{cite web|url= http://altaica.narod.ru/LIBRARY/xronol_tu.pdf |author=Dybo A.V. |title=ХРОНОЛОГИЯ ТЮРКСКИХ ЯЗЫКОВ И ЛИНГВИСТИЧЕСКИЕ КОНТАКТЫ РАННИХ ТЮРКОВ |trans-title=Chronology of Turkish Languages and Linguistic Contacts of Early Turks |year=2007 |page=766 |access-date=1 April 2020 |archive-url= https://web.archive.org/web/20050311224856/http://altaica.narod.ru/LIBRARY/xronol_tu.pdf |archive-date=11 March 2005 |language=ru}}</ref> documented languages spoken by the [[Turkic peoples]] of [[Eurasia]], from [[Southeastern Europe]] and [[Eastern Europe]] to [[Central Asia]], [[East Asia]], [[North Asia]] ([[Siberia]]), and [[West Asia]]. The Turkic languages originated in a region of East Asia spanning from [[Mongolia]] to [[Northwest China]], where [[Proto-Turkic language|Proto-Turkic]] is thought to have been spoken,<ref name="Janhunen">{{cite book |title=Shared Grammaticalization: With Special Focus on the Transeurasian Languages |chapter-url=https://books.google.com/books?id=3J_6U8N2Wq8C&pg=PA223 |first=Juha |last=Janhunen |author-link=Juha Janhunen |editor1=Martine Irma Robbeets |editor2=Hubert Cuyckens |page=223|chapter=Personal pronouns in Core Altaic |date=2013 |publisher=John Benjamins |isbn=978-90-272-0599-5 |access-date=19 April 2017 |archive-date=15 January 2023 |archive-url=https://web.archive.org/web/20230115124027/https://books.google.com/books?id=3J_6U8N2Wq8C&pg=PA223 |url-status=live}}</ref> and from where they [[Turkic migration|expanded]] to Central Asia and farther west during the [[1st millennium|first millennium]].<ref name="LanguagesOfTheWorld">{{cite book |last=Katzner |first=Kenneth |author-link=Kenneth Katzner |title=Languages of the World, Third Edition |publisher=[[Routledge]] |date=March 2002 |isbn=978-0-415-25004-7}}</ref> They are characterized as a [[dialect continuum]].<ref>{{Cite book |last=Grenoble |first=L. A. |title=Language Policy in the Soviet Union |publisher=Springer |year=2003 |isbn=978-1-4020-1298-3 |pages=10}}</ref>
+
+Turkic languages are spoken by some 200 million people.<ref name=Rybatzki>{{cite book |last=Rybatzki |first=Volker |chapter=Altaic Languages: Tungusic, Mongolic, Turkic |editor1=Martine Robbeets |editor2=Alexander Savelyev |title=The Oxford Guide to the Transeurasian Languages |year=2020 |publisher=Oxford University Press |pages=22–28 |doi=10.1093/oso/9780198804628.003.0003
+}}</ref> The Turkic language with the greatest number of speakers is [[Turkish language|Turkish]], spoken mainly in [[Anatolia]] and the [[Balkans]]; its native speakers account for about 38% of all Turkic speakers, followed by [[Uzbek language|Uzbek]].<ref name="LanguagesOfTheWorld"/>
+
+Characteristic features such as [[vowel harmony]], [[agglutination]], [[subject-object-verb]] order, and lack of [[grammatical gender]] are almost universal within the Turkic family.<ref name="LanguagesOfTheWorld"/> There is a high degree of [[mutual intelligibility]], upon moderate exposure, among the various [[Oghuz languages]], which include [[Turkish language|Turkish]], [[Azerbaijani language|Azerbaijani]], [[Turkmen language|Turkmen]], [[Qashqai language|Qashqai]], [[Chaharmahali Turkic]], [[Gagauz language|Gagauz]], and [[Balkan Gagauz language|Balkan Gagauz]], as well as Oghuz-influenced [[Crimean Tatar language|Crimean Tatar]].<ref name="Language Materials Project">{{cite web |publisher=[[University of California, Los Angeles|UCLA]] International Institute, Center for World Languages |url=http://www.lmp.ucla.edu/Profile.aspx?LangID=67&menu=004 |title=Language Materials Project: Turkish |access-date=26 April 2007 |date=February 2007 |archive-url=https://web.archive.org/web/20071011180149/http://lmp.ucla.edu/Profile.aspx?menu=004&LangID=67 |archive-date=11 October 2007}}</ref> Other Turkic languages demonstrate varying amounts of mutual intelligibility within their subgroups as well. Although methods of classification vary, the Turkic languages are usually considered to be divided into two branches: [[Oghuric languages|Oghur]], of which the only surviving member is [[Chuvash language|Chuvash]], and [[Common Turkic languages|Common Turkic]], which includes all other Turkic languages.
+
+Turkic languages show many similarities with the [[Mongolic languages|Mongolic]], [[Tungusic languages|Tungusic]], [[Koreanic languages|Koreanic]], and [[Japonic languages|Japonic]] languages. These similarities have led some linguists (such as Turkologist [[Talât Tekin]]) to propose an [[Altaic languages|Altaic language family]], though this proposal is widely rejected by historical linguists.<ref>{{Cite journal |last=Vovin |first=Alexander |date=2005 |title=The end of the Altaic controversy: In memory of Gerhard Doerfer |journal=[[Central Asiatic Journal]] |volume=49 |issue=1 |pages=71–132 |jstor=41928378}}</ref><ref>{{Cite journal |last1=Georg |first1=Stefan |last2=Michalove |first2=Peter A. |last3=Ramer |first3=Alexis Manaster |last4=Sidwell |first4=Paul J. |date=1999 |title=Telling general linguists about Altaic |journal=[[Journal of Linguistics]] |volume=35 |issue=1 |pages=65–98 |doi=10.1017/S0022226798007312 |jstor=4176504 |s2cid=144613877}}</ref> Similarities with the [[Uralic languages]] even caused these families to be regarded as one for a long time under the [[Ural-Altaic languages|Ural-Altaic]] hypothesis.<ref>Sinor, 1988, p.710</ref><ref name="DRIEM 2001. Page 336">George van DRIEM: Handbuch der Orientalistik. Volume 1 Part 10. Brill 2001. Page 336</ref><ref>M. A. Castrén, Nordische Reisen und Forschungen. V, St.-Petersburg, 1849</ref> However, there has not been sufficient evidence to conclude the existence of either of these macrofamilies. The shared characteristics between the languages are attributed presently to extensive prehistoric [[language contact]].
+
+On 15 December 1893, the [[Orkhon Inscriptions]], one of the first Turkic texts, were decrypted.<ref>{{cite web |title=World Turkic Language Family Day |url=https://unesdoc.unesco.org/ark:/48223/pf0000396088 |website=unesdoc.unesco.org |access-date=4 November 2025}}</ref> As a result, [[December 15]] is declared as "[[World Turkic Language Family Day]]" by [[UNESCO]].
+
+==Characteristics==
+{{See also|Altaic languages}}
+
+[[File:Map-TurkicLanguages.png|thumb|330px|Map showing countries and autonomous subdivisions where a language belonging to the Turkic language family has official status]]
+
+Turkic languages are [[null-subject language]]s, have [[vowel harmony]] (with the notable exception of [[Uzbek language|Uzbek]] due to strong Persian-Tajik influence), [[converb]]s, extensive [[Agglutinative language|agglutination]] by means of [[suffix]]es and [[Preposition and postposition|postpositions]], and lack of [[grammatical article]]s, [[noun class]]es, and [[grammatical gender]]. [[Subject–object–verb word order]] is universal within the family. In terms of the level of vowel harmony in the Turkic language family, [[Tuvan language|Tuvan]] is characterized as almost fully harmonic whereas Uzbek is the least harmonic or not harmonic at all. Taking into account the documented historical-linguistic development of Turkic languages overall, both inscriptional and textual, the family provides over one millennium of documented stages as well as scenarios in the linguistic evolution of vowel harmony which, in turn, demonstrates harmony evolution along a confidently definable trajectory<ref>{{cite book|url=https://books.google.com/books?id=si_KlRbL1XoC&dq=10+vowels+uzbek&pg=PA391|title=Artificial Life 8|page=391|isbn=978-0-262-69281-6 |last1=Standish |first1=Russell K. |last2=Bedau |first2=Mark |last3=Abbass |first3=Hussein A. |date=25 August 2023 |publisher=MIT Press }}</ref> Though vowel harmony is a common characteristic of major language families spoken in Inner Eurasia ([[Mongolic languages|Mongolic]], [[Tungusic languages|Tungusic]], [[Uralic languages|Uralic]] and Turkic), the type of harmony found in them differs from each other; specifically, Uralic and Turkic have a shared type of vowel harmony (called ''palatal vowel harmony'') whereas Mongolic and Tungusic represent a different type.{{Citation needed|date=November 2025}}
+
+==History==
+{{See also|Proto-Turkic language|Old Turkic|Turkic peoples|Turkic migration}}
+
+===Pre-history===
+[[File:Proto-Turkic homeland.png|thumb|Proto-Turkic homeland and expansion.{{sfn|Uchiyama|Gillam|Savelyev|Ning|2020|p=12, Figure 3}}]]
+The homeland of the [[Turkic peoples]] and their language is suggested to be somewhere between the [[Trans-Caspia|Transcaspian steppe]] and [[Northeastern Asia]] ([[Manchuria]]),<ref name="Yunusbayev2015">{{Cite journal |last1=Yunusbayev |first1=Bayazit |last2=Metspalu |first2=Mait |last3=Metspalu |first3=Ene |last4=Valeev |first4=Albert |last5=Litvinov |first5=Sergei |last6=Valiev |first6=Ruslan |last7=Akhmetova |first7=Vita |last8=Balanovska |first8=Elena |last9=Balanovsky |first9=Oleg |display-authors=3 |date=21 April 2015 |title=The Genetic Legacy of the Expansion of Turkic-Speaking Nomads across Eurasia |journal=PLOS Genetics |volume=11 |issue=4 |article-number=e1005068 |doi=10.1371/journal.pgen.1005068 |issn=1553-7390 |pmc=4405460 |pmid=25898006|doi-access=free }}</ref>{{rp|quote=The origin and early dispersal history of the Turkic peoples is disputed, with candidates for their ancient homeland ranging from the Transcaspian steppe to Manchuria in Northeast Asia,}} with genetic evidence pointing to the region near [[South Central Siberia|South Siberia]] and [[Mongolia]] as the "Inner Asian Homeland" of the Turkic ethnicity.<ref name="Yunusbayev2015"/>{{rp|quote="Thus, our study provides the first genetic evidence supporting one of the previously hypothesized IAHs to be near Mongolia and South Siberia."}} Similarly several linguists, including [[Juha Janhunen]], [[Roger Blench]] and Matthew Spriggs, suggest that modern-day Mongolia is the homeland of the [[Proto-Turkic language]].<ref>{{Cite book |url=https://books.google.com/books?id=48iKiprsRMwC&pg=PA203 |title=Archaeology and Language II: Archaeological Data and Linguistic Hypotheses |last1=Blench |first1=Roger |last2=Spriggs |first2=Matthew |year=2003 |publisher=Routledge |isbn=978-1-134-82869-2 |language=en |page=203 |access-date=9 April 2020 |archive-date=15 January 2023 |archive-url=https://web.archive.org/web/20230115124027/https://books.google.com/books?id=48iKiprsRMwC&pg=PA203 |url-status=live }}</ref> Relying on Proto-Turkic lexical items about the climate, topography, flora, fauna, people's modes of subsistence, Turkologist [[Peter Benjamin Golden]] locates the Proto-Turkic Urheimat either in the southern, taiga-steppe zone of the [[Sayan mountains|Sayan]]-[[Altay mountains|Altay]] region,<ref>Golden, Peter Benjamin (2011). "Ethnogenesis in the tribal zone: The Shaping of the Turks". ''[https://www.academia.edu/9609971 Studies on the peoples and cultures of the Eurasian steppes]. {{Webarchive|url=https://web.archive.org/web/20201026130626/https://www.academia.edu/9609971/Studies_on_the_Peoples_and_Cultures_of_the_Eurasian_Steppes |date=26 October 2020 }}''. Bucureşti: Ed. Acad. Române. pp. 35–37.</ref> or from [[Lake Baikal]] to eastern [[Mongolia]].<ref>{{Citation |last=Golden |first=Peter B. |title=Studying the Near and Middle East at the Institute for Advanced Study, Princeton, 1935–2018 |date=27 April 2018 |pages=420–428 |editor-last1=Schmidtke |editor-first1=Sabine |access-date=28 September 2023 |chapter=THE CONSTRUCTION OF ETHNICITY IN MEDIEVAL TURKIC EURASIA |chapter-url=https://www.degruyter.com/document/doi/10.31826/9781463240035-054/html |publisher=Gorgias Press |language=en |doi=10.31826/9781463240035-054 |isbn=978-1-4632-4003-5 |s2cid=198684158}}{{Blockquote|text=The ancient Turkic Urheimat appears to have been located in Southern Siberia from the Lake Baikal region to Eastern Mongolia. The "Proto-Turks" in their Southern Siberian-Mongolian "homeland" were in contact with speakers of Eastern Iranian (Scytho-Sakas, who were also in Mongolia), Uralic and Paleo-Siberian languages.}}</ref> 
+
+Extensive contact took place between Proto-Turks and [[Proto-Mongols]] approximately during the [[1st millennium BC|first millennium BC]]; the shared cultural tradition between the two [[Eurasian nomads|Eurasian nomadic]] groups is called the "[[Turco-Mongol]]" tradition. The two groups shared a similar religion system, [[Tengrism]], and there exists a multitude of evident loanwords between Turkic languages and Mongolic languages. Although the loans were bidirectional, today Turkic loanwords constitute the largest foreign component in Mongolian vocabulary.<ref>{{Cite journal |last=Clark |first=Larry V. |date=1980 |title=Turkic Loanwords in Mongol, I: The Treatment of Non-initial S, Z, Š, Č |journal=[[Central Asiatic Journal]] |volume=24 |issue=1/2 |pages=36–59 |jstor=41927278}}</ref>
+
+Some lexical and extensive typological similarities between Turkic and the nearby Tungusic and Mongolic families, as well as the [[Korean language|Korean]] and [[Japonic languages|Japonic]] families has in more recent years been instead attributed to prehistoric contact amongst the group, sometimes referred to as the [[Sprachbund#Northeast Asia|Northeast Asian sprachbund]]. A more recent (circa first millennium BC) contact between "core Altaic" (Turkic, Mongolic, and Tungusic) is distinguished from this, due to the existence of definitive common words that appear to have been mostly borrowed from Turkic into Mongolic, and later from Mongolic into Tungusic, as Turkic borrowings into Mongolic significantly outnumber Mongolic borrowings into Turkic, and Turkic and Tungusic do not share any words that do not also exist in Mongolic.{{Citation needed|date=November 2025}}
+
+[[File:Kuli Chur inscription.jpg|thumb|right|[[Old Turkic language|Old Turkic]] [[Kul-chur inscription]] with the [[Old Turkic alphabet]] ({{c.|8th century}}). [[Töv Province]], Mongolia]]
+Turkic languages also show some Chinese [[loanword]]s that point to early contact during the time of Proto-Turkic.<ref>{{Cite book|url=https://books.google.com/books?id=Z7i5CAAAQBAJ&q=turkic+mongolian+related&pg=PA76|title=The Turkic Languages|last1=Johanson|first1=Lars|last2=Johanson|first2=Éva Ágnes Csató|date=29 April 2015|publisher=Routledge|isbn=978-1-136-82527-9|language=en|access-date=22 November 2020|archive-date=15 January 2023|archive-url=https://web.archive.org/web/20230115124027/https://books.google.com/books?id=Z7i5CAAAQBAJ&q=turkic+mongolian+related&pg=PA76|url-status=live}}</ref>
+
+===Early written records===
+[[File:Irk bitig 07.jpg|thumb|right|The 9th-century ''[[Irk Bitig]]'' ("Book of Divination") from [[Dunhuang]], written in [[Old Uyghur language]] with the [[Old Turkic script|Orkhon script]], is an important [[Ancient literature|literary source]] for early [[Turkic mythology|Turko]]-[[Mongol mythology|Mongol]] [[mythology]].]]
+
+The first established records of the Turkic languages are the [[Orkhon inscriptions]] by the [[Göktürks]], recording the [[Old Turkic]] language, which were discovered in 1889 in the [[Orkhon Valley]] in Mongolia, and are dated to the eighth century AD. The ''Compendium of the Turkic Dialects'' (''[[Dīwān Lughāt al-Turk|Divânü Lügati't-Türk]]''), written during the 11th century AD by [[Mahmud al-Kashgari|Kaşgarlı Mahmud]] of the [[Kara-Khanid Khanate]], constitutes an early linguistic treatment of the family. The ''Compendium'' is the first comprehensive dictionary of the Turkic languages and also includes the first known map of the Turkic speakers' geographical distribution. It mainly pertains to the [[Oghuz languages|Southwestern branch]] of the family.<ref name="Soucek">{{cite book|last=Soucek|first=Svat|title=A History of Inner Asia|url=https://archive.org/details/historyofinneras00souc|url-access=registration|publisher=Cambridge University Press|date=March 2000|isbn=978-0-521-65169-1}}</ref>
+
+The [[Codex Cumanicus]] (12th–13th centuries AD) concerning the [[Kipchak languages|Northwestern branch]] is another early linguistic manual, between the [[Kipchak language]] and [[Latin]], used by the [[Roman Catholic Church|Catholic]] [[Missionary|missionaries]] sent to the Western [[Cumans]] inhabiting a region corresponding to present-day [[Hungary]] and [[Romania]]. The earliest records of the language spoken by [[Volga Bulgaria|Volga Bulgars]], debatably the parent or a distant relative of Chuvash language, are dated to the 13th–14th centuries AD.<ref>{{Cite book |url=https://www.taylorfrancis.com/books/edit/10.4324/9781003243809/turkic-languages-lars-johanson-%C3%A9va-csat%C3%B3 |title=The Turkic Languages |year=2021 |publisher=Routledge |isbn=978-1-003-24380-9 |editor-last=Johanson |editor-first=Lars |doi=10.4324/9781003243809 |quote="Another Turkic people in the Volga area are the Chuvash, who, like the Tatars, regard themselves as descendants of the Volga Bulghars in the historical and cultural sense. It is clear that Chuvash belongs to the Oghur branch of Turkic, as the language of the Volga Bulghars did, but no direct evidence for diachronic development between the two has been established. As there were several distinct Oghur languages in the Middle Ages, Volga Bulghar could represent one of these and Chuvash another." |editor-last2=Csató |editor-first2=Éva Á}}</ref><ref>{{Cite journal |last=Agyagási |first=K. |date=2020 |title=A Volga Bulgarian Classifier: A Historical and Areal Linguistic Study |url=https://www.researchgate.net/publication/338899820 |journal=University of Debrecen |language=en |volume=3 |page=9 |quote="Modern Chuvash is the only descendant language of the Ogur branch. The ancestors of its speakers left the Khazar Empire in the 8th century and migrated to the region at the confluence of the Volga and Kama rivers, where they founded the Volga Bulgarian Empire in the 10th century. In the central Volga region three Volga Bulgarian dialects developed, and Chuvash is the descendant of the 3rd dialect of Volga Bulgarian (Agyagási 2019: 160–183). Sources refer to it as a separate language beginning with 1508"}}</ref>
+
+===Geographical expansion and development===
+
+[[File:Yuntai Uyghur east wall.jpg|thumb|right| [[Yuan dynasty]] Buddhist inscription written in [[Old Uyghur language]] with [[Old Uyghur alphabet]] on the east wall of the [[Cloud Platform at Juyong Pass]]]]
+
+With the [[Turkic peoples#Steppe expansions|Turkic expansion]] during the [[Early Middle Ages]] (c.&nbsp;6th–11th centuries AD), Turkic languages, in the course of just a few centuries, spread across [[Central Asia]], from [[Siberia]] to the [[Mediterranean]]. Various terminologies from the Turkic languages have passed into [[Persian language|Persian]], [[Urdu]], [[Ukrainian language|Ukrainian]], [[Russian language|Russian]],<ref>{{Cite journal|last=Poppe|first=Nicolas J.|title=A Survey of Studies of Turkic Loan-Words in the Russian Language|date=1966|journal=Central Asiatic Journal|volume=11|issue=4|pages=287–310|jstor=41926932|issn=0008-9192}}</ref> [[Chinese language|Chinese]], [[Mongolian language|Mongolian]], [[Hungarian language|Hungarian]] and to a lesser extent, [[Arabic language|Arabic]].<ref name="Findley">{{cite book|last=Findley|first=Carter V.|title=The Turks in World History|publisher=Oxford University Press|date=October 2004|isbn=978-0-19-517726-8}}</ref>{{Verify source|date=May 2018}}
+
+The geographical distribution of Turkic-speaking peoples across Eurasia since the Ottoman era ranges from the North-East of Siberia to Turkey in the West.<ref name="Ethnologue Turkic">{{cite web|editor=Gordon, Raymond G. Jr. |author-link=Ethnologue|url=http://www.ethnologue.com/show_family.asp?subid=90010|title=Ethnologue: Languages of the World, Fifteenth edition. Language Family Trees – Turkic|access-date=18 March 2007|year=2005|archive-date=14 September 2012|archive-url=https://web.archive.org/web/20120914151437/http://www.ethnologue.com/show_family.asp?subid=90010|url-status=live}}</ref><ref>Turkic Language tree entries provide the information on the Turkic-speaking regions.</ref>
+
+For centuries, the Turkic-speaking peoples have migrated extensively and intermingled continuously, and their languages have been influenced mutually and through [[language contact|contact]] with the surrounding languages, especially the [[Iranian languages|Iranian]], [[Slavic languages|Slavic]], and Mongolic languages.<ref name="Johanson">{{Cite book |author=Johanson |first=Lars |url=https://www.academia.edu/84611709 |title=Discoveries on the Turkic linguistic map |publisher=Swedish Research Institute in Istanbul |year=2001 |isbn=91-86884-10-7 |location=Stockholm |publication-date=2001 |access-date=17 July 2024}}</ref>
+
+This has obscured the historical developments within each language and/or language group, and as a result, there exist several systems to classify the Turkic languages. The modern genetic classification schemes for Turkic are still largely indebted to Samoilovich (1922).{{citation needed|date=October 2017}}
+
+The Turkic languages may be divided into six branches:<ref name="historyofturkic">Lars Johanson, The History of Turkic. In Lars Johanson & Éva Ágnes Csató (eds), The Turkic Languages, London, New York: Routledge, 81–125, 1998.</ref><ref name="TurkicClass2011">[http://www.turkiclanguages.com/www/classification.html Classification of Turkic languages] {{Webarchive|url=https://web.archive.org/web/20110408063746/http://www.turkiclanguages.com/www/classification.html |date=8 April 2011 }}</ref>
+
+{{tree list}}
+*'''Turkic'''
+**[[Common Turkic languages|Common Turkic]]
+***[[Oghuz languages|Oghuz Turkic]] (Southwestern)
+***[[Kipchak languages|Kipchak Turkic]] (Northwestern)
+***[[Karluk languages|Karluk Turkic]] (Southeastern)
+***[[Siberian Turkic languages|Siberian Turkic]] (Northeastern)
+***[[Argu languages|Arghu Turkic]]
+**[[Oghuric languages|Oghur Turkic]]
+{{tree list/end}}
+
+In this classification, [[Oghuric languages|Oghur Turkic]] is also referred to as Lir-Turkic, and the other branches are subsumed under the title of Shaz-Turkic or [[Common Turkic]]. It is not clear when these two major types of Turkic can be assumed to have diverged.<ref>See the main article on [[Oghuric languages|Lir-Turkic]].</ref>
+
+With less certainty, the Southwestern, Northwestern, Southeastern and Oghur groups may further be summarized as '''West Turkic''', the Northeastern, Kyrgyz-Kipchak, and Arghu (Khalaj) groups as '''East Turkic'''.<ref name="Ethnologue Turkic"/><ref>The reliability of ''Ethnologue'' lies mainly in its statistics whereas its framework for the internal classification of Turkic is still based largely on Baskakov (1962) and the collective work in Deny et al. (1959–1964). A more up-to-date alternative to classifying these languages on internal comparative grounds is to be found in the work of Johanson and his co-workers.</ref>
+
+Geographically and linguistically, the languages of the Northwestern and Southeastern subgroups belong to the central Turkic languages, while the Northeastern and Khalaj languages are the so-called peripheral languages.{{citation needed|date=October 2024}}
+
+Hruschka, et al. (2014) use [[computational phylogenetic]] methods to calculate a tree of Turkic based on phonological [[sound change]]s.<ref>{{cite journal |last1=Hruschka |first1=Daniel J. |last2=Branford |first2=Simon |last3=Smith |first3=Eric D. |last4=Wilkins |first4=Jon |last5=Meade |first5=Andrew |last6=Pagel |first6=Mark |last7=Bhattacharya |first7=Tanmoy |year=2015 |title=Detecting Regular Sound Changes in Linguistics as Events of Concerted Evolution 10.1016/j.cub.2014.10.064 |journal=Current Biology |volume=25 |issue=1 |pages=1–9 |doi=10.1016/j.cub.2014.10.064 |pmc=4291143 |pmid=25532895}}</ref>
+[[File:LinguisticDiagramTurkic.png|thumb|400x400px|A classification scheme of all the Turkic languages]]
+
+===Schema===
+The following [[isogloss]]es are traditionally used in the classification of the Turkic languages:<ref name="historyofturkic"/><ref>{{cite book |last=Самойлович |first=А. Н. |author-link=Alexander Samoylovich |url=http://xn--90ax2c.xn--p1ai/catalog/000200_000018_RU_NLR_INFOCOMM15_1000117889/ |year=1922 |language=ru |script-title=ru:Некоторые дополнения к классификации турецких языков |access-date=19 July 2018 |archive-url=https://web.archive.org/web/20180719203843/http://xn--90ax2c.xn--p1ai/catalog/000200_000018_RU_NLR_INFOCOMM15_1000117889/ |archive-date=19 July 2018}}</ref>
+* '''[[Rhotacism (sound change)|Rhotacism]]''' (or in some views, zetacism), e.g. in the last consonant of the word for "nine" *'''tokkuz'''. This separates the Oghur branch, which exhibits /r/, from the rest of Turkic, which exhibits /z/. In this case, rhotacism refers to the development of *-/r/, *-/z/, and *-/d/ to /r/,*-/k/,*-/kh/ in this branch.<ref>Larry Clark, "Chuvash", in ''The Turkic Languages'', eds. Lars Johanson & Éva Ágnes Csató (London–NY: Routledge, 2006), 434–452.</ref> See Antonov and Jacques (2012)<ref>Anton Antonov & Guillaume Jacques, [https://www.academia.edu/1495118/Turkic_kumus_silver_and_the_lambdaism_vs_sigmatism_debate "Turkic kümüš 'silver' and the lambdaism vs sigmatism debate"] {{Webarchive|url=https://web.archive.org/web/20230115124038/https://www.academia.edu/1495118/Turkic_kumus_silver_and_the_lambdaism_vs_sigmatism_debate |date=15 January 2023 }}, ''Turkic Languages'' 15, no. 2 (2012): 151–70.</ref> on the debate concerning rhotacism and lambdacism in Turkic.
+* '''Intervocalic *d''', e.g. the second consonant in the word for "foot" *hadaq
+* '''Suffix-final -G''', e.g. in the suffix *lIG, in e.g. *tāglïg
+Additional isoglosses include:
+* '''Preservation of word initial *h''', e.g. in the word for "foot" *hadaq. This separates Khalaj as a peripheral language.
+* '''Denasalisation of palatal *ń''', e.g. in the word for "moon", *āń
+<div class="noprint" style=" width:100%; overflow:auto">
+{|class="wikitable" style="font-size: 85%"
+!rowspan="3"|Isogloss
+!colspan="18"|Common Turkic
+!rowspan="2"|Oguric
+|-
+!colspan="6"|Siberian
+!colspan="4"|Oghuz
+!colspan="2"|Karluk
+!colspan="4"|Kipchak
+!Sayan
+!Arghu
+|-
+![[Old Turkic language|Old Turkic]]
+![[Northern Altai language|Northern Altai]]
+!'''[[Western Yugur language|Western Yugur]]'''
+!'''[[Khakas language|Khakas]]'''
+!'''[[Sakha language|Sakha/Yakut]]'''
+!'''[[Fuyu Kyrgyz language|Fu-yü Gyrgys]]'''
+!'''[[Turkish language|Turkish]]'''
+!'''[[Turkmen language|Turkmen]]'''
+!'''[[Azerbaijani language|Azerbaijani]]'''
+![[Qashqai language|Qashqai]]
+!'''[[Uzbek language|Uzbek]]'''
+!'''[[Uyghur language|Uyghur]]'''
+!'''[[Tatar language|Tatar]]'''
+!'''[[Kazakh language|Kazakh]]'''
+!'''[[Kyrgyz language|Kyrgyz]]'''
+!'''[[Southern Altai language|Southern Altai]]'''
+!'''[[Tuvan language|Tuvan]]'''
+!'''[[Turkic Khalaj language|Khalaj]]'''
+!'''[[Chuvash language|Chuvash]]'''
+|-
+|'''z/r''' (''nine'')
+|style="background-color: #d1ebeb"|toquz
+|style="background-color: #d1ebeb"|toɣïs
+|style="background-color: #d1ebeb"|toqïs
+|style="background-color: #d1ebeb"|toɣïs
+|style="background-color: #d1ebeb"|toɣus
+|style="background-color: #d1ebeb"|doɣus
+|style="background-color: #d1ebeb"|dokuz
+|style="background-color: #d1ebeb"|dokuz
+|style="background-color: #d1ebeb"|doqquz
+|style="background-color: #d1ebeb"|doqquz
+|style="background-color: #d1ebeb"|toʻqqiz
+|style="background-color: #d1ebeb"|toqquz
+|style="background-color: #d1ebeb"|tuɣïz
+|style="background-color: #d1ebeb"|toğyz
+|style="background-color: #d1ebeb"|toɣuz
+|style="background-color: #d1ebeb"|toɣus
+|style="background-color: #d1ebeb"|tos
+|style="background-color: #d1ebeb"|toqquz
+|style="background-color: #f1dfe5"|tăχăr
+|-
+|'''*h-''' (''foot'')
+|style="background-color: #d1ebeb"|adaq
+|style="background-color: #d1ebeb"|ayaq
+|style="background-color: #d1ebeb"|azaq
+|style="background-color: #d1ebeb"|azaq
+|style="background-color: #dff1e0"|ataχ
+|style="background-color: #d1ebeb"|azïχ
+|style="background-color: #d1ebeb"|ayak
+|style="background-color: #d1ebeb"|aýak
+|style="background-color: #d1ebeb"|ayaq
+|style="background-color: #d1ebeb"|ayaq
+|style="background-color: #d1ebeb"|oyoq
+|style="background-color: #d1ebeb"|ayaq
+|style="background-color: #d1ebeb"|ayaq
+|style="background-color: #d1ebeb"|aiaq
+|style="background-color: #d1ebeb"|ayaq
+|style="background-color: #d1ebeb"|ayak
+|style="background-color: #d1ebeb"|adaq
+|style="background-color: #f1dfe5"|hadaq
+|style="background-color: #d1ebeb"|ura
+|-
+|'''*VdV''' (''foot'')
+|style="background-color: #d1ebeb"|adaq
+|style="background-color: #ece0f0"|ayaq
+|style="background-color: #f0f1df"|azaq
+|style="background-color: #f0f1df"|azaχ
+|style="background-color: #d1ebeb"|hadaq
+|style="background-color: #f0f1df"|azïχ
+|style="background-color: #ece0f0"|ayak
+|style="background-color: #ece0f0"|aýak
+|style="background-color: #ece0f0"|ayaq
+|style="background-color: #ece0f0"|ayaq
+|style="background-color: #ece0f0"|oyoq
+|style="background-color: #ece0f0"|ayaq
+|style="background-color: #ece0f0"|ayaq
+|style="background-color: #ece0f0"|aiaq
+|style="background-color: #ece0f0"|ayaq
+|style="background-color: #ece0f0"|ayak
+|style="background-color: #d1ebeb"|adaq
+|style="background-color: #d1ebeb"|hadaq
+|style="background-color: #f1dfe5"|ura
+|-
+|'''*-ɣ''' (''mountain'')
+|style="background-color: #d1ebeb"|tāɣ
+|style="background-color: #d1ebeb"|taɣ
+|style="background-color: #d1ebeb"|taɣ
+|style="background-color: #d1ebeb"|taɣ
+|style="background-color: #f1dfe5"|tıa
+|style="background-color: #dff1e0"|daχ
+|style="background-color: #d6e1ec"|dağ*
+|style="background-color: #d6e1ec"|dag
+|style="background-color: #d6e1ec"|dağ
+|style="background-color: #d1ebeb"|daɣ
+|style="background-color: #d1ebeb"|togʻ
+|style="background-color: #d1ebeb"|tagh
+|style="background-color: #ece0f0"|taw
+|style="background-color: #ece0f0"|tau
+|style="background-color: #f1dfe5"|tō
+|style="background-color: #fldfe5"|tū
+|style="background-color: #d1ebeb"|daɣ
+|style="background-color: #d1ebeb"|tāɣ
+|style="background-color: #f1dfe5"|tu
+|-
+|'''suffix *-lïɣ''' (''mountainous'')
+|style="background-color: #d1ebeb"|tāɣlïɣ
+|style="background-color: #dlebeb"|taɣlïɣ
+|style="background-color: #d1ebeb"|taɣliɣ
+|style="background-color: #d1ebeb"|taɣlïɣ
+|style="background-color: #f1dfe5"|χayalaaχ
+|style="background-color: #dff1e0"|
+|style="background-color: #dff1e0"|dağlı
+|style="background-color: #dff1e0"|dagly
+|style="background-color: #dff1e0"|dağlı
+|style="background-color: #d1ebeb"|daɣlïɣ
+|style="background-color: #dff1e0"|togʻlik
+|style="background-color: #dff1e0"|taghliq
+|style="background-color: #f1dfe5"|tawlï
+|style="background-color: #f1dfe5"|tauly
+|style="background-color: #f1dfe5"|tōlū
+|style="background-color: #fldfe5"|tūlu
+|style="background-color: #d1ebeb"|daɣlïɣ
+|style="background-color: #d1ebeb"|
+|style="background-color: #f1dfe5"|tullă
+|}
+</div>
+<nowiki>*</nowiki>In the standard Istanbul dialect of Turkish, the ''[[ğ]]'' in ''dağ'' and ''dağlı'' is not realized as a consonant, but as a slight lengthening of the preceding vowel.
+
+== Members ==
+The following table is based mainly upon the classification scheme presented by [[Lars Johanson]].<ref>Lars Johanson, [https://books.google.com/books?id=j-vqDwAAQBAJ&pg=PA105 "The classification of the Turkic languages"] {{Webarchive|url=https://web.archive.org/web/20230115124026/https://books.google.com/books?id=j-vqDwAAQBAJ&pg=PA105 |date=15 January 2023 }}, in Martine Robbeets and Alexander Savelyev (eds.), ''The Oxford Guide to the Transeurasian Languages'', 2020, [[Oxford University Press]], pp. 105–114</ref><ref name="turcologica">{{cite web |url=http://www.turkiclanguages.com/www/classification.html |title=turcologica |access-date=18 June 2021 |archive-date=26 March 2023 |archive-url=https://web.archive.org/web/20230326025202/http://www.turkiclanguages.com/www/classification.html}}</ref>
+
+<div class="noprint">
+{| class="wikitable"
+|  rowspan="18" bgcolor="#d1ebeb" | [[Proto-Turkic language|Proto-Turkic]]
+|  rowspan="16" bgcolor="#d6e1ec" | [[Common Turkic languages|Common Turkic]]
+|  rowspan="4" bgcolor="#e4e0f0" style="border-left:none;"| [[Oghuz languages|Southwestern Common Turkic<br/>(Oghuz)]]
+[[File:Oghuz Turkic Languages distribution map.png|upright=0.80|frameless]]
+|  colspan="2" bgcolor="#e4e0f0" style="border-right:none;"| &nbsp;
+|
+* [[Salar language|Salar]]<ref>Deviating. Historically developed from Southwestern (Oghuz) (Johanson 1998)</ref><ref name="TurkicClass2011"/>
+|-
+|  colspan="2" bgcolor="#f1e9df" | West Oghuz
+|
+* [[Ajem-Turkic]] <small>(extinct)</small>
+* [[Old Anatolian Turkish]] <small>(extinct)</small>
+* [[Ottoman Turkish]] <small>(replaced by modern Turkish in the early 20th century)</small>
+* [[Pecheneg language|Pecheneg]] <small>(extinct)</small>
+* [[Turkish language|Turkish]]
+* [[Gagauz language|Gagauz]]
+* [[Azerbaijani language|Azerbaijani]]
+|-
+|  colspan="2" bgcolor="#f1e9df" | East Oghuz
+|
+* [[Turkmen language|Turkmen]]
+* [[Khorasani Turkic]]
+|-
+|  colspan="2" bgcolor="#f1e9df" | South Oghuz
+|
+* [[Qashqai language|Qashqai]]<ref name=a>Johanson, Lars & Éva Agnes Csató (ed.). 1998. The Turkic languages. London: Routledge. 82-83p.</ref>
+* [[Chaharmahali Turkic]]
+* [[Afshar dialect|Afshari Turkic]]<ref name=a/>
+* [[Sonqori dialect|Sonqori Turkic]]<ref name=a/>
+|-
+|  bgcolor="#e4e0f0" | [[Argu languages|Arghu]]
+[[File:Khalaj Turkic Language distribution map.png|upright=0.60|frameless]]
+|  colspan="2" bgcolor="#e4e0f0" | &nbsp;
+|
+* [[Khalaj language|Khalaj]]
+|-
+|  rowspan="5" bgcolor="#e4e0f0" style="border-left:none;"| [[Kipchak languages|Northwestern Common Turkic<br/>(Kipchak)]]
+[[File:Kipchak Map Labeled.png|frameless]]
+|-
+|  colspan="2" bgcolor="#f1e9df" | West Kipchak
+|
+* [[Kumyk language|Kumyk]]
+* [[Karachay-Balkar]]
+* [[Crimean Tatar language|Mountain dialect of Crimean Tatar]]
+* [[Urum language|Urum]]<ref>[https://glottolog.org/resource/languoid/id/urum1249 Urum] {{Webarchive|url=https://web.archive.org/web/20201204120635/https://glottolog.org/resource/languoid/id/urum1249 |date=4 December 2020 }} – Glottolog</ref>
+* [[Krymchak language|Krymchak]]<ref>[https://glottolog.org/resource/languoid/id/krym1236 Krymchak] {{Webarchive|url=https://web.archive.org/web/20210707180356/https://glottolog.org/resource/languoid/id/krym1236 |date=7 July 2021 }} – Glottolog</ref>
+* [[Karaim language|Karaim]]
+* [[Cuman language|Cuman]] <small>(extinct)</small>
+* [[Mamluk-Kipchak language|Mamluk-Kipchak]] <small>(extinct)</small>
+* [[Armeno-Kipchak language|Armeno-Kipchak]] <small>(extinct)</small>
+|-
+|  colspan="2" bgcolor="#f1e9df" | North Kipchak<br/>(Volga–Ural Turkic)
+|
+* [[Tatar language|Tatar]]
+* [[Bashkir language|Bashkir]]
+* [[Old Tatar]] <small>(extinct)</small>
+|-
+|  colspan="2" bgcolor="#f1e9df" | South Kipchak<br/>(Aralo-Caspian)
+|
+* [[Crimean Tatar language|Steppe dialect of Crimean Tatar]]
+** [[Dobrujan Tatar language|Dobrujan Tatar]]
+* [[Kazakh language|Kazakh]]
+* [[Karakalpak language|Karakalpak]]
+* [[Nogai language|Nogai]]
+* [[Siberian Tatar language|Western Siberian Tatar]]
+** [[Tobol-Irtysh Tatar dialect|Tobol-Irtysh Tatar]]
+|-
+|  colspan="2" bgcolor="#f1e9df" | Eastern Kipchak<ref name="turcologica"/><br/>(Kyrgyz–Kipchak)<ref name="Baskakov1958">{{cite journal |last = Baskakov | first = N. A. | author-link = Nikolai Baskakov (linguist) | year = 1958 | title = La Classification des Dialectes de la Langue Turque d'Altaï | journal = Acta Orientalia Academiae Scientiarum Hungaricae |volume=8 |pages=9–15 |issn=0001-6446 |language=fr}}</ref><ref name="Baskakov1969">{{cite book |surname=Baskakov |given=N. A. |author-link=Nikolai Baskakov (linguist) |title=Введение в изучение тюркских языков |trans-title=Introduction to the study of the Turkic languages |place=Moscow |publisher=Nauka |language=ru |year=1969}}</ref><ref name="Kormushin">{{cite encyclopedia |title=Алтайский язык |trans-title=Altai language |author=Kormushin, I. V. |lang=ru |date=2018 |encyclopedia=Большая российская энциклопедия/[[Great Russian Encyclopedia]] Online |url=https://bigenc.ru/linguistics/text/5199785 |access-date=31 July 2021 |archive-date=27 July 2021 |archive-url=https://web.archive.org/web/20210727181345/https://bigenc.ru/linguistics/text/5199785 |url-status=live }}</ref>{{efn|[[Nikolai Baskakov (linguist)|Nikolai Baskakov]] and some others believe that the Kyrgyz–Kipchak subgroup originally belonged to the Siberian group, but was significantly influenced by the Kipchak languages and can now be included in the Kipchak group.<ref name="Baskakov1958" /><ref name="Baskakov1969" /><ref name="Kormushin" />}}
+|
+* [[Kyrgyz language|Kyrgyz]]<ref name="turcologica"/>{{efn|Lars Johanson once considered Kyrgyz language to be a member of South Kipchak.(Johanson 1998)}}
+* [[Fergana Kipchak language|Fergana Kipchak]] <small>(extinct)</small>
+* [[Siberian Tatar language|Eastern Siberian Tatar]]
+** [[Baraba Tatar dialect|Baraba Tatar]]
+** [[Tom Tatar dialect|Tom Tatar]]
+* [[Southern Altai language|Southern Altai]]{{efn|[[Nikolai Baskakov (linguist)|Nikolai Baskakov]] and some others considered Southern Altai language to be a member of Kyrgyz-Kipchak subgroup.<ref name="Baskakov1958" /><ref name="Baskakov1969" /><ref name="Kormushin" />}}
+** Altai proper
+** [[Telengit language|Telengit]]
+** [[Teleut language|Teleut]]<ref name="Nevskaya">{{cite web |url=https://lingsib.iea.ras.ru/en/languages/teleut.shtml |author=Nevskaya, I.A. |title=The Teleut Language |work=Endangered Languages of Indigenous Peoples of Siberia |publisher=[[UNESCO]] |access-date=16 July 2021 |archive-date=11 July 2021 |archive-url=https://web.archive.org/web/20210711092004/https://lingsib.iea.ras.ru/en/languages/teleut.shtml |url-status=live }}</ref>
+|-
+|  rowspan="2" bgcolor="#e4e0f0" | [[Karluk languages|Southeastern Common Turkic<br/>(Karluk)]]
+[[File:Karluk Turkic Languages distribution map.png|upright=0.80|frameless]]
+|  colspan="2" bgcolor="#f1e9df" | West Karluk
+|
+* [[Uzbek language|Uzbek]]
+|-
+|  colspan="2" bgcolor="#f1e9df" | East Karluk
+|
+* [[Uyghur language|Uyghur]]
+* [[Ili Turki language|Ili Turki]]<ref>[https://glottolog.org/resource/languoid/id/ilit1241 Ili Turki] {{Webarchive|url=https://web.archive.org/web/20210620215057/https://glottolog.org/resource/languoid/id/ilit1241 |date=20 June 2021 }} – Glottolog</ref>
+* [[Äynu language|Äynu (Abdal)]]{{efn|Äynu contains a very large [[Persian language|Persian]] vocabulary component, and is spoken exclusively by adult men, almost as a [[cant (language)|cryptolect]].}}
+* [[Chagatai language|Chagatai]] <small>(extinct)</small>
+* [[Khorezmian Turkic]] <small>(extinct)</small>
+* [[Karakhanid language|Karakhanid]] <small>(extinct)</small>
+|-
+|  rowspan="4" bgcolor="#e4e0f0" | [[Siberian Turkic languages|Northeastern Common Turkic<br/>(Siberian)]]
+[[File:Siberian Turkic Languages distribution map.png|upright=0.80|frameless]]
+|  colspan="2" bgcolor="#f1e9df" | North Siberian
+|
+* [[Yakut language|Yakut]] (Sakha)
+* [[Dolgan language|Dolgan]]
+|-
+|  rowspan="3" bgcolor="#f1e9df" | South Siberian{{efn|Lars Johanson once classified South Siberian group into 4 subgroups (Sayan Turkic, Yenisei Turkic, Chulym Turkic and Altai Turkic). Sayan Turkic consisted of Tuvan (Soyot, Uriankhai) and Tofa (Karagas). Yenisei Turkic consisted of Khakas, Shor and related dialects (Saghay, Qaca, Qizil). Chulym Turkic consisted of dialects such as Küerik. Altai Turkic consisted of Altay (Oirot) and dialects such as Tuba, Qumanda, Qu, Teleut, Telengit. (Johanson 1998)}}
+|  bgcolor="#f1dfe5" | Sayan Turkic
+|
+* [[Tuvan language|Tuvan]] 
+* [[Tofa language|Tofa]]
+* [[Soyot-Tsaatan language|Soyot-Tsaatan]] <small>(extinct, partly revitalized)</small><ref name="Rassadin">{{cite web |url=https://lingsib.iea.ras.ru/en/languages/soiot.shtml |author=Rassadin, V.I. |title=The Soyot Language |work=Endangered Languages of Indigenous Peoples of Siberia |publisher=[[UNESCO]] |access-date=18 July 2021 |archive-date=3 May 2006 |archive-url=https://web.archive.org/web/20060503111550/https://lingsib.iea.ras.ru/en/languages/soiot.shtml |url-status=live }}</ref>
+* [[Dukhan language|Dukhan]]
+|-
+|  bgcolor="#f1dfe5" | [[Altai language|Altai]] and Yenisei Turkic
+|
+* [[Chulym language|Chulym]]
+* [[Fuyu Kyrgyz language|Fuyu Kyrgyz]]{{efn|According to Lars Johanson, Fuyu Kyrgyz is considered to be closely related to Khakas.}}
+* [[Khakas language|Khakas]]
+* [[Northern Altai language|Northern Altai]]<ref name="NorthernAltai">{{cite web |url=http://www.endangeredlanguages.com/lang/3869 |title=Northern Altai |publisher=ELP [[Endangered Languages Project]] |access-date=16 July 2021 |archive-date=25 November 2022 |archive-url=https://web.archive.org/web/20221125141836/https://www.endangeredlanguages.com/lang/3869 |url-status=live }}</ref>
+** [[Kumandin language|Kumandin]]<ref name="Kumandin">{{cite web |url=http://www.endangeredlanguages.com/lang/10475 |title=Kumandin |publisher=ELP [[Endangered Languages Project]] |access-date=15 July 2021 |archive-date=27 November 2021 |archive-url=https://web.archive.org/web/20211127000834/https://www.endangeredlanguages.com/lang/10475 |url-status=live }}</ref><ref name="Bitkeeva">{{cite web |url=https://lingsib.iea.ras.ru/en/languages/kumandy.shtml |author=Bitkeeva, A.N. |title=The Kumandin Language |work=Endangered Languages of Indigenous Peoples of Siberia |publisher=[[UNESCO]] |access-date=16 July 2021 |archive-date=11 July 2021 |archive-url=https://web.archive.org/web/20210711183413/https://lingsib.iea.ras.ru/en/languages/kumandy.shtml |url-status=live }}</ref> 
+** [[Chelkan language|Chelkan]]<ref name="Tazranova">{{cite web |url=https://lingsib.iea.ras.ru/en/languages/chelkan.shtml |author=Tazranova, A.R. |title=The Chelkan Language |work=Endangered Languages of Indigenous Peoples of Siberia |publisher=[[UNESCO]] |access-date=16 July 2021 |archive-date=11 July 2021 |archive-url=https://web.archive.org/web/20210711092000/https://lingsib.iea.ras.ru/en/languages/chelkan.shtml |url-status=live }}</ref>
+** [[Tubalar language|Tubalar]]
+* [[Shor language|Shor]]
+|-
+|  bgcolor="#f1dfe5" | 
+|
+* [[Western Yugur language|Western Yugur]]<ref name="turcologica" /><ref>[https://books.google.com/books?id=7XuMAgAAQBAJ&pg=PA7 Coene 2009] {{Webarchive|url=https://web.archive.org/web/20230115124028/https://books.google.com/books?id=7XuMAgAAQBAJ&pg=PA7 |date=15 January 2023 }}, p. 75</ref><ref>{{cite book|title=Concise Encyclopedia of Languages of the World|editor-first1= Keith |editor-last1=Brown |editor-first2=Sarah |editor-last2= Ogilvie|edition=revised|year=2010|publisher=Elsevier|url=https://books.google.com/books?id=F2SRqDzB50wC&pg=PA1109|page=1109|isbn=978-0-08-087775-4|access-date=24 April 2014|archive-date=15 January 2023|archive-url=https://web.archive.org/web/20230115124042/https://books.google.com/books?id=F2SRqDzB50wC&pg=PA1109|url-status=live}}</ref><ref>{{cite book|title=The Mainz Meeting: Proceedings of the Seventh International Conference on Turkish Linguistics, August 3–6, 1994|series=Turcologica Series|editor-first=Lars|editor-last=Johanson|others=Contributor Éva Ágnes Csató|year=1998|publisher=Otto Harrassowitz Verlag|url=https://books.google.com/books?id=cgNQdljvk70C&pg=PA28|page=28|isbn=978-3-447-03864-5|access-date=24 April 2014|archive-date=15 January 2023|archive-url=https://web.archive.org/web/20230115124028/https://books.google.com/books?id=cgNQdljvk70C&pg=PA28|url-status=live}}</ref><ref>In Glottolog, Western Yugur is classified as Enisei-East Siberian Turkic.</ref>
+* [[Orkhon Turkic language|Orkhon Turkic]] <small>(extinct)</small>
+* [[Old Uyghur]] <small>(extinct)</small>
+|-
+|-
+|  colspan=4 bgcolor="#d6e1ec" | [[Oghuric languages|Oghuric]]
+[[File:Chuvash Turkic Language distribution map.png|upright=0.60|frameless]]
+|
+* [[Chuvash language|Chuvash]] 
+* [[Khazar language|Khazar]] <small>(extinct)</small>
+* [[Bulgar language|Bulgar]] <small>(extinct)</small>
+|}
+</div>
+
+==Vocabulary comparison==
+{{Unreferenced section|date=November 2025}}
+
+The following is a brief comparison of [[cognate]]s among the basic vocabulary across the Turkic language family (about 60 words). Despite being cognates, some of the words may denote a different meaning.
+
+Empty cells do not necessarily imply that a particular language is lacking a word to describe the concept, but rather that the word for the concept in that language may be formed from another stem and is not cognate with the other words in the row or that a [[loanword]] is used in its place.
+
+Also, there may be shifts in the meaning from one language to another, and so the "Common meaning" given is only approximate. In some cases, the form given is found only in some dialects of the language, or a loanword is much more common (e.g. in Turkish, the preferred word for "fire" is the Persian-derived ''ateş'', whereas the native ''od'' is not in use in the standard language anymore). Forms are given in native Latin orthographies unless otherwise noted.
+<!--
+This is a cognate table, so please do not add any non-cognates -->
+<div style=" width:100%; overflow:auto">
+{|class="wikitable" style="font-size: 85%"
+!
+!Common meaning
+!style="background-color: #d6e1ec"|[[Proto-Turkic language|Proto-Turkic]]
+!style="background-color: #d1ebeb"|[[Old Turkic language|Old Turkic]]
+!style="background-color: #d6e1ec"|[[Turkish language|Turkish]]
+!style="background-color: #e4e0f0"|[[Azerbaijani language|Azerbaijani]]
+![[Karakhanid language|Karakhanid]]
+![[Qashqai language|Qashqai]]
+!style="background-color: #ece0f0"|[[Turkmen language|Turkmen]]
+!style="background-color: #f1dfe5"|[[Tatar language|Tatar]]
+![[Karaim language|Karaim]]
+!style="background-color: #f1e9df"|[[Bashkir language|Bashkir]]
+!style="background-color: #f1e9df"|[[Kazakh language|Kazakh]]
+!style="background-color: #d6e1ec"|[[Kyrgyz language|Kyrgyz]]
+!style="background-color: #f0f1df"|[[Uzbek language|Uzbek]]
+!style="background-color: #e8f1df"|[[Uyghur language|Uyghur]]
+!style="background-color: #dff1e0"|[[Sakha language|Sakha/Yakut]]
+!style="background-color: #dff1ed"|[[Chuvash language|Chuvash]]
+|-
+|rowspan=8 {{Vertical header|''Relationship''|nb=true|va=middle}}
+|father, ancestor
+|style="background-color: #d6e1ec"|*ata, *kañ
+|style="background-color: #d1ebeb"|ata, apa, qañ
+|style="background-color: #d6e1ec"|baba, ata
+|style="background-color: #e4e0f0"|baba, ata
+|apa, ata
+|bowa/ata
+|style="background-color: #ece0f0"|ata
+|style="background-color: #f1dfe5"|ata, atay{{efn|Cyrillic: ата, атай}}
+|ata
+|style="background-color: #f1e9df"|ata, atay{{efn|Cyrillic: ата, атай}}
+|style="background-color: #f1e9df"|äke, ata
+|style="background-color: #d6e1ec"|ata
+|style="background-color: #f0f1df"|ota
+|style="background-color: #e8f1df"|ata{{efn|UEY: ئاتا}}
+|style="background-color: #dff1e0"|ağa{{efn|Cyrillic: аҕа}}
+|style="background-color: #dff1ed"|atte, aśu, aşşĕ{{efn|Cyrillic: атте, аҫу, ашшӗ}}
+|-
+|mother
+|style="background-color: #d6e1ec"|*ana, *ög
+|style="background-color: #d1ebeb"|ana, ög
+|style="background-color: #d6e1ec"|ana, anne
+|style="background-color: #e4e0f0"|ana
+|ana, ene
+|ana/nänä
+|style="background-color: #ece0f0"|ene
+|style="background-color: #f1dfe5"|ana, äni{{efn|Cyrillic: ана, әни}}
+|ana
+|style="background-color: #f1e9df"|ana, inä(y)/asay{{efn|Cyrillic: ана, инә(й)/асай}}
+|style="background-color: #f1e9df"|ana, apa, şeşe
+|style="background-color: #d6e1ec"|ene, ana{{efn|Cyrillic: эне, ана}}
+|style="background-color: #f0f1df"|ona, acha
+|style="background-color: #e8f1df"|ana{{efn|UEY: ئانا}}
+|style="background-color: #dff1e0"|iỹe{{efn|IPA {{IPA|/ij̃e/}}. Cyrillic: ийэ. The [[nasal palatal approximant|nasal glide]] {{IPA|/j̃/}} is not distinguished from [[palatal approximant|oral glide]] {{IPA|/j/}} in orthography.}}
+|style="background-color: #dff1ed"|anne, annü, amăşĕ{{efn|Cyrillic: анне, аннӳ, амӑшӗ}}
+|-
+|son
+|style="background-color: #d6e1ec"|*ogul
+|style="background-color: #d1ebeb"|oğul
+|style="background-color: #d6e1ec"|oğul
+|style="background-color: #e4e0f0"|oğul
+|oɣul, ohul
+|oğul
+|style="background-color: #ece0f0"|ogul
+|style="background-color: #f1dfe5"|ul{{efn|Cyrillic: ул}}
+|uvul
+|style="background-color: #f1e9df"|ul
+|style="background-color: #f1e9df"|ūl{{efn|Cyrillic: ұл}}
+|style="background-color: #d6e1ec"|uul{{efn|Cyrillic: уул}}
+|style="background-color: #f0f1df"|oʻgʻil
+|style="background-color: #e8f1df"|oghul{{efn|UEY: ئوغۇل}}
+|style="background-color: #dff1e0"|uol{{efn|Cyrillic: уол}}
+|style="background-color: #dff1ed"|ıvăl, ul{{efn|Cyrillic: ывӑл, ул}}
+|-
+|man
+|style="background-color: #d6e1ec"|*ér, *érkek
+|style="background-color: #d1ebeb"|er
+|style="background-color: #d6e1ec"|erkek
+|style="background-color: #e4e0f0"|ər/erkək
+|erkek
+|kiši
+|style="background-color: #ece0f0"|erkek
+|style="background-color: #f1dfe5"|ir{{efn|Cyrillic: ир}}
+|ėr
+|style="background-color: #f1e9df"|ir, irkäk{{efn|Cyrillic: ир, иркәк}}
+|style="background-color: #f1e9df"|er, erkek{{efn|Cyrillic: ер, еркек}}
+|style="background-color: #d6e1ec"|er, erkek{{efn|Cyrillic: эр, эркек}}
+|style="background-color: #f0f1df"|erkak
+|style="background-color: #e8f1df"|er{{efn|UEY: ئەر}}
+|style="background-color: #dff1e0"|er{{efn|Cyrillic: эр}}
+|style="background-color: #dff1ed"|ar/arśın{{efn|Cyrillic: ар/арҫын}}
+|-
+|girl
+|style="background-color: #d6e1ec"|*kíŕ
+|style="background-color: #d1ebeb"|qız
+|style="background-color: #d6e1ec"|kız
+|style="background-color: #e4e0f0"|qız
+|qɨz 
+|qïz/qez
+|style="background-color: #ece0f0"|gyz
+|style="background-color: #f1dfe5"|qız{{efn|Cyrillic: кыз}}
+|qɨz 
+|style="background-color: #f1e9df"|qıð{{efn|Cyrillic: ҡыҙ}}
+|style="background-color: #f1e9df"|qyz{{efn|Cyrillic: қыз}}
+|style="background-color: #d6e1ec"|qız
+|style="background-color: #f0f1df"|qiz
+|style="background-color: #e8f1df"|qiz{{efn|UEY: قىز}}
+|style="background-color: #dff1e0"|kııs{{efn|Cyrillic: кыыс}}
+|style="background-color: #dff1ed"|hĕr{{efn|Cyrillic: хӗр}}
+|-
+|person
+|style="background-color: #d6e1ec"|*kiĺi, *yạlaŋuk
+|style="background-color: #d1ebeb"|kişi, yalañuq
+|style="background-color: #d6e1ec"|kişi
+|style="background-color: #e4e0f0"|şəxs, adam
+|kiši 
+|<!-- no cognate form known -->
+|style="background-color: #ece0f0"|kişi
+|style="background-color: #f1dfe5"|keşe{{efn|Cyrillic: кеше}}
+|kiši
+|style="background-color: #f1e9df"|keşe
+|style="background-color: #f1e9df"|kısı{{efn|Cyrillic: кісі}}
+|style="background-color: #d6e1ec"|kişi{{efn|Cyrillic: киши}}
+|style="background-color: #f0f1df"|kishi
+|style="background-color: #e8f1df"|kishi{{efn|UEY: كىشى}}
+|style="background-color: #dff1e0"|kihi{{efn|Cyrillic: киһи}}
+|style="background-color: #dff1ed"|śın{{efn|Cyrillic: ҫын}}
+|-
+|bride
+|style="background-color: #d6e1ec"|*gélin
+|style="background-color: #d1ebeb"|kelin
+|style="background-color: #d6e1ec"|gelin
+|style="background-color: #e4e0f0"|gəlin
+|qalɨŋ 
+|gälin
+|style="background-color: #ece0f0"|gelin
+|style="background-color: #f1dfe5"|kilen{{efn|Cyrillic: килен}}
+|kelin
+|style="background-color: #f1e9df"|kilen
+|style="background-color: #f1e9df"|kelın{{efn|Cyrillic: келін}}
+|style="background-color: #d6e1ec"|kelin{{efn|Cyrillic: келин}}
+|style="background-color: #f0f1df"|kelin
+|style="background-color: #e8f1df"|kelin{{efn|UEY: كەلىن}}
+|style="background-color: #dff1e0"|kiyiit{{efn|Cyrillic: кийиит}}
+|style="background-color: #dff1ed"|kin{{efn|Cyrillic: кин}}
+|-
+|mother-in-law
+|style="background-color: #d6e1ec"|<!-- probably a late innovation -->
+|style="background-color: #d1ebeb"|<!-- no cognate form known -->
+|style="background-color: #d6e1ec"|kaynana
+|style="background-color: #e4e0f0"|qaynana
+|
+|qäynänä
+|style="background-color: #ece0f0"|gaýyn ene
+|style="background-color: #f1dfe5"|qayın ana{{efn|Cyrillic: кайын ана}}
+|
+|style="background-color: #f1e9df"|qäynä{{efn|Cyrillic: ҡәйнә}}
+|style="background-color: #f1e9df"|qaıyn ene{{efn|Cyrillic: қайын ене}}
+|style="background-color: #d6e1ec"|qaynene{{efn|Cyrillic: кайнене}}
+|style="background-color: #f0f1df"|qaynona
+|style="background-color: #e8f1df"|qeyinana{{efn|UEY: قەيىنانا}}
+|style="background-color: #dff1e0"|<!-- no cognate form known -->
+|style="background-color: #dff1ed"|huńama{{efn|Cyrillic: хунама}}
+|-
+|rowspan=16 {{Vertical header|''Body parts''|nb=true|va=middle}}
+|heart
+|style="background-color: #d6e1ec"|*yürek
+|style="background-color: #d1ebeb"|yürek
+|style="background-color: #d6e1ec"|yürek
+|style="background-color: #e4e0f0"|ürək
+|jürek
+|iräg/üräg
+|style="background-color: #ece0f0"|ýürek
+|style="background-color: #f1dfe5"|yöräk{{Efn|Cyrillic: йөрәк}}
+|üriak, jürek
+|style="background-color: #f1e9df"|yöräk
+|style="background-color: #f1e9df"|jürek{{Efn|Cyrillic: жүрек}}
+|style="background-color: #d6e1ec"|cürök{{Efn|Cyrillic: жүрөк}}
+|style="background-color: #f0f1df"|yurak
+|style="background-color: #e8f1df"|yürek
+|style="background-color: #dff1e0"|sürex{{efn|Cyrillic: сүрэх}}
+|style="background-color: #dff1ed"|çĕre{{efn|Cyrillic: чӗре}}
+|-
+|blood
+|style="background-color: #d6e1ec"|*kiān
+|style="background-color: #d1ebeb"|qan
+|style="background-color: #d6e1ec"|kan
+|style="background-color: #e4e0f0"|qan
+|qan
+|qan
+|style="background-color: #ece0f0"|gan
+|style="background-color: #f1dfe5"|qan{{Efn|Cyrillic: кан}}
+|qan
+|style="background-color: #f1e9df"|qan{{efn|Cyrillic: ҡан}}
+|style="background-color: #f1e9df"|qan{{Efn|Cyrillic: қан}}
+|style="background-color: #d6e1ec"|qan
+|style="background-color: #f0f1df"|qon
+|style="background-color: #e8f1df"|qan
+|style="background-color: #dff1e0"|xaan{{efn|Cyrillic: хаан}}
+|style="background-color: #dff1ed"|yun
+|-
+|head
+|style="background-color: #d6e1ec"|*baĺč
+|style="background-color: #d1ebeb"|baš
+|style="background-color: #d6e1ec"|baş
+|style="background-color: #e4e0f0"|baş
+|baš 
+|baš
+|style="background-color: #ece0f0"|baş
+|style="background-color: #f1dfe5"|baş
+|baš
+|style="background-color: #f1e9df"|baş
+|style="background-color: #f1e9df"|bas
+|style="background-color: #d6e1ec"|baş
+|style="background-color: #f0f1df"|bosh
+|style="background-color: #e8f1df"|bash
+|style="background-color: #dff1e0"|bas
+|style="background-color: #dff1ed"|puś/poś
+|-
+|hair
+|style="background-color: #d6e1ec"|*s(i)ač, *kïl
+|style="background-color: #d1ebeb"|sač, qïl
+|style="background-color: #d6e1ec"|saç, kıl
+|style="background-color: #e4e0f0"|saç, qıl
+|sač, qɨl
+|tik/qel
+|style="background-color: #ece0f0"|saç, gyl
+|style="background-color: #f1dfe5"|çäç, qıl
+|čač, sač, qɨl
+|style="background-color: #f1e9df"|säs, qıl
+|style="background-color: #f1e9df"|şaş, qyl
+|style="background-color: #d6e1ec"|çaç, qıl
+|style="background-color: #f0f1df"|soch, qil
+|style="background-color: #e8f1df"|sach, qil
+|style="background-color: #dff1e0"|battax, kıl
+|style="background-color: #dff1ed"|śüś, hul
+|-
+|eye
+|style="background-color: #d6e1ec"|*göŕ
+|style="background-color: #d1ebeb"|köz
+|style="background-color: #d6e1ec"|göz
+|style="background-color: #e4e0f0"|göz
+|köz
+|gez/göz
+|style="background-color: #ece0f0"|göz
+|style="background-color: #f1dfe5"|küz
+|kioź, goz
+|style="background-color: #f1e9df"|küð
+|style="background-color: #f1e9df"|köz
+|style="background-color: #d6e1ec"|köz
+|style="background-color: #f0f1df"|koʻz
+|style="background-color: #e8f1df"|köz
+|style="background-color: #dff1e0"|xarax, kös
+|style="background-color: #dff1ed"|kuś/koś
+|-
+|eyelash
+|style="background-color: #d6e1ec"|*kirpik
+|style="background-color: #d1ebeb"|kirpik
+|style="background-color: #d6e1ec"|kirpik
+|style="background-color: #e4e0f0"|kirpik
+|kirpik
+|kirpig
+|style="background-color: #ece0f0"|kirpik
+|style="background-color: #f1dfe5"|kerfek
+|kirpik
+|style="background-color: #f1e9df"|kerpek
+|style="background-color: #f1e9df"|kırpık
+|style="background-color: #d6e1ec"|kirpik
+|style="background-color: #f0f1df"|kiprik
+|style="background-color: #e8f1df"|kirpik
+|style="background-color: #dff1e0"|kılaman, kirbii
+|style="background-color: #dff1ed"|hărpăk
+|-
+|ear
+|style="background-color: #d6e1ec"|*kulkak
+|style="background-color: #d1ebeb"|qulqaq
+|style="background-color: #d6e1ec"|kulak
+|style="background-color: #e4e0f0"|qulaq
+|qulaq, qulqaq, qulxaq, qulɣaq
+|qulaq
+|style="background-color: #ece0f0"|gulak
+|style="background-color: #f1dfe5"|qolaq
+|qulax
+|style="background-color: #f1e9df"|qolaq
+|style="background-color: #f1e9df"|qūlaq
+|style="background-color: #d6e1ec"|qulaq
+|style="background-color: #f0f1df"|quloq
+|style="background-color: #e8f1df"|qulaq
+|style="background-color: #dff1e0"|kulgaax
+|style="background-color: #dff1ed"|hălha
+|-
+|nose
+|style="background-color: #d6e1ec"|*burun
+|style="background-color: #d1ebeb"|burun
+|style="background-color: #d6e1ec"|burun
+|style="background-color: #e4e0f0"|burun
+|burun
+|burn
+|style="background-color: #ece0f0"|burun
+|style="background-color: #f1dfe5"|borın
+|burun
+|style="background-color: #f1e9df"|moron
+|style="background-color: #f1e9df"|mūryn
+|style="background-color: #d6e1ec"|murun
+|style="background-color: #f0f1df"|burun
+|style="background-color: #e8f1df"|burun
+|style="background-color: #dff1e0"|murun, munnu
+|style="background-color: #dff1ed"|murun
+|-
+|arm
+|style="background-color: #d6e1ec"|*kol
+|style="background-color: #d1ebeb"|qol
+|style="background-color: #d6e1ec"|kol
+|style="background-color: #e4e0f0"|qol
+|qol
+|qol
+|style="background-color: #ece0f0"|gol
+|style="background-color: #f1dfe5"|qul
+|kol
+|style="background-color: #f1e9df"|qul
+|style="background-color: #f1e9df"|qol
+|style="background-color: #d6e1ec"|qol
+|style="background-color: #f0f1df"|qoʻl
+|style="background-color: #e8f1df"|qol
+|style="background-color: #dff1e0"|хol
+|style="background-color: #dff1ed"|hul
+|-
+|hand
+|style="background-color: #d6e1ec"|*el-ig
+|style="background-color: #d1ebeb"|elig
+|style="background-color: #d6e1ec"|el
+|style="background-color: #e4e0f0"|əl
+|elig
+|äl
+|style="background-color: #ece0f0"|el
+|style="background-color: #f1dfe5"|<!-- no cognate form known -->
+|
+|style="background-color: #f1e9df"|<!-- no cognate form known -->
+|style="background-color: #f1e9df"|alaqan
+|style="background-color: #d6e1ec"|alaqan
+|style="background-color: #f0f1df"|ilik
+|style="background-color: #e8f1df"|ilik
+|style="background-color: #dff1e0"|ilii
+|style="background-color: #dff1ed"|ală
+|-
+|finger
+|style="background-color: #d6e1ec"|*erŋek, *biarŋak
+|style="background-color: #d1ebeb"|erŋek
+|style="background-color: #d6e1ec"|parmak
+|style="background-color: #e4e0f0"|barmaq
+|barmaq
+|burmaq
+|style="background-color: #ece0f0"|barmaq
+|style="background-color: #f1dfe5"|barmaq
+|barmax
+|style="background-color: #f1e9df"|barmaq
+|style="background-color: #f1e9df"|barmaq, sausaq
+|style="background-color: #d6e1ec"|barmaq
+|style="background-color: #f0f1df"|barmoq
+|style="background-color: #e8f1df"|barmaq
+|style="background-color: #dff1e0"|tarbaq
+|style="background-color: #dff1ed"|pürne/porńa
+|-
+|fingernail
+|style="background-color: #d6e1ec"|*dïrŋak
+|style="background-color: #d1ebeb"|tïrŋaq
+|style="background-color: #d6e1ec"|tırnak
+|style="background-color: #e4e0f0"|dırnaq
+|tɨrŋaq 
+|dïrnaq
+|style="background-color: #ece0f0"|dyrnak
+|style="background-color: #f1dfe5"|tırnaq
+|tɨrnax
+|style="background-color: #f1e9df"|tırnaq
+|style="background-color: #f1e9df"|tyrnaq
+|style="background-color: #d6e1ec"|tırmaq
+|style="background-color: #f0f1df"|tirnoq
+|style="background-color: #e8f1df"|tirnaq
+|style="background-color: #dff1e0"|tıngıraq
+|style="background-color: #dff1ed"|çĕrne
+|-
+|knee
+|style="background-color: #d6e1ec"|*dīŕ, *dǖŕ
+|style="background-color: #d1ebeb"|tiz
+|style="background-color: #d6e1ec"|diz
+|style="background-color: #e4e0f0"|diz
+|tizle-
+(to press with one's knees)
+|diz
+|style="background-color: #ece0f0"|dyz
+|style="background-color: #f1dfe5"|tez
+|tɨz
+|style="background-color: #f1e9df"|teð
+|style="background-color: #f1e9df"|tıze
+|style="background-color: #d6e1ec"|tize
+|style="background-color: #f0f1df"|tizza
+|style="background-color: #e8f1df"|tiz
+|style="background-color: #dff1e0"|tobuk
+|style="background-color: #dff1ed"|çĕrśi, çĕrkuśśi
+|-
+|calf
+|style="background-color: #d6e1ec"|*baltïr
+|style="background-color: #d1ebeb"|baltïr
+|style="background-color: #d6e1ec"|baldır
+|style="background-color: #e4e0f0"|baldır
+|baldɨr 
+|ballïr
+|style="background-color: #ece0f0"|baldyr
+|style="background-color: #f1dfe5"|baltır
+|baldɨr
+|style="background-color: #f1e9df"|baltır
+|style="background-color: #f1e9df"|baltyr
+|style="background-color: #d6e1ec"|baltır
+|style="background-color: #f0f1df"|boldir
+|style="background-color: #e8f1df"|baldir
+|style="background-color: #dff1e0"|ballır
+|style="background-color: #dff1ed"|pıl
+|-
+|foot
+|style="background-color: #d6e1ec"|*(h)adak
+|style="background-color: #d1ebeb"|adaq
+|style="background-color: #d6e1ec"|ayak
+|style="background-color: #e4e0f0"|ayaq
+|aδaq 
+|ayaq
+|style="background-color: #ece0f0"|aýak
+|style="background-color: #f1dfe5"|ayaq
+|ajax
+|style="background-color: #f1e9df"|ayaq
+|style="background-color: #f1e9df"|aiaq
+|style="background-color: #d6e1ec"|but, ayaq
+|style="background-color: #f0f1df"|oyoq, adoq
+|style="background-color: #e8f1df"|ayaq
+|style="background-color: #dff1e0"|ataq
+|style="background-color: #dff1ed"|ura
+|-
+|belly
+|style="background-color: #d6e1ec"|*kạrïn
+|style="background-color: #d1ebeb"|qarïn
+|style="background-color: #d6e1ec"|karın
+|style="background-color: #e4e0f0"|qarın
+|qarɨn 
+|qarn
+|style="background-color: #ece0f0"|garyn
+|style="background-color: #f1dfe5"|qarın
+|qarɨn
+|style="background-color: #f1e9df"|qarın
+|style="background-color: #f1e9df"|qaryn
+|style="background-color: #d6e1ec"|qarın
+|style="background-color: #f0f1df"|qorin
+|style="background-color: #e8f1df"|qerin
+|style="background-color: #dff1e0"|xarın
+|style="background-color: #dff1ed"|hırăm
+|-
+|rowspan=5 {{Vertical header|''Animals''|nb=true|va=middle}}
+|horse
+|style="background-color: #d6e1ec"|*(h)at
+|style="background-color: #d1ebeb"|at
+|style="background-color: #d6e1ec"|at
+|style="background-color: #e4e0f0"|at
+|at
+|at
+|style="background-color: #ece0f0"|at
+|style="background-color: #f1dfe5"|at
+|at
+|style="background-color: #f1e9df"|at
+|style="background-color: #f1e9df"|at
+|style="background-color: #d6e1ec"|at
+|style="background-color: #f0f1df"|ot
+|style="background-color: #e8f1df"|at
+|style="background-color: #dff1e0"|at
+|style="background-color: #dff1ed"|ut/ot
+|-
+|cattle
+|style="background-color: #d6e1ec"|*dabar
+|style="background-color: #d1ebeb"|ingek, tabar
+|style="background-color: #d6e1ec"|inek, davar, sığır
+|style="background-color: #e4e0f0"|inək, sığır
+|ingek, ingen; tavar
+|seğer
+|style="background-color: #ece0f0"|sygyr
+|style="background-color: #f1dfe5"|sıyır
+|sɨjɨr
+|style="background-color: #f1e9df"|hıyır
+|style="background-color: #f1e9df"|siyr, eneke
+|style="background-color: #d6e1ec"|uy, sıyır, inek
+|style="background-color: #f0f1df"|sigir, inak
+|style="background-color: #e8f1df"|siyir
+|style="background-color: #dff1e0"|ınax
+|style="background-color: #dff1ed"|ĕne
+|-
+|dog
+|style="background-color: #d6e1ec"|*ït, *köpek
+|style="background-color: #d1ebeb"|ït
+|style="background-color: #d6e1ec"|it, köpek
+|style="background-color: #e4e0f0"|it
+|ɨt 
+|kepäg
+|style="background-color: #ece0f0"|it
+|style="background-color: #f1dfe5"|et
+|it´
+|style="background-color: #f1e9df"|et
+|style="background-color: #f1e9df"|ıt, köpek
+|style="background-color: #d6e1ec"|it, köbök
+|style="background-color: #f0f1df"|it
+|style="background-color: #e8f1df"|it
+|style="background-color: #dff1e0"|ıt
+|style="background-color: #dff1ed"|yıtă
+|-
+|fish
+|style="background-color: #d6e1ec"|*bālïk
+|style="background-color: #d1ebeb"|balïq
+|style="background-color: #d6e1ec"|balık
+|style="background-color: #e4e0f0"|balıq
+|balɨq 
+|balïq
+|style="background-color: #ece0f0"|balyk
+|style="background-color: #f1dfe5"|balıq
+|balɨx
+|style="background-color: #f1e9df"|balıq
+|style="background-color: #f1e9df"|balyq
+|style="background-color: #d6e1ec"|balıq
+|style="background-color: #f0f1df"|baliq
+|style="background-color: #e8f1df"|beliq
+|style="background-color: #dff1e0"|balık
+|style="background-color: #dff1ed"|pulă
+|-
+|louse
+|style="background-color: #d6e1ec"|*bït
+|style="background-color: #d1ebeb"|bit
+|style="background-color: #d6e1ec"|bit
+|style="background-color: #e4e0f0"|bit
+|bit
+|bit
+|style="background-color: #ece0f0"|bit
+|style="background-color: #f1dfe5"|bet
+|bit
+|style="background-color: #f1e9df"|bet
+|style="background-color: #f1e9df"|bıt
+|style="background-color: #d6e1ec"|bit
+|style="background-color: #f0f1df"|bit
+|style="background-color: #e8f1df"|bit
+|style="background-color: #dff1e0"|bıt
+|style="background-color: #dff1ed"|pıytă/puťă
+|-
+|rowspan=18 {{Vertical header|''Other nouns''|nb=true|va=middle}}
+|house
+|style="background-color: #d6e1ec"|*eb, *bark
+|style="background-color: #d1ebeb"|eb, barq
+|style="background-color: #d6e1ec"|ev, bark
+|style="background-color: #e4e0f0"|ev
+|ev
+|äv
+|style="background-color: #ece0f0"|öý
+|style="background-color: #f1dfe5"|öy
+|üy, üv
+|style="background-color: #f1e9df"|öy
+|style="background-color: #f1e9df"|üı
+|style="background-color: #d6e1ec"|üy
+|style="background-color: #f0f1df"|uy
+|style="background-color: #e8f1df"|öy
+|style="background-color: #dff1e0"|<!-- no cognate form known -->
+|style="background-color: #dff1ed"|śurt
+|-
+|tent
+|style="background-color: #d6e1ec"|*otag, *gerekü
+|style="background-color: #d1ebeb"|otaɣ, kerekü
+|style="background-color: #d6e1ec"|çadır, otağ
+|style="background-color: #e4e0f0"|çadır; otaq
+|otaɣ, kerekü
+|čador
+|style="background-color: #ece0f0"|çadyr; otag
+|style="background-color: #f1dfe5"|çatır
+|oda
+|style="background-color: #f1e9df"|satır
+|style="background-color: #f1e9df"|şatyr, otau
+|style="background-color: #d6e1ec"|çatır, otoo, otoq
+|style="background-color: #f0f1df"|chodir; oʻtoq
+|style="background-color: #e8f1df"|chadir; otaq
+|style="background-color: #dff1e0"|otuu
+|style="background-color: #dff1ed"|çatăr
+|-
+|way
+|style="background-color: #d6e1ec"|*yōl
+|style="background-color: #d1ebeb"|yol
+|style="background-color: #d6e1ec"|yol
+|style="background-color: #e4e0f0"|yol
+|jol
+|yol
+|style="background-color: #ece0f0"|ýol
+|style="background-color: #f1dfe5"|yul
+|jol
+|style="background-color: #f1e9df"|yul
+|style="background-color: #f1e9df"|jol
+|style="background-color: #d6e1ec"|col
+|style="background-color: #f0f1df"|yoʻl
+|style="background-color: #e8f1df"|yol
+|style="background-color: #dff1e0"|suol
+|style="background-color: #dff1ed"|śul
+|-
+|bridge
+|style="background-color: #d6e1ec"|*köprüg
+|style="background-color: #d1ebeb"|köprüg
+|style="background-color: #d6e1ec"|köprü
+|style="background-color: #e4e0f0"|körpü
+|köprüg
+|<!-- no cognate form known -->
+|style="background-color: #ece0f0"|köpri
+|style="background-color: #f1dfe5"|küper
+|kiopriu
+|style="background-color: #f1e9df"|küper
+|style="background-color: #f1e9df"|köpır
+|style="background-color: #d6e1ec"|köpürö
+|style="background-color: #f0f1df"|koʻprik
+|style="background-color: #e8f1df"|kövrük
+|style="background-color: #dff1e0"|kürpe
+|style="background-color: #dff1ed"|kĕper
+|-
+|arrow
+|style="background-color: #d6e1ec"|*ok
+|style="background-color: #d1ebeb"|oq
+|style="background-color: #d6e1ec"|ok
+|style="background-color: #e4e0f0"|ox
+|oq
+|ox/tir
+|style="background-color: #ece0f0"|ok
+|style="background-color: #f1dfe5"|uq
+|oq
+|style="background-color: #f1e9df"|uq
+|style="background-color: #f1e9df"|oq
+|style="background-color: #d6e1ec"|oq
+|style="background-color: #f0f1df"|oʻq
+|style="background-color: #e8f1df"|oq
+|style="background-color: #dff1e0"|ox
+|style="background-color: #dff1ed"|uhă
+|-
+|fire
+|style="background-color: #d6e1ec"|*ōt
+|style="background-color: #d1ebeb"|ōt
+|style="background-color: #d6e1ec"|od, ateş (Pers.)
+|style="background-color: #e4e0f0"|od
+|ot
+|ot
+|style="background-color: #ece0f0"|ot
+|style="background-color: #f1dfe5"|ut
+|ot
+|style="background-color: #f1e9df"|ut
+|style="background-color: #f1e9df"|ot
+|style="background-color: #d6e1ec"|ot
+|style="background-color: #f0f1df"|oʻt
+|style="background-color: #e8f1df"|ot
+|style="background-color: #dff1e0"|uot
+|style="background-color: #dff1ed"|vut/vot
+|-
+|ash
+|style="background-color: #d6e1ec"|*kül
+|style="background-color: #d1ebeb"|kül
+|style="background-color: #d6e1ec"|kül
+|style="background-color: #e4e0f0"|kül
+|kül
+|kil/kül
+|style="background-color: #ece0f0"|kül
+|style="background-color: #f1dfe5"|köl
+|kul
+|style="background-color: #f1e9df"|köl
+|style="background-color: #f1e9df"|kül
+|style="background-color: #d6e1ec"|kül
+|style="background-color: #f0f1df"|kul
+|style="background-color: #e8f1df"|kül
+|style="background-color: #dff1e0"|kül
+|style="background-color: #dff1ed"|kĕl
+|-
+|water
+|style="background-color: #d6e1ec"|*sub, *sïb
+|style="background-color: #d1ebeb"|sub
+|style="background-color: #d6e1ec"|su
+|style="background-color: #e4e0f0"|su
+|suv
+|su
+|style="background-color: #ece0f0"|suw
+|style="background-color: #f1dfe5"|su
+|su
+|style="background-color: #f1e9df"|hıw
+|style="background-color: #f1e9df"|su
+|style="background-color: #d6e1ec"|suu
+|style="background-color: #f0f1df"|suv
+|style="background-color: #e8f1df"|su
+|style="background-color: #dff1e0"|uu
+|style="background-color: #dff1ed"|şıv/şu
+|-
+|ship, boat
+|style="background-color: #d6e1ec"|*gḗmi
+|style="background-color: #d1ebeb"|kemi
+|style="background-color: #d6e1ec"|gemi
+|style="background-color: #e4e0f0"|gəmi
+|kemi
+|<!-- no cognate form known -->
+|style="background-color: #ece0f0"|gämi
+|style="background-color: #f1dfe5"|köymä
+|gemi
+|style="background-color: #f1e9df"|kämä
+|style="background-color: #f1e9df"|keme
+|style="background-color: #d6e1ec"|keme
+|style="background-color: #f0f1df"|kema
+|style="background-color: #e8f1df"|keme
+|style="background-color: #dff1e0"|<!-- no cognate form known -->
+|style="background-color: #dff1ed"|kimĕ
+|-
+|lake
+|style="background-color: #d6e1ec"|*kȫl
+|style="background-color: #d1ebeb"|köl
+|style="background-color: #d6e1ec"|göl
+|style="background-color: #e4e0f0"|göl
+|köl
+|göl/gel
+|style="background-color: #ece0f0"|köl
+|style="background-color: #f1dfe5"|kül
+|giol´
+|style="background-color: #f1e9df"|kül
+|style="background-color: #f1e9df"|köl
+|style="background-color: #d6e1ec"|köl
+|style="background-color: #f0f1df"|koʻl
+|style="background-color: #e8f1df"|köl
+|style="background-color: #dff1e0"|küöl
+|style="background-color: #dff1ed"|külĕ
+|-
+|sun/day
+|style="background-color: #d6e1ec"|*güneĺ, *gün
+|style="background-color: #d1ebeb"|kün
+|style="background-color: #d6e1ec"|güneş, gün
+|style="background-color: #e4e0f0"|günəş, gün
+|kün, qujaš 
+|gin/gün
+|style="background-color: #ece0f0"|gün
+|style="background-color: #f1dfe5"|qoyaş, kön
+|kujaš
+|style="background-color: #f1e9df"|qoyaş, kön
+|style="background-color: #f1e9df"|kün
+|style="background-color: #d6e1ec"|kün
+|style="background-color: #f0f1df"|quyosh, kun
+|style="background-color: #e8f1df"|quyash, kün
+|style="background-color: #dff1e0"|kün
+|style="background-color: #dff1ed"|hĕvel, kun
+|-
+|cloud
+|style="background-color: #d6e1ec"|*bulït
+|style="background-color: #d1ebeb"|bulut
+|style="background-color: #d6e1ec"|bulut
+|style="background-color: #e4e0f0"|bulud
+|bulut
+|bulut
+|style="background-color: #ece0f0"|bulut
+|style="background-color: #f1dfe5"|bolıt
+|bulut
+|style="background-color: #f1e9df"|bolot
+|style="background-color: #f1e9df"|{{Not a typo|bult}}
+|style="background-color: #d6e1ec"|bulut
+|style="background-color: #f0f1df"|bulut
+|style="background-color: #e8f1df"|bulut
+|style="background-color: #dff1e0"|bılıt
+|style="background-color: #dff1ed"|pĕlĕt
+|-
+|star
+|style="background-color: #d6e1ec"|*yultuŕ
+|style="background-color: #d1ebeb"|yultuz
+|style="background-color: #d6e1ec"|yıldız
+|style="background-color: #e4e0f0"|ulduz
+|julduz
+|ulluz
+|style="background-color: #ece0f0"|ýyldyz
+|style="background-color: #f1dfe5"|yoldız
+|julduz
+|style="background-color: #f1e9df"|yondoð
+|style="background-color: #f1e9df"|jūldyz
+|style="background-color: #d6e1ec"|cıldız
+|style="background-color: #f0f1df"|yulduz
+|style="background-color: #e8f1df"|yultuz
+|style="background-color: #dff1e0"|sulus
+|style="background-color: #dff1ed"|śăltăr
+|-
+|ground, earth
+|style="background-color: #d6e1ec"|*toprak
+|style="background-color: #d1ebeb"|topraq
+|style="background-color: #d6e1ec"|toprak
+|style="background-color: #e4e0f0"|torpaq
+|topraq 
+|torpaq
+|style="background-color: #ece0f0"|toprak
+|style="background-color: #f1dfe5"|tufraq
+|topraq, toprax
+|style="background-color: #f1e9df"|tupraq
+|style="background-color: #f1e9df"|topyraq
+|style="background-color: #d6e1ec"|topuraq
+|style="background-color: #f0f1df"|tuproq
+|style="background-color: #e8f1df"|tupraq
+|style="background-color: #dff1e0"|toburax
+|style="background-color: #dff1ed"|tăpra
+|-
+|hilltop
+|style="background-color: #d6e1ec"|*tepö, *töpö
+|style="background-color: #d1ebeb"|töpü
+|style="background-color: #d6e1ec"|tepe
+|style="background-color: #e4e0f0"|təpə
+|tepe
+|<!-- no cognate form known -->
+|style="background-color: #ece0f0"|depe
+|style="background-color: #f1dfe5"|tübä
+|tebe
+|style="background-color: #f1e9df"|tübä
+|style="background-color: #f1e9df"|töbe
+|style="background-color: #d6e1ec"|döbö, töbö
+|style="background-color: #f0f1df"|tepa
+|style="background-color: #e8f1df"|töpe
+|style="background-color: #dff1e0"|töbö
+|style="background-color: #dff1ed"|tüpĕ
+|-
+|tree/wood
+|style="background-color: #d6e1ec"|*ïgač
+|style="background-color: #d1ebeb"|ïɣač
+|style="background-color: #d6e1ec"|ağaç
+|style="background-color: #e4e0f0"|ağac
+|jɨɣač 
+|ağaĵ
+|style="background-color: #ece0f0"|agaç
+|style="background-color: #f1dfe5"|ağaç
+|ahač
+|style="background-color: #f1e9df"|ağas
+|style="background-color: #f1e9df"|ağaş, tal, daraq
+|style="background-color: #d6e1ec"|baq, daraq, cığaç
+|style="background-color: #f0f1df"|yogʻoch
+|style="background-color: #e8f1df"|yahach
+|style="background-color: #dff1e0"|''mas'' 
+|style="background-color: #dff1ed"|yıvăś
+|-
+|god ([[Tengri]])
+|style="background-color: #d6e1ec"|*teŋri, *taŋrï
+|style="background-color: #d1ebeb"|teŋri, burqan
+|style="background-color: #d6e1ec"|tanrı
+|style="background-color: #e4e0f0"|tanrı
+|teŋri 
+|tarï/Allah/Xoda
+|style="background-color: #ece0f0"|taňry
+|style="background-color: #f1dfe5"|täñre
+|Tieńri
+|style="background-color: #f1e9df"|täñre
+|style="background-color: #f1e9df"|täñır
+|style="background-color: #d6e1ec"|teñir
+|style="background-color: #f0f1df"|tangri
+|style="background-color: #e8f1df"|tengri
+|style="background-color: #dff1e0"|tangara
+|style="background-color: #dff1ed"|tură/toră
+|-
+|sky
+|style="background-color: #d6e1ec"|*teŋri, *kȫk
+|style="background-color: #d1ebeb"|kök, teŋri
+|style="background-color: #d6e1ec"|gök
+|style="background-color: #e4e0f0"|göy
+|kök
+|gey/göy
+|style="background-color: #ece0f0"|gök
+|style="background-color: #f1dfe5"|kük
+|kök
+|style="background-color: #f1e9df"|kük
+|style="background-color: #f1e9df"|kök
+|style="background-color: #d6e1ec"|kök
+|style="background-color: #f0f1df"|koʻk
+|style="background-color: #e8f1df"|kök
+|style="background-color: #dff1e0"|küöx
+|style="background-color: #dff1ed"|kăvak/koak
+|-
+|rowspan=7 {{Vertical header|''Adjectives''|nb=true|va=middle}}
+|long
+|style="background-color: #d6e1ec"|*uŕïn
+|style="background-color: #d1ebeb"|uzun
+|style="background-color: #d6e1ec"|uzun
+|style="background-color: #e4e0f0"|uzun
+|uzun
+|uzun
+|style="background-color: #ece0f0"|uzyn
+|style="background-color: #f1dfe5"|ozın
+|uzun
+|style="background-color: #f1e9df"|oðon
+|style="background-color: #f1e9df"|ūzyn
+|style="background-color: #d6e1ec"|uzun
+|style="background-color: #f0f1df"|uzun
+|style="background-color: #e8f1df"|uzun
+|style="background-color: #dff1e0"|uhun
+|style="background-color: #dff1ed"|vărăm
+|-
+|new
+|style="background-color: #d6e1ec"|*yaŋï, *yeŋi
+|style="background-color: #d1ebeb"|yaŋï
+|style="background-color: #d6e1ec"|yeni
+|style="background-color: #e4e0f0"|yeni
+|jaŋɨ 
+|yeŋi
+|style="background-color: #ece0f0"|ýaňy
+|style="background-color: #f1dfe5"|yaña
+|jɨŋgɨ
+|style="background-color: #f1e9df"|yañı
+|style="background-color: #f1e9df"|jaña
+|style="background-color: #d6e1ec"|cañı
+|style="background-color: #f0f1df"|yangi
+|style="background-color: #e8f1df"|yengi
+|style="background-color: #dff1e0"|saña
+|style="background-color: #dff1ed"|śĕnĕ
+|-
+|fat
+|style="background-color: #d6e1ec"|*semiŕ
+|style="background-color: #d1ebeb"|semiz
+|style="background-color: #d6e1ec"|semiz, şişman
+|style="background-color: #e4e0f0"|səmiz
+|semiz
+|<!-- no cognate form known -->
+|style="background-color: #ece0f0"|semiz
+|style="background-color: #f1dfe5"|simez
+|semiz
+|style="background-color: #f1e9df"|himeð
+|style="background-color: #f1e9df"|semız
+|style="background-color: #d6e1ec"|semiz
+|style="background-color: #f0f1df"|semiz
+|style="background-color: #e8f1df"|semiz
+|style="background-color: #dff1e0"|emis
+|style="background-color: #dff1ed"|samăr
+|-
+|full
+|style="background-color: #d6e1ec"|*dōlï
+|style="background-color: #d1ebeb"|tolu
+|style="background-color: #d6e1ec"|dolu
+|style="background-color: #e4e0f0"|dolu
+|tolu
+|dolu
+|style="background-color: #ece0f0"|doly
+|style="background-color: #f1dfe5"|tulı
+|tolɨ
+|style="background-color: #f1e9df"|tulı
+|style="background-color: #f1e9df"|toly, tolyq
+|style="background-color: #d6e1ec"|toluq, tolu, toluu, tolo
+|style="background-color: #f0f1df"|toʻla
+|style="background-color: #e8f1df"|toluq
+|style="background-color: #dff1e0"|toloru
+|style="background-color: #dff1ed"|tulli
+|-
+|white
+|style="background-color: #d6e1ec"|*āk, *ürüŋ
+|style="background-color: #d1ebeb"|āq, ürüŋ
+|style="background-color: #d6e1ec"|ak, beyaz (Ar.)
+|style="background-color: #e4e0f0"|ağ
+|aq
+|aq
+|style="background-color: #ece0f0"|ak
+|style="background-color: #f1dfe5"|aq
+|aq
+|style="background-color: #f1e9df"|aq
+|style="background-color: #f1e9df"|aq
+|style="background-color: #d6e1ec"|aq
+|style="background-color: #f0f1df"|oq
+|style="background-color: #e8f1df"|aq
+|style="background-color: #dff1e0"|ürüñ (үрүҥ)
+|style="background-color: #dff1ed"|şură
+|-
+|black
+|style="background-color: #d6e1ec"|*kara
+|style="background-color: #d1ebeb"|qara
+|style="background-color: #d6e1ec"|kara, siyah (Pers.)
+|style="background-color: #e4e0f0"|qara
+|qara
+|qärä
+|style="background-color: #ece0f0"|gara
+|style="background-color: #f1dfe5"|qara
+|qara
+|style="background-color: #f1e9df"|qara
+|style="background-color: #f1e9df"|qara
+|style="background-color: #d6e1ec"|qara
+|style="background-color: #f0f1df"|qora
+|style="background-color: #e8f1df"|qara
+|style="background-color: #dff1e0"|xara
+|style="background-color: #dff1ed"|hura, hora
+|-
+|red
+|style="background-color: #d6e1ec"|*kïŕïl
+|style="background-color: #d1ebeb"|qïzïl
+|style="background-color: #d6e1ec"|kızıl, kırmızı (Ar.)
+|style="background-color: #e4e0f0"|qızıl
+|qɨzɨl 
+|qïzïl
+|style="background-color: #ece0f0"|gyzyl
+|style="background-color: #f1dfe5"|qızıl
+|qɨzɨl
+|style="background-color: #f1e9df"|qıðıl
+|style="background-color: #f1e9df"|qyzyl
+|style="background-color: #d6e1ec"|qızıl
+|style="background-color: #f0f1df"|qizil
+|style="background-color: #e8f1df"|qizil
+|style="background-color: #dff1e0"|kıhıl
+|style="background-color: #dff1ed"|hĕrlĕ
+|-
+| rowspan="20" {{Vertical header|''Numbers''|nb=true|va=middle}}
+|1
+|style="background-color: #d6e1ec"|*bīr
+|style="background-color: #d1ebeb"|bir
+|style="background-color: #d6e1ec"|bir
+|style="background-color: #e4e0f0"|bir
+|bir
+|bir
+|style="background-color: #ece0f0"|bir
+|style="background-color: #f1dfe5"|ber
+|bir, bɨr
+|style="background-color: #f1e9df"|ber
+|style="background-color: #f1e9df"|bır
+|style="background-color: #d6e1ec"|bir
+|style="background-color: #f0f1df"|bir
+|style="background-color: #e8f1df"|bir
+|style="background-color: #dff1e0"|biir
+|style="background-color: #dff1ed"|pĕrre, pĕr
+|-
+|2
+|style="background-color: #d6e1ec"|*éki
+|style="background-color: #d1ebeb"|eki
+|style="background-color: #d6e1ec"|iki
+|style="background-color: #e4e0f0"|iki
+|ẹki 
+|ikki
+|style="background-color: #ece0f0"|iki
+|style="background-color: #f1dfe5"|ike
+|eky
+|style="background-color: #f1e9df"|ike
+|style="background-color: #f1e9df"|ekı
+|style="background-color: #d6e1ec"|eki
+|style="background-color: #f0f1df"|ikki
+|style="background-color: #e8f1df"|ikki
+|style="background-color: #dff1e0"|ikki
+|style="background-color: #dff1ed"|ikkĕ, ikĕ, ik
+|-
+|3
+|*üč
+|üč
+|üç
+|üç
+|üč
+|uǰ, u̇č
+|üç
+|öč
+|üć
+|ös
+|üş
+|üč
+|uch/u̇č
+|üch/üç
+|üs
+|viśśĕ, viśĕ, viś
+|-
+|4
+|style="background-color: #d6e1ec"|*dȫrt
+|style="background-color: #d1ebeb"|tört
+|style="background-color: #d6e1ec"|dört
+|style="background-color: #e4e0f0"|dörd
+|tört
+|derd/dörd
+|style="background-color: #ece0f0"|dört
+|style="background-color: #f1dfe5"|dürt
+|dört
+|style="background-color: #f1e9df"|dürt
+|style="background-color: #f1e9df"|tört
+|style="background-color: #d6e1ec"|tört
+|style="background-color: #f0f1df"|toʻrt
+|style="background-color: #e8f1df"|tört
+|style="background-color: #dff1e0"|tüört
+|style="background-color: #dff1ed"|tăvattă, tăvată, tăvat
+|-
+|5
+|*bēĺ(k)
+|béš
+|beş
+|beş
+|béš
+|
+|bäş
+|beş
+|beš
+|biš
+|bes
+|beş
+|besh/beş
+|besh/beş
+|bies
+|pillĕk, pilĕk
+|-
+|6
+|*altï
+|altï
+|altı
+|altı
+|altï
+|altï
+|alty (altï)
+|altï
+|altï
+|altï
+|alty
+|altı
+|olti (ålti)
+|altä
+|alta
+|ulttă, ultă, ult
+|-
+|7
+|style="background-color: #d6e1ec"|*yéti
+|style="background-color: #d1ebeb"|yeti
+|style="background-color: #d6e1ec"|yedi
+|style="background-color: #e4e0f0"|yeddi
+|jeti
+|yeddi
+|style="background-color: #ece0f0"|ýedi
+|style="background-color: #f1dfe5"|cide
+|jedi
+|style="background-color: #f1e9df"|yete
+|style="background-color: #f1e9df"|jetı
+|style="background-color: #d6e1ec"|ceti
+|style="background-color: #f0f1df"|yetti
+|style="background-color: #e8f1df"|yetti
+|style="background-color: #dff1e0"|sette
+|style="background-color: #dff1ed"|śiççĕ, śiçĕ, śiç
+|-
+|8
+|*sekiŕ
+|säkiz
+|sekiz
+|səkkiz
+|sek(k)iz, sik(k)iz
+|sӓkkiz
+|sekiz
+|sigez
+|sekiz
+|higeð
+|segız
+|segiz
+|säkkiz
+|säkkiz
+|aɣïs
+|sakkăr, sakăr
+|-
+|9
+|*tokuŕ
+|toquz
+|dokuz
+|doqquz
+|toquz
+|doġġuz
+|dokuz
+|tugïz
+|toɣuz
+|tuɣïð
+|toğyz
+|toğuz
+|to'qqiz
+|toqquz
+|toɣus
+|tăxxăr, tăxăr
+|-
+|10
+|style="background-color: #d6e1ec"|*ōn
+|style="background-color: #d1ebeb"|on
+|style="background-color: #d6e1ec"|on
+|style="background-color: #e4e0f0"|on
+|on
+|on
+|style="background-color: #ece0f0"|on
+|style="background-color: #f1dfe5"|un
+|on
+|style="background-color: #f1e9df"|un
+|style="background-color: #f1e9df"|on
+|style="background-color: #d6e1ec"|on
+|style="background-color: #f0f1df"|oʻn
+|style="background-color: #e8f1df"|on
+|style="background-color: #dff1e0"|uon
+|style="background-color: #dff1ed"|vunnă, vună, vun
+|-
+|20
+|*yẹgirmi
+|yigirmi/yégirmi
+|yirmi
+|iyirmi
+|yigirmi, yigirme
+|igirmi, iyirmi
+|yigrimi
+|yegerme
+|yigirmi
+|yegerme
+|jiyrma
+|cıyırma
+|yigirmä
+|yigirmä
+|süürbe
+|śirĕm
+|-
+|30
+|*otuŕ
+|otuz
+|otuz
+|otuz
+|otuz
+|ottiz
+|otuz (otuð)
+|otuz
+|otuz
+|utïð
+|otyz
+|otuz
+|o'ttiz
+|ottuz
+|otut
+|vătăr
+|-
+|40
+|*kïrk
+|qïrq
+|kırk
+|qırx
+|qïrq
+|ġèrḫ (ɢərx)
+|kyrk (kïrk)
+|qırq (qïrq)
+|kïrx
+|qïrq
+|qyryq
+|qırq
+|qirq
+|qirq
+|tüört uon
+|xĕrĕx
+|-
+|50
+|*ellig
+|älig
+|elli
+|ǝlli (älli)
+|el(l)ig
+|älli, ẹlli
+|elli
+|ille
+|
+|
+|elu
+|elüü
+|
+|
+|
+|allă, ală, al
+|-
+|60
+|*altmïĺ
+|altmïš
+|altmış
+|altmış (altmïš)
+|altmïš
+|altmïš
+|altmyş (altmïš)
+|altmïš
+|altïmïš
+|altïmïš
+|alpys
+|altımış
+|oltmish (åltmiš)
+|altmiš
+|alta uon
+|ultmăl
+|-
+|70
+|*yẹtmiĺ
+|yētmiš/s
+|yetmiş
+|yetmiş
+|yetmiš
+|yetmiš
+|ýetmiş (yetmiš)
+|ǰitmeš
+|yetmiš/s
+|yetmeš
+|jetpıs
+|cetimiş
+|yetmiš
+|yätmiš
+|sette uon
+|śitmĕl
+|-
+|80
+|*sekiŕ ōn
+|säkiz on
+|seksen
+|sǝksǝn (säksän)
+|seksün
+|sӓɣsen
+|segsen
+|seksen
+|seksen, seksan
+|hikhen
+|seksen
+|seksen
+|sakson (säksån)
+|säksän
+|aɣïs uon
+|sakăr vunnă, sakăr vun
+|-
+|90
+|*dokuŕ ōn
+|toquz on
+|doksan
+|doxsan
+|toqsan
+|
+|togsan
+|tuksan
+|toksan, toxsan
+|tukhan
+|toqsan
+|toqson
+|to'qson (tȯksån)
+|toqsan
+|toɣus uon
+|tăxăr vunnă, tăxăr vun
+|-
+|100
+|style="background-color: #d6e1ec"|*yǖŕ
+|style="background-color: #d1ebeb"|yüz
+|style="background-color: #d6e1ec"|yüz
+|style="background-color: #e4e0f0"|yüz
+|jüz 
+|iz/yüz
+|style="background-color: #ece0f0"|ýüz
+|style="background-color: #f1dfe5"|yöz
+|jiz, juz, jüz
+|style="background-color: #f1e9df"|yöð
+|style="background-color: #f1e9df"|jüz
+|style="background-color: #d6e1ec"|cüz
+|style="background-color: #f0f1df"|yuz
+|style="background-color: #e8f1df"|yüz
+|style="background-color: #dff1e0"|süüs
+|style="background-color: #dff1ed"|śĕr
+|-
+|1000
+|*bïŋ
+|bïŋ
+|bin
+|min
+|miŋ, men
+|min
+|müň (müŋ)
+|meŋ
+|min, bin
+|meŋ
+|myñ
+|miñ
+|ming (miŋ)
+|miŋ
+|tïhïïnča
+|pin
+|-
+!
+!Common meaning
+!style="background-color: #d6e1ec"|[[Proto-Turkic language|Proto-Turkic]]
+!style="background-color: #d1ebeb"|[[Old Turkic language|Old Turkic]]
+!style="background-color: #d6e1ec"|[[Turkish language|Turkish]]
+!style="background-color: #e4e0f0"|[[Azerbaijani language|Azerbaijani]]
+![[Karakhanid language|Karakhanid]]
+![[Qashqai language|Qashqai]]
+!style="background-color: #ece0f0"|[[Turkmen language|Turkmen]]
+!style="background-color: #f1dfe5"|[[Tatar language|Tatar]]
+![[Karaim language|Karaim]]
+!style="background-color: #f1e9df"|[[Bashkir language|Bashkir]]
+!style="background-color: #f1e9df"|[[Kazakh language|Kazakh]]
+!style="background-color: #d6e1ec"|[[Kyrgyz language|Kyrgyz]]
+!style="background-color: #f0f1df"|[[Uzbek language|Uzbek]]
+!style="background-color: #e8f1df"|[[Uyghur language|Uyghur]]
+!style="background-color: #dff1e0"|[[Sakha language|Sakha/Yakut]]
+!style="background-color: #dff1ed"|[[Chuvash language|Chuvash]]
+|}
+</div>
+Azerbaijani "ǝ" and "ä": IPA /æ/
+
+Azerbaijani "q": IPA /g/, word-final "q": IPA /x/
+
+Turkish and Azerbaijani "ı", Karakhanid "ɨ", Turkmen "y", and Sakha "ï": IPA /ɯ/
+
+Turkmen "ň", Karakhanid "ŋ": IPA /ŋ/
+
+Turkish and Azerbaijani "y", Turkmen "ý" and "j" in other languages: IPA /j/
+
+All "ş" and "š" letters: IPA /ʃ/
+
+All "ç" and "č" letters: IPA /t͡ʃ/
+
+Kyrgyz "c": IPA /d͡ʒ/
+
+Kazakh "j": IPA /ʒ/
+
+== Other possible relations ==
+The Turkic language family is currently regarded as one of the world's primary [[Language family|language families]].<ref name="DRIEM 2001. Page 336"/> Turkic is one of the main members of the controversial [[Altaic languages|Altaic language family]], but Altaic currently lacks support from a majority of linguists. None of the theories linking Turkic languages to other families have a wide degree of acceptance at present. Shared features with languages grouped together as Altaic have been interpreted by most mainstream linguists to be the result of a [[sprachbund]].<ref>{{Cite journal |last=Janhunen |first=Juha A. |date=17 January 2023 |title=The Unity and Diversity of Altaic |url=https://www.annualreviews.org/doi/10.1146/annurev-linguistics-030521-042356 |journal=Annual Review of Linguistics |language=en |volume=9 |issue=1 |pages=135–154 |doi=10.1146/annurev-linguistics-030521-042356 |issn=2333-9683|hdl=10138/355895 |s2cid=256126714 |hdl-access=free }}</ref>
+
+=== Rejected or controversial theories ===
+
+==== Korean ====
+The possibility of a genetic relation between Turkic and [[Koreanic languages|Koreanic]], independently from Altaic, is suggested by some linguists.<ref>{{Cite journal |last=Sibata |first=Takesi |date=1979 |title=Some syntactic similarities between Turkish, Korean, and Japanese |journal=Central Asiatic Journal |volume=23 |issue=3/4 |pages=293–296 |issn=0008-9192 |jstor=41927271}}</ref><ref name="Star Names Li">SOME STAR NAMES IN MODERN TURKIC LANGUAGES-I – Yong-Sŏng LI – Academy of Korean Studies Grant funded by the Korean Government (MEST) (AKS-2010-AGC-2101) – Seoul National University 2014</ref><ref name="Choi1996">{{Cite journal |last=Choi |first=Han-Woo |date=1996 |title=A comparative study of Korean and Turkic: Is Korean Altaic? |url=http://altaica.ru/LIBRARY/CHOI/choi1996.pdf |journal=International Journal of Central Asian Studies |volume=1 |access-date=24 April 2019 |archive-date=12 December 2019 |archive-url=https://web.archive.org/web/20191212190618/http://altaica.ru/LIBRARY/CHOI/choi1996.pdf |url-status=live }}</ref> Baris Kabak (2006) of the [[University of Würzburg]] states that Turkic and Korean share similar [[phonology]] as well as [[Morphology (linguistics)|morphology]].<ref>{{cite encyclopedia |last=Kabak |first=Baris |date=2006 |editor1-last=Ko |editor1-first=Yong-Kun |title=Where flexion encroaches on agglutination in Turkish and Korean |encyclopedia=Whither Morphology in the New Millennium?, Morphology Monograph Series 1 }}</ref>| Li Yong-Sŏng (2014) suggest that there are several [[cognate]]s between Turkic and [[Old Korean]]. He states that these supposed cognates can be useful to reconstruct the early Turkic language. According to him, words related to nature, earth and ruling but especially to the sky and stars seem to be cognates.<ref name="Star Names Li" />
+
+The linguist Choi suggested already in 1996 a close relationship between Turkic and Korean regardless of any Altaic connections:<ref name="Choi1996" />
+{{Blockquote|text=In addition, the fact that the morphological elements are not easily borrowed between languages, added to the fact that the common morphological elements between Korean and Turkic are not less numerous than between Turkic and other Altaic languages, strengthens the possibility that there is a close genetic affinity between Korean and Turkic.|sign=Choi Han-Woo|source=A Comparative Study of Korean and Turkic (Hoseo University)}}
+Many historians also point out a close non-linguistic relationship between [[Turkic peoples]] and [[Koreans]].<ref>{{Cite journal |last=Babayar |first=Gaybullah |date=2004 |title=On the ancient relations between the Turkic and Korean peoples |url=http://journals.manas.edu.kg/mjtc/oldarchives/2004/15_779-2047-1-PB.pdf |journal=Journal of Turkic Civilization Studies |issue=1 |pages=151–155 |access-date=24 April 2019 |archive-date=13 July 2019 |archive-url=https://web.archive.org/web/20190713025335/http://journals.manas.edu.kg/mjtc/oldarchives/2004/15_779-2047-1-PB.pdf }}</ref> Especially close were the relations between the [[Göktürks]] and [[Goguryeo]].<ref>{{Cite journal |last=Tae-Don |first=Noh |date=2016 |title=Relations between ancient Korea and Turkey: An examination of contacts between Koguryŏ and the Turkic Khaganate |url=https://muse.jhu.edu/article/646472 |journal=Seoul Journal of Korean Studies |language=en |volume=29 |issue=2 |pages=361–369 |doi=10.1353/seo.2016.0017 |hdl=10371/164838 |s2cid=151445857 |issn=2331-4826 |access-date=24 April 2019 |archive-date=24 April 2019 |archive-url=https://web.archive.org/web/20190424183833/https://muse.jhu.edu/article/646472 |url-status=live |url-access=subscription }}</ref>
+
+==== Uralic ====
+Some linguists suggested a relation to [[Uralic languages]], especially to the [[Ugric languages]]. This view is rejected and seen as obsolete by mainstream linguists. Similarities are because of language contact and borrowings mostly from Turkic into Ugric languages. Stachowski (2015) states that any relation between Turkic and Uralic must be a contact one.<ref>{{Cite journal |last=Stachowski |first=Marek |date=2015 |title=Turkic pronouns against a Uralic background |url=https://www.academia.edu/12022061 |journal=Iran and the Caucasus |volume=19 |issue=1 |pages=79–86 |doi=10.1163/1573384X-20150106 |issn=1609-8498 |access-date=24 April 2019 |archive-date=24 November 2021 |archive-url=https://web.archive.org/web/20211124081956/https://www.academia.edu/12022061 |url-status=live }}</ref>
+
+==See also==
+* [[Altaic languages]]
+* [[List of Turkic languages]]
+* [[List of Turkic-languages poets]]
+* [[List of Ukrainian words of Turkic origin]]
+* [[Middle Turkic languages]]
+* [[Old Turkic]]
+* [[Old Turkic script]]
+* [[Proto-Turkic language]]
+
+==Notes==
+{{notelist}}
+
+==References==
+{{reflist}}
+
+==Sources==
+{{refbegin}}
+* [[Gabdulkhay Akhatov|Akhatov G. Kh.]] 1960. "About the stress in the language of the Siberian Tatars in connection with the stress of modern Tatar literary language" .- Sat *"Problems of Turkic and the history of Russian Oriental Studies." Kazan. {{in lang|ru}}
+* Akhatov G.Kh. 1963. "Dialect West Siberian Tatars" (monograph). Ufa. {{in lang|ru}}
+* [[Nikolai Baskakov (linguist)|Baskakov, N. A.]] (1962, 1969). ''Introduction to the study of the Turkic languages''. Moscow. {{in lang|ru}}
+* Boeschoten, Hendrik & Lars Johanson. 2006. ''Turkic languages in contact''. Turcologica, Bd. 61. Wiesbaden: Harrassowitz. {{ISBN|3-447-05212-0}}
+* Clausen, Gerard. 1972. ''An etymological dictionary of pre-thirteenth-century Turkish''. Oxford: Oxford University Press.
+* Deny, Jean et al. 1959–1964. ''Philologiae Turcicae Fundamenta''. Wiesbaden: Harrassowitz.
+* Dolatkhah, Sohrab. 2016. ''Parlons qashqay.'' In: collection "''parlons''". Paris: [[L'Harmattan]].
+* Dolatkhah, Sohrab. 2016. Le qashqay: langue turcique d'Iran. CreateSpace Independent Publishing Platform (online).
+* Dolatkhah, Sohrab. 2015. Qashqay Folktales. CreateSpace Independent Publishing Platform (online).
+* Johanson, Lars & Éva Agnes Csató (ed.). 2022. ''The Turkic Languages''. Second edition. London: Routledge. {{ISBN|978-0-415-73856-9}}.
+* Johanson, Lars. 1998. "Turkic languages." In: ''Encyclopædia Britannica''. CD 98. Encyclopædia Britannica Online, 5 September 2007.[http://www.britannica.com/eb/article-80003/Turkic-languages] {{Webarchive|url=https://web.archive.org/web/20080623115154/http://www.britannica.com/eb/article-80003/Turkic-languages |date=23 June 2008 }}
+* Menges, K. H. 1968. ''The Turkic languages and peoples: An introduction to Turkic studies''. Wiesbaden: Harrassowitz.
+* Öztopçu, Kurtuluş. 1996. Dictionary of the Turkic languages: English, Azerbaijani, Kazakh, Kyrgyz, Tatar, Turkish, Turkmen, Uighur, Uzbek. London: Routledge. {{ISBN|0-415-14198-2}}
+* Samoilovich, A. N. 1922. ''Some additions to the classification of the Turkish languages''. Petrograd.
+* Savelyev, Alexander and [[Martine Robbeets]]. (2019). lexibank/savelyevturkic: Turkic Basic Vocabulary Database (Version v1.0) [Data set]. Zenodo. {{doi|10.5281/zenodo.3556518}}
+* Schönig, Claus. 1997–1998. "A new attempt to classify the Turkic languages I-III." ''Turkic Languages'' 1:1.117–133, 1:2.262–277, 2:1.130–151.
+* Schönig, Claus. "The Internal Division of Modern Turkic and Its Historical Implications". In: ''Acta Orientalia Academiae Scientiarum Hungaricae'', vol. 52, no. 1, 1999, pp.&nbsp;63–95. JSTOR, http://www.jstor.org/stable/43391369 {{Webarchive|url=https://web.archive.org/web/20230103004444/https://www.jstor.org/stable/43391369 |date=3 January 2023 }}. Accessed 3 January 2023.
+* [[Sergei Starostin|Starostin, Sergei A.]], Anna V. Dybo, and Oleg A. Mudrak. 2003. ''Etymological Dictionary of the Altaic Languages.'' Leiden: Brill. {{ISBN|90-04-13153-1}}
+* {{Cite journal |last=Uchiyama |first=Junzo |last2=Gillam |first2=J. Christopher |last3=Savelyev |first3=Alexander |last4=Ning |first4=Chao |date=2020 |title=Populations dynamics in Northern Eurasian forests: a long-term perspective from Northeast Asia |url=https://www.researchgate.net/publication/341548378_Populations_dynamics_in_Northern_Eurasian_forests_A_long-term_perspective_from_Northeast_Asia |journal=Evolutionary Human Sciences |language=en |volume=2 |page=11 |doi=10.1017/ehs.2020.11 |issn=2513-843X|pmc=10427466 }}
+* Voegelin, C.F. & F.M. Voegelin. 1977. ''Classification and index of the World's languages''. New York: Elsevier.
+{{refend}}
+
+== External links ==
+{{wiktionary|Appendix:Turkic Swadesh lists}}
+* [http://www.mediafire.com/view/6iami4gg48peq66/Turkic_Languages_Verb_Comparison.pdf Turkic Languages Verb Comparison]
+* [https://gokturkanitlari.appspot.com/ Turkic Inscriptions of Orkhon Valley, Mongolia] {{Webarchive|url=https://web.archive.org/web/20171002180329/http://gokturkanitlari.appspot.com/ |date=2 October 2017 }}
+* [https://web.archive.org/web/20210511132136/http://www.umich.edu/~turkish/langres_turkic.html Turkic Languages: Resources – University of Michigan]
+* [http://titus.fkidg1.uni-frankfurt.de/didact/karten/turk/turklm.htm Map of Turkic languages] by [[Goethe University Frankfurt]]
+* [http://www.turkiclanguages.com/ Classification of Turkic Languages] by [[Lars Johanson]]
+* [https://turkdilleri.com/en/charts/number-of-speakers-and-groupping Grouping chart of Turkic Languages]
+* [https://lughet.org/ Online Uyghur–English Dictionary]
+* [https://turkiclex.com/ Online English-Turkic languages Dictionary]
+* [https://web.archive.org/web/20080517093328/http://www.tdk.org.tr/lehceler/Default.aspx Turkic language vocabulary comparison tool / dictionary]
+* [https://pauctle.com Pauctle.com] dictionaries of various Turkic Languages and games for learning words by [[Pamukkale University]]
+* [https://web.archive.org/web/20110710073607/http://www.gaspirali.com/ksozluk/ A Comparative Dictionary of Turkic Languages] ''Open Project''
+* [http://turkic-languages.scienceontheweb.net/ The Turkic Languages in a Nutshell] {{Webarchive|url=https://web.archive.org/web/20140112121251/http://turkic-languages.scienceontheweb.net/ |date=12 January 2014 }} with illustrations.
+* [https://zenodo.org/record/3556954 Turkic basic vocabularies] at [[Zenodo]]
+* [https://altaica.ru/e_index.php Monumenta Altaica] {{Webarchive|url=https://web.archive.org/web/20220626060818/https://altaica.ru/e_index.php |date=26 June 2022 }} (Grammar and other sources by [[Russian Academy of Sciences]])
+* [https://turkic-interlingua.org/ Turkic Interlingua] ([[Natural language processing|NLP]] project for Turkic languages)
+* [https://turkic.elegantlexicon.com/ Turkic Database] at Elegant Lexicon (Comprehensive lexical database for Turkic languages)
+* [http://www.turklang.net/en/ TurkLang Conference] {{Webarchive|url=https://web.archive.org/web/20220622162427/http://www.turklang.net/en/ |date=22 June 2022 }}: [https://web.archive.org/web/20150925132543/http://www.e-zerde.kz/zerde/index.php/ru/struktura-4/struktura-6 Astana, Kazakhstan, 2013], [http://www.turklang.itu.edu.tr/ Istanbul, Turkey, 2014] {{Webarchive|url=https://web.archive.org/web/20210224171316/http://www.turklang.itu.edu.tr/ |date=24 February 2021 }}, [https://web.archive.org/web/20150925133912/http://turklang.antat.ru/ Kazan, Tatarstan, 2015]
+
+{{Altaic languages}}
+{{Eurasian languages}}
+{{Language families}}
+{{Turkic languages}}
+{{Turkic topics}}
+{{Authority control}}
+
+{{DEFAULTSORT:Turkic Languages}}
+[[Category:Turkic languages| ]]
+[[Category:Agglutinative languages]]
+[[Category:Language families]]
+[[Category:History of Ural]]

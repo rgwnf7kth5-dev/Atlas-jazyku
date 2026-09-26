@@ -1,0 +1,58 @@
+{{Short description|General purpose plastic explosive}}
+{{Other uses}}
+[[File:Semtex H 1.jpg|thumb|Samples of semtex and other plastic explosives]]
+
+'''Semtex''' is a general-purpose [[plastic explosive]] containing [[RDX]] and [[Pentaerythritol tetranitrate|PETN]].<ref>{{Cite web |title=CAT-UXO - Semtex explosive |url=https://cat-uxo.com/explosive-hazards/ied/semtex-explosive |access-date=2026-06-23 |website=cat-uxo.com |language=en}}</ref> It is used in commercial blasting, [[demolition]], and in certain [[military]] applications.
+
+Semtex was developed and manufactured in [[Czechoslovakia]], originally under the name '''B 1''' and then under the "Semtex" designation since 1964,{{#tag:ref|Various sources state that production started in 1964 or 1966. Explosia's brief historical document states it was 1964,<ref name="history">{{cite web|url=http://www.explosia.cz/en/?show=semtex|title=Explosia|website=www.explosia.cz|access-date=7 December 2017}}</ref> but most other credible sources state it was in 1966. Most of these also state that development was started at the same time, in response to a request from [[Vietnam]] for a counterpart to the United States manufacture of [[C-4 (explosive)|C-4]].|group=note}} labeled as ''SEMTEX 1A'', since 1967 as ''SEMTEX H'', and since 1987 as ''SEMTEX 10''.
+
+Originally developed for Czechoslovak military use and export, Semtex eventually became popular with armed groups and insurgents because, prior to the 2000s, it was extremely difficult to detect,<ref>Schubert, Hiltmar. ''Detection of Explosives and Landmines: Methods and Field Experience''. pp. 93–101 {{ISBN|1-4020-0692-6}}</ref> as in the case of [[Pan Am Flight 103]].
+
+==Composition==
+The composition of the two most common variants differ according to their use. The '''1A''' (or '''10''') variant is used for [[drilling and blasting|mining]], and is based mostly on crystalline [[Pentaerythritol tetranitrate|PETN]]. The versions '''1AP''' and '''2P''' are formed as hexagonal [[Explosive booster|booster charges]]; a special assembly of PETN and wax inside the charge assures high reliability for [[detonating cord]] or [[detonator]]. The '''H''' (or '''SE''') variant is intended for [[Shock hardening|explosion hardening]].<ref>{{cite web | title=Semtex| website=mondial-defence.com | date=2013-10-05 | url=http://www.mondial-defence.com/images/PDF_Data_Sheets/SEMTEX.pdf | archive-url=https://web.archive.org/web/20131005002550/http://www.mondial-defence.com/images/PDF_Data_Sheets/SEMTEX.pdf | archive-date=2013-10-05 | url-status=dead | access-date=2021-08-16}}</ref>
+
+{| class="wikitable"
+ |+ Composition of Semtex<ref>{{Cite journal |last1=Dougan |first1=A |last2=Alcaraz |first2=A |date=March 17, 2006 |title=Formulations for the "Characterization of unique compounds in explosives" project |url=https://digital.library.unt.edu/ark:/67531/metadc894097/ |journal=Lawrence Livermore National Laboratory |pages=3–4 |doi=10.2172/928520 |osti=928520 |via=University of North Texas|doi-access=free }}</ref><ref>{{cite journal |doi=10.1002/prep.200900100 |title=Characterization of Three Types of Semtex (H, 1A, and 10) |date=2010 |last1=Moore |first1=Stephanie |last2=Schantz |first2=Michele |last3=MacCrehan |first3=William |journal=Propellants, Explosives, Pyrotechnics |volume=35 |issue=6 |pages=540–549 }}</ref>
+ ! Compound ||Semtex 1A || Semtex H || Semtex 2P
+ |-
+ | [[Pentaerythritol tetranitrate|PETN]] || 76% || 39.3% || 58.45%
+ |-
+ | [[RDX]] || 4.6% || 39.7% || 22.9%
+ |-
+ | [[binder (material)|binder]]: [[styrene-butadiene]] || 9.4% || 10.2% || 9.2%
+ |-
+ | [[plasticizer]]s: n-octyl phthalate, tributyl citrate || 9.4% || 9.1% || 8.45%
+ |-
+ | [[antioxidant]]: N-phenyl-2-naphthylamine || 0.6% (includes pigment) || 1% || 0.5%
+ |-
+ | pigment || unknown% [[Sudan IV]] || 0.7% [[Sudan I]] || variable
+|}
+
+==History==
+Semtex was invented in the late 1950s by [[Stanislav Brebera]] and Radim Fukátko, chemists at VCHZ Synthesia, [[Czechoslovakia]] (now [[Czech Republic]]). The explosive is named after Semtín, a suburb of [[Pardubice]] where the mixture was first manufactured starting in 1964.<ref name="history" /> The plant was later renamed to become [[Explosia a.s.]], a subsidiary of Synthesia.<ref>{{cite web|url=http://www.explosia.cz/en/?show=vdatech|title=Explosia|website=www.explosia.cz|access-date=7 December 2017}}</ref>
+
+Semtex was very similar to other plastic explosives, especially [[C-4 (explosive)|C-4]], in being highly [[malleable]]; but it is usable over a greater temperature range than other plastic explosives, since it stays plastic between −40 and +60&nbsp;°C. It is also waterproof. There are visual differences between Semtex and other plastic explosives, too: while C-4 is off-white in colour, Semtex is red or brick-orange.
+
+The new explosive was widely exported, notably to the government of [[North Vietnam]], which received 14 tons during the [[Vietnam War]]. However, the main consumer was [[Libya]]; about 700 tons of Semtex were exported to Libya between 1975 and 1981 by [[Omnipol]]. It has also been used by Islamic militants in the [[Middle East]], and by the [[Provisional Irish Republican Army|IRA]] and the [[Irish National Liberation Army|INLA]] in [[Northern Ireland]].<ref>Brown, G. I. (1998). ''The Big Bang: A History of Explosives''. Sutton Publishing. {{ISBN|0-7509-1878-0}}. p. 165.</ref> On 21 December 1988, 340 g (12 ounces) of Semtex [[Pan Am Flight 103|brought down a Boeing 747]] over Lockerbie, Scotland killing all 259 passengers and crew aboard the aircraft and 11 bystanders on the ground.
+
+Sales declined after Semtex became closely associated with terrorist attacks. Rules governing the explosive's export were progressively tightened over the years, and since 2002 all of Explosia's trading has been controlled by a government ministry.<ref>Arie Farnam, [https://www.csmonitor.com/2002/0226/p07s02-woeu.html "Czechs try to cap plastic explosives sales"], ''The Christian Science Monitor'', 26 February 2002.</ref> {{As of|2001}}, only approximately 10 tons of Semtex were produced annually, almost all for domestic use.<ref name="history" />
+
+Also in response to international agreements, Semtex has a [[taggant|detection taggant]] added to produce a distinctive vapor signature to aid detection. First, [[ethylene glycol dinitrate]] was used, but was later switched to [[DMDNB|2,3-dimethyl-2,3-dinitrobutane]] (DMDNB) or [[4-nitrotoluene|''p''-mononitrotoluene]] (1-methyl-4-[[nitrobenzene]]), which is used currently. According to the manufacturer, the taggant agent was voluntarily being added by 1991, years before the protocol became compulsory.<ref name="history" /> Batches of Semtex made before 1990, however, are untagged, though it is not known whether there are still major stocks of such old batches of Semtex. According to the manufacturer, even this untagged Semtex can now be detected.<ref name="explosia"/> The [[shelf life]] of Semtex was reduced from ten years before the 1990s to five years now. Explosia states that there is no compulsory tagging allowing reliable post-detonation detection of a certain plastic explosive (such as incorporating a unique metallic code into the mass of the explosive), so Semtex is not tagged in this way.<ref name=explosia>{{cite web |url=http://www.explosia.cz/en/?show=omyly |title=Explosia |website=www.explosia.cz |access-date=7 December 2017}}</ref>
+
+On 25 May 1997, Bohumil Šole, a scientist who claimed to have been involved with inventing Semtex, [[suicide bombing|blew himself up]] with explosives at a [[spa]] in [[Jeseník]]. Šole, 63, was being treated there for psychological problems. It was unclear what explosives were used. Twenty other people were hurt in the explosion, while six were seriously injured. According to the manufacturer, Explosia, he was not a member of the team that developed the explosive in the 1960s.<ref>{{Cite news |url=https://www.washingtonpost.com/archive/local/1997/06/04/bohumil-sole-dies/9eea234b-4c31-4e8f-9fb5-d589cb88b5ad/ |title=Bohumil Sole dies |date=1997-06-04 |newspaper=[[The Washington Post]] |access-date=2019-01-02}}</ref><ref>{{Cite web |url=https://explosia.cz/en/about/history/semtex-10-mistakes/|title=Semtex — 10 Mistakes |publisher=Explosia |access-date=2019-01-01}}</ref>
+
+According to the producer's 2017 catalog, several variants of Semtex are offered: Semtex 1A, Semtex 1H, Semtex 10, Semtex 10-SE, Semtex S 30, Semtex C-4, Semtex PW 4, and Semtex 90.<ref>{{cite web |url=https://explosia.cz/app/uploads/2017/11/Explosives-catalog-2017.pdf |title=Explosives catalog 2017 |publisher=Explosia |access-date=13 September 2023}}</ref>
+
+== Explanatory notes ==
+{{Reflist|group="note"}}
+
+==References==
+{{Reflist|30em}}
+
+==External links==
+* [http://www.explosia.cz/en/ Website of the manufacturer] with a [http://www.explosia.cz/en/?show=semtex brief history] of Semtex
+* [http://www.explosia.cz/en/?show=omyly Manufacturer's rebuttal of various alleged misapprehensions, including involvement of Bohumil Sole]
+
+[[Category:Explosives]]
+[[Category:Products introduced in 1966]]
+[[Category:Czech inventions]]
