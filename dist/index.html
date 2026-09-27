@@ -1261,6 +1261,43 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 .vs-do-stromu svg{width:15px; height:15px}
 .vs-do-stromu:hover{text-decoration:underline; text-underline-offset:2px}
 
+/* ---------- kruhový přehled všech rodin (výchozí pohled Rodokmenu, 27. 9. 2026) ---------- */
+#prehled{z-index:4; touch-action:manipulation}
+#prehled:focus-visible{outline:none}
+.scena.rezim-prehled .strom-napoveda{display:none}
+.prehled-panel{position:absolute; z-index:6; top:68px; right:16px; width:min(340px, 36%); max-height:calc(100% - 200px); overflow:auto; scrollbar-width:thin;
+  padding:14px 14px 10px; border-radius:18px; display:flex; flex-direction:column}
+.prehled-cesta{display:flex; flex-wrap:wrap; align-items:center; gap:2px; font-size:.76rem; margin-bottom:6px}
+.prehled-cesta button{border:0; background:none; padding:2px 5px; border-radius:6px; font:inherit; color:var(--cyan); cursor:pointer}
+.prehled-cesta button:hover{background:var(--cyan-slabe)}
+.prehled-cesta .sip{color:var(--text3)}
+.prehled-cesta .ted{font-weight:600; color:var(--text); padding:2px 5px}
+.prehled-panel h3{margin:0; font-family:var(--pismo-nadpis); font-size:1.3rem; line-height:1.2; color:var(--text); text-wrap:balance}
+.prehled-meta{margin:3px 0 10px; font-size:.8rem; color:var(--text2); font-variant-numeric:tabular-nums}
+.prehled-do-stromu{align-self:flex-start; margin:0 0 8px}
+.prehled-radky{list-style:none; margin:0; padding:0}
+.prehled-radek{display:grid; grid-template-columns:11px minmax(0,1fr) auto 10px; column-gap:9px; row-gap:4px; align-items:center; width:100%;
+  padding:8px 4px; border:0; border-top:1px solid var(--linka); background:none; text-align:left; font:inherit; color:var(--text); cursor:pointer}
+.prehled-radky li:first-child .prehled-radek{border-top:0}
+.prehled-radek:hover, .prehled-radek.najeto{background:var(--cyan-slabe)}
+.prehled-radek:focus-visible{outline:2px solid var(--cyan); outline-offset:-2px}
+.prehled-radek .bod{width:11px; height:11px; border-radius:50%}
+.prehled-radek .jm{font-size:.86rem; font-weight:600; min-width:0; overflow-wrap:anywhere}
+.prehled-radek .jm small{display:block; font-weight:400; font-style:italic; color:var(--text3); font-size:.74rem; line-height:1.35}
+.prehled-radek .n{font-family:var(--pismo-data, "JetBrains Mono", monospace); font-size:.74rem; color:var(--text2); font-variant-numeric:tabular-nums}
+.prehled-radek .dal{color:var(--text3)}
+.prehled-radek .pruh{grid-column:2 / 4; height:3px; border-radius:2px; background:var(--linka)}
+.prehled-radek .pruh i{display:block; height:100%; border-radius:2px}
+.prehled-vic{margin:8px 4px 2px; font-size:.76rem; color:var(--text3)}
+.prehled-legenda{display:flex; flex-wrap:wrap; gap:4px 12px; margin-top:10px; padding-top:8px; border-top:1px solid var(--linka); font-size:.72rem; color:var(--text2)}
+.prehled-legenda span{display:inline-flex; align-items:center; gap:5px}
+.prehled-legenda i{width:9px; height:9px; border-radius:50%}
+@media (max-width:920px){
+  .prehled-panel{position:relative; top:auto; right:auto; width:auto; max-height:52vh; margin:4px 12px 12px}
+}
+
+.scena.rezim-strom .roh-ovladani{display:none}   /* + a − ovládají glóbus; strom se přibližuje kolečkem a prsty */
+
 /* ---------- jazyky starověku: stránka o civilizaci jako list ilustrované encyklopedie (okno nad glóbem i web) ----------
    Papír a inkoust jako u akvarelů na kartách; v tmavém vzhledu sépiová noc. Barvy jen tady, přes --civ-*. */
 .civ{
@@ -1620,7 +1657,18 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
    <div class="strom-hlava sklo" id="strom-hlava" hidden>
     <label><svg aria-hidden="true"><use href="#i-strom"/></svg><span data-t="stromRodina">Rodina</span><select id="strom-rodina"></select></label>
     <button type="button" id="strom-cely" data-t="stromCely">Celý strom</button>
+    <button type="button" id="strom-vse" hidden data-t="stromVse">Všechny rodiny</button>
    </div>
+   <canvas id="prehled" hidden tabindex="0" role="img" aria-label="Kruhový přehled jazykových rodin: šířka výseče odpovídá počtu jazyků. Klepnutím na výseč se zanoříte hlouběji, klepnutím na střed se vrátíte o úroveň výš." data-t-aria-label="prehledPlatno"></canvas>
+   <section class="prehled-panel sklo" id="prehled-panel" hidden aria-live="polite">
+    <nav class="prehled-cesta" id="prehled-cesta" aria-label="Kde v přehledu jste" data-t-aria-label="prehledKde"></nav>
+    <h3 id="prehled-nazev"></h3>
+    <p class="prehled-meta" id="prehled-meta"></p>
+    <button type="button" class="tl-rodokmen prehled-do-stromu" id="prehled-strom" hidden><svg aria-hidden="true"><use href="#i-strom"/></svg><span data-t="prehledOtevrit">Otevřít rodokmen rodiny</span></button>
+    <ol class="prehled-radky" id="prehled-radky"></ol>
+    <p class="prehled-vic" id="prehled-vic" hidden></p>
+    <div class="prehled-legenda" id="prehled-legenda"></div>
+   </section>
    <p class="strom-napoveda" id="strom-napoveda" hidden data-t="stromNapoveda">Dole je společný předek celé rodiny, na koncích větví jednotlivé jazyky. Každý kroužek označuje rozdělení větve; tloušťka větve odpovídá počtu jazyků, které z ní vycházejí. Velké tečky jsou jazyky s podrobnou kartou. Tažením posunete, kolečkem nebo dvěma prsty přiblížíte, klepnutím vyberete větev nebo jazyk.</p>
    <div class="brana" id="brana" hidden>
     <div class="brana-hlava sklo"><strong data-t="branaNadpis">✦ Uměle vytvořené jazyky z fikce</strong><p data-t="branaText">Tyto jazyky vytvořili spisovatelé a jazykovědci pro knihy, filmy a seriály. Nejsou součástí rejstříku skutečných jazyků, a proto nemají místo na glóbu.</p>
@@ -1755,6 +1803,6 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
  <dialog class="civ-okno" id="civ-okno" aria-labelledby="civ-nadpis"></dialog>
 </div>
 
-<script src="js/atlas.85f4a8def0.js"></script>
+<script src="js/atlas.084b05a8d3.js"></script>
 </body>
 </html>

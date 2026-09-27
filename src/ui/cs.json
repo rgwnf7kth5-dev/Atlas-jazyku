@@ -529,7 +529,7 @@
     "h": "Medailony pod glóbem",
     "p": [
      "Kulatá tlačítka pod glóbem (na telefonu ve dvou řadách) otevírají hlavní části atlasu: Jazyky starověku, Příběhy jazyků, Rodokmen, Mapy, Vitalitu a Nastavení. Náhodný jazyk je v záhlaví seznamu jazyků vedle počtu jazyků a otevře kartu náhodně vybraného jazyka.",
-     "Rodokmen zobrazí strom celé jazykové rodiny podle Glottologu. Tažením se posouvá, kolečkem nebo dvěma prsty přibližuje, klepnutí na větev ji zvětší, klepnutí na jazyk ho vybere.",
+     "Rodokmen bez vybraného jazyka otevře kruhový přehled všech jazykových rodin: šířka výseče odpovídá počtu jazyků, klepnutím na výseč nebo řádek seznamu se zanoříte hlouběji (až k jednotlivým jazykům), klepnutím na střed kruhu nebo na cestu nad seznamem se vrátíte výš. Rodiny s méně než 25 jazyky jsou pod Menšími rodinami, izolované, znakové a umělé jazyky a pidžiny pod Mimo rodiny. Tlačítko Otevřít rodokmen rodiny ukáže vějířový strom rodiny; zpět vede Všechny rodiny. S vybraným jazykem se otevře rovnou strom jeho rodiny. Ve stromu se tažením posouvá, kolečkem nebo dvěma prsty přibližuje, klepnutí na větev ji zvětší, klepnutí na jazyk ho vybere.",
      "Vitalita otevře stránku o ohrožení jazyků: počty jazyků v jednotlivých stupních stupnice UNESCO, rozložení podle oblastí světa a patnácti největších jazykových rodin (s odkazem do rodokmenu), ohrožené jazyky atlasu, probouzené jazyky a metodiku se zdroji. Na ní lze glóbus i rodokmen obarvit podle vitality – v rodokmenu je pak vidět, které větve rodiny jsou ohrožené nebo vymřelé – a zaškrtnutím vybrat, které stupně zůstanou vidět (filtr). Při zapnutých barvách je pod glóbem legenda; klepnutím na ni se stránka otevře znovu. Stránku otevře i odkaz na kartě jazyka a adresa #vitalita.",
      "Mapy otevřou přehled všech barevných map s náhledy: písmo, vitalita a 24 typologických vlastností podle WALS. Výběr mapy okno zavře a glóbus obarví.",
      "Nastavení: samočinné otáčení, názvy jazyků a znakové jazyky (všechny, bez nich, nebo jen ony).",
@@ -705,6 +705,11 @@
   ],
   "odkazKarta": "Vitalita jazyků světa ›"
  },
+ "stromVse": "Všechny rodiny",
+ "prehledPlatno": "Kruhový přehled jazykových rodin: šířka výseče odpovídá počtu jazyků. Klepnutím na výseč se zanoříte hlouběji, klepnutím na střed se vrátíte o úroveň výš.",
+ "prehledKde": "Kde v přehledu jste",
+ "prehledOtevrit": "Otevřít rodokmen rodiny",
+ "prehled": {"svet": "Jazyky světa", "mensi": "Menší rodiny", "mimo": "Mimo rodiny", "izolovane": "Izolované jazyky", "znakove": "Znakové jazyky", "pidziny": "Pidžiny", "smisene": "Smíšené jazyky", "umele": "Umělé jazyky", "mluvy": "Zvláštní způsoby mluvy", "nezarazene": "Nezařazené jazyky", "nedolozene": "Nedoložené jazyky", "vyse": "‹ o úroveň výš", "vetve": ["větev", "větve", "větví"], "primo": "{n} přímo", "dalsich": "… a dalších {n} (v kruhu jsou všechny)", "ostatni": "Ostatní rodiny", "legenda": [["ie", "Indoevropská"], ["st", "Sinotibetská"], ["an", "Austronéská"], ["afro", "Afroasijská"], ["nk", "Nigerokonžská"], ["ost", "Ostatní rodiny"], ["mimo", "Mimo rodiny"]]},
  "mapyPopis": "Barevné mapy jazyků: písmo, vitalita a typologie (WALS)",
  "pribehyTlacitko": "Příběhy jazyků: cesty slov, proměny jazyků, obnova a záhady",
  "starovekTlacitko": "Jazyky starověku: stránky o civilizacích, jejich jazyce a písmu"

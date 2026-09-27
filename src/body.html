@@ -53,7 +53,18 @@
    <div class="strom-hlava sklo" id="strom-hlava" hidden>
     <label><svg aria-hidden="true"><use href="#i-strom"/></svg><span data-t="stromRodina">{{stromRodina}}</span><select id="strom-rodina"></select></label>
     <button type="button" id="strom-cely" data-t="stromCely">{{stromCely}}</button>
+    <button type="button" id="strom-vse" hidden data-t="stromVse">{{stromVse}}</button>
    </div>
+   <canvas id="prehled" hidden tabindex="0" role="img" aria-label="{{prehledPlatno}}" data-t-aria-label="prehledPlatno"></canvas>
+   <section class="prehled-panel sklo" id="prehled-panel" hidden aria-live="polite">
+    <nav class="prehled-cesta" id="prehled-cesta" aria-label="{{prehledKde}}" data-t-aria-label="prehledKde"></nav>
+    <h3 id="prehled-nazev"></h3>
+    <p class="prehled-meta" id="prehled-meta"></p>
+    <button type="button" class="tl-rodokmen prehled-do-stromu" id="prehled-strom" hidden><svg aria-hidden="true"><use href="#i-strom"/></svg><span data-t="prehledOtevrit">{{prehledOtevrit}}</span></button>
+    <ol class="prehled-radky" id="prehled-radky"></ol>
+    <p class="prehled-vic" id="prehled-vic" hidden></p>
+    <div class="prehled-legenda" id="prehled-legenda"></div>
+   </section>
    <p class="strom-napoveda" id="strom-napoveda" hidden data-t="stromNapoveda">{{stromNapoveda}}</p>
    <div class="brana" id="brana" hidden>
     <div class="brana-hlava sklo"><strong data-t="branaNadpis">{{branaNadpis}}</strong><p data-t="branaText">{{branaText}}</p>
