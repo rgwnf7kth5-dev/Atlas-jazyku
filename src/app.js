@@ -1946,7 +1946,7 @@ function obnovLegenduVitality(){
   legendaVit.hidden = !(vitalitaZap && panelZob.hidden);
   if (!legendaVit.hidden) postavLegenduVitality();
 }
-tlVitDok.addEventListener("click", function(){ nastavBarvyVitality(!vitalitaZap); });
+tlVitDok.addEventListener("click", function(){ if (this.getAttribute("aria-disabled") !== "true") nastavBarvyVitality(!vitalitaZap); });
 $("vit-legenda-tl").addEventListener("click", function(){ otevriVitalitu(true); vitalitaZLegendy = true; });   // vysvětlivka otevře stupně (filtr)
 /* šipka zpět vede do panelu Zobrazení; když se stupně otevřely z vysvětlivky pod glóbem, zavře rovnou všechno */
 $("vitalita-zavrit").addEventListener("click", function(){
@@ -2071,7 +2071,7 @@ function otevriMapy(){
   if (mapyOkno.showModal) { if (!mapyOkno.open) mapyOkno.showModal(); } else mapyOkno.setAttribute("open", "");
   const b = mapyOkno.querySelector('.mapa-tl[aria-pressed="true"]'); if (b) b.focus();
 }
-$("tl-mapy").addEventListener("click", otevriMapy);
+$("tl-mapy").addEventListener("click", function(){ if (this.getAttribute("aria-disabled") !== "true") otevriMapy(); });
 mapyOkno.addEventListener("click", function(e){ if (e.target === mapyOkno) mapyOkno.close(); });
 function obnovLegenduTypologie(){
   legendaTyp.hidden = typVlastnost < 0;
@@ -3373,6 +3373,14 @@ var strom = (function(){   // var: filtry a texty se na něj ptají dřív, než
     const obr = tl.querySelector(".med-obr"), ik = IKONY[zapnuto ? "mapy" : "rodokmen"];   // medailon: v rodokmenu ukazuje glóbus a vede zpět
     if (obr && ik) obr.style.backgroundImage = "url(" + ik + ")";
     const popisek = tl.querySelector("span"); popisek.dataset.t = zapnuto ? "globus" : "rodokmen"; popisek.textContent = zapnuto ? T.globus : T.rodokmen;
+    /* Mapy a Vitalita barví tečky glóbu, v rodokmenu nedávají smysl: šedé a nečinné (uživatel 27. 9. 2026) */
+    ["tl-mapy", "tl-vitalita-dok"].forEach(function(id){
+      const m = $(id);
+      if (!m.dataset.tTitlePuv) m.dataset.tTitlePuv = m.dataset.tTitle;
+      m.dataset.tTitle = zapnuto ? "medVRodokmenu" : m.dataset.tTitlePuv;
+      m.title = T[m.dataset.tTitle];
+      if (zapnuto) m.setAttribute("aria-disabled", "true"); else m.removeAttribute("aria-disabled");
+    });
     if (!zapnuto) { if (globusOk && ctx) { potrebaKresli = true; teckyZmeneny = true; popiskyZmeneny = true; ozivit(); } return; }
     const vl = vybranyList(), i = vybrany ? (vybrany.typ === "atlas" ? BOD_ATLASU[vybrany.id] : vybrany.i) : -1;
     const cilova = f != null ? f : i >= 0 && B[i][3] !== IZOLAT && !BEZ_RODU.has(B[i][3]) && radek(i)[2] >= 0 ? B[i][3] : rodina >= 0 ? rodina : B[BOD_ATLASU[T.lang]][3];

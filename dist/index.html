@@ -1183,6 +1183,11 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 .mapa-tl[aria-pressed="true"] b{color:var(--akcent)}
 .mapa-tl small{font-size:.75rem; line-height:1.3; color:var(--text3)}
 @media (max-width: 520px){ .mapy-mriz{grid-template-columns:1fr 1fr; gap:2px 4px} .mapa-tl{gap:8px; padding:6px 4px} .mapa-obr{width:44px; height:44px} .mapa-tl b{font-size:.84rem} }
+/* v rodokmenu jsou Mapy a Vitalita nečinné (barví jen glóbus): šedé, bez zvednutí */
+.med[aria-disabled="true"]{cursor:not-allowed}
+.med[aria-disabled="true"] .med-obr, .med[aria-disabled="true"]:hover .med-obr{filter:grayscale(1) contrast(.85); opacity:.5; transform:none;
+  box-shadow:0 0 0 5px var(--med-ram1), 0 0 0 6px var(--med-ram2), 0 10px 18px -6px var(--med-stin), inset 0 2px 5px rgba(0,0,0,.32)}
+.med[aria-disabled="true"] span{color:var(--text3)}
 
 /* ---------- jazyky starověku: stránka o civilizaci jako list ilustrované encyklopedie (okno nad glóbem i web) ----------
    Papír a inkoust jako u akvarelů na kartách; v tmavém vzhledu sépiová noc. Barvy jen tady, přes --civ-*. */
@@ -1683,6 +1688,6 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
  <dialog class="civ-okno" id="civ-okno" aria-labelledby="civ-nadpis"></dialog>
 </div>
 
-<script src="js/atlas.945b663a62.js"></script>
+<script src="js/atlas.17f16d5f25.js"></script>
 </body>
 </html>

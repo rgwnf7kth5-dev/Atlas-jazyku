@@ -136,6 +136,9 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a živý web workflow Diag
   (akvarely z `scripts/ikony.mjs`; `mapy.jpg` je snímek glóbu), build je vkládá jako `IKONY` (v artefaktu data:).
   Řada se drží vpravo od otevřené karty (`posunDok`), pod ní je rozmazaný podklad, aby jí neprosvítala jména teček.
   Na telefonu jsou medailony pod glóbem ve dvou řadách po třech. Ikony chrámu a knihy v záhlaví zmizely.
+  **V rodokmenu jsou Mapy a Vitalita šedé a nečinné** (`aria-disabled`, odstíny šedi, `title` „V rodokmenu nejsou barevné
+  mapy k dispozici“; uživatel 27. 9. 2026: barví jen glóbus, v rodokmenu nedávají smysl). Medailon Rodokmen se v rodokmenu
+  mění na Glóbus. Řádek Vitalita (filtr stupňů) v Nastavení se přesune na samostatnou stránku Vitalita, až vznikne.
   **Náhodný jazyk** je malé červené tlačítko v záhlaví seznamu vedle počtu jazyků (`.pocet-radek`), na počítači
   i telefonu. **Zoom a Celý svět** jsou nenápadně vpravo nahoře na glóbu pod otazníkem, bez pilulky (`.roh-ovladani`);
   na telefonu jen Celý svět (zoom dvěma prsty). Uživatel: „+ − nechat nenápadně někde v rohu bez pilulky“.
