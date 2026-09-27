@@ -81,7 +81,8 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a živý web workflow Diag
   not endangered = safe, threatened = vulnerable, shifting = definitely endangered, moribund = severely endangered,
   nearly extinct = critically endangered, extinct = extinct. Názvy proto používej UNESCO: **bezpečný, zranitelný,
   jednoznačně ohrožený, vážně ohrožený, kriticky ohrožený, vymřelý** (safe … extinct), popisy podle definic UNESCO.
-  Navíc **probouzený** (awakening): na stupnici UNESCO vymřelý, ale oživovaný; Glottolog ho má jen v komentáři
+  Navíc **probouzený** (awakening): Glottolog ho vede jako vymřelý, ale oživuje se (UNESCO sám v atlasu 2010 převedl
+  kornštinu a manštinu z vymřelých mezi kriticky ohrožené – proto „vymřelý podle Glottologu“, ne „podle UNESCO“); Glottolog ho má jen v komentáři
   z původního zdroje (ElCat „Awakening“, Ethnologue „Reawakening“), `scripts/podrobnosti.mjs` ho ukládá jako 6.
   V `radky` je tedy vitalita -1 (bez údaje) až 6. Filtr stupňů je na **stránce Vitalita** (lze vybrat víc,
   předvolby „Všechny“ a „Jen ohrožené“ = zranitelný až kriticky); volba se pamatuje (`atlas-vitalita`).
@@ -159,6 +160,11 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a živý web workflow Diag
   tečku) s odkazem na příběh „Jazyky, které se vracejí“, a **metodika a zdroje** (UNESCO 2003, Moseley 2010,
   Hammarström a kol. 2018 o AES, Glottolog, ElCat). Všechna čísla se počítají z dat při otevření; texty `vitStranka`
   v `src/ui/*.json`. Filtr stupňů byl dřív podstránkou panelu Zobrazení (`#vitalita-panel`, zrušeno).
+  Při ověření opraveno: probouzené jazyky jsou vymřelé podle Glottologu, ne podle UNESCO; AES jen „u většiny jazyků“ a
+  „především“ z UNESCO, Ethnologue a ElCat (i z dalších publikací); latina nemá rodilé mluvčí, ale není doložená jen
+  historicky; stupně UNESCO 2003 se jmenovaly unsafe a definitively endangered, názvy a popisy jsou z atlasu 2010;
+  podíl je ze všech jazyků na glóbu (7 967), ne z Glottologu (8 618). **Verze Glottologu v citaci (5.2.1) je napsaná
+  ručně** – po novém stažení dat ji zkontrolovat v `cldf-metadata.json` (`dc:bibliographicCitation`).
 - **Karta jako pohlednice**: nahoře „hero“ v barvě rodiny (u teček bez atlasu azurová) s velkým pozdravem,
   pod ním štítky (mluvčích, rodina, vitalita) a záložky (atlas: Zajímavost / Vitalita / Příbuzní;
   tečka: Přehled / Jak funguje / Příbuzní). Při výběru nového jazyka karta vjede (`vjezd`).

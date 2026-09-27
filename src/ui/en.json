@@ -104,7 +104,7 @@
   ],
   [
    "Vulnerable",
-   "Most children speak it, but only in some areas of life – for example at home."
+   "Most children speak it, but it may be restricted to certain domains, such as the home."
   ],
   [
    "Definitely endangered",
@@ -112,11 +112,11 @@
   ],
   [
    "Severely endangered",
-   "Grandparents speak it. Parents understand it, but don't speak it to their children or among themselves."
+   "It is spoken by grandparents and older generations. Parents may understand it, but do not speak it to their children or among themselves."
   ],
   [
    "Critically endangered",
-   "The youngest speakers are grandparents and older – and they speak it only partly and rarely."
+   "The youngest speakers are grandparents and older, and they speak it only partially and infrequently."
   ],
   [
    "Extinct",
@@ -124,7 +124,7 @@
   ],
   [
    "Awakening",
-   "It has no native speakers any more, but people are learning it again and bringing it back to life. On the UNESCO scale it counts as extinct."
+   "It lost its traditional native speakers, but people are learning it again and bringing it back to life. Glottolog classifies it as extinct."
   ]
  ],
  "uzivatelu": "Used by",
@@ -240,7 +240,7 @@
   ],
   [
    "Awakening",
-   "It has no native signers any more, but people are learning it again. On the UNESCO scale it counts as extinct."
+   "It lost its traditional native signers, but people are learning it again. Glottolog classifies it as extinct."
   ]
  ],
  "kdeZnakuje": "Where it is used",
@@ -658,13 +658,13 @@
  "medVRodokmenu": "Colour maps are not available in the family tree – switch back to the globe",
  "vitStranka": {
   "nadpis": "Language vitality",
-  "podtitul": "How endangered are the world’s languages · the UNESCO scale",
-  "uvod": "Vitality describes whether a language is being passed on to the next generation. The atlas uses UNESCO’s six-degree scale, from safe to extinct, and separately marks awakening languages – extinct languages that people are learning and using again. The data come from Glottolog and cover all {n} languages on the globe.",
+  "podtitul": "How endangered the world’s languages are · the UNESCO scale",
+  "uvod": "Vitality describes whether a language is being passed on to the next generation. The atlas uses UNESCO’s six-degree scale, from safe to extinct, and separately marks awakening languages – languages that Glottolog lists as extinct but that people are learning and using again. The data come from Glottolog and cover all {n} languages on the globe.",
   "cislaBezpecne": "safe",
   "cislaOhrozene": "endangered (vulnerable to critically endangered)",
   "cislaVymrele": "extinct",
   "cislaProbouzene": "awakening",
-  "souhrn": "{n} languages, or {p} of all languages in Glottolog, are endangered to some degree.",
+  "souhrn": "{n} languages, or {p} of all languages on the globe, are endangered to some degree.",
   "barvyZap": "Colour the globe by vitality",
   "barvyVyp": "Turn off vitality colours on the globe",
   "stupneH": "Degrees of vitality",
@@ -674,7 +674,7 @@
   "filtrOhrozene": "Endangered only",
   "bezUdajePopis": "Glottolog gives no degree of endangerment for the language.",
   "oblastiH": "By world region",
-  "oblastiUvod": "The regions are Glottolog’s macroareas. The bar shows what share of the region’s languages each degree makes up (colours as above).",
+  "oblastiUvod": "The regions are Glottolog’s macroareas. The bar shows the share of the region’s languages at each degree (colours as above).",
   "oblastiSloupce": [
    "Region",
    "Languages",
@@ -684,20 +684,21 @@
   "atlasH": "Endangered languages in the atlas",
   "atlasUvod": "Languages with a detailed card that Glottolog lists as endangered to some degree or as awakening, most endangered first. Click to open the language card.",
   "probouzeneH": "Awakening languages",
-  "probouzeneUvod": "{n} languages count as extinct on the UNESCO scale but are being learned and used again. Glottolog does not list this as a separate degree; the atlas recognises them from the note “Awakening” (Catalogue of Endangered Languages) or “Reawakening” (Ethnologue) in the endangerment data. Click a language to show it on the globe.",
+  "probouzeneUvod": "There are {n} awakening languages. Glottolog classifies them as extinct, but people are learning and using them again. Glottolog does not treat this as a separate degree; the atlas recognises them from the note “Awakening” (Catalogue of Endangered Languages) or “Reawakening” (Ethnologue) that Glottolog carries over from the original source. Click a language to show it on the globe.",
   "pribehStitek": "Language stories",
   "metodikaH": "Method and sources",
   "metodika": [
-   "The degrees follow the intergenerational transmission criterion in the UNESCO expert group document Language Vitality and Endangerment (2003); the Atlas of the World’s Languages in Danger (Moseley 2010) uses the same six-degree scale.",
-   "Glottolog gives each language an aggregated endangerment status (Agglomerated Endangerment Status, AES), compiled from UNESCO, Ethnologue and the Catalogue of Endangered Languages (ElCat). Its degrees correspond one to one to the UNESCO scale: not endangered = safe, threatened = vulnerable, shifting = definitely endangered, moribund = severely endangered, nearly extinct = critically endangered, extinct = extinct.",
-   "The assessments date from different years and the sources sometimes disagree, so the degree is an indication rather than a precise measurement. The extinct languages include languages known only from historical records, such as Hittite, Sumerian and Latin. {n} languages have no data. The Glottolog data were downloaded on {d}."
+   "The degrees follow the intergenerational transmission criterion in the UNESCO expert group document Language Vitality and Endangerment (2003). Their names and descriptions follow the Atlas of the World’s Languages in Danger (Moseley 2010), which adopted the scale and renamed two degrees (unsafe to vulnerable, definitively to definitely endangered).",
+   "Glottolog gives most languages an Agglomerated Endangerment Status (AES), compiled mainly from UNESCO, Ethnologue and the Catalogue of Endangered Languages (ElCat). Each of its degrees corresponds to exactly one UNESCO degree: not endangered = safe, threatened = vulnerable, shifting = definitely endangered, moribund = severely endangered, nearly extinct = critically endangered, extinct = extinct.",
+   "The assessments date from different years and the sources sometimes disagree, so the degree is an indication rather than a precise measurement. The extinct languages include languages known only from historical records, such as Hittite and Sumerian, as well as Latin, which has no native speakers although it is still used as a second language (for example by the Holy See). {n} languages have no data. The Glottolog data were downloaded on {d}."
   ],
   "zdroje": [
    "UNESCO Ad Hoc Expert Group on Endangered Languages (2003): Language Vitality and Endangerment. Paris: UNESCO.",
    "Moseley, Christopher (ed.) (2010): Atlas of the World’s Languages in Danger. 3rd edn. Paris: UNESCO Publishing.",
-   "Hammarström, Harald; Castermans, Thom; Forkel, Robert; Verbeek, Kevin; Westenberg, Michel A.; Speckmann, Bettina (2018): Simultaneous Visualization of Language Endangerment and Language Description. Language Documentation & Conservation 12, 359–392.",
-   "Hammarström, Harald; Forkel, Robert; Haspelmath, Martin; Bank, Sebastian: Glottolog. Leipzig: Max Planck Institute for Evolutionary Anthropology. https://glottolog.org",
-   "Catalogue of Endangered Languages (ElCat). University of Hawaiʻi at Mānoa. https://www.endangeredlanguages.com"
+   "Hammarström, Harald; Castermans, Thom; Forkel, Robert; Verbeek, Kevin; Westenberg, Michel A.; Speckmann, Bettina (2018): Simultaneous Visualization of Language Endangerment and Language Description. Language Documentation & Conservation 12, 359–392. http://hdl.handle.net/10125/24792",
+   "Hammarström, Harald; Forkel, Robert; Haspelmath, Martin; Bank, Sebastian (2025): Glottolog 5.2.1. Leipzig: Max Planck Institute for Evolutionary Anthropology. https://doi.org/10.5281/zenodo.596479",
+   "Catalogue of Endangered Languages (ElCat). University of Hawaiʻi at Mānoa. https://www.endangeredlanguages.com",
+  "Eberhard, David M.; Simons, Gary F.; Fennig, Charles D. (eds.): Ethnologue: Languages of the World. Dallas: SIL International."
   ],
   "odkazKarta": "Vitality of the world’s languages ›"
  },

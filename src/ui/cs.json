@@ -104,7 +104,7 @@
   ],
   [
    "Zranitelný",
-   "Většina dětí jím mluví, ale jen v některých oblastech života – třeba jen doma."
+   "Většina dětí jím mluví, ale jeho užívání může být omezené na některé oblasti života, třeba na domov."
   ],
   [
    "Jednoznačně ohrožený",
@@ -112,11 +112,11 @@
   ],
   [
    "Vážně ohrožený",
-   "Mluví jím prarodiče. Rodiče mu rozumějí, ale na děti ani mezi sebou jím nemluví."
+   "Mluví jím prarodiče a starší generace. Rodiče mu mohou rozumět, ale na děti ani mezi sebou jím nemluví."
   ],
   [
    "Kriticky ohrožený",
-   "Nejmladší mluvčí jsou prarodiče a ještě starší lidé – a mluví jím jen málo a zřídka."
+   "Nejmladší mluvčí jsou prarodiče a starší lidé a mluví jím jen částečně a zřídka."
   ],
   [
    "Vymřelý",
@@ -124,7 +124,7 @@
   ],
   [
    "Probouzený",
-   "Rodilé mluvčí už nemá, ale lidé se ho znovu učí a vracejí ho do života. Na stupnici UNESCO se počítá mezi vymřelé."
+   "Tradiční rodilé mluvčí ztratil, ale lidé se ho znovu učí a vracejí ho do života. Glottolog ho řadí mezi vymřelé."
   ]
  ],
  "uzivatelu": "Používá ho",
@@ -240,7 +240,7 @@
   ],
   [
    "Probouzený",
-   "Rodilé uživatele už nemá, ale lidé se ho znovu učí. Na stupnici UNESCO se počítá mezi vymřelé."
+   "Tradiční rodilé uživatele ztratil, ale lidé se ho znovu učí. Glottolog ho řadí mezi vymřelé."
   ]
  ],
  "kdeZnakuje": "Kde se jím znakuje",
@@ -659,22 +659,22 @@
  "vitStranka": {
   "nadpis": "Vitalita jazyků",
   "podtitul": "Jak jsou jazyky světa ohrožené · stupnice UNESCO",
-  "uvod": "Vitalita vyjadřuje, zda se jazyk předává další generaci. Atlas používá šestistupňovou stupnici UNESCO od bezpečného po vymřelý jazyk a zvlášť vyznačuje jazyky probouzené – vymřelé jazyky, které se lidé znovu učí a používají. Údaje pocházejí z Glottologu a týkají se všech {n} jazyků na glóbu.",
+  "uvod": "Vitalita vyjadřuje, zda se jazyk předává další generaci. Atlas používá šestistupňovou stupnici UNESCO od bezpečného po vymřelý jazyk a zvlášť vyznačuje jazyky probouzené – jazyky, které Glottolog vede jako vymřelé, ale lidé se je znovu učí a používají. Údaje pocházejí z Glottologu a týkají se všech {n} jazyků na glóbu.",
   "cislaBezpecne": "bezpečných",
-  "cislaOhrozene": "ohrožených (zranitelný až kriticky ohrožený)",
+  "cislaOhrozene": "ohrožených (od zranitelných po kriticky ohrožené)",
   "cislaVymrele": "vymřelých",
   "cislaProbouzene": "probouzených",
-  "souhrn": "V některém stupni ohrožení je {n} jazyků, tedy {p} všech jazyků v Glottologu.",
+  "souhrn": "V některém stupni ohrožení je {n} jazyků, tedy {p} všech jazyků na glóbu.",
   "barvyZap": "Obarvit glóbus podle vitality",
   "barvyVyp": "Vypnout barvy vitality na glóbu",
   "stupneH": "Stupně vitality",
-  "stupneUvod": "Délka pruhu odpovídá počtu jazyků. Zaškrtnuté stupně zůstávají vidět na glóbu, v seznamu i ve vyhledávání; odškrtnutím se jazyky daného stupně skryjí (filtr platí i bez barev).",
+  "stupneUvod": "Délka pruhu odpovídá počtu jazyků. Zaškrtnuté stupně zůstávají zobrazené na glóbu, v seznamu i ve vyhledávání; odškrtnutím se jazyky daného stupně skryjí (filtr platí i bez barev).",
   "filtrTitulek": "Zobrazit nebo skrýt jazyky tohoto stupně",
   "filtrVse": "Všechny",
   "filtrOhrozene": "Jen ohrožené",
   "bezUdajePopis": "Glottolog u jazyka stupeň ohrožení neuvádí.",
   "oblastiH": "Podle oblastí světa",
-  "oblastiUvod": "Oblasti jsou makrooblasti Glottologu. Pruh ukazuje, jakou část jazyků oblasti tvoří jednotlivé stupně (barvy jako výše).",
+  "oblastiUvod": "Oblasti jsou makrooblasti Glottologu. Pruh ukazuje, jaký podíl jazyků oblasti připadá na jednotlivé stupně (barvy jako výše).",
   "oblastiSloupce": [
    "Oblast",
    "Jazyků",
@@ -684,20 +684,21 @@
   "atlasH": "Ohrožené jazyky v atlasu",
   "atlasUvod": "Jazyky s podrobnou kartou, které jsou podle Glottologu v některém stupni ohrožení nebo se probouzejí, od nejohroženějších. Klepnutím se otevře karta jazyka.",
   "probouzeneH": "Probouzené jazyky",
-  "probouzeneUvod": "Jazyků, které na stupnici UNESCO vycházejí jako vymřelé, ale lidé se je znovu učí a používají, je {n}. Glottolog je jako samostatný stupeň nevede; atlas je rozpoznává podle poznámky „Awakening“ (Katalog ohrožených jazyků) nebo „Reawakening“ (Ethnologue) u údaje o ohrožení. Klepnutím se jazyk ukáže na glóbu.",
+  "probouzeneUvod": "Probouzených jazyků je {n}. Glottolog je řadí mezi vymřelé, ale lidé se je znovu učí a používají. Jako samostatný stupeň je Glottolog nevede; atlas je rozpoznává podle poznámky „Awakening“ (Katalog ohrožených jazyků) nebo „Reawakening“ (Ethnologue), kterou Glottolog u údaje o ohrožení přebírá z původního zdroje. Klepnutím se jazyk ukáže na glóbu.",
   "pribehStitek": "Příběhy jazyků",
   "metodikaH": "Metodika a zdroje",
   "metodika": [
-   "Stupně vycházejí z kritéria mezigeneračního předávání v dokumentu expertní skupiny UNESCO Language Vitality and Endangerment (2003); stejnou šestistupňovou stupnici používá Atlas of the World’s Languages in Danger (Moseley 2010).",
-   "Glottolog uvádí u každého jazyka souhrnný stupeň ohrožení (Agglomerated Endangerment Status, AES), sestavený z údajů UNESCO, Ethnologue a Katalogu ohrožených jazyků (ElCat). Jeho stupně odpovídají stupnici UNESCO jedna k jedné: not endangered = bezpečný, threatened = zranitelný, shifting = jednoznačně ohrožený, moribund = vážně ohrožený, nearly extinct = kriticky ohrožený, extinct = vymřelý.",
-   "Hodnocení pocházejí z různých let a zdroje se v nich někdy rozcházejí; stupeň je proto orientační údaj, ne přesné měření. Mezi vymřelými jsou i jazyky doložené jen historicky, například chetitština, sumerština nebo latina. U {n} jazyků údaj chybí. Data Glottologu byla stažena {d}."
+   "Stupně vycházejí z kritéria mezigeneračního předávání jazyka v dokumentu expertní skupiny UNESCO Language Vitality and Endangerment (2003). Názvy a popisy stupňů odpovídají publikaci Atlas of the World’s Languages in Danger (Moseley 2010), která stupnici převzala a dva stupně přejmenovala (unsafe na vulnerable, definitively na definitely endangered).",
+   "Glottolog uvádí u většiny jazyků souhrnný stupeň ohrožení (Agglomerated Endangerment Status, AES), sestavený především z údajů UNESCO, Ethnologue a Katalogu ohrožených jazyků (ElCat). Každý jeho stupeň odpovídá právě jednomu stupni UNESCO: not endangered = bezpečný, threatened = zranitelný, shifting = jednoznačně ohrožený, moribund = vážně ohrožený, nearly extinct = kriticky ohrožený, extinct = vymřelý.",
+   "Hodnocení pocházejí z různých let a zdroje se v nich někdy rozcházejí; stupeň je proto orientační údaj, ne přesné měření. Mezi vymřelé patří i jazyky známé jen z historických pramenů, například chetitština a sumerština, a také latina, která nemá rodilé mluvčí, i když se dodnes používá jako druhý jazyk (například ve Svatém stolci). U {n} jazyků údaj chybí. Data Glottologu byla stažena {d}."
   ],
   "zdroje": [
    "UNESCO Ad Hoc Expert Group on Endangered Languages (2003): Language Vitality and Endangerment. Paříž: UNESCO.",
    "Moseley, Christopher (ed.) (2010): Atlas of the World’s Languages in Danger. 3. vyd. Paříž: UNESCO Publishing.",
-   "Hammarström, Harald; Castermans, Thom; Forkel, Robert; Verbeek, Kevin; Westenberg, Michel A.; Speckmann, Bettina (2018): Simultaneous Visualization of Language Endangerment and Language Description. Language Documentation & Conservation 12, 359–392.",
-   "Hammarström, Harald; Forkel, Robert; Haspelmath, Martin; Bank, Sebastian: Glottolog. Lipsko: Max Planck Institute for Evolutionary Anthropology. https://glottolog.org",
-   "Catalogue of Endangered Languages (ElCat). University of Hawaiʻi at Mānoa. https://www.endangeredlanguages.com"
+   "Hammarström, Harald; Castermans, Thom; Forkel, Robert; Verbeek, Kevin; Westenberg, Michel A.; Speckmann, Bettina (2018): Simultaneous Visualization of Language Endangerment and Language Description. Language Documentation & Conservation 12, 359–392. http://hdl.handle.net/10125/24792",
+   "Hammarström, Harald; Forkel, Robert; Haspelmath, Martin; Bank, Sebastian (2025): Glottolog 5.2.1. Lipsko: Max Planck Institute for Evolutionary Anthropology. https://doi.org/10.5281/zenodo.596479",
+   "Catalogue of Endangered Languages (ElCat). University of Hawaiʻi at Mānoa. https://www.endangeredlanguages.com",
+  "Eberhard, David M.; Simons, Gary F.; Fennig, Charles D. (eds.): Ethnologue: Languages of the World. Dallas: SIL International."
   ],
   "odkazKarta": "Vitalita jazyků světa ›"
  },
