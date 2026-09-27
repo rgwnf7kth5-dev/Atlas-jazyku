@@ -1,0 +1,121 @@
+{{Short description|Aspect of the West Slavic language}}
+{{redirect|History of Czech|history of the Czech lands|History of the Czech lands}}
+{{more footnotes needed|date=August 2014}}
+The [[Czech language]] developed at the close of the 1st millennium from common [[West Slavic languages|West Slavic]]. Until the early 20th century, it was known as ''Bohemian''.
+
+==  Early West Slavic ==
+{{anchor|Proto-Czech|Czech-Slovak}}
+Among the innovations in common [[West Slavic languages|West Slavic]] is the [[Palatalization (sound change)|palatalization]] of [[Velar consonant|velar]] ''ch'' > ''š'' (''vьšь'' 'all'), while ''s'' (''vьsь'') developed in the East and South Slavic dialects.
+
+Within West Slavic, Czech and Slovak separated from Polish around the 10th to 12th centuries. 
+Some other changes took place during roughly the 10th century:
+* ''the disappearance and vocalization of [[yer]]s'' according to [[Havlík's law|Havlík’s Yer Law]] (''bъzъ > bez, bъza > bza'' ([[Genitive case|gen.]]), later ''bezu'' 'elder, lilac');
+* the contraction of groups ''[[vowel]] + j + vowel'' ({{lang|zlw|dobriji > dobr’í, dobroje > dobré}} 'good');
+* the ''denasalization'' of [[Nasalization|nasal]] ''ę'' [ẽ] > ''ä'' and ''ǫ'' [õ] > ''u''.
+
+The disappearance of the odd yers strengthened the [[Phonology|phonological]] contrast of palatalized (softened) and unpalatalized [[consonant]]s, and resulted in alterations of epenthetic ''e'' and [[Zero (linguistics)|∅]] (null-[[phoneme]]). The contrast of the vowel quantity (length) was also strengthened. The depalatalization of consonants preceding ''e'' and ''ä'' took place later, thus the frequency of occurrence of palatalized consonants was lowered, but it strengthened the palatalization contrast at the same time. The change of ''’ä > ě'' and ''ä > a'' took place at the end of the 12th century.
+
+The vowels were front (ä, e, i, ě) and back (a, o, u), and the front ones had their back variants ([[allophone]]s), and vice versa.{{Clarify|date=October 2022|In what way were they allophones?}} The consonants were divided into hard (b, p, v, m, t, d, r, l, n, c, z, s, k, g, ch) and soft – palatal or palatalized (t’, d’, ř, l’, n’, c’, s’, z’, č, š, ž, j, ň). This division was cardinal for the later development.
+
+The spirantisation of Slavic /g/ to /h/ is an areal feature shared by Ukrainian (and some southern Russian dialects), Belarusian, Slovak, Czech, Upper Sorbian (but not Polish or Lower Sorbian) and minority of Slovene dialects. This innovation appears to have travelled from east to west, and is sometimes attributed to contact with [[Scythian languages|Scytho-Sarmatian]].<ref>Абаев В. И. О происхождении фонемы ''g (h)'' в славянском языке // Проблемы индоевропейского языкознания. М., 1964, 115—121. Эдельман Д. И. К происхождению ирано-славянских диахронических паралелей // Славянская языковая и этноязыковая системы в контакте с неславянским окружением. М., 2002, 76—77.</ref> 
+It is approximately dated to the 12th century in Slovak, the 12th to 13th century in Czech and the 14th century in Upper Sorbian.<ref>Pronk-Tiethoff, ''The Germanic loanwords in Proto-Slavic'', 2013, [https://books.google.com/books?id=0iWLAgAAQBAJ&pg=PA71  p. 71 (fn 26)])</ref>
+
+In the nominal [[declension]], the traditional division according to the word-stem ending was progressively replaced by the [[Gender (grammar)|gender]] principle (masculine, feminine and neuter) There were also three [[grammatical number]]s: singular, dual and plural.
+
+The dual is also applied in verb conjugations. The past is expressed by [[aorist]], [[imperfect]], [[Perfect (grammar)|perfect]] and [[pluperfect]]. The [[future tense]] is not fixed yet; the present tense is often used instead. The contrast of perfective and imperfective [[Verb aspect|aspect]]s is not fully developed yet, there are also biaspectual and no-aspectual verbs. The Proto-Slavic [[supine]] was used after verbs of motion, but it was replaced by the [[infinitive]]. However, the contemporary infinitive [[Ending (linguistics)|ending]] ''-t'' formally continues the supine.
+
+== Old Czech ==
+
+=== Earliest records ===
+The earliest written records of Czech date to the 12th to 13th century, in the form of personal names, glosses and short notes.
+
+The oldest known complete Czech sentence is a note on the foundation charter of the [[Litoměřice]] chapter from the beginning of the  13th century:
+:''Pauel dal geſt ploſcoucih zemu'' / ''Wlah dalgeſt dolaſ zemu iſuiatemu ſcepanu ſeduema duſnicoma bogucea aſedlatu'' 
+:(in transcription: ''Pavel dal jest Ploškovcích zeḿu. Vlach dal jest Dolás zeḿu i sv́atému Ščepánu se dvěma dušníkoma Bogučeja a Sedlatu.'')<ref>{{cite book|last1=Porák|first1=Jaroslav |title=Chrestomatie k vývoji českého jazyka (13. – 18. století)|date=1979 |page=31}}</ref>  
+
+The earliest texts were written in ''[[Czech orthography#History|primitive orthography]]'', which used the letters of the [[Latin alphabet]] without any diacritics, resulting in ambiguities, such as in the letter ''c'' representing the ''k'' /k/, ''c'' /ts/ and ''č'' /tʃ/ phonemes.
+Later during the 13th century, the ''digraph orthography'' begins to appear, although not systematically. Combinations of letters ([[Digraph (orthography)|digraphs]]) are used for recording Czech sounds, e.g. ''rs'' for ''ř''.
+
+Large changes take place in Czech phonology in the 12th and 13th centuries. 
+Front and back variants of vowels are removed, e.g. ''’ä > ě'' (''ie'') and ''’a > ě'' ({{lang|cs|v’a̋ce > viece}} 'more', ''p’äkný > pěkný'' 'nice'). In the morphology, these changes deepened the differences between hard and soft noun types (''sedláka'' 'farmer (gen.)' ↔ ''oráčě'' 'ploughman (gen.)'; ''města'' 'towns' ↔ ''mor’ě'' 'seas'; ''žena'' 'woman' ↔ ''dušě'' 'soul') as well as verbs (''volati'' 'to call' ↔ ''sázěti'' 'to plant out'). The hard syllabic ''l'' changed to ''lu'' (''Chlmec > Chlumec, dĺgý > dlúhý'' 'long'), as opposite to soft ''l’''. The change of ''g'' to {{IPAblink|ɣ}}, and later to {{IPAblink|ɦ}}, had been in progress since the 12th century.
+Later [[assibilation]] of palatalized alveolars (''t’ > c’, d’ > dz’'' and ''r’ > rs’'') occurred. However, ''c’'' and ''dz’'' disappeared later, but the change of ''r’ > rs’ > ř'' became permanent.
+
+The relatively modern vowel length system was developed during the Old Czech period. It was mainly characterised by shortening of Proto-Slavic long vowels and lengthening of short neoacute vowels (''*ò, è''), e. g. PSl. ''*nògъ'' > Czech ''nóh'' 'legs (gen. pl.)'. Acute vowels retained their length in mono- and disyllabic nouns, e. g. PSl. {{Wikt-lang|sla-pro|*vòrna}} > Czech ''vrána'' 'crow', {{Wikt-lang|sla-pro|*sìla}} > ''síla'' 'strength', {{Wikt-lang|sla-pro|*vě̀ra}} > Old Czech ''viera'' > ''víra'' 'faith', but ins. sg. ''*vòrnojǫ'' > ''vranú'' > ''vranou'', ''*sìlojǫ'' > ''silú'' > ''silou'', ''{{Wikt-lang|sla-pro|*vě̀riti}}'' > ''věriti'' 'to believe'''.'' Length was also retained in trisyllabic nouns with an acute vowel after a weak yer, e. g. ''{{Wikt-lang|sla-pro|*lъžìca}}'' > ''lžíce'' 'spoon', ''{{Wikt-lang|sla-pro|*pьsàti}}'' > ''psát'' 'to write', ''{{Wikt-lang|sla-pro|*sъpàti}}'' > ''spát'' 'to sleep'. During the later development stages of Czech many words experienced secondary generalization of vowel quantity, e. g. length in oblique cases of ''bříza'' 'birch'; shortness in nom. sg. of ''ryba'' 'fish' (Old Czech ''rýba''). This process also led to the emergence of doublets such as ''místo'' 'place' and ''město'' 'city', ''dívka'' 'girl' and ''děvka'' 'whore'.<ref>{{Cite journal |last=Kapović |first=Mate |date=2005 |title=The Development of Proto-Slavic Quantity (from Proto-Slavic to Modern Slavic Languages) |url=https://www.jstor.org/stable/24749752 |journal=Wiener Slavistisches Jahrbuch |volume=51 |pages=73–111 |issn=0084-0041}}</ref>
+
+===14th century===
+In the 14th century, Czech began to penetrate various literary styles. Official documents in Czech exist at the end of the century. The digraph orthography is applied. The ''older digraph orthography'': ''ch = ch; chz = č; cz = c; g = j; rs, rz = ř; s = ž'' or ''š; w = v; v = u; zz = s; z = z; ie, ye = ě''; the graphemes ''i'' and ''y'' are interchangeable. The vowel length is not usually denoted, doubled letters are used rarely. Obligatory regulations did not exist. This is why the system was not always applied precisely.
+After 1340, the ''later digraph orthography'' was applied: ''ch = ch; cz = c'' or ''č; g = j; rs, rz = ř; s = s'' or ''š; ss = s'' or ''š; w = v; v = u; z = z'' or ''ž'', syllable-final ''y'' = ''j''; ''ie, ye = ě''. The graphemes ''i'' and ''y'' remain interchangeable. The [[punctuation]] mark is sometimes used in various shapes. Its function is to denote pauses.
+
+The changes of ''’u > i'' (''kl’úč > klíč'' 'key') and ''’o > ě'' (''koňóm > koniem'' '(to) horses') took place; they did not appear in Slovak. The so-called ''main historical depalatalization'', initiated in the 13th century, was finished. Palatalized (softened) consonants either merged with their hard counterparts or became [[Palatal consonants|palatal]] (ď, ť, ň). The depalatalization did not temporarily concern hard and soft ''l'', which merged to one middle ''l'' later at the turn of the 14th and 15th centuries. In this context, the phoneme ''ě'' [ʲe] disappeared. The short ''ě'' either changed to ''e'' or was dissociated to ''j + e'' (''pěna'' [pjena] 'foam') before labial consonants in the pronunciation. The long ''ě'' was [[diphthong]]ized to ''ie'' (''chtieti'' 'to want', ''čieše'' 'goblet', ''piesek'' 'sand'). At the same time, the long ''ó'' was diphthongized to ''uo'' (''sól > suol'' 'salt').
+In pronunciation, ''regressive assimilation of voice'' was enforced (with the exception of ''h, ř'' and ''v''). The voicedness became the main contrastive feature of consonants after the disappearance of palatalization. The original pronunciation of ''v'' was probably [[Bilabial consonant|bilabial]] (as preserved in some Eastern-Bohemian dialects in syllable-final positions: {{lang|cs|diwnej}} 'peculiar', {{lang|cs|stowka}} 'a hundred'), but in the 14th century, the articulation was adapted to the unvoiced [[Labiodental consonant|labiodental]] ''f''. Prothetic ''v-'' has been added to all words beginning with ''o-'' ({{lang|cs|voko}} instead of ''oko'' 'eye') in the Bohemian dialects since this period.
+
+In morphology, the future tense of imperfective verbs was fixed. The type {{lang|cs|budu volati}} 'I will call' became preferred to other types ({{lang|cs|chc’u volati}} 'I want to call', {{lang|cs|jmám volati}} 'I have to call', and {{lang|cs|budu volal}} 'I will have called'). The contrastive feature of imperfectiveness was also stabilized. The perfectivization function of [[prefix]]es and the imperfectivization function of [[suffix]]es are applied. As a consequence of this, aorist and imperfect start disappearing little by little and are replaced by the perfect (now called [[preterite]], since it became the only past tense in Czech). The periphrastic [[Grammatical voice|passive voice]] is formed.
+
+=== Hussite period ===
+[[File:Hesla Jednoty bratrské 2017 - obálka přední.jpg|thumb|Book of Ezekiel 36:26 from the 1417 Bible of Olomouc]]
+The period of the 15th century from the beginning of [[Jan Hus]]'s preaching activity to the beginning of Czech [[humanism]]. The number of literary language users enlarges. Czech fully penetrates the administration.
+
+Around 1406, a reform of the orthography was suggested in ''[[De orthographia bohemica]]'', a work attributed to Jan Hus – the so-called ''[[diacritic]] orthography''. For recording of soft consonants, digraphs are replaced by a dot above letters. The acute is used to denote the vowel length. The digraph ''ch'' and the grapheme ''w'' are preserved. The interchangeability of the graphemes ''i'' and ''y'' is cancelled. The suggestion is a work of an individual person, therefore this graphic system was accepted slowly, the digraph orthography was still in use.
+
+As a consequence of the loss of palatalization, the pronunciation of ''y'' and ''i'' merged. This change resulted in the diphthongization of ''ý > ej'' in [[Common Czech]] (the widespread Bohemian interdialect). There are also some other changes in this period: the diphthongization of ''ú > ou'' (written ''au'', the pronunciation was probably different from today), the monophthongization of ''ie > í'' (''miera > míra'' 'measure') and ''uo > ú''. The diphthong ''uo'' was sometimes recorded as ''o'' in the form of a ring above the letter ''u'', which resulted in the grapheme ''ů'' (''kuoň > kůň''). The ring has been regarded as a diacritic mark denoting the length since the change in pronunciation.
+
+The contrast of animateness in masculine inflection is not still fully set, as it is not yet applied to animals (''vidím pána'' 'I see a lord'; ''vidím pes'' 'I see a dog'). Aorist and imperfect have disappeared from literary styles before the end of the 15th century.
+
+==Middle Czech==
+
+Middle Czech is spoken from about 1500 AD to c.1775 AD and is often divided into humanistic and baroque period.
+
+=== Humanistic period ===
+The period of the mature literary language from the 16th to the beginning of the 17th century. The orthography in written texts is not still unified, digraphs are used predominantly in various forms. After the invention of book-printing, the so-called ''Brethren orthography'' stabilized in printed documents. The [[Bible of Kralice]] (1579–1593), the first complete Czech translation of the Bible from the original languages by the [[Moravian Church|Unity of the Brethren]], became the pattern of the literary Czech language. The orthography was predominantly diacritic; the dot in soft consonants was replaced by the [[caron]] which was used in ''č, ď, ň, ř, ť, ž''. The letter ''š'' was mostly written in the final positions in words only, the digraph ''ʃʃ'' was written in the middle. The grapheme ''ě'' became used in the contemporary way. Vowel length was denoted by the acute accent, except for ''ů'' developed from original ''uo''. The long ''í'' was doubled ''ii'' for technical reasons; later it was denoted as ''ij'', and finally as ''j''. Pronounced [j] was recorded as ''g'' or ''y'', pronounced [g] was sometimes recorded by the grapheme ''ǧ''. The double ''w'' was preserved, the simple ''v'' denoted the word-initial ''u''. The diphthong ''ou'' was denoted as ''au''. The hard ''y'' was always written after ''c, s, z'' (''cyzý'' 'strange'). The complicated syntax, influenced by Latin texts, required some improvement of the punctuation. However, the [[Comma (punctuation)|comma]] was used according to pauses in pronunciation, not the syntax. The [[full stop]], the [[Colon (punctuation)|colon]], the [[question mark]] and the [[exclamation mark]] are used. The first grammars are published for typographers' purposes.
+
+In the pronunciation, the change of ''ý > ej'' was established, but it occurred in lesser prestige style text only. The diphthongization of ''ú > ou'' was also stabilized (but ''au'' still remained in graphics). In initial positions, it was used in lesser prestige or specialized styles only. Written ''mě'' [mje] starts to be pronounced as [mɲe]. The change of tautosyllabic ''aj > ej'' (''daj > dej'' 'give (2. sg. imperative)', ''vajce > vejce'' 'egg') took place, but it was not applied in heterosyllabic ''aj'' (''dají'' 'they will give', ''vajec'' 'egg (gen. pl.)').
+
+In morphology, the differentiation of animate and inanimate masculines was completed (''vidím psa'' rather than the earlier ''vidím pes'').
+
+=== Baroque period ===
+The period from the second half of the 17th century to the second third of the 18th century was marked by confiscations and emigration of the Czech intelligentsia after the [[Battle of White Mountain]]. The function of the literary language was limited; it left the scientific field first,  the discerning literature later, and the administration finally. Under the rule of [[Ferdinand II, Holy Roman Emperor|Holy Roman Emperor Ferdinand II]], who also reigned as king of Bohemia, the use of Czech was discouraged due to its association with Protestantism, and relegated to a spoken peasant tongue.<ref>{{cite web |last1=Janeksela |first1=Jacklyn |title=Why Czechs don't speak German |url=http://www.bbc.com/travel/story/20180820-why-czechs-dont-speak-german |website=www.bbc.com |language=en}}</ref> However, puppeteers continued to use Czech for public [[marionette]] shows, and popular legend has it that this preserved the Czech language from extinction at home.<ref>{{cite web |last1=Janeksela |first1=Jacklyn |title=Why Czechs don't speak German |url=http://www.bbc.com/travel/story/20180820-why-czechs-dont-speak-german |website=www.bbc.com |language=en}}</ref>
+
+Meanwhile, prestigious literary styles were cultivated by Czech expatriates abroad. The zenith and, simultaneously, the end of the florescence of prestigious literary styles are represented by the works of [[Comenius|Jan Amos Komenský]].  The changes in the phonology and the morphology of the literary language ended in the previous period. Only the spoken language continued its development in the country. As a consequence of strong isolation, the differences between dialects were deepened. Especially, the Moravian and Silesian dialects developed divergently from Common Czech.
+
+Printed documents used the same orthography as in the previous period. Only, the two kinds of ''l'' are not differentiated anymore. The [[semicolon]] occurs as a punctuation mark for better and clear organization of excessive and complicated [[complex sentence]]s. Digraphs with irregular elements of diacritics are still used in hand-written texts.
+
+The first ideas of the National Revival were in so-called defences of the Czech language. The most likely first such work is {{lang|la|Dissertatio apologetica pro lingua Slavonica praecipue Bohemica}} ("The defence of the Slavic language, of Czech in particular"), written in Latin by [[Bohuslav Balbín]].
+
+== Early Modern Czech ==
+{{Main article|Early Modern Czech|Czech National Revival}}The period from the 1780s to the 1840s. The abolition of serfdom in 1781 (by [[Joseph II, Holy Roman Emperor|Joseph II]]) caused migration of country inhabitants to towns. It enabled the implementation of the ideas of the Czech national awakeners for the renewal of the Czech language. However, the people's language and literary genres of the previous period were strange to the [[Age of Enlightenment|enlightened]] intelligentsia. The literary language of the end of the 16th century and of Komenský’s work became the starting point for the new codification of literary Czech. Of the various attempts at codification, [[Josef Dobrovský]]’s grammar was ultimately generally accepted. [[Purism (language)|Purists']] attempts to cleanse the language of [[Germanism (linguistics)|germanisms]] (both real and fictitious) had been occurring by that time. The publication of [[Josef Jungmann]]’s five-part ''Czech-German Dictionary'' (1830–1835) contributed to the renewal of Czech vocabulary. Thanks to the enthusiasm of Czech scientists, Czech scientific terminology was created.[[File:Nápis na dříku božích muk, Nučice.JPG|thumb|Wayside shrine in [[Nučice (Prague-East District)|Nučice]], dated 1822.]]
+[[File:Presl brambor.JPG|510 px|thumb|Sample (1846)]]
+Step by step, the orthography was liberated from the relics of the Brethren orthography. According to the etymology, ''si, zi'' or ''sy, zy'' came to be written, ''cy'' was replaced by ''ci''. Antiqua was introduced instead of fractura in printing, and it led to the removal of the digraph ''ʃʃ'' and its replacement by the letter ''š''. The long ''í'' replaced ''j'', and ''j'' replaced ''g'' ({{lang|cs|gegj > její}} 'hers'). In the 1840s, the double ''w'' was replaced by ''v'' and ''ou'' replaced the traditional ''au''. Thus, the orthography became close to its contemporary appearance. According to the German model, the punctuation leaves the pause principle and respects the syntax.
+
+The artistic literature often resorted to archaisms and did not respect the natural development of the spoken language. This was due to attempts to reach the prestige literal styles.
+
+== Modern Czech ==
+Literary Czech has not been an exclusive matter of the intellectual classes since the 1840s. Journalism was developing and artistic works got closer to the spoken language, especially in syntax. In 1902, [[Jan Gebauer]] published the first Rules of Czech Orthography, which also contained an overview of the morphology. These rules still preferred older forms in doublets.
+
+During the 20th century, elements of the spoken language (of Common Czech especially) penetrated literary Czech. The orthography of foreign words was changed to reflect their German pronunciation, especially writing ''z'' instead of ''s'' and marking the vowel length (e.g. ''gymnasium > gymnázium'' 'grammar school'). Social changes after World War II (1945) led to gradual diminishing of differences between dialects. Since the second half of the 20th century, Common Czech elements have also been spreading to regions previously unaffected, as a consequence of the media's influence.
+
+== See also ==
+* [[Orthographia bohemica]]
+* [[Czech alphabet]]
+* [[Czech declension]]
+* [[Czech orthography]]
+* [[Czech phonology]]
+* [[Czech verb]]
+* [[Czech word order]]
+
+== Notes ==
+{{Reflist}}
+
+== References ==
+* Karlík P., Nekula M., Pleskalová J. (ed.). Encyklopedický slovník češtiny. Nakl. Lidové noviny. Praha 2002. {{ISBN|80-7106-484-X}}.
+* Rejzek J. Český etymologický slovník. Leda, Voznice 2001. {{ISBN|80-85927-85-3}}.
+* Lamprecht A., Šlosar D., Bauer J. Historická mluvnice češtiny. SPN Praha 1986, 423 s.
+* Červená, V. a Mejstřík, V. Slovník spisovné češtiny pro školu a veřejnost: s Dodatkem Ministerstva školství, mládeže a tělovýchovy České republiky.    Vyd. 4. Praha: Academia, 2005, 647 s. {{ISBN|80-200-1347-4}}.
+* Komárek M. Dějiny českého jazyka. Host. Brno 2012 {{ISBN|978-80-7294-591-7}}.
+* Rejzek Jiří. Zrození češtiny: Jazyková situace a jazykový vývoj v českých zemích mezi 6. a 11. stoletím. NLN - Nakladatelství Lidové noviny. Prague 2021 {{ISBN|978-80-7422-799-8}}.
+
+{{Language histories}}
+{{Authority control}}
+
+{{DEFAULTSORT:History Of The Czech Language}}
+[[Category:Czech language]]
+[[Category:Slavic language histories|Czech language]]

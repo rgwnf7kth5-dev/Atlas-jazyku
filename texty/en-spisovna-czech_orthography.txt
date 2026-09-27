@@ -1,0 +1,480 @@
+{{Short description|Form of the Latin script used to write Czech language}}
+{{more citations needed|date=September 2022}}
+{{Infobox writing system
+|name=Czech alphabet
+|native_name={{lang|cs|Česká abeceda}}
+|type=[[Alphabet]]
+|languages=[[Czech language|Czech]]
+|time=Since [[Jan Hus]]' ''[[Orthographia bohemica]]'' (early 15th century – present)
+|fam1= [[Egyptian hieroglyphs]] 
+| fam2= [[Proto-Sinaitic alphabet]] 
+| fam3= [[Phoenician alphabet]]  
+|fam4=[[Greek alphabet]] 
+|fam5=[[Old Italic scripts]]
+|fam6=[[Latin alphabet]]
+|children=[[Slovak alphabet]]<br>[[Gaj's Latin alphabet]]<br>[[Latvian alphabet]]
+|unicode = Subset of [[Unicode Latin|Latin]]
+|sample=
+|imagesize=400px
+}}
+'''Czech orthography''' is a system of rules for proper [[orthography]] in [[Czech language|Czech]]. The earliest form of a separate Latin script specifically designed to suit Czech was devised by Czech [[theologian]] and church reformist [[Jan Hus]], the namesake of the [[Hussite movement]], in one of his seminal works, ''[[De orthographia bohemica]]'' (''On Bohemian orthography'').
+
+The modern Czech orthographic system is [[diacritic]], having evolved from an earlier system which used many [[Digraph (orthography)|digraphs]] (although one digraph has been kept – ''ch''). The [[caron]] (known as ''háček'' in Czech) is added to standard Latin letters to express sounds which are foreign to [[Latin language|Latin]]. The [[acute accent]] is used for long [[vowel]]s.
+
+The Czech orthography is considered the model for many other [[Balto-Slavic languages]] using the [[Latin alphabet]]; [[Slovak orthography|Slovak]] orthography being its direct revised descendant, while the Croatian [[Gaj's Latin alphabet]] and its [[Slovene alphabet]] offspring are largely based on it. The [[Baltic language]]s, such as [[Latvian orthography|Latvian]] and [[Lithuanian orthography|Lithuanian]], are also largely based on it. All of them make use of similar diacritics and also have a similar, usually interchangeable, relationship between the letters and the sounds they are meant to represent.<ref>{{cite book|last1=Dvornik|first1=Francis|title=The Slavs in European History and Civilization|url=https://archive.org/details/slavsineuropeanh0000dvor|url-access=registration|date=1962|publisher=Rutgers University Press|pages=[https://archive.org/details/slavsineuropeanh0000dvor/page/287 287]}}</ref>
+
+== Alphabet ==
+The Czech alphabet consists of 42 letters.
+{| class="wikitable" style="text-align:center"
+ |+Czech alphabet
+ ! colspan="21" | [[letter case|Majuscule forms]] (uppercase/capital letters)
+ |-
+ | A || Á || B || C || Č || D || Ď || E || É || Ě || F
+ | G || H || Ch|| I || Í || J || K || L || M || N
+ |-
+ | Ň || O || Ó || P || Q || R || Ř || S || Š || T || Ť
+ | U || Ú || Ů || V || W || X || Y || Ý || Z || Ž
+ |-
+ ! colspan="21" | [[letter case|Minuscule forms]] (lowercase/small letters)
+ |-
+ | a || á || b || c || č || d || ď || e || é || ě || f
+ | g || h || ch|| i || í || j || k || l || m || n
+ |-
+ | ň || o || ó || p || q || r || ř || s || š || t || ť
+ | u || ú || ů || v || w || x || y || ý || z || ž
+ |}
+
+{| class="wikitable"
+ |+Czech alphabet (detail)
+ ! colspan="2" | Letter !! rowspan="2" | Name
+ ! colspan="2" | Letter !! rowspan="2" | Name
+ |-
+ ! Uppercase !! Lowercase !! Uppercase !! Lowercase
+ |-
+ | '''A''' || '''a''' || á
+ | '''Ň''' || '''ň''' || eň
+ |-
+ | '''Á''' || '''á''' || dlouhé á; á s čárkou
+ | '''O''' || '''o''' || ó
+ |-
+ | '''B''' || '''b''' || bé
+ | '''Ó''' || '''ó'''{{efn|name=FGÓ}} || dlouhé ó; ó s čárkou
+ |-
+ | '''C''' || '''c''' || cé
+ | '''P''' || '''p''' || pé
+ |-
+ | '''Č''' || '''č''' || čé
+ | '''Q''' || '''q''' || kvé
+ |-
+ | '''D''' || '''d''' || dé
+ | '''R''' || '''r''' || er
+ |-
+ | '''Ď''' || '''ď''' || ďé
+ | '''Ř''' || '''ř''' || eř
+ |-
+ | '''E''' || '''e''' || é
+ | '''S''' || '''s''' || es
+ |-
+ | '''É''' || '''é''' || dlouhé é; é s čárkou
+ | '''Š''' || '''š''' || eš
+ |-
+ | '''Ě'''{{efn|name=ĚŮÝ|The letters ''Ě'', ''Ů'', and ''Ý'' never occur at the beginning of a word. Their [[capitalization|capitalized]] forms are used only in [[all caps]] or [[small caps]] inscriptions, such as newspaper headlines.}} || '''ě''' || ije; é s háčkem
+ | '''T''' || '''t''' || té
+ |-
+ | '''F''' || '''f'''{{efn|name=FGÓ|The letters ''F'', ''G'', and ''Ó'' represent the sounds {{IPA|/f/}}, {{IPA|/ɡ/}}, and {{IPA|/oː/}}, respectively, which, when not allophones of {{IPA|/v/}} and {{IPA|/k/}} in the case of the first two, are used almost exclusively in words and names of foreign origin. With the increasing usage of foreign loanwords and foreign terms, they appear fairly commonly in modern Czech.}} || ef
+ | '''Ť''' || '''ť''' || ťé
+ |-
+ | '''G''' || '''g'''{{efn|name=FGÓ}} || gé
+ | '''U''' || '''u''' || ú
+ |-
+ | '''H''' || '''h''' || há
+ | '''Ú''' || '''ú''' || dlouhé ú; ú s čárkou
+ |-
+ | '''Ch''' || '''ch''' || chá
+ | '''Ů'''{{efn|name=ĚŮÝ}} || '''ů''' || ů s kroužkem
+ |-
+ | '''I''' || '''i''' || í; měkké i
+ | '''V''' || '''v''' || vé
+ |-
+ | '''Í''' || '''í''' || dlouhé í; dlouhé měkké í;<br/>í s čárkou; měkké í s čárkou
+ | '''W''' || '''w''' || dvojité vé
+ |-
+ | '''J''' || '''j''' || jé
+ | '''X''' || '''x''' || iks
+ |-
+ | '''K''' || '''k''' || ká
+ | '''Y''' || '''y''' || ypsilon; krátké tvrdé ý
+ |-
+ | '''L''' || '''l''' || el
+ | '''Ý'''{{efn|name=ĚŮÝ}} || '''ý''' || dlouhé ypsilon; dlouhé tvrdé ý;<br/>ypsilon s čárkou; tvrdé ý s čárkou
+ |-
+ | '''M''' || '''m''' || em
+ | '''Z''' || '''z''' || zet
+ |-
+ | '''N''' || '''n''' || en
+ | '''Ž''' || '''ž''' || žet
+ |}
+{{notelist}}
+
+The letters ''Q'', ''W'', and ''X'' are used exclusively in foreign words, and the former two are respectively replaced with ''KV'' and ''V'' once the word becomes "naturalized" (assimilated into Czech); the digraphs [[dz (digraph)|dz]] and [[dž]] are also used mostly for foreign words and are not considered to be distinct letters in the Czech alphabet.
+
+==Orthographic principles==
+Czech orthography is primarily [[phonemic orthography|phonemic]] (rather than phonetic) because an individual [[grapheme]] usually corresponds to an individual [[phoneme]] (rather than a [[Phone (phonetics)|sound]]). However, some graphemes and letter groups are remnants of historical phonemes which were used in the past but have since merged with other phonemes. Some changes in the [[phonology]] have not been reflected in the orthography.
+{|class=wikitable
+|+Vowels
+|-
+!Grapheme
+![[International Phonetic Alphabet|IPA]] [[Help:IPA/Czech|value]]
+!Notes
+|-
+![[a]]
+|{{IPAslink|a}}
+|
+|-
+![[á]]
+|{{IPAslink|aː}}
+|
+|-
+![[e]]
+|{{IPAslink|ɛ}}
+|
+|-
+![[é]]
+|{{IPAslink|ɛː}}
+|
+|-
+![[ě]]
+|{{IPAslink|ɛ}}, {{IPA|/ʲɛ/}}
+|Marks palatalization of preceding consonant; see usage rules [[#Letter Ě|below]]
+|-
+![[i]]
+|{{IPAslink|ɪ}}
+|Palatalizes preceding {{angbr|d}}, {{angbr|t}}, or {{angbr|n}}; see usage rules [[#"Soft" I and "hard" Y|below]]
+|-
+![[í]]
+|{{IPAslink|iː}}
+|Palatalizes preceding {{angbr|d}}, {{angbr|t}}, or {{angbr|n}}; see usage rules [[#"Soft" I and "hard" Y|below]]
+|-
+![[o]]
+|{{IPAslink|o}}
+|
+|-
+![[ó]]
+|{{IPAslink|oː}}
+|Occurs mostly in words of foreign origin.
+|-
+![[u]]
+|{{IPAslink|u}}
+|
+|-
+![[ú]]
+|{{IPAslink|uː}}
+|See usage rules [[#Letter Ů|below]]
+|-
+![[ů]]
+|{{IPAslink|uː}}
+|See usage rules [[#Letter Ů|below]]
+|-
+![[y]]
+|{{IPAslink|ɪ}}
+|See usage rules [[#"Soft" I and "hard" Y|below]]
+|-
+![[ý]]
+|{{IPAslink|iː}}
+|See usage rules [[#"Soft" I and "hard" Y|below]]
+|}
+{|class=wikitable
+|+Consonants
+|-
+!Grapheme
+![[International Phonetic Alphabet|IPA]] [[Help:IPA/Czech|value]]
+!Notes
+|-
+![[b]]
+|{{IPAslink|b}}
+|
+|-
+![[c]]
+|{{IPAslink|t͡s}} <ref group="n" name="affr">Unofficial ligatures are sometimes used for the transcription of [[affricate consonant|affricates]]: {{IPA|/ts/, /dz/, /tʃ/, /dʒ/}}. The actual IPA version supports using two separate letters which can be joined by a tiebar.</ref>
+|
+|-
+![[č]]
+|{{IPAslink|t͡ʃ}} <ref group="n" name="affr" />
+|
+|-
+![[d]]
+|{{IPAslink|d}}
+|Represents {{IPAslink|ɟ}} before {{angbr|i í ě}}; see [[#"Soft" I and "hard" Y|below]]
+|-
+![[ď]]
+|{{IPAslink|ɟ}}
+|
+|-
+![[f]]
+|{{IPAslink|f}}
+|Occurs mostly in words of foreign origin. <!--Please DO NOT add a template here to indicate a missing citation; Czech is a Slavic language and none of the Proto-Indo-European sounds yielded the f sound in Slavic, so it makes sense that f in Czech should occur primarily in words of foreign origin.-->
+|-
+![[g]]
+|{{IPAslink|ɡ}}
+|Occurs mostly in words of foreign origin. {{citation needed|date=July 2014}}
+|-
+![[h]]
+|{{IPAslink|ɦ}}
+|
+|-
+![[Ch (digraph)|ch]]
+|{{IPAslink|x}}
+|
+|-
+![[j]]
+|{{IPAslink|j}}
+|
+|-
+![[k]]
+|{{IPAslink|k}}
+|
+|-
+![[l]]
+|{{IPAslink|l}}
+|
+|-
+![[m]]
+|{{IPAslink|m}}
+|
+|-
+![[n]]
+|{{IPAslink|n}}
+|Represents {{IPAslink|ɲ}} before {{angbr|i í ě}}; see [[#"Soft" I and "hard" Y|below]]
+|-
+![[ň]]
+|{{IPAslink|ɲ}}
+|
+|-
+![[p]]
+|{{IPAslink|p}}
+|
+|-
+![[r]]
+|{{IPAslink|r}}
+|
+|-
+![[ř]]
+|{{IPAslink|r̝}} <ref group="n" name="Ř">The "long-leg R" {{angbr IPA|ɼ}} is sometimes used to transcribe voiced {{angbr|ř}} (unofficially). This character was withdrawn from the IPA and replaced by the "lower-case R" with the "up-tack" [[diacritic]] mark, which denotes "[[Raised alveolar non-sonorant trill|raised alveolar trill]]".</ref>
+|
+|-
+![[s]]
+|{{IPAslink|s}}
+|
+|-
+![[š]]
+|{{IPAslink|ʃ}}
+|
+|-
+![[t]]
+|{{IPAslink|t}}
+|Represents {{IPAslink|c}} before {{angbr|i í ě}}; see [[#"Soft" I and "hard" Y|below]]
+|-
+![[ť]]
+|{{IPAslink|c}}
+|
+|-
+![[v]]
+|{{IPAslink|v}}
+|
+|-
+![[x]]
+|{{IPA|/ks/, /ɡz/}}
+|Occurs only in words of foreign origin; pronounced {{IPA|/ɡz/}} in words with the prefix 'ex-' before vowels or voiced consonants.
+|-
+![[z]]
+|{{IPAslink|z}}
+|
+|-
+![[ž]]
+|{{IPAslink|ʒ}}
+|
+|}
+<references group="n" />
+
+===Voicing assimilation===
+{{see also|Czech phonology}}
+All the obstruent consonants are subject to voicing (before voiced obstruents except {{angbr|v}}) or devoicing (before voiceless consonants and at the end of words); spelling in these cases is morphophonemic (i.e. the morpheme has the same spelling as before a vowel). An exception is the cluster {{angbr|sh}}, in which the {{IPA|/s/}} is voiced to {{IPA|/z/}} only in [[Moravian dialects]], while in Bohemia the {{IPA|/ɦ/}} is devoiced to {{IPA|/x/}} instead (e.g. ''shodit'' {{IPA|/sxoɟɪt/}}, in Moravia {{IPA|/zɦoɟɪt/}}). Devoicing {{IPA|/ɦ/}} changes its articulation place: it becomes {{IPA|[x]}}. After unvoiced consonants {{angbr|ř}} is devoiced: for instance, in {{wikt-lang|cs|tři}} 'three', which is pronounced {{audio-IPA|Cs-tři.ogg|[tr̝&#778;ɪ]}}. Written voiced or voiceless counterparts are kept according to the etymology of the word, e.g. ''o'''d'''padnout'' {{IPA|[ˈo'''t'''padnou̯t]}} (to fall away) - ''od-'' is a [[Prefix (linguistics)|prefix]]; written {{IPA|/d/}} is devoiced here because of the following voiceless {{IPA|/p/}}.
+
+For historical reasons, the consonant {{IPA|[ɡ]}} is written ''k'' in Czech words like ''kde'' ('where', < Proto-Slavic *kъdě) or ''kdo'' ('who', < Proto-Slavic *kъto). This is because the letter ''g'' was historically used for the consonant {{IPA|[j]}}. The original Slavic phoneme {{IPA|/ɡ/}} changed into {{IPA|/h/}} in the Old-Czech period. Thus, {{IPA|/ɡ/}} is not a separate phoneme (with a corresponding grapheme) in words of domestic origin; it occurs only in foreign words (e.g. ''graf'', ''gram'', etc.).
+
+====Final devoicing====
+Unlike in [[English language|English]] but like [[German language|German]], [[Dutch language|Dutch]] and [[Russian language|Russian]], voiced consonants are pronounced voicelessly in the final position in words. In [[Czech declension|declension]], they are voiced in [[grammatical case|cases]] where the words take on [[Ending (linguistics)|ending]]s.
+
+Compare:
+: ''le'''d''''' {{IPA|[ˈlɛ'''t''']}} – ''le'''d'''y'' {{IPA|[ˈlɛ'''d'''ɪ]}} (ice – ices)
+: ''le'''t''''' {{IPA|[ˈlɛ'''t''']}} – ''le'''t'''y'' {{IPA|[ˈlɛ'''t'''ɪ]}} (flight – flights)
+<!-- ATTENTION: this is a link target in the table above. -->
+
+==="Soft" I and "hard" Y===
+The letters {{Vr|i}} and {{Vr|y}} are both pronounced {{IPA|[ɪ]}}, while {{Vr|í}} and {{Vr|ý}} are both pronounced {{IPA|[iː]}}. {{Vr|y}} was originally pronounced {{IPA|[ɨ]}} as in contemporary [[Polish language|Polish]]. However, in the 14th century, this difference in standard pronunciation disappeared, though it has been preserved in some [[Moravian dialects]].<ref>{{cite book|title=Český Jazykový Atlas|publisher=Czech Language Institute, vol. 5|pages=115–117|url=http://cja.ujc.cas.cz/CJA5/|access-date=8 October 2017}}</ref> In words of native origin "soft" {{Vr|i}} and {{Vr|í}} cannot follow "hard" consonants, while "hard" {{Vr|y}} and {{Vr|ý}} cannot follow "soft" consonants; "neutral" consonants can be followed by either vowel:
+
+{|class=wikitable
+|+Hard and soft consonants
+|-
+!Soft
+|ž, š, č, ř, c, j, ď, ť, ň
+|-
+!Neutral
+|b, f, l, m, p, s, v, z
+|-
+!Hard
+|h, ch, k, r, d, t, n, g
+|}
+
+When {{Vr|i}} or {{Vr|í}} is written after {{Vr|d, t, n}} in native words, these consonants are soft, as if they were written {{Vr|ď, ť, ň}}.  That is, the sounds {{IPA|[ɟɪ, ɟiː, cɪ, ciː, ɲɪ, ɲiː]}} are written {{Vr|di, dí, ti, tí, ni, ní}} instead of {{Vr|ďi, ďí, ťi, ťí, ňi, ňí}}, e.g. in ''čeština'' {{IPA|cs|ˈt͡ʃɛʃcɪna|}}. The sounds {{IPA|[dɪ, diː, tɪ, tiː, nɪ, niː]}} are denoted, respectively, by {{Vr|dy, dý, ty, tý, ny, ný}}.  In words of foreign origin, {{Vr|di, ti, ni}} are pronounced {{IPA|[dɪ, tɪ, nɪ]}}; that is, as if they were written {{Vr|dy, ty, ny}}, e.g. in '''''di'''ktát'', dictation.
+
+Historically the letter {{Vr|c}} was hard, but this changed in the 19th century. However, in some words it is still followed by the letter {{Vr|y}}: ''tác'' (plate) – ''tácy'' (plates).
+
+Because neutral consonants can be followed by either {{Vr|i}} or {{Vr|y}}, in some cases they distinguish [[homophone]]s, e.g. ''být'' (to be) vs. ''bít'' (to beat), ''mýt'' (to wash) vs. ''mít'' (to have). At school pupils must memorize word [[Root (linguistics)|root]]s and [[Prefix (linguistics)|prefix]]es where {{Vr|y}} is written; {{Vr|i}} is written in other cases. Writing {{Vr|i}} or {{Vr|y}} in [[Ending (linguistics)|ending]]s is dependent on the [[Czech declension|declension pattern]]s.
+
+<!-- ATTENTION: this is a link target in the table above. -->
+=== Letter Ě ===
+The letter {{Vr|ě}} is a vestige of [[History of the Czech language#14th century|Old Czech]] [[Palatalization (sound change)|palatalization]]. The originally palatalizing [[phoneme]] /ě/ {{IPA|[ʲɛ]}} became extinct, changing to {{IPA|[ɛ]}} or {{IPA|[jɛ]}}, but it is preserved as a [[grapheme]] which can never appear in the initial position.
+* {{IPA|[ɟɛ, cɛ, ɲɛ]}} are written {{Vr|dě, tě, ně}} instead of {{Vr|ďe, ťe, ňe}}, analogously to {{Vr|di, ti, ni}}
+* {{IPA|[bjɛ, pjɛ, vjɛ, fjɛ]}} are usually written {{Vr|bě, pě, vě, fě}} instead of {{Vr|{{lang|cs|italic=no|bje}}, {{lang|cs|italic=no|pje}}, {{lang|cs|italic=no|vje}}, {{lang|cs|italic=no|fje}}}}
+** In words like '''''vj'''ezd'' (entry, drive-in) ''o'''bj'''em'' (volume), {{Vr|{{lang|cs|italic=no|bje}}, {{lang|cs|italic=no|vje}}}} are written because in such cases ''–je-'' is etymologically preceded by the prefixes ''[[wikt:v-#Czech|v-]]'' or ''[[wikt:ob-#Czech|ob-]]''
+* {{IPA|[mɲɛ]}} is usually written {{Vr|mě}} instead of {{Vr|mně}}, except for morphological reasons in some words (''je'''mn'''ý'', soft -> ''je'''mn'''ě'', softly)
+** The first-person singular pronouns ''mě'' (for the genitive and accusative cases) and ''mně'' (for the dative and locative) are homophones {{IPA|[mɲɛ]}}—see [[Czech declension]]
+
+<!-- ATTENTION: this is a link target in the table above. -->
+=== Letter Ů ===
+There are two ways in Czech to write long {{IPA|[uː]}}: {{Vr|ú}} and {{Vr|ů}}.  {{Vr|ů}} cannot occur in an initial position, while {{Vr|ú}} occurs almost exclusively in the initial position or at the beginning of a word [[Root (linguistics)|root]] in a compound.
+
+Historically, long {{Vr|ú}} [[vowel breaking|changed into]] the [[diphthong]] {{Vr|ou}} {{IPA|[ou̯]}} (as also happened in the English [[Great Vowel Shift]] with words such as "house"), though not in word-initial position in the [[Prestige (sociolinguistics)|prestige]] form. In 1848 {{Vr|ou}} at the beginning of [[root (linguistics)|word-roots]] was changed into {{Vr|ú}} in words like {{wikt-lang|cs|úřad|ouřad}} to reflect this. Thus, the letter {{Vr|ú}} is written at the beginning of word-roots only: ''úhel'' (angle), ''trojúhelník'' (triangle), except in loanwords: ''skútr'' (scooter).
+
+Meanwhile, historical long {{Vr|ó}} {{IPA|[oː]}} changed into the diphthong {{Vr|uo}} {{IPA|[ʊo]}}.  As was common with [[scribal abbreviation]]s, the letter {{Vr|o}} in the diphthong was sometimes written as a [[ring (diacritic)|ring]] above the letter {{Vr|u}}, producing {{Vr|ů}}, e.g. ''kóň > kuoň > kůň'' (horse), like the origin of the German [[Diaeresis (diacritic)#Umlaut|umlaut]]. Later, the pronunciation changed into {{IPA|[uː]}}, but the grapheme {{Vr|ů}} has remained. It never occurs at the beginning of words: ''dům'' (house), ''domů'' (home, homeward).
+
+The letter {{Vr|ů}} now has the same pronunciation as the letter {{Vr|[[ú]]}} (long {{IPA|[uː]}}), but [[vowel alternation|alternates]] with a short {{Vr|o}} when a word is inflected (e.g. nom. ''[[:wikt:kůň|kůň]]'' → gen. ''koně'', nom. ''dům'' → gen. ''domu''), thus showing the historical evolution of the language.
+
+===Agreement between the subject and the predicate===
+
+The [[predicate (grammar)|predicate]] must be always in accordance with the [[subject (grammar)|subject]] in the sentence - in [[Grammatical number|number]] and [[Grammatical person|person]] (personal [[pronoun]]s), and with past and passive [[participle]]s also in [[Grammatical gender|gender]]. This [[grammar|grammatical]] principle affects the orthography (see also [[#"Soft" I and "Hard" Y|"Soft" I and "Hard" Y]]) – it is especially important for the correct choice and writing of plural endings of the [[participle]]s.
+
+Examples:
+{|class=wikitable
+|-
+!Gender
+!Sg.
+!Pl.
+!English
+|-
+!masculine animate
+|pes byl koupen
+|ps'''i''' byl'''i''' koupen'''i'''
+|a dog was bought/dogs were bought
+|-
+!masculine inanimate
+|hrad byl koupen
+|hrad'''y''' byl'''y''' koupen'''y'''
+|a castle was bought/castles were bought
+|-
+!feminine
+|kočk'''a''' byl'''a''' koupen'''a'''
+|kočk'''y''' byl'''y''' koupen'''y'''
+|a cat was bought/cats were bought
+|-
+!neuter
+|měst'''o''' byl'''o''' koupen'''o'''
+|měst'''a''' byl'''a''' koupen'''a'''
+|a town was bought/towns were bought
+|}
+
+The mentioned example shows both past (byl, byla ...) and passive (koupen, koupena ...) participles. The accordance in gender takes effect in the past [[Grammatical tense|tense]] and the passive [[Grammatical voice|voice]], not in the present and future tenses in active voice.
+
+If the complex subject is a combination of nouns of different genders, masculine animate gender is prior to others and the masculine inanimate and feminine genders are prior to the neuter gender.
+
+Examples:
+:'''''muži''' a ženy byl'''i''''' - men and women were
+:'''''kočky''' a koťata byl'''y''''' - cats and kittens were
+:''my jsme byl'''i''''' (my = we all/men) vs. ''my jsme byl'''y''''' (my = we women) - we were
+
+'''Priority of genders:'''
+:masculine animate > masculine inanimate & feminine > neuter
+
+==Punctuation==
+
+The use of the [[full stop]] (.), the [[Colon (punctuation)|colon]] (:), the [[semicolon]] (;), the [[question mark]] (?) and the [[exclamation mark]] (!) is similar to their use in other European languages. The full stop is placed after a number if it stands for ordinal numerals (as in German), e.g. ''1. den'' (= ''první den'') – the 1st day.
+
+The [[comma (punctuation)|comma]] is used to separate individual parts in [[complex-compound sentence]]s, lists, isolated parts of [[Sentence (linguistics)|sentences]], etc. Its use in Czech is different from English. Subordinate (dependent) [[clause]]s must be always separated from their principal (independent) clauses, for instance. A comma is not placed before ''a'' (and), ''i'' (as well as), ''ani'' (nor) and ''nebo'' (or) when they connect parts of sentences or clauses in copulative conjunctions (on a same level). It must be placed in non-copulative conjunctions (consequence, emphasis, exclusion, etc.). A comma can, however, occur in front of the word ''a'' (and) if the former is part of comma-delimited parenthesis: ''Jakub, můj mladší bratr, a jeho učitel Filip byli příliš zabráni do rozhovoru. Probírali látku, která bude u zkoušky, a též, kdo na ní bude.'' A comma also separates subordinate conjunctions introduced by composite conjunctions ''a proto'' (and therefore) and ''a tak'' (and so).
+
+'''Examples:'''
+* ''otec a matka'' – father and mother, ''otec nebo matka'' – father or mother (coordinate relation – no commas)
+* ''Je to pravda, nebo ne?'' – Is it true, or not? (exclusion)
+* ''Pršelo, a proto nikdo nepřišel.'' – It was raining, and so no one came. (consequence)
+* ''Já vím, kdo to je.'' – I know who it is. 
+* ''Myslím, že se mýlíš.'' – I think you are mistaken. (subordinate relation)
+* ''Jak se máš, Anno?'' – How are you, Anna? (addressing a person)
+* ''Karel IV., římský císař a český král, založil hrad Karlštejn.'' – [[Charles IV, Holy Roman Emperor|Charles IV]], Roman Emperor and Bohemian king, founded the [[Karlštejn Castle]]. (comma-delimited parenthesis)
+
+'''[[Quotation mark]]s'''. The first one preceding the quoted text is placed to the bottom line:
+* ''Petr řekl: „Přijdu zítra.“'' – Peter said: "I'll come tomorrow."
+
+Other types of quotation marks: ‚‘ »«
+
+[[Apostrophe]]s are used rarely in Czech. They can denote a missing sound in non-standard speech, but it is optional, e.g. ''řek''' or ''řek'' (= ''řekl'', he said).
+
+==Capital letters==
+
+The first word of every sentence and all proper names are [[Capital letters|capitalized]]. Special cases are:
+* Respect expression – optional: ''Ty'' (you sg.), ''Tvůj'' (your sg.), ''Vy'' (you pl.), ''Váš'' (your pl.); ''Bůh'' (God), ''Mistr'' (Master), etc.
+* Headings – The first word is capitalized.
+* Cities, towns and villages – All words are capitalized, except for prepositions: ''[[Nové Město nad Metují]]'' (New-Town-upon-Metuje).
+* [[geography|Geographical]] or local names – The first word is capitalized, common names as ''ulice'' (street), ''náměstí'' (square) or ''moře'' (sea) are not capitalized: ''ulice Svornosti'' (Concordance Street), ''Václavské náměstí'' (Wenceslas Square), ''Severní moře'' (North Sea). Since 1993, the initial preposition and the first following word are capitalized: ''lékárna U Černého orla'' (Black Eagle Pharmacy).
+* Official names of institutions – The first word is capitalized: ''Městský úřad v Kolíně'' (The Municipal Office in [[Kolín]]) vs. ''městský úřad'' (a municipal office). In some cases, an initial common name is not capitalized even if it is factually a part of the name: ''okres Semily'' (Semily District), ''náměstí Míru'' (Peace Square).
+* Names of nations and nationality nouns are capitalized: ''Anglie'' (England), ''Angličan'' (Englishman), ''Německo'' (Germany), ''Němec'' (German). Adjectives derived from geographical names and names of nations, such as ''anglický'' (English – adjective) and ''pražský'' (Prague – adjective, e.g. ''pražské metro'', Prague subway), are not. Names of languages are not capitalized: ''angličtina'' (English).
+* Possessive adjectives derived from proper names are capitalized: ''Pavlův dům'' (Paul's house).
+* Brands are capitalized as a trademark or company name, but usually not as product names: ''přijel trabant a několik škodovek'' but ''přijelo auto značky Trabant a několik aut značky Škoda'', ''zákaz vjezdu segwayů'' but ''zákaz vjezdu vozítek Segway''
+* If a proper name contains other proper names, the inner proper names keep their orthography: ''Poslanecká sněmovna Parlamentu České republiky'', ''Kostelec nad Černými lesy'', ''Filozofická fakulta Jihočeské univerzity v Českých Budějovicích''
+
+== History ==
+In the 9th century, the [[Glagolitic script]] was used, during the 11th century it was replaced by Latin script.
+There are five periods in the development of the Czech Latin-based orthographic system:
+
+;Primitive orthography : For writing sounds which are foreign to the [[Latin]] [[alphabet]], letters with similar sounds were used. The oldest known written notes in Czech originate from the 11th century. The literature was written predominantly in Latin in this period. Unfortunately, it was very ambiguous at times, with ''c'', for example, being used for ''c'', ''č'', and ''k''.
+
+;Digraphic orthography : Various [[Digraph (orthography)|digraphs]] were used for non-Latin sounds. The system was not consistent and it also did not distinguish long and short vowels. It had some features that [[Polish orthography]] has kept, such as ''cz'', ''rz'' instead of ''č'', ''ř'', but was still crippled by ambiguities, such as spelling both ''s'' and ''š'' as ''s''/''ss'', ''z'' and ''ž'' as ''z'', and sometimes even ''c'' and ''č'' both as ''cz'', only distinguishing by context. Long vowels such as ''á'' were sometimes (but not always) written double as ''aa''. Other features of the day included spelling ''j'' as ''g'' and ''v'' as ''w'', as the early modern Latin alphabet had not by then distinguished ''j'' from ''i'' or ''v'' from ''u''.
+
+;Diacritic orthography : Introduced probably by [[Jan Hus]]. Using [[diacritic]]s for long vowels ("virgula", an [[acute accent|acute]], "čárka" in Czech) and "soft" consonants ("punctus rotundus", a dot above a letter, which has survived in [[Polish orthography|Polish]] ''ż'') was suggested for the first time in ''"[[Orthographia bohemica|De orthographia Bohemica]]"'' around 1406. Diacritics replaced digraphs almost completely. It was also suggested that the Prague dialect should become the standard for Czech. Jan Hus is considered to be the author of that work but there is some uncertainty about this.
+
+;Brethren orthography : The [[Bible of Kralice]] (1579–1593), the first complete Czech translation of the [[Bible]] from the original languages by the [[Moravian Church|Czech Brethren]], became the model for the literary form of the language. The punctus rotundus was replaced by the [[caron]] ("háček"). There were some differences from the current orthography, e.g. the digraph [[long s|ſſ]] was used instead of ''š''; ''ay, ey, au'' instead of ''aj, ej, ou''; ''v'' instead of ''u'' (at the beginning of words); ''w'' instead of ''v''; ''g'' instead of ''j''; and ''j'' instead of ''í'' ({{lang|cs|gegj}} = ''její'', hers). ''Y'' was written always after ''c, s'' and ''z'' (e.g. ''cizí'', foreign, was written ''cyzý'') and the [[Grammatical conjunction|conjunction]] ''i'' (as well as, and) was written ''y''.
+
+;Modern orthography : During the period of the Czech National Renaissance (end of the 18th century and the first half of the 19th century), Czech linguists ([[Josef Dobrovský]] et al.) codified some reforms in the orthography. These principles have been effective up to the present day. The later reforms in the 20th century mostly referred to introducing loanwords into Czech and their adaptation to the Czech orthography.
+
+==Computer encoding==
+In [[computer|computing]], several different coding standards have existed for this alphabet, among them:
+
+#[[ISO 8859-2]]
+#[[Windows-1250|Windows code page 1250]]
+#IBM PC code page 852
+#[[Kamenický encoding|Kamenický brothers or KEYBCS2]] on for [[MS-DOS]] and on [[Fidonet]].<ref>{{cite web|url=http://www.cestina.cz/kodovani/#KEYBCS2 |title=Přehled kódování češtiny |publisher=Cestina.cz |access-date=2013-11-19}}</ref>
+#[[Unicode]]
+
+==See also==
+*[[Czech phonology]]
+*[[Orthographia bohemica]]
+*[[Czech declension]]
+*[[Czech verb]]
+*[[Czech word order]]
+*[[International Phonetic Alphabet]]
+*[[Phonemic orthography]]
+*[[Caron|Háček]]
+*[[Ring (diacritic)|Kroužek]]
+*[[Non-English usage of quotation marks]]
+
+==References==
+{{Reflist}}
+
+==External links==
+*[http://www.czech-language.cz/ Czech Language]
+*[https://web.archive.org/web/20060829043012/http://www-kiv.zcu.cz/~luki/cs/cs-encodings-faq.html Czech Encodings FAQ] and [http://www.cestina.cz/kodovani/ list of known encodings] (in Czech)
+*[http://euro.typo.cz/ Typo.cz] {{Webarchive|url=https://web.archive.org/web/20040327051648/http://euro.typo.cz/ |date=2004-03-27 }} Information on Central European typography and typesetting
+
+{{Language orthographies}}
+
+[[Category:Czech language]]
+[[Category:Indo-European Latin-script orthographies]]

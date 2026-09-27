@@ -1,0 +1,950 @@
+{{short description|West Slavic language}}
+{{good article}}
+{{redirect-distinguish-text|Cestina|[[Sestina]], a fixed verse form}}
+{{Use dmy dates|date=September 2025}}
+{{Infobox language
+| name             = Czech
+| nativename       = {{lang|cs|čeština}}, {{lang|cs|český jazyk}}
+| pronunciation    = 
+| states           = [[Czech Republic]]
+| ethnicity        = [[Czechs]]
+| speakers         = [[first language|L1]]: {{sigfig|9.757710|2}} million
+| date             = 2021
+| ref              = <ref>{{e28|ces}}</ref>
+| speakers2        = [[second language|L2]]: {{sigfig|2.708500|2}} million (2012)<ref>{{e28|ces}}</ref><br/>Total: {{sigfig|12.466210|2}} million (2012–2021)<ref>{{e28|ces}}</ref>
+| speakers_label   = Speakers
+| familycolor      = Indo-European
+| fam2             = [[Balto-Slavic languages|Balto-Slavic]]
+| fam3             = [[Slavic languages|Slavic]]
+| fam4             = [[West Slavic languages|West Slavic]]
+| fam5             = [[Czech–Slovak languages|Czech–Slovak]]
+| dia1             = [[Bohemian dialects|Bohemian]]
+| dia2             = [[Moravian dialects#Central Moravian|Central Moravian]]
+| dia3             = [[Moravian dialects#Eastern Moravian|Eastern Moravian]]
+| dia4             = [[Lach dialects|Lach]]
+| dia5             = [[Knaanic language|Knaanic]] {{Extinct}}
+| dia6             = [[Chod dialect|Chod]]
+| dia7             = [[Plzeň dialect|Plzeň]]
+| dia8             = [[Moravian Wallachian dialect|Moravian Wallachian]]
+| script           = {{plainlist|
+*[[Latin script]] ([[Czech alphabet]])
+*[[Czech Braille]]}}
+| nation           = {{plainlist|
+* [[Czech Republic]]
+* ''[[European Union]]''}}
+| minority         = {{plainlist|
+* [[Austria]]<ref name=COE>{{Cite web | url=http://www.coe.int/en/web/conventions/full-list/-/conventions/treaty/148/declarations?p_auth=63PpH3zN |title = Full list |publisher=Council of Europe}}</ref>
+* [[Bosnia and Herzegovina]]<ref name=COE/>
+* [[Croatia]]<ref name=COE/>
+* [[Poland]]<ref>Ministry of Interior of Poland: Act of 6 January 2005 on national and ethnic minorities and on the regional languages</ref>
+* [[Romania]]<ref name=COE/>
+* [[Slovakia]]<ref name=COE/>
+* [[Ukraine]]<ref>{{Cite news | url=https://www.pravda.com.ua/eng/news/2025/12/03/8010176/ |title = Ukrainian Parliament removes Russian from list of languages requiring special protection in Ukraine | date =2025-12-03 | access-date=2025-12-03 |work=[[Ukrainska Pravda]]}}</ref>}}
+| agency           = [[Institute of the Czech Language]]<br>(of the [[Academy of Sciences of the Czech Republic]])
+| iso1             = cs
+| iso2b            = cze
+| iso2t            = ces
+| iso3             = ces
+| ietf             = cs<ref name=IANA>[https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry IANA language subtag registry], retrieved 15 October 2018</ref>
+| lingua           = 53-AAA-da < [[West Slavic languages|53-AAA-b...-d]]<br>(varieties: 53-AAA-daa to 53-AAA-dam)
+| notice           = IPA
+| glotto           = czec1258
+| glottorefname    = Czech
+| map              = Czech language distribution.jpg
+| mapcaption       = {{ubl
+|{{legend|#0080ff|Spoken by a majority}}
+|{{legend|#88c4ff|Spoken by a minority}}
+}}
+}}
+
+'''Czech''' ({{IPAc-en|tʃ|ɛ|k}} {{respell|CHEK}}; {{langx|cs|label=[[endonym]]|čeština}} {{IPA|cs|ˈtʃɛʃcɪna||audio=Cs-čeština.ogg}}), historically known as '''Bohemian'''<ref name=brit>{{cite web|title= Czech language|url= https://www.britannica.com/EBchecked/topic/149048/Czech-language |publisher= Encyclopædia Britannica|access-date= 6 January 2015}}</ref> ({{IPAc-en|b|oʊ|ˈ|h|iː|m|i|ə|n|,_|b|ə|-}} {{respell|boh|HEE|mee|ən|,_|bə|-}};{{refn|{{Citation |last= Jones |first= Daniel |author-link= Daniel Jones (phonetician) |title= English Pronouncing Dictionary |editor= Peter Roach |editor2=James Hartmann |editor3=Jane Setter |place= Cambridge |publisher= Cambridge University Press |orig-year= 1917 |year= 2003 |isbn= 978-3-12-539683-8 }}}} {{langx|la|lingua Bohemica}}), is a [[West Slavic languages|West Slavic language]] of the [[Czech–Slovak languages|Czech–Slovak group]], written in [[Latin alphabet|Latin script]].<ref name=brit/> Spoken by over 12 million people including second-language speakers,<ref>{{e28|ces}}</ref> it serves as the official language of the [[Czech Republic]]. Czech is closely related to [[Slovak language|Slovak]], to the point of high [[mutual intelligibility]], as well as to [[Polish language|Polish]] to a lesser degree.<ref>{{cite book |last = Swan|first=Oscar E. |title = A grammar of contemporary Polish |year = 2002 |isbn = 0893572969 |location = Bloomington, Ind. |publisher = Slavica |oclc = 50064627 |language=en | page=5}}</ref> Czech is a [[fusional language]] with a rich system of [[morphology (linguistics)|morphology]] and relatively flexible [[word order]]. Its vocabulary has been extensively influenced by [[Latin]] and [[German language|German]].
+
+The Czech–Slovak group developed within West Slavic in the [[high medieval]] period, and the standardization of Czech and Slovak within the Czech–Slovak dialect continuum emerged in the early modern period. In the later 18th to mid-19th century, the modern written standard became codified in the context of the [[Czech National Revival]]. The most widely spoken [[nonstandard dialect|non-standard variety]], known as Common Czech, is based on the [[vernacular]] of [[Prague]], but is now spoken as an [[interdialect]] throughout most of [[Bohemia]]. The [[Moravian dialects]] spoken in [[Moravia]] and [[Czech Silesia]] are considerably more varied than the dialects of Bohemia.<ref name="rejzek">{{cite book|last = Rejzek|first=Jiří|title=Zrození češtiny|place=Prague|publisher=Univerzita Karlova, Filozofická fakulta|year=2021|isbn=978-80-7422-799-8|language=cs|pages=102, 130}}</ref>
+
+Czech has a moderately-sized phoneme inventory, comprising ten [[monophthong]]s, three [[diphthong]]s and 25 consonants (divided into "hard", "neutral" and "soft" categories). Words may contain complicated consonant clusters or lack vowels altogether. Czech has a [[raised alveolar trill]], which is known to occur as a [[phoneme]] in only a few other languages, represented by the [[ř|grapheme ''ř'']].
+
+==Classification==
+[[File:Slavic languages tree.svg|thumb|right|class=skin-invert-image|alt=Language-tree graph|Classification of Czech within the [[Balto-Slavic languages|Balto-Slavic]] branch of the Indo-European language family. Czech and Slovak make up a "Czech–Slovak" subgroup.]]
+{{further|Czech-Slovak languages|West Slavic languages}}
+Czech is a member of the [[West Slavic languages|West Slavic]] sub-branch of the [[Slavic languages|Slavic]] branch of the [[Indo-European languages|Indo-European]] language family. This branch includes [[Polish language|Polish]], [[Kashubian language|Kashubian]], [[Upper Sorbian|Upper]] and [[Lower Sorbian]] and [[Slovak language|Slovak]]. Slovak is the most closely related language to Czech, followed by Polish and [[Silesian language|Silesian]].<ref name="Sussex 2011 54–56">{{Harvnb|Sussex|Cubberley|2011|pp=54–56}}</ref>
+
+The West Slavic languages are spoken in Central Europe. Czech is distinguished from other West Slavic languages by a more-restricted distinction between "hard" and "soft" consonants (see [[#Phonology|Phonology]] below).<ref name="Sussex 2011 54–56"/>
+
+==History==
+{{Main|History of the Czech language}}
+{{see also|History of the Czech lands}}
+
+===Medieval/Old Czech===
+[[File:Kralice.jpg|thumb|left|upright=0.7|The [[Bible of Kralice]] was the first complete [[Bible translations into Czech|translation of the Bible into the Czech language]] from the original languages. Its six volumes were first published between 1579 and 1593.|alt=A Gothic-style book with ornate, flowery designs on the cover]]
+The term "Old Czech" is applied to the period predating the 16th century, with the earliest records of the high medieval period also classified as "early Old Czech", but the term "Medieval Czech" is also used. The function of the written language was initially performed by [[Old Church Slavonic|Old Slavonic]] written in [[Glagolitic script|Glagolitic]], later by [[Latin]] written in [[Latin script]].
+
+Around the 7th century, the [[early Slavs|Slavic expansion]] reached Central Europe, settling on the eastern fringes of the [[Frankish Empire]]. The West Slavic polity of  [[Great Moravia]] formed by the 9th century. The [[Christianization of Bohemia]] took place during the 9th and 10th centuries. The diversification of the [[Czech-Slovak languages|Czech-Slovak]] group within [[West Slavic languages|West Slavic]] began around that time, marked among other things by its use of the [[voiced velar fricative]] consonant (/ɣ/)<ref>{{Harvnb|Liberman|Trubetskoi|2001|p=112}}</ref> and consistent stress on the first syllable.<ref>{{Harvnb|Liberman|Trubetskoi|2001|p=153}}</ref>
+
+The Bohemian (Czech) language is first recorded in writing in glosses and short notes during the 12th to 13th centuries. Literary works written in Czech appear in the late 13th and early 14th century and administrative documents first appear towards the late 14th century. The first complete [[Bible translations into Czech|Bible translation]], the [[Leskovec-Dresden Bible]], also dates to this period.<ref name="Sussex Cubberley 2011 98 99"/> Old Czech texts, including poetry and cookbooks, were also produced outside universities.<ref name="Piotrowski 2009 95">{{Harvnb|Piotrowski|2012|p=95}}</ref>
+
+Literary activity becomes widespread in the early 15th century in the context of the [[Bohemian Reformation]]. [[Jan Hus]] contributed significantly to the standardization of [[Czech orthography]], advocated for widespread literacy among Czech commoners (particularly in religion) and made early efforts to model written Czech after the spoken language.<ref name="Sussex Cubberley 2011 98 99">{{Harvnb|Sussex|Cubberley|2011|pp=98–99}}</ref>
+
+=== Early Modern Czech ===
+{{see also|Early Modern Czech}}
+There was no standardization distinguishing between Czech and Slovak prior to the 15th century. In the 16th century, the division between Czech and Slovak becomes apparent, marking the confessional division between Lutheran Protestants in Slovakia using Czech orthography and Catholics, especially Slovak Jesuits, beginning to use a separate Slovak orthography based on Western Slovak dialects.<ref name="tuebingen">{{cite web |url=http://homepages.uni-tuebingen.de/tilman.berger/Publikationen/CzechSlovak.pdf |title=Slovaks in Czechia – Czechs in Slovakia |publisher=[[University of Tübingen]] |last=Berger |first=Tilman |access-date=9 August 2014}}</ref><ref>{{cite book |last1=Kamusella |first1=Tomasz |title=The Politics of Language and Nationalism in Modern Central Europe |date=2008 |publisher=Springer |pages=134–135}}</ref>
+
+The publication of the [[Kralice Bible]] between 1579 and 1593 (the first complete Czech translation of the Bible from the original languages) became very important for standardization of the Czech language in the following centuries as it was used as a model for the standard language.<ref>{{cite web |last1=Michálek |first1=Emanuel |title=O jazyce Kralické bible |url=http://nase-rec.ujc.cas.cz/archiv.php?art=6140#_ftn1 |website=Naše řeč |publisher=Czech Language Institute |access-date=2 November 2021 |language=Czech}}</ref>
+
+In 1615, the Bohemian ''[[Diet (assembly)|diet]]'' tried to declare Czech to be the only official language of the kingdom. After the [[Bohemian Revolt]] (of predominantly Protestant aristocracy) which was defeated by the [[Habsburg]]s in 1620, the Protestant intellectuals had to leave the country. This emigration together with other consequences of the [[Thirty Years' War]] had a negative impact on the further use of the Czech language. In 1627, Czech and German became official languages of the Kingdom of Bohemia and in the 18th century German became dominant in Bohemia and Moravia, especially among the upper classes.<ref name="Cerna 2007 26">{{Harvnb|Cerna|Machalek|2007|p=26}}</ref>
+
+=== Modern Czech ===
+[[File:Josef Dobrovský – Jan Vilímek – České album (cropped).jpg|thumb|right|[[Josef Dobrovský]], whose writing played a key role in reviving Czech as a written language|alt=In a detailed pencil sketch, a middle-aged man in a suit looks idly into the distance.]]
+{{see also|Czech National Revival}}
+Modern standard Czech originates in standardization efforts of the 18th century.<ref>{{Harvnb|Chloupek|Nekvapil|1993|p=92}}</ref> By then the language had developed a literary tradition, and since then it has changed little; journals from that period contain no substantial differences from modern standard Czech, and contemporary Czechs can understand them with little difficulty.<ref>{{Harvnb |Chloupek |Nekvapil|1993|p=95}}</ref> At some point before the 18th century, the Czech language abandoned a distinction between phonemic /l/ and /ʎ/ which survives in Slovak.<ref name="Maxwell 2009 106"/>
+
+With the beginning of the national revival of the mid-18th century, Czech historians began to emphasize their people's accomplishments from the 15th through 17th centuries, rebelling against the [[Counter-Reformation]] (the Habsburg re-Catholicisation efforts which had denigrated Czech and other non-[[Latin language|Latin]] languages).<ref>{{Harvnb|Agnew |1994 |p=250}}</ref> Czech [[Philology|philologists]] studied sixteenth-century texts and advocated the return of the language to [[high culture]].<ref name="Agnew 1994 251–252">{{Harvnb|Agnew|1994|pp=251–252}}</ref> This period is known as the Czech National Revival<ref name="Wilson 2010 18">{{Harvnb|Wilson|2009|p=18}}</ref> (or Renaissance).<ref name="Agnew 1994 251–252"/>
+
+During the national revival, in 1809 linguist and historian [[Josef Dobrovský]] released a German-language grammar of Old Czech entitled ''Ausführliches Lehrgebäude der böhmischen Sprache'' ('Comprehensive Doctrine of the Bohemian Language'). Dobrovský had intended his book to be [[descriptive linguistics|descriptive]], and did not think Czech had a realistic chance of returning as a major language. However, [[Josef Jungmann]] and other revivalists used Dobrovský's book to advocate for a Czech linguistic revival.<ref name="Wilson 2010 18"/> Changes during this time included spelling reform (notably, ''í'' in place of the former ''j'' and ''j'' in place of ''g''), the use of ''t'' (rather than ''ti'') to end infinitive verbs and the non-capitalization of nouns (which had been a late borrowing from German).<ref name="Maxwell 2009 106">{{Harvnb|Maxwell|2009|p=106}}</ref> These changes differentiated Czech from Slovak.<ref>{{Harvnb|Chloupek|Nekvapil|1993|p=96}}</ref> Modern scholars disagree about whether the conservative revivalists were motivated by nationalism or considered contemporary spoken Czech unsuitable for formal, widespread use.<ref name="Wilson 2010 18"/>
+
+Adherence to historical patterns was later relaxed and standard Czech adopted a number of features from Common Czech (a widespread informal interdialectal variety), such as leaving some proper nouns undeclined. This has resulted in a relatively high level of homogeneity among all varieties of the language.<ref>{{Harvnb|Chloupek|Nekvapil|1993|pp=93–95}}</ref>
+
+==Geographic distribution==
+[[File:Vojvodina rusyn croatian czech map.png|thumb|upright|alt=Map of Vojvodina, a province of Serbia, with Czech in official use in one southeastern municipality|Official use of Czech in [[Vojvodina]], Serbia (in light blue)]]
+Czech is spoken by about 10 million residents of the [[Czech Republic]].<ref name="Cerna 2007 26"/><ref>{{Harvnb|Naughton|2005|p=2}}</ref> A [[Eurobarometer]] survey conducted from January to March 2012 found that the [[first language]] of 98 percent of Czech citizens was Czech, the third-highest proportion of a population in the [[European Union]] (behind [[Greece]] and [[Hungary]]).<ref name="eu"/>
+
+As the official language of the Czech Republic (a member of the [[European Union]] since 2004), Czech is one of the EU's official languages and the 2012 Eurobarometer survey found that Czech was the foreign language most often used in Slovakia.<ref name="eu">{{cite web|url=http://ec.europa.eu/public_opinion/archives/ebs/ebs_386_en.pdf |archive-url=https://web.archive.org/web/20120622051915/http://ec.europa.eu/public_opinion/archives/ebs/ebs_386_en.pdf |archive-date=22 June 2012 |url-status=live|publisher=[[Eurobarometer]]|title=Europeans and Their Languages|date=June 2012|access-date=25 July 2014}}</ref> Economist Jonathan van Parys collected data on language knowledge in Europe for the 2012 [[European Day of Languages]]. The five countries with the greatest use of Czech were the [[Czech Republic]] (98.77 percent), [[Slovakia]] (24.86 percent), [[Portugal]] (1.93 percent), [[Poland]] (0.98 percent) and [[Germany]] (0.47 percent).<ref>{{cite web|url=http://languageknowledge.eu/languages/czech|publisher=Language Knowledge|title=Language knowledge in the European Union|date=2012|last=van Parys|first=Jonathan|access-date=23 July 2014}}</ref>
+
+Czech speakers in Slovakia primarily live in cities. Since it is a recognized [[minority language]] in Slovakia, Slovak citizens who speak only Czech may communicate with the government in their language in the same way that Slovak speakers in the Czech Republic also do.<ref>{{cite web|url=http://alppi.vedeckecasopisy.cz/publicFiles/00131.pdf|title=Language Policy of Slovak Republic|last=Škrobák|first=Zdeněk|publisher=Annual of Language & Politics and Politics of Identity|access-date=26 July 2014|archive-url=https://web.archive.org/web/20140726095459/http://alppi.vedeckecasopisy.cz/publicFiles/00131.pdf|archive-date=26 July 2014|url-status=dead}}</ref>
+
+===Czech language being used in foreign areas===
+{{see also|Czech American|Czech Texan}}
+[[File:Praha texas.jpeg|thumb|right|Praha, Texas (Note the absence of diacritics. In standard Czech, it would be {{lang|cs|Vítáme Vás […] Matička Praha}}.)]]
+Immigration of Czechs from Europe to the United States occurred primarily from 1848 to 1914. Czech is a [[Less Commonly Taught Languages|Less Commonly Taught Language]] in U.S. schools, and is taught at Czech heritage centers. Large communities of [[Czech American]]s live in the states of [[Texas]], [[Nebraska]] and [[Wisconsin]].<ref name="cal">{{cite web|url=http://www.cal.org/heritage/pdfs/briefs/czech-language-programs-in-the-united-states.pdf |archive-url=https://web.archive.org/web/20130302223205/http://www.cal.org/heritage/pdfs/briefs/czech-language-programs-in-the-united-states.pdf |archive-date=2 March 2013 |url-status=live|publisher=[[University of California, Berkeley]]|last=Hrouda|first=Simone J.|title=Czech Language Programs and Czech as a Heritage Language in the United States|access-date=23 July 2014}}</ref> In the [[2000 United States census]], Czech was reported as the most common [[Language Spoken at Home in the United States of America|language spoken at home]] (including [[English language|English]]) in [[Valley County, Nebraska|Valley]], [[Butler County, Nebraska|Butler]] and [[Saunders County, Nebraska|Saunders]] [[County (United States)|Counties]], Nebraska and [[Republic County, Kansas]]. With the exception of [[Spanish language|Spanish]] (the non-English language most commonly spoken at home nationwide), Czech was the most common home language in more than a dozen additional counties in Nebraska, Kansas, Texas, [[North Dakota]] and [[Minnesota]].<ref>{{cite web|url=https://www.census.gov/population/www/cen2000/censusatlas/pdf/8_Language.pdf |archive-url=https://web.archive.org/web/20081006211125/http://www.census.gov/population/www/cen2000/censusatlas/pdf/8_Language.pdf |archive-date=6 October 2008 |url-status=live|publisher=[[United States Census|Census.gov]]|title=Chapter 8: Language|date=2000|access-date=23 July 2014}}</ref> {{As of|2009|post=,}} 70,500 Americans spoke Czech as their first language (49th place nationwide, after [[Turkish language|Turkish]] and before [[Swedish language|Swedish]]).<ref>{{cite web|archive-url=https://web.archive.org/web/20090220090800/http://www.usefoundation.org/userdata/file/Research/languages_of_the_usa.pdf|url=http://www.usefoundation.org/userdata/file/Research/languages_of_the_usa.pdf|archive-date=20 February 2009|publisher=[[U.S. English (organization)|U.S. English]]|title=Languages of the U.S.A|access-date=25 July 2014|url-status=dead}}</ref>
+
+==Phonology==
+{{main|Czech phonology}}
+[[File:Synagoga v Úštěku.ogg|thumb|Spoken Czech (text reading)]]
+
+===Vowels===
+[[File:Czech vowel chart.svg|class=skin-invert-image|right|thumb|A Czech vowel chart]]
+Standard Czech contains ten basic [[vowel]] [[phoneme]]s, and three diphthongs. The vowels are {{IPA|/a/, /ɛ/, /ɪ/, /o/, and /u/}}, and their long counterparts {{IPA|/aː/, /ɛː/, /iː/, /oː/ and /uː/}}. The diphthongs are {{IPA|/ou̯/, /au̯/ and /ɛu̯/}}; the last two are found only in loanwords such as {{lang|cs|auto}} "car" and {{lang|cs|euro}} "euro".<ref>{{Harvnb|Dankovičová|1999|p=72}}</ref>
+
+In Czech orthography, the vowels are spelled as follows:
+*Short: {{lang|cs|a, e/ě, i/y, o, u}}
+*Long: {{lang|cs|á, é, í/ý, ó, ú/ů}}
+*Diphthongs: {{lang|cs|ou, au, eu}}
+
+The letter {{angle bracket|[[ě]]}} indicates that the previous consonant is palatalized (e.g. {{lang|cs|něco}} {{Audio-IPA|LL-Q9056_(ces)-Ghost4Man-něco.wav|/ɲɛt͡so/}}). After a labial it represents {{IPA|/jɛ/}} (e.g. {{lang|cs|běs}} {{Audio-IPA|LL-Q9056_(ces)-Ghost4Man-běs.wav|/bjɛs/}}); but {{angle bracket|mě}} is pronounced {{IPA|/mɲɛ/}}, cf. {{lang|cs|měkký}} ({{Audio-IPA|LL-Q9056_(ces)-Ghost4Man-měkký.wav|/mɲɛkiː/}}).<ref>{{cite book|last1=Campbell|first1=George L.|author2=Gareth King|title=Compendium of the world's languages|date=1984|publisher=Routledge}}</ref>
+
+===Consonants===
+The consonant phonemes of Czech and their equivalent letters in Czech orthography are as follows:<ref>{{Harvnb|Dankovičová|1999|pp=70–72}}</ref>
+{| class="wikitable" style="text-align:center"
+|-
+!colspan=2| 
+! [[Labial consonant|Labial]]
+! [[Alveolar consonant|Alveolar]]
+! [[Postalveolar consonant|Post-<br/>alveolar]]
+! [[Palatal consonant|Palatal]]
+! [[Velar consonant|Velar]]/[[Glottal consonant|Glottal]]
+|-
+!colspan=2| [[Nasal consonant|Nasal]]
+| {{IPA link|m}} {{angle bracket|m}}
+| {{IPA link|n}} {{angle bracket|n}}
+| 
+| {{IPA link|ɲ}} {{angle bracket|ň}}
+| 
+|-
+!rowspan=2| [[Stop consonant|Plosive]]
+! {{small|[[voicelessness|voiceless]]}}
+| {{IPA link|p}} {{angle bracket|p}}
+| {{IPA link|t}} {{angle bracket|t}}
+| 
+| {{IPA link|c}} {{angle bracket|ť}}
+| {{IPA link|k}} {{angle bracket|k}}
+|-
+! {{small|[[voice (phonetics)|voiced]]}}
+| {{IPA link|b}} {{angle bracket|b}}
+| {{IPA link|d}} {{angle bracket|d}}
+| 
+| {{IPA link|ɟ}} {{angle bracket|ď}}
+| ({{IPA link|ɡ}}) {{angle bracket|g}}
+|-
+!rowspan=2| [[Affricate consonant|Affricate]]
+! {{small|[[voicelessness|voiceless]]}}
+| 
+| {{IPA link|t͡s}} {{angle bracket|c}}
+| {{IPA link|t͡ʃ}} {{angle bracket|č}}
+| 
+| 
+|-
+! {{small|[[voice (phonetics)|voiced]]}}
+| 
+| ({{IPA link|d͡z}})
+| ({{IPA link|d͡ʒ}})
+| 
+| 
+|-
+!rowspan=2| [[Fricative consonant|Fricative]]
+! {{small|[[voicelessness|voiceless]]}}
+| {{IPA link|f}} {{angle bracket|f}}
+| {{IPA link|s}} {{angle bracket|s}}
+| {{IPA link|ʃ}} {{angle bracket|š}}
+| 
+| {{IPA link|x}} {{angle bracket|ch}}
+|-
+! {{small|[[voice (phonetics)|voiced]]}}
+| {{IPA link|v}} {{angle bracket|v}}
+| {{IPA link|z}} {{angle bracket|z}}
+| {{IPA link|ʒ}} {{angle bracket|ž}}
+| 
+| {{IPA link|ɦ}} {{angle bracket|h}}
+|-
+!rowspan=2| [[Trill consonant|Trill]]
+! {{small|plain}}
+| 
+| {{IPA link|r}} {{angle bracket|r}}
+| 
+| 
+| 
+|-
+! {{small|[[Voiced alveolar raised non-sonorant trill|fricative]]}}
+| 
+| {{IPA link|r̝}} {{angle bracket|ř}}
+| 
+| 
+| 
+|-
+!colspan=2| [[Approximant consonant|Approximant]]
+|
+| {{IPA link|l}} {{angle bracket|l}}
+| 
+| {{IPA link|j}} {{angle bracket|j}}
+| 
+|}
+
+Czech consonants are categorized as "hard", "neutral", or "soft":
+
+*Hard: {{IPA|/d/, /ɡ/, /ɦ/, /k/, /n/, /r/, /t/, /x/}}
+*Neutral: {{IPA|/b/, /f/, /l/, /m/, /p/, /s/, /v/, /z/}}
+*Soft: {{IPA|/c/, /ɟ/, /j/, /ɲ/, /r̝/, /ʃ/, /t͡s/, /t͡ʃ/, /ʒ/}}
+
+Hard consonants may not be followed by ''i'' or ''í'' in writing, or soft ones by ''y'' or ''ý'' (except in loanwords such as ''[[kilogram]]'').<ref>{{cite web|title=Psaní i – y po písmenu c|url=http://prirucka.ujc.cas.cz/en/?id=102|website=Czech Language Institute|access-date=11 August 2014}}</ref> Neutral consonants may take either character. Hard consonants are sometimes known as "strong", and soft ones as "weak".<ref>{{Harvnb|Harkins|1952|p=11}}</ref> This distinction is also relevant to the [[Czech declension|declension]] patterns of nouns, which vary according to whether the final consonant of the noun stem is hard or soft.<ref>{{Harvnb|Naughton|2005|pp=20–21}}</ref>
+
+[[Voice (phonetics)|Voiced]] [[consonant]]s with unvoiced counterparts are unvoiced at the end of a word before a pause, and in [[consonant cluster]]s [[voicing assimilation]] occurs, which matches voicing to the following consonant. The unvoiced counterpart of /ɦ/ is /x/.<ref>{{Harvnb|Dankovičová|1999|p=73}}</ref>
+
+The phoneme represented by the letter ''[[ř]]'' (capital ''Ř'') is very rare among languages and often claimed to be unique to Czech, though it also occurs in some dialects of [[Kashubian language|Kashubian]], and formerly occurred in Polish.<ref>{{cite book |last1=Nichols |first1=Joanna |author1-link=The Evolution of Slavic |date=2018|editor1-last=Klein |editor1-first=Jared |editor2-last=Joseph |editor2-first=Brian |editor3-last=Fritz |editor3-first=Matthias |title=Handbook of Comparative and Historical Indo-European Linguistics |pages=1607}}</ref> It represents the [[raised alveolar non-sonorant trill]] ([[International Phonetic Alphabet|IPA]]: {{IPA|[r̝]}}), a sound somewhere between Czech ''r'' and ''ž'' (example: {{audio|Cs-řeka.ogg|"řeka" (river)}}),<ref name="dyk">{{Harvnb|Harkins|1952|p=6}}</ref> and is present in ''[[Dvořák]]''. In unvoiced environments, /r̝/ is realized as its voiceless allophone [r̝̊], a sound somewhere between Czech ''r'' and ''š'' (example: {{audio-lang|LL-Q9056_(ces)-Ghost4Man-přetřít.wav|cs|přetřít}}, {{audio-lang|LL-Q9056_(ces)-Ghost4Man-opravář.wav|cs|opravář}}).<ref>{{Harvnb|Dankovičová|1999|p=71}}</ref>
+
+The consonants {{IPA|/r/, /l/, and /m/}} can be [[syllabic consonant|syllabic]], acting as [[syllable nuclei]] in place of a vowel. ''[[Strč prst skrz krk]]'' ("Stick [your] finger through [your] throat") is a well-known Czech [[tongue twister]] using syllabic consonants but no vowels.<ref>{{Harvnb|Naughton|2005|p=5}}</ref>
+
+===Stress===
+Each word has primary [[stress (linguistics)|stress]] on its first [[syllable]], except for [[enclitic]]s (minor, monosyllabic, unstressed syllables). In all words of more than two syllables, every odd-numbered syllable receives secondary stress. Stress is unrelated to vowel length; both long and short vowels can be stressed or unstressed.<ref>{{Harvnb|Harkins|1952|p=12}}</ref> Vowels are never reduced (e.g. to [[schwa]] sounds) when unstressed.<ref>{{Harvnb|Harkins|1952|p=9}}</ref> When a noun is preceded by a monosyllabic preposition, the stress usually moves to the preposition, e.g. {{lang|cs|'''do''' Prahy}} "to Prague".<ref>{{cite web |title=Sound Patterns of Czech |url=https://fonetika.ff.cuni.cz/en/czech-phonetics/ |website=Charles University Institute of Phonetics |access-date=3 November 2021}}</ref>
+
+==Grammar==
+Czech grammar, like that of other Slavic languages, is [[fusional language|fusional]]; its nouns, verbs, and adjectives are [[inflection|inflected]] by phonological processes to modify their meanings and grammatical functions, and the easily separable [[affix]]es characteristic of [[agglutinative language|agglutinative]] languages are limited.<ref>{{Harvnb|Qualls|2012|pp=6–8}}</ref> 
+Czech inflects for case, gender and number in nouns and tense, aspect, [[Grammatical mood|mood]], person and subject number and gender in verbs.<ref>{{Harvnb|Qualls|2012|p=5}}</ref>
+
+Parts of speech include adjectives, [[adverb]]s, numbers, [[interrogative word]]s, [[preposition]]s, [[conjunction (grammar)|conjunction]]s and [[interjection]]s.<ref>{{Harvnb|Naughton|2005|pp=v–viii}}</ref> Adverbs are primarily formed from adjectives by taking the final ''ý'' or ''í'' of the base form and replacing it with ''e'', ''ě'', ''y'', or ''o''.<ref>{{Harvnb|Naughton|2005|pp=61–63}}</ref> Negative statements are formed by adding the affix ''[[wikt:ne#Czech|ne-]]'' to the main verb of a clause,<ref>{{Harvnb|Naughton|2005|p=212}}</ref> with one exception: ''je'' (he, she or it is) becomes ''není''.<ref>{{Harvnb|Naughton|2005|p=134}}</ref>
+
+===Sentence and clause structure===
+{{see also|Czech word order}}
+[[File:Studeněves, tabule dětského hřiště.JPG|thumb|A Czech-language sign at the entrance to a children's playground]]
+{|class="wikitable floatright"
+|+Czech pronouns, [[nominative case]]
+|-
+!Person
+!Singular
+!Plural
+|-
+!1st
+| ''já''
+| ''my''
+|-
+!2nd
+| ''ty''<br/>''vy'' (formal)
+| ''vy'' 
+|-
+!3rd
+| ''on'' (masculine)<br/>''ona'' (feminine)<br/>''ono'' (neuter)
+| ''oni'' (masculine animate)<br/>''ony'' (masculine inanimate, feminine)<br/>''ona'' (neuter)
+|}
+
+Because Czech uses [[grammatical case]] to convey word function in a sentence (instead of relying on [[word order]], as English does), its word order is flexible. As a [[pro-drop language]], in Czech an [[Transitivity (grammar)|intransitive]] sentence can consist of only a verb; information about its subject is encoded in the verb.<ref>{{Harvnb|Naughton|2005|p=74}}</ref> Enclitics (primarily [[auxiliary verb]]s and pronouns) appear in the second syntactic slot of a sentence, after the first stressed unit. The first slot can contain a subject or object, a main form of a verb, an adverb, or a conjunction (except for the light conjunctions ''a'', "and", ''i'', "and even" or ''ale'', "but").{{sfn|Short|2009|p=324}}
+
+Czech syntax has a [[subject–verb–object]] sentence structure. In practice, however, word order is flexible and used to distinguish [[topic and comment|topic and focus]], with the topic or theme (known referents) preceding the focus or rheme (new information) in a sentence; Czech has therefore been described as a [[topic-prominent language]].<ref>{{cite book |last1=Anderman |first1=Gunilla M. |last2=Rogers |first2=Margaret |title=Incorporating Corpora: The Linguist and the Translator |date=2008 |publisher=Multilingual Matters |pages=135–136}}</ref> Although Czech has a [[Periphrasis|periphrastic]] [[Passive voice|passive]] construction (like English), in colloquial style, word-order changes frequently replace the passive voice. For example, to change "Peter killed Paul" to "Paul was killed by Peter" the order of subject and object is inverted: ''Petr zabil Pavla'' ("Peter killed Paul") becomes "Paul, Peter killed" (''Pavla zabil Petr''). ''Pavla'' is in the [[accusative case]], the grammatical object of the verb.{{sfn|Short|2009|p=325}}
+ 
+A word at the end of a clause is typically emphasized, unless an upward [[intonation (linguistics)|intonation]] indicates that the sentence is a question:<ref>{{Harvnb|Naughton|2005|pp=10–11}}</ref>
+*''Pes jí bagetu.'' – The dog eats the baguette (rather than eating something else).
+*''Bagetu jí pes.'' – The dog eats the baguette (rather than someone else doing so).
+*''Pes bagetu jí.'' – The dog eats the baguette (rather than doing something else to it).
+*''Jí pes bagetu?'' – Does the dog eat the baguette? (emphasis ambiguous)
+
+In parts of [[Bohemia]] (including [[Prague]]), questions such as ''Jí pes bagetu?'' without an interrogative word (such as ''co'', "what" or ''kdo'', "who") are [[Intonation (linguistics)|intoned]] in a slow rise from low to high, quickly dropping to low on the last word or phrase.<ref>{{Harvnb|Naughton|2005|p=10}}</ref>
+
+In modern Czech syntax, adjectives precede nouns,<ref>{{Harvnb|Naughton|2005|p=48}}</ref> with few exceptions.<ref>{{cite web |last1=Uhlířová |first1=Ludmila |title=SLOVOSLED NOMINÁLNÍ SKUPINY |url=https://www.czechency.org/slovnik/SLOVOSLED%20NOMINÁLNÍ%20SKUPINY |website=Nový encyklopedický slovník češtiny |access-date=18 October 2017}}</ref> [[Relative clause]]s are introduced by [[relativizer]]s such as the adjective ''který'', analogous to the English [[relative pronoun]]s "which", "that" and "who"/"whom". As with other adjectives, it [[Agreement (linguistics)|agrees]] with its associated noun in gender, number and case. Relative clauses follow the noun they modify. The following is a [[Interlinear gloss|glossed]] example:<ref>{{Harvnb|Harkins|1952|p=271}}</ref>
+
+{{interlinear|indent=3
+|Chc-i navštív-it universit-u, na kter-ou chod-í Jan.
+|want-1SG visit-INF university-SG.ACC, on which-SG.F.ACC attend-3SG John.SG.NOM
+|I want to visit the university that John attends.}}
+
+===Declension===
+{{Main|Czech declension}}
+In Czech, nouns and adjectives are declined into one of seven [[grammatical case]]s which indicate their function in a sentence, two [[grammatical number|numbers]] (singular and plural) and three [[grammatical gender|genders]] (masculine, feminine and neuter). The masculine gender is further divided into [[animacy|animate and inanimate]] classes.
+
+====Case====
+[[File:Bozeny Nemcove Revnice 6258.JPG|thumb|right|A street sign in German (top) and Czech (bottom) for a street named after [[Božena Němcová]] with her name declined in the genitive case in Czech (a sign probably from the time of the [[Protectorate of Bohemia and Moravia|Protectorate]])]]
+A [[nominative–accusative language]], Czech marks subject nouns of transitive and intransitive verbs in the nominative case, which is the form found in dictionaries, and [[direct object]]s of transitive verbs are declined in the accusative case.<ref name="n196" /> The vocative case is used to address people.<ref>{{Harvnb|Naughton|2005|p=201}}</ref> The remaining cases (genitive, dative, locative and instrumental) indicate semantic relationships, such as [[noun adjunct]]s (genitive), [[indirect object]]s (dative), or agents in passive constructions (instrumental).<ref>{{Harvnb|Naughton|2005|pp=197–199}}</ref> Additionally [[preposition]]s and some verbs require their complements to be declined in a certain case.<ref name="n196">{{Harvnb|Naughton|2005|p=196}}</ref> The locative case is only used after prepositions.<ref>{{Harvnb|Naughton|2005|p=199}}</ref> An adjective's case agrees with that of the noun it modifies. When Czech children learn their language's declension patterns, the cases are referred to by number:<ref name="Naughton 2005 25">{{Harvnb|Naughton|2005|p=25}}</ref>
+{{clear}}
+{| class="wikitable plainrowheaders"
+|+Cases in Czech
+|-
+!scope="col"|No.
+!scope="col"| Ordinal name (Czech)
+!scope="col"| Full name (Czech)
+!scope="col"| Case
+!scope="col"| Main usage
+|-
+|1. 
+|''první pád''
+| ''nominativ''
+!scope="row"|[[nominative case|nominative]]
+| Subjects
+|-
+|2.
+|''druhý pád''
+| ''genitiv''
+!scope="row"|[[genitive case|genitive]]
+| Noun adjuncts, possession, prepositions of motion, time and location
+|-
+|3.
+| ''třetí pád''
+| ''dativ''
+!scope="row"|[[dative case|dative]]
+| Indirect objects, prepositions of motion
+|-
+|4.
+| ''čtvrtý pád''
+| ''akuzativ''
+!scope="row"|[[accusative case|accusative]]
+| Direct objects, prepositions of motion and time
+|-
+|5.
+|''pátý pád''
+| ''vokativ''
+!scope="row"|[[vocative case|vocative]]
+| Addressing someone
+|-
+|6.
+|''šestý pád''
+| ''lokál''
+!scope="row"|[[locative case|locative]]
+| Prepositions of location, time and topic
+|-
+|7.
+|''sedmý pád''
+| ''instrumentál''
+!scope="row"|[[instrumental case|instrumental]]
+| Passive agents, instruments, prepositions of location
+|}
+
+Some prepositions require the nouns they modify to take a particular case. The cases assigned by each preposition are based on the physical (or metaphorical) direction, or location, conveyed by it. For example, ''[[wikt:od|od]]'' (from, away from) and ''[[wikt:z#Czech|z]]'' (out of, off) assign the genitive case. Other prepositions take one of several cases, with their meaning dependent on the case; ''[[wikt:na#Czech|na]]'' means "on to" or "for" with the accusative case, but "on" with the locative.<ref>{{Harvnb|Naughton|2005|pp=201–205}}</ref>
+
+This is a glossed example of a sentence using several cases:
+
+{{interlinear|indent=3|abbreviations=INS:instrumental case
+|Nes-l js-em krabic-i do dom-u se sv-ým přítel-em.
+|carry-SG.M.PST be-1.SG box-SG.ACC into house-SG.GEN with own-SG.INS friend-SG.INS
+|I carried the box into the house with my friend.}}
+
+====Gender====
+
+Czech distinguishes three [[grammatical gender|genders]]—masculine, feminine, and neuter—and the masculine gender is subdivided into [[animacy|animate]] and inanimate. With few exceptions, feminine nouns in the nominative case end in ''-a'', ''-e'', or a consonant; neuter nouns in ''-o'', ''-e'', or ''-í'', and masculine nouns in a consonant.<ref>{{Harvnb|Naughton|2005|pp=22–24}}</ref> Adjectives, participles, most pronouns, and the numbers "one" and "two" are marked for gender and agree with the gender of the noun they modify or refer to.<ref>{{Harvnb|Naughton|2005|p=51}}</ref> Past tense verbs are also marked for gender, agreeing with the gender of the subject, e.g. ''dělal'' (he did, or made); ''dělala'' (she did, or made) and ''dělalo'' (it did, or made).<ref>{{Harvnb|Naughton|2005|p=141}}</ref> Gender also plays a semantic role; most nouns that describe people and animals, including personal names, have separate masculine and feminine forms which are normally formed by adding a suffix to the stem, for example ''Čech'' (Czech man) has the feminine form ''Češka'' (Czech woman).<ref>{{Harvnb|Naughton|2005|p=238}}</ref>
+
+Nouns of different genders follow different declension patterns. Examples of declension patterns for noun phrases of various genders follow:
+
+{| class="wikitable" style="text-align: center"
+|+ 
+! rowspan="2" | Case
+! colspan="4" | Noun/adjective
+|-
+| Big dog (m. anim. sg.)
+| Black backpack (m. inanim. sg.)
+| Small cat (f. sg.)
+| Hard wood (n. sg.)
+|-
+! Nom.
+| ''velký pes''<br>(big dog)
+|''černý batoh''<br>(black backpack)
+| ''malá kočka''<br>(small cat)
+| ''tvrdé dřevo''<br>(hard wood)
+|-
+! Gen.
+| ''bez velkého psa''<br>(without the big dog)
+| ''bez černého batohu''<br>(without the black backpack)
+| ''bez malé kočky''<br>(without the small cat)
+| ''bez tvrdého dřeva''<br>(without the hard wood)
+|-
+! Dat.
+| ''k velkému psovi''<br>(to the big dog)
+| ''k černému batohu''<br>(to the black backpack)
+| ''k malé kočce''<br>(to the small cat)
+| ''ke tvrdému dřevu''<br>(to the hard wood)
+|-
+! Acc.
+| ''vidím velkého psa''<br>(I see the big dog)
+| ''vidím černý batoh''<br>(I see the black backpack)
+| ''vidím malou kočku''<br>(I see the small cat)
+| ''vidím tvrdé dřevo''<br>(I see the hard wood)
+|-
+! Voc.
+| ''velký pse!''<br>(big dog!)
+| ''černý batohu!''<br>(black backpack!)
+| ''malá kočko!''<br>(small cat!)
+| ''tvrdé dřevo!''<br>(hard wood!)
+|-
+! Loc.
+| ''o velkém psovi''<br>(about the big dog)
+| ''o černém batohu''<br>(about the black backpack)
+| ''o malé kočce''<br>(about the small cat)
+| ''o tvrdém dřevě''<br>(about the hard wood)
+|-
+! Inst.
+| ''s velkým psem''<br>(with the big dog)
+| ''s černým batohem''<br>(with the black backpack)
+| ''s malou kočkou''<br>(with the small cat)
+| ''s tvrdým dřevem''<br>(with the hard wood)
+
+|}
+
+====Number====
+
+Nouns are also inflected for [[grammatical number|number]], distinguishing between singular and plural. Typical of a Slavic language, Czech cardinal numbers one through four allow the nouns and adjectives they modify to take any case, but numbers over five require subject and direct object noun phrases to be declined in the genitive plural instead of the nominative or accusative, and when used as subjects these phrases take singular verbs. For example:<ref>{{Harvnb|Naughton|2005|p=114}}</ref>
+{|class=wikitable
+|-
+!English
+!Czech
+|-
+| one Czech crown was...
+| ''jedna koruna česká byla...''
+|-
+| two Czech crowns were...
+| ''dvě koruny české byly...''
+|-
+| three Czech crowns were...
+| ''tři koruny české byly...''
+|-
+| four Czech crowns were...
+| ''čtyři koruny české byly...''
+|-
+| five Czech crowns were...
+| ''pět korun českých bylo...''
+|}
+
+Numbers decline for case, and the numbers one and two are also inflected for gender. Numbers one through five are shown below as examples. The number one has declension patterns identical to those of the [[demonstrative pronoun]] ''[[wikt:ten#Czech|ten]]''.<ref>{{Harvnb|Naughton|2005|p=83}}</ref><ref>{{Harvnb|Naughton|2005|p=117}}</ref>
+{|class=wikitable
+|-
+!
+!1
+!2
+!3
+!4
+!5
+|-
+!Nominative
+|''jeden'' (masc)<br/>''jedna'' (fem)<br/>''jedno'' (neut)
+|''dva'' (masc)<br/>''dvě'' (fem, neut)
+|''tři''
+|''čtyři''
+|''pět''
+|-
+!Genitive
+|''jednoho'' (masc)<br/>''jedné'' (fem)<br/>''jednoho'' (neut)
+|''dvou''
+|''tří'' or ''třech''
+|''čtyř'' or ''čtyřech''
+|''pěti''
+|-
+!Dative
+|''jednomu'' (masc)<br/>''jedné'' (fem)<br/>''jednomu'' (neut)
+|''dvěma''
+|''třem''
+|''čtyřem''
+|''pěti''
+|-
+!Accusative
+|''jednoho'' (masc an.)<br/>''jeden'' (masc in.)<br/>''jednu'' (fem)<br/>''jedno'' (neut)
+|''dva'' (masc)<br/>''dvě'' (fem, neut)
+|''tři''
+|''čtyři''
+|''pět''
+|-
+!Locative
+|''jednom'' (masc)<br/>''jedné'' (fem)<br/>''jednom'' (neut)
+|''dvou''
+|''třech''
+|''čtyřech''
+|''pěti''
+|-
+!Instrumental
+|''jedním'' (masc)<br/>''jednou'' (fem)<br/>''jedním'' (neut)
+|''dvěma''
+|''třemi''
+|''čtyřmi''
+|''pěti''
+|}
+
+Although Czech's [[grammatical number]]s are singular and [[plural]], several residuals of [[dual (grammatical number)|dual]] forms remain, such as the words ''dva'' ("two") and ''oba'' ("both"), which decline the same way. Some nouns for paired body parts use a historical dual form to express plural in some cases: ''[[wikt:ruka|ruka]]'' (hand)—''ruce'' (nominative); ''[[wikt:noha|noha]]'' (leg)—''nohama'' (instrumental), ''nohou'' (genitive/locative); ''[[wikt:oko|oko]]'' (eye)—''oči'', and ''[[wikt:ucho|ucho]]'' (ear)—''uši''. While two of these nouns are neuter in their singular forms, all plural forms are considered feminine; their gender is relevant to their associated adjectives and verbs.<ref>{{Harvnb|Naughton|2005|p=40}}</ref> These forms are plural semantically, used for any non-singular count, as in ''mezi čtyřma očima'' (face to face, lit. ''among four eyes''). The plural number paradigms of these nouns are a mixture of historical dual and plural forms. For example, ''nohy'' (legs; nominative/accusative) is a standard plural form of this type of noun.<ref>{{Harvnb|Komárek|2012|p=238}}</ref>
+
+===Verb conjugation===
+{{Main|Czech conjugation}}
+Czech verbs agree with their subjects in [[grammatical person|person]] (first, second or third), [[grammatical number|number]] (singular or plural), and in constructions involving [[participle]]s, which includes the past tense, also in [[grammatical gender|gender]]. They are conjugated for tense (past, present or [[future tense|future]]) and mood ([[indicative]], [[imperative mood|imperative]] or [[conditional mood|conditional]]). For example, the conjugated verb ''[[wikt:mluvit|mluvíme]]'' (we speak) is in the present tense and first-person plural; it is distinguished from other conjugations of the [[infinitive]] ''mluvit'' by its ending, ''-íme''.<ref name="Naughton 2005 131"/> The infinitive form of Czech verbs ends in ''-t'' (archaically, ''-ti'' or ''-ci''). It is the form found in dictionaries and the form that follows auxiliary verbs (for example, ''můžu tě slyšet''—"I can ''hear'' you").<ref>{{Harvnb|Naughton|2005|p=7}}</ref>
+
+====Aspect====
+{{See also|Grammatical aspect in Slavic languages}}
+Typical of Slavic languages, Czech marks its verbs for one of two [[grammatical aspect]]s: [[perfective aspect|perfective]] and [[imperfective aspect|imperfective]]. Most verbs are part of inflected aspect pairs—for example, ''[[wikt:koupit|koupit]]'' (perfective) and ''[[wikt:kupovat|kupovat]]'' (imperfective). Although the verbs' meaning is similar, in perfective verbs the action is completed and in imperfective verbs it is ongoing or repeated. This is distinct from [[past tense|past]] and [[present tense]].<ref name="Naughton 2005 146">{{Harvnb|Naughton|2005|p=146}}</ref> Any verb of either aspect can be conjugated into either the past or present tense,<ref name="Naughton 2005 131">{{Harvnb|Naughton|2005|p=131}}</ref> but the future tense is only used with imperfective verbs.<ref name="Naughton 2005 151">{{Harvnb|Naughton|2005|p=151}}</ref> Aspect describes the state of the action at the time specified by the tense.<ref name="Naughton 2005 146"/>
+
+The verbs of most aspect pairs differ in one of two ways: by prefix or by suffix. In prefix pairs, the perfective verb has an added prefix—for example, the imperfective ''psát'' (to write, to be writing) compared with the perfective ''napsat'' (to write down). The most common prefixes are ''na-'', ''o-'', ''po-'', ''s-'', ''u-'', ''vy-'', ''z-'' and ''za-''.<ref>{{Harvnb|Naughton|2005|p=147}}</ref> In suffix pairs, a different infinitive ending is added to the perfective stem; for example, the perfective verbs ''koupit'' (to buy) and ''prodat'' (to sell) have the imperfective forms ''kupovat'' and ''prodávat''.<ref>{{Harvnb|Naughton|2005|pp=147–148}}</ref> Imperfective verbs may undergo further morphology to make other imperfective verbs (iterative and [[frequentative]] forms), denoting repeated or regular action. The verb ''jít'' (to go) has the iterative form ''chodit'' (to go regularly) and the frequentative form ''chodívat'' (to go occasionally; to tend to go).<ref>{{cite web|last1=Lukeš|first1=Dominik|publisher=DominikLukeš.net|title=Gramatická terminologie ve vyučování – Terminologie a platonický svět gramatických idejí|url=http://www.dominiklukes.net/bibliography/platonickysvetgramatickychkategorii|access-date=5 August 2014|year=2001|archive-date=23 September 2011|archive-url=https://web.archive.org/web/20110923003624/http://www.dominiklukes.net/bibliography/platonickysvetgramatickychkategorii|url-status=dead}}</ref>
+
+Many verbs have only one aspect, and verbs describing continual states of being—''[[wikt:být|být]]'' (to be), ''[[wikt:chtít|chtít]]'' (to want), ''[[wikt:moct|moct]]'' (to be able to), ''[[wikt:ležet|ležet]]'' (to lie down, to be lying down)—have no perfective form. Conversely, verbs describing immediate states of change—for example, ''[[wikt:otěhotnět|otěhotnět]]'' (to become pregnant) and ''[[wikt:nadchnout se|nadchnout se]]'' (to become enthusiastic)—have no imperfective aspect.<ref>{{Harvnb|Naughton|2005|p=149}}</ref>
+
+====Tense====
+
+{|class="wikitable floatleft"
+|+Conjugation of ''být'' in future tense
+|-
+!Person
+!Singular
+!Plural
+|-
+!1st
+| ''budu''
+| ''budeme''
+|-
+!2nd
+| ''budeš''
+| ''budete''
+|-
+!3rd
+| ''bude''
+| ''budou''
+|}
+
+The present tense in Czech is formed by adding an ending that agrees with the person and number of the subject at the end of the verb stem. As Czech is a [[null-subject language]], the subject pronoun can be omitted unless it is needed for clarity.<ref>{{Harvnb|Naughton|2005|pp=134}}</ref>  The past tense is formed using a [[participle]] which ends in ''-l'' and a further ending which agrees with the gender and number of the subject. For the first and second persons, the auxiliary verb ''být'' conjugated in the present tense is added.<ref>{{Harvnb|Naughton|2005|pp=140–142}}</ref>
+
+In some contexts, the present tense of perfective verbs (which differs from the English [[present perfect]]) implies future action; in others, it connotes habitual action.<ref>{{Harvnb|Naughton|2005|p=150}}</ref> The perfective present is used to refer to completion of actions in the future and is distinguished from the imperfective future tense, which refers to actions that will be ongoing in the future. The future tense is regularly formed using the future conjugation of ''být'' (as shown in the table on the left<!-- Please change directions here if moving table -->) and the infinitive of an imperfective verb, for example, ''budu jíst''—"I will eat" or "I will be eating".<ref name="Naughton 2005 151"/> Where ''budu'' has a noun or adjective complement it means "I will be", for example, ''budu šťastný'' (I will be happy).<ref name="Naughton 2005 151"/> Some verbs of movement form their future tense by adding the prefix ''po-'' to the present tense forms instead, e.g. ''jedu'' ("I go") > ''pojedu'' ("I will go").<ref>{{cite web |last1=Karlík |first1=Petr |last2=Migdalski |first2=Krzysztof |title=FUTURUM (budoucí čas) |url=https://www.czechency.org/slovnik/FUTURUM |website=Nový encyklopedický slovník češtiny |access-date=18 August 2019}}</ref>
+
+====Mood====
+
+{|class="wikitable floatright"
+|+Conditional form of ''[[wikt:koupit|koupit]]'' (to buy)
+|-
+!Person
+!Singular
+!Plural
+|-
+!1st
+| ''koupil/a bych''
+| ''koupili/y bychom''
+|-
+!2nd
+| ''koupil/a bys''
+| ''koupili/y byste'' 
+|-
+!3rd
+| ''koupil/a/o by''
+| ''koupili/y/a by''
+|}
+
+Czech verbs have three [[grammatical mood]]s: [[indicative]], [[imperative mood|imperative]] and [[conditional mood|conditional]].<ref name="Rothstein 2010 359">{{Harvnb|Rothstein|Thieroff|2010|p=359}}</ref> The imperative mood is formed by adding specific endings for each of three person–number categories: ''-Ø/-i/-ej'' for second-person singular, ''-te/-ete/-ejte'' for second-person plural and ''-me/-eme/-ejme'' for first-person plural.<ref>{{Harvnb|Naughton|2005|p=157}}</ref> Imperatives are usually expressed using perfective verbs if positive and imperfective verbs if negative.<ref>{{Harvnb|Naughton|2005|p=159}}</ref> The conditional mood is formed with a conditional [[auxiliary verb]] after the participle ending in -l which is used to form the past tense. This mood indicates hypothetical events and can also be used to express wishes.<ref>{{Harvnb|Naughton|2005|pp=152–154}}</ref>
+
+====Verb classes====
+{{main|Morphological classification of Czech verbs}}
+
+Most Czech verbs fall into one of five [[morphological classification of Czech verbs|classes]], which determine their conjugation patterns. The future tense of ''být'' would be classified as a Class I verb because of its endings. Examples of the present tense of each class and some common irregular verbs follow in the tables below:<ref>{{Harvnb|Naughton|2005|pp=136–140}}</ref>
+
+{{col-begin}}
+{{col-2}}
+{|class=wikitable
+|-
+!
+!Class I
+!Class II
+!Class III
+!Class IV
+!Class V
+|-
+!Definition 
+|to carry
+|to print
+|to wander
+|to suffer
+|to do, to make
+|-
+!Infinitive
+|''nést''
+|''tisknout''
+|''putovat''
+|''trpět''
+|''dělat''
+|-
+!1st p. sg.
+|''nesu''
+|''tisknu''
+|''putuji''
+|''trpím''
+|''dělám''
+|-
+!2nd p. sg.
+|''neseš''
+|''tiskneš''
+|''putuješ''
+|''trpíš''
+|''děláš''
+|-
+!3rd p. sg.
+|''nese''
+|''tiskne''
+|''putuje''
+|''trpí''
+|''dělá''
+|-
+!1st p. pl.
+|''neseme''
+|''tiskneme''
+|''putujeme''
+|''trpíme''
+|''děláme''
+|-
+!2nd p. pl.
+|''nesete''
+|''tisknete''
+|''putujete''
+|''trpíte''
+|''děláte''
+|-
+!3rd p. pl.
+|''nesou''
+|''tisknou''
+|''putují''
+|''trpí''
+|''dělají''
+|}
+{{col-2}}
+{|class=wikitable
+|+Irregular verbs
+!Definition 
+|to be
+|to want
+|to eat
+|to know
+|-
+!Infinitive
+|''být''
+|''chtít''
+|''jíst''
+|''vědět''
+|-
+!1st p. sg.
+|''jsem''
+|''chci''
+|''jím''
+|''vím''
+|-
+!2nd p. sg.
+|''jsi''
+|''chceš''
+|''jíš''
+|''víš''
+|-
+!3rd p. sg.
+|''je''
+|''chce''
+|''jí''
+|''ví''
+|-
+!1st p. pl.
+|''jsme''
+|''chceme''
+|''jíme''
+|''víme''
+|-
+!2nd p. pl.
+|''jste''
+|''chcete''
+|''jíte''
+|''víte''
+|-
+!3rd p. pl.
+|''jsou''
+|''chtějí''
+|''jedí''
+|''vědí''
+|}
+{{col-end}}
+
+==Orthography==
+[[File:Psací písmo.gif|thumb|right|upright=1.35|The handwritten Czech alphabet, without a Q, W and X]]
+{{main|Czech orthography}}
+{{see also|Czech Braille}}
+Czech has one of the most [[Phonemic orthography|phonemic orthographies]] of all European languages. Its alphabet contains 42 [[grapheme]]s, most of which correspond to individual [[phoneme]]s,<ref>{{cite book |last1=Neustupný |first1=J.V. |last2=Nekvápil |first2=Jiří |author1-link=Language Management in the Czech Republic |editor1-last=Kaplan |editor1-first=Robert B. |editor2-last=Baldauf |editor2-first=Richard B. Jr. |title=Language Planning and Policy in Europe |pages=78–79}}</ref> and only contains one [[digraph (orthography)|digraph]]: ''ch'', which follows ''h'' in the alphabet.<ref>{{Harvnb|Pansofia|1993|p=11}}</ref> The characters ''q'', ''w'' and ''x'' appear only in foreign words.<ref name="Harkins 1952 1">{{Harvnb|Harkins|1952|p=1}}</ref> The [[háček]] (ˇ) is used with certain letters to form new characters: ''[[š]]'', ''[[ž]]'', and ''[[č]]'', as well as ''[[ň]]'', ''[[ě]]'', ''[[ř]]'', ''[[ť]]'', and ''[[ď]]'' (the latter five uncommon outside Czech). The last two letters are sometimes written with a comma above (ʼ, an abbreviated háček) because of their height.<ref>{{Harvnb|Harkins|1952|pp=6–8}}</ref> Czech orthography has influenced the orthographies of other Balto-Slavic languages and some of its characters have been adopted for [[transliteration of Cyrillic]].<ref>{{cite book |last1=Berger |first1=Tilman |editor1-last=Baddeley |editor1-first=Susan |editor2-last=Voeste |editor2-first=Anja |title=Orthographies in Early Modern Europe |page=255 |chapter=Religion and diacritics: The case of Czech orthography}}</ref>
+
+Czech orthography reflects [[vowel length]]; long vowels are indicated by an [[acute accent]] or, in the case of the character ''ů'', a [[ring (diacritic)|ring]]. Long ''u'' is usually written ''ú'' at the beginning of a word or morpheme (''úroda'', ''neúrodný'') and ''ů'' in the middle,<ref>{{Harvnb|Harkins|1952|p=7}}</ref> except for loanwords (''skútr'') or onomatopoeia (''bú'').<ref>{{Harvnb|Pansofia|1993|p=26}}</ref> Long vowels and ''ě'' are not considered separate letters in the alphabetical order.<ref>{{Harvnb|Hajičová|1986|p=31}}</ref> The character ''ó'' exists only in loanwords and [[onomatopoeia]].<ref>{{Harvnb|Harkins|1952|p=8}}</ref>
+
+Czech [[typography|typographical]] features not associated with phonetics generally resemble those of most European languages that use the [[Latin script]], including English. [[Proper noun]]s, [[honorific]]s, and the first letters of quotations are [[capitalization|capitalized]], and [[punctuation]] is typical of other Latin European languages. Ordinal numbers (1st) use a point, as in German (1.). The Czech language uses a decimal comma instead of a decimal point. When writing a long number, spaces between every three digits, including those in decimal places, may be used for better orientation in handwritten texts. The number 1,234,567.89101 may be written as 1234567,89101 or 1 234 567,891 01.<ref>[http://prirucka.ujc.cas.cz/?id=791#nadpis1 Členění čísel], Internetová jazyková příručka, ÚJČ AVČR</ref> In [[proper noun]] phrases (except personal and settlement names), only the first word and proper nouns inside such phrases are capitalized (''Pražský hrad'', [[Prague Castle]]).<ref>{{Harvnb|Naughton|2005|p=11}}</ref><ref>{{Harvnb|Pansofia|1993|p=34}}</ref>
+
+==Varieties==
+{{further|Czech–Slovak languages}}
+[[File:Antonín Machek - Portrait of Josef Jungmann.jpg|thumb|right|upright|[[Josef Jungmann]], whose Czech–German dictionary laid the foundations for modern Standard Czech]] 
+The modern literary standard and prestige variety, known as "Standard Czech" ({{lang|cs|spisovná čeština}}) is based on the standardization during the [[Czech National Revival]] in the 1830s, significantly influenced by [[Josef Jungmann]]'s Czech–German dictionary published during 1834–1839. Jungmann used vocabulary of the [[Bible of Kralice]] (1579–1613) period and of the language used by his contemporaries. He borrowed words not present in Czech from other Slavic languages or created neologisms.<ref name="Czech Literature">{{cite web|last=Naughton|first=James|title=CZECH LITERATURE, 1774 TO 1918|url=http://users.ox.ac.uk/~tayl0010/lit_to_1918.htm|publisher=Oxford University|access-date=25 October 2012|url-status=dead|archive-url=https://web.archive.org/web/20120612013916/http://users.ox.ac.uk/~tayl0010/lit_to_1918.htm|archive-date=12 June 2012}}</ref> Standard Czech is the formal register of the language which is used in official documents, formal literature, newspaper articles, education and occasionally public speeches.<ref>{{Harvnb|Tahal|2010|p=245}}</ref> It is codified by the [[Czech Language Institute]], who publish occasional reforms to the codification. The most recent reform took place in 1993.<ref>{{Harvnb|Tahal|2010|p=252}}</ref> The term {{lang|cs|hovorová čeština}} ({{lit|Colloquial Czech}}) is sometimes used to refer to the spoken variety of standard Czech.<ref>{{cite web |last1=Hoffmanová |first1=Jana |title=HOVOROVÝ STYL |url=https://www.czechency.org/slovnik/HOVOROV%C3%9D%20STYL |website=Nový encyklopedický slovník češtiny |access-date=21 August 2019}}</ref>
+
+The most widely spoken vernacular form of the language is called "Common Czech" ({{lang|cs|obecná čeština}}), an [[interdialect]] influenced by spoken Standard Czech and the Central Bohemian dialects of the [[Prague]] region. Other Bohemian regional dialects have become marginalized, while [[Moravian dialects]] remain more widespread and diverse, with a political movement for Moravian linguistic revival active since the 1990s.
+
+These varieties of the language (Standard Czech, spoken/colloquial Standard Czech, Common Czech, and regional dialects) form a [[Style (sociolinguistics)|stylistic continuum]], in which contact between varieties of a similar prestige influences change within them.<ref>{{Harvnb|Koudela|1964|p=136}}</ref>
+
+===Common Czech===
+[[File:Dialects of the Czech language.jpg|thumb|upright=1.3|Dialects of Czech, [[Moravian dialects|Moravian]], [[Lach dialects|Lach]], and [[Cieszyn Silesian]] spoken in the Czech Republic. The border areas, where German was formerly spoken, are now mixed.]]
+The main Czech vernacular, spoken primarily in [[Bohemia]] including the capital [[Prague]], is known as Common Czech (''obecná čeština''). This is an academic distinction; most Czechs are unaware of the term or associate it with deformed or "incorrect" Czech.<ref name="Wilson 2010 21">{{Harvnb|Wilson|2009|p=21}}</ref> Compared to Standard Czech, Common Czech is characterized by simpler inflection patterns and differences in sound distribution.<ref name="sciences">{{cite web|url=http://cat.inist.fr/?aModele=afficheN&cpsidt=15079160|publisher=[[Academy of Sciences of the Czech Republic]]|date=2003|title=The present-day situation of Czech|last=Daneš|first=František|access-date=10 August 2014|url-access=subscription }}</ref>
+
+Common Czech is distinguished from spoken/colloquial Standard Czech ({{lang|cs|hovorová čeština}}), which is a [[style (sociolinguistics)|stylistic variety]] within standard Czech.<ref name=:0>{{cite journal | language=pl| journal=Bohemistyka | issn=1642-9893 | year=2006 | number=1 | last=Balowska | first= Grażyna | location=Opole | url=http://www.bohemistyka.pl/artykuly/2006/ART_Balowska_01.pdf |archive-url=https://web.archive.org/web/20190505182653/http://www.bohemistyka.pl/artykuly/2006/ART_Balowska_01.pdf |archive-date=5 May 2019 |url-status=live | title=Problematyka czeszczyzny potocznej nieliterackiej (tzw. obecná čeština) na łamach czasopisma "Naše řeč" w latach dziewięćdziesiątych}}</ref><ref>{{cite journal| journal=Bohemistyka | issn=1642-9893 | year=2015 | number=2 | last=Štěpán | first= Josef | location=Prague | url=http://bohemistyka.pl/artykuly/2015/Stepan.pdf |archive-url=https://web.archive.org/web/20190510143346/http://bohemistyka.pl/artykuly/2015/Stepan.pdf |archive-date=10 May 2019 |url-status=live | title=Hovorová spisovná čeština | language=cs}}</ref> [[Tomasz Kamusella]] defines the spoken variety of Standard Czech as a compromise between Common Czech and the written standard,<ref>{{cite book|page=506|title=The Politics of Language and Nationalism in Modern Central Europe|first=Tomasz|last=Kamusella|publisher=Springer|date=2008|isbn=9780230583474}}</ref> while [[Miroslav Komárek]] calls Common Czech an intersection of spoken Standard Czech and regional dialects.<ref name="kom117">{{Harvnb|Komárek|2012|p=117}}</ref>
+
+Common Czech has become ubiquitous in most parts of the Czech Republic since the later 20th century. It is usually defined as an [[interdialect]] used in common speech in [[Bohemia]] and western parts of [[Moravia]] (by about two thirds of all inhabitants of the [[Czech Republic]]). Common Czech is not [[codification (linguistics)|codified]], but some of its elements have become adopted in the written standard. Since the second half of the 20th century, Common Czech elements have also been spreading to regions previously unaffected, as a consequence of media influence. Standard Czech is still the norm for politicians, businesspeople and other Czechs in formal situations, but Common Czech is gaining ground in journalism and the mass media.<ref name="sciences"/> The colloquial form of Standard Czech finds limited use in daily communication due to the expansion of the Common Czech interdialect.<ref name=:0/> It is sometimes defined as a theoretical construct rather than an actual tool of colloquial communication, since in casual contexts, the non-standard interdialect is preferred.<ref name=:0/>
+
+Common Czech [[phonology]] is based on that of the Central Bohemian dialect group, which has a slightly different set of vowel phonemes to Standard Czech.<ref name="kom117" /> The phoneme /ɛː/ is peripheral and usually merges with /iː/, e.g. in ''mal'''ý''' město'' (small town), ''plam'''í'''nek'' (little flame) and ''l'''í'''tat'' (to fly), and a second native diphthong /ɛɪ̯/ occurs, usually in places where Standard Czech has /iː/, e.g. ''mal'''ej''' dům'' (small house), ''ml'''ej'''n'' (mill), ''pl'''ej'''tvat'' (to waste), ''b'''ej'''t'' (to be).<ref>{{Harvnb|Komárek|2012|p=116}}</ref> In addition, a prothetic ''v-'' is added to most words beginning with ''o-'', such as '''''v'''otevřít '''v'''okno'' (to open the window).<ref name="tahal" />
+
+Non-standard [[Morphology (linguistics)|morphological]] features that are more or less common among all Common Czech speakers include:<ref name="tahal">{{Harvnb|Tahal|2010|pp=245–253}}</ref>
+* unified [[plural]] [[Ending (linguistics)|ending]]s of [[adjective]]s: ''mal'''ý''' lidi'' (small people), ''mal'''ý''' ženy'' (small women), ''mal'''ý''' města'' (small towns) – standard: ''malí lidé, malé ženy, malá města;''
+* unified [[instrumental case|instrumental]] [[Ending (linguistics)|ending]] ''-ma'' in [[plural]]: ''s tě'''ma''' dobrej'''ma''' lid'''ma''', žena'''ma''', chlapa'''ma''', města'''ma''''' (with the good people, women, guys, towns) – standard: ''s těmi dobrými lidmi, ženami, chlapy, městy.'' In essence, this form resembles the form of the [[Dual (grammatical number)|dual]], which was once a productive form, but now is almost extinct and retained in a lexically specific set of words. In Common Czech the ending became productive again around the 17th century, but used as a substitute for a regular plural form.<ref>{{Harvnb|Komárek|2012|pp=179–180}}</ref> 
+* omission of the syllabic ''-l'' in the masculine ending of past tense verbs: ''řek'' (he said), ''moh'' (he could), ''pích'' (he pricked) – standard: ''řekl, mohl, píchl.''
+* tendency of merging the locative singular masculine/neuter for adjectives with the instrumental by changing the locative ending ''-ém'' to ''-ým'' and then shortening the vowel: ''mladém'' (standard locative), ''mladým'' (standard instrumental) > ''mladým'' (Common Czech locative), ''mladym'' (Common Czech instrumental) > ''mladym'' (Common Czech locative/instrumental with shortening).<ref>{{cite journal|publisher=Slavica Publishers|date=2005|title=Literary Czech, Common Czech, and the Instrumental Plural|last=Cummins|first=George M.|journal = Journal of Slavic Linguistics|volume = 13|issue = 2|pages = 271–297|jstor = 24599659}}</ref>
+
+Examples of declension (Standard Czech is added in italics for comparison):
+
+{|class=wikitable
+|-
+!&nbsp;
+!&nbsp;
+!Masculine<br>animate
+!Masculine<br>inanimate
+!Feminine
+!Neuter
+|-
+!rowspan="7"|Sg.
+!Nominative
+|mlad'''ej''' člověk<br />''mladý člověk''
+|mlad'''ej''' stát<br />''mladý stát''
+|mladá žena<br />''mladá žena''
+|mlad'''ý''' zvíře<br />''mladé zvíře''
+|-
+!Genitive
+|mlad'''ýho''' člověka<br />''mladého člověka''
+|mlad'''ýho''' státu<br />''mladého státu''
+|mlad'''ý''' ženy<br />''mladé ženy''
+|mlad'''ýho''' zvířete<br />''mladého zvířete''
+|-
+!Dative
+|mlad'''ýmu''' člověkovi<br />''mladému člověku''
+|mlad'''ýmu''' státu<br />''mladému státu''
+|mlad'''ý''' ženě<br />''mladé ženě''
+|mlad'''ýmu''' zvířeti<br />''mladému zvířeti''
+|-
+!Accusative
+|mlad'''ýho''' člověka<br />''mladého člověka''
+|mlad'''ej''' stát<br />''mladý stát''
+|mladou ženu<br />''mladou ženu''
+|mlad'''ý''' zvíře<br />''mladé zvíře''
+|-
+!Vocative
+|mlad'''ej''' člověče!<br />''mladý člověče!''
+|mlad'''ej''' státe!<br />''mladý státe!''
+|mladá ženo!<br />''mladá ženo!''
+|mlad'''ý''' zvíře!<br />''mladé zvíře!''
+|-
+!Locative
+|mlad'''ým''' člověkovi<br />''mladém člověkovi''
+|mlad'''ým''' státě<br />''mladém státě''
+|mlad'''ý''' ženě<br />''mladé ženě''
+|mlad'''ým''' zvířeti<br />''mladém zvířeti''
+|-
+!Instrumental
+|mlad'''ym''' člověkem<br />''mladým člověkem''
+|mlad'''ym''' státem<br />''mladým státem''
+|mladou ženou<br />''mladou ženou''
+|mlad'''ym''' zvířetem<br />''mladým zvířetem''
+|-
+!rowspan="7"|Pl.
+!Nominative
+|mlad'''ý''' lidi<br />''mladí lidé''
+|mlad'''ý''' státy<br />''mladé státy''
+|mlad'''ý''' ženy<br />''mladé ženy''
+|mlad'''ý''' zvířata<br />''mladá zvířata''
+|-
+!Genitive
+|mlad'''ejch''' lidí<br />''mladých lidí''
+|mlad'''ejch''' států<br />''mladých států''
+|mlad'''ejch''' žen<br />''mladých žen''
+|mlad'''ejch''' zvířat<br />''mladých zvířat''
+|-
+!Dative
+|mlad'''ejm''' lidem<br />''mladým lidem''
+|mlad'''ejm''' státům<br />''mladým státům''
+|mlad'''ejm''' ženám<br />''mladým ženám''
+|mlad'''ejm''' zvířatům<br />''mladým zvířatům''
+|-
+!Accusative
+|mlad'''ý''' lidi<br />''mladé lidi''
+|mlad'''ý''' státy<br />''mladé státy''
+|mlad'''ý''' ženy<br />''mladé ženy''
+|mlad'''ý''' zvířata<br />''mladá zvířata''
+|-
+!Vocative
+|mlad'''ý''' lidi!<br />''mladí lidé!''
+|mlad'''ý''' státy!<br />''mladé státy!''
+|mlad'''ý''' ženy!<br />''mladé ženy!''
+|mlad'''ý''' zvířata!<br />''mladá zvířata!''
+|-
+!Locative
+|mlad'''ejch''' lidech<br />''mladých lidech''
+|mlad'''ejch''' státech<br />''mladých státech''
+|mlad'''ejch''' ženách<br />''mladých ženách''
+|mlad'''ejch''' zvířatech<br />''mladých zvířatech''
+|-
+!Instrumental
+|mlad'''ejma''' lidma<br />''mladými lidmi''
+|mlad'''ejma''' státama<br />''mladými státy''
+|mlad'''ejma''' ženama<br />''mladými ženami''
+|mlad'''ejma''' zvířatama<br />''mladými zvířaty''
+|}
+
+''mladý člověk – young man/person, mladí lidé – young people, mladý stát – young state, mladá žena – young woman, mladé zvíře – young animal''
+
+===Bohemian dialects===
+[[File:Getrzich slatinskey.png|thumb|right|A headstone in [[Český Krumlov]] from 1591. The inscription features the distinctive Bohemian diphthong &nbsp; {{IPA|/ɛɪ̯/}}, spelled {{angle bracket|ey}}.]]
+{{further|Chod dialect}}
+Apart from the Common Czech vernacular, there remain a variety of other Bohemian dialects, mostly in marginal rural areas. Dialect use began to weaken in the second half of the 20th century, and by the early 1990s regional dialect use was stigmatized, associated with the shrinking lower class and used in literature or other media for comedic effect. Increased travel and media availability to dialect-speaking populations has encouraged them to shift to (or add to their own dialect) Standard Czech.<ref>{{Harvnb|Eckert|1993|pp=143–144}}</ref>
+
+The [[Czech Statistical Office]] in 2003 recognized the following Bohemian dialects:<ref name="map">{{cite web|title=Map of Czech Dialects|url=http://www.osu.cz/fpd/kcd/dokumenty/cestinapositi/kuldanova/mapka_01.htm|date=2003|publisher=Český statistický úřad ([[Czech Statistical Office]])|access-date=26 July 2014|archive-url=https://web.archive.org/web/20121201000809/http://www.osu.cz/fpd/kcd/dokumenty/cestinapositi/kuldanova/mapka_01.htm|archive-date=1 December 2012|url-status=dead}}</ref>
+*''Nářečí středočeská'' (Central Bohemian dialects)
+*''Nářečí jihozápadočeská'' (Southwestern Bohemian dialects)
+:*''Podskupina chodská'' ([[Chod dialect|Chod]] subgroup)
+:*''Podskupina doudlebská'' ([[Doudleby]] subgroup)
+*''Nářečí severovýchodočeská'' (Northeastern Bohemian dialects)
+:*''Podskupina podkrknošská'' ([[Krkonoše]] subgroup)
+
+===Moravian dialects===
+{{main|Moravian dialects}}
+{{see also|Lach dialects|Cieszyn Silesian dialect}}
+[[File:Moravian dialects.png|thumb|right|upright=1.25|Traditional territory of the main dialect groups of Moravia and Czech Silesia. Green: Central Moravian, Red: East Moravian, Yellow: [[Lach dialects|Lach (Silesian)]], Pink: [[Cieszyn Silesian]], Orange: Bohemian–Moravian transitional dialects, Purple: Mixed areas]]
+The Czech dialects spoken in [[Moravia]] and [[Silesia]] are known as [[Moravian dialects|Moravian]] (''moravština''). In the [[Austro-Hungarian Empire]], "Bohemian-Moravian-Slovak" was a language citizens could register as speaking (with German, Polish and several others).<ref>{{Harvnb|Kortmann|van der Auwera|2011|p=714}}</ref> In the 2011 census, where respondents could optionally specify up to two first languages,<ref>{{cite news |last1=Zvoníček |first1=Jiří |title=Sčítání lidu a moravská národnost. Přihlásíte se k ní?  |url=https://kromerizsky.denik.cz/ctenar-reporter/scitani-lidu-a-moravska-narodnost-prihlasite-se-k-ni-20210330.html |newspaper=Kroměřížský Deník |date=30 March 2021 |access-date=30 September 2021}}</ref> 62,908 Czech citizens specified Moravian as their first language and 45,561 specified both Moravian and Czech.<ref name="obyvatelstvo">{{cite web|url=http://vdb.czso.cz/sldbvo/#!stranka=podle-tematu&tu=30629&th=&v=&vo=H4sIAAAAAAAAAFvzloG1uIhBMCuxLFGvtCQzR88jsTjDN7GAlf3WwcNiCReZGZjcGLhy8hNT3BKTS_KLPBk4SzKKUosz8nNSKgrsHRhAgKecA0gKADF3CQNnaLBrUIBjkKNvcSFDHQMDhhqGCqCiYA__cLCiEgZGvxIGdg9_Fz__EMeCEgY2b38XZ89gIIvLxTHEP8wx2NEFJM4ZHOIY5u_t7-MJ1OIP5IdEBkT5OwU5RgH5IUB9fo4ePq4uEPNYw1yDolzhPstJzEvX88wrSU1PLRJ6tGDJ98Z2CyYGRk8G1rLEnNLUiiIGAYQ6v9LcpNSitjVTZbmnPOhmArq34D8QlDDwAG10C_KFWcoe4ugU6uPtWMLA4eni6hcSEAZ0FYe_k3OQmaGJUwUA4lOtR1sBAAA.&vseuzemi=null&void=|publisher=Český statistický úřad (Czech Statistical Office)|date=26 March 2011|access-date=26 July 2014|title=Tab. 614b Obyvatelstvo podle věku, mateřského jazyka a pohlaví (Population by Age, Mother Tongue, and Gender)|language=cs}}</ref>
+
+Beginning in the sixteenth century, some varieties of Czech resembled Slovak;<ref name="tuebingen"/> the southeastern Moravian dialects form a continuum between the Czech and Slovak languages,<ref name="Kortmann Auwera 516">{{Harvnb|Kortmann|van der Auwera|2011|p=516}}</ref> using the same declension patterns for nouns and pronouns and the same verb conjugations as Slovak.<ref name="tartu">{{cite web|last=Šustek|first=Zbyšek|title=Otázka kodifikace spisovného moravského jazyka (The question of codifying a written Moravian language)|publisher=[[University of Tartu]]|year=1998|url=http://www.britskelisty.cz/9809/19980914d.html|language=cs|access-date=21 July 2014}}</ref>
+
+A popular misconception holds that eastern Moravian dialects are closer to Slovak than Czech, but this is incorrect; in fact, the opposite is true, and certain dialects in far western Slovakia exhibit features more akin to standard Czech than to standard Slovak.<ref name="rejzek" />
+
+The [[Czech Statistical Office]] in 2003 recognized the following Moravian dialects:<ref name="map"/>
+*''Nářečí českomoravská'' (Bohemian–Moravian dialects)
+*''Nářečí středomoravská'' (Central Moravian dialects)
+:*''Podskupina tišnovská'' ([[Tišnov]] subgroup)
+*''Nářečí východomoravská'' (Eastern Moravian dialects)
+:*''Podskupina slovácká'' ([[Moravian Slovakia|Moravian Slovak]] subgroup)
+:*''Podskupina valašská'' ([[Moravian Wallachia]]n subgroup)
+*''Nářečí slezská'' (Silesian dialects)
+
+===Sample===
+In a 1964 textbook on Czech [[dialectology]], Břetislav Koudela used the following sentence to highlight phonetic differences between dialects:<ref>{{Harvnb|Koudela|1964|p=173}}</ref>
+
+{|border="0"
+|-
+| Standard Czech: || ''D'''ej''' m'''ou'''k'''u''' z'''e''' m'''lý'''na na voz'''í'''k.''
+|-
+| Common Czech: || ''D'''ej''' m'''ou'''k'''u''' z'''e''' m'''lej'''na na voz'''ej'''k.''
+|-
+| Central Moravian: || ''D'''é''' m'''ó'''k'''o''' z'''e''' m'''lé'''na na voz'''é'''k.''
+|-
+| Eastern Moravian: || ''D'''aj''' m'''ú'''k'''u''' z'''e''' m'''łý'''na na voz'''í'''k.''
+|-
+| Silesian: || ''D'''aj''' m'''u'''k'''u''' z'''e''' m'''ły'''na na voz'''i'''k.''
+|-
+| Slovak: || ''D'''aj''' m'''ú'''k'''u''' z m'''ly'''na na voz'''í'''k.''
+|-
+| English: || Put the flour from the mill into the cart.
+|}
+
+===Mutual intelligibility with Slovak===
+Czech and Slovak have been considered [[mutual intelligibility|mutually intelligible]]; speakers of either language can communicate with greater ease than those of any other pair of West Slavic languages.<ref name="Golubovic">{{Cite journal |last1=Golubović |first1=Jelena |last2=Gooskens |first2=Charlotte |year=2015 |title=Mutual intelligibility between West and South Slavic languages |url=https://pure.rug.nl/ws/files/25093608/golubovic_and_gooskens_2015.pdf |journal=Russian Linguistics |volume=39 |issue=3 |pages=351–373 |doi=10.1007/s11185-015-9150-9 |doi-access=free}}</ref> Following the 1993 [[dissolution of Czechoslovakia]], mutual intelligibility declined for younger speakers, probably because Czech speakers began to experience less exposure to Slovak and vice versa.{{sfn |Short |2009 |p=306}} A 2015 study involving participants with a mean age of around 23 nonetheless concluded that there remained a high degree of mutual intelligibility between the two languages.<ref name="Golubovic" /> Grammatically, both languages share a common syntax.<ref name="tuebingen"/>
+
+One study showed that Czech and Slovak [[lexicon]]s differed by 80 percent, but this high percentage was found to stem primarily from differing orthographies and slight inconsistencies in morphological formation;<ref>{{Harvnb|Esposito|2011|p=82}}</ref> Slovak morphology is more regular (when changing from the [[nominative case|nominative]] to the [[locative case]], ''[[Prague|Pra'''h'''a]]'' becomes ''Pra'''z'''e'' in Czech and ''Pra'''h'''e'' in Slovak). The two lexicons are generally considered similar, with most differences found in colloquial vocabulary and some scientific terminology. Slovak has slightly more borrowed words than Czech.<ref name="tuebingen"/>
+
+The similarities between Czech and Slovak led to the languages being considered a single language by a group of 19th-century scholars who called themselves "Czechoslavs" (''Čechoslované''), believing that the peoples were connected in a way which excluded [[German Bohemians]] and (to a lesser extent) [[Hungarian people|Hungarians]] and other Slavs.<ref>{{Harvnb|Maxwell|2009|pp=101–105}}</ref> During the [[First Czechoslovak Republic]] (1918–1938), although "Czechoslovak" was designated as the republic's official language, both Czech and Slovak written standards were used. Standard written Slovak was partially modeled on literary Czech, and Czech was preferred for some official functions in the Slovak half of the republic. Czech influence on Slovak was protested by Slovak scholars, and when Slovakia broke off from Czechoslovakia in 1938 as the [[Slovak Republic (1939–1945)|Slovak State]] (which then aligned with [[Nazi Germany]] in [[World War II]]), literary Slovak was deliberately distanced from Czech. When the [[Axis powers]] lost the war and Czechoslovakia reformed, Slovak developed somewhat on its own (with Czech influence); during the [[Prague Spring]] of 1968, Slovak gained independence from (and equality with) Czech,<ref name="tuebingen"/> due to the transformation of Czechoslovakia from a unitary state to a federation. Since the dissolution of Czechoslovakia in 1993, "Czechoslovak" has referred to improvised [[pidgin]]s of the languages which have arisen from the decrease in mutual intelligibility.<ref name="cscs">{{cite journal |last=Nábělková |first=Mira |date=January 2007 |title=Closely-related languages in contact: Czech, Slovak, "Czechoslovak" |url=https://www.researchgate.net/publication/240751085 |url-access=subscription |access-date=18 August 2014 |journal=International Journal of the Sociology of Language |issue=183 |doi=10.1515/IJSL.2007.004}}</ref>
+
+==Vocabulary==
+{{see also|List of English words of Czech origin}}
+Czech vocabulary derives primarily from Slavic, Baltic and other Indo-European roots. Although most verbs have Balto-Slavic origins, pronouns, prepositions and some verbs have wider, Indo-European roots.<ref>{{Harvnb|Mann|1957|p=159}}</ref> Some loanwords have been restructured by [[folk etymology]] to resemble native Czech words (e.g. ''[[wikt:hřbitov|hřbitov]]'', "graveyard" and ''[[wikt:listina|listina]]'', "list").<ref>{{Harvnb|Mann|1957|p=160}}</ref>
+
+Most Czech loanwords originated in one of two time periods. Earlier loanwords, primarily from German,<ref name="Mathesius 2013 20">{{Harvnb|Mathesius|2013|p=20}}</ref> [[Greek language|Greek]] and Latin,<ref name="Sussex 2011 101">{{Harvnb|Sussex|Cubberley|2011|p=101}}</ref> arrived before the Czech National Revival. More recent loanwords derive primarily from English and [[French language|French]],<ref name="Mathesius 2013 20"/> and also from [[Hebrew language|Hebrew]], [[Arabic language|Arabic]] and [[Persian language|Persian]]. Many Russian loanwords, principally animal names and naval terms, also exist in Czech.<ref>{{Harvnb|Mann|1957|pp=159–160}}</ref>
+
+Although older German loanwords were colloquial, recent borrowings from other languages are associated with high culture.<ref name="Mathesius 2013 20"/> During the nineteenth century, words with Greek and Latin roots were rejected in favor of those based on older Czech words and common Slavic roots; "music" is ''[[wikt:muzyka|muzyka]]'' in Polish and ''музыка'' (''muzyka'') in Russian, but in Czech it is ''[[wikt:hudba|hudba]]''.<ref name="Sussex 2011 101"/> Some Czech words have been borrowed as loanwords into [[List of English words of Czech origin|English]] and other languages—for example, ''[[robot]]'' (from ''[[wikt:robota|robota]]'', "labor")<ref>{{cite dictionary|url=http://www.etymonline.com/index.php?term=robot|dictionary=Online Etymology Dictionary|title=robot (n.)|last=Harper|first=Douglas|access-date=22 July 2014}}</ref> and ''[[polka]]'' (from ''[[wikt:polka|polka]]'', "[[Polish people|Polish]] woman" or from "půlka" "half").<ref>{{cite dictionary|url=http://www.etymonline.com/index.php?term=polka|dictionary=Online Etymology Dictionary|title=polka (n.)|last=Harper|first=Douglas|access-date=22 July 2014}}</ref>
+
+==See also==
+{{Portal|Czech Republic|Language}}
+* [[Czech Centers]]
+* [[Czech name]]
+* [[Czech Sign Language]]
+* [[wikt:Wiktionary:Swadesh lists for Slavic languages|Swadesh list of Slavic words]]
+
+==Notes==
+{{Reflist|30em}}
+
+==References==
+*{{cite book|title=Origins of the Czech National Renascence|last=Agnew|first=Hugh LeCaine|publisher=[[University of Pittsburgh]] Press|date=1994|isbn=978-0-8229-8549-5}}
+*{{cite book|last=Dankovičová|first=Jana|chapter=Czech|title=Handbook of the International Phonetic Association|date=1999|isbn=978-0-521-63751-0|edition=9th|publisher=International Phonetic Association/Cambridge University Press}}
+*{{cite book|title=Beginner's Czech|last1=Cerna|first1=Iva|last2=Machalek|first2=Jolana|date=2007|publisher=[[Hippocrene Books]]|isbn=978-0-7818-1156-9}}
+*{{cite book|title=Studies in Functional Stylistics|last1=Chloupek|first1=Jan|last2=Nekvapil|first2=Jiří|publisher=John Benjamins Publishing Company|date=1993|isbn=978-90-272-1545-1}}
+*{{cite book|last=Eckert|first=Eva|title=Varieties of Czech: Studies in Czech Sociolinguistics|isbn=978-90-5183-490-1|date=1993|publisher=Editions Rodopi}}
+*{{cite book|title=Analysis of Verbal and Nonverbal Communication and Enactment: The Processing Issues|isbn=978-3-642-25774-2|date=2011|publisher=Springer Press|last=Esposito|first=Anna}}
+*{{cite book|last=Hajičová|first=Eva|title=Prague Studies in Mathematical Linguistics|edition=9th|date=1986|publisher=John Benjamins Publishing|isbn=978-90-272-1527-7}}
+*{{cite book|title=A Modern Czech Grammar|last=Harkins|first=William Edward|date=1952|publisher=King's Crown Press ([[Columbia University]])}}
+*{{cite book|last1=Komárek|first1=Miroslav|title=Dějiny českého jazyka|date=2012|publisher=Host|location=Brno|isbn=978-80-7294-591-7|language=cs}}
+*{{cite book|title=The Languages and Linguistics of Europe: A Comprehensive Guide (World of Linguistics)|last1=Kortmann|first1=Bernd|last2=van der Auwera|first2=Johan|isbn=978-3-11-022025-4|date=2011|publisher=Mouton De Gruyter}}
+*{{cite book|last=Koudela|first=Břetislav|display-authors=et al|title=Vývoj českého jazyka a dialektologie|year=1964|publisher=Československé státní pedagogické nakladatelství|language=cs}}
+*{{cite book|title=N.S. Trubetzkoy: Studies in General Linguistics and Language Structure|last1=Liberman|first1=Anatoly|last2=Trubetskoi|first2=Nikolai S.|isbn=978-0-8223-2299-3|publisher=[[Duke University]] Press|date=2001}}
+*{{cite book|title=Czech Historical Grammar|date=1957|last=Mann|first=Stuart Edward|publisher=Helmut Buske Verlag|url-access=registration|url=https://archive.org/details/czechhistoricalg00mann}}
+*{{cite book|title=A Functional Analysis of Present Day English on a General Linguistic Basis|last=Mathesius|first=Vilém|date=2013|publisher=De Gruyter|isbn=978-90-279-3077-4}}
+*{{cite book|title=Choosing Slovakia: Slavic Hungary, the Czechoslovak Language and Accidental Nationalism|last=Maxwell|first=Alexander|date=2009|isbn=978-1-84885-074-3|publisher=Tauris Academic Studies}}
+*{{cite book|title=Czech: An Essential Grammar|last=Naughton|first=James|date=2005|publisher=Routledge Press|isbn=978-0-415-28785-2}}
+*{{cite book|author=Pansofia|title=Pravidla českého pravopisu|date=1993|publisher=Ústav pro jazyk český AV ČR|isbn=978-80-901373-6-3|language=cs}}
+*{{cite book|title=Natural Language Processing for Historical Texts|last=Piotrowski|first=Michael|date=2012|publisher=Morgan & Claypool Publishers|isbn=978-1-60845-946-9}}
+*{{cite book|last=Qualls|first=Eduard J.|title=The Qualls Concise English Grammar|date=2012|publisher=Danaan Press|isbn=978-1-890000-09-7}}
+*{{cite book|last1=Rothstein|first1=Björn|last2=Thieroff|first2=Rolf|title=Mood in the Languages of Europe|date=2010|publisher=John Benjamins Publishing Company|isbn=978-90-272-0587-2}}
+*{{cite book|editor=Bernard Comrie|edition=2nd|year=2009|title=The World's Major Languages|chapter=Czech and Slovak|first=David|last=Short|pages=305–330|publisher=Routledge}}
+*{{cite book|date=2004|last=Scheer|first=Tobias|title=A Lateral Theory of Phonology: What is CVCV, and why Should it Be?, Part 1|publisher=Walter De Gruyter|isbn=978-3-11-017871-5}}
+*{{cite book|date=1986|last=Stankiewicz|first=Edward|title=The Slavic Languages: Unity in Diversity|publisher=Mouton De Gruyter|isbn=978-3-11-009904-1}}
+*{{cite book|date=2011|last1=Sussex|first1=Rolan|last2=Cubberley|first2=Paul|title=The Slavic Languages|publisher=Cambridge Language Surveys|isbn=978-0-521-29448-5}}
+*{{cite book|last1=Tahal|first1=Karel|title=A grammar of Czech as a foreign language|date=2010|publisher=Factum|url=https://archive.org/details/AGrammarOfCzechAsAForeignLanguage}}
+*{{cite book|date=2009|last=Wilson|first=James|title=Moravians in Prague: A Sociolinguistic Study of Dialect Contact in the Czech|publisher=Peter Lang International Academic Publishers|isbn=978-3-631-58694-5}}
+
+==External links==
+{{InterWiki|code=cs}}
+{{Wikivoyage|Czech phrasebook|Czech|a phrasebook}}
+{{Wiktionary category}}
+{{Wikibooks|Czech}}
+{{Commons category|Czech language}}
+{{NIE poster}}
+* [http://www.ujc.cas.cz/ Ústav pro jazyk český] – [[Czech Language Institute]], the regulatory body for the Czech language {{in lang|cs}}
+* [https://web.archive.org/web/20120712124340/http://ucnk.ff.cuni.cz/english/index.php Czech National Corpus]
+* [http://bara.ujc.cas.cz/psjc/search.php Czech Monolingual Online Dictionary]
+* [https://slovniky.lingea.cz/ Online Translation Dictionaries]
+* [http://en.wiktionary.org/wiki/Appendix:Czech_Swadesh_list Czech Swadesh list of basic vocabulary words] (from Wiktionary's [http://en.wiktionary.org/wiki/Appendix:Swadesh_lists Swadesh-list appendix])
+* [https://nobsczech.cz/blog/table-of-contents Online Czech Grammar and Exercises]
+* [https://czechcourse.com/en/vocabulary Czech vocabulary reference]
+
+{{Prone to spam|date=January 2014}}
+
+{{Czech Republic topics}}
+{{Languages of the Czech Republic}}
+{{Languages of Slovakia}}
+{{Slavic languages}}
+{{Silesia topics}}
+{{Portal bar|Languages|Czech Republic}}
+{{Authority control}}
+
+[[Category:Czech language| ]]
+[[Category:Languages of the Czech Republic]]
+[[Category:Languages of Slovakia]]
+[[Category:Subject–verb–object languages]]
+[[Category:West Slavic languages]]
+[[Category:Slavic languages written in Latin script]]

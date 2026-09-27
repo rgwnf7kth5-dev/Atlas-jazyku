@@ -1,0 +1,72 @@
+{{short description|First translation of the Bible into the Czech language}}
+{{expand Czech|date=February 2024}}
+{{Bible translation infobox
+ | image                    = Kralice.jpg
+ | caption                  = Bible of Kralice, title page, vol. 1.
+ | translation_title        = Kralice Bible
+ | fullname                 = ''Biblj ſwatá. To geſt, Kniha w njž se wſſecka Pjſma S. Starého y Nowého Zákona obſahugj'' (1613 one-volume edition)
+ | language                 = [[History of the Czech language#Middle Czech|Middle Czech]]
+ | abbreviation             = 
+ | complete_bible_published = 1593
+ | translation_type         = 
+ | textual_basis            = 
+{{ublist 
+|'''NT:''' ''[[Textus Receptus]]'', [[Theodore Beza|Beza]]'s edition {{smaller|(Blahoslav)}} {{citation needed|date=October 2020}}
+|'''OT:''' [[Masoretic Text]], [[Plantin Polyglot]] edition {{citation needed|date=October 2020}}
+}}
+ | copyright                = Public domain due to age
+ | genesis_1:1-3            =
+ '''Transliteration:'''
+
+''Na počátku ſtwořil Bůh nebe a zemi. Země pak byla neſličná a puſtá; a tma byla nad propastj; a Duch Božj wznáſſel se nad wodami. I řekl Bůh: Buď ſwětlo. I bylo ſwětlo.''
+
+'''Transcription:'''
+
+Na počátku stvořil Bůh nebe a zemi. Země pak byla nesličná a pustá, a tma byla nad propastí, a Duch Boží vznášel se nad vodami. I řekl Bůh: Buď světlo! I bylo světlo.
+ | john_3:16                =
+ '''Transliteration:'''
+
+''Nebo tak Bůh milowal ſwět, že Syna ſwého gednorozeného dal, aby každý, kdož wěří v něho, nezahynul, ale měl žiwot wěčný.''
+
+'''Transcription:'''
+
+Nebo tak Bůh miloval svět, že Syna svého jednorozeného dal, aby každý, kdož věří v něho, nezahynul, ale měl život věčný.
+}}
+
+[[File:Novy zakon.jpg|thumb]]
+[[File:Mucha Skola Ivancice.jpg|thumb|The Printing of the Bible of Kralice in Ivančice (1914), by [[Alphonse Mucha]], ''[[The Slav Epic]]'']]
+The '''Bible of Kralice''', also called the '''Kralice Bible''' ({{langx|cs|Bible kralická}}), was the first complete translation of the [[Bible]] from its original languages into [[Czech language|Czech]]. Translated by the [[Moravian Church|Unity of the Brethren]] and printed in [[Kralice nad Oslavou]], the first edition had six volumes and was published between 1579 and 1593. The third edition, published in 1613, is considered a classic and has remained through the modern day the most widely-known and commonly-used Czech translation of the Bible. The [[New Testament]] had previously been translated from Greek by [[Jan Blahoslav]] and published in 1564.
+
+{{Listen|filename=Ten Biblical Songs by Antonin Dvorak.ogg|title=Ten Biblical songs (Czech: ''Biblické Písně'') by Antonín Dvořák|description=[[Antonín Dvořák]]'s [[Biblical Songs|1894 setting]] of selections from [[Psalms]] in the Bible of Kralice's translation.}}
+
+==See also==
+{{Wikisource-lang|cs|Bible kralická}}
+* [[Bible translations into Czech]]
+* [[Slavic translations of the Bible]]
+
+{{commons category|Bible of Kralice}}
+
+== References ==
+{{Reflist}}
+
+== External links ==
+* [https://web.archive.org/web/20151220195029/http://www.fit.vutbr.cz/~michal/kr/ Bible of Kralice] &ndash; electronic version of the first edition (in Czech)
+* [http://bible.blackened.cz/ Bible of Kralice] &ndash; electronic version of the latest edition (in Czech)
+* [https://www.radio.cz/en/article/61430 Travelling exhibition shows history of Bible in Czech lands] &ndash; This exhibition includes the Bible of Kralice and a photo shows the Bible.
+* [https://www.moravianchurcharchives.org/thismonth/13_10%20Kralice%20Bible.pdf The Kralice Bible] &ndash; short history of the edition and the details of its printing, with special attention given to a full 6-volume set preserved at the Moravian Archives, Bethlehem, Pennsylvania, United States.
+
+[[Category:1579 books]]
+[[Category:1593 books]]
+[[Category:1613 books]]
+[[Category:Early printed Bibles|Kralice]]
+[[Category:Czech literature]]
+[[Category:History of the Moravian Church]]
+[[Category:16th-century Christian texts]]
+[[Category:History of Moravia]]
+[[Category:History of Christianity in the Czech Republic]]
+[[Category:Czech lands under Habsburg rule]]
+[[Category:Protestantism in the Czech Republic]]
+[[Category:Czech nationalism]]
+
+{{CzechRepublic-stub}}
+{{bible-translation-stub}}
