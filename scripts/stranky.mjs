@@ -65,7 +65,7 @@ export function vyrobStranky({ KOREN, WEB, NAHLED, UI, jazyky: vsechnyJazyky, gl
       adresy[lang][j.id] = (lang === "cs" ? "/jazyk/" : "/en/language/") + s + "/";
     }
   }
-  const prehled = { cs: "/jazyky/", en: "/en/languages/" }, oDatech = { cs: "/o-datech/", en: "/en/about-data/" }, kalendarA = { cs: "/kalendar-jazyku/", en: "/en/language-days/" }, navodA = { cs: "/navod/", en: "/en/guide/" }, domov = { cs: "/", en: "/en/" };
+  const prehled = { cs: "/jazyky/", en: "/en/languages/" }, oDatech = { cs: "/o-datech/", en: "/en/about-data/" }, kalendarA = { cs: "/kalendar-jazyku/", en: "/en/language-days/" }, navodA = { cs: "/navod/", en: "/en/guide/" }, vitalitaA = { cs: "/vitalita/", en: "/en/vitality/" }, domov = { cs: "/", en: "/en/" };
 
   /* příbuzní v atlasu: nejhlubší společný předek ve stromu Glottologu (jako oblouky na glóbu) */
   const cesty = {};
@@ -256,7 +256,7 @@ ${listek ? SKRIPT_LISTEK : ""}
 <footer>
  <details>
   <summary>${escHtml(T.patickaSouhrn)}</summary>
-  <p><a href="${domov[lang]}">${escHtml(S.globus)}</a> · <a href="${prehled[lang]}">${escHtml(S.vsechnyOdkaz)}</a> · <a href="${kalendarA[lang]}">${escHtml(T.kalendarOdkaz)}</a> · <a href="${navodA[lang]}">${escHtml(T.navod.odkaz)}</a> · <a href="${oDatech[lang]}">${escHtml(T.oDatech.odkaz)}</a></p>
+  <p><a href="${domov[lang]}">${escHtml(S.globus)}</a> · <a href="${prehled[lang]}">${escHtml(S.vsechnyOdkaz)}</a> · <a href="${kalendarA[lang]}">${escHtml(T.kalendarOdkaz)}</a> · <a href="${navodA[lang]}">${escHtml(T.navod.odkaz)}</a> · <a href="${vitalitaA[lang]}">${escHtml(T.vitStranka.nadpis)}</a> · <a href="${oDatech[lang]}">${escHtml(T.oDatech.odkaz)}</a></p>
   <p>${escHtml(T.zpetna)} <a href="mailto:${escHtml(T.zpetnaAdresa)}?subject=${encodeURIComponent(T.zpetnaPredmet)}">${escHtml(T.zpetnaAdresa)}</a></p>
   <p>${escHtml(T.zdroje)}</p>
  </details>
@@ -366,6 +366,85 @@ ${N.oddily.map(o => `<h2>${escHtml(o.h)}</h2>\n${o.p.map(p => `<p>${escHtml(p)}<
 <p><a class="tl" href="${domov[lang]}">${escHtml(S.globus)}</a></p>
 </div>` }));
     vsechny.push([navodA[lang], navodA[jiny], lang]);
+
+    /* vitalita jazyků: stejný obsah jako stránka Vitalita v aplikaci (čísla z dat, texty T.vitStranka) */
+    {
+      const V = T.vitStranka, N = glottolog.body.length, vit = i => { const v = podrobnosti.radky[i][0]; return v == null ? -1 : v; };
+      const PORADI = [0, 1, 2, 3, 4, 5, 6, -1], nazevSt = v => v < 0 ? T.vitalitaBezUdaje : T.aes[v][0];
+      const pr = (n, z) => { const p = 100 * n / z; return cislo(lang, p < 10 ? Math.round(p * 10) / 10 : Math.round(p), p < 10 ? 1 : 0) + (lang === "en" ? "%" : "\u00A0%"); };
+      const dosadV = (t, par) => t.replace(/\{(\w+)\}/g, (m, k) => par[k] ?? m);
+      const jmenoB = i => { const n = (lang === "cs" && podrobnosti.radky[i][9]) || glottolog.body[i][0]; return n.charAt(0).toUpperCase() + n.slice(1); };
+      const pocty = {}, oblasti = glottolog.makro.map(() => ({ n: 0, v: {} })), rodiny = new Map();
+      const rodinyCs = JSON.parse(fs.readFileSync(path.join(KOREN, "data/glottolog-families.cs.json"), "utf8"));
+      const vyrazene = new Set(["Isolate", "Sign Language", ...BEZ_RODU]);
+      for (let i = 0; i < N; i++) {
+        const v = vit(i), b = glottolog.body[i]; pocty[v] = (pocty[v] || 0) + 1;
+        if (oblasti[b[4]]) { oblasti[b[4]].n++; oblasti[b[4]].v[v] = (oblasti[b[4]].v[v] || 0) + 1; }
+        const rn = glottolog.rodiny[b[3]];
+        if (rn && !vyrazene.has(rn) && !/\bsign language\b/i.test(b[0])) { if (!rodiny.has(rn)) rodiny.set(rn, { n: 0, v: {} }); const r = rodiny.get(rn); r.n++; r.v[v] = (r.v[v] || 0) + 1; }
+      }
+      const ohr = [1, 2, 3, 4].reduce((a, v) => a + (pocty[v] || 0), 0), max = Math.max(...PORADI.map(v => pocty[v] || 0));
+      const bod = v => `<i class="vs-bod" style="background:var(--vit${v < 0 ? "-nic" : "-" + v})"></i>`;
+      const tabulka = (radky, sloupce) => `<table class="vs-tab"><thead><tr>${sloupce.map(x => `<th>${escHtml(x)}</th>`).join("")}</tr></thead><tbody>${radky.sort((a, b) => b.n - a.n).map(r => {
+        const oh = [1, 2, 3, 4].reduce((a, v) => a + (r.v[v] || 0), 0);
+        return `<tr><th>${escHtml(r.nazev)}<span class="vs-skladba" aria-hidden="true">${PORADI.filter(v => r.v[v]).map(v => `<i style="flex-grow:${r.v[v]};background:var(--vit${v < 0 ? "-nic" : "-" + v})"></i>`).join("")}</span></th><td>${cislo(lang, r.n)}</td><td>${cislo(lang, oh)} (${pr(oh, r.n)})</td><td>${cislo(lang, r.v[5] || 0)}</td></tr>`; }).join("")}</tbody></table>`;
+      const atlasOhr = jazyky.map(j => ({ j, v: j.id in bodJazyka ? vit(bodJazyka[j.id]) : -1 })).filter(r => r.v >= 1 && r.v !== 5)
+        .sort((a, b) => (b.v === 6 ? 0.5 : b.v) - (a.v === 6 ? 0.5 : a.v) || a.j[lang].nazev.localeCompare(b.j[lang].nazev, lang));
+      const prob = []; for (let i = 0; i < N; i++) if (vit(i) === 6) prob.push(i);
+      prob.sort((a, b) => jmenoB(a).localeCompare(jmenoB(b), lang));
+      const pribeh = starovek.civilizace.find(c => c.id === "obnova-jazyku");
+      const verzeD = verze.glottolog ? new Date(verze.glottolog + "T12:00:00Z").toLocaleDateString(T.locale, { day: "numeric", month: "long", year: "numeric" }) : "–";
+      const obsahV = `<style>
+:root{--vit-0:#2F7FC1;--vit-1:#d07c00;--vit-2:#b35200;--vit-3:#932900;--vit-4:#6f0000;--vit-5:#4A4E5C;--vit-6:#23A862;--vit-nic:#A3AAB8}
+@media (prefers-color-scheme:dark){:root{--vit-0:#4EA3F2;--vit-1:#ffcc81;--vit-2:#ffa55b;--vit-3:#ef7e3c;--vit-4:#dc5426;--vit-5:#B8BFD0;--vit-6:#21AE70;--vit-nic:#5E6C8E}}
+.vs-cisla{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:18px 0 10px}
+.vs-cislo{display:flex;flex-direction:column;gap:3px;padding:12px;border:1px solid var(--linka);border-top:4px solid var(--c);border-radius:12px;background:var(--karta)}
+.vs-cislo b{font:600 1.7rem/1.05 var(--nadpis)} .vs-cislo span{font-size:.85rem;color:var(--text2)}
+.vs-bod{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:7px;vertical-align:-1px}
+.vs-stupne{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.vs-stupne li{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(80px,1fr) 80px;gap:14px;align-items:center}
+.vs-stupne small{display:block;color:var(--text2);font-size:.82rem} .vs-pruh{height:12px;border-radius:0 4px 4px 0}
+.vs-stupne .vs-n{text-align:right;font-variant-numeric:tabular-nums} .vs-n small{font-size:.75rem}
+.vs-tab{width:100%;border-collapse:collapse;font-size:.92rem;font-variant-numeric:tabular-nums}
+.vs-tab th,.vs-tab td{padding:8px;border-bottom:1px solid var(--linka);text-align:right;vertical-align:top}
+.vs-tab th:first-child{text-align:left;width:50%} .vs-tab thead th{font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:var(--text2)}
+.vs-skladba{display:flex;gap:2px;height:9px;margin-top:6px} .vs-skladba i{display:block;min-width:2px;border-radius:2px}
+.vs-jazyky{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:6px 12px}
+.vs-jazyky small{color:var(--text2)} .vs-prob{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.vs-prob a{display:inline-block;padding:4px 11px;border:1px solid var(--linka);border-radius:999px;text-decoration:none;color:inherit;font-size:.88rem}
+.vs-zdroje{font-size:.88rem}
+@media (max-width:620px){.vs-cisla{grid-template-columns:1fr 1fr}.vs-stupne li{grid-template-columns:1fr 70px}.vs-stupne .vs-pruh{grid-column:1/3;grid-row:2}}
+</style>
+<nav class="drobky" aria-label="${escHtml(S.drobky)}"><a href="${domov[lang]}">${escHtml(T.nazev)}</a> › ${escHtml(V.nadpis)}</nav>
+<div class="text">
+<h1>${escHtml(V.nadpis)}</h1>
+<p class="uvod">${escHtml(dosadV(V.uvod, { n: cislo(lang, N) }))}</p>
+<div class="vs-cisla">${[[pocty[0] || 0, V.cislaBezpecne, 0], [ohr, V.cislaOhrozene, 3], [pocty[5] || 0, V.cislaVymrele, 5], [pocty[6] || 0, V.cislaProbouzene, 6]].map(c =>
+  `<div class="vs-cislo" style="--c:var(--vit-${c[2]})"><b>${cislo(lang, c[0])}</b><span>${escHtml(c[1])}</span><span>${pr(c[0], N)}</span></div>`).join("")}</div>
+<p>${escHtml(dosadV(V.souhrn, { n: cislo(lang, ohr), p: pr(ohr, N) }))}</p>
+<p><a class="tl" href="${domov[lang]}#${lang === "cs" ? "vitalita" : "vitality"}">${escHtml(S.globus)}</a></p>
+<h2>${escHtml(V.stupneH)}</h2>
+<ul class="vs-stupne">${PORADI.map(v => `<li><span><b>${bod(v)}${escHtml(nazevSt(v))}</b><small>${escHtml(v >= 0 ? T.aes[v][1] : V.bezUdajePopis)}</small></span><span class="vs-pruh" style="width:${(100 * (pocty[v] || 0) / max).toFixed(1)}%;background:var(--vit${v < 0 ? "-nic" : "-" + v})"></span><span class="vs-n">${cislo(lang, pocty[v] || 0)}<br><small>${pr(pocty[v] || 0, N)}</small></span></li>`).join("")}</ul>
+<h2>${escHtml(V.oblastiH)}</h2>
+<p>${escHtml(V.oblastiUvod)}</p>
+${tabulka(oblasti.map((o, k) => ({ nazev: T.makro[glottolog.makro[k]] || glottolog.makro[k], n: o.n, v: o.v })).filter(r => r.n), V.oblastiSloupce)}
+<h2>${escHtml(V.rodinyH)}</h2>
+<p>${escHtml(V.rodinyUvod.split(/(?<=\.) /)[0])}</p>
+${tabulka([...rodiny.entries()].sort((a, b) => b[1].n - a[1].n).slice(0, 15).map(([rn, r]) => { const n = lang === "cs" ? (rodinyCs[rn] || rn) : rn; return { nazev: n.charAt(0).toUpperCase() + n.slice(1), n: r.n, v: r.v }; }), V.rodinySloupce)}
+<h2>${escHtml(V.atlasH)}</h2>
+<ul class="vs-jazyky">${atlasOhr.map(r => `<li>${bod(r.v)}<a href="${adresy[lang][r.j.id]}">${escHtml(r.j[lang].nazev)}</a> <small>${escHtml(nazevSt(r.v))}</small></li>`).join("")}</ul>
+<h2>${escHtml(V.probouzeneH)}</h2>
+<p>${escHtml(dosadV(V.probouzeneUvod, { n: cislo(lang, prob.length) }).replace(/[^.]*\.$/, "").trim())}</p>
+<ul class="vs-prob">${prob.map(i => `<li><a href="${domov[lang]}#${glottolog.body[i][6]}">${escHtml(jmenoB(i))}</a></li>`).join("")}</ul>
+${pribeh ? `<p><a href="${civAdresa(pribeh, lang)}">${escHtml(T.pribehy.stitek)}: ${escHtml(pribeh[lang].nazev)} ›</a></p>` : ""}
+<h2>${escHtml(V.metodikaH)}</h2>
+${V.metodika.map(p => `<p>${escHtml(dosadV(p, { n: cislo(lang, pocty[-1] || 0), d: verzeD }))}</p>`).join("\n")}
+<ul class="vs-zdroje">${V.zdroje.map(z => `<li>${escHtml(z)}</li>`).join("")}</ul>
+</div>`;
+      zapis(vitalitaA[lang], stranka({ lang, adresa: vitalitaA[lang], jinaAdresa: vitalitaA[jiny], titulek: V.nadpis + " · " + T.nazev,
+        popis: dosadV(V.souhrn, { n: cislo(lang, ohr), p: pr(ohr, N) }) + " " + V.podtitul, obrazek: obrazekWebu(lang), obsah: obsahV }));
+      vsechny.push([vitalitaA[lang], vitalitaA[jiny], lang]);
+    }
 
     /* kalendář jazykových dnů: stejný seznam jako okno v aplikaci, odkazy na stránky jazyků */
     const K = T.kalendar, TYDEN = ["ne", "po", "ut", "st", "ct", "pa", "so"], rok = 2026;

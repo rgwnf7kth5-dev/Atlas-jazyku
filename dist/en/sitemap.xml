@@ -997,6 +997,12 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/guide/"/>
   </url>
   <url>
+    <loc>https://thelanguageatlas.com/vitality/</loc>
+    <lastmod>2026-09-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/vitalita/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/vitality/"/>
+  </url>
+  <url>
     <loc>https://thelanguageatlas.com/language-days/</loc>
     <lastmod>2026-09-27</lastmod>
     <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/kalendar-jazyku/"/>

@@ -164,6 +164,9 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a živý web workflow Diag
   a `BEZ_RODU`) s odkazem „Ukázat v rodokmenu“ (`tabulkaVitality`, stejná jako u oblastí), a **metodika a zdroje** (UNESCO 2003, Moseley 2010,
   Hammarström a kol. 2018 o AES, Glottolog, ElCat). Všechna čísla se počítají z dat při otevření; texty `vitStranka`
   v `src/ui/*.json`. Filtr stupňů byl dřív podstránkou panelu Zobrazení (`#vitalita-panel`, zrušeno).
+  **Na webu je i samostatná stránka** `/vitalita/` a `/en/vitality/` (`scripts/stranky.mjs`, stejné texty `vitStranka` a čísla
+  z dat při buildu; tabulky, ohrožené jazyky atlasu s odkazy na jejich stránky, probouzené jazyky s odkazy na glóbus, metodika).
+  Je v sitemapě a v patičce statických stránek.
   Při ověření opraveno: probouzené jazyky jsou vymřelé podle Glottologu, ne podle UNESCO; AES jen „u většiny jazyků“ a
   „především“ z UNESCO, Ethnologue a ElCat (i z dalších publikací); latina nemá rodilé mluvčí, ale není doložená jen
   historicky; stupně UNESCO 2003 se jmenovaly unsafe a definitively endangered, názvy a popisy jsou z atlasu 2010;
