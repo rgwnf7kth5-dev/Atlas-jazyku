@@ -137,8 +137,11 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a živý web workflow Diag
   (akvarely z `scripts/ikony.mjs`; `mapy.jpg` je snímek glóbu), build je vkládá jako `IKONY` (v artefaktu data:).
   Řada se drží vpravo od otevřené karty (`posunDok`), pod ní je rozmazaný podklad, aby jí neprosvítala jména teček.
   Na telefonu jsou medailony pod glóbem ve dvou řadách po třech. Ikony chrámu a knihy v záhlaví zmizely.
-  **V rodokmenu jsou Mapy a Vitalita šedé a nečinné** (`aria-disabled`, odstíny šedi, `title` „V rodokmenu nejsou barevné
-  mapy k dispozici“; uživatel 27. 9. 2026: barví jen glóbus, v rodokmenu nedávají smysl). Medailon Rodokmen se v rodokmenu
+  **V rodokmenu je Mapy šedý a nečinný** (`aria-disabled`, odstíny šedi, `title` „V rodokmenu nejsou barevné
+  mapy k dispozici“; uživatel 27. 9. 2026: barví jen glóbus). **Vitalita v rodokmenu funguje** (uživatel 27. 9. 2026:
+  „oboje udělej“): se zapnutými barvami vitality mají jazyky ve stromu barvu stupně (`barvaVit` v kreslení stromu,
+  barvy `--vit-*` v `nactiBarvyS`, `strom.prekresli()` z `nastavBarvyVitality`), vysvětlivka `#vit-legenda` zůstává
+  i v rodokmenu a strom se na počítači vejde nad medailony a vysvětlivku (`zaklad()` odečte výšku `#dok` a legendy). Medailon Rodokmen se v rodokmenu
   mění na Glóbus.
   **Náhodný jazyk** je malé červené tlačítko v záhlaví seznamu vedle počtu jazyků (`.pocet-radek`), na počítači
   i telefonu. **Zoom a Celý svět** jsou nenápadně vpravo nahoře na glóbu pod otazníkem, bez pilulky (`.roh-ovladani`);
@@ -157,7 +160,8 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a živý web workflow Diag
   zavře), **stupně** jako vodorovné pruhy s počtem a podílem a zaškrtnutím = filtr (předvolby Všechny / Jen ohrožené; odznak
   `n/8` na medailonu Vitalita, když filtr něco skrývá), tabulka **podle makrooblastí Glottologu** s pruhem skladby stupňů,
   **ohrožené a probouzené jazyky atlasu** (dlaždice, klik vybere jazyk), **všechny probouzené jazyky** (štítky, klik ukáže
-  tečku) s odkazem na příběh „Jazyky, které se vracejí“, a **metodika a zdroje** (UNESCO 2003, Moseley 2010,
+  tečku) s odkazem na příběh „Jazyky, které se vracejí“, tabulka **15 největších rodin** (bez izolátů, znakových jazyků
+  a `BEZ_RODU`) s odkazem „Ukázat v rodokmenu“ (`tabulkaVitality`, stejná jako u oblastí), a **metodika a zdroje** (UNESCO 2003, Moseley 2010,
   Hammarström a kol. 2018 o AES, Glottolog, ElCat). Všechna čísla se počítají z dat při otevření; texty `vitStranka`
   v `src/ui/*.json`. Filtr stupňů byl dřív podstránkou panelu Zobrazení (`#vitalita-panel`, zrušeno).
   Při ověření opraveno: probouzené jazyky jsou vymřelé podle Glottologu, ne podle UNESCO; AES jen „u většiny jazyků“ a

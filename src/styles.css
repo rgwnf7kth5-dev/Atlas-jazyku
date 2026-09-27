@@ -881,7 +881,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 .vl-pruh i:first-child{border-radius:5px 3px 3px 5px} .vl-pruh i:last-child{border-radius:3px 5px 5px 3px}
 .vl-dalsi{display:inline-flex; align-items:center; gap:5px; font-weight:500}
 .vl-dalsi i{width:10px; border-radius:50%}
-.scena.rezim-strom .vit-legenda,.scena.rezim-brana .vit-legenda{display:none}
+.scena.rezim-brana .vit-legenda{display:none}   /* v rodokmenu zůstává: barvy vitality platí i pro strom */
 @media (max-width:920px){
   .vit-legenda{position:relative; left:auto; bottom:auto; transform:none; align-self:center; margin:4px auto 0}
 }
@@ -1241,3 +1241,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
   .vs-stupen .vs-pruh{grid-column:2 / 4; grid-row:2}
   .vs-oblasti th:first-child{width:auto}
 }
+.vs-do-stromu{display:inline-flex; align-items:center; gap:6px; margin-top:7px; padding:3px 0; border:0; background:none; color:var(--cyan);
+  font:inherit; font-size:.78rem; font-weight:600; cursor:pointer}
+.vs-do-stromu svg{width:15px; height:15px}
+.vs-do-stromu:hover{text-decoration:underline; text-underline-offset:2px}

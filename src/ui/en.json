@@ -530,7 +530,7 @@
     "p": [
      "The round buttons below the globe (in two rows on a phone) open the main parts of the atlas: Ancient languages, Language stories, Family tree, Maps, Vitality and Settings. Random language sits in the header of the language list, next to the language count, and opens the card of a randomly selected language.",
      "Family tree shows the tree of a whole language family after Glottolog. Drag to move, use the wheel or two fingers to zoom, click a branch to focus on it and click a language to select it.",
-     "Vitality opens a page on language endangerment: the number of languages in each degree of the UNESCO scale, the breakdown by world region, endangered languages in the atlas, awakening languages, and the method with sources. From there you can colour the globe by vitality and tick which degrees stay visible (a filter). While the colours are on, a key sits below the globe; click it to open the page again. The page also opens from a link on the language card and from the address #vitality.",
+     "Vitality opens a page on language endangerment: the number of languages in each degree of the UNESCO scale, the breakdown by world region and by the fifteen largest language families (with a link to the family tree), endangered languages in the atlas, awakening languages, and the method with sources. From there you can colour the globe and the family tree by vitality – the tree then shows which branches of a family are endangered or extinct – and tick which degrees stay visible (a filter). While the colours are on, a key sits below the globe; click it to open the page again. The page also opens from a link on the language card and from the address #vitality.",
      "Maps opens an overview of all colour maps with previews: script, vitality and 24 typological features from WALS. Choosing a map closes the window and colours the globe.",
      "Settings: automatic rotation, language names and sign languages (all, none or only these).",
      "Zoom in and out (+ and −) and the Whole world button sit discreetly at the top right of the globe, below the help question mark; on a phone, pinch with two fingers to zoom."
@@ -665,10 +665,10 @@
   "cislaVymrele": "extinct",
   "cislaProbouzene": "awakening",
   "souhrn": "{n} languages, or {p} of all languages on the globe, are endangered to some degree.",
-  "barvyZap": "Colour the globe by vitality",
-  "barvyVyp": "Turn off vitality colours on the globe",
+  "barvyZap": "Colour the globe and family tree by vitality",
+  "barvyVyp": "Turn off vitality colours",
   "stupneH": "Degrees of vitality",
-  "stupneUvod": "The length of each bar gives the number of languages. Ticked degrees stay visible on the globe, in the list and in search; untick a degree to hide its languages (the filter works without the colours too).",
+  "stupneUvod": "The length of each bar gives the number of languages. Ticked degrees stay visible on the globe, in the family tree, in the list and in search; untick a degree to hide its languages (the filter works without the colours too).",
   "filtrTitulek": "Show or hide the languages of this degree",
   "filtrVse": "All",
   "filtrOhrozene": "Endangered only",
@@ -681,6 +681,9 @@
    "Endangered",
    "Extinct"
   ],
+  "rodinyH": "By language family",
+  "rodinyUvod": "The fifteen largest language families in Glottolog (excluding isolates, sign languages and groupings that are not families). The button opens the family tree; with vitality colours on, its languages are coloured by degree, so you can see which branches are endangered or extinct.",
+  "rodinySloupce": ["Family", "Languages", "Endangered", "Extinct"],
   "atlasH": "Endangered languages in the atlas",
   "atlasUvod": "Languages with a detailed card that Glottolog lists as endangered to some degree or as awakening, most endangered first. Click to open the language card.",
   "probouzeneH": "Awakening languages",

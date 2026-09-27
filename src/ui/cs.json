@@ -530,7 +530,7 @@
     "p": [
      "Kulatá tlačítka pod glóbem (na telefonu ve dvou řadách) otevírají hlavní části atlasu: Jazyky starověku, Příběhy jazyků, Rodokmen, Mapy, Vitalitu a Nastavení. Náhodný jazyk je v záhlaví seznamu jazyků vedle počtu jazyků a otevře kartu náhodně vybraného jazyka.",
      "Rodokmen zobrazí strom celé jazykové rodiny podle Glottologu. Tažením se posouvá, kolečkem nebo dvěma prsty přibližuje, klepnutí na větev ji zvětší, klepnutí na jazyk ho vybere.",
-     "Vitalita otevře stránku o ohrožení jazyků: počty jazyků v jednotlivých stupních stupnice UNESCO, rozložení podle oblastí světa, ohrožené jazyky atlasu, probouzené jazyky a metodiku se zdroji. Na ní lze glóbus obarvit podle vitality a zaškrtnutím vybrat, které stupně zůstanou vidět (filtr). Při zapnutých barvách je pod glóbem legenda; klepnutím na ni se stránka otevře znovu. Stránku otevře i odkaz na kartě jazyka a adresa #vitalita.",
+     "Vitalita otevře stránku o ohrožení jazyků: počty jazyků v jednotlivých stupních stupnice UNESCO, rozložení podle oblastí světa a patnácti největších jazykových rodin (s odkazem do rodokmenu), ohrožené jazyky atlasu, probouzené jazyky a metodiku se zdroji. Na ní lze glóbus i rodokmen obarvit podle vitality – v rodokmenu je pak vidět, které větve rodiny jsou ohrožené nebo vymřelé – a zaškrtnutím vybrat, které stupně zůstanou vidět (filtr). Při zapnutých barvách je pod glóbem legenda; klepnutím na ni se stránka otevře znovu. Stránku otevře i odkaz na kartě jazyka a adresa #vitalita.",
      "Mapy otevřou přehled všech barevných map s náhledy: písmo, vitalita a 24 typologických vlastností podle WALS. Výběr mapy okno zavře a glóbus obarví.",
      "Nastavení: samočinné otáčení, názvy jazyků a znakové jazyky (všechny, bez nich, nebo jen ony).",
      "Přiblížení a oddálení (+ a −) a tlačítko Celý svět jsou nenápadně vpravo nahoře na glóbu, pod otazníkem s nápovědou; na telefonu se přibližuje dvěma prsty."
@@ -665,10 +665,10 @@
   "cislaVymrele": "vymřelých",
   "cislaProbouzene": "probouzených",
   "souhrn": "V některém stupni ohrožení je {n} jazyků, tedy {p} všech jazyků na glóbu.",
-  "barvyZap": "Obarvit glóbus podle vitality",
-  "barvyVyp": "Vypnout barvy vitality na glóbu",
+  "barvyZap": "Obarvit glóbus a rodokmen podle vitality",
+  "barvyVyp": "Vypnout barvy vitality",
   "stupneH": "Stupně vitality",
-  "stupneUvod": "Délka pruhu odpovídá počtu jazyků. Zaškrtnuté stupně zůstávají zobrazené na glóbu, v seznamu i ve vyhledávání; odškrtnutím se jazyky daného stupně skryjí (filtr platí i bez barev).",
+  "stupneUvod": "Délka pruhu odpovídá počtu jazyků. Zaškrtnuté stupně zůstávají zobrazené na glóbu, v rodokmenu, v seznamu i ve vyhledávání; odškrtnutím se jazyky daného stupně skryjí (filtr platí i bez barev).",
   "filtrTitulek": "Zobrazit nebo skrýt jazyky tohoto stupně",
   "filtrVse": "Všechny",
   "filtrOhrozene": "Jen ohrožené",
@@ -681,6 +681,9 @@
    "Ohrožených",
    "Vymřelých"
   ],
+  "rodinyH": "Podle jazykových rodin",
+  "rodinyUvod": "Patnáct největších jazykových rodin podle Glottologu (bez izolovaných jazyků, znakových jazyků a skupin, které nejsou rodinou). Tlačítko otevře rodokmen rodiny; se zapnutými barvami vitality jsou v něm jazyky obarvené podle stupně, takže je vidět, které větve jsou ohrožené nebo vymřelé.",
+  "rodinySloupce": ["Rodina", "Jazyků", "Ohrožených", "Vymřelých"],
   "atlasH": "Ohrožené jazyky v atlasu",
   "atlasUvod": "Jazyky s podrobnou kartou, které jsou podle Glottologu v některém stupni ohrožení nebo se probouzejí, od nejohroženějších. Klepnutím se otevře karta jazyka.",
   "probouzeneH": "Probouzené jazyky",
