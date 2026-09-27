@@ -529,7 +529,7 @@
     "h": "Medallions below the globe",
     "p": [
      "The round buttons below the globe (in two rows on a phone) open the main parts of the atlas: Ancient languages, Language stories, Family tree, Maps, Vitality and Settings. Random language sits in the header of the language list, next to the language count, and opens the card of a randomly selected language.",
-     "With no language selected, Family tree opens a circular overview of all language families: the width of a segment is the number of languages; click a segment or a row of the list to go deeper (down to individual languages), and click the centre of the circle or the path above the list to go back up. Families with fewer than 25 languages are under Smaller families; isolates, sign and artificial languages and pidgins under Outside families. Open the family tree shows the fan-shaped tree of the family; All families leads back. With a language selected, the tree of its family opens directly. In the tree, drag to move, use the wheel or two fingers to zoom, click a branch to focus on it and click a language to select it.",
+     "Family tree shows the fan-shaped tree of a language family: with a language selected, its family, otherwise the family chosen in the menu at the top. Drag to move, use the wheel or two fingers to zoom, click a branch to focus on it and click a language to select it. The Circular overview button offers another view of all families at once: the width of a segment is the number of languages; click a segment or a row of the list to go deeper, and click the centre of the circle to go back up. Families with fewer than 25 languages are under Smaller families; isolates, sign and artificial languages and pidgins under Outside families. Back to the tree or Open the family tree returns to the fan.",
      "Vitality opens a page on language endangerment: the number of languages in each degree of the UNESCO scale, the breakdown by world region and by the fifteen largest language families (with a link to the family tree), endangered languages in the atlas, awakening languages, and the method with sources. From there you can colour the globe and the family tree by vitality – the tree then shows which branches of a family are endangered or extinct – and tick which degrees stay visible (a filter). While the colours are on, a key sits below the globe; click it to open the page again. The page also opens from a link on the language card and from the address #vitality.",
      "Maps opens an overview of all colour maps with previews: script, vitality and 24 typological features from WALS. Choosing a map closes the window and colours the globe.",
      "Settings: automatic rotation, language names and sign languages (all, none or only these).",
@@ -705,7 +705,8 @@
   ],
   "odkazKarta": "Vitality of the world’s languages ›"
  },
- "stromVse": "All families",
+ "stromVse": "Circular overview",
+ "stromZpet": "Back to the tree",
  "prehledPlatno": "Circular overview of language families: the width of a segment is the number of languages. Click a segment to go deeper, click the centre to go up one level.",
  "prehledKde": "Where you are in the overview",
  "prehledOtevrit": "Open the family tree",

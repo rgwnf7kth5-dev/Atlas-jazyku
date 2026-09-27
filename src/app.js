@@ -3154,12 +3154,11 @@ var strom = (function(){   // var: filtry a texty se na něj ptají dřív, než
   }
   function naplnVyber(){
     const s = $("strom-rodina"); s.textContent = "";
-    const vse = document.createElement("option"); vse.value = ""; vse.textContent = T.stromVse; s.appendChild(vse);   // kruhový přehled všech rodin
     rodinyStromu().forEach(function(x){
       const o = document.createElement("option"); o.value = x[0];
       o.textContent = velke(REJSTRIK.rr[x[0]]) + " (" + cislo(x[1]) + ")"; s.appendChild(o);
     });
-    s.value = prehled ? "" : String(rodina);
+    s.value = String(rodina);
   }
   function barvaRodiny(f){
     for (let k = 0; k < JAZYKY.length; k++) { const i = BOD_ATLASU[JAZYKY[k].id]; if (i >= 0 && B[i][3] === f) return "--r-" + JAZYKY[k].sk; }
@@ -3500,7 +3499,7 @@ var strom = (function(){   // var: filtry a texty se na něj ptají dřív, než
     probud();
   }, {passive: false});
   platnoS.addEventListener("dblclick", function(){ celek(); });
-  $("strom-rodina").addEventListener("change", function(e){ if (e.target.value === "") { $("strom-vse").click(); return; } prehledZap(false); postav(+e.target.value); nactiBarvyS(); cxPosun = posunKarty(); probud(); });
+  $("strom-rodina").addEventListener("change", function(e){ prehledZap(false); postav(+e.target.value); nactiBarvyS(); cxPosun = posunKarty(); probud(); });
   $("strom-cely").addEventListener("click", celek);
   new ResizeObserver(function(){ if (zapnuto) probud(); }).observe(platnoS);
 
@@ -3719,11 +3718,12 @@ var strom = (function(){   // var: filtry a texty se na něj ptají dřív, než
     prehled = !!z;
     prehledC.hidden = !prehled; panelP.hidden = !prehled;
     platnoS.hidden = prehled || !zapnuto; $("strom-napoveda").hidden = prehled || !zapnuto;
-    $("strom-cely").hidden = prehled; $("strom-vse").hidden = prehled || !zapnuto;
+    $("strom-cely").hidden = prehled;
+    const tv = $("strom-vse"); tv.hidden = !zapnuto; tv.dataset.t = prehled ? "stromZpet" : "stromVse"; tv.textContent = T[tv.dataset.t];
+    tv.setAttribute("aria-pressed", prehled ? "true" : "false");
     scenaS.classList.toggle("rezim-prehled", prehled);
     if (!prehled) return;
     if (!P) { postavPrehled(); zamereno = P.koren; pohledP = {x0: 0, x1: 1, d: 0}; }
-    $("strom-rodina").value = "";
     panel(); kresliP();
   }
   prehledC.addEventListener("pointermove", function(e){
@@ -3740,6 +3740,7 @@ var strom = (function(){   // var: filtry a texty se na něj ptají dřív, než
     const f = +this.dataset.f; prehledZap(false); postav(f); naplnVyber(); nactiBarvyS(); cxPosun = posunKarty(); probud();
   });
   $("strom-vse").addEventListener("click", function(){
+    if (prehled) { prehledZap(false); postav(rodina); naplnVyber(); nactiBarvyS(); cxPosun = posunKarty(); probud(); return; }   // zpět na vějíř
     prehledZap(true);
     const t = [].concat.apply(P.koren.c, P.koren.c.map(function(x){ return x.f == null && x.c ? x.c : []; })).find(function(x){ return x.f === rodina; });
     if (t) zamerP(t);
@@ -3767,9 +3768,7 @@ var strom = (function(){   // var: filtry a texty se na něj ptají dřív, než
     const cilova = f != null ? f : i >= 0 && B[i][3] !== IZOLAT && !BEZ_RODU.has(B[i][3]) && radek(i)[2] >= 0 ? B[i][3] : rodina >= 0 ? rodina : B[BOD_ATLASU[T.lang]][3];
     if (brana) zavriBranu(true);
     uklidKartu();                              // na mobilu karta do lišty, ať je strom vidět
-    /* bez vybraného jazyka (a bez zadané rodiny) začíná Rodokmen kruhovým přehledem všech rodin */
-    if (f == null && !(i >= 0 && B[i][3] !== IZOLAT && !BEZ_RODU.has(B[i][3]) && radek(i)[2] >= 0)) { naplnVyber(); prehledZap(true); return; }
-    prehledZap(false);
+    prehledZap(false);                         // Rodokmen začíná vějířem; kruhový přehled je jen volba (uživatel 27. 9. 2026)
     if (cilova !== rodina || !m || !vl) postav(cilova);
     naplnVyber(); nactiBarvyS();
     cxPosun = posunKarty();

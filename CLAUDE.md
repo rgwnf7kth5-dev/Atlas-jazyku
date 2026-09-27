@@ -306,16 +306,17 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a živý web workflow Diag
   (`stopy`). Zajímavosti musí být pravdivé jako u skutečných jazyků.
 - Pořád platí: žádný satelit, prstenec, rohy zaměřovače ani sbírka pozdravů.
 - **Kruhový přehled všech rodin** (27. 9. 2026, uživatel: výseče „vyklikávat jako v DaisyDisk“, „přijatelnější design
-  odpovídající současnému“; klikací náhled schválil „je to OK, spusť to“): **výchozí pohled Rodokmenu, když není vybraný jazyk**
-  (s vybraným jazykem se otevře rovnou vějíř jeho rodiny). Plátno `#prehled` a panel `#prehled-panel` uvnitř modulu `strom`
+  odpovídající současnému“; klikací náhled schválil „je to OK, spusť to“). **Jen volitelný doplněk**: jako výchozí pohled Rodokmenu ho uživatel
+  hned zamítl („tohle je blbě … kruh je spíše doplněk, vrať se k tomu stromu“), Rodokmen proto vždy začíná vějířem jako dřív
+  a kruh se otevírá tlačítkem **„Kruhový přehled rodin“** (`#strom-vse`) v hlavičce Rodokmenu; v kruhu se z něj stane
+  „Zpět na rodokmen“. Nedělat z kruhu znovu výchozí pohled. Plátno `#prehled` a panel `#prehled-panel` uvnitř modulu `strom`
   (`postavPrehled`, `kresliP`, `zamerP`, `panel`, `prehledZap`). Šířka výseče = počet jazyků (filtry platí), 5 prstenců,
   klepnutí na výseč z ní udělá nový střed (plynulý přechod 520 ms, `prefers-reduced-motion` bez něj), střed = o úroveň výš,
   najetí myší ukáže název a počet ve středu. Střed je medailon (`--med-*`). Barvy rodin z `--r-*` (odstín podle hloubky
   a střídání sourozenců), se zapnutými barvami vitality mají jazyky barvu stupně. Rodiny pod 25 jazyků jsou pod „Menší
   rodiny“, izolované, znakové a umělé jazyky a pidžiny pod „Mimo rodiny“; průchozí větve se přeskakují. Panel vpravo
   (na telefonu pod kruhem, nejvýš 52 vh): cesta, název, počty, „Otevřít rodokmen rodiny“ (vějíř), seznam dětí s poměrným
-  proužkem a jazyky atlasu kurzívou (obdoba tištěného seznamu z 24. 9.), legenda barev. Výběr rodiny má volbu „Všechny rodiny“,
-  vějíř tlačítko `#strom-vse`. Klepnutí na jazyk ho vybere (karta), kruh zůstává. Zoom + a − se v Rodokmenu schovávají.
+  proužkem a jazyky atlasu kurzívou (obdoba tištěného seznamu z 24. 9.), legenda barev. Klepnutí na jazyk ho vybere (karta), kruh zůstává. Zoom + a − se v Rodokmenu schovávají.
 - **Dřívější náhledy přehledu rodin** (24. 9. 2026). Kruhová „myšlenková mapa“ (rodiny v bublinách
   kolem středu, svítící tečky, tučné popisky, kroucené čáry) uživatel zamítl: „strašně ošklivé, čiší z toho AI“.
   Nenavrhovat znovu. Dva další náhledy uživatel viděl a nechal zatím ležet: **stará tištěná mapa** (rodokmen jako
