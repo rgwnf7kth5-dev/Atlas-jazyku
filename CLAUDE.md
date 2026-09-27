@@ -108,7 +108,7 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a živý web workflow Diag
   Kosovo, Severní Kypr a Somaliland kód nemají – ukáže se jen seznam jazyků z atlasu.
 - Náhled pro sdílení odkazu (og:image) je `static/nahled-cs.jpg` / `nahled-en.jpg`, ikonka `static/favicon.svg`
   (vkládá se do stránky) a `apple-touch-icon.png`. Build kopíruje `static/` do `dist/`. Obrázky vyrábí
-  `scripts/nahledy.mjs` (potřebuje Playwright) – po větší změně vzhledu je vyrob znovu. V `og:image` je soubor s otiskem obsahu
+  `scripts/nahledy.mjs` (potřebuje Playwright). Po přestavbě na medailony (27. 9. 2026) je uživatel **obnovovat nechce** („1 dělat nebudeme vůbec“) – nenavrhovat. V `og:image` je soubor s otiskem obsahu
   v názvu (`nahled-cs.<otisk>.jpg`, `NAHLED` v build.mjs, kopie v `dist/` i `dist/en/`): X a Facebook si obrázek pamatují podle adresy a po výměně obrázku ukazovaly
   starou upoutávku (uživatel 25. 9. 2026). Adresa webu je v `build.mjs` (`WEB`).
 - **Skupiny Glottologu, které nejsou rodinou**: umělé jazyky, pidžiny, smíšené jazyky a zvláštní způsoby mluvy

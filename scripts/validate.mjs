@@ -160,7 +160,7 @@ if (pd.uzly.length !== pd.nad.length) chyby.push("data/podrobnosti.json: strom p
 { const kody = new Set(json("data/glottolog.json").body.map(b => b[6]));   // česká jména teček (doplňky a opravy CLDR a Wikidat)
   for (const [k, v] of Object.entries(json("data/jazyky-cs.json"))) { if (k.startsWith("_")) continue;
     if (!kody.has(k)) chyby.push(`data/jazyky-cs.json: tečka „${k}“ v Glottologu není`);
-    if (typeof v !== "string" || !v.trim() || v !== v.trim()) chyby.push(`data/jazyky-cs.json: „${k}“ potřebuje české jméno`); } }
+    if (typeof v !== "string" || v !== v.trim()) chyby.push(`data/jazyky-cs.json: „${k}“ potřebuje české jméno (prázdné = zrušit chybné jméno z Wikidat)`); } }
 /* Jazyk dne: význačné dny (MM-DD → jazyk atlasu a důvod česky i anglicky) */
 { const dny = json("data/dny-jazyku.json");
   for (const [k, d] of Object.entries(dny)) {

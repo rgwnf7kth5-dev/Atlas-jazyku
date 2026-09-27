@@ -2560,6 +2560,46 @@ var AKVARELY = (function(){
     },
     /* písárna (přehledové stránky o písmu): stěna s oknem do krajiny, na dřevěném stole hliněná tabulka s klíny,
        rozvinutý svitek, vosková tabulka s rydlem, kalamář s rákosovým perem a olejová lampa */
+    /* příběh o spisovné češtině: bratrská tiskárna (jako v Kralicích) – dřevěný lis, archy na šňůře, otevřená bible, za oknem česká ves */
+    tiskarna: function(F, r){
+      const q = nahoda(F.sem + 1409);
+      let o = '<rect width="400" height="250" fill="#FBF7EE"/>';
+      const stena = "M-10 -10 L410 -10 L410 190 L-10 190 Z";
+      o += vrstva(F, stena, "#EDE0C6", "#D4C09C", .7);
+      /* trámový strop */
+      let tr = ""; for (let i = 0; i < 6; i++) tr += mnoho([[-10 + i * 84, 0], [30 + i * 84, 0], [30 + i * 84, 10], [-10 + i * 84, 10]]);
+      o += nanes(F, "M-10 -10 L410 -10 L410 12 L-10 12 Z", "#7A5A3C", .85) + nanes(F, tr, "#5E4028", .5);
+      /* okno s výhledem na pahorky, ves s červenými střechami a kostelní věží */
+      const ok = mnoho([[36, 34], [134, 34], [134, 132], [36, 132]]);
+      o += kryt(F, ok, F.jemna) + vrstva(F, ok, "#A8C6E0", "#ECE6D2", .85, F.jemna) +
+        vrstva(F, "M36 132 L36 98 Q70 84 100 92 Q120 96 134 90 L134 132 Z", "#9EB472", "#6E8A4A", .9, F.jemna) +
+        vrstva(F, "M36 132 L36 116 Q86 108 134 116 L134 132 Z", "#B8C27A", "#8A9A54", .9, F.jemna);
+      o += nanes(F, "M60 118 l0 -6 l6 -5 l6 5 l0 6 z M76 120 l0 -5 l5 -4 l5 4 l0 5 z M104 118 l0 -6 l6 -5 l6 5 l0 6 z", "#F2EADA", .95) +
+        nanes(F, "M59 112 l7 -6 l7 6 z M75 115 l6 -5 l6 5 z M103 112 l7 -6 l7 6 z", "#B8543A", .92) +
+        nanes(F, "M90 118 l0 -18 l6 0 l0 18 z", "#F2EADA", .95) + nanes(F, "M89 100 l4 -12 l4 12 z", "#5E6A58", .9);
+      o += skupina(F, F.stetec, tah("M36 34 L134 34 L134 132 L36 132 Z M85 34 L85 132 M36 83 L134 83", "#6A4E36", 3, .9) + tah("M30 136 L140 136", "#8A6E50", 4, .8));
+      /* šňůra s archy */
+      o += skupina(F, F.stetec, tah("M160 40 Q270 52 392 40", "#6A5A48", .9, .8));
+      for (let i = 0; i < 5; i++) { const x = 176 + i * 42, y = 44 + Math.sin(i / 4 * Math.PI) * 5;
+        const arch = mnoho([[x, y], [x + 26, y], [x + 26, y + 34], [x, y + 34]]);
+        o += kryt(F, arch, F.jemna) + vrstva(F, arch, "#FBF6EA", "#E2D8C0", .96, F.jemna);
+        let rd = ""; for (let k = 0; k < 7; k++) rd += "M" + f1(x + 4) + " " + f1(y + 6 + k * 3.8) + " l18 0 ";
+        o += skupina(F, F.stetec, tah(rd, "#4A4038", .7, .55) + tah("M" + f1(x + 13) + " " + f1(y - 2) + " l0 4", "#8A6E50", 1.4, .9)); }
+      /* dřevěný tiskařský lis */
+      const lis = "M246 190 L246 96 L258 96 L258 190 Z M338 190 L338 96 L350 96 L350 190 Z M240 96 L356 96 L356 108 L240 108 Z M240 150 L356 150 L356 158 L240 158 Z";
+      o += kryt(F, lis, F.jemna) + vrstva(F, lis, "#9A6E46", "#6A4628", .95, F.jemna);
+      o += nanes(F, "M293 108 L303 108 L303 132 L293 132 Z", "#5A4A3A", .9) + nanes(F, "M272 132 L324 132 L324 140 L272 140 Z", "#7A5A3A", .95) +
+        skupina(F, F.stetec, tah("M298 118 L338 112", "#4A3424", 3, .9)) + nanes(F, "M262 150 L334 150 L334 146 L262 146 Z", "#E8DCC4", .9);
+      /* stůl s otevřenou knihou (dva sloupce textu, červená iniciála) */
+      const deska = mnoho([[-10, 190], [410, 190], [410, 208], [-10, 208]]), cela = mnoho([[-10, 208], [410, 208], [410, 260], [-10, 260]]);
+      o += kryt(F, deska + cela, F.jemna) + vrstva(F, deska, "#B0804E", "#8A5E36", .95, F.jemna) + vrstva(F, cela, "#8A5E38", "#5E3E24", .95, F.jemna);
+      const kn = "M40 204 Q80 192 118 200 Q156 192 196 204 L192 176 Q156 166 118 172 Q80 166 44 176 Z";
+      o += kryt(F, kn, F.jemna) + vrstva(F, kn, "#FBF4E2", "#DCCCA8", .97, F.jemna) + skupina(F, F.stetec, tah("M118 172 L118 200", "#A8987A", .8, .7));
+      let t = ""; for (let k = 0; k < 6; k++) { const y = 180 + k * 3.4; t += "M54 " + f1(y) + " l26 -1 M84 " + f1(y - 1) + " l26 0 M126 " + f1(y - 1) + " l26 0 M156 " + f1(y) + " l26 1 "; }
+      o += skupina(F, F.stetec, tah(t, "#3E3630", .6, .6)) + nanes(F, "M54 178 l6 0 l0 7 l-6 0 z", "#B83A2E", .9);
+      o += nanes(F, "M214 200 l20 0 l0 -6 l-20 0 z M216 194 l16 0 l0 -5 l-16 0 z", "#6A4A30", .9);   // sazebnice s literami
+      return o;
+    },
     pisarna: function(F, r){
       const q = nahoda(F.sem + 521);
       let o = '<rect width="400" height="250" fill="#FBF7EE"/>';

@@ -1,5 +1,5 @@
 {
- "_pozn": "Česká jména teček (glottocode → název malým písmenem), která doplňují nebo opravují jméno z CLDR a Wikidat (data/podrobnosti.json, radky[i][9]). Build je použije přednostně. Jen ustálená jména, průhledné variety a znakové jazyky; ověřeno nezávislou kontrolou.",
+ "_pozn": "Česká jména teček (glottocode → název malým písmenem), která doplňují nebo opravují jméno z CLDR a Wikidat (data/podrobnosti.json, radky[i][9]). Build je použije přednostně; prázdné jméno zruší chybné jméno z Wikidat (ukáže se anglický název). Jen ustálená jména, průhledné variety a znakové jazyky; ověřeno nezávislou kontrolou.",
  "nort2628": "severní dolnosaština (Německo)",
  "assy1241": "asyrská novoaramejština",
  "adam1238": "znakový jazyk Adamorobe",
