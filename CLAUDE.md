@@ -478,7 +478,11 @@ posune do volné plochy vlevo (`spoctiPosun`), na telefonu pod glóbem jako lege
 (`{h, p, slova}`) a odkaz `#cesta-<id>`. Řadu pilulek nahoře v nabídce Příběhů uživatel 27. 9. 2026 zamítl („nemá logiku,
 nahoře jsou slova a teprve pod nimi o co jde; pilulky jsou nadbytečné, když ta slova jsou v článku“) – nevracet. Při ověření opraveno: něm. Kaffee
 přes fr. café (ne přímo z turečtiny), angl. dollar z dolnoněm. daler, Pomeranze ze středolat. pomerancia, české káva zavedli
-obrozenci podle pol. kawa (dříve kafe z němčiny; krok je přerušovaný). Nové slovo = kroky v datech + nezávislé ověření.
+obrozenci podle pol. kawa (dříve kafe z němčiny; krok je přerušovaný). Nové slovo = kroky v datech + nezávislé ověření. 27. 9. 2026 přibylo šest slov (čokoláda, rajče, šach a mat, alkohol,
+nula a cifra, šampon; tlačítka na stránce o čaji). Opraveno při ověření: české čokoláda z italštiny (č-, tvar čokolata), něm.
+Tomate z francouzštiny, rajče odvozeno od „rajské jablko“ (kalk rak.-něm. Paradeisapfel), „mat“ = perské māt ‚bezradný‘
+(„král zemřel“ je lidový výklad), akkadský zdroj arab. kuḥl nedoložený (krok vypuštěn), něm. Ziffer ze stfr. cifre, česká nula
+z latiny, shampoo 1762 = masáž těla v lázni.
 **Tři další civilizace** tentýž den: **Elam a Urartu** (`#elam-a-urartu`; tečka elamštiny se přesunula od Sumeru a Akkadu),
 **Turkuti a orchonské písmo** (`#orchon`/`#orkhon`; nové písmo `civ-orkh`, Noto Sans Old Turkic, zprava doleva; v rodokmenu
 písem uzel pod sogdským s přerušovanou čarou) a **Aztékové** (`#aztekove`/`#aztecs`; aztécké písmo Unicode nemá, jen fotky).
@@ -486,6 +490,19 @@ Při ověřování opraveno mj.: Dessetův protoelamský návrh je z 2022 (2020 
 písmo zapisovalo elamštinu, urartské opasky tepané (ne lité), citát „Slyšte, bekové“ je z východní strany Külteginovy stély,
 staroturkičtina není předkem všech turkických jazyků. Anglický štítek civilizací je jednotně „Languages of antiquity“.
 
+**Korea, Japonsko a Inkové** (27. 9. 2026, uživatel: „udělej body 2, 5, 6, 7“): `#korea` (Korea: čínské znaky a hangul;
+idu, hjangčchal, Tripitaka Koreana, Čikči, Sedžong a Hunmin čŏngŭm, tvar písmen), `#japonsko`/`#japan` (Japonsko: čínské
+znaky a kana; kanbun, man'jógana, vznik kany, heianské písemnictví, iroha) a `#inkove`/`#incas` (Inkové: kečuánština a kipu;
+tečky kečuánštiny přešly od Aztéků). Pořadí: Korea před Orchonem, Japonsko za ním, Inkové za Aztéky. Nová písma v `PISMA`:
+**kana** (`civ-kana`, Noto Serif JP) a **hangul** (`civ-hang`, Noto Serif KR); pole civilizace **`hanPismo`** přesměruje
+čínské znaky (`civ-han`) na japonské/korejské tvary (`--civ-han` na `<article>`, `rodinyPisma` načte správnou rodinu).
+Korejštinu přepisuje česká odborná transkripce (ŏ, ŭ, ä: Päkče, kugjŏl, Čŏng In-dži), japonštinu česká transkripce
+(Murasaki Šikibu, Kúkai). Rodokmen písem má uzly `kana` (pod čínským písmem) a `hangul` (samostatný kořen).
+Akvarely `machupikcu`, `heian`, `kjongbok`; ilustrace `malba.jpg` se renderuje z akvarelu 1200 × 630 (`xMidYMid slice`).
+Při ověření opraveno mj.: Doctrina Christiana „pokládaná za“ první knihu tištěnou v Jižní Americe, puquina ovlivněná ajmarštinou
+(ne naopak), Locke – tabule z knihy 1923; 甲/乙 jsou nebeské kmeny, Důvěrné sešity (Sei Šónagon), karate původně 唐手,
+čínskou předmluvu Kokinšú psal Ki no Jošimoči; 不冬 = andʌl, 主 v 善化公主主隱 stojí za -nim podle významu, hangul je u Sampsona
+„nejznámější příklad“ písma rysů, Den hangulu 1926 4. listopadu (9. října až od 1945).
 - Data `data/starovek.json`: `civilizace[]` s `id`, `adresa{cs,en}`, `krajina` (druh akvarelu), `tecky` (glottocody),
   `pisma` (písma Noto), `fotky{klic: soubor, sirka, vyska, autor, licence, licenceUrl, zdroj, cs, en}` a texty `cs`/`en`
   (`nazev, stitek, podtitul, perex, fakta, nazvyTecek, oddily[]`). Oddíly: `text, foto (siroka / na-vysku), rameček,
@@ -646,6 +663,13 @@ Dřívější náhledový artefakt https://claude.ai/artifact/XS67Gsv9d4y2pMu7UW
 - Klik na zemi ji jedním kliknutím podbarví a rozsvítí její jazyky (příznak 5); tlačítko „Zvýraznit na glóbu“
   zmizelo, protože po kliknutí už nic viditelného nedělalo. Zavřením okna zvýraznění zmizí.
 - Brána do jiných světů má i ve dne tmavé hvězdné nebe (`.scena.rezim-brana` přepíná textové barvy na noční).
+- **České názvy (27. 9. 2026):** do `glottolog-branches.cs.json` přibylo 725 větví (vnitřní uzly velkých rodin, které strom
+  popisuje) a nový soubor **`data/jazyky-cs.json`** (glottocode → české jméno; build ho použije přednostně před CLDR
+  a Wikidaty, validace hlídá kódy) má 776 jmen: znakové jazyky („guinejský znakový jazyk“), průhledné variety („súdánská
+  arabština“, „mixtéčtina (Peñoles)“) a ustálené názvy (monština, šorština). Opraveny i chyby z Wikidat (severní dolnosaština
+  vedená jako fríština, asyrská novoaramejština jako chaldejská, Lokono jako „arawacké jazyky“, americký znakový jazyk).
+  Vše prošlo nezávislou kontrolou. Nepřekládat vymyšlenými názvy – málo známé jazyky bez ustáleného českého jména zůstávají
+  anglicky. Zbývá: 142 rodin bez českého názvu, nesoulad „otomangejská“ (rodina) × „otomangueská“ (větev).
 - Přeložené jsou všechny větve na cestě rodokmenu u jazyků atlasu (576 názvů v `glottolog-branches.cs.json`,
   24. 9. 2026). Zbývají větve, které se objeví jen u ostatních teček nebo ve stromu, a anglická jména teček
   bez českého názvu (např. Dgèrnésiais, Jèrriais) – překládat postupně (přání uživatele).
