@@ -2446,6 +2446,81 @@ var AKVARELY = (function(){
           skupina(F, F.stetec, tah("M" + f1(x2 + 4 * s) + " " + f1(y2 - 1) + " l" + f1(-2 * s) + " " + f1(-9 * s) + " M" + f1(x2 - 2 * s) + " " + f1(y2 + 1) + " l" + f1(10 * s) + " " + f1(6 * s), "#4A3424", .9 * s, .9)); });
       return o + ptaci(F, r, 4, 110, 56);
     },
+    /* Inkové: horské město na sedle mezi štíty (jako Machu Picchu), terasy, kamenné domy bez střech, lamy, mraky v údolí */
+    machupikcu: function(F, r){
+      const q = nahoda(F.sem + 1307);
+      let o = nebe(F, "#7EA8D8", "#F0E8DA") + rasy(F, r, 2, 14, 40) + mraky(F, r, 2, 30, 60, 70);
+      o += hory(F, r, [[-10, 110], [40, 70], [90, 92], [140, 60], [190, 88], [250, 66], [320, 96], [410, 80]], 170, "#A6AEC4", "#76809E", 64, .1);
+      o += hory(F, r, [[-10, 150], [50, 118], [110, 134], [170, 112], [230, 138], [410, 150]], 176, "#6E9A70", "#3E6448", 0, .14);
+      o += mlha(F, 150, 172, .35);
+      /* strmý štít vpravo (jako Huayna Picchu) */
+      const stit = "M250 176 Q268 150 276 110 Q282 76 300 62 Q316 58 324 74 Q334 100 340 132 Q348 160 372 176 Z";
+      o += kryt(F, stit) + vrstva(F, stit, "#5E8A5A", "#2E5238", .95) + nanes(F, "M300 64 Q292 96 290 130 Q288 156 280 176 L262 176 Q274 150 280 112 Q286 80 300 64 Z", "#244030", .35);
+      o += mlha(F, 172, 184, .3);
+      /* sedlo s terasami */
+      const sedlo = "M-10 256 L-10 190 Q60 176 140 172 Q220 170 300 178 Q360 184 410 196 L410 256 Z";
+      o += kryt(F, sedlo) + vrstva(F, sedlo, "#8EB068", "#5E8446", .94);
+      let ter = ""; for (let i = 0; i < 7; i++) { const y = 188 + i * 9; ter += tah("M" + f1(-10 + i * 4) + " " + f1(y + 4) + " Q140 " + f1(y - 6) + " " + f1(280 - i * 8) + " " + f1(y + 2), "#8A8470", 2, .85); }
+      o += skupina(F, F.stetec, ter);
+      /* kamenné domy bez střech, některé s doškem */
+      let domy = "", zdi = "";
+      for (let i = 0; i < 16; i++) { const x = 70 + i * 13 + (q() - .5) * 4, y = 182 + (i % 3) * 4 + q() * 3, w = 9 + q() * 4, h = 5 + q() * 3;
+        domy += mnoho([[x, y], [x + w, y], [x + w, y - h], [x + w / 2, y - h - (i % 4 === 0 ? 4 : 0)], [x, y - h]]);
+        zdi += "M" + f1(x + 1) + " " + f1(y - h * .5) + " l" + f1(w - 2) + " 0 "; }
+      o += kryt(F, domy, F.jemna) + vrstva(F, domy, "#D6D0C2", "#A8A090", .96, F.jemna) + skupina(F, F.stetec, tah(zdi, "#8A8274", .6, .6));
+      [[82, 177], [134, 180], [186, 177]].forEach(function(d){ o += nanes(F, "M" + (d[0] - 7) + " " + (d[1] - 6) + " L" + d[0] + " " + (d[1] - 14) + " L" + (d[0] + 7) + " " + (d[1] - 6) + " Z", "#B89A5A", .92); });
+      o += lamy(F, [[40, 238, 1.5, "#EDE2CC"], [72, 244, 1.3, "#8A6A4E"], [330, 236, 1.4, "#5E4638"]]);
+      return o + trava(F, r, 90, 224, 254, ["#6E8A42", "#8EA24E", "#A8A45A"]);
+    },
+    /* Japonsko (Heian): síň s křídly nad jezírkem (jako Byódóin), javory, vrby, mlžné kopce */
+    heian: function(F, r){
+      const q = nahoda(F.sem + 1319);
+      let o = nebe(F, "#9AB8DC", "#F4E8DA") + rasy(F, r, 3, 16, 44);
+      o += hrebeny(F, [[112, 12, 70, 1.4, "#9EAEC0", .5], [132, 10, 56, 3, "#7E9A84", .3]]) + mlha(F, 124, 146, .4);
+      o += lesik(F, q, -10, 410, 160, .8, "#3E5E3E", false);
+      o += voda(F, r, "M-10 256 L-10 178 Q200 172 410 178 L410 256 Z", "#A8C2D4", "#5A86A8", 180, 250, 18);
+      /* hlavní síň s dvěma křídly a nárožními věžičkami */
+      const st = { stena: "#F0E6D4", strecha: "#3A3C44", sloup: "#C8482E", zvednuti: 1.8 };
+      o += sin(F, 120, 176, 50, 8, .8, st) + sin(F, 230, 176, 50, 8, .8, st);
+      o += sin(F, 174, 172, 52, 16, 1.1, { stena: "#F2E8D6", strecha: "#34363E", sloup: "#C8482E", zvednuti: 2.2, patra: 2 });
+      o += sin(F, 110, 170, 14, 10, .7, st) + sin(F, 276, 170, 14, 10, .7, st);
+      /* odraz */
+      o += '<g transform="matrix(1 0 0 -.45 0 256)" opacity=".28">' + sin(F, 174, 172, 52, 16, 1.1, { stena: "#F2E8D6", strecha: "#34363E", sloup: "#C8482E", zvednuti: 2.2, patra: 2 }) + "</g>";
+      /* javory s červeným listím a vrba */
+      [[36, 196, "#C8402E"], [70, 206, "#E0703A"], [350, 200, "#C8402E"], [384, 210, "#D8583A"]].forEach(function(t){
+        o += skupina(F, F.stetec, tah("M" + t[0] + " " + t[1] + " q-2 -10 2 -18 M" + t[0] + " " + (t[1] - 12) + " q-10 -6 -18 -8 M" + t[0] + " " + (t[1] - 14) + " q10 -6 18 -6", "#4A3428", 2, .9)) +
+          koruny(F, q, t[0] - 30, t[0] + 30, t[1] - 22, .75, t[2], .92, F.jemna); });
+      let vrba = ""; for (let i = 0; i < 16; i++) { const x = 300 + i * 2.4; vrba += tah("M" + f1(x) + " 150 q" + f1(3 + q() * 4) + " 20 " + f1(1 + q() * 3) + " " + f1(34 + q() * 12), "#7EA04A", .9, .8); }
+      o += skupina(F, F.stetec, tah("M306 196 q-2 -24 2 -46", "#4A3A2A", 2.2, .9) + vrba);
+      o += mostek(F, 20, 232, 60, 1, "#C8583E");
+      return o;
+    },
+    /* Korea (Čoson): dvoustřeší trůnní síň na kamenné terase (jako v paláci Kjongbokkung), žulový vrch za ní, nádvoří */
+    kjongbok: function(F, r){
+      const q = nahoda(F.sem + 1321);
+      let o = nebe(F, "#8CB4DE", "#F2EADA") + mraky(F, r, 2, 30, 60, 80);
+      /* žulový vrch se skalními plotnami (jako Bugaksan) a zalesněné úpatí */
+      const vrch = "M-10 170 L-10 132 Q30 116 70 112 Q100 96 130 92 Q150 72 176 70 Q196 66 214 74 Q236 70 256 82 Q282 86 300 100 Q340 104 370 116 Q396 122 410 126 L410 170 Z";
+      o += kryt(F, vrch) + vrstva(F, vrch, "#C4C0BA", "#8A8684", .9);
+      o += nanes(F, "M150 90 Q170 74 196 72 Q186 86 180 104 Q166 110 150 90 Z M232 84 Q252 84 270 94 Q258 104 244 106 Q236 96 232 84 Z", "#EAE6DE", .7) +
+        nanes(F, "M40 130 Q90 120 130 128 Q170 118 214 120 Q260 116 300 124 Q350 126 410 138 L410 170 L-10 170 Z", "#6E8A62", .55);
+      o += pas(F, q, 164, .55, "#3E6044") + mlha(F, 150, 170, .3);
+      /* nádvoří a zeď */
+      const nad = "M-10 256 L-10 204 L410 204 L410 256 Z";
+      o += kryt(F, nad) + vrstva(F, nad, "#E4DCCC", "#BCB2A0", .95);
+      let dl = ""; for (let i = 0; i < 12; i++) dl += tah("M" + f1(200 + (i - 6) * 34) + " 256 L" + f1(200 + (i - 6) * 14) + " 206", "#C8BEAC", .8, .6);
+      o += skupina(F, F.stetec, dl);
+      o += nanes(F, "M-10 184 L410 184 L410 196 L-10 196 Z", "#B8A890", .8) + nanes(F, "M-10 180 L410 180 L410 185 L-10 185 Z", "#3E4048", .85);
+      /* kamenná dvoustupňová terasa */
+      o += nanes(F, mnoho([[112, 206], [288, 206], [280, 196], [120, 196]]), "#D8D0C0", .96) + nanes(F, mnoho([[126, 196], [274, 196], [268, 188], [132, 188]]), "#E2DACB", .96);
+      /* trůnní síň: červené sloupy, zelený pás konzol, dvojitá prohnutá střecha */
+      o += sin(F, 146, 188, 108, 22, 1.2, { stena: "#A8382C", strecha: "#35373E", sloup: "#9A3026", zvednuti: 2.2, patra: 2 });
+      o += nanes(F, "M150 170 L250 170 L250 166 L150 166 Z", "#3E8A6E", .75);
+      /* borovice po stranách */
+      [[36, 240], [372, 242]].forEach(function(t){ o += skupina(F, F.stetec, tah("M" + t[0] + " " + t[1] + " C" + (t[0] - 6) + " " + (t[1] - 30) + " " + (t[0] + 12) + " " + (t[1] - 52) + " " + (t[0] - 4) + " " + (t[1] - 80), "#5A4232", 3.4, .92)) +
+        koruny(F, q, t[0] - 40, t[0] + 26, t[1] - 84, .8, "#2E5238", .92, F.jemna) + koruny(F, q, t[0] - 26, t[0] + 34, t[1] - 58, .6, "#3E6044", .9, F.jemna); });
+      return o;
+    },
     /* medailon Rodokmen: osamělá lípa na pahorku */
     lipa: function(F, r){
       const q = nahoda(F.sem + 901);

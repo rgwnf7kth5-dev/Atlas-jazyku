@@ -28,6 +28,8 @@ var STAROVEK = (function(){
     ["civ-pahl", "\\u{10B60}-\\u{10B7F}", "Noto Sans Inscriptional Pahlavi"],
     ["civ-sarab", "\\u{10A60}-\\u{10A7F}", "Noto Sans Old South Arabian"],
     ["civ-etio", "ሀ-᎟ⶀ-⷟", "Noto Serif Ethiopic"],
+    ["civ-kana", "぀-ヿㇰ-ㇿ", "Noto Serif JP"],
+    ["civ-hang", "ᄀ-ᇿ㄰-㆏ꥠ-꥿가-힯ힰ-퟿", "Noto Serif KR"],
     ["civ-han", "㐀-䶿一-鿿", "Noto Serif TC"],
     ["civ-run", "ᚠ-᛿", "Noto Sans Runic"],
     ["civ-orkh", "\\u{10C00}-\\u{10C4F}", "Noto Sans Old Turkic"],
@@ -140,7 +142,8 @@ var STAROVEK = (function(){
   }
   function html(c, lang, o){
     const L = c[lang], U = o.U;
-    return '<article class="civ" lang="' + lang + '">' +
+    /* čínské znaky v japonském nebo korejském textu mají mít japonské / korejské tvary: c.hanPismo („Noto Serif JP“) */
+    return '<article class="civ" lang="' + lang + '"' + (c.hanPismo ? ' style="--civ-han:&quot;' + esc(c.hanPismo) + '&quot;"' : "") + ">" +
       '<header class="civ-hero"><div class="civ-malba">' + (o.malba || "") + '</div><div class="civ-titul"><p class="civ-stitek">' + esc(L.stitek) + '</p><h1 id="civ-nadpis">' + esc(L.nazev) +
       '</h1><p class="civ-podtitul">' + esc(L.podtitul) + "</p></div></header>" +
       '<div class="civ-telo">' + (L.fakta && L.fakta.length ? '<aside class="civ-fakta" aria-label="' + esc(U.vKostce) + '"><h2>' + esc(U.vKostce) + "</h2><dl>" +
@@ -159,7 +162,7 @@ var STAROVEK = (function(){
   /* rodiny písem, které stránka potřebuje (podle znaků, které v ní opravdu jsou) */
   function rodinyPisma(c){
     const r = [];
-    for (const z of znakyPisma(c)) for (const p of PISMA) if (p[1].test(z) && r.indexOf(p[3]) < 0) r.push(p[3]);
+    for (const z of znakyPisma(c)) for (const p of PISMA) { const f = p[0] === "civ-han" && c.hanPismo || p[3]; if (p[1].test(z) && r.indexOf(f) < 0) r.push(f); }
     return r;
   }
   function odkazPisma(c){

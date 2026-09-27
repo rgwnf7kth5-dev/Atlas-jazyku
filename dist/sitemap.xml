@@ -1117,10 +1117,22 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/ancient/aksum/"/>
   </url>
   <url>
+    <loc>https://atlasjazyku.cz/starovek/korea/</loc>
+    <lastmod>2026-09-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/starovek/korea/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/ancient/korea/"/>
+  </url>
+  <url>
     <loc>https://atlasjazyku.cz/starovek/orchon/</loc>
     <lastmod>2026-09-27</lastmod>
     <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/starovek/orchon/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/ancient/orkhon/"/>
+  </url>
+  <url>
+    <loc>https://atlasjazyku.cz/starovek/japonsko/</loc>
+    <lastmod>2026-09-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/starovek/japonsko/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/ancient/japan/"/>
   </url>
   <url>
     <loc>https://atlasjazyku.cz/starovek/slovane/</loc>
@@ -1139,6 +1151,12 @@
     <lastmod>2026-09-27</lastmod>
     <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/starovek/aztekove/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/ancient/aztecs/"/>
+  </url>
+  <url>
+    <loc>https://atlasjazyku.cz/starovek/inkove/</loc>
+    <lastmod>2026-09-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/starovek/inkove/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/ancient/incas/"/>
   </url>
   <url>
     <loc>https://atlasjazyku.cz/pribehy/caj/</loc>

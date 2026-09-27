@@ -15,6 +15,9 @@ const jazykyAtlasu = json("data/languages.json");
 const nazvyZemi = json("data/country-names.json");
 const glottolog = json("data/glottolog.json");
 const podrobnosti = json("data/podrobnosti.json");
+/* česká jména teček, která doplňují nebo opravují CLDR a Wikidata (data/jazyky-cs.json); platí pro aplikaci i statické stránky */
+{ const jm = json("data/jazyky-cs.json"), kde = new Map(glottolog.body.map((b, i) => [b[6], i]));
+  for (const [k, v] of Object.entries(jm)) if (!k.startsWith("_") && kde.has(k)) podrobnosti.radky[kde.get(k)][9] = v; }
 const rodinyCz = json("data/glottolog-families.cs.json");
 const svet = cti("data/countries-110m.json");
 const knihovny = ["vendor/d3-array.min.js", "vendor/d3-geo.min.js", "vendor/topojson-client.min.js"].map(cti);
