@@ -8424,8 +8424,12 @@ var strom = (function(){   // var: filtry a texty se na něj ptají dřív, než
     const st = getComputedStyle(document.documentElement), v = function(n){ return st.getPropertyValue(n).trim(); };
     const pap = denni ? "#FBF9F4" : "#0A1024";
     BP = {pap: pap, text: v("--text"), text2: v("--text2"), akcent: v("--akcent") || "#D23A2B", ram1: v("--med-ram1"), ram2: v("--med-ram2"), mp: v("--med-papir"), mp2: v("--med-papir2"),
-      r: {ie: v("--r-ie"), st: v("--r-st"), an: v("--r-an"), afro: v("--r-afro"), nk: v("--r-nk"), ost: v("--r-ost"), mimo: denni ? "#8C92A0" : "#5E6680"},
-      vit: [0, 1, 2, 3, 4, 5, 6].map(function(k){ return v("--vit-" + k); }), nic: v("--vit-nic")};
+      vit: [0, 1, 2, 3, 4, 5, 6].map(function(k){ return v("--vit-" + k); }), nic: v("--vit-nic"),
+      /* akvarel (uživatel vybral 27. 9. 2026 ze tří návrhů): tlumené zemité odstíny rodin, pořadí jako --r-*; validátor palet
+         prošel ve dne na #FBF9F4 i v noci na #0A1024 (sousední dvojice, CVD). Neměnit bez nového ověření. */
+      z: denni ? {ie: "#3D6CC0", st: "#C8553D", an: "#16968A", afro: "#C98A1A", nk: "#1F7448", ost: "#9055B0", mimo: "#9A9282"}
+               : {ie: "#5B82C8", st: "#CF6450", an: "#239A8C", afro: "#B8892A", nk: "#2A7F4E", ost: "#9B6CC4", mimo: "#6E6A60"},
+      sepie: denni ? "#B9A57F" : "#6B5B45"};
   }
   const hexP = function(h){ h = h.replace("#", ""); if (h.length === 3) h = h.replace(/./g, "$&$&"); return [0, 2, 4].map(function(i){ return parseInt(h.slice(i, i + 2), 16); }); };
   const michP = function(a, b, t){ const x = hexP(a), y = hexP(b); return "#" + x.map(function(c, i){ return Math.round(c + (y[i] - c) * t).toString(16).padStart(2, "0"); }).join(""); };
@@ -8435,11 +8439,11 @@ var strom = (function(){   // var: filtry a texty se na něj ptají dřív, než
       if (t.i != null) { const v = radek(t.i)[0]; return v != null && v >= 0 ? BP.vit[v] : BP.nic; }
       return michP(BP.text2, BP.pap, 0.55 + Math.min(0.25, (t.d - pohledP.d) * 0.06));
     }
-    const zak = BP.r[t.k] || BP.r.ost;
-    let hr = t.d; for (let x = t; x.p && x.p.d >= 1 && x.p.k === t.k; x = x.p) hr = x.p.d;
-    if (t.d <= 1) return t.k === "ost" && (t.ix || 0) % 2 ? michP(zak, BP.pap, 0.18) : zak;
-    return michP(zak, BP.pap, Math.min(0.66, 0.08 + (t.d - hr) * 0.13) + ((t.ix || 0) % 2 ? 0.12 : 0));
+    const rel = Math.max(1, Math.round(t.d - pohledP.d)), zak = michP(BP.z[t.k] || BP.z.ost, BP.sepie, 0.12);   // vybledne k okraji kruhu
+    return michP(zak, BP.pap, Math.min(0.84, [0, 0.3, 0.48, 0.6, 0.7, 0.78][Math.min(5, rel)] + ((t.ix || 0) % 2 ? 0.07 : 0)));
   }
+  /* tečka a proužek v seznamu: plná barva rodiny (výseče jsou světlejší) */
+  function barvaBodu(t){ return vitalitaZap ? barvaP(t) : michP(BP.z[t.k] || BP.z.ost, BP.pap, 0.15); }
   /* geometrie: volná plocha mezi kartou, panelem a medailony */
   function geometrie(){
     const r = prehledC.getBoundingClientRect(), dpr = Math.min(window.devicePixelRatio || 1, 2);
@@ -8474,16 +8478,20 @@ var strom = (function(){   // var: filtry a texty se na něj ptají dřív, než
       cP.beginPath(); cP.arc(cx, cy, r1, s0, s1); cP.arc(cx, cy, r0, s1, s0, true); cP.closePath();
       let f = barvaP(t);
       if (najetoP && (t === najetoP || jePredekP(t, najetoP))) f = michP(f, denni ? "#000000" : "#FFFFFF", t === najetoP ? 0.14 : 0.06);
-      cP.fillStyle = f; cP.fill(); cP.lineWidth = 1; cP.strokeStyle = BP.pap; cP.stroke();
+      if (!vitalitaZap && (a1 - a0) * r1 > 6) {       // akvarel: barva se k okraji výseče sytí a okraj ztmavne jako zaschlá barva
+        const gg = cP.createRadialGradient(cx, cy, r0, cx, cy, r1); gg.addColorStop(0, michP(f, BP.pap, 0.35)); gg.addColorStop(1, f);
+        cP.fillStyle = gg; cP.fill(); cP.lineWidth = 2; cP.strokeStyle = BP.pap; cP.stroke();
+        cP.beginPath(); cP.arc(cx, cy, r1 - 1, s0, s1); cP.lineWidth = 1.2; cP.strokeStyle = michP(f, BP.z[t.k] || BP.z.ost, 0.45); cP.globalAlpha = 0.7; cP.stroke(); cP.globalAlpha = 1;
+      } else { cP.fillStyle = f; cP.fill(); cP.lineWidth = 1; cP.strokeStyle = BP.pap; cP.stroke(); }
       if (vybrany && t.i != null && t.i === (vybrany.typ === "atlas" ? BOD_ATLASU[vybrany.id] : vybrany.i)) { cP.lineWidth = 2.5; cP.strokeStyle = BP.akcent; cP.stroke(); }
       if (rel <= 3.2) popisky.push([t, a0, a1, r0, r1, f]);
     }
     cP.textBaseline = "middle";
     for (const p of popisky) {
       const t = p[0], a0 = p[1], a1 = p[2], r0 = p[3], r1 = p[4], rm = (r0 + r1) / 2, oblouk = (a1 - a0) * rm, tl = r1 - r0, vel = rm < g.R * 0.55 ? 12.5 : 11.5;
-      cP.font = (t.d - pohledP.d <= 1.2 ? "600 " : "500 ") + vel + "px Outfit, system-ui, sans-serif";
+      cP.font = t.d - pohledP.d <= 1.2 ? "600 " + (vel + 1.5) + "px 'Playfair Display', Georgia, serif" : "500 " + vel + "px Outfit, system-ui, sans-serif";
       let s = nazevP(t), w = cP.measureText(s).width;
-      cP.fillStyle = jasP(p[5]) > 0.6 ? "#15192B" : "#FFFFFF";
+      cP.fillStyle = jasP(p[5]) > 0.6 ? "#15192B" : denni ? "#FFFFFF" : "#EAF4FF";
       const am = (a0 + a1) / 2 - Math.PI / 2;
       if (oblouk > w + 14 && tl > vel + 4) {
         cP.save(); cP.translate(cx + Math.cos(am) * rm, cy + Math.sin(am) * rm);
@@ -8552,14 +8560,14 @@ var strom = (function(){   // var: filtry a texty se na něj ptají dřív, než
     const max = Math.max.apply(null, deti.map(function(x){ return x.s; })), LIMIT = 80;
     deti.slice(0, LIMIT).forEach(function(ch){
       const li = prvek("li"), b = prvek("button", "prehled-radek"); b.type = "button"; b._u = ch;
-      const bod = prvek("i", "bod"); bod.style.background = barvaP(ch); b.appendChild(bod);
+      const bod = prvek("i", "bod"); bod.style.background = barvaBodu(ch); b.appendChild(bod);
       const jm = prvek("span", "jm", nazevP(ch));
       const pod = ch.c ? (ch.a && ch.a.length ? ch.a.slice(0, 5).map(function(i){ return velke(jmenoBodu(i)); }).join(", ") : "") : kdeBod(ch.i);
       if (pod) jm.appendChild(prvek("small", null, pod));
       b.appendChild(jm);
       b.appendChild(prvek("span", "n", ch.c ? cislo(ch.s) : ""));
       const dal = prvek("span", "dal", ch.c ? "›" : ""); dal.setAttribute("aria-hidden", "true"); b.appendChild(dal);
-      if (ch.c) { const pr = prvek("span", "pruh"), i = prvek("i"); i.style.width = (100 * ch.s / max) + "%"; i.style.background = barvaP(ch); pr.appendChild(i); b.appendChild(pr); }
+      if (ch.c) { const pr = prvek("span", "pruh"), i = prvek("i"); i.style.width = (100 * ch.s / max) + "%"; i.style.background = barvaBodu(ch); pr.appendChild(i); b.appendChild(pr); }
       b.addEventListener("click", function(){ if (ch.c) zamerP(ch); else vyberBod(ch.i); });
       b.addEventListener("pointerenter", function(e){ if (e.pointerType === "mouse") { najetoP = ch; kresliP(); } });
       b.addEventListener("pointerleave", function(e){ if (e.pointerType === "mouse") { najetoP = null; kresliP(); } });
@@ -8567,7 +8575,7 @@ var strom = (function(){   // var: filtry a texty se na něj ptají dřív, než
     });
     $("prehled-vic").hidden = deti.length <= LIMIT; $("prehled-vic").textContent = T.prehled.dalsich.replace("{n}", cislo(deti.length - LIMIT));
     const lg = $("prehled-legenda"); lg.textContent = ""; lg.hidden = vitalitaZap;   // barvy vitality vysvětluje #vit-legenda
-    if (!vitalitaZap) { nactiBarvyP(); T.prehled.legenda.forEach(function(x){ const s = prvek("span"), i = prvek("i"); i.style.background = BP.r[x[0]]; s.appendChild(i); s.appendChild(document.createTextNode(x[1])); lg.appendChild(s); }); }
+    if (!vitalitaZap) { nactiBarvyP(); T.prehled.legenda.forEach(function(x){ const s = prvek("span"), i = prvek("i"); i.style.background = BP.z[x[0]]; s.appendChild(i); s.appendChild(document.createTextNode(x[1])); lg.appendChild(s); }); }
   }
   function prehledZap(z){
     prehled = !!z;

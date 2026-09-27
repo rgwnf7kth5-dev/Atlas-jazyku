@@ -312,8 +312,13 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a živý web workflow Diag
   „Zpět na rodokmen“. Nedělat z kruhu znovu výchozí pohled. Plátno `#prehled` a panel `#prehled-panel` uvnitř modulu `strom`
   (`postavPrehled`, `kresliP`, `zamerP`, `panel`, `prehledZap`). Šířka výseče = počet jazyků (filtry platí), 5 prstenců,
   klepnutí na výseč z ní udělá nový střed (plynulý přechod 520 ms, `prefers-reduced-motion` bez něj), střed = o úroveň výš,
-  najetí myší ukáže název a počet ve středu. Střed je medailon (`--med-*`). Barvy rodin z `--r-*` (odstín podle hloubky
-  a střídání sourozenců), se zapnutými barvami vitality mají jazyky barvu stupně. Rodiny pod 25 jazyků jsou pod „Menší
+  najetí myší ukáže název a počet ve středu. Střed je medailon (`--med-*`). **Vzhled „akvarel“** (uživatel 27. 9. 2026 vybral
+  B ze tří návrhů – Kartotéka, Akvarel, Stará mapa; syté `--r-*` „nějak neladí ke zbytku webu“): vlastní tlumená zemitá paleta
+  `BP.z` v `nactiBarvyP` (den `#3D6CC0 #C8553D #16968A #C98A1A #1F7448 #9055B0`, noc `#5B82C8 #CF6450 #239A8C #B8892A #2A7F4E #9B6CC4`,
+  pořadí jako `--r-*`, obě prošly validátorem palet; neměnit bez nového ověření), trochu sépie, k okraji kruhu vybledá;
+  výseč se k vnějšímu okraji sytí (radiální přechod) a má tmavší okraj jako zaschlá barva – jen výseče širší než 6 px, kvůli výkonu.
+  Názvy prvního prstence Playfair Display. Tečky a proužky v seznamu a legenda mají plnou barvu z `BP.z` (`barvaBodu`).
+  Se zapnutými barvami vitality mají jazyky barvu stupně. Rodiny pod 25 jazyků jsou pod „Menší
   rodiny“, izolované, znakové a umělé jazyky a pidžiny pod „Mimo rodiny“; průchozí větve se přeskakují. Panel vpravo
   (na telefonu pod kruhem, nejvýš 52 vh): cesta, název, počty, „Otevřít rodokmen rodiny“ (vějíř), seznam dětí s poměrným
   proužkem a jazyky atlasu kurzívou (obdoba tištěného seznamu z 24. 9.), legenda barev. Klepnutí na jazyk ho vybere (karta), kruh zůstává. Zoom + a − se v Rodokmenu schovávají.
