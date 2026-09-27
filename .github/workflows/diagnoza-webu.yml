@@ -46,5 +46,9 @@ jobs:
           done
           grep -oE '<meta (property|name)="twitter:[^"]*" content="[^"]*"' /tmp/o
           echo "--- HTTP/1.1"; curl -sS -m 30 --http1.1 -A "$UA_X" -o /tmp/i -D - "$img" | head -12; file /tmp/i
+          echo "=================== stará adresa atlasoflanguages.netlify.app (má přesměrovat 301 na nové domény)"
+          for u in https://atlasoflanguages.netlify.app/ https://atlasoflanguages.netlify.app/en/ https://atlasoflanguages.netlify.app/jazyk/cestina/ https://atlasoflanguages.netlify.app/en/language/czech/ "https://atlasoflanguages.netlify.app/?den-jazyku"; do
+            echo "--- $u"; curl -sS -m 30 -o /dev/null -D - "$u" | grep -iE "^HTTP|^location" || true
+          done
           echo "=================== stará adresa obrázku"
           curl -sS -m 30 -o /dev/null -L https://atlasoflanguages.netlify.app/nahled-cs.jpg -w "HTTP %{http_code} %{url_effective} %{size_download}\n"

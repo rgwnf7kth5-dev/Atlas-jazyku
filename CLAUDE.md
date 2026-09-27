@@ -30,7 +30,7 @@ ani `www` platný certifikát (Netlify posílal `*.netlify.app`) a X ani Faceboo
 **Adresy v buildu jsou od 25. 9. 2026 na nových doménách** (`DOMENA`, `WEB(cesta)` v build.mjs; Facebook ukazoval
 odkaz bez obrázku, protože og:url mířil na netlify.app): canonical, og:url, og:image a hreflang každé stránky míří na
 její doménu, anglické bez `/en/`. Každá doména má vlastní `robots.txt` a `sitemap.xml` (anglické v `dist/en/`).
-`atlasoflanguages.netlify.app` zatím nepřesměrovává (dokud `atlasjazyku.cz` nemá certifikát, rozbilo by to web). Odkaz na druhou jazykovou verzi
+**`atlasoflanguages.netlify.app` od 27. 9. 2026 přesměrovává** (301) na nové domény: edge funkce `netlify/edge-functions/stara-adresa.js` (`/en/…` → thelanguageatlas.com, ostatní → atlasjazyku.cz, cesta i parametry zůstávají; náhledy pull requestů `deploy-preview-…` ne). Diagnóza webu to vypisuje v oddílu „stará adresa“. Odkaz na druhou jazykovou verzi
 vede na vlastních doménách na druhou doménu (`korenVerze` v app.js, statické stránky přes `WEB`) a přepnutí na místě
 tam nemění adresu. **Google Search Console** (25. 9. 2026): služby s předponou URL `https://atlasjazyku.cz/`
 a `https://thelanguageatlas.com/`, ověření značkou HTML – kódy jsou v `GOOGLE_OVERENI` v build.mjs a build je dává
