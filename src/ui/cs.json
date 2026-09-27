@@ -266,7 +266,7 @@
  "sdiletOdkaz": "Zkopírovat odkaz na tento jazyk",
  "sdiletHotovo": "Odkaz byl zkopírován.",
  "zobrazeni": "Nastavení",
- "zobrazeniPopis": "Otáčení, jména, znakové jazyky a vitalita",
+ "zobrazeniPopis": "Otáčení, jména a znakové jazyky",
  "zavritPanel": "Zavřít",
  "kartaVic": "Zobrazit více",
  "zalozkaPrehled": "Přehled",
@@ -462,8 +462,8 @@
  "zpetnaPredmet": "Atlas jazyků – zpětná vazba",
  "zpetnaPopis": "Napsat e-mail se zpětnou vazbou",
  "patickaSouhrn": "O atlasu, zdroje, kontakt, návod a kalendář",
- "vitalitaDokPopis": "Obarvit jazyky podle stupně ohrožení (UNESCO)",
- "vitalitaLegendaPopis": "Stupně vitality – klepnutím lze vybrat, které zobrazit",
+ "vitalitaDokPopis": "Vitalita jazyků: stupně ohrožení podle UNESCO, čísla a zdroje",
+ "vitalitaLegendaPopis": "Stupně vitality – klepnutím se otevře stránka Vitalita",
  "denJazykuNadpis": "Evropské jazyky",
  "denJazykuGlobus": "Ukázat všechny na glóbu",
  "evropaNadpis": "{n} evropských jazyků",
@@ -530,9 +530,9 @@
     "p": [
      "Kulatá tlačítka pod glóbem (na telefonu ve dvou řadách) otevírají hlavní části atlasu: Jazyky starověku, Příběhy jazyků, Rodokmen, Mapy, Vitalitu a Nastavení. Náhodný jazyk je v záhlaví seznamu jazyků vedle počtu jazyků a otevře kartu náhodně vybraného jazyka.",
      "Rodokmen zobrazí strom celé jazykové rodiny podle Glottologu. Tažením se posouvá, kolečkem nebo dvěma prsty přibližuje, klepnutí na větev ji zvětší, klepnutí na jazyk ho vybere.",
-     "Vitalita obarví jazyky podle stupně ohrožení na stupnici UNESCO a zobrazí legendu; klepnutím na legendu lze vybrat, které stupně se mají zobrazit.",
+     "Vitalita otevře stránku o ohrožení jazyků: počty jazyků v jednotlivých stupních stupnice UNESCO, rozložení podle oblastí světa, ohrožené jazyky atlasu, probouzené jazyky a metodiku se zdroji. Na ní lze glóbus obarvit podle vitality a zaškrtnutím vybrat, které stupně zůstanou vidět (filtr). Při zapnutých barvách je pod glóbem legenda; klepnutím na ni se stránka otevře znovu. Stránku otevře i odkaz na kartě jazyka a adresa #vitalita.",
      "Mapy otevřou přehled všech barevných map s náhledy: písmo, vitalita a 24 typologických vlastností podle WALS. Výběr mapy okno zavře a glóbus obarví.",
-     "Nastavení: samočinné otáčení, názvy jazyků, znakové jazyky (všechny, bez nich, nebo jen ony) a filtr vitality (které stupně ohrožení se mají zobrazit).",
+     "Nastavení: samočinné otáčení, názvy jazyků a znakové jazyky (všechny, bez nich, nebo jen ony).",
      "Přiblížení a oddálení (+ a −) a tlačítko Celý svět jsou nenápadně vpravo nahoře na glóbu, pod otazníkem s nápovědou; na telefonu se přibližuje dvěma prsty."
     ]
    },
@@ -656,6 +656,51 @@
  "mapyPismoPopis": "hlavní písmo jazyka · Unicode CLDR",
  "mapyVitalitaPopis": "stupeň ohrožení · UNESCO, Glottolog",
  "medVRodokmenu": "V rodokmenu nejsou barevné mapy k dispozici – přepněte zpět na glóbus",
+ "vitStranka": {
+  "nadpis": "Vitalita jazyků",
+  "podtitul": "Jak jsou jazyky světa ohrožené · stupnice UNESCO",
+  "uvod": "Vitalita vyjadřuje, zda se jazyk předává další generaci. Atlas používá šestistupňovou stupnici UNESCO od bezpečného po vymřelý jazyk a zvlášť vyznačuje jazyky probouzené – vymřelé jazyky, které se lidé znovu učí a používají. Údaje pocházejí z Glottologu a týkají se všech {n} jazyků na glóbu.",
+  "cislaBezpecne": "bezpečných",
+  "cislaOhrozene": "ohrožených (zranitelný až kriticky ohrožený)",
+  "cislaVymrele": "vymřelých",
+  "cislaProbouzene": "probouzených",
+  "souhrn": "V některém stupni ohrožení je {n} jazyků, tedy {p} všech jazyků v Glottologu.",
+  "barvyZap": "Obarvit glóbus podle vitality",
+  "barvyVyp": "Vypnout barvy vitality na glóbu",
+  "stupneH": "Stupně vitality",
+  "stupneUvod": "Délka pruhu odpovídá počtu jazyků. Zaškrtnuté stupně zůstávají vidět na glóbu, v seznamu i ve vyhledávání; odškrtnutím se jazyky daného stupně skryjí (filtr platí i bez barev).",
+  "filtrTitulek": "Zobrazit nebo skrýt jazyky tohoto stupně",
+  "filtrVse": "Všechny",
+  "filtrOhrozene": "Jen ohrožené",
+  "bezUdajePopis": "Glottolog u jazyka stupeň ohrožení neuvádí.",
+  "oblastiH": "Podle oblastí světa",
+  "oblastiUvod": "Oblasti jsou makrooblasti Glottologu. Pruh ukazuje, jakou část jazyků oblasti tvoří jednotlivé stupně (barvy jako výše).",
+  "oblastiSloupce": [
+   "Oblast",
+   "Jazyků",
+   "Ohrožených",
+   "Vymřelých"
+  ],
+  "atlasH": "Ohrožené jazyky v atlasu",
+  "atlasUvod": "Jazyky s podrobnou kartou, které jsou podle Glottologu v některém stupni ohrožení nebo se probouzejí, od nejohroženějších. Klepnutím se otevře karta jazyka.",
+  "probouzeneH": "Probouzené jazyky",
+  "probouzeneUvod": "Jazyků, které na stupnici UNESCO vycházejí jako vymřelé, ale lidé se je znovu učí a používají, je {n}. Glottolog je jako samostatný stupeň nevede; atlas je rozpoznává podle poznámky „Awakening“ (Katalog ohrožených jazyků) nebo „Reawakening“ (Ethnologue) u údaje o ohrožení. Klepnutím se jazyk ukáže na glóbu.",
+  "pribehStitek": "Příběhy jazyků",
+  "metodikaH": "Metodika a zdroje",
+  "metodika": [
+   "Stupně vycházejí z kritéria mezigeneračního předávání v dokumentu expertní skupiny UNESCO Language Vitality and Endangerment (2003); stejnou šestistupňovou stupnici používá Atlas of the World’s Languages in Danger (Moseley 2010).",
+   "Glottolog uvádí u každého jazyka souhrnný stupeň ohrožení (Agglomerated Endangerment Status, AES), sestavený z údajů UNESCO, Ethnologue a Katalogu ohrožených jazyků (ElCat). Jeho stupně odpovídají stupnici UNESCO jedna k jedné: not endangered = bezpečný, threatened = zranitelný, shifting = jednoznačně ohrožený, moribund = vážně ohrožený, nearly extinct = kriticky ohrožený, extinct = vymřelý.",
+   "Hodnocení pocházejí z různých let a zdroje se v nich někdy rozcházejí; stupeň je proto orientační údaj, ne přesné měření. Mezi vymřelými jsou i jazyky doložené jen historicky, například chetitština, sumerština nebo latina. U {n} jazyků údaj chybí. Data Glottologu byla stažena {d}."
+  ],
+  "zdroje": [
+   "UNESCO Ad Hoc Expert Group on Endangered Languages (2003): Language Vitality and Endangerment. Paříž: UNESCO.",
+   "Moseley, Christopher (ed.) (2010): Atlas of the World’s Languages in Danger. 3. vyd. Paříž: UNESCO Publishing.",
+   "Hammarström, Harald; Castermans, Thom; Forkel, Robert; Verbeek, Kevin; Westenberg, Michel A.; Speckmann, Bettina (2018): Simultaneous Visualization of Language Endangerment and Language Description. Language Documentation & Conservation 12, 359–392.",
+   "Hammarström, Harald; Forkel, Robert; Haspelmath, Martin; Bank, Sebastian: Glottolog. Lipsko: Max Planck Institute for Evolutionary Anthropology. https://glottolog.org",
+   "Catalogue of Endangered Languages (ElCat). University of Hawaiʻi at Mānoa. https://www.endangeredlanguages.com"
+  ],
+  "odkazKarta": "Vitalita jazyků světa ›"
+ },
  "mapyPopis": "Barevné mapy jazyků: písmo, vitalita a typologie (WALS)",
  "pribehyTlacitko": "Příběhy jazyků: cesty slov, proměny jazyků, obnova a záhady",
  "starovekTlacitko": "Jazyky starověku: stránky o civilizacích, jejich jazyce a písmu"

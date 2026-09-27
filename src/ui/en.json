@@ -266,7 +266,7 @@
  "sdiletOdkaz": "Copy a link to this language",
  "sdiletHotovo": "Link copied.",
  "zobrazeni": "Settings",
- "zobrazeniPopis": "Spin, names, sign languages and vitality",
+ "zobrazeniPopis": "Spin, names and sign languages",
  "zavritPanel": "Close",
  "kartaVic": "Show more",
  "zalozkaPrehled": "Overview",
@@ -462,8 +462,8 @@
  "zpetnaPredmet": "The Language Atlas – feedback",
  "zpetnaPopis": "Send feedback by e-mail",
  "patickaSouhrn": "About, sources, contact, guide and calendar",
- "vitalitaDokPopis": "Colour languages by degree of endangerment (UNESCO)",
- "vitalitaLegendaPopis": "Vitality levels – click to choose which to show",
+ "vitalitaDokPopis": "Language vitality: degrees of endangerment on the UNESCO scale, figures and sources",
+ "vitalitaLegendaPopis": "Degrees of vitality – click to open the Vitality page",
  "denJazykuNadpis": "Languages of Europe",
  "denJazykuGlobus": "Show them all on the globe",
  "evropaNadpis": "{n} languages of Europe",
@@ -530,9 +530,9 @@
     "p": [
      "The round buttons below the globe (in two rows on a phone) open the main parts of the atlas: Ancient languages, Language stories, Family tree, Maps, Vitality and Settings. Random language sits in the header of the language list, next to the language count, and opens the card of a randomly selected language.",
      "Family tree shows the tree of a whole language family after Glottolog. Drag to move, use the wheel or two fingers to zoom, click a branch to focus on it and click a language to select it.",
-     "Vitality colours the languages by degree of endangerment on the UNESCO scale and shows a key; click the key to choose which levels to show.",
+     "Vitality opens a page on language endangerment: the number of languages in each degree of the UNESCO scale, the breakdown by world region, endangered languages in the atlas, awakening languages, and the method with sources. From there you can colour the globe by vitality and tick which degrees stay visible (a filter). While the colours are on, a key sits below the globe; click it to open the page again. The page also opens from a link on the language card and from the address #vitality.",
      "Maps opens an overview of all colour maps with previews: script, vitality and 24 typological features from WALS. Choosing a map closes the window and colours the globe.",
-     "Settings: automatic rotation, language names, sign languages (all, none or only these) and the vitality filter (which degrees of endangerment to show).",
+     "Settings: automatic rotation, language names and sign languages (all, none or only these).",
      "Zoom in and out (+ and −) and the Whole world button sit discreetly at the top right of the globe, below the help question mark; on a phone, pinch with two fingers to zoom."
     ]
    },
@@ -656,6 +656,51 @@
  "mapyPismoPopis": "main script of the language · Unicode CLDR",
  "mapyVitalitaPopis": "degree of endangerment · UNESCO, Glottolog",
  "medVRodokmenu": "Colour maps are not available in the family tree – switch back to the globe",
+ "vitStranka": {
+  "nadpis": "Language vitality",
+  "podtitul": "How endangered are the world’s languages · the UNESCO scale",
+  "uvod": "Vitality describes whether a language is being passed on to the next generation. The atlas uses UNESCO’s six-degree scale, from safe to extinct, and separately marks awakening languages – extinct languages that people are learning and using again. The data come from Glottolog and cover all {n} languages on the globe.",
+  "cislaBezpecne": "safe",
+  "cislaOhrozene": "endangered (vulnerable to critically endangered)",
+  "cislaVymrele": "extinct",
+  "cislaProbouzene": "awakening",
+  "souhrn": "{n} languages, or {p} of all languages in Glottolog, are endangered to some degree.",
+  "barvyZap": "Colour the globe by vitality",
+  "barvyVyp": "Turn off vitality colours on the globe",
+  "stupneH": "Degrees of vitality",
+  "stupneUvod": "The length of each bar gives the number of languages. Ticked degrees stay visible on the globe, in the list and in search; untick a degree to hide its languages (the filter works without the colours too).",
+  "filtrTitulek": "Show or hide the languages of this degree",
+  "filtrVse": "All",
+  "filtrOhrozene": "Endangered only",
+  "bezUdajePopis": "Glottolog gives no degree of endangerment for the language.",
+  "oblastiH": "By world region",
+  "oblastiUvod": "The regions are Glottolog’s macroareas. The bar shows what share of the region’s languages each degree makes up (colours as above).",
+  "oblastiSloupce": [
+   "Region",
+   "Languages",
+   "Endangered",
+   "Extinct"
+  ],
+  "atlasH": "Endangered languages in the atlas",
+  "atlasUvod": "Languages with a detailed card that Glottolog lists as endangered to some degree or as awakening, most endangered first. Click to open the language card.",
+  "probouzeneH": "Awakening languages",
+  "probouzeneUvod": "{n} languages count as extinct on the UNESCO scale but are being learned and used again. Glottolog does not list this as a separate degree; the atlas recognises them from the note “Awakening” (Catalogue of Endangered Languages) or “Reawakening” (Ethnologue) in the endangerment data. Click a language to show it on the globe.",
+  "pribehStitek": "Language stories",
+  "metodikaH": "Method and sources",
+  "metodika": [
+   "The degrees follow the intergenerational transmission criterion in the UNESCO expert group document Language Vitality and Endangerment (2003); the Atlas of the World’s Languages in Danger (Moseley 2010) uses the same six-degree scale.",
+   "Glottolog gives each language an aggregated endangerment status (Agglomerated Endangerment Status, AES), compiled from UNESCO, Ethnologue and the Catalogue of Endangered Languages (ElCat). Its degrees correspond one to one to the UNESCO scale: not endangered = safe, threatened = vulnerable, shifting = definitely endangered, moribund = severely endangered, nearly extinct = critically endangered, extinct = extinct.",
+   "The assessments date from different years and the sources sometimes disagree, so the degree is an indication rather than a precise measurement. The extinct languages include languages known only from historical records, such as Hittite, Sumerian and Latin. {n} languages have no data. The Glottolog data were downloaded on {d}."
+  ],
+  "zdroje": [
+   "UNESCO Ad Hoc Expert Group on Endangered Languages (2003): Language Vitality and Endangerment. Paris: UNESCO.",
+   "Moseley, Christopher (ed.) (2010): Atlas of the World’s Languages in Danger. 3rd edn. Paris: UNESCO Publishing.",
+   "Hammarström, Harald; Castermans, Thom; Forkel, Robert; Verbeek, Kevin; Westenberg, Michel A.; Speckmann, Bettina (2018): Simultaneous Visualization of Language Endangerment and Language Description. Language Documentation & Conservation 12, 359–392.",
+   "Hammarström, Harald; Forkel, Robert; Haspelmath, Martin; Bank, Sebastian: Glottolog. Leipzig: Max Planck Institute for Evolutionary Anthropology. https://glottolog.org",
+   "Catalogue of Endangered Languages (ElCat). University of Hawaiʻi at Mānoa. https://www.endangeredlanguages.com"
+  ],
+  "odkazKarta": "Vitality of the world’s languages ›"
+ },
  "mapyPopis": "Colour maps of languages: script, vitality and typology (WALS)",
  "pribehyTlacitko": "Language stories: travelling words, language change, revival and mysteries",
  "starovekTlacitko": "Languages of antiquity: pages on civilizations, their languages and scripts"

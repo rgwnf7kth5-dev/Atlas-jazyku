@@ -1173,3 +1173,71 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 .med[aria-disabled="true"] .med-obr, .med[aria-disabled="true"]:hover .med-obr{filter:grayscale(1) contrast(.85); opacity:.5; transform:none;
   box-shadow:0 0 0 5px var(--med-ram1), 0 0 0 6px var(--med-ram2), 0 10px 18px -6px var(--med-stin), inset 0 2px 5px rgba(0,0,0,.32)}
 .med[aria-disabled="true"] span{color:var(--text3)}
+
+/* ---------- stránka Vitalita (medailon pod glóbem): čísla, stupně s pruhy a filtrem, oblasti, jazyky, metodika ---------- */
+.med.zapnuto .med-obr{box-shadow:0 0 0 5px var(--akcent), 0 0 0 6px var(--med-ram2), 0 10px 18px -6px var(--med-stin), inset 0 2px 5px rgba(0,0,0,.32)}
+.med.zapnuto span{color:var(--text)}
+.vitalita-okno{width:min(860px, calc(100vw - 32px))}
+.vitalita-okno .od-hlava h2{margin:0}
+.vs-podtitul{margin:2px 0 0; font-size:.82rem; color:var(--text3)}
+.vs-telo{padding-bottom:22px}
+.vs-cisla{display:grid; grid-template-columns:repeat(4, 1fr); gap:10px; margin:14px 0 8px}
+.vs-cislo{display:flex; flex-direction:column; gap:3px; padding:12px 12px 11px; border:1px solid var(--linka); border-top:4px solid var(--vs-barva); border-radius:12px; background:var(--sklo-slabe, transparent)}
+.vs-cislo b{font-family:var(--pismo-nadpis, inherit); font-size:1.7rem; line-height:1.05; font-variant-numeric:tabular-nums; color:var(--text)}
+.vs-cislo span{font-size:.8rem; line-height:1.3; color:var(--text2)}
+.vs-cislo small{font-size:.75rem; color:var(--text3); font-variant-numeric:tabular-nums}
+.vs-souhrn{margin:8px 0 12px; color:var(--text2)}
+.vs-barvy{margin:0 0 4px}
+.vs-oddil{margin-top:24px}
+.vs-oddil h3{margin:0 0 6px; font-family:var(--pismo-nadpis, inherit); font-size:1.15rem; color:var(--text)}
+.vs-uvod{margin:0 0 10px; font-size:.86rem; line-height:1.5; color:var(--text2)}
+.vs-oddil > p:not(.vs-uvod){font-size:.88rem; line-height:1.55; color:var(--text2)}
+.vitalita-okno .vp-predvolby{margin:0 0 6px}
+.vs-stupne{list-style:none; margin:0; padding:0; display:grid; gap:2px}
+.vs-stupen{display:grid; grid-template-columns:22px minmax(0, 1.25fr) minmax(80px, 1fr) 76px; align-items:center; gap:12px; width:100%; padding:8px 8px;
+  border:0; border-radius:10px; background:transparent; color:var(--text); text-align:left; font:inherit; cursor:pointer}
+.vs-stupen:hover{background:var(--cyan-slabe)}
+.vs-stupen:focus-visible{outline:3px solid var(--cyan); outline-offset:1px}
+.vs-stupen .zatrzeni{display:grid; place-items:center; width:20px; height:20px; border:1.5px solid var(--linka2); border-radius:6px; font-size:.75rem; font-weight:700}
+.vs-stupen[aria-pressed="true"] .zatrzeni{background:var(--cyan); border-color:var(--cyan); color:var(--na-cyan)}
+.vs-stupen[aria-pressed="false"] :is(.vs-jm, .vs-pruh, .vs-pocet){opacity:.45}
+.vs-jm{display:flex; flex-direction:column; gap:2px; min-width:0}
+.vs-jm b{display:flex; align-items:center; gap:7px; font-size:.9rem; font-weight:600}
+.vs-jm small{font-size:.75rem; line-height:1.35; color:var(--text3)}
+.vs-bod{flex:none; display:inline-block; width:11px; height:11px; border-radius:50%; box-shadow:0 0 0 2px var(--papir, #fff)}
+.vs-pruh{display:block; height:12px; border-radius:0 4px 4px 0}
+.vs-pruh i{display:block; height:100%; min-width:2px; border-radius:0 4px 4px 0}
+.vs-pocet{display:flex; flex-direction:column; align-items:flex-end; font-variant-numeric:tabular-nums}
+.vs-pocet b{font-size:.9rem; font-weight:600}
+.vs-pocet small{font-size:.72rem; color:var(--text3)}
+.vs-oblasti{width:100%; border-collapse:collapse; font-size:.86rem; font-variant-numeric:tabular-nums}
+.vs-oblasti th, .vs-oblasti td{padding:8px 8px; border-bottom:1px solid var(--linka); text-align:right; vertical-align:top}
+.vs-oblasti thead th{font-size:.72rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--text3)}
+.vs-oblasti th:first-child{text-align:left; width:52%}
+.vs-oblasti tbody th{font-weight:600}
+.vs-skladba{display:flex; gap:2px; height:9px; margin-top:6px}
+.vs-skladba i{display:block; min-width:2px; border-radius:2px}
+.vs-jazyky{display:grid; grid-template-columns:repeat(auto-fill, minmax(190px, 1fr)); gap:4px 8px}
+.vs-jazyk{display:flex; align-items:center; gap:10px; padding:7px 8px; border:0; border-radius:10px; background:transparent; color:var(--text); text-align:left; font:inherit; cursor:pointer}
+.vs-jazyk:hover{background:var(--cyan-slabe)}
+.vs-jazyk span{display:flex; flex-direction:column; gap:1px; min-width:0}
+.vs-jazyk b{font-size:.9rem; font-weight:600}
+.vs-jazyk small{font-size:.74rem; color:var(--text3)}
+.vs-probouzene{list-style:none; margin:0 0 12px; padding:0; display:flex; flex-wrap:wrap; gap:6px}
+.vs-probouzene button{padding:5px 11px; border:1px solid var(--linka2); border-radius:999px; background:transparent; color:var(--text); font:inherit; font-size:.8rem; cursor:pointer}
+.vs-probouzene button:hover{border-color:var(--vit-6); background:var(--cyan-slabe)}
+.vs-pribeh{display:grid; grid-template-columns:96px 1fr auto; align-items:center; gap:12px; width:100%; padding:6px; border:1px solid var(--linka); border-radius:12px;
+  background:transparent; color:var(--text); text-align:left; font:inherit; cursor:pointer}
+.vs-pribeh:hover{background:var(--cyan-slabe)}
+.vs-pribeh span{display:flex; flex-direction:column; gap:2px}
+.vs-pribeh small{font-size:.7rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--text3)}
+.vs-pribeh svg{width:18px; height:18px; color:var(--text3)}
+.vs-zdroje{margin:6px 0 0; padding-left:18px; font-size:.8rem; line-height:1.5; color:var(--text2)}
+.vs-zdroje li{margin:3px 0; overflow-wrap:anywhere}
+.vs-odkaz{margin-top:6px}
+@media (max-width: 620px){
+  .vs-cisla{grid-template-columns:1fr 1fr}
+  .vs-stupen{grid-template-columns:22px 1fr 64px; row-gap:6px}
+  .vs-stupen .vs-pruh{grid-column:2 / 4; grid-row:2}
+  .vs-oblasti th:first-child{width:auto}
+}

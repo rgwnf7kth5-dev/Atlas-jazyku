@@ -1189,6 +1189,74 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
   box-shadow:0 0 0 5px var(--med-ram1), 0 0 0 6px var(--med-ram2), 0 10px 18px -6px var(--med-stin), inset 0 2px 5px rgba(0,0,0,.32)}
 .med[aria-disabled="true"] span{color:var(--text3)}
 
+/* ---------- stránka Vitalita (medailon pod glóbem): čísla, stupně s pruhy a filtrem, oblasti, jazyky, metodika ---------- */
+.med.zapnuto .med-obr{box-shadow:0 0 0 5px var(--akcent), 0 0 0 6px var(--med-ram2), 0 10px 18px -6px var(--med-stin), inset 0 2px 5px rgba(0,0,0,.32)}
+.med.zapnuto span{color:var(--text)}
+.vitalita-okno{width:min(860px, calc(100vw - 32px))}
+.vitalita-okno .od-hlava h2{margin:0}
+.vs-podtitul{margin:2px 0 0; font-size:.82rem; color:var(--text3)}
+.vs-telo{padding-bottom:22px}
+.vs-cisla{display:grid; grid-template-columns:repeat(4, 1fr); gap:10px; margin:14px 0 8px}
+.vs-cislo{display:flex; flex-direction:column; gap:3px; padding:12px 12px 11px; border:1px solid var(--linka); border-top:4px solid var(--vs-barva); border-radius:12px; background:var(--sklo-slabe, transparent)}
+.vs-cislo b{font-family:var(--pismo-nadpis, inherit); font-size:1.7rem; line-height:1.05; font-variant-numeric:tabular-nums; color:var(--text)}
+.vs-cislo span{font-size:.8rem; line-height:1.3; color:var(--text2)}
+.vs-cislo small{font-size:.75rem; color:var(--text3); font-variant-numeric:tabular-nums}
+.vs-souhrn{margin:8px 0 12px; color:var(--text2)}
+.vs-barvy{margin:0 0 4px}
+.vs-oddil{margin-top:24px}
+.vs-oddil h3{margin:0 0 6px; font-family:var(--pismo-nadpis, inherit); font-size:1.15rem; color:var(--text)}
+.vs-uvod{margin:0 0 10px; font-size:.86rem; line-height:1.5; color:var(--text2)}
+.vs-oddil > p:not(.vs-uvod){font-size:.88rem; line-height:1.55; color:var(--text2)}
+.vitalita-okno .vp-predvolby{margin:0 0 6px}
+.vs-stupne{list-style:none; margin:0; padding:0; display:grid; gap:2px}
+.vs-stupen{display:grid; grid-template-columns:22px minmax(0, 1.25fr) minmax(80px, 1fr) 76px; align-items:center; gap:12px; width:100%; padding:8px 8px;
+  border:0; border-radius:10px; background:transparent; color:var(--text); text-align:left; font:inherit; cursor:pointer}
+.vs-stupen:hover{background:var(--cyan-slabe)}
+.vs-stupen:focus-visible{outline:3px solid var(--cyan); outline-offset:1px}
+.vs-stupen .zatrzeni{display:grid; place-items:center; width:20px; height:20px; border:1.5px solid var(--linka2); border-radius:6px; font-size:.75rem; font-weight:700}
+.vs-stupen[aria-pressed="true"] .zatrzeni{background:var(--cyan); border-color:var(--cyan); color:var(--na-cyan)}
+.vs-stupen[aria-pressed="false"] :is(.vs-jm, .vs-pruh, .vs-pocet){opacity:.45}
+.vs-jm{display:flex; flex-direction:column; gap:2px; min-width:0}
+.vs-jm b{display:flex; align-items:center; gap:7px; font-size:.9rem; font-weight:600}
+.vs-jm small{font-size:.75rem; line-height:1.35; color:var(--text3)}
+.vs-bod{flex:none; display:inline-block; width:11px; height:11px; border-radius:50%; box-shadow:0 0 0 2px var(--papir, #fff)}
+.vs-pruh{display:block; height:12px; border-radius:0 4px 4px 0}
+.vs-pruh i{display:block; height:100%; min-width:2px; border-radius:0 4px 4px 0}
+.vs-pocet{display:flex; flex-direction:column; align-items:flex-end; font-variant-numeric:tabular-nums}
+.vs-pocet b{font-size:.9rem; font-weight:600}
+.vs-pocet small{font-size:.72rem; color:var(--text3)}
+.vs-oblasti{width:100%; border-collapse:collapse; font-size:.86rem; font-variant-numeric:tabular-nums}
+.vs-oblasti th, .vs-oblasti td{padding:8px 8px; border-bottom:1px solid var(--linka); text-align:right; vertical-align:top}
+.vs-oblasti thead th{font-size:.72rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--text3)}
+.vs-oblasti th:first-child{text-align:left; width:52%}
+.vs-oblasti tbody th{font-weight:600}
+.vs-skladba{display:flex; gap:2px; height:9px; margin-top:6px}
+.vs-skladba i{display:block; min-width:2px; border-radius:2px}
+.vs-jazyky{display:grid; grid-template-columns:repeat(auto-fill, minmax(190px, 1fr)); gap:4px 8px}
+.vs-jazyk{display:flex; align-items:center; gap:10px; padding:7px 8px; border:0; border-radius:10px; background:transparent; color:var(--text); text-align:left; font:inherit; cursor:pointer}
+.vs-jazyk:hover{background:var(--cyan-slabe)}
+.vs-jazyk span{display:flex; flex-direction:column; gap:1px; min-width:0}
+.vs-jazyk b{font-size:.9rem; font-weight:600}
+.vs-jazyk small{font-size:.74rem; color:var(--text3)}
+.vs-probouzene{list-style:none; margin:0 0 12px; padding:0; display:flex; flex-wrap:wrap; gap:6px}
+.vs-probouzene button{padding:5px 11px; border:1px solid var(--linka2); border-radius:999px; background:transparent; color:var(--text); font:inherit; font-size:.8rem; cursor:pointer}
+.vs-probouzene button:hover{border-color:var(--vit-6); background:var(--cyan-slabe)}
+.vs-pribeh{display:grid; grid-template-columns:96px 1fr auto; align-items:center; gap:12px; width:100%; padding:6px; border:1px solid var(--linka); border-radius:12px;
+  background:transparent; color:var(--text); text-align:left; font:inherit; cursor:pointer}
+.vs-pribeh:hover{background:var(--cyan-slabe)}
+.vs-pribeh span{display:flex; flex-direction:column; gap:2px}
+.vs-pribeh small{font-size:.7rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--text3)}
+.vs-pribeh svg{width:18px; height:18px; color:var(--text3)}
+.vs-zdroje{margin:6px 0 0; padding-left:18px; font-size:.8rem; line-height:1.5; color:var(--text2)}
+.vs-zdroje li{margin:3px 0; overflow-wrap:anywhere}
+.vs-odkaz{margin-top:6px}
+@media (max-width: 620px){
+  .vs-cisla{grid-template-columns:1fr 1fr}
+  .vs-stupen{grid-template-columns:22px 1fr 64px; row-gap:6px}
+  .vs-stupen .vs-pruh{grid-column:2 / 4; grid-row:2}
+  .vs-oblasti th:first-child{width:auto}
+}
+
 /* ---------- jazyky starověku: stránka o civilizaci jako list ilustrované encyklopedie (okno nad glóbem i web) ----------
    Papír a inkoust jako u akvarelů na kartách; v tmavém vzhledu sépiová noc. Barvy jen tady, přes --civ-*. */
 .civ{
@@ -1567,8 +1635,8 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
     <button class="med" id="tl-pribehy" type="button" aria-haspopup="dialog" title="Language stories: travelling words, language change, revival and mysteries" data-t-title="pribehyTlacitko"><i class="med-obr" data-ikona="pribehy"></i><span data-t="medPribehy">Language stories</span></button>
     <button class="med" id="tl-strom" type="button" aria-pressed="false" title="Language family tree: how the languages of one family are related" data-t-title="rodokmenPopis"><i class="med-obr" data-ikona="rodokmen"></i><span data-t="rodokmen">Family tree</span></button>
     <button class="med" id="tl-mapy" type="button" aria-haspopup="dialog" title="Colour maps of languages: script, vitality and typology (WALS)" data-t-title="mapyPopis"><i class="med-obr" data-ikona="mapy"></i><span data-t="medMapy">Maps</span></button>
-    <button class="med" id="tl-vitalita-dok" type="button" aria-pressed="false" title="Colour languages by degree of endangerment (UNESCO)" data-t-title="vitalitaDokPopis"><i class="med-obr" data-ikona="vitalita"></i><span data-t="vitalita">Vitality</span></button>
-    <button class="med maly" id="tl-zobrazeni" type="button" aria-expanded="false" aria-controls="panel-zobrazeni" title="Spin, names, sign languages and vitality" data-t-title="zobrazeniPopis"><i class="med-obr"><svg aria-hidden="true"><use href="#i-nastaveni"/></svg><b class="odznak-filtr" id="zobrazeni-pocet" hidden aria-hidden="true"></b></i><span data-t="zobrazeni">Settings</span></button>
+    <button class="med" id="tl-vitalita-dok" type="button" aria-haspopup="dialog" title="Language vitality: degrees of endangerment on the UNESCO scale, figures and sources" data-t-title="vitalitaDokPopis"><i class="med-obr" data-ikona="vitalita"><b class="odznak-filtr" id="vitalita-pocet" hidden aria-hidden="true"></b></i><span data-t="vitalita">Vitality</span></button>
+    <button class="med maly" id="tl-zobrazeni" type="button" aria-expanded="false" aria-controls="panel-zobrazeni" title="Spin, names and sign languages" data-t-title="zobrazeniPopis"><i class="med-obr"><svg aria-hidden="true"><use href="#i-nastaveni"/></svg><b class="odznak-filtr" id="zobrazeni-pocet" hidden aria-hidden="true"></b></i><span data-t="zobrazeni">Settings</span></button>
    </nav>
    <div class="roh-ovladani" role="group" aria-label="Globe zoom" data-t-aria-label="zoomSkupina">
     <button class="kolo" id="tl-cely" type="button" hidden aria-label="Whole world" title="Whole world" data-t-aria-label="celySvet" data-t-title="celySvet"><svg aria-hidden="true"><use href="#i-svet"/></svg></button>
@@ -1591,14 +1659,6 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
       </div>
       <small class="volba-pozn" id="p-znakove" data-t="znakovePopis">Sign languages are the natural languages of Deaf communities, using handshape and movement, facial expression and posture. There is no single universal sign language: many countries have their own, some several, and their boundaries do not coincide with national borders.</small>
      </div>
-     <button class="volba-radek dal" id="tl-vitalita" type="button" aria-expanded="false" aria-controls="vitalita-panel" aria-labelledby="n-vitalita" aria-describedby="p-vitalita"><svg aria-hidden="true"><use href="#i-vitalita"/></svg><span><b id="n-vitalita" data-t="vitalita">Vitality</b> <small id="p-vitalita" data-t="vitalitaPopis">Show languages by how endangered they are (UNESCO scale)</small></span><b class="odznak-filtr" id="vitalita-pocet" hidden aria-hidden="true"></b><svg class="sipka-dal" aria-hidden="true"><use href="#i-dal"/></svg></button>
-    </div>
-    <div class="vitalita-panel" id="vitalita-panel" hidden>
-     <div class="vp-hlava"><button class="zpet" id="vitalita-zavrit" type="button" aria-label="Back" data-t-aria-label="vitalitaZavrit"><svg aria-hidden="true"><use href="#i-zpet"/></svg></button><strong data-t="vitalitaNadpis">Language vitality · UNESCO scale</strong>
-      <button class="zavrit" id="vitalita-x" type="button" aria-label="Close" data-t-aria-label="zavritPanel"><svg aria-hidden="true"><use href="#i-krizek"/></svg></button></div>
-     <div class="vp-predvolby"><button type="button" id="vitalita-vse" data-t="vitalitaVse">All</button><button type="button" id="vitalita-ohrozene" data-t="vitalitaOhrozene">Endangered only</button></div>
-     <ul class="vp-stupne" id="vitalita-stupne"></ul>
-     <p class="vp-zdroj" data-t="vitalitaZdroj">The six-level UNESCO scale. Data from Glottolog, which combines UNESCO, Ethnologue and the Catalogue of Endangered Languages.</p>
     </div>
    </div>
    <button class="tl-napoveda sklo" id="tl-napoveda" type="button" aria-expanded="false" aria-controls="napoveda" aria-label="Help" data-t-aria-label="napoveda">?</button>
@@ -1684,10 +1744,11 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
  <dialog class="o-datech kalendar" id="kalendar" aria-labelledby="kal-nadpis"></dialog>
  <dialog class="o-datech navod" id="navod" aria-labelledby="nav-nadpis"></dialog>
  <dialog class="o-datech starovek-okno" id="starovek-okno" aria-labelledby="st-nadpis"></dialog>
+ <dialog class="o-datech vitalita-okno" id="vitalita-okno" aria-labelledby="vit-nadpis"></dialog>
  <dialog class="o-datech mapy-okno" id="mapy-okno" aria-labelledby="mapy-nadpis"></dialog>
  <dialog class="civ-okno" id="civ-okno" aria-labelledby="civ-nadpis"></dialog>
 </div>
 
-<script src="../js/atlas.17f16d5f25.js"></script>
+<script src="../js/atlas.225e2d240d.js"></script>
 </body>
 </html>

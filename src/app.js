@@ -117,7 +117,7 @@ function jeZnakovyJazyk(j){ const i = BOD_ATLASU[j.id]; return i >= 0 && ZNAKOVY
 /* vitalita: 0–5 = šest stupňů UNESCO (bezpečný … vymřelý), 6 = probouzený, -1 = bez údaje */
 const VSECHNY_STUPNE = [0, 1, 2, 3, 4, 5, 6, -1], OHROZENE = [1, 2, 3, 4];
 let povoleneStupne = new Set(VSECHNY_STUPNE);
-let barvitVitalitu = false;              // tečky v barvách vitality: zapnuté tlačítkem v liště, nebo otevřený panel „Vitalita“
+let barvitVitalitu = false;              // tečky v barvách vitality (stránka Vitalita nebo okno Mapy)
 let typVlastnost = -1, typIzolace = -1, typTr = null;   // typologická mapa: vlastnost WALS (index do TYP.vlastnosti), zvýrazněná skupina, skupina každé tečky
 function barvit(){ return barvitVitalitu || typVlastnost >= 0; }   // tečky v barvách vrstvy (vitalita nebo typologie): pevnina jednolitá, bez třpytu
 let vitalitaZap = false;                 // tlačítko „Vitalita“ v liště (pamatuje se, atlas-barvy-vitality)
@@ -680,7 +680,7 @@ function nastaveniTecek(){
 /* barvy vitality v pořadí pro shader: bez údaje, stupně 0–5, probouzený */
 function barvyVitality(){ return ["vit-nic", "vit-0", "vit-1", "vit-2", "vit-3", "vit-4", "vit-5", "vit-6"].map(function(k){ return barvy[k]; }); }
 /* barvy a průhlednost vrstvy v pořadí pro shader: [0] bez údaje, [1…7] skupiny (vitalita: stupně; typologie: skupiny vlastnosti) */
-function typZobrazena(){ return typVlastnost >= 0 && !!typTr && panelVit.hidden; }   // otevřené stupně vitality mají přednost
+function typZobrazena(){ return typVlastnost >= 0 && !!typTr; }
 function nahrajTypologii(){ if (!gl || !glJaz || !typTr) return; if (!glJaz.typ) glJaz.typ = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, glJaz.typ); gl.bufferData(gl.ARRAY_BUFFER, Float32Array.from(typTr), gl.STATIC_DRAW); glJaz.typVl = typVlastnost; }
 function barvyVrstvy(){
   if (!typZobrazena()) return barvyVitality().map(function(b){ return [b, 0.95]; });
@@ -1849,36 +1849,20 @@ function nastavZnakove(rezim, ulozit){
 }
 tlZnak.forEach(function(b){ b.addEventListener("click", function(){ nastavZnakove(b.dataset.znak, true); }); });
 
-/* výběr stupňů vitality (panel pod tlačítkem „Vitalita“) */
-const panelVit = $("vitalita-panel"), tlVit = $("tl-vitalita");
+/* ---------- stránka Vitalita (medailon pod glóbem, 27. 9. 2026): stupně UNESCO s počty a filtrem, oblasti světa,
+   ohrožené jazyky atlasu, probouzené jazyky, metodika a zdroje. Filtr stupňů byl dřív podstránkou panelu Zobrazení. ---------- */
+const vitOkno = $("vitalita-okno");
 const POCTY_STUPNU = {};
 for (let i = 0; i < POCET_B; i++) { const v = vitalitaBodu(i); POCTY_STUPNU[v] = (POCTY_STUPNU[v] || 0) + 1; }
 const PORADI_V_PANELU = [0, 1, 2, 3, 4, 5, 6, -1];
 function nazevStupne(v){ return v < 0 ? T.vitalitaBezUdaje : T.aes[v][0]; }
+function procenta(n, z){ const p = 100 * n / z; return cislo(p < 10 ? Math.round(p * 10) / 10 : Math.round(p), p < 10 ? 1 : 0) + (T.lang === "en" ? "%" : "\u00A0%"); }   // česky s pevnou mezerou, anglicky bez mezery
 function obnovVitalituPanel(){
-  const ul = $("vitalita-stupne");
-  ul.textContent = "";
-  PORADI_V_PANELU.forEach(function(v){
-    const li = prvek("li"), b = prvek("button");
-    b.type = "button"; b.setAttribute("aria-pressed", povoleneStupne.has(v) ? "true" : "false");
-    if (v >= 0) b.title = T.aes[v][1];
-    b.appendChild(prvek("span", "zatrzeni", povoleneStupne.has(v) ? "✓" : ""));
-    const mini = prvek("span", "mini");
-    mini.style.setProperty("--vit-barva", promennaVitality(v));
-    for (let k = 0; k < 6; k++) mini.appendChild(prvek("i", v < 0 || k <= Math.min(v, 5) ? "plny" : null));
-    b.appendChild(mini);
-    b.appendChild(prvek("span", null, nazevStupne(v)));
-    b.appendChild(prvek("span", "pocet-st", cislo(POCTY_STUPNU[v] || 0)));
-    b.addEventListener("click", function(){
-      if (povoleneStupne.has(v)) povoleneStupne.delete(v); else povoleneStupne.add(v);
-      nastavVitalitu(Array.from(povoleneStupne));
-    });
-    li.appendChild(b); ul.appendChild(li);
-  });
   const n = povoleneStupne.size, filtruje = n < VSECHNY_STUPNE.length;
   $("vitalita-pocet").hidden = !filtruje;
   $("vitalita-pocet").textContent = n + "/" + VSECHNY_STUPNE.length;
   obnovOdznakZobrazeni();
+  if ($("vitalita-okno").open) obnovStupne();     // $(): volá se i při startu, před deklarací vitOkno
 }
 function nastavVitalitu(stupne, start){
   povoleneStupne = new Set(stupne.filter(function(v){ return VSECHNY_STUPNE.indexOf(v) >= 0; }));
@@ -1886,44 +1870,166 @@ function nastavVitalitu(stupne, start){
   obnovVitalituPanel();
   uplatniFiltry(!!start);
 }
-/* panel „Zobrazení“ nad dokem: přepínače a filtry; vitalita v něm má vlastní podstránku */
+/* stupně: pruh podle počtu jazyků a zaškrtnutí, které stupně zůstanou na glóbu, v seznamu a v hledání */
+function obnovStupne(){
+  const ul = vitOkno.querySelector(".vs-stupne"); if (!ul) return;
+  ul.textContent = "";
+  const max = Math.max.apply(null, PORADI_V_PANELU.map(function(v){ return POCTY_STUPNU[v] || 0; }));
+  PORADI_V_PANELU.forEach(function(v){
+    const n = POCTY_STUPNU[v] || 0, li = prvek("li"), b = prvek("button", "vs-stupen");
+    b.type = "button"; b.setAttribute("aria-pressed", povoleneStupne.has(v) ? "true" : "false");
+    b.title = T.vitStranka.filtrTitulek;
+    b.appendChild(prvek("span", "zatrzeni", povoleneStupne.has(v) ? "✓" : ""));
+    const jm = prvek("span", "vs-jm"), bod = prvek("i", "vs-bod"); bod.style.background = promennaVitality(v);
+    const nz = prvek("b"); nz.appendChild(bod); nz.appendChild(document.createTextNode(nazevStupne(v))); jm.appendChild(nz);
+    jm.appendChild(prvek("small", null, v >= 0 ? T.aes[v][1] : T.vitStranka.bezUdajePopis));
+    b.appendChild(jm);
+    const pruh = prvek("span", "vs-pruh"), i = prvek("i"); i.style.width = (100 * n / max) + "%"; i.style.background = promennaVitality(v);
+    pruh.appendChild(i); b.appendChild(pruh);
+    const po = prvek("span", "vs-pocet"); po.appendChild(prvek("b", null, cislo(n))); po.appendChild(prvek("small", null, procenta(n, POCET_B))); b.appendChild(po);
+    b.addEventListener("click", function(){
+      if (povoleneStupne.has(v)) povoleneStupne.delete(v); else povoleneStupne.add(v);
+      nastavVitalitu(Array.from(povoleneStupne));
+    });
+    li.appendChild(b); ul.appendChild(li);
+  });
+  const tl = vitOkno.querySelector(".vs-barvy");
+  if (tl) { tl.textContent = vitalitaZap ? T.vitStranka.barvyVyp : T.vitStranka.barvyZap; tl.setAttribute("aria-pressed", vitalitaZap ? "true" : "false"); }
+}
+function vlozDoTextu(text, par){ return text.replace(/\{(\w+)\}/g, function(m, k){ return par[k] != null ? par[k] : m; }); }
+function oddilStranky(h, uvod){
+  const s = prvek("section", "vs-oddil"); s.appendChild(prvek("h3", null, h));
+  if (uvod) s.appendChild(prvek("p", "vs-uvod", uvod));
+  return s;
+}
+function postavStrankuVitality(){
+  const V = T.vitStranka, ohr = [1, 2, 3, 4].reduce(function(a, v){ return a + (POCTY_STUPNU[v] || 0); }, 0);
+  vitOkno.textContent = "";
+  const hlava = prvek("div", "od-hlava");
+  const hh = prvek("div"); const h = prvek("h2", null, V.nadpis); h.id = "vit-nadpis"; hh.appendChild(h); hh.appendChild(prvek("p", "vs-podtitul", V.podtitul));
+  hlava.appendChild(hh);
+  const x = prvek("button", "zavrit"); x.type = "button"; x.setAttribute("aria-label", T.oDatech.zavrit);
+  x.innerHTML = '<svg aria-hidden="true"><use href="#i-krizek"/></svg>'; x.addEventListener("click", function(){ vitOkno.close(); });
+  hlava.appendChild(x); vitOkno.appendChild(hlava);
+  const telo = prvek("div", "od-telo vs-telo");
+  telo.appendChild(prvek("p", "od-uvod", vlozDoTextu(V.uvod, {n: cislo(POCET_B)})));
+  /* čtyři hlavní čísla */
+  const cisla = prvek("div", "vs-cisla");
+  [[POCTY_STUPNU[0] || 0, V.cislaBezpecne, 0], [ohr, V.cislaOhrozene, 3], [POCTY_STUPNU[5] || 0, V.cislaVymrele, 5], [POCTY_STUPNU[6] || 0, V.cislaProbouzene, 6]].forEach(function(c){
+    const d = prvek("div", "vs-cislo"); d.style.setProperty("--vs-barva", promennaVitality(c[2]));
+    d.appendChild(prvek("b", null, cislo(c[0]))); d.appendChild(prvek("span", null, c[1])); d.appendChild(prvek("small", null, procenta(c[0], POCET_B)));
+    cisla.appendChild(d);
+  });
+  telo.appendChild(cisla);
+  telo.appendChild(prvek("p", "vs-souhrn", vlozDoTextu(V.souhrn, {n: cislo(ohr), p: procenta(ohr, POCET_B)})));
+  const barvy = prvek("button", "tl hlavni vs-barvy"); barvy.type = "button";
+  barvy.addEventListener("click", function(){
+    const zap = !vitalitaZap;
+    nastavBarvyVitality(zap);
+    if (zap) { vitOkno.close(); nahoruKeGlobu(); } else obnovStupne();
+  });
+  telo.appendChild(barvy);
+  /* stupně s filtrem */
+  const st = oddilStranky(V.stupneH, V.stupneUvod);
+  const pr = prvek("div", "vp-predvolby");
+  [[V.filtrVse, VSECHNY_STUPNE], [V.filtrOhrozene, OHROZENE]].forEach(function(d){
+    const b = prvek("button", null, d[0]); b.type = "button"; b.addEventListener("click", function(){ nastavVitalitu(d[1]); }); pr.appendChild(b);
+  });
+  st.appendChild(pr); st.appendChild(prvek("ul", "vs-stupne")); telo.appendChild(st);
+  /* oblasti světa (makrooblasti Glottologu): skladba stupňů a počty */
+  const ob = oddilStranky(V.oblastiH, V.oblastiUvod), oblasti = REJSTRIK.mm.map(function(){ return {n: 0, v: {}}; });
+  for (let i = 0; i < POCET_B; i++) { const o = oblasti[B[i][4]]; if (!o) continue; const v = vitalitaBodu(i); o.n++; o.v[v] = (o.v[v] || 0) + 1; }
+  const tab = prvek("table", "vs-oblasti"), thead = prvek("thead"), trh = prvek("tr");
+  V.oblastiSloupce.forEach(function(s){ trh.appendChild(prvek("th", null, s)); });
+  thead.appendChild(trh); tab.appendChild(thead);
+  const tb = prvek("tbody");
+  oblasti.map(function(o, k){ return {k: k, o: o}; }).filter(function(r){ return r.o.n; }).sort(function(a, b){ return b.o.n - a.o.n; }).forEach(function(r){
+    const o = r.o, tr = prvek("tr"), th = prvek("th"), oh = [1, 2, 3, 4].reduce(function(a, v){ return a + (o.v[v] || 0); }, 0);
+    th.appendChild(prvek("span", null, REJSTRIK.mm[r.k]));
+    const pruh = prvek("span", "vs-skladba"); pruh.setAttribute("aria-hidden", "true");
+    PORADI_V_PANELU.forEach(function(v){ if (!o.v[v]) return; const i = prvek("i"); i.style.flexGrow = o.v[v]; i.style.background = promennaVitality(v); i.title = nazevStupne(v) + ": " + cislo(o.v[v]); pruh.appendChild(i); });
+    th.appendChild(pruh); tr.appendChild(th);
+    tr.appendChild(prvek("td", null, cislo(o.n)));
+    tr.appendChild(prvek("td", null, cislo(oh) + " (" + procenta(oh, o.n) + ")"));
+    tr.appendChild(prvek("td", null, cislo(o.v[5] || 0)));
+    tb.appendChild(tr);
+  });
+  tab.appendChild(tb); ob.appendChild(tab); telo.appendChild(ob);
+  /* ohrožené a probouzené jazyky z atlasu (mají podrobnou kartu) */
+  const atl = JAZYKY.map(function(j){ const i = BOD_ATLASU[j.id]; return {j: j, v: i >= 0 ? vitalitaBodu(i) : -1}; })
+    .filter(function(r){ return r.v >= 1 && r.v !== 5; })
+    .sort(function(a, b){ return (b.v === 6 ? 0.5 : b.v) - (a.v === 6 ? 0.5 : a.v) || a.j.n.localeCompare(b.j.n, T.lang); });
+  if (atl.length) {
+    const oa = oddilStranky(V.atlasH, V.atlasUvod), m = prvek("div", "vs-jazyky");
+    atl.forEach(function(r){
+      const b = prvek("button", "vs-jazyk"); b.type = "button";
+      const bod = prvek("i", "vs-bod"); bod.style.background = promennaVitality(r.v); b.appendChild(bod);
+      const s = prvek("span"); s.appendChild(prvek("b", null, r.j.n)); s.appendChild(prvek("small", null, nazevStupne(r.v))); b.appendChild(s);
+      b.addEventListener("click", function(){ vitOkno.close(); vyber(r.j.id); nahoruKeGlobu(); });
+      m.appendChild(b);
+    });
+    oa.appendChild(m); telo.appendChild(oa);
+  }
+  const prob = [];
+  for (let i = 0; i < POCET_B; i++) if (vitalitaBodu(i) === 6) prob.push(i);
+  prob.sort(function(a, b){ return jmenoBodu(a).localeCompare(jmenoBodu(b), T.lang); });
+  const op = oddilStranky(V.probouzeneH, vlozDoTextu(V.probouzeneUvod, {n: cislo(prob.length)})), ul = prvek("ul", "vs-probouzene");
+  prob.forEach(function(i){
+    const li = prvek("li"), b = prvek("button", null, jmenoBodu(i)); b.type = "button"; b.title = REJSTRIK.mm[B[i][4]] || "";
+    b.addEventListener("click", function(){ vitOkno.close(); vyberBod(i); nahoruKeGlobu(); });
+    li.appendChild(b); ul.appendChild(li);
+  });
+  op.appendChild(ul);
+  const pribeh = civilizace("obnova-jazyku");
+  if (pribeh) {
+    const b = prvek("button", "vs-pribeh"); b.type = "button";
+    b.appendChild(malbaCivilizace(pribeh));
+    const s = prvek("span"); s.appendChild(prvek("small", null, V.pribehStitek)); s.appendChild(prvek("b", null, pribeh[T.lang].nazev)); b.appendChild(s);
+    b.insertAdjacentHTML("beforeend", '<svg aria-hidden="true"><use href="#i-dal"/></svg>');
+    b.addEventListener("click", function(){ vitOkno.close(); otevriCivilizaci(pribeh.id); });
+    op.appendChild(b);
+  }
+  telo.appendChild(op);
+  /* metodika a zdroje */
+  const om = oddilStranky(V.metodikaH);
+  V.metodika.forEach(function(p){ om.appendChild(prvek("p", null, vlozDoTextu(p, {n: cislo(POCTY_STUPNU[-1] || 0), d: VERZE.glottolog ? new Date(VERZE.glottolog + "T12:00:00").toLocaleDateString(T.locale, {day: "numeric", month: "long", year: "numeric"}) : "–"}))); });
+  const zu = prvek("ul", "vs-zdroje"); V.zdroje.forEach(function(z){ zu.appendChild(prvek("li", null, z)); });
+  om.appendChild(zu); telo.appendChild(om);
+  vitOkno.appendChild(telo);
+  obnovStupne();
+}
+function otevriStrankuVitality(){
+  if (!panelZob.hidden) otevriZobrazeni(false);
+  postavStrankuVitality();
+  if (vitOkno.showModal) { if (!vitOkno.open) vitOkno.showModal(); } else vitOkno.setAttribute("open", "");
+  vitOkno.querySelector(".od-telo").scrollTop = 0;
+}
+vitOkno.addEventListener("click", function(e){ if (e.target === vitOkno) vitOkno.close(); });
+/* panel „Nastavení“ nad medailony: otáčení, jména, znakové jazyky */
 const panelZob = $("panel-zobrazeni"), tlZob = $("tl-zobrazeni"), pzHlavni = $("pz-hlavni");
 function obnovOdznakZobrazeni(){
-  const n = (rezimZnak !== "vse" ? 1 : 0) + (povoleneStupne.size < VSECHNY_STUPNE.length ? 1 : 0);
+  const n = rezimZnak !== "vse" ? 1 : 0;
   $("zobrazeni-pocet").hidden = !n; $("zobrazeni-pocet").textContent = n;
   $("tl-zobrazeni").setAttribute("aria-label", n ? T.zobrazeni + ", " + t("filtryZapnute", {n: n}) : T.zobrazeni);
 }
 function otevriZobrazeni(otevrit){
-  if (!otevrit && !panelVit.hidden) otevriVitalitu(false);
   panelZob.hidden = !otevrit;
   tlZob.setAttribute("aria-expanded", otevrit ? "true" : "false");
   obnovLegenduVitality();
 }
 tlZob.addEventListener("click", function(){ otevriZobrazeni(panelZob.hidden); });
 $("zobrazeni-zavrit").addEventListener("click", function(){ otevriZobrazeni(false); tlZob.focus(); });
-let vitalitaZLegendy = false;           // podstránka Vitalita otevřená z vysvětlivky pod glóbem
-function otevriVitalitu(otevrit){
-  vitalitaZLegendy = false;
-  if (otevrit) panelZob.hidden = false, tlZob.setAttribute("aria-expanded", "true");
-  panelVit.hidden = !otevrit; pzHlavni.hidden = !!otevrit;
-  tlVit.setAttribute("aria-expanded", otevrit ? "true" : "false");
-  barvitVitalitu = vitalitaZap || !!otevrit;
-  obnovVitalituPanel();
-  obnovLegenduVitality();
-  teckyZmeneny = true; potrebaKresli = true; ozivit();
-}
-tlVit.addEventListener("click", function(){ otevriVitalitu(panelVit.hidden); });
-/* ---------- tlačítko „Vitalita“ v liště: barvy vitality na jedno klepnutí, s vysvětlivkou jen po dobu zapnutí ----------
-   (uživatel 25. 9. 2026: vitalita byla schovaná v podnabídce; trvalou vysvětlivku na glóbu ale nechce, proto se
-   ukazuje jen se zapnutými barvami a volba se pamatuje) */
+/* ---------- barvy vitality na glóbu (stránka Vitalita, okno Mapy): vysvětlivka stupňů jen po dobu zapnutí ----------
+   (uživatel 25. 9. 2026: trvalou vysvětlivku na glóbu nechce, proto se ukazuje jen se zapnutými barvami a volba se pamatuje) */
 const tlVitDok = $("tl-vitalita-dok"), legendaVit = $("vit-legenda");
 function nastavBarvyVitality(zap, start){
   if (zap && typVlastnost >= 0) nastavTypologii(-1);   // jedna barevná vrstva naráz
   vitalitaZap = !!zap;
-  tlVitDok.setAttribute("aria-pressed", vitalitaZap ? "true" : "false");
+  tlVitDok.classList.toggle("zapnuto", vitalitaZap);
   if (!start) { try { if (vitalitaZap) localStorage.setItem("atlas-barvy-vitality", "1"); else localStorage.removeItem("atlas-barvy-vitality"); } catch (e) {} }
-  barvitVitalitu = vitalitaZap || !panelVit.hidden;
+  barvitVitalitu = vitalitaZap;
   obnovLegenduVitality();
+  if ($("mapy-okno").open) postavMapy();         // $(): volá se i při startu, před deklarací mapyOkno
   teckyZmeneny = true; potrebaKresli = true; ozivit();
 }
 function postavLegenduVitality(){
@@ -1946,20 +2052,9 @@ function obnovLegenduVitality(){
   legendaVit.hidden = !(vitalitaZap && panelZob.hidden);
   if (!legendaVit.hidden) postavLegenduVitality();
 }
-tlVitDok.addEventListener("click", function(){ if (this.getAttribute("aria-disabled") !== "true") nastavBarvyVitality(!vitalitaZap); });
-$("vit-legenda-tl").addEventListener("click", function(){ otevriVitalitu(true); vitalitaZLegendy = true; });   // vysvětlivka otevře stupně (filtr)
-/* šipka zpět vede do panelu Zobrazení; když se stupně otevřely z vysvětlivky pod glóbem, zavře rovnou všechno */
-$("vitalita-zavrit").addEventListener("click", function(){
-  if (vitalitaZLegendy) { otevriZobrazeni(false); $("vit-legenda-tl").focus(); return; }
-  otevriVitalitu(false); tlVit.focus();
-});
-$("vitalita-x").addEventListener("click", function(){ const zLeg = vitalitaZLegendy; otevriZobrazeni(false); (zLeg && !legendaVit.hidden ? $("vit-legenda-tl") : tlZob).focus(); });
-$("vitalita-vse").addEventListener("click", function(){ nastavVitalitu(VSECHNY_STUPNE); });
-$("vitalita-ohrozene").addEventListener("click", function(){ nastavVitalitu(OHROZENE); });
-document.addEventListener("keydown", function(e){
-  if (e.key !== "Escape") return;
-  if (!panelVit.hidden) otevriVitalitu(false); else if (!panelZob.hidden) otevriZobrazeni(false);
-});
+tlVitDok.addEventListener("click", function(){ if (this.getAttribute("aria-disabled") !== "true") otevriStrankuVitality(); });
+$("vit-legenda-tl").addEventListener("click", otevriStrankuVitality);   // vysvětlivka otevře stránku Vitalita (stupně, filtr)
+document.addEventListener("keydown", function(e){ if (e.key === "Escape" && !panelZob.hidden) otevriZobrazeni(false); });
 
 /* ---------- typologické mapy (WALS, 25. 9. 2026) ----------
    Vlastnost z okna Mapy obarví tečky podle hodnoty ve WALS (data/typologie.json, texty a skupiny
@@ -2170,6 +2265,7 @@ function prectiOdkaz(){
   if (/^(navod|guide)$/i.test(h)) { otevriNavod(); return; }
   if (/^(starovek|ancient)$/i.test(h)) { otevriStarovek(); return; }
   if (/^(pribehy|stories)$/i.test(h)) { otevriSekci("pribehy"); return; }
+  if (/^(vitalita|vitality)$/i.test(h)) { otevriStrankuVitality(); return; }
   if (/^cesta-/i.test(h)) { spustCestu(h.slice(6)); return; }
   if (/^mapa-/i.test(h)) { ukazMapu(h.slice(5)); try { history.replaceState(null, "", location.pathname + location.search); } catch (e) {} return; }
   if (civilizace(h)) { if (civOtevrena !== civilizace(h).id) otevriCivilizaci(h); return; }
@@ -2373,6 +2469,8 @@ function oddilVitality(stupen, znak){
   for (let k = 0; k < 6; k++) m.appendChild(prvek("i", k <= Math.min(stupen, 5) ? "plny" : null));
   const p = prvek("p"); p.appendChild(prvek("span", "ohrozeni-nazev", popis[0])); p.appendChild(document.createTextNode(" – " + popis[1]));
   o.appendChild(m); o.appendChild(p); o.appendChild(prvek("p", "pozn", T.vitalitaZdroj));
+  const v = prvek("button", "odkaz-o-datech vs-odkaz", T.vitStranka.odkazKarta); v.type = "button";
+  v.addEventListener("click", otevriStrankuVitality); o.appendChild(v);
   return o;
 }
 function prvek(tag, trida, text){

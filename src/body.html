@@ -74,7 +74,7 @@
     <button class="med" id="tl-pribehy" type="button" aria-haspopup="dialog" title="{{pribehyTlacitko}}" data-t-title="pribehyTlacitko"><i class="med-obr" data-ikona="pribehy"></i><span data-t="medPribehy">{{medPribehy}}</span></button>
     <button class="med" id="tl-strom" type="button" aria-pressed="false" title="{{rodokmenPopis}}" data-t-title="rodokmenPopis"><i class="med-obr" data-ikona="rodokmen"></i><span data-t="rodokmen">{{rodokmen}}</span></button>
     <button class="med" id="tl-mapy" type="button" aria-haspopup="dialog" title="{{mapyPopis}}" data-t-title="mapyPopis"><i class="med-obr" data-ikona="mapy"></i><span data-t="medMapy">{{medMapy}}</span></button>
-    <button class="med" id="tl-vitalita-dok" type="button" aria-pressed="false" title="{{vitalitaDokPopis}}" data-t-title="vitalitaDokPopis"><i class="med-obr" data-ikona="vitalita"></i><span data-t="vitalita">{{vitalita}}</span></button>
+    <button class="med" id="tl-vitalita-dok" type="button" aria-haspopup="dialog" title="{{vitalitaDokPopis}}" data-t-title="vitalitaDokPopis"><i class="med-obr" data-ikona="vitalita"><b class="odznak-filtr" id="vitalita-pocet" hidden aria-hidden="true"></b></i><span data-t="vitalita">{{vitalita}}</span></button>
     <button class="med maly" id="tl-zobrazeni" type="button" aria-expanded="false" aria-controls="panel-zobrazeni" title="{{zobrazeniPopis}}" data-t-title="zobrazeniPopis"><i class="med-obr"><svg aria-hidden="true"><use href="#i-nastaveni"/></svg><b class="odznak-filtr" id="zobrazeni-pocet" hidden aria-hidden="true"></b></i><span data-t="zobrazeni">{{zobrazeni}}</span></button>
    </nav>
    <div class="roh-ovladani" role="group" aria-label="{{zoomSkupina}}" data-t-aria-label="zoomSkupina">
@@ -98,14 +98,6 @@
       </div>
       <small class="volba-pozn" id="p-znakove" data-t="znakovePopis">{{znakovePopis}}</small>
      </div>
-     <button class="volba-radek dal" id="tl-vitalita" type="button" aria-expanded="false" aria-controls="vitalita-panel" aria-labelledby="n-vitalita" aria-describedby="p-vitalita"><svg aria-hidden="true"><use href="#i-vitalita"/></svg><span><b id="n-vitalita" data-t="vitalita">{{vitalita}}</b> <small id="p-vitalita" data-t="vitalitaPopis">{{vitalitaPopis}}</small></span><b class="odznak-filtr" id="vitalita-pocet" hidden aria-hidden="true"></b><svg class="sipka-dal" aria-hidden="true"><use href="#i-dal"/></svg></button>
-    </div>
-    <div class="vitalita-panel" id="vitalita-panel" hidden>
-     <div class="vp-hlava"><button class="zpet" id="vitalita-zavrit" type="button" aria-label="{{vitalitaZavrit}}" data-t-aria-label="vitalitaZavrit"><svg aria-hidden="true"><use href="#i-zpet"/></svg></button><strong data-t="vitalitaNadpis">{{vitalitaNadpis}}</strong>
-      <button class="zavrit" id="vitalita-x" type="button" aria-label="{{zavritPanel}}" data-t-aria-label="zavritPanel"><svg aria-hidden="true"><use href="#i-krizek"/></svg></button></div>
-     <div class="vp-predvolby"><button type="button" id="vitalita-vse" data-t="vitalitaVse">{{vitalitaVse}}</button><button type="button" id="vitalita-ohrozene" data-t="vitalitaOhrozene">{{vitalitaOhrozene}}</button></div>
-     <ul class="vp-stupne" id="vitalita-stupne"></ul>
-     <p class="vp-zdroj" data-t="vitalitaZdroj">{{vitalitaZdroj}}</p>
     </div>
    </div>
    <button class="tl-napoveda sklo" id="tl-napoveda" type="button" aria-expanded="false" aria-controls="napoveda" aria-label="{{napoveda}}" data-t-aria-label="napoveda">?</button>
@@ -191,6 +183,7 @@
  <dialog class="o-datech kalendar" id="kalendar" aria-labelledby="kal-nadpis"></dialog>
  <dialog class="o-datech navod" id="navod" aria-labelledby="nav-nadpis"></dialog>
  <dialog class="o-datech starovek-okno" id="starovek-okno" aria-labelledby="st-nadpis"></dialog>
+ <dialog class="o-datech vitalita-okno" id="vitalita-okno" aria-labelledby="vit-nadpis"></dialog>
  <dialog class="o-datech mapy-okno" id="mapy-okno" aria-labelledby="mapy-nadpis"></dialog>
  <dialog class="civ-okno" id="civ-okno" aria-labelledby="civ-nadpis"></dialog>
 </div>

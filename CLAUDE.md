@@ -83,10 +83,10 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a živý web workflow Diag
   jednoznačně ohrožený, vážně ohrožený, kriticky ohrožený, vymřelý** (safe … extinct), popisy podle definic UNESCO.
   Navíc **probouzený** (awakening): na stupnici UNESCO vymřelý, ale oživovaný; Glottolog ho má jen v komentáři
   z původního zdroje (ElCat „Awakening“, Ethnologue „Reawakening“), `scripts/podrobnosti.mjs` ho ukládá jako 6.
-  V `radky` je tedy vitalita -1 (bez údaje) až 6. Řádek „Vitalita“ v panelu Zobrazení otevře podstránku se stupni (lze vybrat víc,
+  V `radky` je tedy vitalita -1 (bez údaje) až 6. Filtr stupňů je na **stránce Vitalita** (lze vybrat víc,
   předvolby „Všechny“ a „Jen ohrožené“ = zranitelný až kriticky); volba se pamatuje (`atlas-vitalita`).
   Filtry vitality a znakových jazyků se skládají v `uplatniFiltry()`.
-  Dokud je podstránka otevřená, tečky mají **barvu podle vitality**, rozlišenou podle významu (25. 9. 2026 na přání
+  Se zapnutými barvami vitality mají tečky **barvu podle vitality**, rozlišenou podle významu (25. 9. 2026 na přání
   uživatele „výrazněji odlišit“ – jednobarevná oranžová stupnice na malých tečkách splývala): bezpečný **modře**,
   čtyři stupně ohrožení **teplou stupnicí** zlatá → oranžová → červená → vínová (validátor palet `--ordinal` na
   pevnině `--souse-vit`, v noci i ve dne; rozptyl odstínu do 40°), vymřelý **šedě** (v noci bledě, ve dne tmavě),
@@ -94,10 +94,10 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a živý web workflow Diag
   v legendě prošly kontrolou CVD. `--vit-0`…`--vit-6`, `--vit-nic`. Neměnit bez nového ověření.
   Vitalita je na kartě tečky i na kartě jazyka z atlasu (`oddilVitality`).
   **Medailon „Vitalita“ pod glóbem** (dřív tlačítko v liště, 25. 9. 2026, návrh schválený uživatelem místo barev vitality rovnou po otevření):
-  zapne barvy vitality natrvalo (`vitalitaZap`, pamatuje se `atlas-barvy-vitality`) a nad medailony ukáže vysvětlivku
-  stupňů `#vit-legenda` (bezpečný → vymřelý, probouzený, bez údaje) – jen dokud jsou barvy zapnuté, jinak žádná
-  vysvětlivka na glóbu (to uživatel nechce). Klepnutí na vysvětlivku otevře stupně (filtr). Podstránka otevřená z vysvětlivky
-  se zavře šipkou zpět i křížkem rovnou celá (`vitalitaZLegendy`); křížek `#vitalita-x` je v podstránce vždy. Barvy rovnou po otevření
+  od 27. 9. 2026 otevírá **stránku Vitalita** (viz níž). Barvy vitality (`vitalitaZap`, pamatuje se `atlas-barvy-vitality`,
+  zapíná je tlačítko na stránce nebo dlaždice v okně Mapy; medailon pak má červený rám, třída `.zapnuto`) nad medailony
+  ukážou vysvětlivku stupňů `#vit-legenda` (bezpečný → vymřelý, probouzený, bez údaje) – jen dokud jsou barvy zapnuté,
+  jinak žádná vysvětlivka na glóbu (to uživatel nechce). Klepnutí na vysvětlivku otevře stránku Vitalita. Barvy rovnou po otevření
   nedoporučeno: bez vysvětlivky nic neříkají, pevnina přijde o reliéf, noc o třpyt a oranžové území by splývalo.
 - **Odkaz na jazyk**: `#cs` (id jazyka z atlasu) nebo `#corn1251` (glottocode tečky, build ho dává do `REJSTRIK.g`).
   Výběr zapíše adresu (`history.replaceState`), otevření odkazu jazyk vybere; když ho schovává filtr, filtry se zruší.
@@ -138,20 +138,27 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a živý web workflow Diag
   Na telefonu jsou medailony pod glóbem ve dvou řadách po třech. Ikony chrámu a knihy v záhlaví zmizely.
   **V rodokmenu jsou Mapy a Vitalita šedé a nečinné** (`aria-disabled`, odstíny šedi, `title` „V rodokmenu nejsou barevné
   mapy k dispozici“; uživatel 27. 9. 2026: barví jen glóbus, v rodokmenu nedávají smysl). Medailon Rodokmen se v rodokmenu
-  mění na Glóbus. Řádek Vitalita (filtr stupňů) v Nastavení se přesune na samostatnou stránku Vitalita, až vznikne.
+  mění na Glóbus.
   **Náhodný jazyk** je malé červené tlačítko v záhlaví seznamu vedle počtu jazyků (`.pocet-radek`), na počítači
   i telefonu. **Zoom a Celý svět** jsou nenápadně vpravo nahoře na glóbu pod otazníkem, bez pilulky (`.roh-ovladani`);
   na telefonu jen Celý svět (zoom dvěma prsty). Uživatel: „+ − nechat nenápadně někde v rohu bez pilulky“.
-  **Panel Nastavení** (dřív „Zobrazení“, `#panel-zobrazeni`): otáčení, jména, znakové jazyky a řádek Vitalita, který
-  otevře podstránku se stupni (filtr; šipka Zpět, Escape zavře napřed ji, pak panel). Odznak na tlačítku ukazuje
-  počet zapnutých filtrů. **Barevné mapy v Nastavení nejsou** – jsou v okně Mapy.
+  **Panel Nastavení** (dřív „Zobrazení“, `#panel-zobrazeni`): jen otáčení, jména a znakové jazyky; odznak ukazuje
+  zapnutý filtr znakových jazyků. **Barevné mapy ani vitalita v Nastavení nejsou** – jsou v okně Mapy a na stránce Vitalita.
 - **Okno Mapy** (`<dialog id="mapy-okno">`, `postavMapy`, `otevriMapy`): všechny barevné mapy s kulatým náhledem –
   Písmo, Vitalita a 24 vlastností WALS po oblastech, zapnutá mapa má červený rám a nahoře „Vypnout barevnou mapu“.
   Výběr okno zavře (mapa nesmí být zakrytá). Tlačítko „Jiná mapa…“ v legendě typologie i písma okno otevře znovu.
   Náhledy jsou `static/mapy/<id>.jpg` (160 px, snímky glóbu v úzkém okně, aby byly tečky vidět), vyrábí je
   `scripts/mapy-nahledy.mjs` – po změně vzhledu glóbu nebo palet map spustit znovu. Build je přidává do `IKONY`
-  jako `mapa-<id>`; edge funkce pouští `/mapy/*` na obou doménách. Plánováno dál: **samostatná stránka Vitalita**
-  z medailonu (počty podle stupňů UNESCO, nejohroženější, probouzené jazyky, metodika).
+  jako `mapa-<id>`; edge funkce pouští `/mapy/*` na obou doménách.
+- **Stránka Vitalita** (27. 9. 2026, `<dialog id="vitalita-okno">`, `postavStrankuVitality`, `otevriStrankuVitality`, odkaz
+  `#vitalita` / `#vitality`, odkaz „Vitalita jazyků světa ›“ v oddílu vitality na kartě jazyka): úvod, čtyři hlavní čísla
+  (bezpečné, ohrožené 1–4, vymřelé, probouzené, s podílem), tlačítko „Obarvit glóbus podle vitality“ (zapne barvy a stránku
+  zavře), **stupně** jako vodorovné pruhy s počtem a podílem a zaškrtnutím = filtr (předvolby Všechny / Jen ohrožené; odznak
+  `n/8` na medailonu Vitalita, když filtr něco skrývá), tabulka **podle makrooblastí Glottologu** s pruhem skladby stupňů,
+  **ohrožené a probouzené jazyky atlasu** (dlaždice, klik vybere jazyk), **všechny probouzené jazyky** (štítky, klik ukáže
+  tečku) s odkazem na příběh „Jazyky, které se vracejí“, a **metodika a zdroje** (UNESCO 2003, Moseley 2010,
+  Hammarström a kol. 2018 o AES, Glottolog, ElCat). Všechna čísla se počítají z dat při otevření; texty `vitStranka`
+  v `src/ui/*.json`. Filtr stupňů byl dřív podstránkou panelu Zobrazení (`#vitalita-panel`, zrušeno).
 - **Karta jako pohlednice**: nahoře „hero“ v barvě rodiny (u teček bez atlasu azurová) s velkým pozdravem,
   pod ním štítky (mluvčích, rodina, vitalita) a záložky (atlas: Zajímavost / Vitalita / Příbuzní;
   tečka: Přehled / Jak funguje / Příbuzní). Při výběru nového jazyka karta vjede (`vjezd`).
