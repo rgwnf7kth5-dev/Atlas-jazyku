@@ -2531,13 +2531,13 @@
   "cs": {
    "nazev": "Mongolština",
    "vyslovnost": "sajn bajna uu",
-   "rodina": "mongolská",
+   "rodina": "mongolsko-kitanská – mongolská",
    "fakt": "Tradiční mongolské písmo se píše shora dolů ve svislých sloupcích; v Mongolsku převládá cyrilice, ve Vnitřním Mongolsku (Čína) tradiční písmo."
   },
   "en": {
    "nazev": "Mongolian",
    "vyslovnost": "sain BAIN-oo",
-   "rodina": "Mongolic",
+   "rodina": "Mongolic-Khitan – Mongolic",
    "fakt": "Traditional Mongolian script is written top to bottom in vertical columns; Mongolia mainly uses Cyrillic, Inner Mongolia (China) the traditional script."
   }
  },
@@ -3388,13 +3388,13 @@
   "cs": {
    "nazev": "Guaraní",
    "vyslovnost": "mbaejčapa",
-   "rodina": "tupi-guaranijská",
+   "rodina": "tupijská – tupi-guaraní",
    "fakt": "Guaranština je v Paraguayi úředním jazykem vedle španělštiny a mluví jí většina obyvatel, včetně lidí bez domorodého původu. V Americe jde o ojedinělý případ."
   },
   "en": {
    "nazev": "Guarani",
    "vyslovnost": "mbah-EY-chah-pah",
-   "rodina": "Tupi-Guarani",
+   "rodina": "Tupian – Tupi-Guarani",
    "fakt": "Guarani is co-official with Spanish in Paraguay and is spoken by most of the population, including people of non-Indigenous descent – a unique case in the Americas."
   }
  },
@@ -4446,13 +4446,13 @@
   "cs": {
    "nazev": "Bambarština",
    "vyslovnost": "i ni če",
-   "rodina": "nigerokonžská – mandejská",
+   "rodina": "mandé",
    "fakt": "Bambarština se píše latinkou, ale také písmem n'ko, které roku 1949 vytvořil guinejský učenec Solomana Kanté pro mandingské jazyky. N'ko se píše zprava doleva."
   },
   "en": {
    "nazev": "Bambara",
    "vyslovnost": "ee nee CHEH",
-   "rodina": "Niger-Congo – Mande",
+   "rodina": "Mande",
    "fakt": "Bambara is written in Latin script and also in N'Ko, created in 1949 by the Guinean scholar Solomana Kanté for the Manding languages. N'Ko runs right to left."
   }
  },
@@ -5787,13 +5787,13 @@
   "cs": {
    "nazev": "Zapotéčtina",
    "vyslovnost": "padjuši",
-   "rodina": "otomangejská",
+   "rodina": "otomangueská (Mexiko) – zapotécká",
    "fakt": "Zapotéčtina je ve skutečnosti skupina příbuzných jazyků. Zapotékové používali písmo již v 1. tisíciletí př. n. l.; patří k nejstarším v Mezoamerice."
   },
   "en": {
    "nazev": "Zapotec",
    "vyslovnost": "pah-DYOO-shee",
-   "rodina": "Oto-Manguean",
+   "rodina": "Otomanguean – Zapotecan",
    "fakt": "Zapotec is in fact a group of related languages. The Zapotecs used writing as early as the 1st millennium BCE, one of the oldest scripts in Mesoamerica."
   }
  },
@@ -5879,14 +5879,14 @@
   "cs": {
    "nazev": "Ainština",
    "vyslovnost": "irankarapte",
-   "rodina": "izolovaný jazyk – nemá příbuzné",
-   "fakt": "Ainština je izolovaný jazyk původních obyvatel Hokkaida a je kriticky ohrožená. Pozdrav „irankarapte“ se tradičně vykládá jako „dovolte, abych se jemně dotkl vašeho srdce“."
+   "rodina": "ainská",
+   "fakt": "Ainština z Hokkaida tvoří s vymřelou sachalinskou a kurilskou ainštinou malou rodinu bez prokázaných dalších příbuzných. Pozdrav „irankarapte“ se tradičně vykládá jako „dovolte, abych se jemně dotkl vašeho srdce“."
   },
   "en": {
    "nazev": "Ainu",
    "vyslovnost": "ee-rahn-kah-RAHP-teh",
-   "rodina": "isolate – no known relatives",
-   "fakt": "Ainu is a language isolate of the Indigenous people of Hokkaido and is critically endangered. The greeting “irankarapte” is traditionally interpreted as “let me gently touch your heart”."
+   "rodina": "Ainu",
+   "fakt": "Hokkaido Ainu forms a small family with extinct Sakhalin and Kuril Ainu, with no demonstrated wider relatives. The greeting “irankarapte” is traditionally read as “let me gently touch your heart”."
   }
  },
  {

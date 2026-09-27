@@ -155,6 +155,8 @@ if (pd.uzly.length !== pd.nad.length) chyby.push("data/podrobnosti.json: strom p
     if (!kody.has(k)) chyby.push(`data/polohy-opravy.json: tečka „${k}“ v Glottologu není`);
     if (!o.proc || (o.poloha !== null && (!Array.isArray(o.poloha) || Math.abs(o.poloha[0]) > 180 || Math.abs(o.poloha[1]) > 90))) chyby.push(`data/polohy-opravy.json: „${k}“ potřebuje polohu [délka, šířka] nebo null a důvod`);
   } }
+{ const rodiny = new Set(json("data/glottolog.json").rodiny);   // české názvy rodin: jen rodiny, které v Glottologu jsou (staré klíče po aktualizaci smazat)
+  for (const k of Object.keys(json("data/glottolog-families.cs.json"))) if (!k.startsWith("_") && !rodiny.has(k)) chyby.push(`data/glottolog-families.cs.json: rodina „${k}“ v Glottologu není`); }
 { const uzly = new Set(pd.uzly);                // české názvy větví pro rodokmen: jen větve, které ve stromu opravdu jsou
   for (const k of Object.keys(json("data/glottolog-branches.cs.json"))) if (!uzly.has(k)) chyby.push(`data/glottolog-branches.cs.json: větev „${k}“ v Glottologu není`); }
 { const kody = new Set(json("data/glottolog.json").body.map(b => b[6]));   // česká jména teček (doplňky a opravy CLDR a Wikidat)

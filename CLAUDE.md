@@ -669,7 +669,15 @@ Dřívější náhledový artefakt https://claude.ai/artifact/XS67Gsv9d4y2pMu7UW
   arabština“, „mixtéčtina (Peñoles)“) a ustálené názvy (monština, šorština). Opraveny i chyby z Wikidat (severní dolnosaština
   vedená jako fríština, asyrská novoaramejština jako chaldejská, Lokono jako „arawacké jazyky“, americký znakový jazyk).
   Vše prošlo nezávislou kontrolou. Nepřekládat vymyšlenými názvy – málo známé jazyky bez ustáleného českého jména zůstávají
-  anglicky. Zbývá: 142 rodin bez českého názvu, nesoulad „otomangejská“ (rodina) × „otomangueská“ (větev).
+  anglicky. **Druhé kolo (27. 9. 2026, „2 a 3 udělej“):** prošlo všech 892 převzatých jmen – 210 oprav v `jazyky-cs.json`
+  (věcné chyby jako „aleutština“ u vanuatského Ale, „čukština“ u chuukštiny, „ladinština“ u judeošpanělštiny; velká písmena;
+  sjednocení se jmény atlasu); prázdné jméno "" zruší chybné jméno z Wikidat. Čínské variety česky („chajnanština“,
+  „čínština (dialekty Ťin)“), ne pinyinem. Rodiny: doplněno 128 českých názvů, 28 zastaralých klíčů smazáno (validace
+  nově hlídá, že rodina v Glottologu je), sjednoceno **drávidská** (rodina i větve), **otomangueská (Mexiko)**, **mandé**
+  (ne „mandejská“ – to je o Mandejcích), **na-dené** (rodina Athabaskan-Eyak-Tlingit), **ainská**, **velkoandamanská**;
+  zdvojené popisky ve stromu rozlišeny („mongolská (užší)“, „japonská (užší)“, „lakotsko-dakotská“). Anglicky zůstávají
+  nejisté rodiny (Teberan, Jarrakan, Coosan, Jicaquean, Gunwinyguan, Walioic, Giimbiyu, Palaihnihan). Štítky rodin na kartách
+  mn, bm, zap, ain, gn sjednoceny s rodokmenem; ainština už není „izolovaný jazyk“ (Glottolog: malá ainská rodina).
 - Přeložené jsou všechny větve na cestě rodokmenu u jazyků atlasu (576 názvů v `glottolog-branches.cs.json`,
   24. 9. 2026). Zbývají větve, které se objeví jen u ostatních teček nebo ve stromu, a anglická jména teček
   bez českého názvu (např. Dgèrnésiais, Jèrriais) – překládat postupně (přání uživatele).
