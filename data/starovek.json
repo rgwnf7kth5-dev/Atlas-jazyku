@@ -30101,6 +30101,884 @@
    }
   },
   {
+   "id": "spisovna-cestina",
+   "sekce": "pribehy",
+   "skupina": "promeny",
+   "adresa": {
+    "cs": "spisovna-cestina",
+    "en": "standard-czech"
+   },
+   "krajina": "tiskarna",
+   "hledat": "spisovna cestina standard czech literary czech spisovny jazyk standard language kodifikace codification stara cestina old czech glosy glosses litomericka listina litomerice charter hospodine pomiluj ny sprezky sprezkovy pravopis digraphs diakritika diacritics hacek carka de orthographia bohemica hus bratrsky pravopis brethren orthography jednota bratrska unity of the brethren jan blahoslav gramatika grammar bible kralicka kralice bible sestidilka olomoucka bible bila hora white mountain pobelohorska doba temno balbin narodni obrozeni national revival josef dobrovsky lehrgebaude josef jungmann slovnik dictionary safarik rukopis kralovedvorsky zelenohorsky manuscripts forgery hanka gebauer masaryk athenaeum pravidla ceskeho pravopisu rules of czech orthography prazsky lingvisticky krouzek prague linguistic circle mathesius havranek obecna cestina common czech hovorova cestina colloquial diglosie diglossia ustav pro jazyk cesky institute of the czech language",
+   "tecky": [],
+   "pisma": [],
+   "fotky": {
+    "olomoucka": {
+     "soubor": "olomoucka.jpg",
+     "sirka": 1003,
+     "vyska": 900,
+     "autor": "",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Anointing_of_David_as_king,_from_the_Olomouc_Bible,_Part_I,_folio_264r_(Bible_olomouck%C3%A1,_I._d%C3%ADl,_I._1417,_s._264r)_cropped_sharpened.jpg",
+     "cs": "Pomazání Davida za krále na miniatuře na začátku 27. žalmu (ve Vulgátě 26.) v prvním dílu Olomoucké bible z roku 1417. Český text je psaný spřežkovým pravopisem: przed kym „před kým“, kdyzz „když“, gedli „jedli“.",
+     "en": "The anointing of David as king in the miniature opening Psalm 27 (26 in the Vulgate), from the first volume of the Olomouc Bible, 1417. The Czech text is written in the digraph spelling: przed kym “before whom”, kdyzz “when”, gedli “(that they might) eat” (today před kým, když, jedli)."
+    },
+    "titul": {
+     "soubor": "titul.jpg",
+     "sirka": 265,
+     "vyska": 400,
+     "autor": "",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Kralice.jpg",
+     "cs": "Titulní list prvního dílu Bible kralické s pěti knihami Mojžíšovými, vydaného roku 1579 (letopočet M.D.LXXIX).",
+     "en": "Title page of the first volume of the Kralice Bible, containing the five books of Moses, published in 1579 (dated M.D.LXXIX)."
+    },
+    "skutky": {
+     "soubor": "skutky.jpg",
+     "sirka": 1000,
+     "vyska": 658,
+     "autor": "Muzeum jihovýchodní Moravy ve Zlíně",
+     "licence": "CC BY-SA 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Bible_kralick%C3%A1,_1593.jpg",
+     "cs": "Začátek Skutků apoštolů v šestém dílu Bible kralické (Nový zákon, 1593). Uprostřed je biblický text, po stranách úzké sloupce odkazů na souběžná místa a výkladových poznámek. Muzeum jihovýchodní Moravy ve Zlíně.",
+     "en": "The opening of the Acts of the Apostles in the sixth volume of the Kralice Bible (New Testament, 1593). The biblical text stands in the middle, flanked by narrow columns of cross-references and explanatory notes. Museum of South-East Moravia, Zlín."
+    },
+    "lukas": {
+     "soubor": "lukas.jpg",
+     "sirka": 1200,
+     "vyska": 411,
+     "autor": "",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Luke_5_1,_Bible_kralick%C3%A1,_vol_6._1593.png",
+     "cs": "Lukáš 1,5 v šestém dílu Bible kralické (1593): „Byl za dnů Herodesa krále judského kněz nějaký, jménem Zachariáš, z třídy Abiášovy…“ (citováno dnešním pravopisem) Bratrský pravopis už má háček i čárku, ale g píše za dnešní j (gménem, geho), j za í (třjdy) a uvnitř slova ſſ za š (Abiáſſowy).",
+     "en": "Luke 1:5 in the sixth volume of the Kralice Bible (1593): “There was in the days of Herod, the king of Judaea, a certain priest named Zacharias, of the course of Abia…” The Brethren spelling already uses the háček and the acute, but writes g for today’s j (gménem, geho), j for í (třjdy) and, inside a word, ſſ for š (Abiáſſowy)."
+    },
+    "blahoslav-titul": {
+     "soubor": "blahoslav-titul.jpg",
+     "sirka": 710,
+     "vyska": 1100,
+     "autor": "",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Jana_Blahoslawa_Grammatika_%C4%8Desk%C3%A1_z_ruk_04.png",
+     "cs": "Titulní list vydání Blahoslavovy Gramatiky české, kterou roku 1857 ve Vídni vydali z rukopisu Tereziánské knihovny Ignác Hradil a Josef Jireček. Podle titulu byla gramatika „dokonaná l. 1571“ a je do ní vložen text starší gramatiky Beneše Optáta, Petra Gzela a Václava Philomata podle norimberského vydání z roku 1543.",
+     "en": "Title page of Blahoslav’s Czech Grammar as published in Vienna in 1857 by Ignác Hradil and Josef Jireček from the manuscript in the Theresian Library. According to the title the grammar was “completed in 1571”, and it incorporates the text of the older grammar by Beneš Optát, Petr Gzel and Václav Philomates, in its Nuremberg edition of 1543."
+    },
+    "blahoslav-strana": {
+     "soubor": "blahoslav-strana.jpg",
+     "sirka": 769,
+     "vyska": 724,
+     "autor": "",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Jana_Blahoslawa_Grammatika_%C4%8Desk%C3%A1_z_ruk_004.png",
+     "cs": "Stránka 342 téhož vydání. Blahoslav tu zapisuje rozdíly mezi češtinou a slovenštinou: „Kdež Čechové mají ř, tu Slováci r“ – Čech řekne vařiti, koření, Slovák variti (repu s korením).",
+     "en": "Page 342 of the same edition. Here Blahoslav notes differences between Czech and Slovak: “Where the Czechs have ř, the Slovaks have r” – a Czech says vařiti, koření, a Slovak variti (repu s korením, “turnip with spice”)."
+    },
+    "dobrovsky": {
+     "soubor": "dobrovsky.jpg",
+     "sirka": 733,
+     "vyska": 1100,
+     "autor": "František Tkadlík",
+     "licence": "CC BY-SA 4.0",
+     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Portrait_of_Josef_Dobrovsk%C3%BD.jpg",
+     "cs": "Josef Dobrovský (1753–1829) na portrétu Františka Tkadlíka z roku 1820.",
+     "en": "Josef Dobrovský (1753–1829), portrait by František Tkadlík, 1820."
+    },
+    "slovnik": {
+     "soubor": "slovnik.jpg",
+     "sirka": 874,
+     "vyska": 1100,
+     "autor": "",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Slovn%C3%ADk_%C4%8Desko-n%C4%9Bmeck%C3%BD_Josefa_Jungmanna,_1._d%C3%ADl_(1835).jpg",
+     "cs": "Titulní list prvního dílu (A–J) Jungmannova Slovníku česko-německého, Praha 1835, vydaného „pomocí Českého museum“. Titul je psaný ještě starším pravopisem: Slownjk (Slovník), Djl (Díl).",
+     "en": "Title page of the first volume (A–J) of Jungmann’s Czech–German Dictionary, Prague 1835, published “with the help of the Bohemian Museum”. It is still printed in the older spelling: Slownjk (today Slovník), Djl (Díl)."
+    },
+    "gebauer": {
+     "soubor": "gebauer.jpg",
+     "sirka": 565,
+     "vyska": 778,
+     "autor": "",
+     "licence": "Public domain",
+     "licenceUrl": "",
+     "zdroj": "https://commons.wikimedia.org/wiki/File:Jan_Gebauer.jpg",
+     "cs": "Jan Gebauer (1838–1907), bohemista, autor Historické mluvnice jazyka českého a prvních Pravidel českého pravopisu (1902).",
+     "en": "Jan Gebauer (1838–1907), scholar of Czech, author of the Historical Grammar of the Czech Language and of the first Rules of Czech Orthography (1902)."
+    }
+   },
+   "cs": {
+    "nazev": "Jak vznikla spisovná čeština",
+    "stitek": "Příběhy jazyků",
+    "podtitul": "Glosy a spřežky · Bible kralická · obrození · Pravidla a obecná čeština",
+    "perex": "Spisovná čeština, jak ji učí školy a popisují Pravidla českého pravopisu, není prostým zápisem běžné řeči. Je výsledkem více než sedmi set let psaní česky: od prvních českých slov v latinských listinách přes pravopisné reformy a jazyk Bible kralické až k obrozencům, kteří na přelomu 18. a 19. století obnovili spisovnou normu podle jazyka 16. století. Proto se spisovná čeština v řadě rysů liší od obecné češtiny, kterou se v Čechách běžně mluví.",
+    "fakta": [
+     [
+      "Nejstarší věta",
+      "přípisek v litoměřické listině, začátek 13. století"
+     ],
+     [
+      "Pravopis",
+      "diakritický; návrh v De orthographia Bohemica (počátek 15. století), dnešní podoba od poloviny 19. století"
+     ],
+     [
+      "Vzor normy",
+      "čeština 16. století, zejména jazyk Bible kralické (1579–1594)"
+     ],
+     [
+      "Kodifikace",
+      "Dobrovský 1809, Jungmannův slovník 1835–1839, Pravidla českého pravopisu od 1902"
+     ],
+     [
+      "Dnes",
+      "Ústav pro jazyk český AV ČR (Pravidla, Internetová jazyková příručka)"
+     ],
+     [
+      "Vedle ní",
+      "obecná čeština v Čechách a na západní Moravě, hovorová čeština, nářečí"
+     ]
+    ],
+    "nazvyTecek": {},
+    "oddily": [
+     {
+      "typ": "text",
+      "h": "Spisovný jazyk není nářečí",
+      "p": [
+       "Spisovným jazykem se rozumí ustálená podoba jazyka, která slouží veřejnému a oficiálnímu dorozumívání: škole, úřadům, vědě, tisku. Od nářečí se liší tím, že je nadnářeční, tedy společná celému území, a že je kodifikovaná: její pravopis, tvary a slovní zásobu výslovně zachycují mluvnice, slovníky a pravidla. Žádný spisovný jazyk není „přirozeně“ hotový; každý je výsledkem dlouhého vývoje, v němž se výběr z mnoha možností postupně ustálil.",
+       "Dějiny češtiny se podle periodizace Bohuslava Havránka obvykle dělí na pračeštinu (od konce 10. do poloviny 12. století, písemně nedoloženou), starou češtinu (do konce 15. století), střední češtinu (16. až 18. století) a novou češtinu. Spisovná čeština prošla všemi těmito obdobími, ale ne plynule: po rozkvětu v 16. století se její užívání v 17. a 18. století zúžilo a obrozenci na přelomu 18. a 19. století navázali vědomě na starší stav. Tento zlom vysvětluje, proč dnešní spisovná čeština v některých ohledech zachovává podobu jazyka ze 16. století."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Latina, glosy a první české věty",
+      "p": [
+       "Hlavním psaným jazykem v Čechách byla v raném středověku latina a v menší míře církevní slovanština (o slovanské bohoslužbě na Moravě a v Čechách podrobněji stránka Slované a Velká Morava). Česky se zpočátku psala jen jednotlivá slova v latinských textech: jména osob a míst (takzvaná bohemika), glosy, tedy české překlady slov vepsané do cizojazyčného textu, a přípisky. V židovských spisech se dochovaly i české glosy psané hebrejským písmem. Za nejstarší dochovanou českou větu se obvykle pokládá přípisek ze začátku 13. století v zakládací listině litoměřické kapituly, datované k roku 1057.",
+       "Nejstarší česká duchovní píseň Hospodine, pomiluj ny je starší než většina dochovaných textů, ale jak moc, je sporné: její vznik se klade do rozmezí 10. až 13. století a nejstarší zápisy jsou až ze 14. století. Kolem roku 1300 a na počátku 14. století vznikají první rozsáhlé české skladby, například veršovaná Alexandreida a Dalimilova kronika. Ve 14. století proniká čeština do dalších druhů textů, ve 2. polovině století vzniká první úplný překlad Bible a koncem století i česky psané úřední listiny. Na počátku 15. století, v době Husova kazatelského působení, se okruh čtenářů české literatury dále rozšiřuje."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "olomoucka"
+     },
+     {
+      "typ": "text",
+      "h": "Od spřežek k diakritice",
+      "p": [
+       "Latinka neměla znaky pro řadu českých hlásek, například č, š, ž, ř nebo ě. Nejstarší zápisy užívají takzvaný primitivní pravopis: písmena latinky bez úprav, takže například c mohlo znamenat k, c i č. Během 13. století se začal objevovat spřežkový pravopis, v němž jednu hlásku zapisovala skupina písmen, spřežka: rz nebo rs pro ř, cz pro c a č, ss pro š a (v mladším spřežkovém pravopisu) zz pro ž; ve starším pravopisu znamenalo zz naopak s. Závazná pravidla neexistovala a písaři spřežky užívali nejednotně. Jan Gebauer roku 1894 rozlišil v dějinách českého pravopisu pět fází: primitivní, spřežkový, diakritický, bratrský a novodobý.",
+       "Na počátku 15. století navrhl latinsky psaný spis De orthographia Bohemica („O českém pravopisu“) nahradit spřežky písmeny se znaménkem: měkké souhlásky psát s tečkou nad písmenem (punctus rotundus) a dlouhé samohlásky s čárkou (virgula). Spis je anonymní; tradičně se připisuje Janu Husovi, jeho autorství však není prokázané. Návrh se ujímal jen pozvolna a až do poloviny 16. století se psalo souběžně spřežkami i diakritikou. Z tečky se v 16. století vyvinul háček. Český způsob označování hlásek diakritikou později převzaly i jiné jazyky, mimo jiné chorvatština, slovinština a litevština."
+      ]
+     },
+     {
+      "typ": "slova",
+      "h": "Jak se psala čeština",
+      "uvod": "Doklady jsou přepsány z pramenů, včetně dlouhého ſ. Poslední dva sloupce říkají, jak slova znějí nebo se píší dnes a co se v zápisu změnilo.",
+      "hlavicka": [
+       "doklad",
+       "pramen a doba",
+       "dnes",
+       "co se změnilo"
+      ],
+      "radky": [
+       [
+        "Pauel dal geſt ploſcoucih zemu",
+        "přípisek v litoměřické listině, začátek 13. st.",
+        "„Pavel dal půdu v Ploškovicích“, tj. v dnešních Ploskovicích u Litoměřic",
+        "primitivní pravopis: u za v, g za j, c za k, ſ za š, h za ch; měkkost ani délka se neznačí"
+       ],
+       [
+        "przed kym · kdyzz · gedli",
+        "Olomoucká bible, 1417",
+        "před kým · když · jedli",
+        "spřežky rz = ř, zz = ž; g za j; délka se neznačí"
+       ],
+       [
+        "gménem · geho · něgaký",
+        "Bible kralická, 1593",
+        "jménem · jeho · nějaký",
+        "háček a čárka už jsou, ale g stojí za j"
+       ],
+       [
+        "třjdy · gegj · Abiáſſowy",
+        "Bible kralická, 1593",
+        "třídy · její · Abiášovy",
+        "j za dlouhé í, uvnitř slova ſſ za š, w za v"
+       ],
+       [
+        "cyzý",
+        "bratrský pravopis, 16.–18. st.",
+        "cizí",
+        "po c, s, z se psalo vždy y; koncovky sjednotil Dobrovský (1819), kořeny až reforma 40. let 19. století"
+       ],
+       [
+        "Slownjk · Djl",
+        "Jungmannův slovník, 1835",
+        "Slovník · Díl",
+        "w → v a j → í; změny prosazené v letech 1842–1849"
+       ],
+       [
+        "se sbírkau příkladů",
+        "Jungmannova Slovesnost, 1845",
+        "se sbírkou příkladů",
+        "au → ou, rovněž v polovině 19. století"
+       ]
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Knihtisk, gramatiky a Jan Blahoslav",
+      "p": [
+       "V 16. století se čeština šířila do vědy, práva i náboženské literatury a o jazyk samotný se začali soustavně zajímat učenci. Knihtisk vyžadoval jednotnou podobu textu, a proto se v tištěných knihách ustálil takzvaný bratrský pravopis, pojmenovaný podle tisků Jednoty bratrské. Byl v zásadě diakritický, ale podržel několik spřežek, hlavně ch a uvnitř slova ſſ pro š. Tečka nad měkkými souhláskami se změnila v háček (č, ď, ň, ř, ť, ž), délka se značila čárkou a z malého o nad u, kterým se už v 15. století zapisovala dvojhláska uo, se stal kroužek (ů). Hlásku j však tisky psaly jako g, dlouhé í jako j, v jako w, dvojhlásku ou jako au a po c, s, z vždy y.",
+       "Roku 1533 vyšla tiskem Grammatika česká Beneše Optáta, Petra Gzela a Václava Philomata. Navázal na ni Jan Blahoslav (1523–1571), biskup Jednoty bratrské, vzdělaný na humanistických školách a na univerzitě ve Wittenbergu. Roku 1564 vydal v Ivančicích vlastní překlad Nového zákona, pořízený s přihlédnutím k řeckému originálu, a roku 1571 dokončil rukopis Gramatiky české. Její první část je opisem a komentářem gramatiky Optáta a Philomata, druhá obsahuje množství příkladů, jak správně překládat slova a vazby biblického textu. Gramatika zůstala v rukopisu a tiskem vyšla až roku 1857, zásady v ní shrnuté však podle převládajícího výkladu výrazně ovlivnily jazyk Bible kralické."
+      ]
+     },
+     {
+      "typ": "galerie",
+      "h": "Blahoslavova Gramatika česká",
+      "f": [
+       "blahoslav-titul",
+       "blahoslav-strana"
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Bible kralická",
+      "p": [
+       "Bible kralická je první český překlad celé Bible z původních jazyků, hebrejštiny, aramejštiny a řečtiny, nikoli z latinské Vulgáty. Pořídili ho překladatelé a teologové Jednoty bratrské; Starý zákon přeložil tým, který vedl biskup Ondřej Štefan, pro Nový zákon převzali revidovaný Blahoslavův překlad. Bible vyšla v tajné bratrské tiskárně na tvrzi v Kralicích nad Oslavou v šesti dílech z let 1579–1594 (Nový zákon nese nejednotně letopočet 1593 a 1594), s rozsáhlými výkladovými poznámkami po stranách textu. Poprvé v českém prostředí v ní byly kapitoly rozděleny na verše.",
+       "Roku 1596 vyšla Bible kralická v jednom svazku bez poznámek a roku 1613 znovu, opět revidovaná; toto „poslední kralické vydání“ se stalo předlohou pozdějších vydání, protože po roce 1620 musela Jednota bratrská svou činnost ukončit. Během protireformace byla bible na katolickém indexu zakázaných knih a vycházela v cizině, například roku 1722 v Halle.",
+       "Jazyk a pravopis kralického překladu, často nazývaný bibličtina, se stal vzorem spisovné češtiny. Ten vzor přečkal i dobu, kdy se v českých zemích Bible kralická tisknout nesměla, a obrozenci na něj na počátku 19. století navázali."
+      ]
+     },
+     {
+      "typ": "galerie",
+      "h": "Šestidílka",
+      "f": [
+       "titul",
+       "skutky"
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "lukas",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "Po Bílé hoře",
+      "p": [
+       "Po porážce stavovského povstání na Bílé hoře roku 1620 odešla z českých zemí do exilu značná část nekatolické šlechty a vzdělanců, mezi nimi Jan Amos Komenský. Obnovené zřízení zemské z roku 1627 (na Moravě 1628) postavilo němčinu na roveň češtině. Užívání spisovné češtiny se v následujících desetiletích postupně zužovalo: nejprve z ní odešla věda, později velká část náročné literatury a nakonec i správa. Česky se dál psalo a tisklo, v exilu i doma, zejména v jezuitském prostředí; vznikala kázání, duchovní poezie a četba pro méně vzdělané čtenáře. Jezuita Bohuslav Balbín sepsal v 70. letech 17. století latinskou obranu češtiny (Dissertatio apologetica), vytištěnou až roku 1775.",
+       "Zatímco spisovný jazyk se v tomto období měnil jen málo, mluvená čeština se vyvíjela dál. Nářečí se více rozrůznila, zejména moravská a slezská, a do městské mluvy pronikaly germanismy. Tak se prohluboval rozdíl mezi jazykem knih a běžnou řečí, s nímž pak musela počítat obrozenecká kodifikace.",
+       "Pro 17. a 18. století se ujalo označení „doba temna“. Je to pozdější, obrozenecké hodnocení, rozšířené hlavně díky Jiráskovu románu Temno (1915). Dnešní historici literatury ho jako souhrnné označení pokládají za zavádějící: pobělohorské období sice znamenalo úbytek česky psané vědy a náročné literatury, ale také rozsáhlou barokní tvorbu, a jeho hodnocení je proto předmětem odborné diskuse."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Obrození: Dobrovský, Jungmann, Šafařík",
+      "p": [
+       "Koncem 18. století, kdy se snahy Josefa II. o zavedení němčiny jako jednotného úředního jazyka ukázaly jako neprosaditelné, začali vzdělanci usilovat o obnovu češtiny jako jazyka literatury a vědy. Lidová venkovská čeština jim byla cizí a za vzor si zvolili literární jazyk konce 16. století – takzvané doby veleslavínské – a díla Komenského. Rozhodující byla mluvnice Josefa Dobrovského (1753–1829) Ausführliches Lehrgebäude der böhmischen Sprache („Podrobná mluvnice jazyka českého“) z roku 1809, psaná německy; ve druhém vydání z roku 1819 zavedl Dobrovský takzvanou analogickou opravu, která sjednotila psaní i a y po c, s, z v koncovkách podle mluvnických vzorů. Jazyk Bible kralické pokládal za vzor spisovné češtiny.",
+       "Tím, že Dobrovský kodifikoval stav jazyka 16. století, nepřijal do spisovné normy změny, které mezitím proběhly v mluvené češtině Čech – například změnu ý v ej (dobrej, bejt), která se v řeči objevuje už od 15. století. Proto dnes vedle sebe existují spisovná a obecná čeština s pravidelnými rozdíly.",
+       "Druhým pilířem obrozenecké kodifikace se stal pětidílný Slovník česko-německý Josefa Jungmanna (1773–1847), vydávaný v letech 1835–1839 (někdy se uvádí 1834–1839), s přibližně 120 000 hesly. Jungmann v něm vycházel ze slovní zásoby kralického období i z jazyka svých současníků, oživoval zapomenutá slova ze starých textů, přejímal slova z jiných slovanských jazyků a vytvářel nová; mnohá z nich zdomácněla. Současně vznikalo české odborné názvosloví; Jan Svatopluk Presl například zavedl chemické názvy prvků kyslík a vodík.",
+       "Pravopis se v polovině 19. století přiblížil dnešnímu. Ve 40. letech 19. století se prosadila takzvaná oprava skladná, spojovaná s Pavlem Josefem Šafaříkem (1795–1861): j se začalo psát místo g a í místo j; tisky Matice české se jí řídily od roku 1842. Psaní v místo w a ou místo au, které Sbor musejní roku 1842 ještě odmítl, se prosadilo až od let 1849–1850. Frakturu, lomené písmo starších tisků, postupně vystřídala antikva."
+      ]
+     },
+     {
+      "typ": "galerie",
+      "h": "Mluvnice a slovník obrození",
+      "f": [
+       "dobrovsky",
+       "slovnik"
+      ]
+     },
+     {
+      "typ": "rameček",
+      "h": "Rukopisy královédvorský a zelenohorský",
+      "p": [
+       "V září 1817 oznámil Václav Hanka, že v kostele ve Dvoře Králové nad Labem nalezl zlomek rukopisu se staročeskými epickými a lyrickými básněmi. Roku 1818 byl nejvyššímu purkrabímu anonymně zaslán další rukopis, později nazvaný zelenohorský, s básní Libušin soud, který měl pocházet dokonce z 9. nebo 10. století. Oba rukopisy měly dokládat bohatou a starobylou českou literaturu a pro obrozenecké hnutí měly velký význam.",
+       "O pravosti zelenohorského rukopisu pochyboval už Josef Dobrovský. Rozhodující kritika přišla roku 1886 v časopise Athenaeum, který redigoval Tomáš Garrigue Masaryk: Jan Gebauer v něm shrnul jazykové důkazy, tedy tvary a vazby, jaké stará čeština neznala, a vyzval k dalšímu zkoumání. Následovala argumentace historiků, paleografů a pozdější technické rozbory, které závěr o padělku potvrdily. Za autory se obvykle pokládají Václav Hanka a Josef Linda. Spor tehdy rozdělil českou veřejnost; odpůrci pravosti byli zpočátku obviňováni z nedostatku vlastenectví."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Gebauer, Pravidla a Pražský lingvistický kroužek",
+      "p": [
+       "Jan Gebauer (1838–1907), profesor české univerzity v Praze, položil základy historické mluvnice češtiny (Historická mluvnice jazyka českého, od roku 1894) a začal vydávat Staročeský slovník, který nestačil dokončit. Roku 1902 vyšla jeho Pravidla hledící k českému pravopisu a tvarosloví, schválená ministerstvem kultu a vyučování – první Pravidla českého pravopisu. Obsahovala i přehled tvarů a v případě dvojích tvarů se přikláněla ke starším; zrušila také zdvojování souhlásek v cizích slovech. Další vydání Pravidel, s výraznějšími změnami z let 1913, 1941, 1957 a 1993, přibližovala normu živému jazyku; během 20. století se například postupně počešťoval pravopis cizích slov (gymnasium → gymnázium).",
+       "Pražský lingvistický kroužek, založený 6. října 1926 Vilémem Mathesiem, přinesl nové pojetí spisovného jazyka. Ve sborníku Spisovná čeština a jazyková kultura (1932), který vydali Bohuslav Havránek a Miloš Weingart, se jeho členové postavili proti tehdejšímu jazykovému purismu, který posuzoval správnost podle historie slov a „čistil“ češtinu od skutečných i domnělých germanismů. Podle funkčního pojetí se má spisovný jazyk hodnotit podle toho, jak slouží současným úkolům – od běžného hovoru po odborný text – a jeho norma má mít „pružnou stabilitu“ (Mathesius): být ustálená, a přitom se měnit s potřebami mluvčích. Kodifikace podle tohoto pojetí normu popisuje, nevytváří ji. Tyto myšlenky se staly východiskem české teorie spisovného jazyka."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "gebauer",
+      "na-vysku": true
+     },
+     {
+      "typ": "text",
+      "h": "Spisovná a obecná čeština",
+      "p": [
+       "Vedle spisovné češtiny se v Čechách a na západní Moravě běžně mluví obecnou češtinou. Je to nekodifikovaný interdialekt (útvar nad jednotlivými nářečími), vzniklý z nářečí Čech; podle obvyklého odhadu jím mluví asi dvě třetiny obyvatel Česka. Od spisovné češtiny se liší pravidelnými rozdíly v hláskách a tvarech, z nichž mnohé sahají do 15. století. Na Moravě a ve Slezsku, kam řada změn z Čech nepronikla, mají větší váhu jiné interdialekty a nářečí; obecně české prvky se tam však od 2. poloviny 20. století šíří hlavně vlivem médií.",
+       "Mezi spisovnou a obecnou češtinou stojí hovorová čeština, méně formální mluvená podoba spisovného jazyka (chleba, knížka proti knižnímu chléb, kniha). Dohromady tvoří škálu, na níž mluvčí volí podle situace. Spisovný jazyk během 20. století přijal řadu prvků mluvené řeči a slovníky spisovné češtiny dnes uvádějí i některé výrazy, které z obecné češtiny do spisovné vrstvy pronikají.",
+       "Zda je česká situace diglosií, je v odborné literatuře sporné. Americký lingvista Charles Ferguson roku 1959 označil tímto termínem stav, kdy vedle sebe ve společnosti existují dvě výrazně odlišné podoby jazyka s přísně oddělenými úlohami – typicky spisovná arabština a arabská nářečí. Někteří lingvisté, u nás zejména okruh Petra Sgalla, pokládali českou situaci za diglosii nebo za blízkou diglosii a navrhovali uvolnit spisovnou normu směrem k mluvené řeči. Jiní upozorňují, že spisovná a obecná čeština si jsou velmi blízké, že se spisovná čeština užívá i v mluvené podobě a že mezi útvary vede plynulý přechod, a o diglosii proto nemluví.",
+       "Spisovnou češtinu dnes kodifikuje Ústav pro jazyk český Akademie věd ČR, zejména v Pravidlech českého pravopisu, Slovníku spisovné češtiny, Slovníku spisovného jazyka českého a v Internetové jazykové příručce. Žádný zákon závaznost Pravidel přímo nestanoví. Ministerstvo školství je obvykle schvaluje pro školní výuku a příručky Ústavu se obecně pokládají za oficiální."
+      ]
+     },
+     {
+      "typ": "slova",
+      "h": "Spisovně a obecně",
+      "uvod": "Nejběžnější pravidelné rozdíly mezi spisovnou a obecnou češtinou. Obecné tvary jsou nespisovné, ne „chybné“: řídí se vlastními pravidly.",
+      "hlavicka": [
+       "spisovně",
+       "obecně",
+       "rozdíl"
+      ],
+      "radky": [
+       [
+        "dobrý · být · mlýn",
+        "dobrej · bejt · mlejn",
+        "ý → ej; změna se v řeči objevuje už v 15. století"
+       ],
+       [
+        "mléko · létat",
+        "mlíko · lítat",
+        "é → í"
+       ],
+       [
+        "malé město",
+        "malý město",
+        "é → ý v koncovce přídavných jmen"
+       ],
+       [
+        "malí lidé, malé ženy",
+        "malý lidi, malý ženy",
+        "jednotná koncovka přídavných jmen v množném čísle"
+       ],
+       [
+        "okno · otevřít",
+        "vokno · votevřít",
+        "v- na začátku slov s o-; v nářečích Čech od 14. století"
+       ],
+       [
+        "řekl · mohl",
+        "řek · moh",
+        "zánik -l v příčestí minulém mužského rodu"
+       ],
+       [
+        "s dobrými lidmi",
+        "s dobrejma lidma",
+        "jednotná koncovka -ma v 7. pádě množného čísla"
+       ],
+       [
+        "když · jablko",
+        "dyž · japko",
+        "zjednodušení souhláskových skupin"
+       ]
+      ]
+     },
+     {
+      "typ": "pojmy",
+      "h": "Pojmy",
+      "uvod": "Základní termíny, s nimiž pracuje bohemistika a sociolingvistika.",
+      "pojmy": [
+       [
+        "Spisovný jazyk",
+        "Ustálená, kodifikovaná a nadnářeční podoba jazyka pro veřejné a oficiální dorozumívání.",
+        "spisovná čeština, spisovná slovenština"
+       ],
+       [
+        "Norma a kodifikace",
+        "Norma je soubor prostředků, které společenství mluvčích skutečně užívá a pokládá za správné; kodifikace je její výslovné zachycení v mluvnicích, slovnících a pravidlech.",
+        "Pravidla českého pravopisu"
+       ],
+       [
+        "Spřežka",
+        "Skupina dvou nebo více písmen, která zapisuje jednu hlásku.",
+        "staročeské rz pro ř; dnešní ch"
+       ],
+       [
+        "Diakritika",
+        "Znaménka nad písmeny nebo pod nimi, která mění jejich hláskovou hodnotu.",
+        "háček (č), čárka (á), kroužek (ů)"
+       ],
+       [
+        "Obecná čeština",
+        "Nekodifikovaný interdialekt Čech a západní Moravy.",
+        "dobrej, mlíko, vokno"
+       ],
+       [
+        "Hovorová čeština",
+        "Mluvená, méně formální podoba spisovného jazyka.",
+        "chleba, knížka"
+       ],
+       [
+        "Diglosie",
+        "Souběžné užívání dvou výrazně odlišných podob jazyka s oddělenými úlohami (Ferguson 1959).",
+        "spisovná arabština a arabská nářečí"
+       ]
+      ]
+     },
+     {
+      "typ": "osa",
+      "h": "Časová osa",
+      "udalosti": [
+       [
+        "zač. 13. st.",
+        "Přípisek v zakládací listině litoměřické kapituly (datované k roku 1057), obvykle pokládaný za nejstarší dochovanou českou větu."
+       ],
+       [
+        "poč. 15. st.",
+        "Spis De orthographia Bohemica navrhuje diakritický pravopis; autorství není jisté, tradičně se připisuje Janu Husovi."
+       ],
+       [
+        "1533",
+        "Tiskem vychází Grammatika česká Beneše Optáta, Petra Gzela a Václava Philomata."
+       ],
+       [
+        "1571",
+        "Jan Blahoslav dokončuje rukopis Gramatiky české."
+       ],
+       [
+        "1579–1594",
+        "Šestidílné vydání Bible kralické s výkladovými poznámkami."
+       ],
+       [
+        "1613",
+        "Poslední kralické vydání, jednodílné; stane se předlohou pozdějších exilových vydání."
+       ],
+       [
+        "1627",
+        "Obnovené zřízení zemské v Čechách (na Moravě 1628) staví němčinu na roveň češtině."
+       ],
+       [
+        "1809",
+        "Dobrovského Ausführliches Lehrgebäude der böhmischen Sprache; druhé vydání 1819."
+       ],
+       [
+        "1817–1818",
+        "Objevují se Rukopis královédvorský a Rukopis zelenohorský, později prokázané podvrhy."
+       ],
+       [
+        "1835–1839",
+        "Jungmannův pětidílný Slovník česko-německý."
+       ],
+       [
+        "1886",
+        "Jan Gebauer v Masarykově časopise Athenaeum shrnuje jazykové důkazy proti pravosti Rukopisů."
+       ],
+       [
+        "1902",
+        "Gebauerova Pravidla hledící k českému pravopisu a tvarosloví, první Pravidla českého pravopisu."
+       ],
+       [
+        "1932",
+        "Sborník Spisovná čeština a jazyková kultura formuluje funkční pojetí spisovného jazyka."
+       ],
+       [
+        "1993",
+        "Zatím poslední větší úprava Pravidel českého pravopisu."
+       ]
+      ]
+     },
+     {
+      "typ": "zdroje",
+      "h": "Zdroje a další četba",
+      "p": [
+       "Arnošt Lamprecht, Dušan Šlosar, Jaroslav Bauer: Historická mluvnice češtiny. Státní pedagogické nakladatelství, 1986.",
+       "František Cuřín: Vývoj spisovné češtiny. Státní pedagogické nakladatelství, 1985.",
+       "Josef Vintr: Das Tschechische. Hauptzüge seiner Sprachstruktur in Gegenwart und Geschichte. Otto Sagner, 2001.",
+       "Bohuslav Havránek, Miloš Weingart (ed.): Spisovná čeština a jazyková kultura. Melantrich, 1932.",
+       "Petr Karlík, Marek Nekula, Jana Pleskalová (ed.): Encyklopedický slovník češtiny. Nakladatelství Lidové noviny, 2002.",
+       "Charles A. Ferguson: Diglossia. Word 15 (1959), s. 325–340."
+      ]
+     }
+    ]
+   },
+   "en": {
+    "nazev": "How Standard Czech came about",
+    "stitek": "Language stories",
+    "podtitul": "Glosses and digraphs · the Kralice Bible · the National Revival · the Rules and Common Czech",
+    "perex": "Standard Czech, as it is taught in schools and set out in the Rules of Czech Orthography, is not simply everyday speech put in writing. It is the product of more than seven hundred years of writing in Czech: from the first Czech words in Latin charters, through spelling reforms and the language of the Kralice Bible, to the revivalists who around 1800 rebuilt the standard on the model of sixteenth-century Czech. That is why Standard Czech differs in many features from Common Czech, the language people ordinarily speak in Bohemia.",
+    "fakta": [
+     [
+      "Oldest sentence",
+      "a note in the Litoměřice charter, early 13th century"
+     ],
+     [
+      "Spelling",
+      "diacritic; proposed in De orthographia Bohemica (early 15th century), present form since the mid-19th century"
+     ],
+     [
+      "Model for the norm",
+      "16th-century Czech, above all the language of the Kralice Bible (1579–1594)"
+     ],
+     [
+      "Codification",
+      "Dobrovský 1809, Jungmann’s dictionary 1835–1839, Rules of Czech Orthography since 1902"
+     ],
+     [
+      "Today",
+      "Institute of the Czech Language, Czech Academy of Sciences (the Rules, the online Language Reference Guide)"
+     ],
+     [
+      "Alongside it",
+      "Common Czech in Bohemia and western Moravia, colloquial standard Czech, dialects"
+     ]
+    ],
+    "nazvyTecek": {},
+    "oddily": [
+     {
+      "typ": "text",
+      "h": "A standard is not a dialect",
+      "p": [
+       "A standard language is the fixed form of a language used for public and official communication: in schools, administration, science and the press. It differs from a dialect in being supra-regional, shared across the whole territory, and codified: its spelling, forms and vocabulary are set down explicitly in grammars, dictionaries and rules. No standard language is ever “naturally” complete; each is the outcome of a long history in which a selection from many possibilities gradually settled.",
+       "Following the periodisation of Bohuslav Havránek, the history of Czech is usually divided into Proto-Czech (late 10th to mid-12th century, not attested in writing), Old Czech (to the end of the 15th century), Middle Czech (16th to 18th centuries) and Modern Czech. Standard Czech passed through all of these, but not smoothly: after flourishing in the 16th century its use narrowed in the 17th and 18th, and around 1800 the revivalists deliberately went back to the older state. This break explains why present-day Standard Czech in some respects preserves the shape of the sixteenth-century language."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Latin, glosses and the first Czech sentences",
+      "p": [
+       "In the early Middle Ages the main written language in Bohemia was Latin, and to a lesser extent Church Slavonic (on the Slavonic liturgy in Moravia and Bohemia see the page on the Slavs and Great Moravia). At first only single Czech words were written down in Latin texts: names of people and places (known as bohemica), glosses – Czech translations of words written into a text in another language – and marginal notes. Czech glosses in Hebrew script also survive in Jewish writings. The oldest surviving Czech sentence is usually taken to be a note from the early 13th century added to the foundation charter of the Litoměřice chapter, which is dated to 1057.",
+       "The oldest Czech hymn, Hospodine, pomiluj ny (“Lord, have mercy on us”), is older than most surviving texts, but by how much is disputed: its origin is placed anywhere between the 10th and the 13th century, and the earliest records of it date only from the 14th. Around 1300 and in the early 14th century the first long works in Czech appear, such as the verse Alexandreis and the Chronicle of Dalimil. During the 14th century Czech spreads to further kinds of text; in the second half of the century the first complete translation of the Bible is made, and by its end official charters are written in Czech. In the early 15th century, the time of Jan Hus’s preaching, the readership of Czech literature widens further."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "olomoucka"
+     },
+     {
+      "typ": "text",
+      "h": "From digraphs to diacritics",
+      "p": [
+       "The Latin alphabet had no letters for many Czech sounds, such as č, š, ž, ř or ě. The earliest records use what is called the primitive spelling: unmodified Latin letters, so that c, for instance, could stand for k, c or č. During the 13th century a digraph spelling began to appear, in which a group of letters represented one sound: rz or rs for ř, cz for c and č, ss for š and (in the later digraph spelling) zz for ž; in the older spelling zz stood for s. There were no binding rules, and scribes used the digraphs inconsistently. In 1894 Jan Gebauer distinguished five phases in the history of Czech spelling: primitive, digraph, diacritic, Brethren and modern.",
+       "In the early 15th century the Latin treatise De orthographia Bohemica (“On Czech Spelling”) proposed replacing the digraphs with marked letters: soft consonants were to be written with a dot above the letter (punctus rotundus) and long vowels with a stroke (virgula). The treatise is anonymous; tradition ascribes it to Jan Hus, but his authorship has not been proved. The proposal caught on only slowly, and until the mid-16th century digraphs and diacritics were used side by side. In the 16th century the dot developed into the háček. The Czech way of marking sounds with diacritics was later taken over by other languages as well, among them Croatian, Slovene and Lithuanian."
+      ]
+     },
+     {
+      "typ": "slova",
+      "h": "How Czech was written",
+      "uvod": "The examples are transcribed from the sources, including the long ſ. The last two columns show how the words sound or are spelled today and what changed in the spelling.",
+      "hlavicka": [
+       "example",
+       "source and date",
+       "today",
+       "what changed"
+      ],
+      "radky": [
+       [
+        "Pauel dal geſt ploſcoucih zemu",
+        "note in the Litoměřice charter, early 13th c.",
+        "“Pavel gave land at Ploškovice”, today Ploskovice near Litoměřice",
+        "primitive spelling: u for v, g for j, c for k, ſ for š, h for ch; neither softness nor length is marked"
+       ],
+       [
+        "przed kym · kdyzz · gedli",
+        "Olomouc Bible, 1417",
+        "před kým · když · jedli",
+        "digraphs rz = ř, zz = ž; g for j; length not marked"
+       ],
+       [
+        "gménem · geho · něgaký",
+        "Kralice Bible, 1593",
+        "jménem · jeho · nějaký",
+        "háček and acute already in use, but g stands for j"
+       ],
+       [
+        "třjdy · gegj · Abiáſſowy",
+        "Kralice Bible, 1593",
+        "třídy · její · Abiášovy",
+        "j for long í, ſſ for š inside a word, w for v"
+       ],
+       [
+        "cyzý",
+        "Brethren spelling, 16th–18th c.",
+        "cizí",
+        "y was always written after c, s, z; Dobrovský regularised the endings (1819), the roots followed in the 1840s"
+       ],
+       [
+        "Slownjk · Djl",
+        "Jungmann’s dictionary, 1835",
+        "Slovník · Díl",
+        "w → v and j → í; changes adopted in 1842–1849"
+       ],
+       [
+        "se sbírkau příkladů",
+        "Jungmann’s Slovesnost, 1845",
+        "se sbírkou příkladů",
+        "au → ou, likewise in the mid-19th century"
+       ]
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Printing, grammars and Jan Blahoslav",
+      "p": [
+       "In the 16th century Czech spread into science, law and religious writing, and scholars began to take a systematic interest in the language itself. Printing called for a uniform text, and the so-called Brethren spelling, named after the prints of the Unity of the Brethren, became established in printed books. It was essentially diacritic but kept a few digraphs, chiefly ch and, inside a word, ſſ for š. The dot over soft consonants turned into the háček (č, ď, ň, ř, ť, ž), length was marked with the acute, and the small o written over u for the diphthong uo, already in the 15th century, became the ring (ů). The prints, however, wrote the sound j as g, long í as j, v as w, the diphthong ou as au, and always y after c, s, z.",
+       "In 1533 the Czech grammar of Beneš Optát, Petr Gzel and Václav Philomates appeared in print. It was taken up by Jan Blahoslav (1523–1571), a bishop of the Unity of the Brethren educated at humanist schools and at the University of Wittenberg. In 1564 he published at Ivančice his own translation of the New Testament, made with reference to the Greek original, and in 1571 he completed the manuscript of his Czech Grammar. Its first part copies and comments on the grammar of Optát and Philomates; the second offers a wealth of examples of how to render the words and constructions of the biblical text correctly. The grammar remained in manuscript and was not printed until 1857, but according to the prevailing view the principles it sets out strongly shaped the language of the Kralice Bible."
+      ]
+     },
+     {
+      "typ": "galerie",
+      "h": "Blahoslav’s Czech Grammar",
+      "f": [
+       "blahoslav-titul",
+       "blahoslav-strana"
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "The Kralice Bible",
+      "p": [
+       "The Kralice Bible is the first Czech translation of the whole Bible from the original languages – Hebrew, Aramaic and Greek – rather than from the Latin Vulgate. It was the work of translators and theologians of the Unity of the Brethren: the Old Testament was translated by a team led by Bishop Ondřej Štefan, while for the New Testament they took over Blahoslav’s revised translation. The Bible was printed at the Brethren’s secret press in the fortified manor at Kralice nad Oslavou in six volumes dated 1579–1594 (the New Testament is inconsistently dated 1593 and 1594), with extensive explanatory notes in the margins. It was the first Czech Bible to divide the chapters into verses.",
+       "In 1596 the Kralice Bible was issued in a single volume without notes, and again, revised once more, in 1613. This “last Kralice edition” became the basis of later editions, because after 1620 the Unity of the Brethren had to cease its activity. During the Counter-Reformation the Bible was on the Catholic Index of Forbidden Books and was printed abroad, for instance at Halle in 1722.",
+       "The language and spelling of the Kralice translation, often called “Bible Czech” (bibličtina), became the model for the standard language. That model outlived the period when the Kralice Bible could not be printed in the Czech lands, and the revivalists of the early 19th century built on it."
+      ]
+     },
+     {
+      "typ": "galerie",
+      "h": "The six-volume edition",
+      "f": [
+       "titul",
+       "skutky"
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "lukas",
+      "siroka": true
+     },
+     {
+      "typ": "text",
+      "h": "After the White Mountain",
+      "p": [
+       "After the defeat of the Estates’ rebellion at the White Mountain in 1620, a large part of the non-Catholic nobility and educated class left the Czech lands for exile, among them Jan Amos Komenský (Comenius). The Renewed Land Ordinance of 1627 (Moravia 1628) put German on an equal footing with Czech. Over the following decades the use of standard Czech gradually narrowed: science went first, then much of the more ambitious literature, and finally administration. Czech continued to be written and printed, in exile and at home, especially in Jesuit circles; sermons, religious poetry and reading matter for less educated readers were produced. In the 1670s the Jesuit Bohuslav Balbín wrote a Latin defence of the Czech language (Dissertatio apologetica), which was not printed until 1775.",
+       "While the written standard changed only a little in this period, spoken Czech went on developing. The dialects, especially those of Moravia and Silesia, grew further apart, and German loanwords made their way into urban speech. The gap between the language of books and everyday speech widened, and the revivalists’ codification later had to reckon with it.",
+       "The 17th and 18th centuries came to be called the “age of darkness” (doba temna). The label is a later, revivalist judgement, popularised above all by Alois Jirásek’s novel Temno (“Darkness”, 1915). Literary historians today regard it as misleading as a blanket description: the period did see a decline in Czech-language science and ambitious literature, but also a large body of Baroque writing, and how it should be assessed remains a matter of scholarly debate."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "The Revival: Dobrovský, Jungmann, Šafařík",
+      "p": [
+       "In the late 18th century, when Joseph II’s attempts to make German the single language of administration proved unworkable, scholars set out to restore Czech as a language of literature and learning. The rural speech of the common people was alien to them, and as their model they chose the literary language of the late 16th century – the so-called age of Veleslavín – and the works of Comenius. The decisive work was Josef Dobrovský’s (1753–1829) grammar Ausführliches Lehrgebäude der böhmischen Sprache (“A detailed grammar of the Czech language”) of 1809, written in German; in its second edition of 1819 Dobrovský introduced the so-called analogical correction, which regularised the spelling of i and y after c, s, z in endings according to grammatical patterns. He regarded the language of the Kralice Bible as the model for standard Czech.",
+       "By codifying sixteenth-century Czech, Dobrovský left out of the standard the changes that had meanwhile taken place in the spoken Czech of Bohemia – for example the change of ý to ej (dobrej, bejt), which appears in speech as early as the 15th century. That is why Standard and Common Czech now exist side by side with regular differences between them.",
+       "The second pillar of the revival codification was the five-volume Czech–German Dictionary of Josef Jungmann (1773–1847), published in 1835–1839 (sometimes given as 1834–1839), with about 120,000 entries. Jungmann drew on the vocabulary of the Kralice period and on the language of his contemporaries; he revived forgotten words from old texts, borrowed from other Slavic languages and coined new ones, many of which took root. Czech scientific terminology was created at the same time; Jan Svatopluk Presl, for instance, introduced the chemical names kyslík (oxygen) and vodík (hydrogen).",
+       "In the mid-19th century the spelling came close to today’s. In the 1840s the so-called oprava skladná (“consistent correction”), associated with Pavel Josef Šafařík (1795–1861), prevailed: j began to be written instead of g, and í instead of j; the prints of the Matice česká followed it from 1842. Writing v for w and ou for au, which the Museum committee still rejected in 1842, took hold only from 1849–1850. Fraktur, the blackletter of older prints, was gradually replaced by roman type."
+      ]
+     },
+     {
+      "typ": "galerie",
+      "h": "The grammar and the dictionary of the Revival",
+      "f": [
+       "dobrovsky",
+       "slovnik"
+      ]
+     },
+     {
+      "typ": "rameček",
+      "h": "The Dvůr Králové and Zelená Hora Manuscripts",
+      "p": [
+       "In September 1817 Václav Hanka announced that he had found, in a church at Dvůr Králové nad Labem, a fragment of a manuscript containing Old Czech epic and lyric poems. In 1818 another manuscript, later named after Zelená Hora, was sent anonymously to the Supreme Burgrave; it contained the poem Libuše’s Judgement and was supposed to date from as early as the 9th or 10th century. Both manuscripts seemed to prove the existence of a rich and ancient Czech literature, and they meant a great deal to the national movement.",
+       "Josef Dobrovský already doubted the authenticity of the Zelená Hora manuscript. The decisive critique came in 1886 in the journal Athenaeum, edited by Tomáš Garrigue Masaryk: Jan Gebauer summarised the linguistic evidence – forms and constructions unknown to Old Czech – and called for further examination. Arguments by historians and palaeographers followed, and later technical analyses confirmed that the manuscripts are forgeries. Their authors are usually taken to be Václav Hanka and Josef Linda. The dispute split Czech public opinion at the time; those who denied the manuscripts’ authenticity were at first accused of a lack of patriotism."
+      ]
+     },
+     {
+      "typ": "text",
+      "h": "Gebauer, the Rules and the Prague Linguistic Circle",
+      "p": [
+       "Jan Gebauer (1838–1907), professor at the Czech university in Prague, laid the foundations of Czech historical grammar (Historická mluvnice jazyka českého, from 1894) and began the Old Czech Dictionary, which he did not live to complete. In 1902 he published his Rules of Czech spelling and morphology, approved by the Ministry of Religion and Education – the first Rules of Czech Orthography. They included an overview of inflection and, where two forms competed, preferred the older one; they also abolished double consonants in foreign words. Later editions, with more substantial changes in 1913, 1941, 1957 and 1993, brought the norm closer to the living language; in the course of the 20th century, for example, the spelling of foreign words was gradually made more Czech (gymnasium → gymnázium).",
+       "The Prague Linguistic Circle, founded on 6 October 1926 by Vilém Mathesius, brought a new understanding of the standard language. In the volume Spisovná čeština a jazyková kultura (“Standard Czech and Language Cultivation”, 1932), edited by Bohuslav Havránek and Miloš Weingart, its members opposed the linguistic purism of the day, which judged correctness by the history of words and set out to “cleanse” Czech of real and supposed Germanisms. In the functional view, a standard language should be judged by how well it serves present-day tasks – from everyday conversation to technical writing – and its norm should have “flexible stability” (Mathesius): settled, yet changing with the needs of its speakers. Codification, on this view, describes the norm rather than creating it. These ideas became the starting point of the Czech theory of the standard language."
+      ]
+     },
+     {
+      "typ": "foto",
+      "f": "gebauer",
+      "na-vysku": true
+     },
+     {
+      "typ": "text",
+      "h": "Standard and Common Czech",
+      "p": [
+       "Alongside Standard Czech, the everyday spoken language of Bohemia and western Moravia is Common Czech (obecná čeština). It is an uncodified interdialect – a variety above the individual dialects – that grew out of the dialects of Bohemia; by a common estimate about two thirds of the population of the Czech Republic speak it. It differs from the standard in regular features of sounds and forms, many of which go back to the 15th century. In Moravia and Silesia, which many changes from Bohemia never reached, other interdialects and dialects carry more weight; since the second half of the 20th century, however, Common Czech features have been spreading there too, mainly through the media.",
+       "Between Standard and Common Czech lies colloquial Standard Czech (hovorová čeština), a less formal spoken form of the standard (chleba, knížka against the bookish chléb “bread”, kniha “book”). Together they form a scale on which speakers choose according to the situation. During the 20th century the standard absorbed many features of spoken language, and dictionaries of Standard Czech now include some expressions that are making their way from Common Czech into the standard.",
+       "Whether the Czech situation amounts to diglossia is disputed. In 1959 the American linguist Charles Ferguson used this term for a society in which two markedly different forms of a language coexist with strictly separated functions – typically Standard Arabic and the Arabic dialects. Some linguists, in the Czech context above all the circle around Petr Sgall, regarded the Czech situation as diglossia or close to it and proposed loosening the standard towards spoken usage. Others point out that Standard and Common Czech are very close, that the standard is also used in speech and that the varieties shade gradually into one another, and so do not speak of diglossia.",
+       "Standard Czech is codified today by the Institute of the Czech Language of the Czech Academy of Sciences, above all in the Rules of Czech Orthography, the Dictionary of Standard Czech, the Dictionary of the Standard Czech Language and the online Language Reference Guide. No law makes the Rules binding as such. The Ministry of Education usually approves them for use in schools, and the Institute’s handbooks are generally regarded as official."
+      ]
+     },
+     {
+      "typ": "slova",
+      "h": "Standard and Common",
+      "uvod": "The most frequent regular differences between Standard and Common Czech. Common Czech forms are non-standard, not “wrong”: they follow rules of their own.",
+      "hlavicka": [
+       "standard",
+       "common",
+       "difference"
+      ],
+      "radky": [
+       [
+        "dobrý · být · mlýn",
+        "dobrej · bejt · mlejn",
+        "ý → ej (“good · to be · mill”); the change appears in speech as early as the 15th century"
+       ],
+       [
+        "mléko · létat",
+        "mlíko · lítat",
+        "é → í (“milk · to fly”)"
+       ],
+       [
+        "malé město",
+        "malý město",
+        "é → ý in adjective endings (“small town”)"
+       ],
+       [
+        "malí lidé, malé ženy",
+        "malý lidi, malý ženy",
+        "a single plural ending for adjectives (“small people, small women”)"
+       ],
+       [
+        "okno · otevřít",
+        "vokno · votevřít",
+        "v- before initial o- (“window · to open”); in the dialects of Bohemia since the 14th century"
+       ],
+       [
+        "řekl · mohl",
+        "řek · moh",
+        "loss of -l in the masculine past participle (“said · could”)"
+       ],
+       [
+        "s dobrými lidmi",
+        "s dobrejma lidma",
+        "a single ending -ma in the instrumental plural (“with good people”)"
+       ],
+       [
+        "když · jablko",
+        "dyž · japko",
+        "simplified consonant clusters (“when · apple”)"
+       ]
+      ]
+     },
+     {
+      "typ": "pojmy",
+      "h": "Key terms",
+      "uvod": "Basic terms used in Czech linguistics and sociolinguistics.",
+      "pojmy": [
+       [
+        "Standard language",
+        "The fixed, codified, supra-regional form of a language used for public and official communication.",
+        "Standard Czech, Standard Slovak"
+       ],
+       [
+        "Norm and codification",
+        "The norm is the set of forms a speech community actually uses and regards as correct; codification is its explicit record in grammars, dictionaries and rules.",
+        "the Rules of Czech Orthography"
+       ],
+       [
+        "Digraph",
+        "A group of two or more letters representing a single sound.",
+        "Old Czech rz for ř; today’s ch"
+       ],
+       [
+        "Diacritics",
+        "Marks above or below letters that change their sound value.",
+        "háček (č), acute (á), ring (ů)"
+       ],
+       [
+        "Common Czech",
+        "The uncodified interdialect of Bohemia and western Moravia.",
+        "dobrej, mlíko, vokno"
+       ],
+       [
+        "Colloquial Standard Czech",
+        "The spoken, less formal form of the standard language.",
+        "chleba, knížka"
+       ],
+       [
+        "Diglossia",
+        "The parallel use of two markedly different forms of a language with separate functions (Ferguson 1959).",
+        "Standard Arabic and the Arabic dialects"
+       ]
+      ]
+     },
+     {
+      "typ": "osa",
+      "h": "Timeline",
+      "udalosti": [
+       [
+        "early 13th c.",
+        "A note added to the foundation charter of the Litoměřice chapter (dated to 1057), usually regarded as the oldest surviving Czech sentence."
+       ],
+       [
+        "early 15th c.",
+        "The treatise De orthographia Bohemica proposes a diacritic spelling; its authorship is uncertain, tradition ascribes it to Jan Hus."
+       ],
+       [
+        "1533",
+        "The Czech grammar of Beneš Optát, Petr Gzel and Václav Philomates appears in print."
+       ],
+       [
+        "1571",
+        "Jan Blahoslav completes the manuscript of his Czech Grammar."
+       ],
+       [
+        "1579–1594",
+        "The six-volume edition of the Kralice Bible with explanatory notes."
+       ],
+       [
+        "1613",
+        "The last Kralice edition, in one volume; it becomes the model for later editions printed in exile."
+       ],
+       [
+        "1627",
+        "The Renewed Land Ordinance in Bohemia (Moravia 1628) puts German on an equal footing with Czech."
+       ],
+       [
+        "1809",
+        "Dobrovský’s Ausführliches Lehrgebäude der böhmischen Sprache; second edition 1819."
+       ],
+       [
+        "1817–1818",
+        "The Dvůr Králové and Zelená Hora Manuscripts appear; they were later shown to be forgeries."
+       ],
+       [
+        "1835–1839",
+        "Jungmann’s five-volume Czech–German Dictionary."
+       ],
+       [
+        "1886",
+        "In Masaryk’s journal Athenaeum, Jan Gebauer sets out the linguistic evidence against the Manuscripts."
+       ],
+       [
+        "1902",
+        "Gebauer’s Rules of Czech spelling and morphology, the first Rules of Czech Orthography."
+       ],
+       [
+        "1932",
+        "The volume Standard Czech and Language Cultivation sets out the functional view of the standard language."
+       ],
+       [
+        "1993",
+        "The most recent substantial revision of the Rules of Czech Orthography."
+       ]
+      ]
+     },
+     {
+      "typ": "zdroje",
+      "h": "Sources and further reading",
+      "p": [
+       "Arnošt Lamprecht, Dušan Šlosar, Jaroslav Bauer: Historická mluvnice češtiny. Státní pedagogické nakladatelství, 1986.",
+       "František Cuřín: Vývoj spisovné češtiny. Státní pedagogické nakladatelství, 1985.",
+       "Josef Vintr: Das Tschechische. Hauptzüge seiner Sprachstruktur in Gegenwart und Geschichte. Otto Sagner, 2001.",
+       "Bohuslav Havránek, Miloš Weingart (eds.): Spisovná čeština a jazyková kultura. Melantrich, 1932.",
+       "Petr Karlík, Marek Nekula, Jana Pleskalová (eds.): Encyklopedický slovník češtiny. Nakladatelství Lidové noviny, 2002.",
+       "Charles A. Ferguson: Diglossia. Word 15 (1959), pp. 325–340."
+      ]
+     }
+    ]
+   }
+  },
+  {
    "id": "obnova-jazyku",
    "sekce": "pribehy",
    "skupina": "lide",

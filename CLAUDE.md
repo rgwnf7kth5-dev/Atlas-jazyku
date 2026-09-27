@@ -483,6 +483,11 @@ nula a cifra, šampon; tlačítka na stránce o čaji). Opraveno při ověření
 Tomate z francouzštiny, rajče odvozeno od „rajské jablko“ (kalk rak.-něm. Paradeisapfel), „mat“ = perské māt ‚bezradný‘
 („král zemřel“ je lidový výklad), akkadský zdroj arab. kuḥl nedoložený (krok vypuštěn), něm. Ziffer ze stfr. cifre, česká nula
 z latiny, shampoo 1762 = masáž těla v lázni.
+**Jak vznikla spisovná čeština** (`#spisovna-cestina` / `#standard-czech`, skupina „Jazyky v čase“, akvarel `tiskarna`; 27. 9. 2026):
+glosy a první věty, spřežky a diakritika, Blahoslav, Bible kralická, pobělohorské období („doba temna“ jen jako obrozenecký pojem),
+Dobrovský, Jungmann, Rukopisy, Gebauer, Pravidla 1902, Pražský lingvistický kroužek, spisovná × obecná čeština (diglosie jako sporná).
+Tečku češtiny nemá (má ji stránka Slované). Při ověření opraveno: Ploškovice = dnešní Ploskovice, oprava skladná (v místo w, ou místo au)
+prosazena až 1849–1850, Dobrovský sjednotil jen koncovky (cyzý → cizí až ve 40. letech), Philomata, zz ve starším pravopisu = s.
 **Tři další civilizace** tentýž den: **Elam a Urartu** (`#elam-a-urartu`; tečka elamštiny se přesunula od Sumeru a Akkadu),
 **Turkuti a orchonské písmo** (`#orchon`/`#orkhon`; nové písmo `civ-orkh`, Noto Sans Old Turkic, zprava doleva; v rodokmenu
 písem uzel pod sogdským s přerušovanou čarou) a **Aztékové** (`#aztekove`/`#aztecs`; aztécké písmo Unicode nemá, jen fotky).
