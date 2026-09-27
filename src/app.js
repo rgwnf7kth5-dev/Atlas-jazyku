@@ -2828,12 +2828,6 @@ function otevriSekci(sekce){
   hlava.appendChild(x); starovekOkno.appendChild(hlava);
   const telo = prvek("div", "od-telo");
   telo.appendChild(prvek("p", "od-uvod", U.uvod));
-  if (sekce === "pribehy" && CESTY.length) {          /* cesty slov na glóbu: řada tlačítek nad příběhy */
-    telo.appendChild(prvek("h3", "pribehy-skupina", T.cestyNabidka));
-    const r = prvek("div", "cesty-nabidka");
-    CESTY.forEach(function(w){ const b = prvek("button", null, w.nazev[T.lang]); b.type = "button"; b.addEventListener("click", function(){ spustCestu(w.id); }); r.appendChild(b); });
-    telo.appendChild(r);
-  }
   /* přehledy (rodokmen písem, slovníček) mají vlastní podbarvený blok, pod ním ozdobný předěl a pak civilizace */
   const prehledy = prvek("div", "starovek-prehledy");
   const predel = prvek("div", "starovek-predel"); predel.setAttribute("aria-hidden", "true"); predel.appendChild(prvek("span"));

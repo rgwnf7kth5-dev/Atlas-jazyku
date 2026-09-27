@@ -438,7 +438,8 @@ v app.js (`spustCestu`, `ukonciCestu`, kreslení v `kresliPopredi`): let nad st�
 sporné přerušovaně, u tečky tvar a jazyk (popisek, který by překryl jiný, se zkrátí na tvar nebo vynechá), tečky kroků svítí
 příznakem 5, běžná jména teček jsou schovaná. Panel `#cesta-panel` (třída `eu-panel`): na počítači vpravo nahoře a glóbus se
 posune do volné plochy vlevo (`spoctiPosun`), na telefonu pod glóbem jako legenda typologie. Vstupy: oddíl `cesta` v Příbězích
-(`{h, p, slova}`), řada „Cesty slov na glóbu“ nahoře v nabídce Příběhů, odkaz `#cesta-<id>`. Při ověření opraveno: něm. Kaffee
+(`{h, p, slova}`) a odkaz `#cesta-<id>`. Řadu pilulek nahoře v nabídce Příběhů uživatel 27. 9. 2026 zamítl („nemá logiku,
+nahoře jsou slova a teprve pod nimi o co jde; pilulky jsou nadbytečné, když ta slova jsou v článku“) – nevracet. Při ověření opraveno: něm. Kaffee
 přes fr. café (ne přímo z turečtiny), angl. dollar z dolnoněm. daler, Pomeranze ze středolat. pomerancia, české káva zavedli
 obrozenci podle pol. kawa (dříve kafe z němčiny; krok je přerušovaný). Nové slovo = kroky v datech + nezávislé ověření.
 **Tři další civilizace** tentýž den: **Elam a Urartu** (`#elam-a-urartu`; tečka elamštiny se přesunula od Sumeru a Akkadu),
