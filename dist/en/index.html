@@ -126,7 +126,8 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
 .strom-hlava svg{width:17px; height:17px; flex:none; color:var(--cyan)}
 .strom-hlava select{min-width:0; max-width:230px; font:inherit; font-size:.82rem; font-weight:600; color:var(--text); background:var(--plocha); border:1px solid var(--linka2); border-radius:999px; padding:6px 10px; cursor:pointer}
 .strom-hlava button{flex:none; font:inherit; font-size:.78rem; font-weight:600; color:var(--text); background:transparent; border:1px solid var(--linka2); border-radius:999px; padding:6px 12px; cursor:pointer}
-.strom-hlava button:hover,.strom-hlava select:hover{border-color:var(--cyan)}
+.strom-hlava button:hover:not(:disabled),.strom-hlava select:hover{border-color:var(--cyan)}
+.strom-hlava button:disabled{opacity:.45; cursor:default}
 .strom-napoveda{position:absolute; z-index:5; left:18px; top:16px; max-width:min(330px,40%); margin:0; font-size:.76rem; line-height:1.45; color:var(--text2); pointer-events:none;
   padding:8px 12px; border-radius:14px; background:var(--sklo-tl); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border:1px solid var(--linka)}
 .scena:has(.karta:not([hidden])) .strom-napoveda{display:none}
@@ -1806,6 +1807,6 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
  <dialog class="civ-okno" id="civ-okno" aria-labelledby="civ-nadpis"></dialog>
 </div>
 
-<script src="../js/atlas.bfbe02eea2.js"></script>
+<script src="../js/atlas.a6ab4cd3ce.js"></script>
 </body>
 </html>

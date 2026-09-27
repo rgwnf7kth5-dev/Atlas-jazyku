@@ -3227,6 +3227,11 @@ var strom = (function(){   // var: filtry a texty se na něj ptají dřív, než
     probud();
   }
   function celek(){ if (m) letNa(1, m.stred.slice()); }
+  /* „Celý strom“ je nečinný, když je celý strom na očích – jinak klik nic viditelného neudělal (uživatel 27. 9. 2026) */
+  function stavCelku(){
+    const b = $("strom-cely"), cely = !!m && !let_ && Math.abs(mer - 1) < 0.01 && Math.hypot(cil[0] - m.stred[0], cil[1] - m.stred[1]) < 0.002;
+    if (b.disabled !== cely) b.disabled = cely;
+  }
   function zaostri(n){
     let x0 = n.x, x1 = n.x, y0 = n.y, y1 = n.y;
     (function sber(u){ u.deti.forEach(function(d){ x0 = Math.min(x0, d.x); x1 = Math.max(x1, d.x); y0 = Math.min(y0, d.y); y1 = Math.max(y1, d.y); sber(d); }); })(n);
@@ -3420,7 +3425,7 @@ var strom = (function(){   // var: filtry a texty se na něj ptají dřív, než
     if (Math.abs(cilPosun - cxPosun) > 0.5) { cxPosun = bezPohybu.matches ? cilPosun : cxPosun + (cilPosun - cxPosun) * Math.min(1, dt / 160); hybe = true; }
     else if (cxPosun !== cilPosun) { cxPosun = cilPosun; hybe = true; }
     if (cas - rustOd < RUST + 50) hybe = true;
-    if (hybe || prekreslit) { prekreslit = false; kresli(cas); }
+    if (hybe || prekreslit) { prekreslit = false; kresli(cas); stavCelku(); }
     if (hybe || let_) requestAnimationFrame(smyckaS); else beziSmycka = false;   // v klidu se nic nepřekresluje
   }
   function probud(){ prekreslit = true; if (zapnuto && !beziSmycka) { beziSmycka = true; posledniS = 0; requestAnimationFrame(smyckaS); } }
