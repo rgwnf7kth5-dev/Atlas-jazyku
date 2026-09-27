@@ -665,6 +665,863 @@
      }
     }
    ]
+  },
+  {
+   "id": "cokolada",
+   "pribeh": "caj",
+   "nazev": {
+    "cs": "čokoláda",
+    "en": "chocolate"
+   },
+   "uvod": {
+    "cs": "Španělské chocolate je doložené od roku 1579 a s nápojem se v 17. století rozšířilo po Evropě. Odkud Španělé slovo vzali, je sporné: v raných textech se aztécký kakaový nápoj jmenuje cacahuatl ‚kakaová voda‘, ne chocolatl. Do češtiny slovo přišlo nejspíš z italštiny, nejstarší doklady mají tvar čokolata.",
+    "en": "Spanish chocolate is attested from 1579 and spread across Europe with the drink in the 17th century. Where the Spaniards got the word is disputed: early texts call the Aztec cacao drink cacahuatl, ‘cacao water’, not chocolatl. Czech probably took the word from Italian; the earliest records have the form čokolata."
+   },
+   "kroky": [
+    {
+     "id": "nah",
+     "rodic": null,
+     "kod": "clas1250",
+     "jazyk": {
+      "cs": "nahuatl nebo nawat",
+      "en": "Nahuatl or Nawat"
+     },
+     "tvar": "chocolatl?",
+     "doba": {
+      "cs": "Mexiko a Střední Amerika",
+      "en": "Mexico and Central America"
+     },
+     "pozn": {
+      "cs": "původ je sporný: tvar chocolatl v raných nahuatlských textech chybí; navrhuje se hypotetické xocoatl ‚hořký nápoj‘ (podle Michaela a Sophie Coeových nepravděpodobné) nebo nawatské chikola:tl nejasného významu",
+      "en": "the origin is disputed: the form chocolatl is missing from early Nahuatl texts; proposals include a hypothetical xocoatl ‘bitter drink’ (unlikely according to Michael and Sophie Coe) or Nawat chikola:tl of unclear meaning"
+     },
+     "jistota": "sporna"
+    },
+    {
+     "id": "es",
+     "rodic": "nah",
+     "kod": "stan1288",
+     "tvar": "chocolate",
+     "doba": {
+      "cs": "doloženo 1579",
+      "en": "attested 1579"
+     }
+    },
+    {
+     "id": "en",
+     "rodic": "es",
+     "kod": "stan1293",
+     "tvar": "chocolate",
+     "doba": {
+      "cs": "1604, překlad Acostovy Přírodní a mravní historie Indií",
+      "en": "1604, translation of Acosta’s Natural and Moral History of the Indies"
+     }
+    },
+    {
+     "id": "it",
+     "rodic": "es",
+     "kod": "ital1282",
+     "tvar": "cioccolata, cioccolato",
+     "doba": {
+      "cs": "ze španělštiny",
+      "en": "from Spanish"
+     }
+    },
+    {
+     "id": "fr",
+     "rodic": "es",
+     "kod": "stan1290",
+     "tvar": "chocolat",
+     "doba": {
+      "cs": "ze španělštiny",
+      "en": "from Spanish"
+     }
+    },
+    {
+     "id": "nl",
+     "rodic": "es",
+     "kod": "dutc1256",
+     "tvar": "chocolade",
+     "doba": {
+      "cs": "ze španělštiny",
+      "en": "from Spanish"
+     }
+    },
+    {
+     "id": "de",
+     "rodic": "nl",
+     "kod": "stan1295",
+     "tvar": "Schokolade",
+     "doba": {
+      "cs": "17. století",
+      "en": "17th century"
+     },
+     "pozn": {
+      "cs": "podle Klugeho z nizozemského chocolade; nejstarší německé doklady kolísají (Chocolate, Schockolata)",
+      "en": "according to Kluge from Dutch chocolade; the earliest German forms vary (Chocolate, Schockolata)"
+     },
+     "jistota": "sporna"
+    },
+    {
+     "id": "cs",
+     "rodic": "it",
+     "kod": "czec1258",
+     "tvar": "čokoláda",
+     "doba": {
+      "cs": "17. století",
+      "en": "17th century"
+     },
+     "pozn": {
+      "cs": "nejstarší doklady mají tvar čokolata a č- ukazuje na italské cioccolata; podoba s š- přišla později z němčiny",
+      "en": "the earliest records have the form čokolata, and the č- points to Italian cioccolata; a form with š- came later from German"
+     },
+     "jistota": "sporna"
+    },
+    {
+     "id": "ru",
+     "rodic": "de",
+     "kod": "russ1263",
+     "tvar": "шоколад šokolad",
+     "doba": {
+      "cs": "",
+      "en": ""
+     },
+     "pozn": {
+      "cs": "podle Vasmera přes německé Schokolade (starší tvary s č- z italského cioccolata); uvádí se i nizozemština",
+      "en": "according to Vasmer through German Schokolade (older forms with č- from Italian cioccolata); Dutch is also suggested"
+     },
+     "jistota": "sporna"
+    }
+   ]
+  },
+  {
+   "id": "rajce",
+   "pribeh": "caj",
+   "nazev": {
+    "cs": "rajče",
+    "en": "tomato"
+   },
+   "uvod": {
+    "cs": "Nahuatlské tomatl přešlo do španělštiny jako tomate a odtud do angličtiny, francouzštiny a (přes francouzštinu) do němčiny. Italové plodu říkali pomi d'oro ‚zlatá jablka‘, odtud polské pomidor a ruské помидор. Čeština slovo tomato pro plod nepřevzala (zná ho jen přídavné jméno tomatový): rajče je odvozené od rajské jablko, podle rakousko-německého Paradeisapfel, stejně jako rakouské Paradeiser, maďarské paradicsom a srbské paradajz.",
+    "en": "Nahuatl tomatl passed into Spanish as tomate and from there into English, French and (through French) German. Italians called the fruit pomi d'oro, ‘golden apples’, hence Polish pomidor and Russian pomidor. Czech did not take the word tomato for the fruit (only the adjective tomatový has it): rajče is derived from rajské jablko, ‘paradise apple’, after Austrian German Paradeisapfel, like Austrian Paradeiser, Hungarian paradicsom and Serbian paradajz."
+   },
+   "kroky": [
+    {
+     "id": "nah",
+     "rodic": null,
+     "kod": "clas1250",
+     "jazyk": {
+      "cs": "nahuatl",
+      "en": "Nahuatl"
+     },
+     "tvar": "tomatl",
+     "doba": {
+      "cs": "‚rajče, tomatillo‘; červené rajče xitomatl",
+      "en": "‘tomato, tomatillo’; the red tomato xitomatl"
+     }
+    },
+    {
+     "id": "es",
+     "rodic": "nah",
+     "kod": "stan1288",
+     "tvar": "tomate",
+     "doba": {
+      "cs": "16. století",
+      "en": "16th century"
+     }
+    },
+    {
+     "id": "en",
+     "rodic": "es",
+     "kod": "stan1293",
+     "tvar": "tomato",
+     "doba": {
+      "cs": "tomate 1604, tomato od 18. století",
+      "en": "tomate 1604, tomato from the 18th century"
+     },
+     "pozn": {
+      "cs": "koncové -o snad podle potato",
+      "en": "the final -o perhaps after potato"
+     }
+    },
+    {
+     "id": "fr",
+     "rodic": "es",
+     "kod": "stan1290",
+     "tvar": "tomate",
+     "doba": {
+      "cs": "ze španělštiny",
+      "en": "from Spanish"
+     },
+     "pozn": {
+      "cs": "dříve pomme d'amour ‚jablko lásky‘",
+      "en": "earlier pomme d'amour, ‘love apple’"
+     }
+    },
+    {
+     "id": "de",
+     "rodic": "fr",
+     "kod": "stan1295",
+     "tvar": "Tomate",
+     "doba": {
+      "cs": "17. století, z francouzštiny",
+      "en": "17th century, from French"
+     },
+     "pozn": {
+      "cs": "v cestopisech 17. století i španělský plurál Tomates",
+      "en": "17th-century travel writing also has the Spanish plural Tomates"
+     }
+    },
+    {
+     "id": "it",
+     "rodic": null,
+     "kod": "ital1282",
+     "tvar": "pomodoro",
+     "doba": {
+      "cs": "1554 pomi d'oro ‚zlatá jablka‘ (Mattioli)",
+      "en": "1554 pomi d'oro, ‘golden apples’ (Mattioli)"
+     },
+     "pozn": {
+      "cs": "s tomatl nesouvisí: plod přišel nejspíš přes Španělsko, jméno ne",
+      "en": "unrelated to tomatl: the fruit probably came through Spain, the name did not"
+     }
+    },
+    {
+     "id": "pl",
+     "rodic": "it",
+     "kod": "poli1260",
+     "tvar": "pomidor",
+     "doba": {
+      "cs": "z italského pomi d'oro",
+      "en": "from Italian pomi d'oro"
+     }
+    },
+    {
+     "id": "ru",
+     "rodic": "it",
+     "kod": "russ1263",
+     "tvar": "помидор pomidor",
+     "doba": {
+      "cs": "",
+      "en": ""
+     },
+     "pozn": {
+      "cs": "z italštiny, přímo nebo přes polštinu; vedle toho томат tomat",
+      "en": "from Italian, directly or through Polish; alongside томат tomat"
+     },
+     "jistota": "sporna"
+    },
+    {
+     "id": "at",
+     "rodic": null,
+     "kod": "bava1246",
+     "jazyk": {
+      "cs": "němčina v Rakousku",
+      "en": "German in Austria"
+     },
+     "tvar": "Paradeisapfel, Paradeiser",
+     "doba": {
+      "cs": "‚rajské jablko‘",
+      "en": "‘paradise apple’"
+     }
+    },
+    {
+     "id": "cs",
+     "rodic": "at",
+     "kod": "czec1258",
+     "tvar": "rajské jablko, rajče",
+     "doba": {
+      "cs": "odvozeno od rajské jablko",
+      "en": "derived from rajské jablko"
+     },
+     "pozn": {
+      "cs": "kalk rakousko-německého Paradeisapfel, ne přejaté slovo; na východní Moravě i přejaté paradajka",
+      "en": "a calque of Austrian German Paradeisapfel, not a loanword; eastern Moravian dialects also have the loan paradajka"
+     }
+    },
+    {
+     "id": "hu",
+     "rodic": "at",
+     "kod": "hung1274",
+     "tvar": "paradicsom",
+     "doba": {
+      "cs": "‚ráj‘ i ‚rajče‘",
+      "en": "both ‘paradise’ and ‘tomato’"
+     }
+    },
+    {
+     "id": "sr",
+     "rodic": "at",
+     "kod": "sout1528",
+     "jazyk": {
+      "cs": "srbština",
+      "en": "Serbian"
+     },
+     "tvar": "парадајз paradajz",
+     "doba": {
+      "cs": "z rakouského Paradeis(er)",
+      "en": "from Austrian Paradeis(er)"
+     }
+    }
+   ]
+  },
+  {
+   "id": "sach",
+   "pribeh": "caj",
+   "nazev": {
+    "cs": "šach a mat",
+    "en": "check and mate"
+   },
+   "uvod": {
+    "cs": "Sledujeme slovo šach, ne název hry. Perské šāh ‚král‘ hráči hlásili při napadení krále a šāh māt (‚král je bezradný‘) ukončilo hru. Přes arabštinu, středověkou latinu, starou francouzštinu a němčinu z něj vzniklo české šach i šachy, anglické check i chess. Název hry šel jinudy: sanskrtská čaturanga dala středoperské čatrang a arabské šatrandž, odtud španělské ajedrez.",
+    "en": "We follow the word check, not the name of the game. Players called out Persian shāh, ‘king’, when the king was attacked, and shāh māt (‘the king is helpless’) ended the game. Through Arabic, Medieval Latin, Old French and German it gave Czech šach and šachy, English check and chess. The name of the game took another route: Sanskrit chaturanga gave Middle Persian chatrang and Arabic shatranj, hence Spanish ajedrez."
+   },
+   "kroky": [
+    {
+     "id": "fa",
+     "rodic": null,
+     "kod": "west2369",
+     "jazyk": {
+      "cs": "perština",
+      "en": "Persian"
+     },
+     "tvar": "شاه šāh",
+     "doba": {
+      "cs": "‚král‘",
+      "en": "‘king’"
+     }
+    },
+    {
+     "id": "ar",
+     "rodic": "fa",
+     "kod": "stan1318",
+     "jazyk": {
+      "cs": "arabština",
+      "en": "Arabic"
+     },
+     "tvar": "شاه مات šāh māt",
+     "doba": {
+      "cs": "ve hře šatrandž",
+      "en": "in the game of shatranj"
+     },
+     "pozn": {
+      "cs": "mat je perské māt ‚bezradný, ohromený‘; čtení ‚král zemřel‘ (arab. māta ‚zemřel‘) je pozdější lidový výklad",
+      "en": "mate is Persian māt, ‘helpless, stunned’; the reading ‘the king died’ (Arabic māta, ‘died’) is a later folk interpretation"
+     }
+    },
+    {
+     "id": "la",
+     "rodic": "ar",
+     "kod": "lati1261",
+     "jazyk": {
+      "cs": "středověká latina",
+      "en": "Medieval Latin"
+     },
+     "tvar": "scaccus, mn. č. scacci",
+     "doba": {
+      "cs": "kolem roku 1000 (Einsiedelnské verše)",
+      "en": "around 1000 (the Einsiedeln verses)"
+     }
+    },
+    {
+     "id": "ofr",
+     "rodic": "la",
+     "kod": "oldf1239",
+     "jazyk": {
+      "cs": "stará francouzština",
+      "en": "Old French"
+     },
+     "tvar": "eschec, mn. č. esches",
+     "doba": {
+      "cs": "ze středověké latiny",
+      "en": "from Medieval Latin"
+     }
+    },
+    {
+     "id": "en",
+     "rodic": "ofr",
+     "kod": "stan1293",
+     "tvar": "check, chess, checkmate",
+     "doba": {
+      "cs": "ze staré francouzštiny",
+      "en": "from Old French"
+     },
+     "pozn": {
+      "cs": "chess z množného čísla esches, check z eschec",
+      "en": "chess from the plural esches, check from eschec"
+     }
+    },
+    {
+     "id": "de",
+     "rodic": "ofr",
+     "kod": "midd1343",
+     "jazyk": {
+      "cs": "střední horní němčina",
+      "en": "Middle High German"
+     },
+     "tvar": "schāch",
+     "doba": {
+      "cs": "ze staré francouzštiny",
+      "en": "from Old French"
+     },
+     "pozn": {
+      "cs": "podle Klugeho ze stfr. eschec; stará horní němčina má už ve 12. st. skâhzabal ‚šachovnice‘ ze středolat. scaccus, cesta mohla vést i přes latinu",
+      "en": "according to Kluge from Old French eschec; Old High German already has skâhzabal ‘chessboard’ (12th c.) from Medieval Latin scaccus, so the route may also have run through Latin"
+     },
+     "jistota": "sporna"
+    },
+    {
+     "id": "cs",
+     "rodic": "de",
+     "kod": "czec1258",
+     "tvar": "šach, šachy, mat",
+     "doba": {
+      "cs": "z němčiny",
+      "en": "from German"
+     }
+    },
+    {
+     "id": "ru",
+     "rodic": "fa",
+     "kod": "russ1263",
+     "tvar": "шахматы šachmaty",
+     "doba": {
+      "cs": "‚šach mat‘",
+      "en": "‘check mate’"
+     },
+     "pozn": {
+      "cs": "hra přišla na Rus nejspíš z východu, ne přes Evropu (ферзь z perského farzín, слон ‚slon‘); přesná cesta je sporná",
+      "en": "the game probably reached Rus from the east, not through Europe (ферзь from Persian farzīn, слон ‘elephant’); the exact route is disputed"
+     },
+     "jistota": "sporna"
+    }
+   ]
+  },
+  {
+   "id": "alkohol",
+   "pribeh": "caj",
+   "nazev": {
+    "cs": "alkohol",
+    "en": "alcohol"
+   },
+   "uvod": {
+    "cs": "Arabské al-kuḥl je jemný antimonový prášek, kterým se líčily oči (kohl). Alchymisté ve středověké latině tak říkali jemnému prášku a Paracelsus v 16. století i těkavé kapalině (alcool vini ‚podstata vína‘). Na význam ‚líh‘ se slovo zúžilo v 18. století.",
+    "en": "Arabic al-kuḥl is the fine antimony powder used to line the eyes (kohl). Alchemists writing Medieval Latin used the word for a fine powder, and Paracelsus in the 16th century also for a volatile liquid (alcool vini, ‘essence of wine’). The meaning narrowed to ‘spirit of wine’ in the 18th century."
+   },
+   "kroky": [
+    {
+     "id": "ar",
+     "rodic": null,
+     "kod": "stan1318",
+     "jazyk": {
+      "cs": "arabština",
+      "en": "Arabic"
+     },
+     "tvar": "الكحل al-kuḥl",
+     "doba": {
+      "cs": "‚antimonový prášek, líčidlo na oči‘",
+      "en": "‘antimony powder, eyeliner’"
+     },
+     "pozn": {
+      "cs": "slovo je doložené v řadě semitských jazyků (akkad. guḫlum, aram. kuḥlā); arabština ho nejspíš přejala z aramejštiny, starší předhistorie je nejistá",
+      "en": "the word is attested across Semitic (Akkadian guḫlum, Aramaic kuḥlā); Arabic probably took it from Aramaic, and its earlier history is uncertain"
+     }
+    },
+    {
+     "id": "es",
+     "rodic": "ar",
+     "kod": "stan1288",
+     "tvar": "alcohol",
+     "doba": {
+      "cs": "z arabštiny ve Španělsku",
+      "en": "from the Arabic of Spain"
+     },
+     "pozn": {
+      "cs": "původně líčidlo na oči",
+      "en": "originally eyeliner"
+     }
+    },
+    {
+     "id": "la",
+     "rodic": "ar",
+     "kod": "lati1261",
+     "jazyk": {
+      "cs": "středověká latina alchymistů",
+      "en": "the Medieval Latin of alchemists"
+     },
+     "tvar": "alcohol, alcool",
+     "doba": {
+      "cs": "‚jemný prášek‘; Paracelsus (16. st.) i ‚těkavá kapalina‘",
+      "en": "‘fine powder’; Paracelsus (16th c.) also ‘volatile liquid’"
+     }
+    },
+    {
+     "id": "en",
+     "rodic": "la",
+     "kod": "stan1293",
+     "tvar": "alcohol",
+     "doba": {
+      "cs": "1543 ‚jemný prášek‘; ‚líh‘ od 18. století",
+      "en": "1543 ‘fine powder’; ‘spirit of wine’ from the 18th century"
+     }
+    },
+    {
+     "id": "fr",
+     "rodic": "la",
+     "kod": "stan1290",
+     "tvar": "alcool",
+     "doba": {
+      "cs": "ze středověké latiny",
+      "en": "from Medieval Latin"
+     }
+    },
+    {
+     "id": "de",
+     "rodic": "la",
+     "kod": "stan1295",
+     "tvar": "Alkohol",
+     "doba": {
+      "cs": "ze středověké latiny",
+      "en": "from Medieval Latin"
+     }
+    },
+    {
+     "id": "cs",
+     "rodic": "de",
+     "kod": "czec1258",
+     "tvar": "alkohol",
+     "doba": {
+      "cs": "nejspíš z němčiny",
+      "en": "probably from German"
+     },
+     "jistota": "sporna"
+    },
+    {
+     "id": "ru",
+     "rodic": "de",
+     "kod": "russ1263",
+     "tvar": "алкоголь alkogol’",
+     "doba": {
+      "cs": "",
+      "en": ""
+     },
+     "pozn": {
+      "cs": "z němčiny nebo francouzštiny",
+      "en": "from German or French"
+     },
+     "jistota": "sporna"
+    }
+   ]
+  },
+  {
+   "id": "nula",
+   "pribeh": "caj",
+   "nazev": {
+    "cs": "nula a cifra",
+    "en": "zero and cipher"
+   },
+   "uvod": {
+    "cs": "Sanskrtské śūnya ‚prázdno‘ Arabové přeložili slovem ṣifr ‚prázdný‘. Ve středověké latině z něj vzniklo zephirum i cifra: první větev dala zero, druhá cifru, Ziffer a chiffre, které z ‚nuly‘ zobecněly na ‚číslici‘. Česká nula s touto cestou nesouvisí: je z latinského nulla ‚žádná‘ (číslice), stejně jako německé Null.",
+    "en": "Arabic scholars translated Sanskrit śūnya, ‘emptiness’, with ṣifr, ‘empty’. Medieval Latin made two words of it, zephirum and cifra: the first branch gave zero, the second cipher, Ziffer and chiffre, which widened from ‘zero’ to ‘digit’. Czech nula is unrelated to this route: it comes from Latin nulla, ‘no’ (digit), like German Null."
+   },
+   "kroky": [
+    {
+     "id": "sa",
+     "rodic": null,
+     "kod": "sans1269",
+     "tvar": "शून्य śūnya",
+     "doba": {
+      "cs": "‚prázdno, nula‘",
+      "en": "‘emptiness, zero’"
+     }
+    },
+    {
+     "id": "ar",
+     "rodic": "sa",
+     "kod": "stan1318",
+     "jazyk": {
+      "cs": "arabština",
+      "en": "Arabic"
+     },
+     "tvar": "صفر ṣifr",
+     "doba": {
+      "cs": "‚prázdný‘; jako ‚nula‘ překlad śūnya",
+      "en": "‘empty’; as ‘zero’ a translation of śūnya"
+     },
+     "pozn": {
+      "cs": "slovo se nepřejalo, přeložil se jeho význam",
+      "en": "the word was not borrowed, its meaning was translated"
+     }
+    },
+    {
+     "id": "la",
+     "rodic": "ar",
+     "kod": "lati1261",
+     "jazyk": {
+      "cs": "středověká latina",
+      "en": "Medieval Latin"
+     },
+     "tvar": "zephirum, cifra",
+     "doba": {
+      "cs": "zephirum u Fibonacciho (1202)",
+      "en": "zephirum in Fibonacci (1202)"
+     }
+    },
+    {
+     "id": "it",
+     "rodic": "la",
+     "kod": "ital1282",
+     "tvar": "zefiro",
+     "doba": {
+      "cs": "z latinského zephirum",
+      "en": "from Latin zephirum"
+     },
+     "pozn": {
+      "cs": "tvar snad ovlivnilo zefiro ‚západní vítr‘",
+      "en": "the form was perhaps influenced by zefiro, ‘west wind’"
+     }
+    },
+    {
+     "id": "vec",
+     "rodic": "it",
+     "kod": "vene1258",
+     "jazyk": {
+      "cs": "benátština",
+      "en": "Venetian"
+     },
+     "tvar": "zevero → zero",
+     "doba": {
+      "cs": "zero v 15. století",
+      "en": "zero in the 15th century"
+     },
+     "pozn": {
+      "cs": "benátský mezičlánek je předpoklad; italské zero je doložené v 15. století (Florencie)",
+      "en": "the Venetian step is an assumption; Italian zero is attested in the 15th century (Florence)"
+     },
+     "jistota": "sporna"
+    },
+    {
+     "id": "fr",
+     "rodic": "vec",
+     "kod": "stan1290",
+     "tvar": "zéro",
+     "doba": {
+      "cs": "konec 15. století",
+      "en": "late 15th century"
+     },
+     "pozn": {
+      "cs": "z italského zero",
+      "en": "from Italian zero"
+     }
+    },
+    {
+     "id": "en",
+     "rodic": "fr",
+     "kod": "stan1293",
+     "tvar": "zero",
+     "doba": {
+      "cs": "1598",
+      "en": "1598"
+     },
+     "pozn": {
+      "cs": "z francouzštiny nebo přímo z italštiny",
+      "en": "from French or directly from Italian"
+     },
+     "jistota": "sporna"
+    },
+    {
+     "id": "ofr",
+     "rodic": "la",
+     "kod": "oldf1239",
+     "jazyk": {
+      "cs": "stará francouzština",
+      "en": "Old French"
+     },
+     "tvar": "cifre",
+     "doba": {
+      "cs": "‚nula‘, později ‚číslice‘; dnes chiffre",
+      "en": "‘zero’, later ‘digit’; today chiffre"
+     }
+    },
+    {
+     "id": "me",
+     "rodic": "ofr",
+     "kod": "midd1317",
+     "jazyk": {
+      "cs": "střední angličtina",
+      "en": "Middle English"
+     },
+     "tvar": "cifre → cipher",
+     "doba": {
+      "cs": "konec 14. století",
+      "en": "late 14th century"
+     },
+     "pozn": {
+      "cs": "‚nula‘, pak ‚číslice‘ a ‚šifra‘",
+      "en": "‘zero’, then ‘digit’ and ‘code’"
+     }
+    },
+    {
+     "id": "de",
+     "rodic": "ofr",
+     "kod": "stan1295",
+     "tvar": "Ziffer",
+     "doba": {
+      "cs": "15. století (pozdně středohornoněmecké zifer)",
+      "en": "15th century (late Middle High German zifer)"
+     },
+     "pozn": {
+      "cs": "ze stfr. cifre; původně ‚nula‘, od 16. st. i ‚šifra‘",
+      "en": "from Old French cifre; originally ‘zero’, from the 16th c. also ‘code’"
+     }
+    },
+    {
+     "id": "cs",
+     "rodic": "de",
+     "kod": "czec1258",
+     "tvar": "cifra",
+     "doba": {
+      "cs": "",
+      "en": ""
+     },
+     "pozn": {
+      "cs": "z němčiny (Ziffer), zakončení -a snad podle latinského cifra",
+      "en": "from German Ziffer, the ending -a perhaps after Latin cifra"
+     },
+     "jistota": "sporna"
+    }
+   ]
+  },
+  {
+   "id": "sampon",
+   "pribeh": "caj",
+   "nazev": {
+    "cs": "šampon",
+    "en": "shampoo"
+   },
+   "uvod": {
+    "cs": "V hindustánštině (hindštině a urdštině) znamená čā̃pō ‚tiskni, masíruj‘. Angličané v Indii tak od roku 1762 říkali masáži (hnětení těla v lázni). Ve významu ‚mýt vlasy‘ je shampoo doložené od roku 1860 a jako název přípravku se rozšířilo po světě.",
+    "en": "In Hindustani (Hindi-Urdu), čā̃pō means ‘press, knead’. The British in India used it from 1762 for massage (kneading the body in the bath). In the sense ‘to wash the hair’ shampoo is attested from 1860, and as the name of the product it spread around the world."
+   },
+   "kroky": [
+    {
+     "id": "hi",
+     "rodic": null,
+     "kod": "hind1269",
+     "jazyk": {
+      "cs": "hindustánština",
+      "en": "Hindustani"
+     },
+     "tvar": "चाँपो čā̃pō",
+     "doba": {
+      "cs": "‚tiskni, masíruj‘",
+      "en": "‘press, knead’"
+     },
+     "pozn": {
+      "cs": "rozkazovací způsob slovesa čā̃pnā",
+      "en": "the imperative of the verb čā̃pnā"
+     }
+    },
+    {
+     "id": "en",
+     "rodic": "hi",
+     "kod": "stan1293",
+     "tvar": "shampoo",
+     "doba": {
+      "cs": "1762 ‚masáž‘; ‚mytí vlasů‘ od 1860",
+      "en": "1762 ‘massage’; ‘hair wash’ from 1860"
+     },
+     "pozn": {
+      "cs": "v Anglii masáž (shampooing) zpopularizoval Sake Dean Mahomed, v Brightonu od roku 1814",
+      "en": "in England Sake Dean Mahomed popularised the massage (shampooing), in Brighton from 1814"
+     }
+    },
+    {
+     "id": "fr",
+     "rodic": "en",
+     "kod": "stan1290",
+     "tvar": "shampooing",
+     "doba": {
+      "cs": "z angličtiny",
+      "en": "from English"
+     }
+    },
+    {
+     "id": "de",
+     "rodic": "en",
+     "kod": "stan1295",
+     "tvar": "Shampoo, Schampon, Schampun",
+     "doba": {
+      "cs": "z angličtiny",
+      "en": "from English"
+     }
+    },
+    {
+     "id": "cs",
+     "rodic": "de",
+     "kod": "czec1258",
+     "tvar": "šampon, šampón",
+     "doba": {
+      "cs": "",
+      "en": ""
+     },
+     "pozn": {
+      "cs": "nejspíš z německého Schampon; zakončení -on se liší od anglického -oo",
+      "en": "probably from German Schampon; the ending -on differs from English -oo"
+     },
+     "jistota": "sporna"
+    },
+    {
+     "id": "pl",
+     "rodic": "de",
+     "kod": "poli1260",
+     "tvar": "szampon",
+     "doba": {
+      "cs": "",
+      "en": ""
+     },
+     "pozn": {
+      "cs": "nejspíš z němčiny",
+      "en": "probably from German"
+     },
+     "jistota": "sporna"
+    },
+    {
+     "id": "ru",
+     "rodic": "fr",
+     "kod": "russ1263",
+     "tvar": "шампунь šampun’",
+     "doba": {
+      "cs": "",
+      "en": ""
+     },
+     "pozn": {
+      "cs": "z francouzského shampooing nebo německého Schampun",
+      "en": "from French shampooing or German Schampun"
+     },
+     "jistota": "sporna"
+    },
+    {
+     "id": "es",
+     "rodic": "en",
+     "kod": "stan1288",
+     "tvar": "champú",
+     "doba": {
+      "cs": "z angličtiny",
+      "en": "from English"
+     }
+    },
+    {
+     "id": "ja",
+     "rodic": "en",
+     "kod": "nucl1643",
+     "tvar": "シャンプー šanpú",
+     "doba": {
+      "cs": "z angličtiny",
+      "en": "from English"
+     }
+    }
+   ]
   }
  ]
 }
