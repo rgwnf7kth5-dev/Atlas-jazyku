@@ -120,7 +120,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
 #strom{z-index:4; touch-action:none; cursor:grab}
 #strom.tahne{cursor:grabbing}
 .scena.rezim-strom :is(#podklad,#gl,#popisky,#globus,.hud,.napoveda,.tl-napoveda,.ukazatel,.zoom-ovl,#tl-cely,.zeme-okno,.bublina-bod){display:none !important}
-#tl-strom[aria-pressed="true"]{background:var(--cyan-slabe); color:var(--aktivni-text)}
+#tl-strom:not(.med)[aria-pressed="true"]{background:var(--cyan-slabe); color:var(--aktivni-text)}
 .strom-hlava{position:absolute; z-index:5; top:14px; right:16px; display:flex; align-items:center; gap:6px; padding:5px; border-radius:999px; max-width:calc(100% - 32px)}
 .strom-hlava label{display:flex; align-items:center; gap:8px; min-width:0; padding-left:8px; font-size:.78rem; font-weight:600; color:var(--text2)}
 .strom-hlava svg{width:17px; height:17px; flex:none; color:var(--cyan)}
@@ -884,7 +884,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 .pat-det .zdroje{border-top:1px solid var(--linka)}
 @media (prefers-reduced-motion:reduce){ .pat-det > summary .pat-sipka{transition:none} }
 /* tlačítko „Vitalita“ v liště a vysvětlivka stupňů, jen když jsou barvy zapnuté */
-#tl-vitalita-dok[aria-pressed="true"]{background:var(--cyan-slabe); color:var(--aktivni-text)}
+#tl-vitalita-dok:not(.med)[aria-pressed="true"]{background:var(--cyan-slabe); color:var(--aktivni-text)}
 .vit-legenda{position:absolute; z-index:6; bottom:80px; left:var(--dok-x,50%); transform:translateX(-50%); border-radius:999px; padding:3px; max-width:calc(100% - 24px)}
 .vit-legenda[hidden]{display:none}
 .vit-legenda > button{display:flex; align-items:center; flex-wrap:wrap; justify-content:center; gap:5px 10px; padding:6px 14px; border:0; border-radius:999px;
@@ -1025,7 +1025,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 :root[data-theme="light"]{--typ-1:#0064b5; --typ-2:#d0126f; --typ-3:#02b827; --typ-4:#887311; --typ-5:#ad74ff; --typ-jine:#1a1a1a; --typ-nic:#b9bec8;
   --typ-r0:#6ea1e2; --typ-r1:#588cce; --typ-r2:#4278bb; --typ-r3:#2b64a8; --typ-r4:#115096; --typ-r5:#003c83; --typ-r6:#002871}
 .typ-bod{display:inline-block; width:11px; height:11px; border-radius:50%; flex:none; box-shadow:0 0 0 1.5px var(--sklo2)}
-/* seznam vlastností v panelu Zobrazení › Typologie */
+/* seznam vlastností v (dřív panel Zobrazení › Typologie; styly .typ-vypnout používá okno Mapy) */
 .vp-uvod{margin:0 4px 8px; font-size:.8rem; line-height:1.45; color:var(--text2)}
 .typ-oblast{margin:12px 4px 4px}
 .typ-vlastnosti{list-style:none; margin:0; padding:0}
@@ -1097,6 +1097,92 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 .cesta-dalsi .cesta-pribeh{background:transparent}
 @media (prefers-reduced-motion: reduce){ .cesta-kroky li{animation:none} }
 @media (max-width:920px){ .cesta-panel{position:relative; top:auto; left:auto; right:auto; width:auto; max-height:none; margin:4px 12px 12px} .cesta-panel .eu-text p{display:block} }
+
+/* ==============================================================================================
+   MEDAILONY POD GLÓBEM (27. 9. 2026, uživatel vybral variantu „medailony s rámem“ v řadě pod glóbem)
+   Místo lišty: Jazyky starověku, Příběhy jazyků, Rodokmen, Mapy, Vitalita (akvarely ve static/ikony/) a menší Nastavení.
+   Rám je ve dne porcelánově papírový, v noci tmavý; každé tlačítko má trvalý popisek. Náhodný jazyk je v panelu
+   seznamu vedle počtu jazyků, zoom a Celý svět nenápadně v pravém horním rohu pod otazníkem.
+   ===================================================================================================== */
+:root{--med-ram1:#3A4058; --med-ram2:rgba(0,0,0,.55); --med-stin:rgba(0,0,0,.7); --med-papir:#2A3048; --med-papir2:#1A1E30; --med-lesk:rgba(255,255,255,.28)}
+:root[data-theme="light"]{--med-ram1:#ECE5D5; --med-ram2:rgba(120,100,70,.42); --med-stin:rgba(50,38,20,.42); --med-papir:#FBF8F0; --med-papir2:#E4DCCB; --med-lesk:rgba(255,255,255,.8)}
+.dok.medailony{background:none; border:0; border-radius:0; box-shadow:none; padding:0; backdrop-filter:none; -webkit-backdrop-filter:none;
+  bottom:12px; gap:14px; align-items:flex-start; white-space:normal}
+/* jemný podklad pod řadou, aby přes medailony neprosvítala jména jazyků z přiblíženého glóbu */
+.dok.medailony::before{content:""; position:absolute; z-index:-1; left:-26px; right:-26px; top:-6px; bottom:-10px; border-radius:60px;
+  background:var(--sklo, rgba(251,249,244,.8)); filter:blur(14px); opacity:.85; pointer-events:none}
+:root[data-theme="light"] .dok.medailony::before{background:rgba(251,249,244,.9)}
+.med{display:flex; flex-direction:column; align-items:center; gap:9px; width:88px; padding:6px 0 0; border:0; background:none;
+  font:inherit; color:var(--text); cursor:pointer; -webkit-tap-highlight-color:transparent}
+.med[hidden]{display:none}
+.med span{font-size:12px; font-weight:600; line-height:1.15; text-align:center; color:var(--text2); transition:color .2s}
+.med-obr{position:relative; display:grid; place-items:center; width:68px; height:68px; border-radius:50%; font-style:normal;
+  background:var(--med-papir) center / cover no-repeat;
+  box-shadow:0 0 0 5px var(--med-ram1), 0 0 0 6px var(--med-ram2), 0 10px 18px -6px var(--med-stin), inset 0 2px 5px rgba(0,0,0,.32);
+  transition:transform .25s cubic-bezier(.2,.9,.3,1.3), box-shadow .25s}
+.med-obr::before{content:""; position:absolute; inset:-6px; border-radius:50%; pointer-events:none;
+  background:linear-gradient(160deg, var(--med-lesk), rgba(255,255,255,0) 36%, rgba(0,0,0,0) 64%, rgba(0,0,0,.22));
+  -webkit-mask:radial-gradient(circle, transparent 33.5px, #000 34.5px); mask:radial-gradient(circle, transparent 33.5px, #000 34.5px)}
+.med:hover .med-obr{transform:translateY(-3px); box-shadow:0 0 0 5px var(--med-ram1), 0 0 0 6px var(--med-ram2), 0 16px 22px -8px var(--med-stin), inset 0 2px 5px rgba(0,0,0,.32)}
+.med:hover span, .med[aria-pressed="true"] span, .med[aria-expanded="true"] span{color:var(--text)}
+.med:focus-visible{outline:none}
+.med:focus-visible .med-obr{outline:3px solid var(--cyan); outline-offset:8px}
+.med:is([aria-pressed="true"],[aria-expanded="true"]) .med-obr{box-shadow:0 0 0 5px var(--akcent), 0 0 0 6px var(--med-ram2), 0 10px 18px -6px var(--med-stin), inset 0 2px 5px rgba(0,0,0,.32)}
+.med.maly .med-obr{width:50px; height:50px; margin-top:9px; margin-bottom:9px; color:var(--text); background:linear-gradient(160deg, var(--med-papir), var(--med-papir2))}
+.med.maly .med-obr::before{-webkit-mask:radial-gradient(circle, transparent 24.5px, #000 25.5px); mask:radial-gradient(circle, transparent 24.5px, #000 25.5px)}
+.med.maly svg{width:22px; height:22px}
+.med .odznak-filtr{position:absolute; top:-8px; right:-8px}
+@media (prefers-reduced-motion: reduce){ .med-obr{transition:none} .med:hover .med-obr{transform:none} }
+/* panely a vysvětlivky nad řadou medailonů */
+.panel-zobrazeni{bottom:128px}
+.vit-legenda{bottom:128px}
+.typ-legenda{bottom:128px}
+/* zoom a Celý svět: nenápadně v pravém horním rohu, bez podkladu */
+.roh-ovladani{position:absolute; z-index:6; top:58px; right:17px; display:flex; flex-direction:column; align-items:center; gap:0}
+.roh-ovladani .kolo{width:34px; height:34px; border:0; background:transparent; box-shadow:none; color:var(--text2); opacity:.85}
+.roh-ovladani .kolo:hover{opacity:1; color:var(--text); background:var(--plocha2)}
+.roh-ovladani .kolo svg{width:15px; height:15px}
+.roh-ovladani #tl-cely svg{width:18px; height:18px}
+.roh-ovladani .zoom-hod{font-family:var(--pismo-data); font-size:10.5px; color:var(--text3); padding:1px 0}
+.scena:is(.rezim-cesta,.rezim-eu,.rezim-brana) .roh-ovladani{display:none}
+/* Náhodný jazyk v panelu seznamu, vedle počtu jazyků */
+.pocet-radek{display:flex; align-items:center; justify-content:space-between; gap:10px}
+.pocet-radek #tl-nahoda{flex:none; padding:7px 14px 7px 11px; min-height:0; font-size:13px; gap:7px; border-radius:999px}
+.pocet-radek #tl-nahoda svg{width:17px; height:17px}
+@media (max-width:920px){
+  .dok.medailony::before{display:none}
+  .dok.medailony{position:relative; left:auto; bottom:auto; transform:none; display:grid; grid-template-columns:repeat(3, 96px); justify-content:center;
+    gap:12px 16px; margin:10px auto 18px; max-width:none}
+  .med{width:96px}
+  .med-obr{width:58px; height:58px}
+  .med-obr::before{-webkit-mask:radial-gradient(circle, transparent 28.5px, #000 29.5px); mask:radial-gradient(circle, transparent 28.5px, #000 29.5px)}
+  .med.maly .med-obr{width:46px; height:46px; margin:6px 0}
+  .med.maly .med-obr::before{-webkit-mask:radial-gradient(circle, transparent 22.5px, #000 23.5px); mask:radial-gradient(circle, transparent 22.5px, #000 23.5px)}
+  .panel-zobrazeni, .vit-legenda, .typ-legenda{bottom:auto}
+  .roh-ovladani{top:52px; right:10px}
+  .roh-ovladani :is(#tl-priblizi,#tl-oddal,.zoom-hod){display:none}      /* na telefonu se přibližuje dvěma prsty */
+}
+
+/* ---------- okno Mapy: barevné mapy s kulatým náhledem (medailon Mapy pod glóbem) ---------- */
+.mapy-okno{width:min(760px, calc(100vw - 32px))}
+.mapy-okno .od-telo{padding-bottom:18px}
+.mapy-okno .typ-vypnout{margin:2px 0 6px}
+.mapy-okno .od-telo h3.mapy-oblast{display:flex; align-items:center; gap:10px; margin:18px 4px 8px; font-family:var(--pismo-text); font-size:.72rem; font-weight:700;
+  line-height:1.2; letter-spacing:.1em; text-transform:uppercase; color:var(--text3)}
+.mapy-oblast::after{content:""; flex:1; height:1px; background:var(--linka)}
+.mapy-mriz{display:grid; grid-template-columns:repeat(auto-fill, minmax(210px, 1fr)); gap:4px 10px}
+.mapa-tl{display:flex; align-items:center; gap:12px; width:100%; padding:7px 8px; border:0; border-radius:12px; background:transparent;
+  color:var(--text); text-align:left; font:inherit; cursor:pointer}
+.mapa-tl:hover{background:var(--cyan-slabe)}
+.mapa-tl:focus-visible{outline:3px solid var(--cyan); outline-offset:1px}
+.mapa-obr{flex:none; width:52px; height:52px; border-radius:50%; background:var(--med-papir) center/cover no-repeat;
+  box-shadow:0 0 0 3px var(--med-ram1), 0 0 0 4px var(--med-ram2), 0 6px 10px -5px var(--med-stin)}
+.mapa-tl[aria-pressed="true"] .mapa-obr{box-shadow:0 0 0 3px var(--akcent), 0 0 0 4px var(--med-ram2), 0 6px 10px -5px var(--med-stin)}
+.mapa-tl span{display:flex; flex-direction:column; gap:2px; min-width:0}
+.mapa-tl b{font-size:.9rem; font-weight:600; line-height:1.25}
+.mapa-tl[aria-pressed="true"] b{color:var(--akcent)}
+.mapa-tl small{font-size:.75rem; line-height:1.3; color:var(--text3)}
+@media (max-width: 520px){ .mapy-mriz{grid-template-columns:1fr 1fr; gap:2px 4px} .mapa-tl{gap:8px; padding:6px 4px} .mapa-obr{width:44px; height:44px} .mapa-tl b{font-size:.84rem} }
 
 /* ---------- jazyky starověku: stránka o civilizaci jako list ilustrované encyklopedie (okno nad glóbem i web) ----------
    Papír a inkoust jako u akvarelů na kartách; v tmavém vzhledu sépiová noc. Barvy jen tady, přes --civ-*. */
@@ -1438,8 +1524,6 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
    <svg class="znak" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="50" cy="50" r="45" fill="var(--pozadi-loga)" stroke="currentColor" stroke-width="3.2"/><circle cx="50" cy="50" r="38.5" fill="none" stroke="currentColor" stroke-width="1.3" opacity=".5"/><g fill="none" stroke="var(--r-ie)" stroke-width="1.8" opacity=".75"><ellipse cx="50" cy="50" rx="31" ry="38.5"/><path d="M11.5 50h29M59.5 50h29"/></g><path transform="translate(36 34) scale(18)" d="M0.038 -0.355 0.281 0.271Q0.295 0.307 0.313 0.321Q0.331 0.334 0.345 0.335V0.355Q0.315 0.353 0.274 0.352Q0.234 0.352 0.193 0.352Q0.147 0.352 0.106 0.352Q0.065 0.353 0.04 0.355V0.335Q0.091 0.333 0.105 0.318Q0.118 0.302 0.098 0.251L-0.072 -0.214L-0.053 -0.24L-0.206 0.156Q-0.228 0.211 -0.232 0.246Q-0.237 0.281 -0.227 0.3Q-0.218 0.319 -0.196 0.326Q-0.175 0.334 -0.145 0.335V0.355Q-0.178 0.353 -0.208 0.352Q-0.238 0.352 -0.269 0.352Q-0.291 0.352 -0.31 0.352Q-0.33 0.353 -0.345 0.355V0.335Q-0.324 0.331 -0.301 0.308Q-0.28 0.285 -0.259 0.23L-0.031 -0.355Q-0.015 -0.354 0.004 -0.354Q0.022 -0.354 0.038 -0.355ZM0.108 0.067V0.087H-0.19L-0.18 0.067Z" fill="currentColor"/><path transform="translate(64 34) scale(18)" d="M0.342 -0.361V-0.341Q0.309 -0.34 0.293 -0.334Q0.277 -0.327 0.272 -0.309Q0.266 -0.292 0.266 -0.255V0.241Q0.266 0.277 0.272 0.295Q0.277 0.313 0.293 0.319Q0.309 0.325 0.342 0.327V0.347Q0.317 0.345 0.274 0.345Q0.232 0.344 0.183 0.344Q0.143 0.344 0.101 0.345Q0.058 0.345 0.032 0.347V0.327Q0.064 0.325 0.08 0.319Q0.096 0.313 0.102 0.295Q0.107 0.277 0.107 0.241V-0.255Q0.107 -0.307 0.096 -0.324Q0.085 -0.341 0.045 -0.341Q-0.023 -0.341 -0.051 -0.298Q-0.079 -0.255 -0.079 -0.178Q-0.079 -0.131 -0.068 -0.092Q-0.056 -0.054 -0.025 -0.031Q0.006 -0.009 0.065 -0.009H0.151Q0.151 -0.009 0.151 0.001Q0.151 0.011 0.151 0.011H0.054Q-0.034 0.011 -0.092 -0.005Q-0.15 -0.021 -0.184 -0.048Q-0.218 -0.075 -0.231 -0.109Q-0.244 -0.143 -0.244 -0.18Q-0.244 -0.237 -0.214 -0.277Q-0.183 -0.318 -0.122 -0.339Q-0.06 -0.36 0.032 -0.36Q0.051 -0.36 0.096 -0.359Q0.141 -0.358 0.19 -0.358Q0.232 -0.358 0.274 -0.359Q0.317 -0.36 0.342 -0.361ZM0.145 -0.006 0.143 0.011H0.034Q0.004 0.011 -0.014 0.03Q-0.032 0.048 -0.042 0.08Q-0.051 0.111 -0.058 0.153L-0.077 0.253Q-0.087 0.315 -0.122 0.338Q-0.158 0.361 -0.211 0.361Q-0.254 0.361 -0.284 0.348Q-0.316 0.334 -0.342 0.303L-0.328 0.291Q-0.318 0.302 -0.309 0.308Q-0.3 0.313 -0.287 0.314Q-0.269 0.314 -0.259 0.298Q-0.248 0.282 -0.24 0.242L-0.22 0.139Q-0.207 0.075 -0.161 0.047Q-0.114 0.019 -0.029 0.008Q-0.01 0.005 0.01 0.003Q0.029 0.001 0.06 -0.002Q0.092 -0.004 0.145 -0.006Z" fill="currentColor"/><path transform="translate(50 51) scale(18)" d="M0.197 0.329Q0.196 0.318 0.192 0.305Q0.188 0.292 0.179 0.277Q0.169 0.263 0.149 0.245L-0.211 -0.098Q-0.237 -0.123 -0.25 -0.154Q-0.263 -0.185 -0.263 -0.215Q-0.263 -0.242 -0.256 -0.268Q-0.248 -0.294 -0.235 -0.329H-0.201V-0.312Q-0.201 -0.294 -0.192 -0.273Q-0.183 -0.252 -0.159 -0.228L0.211 0.122Q0.226 0.137 0.236 0.154Q0.245 0.172 0.25 0.191Q0.255 0.21 0.255 0.231Q0.255 0.26 0.246 0.282Q0.236 0.304 0.221 0.329ZM-0.267 0.319V0.242H-0.25Q-0.233 0.242 -0.227 0.235Q-0.221 0.229 -0.225 0.213L-0.242 0.144Q-0.253 0.1 -0.244 0.057Q-0.236 0.015 -0.208 -0.022L-0.158 -0.089L-0.126 -0.054L-0.152 -0.012Q-0.173 0.022 -0.173 0.048Q-0.174 0.074 -0.153 0.111L-0.121 0.172Q-0.104 0.202 -0.099 0.237Q-0.095 0.273 -0.112 0.319ZM0.141 0.058 0.09 0.011Q0.09 0.001 0.096 -0.016Q0.102 -0.033 0.111 -0.051Q0.12 -0.07 0.129 -0.084L0.173 -0.158L0.22 -0.142L0.172 -0.062Q0.16 -0.042 0.153 -0.023Q0.146 -0.004 0.144 0.016Q0.141 0.036 0.141 0.058ZM0.253 -0.099 0.128 -0.115Q0.094 -0.119 0.081 -0.139Q0.067 -0.158 0.067 -0.201Q0.067 -0.227 0.073 -0.259Q0.078 -0.291 0.091 -0.329H0.126V-0.311Q0.126 -0.294 0.136 -0.285Q0.146 -0.275 0.165 -0.273L0.209 -0.267Q0.239 -0.263 0.253 -0.244Q0.267 -0.225 0.267 -0.189Q0.267 -0.167 0.264 -0.147Q0.26 -0.128 0.253 -0.099Z" fill="currentColor"/><path transform="translate(36.5 67.5) scale(18)" d="M0.019 0.388Q-0.059 0.388 -0.116 0.36Q-0.173 0.332 -0.204 0.28Q-0.235 0.228 -0.235 0.158Q-0.235 0.05 -0.16 -0.031Q-0.192 -0.046 -0.217 -0.07Q-0.241 -0.095 -0.253 -0.122Q-0.265 -0.149 -0.265 -0.174Q-0.265 -0.204 -0.254 -0.238Q-0.242 -0.273 -0.222 -0.304Q-0.201 -0.336 -0.176 -0.357Q-0.139 -0.388 -0.098 -0.388Q-0.063 -0.388 -0.025 -0.365Q0.013 -0.342 0.054 -0.295L0.033 -0.255Q0.003 -0.267 -0.023 -0.272Q-0.049 -0.278 -0.072 -0.278Q-0.107 -0.278 -0.135 -0.27Q-0.162 -0.263 -0.194 -0.246Q-0.191 -0.192 -0.158 -0.156Q-0.124 -0.12 -0.067 -0.106Q-0.023 -0.132 0.025 -0.153Q0.073 -0.175 0.127 -0.193Q0.138 -0.177 0.138 -0.142Q0.138 -0.121 0.129 -0.105Q0.121 -0.088 0.102 -0.075Q0.094 -0.069 0.076 -0.06Q0.058 -0.052 0.031 -0.041Q-0.056 -0.007 -0.099 0.021Q-0.142 0.049 -0.163 0.082Q-0.173 0.098 -0.179 0.116Q-0.184 0.134 -0.184 0.152Q-0.184 0.209 -0.132 0.241Q-0.079 0.273 0.021 0.273Q0.041 0.273 0.062 0.272Q0.083 0.27 0.105 0.267Q0.126 0.264 0.163 0.257Q0.2 0.249 0.252 0.237L0.265 0.279Q0.179 0.332 0.114 0.36Q0.05 0.388 0.019 0.388Z" fill="currentColor"/><path transform="translate(64 67) scale(18)" d="M-0.083 0.413Q0.048 0.388 0.131 0.343Q0.214 0.297 0.254 0.237Q0.293 0.178 0.293 0.111Q0.293 0.056 0.268 0.013Q0.243 -0.029 0.198 -0.053Q0.153 -0.077 0.09 -0.077Q0.04 -0.077 -0.011 -0.062Q-0.062 -0.048 -0.121 -0.015Q-0.18 0.017 -0.224 0.062Q-0.268 0.107 -0.291 0.152Q-0.315 0.198 -0.315 0.233Q-0.315 0.247 -0.309 0.254Q-0.303 0.261 -0.291 0.261Q-0.264 0.261 -0.231 0.247Q-0.199 0.233 -0.165 0.211Q-0.131 0.189 -0.103 0.164Q-0.076 0.141 -0.048 0.11Q-0.02 0.078 0.006 0.043Q0.032 0.008 0.052 -0.026Q0.071 -0.06 0.08 -0.087Q0.09 -0.114 0.082 -0.133Q0.074 -0.151 0.045 -0.17L0.053 -0.182Q0.082 -0.177 0.105 -0.169Q0.127 -0.16 0.142 -0.144Q0.152 -0.134 0.154 -0.122Q0.156 -0.11 0.152 -0.096Q0.137 -0.045 0.102 0.016Q0.067 0.077 0.019 0.136Q-0.028 0.195 -0.078 0.241Q-0.138 0.299 -0.202 0.33Q-0.267 0.361 -0.321 0.361Q-0.359 0.361 -0.381 0.338Q-0.404 0.315 -0.404 0.27Q-0.404 0.218 -0.38 0.167Q-0.357 0.117 -0.316 0.073Q-0.276 0.029 -0.224 -0.007Q-0.172 -0.043 -0.116 -0.067Q-0.067 -0.09 -0.011 -0.102Q0.045 -0.114 0.104 -0.114Q0.196 -0.114 0.263 -0.078Q0.33 -0.043 0.367 0.015Q0.403 0.072 0.403 0.139Q0.403 0.216 0.368 0.272Q0.333 0.327 0.269 0.363Q0.204 0.398 0.116 0.414Q0.027 0.431 -0.079 0.432ZM-0.056 0.308Q-0.081 0.308 -0.1 0.284Q-0.12 0.261 -0.132 0.223Q-0.144 0.184 -0.15 0.137Q-0.156 0.09 -0.156 0.044Q-0.156 -0.003 -0.149 -0.06Q-0.143 -0.117 -0.134 -0.173Q-0.125 -0.229 -0.118 -0.276Q-0.111 -0.322 -0.111 -0.348Q-0.111 -0.361 -0.115 -0.367Q-0.119 -0.373 -0.132 -0.378Q-0.143 -0.383 -0.158 -0.387Q-0.173 -0.39 -0.188 -0.393L-0.189 -0.407Q-0.173 -0.415 -0.153 -0.424Q-0.133 -0.432 -0.118 -0.432Q-0.089 -0.432 -0.059 -0.423Q-0.029 -0.413 -0.009 -0.399Q0.011 -0.385 0.011 -0.372Q0.011 -0.36 0.004 -0.349Q-0.003 -0.339 -0.011 -0.327Q-0.019 -0.315 -0.024 -0.297Q-0.033 -0.261 -0.042 -0.221Q-0.051 -0.181 -0.058 -0.141Q-0.066 -0.1 -0.071 -0.061Q-0.076 -0.022 -0.076 0.013Q-0.076 0.065 -0.065 0.101Q-0.055 0.138 -0.041 0.165Q-0.028 0.193 -0.018 0.216Q-0.008 0.239 -0.008 0.264Q-0.008 0.287 -0.021 0.297Q-0.034 0.308 -0.056 0.308ZM-0.227 -0.17Q-0.268 -0.17 -0.294 -0.185Q-0.321 -0.199 -0.337 -0.227Q-0.354 -0.254 -0.366 -0.291L-0.355 -0.301Q-0.329 -0.285 -0.307 -0.274Q-0.285 -0.263 -0.261 -0.258Q-0.238 -0.253 -0.21 -0.253Q-0.174 -0.253 -0.139 -0.257Q-0.104 -0.261 -0.074 -0.266Q-0.004 -0.279 0.046 -0.298Q0.095 -0.316 0.124 -0.33Q0.152 -0.344 0.159 -0.344Q0.199 -0.344 0.22 -0.333Q0.241 -0.321 0.241 -0.299Q0.241 -0.282 0.231 -0.271Q0.221 -0.259 0.202 -0.252Q0.183 -0.244 0.153 -0.235Q0.123 -0.226 0.086 -0.217Q0.049 -0.208 0.008 -0.199Q-0.034 -0.19 -0.077 -0.184Q-0.113 -0.178 -0.152 -0.174Q-0.191 -0.17 -0.227 -0.17Z" fill="currentColor"/><circle cx="50" cy="5" r="4.2" fill="var(--akcent)" stroke="var(--pozadi-loga)" stroke-width="1.6"/></svg>
    <h1 data-t="nazev">The Language Atlas</h1>
   </a>
-  <button class="prepinac starovek-ikona" id="tl-pribehy" type="button" aria-haspopup="dialog" aria-label="Language stories: travelling words, language change, revival and mysteries" data-t-aria-label="pribehyTlacitko"><svg aria-hidden="true"><use href="#i-pribehy"/></svg><span class="bublina" aria-hidden="true" data-t="pribehyTlacitko">Language stories: travelling words, language change, revival and mysteries</span></button>
-  <button class="prepinac starovek-ikona" id="tl-starovek" type="button" aria-haspopup="dialog" aria-label="Languages of antiquity: pages on civilizations, their languages and scripts" data-t-aria-label="starovekTlacitko"><svg aria-hidden="true"><use href="#i-chram"/></svg><span class="bublina" aria-hidden="true" data-t="starovekTlacitko">Languages of antiquity: pages on civilizations, their languages and scripts</span></button>
   <a class="jazyk-prepinac" id="jazyk-prepinac" href="../index.html" hreflang="cs" lang="cs" title="Přepnout do češtiny" data-t="jinyJazyk" data-t-title="jinyJazykPopis">Česky</a>
   <button class="prepinac" id="prepinac" type="button" aria-pressed="false" aria-label="Switch between day and night look" title="Switch between day and night look" data-t-aria-label="motiv" data-t-title="motiv">
    <svg aria-hidden="true"><use href="#i-slunce" id="ikona-rezim"/></svg>
@@ -1473,21 +1557,23 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
     <div class="cesta-dalsi" id="cesta-dalsi"></div>
    </div>
    <div class="vit-legenda sklo" id="vit-legenda" hidden><button type="button" id="vit-legenda-tl"></button></div>
-   <div class="dok sklo" id="dok">
-    <button class="tl hlavni" id="tl-nahoda" type="button"><svg aria-hidden="true"><use href="#i-kostka"/></svg><span data-t="prekvap">Random language</span></button>
-    <button class="tl" id="tl-cely" type="button" hidden><svg aria-hidden="true"><use href="#i-svet"/></svg><span data-t="celySvet">Whole world</span></button>
-    <div class="zoom-ovl" role="group" aria-label="Globe zoom" data-t-aria-label="zoomSkupina">
-     <button class="kolo" id="tl-oddal" type="button" aria-label="Zoom out" data-t-aria-label="oddalit"><svg aria-hidden="true"><use href="#i-minus"/></svg></button>
-     <span class="zoom-hod" id="zoom-hod">1,0&times;</span>
-     <button class="kolo" id="tl-priblizi" type="button" aria-label="Zoom in" data-t-aria-label="priblizit"><svg aria-hidden="true"><use href="#i-plus"/></svg></button>
-    </div>
-    <button class="tl" id="tl-strom" type="button" aria-pressed="false" title="Language family tree: how the languages of one family are related" data-t-title="rodokmenPopis"><svg aria-hidden="true"><use href="#i-strom"/></svg><span data-t="rodokmen">Family tree</span></button>
-    <button class="tl" id="tl-vitalita-dok" type="button" aria-pressed="false" title="Colour languages by degree of endangerment (UNESCO)" data-t-title="vitalitaDokPopis"><svg aria-hidden="true"><use href="#i-vitalita"/></svg><span data-t="vitalita">Vitality</span></button>
-    <button class="tl" id="tl-zobrazeni" type="button" aria-expanded="false" aria-controls="panel-zobrazeni" title="Spin, names, sign languages and vitality" data-t-title="zobrazeniPopis"><svg aria-hidden="true"><use href="#i-nastaveni"/></svg><span data-t="zobrazeni">View</span><b class="odznak-filtr" id="zobrazeni-pocet" hidden aria-hidden="true"></b></button>
+   <nav class="dok medailony" id="dok" aria-label="Atlas sections" data-t-aria-label="rozcestnik">
+    <button class="med" id="tl-starovek" type="button" aria-haspopup="dialog" title="Languages of antiquity: pages on civilizations, their languages and scripts" data-t-title="starovekTlacitko"><i class="med-obr" data-ikona="starovek"></i><span data-t="medStarovek">Ancient languages</span></button>
+    <button class="med" id="tl-pribehy" type="button" aria-haspopup="dialog" title="Language stories: travelling words, language change, revival and mysteries" data-t-title="pribehyTlacitko"><i class="med-obr" data-ikona="pribehy"></i><span data-t="medPribehy">Language stories</span></button>
+    <button class="med" id="tl-strom" type="button" aria-pressed="false" title="Language family tree: how the languages of one family are related" data-t-title="rodokmenPopis"><i class="med-obr" data-ikona="rodokmen"></i><span data-t="rodokmen">Family tree</span></button>
+    <button class="med" id="tl-mapy" type="button" aria-haspopup="dialog" title="Colour maps of languages: script, vitality and typology (WALS)" data-t-title="mapyPopis"><i class="med-obr" data-ikona="mapy"></i><span data-t="medMapy">Maps</span></button>
+    <button class="med" id="tl-vitalita-dok" type="button" aria-pressed="false" title="Colour languages by degree of endangerment (UNESCO)" data-t-title="vitalitaDokPopis"><i class="med-obr" data-ikona="vitalita"></i><span data-t="vitalita">Vitality</span></button>
+    <button class="med maly" id="tl-zobrazeni" type="button" aria-expanded="false" aria-controls="panel-zobrazeni" title="Spin, names, sign languages and vitality" data-t-title="zobrazeniPopis"><i class="med-obr"><svg aria-hidden="true"><use href="#i-nastaveni"/></svg><b class="odznak-filtr" id="zobrazeni-pocet" hidden aria-hidden="true"></b></i><span data-t="zobrazeni">Settings</span></button>
+   </nav>
+   <div class="roh-ovladani" role="group" aria-label="Globe zoom" data-t-aria-label="zoomSkupina">
+    <button class="kolo" id="tl-cely" type="button" hidden aria-label="Whole world" title="Whole world" data-t-aria-label="celySvet" data-t-title="celySvet"><svg aria-hidden="true"><use href="#i-svet"/></svg></button>
+    <button class="kolo" id="tl-priblizi" type="button" aria-label="Zoom in" title="Zoom in" data-t-aria-label="priblizit" data-t-title="priblizit"><svg aria-hidden="true"><use href="#i-plus"/></svg></button>
+    <span class="zoom-hod" id="zoom-hod">1,0&times;</span>
+    <button class="kolo" id="tl-oddal" type="button" aria-label="Zoom out" title="Zoom out" data-t-aria-label="oddalit" data-t-title="oddalit"><svg aria-hidden="true"><use href="#i-minus"/></svg></button>
    </div>
    <div class="panel-zobrazeni sklo" id="panel-zobrazeni" hidden>
     <div id="pz-hlavni">
-     <div class="vp-hlava"><strong data-t="zobrazeni">View</strong>
+     <div class="vp-hlava"><strong data-t="zobrazeni">Settings</strong>
       <button class="zavrit" id="zobrazeni-zavrit" type="button" aria-label="Close" data-t-aria-label="zavritPanel"><svg aria-hidden="true"><use href="#i-krizek"/></svg></button></div>
      <button class="volba-radek" id="tl-otacet" type="button" aria-pressed="false" aria-labelledby="n-otacet" aria-describedby="p-otacet"><svg aria-hidden="true"><use href="#i-otacet"/></svg><span><b id="n-otacet" data-t="otacet">Spin</b> <small id="p-otacet" data-t="otacetPopis">Let the globe spin slowly by itself</small></span><i class="spinac" aria-hidden="true"></i></button>
      <button class="volba-radek" id="tl-jmena" type="button" aria-pressed="true" aria-labelledby="n-jmena" aria-describedby="p-jmena"><svg aria-hidden="true"><use href="#i-jmena"/></svg><span><b id="n-jmena" data-t="jmena">Names</b> <small id="p-jmena" data-t="jmenaPopis">Show language names next to the dots when zoomed in</small></span><i class="spinac" aria-hidden="true"></i></button>
@@ -1501,15 +1587,6 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
       <small class="volba-pozn" id="p-znakove" data-t="znakovePopis">Sign languages are the natural languages of Deaf communities, using handshape and movement, facial expression and posture. There is no single universal sign language: many countries have their own, some several, and their boundaries do not coincide with national borders.</small>
      </div>
      <button class="volba-radek dal" id="tl-vitalita" type="button" aria-expanded="false" aria-controls="vitalita-panel" aria-labelledby="n-vitalita" aria-describedby="p-vitalita"><svg aria-hidden="true"><use href="#i-vitalita"/></svg><span><b id="n-vitalita" data-t="vitalita">Vitality</b> <small id="p-vitalita" data-t="vitalitaPopis">Show languages by how endangered they are (UNESCO scale)</small></span><b class="odznak-filtr" id="vitalita-pocet" hidden aria-hidden="true"></b><svg class="sipka-dal" aria-hidden="true"><use href="#i-dal"/></svg></button>
-     <button class="volba-radek" id="tl-pismo" type="button" aria-pressed="false" aria-labelledby="n-pismo" aria-describedby="p-pismo"><svg aria-hidden="true"><use href="#i-pismo"/></svg><span><b id="n-pismo" data-t="pismoVrstva">Script</b> <small id="p-pismo" data-t="pismoRadekPopis">Dots coloured by each language's main script (Unicode CLDR)</small></span><i class="spinac" aria-hidden="true"></i></button>
-     <button class="volba-radek dal" id="tl-typologie" type="button" aria-expanded="false" aria-controls="typologie-panel" aria-labelledby="n-typologie" aria-describedby="p-typologie"><svg aria-hidden="true"><use href="#i-typologie"/></svg><span><b id="n-typologie" data-t="typologie">Typology (WALS)</b> <small id="p-typologie" data-t="typologiePopis">Maps of language features: word order, cases, tone, consonants…</small></span><b class="odznak-filtr" id="typologie-stav" hidden aria-hidden="true"></b><svg class="sipka-dal" aria-hidden="true"><use href="#i-dal"/></svg></button>
-    </div>
-    <div class="vitalita-panel typologie-panel" id="typologie-panel" hidden>
-     <div class="vp-hlava"><button class="zpet" id="typologie-zpet" type="button" aria-label="Back" data-t-aria-label="vitalitaZavrit"><svg aria-hidden="true"><use href="#i-zpet"/></svg></button><strong data-t="typologieNadpis">Language typology</strong>
-      <button class="zavrit" id="typologie-x" type="button" aria-label="Close" data-t-aria-label="zavritPanel"><svg aria-hidden="true"><use href="#i-krizek"/></svg></button></div>
-     <p class="vp-uvod" data-t="typologieUvod">After a feature is chosen, the languages on the globe take the colour of its value. The data come from the World Atlas of Language Structures (WALS), which describes a sample of languages – the other dots have no value.</p>
-     <div class="typ-seznam" id="typ-seznam"></div>
-     <p class="vp-zdroj" data-t="typologieZdroj">Dryer, Matthew S. &amp; Haspelmath, Martin (eds.) 2013. The World Atlas of Language Structures Online. Leipzig: Max Planck Institute for Evolutionary Anthropology. Licence CC BY 4.0.</p>
     </div>
     <div class="vitalita-panel" id="vitalita-panel" hidden>
      <div class="vp-hlava"><button class="zpet" id="vitalita-zavrit" type="button" aria-label="Back" data-t-aria-label="vitalitaZavrit"><svg aria-hidden="true"><use href="#i-zpet"/></svg></button><strong data-t="vitalitaNadpis">Language vitality · UNESCO scale</strong>
@@ -1583,7 +1660,8 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
      <button type="button" data-razeni="abeceda" aria-pressed="false" data-t="raditAbeceda">A–Z</button>
      <button type="button" data-razeni="svetadil" aria-pressed="false" data-t="raditSvetadil">By continent</button>
     </div>
-    <p class="pocet" id="pocet"></p>
+    <div class="pocet-radek"><p class="pocet" id="pocet"></p>
+     <button class="tl hlavni" id="tl-nahoda" type="button"><svg aria-hidden="true"><use href="#i-kostka"/></svg><span data-t="prekvap">Random language</span></button></div>
    </div>
    <div class="seznam" id="seznam"></div>
    <footer class="paticka">
@@ -1601,9 +1679,10 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
  <dialog class="o-datech kalendar" id="kalendar" aria-labelledby="kal-nadpis"></dialog>
  <dialog class="o-datech navod" id="navod" aria-labelledby="nav-nadpis"></dialog>
  <dialog class="o-datech starovek-okno" id="starovek-okno" aria-labelledby="st-nadpis"></dialog>
+ <dialog class="o-datech mapy-okno" id="mapy-okno" aria-labelledby="mapy-nadpis"></dialog>
  <dialog class="civ-okno" id="civ-okno" aria-labelledby="civ-nadpis"></dialog>
 </div>
 
-<script src="../js/atlas.fcfcdfdff8.js"></script>
+<script src="../js/atlas.945b663a62.js"></script>
 </body>
 </html>

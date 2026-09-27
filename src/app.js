@@ -12,6 +12,8 @@ const REJSTRIK = /*__REJSTRIK__*/null;
 const STAROVEK_DATA = /*__STAROVEK__*/null || {civilizace: [], foto: {}};   // stránky o civilizacích starověku (data/starovek.json)
 const VYMYSLENE = /*__VYMYSLENE__*/null; // jazyky z knih a filmů, jen v Bráně do jiných světů („mellon“)
 const PD = /*__PODROBNOSTI__*/null;   // podrobnosti k tečkám (Glottolog, WALS, PHOIBLE, UDHR, CLDR)
+const IKONY = /*__IKONY__*/null || {};     // obrázky medailonů pod glóbem (static/ikony/)
+document.querySelectorAll(".med-obr[data-ikona]").forEach(function(i){ const u = IKONY[i.dataset.ikona]; if (u) i.style.backgroundImage = "url(" + u + ")"; });
 const CESTY = /*__CESTY__*/null || [];     // cesty slov na glóbu (data/cesty-slov.json): kroky jako strom, oblouk od rodiče k jazyku
 const TYP = /*__TYPOLOGIE__*/null;      // typologické mapy: vybrané vlastnosti WALS, texty a hodnota pro každou tečku
 let T = UI[VYCHOZI];
@@ -1442,7 +1444,10 @@ let dokX = -1;
 function posunDok(){
   if (!desktop.matches) return;
   const w = $("dok").offsetWidth || 400;
-  const x = Math.round(Math.max(w / 2 + 12, Math.min(sirka - w / 2 - 12, sirka / 2 + posun)));
+  let x = Math.max(w / 2 + 12, Math.min(sirka - w / 2 - 12, sirka / 2 + posun));
+  const k = $("karta");                      /* medailony nesmí zajet pod kartu vlevo: řada se odsune doprava, jak to jde */
+  if (k && !k.hidden) x = Math.min(sirka - w / 2 - 12, Math.max(x, k.offsetLeft + k.offsetWidth + 10 + w / 2));
+  x = Math.round(x);
   if (x !== dokX) { dokX = x; scena.style.setProperty("--dok-x", x + "px"); }
 }
 /* Nápověda za otazníkem vpravo nahoře: tři kroky (zatoč, přibliž, klikni), které se odškrtávají; po všech třech zmizí.
@@ -1890,7 +1895,6 @@ function obnovOdznakZobrazeni(){
 }
 function otevriZobrazeni(otevrit){
   if (!otevrit && !panelVit.hidden) otevriVitalitu(false);
-  if (!otevrit && !panelTyp.hidden) otevriTypologii(false);
   panelZob.hidden = !otevrit;
   tlZob.setAttribute("aria-expanded", otevrit ? "true" : "false");
   obnovLegenduVitality();
@@ -1958,7 +1962,7 @@ document.addEventListener("keydown", function(e){
 });
 
 /* ---------- typologické mapy (WALS, 25. 9. 2026) ----------
-   Vlastnost z panelu Zobrazení › Typologie obarví tečky podle hodnoty ve WALS (data/typologie.json, texty a skupiny
+   Vlastnost z okna Mapy obarví tečky podle hodnoty ve WALS (data/typologie.json, texty a skupiny
    v data/typologie-popis.json). Nominální vlastnosti mají nejvýš 5 barev + „jiné“ (barva inkoustu), seřazené
    (počet pádů…) modrou stupnici o 7 krocích; obě sady prošly validátorem palet (dataviz) pro všechny dvojice na
    jednolité pevnině ve dne i v noci. Barvy nesou vždy i legendu s popisky a počty (druhotné rozlišení) a klepnutí
@@ -1995,7 +1999,7 @@ function skupinaPisma(i){
 function typVl(k){ return k === PISMO_K ? pismoVl() : TYP.vlastnosti[k]; }
 function typSkupina(v, h){ for (let c = 0; c < v.tridy.length; c++) if (v.tridy[c].wals.indexOf(h) >= 0) return c; return -1; }
 function typHodnota(v, i){ return v.h.charCodeAt(i) - 48; }          // 0 = WALS jazyk nepopisuje
-const panelTyp = $("typologie-panel"), tlTyp = $("tl-typologie"), legendaTyp = $("typ-legenda"), tlPismo = $("tl-pismo");
+const legendaTyp = $("typ-legenda"), mapyOkno = $("mapy-okno");
 function nastavTypologii(k, start){
   typVlastnost = k; typIzolace = -1; typTr = null;
   if (k >= 0) {
@@ -2007,39 +2011,68 @@ function nastavTypologii(k, start){
     nahrajTypologii();
   }
   if (!start) { try { if (k >= 0) localStorage.setItem("atlas-typologie", typVl(k).id); else localStorage.removeItem("atlas-typologie"); } catch (e) {} }
-  $("typologie-stav").hidden = k < 0 || k === PISMO_K; $("typologie-stav").textContent = k >= 0 ? typVl(k).id : "";
-  tlPismo.setAttribute("aria-pressed", k === PISMO_K ? "true" : "false");
-  postavTypologiiPanel(); obnovLegenduTypologie();
+  if (mapyOkno.open) postavMapy();
+  obnovLegenduTypologie();
   if (vybrany) { if (vybrany.typ === "atlas") ukazKartu(PODLE_ID[vybrany.id]); else if (vybrany.typ === "rejstrik") ukazKartuBodu(vybrany.i); }
   teckyZmeneny = true; potrebaKresli = true; ozivit();
 }
-function postavTypologiiPanel(){
-  const kam = $("typ-seznam"); kam.textContent = "";
-  if (typVlastnost >= 0) {
-    const vyp = prvek("button", "typ-vypnout", T.typologieVypnout); vyp.type = "button";
-    vyp.addEventListener("click", function(){ nastavTypologii(-1); });
-    kam.appendChild(vyp);
+/* ---------- okno Mapy (medailon pod glóbem): všechny barevné mapy s náhledem – písmo, vitalita a 24 vlastností WALS ----------
+   jedna barevná vrstva naráz; výběr okno zavře, aby nezakrývalo mapu (uživatel 26. 9. 2026) */
+function dlazdiceMapy(id, nazev, popis, zap, akce){
+  const b = prvek("button", "mapa-tl"); b.type = "button"; b.setAttribute("aria-pressed", zap ? "true" : "false");
+  const o = prvek("i", "mapa-obr"), u = IKONY["mapa-" + id];
+  if (u) o.style.backgroundImage = "url(" + u + ")";
+  b.appendChild(o);
+  const t = prvek("span"); t.appendChild(prvek("b", null, nazev)); t.appendChild(prvek("small", null, popis)); b.appendChild(t);
+  b.addEventListener("click", function(){
+    mapyOkno.close();
+    if (!zap) akce();
+    const f = legendaTyp.hidden ? null : legendaTyp.querySelector(".typ-jina"); if (f) f.focus({preventScroll: true});
+    nahoruKeGlobu();
+  });
+  return b;
+}
+function postavMapy(){
+  mapyOkno.textContent = "";
+  const hlava = prvek("div", "od-hlava");
+  const h = prvek("h2", null, T.medMapy); h.id = "mapy-nadpis"; hlava.appendChild(h);
+  const x = prvek("button", "zavrit"); x.type = "button"; x.setAttribute("aria-label", T.oDatech.zavrit);
+  x.innerHTML = '<svg aria-hidden="true"><use href="#i-krizek"/></svg>'; x.addEventListener("click", function(){ mapyOkno.close(); });
+  hlava.appendChild(x); mapyOkno.appendChild(hlava);
+  const telo = prvek("div", "od-telo");
+  telo.appendChild(prvek("p", "od-uvod", T.mapyUvod));
+  if (typVlastnost >= 0 || vitalitaZap) {
+    const vyp = prvek("button", "typ-vypnout", T.mapyVypnout); vyp.type = "button";
+    vyp.addEventListener("click", function(){ nastavTypologii(-1); nastavBarvyVitality(false); postavMapy(); mapyOkno.querySelector(".mapa-tl").focus(); });
+    telo.appendChild(vyp);
   }
+  telo.appendChild(prvek("h3", "mapy-oblast", T.mapyPrehled));
+  let m = prvek("div", "mapy-mriz");
+  m.appendChild(dlazdiceMapy("pismo", T.pismoVrstva, T.mapyPismoPopis, typVlastnost === PISMO_K, function(){ nastavTypologii(PISMO_K); }));
+  m.appendChild(dlazdiceMapy("vitalita", T.vitalita, T.mapyVitalitaPopis, vitalitaZap, function(){ nastavBarvyVitality(true); }));
+  telo.appendChild(m);
   Object.keys(TYP.oblasti).forEach(function(o){
-    kam.appendChild(prvek("p", "volba-nadpis typ-oblast", TYP.oblasti[o][T.lang]));
-    const ul = prvek("ul", "typ-vlastnosti");
+    telo.appendChild(prvek("h3", "mapy-oblast", TYP.oblasti[o][T.lang] + " · WALS"));
+    m = prvek("div", "mapy-mriz");
     TYP.vlastnosti.forEach(function(v, k){
       if (v.oblast !== o) return;
-      const li = prvek("li"), b = prvek("button");
-      b.type = "button"; b.setAttribute("aria-pressed", k === typVlastnost ? "true" : "false");
-      b.appendChild(prvek("span", "typ-jm", v.nazev[T.lang]));
-      b.appendChild(prvek("span", "pocet-st", cislo(v.pocet)));
+      const b = dlazdiceMapy(v.id, v.nazev[T.lang], cislo(v.pocet) + " " + tvar(v.pocet, T.jazyk), k === typVlastnost, function(){ nastavTypologii(k); });
       b.title = t("typologieJazykuWals", {n: cislo(v.pocet) + " " + tvar(v.pocet, T.jazyk)});
-      b.addEventListener("click", function(){
-        const zap = k !== typVlastnost;
-        nastavTypologii(zap ? k : -1);
-        if (zap) { otevriTypologii(false); otevriZobrazeni(false); legendaTyp.querySelector(".typ-jina").focus({preventScroll: true}); nahoruKeGlobu(); }   // seznam nesmí zakrývat mapu (uživatel 26. 9. 2026)
-      });
-      li.appendChild(b); ul.appendChild(li);
+      m.appendChild(b);
     });
-    kam.appendChild(ul);
+    telo.appendChild(m);
   });
+  telo.appendChild(prvek("p", "vp-zdroj", T.typologieZdroj));
+  mapyOkno.appendChild(telo);
 }
+function otevriMapy(){
+  if (!panelZob.hidden) otevriZobrazeni(false);
+  postavMapy();
+  if (mapyOkno.showModal) { if (!mapyOkno.open) mapyOkno.showModal(); } else mapyOkno.setAttribute("open", "");
+  const b = mapyOkno.querySelector('.mapa-tl[aria-pressed="true"]'); if (b) b.focus();
+}
+$("tl-mapy").addEventListener("click", otevriMapy);
+mapyOkno.addEventListener("click", function(e){ if (e.target === mapyOkno) mapyOkno.close(); });
 function obnovLegenduTypologie(){
   legendaTyp.hidden = typVlastnost < 0;
   scena.classList.toggle("s-typologii", typVlastnost >= 0);
@@ -2054,8 +2087,8 @@ function obnovLegenduTypologie(){
   x.innerHTML = '<svg aria-hidden="true"><use href="#i-krizek"/></svg>'; x.addEventListener("click", function(){ nastavTypologii(-1); });
   hl.appendChild(x); legendaTyp.appendChild(hl);
   const jina = prvek("button", "typ-jina", T.typologieJina); jina.type = "button";
-  jina.addEventListener("click", function(){ otevriTypologii(true); });
-  if (!jePismo) legendaTyp.appendChild(jina);
+  jina.addEventListener("click", otevriMapy);
+  legendaTyp.appendChild(jina);
   const det = prvek("details", "typ-leg-popis"); det.appendChild(prvek("summary", null, jePismo ? T.pismoOMape : T.typologieOPopisu));
   det.appendChild(prvek("p", null, v.popis[T.lang])); legendaTyp.appendChild(det);
   const ul = prvek("ul", "typ-leg-hodnoty");
@@ -2079,23 +2112,8 @@ function obnovLegenduTypologie(){
   a.href = jePismo ? "https://cldr.unicode.org/" : "https://wals.info/feature/" + v.id; a.target = "_blank"; a.rel = "noopener"; zdroj.appendChild(a);
   legendaTyp.appendChild(zdroj);
 }
-function otevriTypologii(otevrit){
-  if (otevrit) { panelZob.hidden = false; tlZob.setAttribute("aria-expanded", "true"); if (!panelVit.hidden) otevriVitalitu(false); }
-  panelTyp.hidden = !otevrit; pzHlavni.hidden = !!otevrit;
-  tlTyp.setAttribute("aria-expanded", otevrit ? "true" : "false");
-  if (otevrit) { postavTypologiiPanel(); const b = panelTyp.querySelector('[aria-pressed="true"]') || panelTyp.querySelector(".typ-vlastnosti button"); if (b) b.focus({preventScroll: false}); }
-}
 /* na telefonu je panel Zobrazení pod lištou; po výběru mapy se stránka vrátí nahoru ke glóbu, aby byla mapa vidět */
 function nahoruKeGlobu(){ if (!desktop.matches && window.scrollY > 40) window.scrollTo({top: 0, behavior: bezPohybu.matches ? "auto" : "smooth"}); }
-tlTyp.addEventListener("click", function(){ otevriTypologii(panelTyp.hidden); });
-tlPismo.addEventListener("click", function(){
-  const zap = typVlastnost !== PISMO_K;
-  nastavTypologii(zap ? PISMO_K : -1);
-  if (zap) { otevriZobrazeni(false); const x = legendaTyp.querySelector(".zavrit"); if (x) x.focus({preventScroll: true}); nahoruKeGlobu(); }
-});
-$("typologie-zpet").addEventListener("click", function(){ otevriTypologii(false); tlTyp.focus(); });
-$("typologie-x").addEventListener("click", function(){ otevriTypologii(false); otevriZobrazeni(false); tlZob.focus(); });
-document.addEventListener("keydown", function(e){ if (e.key === "Escape" && !panelTyp.hidden) otevriTypologii(false); });
 /* typologie na kartě jazyka: všechny vlastnosti, které WALS u jazyka popisuje, vybraná vlastnost zvýrazněná */
 function oddilTypologie(i){
   if (!(i >= 0)) return null;
@@ -2917,7 +2935,7 @@ function obnovTexty(){
   if (cesta) { cesta.kroky.forEach(function(x){ x.jazyk = nazevKroku(x.k); }); postavCestaPanel(); }
   if (brana) { postavBranu(); if (vymysleny) ukazVymysleny(vymysleny); }
   if (typVlastnost >= 0) obnovLegenduTypologie();
-  if (!panelTyp.hidden) postavTypologiiPanel();
+  if (mapyOkno.open) postavMapy();
 }
 function prepniJazyk(lang){
   T = UI[lang]; STATY = STATY_VSE[lang];
@@ -3352,7 +3370,8 @@ var strom = (function(){   // var: filtry a texty se na něj ptají dřív, než
     platnoS.hidden = !zapnuto; $("strom-hlava").hidden = !zapnuto; $("strom-napoveda").hidden = !zapnuto;
     const tl = $("tl-strom");
     tl.setAttribute("aria-pressed", zapnuto ? "true" : "false");
-    tl.querySelector("use").setAttribute("href", zapnuto ? "#i-svet" : "#i-strom");
+    const obr = tl.querySelector(".med-obr"), ik = IKONY[zapnuto ? "mapy" : "rodokmen"];   // medailon: v rodokmenu ukazuje glóbus a vede zpět
+    if (obr && ik) obr.style.backgroundImage = "url(" + ik + ")";
     const popisek = tl.querySelector("span"); popisek.dataset.t = zapnuto ? "globus" : "rodokmen"; popisek.textContent = zapnuto ? T.globus : T.rodokmen;
     if (!zapnuto) { if (globusOk && ctx) { potrebaKresli = true; teckyZmeneny = true; popiskyZmeneny = true; ozivit(); } return; }
     const vl = vybranyList(), i = vybrany ? (vybrany.typ === "atlas" ? BOD_ATLASU[vybrany.id] : vybrany.i) : -1;

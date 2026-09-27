@@ -105,7 +105,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
 #strom{z-index:4; touch-action:none; cursor:grab}
 #strom.tahne{cursor:grabbing}
 .scena.rezim-strom :is(#podklad,#gl,#popisky,#globus,.hud,.napoveda,.tl-napoveda,.ukazatel,.zoom-ovl,#tl-cely,.zeme-okno,.bublina-bod){display:none !important}
-#tl-strom[aria-pressed="true"]{background:var(--cyan-slabe); color:var(--aktivni-text)}
+#tl-strom:not(.med)[aria-pressed="true"]{background:var(--cyan-slabe); color:var(--aktivni-text)}
 .strom-hlava{position:absolute; z-index:5; top:14px; right:16px; display:flex; align-items:center; gap:6px; padding:5px; border-radius:999px; max-width:calc(100% - 32px)}
 .strom-hlava label{display:flex; align-items:center; gap:8px; min-width:0; padding-left:8px; font-size:.78rem; font-weight:600; color:var(--text2)}
 .strom-hlava svg{width:17px; height:17px; flex:none; color:var(--cyan)}
@@ -869,7 +869,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 .pat-det .zdroje{border-top:1px solid var(--linka)}
 @media (prefers-reduced-motion:reduce){ .pat-det > summary .pat-sipka{transition:none} }
 /* tlačítko „Vitalita“ v liště a vysvětlivka stupňů, jen když jsou barvy zapnuté */
-#tl-vitalita-dok[aria-pressed="true"]{background:var(--cyan-slabe); color:var(--aktivni-text)}
+#tl-vitalita-dok:not(.med)[aria-pressed="true"]{background:var(--cyan-slabe); color:var(--aktivni-text)}
 .vit-legenda{position:absolute; z-index:6; bottom:80px; left:var(--dok-x,50%); transform:translateX(-50%); border-radius:999px; padding:3px; max-width:calc(100% - 24px)}
 .vit-legenda[hidden]{display:none}
 .vit-legenda > button{display:flex; align-items:center; flex-wrap:wrap; justify-content:center; gap:5px 10px; padding:6px 14px; border:0; border-radius:999px;
@@ -1010,7 +1010,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 :root[data-theme="light"]{--typ-1:#0064b5; --typ-2:#d0126f; --typ-3:#02b827; --typ-4:#887311; --typ-5:#ad74ff; --typ-jine:#1a1a1a; --typ-nic:#b9bec8;
   --typ-r0:#6ea1e2; --typ-r1:#588cce; --typ-r2:#4278bb; --typ-r3:#2b64a8; --typ-r4:#115096; --typ-r5:#003c83; --typ-r6:#002871}
 .typ-bod{display:inline-block; width:11px; height:11px; border-radius:50%; flex:none; box-shadow:0 0 0 1.5px var(--sklo2)}
-/* seznam vlastností v panelu Zobrazení › Typologie */
+/* seznam vlastností v (dřív panel Zobrazení › Typologie; styly .typ-vypnout používá okno Mapy) */
 .vp-uvod{margin:0 4px 8px; font-size:.8rem; line-height:1.45; color:var(--text2)}
 .typ-oblast{margin:12px 4px 4px}
 .typ-vlastnosti{list-style:none; margin:0; padding:0}
@@ -1082,3 +1082,89 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 .cesta-dalsi .cesta-pribeh{background:transparent}
 @media (prefers-reduced-motion: reduce){ .cesta-kroky li{animation:none} }
 @media (max-width:920px){ .cesta-panel{position:relative; top:auto; left:auto; right:auto; width:auto; max-height:none; margin:4px 12px 12px} .cesta-panel .eu-text p{display:block} }
+
+/* ==============================================================================================
+   MEDAILONY POD GLÓBEM (27. 9. 2026, uživatel vybral variantu „medailony s rámem“ v řadě pod glóbem)
+   Místo lišty: Jazyky starověku, Příběhy jazyků, Rodokmen, Mapy, Vitalita (akvarely ve static/ikony/) a menší Nastavení.
+   Rám je ve dne porcelánově papírový, v noci tmavý; každé tlačítko má trvalý popisek. Náhodný jazyk je v panelu
+   seznamu vedle počtu jazyků, zoom a Celý svět nenápadně v pravém horním rohu pod otazníkem.
+   ===================================================================================================== */
+:root{--med-ram1:#3A4058; --med-ram2:rgba(0,0,0,.55); --med-stin:rgba(0,0,0,.7); --med-papir:#2A3048; --med-papir2:#1A1E30; --med-lesk:rgba(255,255,255,.28)}
+:root[data-theme="light"]{--med-ram1:#ECE5D5; --med-ram2:rgba(120,100,70,.42); --med-stin:rgba(50,38,20,.42); --med-papir:#FBF8F0; --med-papir2:#E4DCCB; --med-lesk:rgba(255,255,255,.8)}
+.dok.medailony{background:none; border:0; border-radius:0; box-shadow:none; padding:0; backdrop-filter:none; -webkit-backdrop-filter:none;
+  bottom:12px; gap:14px; align-items:flex-start; white-space:normal}
+/* jemný podklad pod řadou, aby přes medailony neprosvítala jména jazyků z přiblíženého glóbu */
+.dok.medailony::before{content:""; position:absolute; z-index:-1; left:-26px; right:-26px; top:-6px; bottom:-10px; border-radius:60px;
+  background:var(--sklo, rgba(251,249,244,.8)); filter:blur(14px); opacity:.85; pointer-events:none}
+:root[data-theme="light"] .dok.medailony::before{background:rgba(251,249,244,.9)}
+.med{display:flex; flex-direction:column; align-items:center; gap:9px; width:88px; padding:6px 0 0; border:0; background:none;
+  font:inherit; color:var(--text); cursor:pointer; -webkit-tap-highlight-color:transparent}
+.med[hidden]{display:none}
+.med span{font-size:12px; font-weight:600; line-height:1.15; text-align:center; color:var(--text2); transition:color .2s}
+.med-obr{position:relative; display:grid; place-items:center; width:68px; height:68px; border-radius:50%; font-style:normal;
+  background:var(--med-papir) center / cover no-repeat;
+  box-shadow:0 0 0 5px var(--med-ram1), 0 0 0 6px var(--med-ram2), 0 10px 18px -6px var(--med-stin), inset 0 2px 5px rgba(0,0,0,.32);
+  transition:transform .25s cubic-bezier(.2,.9,.3,1.3), box-shadow .25s}
+.med-obr::before{content:""; position:absolute; inset:-6px; border-radius:50%; pointer-events:none;
+  background:linear-gradient(160deg, var(--med-lesk), rgba(255,255,255,0) 36%, rgba(0,0,0,0) 64%, rgba(0,0,0,.22));
+  -webkit-mask:radial-gradient(circle, transparent 33.5px, #000 34.5px); mask:radial-gradient(circle, transparent 33.5px, #000 34.5px)}
+.med:hover .med-obr{transform:translateY(-3px); box-shadow:0 0 0 5px var(--med-ram1), 0 0 0 6px var(--med-ram2), 0 16px 22px -8px var(--med-stin), inset 0 2px 5px rgba(0,0,0,.32)}
+.med:hover span, .med[aria-pressed="true"] span, .med[aria-expanded="true"] span{color:var(--text)}
+.med:focus-visible{outline:none}
+.med:focus-visible .med-obr{outline:3px solid var(--cyan); outline-offset:8px}
+.med:is([aria-pressed="true"],[aria-expanded="true"]) .med-obr{box-shadow:0 0 0 5px var(--akcent), 0 0 0 6px var(--med-ram2), 0 10px 18px -6px var(--med-stin), inset 0 2px 5px rgba(0,0,0,.32)}
+.med.maly .med-obr{width:50px; height:50px; margin-top:9px; margin-bottom:9px; color:var(--text); background:linear-gradient(160deg, var(--med-papir), var(--med-papir2))}
+.med.maly .med-obr::before{-webkit-mask:radial-gradient(circle, transparent 24.5px, #000 25.5px); mask:radial-gradient(circle, transparent 24.5px, #000 25.5px)}
+.med.maly svg{width:22px; height:22px}
+.med .odznak-filtr{position:absolute; top:-8px; right:-8px}
+@media (prefers-reduced-motion: reduce){ .med-obr{transition:none} .med:hover .med-obr{transform:none} }
+/* panely a vysvětlivky nad řadou medailonů */
+.panel-zobrazeni{bottom:128px}
+.vit-legenda{bottom:128px}
+.typ-legenda{bottom:128px}
+/* zoom a Celý svět: nenápadně v pravém horním rohu, bez podkladu */
+.roh-ovladani{position:absolute; z-index:6; top:58px; right:17px; display:flex; flex-direction:column; align-items:center; gap:0}
+.roh-ovladani .kolo{width:34px; height:34px; border:0; background:transparent; box-shadow:none; color:var(--text2); opacity:.85}
+.roh-ovladani .kolo:hover{opacity:1; color:var(--text); background:var(--plocha2)}
+.roh-ovladani .kolo svg{width:15px; height:15px}
+.roh-ovladani #tl-cely svg{width:18px; height:18px}
+.roh-ovladani .zoom-hod{font-family:var(--pismo-data); font-size:10.5px; color:var(--text3); padding:1px 0}
+.scena:is(.rezim-cesta,.rezim-eu,.rezim-brana) .roh-ovladani{display:none}
+/* Náhodný jazyk v panelu seznamu, vedle počtu jazyků */
+.pocet-radek{display:flex; align-items:center; justify-content:space-between; gap:10px}
+.pocet-radek #tl-nahoda{flex:none; padding:7px 14px 7px 11px; min-height:0; font-size:13px; gap:7px; border-radius:999px}
+.pocet-radek #tl-nahoda svg{width:17px; height:17px}
+@media (max-width:920px){
+  .dok.medailony::before{display:none}
+  .dok.medailony{position:relative; left:auto; bottom:auto; transform:none; display:grid; grid-template-columns:repeat(3, 96px); justify-content:center;
+    gap:12px 16px; margin:10px auto 18px; max-width:none}
+  .med{width:96px}
+  .med-obr{width:58px; height:58px}
+  .med-obr::before{-webkit-mask:radial-gradient(circle, transparent 28.5px, #000 29.5px); mask:radial-gradient(circle, transparent 28.5px, #000 29.5px)}
+  .med.maly .med-obr{width:46px; height:46px; margin:6px 0}
+  .med.maly .med-obr::before{-webkit-mask:radial-gradient(circle, transparent 22.5px, #000 23.5px); mask:radial-gradient(circle, transparent 22.5px, #000 23.5px)}
+  .panel-zobrazeni, .vit-legenda, .typ-legenda{bottom:auto}
+  .roh-ovladani{top:52px; right:10px}
+  .roh-ovladani :is(#tl-priblizi,#tl-oddal,.zoom-hod){display:none}      /* na telefonu se přibližuje dvěma prsty */
+}
+
+/* ---------- okno Mapy: barevné mapy s kulatým náhledem (medailon Mapy pod glóbem) ---------- */
+.mapy-okno{width:min(760px, calc(100vw - 32px))}
+.mapy-okno .od-telo{padding-bottom:18px}
+.mapy-okno .typ-vypnout{margin:2px 0 6px}
+.mapy-okno .od-telo h3.mapy-oblast{display:flex; align-items:center; gap:10px; margin:18px 4px 8px; font-family:var(--pismo-text); font-size:.72rem; font-weight:700;
+  line-height:1.2; letter-spacing:.1em; text-transform:uppercase; color:var(--text3)}
+.mapy-oblast::after{content:""; flex:1; height:1px; background:var(--linka)}
+.mapy-mriz{display:grid; grid-template-columns:repeat(auto-fill, minmax(210px, 1fr)); gap:4px 10px}
+.mapa-tl{display:flex; align-items:center; gap:12px; width:100%; padding:7px 8px; border:0; border-radius:12px; background:transparent;
+  color:var(--text); text-align:left; font:inherit; cursor:pointer}
+.mapa-tl:hover{background:var(--cyan-slabe)}
+.mapa-tl:focus-visible{outline:3px solid var(--cyan); outline-offset:1px}
+.mapa-obr{flex:none; width:52px; height:52px; border-radius:50%; background:var(--med-papir) center/cover no-repeat;
+  box-shadow:0 0 0 3px var(--med-ram1), 0 0 0 4px var(--med-ram2), 0 6px 10px -5px var(--med-stin)}
+.mapa-tl[aria-pressed="true"] .mapa-obr{box-shadow:0 0 0 3px var(--akcent), 0 0 0 4px var(--med-ram2), 0 6px 10px -5px var(--med-stin)}
+.mapa-tl span{display:flex; flex-direction:column; gap:2px; min-width:0}
+.mapa-tl b{font-size:.9rem; font-weight:600; line-height:1.25}
+.mapa-tl[aria-pressed="true"] b{color:var(--akcent)}
+.mapa-tl small{font-size:.75rem; line-height:1.3; color:var(--text3)}
+@media (max-width: 520px){ .mapy-mriz{grid-template-columns:1fr 1fr; gap:2px 4px} .mapa-tl{gap:8px; padding:6px 4px} .mapa-obr{width:44px; height:44px} .mapa-tl b{font-size:.84rem} }

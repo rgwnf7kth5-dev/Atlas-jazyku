@@ -93,14 +93,12 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a živý web workflow Diag
   probouzený **zeleně** (fialová splývala s modrou při deuteranopii), bez údaje světle/tmavě šedě. Sousední dvojice
   v legendě prošly kontrolou CVD. `--vit-0`…`--vit-6`, `--vit-nic`. Neměnit bez nového ověření.
   Vitalita je na kartě tečky i na kartě jazyka z atlasu (`oddilVitality`).
-  **Tlačítko „Vitalita“ v liště** (25. 9. 2026, návrh schválený uživatelem místo barev vitality rovnou po otevření):
-  zapne barvy vitality natrvalo (`vitalitaZap`, pamatuje se `atlas-barvy-vitality`) a nad lištou ukáže vysvětlivku
+  **Medailon „Vitalita“ pod glóbem** (dřív tlačítko v liště, 25. 9. 2026, návrh schválený uživatelem místo barev vitality rovnou po otevření):
+  zapne barvy vitality natrvalo (`vitalitaZap`, pamatuje se `atlas-barvy-vitality`) a nad medailony ukáže vysvětlivku
   stupňů `#vit-legenda` (bezpečný → vymřelý, probouzený, bez údaje) – jen dokud jsou barvy zapnuté, jinak žádná
   vysvětlivka na glóbu (to uživatel nechce). Klepnutí na vysvětlivku otevře stupně (filtr). Podstránka otevřená z vysvětlivky
   se zavře šipkou zpět i křížkem rovnou celá (`vitalitaZLegendy`); křížek `#vitalita-x` je v podstránce vždy. Barvy rovnou po otevření
   nedoporučeno: bez vysvětlivky nic neříkají, pevnina přijde o reliéf, noc o třpyt a oranžové území by splývalo.
-  Lišta s tlačítkem Vitalita je širší: do 700 px a v užší scéně na počítači (`@container scena`, do 820 px) má
-  tlačítka jen ikony, do 480 px schovává i + a − (zoom dvěma prsty).
 - **Odkaz na jazyk**: `#cs` (id jazyka z atlasu) nebo `#corn1251` (glottocode tečky, build ho dává do `REJSTRIK.g`).
   Výběr zapíše adresu (`history.replaceState`), otevření odkazu jazyk vybere; když ho schovává filtr, filtry se zruší.
   Tlačítko s řetízkem na kartě odkaz zkopíruje (v artefaktu je skryté).
@@ -131,10 +129,26 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a živý web workflow Diag
 
 ## Rozhraní (grafické vylepšení 23. 9. 2026, uživatel schválil všech 7 bodů)
 
-- **Lišta dole na glóbu** (`.dok`): Náhodný jazyk (hlavní tlačítko), Celý svět (jen když je něco vybrané), zoom
-  a „Zobrazení“. Pod tím je **panel Zobrazení** (`#panel-zobrazeni`): otáčení, jména, znakové jazyky a řádek
-  Vitalita, který otevře podstránku se stupni (šipka Zpět, Escape zavře napřed ji, pak panel). Odznak na
-  tlačítku Zobrazení ukazuje počet zapnutých filtrů. Vpravo nahoře je jen otazník s nápovědou.
+- **Medailony pod glóbem** (27. 9. 2026, uživatel vybral variantu „B, medailony s rámem, pod glóbem, nová ikonka
+  Mapy OK, na telefonu Náhodný jazyk v panelu“): `<nav class="dok medailony">` se šesti kulatými tlačítky `.med`
+  s obrázkem v rámu s bezelem (`.med-obr`, proměnné `--med-*` pro den i noc): **Jazyky starověku, Příběhy jazyků,
+  Rodokmen, Mapy, Vitalita** a menší **Nastavení** (ozubené kolečko). Obrázky jsou `static/ikony/<klic>.jpg`
+  (akvarely z `scripts/ikony.mjs`; `mapy.jpg` je snímek glóbu), build je vkládá jako `IKONY` (v artefaktu data:).
+  Řada se drží vpravo od otevřené karty (`posunDok`), pod ní je rozmazaný podklad, aby jí neprosvítala jména teček.
+  Na telefonu jsou medailony pod glóbem ve dvou řadách po třech. Ikony chrámu a knihy v záhlaví zmizely.
+  **Náhodný jazyk** je malé červené tlačítko v záhlaví seznamu vedle počtu jazyků (`.pocet-radek`), na počítači
+  i telefonu. **Zoom a Celý svět** jsou nenápadně vpravo nahoře na glóbu pod otazníkem, bez pilulky (`.roh-ovladani`);
+  na telefonu jen Celý svět (zoom dvěma prsty). Uživatel: „+ − nechat nenápadně někde v rohu bez pilulky“.
+  **Panel Nastavení** (dřív „Zobrazení“, `#panel-zobrazeni`): otáčení, jména, znakové jazyky a řádek Vitalita, který
+  otevře podstránku se stupni (filtr; šipka Zpět, Escape zavře napřed ji, pak panel). Odznak na tlačítku ukazuje
+  počet zapnutých filtrů. **Barevné mapy v Nastavení nejsou** – jsou v okně Mapy.
+- **Okno Mapy** (`<dialog id="mapy-okno">`, `postavMapy`, `otevriMapy`): všechny barevné mapy s kulatým náhledem –
+  Písmo, Vitalita a 24 vlastností WALS po oblastech, zapnutá mapa má červený rám a nahoře „Vypnout barevnou mapu“.
+  Výběr okno zavře (mapa nesmí být zakrytá). Tlačítko „Jiná mapa…“ v legendě typologie i písma okno otevře znovu.
+  Náhledy jsou `static/mapy/<id>.jpg` (160 px, snímky glóbu v úzkém okně, aby byly tečky vidět), vyrábí je
+  `scripts/mapy-nahledy.mjs` – po změně vzhledu glóbu nebo palet map spustit znovu. Build je přidává do `IKONY`
+  jako `mapa-<id>`; edge funkce pouští `/mapy/*` na obou doménách. Plánováno dál: **samostatná stránka Vitalita**
+  z medailonu (počty podle stupňů UNESCO, nejohroženější, probouzené jazyky, metodika).
 - **Karta jako pohlednice**: nahoře „hero“ v barvě rodiny (u teček bez atlasu azurová) s velkým pozdravem,
   pod ním štítky (mluvčích, rodina, vitalita) a záložky (atlas: Zajímavost / Vitalita / Příbuzní;
   tečka: Přehled / Jak funguje / Příbuzní). Při výběru nového jazyka karta vjede (`vjezd`).
@@ -194,7 +208,7 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a živý web workflow Diag
   „Klikni na mě!“ po chvíli překážely a web působil nedodělaně, **sám se nápověda neotevírá a žádná trvalá
   instrukce na glóbus nepatří**. Stejně zmizely **navždy** rámeček legendy vpravo nahoře („Každé světélko je
   jeden ze 7 967 jazyků světa“) a podtitul pod „Atlas jazyků“ v záhlaví – byly zdvojené a zbytečné. Nevracet.
-- **Rodokmen** (tlačítko v liště, 24. 9. 2026): místo glóbu se na plátně `#strom` ukáže strom jedné rodiny
+- **Rodokmen** (medailon pod glóbem, dřív tlačítko v liště, 24. 9. 2026): místo glóbu se na plátně `#strom` ukáže strom jedné rodiny
   z Glottologu (`PD.nad`, `PD.uzly`) jako **plochý vějíř**: kořen (společný předek) dole uprostřed, větve se
   rozbíhají nahoru do půlkruhu, vzdálenost od kořene = hloubka ve stromu, úhel = pořadí listů. Hrany jsou lomené
   (oblouk rodiče + paprsek), tloušťka větve roste s počtem jazyků pod ní. Jazyk je o krok za svou větví.
@@ -224,7 +238,7 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a živý web workflow Diag
   (mluvčí, vitalita, společné státy). Rodokmen ukáže obě cesty a přiblíží společného předka.
   Druhý jazyk má fialovou, když je ze stejné barevné skupiny jako první. Odkaz `#cs~ar`. Nic se nedomýšlí:
   výpůjčky slov ani podobnost slovní zásoby v datech nemáme, proto je srovnání neukazuje.
-- **Typologické mapy (WALS)** (25. 9. 2026, první funkce nového „vážného“ směru): Zobrazení › **Typologie (WALS)**
+- **Typologické mapy (WALS)** (25. 9. 2026, první funkce nového „vážného“ směru): okno **Mapy**
   nabídne 24 vlastností v pěti oblastech (fonologie, morfologie, slovosled, větná stavba, slovní zásoba). Výběr, odborné
   texty cs/en (název, popis, přesné hodnoty WALS a skupiny pro barvy) jsou ručně v `data/typologie-popis.json`; hodnoty
   pro každou tečku vyrábí `node scripts/typologie.mjs` → `data/typologie.json` (znak na tečku, 0 = bez údaje; nářečí
@@ -235,8 +249,8 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a živý web workflow Diag
   Tečky se barví stejnou cestou jako vitalita (`barvit()`, `barvyVrstvy()`, `hodnotaVrstvy()`, buffer `glJaz.typ`);
   jedna barevná vrstva naráz, otevřené stupně vitality mají přednost (`typZobrazena`). Paleta `--typ-1…5`, `--typ-jine`
   (barva inkoustu), `--typ-nic`, stupnice `--typ-r0…r6` na konci `styles.css` – ověřená pro všechny dvojice (mapa!),
-  pořadí neměnit. Legenda vpravo dole (na telefonu pod lištou) s popisky, počty, popisem a odkazem na kapitolu WALS;
-  klepnutí na hodnotu ji zvýrazní (`typIzolace`). Výběr vlastnosti panel Zobrazení zavře, aby seznam nezakrýval mapu (uživatel 26. 9. 2026); jinou vlastnost otevře tlačítko „Jiná vlastnost…“ v legendě. Tečky bez údaje jsou jen slabě vidět (průhlednost 0,3). Volba se pamatuje (`atlas-typologie`). Karta tečky i jazyka z atlasu
+  pořadí neměnit. Legenda vpravo dole (na telefonu pod medailony) s popisky, počty, popisem a odkazem na kapitolu WALS;
+  klepnutí na hodnotu ji zvýrazní (`typIzolace`). Výběr vlastnosti okno zavře, aby nezakrývalo mapu (uživatel 26. 9. 2026); jinou mapu otevře tlačítko „Jiná mapa…“ v legendě. Tečky bez údaje jsou jen slabě vidět (průhlednost 0,3). Volba se pamatuje (`atlas-typologie`). Karta tečky i jazyka z atlasu
   má záložku **Stavba** (`oddilTypologie`) s přesnými hodnotami; název vlastnosti ji ukáže na mapě. Srovnání dvou jazyků
   bere stavbu také z `TYP`. Dřívější dětské texty WALS (`T.wals`, „Pes kost hryže“) jsou pryč; `r[5]` v podrobnostech
   se už nepoužívá.
@@ -332,7 +346,7 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a živý web workflow Diag
   / `#about-data`; texty `oDatech` v `src/ui/*.json` (oddíly, verze dat, licence), data stažení dosadí build
   (`VERZE`). Stejný text je na statické stránce. Údaje v něm musí odpovídat `data/ZDROJE.md`.
 - **Podrobný návod** (přání uživatele 25. 9. 2026): okno `#navod` (texty `navod` v `src/ui/*.json`: glóbus, karta,
-  seznam, lišta, srovnání, klávesnice, další; tajemství jen naznačit, hesla neprozrazovat), odkaz v patičce „O atlasu…“
+  seznam, medailony, srovnání, klávesnice, další; tajemství jen naznačit, hesla neprozrazovat), odkaz v patičce „O atlasu…“
   a jako **čtvrtý řádek nápovědy pod otazníkem** – není to krok: nápověda zmizí po třech krocích jako dřív
   (`li[data-krok]`). Návod má i oddíl o sbalené patičce (kalendář, O datech, Jazyky s pozdravem, kontakt, zdroje) – při změně patičky ho upravit. Odkaz `#navod` / `#guide`, statická stránka `/navod/` a `/en/guide/`. Při změně ovládání návod upravit.
 - **Seznam z klávesnice**: do seznamu se vstoupí jedním Tabem (jedna dlaždice má `tabindex=0`), šipky
@@ -356,7 +370,7 @@ hindština latinkou) nebo `scriptMetadata` jako vyřazená (Shawova abeceda), se
 Zobrazuje se na kartě jazyka (Zajímavost / Přehled), ve srovnání (písmo) a na statických stránkách jazyků. Návod
 a O datech to popisují; při změně upravit obojí.
 
-**Mapa písem** (26. 9. 2026, podnět z hodnocení webu, uživatel vybral): přepínač Zobrazení › **Písmo** (`#tl-pismo`) obarví
+**Mapa písem** (26. 9. 2026, podnět z hodnocení webu, uživatel vybral): mapa **Písmo** v okně Mapy obarví
 tečky podle hlavního písma: latinka, cyrilice, arabské, bráhmská písma, čínské znaky s kanou a bopomofem, ostatní (paleta
 typologie `--typ-1…5`, `--typ-jine` – ověřená pro všechny dvojice, neměnit pořadí). Jede stejnou cestou jako typologie:
 `PISMO_K` je index za koncem `TYP.vlastnosti` a `typVl(k)` vrací pro něj `pismoVl()`, takže se neobjeví v seznamu vlastností
@@ -374,14 +388,14 @@ u každého pushe.
 ## Jazyky starověku: stránky o civilizacích (od 26. 9. 2026)
 
 Nápad uživatele: „pro starověké jazyky extra stránky o té které civilizaci zaměřené na řeč a písmo, plovoucí nad
-glóbem, jako stránka moderní ilustrované encyklopedie; hodně ilustrací, zajímavý text, fotky“. Vstupy: **ikona chrámu v záhlaví**
-(vedle přepínače jazyka; uživatel 26. 9. 2026: „schovat do menu, ikona v rohu“) otevře nabídku `#starovek-okno`
+glóbem, jako stránka moderní ilustrované encyklopedie; hodně ilustrací, zajímavý text, fotky“. Vstupy: **medailon Jazyky starověku pod glóbem**
+(`#tl-starovek`; do 27. 9. 2026 ikona chrámu v záhlaví) otevře nabídku `#starovek-okno`
 (i odkaz `#starovek` / `#ancient`); dlaždice v seznamu jazyků se ukáže jen při hledání (sedí-li na `hledat`); tlačítko na
 kartě tečky jazyka civilizace (`tecky` v datech) a odkaz `#chetite` / `#hittites`. Vzorová stránka: **Chetité**
 (uživatel vybral ze dvou návrhů, Chetité vs. Egypt), 26. 9. 2026 pak **Starověký Egypt** („pokračuj egyptem“;
 adresa `#egypt`, `/starovek/egypt/`, `/en/ancient/egypt/`). Dlaždice řadí civilizace chronologicky (pořadí
 v `data/starovek.json`). Tentýž den přibyly **Sumer a Akkad** (`#sumer-a-akkad`, id `mezopotamie`) a **Féničané**
-(`#fenicane` / `#phoenicians`); ikona chrámu v záhlaví má bublinu s vysvětlením při najetí myší (uživatel: „na tu
+(`#fenicane` / `#phoenicians`); ikona chrámu v záhlaví měla bublinu s vysvětlením při najetí myší (od 27. 9. 2026 medailon s popiskem a `title`) (uživatel: „na tu
 ikonu mouseover, o co jde“). V okně civilizace je vlevo nahoře „‹ Jazyky starověku“ zpět do výběru a na konci
 rozcestník ostatních civilizací (uživatel: „nedostanu se zpátky na výběr civilizací“); web má rozcestník `/starovek/`
 a `/en/ancient/`. Na přání uživatele („ano, Řecko, Mayové …“) přibyly **Starověké Řecko** (`#recko` / `#greece`: lineární
@@ -419,8 +433,8 @@ z 16. st.; nejstarší nápis na českém území není runový (římské cihly
 
 **Příběhy jazyků** (26. 9. 2026, podněty z hodnocení webu, uživatel vybral „všechny čtyři“): druhá sekce ve stejné
 šabloně. Stránky jsou v `data/starovek.json` s `"sekce": "pribehy"` a `"skupina"` (`slova`, `promeny`, `lide`, `zahady`;
-názvy skupin v `src/ui/*.json` → `pribehy.skupiny`, validace je hlídá). Vstup: **ikona knihy v záhlaví** vedle chrámu
-(`#tl-pribehy`, `otevriSekci("pribehy")`, stejné okno `#starovek-okno` s nadpisy skupin), odkaz `#pribehy` / `#stories`,
+názvy skupin v `src/ui/*.json` → `pribehy.skupiny`, validace je hlídá). Vstup: **medailon Příběhy jazyků pod glóbem**
+(`#tl-pribehy`, do 27. 9. 2026 ikona knihy v záhlaví; `otevriSekci("pribehy")`, stejné okno `#starovek-okno` s nadpisy skupin), odkaz `#pribehy` / `#stories`,
 hledání; web `/pribehy/<adresa>/` a `/en/stories/<adresa>/` s rozcestníkem. Příběhy **nedávají tlačítko na kartu jazyka**
 a do „jedna tečka = jedna civilizace“ se nepočítají (`civPodleTecky` a validace je přeskakují). Rozcestník na konci stránky
 ukazuje jen stránky téže sekce (`o.dalsi`). Oddíl **`mapa`** `{h, p, vlastnost}` dá tlačítko „Ukázat na glóbu“, které zavře
@@ -600,7 +614,7 @@ Dřívější náhledový artefakt https://claude.ai/artifact/XS67Gsv9d4y2pMu7UW
 - **Barvy vitality na reliéfu**: na stínovaných svazích neměl nejsvětlejší stupeň kontrast (1,4–1,6 : 1), proto je
   při barvení podle vitality pevnina jednolitá (`--souse-vit`: den `#E6E8EC`, noc `#1F2B55`) a tečky větší.
   Obě stupnice na těchto plochách prošly validátorem `--ordinal` (světlý konec 3,2 : 1 a 3,6 : 1).
-- Glóbus se na počítači vejde nad lištu (`stredY`, rezerva výšky `#dok`); dřív ho lišta zakrývala.
+- Glóbus se na počítači vejde nad medailony (`stredY`, rezerva výšky `#dok` v `zmer()`); dřív ho lišta zakrývala.
 - **Glóbus se vznáší nad hladkou plochou a vrhá měkký stín** (uživatel 25. 9. 2026 ze dvou náhledů: „stín – bez mřížky“;
   mřížku ubíhající k obzoru nechtěl). `kresliPlochu` v app.js kreslí do zásoby s koulí: na počítači plochu od obzoru
   (0,55 r pod středem) dolů s přechodem `--podlaha`, na telefonu jen stín (úzké plátno by z plochy

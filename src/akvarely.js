@@ -2446,6 +2446,31 @@ var AKVARELY = (function(){
           skupina(F, F.stetec, tah("M" + f1(x2 + 4 * s) + " " + f1(y2 - 1) + " l" + f1(-2 * s) + " " + f1(-9 * s) + " M" + f1(x2 - 2 * s) + " " + f1(y2 + 1) + " l" + f1(10 * s) + " " + f1(6 * s), "#4A3424", .9 * s, .9)); });
       return o + ptaci(F, r, 4, 110, 56);
     },
+    /* medailon Rodokmen: osamělá lípa na pahorku */
+    lipa: function(F, r){
+      const q = nahoda(F.sem + 901);
+      let o = nebe(F, "#9CC0E0", "#F4ECD6") + mraky(F, r, 2, 24, 50, 70);
+      o += hrebeny(F, [[150, 6, 70, 1.2, "#A8B6C4", .55]]);
+      const kop = "M-10 256 L-10 206 Q120 170 200 168 Q280 170 410 206 L410 256 Z";
+      o += kryt(F, kop) + vrstva(F, kop, "#A8C878", "#6E9A4E", .92);
+      o += skupina(F, F.stetec, tah("M200 172 Q198 150 200 124 M200 150 Q189 140 181 127 M200 144 Q211 136 219 126", "#4E3A2A", 5, .92) + tah("M200 172 l-10 4 M200 172 l12 4", "#4E3A2A", 3, .8));
+      o += nanes(F, "M150 120 Q152 88 200 82 Q248 88 250 120 Q236 132 200 131 Q164 132 150 120 Z", "#3E6A3A", .96);   // tmavý stín uvnitř koruny zakryje větve
+      o += koruny(F, q, 138, 262, 124, 1.5, "#4E7E44", .92) + koruny(F, q, 150, 250, 104, 1.35, "#5E8E4E", .9) + koruny(F, q, 164, 236, 86, 1.15, "#6E9A56", .88);
+      return o + trava(F, r, 40, 200, 250, ["#5E8A42", "#8AAE5A"]) + ptaci(F, r, 3, 250, 40);
+    },
+    /* medailon Vitalita: mladý stromek u starého pařezu za svítání */
+    klicek: function(F, r){
+      const q = nahoda(F.sem + 911);
+      let o = nebe(F, "#B4C8E0", "#F8DCB8") + slunce(F, 250, 120, 18, "#F4C080") + mraky(F, r, 2, 30, 60, 80);
+      o += hrebeny(F, [[160, 8, 60, 2, "#A8A8BC", .5]]);
+      const zem = "M-10 256 L-10 196 Q200 186 410 196 L410 256 Z";
+      o += kryt(F, zem) + vrstva(F, zem, "#B4BC7C", "#7E8C54", .92);
+      const par = "M150 200 L154 172 Q166 164 180 170 L186 200 Z";
+      o += kryt(F, par, F.jemna) + vrstva(F, par, "#9A7A58", "#5E4630", .95, F.jemna) + nanes(F, "M154 172 Q168 166 180 170 Q168 176 154 172 Z", "#C8A880", .9);
+      o += skupina(F, F.stetec, tah("M222 200 Q220 170 224 140", "#5E6E34", 2.4, .95) + tah("M223 170 q-12 -6 -20 -2 M223 158 q12 -8 22 -4 M224 146 q-8 -8 -14 -8", "#5E6E34", 1.4, .9));
+      [[203,168,1],[245,154,1],[210,138,.8],[226,136,.9]].forEach(function(l){ o += nanes(F, "M" + l[0] + " " + l[1] + " q" + f1(8*l[2]) + " " + f1(-8*l[2]) + " " + f1(16*l[2]) + " 0 q" + f1(-8*l[2]) + " " + f1(6*l[2]) + " " + f1(-16*l[2]) + " 0 z", "#7EAE4E", .95); });
+      return o + trava(F, r, 50, 200, 250, ["#6E8A42", "#9AAE5A"]) + kvety(F, r, 12, 206, 246, ["#E8C84A", "#F4F0E8"], .8);
+    },
     /* písárna (přehledové stránky o písmu): stěna s oknem do krajiny, na dřevěném stole hliněná tabulka s klíny,
        rozvinutý svitek, vosková tabulka s rydlem, kalamář s rákosovým perem a olejová lampa */
     pisarna: function(F, r){
