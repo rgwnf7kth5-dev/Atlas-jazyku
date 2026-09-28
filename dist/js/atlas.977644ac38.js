@@ -4670,6 +4670,13 @@ var AKVARELY = (function(){
     return (pamet[klic] = '<svg viewBox="0 0 ' + W + " " + H + '" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>' + F.defs +
       '</defs><g style="isolation:isolate">' + K[druh](F, nahoda(s), varianta) + '</g>' + vinetace(F) + '<rect width="' + W + '" height="' + H + '" filter="url(#' + F.papir + ')"/></svg>');
   }
+  /* živé akvarely (28. 9. 2026): části, které se hýbou, nesou značku data-z (veg = stromy, keře a tráva, mrak, voda);
+     app.js z nich vykreslí masku (maskaMalby) a podle ní malbu jemně rozhýbe. Hory, stavby a pole značku nemají, stojí. */
+  const obal = function(f, z){ return function(){ return '<g data-z="' + z + '">' + f.apply(this, arguments) + '</g>'; }; };
+  strom = obal(strom, "veg"); lesik = obal(lesik, "veg"); palma = obal(palma, "veg"); trava = obal(trava, "veg"); koruny = obal(koruny, "veg");
+  pas = obal(pas, "veg"); radaKeru = obal(radaKeru, "veg"); jehlicnan = obal(jehlicnan, "veg"); briza = obal(briza, "veg"); akacie = obal(akacie, "veg");
+  baobab = obal(baobab, "veg"); oliva = obal(oliva, "veg"); cypris = obal(cypris, "veg"); topol = obal(topol, "veg"); kvety = obal(kvety, "veg");
+  mrak = obal(mrak, "mrak"); rasy = obal(rasy, "mrak"); voda = obal(voda, "voda");
   return { obraz: obraz, druhy: Object.keys(K) };
 })();
 
@@ -5625,14 +5632,129 @@ function vlozMalbu(el, id){
   /* na webu jsou malby hotové obrázky (static/malby, scripts/malby.mjs): hned, bez prázdné plochy nahoře na kartě
      (hodnocení webu 28. 9. 2026); v artefaktu a při chybě se malba kreslí živě jako dřív */
   if (!ARTEFAKT && location.protocol !== "file:" && KRAJINY[id]) {
-    img.onload = function(){ img.classList.add("ukazana"); };
+    img.onload = function(){ img.classList.add("ukazana"); ozivMalbu(el, img, id); };
     img.onerror = function(){ img.onerror = null; const cesta = malbaObrazek(id); if (cesta) cesta.then(function(url){ if (url && img.isConnected) img.src = url; }); };
     img.src = "/malby/" + id + ".jpg";
     return;
   }
-  const ukaz = function(){ const cesta = malbaObrazek(id); if (cesta) cesta.then(function(url){ if (url && img.isConnected) { img.onload = function(){ img.classList.add("ukazana"); }; img.src = url; } }); };
+  const ukaz = function(){ const cesta = malbaObrazek(id); if (cesta) cesta.then(function(url){ if (url && img.isConnected) { img.onload = function(){ img.classList.add("ukazana"); ozivMalbu(el, img, id); }; img.src = url; } }); };
   if (MALBY[id]) ukaz();
   else setTimeout(function(){ if (!img.isConnected) return; if (window.requestIdleCallback) requestIdleCallback(ukaz, {timeout: 1500}); else ukaz(); }, 2200);
+}
+/* ---------- živé akvarely (uživatel 28. 9. 2026: „lehce animovat, vítr, stromy, mraky“; síla „Výrazná“ z náhledu) ----------
+   Stromy, keře a tráva se vlní v poryvech větru, mraky pomalu plují, voda se čeří; hory, stavby a pole stojí.
+   Co se hýbe, určuje maska z kresby (části se značkou data-z v akvarely.js), ne barva. Masku kreslí SVG bez filtrů
+   (pár ms) do 400 × 250, rozšíří ji a rozmaže, aby se hýbaly i okraje. Obrázek pak kreslí WebGL s posunem pixelů
+   podle masky, asi 30 snímků za sekundu, jen když je malba na očích. Při omezeném pohybu nic. */
+const MASKY = {}, ZIVE = {seznam: [], bezi: false, posl: 0};
+function maskaMalby(id){
+  if (MASKY[id]) return MASKY[id];
+  const svg = malbaJazyka(id);
+  if (!svg || svg.indexOf("data-z") < 0) return null;
+  const styl = "<style>svg *{fill:#000!important;stroke:#000!important;filter:none!important;mix-blend-mode:normal!important;opacity:1!important;fill-opacity:1!important;stroke-opacity:1!important}" +
+    "[data-z=veg],[data-z=veg] *{fill:#F00!important;stroke:#F00!important}[data-z=mrak],[data-z=mrak] *{fill:#0F0!important;stroke:#0F0!important}" +
+    "[data-z=voda],[data-z=voda] *{fill:#00F!important;stroke:#00F!important}[fill=none]{fill:none!important}[stroke=none]{stroke:none!important}" +
+    "svg>*:not(defs):not(:nth-child(2)){display:none!important}</style>";      // vinětace a papír přes celou malbu do masky nepatří
+  const m = svg.replace("<svg ", '<svg width="400" height="250" ').replace("<defs>", "<defs>" + styl);   // styl v <defs>, aby zůstal 2. prvek krajinou
+  return (MASKY[id] = new Promise(function(hotovo){
+    const obr = new Image();
+    obr.onload = function(){
+      try {
+        const c = document.createElement("canvas"); c.width = 400; c.height = 250;
+        const x = c.getContext("2d"); x.fillStyle = "#000"; x.fillRect(0, 0, 400, 250); x.drawImage(obr, 0, 0, 400, 250);
+        const d = x.getImageData(0, 0, 400, 250); upravMasku(d.data, 400, 250); x.putImageData(d, 0, 0);
+        hotovo(c);
+      } catch (e) { hotovo(null); }
+    };
+    obr.onerror = function(){ hotovo(null); };
+    obr.src = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(m);
+  }));
+}
+/* kanál masky: práh, rozšíření o r (maximum) a dvakrát rozmazání o b (průměr); stromy r 1, mraky r 5, voda bez rozšíření */
+function upravMasku(px, w, h){
+  const k = new Float32Array(w * h), t = new Float32Array(w * h);
+  const prujezd = function(z, do_, r, max){
+    for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {       // vodorovně
+      let v = max ? 0 : 0, n = 0;
+      for (let d = -r; d <= r; d++) { const xx = Math.min(w - 1, Math.max(0, x + d)); const a = z[y * w + xx]; if (max) v = a > v ? a : v; else { v += a; n++; } }
+      t[y * w + x] = max ? v : v / n;
+    }
+    for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {       // svisle
+      let v = 0, n = 0;
+      for (let d = -r; d <= r; d++) { const yy = Math.min(h - 1, Math.max(0, y + d)); const a = t[yy * w + x]; if (max) v = a > v ? a : v; else { v += a; n++; } }
+      do_[y * w + x] = max ? v : v / n;
+    }
+  };
+  [[0, 1, 2], [1, 5, 4], [2, 0, 1]].forEach(function(p){
+    for (let i = 0; i < w * h; i++) k[i] = px[i * 4 + p[0]] > 128 ? 1 : 0;
+    if (p[1]) prujezd(k, k, p[1], true);
+    prujezd(k, k, p[2], false); prujezd(k, k, p[2], false);
+    for (let i = 0; i < w * h; i++) px[i * 4 + p[0]] = Math.round(k[i] * 255);
+  });
+}
+const ZIVE_VS = "attribute vec2 p; varying vec2 uv; void main(){ uv = vec2(p.x * .5 + .5, .5 - p.y * .5); gl_Position = vec4(p, 0., 1.); }";
+const ZIVE_FS = ["precision mediump float; varying vec2 uv; uniform sampler2D img, msk; uniform float t; uniform vec4 vyrez;",
+  "void main(){",
+  " vec2 u = vyrez.xy + uv * vyrez.zw;",                                   // object-fit: cover jako u obrázku
+  " vec3 m = texture2D(msk, u).rgb; vec2 d = vec2(0.);",
+  " float naraz = .55 + .45 * sin(t * .55 - u.x * 3.2);",                  // poryvy běží zleva doprava
+  " d.x += m.r * .0048 * naraz * sin(t * 1.8 + u.x * 22. + u.y * 9.);",     // koruny, keře a tráva
+  " d.y += m.r * .0021 * naraz * sin(t * 2.3 + u.x * 17.);",
+  " d.x += m.g * .0195 * sin(t * .16 + u.y * 3.);",                         // mraky plují
+  " d.y += m.b * .0039 * sin(u.y * 320. + t * 1.4 + sin(u.x * 11. + t * .6) * 2.);",   // vlnky na vodě
+  " d.x += m.b * .0027 * sin(u.y * 140. - t * .9);",
+  " gl_FragColor = texture2D(img, clamp(u + d, .001, .999));",
+  "}"].join("\n");
+function ozivMalbu(el, img, id){
+  if (bezPohybu.matches || !KRAJINY[id] || typeof AKVARELY === "undefined") return;
+  const zacni = function(){
+    if (!img.isConnected) return;
+    const mp = maskaMalby(id); if (!mp) return;
+    mp.then(function(maska){
+      if (!maska || !img.isConnected || el.querySelector("canvas.zive")) return;
+      const c = document.createElement("canvas"); c.className = "zive"; c.setAttribute("aria-hidden", "true");
+      let gl = null; try { gl = c.getContext("webgl", {premultipliedAlpha: false, antialias: false}); } catch (e) {}
+      if (!gl) return;
+      const sh = function(typ, z){ const x = gl.createShader(typ); gl.shaderSource(x, z); gl.compileShader(x); return x; };
+      const pr = gl.createProgram(); gl.attachShader(pr, sh(gl.VERTEX_SHADER, ZIVE_VS)); gl.attachShader(pr, sh(gl.FRAGMENT_SHADER, ZIVE_FS)); gl.linkProgram(pr);
+      if (!gl.getProgramParameter(pr, gl.LINK_STATUS)) return;
+      gl.useProgram(pr);
+      const bf = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, bf); gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 1, -1, -1, 1, 1, 1]), gl.STATIC_DRAW);
+      const a = gl.getAttribLocation(pr, "p"); gl.enableVertexAttribArray(a); gl.vertexAttribPointer(a, 2, gl.FLOAT, false, 0, 0);
+      const tex = function(zdroj, j){ const t = gl.createTexture(); gl.activeTexture(gl.TEXTURE0 + j); gl.bindTexture(gl.TEXTURE_2D, t);
+        gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+        gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+        gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, zdroj); };
+      try { tex(img, 0); tex(maska, 1); } catch (e) { return; }
+      gl.uniform1i(gl.getUniformLocation(pr, "img"), 0); gl.uniform1i(gl.getUniformLocation(pr, "msk"), 1);
+      const uT = gl.getUniformLocation(pr, "t"), uV = gl.getUniformLocation(pr, "vyrez");
+      el.appendChild(c);
+      const z = {c: c, vidim: true, prvni: true};
+      if (window.IntersectionObserver) new IntersectionObserver(function(e){ z.vidim = e[0].isIntersecting; }).observe(c);
+      z.kresli = function(t){
+        const r = c.getBoundingClientRect();
+        if (!z.vidim || r.width < 2 || r.height < 2) return;
+        const dp = Math.min(2, window.devicePixelRatio || 1), w = Math.round(r.width * dp), h = Math.round(r.height * dp);
+        if (c.width !== w || c.height !== h) { c.width = w; c.height = h; gl.viewport(0, 0, w, h); }
+        const ai = img.naturalWidth / img.naturalHeight || 1.6, ac = r.width / r.height;
+        if (ac > ai) gl.uniform4f(uV, 0, .5 - ai / ac / 2, 1, ai / ac); else gl.uniform4f(uV, .5 - ac / ai / 2, 0, ac / ai, 1);
+        gl.uniform1f(uT, t); gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+        if (z.prvni) { z.prvni = false; requestAnimationFrame(function(){ c.classList.add("ukazana"); }); }
+      };
+      z.konec = function(){ const e = gl.getExtension("WEBGL_lose_context"); if (e) e.loseContext(); };
+      ZIVE.seznam.push(z);
+      if (!ZIVE.bezi) { ZIVE.bezi = true; requestAnimationFrame(zivaSmycka); }
+    });
+  };
+  if (window.requestIdleCallback) requestIdleCallback(zacni, {timeout: 1500}); else setTimeout(zacni, 300);
+}
+function zivaSmycka(ted){
+  ZIVE.seznam = ZIVE.seznam.filter(function(z){ if (z.c.isConnected) return true; z.konec(); return false; });
+  if (!ZIVE.seznam.length || bezPohybu.matches) { ZIVE.bezi = false; return; }
+  requestAnimationFrame(zivaSmycka);
+  if (ted - ZIVE.posl < 32) return;                                        // stačí ~30 snímků za sekundu
+  ZIVE.posl = ted;
+  ZIVE.seznam.forEach(function(z){ z.kresli(ted / 1000); });
 }
 function malbaNaKarte(id){
   const ma = !!(id && KRAJINY[id] && typeof AKVARELY !== "undefined"), el = $("k-malba");

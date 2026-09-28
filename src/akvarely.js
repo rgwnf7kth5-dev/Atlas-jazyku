@@ -4658,5 +4658,12 @@ var AKVARELY = (function(){
     return (pamet[klic] = '<svg viewBox="0 0 ' + W + " " + H + '" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>' + F.defs +
       '</defs><g style="isolation:isolate">' + K[druh](F, nahoda(s), varianta) + '</g>' + vinetace(F) + '<rect width="' + W + '" height="' + H + '" filter="url(#' + F.papir + ')"/></svg>');
   }
+  /* živé akvarely (28. 9. 2026): části, které se hýbou, nesou značku data-z (veg = stromy, keře a tráva, mrak, voda);
+     app.js z nich vykreslí masku (maskaMalby) a podle ní malbu jemně rozhýbe. Hory, stavby a pole značku nemají, stojí. */
+  const obal = function(f, z){ return function(){ return '<g data-z="' + z + '">' + f.apply(this, arguments) + '</g>'; }; };
+  strom = obal(strom, "veg"); lesik = obal(lesik, "veg"); palma = obal(palma, "veg"); trava = obal(trava, "veg"); koruny = obal(koruny, "veg");
+  pas = obal(pas, "veg"); radaKeru = obal(radaKeru, "veg"); jehlicnan = obal(jehlicnan, "veg"); briza = obal(briza, "veg"); akacie = obal(akacie, "veg");
+  baobab = obal(baobab, "veg"); oliva = obal(oliva, "veg"); cypris = obal(cypris, "veg"); topol = obal(topol, "veg"); kvety = obal(kvety, "veg");
+  mrak = obal(mrak, "mrak"); rasy = obal(rasy, "mrak"); voda = obal(voda, "voda");
   return { obraz: obraz, druhy: Object.keys(K) };
 })();

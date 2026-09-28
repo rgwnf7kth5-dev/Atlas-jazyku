@@ -679,6 +679,17 @@ Dřívější náhledový artefakt https://claude.ai/artifact/XS67Gsv9d4y2pMu7UW
 - **Na webu se malba na kartě (i u Jazyka dne) načte rovnou jako hotový obrázek `/malby/<id>.jpg`** (28. 9. 2026: hodnocení
   webu vidělo nahoře na kartě „velký prázdný světlý blok“ – živá malba se kreslí až 2,2 s po otevření). Při chybě načtení
   a v artefaktu se kreslí živě jako dřív. Proto po změně krajin **vždy znovu `scripts/malby.mjs`**, jinak karta ukáže starou malbu.
+- **Živé akvarely** (28. 9. 2026, uživatel: „lehce animovat, vítr, stromy, mraky“, z náhledu vybral sílu **Výrazná**, pouští se
+  hned): na kartě i u Jazyka dne se stromy, keře a tráva vlní v poryvech větru, mraky pomalu plují a voda se čeří; hory,
+  stavby, pole a Říp stojí. Co se hýbe, určují **značky v kresbě**: v `akvarely.js` jsou funkce `strom`, `lesik`, `palma`,
+  `trava`, `koruny`, `pas`, `radaKeru`, `jehlicnan`, `briza`, `akacie`, `baobab`, `oliva`, `cypris`, `topol`, `kvety`
+  obalené `<g data-z="veg">`, `mrak`/`rasy` jako `mrak` a `voda` jako `voda` (podle barev to nešlo – hýbal by se celý Říp
+  a sníh na horách). `maskaMalby` v app.js vykreslí SVG bez filtrů s barvami podle značek do 400 × 250 (styl musí být
+  v `<defs>`, pravidlo schovává vinětaci a papír jako další prvky za krajinou), `upravMasku` ji rozšíří a rozmaže
+  (stromy o 1 px, mraky o 5 px). `ozivMalbu` pak přes obrázek položí WebGL plátno `canvas.zive`, které posouvá pixely podle
+  masky (`ZIVE_FS`, ořez jako `object-fit: cover`), asi 30 snímků za sekundu, jen když je malba na očích; odpojené plátno
+  uvolní kontext. Při `prefers-reduced-motion` nic. Nový strom nebo keř v akvarelech obalit stejně, jinak bude stát.
+  U norštiny se nevlní odraz hory ve vodě (kreslí se jako hora).
 - **Malby se ukazují jako bitmapa, ne jako živé SVG** (`malbaObrazek`, `vlozMalbu` v app.js). SVG s desítkami filtrů
   vložené do stránky se při každém pohybu glóbu přepočítávalo a výběr jazyka (let, vlna území, oblouky) trhal
   (uživatel 24. 9. 2026: „všechno je trhané, pomalé“; v měření 2,1 s práce GPU za 4 s animace, s bitmapou 0,07 s).
