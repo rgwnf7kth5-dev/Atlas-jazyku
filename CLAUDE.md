@@ -691,6 +691,8 @@ Dřívější náhledový artefakt https://claude.ai/artifact/XS67Gsv9d4y2pMu7UW
   masky (`ZIVE_FS`, ořez jako `object-fit: cover`), asi 30 snímků za sekundu, jen když je malba na očích; odpojené plátno
   uvolní kontext. Při `prefers-reduced-motion` nic. Nový strom nebo keř v akvarelech obalit stejně, jinak bude stát.
   U norštiny se nevlní odraz hory ve vodě (kreslí se jako hora).
+  **Jen malé obrázky jazyků** (karta a Jazyk dne) – uživatel 28. 9. 2026: „chci animaci jenom u malých obrázků jazyků“.
+  Ilustrace Jazyků starověku a Příběhů, medailony, statické stránky jazyků ani vymyšlené jazyky nerozhýbávat.
 - **Malby se ukazují jako bitmapa, ne jako živé SVG** (`malbaObrazek`, `vlozMalbu` v app.js). SVG s desítkami filtrů
   vložené do stránky se při každém pohybu glóbu přepočítávalo a výběr jazyka (let, vlna území, oblouky) trhal
   (uživatel 24. 9. 2026: „všechno je trhané, pomalé“; v měření 2,1 s práce GPU za 4 s animace, s bitmapou 0,07 s).
