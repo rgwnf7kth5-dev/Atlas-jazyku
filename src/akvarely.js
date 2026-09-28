@@ -69,6 +69,8 @@ var AKVARELY = (function(){
   }
   /* skupina tahů s jedním filtrem (tráva, vlnky, květy) */
   function skupina(F, filtr, obsah, extra){ return '<g filter="url(#' + filtr + ')"' + (extra || "") + '>' + obsah + '</g>'; }
+  /* ručně kreslené rostliny v krajině (tráva, obilí, rákos, keře, kaktusy): značka pro živé akvarely, aby se hýbaly */
+  function rost(s){ return '<g data-z="veg">' + s + '</g>'; }
   function tah(d, barva, sirka, op){ return '<path d="' + d + '" stroke="' + barva + '" stroke-width="' + f1(sirka) + '" fill="none" stroke-linecap="round" opacity="' + (op == null ? .85 : op) + '"/>'; }
 
   function hrbet(y0, amp, per, faze, dno, krok){
@@ -962,7 +964,7 @@ var AKVARELY = (function(){
       const svah = "M-10 256 L-10 108 Q40 96 90 114 Q140 132 180 162 L180 256 Z";
       o += kryt(F, svah) + vrstva(F, svah, "#8EAE62", "#5E8A46", .9);
       let vin = ""; for (let i = 0; i < 16; i++) { const y = 116 + i * 5; vin += tah("M-10 " + f1(y) + " Q60 " + f1(y - 6 + i) + " " + f1(120 + i * 4) + " " + f1(y + 20 + i * 2), "#4E7A36", .9, .7); }
-      o += '<defs><clipPath id="' + F.id + 'sv"><path d="' + svah + '"/></clipPath></defs><g clip-path="url(#' + F.id + 'sv)">' + skupina(F, F.stetec, vin) + '</g>';
+      o += '<defs><clipPath id="' + F.id + 'sv"><path d="' + svah + '"/></clipPath></defs><g clip-path="url(#' + F.id + 'sv)">' + rost(skupina(F, F.stetec, vin)) + '</g>';
       o += skalka(F, 58, 104, 22, 14, "#9A9280") + hrad(F, q, 44, 104, .55, { stena: "#CFC4AE", strecha: "#5A6070" });
       const pr = "M90 256 Q150 200 180 162 Q260 150 420 156 L420 256 Z";
       o += kryt(F, pr) + vrstva(F, pr, "#A8BE7A", "#7E9E5A", .9) + koruny(F, q, 190, 420, 160, .5, "#5E8A50", .8, F.jemna);
@@ -995,7 +997,7 @@ var AKVARELY = (function(){
           listy += '<ellipse cx="' + f1(x + (q() - .5) * s) + '" cy="' + f1(y - s * 1.2) + '" rx="' + f1(s * 1.3) + '" ry="' + f1(s * .9) + '" fill="' + mix("#5E8A3A", q() < .5 ? "#B4C050" : "#2E5A2E", q() * .4) + '"/>'; }
         rady += "M" + f1(vx + (xb - vx) * .1) + " " + f1(vy + (H - vy) * .1) + " L" + f1(xb) + " " + H + " "; }
       o += vrstva(F, "M-10 256 L-10 156 L410 156 L410 256 Z", "#C8A878", "#A8845A", .6) + skupina(F, F.stetec, '<path d="' + rady + '" stroke="#6A5A3A" stroke-width=".6" opacity=".5" fill="none"/>');
-      o += '<g opacity=".88" filter="url(#' + F.jemna + ')" style="mix-blend-mode:multiply">' + listy + '</g>';
+      o += rost('<g opacity=".88" filter="url(#' + F.jemna + ')" style="mix-blend-mode:multiply">' + listy + '</g>');
       return o;
     },
     /* Toskánsko (italština): zvlněné kopce, cesta lemovaná cypřiši k statku na návrší, městečko se zvonicí v dálce */
@@ -1028,7 +1030,7 @@ var AKVARELY = (function(){
       for (let k = -12; k <= 12; k++) { const xb = 230 + k * 34;
         for (let t = .05; t <= 1.05; t += .025 + t * .025) { const x = vx + (xb - vx) * t, y = vy + (H - vy) * t, s = .3 + t * 2.6;
           l += '<ellipse cx="' + f1(x) + '" cy="' + f1(y - s) + '" rx="' + f1(s * 1.5) + '" ry="' + f1(s * 1.05) + '" fill="' + mix("#8A6AC8", q() < .5 ? "#C8A8E8" : "#5A3E9A", q() * .45) + '"/>'; } }
-      o += vrstva(F, "M-10 256 L-10 158 L410 158 L410 256 Z", "#C8B07E", "#A89060", .55) + '<g opacity=".9" filter="url(#' + F.jemna + ')" style="mix-blend-mode:multiply">' + l + '</g>';
+      o += vrstva(F, "M-10 256 L-10 158 L410 158 L410 256 Z", "#C8B07E", "#A89060", .55) + rost('<g opacity=".9" filter="url(#' + F.jemna + ')" style="mix-blend-mode:multiply">' + l + '</g>');
       return o + ptaci(F, r, 3, 90, 60);
     },
     /* Lucembursko: hrad na skále nad údolím, lesnaté kopce, řeka s kamenným mostem, domy s břidlicovými střechami */
@@ -1060,7 +1062,7 @@ var AKVARELY = (function(){
           pl += "M" + f1(x) + " " + f1(y + 1) + " L" + f1(x + 36) + " " + f1(vyska(x + 36, h[0], h[1], h[2], h[3]) + 1) + " L" + f1(x + 44) + " " + f1(y + 22) + " L" + f1(x - 6) + " " + f1(y + 22) + " Z ";
           ploty += "M" + f1(x) + " " + f1(y + 1) + " L" + f1(x - 6) + " " + f1(y + 22) + " "; }
         o += laz(F, pl, barvy[(i + 2) % 5], .35) + koruny(F, q, -10, 410, vyska(0, h[0], h[1], h[2], h[3]) + 2, .22 + i * .08, mix("#3E6A36", F.opar, .3 - i * .1), .7, F.jemna).replace(/cy="([\d.]+)"/g, function(m, v){ return m; });
-        o += skupina(F, F.stetec, '<path d="' + ploty + '" stroke="#3E6A36" stroke-width="' + (1 + i * .6) + '" opacity=".6" fill="none"/>'); });
+        o += rost(skupina(F, F.stetec, '<path d="' + ploty + '" stroke="#3E6A36" stroke-width="' + (1 + i * .6) + '" opacity=".6" fill="none"/>')); });
       o += vesnice(F, q, [[250, 178, 1.1, 0, { kostel: 1, vez: "ctverec", stena: "#D8CCB0", strecha: "#6A6A70", strechaLodi: "#6A6A70" }],
         [300, 184, 22, 9, { typ: "dosky", stena: "#FBF8F0", strecha: "#B89A60", okna: 2 }], [330, 186, 18, 8, { typ: "dosky", stena: "#F6EEDC", strecha: "#A88A52", okna: 2 }], [206, 186, 20, 9, { typ: "dosky", stena: "#FBF8F0", strecha: "#B89A60", okna: 2 }]]);
       o += hrebeny(F, [[210, 6, 80, 6, "#8EB45A", 0]]) + strom(F, q, 60, 226, 2, "#4E7A3E") + strom(F, q, 110, 214, 1.4, "#5E8446");
@@ -1200,7 +1202,7 @@ var AKVARELY = (function(){
       const dn = "M150 256 Q190 206 240 186 Q290 168 340 164 Q380 160 420 164 L420 256 Z";
       o += kryt(F, dn) + vrstva(F, dn, "#C8C090", "#A8A070", .9);
       o += vesnice(F, q, [[250, 196, 22, 10, { typ: "sedlo", stena: "#6E5A48", bok: "#4E3E30", strecha: "#5A5A5A", okenice: "#E8E8E0", okno: "#3E4656", okna: 2 }], [290, 190, 18, 9, { typ: "sedlo", stena: "#8A7058", bok: "#5E4A38", strecha: "#9A8A5A", okna: 1 }]]);
-      [[330, 176, 1.3], [352, 180, 1.6], [378, 172, 1.4], [400, 178, 1.7], [224, 188, 1]].forEach(function(t){ o += skupina(F, F.stetec, tah("M" + t[0] + " " + t[1] + " q2 -18 -2 -" + f1(34 * t[2]), "#9A5A3A", 1.6 * t[2], .9)) + koruny(F, q, t[0] - 14 * t[2], t[0] + 12 * t[2], t[1] - 32 * t[2], .45 * t[2], "#3E6A48", .9, F.jemna); });
+      [[330, 176, 1.3], [352, 180, 1.6], [378, 172, 1.4], [400, 178, 1.7], [224, 188, 1]].forEach(function(t){ o += rost(skupina(F, F.stetec, tah("M" + t[0] + " " + t[1] + " q2 -18 -2 -" + f1(34 * t[2]), "#9A5A3A", 1.6 * t[2], .9))) + koruny(F, q, t[0] - 14 * t[2], t[0] + 12 * t[2], t[1] - 32 * t[2], .45 * t[2], "#3E6A48", .9, F.jemna); });
       [[60, 214, 1], [130, 222, 1.2]].forEach(function(b){ const x = b[0], y = b[1], s = b[2]; o += vrstva(F, "M" + f1(x - 17 * s) + " " + f1(y - 6 * s) + " L" + f1(x + 17 * s) + " " + f1(y - 7 * s) + " Q" + f1(x + 12 * s) + " " + f1(y + 2 * s) + " " + x + " " + f1(y + 2 * s) + " Q" + f1(x - 12 * s) + " " + f1(y + 2 * s) + " " + f1(x - 17 * s) + " " + f1(y - 6 * s) + " Z", "#6E7E90", "#3E4A5A", .95, F.jemna) + skupina(F, F.stetec, tah("M" + f1(x - 16 * s) + " " + f1(y - 6 * s) + " L" + f1(x + 16 * s) + " " + f1(y - 7 * s), "#E8E4DA", .8, .8)); });
       let sit = ""; for (let i = 0; i < 4; i++) sit += tah("M" + (160 + i * 12) + " 232 l0 -18", "#6A5038", 1, .9); for (let k = 0; k < 6; k++) sit += tah("M160 " + (216 + k * 2.4) + " L196 " + (216 + k * 2.4), "#6A6A5A", .4, .6);
       for (let i = 0; i < 6; i++) sit += tah("M" + (162 + i * 6) + " 215 l0 13", "#6A6A5A", .4, .6);
@@ -1221,7 +1223,7 @@ var AKVARELY = (function(){
       o += skupina(F, F.stetec, chod);
       [[40, 190, .8], [226, 172, .6], [380, 214, 1], [350, 180, .7]].forEach(function(t){ o += jehlicnan(F, q, t[0], t[1], t[2], "#3E5A40"); });
       let jal = ""; for (let i = 0; i < 6; i++) { const x = 20 + q() * 360, y = 200 + q() * 44, s2 = .8 + (y - 200) / 40; jal += '<ellipse cx="' + f1(x) + '" cy="' + f1(y - 6 * s2) + '" rx="' + f1(3 * s2) + '" ry="' + f1(7 * s2) + '" fill="#3E5A40"/>'; }
-      return o + '<g opacity=".85" filter="url(#' + F.jemna + ')" style="mix-blend-mode:multiply">' + jal + '</g>' + ptaci(F, r, 3, 90, 60);
+      return o + rost('<g opacity=".85" filter="url(#' + F.jemna + ')" style="mix-blend-mode:multiply">' + jal + '</g>') + ptaci(F, r, 3, 90, 60);
     },
     /* Tatarstán: vesnice barevných dřevěných domů s vyřezávanými štíty, dřevěná mešita s minaretem, řeka */
     tatarsko: function(F, r){
@@ -1275,7 +1277,7 @@ var AKVARELY = (function(){
       o += hrebeny(F, [[196, 8, 60, 3.2, "#C8B07A", 0]]);
       let ol = ""; for (let rada = 0; rada < 6; rada++) { const y0 = 202 + rada * 9; for (let x = -10 + (rada % 2) * 8; x < 420; x += 16 + rada * 3) { const y = y0 + Math.sin(x / 60 + 3.2) * 6, s2 = .4 + rada * .12;
           ol += '<ellipse cx="' + f1(x) + '" cy="' + f1(y) + '" rx="' + f1(5 * s2) + '" ry="' + f1(3.6 * s2) + '" fill="' + mix("#7C8A5E", q() < .5 ? "#A8B08A" : "#4E5E3E", q() * .5) + '"/>'; } }
-      return o + '<g opacity=".9" filter="url(#' + F.jemna + ')" style="mix-blend-mode:multiply">' + ol + '</g>' + oliva(F, q, 30, 250, 1.5) + oliva(F, q, 376, 252, 1.3);
+      return o + rost('<g opacity=".9" filter="url(#' + F.jemna + ')" style="mix-blend-mode:multiply">' + ol + '</g>') + oliva(F, q, 30, 250, 1.5) + oliva(F, q, 376, 252, 1.3);
     },
     /* Katalánsko: skalnatá zátoka s borovicemi, tyrkysová voda, kamenná vesnice s románskou zvonicí, loďky na pláži */
     katalansko: function(F, r){
@@ -1292,7 +1294,7 @@ var AKVARELY = (function(){
         [352, 138, .8, 0, { kostel: 1, vez: "kampanila", stena: "#D0BC96", strecha: "#A85A3A" }]]);
       o += kryt(F, "M100 256 Q150 236 200 234 Q250 234 300 256 Z") + vrstva(F, "M100 256 Q150 236 200 234 Q250 234 300 256 Z", "#F2E2BC", "#D8C090", .95);
       [[170, 244, 1, "#C8402E"], [226, 246, 1.1, "#2E6AA8"]].forEach(function(b){ const x = b[0], y = b[1], s = b[2]; o += vrstva(F, "M" + f1(x - 12 * s) + " " + f1(y - 4 * s) + " L" + f1(x + 12 * s) + " " + f1(y - 5 * s) + " Q" + f1(x + 8 * s) + " " + f1(y + 2 * s) + " " + x + " " + f1(y + 2 * s) + " Q" + f1(x - 8 * s) + " " + f1(y + 2 * s) + " " + f1(x - 12 * s) + " " + f1(y - 4 * s) + " Z", "#F4EEE2", "#B8B0A0", .95, F.jemna) + skupina(F, F.stetec, tah("M" + f1(x - 11 * s) + " " + f1(y - 4.5 * s) + " L" + f1(x + 11 * s) + " " + f1(y - 5.5 * s), b[3], 1.2 * s, .85)); });
-      o += skupina(F, F.stetec, tah("M52 162 C54 140 60 124 72 108", "#6A4E3E", 2.6, .9)) + koruny(F, q, 40, 110, 108, .5, "#3E6440", .9, F.jemna);
+      o += rost(skupina(F, F.stetec, tah("M52 162 C54 140 60 124 72 108", "#6A4E3E", 2.6, .9))) + koruny(F, q, 40, 110, 108, .5, "#3E6440", .9, F.jemna);
       return o;
     },
     /* Řecko: útes nad temně modrým mořem, bílé kostky domů, modré kupole, větrný mlýn, bugenvílie */
@@ -1313,7 +1315,7 @@ var AKVARELY = (function(){
       o += nanes(F, "M" + (mx - 8) + " " + (my - 18) + " L" + mx + " " + (my - 27) + " L" + (mx + 9) + " " + (my - 18) + " Z", "#8A6A50");
       let pl = ""; for (let k = 0; k < 8; k++) { const a = k / 8 * 6.283; pl += tah("M" + mx + " " + (my - 22) + " l" + f1(Math.cos(a) * 14) + " " + f1(Math.sin(a) * 14), "#5A4A3A", .5, .8); } o += skupina(F, F.stetec, pl);
       let bug = ""; for (let i = 0; i < 40; i++) bug += '<circle cx="' + f1(200 + q() * 60) + '" cy="' + f1(150 + q() * 14) + '" r="' + f1(1 + q() * 1.4) + '" fill="' + ["#D8408A", "#E860A0", "#B83070"][i % 3] + '"/>';
-      return o + '<g opacity=".85" filter="url(#' + F.jemna + ')" style="mix-blend-mode:multiply">' + bug + '</g>' + ptaci(F, r, 3, 70, 70);
+      return o + rost('<g opacity=".85" filter="url(#' + F.jemna + ')" style="mix-blend-mode:multiply">' + bug + '</g>') + ptaci(F, r, 3, 70, 70);
     },
     /* Malta: přístav, medově žluté vápencové domy, barokní kostel s kupolí a dvěma věžemi, pestré loďky luzzu */
     malta: function(F, r){
@@ -1399,7 +1401,7 @@ var AKVARELY = (function(){
       o += hrebeny(F, [[200, 4, 80, 3, "#7EA04E", 0]]);
       let ruze = ""; for (let rada = 0; rada < 8; rada++) { const y = 206 + rada * 6 + rada * rada * .3; for (let x = -8 + (rada % 2) * 4; x < 420; x += 7 + rada) { const s2 = .5 + rada * .14;
           ruze += '<ellipse cx="' + f1(x) + '" cy="' + f1(y) + '" rx="' + f1(3.6 * s2) + '" ry="' + f1(2.4 * s2) + '" fill="#4E7A3A"/>' + (q() < .8 ? '<circle cx="' + f1(x + (q() - .5) * 3 * s2) + '" cy="' + f1(y - 1.4 * s2) + '" r="' + f1(1.1 * s2) + '" fill="' + ["#E8609A", "#D84A88", "#F090B8"][Math.floor(q() * 3)] + '"/>' : ""); } }
-      return o + '<g opacity=".9" filter="url(#' + F.jemna + ')" style="mix-blend-mode:multiply">' + ruze + '</g>';
+      return o + rost('<g opacity=".9" filter="url(#' + F.jemna + ')" style="mix-blend-mode:multiply">' + ruze + '</g>');
     },
     /* Makedonie: velké jezero pod horami, byzantský kostelík na skalním výběžku, bílé domy s tmavými trámy, rybářská loďka */
     makedonie: function(F, r){
@@ -1439,7 +1441,7 @@ var AKVARELY = (function(){
       o += kryt(F, zed, F.jemna) + vrstva(F, zed, "#E6D8BC", "#B8A888", .95, F.jemna);
       o += hrebeny(F, [[196, 6, 70, 4, "#8EB05A", 0]]);
       for (let rada = 0; rada < 3; rada++) for (let i = 0; i < 7; i++) { const x = 20 + i * 56 + rada * 20 + q() * 10, y = 214 + rada * 14, s2 = .9 + rada * .3;
-        o += strom(F, q, x, y, s2, "#5E8A44"); if (q() < .8) { let sv = ""; for (let k = 0; k < 6; k++) sv += '<circle cx="' + f1(x + (q() - .5) * 12 * s2) + '" cy="' + f1(y - 17 * s2 + (q() - .5) * 8 * s2) + '" r="' + f1(.9 * s2) + '"/>'; o += '<g fill="#5A3A8A" opacity=".8">' + sv + '</g>'; } }
+        o += strom(F, q, x, y, s2, "#5E8A44"); if (q() < .8) { let sv = ""; for (let k = 0; k < 6; k++) sv += '<circle cx="' + f1(x + (q() - .5) * 12 * s2) + '" cy="' + f1(y - 17 * s2 + (q() - .5) * 8 * s2) + '" r="' + f1(.9 * s2) + '"/>'; o += rost('<g fill="#5A3A8A" opacity=".8">' + sv + '</g>'); } }
       return o + seno(F, 360, 200, 1) + trava(F, r, 100, 236, 254, ["#557F38", "#78A04A"]);
     },
     /* Maramureš (rumunština): zelené kopce, vysoký dřevěný kostel se šindelovou věží, dřevěné domy, kupky sena */
@@ -1468,7 +1470,7 @@ var AKVARELY = (function(){
       for (let i = 0; i < 9; i++) { const x = 20 + i * 44 + q() * 10, y = 196 + (i % 3) * 16 + q() * 6, s2 = 1 + (y - 196) / 30;
         if (Math.abs(x - 190) < 30) continue;
         o += strom(F, q, x, y, s2, "#7E9A52"); let kv = ""; for (let k = 0; k < 22; k++) kv += '<circle cx="' + f1(x + (q() - .5) * 16 * s2) + '" cy="' + f1(y - 17 * s2 + (q() - .5) * 11 * s2) + '" r="' + f1((.8 + q() * .7) * s2) + '"/>';
-        o += '<g fill="' + (i % 2 ? "#FBF4F4" : "#F4C8D4") + '" opacity=".9" filter="url(#' + F.jemna + ')">' + kv + '</g>'; }
+        o += rost('<g fill="' + (i % 2 ? "#FBF4F4" : "#F4C8D4") + '" opacity=".9" filter="url(#' + F.jemna + ')">' + kv + '</g>'); }
       let kone = ""; [[300, 232, 1.4, "#6E5038"], [336, 238, 1.6, "#3A2E26"]].forEach(function(k){ const x = k[0], y = k[1], s = k[2];
         kone += '<path d="M' + f1(x) + " " + f1(y) + " l" + f1(1.5 * s) + " " + f1(-7 * s) + " l" + f1(12 * s) + " 0 l" + f1(2.5 * s) + " " + f1(-4 * s) + " l" + f1(2.5 * s) + " " + f1(.5 * s) + " l" + f1(-1 * s) + " " + f1(5 * s) + " l0 " + f1(5.5 * s) + " l" + f1(-1.6 * s) + " 0 l0 " + f1(-4.5 * s) + " l" + f1(-11 * s) + " 0 l" + f1(-1 * s) + " " + f1(4.5 * s) + ' z" fill="' + k[3] + '"/>'; });
       o += '<g filter="url(#' + F.jemna + ')" opacity=".92">' + kone + '</g>';
@@ -1556,7 +1558,7 @@ var AKVARELY = (function(){
       o += hrebeny(F, [[210, 6, 70, 3.5, "#8A8A58", 0]]);
       o += dum(F, q, 250, 222, 40, 11, { typ: "sedlo", stena: "#FBFAF6", bok: "#B8BCC8", strecha: "#4E5462", okna: 3, okno: "#3E4656", rh: 10, komin: "#D8D4CC" });
       let vres = ""; for (let i = 0; i < 70; i++) vres += '<circle cx="' + f1(q() * W) + '" cy="' + f1(220 + q() * 34) + '" r="' + f1(1 + q() * 1.4) + '" fill="' + ["#A0508A", "#B86AA0", "#8A4A7A"][i % 3] + '"/>';
-      return o + trava(F, r, 140, 216, 254, ["#7E7A48", "#9A8A58", "#6A6A3E"]) + '<g opacity=".85" filter="url(#' + F.jemna + ')" style="mix-blend-mode:multiply">' + vres + '</g>';
+      return o + trava(F, r, 140, 216, 254, ["#7E7A48", "#9A8A58", "#6A6A3E"]) + rost('<g opacity=".85" filter="url(#' + F.jemna + ')" style="mix-blend-mode:multiply">' + vres + '</g>');
     },
     /* Wales (velština): zelené hory, kamenné zídky přes svahy, kamenné chalupy s břidlicovými střechami, kaple, ovce */
     wales: function(F, r){
@@ -1586,7 +1588,7 @@ var AKVARELY = (function(){
       o += kryt(F, bal) + vrstva(F, bal, "#E0B0A0", "#A0706A", .95);
       let pena = ""; for (let i = 0; i < 14; i++) pena += tah("M" + f1(20 + q() * 260) + " " + f1(200 + q() * 50) + " q6 -2 12 0", "#FFFFFF", 1.2, .8);
       let hl = ""; for (let i = 0; i < 50; i++) hl += '<circle cx="' + f1(200 + q() * 210) + '" cy="' + f1(176 + q() * 50) + '" r="' + f1(1 + q() * 1.2) + '" fill="' + ["#E8C030", "#D8A820"][i % 2] + '"/>';
-      return o + skupina(F, F.stetec, pena) + '<g opacity=".85" filter="url(#' + F.jemna + ')">' + hl + '</g>';
+      return o + skupina(F, F.stetec, pena) + rost('<g opacity=".85" filter="url(#' + F.jemna + ')">' + hl + '</g>');
     },
     /* Galicie: zátoka ría mezi zelenými kopci, sýpka hórreo, kamenný dům, eukalypty, rybářské loďky */
     galicie: function(F, r){
@@ -1599,7 +1601,7 @@ var AKVARELY = (function(){
       o += kryt(F, pr) + vrstva(F, pr, "#8CB45E", "#5E8A42", .92);
       o += dum(F, q, 60, 208, 30, 13, { typ: "sedlo", stena: "#B8B0A0", bok: "#80786C", strecha: "#B8603E", patra: 2, okna: 3, okenice: "#FBFAF6", rh: 8 });
       o += horreo(F, 180, 214, 1.4);
-      [[300, 212, 1.4], [330, 218, 1.7], [362, 210, 1.5]].forEach(function(t){ o += skupina(F, F.stetec, tah("M" + t[0] + " " + t[1] + " l" + f1((q() - .5) * 3) + " -" + f1(44 * t[2]), "#C8B8A0", 1.4 * t[2], .95)) + koruny(F, q, t[0] - 10 * t[2], t[0] + 10 * t[2], t[1] - 38 * t[2], .4 * t[2], "#6E8A6A", .85, F.jemna); });
+      [[300, 212, 1.4], [330, 218, 1.7], [362, 210, 1.5]].forEach(function(t){ o += rost(skupina(F, F.stetec, tah("M" + t[0] + " " + t[1] + " l" + f1((q() - .5) * 3) + " -" + f1(44 * t[2]), "#C8B8A0", 1.4 * t[2], .95))) + koruny(F, q, t[0] - 10 * t[2], t[0] + 10 * t[2], t[1] - 38 * t[2], .4 * t[2], "#6E8A6A", .85, F.jemna); });
       [[80, 172, .8, "#2E6AA8"], [140, 176, .9, "#C8402E"]].forEach(function(b){ const x = b[0], y = b[1], s = b[2]; o += vrstva(F, "M" + f1(x - 12 * s) + " " + f1(y - 4 * s) + " L" + f1(x + 12 * s) + " " + f1(y - 5 * s) + " Q" + f1(x + 8 * s) + " " + f1(y + 2 * s) + " " + x + " " + f1(y + 2 * s) + " Q" + f1(x - 8 * s) + " " + f1(y + 2 * s) + " " + f1(x - 12 * s) + " " + f1(y - 4 * s) + " Z", "#F4EEE2", "#B8B0A0", .95, F.jemna) + skupina(F, F.stetec, tah("M" + f1(x - 11 * s) + " " + f1(y - 4.5 * s) + " L" + f1(x + 11 * s) + " " + f1(y - 5.5 * s), b[3], 1.2 * s, .85)); });
       return o + trava(F, r, 150, 222, 254, ["#557F38", "#78A04A", "#46692E"]) + kvety(F, r, 18, 226, 252, ["#F4F0E4", "#E8D56A"], .9);
     },
@@ -1613,7 +1615,7 @@ var AKVARELY = (function(){
       o += hrebeny(F, [[214, 3, 80, 3, "#8EB05A", 0]]);
       o += dum(F, q, 170, 228, 90, 18, { typ: "dosky", stena: "#E8C860", bok: "#A8883A", strecha: "#9A8A5A", hrazdi: "#4A3A2E", okna: 6, okenice: null, okno: "#FBFAF6", rh: 20, d: 26 });
       let ob = ""; for (let rada = 0; rada < 5; rada++) for (let x = -8; x < 420; x += 6) ob += tah("M" + f1(x) + " " + f1(222 + rada * 7) + " l0 " + f1(-2 - rada), "#C8A840", .6 + rada * .1, .6);
-      return o + skupina(F, F.stetec, ob) + kvety(F, r, 30, 222, 252, ["#D23A2B", "#5A7ED0", "#F4F0E4"], 1);
+      return o + rost(skupina(F, F.stetec, ob)) + kvety(F, r, 30, 222, 252, ["#D23A2B", "#5A7ED0", "#F4F0E4"], 1);
     },
     /* Frísko: louky s příkopy, cihlový kostel na pahorku (terpu), velký frískýstatek, černobílé krávy */
     frisko: function(F, r){
@@ -1636,7 +1638,7 @@ var AKVARELY = (function(){
       o += hory(F, r, [[-10, 140], [60, 110], [140, 124], [220, 100], [300, 122], [370, 108], [410, 116]], 150, "#C8D0E0", "#8E9CBC", 150, .06);
       const sn = "M-10 256 L-10 148 Q200 140 420 150 L420 256 Z";
       o += kryt(F, sn) + nanes(F, sn, "#F6F8FC", .97, F.lazura) + laz(F, "M-10 196 Q120 186 240 204 Q320 214 420 200 L420 256 L-10 256 Z", "#C8D4EA", .4);
-      for (let i = 0; i < 14; i++) { const x = q() * W, y = 152 + q() * 40, s2 = .6 + (y - 150) / 40; o += skupina(F, F.stetec, tah("M" + f1(x) + " " + f1(y) + " q" + f1((q() - .5) * 4) + " " + f1(-10 * s2) + " " + f1((q() - .5) * 3) + " " + f1(-20 * s2), "#E8E4DC", 1.2 * s2, .9) + tah("M" + f1(x - .5) + " " + f1(y - 4 * s2) + " l1 0 M" + f1(x) + " " + f1(y - 11 * s2) + " l1 0", "#2A2A2A", .6 * s2, .8)) + koruny(F, q, x - 6 * s2, x + 6 * s2, y - 16 * s2, .25 * s2 + .1, "#8A7A5A", .6, F.jemna); }
+      for (let i = 0; i < 14; i++) { const x = q() * W, y = 152 + q() * 40, s2 = .6 + (y - 150) / 40; o += rost(skupina(F, F.stetec, tah("M" + f1(x) + " " + f1(y) + " q" + f1((q() - .5) * 4) + " " + f1(-10 * s2) + " " + f1((q() - .5) * 3) + " " + f1(-20 * s2), "#E8E4DC", 1.2 * s2, .9) + tah("M" + f1(x - .5) + " " + f1(y - 4 * s2) + " l1 0 M" + f1(x) + " " + f1(y - 11 * s2) + " l1 0", "#2A2A2A", .6 * s2, .8))) + koruny(F, q, x - 6 * s2, x + 6 * s2, y - 16 * s2, .25 * s2 + .1, "#8A7A5A", .6, F.jemna); }
       /* lávvu: kužel z plachtoviny na tyčích */
       const lx = 120, ly = 214, lv = "M" + (lx - 22) + " " + ly + " L" + lx + " " + (ly - 40) + " L" + (lx + 22) + " " + ly + " Z";
       o += kryt(F, lv, F.jemna) + vrstva(F, lv, "#D8CCB4", "#A8987C", .95, F.jemna) + laz(F, "M" + lx + " " + (ly - 40) + " L" + (lx + 22) + " " + ly + " L" + (lx + 4) + " " + ly + " Z", "#6E6456", .35) +
@@ -1668,7 +1670,7 @@ var AKVARELY = (function(){
       o += hory(F, r, [[-10, 150], [60, 140], [140, 100], [190, 70], [206, 64], [224, 66], [260, 90], [320, 128], [410, 146]], 150, "#B8B4C4", "#7E7A94", 110, .06);
       o += hrebeny(F, [[152, 4, 80, 1, "#B8A878", .2], [172, 8, 60, 2.6, "#B4A870", 0]]);
       o += skalka(F, 120, 176, 40, 20, "#B89A7E") + armensky(F, q, 96, 178, 1.3, "#C8977A");
-      for (let i = 0; i < 8; i++) { const x = 190 + i * 28 + q() * 8, y = 200 + (i % 2) * 12; o += strom(F, q, x, y, 1.1, "#6E8A44"); let pl = ""; for (let k = 0; k < 7; k++) pl += '<circle cx="' + f1(x + (q() - .5) * 12) + '" cy="' + f1(y - 18 + (q() - .5) * 8) + '" r=".9"/>'; o += '<g fill="#E8943A" opacity=".85">' + pl + '</g>'; }
+      for (let i = 0; i < 8; i++) { const x = 190 + i * 28 + q() * 8, y = 200 + (i % 2) * 12; o += strom(F, q, x, y, 1.1, "#6E8A44"); let pl = ""; for (let k = 0; k < 7; k++) pl += '<circle cx="' + f1(x + (q() - .5) * 12) + '" cy="' + f1(y - 18 + (q() - .5) * 8) + '" r=".9"/>'; o += rost('<g fill="#E8943A" opacity=".85">' + pl + '</g>'); }
       o += hrebeny(F, [[226, 4, 70, 4, "#A8A868", 0]]);
       return o + trava(F, r, 120, 226, 254, ["#8A8A48", "#A8A060", "#6E7A3E"]) + kvety(F, r, 18, 230, 252, ["#D23A2B", "#F4F0E4"], 1);
     },
@@ -2831,7 +2833,7 @@ var AKVARELY = (function(){
       [[96, 176], [306, 176], [80, 196], [322, 196]].forEach(function(c){ o += cypris(F, q, c[0], c[1], 42); });
       o += voda(F, r, "M180 190 L230 190 L260 256 L150 256 Z", "#7EC0D8", "#3E8AB0", 192, 250, 6);
       let zah = ""; for (let i = 0; i < 40; i++) zah += '<circle cx="' + f1(q() < .5 ? 20 + q() * 120 : 270 + q() * 130) + '" cy="' + f1(210 + q() * 44) + '" r="' + f1(1 + q() * 1.4) + '" fill="' + ["#D84A5A", "#E8A0B0", "#F4E6D0"][i % 3] + '"/>';
-      return o + koruny(F, q, -10, 150, 222, .8, "#4E8A44", .85, F.jemna) + koruny(F, q, 260, 420, 222, .8, "#4E8A44", .85, F.jemna) + '<g opacity=".9" filter="url(#' + F.jemna + ')">' + zah + '</g>';
+      return o + koruny(F, q, -10, 150, 222, .8, "#4E8A44", .85, F.jemna) + koruny(F, q, 260, 420, 222, .8, "#4E8A44", .85, F.jemna) + rost('<g opacity=".9" filter="url(#' + F.jemna + ')">' + zah + '</g>');
     },
     /* Arábie: pouštní oáza s datlovníky, hliněné domy s plochými střechami a cimbuřím, minaret */
     arabie: function(F, r){
@@ -2881,7 +2883,7 @@ var AKVARELY = (function(){
       o += mesita(F, q, 150, 204, 1, { stena: "#D8C09A", kupole: "#3E8A5A", minarety: [[-4, 1], [48, 1]], minaret: "hranol", stenaMin: "#D0B690", vyska: 36 });
       o += vesnice(F, q, [[40, 214, 30, 11, { typ: "plocha", stena: "#D0B088", bok: "#9A7A56", okna: 2, d: 10 }], [300, 216, 34, 12, { typ: "plocha", stena: "#D8BC92", bok: "#9A7A56", okna: 3, d: 10 }]]);
       let vin = ""; for (let rada = 0; rada < 4; rada++) for (let x = -8; x < 420; x += 7) vin += '<ellipse cx="' + f1(x + (q() - .5) * 2) + '" cy="' + f1(232 + rada * 6) + '" rx="' + f1(3 + rada * .4) + '" ry="2" fill="' + mix("#5E8A3A", "#B4C050", q() * .4) + '"/>';
-      return o + '<g opacity=".85" filter="url(#' + F.jemna + ')" style="mix-blend-mode:multiply">' + vin + '</g>';
+      return o + rost('<g opacity=".85" filter="url(#' + F.jemna + ')" style="mix-blend-mode:multiply">' + vin + '</g>');
     },
     /* Sindh: široký Indus s loďkami, rovina, hliněná vesnice s větrnými lapači, hrobky s kupolemi, datlovníky */
     sindh: function(F, r){
@@ -2913,7 +2915,7 @@ var AKVARELY = (function(){
       o += sikhara(F, 116, 150, 1.4, "#E6B88A") + sikhara(F, 158, 150, 1, "#EAC8A0");
       [[90, 214, 1.2], [200, 230, 1.5], [340, 208, 1]].forEach(function(b){ const x = b[0], y = b[1], s = b[2]; o += vrstva(F, "M" + f1(x - 16 * s) + " " + f1(y - 5 * s) + " L" + f1(x + 16 * s) + " " + f1(y - 6 * s) + " Q" + f1(x + 11 * s) + " " + f1(y + 2 * s) + " " + x + " " + f1(y + 2 * s) + " Q" + f1(x - 11 * s) + " " + f1(y + 2 * s) + " " + f1(x - 16 * s) + " " + f1(y - 5 * s) + " Z", "#6E5A48", "#4A3A2E", .95, F.jemna) + nanes(F, "M" + f1(x - 8 * s) + " " + f1(y - 5 * s) + " l0 " + f1(-5 * s) + " l" + f1(12 * s) + " 0 l0 " + f1(5 * s) + " z", "#C8402E", .85); });
       let kv = ""; for (let i = 0; i < 24; i++) kv += '<circle cx="' + f1(q() * 280) + '" cy="' + f1(186 + q() * 30) + '" r="1.2" fill="' + ["#E8902E", "#F0B830"][i % 2] + '"/>';
-      return o + '<g opacity=".85" filter="url(#' + F.jemna + ')">' + kv + '</g>';
+      return o + rost('<g opacity=".85" filter="url(#' + F.jemna + ')">' + kv + '</g>');
     },
     /* Bengálsko: zelená delta, řeka s plachetnicemi, doškové chýše s prohnutou střechou, banánovníky a palmy */
     bengalsko: function(F, r){
@@ -2930,7 +2932,7 @@ var AKVARELY = (function(){
         const st = "M" + f1(x - 4 * s) + " " + f1(y - 9 * s) + " Q" + f1(x + w / 2) + " " + f1(y - 26 * s) + " " + f1(x + w + 4 * s) + " " + f1(y - 9 * s) + " Q" + f1(x + w / 2) + " " + f1(y - 13 * s) + " " + f1(x - 4 * s) + " " + f1(y - 9 * s) + " Z";
         o += kryt(F, st, F.jemna) + vrstva(F, st, "#C8A868", "#8A6A3A", .95, F.jemna); });
       [[20, 226, .9], [170, 224, 1.1], [360, 222, 1]].forEach(function(p){ o += palma(F, r, p[0], p[1], p[2] * .8, "#3F7A3E"); });
-      for (let i = 0; i < 3; i++) { const x = 220 + i * 18; o += skupina(F, F.stetec, tah("M" + x + " 244 l0 -16", "#6E7A48", 2, .9)); [-2.2, -1.6, -1, -.5].forEach(function(u){ o += list(F, x, 230, 14 + q() * 4, u, "#5E9A48"); }); }
+      for (let i = 0; i < 3; i++) { const x = 220 + i * 18; o += rost(skupina(F, F.stetec, tah("M" + x + " 244 l0 -16", "#6E7A48", 2, .9))); [-2.2, -1.6, -1, -.5].forEach(function(u){ o += list(F, x, 230, 14 + q() * 4, u, "#5E9A48"); }); }
       return o + trava(F, r, 100, 232, 254, ["#5F8A3A", "#7EA04A"]);
     },
     /* Mughalská zahrada (urdština): bílá kupole s pavilonky čhatrí a minarety, červený pískovec, vodní kanál, cypřiše */
@@ -2948,7 +2950,7 @@ var AKVARELY = (function(){
       o += voda(F, r, "M190 180 L210 180 L236 256 L164 256 Z", "#8EC0DC", "#4E8AB0", 182, 250, 5);
       [[150, 196, 36], [250, 196, 36], [120, 220, 46], [280, 220, 46]].forEach(function(c){ o += cypris(F, q, c[0], c[1], c[2]); });
       let zah = ""; for (let i = 0; i < 50; i++) zah += '<circle cx="' + f1(q() < .5 ? q() * 150 : 250 + q() * 170) + '" cy="' + f1(200 + q() * 54) + '" r="' + f1(1 + q() * 1.3) + '" fill="' + ["#D84A5A", "#E8A040", "#F4E6D0"][i % 3] + '"/>';
-      return o + '<g opacity=".9" filter="url(#' + F.jemna + ')">' + zah + '</g>';
+      return o + rost('<g opacity=".9" filter="url(#' + F.jemna + ')">' + zah + '</g>');
     },
     /* Paňdžáb: zlatá pšenice a žlutá hořčice, bílá gurdvára se zlatou kupolí, vesnice, zavlažovací kanál */
     pandzab: function(F, r){
@@ -2960,7 +2962,7 @@ var AKVARELY = (function(){
       o += vesnice(F, q, [[60, 160, 22, 9, { typ: "plocha", stena: "#D8BC92", bok: "#9A7A56", okna: 1, d: 8 }], [90, 162, 20, 8, { typ: "plocha", stena: "#E0C8A0", bok: "#9A7A56", okna: 1, d: 8 }]]);
       o += pole(F, q, 160, 200, ["#E0C050", "#D8B848", "#E8D060", "#A8C064", "#E8C858"], false);
       let hor = ""; for (let i = 0; i < 90; i++) { const y = 200 + Math.pow(q(), .7) * 56, x = q() * 180, s2 = .4 + (y - 200) / 40; hor += '<circle cx="' + f1(x) + '" cy="' + f1(y) + '" r="' + f1(1.3 * s2) + '" fill="' + ["#F2D020", "#E8C010"][i % 2] + '"/>'; }
-      o += '<g opacity=".9" filter="url(#' + F.jemna + ')">' + hor + '</g>';
+      o += rost('<g opacity=".9" filter="url(#' + F.jemna + ')">' + hor + '</g>');
       return o + voda(F, r, "M300 256 L318 170 L322 170 L330 256 Z", "#A8C8DC", "#6E9AB8", 172, 250, 3) + trava(F, r, 120, 214, 254, ["#C8A840", "#B89830", "#D8B850"]);
     },
     /* Kač (gudžarátština): bílá solná pláň, kulaté hliněné chýše bhunga s bíle malovanými ornamenty */
@@ -2989,7 +2991,7 @@ var AKVARELY = (function(){
       let hr = ""; for (let x = 244; x < 340; x += 5) hr += mnoho([[x, 110], [x + 3, 110], [x + 3, 106], [x, 106]]);
       o += nanes(F, mnoho([[244, 112], [340, 108], [340, 104], [244, 108]]) + hr, "#8A8070") + nanes(F, "M286 108 l0 -8 q3 -3 6 0 l0 8 z", "#8A8070");
       o += hrebeny(F, [[170, 4, 80, 2, "#B8A870", 0]]) + pole(F, q, 176, 200, ["#C8B070", "#B8A060", "#A8B068", "#D0B878"], false);
-      o += strom(F, q, 330, 236, 2.4, "#4E7A3E") + skupina(F, F.stetec, tah("M320 236 l-2 -20 M340 236 l2 -18 M312 236 l-4 -14", "#6A5A48", .8, .8));
+      o += strom(F, q, 330, 236, 2.4, "#4E7A3E") + rost(skupina(F, F.stetec, tah("M320 236 l-2 -20 M340 236 l2 -18 M312 236 l-4 -14", "#6A5A48", .8, .8)));
       return o + sikhara(F, 120, 190, .8, "#E0C8A0");
     },
     /* Tibet: vysoká náhorní plošina, bílý klášter s rudým pásem pod štíty, čhorten, modlitební praporky, jaci */
@@ -3041,7 +3043,7 @@ var AKVARELY = (function(){
       o += voda(F, r, "M-10 140 Q200 134 420 142 L420 164 Q200 158 -10 168 Z", "#B8C8D0", "#8AA0B0", 142, 164, 8);
       o += hrebeny(F, [[168, 2, 90, 2, "#8EB05E", 0]]);
       for (let i = 0; i < 12; i++) { const y = 176 + i * 6 + i * i * .3; o += radaKeru(F, q, y, 1.5, 90, 1, .7 + i * .1, "#3E7A3A"); }
-      [[80, 190, 1.2], [200, 184, 1], [330, 196, 1.4]].forEach(function(t){ o += skupina(F, F.stetec, tah("M" + t[0] + " " + t[1] + " l0 -" + f1(30 * t[2]), "#8A7A68", 1.3 * t[2], .9)) + koruny(F, q, t[0] - 18 * t[2], t[0] + 18 * t[2], t[1] - 28 * t[2], .45 * t[2], "#5E8A4A", .8, F.jemna); });
+      [[80, 190, 1.2], [200, 184, 1], [330, 196, 1.4]].forEach(function(t){ o += rost(skupina(F, F.stetec, tah("M" + t[0] + " " + t[1] + " l0 -" + f1(30 * t[2]), "#8A7A68", 1.3 * t[2], .9))) + koruny(F, q, t[0] - 18 * t[2], t[0] + 18 * t[2], t[1] - 28 * t[2], .45 * t[2], "#5E8A4A", .8, F.jemna); });
       const hx = 250, hy = 168;
       o += skupina(F, F.stetec, tah("M" + (hx + 2) + " " + hy + " l0 -6 M" + (hx + 14) + " " + hy + " l0 -6 M" + (hx + 26) + " " + hy + " l0 -6", "#6A5A40", 1.2, .9)) + dum(F, q, hx, hy - 6, 30, 9, { typ: "sedlo", stena: "#C8B080", bok: "#8A7650", strecha: "#9A8A5A", okna: 2, rh: 9 });
       return o;
@@ -3085,7 +3087,7 @@ var AKVARELY = (function(){
       for (let i = 0; i < 8; i++) sl += tah("M" + (x + 4 + i * 12) + " " + y + " l0 -18", "#B8A080", 3, .95);
       o += nanes(F, mnoho([[x - 2, y - 18], [x + 96, y - 18], [x + 92, y - 24], [x + 2, y - 24]]), "#C8B08E") + skupina(F, F.stetec, sl) + gopuram(F, x + 118, y, .8).replace(/#E8C890|#D8A868|#E8D0A0|#C89060/g, "#C8B08E");
       o += voda(F, r, "M-10 200 Q200 192 420 202 L420 226 Q200 214 -10 228 Z", "#9EB8C0", "#6E8E98", 202, 224, 8);
-      for (let i = 0; i < 4; i++) { const x2 = 30 + i * 100 + q() * 20; o += skupina(F, F.stetec, tah("M" + f1(x2) + " 250 l0 -16", "#6E7A48", 2, .9)); [-2.2, -1.6, -1, -.5].forEach(function(u){ o += list(F, x2, 236, 14 + q() * 4, u, "#5E9A48"); }); }
+      for (let i = 0; i < 4; i++) { const x2 = 30 + i * 100 + q() * 20; o += rost(skupina(F, F.stetec, tah("M" + f1(x2) + " 250 l0 -16", "#6E7A48", 2, .9))); [-2.2, -1.6, -1, -.5].forEach(function(u){ o += list(F, x2, 236, 14 + q() * 4, u, "#5E9A48"); }); }
       return o + trava(F, r, 80, 234, 254, ["#5E8A3A", "#7EA04A"]);
     },
     /* Kérala (malajálamština): kanály lemované kokosovými palmami, hausbót s doškovou klenbou, dům se strmými taškovými střechami */
@@ -3131,7 +3133,7 @@ var AKVARELY = (function(){
         o += '<g opacity=".85">' + m + '</g>'; });
       o += voda(F, r, "M60 220 Q200 208 360 220 Q300 246 200 246 Q100 246 60 220 Z", "#8EB4B8", "#5E8A8A", 214, 244, 4);
       let lot = ""; for (let i = 0; i < 12; i++) { const x = 90 + q() * 240, y = 222 + q() * 18; lot += '<ellipse cx="' + f1(x) + '" cy="' + f1(y) + '" rx="4" ry="1.6" fill="#4E8A4A"/>' + (i % 2 ? '<circle cx="' + f1(x + 1) + '" cy="' + f1(y - 2) + '" r="1.5" fill="#E890B0"/>' : ""); }
-      return o + '<g opacity=".9" filter="url(#' + F.jemna + ')">' + lot + '</g>' + strom(F, q, 380, 244, 2, "#3E6A36");
+      return o + rost('<g opacity=".9" filter="url(#' + F.jemna + ')">' + lot + '</g>') + strom(F, q, 380, 244, 2, "#3E6A36");
     },
     /* Santálové: vesnice hliněných domů s geometrickými malbami, sálový les, rudá cesta */
     santal: function(F, r){
@@ -3187,7 +3189,7 @@ var AKVARELY = (function(){
       o += sin(F, 120, 162, 40, 14, 1, { stena: "#B8402E", strecha: "#4A5058", patra: 2 });
       o += mostek(F, 250, 196, 80, 1, "#E0DCD0");
       /* smuteční vrby: koruna a převislé větvičky */
-      [[30, 250, 1.5], [380, 248, 1.7]].forEach(function(v){ const x = v[0], y = v[1], k = v[2]; o += strom(F, q, x, y, k * 1.4, "#8AAE58"); let vl = ""; for (let i = 0; i < 22; i++) { const xx = x - 16 * k + i * 1.5 * k, yy = y - 26 * k - Math.sin(i / 21 * 3.14) * 6 * k; vl += tah("M" + f1(xx) + " " + f1(yy) + " q" + f1((q() - .5) * 2) + " " + f1(8 * k) + " " + f1((q() - .5) * 2) + " " + f1((12 + q() * 8) * k), "#7EA050", .6, .75); } o += skupina(F, F.stetec, vl); });
+      [[30, 250, 1.5], [380, 248, 1.7]].forEach(function(v){ const x = v[0], y = v[1], k = v[2]; o += strom(F, q, x, y, k * 1.4, "#8AAE58"); let vl = ""; for (let i = 0; i < 22; i++) { const xx = x - 16 * k + i * 1.5 * k, yy = y - 26 * k - Math.sin(i / 21 * 3.14) * 6 * k; vl += tah("M" + f1(xx) + " " + f1(yy) + " q" + f1((q() - .5) * 2) + " " + f1(8 * k) + " " + f1((q() - .5) * 2) + " " + f1((12 + q() * 8) * k), "#7EA050", .6, .75); } o += rost(skupina(F, F.stetec, vl)); });
       return o + ptaci(F, r, 3, 200, 60);
     },
     /* Kanton (kantonština): řeka Perlová s džunkami a sampany, domy s „ušatými“ štíty, banyány */
@@ -3257,7 +3259,7 @@ var AKVARELY = (function(){
       o += tul(140, 196, 44, 30) + tul(270, 186, 34, 24) + tul(350, 200, 26, 20);
       for (let i = 0; i < 6; i++) o += radaKeru(F, q, 214 + i * 7, 3, 60, 2, .8 + i * .1, "#4E8A3E");
       let bam = ""; for (let i = 0; i < 10; i++) { const x = 10 + i * 5 + q() * 4; bam += tah("M" + f1(x) + " 256 q" + f1((q() - .5) * 6) + " -40 " + f1((q() - .5) * 14) + " -70", "#6E9A4A", 1.4, .85); }
-      return o + skupina(F, F.stetec, bam) + koruny(F, q, -10, 60, 190, .5, "#6E9A4A", .75, F.jemna);
+      return o + rost(skupina(F, F.stetec, bam)) + koruny(F, q, -10, 60, 190, .5, "#6E9A4A", .75, F.jemna);
     },
     /* Japonsko: sopka se sněhem nad jezerem, pětipatrová pagoda, torii, rozkvetlé sakury */
     japonsko: function(F, r){
@@ -3270,7 +3272,7 @@ var AKVARELY = (function(){
       o += '<g transform="matrix(1 0 0 -.5 0 246)" opacity=".3">' + hory(F, r, hora, 164, "#98A2BC", "#5A6688", 118, .06) + '</g>';
       o += hrebeny(F, [[220, 5, 70, 4, "#789C58", 0]]);
       o += pagoda(F, 60, 222, 1, { patra: 5, stena: "#B8402E", strecha: "#3A3E46" }) + torii(F, 300, 212, 40, 34, 1);
-      for (let i = 0; i < 4; i++) { const x = 140 + i * 34 + q() * 8, y = 234 + q() * 8; o += strom(F, q, x, y, 1.3, "#8A7A60"); let kv = ""; for (let k = 0; k < 30; k++) kv += '<circle cx="' + f1(x + (q() - .5) * 20) + '" cy="' + f1(y - 22 + (q() - .5) * 14) + '" r="' + f1(1 + q()) + '"/>'; o += '<g fill="#F4C4D4" opacity=".9" filter="url(#' + F.jemna + ')">' + kv + '</g>'; }
+      for (let i = 0; i < 4; i++) { const x = 140 + i * 34 + q() * 8, y = 234 + q() * 8; o += strom(F, q, x, y, 1.3, "#8A7A60"); let kv = ""; for (let k = 0; k < 30; k++) kv += '<circle cx="' + f1(x + (q() - .5) * 20) + '" cy="' + f1(y - 22 + (q() - .5) * 14) + '" r="' + f1(1 + q()) + '"/>'; o += rost('<g fill="#F4C4D4" opacity=".9" filter="url(#' + F.jemna + ')">' + kv + '</g>'); }
       return o + trava(F, r, 110, 222, 252, ["#5E8A42", "#7EA24E"]);
     },
     /* Korea: domy hanok s prohnutými taškovými střechami, borovice, hory, kakibaum s oranžovými plody */
@@ -3282,9 +3284,9 @@ var AKVARELY = (function(){
       o += sin(F, 60, 206, 70, 13, 1, { stena: "#F2EEE4", strecha: "#3E4048", sloup: "#6A4A30", zvednuti: 1.6 }) + sin(F, 170, 200, 54, 11, .9, { stena: "#F2EEE4", strecha: "#3E4048", sloup: "#6A4A30", zvednuti: 1.6 }) + sin(F, 250, 212, 64, 12, 1, { stena: "#F2EEE4", strecha: "#3E4048", sloup: "#6A4A30", zvednuti: 1.6 });
       let zed = ""; for (let x = -10; x < 420; x += 5) zed += '<ellipse cx="' + f1(x + q() * 2) + '" cy="' + f1(226 + q() * 2) + '" rx="3" ry="2" fill="' + ["#B8B0A0", "#A89E8C", "#C8C0B0"][Math.floor(q() * 3)] + '"/>';
       o += '<g opacity=".9" filter="url(#' + F.jemna + ')" style="mix-blend-mode:multiply">' + zed + '</g>';
-      o += skupina(F, F.stetec, tah("M360 250 C356 220 370 200 350 176", "#5A4A3A", 2.4, .9)) + koruny(F, q, 320, 400, 180, .5, "#3E6044", .9, F.jemna);
+      o += rost(skupina(F, F.stetec, tah("M360 250 C356 220 370 200 350 176", "#5A4A3A", 2.4, .9))) + koruny(F, q, 320, 400, 180, .5, "#3E6044", .9, F.jemna);
       let kaki = ""; for (let i = 0; i < 10; i++) kaki += '<circle cx="' + f1(24 + q() * 36) + '" cy="' + f1(200 + q() * 20) + '" r="1.6" fill="#E8782E"/>';
-      return o + strom(F, q, 40, 240, 1.8, "#7A8A4A") + '<g opacity=".9">' + kaki + '</g>' + trava(F, r, 80, 232, 254, ["#5E8A42", "#7EA24E"]);
+      return o + strom(F, q, 40, 240, 1.8, "#7A8A4A") + rost('<g opacity=".9">' + kaki + '</g>') + trava(F, r, 80, 232, 254, ["#5E8A42", "#7EA24E"]);
     },
     /* Hmongové: strmé rýžové terasy v mlžných horách, dřevěné domy, bambusové háje */
     hmong: function(F, r){
@@ -3294,7 +3296,7 @@ var AKVARELY = (function(){
       o += terasy(F, r, 138, 12, 8, 14, 36, 3.2, ["#B4CC70", "#C8C878", "#9CC064", "#D0C878", "#A8C46A"], "#7A7A4A");
       o += vesnice(F, q, [[250, 170, 28, 10, { typ: "sedlo", stena: "#8A6E50", bok: "#5E4A36", strecha: "#6E6A68", okna: 2, rh: 9 }], [290, 176, 24, 9, { typ: "sedlo", stena: "#7A5E46", bok: "#5E4A36", strecha: "#6E6A68", okna: 1, rh: 8 }]]);
       let bam = ""; for (let i = 0; i < 14; i++) { const x = 330 + i * 5 + q() * 4; bam += tah("M" + f1(x) + " 256 q" + f1((q() - .5) * 6) + " -40 " + f1((q() - .5) * 14) + " -" + f1(60 + q() * 20), "#6E9A4A", 1.3, .85); }
-      return o + skupina(F, F.stetec, bam) + koruny(F, q, 320, 420, 190, .5, "#6E9A4A", .7, F.jemna) + mlha(F, 150, 170, .25);
+      return o + rost(skupina(F, F.stetec, bam)) + koruny(F, q, 320, 420, 190, .5, "#6E9A4A", .7, F.jemna) + mlha(F, 150, 170, .25);
     },
     /* Ainuové (Hokkaidó): horská řeka s lososy, jehličnatý les, doškový dům čise, sýpka na kůlech */
     ainu: function(F, r){
@@ -3359,7 +3361,7 @@ var AKVARELY = (function(){
       o += hrebeny(F, [[160, 2, 90, 2, "#A8C470", 0]]);
       for (let i = 0; i < 6; i++) { const y = 170 + i * 12 + i * i; o += voda(F, r, "M-10 " + f1(y) + " L410 " + f1(y - 1) + " L410 " + f1(y + 7 + i) + " L-10 " + f1(y + 8 + i) + " Z", i % 2 ? "#C0D4DE" : "#B4D07A", i % 2 ? "#94B4C8" : "#84AC56", y, y + 7, 2); }
       /* palmy cukrové: vysoký tenký kmen, kulatá koruna vějířů */
-      [[60, 176, 1], [90, 172, .8], [320, 178, 1.1], [360, 174, .9]].forEach(function(p){ o += skupina(F, F.stetec, tah("M" + p[0] + " " + p[1] + " l" + f1((q() - .5) * 3) + " -" + f1(50 * p[2]), "#5A4A3A", 1.4 * p[2], .95)) + koruny(F, q, p[0] - 9 * p[2], p[0] + 9 * p[2], p[1] - 48 * p[2], .45 * p[2], "#4E7A3A", .9, F.jemna); });
+      [[60, 176, 1], [90, 172, .8], [320, 178, 1.1], [360, 174, .9]].forEach(function(p){ o += rost(skupina(F, F.stetec, tah("M" + p[0] + " " + p[1] + " l" + f1((q() - .5) * 3) + " -" + f1(50 * p[2]), "#5A4A3A", 1.4 * p[2], .95))) + koruny(F, q, p[0] - 9 * p[2], p[0] + 9 * p[2], p[1] - 48 * p[2], .45 * p[2], "#4E7A3A", .9, F.jemna); });
       o += naKulech(F, q, 130, 196, 34, 10, 12, { typ: "sedlo", stena: "#8A6A4E", bok: "#5E4634", strecha: "#A8603E", okna: 2, rh: 11 });
       return o + buvol(F, 250, 226, 1.6) + buvol(F, 290, 232, 1.8);
     },
@@ -3399,7 +3401,7 @@ var AKVARELY = (function(){
       for (let i = 0; i < 6; i++) { const y = 166 + i * 12 + i * i; o += voda(F, r, "M-10 " + f1(y) + " L410 " + f1(y - 1) + " L410 " + f1(y + 7 + i) + " L-10 " + f1(y + 8 + i) + " Z", i % 2 ? "#C0D4DE" : "#B4D07A", i % 2 ? "#94B4C8" : "#84AC56", y, y + 7, 2); }
       o += sin(F, 260, 178, 56, 10, 1, { stena: "#9A6A4A", strecha: "#6A5A50", sloup: "#4A3020", zvednuti: 2.2 });
       let bam = ""; for (let i = 0; i < 12; i++) { const x = 330 + i * 5 + q() * 4; bam += tah("M" + f1(x) + " 176 q" + f1((q() - .5) * 6) + " -30 " + f1((q() - .5) * 12) + " -" + f1(44 + q() * 14), "#6E9A4A", 1.2, .85); }
-      return o + skupina(F, F.stetec, bam) + buvol(F, 90, 222, 1.8) + buvol(F, 150, 234, 2);
+      return o + rost(skupina(F, F.stetec, bam)) + buvol(F, 90, 222, 1.8) + buvol(F, 150, 234, 2);
     },
     /* Indonésie (Sumatra): dům rumah gadang s rohatou střechou, řada sopek, rýžové terasy, palmy */
     indonesie: function(F, r){
@@ -3495,7 +3497,7 @@ var AKVARELY = (function(){
       [[160, 218, 1.3], [250, 210, 1]].forEach(function(u){ const x = u[0], y = u[1], s = u[2]; let k = ""; for (let i = 0; i < 4; i++) k += tah("M" + f1(x - 12 * s + i * 8 * s) + " " + y + " l0 " + f1(-10 * s), "#5A4632", 1.4 * s, .95);
         const st = "M" + f1(x - 16 * s) + " " + f1(y - 10 * s) + " Q" + f1(x - 8 * s) + " " + f1(y - 30 * s) + " " + x + " " + f1(y - 56 * s) + " Q" + f1(x + 8 * s) + " " + f1(y - 30 * s) + " " + f1(x + 16 * s) + " " + f1(y - 10 * s) + " Z";
         o += skupina(F, F.stetec, k) + kryt(F, st, F.jemna) + vrstva(F, st, "#C8A868", "#8A6A3A", .95, F.jemna) + skupina(F, F.stetec, tah("M" + x + " " + f1(y - 56 * s) + " l0 " + f1(-4 * s) + " M" + f1(x - 3 * s) + " " + f1(y - 58 * s) + " l" + f1(6 * s) + " 0", "#5A4632", .8 * s, .9)); });
-      [[60, 226, 1.4], [330, 230, 1.6], [380, 222, 1.2]].forEach(function(t){ o += skupina(F, F.stetec, tah("M" + t[0] + " " + t[1] + " l" + f1((q() - .5) * 3) + " -" + f1(34 * t[2]), "#D8CCB8", 1.3 * t[2], .95)) + koruny(F, q, t[0] - 10 * t[2], t[0] + 10 * t[2], t[1] - 30 * t[2], .4 * t[2], "#7E8A5A", .8, F.jemna); });
+      [[60, 226, 1.4], [330, 230, 1.6], [380, 222, 1.2]].forEach(function(t){ o += rost(skupina(F, F.stetec, tah("M" + t[0] + " " + t[1] + " l" + f1((q() - .5) * 3) + " -" + f1(34 * t[2]), "#D8CCB8", 1.3 * t[2], .95))) + koruny(F, q, t[0] - 10 * t[2], t[0] + 10 * t[2], t[1] - 30 * t[2], .4 * t[2], "#7E8A5A", .8, F.jemna); });
       return o + trava(F, r, 140, 216, 254, ["#A89A58", "#B8A868", "#8A8A48"]);
     },
     /* Etiopie (amharština): stolové hory amby nad náhorní plošinou, kulatý kostel s kuželovou střechou a křížem, chýše tukul, tef */
@@ -3509,7 +3511,7 @@ var AKVARELY = (function(){
       o += kryt(F, z + st, F.jemna) + vrstva(F, z, "#E8D8B8", "#A89878", .95, F.jemna) + vrstva(F, st, "#A8905A", "#6A5A34", .95, F.jemna) + nanes(F, "M" + (cx - 4) + " " + cy + " l0 -10 l8 0 l0 10 z", "#3A6A9A", .9) + skupina(F, F.stetec, tah("M" + cx + " " + (cy - 44) + " l0 -8 M" + (cx - 3) + " " + (cy - 49) + " l6 0 M" + (cx - 2) + " " + (cy - 46) + " l4 0", "#C8A040", 1, .95));
       o += chyse(F, q, 110, 214, 1.3) + chyse(F, q, 140, 218, 1.1) + chyse(F, q, 330, 216, 1.2);
       let tef = ""; for (let i = 0; i < 140; i++) { const x = q() * W, y = 224 + q() * 30; tef += tah("M" + f1(x) + " " + f1(y) + " q" + f1((q() - .5) * 2) + " -4 " + f1((q() - .5) * 3) + " -" + f1(6 + (y - 224) / 5), ["#C8B060", "#B8A050", "#A89040"][i % 3], .5, .75); }
-      return o + skupina(F, F.stetec, tef) + akacie(F, q, 380, 196, .8);
+      return o + rost(skupina(F, F.stetec, tef)) + akacie(F, q, 380, 196, .8);
     },
     /* Tigraj/Eritrea (tigriňa): skalnaté amby, kamenné domy s plochou střechou, opuncie, kostel vtesaný do skály */
     tigraj: function(F, r){
@@ -3523,7 +3525,7 @@ var AKVARELY = (function(){
       o += vesnice(F, q, dm);
       let tr = ""; dm.forEach(function(d){ for (let k = 1; k < 4; k++) tr += tah("M" + d[0] + " " + f1(d[1] - d[3] * k / 4) + " l" + d[2] + " 0", "#6A5A4A", .5, .5); }); o += skupina(F, F.stetec, tr);
       let op = ""; [[300, 226], [340, 234], [370, 222]].forEach(function(c){ [[0, 0, 6], [-6, -8, 5], [6, -9, 5], [0, -15, 4]].forEach(function(p){ op += '<ellipse cx="' + (c[0] + p[0]) + '" cy="' + (c[1] + p[1]) + '" rx="' + p[2] + '" ry="' + (p[2] * .75) + '"/>'; }); });
-      return o + '<g fill="#6E9A5A" opacity=".9" filter="url(#' + F.jemna + ')" style="mix-blend-mode:multiply">' + op + '</g>' + trava(F, r, 80, 222, 254, ["#A89858", "#B8A868"]);
+      return o + rost('<g fill="#6E9A5A" opacity=".9" filter="url(#' + F.jemna + ')" style="mix-blend-mode:multiply">' + op + '</g>') + trava(F, r, 80, 222, 254, ["#A89858", "#B8A868"]);
     },
     /* Somálsko: suchá buš s akáciemi, kopulovité chýše aqal z rohoží, velbloudi, termitiště */
     somalsko: function(F, r){
@@ -3608,7 +3610,7 @@ var AKVARELY = (function(){
         o += '<path d="' + m + '" fill="#2A2020" opacity=".75"/>' + nanes(F, mnoho([[d[0], d[1] - d[3] * .45], [d[0] + d[2], d[1] - d[3] * .45], [d[0] + d[2], d[1] - d[3] * .55], [d[0], d[1] - d[3] * .55]]), "#FBFAF6", .9); });
       [[190, 206, 1], [320, 204, 1.1]].forEach(function(s2){ const x = s2[0], y = s2[1], s = s2[2], d = "M" + f1(x - 7 * s) + " " + y + " L" + f1(x - 7 * s) + " " + f1(y - 12 * s) + " L" + f1(x + 7 * s) + " " + f1(y - 12 * s) + " L" + f1(x + 7 * s) + " " + y + " Z"; o += kryt(F, d, F.jemna) + vrstva(F, d, "#C8905A", "#8A5A36", .95, F.jemna) + vrstva(F, "M" + f1(x - 9 * s) + " " + f1(y - 11 * s) + " Q" + x + " " + f1(y - 26 * s) + " " + f1(x + 9 * s) + " " + f1(y - 11 * s) + " Z", "#C8A868", "#8A6A3A", .95, F.jemna); });
       let cir = ""; for (let i = 0; i < 70; i++) { const x = q() * W, y = 218 + q() * 36; cir += tah("M" + f1(x) + " " + f1(y) + " l" + f1((q() - .5) * 2) + " -" + f1(14 + q() * 8) , "#8A9A48", .8, .8) + '<ellipse cx="' + f1(x) + '" cy="' + f1(y - 18) + '" rx="1.4" ry="3" fill="#A8502E" opacity=".8"/>'; }
-      return o + skupina(F, F.stetec, cir);
+      return o + rost(skupina(F, F.stetec, cir));
     },
     /* Čadské jezero (kanurijština): mělká voda s papyrem, rákosové čluny, písečné duny, chýše z rohoží */
     cad: function(F, r){
@@ -3617,7 +3619,7 @@ var AKVARELY = (function(){
       o += duna(F, r, 140, 6, 70, 1, "#ECC48C", "#C08A58");
       o += voda(F, r, "M-10 168 L420 166 L420 256 L-10 256 Z", "#A8C4C0", "#6E9090", 170, 250, 14);
       let pap = ""; for (let i = 0; i < 40; i++) { const x = q() < .5 ? q() * 120 : 280 + q() * 130, y = 172 + q() * 30; pap += tah("M" + f1(x) + " " + f1(y) + " l" + f1((q() - .5) * 3) + " -" + f1(12 + q() * 10), "#6E8A40", .8, .85) + '<ellipse cx="' + f1(x) + '" cy="' + f1(y - 20) + '" rx="3" ry="1.6" fill="#7E9A48" opacity=".85"/>'; }
-      o += skupina(F, F.stetec, pap);
+      o += rost(skupina(F, F.stetec, pap));
       [[160, 214, 1.3], [240, 232, 1.5]].forEach(function(b){ const x = b[0], y = b[1], s = b[2]; o += vrstva(F, "M" + f1(x - 20 * s) + " " + f1(y - 8 * s) + " Q" + x + " " + f1(y + 3 * s) + " " + f1(x + 20 * s) + " " + f1(y - 8 * s) + " Q" + x + " " + f1(y - 3 * s) + " " + f1(x - 20 * s) + " " + f1(y - 8 * s) + " Z", "#C8A860", "#8A7038", .95, F.jemna); });
       return o + ul(F, 60, 168, 1.1, "#C8A868") + ul(F, 90, 170, .9, "#B89858");
     },
@@ -3643,7 +3645,7 @@ var AKVARELY = (function(){
       o += vesnice(F, q, [[60, 198, 44, 14, { typ: "valba", stena: "#B8704A", bok: "#7A4A30", strecha: "#A8905A", okna: 2, rh: 14 }], [230, 194, 50, 15, { typ: "valba", stena: "#C07A50", bok: "#7A4A30", strecha: "#A8905A", okna: 2, rh: 15 }]]);
       o += nanes(F, "M40 200 L380 198 L380 204 L40 206 Z", "#A8683E");
       let hr = ""; for (let rada = 0; rada < 4; rada++) for (let x = -6; x < 420; x += 16) { const y = 222 + rada * 9, s = .8 + rada * .2; hr += '<ellipse cx="' + f1(x + (rada % 2) * 8) + '" cy="' + f1(y) + '" rx="' + f1(6 * s) + '" ry="' + f1(3 * s) + '" fill="#9A6038"/>' + tah("M" + f1(x + (rada % 2) * 8) + " " + f1(y - 3 * s) + " q2 -6 -1 -" + f1(10 * s), "#4E8A3A", .8, .85); }
-      o += '<g opacity=".9" filter="url(#' + F.jemna + ')">' + hr.replace(/<path[^>]*>/g, "") + '</g>' + skupina(F, F.stetec, hr.replace(/<ellipse[^>]*>/g, ""));
+      o += '<g opacity=".9" filter="url(#' + F.jemna + ')">' + hr.replace(/<path[^>]*>/g, "") + '</g>' + rost(skupina(F, F.stetec, hr.replace(/<ellipse[^>]*>/g, "")));
       return o + palma(F, r, 20, 210, 1.3) + palma(F, r, 170, 200, 1.1) + palma(F, r, 390, 212, 1.2);
     },
     /* Kongo (lingala): široká řeka Kongo s pirogami a říčním člunem, hustý prales na březích */
@@ -3669,7 +3671,7 @@ var AKVARELY = (function(){
       const ch = { typ: "sedlo", stena: "#B8784E", bok: "#7A4A30", strecha: "#A8905A", okna: 1, rh: 10 };
       o += vesnice(F, q, [[60, 206, 30, 10, ch], [110, 210, 26, 9, ch], [270, 208, 30, 10, ch], [320, 212, 28, 9, ch]]);
       let man = ""; for (let rada = 0; rada < 3; rada++) for (let x = -6; x < 420; x += 12) { const y = 230 + rada * 9; for (let k = 0; k < 5; k++) { const a = -2.6 + k * .5; man += tah("M" + f1(x + (rada % 2) * 6) + " " + f1(y) + " l" + f1(Math.cos(a) * 6) + " " + f1(Math.sin(a) * 6), "#4E8A3A", .8, .8); } }
-      return o + skupina(F, F.stetec, man) + palma(F, r, 200, 214, 1.1);
+      return o + rost(skupina(F, F.stetec, man)) + palma(F, r, 200, 214, 1.1);
     },
     /* Akanové (Ghana): kakaovníky s plody pod stromy pralesa, vesnice hliněných domů, sušení kakaa na rohožích */
     akan: function(F, r){
@@ -3679,7 +3681,7 @@ var AKVARELY = (function(){
       const zem = "M-10 256 L-10 180 L420 180 L420 256 Z";
       o += kryt(F, zem) + vrstva(F, zem, "#C08A5E", "#9A6A42", .9);
       o += vesnice(F, q, [[40, 196, 40, 14, { typ: "valba", stena: "#D8B48A", bok: "#9A7450", strecha: "#8A7A6A", okna: 2, okenice: "#2E6A4A", rh: 8 }], [100, 198, 36, 13, { typ: "valba", stena: "#E0C098", bok: "#9A7450", strecha: "#8A7A6A", okna: 2, rh: 8 }]]);
-      [[250, 214, 1.4], [320, 206, 1.2], [370, 220, 1.5]].forEach(function(t){ o += strom(F, q, t[0], t[1], t[2], "#4E7A3A"); let pl = ""; for (let k = 0; k < 6; k++) pl += '<ellipse cx="' + f1(t[0] + (q() - .5) * 4) + '" cy="' + f1(t[1] - 4 - k * 1.8) + '" rx="1.4" ry="2.4" fill="' + ["#E8A030", "#C8602E", "#D8C040"][k % 3] + '"/>'; o += '<g opacity=".9">' + pl + '</g>'; });
+      [[250, 214, 1.4], [320, 206, 1.2], [370, 220, 1.5]].forEach(function(t){ o += strom(F, q, t[0], t[1], t[2], "#4E7A3A"); let pl = ""; for (let k = 0; k < 6; k++) pl += '<ellipse cx="' + f1(t[0] + (q() - .5) * 4) + '" cy="' + f1(t[1] - 4 - k * 1.8) + '" rx="1.4" ry="2.4" fill="' + ["#E8A030", "#C8602E", "#D8C040"][k % 3] + '"/>'; o += rost('<g opacity=".9">' + pl + '</g>'); });
       let roh = ""; [[60, 230], [140, 238]].forEach(function(p){ roh += mnoho([[p[0], p[1]], [p[0] + 50, p[1]], [p[0] + 46, p[1] - 5], [p[0] + 4, p[1] - 5]]); });
       o += nanes(F, roh, "#C8B088") + '<g fill="#6A3A22" opacity=".8">' + Array.from({length: 40}, function(){ return '<circle cx="' + f1(64 + q() * 120) + '" cy="' + f1(228 + q() * 8) + '" r=".9"/>'; }).join("") + '</g>';
       return o + palma(F, r, 200, 200, 1.1);
@@ -3727,7 +3729,7 @@ var AKVARELY = (function(){
       let o = nebe(F, "#80AEDE", "#F0EAD8") + mraky(F, r, 4, 26, 70, 90);
       o += hrebeny(F, [[126, 14, 60, 1, "#8EA2B0", .5], [150, 12, 60, 2.4, "#8CB060", .1]]);
       o += hrebeny(F, [[178, 8, 70, 3.5, "#98BC66", 0]]);
-      o += skupina(F, F.stetec, tah("M290 222 C288 200 296 186 290 170 M290 196 l-18 -12 M292 190 l20 -14", "#5A4A3A", 3.4, .9)) + koruny(F, q, 220, 370, 168, .9, "#4E7A40", .9, F.jemna) + koruny(F, q, 240, 350, 156, .8, "#5E8A48", .85, F.jemna);
+      o += rost(skupina(F, F.stetec, tah("M290 222 C288 200 296 186 290 170 M290 196 l-18 -12 M292 190 l20 -14", "#5A4A3A", 3.4, .9))) + koruny(F, q, 220, 370, 168, .9, "#4E7A40", .9, F.jemna) + koruny(F, q, 240, 350, 156, .8, "#5E8A48", .85, F.jemna);
       o += chyse(F, q, 80, 212, 1.5) + chyse(F, q, 124, 216, 1.2) + chyse(F, q, 180, 210, 1.3);
       return o + zebu(F, [[200, 236, 1.6, "#8A5A3A"], [330, 240, 1.8, "#E8E0D0"], [60, 242, 1.7, "#5A4030"]]) + trava(F, r, 120, 226, 254, ["#557F38", "#78A04A"]);
     },
@@ -3743,7 +3745,7 @@ var AKVARELY = (function(){
       o += skupina(F, F.stetec, pl) + zebu(F, [[180, 220, 1.1, "#8A5A3A"], [205, 218, 1.1, "#E8E0D0"]]);
       for (let i = 0; i < 9; i++) { const a = Math.PI * (.1 + i * .1), x = cx + Math.cos(a) * 110, y = cy + Math.sin(a) * 26; if (y > cy + 4) o += ul(F, x, y + 6, 1.4, "#B89A62"); }
       let al = ""; [[30, 244], [380, 248]].forEach(function(p){ for (let k = 0; k < 7; k++) { const a = -2.9 + k * .3; al += tah("M" + p[0] + " " + p[1] + " q" + f1(Math.cos(a) * 6) + " " + f1(Math.sin(a) * 8) + " " + f1(Math.cos(a) * 12) + " " + f1(Math.sin(a) * 14), "#5E8A6A", 2, .85); } al += tah("M" + p[0] + " " + p[1] + " l0 -30", "#6A6A48", 1, .9) + tah("M" + (p[0] - 1) + " " + (p[1] - 30) + " l2 -8", "#E8602E", 3, .9); });
-      return o + skupina(F, F.stetec, al) + trava(F, r, 100, 230, 254, ["#557F38", "#78A04A"]);
+      return o + rost(skupina(F, F.stetec, al)) + trava(F, r, 100, 230, 254, ["#557F38", "#78A04A"]);
     },
     /* Rwanda: tisíc kopců s terasami v ranní mlze, banánovníky, domy s plechovou střechou */
     rwanda: function(F, r){
@@ -3752,7 +3754,7 @@ var AKVARELY = (function(){
       o += hrebeny(F, [[104, 16, 40, 1, "#8E9EB4", .6], [122, 16, 36, 2.4, "#6E8E6A", .4]]) + mlha(F, 116, 140, .55);
       o += terasy(F, r, 142, 9, 9, 14, 40, 3.2, ["#9CC064", "#B4C870", "#88B458", "#C4C47A"], "#6E7A3A");
       o += vesnice(F, q, [[250, 176, 22, 9, { typ: "sedlo", stena: "#D8B888", bok: "#9A7A56", strecha: "#9AA2AA", okna: 2, rh: 6 }], [290, 182, 20, 8, { typ: "sedlo", stena: "#C8A478", bok: "#9A7A56", strecha: "#9AA2AA", okna: 1, rh: 6 }]]);
-      for (let i = 0; i < 6; i++) { const x = 20 + i * 24 + q() * 6, y = 236 + q() * 10; o += skupina(F, F.stetec, tah("M" + f1(x) + " " + f1(y) + " l" + f1((q() - .5) * 2) + " -20", "#6E7A48", 2, .9)); [-2.3, -1.7, -1.1, -.6, -2.8].forEach(function(u){ o += list(F, x, y - 19, 18 + q() * 5, u, "#5E9A48"); }); }
+      for (let i = 0; i < 6; i++) { const x = 20 + i * 24 + q() * 6, y = 236 + q() * 10; o += rost(skupina(F, F.stetec, tah("M" + f1(x) + " " + f1(y) + " l" + f1((q() - .5) * 2) + " -20", "#6E7A48", 2, .9))); [-2.3, -1.7, -1.1, -.6, -2.8].forEach(function(u){ o += list(F, x, y - 19, 18 + q() * 5, u, "#5E9A48"); }); }
       return o + mlha(F, 150, 168, .25);
     },
     /* Uganda (luganda): břeh Viktoriina jezera, plantáže banánovníků matoke, papyrus, rybářské čluny */
@@ -3761,11 +3763,11 @@ var AKVARELY = (function(){
       let o = nebe(F, "#86B2DC", "#F0EAD6") + mraky(F, r, 4, 26, 70, 90);
       o += voda(F, r, "M-10 140 L420 138 L420 194 L-10 196 Z", "#8EB4CC", "#5A86A8", 142, 192, 14);
       let pap = ""; for (let i = 0; i < 30; i++) { const x = 250 + q() * 170, y = 190 + q() * 10; pap += tah("M" + f1(x) + " " + f1(y) + " l" + f1((q() - .5) * 3) + " -" + f1(14 + q() * 10), "#6E8A40", .8, .85); for (let k = 0; k < 6; k++) { const a = -2.8 + k * .4; pap += tah("M" + f1(x) + " " + f1(y - 22) + " l" + f1(Math.cos(a) * 4) + " " + f1(Math.sin(a) * 4), "#7E9A48", .5, .8); } }
-      o += skupina(F, F.stetec, pap);
+      o += rost(skupina(F, F.stetec, pap));
       [[80, 172, 1.2], [160, 180, 1]].forEach(function(b){ const x = b[0], y = b[1], s = b[2]; o += vrstva(F, "M" + f1(x - 22 * s) + " " + f1(y - 5 * s) + " Q" + x + " " + f1(y + 3 * s) + " " + f1(x + 22 * s) + " " + f1(y - 6 * s) + " L" + f1(x + 18 * s) + " " + f1(y - 2 * s) + " L" + f1(x - 18 * s) + " " + f1(y - 2 * s) + " Z", "#6A4A34", "#3A2A20", .95, F.jemna); });
       const br = "M-10 256 L-10 198 Q200 190 420 198 L420 256 Z";
       o += kryt(F, br) + vrstva(F, br, "#8CB85E", "#5E8A42", .9);
-      for (let i = 0; i < 9; i++) { const x = 10 + i * 46 + q() * 10, y = 230 + (i % 2) * 14; o += skupina(F, F.stetec, tah("M" + f1(x) + " " + f1(y) + " l" + f1((q() - .5) * 2) + " -22", "#6E7A48", 2.2, .9)); [-2.3, -1.7, -1.1, -.6, -2.8].forEach(function(u){ o += list(F, x, y - 21, 20 + q() * 5, u, "#5E9A48"); }); }
+      for (let i = 0; i < 9; i++) { const x = 10 + i * 46 + q() * 10, y = 230 + (i % 2) * 14; o += rost(skupina(F, F.stetec, tah("M" + f1(x) + " " + f1(y) + " l" + f1((q() - .5) * 2) + " -22", "#6E7A48", 2.2, .9))); [-2.3, -1.7, -1.1, -.6, -2.8].forEach(function(u){ o += list(F, x, y - 21, 20 + q() * 5, u, "#5E9A48"); }); }
       return o;
     },
     /* Malawi (čičeva): průzračné jezero s rybářskými kánoemi, písečná pláž, baobab, mangovníky, hory za jezerem */
@@ -3813,7 +3815,7 @@ var AKVARELY = (function(){
         for (let t = .1; t <= 1.05; t += .04 + t * .03) { const x = vx + (xb - vx) * t, y = vy + (H - vy) * t, s = .4 + t * 2.2; if (y < 196) continue;
           listy += '<ellipse cx="' + f1(x + (q() - .5) * s) + '" cy="' + f1(y - s * 1.2) + '" rx="' + f1(s * 1.3) + '" ry="' + f1(s * .9) + '" fill="' + mix("#5E8A3A", q() < .5 ? "#B4C050" : "#2E5A2E", q() * .4) + '"/>'; } }
       o += vrstva(F, "M-10 256 L-10 196 L420 196 L420 256 Z", "#C8A878", "#A8845A", .55);
-      return o + '<g opacity=".88" filter="url(#' + F.jemna + ')" style="mix-blend-mode:multiply">' + listy + '</g>';
+      return o + rost('<g opacity=".88" filter="url(#' + F.jemna + ')" style="mix-blend-mode:multiply">' + listy + '</g>');
     },
     /* Berbeři (tamazight): pohoří Atlas se sněhem, hliněná kasba s nárožními věžemi, palmová oáza v údolí */
     kasba: function(F, r){
@@ -3881,7 +3883,7 @@ var AKVARELY = (function(){
       const dm = []; for (let i = 0; i < 6; i++) dm.push([20 + i * 26 + (i > 2 ? 140 : 0), 226 + (i % 2) * 4, 22, 10, { typ: "sedlo", stena: b[i % 5], bok: mix(b[i % 5], "#3A3A3A", .3), strecha: "#B8603E", okna: 1, rh: 5 }]);
       o += vesnice(F, q, dm);
       let k = ""; for (let i = 0; i < 70; i++) { const x = q() * W, y = 236 + q() * 20; k += tah("M" + f1(x) + " " + f1(y) + " l" + f1((q() - .5) * 2) + " -" + f1(10 + q() * 6), "#7E9A40", .9, .85); }
-      return o + skupina(F, F.stetec, k);
+      return o + rost(skupina(F, F.stetec, k));
     },
     /* prérie (lakotština): travnatá rovina pod velkým nebem, típí s malovanými pásy, stádo bizonů, borovice na kopcích */
     prerie: function(F, r){
@@ -3901,7 +3903,7 @@ var AKVARELY = (function(){
       o += pas(F, q, 164, .7, "#9A8A4A");
       const b = ["#C8602E", "#D8A030", "#A8402A", "#8A9A48"]; let pod = "";
       for (let i = 0; i < 60; i++) pod += '<circle cx="' + f1(q() * W) + '" cy="' + f1(160 + q() * 30) + '" r="' + f1(2 + q() * 3) + '" fill="' + b[i % 4] + '"/>';
-      o += '<g opacity=".75" filter="url(#' + F.jemna + ')" style="mix-blend-mode:multiply">' + pod + '</g>';
+      o += rost('<g opacity=".75" filter="url(#' + F.jemna + ')" style="mix-blend-mode:multiply">' + pod + '</g>');
       o += hrebeny(F, [[200, 6, 70, 4, "#9AAA5A", 0]]);
       o += dum(F, q, 170, 222, 44, 12, { typ: "sedlo", stena: "#8A6A4E", bok: "#5E4634", strecha: "#5A5A5A", okna: 2, rh: 10, komin: "#8A8070" });
       let tr = ""; for (let k = 1; k < 5; k++) tr += tah("M170 " + (222 - k * 2.4) + " l44 0", "#5A4430", .5, .6); o += skupina(F, F.stetec, tr);
@@ -3913,7 +3915,7 @@ var AKVARELY = (function(){
       let o = nebe(F, "#8CB0DA", "#F0E8D6") + mraky(F, r, 3, 30, 66, 80);
       const brehy = lesik(F, q, -10, 410, 144, 1.1, "#3E5A48", true);
       o += brehy + voda(F, r, "M-10 146 L410 145 L410 256 L-10 256 Z", "#AEC4D8", "#6A8EAE", 150, 250, 14) + '<g transform="matrix(1 0 0 -.6 0 233)" opacity=".28">' + brehy + '</g>';
-      let ryze = ""; for (let i = 0; i < 50; i++) { const x = 250 + q() * 170, y = 176 + q() * 30; ryze += tah("M" + f1(x) + " " + f1(y) + " l" + f1((q() - .5) * 3) + " -" + f1(10 + q() * 8), "#A8A058", .7, .85); } o += skupina(F, F.stetec, ryze);
+      let ryze = ""; for (let i = 0; i < 50; i++) { const x = 250 + q() * 170, y = 176 + q() * 30; ryze += tah("M" + f1(x) + " " + f1(y) + " l" + f1((q() - .5) * 3) + " -" + f1(10 + q() * 8), "#A8A058", .7, .85); } o += rost(skupina(F, F.stetec, ryze));
       o += vrstva(F, "M130 206 Q170 214 210 204 L206 200 Q170 208 134 202 Z", "#E8DCC0", "#A89878", .95, F.jemna);
       const br = "M-10 256 L-10 214 Q60 206 120 222 Q150 236 160 256 Z";
       o += kryt(F, br) + vrstva(F, br, "#8EAE60", "#5E8A44", .9);
@@ -3950,7 +3952,7 @@ var AKVARELY = (function(){
       [[40, 224, 50, 22], [110, 220, 44, 20], [230, 226, 52, 24], [300, 222, 46, 20]].forEach(function(d, i){ o += dum(F, q, d[0], d[1], d[2], d[3], { typ: "valba", stena: b[i][0], bok: mix(b[i][0], "#3A3A4A", .3), strecha: "#B8503A", patra: 2, okna: 3, okenice: b[i][1], rh: 14 });
         let ver = ""; for (let k = 0; k <= 6; k++) ver += tah("M" + f1(d[0] + k * d[2] / 6) + " " + d[1] + " l0 " + f1(-d[3] * .45), "#FBFAF6", .8, .9);
         ver += tah("M" + d[0] + " " + f1(d[1] - d[3] * .45) + " l" + d[2] + " 0", "#FBFAF6", 1.2, .9); o += skupina(F, F.stetec, ver); });
-      for (let i = 0; i < 3; i++) { const x = 190 + i * 16; o += skupina(F, F.stetec, tah("M" + x + " 244 l0 -18", "#6E7A48", 2, .9)); [-2.2, -1.6, -1, -.5].forEach(function(u){ o += list(F, x, 228, 16 + q() * 4, u, "#5E9A48"); }); }
+      for (let i = 0; i < 3; i++) { const x = 190 + i * 16; o += rost(skupina(F, F.stetec, tah("M" + x + " 244 l0 -18", "#6E7A48", 2, .9))); [-2.2, -1.6, -1, -.5].forEach(function(u){ o += list(F, x, 228, 16 + q() * 4, u, "#5E9A48"); }); }
       return o + palma(F, r, 380, 240, 1.2);
     },
     /* Curaçao (papiamento): pastelové domy s holandskými štíty na nábřeží, kaktusy, větrem ohnutý strom divi-divi */
@@ -3965,8 +3967,8 @@ var AKVARELY = (function(){
       const br = "M-10 256 L-10 226 Q60 220 120 232 Q150 240 160 256 Z";
       o += kryt(F, br) + vrstva(F, br, "#D8C498", "#B8A070", .9);
       let kak = ""; [[30, 232, 1.2], [60, 236, 1], [100, 238, .9]].forEach(function(k){ kak += tah("M" + k[0] + " " + k[1] + " l0 -" + f1(26 * k[2]) + " M" + (k[0] - 5 * k[2]) + " " + f1(k[1] - 10 * k[2]) + " q0 -8 5 -8 M" + (k[0] + 5 * k[2]) + " " + f1(k[1] - 14 * k[2]) + " q0 -8 -5 -8", "#5E8A6A", 3 * k[2], .9); });
-      o += skupina(F, F.stetec, kak);
-      o += skupina(F, F.stetec, tah("M140 250 Q150 232 176 222", "#5A4A3A", 2.4, .9)) + koruny(F, q, 160, 220, 222, .45, "#4E7A40", .9, F.jemna);
+      o += rost(skupina(F, F.stetec, kak));
+      o += rost(skupina(F, F.stetec, tah("M140 250 Q150 232 176 222", "#5A4A3A", 2.4, .9))) + koruny(F, q, 160, 220, 222, .45, "#4E7A40", .9, F.jemna);
       return o;
     },
     /* Oaxaca (zapotéčtina): údolí s řadami agáví, hliněné domy, suché kopce, bílý kostelík */
@@ -4110,9 +4112,9 @@ var AKVARELY = (function(){
       let orn = ""; for (let k = 0; k < 8; k++) orn += '<path d="M' + f1(x + 4 + k * 5) + " " + f1(y - h - k * 4.2) + ' q2 -2 4 0" stroke="#FBFAF6" stroke-width=".6" fill="none"/><path d="M' + f1(x + w - 4 - k * 5) + " " + f1(y - h - k * 4.2) + ' q-2 -2 -4 0" stroke="#FBFAF6" stroke-width=".6" fill="none"/>';
       o += '<g opacity=".8">' + orn + '</g>';
       /* stromová kapradina ponga a len harakeke */
-      [[50, 244, 1.3], [370, 240, 1.2]].forEach(function(p){ o += skupina(F, F.stetec, tah("M" + p[0] + " " + p[1] + " l0 -" + f1(36 * p[2]), "#4A3A2E", 2 * p[2], .95)); for (let k = 0; k < 9; k++) { const a = -3.1 + k * .39; o += skupina(F, F.stetec, tah("M" + p[0] + " " + f1(p[1] - 36 * p[2]) + " q" + f1(Math.cos(a) * 10 * p[2]) + " " + f1(Math.sin(a) * 8 * p[2] - 4) + " " + f1(Math.cos(a) * 20 * p[2]) + " " + f1(Math.sin(a) * 6 * p[2] + 4), "#4E7A40", 2, .85)); } });
+      [[50, 244, 1.3], [370, 240, 1.2]].forEach(function(p){ o += rost(skupina(F, F.stetec, tah("M" + p[0] + " " + p[1] + " l0 -" + f1(36 * p[2]), "#4A3A2E", 2 * p[2], .95))); for (let k = 0; k < 9; k++) { const a = -3.1 + k * .39; o += rost(skupina(F, F.stetec, tah("M" + p[0] + " " + f1(p[1] - 36 * p[2]) + " q" + f1(Math.cos(a) * 10 * p[2]) + " " + f1(Math.sin(a) * 8 * p[2] - 4) + " " + f1(Math.cos(a) * 20 * p[2]) + " " + f1(Math.sin(a) * 6 * p[2] + 4), "#4E7A40", 2, .85))); } });
       let len = ""; for (let k = 0; k < 9; k++) { const a = -2.6 + k * .14; len += tah("M280 250 q" + f1(Math.cos(a) * 8) + " " + f1(Math.sin(a) * 14) + " " + f1(Math.cos(a) * 14) + " " + f1(Math.sin(a) * 26), "#5E7A4A", 1.6, .9); }
-      return o + skupina(F, F.stetec, len) + trava(F, r, 100, 226, 254, ["#557F38", "#78A04A"]);
+      return o + rost(skupina(F, F.stetec, len)) + trava(F, r, 100, 226, 254, ["#557F38", "#78A04A"]);
     },
     /* Papua Nová Guinea (tok pisin): řeka Sepik v pralese, duchovní dům haus tambaran s vysokým malovaným štítem, kánoe */
     papua: function(F, r){
@@ -4228,8 +4230,8 @@ var AKVARELY = (function(){
           li += '<ellipse cx="' + f1(x + 2 * s2) + '" cy="' + f1(y + 4 * s2) + '" rx="' + f1(3 * s2) + '" ry="' + f1(1.4 * s2) + '"/>';
           for (let k = 0; k < 10; k++) { const a = k / 10 * 6.283; pl += '<ellipse cx="' + f1(x + Math.cos(a) * 2.4 * s2) + '" cy="' + f1(y + Math.sin(a) * 1.9 * s2) + '" rx="' + f1(1.3 * s2) + '" ry="' + f1(.6 * s2) + '" transform="rotate(' + f1(a * 57.3) + " " + f1(x + Math.cos(a) * 2.4 * s2) + " " + f1(y + Math.sin(a) * 1.9 * s2) + ')"/>'; }
           ct += '<ellipse cx="' + f1(x) + '" cy="' + f1(y) + '" rx="' + f1(1.5 * s2) + '" ry="' + f1(1.2 * s2) + '"/>'; st += "M" + f1(x) + " " + f1(y + s2) + " l" + f1(.4 * s2) + " " + f1(8 * s2) + " "; }
-        o += skupina(F, F.stetec, '<path d="' + st + '" stroke="#4E6E2E" stroke-width="1" fill="none" opacity=".7"/>') + '<g fill="#5E8A3A" opacity=".8" filter="url(#' + F.jemna + ')" style="mix-blend-mode:multiply">' + li + '</g>' +
-          '<g fill="#F2B82A" opacity=".95" filter="url(#' + F.jemna + ')">' + pl + '</g><g fill="#5C3E1E" opacity=".9" filter="url(#' + F.jemna + ')">' + ct + '</g>';
+        o += rost(skupina(F, F.stetec, '<path d="' + st + '" stroke="#4E6E2E" stroke-width="1" fill="none" opacity=".7"/>') + '<g fill="#5E8A3A" opacity=".8" filter="url(#' + F.jemna + ')" style="mix-blend-mode:multiply">' + li + '</g>' +
+          '<g fill="#F2B82A" opacity=".95" filter="url(#' + F.jemna + ')">' + pl + '</g><g fill="#5C3E1E" opacity=".9" filter="url(#' + F.jemna + ')">' + ct + '</g>');
         return o;
       }
       return o + trava(F, r, 200, 214, 254, mlyn_ ? ["#5E8A3A", "#7EA84A", "#4A7430"] : ["#B8A050", "#C8B060", "#8A9A48", "#A08A40"]) + (mlyn_ ? "" : kvety(F, r, 34, 222, 252, ["#D23A2B", "#E0452F", "#5A6EC8"], 1.2));
@@ -4291,7 +4293,7 @@ var AKVARELY = (function(){
       const tr = "M-10 256 L-10 232 Q60 222 130 234 Q170 240 190 256 Z";
       o += kryt(F, tr) + vrstva(F, tr, "#94B86A", "#5E8A42", .92) + trava(F, r, 80, 230, 254, ["#5E8A42", "#88A857", "#4B7236"]);
       let kv = ""; for (let i = 0; i < 30; i++) kv += '<circle cx="' + f1(q() * 170) + '" cy="' + f1(234 + q() * 20) + '" r="' + f1(.8 + q()) + '" fill="' + ["#E890B8", "#D878A8", "#F2B8D0", "#F4F0E4"][i % 4] + '"/>';
-      return o + '<g opacity=".9" filter="url(#' + F.jemna + ')">' + kv + '</g>';
+      return o + rost('<g opacity=".9" filter="url(#' + F.jemna + ')">' + kv + '</g>');
     },
     /* Středomoří: modré moře, městečko na kopci, cypřiše, olivy na terasách, pinie */
     stredomori: function(F, r){
@@ -4304,7 +4306,7 @@ var AKVARELY = (function(){
       o += kryt(F, kop) + vrstva(F, kop, "#B8B47A", "#8A8A52", .9);
       let mac = ""; for (let i = 0; i < 90; i++) { const x = 120 + q() * 300, yk = x < 300 ? 256 - (x - 96) * .72 : 108 + (x - 300) * .05, y = yk + 6 + q() * (250 - yk);
         if (y < 256) mac += '<ellipse cx="' + f1(x) + '" cy="' + f1(y) + '" rx="' + f1(1.5 + q() * 2.5) + '" ry="' + f1(1 + q() * 1.5) + '" fill="' + ["#5E6E3E", "#6E7A46", "#4E5E36"][i % 3] + '"/>'; }
-      o += '<g opacity=".7" filter="url(#' + F.jemna + ')" style="mix-blend-mode:multiply">' + mac + '</g>';
+      o += rost('<g opacity=".7" filter="url(#' + F.jemna + ')" style="mix-blend-mode:multiply">' + mac + '</g>');
       let domy = [], rr = nahoda(F.sem + 5);
       for (let rada = 0; rada < 5; rada++) { const y = 124 + rada * 11, x0 = 262 - rada * 6, n = 5 + rada;
         for (let i = 0; i < n; i++) domy.push([x0 + i * (17 - rada) + rr() * 4, y + rr() * 3]); }
@@ -4322,11 +4324,11 @@ var AKVARELY = (function(){
       /* pinie na skalce vlevo */
       const sk = "M-10 256 L-10 222 Q30 208 70 216 Q100 222 118 256 Z";
       o += kryt(F, sk) + vrstva(F, sk, "#C8B48A", "#8E7A56", .92);
-      o += skupina(F, F.stetec, tah("M52 220 C54 196 60 176 70 158", "#5E4A3E", 3.4, .9) + tah("M66 168 C58 160 48 156 38 154 M68 162 C78 156 88 154 98 152", "#5E4A3E", 1.6, .85));
+      o += rost(skupina(F, F.stetec, tah("M52 220 C54 196 60 176 70 158", "#5E4A3E", 3.4, .9) + tah("M66 168 C58 160 48 156 38 154 M68 162 C78 156 88 154 98 152", "#5E4A3E", 1.6, .85)));
       o += koruny(F, q, 20, 120, 152, .6, "#3E6440", .9, F.jemna) + koruny(F, q, 30, 108, 144, .55, "#4A7048", .9, F.jemna) + koruny(F, q, 44, 96, 138, .45, "#5A8054", .85, F.jemna);
       o += trava(F, r, 70, 218, 254, ["#8A7E48", "#A99A5A", "#6E6A3C"]);
       let lev = ""; for (let i = 0; i < 40; i++) { const x = q() * 120, y = 224 + q() * 30; lev += tah("M" + f1(x) + " " + f1(y) + " l" + f1((q() - .5) * 1.5) + " " + f1(-3 - q() * 3), ["#9A6AC8", "#B88AD8", "#7E5AB0"][i % 3], 1.3, .85); }
-      return o + skupina(F, F.stetec, lev);
+      return o + rost(skupina(F, F.stetec, lev));
     },
     /* hory: Alpy, Kavkaz, Zagros – zasněžené štíty, louky, smrky; varianta „suche“ bez lesů */
     hory: function(F, r, v){
@@ -4377,7 +4379,7 @@ var AKVARELY = (function(){
         /* pelyňkové keříky: shluk drobných skvrn */
         let ker = ""; for (let i = 0; i < 34; i++) { const x = q() * W, y = 198 + Math.pow(q(), .8) * 52, s2 = .5 + (y - 198) / 40;
           for (let k = 0; k < 4; k++) ker += '<ellipse cx="' + f1(x + (q() - .5) * 5 * s2) + '" cy="' + f1(y - q() * 2 * s2) + '" rx="' + f1((1 + q() * 1.2) * s2) + '" ry="' + f1((.7 + q() * .8) * s2) + '" fill="' + ["#7E8A62", "#96A078", "#6A7650", "#8A9468"][k] + '"/>'; }
-        o += '<g opacity=".85" filter="url(#' + F.jemna + ')" style="mix-blend-mode:multiply">' + ker + '</g>';
+        o += rost('<g opacity=".85" filter="url(#' + F.jemna + ')" style="mix-blend-mode:multiply">' + ker + '</g>');
         /* hogan: osmiboké obydlí z kmenů a hlíny, vchod na východ */
         const hx = 250, hy = 226, hg = "M" + (hx - 18) + " " + hy + " L" + (hx - 18) + " " + (hy - 10) + " Q" + hx + " " + (hy - 24) + " " + (hx + 18) + " " + (hy - 10) + " L" + (hx + 18) + " " + hy + " Z";
         o += kryt(F, hg, F.jemna) + vrstva(F, hg, "#B87A54", "#8A5438", .95, F.jemna) + nanes(F, "M" + (hx - 3) + " " + hy + " l0 -8 l6 0 l0 8 z", "#3A2A20", .85);
@@ -4409,7 +4411,7 @@ var AKVARELY = (function(){
       o += hrebeny(F, [[222, 4, 70, 4, "#CDA464", 0]]);
       let keriky = ""; for (let i = 0; i < 20; i++) { const x = q() * W, y = 196 + q() * 50, s2 = .6 + (y - 196) / 40;
         for (let k = 0; k < 4; k++) keriky += '<ellipse cx="' + f1(x + (q() - .5) * 6 * s2) + '" cy="' + f1(y - q() * 3 * s2) + '" rx="' + f1((1.2 + q() * 1.5) * s2) + '" ry="' + f1((.8 + q()) * s2) + '" fill="' + ["#7E7A42", "#9A9050", "#6A6A38", "#8A8A48"][k] + '"/>'; }
-      o += '<g opacity=".85" filter="url(#' + F.jemna + ')" style="mix-blend-mode:multiply">' + keriky + '</g>';
+      o += rost('<g opacity=".85" filter="url(#' + F.jemna + ')" style="mix-blend-mode:multiply">' + keriky + '</g>');
       return o + trava(F, r, 240, 200, 254, ["#A8894A", "#C4A45A", "#8F7A40", "#D8BC72"]);
     },
     /* východní Afrika: savana, akácie, žirafy, hora se sněhem; varianta „zelena“ = zelené kopce s políčky, chýše, banánovníky */
@@ -4436,7 +4438,7 @@ var AKVARELY = (function(){
       o += terasy(F, r, 164, 5, 5, 9, 44, 4.2, ["#A8C468", "#8EB458", "#C4C472", "#7EA84E", "#B4BE64"], "#6E7A3A");
       o += chyse(F, q, 120, 172, .9) + chyse(F, q, 140, 176, .75) + akacie(F, q, 300, 180, .7);
       for (let i = 0; i < 5; i++) { const x = 20 + i * 18 + q() * 6, y = 212 + q() * 6;
-        o += skupina(F, F.stetec, tah("M" + f1(x) + " " + f1(y) + " l" + f1((q() - .5) * 2) + " -16", "#6E7A48", 2, .9));
+        o += rost(skupina(F, F.stetec, tah("M" + f1(x) + " " + f1(y) + " l" + f1((q() - .5) * 2) + " -16", "#6E7A48", 2, .9)));
         [-2.2, -1.6, -1, -.5, -2.7].forEach(function(u){ o += list(F, x, y - 15, 16 + q() * 6, u, "#5E9A48"); }); }
       o += hrebeny(F, [[218, 4, 70, 4, "#7FA04C", 0]]);
       return o + trava(F, r, 200, 214, 254, ["#5F8A3A", "#7EA04A", "#4A7430"]) + kvety(F, r, 14, 224, 252, ["#F0D060", "#F4F0E4"], .9);
@@ -4456,7 +4458,7 @@ var AKVARELY = (function(){
       o += hrebeny(F, [[108, 14, 40, 1, "#7E9A8A", .6]]) + mlha(F, 104, 126, .55);
       o += pas(F, q, 136, .7, mix("#6E9A70", F.opar, .45)) + mlha(F, 128, 146, .5);
       /* vysoké stromy nad korunami */
-      [[96, 108, .7], [300, 100, .8]].forEach(function(t){ o += skupina(F, F.stetec, tah("M" + t[0] + " 160 L" + (t[0] + 2) + " " + t[1], "#E6E0CE", 2.2 * t[2], .9) + tah("M" + (t[0] + 1) + " " + (t[1] + 5) + " q-8 -2 -16 -7 M" + (t[0] + 1) + " " + (t[1] + 4) + " q8 -3 17 -8", "#D8D0BC", 1.2, .8)) +
+      [[96, 108, .7], [300, 100, .8]].forEach(function(t){ o += rost(skupina(F, F.stetec, tah("M" + t[0] + " 160 L" + (t[0] + 2) + " " + t[1], "#E6E0CE", 2.2 * t[2], .9) + tah("M" + (t[0] + 1) + " " + (t[1] + 5) + " q-8 -2 -16 -7 M" + (t[0] + 1) + " " + (t[1] + 4) + " q8 -3 17 -8", "#D8D0BC", 1.2, .8))) +
         koruny(F, q, t[0] - 26 * t[2], t[0] + 26 * t[2], t[1] - 2, t[2] * .8, "#6A9A5E", .85, F.jemna) + koruny(F, q, t[0] - 20 * t[2], t[0] + 20 * t[2], t[1] + 3, t[2] * .7, "#5A8A56", .85, F.jemna); });
       o += pas(F, q, 160, 1, "#4E8450");
       if (v === "cenote") {
@@ -4494,7 +4496,7 @@ var AKVARELY = (function(){
         o += koruny(F, q, -10, 410, 146, .5, mix("#5E8A56", F.opar, .3), .8);
         o += duna(F, r, 150, 8, 60, 1.5, "#A8CC78", "#7EA456").replace(/stroke="#FFF6E2"/, 'stroke="#F0F6D0"');
         for (let i = 0; i < 13; i++) { const y = 156 + i * 7.5 + i * i * .35; o += radaKeru(F, q, y, 8 + i * .3, 60, 1.5, .7 + i * .09, "#4E8A3E"); }
-        [[110, 190, .9], [270, 176, .8], [360, 206, 1.1]].forEach(function(t){ o += skupina(F, F.stetec, tah("M" + t[0] + " " + t[1] + " l1 -" + f1(34 * t[2]), "#6A5646", 1.2 * t[2], .9)) + koruny(F, q, t[0] - 16 * t[2], t[0] + 16 * t[2], t[1] - 32 * t[2], .5 * t[2], "#557E48", .75); });
+        [[110, 190, .9], [270, 176, .8], [360, 206, 1.1]].forEach(function(t){ o += rost(skupina(F, F.stetec, tah("M" + t[0] + " " + t[1] + " l1 -" + f1(34 * t[2]), "#6A5646", 1.2 * t[2], .9))) + koruny(F, q, t[0] - 16 * t[2], t[0] + 16 * t[2], t[1] - 32 * t[2], .5 * t[2], "#557E48", .75); });
         return o + mlha(F, 146, 160, .3);
       }
       [[40, .5], [70, .42], [300, .5], [340, .46], [372, .4]].forEach(function(p){ o += palma(F, r, p[0], 150, p[1], mix("#4E7A4A", F.opar, .35)); });
@@ -4586,7 +4588,7 @@ var AKVARELY = (function(){
       o += hory(F, r, [[-10, 130], [50, 64], [110, 94], [170, 48], [230, 86], [300, 56], [360, 88], [410, 78]], 170, "#A2A6B8", "#727894", 72);
       if (v === "jezero") { o += voda(F, r, "M-10 170 L410 168 L410 206 L-10 210 Z", "#6A9ACC", "#2E6AA4", 172, 204, 14) + hrebeny(F, [[212, 4, 80, 3, "#BCA878", 0]]);
         let rakos = ""; for (let i = 0; i < 40; i++) { const x = r() * W; rakos += tah("M" + f1(x) + " " + f1(214 + r() * 6) + " l" + f1((r() - .5) * 3) + " -" + f1(8 + r() * 8), "#8A8A4A", .8, .8); }
-        o += skupina(F, F.stetec, rakos); }
+        o += rost(skupina(F, F.stetec, rakos)); }
       else { o += hrebeny(F, [[160, 12, 50, 2, "#8E9A62", .05]]);
         o += terasy(F, r, 170, 8, 6.5, 9, 48, 1.3, ["#A8A860", "#C8B878", "#8E9C56", "#BCAE6E", "#9AA45C"], "#6A5E4A"); }
       /* andská vesnice: kamenné domy s doškem, bílý kostelík, lamy (u jezera rákosové čluny totora) */
@@ -4664,6 +4666,7 @@ var AKVARELY = (function(){
   strom = obal(strom, "veg"); lesik = obal(lesik, "veg"); palma = obal(palma, "veg"); trava = obal(trava, "veg"); koruny = obal(koruny, "veg");
   pas = obal(pas, "veg"); radaKeru = obal(radaKeru, "veg"); jehlicnan = obal(jehlicnan, "veg"); briza = obal(briza, "veg"); akacie = obal(akacie, "veg");
   baobab = obal(baobab, "veg"); oliva = obal(oliva, "veg"); cypris = obal(cypris, "veg"); topol = obal(topol, "veg"); kvety = obal(kvety, "veg");
-  mrak = obal(mrak, "mrak"); rasy = obal(rasy, "mrak"); voda = obal(voda, "voda");
+  agave = obal(agave, "veg"); araukarie = obal(araukarie, "veg"); list = obal(list, "veg"); praporky = obal(praporky, "veg");
+  mrak = obal(mrak, "mrak"); rasy = obal(rasy, "mrak"); ptaci = obal(ptaci, "mrak"); voda = obal(voda, "voda");   // mlha ne: leží přes kopce
   return { obraz: obraz, druhy: Object.keys(K) };
 })();

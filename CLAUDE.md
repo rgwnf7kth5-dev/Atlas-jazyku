@@ -684,7 +684,8 @@ Dřívější náhledový artefakt https://claude.ai/artifact/XS67Gsv9d4y2pMu7UW
   hned): na kartě i u Jazyka dne se stromy, keře a tráva vlní v poryvech větru, mraky pomalu plují a voda se čeří; hory,
   stavby, pole a Říp stojí. Co se hýbe, určují **značky v kresbě**: v `akvarely.js` jsou funkce `strom`, `lesik`, `palma`,
   `trava`, `koruny`, `pas`, `radaKeru`, `jehlicnan`, `briza`, `akacie`, `baobab`, `oliva`, `cypris`, `topol`, `kvety`
-  obalené `<g data-z="veg">`, `mrak`/`rasy` jako `mrak` a `voda` jako `voda` (podle barev to nešlo – hýbal by se celý Říp
+  obalené `<g data-z="veg">` (28. 9. 2026 i `agave`, `araukarie`, `list`, `praporky`; ručně kreslené rostliny přímo
+  v krajinách – čirok, réva, bambus, levandule, papyrus… – obaluje `rost(...)`, 70 míst), `mrak`/`rasy`/`ptaci` jako `mrak` a `voda` jako `voda` (podle barev to nešlo – hýbal by se celý Říp
   a sníh na horách). `maskaMalby` v app.js vykreslí SVG bez filtrů s barvami podle značek do 400 × 250 (styl musí být
   v `<defs>`, pravidlo schovává vinětaci a papír jako další prvky za krajinou), `upravMasku` ji rozšíří a rozmaže
   (stromy o 1 px, mraky o 5 px). `ozivMalbu` pak přes obrázek položí WebGL plátno `canvas.zive`, které posouvá pixely podle
@@ -693,6 +694,9 @@ Dřívější náhledový artefakt https://claude.ai/artifact/XS67Gsv9d4y2pMu7UW
   U norštiny se nevlní odraz hory ve vodě (kreslí se jako hora).
   **Jen malé obrázky jazyků** (karta a Jazyk dne) – uživatel 28. 9. 2026: „chci animaci jenom u malých obrázků jazyků“.
   Ilustrace Jazyků starověku a Příběhů, medailony, statické stránky jazyků ani vymyšlené jazyky nerozhýbávat.
+  Obalení kresbu nemění – po úpravě ověřit, že `scripts/malby.mjs` vyrobí všech 163 maleb bajt po bajtu stejně
+  (`git status static/malby` prázdné). Plochy kopců, polí a mlhu neobalovat (vlnil by se horizont, pod mlhou kopce).
+  Suché krajiny (Kutch, Kalahari, Tibet…) mají jen mraky a pár stébel, hýbou se proto málo – tak to je.
 - **Malby se ukazují jako bitmapa, ne jako živé SVG** (`malbaObrazek`, `vlozMalbu` v app.js). SVG s desítkami filtrů
   vložené do stránky se při každém pohybu glóbu přepočítávalo a výběr jazyka (let, vlna území, oblouky) trhal
   (uživatel 24. 9. 2026: „všechno je trhané, pomalé“; v měření 2,1 s práce GPU za 4 s animace, s bitmapou 0,07 s).
