@@ -719,5 +719,152 @@
  "prehled": {"svet": "Jazyky světa", "mensi": "Menší rodiny", "mimo": "Mimo rodiny", "izolovane": "Izolované jazyky", "znakove": "Znakové jazyky", "pidziny": "Pidžiny", "smisene": "Smíšené jazyky", "umele": "Umělé jazyky", "mluvy": "Zvláštní způsoby mluvy", "nezarazene": "Nezařazené jazyky", "nedolozene": "Nedoložené jazyky", "vyse": "‹ o úroveň výš", "vetve": ["větev", "větve", "větví"], "primo": "{n} přímo", "dalsich": "… a dalších {n} (v kruhu jsou všechny)", "ostatni": "Ostatní rodiny", "legenda": [["ie", "Indoevropská"], ["st", "Sinotibetská"], ["an", "Austronéská"], ["afro", "Afroasijská"], ["nk", "Nigerokonžská"], ["ost", "Ostatní rodiny"], ["mimo", "Mimo rodiny"]]},
  "mapyPopis": "Barevné mapy jazyků: písmo, vitalita a typologie (WALS)",
  "pribehyTlacitko": "Příběhy jazyků: cesty slov, proměny jazyků, obnova a záhady",
- "starovekTlacitko": "Jazyky starověku: stránky o civilizacích, jejich jazyce a písmu"
+ "starovekTlacitko": "Jazyky starověku: stránky o civilizacích, jejich jazyce a písmu",
+ "tajemstvi": {
+  "padani": "Jazyky nepadají z nebe. Až na tuto výjimku.",
+  "velryby": {
+   "stitek": "Jazyky moře",
+   "nazev": "Mluví velryby?",
+   "pozdrav": "•\u2003\u2003•\u2003\u2003•\u2009•\u2009•",
+   "prepis": "koda „1+1+3“ vorvaňů od Dominiky",
+   "stitky": [
+    [
+     "Kdo",
+     "vorvaň a keporkak"
+    ],
+    [
+     "Jazyk?",
+     "zatím neprokázaný"
+    ]
+   ],
+   "prehraj": "Přehrát rytmus kody",
+   "prehrajPozn": "Schéma rytmu ze cvaknutí vytvořených v prohlížeči, ne nahrávka.",
+   "zalozky": [
+    {
+     "nazev": "Vorvaně",
+     "oddily": [
+      {
+       "h": "Kody",
+       "p": [
+        "Vorvaň obrovský (Physeter macrocephalus) se dorozumívá kodami – krátkými sériemi zhruba 3 až 40 cvaknutí v ustáleném rytmu. Jako první je popsali William Watkins a William Schevill roku 1977.",
+        "Samice s mláďaty žijí v trvalých rodinných skupinách. Skupiny s podobným repertoárem kod tvoří takzvaný hlasový klan; klany se od sebe liší podobně jako nářečí a mládě se repertoár nejspíš učí od svého okolí. U ostrova Dominika v Karibiku je typická koda klanu EC1 „1+1+3“: dvě cvaknutí s odstupem a tři rychle za sebou."
+       ]
+      },
+      {
+       "h": "Fonetická abeceda?",
+       "p": [
+        "Roku 2024 ukázal tým projektu CETI (Sharma a kol., Nature Communications) na nahrávkách od Dominiky, že se kody liší i jemnějšími rysy: tempem, rytmem, plynulým prodlužováním a zkracováním po sobě jdoucích kod (rubato) a přidaným cvaknutím navíc (ornamentace). Tyto rysy se kombinují nezávisle na sobě, a různých kod je proto mnohem víc, než se myslelo.",
+        "Autoři mluví o „fonetické abecedě vorvaňů“. Co jednotlivé kombinace znamenají, zatím nikdo neví."
+       ]
+      }
+     ]
+    },
+    {
+     "nazev": "Keporkaci",
+     "oddily": [
+      {
+       "h": "Písně",
+       "p": [
+        "Samci keporkaka (Megaptera novaeangliae) zpívají písně, které trvají od několika minut po desítky minut a opakují se i hodiny. Mají stavbu o několika úrovních: jednotlivé zvuky tvoří fráze, opakované fráze témata a témata celou píseň. Popsali ji Roger Payne a Scott McVay roku 1971.",
+        "Samci jedné populace zpívají v danou dobu v podstatě stejnou píseň a ta se postupně proměňuje. V jižním Pacifiku se nové písně šíří od východní Austrálie dál na východ z populace do populace (Garland a kol. 2011), podobně jako kulturní móda."
+       ]
+      },
+      {
+       "h": "Statistika jako v jazyce",
+       "p": [
+        "Studie z roku 2025 (Arnon a kol., Science) rozdělila písně na opakující se úseky postupem inspirovaným tím, jak malé děti rozpoznávají v řeči slova: hranici úseku kladla tam, kde klesá pravděpodobnost, že jeden zvuk následuje po druhém. Četnost úseků se řídí Zipfovým zákonem podobně jako slova v lidských jazycích. V pokusech s lidmi takové rozložení usnadňuje učení; neznamená ale, že úseky něco znamenají.",
+        "Zpěv keporkaků je i na Zlaté desce sond Voyager z roku 1977: zní hned po pozdravech v 55 lidských jazycích jako podklad pozdravů delegátů OSN."
+       ]
+      }
+     ]
+    },
+    {
+     "nazev": "Je to jazyk?",
+     "oddily": [
+      {
+       "h": "Zatím ne",
+       "p": [
+        "Aspoň ne v tom smyslu, v jakém je jazykem čeština nebo český znakový jazyk. Lidský jazyk skládá jednotky, které něco znamenají, podle pravidel do stále nových výpovědí. U velryb víme, že jejich komunikace má složitou stavbu, předává se učením a liší se mezi skupinami. Nevíme ale, zda jednotlivé kody nebo fráze mají význam, natož zda se z nich skládají nové.",
+        "Proto velryby na glóbu nemají tečku: atlas eviduje jazyky lidí podle Glottologu."
+       ]
+      }
+     ]
+    },
+    {
+     "nazev": "Zdroje",
+     "zdroje": [
+      "Watkins, W. A. – Schevill, W. E. (1977): Sperm whale codas. Journal of the Acoustical Society of America 62: 1485–1490.",
+      "Rendell, L. – Whitehead, H. (2003): Vocal clans in sperm whales (Physeter macrocephalus). Proceedings of the Royal Society B 270: 225–231.",
+      "Sharma, P. a kol. (2024): Contextual and combinatorial structure in sperm whale vocalisations. Nature Communications 15: 3617.",
+      "Payne, R. S. – McVay, S. (1971): Songs of humpback whales. Science 173: 585–597.",
+      "Garland, E. C. a kol. (2011): Dynamic horizontal cultural transmission of humpback whale song at the ocean basin scale. Current Biology 21: 687–691.",
+      "Arnon, I. a kol. (2025): Whale song shows language-like statistical structure. Science 387: 649–653."
+     ]
+    }
+   ]
+  },
+  "babel": {
+   "stitek": "Zmatení jazyků",
+   "nazev": "Babylónská věž",
+   "pozdrav": "בָּבֶל",
+   "prepis": "hebrejsky Bável, akkadsky Bāb-ili",
+   "stitky": [
+    [
+     "Kde",
+     "Babylón, dnešní Irák"
+    ],
+    [
+     "Pramen",
+     "Genesis 11,1–9"
+    ]
+   ],
+   "zalozky": [
+    {
+     "nazev": "Příběh",
+     "oddily": [
+      {
+       "h": "Jeden jazyk",
+       "p": [
+        "Podle jedenácté kapitoly knihy Genesis mluvili všichni lidé jedním jazykem. V zemi Šineár postavili město a věž, jejíž vrchol měl sahat až k nebi, aby si „udělali jméno“. Hospodin zmátl jejich jazyk, aby jeden druhému nerozuměli, a rozptýlil je po celé zemi.",
+        "Text vysvětluje jméno města slovní hříčkou: hebrejské Bável spojuje se slovesem bālal „zmást“. Skutečný původ jména je jiný. Babylóňané ho vykládali jako Bāb-ili, „brána boží“, a jméno je možná ještě starší."
+       ]
+      }
+     ]
+    },
+    {
+     "nazev": "Věž",
+     "oddily": [
+      {
+       "h": "Etemenanki",
+       "p": [
+        "Předlohou věže byl nejspíš zikkurat Etemenanki, sumersky „dům základu nebe a země“, u Mardukova chrámu Esagila v Babylóně. Jeho obnovu podle vlastních nápisů dokončil Nebukadnesar II. (vládl 605–562 př. n. l.), tedy v době, kdy byla v Babylóně část Judejců v zajetí.",
+        "Takzvaná Esagilská tabulka, klínopisný opis staršího textu pořízený v Uruku roku 229 př. n. l. (v době seleukovské), uvádí čtvercovou základnu o straně asi 91 metrů. Z věže dnes zbyly jen základy."
+       ]
+      }
+     ]
+    },
+    {
+     "nazev": "Jazykověda",
+     "oddily": [
+      {
+       "h": "Odkud je tolik jazyků",
+       "p": [
+        "Mezi {n} jazyky atlasu je {r} jazykových rodin a {i} izolovaných jazyků, jejichž příbuznost s jinými se prokázat nepodařilo.",
+        "Zda mají všechny jazyky jednoho společného předka, se prokázat nedá. Srovnávací metoda, kterou jazykovědci rekonstruují prajazyky, sahá podle běžných odhadů nanejvýš zhruba 6 000 až 10 000 let zpět, lidé ale mluví mnohem déle. Rozmanitost jazyků nevznikla najednou: jazyky se mění s každou generací a skupiny, které spolu přestanou mluvit, si během staletí přestanou rozumět."
+       ]
+      }
+     ]
+    },
+    {
+     "nazev": "Zdroje",
+     "zdroje": [
+      "Genesis 11,1–9.",
+      "George, A. R. (2005–2006): The Tower of Babel: archaeology, history and cuneiform texts. Archiv für Orientforschung 51: 75–95.",
+      "Hammarström, H. a kol.: Glottolog (glottolog.org).",
+      "Campbell, L. (2013): Historical Linguistics: An Introduction. 3. vyd. Edinburgh University Press."
+     ]
+    }
+   ]
+  }
+ }
 }

@@ -4011,6 +4011,22 @@ var AKVARELY = (function(){
       return o + palma(F, r, 30, 184, 1.2) + palma(F, r, 220, 180, 1) + palma(F, r, 380, 184, 1.3) + skupina(F, F.stetec, tah(cesta(clenit([[-10, 214], [200, 210], [420, 214]], q, 0, .04, 4)), "#FFFFFF", 1.6, .8));
     },
     /* Maledivy (maledivština): plochý korálový ostrůvek v tyrkysové laguně, bílá mešita z korálového kamene, loď dhoni */
+    /* širé moře s ocasní ploutví vorvaně a výtryskem druhé velryby – karta „Mluví velryby?“ (tři klepnutí na oceán) */
+    ocean: function(F, r){
+      let o = nebe(F, "#8AB8E0", "#F2EEE2") + mraky(F, r, 3, 34, 86, 76) + ptaci(F, r, 3, 300, 60);
+      o += voda(F, r, "M-10 150 L420 150 L420 256 L-10 256 Z", "#3E86B8", "#1C4E7E", 152, 236, 16);
+      /* ocasní ploutev: kořen z vody, dva laloky do stran, zářez uprostřed */
+      const f = "M246 196 Q247 180 250 170 Q238 160 212 152 Q224 147 238 150 Q247 153 252 160 Q257 153 266 150 Q280 147 292 152 Q266 160 254 170 Q257 180 258 196 Z";
+      o += kryt(F, f) + vrstva(F, f, "#56606E", "#2E3440", .95);
+      o += nanes(F, "M232 197 Q252 190 272 197 Q252 202 232 197 Z", "#FBFAF6", .9);
+      let k = ""; [[214, 154], [226, 151], [290, 154], [278, 151]].forEach(function(p, i){ k += tah("M" + p[0] + " " + p[1] + " l" + (i < 2 ? -1 : 1) + " " + (8 + i * 3), "#DDE8F0", .7, .8); });
+      o += skupina(F, F.stetec, k);
+      /* výtrysk vzdálené velryby: vějíř tahů a oblak mlhy nahoře */
+      let v = ""; for (let i = 0; i < 7; i++) v += tah("M92 170 q" + (i - 3) * 2 + " -10 " + (i - 3) * 5 + " -22", "#F4F8FA", .9, .75);
+      o += skupina(F, F.stetec, v) + nanes(F, "M78 150 Q92 140 108 150 Q98 156 92 154 Q84 156 78 150 Z", "#F4F8FA", .8);
+      o += vrstva(F, "M80 172 Q92 166 104 172 Q92 174 80 172 Z", "#56606E", "#2E3440", .9);
+      return o;
+    },
     maledivy: function(F, r){
       const q = nahoda(F.sem + 1213);
       let o = nebe(F, "#6EB2EA", "#F0ECDC") + mraky(F, r, 3, 40, 80, 70);

@@ -775,14 +775,14 @@ function vlozMalbu(el, id){
   el.replaceChildren(img);
   /* na webu jsou malby hotové obrázky (static/malby, scripts/malby.mjs): hned, bez prázdné plochy nahoře na kartě
      (hodnocení webu 28. 9. 2026); v artefaktu a při chybě se malba kreslí živě jako dřív */
-  if (!ARTEFAKT && location.protocol !== "file:" && KRAJINY[id]) {
+  if (!ARTEFAKT && location.protocol !== "file:" && KRAJINY[id] && id.indexOf("z-") !== 0) {   // malby tajemství hotové obrázky nemají
     img.onload = function(){ img.classList.add("ukazana"); ozivMalbu(el, img, id); };
     img.onerror = function(){ img.onerror = null; const cesta = malbaObrazek(id); if (cesta) cesta.then(function(url){ if (url && img.isConnected) img.src = url; }); };
     img.src = "/malby/" + id + ".jpg";
     return;
   }
   const ukaz = function(){ const cesta = malbaObrazek(id); if (cesta) cesta.then(function(url){ if (url && img.isConnected) { img.onload = function(){ img.classList.add("ukazana"); ozivMalbu(el, img, id); }; img.src = url; } }); };
-  if (MALBY[id]) ukaz();
+  if (MALBY[id] || id.indexOf("z-") === 0) ukaz();     // karty tajemství hotový obrázek nemají: malovat hned
   else setTimeout(function(){ if (!img.isConnected) return; if (window.requestIdleCallback) requestIdleCallback(ukaz, {timeout: 1500}); else ukaz(); }, 2200);
 }
 /* ---------- živé akvarely (uživatel 28. 9. 2026: „lehce animovat, vítr, stromy, mraky“; síla „Výrazná“ z náhledu) ----------
@@ -1153,7 +1153,7 @@ function kresliPlochu(c, cx, cy, r){
   c.restore();
 }
 function kresliKouli(c, cx, cy, r){
-  kresliPlochu(c, cx, cy, r);
+  if (!bezPlochy) kresliPlochu(c, cx, cy, r);    // při převrácení glóbu (sedm kliknutí na logo) bez plochy a stínu
   let g = c.createRadialGradient(cx, cy, r * 0.9, cx, cy, r * 1.36);
   g.addColorStop(0, barvy.atmosfera); g.addColorStop(0.35, barvy.atmosfera2); g.addColorStop(1, "rgba(0,0,0,0)");
   c.fillStyle = g; c.beginPath(); c.arc(cx, cy, r * 1.36, 0, 6.283185); c.fill();
@@ -1802,7 +1802,7 @@ let eu = null;                            // {od: kdy začaly vyskakovat hvězdi
 /* srovnání dvou jazyků: první je zároveň vybraný (vybrany), druhý se k němu jen přidá */
 var srovnani = null;                      // {a: jazyk, b: jazyk} (viz jazykAtlasu / jazykBodu)
 var cekaNaDruhy = null;                   // první jazyk, dokud se vybírá druhý
-var brana = false, vymysleny = null;      // Brána do jiných světů je otevřená / id vymyšleného jazyka na kartě
+var brana = false, vymysleny = null, zvlastni = null;   // zvlastni: karta tajemství („velryby“, „babel“)      // Brána do jiných světů je otevřená / id vymyšleného jazyka na kartě
 function bodyVeStatu(nazev){
   const kod = PD.mapaStatu && PD.mapaStatu[nazev];
   if (!kod) return null;
@@ -1831,7 +1831,7 @@ function klikDoMapy(e){
   if (!bod || isNaN(bod[0])) { okno.hidden = true; return; }
   let nalezena = null;
   for (let k = 0; k < ZEME.length; k++) { if (d3.geoContains(ZEME[k], bod)) { nalezena = ZEME[k]; break; } }
-  if (!nalezena) { okno.hidden = true; return; }
+  if (!nalezena) { okno.hidden = true; klikNaOcean(mx, my); return; }
   /* jedno kliknutí: stát se hned podbarví a jeho jazyky na glóbu rozsvítí; zavřením okna zvýraznění zmizí */
   if (vybrany) { vybrany = null; srovnani = null; zrusCekani(); karta.hidden = true; delete karta.dataset.jazyk; oznacTlacitka(null); zapisOdkaz(); }
   zeme = {f: nalezena, body: bodyVeStatu(nalezena.properties.name) || []};
@@ -1918,7 +1918,7 @@ function vyberBod(i){
   oznacTlacitka(null);
 }
 function odznac(){
-  srovnani = null; zrusCekani(); vymysleny = null;
+  srovnani = null; zrusCekani(); vymysleny = null; zvlastni = null;
   vybrany = null; zeme = null; prechod = null; ozivit(); zapisOdkaz();
   if (eu) ukonciEU(true);
   if (cesta) ukonciCestu(true);
@@ -1942,7 +1942,14 @@ function domu(){
   if (!ARTEFAKT && history.replaceState) { try { history.replaceState(null, "", location.pathname); obnovOdkazJinam(); } catch (e) {} }
   window.scrollTo({top: 0, behavior: bezPohybu.matches ? "auto" : "smooth"});
 }
-$("domu").addEventListener("click", function(e){ e.preventDefault(); domu(); });
+let logoKliku = 0, logoNaposled = 0;
+$("domu").addEventListener("click", function(e){
+  e.preventDefault();
+  const ted = performance.now();                  // sedm rychlých kliknutí na logo: glóbus se převrátí a jazyky spadnou
+  logoKliku = ted - logoNaposled < 1500 ? logoKliku + 1 : 1; logoNaposled = ted;
+  if (logoKliku >= 7) { logoKliku = 0; prevrat(); return; }
+  domu();
+});
 $("k-zavrit").addEventListener("click", odznac);
 $("tl-nahoda").addEventListener("click", function(){
   if ($("hledej").value) { $("hledej").value = ""; postavPolici(""); }
@@ -2413,6 +2420,7 @@ function kodVyberu(){
   if (civOtevrena) return civilizace(civOtevrena).adresa[T.lang];
   if (cesta) return "cesta-" + cesta.w.id;
   if (brana) return vymysleny ? "mellon~" + vymysleny : "mellon";
+  if (zvlastni) return zvlastni === "velryby" ? (T.lang === "cs" ? "velryby" : "whales") : "babel";
   if (srovnani) return srovnani.a.kod + "~" + srovnani.b.kod;          // #cs~ar = srovnání dvou jazyků
   return !vybrany ? "" : vybrany.typ === "atlas" ? vybrany.id : REJSTRIK.g[vybrany.i] || "";
 }
@@ -2431,6 +2439,8 @@ function prectiOdkaz(){
   const h = decodeURIComponent(location.hash.slice(1));
   if (!h || h === kodVyberu()) return;
   if (h.toLowerCase() === "eulang") { spustEU(); return; }
+  if (/^(velryby|whales)$/i.test(h)) { ukazZvlastni("velryby"); return; }
+  if (/^babel$/i.test(h)) { spustBabel(); return; }
   if (/^(o-datech|about-data)$/i.test(h)) { otevriODatech(); return; }
   if (/^(kalendar|language-days)$/i.test(h)) { otevriKalendar(); return; }
   if (/^(navod|guide)$/i.test(h)) { otevriNavod(); return; }
@@ -2476,7 +2486,7 @@ const tlPrehraj = $("k-prehraj"), popisPrehraj = tlPrehraj.querySelector("span")
 const karta = $("karta"), kartaTelo = $("k-telo"), kartaStitky = $("k-stitky"), kartaHero = $("k-hero");
 /* karta jako pohlednice: barevné záhlaví, štítky s hlavními údaji, zbytek v záložkách */
 function otevriKartu(barva, textBarva, novyJazyk){
-  karta.hidden = false;
+  karta.hidden = false; zvlastni = null;
   kartaHero.classList.remove("srovnani", "vymysleny");    // karta srovnání a vymyšleného jazyka mají vlastní záhlaví
   malbaNaKarte(null);
   const dvojice = kartaHero.querySelector(".k-dvojice"); if (dvojice) dvojice.remove();
@@ -4110,14 +4120,179 @@ document.addEventListener("keydown", function(e){ if (e.key === "Escape" && cest
     napsano = (napsano + e.key.toLowerCase()).slice(-6);
     if (napsano === "eulang") { napsano = ""; spustEU(); }
     if (napsano === "mellon") { napsano = ""; otevriBranu(); }      // „přítel“ elfsky: heslo Durinových dveří
+    if (napsano.slice(-5) === "babel") { napsano = ""; spustBabel(); }   // zmatení jazyků
   });
   $("hledej").addEventListener("input", function(e){
     const h = bezDiakritiky(e.target.value).trim();
-    if (h !== "eulang" && h !== "mellon") return;
+    if (h !== "eulang" && h !== "mellon" && h !== "babel") return;
     e.target.value = ""; postavPolici(""); e.target.blur();
-    if (h === "eulang") spustEU(); else otevriBranu();
+    if (h === "eulang") spustEU(); else if (h === "babel") spustBabel(); else otevriBranu();
   });
 })();
+/* ---------- tři drobná tajemství (28. 9. 2026, nápady uživatele) ----------
+   Tři klepnutí na oceán: karta „Mluví velryby?“ (kody vorvaňů, zpěv keporkaků, proč to zatím není jazyk).
+   Sedm rychlých kliknutí na logo: glóbus se převrátí, tečky jazyků spadnou na zem a nahoře se objeví vtip, pak se vše vrátí.
+   „babel“ napsané kdekoli (nebo do hledání, odkaz #babel): texty na obrazovce se rozsypou do cizích písem a otevře se
+   karta o Babylónské věži. Texty karet jsou v T.tajemstvi a jsou ověřené jako ostatní údaje atlasu. */
+KRAJINY["z-velryby"] = "ocean"; KRAJINY["z-babel"] = "mezopotamie";
+function pocetRodin(){                          /* rodiny a izolované jazyky mezi tečkami atlasu (pro kartu Babylónu) */
+  const nerod = new Set(["Sign Language", "Unclassifiable", "Bookkeeping", "Unattested"]), r = new Set();
+  let izol = 0;
+  for (let k = 0; k < POCET_B; k++) { const f = B[k][3]; if (f === IZOLAT_R) izol++; else if (!BEZ_RODU.has(f) && !nerod.has(REJSTRIK.r.en[f])) r.add(f); }
+  return {r: r.size, i: izol};
+}
+function ukazZvlastni(k){
+  const d = T.tajemstvi[k]; if (!d) return;
+  if (brana) zavriBranu(true);
+  if (eu) ukonciEU(true);
+  if (cesta) ukonciCestu(true);
+  vybrany = null; srovnani = null; zrusCekani(); vymysleny = null; zhasniZemi(); okno.hidden = true;
+  const klic = "z:" + k, novy = karta.dataset.jazyk !== klic;
+  if (novy) zalozkaVybrana = 0;
+  karta.dataset.jazyk = klic;
+  otevriKartu(k === "velryby" ? "#1C4E7E" : "#8A5A2E", "#FFFFFF", novy);
+  zvlastni = k;
+  $("k-porovnat").hidden = true; $("k-cesta").hidden = true; $("k-plne").hidden = false; $("k-odznak").hidden = true;
+  $("k-kod").textContent = "✦ " + d.stitek; $("k-kod").classList.remove("sour");
+  $("k-nazev").textContent = d.nazev; $("k-domaci").textContent = "";
+  const pz = $("k-pozdrav"); pz.textContent = d.pozdrav; pz.style.fontSize = "";
+  if (k === "babel") pz.setAttribute("lang", "he"); else pz.removeAttribute("lang");
+  $("k-prepis").textContent = d.prepis;
+  tlPrehraj.hidden = true;
+  malbaNaKarte("z-" + k);
+  d.stitky.forEach(function(x){ stitek(x[0], x[1]); });
+  const c = pocetRodin(), dosad = function(p){ return p.replace("{n}", cislo(POCET_B)).replace("{r}", cislo(c.r)).replace("{i}", cislo(c.i)); };
+  zalozky(d.zalozky.map(function(z, n){
+    const uzly = [];
+    if (n === 0 && d.prehraj) {                 // rytmus kody „1+1+3“ ze cvaknutí vytvořených v prohlížeči
+      const b = prvek("button", "tl-rodokmen tl-koda", d.prehraj); b.type = "button";
+      b.addEventListener("click", prehrajKodu);
+      const s = prvek("section"); s.appendChild(b); s.appendChild(prvek("p", "pozn", d.prehrajPozn)); uzly.push(s);
+    }
+    (z.oddily || []).forEach(function(o){ const s = oddil(o.h); o.p.forEach(function(p){ s.appendChild(prvek("p", null, dosad(p))); }); uzly.push(s); });
+    if (z.zdroje) { const s = oddil(z.nazev), ul = prvek("ul", "tajemstvi-zdroje"); z.zdroje.forEach(function(x){ ul.appendChild(prvek("li", null, x)); }); s.appendChild(ul); uzly.push(s); }
+    return {nazev: z.nazev, uzly: uzly};
+  }));
+  velikostKarty(""); zapisOdkaz(); oznacTlacitka(null);
+  if (globusOk) { obnovPriznaky(); spoctiPosun(); ozivit(); }
+}
+function prehrajKodu(){
+  const AC = window.AudioContext || window.webkitAudioContext; if (!AC) return;
+  const a = new AC(), n = Math.round(a.sampleRate * .03), buf = a.createBuffer(1, n, a.sampleRate), d = buf.getChannelData(0);
+  for (let i = 0; i < n; i++) d[i] = (Math.random() * 2 - 1) * Math.exp(-i / (n / 7));
+  [0, .34, .68, .82, .96].forEach(function(t){     // 1 + 1 + 3: dvě cvaknutí s odstupem, tři rychle za sebou
+    const z = a.createBufferSource(), f = a.createBiquadFilter(), g = a.createGain();
+    z.buffer = buf; f.type = "bandpass"; f.frequency.value = 2200; f.Q.value = 1.1; g.gain.value = .9;
+    z.connect(f); f.connect(g); g.connect(a.destination); z.start(a.currentTime + .05 + t);
+  });
+  setTimeout(function(){ try { a.close(); } catch (e) {} }, 2000);
+}
+const oceanKliky = [];
+function klikNaOcean(x, y){
+  const ted = performance.now();
+  while (oceanKliky.length && ted - oceanKliky[0].t > 1200) oceanKliky.shift();
+  oceanKliky.push({t: ted, x: x, y: y});
+  if (oceanKliky.length >= 3 && oceanKliky.every(function(k){ return Math.hypot(k.x - x, k.y - y) < 40; })) { oceanKliky.length = 0; ukazZvlastni("velryby"); }
+}
+/* zmatení jazyků: slova na obrazovce se postupně promění v cizí písma (každé slovo jiné) a zase vrátí */
+function spustBabel(){ zmatJazyky(function(){ ukazZvlastni("babel"); }); }
+let zmateni = false;
+function zmatJazyky(hotovo){
+  if (zmateni) return;
+  if (bezPohybu.matches) { hotovo(); return; }
+  zmateni = true;
+  const PISMA = [[0x0430, 32], [0x03B1, 25], [0x05D0, 27], [0x10D0, 33], [0x0561, 38], [0x0915, 37], [0x0628, 20], [0x0E01, 46], [0x30A2, 60], [0xAC00, 2000]];
+  const vw = innerWidth, vh = innerHeight, uzly = [];
+  const w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {acceptNode: function(u){
+    if (!u.data.trim()) return NodeFilter.FILTER_REJECT;
+    const p = u.parentElement; if (!p || /^(SCRIPT|STYLE|TEXTAREA|OPTION|TITLE)$/.test(p.tagName)) return NodeFilter.FILTER_REJECT;
+    const r = p.getBoundingClientRect(); if (!r.width || r.bottom < 0 || r.top > vh || r.right < 0 || r.left > vw) return NodeFilter.FILTER_REJECT;
+    return NodeFilter.FILTER_ACCEPT; }});
+  while (w.nextNode() && uzly.length < 800) uzly.push(w.currentNode);
+  const polozky = uzly.map(function(u){
+    const slova = u.data.split(/(\s+)/).map(function(sl){
+      if (!sl.trim()) return {o: sl};
+      const pis = PISMA[Math.floor(Math.random() * PISMA.length)];
+      const z = Array.from(sl).map(function(ch){ return /[\p{L}\p{N}]/u.test(ch) ? String.fromCodePoint(pis[0] + Math.floor(Math.random() * pis[1])) : ch; }).join("");
+      return {o: sl, z: z, od: Math.random() * 900, do_: 2300 + Math.random() * 900};
+    });
+    return {u: u, puvodni: u.data, slova: slova, naposled: u.data};
+  });
+  const zacatek = performance.now();
+  (function krok(){
+    const t = performance.now() - zacatek;
+    polozky.forEach(function(p){
+      if (p.u.data !== p.naposled) return;       // text mezitím přepsala aplikace: nesahat
+      const nove = t > 3400 ? p.puvodni : p.slova.map(function(sl){ return sl.z && t > sl.od && t < sl.do_ ? sl.z : sl.o; }).join("");
+      if (nove !== p.u.data) { p.u.data = nove; p.naposled = nove; }
+    });
+    if (t <= 3400) setTimeout(krok, 60); else { zmateni = false; hotovo(); }
+  })();
+}
+/* sedm kliknutí na logo: glóbus se převrátí vzhůru nohama, tečky jazyků spadnou na zem, nahoře vtip; pak se vše vrátí */
+let prevraceno = false, bezPlochy = false;
+function prevrat(){
+  if (prevraceno || !globusOk || !ctx || brana || (strom && strom.zapnuto)) return;
+  prevraceno = true;
+  let napis = $("padani-napis");
+  if (!napis) { napis = prvek("p", "padani-napis"); napis.id = "padani-napis"; napis.setAttribute("aria-live", "polite"); scena.appendChild(napis); }
+  napis.textContent = T.tajemstvi.padani;
+  const ukazNapis = function(z){ napis.classList.toggle("vidim", z); };
+  if (bezPohybu.matches) { ukazNapis(true); setTimeout(function(){ ukazNapis(false); prevraceno = false; }, 3500); return; }
+  const cx = sirka / 2 + posun, cy = stredY, R = polomer, vrstvy = [podklad, platnoGl, platnoPopisky];
+  bezPlochy = true; koule.klic = ""; koule.kandidat = ""; potrebaKresli = true; ozivit();   // plocha se stínem by se otočila nad kouli
+  platno.style.pointerEvents = "none"; scena.classList.add("prevraceni");
+  vrstvy.forEach(function(el){ el.style.transformOrigin = cx + "px " + cy + "px"; });
+  requestAnimationFrame(function(){ vrstvy.forEach(function(el){ el.style.transform = "rotate(180deg)"; }); });
+  setTimeout(function(){
+    /* kopie viditelných teček v převrácené poloze; skutečné tečky se na chvíli schovají */
+    const c = document.createElement("canvas"), dp = Math.min(2, window.devicePixelRatio || 1);
+    c.className = "padani"; c.width = Math.round(sirka * dp); c.height = Math.round(vyska * dp);
+    c.style.cssText = "left:" + platno.offsetLeft + "px;top:" + platno.offsetTop + "px;width:" + sirka + "px;height:" + vyska + "px";
+    scena.appendChild(c);
+    const x = c.getContext("2d"); x.setTransform(dp, 0, 0, dp, 0, 0);
+    const zem = cy + R * 1.1, rr = Math.max(1.6, velikosti().jaz * .45), cast = [];
+    for (let i = 0; i < POCET_B; i++) {
+      if (!bVid[i]) continue;
+      const x0 = 2 * cx - bPx[i], y0 = 2 * cy - bPy[i];
+      if (x0 < -10 || x0 > sirka + 10 || y0 < -10 || y0 > vyska + 10) continue;
+      cast.push({x0: x0, y0: y0, x: x0, y: y0, vx: (Math.random() - .5) * 60, vy: 0, zpozd: Math.random() * 700 + (cy + R - y0) * .5, cil: zem - Math.random() * 26 * Math.max(0, 1 - Math.pow((x0 - cx) / R, 2)) - 2, lezi: false});   // kopeček, uprostřed vyšší
+    }
+    platnoGl.style.opacity = "0"; platnoPopisky.style.opacity = "0"; platno.style.opacity = "0";   // i ukazatel a oblouky
+    const barva = barvy["tecka-jazyk"], lem = barvy["tecka-lem"], zac = performance.now();
+    let zpet = 0;
+    (function snimek(ted){
+      const t = ted - zac;
+      x.clearRect(0, 0, sirka, vyska);
+      /* stín na zemi, aby tečky dopadly na něco */
+      const g = x.createRadialGradient(cx, zem + 4, 0, cx, zem + 4, R * .95);
+      g.addColorStop(0, "rgba(0,0,0,.16)"); g.addColorStop(1, "rgba(0,0,0,0)");
+      x.save(); x.translate(0, zem + 4); x.scale(1, .12); x.translate(0, -(zem + 4)); x.fillStyle = g; x.beginPath(); x.arc(cx, zem + 4, R * .95, 0, 6.2832); x.fill(); x.restore();
+      if (t > 1600 && !napis.classList.contains("vidim") && !zpet) ukazNapis(true);
+      if (t > 4300 && !zpet) { zpet = ted; ukazNapis(false); cast.forEach(function(p){ p.sx = p.x; p.sy = p.y; }); }
+      x.fillStyle = barva; x.strokeStyle = lem; x.lineWidth = 1;
+      let hotovo = !!zpet;
+      cast.forEach(function(p){
+        if (zpet) {
+          const q = Math.min(1, Math.max(0, (ted - zpet - p.zpozd * .4) / 900)), e = q < .5 ? 2 * q * q : 1 - Math.pow(-2 * q + 2, 2) / 2;
+          p.x = p.sx + (p.x0 - p.sx) * e; p.y = p.sy + (p.y0 - p.sy) * e; if (q < 1) hotovo = false;
+        } else if (t > p.zpozd && !p.lezi) {
+          p.vy += 1900 * .016; p.y += p.vy * .016; p.x += p.vx * .016;
+          if (p.y >= p.cil) { p.y = p.cil; if (p.vy > 250) { p.vy = -p.vy * .25; p.vx *= .5; } else { p.lezi = true; p.vy = 0; } }
+        }
+        x.beginPath(); x.arc(p.x, p.y, rr, 0, 6.2832); x.fill(); x.stroke();
+      });
+      if (!hotovo) { requestAnimationFrame(snimek); return; }
+      c.remove(); platnoGl.style.opacity = ""; platnoPopisky.style.opacity = ""; platno.style.opacity = "";
+      vrstvy.forEach(function(el){ el.style.transform = ""; });
+      setTimeout(function(){
+        vrstvy.forEach(function(el){ el.style.transformOrigin = ""; });
+        bezPlochy = false; koule.klic = ""; koule.kandidat = ""; potrebaKresli = true; ozivit();
+        platno.style.pointerEvents = ""; scena.classList.remove("prevraceni"); prevraceno = false;
+      }, 950);
+    })(zac);
+  }, 950);
+}
 /* ---------- srovnání dvou jazyků ----------
    Jazyk = {kod, j (jazyk z atlasu nebo null), i (tečka, nebo -1), lon, lat, rod (rodina Glottologu), sk (barevná skupina)}.
    Příbuznost je ze stromu Glottologu (nejbližší společný předek), stavba z WALS, hlásky z PHOIBLE. Nic se nedomýšlí:

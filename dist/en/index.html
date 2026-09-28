@@ -1305,6 +1305,17 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 
 .scena.rezim-strom .roh-ovladani{display:none}   /* + a − ovládají glóbus; strom se přibližuje kolečkem a prsty */
 
+/* ---------- tajemství: převrácený glóbus, karta velryb a Babylónu (28. 9. 2026) ---------- */
+.scena canvas.padani{position:absolute; inset:auto; z-index:5; pointer-events:none; aspect-ratio:auto; max-height:none}
+.padani-napis{position:absolute; z-index:6; left:50%; top:5%; margin:0; transform:translate(-50%,-8px); width:max-content; max-width:min(88%,30ch);
+  padding:10px 20px; border-radius:14px; background:var(--sklo); box-shadow:0 12px 30px -18px rgba(0,0,0,.45);
+  font:600 clamp(1.15rem,2.6vw,1.75rem)/1.25 "Playfair Display",Georgia,serif; color:var(--text); text-align:center; text-wrap:balance;
+  opacity:0; transition:opacity .6s ease, transform .6s ease; pointer-events:none}
+.padani-napis.vidim{opacity:1; transform:translate(-50%,0)}
+.tajemstvi-zdroje{margin:0; padding-left:1.1em; display:grid; gap:6px; font-size:.82rem; color:var(--text2)}
+.tl-koda{margin-bottom:6px}
+.scena.prevraceni :is(.ukazatel,.bublina-bod){opacity:0 !important; transition:opacity .3s}
+
 /* ---------- jazyky starověku: stránka o civilizaci jako list ilustrované encyklopedie (okno nad glóbem i web) ----------
    Papír a inkoust jako u akvarelů na kartách; v tmavém vzhledu sépiová noc. Barvy jen tady, přes --civ-*. */
 .civ{
@@ -1810,6 +1821,6 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
  <dialog class="civ-okno" id="civ-okno" aria-labelledby="civ-nadpis"></dialog>
 </div>
 
-<script src="../js/atlas.87088076d5.js"></script>
+<script src="../js/atlas.621e4a4c1e.js"></script>
 </body>
 </html>

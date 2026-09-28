@@ -719,5 +719,152 @@
  "prehled": {"svet": "Languages of the world", "mensi": "Smaller families", "mimo": "Outside families", "izolovane": "Isolates", "znakove": "Sign languages", "pidziny": "Pidgins", "smisene": "Mixed languages", "umele": "Artificial languages", "mluvy": "Speech registers", "nezarazene": "Unclassified languages", "nedolozene": "Unattested languages", "vyse": "‹ one level up", "vetve": ["branch", "branches", "branches"], "primo": "{n} directly", "dalsich": "… and {n} more (all are in the circle)", "ostatni": "Other families", "legenda": [["ie", "Indo-European"], ["st", "Sino-Tibetan"], ["an", "Austronesian"], ["afro", "Afro-Asiatic"], ["nk", "Niger-Congo"], ["ost", "Other families"], ["mimo", "Outside families"]]},
  "mapyPopis": "Colour maps of languages: script, vitality and typology (WALS)",
  "pribehyTlacitko": "Language stories: travelling words, language change, revival and mysteries",
- "starovekTlacitko": "Languages of antiquity: pages on civilizations, their languages and scripts"
+ "starovekTlacitko": "Languages of antiquity: pages on civilizations, their languages and scripts",
+ "tajemstvi": {
+  "padani": "Languages don't fall from the sky. Except this once.",
+  "velryby": {
+   "stitek": "Languages of the sea",
+   "nazev": "Do whales talk?",
+   "pozdrav": "•\u2003\u2003•\u2003\u2003•\u2009•\u2009•",
+   "prepis": "the “1+1+3” coda of the sperm whales off Dominica",
+   "stitky": [
+    [
+     "Who",
+     "sperm whale and humpback"
+    ],
+    [
+     "Language?",
+     "not yet shown"
+    ]
+   ],
+   "prehraj": "Play the coda rhythm",
+   "prehrajPozn": "A sketch of the rhythm made of clicks generated in the browser, not a recording.",
+   "zalozky": [
+    {
+     "nazev": "Sperm whales",
+     "oddily": [
+      {
+       "h": "Codas",
+       "p": [
+        "The sperm whale (Physeter macrocephalus) communicates with codas – short series of roughly 3 to 40 clicks in a fixed rhythm. They were first described by William Watkins and William Schevill in 1977.",
+        "Females and their young live in stable family units. Units with a similar repertoire of codas form a so-called vocal clan; clans differ much like dialects, and calves most likely learn the repertoire from those around them. Off the island of Dominica in the Caribbean, the typical coda of clan EC1 is “1+1+3”: two spaced clicks followed by three quick ones."
+       ]
+      },
+      {
+       "h": "A phonetic alphabet?",
+       "p": [
+        "In 2024 the Project CETI team (Sharma et al., Nature Communications) showed on recordings from Dominica that codas also differ in finer features: tempo, rhythm, gradual lengthening and shortening of successive codas (rubato) and an extra click (ornamentation). These features combine independently, so there are far more distinct codas than was thought.",
+        "The authors speak of a “sperm whale phonetic alphabet”. What the individual combinations mean, nobody knows yet."
+       ]
+      }
+     ]
+    },
+    {
+     "nazev": "Humpbacks",
+     "oddily": [
+      {
+       "h": "Songs",
+       "p": [
+        "Male humpback whales (Megaptera novaeangliae) sing songs lasting from a few minutes to tens of minutes, repeated for hours. They are structured on several levels: individual sounds form phrases, repeated phrases form themes, and themes form the song. They were described by Roger Payne and Scott McVay in 1971.",
+        "The males of one population sing essentially the same song at a given time, and the song gradually changes. In the South Pacific, new songs spread from eastern Australia eastwards from population to population (Garland et al. 2011), much like a cultural fashion."
+       ]
+      },
+      {
+       "h": "Language-like statistics",
+       "p": [
+        "A 2025 study (Arnon et al., Science) split the songs into recurring segments with a method inspired by how infants find words in speech: it placed boundaries where the probability of one sound following another drops. The frequency of the segments follows Zipf’s law, like words in human languages. In experiments with humans such a distribution makes learning easier; it does not mean that the segments carry meaning.",
+        "Humpback song is also on the 1977 Voyager Golden Record: it follows the greetings in 55 human languages, as a backdrop to greetings from UN delegates."
+       ]
+      }
+     ]
+    },
+    {
+     "nazev": "A language?",
+     "oddily": [
+      {
+       "h": "Not yet",
+       "p": [
+        "At least not in the sense in which Czech or Czech Sign Language is a language. Human language combines units that mean something, according to rules, into ever new utterances. We know that whale communication has a complex structure, is passed on by learning and differs between groups. We do not know whether individual codas or phrases have a meaning, let alone whether they are combined into new ones.",
+        "That is why whales have no dot on the globe: the atlas records human languages as listed by Glottolog."
+       ]
+      }
+     ]
+    },
+    {
+     "nazev": "Sources",
+     "zdroje": [
+      "Watkins, W. A. – Schevill, W. E. (1977): Sperm whale codas. Journal of the Acoustical Society of America 62: 1485–1490.",
+      "Rendell, L. – Whitehead, H. (2003): Vocal clans in sperm whales (Physeter macrocephalus). Proceedings of the Royal Society B 270: 225–231.",
+      "Sharma, P. et al. (2024): Contextual and combinatorial structure in sperm whale vocalisations. Nature Communications 15: 3617.",
+      "Payne, R. S. – McVay, S. (1971): Songs of humpback whales. Science 173: 585–597.",
+      "Garland, E. C. et al. (2011): Dynamic horizontal cultural transmission of humpback whale song at the ocean basin scale. Current Biology 21: 687–691.",
+      "Arnon, I. et al. (2025): Whale song shows language-like statistical structure. Science 387: 649–653."
+     ]
+    }
+   ]
+  },
+  "babel": {
+   "stitek": "Confusion of tongues",
+   "nazev": "The Tower of Babel",
+   "pozdrav": "בָּבֶל",
+   "prepis": "Hebrew Bavel, Akkadian Bāb-ili",
+   "stitky": [
+    [
+     "Where",
+     "Babylon, today Iraq"
+    ],
+    [
+     "Source",
+     "Genesis 11:1–9"
+    ]
+   ],
+   "zalozky": [
+    {
+     "nazev": "The story",
+     "oddily": [
+      {
+       "h": "One language",
+       "p": [
+        "According to chapter eleven of the Book of Genesis, all people spoke one language. In the land of Shinar they built a city and a tower whose top was to reach the heavens, to “make a name” for themselves. The Lord confused their language so that they would not understand one another, and scattered them over all the earth.",
+        "The text explains the city’s name by a pun: it links Hebrew Bavel with the verb bālal, “to confuse”. The real origin of the name is different. The Babylonians interpreted it as Bāb-ili, “gate of god”, and the name may be even older."
+       ]
+      }
+     ]
+    },
+    {
+     "nazev": "The tower",
+     "oddily": [
+      {
+       "h": "Etemenanki",
+       "p": [
+        "The tower was most likely modelled on the ziggurat Etemenanki, Sumerian for “house of the foundation of heaven and earth”, beside Marduk’s temple Esagila in Babylon. According to his own inscriptions, its restoration was completed by Nebuchadnezzar II (r. 605–562 BCE), at the time when part of the people of Judah lived in Babylon in exile.",
+        "The so-called Esagila tablet, a cuneiform copy of an older text made at Uruk in 229 BCE (in the Seleucid period), gives a square base about 91 metres on each side. Only the foundations of the tower remain today."
+       ]
+      }
+     ]
+    },
+    {
+     "nazev": "Linguistics",
+     "oddily": [
+      {
+       "h": "Why so many languages",
+       "p": [
+        "Among the {n} languages of the atlas there are {r} language families and {i} isolates whose relationship to other languages has not been demonstrated.",
+        "Whether all languages go back to one common ancestor cannot be proven. The comparative method, by which linguists reconstruct proto-languages, reaches back, by common estimates, no more than roughly 6,000 to 10,000 years, but people have been speaking far longer. Linguistic diversity did not arise all at once: languages change with every generation, and groups that stop talking to each other stop understanding each other within centuries."
+       ]
+      }
+     ]
+    },
+    {
+     "nazev": "Sources",
+     "zdroje": [
+      "Genesis 11:1–9.",
+      "George, A. R. (2005–2006): The Tower of Babel: archaeology, history and cuneiform texts. Archiv für Orientforschung 51: 75–95.",
+      "Hammarström, H. et al.: Glottolog (glottolog.org).",
+      "Campbell, L. (2013): Historical Linguistics: An Introduction. 3rd ed. Edinburgh University Press."
+     ]
+    }
+   ]
+  }
+ }
 }

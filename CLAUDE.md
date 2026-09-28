@@ -306,6 +306,24 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a živý web workflow Diag
   Karta vymyšleného jazyka má hologramové záhlaví, štítek „Vymyšlený jazyk“, dílo, svět a autora; `vybrany`
   zůstává null (žádná tečka, rodina, vitalita ani srovnání). Stopy k Bráně jsou na kartách finštiny a velštiny
   (`stopy`). Zajímavosti musí být pravdivé jako u skutečných jazyků.
+- **Tři drobná tajemství** (28. 9. 2026, nápady uživatele; v návodu neprozrazovat, jako hesla „eulang“ a „mellon“):
+  **tři rychlá klepnutí na oceán** (stejné místo, do 1,2 s; `klikNaOcean` v `klikDoMapy`) nebo `#velryby` / `#whales` otevřou
+  kartu **„Mluví velryby?“** (kody vorvaňů, klan EC1 a koda 1+1+3, Sharma a kol. 2024; zpěv keporkaků, Payne a McVay 1971,
+  Garland 2011, Arnon 2025, Voyager; proč to zatím není jazyk a proč velryby nemají tečku) s akvarelem `ocean` (ocasní ploutev,
+  výtrysk) a tlačítkem „Přehrát rytmus kody“ (cvaknutí z WebAudio, výslovně schéma, ne nahrávka – nahrávky nemáme ověřené).
+  **Sedm rychlých kliknutí na logo** (`prevrat`): vrstvy `#podklad`, `#gl`, `#popisky` se otočí o 180° kolem středu koule
+  (plocha se stínem se mezitím nekreslí, `bezPlochy`), tečky se schovají a jejich kopie na plátně `canvas.padani` spadnou
+  do kopečku pod koulí, nahoře nápis „Jazyky nepadají z nebe. Až na tuto výjimku.“ (`T.tajemstvi.padani`), pak tečky
+  vyletí zpět a glóbus se otočí zpátky. Oceán se při převrácení nijak zvlášť nechová (uživatel: „nech to jak to je“).
+  **„babel“** napsané kdekoli, do hledání nebo `#babel` (`spustBabel`, `zmatJazyky`): slova na obrazovce se na 3,4 s
+  rozsypou do cizích písem (každé slovo jiné: azbuka, řečtina, hebrejština, gruzínština, arménština, dévanágarí, arabské
+  písmo, thajské, katakana, hangul) a pak se otevře karta **„Babylónská věž“** (Genesis 11, hříčka Bável/bālal, Bāb-ili,
+  Etemenanki, Esagilská tabulka, počet rodin a izolátů z dat, meze srovnávací metody) s akvarelem Mezopotámie.
+  Obě karty používají stejnou kartu jako jazyky (`ukazZvlastni`, stav `zvlastni`, texty `T.tajemstvi` v `src/ui/*.json`),
+  malby tajemství mají id `z-…` a kreslí se hned (hotové obrázky nemají). Při `prefers-reduced-motion` se nepřevrací ani
+  nerozsypává, jen se ukáže nápis nebo karta. Texty prošly nezávislým ověřením (opraveno: metoda Arnon a kol. je jen
+  inspirovaná učením dětí, dokončení Etemenanki jen „podle vlastních nápisů“ Nebukadnesara, Esagilská tabulka je opis
+  z Uruku 229 př. n. l., rubato = délka po sobě jdoucích kod, učení mláďat „nejspíš“, Šineár, citace se stranami).
 - Pořád platí: žádný satelit, prstenec, rohy zaměřovače ani sbírka pozdravů.
 - **Kruhový přehled všech rodin** (27. 9. 2026, uživatel: výseče „vyklikávat jako v DaisyDisk“, „přijatelnější design
   odpovídající současnému“; klikací náhled schválil „je to OK, spusť to“). **Jen volitelný doplněk**: jako výchozí pohled Rodokmenu ho uživatel
