@@ -578,7 +578,7 @@ function nactiBarvy(){
   const s = getComputedStyle(document.documentElement);
   ["vit-0", "vit-1", "vit-2", "vit-3", "vit-4", "vit-5", "vit-6", "vit-nic",
    "typ-1", "typ-2", "typ-3", "typ-4", "typ-5", "typ-jine", "typ-nic", "typ-r0", "typ-r1", "typ-r2", "typ-r3", "typ-r4", "typ-r5", "typ-r6",
-   "pevnina", "pobrezi", "stin-koule", "tecka-jazyk", "tecka-bod", "cyan", "fialova", "cervena", "hvezda", "koule1", "koule2", "popisek", "popisek-lem",
+   "pevnina", "pobrezi", "stin-koule", "tecka-jazyk", "tecka-lem", "tecka-bod", "cyan", "fialova", "cervena", "hvezda", "koule1", "koule2", "popisek", "popisek-lem",
    "atmosfera", "atmosfera2", "sit", "hranice", "okraj-koule", "zamerovac-lem",
    "r-ie", "r-st", "r-an", "r-afro", "r-nk", "r-ost", "more1", "more2", "souse1", "souse2", "souse-vit", "uzemi",
    "podlaha", "podlaha-2", "obzor", "text2", "stin-plochy", "stin-plochy-2"].forEach(function(k){ barvy[k] = s.getPropertyValue("--" + k).trim(); });
@@ -590,12 +590,12 @@ const fJaz = new Float32Array(POCET_B), zakladJaz = new Float32Array(POCET_B);  
 let gl = null, glProg = null, glU = {}, glA = {}, glJaz = null;
 /* příznak tečky: 0 obyčejná, 1 vybraná, 2 příbuzná, 3 pod myší, 4 schovaná filtrem, 5 v zvýrazněné zemi */
 const VS = [
-  "attribute vec2 a_pos; attribute float a_flag; attribute float a_vit;",
+  "attribute vec2 a_pos; attribute float a_flag; attribute float a_vit; attribute float a_hust; uniform float u_hust, u_lem;",
   "uniform float u_l0, u_sf0, u_cf0, u_r, u_dpr, u_jadro, u_barvit, u_cas;",
   "uniform vec2 u_stred, u_rozliseni;",
   "uniform vec4 u_b[6]; uniform float u_vel[6]; uniform float u_mek[6];",
   "uniform vec4 u_vit[8];",                    // barvy vitality: 0 = bez údaje, 1–6 = stupně UNESCO, 7 = probouzený
-  "varying vec4 v_barva; varying float v_mek; varying float v_jadro;",
+  "varying vec4 v_barva; varying float v_mek; varying float v_jadro; varying float v_lem;",
   "void main(){",
   "  v_jadro = u_jadro;",
   "  float dl = a_pos.x - u_l0, sl = sin(a_pos.y), cl = cos(a_pos.y), cdl = cos(dl);",
@@ -607,16 +607,19 @@ const VS = [
   "  if (f == 0 && u_barvit > 0.5) b = u_vit[int(a_vit + 1.5)];",
   "  v_mek = u_mek[f];",
   "  float trpyt = u_cas > 0.0 && f == 0 ? 0.72 + 0.28 * sin(u_cas * 1.7 + fract(sin(dot(a_pos, vec2(12.9898, 78.233))) * 43758.5453) * 6.2832) : 1.0;",
-  "  v_barva = vec4(b.rgb, b.a * trpyt * (0.3 + 0.7 * z));",
-  "  gl_PointSize = u_vel[f] * (0.6 + 0.4 * z) * u_dpr;",
+  "  float h = f == 0 ? a_hust * u_hust : 0.0;",
+  "  v_lem = f == 0 ? u_lem : 0.0;",
+  "  v_barva = vec4(b.rgb, b.a * trpyt * (0.3 + 0.7 * z) * (1.0 - 0.62 * h));",
+  "  gl_PointSize = u_vel[f] * (0.6 + 0.4 * z) * u_dpr * (1.0 - 0.4 * h) * (v_lem > 0.5 ? 1.45 : 1.0);",
   "  gl_Position = (z < 0.0 || f == 4) ? vec4(2.0, 2.0, 2.0, 1.0) : vec4(c.x, -c.y, 0.0, 1.0);",
   "}"].join("\n");
 const FS = [
   "precision mediump float;",
-  "varying vec4 v_barva; varying float v_mek; varying float v_jadro;",
+  "varying vec4 v_barva; varying float v_mek; varying float v_jadro; varying float v_lem; uniform vec3 u_lemB;",
   "void main(){",
   "  vec2 q = gl_PointCoord * 2.0 - 1.0; float d = dot(q, q);",
   "  if (d > 1.0) discard;",
+  "  if (v_lem > 0.5) { float a2 = (1.0 - smoothstep(0.78, 1.0, d)) * min(1.0, v_barva.a * 1.1); vec3 c2 = mix(u_lemB, v_barva.rgb, smoothstep(0.5, 0.38, d)); gl_FragColor = vec4(c2 * a2, a2); return; }",
   "  float a = mix(1.0 - smoothstep(0.45, 1.0, d), exp(-d * 4.0), v_mek) * v_barva.a;",
   "  vec3 c = mix(v_barva.rgb, vec3(1.0), v_mek * smoothstep(0.14, 0.0, d) * v_jadro);",
   "  gl_FragColor = vec4(c * a, a);",
@@ -637,10 +640,10 @@ function pripravGl(){
     if (!gl.getProgramParameter(glProg, gl.LINK_STATUS)) throw new Error(gl.getProgramInfoLog(glProg));
   } catch (e) { console.error("WebGL shader:", e); gl = null; return false; }
   gl.useProgram(glProg);
-  ["u_l0", "u_sf0", "u_cf0", "u_r", "u_dpr", "u_stred", "u_rozliseni", "u_b", "u_vel", "u_mek", "u_jadro", "u_barvit", "u_vit", "u_cas"]
+  ["u_l0", "u_sf0", "u_cf0", "u_r", "u_dpr", "u_stred", "u_rozliseni", "u_b", "u_vel", "u_mek", "u_jadro", "u_barvit", "u_vit", "u_cas", "u_hust", "u_lem", "u_lemB"]
     .forEach(function(k){ glU[k] = gl.getUniformLocation(glProg, k); });
   glA.pos = gl.getAttribLocation(glProg, "a_pos"); glA.flag = gl.getAttribLocation(glProg, "a_flag");
-  glA.vit = gl.getAttribLocation(glProg, "a_vit");
+  glA.vit = gl.getAttribLocation(glProg, "a_vit"); glA.hust = gl.getAttribLocation(glProg, "a_hust");
   const vrstva = function(lon, lat, priznaky){
     const poz = new Float32Array(lon.length * 2);
     for (let i = 0; i < lon.length; i++) { poz[2 * i] = lon[i]; poz[2 * i + 1] = lat[i]; }
@@ -654,6 +657,13 @@ function pripravGl(){
   const vit = new Float32Array(POCET_B);
   for (let i = 0; i < POCET_B; i++) vit[i] = vitalitaBodu(i);
   glJaz.vit = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, glJaz.vit); gl.bufferData(gl.ARRAY_BUFFER, vit, gl.STATIC_DRAW);
+  /* hustota: kolik jiných teček leží do 1,5° (mřížka po 1,5°) */
+  const hust = new Float32Array(POCET_B), mr = new Map(), K = 1.5;
+  for (let i = 0; i < POCET_B; i++) { const k = Math.floor(B[i][1] / K) + ":" + Math.floor(B[i][2] / K); (mr.get(k) || mr.set(k, []).get(k)).push(i); }
+  for (let i = 0; i < POCET_B; i++) { const gx = Math.floor(B[i][1] / K), gy = Math.floor(B[i][2] / K); let n = 0;
+    for (let dx = -1; dx <= 1; dx++) for (let dy = -1; dy <= 1; dy++) (mr.get((gx + dx) + ":" + (gy + dy)) || []).forEach(function(j){ const a = B[j][1] - B[i][1], c = B[j][2] - B[i][2]; if (j !== i && a * a + c * c < K * K) n++; });
+    hust[i] = Math.max(0, Math.min(1, (n - 2) / 18)); }
+  glJaz.hust = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, glJaz.hust); gl.bufferData(gl.ARRAY_BUFFER, hust, gl.STATIC_DRAW);
   gl.enable(gl.BLEND);
   return true;
 }
@@ -674,7 +684,7 @@ function nastaveniTecek(){
   return {
     barvy: [[barvy["tecka-jazyk"], denni ? 0.9 : 0.8], [vb, 1], [barvy.fialova, 1], [barvy["tecka-bod"], 1], [vb, 0], [barvy.cyan, 1]],
     vel: barvit() ? (typZobrazena() ? (denni ? [1.4, 1.9, 1.6, 2, 0, 1.9] : [1.55, 2.6, 2.1, 2.8, 0, 1.9]) : denni ? [1.05, 1.9, 1.6, 2, 0, 1.9] : [1.25, 2.6, 2.1, 2.8, 0, 1.9]) : denni ? [0.62, 1.9, 1.6, 2, 0, 1.9] : [1, 2.6, 2.1, 2.8, 0, 1.9],
-    mek: denni ? [0.25, 0.55, 0.55, 0.4, 0, 0.45] : [1, 1, 1, 1, 0, 1]
+    mek: barvit() ? (denni ? [0.25, 0.55, 0.55, 0.4, 0, 0.45] : [1, 1, 1, 1, 0, 1]) : denni ? [0, 0.55, 0.55, 0.4, 0, 0.45] : [0, 1, 1, 1, 0, 1]
   };
 }
 /* barvy vitality v pořadí pro shader: bez údaje, stupně 0–5, probouzený */
@@ -711,11 +721,17 @@ function kresliBodyGl(){
   gl.uniform1f(glU.u_jadro, denni ? 0.35 : (barvit() ? 0.4 : 0.85));
   /* světélka jazyků: v noci se sčítají, takže hustá místa září víc; ve dne (a při barvení podle vitality,
      kde musí barva zůstat pravdivá) se kreslí obyčejně */
-  if (denni || barvit()) gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA); else gl.blendFunc(gl.ONE, gl.ONE);
+  gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);   // tečky s lemem se nesčítají (v noci by se husté oblasti slily do bílé skvrny)
   gl.bindBuffer(gl.ARRAY_BUFFER, glJaz.poz); gl.enableVertexAttribArray(glA.pos); gl.vertexAttribPointer(glA.pos, 2, gl.FLOAT, false, 0, 0);
   gl.bindBuffer(gl.ARRAY_BUFFER, glJaz.flag); gl.enableVertexAttribArray(glA.flag); gl.vertexAttribPointer(glA.flag, 1, gl.FLOAT, false, 0, 0);
   if (typZobrazena() && glJaz.typVl !== typVlastnost) nahrajTypologii();
   gl.bindBuffer(gl.ARRAY_BUFFER, typZobrazena() ? glJaz.typ : glJaz.vit); gl.enableVertexAttribArray(glA.vit); gl.vertexAttribPointer(glA.vit, 1, gl.FLOAT, false, 0, 0);
+  /* tečky jako teplý inkoust se světlým lemem, v hustých oblastech menší a průsvitnější (uživatel 28. 9. 2026 proti
+     „modré kaši“); při barvení podle vitality nebo typologie bez lemu a bez ztenčení, barva tam musí zůstat pravdivá */
+  gl.uniform1f(glU.u_hust, barvit() ? 0 : 1);
+  gl.uniform1f(glU.u_lem, barvit() ? 0 : 1);
+  { const c = rgb(barvy["tecka-lem"]); gl.uniform3f(glU.u_lemB, c[0], c[1], c[2]); }
+  gl.bindBuffer(gl.ARRAY_BUFFER, glJaz.hust); gl.enableVertexAttribArray(glA.hust); gl.vertexAttribPointer(glA.hust, 1, gl.FLOAT, false, 0, 0);
   gl.drawArrays(gl.POINTS, 0, glJaz.n);
 }
 

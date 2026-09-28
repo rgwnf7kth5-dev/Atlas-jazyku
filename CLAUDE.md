@@ -585,7 +585,13 @@ Při ověření opraveno mj.: Doctrina Christiana „pokládaná za“ první kn
 - **Noc a den.** Vzhled se řídí nastavením počítače (`prefers-color-scheme`, i za běhu), přepínač
   sluníčko/měsíček ho přebije. Volba se pamatuje (`atlas-motiv`); když se shoduje s počítačem, smaže se
   a stránka se zase řídí počítačem. Skript v hlavičce nastaví `data-theme` hned, aby stránka neblikla. Denní barvy jsou v `:root[data-theme="light"]`; glóbus je čte z CSS proměnných
-  (`nactiBarvy`). Ve dne se světélka nesčítají (na světlé kouli by zmizela), kreslí se obyčejně.
+  (`nactiBarvy`).
+- **Tečky jazyků jsou teplý inkoust se světlým lemem** (28. 9. 2026, uživatel vybral „C + A“ ze čtyř náhledů proti „modré kaši“
+  z hodnocení webu: modré tečky na modrém moři v hustých oblastech splývaly): `--tecka-jazyk` ve dne cihlová `#7A2E1C`,
+  v noci jantarová `#FFC98A`, lem `--tecka-lem` v barvě papíru / noční plochy (shader: `u_lem`, `u_lemB`, tečka je 1,45× větší,
+  aby jádro zůstalo stejné). V hustých oblastech (víc než dvě tečky do 1,5°, `a_hust` z mřížky v `pripravGl`) jsou tečky
+  menší a průsvitnější (`u_hust`). **Nesčítají se už ani v noci** – s lemem se nejhustší místa slila do bílé skvrny.
+  Při barvení podle vitality nebo typologie je lem i ztenčení vypnuté (barva musí zůstat pravdivá).
   Ve dne se neříká „světélko“, ale „bod“: texty s tímto slovem mají denní znění s příponou `Den`
   (`krokKlikniJakDen`…), vybírá je `tx()` a po přepnutí vzhledu se texty obnoví (`obnovTexty`).
 - Barvy rodin (`--r-*`): noční sada prošla validátorem palet (skill dataviz) na `#04060F` i `#101634`,

@@ -33,7 +33,7 @@
   --sit:rgba(127,233,255,.07); --hranice:120,170,255; --okraj-koule:rgba(127,233,255,.4);
   --more1:#030817; --more2:#0C2352; --souse1:#1E2C58; --souse2:#5569A6;   /* reliéf: hluboké a mělké moře, stín a světlo pevniny */
   --pevnina:#1D3170; --pobrezi:rgba(120,175,255,.42); --stin-koule:rgba(0,0,10,.55);   /* pevnina světlejší než moře */
-  --tecka-jazyk:#5ADCFF; --tecka-bod:#FFFFFF;
+  --tecka-jazyk:#FFC98A; --tecka-lem:#0A1024; --tecka-bod:#FFFFFF;
   /* vitalita podle významu (uživatel 25. 9. 2026: „výrazněji odlišit“): bezpečný modře, čtyři stupně ohrožení
      jako teplá stupnice (prošla validátorem palet --ordinal na #1F2B55: rozptyl odstínu 38°, kroky ΔL ≥ 0,06),
      vymřelý bledě šedý („vybledl“), probouzený zeleně, bez údaje tmavě šedý; sousední dvojice prošly CVD */
@@ -65,7 +65,7 @@
   --sit:rgba(40,90,170,.1); --hranice:40,80,160; --okraj-koule:rgba(40,110,200,.45);
   --more1:#0C3A8A; --more2:#3E80D4; --souse1:#9EA6B2; --souse2:#FCFBF7;
   --pevnina:#A9BEE2; --pobrezi:rgba(40,80,160,.4); --stin-koule:rgba(40,70,140,.16);   /* pevnina tmavší než moře */
-  --tecka-jazyk:#0A5A94; --tecka-bod:#0E1838;
+  --tecka-jazyk:#7A2E1C; --tecka-lem:#FBF9F4; --tecka-bod:#0E1838;
   /* denní vitalita: stupně ohrožení prošly --ordinal na #E6E8EC (rozptyl 35°), sousední dvojice prošly CVD */
   --vit-0:#2F7FC1; --vit-1:#d07c00; --vit-2:#b35200; --vit-3:#932900; --vit-4:#6f0000; --vit-5:#4A4E5C;
   --vit-6:#23A862; --vit-nic:#A3AAB8;
@@ -653,7 +653,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
   --aktivni-text:#15306E;
   --atmosfera:rgba(110,160,230,.32); --atmosfera2:rgba(160,195,240,0);
   --sit:rgba(255,255,255,.2); --stin-koule:rgba(8,28,80,.2); --okraj-koule:rgba(20,60,140,.25);
-  --tecka-jazyk:#173A94;
+  --tecka-jazyk:#7A2E1C; --tecka-lem:#FBF9F4;   /* teplý inkoust se světlým lemem (28. 9. 2026, proti „modré kaši“) */
 }
 .sklo{background:var(--sklo); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border:1px solid var(--sklo-okraj);
   box-shadow:0 1px 0 var(--sklo-lesk) inset, 0 14px 40px -22px var(--stin)}
@@ -1808,6 +1808,6 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
  <dialog class="civ-okno" id="civ-okno" aria-labelledby="civ-nadpis"></dialog>
 </div>
 
-<script src="js/atlas.a6df1a57b8.js"></script>
+<script src="js/atlas.8230943cfb.js"></script>
 </body>
 </html>
