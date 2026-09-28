@@ -590,7 +590,8 @@ Při ověření opraveno mj.: Doctrina Christiana „pokládaná za“ první kn
   z hodnocení webu: modré tečky na modrém moři v hustých oblastech splývaly): `--tecka-jazyk` ve dne cihlová `#7A2E1C`,
   v noci jantarová `#FFC98A`, lem `--tecka-lem` v barvě papíru / noční plochy (shader: `u_lem`, `u_lemB`, tečka je 1,45× větší,
   aby jádro zůstalo stejné). V hustých oblastech (víc než dvě tečky do 1,5°, `a_hust` z mřížky v `pripravGl`) jsou tečky
-  menší a průsvitnější (`u_hust`). **Nesčítají se už ani v noci** – s lemem se nejhustší místa slila do bílé skvrny.
+  menší a průsvitnější (`u_hust`) – **jen při pohledu na celý svět, s přiblížením odezní a od 2× jsou všechny tečky stejné**
+  (uživatel 28. 9. 2026: „různě velké a vybarvené tečky působí matoucím dojmem“). **Nesčítají se už ani v noci** – s lemem se nejhustší místa slila do bílé skvrny.
   Při barvení podle vitality nebo typologie je lem i ztenčení vypnuté (barva musí zůstat pravdivá).
   Ve dne se neříká „světélko“, ale „bod“: texty s tímto slovem mají denní znění s příponou `Den`
   (`krokKlikniJakDen`…), vybírá je `tx()` a po přepnutí vzhledu se texty obnoví (`obnovTexty`).

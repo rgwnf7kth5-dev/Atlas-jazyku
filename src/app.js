@@ -728,7 +728,8 @@ function kresliBodyGl(){
   gl.bindBuffer(gl.ARRAY_BUFFER, typZobrazena() ? glJaz.typ : glJaz.vit); gl.enableVertexAttribArray(glA.vit); gl.vertexAttribPointer(glA.vit, 1, gl.FLOAT, false, 0, 0);
   /* tečky jako teplý inkoust se světlým lemem, v hustých oblastech menší a průsvitnější (uživatel 28. 9. 2026 proti
      „modré kaši“); při barvení podle vitality nebo typologie bez lemu a bez ztenčení, barva tam musí zůstat pravdivá */
-  gl.uniform1f(glU.u_hust, barvit() ? 0 : 1);
+  /* ztenčení jen při pohledu na celý svět: od přiblížení 2× se tečky nepřekrývají a různá velikost by mátla (uživatel 28. 9. 2026) */
+  gl.uniform1f(glU.u_hust, barvit() ? 0 : Math.max(0, Math.min(1, 2 - zoom)));
   gl.uniform1f(glU.u_lem, barvit() ? 0 : 1);
   { const c = rgb(barvy["tecka-lem"]); gl.uniform3f(glU.u_lemB, c[0], c[1], c[2]); }
   gl.bindBuffer(gl.ARRAY_BUFFER, glJaz.hust); gl.enableVertexAttribArray(glA.hust); gl.vertexAttribPointer(glA.hust, 1, gl.FLOAT, false, 0, 0);
