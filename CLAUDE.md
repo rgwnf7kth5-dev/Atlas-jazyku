@@ -64,9 +64,11 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a živý web workflow Diag
   Nový text v šabloně proto musí dostat i tuhle značku. Na webu se při přepnutí mění adresa `/` ↔ `/en/`.
 - **Samo-otáčení je volba, výchozí vypnutá** (přání uživatele: při přiblížení nešlo zaměřit bod).
   Výběr jazyka ho vypne. Při přiblížení se otáčí pomaleji (rychlost / zoom).
-- Od přiblížení 2× se u teček kreslí jména jazyků (přepínač „Jména“, výchozí zapnutý). Napřed jazyky z atlasu, pak ostatní; popisek, který by
+- Od přiblížení 2× se u teček kreslí jména jazyků, **jen když je zapnutý přepínač „Jména“ v Nastavení – výchozí je vypnutý**
+  (uživatel 28. 9. 2026 podle hodnocení webu: v Evropě se jména překrývala). Pamatuje se jen volba člověka (`atlas-jmena`;
+  dřívější `atlas-popisky` ukládal i výchozí stav, proto nový klíč). Napřed jazyky z atlasu, pak ostatní; popisek, který by
   překryl jiný, se vynechá (mřížka obsazenosti 4 px). Nejvýš 450 popisků na snímek.
-  Vybraný jazyk a jeho příbuzní (konce oblouků) mají jméno vždy, i bez přiblížení.
+  Vybraný jazyk a jeho příbuzní (konce oblouků) mají jméno vždy, i bez přiblížení a i s vypnutými Jmény.
 - Areál jazyka = seznam kruhů `[délka, šířka, poloměr ve stupních]`, kreslí se barvou rodiny oříznutý na pevninu
   (jádro ×1,3, měkký okraj ×1,75). Státy v `zeme` se vybarví celé – jen tam, kde se jazykem opravdu mluví v celém státě.
 - **Znakové jazyky** (225 teček: rodina „Sign Language“ v Glottologu + názvy se „Sign Language“; build je dává do
@@ -340,6 +342,10 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a živý web workflow Diag
   `dist/js/` maže. **Artefakt zůstává jeden soubor** se vším vloženým (`--artefakt`).
 - Build vyrábí i `robots.txt`, `sitemap.xml` (obě verze s hreflang) a dvojjazyčnou `404.html` (texty `nenalezena…`).
   `theme-color` je zvlášť pro světlý a tmavý vzhled.
+- **Počet mluvčích na kartě jazyka z atlasu** má u čísla šedé „odhad“ a v záložce Zajímavost oddíl s vysvětlením (zaokrouhlený
+  odhad atlasu včetně nerodilých mluvčích) a údajem z Wikidat s rokem, pokud je (`oddilMluvciAtlas`; hodnocení webu 28. 9. 2026:
+  zdroj přímo u čísla). Statické stránky jazyků mají „(odhad)“. Počítadlo dole na glóbu je „v záběru N z 7 967 jazyků“
+  (dřív „na glóbu“, hodnotitelé to četli jako nesoulad dat). Nápověda u kroku Výběr zmiňuje i klepnutí na zemi.
 - **Počty**: glóbus má 7 967 teček (jazyky Glottologu), seznam 7 970 položek. Srbštinu a chorvatštinu vede Glottolog
   jako jeden jazyk (srbochorvatština má tečku) a hmongštinu jako několik, atlas je má zvlášť – tečku nemají.
   Vysvětluje to jen stránka O datech (oddíl Jazyk, nebo nářečí). Věta v patičce seznamu byla 25. 9. 2026 na přání
@@ -664,6 +670,9 @@ Dřívější náhledový artefakt https://claude.ai/artifact/XS67Gsv9d4y2pMu7UW
   `oliva`, `cypris`, `palma`), stavby taky (`domky`, `chyse`, `mlyn`). Odraz ve vodě kreslí stejný tvar znovu
   převrácený, proto má `hory` vlastní náhodu podle tvaru. Jedna malba má 30–110 filtrů a kreslí se 50–140 ms
   (softwarově, 2× hustota) – víc nepřidávat bez změření.
+- **Na webu se malba na kartě (i u Jazyka dne) načte rovnou jako hotový obrázek `/malby/<id>.jpg`** (28. 9. 2026: hodnocení
+  webu vidělo nahoře na kartě „velký prázdný světlý blok“ – živá malba se kreslí až 2,2 s po otevření). Při chybě načtení
+  a v artefaktu se kreslí živě jako dřív. Proto po změně krajin **vždy znovu `scripts/malby.mjs`**, jinak karta ukáže starou malbu.
 - **Malby se ukazují jako bitmapa, ne jako živé SVG** (`malbaObrazek`, `vlozMalbu` v app.js). SVG s desítkami filtrů
   vložené do stránky se při každém pohybu glóbu přepočítávalo a výběr jazyka (let, vlna území, oblouky) trhal
   (uživatel 24. 9. 2026: „všechno je trhané, pomalé“; v měření 2,1 s práce GPU za 4 s animace, s bitmapou 0,07 s).

@@ -372,6 +372,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
 .stitek{background:var(--plocha); border:1px solid var(--linka); border-radius:13px; padding:7px 10px; min-width:0}
 .st-nazev{display:block; font-family:var(--pismo-data); font-size:.7rem; letter-spacing:.1em; text-transform:uppercase; color:var(--text3)}
 .st-hodnota{display:flex; align-items:center; gap:6px; margin-top:2px; font-weight:600; font-size:.86rem; line-height:1.25}
+.st-pozn{font-weight:500; font-size:.72rem; color:var(--text3)}
 .st-tecka{width:9px; height:9px; border-radius:50%; flex:none}
 .k-telo{padding:8px 14px 14px}
 .k-telo > .podrobnosti + .podrobnosti{margin-top:6px}
@@ -1707,7 +1708,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
      <div class="vp-hlava"><strong data-t="zobrazeni">Nastavení</strong>
       <button class="zavrit" id="zobrazeni-zavrit" type="button" aria-label="Zavřít" data-t-aria-label="zavritPanel"><svg aria-hidden="true"><use href="#i-krizek"/></svg></button></div>
      <button class="volba-radek" id="tl-otacet" type="button" aria-pressed="false" aria-labelledby="n-otacet" aria-describedby="p-otacet"><svg aria-hidden="true"><use href="#i-otacet"/></svg><span><b id="n-otacet" data-t="otacet">Otáčet</b> <small id="p-otacet" data-t="otacetPopis">Glóbus se bude pomalu sám otáčet</small></span><i class="spinac" aria-hidden="true"></i></button>
-     <button class="volba-radek" id="tl-jmena" type="button" aria-pressed="true" aria-labelledby="n-jmena" aria-describedby="p-jmena"><svg aria-hidden="true"><use href="#i-jmena"/></svg><span><b id="n-jmena" data-t="jmena">Jména</b> <small id="p-jmena" data-t="jmenaPopis">Při přiblížení zobrazovat u bodů názvy jazyků</small></span><i class="spinac" aria-hidden="true"></i></button>
+     <button class="volba-radek" id="tl-jmena" type="button" aria-pressed="false" aria-labelledby="n-jmena" aria-describedby="p-jmena"><svg aria-hidden="true"><use href="#i-jmena"/></svg><span><b id="n-jmena" data-t="jmena">Jména</b> <small id="p-jmena" data-t="jmenaPopis">Při přiblížení zobrazovat názvy všech jazyků (vybraný jazyk a jeho příbuzní je mají vždy)</small></span><i class="spinac" aria-hidden="true"></i></button>
      <div class="volba-oddil">
       <p class="volba-nadpis"><svg aria-hidden="true"><use href="#i-ruka"/></svg><b data-t="znakoveSkupina">Znakové jazyky</b></p>
       <div class="segment" role="group" aria-label="Znakové jazyky" aria-describedby="p-znakove" data-t-aria-label="znakoveSkupina">
@@ -1724,7 +1725,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
     <ol>
      <li data-krok="zatoc"><i></i><span><b data-t="krokZatoc">Otáčení</b> <span data-t="krokZatocJak">– tažením myší nebo prstem</span></span></li>
      <li data-krok="pribliz"><i></i><span><b data-t="krokPribliz">Přiblížení</b> <span data-t="krokPriblizJak">– kolečkem myši nebo dvěma prsty</span></span></li>
-     <li data-krok="klikni"><i></i><span><b data-t="krokKlikni">Výběr</b> <span data-t="krokKlikniJak">– klepnutím na světelný bod se otevře karta jazyka</span></span></li>
+     <li data-krok="klikni"><i></i><span><b data-t="krokKlikni">Výběr</b> <span data-t="krokKlikniJak">– klepnutím na světelný bod se otevře karta jazyka, klepnutím na zemi jazyky, kterými se v ní mluví</span></span></li>
      <li class="napoveda-navod"><i><svg aria-hidden="true"><use href="#i-kniha"/></svg></i><button type="button" id="napoveda-navod" aria-haspopup="dialog" data-t="navodNapoveda">Podrobný návod – co všechno atlas umí</button></li>
     </ol>
     <button class="napoveda-x" id="napoveda-x" type="button" aria-label="Zavřít nápovědu" data-t-aria-label="napovedaZavrit"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></button>
@@ -1807,6 +1808,6 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
  <dialog class="civ-okno" id="civ-okno" aria-labelledby="civ-nadpis"></dialog>
 </div>
 
-<script src="js/atlas.3e9adfeaf0.js"></script>
+<script src="js/atlas.a6df1a57b8.js"></script>
 </body>
 </html>

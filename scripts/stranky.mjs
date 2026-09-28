@@ -288,7 +288,7 @@ ${dlazdice(serazene)}`;
       const P = j[lang], pozdrav = P.pozdrav || j.pozdrav, i = bodJazyka[j.id], r = i >= 0 ? podrobnosti.radky[i] : null;
       const znakovy = r && glottolog.rodiny[glottolog.body[i][3]] === "Sign Language";
       const udaje = [];
-      if (j.mluvcich) udaje.push([znakovy ? S.uzivatelu : T.mluvcich, Math.round(j.mluvcich * 1e6) < 100 ? T.hrstka : lidi(lang, T, Math.round(j.mluvcich * 1e6))]);
+      if (j.mluvcich) udaje.push([znakovy ? S.uzivatelu : T.mluvcich, Math.round(j.mluvcich * 1e6) < 100 ? T.hrstka : lidi(lang, T, Math.round(j.mluvcich * 1e6)) + " (" + T.odhad + ")"]);
       if (P.rodina) udaje.push([T.rodina, P.rodina]);
       if (r && r[0] >= 0) udaje.push([T.vitalita, (znakovy ? T.aesZnak : T.aes)[r[0]][0]]);
       const st = staty(j, lang);

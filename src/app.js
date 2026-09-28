@@ -756,6 +756,14 @@ function vlozMalbu(el, id){
   const img = document.createElement("img");
   img.alt = ""; img.decoding = "async"; img.setAttribute("aria-hidden", "true");
   el.replaceChildren(img);
+  /* na webu jsou malby hotové obrázky (static/malby, scripts/malby.mjs): hned, bez prázdné plochy nahoře na kartě
+     (hodnocení webu 28. 9. 2026); v artefaktu a při chybě se malba kreslí živě jako dřív */
+  if (!ARTEFAKT && location.protocol !== "file:" && KRAJINY[id]) {
+    img.onload = function(){ img.classList.add("ukazana"); };
+    img.onerror = function(){ img.onerror = null; const cesta = malbaObrazek(id); if (cesta) cesta.then(function(url){ if (url && img.isConnected) img.src = url; }); };
+    img.src = "/malby/" + id + ".jpg";
+    return;
+  }
   const ukaz = function(){ const cesta = malbaObrazek(id); if (cesta) cesta.then(function(url){ if (url && img.isConnected) { img.onload = function(){ img.classList.add("ukazana"); }; img.src = url; } }); };
   if (MALBY[id]) ukaz();
   else setTimeout(function(){ if (!img.isConnected) return; if (window.requestIdleCallback) requestIdleCallback(ukaz, {timeout: 1500}); else ukaz(); }, 2200);
@@ -1061,14 +1069,17 @@ function kresliPodklad(){
 
 /* ---------- jména jazyků malým písmem, bez překrývání ---------- */
 const POPISKY_OD = 2, POPISKU_MAX = 450, BUNKA = 4;
-let popiskyZapnute = true;
+let popiskyZapnute = false;   // výchozí vypnuté (uživatel 28. 9. 2026: v Evropě se jména překrývala)
 function nastavPopisky(zapnout){
   popiskyZapnute = !!zapnout;
   $("tl-jmena").setAttribute("aria-pressed", popiskyZapnute ? "true" : "false");
-  try { localStorage.setItem("atlas-popisky", popiskyZapnute ? "1" : "0"); } catch (e) {}
+
   popiskyZmeneny = true;
 }
-$("tl-jmena").addEventListener("click", function(){ nastavPopisky(!popiskyZapnute); });
+$("tl-jmena").addEventListener("click", function(){
+  nastavPopisky(!popiskyZapnute);
+  try { localStorage.setItem("atlas-jmena", popiskyZapnute ? "1" : "0"); } catch (e) {}   // pamatuje se jen volba člověka (dřívější klíč atlas-popisky ukládal i výchozí stav)
+});
 const poradiPopisku = new Int32Array(POCET_B);   // napřed jazyky z atlasu, pak ostatní
 (function(){ let k = 0;
   for (let i = 0; i < POCET_B; i++) if (B[i][5]) poradiPopisku[k++] = i;
@@ -1087,8 +1098,8 @@ let dulezite = [];                                   // vybraný jazyk a příbu
 function kresliPopisky(){
   const c = ctxPopisky;
   c.clearRect(0, 0, sirka, vyska);
-  if (!popiskyZapnute || eu || cesta) return;       // v režimu EU mají jména jen jazyky se zlatou hvězdičkou
-  const vsechny = zoom >= POPISKY_OD;
+  if (eu || cesta) return;       // v režimu EU mají jména jen jazyky se zlatou hvězdičkou
+  const vsechny = popiskyZapnute && zoom >= POPISKY_OD;   // vybraný jazyk a jeho příbuzní mají jméno i s vypnutými jmény
   if (!vsechny && !dulezite.length) return;
   const vel = Math.min(11.5, 9.5 + Math.max(0, zoom - POPISKY_OD) * 0.4);
   const k = vel / 10, vys = vel + 3, rb = velikosti().jaz * 0.25;
@@ -2347,12 +2358,13 @@ function otevriKartu(barva, textBarva, novyJazyk){
     velikostKarty(""); karta.scrollTop = 0;
   }
 }
-function stitek(nazev, hodnota, vit){
+function stitek(nazev, hodnota, vit, pozn){
   const d = prvek("div", "stitek");
   d.appendChild(prvek("span", "st-nazev", nazev));
   const h = prvek("span", "st-hodnota");
   if (vit != null) { const t2 = prvek("i", "st-tecka"); t2.style.background = promennaVitality(vit); h.appendChild(t2); }
   h.appendChild(document.createTextNode(hodnota));
+  if (pozn) h.appendChild(prvek("small", "st-pozn", pozn));
   d.appendChild(h);
   kartaStitky.appendChild(d);
 }
@@ -2449,7 +2461,7 @@ function ukazKartu(j){
   const znakAtlas = jeZnakovyJazyk(j);                 /* u znakového jazyka se nemluví, ale znakuje */
   const bodJ = BOD_ATLASU[j.id], stupenJ = bodJ >= 0 ? vitalitaBodu(bodJ) : -1;
   cestaRodokmenu(bodJ);
-  stitek(znakAtlas ? T.uzivateluZnak : T.mluvcich, pocetMluvcich(j.mlu));
+  stitek(znakAtlas ? T.uzivateluZnak : T.mluvcich, pocetMluvcich(j.mlu), null, T.odhad);
   stitek(T.rodina, j.rod);
   if (stupenJ >= 0) stitek(T.vitalita, (znakAtlas ? T.aesZnak : T.aes)[stupenJ][0], stupenJ);
 
@@ -2482,7 +2494,7 @@ function ukazKartu(j){
   }
   zalozky([
     {nazev: T.zalozkaZajimavost, uzly: [fakt, (function(){ const c = BOD_ATLASU[j.id] != null ? civPodleTecky(BOD_ATLASU[j.id]) : null; return c ? tlacitkoCivilizace(c) : null; })(),   /* jazyk z atlasu se stránkou civilizace (čeština → Slované) */
-      kde, oddilUredni(BOD_ATLASU[j.id], j.id), oddilPisma(BOD_ATLASU[j.id], j.id), oddilNareci(BOD_ATLASU[j.id])]},
+      kde, oddilMluvciAtlas(j, bodJ, znakAtlas), oddilUredni(BOD_ATLASU[j.id], j.id), oddilPisma(BOD_ATLASU[j.id], j.id), oddilNareci(BOD_ATLASU[j.id])]},
     {nazev: T.vitalita, uzly: [stupenJ >= 0 ? oddilVitality(stupenJ, znakAtlas) : null]},
     {nazev: T.zalozkaStavba, uzly: [oddilTypologie(BOD_ATLASU[j.id])]},
     {nazev: T.zalozkaPribuzni, uzly: [pribuzni, tlacitkoRodokmenu(BOD_ATLASU[j.id])]}
@@ -2554,6 +2566,15 @@ function oddilUredni(i, id){
   return o;
 }
 function oddil(nadpisText){ const o = prvek("section"); o.appendChild(prvek("h3", null, nadpisText)); return o; }
+/* počet mluvčích u jazyka z atlasu: odkud údaj je (hodnocení webu 28. 9. 2026: zdroj přímo u čísla) */
+function oddilMluvciAtlas(j, i, znak){
+  const o = oddil(znak ? T.znakuje : T.mluvci);
+  o.appendChild(prvek("p", null, pocetMluvcich(j.mlu)));
+  o.appendChild(prvek("p", "pozn", znak ? T.mluvciAtlasZnak : T.mluvciAtlas));
+  const wdm = i >= 0 && Array.isArray(radek(i)[10]) ? radek(i)[10] : null;
+  if (wdm) o.appendChild(prvek("p", "pozn", t(wdm[2] ? (znak ? "mluvciAtlasWdRodiliZnak" : "mluvciAtlasWdRodili") : "mluvciAtlasWd", {n: lidi(wdm[0]), rok: wdm[1] ? " (" + wdm[1] + ")" : ""})));
+  return o;
+}
 function lidi(n){                  /* počet lidí: malá čísla přesně, velká zaokrouhleně, ale ne hrubě */
   if (n < 10000) return cislo(n);
   if (n < 1e6) { const k = Math.round(n / 1000); return cislo(k) + " " + tvar(k, T.tisic); }
@@ -3110,8 +3131,8 @@ if (globusOk) {
     try { ulozeneOtaceni = localStorage.getItem("atlas-otaceni"); } catch (e) {}
     nastavOtaceni(ulozeneOtaceni === "1");
     let ulozenePopisky = null;
-    try { ulozenePopisky = localStorage.getItem("atlas-popisky"); } catch (e) {}
-    nastavPopisky(ulozenePopisky !== "0");
+    try { ulozenePopisky = localStorage.getItem("atlas-jmena"); } catch (e) {}
+    nastavPopisky(ulozenePopisky === "1");
     requestAnimationFrame(smycka);
     ozivit();
     /* úvod: glóbus přiletí z dálky a pootočí se; při odkazu na jazyk nebo omezeném pohybu se vynechá */

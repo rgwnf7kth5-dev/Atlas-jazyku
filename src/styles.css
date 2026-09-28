@@ -357,6 +357,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
 .stitek{background:var(--plocha); border:1px solid var(--linka); border-radius:13px; padding:7px 10px; min-width:0}
 .st-nazev{display:block; font-family:var(--pismo-data); font-size:.7rem; letter-spacing:.1em; text-transform:uppercase; color:var(--text3)}
 .st-hodnota{display:flex; align-items:center; gap:6px; margin-top:2px; font-weight:600; font-size:.86rem; line-height:1.25}
+.st-pozn{font-weight:500; font-size:.72rem; color:var(--text3)}
 .st-tecka{width:9px; height:9px; border-radius:50%; flex:none}
 .k-telo{padding:8px 14px 14px}
 .k-telo > .podrobnosti + .podrobnosti{margin-top:6px}
