@@ -814,7 +814,7 @@ function maskaMalby(id){
     obr.src = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(m);
   }));
 }
-/* kanál masky: práh, rozšíření o r (maximum) a dvakrát rozmazání o b (průměr); stromy r 1, mraky r 5, voda bez rozšíření */
+/* kanál masky: práh, rozšíření o r (maximum) a dvakrát rozmazání o b (průměr); stromy r 1, mraky r 7, voda bez rozšíření */
 function upravMasku(px, w, h){
   const k = new Float32Array(w * h), t = new Float32Array(w * h);
   const prujezd = function(z, do_, r, max){
@@ -829,7 +829,7 @@ function upravMasku(px, w, h){
       do_[y * w + x] = max ? v : v / n;
     }
   };
-  [[0, 1, 2], [1, 5, 4], [2, 0, 1]].forEach(function(p){
+  [[0, 1, 2], [1, 7, 4], [2, 0, 1]].forEach(function(p){
     for (let i = 0; i < w * h; i++) k[i] = px[i * 4 + p[0]] > 128 ? 1 : 0;
     if (p[1]) prujezd(k, k, p[1], true);
     prujezd(k, k, p[2], false); prujezd(k, k, p[2], false);
@@ -844,7 +844,7 @@ const ZIVE_FS = ["precision mediump float; varying vec2 uv; uniform sampler2D im
   " float naraz = .55 + .45 * sin(t * .55 - u.x * 3.2);",                  // poryvy běží zleva doprava
   " d.x += m.r * .0048 * naraz * sin(t * 1.8 + u.x * 22. + u.y * 9.);",     // koruny, keře a tráva
   " d.y += m.r * .0021 * naraz * sin(t * 2.3 + u.x * 17.);",
-  " d.x += m.g * .0195 * sin(t * .16 + u.y * 3.);",                         // mraky plují
+  " d.x += m.g * .0195 * sin(t * .34 + u.y * 3.);",                         // mraky a ptáci plují (dřív .16 – skoro nebylo vidět)
   " d.y += m.b * .0039 * sin(u.y * 320. + t * 1.4 + sin(u.x * 11. + t * .6) * 2.);",   // vlnky na vodě
   " d.x += m.b * .0027 * sin(u.y * 140. - t * .9);",
   " gl_FragColor = texture2D(img, clamp(u + d, .001, .999));",
