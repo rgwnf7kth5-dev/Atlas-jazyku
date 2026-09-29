@@ -113,7 +113,9 @@ function skriptStranky(vychozi, artefakt) {
         .concat(fs.readdirSync(path.join(KOREN, "static/mapy")).filter(f => f.endsWith(".jpg")).map(f => ["mapy/" + f.slice(0, -4), "mapa-" + f.slice(0, -4)]))
         .map(([soubor, k]) => [k, artefakt ? "data:image/jpeg;base64," + fs.readFileSync(path.join(KOREN, `static/${soubor}.jpg`)).toString("base64") : `/${soubor}.jpg`]))))
     .replace("/*__CESTY__*/null", () => doSkriptu(json("data/cesty-slov.json").slova))
-    .replace("/*__PUTOVANI__*/null", () => doSkriptu(json("data/putovani.json").jazyky))   // putování jazyka na glóbu   // cesty slov na glóbu (Příběhy)
+    .replace("/*__PUTOVANI__*/null", () => doSkriptu(json("data/putovani.json").jazyky   // putování jazyka na glóbu; "koncept": true = čeká na ověření,
+      .filter(j => !j.koncept || process.env.PUT_KONCEPTY)))                              //   do webu jde jen s PUT_KONCEPTY=1 (náhled)
+    // cesty slov na glóbu (Příběhy)
     .replace("/*__KRAJINY__*/null", () => doSkriptu(json("data/krajiny.json")))
     .replace("/*__RELIEF__*/null", () => JSON.stringify("data:image/webp;base64," + fs.readFileSync(path.join(KOREN, "data/relief.webp")).toString("base64")))
     .replace("/*__TYPOLOGIE__*/null", () => { const d = json("data/typologie.json"), p = json("data/typologie-popis.json");   // typologické mapy (WALS)

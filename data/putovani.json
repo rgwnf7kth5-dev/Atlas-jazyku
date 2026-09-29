@@ -2667,12 +2667,12 @@
        "barva": "an",
        "body": [
         [
-         116.5,
-         25
+         119.4,
+         25.4
         ],
         [
-         118.5,
-         24.6
+         119.9,
+         24.8
         ],
         [
          120.4,
@@ -2702,8 +2702,8 @@
       "en": "The Philippines and Indonesia"
      },
      "text": {
-      "cs": "Kolem roku 2200 př. n. l. se Austronésané přeplavili z Tchaj-wanu přes Baši na Filipíny; archeologicky je provází červeně natíraná keramika. Odtud se malajsko-polynéské jazyky rozšířily na Borneo, Sulawesi, Jávu a Moluky. Kolem roku 1500 př. n. l. někdo z Filipín doplul i na Mariany – plavba přes více než 2000 km otevřeného moře, nejdelší své doby. Na Nové Guineji a v jejím okolí už ovšem tisíce let žili lidé mluvící papuánskými jazyky; Austronésané se tu usadili hlavně na pobřeží a ostrovech.",
-      "en": "Around 2200 BCE the Austronesians sailed from Taiwan across the Bashi Channel to the Philippines; archaeologically they are marked by red-slipped pottery. From there the Malayo-Polynesian languages spread to Borneo, Sulawesi, Java and the Moluccas. Around 1500 BCE people from the Philippines also reached the Mariana Islands – a voyage across more than 2,000 km of open sea, the longest of its time. New Guinea and its surroundings, however, had been home for tens of thousands of years to speakers of Papuan languages; there the Austronesians settled mainly on the coasts and islands."
+      "cs": "Kolem roku 2200 př. n. l. se Austronésané přeplavili z Tchaj-wanu přes Baši na Filipíny; archeologicky je provází červeně natíraná keramika. Odtud se malajsko-polynéské jazyky rozšířily na Borneo, Sulawesi, Jávu a Moluky. Kolem roku 1500 př. n. l. lidé z Filipín dopluli i na Mariany – plavba přes více než 2000 km otevřeného moře, nejdelší své doby. Na Nové Guineji a v jejím okolí ovšem už desítky tisíc let žili lidé, jejichž jazyky se souhrnně označují jako papuánské; Austronésané se tu usadili hlavně na pobřeží a ostrovech.",
+      "en": "Around 2200 BCE the Austronesians sailed from Taiwan across the Bashi Channel to the Philippines; archaeologically they are marked by red-slipped pottery. From there the Malayo-Polynesian languages spread to Borneo, Sulawesi, Java and the Moluccas. Around 1500 BCE people from the Philippines also reached the Mariana Islands – a voyage across more than 2,000 km of open sea, the longest of its time. New Guinea and its surroundings, however, had been inhabited for tens of thousands of years by peoples whose languages are grouped together as Papuan; there the Austronesians settled mainly on the coasts and islands."
      },
      "oblasti": [
       {
@@ -2759,8 +2759,8 @@
         ]
        ],
        "popisek": {
-        "cs": "Borneo, Sulawesi, Jáva",
-        "en": "Borneo, Sulawesi, Java"
+        "cs": "Borneo, Sulawesi, Jáva, Moluky",
+        "en": "Borneo, Sulawesi, Java, Moluccas"
        }
       },
       {
@@ -2812,16 +2812,24 @@
        "barva": "mp",
        "body": [
         [
-         124,
+         123.6,
          9
         ],
         [
-         121.5,
+         122.6,
+         8.6
+        ],
+        [
+         121.8,
+         7.4
+        ],
+        [
+         121.4,
          4.5
         ],
         [
-         119.5,
-         0.5
+         119.6,
+         0.6
         ]
        ],
        "popisek": {
@@ -2842,8 +2850,8 @@
          14.2
         ],
         [
-         145.2,
-         15
+         145.5,
+         15.05
         ]
        ],
        "popisek": {
@@ -2869,8 +2877,8 @@
       "en": "The Lapita culture"
      },
      "text": {
-      "cs": "Kolem roku 1350 př. n. l. se v Bismarckově souostroví u Nové Guineje objevila kultura Lapita s jemně zdobenou keramikou; spojuje se s praoceánštinou, předkem oceánských jazyků. Její nositelé se během několika staletí rozšířili na východ přes Šalamounovy ostrovy, Vanuatu a Novou Kaledonii až na Fidži (asi 900 př. n. l.) a do Tongy a na Samou (asi 850–800 př. n. l.). Jako první lidé vstoupili na ostrovy, kde nikdo nežil. Na Tonze a Samoi se pak vyvinula prapolynéština, společný předek maorštiny, havajštiny, tahitštiny, samojštiny i tonžštiny.",
-      "en": "Around 1350 BCE the Lapita culture, with its finely decorated pottery, appeared in the Bismarck Archipelago off New Guinea; it is associated with Proto-Oceanic, the ancestor of the Oceanic languages. Within a few centuries its bearers spread east across the Solomon Islands, Vanuatu and New Caledonia to Fiji (c. 900 BCE) and to Tonga and Samoa (c. 850–800 BCE). They were the first people to set foot on islands where no one had lived. In Tonga and Samoa Proto-Polynesian then developed, the common ancestor of Māori, Hawaiian, Tahitian, Samoan and Tongan."
+      "cs": "Kolem roku 1350 př. n. l. se v Bismarckově souostroví u Nové Guineje objevila kultura Lapita s jemně zdobenou keramikou; spojuje se s praoceánštinou, předkem oceánských jazyků. Její nositelé se během několika staletí rozšířili na východ přes Šalamounovy ostrovy, Vanuatu a Novou Kaledonii až na Fidži (asi 900 př. n. l.), do Tongy (asi 880 př. n. l.) a na Samou (asi 800 př. n. l.). Od Vanuatu dál vstupovali jako první lidé na ostrovy, kde nikdo nežil. Na Tonze a Samoi se pak vyvinula prapolynéština, společný předek maorštiny, havajštiny, tahitštiny, samojštiny i tonžštiny.",
+      "en": "Around 1350 BCE the Lapita culture, with its finely decorated pottery, appeared in the Bismarck Archipelago off New Guinea; it is associated with Proto-Oceanic, the ancestor of the Oceanic languages. Within a few centuries its bearers spread east across the Solomon Islands, Vanuatu and New Caledonia to Fiji (c. 900 BCE), Tonga (c. 880 BCE) and Samoa (c. 800 BCE). From Vanuatu onwards they were the first people to set foot on islands where no one had lived. In Tonga and Samoa Proto-Polynesian then developed, the common ancestor of Māori, Hawaiian, Tahitian, Samoan and Tongan."
      },
      "oblasti": [
       {
@@ -2887,6 +2895,11 @@
          152.5,
          -5.5,
          1.5
+        ],
+        [
+         149.7,
+         -1.5,
+         0.7
         ]
        ],
        "popisek": {
@@ -2922,20 +2935,40 @@
        "barva": "oc",
        "body": [
         [
-         129,
-         -3
+         128.9,
+         -2.7
         ],
         [
-         137,
-         -1.5
+         129.7,
+         -1
         ],
         [
-         144,
-         -3
+         130.5,
+         0.5
+        ],
+        [
+         132.3,
+         0.3
+        ],
+        [
+         134.5,
+         -0.3
+        ],
+        [
+         137.3,
+         -1
+        ],
+        [
+         140.5,
+         -2.2
+        ],
+        [
+         144.5,
+         -3.3
         ],
         [
          149.5,
-         -3.8
+         -3.9
         ]
        ]
       },
@@ -2974,8 +3007,8 @@
     {
      "id": "madagaskar",
      "doba": {
-      "cs": "asi 5.–7. století n. l.",
-      "en": "c. 5th–7th century CE"
+      "cs": "asi 5.–10. století n. l.",
+      "en": "c. 5th–10th century CE"
      },
      "pohled": [
       85,
@@ -2987,8 +3020,8 @@
       "en": "A detour to Madagascar"
      },
      "text": {
-      "cs": "Zatímco se Polynésané ještě nevydali dál, jiní Austronésané doplují na opačnou stranu, přes Indický oceán. Malgaština, jazyk Madagaskaru, je nejblíže příbuzná jazykům skupiny barito z jihovýchodního Bornea, zejména maanjanštině (Dahl 1951). Madagaskar byl osídlen patrně v 1. tisíciletí n. l., podle mnoha badatelů kolem 5.–7. století; kudy vedla cesta – přímo přes oceán, nebo podél pobřeží – je sporné. Malgaština přijala i slova z malajštiny, jávštiny a z bantuských jazyků východní Afriky.",
-      "en": "While the Polynesians had not yet moved on, other Austronesians sailed in the opposite direction, across the Indian Ocean. Malagasy, the language of Madagascar, is most closely related to the Barito languages of south-eastern Borneo, especially Ma'anyan (Dahl 1951). Madagascar was probably settled in the 1st millennium CE, according to many scholars around the 5th–7th century; the route – directly across the ocean or along the coasts – is disputed. Malagasy also took words from Malay, Javanese and the Bantu languages of East Africa."
+      "cs": "Zatímco se Polynésané ještě nevydali dál, jiní Austronésané dopluli na opačnou stranu, přes Indický oceán. Malgaština, jazyk Madagaskaru, je nejblíže příbuzná jazykům skupiny barito z jihovýchodního Bornea, zejména maanjanštině (Dahl 1951). Austronésané se na Madagaskaru usadili patrně ve 2. polovině 1. tisíciletí n. l.; lingvisté odhadují 5.–7. století, archeologické a genetické doklady spíš 8.–10. století. Kudy vedla cesta – přímo přes oceán, nebo podél pobřeží – je sporné. Malgaština přijala i slova z malajštiny, jávštiny a z bantuských jazyků východní Afriky.",
+      "en": "While the Polynesians had not yet moved on, other Austronesians sailed in the opposite direction, across the Indian Ocean. Malagasy, the language of Madagascar, is most closely related to the Barito languages of south-eastern Borneo, especially Ma'anyan (Dahl 1951). Austronesians settled in Madagascar probably in the second half of the 1st millennium CE; linguists estimate the 5th–7th century, archaeological and genetic evidence rather the 8th–10th. The route – directly across the ocean or along the coasts – is disputed. Malagasy also took words from Malay, Javanese and the Bantu languages of East Africa."
      },
      "oblasti": [
       {
@@ -3040,12 +3073,24 @@
        "sporna": true,
        "body": [
         [
-         113,
+         113.5,
          -4
         ],
         [
-         104,
-         -7
+         108,
+         -5.2
+        ],
+        [
+         105.9,
+         -5.8
+        ],
+        [
+         105.3,
+         -6.3
+        ],
+        [
+         103,
+         -8
         ],
         [
          90,
@@ -3060,7 +3105,7 @@
          -15
         ],
         [
-         49.5,
+         49.6,
          -17
         ]
        ],
@@ -3087,8 +3132,8 @@
       "en": "The long pause and the leap east"
      },
      "text": {
-      "cs": "Po příchodu na Tongu a Samou se stěhování na více než tisíc let zastavilo; archeologové tomu říkají dlouhá pauza. Teprve kolem roku 1000 n. l. se Polynésané vydali na východ, do Společenských ostrovů (Tahiti), na Cookovy ostrovy a na Markézy. Novější radiokarbonová data (Wilmshurst a kol. 2011) kladou první osídlení východní Polynésie až do 11. století, starší výklady o mnoho staletí dřív. Z východní Polynésie pak během dvou až tří století vyrazily výpravy na nejvzdálenější ostrovy.",
-      "en": "After reaching Tonga and Samoa the migration stopped for more than a thousand years; archaeologists call it the long pause. Only around 1000 CE did the Polynesians set out east, to the Society Islands (Tahiti), the Cook Islands and the Marquesas. More recent radiocarbon dates (Wilmshurst et al. 2011) put the first settlement of East Polynesia only in the 11th century, older accounts many centuries earlier. From East Polynesia, within two or three centuries, voyages set out to the remotest islands."
+      "cs": "Po příchodu na Tongu a Samou se stěhování na skoro dva tisíce let zastavilo; archeologové tomu říkají dlouhá pauza. Teprve kolem roku 1000 n. l. se Polynésané vydali na východ, nejdřív do Společenských ostrovů (Tahiti), brzy nato na Cookovy ostrovy a na Markézy. Novější radiokarbonová data (Wilmshurst a kol. 2011) kladou první osídlení východní Polynésie až do 11. století, starší výklady o mnoho staletí dřív. Po krátké přestávce, podle Wilmshursta a kol. 70–265 let, vyrazily z východní Polynésie výpravy na nejvzdálenější ostrovy.",
+      "en": "After reaching Tonga and Samoa the migration stopped for almost two thousand years; archaeologists call it the long pause. Only around 1000 CE did the Polynesians set out east, first to the Society Islands (Tahiti), soon after to the Cook Islands and the Marquesas. More recent radiocarbon dates (Wilmshurst et al. 2011) put the first settlement of East Polynesia only in the 11th century, older accounts many centuries earlier. After a short interval – 70 to 265 years according to Wilmshurst et al. – voyages set out from East Polynesia to the remotest islands."
      },
      "oblasti": [
       {
@@ -3181,8 +3226,8 @@
       "en": "Hawaiʻi, Rapa Nui and Aotearoa"
      },
      "text": {
-      "cs": "Na velkých dvoutrupých kánoích a s navigací podle hvězd, vln a ptáků doplouvali Polynésané k ostrovům vzdáleným tisíce kilometrů. Kolem roku 1200 osídlili Havaj a Velikonoční ostrov (Rapa Nui), kolem let 1250–1300 jako poslední velkou pevninu na Zemi Nový Zéland, maorsky Aotearoa. Maorská tradice vypráví o příchodu kánoí z bájné vlasti Hawaiki. Polynésané se patrně dostali i k břehům Jižní Ameriky: odtud pochází batáty, maorsky kūmara, a genetika ukazuje na kontakt s původními Američany kolem roku 1200 (Ioannidis a kol. 2020); obojí je ale předmětem sporů.",
-      "en": "In large double-hulled canoes, navigating by the stars, the swells and the birds, the Polynesians reached islands thousands of kilometres away. Around 1200 they settled Hawaiʻi and Easter Island (Rapa Nui), and around 1250–1300 New Zealand, Aotearoa in Māori, the last large landmass on Earth to be settled. Māori tradition tells of canoes arriving from the legendary homeland of Hawaiki. The Polynesians probably also reached the shores of South America: the sweet potato, kūmara in Māori, comes from there, and genetics points to contact with Native Americans around 1200 (Ioannidis et al. 2020); both remain debated."
+      "cs": "Na velkých dvoutrupých kánoích a s navigací podle hvězd, vln a ptáků doplouvali Polynésané k ostrovům vzdáleným tisíce kilometrů. Kolem roku 1200 osídlili Havaj a Velikonoční ostrov (Rapa Nui), kolem let 1250–1300 jako poslední velkou pevninu na Zemi Nový Zéland, maorsky Aotearoa. Maorská tradice vypráví o příchodu kánoí z pradávné vlasti Hawaiki. Polynésané se patrně dostali i k břehům Jižní Ameriky. Naznačují to batáty (maorsky kūmara), které pocházejí z Ameriky a do Polynésie se dostaly dávno před Evropany, i genetika: kolem roku 1200 se Polynésané smísili s původními Američany (Ioannidis a kol. 2020). Kdo ke komu doplul, je ale sporné.",
+      "en": "In large double-hulled canoes, navigating by the stars, the swells and the birds, the Polynesians reached islands thousands of kilometres away. Around 1200 they settled Hawaiʻi and Easter Island (Rapa Nui), and around 1250–1300 New Zealand, Aotearoa in Māori, the last large landmass on Earth to be settled. Māori tradition tells of canoes arriving from the ancestral homeland of Hawaiki. The Polynesians probably also reached the shores of South America. This is suggested by the sweet potato (kūmara in Māori), which comes from the Americas and reached Polynesia long before Europeans, and by genetics: around 1200 Polynesians mixed with Native Americans (Ioannidis et al. 2020). Who sailed to whom, however, remains debated."
      },
      "oblasti": [
       {
@@ -3191,9 +3236,14 @@
        "po": "na-havaj",
        "kruhy": [
         [
-         -156.5,
-         20.3,
-         1.6
+         -155.9,
+         19.9,
+         1.3
+        ],
+        [
+         -158.6,
+         21.7,
+         1.3
         ]
        ],
        "popisek": {
@@ -3245,20 +3295,20 @@
        "barva": "pol",
        "body": [
         [
-         -146,
-         -12
+         -140.2,
+         -8.2
         ],
         [
-         -150,
+         -146,
          0
         ],
         [
-         -153,
+         -152,
          10
         ],
         [
-         -155.5,
-         18.8
+         -155.3,
+         18.7
         ]
        ],
        "popisek": {
@@ -3324,16 +3374,20 @@
        "sporna": true,
        "body": [
         [
-         -108.5,
-         -26.5
+         -138.4,
+         -10.8
         ],
         [
-         -95,
-         -20
+         -120,
+         -7.5
         ],
         [
-         -82,
-         -12
+         -100,
+         -4
+        ],
+        [
+         -81.2,
+         -1
         ]
        ],
        "popisek": {
@@ -3359,8 +3413,8 @@
       "en": "Māori today"
      },
      "text": {
-      "cs": "Polynéské jazyky jsou si dodnes velmi blízké: „dva, tři“ se maorsky řekne rua, toru, havajsky lua, kolu, tahitsky piti, toru. Maorštinu začali latinkou zapisovat misionáři kolem roku 1815; první mluvnice vyšla roku 1820. Ve 20. století ji ve školách vytlačovala angličtina a počet dětí, které se ji učily doma, rychle klesal. Od 70. a 80. let se ji Maorové snaží oživit: roku 1982 vznikly první jazykové „mateřské školy“ kōhanga reo a roku 1987 se maorština stala úředním jazykem Nového Zélandu. Podle sčítání lidu jí mluví asi 200 tisíc lidí.",
-      "en": "The Polynesian languages are still very close to each other: 'two, three' is rua, toru in Māori, lua, kolu in Hawaiian and piti, toru in Tahitian. Missionaries began writing Māori in the Latin alphabet around 1815; the first grammar appeared in 1820. In the 20th century English pushed it out of schools, and the number of children learning it at home fell fast. Since the 1970s and 1980s Māori have worked to revive it: the first kōhanga reo 'language nests' opened in 1982, and in 1987 Māori became an official language of New Zealand. According to the census about 200,000 people speak it."
+      "cs": "Polynéské jazyky jsou si dodnes velmi blízké: „dva, tři“ se maorsky řekne rua, toru, havajsky lua, kolu, tahitsky piti, toru. Maorštinu začali latinkou zapisovat misionáři spolu s maorskými náčelníky: roku 1815 vyšla první kniha a roku 1820 první mluvnice (Thomas Kendall a Samuel Lee s Hongi Hikou a Waikatem). Po britské kolonizaci se ve školách vyučovalo jen anglicky a děti bývaly za maorštinu trestány; po 2. světové válce k tomu přibylo stěhování do měst. Maorsky mluvilo roku 1913 přes 90 % maorských školáků, roku 1975 méně než 5 %. Od 70. let usiluje maorské hnutí o oživení jazyka: roku 1982 vznikla první jazyková hnízda kōhanga reo a roku 1987 se maorština stala jedním z úředních jazyků Nového Zélandu. Při sčítání 2023 uvedlo asi 214 tisíc lidí (4,3 % obyvatel; 2018: 186 tisíc), že v maorštině zvládnou běžný rozhovor.",
+      "en": "The Polynesian languages are still very close to each other: 'two, three' is rua, toru in Māori, lua, kolu in Hawaiian and piti, toru in Tahitian. Missionaries, working with Māori chiefs, began writing Māori in the Latin alphabet: the first book appeared in 1815 and the first grammar in 1820 (Thomas Kendall and Samuel Lee with Hongi Hika and Waikato). After British colonisation schools taught only in English and children were often punished for speaking Māori; after the Second World War urban migration added to the pressure. Over 90% of Māori schoolchildren spoke Māori in 1913, fewer than 5% in 1975. Since the 1970s a Māori movement has worked to revive the language: the first kōhanga reo 'language nests' opened in 1982, and in 1987 Māori became an official language of New Zealand. In the 2023 census about 214,000 people (4.3%; 2018: 186,000) said they could hold an everyday conversation in Māori."
      },
      "oblasti": [
       {
@@ -3395,17 +3449,22 @@
    "zdroje": [
     "Blust, R. (2013): The Austronesian Languages. Revised ed. Canberra: Asia-Pacific Linguistics.",
     "Bellwood, P. (2017): First Islanders: Prehistory and Human Migration in Island Southeast Asia. Wiley-Blackwell.",
-    "Kirch, P. V. (2017): On the Road of the Winds: An Archaeological History of the Pacific Islands. 2nd ed. University of California Press.",
+    "Hung, H.-C. et al. (2011): The first settlement of Remote Oceania: the Philippines to the Marianas. Antiquity 85(329): 909–926.",
+    "Denham, T. – Bronk Ramsey, C. – Specht, J. (2012): Dating the appearance of Lapita pottery in the Bismarck Archipelago and its dispersal to Remote Oceania. Archaeology in Oceania 47(1): 39–46.",
+    "Kirch, P. V. (2017): On the Road of the Winds: An Archaeological History of the Pacific Islands before European Contact. Revised and expanded ed. Berkeley: University of California Press.",
     "Wilmshurst, J. M. et al. (2011): High-precision radiocarbon dating shows recent and rapid initial human colonization of East Polynesia. PNAS 108(5): 1815–1820.",
     "Ioannidis, A. G. et al. (2020): Native American gene flow into Polynesia predating Easter Island settlement. Nature 583: 572–577.",
-    "Adelaar, A. (2009): Towards an integrated theory about the Indonesian migrations to Madagascar. In: Peregrine, P. N. et al. (eds.): Ancient Human Migrations. University of Utah Press.",
     "Dahl, O. C. (1951): Malgache et maanjan: une comparaison linguistique. Oslo: Egede-Instituttet.",
-    "Te Ara – the Encyclopedia of New Zealand: Te reo Māori – the Māori language."
+    "Adelaar, A. (2009): Towards an integrated theory about the Indonesian migrations to Madagascar. In: Peregrine, P. N. – Peiros, I. – Feldman, M. (eds.): Ancient Human Migrations: A Multidisciplinary Approach. Salt Lake City: University of Utah Press, 149–172.",
+    "Crowther, A. et al. (2016): Ancient crops provide first archaeological signature of the westward Austronesian expansion. PNAS 113(24): 6635–6640.",
+    "Higgins, R. – Keane, B. (2013, aktualizováno 2015): Te reo Māori – the Māori language. Te Ara – the Encyclopedia of New Zealand.",
+    "Stats NZ: sčítání lidu 2023 (mluvčí maorštiny)."
    ]
   },
   {
    "id": "turectina",
    "atlas": "tr",
+   "koncept": true,
    "adresa": {
     "cs": "putovani-turectina",
     "en": "journey-turkish"
@@ -4117,6 +4176,830 @@
     "Findley, C. V. (2005): The Turks in World History. Oxford University Press.",
     "Lewis, G. (1999): The Turkish Language Reform: A Catastrophic Success. Oxford University Press.",
     "Dankoff, R. – Kelly, J. (eds. a přel.) (1982–1985): Maḥmūd al-Kāšγarī: Compendium of the Turkic Dialects (Dīwān Luγāt at-Turk). Harvard University."
+   ]
+  },
+  {
+   "id": "anglictina",
+   "atlas": "en",
+   "koncept": true,
+   "adresa": {
+    "cs": "putovani-anglictina",
+    "en": "journey-english"
+   },
+   "nazev": {
+    "cs": "Putování angličtiny",
+    "en": "The journey of English"
+   },
+   "uvod": {
+    "cs": "Od nářečí germánských kmenů na pobřeží Severního moře přes vikingy a Normany až k jazyku, kterým dnes mluví přes miliardu lidí. Letopočty jsou přibližné, sporné výklady jsou přerušovaně.",
+    "en": "From the dialects of Germanic tribes on the North Sea coast through the Vikings and the Normans to a language spoken today by more than a billion people. Dates are approximate; disputed interpretations are dashed."
+   },
+   "etapy": [
+    {
+     "id": "anglosasove",
+     "doba": {
+      "cs": "5.–6. století",
+      "en": "5th–6th century"
+     },
+     "pohled": [
+      2,
+      53.5,
+      3
+     ],
+     "nazev": {
+      "cs": "Anglové, Sasové a Jutové",
+      "en": "Angles, Saxons and Jutes"
+     },
+     "text": {
+      "cs": "Angličtina je germánský jazyk; nejbližší příbuznou má fríštinu. Její předkové, nářečí Anglů, Sasů, Jutů a Frísů z pobřeží Severního moře, se do Británie dostala v 5. a 6. století, po odchodu římských vojsk kolem roku 410; Beda Ctihodný klade příchod Anglů a Sasů do roku 449. Obyvatelé Británie mluvili tehdy brittskými keltskými jazyky a zčásti latinou. Staroangličtina od nich převzala jen málo slov, keltské jsou ale mnohé názvy řek (Avon, Thames). Brittské jazyky se udržely na západě, ve Walesu a Cornwallu, a část Britů odešla do Bretaně.",
+      "en": "English is a Germanic language; its closest relative is Frisian. Its ancestors, the dialects of the Angles, Saxons, Jutes and Frisians of the North Sea coast, reached Britain in the 5th and 6th centuries, after the Roman troops left around 410; Bede dates the arrival of the Angles and Saxons to 449. The people of Britain then spoke Brittonic Celtic languages and partly Latin. Old English took few words from them, but many river names are Celtic (Avon, Thames). The Brittonic languages survived in the west, in Wales and Cornwall, and some Britons moved to Brittany."
+     },
+     "oblasti": [
+      {
+       "id": "pobrezi",
+       "barva": "gm",
+       "kruhy": [
+        [
+         9.5,
+         54.8,
+         1.3
+        ],
+        [
+         8.5,
+         53,
+         1.5
+        ],
+        [
+         6,
+         53.2,
+         1.1
+        ],
+        [
+         9.2,
+         56,
+         1
+        ]
+       ],
+       "popisek": {
+        "cs": "Anglové, Sasové, Jutové, Frísové",
+        "en": "Angles, Saxons, Jutes, Frisians"
+       }
+      },
+      {
+       "id": "staroanglictina",
+       "barva": "en",
+       "po": "sasove",
+       "kruhy": [
+        [
+         -1,
+         52.5,
+         2
+        ],
+        [
+         0.5,
+         51.5,
+         1.2
+        ],
+        [
+         -1.5,
+         54.5,
+         1.4
+        ]
+       ],
+       "popisek": {
+        "cs": "staroangličtina",
+        "en": "Old English"
+       }
+      },
+      {
+       "id": "britove",
+       "barva": "kel",
+       "kruhy": [
+        [
+         -3.8,
+         52.3,
+         1.1
+        ],
+        [
+         -4.8,
+         50.4,
+         0.7
+        ],
+        [
+         -4.5,
+         56.5,
+         1.5
+        ]
+       ],
+       "popisek": {
+        "cs": "keltské jazyky",
+        "en": "Celtic languages"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "anglove",
+       "barva": "gm",
+       "body": [
+        [
+         9,
+         54.6
+        ],
+        [
+         6,
+         54.5
+        ],
+        [
+         2.5,
+         53.8
+        ],
+        [
+         0.2,
+         53.3
+        ]
+       ]
+      },
+      {
+       "id": "sasove",
+       "barva": "gm",
+       "body": [
+        [
+         7.5,
+         53.2
+        ],
+        [
+         4,
+         52.5
+        ],
+        [
+         1.6,
+         51.8
+        ]
+       ]
+      },
+      {
+       "id": "bretan",
+       "barva": "kel",
+       "body": [
+        [
+         -4.8,
+         50.3
+        ],
+        [
+         -4.5,
+         49.3
+        ],
+        [
+         -3.5,
+         48.4
+        ]
+       ],
+       "popisek": {
+        "cs": "do Bretaně",
+        "en": "to Brittany"
+       }
+      }
+     ]
+    },
+    {
+     "id": "vikingove",
+     "doba": {
+      "cs": "793–11. století",
+      "en": "793–11th century"
+     },
+     "pohled": [
+      2,
+      56,
+      2.6
+     ],
+     "nazev": {
+      "cs": "Vikingové a Danelaw",
+      "en": "The Vikings and the Danelaw"
+     },
+     "text": {
+      "cs": "Roku 793 vikingové vyplenili klášter Lindisfarne a v 9. století se Dánové usadili na velké části severní a východní Anglie, v oblasti zvané Danelaw. Stará norština byla staroangličtině blízká a obě řeči se mísily: z norštiny má angličtina i velmi běžná slova jako sky, egg, skin, take a dokonce zájmena they, them, their. Norové osídlili Shetlandy, Orkneje a Hebridy. Alfréd Veliký (vládl 871–899) přitom v Sasku podporoval psaní v angličtině a dal do ní přeložit latinské knihy.",
+      "en": "In 793 the Vikings sacked the monastery of Lindisfarne, and in the 9th century the Danes settled much of northern and eastern England, in the area called the Danelaw. Old Norse was close to Old English and the two mingled: from Norse English has very common words such as sky, egg, skin and take, and even the pronouns they, them and their. Norwegians settled Shetland, Orkney and the Hebrides. Meanwhile Alfred the Great (reigned 871–899) promoted writing in English in Wessex and had Latin books translated into it."
+     },
+     "oblasti": [
+      {
+       "id": "danelaw",
+       "barva": "non",
+       "po": "danove",
+       "kruhy": [
+        [
+         -1,
+         53.8,
+         1.5
+        ],
+        [
+         0.5,
+         52.7,
+         1.2
+        ],
+        [
+         -1.3,
+         52.6,
+         1
+        ]
+       ],
+       "popisek": {
+        "cs": "Danelaw",
+        "en": "Danelaw"
+       }
+      },
+      {
+       "id": "wessex",
+       "barva": "en",
+       "kruhy": [
+        [
+         -2,
+         51.2,
+         1.2
+        ]
+       ],
+       "popisek": {
+        "cs": "Wessex (Alfréd)",
+        "en": "Wessex (Alfred)"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "danove",
+       "barva": "non",
+       "body": [
+        [
+         9,
+         56
+        ],
+        [
+         5,
+         55.5
+        ],
+        [
+         1,
+         54.6
+        ],
+        [
+         -0.8,
+         54.2
+        ]
+       ],
+       "popisek": {
+        "cs": "Dánové",
+        "en": "Danes"
+       }
+      },
+      {
+       "id": "norove",
+       "barva": "non",
+       "body": [
+        [
+         5.5,
+         60.5
+        ],
+        [
+         0,
+         60
+        ],
+        [
+         -2.5,
+         59.2
+        ],
+        [
+         -5.5,
+         58
+        ]
+       ],
+       "popisek": {
+        "cs": "Norové (Orkneje, Hebridy)",
+        "en": "Norwegians (Orkney, Hebrides)"
+       }
+      }
+     ]
+    },
+    {
+     "id": "normane",
+     "doba": {
+      "cs": "1066–asi 1500",
+      "en": "1066–c. 1500"
+     },
+     "pohled": [
+      0,
+      51,
+      3.2
+     ],
+     "nazev": {
+      "cs": "Normané a střední angličtina",
+      "en": "The Normans and Middle English"
+     },
+     "text": {
+      "cs": "Roku 1066 porazil normanský vévoda Vilém u Hastingsu anglického krále Harolda. Jazykem dvora, šlechty a práva se na staletí stala normanská francouzština, jazykem církve a učenosti latina; angličtinou mluvil hlavně lid. Z francouzštiny přišly tisíce slov, často vedle anglických: zvíře na pastvě je anglické cow, pig, maso na stole francouzské beef, pork. Ztrátou většiny koncovek vznikla střední angličtina; kolem roku 1400 v ní psal Geoffrey Chaucer Canterburské povídky. Roku 1476 zřídil William Caxton v Londýně první tiskárnu a začala velká změna samohlásek, kvůli níž se dnes anglická slova vyslovují jinak, než se píší.",
+      "en": "In 1066 Duke William of Normandy defeated the English king Harold at Hastings. For centuries Norman French became the language of the court, the nobility and the law, and Latin that of the Church and learning; English was spoken mainly by ordinary people. Thousands of words came from French, often alongside English ones: the animal in the field is English cow, pig, the meat on the table French beef, pork. With the loss of most endings Middle English emerged; around 1400 Geoffrey Chaucer wrote the Canterbury Tales in it. In 1476 William Caxton set up the first printing press in London, and the Great Vowel Shift began, which is why English words are now pronounced differently from how they are spelled."
+     },
+     "oblasti": [
+      {
+       "id": "normandie",
+       "barva": "fr",
+       "kruhy": [
+        [
+         0,
+         49.1,
+         1.2
+        ]
+       ],
+       "popisek": {
+        "cs": "Normandie",
+        "en": "Normandy"
+       }
+      },
+      {
+       "id": "stredni",
+       "barva": "en",
+       "po": "hastings",
+       "kruhy": [
+        [
+         -1,
+         52.3,
+         2
+        ],
+        [
+         -0.2,
+         51.5,
+         1.3
+        ],
+        [
+         -1.8,
+         53.8,
+         1.3
+        ]
+       ],
+       "popisek": {
+        "cs": "střední angličtina",
+        "en": "Middle English"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "hastings",
+       "barva": "fr",
+       "body": [
+        [
+         -0.3,
+         49.3
+        ],
+        [
+         0.2,
+         50.2
+        ],
+        [
+         0.6,
+         50.85
+        ]
+       ],
+       "popisek": {
+        "cs": "Hastings 1066",
+        "en": "Hastings 1066"
+       }
+      }
+     ]
+    },
+    {
+     "id": "kolonie",
+     "doba": {
+      "cs": "16.–18. století",
+      "en": "16th–18th century"
+     },
+     "pohled": [
+      -35,
+      45,
+      1.4
+     ],
+     "nazev": {
+      "cs": "Shakespeare a první kolonie",
+      "en": "Shakespeare and the first colonies"
+     },
+     "text": {
+      "cs": "Raná nová angličtina je jazyk Shakespeara (1564–1616) a Bible krále Jakuba (1611). Angličtina tehdy na Britských ostrovech postupně vytlačovala velštinu, irštinu a skotskou gaelštinu. Roku 1607 vznikla v Jamestownu ve Virginii první trvalá anglická osada v Americe a roku 1620 připluli do Plymouthu otcové poutníci. V 17. a 18. století se angličtina usadila na východním pobřeží Severní Ameriky a v Karibiku, kde z ní spolu s africkými jazyky zotročených lidí vznikly kreolské jazyky, například jamajská kreolština.",
+      "en": "Early Modern English is the language of Shakespeare (1564–1616) and the King James Bible (1611). At that time English was gradually displacing Welsh, Irish and Scottish Gaelic in the British Isles. In 1607 Jamestown in Virginia became the first permanent English settlement in America, and in 1620 the Pilgrims landed at Plymouth. In the 17th and 18th centuries English settled along the eastern coast of North America and in the Caribbean, where together with the African languages of enslaved people it gave rise to creole languages such as Jamaican Creole."
+     },
+     "oblasti": [
+      {
+       "id": "ostrovy",
+       "barva": "en",
+       "kruhy": [
+        [
+         -1.5,
+         52.5,
+         2.2
+        ],
+        [
+         -3.5,
+         55.5,
+         1.5
+        ],
+        [
+         -7.5,
+         53.2,
+         1.3
+        ]
+       ],
+       "popisek": {
+        "cs": "Britské ostrovy",
+        "en": "the British Isles"
+       }
+      },
+      {
+       "id": "pobrezi",
+       "barva": "en",
+       "po": "do-ameriky",
+       "kruhy": [
+        [
+         -77,
+         38,
+         2
+        ],
+        [
+         -72,
+         42,
+         2
+        ],
+        [
+         -80,
+         34.5,
+         1.5
+        ]
+       ],
+       "popisek": {
+        "cs": "východní pobřeží Ameriky",
+        "en": "eastern coast of America"
+       }
+      },
+      {
+       "id": "karibik",
+       "barva": "cr",
+       "po": "do-karibiku",
+       "kruhy": [
+        [
+         -77.3,
+         18.1,
+         1
+        ],
+        [
+         -59.6,
+         13.2,
+         0.6
+        ]
+       ],
+       "popisek": {
+        "cs": "Karibik (kreolské jazyky)",
+        "en": "Caribbean (creoles)"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "do-ameriky",
+       "barva": "en",
+       "body": [
+        [
+         -6,
+         50
+        ],
+        [
+         -25,
+         45
+        ],
+        [
+         -50,
+         40.5
+        ],
+        [
+         -75.8,
+         37.4
+        ]
+       ],
+       "popisek": {
+        "cs": "Jamestown 1607",
+        "en": "Jamestown 1607"
+       }
+      },
+      {
+       "id": "do-karibiku",
+       "barva": "en",
+       "body": [
+        [
+         -8,
+         48
+        ],
+        [
+         -30,
+         30
+        ],
+        [
+         -55,
+         18
+        ],
+        [
+         -75.5,
+         18
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "id": "svet",
+     "doba": {
+      "cs": "18.–20. století",
+      "en": "18th–20th century"
+     },
+     "pohled": [
+      55,
+      -5,
+      1
+     ],
+     "nazev": {
+      "cs": "Po celém světě",
+      "en": "Around the world"
+     },
+     "text": {
+      "cs": "S Britským impériem se angličtina dostala do Indie, Austrálie (od roku 1788), jižní a západní Afriky a jihovýchodní Asie. Šířila se jako jazyk správy, obchodu a škol, často na úkor místních jazyků; v Austrálii a Severní Americe přispěla k ústupu mnoha původních jazyků. Po získání nezávislosti ji řada zemí ponechala jako úřední jazyk, který spojuje obyvatele s různými mateřskými jazyky. Americká angličtina si vytvořila vlastní normu, kterou ustálil slovník Noaha Webstera (1828). Ve 20. století se angličtina díky Spojeným státům stala hlavním jazykem vědy, letectví, obchodu a později internetu.",
+      "en": "With the British Empire English reached India, Australia (from 1788), southern and western Africa and South-East Asia. It spread as a language of administration, trade and schooling, often at the expense of local languages; in Australia and North America it contributed to the decline of many Indigenous languages. After independence many countries kept it as an official language that links speakers of different mother tongues. American English developed its own standard, fixed by Noah Webster's dictionary (1828). In the 20th century, thanks largely to the United States, English became the main language of science, aviation, business and later the internet."
+     },
+     "oblasti": [
+      {
+       "id": "indie",
+       "barva": "en2",
+       "po": "do-indie",
+       "kruhy": [
+        [
+         78,
+         22,
+         4
+        ]
+       ],
+       "popisek": {
+        "cs": "Indie",
+        "en": "India"
+       }
+      },
+      {
+       "id": "australie",
+       "barva": "en",
+       "po": "do-australie",
+       "kruhy": [
+        [
+         147,
+         -33,
+         3
+        ],
+        [
+         135,
+         -28,
+         3
+        ],
+        [
+         116,
+         -31,
+         2
+        ]
+       ],
+       "popisek": {
+        "cs": "Austrálie",
+        "en": "Australia"
+       }
+      },
+      {
+       "id": "afrika",
+       "barva": "en2",
+       "po": "do-afriky",
+       "kruhy": [
+        [
+         25,
+         -29,
+         3
+        ],
+        [
+         8,
+         8,
+         2.5
+        ],
+        [
+         37,
+         0,
+         2.5
+        ]
+       ],
+       "popisek": {
+        "cs": "Afrika",
+        "en": "Africa"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "do-afriky",
+       "barva": "en",
+       "body": [
+        [
+         -8,
+         46
+        ],
+        [
+         -19,
+         25
+        ],
+        [
+         -12,
+         5
+        ],
+        [
+         5,
+         -20
+        ],
+        [
+         18.5,
+         -33.5
+        ]
+       ],
+       "popisek": {
+        "cs": "na jih Afriky",
+        "en": "to southern Africa"
+       }
+      },
+      {
+       "id": "do-indie",
+       "barva": "en",
+       "body": [
+        [
+         20,
+         -36
+        ],
+        [
+         45,
+         -18
+        ],
+        [
+         62,
+         5
+        ],
+        [
+         72.8,
+         18.9
+        ]
+       ]
+      },
+      {
+       "id": "do-australie",
+       "barva": "en",
+       "body": [
+        [
+         74,
+         12
+        ],
+        [
+         88,
+         -10
+        ],
+        [
+         115,
+         -35
+        ],
+        [
+         140,
+         -40
+        ],
+        [
+         151,
+         -34
+        ]
+       ],
+       "popisek": {
+        "cs": "Austrálie (1788)",
+        "en": "Australia (1788)"
+       }
+      }
+     ]
+    },
+    {
+     "id": "dnes",
+     "doba": {
+      "cs": "dnes",
+      "en": "today"
+     },
+     "pohled": [
+      -35,
+      30,
+      1
+     ],
+     "nazev": {
+      "cs": "Světový jazyk",
+      "en": "A world language"
+     },
+     "text": {
+      "cs": "Angličtinou dnes mluví asi 1,5 miliardy lidí, ale jen zhruba 380–400 milionů z nich jako mateřským jazykem; je tak nejrozšířenějším druhým jazykem na světě. Je úředním jazykem asi šedesáti zemí. Vedle britské a americké angličtiny existují rovnocenné varianty – australská, indická, nigerijská nebo singapurská – a z angličtiny vzešla i řada kreolských jazyků, například tok pisin na Papui Nové Guineji. Většina lidí, kteří dnes anglicky mluví, ji používá s lidmi, pro něž není mateřštinou.",
+      "en": "About 1.5 billion people speak English today, but only some 380–400 million of them as their mother tongue; it is thus the world's most widely spoken second language. It is an official language of about sixty countries. Alongside British and American English there are equally valid varieties – Australian, Indian, Nigerian or Singaporean – and English has also given rise to a number of creoles, such as Tok Pisin in Papua New Guinea. Most people who speak English today use it with others for whom it is not a mother tongue."
+     },
+     "oblasti": [
+      {
+       "id": "rodili",
+       "barva": "en",
+       "kruhy": [
+        [
+         -98,
+         39,
+         7
+        ],
+        [
+         -85,
+         45,
+         4
+        ],
+        [
+         -110,
+         55,
+         5
+        ],
+        [
+         -2,
+         53,
+         2
+        ],
+        [
+         -8,
+         53,
+         1
+        ],
+        [
+         134,
+         -27,
+         7
+        ],
+        [
+         172,
+         -41,
+         2
+        ]
+       ],
+       "popisek": {
+        "cs": "mateřský jazyk většiny",
+        "en": "mother tongue of the majority"
+       }
+      },
+      {
+       "id": "druhy",
+       "barva": "en2",
+       "kruhy": [
+        [
+         78,
+         22,
+         5
+        ],
+        [
+         8,
+         9,
+         3.5
+        ],
+        [
+         122,
+         12,
+         3
+        ],
+        [
+         25,
+         -29,
+         3
+        ],
+        [
+         37,
+         0,
+         2.5
+        ],
+        [
+         -77.3,
+         18.1,
+         0.7
+        ]
+       ],
+       "popisek": {
+        "cs": "úřední nebo druhý jazyk",
+        "en": "official or second language"
+       }
+      }
+     ],
+     "proudy": []
+    }
+   ],
+   "zdroje": [
+    "Baugh, A. C. – Cable, T. (2013): A History of the English Language. 6th ed. London: Routledge.",
+    "Crystal, D. (2003): English as a Global Language. 2nd ed. Cambridge University Press.",
+    "Crystal, D. (2019): The Cambridge Encyclopedia of the English Language. 3rd ed. Cambridge University Press.",
+    "Hogg, R. – Denison, D. (eds.) (2006): A History of the English Language. Cambridge University Press.",
+    "Townend, M. (2002): Language and History in Viking Age England. Turnhout: Brepols.",
+    "Eberhard, D. M. – Simons, G. F. – Fennig, C. D. (eds.): Ethnologue: Languages of the World. SIL International (English)."
    ]
   }
  ]

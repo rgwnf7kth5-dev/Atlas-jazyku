@@ -572,6 +572,17 @@ jako indoevropský jazyk, ne „přes hindštinu“; Mendizabal datuje počátek
 1385 potvrzuje dar 40 rodin z Vodițy; Čechy 1399 nejistě, spolehlivě 1416; Zikmund 1417 římský král (ne císař); Španělsko 1425;
 Británie a Skandinávie od 1505; nejméně 4 miliony mluvčích; u Česka genocida Romů a Sintů (z asi 6 500 přes 5 000 obětí, téměř
 540 v Letech a Hodoníně, ostatní v Osvětimi), Hübschmannová zakladatelka romistiky (ne „prosazovala do škol“), Charta (část II).
+**Maorština** (29. 9. 2026, `#putovani-maorstina` / `#journey-maori`, 7 etap: Tchaj-wan, Filipíny a Indonésie s Marianami, Lapita,
+odbočka na Madagaskar, dlouhá pauza a východní Polynésie, Havaj / Rapa Nui / Aotearoa se sporným kontaktem s Amerikou, maorština dnes).
+Šipky přes oceán nesmí být modré (`--put-oc` je proto fialová), na světlém oceánu by zmizely. Posuvník má 100 kroků na etapu
+(`put-osa.max` podle počtu etap). Při ověření opraveno: kontakt s Amerikou z Markéz (Fatu Hiva) ke Kolumbii, ne z Rapa Nui
+(Ioannidis 2020); batáty „pocházejí z Ameriky“, sporné je jen kdo ke komu doplul; Hawaiki „pradávná“, ne „bájná“; Madagaskar
+5.–10. století (lingvistika 5.–7., archeologie a genetika 8.–10.); papuánské jazyky jen souhrnné označení, „desítky tisíc let“;
+Tonga asi 880 př. n. l., „jako první lidé“ až od Vanuatu; dlouhá pauza skoro dva tisíce let, Wilmshurst: nejdřív Tahiti, pak
+po 70–265 letech ostatní; úpadek maorštiny výslovně (výuka jen anglicky, tresty, 1913 přes 90 %, 1975 pod 5 %), sčítání 2023
+asi 214 tisíc; šipky nesmí přes Mindanao, Novou Guineu, Jávu (Sundský průliv).
+**Koncepty:** putování s `"koncept": true` build vynechá (jen `PUT_KONCEPTY=1 npm run build` pro náhled), takže neověřená
+putování mohou ležet v datech, zatímco se zveřejňují jiná. Po ověření příznak smazat.
 **Jak vznikla spisovná čeština** (`#spisovna-cestina` / `#standard-czech`, skupina „Jazyky v čase“, akvarel `tiskarna`; 27. 9. 2026):
 glosy a první věty, spřežky a diakritika, Blahoslav, Bible kralická, pobělohorské období („doba temna“ jen jako obrozenecký pojem),
 Dobrovský, Jungmann, Rukopisy, Gebauer, Pravidla 1902, Pražský lingvistický kroužek, spisovná × obecná čeština (diglosie jako sporná).
