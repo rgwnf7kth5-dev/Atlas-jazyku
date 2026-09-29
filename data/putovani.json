@@ -3402,6 +3402,722 @@
     "Dahl, O. C. (1951): Malgache et maanjan: une comparaison linguistique. Oslo: Egede-Instituttet.",
     "Te Ara – the Encyclopedia of New Zealand: Te reo Māori – the Māori language."
    ]
+  },
+  {
+   "id": "turectina",
+   "atlas": "tr",
+   "adresa": {
+    "cs": "putovani-turectina",
+    "en": "journey-turkish"
+   },
+   "nazev": {
+    "cs": "Putování turečtiny",
+    "en": "The journey of Turkish"
+   },
+   "uvod": {
+    "cs": "Od stepí Mongolska a Altaje, kde vznikly orchonské nápisy, přes Oguze ve Střední Asii a Seldžuky až do Anatolie a na Balkán – cesta dlouhá přes 5000 km. Letopočty jsou přibližné, sporné výklady jsou přerušovaně.",
+    "en": "From the steppes of Mongolia and the Altai, home of the Orkhon inscriptions, through the Oghuz of Central Asia and the Seljuks to Anatolia and the Balkans – a journey of over 5,000 km. Dates are approximate; disputed interpretations are dashed."
+   },
+   "etapy": [
+    {
+     "id": "pravlast",
+     "doba": {
+      "cs": "do 5. století n. l.",
+      "en": "until the 5th century CE"
+     },
+     "pohled": [
+      85,
+      48,
+      1.7
+     ],
+     "nazev": {
+      "cs": "Pravlast turkických jazyků",
+      "en": "The Turkic homeland"
+     },
+     "text": {
+      "cs": "Turečtina patří k turkickým jazykům, k nimž se řadí i ázerbájdžánština, kazaština, uzbečtina, tatarština, jakutština a desítky dalších. Jejich společný předek, praturkičtina, se podle většiny badatelů mluvil ve východních stepích – mezi Altajem, Sajany, Bajkalem a Mongolskem – zhruba kolem přelomu letopočtu; přesné místo i doba jsou sporné, stejně jako to, zda jazykem Siungnuů byl turkický jazyk. Nejdřív se oddělila ogurská větev, která odešla na západ do černomořských stepí; jejím jediným živým potomkem je čuvaština v Povolží. Příbuznost s mongolskými a tunguzskými jazyky (altajská hypotéza) je sporná.",
+      "en": "Turkish belongs to the Turkic languages, along with Azerbaijani, Kazakh, Uzbek, Tatar, Yakut and dozens of others. Their common ancestor, Proto-Turkic, was according to most scholars spoken in the eastern steppes – between the Altai, the Sayan mountains, Lake Baikal and Mongolia – roughly around the turn of the era; the exact place and time are disputed, as is whether the language of the Xiongnu was Turkic. The Oghur branch split off first and moved west to the Black Sea steppes; its only living descendant is Chuvash on the Volga. A relationship with the Mongolic and Tungusic languages (the Altaic hypothesis) is disputed."
+     },
+     "oblasti": [
+      {
+       "id": "praturkictina",
+       "barva": "ptu",
+       "kruhy": [
+        [
+         95,
+         49,
+         3.5
+        ],
+        [
+         102,
+         49.5,
+         3
+        ],
+        [
+         88,
+         50,
+         2.5
+        ]
+       ],
+       "popisek": {
+        "cs": "praturkičtina (Altaj až Mongolsko)",
+        "en": "Proto-Turkic (Altai to Mongolia)"
+       }
+      },
+      {
+       "id": "cuvasi",
+       "barva": "ogr",
+       "po": "ogurove",
+       "kruhy": [
+        [
+         47,
+         55.5,
+         1.6
+        ]
+       ],
+       "popisek": {
+        "cs": "čuvaština",
+        "en": "Chuvash"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "ogurove",
+       "barva": "ogr",
+       "body": [
+        [
+         86,
+         49
+        ],
+        [
+         74,
+         49
+        ],
+        [
+         62,
+         50
+        ],
+        [
+         52,
+         51
+        ],
+        [
+         47.5,
+         54.5
+        ]
+       ],
+       "popisek": {
+        "cs": "ogurská větev na západ",
+        "en": "the Oghur branch moves west"
+       }
+      }
+     ]
+    },
+    {
+     "id": "kaganat",
+     "doba": {
+      "cs": "552–840",
+      "en": "552–840"
+     },
+     "pohled": [
+      92,
+      46,
+      2
+     ],
+     "nazev": {
+      "cs": "Turkický kaganát a orchonské nápisy",
+      "en": "The Turkic Khaganate and the Orkhon inscriptions"
+     },
+     "text": {
+      "cs": "Roku 552 založil Bumin Turkický kaganát, jehož moc brzy sahala od Mandžuska po Černé moře; jméno „Türk“ se tehdy poprvé objevuje v pramenech. Z jeho druhé říše pocházejí nejstarší delší texty v turkickém jazyce: nápisy runovým písmem u řeky Orchon v Mongolsku, postavené Kültiginovi (732) a Bilge kaganovi (735), a nápis rádce Tonjukuka. Po pádu kaganátu vládli ve stepi Ujgurové (744–840); když jejich říši roku 840 rozvrátili Kyrgyzové, odešli Ujgurové do oáz Turfánu a Tarimské pánve.",
+      "en": "In 552 Bumin founded the Turkic Khaganate, whose power soon stretched from Manchuria to the Black Sea; the name 'Türk' first appears in the sources at this time. Its second empire produced the oldest long texts in a Turkic language: the runic inscriptions by the Orkhon river in Mongolia, raised for Kül Tegin (732) and Bilge Khagan (735), and the inscription of the counsellor Tonyukuk. After the khaganate fell, the Uyghurs ruled the steppe (744–840); when the Kyrgyz destroyed their empire in 840, the Uyghurs moved to the oases of Turfan and the Tarim Basin."
+     },
+     "oblasti": [
+      {
+       "id": "kaganat",
+       "barva": "gok",
+       "kruhy": [
+        [
+         100,
+         47,
+         3.5
+        ],
+        [
+         94,
+         46.5,
+         3
+        ],
+        [
+         88,
+         46,
+         3.5
+        ],
+        [
+         82,
+         45.5,
+         3
+        ],
+        [
+         75,
+         45,
+         3
+        ],
+        [
+         69,
+         45.5,
+         3
+        ],
+        [
+         63,
+         46,
+         2.5
+        ],
+        [
+         57,
+         47,
+         2.2
+        ]
+       ],
+       "popisek": {
+        "cs": "Turkický kaganát",
+        "en": "Turkic Khaganate"
+       }
+      },
+      {
+       "id": "orchon",
+       "barva": "ptu",
+       "kruhy": [
+        [
+         102.8,
+         47.6,
+         0.9
+        ]
+       ],
+       "popisek": {
+        "cs": "orchonské nápisy (732, 735)",
+        "en": "Orkhon inscriptions (732, 735)"
+       }
+      },
+      {
+       "id": "turfan",
+       "barva": "gok",
+       "po": "ujgurove",
+       "kruhy": [
+        [
+         89.2,
+         42.9,
+         1.2
+        ],
+        [
+         82,
+         40,
+         1.5
+        ]
+       ],
+       "popisek": {
+        "cs": "Ujgurové (Turfán, Tarim)",
+        "en": "Uyghurs (Turfan, Tarim)"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "ujgurove",
+       "barva": "gok",
+       "body": [
+        [
+         102,
+         47
+        ],
+        [
+         96,
+         45
+        ],
+        [
+         91,
+         43.3
+        ]
+       ],
+       "popisek": {
+        "cs": "po roce 840",
+        "en": "after 840"
+       }
+      }
+     ]
+    },
+    {
+     "id": "oguzove",
+     "doba": {
+      "cs": "asi 8.–11. století",
+      "en": "c. 8th–11th century"
+     },
+     "pohled": [
+      70,
+      43,
+      2
+     ],
+     "nazev": {
+      "cs": "Oguzové ve Střední Asii",
+      "en": "The Oghuz in Central Asia"
+     },
+     "text": {
+      "cs": "Předky Turků byli Oguzové, svaz kmenů, který v 8.–10. století přesídlil z východních stepí na západ k řece Syrdarji a Aralskému jezeru. V 10. století začali přijímat islám a z oguzských nářečí se vyvinuly dnešní oguzské jazyky: turečtina, ázerbájdžánština, turkmenština a gagauzština. Turkické jazyky té doby popsal Mahmúd z Kašgaru ve svém slovníku Díwán lughát at-turk (1072–1074), prvním slovníku turkických jazyků; oguzská nářečí v něm odlišuje od ostatních.",
+      "en": "The ancestors of the Turks were the Oghuz, a tribal union that in the 8th–10th centuries moved from the eastern steppes west to the Syr Darya river and the Aral Sea. In the 10th century they began to convert to Islam, and the Oghuz dialects developed into today's Oghuz languages: Turkish, Azerbaijani, Turkmen and Gagauz. The Turkic languages of the time were described by Mahmud al-Kashgari in his Dīwān Lughāt al-Turk (1072–1074), the first dictionary of the Turkic languages; he distinguishes the Oghuz dialects from the others."
+     },
+     "oblasti": [
+      {
+       "id": "syrdarja",
+       "barva": "ogz",
+       "po": "na-zapad",
+       "kruhy": [
+        [
+         64,
+         44,
+         2.5
+        ],
+        [
+         60,
+         45.5,
+         2
+        ]
+       ],
+       "popisek": {
+        "cs": "Oguzové (Syrdarja a Aral)",
+        "en": "Oghuz (Syr Darya and Aral)"
+       }
+      },
+      {
+       "id": "kasgar",
+       "barva": "gok",
+       "kruhy": [
+        [
+         76,
+         39.5,
+         1
+        ]
+       ],
+       "popisek": {
+        "cs": "Kašgar (Mahmúd, 1072–1074)",
+        "en": "Kashgar (Mahmud, 1072–1074)"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "na-zapad",
+       "barva": "ogz",
+       "body": [
+        [
+         90,
+         46
+        ],
+        [
+         81,
+         45
+        ],
+        [
+         72,
+         44
+        ],
+        [
+         66,
+         44
+        ]
+       ],
+       "popisek": {
+        "cs": "Oguzové na západ",
+        "en": "the Oghuz move west"
+       }
+      }
+     ]
+    },
+    {
+     "id": "seldzukove",
+     "doba": {
+      "cs": "11.–13. století",
+      "en": "11th–13th century"
+     },
+     "pohled": [
+      48,
+      38,
+      2.2
+     ],
+     "nazev": {
+      "cs": "Seldžukové a Anatolie",
+      "en": "The Seljuks and Anatolia"
+     },
+     "text": {
+      "cs": "Oguzský rod Seldžuků ovládl v 11. století Írán: roku 1040 porazil Ghaznovce u Dandánakánu a roku 1055 vstoupil do Bagdádu. Roku 1071 porazil seldžucký sultán Alp Arslan byzantského císaře u Mantzikertu (Malazgirt) a do Anatolie začaly proudit turkmenské kmeny. Vznikl Rúmský sultanát s hlavním městem Konyou. Na dvoře a v literatuře Seldžuků vládla perština, ale lidem Anatolie se postupně stávala turečtina; ve 13. století v ní psal básník Yunus Emre. Jiní Oguzové zůstali v Ázerbájdžánu a v dnešním Turkmenistánu.",
+      "en": "In the 11th century the Oghuz clan of the Seljuks took control of Iran: in 1040 they defeated the Ghaznavids at Dandanaqan and in 1055 entered Baghdad. In 1071 the Seljuk sultan Alp Arslan defeated the Byzantine emperor at Manzikert (Malazgirt), and Turkmen tribes began to pour into Anatolia. The Sultanate of Rum arose, with its capital at Konya. Persian dominated the Seljuk court and literature, but Turkish gradually became the language of the people of Anatolia; in the 13th century the poet Yunus Emre wrote in it. Other Oghuz stayed in Azerbaijan and in present-day Turkmenistan."
+     },
+     "oblasti": [
+      {
+       "id": "anatolie",
+       "barva": "tr",
+       "po": "do-anatolie",
+       "kruhy": [
+        [
+         33,
+         38.8,
+         2.8
+        ],
+        [
+         37.5,
+         39.3,
+         2.2
+        ],
+        [
+         30,
+         39,
+         1.8
+        ]
+       ],
+       "popisek": {
+        "cs": "Rúmský sultanát (Konya)",
+        "en": "Sultanate of Rum (Konya)"
+       }
+      },
+      {
+       "id": "azerbajdzan",
+       "barva": "ogz",
+       "po": "pres-iran",
+       "kruhy": [
+        [
+         48,
+         39.5,
+         1.6
+        ],
+        [
+         47,
+         37.8,
+         1.3
+        ]
+       ],
+       "popisek": {
+        "cs": "Ázerbájdžán",
+        "en": "Azerbaijan"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "pres-iran",
+       "barva": "ogz",
+       "body": [
+        [
+         62,
+         41
+        ],
+        [
+         58,
+         37.5
+        ],
+        [
+         52,
+         36.2
+        ],
+        [
+         48.5,
+         37
+        ]
+       ],
+       "popisek": {
+        "cs": "přes Írán",
+        "en": "through Iran"
+       }
+      },
+      {
+       "id": "mantzikert",
+       "barva": "tr",
+       "body": [
+        [
+         48,
+         38
+        ],
+        [
+         45,
+         38.8
+        ],
+        [
+         42.5,
+         39.1
+        ]
+       ],
+       "popisek": {
+        "cs": "Mantzikert 1071",
+        "en": "Manzikert 1071"
+       }
+      },
+      {
+       "id": "do-anatolie",
+       "barva": "tr",
+       "body": [
+        [
+         42,
+         39.1
+        ],
+        [
+         38.5,
+         39.2
+        ],
+        [
+         34.5,
+         38.4
+        ],
+        [
+         32.5,
+         37.9
+        ]
+       ],
+       "popisek": {
+        "cs": "do Anatolie",
+        "en": "into Anatolia"
+       }
+      }
+     ]
+    },
+    {
+     "id": "osmani",
+     "doba": {
+      "cs": "asi 1300–1922",
+      "en": "c. 1300–1922"
+     },
+     "pohled": [
+      30,
+      41,
+      2.6
+     ],
+     "nazev": {
+      "cs": "Osmanská turečtina",
+      "en": "Ottoman Turkish"
+     },
+     "text": {
+      "cs": "Kolem roku 1300 založil Osman v severozápadní Anatolii malé knížectví, z něhož vyrostla Osmanská říše: roku 1453 dobyla Konstantinopol a v 16. století vládla od Alžírska po Irák a od Budína po Jemen. Spisovná osmanská turečtina se psala arabským písmem a přijala tisíce slov z arabštiny a perštiny, takže se výrazně lišila od mluvené řeči. Turečtina se rozšířila na Balkán, kde turecky mluvící menšiny žijí dodnes, a balkánské jazyky z ní převzaly stovky slov.",
+      "en": "Around 1300 Osman founded a small principality in north-western Anatolia that grew into the Ottoman Empire: in 1453 it took Constantinople, and in the 16th century it ruled from Algeria to Iraq and from Buda to Yemen. Written Ottoman Turkish used the Arabic script and absorbed thousands of words from Arabic and Persian, so it differed greatly from the spoken language. Turkish spread to the Balkans, where Turkish-speaking minorities still live, and the Balkan languages took hundreds of words from it."
+     },
+     "oblasti": [
+      {
+       "id": "osmani",
+       "barva": "tr",
+       "kruhy": [
+        [
+         29.5,
+         40,
+         1.4
+        ]
+       ],
+       "popisek": {
+        "cs": "Osmanovo knížectví (kolem 1300)",
+        "en": "Osman's principality (c. 1300)"
+       }
+      },
+      {
+       "id": "balkan",
+       "barva": "tr",
+       "po": "na-balkan",
+       "kruhy": [
+        [
+         25.5,
+         42.3,
+         1.5
+        ],
+        [
+         22,
+         42,
+         1.3
+        ]
+       ],
+       "popisek": {
+        "cs": "turečtina na Balkáně",
+        "en": "Turkish in the Balkans"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "na-balkan",
+       "barva": "tr",
+       "body": [
+        [
+         29.5,
+         40.8
+        ],
+        [
+         28.9,
+         41.1
+        ],
+        [
+         26.8,
+         41.7
+        ],
+        [
+         24.5,
+         42.2
+        ],
+        [
+         21.5,
+         43.5
+        ],
+        [
+         19.5,
+         45.5
+        ]
+       ],
+       "popisek": {
+        "cs": "na Balkán (14.–16. století)",
+        "en": "into the Balkans (14th–16th century)"
+       }
+      }
+     ]
+    },
+    {
+     "id": "dnes",
+     "doba": {
+      "cs": "od 1928",
+      "en": "since 1928"
+     },
+     "pohled": [
+      35,
+      41,
+      2.3
+     ],
+     "nazev": {
+      "cs": "Turečtina dnes",
+      "en": "Turkish today"
+     },
+     "text": {
+      "cs": "Roku 1928 zavedla Turecká republika místo arabského písma latinku a od roku 1932 Turecká jazyková společnost nahrazovala arabská a perská slova turkickými, často nově vytvořenými. Dnes turecky mluví asi 85 milionů lidí – v Turecku, na Kypru, v menšinách v Bulharsku a Řecku a v početné diaspoře, zejména v Německu. Nejbližšími příbuznými jsou další oguzské jazyky: ázerbájdžánština, turkmenština a gagauzština v Moldavsku; mluvčí turečtiny a ázerbájdžánštiny si do značné míry rozumějí.",
+      "en": "In 1928 the Turkish Republic replaced the Arabic script with the Latin alphabet, and from 1932 the Turkish Language Association replaced Arabic and Persian words with Turkic ones, many of them newly coined. Today about 85 million people speak Turkish – in Turkey, in Cyprus, in minorities in Bulgaria and Greece and in a large diaspora, especially in Germany. Its closest relatives are the other Oghuz languages: Azerbaijani, Turkmen and Gagauz in Moldova; speakers of Turkish and Azerbaijani understand each other to a large extent."
+     },
+     "oblasti": [
+      {
+       "id": "turecko",
+       "barva": "tr",
+       "kruhy": [
+        [
+         33,
+         39,
+         3
+        ],
+        [
+         39,
+         39,
+         2.5
+        ],
+        [
+         28,
+         40,
+         1.5
+        ]
+       ],
+       "popisek": {
+        "cs": "turečtina",
+        "en": "Turkish"
+       }
+      },
+      {
+       "id": "mensiny",
+       "barva": "tr",
+       "kruhy": [
+        [
+         26.5,
+         43.3,
+         0.7
+        ],
+        [
+         25.5,
+         41.2,
+         0.4
+        ],
+        [
+         33.4,
+         35.2,
+         0.5
+        ]
+       ],
+       "popisek": {
+        "cs": "Bulharsko, Řecko, Kypr",
+        "en": "Bulgaria, Greece, Cyprus"
+       }
+      },
+      {
+       "id": "diaspora",
+       "barva": "tr",
+       "kruhy": [
+        [
+         8.7,
+         50.5,
+         1.3
+        ]
+       ],
+       "popisek": {
+        "cs": "diaspora v Německu",
+        "en": "diaspora in Germany"
+       }
+      },
+      {
+       "id": "azerstina",
+       "barva": "pri",
+       "kruhy": [
+        [
+         48,
+         40.3,
+         1.3
+        ],
+        [
+         47,
+         38,
+         1.2
+        ]
+       ],
+       "popisek": {
+        "cs": "ázerbájdžánština",
+        "en": "Azerbaijani"
+       }
+      },
+      {
+       "id": "turkmenstina",
+       "barva": "pri",
+       "kruhy": [
+        [
+         59,
+         39,
+         1.8
+        ]
+       ],
+       "popisek": {
+        "cs": "turkmenština",
+        "en": "Turkmen"
+       }
+      },
+      {
+       "id": "gagauzstina",
+       "barva": "pri",
+       "kruhy": [
+        [
+         28.6,
+         46.3,
+         0.4
+        ]
+       ],
+       "popisek": {
+        "cs": "gagauzština",
+        "en": "Gagauz"
+       }
+      }
+     ],
+     "proudy": []
+    }
+   ],
+   "zdroje": [
+    "Johanson, L. – Csató, É. Á. (eds.) (2022): The Turkic Languages. 2nd ed. London: Routledge.",
+    "Golden, P. B. (1992): An Introduction to the History of the Turkic Peoples. Wiesbaden: Harrassowitz.",
+    "Tekin, T. (1968): A Grammar of Orkhon Turkic. Bloomington: Indiana University.",
+    "Findley, C. V. (2005): The Turks in World History. Oxford University Press.",
+    "Lewis, G. (1999): The Turkish Language Reform: A Catastrophic Success. Oxford University Press.",
+    "Dankoff, R. – Kelly, J. (eds. a přel.) (1982–1985): Maḥmūd al-Kāšγarī: Compendium of the Turkic Dialects (Dīwān Luγāt at-Turk). Harvard University."
+   ]
   }
  ]
 }
