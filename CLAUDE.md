@@ -601,6 +601,14 @@ březích); předkové na-dené převážně z prvního osídlení, část z poz
 znovu se učí (barva na-dené, ne jenisejská); navažské podání o vynoření mezi čtyřmi posvátnými horami; Dlouhý pochod 1864–1866,
 přes 50 pochodů, přes 9 tisíc lidí, tisíce mrtvých cestou i v táboře, Hwéeldi, předcházelo ničení úrody a stád; internátní školy
 od konce 19. století (Fort Defiance 1883); „kód“, ne šifra; asi 160 tisíc mluvčích (ACS 2017–2021).
+**Jidiš** (29. 9. 2026, `#putovani-jidis` / `#journey-yiddish`, 6 etap: vznik v Aškenazu (Porýní, přerušovaně Podunají a Čechy),
+na východ do Polska a Litvy, jazyk milionů, za oceán, holokaust (`predel`), jidiš dnes). Při ověření opraveno: románský jazyk
+příchozích je Weinreichův model; bentshn přes románštinu; wormský machzor „užívaný ve wormské synagoze“; Polsko-Litva hlavním
+střediskem od 16. století, většina Aškenázů až v polovině 17.; Cene-rene (hebr. Ceena u-reena), Tóra, haftary a pět svitků,
+nejstarší dochované vydání 1622; sčítání 1897; 11–13 milionů před válkou; přes 2,5 milionu emigrantů, přes 2 miliony do USA;
+„Německo, jeho spojenci a kolaboranti“; asi pět milionů obětí mluvilo jidiš (odhad); SSSR 1948–1949 a 12. 8. 1952 jmenovitě;
+Izrael prosazoval hebrejštinu a omezoval jidiš tisk a divadlo; dnes půl milionu až milion mluvčích; YIVO ve Vilně; uznání jen
+potvrzené státy (Švédsko, Nizozemsko, Polsko, Rumunsko, BiH, Ukrajina); šipky emigrace po moři, ne přes Nizozemsko a Anglii.
 **Koncepty:** putování s `"koncept": true` build vynechá (jen `PUT_KONCEPTY=1 npm run build` pro náhled), takže neověřená
 putování mohou ležet v datech, zatímco se zveřejňují jiná. Po ověření příznak smazat. Etapa s `"predel": true`
 nekreslí šipky předchozí etapy (u jidiš Holokaust, aby přes zničené obce nevedly šipky emigrace).
