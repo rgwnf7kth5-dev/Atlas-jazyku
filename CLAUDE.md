@@ -320,15 +320,16 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a živý web workflow Diag
   výtrysk) a tlačítkem „Přehrát rytmus kody“ (cvaknutí z WebAudio, výslovně schéma, ne nahrávka – nahrávky nemáme ověřené).
   **Sedm rychlých kliknutí na logo** (`prevrat`): vrstvy `#podklad`, `#gl`, `#popisky` se otočí o 180° kolem středu koule
   (plocha se stínem se mezitím nekreslí, `bezPlochy`), tečky se schovají a jejich kopie na plátně `canvas.padani` spadnou
-  do kopečku pod koulí, nahoře nápis „Jazyky nepadají z nebe. Až na tuto výjimku.“ (`T.tajemstvi.padani`), pak tečky
-  vyletí zpět a glóbus se otočí zpátky. Oceán se při převrácení nijak zvlášť nechová (uživatel: „nech to jak to je“).
+  do kopečku pod koulí, pak tečky
+  vyletí zpět a glóbus se otočí zpátky. **Bez nápisu** – vtip „Jazyky nepadají z nebe…“ uživatel 29. 9. 2026 zrušil
+  („nedává smysl“), nevracet. Oceán se při převrácení nijak zvlášť nechová (uživatel: „nech to jak to je“).
   **„babel“** napsané kdekoli, do hledání nebo `#babel` (`spustBabel`, `zmatJazyky`): slova na obrazovce se na 3,4 s
   rozsypou do cizích písem (každé slovo jiné: azbuka, řečtina, hebrejština, gruzínština, arménština, dévanágarí, arabské
   písmo, thajské, katakana, hangul) a pak se otevře karta **„Babylónská věž“** (Genesis 11, hříčka Bável/bālal, Bāb-ili,
   Etemenanki, Esagilská tabulka, počet rodin a izolátů z dat, meze srovnávací metody) s akvarelem Mezopotámie.
   Obě karty používají stejnou kartu jako jazyky (`ukazZvlastni`, stav `zvlastni`, texty `T.tajemstvi` v `src/ui/*.json`),
   malby tajemství mají id `z-…` a kreslí se hned (hotové obrázky nemají). Při `prefers-reduced-motion` se nepřevrací ani
-  nerozsypává, jen se ukáže nápis nebo karta. Texty prošly nezávislým ověřením (opraveno: metoda Arnon a kol. je jen
+  nerozsypává: převrácení se vůbec nespustí, u „babel“ se jen ukáže karta. Texty prošly nezávislým ověřením (opraveno: metoda Arnon a kol. je jen
   inspirovaná učením dětí, dokončení Etemenanki jen „podle vlastních nápisů“ Nebukadnesara, Esagilská tabulka je opis
   z Uruku 229 př. n. l., rubato = délka po sobě jdoucích kod, učení mláďat „nejspíš“, Šineár, citace se stranami).
 - Pořád platí: žádný satelit, prstenec, rohy zaměřovače ani sbírka pozdravů.

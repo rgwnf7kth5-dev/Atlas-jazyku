@@ -4339,7 +4339,7 @@ document.addEventListener("keydown", function(e){ if (e.key === "Escape" && cest
 })();
 /* ---------- tři drobná tajemství (28. 9. 2026, nápady uživatele) ----------
    Tři klepnutí na oceán: karta „Mluví velryby?“ (kody vorvaňů, zpěv keporkaků, proč to zatím není jazyk).
-   Sedm rychlých kliknutí na logo: glóbus se převrátí, tečky jazyků spadnou na zem a nahoře se objeví vtip, pak se vše vrátí.
+   Sedm rychlých kliknutí na logo: glóbus se převrátí, tečky jazyků spadnou na zem, pak se vše vrátí (bez nápisu).
    „babel“ napsané kdekoli (nebo do hledání, odkaz #babel): texty na obrazovce se rozsypou do cizích písem a otevře se
    karta o Babylónské věži. Texty karet jsou v T.tajemstvi a jsou ověřené jako ostatní údaje atlasu. */
 KRAJINY["z-velryby"] = "ocean"; KRAJINY["z-babel"] = "mezopotamie";
@@ -4443,11 +4443,7 @@ let prevraceno = false, bezPlochy = false;
 function prevrat(){
   if (prevraceno || !globusOk || !ctx || brana || (strom && strom.zapnuto)) return;
   prevraceno = true;
-  let napis = $("padani-napis");
-  if (!napis) { napis = prvek("p", "padani-napis"); napis.id = "padani-napis"; napis.setAttribute("aria-live", "polite"); scena.appendChild(napis); }
-  napis.textContent = T.tajemstvi.padani;
-  const ukazNapis = function(z){ napis.classList.toggle("vidim", z); };
-  if (bezPohybu.matches) { ukazNapis(true); setTimeout(function(){ ukazNapis(false); prevraceno = false; }, 3500); return; }
+  if (bezPohybu.matches) { prevraceno = false; return; }   // bez pohybu se nic nepřevrací (nápis uživatel zrušil 29. 9. 2026)
   const cx = sirka / 2 + posun, cy = stredY, R = polomer, vrstvy = [podklad, platnoGl, platnoPopisky];
   bezPlochy = true; koule.klic = ""; koule.kandidat = ""; potrebaKresli = true; ozivit();   // plocha se stínem by se otočila nad kouli
   platno.style.pointerEvents = "none"; scena.classList.add("prevraceni");
@@ -4477,8 +4473,7 @@ function prevrat(){
       const g = x.createRadialGradient(cx, zem + 4, 0, cx, zem + 4, R * .95);
       g.addColorStop(0, "rgba(0,0,0,.16)"); g.addColorStop(1, "rgba(0,0,0,0)");
       x.save(); x.translate(0, zem + 4); x.scale(1, .12); x.translate(0, -(zem + 4)); x.fillStyle = g; x.beginPath(); x.arc(cx, zem + 4, R * .95, 0, 6.2832); x.fill(); x.restore();
-      if (t > 1600 && !napis.classList.contains("vidim") && !zpet) ukazNapis(true);
-      if (t > 4300 && !zpet) { zpet = ted; ukazNapis(false); cast.forEach(function(p){ p.sx = p.x; p.sy = p.y; }); }
+      if (t > 4300 && !zpet) { zpet = ted; cast.forEach(function(p){ p.sx = p.x; p.sy = p.y; }); }
       x.fillStyle = barva; x.strokeStyle = lem; x.lineWidth = 1;
       let hotovo = !!zpet;
       cast.forEach(function(p){
