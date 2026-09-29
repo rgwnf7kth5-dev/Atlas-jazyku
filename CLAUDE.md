@@ -581,6 +581,12 @@ odbočka na Madagaskar, dlouhá pauza a východní Polynésie, Havaj / Rapa Nui 
 Tonga asi 880 př. n. l., „jako první lidé“ až od Vanuatu; dlouhá pauza skoro dva tisíce let, Wilmshurst: nejdřív Tahiti, pak
 po 70–265 letech ostatní; úpadek maorštiny výslovně (výuka jen anglicky, tresty, 1913 přes 90 %, 1975 pod 5 %), sčítání 2023
 asi 214 tisíc; šipky nesmí přes Mindanao, Novou Guineu, Jávu (Sundský průliv).
+**Turečtina** (29. 9. 2026, `#putovani-turectina` / `#journey-turkish`, 6 etap: praturkičtina a ogurská větev, Turkický kaganát
+a orchonské nápisy, Oguzové, Seldžukové a Anatolie, osmanská turečtina, dnes). Při ověření opraveno: „turečtina pochází z řeči
+Oguzů“ (ne „předky Turků byli Oguzové“), výchozí bod Oguzů sporný; Mahmúd psal slovník v Bagdádu, „první souhrnný“; Rúm nejdřív
+v Nikaii, Konya od 1097; v Anatolii dál řecky, arménsky a kurdsky mluvící komunity; Tonjukukův nápis v údolí Tuulu; „Türk“ poprvé
+542; do Evropy přes Dardanely (1354), ne přes Bospor; balkánské jazyky převzaly tisíce slov (Škaljić); altajskou hypotézu
+většina lingvistů odmítá; šipky nesmí přes Zajsan ani Vanské jezero.
 **Koncepty:** putování s `"koncept": true` build vynechá (jen `PUT_KONCEPTY=1 npm run build` pro náhled), takže neověřená
 putování mohou ležet v datech, zatímco se zveřejňují jiná. Po ověření příznak smazat.
 **Jak vznikla spisovná čeština** (`#spisovna-cestina` / `#standard-czech`, skupina „Jazyky v čase“, akvarel `tiskarna`; 27. 9. 2026):

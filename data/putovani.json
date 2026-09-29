@@ -3464,7 +3464,6 @@
   {
    "id": "turectina",
    "atlas": "tr",
-   "koncept": true,
    "adresa": {
     "cs": "putovani-turectina",
     "en": "journey-turkish"
@@ -3474,8 +3473,8 @@
     "en": "The journey of Turkish"
    },
    "uvod": {
-    "cs": "Od stepí Mongolska a Altaje, kde vznikly orchonské nápisy, přes Oguze ve Střední Asii a Seldžuky až do Anatolie a na Balkán – cesta dlouhá přes 5000 km. Letopočty jsou přibližné, sporné výklady jsou přerušovaně.",
-    "en": "From the steppes of Mongolia and the Altai, home of the Orkhon inscriptions, through the Oghuz of Central Asia and the Seljuks to Anatolia and the Balkans – a journey of over 5,000 km. Dates are approximate; disputed interpretations are dashed."
+    "cs": "Od Altaje a stepí Mongolska, kde vznikly orchonské nápisy, přes Oguze ve Střední Asii a Seldžuky až do Anatolie a na Balkán – cesta dlouhá přes 5000 km. Letopočty jsou přibližné, sporné výklady jsou přerušovaně.",
+    "en": "From the Altai and the steppes of Mongolia, home of the Orkhon inscriptions, through the Oghuz of Central Asia and the Seljuks to Anatolia and the Balkans – a journey of over 5,000 km. Dates are approximate; disputed interpretations are dashed."
    },
    "etapy": [
     {
@@ -3494,8 +3493,8 @@
       "en": "The Turkic homeland"
      },
      "text": {
-      "cs": "Turečtina patří k turkickým jazykům, k nimž se řadí i ázerbájdžánština, kazaština, uzbečtina, tatarština, jakutština a desítky dalších. Jejich společný předek, praturkičtina, se podle většiny badatelů mluvil ve východních stepích – mezi Altajem, Sajany, Bajkalem a Mongolskem – zhruba kolem přelomu letopočtu; přesné místo i doba jsou sporné, stejně jako to, zda jazykem Siungnuů byl turkický jazyk. Nejdřív se oddělila ogurská větev, která odešla na západ do černomořských stepí; jejím jediným živým potomkem je čuvaština v Povolží. Příbuznost s mongolskými a tunguzskými jazyky (altajská hypotéza) je sporná.",
-      "en": "Turkish belongs to the Turkic languages, along with Azerbaijani, Kazakh, Uzbek, Tatar, Yakut and dozens of others. Their common ancestor, Proto-Turkic, was according to most scholars spoken in the eastern steppes – between the Altai, the Sayan mountains, Lake Baikal and Mongolia – roughly around the turn of the era; the exact place and time are disputed, as is whether the language of the Xiongnu was Turkic. The Oghur branch split off first and moved west to the Black Sea steppes; its only living descendant is Chuvash on the Volga. A relationship with the Mongolic and Tungusic languages (the Altaic hypothesis) is disputed."
+      "cs": "Turečtina patří k turkickým jazykům, k nimž se řadí i ázerbájdžánština, kazaština, uzbečtina, tatarština, jakutština a desítky dalších. Jejich společný předek, praturkičtina, se podle většiny badatelů mluvil ve východních stepích – mezi Altajem, Sajany, Bajkalem a Mongolskem – zhruba kolem přelomu letopočtu; přesné místo i doba jsou sporné, stejně jako to, zda jazykem Siungnuů byl turkický jazyk. Nejdřív se oddělila ogurská větev, která odešla na západ do černomořských stepí; jejím jediným živým potomkem je čuvaština v Povolží. Příbuznost s mongolskými a tunguzskými jazyky (altajská hypotéza) je sporná a většina lingvistů ji dnes odmítá.",
+      "en": "Turkish belongs to the Turkic languages, along with Azerbaijani, Kazakh, Uzbek, Tatar, Yakut and dozens of others. Their common ancestor, Proto-Turkic, was according to most scholars spoken in the eastern steppes – between the Altai, the Sayan mountains, Lake Baikal and Mongolia – roughly around the turn of the era; the exact place and time are disputed, as is whether the language of the Xiongnu was Turkic. The Oghur branch split off first and moved west to the Black Sea steppes; its only living descendant is Chuvash on the Volga. A relationship with the Mongolic and Tungusic languages (the Altaic hypothesis) is disputed and rejected by most linguists today."
      },
      "oblasti": [
       {
@@ -3547,11 +3546,15 @@
        "body": [
         [
          86,
-         49
+         47.6
+        ],
+        [
+         82,
+         47.3
         ],
         [
          74,
-         49
+         48.5
         ],
         [
          62,
@@ -3567,8 +3570,8 @@
         ]
        ],
        "popisek": {
-        "cs": "ogurská větev na západ",
-        "en": "the Oghur branch moves west"
+        "cs": "ogurská větev na západ (později Volžští Bulhaři)",
+        "en": "the Oghur branch moves west (later the Volga Bulgars)"
        }
       }
      ]
@@ -3589,8 +3592,8 @@
       "en": "The Turkic Khaganate and the Orkhon inscriptions"
      },
      "text": {
-      "cs": "Roku 552 založil Bumin Turkický kaganát, jehož moc brzy sahala od Mandžuska po Černé moře; jméno „Türk“ se tehdy poprvé objevuje v pramenech. Z jeho druhé říše pocházejí nejstarší delší texty v turkickém jazyce: nápisy runovým písmem u řeky Orchon v Mongolsku, postavené Kültiginovi (732) a Bilge kaganovi (735), a nápis rádce Tonjukuka. Po pádu kaganátu vládli ve stepi Ujgurové (744–840); když jejich říši roku 840 rozvrátili Kyrgyzové, odešli Ujgurové do oáz Turfánu a Tarimské pánve.",
-      "en": "In 552 Bumin founded the Turkic Khaganate, whose power soon stretched from Manchuria to the Black Sea; the name 'Türk' first appears in the sources at this time. Its second empire produced the oldest long texts in a Turkic language: the runic inscriptions by the Orkhon river in Mongolia, raised for Kül Tegin (732) and Bilge Khagan (735), and the inscription of the counsellor Tonyukuk. After the khaganate fell, the Uyghurs ruled the steppe (744–840); when the Kyrgyz destroyed their empire in 840, the Uyghurs moved to the oases of Turfan and the Tarim Basin."
+      "cs": "Roku 552 založil Bumin Turkický kaganát, jehož moc brzy sahala od Mandžuska po Černé moře; jméno „Türk“ se v pramenech poprvé objevuje krátce předtím, roku 542. Z jeho druhé říše pocházejí nejstarší delší texty v turkickém jazyce: nápisy runovým písmem u řeky Orchon v Mongolsku, postavené Kültiginovi (732) a Bilge kaganovi (735), a o něco starší nápis rádce Tonjukuka v údolí Tuulu u dnešního Ulánbátaru. Po pádu kaganátu vládli ve stepi Ujgurové (744–840); když jejich říši roku 840 rozvrátili Kyrgyzové, odešli Ujgurové do oáz Turfánu a Tarimské pánve.",
+      "en": "In 552 Bumin founded the Turkic Khaganate, whose power soon stretched from Manchuria to the Black Sea; the name 'Türk' first appears in the sources shortly before, in 542. Its second empire produced the oldest long texts in a Turkic language: the runic inscriptions by the Orkhon river in Mongolia, raised for Kül Tegin (732) and Bilge Khagan (735), and the slightly older inscription of the counsellor Tonyukuk in the Tuul valley near today's Ulaanbaatar. After the khaganate fell, the Uyghurs ruled the steppe (744–840); when the Kyrgyz destroyed their empire in 840, the Uyghurs moved to the oases of Turfan and the Tarim Basin."
      },
      "oblasti": [
       {
@@ -3636,6 +3639,26 @@
          57,
          47,
          2.2
+        ],
+        [
+         110,
+         47.5,
+         3
+        ],
+        [
+         51,
+         49,
+         2.2
+        ],
+        [
+         46,
+         48.5,
+         2
+        ],
+        [
+         41,
+         47.5,
+         2
         ]
        ],
        "popisek": {
@@ -3669,9 +3692,9 @@
          1.2
         ],
         [
-         82,
-         40,
-         1.5
+         83.8,
+         41.8,
+         1.2
         ]
        ],
        "popisek": {
@@ -3721,8 +3744,8 @@
       "en": "The Oghuz in Central Asia"
      },
      "text": {
-      "cs": "Předky Turků byli Oguzové, svaz kmenů, který v 8.–10. století přesídlil z východních stepí na západ k řece Syrdarji a Aralskému jezeru. V 10. století začali přijímat islám a z oguzských nářečí se vyvinuly dnešní oguzské jazyky: turečtina, ázerbájdžánština, turkmenština a gagauzština. Turkické jazyky té doby popsal Mahmúd z Kašgaru ve svém slovníku Díwán lughát at-turk (1072–1074), prvním slovníku turkických jazyků; oguzská nářečí v něm odlišuje od ostatních.",
-      "en": "The ancestors of the Turks were the Oghuz, a tribal union that in the 8th–10th centuries moved from the eastern steppes west to the Syr Darya river and the Aral Sea. In the 10th century they began to convert to Islam, and the Oghuz dialects developed into today's Oghuz languages: Turkish, Azerbaijani, Turkmen and Gagauz. The Turkic languages of the time were described by Mahmud al-Kashgari in his Dīwān Lughāt al-Turk (1072–1074), the first dictionary of the Turkic languages; he distinguishes the Oghuz dialects from the others."
+      "cs": "Turečtina pochází z řeči Oguzů, svazu kmenů, který v 8.–10. století přesídlil z východu na západ k řece Syrdarji a Aralskému jezeru (odkud přesně, je sporné). V 10. století začali přijímat islám a z oguzských nářečí se vyvinuly dnešní oguzské jazyky, hlavně turečtina, ázerbájdžánština, turkmenština a gagauzština. Turkické jazyky té doby popsal Mahmúd z Kašgaru ve svém slovníku Díwán lughát at-turk (1072–1074), sepsaném v Bagdádu, prvním souhrnném slovníku turkických jazyků; oguzská nářečí v něm odlišuje od ostatních.",
+      "en": "Turkish descends from the speech of the Oghuz, a tribal union that in the 8th–10th centuries moved west to the Syr Darya river and the Aral Sea (their exact origin is disputed). In the 10th century they began to convert to Islam, and the Oghuz dialects developed into today's Oghuz languages, chiefly Turkish, Azerbaijani, Turkmen and Gagauz. The Turkic languages of the time were described by Mahmud al-Kashgari in his Dīwān Lughāt al-Turk (1072–1074), written in Baghdad, the first comprehensive dictionary of the Turkic languages; he distinguishes the Oghuz dialects from the others."
      },
      "oblasti": [
       {
@@ -3757,8 +3780,8 @@
         ]
        ],
        "popisek": {
-        "cs": "Kašgar (Mahmúd, 1072–1074)",
-        "en": "Kashgar (Mahmud, 1072–1074)"
+        "cs": "Kašgar (vlast Mahmúda Kášgarského)",
+        "en": "Kashgar (home of Mahmud al-Kashgari)"
        }
       }
      ],
@@ -3787,7 +3810,8 @@
        "popisek": {
         "cs": "Oguzové na západ",
         "en": "the Oghuz move west"
-       }
+       },
+       "sporna": true
       }
      ]
     },
@@ -3807,8 +3831,8 @@
       "en": "The Seljuks and Anatolia"
      },
      "text": {
-      "cs": "Oguzský rod Seldžuků ovládl v 11. století Írán: roku 1040 porazil Ghaznovce u Dandánakánu a roku 1055 vstoupil do Bagdádu. Roku 1071 porazil seldžucký sultán Alp Arslan byzantského císaře u Mantzikertu (Malazgirt) a do Anatolie začaly proudit turkmenské kmeny. Vznikl Rúmský sultanát s hlavním městem Konyou. Na dvoře a v literatuře Seldžuků vládla perština, ale lidem Anatolie se postupně stávala turečtina; ve 13. století v ní psal básník Yunus Emre. Jiní Oguzové zůstali v Ázerbájdžánu a v dnešním Turkmenistánu.",
-      "en": "In the 11th century the Oghuz clan of the Seljuks took control of Iran: in 1040 they defeated the Ghaznavids at Dandanaqan and in 1055 entered Baghdad. In 1071 the Seljuk sultan Alp Arslan defeated the Byzantine emperor at Manzikert (Malazgirt), and Turkmen tribes began to pour into Anatolia. The Sultanate of Rum arose, with its capital at Konya. Persian dominated the Seljuk court and literature, but Turkish gradually became the language of the people of Anatolia; in the 13th century the poet Yunus Emre wrote in it. Other Oghuz stayed in Azerbaijan and in present-day Turkmenistan."
+      "cs": "Oguzský rod Seldžuků ovládl v 11. století Írán: roku 1040 porazil Ghaznovce u Dandánakánu a roku 1055 vstoupil do Bagdádu. Roku 1071 porazil seldžucký sultán Alp Arslan byzantského císaře Romana IV. Diogena u Mantzikertu (Malazgirt) a do Anatolie začaly proudit turkmenské kmeny. Vznikl Rúmský sultanát, nejprve se sídlem v Nikaii (İzniku), od roku 1097 v Konyi. Na dvoře a v literatuře Seldžuků vládla perština, ale mezi obyvateli Anatolie, kde dál žily i řecky, arménsky a kurdsky mluvící komunity, se postupně šířila turečtina; ve 13. století v ní psal básník Yunus Emre. Jiní Oguzové se usadili v Ázerbájdžánu nebo zůstali ve Střední Asii, v dnešním Turkmenistánu.",
+      "en": "In the 11th century the Oghuz clan of the Seljuks took control of Iran: in 1040 they defeated the Ghaznavids at Dandanaqan and in 1055 entered Baghdad. In 1071 the Seljuk sultan Alp Arslan defeated the Byzantine emperor Romanos IV Diogenes at Manzikert (Malazgirt), and Turkmen tribes began to pour into Anatolia. The Sultanate of Rum arose, first centred on Nicaea (İznik) and from 1097 on Konya. Persian dominated the Seljuk court and literature, but Turkish gradually spread among the people of Anatolia, where Greek-, Armenian- and Kurdish-speaking communities also lived on; in the 13th century the poet Yunus Emre wrote in it. Other Oghuz settled in Azerbaijan or remained in Central Asia, in present-day Turkmenistan."
      },
      "oblasti": [
       {
@@ -3896,11 +3920,15 @@
         ],
         [
          45,
-         38.8
+         38.9
         ],
         [
-         42.5,
-         39.1
+         43.6,
+         39.25
+        ],
+        [
+         42.6,
+         39.15
         ]
        ],
        "popisek": {
@@ -3952,8 +3980,8 @@
       "en": "Ottoman Turkish"
      },
      "text": {
-      "cs": "Kolem roku 1300 založil Osman v severozápadní Anatolii malé knížectví, z něhož vyrostla Osmanská říše: roku 1453 dobyla Konstantinopol a v 16. století vládla od Alžírska po Irák a od Budína po Jemen. Spisovná osmanská turečtina se psala arabským písmem a přijala tisíce slov z arabštiny a perštiny, takže se výrazně lišila od mluvené řeči. Turečtina se rozšířila na Balkán, kde turecky mluvící menšiny žijí dodnes, a balkánské jazyky z ní převzaly stovky slov.",
-      "en": "Around 1300 Osman founded a small principality in north-western Anatolia that grew into the Ottoman Empire: in 1453 it took Constantinople, and in the 16th century it ruled from Algeria to Iraq and from Buda to Yemen. Written Ottoman Turkish used the Arabic script and absorbed thousands of words from Arabic and Persian, so it differed greatly from the spoken language. Turkish spread to the Balkans, where Turkish-speaking minorities still live, and the Balkan languages took hundreds of words from it."
+      "cs": "Kolem roku 1300 založil Osman v severozápadní Anatolii malé knížectví, z něhož vyrostla Osmanská říše: roku 1453 dobyla Konstantinopol a v 16. století vládla od Alžírska po Irák a od Budína po Jemen. Spisovná osmanská turečtina se psala arabským písmem a přijala tisíce slov z arabštiny a perštiny, takže se výrazně lišila od mluvené řeči. Turečtina se rozšířila na Balkán, kde turecky mluvící menšiny žijí dodnes, a balkánské jazyky z ní převzaly tisíce slov.",
+      "en": "Around 1300 Osman founded a small principality in north-western Anatolia that grew into the Ottoman Empire: in 1453 it took Constantinople, and in the 16th century it ruled from Algeria to Iraq and from Buda to Yemen. Written Ottoman Turkish used the Arabic script and absorbed thousands of words from Arabic and Persian, so it differed greatly from the spoken language. Turkish spread to the Balkans, where Turkish-speaking minorities still live, and the Balkan languages took thousands of words from it."
      },
      "oblasti": [
       {
@@ -3999,16 +4027,40 @@
        "barva": "tr",
        "body": [
         [
-         29.5,
-         40.8
+         29.3,
+         40
         ],
         [
-         28.9,
-         41.1
+         27.5,
+         40.05
+        ],
+        [
+         26.78,
+         40.37
+        ],
+        [
+         26.62,
+         40.45
+        ],
+        [
+         26.7,
+         40.5
         ],
         [
          26.8,
-         41.7
+         40.55
+        ],
+        [
+         26.9,
+         40.6
+        ],
+        [
+         26.88,
+         40.75
+        ],
+        [
+         26.55,
+         41.68
         ],
         [
          24.5,
@@ -4024,8 +4076,8 @@
         ]
        ],
        "popisek": {
-        "cs": "na Balkán (14.–16. století)",
-        "en": "into the Balkans (14th–16th century)"
+        "cs": "přes Dardanely na Balkán (od 1354)",
+        "en": "across the Dardanelles into the Balkans (from 1354)"
        }
       }
      ]
@@ -4085,14 +4137,19 @@
          0.7
         ],
         [
+         25.4,
+         41.65,
+         0.4
+        ],
+        [
          25.5,
          41.2,
          0.4
         ],
         [
-         33.4,
+         33.45,
          35.2,
-         0.5
+         0.3
         ]
        ],
        "popisek": {
@@ -4170,12 +4227,13 @@
     }
    ],
    "zdroje": [
-    "Johanson, L. – Csató, É. Á. (eds.) (2022): The Turkic Languages. 2nd ed. London: Routledge.",
+    "Johanson, L. – Csató, É. Á. (eds.) (2022): The Turkic Languages. 2nd ed. London – New York: Routledge (Routledge Language Family Series).",
     "Golden, P. B. (1992): An Introduction to the History of the Turkic Peoples. Wiesbaden: Harrassowitz.",
-    "Tekin, T. (1968): A Grammar of Orkhon Turkic. Bloomington: Indiana University.",
+    "Tekin, T. (1968): A Grammar of Orkhon Turkic. Bloomington: Indiana University; The Hague: Mouton (Uralic and Altaic Series 69).",
     "Findley, C. V. (2005): The Turks in World History. Oxford University Press.",
     "Lewis, G. (1999): The Turkish Language Reform: A Catastrophic Success. Oxford University Press.",
-    "Dankoff, R. – Kelly, J. (eds. a přel.) (1982–1985): Maḥmūd al-Kāšγarī: Compendium of the Turkic Dialects (Dīwān Luγāt at-Turk). Harvard University."
+    "Maḥmūd al-Kāšγarī: Compendium of the Turkic Dialects (Dīwān Luγāt at-Turk). Ed. and transl. by R. Dankoff in collaboration with J. Kelly. 3 parts. Cambridge, Mass.: Harvard University Printing Office, 1982–1985 (Sources of Oriental Languages and Literatures 7).",
+    "Škaljić, A. (1966): Turcizmi u srpskohrvatskom jeziku. Sarajevo: Svjetlost."
    ]
   },
   {
@@ -5000,6 +5058,505 @@
     "Hogg, R. – Denison, D. (eds.) (2006): A History of the English Language. Cambridge University Press.",
     "Townend, M. (2002): Language and History in Viking Age England. Turnhout: Brepols.",
     "Eberhard, D. M. – Simons, G. F. – Fennig, C. D. (eds.): Ethnologue: Languages of the World. SIL International (English)."
+   ]
+  },
+  {
+   "id": "navazstina",
+   "atlas": "nv",
+   "koncept": true,
+   "adresa": {
+    "cs": "putovani-navazstina",
+    "en": "journey-navajo"
+   },
+   "nazev": {
+    "cs": "Putování navažštiny",
+    "en": "The journey of Navajo"
+   },
+   "uvod": {
+    "cs": "Ze subarktických lesů Aljašky a západní Kanady přes tisíce kilometrů na jih až do pouští Arizony a Nového Mexika – a přerušovaně i sporná stopa, která vede přes Beringovu úžinu na Sibiř. Letopočty jsou přibližné, sporné výklady jsou přerušovaně.",
+    "en": "From the subarctic forests of Alaska and western Canada thousands of kilometres south to the deserts of Arizona and New Mexico – plus, dashed, a disputed trail leading across the Bering Strait to Siberia. Dates are approximate; disputed interpretations are dashed."
+   },
+   "etapy": [
+    {
+     "id": "jenisej",
+     "doba": {
+      "cs": "před tisíci lety (sporné)",
+      "en": "thousands of years ago (disputed)"
+     },
+     "pohled": [
+      -170,
+      62,
+      1.3
+     ],
+     "nazev": {
+      "cs": "Stopa na Sibiř?",
+      "en": "A trail to Siberia?"
+     },
+     "text": {
+      "cs": "Navažština patří k atabaským jazykům a ty spolu s eyačtinou a vzdáleněji s tlingitštinou tvoří rodinu na-dené. Roku 2008 navrhl Edward Vajda, že jazyky na-dené jsou příbuzné jenisejským jazykům ze střední Sibiře, z nichž dnes žije jen ketština. Dene-jenisejská hypotéza by byla první prokázanou příbuzností mezi jazyky Starého a Nového světa. Část jazykovědců ji přijala, jiní ji pokládají za neprokázanou; je proto přerušovaně. Předkové všech původních Američanů přišli z Asie přes Beringii už před více než 15 000 lety; mluvčí jazyků na-dené mohli přijít v některé z pozdějších vln.",
+      "en": "Navajo belongs to the Athabaskan languages, which together with Eyak and, more distantly, Tlingit form the Na-Dene family. In 2008 Edward Vajda proposed that the Na-Dene languages are related to the Yeniseian languages of central Siberia, of which only Ket survives today. The Dene–Yeniseian hypothesis would be the first demonstrated relationship between languages of the Old and New Worlds. Some linguists have accepted it, others consider it unproven; it is therefore dashed. The ancestors of all Native Americans came from Asia across Beringia more than 15,000 years ago; speakers of Na-Dene languages may have come in one of the later waves."
+     },
+     "oblasti": [
+      {
+       "id": "ketove",
+       "barva": "jen",
+       "sporna": true,
+       "kruhy": [
+        [
+         87,
+         63,
+         2.5
+        ],
+        [
+         89,
+         60,
+         1.5
+        ]
+       ],
+       "popisek": {
+        "cs": "jenisejské jazyky (ketština)",
+        "en": "Yeniseian languages (Ket)"
+       }
+      },
+      {
+       "id": "nadene",
+       "barva": "nd",
+       "kruhy": [
+        [
+         -150,
+         64,
+         3
+        ],
+        [
+         -138,
+         62,
+         3
+        ],
+        [
+         -128,
+         60,
+         3
+        ]
+       ],
+       "popisek": {
+        "cs": "na-dené",
+        "en": "Na-Dene"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "pres-beringii",
+       "barva": "jen",
+       "sporna": true,
+       "body": [
+        [
+         92,
+         63
+        ],
+        [
+         125,
+         66
+        ],
+        [
+         160,
+         66
+        ],
+        [
+         -172,
+         65.5
+        ],
+        [
+         -158,
+         65
+        ]
+       ],
+       "popisek": {
+        "cs": "dene-jenisejská hypotéza (sporná)",
+        "en": "Dene–Yeniseian hypothesis (disputed)"
+       }
+      }
+     ]
+    },
+    {
+     "id": "atabaskove",
+     "doba": {
+      "cs": "asi do 1. tisíciletí n. l.",
+      "en": "until c. the 1st millennium CE"
+     },
+     "pohled": [
+      -130,
+      60,
+      2
+     ],
+     "nazev": {
+      "cs": "Atabaskové na severu",
+      "en": "The northern Athabaskans"
+     },
+     "text": {
+      "cs": "Pravlast atabaských jazyků se hledá ve vnitrozemí Aljašky, v Yukonu a na severozápadě Kanady, v krajině jehličnatých lesů, řek a jezer. Dodnes se tu mluví desítkami atabaských jazyků, například gwičinštinou, koyukonštinou, dena'inštinou nebo čipevajštinou (dene sųłiné). Jejich mluvčí žili jako lovci a rybáři v malých pohyblivých skupinách. Příbuzná eyačtina na pobřeží jižní Aljašky vymřela roku 2008 se smrtí své poslední mluvčí Marie Smith Jonesové.",
+      "en": "The homeland of the Athabaskan languages is sought in interior Alaska, the Yukon and north-western Canada, a landscape of coniferous forests, rivers and lakes. Dozens of Athabaskan languages are still spoken here, for example Gwich'in, Koyukon, Dena'ina and Chipewyan (Dene Sųłiné). Their speakers lived as hunters and fishers in small, mobile groups. The related Eyak language on the coast of southern Alaska died out in 2008 with its last speaker, Marie Smith Jones."
+     },
+     "oblasti": [
+      {
+       "id": "sever",
+       "barva": "nd",
+       "kruhy": [
+        [
+         -150,
+         64,
+         3
+        ],
+        [
+         -138,
+         62.5,
+         3
+        ],
+        [
+         -126,
+         61,
+         3.5
+        ],
+        [
+         -112,
+         59,
+         3.5
+        ]
+       ],
+       "popisek": {
+        "cs": "severní atabaské jazyky",
+        "en": "Northern Athabaskan"
+       }
+      },
+      {
+       "id": "eyak",
+       "barva": "jen",
+       "kruhy": [
+        [
+         -145.5,
+         60.5,
+         0.8
+        ]
+       ],
+       "popisek": {
+        "cs": "eyačtina (†2008)",
+        "en": "Eyak (†2008)"
+       }
+      }
+     ],
+     "proudy": []
+    },
+    {
+     "id": "na-jih",
+     "doba": {
+      "cs": "asi 1000–1500 n. l.",
+      "en": "c. 1000–1500 CE"
+     },
+     "pohled": [
+      -115,
+      46,
+      1.4
+     ],
+     "nazev": {
+      "cs": "Velká cesta na jih",
+      "en": "The long journey south"
+     },
+     "text": {
+      "cs": "Někdy mezi lety 1000 a 1500 se předkové Navahů a Apačů vydali ze severu na jih, přes 2500 km až na americký Jihozápad; jejich jazyky se proto nazývají jižní atabaské neboli apačské. Kudy šli, je sporné: buď po Velkých pláních východně od Skalistých hor, nebo mezi horami přes Velkou pánev, možná obojím směrem. Za podnět se někdy pokládá výbuch sopky Churchill na Aljašce kolem roku 850, který zasypal popelem velkou část Yukonu. Jiné atabaské skupiny odešly už dřív na pacifické pobřeží, do Oregonu a severní Kalifornie (hupa).",
+      "en": "At some point between 1000 and 1500 the ancestors of the Navajo and Apache set out from the north, travelling over 2,500 km to the American Southwest; their languages are therefore called Southern Athabaskan or Apachean. Their route is disputed: either along the Great Plains east of the Rocky Mountains or between the mountains through the Great Basin, perhaps both. The eruption of Mount Churchill in Alaska around 850, which covered much of the Yukon in ash, is sometimes seen as a trigger. Other Athabaskan groups had earlier moved to the Pacific coast, to Oregon and northern California (Hupa)."
+     },
+     "oblasti": [
+      {
+       "id": "jihozapad",
+       "barva": "apa",
+       "po": "pres-plane",
+       "kruhy": [
+        [
+         -107.5,
+         36.5,
+         1.8
+        ],
+        [
+         -105,
+         34,
+         1.5
+        ]
+       ],
+       "popisek": {
+        "cs": "jižní atabaské (apačské) jazyky",
+        "en": "Southern Athabaskan (Apachean)"
+       }
+      },
+      {
+       "id": "hupa",
+       "barva": "nd",
+       "po": "k-pacifiku",
+       "kruhy": [
+        [
+         -123.6,
+         41,
+         0.9
+        ],
+        [
+         -123.8,
+         43.5,
+         0.8
+        ]
+       ],
+       "popisek": {
+        "cs": "hupa a další",
+        "en": "Hupa and others"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "pres-plane",
+       "barva": "apa",
+       "sporna": true,
+       "body": [
+        [
+         -115,
+         57
+        ],
+        [
+         -111,
+         51
+        ],
+        [
+         -106,
+         45
+        ],
+        [
+         -104,
+         39
+        ],
+        [
+         -105.5,
+         36.8
+        ]
+       ],
+       "popisek": {
+        "cs": "po Velkých pláních?",
+        "en": "along the Great Plains?"
+       }
+      },
+      {
+       "id": "pres-panev",
+       "barva": "apa",
+       "sporna": true,
+       "body": [
+        [
+         -119,
+         56
+        ],
+        [
+         -116.5,
+         49
+        ],
+        [
+         -114,
+         43
+        ],
+        [
+         -111.5,
+         38.5
+        ],
+        [
+         -108.5,
+         36.8
+        ]
+       ],
+       "popisek": {
+        "cs": "přes Velkou pánev?",
+        "en": "through the Great Basin?"
+       }
+      },
+      {
+       "id": "k-pacifiku",
+       "barva": "nd",
+       "body": [
+        [
+         -126,
+         57
+        ],
+        [
+         -123,
+         51
+        ],
+        [
+         -122.8,
+         46
+        ],
+        [
+         -123.3,
+         42.3
+        ]
+       ],
+       "popisek": {
+        "cs": "k Pacifiku",
+        "en": "to the Pacific"
+       }
+      }
+     ]
+    },
+    {
+     "id": "dinetah",
+     "doba": {
+      "cs": "16.–19. století",
+      "en": "16th–19th century"
+     },
+     "pohled": [
+      -107,
+      35,
+      3.6
+     ],
+     "nazev": {
+      "cs": "Dinétah a Dlouhý pochod",
+      "en": "Dinétah and the Long Walk"
+     },
+     "text": {
+      "cs": "Navahové si říkají Diné, „lidé“, a svou původní zemi v severozápadním Novém Mexiku Dinétah. Od sousedních pueblanů převzali zemědělství a tkaní, od Španělů ovce a koně; ze španělštiny pocházejí i slova jako béeso „peníze“ (peso). Navažština a apačské jazyky jsou si dodnes blízké. Roku 1864 vyhnala americká armáda asi 8 až 9 tisíc Navahů na Dlouhý pochod přes 400 km do internačního tábora Bosque Redondo u Fort Sumneru, kde mnozí zemřeli. Smlouvou z roku 1868 se směli vrátit a byla jim vymezena rezervace.",
+      "en": "The Navajo call themselves Diné, 'the people', and their original homeland in north-western New Mexico Dinétah. From their Pueblo neighbours they adopted farming and weaving, from the Spanish sheep and horses; words such as béeso 'money' (peso) also come from Spanish. Navajo and the Apache languages are still close to each other. In 1864 the US Army forced some 8,000–9,000 Navajo on the Long Walk of over 400 km to the Bosque Redondo internment camp near Fort Sumner, where many died. The Treaty of 1868 allowed them to return and set out a reservation."
+     },
+     "oblasti": [
+      {
+       "id": "dinetah",
+       "barva": "nv",
+       "kruhy": [
+        [
+         -107.5,
+         36.6,
+         1
+        ]
+       ],
+       "popisek": {
+        "cs": "Dinétah",
+        "en": "Dinétah"
+       }
+      },
+      {
+       "id": "apaci",
+       "barva": "apa",
+       "kruhy": [
+        [
+         -109.8,
+         33.6,
+         1.2
+        ],
+        [
+         -105.7,
+         33.2,
+         0.9
+        ]
+       ],
+       "popisek": {
+        "cs": "apačské jazyky",
+        "en": "Apache languages"
+       }
+      },
+      {
+       "id": "bosque",
+       "barva": "nv",
+       "po": "dlouhy-pochod",
+       "kruhy": [
+        [
+         -104.25,
+         34.4,
+         0.5
+        ]
+       ],
+       "popisek": {
+        "cs": "Bosque Redondo (1864–1868)",
+        "en": "Bosque Redondo (1864–1868)"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "dlouhy-pochod",
+       "barva": "nv",
+       "body": [
+        [
+         -109.1,
+         35.7
+        ],
+        [
+         -107,
+         35.1
+        ],
+        [
+         -105.5,
+         34.8
+        ],
+        [
+         -104.4,
+         34.45
+        ]
+       ],
+       "popisek": {
+        "cs": "Dlouhý pochod 1864",
+        "en": "the Long Walk, 1864"
+       }
+      }
+     ]
+    },
+    {
+     "id": "dnes",
+     "doba": {
+      "cs": "20. století – dnes",
+      "en": "20th century – today"
+     },
+     "pohled": [
+      -109.5,
+      36,
+      3.6
+     ],
+     "nazev": {
+      "cs": "Navažština dnes",
+      "en": "Navajo today"
+     },
+     "text": {
+      "cs": "Ve 20. století posílaly úřady navažské děti do internátních škol, kde směly mluvit jen anglicky a za navažštinu byly trestány. Za 2. světové války přitom navažští „code talkers“ u námořní pěchoty předávali zprávy v šifře založené na navažštině, kterou Japonci nerozluštili; prvních 29 jich bylo naverbováno roku 1942. Navažštinou dnes mluví asi 170 tisíc lidí, víc než kterýmkoli jiným původním jazykem USA, mladších mluvčích však ubývá. Navažský národ podporuje výuku navažštiny ve školách.",
+      "en": "In the 20th century the authorities sent Navajo children to boarding schools where they were allowed to speak only English and were punished for speaking Navajo. Yet during the Second World War Navajo 'code talkers' in the Marine Corps passed messages in a code based on Navajo that the Japanese never broke; the first 29 were recruited in 1942. About 170,000 people speak Navajo today, more than any other Native language of the United States, but the number of younger speakers is falling. The Navajo Nation supports teaching Navajo in schools."
+     },
+     "oblasti": [
+      {
+       "id": "navajo",
+       "barva": "nv",
+       "kruhy": [
+        [
+         -109.8,
+         36.3,
+         1.6
+        ],
+        [
+         -108.3,
+         36,
+         1
+        ],
+        [
+         -111,
+         36,
+         1
+        ]
+       ],
+       "popisek": {
+        "cs": "navažština (Navajo Nation)",
+        "en": "Navajo (Navajo Nation)"
+       }
+      }
+     ],
+     "proudy": []
+    }
+   ],
+   "zdroje": [
+    "Vajda, E. J. (2010): A Siberian link with Na-Dene languages. In: Kari, J. – Potter, B. A. (eds.): The Dene–Yeniseian Connection. Anthropological Papers of the University of Alaska, new series 5: 33–99.",
+    "Campbell, L. (2011): Review of The Dene–Yeniseian Connection. International Journal of American Linguistics 77(3): 445–451.",
+    "Seymour, D. J. (ed.) (2012): From the Land of Ever Winter to the American Southwest: Athapaskan Migrations, Mobility, and Ethnogenesis. Salt Lake City: University of Utah Press.",
+    "Young, R. W. – Morgan, W. (1987): The Navajo Language: A Grammar and Colloquial Dictionary. Revised ed. Albuquerque: University of New Mexico Press.",
+    "Iverson, P. (2002): Diné: A History of the Navajos. Albuquerque: University of New Mexico Press.",
+    "Krauss, M. E. (1980): Alaska Native Languages: Past, Present, and Future. Alaska Native Language Center."
    ]
   }
  ]

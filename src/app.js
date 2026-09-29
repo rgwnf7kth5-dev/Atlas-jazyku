@@ -583,7 +583,7 @@ function nactiBarvy(){
    "atmosfera", "atmosfera2", "sit", "hranice", "okraj-koule", "zamerovac-lem",
    "r-ie", "r-st", "r-an", "r-afro", "r-nk", "r-ost", "more1", "more2", "souse1", "souse2", "souse-vit", "uzemi",
    "podlaha", "podlaha-2", "obzor", "text2", "stin-plochy", "stin-plochy-2",
-   "put-ie", "put-bs", "put-sl", "put-zsl", "put-jsl", "put-vsl", "put-cs", "put-ii", "put-ir", "put-ku", "put-kmr", "put-ckb", "put-sdh", "put-ur", "put-ug", "put-hu", "put-in", "put-rom", "put-bal", "put-vla", "put-cen", "put-svy", "put-szap", "put-ko", "put-an", "put-mp", "put-pap", "put-oc", "put-pol", "put-mi", "put-mg", "put-ptu", "put-ogr", "put-gok", "put-ogz", "put-tr", "put-pri", "put-gm", "put-en", "put-en2", "put-kel", "put-non", "put-fr", "put-cr"].forEach(function(k){ barvy[k] = s.getPropertyValue("--" + k).trim(); });
+   "put-ie", "put-bs", "put-sl", "put-zsl", "put-jsl", "put-vsl", "put-cs", "put-ii", "put-ir", "put-ku", "put-kmr", "put-ckb", "put-sdh", "put-ur", "put-ug", "put-hu", "put-in", "put-rom", "put-bal", "put-vla", "put-cen", "put-svy", "put-szap", "put-ko", "put-an", "put-mp", "put-pap", "put-oc", "put-pol", "put-mi", "put-mg", "put-ptu", "put-ogr", "put-gok", "put-ogz", "put-tr", "put-pri", "put-gm", "put-en", "put-en2", "put-kel", "put-non", "put-fr", "put-cr", "put-jen", "put-nd", "put-apa", "put-nv"].forEach(function(k){ barvy[k] = s.getPropertyValue("--" + k).trim(); });
 }
 
 const fJaz = new Float32Array(POCET_B), zakladJaz = new Float32Array(POCET_B);   // příznaky teček: 0 obyčejná, 1 vybraná, 2 příbuzná, 3 pod myší
