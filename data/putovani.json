@@ -1,5 +1,5 @@
 {
- "_pozn": "Putování jazyka na glóbu: etapy s oblastmi (kruhy [délka, šířka, poloměr ve stupních]) a proudy (body [délka, šířka]). Letopočty jsou přibližné, sporné výklady mají \"sporna\": true a kreslí se přerušovaně. Barvy jsou klíče --put-* v styles.css.",
+ "_pozn": "Putování jazyka na glóbu: etapy s oblastmi (kruhy [délka, šířka, poloměr ve stupních]) a proudy (body [délka, šířka]). Letopočty jsou přibližné, sporné výklady mají \"sporna\": true a kreslí se přerušovaně. Barvy jsou klíče --put-* v styles.css. Etapa s \"predel\": true nekreslí šipky předchozí etapy (dějinný zlom).",
  "jazyky": [
   {
    "id": "cestina",
@@ -5557,6 +5557,633 @@
     "Young, R. W. – Morgan, W. (1987): The Navajo Language: A Grammar and Colloquial Dictionary. Revised ed. Albuquerque: University of New Mexico Press.",
     "Iverson, P. (2002): Diné: A History of the Navajos. Albuquerque: University of New Mexico Press.",
     "Krauss, M. E. (1980): Alaska Native Languages: Past, Present, and Future. Alaska Native Language Center."
+   ]
+  },
+  {
+   "id": "jidis",
+   "atlas": "yi",
+   "koncept": true,
+   "adresa": {
+    "cs": "putovani-jidis",
+    "en": "journey-yiddish"
+   },
+   "nazev": {
+    "cs": "Putování jidiš",
+    "en": "The journey of Yiddish"
+   },
+   "uvod": {
+    "cs": "Z židovských obcí v Porýní na východ do Polska a Litvy, odtud přes oceán do Ameriky – a po holokaustu do rozptýlených komunit po celém světě. Letopočty jsou přibližné, sporné výklady jsou přerušovaně.",
+    "en": "From the Jewish communities of the Rhineland east to Poland and Lithuania, from there across the ocean to America – and after the Holocaust to scattered communities around the world. Dates are approximate; disputed interpretations are dashed."
+   },
+   "etapy": [
+    {
+     "id": "askenaz",
+     "doba": {
+      "cs": "asi 10.–13. století",
+      "en": "c. 10th–13th century"
+     },
+     "pohled": [
+      9,
+      48.5,
+      3.2
+     ],
+     "nazev": {
+      "cs": "Vznik v Aškenazu",
+      "en": "Beginnings in Ashkenaz"
+     },
+     "text": {
+      "cs": "Jidiš vzniklo mezi Židy ve středověkém Německu, hebrejsky zvaném Aškenaz. Židé sem přicházeli ze severní Itálie a Francie, mluvili románsky a přinesli hebrejštinu a aramejštinu jako jazyky modliteb a učenosti. Jidiš proto spojuje středohornoněmecká nářečí s hebrejsko-aramejskou složkou a několika románskými slovy (bentshn „žehnat“ z latinského benedicere) a píše se hebrejským písmem. Podle klasického výkladu Maxe Weinreicha vzniklo v Porýní, v obcích Špýr, Worms a Mohuč; jiní badatelé kladou jeho počátky dál na východ, do Bavorska, Podunají a Čech. Nejstarší datovaná věta v jidiš pochází z wormského machzoru z roku 1272.",
+      "en": "Yiddish arose among the Jews of medieval Germany, called Ashkenaz in Hebrew. Jews came here from northern Italy and France, spoke Romance languages and brought Hebrew and Aramaic as languages of prayer and learning. Yiddish therefore combines Middle High German dialects with a Hebrew–Aramaic component and a few Romance words (bentshn 'to bless', from Latin benedicere), and is written in the Hebrew alphabet. According to Max Weinreich's classic account it arose in the Rhineland, in the communities of Speyer, Worms and Mainz; other scholars place its beginnings further east, in Bavaria, the Danube region and Bohemia. The oldest dated sentence in Yiddish comes from the Worms Mahzor of 1272."
+     },
+     "oblasti": [
+      {
+       "id": "porynsko",
+       "barva": "jid",
+       "po": "z-italie",
+       "kruhy": [
+        [
+         8.3,
+         49.7,
+         1.2
+        ],
+        [
+         7.2,
+         50.6,
+         0.8
+        ]
+       ],
+       "popisek": {
+        "cs": "Porýní (Špýr, Worms, Mohuč)",
+        "en": "Rhineland (Speyer, Worms, Mainz)"
+       }
+      },
+      {
+       "id": "podunaji",
+       "barva": "jid",
+       "sporna": true,
+       "kruhy": [
+        [
+         12,
+         49,
+         1.5
+        ],
+        [
+         14.4,
+         50,
+         1
+        ]
+       ],
+       "popisek": {
+        "cs": "Bavorsko, Podunají, Čechy (jiný výklad)",
+        "en": "Bavaria, Danube, Bohemia (alternative view)"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "z-italie",
+       "barva": "rmn",
+       "body": [
+        [
+         10.5,
+         44.2
+        ],
+        [
+         9.5,
+         46.5
+        ],
+        [
+         8.8,
+         48.5
+        ],
+        [
+         8.4,
+         49.4
+        ]
+       ],
+       "popisek": {
+        "cs": "ze severní Itálie",
+        "en": "from northern Italy"
+       }
+      },
+      {
+       "id": "z-francie",
+       "barva": "rmn",
+       "body": [
+        [
+         2.5,
+         48.7
+        ],
+        [
+         5,
+         49.1
+        ],
+        [
+         7.5,
+         49.5
+        ]
+       ],
+       "popisek": {
+        "cs": "z Francie",
+        "en": "from France"
+       }
+      }
+     ]
+    },
+    {
+     "id": "na-vychod",
+     "doba": {
+      "cs": "13.–16. století",
+      "en": "13th–16th century"
+     },
+     "pohled": [
+      18,
+      51,
+      2.4
+     ],
+     "nazev": {
+      "cs": "Na východ, do Polska a Litvy",
+      "en": "East to Poland and Lithuania"
+     },
+     "text": {
+      "cs": "Po pogromech za křížových výprav (1096) a v době černé smrti (1348–1350) a po vyhnání z mnoha měst odcházeli Židé z německých zemí na východ. Polská knížata a králové jim udělovali privilegia, nejznámější je Kališský statut z roku 1264. V Polsku a Litvě se v 16. století soustředila většina aškenázských Židů a vzniklo zde východní jidiš, silně ovlivněné slovanskými jazyky (například nudnik „otrava“ s polskou příponou). Západní jidiš v německých zemích se udrželo až do 18. a 19. století, kdy jeho mluvčí postupně přešli k němčině.",
+      "en": "After the pogroms of the Crusades (1096) and the Black Death (1348–1350) and expulsions from many towns, Jews left the German lands for the east. Polish dukes and kings granted them privileges, the best known being the Statute of Kalisz of 1264. By the 16th century most Ashkenazi Jews lived in Poland and Lithuania, and Eastern Yiddish developed there, strongly influenced by the Slavic languages (for example nudnik 'bore', with a Polish suffix). Western Yiddish in the German lands survived until the 18th and 19th centuries, when its speakers gradually shifted to German."
+     },
+     "oblasti": [
+      {
+       "id": "zapadni",
+       "barva": "zjd",
+       "kruhy": [
+        [
+         9,
+         50,
+         1.8
+        ],
+        [
+         11.5,
+         49.3,
+         1.2
+        ],
+        [
+         15,
+         49.8,
+         1.2
+        ]
+       ],
+       "popisek": {
+        "cs": "západní jidiš",
+        "en": "Western Yiddish"
+       }
+      },
+      {
+       "id": "vychodni",
+       "barva": "jid",
+       "po": "do-polska",
+       "kruhy": [
+        [
+         20,
+         51.5,
+         2.5
+        ],
+        [
+         24,
+         50,
+         2.2
+        ],
+        [
+         25,
+         54,
+         2
+        ],
+        [
+         28,
+         53,
+         2
+        ],
+        [
+         29,
+         49,
+         1.8
+        ]
+       ],
+       "popisek": {
+        "cs": "východní jidiš (Polsko, Litva)",
+        "en": "Eastern Yiddish (Poland, Lithuania)"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "do-polska",
+       "barva": "jid",
+       "body": [
+        [
+         9,
+         50.2
+        ],
+        [
+         13,
+         51
+        ],
+        [
+         17,
+         51.5
+        ],
+        [
+         20.5,
+         51.8
+        ]
+       ],
+       "popisek": {
+        "cs": "na východ",
+        "en": "east"
+       }
+      },
+      {
+       "id": "do-litvy",
+       "barva": "jid",
+       "body": [
+        [
+         21,
+         52.5
+        ],
+        [
+         23,
+         53.5
+        ],
+        [
+         25,
+         54.5
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "id": "jazyk-milionu",
+     "doba": {
+      "cs": "17.–19. století",
+      "en": "17th–19th century"
+     },
+     "pohled": [
+      26,
+      51,
+      2.6
+     ],
+     "nazev": {
+      "cs": "Jazyk milionů",
+      "en": "The language of millions"
+     },
+     "text": {
+      "cs": "Jidiš bylo každodenním jazykem aškenázských Židů, zatímco hebrejština zůstávala jazykem modliteb a náboženské učenosti. Kolem roku 1600 vyšla Ceena urena, převyprávění Bible v jidiš určené hlavně ženám, a v 18. století se jidiš stalo jazykem chasidského hnutí. V 19. století vznikla moderní literatura v jidiš – Mendele Mojcher Sforim, Šolem Alejchem, J. L. Perec. Kolem roku 1900 bylo jidiš jedním z nejrozšířenějších jazyků střední a východní Evropy a před 2. světovou válkou jím mluvilo asi 11 milionů lidí.",
+      "en": "Yiddish was the everyday language of Ashkenazi Jews, while Hebrew remained the language of prayer and religious learning. Around 1600 the Tsene-rene appeared, a Yiddish retelling of the Bible intended mainly for women, and in the 18th century Yiddish became the language of the Hasidic movement. The 19th century saw the rise of modern Yiddish literature – Mendele Moykher Sforim, Sholem Aleichem, I. L. Peretz. Around 1900 Yiddish was one of the most widely spoken languages of Central and Eastern Europe, and before the Second World War about 11 million people spoke it."
+     },
+     "oblasti": [
+      {
+       "id": "milionu",
+       "barva": "jid",
+       "kruhy": [
+        [
+         21,
+         52,
+         2.5
+        ],
+        [
+         25,
+         54.5,
+         2
+        ],
+        [
+         28,
+         53.5,
+         2.2
+        ],
+        [
+         26,
+         50,
+         2.5
+        ],
+        [
+         31,
+         49.5,
+         2
+        ],
+        [
+         29,
+         47,
+         1.5
+        ],
+        [
+         23,
+         48.5,
+         1.5
+        ]
+       ],
+       "popisek": {
+        "cs": "jidiš (asi 11 milionů mluvčích před válkou)",
+        "en": "Yiddish (c. 11 million speakers before the war)"
+       }
+      }
+     ],
+     "proudy": []
+    },
+    {
+     "id": "emigrace",
+     "doba": {
+      "cs": "1881–1924",
+      "en": "1881–1924"
+     },
+     "pohled": [
+      -30,
+      45,
+      1.2
+     ],
+     "nazev": {
+      "cs": "Za oceán",
+      "en": "Across the ocean"
+     },
+     "text": {
+      "cs": "Po pogromech v Ruské říši v letech 1881–1882 a kvůli chudobě odešly z východní Evropy asi dva a půl milionu Židů, většina do Spojených států. V New Yorku, především na Lower East Side, vznikl nový střed jidiš s deníky (Forverts, od 1897), divadly a odbory. Menší proudy mířily do Londýna, Argentiny, Jižní Afriky a Palestiny. Americký imigrační zákon z roku 1924 tuto vlnu téměř zastavil.",
+      "en": "After the pogroms in the Russian Empire in 1881–1882 and because of poverty, some two and a half million Jews left Eastern Europe, most of them for the United States. New York, above all the Lower East Side, became a new centre of Yiddish with daily newspapers (the Forverts, from 1897), theatres and trade unions. Smaller streams went to London, Argentina, South Africa and Palestine. The US Immigration Act of 1924 nearly stopped this wave."
+     },
+     "oblasti": [
+      {
+       "id": "newyork",
+       "barva": "jid",
+       "po": "do-ameriky",
+       "kruhy": [
+        [
+         -74,
+         40.7,
+         1.2
+        ]
+       ],
+       "popisek": {
+        "cs": "New York",
+        "en": "New York"
+       }
+      },
+      {
+       "id": "buenosaires",
+       "barva": "jid",
+       "po": "do-argentiny",
+       "kruhy": [
+        [
+         -58.4,
+         -34.6,
+         0.8
+        ]
+       ],
+       "popisek": {
+        "cs": "Buenos Aires",
+        "en": "Buenos Aires"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "do-ameriky",
+       "barva": "jid",
+       "body": [
+        [
+         21,
+         52
+        ],
+        [
+         10,
+         53.5
+        ],
+        [
+         -5,
+         50.5
+        ],
+        [
+         -30,
+         47
+        ],
+        [
+         -55,
+         43
+        ],
+        [
+         -73.5,
+         40.6
+        ]
+       ],
+       "popisek": {
+        "cs": "do USA (asi 2 miliony)",
+        "en": "to the USA (c. 2 million)"
+       }
+      },
+      {
+       "id": "do-argentiny",
+       "barva": "jid",
+       "body": [
+        [
+         -8,
+         46
+        ],
+        [
+         -25,
+         20
+        ],
+        [
+         -38,
+         -12
+        ],
+        [
+         -50,
+         -28
+        ],
+        [
+         -58,
+         -34.5
+        ]
+       ],
+       "popisek": {
+        "cs": "do Argentiny",
+        "en": "to Argentina"
+       }
+      },
+      {
+       "id": "do-londyna",
+       "barva": "jid",
+       "body": [
+        [
+         10,
+         53.6
+        ],
+        [
+         4,
+         52.5
+        ],
+        [
+         -0.1,
+         51.5
+        ]
+       ],
+       "popisek": {
+        "cs": "Londýn",
+        "en": "London"
+       }
+      }
+     ]
+    },
+    {
+     "id": "holokaust",
+     "doba": {
+      "cs": "1939–1945",
+      "en": "1939–1945"
+     },
+     "pohled": [
+      22,
+      51,
+      2.4
+     ],
+     "predel": true,
+     "nazev": {
+      "cs": "Holokaust",
+      "en": "The Holocaust"
+     },
+     "text": {
+      "cs": "Nacistické Německo a jeho spojenci zavraždili za 2. světové války asi šest milionů Židů. Většina z nich mluvila jidiš; se zničením židovských obcí v Polsku, Litvě, Bělorusku a na Ukrajině zanikla i většina prostředí, ve kterém jidiš žilo jako každodenní jazyk. V Sovětském svazu byly po válce zavřeny instituce v jidiš a v srpnu 1952 bylo popraveno třináct předních představitelů Židovského antifašistického výboru, mezi nimi básníci píšící jidiš. V novém Státě Izrael dávaly úřady přednost hebrejštině.",
+      "en": "During the Second World War Nazi Germany and its allies murdered about six million Jews. Most of them spoke Yiddish; with the destruction of the Jewish communities of Poland, Lithuania, Belarus and Ukraine, most of the world in which Yiddish lived as an everyday language was destroyed too. In the Soviet Union Yiddish institutions were closed after the war, and in August 1952 thirteen leading members of the Jewish Anti-Fascist Committee were executed, among them poets who wrote in Yiddish. In the new State of Israel the authorities favoured Hebrew."
+     },
+     "oblasti": [
+      {
+       "id": "ztrata",
+       "barva": "ztr",
+       "kruhy": [
+        [
+         21,
+         52,
+         2.5
+        ],
+        [
+         25,
+         54.5,
+         2
+        ],
+        [
+         28,
+         53.5,
+         2.2
+        ],
+        [
+         26,
+         50,
+         2.5
+        ],
+        [
+         31,
+         49.5,
+         2
+        ]
+       ],
+       "popisek": {
+        "cs": "zničené židovské obce",
+        "en": "destroyed Jewish communities"
+       }
+      }
+     ],
+     "proudy": []
+    },
+    {
+     "id": "dnes",
+     "doba": {
+      "cs": "dnes",
+      "en": "today"
+     },
+     "pohled": [
+      -30,
+      42,
+      1
+     ],
+     "nazev": {
+      "cs": "Jidiš dnes",
+      "en": "Yiddish today"
+     },
+     "text": {
+      "cs": "Jidiš dnes mluví asi 600 tisíc lidí, většinou v chasidských a dalších ultraortodoxních komunitách v New Yorku, Izraeli, Londýně, Antverpách a Montrealu, kde je pro mnohé děti mateřským jazykem. Vedle toho žije jako jazyk kultury, výzkumu a výuky: Institut YIVO, založený roku 1925 ve Vilniusu, sídlí od roku 1940 v New Yorku a roku 1978 dostal Nobelovu cenu za literaturu Isaac Bashevis Singer, který psal jidiš. Jako menšinový jazyk je jidiš uznáno například ve Švédsku, Nizozemsku, Polsku a Rumunsku.",
+      "en": "About 600,000 people speak Yiddish today, mostly in Hasidic and other ultra-Orthodox communities in New York, Israel, London, Antwerp and Montreal, where it is the mother tongue of many children. It also lives on as a language of culture, research and teaching: the YIVO Institute, founded in Vilnius in 1925, has been based in New York since 1940, and in 1978 Isaac Bashevis Singer, who wrote in Yiddish, received the Nobel Prize in Literature. Yiddish is recognised as a minority language in, for example, Sweden, the Netherlands, Poland and Romania."
+     },
+     "oblasti": [
+      {
+       "id": "newyork",
+       "barva": "jid",
+       "kruhy": [
+        [
+         -74,
+         40.9,
+         1.1
+        ]
+       ],
+       "popisek": {
+        "cs": "New York",
+        "en": "New York"
+       }
+      },
+      {
+       "id": "izrael",
+       "barva": "jid",
+       "kruhy": [
+        [
+         34.9,
+         31.9,
+         0.8
+        ]
+       ],
+       "popisek": {
+        "cs": "Izrael",
+        "en": "Israel"
+       }
+      },
+      {
+       "id": "europa",
+       "barva": "jid",
+       "kruhy": [
+        [
+         4.4,
+         51.2,
+         0.5
+        ],
+        [
+         -0.07,
+         51.57,
+         0.5
+        ]
+       ],
+       "popisek": {
+        "cs": "Antverpy, Londýn",
+        "en": "Antwerp, London"
+       }
+      },
+      {
+       "id": "montreal",
+       "barva": "jid",
+       "kruhy": [
+        [
+         -73.6,
+         45.5,
+         0.6
+        ]
+       ],
+       "popisek": {
+        "cs": "Montreal",
+        "en": "Montreal"
+       }
+      }
+     ],
+     "proudy": []
+    }
+   ],
+   "zdroje": [
+    "Weinreich, M. (2008): History of the Yiddish Language. 2 vols. Ed. P. Glasser. New Haven: Yale University Press – YIVO.",
+    "Jacobs, N. G. (2005): Yiddish: A Linguistic Introduction. Cambridge University Press.",
+    "Katz, D. (2004): Words on Fire: The Unfinished Story of Yiddish. New York: Basic Books.",
+    "Beider, A. (2015): Origins of Yiddish Dialects. Oxford University Press.",
+    "Kahn, L. – Rubin, A. D. (eds.) (2016): Handbook of Jewish Languages. Leiden: Brill.",
+    "The YIVO Encyclopedia of Jews in Eastern Europe: Yiddish (Language). yivoencyclopedia.org."
    ]
   }
  ]
