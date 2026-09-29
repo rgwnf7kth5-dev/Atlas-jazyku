@@ -610,7 +610,34 @@
      "Search also knows languages constructed for literature and film (such as Quenya or Klingon); they are shown separately from natural languages."
     ]
    }
-  ]
+  ],
+  "tajemstvi": {
+   "tlacitko": "Secrets of the atlas",
+   "nadpis": "Secrets of the atlas",
+   "uvod": "The atlas hides a few small things that are not described anywhere else. The passwords can be typed anywhere on the page (outside text fields) or into the search box, which also works on a phone.",
+   "polozky": [
+    [
+     "Languages of the European Union",
+     "Type “eulang”. The globe flies over Europe, gold stars appear one by one at all 24 official languages of the EU, and a waving flag with the list of languages appears on the right. Link #eulang."
+    ],
+    [
+     "Gate to other worlds",
+     "Type “mellon”, Elvish for “friend” and the password of Durin's Door in The Lord of the Rings. The globe disappears and the worlds of invented languages float among the stars: Klingon, Quenya, Sindarin, Na'vi, Dothraki and High Valyrian. Search finds them too (for example “elf” or “klingon”), and the cards of Finnish and Welsh hold clues to the gate. Link #mellon."
+    ],
+    [
+     "Confusion of tongues",
+     "Type “babel”. The words on the screen briefly scatter into foreign scripts and a card about the Tower of Babel opens. Link #babel."
+    ],
+    [
+     "Do cetaceans talk?",
+     "Tap the same spot in the ocean three times quickly. A card opens about sperm whale codas, humpback songs, dolphin names and orca dialects – and why none of it has been shown to be a language. Link #cetaceans."
+    ],
+    [
+     "The upside-down globe",
+     "Tap The Language Atlas logo seven times quickly. The globe turns upside down, the languages fall off it and then return to their places. It does not run when reduced motion is set on the device."
+    ]
+   ]
+  }
  },
  "navodOdkaz": "Full guide",
  "navodNapoveda": "Full guide – everything the atlas can do",

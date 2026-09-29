@@ -1344,3 +1344,18 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 .scena.rezim-putovani #gl{opacity:.35; transition:opacity .6s}
 .scena.rezim-putovani #popisky{opacity:0}
 @media (max-width:920px){ .putovani-panel{position:relative; top:auto; left:auto; right:auto; width:auto; max-height:none; margin:4px 12px 12px} }
+
+/* tajemství na konci návodu (vajíčko) */
+.navod-tajemstvi{margin:30px 0 6px; text-align:center}
+.navod-tajemstvi > summary{display:inline-flex; list-style:none; cursor:pointer; padding:6px; border-radius:50%; color:var(--text2); opacity:.55; transition:opacity .2s}
+.navod-tajemstvi > summary::-webkit-details-marker{display:none}
+.navod-tajemstvi > summary:hover, .navod-tajemstvi > summary:focus-visible, .navod-tajemstvi[open] > summary{opacity:1}
+.navod-tajemstvi > summary:focus-visible{outline:2px solid var(--akcent); outline-offset:2px}
+.navod-tajemstvi .vejce{display:block; width:22px; height:28px; transform-origin:50% 85%}
+.navod-tajemstvi > summary:hover .vejce{animation:vejce-kyv .6s ease-in-out}
+.navod-tajemstvi[open] .vejce{transform:rotate(-14deg)}
+@keyframes vejce-kyv{25%{transform:rotate(-12deg)} 55%{transform:rotate(10deg)} 80%{transform:rotate(-5deg)}}
+@media (prefers-reduced-motion:reduce){.navod-tajemstvi > summary:hover .vejce{animation:none}}
+.navod-tajemstvi .tajemstvi-obsah{text-align:left; margin-top:10px; padding-top:14px; border-top:1px dashed var(--linka)}
+.navod-tajemstvi .tajemstvi-obsah dt{font-weight:600; color:var(--text); margin-top:12px}
+.navod-tajemstvi .tajemstvi-obsah dd{margin:3px 0 0; color:var(--text2)}

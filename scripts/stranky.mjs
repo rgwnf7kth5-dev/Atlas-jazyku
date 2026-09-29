@@ -88,6 +88,7 @@ export function vyrobStranky({ KOREN, WEB, NAHLED, UI, jazyky: vsechnyJazyky, gl
     return (j.zeme || []).map(z => nazvyZemi[lang][z] || z);
   }
 
+  const VEJCE_SVG = '<svg class="vejce" viewBox="0 0 24 30" aria-hidden="true"><path d="M12 1.2C6.6 1.2 2.6 10.8 2.6 18.3a9.4 9.4 0 0 0 18.8 0C21.4 10.8 17.4 1.2 12 1.2Z" fill="#F6EBD3" stroke="currentColor" stroke-width="1.1"/><path d="M3.6 14.6l2.1 2 2.1-2 2.1 2 2.1-2 2.1 2 2.1-2 2.1 2 2.1-2" fill="none" stroke="#D23A2B" stroke-width="1.5" stroke-linejoin="round"/><g fill="#D99A12"><circle cx="8.4" cy="8.6" r="1.1"/><circle cx="15.6" cy="8.6" r="1.1"/><circle cx="12" cy="5.4" r=".9"/><circle cx="7.4" cy="22" r="1.1"/><circle cx="12" cy="24.2" r="1.1"/><circle cx="16.6" cy="22" r="1.1"/></g></svg>';   // vajíčko na konci návodu (stejné jako v app.js)
   const styl = `
 :root{color-scheme:light dark; --listek:#FFFDF6; --linka-listku:rgba(60,110,200,.10); --papir:#FBF9F4; --karta:#FFFFFF; --text:#15192B; --text2:#5A6073; --linka:rgba(20,24,40,.1); --akcent:#D23A2B; --odkaz:#1F4FB8;
   --nadpis:"Playfair Display",Georgia,serif; --pismo:"Outfit",system-ui,sans-serif}
@@ -167,7 +168,20 @@ body.s-listkem{overflow:hidden}
 .nadpis-seznamu{font:600 2rem/1.2 var(--nadpis); margin:0}
 @media (max-width:760px){ .listek-pozadi{padding:0} .listek{min-height:100%; border-radius:0; padding:10px 16px 40px} }
 footer a{color:inherit}
-@media (max-width:760px){.jazyk{grid-template-columns:1fr; gap:18px} .hlava .domu{font-size:1.3rem} .hlava .domu svg{width:34px; height:34px}}
+@media (max-width:760px){.jazyk{grid-template-columns:1fr; gap:18px} .hlava .domu{font-size:1.3rem} .hlava .domu svg{width:34px; height:34px}}.navod-tajemstvi{margin:30px 0 6px; text-align:center}
+.navod-tajemstvi > summary{display:inline-flex; list-style:none; cursor:pointer; padding:6px; border-radius:50%; color:var(--text2); opacity:.55; transition:opacity .2s}
+.navod-tajemstvi > summary::-webkit-details-marker{display:none}
+.navod-tajemstvi > summary:hover, .navod-tajemstvi > summary:focus-visible, .navod-tajemstvi[open] > summary{opacity:1}
+.navod-tajemstvi > summary:focus-visible{outline:2px solid var(--akcent); outline-offset:2px}
+.navod-tajemstvi .vejce{display:block; width:22px; height:28px; transform-origin:50% 85%}
+.navod-tajemstvi > summary:hover .vejce{animation:vejce-kyv .6s ease-in-out}
+.navod-tajemstvi[open] .vejce{transform:rotate(-14deg)}
+@keyframes vejce-kyv{25%{transform:rotate(-12deg)} 55%{transform:rotate(10deg)} 80%{transform:rotate(-5deg)}}
+@media (prefers-reduced-motion:reduce){.navod-tajemstvi > summary:hover .vejce{animation:none}}
+.navod-tajemstvi .tajemstvi-obsah{text-align:left; margin-top:10px; padding-top:14px; border-top:1px dashed var(--linka)}
+.navod-tajemstvi dl{display:block; margin:0}
+.navod-tajemstvi dt{font-weight:600; color:var(--text); margin-top:12px}
+.navod-tajemstvi dd{margin:3px 0 0; color:var(--text2)}
 `;
   const znak = ikona.replace("<svg ", '<svg aria-hidden="true" ');
   const IKONA_ZVUK = '<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M4 9.2h3.4L12 5v14l-4.6-4.2H4z" fill="currentColor"/><path d="M16 9.4a3.7 3.7 0 0 1 0 5.2M18.7 6.7a7.5 7.5 0 0 1 0 10.6" stroke-linecap="round"/></svg>';
@@ -364,6 +378,9 @@ ${O.oddily.map(o => `<h2>${escHtml(dosad(o.h))}</h2>\n${o.p.map(p => `<p>${escHt
 <p class="uvod">${escHtml(N.uvod)}</p>
 ${N.oddily.map(o => `<h2>${escHtml(o.h)}</h2>\n${o.p.map(p => `<p>${escHtml(p)}</p>`).join("\n")}`).join("\n")}
 <p><a class="tl" href="${domov[lang]}">${escHtml(S.globus)}</a></p>
+<details class="navod-tajemstvi"><summary title="${escHtml(N.tajemstvi.tlacitko)}" aria-label="${escHtml(N.tajemstvi.tlacitko)}">${VEJCE_SVG}</summary>
+<div class="tajemstvi-obsah"><h2>${escHtml(N.tajemstvi.nadpis)}</h2><p>${escHtml(N.tajemstvi.uvod)}</p>
+<dl>${N.tajemstvi.polozky.map(x => `<dt>${escHtml(x[0])}</dt><dd>${escHtml(x[1])}</dd>`).join("")}</dl></div></details>
 </div>` }));
     vsechny.push([navodA[lang], navodA[jiny], lang]);
 

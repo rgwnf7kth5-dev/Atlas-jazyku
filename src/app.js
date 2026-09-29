@@ -3026,6 +3026,7 @@ function otevriKalendar(){
 $("tl-kalendar-pat").addEventListener("click", otevriKalendar);
 /* ---------- podrobný návod (přání uživatele 25. 9. 2026): okno z patičky a z nápovědy pod otazníkem ---------- */
 const navodOkno = $("navod");
+const VEJCE_SVG = '<svg class="vejce" viewBox="0 0 24 30" aria-hidden="true"><path d="M12 1.2C6.6 1.2 2.6 10.8 2.6 18.3a9.4 9.4 0 0 0 18.8 0C21.4 10.8 17.4 1.2 12 1.2Z" fill="#F6EBD3" stroke="currentColor" stroke-width="1.1"/><path d="M3.6 14.6l2.1 2 2.1-2 2.1 2 2.1-2 2.1 2 2.1-2 2.1 2 2.1-2" fill="none" stroke="#D23A2B" stroke-width="1.5" stroke-linejoin="round"/><g fill="#D99A12"><circle cx="8.4" cy="8.6" r="1.1"/><circle cx="15.6" cy="8.6" r="1.1"/><circle cx="12" cy="5.4" r=".9"/><circle cx="7.4" cy="22" r="1.1"/><circle cx="12" cy="24.2" r="1.1"/><circle cx="16.6" cy="22" r="1.1"/></g></svg>';
 function postavNavod(){
   const N = T.navod;
   navodOkno.textContent = "";
@@ -3041,6 +3042,15 @@ function postavNavod(){
     o.p.forEach(function(t){ sekce.appendChild(prvek("p", null, t)); });
     telo.appendChild(sekce);
   });
+  /* tajemství atlasu: malé vajíčko na konci návodu, klepnutím se rozbalí popis všech „velikonočních vajíček“ (uživatel 29. 9. 2026) */
+  const TJ = N.tajemstvi, det = prvek("details", "navod-tajemstvi"), sum = prvek("summary");
+  sum.title = TJ.tlacitko; sum.setAttribute("aria-label", TJ.tlacitko);
+  sum.innerHTML = VEJCE_SVG; det.appendChild(sum);
+  const ob = prvek("div", "tajemstvi-obsah"); ob.appendChild(prvek("h3", null, TJ.nadpis)); ob.appendChild(prvek("p", null, TJ.uvod));
+  const dl = prvek("dl"); TJ.polozky.forEach(function(x){ dl.appendChild(prvek("dt", null, x[0])); dl.appendChild(prvek("dd", null, x[1])); });
+  ob.appendChild(dl); det.appendChild(ob);
+  det.addEventListener("toggle", function(){ if (det.open) ob.scrollIntoView({block: "nearest", behavior: bezPohybu.matches ? "auto" : "smooth"}); });
+  telo.appendChild(det);
   navodOkno.appendChild(telo);
 }
 function otevriNavod(){

@@ -106,7 +106,20 @@ body.s-listkem{overflow:hidden}
 .nadpis-seznamu{font:600 2rem/1.2 var(--nadpis); margin:0}
 @media (max-width:760px){ .listek-pozadi{padding:0} .listek{min-height:100%; border-radius:0; padding:10px 16px 40px} }
 footer a{color:inherit}
-@media (max-width:760px){.jazyk{grid-template-columns:1fr; gap:18px} .hlava .domu{font-size:1.3rem} .hlava .domu svg{width:34px; height:34px}}
+@media (max-width:760px){.jazyk{grid-template-columns:1fr; gap:18px} .hlava .domu{font-size:1.3rem} .hlava .domu svg{width:34px; height:34px}}.navod-tajemstvi{margin:30px 0 6px; text-align:center}
+.navod-tajemstvi > summary{display:inline-flex; list-style:none; cursor:pointer; padding:6px; border-radius:50%; color:var(--text2); opacity:.55; transition:opacity .2s}
+.navod-tajemstvi > summary::-webkit-details-marker{display:none}
+.navod-tajemstvi > summary:hover, .navod-tajemstvi > summary:focus-visible, .navod-tajemstvi[open] > summary{opacity:1}
+.navod-tajemstvi > summary:focus-visible{outline:2px solid var(--akcent); outline-offset:2px}
+.navod-tajemstvi .vejce{display:block; width:22px; height:28px; transform-origin:50% 85%}
+.navod-tajemstvi > summary:hover .vejce{animation:vejce-kyv .6s ease-in-out}
+.navod-tajemstvi[open] .vejce{transform:rotate(-14deg)}
+@keyframes vejce-kyv{25%{transform:rotate(-12deg)} 55%{transform:rotate(10deg)} 80%{transform:rotate(-5deg)}}
+@media (prefers-reduced-motion:reduce){.navod-tajemstvi > summary:hover .vejce{animation:none}}
+.navod-tajemstvi .tajemstvi-obsah{text-align:left; margin-top:10px; padding-top:14px; border-top:1px dashed var(--linka)}
+.navod-tajemstvi dl{display:block; margin:0}
+.navod-tajemstvi dt{font-weight:600; color:var(--text); margin-top:12px}
+.navod-tajemstvi dd{margin:3px 0 0; color:var(--text2)}
 </style>
 </head>
 <body>
@@ -175,6 +188,9 @@ footer a{color:inherit}
 <p>In the top right you can switch the interface language (Česky) and the light or dark theme. Your choices are saved.</p>
 <p>Search also knows languages constructed for literature and film (such as Quenya or Klingon); they are shown separately from natural languages.</p>
 <p><a class="tl" href="/en/">Spinning globe</a></p>
+<details class="navod-tajemstvi"><summary title="Secrets of the atlas" aria-label="Secrets of the atlas"><svg class="vejce" viewBox="0 0 24 30" aria-hidden="true"><path d="M12 1.2C6.6 1.2 2.6 10.8 2.6 18.3a9.4 9.4 0 0 0 18.8 0C21.4 10.8 17.4 1.2 12 1.2Z" fill="#F6EBD3" stroke="currentColor" stroke-width="1.1"/><path d="M3.6 14.6l2.1 2 2.1-2 2.1 2 2.1-2 2.1 2 2.1-2 2.1 2 2.1-2" fill="none" stroke="#D23A2B" stroke-width="1.5" stroke-linejoin="round"/><g fill="#D99A12"><circle cx="8.4" cy="8.6" r="1.1"/><circle cx="15.6" cy="8.6" r="1.1"/><circle cx="12" cy="5.4" r=".9"/><circle cx="7.4" cy="22" r="1.1"/><circle cx="12" cy="24.2" r="1.1"/><circle cx="16.6" cy="22" r="1.1"/></g></svg></summary>
+<div class="tajemstvi-obsah"><h2>Secrets of the atlas</h2><p>The atlas hides a few small things that are not described anywhere else. The passwords can be typed anywhere on the page (outside text fields) or into the search box, which also works on a phone.</p>
+<dl><dt>Languages of the European Union</dt><dd>Type “eulang”. The globe flies over Europe, gold stars appear one by one at all 24 official languages of the EU, and a waving flag with the list of languages appears on the right. Link #eulang.</dd><dt>Gate to other worlds</dt><dd>Type “mellon”, Elvish for “friend” and the password of Durin's Door in The Lord of the Rings. The globe disappears and the worlds of invented languages float among the stars: Klingon, Quenya, Sindarin, Na'vi, Dothraki and High Valyrian. Search finds them too (for example “elf” or “klingon”), and the cards of Finnish and Welsh hold clues to the gate. Link #mellon.</dd><dt>Confusion of tongues</dt><dd>Type “babel”. The words on the screen briefly scatter into foreign scripts and a card about the Tower of Babel opens. Link #babel.</dd><dt>Do cetaceans talk?</dt><dd>Tap the same spot in the ocean three times quickly. A card opens about sperm whale codas, humpback songs, dolphin names and orca dialects – and why none of it has been shown to be a language. Link #cetaceans.</dd><dt>The upside-down globe</dt><dd>Tap The Language Atlas logo seven times quickly. The globe turns upside down, the languages fall off it and then return to their places. It does not run when reduced motion is set on the device.</dd></dl></div></details>
 </div>
 
 

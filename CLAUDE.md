@@ -313,7 +313,11 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a živý web workflow Diag
   Karta vymyšleného jazyka má hologramové záhlaví, štítek „Vymyšlený jazyk“, dílo, svět a autora; `vybrany`
   zůstává null (žádná tečka, rodina, vitalita ani srovnání). Stopy k Bráně jsou na kartách finštiny a velštiny
   (`stopy`). Zajímavosti musí být pravdivé jako u skutečných jazyků.
-- **Tři drobná tajemství** (28. 9. 2026, nápady uživatele; v návodu neprozrazovat, jako hesla „eulang“ a „mellon“):
+- **Tajemství v návodu** (29. 9. 2026, přání uživatele): úplně na konci návodu (okno `#navod` i statická `/navod/`, `/en/guide/`)
+  je malé malované vajíčko (`<details class="navod-tajemstvi">`, `VEJCE_SVG` v app.js i stranky.mjs); klepnutím se návod dole rozšíří
+  o popis všech tajemství (texty `navod.tajemstvi` v `src/ui/*.json`: eulang, mellon, babel, kytovci, převrácený glóbus). Běžný text
+  návodu je dál neprozrazuje. Nové tajemství doplnit i sem.
+- **Tři drobná tajemství** (28. 9. 2026, nápady uživatele; v běžném textu návodu neprozrazovat, jako hesla „eulang“ a „mellon“ – popis je jen pod vajíčkem):
   **tři rychlá klepnutí na oceán** (stejné místo, do 1,2 s; `klikNaOcean` v `klikDoMapy`) nebo `#velryby` / `#whales` otevřou
   kartu **„Mluví kytovci?“** (29. 9. 2026 rozšířeno z „Mluví velryby?“ o záložku **Delfíni** (4 záložky: Velryby, Delfíni, Je to jazyk?, Zdroje; šest se na kartu nevešlo) – podpisová hvízdnutí
   jako jména, Hermanovy pokusy s umělým jazykem, DolphinGemma – a kosatky – nářečí rodin, mlčení Biggových kosatek,

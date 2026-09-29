@@ -610,7 +610,34 @@
      "Vyhledávání zná také jazyky vytvořené pro literaturu a film (například quenijštinu nebo klingonštinu); zobrazí se odděleně od skutečných jazyků."
     ]
    }
-  ]
+  ],
+  "tajemstvi": {
+   "tlacitko": "Tajemství atlasu",
+   "nadpis": "Tajemství atlasu",
+   "uvod": "Atlas skrývá několik drobností, které nikde jinde nejsou popsané. Hesla lze napsat kdekoli na stránce (mimo textová pole), nebo do vyhledávání, což funguje i na telefonu.",
+   "polozky": [
+    [
+     "Jazyky Evropské unie",
+     "Napište „eulang“. Glóbus přeletí nad Evropu, u všech 24 úředních jazyků EU postupně naskočí zlaté hvězdičky a vpravo se objeví vlající vlajka se seznamem jazyků. Odkaz #eulang."
+    ],
+    [
+     "Brána do jiných světů",
+     "Napište „mellon“, elfsky „přítel“, heslo Durinových dveří z Pána prstenů. Glóbus zmizí a ve hvězdách se vznášejí světy vymyšlených jazyků: klingonštiny, quenijštiny, sindarštiny, na'vijštiny, dothračtiny a vznešené valyrijštiny. Najde je i vyhledávání (například „elf“ nebo „klingon“) a stopy k bráně jsou na kartách finštiny a velštiny. Odkaz #mellon."
+    ],
+    [
+     "Zmatení jazyků",
+     "Napište „babel“. Slova na obrazovce se na okamžik rozsypou do cizích písem a otevře se karta o Babylonské věži. Odkaz #babel."
+    ],
+    [
+     "Mluví kytovci?",
+     "Třikrát rychle klepněte na stejné místo v oceánu. Otevře se karta o kodách vorvaňů, písních keporkaků, jménech delfínů a nářečích kosatek – a o tom, proč to zatím není jazyk. Odkaz #kytovci."
+    ],
+    [
+     "Převrácený glóbus",
+     "Sedmkrát rychle klepněte na logo Atlas jazyků. Glóbus se převrátí, jazyky z něj spadnou a pak se vrátí na svá místa. Při omezení pohybu v nastavení zařízení se nespustí."
+    ]
+   ]
+  }
  },
  "navodOdkaz": "Podrobný návod",
  "navodNapoveda": "Podrobný návod – co všechno atlas umí",
