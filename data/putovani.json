@@ -2607,6 +2607,801 @@
     "Nečas, C. (1994): Nemůžeme zapomenout – Našťi bisteras. Nucená táborová koncentrace ve vyprávěních romských pamětníků. Olomouc: Univerzita Palackého.",
     "Institut Terezínské iniciativy: Protektorátní „cikánské“ tábory. holocaust.cz."
    ]
+  },
+  {
+   "id": "maorstina",
+   "atlas": "mi",
+   "adresa": {
+    "cs": "putovani-maorstina",
+    "en": "journey-maori"
+   },
+   "nazev": {
+    "cs": "Putování maorštiny",
+    "en": "The journey of Māori"
+   },
+   "uvod": {
+    "cs": "Z Tchaj-wanu přes Filipíny, Indonésii a ostrovy Melanésie až na nejvzdálenější ostrovy Tichého oceánu – největší putování lidstva po moři. Po cestě odbočka až na Madagaskar. Letopočty jsou přibližné, sporné výklady jsou přerušovaně.",
+    "en": "From Taiwan through the Philippines, Indonesia and the islands of Melanesia to the remotest islands of the Pacific – humanity's greatest migration by sea, with a detour as far as Madagascar. Dates are approximate; disputed interpretations are dashed."
+   },
+   "etapy": [
+    {
+     "id": "tchajwan",
+     "doba": {
+      "cs": "asi 4000–2500 př. n. l.",
+      "en": "c. 4000–2500 BCE"
+     },
+     "pohled": [
+      119,
+      22,
+      2.6
+     ],
+     "nazev": {
+      "cs": "Pravlast na Tchaj-wanu",
+      "en": "The homeland in Taiwan"
+     },
+     "text": {
+      "cs": "Maorština patří k austronéským jazykům, jedné z největších jazykových rodin světa: od Madagaskaru po Velikonoční ostrov má přes 1200 jazyků. Její pravlastí byl podle převládajícího výkladu Tchaj-wan, kam předkové Austronésanů přišli z pobřeží jižní Číny. Na Tchaj-wanu se dodnes mluví domorodými formosanskými jazyky, které tvoří devět z deseti hlavních větví rodiny; všechny ostatní austronéské jazyky, včetně maorštiny, patří do jediné desáté větve, malajsko-polynéské. Právě proto se pravlast klade sem (Blust).",
+      "en": "Māori belongs to the Austronesian languages, one of the largest language families in the world: from Madagascar to Easter Island it has over 1,200 languages. According to the prevailing view its homeland was Taiwan, which the ancestors of the Austronesians reached from the coast of southern China. The indigenous Formosan languages still spoken in Taiwan form nine of the family's ten primary branches; all other Austronesian languages, Māori included, belong to a single tenth branch, Malayo-Polynesian. That is why the homeland is placed here (Blust)."
+     },
+     "oblasti": [
+      {
+       "id": "formosa",
+       "barva": "an",
+       "po": "z-pevniny",
+       "kruhy": [
+        [
+         121,
+         23.7,
+         1.4
+        ]
+       ],
+       "popisek": {
+        "cs": "praaustronéština (Tchaj-wan)",
+        "en": "Proto-Austronesian (Taiwan)"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "z-pevniny",
+       "barva": "an",
+       "body": [
+        [
+         116.5,
+         25
+        ],
+        [
+         118.5,
+         24.6
+        ],
+        [
+         120.4,
+         24.1
+        ]
+       ],
+       "popisek": {
+        "cs": "z pobřeží jižní Číny",
+        "en": "from the coast of southern China"
+       }
+      }
+     ]
+    },
+    {
+     "id": "filipiny",
+     "doba": {
+      "cs": "asi 2200–1000 př. n. l.",
+      "en": "c. 2200–1000 BCE"
+     },
+     "pohled": [
+      126,
+      6,
+      1.7
+     ],
+     "nazev": {
+      "cs": "Filipíny a Indonésie",
+      "en": "The Philippines and Indonesia"
+     },
+     "text": {
+      "cs": "Kolem roku 2200 př. n. l. se Austronésané přeplavili z Tchaj-wanu přes Baši na Filipíny; archeologicky je provází červeně natíraná keramika. Odtud se malajsko-polynéské jazyky rozšířily na Borneo, Sulawesi, Jávu a Moluky. Kolem roku 1500 př. n. l. někdo z Filipín doplul i na Mariany – plavba přes více než 2000 km otevřeného moře, nejdelší své doby. Na Nové Guineji a v jejím okolí už ovšem tisíce let žili lidé mluvící papuánskými jazyky; Austronésané se tu usadili hlavně na pobřeží a ostrovech.",
+      "en": "Around 2200 BCE the Austronesians sailed from Taiwan across the Bashi Channel to the Philippines; archaeologically they are marked by red-slipped pottery. From there the Malayo-Polynesian languages spread to Borneo, Sulawesi, Java and the Moluccas. Around 1500 BCE people from the Philippines also reached the Mariana Islands – a voyage across more than 2,000 km of open sea, the longest of its time. New Guinea and its surroundings, however, had been home for tens of thousands of years to speakers of Papuan languages; there the Austronesians settled mainly on the coasts and islands."
+     },
+     "oblasti": [
+      {
+       "id": "filipiny",
+       "barva": "mp",
+       "po": "na-filipiny",
+       "kruhy": [
+        [
+         121.5,
+         16,
+         1.5
+        ],
+        [
+         123.5,
+         11,
+         1.8
+        ],
+        [
+         125,
+         7.5,
+         1.4
+        ]
+       ],
+       "popisek": {
+        "cs": "Filipíny",
+        "en": "the Philippines"
+       }
+      },
+      {
+       "id": "indonesie",
+       "barva": "mp",
+       "po": "na-jih",
+       "kruhy": [
+        [
+         114,
+         -1,
+         2.5
+        ],
+        [
+         120.5,
+         -2,
+         1.8
+        ],
+        [
+         110,
+         -7.3,
+         1.3
+        ],
+        [
+         127.8,
+         -3,
+         1.2
+        ]
+       ],
+       "popisek": {
+        "cs": "Borneo, Sulawesi, Jáva",
+        "en": "Borneo, Sulawesi, Java"
+       }
+      },
+      {
+       "id": "papua",
+       "barva": "pap",
+       "kruhy": [
+        [
+         141,
+         -5,
+         3.5
+        ],
+        [
+         137,
+         -3.5,
+         2.5
+        ]
+       ],
+       "popisek": {
+        "cs": "papuánské jazyky (už tu byly)",
+        "en": "Papuan languages (already there)"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "na-filipiny",
+       "barva": "mp",
+       "body": [
+        [
+         121,
+         22.5
+        ],
+        [
+         121.8,
+         20
+        ],
+        [
+         121.5,
+         17.5
+        ]
+       ],
+       "popisek": {
+        "cs": "přes Baši",
+        "en": "across the Bashi Channel"
+       }
+      },
+      {
+       "id": "na-jih",
+       "barva": "mp",
+       "body": [
+        [
+         124,
+         9
+        ],
+        [
+         121.5,
+         4.5
+        ],
+        [
+         119.5,
+         0.5
+        ]
+       ],
+       "popisek": {
+        "cs": "na jih",
+        "en": "south"
+       }
+      },
+      {
+       "id": "mariany",
+       "barva": "mp",
+       "body": [
+        [
+         125,
+         13
+        ],
+        [
+         135,
+         14.2
+        ],
+        [
+         145.2,
+         15
+        ]
+       ],
+       "popisek": {
+        "cs": "Mariany (asi 1500 př. n. l.)",
+        "en": "Marianas (c. 1500 BCE)"
+       }
+      }
+     ]
+    },
+    {
+     "id": "lapita",
+     "doba": {
+      "cs": "asi 1350–800 př. n. l.",
+      "en": "c. 1350–800 BCE"
+     },
+     "pohled": [
+      168,
+      -12,
+      1.6
+     ],
+     "nazev": {
+      "cs": "Kultura Lapita",
+      "en": "The Lapita culture"
+     },
+     "text": {
+      "cs": "Kolem roku 1350 př. n. l. se v Bismarckově souostroví u Nové Guineje objevila kultura Lapita s jemně zdobenou keramikou; spojuje se s praoceánštinou, předkem oceánských jazyků. Její nositelé se během několika staletí rozšířili na východ přes Šalamounovy ostrovy, Vanuatu a Novou Kaledonii až na Fidži (asi 900 př. n. l.) a do Tongy a na Samou (asi 850–800 př. n. l.). Jako první lidé vstoupili na ostrovy, kde nikdo nežil. Na Tonze a Samoi se pak vyvinula prapolynéština, společný předek maorštiny, havajštiny, tahitštiny, samojštiny i tonžštiny.",
+      "en": "Around 1350 BCE the Lapita culture, with its finely decorated pottery, appeared in the Bismarck Archipelago off New Guinea; it is associated with Proto-Oceanic, the ancestor of the Oceanic languages. Within a few centuries its bearers spread east across the Solomon Islands, Vanuatu and New Caledonia to Fiji (c. 900 BCE) and to Tonga and Samoa (c. 850–800 BCE). They were the first people to set foot on islands where no one had lived. In Tonga and Samoa Proto-Polynesian then developed, the common ancestor of Māori, Hawaiian, Tahitian, Samoan and Tongan."
+     },
+     "oblasti": [
+      {
+       "id": "bismarck",
+       "barva": "oc",
+       "po": "do-bismarcku",
+       "kruhy": [
+        [
+         150.5,
+         -4,
+         2
+        ],
+        [
+         152.5,
+         -5.5,
+         1.5
+        ]
+       ],
+       "popisek": {
+        "cs": "Lapita (Bismarckovo souostroví)",
+        "en": "Lapita (Bismarck Archipelago)"
+       }
+      },
+      {
+       "id": "tonga-samoa",
+       "barva": "pol",
+       "po": "na-vychod",
+       "kruhy": [
+        [
+         -175,
+         -20,
+         1.8
+        ],
+        [
+         -172,
+         -14,
+         1.5
+        ]
+       ],
+       "popisek": {
+        "cs": "prapolynéština (Tonga a Samoa)",
+        "en": "Proto-Polynesian (Tonga and Samoa)"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "do-bismarcku",
+       "barva": "oc",
+       "body": [
+        [
+         129,
+         -3
+        ],
+        [
+         137,
+         -1.5
+        ],
+        [
+         144,
+         -3
+        ],
+        [
+         149.5,
+         -3.8
+        ]
+       ]
+      },
+      {
+       "id": "na-vychod",
+       "barva": "oc",
+       "body": [
+        [
+         154,
+         -6
+        ],
+        [
+         160,
+         -9.5
+        ],
+        [
+         166.5,
+         -15.5
+        ],
+        [
+         177.5,
+         -18
+        ],
+        [
+         -175.5,
+         -19.5
+        ]
+       ],
+       "popisek": {
+        "cs": "Vanuatu, Fidži, Tonga",
+        "en": "Vanuatu, Fiji, Tonga"
+       }
+      }
+     ]
+    },
+    {
+     "id": "madagaskar",
+     "doba": {
+      "cs": "asi 5.–7. století n. l.",
+      "en": "c. 5th–7th century CE"
+     },
+     "pohled": [
+      85,
+      -10,
+      1.3
+     ],
+     "nazev": {
+      "cs": "Odbočka na Madagaskar",
+      "en": "A detour to Madagascar"
+     },
+     "text": {
+      "cs": "Zatímco se Polynésané ještě nevydali dál, jiní Austronésané doplují na opačnou stranu, přes Indický oceán. Malgaština, jazyk Madagaskaru, je nejblíže příbuzná jazykům skupiny barito z jihovýchodního Bornea, zejména maanjanštině (Dahl 1951). Madagaskar byl osídlen patrně v 1. tisíciletí n. l., podle mnoha badatelů kolem 5.–7. století; kudy vedla cesta – přímo přes oceán, nebo podél pobřeží – je sporné. Malgaština přijala i slova z malajštiny, jávštiny a z bantuských jazyků východní Afriky.",
+      "en": "While the Polynesians had not yet moved on, other Austronesians sailed in the opposite direction, across the Indian Ocean. Malagasy, the language of Madagascar, is most closely related to the Barito languages of south-eastern Borneo, especially Ma'anyan (Dahl 1951). Madagascar was probably settled in the 1st millennium CE, according to many scholars around the 5th–7th century; the route – directly across the ocean or along the coasts – is disputed. Malagasy also took words from Malay, Javanese and the Bantu languages of East Africa."
+     },
+     "oblasti": [
+      {
+       "id": "barito",
+       "barva": "mp",
+       "kruhy": [
+        [
+         115,
+         -2,
+         1.5
+        ]
+       ],
+       "popisek": {
+        "cs": "jazyky barito (Borneo)",
+        "en": "Barito languages (Borneo)"
+       }
+      },
+      {
+       "id": "madagaskar",
+       "barva": "mg",
+       "po": "pres-ocean",
+       "kruhy": [
+        [
+         47,
+         -19,
+         2.5
+        ],
+        [
+         46,
+         -23,
+         1.5
+        ],
+        [
+         49,
+         -15,
+         1.5
+        ]
+       ],
+       "popisek": {
+        "cs": "malgaština",
+        "en": "Malagasy"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "pres-ocean",
+       "barva": "mg",
+       "sporna": true,
+       "body": [
+        [
+         113,
+         -4
+        ],
+        [
+         104,
+         -7
+        ],
+        [
+         90,
+         -10
+        ],
+        [
+         72,
+         -12
+        ],
+        [
+         55,
+         -15
+        ],
+        [
+         49.5,
+         -17
+        ]
+       ],
+       "popisek": {
+        "cs": "přes Indický oceán (cesta sporná)",
+        "en": "across the Indian Ocean (route disputed)"
+       }
+      }
+     ]
+    },
+    {
+     "id": "vychodni",
+     "doba": {
+      "cs": "asi 800 př. n. l. – 1100 n. l.",
+      "en": "c. 800 BCE – 1100 CE"
+     },
+     "pohled": [
+      -158,
+      -16,
+      2
+     ],
+     "nazev": {
+      "cs": "Dlouhá pauza a skok na východ",
+      "en": "The long pause and the leap east"
+     },
+     "text": {
+      "cs": "Po příchodu na Tongu a Samou se stěhování na více než tisíc let zastavilo; archeologové tomu říkají dlouhá pauza. Teprve kolem roku 1000 n. l. se Polynésané vydali na východ, do Společenských ostrovů (Tahiti), na Cookovy ostrovy a na Markézy. Novější radiokarbonová data (Wilmshurst a kol. 2011) kladou první osídlení východní Polynésie až do 11. století, starší výklady o mnoho staletí dřív. Z východní Polynésie pak během dvou až tří století vyrazily výpravy na nejvzdálenější ostrovy.",
+      "en": "After reaching Tonga and Samoa the migration stopped for more than a thousand years; archaeologists call it the long pause. Only around 1000 CE did the Polynesians set out east, to the Society Islands (Tahiti), the Cook Islands and the Marquesas. More recent radiocarbon dates (Wilmshurst et al. 2011) put the first settlement of East Polynesia only in the 11th century, older accounts many centuries earlier. From East Polynesia, within two or three centuries, voyages set out to the remotest islands."
+     },
+     "oblasti": [
+      {
+       "id": "vychodni-polynesie",
+       "barva": "pol",
+       "po": "na-tahiti",
+       "kruhy": [
+        [
+         -149.5,
+         -17.5,
+         1.5
+        ],
+        [
+         -159.8,
+         -21.2,
+         1
+        ],
+        [
+         -140,
+         -9,
+         1.3
+        ]
+       ],
+       "popisek": {
+        "cs": "východní Polynésie (Tahiti, Markézy)",
+        "en": "East Polynesia (Tahiti, Marquesas)"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "na-tahiti",
+       "barva": "pol",
+       "body": [
+        [
+         -171,
+         -14.5
+        ],
+        [
+         -163,
+         -16
+        ],
+        [
+         -155,
+         -17
+        ],
+        [
+         -150.5,
+         -17.4
+        ]
+       ],
+       "popisek": {
+        "cs": "na východ (asi 1000 n. l.)",
+        "en": "east (c. 1000 CE)"
+       }
+      },
+      {
+       "id": "markezy",
+       "barva": "pol",
+       "body": [
+        [
+         -148.5,
+         -16.5
+        ],
+        [
+         -144,
+         -12.5
+        ],
+        [
+         -140.5,
+         -9.5
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "id": "okraje",
+     "doba": {
+      "cs": "asi 1150–1300",
+      "en": "c. 1150–1300"
+     },
+     "pohled": [
+      -150,
+      -12,
+      1
+     ],
+     "nazev": {
+      "cs": "Havaj, Rapa Nui a Aotearoa",
+      "en": "Hawaiʻi, Rapa Nui and Aotearoa"
+     },
+     "text": {
+      "cs": "Na velkých dvoutrupých kánoích a s navigací podle hvězd, vln a ptáků doplouvali Polynésané k ostrovům vzdáleným tisíce kilometrů. Kolem roku 1200 osídlili Havaj a Velikonoční ostrov (Rapa Nui), kolem let 1250–1300 jako poslední velkou pevninu na Zemi Nový Zéland, maorsky Aotearoa. Maorská tradice vypráví o příchodu kánoí z bájné vlasti Hawaiki. Polynésané se patrně dostali i k břehům Jižní Ameriky: odtud pochází batáty, maorsky kūmara, a genetika ukazuje na kontakt s původními Američany kolem roku 1200 (Ioannidis a kol. 2020); obojí je ale předmětem sporů.",
+      "en": "In large double-hulled canoes, navigating by the stars, the swells and the birds, the Polynesians reached islands thousands of kilometres away. Around 1200 they settled Hawaiʻi and Easter Island (Rapa Nui), and around 1250–1300 New Zealand, Aotearoa in Māori, the last large landmass on Earth to be settled. Māori tradition tells of canoes arriving from the legendary homeland of Hawaiki. The Polynesians probably also reached the shores of South America: the sweet potato, kūmara in Māori, comes from there, and genetics points to contact with Native Americans around 1200 (Ioannidis et al. 2020); both remain debated."
+     },
+     "oblasti": [
+      {
+       "id": "havaj",
+       "barva": "pol",
+       "po": "na-havaj",
+       "kruhy": [
+        [
+         -156.5,
+         20.3,
+         1.6
+        ]
+       ],
+       "popisek": {
+        "cs": "Havaj",
+        "en": "Hawaiʻi"
+       }
+      },
+      {
+       "id": "rapanui",
+       "barva": "pol",
+       "po": "na-rapanui",
+       "kruhy": [
+        [
+         -109.4,
+         -27.1,
+         0.8
+        ]
+       ],
+       "popisek": {
+        "cs": "Rapa Nui",
+        "en": "Rapa Nui"
+       }
+      },
+      {
+       "id": "aotearoa",
+       "barva": "mi",
+       "po": "na-aotearou",
+       "kruhy": [
+        [
+         175,
+         -38.5,
+         2.2
+        ],
+        [
+         171.5,
+         -43,
+         2
+        ]
+       ],
+       "popisek": {
+        "cs": "Aotearoa (Nový Zéland)",
+        "en": "Aotearoa (New Zealand)"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "na-havaj",
+       "barva": "pol",
+       "body": [
+        [
+         -146,
+         -12
+        ],
+        [
+         -150,
+         0
+        ],
+        [
+         -153,
+         10
+        ],
+        [
+         -155.5,
+         18.8
+        ]
+       ],
+       "popisek": {
+        "cs": "Havaj (asi 1200)",
+        "en": "Hawaiʻi (c. 1200)"
+       }
+      },
+      {
+       "id": "na-rapanui",
+       "barva": "pol",
+       "body": [
+        [
+         -138,
+         -12
+        ],
+        [
+         -128,
+         -19
+        ],
+        [
+         -118,
+         -24
+        ],
+        [
+         -110.4,
+         -26.8
+        ]
+       ],
+       "popisek": {
+        "cs": "Rapa Nui (asi 1200)",
+        "en": "Rapa Nui (c. 1200)"
+       }
+      },
+      {
+       "id": "na-aotearou",
+       "barva": "mi",
+       "body": [
+        [
+         -159.8,
+         -22
+        ],
+        [
+         -167,
+         -28
+        ],
+        [
+         -178,
+         -33.5
+        ],
+        [
+         176.5,
+         -36.5
+        ]
+       ],
+       "popisek": {
+        "cs": "Aotearoa (asi 1250–1300)",
+        "en": "Aotearoa (c. 1250–1300)"
+       }
+      },
+      {
+       "id": "amerika",
+       "barva": "pol",
+       "sporna": true,
+       "body": [
+        [
+         -108.5,
+         -26.5
+        ],
+        [
+         -95,
+         -20
+        ],
+        [
+         -82,
+         -12
+        ]
+       ],
+       "popisek": {
+        "cs": "k Jižní Americe? (sporné)",
+        "en": "to South America? (disputed)"
+       }
+      }
+     ]
+    },
+    {
+     "id": "dnes",
+     "doba": {
+      "cs": "19. století – dnes",
+      "en": "19th century – today"
+     },
+     "pohled": [
+      172,
+      -40,
+      3.2
+     ],
+     "nazev": {
+      "cs": "Maorština dnes",
+      "en": "Māori today"
+     },
+     "text": {
+      "cs": "Polynéské jazyky jsou si dodnes velmi blízké: „dva, tři“ se maorsky řekne rua, toru, havajsky lua, kolu, tahitsky piti, toru. Maorštinu začali latinkou zapisovat misionáři kolem roku 1815; první mluvnice vyšla roku 1820. Ve 20. století ji ve školách vytlačovala angličtina a počet dětí, které se ji učily doma, rychle klesal. Od 70. a 80. let se ji Maorové snaží oživit: roku 1982 vznikly první jazykové „mateřské školy“ kōhanga reo a roku 1987 se maorština stala úředním jazykem Nového Zélandu. Podle sčítání lidu jí mluví asi 200 tisíc lidí.",
+      "en": "The Polynesian languages are still very close to each other: 'two, three' is rua, toru in Māori, lua, kolu in Hawaiian and piti, toru in Tahitian. Missionaries began writing Māori in the Latin alphabet around 1815; the first grammar appeared in 1820. In the 20th century English pushed it out of schools, and the number of children learning it at home fell fast. Since the 1970s and 1980s Māori have worked to revive it: the first kōhanga reo 'language nests' opened in 1982, and in 1987 Māori became an official language of New Zealand. According to the census about 200,000 people speak it."
+     },
+     "oblasti": [
+      {
+       "id": "maorstina",
+       "barva": "mi",
+       "kruhy": [
+        [
+         175.5,
+         -38.5,
+         1.8
+        ],
+        [
+         173.5,
+         -35.5,
+         1
+        ],
+        [
+         172,
+         -42.5,
+         1.5
+        ]
+       ],
+       "popisek": {
+        "cs": "maorština",
+        "en": "Māori"
+       }
+      }
+     ],
+     "proudy": []
+    }
+   ],
+   "zdroje": [
+    "Blust, R. (2013): The Austronesian Languages. Revised ed. Canberra: Asia-Pacific Linguistics.",
+    "Bellwood, P. (2017): First Islanders: Prehistory and Human Migration in Island Southeast Asia. Wiley-Blackwell.",
+    "Kirch, P. V. (2017): On the Road of the Winds: An Archaeological History of the Pacific Islands. 2nd ed. University of California Press.",
+    "Wilmshurst, J. M. et al. (2011): High-precision radiocarbon dating shows recent and rapid initial human colonization of East Polynesia. PNAS 108(5): 1815–1820.",
+    "Ioannidis, A. G. et al. (2020): Native American gene flow into Polynesia predating Easter Island settlement. Nature 583: 572–577.",
+    "Adelaar, A. (2009): Towards an integrated theory about the Indonesian migrations to Madagascar. In: Peregrine, P. N. et al. (eds.): Ancient Human Migrations. University of Utah Press.",
+    "Dahl, O. C. (1951): Malgache et maanjan: une comparaison linguistique. Oslo: Egede-Instituttet.",
+    "Te Ara – the Encyclopedia of New Zealand: Te reo Māori – the Māori language."
+   ]
   }
  ]
 }
