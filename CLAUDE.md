@@ -426,7 +426,7 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a živý web workflow Diag
 - **Podrobný návod** (přání uživatele 25. 9. 2026): okno `#navod` (texty `navod` v `src/ui/*.json`: glóbus, karta,
   seznam, medailony, srovnání, klávesnice, další; tajemství jen naznačit, hesla neprozrazovat), odkaz v patičce „O atlasu…“
   a jako **čtvrtý řádek nápovědy pod otazníkem** – není to krok: nápověda zmizí po třech krocích jako dřív
-  (`li[data-krok]`). Návod má i oddíl o sbalené patičce (kalendář, O datech, Jazyky s pozdravem, kontakt, zdroje) – při změně patičky ho upravit. Odkaz `#navod` / `#guide`, statická stránka `/navod/` a `/en/guide/`. Při změně ovládání návod upravit.
+  (`li[data-krok]`). Návod má oddíl **Putování jazyků** (29. 9. 2026: věta o putování češtiny se předtím omylem vlepila do nadpisu oddílu Klávesnice – po úpravě návodu zkontrolovat nadpisy) a oddíl o sbalené patičce (kalendář, O datech, Jazyky s pozdravem, kontakt, zdroje) – při změně patičky ho upravit. Odkaz `#navod` / `#guide`, statická stránka `/navod/` a `/en/guide/`. Při změně ovládání návod upravit.
 - **Seznam z klávesnice**: do seznamu se vstoupí jedním Tabem (jedna dlaždice má `tabindex=0`), šipky
   vlevo/vpravo o dlaždici, nahoru/dolů o řádek (nejbližší dlaždice), Home/End, PageUp/PageDown o 10 řádků;
   další Tab seznam opustí. Při pohybu ke konci se dokreslí další dávka. Nadpisy skupin jsou `h2`.
