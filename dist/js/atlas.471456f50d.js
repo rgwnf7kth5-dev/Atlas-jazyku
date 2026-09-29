@@ -6789,6 +6789,7 @@ function vyber(id){
   const j = PODLE_ID[id]; if (!j) return;
   if (cekaNaDruhy) { dokonciSrovnani(jazykAtlasu(id)); return; }   // vybírá se druhý jazyk ke srovnání
   if (brana) zavriBranu(true);
+  if (putovani) ukonciPutovani(true);             // výběr jazyka ukončí putování, jinak by zůstalo kreslené pod kartou (uživatel 29. 9. 2026)
   if (srovnani) ukonciSrovnani();
   zeme = null;
   vybrany = {typ: "atlas", id: j.id, sk: j.sk, zeme: j.zeme, ob: j.ob, stred: j.stred,
@@ -6803,6 +6804,7 @@ function vyber(id){
 function vyberBod(i){
   if (cekaNaDruhy) { dokonciSrovnani(jazykBodu(i)); return; }
   if (brana) zavriBranu(true);
+  if (putovani) ukonciPutovani(true);
   if (B[i][5] && PODLE_ID[B[i][5]]) { vyber(B[i][5]); return; }
   if (srovnani) ukonciSrovnani();
   zeme = null;

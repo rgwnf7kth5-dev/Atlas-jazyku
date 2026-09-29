@@ -620,6 +620,7 @@ potvrzené státy (Švédsko, Nizozemsko, Polsko, Rumunsko, BiH, Ukrajina); šip
 Slova na cestách skupina **Putování jazyků** (`vlozPutovani` v `otevriSekci`) s dlaždicí pro každé putování – akvarel jazyka
 (`/malby/<atlas>.jpg`, v artefaktu `malbaObrazek`, bez oživení), název a `podtitul` (povinný, validace). Tlačítko na kartě jazyka
 (záložka Zajímavost) zůstává. Návrhy „tlačítko pod názvem jazyka na kartě“ a „Další putování na konci panelu“ uživatel nevybral.
+Výběr jazyka nebo tečky (`vyber`, `vyberBod`) putování ukončí (dřív zůstalo kreslené pod kartou, 29. 9. 2026).
 **Koncepty:** putování s `"koncept": true` build vynechá (jen `PUT_KONCEPTY=1 npm run build` pro náhled), takže neověřená
 putování mohou ležet v datech, zatímco se zveřejňují jiná. Po ověření příznak smazat. Etapa s `"predel": true`
 nekreslí šipky předchozí etapy (u jidiš Holokaust, aby přes zničené obce nevedly šipky emigrace).
