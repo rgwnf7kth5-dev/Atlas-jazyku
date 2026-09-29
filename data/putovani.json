@@ -12,6 +12,10 @@
     "cs": "Putování češtiny",
     "en": "The journey of Czech"
    },
+   "podtitul": {
+    "cs": "Od praindoevropštiny přes Slovany do Čech",
+    "en": "From Proto-Indo-European via the Slavs to Bohemia"
+   },
    "uvod": {
     "cs": "Od praindoevropštiny v černomořských stepích přes šíření slovanštiny až k češtině. Letopočty jsou přibližné, sporné výklady jsou přerušovaně.",
     "en": "From Proto-Indo-European in the Black Sea steppes, through the spread of Slavic, to Czech. Dates are approximate; disputed interpretations are dashed."
@@ -610,6 +614,10 @@
    "nazev": {
     "cs": "Putování kurdštiny",
     "en": "The journey of Kurdish"
+   },
+   "podtitul": {
+    "cs": "Ze stepí přes Íránskou náhorní plošinu do hor Zagros",
+    "en": "From the steppes across the Iranian plateau to the Zagros"
    },
    "uvod": {
     "cs": "Od praindoevropštiny přes indoíránštinu stepí a příchod íránských jazyků na Íránskou náhorní plošinu až k dnešní kurdštině v horách Zagros a Taurus. Letopočty jsou přibližné, sporné výklady jsou přerušovaně.",
@@ -1214,6 +1222,10 @@
    "nazev": {
     "cs": "Putování maďarštiny",
     "en": "The journey of Hungarian"
+   },
+   "podtitul": {
+    "cs": "Od Uralu přes černomořské stepi do Karpatské kotliny",
+    "en": "From the Urals via the Black Sea steppes to the Carpathian Basin"
    },
    "uvod": {
     "cs": "Od uralské pravlasti přes lesostep jižního Uralu a černomořské stepi až do Karpatské kotliny, kam Maďaři přišli kolem roku 895. Letopočty jsou přibližné, sporné výklady jsou přerušovaně.",
@@ -1912,6 +1924,10 @@
    "nazev": {
     "cs": "Putování romštiny",
     "en": "The journey of Romani"
+   },
+   "podtitul": {
+    "cs": "Z Indie přes Persii a Byzanc do celé Evropy",
+    "en": "From India via Persia and Byzantium across Europe"
    },
    "uvod": {
     "cs": "Z Indie přes Persii, Arménii a Byzantskou říši do celé Evropy – cesta, kterou v romštině dodnes prozrazují přejatá slova. Letopočty jsou přibližné, sporné výklady jsou přerušovaně.",
@@ -2618,6 +2634,10 @@
    "nazev": {
     "cs": "Putování maorštiny",
     "en": "The journey of Māori"
+   },
+   "podtitul": {
+    "cs": "Z Tchaj-wanu přes Tichý oceán až na Nový Zéland",
+    "en": "From Taiwan across the Pacific to New Zealand"
    },
    "uvod": {
     "cs": "Z Tchaj-wanu přes Filipíny, Indonésii a ostrovy Melanésie až na nejvzdálenější ostrovy Tichého oceánu – největší putování lidstva po moři. Po cestě odbočka až na Madagaskar. Letopočty jsou přibližné, sporné výklady jsou přerušovaně.",
@@ -3472,6 +3492,10 @@
     "cs": "Putování turečtiny",
     "en": "The journey of Turkish"
    },
+   "podtitul": {
+    "cs": "Od Altaje přes Střední Asii do Anatolie",
+    "en": "From the Altai via Central Asia to Anatolia"
+   },
    "uvod": {
     "cs": "Od Altaje a stepí Mongolska, kde vznikly orchonské nápisy, přes Oguze ve Střední Asii a Seldžuky až do Anatolie a na Balkán – cesta dlouhá přes 5000 km. Letopočty jsou přibližné, sporné výklady jsou přerušovaně.",
     "en": "From the Altai and the steppes of Mongolia, home of the Orkhon inscriptions, through the Oghuz of Central Asia and the Seljuks to Anatolia and the Balkans – a journey of over 5,000 km. Dates are approximate; disputed interpretations are dashed."
@@ -4246,6 +4270,10 @@
    "nazev": {
     "cs": "Putování angličtiny",
     "en": "The journey of English"
+   },
+   "podtitul": {
+    "cs": "Z pobřeží Severního moře do celého světa",
+    "en": "From the North Sea coast to the whole world"
    },
    "uvod": {
     "cs": "Od nářečí germánských kmenů na pobřeží Severního moře přes vikingy a Normany až k jazyku, kterým dnes mluví přes miliardu lidí. Letopočty jsou přibližné, sporné výklady jsou přerušovaně.",
@@ -5149,6 +5177,10 @@
     "cs": "Putování navažštiny",
     "en": "The journey of Navajo"
    },
+   "podtitul": {
+    "cs": "Z Aljašky a Yukonu na americký Jihozápad",
+    "en": "From Alaska and the Yukon to the American Southwest"
+   },
    "uvod": {
     "cs": "Ze subarktických lesů Aljašky a západní Kanady přes tisíce kilometrů na jih až do pouští Arizony a Nového Mexika – a přerušovaně i sporná stopa, která vede přes Beringovu úžinu na Sibiř. Letopočty jsou přibližné, sporné výklady jsou přerušovaně.",
     "en": "From the subarctic forests of Alaska and western Canada thousands of kilometres south to the deserts of Arizona and New Mexico – plus, dashed, a disputed trail leading across the Bering Strait to Siberia. Dates are approximate; disputed interpretations are dashed."
@@ -5667,6 +5699,10 @@
    "nazev": {
     "cs": "Putování jidiš",
     "en": "The journey of Yiddish"
+   },
+   "podtitul": {
+    "cs": "Z Porýní přes Polsko a Litvu za oceán",
+    "en": "From the Rhineland via Poland and Lithuania across the ocean"
    },
    "uvod": {
     "cs": "Z židovských obcí v Porýní na východ do Polska a Litvy, odtud přes oceán do Ameriky – a po holokaustu do rozptýlených komunit po celém světě. Letopočty jsou přibližné, sporné výklady jsou přerušovaně.",

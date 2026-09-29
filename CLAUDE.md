@@ -609,6 +609,10 @@ nejstarší dochované vydání 1622; sčítání 1897; 11–13 milionů před v
 „Německo, jeho spojenci a kolaboranti“; asi pět milionů obětí mluvilo jidiš (odhad); SSSR 1948–1949 a 12. 8. 1952 jmenovitě;
 Izrael prosazoval hebrejštinu a omezoval jidiš tisk a divadlo; dnes půl milionu až milion mluvčích; YIVO ve Vilně; uznání jen
 potvrzené státy (Švédsko, Nizozemsko, Polsko, Rumunsko, BiH, Ukrajina); šipky emigrace po moři, ne přes Nizozemsko a Anglii.
+**Vstup do putování** (29. 9. 2026, uživatel vybral z návrhů jen „skupinu v Příbězích“): v okně Příběhy jazyků je za skupinou
+Slova na cestách skupina **Putování jazyků** (`vlozPutovani` v `otevriSekci`) s dlaždicí pro každé putování – akvarel jazyka
+(`/malby/<atlas>.jpg`, v artefaktu `malbaObrazek`, bez oživení), název a `podtitul` (povinný, validace). Tlačítko na kartě jazyka
+(záložka Zajímavost) zůstává. Návrhy „tlačítko pod názvem jazyka na kartě“ a „Další putování na konci panelu“ uživatel nevybral.
 **Koncepty:** putování s `"koncept": true` build vynechá (jen `PUT_KONCEPTY=1 npm run build` pro náhled), takže neověřená
 putování mohou ležet v datech, zatímco se zveřejňují jiná. Po ověření příznak smazat. Etapa s `"predel": true`
 nekreslí šipky předchozí etapy (u jidiš Holokaust, aby přes zničené obce nevedly šipky emigrace).

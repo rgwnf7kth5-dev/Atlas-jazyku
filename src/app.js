@@ -3156,9 +3156,26 @@ function otevriSekci(sekce){
   /* přehledy (rodokmen písem, slovníček) mají vlastní podbarvený blok, pod ním ozdobný předěl a pak civilizace */
   const prehledy = prvek("div", "starovek-prehledy");
   const predel = prvek("div", "starovek-predel"); predel.setAttribute("aria-hidden", "true"); predel.appendChild(prvek("span"));
-  let skupina = null;
+  let skupina = null, putovaniVlozeno = false;
+  /* Putování jazyků (uživatel 29. 9. 2026 vybral „skupinu v Příbězích“): dlaždice za skupinou Slova na cestách */
+  const vlozPutovani = function(){
+    if (putovaniVlozeno || sekce !== "pribehy" || !PUTOVANI.length) return; putovaniVlozeno = true;
+    telo.appendChild(prvek("h3", "pribehy-skupina", (U.skupiny || {}).putovani || "Putování"));
+    PUTOVANI.forEach(function(pj){
+      const b = prvek("button", "starovek-tl"); b.type = "button";
+      const m = prvek("span", "starovek-malba"), i = prvek("img"); i.alt = ""; i.decoding = "async"; m.appendChild(i);
+      const ukaz = function(url){ if (url && i.isConnected) { i.onload = function(){ i.classList.add("ukazana"); }; i.src = url; } };
+      if (!ARTEFAKT && location.protocol !== "file:") { i.onload = function(){ i.classList.add("ukazana"); }; i.onerror = function(){ i.onerror = null; const c = malbaObrazek(pj.atlas); if (c) c.then(ukaz); }; i.src = "/malby/" + pj.atlas + ".jpg"; }
+      else { const c = malbaObrazek(pj.atlas); if (c) c.then(ukaz); }
+      b.appendChild(m);
+      const t = prvek("span"); t.appendChild(prvek("b", null, pj.nazev[T.lang])); t.appendChild(prvek("small", null, pj.podtitul[T.lang])); b.appendChild(t);
+      b.insertAdjacentHTML("beforeend", '<svg aria-hidden="true"><use href="#i-dal"/></svg>');
+      b.addEventListener("click", function(){ starovekOkno.close(); spustPutovani(pj.id); });
+      telo.appendChild(b);
+    });
+  };
   strankySekce(sekce).forEach(function(c){
-    if (sekce === "pribehy" && c.skupina !== skupina) { skupina = c.skupina; telo.appendChild(prvek("h3", "pribehy-skupina", (U.skupiny || {})[skupina] || skupina)); }
+    if (sekce === "pribehy" && c.skupina !== skupina) { if (skupina === "slova") vlozPutovani(); skupina = c.skupina; telo.appendChild(prvek("h3", "pribehy-skupina", (U.skupiny || {})[skupina] || skupina)); }
     const b = prvek("button", "starovek-tl"); b.type = "button";
     b.appendChild(malbaCivilizace(c));
     const t = prvek("span"); t.appendChild(prvek("b", null, c[T.lang].nazev)); t.appendChild(prvek("small", null, c[T.lang].podtitul)); b.appendChild(t);
@@ -3167,6 +3184,7 @@ function otevriSekci(sekce){
     if (c.prehled) prehledy.appendChild(b);
     else { if (prehledy.childNodes.length && !prehledy.parentNode) { telo.appendChild(prehledy); telo.appendChild(predel); } telo.appendChild(b); }
   });
+  vlozPutovani();                                // kdyby za Slovy na cestách žádná skupina nebyla
   starovekOkno.appendChild(telo);
   if (starovekOkno.showModal) { if (!starovekOkno.open) starovekOkno.showModal(); } else starovekOkno.setAttribute("open", "");
 }

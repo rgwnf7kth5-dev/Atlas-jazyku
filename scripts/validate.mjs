@@ -103,7 +103,7 @@ if (pd.uzly.length !== pd.nad.length) chyby.push("data/podrobnosti.json: strom p
   const souradnice = (b, kde) => { if (!Array.isArray(b) || !(b[0] >= -180 && b[0] <= 180 && b[1] >= -90 && b[1] <= 90)) chyby.push(`${co}: ${kde} má chybné souřadnice`); };
   for (const j of d.jazyky) {
     if (!atlas.has(j.atlas)) chyby.push(`${co}: ${j.id} – jazyk atlasu „${j.atlas}“ neexistuje`);
-    dvojj(j.adresa, j.id + " adresa"); dvojj(j.nazev, j.id + " název"); dvojj(j.uvod, j.id + " úvod");
+    dvojj(j.adresa, j.id + " adresa"); dvojj(j.nazev, j.id + " název"); dvojj(j.podtitul, j.id + " podtitul (dlaždice v Příbězích)"); dvojj(j.uvod, j.id + " úvod");
     if (!j.zdroje || !j.zdroje.length) chyby.push(`${co}: ${j.id} nemá zdroje`);
     for (const e of j.etapy) {
       const kde = j.id + "/" + e.id;
