@@ -1017,6 +1017,9 @@ function kresliBody2D(){
 
 /* ---------- velikost a přiblížení ---------- */
 const desktop = window.matchMedia("(min-width: 921px)");
+/* tablet a menší notebook (uživatel 29. 9. 2026): otevřená karta nahradí seznam vpravo, glóbus dostane celou levou část */
+const tabletKarta = window.matchMedia("(min-width: 921px) and (max-width: 1400px)");
+function kartaVpravo(){ return tabletKarta.matches && !$("karta").hidden; }
 function spoctiPosun(){
   const karta = $("karta");
   if (desktop.matches && karta.hidden && cesta) {        /* panel cesty slova vpravo: glóbus do volné plochy vlevo od něj */
@@ -1024,6 +1027,7 @@ function spoctiPosun(){
     posunCil = Math.max(-sirka * 0.22, Math.min(0, volno / 2 - sirka / 2)); return;
   }
   if (!desktop.matches || karta.hidden) { posunCil = 0; return; }
+  if (kartaVpravo()) { posunCil = Math.max(-sirka * 0.3, Math.min(0, (karta.offsetLeft - 10) / 2 - sirka / 2)); return; }
   const pravy = karta.offsetLeft + karta.offsetWidth + 10;
   posunCil = Math.max(0, Math.min(sirka * 0.2, pravy + polomerZaklad * 0.88 - sirka / 2));
 }
@@ -1589,7 +1593,8 @@ function posunDok(){
   const w = $("dok").offsetWidth || 400;
   let x = Math.max(w / 2 + 12, Math.min(sirka - w / 2 - 12, sirka / 2 + posun));
   const k = $("karta");                      /* medailony nesmí zajet pod kartu vlevo: řada se odsune doprava, jak to jde */
-  if (k && !k.hidden) x = Math.min(sirka - w / 2 - 12, Math.max(x, k.offsetLeft + k.offsetWidth + 10 + w / 2));
+  if (k && !k.hidden && kartaVpravo()) x = Math.max(w / 2 + 12, Math.min(x, k.offsetLeft - 10 - w / 2));
+  else if (k && !k.hidden) x = Math.min(sirka - w / 2 - 12, Math.max(x, k.offsetLeft + k.offsetWidth + 10 + w / 2));
   x = Math.round(x);
   if (x !== dokX) { dokX = x; scena.style.setProperty("--dok-x", x + "px"); }
 }
@@ -1951,6 +1956,12 @@ $("domu").addEventListener("click", function(e){
   domu();
 });
 $("k-zavrit").addEventListener("click", odznac);
+(function(){
+  const k = $("karta"), m = $("obsah");
+  const uprav = function(){ m.classList.toggle("karta-vpravo", kartaVpravo()); };
+  new MutationObserver(uprav).observe(k, {attributes: true, attributeFilter: ["hidden"]});
+  tabletKarta.addEventListener("change", uprav); uprav();
+})();
 $("tl-nahoda").addEventListener("click", function(){
   if ($("hledej").value) { $("hledej").value = ""; postavPolici(""); }
   if (rezimZnak === "jen") {                  // v atlasu je jen jeden znakový jazyk, beru z celého rejstříku
@@ -3429,11 +3440,12 @@ var strom = (function(){   // var: filtry a texty se na něj ptají dřív, než
   function posunKarty(){
     const k = $("karta");
     if (!desktop.matches || k.hidden) return 0;
+    if (kartaVpravo()) return -Math.min(sw * 0.3, (sw - k.offsetLeft + 10) / 2);
     return Math.max(0, Math.min(sw * 0.22, (k.offsetLeft + k.offsetWidth + 10) / 2));
   }
   /* měřítko, při kterém se celý vějíř vejde (2,2 × 1,15 jednotky), a střed volné plochy */
   function zaklad(){
-    const w = sw - 2 * cxPosun, h = sh;
+    const w = sw - 2 * Math.abs(cxPosun), h = sh;          // karta vlevo posouvá doprava, na tabletu vpravo doleva
     const sirka = m ? m.sirka : 2.3, vyska = m ? m.vyska : 1.1;
     if (desktop.matches) {                          // medailony (a vysvětlivka vitality) leží přes spodek plátna: strom se vejde nad ně
       const lg = $("vit-legenda"), dole = $("dok").offsetHeight + 22 + (lg && !lg.hidden ? lg.offsetHeight + 10 : 0), nahore = 84;
@@ -3766,7 +3778,8 @@ var strom = (function(){   // var: filtry a texty se na něj ptají dřív, než
     const k = $("karta"), lg = $("vit-legenda");
     let vlevo = 8, vpravo = w - 8, nahore = 62, dole = h - 8;
     if (desktop.matches) {
-      if (!k.hidden) vlevo = Math.max(vlevo, k.offsetLeft + k.offsetWidth + 12);
+      if (!k.hidden && kartaVpravo()) vpravo = Math.min(vpravo, k.offsetLeft - 12);    // tablet: karta vpravo místo seznamu
+      else if (!k.hidden) vlevo = Math.max(vlevo, k.offsetLeft + k.offsetWidth + 12);
       if (!panelP.hidden) vpravo = Math.min(vpravo, panelP.offsetLeft - 14);
       dole = h - $("dok").offsetHeight - 22 - (lg && !lg.hidden ? lg.offsetHeight + 10 : 0);
     }

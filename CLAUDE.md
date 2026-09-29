@@ -212,6 +212,13 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a živý web workflow Diag
   `/kalendar-jazyku/` a `/en/language-days/` odkazuje na stránky jazyků.
 - **Živější glóbus**: v noci světélka jemně třpytí (překresluje se jen WebGL, co 60 ms, usíná s okrasným
   pohybem), koule má odlesk slunce (ve dne výraznější).
+- **Tablet a menší notebook (921–1400 px): karta místo seznamu** (29. 9. 2026, uživatel ze snímků z tabletu: „pro glóbus
+  zůstane jenom kousek uprostřed“; vybral variantu A z náhledu): s otevřenou kartou dostane `#obsah` třídu `karta-vpravo`
+  (`tabletKarta`, `kartaVpravo()`, MutationObserver na `hidden` karty), seznam se schová, plocha glóbu se roztáhne a karta
+  sedí vpravo na místě seznamu (380 px). Glóbus se vycentruje do levé části (`spoctiPosun` záporný posun), medailony
+  (`posunDok`), vějíř Rodokmenu (`posunKarty` záporný, `zaklad()` s `Math.abs`) i kruhový přehled (`geometrie`) počítají
+  s kartou vpravo; nápověda, zoom, počítadlo, panely EU a cesty, hlavička Rodokmenu a panel přehledu se odsunou vlevo
+  od karty. Křížek kartu zavře a seznam se vrátí. Nad 1400 px zůstává karta vlevo přes glóbus, pod 921 px spodní list.
 - **Mobil (≤ 920 px)**: karta je spodní list ve třech velikostech: malá lišta jen s pozdravem a jménem (`.mala`),
   běžná (50 vh) a celá (`.plna`). Uživatel si stěžoval, že zakrývá půl obrazovky a nejde uklidit, proto: tažení
   za úchyt nebo barevné záhlaví (dotykové události, `touch-action:none` na záhlaví – ukazatelové události iOS při
