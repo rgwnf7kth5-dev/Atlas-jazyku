@@ -317,7 +317,10 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a živý web workflow Diag
   **tři rychlá klepnutí na oceán** (stejné místo, do 1,2 s; `klikNaOcean` v `klikDoMapy`) nebo `#velryby` / `#whales` otevřou
   kartu **„Mluví kytovci?“** (29. 9. 2026 rozšířeno z „Mluví velryby?“ o záložku **Delfíni** (4 záložky: Velryby, Delfíni, Je to jazyk?, Zdroje; šest se na kartu nevešlo) – podpisová hvízdnutí
   jako jména, Hermanovy pokusy s umělým jazykem, DolphinGemma – a kosatky – nářečí rodin, mlčení Biggových kosatek,
-  napodobování; odkaz `#kytovci` / `#cetaceans`, staré `#velryby` / `#whales` platí dál; plurál „vorvani“, ne „vorvaně“;
+  napodobování; odkaz `#kytovci` / `#cetaceans`, staré `#velryby` / `#whales` platí dál; plurál „vorvani“, ne „vorvaně“; při ověření opraveno: delfín kapverdský
+  (ne „kropenatý“), napodobení cizího hvízdnutí je vzácné (King a kol. 2013), na cizí hvízdnutí neodpovídají; DolphinGemma od Googlu,
+  bez publikovaných výsledků; Biggovy kosatky loví mořské savce; Musser: víc hvízdnutí a cvakání, ne převzatá hvízdnutí; kody
+  a volání prozrazují skupinu (Hersh 2022), nejisté je jen „význam jako slova“; nadpis „Není prokázáno“;
   kody vorvaňů, klan EC1 a koda 1+1+3, Sharma a kol. 2024; zpěv keporkaků, Payne a McVay 1971,
   Garland 2011, Arnon 2025, Voyager; proč to zatím není jazyk a proč velryby nemají tečku) s akvarelem `ocean` (ocasní ploutev,
   výtrysk) a tlačítkem „Přehrát rytmus kody“ (cvaknutí z WebAudio, výslovně schéma, ne nahrávka – nahrávky nemáme ověřené).
