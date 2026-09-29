@@ -558,6 +558,20 @@ teorie středního Íránu je MacKenzieho (Isfahán); přesídlení do Chorásá
 hranice ustálena mírem ze Zuhábu 1639; Cizîrî asi 1570–1640, Ehmedê Xanî, „klasická literatura v kurmándží“; v SSSR arménské
 písmo, latinka, od 1946 cyrilice; úřední jazyk celého Iráku od 2004 (potvrzeno 2005); 25–30 milionů mluvčích; zazaki a gorání
 neutrálně (mluvčí se většinou hlásí ke Kurdům, jazykovědci je řadí zvlášť).
+**Maďarština a romština** (29. 9. 2026, `#putovani-madarstina` / `#journey-hungarian`, `#putovani-romstina` / `#journey-romani`).
+Maďarština: prauralština (střední Volha a Kama, nebo Sibiř – západní, či u Minusinsku podle Grünthala a kol. 2022; obojí přerušovaně),
+ugrické jazyky a odchod Chantů a Mansů k Obu, pramaďarština na jižním Uralu (Magna Hungaria, íránští kočovníci), Levedie
+(poloha sporná) a Etelköz, příchod přes Verecke 895 (do Sedmihradska přerušovaně), maďarština dnes. Romština: indické kořeny
+(centrální indoárijské, sporný přesun na SZ), Persie a Arménie, Byzantská říše, do celé Evropy, nářečí dnes (balkánská, valašská,
+středorumská, severovýchodní, severozápadní), romština v Česku. Barvy `--put-ur, ug, hu, ko, in, rom, bal, vla, cen, svy, szap`
+(stejná tlumená paleta, jen nové klíče). Při ověření opraveno: Grünthal a kol. 2022 kladou pravlast na Sibiř (Minusinsk), datace
+2000 př. n. l. je Kalliova (2006), „střední“ (ne horní) Volha; Julián 1235–1236; Kabaři jako odštěpenci od Chazarů; Tihany =
+nejstarší slovní spoj, Mariin pláč asi 1280–1310; Sikulsko ne u Kluže (zvlášť „Sedmihradsko a Partium“); trasy nesmí přes Ladogu,
+Marmarské moře ani Kattegat. U romštiny: „centrální indoárijské“ (česky „středoindické“ = vývojové stadium), s češtinou příbuzná
+jako indoevropský jazyk, ne „přes hindštinu“; Mendizabal datuje počátek populace, ne odchod; lomavren je smíšený jazyk; listina
+1385 potvrzuje dar 40 rodin z Vodițy; Čechy 1399 nejistě, spolehlivě 1416; Zikmund 1417 římský král (ne císař); Španělsko 1425;
+Británie a Skandinávie od 1505; nejméně 4 miliony mluvčích; u Česka genocida Romů a Sintů (z asi 6 500 přes 5 000 obětí, téměř
+540 v Letech a Hodoníně, ostatní v Osvětimi), Hübschmannová zakladatelka romistiky (ne „prosazovala do škol“), Charta (část II).
 **Jak vznikla spisovná čeština** (`#spisovna-cestina` / `#standard-czech`, skupina „Jazyky v čase“, akvarel `tiskarna`; 27. 9. 2026):
 glosy a první věty, spřežky a diakritika, Blahoslav, Bible kralická, pobělohorské období („doba temna“ jen jako obrozenecký pojem),
 Dobrovský, Jungmann, Rukopisy, Gebauer, Pravidla 1902, Pražský lingvistický kroužek, spisovná × obecná čeština (diglosie jako sporná).
