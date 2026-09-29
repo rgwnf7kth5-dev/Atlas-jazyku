@@ -898,7 +898,7 @@
      "pohled": [
       48,
       35,
-      3.0
+      3
      ],
      "nazev": {
       "cs": "Předkové kurdštiny",
@@ -1111,7 +1111,7 @@
         ],
         [
          41.2,
-         37.0,
+         37,
          1.2
         ],
         [
@@ -1152,7 +1152,7 @@
         [
          45.7,
          36.7,
-         1.0
+         1
         ],
         [
          44.2,
@@ -1202,6 +1202,1339 @@
     "Paul, L. (2008): Kurdish language i. History of the Kurdish language. Encyclopaedia Iranica.",
     "Haig, G. – Öpengin, E. (2014): Introduction to special issue. Kurdish: A critical research overview. Kurdish Studies 2(2): 99–122.",
     "Encyclopaedia Iranica: Assyria i; Median language; Khorasan xvii. The Kurdish communities of Khorasan."
+   ]
+  },
+  {
+   "id": "madarstina",
+   "atlas": "hu",
+   "adresa": {
+    "cs": "putovani-madarstina",
+    "en": "journey-hungarian"
+   },
+   "nazev": {
+    "cs": "Putování maďarštiny",
+    "en": "The journey of Hungarian"
+   },
+   "uvod": {
+    "cs": "Od uralské pravlasti přes lesostep jižního Uralu a černomořské stepi až do Karpatské kotliny, kam Maďaři přišli kolem roku 895. Letopočty jsou přibližné, sporné výklady jsou přerušovaně.",
+    "en": "From the Uralic homeland through the forest-steppe of the southern Urals and the Black Sea steppes to the Carpathian Basin, which the Hungarians reached around 895. Dates are approximate; disputed interpretations are dashed."
+   },
+   "etapy": [
+    {
+     "id": "prauralstina",
+     "doba": {
+      "cs": "asi 4000–2000 př. n. l.",
+      "en": "c. 4000–2000 BCE"
+     },
+     "pohled": [
+      56,
+      57,
+      1.5
+     ],
+     "nazev": {
+      "cs": "Prauralština",
+      "en": "Proto-Uralic"
+     },
+     "text": {
+      "cs": "Maďarština není indoevropský jazyk jako většina jazyků kolem ní, ale uralský: je vzdáleně příbuzná finštině, estonštině, sámským jazykům a mnoha jazykům Povolží a Sibiře. Kde se prauralštinou mluvilo, je sporné. Dnes se pravlast nejčastěji hledá v povodí horní Volhy a Kamy západně od Uralu, starší výklady ji kladly za Ural do západní Sibiře. Ještě víc se liší datace: klasické práce uvádějí 4. tisíciletí př. n. l., novější spíše dobu kolem 2000 př. n. l. (Kallio, Grünthal a kol. 2022). Z pravlasti se uralské jazyky rozšířily na západ k Baltu a na sever k Severnímu ledovému oceánu.",
+      "en": "Unlike most of its neighbours, Hungarian is not Indo-European but Uralic: it is distantly related to Finnish, Estonian, the Sami languages and many languages of the Volga region and Siberia. Where Proto-Uralic was spoken is disputed. Today the homeland is most often placed in the upper Volga and Kama basins west of the Urals; older accounts put it beyond the Urals in western Siberia. The dating varies even more: classic works give the 4th millennium BCE, more recent ones rather around 2000 BCE (Kallio, Grünthal et al. 2022). From the homeland the Uralic languages spread west to the Baltic and north to the Arctic Ocean."
+     },
+     "oblasti": [
+      {
+       "id": "volha-kama",
+       "barva": "ur",
+       "kruhy": [
+        [
+         50,
+         57,
+         3.5
+        ],
+        [
+         55,
+         56.5,
+         3
+        ],
+        [
+         46,
+         56,
+         2.5
+        ]
+       ],
+       "popisek": {
+        "cs": "prauralština (Volha a Kama)",
+        "en": "Proto-Uralic (Volga and Kama)"
+       }
+      },
+      {
+       "id": "sibir",
+       "barva": "ur",
+       "sporna": true,
+       "kruhy": [
+        [
+         70,
+         58,
+         4
+        ]
+       ],
+       "popisek": {
+        "cs": "západní Sibiř (starší výklad)",
+        "en": "western Siberia (older view)"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "k-baltu",
+       "barva": "ur",
+       "body": [
+        [
+         45,
+         58
+        ],
+        [
+         38,
+         59.5
+        ],
+        [
+         31,
+         60.5
+        ],
+        [
+         26,
+         61
+        ]
+       ],
+       "popisek": {
+        "cs": "k Baltu (finština, estonština)",
+        "en": "to the Baltic (Finnish, Estonian)"
+       }
+      },
+      {
+       "id": "na-sever",
+       "barva": "ur",
+       "body": [
+        [
+         53,
+         59.5
+        ],
+        [
+         55,
+         63
+        ],
+        [
+         58,
+         66.5
+        ]
+       ],
+       "popisek": {
+        "cs": "na sever",
+        "en": "north"
+       }
+      }
+     ]
+    },
+    {
+     "id": "ugricke",
+     "doba": {
+      "cs": "asi 2000–1000 př. n. l.",
+      "en": "c. 2000–1000 BCE"
+     },
+     "pohled": [
+      62,
+      57,
+      2
+     ],
+     "nazev": {
+      "cs": "Ugrické jazyky",
+      "en": "The Ugric languages"
+     },
+     "text": {
+      "cs": "Nejbližšími příbuznými maďarštiny jsou chantyjština a mansijština, jimiž se mluví na řece Obu v západní Sibiři; spolu s maďarštinou tvoří ugrickou větev. Její předchůdce se patrně vyvíjel v lesostepi na východních svazích jižního Uralu a v přilehlé západní Sibiři. Z té doby pochází společná slovní zásoba spojená s chovem koní, například maďarské ló „kůň“. Jak těsná ugrická jednota byla, je sporné; někteří badatelé v ní vidí spíš skupinu sousedících nářečí než jeden jazyk. Předkové Chantů a Mansů později odešli na sever k Obu, předkové Maďarů zůstali na jihu.",
+      "en": "Hungarian's closest relatives are Khanty and Mansi, spoken on the river Ob in western Siberia; together with Hungarian they form the Ugric branch. Its predecessor probably developed in the forest-steppe on the eastern slopes of the southern Urals and in adjacent western Siberia. Shared vocabulary connected with horse-keeping dates from this time, for example Hungarian ló 'horse'. How close Ugric unity was is disputed; some scholars see it as a group of neighbouring dialects rather than a single language. The ancestors of the Khanty and Mansi later moved north to the Ob, while the ancestors of the Hungarians stayed in the south."
+     },
+     "oblasti": [
+      {
+       "id": "ugricka",
+       "barva": "ug",
+       "po": "za-ural",
+       "kruhy": [
+        [
+         62,
+         55.5,
+         3
+        ],
+        [
+         67,
+         56,
+         2.5
+        ]
+       ],
+       "popisek": {
+        "cs": "ugrické jazyky",
+        "en": "Ugric"
+       }
+      },
+      {
+       "id": "obugri",
+       "barva": "ug",
+       "po": "k-obu",
+       "kruhy": [
+        [
+         67,
+         62,
+         2.5
+        ],
+        [
+         72,
+         61,
+         2
+        ]
+       ],
+       "popisek": {
+        "cs": "Chanti a Mansové",
+        "en": "Khanty and Mansi"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "za-ural",
+       "barva": "ug",
+       "body": [
+        [
+         53,
+         56.5
+        ],
+        [
+         57,
+         56
+        ],
+        [
+         61,
+         55.5
+        ]
+       ],
+       "popisek": {
+        "cs": "za Ural",
+        "en": "across the Urals"
+       }
+      },
+      {
+       "id": "k-obu",
+       "barva": "ug",
+       "body": [
+        [
+         65,
+         57
+        ],
+        [
+         67,
+         59.5
+        ],
+        [
+         68.5,
+         61.5
+        ]
+       ],
+       "popisek": {
+        "cs": "k Obu",
+        "en": "to the Ob"
+       }
+      }
+     ]
+    },
+    {
+     "id": "pramadarstina",
+     "doba": {
+      "cs": "asi 1000 př. n. l. – 8. století n. l.",
+      "en": "c. 1000 BCE – 8th century CE"
+     },
+     "pohled": [
+      56,
+      53.5,
+      2.4
+     ],
+     "nazev": {
+      "cs": "Pramaďarština na jižním Uralu",
+      "en": "Proto-Hungarian in the southern Urals"
+     },
+     "text": {
+      "cs": "Po oddělení od ostatních ugrických jazyků žili předkové Maďarů jako pastevci v lesostepi a stepi jižního Uralu, na území dnešního Baškortostánu a v okolí dolní Kamy. Sousedili s íránskými kočovníky, od nichž převzali slova jako arany „zlato“ nebo tehén „kráva“, a později s turkickými národy, od nichž pochází například búza „pšenice“ a alma „jablko“. Vzpomínka na tuto pravlast přetrvala: dominikán Julián roku 1235 našel u Volhy lidi, kteří ještě mluvili maďarsky; latinské prameny tu oblast nazývají Magna Hungaria, Velké Uhry.",
+      "en": "After separating from the other Ugric languages, the ancestors of the Hungarians lived as herders in the forest-steppe and steppe of the southern Urals, in what is now Bashkortostan and around the lower Kama. Their neighbours were Iranian nomads, from whom they took words such as arany 'gold' and tehén 'cow', and later Turkic peoples, the source of, for example, búza 'wheat' and alma 'apple'. The memory of this homeland survived: in 1235 the Dominican friar Julian found people near the Volga who still spoke Hungarian; Latin sources call the region Magna Hungaria, Greater Hungary."
+     },
+     "oblasti": [
+      {
+       "id": "magna",
+       "barva": "hu",
+       "po": "na-jih",
+       "kruhy": [
+        [
+         56,
+         54.5,
+         2.6
+        ],
+        [
+         52,
+         55.5,
+         2
+        ]
+       ],
+       "popisek": {
+        "cs": "pramaďarština (Magna Hungaria)",
+        "en": "Proto-Hungarian (Magna Hungaria)"
+       }
+      },
+      {
+       "id": "iranci",
+       "barva": "ko",
+       "kruhy": [
+        [
+         57,
+         49.5,
+         3
+        ],
+        [
+         51,
+         49,
+         2.5
+        ]
+       ],
+       "popisek": {
+        "cs": "íránští kočovníci",
+        "en": "Iranian nomads"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "na-jih",
+       "barva": "hu",
+       "body": [
+        [
+         62,
+         56
+        ],
+        [
+         59.5,
+         55
+        ],
+        [
+         57,
+         54.5
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "id": "levedie",
+     "doba": {
+      "cs": "asi 8.–9. století",
+      "en": "c. 8th–9th century"
+     },
+     "pohled": [
+      42,
+      49.5,
+      2.4
+     ],
+     "nazev": {
+      "cs": "Levedie a Etelköz",
+      "en": "Levedia and Etelköz"
+     },
+     "text": {
+      "cs": "Někdy v 8. nebo 9. století odešla hlavní část předků Maďarů na západ do černomořských stepí, do sféry Chazarského kaganátu. Byzantský císař Konstantin VII. Porfyrogennetos v díle O správě říše (kolem roku 950) popisuje jejich sídla nejprve v Levedii a potom v Etelközu („mezi řekami“) mezi Dněprem a dolním Dunajem; kde přesně Levedie ležela, je sporné. Svaz sedmi kmenů, k němuž se přidali turkičtí Kabaři, odtud podnikal nájezdy; první zaznamenaný nájezd do Východofranské říše je z roku 862. Jméno Hungari, Uhři, patrně pochází z turkického onogur.",
+      "en": "At some point in the 8th or 9th century the main body of the Hungarians' ancestors moved west into the Black Sea steppes, within the sphere of the Khazar Khaganate. The Byzantine emperor Constantine VII Porphyrogenitus, in De administrando imperio (c. 950), describes their settlements first in Levedia and then in Etelköz ('between the rivers') between the Dnieper and the lower Danube; exactly where Levedia lay is disputed. The union of seven tribes, joined by the Turkic Kabars, launched raids from here; the first recorded raid into East Francia dates from 862. The name Hungari probably comes from Turkic onogur."
+     },
+     "oblasti": [
+      {
+       "id": "levedie",
+       "barva": "hu",
+       "sporna": true,
+       "po": "na-zapad",
+       "kruhy": [
+        [
+         40,
+         48.5,
+         2.5
+        ]
+       ],
+       "popisek": {
+        "cs": "Levedie (poloha sporná)",
+        "en": "Levedia (location disputed)"
+       }
+      },
+      {
+       "id": "etelkoz",
+       "barva": "hu",
+       "po": "do-etelkozu",
+       "kruhy": [
+        [
+         31,
+         47,
+         2.2
+        ],
+        [
+         34,
+         47.3,
+         1.8
+        ]
+       ],
+       "popisek": {
+        "cs": "Etelköz",
+        "en": "Etelköz"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "na-zapad",
+       "barva": "hu",
+       "body": [
+        [
+         55,
+         53.5
+        ],
+        [
+         50,
+         51.5
+        ],
+        [
+         45,
+         49.8
+        ],
+        [
+         41,
+         48.7
+        ]
+       ],
+       "popisek": {
+        "cs": "na západ",
+        "en": "west"
+       }
+      },
+      {
+       "id": "do-etelkozu",
+       "barva": "hu",
+       "body": [
+        [
+         39,
+         48.3
+        ],
+        [
+         36,
+         47.7
+        ],
+        [
+         32.5,
+         47.2
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "id": "prichod",
+     "doba": {
+      "cs": "asi 895–907",
+      "en": "c. 895–907"
+     },
+     "pohled": [
+      24,
+      47.3,
+      3.4
+     ],
+     "nazev": {
+      "cs": "Příchod do Karpatské kotliny",
+      "en": "Into the Carpathian Basin"
+     },
+     "text": {
+      "cs": "Kolem roku 895 napadli Etelköz Pečeněhové ve spojení s Bulhary a Maďaři pod vedením Árpáda přešli Karpaty – podle tradice průsmykem Verecke, část patrně i přes východokarpatské průsmyky do Sedmihradska. Maďarsky se tento příchod nazývá honfoglalás, „zaujetí vlasti“. V Karpatské kotlině Maďaři zastihli Slovany, zbytky Avarů a další obyvatelstvo. Roku 907 porazili bavorské vojsko u Brezalauspurcu (patrně u dnešní Bratislavy) a ovládli celou kotlinu; Velká Morava v té době zanikla.",
+      "en": "Around 895 the Pechenegs, allied with the Bulgarians, attacked Etelköz, and the Hungarians led by Árpád crossed the Carpathians – according to tradition through the Verecke Pass, some probably also through the eastern Carpathian passes into Transylvania. In Hungarian this arrival is called honfoglalás, 'the taking of the homeland'. In the Carpathian Basin the Hungarians found Slavs, remnants of the Avars and other peoples. In 907 they defeated a Bavarian army at Brezalauspurc (probably near present-day Bratislava) and took control of the whole basin; Great Moravia disappeared at about this time."
+     },
+     "oblasti": [
+      {
+       "id": "kotlina",
+       "barva": "hu",
+       "po": "verecke",
+       "kruhy": [
+        [
+         19.5,
+         47.2,
+         2.3
+        ],
+        [
+         21.5,
+         46.6,
+         1.8
+        ],
+        [
+         17.8,
+         47.6,
+         1.4
+        ]
+       ],
+       "popisek": {
+        "cs": "Karpatská kotlina",
+        "en": "Carpathian Basin"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "verecke",
+       "barva": "hu",
+       "body": [
+        [
+         30.5,
+         47.4
+        ],
+        [
+         26.5,
+         48.3
+        ],
+        [
+         23.3,
+         48.9
+        ],
+        [
+         21.5,
+         48.2
+        ],
+        [
+         20.3,
+         47.6
+        ]
+       ],
+       "popisek": {
+        "cs": "průsmyk Verecke",
+        "en": "Verecke Pass"
+       }
+      },
+      {
+       "id": "sedmihradsko",
+       "barva": "hu",
+       "sporna": true,
+       "body": [
+        [
+         29.5,
+         46.6
+        ],
+        [
+         26.8,
+         46.3
+        ],
+        [
+         24.3,
+         46.6
+        ]
+       ],
+       "popisek": {
+        "cs": "do Sedmihradska",
+        "en": "into Transylvania"
+       }
+      }
+     ]
+    },
+    {
+     "id": "dnes",
+     "doba": {
+      "cs": "11. století – dnes",
+      "en": "11th century – today"
+     },
+     "pohled": [
+      21.5,
+      46.8,
+      4
+     ],
+     "nazev": {
+      "cs": "Maďarština v Karpatské kotlině",
+      "en": "Hungarian in the Carpathian Basin"
+     },
+     "text": {
+      "cs": "Nejstarší maďarská slova v souvislém zápisu jsou v latinské zakládací listině opatství Tihany z roku 1055, prvním souvislým textem je Pohřební řeč (Halotti beszéd) z doby kolem let 1192–1195 a první básní Staromaďarský Mariin pláč z doby kolem roku 1300. Ve středověku maďarština převzala mnoho slov ze slovanských jazyků (asztal „stůl“, király „král“), z němčiny a z latiny. Úředním jazykem Uherska se místo latiny stala roku 1844; novou spisovnou slovní zásobu jí předtím dala jazyková obroda (nyelvújítás). Dnes maďarsky mluví asi 13 milionů lidí – kromě Maďarska v Rumunsku (hlavně Sedmihradsko a Sikulsko), na Slovensku, v srbské Vojvodině a na Ukrajině; zvláštní nářečí mají Čangóové v rumunské Moldávii. Od roku 2004 je maďarština úředním jazykem EU.",
+      "en": "The oldest Hungarian words written as a phrase are found in the Latin founding charter of Tihany Abbey from 1055; the first continuous text is the Funeral Sermon (Halotti beszéd) of c. 1192–1195, and the first poem the Old Hungarian Lament of Mary of c. 1300. In the Middle Ages Hungarian borrowed many words from the Slavic languages (asztal 'table', király 'king'), from German and from Latin. It replaced Latin as the official language of the Kingdom of Hungary in 1844; the language reform movement (nyelvújítás) had given it a new literary vocabulary before that. Today about 13 million people speak Hungarian – besides Hungary in Romania (mainly Transylvania and the Székely Land), Slovakia, Vojvodina in Serbia and Ukraine; the Csángós of Romanian Moldavia have their own dialects. Hungarian has been an official language of the EU since 2004."
+     },
+     "oblasti": [
+      {
+       "id": "madarsko",
+       "barva": "hu",
+       "kruhy": [
+        [
+         19.2,
+         47.2,
+         2
+        ],
+        [
+         17.5,
+         47.6,
+         1.2
+        ],
+        [
+         21.3,
+         47.3,
+         1.4
+        ],
+        [
+         18.5,
+         48.1,
+         0.9
+        ]
+       ],
+       "popisek": {
+        "cs": "maďarština",
+        "en": "Hungarian"
+       }
+      },
+      {
+       "id": "sikulove",
+       "barva": "hu",
+       "kruhy": [
+        [
+         25.4,
+         46.4,
+         1.1
+        ],
+        [
+         23.8,
+         46.8,
+         0.8
+        ]
+       ],
+       "popisek": {
+        "cs": "Sikulsko",
+        "en": "Székely Land"
+       }
+      },
+      {
+       "id": "vojvodina",
+       "barva": "hu",
+       "kruhy": [
+        [
+         19.8,
+         45.8,
+         0.8
+        ]
+       ],
+       "popisek": {
+        "cs": "Vojvodina",
+        "en": "Vojvodina"
+       }
+      },
+      {
+       "id": "cangove",
+       "barva": "hu",
+       "kruhy": [
+        [
+         26.9,
+         46.6,
+         0.5
+        ]
+       ],
+       "popisek": {
+        "cs": "Čangóové",
+        "en": "Csángós"
+       }
+      }
+     ],
+     "proudy": []
+    }
+   ],
+   "zdroje": [
+    "Abondolo, D. – Valijärvi, R.-L. (eds.) (2023): The Uralic Languages. 2nd ed. Routledge.",
+    "Grünthal, R. et al. (2022): Drastic demographic events triggered the Uralic spread. Diachronica 39(4): 490–524.",
+    "Kiss, J. – Pusztai, F. (eds.) (2003): Magyar nyelvtörténet. Budapest: Osiris.",
+    "Róna-Tas, A. (1999): Hungarians and Europe in the Early Middle Ages. Budapest: CEU Press.",
+    "Konstantin VII. Porfyrogennetos: De administrando imperio, kap. 38–40 (ed. Gy. Moravcsik – R. J. H. Jenkins, 1967).",
+    "Zimonyi, I. (2016): Muslim Sources on the Magyars in the Second Half of the 9th Century. Leiden: Brill."
+   ]
+  },
+  {
+   "id": "romstina",
+   "atlas": "rom",
+   "adresa": {
+    "cs": "putovani-romstina",
+    "en": "journey-romani"
+   },
+   "nazev": {
+    "cs": "Putování romštiny",
+    "en": "The journey of Romani"
+   },
+   "uvod": {
+    "cs": "Z Indie přes Persii, Arménii a Byzantskou říši do celé Evropy – cesta, kterou v romštině dodnes prozrazují přejatá slova. Letopočty jsou přibližné, sporné výklady jsou přerušovaně.",
+    "en": "From India through Persia, Armenia and the Byzantine Empire to the whole of Europe – a route still revealed by the loanwords in Romani. Dates are approximate; disputed interpretations are dashed."
+   },
+   "etapy": [
+    {
+     "id": "indie",
+     "doba": {
+      "cs": "do 1. tisíciletí n. l.",
+      "en": "until the 1st millennium CE"
+     },
+     "pohled": [
+      77,
+      27,
+      2.2
+     ],
+     "nazev": {
+      "cs": "Indické kořeny",
+      "en": "Indian roots"
+     },
+     "text": {
+      "cs": "Romština je indoárijský jazyk, příbuzný hindštině, pandžábštině nebo bengálštině – a přes ně vzdáleně i češtině. Hláskosloví a základní slovní zásoba ji spojují se středoindickými jazyky, některé rysy se severozápadními; předkové Romů podle všeho žili ve střední Indii a později na severozápadě. Indii opustili někdy v druhé polovině 1. tisíciletí n. l.; genetické studie odhadují asi před 1500 lety (Mendizabal a kol. 2012). Indického původu jsou slova jako pani „voda“, jakh „oko“ nebo čhavo „chlapec“. Vlastní jméno Rom patrně souvisí se staroindickým ḍoma, označením skupin hudebníků a řemeslníků.",
+      "en": "Romani is an Indo-Aryan language, related to Hindi, Punjabi and Bengali – and through them distantly to English. Its sound system and core vocabulary link it to the Central Indo-Aryan languages, some features to the North-western ones; the ancestors of the Roma apparently lived in central India and later in the north-west. They left India at some point in the second half of the 1st millennium CE; genetic studies estimate about 1,500 years ago (Mendizabal et al. 2012). Words such as pani 'water', jakh 'eye' and čhavo 'boy' are of Indian origin. The self-designation Rom is probably related to Old Indo-Aryan ḍoma, a name for groups of musicians and craftsmen."
+     },
+     "oblasti": [
+      {
+       "id": "stredni",
+       "barva": "in",
+       "kruhy": [
+        [
+         79,
+         25,
+         3
+        ],
+        [
+         76,
+         23.5,
+         2.2
+        ]
+       ],
+       "popisek": {
+        "cs": "střední Indie",
+        "en": "central India"
+       }
+      },
+      {
+       "id": "severozapad",
+       "barva": "in",
+       "po": "na-sz",
+       "kruhy": [
+        [
+         73.5,
+         30.5,
+         2.3
+        ]
+       ],
+       "popisek": {
+        "cs": "severozápad",
+        "en": "north-west"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "na-sz",
+       "barva": "rom",
+       "sporna": true,
+       "body": [
+        [
+         79,
+         26
+        ],
+        [
+         76.5,
+         28.3
+        ],
+        [
+         74.3,
+         30
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "id": "persie",
+     "doba": {
+      "cs": "asi 9.–11. století",
+      "en": "c. 9th–11th century"
+     },
+     "pohled": [
+      58,
+      35,
+      1.7
+     ],
+     "nazev": {
+      "cs": "Přes Persii a Arménii",
+      "en": "Through Persia and Armenia"
+     },
+     "text": {
+      "cs": "Cestou na západ prošli předkové Romů Persií a Arménií a v obou oblastech zřejmě pobyli delší dobu, protože si z nich odnesli desítky slov. Z perštiny má romština například baxt „štěstí“ a ambrol „hruška“, z arménštiny grast „kůň“ a bov „pec“. Příbuzné indické jazyky domárí na Blízkém východě a lomavren v Arménii patří k jiným, samostatným odchodům z Indie.",
+      "en": "On their way west the ancestors of the Roma passed through Persia and Armenia and apparently stayed in both for some time, since they took dozens of words from each. From Persian Romani has, for example, baxt 'luck' and ambrol 'pear', from Armenian grast 'horse' and bov 'oven'. The related Indic languages Domari in the Middle East and Lomavren in Armenia belong to other, separate departures from India."
+     },
+     "oblasti": [
+      {
+       "id": "persie",
+       "barva": "ir",
+       "po": "pres-persii",
+       "kruhy": [
+        [
+         53,
+         33.5,
+         3
+        ],
+        [
+         58,
+         33,
+         2.4
+        ]
+       ],
+       "popisek": {
+        "cs": "Persie",
+        "en": "Persia"
+       }
+      },
+      {
+       "id": "armenie",
+       "barva": "rom",
+       "po": "do-armenie",
+       "kruhy": [
+        [
+         44.5,
+         40,
+         1.8
+        ]
+       ],
+       "popisek": {
+        "cs": "Arménie",
+        "en": "Armenia"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "pres-persii",
+       "barva": "rom",
+       "body": [
+        [
+         72.5,
+         31
+        ],
+        [
+         66,
+         32.8
+        ],
+        [
+         59,
+         34
+        ],
+        [
+         52.5,
+         35.6
+        ]
+       ],
+       "popisek": {
+        "cs": "přes Persii",
+        "en": "through Persia"
+       }
+      },
+      {
+       "id": "do-armenie",
+       "barva": "rom",
+       "body": [
+        [
+         51.5,
+         36.2
+        ],
+        [
+         48,
+         38.3
+        ],
+        [
+         45.3,
+         39.7
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "id": "byzanc",
+     "doba": {
+      "cs": "asi 11.–14. století",
+      "en": "c. 11th–14th century"
+     },
+     "pohled": [
+      32,
+      40,
+      2.3
+     ],
+     "nazev": {
+      "cs": "V Byzantské říši",
+      "en": "In the Byzantine Empire"
+     },
+     "text": {
+      "cs": "Z Arménie přešli Romové do Byzantské říše, nejprve do Anatolie a pak na Balkán. Řečtina romštinu ovlivnila nejvíc ze všech jazyků na cestě: dala jí desítky slov (drom „cesta“, foros „město“, zumi „polévka“), číslovky efta „sedm“, oxto „osm“ a enja „devět“ i koncovky, jimiž se dodnes přizpůsobují přejatá slova. Byzantské zprávy o „Atsinganoi“ z 11. století se k Romům vztahují nejistě; spolehlivější jsou až zprávy ze 14. století, mimo jiné z Kréty (1323).",
+      "en": "From Armenia the Roma moved into the Byzantine Empire, first to Anatolia and then to the Balkans. Greek influenced Romani more than any other language on the way: it gave it dozens of words (drom 'road', foros 'town', zumi 'soup'), the numerals efta 'seven', oxto 'eight' and enja 'nine', and the endings still used to adapt loanwords. Byzantine reports of 'Atsinganoi' from the 11th century refer to the Roma only uncertainly; more reliable accounts date from the 14th century, among them from Crete (1323)."
+     },
+     "oblasti": [
+      {
+       "id": "byzanc",
+       "barva": "rom",
+       "po": "do-byzance",
+       "kruhy": [
+        [
+         27,
+         40,
+         2.2
+        ],
+        [
+         23,
+         39.5,
+         1.8
+        ],
+        [
+         31,
+         39.3,
+         1.8
+        ]
+       ],
+       "popisek": {
+        "cs": "Byzantská říše",
+        "en": "Byzantine Empire"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "do-byzance",
+       "barva": "rom",
+       "body": [
+        [
+         44,
+         40
+        ],
+        [
+         39,
+         39.5
+        ],
+        [
+         33.5,
+         39.6
+        ],
+        [
+         28.5,
+         40.6
+        ]
+       ],
+       "popisek": {
+        "cs": "do Anatolie a na Balkán",
+        "en": "to Anatolia and the Balkans"
+       }
+      }
+     ]
+    },
+    {
+     "id": "evropa",
+     "doba": {
+      "cs": "14.–16. století",
+      "en": "14th–16th century"
+     },
+     "pohled": [
+      12,
+      48,
+      1.8
+     ],
+     "nazev": {
+      "cs": "Do celé Evropy",
+      "en": "Across Europe"
+     },
+     "text": {
+      "cs": "Z Balkánu se Romové v 14. a 15. století rozšířili do celé Evropy. Ve Valašsku a Moldávii se dostali do otroctví: nejstarší listina z roku 1385 daruje klášteru Tismana čtyřicet romských rodin. Nejstarší, i když nejistá zmínka z Čech je z doby kolem roku 1399; roku 1417 procházely Německem skupiny s ochrannými listy císaře Zikmunda, kolem roku 1425 přišli Romové do Španělska a roku 1427 do Paříže. Na přelomu 15. a 16. století se objevili v Británii a ve Skandinávii. Ve Španělsku a v Anglii se romština později smísila s místními jazyky (caló, angloromština).",
+      "en": "From the Balkans the Roma spread across Europe in the 14th and 15th centuries. In Wallachia and Moldavia they were enslaved: the oldest charter, from 1385, grants forty Romani families to the Tismana monastery. The earliest, if uncertain, mention from Bohemia dates from around 1399; in 1417 groups with letters of protection from Emperor Sigismund travelled through Germany, around 1425 the Roma reached Spain and in 1427 Paris. Around 1500 they appeared in Britain and Scandinavia. In Spain and England Romani later mixed with the local languages (Caló, Angloromani)."
+     },
+     "oblasti": [
+      {
+       "id": "valassko",
+       "barva": "rom",
+       "kruhy": [
+        [
+         25,
+         44.6,
+         1.7
+        ],
+        [
+         27,
+         46.8,
+         1.1
+        ]
+       ],
+       "popisek": {
+        "cs": "otroctví ve Valašsku a Moldávii (1385–1856)",
+        "en": "slavery in Wallachia and Moldavia (1385–1856)"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "do-evropy",
+       "barva": "rom",
+       "body": [
+        [
+         23,
+         42.5
+        ],
+        [
+         20.5,
+         45.3
+        ],
+        [
+         18,
+         47.8
+        ],
+        [
+         14.5,
+         50
+        ],
+        [
+         9.5,
+         51.2
+        ],
+        [
+         5,
+         50.2
+        ],
+        [
+         2.6,
+         48.9
+        ]
+       ],
+       "popisek": {
+        "cs": "Čechy (asi 1399), Paříž (1427)",
+        "en": "Bohemia (c. 1399), Paris (1427)"
+       }
+      },
+      {
+       "id": "spanelsko",
+       "barva": "rom",
+       "body": [
+        [
+         3.5,
+         47.5
+        ],
+        [
+         1.5,
+         44
+        ],
+        [
+         -1,
+         41.8
+        ],
+        [
+         -3.7,
+         40.4
+        ]
+       ],
+       "popisek": {
+        "cs": "Španělsko (asi 1425)",
+        "en": "Spain (c. 1425)"
+       }
+      },
+      {
+       "id": "britanie",
+       "barva": "rom",
+       "body": [
+        [
+         2,
+         50.3
+        ],
+        [
+         -0.5,
+         52
+        ],
+        [
+         -2.5,
+         55
+        ]
+       ],
+       "popisek": {
+        "cs": "Británie",
+        "en": "Britain"
+       }
+      },
+      {
+       "id": "skandinavie",
+       "barva": "rom",
+       "body": [
+        [
+         10,
+         53
+        ],
+        [
+         12.5,
+         56.5
+        ],
+        [
+         16,
+         59.3
+        ]
+       ],
+       "popisek": {
+        "cs": "Skandinávie",
+        "en": "Scandinavia"
+       }
+      }
+     ]
+    },
+    {
+     "id": "nareci",
+     "doba": {
+      "cs": "dnes",
+      "en": "today"
+     },
+     "pohled": [
+      19,
+      50,
+      2.4
+     ],
+     "nazev": {
+      "cs": "Romská nářečí",
+      "en": "Romani dialects"
+     },
+     "text": {
+      "cs": "Romština nemá jednotnou spisovnou podobu a její nářečí se dělí podle toho, kde se Romové usadili. Balkánská nářečí zůstala v jihovýchodní Evropě. Valašská (olašská, např. kalderašská a lovárská) vznikla v rumunských knížectvích a po zrušení otroctví v letech 1855–1856 se jejich mluvčí rozšířili po celé Evropě i do Ameriky. Středorumskými nářečími se mluví na Slovensku, v Maďarsku, v Česku a v jižním Polsku, severovýchodními v Polsku, Pobaltí a Rusku a severozápadními u Sintů v Německu a u finských Kale. Romštinou mluví odhadem 3 až 4 miliony lidí, zdaleka ne všichni Romové.",
+      "en": "Romani has no single standard form, and its dialects are grouped according to where the Roma settled. The Balkan dialects remained in south-eastern Europe. The Vlax dialects (e.g. Kalderash and Lovari) arose in the Romanian principalities, and after the abolition of slavery in 1855–1856 their speakers spread across Europe and to the Americas. Central dialects are spoken in Slovakia, Hungary, Czechia and southern Poland, North-eastern ones in Poland, the Baltic states and Russia, and North-western ones by the Sinti in Germany and the Kale in Finland. An estimated 3 to 4 million people speak Romani – by no means all Roma."
+     },
+     "oblasti": [
+      {
+       "id": "balkanska",
+       "barva": "bal",
+       "kruhy": [
+        [
+         22,
+         42,
+         2
+        ],
+        [
+         26,
+         42.3,
+         1.4
+        ]
+       ],
+       "popisek": {
+        "cs": "balkánská",
+        "en": "Balkan"
+       }
+      },
+      {
+       "id": "valasska",
+       "barva": "vla",
+       "kruhy": [
+        [
+         25,
+         45.3,
+         1.8
+        ]
+       ],
+       "popisek": {
+        "cs": "valašská (olašská)",
+        "en": "Vlax"
+       }
+      },
+      {
+       "id": "stredni",
+       "barva": "cen",
+       "kruhy": [
+        [
+         20,
+         48.6,
+         1.6
+        ],
+        [
+         17,
+         49.2,
+         1
+        ],
+        [
+         19,
+         46.8,
+         1
+        ]
+       ],
+       "popisek": {
+        "cs": "středorumská",
+        "en": "Central"
+       }
+      },
+      {
+       "id": "severovychodni",
+       "barva": "svy",
+       "kruhy": [
+        [
+         21,
+         52.5,
+         1.8
+        ],
+        [
+         26,
+         55,
+         1.6
+        ],
+        [
+         34,
+         55.5,
+         2
+        ]
+       ],
+       "popisek": {
+        "cs": "severovýchodní",
+        "en": "North-eastern"
+       }
+      },
+      {
+       "id": "severozapadni",
+       "barva": "szap",
+       "kruhy": [
+        [
+         9,
+         51,
+         2
+        ],
+        [
+         26,
+         62,
+         1.5
+        ]
+       ],
+       "popisek": {
+        "cs": "severozápadní (Sintové, finští Kale)",
+        "en": "North-western (Sinti, Finnish Kale)"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "po-1856",
+       "barva": "vla",
+       "body": [
+        [
+         24,
+         45.8
+        ],
+        [
+         20.5,
+         47
+        ],
+        [
+         15,
+         48.5
+        ],
+        [
+         8,
+         48.5
+        ]
+       ],
+       "popisek": {
+        "cs": "po roce 1856",
+        "en": "after 1856"
+       }
+      }
+     ]
+    },
+    {
+     "id": "cesko",
+     "doba": {
+      "cs": "20. století – dnes",
+      "en": "20th century – today"
+     },
+     "pohled": [
+      17.5,
+      49.5,
+      5
+     ],
+     "nazev": {
+      "cs": "Romština v Česku",
+      "en": "Romani in Czechia"
+     },
+     "text": {
+      "cs": "Původní čeští a moravští Romové mluvili vlastními nářečími, českou a moravskou romštinou. Za 2. světové války byla většina z nich zavražděna – přes tábory v Letech u Písku a v Hodoníně u Kunštátu v Osvětimi – a jejich nářečí téměř zanikla. Většina dnešních Romů v Česku jsou potomci těch, kteří po roce 1945 přišli ze Slovenska, a mluví slovenskou (severní středorumskou) romštinou; menší skupinu tvoří olašští Romové. Romštinu v Česku zkoumala a do škol prosazovala Milena Hübschmannová (1933–2005); dnes je uznaným menšinovým jazykem.",
+      "en": "The original Czech and Moravian Roma spoke their own dialects, Bohemian and Moravian Romani. During the Second World War most of them were murdered – via the camps at Lety near Písek and Hodonín near Kunštát, in Auschwitz – and their dialects almost disappeared. Most Roma in Czechia today are descendants of those who came from Slovakia after 1945 and speak Slovak (Northern Central) Romani; a smaller group are Vlax Roma. Romani in Czechia was researched and promoted in schools by Milena Hübschmannová (1933–2005); today it is a recognised minority language."
+     },
+     "oblasti": [
+      {
+       "id": "slovensko",
+       "barva": "cen",
+       "kruhy": [
+        [
+         20.8,
+         48.9,
+         1.2
+        ],
+        [
+         19,
+         48.5,
+         0.8
+        ]
+       ],
+       "popisek": {
+        "cs": "slovenská romština",
+        "en": "Slovak Romani"
+       }
+      },
+      {
+       "id": "cesko",
+       "barva": "cen",
+       "po": "ze-slovenska",
+       "kruhy": [
+        [
+         14.4,
+         50.3,
+         0.8
+        ],
+        [
+         16.6,
+         49.2,
+         0.6
+        ],
+        [
+         18.2,
+         49.8,
+         0.6
+        ]
+       ],
+       "popisek": {
+        "cs": "romština v Česku",
+        "en": "Romani in Czechia"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "ze-slovenska",
+       "barva": "cen",
+       "body": [
+        [
+         20.5,
+         49
+        ],
+        [
+         18.5,
+         49.3
+        ],
+        [
+         16.6,
+         49.4
+        ],
+        [
+         14.7,
+         50.1
+        ]
+       ],
+       "popisek": {
+        "cs": "po roce 1945 ze Slovenska",
+        "en": "from Slovakia after 1945"
+       }
+      }
+     ]
+    }
+   ],
+   "zdroje": [
+    "Matras, Y. (2002): Romani: A Linguistic Introduction. Cambridge University Press.",
+    "Elšík, V. – Matras, Y. (2006): Markedness and Language Change: The Romani Sample. Berlin: Mouton de Gruyter.",
+    "Mendizabal, I. et al. (2012): Reconstructing the population history of European Romani from genome-wide data. Current Biology 22(24): 2342–2349.",
+    "Fraser, A. (1992): The Gypsies. Oxford: Blackwell.",
+    "Hübschmannová, M. – Šebková, H. – Žigová, A. (1991): Romsko-český a česko-romský kapesní slovník. Praha: SPN.",
+    "Nečas, C. (1999): Nemůžeme zapomenout – Našti bisteras. Olomouc: Univerzita Palackého."
    ]
   }
  ]
