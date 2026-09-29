@@ -5141,7 +5141,6 @@
   {
    "id": "navazstina",
    "atlas": "nv",
-   "koncept": true,
    "adresa": {
     "cs": "putovani-navazstina",
     "en": "journey-navajo"
@@ -5158,8 +5157,8 @@
     {
      "id": "jenisej",
      "doba": {
-      "cs": "před tisíci lety (sporné)",
-      "en": "thousands of years ago (disputed)"
+      "cs": "před mnoha tisíciletími (sporné)",
+      "en": "many millennia ago (disputed)"
      },
      "pohled": [
       -170,
@@ -5171,8 +5170,8 @@
       "en": "A trail to Siberia?"
      },
      "text": {
-      "cs": "Navažština patří k atabaským jazykům a ty spolu s eyačtinou a vzdáleněji s tlingitštinou tvoří rodinu na-dené. Roku 2008 navrhl Edward Vajda, že jazyky na-dené jsou příbuzné jenisejským jazykům ze střední Sibiře, z nichž dnes žije jen ketština. Dene-jenisejská hypotéza by byla první prokázanou příbuzností mezi jazyky Starého a Nového světa. Část jazykovědců ji přijala, jiní ji pokládají za neprokázanou; je proto přerušovaně. Předkové všech původních Američanů přišli z Asie přes Beringii už před více než 15 000 lety; mluvčí jazyků na-dené mohli přijít v některé z pozdějších vln.",
-      "en": "Navajo belongs to the Athabaskan languages, which together with Eyak and, more distantly, Tlingit form the Na-Dene family. In 2008 Edward Vajda proposed that the Na-Dene languages are related to the Yeniseian languages of central Siberia, of which only Ket survives today. The Dene–Yeniseian hypothesis would be the first demonstrated relationship between languages of the Old and New Worlds. Some linguists have accepted it, others consider it unproven; it is therefore dashed. The ancestors of all Native Americans came from Asia across Beringia more than 15,000 years ago; speakers of Na-Dene languages may have come in one of the later waves."
+      "cs": "Navažština patří k atabaským jazykům a ty spolu s eyačtinou a vzdáleněji s tlingitštinou tvoří rodinu na-dené. Roku 2008 navrhl Edward Vajda, že jazyky na-dené jsou příbuzné jenisejským jazykům ze střední Sibiře, z nichž dnes žije jen ketština. Kdyby se dene-jenisejská hypotéza potvrdila, šlo by o první doloženou příbuznost jazykové rodiny Starého světa s rodinou Nového světa (eskymácko-aleutské jazyky se mluví na obou březích Beringovy úžiny, jsou ale jedinou rodinou). Část jazykovědců ji přijala, jiní ji pokládají za neprokázanou; je proto přerušovaně. První lidé přišli do Ameriky z Asie přes Beringii už před více než 15 000 lety. Předkové mluvčích jazyků na-dené podle genetiky pocházejí převážně od nich, část ale přišla s pozdější vlnou z Asie.",
+      "en": "Navajo belongs to the Athabaskan languages, which together with Eyak and, more distantly, Tlingit form the Na-Dene family. In 2008 Edward Vajda proposed that the Na-Dene languages are related to the Yeniseian languages of central Siberia, of which only Ket survives today. If the Dene–Yeniseian hypothesis were confirmed, it would be the first demonstrated link between an Old World and a New World language family (the Eskimo–Aleut languages are spoken on both sides of the Bering Strait, but form a single family). Some linguists have accepted it, others consider it unproven; it is therefore dashed. The first people reached the Americas from Asia across Beringia more than 15,000 years ago. Genetically, the ancestors of Na-Dene speakers descend mostly from them, but partly from a later wave from Asia."
      },
      "oblasti": [
       {
@@ -5214,6 +5213,11 @@
          -128,
          60,
          3
+        ],
+        [
+         -134.5,
+         58.3,
+         1.2
         ]
        ],
        "popisek": {
@@ -5241,8 +5245,16 @@
          66
         ],
         [
-         -172,
-         65.5
+         -172.5,
+         66.2
+        ],
+        [
+         -169.7,
+         66.05
+        ],
+        [
+         -166.5,
+         65.4
         ],
         [
          -158,
@@ -5272,8 +5284,8 @@
       "en": "The northern Athabaskans"
      },
      "text": {
-      "cs": "Pravlast atabaských jazyků se hledá ve vnitrozemí Aljašky, v Yukonu a na severozápadě Kanady, v krajině jehličnatých lesů, řek a jezer. Dodnes se tu mluví desítkami atabaských jazyků, například gwičinštinou, koyukonštinou, dena'inštinou nebo čipevajštinou (dene sųłiné). Jejich mluvčí žili jako lovci a rybáři v malých pohyblivých skupinách. Příbuzná eyačtina na pobřeží jižní Aljašky vymřela roku 2008 se smrtí své poslední mluvčí Marie Smith Jonesové.",
-      "en": "The homeland of the Athabaskan languages is sought in interior Alaska, the Yukon and north-western Canada, a landscape of coniferous forests, rivers and lakes. Dozens of Athabaskan languages are still spoken here, for example Gwich'in, Koyukon, Dena'ina and Chipewyan (Dene Sųłiné). Their speakers lived as hunters and fishers in small, mobile groups. The related Eyak language on the coast of southern Alaska died out in 2008 with its last speaker, Marie Smith Jones."
+      "cs": "Pravlast atabaských jazyků se hledá ve vnitrozemí Aljašky, v Yukonu a na severozápadě Kanady, v krajině jehličnatých lesů, řek a jezer. Dodnes se tu mluví desítkami atabaských jazyků, mnohými už jen hrstkou starších lidí, například gwičinštinou, kojukonštinou, dena'inštinou nebo čipevajštinou (dene sųłiné). Jejich mluvčí žili jako lovci a rybáři v malých pohyblivých skupinách. Příbuzná eyačtina na pobřeží jižní Aljašky zanikla jako rodný jazyk roku 2008, kdy zemřela její poslední rodilá mluvčí Marie Smith Jonesová; dnes se ji někteří znovu učí.",
+      "en": "The homeland of the Athabaskan languages is sought in interior Alaska, the Yukon and north-western Canada, a landscape of coniferous forests, rivers and lakes. Dozens of Athabaskan languages are still spoken here, many by only a handful of elders, for example Gwich'in, Koyukon, Dena'ina and Chipewyan (Dene Sųłiné). Their speakers lived as hunters and fishers in small, mobile groups. The related Eyak language on the coast of southern Alaska ceased to be a native language in 2008 with the death of its last native speaker, Marie Smith Jones; some people are now learning it again."
      },
      "oblasti": [
       {
@@ -5308,7 +5320,7 @@
       },
       {
        "id": "eyak",
-       "barva": "jen",
+       "barva": "nd",
        "kruhy": [
         [
          -145.5,
@@ -5340,8 +5352,8 @@
       "en": "The long journey south"
      },
      "text": {
-      "cs": "Někdy mezi lety 1000 a 1500 se předkové Navahů a Apačů vydali ze severu na jih, přes 2500 km až na americký Jihozápad; jejich jazyky se proto nazývají jižní atabaské neboli apačské. Kudy šli, je sporné: buď po Velkých pláních východně od Skalistých hor, nebo mezi horami přes Velkou pánev, možná obojím směrem. Za podnět se někdy pokládá výbuch sopky Churchill na Aljašce kolem roku 850, který zasypal popelem velkou část Yukonu. Jiné atabaské skupiny odešly už dřív na pacifické pobřeží, do Oregonu a severní Kalifornie (hupa).",
-      "en": "At some point between 1000 and 1500 the ancestors of the Navajo and Apache set out from the north, travelling over 2,500 km to the American Southwest; their languages are therefore called Southern Athabaskan or Apachean. Their route is disputed: either along the Great Plains east of the Rocky Mountains or between the mountains through the Great Basin, perhaps both. The eruption of Mount Churchill in Alaska around 850, which covered much of the Yukon in ash, is sometimes seen as a trigger. Other Athabaskan groups had earlier moved to the Pacific coast, to Oregon and northern California (Hupa)."
+      "cs": "Někdy mezi lety 1000 a 1500 se předkové Navahů a Apačů vydali ze severu na jih, přes 2500 km až na americký Jihozápad; jejich jazyky se proto nazývají jižní atabaské neboli apačské. Kudy šli, je sporné: buď po Velkých pláních východně od Skalistých hor, nebo mezi horami přes Velkou pánev, možná obojím směrem. Výbuch sopky Churchill na Aljašce kolem roku 850, jehož popel pokryl jih Yukonu a část Severozápadních teritorií, se někdy pokládá za jeden z možných podnětů. Jiné atabaské skupiny odešly už dřív na pacifické pobřeží, do Oregonu a severní Kalifornie (hupa). Podle navažského podání se Diné vynořili do tohoto světa v zemi mezi čtyřmi posvátnými horami; příchod ze severu je výklad jazykovědy a archeologie.",
+      "en": "At some point between 1000 and 1500 the ancestors of the Navajo and Apache set out from the north, travelling over 2,500 km to the American Southwest; their languages are therefore called Southern Athabaskan or Apachean. Their route is disputed: either along the Great Plains east of the Rocky Mountains or between the mountains through the Great Basin, perhaps both. The eruption of Mount Churchill in Alaska around 850, whose ash blanketed the southern Yukon and part of the Northwest Territories, is sometimes seen as one possible trigger. Other Athabaskan groups had earlier moved to the Pacific coast, to Oregon and northern California (Hupa). According to Navajo tradition, the Diné emerged into this world in the land between the four sacred mountains; the journey from the north is the account of linguistics and archaeology."
      },
      "oblasti": [
       {
@@ -5463,8 +5475,12 @@
          51
         ],
         [
+         -121.6,
+         47.5
+        ],
+        [
          -122.8,
-         46
+         44.5
         ],
         [
          -123.3,
@@ -5474,7 +5490,8 @@
        "popisek": {
         "cs": "k Pacifiku",
         "en": "to the Pacific"
-       }
+       },
+       "sporna": true
       }
      ]
     },
@@ -5494,8 +5511,8 @@
       "en": "Dinétah and the Long Walk"
      },
      "text": {
-      "cs": "Navahové si říkají Diné, „lidé“, a svou původní zemi v severozápadním Novém Mexiku Dinétah. Od sousedních pueblanů převzali zemědělství a tkaní, od Španělů ovce a koně; ze španělštiny pocházejí i slova jako béeso „peníze“ (peso). Navažština a apačské jazyky jsou si dodnes blízké. Roku 1864 vyhnala americká armáda asi 8 až 9 tisíc Navahů na Dlouhý pochod přes 400 km do internačního tábora Bosque Redondo u Fort Sumneru, kde mnozí zemřeli. Smlouvou z roku 1868 se směli vrátit a byla jim vymezena rezervace.",
-      "en": "The Navajo call themselves Diné, 'the people', and their original homeland in north-western New Mexico Dinétah. From their Pueblo neighbours they adopted farming and weaving, from the Spanish sheep and horses; words such as béeso 'money' (peso) also come from Spanish. Navajo and the Apache languages are still close to each other. In 1864 the US Army forced some 8,000–9,000 Navajo on the Long Walk of over 400 km to the Bosque Redondo internment camp near Fort Sumner, where many died. The Treaty of 1868 allowed them to return and set out a reservation."
+      "cs": "Navahové si říkají Diné, „lidé“, a svou původní zemi v severozápadním Novém Mexiku Dinétah. Od sousedních pueblanů převzali zemědělství a tkaní, od Španělů ovce a koně; ze španělštiny pocházejí i slova jako béeso „peníze“ (peso). Navažština je dodnes blízká ostatním apačským jazykům. Po tažení, při němž americká armáda ničila jejich úrodu a stáda, bylo v letech 1864–1866 přes 9 tisíc Navahů nuceno k Dlouhému pochodu – ve více než padesáti skupinách, každá 400 až 700 km – do internačního tábora Bosque Redondo u Fort Sumneru, který Navahové nazývají Hwéeldi. Cestou i v táboře zemřely tisíce lidí. Smlouvou z roku 1868 se směli vrátit a byla jim vymezena rezervace na části jejich původní země.",
+      "en": "The Navajo call themselves Diné, 'the people', and their original homeland in north-western New Mexico Dinétah. From their Pueblo neighbours they adopted farming and weaving, from the Spanish sheep and horses; words such as béeso 'money' (peso) also come from Spanish. Navajo is still close to the other Apachean languages. After a campaign in which the US Army destroyed their crops and herds, over 9,000 Navajo were forced in 1864–1866 on the Long Walk – more than fifty separate marches of 400 to 700 km each – to the Bosque Redondo internment camp near Fort Sumner, which the Navajo call Hwéeldi. Thousands died on the way and in the camp. The Treaty of 1868 allowed them to return and set out a reservation on part of their homeland."
      },
      "oblasti": [
       {
@@ -5529,8 +5546,8 @@
         ]
        ],
        "popisek": {
-        "cs": "apačské jazyky",
-        "en": "Apache languages"
+        "cs": "ostatní apačské jazyky",
+        "en": "other Apachean languages"
        }
       },
       {
@@ -5545,8 +5562,8 @@
         ]
        ],
        "popisek": {
-        "cs": "Bosque Redondo (1864–1868)",
-        "en": "Bosque Redondo (1864–1868)"
+        "cs": "Bosque Redondo / Hwéeldi (1864–1868)",
+        "en": "Bosque Redondo / Hwéeldi (1864–1868)"
        }
       }
      ],
@@ -5573,8 +5590,8 @@
         ]
        ],
        "popisek": {
-        "cs": "Dlouhý pochod 1864",
-        "en": "the Long Walk, 1864"
+        "cs": "Dlouhý pochod 1864–1866",
+        "en": "the Long Walk, 1864–1866"
        }
       }
      ]
@@ -5582,8 +5599,8 @@
     {
      "id": "dnes",
      "doba": {
-      "cs": "20. století – dnes",
-      "en": "20th century – today"
+      "cs": "od konce 19. století – dnes",
+      "en": "late 19th century – today"
      },
      "pohled": [
       -109.5,
@@ -5595,8 +5612,8 @@
       "en": "Navajo today"
      },
      "text": {
-      "cs": "Ve 20. století posílaly úřady navažské děti do internátních škol, kde směly mluvit jen anglicky a za navažštinu byly trestány. Za 2. světové války přitom navažští „code talkers“ u námořní pěchoty předávali zprávy v šifře založené na navažštině, kterou Japonci nerozluštili; prvních 29 jich bylo naverbováno roku 1942. Navažštinou dnes mluví asi 170 tisíc lidí, víc než kterýmkoli jiným původním jazykem USA, mladších mluvčích však ubývá. Navažský národ podporuje výuku navažštiny ve školách.",
-      "en": "In the 20th century the authorities sent Navajo children to boarding schools where they were allowed to speak only English and were punished for speaking Navajo. Yet during the Second World War Navajo 'code talkers' in the Marine Corps passed messages in a code based on Navajo that the Japanese never broke; the first 29 were recruited in 1942. About 170,000 people speak Navajo today, more than any other Native language of the United States, but the number of younger speakers is falling. The Navajo Nation supports teaching Navajo in schools."
+      "cs": "Od konce 19. století posílaly americké úřady navažské děti do internátních škol, často daleko od domova, kde směly mluvit jen anglicky a za navažštinu byly trestány. Za 2. světové války přitom navažští „code talkers“ u námořní pěchoty předávali zprávy v kódu založeném na navažštině, který Japonci nerozluštili; prvních 29 jich bylo naverbováno roku 1942. Navažštinou dnes mluví asi 160 tisíc lidí, víc než kterýmkoli jiným původním jazykem USA, mladších mluvčích však ubývá. Navažský národ podporuje výuku navažštiny ve školách.",
+      "en": "From the late 19th century US authorities sent Navajo children to boarding schools, often far from home, where they were allowed to speak only English and were punished for speaking Navajo. Yet during the Second World War Navajo 'code talkers' in the Marine Corps passed messages in a code based on Navajo that the Japanese never broke; the first 29 were recruited in 1942. About 160,000 people speak Navajo today, more than any other Native language of the United States, but the number of younger speakers is falling. The Navajo Nation supports teaching Navajo in schools."
      },
      "oblasti": [
       {
@@ -5634,7 +5651,10 @@
     "Seymour, D. J. (ed.) (2012): From the Land of Ever Winter to the American Southwest: Athapaskan Migrations, Mobility, and Ethnogenesis. Salt Lake City: University of Utah Press.",
     "Young, R. W. – Morgan, W. (1987): The Navajo Language: A Grammar and Colloquial Dictionary. Revised ed. Albuquerque: University of New Mexico Press.",
     "Iverson, P. (2002): Diné: A History of the Navajos. Albuquerque: University of New Mexico Press.",
-    "Krauss, M. E. (1980): Alaska Native Languages: Past, Present, and Future. Alaska Native Language Center."
+    "Krauss, M. E. (1980): Alaska Native Languages: Past, Present, and Future. Fairbanks: Alaska Native Language Center (Research Papers 4).",
+    "Reich, D. et al. (2012): Reconstructing Native American population history. Nature 488: 370–374.",
+    "U.S. Census Bureau (2025): Detailed Languages Spoken at Home, American Community Survey 2017–2021.",
+    "New Mexico Historic Sites: Bosque Redondo Memorial at Fort Sumner Historic Site."
    ]
   },
   {

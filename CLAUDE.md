@@ -594,6 +594,13 @@ asi 1400–1700, tisk ustálil pravopis; Chaucer asi 1387–1400; Caxton ve West
 obyvatel, ztráta půdy, školy a úřední opatření), angličtinu přinesli osadníci (ne „se usadila“); varianty „svébytné“, ne
 „rovnocenné“; 370–400 milionů rodilých; První flotila do Austrálie přes Kapské Město kolem Tasmánie; šipky nesmí přes Nizozemsko,
 Skotsko, Karibské ostrovy, západní Afriku ani Madagaskar.
+**Navažština** (29. 9. 2026, `#putovani-navazstina` / `#journey-navajo`, 5 etap: sporná dene-jenisejská stopa na Sibiř, severní
+Atabaskové, cesta na jih (Velké pláně / Velká pánev přerušovaně), Dinétah a Dlouhý pochod, navažština dnes). Při ověření opraveno:
+hypotéza „kdyby se potvrdila“, první spojení rodiny Starého a Nového světa (eskymácko-aleutské jazyky jsou jedna rodina na obou
+březích); předkové na-dené převážně z prvního osídlení, část z pozdější vlny (Reich 2012); eyačtina zanikla jako rodný jazyk 2008,
+znovu se učí (barva na-dené, ne jenisejská); navažské podání o vynoření mezi čtyřmi posvátnými horami; Dlouhý pochod 1864–1866,
+přes 50 pochodů, přes 9 tisíc lidí, tisíce mrtvých cestou i v táboře, Hwéeldi, předcházelo ničení úrody a stád; internátní školy
+od konce 19. století (Fort Defiance 1883); „kód“, ne šifra; asi 160 tisíc mluvčích (ACS 2017–2021).
 **Koncepty:** putování s `"koncept": true` build vynechá (jen `PUT_KONCEPTY=1 npm run build` pro náhled), takže neověřená
 putování mohou ležet v datech, zatímco se zveřejňují jiná. Po ověření příznak smazat. Etapa s `"predel": true`
 nekreslí šipky předchozí etapy (u jidiš Holokaust, aby přes zničené obce nevedly šipky emigrace).
