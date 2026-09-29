@@ -543,6 +543,11 @@ bez `ctx.filter`), sporné oblasti bledé, sporné proudy přerušovaně; starš
 tečky jazyků jsou ztlumené. Vstupy: tlačítko „Putování češtiny“ na kartě jazyka (Zajímavost, `tlacitkoPutovani`), odkaz
 `#putovani-cestina` / `#journey-czech`. Barvy `--put-*` jsou tlumená paleta z kruhového přehledu (ie, bs, sl, zsl, jsl, vsl, cs).
 Zatím **čeština**; další na řadě **kurdština** (uživatel: „hodně stojím o kurdštinu“). Texty etap nezávisle ověřit jako vše ostatní.
+U češtiny při ověření opraveno: PIE „v 5. a 4. tisíciletí“, anatolská hypotéza „asi o dvě až tři tisíciletí dřív“, do Anatolie
+dvě sporné cesty (Balkán, nebo Kavkaz – Lazaridis 2025), proud do Íránu skutečně do Íránu a odbočka do Indie, praslovanština
+„asi 1000 př. n. l. – 500 n. l.“ s rozdílnými datacemi (Lamprecht vs. 1. tis. n. l.), etapa „Šíření slovanštiny“ (ne „stěhování“ –
+migrace je sporná, Curta 2001), Ilmeň až v 8. století (přerušovaně), proud do Čech přes Moravu, čeština asi 10 milionů rodilých
+mluvčích (ČSÚ 2021), s nerodilými kolem 11 milionů.
 **Jak vznikla spisovná čeština** (`#spisovna-cestina` / `#standard-czech`, skupina „Jazyky v čase“, akvarel `tiskarna`; 27. 9. 2026):
 glosy a první věty, spřežky a diakritika, Blahoslav, Bible kralická, pobělohorské období („doba temna“ jen jako obrozenecký pojem),
 Dobrovský, Jungmann, Rukopisy, Gebauer, Pravidla 1902, Pražský lingvistický kroužek, spisovná × obecná čeština (diglosie jako sporná).
