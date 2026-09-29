@@ -1312,3 +1312,26 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
   .mriz.karta-vpravo .hud{right:406px}
   .mriz.karta-vpravo :is(.prehled-panel,.strom-hlava){right:408px}
 }
+
+/* ---------- putování jazyka (29. 9. 2026) ---------- */
+:root{--put-ie:#5B82C8; --put-bs:#239A8C; --put-sl:#B8892A; --put-zsl:#CF6450; --put-jsl:#9B6CC4; --put-vsl:#2A7F4E; --put-cs:#E0503F}
+:root[data-theme="light"]{--put-ie:#3D6CC0; --put-bs:#16968A; --put-sl:#C98A1A; --put-zsl:#C8553D; --put-jsl:#9055B0; --put-vsl:#1F7448; --put-cs:#D23A2B}
+.putovani-panel{grid-template-columns:1fr auto; width:min(360px, 40%); max-height:calc(100% - 120px); overflow:auto; scrollbar-width:thin}
+.putovani-panel .zavrit{grid-column:2}
+.put-ovl{grid-column:1 / -1; display:flex; align-items:center; gap:10px}
+.put-hraj{flex:none; width:34px; height:34px; border-radius:50%; border:0; background:var(--akcent, #D23A2B); color:#fff; font-size:.8rem; cursor:pointer}
+.put-ovl input{flex:1; accent-color:var(--akcent, #D23A2B)}
+.put-etapy{grid-column:1 / -1; list-style:none; margin:0; padding:0 0 0 14px; border-left:2px solid var(--linka2); display:grid; gap:4px}
+.put-etapy li{position:relative}
+.put-etapy li::before{content:""; position:absolute; left:-20px; top:10px; width:10px; height:10px; border-radius:50%; background:var(--plocha2); box-shadow:0 0 0 2px var(--linka2)}
+.put-etapy li.minula::before{background:var(--text3)}
+.put-etapy li.aktivni::before{background:var(--akcent, #D23A2B); box-shadow:0 0 0 3px color-mix(in srgb, var(--akcent, #D23A2B) 30%, transparent)}
+.put-etapa{display:grid; gap:1px; width:100%; text-align:left; background:none; border:0; padding:4px 0; color:var(--text); font:inherit; cursor:pointer}
+.put-etapa strong{font-size:.9rem}
+.put-doba{font-size:.72rem; letter-spacing:.06em; text-transform:uppercase; color:var(--text2)}
+.put-text{display:none; margin:2px 0 8px; font-size:.82rem; line-height:1.5; color:var(--text2)}
+.put-etapy li.aktivni .put-text{display:block}
+.put-zdroje{grid-column:1 / -1; margin:4px 0 0; font-size:.72rem; line-height:1.45; color:var(--text3)}
+.scena.rezim-putovani #gl{opacity:.35; transition:opacity .6s}
+.scena.rezim-putovani #popisky{opacity:0}
+@media (max-width:920px){ .putovani-panel{position:relative; top:auto; left:auto; right:auto; width:auto; max-height:none; margin:4px 12px 12px} }

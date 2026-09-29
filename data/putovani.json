@@ -1,0 +1,86 @@
+{
+ "_pozn": "Putování jazyka na glóbu: etapy s oblastmi (kruhy [délka, šířka, poloměr ve stupních]) a proudy (body [délka, šířka]). Letopočty jsou přibližné, sporné výklady mají \"sporna\": true a kreslí se přerušovaně. Barvy jsou klíče --put-* v styles.css.",
+ "jazyky": [
+  {
+   "id": "cestina", "atlas": "cs",
+   "adresa": {"cs": "putovani-cestina", "en": "journey-czech"},
+   "nazev": {"cs": "Putování češtiny", "en": "The journey of Czech"},
+   "uvod": {"cs": "Od praindoevropštiny v černomořských stepích přes stěhování Slovanů až ke staročeštině. Letopočty jsou přibližné, sporné výklady jsou přerušovaně.", "en": "From Proto-Indo-European in the Black Sea steppes, through the Slavic migrations, to Old Czech. Dates are approximate; disputed interpretations are dashed."},
+   "etapy": [
+    {
+     "id": "pie", "doba": {"cs": "asi 4500–3000 př. n. l.", "en": "c. 4500–3000 BCE"}, "pohled": [38, 45, 1.7],
+     "nazev": {"cs": "Praindoevropština", "en": "Proto-Indo-European"},
+     "text": {"cs": "Společný předek češtiny i stovek dalších indoevropských jazyků od islandštiny po bengálštinu. Podle dnes převládajícího výkladu, stepní hypotézy, se jím mluvilo zhruba ve 4. tisíciletí př. n. l. v pontsko-kaspických stepích; opírá se o společnou slovní zásobu (kolo, náprava, vůz), archeologii a starou DNA. Menšinová anatolská hypotéza klade pravlast do Anatolie a o několik tisíciletí dřív.", "en": "The common ancestor of Czech and hundreds of other Indo-European languages, from Icelandic to Bengali. According to the now prevailing steppe hypothesis it was spoken roughly in the 4th millennium BCE in the Pontic–Caspian steppes; the view rests on shared vocabulary (wheel, axle, wagon), archaeology and ancient DNA. The minority Anatolian hypothesis places the homeland in Anatolia several millennia earlier."},
+     "oblasti": [
+      {"id": "stepi", "barva": "ie", "kruhy": [[40, 48, 4.5], [35, 47.5, 3.5], [46, 47, 3.5]], "popisek": {"cs": "praindoevropština", "en": "Proto-Indo-European"}},
+      {"id": "anatolie", "barva": "ie", "sporna": true, "kruhy": [[33, 39, 3.5]], "popisek": {"cs": "anatolská hypotéza (menšinová)", "en": "Anatolian hypothesis (minority view)"}}
+     ],
+     "proudy": []
+    },
+    {
+     "id": "rozchod", "doba": {"cs": "asi 3000–1000 př. n. l.", "en": "c. 3000–1000 BCE"}, "pohled": [40, 45, 1.25],
+     "nazev": {"cs": "Indoevropané se rozcházejí", "en": "The Indo-Europeans spread out"},
+     "text": {"cs": "Jazyk se šířil se stepními pastevci na západ do střední Evropy (kultura se šňůrovou keramikou, asi od 2900 př. n. l.) a na jihovýchod do Íránu a Indie. Anatolské jazyky, mezi nimi chetitština, se do Anatolie dostaly cestou, o které se vedou spory. Ve východní Evropě se z indoevropštiny postupně vyčlenila baltoslovanská skupina, společný předek slovanských a baltských jazyků.", "en": "The language spread with steppe herders west into central Europe (the Corded Ware culture, from about 2900 BCE) and south-east into Iran and India. The Anatolian languages, among them Hittite, reached Anatolia by a route that is still debated. In eastern Europe a Balto-Slavic group gradually emerged, the common ancestor of the Slavic and Baltic languages."},
+     "oblasti": [
+      {"id": "baltoslov", "barva": "bs", "po": "sever", "kruhy": [[27, 54, 3.5], [31, 53, 3]], "popisek": {"cs": "baltoslovanština", "en": "Balto-Slavic"}}
+     ],
+     "proudy": [
+      {"id": "zapad", "barva": "ie", "body": [[38, 48], [30, 50], [22, 51], [14, 51]], "popisek": {"cs": "do střední Evropy", "en": "into central Europe"}},
+      {"id": "sever", "barva": "bs", "body": [[37, 49], [33, 51], [29, 53.5]]},
+      {"id": "vychod", "barva": "ie", "body": [[48, 47], [58, 44], [64, 37], [71, 31]], "popisek": {"cs": "do Íránu a Indie", "en": "into Iran and India"}},
+      {"id": "anat", "barva": "ie", "sporna": true, "body": [[34, 46], [29, 42.5], [32, 39.5]], "popisek": {"cs": "do Anatolie (cesta sporná)", "en": "into Anatolia (route debated)"}}
+     ]
+    },
+    {
+     "id": "praslovanstina", "doba": {"cs": "asi 1000 př. n. l. – 400 n. l.", "en": "c. 1000 BCE – 400 CE"}, "pohled": [27, 51, 2.3],
+     "nazev": {"cs": "Praslovanština", "en": "Proto-Slavic"},
+     "text": {"cs": "Baltské a slovanské jazyky mají tolik společného, že je většina jazykovědců odvozuje od společné baltoslovanštiny. Praslovanština, poslední společný předek všech slovanských jazyků, se podle většiny badatelů zformovala někde mezi horní Vislou a středním Dněprem, asi v 1. polovině 1. tisíciletí n. l.; přesné místo i doba jsou sporné.", "en": "The Baltic and Slavic languages share so much that most linguists derive them from a common Balto-Slavic. Proto-Slavic, the last common ancestor of all Slavic languages, took shape according to most scholars somewhere between the upper Vistula and the middle Dnieper, roughly in the first half of the 1st millennium CE; the exact place and time are disputed."},
+     "oblasti": [
+      {"id": "pravlast", "barva": "sl", "sporna": true, "kruhy": [[27, 51, 3], [23.5, 50.8, 2.3], [30.5, 50.2, 2.3]], "popisek": {"cs": "pravlast Slovanů (sporná)", "en": "Slavic homeland (disputed)"}}
+     ],
+     "proudy": []
+    },
+    {
+     "id": "stehovani", "doba": {"cs": "5.–7. století", "en": "5th–7th century"}, "pohled": [24, 49, 1.9],
+     "nazev": {"cs": "Stěhování Slovanů", "en": "The Slavic expansion"},
+     "text": {"cs": "V 5. až 7. století se slovanština rozšířila na obrovské území: na západ do povodí Labe, do Čech a na Moravu (v Čechách zhruba od 6. století), přes Dunaj na Balkán až na Peloponés a na severovýchod k Ilmeňskému jezeru. Zda šlo hlavně o stěhování lidí, nebo i o přijetí jazyka jinými obyvateli, je předmětem sporů.", "en": "In the 5th to 7th centuries Slavic spread over a vast area: west to the Elbe basin, Bohemia and Moravia (in Bohemia from roughly the 6th century), across the Danube into the Balkans as far as the Peloponnese, and north-east to Lake Ilmen. Whether this was mainly a migration of people or also the adoption of the language by others is debated."},
+     "oblasti": [],
+     "proudy": [
+      {"id": "cechy", "barva": "sl", "body": [[25, 50.5], [20, 50.2], [15, 50]], "popisek": {"cs": "do Čech a na Moravu", "en": "into Bohemia and Moravia"}},
+      {"id": "labe", "barva": "sl", "body": [[24.5, 52], [19, 53], [13, 53]]},
+      {"id": "balkan", "barva": "sl", "body": [[28, 48.5], [26, 45.5], [22.5, 44], [21, 41.5]], "popisek": {"cs": "na Balkán", "en": "into the Balkans"}},
+      {"id": "recko", "barva": "sl", "sporna": true, "body": [[21, 41.5], [22, 37.8]]},
+      {"id": "ilmen", "barva": "sl", "body": [[30.5, 52.5], [32, 55.5], [31.5, 58.2]], "popisek": {"cs": "k Ilmeňskému jezeru", "en": "to Lake Ilmen"}}
+     ]
+    },
+    {
+     "id": "vetve", "doba": {"cs": "7.–10. století", "en": "7th–10th century"}, "pohled": [24, 49, 1.7],
+     "nazev": {"cs": "Tři větve", "en": "Three branches"},
+     "text": {"cs": "Praslovanština se postupně rozpadla na západní, jižní a východní slovanštinu, i když si Slované ještě dlouho rozuměli. Na Velké Moravě se v 9. století psalo staroslověnsky – prvním slovanským spisovným jazykem, založeným na jihoslovanském nářečí z okolí Soluně.", "en": "Proto-Slavic gradually split into West, South and East Slavic, although the Slavs long continued to understand each other. In Great Moravia in the 9th century people wrote Old Church Slavonic, the first Slavic literary language, based on a South Slavic dialect from around Thessaloniki."},
+     "oblasti": [
+      {"id": "zsl", "barva": "zsl", "kruhy": [[16, 50, 2.6], [19.5, 52, 3], [14, 52.5, 2]], "popisek": {"cs": "západní slovanština", "en": "West Slavic"}},
+      {"id": "jsl", "barva": "jsl", "kruhy": [[20, 44, 3.4], [24.5, 42.5, 2.6], [15.5, 45.8, 1.8]], "popisek": {"cs": "jižní slovanština", "en": "South Slavic"}},
+      {"id": "vsl", "barva": "vsl", "kruhy": [[30.5, 51.5, 3.4], [33.5, 55.5, 3.4], [38, 56.5, 2.8]], "popisek": {"cs": "východní slovanština", "en": "East Slavic"}}
+     ],
+     "proudy": []
+    },
+    {
+     "id": "cestina", "doba": {"cs": "od 10. století", "en": "from the 10th century"}, "pohled": [16, 50, 3.2],
+     "nazev": {"cs": "Čeština", "en": "Czech"},
+     "text": {"cs": "Z nářečí západních Slovanů v Čechách a na Moravě se vyvinula čeština. Nejstarší české glosy v latinských textech jsou z 11.–12. století, první souvislé texty ze 13. století a od 14. století je čeština plně rozvinutým spisovným jazykem. Dnes jí mluví asi 11 milionů lidí.", "en": "Czech developed from the West Slavic dialects of Bohemia and Moravia. The oldest Czech glosses in Latin texts date from the 11th–12th centuries, the first continuous texts from the 13th century, and from the 14th century Czech was a fully developed literary language. Today it is spoken by about 11 million people."},
+     "oblasti": [
+      {"id": "cs", "barva": "cs", "kruhy": [[14.8, 49.9, 1.5], [17, 49.3, 1.1]], "popisek": {"cs": "čeština", "en": "Czech"}}
+     ],
+     "proudy": []
+    }
+   ],
+   "zdroje": [
+    "Mallory, J. P. – Adams, D. Q. (2006): The Oxford Introduction to Proto-Indo-European and the Proto-Indo-European World. Oxford University Press.",
+    "Anthony, D. W. (2007): The Horse, the Wheel, and Language. Princeton University Press.",
+    "Haak, W. a kol. (2015): Massive migration from the steppe was a source for Indo-European languages in Europe. Nature 522.",
+    "Curta, F. (2001): The Making of the Slavs. Cambridge University Press.",
+    "Lamprecht, A. – Šlosar, D. – Bauer, J. (1986): Historická mluvnice češtiny. SPN."
+   ]
+  }
+ ]
+}

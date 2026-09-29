@@ -14,6 +14,7 @@ const VYMYSLENE = /*__VYMYSLENE__*/null; // jazyky z knih a filmů, jen v Brán�
 const PD = /*__PODROBNOSTI__*/null;   // podrobnosti k tečkám (Glottolog, WALS, PHOIBLE, UDHR, CLDR)
 const IKONY = /*__IKONY__*/null || {};     // obrázky medailonů pod glóbem (static/ikony/)
 document.querySelectorAll(".med-obr[data-ikona]").forEach(function(i){ const u = IKONY[i.dataset.ikona]; if (u) i.style.backgroundImage = "url(" + u + ")"; });
+const PUTOVANI = /*__PUTOVANI__*/null || [];   // putování jazyka (data/putovani.json): etapy s oblastmi a proudy na glóbu
 const CESTY = /*__CESTY__*/null || [];     // cesty slov na glóbu (data/cesty-slov.json): kroky jako strom, oblouk od rodiče k jazyku
 const TYP = /*__TYPOLOGIE__*/null;      // typologické mapy: vybrané vlastnosti WALS, texty a hodnota pro každou tečku
 let T = UI[VYCHOZI];
@@ -581,7 +582,8 @@ function nactiBarvy(){
    "pevnina", "pobrezi", "stin-koule", "tecka-jazyk", "tecka-lem", "tecka-bod", "cyan", "fialova", "cervena", "hvezda", "koule1", "koule2", "popisek", "popisek-lem",
    "atmosfera", "atmosfera2", "sit", "hranice", "okraj-koule", "zamerovac-lem",
    "r-ie", "r-st", "r-an", "r-afro", "r-nk", "r-ost", "more1", "more2", "souse1", "souse2", "souse-vit", "uzemi",
-   "podlaha", "podlaha-2", "obzor", "text2", "stin-plochy", "stin-plochy-2"].forEach(function(k){ barvy[k] = s.getPropertyValue("--" + k).trim(); });
+   "podlaha", "podlaha-2", "obzor", "text2", "stin-plochy", "stin-plochy-2",
+   "put-ie", "put-bs", "put-sl", "put-zsl", "put-jsl", "put-vsl", "put-cs"].forEach(function(k){ barvy[k] = s.getPropertyValue("--" + k).trim(); });
 }
 
 const fJaz = new Float32Array(POCET_B), zakladJaz = new Float32Array(POCET_B);   // příznaky teček: 0 obyčejná, 1 vybraná, 2 příbuzná, 3 pod myší
@@ -1022,8 +1024,8 @@ const tabletKarta = window.matchMedia("(min-width: 921px) and (max-width: 1400px
 function kartaVpravo(){ return tabletKarta.matches && !$("karta").hidden; }
 function spoctiPosun(){
   const karta = $("karta");
-  if (desktop.matches && karta.hidden && cesta) {        /* panel cesty slova vpravo: glóbus do volné plochy vlevo od něj */
-    const pan = $("cesta-panel"), volno = pan.hidden ? sirka : pan.offsetLeft - 10;
+  if (desktop.matches && karta.hidden && (cesta || putovani)) {   /* panel cesty slova / putování vpravo: glóbus do volné plochy vlevo */
+    const pan = $(putovani ? "putovani-panel" : "cesta-panel"), volno = pan.hidden ? sirka : pan.offsetLeft - 10;
     posunCil = Math.max(-sirka * 0.22, Math.min(0, volno / 2 - sirka / 2)); return;
   }
   if (!desktop.matches || karta.hidden) { posunCil = 0; return; }
@@ -1426,6 +1428,7 @@ function kresliPopredi(cas){
       if (!zkus(true)) zkus(false);
     });
   }
+  if (putovani) kresliPutovani(c, cas, promitni);
   if (eu) {                             /* zlaté hvězdičky jazyků EU, vyskakují jedna po druhé */
     const obsazene = [];
     c.font = "700 11.5" + PISMO; c.textBaseline = "middle"; c.lineJoin = "round";
@@ -1498,7 +1501,7 @@ function animujePopredi(cas){
   if (bezPohybu.matches) return false;
   return pulsDo > cas || (cas < zivoDo && oblouky.length > 0) || (odhaleniOd > 0 && cas - odhaleniOd < 1400) ||
     (eu && (eu.od < 0 || (eu.od > 0 && cas - eu.od < EU.length * 55 + 700))) ||
-    (cesta && (cesta.od < 0 || (cesta.od > 0 && cas - cesta.od < cesta.konec + 800)));
+    (cesta && (cesta.od < 0 || (cesta.od > 0 && cas - cesta.od < cesta.konec + 800))) || !!(putovani && putovani.hraje);
 }
 
 /* ---------- hvězdné nebe za stránkou (kreslí se jen při změně velikosti) ---------- */
@@ -1802,6 +1805,7 @@ function hvezdyJazyku(ids){
   });
 }
 let EU = hvezdyJazyku(EU_JAZYKY);
+var putovani = null;                      // putování jazyka: {j, stav (etapa + podíl), hraje, posl, cesty}
 var cesta = null;                         // cesta slova na glóbu: {w: slovo z CESTY, od: začátek animace (-1 = čeká na přílet), kroky: […]}
 let eu = null;                            // {od: kdy začaly vyskakovat hvězdičky (-1 = čeká se na přílet), druh: "eu" | "evropa"}
 /* srovnání dvou jazyků: první je zároveň vybraný (vybrany), druhý se k němu jen přidá */
@@ -1927,6 +1931,7 @@ function odznac(){
   vybrany = null; zeme = null; prechod = null; ozivit(); zapisOdkaz();
   if (eu) ukonciEU(true);
   if (cesta) ukonciCestu(true);
+  if (putovani) ukonciPutovani(true);
   karta.hidden = true; delete karta.dataset.jazyk; $("tl-cely").hidden = true;
   if (globusOk) { obnovPriznaky(); spoctiPosun(); plynulyZoom(1); }
   okno.hidden = true; bublinaBod.hidden = true;
@@ -2430,6 +2435,7 @@ REJSTRIK.g.forEach(function(g, i){ if (g) PODLE_KODU.set(g, i); });
 function kodVyberu(){
   if (civOtevrena) return civilizace(civOtevrena).adresa[T.lang];
   if (cesta) return "cesta-" + cesta.w.id;
+  if (putovani) return putovani.j.adresa[T.lang];
   if (brana) return vymysleny ? "mellon~" + vymysleny : "mellon";
   if (zvlastni) return zvlastni === "velryby" ? (T.lang === "cs" ? "velryby" : "whales") : "babel";
   if (srovnani) return srovnani.a.kod + "~" + srovnani.b.kod;          // #cs~ar = srovnání dvou jazyků
@@ -2459,6 +2465,7 @@ function prectiOdkaz(){
   if (/^(pribehy|stories)$/i.test(h)) { otevriSekci("pribehy"); return; }
   if (/^(vitalita|vitality)$/i.test(h)) { otevriStrankuVitality(); return; }
   if (/^cesta-/i.test(h)) { spustCestu(h.slice(6)); return; }
+  { const pj = PUTOVANI.find(function(x){ return x.adresa.cs === h || x.adresa.en === h; }); if (pj) { spustPutovani(pj.id); return; } }
   if (/^mapa-/i.test(h)) { ukazMapu(h.slice(5)); try { history.replaceState(null, "", location.pathname + location.search); } catch (e) {} return; }
   if (civilizace(h)) { if (civOtevrena !== civilizace(h).id) otevriCivilizaci(h); return; }
   if (/^mellon(~|$)/i.test(h)) { otevriBranu(); const v = h.split("~")[1]; if (v) ukazVymysleny(v); return; }
@@ -2646,7 +2653,7 @@ function ukazKartu(j){
     if (globusOk) pribuzni.appendChild(prvek("p", "pozn", tx("pribuzniOblouky")));
   }
   zalozky([
-    {nazev: T.zalozkaZajimavost, uzly: [fakt, (function(){ const c = BOD_ATLASU[j.id] != null ? civPodleTecky(BOD_ATLASU[j.id]) : null; return c ? tlacitkoCivilizace(c) : null; })(),   /* jazyk z atlasu se stránkou civilizace (čeština → Slované) */
+    {nazev: T.zalozkaZajimavost, uzly: [fakt, tlacitkoPutovani(j.id), (function(){ const c = BOD_ATLASU[j.id] != null ? civPodleTecky(BOD_ATLASU[j.id]) : null; return c ? tlacitkoCivilizace(c) : null; })(),   /* jazyk z atlasu se stránkou civilizace (čeština → Slované) */
       kde, oddilMluvciAtlas(j, bodJ, znakAtlas), oddilUredni(BOD_ATLASU[j.id], j.id), oddilPisma(BOD_ATLASU[j.id], j.id), oddilNareci(BOD_ATLASU[j.id])]},
     {nazev: T.vitalita, uzly: [stupenJ >= 0 ? oddilVitality(stupenJ, znakAtlas) : null]},
     {nazev: T.zalozkaStavba, uzly: [oddilTypologie(BOD_ATLASU[j.id])]},
@@ -4113,6 +4120,166 @@ function postavCestaPanel(){
   const pr = civilizace(w.pribeh);
   if (pr) { const a = prvek("button", "cesta-pribeh", t("cestaPribeh", {n: pr[T.lang].nazev})); a.type = "button"; a.addEventListener("click", function(){ ukonciCestu(true); otevriCivilizaci(pr.id); }); dalsi.appendChild(a); }
 }
+/* ---------- putování jazyka (29. 9. 2026, nápad uživatele: „pouť vývoje jazyka … tah Slovanů, široké šipky, rozlité řeči“) ----------
+   Etapy z data/putovani.json jdou po sobě na časové ose; v každé se rozlévají proudy (široké průsvitné šipky po povrchu
+   glóbu) a podbarvují oblasti. Dřívější etapy zůstávají slabě vidět jako vrstvy dějin. Sporné výklady přerušovaně. */
+const PUT_ETAPA = 4000;                         // ms na etapu při přehrávání
+let putCesta = null;
+function tlacitkoPutovani(id){
+  const pj = PUTOVANI.find(function(x){ return x.atlas === id; }); if (!pj) return null;
+  const b = prvek("button", "tl-rodokmen tl-putovani", pj.nazev[T.lang]); b.type = "button";
+  b.addEventListener("click", function(){ spustPutovani(pj.id); });
+  return b;
+}
+function hustaCesta(body){                      /* body [délka, šířka] → hustá cesta po povrchu (vektory) s délkami */
+  const v = body.map(function(b){ return vektor(b[0], b[1]); }), out = [];
+  for (let k = 0; k < v.length - 1; k++) {
+    const a = v[k], b = v[k + 1], om = Math.acos(Math.max(-1, Math.min(1, a[0] * b[0] + a[1] * b[1] + a[2] * b[2]))), n = Math.max(4, Math.round(om * 90)), so = Math.sin(om) || 1;
+    for (let i = k ? 1 : 0; i <= n; i++) { const t2 = i / n, s1 = Math.sin((1 - t2) * om) / so, s2 = Math.sin(t2 * om) / so; out.push([a[0] * s1 + b[0] * s2, a[1] * s1 + b[1] * s2, a[2] * s1 + b[2] * s2, 1]); }
+  }
+  return out;
+}
+function spustPutovani(id){
+  const j = PUTOVANI.find(function(x){ return x.id === id; });
+  if (!j || !globusOk) return;
+  if (civOkno.open) civOkno.close();
+  if (starovekOkno.open) starovekOkno.close();
+  if (strom && strom.zapnuto) strom.prepni(false);
+  if (brana) zavriBranu(true);
+  if (eu) ukonciEU(true);
+  if (cesta) ukonciCestu(true);
+  if (vybrany || srovnani || zvlastni) { srovnani = null; vybrany = null; zvlastni = null; karta.hidden = true; delete karta.dataset.jazyk; oznacTlacitka(null); }
+  zeme = null; okno.hidden = true; bublinaBod.hidden = true; schovejUkazatel(true);
+  j.etapy.forEach(function(e){ (e.proudy || []).forEach(function(p){ if (!p.cesta) p.cesta = hustaCesta(p.body); }); });
+  putovani = {j: j, stav: 0, hraje: !bezPohybu.matches, posl: 0, etapa: -1};
+  if (!putCesta) putCesta = d3.geoPath(proj, ctx);
+  postavPutovaniPanel();
+  $("putovani-panel").hidden = false; scena.classList.add("rezim-putovani");
+  $("tl-cely").hidden = false;
+  jdiNaEtapu(0, true);
+  if (bezPohybu.matches) putovani.stav = 0.999;
+  obnovPriznaky(); spoctiPosun(); ozivit(); potrebaKresli = true; teckyZmeneny = true;
+  zapisOdkaz();
+  if (!desktop.matches && window.scrollY > 40) window.scrollTo({top: 0, behavior: bezPohybu.matches ? "auto" : "smooth"});
+}
+function jdiNaEtapu(k, hned){
+  const e = putovani.j.etapy[k]; if (!e) return;
+  putovani.etapa = k;
+  if (hned) putovani.stav = k;
+  letKe([e.pohled[0], e.pohled[1]], e.pohled[2]);
+  obnovPutovaniPanel();
+}
+function ukonciPutovani(bezZoomu){
+  putovani = null;
+  $("putovani-panel").hidden = true; scena.classList.remove("rezim-putovani");
+  if (globusOk && ctx) { obnovPriznaky(); spoctiPosun(); potrebaKresli = true; teckyZmeneny = true; ozivit(); }
+  zapisOdkaz();
+  if (!bezZoomu && !vybrany) odznac();
+}
+function postavPutovaniPanel(){
+  const j = putovani.j;
+  $("put-nadpis").textContent = j.nazev[T.lang];
+  $("put-uvod").textContent = j.uvod[T.lang];
+  const ol = $("put-etapy"); ol.textContent = "";
+  j.etapy.forEach(function(e, k){
+    const li = prvek("li"), b = prvek("button", "put-etapa"); b.type = "button";
+    b.appendChild(prvek("span", "put-doba", e.doba[T.lang])); b.appendChild(prvek("strong", null, e.nazev[T.lang]));
+    b.addEventListener("click", function(){ putovani.hraje = false; jdiNaEtapu(k, true); putovani.stav = k + 0.999; obnovPutovaniPanel(); ozivit(); potrebaKresli = true; });
+    li.appendChild(b); li.appendChild(prvek("p", "put-text", e.text[T.lang])); ol.appendChild(li);
+  });
+  const z = $("put-zdroje"); z.textContent = ""; z.appendChild(prvek("strong", null, T.putZdroje + " "));
+  z.appendChild(document.createTextNode(j.zdroje.join(" · ")));
+}
+function obnovPutovaniPanel(){
+  if (!putovani) return;
+  const k = putovani.etapa;
+  Array.prototype.forEach.call($("put-etapy").children, function(li, n){ li.classList.toggle("aktivni", n === k); li.classList.toggle("minula", n < k); });
+  const tl = $("put-hraj"); tl.textContent = putovani.hraje ? "❚❚" : "▶"; tl.setAttribute("aria-label", putovani.hraje ? T.putPauza : T.putHraj);
+  $("put-osa").value = Math.round(putovani.stav * 100);
+}
+$("put-zavrit").addEventListener("click", function(){ ukonciPutovani(); });
+$("put-hraj").addEventListener("click", function(){
+  if (!putovani) return;
+  if (!putovani.hraje && putovani.stav >= putovani.j.etapy.length - 0.01) { putovani.stav = 0; jdiNaEtapu(0, true); }
+  putovani.hraje = !putovani.hraje; putovani.posl = 0; obnovPutovaniPanel(); ozivit(); potrebaKresli = true;
+});
+$("put-osa").addEventListener("input", function(e){
+  if (!putovani) return;
+  putovani.hraje = false; putovani.stav = Math.min(putovani.j.etapy.length - 0.001, +e.target.value / 100);
+  const k = Math.floor(putovani.stav); if (k !== putovani.etapa) jdiNaEtapu(k); else obnovPutovaniPanel();
+  potrebaKresli = true; ozivit();
+});
+document.addEventListener("keydown", function(e){ if (e.key === "Escape" && putovani && !civOkno.open) ukonciPutovani(); });
+let putMaleC = null;
+function putMale(c){                            /* malé pomocné plátno v 1/6 rozlišení vrstvy popředí (CSS pixely) */
+  const w = Math.ceil(sirka / 6) + 2, h = Math.ceil(vyska / 6) + 2;
+  if (!putMaleC) { const k = document.createElement("canvas"); putMaleC = {c: k, x: k.getContext("2d")}; }
+  if (putMaleC.c.width !== w || putMaleC.c.height !== h) { putMaleC.c.width = w; putMaleC.c.height = h; }
+  putMaleC.w = sirka; return putMaleC;
+}
+function kresliPutovani(c, cas, promitni){
+  const pv = putovani, et = pv.j.etapy;
+  if (pv.hraje) {                               // čas běží: posun v etapách, při přechodu do další etapy let glóbu
+    if (pv.posl) pv.stav = Math.min(et.length - 0.001, pv.stav + (cas - pv.posl) / PUT_ETAPA);
+    pv.posl = cas;
+    const k = Math.floor(pv.stav);
+    if (k !== pv.etapa) jdiNaEtapu(k);
+    if (pv.stav >= et.length - 0.001) { pv.hraje = false; obnovPutovaniPanel(); }
+    else if (Math.round(pv.stav * 100) !== +$("put-osa").value) $("put-osa").value = Math.round(pv.stav * 100);
+  }
+  const barva = function(k){ return barvy["put-" + k] || barvy.cervena; };
+  const s = pv.stav, akt = Math.floor(s), p = s - akt, p2 = [0, 0], q2 = [0, 0];
+  const W = Math.max(5, polomer * 0.034), popisky = [];
+  const kruh = d3.geoCircle();
+  et.forEach(function(e, k){
+    if (k > akt) return;
+    const pe = k < akt ? 1 : p, stara = k < akt ? (k === akt - 1 ? 0.55 : 0.3) : 1;
+    if (k < akt - 1 && !(e.oblasti || []).length) return;        // starší proudy už nekreslit, jen oblasti jako vrstvy dějin
+    const hotovo = {};
+    (e.proudy || []).forEach(function(pr, n){ hotovo[pr.id] = Math.max(0, Math.min(1, (pe - n * 0.08) / 0.62)); });
+    /* oblasti: měkká plocha ze sjednocených kruhů; ta s „po“ se objeví, až k ní dorazí proud */
+    (e.oblasti || []).forEach(function(o){
+      const vstup = o.po ? Math.max(0, Math.min(1, (hotovo[o.po] - 0.85) / 0.15)) : Math.min(1, pe / 0.22);
+      if (!vstup) return;
+      /* měkká „rozlitá“ plocha: sjednocené kruhy se vyplní do malého plátna (1/6 rozlišení) a roztáhnou – okraj se tím
+         rozmaže bez drahého ctx.filter a uvnitř nejsou vidět hranice jednotlivých kruhů; sporná oblast je bledší */
+      const m = putMale(c);
+      m.x.clearRect(0, 0, m.c.width, m.c.height); m.x.save(); m.x.scale(1 / 6, 1 / 6);
+      m.x.beginPath(); const cp = d3.geoPath(proj, m.x); o.kruhy.forEach(function(kr){ cp(kruh.center([kr[0], kr[1]]).radius(kr[2] * 1.12)()); });
+      m.x.fillStyle = barva(o.barva); m.x.fill(); m.x.restore();
+      c.save(); c.imageSmoothingEnabled = true; c.imageSmoothingQuality = "high";
+      c.globalAlpha = (o.sporna ? 0.24 : 0.5) * vstup * stara; c.drawImage(m.c, 0, 0, m.c.width * 6, m.c.height * 6); c.restore();
+      if (k === akt && o.popisek && vstup > 0.5) { const v = vektor(o.kruhy[0][0], o.kruhy[0][1]).concat(1); if (promitni(v, p2)) popisky.push([o.popisek[T.lang], p2[0], p2[1], o.sporna]); }
+    });
+    /* proudy: široká průsvitná šipka, která se rozlévá od počátku k cíli */
+    (e.proudy || []).forEach(function(pr){
+      const f = hotovo[pr.id]; if (!f || k < akt - 1) return;
+      const body = pr.cesta, konec = Math.max(1, Math.round(f * (body.length - 1)));
+      if (pr.sporna) c.setLineDash([W * 0.9, W * 0.7]);
+      [[2.2, 0.14], [1, 0.5]].forEach(function(st){
+        c.beginPath(); let kresli = false;
+        for (let n = 0; n <= konec; n++) { const vid = promitni(body[n], p2); if (vid) { if (kresli) c.lineTo(p2[0], p2[1]); else c.moveTo(p2[0], p2[1]); } kresli = vid; }
+        c.globalAlpha = st[1] * stara; c.lineWidth = W * st[0] * (pr.sirka || 1); c.strokeStyle = barva(pr.barva); c.lineCap = "round"; c.lineJoin = "round"; c.stroke();
+      });
+      c.setLineDash([]);
+      /* hrot šipky na čele proudu */
+      if (promitni(body[konec], p2) && promitni(body[Math.max(0, konec - 3)], q2)) {
+        const ux = p2[0] - q2[0], uy = p2[1] - q2[1], d = Math.hypot(ux, uy) || 1, nx = ux / d, ny = uy / d, h = W * 1.5;
+        c.beginPath(); c.moveTo(p2[0] + nx * h * 0.9, p2[1] + ny * h * 0.9); c.lineTo(p2[0] - ny * h, p2[1] + nx * h); c.lineTo(p2[0] + ny * h, p2[1] - nx * h); c.closePath();
+        c.globalAlpha = 0.7 * stara; c.fillStyle = barva(pr.barva); c.fill();
+      }
+      if (k === akt && pr.popisek && f > 0.9 && promitni(body[Math.floor(body.length * 0.55)], p2)) popisky.push([pr.popisek[T.lang], p2[0], p2[1] - W * 1.2, pr.sporna]);
+    });
+  });
+  c.globalAlpha = 1;
+  /* popisky oblastí a proudů aktuální etapy */
+  c.textBaseline = "middle"; c.textAlign = "center"; c.lineJoin = "round";
+  popisky.forEach(function(x){
+    c.font = (x[3] ? "italic " : "") + "600 12.5" + PISMO; c.lineWidth = 3.6; c.strokeStyle = barvy["popisek-lem"]; c.strokeText(x[0], x[1], x[2]);
+    c.fillStyle = barvy.popisek; c.fillText(x[0], x[1], x[2]);
+  });
+  c.textAlign = "start";
+}
 function ukonciCestu(bezZoomu){
   cesta = null;
   $("cesta-panel").hidden = true; scena.classList.remove("rezim-cesta");
@@ -4159,6 +4326,7 @@ function ukazZvlastni(k){
   if (brana) zavriBranu(true);
   if (eu) ukonciEU(true);
   if (cesta) ukonciCestu(true);
+  if (putovani) ukonciPutovani(true);
   vybrany = null; srovnani = null; zrusCekani(); vymysleny = null; zhasniZemi(); okno.hidden = true;
   const klic = "z:" + k, novy = karta.dataset.jazyk !== klic;
   if (novy) zalozkaVybrana = 0;

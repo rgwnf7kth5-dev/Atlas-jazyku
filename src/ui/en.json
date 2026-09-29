@@ -578,7 +578,7 @@
     ]
    },
    {
-    "h": "Keyboard",
+    "h": "Keyboard The Czech card has a Journey of Czech button in the Interesting fact tab: on the globe, streams spread stage by stage from Proto-Indo-European through the Slavic migrations to Czech, with a timeline, playback and a text for each stage.",
     "p": [
      "Tab moves between controls. One Tab enters the language list; the arrow keys move between tiles, Home and End jump to the start and end, and Enter selects a language.",
      "The + and − keys zoom the globe. Escape closes a window, the card or a panel."
@@ -648,6 +648,11 @@
   }
  },
  "cestaNadpis": "The journey of the word {s}",
+ "putZavrit": "Close the language journey",
+ "putOsa": "Timeline",
+ "putHraj": "Play",
+ "putPauza": "Pause",
+ "putZdroje": "Sources:",
  "cestaZavrit": "Close the word journey",
  "cestaZnovu": "Play again",
  "cestaPribeh": "Story: {n}",

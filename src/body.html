@@ -79,6 +79,13 @@
     <ol class="cesta-kroky" id="cesta-kroky"></ol>
     <div class="cesta-dalsi" id="cesta-dalsi"></div>
    </div>
+   <div class="eu-panel sklo putovani-panel" id="putovani-panel" hidden role="dialog" aria-labelledby="put-nadpis">
+    <div class="eu-text"><strong id="put-nadpis"></strong><p id="put-uvod"></p></div>
+    <button class="zavrit" id="put-zavrit" type="button" aria-label="{{putZavrit}}" data-t-aria-label="putZavrit"><svg aria-hidden="true"><use href="#i-krizek"/></svg></button>
+    <div class="put-ovl"><button type="button" class="put-hraj" id="put-hraj">❚❚</button><input type="range" id="put-osa" min="0" max="599" step="1" value="0" aria-label="{{putOsa}}" data-t-aria-label="putOsa"></div>
+    <ol class="put-etapy" id="put-etapy"></ol>
+    <p class="put-zdroje" id="put-zdroje"></p>
+   </div>
    <div class="vit-legenda sklo" id="vit-legenda" hidden><button type="button" id="vit-legenda-tl"></button></div>
    <nav class="dok medailony" id="dok" aria-label="{{rozcestnik}}" data-t-aria-label="rozcestnik">
     <button class="med" id="tl-starovek" type="button" aria-haspopup="dialog" title="{{starovekTlacitko}}" data-t-title="starovekTlacitko"><i class="med-obr" data-ikona="starovek"></i><span data-t="medStarovek">{{medStarovek}}</span></button>

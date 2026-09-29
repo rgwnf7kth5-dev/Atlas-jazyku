@@ -531,6 +531,18 @@ nula a cifra, šampon; tlačítka na stránce o čaji). Opraveno při ověření
 Tomate z francouzštiny, rajče odvozeno od „rajské jablko“ (kalk rak.-něm. Paradeisapfel), „mat“ = perské māt ‚bezradný‘
 („král zemřel“ je lidový výklad), akkadský zdroj arab. kuḥl nedoložený (krok vypuštěn), něm. Ziffer ze stfr. cifre, česká nula
 z latiny, shampoo 1762 = masáž těla v lázni.
+**Putování jazyka na glóbu** (29. 9. 2026, nápad uživatele: „pouť vývoje jazyka … tah Slovanů z východu, barevné animované
+široké šipky, rozlité řeči“; náhled schválil, „mohlo by to být rychlejší“ → 4 s na etapu, `PUT_ETAPA`): `data/putovani.json`
+(build → `PUTOVANI`, validace hlídá jazyk atlasu, texty cs/en, souřadnice, barvy `--put-*` a vazbu oblasti na proud `po`).
+Jazyk má `etapy` s `doba`, `nazev`, `text`, `pohled` [délka, šířka, přiblížení], `oblasti` (kruhy [délka, šířka, poloměr °],
+`barva`, `popisek`, `sporna`, `po` = objeví se, až dorazí proud) a `proudy` (`body` [délka, šířka], `barva`, `popisek`, `sporna`).
+Režim `putovani` v app.js (`spustPutovani`, `jdiNaEtapu`, `ukonciPutovani`, `kresliPutovani` v `kresliPopredi`): proudy jsou široké
+průsvitné čáry po povrchu s hrotem šipky, oblasti se kreslí do plátna v 1/6 rozlišení a roztáhnou se (měkký „rozlitý“ okraj
+bez `ctx.filter`), sporné oblasti bledé, sporné proudy přerušovaně; starší etapy zůstávají slabě jako vrstvy dějin. Panel
+`#putovani-panel` (přehrát/pozastavit, posuvník, etapy s textem, zdroje), glóbus se posune vlevo od panelu (`spoctiPosun`),
+tečky jazyků jsou ztlumené. Vstupy: tlačítko „Putování češtiny“ na kartě jazyka (Zajímavost, `tlacitkoPutovani`), odkaz
+`#putovani-cestina` / `#journey-czech`. Barvy `--put-*` jsou tlumená paleta z kruhového přehledu (ie, bs, sl, zsl, jsl, vsl, cs).
+Zatím **čeština**; další na řadě **kurdština** (uživatel: „hodně stojím o kurdštinu“). Texty etap nezávisle ověřit jako vše ostatní.
 **Jak vznikla spisovná čeština** (`#spisovna-cestina` / `#standard-czech`, skupina „Jazyky v čase“, akvarel `tiskarna`; 27. 9. 2026):
 glosy a první věty, spřežky a diakritika, Blahoslav, Bible kralická, pobělohorské období („doba temna“ jen jako obrozenecký pojem),
 Dobrovský, Jungmann, Rukopisy, Gebauer, Pravidla 1902, Pražský lingvistický kroužek, spisovná × obecná čeština (diglosie jako sporná).

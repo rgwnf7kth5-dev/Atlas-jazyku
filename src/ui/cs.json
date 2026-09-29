@@ -578,7 +578,7 @@
     ]
    },
    {
-    "h": "Klávesnice",
+    "h": "Klávesnice Karta češtiny má v záložce Zajímavost tlačítko Putování češtiny: na glóbu se po etapách rozlévají proudy od praindoevropštiny přes stěhování Slovanů až k češtině, s časovou osou, přehráváním a textem ke každé etapě.",
     "p": [
      "Tab přechází mezi ovládacími prvky. Do seznamu jazyků se vstoupí jedním stiskem Tab, mezi dlaždicemi se pohybuje šipkami, Home a End skočí na začátek a konec, Enter jazyk vybere.",
      "Klávesy + a − přibližují glóbus. Escape zavře okno, kartu nebo panel."
@@ -648,6 +648,11 @@
   }
  },
  "cestaNadpis": "Cesta slova {s}",
+ "putZavrit": "Zavřít putování jazyka",
+ "putOsa": "Časová osa",
+ "putHraj": "Přehrát",
+ "putPauza": "Pozastavit",
+ "putZdroje": "Zdroje:",
  "cestaZavrit": "Zavřít cestu slova",
  "cestaZnovu": "Přehrát znovu",
  "cestaPribeh": "Příběh: {n}",

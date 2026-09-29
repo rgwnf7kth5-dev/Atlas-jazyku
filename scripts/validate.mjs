@@ -97,6 +97,28 @@ if (pd.uzly.length !== pd.nad.length) chyby.push("data/podrobnosti.json: strom p
   const majitel = {};
   for (const c of st.civilizace) if (!c.sekce) for (const k of c.tecky || []) { if (majitel[k]) chyby.push(`${co}: tečku ${k} mají ${majitel[k]} i ${c.id}`); majitel[k] = c.id; }
 }
+{ /* putování jazyka (data/putovani.json): jazyk atlasu, adresy, texty cs/en u etap, oblastí a proudů, barvy v styles.css, souřadnice */
+  const co = "data/putovani.json", d = json(co), css = fs.readFileSync(path.join(path.dirname(new URL(import.meta.url).pathname), "..", "src", "styles.css"), "utf8");
+  const atlas = new Set(jazyky.map(j => j.id)), dvojj = (x, kde) => { if (!x || !x.cs || !x.en) chyby.push(`${co}: ${kde} nemá text cs i en`); };
+  const souradnice = (b, kde) => { if (!Array.isArray(b) || !(b[0] >= -180 && b[0] <= 180 && b[1] >= -90 && b[1] <= 90)) chyby.push(`${co}: ${kde} má chybné souřadnice`); };
+  for (const j of d.jazyky) {
+    if (!atlas.has(j.atlas)) chyby.push(`${co}: ${j.id} – jazyk atlasu „${j.atlas}“ neexistuje`);
+    dvojj(j.adresa, j.id + " adresa"); dvojj(j.nazev, j.id + " název"); dvojj(j.uvod, j.id + " úvod");
+    if (!j.zdroje || !j.zdroje.length) chyby.push(`${co}: ${j.id} nemá zdroje`);
+    for (const e of j.etapy) {
+      const kde = j.id + "/" + e.id;
+      dvojj(e.doba, kde + " doba"); dvojj(e.nazev, kde + " název"); dvojj(e.text, kde + " text");
+      if (!Array.isArray(e.pohled) || e.pohled.length !== 3) chyby.push(`${co}: ${kde} potřebuje pohled [délka, šířka, přiblížení]`);
+      const proudy = new Set((e.proudy || []).map(p => p.id));
+      for (const o of e.oblasti || []) { (o.kruhy || []).forEach(k => souradnice(k, kde + "/" + o.id)); if (o.popisek) dvojj(o.popisek, kde + "/" + o.id);
+        if (o.po && !proudy.has(o.po)) chyby.push(`${co}: ${kde}/${o.id} čeká na neexistující proud „${o.po}“`);
+        if (!css.includes("--put-" + o.barva + ":")) chyby.push(`${co}: ${kde}/${o.id} – barva --put-${o.barva} není v styles.css`); }
+      for (const p of e.proudy || []) { if (!p.body || p.body.length < 2) chyby.push(`${co}: ${kde}/${p.id} potřebuje aspoň dva body`); (p.body || []).forEach(b => souradnice(b, kde + "/" + p.id));
+        if (p.popisek) dvojj(p.popisek, kde + "/" + p.id);
+        if (!css.includes("--put-" + p.barva + ":")) chyby.push(`${co}: ${kde}/${p.id} – barva --put-${p.barva} není v styles.css`); }
+    }
+  }
+}
 { /* cesty slov (data/cesty-slov.json): tečky v rejstříku, rodič existuje a stojí dřív, texty v obou jazycích, příběh existuje */
   const co = "data/cesty-slov.json", d = json(co), kody = new Set(glottolog.body.filter(b => b[1] != null).map(b => b[6]));
   const opravy = json("data/polohy-opravy.json"), stranky = new Set(json("data/starovek.json").civilizace.map(c => c.id)), idSlov = new Set();
