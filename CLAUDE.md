@@ -315,7 +315,10 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a živý web workflow Diag
   (`stopy`). Zajímavosti musí být pravdivé jako u skutečných jazyků.
 - **Tři drobná tajemství** (28. 9. 2026, nápady uživatele; v návodu neprozrazovat, jako hesla „eulang“ a „mellon“):
   **tři rychlá klepnutí na oceán** (stejné místo, do 1,2 s; `klikNaOcean` v `klikDoMapy`) nebo `#velryby` / `#whales` otevřou
-  kartu **„Mluví velryby?“** (kody vorvaňů, klan EC1 a koda 1+1+3, Sharma a kol. 2024; zpěv keporkaků, Payne a McVay 1971,
+  kartu **„Mluví kytovci?“** (29. 9. 2026 rozšířeno z „Mluví velryby?“ o záložku **Delfíni** (4 záložky: Velryby, Delfíni, Je to jazyk?, Zdroje; šest se na kartu nevešlo) – podpisová hvízdnutí
+  jako jména, Hermanovy pokusy s umělým jazykem, DolphinGemma – a kosatky – nářečí rodin, mlčení Biggových kosatek,
+  napodobování; odkaz `#kytovci` / `#cetaceans`, staré `#velryby` / `#whales` platí dál; plurál „vorvani“, ne „vorvaně“;
+  kody vorvaňů, klan EC1 a koda 1+1+3, Sharma a kol. 2024; zpěv keporkaků, Payne a McVay 1971,
   Garland 2011, Arnon 2025, Voyager; proč to zatím není jazyk a proč velryby nemají tečku) s akvarelem `ocean` (ocasní ploutev,
   výtrysk) a tlačítkem „Přehrát rytmus kody“ (cvaknutí z WebAudio, výslovně schéma, ne nahrávka – nahrávky nemáme ověřené).
   **Sedm rychlých kliknutí na logo** (`prevrat`): vrstvy `#podklad`, `#gl`, `#popisky` se otočí o 180° kolem středu koule

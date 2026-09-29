@@ -729,13 +729,13 @@
  "tajemstvi": {
   "velryby": {
    "stitek": "Jazyky moře",
-   "nazev": "Mluví velryby?",
+   "nazev": "Mluví kytovci?",
    "pozdrav": "•\u2003\u2003•\u2003\u2003•\u2009•\u2009•",
    "prepis": "koda „1+1+3“ vorvaňů od Dominiky",
    "stitky": [
     [
      "Kdo",
-     "vorvaň a keporkak"
+     "vorvaň, keporkak, delfín, kosatka"
     ],
     [
      "Jazyk?",
@@ -746,10 +746,10 @@
    "prehrajPozn": "Schéma rytmu ze cvaknutí vytvořených v prohlížeči, ne nahrávka.",
    "zalozky": [
     {
-     "nazev": "Vorvaně",
+     "nazev": "Velryby",
      "oddily": [
       {
-       "h": "Kody",
+       "h": "Vorvani: kody",
        "p": [
         "Vorvaň obrovský (Physeter macrocephalus) se dorozumívá kodami – krátkými sériemi zhruba 3 až 40 cvaknutí v ustáleném rytmu. Jako první je popsali William Watkins a William Schevill roku 1977.",
         "Samice s mláďaty žijí v trvalých rodinných skupinách. Skupiny s podobným repertoárem kod tvoří takzvaný hlasový klan; klany se od sebe liší podobně jako nářečí a mládě se repertoár nejspíš učí od svého okolí. U ostrova Dominika v Karibiku je typická koda klanu EC1 „1+1+3“: dvě cvaknutí s odstupem a tři rychle za sebou."
@@ -761,14 +761,9 @@
         "Roku 2024 ukázal tým projektu CETI (Sharma a kol., Nature Communications) na nahrávkách od Dominiky, že se kody liší i jemnějšími rysy: tempem, rytmem, plynulým prodlužováním a zkracováním po sobě jdoucích kod (rubato) a přidaným cvaknutím navíc (ornamentace). Tyto rysy se kombinují nezávisle na sobě, a různých kod je proto mnohem víc, než se myslelo.",
         "Autoři mluví o „fonetické abecedě vorvaňů“. Co jednotlivé kombinace znamenají, zatím nikdo neví."
        ]
-      }
-     ]
-    },
-    {
-     "nazev": "Keporkaci",
-     "oddily": [
+      },
       {
-       "h": "Písně",
+       "h": "Keporkaci: písně",
        "p": [
         "Samci keporkaka (Megaptera novaeangliae) zpívají písně, které trvají od několika minut po desítky minut a opakují se i hodiny. Mají stavbu o několika úrovních: jednotlivé zvuky tvoří fráze, opakované fráze témata a témata celou píseň. Popsali ji Roger Payne a Scott McVay roku 1971.",
         "Samci jedné populace zpívají v danou dobu v podstatě stejnou píseň a ta se postupně proměňuje. V jižním Pacifiku se nové písně šíří od východní Austrálie dál na východ z populace do populace (Garland a kol. 2011), podobně jako kulturní móda."
@@ -784,13 +779,55 @@
      ]
     },
     {
+     "nazev": "Delfíni",
+     "oddily": [
+      {
+       "h": "Jména delfínů",
+       "p": [
+        "Delfín skákavý (Tursiops truncatus) si v prvních měsících života vytvoří vlastní, takzvané podpisové hvízdnutí, které se od hvízdnutí ostatních liší a často mu zůstane celý život (Caldwell a Caldwell 1965). Když delfín volá jiného, napodobí jeho podpisové hvízdnutí; na přehrané vlastní hvízdnutí delfíni odpovídají, na cizí mnohem méně (King a Janik 2013). Funguje to tedy podobně jako jméno.",
+        "Hvízdnutí bývalých společníků si delfíni pamatují i po více než dvaceti letech odloučení (Bruck 2013)."
+       ]
+      },
+      {
+       "h": "Porozumění větám",
+       "p": [
+        "V 80. letech učil Louis Herman na Havaji dvě samice delfína skákavého, Akeakamai a Phoenix, umělé jazyky z gest a z počítačových zvuků. Rozuměly i novým větám a rozlišovaly pořadí slov: přinést prkno k obruči je něco jiného než přinést obruč k prknu (Herman a kol. 1984). Šlo ale o porozumění jazyku, který vymysleli lidé, ne o vlastní řeč delfínů."
+       ]
+      },
+      {
+       "h": "Umělá inteligence",
+       "p": [
+        "Wild Dolphin Project Denise Herzingové nahrává od roku 1985 delfíny kropenaté na Bahamách. Roku 2025 představil spolu s Googlem model umělé inteligence DolphinGemma, který má v nahrávkách hledat opakující se vzorce. Výsledky zatím nejsou."
+       ]
+      },
+      {
+       "h": "Kosatky: nářečí rodin",
+       "p": [
+        "Kosatka dravá (Orcinus orca) je největší z delfínů. Rybožravé kosatky u pobřeží Britské Kolumbie a státu Washington žijí v rodinných skupinách vedených matkami a každá skupina má vlastní soubor ustálených volání. Skupiny, které část volání sdílejí, tvoří akustický klan (Ford 1991). Mláďata se volání učí od matek a skupina je udržuje po desetiletí, proto se o nich mluví jako o nářečích."
+       ]
+      },
+      {
+       "h": "Mlčení lovců",
+       "p": [
+        "Kosatky, které loví tuleně a jiné kytovce (Biggovy kosatky), se při lovu ozývají mnohem méně než rybožravé, protože by je kořist slyšela. Volají hlavně až po úspěšném lovu (Deecke a kol. 2005)."
+       ]
+      },
+      {
+       "h": "Napodobování",
+       "p": [
+        "Kosatky umějí napodobovat cizí zvuky. Kosatky chované společně s delfíny skákavými převzaly část jejich hvízdání (Musser a kol. 2014) a samice Wikie v zajetí napodobila lidská slova jako „hello“ nebo „bye bye“ (Abramson a kol. 2018). Že by jim rozuměla, z toho neplyne."
+       ]
+      }
+     ]
+    },
+    {
      "nazev": "Je to jazyk?",
      "oddily": [
       {
        "h": "Zatím ne",
        "p": [
-        "Aspoň ne v tom smyslu, v jakém je jazykem čeština nebo český znakový jazyk. Lidský jazyk skládá jednotky, které něco znamenají, podle pravidel do stále nových výpovědí. U velryb víme, že jejich komunikace má složitou stavbu, předává se učením a liší se mezi skupinami. Nevíme ale, zda jednotlivé kody nebo fráze mají význam, natož zda se z nich skládají nové.",
-        "Proto velryby na glóbu nemají tečku: atlas eviduje jazyky lidí podle Glottologu."
+        "Aspoň ne v tom smyslu, v jakém je jazykem čeština nebo český znakový jazyk. Lidský jazyk skládá jednotky, které něco znamenají, podle pravidel do stále nových výpovědí. U kytovců víme, že jejich komunikace má složitou stavbu, předává se učením a liší se mezi skupinami podobně jako nářečí. Nejblíž slovu s významem mají podpisová hvízdnutí delfínů, která fungují jako jména. Nevíme ale, zda kody vorvaňů, písně keporkaků nebo volání kosatek něco znamenají, natož zda se z nich skládají nové výpovědi.",
+        "Proto kytovci na glóbu nemají tečku: atlas eviduje jazyky lidí podle Glottologu."
        ]
       }
      ]
@@ -803,7 +840,15 @@
       "Sharma, P. a kol. (2024): Contextual and combinatorial structure in sperm whale vocalisations. Nature Communications 15: 3617.",
       "Payne, R. S. – McVay, S. (1971): Songs of humpback whales. Science 173: 585–597.",
       "Garland, E. C. a kol. (2011): Dynamic horizontal cultural transmission of humpback whale song at the ocean basin scale. Current Biology 21: 687–691.",
-      "Arnon, I. a kol. (2025): Whale song shows language-like statistical structure. Science 387: 649–653."
+      "Arnon, I. a kol. (2025): Whale song shows language-like statistical structure. Science 387: 649–653.",
+      "Caldwell, M. C. – Caldwell, D. K. (1965): Individualized whistle contours in bottlenosed dolphins (Tursiops truncatus). Nature 207: 434–435.",
+      "King, S. L. – Janik, V. M. (2013): Bottlenose dolphins can use learned vocal labels to address each other. PNAS 110: 13216–13221.",
+      "Bruck, J. N. (2013): Decades-long social memory in bottlenose dolphins. Proceedings of the Royal Society B 280: 20131726.",
+      "Herman, L. M. – Richards, D. G. – Wolz, J. P. (1984): Comprehension of sentences by bottlenosed dolphins. Cognition 16: 129–219.",
+      "Ford, J. K. B. (1991): Vocal traditions among resident killer whales (Orcinus orca) in coastal waters of British Columbia. Canadian Journal of Zoology 69: 1454–1483.",
+      "Deecke, V. B. – Ford, J. K. B. – Slater, P. J. B. (2005): The vocal behaviour of mammal-eating killer whales: communicating with costly calls. Animal Behaviour 69: 395–405.",
+      "Musser, W. B. a kol. (2014): Differences in acoustic features of vocalizations produced by killer whales cross-socialized with bottlenose dolphins. Journal of the Acoustical Society of America 136: 1990–2002.",
+      "Abramson, J. Z. a kol. (2018): Imitation of novel conspecific and human speech sounds in the killer whale (Orcinus orca). Proceedings of the Royal Society B 285: 20172171."
      ]
     }
    ]

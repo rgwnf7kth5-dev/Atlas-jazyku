@@ -729,13 +729,13 @@
  "tajemstvi": {
   "velryby": {
    "stitek": "Languages of the sea",
-   "nazev": "Do whales talk?",
+   "nazev": "Do cetaceans talk?",
    "pozdrav": "•\u2003\u2003•\u2003\u2003•\u2009•\u2009•",
    "prepis": "the “1+1+3” coda of the sperm whales off Dominica",
    "stitky": [
     [
      "Who",
-     "sperm whale and humpback"
+     "sperm whale, humpback, dolphin, orca"
     ],
     [
      "Language?",
@@ -746,10 +746,10 @@
    "prehrajPozn": "A sketch of the rhythm made of clicks generated in the browser, not a recording.",
    "zalozky": [
     {
-     "nazev": "Sperm whales",
+     "nazev": "Whales",
      "oddily": [
       {
-       "h": "Codas",
+       "h": "Sperm whales: codas",
        "p": [
         "The sperm whale (Physeter macrocephalus) communicates with codas – short series of roughly 3 to 40 clicks in a fixed rhythm. They were first described by William Watkins and William Schevill in 1977.",
         "Females and their young live in stable family units. Units with a similar repertoire of codas form a so-called vocal clan; clans differ much like dialects, and calves most likely learn the repertoire from those around them. Off the island of Dominica in the Caribbean, the typical coda of clan EC1 is “1+1+3”: two spaced clicks followed by three quick ones."
@@ -761,14 +761,9 @@
         "In 2024 the Project CETI team (Sharma et al., Nature Communications) showed on recordings from Dominica that codas also differ in finer features: tempo, rhythm, gradual lengthening and shortening of successive codas (rubato) and an extra click (ornamentation). These features combine independently, so there are far more distinct codas than was thought.",
         "The authors speak of a “sperm whale phonetic alphabet”. What the individual combinations mean, nobody knows yet."
        ]
-      }
-     ]
-    },
-    {
-     "nazev": "Humpbacks",
-     "oddily": [
+      },
       {
-       "h": "Songs",
+       "h": "Humpbacks: songs",
        "p": [
         "Male humpback whales (Megaptera novaeangliae) sing songs lasting from a few minutes to tens of minutes, repeated for hours. They are structured on several levels: individual sounds form phrases, repeated phrases form themes, and themes form the song. They were described by Roger Payne and Scott McVay in 1971.",
         "The males of one population sing essentially the same song at a given time, and the song gradually changes. In the South Pacific, new songs spread from eastern Australia eastwards from population to population (Garland et al. 2011), much like a cultural fashion."
@@ -784,13 +779,55 @@
      ]
     },
     {
+     "nazev": "Dolphins",
+     "oddily": [
+      {
+       "h": "Dolphin names",
+       "p": [
+        "In the first months of life a bottlenose dolphin (Tursiops truncatus) develops its own so-called signature whistle, which differs from the whistles of others and often stays with it for life (Caldwell and Caldwell 1965). When a dolphin calls another, it copies that dolphin's signature whistle; dolphins respond to a playback of their own whistle, far less to others' (King and Janik 2013). It thus works much like a name.",
+        "Dolphins remember the whistles of former companions even after more than twenty years apart (Bruck 2013)."
+       ]
+      },
+      {
+       "h": "Understanding sentences",
+       "p": [
+        "In the 1980s Louis Herman in Hawaii taught two female bottlenose dolphins, Akeakamai and Phoenix, artificial languages of gestures and computer-generated sounds. They understood new sentences too and distinguished word order: taking the surfboard to the hoop is different from taking the hoop to the surfboard (Herman et al. 1984). But this was understanding of a language invented by humans, not the dolphins' own speech."
+       ]
+      },
+      {
+       "h": "Artificial intelligence",
+       "p": [
+        "Denise Herzing's Wild Dolphin Project has been recording Atlantic spotted dolphins in the Bahamas since 1985. In 2025 it presented, together with Google, an AI model called DolphinGemma, meant to find recurring patterns in the recordings. There are no results yet."
+       ]
+      },
+      {
+       "h": "Orcas: family dialects",
+       "p": [
+        "The orca or killer whale (Orcinus orca) is the largest of the dolphins. Fish-eating orcas off British Columbia and Washington State live in family groups led by mothers, and each group has its own set of stereotyped calls. Groups that share some of their calls form an acoustic clan (Ford 1991). Calves learn the calls from their mothers and the group keeps them for decades, which is why they are spoken of as dialects."
+       ]
+      },
+      {
+       "h": "Silent hunters",
+       "p": [
+        "Orcas that hunt seals and other cetaceans (Bigg's orcas) call much less while hunting than fish-eaters do, since their prey would hear them. They call mainly after a successful hunt (Deecke et al. 2005)."
+       ]
+      },
+      {
+       "h": "Imitation",
+       "p": [
+        "Orcas can imitate unfamiliar sounds. Orcas kept together with bottlenose dolphins took over some of their whistles (Musser et al. 2014), and a captive female, Wikie, imitated human words such as “hello” and “bye bye” (Abramson et al. 2018). That does not mean she understood them."
+       ]
+      }
+     ]
+    },
+    {
      "nazev": "A language?",
      "oddily": [
       {
        "h": "Not yet",
        "p": [
-        "At least not in the sense in which Czech or Czech Sign Language is a language. Human language combines units that mean something, according to rules, into ever new utterances. We know that whale communication has a complex structure, is passed on by learning and differs between groups. We do not know whether individual codas or phrases have a meaning, let alone whether they are combined into new ones.",
-        "That is why whales have no dot on the globe: the atlas records human languages as listed by Glottolog."
+        "At least not in the sense in which English or British Sign Language is a language. Human language combines units that mean something, according to rules, into ever new utterances. We know that cetacean communication has a complex structure, is passed on by learning and differs between groups much like dialects. The closest thing to a meaningful word is the dolphins' signature whistle, which works like a name. But we do not know whether sperm whale codas, humpback songs or orca calls mean anything, let alone whether they combine into new utterances.",
+        "That is why cetaceans have no dot on the globe: the atlas records human languages according to Glottolog."
        ]
       }
      ]
@@ -803,7 +840,15 @@
       "Sharma, P. et al. (2024): Contextual and combinatorial structure in sperm whale vocalisations. Nature Communications 15: 3617.",
       "Payne, R. S. – McVay, S. (1971): Songs of humpback whales. Science 173: 585–597.",
       "Garland, E. C. et al. (2011): Dynamic horizontal cultural transmission of humpback whale song at the ocean basin scale. Current Biology 21: 687–691.",
-      "Arnon, I. et al. (2025): Whale song shows language-like statistical structure. Science 387: 649–653."
+      "Arnon, I. et al. (2025): Whale song shows language-like statistical structure. Science 387: 649–653.",
+      "Caldwell, M. C. – Caldwell, D. K. (1965): Individualized whistle contours in bottlenosed dolphins (Tursiops truncatus). Nature 207: 434–435.",
+      "King, S. L. – Janik, V. M. (2013): Bottlenose dolphins can use learned vocal labels to address each other. PNAS 110: 13216–13221.",
+      "Bruck, J. N. (2013): Decades-long social memory in bottlenose dolphins. Proceedings of the Royal Society B 280: 20131726.",
+      "Herman, L. M. – Richards, D. G. – Wolz, J. P. (1984): Comprehension of sentences by bottlenosed dolphins. Cognition 16: 129–219.",
+      "Ford, J. K. B. (1991): Vocal traditions among resident killer whales (Orcinus orca) in coastal waters of British Columbia. Canadian Journal of Zoology 69: 1454–1483.",
+      "Deecke, V. B. – Ford, J. K. B. – Slater, P. J. B. (2005): The vocal behaviour of mammal-eating killer whales: communicating with costly calls. Animal Behaviour 69: 395–405.",
+      "Musser, W. B. et al. (2014): Differences in acoustic features of vocalizations produced by killer whales cross-socialized with bottlenose dolphins. Journal of the Acoustical Society of America 136: 1990–2002.",
+      "Abramson, J. Z. et al. (2018): Imitation of novel conspecific and human speech sounds in the killer whale (Orcinus orca). Proceedings of the Royal Society B 285: 20172171."
      ]
     }
    ]

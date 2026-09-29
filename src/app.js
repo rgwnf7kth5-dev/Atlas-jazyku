@@ -2437,7 +2437,7 @@ function kodVyberu(){
   if (cesta) return "cesta-" + cesta.w.id;
   if (putovani) return putovani.j.adresa[T.lang];
   if (brana) return vymysleny ? "mellon~" + vymysleny : "mellon";
-  if (zvlastni) return zvlastni === "velryby" ? (T.lang === "cs" ? "velryby" : "whales") : "babel";
+  if (zvlastni) return zvlastni === "velryby" ? (T.lang === "cs" ? "kytovci" : "cetaceans") : "babel";
   if (srovnani) return srovnani.a.kod + "~" + srovnani.b.kod;          // #cs~ar = srovnání dvou jazyků
   return !vybrany ? "" : vybrany.typ === "atlas" ? vybrany.id : REJSTRIK.g[vybrany.i] || "";
 }
@@ -2456,7 +2456,7 @@ function prectiOdkaz(){
   const h = decodeURIComponent(location.hash.slice(1));
   if (!h || h === kodVyberu()) return;
   if (h.toLowerCase() === "eulang") { spustEU(); return; }
-  if (/^(velryby|whales)$/i.test(h)) { ukazZvlastni("velryby"); return; }
+  if (/^(velryby|whales|kytovci|cetaceans)$/i.test(h)) { ukazZvlastni("velryby"); return; }
   if (/^babel$/i.test(h)) { spustBabel(); return; }
   if (/^(o-datech|about-data)$/i.test(h)) { otevriODatech(); return; }
   if (/^(kalendar|language-days)$/i.test(h)) { otevriKalendar(); return; }
@@ -4338,7 +4338,7 @@ document.addEventListener("keydown", function(e){ if (e.key === "Escape" && cest
   });
 })();
 /* ---------- tři drobná tajemství (28. 9. 2026, nápady uživatele) ----------
-   Tři klepnutí na oceán: karta „Mluví velryby?“ (kody vorvaňů, zpěv keporkaků, proč to zatím není jazyk).
+   Tři klepnutí na oceán: karta „Mluví kytovci?“ (kody vorvaňů, zpěv keporkaků, jména delfínů, nářečí kosatek, proč to zatím není jazyk).
    Sedm rychlých kliknutí na logo: glóbus se převrátí, tečky jazyků spadnou na zem, pak se vše vrátí (bez nápisu).
    „babel“ napsané kdekoli (nebo do hledání, odkaz #babel): texty na obrazovce se rozsypou do cizích písem a otevře se
    karta o Babylónské věži. Texty karet jsou v T.tajemstvi a jsou ověřené jako ostatní údaje atlasu. */

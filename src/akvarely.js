@@ -4011,7 +4011,7 @@ var AKVARELY = (function(){
       return o + palma(F, r, 30, 184, 1.2) + palma(F, r, 220, 180, 1) + palma(F, r, 380, 184, 1.3) + skupina(F, F.stetec, tah(cesta(clenit([[-10, 214], [200, 210], [420, 214]], q, 0, .04, 4)), "#FFFFFF", 1.6, .8));
     },
     /* Maledivy (maledivština): plochý korálový ostrůvek v tyrkysové laguně, bílá mešita z korálového kamene, loď dhoni */
-    /* širé moře s ocasní ploutví vorvaně a výtryskem druhé velryby – karta „Mluví velryby?“ (tři klepnutí na oceán) */
+    /* širé moře s ocasní ploutví vorvaně, výtryskem druhé velryby, hřbetní ploutví kosatky a skákajícím delfínem – karta „Mluví kytovci?“ */
     ocean: function(F, r){
       let o = nebe(F, "#8AB8E0", "#F2EEE2") + mraky(F, r, 3, 34, 86, 76) + ptaci(F, r, 3, 300, 60);
       o += voda(F, r, "M-10 150 L420 150 L420 256 L-10 256 Z", "#3E86B8", "#1C4E7E", 152, 236, 16);
@@ -4025,6 +4025,16 @@ var AKVARELY = (function(){
       let v = ""; for (let i = 0; i < 7; i++) v += tah("M92 170 q" + (i - 3) * 2 + " -10 " + (i - 3) * 5 + " -22", "#F4F8FA", .9, .75);
       o += skupina(F, F.stetec, v) + nanes(F, "M78 150 Q92 140 108 150 Q98 156 92 154 Q84 156 78 150 Z", "#F4F8FA", .8);
       o += vrstva(F, "M80 172 Q92 166 104 172 Q92 174 80 172 Z", "#56606E", "#2E3440", .9);
+      /* kosatka: vysoká černá hřbetní ploutev, za ní světlé „sedlo“ na hřbetě */
+      o += vrstva(F, "M122 204 Q150 196 186 204 Q152 207 122 204 Z", "#2A2C32", "#16181C", .95);
+      const kp = "M140 202 Q145 186 146 164 Q153 182 166 202 Z";
+      o += kryt(F, kp) + vrstva(F, kp, "#2A2C32", "#16181C", .95) + nanes(F, "M166 203 Q172 199 180 203 Q172 205 166 203 Z", "#D6DAE0", .85);
+      /* delfín v oblouku nad vlnou: tělo, hřbetní ploutev, ocas, cákance */
+      const dl = "M318 156 Q336 118 372 138 Q378 142 380 146 Q370 140 360 138 Q338 134 326 158 Z";
+      o += kryt(F, dl) + vrstva(F, dl, "#8C9AAA", "#56646F", .95);
+      o += vrstva(F, "M344 127 Q348 118 352 116 Q352 124 354 130 Z", "#56646F", "#3E4A55", .95) + vrstva(F, "M376 144 L388 138 L382 150 Z", "#56646F", "#3E4A55", .95);
+      let c = ""; [[312, 160, -6], [320, 162, -2], [328, 160, 3]].forEach(function(p){ c += tah("M" + p[0] + " " + p[1] + " l" + p[2] + " -9", "#F4F8FA", .9, .8); });
+      o += skupina(F, F.stetec, c);
       return o;
     },
     maledivy: function(F, r){
