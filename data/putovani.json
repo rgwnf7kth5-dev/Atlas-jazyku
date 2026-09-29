@@ -599,6 +599,579 @@
     "Lamprecht, A. – Šlosar, D. – Bauer, J. (1986): Historická mluvnice češtiny. Praha: SPN.",
     "Český statistický úřad (2021): Sčítání lidu, domů a bytů – mateřský jazyk."
    ]
+  },
+  {
+   "id": "kurdstina",
+   "atlas": "ku",
+   "adresa": {
+    "cs": "putovani-kurdstina",
+    "en": "journey-kurdish"
+   },
+   "nazev": {
+    "cs": "Putování kurdštiny",
+    "en": "The journey of Kurdish"
+   },
+   "uvod": {
+    "cs": "Od praindoevropštiny přes indoíránštinu stepí a příchod íránských jazyků na Íránskou náhorní plošinu až k dnešní kurdštině v horách Zagros a Taurus. Letopočty jsou přibližné, sporné výklady jsou přerušovaně.",
+    "en": "From Proto-Indo-European through the Indo-Iranian of the steppes and the arrival of the Iranian languages on the Iranian plateau to present-day Kurdish in the Zagros and Taurus mountains. Dates are approximate; disputed interpretations are dashed."
+   },
+   "etapy": [
+    {
+     "id": "pie",
+     "doba": {
+      "cs": "asi 4500–3000 př. n. l.",
+      "en": "c. 4500–3000 BCE"
+     },
+     "pohled": [
+      42,
+      44,
+      1.6
+     ],
+     "nazev": {
+      "cs": "Praindoevropština",
+      "en": "Proto-Indo-European"
+     },
+     "text": {
+      "cs": "Společný předek kurdštiny, perštiny, češtiny i stovek dalších indoevropských jazyků od islandštiny po bengálštinu. Podle dnes převládajícího výkladu, stepní hypotézy, se jím mluvilo zhruba v 5. a 4. tisíciletí př. n. l. v pontsko-kaspických stepích; opírá se o společnou slovní zásobu (kolo, náprava, vůz), archeologii a starou DNA. Menšinová anatolská hypotéza klade pravlast do Anatolie a asi o dvě až tři tisíciletí dřív (7. tisíciletí př. n. l.).",
+      "en": "The common ancestor of Kurdish, Persian, Czech and hundreds of other Indo-European languages, from Icelandic to Bengali. According to the now prevailing steppe hypothesis it was spoken roughly in the 5th and 4th millennia BCE in the Pontic–Caspian steppes; the view rests on shared vocabulary (wheel, axle, wagon), archaeology and ancient DNA. The minority Anatolian hypothesis places the homeland in Anatolia some two to three millennia earlier (7th millennium BCE)."
+     },
+     "oblasti": [
+      {
+       "id": "stepi",
+       "barva": "ie",
+       "kruhy": [
+        [
+         40,
+         48,
+         4.5
+        ],
+        [
+         35,
+         47.5,
+         3.5
+        ],
+        [
+         46,
+         47,
+         3.5
+        ]
+       ],
+       "popisek": {
+        "cs": "praindoevropština",
+        "en": "Proto-Indo-European"
+       }
+      },
+      {
+       "id": "anatolie",
+       "barva": "ie",
+       "sporna": true,
+       "kruhy": [
+        [
+         33,
+         39,
+         3.5
+        ]
+       ],
+       "popisek": {
+        "cs": "anatolská hypotéza (menšinová)",
+        "en": "Anatolian hypothesis (minority view)"
+       }
+      }
+     ],
+     "proudy": []
+    },
+    {
+     "id": "indoiranstina",
+     "doba": {
+      "cs": "asi 2200–1500 př. n. l.",
+      "en": "c. 2200–1500 BCE"
+     },
+     "pohled": [
+      62,
+      45,
+      1.4
+     ],
+     "nazev": {
+      "cs": "Indoíránština",
+      "en": "Indo-Iranian"
+     },
+     "text": {
+      "cs": "Z východní větve praindoevropštiny vznikla indoíránština, společný předek íránských a indoárijských jazyků. Spojuje se se stepními kulturami za Uralem a v Kazachstánu – se sintašťanskou kulturou (asi 2100–1800 př. n. l.), odkud pocházejí nejstarší známé válečné vozy s loukoťovými koly, a s andronovským okruhem. Indoárijská větev odtud odešla na jih do Indie, íránská zůstala ve Střední Asii.",
+      "en": "Indo-Iranian, the common ancestor of the Iranian and Indo-Aryan languages, arose from the eastern branch of Proto-Indo-European. It is associated with the steppe cultures beyond the Urals and in Kazakhstan – the Sintashta culture (c. 2100–1800 BCE), home of the oldest known spoke-wheeled chariots, and the Andronovo horizon. The Indo-Aryan branch moved south to India, the Iranian branch stayed in Central Asia."
+     },
+     "oblasti": [
+      {
+       "id": "sintasta",
+       "barva": "ii",
+       "po": "na-vychod",
+       "kruhy": [
+        [
+         60,
+         52.5,
+         3
+        ],
+        [
+         65,
+         51,
+         3
+        ],
+        [
+         70,
+         49,
+         2.5
+        ]
+       ],
+       "popisek": {
+        "cs": "indoíránština (Sintašta, Andronovo)",
+        "en": "Indo-Iranian (Sintashta, Andronovo)"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "na-vychod",
+       "barva": "ie",
+       "body": [
+        [
+         45,
+         48
+        ],
+        [
+         52,
+         50.5
+        ],
+        [
+         58,
+         52
+        ]
+       ]
+      },
+      {
+       "id": "indie",
+       "barva": "ii",
+       "body": [
+        [
+         66,
+         47
+        ],
+        [
+         67,
+         40
+        ],
+        [
+         69,
+         35
+        ],
+        [
+         73,
+         30
+        ]
+       ],
+       "popisek": {
+        "cs": "indoárijské jazyky do Indie",
+        "en": "Indo-Aryan into India"
+       }
+      }
+     ]
+    },
+    {
+     "id": "iranske",
+     "doba": {
+      "cs": "asi 1500–800 př. n. l.",
+      "en": "c. 1500–800 BCE"
+     },
+     "pohled": [
+      53,
+      36,
+      2.2
+     ],
+     "nazev": {
+      "cs": "Íránské jazyky přicházejí do Íránu",
+      "en": "Iranian languages reach Iran"
+     },
+     "text": {
+      "cs": "Íránské jazyky se ze Střední Asie rozšířily na Íránskou náhorní plošinu; cesta a doba jsou nejisté. Jako první je zachycují asyrské nápisy z 9. století př. n. l., které jmenují Médy (Madai) a Peršany (Parsua), poprvé za Salmanassara III. kolem roku 835 př. n. l. Východoíránské jazyky zůstaly ve Střední Asii a stepích (z jazyka Alanů pochází dnešní osetština na Kavkaze), západoíránské se rozdělily na severozápadní (médština, později parthština) a jihozápadní (staroperština).",
+      "en": "The Iranian languages spread from Central Asia onto the Iranian plateau; the route and timing are uncertain. They are first recorded in Assyrian inscriptions of the 9th century BCE, which name the Medes (Madai) and Persians (Parsua), first under Shalmaneser III around 835 BCE. The Eastern Iranian languages stayed in Central Asia and the steppes (today's Ossetian in the Caucasus descends from the language of the Alans); Western Iranian split into North-Western (Median, later Parthian) and South-Western (Old Persian)."
+     },
+     "oblasti": [
+      {
+       "id": "medove",
+       "barva": "ir",
+       "po": "plosina",
+       "kruhy": [
+        [
+         48.5,
+         34.8,
+         2.4
+        ],
+        [
+         47,
+         36,
+         1.8
+        ]
+       ],
+       "popisek": {
+        "cs": "Médové (severozápad)",
+        "en": "Medes (north-west)"
+       }
+      },
+      {
+       "id": "persane",
+       "barva": "ir",
+       "po": "plosina",
+       "kruhy": [
+        [
+         52.5,
+         29.9,
+         2.4
+        ],
+        [
+         51,
+         31.5,
+         1.6
+        ]
+       ],
+       "popisek": {
+        "cs": "Peršané (jihozápad)",
+        "en": "Persians (south-west)"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "plosina",
+       "barva": "ir",
+       "body": [
+        [
+         64,
+         41
+        ],
+        [
+         60,
+         37
+        ],
+        [
+         55,
+         35.5
+        ],
+        [
+         50,
+         35
+        ]
+       ],
+       "popisek": {
+        "cs": "na Íránskou náhorní plošinu",
+        "en": "onto the Iranian plateau"
+       }
+      },
+      {
+       "id": "kavkaz",
+       "barva": "ir",
+       "sporna": true,
+       "body": [
+        [
+         47,
+         46
+        ],
+        [
+         46,
+         42
+        ],
+        [
+         47,
+         38
+        ]
+       ],
+       "popisek": {
+        "cs": "přes Kavkaz? (sporné)",
+        "en": "across the Caucasus? (debated)"
+       }
+      }
+     ]
+    },
+    {
+     "id": "predkove",
+     "doba": {
+      "cs": "asi 700 př. n. l. – 900 n. l.",
+      "en": "c. 700 BCE – 900 CE"
+     },
+     "pohled": [
+      48,
+      35,
+      3.0
+     ],
+     "nazev": {
+      "cs": "Předkové kurdštiny",
+      "en": "The ancestors of Kurdish"
+     },
+     "text": {
+      "cs": "Kurdština patří k severozápadním íránským jazykům, má ale i rysy jihozápadních, perských. Odkud přesně pochází, je sporné. Starší výklad ji odvozoval z médštiny; ta je však doložena jen nepřímo, výpůjčkami ve staroperštině, a přímé spojení se prokázat nedá. Podle jiných badatelů žili předkové mluvčích kurdštiny zprvu dál na východě, ve středním Íránu, a do Zagrosu se přesunuli později. Slovo kurd se ve středoperských a raných arabských pramenech objevuje zpočátku patrně jako označení kočovníků západního Íránu, ne jednoho národa.",
+      "en": "Kurdish belongs to the North-Western Iranian languages but also has South-Western (Persian) features. Its exact origin is debated. An older view derived it from Median; Median, however, is attested only indirectly, through loanwords in Old Persian, and a direct link cannot be proven. According to other scholars the ancestors of Kurdish speakers first lived further east, in central Iran, and moved into the Zagros later. The word kurd appears in Middle Persian and early Arabic sources, at first apparently as a term for the nomads of western Iran rather than for one people."
+     },
+     "oblasti": [
+      {
+       "id": "szir",
+       "barva": "ir",
+       "kruhy": [
+        [
+         47.5,
+         36,
+         3
+        ],
+        [
+         51.5,
+         35.5,
+         2.5
+        ]
+       ],
+       "popisek": {
+        "cs": "severozápadní íránské jazyky",
+        "en": "North-Western Iranian"
+       }
+      },
+      {
+       "id": "zagros",
+       "barva": "ku",
+       "sporna": true,
+       "kruhy": [
+        [
+         47,
+         34.3,
+         2
+        ],
+        [
+         45.8,
+         35.5,
+         1.6
+        ]
+       ],
+       "popisek": {
+        "cs": "Zagros: kurdština? (původ sporný)",
+        "en": "Zagros: Kurdish? (origin debated)"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "z-vychodu",
+       "barva": "ku",
+       "sporna": true,
+       "body": [
+        [
+         53,
+         33.5
+        ],
+        [
+         50,
+         34
+        ],
+        [
+         47.5,
+         34.3
+        ]
+       ],
+       "popisek": {
+        "cs": "ze středního Íránu? (sporné)",
+        "en": "from central Iran? (debated)"
+       }
+      }
+     ]
+    },
+    {
+     "id": "sireni",
+     "doba": {
+      "cs": "asi 10.–17. století",
+      "en": "c. 10th–17th century"
+     },
+     "pohled": [
+      47,
+      37,
+      2.6
+     ],
+     "nazev": {
+      "cs": "Šíření v horách Zagros a Taurus",
+      "en": "Spread through the Zagros and Taurus"
+     },
+     "text": {
+      "cs": "Ve středověku se kurdsky mluvící obyvatelstvo rozšířilo ze Zagrosu na sever a severozápad do hor Tauru a do východní Anatolie. Po bitvě u Čaldiránu (1514) vedla kurdským územím hranice mezi Osmanskou říší a safíovským Íránem. Šáh Abbás I. na počátku 17. století přesídlil část Kurdů na severovýchod Íránu do Chorásánu, kde se kurdsky mluví dodnes. Z téže doby pocházejí první velká díla kurdské literatury: básně Melayê Cizîrî a epos Mem û Zîn Ahmada Xaniho z roku 1692.",
+      "en": "In the Middle Ages the Kurdish-speaking population spread from the Zagros north and north-west into the Taurus mountains and eastern Anatolia. After the Battle of Chaldiran (1514) the border between the Ottoman Empire and Safavid Iran ran through Kurdish lands. In the early 17th century Shah Abbas I resettled part of the Kurds in Khorasan in north-eastern Iran, where Kurdish is still spoken. The first major works of Kurdish literature date from the same period: the poems of Melayê Cizîrî and Ahmad Xani's epic Mem û Zîn of 1692."
+     },
+     "oblasti": [],
+     "proudy": [
+      {
+       "id": "anatolie",
+       "barva": "ku",
+       "body": [
+        [
+         46,
+         35.5
+        ],
+        [
+         44.5,
+         37.2
+        ],
+        [
+         41.5,
+         38.3
+        ],
+        [
+         38.5,
+         38.6
+        ]
+       ],
+       "popisek": {
+        "cs": "do východní Anatolie",
+        "en": "into eastern Anatolia"
+       }
+      },
+      {
+       "id": "taurus",
+       "barva": "ku",
+       "body": [
+        [
+         45.5,
+         36.5
+        ],
+        [
+         43.2,
+         37.4
+        ],
+        [
+         40.5,
+         37.3
+        ]
+       ]
+      },
+      {
+       "id": "chorasan",
+       "barva": "ku",
+       "body": [
+        [
+         46.5,
+         36.8
+        ],
+        [
+         51,
+         37.6
+        ],
+        [
+         55,
+         37.8
+        ],
+        [
+         58.5,
+         37.2
+        ]
+       ],
+       "popisek": {
+        "cs": "do Chorásánu (přesídlení, 17. stol.)",
+        "en": "to Khorasan (resettlement, 17th c.)"
+       }
+      }
+     ]
+    },
+    {
+     "id": "dnes",
+     "doba": {
+      "cs": "dnes",
+      "en": "today"
+     },
+     "pohled": [
+      44,
+      36.5,
+      3.2
+     ],
+     "nazev": {
+      "cs": "Kurdština dnes",
+      "en": "Kurdish today"
+     },
+     "text": {
+      "cs": "Kurdština se dělí na tři hlavní varianty, jejichž mluvčí si navzájem rozumějí jen omezeně: severní kurmándží (Turecko, Sýrie, sever Iráku, Írán, Kavkaz a Chorásán), střední sorání (irácký a íránský Kurdistán) a jižní kurdštinu (Kermánšáh, Ílám). Jazyky zazaki a gorání, kterými mluví také převážně Kurdové, jazykovědci řadí zvlášť. Kurdština se píše latinkou (abeceda Celadeta Bedirxana z roku 1932; Turecko, Sýrie), arabským písmem (Irák, Írán) a v Sovětském svazu se psala cyrilicí. V Iráku je od ústavy z roku 2005 úředním jazykem. Počet mluvčích se odhaduje zhruba na 20 až 30 milionů.",
+      "en": "Kurdish is divided into three main varieties whose speakers understand each other only partly: Northern Kurmanji (Turkey, Syria, northern Iraq, Iran, the Caucasus and Khorasan), Central Sorani (Iraqi and Iranian Kurdistan) and Southern Kurdish (Kermanshah, Ilam). Zazaki and Gorani, also spoken mostly by Kurds, are classified separately by linguists. Kurdish is written in the Latin script (Celadet Bedirxan's alphabet of 1932; Turkey, Syria), in the Arabic script (Iraq, Iran), and in the Soviet Union it was written in Cyrillic. In Iraq it has been an official language since the 2005 constitution. The number of speakers is estimated at roughly 20 to 30 million."
+     },
+     "oblasti": [
+      {
+       "id": "kmr",
+       "barva": "kmr",
+       "kruhy": [
+        [
+         41,
+         38.6,
+         2.4
+        ],
+        [
+         38.5,
+         37.6,
+         1.5
+        ],
+        [
+         43.6,
+         37.3,
+         1.6
+        ],
+        [
+         58.6,
+         37.2,
+         1.1
+        ]
+       ],
+       "popisek": {
+        "cs": "kurmándží",
+        "en": "Kurmanji"
+       }
+      },
+      {
+       "id": "ckb",
+       "barva": "ckb",
+       "kruhy": [
+        [
+         45.2,
+         35.9,
+         1.7
+        ],
+        [
+         46.2,
+         35.2,
+         1.3
+        ]
+       ],
+       "popisek": {
+        "cs": "sorání",
+        "en": "Sorani"
+       }
+      },
+      {
+       "id": "sdh",
+       "barva": "sdh",
+       "kruhy": [
+        [
+         46.8,
+         34.1,
+         1.4
+        ],
+        [
+         46.9,
+         33.2,
+         1.1
+        ]
+       ],
+       "popisek": {
+        "cs": "jižní kurdština",
+        "en": "Southern Kurdish"
+       }
+      }
+     ],
+     "proudy": []
+    }
+   ],
+   "zdroje": [
+    "Mallory, J. P. – Adams, D. Q. (2006): The Oxford Introduction to Proto-Indo-European and the Proto-Indo-European World. Oxford University Press.",
+    "Anthony, D. W. (2007): The Horse, the Wheel, and Language. Princeton University Press.",
+    "Windfuhr, G. (ed.) (2009): The Iranian Languages. Routledge.",
+    "MacKenzie, D. N. (1961): The origins of Kurdish. Transactions of the Philological Society 60.",
+    "Paul, L. (2008): Kurdish language i. History of the Kurdish language. Encyclopaedia Iranica.",
+    "Haig, G. – Öpengin, E. (2014): Kurdish: A critical research overview. Kurdish Studies 2."
+   ]
   }
  ]
 }

@@ -583,7 +583,7 @@ function nactiBarvy(){
    "atmosfera", "atmosfera2", "sit", "hranice", "okraj-koule", "zamerovac-lem",
    "r-ie", "r-st", "r-an", "r-afro", "r-nk", "r-ost", "more1", "more2", "souse1", "souse2", "souse-vit", "uzemi",
    "podlaha", "podlaha-2", "obzor", "text2", "stin-plochy", "stin-plochy-2",
-   "put-ie", "put-bs", "put-sl", "put-zsl", "put-jsl", "put-vsl", "put-cs"].forEach(function(k){ barvy[k] = s.getPropertyValue("--" + k).trim(); });
+   "put-ie", "put-bs", "put-sl", "put-zsl", "put-jsl", "put-vsl", "put-cs", "put-ii", "put-ir", "put-ku", "put-kmr", "put-ckb", "put-sdh"].forEach(function(k){ barvy[k] = s.getPropertyValue("--" + k).trim(); });
 }
 
 const fJaz = new Float32Array(POCET_B), zakladJaz = new Float32Array(POCET_B);   // příznaky teček: 0 obyčejná, 1 vybraná, 2 příbuzná, 3 pod myší
@@ -4274,9 +4274,18 @@ function kresliPutovani(c, cas, promitni){
   c.globalAlpha = 1;
   /* popisky oblastí a proudů aktuální etapy */
   c.textBaseline = "middle"; c.textAlign = "center"; c.lineJoin = "round";
+  const obsaz = [];                            // popisek, který by překryl jiný, se posune nahoru nebo dolů, jinak vynechá
   popisky.forEach(function(x){
-    c.font = (x[3] ? "italic " : "") + "600 12.5" + PISMO; c.lineWidth = 3.6; c.strokeStyle = barvy["popisek-lem"]; c.strokeText(x[0], x[1], x[2]);
-    c.fillStyle = barvy.popisek; c.fillText(x[0], x[1], x[2]);
+    c.font = (x[3] ? "italic " : "") + "600 12.5" + PISMO;
+    const w = c.measureText(x[0]).width;
+    const y = [0, -17, 17, -34, 34].map(function(d){ return x[2] + d; }).find(function(yy){
+      const b = [x[1] - w / 2 - 4, yy - 9, x[1] + w / 2 + 4, yy + 9];
+      return !obsaz.some(function(o){ return b[0] < o[2] && b[2] > o[0] && b[1] < o[3] && b[3] > o[1]; });
+    });
+    if (y == null) return;
+    obsaz.push([x[1] - w / 2 - 4, y - 9, x[1] + w / 2 + 4, y + 9]);
+    c.lineWidth = 3.6; c.strokeStyle = barvy["popisek-lem"]; c.strokeText(x[0], x[1], y);
+    c.fillStyle = barvy.popisek; c.fillText(x[0], x[1], y);
   });
   c.textAlign = "start";
 }
