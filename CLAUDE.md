@@ -548,6 +548,16 @@ dvě sporné cesty (Balkán, nebo Kavkaz – Lazaridis 2025), proud do Íránu s
 „asi 1000 př. n. l. – 500 n. l.“ s rozdílnými datacemi (Lamprecht vs. 1. tis. n. l.), etapa „Šíření slovanštiny“ (ne „stěhování“ –
 migrace je sporná, Curta 2001), Ilmeň až v 8. století (přerušovaně), proud do Čech přes Moravu, čeština asi 10 milionů rodilých
 mluvčích (ČSÚ 2021), s nerodilými kolem 11 milionů.
+**Kurdština** (29. 9. 2026, `#putovani-kurdstina` / `#journey-kurdish`, tlačítko na kartě kurdštiny): PIE, indoíránština (Sintašta,
+Andronovo), íránské jazyky na náhorní plošině (Médové, Peršané, sporná cesta přes Kavkaz), předkové kurdštiny (SZ íránský jazyk
+s JZ rysy, médská teorie neprokazatelná, MacKenzie: sousedství Peršanů u Isfahánu – sporné), šíření do Tauru a Anatolie,
+přesídlení do Chorásánu, dnes kurmándží / sorání / jižní kurdština. Barvy `--put-ii`, `--put-ir`, `--put-ku`, `--put-kmr`,
+`--put-ckb`, `--put-sdh`. Popisky proudů a oblastí se nepřekrývají (posun o ±17 px, jinak vynechat). Při ověření opraveno:
+Parsua 843 a Médové (Amadai) 835 př. n. l. u Salmanassara III., spojení Parsua s Peršany sporné; médština doložena i jmény;
+teorie středního Íránu je MacKenzieho (Isfahán); přesídlení do Chorásánu kolem 1600 přes Varámin (proud nesmí přes Kaspik);
+hranice ustálena mírem ze Zuhábu 1639; Cizîrî asi 1570–1640, Ehmedê Xanî, „klasická literatura v kurmándží“; v SSSR arménské
+písmo, latinka, od 1946 cyrilice; úřední jazyk celého Iráku od 2004 (potvrzeno 2005); 25–30 milionů mluvčích; zazaki a gorání
+neutrálně (mluvčí se většinou hlásí ke Kurdům, jazykovědci je řadí zvlášť).
 **Jak vznikla spisovná čeština** (`#spisovna-cestina` / `#standard-czech`, skupina „Jazyky v čase“, akvarel `tiskarna`; 27. 9. 2026):
 glosy a první věty, spřežky a diakritika, Blahoslav, Bible kralická, pobělohorské období („doba temna“ jen jako obrozenecký pojem),
 Dobrovský, Jungmann, Rukopisy, Gebauer, Pravidla 1902, Pražský lingvistický kroužek, spisovná × obecná čeština (diglosie jako sporná).
