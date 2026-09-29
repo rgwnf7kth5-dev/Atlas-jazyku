@@ -587,8 +587,16 @@ Oguzů“ (ne „předky Turků byli Oguzové“), výchozí bod Oguzů sporný;
 v Nikaii, Konya od 1097; v Anatolii dál řecky, arménsky a kurdsky mluvící komunity; Tonjukukův nápis v údolí Tuulu; „Türk“ poprvé
 542; do Evropy přes Dardanely (1354), ne přes Bospor; balkánské jazyky převzaly tisíce slov (Škaljić); altajskou hypotézu
 většina lingvistů odmítá; šipky nesmí přes Zajsan ani Vanské jezero.
+**Angličtina** (29. 9. 2026, `#putovani-anglictina` / `#journey-english`, 6 etap: Anglové a Sasové, vikingové a Danelaw, Normané
+a střední angličtina, Shakespeare a první kolonie, po celém světě, světový jazyk). Při ověření opraveno: Alfréd ve Wessexu (ne
+„v Sasku“); nejbližší příbuzné fríské jazyky (Scots stranou); Thames není jistě keltské (Avon, Exe, Derwent); velká změna samohlásek
+asi 1400–1700, tisk ustálil pravopis; Chaucer asi 1387–1400; Caxton ve Westminsteru; ústup původních jazyků výslovně (úbytek
+obyvatel, ztráta půdy, školy a úřední opatření), angličtinu přinesli osadníci (ne „se usadila“); varianty „svébytné“, ne
+„rovnocenné“; 370–400 milionů rodilých; První flotila do Austrálie přes Kapské Město kolem Tasmánie; šipky nesmí přes Nizozemsko,
+Skotsko, Karibské ostrovy, západní Afriku ani Madagaskar.
 **Koncepty:** putování s `"koncept": true` build vynechá (jen `PUT_KONCEPTY=1 npm run build` pro náhled), takže neověřená
-putování mohou ležet v datech, zatímco se zveřejňují jiná. Po ověření příznak smazat.
+putování mohou ležet v datech, zatímco se zveřejňují jiná. Po ověření příznak smazat. Etapa s `"predel": true`
+nekreslí šipky předchozí etapy (u jidiš Holokaust, aby přes zničené obce nevedly šipky emigrace).
 **Jak vznikla spisovná čeština** (`#spisovna-cestina` / `#standard-czech`, skupina „Jazyky v čase“, akvarel `tiskarna`; 27. 9. 2026):
 glosy a první věty, spřežky a diakritika, Blahoslav, Bible kralická, pobělohorské období („doba temna“ jen jako obrozenecký pojem),
 Dobrovský, Jungmann, Rukopisy, Gebauer, Pravidla 1902, Pražský lingvistický kroužek, spisovná × obecná čeština (diglosie jako sporná).

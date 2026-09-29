@@ -4239,7 +4239,6 @@
   {
    "id": "anglictina",
    "atlas": "en",
-   "koncept": true,
    "adresa": {
     "cs": "putovani-anglictina",
     "en": "journey-english"
@@ -4269,8 +4268,8 @@
       "en": "Angles, Saxons and Jutes"
      },
      "text": {
-      "cs": "Angličtina je germánský jazyk; nejbližší příbuznou má fríštinu. Její předkové, nářečí Anglů, Sasů, Jutů a Frísů z pobřeží Severního moře, se do Británie dostala v 5. a 6. století, po odchodu římských vojsk kolem roku 410; Beda Ctihodný klade příchod Anglů a Sasů do roku 449. Obyvatelé Británie mluvili tehdy brittskými keltskými jazyky a zčásti latinou. Staroangličtina od nich převzala jen málo slov, keltské jsou ale mnohé názvy řek (Avon, Thames). Brittské jazyky se udržely na západě, ve Walesu a Cornwallu, a část Britů odešla do Bretaně.",
-      "en": "English is a Germanic language; its closest relative is Frisian. Its ancestors, the dialects of the Angles, Saxons, Jutes and Frisians of the North Sea coast, reached Britain in the 5th and 6th centuries, after the Roman troops left around 410; Bede dates the arrival of the Angles and Saxons to 449. The people of Britain then spoke Brittonic Celtic languages and partly Latin. Old English took few words from them, but many river names are Celtic (Avon, Thames). The Brittonic languages survived in the west, in Wales and Cornwall, and some Britons moved to Brittany."
+      "cs": "Angličtina je germánský jazyk; nejbližší příbuzné jsou fríské jazyky (nepočítáme-li skotskou Scots, která vznikla ze severní angličtiny). Její předkové, nářečí Anglů, Sasů, Jutů a Frísů z pobřeží Severního moře, se do Británie dostala v 5. a 6. století, po odchodu římských vojsk kolem roku 410; Beda Ctihodný klade příchod Anglů a Sasů do roku 449. Obyvatelé Británie mluvili tehdy brittskými keltskými jazyky a zčásti latinou. Staroangličtina od nich převzala jen málo slov, keltské jsou ale mnohé názvy řek (Avon, Exe, Derwent). Brittské jazyky se udržely na západě, ve Walesu a Cornwallu a do 11. století i na severozápadě (kumbrijština), a část Britů odešla do Bretaně.",
+      "en": "English is a Germanic language; its closest relatives are the Frisian languages (leaving aside Scots, which developed from northern English). Its ancestors, the dialects of the Angles, Saxons, Jutes and Frisians of the North Sea coast, reached Britain in the 5th and 6th centuries, after the Roman troops left around 410; Bede dates the arrival of the Angles and Saxons to 449. The people of Britain then spoke Brittonic Celtic languages and partly Latin. Old English took few words from them, but many river names are Celtic (Avon, Exe, Derwent). The Brittonic languages survived in the west, in Wales and Cornwall, and until the 11th century in the north-west (Cumbric), and some Britons moved to Brittany."
      },
      "oblasti": [
       {
@@ -4383,16 +4382,24 @@
        "barva": "gm",
        "body": [
         [
-         7.5,
-         53.2
+         8.8,
+         53.6
         ],
         [
-         4,
-         52.5
+         6.5,
+         53.9
         ],
         [
-         1.6,
-         51.8
+         4.3,
+         53.3
+        ],
+        [
+         2.5,
+         52.2
+        ],
+        [
+         0.9,
+         51.7
         ]
        ]
       },
@@ -4436,7 +4443,7 @@
       "en": "The Vikings and the Danelaw"
      },
      "text": {
-      "cs": "Roku 793 vikingové vyplenili klášter Lindisfarne a v 9. století se Dánové usadili na velké části severní a východní Anglie, v oblasti zvané Danelaw. Stará norština byla staroangličtině blízká a obě řeči se mísily: z norštiny má angličtina i velmi běžná slova jako sky, egg, skin, take a dokonce zájmena they, them, their. Norové osídlili Shetlandy, Orkneje a Hebridy. Alfréd Veliký (vládl 871–899) přitom v Sasku podporoval psaní v angličtině a dal do ní přeložit latinské knihy.",
+      "cs": "Roku 793 vikingové vyplenili klášter Lindisfarne a v 9. století se Dánové usadili na velké části severní a východní Anglie, v oblasti zvané Danelaw. Stará norština byla staroangličtině blízká a obě řeči se mísily: ze staré norštiny má angličtina i velmi běžná slova jako sky, egg, skin, take a dokonce zájmena they, them, their. Norové osídlili Shetlandy, Orkneje a Hebridy. Alfréd Veliký (vládl 871–899) přitom ve Wessexu podporoval psaní v angličtině a dal do ní přeložit latinské knihy.",
       "en": "In 793 the Vikings sacked the monastery of Lindisfarne, and in the 9th century the Danes settled much of northern and eastern England, in the area called the Danelaw. Old Norse was close to Old English and the two mingled: from Norse English has very common words such as sky, egg, skin and take, and even the pronouns they, them and their. Norwegians settled Shetland, Orkney and the Hebrides. Meanwhile Alfred the Great (reigned 871–899) promoted writing in English in Wessex and had Latin books translated into it."
      },
      "oblasti": [
@@ -4514,25 +4521,33 @@
        "barva": "non",
        "body": [
         [
-         5.5,
-         60.5
+         5.3,
+         60.4
         ],
         [
-         0,
-         60
+         -1.2,
+         60.2
         ],
         [
-         -2.5,
-         59.2
+         -2.9,
+         59
         ],
         [
-         -5.5,
-         58
+         -4.6,
+         58.85
+        ],
+        [
+         -5.6,
+         58.5
+        ],
+        [
+         -6.4,
+         58.2
         ]
        ],
        "popisek": {
-        "cs": "Norové (Orkneje, Hebridy)",
-        "en": "Norwegians (Orkney, Hebrides)"
+        "cs": "Norové (Shetlandy, Orkneje, Hebridy)",
+        "en": "Norwegians (Shetland, Orkney, Hebrides)"
        }
       }
      ]
@@ -4553,8 +4568,8 @@
       "en": "The Normans and Middle English"
      },
      "text": {
-      "cs": "Roku 1066 porazil normanský vévoda Vilém u Hastingsu anglického krále Harolda. Jazykem dvora, šlechty a práva se na staletí stala normanská francouzština, jazykem církve a učenosti latina; angličtinou mluvil hlavně lid. Z francouzštiny přišly tisíce slov, často vedle anglických: zvíře na pastvě je anglické cow, pig, maso na stole francouzské beef, pork. Ztrátou většiny koncovek vznikla střední angličtina; kolem roku 1400 v ní psal Geoffrey Chaucer Canterburské povídky. Roku 1476 zřídil William Caxton v Londýně první tiskárnu a začala velká změna samohlásek, kvůli níž se dnes anglická slova vyslovují jinak, než se píší.",
-      "en": "In 1066 Duke William of Normandy defeated the English king Harold at Hastings. For centuries Norman French became the language of the court, the nobility and the law, and Latin that of the Church and learning; English was spoken mainly by ordinary people. Thousands of words came from French, often alongside English ones: the animal in the field is English cow, pig, the meat on the table French beef, pork. With the loss of most endings Middle English emerged; around 1400 Geoffrey Chaucer wrote the Canterbury Tales in it. In 1476 William Caxton set up the first printing press in London, and the Great Vowel Shift began, which is why English words are now pronounced differently from how they are spelled."
+      "cs": "Roku 1066 porazil normanský vévoda Vilém u Hastingsu anglického krále Harolda. Jazykem dvora, šlechty a práva se na staletí stala normanská francouzština, jazykem církve a učenosti latina; angličtinou mluvil hlavně lid. Z francouzštiny přišly tisíce slov, často vedle anglických: zvíře na pastvě je anglické cow, pig, maso na stole francouzské beef, pork. Pro střední angličtinu (asi 1100–1500) je typická ztráta většiny koncovek; koncem 14. století (asi 1387–1400) v ní psal Geoffrey Chaucer Canterburské povídky. Roku 1476 zřídil William Caxton ve Westminsteru první tiskárnu v Anglii a tisk začal ustalovat pravopis. Výslovnost se však měnila dál: velká změna samohlásek (asi 1400–1700) posunula dlouhé samohlásky, a proto se dnes anglická slova vyslovují jinak, než se píší.",
+      "en": "In 1066 Duke William of Normandy defeated the English king Harold at Hastings. For centuries Norman French became the language of the court, the nobility and the law, and Latin that of the Church and learning; English was spoken mainly by ordinary people. Thousands of words came from French, often alongside English ones: the animal in the field is English cow, pig, the meat on the table French beef, pork. Middle English (c. 1100–1500) is marked by the loss of most endings; between about 1387 and 1400 Geoffrey Chaucer wrote the Canterbury Tales in it. In 1476 William Caxton set up the first printing press in England, at Westminster, and print began to fix spelling. Pronunciation kept changing, however: the Great Vowel Shift (c. 1400–1700) moved the long vowels, which is why English words are now pronounced differently from how they are spelled."
      },
      "oblasti": [
       {
@@ -4605,16 +4620,16 @@
        "barva": "fr",
        "body": [
         [
-         -0.3,
+         -0.1,
          49.3
         ],
         [
-         0.2,
+         0.3,
          50.2
         ],
         [
-         0.6,
-         50.85
+         0.33,
+         50.82
         ]
        ],
        "popisek": {
@@ -4640,8 +4655,8 @@
       "en": "Shakespeare and the first colonies"
      },
      "text": {
-      "cs": "Raná nová angličtina je jazyk Shakespeara (1564–1616) a Bible krále Jakuba (1611). Angličtina tehdy na Britských ostrovech postupně vytlačovala velštinu, irštinu a skotskou gaelštinu. Roku 1607 vznikla v Jamestownu ve Virginii první trvalá anglická osada v Americe a roku 1620 připluli do Plymouthu otcové poutníci. V 17. a 18. století se angličtina usadila na východním pobřeží Severní Ameriky a v Karibiku, kde z ní spolu s africkými jazyky zotročených lidí vznikly kreolské jazyky, například jamajská kreolština.",
-      "en": "Early Modern English is the language of Shakespeare (1564–1616) and the King James Bible (1611). At that time English was gradually displacing Welsh, Irish and Scottish Gaelic in the British Isles. In 1607 Jamestown in Virginia became the first permanent English settlement in America, and in 1620 the Pilgrims landed at Plymouth. In the 17th and 18th centuries English settled along the eastern coast of North America and in the Caribbean, where together with the African languages of enslaved people it gave rise to creole languages such as Jamaican Creole."
+      "cs": "Raná nová angličtina je jazyk Shakespeara (1564–1616) a Bible krále Jakuba (1611). Angličtina tehdy na Britských ostrovech postupně vytlačovala velštinu, irštinu a skotskou gaelštinu. Roku 1607 vznikla v Jamestownu ve Virginii první trvalá anglická osada v Americe a roku 1620 připluli do Plymouthu otcové poutníci. V 17. a 18. století přinesli angličtinu osadníci na východní pobřeží Severní Ameriky a do Karibiku, kde z ní spolu s africkými jazyky zotročených lidí vznikly kreolské jazyky, například jamajská kreolština.",
+      "en": "Early Modern English is the language of Shakespeare (1564–1616) and the King James Bible (1611). At that time English was gradually displacing Welsh, Irish and Scottish Gaelic in the British Isles. In 1607 Jamestown in Virginia became the first permanent English settlement in America, and in 1620 the Pilgrims landed at Plymouth. In the 17th and 18th centuries settlers brought English to the eastern coast of North America and to the Caribbean, where together with the African languages of enslaved people it gave rise to creole languages such as Jamaican Creole."
      },
      "oblasti": [
       {
@@ -4723,8 +4738,8 @@
        "barva": "en",
        "body": [
         [
-         -6,
-         50
+         -4.2,
+         50.3
         ],
         [
          -25,
@@ -4732,11 +4747,19 @@
         ],
         [
          -50,
-         40.5
+         40
         ],
         [
-         -75.8,
-         37.4
+         -72,
+         37
+        ],
+        [
+         -75.98,
+         36.98
+        ],
+        [
+         -76.78,
+         37.21
         ]
        ],
        "popisek": {
@@ -4754,14 +4777,22 @@
         ],
         [
          -30,
-         30
+         28
         ],
         [
          -55,
-         18
+         15
         ],
         [
-         -75.5,
+         -59.4,
+         13.1
+        ],
+        [
+         -68,
+         15.5
+        ],
+        [
+         -76.8,
          18
         ]
        ]
@@ -4784,8 +4815,8 @@
       "en": "Around the world"
      },
      "text": {
-      "cs": "S Britským impériem se angličtina dostala do Indie, Austrálie (od roku 1788), jižní a západní Afriky a jihovýchodní Asie. Šířila se jako jazyk správy, obchodu a škol, často na úkor místních jazyků; v Austrálii a Severní Americe přispěla k ústupu mnoha původních jazyků. Po získání nezávislosti ji řada zemí ponechala jako úřední jazyk, který spojuje obyvatele s různými mateřskými jazyky. Americká angličtina si vytvořila vlastní normu, kterou ustálil slovník Noaha Webstera (1828). Ve 20. století se angličtina díky Spojeným státům stala hlavním jazykem vědy, letectví, obchodu a později internetu.",
-      "en": "With the British Empire English reached India, Australia (from 1788), southern and western Africa and South-East Asia. It spread as a language of administration, trade and schooling, often at the expense of local languages; in Australia and North America it contributed to the decline of many Indigenous languages. After independence many countries kept it as an official language that links speakers of different mother tongues. American English developed its own standard, fixed by Noah Webster's dictionary (1828). In the 20th century, thanks largely to the United States, English became the main language of science, aviation, business and later the internet."
+      "cs": "S Britským impériem se angličtina dostala do Indie, Austrálie (od roku 1788), jižní, východní a západní Afriky a jihovýchodní Asie. Šířila se jako jazyk správy, obchodu a škol, často na úkor místních jazyků. V Austrálii a Severní Americe mnoho původních jazyků ustoupilo nebo zaniklo – s úbytkem obyvatel a ztrátou půdy i vlivem škol a úředních opatření, která jejich používání potlačovala. Po získání nezávislosti ji řada zemí ponechala jako úřední jazyk, který spojuje obyvatele s různými mateřskými jazyky. Americká angličtina si vytvořila vlastní normu, k jejímuž ustálení přispěl slovník Noaha Webstera (1828). Ve 20. století se angličtina hlavně vlivem Spojených států stala hlavním jazykem vědy, letectví, obchodu a později internetu.",
+      "en": "With the British Empire English reached India, Australia (from 1788), southern, eastern and western Africa and South-East Asia. It spread as a language of administration, trade and schooling, often at the expense of local languages. In Australia and North America many Indigenous languages declined or died out – through population loss and dispossession, and through schools and official policies that suppressed their use. After independence many countries kept it as an official language that links speakers of different mother tongues. American English developed its own standard, which Noah Webster's dictionary (1828) helped to fix. In the 20th century, largely through the influence of the United States, English became the main language of science, aviation, business and later the internet."
      },
      "oblasti": [
       {
@@ -4871,16 +4902,24 @@
          25
         ],
         [
+         -21,
+         12
+        ],
+        [
          -12,
-         5
+         2
         ],
         [
          5,
          -20
         ],
         [
-         18.5,
-         -33.5
+         15,
+         -31
+        ],
+        [
+         18.45,
+         -33.92
         ]
        ],
        "popisek": {
@@ -4893,20 +4932,32 @@
        "barva": "en",
        "body": [
         [
-         20,
-         -36
+         18.45,
+         -33.92
         ],
         [
-         45,
-         -18
+         20,
+         -36.5
+        ],
+        [
+         35,
+         -34
+        ],
+        [
+         48,
+         -27
+        ],
+        [
+         55,
+         -15
         ],
         [
          62,
          5
         ],
         [
-         72.8,
-         18.9
+         72.85,
+         18.95
         ]
        ]
       },
@@ -4915,23 +4966,39 @@
        "barva": "en",
        "body": [
         [
-         74,
-         12
+         18.45,
+         -33.92
         ],
         [
-         88,
-         -10
+         20,
+         -37
         ],
         [
-         115,
-         -35
-        ],
-        [
-         140,
+         60,
          -40
         ],
         [
-         151,
+         100,
+         -42
+        ],
+        [
+         130,
+         -44
+        ],
+        [
+         146.8,
+         -44.6
+        ],
+        [
+         150.5,
+         -42
+        ],
+        [
+         152.3,
+         -37
+        ],
+        [
+         151.22,
          -34
         ]
        ],
@@ -4958,8 +5025,8 @@
       "en": "A world language"
      },
      "text": {
-      "cs": "Angličtinou dnes mluví asi 1,5 miliardy lidí, ale jen zhruba 380–400 milionů z nich jako mateřským jazykem; je tak nejrozšířenějším druhým jazykem na světě. Je úředním jazykem asi šedesáti zemí. Vedle britské a americké angličtiny existují rovnocenné varianty – australská, indická, nigerijská nebo singapurská – a z angličtiny vzešla i řada kreolských jazyků, například tok pisin na Papui Nové Guineji. Většina lidí, kteří dnes anglicky mluví, ji používá s lidmi, pro něž není mateřštinou.",
-      "en": "About 1.5 billion people speak English today, but only some 380–400 million of them as their mother tongue; it is thus the world's most widely spoken second language. It is an official language of about sixty countries. Alongside British and American English there are equally valid varieties – Australian, Indian, Nigerian or Singaporean – and English has also given rise to a number of creoles, such as Tok Pisin in Papua New Guinea. Most people who speak English today use it with others for whom it is not a mother tongue."
+      "cs": "Angličtinou dnes mluví asi 1,5 miliardy lidí, ale jen zhruba 370–400 milionů z nich jako mateřským jazykem; je tak nejrozšířenějším druhým jazykem na světě. Je úředním jazykem asi šedesáti zemí. Vedle britské a americké angličtiny existují svébytné varianty s vlastní normou – australská, indická, nigerijská nebo singapurská – a z angličtiny vzešla i řada kreolských jazyků s anglickou slovní zásobou, například tok pisin na Papui Nové Guineji. Většina lidí, kteří dnes angličtinou mluví, ji používá s lidmi, pro něž není mateřštinou.",
+      "en": "About 1.5 billion people speak English today, but only some 370–400 million of them as their mother tongue; it is thus the world's most widely spoken second language. It is an official language of about sixty countries. Alongside British and American English there are distinct varieties with their own norms – Australian, Indian, Nigerian or Singaporean – and English has also given rise to a number of English-lexified creoles, such as Tok Pisin in Papua New Guinea. Most people who speak English today use it with others for whom it is not a mother tongue."
      },
      "oblasti": [
       {
@@ -4997,8 +5064,13 @@
          7
         ],
         [
-         172,
-         -41,
+         175.5,
+         -38.8,
+         2
+        ],
+        [
+         170.8,
+         -43.8,
          2
         ]
        ],
@@ -5040,6 +5112,11 @@
          -77.3,
          18.1,
          0.7
+        ],
+        [
+         103.8,
+         1.35,
+         0.6
         ]
        ],
        "popisek": {
@@ -5052,12 +5129,13 @@
     }
    ],
    "zdroje": [
-    "Baugh, A. C. – Cable, T. (2013): A History of the English Language. 6th ed. London: Routledge.",
+    "Baugh, A. C. – Cable, T. (2013): A History of the English Language. 6th ed. London – New York: Routledge.",
     "Crystal, D. (2003): English as a Global Language. 2nd ed. Cambridge University Press.",
     "Crystal, D. (2019): The Cambridge Encyclopedia of the English Language. 3rd ed. Cambridge University Press.",
     "Hogg, R. – Denison, D. (eds.) (2006): A History of the English Language. Cambridge University Press.",
-    "Townend, M. (2002): Language and History in Viking Age England. Turnhout: Brepols.",
-    "Eberhard, D. M. – Simons, G. F. – Fennig, C. D. (eds.): Ethnologue: Languages of the World. SIL International (English)."
+    "Townend, M. (2002): Language and History in Viking Age England: Linguistic Relations between Speakers of Old Norse and Old English. Turnhout: Brepols (Studies in the Early Middle Ages 6).",
+    "Eberhard, D. M. – Simons, G. F. – Robinson, A. J. (eds.) (2026): Ethnologue: Languages of the World. 29th ed. Dallas: SIL Global.",
+    "National Indigenous Languages Report (2020). Canberra: Australian Government."
    ]
   },
   {
