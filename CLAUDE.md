@@ -650,6 +650,12 @@ Pákistán, tvary hlaholice sporné, cyrilici sestavili žáci (Preslav), Sázav
 Cap Bon, Bizertu, Peloponés ani Kalábrii (Messinská úžina).
 **Putování maltštiny** (30. 9. 2026, koncept, `#putovani-maltstina` / `#journey-maltese`, 6 etap: semitské kořeny, Arabové
 v severní Africe a na Sicílii, nové osídlení 1048/1049, Normané, johanité a Britové, dnes). Barvy `--put-sem, sar, mt, itm, enm`.
+Při ověření opraveno: nejstarší stará arabština už z posledních století př. n. l. (Karjat al-Fáw), dobývání Sicílie 827–902,
+al-Himjarí je pramen z 15. století a původ osadníků (Sicílie, snad Ifríkija) je výklad, Roger II. roku 1127 ještě hrabě (král
+od 1130), jazyková otázka byl spor italštiny s angličtinou (britská strana podporovala i maltštinu), angličtina úřední od 1921,
+Għaqda tal-Kittieba tal-Malti založena 1920, pravopis zveřejněn 1924 a uznán 1934, Kantilenu složil Pietru Caxaro († 1485)
+a zapsal ji synovec 1533–1536, „ve spisovné podobě píše latinkou“, necelých 600 tisíc obyvatel (NSO 2025); šipky nesmí přes
+Bretaň, mys sv. Vincence, Cap Bon ani jihovýchodní cíp Sicílie.
 **Vstup do putování** (29. 9. 2026, uživatel vybral z návrhů jen „skupinu v Příbězích“): v okně Příběhy jazyků je za skupinou
 Slova na cestách skupina **Putování jazyků** (`vlozPutovani` v `otevriSekci`) s dlaždicí pro každé putování – akvarel jazyka
 (`/malby/<atlas>.jpg`, v artefaktu `malbaObrazek`, bez oživení), název a `podtitul` (povinný, validace). Tlačítko na kartě jazyka

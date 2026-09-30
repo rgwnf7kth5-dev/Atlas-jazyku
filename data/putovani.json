@@ -7814,8 +7814,8 @@
     "en": "An Arabic that parted from the Arab world"
    },
    "uvod": {
-    "cs": "Jak se arabština dostala přes severní Afriku a Sicílii na Maltu, proč se tu po odchodu muslimů udržela a jak z ní vznikl jediný semitský jazyk psaný latinkou. Letopočty jsou přibližné, sporné výklady jsou přerušovaně.",
-    "en": "How Arabic reached Malta via North Africa and Sicily, why it survived after the Muslims left, and how it became the only Semitic language written in the Latin script. Dates are approximate; disputed interpretations are dashed."
+    "cs": "Jak se arabština dostala přes severní Afriku a Sicílii na Maltu, proč se tu po odchodu muslimů udržela a jak z ní vznikl jediný semitský jazyk, který se ve spisovné podobě píše latinkou. Letopočty jsou přibližné, sporné výklady jsou přerušovaně.",
+    "en": "How Arabic reached Malta via North Africa and Sicily, why it survived after the Muslims left, and how it became the only Semitic language whose standard form is written in the Latin script. Dates are approximate; disputed interpretations are dashed."
    },
    "etapy": [
     {
@@ -7834,8 +7834,8 @@
       "en": "Semitic roots"
      },
      "text": {
-      "cs": "Maltština je semitský jazyk: pochází z arabštiny a je tedy příbuzná s hebrejštinou, aramejštinou nebo amharštinou. Semitské jazyky se podle fylogenetické studie Kitchena a kol. (2009) rozrůznily asi před 5 750 lety, nejspíš v Levantě; místo i datace jsou sporné. Arabština se zformovala na Arabském poloostrově a v Syrské poušti, první souvislé nápisy ve staré arabštině jsou z prvních století našeho letopočtu.",
-      "en": "Maltese is a Semitic language: it descends from Arabic and is thus related to Hebrew, Aramaic and Amharic. According to the phylogenetic study by Kitchen et al. (2009), the Semitic languages diversified about 5,750 years ago, most likely in the Levant; both place and date are disputed. Arabic took shape in the Arabian Peninsula and the Syrian Desert; the first continuous inscriptions in Old Arabic date from the first centuries CE."
+      "cs": "Maltština je semitský jazyk: pochází z arabštiny a je tedy příbuzná s hebrejštinou, aramejštinou nebo amharštinou. Semitské jazyky se podle fylogenetické studie Kitchena a kol. (2009) rozrůznily asi před 5 750 lety, nejspíš v Levantě; místo i datace jsou sporné. Arabština se zformovala na Arabském poloostrově a v Syrské poušti, nejstarší nápisy ve staré arabštině pocházejí z posledních století před naším letopočtem (například náhrobní nápis z Karjat al-Fáw, 1. století př. n. l.), delší texty (nápis z Namáry, 328 n. l.) z prvních století našeho letopočtu.",
+      "en": "Maltese is a Semitic language: it descends from Arabic and is thus related to Hebrew, Aramaic and Amharic. According to the phylogenetic study by Kitchen et al. (2009), the Semitic languages diversified about 5,750 years ago, most likely in the Levant; both place and date are disputed. Arabic took shape in the Arabian Peninsula and the Syrian Desert; the earliest Old Arabic inscriptions date from the last centuries BCE (e.g. the Qaryat al-Faw grave inscription, 1st century BCE), longer texts (the Namara inscription, 328 CE) from the first centuries CE."
      },
      "oblasti": [
       {
@@ -7928,8 +7928,8 @@
       "en": "Arabs in North Africa and Sicily"
      },
      "text": {
-      "cs": "S islámskými výboji se arabština v 7. století rozšířila do Egypta a do Ifríkije (dnešní Tunisko), kde vzniklo středisko Kajruván (670). Mezi obyvatelstvem mluvícím berbersky a latinsky se šířila postupně. Z Ifríkije dobyli Aghlabovci od roku 827 Sicílii (Palermo 831) a roku 870 Maltu. Na Sicílii se vyvinula sikulská (sicilská) arabština, blízká arabským nářečím Ifríkije.",
-      "en": "With the Islamic conquests Arabic spread in the 7th century to Egypt and Ifriqiya (today's Tunisia), where Kairouan was founded (670). Among a population speaking Berber and Latin it spread gradually. From Ifriqiya the Aghlabids conquered Sicily from 827 (Palermo 831) and Malta in 870. In Sicily, Siculo-Arabic developed, close to the Arabic dialects of Ifriqiya."
+      "cs": "S islámskými výboji se arabština v 7. století rozšířila do Egypta a do Ifríkije (zhruba dnešní Tunisko), kde vzniklo středisko Kajruván (670). Mezi obyvatelstvem mluvícím berbersky a latinsky se šířila postupně. Z Ifríkije začali Aghlabovci roku 827 dobývat Sicílii (Palermo 831, dobytí dokončeno 902) a roku 870 dobyli Maltu. Na Sicílii se vyvinula sicilská (sikulská) arabština, blízká arabským nářečím Ifríkije.",
+      "en": "With the Islamic conquests Arabic spread in the 7th century to Egypt and Ifriqiya (roughly today's Tunisia), where Kairouan was founded (670). Among a population speaking Berber and Latin it spread gradually. From Ifriqiya the Aghlabids began the conquest of Sicily in 827 (Palermo 831, completed 902) and took Malta in 870. In Sicily, Siculo-Arabic developed, close to the Arabic dialects of Ifriqiya."
      },
      "oblasti": [
       {
@@ -8007,12 +8007,12 @@
         [
          14.42,
          35.89,
-         0.25
+         0.35
         ],
         [
          14.25,
          36.05,
-         0.18
+         0.25
         ]
        ],
        "barva": "sar",
@@ -8074,11 +8074,27 @@
          31.8
         ],
         [
-         12.5,
-         33.0
+         12.3,
+         32.7
         ],
         [
-         10.6,
+         11.0,
+         33.3
+        ],
+        [
+         10.4,
+         33.55
+        ],
+        [
+         10.0,
+         33.8
+        ],
+        [
+         9.8,
+         34.3
+        ],
+        [
+         10.3,
          35.2
         ]
        ],
@@ -8088,12 +8104,12 @@
        "id": "na-sicilii",
        "body": [
         [
-         11.2,
-         36.8
+         10.8,
+         35.9
         ],
         [
-         11.9,
-         37.3
+         11.6,
+         36.7
         ],
         [
          12.6,
@@ -8142,8 +8158,8 @@
       "en": "Malta resettled"
      },
      "text": {
-      "cs": "Podle arabského zeměpisce al-Himjarího zůstala Malta po dobytí roku 870 dlouho téměř neobydlená a znovu ji osídlili muslimové roku 1048 nebo 1049 (výklad J. M. Brincata; míra vylidnění je sporná). Přišli ze Sicílie a z Ifríkije a jejich arabština je přímým předkem maltštiny. Maltština je proto nejbližší sicilské arabštině a arabským nářečím Maghrebu, zejména tuniským. Rozšířený názor, že maltština pochází z féničtiny (punštiny), jazykověda odmítá.",
-      "en": "According to the Arab geographer al-Himyari, Malta remained almost uninhabited for a long time after the conquest of 870 and was resettled by Muslims in 1048 or 1049 (J. M. Brincat's interpretation; the degree of depopulation is disputed). They came from Sicily and Ifriqiya, and their Arabic is the direct ancestor of Maltese. Maltese is therefore closest to Siculo-Arabic and to the Arabic dialects of the Maghreb, especially Tunisian. The popular view that Maltese derives from Phoenician (Punic) is rejected by linguists."
+      "cs": "Podle arabského zeměpisce al-Himjarího (15. století, čerpal ze starších pramenů) zůstala Malta po dobytí roku 870 dlouho téměř neobydlená a znovu ji osídlili muslimové roku 1048 nebo 1049 (výklad J. M. Brincata; míra vylidnění je sporná). Přišli nejspíš ze Sicílie, případně i z Ifríkije, a jejich arabština je přímým předkem maltštiny. Maltština je proto nejbližší sicilské arabštině a arabským nářečím Maghrebu, zejména tuniským. Rozšířený názor, že maltština pochází z féničtiny (punštiny), jazykověda odmítá.",
+      "en": "According to the Arab geographer al-Himyari (15th century, drawing on earlier sources), Malta remained almost uninhabited for a long time after the conquest of 870 and was resettled by Muslims in 1048 or 1049 (J. M. Brincat's interpretation; the degree of depopulation is disputed). They probably came from Sicily, perhaps also from Ifriqiya, and their Arabic is the direct ancestor of Maltese. Maltese is therefore closest to Siculo-Arabic and to the Arabic dialects of the Maghreb, especially Tunisian. The popular view that Maltese derives from Phoenician (Punic) is rejected by linguists."
      },
      "oblasti": [
       {
@@ -8152,12 +8168,12 @@
         [
          14.42,
          35.89,
-         0.25
+         0.35
         ],
         [
          14.25,
          36.05,
-         0.18
+         0.25
         ]
        ],
        "barva": "mt",
@@ -8235,6 +8251,7 @@
       },
       {
        "id": "z-ifrikije",
+       "sporna": true,
        "body": [
         [
          11.2,
@@ -8274,8 +8291,8 @@
       "en": "The Normans: cut off from the Arab world"
      },
      "text": {
-      "cs": "Roku 1091 připlul na Maltu normanský hrabě Roger I. a roku 1127 ji Roger II. připojil k Sicilskému království. Ve 13. století byli muslimové z ostrovů vyhnáni nebo pokřtěni (tradičně se uvádí 1224, jindy 1249). Křesťanští Malťané si arabské nářečí ponechali, ale od arabského světa a od islámu byli odříznuti: písemným jazykem se stala latina a později sicilština a italština, z nichž maltština převzala mnoho slov. Nejstarší známý maltský text je báseň Il-Kantilena Pietra Caxara (před rokem 1485), objevená roku 1966.",
-      "en": "In 1091 the Norman count Roger I came to Malta, and in 1127 Roger II annexed it to the Kingdom of Sicily. In the 13th century the Muslims were expelled from the islands or baptised (traditionally dated 1224, elsewhere 1249). The Christian Maltese kept their Arabic dialect but were cut off from the Arab world and from Islam: the written language became Latin and later Sicilian and Italian, from which Maltese took many words. The oldest known Maltese text is the poem Il-Kantilena by Pietru Caxaro (before 1485), discovered in 1966."
+      "cs": "Roku 1091 připlul na Maltu normanský hrabě Roger I. a roku 1127 ji definitivně ovládl Roger II. (od roku 1130 sicilský král). Ve 13. století byli muslimové z ostrovů vyhnáni nebo pokřtěni (tradičně se uvádí 1224, jindy 1249). Křesťanští Malťané si arabské nářečí ponechali, ale od arabského světa a od islámu byli odříznuti: písemným jazykem se stala latina a později sicilština a italština, z nichž maltština převzala mnoho slov. Nejstarší známý text v maltštině je báseň Il-Kantilena, kterou složil Pietru Caxaro (zemřel 1485); jeho synovec ji v letech 1533–1536 zapsal do notářského rejstříku, objevena byla roku 1966.",
+      "en": "In 1091 the Norman count Roger I came to Malta, and in 1127 Roger II (King of Sicily from 1130) brought it firmly under his rule. In the 13th century the Muslims were expelled from the islands or baptised (traditionally dated 1224, elsewhere 1249). The Christian Maltese kept their Arabic dialect but were cut off from the Arab world and from Islam: the written language became Latin and later Sicilian and Italian, from which Maltese took many words. The oldest known text in Maltese is the poem Il-Kantilena by Pietru Caxaro (d. 1485), copied by his nephew into a notarial register in 1533–1536 and discovered in 1966."
      },
      "oblasti": [
       {
@@ -8309,12 +8326,12 @@
         [
          14.42,
          35.89,
-         0.25
+         0.35
         ],
         [
          14.25,
          36.05,
-         0.18
+         0.25
         ]
        ],
        "barva": "mt",
@@ -8367,8 +8384,8 @@
       "en": "The Knights, Italian and English"
      },
      "text": {
-      "cs": "Roku 1530 dostal Maltu řád johanitů (maltézských rytířů); jazykem správy, církve a vzdělanosti se stala italština. Po krátké francouzské vládě (1798–1800) připadla Malta Británii (formálně 1814) a úředním jazykem se stala i angličtina. Spor, zda má vedle angličtiny platit italština, nebo maltština (tzv. jazyková otázka), skončil roku 1934: italština přestala být úředním jazykem a maltština se jím stala vedle angličtiny. Pravopis latinkou, na kterém se dohodlo Sdružení maltských spisovatelů (Għaqda tal-Kittieba tal-Malti, 1924), byl uznán jako úřední.",
-      "en": "In 1530 Malta was granted to the Order of St John (the Knights of Malta); Italian became the language of administration, church and learning. After brief French rule (1798–1800) Malta passed to Britain (formally in 1814), and English also became an official language. The dispute over whether Italian or Maltese should stand beside English (the \"Language Question\") ended in 1934: Italian ceased to be an official language and Maltese became one alongside English. The Latin-script orthography agreed by the Association of Maltese Writers (Għaqda tal-Kittieba tal-Malti, 1924) was recognised as official."
+      "cs": "Roku 1530 dostal Maltu řád johanitů (maltézských rytířů); upevnila se italština jako jazyk správy a vzdělanosti. Po krátké francouzské vládě (1798–1800) připadla Malta Británii (formálně 1814) a postupně se prosazovala angličtina (úřední od ústavy z roku 1921, vedle italštiny). Spor italštiny s angličtinou o postavení ve veřejném životě, v němž britská strana podporovala i maltštinu (tzv. jazyková otázka), rozhodl rok 1934: italština přestala být úředním jazykem a maltština se jím stala vedle angličtiny. Pravopis latinkou, který roku 1924 zveřejnilo Sdružení spisovatelů v maltštině (Għaqda tal-Kittieba tal-Malti, založené 1920, dnes Akkademja tal-Malti), byl roku 1934 uznán jako úřední.",
+      "en": "In 1530 Malta was granted to the Order of St John (the Knights of Malta); Italian became firmly established as the language of administration and learning. After brief French rule (1798–1800) Malta passed to Britain (formally in 1814), and English gradually gained ground (official under the 1921 constitution, alongside Italian). The struggle between Italian and English for public life, in which the pro-British side also backed Maltese (the \"Language Question\"), was decided in 1934: Italian ceased to be an official language and Maltese became one alongside English. The Latin-script orthography published in 1924 by the Association of Writers of Maltese (Għaqda tal-Kittieba tal-Malti, founded 1920, now the Akkademja tal-Malti) was officially recognised in 1934."
      },
      "oblasti": [
       {
@@ -8377,12 +8394,12 @@
         [
          14.42,
          35.89,
-         0.25
+         0.35
         ],
         [
          14.25,
          36.05,
-         0.18
+         0.25
         ]
        ],
        "barva": "mt",
@@ -8451,15 +8468,19 @@
         ],
         [
          15.2,
-         39.0
+         39
         ],
         [
          15.6,
          38.1
         ],
         [
-         15.3,
-         37.2
+         15.45,
+         37.0
+        ],
+        [
+         15.25,
+         36.55
         ],
         [
          14.7,
@@ -8473,7 +8494,7 @@
        "id": "anglictina",
        "body": [
         [
-         0.0,
+         0,
          50.6
         ],
         [
@@ -8481,16 +8502,24 @@
          49.5
         ],
         [
+         -5.6,
+         48.8
+        ],
+        [
          -6.5,
-         47.0
+         47
         ],
         [
          -9.8,
-         43.0
+         43
         ],
         [
-         -10.0,
+         -10,
          38.5
+        ],
+        [
+         -9.3,
+         36.85
         ],
         [
          -8.5,
@@ -8501,20 +8530,28 @@
          35.95
         ],
         [
-         -2.0,
+         -2,
          36.4
         ],
         [
-         3.0,
+         3,
          37.4
         ],
         [
-         8.0,
+         8,
          37.6
         ],
         [
-         11.5,
-         36.9
+         10.5,
+         37.5
+        ],
+        [
+         11.6,
+         37.1
+        ],
+        [
+         12.5,
+         36.65
         ],
         [
          14.1,
@@ -8545,8 +8582,8 @@
       "en": "Maltese today"
      },
      "text": {
-      "cs": "Maltština je národním jazykem Malty (ústava z roku 1964) a vedle angličtiny úředním jazykem; od roku 2004 je úředním jazykem Evropské unie, jediným semitským. Je to jediný semitský jazyk, který se úředně píše latinkou (s písmeny ċ, ġ, għ, ħ, ż). Základní slovní zásoba a mluvnice jsou semitské (ktieb „kniha“, kiteb „napsal“), velkou část slovní zásoby tvoří slova ze sicilštiny a italštiny a přibývá přejímek z angličtiny. Mluví jí většina z asi půl milionu obyvatel Malty a také Malťané v Austrálii, Kanadě, Británii a USA.",
-      "en": "Maltese is the national language of Malta (1964 constitution) and an official language alongside English; since 2004 it has been an official language of the European Union, the only Semitic one. It is the only Semitic language officially written in the Latin script (with the letters ċ, ġ, għ, ħ, ż). Its basic vocabulary and grammar are Semitic (ktieb \"book\", kiteb \"he wrote\"); a large part of the vocabulary comes from Sicilian and Italian, and English loanwords are increasing. It is spoken by most of Malta's roughly half a million inhabitants and by Maltese communities in Australia, Canada, Britain and the USA."
+      "cs": "Maltština je národním jazykem Malty (ústava z roku 1964) a vedle angličtiny úředním jazykem; od roku 2004 je úředním jazykem Evropské unie, jediným semitským. Je to jediný semitský jazyk, který se úředně píše latinkou (s písmeny ċ, ġ, għ, ħ, ż). Základní slovní zásoba a mluvnice jsou semitské (ktieb „kniha“, kiteb „napsal“), velkou část slovní zásoby tvoří slova ze sicilštiny a italštiny a přibývá přejímek z angličtiny. Mluví jí většina z necelých 600 tisíc obyvatel Malty a také Malťané v Austrálii, Kanadě, Británii a USA.",
+      "en": "Maltese is the national language of Malta (1964 constitution) and an official language alongside English; since 2004 it has been an official language of the European Union, the only Semitic one. It is the only Semitic language officially written in the Latin script (with the letters ċ, ġ, għ, ħ, ż). Its basic vocabulary and grammar are Semitic (ktieb \"book\", kiteb \"he wrote\"); a large part of the vocabulary comes from Sicilian and Italian, and English loanwords are increasing. It is spoken by most of Malta's nearly 600,000 inhabitants and by Maltese communities in Australia, Canada, Britain and the USA."
      },
      "oblasti": [
       {
@@ -8555,12 +8592,12 @@
         [
          14.42,
          35.89,
-         0.25
+         0.35
         ],
         [
          14.25,
          36.05,
-         0.18
+         0.25
         ]
        ],
        "barva": "mt",
@@ -8580,7 +8617,9 @@
     "Kitchen, A. – Ehret, C. – Assefa, S. – Mulligan, C. J. (2009): Bayesian phylogenetic analysis of Semitic languages identifies an Early Bronze Age origin of Semitic in the Near East. Proceedings of the Royal Society B 276.",
     "Metcalfe, A. (2003): Muslims and Christians in Norman Sicily: Arabic Speakers and the End of Islam. London: Routledge.",
     "Hull, G. (1993): The Malta Language Question: A Case Study in Cultural Imperialism. Valletta: Said International.",
-    "Constitution of Malta (1964), čl. 5 / art. 5."
+    "Constitution of Malta (1964), čl. 5 / art. 5.",
+    "National Statistics Office Malta (2025): News Release 122/2025 – World Population Day.",
+    "Čéplö, S. et al. (2016): Mutual intelligibility of spoken Maltese, Libyan Arabic and Tunisian Arabic functionally tested. Folia Linguistica 50/2."
    ]
   }
  ]
