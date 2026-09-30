@@ -553,7 +553,7 @@
     "h": "Mapa písem",
     "p": [
      "Mapa Písmo (v okně Mapy) obarví jazyky podle hlavního písma: latinka, cyrilice, arabské písmo, bráhmská písma (Indie, jihovýchodní Asie, Tibet), čínské znaky s kanou a bopomofem a ostatní písma. Legenda vpravo dole uvádí počty jazyků; klepnutím na skupinu se zvýrazní jen ona.",
-     "Na mapě písem jsou vidět i oblasti 36 živých písem a jejich názvy s ukázkou znaků psanou písmem samým (Abc, Абв, अआइ…). Klepnutím na název se otevře karta písma: typ (abeceda, abdžad, abugida, slabičné, logografické), směr psaní, krátký výklad o původu, jazyky atlasu, které se jím píší, a státy, kde je písmem úředního jazyka. Kartu otevře i odkaz ve tvaru atlasjazyku.cz/#pismo-latn.",
+     "Na mapě písem jsou vidět i oblasti 36 živých písem a jejich názvy s ukázkou znaků psanou písmem samým (Abc, Абв, अआइ…). Klepnutím na název nebo do barevné oblasti se otevře karta písma (při zvýrazněné skupině jen písma z ní): typ (abeceda, abdžad, abugida, slabičné, logografické), směr psaní, krátký výklad o původu, jazyky atlasu, které se jím píší, a státy, kde je písmem úředního jazyka; tlačítko Jazyk na tomto místě otevře jazyk, na který jste klepli. Kartu otevře i odkaz ve tvaru atlasjazyku.cz/#pismo-latn.",
      "Údaje pocházejí z Unicode CLDR. U jazyků, o nichž CLDR vede podrobné údaje, je písmo doložené; u ostatních jde o odhad CLDR (písmo, kterým se jazyk zapisuje, pokud se zapisuje) a karta jazyka ho tak i označí. Mapa písem a typologická mapa se nezobrazují současně."
     ]
    },
@@ -958,6 +958,7 @@
   }
  },
  "pismaSveta": {
+  "naMiste": "Jazyk na tomto místě: {j} ›",
   "stitek": "Písmo",
   "typ": "Typ",
   "smer": "Směr psaní",
@@ -986,6 +987,6 @@
   "zadnyStat": "Podle CLDR se v žádném státě úřední jazyk tímto písmem nepíše.",
   "jazykyPozn": "Oblast písma na glóbu tvoří tečky všech jazyků, které se jím podle Unicode CLDR píší; u jazyků bez podrobných údajů jde o odhad CLDR. Jazyk psaný víc písmy patří do více oblastí.",
   "zdroj": "Státy, v nichž je jazyk psaný tímto písmem celostátně úřední, podle Unicode CLDR.",
-  "tip": "Klepnutím na ukázku písma na glóbu se otevře jeho karta."
+  "tip": "Klepnutím do barevné oblasti nebo na ukázku písma se otevře karta písma."
  }
 }

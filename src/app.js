@@ -1835,7 +1835,10 @@ function klikDoMapy(e){
     const h = EU.filter(function(x){ return x.sx >= 0 && Math.hypot(x.sx - mx, x.sy - my) < 13; })[0];
     if (h) { okno.hidden = true; vyber(h.id); return; }
   }
-  if (typVlastnost === PISMO_K) { const k = stitekPismaNa(mx, my); if (k >= 0) { okno.hidden = true; ukazPismo(k); return; } }   // popisek písma má přednost před tečkou
+  if (typVlastnost === PISMO_K) {             // na mapě písem vede klepnutí na popisek i do barevné oblasti na kartu písma
+    const k = stitekPismaNa(mx, my); if (k >= 0) { okno.hidden = true; ukazPismo(k); return; }
+    const m = pismoNaMiste(mx, my); if (m) { okno.hidden = true; ukazPismo(m.k, m.i); return; }
+  }
   const i = nejblizsiBod(mx, my, 11);
   if (i >= 0) { okno.hidden = true; vyberBod(i); return; }
   const bod = proj.invert([mx, my]);
@@ -4478,7 +4481,19 @@ function stitekPismaNa(mx, my){
   for (let n = pismaStitky.length - 1; n >= 0; n--) { const b = pismaStitky[n].box; if (mx >= b[0] && mx <= b[0] + b[2] && my >= b[1] && my <= b[1] + b[3]) return pismaStitky[n].k; }
   return -1;
 }
-function ukazPismo(k){
+/* písmo pod kurzorem na mapě písem: nejbližší tečka s údajem o písmu v dosahu barevné oblasti (u zvýrazněné skupiny jen z ní);
+   vrátí jedno z písem Písem světa, jinak null (klepnutí pak vybere jazyk jako obvykle) */
+function pismoNaMiste(mx, my){
+  const P = pripravPismaTecek(), lim = Math.max(12, polomer * 1.5 * Math.PI / 180), mnoz = typIzolace >= 0 ? P.seznam[typIzolace] : null;
+  let nej = -1, nejd = lim * lim;
+  const zkus = function(i){ if (!bVid[i] || !P.vek[i]) return; const dx = bPx[i] - mx, dy = bPy[i] - my, d = dx * dx + dy * dy; if (d < nejd) { nejd = d; nej = i; } };
+  if (mnoz) mnoz.forEach(zkus); else for (let i = 0; i < POCET_B; i++) zkus(i);
+  if (nej < 0) return null;
+  const r = radek(nej), dol = (r[13] || "").split(" ").filter(Boolean), kody = dol.length ? dol : (r[15] ? [r[15]] : []);
+  const c = kody.find(function(c){ return KOD_PISMA[c] != null && (typIzolace < 0 || skupinaKodu(c) === typIzolace); });
+  return c ? {k: KOD_PISMA[c], i: nej} : null;
+}
+function ukazPismo(k, bodMista){
   const p = PISMA_SVETA[k]; if (!p) return;
   const U = T.pismaSveta, P = pripravPismaTecek();
   if (brana) zavriBranu(true);
@@ -4522,6 +4537,10 @@ function ukazPismo(k){
   tr.addEventListener("click", function(){ otevriCivilizaci("rodokmen-pisem"); }); o1.appendChild(tr);
   const put = PUTOVANI.find(function(x){ return x.pisma && x.pisma.indexOf(p.kod) >= 0; });
   if (put) { const b = prvek("button", "tl-rodokmen tl-putovani", put.nazev[T.lang]); b.type = "button"; b.addEventListener("click", function(){ spustPutovani(put.id); }); o1.appendChild(b); }
+  if (bodMista >= 0) {                       // klepnutí do mapy: jazyk, na který se klepnulo, jde otevřít jedním klepnutím
+    const b = prvek("button", "tl-rodokmen", U.naMiste.replace("{j}", jmenoBodu(bodMista))); b.type = "button";
+    b.addEventListener("click", function(){ vyberBod(bodMista); }); o1.appendChild(b);
+  }
   const o2 = oddil(U.jazykyAtlasu);
   if (jazyky.length) {
     const ul = prvek("ul", "pismo-jazyky");

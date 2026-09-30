@@ -466,7 +466,9 @@ samým, `typ` abeceda / abdzad / abugida / slabicne / logograficke / smisene, `s
 popisků, `font` – rodina Noto z Google Fonts pro písma, která systém nemusí mít, texty `cs`/`en`), build → `PISMA_SVETA`
 (`/*__PISMA__*/null`). Se zapnutou mapou Písmo kreslí `kresliPismaSveta` (v `kresliPopredi`, ne při putování ani cestě slova)
 rozlité oblasti skupin písem kolem teček (plátno 1/6 jako u putování) a popisky: ukázka znaků v barvě skupiny, pod ní název;
-co by se překrylo, vynechá, mongolské písmo svisle. Klepnutí na popisek (`stitekPismaNa` v `klikDoMapy`) otevře kartu písma
+co by se překrylo, vynechá, mongolské písmo svisle. Klepnutí na popisek (`stitekPismaNa` v `klikDoMapy`) **i do barevné oblasti**
+(`pismoNaMiste`: nejbližší tečka v dosahu oblasti, při zvýrazněné skupině jen z ní; uživatel 30. 9. 2026: s vybranou cyrilicí
+klepnutí do mapy otevřelo jazyk místo písma) otevře kartu písma s tlačítkem „Jazyk na tomto místě“
 (`ukazPismo` přes `ukazZvlastni("pismo:<kod>")`, odkaz `#pismo-latn`): štítky Typ / Směr / Jazyků na glóbu (z toho odhadem),
 záložky O písmu (výklad, Rodokmen písem, putování písma), Jazyky (jazyky atlasu, klepnutím vybere) a Kde je úřední (státy
 z `r[14]` se stupněm 1). Legenda mapy Písmo má tip a tlačítko putování písma. Texty prošly nezávislým ověřením (opraveno mj.:
