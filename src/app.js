@@ -583,7 +583,7 @@ function nactiBarvy(){
    "atmosfera", "atmosfera2", "sit", "hranice", "okraj-koule", "zamerovac-lem",
    "r-ie", "r-st", "r-an", "r-afro", "r-nk", "r-ost", "more1", "more2", "souse1", "souse2", "souse-vit", "uzemi",
    "podlaha", "podlaha-2", "obzor", "text2", "stin-plochy", "stin-plochy-2",
-   "put-ie", "put-bs", "put-sl", "put-zsl", "put-jsl", "put-vsl", "put-cs", "put-ii", "put-ir", "put-ku", "put-kmr", "put-ckb", "put-sdh", "put-ur", "put-ug", "put-hu", "put-in", "put-rom", "put-bal", "put-vla", "put-cen", "put-svy", "put-szap", "put-ko", "put-an", "put-mp", "put-pap", "put-oc", "put-pol", "put-mi", "put-mg", "put-ptu", "put-ogr", "put-gok", "put-ogz", "put-tr", "put-pri", "put-gm", "put-en", "put-en2", "put-kel", "put-non", "put-fr", "put-cr", "put-jen", "put-nd", "put-apa", "put-nv", "put-jid", "put-rmn", "put-zjd", "put-ztr"].forEach(function(k){ barvy[k] = s.getPropertyValue("--" + k).trim(); });
+   "put-ie", "put-bs", "put-sl", "put-zsl", "put-jsl", "put-vsl", "put-cs", "put-ii", "put-ir", "put-ku", "put-kmr", "put-ckb", "put-sdh", "put-ur", "put-ug", "put-hu", "put-in", "put-rom", "put-bal", "put-vla", "put-cen", "put-svy", "put-szap", "put-ko", "put-an", "put-mp", "put-pap", "put-oc", "put-pol", "put-mi", "put-mg", "put-ptu", "put-ogr", "put-gok", "put-ogz", "put-tr", "put-pri", "put-gm", "put-en", "put-en2", "put-kel", "put-non", "put-fr", "put-cr", "put-jen", "put-nd", "put-apa", "put-nv", "put-jid", "put-rmn", "put-zjd", "put-ztr", "put-psa", "put-sin", "put-fen", "put-rek", "put-etr", "put-lat", "put-ara", "put-heb", "put-arb", "put-kha", "put-hla", "put-cyr", "put-sem", "put-sar", "put-mt", "put-itm", "put-enm"].forEach(function(k){ barvy[k] = s.getPropertyValue("--" + k).trim(); });
 }
 
 const fJaz = new Float32Array(POCET_B), zakladJaz = new Float32Array(POCET_B);   // příznaky teček: 0 obyčejná, 1 vybraná, 2 příbuzná, 3 pod myší
@@ -1428,6 +1428,7 @@ function kresliPopredi(cas){
       if (!zkus(true)) zkus(false);
     });
   }
+  if (typVlastnost === PISMO_K && !putovani && !cesta) kresliPismaSveta(c, promitni); else pismaStitky = [];
   if (putovani) kresliPutovani(c, cas, promitni);
   if (eu) {                             /* zlaté hvězdičky jazyků EU, vyskakují jedna po druhé */
     const obsazene = [];
@@ -1834,6 +1835,7 @@ function klikDoMapy(e){
     const h = EU.filter(function(x){ return x.sx >= 0 && Math.hypot(x.sx - mx, x.sy - my) < 13; })[0];
     if (h) { okno.hidden = true; vyber(h.id); return; }
   }
+  if (typVlastnost === PISMO_K) { const k = stitekPismaNa(mx, my); if (k >= 0) { okno.hidden = true; ukazPismo(k); return; } }   // popisek písma má přednost před tečkou
   const i = nejblizsiBod(mx, my, 11);
   if (i >= 0) { okno.hidden = true; vyberBod(i); return; }
   const bod = proj.invert([mx, my]);
@@ -2380,6 +2382,11 @@ function obnovLegenduTypologie(){
   const jina = prvek("button", "typ-jina", T.typologieJina); jina.type = "button";
   jina.addEventListener("click", otevriMapy);
   legendaTyp.appendChild(jina);
+  if (jePismo) {                                  // Písma světa: jak otevřít kartu písma a putování abecedy
+    legendaTyp.appendChild(prvek("p", "typ-leg-tip", T.pismaSveta.tip));
+    const pa = PUTOVANI.find(function(x){ return x.pisma; });
+    if (pa) { const b = prvek("button", "typ-jina typ-putovani", pa.nazev[T.lang] + " ›"); b.type = "button"; b.addEventListener("click", function(){ spustPutovani(pa.id); }); legendaTyp.appendChild(b); }
+  }
   const det = prvek("details", "typ-leg-popis"); det.appendChild(prvek("summary", null, jePismo ? T.pismoOMape : T.typologieOPopisu));
   det.appendChild(prvek("p", null, v.popis[T.lang])); legendaTyp.appendChild(det);
   const ul = prvek("ul", "typ-leg-hodnoty");
@@ -2439,6 +2446,7 @@ function kodVyberu(){
   if (cesta) return "cesta-" + cesta.w.id;
   if (putovani) return putovani.j.adresa[T.lang];
   if (brana) return vymysleny ? "mellon~" + vymysleny : "mellon";
+  if (zvlastni && /^pismo:/.test(zvlastni)) return "pismo-" + zvlastni.slice(6).toLowerCase();
   if (zvlastni) return zvlastni === "velryby" ? (T.lang === "cs" ? "kytovci" : "cetaceans") : "babel";
   if (srovnani) return srovnani.a.kod + "~" + srovnani.b.kod;          // #cs~ar = srovnání dvou jazyků
   return !vybrany ? "" : vybrany.typ === "atlas" ? vybrany.id : REJSTRIK.g[vybrany.i] || "";
@@ -2459,6 +2467,7 @@ function prectiOdkaz(){
   if (!h || h === kodVyberu()) return;
   if (h.toLowerCase() === "eulang") { spustEU(); return; }
   if (/^(velryby|whales|kytovci|cetaceans)$/i.test(h)) { ukazZvlastni("velryby"); return; }
+  if (/^pismo-[a-z]{4}$/i.test(h)) { const kod = h.slice(6, 7).toUpperCase() + h.slice(7).toLowerCase(); if (KOD_PISMA[kod] != null) { if (typVlastnost !== PISMO_K) nastavTypologii(PISMO_K); ukazZvlastni("pismo:" + kod); return; } }
   if (/^babel$/i.test(h)) { spustBabel(); return; }
   if (/^(o-datech|about-data)$/i.test(h)) { otevriODatech(); return; }
   if (/^(kalendar|language-days)$/i.test(h)) { otevriKalendar(); return; }
@@ -3175,6 +3184,9 @@ function otevriSekci(sekce){
     telo.appendChild(prvek("h3", "pribehy-skupina", (U.skupiny || {}).putovani || "Putování"));
     PUTOVANI.forEach(function(pj){
       const b = prvek("button", "starovek-tl"); b.type = "button";
+      const civ = pj.obrazek && STAROVEK_DATA.civilizace.find(function(c){ return c.id === pj.obrazek; });
+      if (civ) { b.appendChild(malbaCivilizace(civ)); const t = prvek("span"); t.appendChild(prvek("b", null, pj.nazev[T.lang])); t.appendChild(prvek("small", null, pj.podtitul[T.lang])); b.appendChild(t);
+        b.insertAdjacentHTML("beforeend", '<svg aria-hidden="true"><use href="#i-dal"/></svg>'); b.addEventListener("click", function(){ starovekOkno.close(); spustPutovani(pj.id); }); telo.appendChild(b); return; }
       const m = prvek("span", "starovek-malba"), i = prvek("img"); i.alt = ""; i.decoding = "async"; m.appendChild(i);
       const ukaz = function(url){ if (url && i.isConnected) { i.onload = function(){ i.classList.add("ukazana"); }; i.src = url; } };
       if (!ARTEFAKT && location.protocol !== "file:") { i.onload = function(){ i.classList.add("ukazana"); }; i.onerror = function(){ i.onerror = null; const c = malbaObrazek(pj.atlas); if (c) c.then(ukaz); }; i.src = "/malby/" + pj.atlas + ".jpg"; }
@@ -3271,6 +3283,7 @@ function obnovTexty(){
   if (eu) postavEuPanel();
   if (cesta) { cesta.kroky.forEach(function(x){ x.jazyk = nazevKroku(x.k); }); postavCestaPanel(); }
   if (brana) { postavBranu(); if (vymysleny) ukazVymysleny(vymysleny); }
+  if (zvlastni) ukazZvlastni(zvlastni);
   if (typVlastnost >= 0) obnovLegenduTypologie();
   if (mapyOkno.open) postavMapy();
 }
@@ -4181,6 +4194,7 @@ function spustPutovani(id){
   if (vybrany || srovnani || zvlastni) { srovnani = null; vybrany = null; zvlastni = null; karta.hidden = true; delete karta.dataset.jazyk; oznacTlacitka(null); }
   zeme = null; okno.hidden = true; bublinaBod.hidden = true; schovejUkazatel(true);
   j.etapy.forEach(function(e){ (e.proudy || []).forEach(function(p){ if (!p.cesta) p.cesta = hustaCesta(p.body); }); });
+  nactiZnakyPutovani(j);
   putovani = {j: j, stav: 0, hraje: !bezPohybu.matches, posl: 0, etapa: -1};
   if (!putCesta) putCesta = d3.geoPath(proj, ctx);
   postavPutovaniPanel();
@@ -4191,6 +4205,18 @@ function spustPutovani(id){
   obnovPriznaky(); spoctiPosun(); ozivit(); potrebaKresli = true; teckyZmeneny = true;
   zapisOdkaz();
   if (!desktop.matches && window.scrollY > 40) window.scrollTo({top: 0, behavior: bezPohybu.matches ? "auto" : "smooth"});
+}
+/* znaky putování písma (hieroglyf, fénické, staroitalské…): Google Fonts jen s použitými znaky, každá rodina zvlášť */
+function nactiZnakyPutovani(j){
+  if (j.fontyNacteny) return; j.fontyNacteny = true;
+  const rody = {};
+  j.etapy.forEach(function(e){ (e.oblasti || []).forEach(function(o){ if (o.znak && o.znak.font) rody[o.znak.font] = (rody[o.znak.font] || "") + o.znak.text; }); });
+  Object.keys(rody).forEach(function(f){
+    const l = document.createElement("link"); l.rel = "stylesheet";
+    l.href = "https://fonts.googleapis.com/css2?family=" + f.replace(/ /g, "+") + "&text=" + encodeURIComponent(rody[f]) + "&display=swap";
+    l.onload = function(){ if (document.fonts && document.fonts.load) document.fonts.load('30px "' + f + '"', rody[f]).then(function(){ potrebaKresli = true; ozivit(); }, function(){}); };
+    document.head.appendChild(l);
+  });
 }
 function jdiNaEtapu(k, hned){
   const e = putovani.j.etapy[k]; if (!e) return;
@@ -4260,7 +4286,7 @@ function kresliPutovani(c, cas, promitni){
   }
   const barva = function(k){ return barvy["put-" + k] || barvy.cervena; };
   const s = pv.stav, akt = Math.floor(s), p = s - akt, p2 = [0, 0], q2 = [0, 0];
-  const W = Math.max(5, polomer * 0.034), popisky = [];
+  const W = Math.max(5, Math.min(22, polomer * 0.034)), popisky = [], znaky = [];   // při velkém přiblížení (Malta) šipky dál nerostou
   const kruh = d3.geoCircle();
   et.forEach(function(e, k){
     if (k > akt) return;
@@ -4280,7 +4306,11 @@ function kresliPutovani(c, cas, promitni){
       m.x.fillStyle = barva(o.barva); m.x.fill(); m.x.restore();
       c.save(); c.imageSmoothingEnabled = true; c.imageSmoothingQuality = "high";
       c.globalAlpha = (o.sporna ? 0.24 : 0.5) * vstup * stara; c.drawImage(m.c, 0, 0, m.c.width * 6, m.c.height * 6); c.restore();
-      if (k === akt && o.popisek && vstup > 0.5) { const v = vektor(o.kruhy[0][0], o.kruhy[0][1]).concat(1); if (promitni(v, p2)) popisky.push([o.popisek[T.lang], p2[0], p2[1], o.sporna]); }
+      if (k === akt && (o.popisek || o.znak) && vstup > 0.5) { const v = vektor(o.kruhy[0][0], o.kruhy[0][1]).concat(1);
+        if (promitni(v, p2)) {                  // „znak“ (putování písma): velké písmeno samo nad popiskem, v barvě oblasti
+          if (o.znak) znaky.push([o.znak, p2[0], p2[1] - 10, barva(o.barva), Math.min(1, (vstup - 0.5) * 2)]);
+          if (o.popisek) popisky.push([o.popisek[T.lang], p2[0], p2[1] + (o.znak ? 24 : 0), o.sporna]);
+        } }
     });
     /* proudy: široká průsvitná šipka, která se rozlévá od počátku k cíli */
     (e.proudy || []).forEach(function(pr){
@@ -4295,7 +4325,7 @@ function kresliPutovani(c, cas, promitni){
       c.setLineDash([]);
       /* hrot šipky na čele proudu */
       if (promitni(body[konec], p2) && promitni(body[Math.max(0, konec - 3)], q2)) {
-        const ux = p2[0] - q2[0], uy = p2[1] - q2[1], d = Math.hypot(ux, uy) || 1, nx = ux / d, ny = uy / d, h = W * 1.5;
+        const ux = p2[0] - q2[0], uy = p2[1] - q2[1], d = Math.hypot(ux, uy) || 1, nx = ux / d, ny = uy / d, h = W * 1.5 * Math.sqrt(pr.sirka || 1);
         c.beginPath(); c.moveTo(p2[0] + nx * h * 0.9, p2[1] + ny * h * 0.9); c.lineTo(p2[0] - ny * h, p2[1] + nx * h); c.lineTo(p2[0] + ny * h, p2[1] - nx * h); c.closePath();
         c.globalAlpha = 0.7 * stara; c.fillStyle = barva(pr.barva); c.fill();
       }
@@ -4305,7 +4335,14 @@ function kresliPutovani(c, cas, promitni){
   c.globalAlpha = 1;
   /* popisky oblastí a proudů aktuální etapy */
   c.textBaseline = "middle"; c.textAlign = "center"; c.lineJoin = "round";
-  const obsaz = [];                            // popisek, který by překryl jiný, se posune nahoru nebo dolů, jinak vynechá
+  const obsaz = [];
+  znaky.forEach(function(x){                   // znak na papírovém kolečku s linkou v barvě oblasti; zabere místo dřív než popisky
+    const r = 19, px = 26; c.font = px + 'px ' + (x[0].font ? '"' + x[0].font + '", ' : "") + '"Noto Sans", "Noto Serif", system-ui, serif';
+    obsaz.push([x[1] - r, x[2] - r, x[1] + r, x[2] + r]);
+    c.globalAlpha = x[4]; c.beginPath(); c.arc(x[1], x[2], r, 0, 6.2832);
+    c.fillStyle = barvy["popisek-lem"]; c.fill(); c.lineWidth = 2; c.strokeStyle = x[3]; c.stroke();
+    c.fillStyle = x[3]; c.fillText(x[0].text, x[1], x[2] + 1); c.globalAlpha = 1;
+  });                            // popisek, který by překryl jiný, se posune nahoru nebo dolů, jinak vynechá
   popisky.forEach(function(x){
     c.font = (x[3] ? "italic " : "") + "600 12.5" + PISMO;
     const w = c.measureText(x[0]).width;
@@ -4361,7 +4398,150 @@ function pocetRodin(){                          /* rodiny a izolované jazyky me
   for (let k = 0; k < POCET_B; k++) { const f = B[k][3]; if (f === IZOLAT_R) izol++; else if (!BEZ_RODU.has(f) && !nerod.has(REJSTRIK.r.en[f])) r.add(f); }
   return {r: r.size, i: izol};
 }
+/* ---------- Písma světa (30. 9. 2026, nápad uživatele: „písma na mapě, kde se jakým písmem píše, jako už máme jazyky“) ----------
+   Když je zapnutá mapa Písmo, kreslí se pod popisky měkké oblasti živých písem. Oblast je sjednocení kruhů kolem teček jazyků,
+   které se tím písmem píší podle Unicode CLDR (doložené r[13], jinak odhad r[15]); barva je skupina písma jako v legendě.
+   Popisky jsou ukázky znaků psané písmem samým; klepnutí na popisek otevře kartu písma. Data jsou v data/pisma.json. */
+const PISMA_SVETA = /*__PISMA__*/null || [];
+const KOD_PISMA = {};
+PISMA_SVETA.forEach(function(p, k){ p.kody.forEach(function(c){ KOD_PISMA[c] = k; }); });
+let pismaTecek = null, pismaStitky = [], fontyPisem = false;
+function skupinaKodu(c){ for (let g = 0; g < SKUPINY_PISEM.length; g++) if (SKUPINY_PISEM[g].indexOf(c) >= 0) return g; return SKUPINY_PISEM.length; }
+function barvaSkupinyPisma(g){ return g < SKUPINY_PISEM.length ? barvy["typ-" + (g + 1)] : barvy["typ-jine"]; }
+function pripravPismaTecek(){
+  if (pismaTecek) return pismaTecek;
+  const seznam = [], vek = new Array(POCET_B), pocty = PISMA_SVETA.map(function(){ return {dolozene: 0, odhad: 0}; });
+  for (let g = 0; g <= SKUPINY_PISEM.length; g++) seznam.push([]);
+  for (let i = 0; i < POCET_B; i++) {
+    if (ZNAKOVY[i] || BEZ_POLOHY[i]) continue;
+    const r = radek(i), dol = (r[13] || "").split(" ").filter(Boolean), kody = dol.length ? dol : (r[15] ? [r[15]] : []);
+    if (!kody.length) continue;
+    vek[i] = vektor(B[i][1], B[i][2]); vek[i].push(1);
+    const videno = {};
+    kody.forEach(function(c){
+      const g = skupinaKodu(c); if (!videno["g" + g]) { videno["g" + g] = 1; seznam[g].push(i); }
+      const k = KOD_PISMA[c]; if (k != null && !videno[k]) { videno[k] = 1; pocty[k][dol.length ? "dolozene" : "odhad"]++; }
+    });
+  }
+  PISMA_SVETA.forEach(function(p){ p._vek = p.stitky.map(function(s){ const v = vektor(s[0], s[1]); v.push(1); return v; }); });
+  return (pismaTecek = {seznam: seznam, vek: vek, pocty: pocty});
+}
+function pismoFont(p, px){ return px + "px " + (p.font ? '"' + p.font + '", ' : "") + '"Noto Sans", system-ui, sans-serif'; }
+/* písma, která systém nemusí mít (N'Ko, vai, ji…): Google Fonts jen se znaky ukázky, každé zvlášť (chybná rodina by shodila celý odkaz) */
+function nactiFontyPisem(){
+  if (fontyPisem) return; fontyPisem = true;
+  PISMA_SVETA.filter(function(p){ return p.font; }).forEach(function(p){
+    const l = document.createElement("link"); l.rel = "stylesheet";
+    l.href = "https://fonts.googleapis.com/css2?family=" + p.font.replace(/ /g, "+") + "&text=" + encodeURIComponent(p.ukazka.replace(/\s/g, "")) + "&display=swap";
+    l.onload = function(){ if (document.fonts && document.fonts.load) document.fonts.load(pismoFont(p, 20), p.ukazka).then(function(){ potrebaKresli = true; ozivit(); }, function(){}); };
+    document.head.appendChild(l);
+  });
+}
+function kresliPismaSveta(c, promitni){
+  const P = pripravPismaTecek(), m = putMale(c), q = [0, 0], rPx = Math.max(3, polomer * 1.5 * Math.PI / 180);
+  nactiFontyPisem();
+  m.x.clearRect(0, 0, m.c.width, m.c.height); m.x.save(); m.x.scale(1 / 6, 1 / 6);
+  P.seznam.forEach(function(ind, g){
+    if (typIzolace >= 0 && typIzolace !== g) return;
+    m.x.beginPath();
+    for (let n = 0; n < ind.length; n++) { const v = P.vek[ind[n]]; if (!promitni(v, q)) continue; m.x.moveTo(q[0] + rPx, q[1]); m.x.arc(q[0], q[1], rPx, 0, 6.2832); }
+    m.x.fillStyle = barvaSkupinyPisma(g); m.x.fill();
+  });
+  m.x.restore();
+  c.save(); c.imageSmoothingEnabled = true; c.imageSmoothingQuality = "high"; c.globalAlpha = denni ? .42 : .44;
+  c.drawImage(m.c, 0, 0, m.c.width * 6, m.c.height * 6); c.restore();
+  /* popisky: ukázka znaků písmem samým a pod ní český (anglický) název; důležitější písma dřív, co by se překrylo, vynechat */
+  pismaStitky = [];
+  const obsazeno = [], velke = zoom > 1.6 ? 21 : 17, male = 10.5;
+  c.save(); c.textAlign = "center"; c.textBaseline = "middle"; c.lineJoin = "round";
+  PISMA_SVETA.forEach(function(p, k){
+    const g = skupinaKodu(p.kod); if (typIzolace >= 0 && typIzolace !== g) return;
+    p._vek.forEach(function(v){
+      if (!promitni(v, q)) return;
+      const x = q[0], y = q[1], nazev = p[T.lang].nazev;
+      c.font = pismoFont(p, velke); const w1 = p.smer === "ttb" ? velke * 1.2 : c.measureText(p.ukazka).width;
+      const h1 = p.smer === "ttb" ? c.measureText(p.ukazka).width : velke * 1.25;
+      c.font = "600 " + male + "px Outfit, system-ui, sans-serif"; const w2 = c.measureText(nazev).width;
+      const w = Math.max(w1, w2) + 8, h = h1 + male + 8, box = [x - w / 2, y - h1 / 2 - 4, w, h];
+      if (obsazeno.some(function(o){ return box[0] < o[0] + o[2] && o[0] < box[0] + box[2] && box[1] < o[1] + o[3] && o[1] < box[1] + box[3]; })) return;
+      obsazeno.push(box); pismaStitky.push({k: k, box: box});
+      c.save(); c.translate(x, y); if (p.smer === "ttb") c.rotate(Math.PI / 2);
+      c.font = pismoFont(p, velke); c.lineWidth = 4; c.strokeStyle = barvy["popisek-lem"]; c.strokeText(p.ukazka, 0, 0);
+      c.fillStyle = barvaSkupinyPisma(g); c.fillText(p.ukazka, 0, 0); c.restore();
+      c.font = "600 " + male + "px Outfit, system-ui, sans-serif"; c.lineWidth = 3; c.strokeStyle = barvy["popisek-lem"];
+      const yn = y + h1 / 2 + male / 2 + 2; c.strokeText(nazev, x, yn); c.fillStyle = barvy.popisek; c.fillText(nazev, x, yn);
+    });
+  });
+  c.restore();
+}
+function stitekPismaNa(mx, my){
+  for (let n = pismaStitky.length - 1; n >= 0; n--) { const b = pismaStitky[n].box; if (mx >= b[0] && mx <= b[0] + b[2] && my >= b[1] && my <= b[1] + b[3]) return pismaStitky[n].k; }
+  return -1;
+}
+function ukazPismo(k){
+  const p = PISMA_SVETA[k]; if (!p) return;
+  const U = T.pismaSveta, P = pripravPismaTecek();
+  if (brana) zavriBranu(true);
+  if (eu) ukonciEU(true);
+  if (cesta) ukonciCestu(true);
+  if (putovani) ukonciPutovani(true);
+  vybrany = null; srovnani = null; zrusCekani(); vymysleny = null; zhasniZemi(); okno.hidden = true;
+  const klic = "p:" + p.kod, novy = karta.dataset.jazyk !== klic;
+  if (novy) zalozkaVybrana = 0;
+  karta.dataset.jazyk = klic;
+  const barva = barvaSkupinyPisma(skupinaKodu(p.kod));
+  otevriKartu(barva, "#FFFFFF", novy);
+  zvlastni = "pismo:" + p.kod;
+  $("k-porovnat").hidden = true; $("k-cesta").hidden = true; $("k-plne").hidden = false; $("k-odznak").hidden = true;
+  $("k-kod").textContent = "✦ " + U.stitek; $("k-kod").classList.remove("sour");
+  $("k-nazev").textContent = p[T.lang].nazev; $("k-domaci").textContent = "";
+  const pz = $("k-pozdrav"); pz.textContent = p.ukazka; pz.style.fontSize = ""; pz.removeAttribute("lang");
+  pz.style.fontFamily = p.font ? '"' + p.font + '", "Noto Sans", system-ui, sans-serif' : "";
+  pz.dir = p.smer === "rtl" ? "rtl" : "ltr";
+  $("k-prepis").textContent = U.typy[p.typ];
+  tlPrehraj.hidden = true;
+  malbaNaKarte(null);
+  const pocet = P.pocty[k];
+  stitek(U.typ, U.typy[p.typ]);
+  stitek(U.smer, U.smery[p.smer]);
+  stitek(U.jazyku, cislo(pocet.dolozene + pocet.odhad), null, pocet.odhad ? U.zToho.replace("{n}", cislo(pocet.odhad)) : null);
+  /* jazyky atlasu psané tímto písmem a státy, kde je některý z nich úřední (stupeň 1 podle CLDR) */
+  const jazyky = [], staty = {};
+  Object.keys(PODLE_ID).forEach(function(id){
+    const i = BOD_ATLASU[id] != null ? BOD_ATLASU[id] : -1, u = cldrUdaje(i, id);
+    if (u.pisma.some(function(c){ return p.kody.indexOf(c) >= 0; })) jazyky.push(id);
+  });
+  for (let i = 0; i < POCET_B; i++) {
+    const r = radek(i), dol = (r[13] || "").split(" ");
+    if (!dol.some(function(c){ return p.kody.indexOf(c) >= 0; })) continue;
+    (r[14] || "").split(" ").forEach(function(s){ if (s.length === 3 && s[2] === "1") staty[s.slice(0, 2)] = 1; });
+  }
+  const razeni = new Intl.Collator(T.lang);
+  const o1 = oddil(U.oPismu); o1.appendChild(prvek("p", null, p[T.lang].text));
+  const tr = prvek("button", "tl-rodokmen", U.rodokmen); tr.type = "button";
+  tr.addEventListener("click", function(){ otevriCivilizaci("rodokmen-pisem"); }); o1.appendChild(tr);
+  const put = PUTOVANI.find(function(x){ return x.pisma && x.pisma.indexOf(p.kod) >= 0; });
+  if (put) { const b = prvek("button", "tl-rodokmen tl-putovani", put.nazev[T.lang]); b.type = "button"; b.addEventListener("click", function(){ spustPutovani(put.id); }); o1.appendChild(b); }
+  const o2 = oddil(U.jazykyAtlasu);
+  if (jazyky.length) {
+    const ul = prvek("ul", "pismo-jazyky");
+    jazyky.sort(function(a, b){ return razeni.compare(PODLE_ID[a].n, PODLE_ID[b].n); }).forEach(function(id){
+      const li = prvek("li"), b = prvek("button", null, PODLE_ID[id].n); b.type = "button";
+      b.addEventListener("click", function(){ vyber(id); }); li.appendChild(b); ul.appendChild(li);
+    });
+    o2.appendChild(ul);
+  } else o2.appendChild(prvek("p", "pozn", U.zadnyAtlas));
+  o2.appendChild(prvek("p", "pozn", U.jazykyPozn));
+  const o3 = oddil(U.uredni), sk = Object.keys(staty).map(function(s){ return PD.staty[T.lang][s] || s; }).sort(razeni.compare);
+  if (sk.length) { const ul = prvek("ul"); sk.forEach(function(s){ ul.appendChild(prvek("li", null, s)); }); o3.appendChild(ul); }
+  else o3.appendChild(prvek("p", "pozn", U.zadnyStat));
+  o3.appendChild(prvek("p", "pozn", U.zdroj));
+  zalozky([{nazev: U.oPismu, uzly: [o1]}, {nazev: U.jazyky, uzly: [o2]}, {nazev: U.uredniKratce, uzly: [o3]}]);
+  velikostKarty(""); zapisOdkaz(); oznacTlacitka(null);
+  if (globusOk) { obnovPriznaky(); spoctiPosun(); ozivit(); }
+}
 function ukazZvlastni(k){
+  if (/^pismo:/.test(k)) { const n = KOD_PISMA[k.slice(6)]; if (n != null) ukazPismo(n); return; }
   const d = T.tajemstvi[k]; if (!d) return;
   if (brana) zavriBranu(true);
   if (eu) ukonciEU(true);

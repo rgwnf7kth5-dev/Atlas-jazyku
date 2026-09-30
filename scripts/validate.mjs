@@ -102,7 +102,11 @@ if (pd.uzly.length !== pd.nad.length) chyby.push("data/podrobnosti.json: strom p
   const atlas = new Set(jazyky.map(j => j.id)), dvojj = (x, kde) => { if (!x || !x.cs || !x.en) chyby.push(`${co}: ${kde} nemá text cs i en`); };
   const souradnice = (b, kde) => { if (!Array.isArray(b) || !(b[0] >= -180 && b[0] <= 180 && b[1] >= -90 && b[1] <= 90)) chyby.push(`${co}: ${kde} má chybné souřadnice`); };
   for (const j of d.jazyky) {
-    if (!atlas.has(j.atlas)) chyby.push(`${co}: ${j.id} – jazyk atlasu „${j.atlas}“ neexistuje`);
+    if (j.pisma) {                              // putování písma: bez jazyka atlasu, s písmy mapy Písma světa a obrázkem civilizace
+      const kody = new Set(json("data/pisma.json").pisma.map(p => p.kod));
+      for (const k of j.pisma) if (!kody.has(k)) chyby.push(`${co}: ${j.id} – písmo „${k}“ není v data/pisma.json`);
+      if (!json("data/starovek.json").civilizace.some(c => c.id === j.obrazek)) chyby.push(`${co}: ${j.id} – obrázek „${j.obrazek}“ není stránka v data/starovek.json`);
+    } else if (!atlas.has(j.atlas)) chyby.push(`${co}: ${j.id} – jazyk atlasu „${j.atlas}“ neexistuje`);
     dvojj(j.adresa, j.id + " adresa"); dvojj(j.nazev, j.id + " název"); dvojj(j.podtitul, j.id + " podtitul (dlaždice v Příbězích)"); dvojj(j.uvod, j.id + " úvod");
     if (!j.zdroje || !j.zdroje.length) chyby.push(`${co}: ${j.id} nemá zdroje`);
     for (const e of j.etapy) {

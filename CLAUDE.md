@@ -460,6 +460,21 @@ WALS, v záložce Stavba ani ve srovnání; jedna barevná vrstva naráz, volba 
 Skupina tečky: `skupinaPisma(i)` z `r[13]` (doložené) nebo `r[15]` (odhad z CLDR `likelySubtags`, jen pro jazyky bez
 `languageData`; `scripts/podrobnosti.mjs`). Odhad karta ukazuje jako „latinka (odhad)“ s vysvětlením. Skupiny a sporná
 zařazení jsou v `data/ZDROJE.md`. Na telefonu se po výběru mapy (písmo i typologie) stránka vrátí ke glóbu (`nahoruKeGlobu`).
+**Písma světa na mapě Písmo** (30. 9. 2026, uživatel: „písma na mapě, kde se jakým písmem píše, jako už máme jazyky“; náhled
+čeká na schválení): `data/pisma.json` (36 živých písem: `kod` ISO 15924, `kody` – které kódy CLDR k písmu patří, `ukazka` psaná písmem
+samým, `typ` abeceda / abdzad / abugida / slabicne / logograficke / smisene, `smer` ltr / rtl / ttb, `stitky` [délka, šířka] míst
+popisků, `font` – rodina Noto z Google Fonts pro písma, která systém nemusí mít, texty `cs`/`en`), build → `PISMA_SVETA`
+(`/*__PISMA__*/null`). Se zapnutou mapou Písmo kreslí `kresliPismaSveta` (v `kresliPopredi`, ne při putování ani cestě slova)
+rozlité oblasti skupin písem kolem teček (plátno 1/6 jako u putování) a popisky: ukázka znaků v barvě skupiny, pod ní název;
+co by se překrylo, vynechá, mongolské písmo svisle. Klepnutí na popisek (`stitekPismaNa` v `klikDoMapy`) otevře kartu písma
+(`ukazPismo` přes `ukazZvlastni("pismo:<kod>")`, odkaz `#pismo-latn`): štítky Typ / Směr / Jazyků na glóbu (z toho odhadem),
+záložky O písmu (výklad, Rodokmen písem, putování písma), Jazyky (jazyky atlasu, klepnutím vybere) a Kde je úřední (státy
+z `r[14]` se stupněm 1). Legenda mapy Písmo má tip a tlačítko putování písma. Texty prošly nezávislým ověřením (opraveno mj.:
+thaana doložena od přelomu 16. a 17. století, Mongolsko od 2. 1. 2025 úřední dokumenty v obou písmech, nejstarší datovaný nápis
+arabským písmem Zabad 512, barmské písmo přes monské jen podle tradičního výkladu, kanadské slabičné písmo – autorství Evanse
+sporné a typologicky abugida, ladino dnes většinou latinkou, manipurština souběžně meitei majek, syrské písmo „syrských křesťanů
+(Asyřanů, Chaldejců, Aramejců)“ – neutrálně, hangul „v KLDR čosongul“, popisek hebrejského písma v nesporném území Izraele,
+čerokízský v Oklahomě).
 
 **Wikidata** jsou z prostředí Claude Code na webu blokovaná, proto je stahuje GitHub Actions
 (`.github/workflows/wikidata.yml`, 1. v měsíci a ručně přes Actions → Run workflow). Výsledek přijde jako pull request;
@@ -620,6 +635,21 @@ nejstarší dochované vydání 1622; sčítání 1897; 11–13 milionů před v
 „Německo, jeho spojenci a kolaboranti“; asi pět milionů obětí mluvilo jidiš (odhad); SSSR 1948–1949 a 12. 8. 1952 jmenovitě;
 Izrael prosazoval hebrejštinu a omezoval jidiš tisk a divadlo; dnes půl milionu až milion mluvčích; YIVO ve Vilně; uznání jen
 potvrzené státy (Švédsko, Nizozemsko, Polsko, Rumunsko, BiH, Ukrajina); šipky emigrace po moři, ne přes Nizozemsko a Anglii.
+**Putování abecedy** (30. 9. 2026, koncept čeká na schválení náhledu; `#putovani-abecedy` / `#journey-alphabet`): putování
+písma, ne jazyka – místo `atlas` má `pisma` (kódy z `data/pisma.json`, karta písma a legenda mapy Písmo na něj dávají tlačítko)
+a `obrazek` (id stránky Jazyků starověku, jejíž náhled je dlaždicí v Příbězích; validace obojí hlídá). Oblasti mohou mít `znak`
+{`text`, `font`} – písmeno na papírovém kolečku s linkou v barvě oblasti nad popiskem (fonty Noto se načtou z Google Fonts jen
+s použitými znaky, `nactiZnakyPutovani`). 8 etap: vznik písma (vůl v klínopisu, hieroglyfech a čínsky – předkem A je jen
+egyptská volská hlava), Vádí el-Hól a Serábít, Féničané, Řekové, Etruskové a Řím, aramejské písmo a potomci (bráhmí sporné),
+hlaholice a cyrilice, dnes. Barvy `--put-psa, sin, fen, rek, etr, lat, ara, heb, arb, kha, hla, cyr`. Šířka šipky je nejvýš 22 px
+(při velkém přiblížení rostla přes celý ostrov), `sirka` zúží i hrot. Při ověření opraveno mj.: Uruk protoklínové písmo 3350–3200,
+hrob U-j v Abydu 3300–3150 a prvenství nerozhodnutelné, Mezoamerika zapotécké a mayské nápisy (olmécké sporné), směr Egypt → Sinaj
+sporný, Naveh (11. st.), al-Mína dnes v Turecku, „soustavně zapisuje i samohlásky“, Marsiliana 675–650, spona z Praeneste,
+F = digamma přes etruské FH, aramejština v Asýrii vedle akkadštiny, nejstarší datovaný arabský nápis Hima 470, Gandhára dnes
+Pákistán, tvary hlaholice sporné, cyrilici sestavili žáci (Preslav), Sázava do 1096, Poláci hlaholicí nepsali; šipky nesmí přes
+Cap Bon, Bizertu, Peloponés ani Kalábrii (Messinská úžina).
+**Putování maltštiny** (30. 9. 2026, koncept, `#putovani-maltstina` / `#journey-maltese`, 6 etap: semitské kořeny, Arabové
+v severní Africe a na Sicílii, nové osídlení 1048/1049, Normané, johanité a Britové, dnes). Barvy `--put-sem, sar, mt, itm, enm`.
 **Vstup do putování** (29. 9. 2026, uživatel vybral z návrhů jen „skupinu v Příbězích“): v okně Příběhy jazyků je za skupinou
 Slova na cestách skupina **Putování jazyků** (`vlozPutovani` v `otevriSekci`) s dlaždicí pro každé putování – akvarel jazyka
 (`/malby/<atlas>.jpg`, v artefaktu `malbaObrazek`, bez oživení), název a `podtitul` (povinný, validace). Tlačítko na kartě jazyka

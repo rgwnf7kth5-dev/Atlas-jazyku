@@ -1,0 +1,882 @@
+{
+ "_pozn": "Živá písma pro vrstvu Písma světa: kod (ISO 15924, klíč karty), kody (kódy CLDR, které k písmu patří), ukazka (znaky písma na glóbu a v kartě), typ (abeceda / abdzad / abugida / slabicne / logograficke / smisene), smer (ltr, rtl, ttb), stitky (polohy popisků [délka, šířka]), font (písmo Noto, kde systém nemusí mít znaky). Oblasti se počítají z teček jazyků podle CLDR.",
+ "pisma": [
+  {
+   "kod": "Latn",
+   "kody": [
+    "Latn",
+    "Latf"
+   ],
+   "ukazka": "Abc",
+   "typ": "abeceda",
+   "smer": "ltr",
+   "stitky": [
+    [
+     8,
+     48
+    ],
+    [
+     -62,
+     -12
+    ],
+    [
+     -100,
+     40
+    ],
+    [
+     18,
+     2
+    ],
+    [
+     135,
+     -25
+    ],
+    [
+     115,
+     -2
+    ]
+   ],
+   "cs": {
+    "nazev": "Latinka",
+    "text": "Vznikla v 7. století př. n. l. v Itálii z etruské podoby řecké abecedy. Je nejrozšířenějším písmem světa: píše se jí většina jazyků Evropy, obou Amerik, Afriky jižně od Sahary, Oceánie a mnoha zemí Asie (turečtina, vietnamština, indonéština), mnohé z nich teprve od 19. a 20. století."
+   },
+   "en": {
+    "nazev": "Latin script",
+    "text": "It arose in Italy in the 7th century BCE from the Etruscan form of the Greek alphabet. It is the most widespread script in the world: most languages of Europe, the Americas, sub-Saharan Africa and Oceania and many languages of Asia (Turkish, Vietnamese, Indonesian) are written in it, many of them only since the 19th and 20th centuries."
+   }
+  },
+  {
+   "kod": "Cyrl",
+   "kody": [
+    "Cyrl"
+   ],
+   "ukazka": "Абв",
+   "typ": "abeceda",
+   "smer": "ltr",
+   "stitky": [
+    [
+     45,
+     56
+    ],
+    [
+     100,
+     62
+    ]
+   ],
+   "cs": {
+    "nazev": "Cyrilice",
+    "text": "Vznikla koncem 9. nebo v 10. století v Bulharské říši podle řecké abecedy, s písmeny pro slovanské hlásky převzatými z hlaholice. Píše se jí ruština, ukrajinština, běloruština, bulharština, makedonština, srbština (vedle latinky) a mnoho neslovanských jazyků bývalého Sovětského svazu a Mongolska."
+   },
+   "en": {
+    "nazev": "Cyrillic",
+    "text": "It arose in the late 9th or 10th century in the Bulgarian Empire, based on the Greek alphabet with letters for Slavic sounds taken from Glagolitic. It is used for Russian, Ukrainian, Belarusian, Bulgarian, Macedonian, Serbian (alongside Latin) and many non-Slavic languages of the former Soviet Union and Mongolia."
+   }
+  },
+  {
+   "kod": "Grek",
+   "kody": [
+    "Grek"
+   ],
+   "ukazka": "Αβγ",
+   "typ": "abeceda",
+   "smer": "ltr",
+   "stitky": [
+    [
+     22,
+     39
+    ]
+   ],
+   "cs": {
+    "nazev": "Řecké písmo",
+    "text": "Řekové ho převzali od Féničanů nejspíš v 9. nebo 8. století př. n. l. a jako první soustavně zapisovali i samohlásky. Dnes se jím píše řečtina; vyšly z něj latinka (přes etruskou abecedu), gótské písmo, koptské písmo a cyrilice."
+   },
+   "en": {
+    "nazev": "Greek script",
+    "text": "The Greeks adopted it from the Phoenicians probably in the 9th or 8th century BCE and were the first to write vowels systematically. Today it is used for Greek; the Latin script (via the Etruscan alphabet), the Gothic, Coptic and Cyrillic scripts derive from it."
+   }
+  },
+  {
+   "kod": "Arab",
+   "kody": [
+    "Arab",
+    "Aran"
+   ],
+   "ukazka": "ا ب ت",
+   "typ": "abdzad",
+   "smer": "rtl",
+   "stitky": [
+    [
+     12,
+     28
+    ],
+    [
+     45,
+     24
+    ],
+    [
+     66,
+     32
+    ]
+   ],
+   "cs": {
+    "nazev": "Arabské písmo",
+    "text": "Vyvinulo se z nabatejského písma, odnože aramejského; přechodné nabatejsko-arabské nápisy jsou ze 3.–5. století, nejstarší datovaný nápis arabským písmem je z roku 512 (Zabad v Sýrii). S islámem se rozšířilo od severní Afriky po jihovýchodní Asii. Vedle arabštiny se jím píše perština, paštština, urdština, sindhština, ujgurština nebo kurdština sorání. V arabštině zapisuje hlavně souhlásky, dlouhé samohlásky písmeny a krátké jen volitelnými znaménky; ujgurština a kurdština sorání ale píší všechny samohlásky."
+   },
+   "en": {
+    "nazev": "Arabic script",
+    "text": "It developed from the Nabataean script, an offshoot of Aramaic; transitional Nabataeo-Arabic inscriptions date from the 3rd–5th centuries, and the oldest dated inscription in Arabic script is from 512 (Zabad in Syria). With Islam it spread from North Africa to South-East Asia. Besides Arabic it is used for Persian, Pashto, Urdu, Sindhi, Uyghur and Sorani Kurdish. In Arabic it writes mainly consonants, long vowels with letters and short vowels only with optional marks; Uyghur and Sorani Kurdish, however, write all vowels."
+   }
+  },
+  {
+   "kod": "Hebr",
+   "kody": [
+    "Hebr"
+   ],
+   "ukazka": "א ב ג",
+   "typ": "abdzad",
+   "smer": "rtl",
+   "stitky": [
+    [
+     34.85,
+     31.9
+    ]
+   ],
+   "cs": {
+    "nazev": "Hebrejské písmo",
+    "text": "Dnešní „čtvercové“ písmo vychází z aramejského písma, které Židé převzali v perském období (od 6.–5. století př. n. l.) místo staršího paleohebrejského. Píše se jím hebrejština a jidiš, dříve i ladino (dnes většinou latinkou) a další židovské jazyky."
+   },
+   "en": {
+    "nazev": "Hebrew script",
+    "text": "Today's “square” script derives from the Aramaic script, which Jews adopted in the Persian period (from the 6th–5th century BCE) in place of the older Paleo-Hebrew script. It is used for Hebrew and Yiddish, formerly also for Ladino (now mostly written in Latin script) and other Jewish languages."
+   }
+  },
+  {
+   "kod": "Syrc",
+   "kody": [
+    "Syrc"
+   ],
+   "ukazka": "ܐ ܒ ܓ",
+   "typ": "abdzad",
+   "smer": "rtl",
+   "stitky": [
+    [
+     42,
+     37.5
+    ]
+   ],
+   "font": "Noto Sans Syriac",
+   "cs": {
+    "nazev": "Syrské písmo",
+    "text": "Vzniklo z aramejského písma v okolí Edessy v prvních stoletích n. l. Píše se jím klasická syrština, liturgický jazyk několika východních církví, a novoaramejské jazyky syrských křesťanů (Asyřanů, Chaldejců, Aramejců)."
+   },
+   "en": {
+    "nazev": "Syriac script",
+    "text": "It arose from the Aramaic script around Edessa in the first centuries CE. It is used for Classical Syriac, the liturgical language of several Eastern churches, and for the Neo-Aramaic languages of Syriac Christians (Assyrians, Chaldeans, Arameans)."
+   }
+  },
+  {
+   "kod": "Thaa",
+   "kody": [
+    "Thaa"
+   ],
+   "ukazka": "ހ ށ ނ",
+   "typ": "abugida",
+   "smer": "rtl",
+   "stitky": [
+    [
+     73.2,
+     3.5
+    ]
+   ],
+   "font": "Noto Sans Thaana",
+   "cs": {
+    "nazev": "Thaana",
+    "text": "Písmo maledivštiny, doložené od přelomu 16. a 17. století (nápisy v mešitě na ostrově Kandithíma), běžně užívané od 18. století. Prvních devět písmen vzniklo z arabských číslic a dalších devět z indických číslic; samohlásky se zapisují povinnými znaménky nad a pod písmeny."
+   },
+   "en": {
+    "nazev": "Thaana",
+    "text": "The script of Dhivehi, attested from the turn of the 17th century (inscriptions in the mosque on Kanditheemu), in general use from the 18th century. Its first nine letters derive from Arabic numerals and the next nine from Indic numerals; vowels are written with obligatory marks above and below the letters."
+   }
+  },
+  {
+   "kod": "Deva",
+   "kody": [
+    "Deva"
+   ],
+   "ukazka": "अ आ इ",
+   "typ": "abugida",
+   "smer": "ltr",
+   "stitky": [
+    [
+     79,
+     26.5
+    ]
+   ],
+   "cs": {
+    "nazev": "Dévanágarí",
+    "text": "Indické písmo odvozené z bráhmí přes písmo gupta a nágarí; znaky visí pod souvislou vodorovnou čarou. Píše se jím hindština, maráthština, nepálština, sanskrt a mnoho dalších jazyků severní Indie a Nepálu."
+   },
+   "en": {
+    "nazev": "Devanagari",
+    "text": "An Indian script derived from Brahmi via the Gupta and Nagari scripts; its letters hang from a continuous horizontal line. It is used for Hindi, Marathi, Nepali, Sanskrit and many other languages of northern India and Nepal."
+   }
+  },
+  {
+   "kod": "Beng",
+   "kody": [
+    "Beng"
+   ],
+   "ukazka": "অ আ ই",
+   "typ": "abugida",
+   "smer": "ltr",
+   "stitky": [
+    [
+     90,
+     24
+    ]
+   ],
+   "cs": {
+    "nazev": "Bengálské písmo",
+    "text": "Východoindické písmo ze stejného kořene jako dévanágarí. Ve dvou mírně odlišných podobách se jím píše bengálština a ásámština, užívá se i pro manipurštinu, kde ho od roku 2021 souběžně doplňuje obnovené písmo meitei majek."
+   },
+   "en": {
+    "nazev": "Bengali script",
+    "text": "An eastern Indian script from the same root as Devanagari. In two slightly different forms it is used for Bengali and Assamese, and also for Manipuri, where since 2021 it has been used concurrently with the revived Meitei Mayek script."
+   }
+  },
+  {
+   "kod": "Guru",
+   "kody": [
+    "Guru"
+   ],
+   "ukazka": "ੳ ਅ ੲ",
+   "typ": "abugida",
+   "smer": "ltr",
+   "stitky": [
+    [
+     75.5,
+     31
+    ]
+   ],
+   "cs": {
+    "nazev": "Gurmukhí",
+    "text": "Písmo pandžábštiny v Indii, spjaté se sikhy; podle tradice ho v 16. století upravil druhý sikhský guru Angad. V Pákistánu se pandžábština píše arabským písmem (šáhmukhí)."
+   },
+   "en": {
+    "nazev": "Gurmukhi",
+    "text": "The script of Punjabi in India, associated with the Sikhs; according to tradition it was standardised in the 16th century by the second Sikh Guru, Angad. In Pakistan Punjabi is written in the Arabic script (Shahmukhi)."
+   }
+  },
+  {
+   "kod": "Gujr",
+   "kody": [
+    "Gujr"
+   ],
+   "ukazka": "અ આ ઇ",
+   "typ": "abugida",
+   "smer": "ltr",
+   "stitky": [
+    [
+     71.5,
+     22.5
+    ]
+   ],
+   "cs": {
+    "nazev": "Gudžarátské písmo",
+    "text": "Blízký příbuzný dévanágarí, ale bez souvislé horní čáry. Píše se jím gudžarátština."
+   },
+   "en": {
+    "nazev": "Gujarati script",
+    "text": "A close relative of Devanagari, but without the continuous top line. It is used for Gujarati."
+   }
+  },
+  {
+   "kod": "Orya",
+   "kody": [
+    "Orya"
+   ],
+   "ukazka": "ଅ ଆ ଇ",
+   "typ": "abugida",
+   "smer": "ltr",
+   "stitky": [
+    [
+     84.5,
+     20.5
+    ]
+   ],
+   "cs": {
+    "nazev": "Urijské písmo",
+    "text": "Písmo urijštiny (odijštiny) ve východní Indii. Typické zaoblené hlavy písmen se obvykle vysvětlují tradicí psaní rydlem na palmové listy, které by rovná čára trhala."
+   },
+   "en": {
+    "nazev": "Odia script",
+    "text": "The script of Odia in eastern India. Its typical rounded tops are usually explained by the tradition of writing with a stylus on palm leaves, which a straight line would tear."
+   }
+  },
+  {
+   "kod": "Taml",
+   "kody": [
+    "Taml"
+   ],
+   "ukazka": "அ ஆ இ",
+   "typ": "abugida",
+   "smer": "ltr",
+   "stitky": [
+    [
+     78.5,
+     10.8
+    ]
+   ],
+   "cs": {
+    "nazev": "Tamilské písmo",
+    "text": "Jihoindické písmo odvozené z bráhmí. Má méně souhláskových znaků než ostatní indická písma, protože tamilština nerozlišuje znělost ani přídech."
+   },
+   "en": {
+    "nazev": "Tamil script",
+    "text": "A South Indian script derived from Brahmi. It has fewer consonant letters than other Indian scripts because Tamil does not distinguish voicing or aspiration."
+   }
+  },
+  {
+   "kod": "Telu",
+   "kody": [
+    "Telu"
+   ],
+   "ukazka": "అ ఆ ఇ",
+   "typ": "abugida",
+   "smer": "ltr",
+   "stitky": [
+    [
+     79.5,
+     17
+    ]
+   ],
+   "cs": {
+    "nazev": "Telugské písmo",
+    "text": "Jihoindické písmo s charakteristickými oblými tvary, blízce příbuzné kannadskému. Píše se jím telugština."
+   },
+   "en": {
+    "nazev": "Telugu script",
+    "text": "A South Indian script with characteristic rounded shapes, closely related to the Kannada script. It is used for Telugu."
+   }
+  },
+  {
+   "kod": "Knda",
+   "kody": [
+    "Knda"
+   ],
+   "ukazka": "ಅ ಆ ಇ",
+   "typ": "abugida",
+   "smer": "ltr",
+   "stitky": [
+    [
+     75.8,
+     14.5
+    ]
+   ],
+   "cs": {
+    "nazev": "Kannadské písmo",
+    "text": "Jihoindické písmo blízce příbuzné telugskému. Píše se jím kannadština a užívá se i pro některé menší jazyky Karnátaky, například tulu."
+   },
+   "en": {
+    "nazev": "Kannada script",
+    "text": "A South Indian script closely related to Telugu. It is used for Kannada and also for some smaller languages of Karnataka, such as Tulu."
+   }
+  },
+  {
+   "kod": "Mlym",
+   "kody": [
+    "Mlym"
+   ],
+   "ukazka": "അ ആ ഇ",
+   "typ": "abugida",
+   "smer": "ltr",
+   "stitky": [
+    [
+     76.3,
+     9.6
+    ]
+   ],
+   "cs": {
+    "nazev": "Malajálamské písmo",
+    "text": "Jihoindické písmo malajálamštiny v Kérale, vzniklé z písma grantha."
+   },
+   "en": {
+    "nazev": "Malayalam script",
+    "text": "The South Indian script of Malayalam in Kerala, derived from the Grantha script."
+   }
+  },
+  {
+   "kod": "Sinh",
+   "kody": [
+    "Sinh"
+   ],
+   "ukazka": "අ ආ ඇ",
+   "typ": "abugida",
+   "smer": "ltr",
+   "stitky": [
+    [
+     80.7,
+     7.5
+    ]
+   ],
+   "cs": {
+    "nazev": "Sinhálské písmo",
+    "text": "Písmo sinhálštiny na Srí Lance, odvozené z bráhmí."
+   },
+   "en": {
+    "nazev": "Sinhala script",
+    "text": "The script of Sinhala in Sri Lanka, derived from Brahmi."
+   }
+  },
+  {
+   "kod": "Tibt",
+   "kody": [
+    "Tibt"
+   ],
+   "ukazka": "ཀ ཁ ག",
+   "typ": "abugida",
+   "smer": "ltr",
+   "stitky": [
+    [
+     88,
+     32
+    ]
+   ],
+   "cs": {
+    "nazev": "Tibetské písmo",
+    "text": "Podle tradice ho v 7. století podle indického vzoru vytvořil Thönmi Sambhota. Píše se jím tibetština, dzongkha v Bhútánu a další tibetské jazyky; pravopis zachovává výslovnost staré tibetštiny."
+   },
+   "en": {
+    "nazev": "Tibetan script",
+    "text": "According to tradition it was created in the 7th century by Thonmi Sambhota on an Indian model. It is used for Tibetan, Dzongkha in Bhutan and other Tibetic languages; its spelling preserves the pronunciation of Old Tibetan."
+   }
+  },
+  {
+   "kod": "Mymr",
+   "kody": [
+    "Mymr"
+   ],
+   "ukazka": "က ခ ဂ",
+   "typ": "abugida",
+   "smer": "ltr",
+   "stitky": [
+    [
+     96,
+     21
+    ]
+   ],
+   "cs": {
+    "nazev": "Barmské písmo",
+    "text": "Písmo z okruhu jihoindických písem, podle tradičního výkladu převzaté přes monské písmo (část badatelů ho odvozuje od písma pju); tvary jsou složené z kruhů a oblouků. Píše se jím barmština, monština, šanština a další jazyky Myanmaru."
+   },
+   "en": {
+    "nazev": "Burmese script",
+    "text": "A script of the South Indian family, traditionally held to have come via the Mon script (some scholars derive it from the Pyu script instead); its letters are built from circles and arcs. It is used for Burmese, Mon, Shan and other languages of Myanmar."
+   }
+  },
+  {
+   "kod": "Thai",
+   "kody": [
+    "Thai"
+   ],
+   "ukazka": "ก ข ค",
+   "typ": "abugida",
+   "smer": "ltr",
+   "stitky": [
+    [
+     101,
+     15
+    ]
+   ],
+   "cs": {
+    "nazev": "Thajské písmo",
+    "text": "Vzniklo ze starokhmerského písma; tradice jeho vznik spojuje s králem Ramkhamhaengem a rokem 1283, pravost jeho nápisu je ale sporná. Zapisuje i tóny thajštiny a slova se v textu neoddělují mezerami."
+   },
+   "en": {
+    "nazev": "Thai script",
+    "text": "It arose from the Old Khmer script; tradition links its creation to King Ram Khamhaeng and the year 1283, though the authenticity of his inscription is disputed. It also marks the tones of Thai, and words are not separated by spaces."
+   }
+  },
+  {
+   "kod": "Laoo",
+   "kody": [
+    "Laoo"
+   ],
+   "ukazka": "ກ ຂ ຄ",
+   "typ": "abugida",
+   "smer": "ltr",
+   "stitky": [
+    [
+     103,
+     19.5
+    ]
+   ],
+   "cs": {
+    "nazev": "Laoské písmo",
+    "text": "Blízký příbuzný thajského písma se zjednodušenými tvary. Píše se jím laoština."
+   },
+   "en": {
+    "nazev": "Lao script",
+    "text": "A close relative of the Thai script with simplified shapes. It is used for Lao."
+   }
+  },
+  {
+   "kod": "Khmr",
+   "kody": [
+    "Khmr"
+   ],
+   "ukazka": "ក ខ គ",
+   "typ": "abugida",
+   "smer": "ltr",
+   "stitky": [
+    [
+     105,
+     12.5
+    ]
+   ],
+   "cs": {
+    "nazev": "Khmerské písmo",
+    "text": "Vyvinulo se z jihoindického písma pallava; nejstarší datovaný khmerský nápis je z roku 611. Píše se jím khmerština a vyšla z něj thajské a laoské písmo."
+   },
+   "en": {
+    "nazev": "Khmer script",
+    "text": "It developed from the South Indian Pallava script; the oldest dated Khmer inscription is from 611. It is used for Khmer, and the Thai and Lao scripts derive from it."
+   }
+  },
+  {
+   "kod": "Geor",
+   "kody": [
+    "Geor"
+   ],
+   "ukazka": "ა ბ გ",
+   "typ": "abeceda",
+   "smer": "ltr",
+   "stitky": [
+    [
+     43.5,
+     42
+    ]
+   ],
+   "cs": {
+    "nazev": "Gruzínské písmo",
+    "text": "Nejstarší gruzínské nápisy jsou z 5. století. Dnes se gruzínština píše abecedou mchedruli o 33 písmenech. Velká a malá písmena v textu nerozlišuje, tvary mtavruli se užívají jen pro psaní verzálkami v titulcích."
+   },
+   "en": {
+    "nazev": "Georgian script",
+    "text": "The oldest Georgian inscriptions date from the 5th century. Today Georgian is written in the Mkhedruli alphabet of 33 letters, which has no case distinction in running text; Mtavruli forms are used only for all-caps titles."
+   }
+  },
+  {
+   "kod": "Armn",
+   "kody": [
+    "Armn"
+   ],
+   "ukazka": "Ա Բ Գ",
+   "typ": "abeceda",
+   "smer": "ltr",
+   "stitky": [
+    [
+     44.8,
+     40.2
+    ]
+   ],
+   "cs": {
+    "nazev": "Arménské písmo",
+    "text": "Kolem roku 405 ho vytvořil mnich Mesrop Maštoc, aby do arménštiny mohla být přeložena Bible. Má 36 původních písmen, k nimž později (ve 12.–13. století) přibyla dvě další, ō a f."
+   },
+   "en": {
+    "nazev": "Armenian script",
+    "text": "Around 405 it was created by the monk Mesrop Mashtots so that the Bible could be translated into Armenian. It has 36 original letters, to which two more, ō and f, were added later (12th–13th century)."
+   }
+  },
+  {
+   "kod": "Ethi",
+   "kody": [
+    "Ethi"
+   ],
+   "ukazka": "ሀ ለ ሐ",
+   "typ": "abugida",
+   "smer": "ltr",
+   "stitky": [
+    [
+     39,
+     9
+    ]
+   ],
+   "cs": {
+    "nazev": "Etiopské písmo",
+    "text": "Vyvinulo se z jihoarabského písma; ve 4. století se k souhláskám začaly připojovat značky pro samohlásky. Píše se jím amharština, tigriňa a liturgický jazyk ge’ez."
+   },
+   "en": {
+    "nazev": "Ethiopic script",
+    "text": "It developed from the South Arabian script; in the 4th century vowel marks began to be attached to the consonants. It is used for Amharic, Tigrinya and the liturgical language Ge'ez."
+   }
+  },
+  {
+   "kod": "Hani",
+   "kody": [
+    "Hani",
+    "Hans",
+    "Hant"
+   ],
+   "ukazka": "文字",
+   "typ": "logograficke",
+   "smer": "ltr",
+   "stitky": [
+    [
+     108,
+     33
+    ]
+   ],
+   "cs": {
+    "nazev": "Čínské znaky",
+    "text": "Nejstarší doklady jsou nápisy na věšteckých kostech z doby dynastie Šang (asi 1250 př. n. l.). Znak zpravidla zapisuje jednu slabiku s významem. V ČLR a Singapuru se píší zjednodušené znaky, na Tchaj-wanu, v Hongkongu a Macao tradiční."
+   },
+   "en": {
+    "nazev": "Chinese characters",
+    "text": "The oldest evidence is the oracle bone inscriptions of the Shang dynasty (c. 1250 BCE). A character usually writes one meaningful syllable. Simplified characters are used in the PRC and Singapore, traditional ones in Taiwan, Hong Kong and Macau."
+   }
+  },
+  {
+   "kod": "Jpan",
+   "kody": [
+    "Jpan",
+    "Kana",
+    "Hira"
+   ],
+   "ukazka": "漢字かな",
+   "typ": "smisene",
+   "smer": "ltr",
+   "stitky": [
+    [
+     138.5,
+     36.5
+    ]
+   ],
+   "cs": {
+    "nazev": "Japonské písmo",
+    "text": "Kombinuje čínské znaky (kandži) se dvěma slabičnými písmy, hiraganou a katakanou, která se z čínských znaků vyvinula v 9. století. Píše se vodorovně i svisle."
+   },
+   "en": {
+    "nazev": "Japanese script",
+    "text": "It combines Chinese characters (kanji) with two syllabaries, hiragana and katakana, which developed from Chinese characters in the 9th century. It is written both horizontally and vertically."
+   }
+  },
+  {
+   "kod": "Kore",
+   "kody": [
+    "Kore",
+    "Hang"
+   ],
+   "ukazka": "한글",
+   "typ": "abeceda",
+   "smer": "ltr",
+   "stitky": [
+    [
+     127.8,
+     36.5
+    ]
+   ],
+   "cs": {
+    "nazev": "Hangul",
+    "text": "Korejské písmo (v KLDR čosongul) vytvořené z podnětu krále Sedžonga a vyhlášené roku 1446. Písmena se skládají do slabičných bloků a tvary souhlásek napodobují postavení mluvidel."
+   },
+   "en": {
+    "nazev": "Hangul",
+    "text": "The Korean script (Chosŏn’gŭl in North Korea), created at the initiative of King Sejong and promulgated in 1446. Letters are grouped into syllable blocks, and the shapes of the consonants imitate the position of the speech organs."
+   }
+  },
+  {
+   "kod": "Mong",
+   "kody": [
+    "Mong"
+   ],
+   "ukazka": "ᠮᠣᠩᠭᠣᠯ",
+   "typ": "abeceda",
+   "smer": "ttb",
+   "stitky": [
+    [
+     112,
+     43
+    ]
+   ],
+   "font": "Noto Sans Mongolian",
+   "cs": {
+    "nazev": "Mongolské písmo",
+    "text": "Vzniklo ve 13. století z ujgurského písma a píše se svisle shora dolů. V Mongolsku ho od 40. let 20. století v běžném užívání nahradila cyrilice; od 2. ledna 2025 se tam ale úřední dokumenty vydávají souběžně v obou písmech. Ve Vnitřním Mongolsku v Číně se užívá nepřetržitě."
+   },
+   "en": {
+    "nazev": "Mongolian script",
+    "text": "It arose in the 13th century from the Uyghur script and is written vertically from top to bottom. In Mongolia it was replaced in everyday use by Cyrillic from the 1940s; since 2 January 2025, however, official documents there have been issued in both scripts. In Inner Mongolia in China it has remained in continuous use."
+   }
+  },
+  {
+   "kod": "Cans",
+   "kody": [
+    "Cans"
+   ],
+   "ukazka": "ᐊ ᐃ ᐅ",
+   "typ": "slabicne",
+   "smer": "ltr",
+   "stitky": [
+    [
+     -97,
+     54
+    ]
+   ],
+   "font": "Noto Sans Canadian Aboriginal",
+   "cs": {
+    "nazev": "Kanadské slabičné písmo",
+    "text": "Obvykle se připisuje misionáři Jamesi Evansovi (kolem roku 1840, Norway House), kríjská ústní tradice ho ale spojuje s Mistanâkôwêwem (Calling Badger). Tradičně se nazývá slabičné, typologicky je to abugida. Tvar znaku určuje souhlásku a jeho natočení samohlásku. Píše se jím kríjština, odžibvejština a inuktitut."
+   },
+   "en": {
+    "nazev": "Canadian syllabics",
+    "text": "It is usually credited to the missionary James Evans (c. 1840, Norway House), though Cree oral tradition attributes it to Mistanâkôwêw (Calling Badger). Traditionally called a syllabary, typologically it is an abugida. The shape of a sign gives the consonant and its orientation the vowel. It is used for Cree, Ojibwe and Inuktitut."
+   }
+  },
+  {
+   "kod": "Tfng",
+   "kody": [
+    "Tfng"
+   ],
+   "ukazka": "ⵜⵉⴼⵉⵏⴰⵖ",
+   "typ": "abeceda",
+   "smer": "ltr",
+   "stitky": [
+    [
+     -5.5,
+     31.5
+    ]
+   ],
+   "font": "Noto Sans Tifinagh",
+   "cs": {
+    "nazev": "Tifinagh",
+    "text": "Písmo berberských jazyků s kořeny ve starověkém libyjsko-berberském písmu; Tuaregové ho užívají nepřetržitě. Jeho novodobá podoba je od roku 2003 v Maroku oficiálně přijatým písmem berberštiny (úředním jazykem je berberština od roku 2011). Tradiční tuarežský tifinagh samohlásky většinou nezapisuje."
+   },
+   "en": {
+    "nazev": "Tifinagh",
+    "text": "The script of the Berber languages, rooted in the ancient Libyco-Berber script; the Tuareg have used it continuously. Its modern form has been the officially adopted script for Berber in Morocco since 2003 (Berber has been an official language since 2011). Traditional Tuareg tifinagh mostly does not write vowels."
+   }
+  },
+  {
+   "kod": "Cher",
+   "kody": [
+    "Cher"
+   ],
+   "ukazka": "Ꭰ Ꭱ Ꭲ",
+   "typ": "slabicne",
+   "smer": "ltr",
+   "stitky": [
+    [
+     -95,
+     36
+    ]
+   ],
+   "font": "Noto Sans Cherokee",
+   "cs": {
+    "nazev": "Čerokézské slabičné písmo",
+    "text": "Vytvořil ho Sequoyah a čerokézská rada ho přijala roku 1825; během několika let se jím Čerokíové naučili hromadně psát. Téměř každý z 85 znaků zapisuje slabiku (výjimkou je samostatné s)."
+   },
+   "en": {
+    "nazev": "Cherokee syllabary",
+    "text": "It was created by Sequoyah and adopted by the Cherokee council in 1825; within a few years the Cherokee learned to write it en masse. Almost every one of its 85 signs writes a syllable (the exception is a standalone s)."
+   }
+  },
+  {
+   "kod": "Nkoo",
+   "kody": [
+    "Nkoo"
+   ],
+   "ukazka": "ߒߞߏ",
+   "typ": "abeceda",
+   "smer": "rtl",
+   "stitky": [
+    [
+     -9.5,
+     11
+    ]
+   ],
+   "font": "Noto Sans NKo",
+   "cs": {
+    "nazev": "N’Ko",
+    "text": "Roku 1949 ho vytvořil guinejský učitel Solomana Kanté pro mandingské jazyky. Píše se zprava doleva a zapisuje i tóny."
+   },
+   "en": {
+    "nazev": "N'Ko",
+    "text": "It was created in 1949 by the Guinean teacher Solomana Kanté for the Manding languages. It is written from right to left and also marks tones."
+   }
+  },
+  {
+   "kod": "Vaii",
+   "kody": [
+    "Vaii"
+   ],
+   "ukazka": "ꕙꔤ",
+   "typ": "slabicne",
+   "smer": "ltr",
+   "stitky": [
+    [
+     -11,
+     6.8
+    ]
+   ],
+   "font": "Noto Sans Vai",
+   "cs": {
+    "nazev": "Písmo vai",
+    "text": "Slabičné písmo jazyka vai v Libérii, vytvořené ve 30. letech 19. století; podle tradice je jeho autorem Momolu Duwalu Bukele."
+   },
+   "en": {
+    "nazev": "Vai script",
+    "text": "The syllabary of the Vai language in Liberia, created in the 1830s; tradition attributes it to Momolu Duwalu Bukele."
+   }
+  },
+  {
+   "kod": "Yiii",
+   "kody": [
+    "Yiii"
+   ],
+   "ukazka": "ꆈꌠ",
+   "typ": "slabicne",
+   "smer": "ltr",
+   "stitky": [
+    [
+     102.5,
+     27.5
+    ]
+   ],
+   "font": "Noto Sans Yi",
+   "cs": {
+    "nazev": "Písmo ji",
+    "text": "Slabičné písmo jazyka nuosu (ji) v provincii S’-čchuan, standardizované v 70. letech 20. století z tradičního písma."
+   },
+   "en": {
+    "nazev": "Yi script",
+    "text": "The syllabary of the Nuosu (Yi) language in Sichuan province, standardised in the 1970s from the traditional script."
+   }
+  },
+  {
+   "kod": "Olck",
+   "kody": [
+    "Olck"
+   ],
+   "ukazka": "ᱚᱞ ᱪᱤᱠᱤ",
+   "typ": "abeceda",
+   "smer": "ltr",
+   "stitky": [
+    [
+     86.8,
+     23
+    ]
+   ],
+   "font": "Noto Sans Ol Chiki",
+   "cs": {
+    "nazev": "Ol čiki",
+    "text": "Písmo santálštiny, které roku 1925 vytvořil Raghunáth Murmu. Na rozdíl od písem odvozených z bráhmí je to abeceda se samostatnými písmeny pro samohlásky."
+   },
+   "en": {
+    "nazev": "Ol Chiki",
+    "text": "The script of Santali, created in 1925 by Raghunath Murmu. Unlike the Brahmi-derived scripts, it is an alphabet with separate letters for vowels."
+   }
+  }
+ ]
+}

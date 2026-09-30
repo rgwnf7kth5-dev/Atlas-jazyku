@@ -116,6 +116,7 @@ function skriptStranky(vychozi, artefakt) {
     .replace("/*__PUTOVANI__*/null", () => doSkriptu(json("data/putovani.json").jazyky   // putování jazyka na glóbu; "koncept": true = čeká na ověření,
       .filter(j => !j.koncept || process.env.PUT_KONCEPTY)))                              //   do webu jde jen s PUT_KONCEPTY=1 (náhled)
     // cesty slov na glóbu (Příběhy)
+    .replace("/*__PISMA__*/null", () => doSkriptu(json("data/pisma.json").pisma))   // vrstva Písma světa
     .replace("/*__KRAJINY__*/null", () => doSkriptu(json("data/krajiny.json")))
     .replace("/*__RELIEF__*/null", () => JSON.stringify("data:image/webp;base64," + fs.readFileSync(path.join(KOREN, "data/relief.webp")).toString("base64")))
     .replace("/*__TYPOLOGIE__*/null", () => { const d = json("data/typologie.json"), p = json("data/typologie-popis.json");   // typologické mapy (WALS)

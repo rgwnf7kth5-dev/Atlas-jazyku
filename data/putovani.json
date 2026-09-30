@@ -6419,6 +6419,2169 @@
     "European Parliamentary Research Service (2022): Yiddish language and culture and its post-Holocaust fate in Europe.",
     "The YIVO Encyclopedia of Jews in Eastern Europe: Language: Yiddish. encyclopedia.yivo.org."
    ]
+  },
+  {
+   "id": "abeceda",
+   "koncept": true,
+   "obrazek": "fenicane",
+   "pisma": [
+    "Latn",
+    "Grek",
+    "Cyrl",
+    "Arab",
+    "Hebr"
+   ],
+   "adresa": {
+    "cs": "putovani-abecedy",
+    "en": "journey-alphabet"
+   },
+   "nazev": {
+    "cs": "Putování abecedy",
+    "en": "The journey of the alphabet"
+   },
+   "podtitul": {
+    "cs": "Od egyptského obrázku vola k písmenu A",
+    "en": "From an Egyptian ox picture to the letter A"
+   },
+   "uvod": {
+    "cs": "Jak se z obrázku volské hlavy stalo písmeno A: od prvních písem přes Sinaj, Féničany, Řeky a Římany až k latince, cyrilici a arabskému písmu. U každé etapy je na mapě znak pro „vola“ nebo první písmeno daného písma (alef, alfa, az…). Ne každý je předkem našeho A: v první etapě jde o vola v jiných písmech pro srovnání, u hlaholice je převzaté jen pořadí písmen, ne tvar. Letopočty jsou přibližné, sporné výklady jsou přerušovaně.",
+    "en": "How a picture of an ox head became the letter A: from the first scripts via Sinai, the Phoenicians, Greeks and Romans to the Latin, Cyrillic and Arabic scripts. Each stage shows the sign for “ox” or the first letter of the script concerned (aleph, alpha, az…). Not every one is an ancestor of our A: the first stage shows the ox in other scripts for comparison, and Glagolitic took only the order of the letters, not their shapes. Dates are approximate; disputed interpretations are dashed."
+   },
+   "etapy": [
+    {
+     "id": "pocatky",
+     "doba": {
+      "cs": "4. – 1. tisíciletí př. n. l.",
+      "en": "4th – 1st millennium BCE"
+     },
+     "pohled": [
+      62,
+      30,
+      1.15
+     ],
+     "nazev": {
+      "cs": "Písmo vzniká několikrát",
+      "en": "Writing is invented several times"
+     },
+     "text": {
+      "cs": "Písmo vzniklo nezávisle nejméně třikrát, možná čtyřikrát: v Mezopotámii (protoklínové písmo, předchůdce sumerského klínopisu, Uruk, asi 3350–3200 př. n. l.), v Egyptě (hieroglyfy, štítky z hrobu U-j v Abydu, asi 3300–3150 př. n. l.; které písmo je starší, nelze rozhodnout), v Číně (nápisy na věšteckých kostech, asi 1250 př. n. l.) a v Mezoamerice (zapotécké a mayské nápisy, 2. polovina 1. tisíciletí př. n. l.; starší olmécké doklady jsou sporné). Zda jsou znaky harappské kultury v Poříčí Indu (asi 2600–1900 př. n. l.) písmem, je sporné; nejsou rozluštěné. Zda Egypt převzal alespoň myšlenku písma z Mezopotámie, je sporné. Všechna tato písma kombinují znaky pro slova se znaky pro zvuk (slabiky, v Egyptě jen souhlásky), a písaři proto museli znát stovky až tisíce znaků. Znaky na mapě ukazují slovo „vůl“ ve třech písmech. Předkem písmene A je jen egyptský obrázek volské hlavy; sumerský a čínský vůl jsou tu pro srovnání.",
+      "en": "Writing arose independently at least three times, perhaps four: in Mesopotamia (proto-cuneiform, the forerunner of Sumerian cuneiform, Uruk, c. 3350–3200 BCE), in Egypt (hieroglyphs, labels from tomb U-j at Abydos, c. 3300–3150 BCE; which is older cannot be decided), in China (oracle-bone inscriptions, c. 1250 BCE) and in Mesoamerica (Zapotec and Maya inscriptions, second half of the 1st millennium BCE; earlier Olmec evidence is disputed). Whether the signs of the Harappan culture of the Indus valley (c. 2600–1900 BCE) are writing is disputed; they are undeciphered. Whether Egypt borrowed at least the idea of writing from Mesopotamia is disputed. All of them combine word signs with sound signs (syllables, or in Egypt consonants only), so scribes had to know hundreds or thousands of signs. The signs on the map show the word “ox” in three scripts. Only the Egyptian ox head is an ancestor of the letter A; the Sumerian and Chinese oxen are shown for comparison."
+     },
+     "oblasti": [
+      {
+       "id": "mez",
+       "kruhy": [
+        [
+         45.8,
+         31.3,
+         3.2
+        ],
+        [
+         44.4,
+         33.3,
+         2.6
+        ],
+        [
+         47,
+         30.5,
+         2
+        ]
+       ],
+       "barva": "psa",
+       "znak": {
+        "text": "𒄞",
+        "font": "Noto Sans Cuneiform"
+       },
+       "popisek": {
+        "cs": "Mezopotámie",
+        "en": "Mesopotamia"
+       }
+      },
+      {
+       "id": "egy",
+       "kruhy": [
+        [
+         31.2,
+         27.5,
+         2.4
+        ],
+        [
+         31.3,
+         30.2,
+         2.2
+        ],
+        [
+         32.6,
+         25.6,
+         2
+        ]
+       ],
+       "barva": "psa",
+       "znak": {
+        "text": "𓃾",
+        "font": "Noto Sans Egyptian Hieroglyphs"
+       },
+       "popisek": {
+        "cs": "Egypt",
+        "en": "Egypt"
+       }
+      },
+      {
+       "id": "cin",
+       "kruhy": [
+        [
+         114.3,
+         36.1,
+         3
+        ],
+        [
+         112.5,
+         34.6,
+         2.5
+        ]
+       ],
+       "barva": "psa",
+       "znak": {
+        "text": "牛",
+        "font": "Noto Serif TC"
+       },
+       "popisek": {
+        "cs": "Čína",
+        "en": "China"
+       }
+      },
+      {
+       "id": "ind",
+       "kruhy": [
+        [
+         72.87,
+         30.63,
+         2.4
+        ],
+        [
+         68.1,
+         27.3,
+         2.4
+        ]
+       ],
+       "barva": "psa",
+       "sporna": true,
+       "popisek": {
+        "cs": "Indus (nerozluštěno)",
+        "en": "Indus (undeciphered)"
+       }
+      }
+     ]
+    },
+    {
+     "id": "sinaj",
+     "doba": {
+      "cs": "asi 1900 – 1500 př. n. l.",
+      "en": "c. 1900 – 1500 BCE"
+     },
+     "pohled": [
+      34,
+      28.5,
+      3.4
+     ],
+     "nazev": {
+      "cs": "Z obrázku hláska",
+      "en": "From picture to sound"
+     },
+     "text": {
+      "cs": "Nejstarší známé nápisy abecedního písma jsou ve Vádí el-Hól v Horním Egyptě (asi 1900–1800 př. n. l.) a v tyrkysových dolech v Serábít el-Chádim na Sinaji (datace sporná, asi 1850–1500 př. n. l.). Zapsali je lidé mluvící semitsky, kteří pracovali v egyptských službách. Vzali egyptské obrázky a použili je podle počáteční hlásky: kresba volské hlavy se semitsky jmenovala ʾalp „vůl“, a proto znamenala hlásku ʾ (ráz). Tento princip se nazývá akrofonie. Písmo mělo necelé tři desítky znaků, jen pro souhlásky – taková abeceda se jmenuje abdžad. Jména písmen jsou rekonstrukce. Během 2. tisíciletí se písmo dostalo do Kanaánu (krátké nápisy z Lachiše, Gezeru aj.); kdy a kudy, je sporné. Zda písmo vzniklo v Egyptě, nebo přímo na Sinaji, je také sporné.",
+      "en": "The oldest known alphabetic inscriptions are at Wadi el-Hol in Upper Egypt (c. 1900–1800 BCE) and in the turquoise mines of Serabit el-Khadim in Sinai (dating disputed, c. 1850–1500 BCE). They were written by speakers of a Semitic language working in Egyptian service. They took Egyptian pictures and used them for their initial sound: a drawing of an ox head was called ʾalp \"ox\" in Semitic, so it stood for the sound ʾ (a glottal stop). This principle is called acrophony. The script had fewer than thirty signs, for consonants only – an alphabet of this kind is called an abjad. The letter names are reconstructions. During the 2nd millennium the script reached Canaan (short inscriptions from Lachish, Gezer and elsewhere); when and by what route is disputed. Whether the script arose in Egypt or directly in Sinai is also disputed."
+     },
+     "oblasti": [
+      {
+       "id": "hol",
+       "kruhy": [
+        [
+         32.44,
+         25.93,
+         0.8
+        ]
+       ],
+       "barva": "sin",
+       "znak": {
+        "text": "𓃾",
+        "font": "Noto Sans Egyptian Hieroglyphs"
+       },
+       "popisek": {
+        "cs": "Vádí el-Hól",
+        "en": "Wadi el-Hol"
+       }
+      },
+      {
+       "id": "ser",
+       "kruhy": [
+        [
+         33.46,
+         29.03,
+         0.8
+        ]
+       ],
+       "barva": "sin",
+       "popisek": {
+        "cs": "Serábít el-Chádim",
+        "en": "Serabit el-Khadim"
+       }
+      },
+      {
+       "id": "kan",
+       "kruhy": [
+        [
+         35.2,
+         31.8,
+         1.1
+        ],
+        [
+         35.3,
+         33.2,
+         0.9
+        ]
+       ],
+       "barva": "sin",
+       "sporna": true,
+       "po": "na-sever",
+       "popisek": {
+        "cs": "Kanaán",
+        "en": "Canaan"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "na-sinaj",
+       "sporna": true,
+       "body": [
+        [
+         32.44,
+         25.93
+        ],
+        [
+         32.9,
+         27.6
+        ],
+        [
+         32.6,
+         29.6
+        ],
+        [
+         33.46,
+         29.03
+        ]
+       ],
+       "barva": "sin"
+      },
+      {
+       "id": "na-sever",
+       "body": [
+        [
+         33.46,
+         29.03
+        ],
+        [
+         34.2,
+         30.4
+        ],
+        [
+         34.8,
+         31.3
+        ],
+        [
+         35.2,
+         31.8
+        ]
+       ],
+       "barva": "sin",
+       "sporna": true
+      }
+     ]
+    },
+    {
+     "id": "fenicie",
+     "doba": {
+      "cs": "asi 1050 – 600 př. n. l.",
+      "en": "c. 1050 – 600 BCE"
+     },
+     "pohled": [
+      18,
+      36,
+      1.9
+     ],
+     "nazev": {
+      "cs": "Féničané a moře",
+      "en": "The Phoenicians and the sea"
+     },
+     "text": {
+      "cs": "Z kanaánských písem se ustálilo fénické písmo: 22 písmen pro souhlásky, psaných zprava doleva. Rok 1050 př. n. l. je jen konvenční datum; jedním z nejstarších delších nápisů je sarkofág krále Ahirama z Byblu (asi 1000 př. n. l., datace sporná). Féničtí obchodníci z Týru, Sidónu a Byblu je roznesli po Středomoří – na Kypr, do Kartága, na Sardinii (nápis z Nory) a do Gadiru, dnešního Cádizu. Z písmene alp se stalo fénické ʾalep.",
+      "en": "The Phoenician script settled out of the Canaanite scripts: 22 consonants written right to left. The year 1050 BCE is only a conventional date; one of the oldest longer inscriptions is the sarcophagus of King Ahiram of Byblos (c. 1000 BCE, dating disputed). Phoenician merchants from Tyre, Sidon and Byblos carried it across the Mediterranean – to Cyprus, Carthage, Sardinia (the Nora Stone) and Gadir, today's Cádiz. The letter alp became Phoenician ʾalep."
+     },
+     "oblasti": [
+      {
+       "id": "fen",
+       "kruhy": [
+        [
+         35.6,
+         34.0,
+         1.3
+        ],
+        [
+         35.3,
+         33.0,
+         1.0
+        ]
+       ],
+       "barva": "fen",
+       "znak": {
+        "text": "𐤀",
+        "font": "Noto Sans Phoenician"
+       },
+       "popisek": {
+        "cs": "Fénicie",
+        "en": "Phoenicia"
+       }
+      },
+      {
+       "id": "kyp",
+       "kruhy": [
+        [
+         33.6,
+         34.9,
+         0.9
+        ]
+       ],
+       "barva": "fen",
+       "po": "kypr",
+       "popisek": {
+        "cs": "Kition",
+        "en": "Kition"
+       }
+      },
+      {
+       "id": "kar",
+       "kruhy": [
+        [
+         10.3,
+         36.8,
+         1.1
+        ]
+       ],
+       "barva": "fen",
+       "po": "kartago",
+       "popisek": {
+        "cs": "Kartágo",
+        "en": "Carthage"
+       }
+      },
+      {
+       "id": "sar",
+       "kruhy": [
+        [
+         9.0,
+         39.2,
+         1.0
+        ]
+       ],
+       "barva": "fen",
+       "po": "sardinie",
+       "popisek": {
+        "cs": "Sardinie",
+        "en": "Sardinia"
+       }
+      },
+      {
+       "id": "gad",
+       "kruhy": [
+        [
+         -6.2,
+         36.6,
+         0.9
+        ]
+       ],
+       "barva": "fen",
+       "po": "gadir",
+       "popisek": {
+        "cs": "Gadir",
+        "en": "Gadir"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "kypr",
+       "body": [
+        [
+         35.3,
+         33.4
+        ],
+        [
+         34.6,
+         34.2
+        ],
+        [
+         33.8,
+         34.6
+        ]
+       ],
+       "barva": "fen"
+      },
+      {
+       "id": "kartago",
+       "body": [
+        [
+         35.0,
+         33.3
+        ],
+        [
+         32.0,
+         33.5
+        ],
+        [
+         27.0,
+         34.2
+        ],
+        [
+         22.0,
+         34.6
+        ],
+        [
+         16.0,
+         35.2
+        ],
+        [
+         12.8,
+         36.3
+        ],
+        [
+         11.4,
+         37.25
+        ],
+        [
+         10.6,
+         37.05
+        ],
+        [
+         10.4,
+         36.9
+        ]
+       ],
+       "barva": "fen"
+      },
+      {
+       "id": "sardinie",
+       "body": [
+        [
+         10.6,
+         37.2
+        ],
+        [
+         9.8,
+         38.2
+        ],
+        [
+         9.2,
+         38.8
+        ]
+       ],
+       "barva": "fen"
+      },
+      {
+       "id": "gadir",
+       "body": [
+        [
+         10.2,
+         37.3
+        ],
+        [
+         9.8,
+         37.6
+        ],
+        [
+         7.0,
+         37.6
+        ],
+        [
+         3.0,
+         37.2
+        ],
+        [
+         -1.0,
+         36.6
+        ],
+        [
+         -4.0,
+         36.1
+        ],
+        [
+         -5.6,
+         35.93
+        ],
+        [
+         -6.15,
+         36.15
+        ],
+        [
+         -6.35,
+         36.45
+        ]
+       ],
+       "barva": "fen"
+      }
+     ]
+    },
+    {
+     "id": "recko",
+     "doba": {
+      "cs": "asi 800 – 700 př. n. l.",
+      "en": "c. 800 – 700 BCE"
+     },
+     "pohled": [
+      20,
+      38.5,
+      2.6
+     ],
+     "nazev": {
+      "cs": "Řekové přidávají samohlásky",
+      "en": "The Greeks add vowels"
+     },
+     "text": {
+      "cs": "Řekové převzali fénické písmo nejspíš koncem 9. nebo v 8. století př. n. l. (J. Naveh navrhoval už 11. století); kde k tomu došlo (Kypr, Kréta, Rhodos, nebo přístav al-Mína u ústí Orontu, dnes v Turecku), je sporné. Nejstarší řecké nápisy jsou z 8. století, například Nestorův pohár z Pithékússai (asi 740–720 př. n. l.). Znaky pro semitské hlásky, které řečtina neměla, použili pro samohlásky: ʾalp se stalo alfou (Α) a znamenalo a. Tím vznikla první abeceda, která soustavně zapisuje i samohlásky. Euboiští osadníci ji přinesli do Itálie, do Pithékússai na Ischii a do Kýmé (Cumae).",
+      "en": "The Greeks adopted the Phoenician script probably in the late 9th or the 8th century BCE (J. Naveh argued for the 11th century); where this happened (Cyprus, Crete, Rhodes or the port of Al Mina at the mouth of the Orontes, today in Turkey) is disputed. The oldest Greek inscriptions date from the 8th century, e.g. Nestor's Cup from Pithekoussai (c. 740–720 BCE). Signs for Semitic sounds that Greek lacked were used for vowels: ʾalp became alpha (Α) and stood for a. This produced the first alphabet to write vowels systematically. Euboean settlers brought it to Italy, to Pithekoussai on Ischia and to Cumae."
+     },
+     "oblasti": [
+      {
+       "id": "rec",
+       "kruhy": [
+        [
+         23.7,
+         38.4,
+         1.3
+        ],
+        [
+         22.4,
+         37.4,
+         1.3
+        ],
+        [
+         24.0,
+         37.3,
+         0.9
+        ]
+       ],
+       "barva": "rek",
+       "po": "do-recka",
+       "znak": {
+        "text": "Α",
+        "font": "Noto Serif"
+       },
+       "popisek": {
+        "cs": "Řecko (Euboia)",
+        "en": "Greece (Euboea)"
+       }
+      },
+      {
+       "id": "kum",
+       "kruhy": [
+        [
+         14.1,
+         40.8,
+         0.8
+        ]
+       ],
+       "barva": "rek",
+       "po": "do-italie",
+       "popisek": {
+        "cs": "Pithékússai a Kýmé",
+        "en": "Pithekoussai and Cumae"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "do-recka",
+       "body": [
+        [
+         35.0,
+         33.9
+        ],
+        [
+         32.5,
+         34.4
+        ],
+        [
+         29.0,
+         35.6
+        ],
+        [
+         26.5,
+         36.2
+        ],
+        [
+         25.0,
+         37.0
+        ],
+        [
+         24.35,
+         37.7
+        ],
+        [
+         24.05,
+         38.0
+        ],
+        [
+         24.12,
+         38.2
+        ],
+        [
+         24.0,
+         38.3
+        ],
+        [
+         23.85,
+         38.36
+        ]
+       ],
+       "barva": "rek",
+       "sporna": true
+      },
+      {
+       "id": "do-italie",
+       "body": [
+        [
+         23.85,
+         38.36
+        ],
+        [
+         24.0,
+         38.3
+        ],
+        [
+         24.12,
+         38.2
+        ],
+        [
+         24.05,
+         38.0
+        ],
+        [
+         24.2,
+         37.6
+        ],
+        [
+         23.6,
+         36.6
+        ],
+        [
+         23.2,
+         36.1
+        ],
+        [
+         22.4,
+         36.1
+        ],
+        [
+         20.0,
+         37.2
+        ],
+        [
+         17.5,
+         38.0
+        ],
+        [
+         16.2,
+         37.75
+        ],
+        [
+         15.58,
+         37.95
+        ],
+        [
+         15.6,
+         38.2
+        ],
+        [
+         15.61,
+         38.24
+        ],
+        [
+         15.64,
+         38.3
+        ],
+        [
+         15.55,
+         38.45
+        ],
+        [
+         14.8,
+         39.8
+        ],
+        [
+         14.1,
+         40.75
+        ]
+       ],
+       "barva": "rek"
+      }
+     ]
+    },
+    {
+     "id": "italie",
+     "doba": {
+      "cs": "asi 700 – 500 př. n. l.",
+      "en": "c. 700 – 500 BCE"
+     },
+     "pohled": [
+      12.2,
+      42.3,
+      6.5
+     ],
+     "nazev": {
+      "cs": "Etruskové a Řím",
+      "en": "The Etruscans and Rome"
+     },
+     "text": {
+      "cs": "Od západních Řeků převzali písmo Etruskové (kolem 700 př. n. l.; na slonovinové destičce z Marsiliany z doby asi 675–650 je vyryta celá vzorová abeceda). Etruskové mluvili neindoevropským jazykem a písmo si upravili. Od nich, s dalším řeckým vlivem, převzali písmo Latinové v Římě; nejstarší latinské nápisy jsou ze 7. a 6. století př. n. l. (spona z Praeneste, jejíž pravost byla dlouho sporná; Lapis Niger; nápis Duenos). Proto je latinské C původně řecká gama a proto latinské F, původně řecké digamma (w), znamená f: Etruskové psali f dvojicí FH a Latinové ji zkrátili. Tvar písmene A se už téměř nezměnil.",
+      "en": "The Etruscans adopted the script from the western Greeks (c. 700 BCE; an ivory tablet from Marsiliana, c. 675–650, is inscribed with the whole model alphabet). The Etruscans spoke a non-Indo-European language and adapted the script. From them, with further Greek influence, the Latins of Rome took the script; the oldest Latin inscriptions date from the 7th and 6th centuries BCE (the Praeneste fibula, long of disputed authenticity; the Lapis Niger; the Duenos inscription). This is why Latin C was originally the Greek gamma, and why Latin F, originally the Greek digamma (w), stands for f: the Etruscans wrote f as FH, and the Latins shortened it. The shape of the letter A has barely changed since."
+     },
+     "oblasti": [
+      {
+       "id": "etr",
+       "kruhy": [
+        [
+         11.2,
+         44.1,
+         0.6
+        ],
+        [
+         11.0,
+         43.6,
+         0.7
+        ],
+        [
+         11.3,
+         43.0,
+         0.9
+        ],
+        [
+         11.9,
+         42.4,
+         0.8
+        ]
+       ],
+       "barva": "etr",
+       "po": "k-etruskum",
+       "znak": {
+        "text": "𐌀",
+        "font": "Noto Sans Old Italic"
+       },
+       "popisek": {
+        "cs": "Etrurie",
+        "en": "Etruria"
+       }
+      },
+      {
+       "id": "rim",
+       "kruhy": [
+        [
+         13.3,
+         41.3,
+         0.5
+        ],
+        [
+         12.6,
+         41.8,
+         0.6
+        ]
+       ],
+       "barva": "lat",
+       "po": "k-rimu",
+       "znak": {
+        "text": "A",
+        "font": "Noto Serif"
+       },
+       "popisek": {
+        "cs": "Řím",
+        "en": "Rome"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "k-etruskum",
+       "body": [
+        [
+         14.1,
+         40.8
+        ],
+        [
+         13.4,
+         41.3
+        ],
+        [
+         12.6,
+         41.9
+        ],
+        [
+         12.0,
+         42.4
+        ],
+        [
+         11.5,
+         42.8
+        ]
+       ],
+       "barva": "etr",
+       "sirka": 0.45
+      },
+      {
+       "id": "k-rimu",
+       "body": [
+        [
+         11.8,
+         42.5
+        ],
+        [
+         12.3,
+         42.1
+        ],
+        [
+         12.5,
+         41.9
+        ]
+       ],
+       "barva": "lat",
+       "sirka": 0.45
+      }
+     ]
+    },
+    {
+     "id": "aramejstina",
+     "doba": {
+      "cs": "asi 800 př. n. l. – 500 n. l.",
+      "en": "c. 800 BCE – 500 CE"
+     },
+     "pohled": [
+      57,
+      29,
+      2.2
+     ],
+     "nazev": {
+      "cs": "Aramejské písmo a jeho potomci",
+      "en": "The Aramaic script and its descendants"
+     },
+     "text": {
+      "cs": "Aramejci převzali fénické písmo a aramejština se stala vedle akkadštiny jazykem správy Asyrské říše a pak úředním jazykem Perské říše – od Egypta po Indus. Z aramejského písma se vyvinula většina písem Blízkého východu: hebrejské čtvercové písmo (které nahradilo starší paleohebrejské, přímého potomka fénického), syrské, nabatejské a z nabatejského písmo arabské (nejstarší nápisy arabským písmem jsou z 5. a 6. století n. l., nejstarší přesně datovaný z Himy u Nadžránu z roku 470; arabsky, ale nabatejským písmem se psalo už dřív, například nápis z Namáry z roku 328). Na severozápadě indického subkontinentu (Gandhára, dnes Pákistán) z něj vzniklo písmo kharóšthí. Zda z aramejského písma pochází i indické bráhmí, předek dévanágarí a většiny písem jižní a jihovýchodní Asie, je sporné.",
+      "en": "The Arameans adopted the Phoenician script, and Aramaic became a language of administration alongside Akkadian in the Assyrian Empire and then the official language of the Persian Empire – from Egypt to the Indus. Most scripts of the Middle East developed from the Aramaic script: the Hebrew square script (which replaced the older Paleo-Hebrew, a direct descendant of Phoenician), Syriac, Nabataean and, from Nabataean, the Arabic script (the oldest inscriptions in Arabic script date from the 5th and 6th centuries CE, the earliest precisely dated one from Hima near Najran, 470 CE; Arabic had been written in Nabataean script earlier, e.g. the Namara inscription of 328 CE). In the north-west of the Indian subcontinent (Gandhara, today Pakistan) it gave rise to Kharosthi. Whether Indian Brahmi – the ancestor of Devanagari and of most scripts of South and Southeast Asia – also derives from Aramaic is disputed."
+     },
+     "oblasti": [
+      {
+       "id": "ara",
+       "kruhy": [
+        [
+         44.0,
+         33.0,
+         1.8
+        ],
+        [
+         37.2,
+         36.2,
+         1.6
+        ],
+        [
+         40.5,
+         35.5,
+         1.6
+        ],
+        [
+         47.0,
+         31.5,
+         1.6
+        ],
+        [
+         52.0,
+         30.0,
+         1.8
+        ]
+       ],
+       "barva": "ara",
+       "znak": {
+        "text": "𐡀",
+        "font": "Noto Sans Imperial Aramaic"
+       },
+       "popisek": {
+        "cs": "Aramejské písmo",
+        "en": "Aramaic script"
+       }
+      },
+      {
+       "id": "heb",
+       "kruhy": [
+        [
+         35.2,
+         31.8,
+         0.8
+        ]
+       ],
+       "barva": "heb",
+       "po": "k-hebr",
+       "znak": {
+        "text": "א",
+        "font": "Noto Serif Hebrew"
+       },
+       "popisek": {
+        "cs": "hebrejské",
+        "en": "Hebrew"
+       }
+      },
+      {
+       "id": "arb",
+       "kruhy": [
+        [
+         39.6,
+         24.5,
+         1.2
+        ],
+        [
+         38.0,
+         26.8,
+         1.0
+        ],
+        [
+         35.5,
+         30.3,
+         0.8
+        ]
+       ],
+       "barva": "arb",
+       "po": "k-arab",
+       "znak": {
+        "text": "ا",
+        "font": "Noto Naskh Arabic"
+       },
+       "popisek": {
+        "cs": "nabatejské → arabské",
+        "en": "Nabataean → Arabic"
+       }
+      },
+      {
+       "id": "kha",
+       "kruhy": [
+        [
+         71.5,
+         34.0,
+         1.3
+        ]
+       ],
+       "barva": "kha",
+       "po": "k-indii",
+       "znak": {
+        "text": "𐨀",
+        "font": "Noto Sans Kharoshthi"
+       },
+       "popisek": {
+        "cs": "kharóšthí",
+        "en": "Kharosthi"
+       }
+      },
+      {
+       "id": "bra",
+       "kruhy": [
+        [
+         80.0,
+         24.5,
+         2.2
+        ],
+        [
+         85.1,
+         25.6,
+         1.6
+        ]
+       ],
+       "barva": "kha",
+       "sporna": true,
+       "po": "k-brahmi",
+       "znak": {
+        "text": "𑀅",
+        "font": "Noto Sans Brahmi"
+       },
+       "popisek": {
+        "cs": "bráhmí (původ sporný)",
+        "en": "Brahmi (origin disputed)"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "k-hebr",
+       "body": [
+        [
+         37.0,
+         35.5
+        ],
+        [
+         36.2,
+         34.0
+        ],
+        [
+         35.6,
+         32.8
+        ],
+        [
+         35.25,
+         31.95
+        ]
+       ],
+       "barva": "heb"
+      },
+      {
+       "id": "k-arab",
+       "body": [
+        [
+         36.5,
+         33.5
+        ],
+        [
+         36.3,
+         31.5
+        ],
+        [
+         35.8,
+         30.3
+        ],
+        [
+         37.0,
+         28.3
+        ],
+        [
+         38.3,
+         26.4
+        ],
+        [
+         39.3,
+         24.9
+        ]
+       ],
+       "barva": "arb"
+      },
+      {
+       "id": "k-indii",
+       "body": [
+        [
+         52.5,
+         30.0
+        ],
+        [
+         57.0,
+         30.5
+        ],
+        [
+         62.0,
+         31.5
+        ],
+        [
+         66.5,
+         32.8
+        ],
+        [
+         70.5,
+         33.8
+        ]
+       ],
+       "barva": "kha"
+      },
+      {
+       "id": "k-brahmi",
+       "body": [
+        [
+         66.5,
+         32.8
+        ],
+        [
+         70.0,
+         30.5
+        ],
+        [
+         74.5,
+         28.5
+        ],
+        [
+         77.5,
+         26.5
+        ],
+        [
+         79.5,
+         24.8
+        ]
+       ],
+       "barva": "kha",
+       "sporna": true
+      }
+     ]
+    },
+    {
+     "id": "slovane",
+     "doba": {
+      "cs": "863 – 10. století",
+      "en": "863 – 10th century"
+     },
+     "pohled": [
+      22,
+      45,
+      2.6
+     ],
+     "nazev": {
+      "cs": "Hlaholice a cyrilice",
+      "en": "Glagolitic and Cyrillic"
+     },
+     "text": {
+      "cs": "Roku 863 přišla na Velkou Moravu byzantská mise Konstantina (Cyrila) a Metoděje. Konstantin pro slovanský jazyk sestavil nové písmo, hlaholici; pořadí písmen převzala z řecké abecedy; odkud pocházejí jejich tvary (řecká minuskule, hebrejské či samaritánské písmo, křesťanské symboly), je sporné. Po Metodějově smrti (885) byli jeho žáci v letech 885–886 z Moravy vyhnáni a odešli do Bulharska. Tam koncem 9. století, nejspíš v Preslavi, vznikla cyrilice: řecké uncíální písmo doplněné o písmena pro slovanské hlásky, zčásti převzatá z hlaholice. Jméno má po Cyrilovi, ale sestavili ji až jeho žáci; v Ochridu se hlaholice držela déle. Češi, Slováci, Poláci, Slovinci a Chorvati psali s latinskou církví latinkou (v Čechách se hlaholice udržela v Sázavském klášteře do roku 1096, Chorvati jí psali v bohoslužbě i v listinách ještě po staletí), pravoslavní Slované píší cyrilicí.",
+      "en": "In 863 the Byzantine mission of Constantine (Cyril) and Methodius arrived in Great Moravia. Constantine created a new script for the Slavic language, Glagolitic; the order of its letters follows the Greek alphabet; where their shapes come from (Greek minuscule, Hebrew or Samaritan script, Christian symbols) is disputed. After Methodius's death (885) his disciples were expelled from Moravia in 885–886 and went to Bulgaria. There, at the end of the 9th century, probably in Preslav, Cyrillic arose: Greek uncial script supplemented with letters for Slavic sounds, partly taken from Glagolitic. It is named after Cyril but was put together by his disciples; in Ohrid Glagolitic lasted longer. Czechs, Slovaks, Poles, Slovenes and Croats wrote in the Latin alphabet with the Latin church (in Bohemia Glagolitic survived at the Sázava monastery until 1096, and Croats used it in the liturgy and in documents for centuries), while the Orthodox Slavs write in Cyrillic."
+     },
+     "oblasti": [
+      {
+       "id": "mor",
+       "kruhy": [
+        [
+         17.3,
+         49.0,
+         1.3
+        ],
+        [
+         18.2,
+         48.5,
+         1.0
+        ]
+       ],
+       "barva": "hla",
+       "po": "na-moravu",
+       "znak": {
+        "text": "Ⰰ",
+        "font": "Noto Sans Glagolitic"
+       },
+       "popisek": {
+        "cs": "Velká Morava",
+        "en": "Great Moravia"
+       }
+      },
+      {
+       "id": "bul",
+       "kruhy": [
+        [
+         26.9,
+         43.2,
+         1.4
+        ],
+        [
+         24.5,
+         42.7,
+         1.2
+        ],
+        [
+         20.8,
+         41.1,
+         0.9
+        ]
+       ],
+       "barva": "cyr",
+       "po": "do-bulharska",
+       "znak": {
+        "text": "А",
+        "font": "Noto Serif"
+       },
+       "popisek": {
+        "cs": "Bulharská říše (Preslav, Ochrid)",
+        "en": "Bulgarian Empire (Preslav, Ohrid)"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "na-moravu",
+       "body": [
+        [
+         28.97,
+         41.0
+        ],
+        [
+         26.5,
+         42.3
+        ],
+        [
+         23.3,
+         43.3
+        ],
+        [
+         21.0,
+         44.6
+        ],
+        [
+         19.5,
+         46.2
+        ],
+        [
+         18.3,
+         47.6
+        ],
+        [
+         17.5,
+         48.7
+        ]
+       ],
+       "barva": "hla"
+      },
+      {
+       "id": "do-bulharska",
+       "body": [
+        [
+         17.6,
+         48.7
+        ],
+        [
+         18.8,
+         47.3
+        ],
+        [
+         20.4,
+         45.6
+        ],
+        [
+         22.3,
+         44.4
+        ],
+        [
+         24.8,
+         43.5
+        ],
+        [
+         26.6,
+         43.2
+        ]
+       ],
+       "barva": "cyr"
+      }
+     ]
+    },
+    {
+     "id": "dnes",
+     "doba": {
+      "cs": "dnes",
+      "en": "today"
+     },
+     "pohled": [
+      20,
+      30,
+      0.95
+     ],
+     "nazev": {
+      "cs": "Jedna abeceda, mnoho písem",
+      "en": "One alphabet, many scripts"
+     },
+     "text": {
+      "cs": "Latinka se s římskou církví, obchodem a koloniálními říšemi rozšířila do většiny Evropy, do Ameriky, velké části Afriky a Oceánie a je dnes nejrozšířenějším písmem světa. Cyrilicí se píše rusky, ukrajinsky, bulharsky, srbsky, mongolsky a v řadě jazyků Ruska a Střední Asie; arabským písmem arabsky, persky, urdsky a paštsky. Řecké písmo zůstalo řečtině. Latinka, cyrilice, řecké písmo, arabské i hebrejské písmo mají tedy společného předka – písmo, které četlo egyptské obrázky podle první hlásky; jejich první písmena (A, А, Α, א, ا) pocházejí z obrázku volské hlavy. Na mapě Písma světa je vidět, kde se jakým písmem píše dnes.",
+      "en": "With the Roman church, trade and colonial empires, the Latin alphabet spread across most of Europe, the Americas, much of Africa and Oceania, and is today the most widespread script in the world. Cyrillic is used for Russian, Ukrainian, Bulgarian, Serbian, Mongolian and many languages of Russia and Central Asia; the Arabic script for Arabic, Persian, Urdu and Pashto. The Greek script stayed with Greek. The Latin, Cyrillic, Greek, Arabic and Hebrew scripts thus share one ancestor – a script that read Egyptian pictures by their first sound; their first letters (A, А, Α, א, ا) go back to the picture of an ox head. The Scripts of the world map shows where each script is used today."
+     },
+     "oblasti": [
+      {
+       "id": "lat",
+       "kruhy": [
+        [
+         5,
+         48,
+         9
+        ],
+        [
+         -100,
+         40,
+         14
+        ],
+        [
+         -60,
+         -15,
+         14
+        ],
+        [
+         20,
+         5,
+         10
+        ],
+        [
+         135,
+         -25,
+         9
+        ]
+       ],
+       "barva": "lat",
+       "znak": {
+        "text": "A",
+        "font": "Noto Serif"
+       },
+       "popisek": {
+        "cs": "latinka",
+        "en": "Latin"
+       }
+      },
+      {
+       "id": "cyr",
+       "kruhy": [
+        [
+         45,
+         57,
+         10
+        ],
+        [
+         80,
+         58,
+         12
+        ],
+        [
+         105,
+         47,
+         6
+        ]
+       ],
+       "barva": "cyr",
+       "znak": {
+        "text": "А",
+        "font": "Noto Serif"
+       },
+       "popisek": {
+        "cs": "cyrilice",
+        "en": "Cyrillic"
+       }
+      },
+      {
+       "id": "arb",
+       "kruhy": [
+        [
+         45,
+         25,
+         8
+        ],
+        [
+         12,
+         27,
+         9
+        ],
+        [
+         60,
+         31,
+         6
+        ]
+       ],
+       "barva": "arb",
+       "znak": {
+        "text": "ا",
+        "font": "Noto Naskh Arabic"
+       },
+       "popisek": {
+        "cs": "arabské písmo",
+        "en": "Arabic script"
+       }
+      }
+     ]
+    }
+   ],
+   "zdroje": [
+    "Daniels, P. T. – Bright, W. (eds.) (1996): The World's Writing Systems. Oxford University Press.",
+    "Darnell, J. C. et al. (2005): Two early alphabetic inscriptions from the Wadi el-Ḥôl. Annual of the American Schools of Oriental Research 59.",
+    "Hamilton, G. J. (2006): The Origins of the West Semitic Alphabet in Egyptian Scripts. Washington: CBA.",
+    "Goldwasser, O. (2010): How the Alphabet Was Born from Hieroglyphs. Biblical Archaeology Review 36/2.",
+    "Naveh, J. (1982): Early History of the Alphabet. Jerusalem: Magnes Press.",
+    "Powell, B. B. (1991): Homer and the Origin of the Greek Alphabet. Cambridge University Press.",
+    "Bonfante, G. – Bonfante, L. (2002): The Etruscan Language: An Introduction. Manchester University Press.",
+    "Salomon, R. (1998): Indian Epigraphy. Oxford University Press.",
+    "Healey, J. F. – Smith, G. R. (2009): A Brief Introduction to the Arabic Alphabet. London: Saqi.",
+    "Schenker, A. M. (1995): The Dawn of Slavic. New Haven: Yale University Press.",
+    "Houston, S. D. (ed.) (2004): The First Writing: Script Invention as History and Process. Cambridge University Press."
+   ]
+  },
+  {
+   "id": "maltstina",
+   "koncept": true,
+   "atlas": "mt",
+   "adresa": {
+    "cs": "putovani-maltstina",
+    "en": "journey-maltese"
+   },
+   "nazev": {
+    "cs": "Putování maltštiny",
+    "en": "The journey of Maltese"
+   },
+   "podtitul": {
+    "cs": "Arabština, která se oddělila od arabského světa",
+    "en": "An Arabic that parted from the Arab world"
+   },
+   "uvod": {
+    "cs": "Jak se arabština dostala přes severní Afriku a Sicílii na Maltu, proč se tu po odchodu muslimů udržela a jak z ní vznikl jediný semitský jazyk psaný latinkou. Letopočty jsou přibližné, sporné výklady jsou přerušovaně.",
+    "en": "How Arabic reached Malta via North Africa and Sicily, why it survived after the Muslims left, and how it became the only Semitic language written in the Latin script. Dates are approximate; disputed interpretations are dashed."
+   },
+   "etapy": [
+    {
+     "id": "semite",
+     "doba": {
+      "cs": "asi 4. tisíciletí př. n. l. – 6. století n. l.",
+      "en": "c. 4th millennium BCE – 6th century CE"
+     },
+     "pohled": [
+      38,
+      29,
+      1.7
+     ],
+     "nazev": {
+      "cs": "Semitské kořeny",
+      "en": "Semitic roots"
+     },
+     "text": {
+      "cs": "Maltština je semitský jazyk: pochází z arabštiny a je tedy příbuzná s hebrejštinou, aramejštinou nebo amharštinou. Semitské jazyky se podle fylogenetické studie Kitchena a kol. (2009) rozrůznily asi před 5 750 lety, nejspíš v Levantě; místo i datace jsou sporné. Arabština se zformovala na Arabském poloostrově a v Syrské poušti, první souvislé nápisy ve staré arabštině jsou z prvních století našeho letopočtu.",
+      "en": "Maltese is a Semitic language: it descends from Arabic and is thus related to Hebrew, Aramaic and Amharic. According to the phylogenetic study by Kitchen et al. (2009), the Semitic languages diversified about 5,750 years ago, most likely in the Levant; both place and date are disputed. Arabic took shape in the Arabian Peninsula and the Syrian Desert; the first continuous inscriptions in Old Arabic date from the first centuries CE."
+     },
+     "oblasti": [
+      {
+       "id": "lev",
+       "kruhy": [
+        [
+         36.5,
+         34.0,
+         2.0
+        ],
+        [
+         35.6,
+         32.0,
+         1.6
+        ]
+       ],
+       "barva": "sem",
+       "sporna": true,
+       "popisek": {
+        "cs": "Levanta (počátky semitských jazyků?)",
+        "en": "Levant (Semitic origins?)"
+       }
+      },
+      {
+       "id": "arab",
+       "kruhy": [
+        [
+         39.5,
+         27.5,
+         3.0
+        ],
+        [
+         42.5,
+         24.0,
+         3.0
+        ],
+        [
+         38.0,
+         31.0,
+         2.0
+        ]
+       ],
+       "barva": "sar",
+       "po": "na-jih",
+       "popisek": {
+        "cs": "stará arabština",
+        "en": "Old Arabic"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "na-jih",
+       "body": [
+        [
+         36.5,
+         33.2
+        ],
+        [
+         37.2,
+         31.5
+        ],
+        [
+         38.2,
+         29.6
+        ],
+        [
+         39.3,
+         28.0
+        ]
+       ],
+       "barva": "sar",
+       "sporna": true
+      }
+     ]
+    },
+    {
+     "id": "afrika",
+     "doba": {
+      "cs": "7. – 9. století",
+      "en": "7th – 9th century"
+     },
+     "pohled": [
+      20,
+      33,
+      2.0
+     ],
+     "nazev": {
+      "cs": "Arabové v severní Africe a na Sicílii",
+      "en": "Arabs in North Africa and Sicily"
+     },
+     "text": {
+      "cs": "S islámskými výboji se arabština v 7. století rozšířila do Egypta a do Ifríkije (dnešní Tunisko), kde vzniklo středisko Kajruván (670). Mezi obyvatelstvem mluvícím berbersky a latinsky se šířila postupně. Z Ifríkije dobyli Aghlabovci od roku 827 Sicílii (Palermo 831) a roku 870 Maltu. Na Sicílii se vyvinula sikulská (sicilská) arabština, blízká arabským nářečím Ifríkije.",
+      "en": "With the Islamic conquests Arabic spread in the 7th century to Egypt and Ifriqiya (today's Tunisia), where Kairouan was founded (670). Among a population speaking Berber and Latin it spread gradually. From Ifriqiya the Aghlabids conquered Sicily from 827 (Palermo 831) and Malta in 870. In Sicily, Siculo-Arabic developed, close to the Arabic dialects of Ifriqiya."
+     },
+     "oblasti": [
+      {
+       "id": "egypt",
+       "kruhy": [
+        [
+         31.2,
+         30.2,
+         1.5
+        ],
+        [
+         30.5,
+         29.0,
+         1.2
+        ]
+       ],
+       "barva": "sar",
+       "po": "do-egypta"
+      },
+      {
+       "id": "ifr",
+       "kruhy": [
+        [
+         10.1,
+         35.7,
+         1.4
+        ],
+        [
+         10.8,
+         34.8,
+         1.2
+        ],
+        [
+         9.5,
+         36.6,
+         1.0
+        ]
+       ],
+       "barva": "sar",
+       "po": "do-ifrikije",
+       "popisek": {
+        "cs": "Ifríkija (Kajruván)",
+        "en": "Ifriqiya (Kairouan)"
+       }
+      },
+      {
+       "id": "sic",
+       "kruhy": [
+        [
+         13.4,
+         37.9,
+         1.0
+        ],
+        [
+         14.5,
+         37.5,
+         1.0
+        ],
+        [
+         12.8,
+         37.7,
+         0.7
+        ]
+       ],
+       "barva": "sar",
+       "po": "na-sicilii",
+       "popisek": {
+        "cs": "Sicílie",
+        "en": "Sicily"
+       }
+      },
+      {
+       "id": "malta",
+       "kruhy": [
+        [
+         14.42,
+         35.89,
+         0.25
+        ],
+        [
+         14.25,
+         36.05,
+         0.18
+        ]
+       ],
+       "barva": "sar",
+       "po": "na-maltu",
+       "popisek": {
+        "cs": "Malta 870",
+        "en": "Malta 870"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "do-egypta",
+       "body": [
+        [
+         36.5,
+         30.5
+        ],
+        [
+         34.5,
+         30.8
+        ],
+        [
+         32.5,
+         30.7
+        ],
+        [
+         31.3,
+         30.3
+        ]
+       ],
+       "barva": "sar"
+      },
+      {
+       "id": "do-ifrikije",
+       "body": [
+        [
+         30.5,
+         30.5
+        ],
+        [
+         28.0,
+         31.0
+        ],
+        [
+         25.0,
+         31.8
+        ],
+        [
+         21.0,
+         32.2
+        ],
+        [
+         18.0,
+         30.8
+        ],
+        [
+         15.0,
+         31.8
+        ],
+        [
+         12.5,
+         33.0
+        ],
+        [
+         10.6,
+         35.2
+        ]
+       ],
+       "barva": "sar"
+      },
+      {
+       "id": "na-sicilii",
+       "body": [
+        [
+         11.2,
+         36.8
+        ],
+        [
+         11.9,
+         37.3
+        ],
+        [
+         12.6,
+         37.65
+        ]
+       ],
+       "barva": "sar"
+      },
+      {
+       "id": "na-maltu",
+       "body": [
+        [
+         11.1,
+         35.6
+        ],
+        [
+         12.3,
+         35.7
+        ],
+        [
+         13.6,
+         35.85
+        ],
+        [
+         14.2,
+         35.9
+        ]
+       ],
+       "barva": "sar"
+      }
+     ]
+    },
+    {
+     "id": "osidleni",
+     "doba": {
+      "cs": "1048 – 1091",
+      "en": "1048 – 1091"
+     },
+     "pohled": [
+      13.2,
+      36.5,
+      6.5
+     ],
+     "nazev": {
+      "cs": "Nové osídlení Malty",
+      "en": "Malta resettled"
+     },
+     "text": {
+      "cs": "Podle arabského zeměpisce al-Himjarího zůstala Malta po dobytí roku 870 dlouho téměř neobydlená a znovu ji osídlili muslimové roku 1048 nebo 1049 (výklad J. M. Brincata; míra vylidnění je sporná). Přišli ze Sicílie a z Ifríkije a jejich arabština je přímým předkem maltštiny. Maltština je proto nejbližší sicilské arabštině a arabským nářečím Maghrebu, zejména tuniským. Rozšířený názor, že maltština pochází z féničtiny (punštiny), jazykověda odmítá.",
+      "en": "According to the Arab geographer al-Himyari, Malta remained almost uninhabited for a long time after the conquest of 870 and was resettled by Muslims in 1048 or 1049 (J. M. Brincat's interpretation; the degree of depopulation is disputed). They came from Sicily and Ifriqiya, and their Arabic is the direct ancestor of Maltese. Maltese is therefore closest to Siculo-Arabic and to the Arabic dialects of the Maghreb, especially Tunisian. The popular view that Maltese derives from Phoenician (Punic) is rejected by linguists."
+     },
+     "oblasti": [
+      {
+       "id": "malta",
+       "kruhy": [
+        [
+         14.42,
+         35.89,
+         0.25
+        ],
+        [
+         14.25,
+         36.05,
+         0.18
+        ]
+       ],
+       "barva": "mt",
+       "po": "ze-sicilie",
+       "popisek": {
+        "cs": "Malta a Gozo",
+        "en": "Malta and Gozo"
+       }
+      },
+      {
+       "id": "sic",
+       "kruhy": [
+        [
+         13.4,
+         37.9,
+         0.9
+        ],
+        [
+         14.5,
+         37.5,
+         0.9
+        ],
+        [
+         12.8,
+         37.7,
+         0.6
+        ]
+       ],
+       "barva": "sar",
+       "popisek": {
+        "cs": "sicilská arabština",
+        "en": "Siculo-Arabic"
+       }
+      },
+      {
+       "id": "ifr",
+       "kruhy": [
+        [
+         10.3,
+         35.7,
+         1.0
+        ],
+        [
+         10.9,
+         35.2,
+         0.8
+        ]
+       ],
+       "barva": "sar",
+       "popisek": {
+        "cs": "Ifríkija",
+        "en": "Ifriqiya"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "ze-sicilie",
+       "body": [
+        [
+         14.0,
+         36.95
+        ],
+        [
+         14.2,
+         36.5
+        ],
+        [
+         14.35,
+         36.1
+        ]
+       ],
+       "barva": "mt",
+       "sirka": 0.5
+      },
+      {
+       "id": "z-ifrikije",
+       "body": [
+        [
+         11.2,
+         35.5
+        ],
+        [
+         12.3,
+         35.7
+        ],
+        [
+         13.4,
+         35.85
+        ],
+        [
+         14.15,
+         35.88
+        ]
+       ],
+       "barva": "mt",
+       "sirka": 0.5
+      }
+     ]
+    },
+    {
+     "id": "normane",
+     "doba": {
+      "cs": "1091 – 1530",
+      "en": "1091 – 1530"
+     },
+     "pohled": [
+      14.0,
+      37.0,
+      6.0
+     ],
+     "nazev": {
+      "cs": "Normané: odloučení od arabského světa",
+      "en": "The Normans: cut off from the Arab world"
+     },
+     "text": {
+      "cs": "Roku 1091 připlul na Maltu normanský hrabě Roger I. a roku 1127 ji Roger II. připojil k Sicilskému království. Ve 13. století byli muslimové z ostrovů vyhnáni nebo pokřtěni (tradičně se uvádí 1224, jindy 1249). Křesťanští Malťané si arabské nářečí ponechali, ale od arabského světa a od islámu byli odříznuti: písemným jazykem se stala latina a později sicilština a italština, z nichž maltština převzala mnoho slov. Nejstarší známý maltský text je báseň Il-Kantilena Pietra Caxara (před rokem 1485), objevená roku 1966.",
+      "en": "In 1091 the Norman count Roger I came to Malta, and in 1127 Roger II annexed it to the Kingdom of Sicily. In the 13th century the Muslims were expelled from the islands or baptised (traditionally dated 1224, elsewhere 1249). The Christian Maltese kept their Arabic dialect but were cut off from the Arab world and from Islam: the written language became Latin and later Sicilian and Italian, from which Maltese took many words. The oldest known Maltese text is the poem Il-Kantilena by Pietru Caxaro (before 1485), discovered in 1966."
+     },
+     "oblasti": [
+      {
+       "id": "sic",
+       "kruhy": [
+        [
+         13.4,
+         37.9,
+         0.9
+        ],
+        [
+         14.5,
+         37.5,
+         0.9
+        ],
+        [
+         12.8,
+         37.7,
+         0.6
+        ]
+       ],
+       "barva": "itm",
+       "popisek": {
+        "cs": "Sicilské království",
+        "en": "Kingdom of Sicily"
+       }
+      },
+      {
+       "id": "malta",
+       "kruhy": [
+        [
+         14.42,
+         35.89,
+         0.25
+        ],
+        [
+         14.25,
+         36.05,
+         0.18
+        ]
+       ],
+       "barva": "mt",
+       "po": "normane",
+       "popisek": {
+        "cs": "maltština",
+        "en": "Maltese"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "normane",
+       "body": [
+        [
+         14.9,
+         37.0
+        ],
+        [
+         14.75,
+         36.6
+        ],
+        [
+         14.55,
+         36.1
+        ]
+       ],
+       "barva": "itm",
+       "sirka": 0.5,
+       "popisek": {
+        "cs": "Normané, sicilština",
+        "en": "Normans, Sicilian"
+       }
+      }
+     ]
+    },
+    {
+     "id": "johanite",
+     "doba": {
+      "cs": "1530 – 1964",
+      "en": "1530 – 1964"
+     },
+     "pohled": [
+      6,
+      42,
+      1.6
+     ],
+     "nazev": {
+      "cs": "Johanité, italština a angličtina",
+      "en": "The Knights, Italian and English"
+     },
+     "text": {
+      "cs": "Roku 1530 dostal Maltu řád johanitů (maltézských rytířů); jazykem správy, církve a vzdělanosti se stala italština. Po krátké francouzské vládě (1798–1800) připadla Malta Británii (formálně 1814) a úředním jazykem se stala i angličtina. Spor, zda má vedle angličtiny platit italština, nebo maltština (tzv. jazyková otázka), skončil roku 1934: italština přestala být úředním jazykem a maltština se jím stala vedle angličtiny. Pravopis latinkou, na kterém se dohodlo Sdružení maltských spisovatelů (Għaqda tal-Kittieba tal-Malti, 1924), byl uznán jako úřední.",
+      "en": "In 1530 Malta was granted to the Order of St John (the Knights of Malta); Italian became the language of administration, church and learning. After brief French rule (1798–1800) Malta passed to Britain (formally in 1814), and English also became an official language. The dispute over whether Italian or Maltese should stand beside English (the \"Language Question\") ended in 1934: Italian ceased to be an official language and Maltese became one alongside English. The Latin-script orthography agreed by the Association of Maltese Writers (Għaqda tal-Kittieba tal-Malti, 1924) was recognised as official."
+     },
+     "oblasti": [
+      {
+       "id": "malta",
+       "kruhy": [
+        [
+         14.42,
+         35.89,
+         0.25
+        ],
+        [
+         14.25,
+         36.05,
+         0.18
+        ]
+       ],
+       "barva": "mt",
+       "popisek": {
+        "cs": "Malta",
+        "en": "Malta"
+       }
+      },
+      {
+       "id": "it",
+       "kruhy": [
+        [
+         12.5,
+         42.5,
+         1.6
+        ],
+        [
+         11.2,
+         43.7,
+         1.2
+        ],
+        [
+         14.3,
+         40.9,
+         1.0
+        ]
+       ],
+       "barva": "itm",
+       "popisek": {
+        "cs": "italština",
+        "en": "Italian"
+       }
+      },
+      {
+       "id": "gb",
+       "kruhy": [
+        [
+         -1.5,
+         52.5,
+         1.8
+        ],
+        [
+         -0.5,
+         51.5,
+         1.2
+        ]
+       ],
+       "barva": "enm",
+       "popisek": {
+        "cs": "angličtina",
+        "en": "English"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "italstina",
+       "body": [
+        [
+         12.8,
+         41.3
+        ],
+        [
+         13.8,
+         40.3
+        ],
+        [
+         15.2,
+         39.0
+        ],
+        [
+         15.6,
+         38.1
+        ],
+        [
+         15.3,
+         37.2
+        ],
+        [
+         14.7,
+         36.3
+        ]
+       ],
+       "barva": "itm",
+       "sirka": 0.7
+      },
+      {
+       "id": "anglictina",
+       "body": [
+        [
+         0.0,
+         50.6
+        ],
+        [
+         -3.5,
+         49.5
+        ],
+        [
+         -6.5,
+         47.0
+        ],
+        [
+         -9.8,
+         43.0
+        ],
+        [
+         -10.0,
+         38.5
+        ],
+        [
+         -8.5,
+         36.6
+        ],
+        [
+         -5.6,
+         35.95
+        ],
+        [
+         -2.0,
+         36.4
+        ],
+        [
+         3.0,
+         37.4
+        ],
+        [
+         8.0,
+         37.6
+        ],
+        [
+         11.5,
+         36.9
+        ],
+        [
+         14.1,
+         36.0
+        ]
+       ],
+       "barva": "enm",
+       "popisek": {
+        "cs": "Britové od 1800",
+        "en": "British from 1800"
+       }
+      }
+     ]
+    },
+    {
+     "id": "dnes",
+     "doba": {
+      "cs": "dnes",
+      "en": "today"
+     },
+     "pohled": [
+      14.35,
+      35.95,
+      8
+     ],
+     "nazev": {
+      "cs": "Maltština dnes",
+      "en": "Maltese today"
+     },
+     "text": {
+      "cs": "Maltština je národním jazykem Malty (ústava z roku 1964) a vedle angličtiny úředním jazykem; od roku 2004 je úředním jazykem Evropské unie, jediným semitským. Je to jediný semitský jazyk, který se úředně píše latinkou (s písmeny ċ, ġ, għ, ħ, ż). Základní slovní zásoba a mluvnice jsou semitské (ktieb „kniha“, kiteb „napsal“), velkou část slovní zásoby tvoří slova ze sicilštiny a italštiny a přibývá přejímek z angličtiny. Mluví jí většina z asi půl milionu obyvatel Malty a také Malťané v Austrálii, Kanadě, Británii a USA.",
+      "en": "Maltese is the national language of Malta (1964 constitution) and an official language alongside English; since 2004 it has been an official language of the European Union, the only Semitic one. It is the only Semitic language officially written in the Latin script (with the letters ċ, ġ, għ, ħ, ż). Its basic vocabulary and grammar are Semitic (ktieb \"book\", kiteb \"he wrote\"); a large part of the vocabulary comes from Sicilian and Italian, and English loanwords are increasing. It is spoken by most of Malta's roughly half a million inhabitants and by Maltese communities in Australia, Canada, Britain and the USA."
+     },
+     "oblasti": [
+      {
+       "id": "malta",
+       "kruhy": [
+        [
+         14.42,
+         35.89,
+         0.25
+        ],
+        [
+         14.25,
+         36.05,
+         0.18
+        ]
+       ],
+       "barva": "mt",
+       "popisek": {
+        "cs": "maltština",
+        "en": "Maltese"
+       }
+      }
+     ]
+    }
+   ],
+   "zdroje": [
+    "Brincat, J. M. (2011): Maltese and Other Languages: A Linguistic History of Malta. Santa Venera: Midsea Books.",
+    "Brincat, J. M. (1991): Malta 870–1054: Al-Himyarī's Account and its Linguistic Implications. Valletta: Said International.",
+    "Borg, A. – Azzopardi-Alexander, M. (1997): Maltese. London: Routledge (Descriptive Grammars).",
+    "Wettinger, G. – Fsadni, M. (1968): Peter Caxaro's Cantilena: A Poem in Medieval Maltese. Malta.",
+    "Kitchen, A. – Ehret, C. – Assefa, S. – Mulligan, C. J. (2009): Bayesian phylogenetic analysis of Semitic languages identifies an Early Bronze Age origin of Semitic in the Near East. Proceedings of the Royal Society B 276.",
+    "Metcalfe, A. (2003): Muslims and Christians in Norman Sicily: Arabic Speakers and the End of Islam. London: Routledge.",
+    "Hull, G. (1993): The Malta Language Question: A Case Study in Cultural Imperialism. Valletta: Said International.",
+    "Constitution of Malta (1964), čl. 5 / art. 5."
+   ]
   }
  ]
 }

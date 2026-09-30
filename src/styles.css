@@ -1316,7 +1316,9 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
   --put-ptu:#239A8C; --put-ogr:#5B82C8; --put-gok:#B8892A; --put-ogz:#CF6450; --put-tr:#E0503F; --put-pri:#9B6CC4;
   --put-gm:#239A8C; --put-en:#E0503F; --put-en2:#CF6450; --put-kel:#B8892A; --put-non:#9B6CC4; --put-fr:#9B6CC4; --put-cr:#B8892A;
   --put-jen:#9B6CC4; --put-nd:#239A8C; --put-apa:#B8892A; --put-nv:#E0503F;
-  --put-jid:#E0503F; --put-rmn:#B8892A; --put-zjd:#9B6CC4; --put-ztr:#9A948C}
+  --put-jid:#E0503F; --put-rmn:#B8892A; --put-zjd:#9B6CC4; --put-ztr:#9A948C;
+  --put-psa:#B8892A; --put-sin:#239A8C; --put-fen:#9B6CC4; --put-rek:#2A7F4E; --put-etr:#CF6450; --put-lat:#E0503F; --put-ara:#B8892A; --put-heb:#9B6CC4; --put-arb:#2A7F4E; --put-kha:#CF6450; --put-hla:#239A8C; --put-cyr:#9B6CC4;
+  --put-sem:#239A8C; --put-sar:#B8892A; --put-mt:#E0503F; --put-itm:#2A7F4E; --put-enm:#9B6CC4}
 :root[data-theme="light"]{--put-ie:#3D6CC0; --put-bs:#16968A; --put-sl:#C98A1A; --put-zsl:#C8553D; --put-jsl:#9055B0; --put-vsl:#1F7448; --put-cs:#D23A2B;
   --put-ii:#16968A; --put-ir:#C98A1A; --put-ku:#D23A2B; --put-kmr:#C8553D; --put-ckb:#9055B0; --put-sdh:#1F7448;
   --put-ur:#16968A; --put-ug:#C98A1A; --put-hu:#D23A2B; --put-in:#C98A1A; --put-rom:#D23A2B; --put-bal:#9055B0; --put-vla:#C8553D; --put-cen:#1F7448; --put-svy:#16968A; --put-szap:#3D6CC0; --put-ko:#9055B0;
@@ -1324,7 +1326,9 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
   --put-ptu:#16968A; --put-ogr:#3D6CC0; --put-gok:#C98A1A; --put-ogz:#C8553D; --put-tr:#D23A2B; --put-pri:#9055B0;
   --put-gm:#16968A; --put-en:#D23A2B; --put-en2:#C8553D; --put-kel:#C98A1A; --put-non:#9055B0; --put-fr:#9055B0; --put-cr:#C98A1A;
   --put-jen:#9055B0; --put-nd:#16968A; --put-apa:#C98A1A; --put-nv:#D23A2B;
-  --put-jid:#D23A2B; --put-rmn:#C98A1A; --put-zjd:#9055B0; --put-ztr:#6F6A64}
+  --put-jid:#D23A2B; --put-rmn:#C98A1A; --put-zjd:#9055B0; --put-ztr:#6F6A64;
+  --put-psa:#C98A1A; --put-sin:#16968A; --put-fen:#9055B0; --put-rek:#1F7448; --put-etr:#C8553D; --put-lat:#D23A2B; --put-ara:#C98A1A; --put-heb:#9055B0; --put-arb:#1F7448; --put-kha:#C8553D; --put-hla:#16968A; --put-cyr:#9055B0;
+  --put-sem:#16968A; --put-sar:#C98A1A; --put-mt:#D23A2B; --put-itm:#1F7448; --put-enm:#9055B0}
 .putovani-panel{grid-template-columns:1fr auto; width:min(360px, 40%); max-height:calc(100% - 120px); overflow:auto; scrollbar-width:thin}
 .putovani-panel .zavrit{grid-column:2}
 .put-ovl{grid-column:1 / -1; display:flex; align-items:center; gap:10px}
@@ -1359,3 +1363,8 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 .navod-tajemstvi .tajemstvi-obsah{text-align:left; margin-top:10px; padding-top:14px; border-top:1px dashed var(--linka)}
 .navod-tajemstvi .tajemstvi-obsah dt{font-weight:600; color:var(--text); margin-top:12px}
 .navod-tajemstvi .tajemstvi-obsah dd{margin:3px 0 0; color:var(--text2)}
+/* Písma světa: karta písma a legenda */
+.typ-leg-tip{margin:6px 0 2px; font-size:.78rem; color:var(--text2)}
+.pismo-jazyky{list-style:none; margin:4px 0 8px; padding:0; display:flex; flex-wrap:wrap; gap:6px}
+.pismo-jazyky button{border:1px solid var(--linka); background:var(--plocha); color:var(--text); border-radius:999px; padding:4px 10px; font:inherit; font-size:.82rem; cursor:pointer}
+.pismo-jazyky button:hover{border-color:var(--akcent)}

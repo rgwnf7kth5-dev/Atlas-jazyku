@@ -553,6 +553,7 @@
     "h": "Map of scripts",
     "p": [
      "The Script map (in the Maps window) colours languages by their main script: Latin, Cyrillic, Arabic, Brahmic scripts (India, Southeast Asia, Tibet), Chinese characters with kana and bopomofo, and other scripts. The legend at the bottom right gives the number of languages; tapping a group highlights it alone.",
+     "The script map also shows the areas of 36 living scripts and their names with a sample written in the script itself (Abc, Абв, अआइ…). Tapping a name opens the script card: type (alphabet, abjad, abugida, syllabary, logographic), writing direction, a short note on its origin, the atlas languages written in it and the countries where it writes an official language. A link such as thelanguageatlas.com/#pismo-latn opens the card as well.",
      "The data come from Unicode CLDR. For languages about which CLDR keeps detailed data the script is attested; for the rest it is a CLDR estimate (the script in which the language is written, if it is written at all), and the language card marks it as such. The script map and a typological map are not shown at the same time."
     ]
    },
@@ -955,5 +956,36 @@
     }
    ]
   }
+ },
+ "pismaSveta": {
+  "stitek": "Script",
+  "typ": "Type",
+  "smer": "Direction",
+  "jazyku": "Languages on the globe",
+  "zToho": "of which {n} estimated",
+  "typy": {
+   "abeceda": "alphabet (letters for consonants and vowels)",
+   "abdzad": "abjad (writes mainly consonants)",
+   "abugida": "abugida (consonant with an attached vowel)",
+   "slabicne": "syllabary",
+   "logograficke": "logographic script (a sign = a meaningful syllable)",
+   "smisene": "mixed (characters and syllabaries)"
+  },
+  "smery": {
+   "ltr": "left to right",
+   "rtl": "right to left",
+   "ttb": "top to bottom, columns left to right"
+  },
+  "oPismu": "About the script",
+  "jazyky": "Languages",
+  "jazykyAtlasu": "Atlas languages written in this script",
+  "uredni": "Official languages written in this script",
+  "uredniKratce": "Where official",
+  "rodokmen": "Family of scripts",
+  "zadnyAtlas": "None of the languages with a detailed card is written in this script.",
+  "zadnyStat": "According to CLDR, no official language of any country is written in this script.",
+  "jazykyPozn": "The area of a script on the globe is formed by the dots of all languages written in it according to Unicode CLDR; for languages without detailed data it is a CLDR estimate. A language written in several scripts belongs to several areas.",
+  "zdroj": "Countries where a language written in this script is official nationwide, according to Unicode CLDR.",
+  "tip": "Tap a script sample on the globe to open its card."
  }
 }
