@@ -461,7 +461,7 @@ Skupina tečky: `skupinaPisma(i)` z `r[13]` (doložené) nebo `r[15]` (odhad z C
 `languageData`; `scripts/podrobnosti.mjs`). Odhad karta ukazuje jako „latinka (odhad)“ s vysvětlením. Skupiny a sporná
 zařazení jsou v `data/ZDROJE.md`. Na telefonu se po výběru mapy (písmo i typologie) stránka vrátí ke glóbu (`nahoruKeGlobu`).
 **Písma světa na mapě Písmo** (30. 9. 2026, uživatel: „písma na mapě, kde se jakým písmem píše, jako už máme jazyky“; náhled
-čeká na schválení): `data/pisma.json` (36 živých písem: `kod` ISO 15924, `kody` – které kódy CLDR k písmu patří, `ukazka` psaná písmem
+schválil „je to OK“): `data/pisma.json` (36 živých písem: `kod` ISO 15924, `kody` – které kódy CLDR k písmu patří, `ukazka` psaná písmem
 samým, `typ` abeceda / abdzad / abugida / slabicne / logograficke / smisene, `smer` ltr / rtl / ttb, `stitky` [délka, šířka] míst
 popisků, `font` – rodina Noto z Google Fonts pro písma, která systém nemusí mít, texty `cs`/`en`), build → `PISMA_SVETA`
 (`/*__PISMA__*/null`). Se zapnutou mapou Písmo kreslí `kresliPismaSveta` (v `kresliPopredi`, ne při putování ani cestě slova)
@@ -635,7 +635,7 @@ nejstarší dochované vydání 1622; sčítání 1897; 11–13 milionů před v
 „Německo, jeho spojenci a kolaboranti“; asi pět milionů obětí mluvilo jidiš (odhad); SSSR 1948–1949 a 12. 8. 1952 jmenovitě;
 Izrael prosazoval hebrejštinu a omezoval jidiš tisk a divadlo; dnes půl milionu až milion mluvčích; YIVO ve Vilně; uznání jen
 potvrzené státy (Švédsko, Nizozemsko, Polsko, Rumunsko, BiH, Ukrajina); šipky emigrace po moři, ne přes Nizozemsko a Anglii.
-**Putování abecedy** (30. 9. 2026, koncept čeká na schválení náhledu; `#putovani-abecedy` / `#journey-alphabet`): putování
+**Putování abecedy** (30. 9. 2026, náhled schválen; `#putovani-abecedy` / `#journey-alphabet`): putování
 písma, ne jazyka – místo `atlas` má `pisma` (kódy z `data/pisma.json`, karta písma a legenda mapy Písmo na něj dávají tlačítko)
 a `obrazek` (id stránky Jazyků starověku, jejíž náhled je dlaždicí v Příbězích; validace obojí hlídá). Oblasti mohou mít `znak`
 {`text`, `font`} – písmeno na papírovém kolečku s linkou v barvě oblasti nad popiskem (fonty Noto se načtou z Google Fonts jen
@@ -648,7 +648,7 @@ sporný, Naveh (11. st.), al-Mína dnes v Turecku, „soustavně zapisuje i samo
 F = digamma přes etruské FH, aramejština v Asýrii vedle akkadštiny, nejstarší datovaný arabský nápis Hima 470, Gandhára dnes
 Pákistán, tvary hlaholice sporné, cyrilici sestavili žáci (Preslav), Sázava do 1096, Poláci hlaholicí nepsali; šipky nesmí přes
 Cap Bon, Bizertu, Peloponés ani Kalábrii (Messinská úžina).
-**Putování maltštiny** (30. 9. 2026, koncept, `#putovani-maltstina` / `#journey-maltese`, 6 etap: semitské kořeny, Arabové
+**Putování maltštiny** (30. 9. 2026, `#putovani-maltstina` / `#journey-maltese`, 6 etap: semitské kořeny, Arabové
 v severní Africe a na Sicílii, nové osídlení 1048/1049, Normané, johanité a Britové, dnes). Barvy `--put-sem, sar, mt, itm, enm`.
 Při ověření opraveno: nejstarší stará arabština už z posledních století př. n. l. (Karjat al-Fáw), dobývání Sicílie 827–902,
 al-Himjarí je pramen z 15. století a původ osadníků (Sicílie, snad Ifríkija) je výklad, Roger II. roku 1127 ještě hrabě (král

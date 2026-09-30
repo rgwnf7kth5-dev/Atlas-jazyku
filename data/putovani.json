@@ -6422,7 +6422,6 @@
   },
   {
    "id": "abeceda",
-   "koncept": true,
    "obrazek": "fenicane",
    "pisma": [
     "Latn",
@@ -7799,7 +7798,6 @@
   },
   {
    "id": "maltstina",
-   "koncept": true,
    "atlas": "mt",
    "adresa": {
     "cs": "putovani-maltstina",
