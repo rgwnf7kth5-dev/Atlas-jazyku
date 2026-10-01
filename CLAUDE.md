@@ -130,7 +130,9 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a živý web workflow Diag
 - **Bavorština** (`bar`, 1. 10. 2026, podnět uživatele: „existuje Bairisch – jasně, dialekty, ale sranda to je“; vybral plnou kartu):
   164. jazyk atlasu. Tečku Glottologu `bava1246` jí dal ručně zapsaný odkaz v `data/glottolog.json` (sloupec 5 = `bar`), protože
   `scripts/glottolog.mjs` by stáhl novou verzi Glottologu; při jeho dalším spuštění se propojí sama přes kód ISO `bar`.
-  Zajímavost vysvětluje, proč je jazykem i nářečím (ISO 639-3 × německá dialektologie), a šibolet Oachkatzlschwoaf.
+  Zajímavost vysvětluje, proč je jazykem i nářečím (ISO 639-3 × dialektologie v Německu a Rakousku), a šibolet Oachkatzlschwoaf.
+  Při ověření opraveno: areál z 20 malých kruhů (velké kruhy zasahovaly do Švábska, Frank, Vorarlberska i Česka – Plzeň, Brno;
+  kruh se kreslí ×1,3 s okrajem ×1,75), střed na tečce Glottologu, „jazykovědci v Německu a Rakousku“, en výslovnost SAIR-vus.
 - **Jazyk dne den po tečce z rejstříku** (1. 10. 2026): po latině (30. 9.) spadla stránka – tečka rejstříku nemá `stred`, jen
   `bod`; `stredJazyka` teď bere `j.bod` a bez polohy (esperanto) se směr cesty vynechá.
 - Od vybraného jazyka vedou světelné oblouky k nejbližším příbuzným (nejvýš 6, podle nejhlubšího společného
