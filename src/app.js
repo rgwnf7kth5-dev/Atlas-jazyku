@@ -388,15 +388,15 @@ function rozumejDotazu(text){
     if (atlasSkryty(x.j)) return false;
     return x.jmena.some(function(n){ return shodaNazvu(slova, n); }) || (x.prisl && slova.indexOf(x.prisl) >= 0);
   });
-  if (jazyky.length >= 2) return {typ: "srovnani", a: jazyky[0].j, b: jazyky[1].j};
-  if (jazyky.length === 1 && slova.some(function(w){ return w === "kde" || w === "where"; })) return {typ: "jazyk", j: jazyky[0].j};   // „kde se mluví německy“
+  if (jazyky.length >= 2) return {typ: "srovnani", a: jazyky[0].j, b: jazyky[1].j, jmena: jmenaJazyku(jazyky.slice(0, 2))};
+  if (jazyky.length === 1 && slova.some(function(w){ return w === "kde" || w === "where"; })) return {typ: "jazyk", j: jazyky[0].j, jmena: jmenaJazyku(jazyky)};   // „kde se mluví německy“
   /* stát: s předložkou („v Brazílii“, „of India“) má přednost; bez ní jen tehdy, když nesedí rodina („germánské jazyky“ ≠ Německo) */
   let stat = null;
   for (let k = 0; k < IX.zeme.length && !(stat && stat.predlozka); k++) {
     const z = IX.zeme[k], hit = z.jmena.some(function(n){ return shodaNazvu(slova, n); });
     if (!hit) continue;
     const predlozka = slova.some(function(w, n){ return DOTAZ_PREDLOZKY[w] && n + 1 < slova.length && z.jmena.some(function(jm){ return shodaNazvu([slova[n + 1]], jm.split(" ")[0]); }); });
-    if (spoust || predlozka) stat = {typ: "zeme", f: z.f, predlozka: predlozka};
+    if (spoust || predlozka) stat = {typ: "zeme", f: z.f, predlozka: predlozka, jmena: z.jmena};
   }
   if (stat && stat.predlozka) return stat;
   if (spoust || slova.length <= 2) {
@@ -405,11 +405,23 @@ function rozumejDotazu(text){
       if (!x.jmena.some(function(n){ return shodaNazvu(slova, n); })) return;
       if (!nej || x.body.length > nej.body.length) nej = x;
     });
-    if (nej) return {typ: "skupina", u: nej.u, body: nej.body, koren: nej.koren, alias: DOTAZ_ALIASY_UZLU[PD.uzly[nej.u]] && !shodaNazvu(slova, PD.uzly[nej.u]) && !shodaNazvu(slova, PD.vetve[PD.uzly[nej.u]] || "") ? PD.uzly[nej.u] : null};
+    if (nej) return {typ: "skupina", u: nej.u, body: nej.body, koren: nej.koren, jmena: nej.jmena, alias: DOTAZ_ALIASY_UZLU[PD.uzly[nej.u]] && !shodaNazvu(slova, PD.uzly[nej.u]) && !shodaNazvu(slova, PD.vetve[PD.uzly[nej.u]] || "") ? PD.uzly[nej.u] : null};
   }
   if (stat) return stat;
-  if (jazyky.length === 1 && spoust) return {typ: "jazyk", j: jazyky[0].j};
+  if (jazyky.length === 1 && spoust) return {typ: "jazyk", j: jazyky[0].j, jmena: jmenaJazyku(jazyky)};
   return null;
+}
+function jmenaJazyku(x){ const j = []; x.forEach(function(y){ j.push.apply(j, y.jmena); if (y.prisl) j.push(y.prisl); }); return j; }
+/* rozumělo hledání celému dotazu? Každé slovo musí být buď součástí nalezeného názvu, nebo výplňové („jazyky“, „v“, „kde“…).
+   S AI se pravidla použijí jen tehdy – jinak z otázky vytrhnou kousek („Je rumunština slovanský jazyk?“ → větev Slovanská) */
+const DOTAZ_VYPLN = new Set(("jazyk jazyky jazyku jazycich jazykem jazyce language languages rec reci mluvi mluvit mluvy se v ve na do z ze s o " +
+  "of in the a and i jake jakymi jaky jaka jakych ktere kterymi ktery kde where which what are is spoken speak speaks vsechny vsech najdi ukaz " +
+  "find show all list seznam rodina rodiny rodin family families branch vetev vetve mezi between porovnej srovnej compare srovnani vs versus " +
+  "co ma maji spolecneho have has common rozdil difference jsou").split(" "));
+function celyDotaz(text, d){
+  if (!d || !d.jmena) return false;
+  const nazvy = []; d.jmena.forEach(function(n){ dotazSlova(n).forEach(function(w){ if (w.length >= 2) nazvy.push(w); }); });
+  return dotazSlova(text).every(function(w){ return DOTAZ_VYPLN.has(w) || nazvy.some(function(n){ return shodaSlova(w, n); }); });
 }
 function nazevSkupiny(u){
   const n = PD.uzly[u];
@@ -705,9 +717,11 @@ async function spustAITest(){
   }
 }
 function postavPolici(filtr){
-  /* s AI se pravidly řeší jen krátké dotazy (do 4 slov); delší věta jde rovnou AI – pravidla z ní vytrhávala nesmysly
-     („budu se stěhovat do Bernu… jaký jazyk tam“ → větev Taa) */
-  const dotaz = aiZap && dotazSlova(filtr || "").length > 4 ? null : rozumejDotazu(filtr), mnozina = bodyDotazu(dotaz);
+  /* s AI se pravidly řeší jen dotaz, kterému rozumí celému (celyDotaz); jinak jde AI – pravidla z vět vytrhávala nesmysly
+     („budu se stěhovat do Bernu… jaký jazyk tam“ → větev Taa, „Je rumunština slovanský jazyk?“ → větev Slovanská) */
+  let dotaz = rozumejDotazu(filtr);
+  if (aiZap && dotaz && !celyDotaz(filtr, dotaz)) dotaz = null;
+  const mnozina = bodyDotazu(dotaz);
   dotazAkce = dotaz;
   const hledane = mnozina ? "" : bezDiakritiky(filtr || "").trim();
   $("hledej-x").hidden = !$("hledej").value;

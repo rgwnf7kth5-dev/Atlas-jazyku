@@ -463,8 +463,9 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a živý web workflow Diag
   nejvíc nářečí“ jen krčila rameny): `zebricek_statu` (min/max jazyků, rodina, řazení) a `vyber_jazyky` (stát, rodina, vitalita,
   řazení podle nářečí / mluvčích / států; všechny vybrané rozsvítí na glóbu). Když chytré hledání pochopí jen část otázky
   (`SLOZITA_OTAZKA`: nejvíc, kolik, ohrožené, proč, čísla…), nabídne se pod jeho kartou i AI;
-  **s AI se pravidly řeší jen dotazy do 4 slov**, delší věta jde rovnou AI (pravidla z „budu se stěhovat do Bernu… jaký jazyk tam“
-  vytrhla větev Taa ze slova „tam“); krátké názvy (Taa, Čad) se porovnávají jen celé. Pokyn AI dovoluje u měst a krajů (atlas
+  **s AI se pravidly řeší jen dotaz, kterému rozumí celému** (`celyDotaz`: každé slovo je část nalezeného názvu, nebo výplňové
+  z `DOTAZ_VYPLN`), jinak jde AI – pravidla vytrhávala kousky („budu se stěhovat do Bernu… jaký jazyk tam“ → větev Taa ze slova
+  „tam“, „Je rumunština slovanský jazyk?“ → větev Slovanská; dřívější hranice 4 slova nestačila); krátké názvy (Taa, Čad) se porovnávají jen celé. Pokyn AI dovoluje u měst a krajů (atlas
   je nemá) přidat obecně známý fakt, ale čísla, data a žebříčky jen z nástrojů;
   V poli hledání je krátký text „Hledejte, nebo se zeptejte…“ (dlouhý se ořezával) a pod polem řádek „✦ Zkuste: <otázka>“
   (`#hledej-tip`, `obnovTipHledani`; náhodný z `hledejPriklady`, bez AI krátké dotazy) – klepnutí otázku vloží a položí
