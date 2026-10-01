@@ -349,7 +349,7 @@ function dotazSlova(s){ return bezDiakritiky(s).replace(/[()]/g, " ").split(/[^a
 function shodaSlova(q, n){
   const s = n.replace(/[aeiouy]$/, "");     // jen jedna koncová samohláska: Romania ≠ Romance, Turkey ≠ turkické
   if (s.length >= 4) return q.indexOf(s) === 0 && q.length <= s.length + 4;
-  return q === n || (s.length >= 2 && q.indexOf(s) === 0 && q.length <= n.length + 1);
+  return q === n || (n.length >= 4 && q.indexOf(s) === 0 && q.length <= n.length + 1);   // krátké názvy (Taa, Čad) jen celé: „tam“ ≠ Taa
 }
 function shodaNazvu(slova, nazev){              // všechna podstatná slova názvu musí v dotazu být
   const ns = dotazSlova(nazev).filter(function(w){ return w.length >= 3 && !/^(and|of|the|a|republika?|jazyk[a-z]*|languages?|group|branch|family|rodina|skupina|vetev)$/.test(w); });   // „jazyky že“ nesmí sedět na každé „jazyky“
@@ -705,7 +705,9 @@ async function spustAITest(){
   }
 }
 function postavPolici(filtr){
-  const dotaz = rozumejDotazu(filtr), mnozina = bodyDotazu(dotaz);
+  /* s AI se pravidly řeší jen krátké dotazy (do 4 slov); delší věta jde rovnou AI – pravidla z ní vytrhávala nesmysly
+     („budu se stěhovat do Bernu… jaký jazyk tam“ → větev Taa) */
+  const dotaz = aiZap && dotazSlova(filtr || "").length > 4 ? null : rozumejDotazu(filtr), mnozina = bodyDotazu(dotaz);
   dotazAkce = dotaz;
   const hledane = mnozina ? "" : bezDiakritiky(filtr || "").trim();
   $("hledej-x").hidden = !$("hledej").value;
