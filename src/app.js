@@ -202,7 +202,10 @@ function dlazdice(j){
    Ostatní dny Jazyk dne cestuje kolem světa: pořadí CESTA vede od češtiny vždy k nejbližšímu dosud
    nenavštívenému jazyku a karta řekne, o kolik kilometrů a kterým směrem jsme se od včerejška posunuli. */
 const DNY = /*__DNY__*/null;
-function stredJazyka(j){ const i = BOD_ATLASU[j.id]; return i >= 0 && !BEZ_POLOHY[i] ? [B[i][1], B[i][2]] : j.stred; }
+function stredJazyka(j){                     /* i tečka rejstříku jako Jazyk dne (latina, esperanto) – ta nemá stred, jen bod */
+  const i = j.bod != null ? j.bod : BOD_ATLASU[j.id];
+  return i >= 0 && !BEZ_POLOHY[i] ? [B[i][1], B[i][2]] : j.stred;
+}
 const CESTA = (function(){
   const zbyva = JAZYKY.slice(), c = [];
   let ted = zbyva.splice(Math.max(0, zbyva.findIndex(function(j){ return j.id === "cs"; })), 1)[0];
@@ -258,7 +261,9 @@ function jazykDne(){
   const vcera = new Date(dnes.getTime() - 864e5), sv = svatekDne(vcera), pred = sv ? jazykZDne(sv) : jazykCesty(den - 1);
   if (vcera.getMonth() === 8 && vcera.getDate() === 26) return {j: j, duvod: T.cestaPoDniJazyku};   // včera byl Evropský den jazyků, ne Jazyk dne
   if (!pred || pred === j) return {j: j, duvod: T.cestaUvod};
-  const c = smerCesty(stredJazyka(pred), stredJazyka(j));
+  const za = stredJazyka(pred), na = stredJazyka(j);
+  if (!za || !na) return {j: j, duvod: T.cestaUvod};   // tečka bez polohy (esperanto): směr nejde spočítat
+  const c = smerCesty(za, na);
   const km = c.km < 30 ? 0 : c.km < 1000 ? Math.round(c.km / 10) * 10 : Math.round(c.km / 50) * 50;
   /* uprostřed věty česky malým písmenem („u jazyka čeština“); vlastní jména jako Tok Pisin nechat */
   const jm = T.lang === "cs" && /ina( |$)|jazyk/.test(pred.n) ? pred.n.charAt(0).toLowerCase() + pred.n.slice(1) : pred.n;
