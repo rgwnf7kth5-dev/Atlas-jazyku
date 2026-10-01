@@ -1384,6 +1384,18 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 .pismo-jazyky button{border:1px solid var(--linka); background:var(--plocha); color:var(--text); border-radius:999px; padding:4px 10px; font:inherit; font-size:.82rem; cursor:pointer}
 .pismo-jazyky button:hover{border-color:var(--akcent)}
 
+/* ---------- chytré hledání: odpověď na otázku nahoře v polici (1. 10. 2026) ---------- */
+.dotaz-odpoved{display:flex; flex-direction:column; align-items:flex-start; gap:4px; margin:12px 0 10px; padding:14px 16px 12px;
+  background:var(--listek, var(--sklo)); color:var(--text); border:1px solid var(--linka); border-top:3px solid var(--akcent); border-radius:12px}
+.dotaz-odpoved .do-stitek{font:600 11px/1.2 var(--pismo-data, monospace); letter-spacing:.08em; text-transform:uppercase; color:var(--text2)}
+.dotaz-odpoved .do-titul{font:600 19px/1.25 "Playfair Display", Georgia, serif; text-wrap:balance}
+.dotaz-odpoved .do-popis{font-size:13.5px; line-height:1.45; color:var(--text2)}
+.dotaz-odpoved .do-akce{display:inline-flex; align-items:center; gap:6px; margin-top:6px; padding:7px 14px; border:0; border-radius:999px;
+  background:var(--akcent); color:var(--na-akcent); font:600 13.5px/1 inherit; cursor:pointer}
+.dotaz-odpoved .do-akce svg{width:14px; height:14px; fill:currentColor}
+.dotaz-odpoved .do-akce:focus-visible{outline:2px solid var(--text); outline-offset:2px}
+.dotaz-odpoved .do-zdroj{font-size:12px; color:var(--text3)}
+
 /* ---------- jazyky starověku: stránka o civilizaci jako list ilustrované encyklopedie (okno nad glóbem i web) ----------
    Papír a inkoust jako u akvarelů na kartách; v tmavém vzhledu sépiová noc. Barvy jen tady, přes --civ-*. */
 .civ{
@@ -1864,7 +1876,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
    <div class="hledani">
     <label class="pole">
      <svg aria-hidden="true"><use href="#i-lupa"/></svg>
-     <input id="hledej" type="search" placeholder="Hledat jazyk, zemi nebo nářečí…" aria-label="Hledat jazyk" data-t-placeholder="hledejPlaceholder" data-t-aria-label="hledejPopisek">
+     <input id="hledej" type="search" placeholder="Hledat jazyk, zemi, nářečí – nebo se zeptat…" aria-label="Hledat jazyk" data-t-placeholder="hledejPlaceholder" data-t-aria-label="hledejPopisek">
      <button class="hledej-x" id="hledej-x" type="button" hidden aria-label="Vymazat hledání" title="Vymazat hledání" data-t-aria-label="hledejVymazat" data-t-title="hledejVymazat"><svg aria-hidden="true"><use href="#i-krizek"/></svg></button>
     </label>
     <div class="razeni segment" role="group" aria-label="Řadit" data-t-aria-label="radit">
@@ -1896,6 +1908,6 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
  <dialog class="civ-okno" id="civ-okno" aria-labelledby="civ-nadpis"></dialog>
 </div>
 
-<script src="js/atlas.c35c649762.js"></script>
+<script src="js/atlas.425c969325.js"></script>
 </body>
 </html>

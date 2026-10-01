@@ -38,7 +38,14 @@
  "kdeMluvi": "Where it is spoken",
  "seznam": "Language list",
  "hledejPopisek": "Search languages",
- "hledejPlaceholder": "Search a language, country or dialect…",
+  "dotazZeme": "Languages of {z}",
+ "dotazPocet": "{n} on the globe according to Glottolog.",
+ "dotazRodina": "Language family: {r}",
+ "dotazVetev": "Branch: {r}",
+ "dotazVRodine": "{r} family",
+ "dotazSrovnani": "Comparison: {a} and {b}",
+ "dotaz": {"stitek": "Understood", "ukaz": "Show on the globe", "porovnej": "Compare", "otevri": "Open the language card", "zemeBezKodu": "The register has no code for this country; only atlas languages are shown.", "ugrofin": "Glottolog does not list Finno-Ugric as a separate branch: these languages belong to the Uralic family together with the Samoyedic languages.", "srovnaniPopis": "Relatedness and nearest common ancestor, structure from WALS, speakers and script.", "jazykPopis": "The card lists the countries where the language is spoken and shows its area on the globe.", "zdroj": "Answers only from the atlas data (Glottolog, CLDR, WALS). Enter = go."},
+ "hledejPlaceholder": "Search a language, country, dialect – or ask…",
  "domaciJmeno": "in its own words: {x}",
  "vyslovnost": "say it: “{x}”",
  "areal": "The coloured patch is the rough area where the language is spoken, not a country border.",
@@ -527,6 +534,7 @@
     "h": "The language list",
     "p": [
      "You can search for a language, a country or a dialect. The cross in the search box clears it.",
+     "You can also type a question in plain words: “languages spoken in Brazil” (languages of a country), “Slavic languages” (a family or branch in Glottolog), “German and Italian” (comparing two languages) or “where is Persian spoken”. The top of the list shows what the search understood and the list shows the matching languages; the button or the Enter key shows them on the globe. Answers come only from the atlas data.",
      "Sort by language family, alphabetically or by continent. Languages with a detailed card are shown as large tiles, the others below them.",
      "The Language of the Day changes at midnight and always states why it was chosen: either a day associated with that language (see the Calendar of language days) or the journey around the world to the next nearest language. On the European Day of Languages (26 September) all European languages of the atlas are shown instead."
     ]

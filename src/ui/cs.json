@@ -38,7 +38,14 @@
  "kdeMluvi": "Kde se jím mluví",
  "seznam": "Seznam jazyků",
  "hledejPopisek": "Hledat jazyk",
- "hledejPlaceholder": "Hledat jazyk, zemi nebo nářečí…",
+  "dotazZeme": "Jazyky státu {z}",
+ "dotazPocet": "Na glóbu {n} podle Glottologu.",
+ "dotazRodina": "Jazyková rodina: {r}",
+ "dotazVetev": "Větev: {r}",
+ "dotazVRodine": "rodina {r}",
+ "dotazSrovnani": "Srovnání: {a} a {b}",
+ "dotaz": {"stitek": "Rozumím dotazu", "ukaz": "Ukázat na glóbu", "porovnej": "Porovnat", "otevri": "Otevřít kartu jazyka", "zemeBezKodu": "Pro tento stát nemá rejstřík kód; ukážou se jen jazyky atlasu.", "ugrofin": "Glottolog nevede ugrofinské jazyky jako samostatnou větev: patří do uralské rodiny spolu se samojedskými jazyky.", "srovnaniPopis": "Příbuznost a nejbližší společný předek, stavba podle WALS, mluvčí a písmo.", "jazykPopis": "Na kartě jsou státy, kde se jazykem mluví, a jeho území na glóbu.", "zdroj": "Odpovídá jen z dat atlasu (Glottolog, CLDR, WALS). Enter = provést."},
+ "hledejPlaceholder": "Hledat jazyk, zemi, nářečí – nebo se zeptat…",
  "domaciJmeno": "vlastním jménem: {x}",
  "vyslovnost": "čteme „{x}“",
  "areal": "Barevná plocha na glóbu je přibližný jazykový areál, ne hranice státu.",
@@ -527,6 +534,7 @@
     "h": "Seznam jazyků",
     "p": [
      "Vyhledávat lze jazyk, stát i nářečí (například „hanáčtina“ najde češtinu). Křížek v poli hledání vymaže.",
+     "Do pole hledání lze napsat i otázku běžnou větou: „jakými jazyky se mluví v Brazílii“ (jazyky státu), „najdi všechny slovanské jazyky“ (rodina nebo větev podle Glottologu), „co má společného němčina s italštinou“ (srovnání dvou jazyků) nebo „kde se mluví persky“. Nahoře v seznamu se objeví, čemu hledání rozumělo, a seznam ukáže příslušné jazyky; tlačítko nebo klávesa Enter je ukáže na glóbu. Odpověď vychází jen z dat atlasu.",
      "Řazení podle jazykových rodin, abecedy nebo světadílů. Jazyky s podrobnou kartou jsou uvedeny jako velké dlaždice, ostatní pod nimi.",
      "Jazyk dne se mění o půlnoci a vždy uvádí důvod výběru: buď je to den spojený s daným jazykem (viz Kalendář jazykových dnů), nebo postup kolem světa k nejbližšímu dalšímu jazyku. Na Evropský den jazyků (26. září) jsou místo něj uvedeny všechny evropské jazyky atlasu."
     ]

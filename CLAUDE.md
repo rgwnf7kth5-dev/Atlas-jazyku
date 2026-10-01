@@ -439,6 +439,17 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a živý web workflow Diag
   seznam, medailony, srovnání, klávesnice, další; tajemství jen naznačit, hesla neprozrazovat), odkaz v patičce „O atlasu…“
   a jako **čtvrtý řádek nápovědy pod otazníkem** – není to krok: nápověda zmizí po třech krocích jako dřív
   (`li[data-krok]`). Návod má oddíl **Putování jazyků** (29. 9. 2026: věta o putování češtiny se předtím omylem vlepila do nadpisu oddílu Klávesnice – po úpravě návodu zkontrolovat nadpisy) a oddíl o sbalené patičce (kalendář, O datech, Jazyky s pozdravem, kontakt, zdroje) – při změně patičky ho upravit. Odkaz `#navod` / `#guide`, statická stránka `/navod/` a `/en/guide/`. Při změně ovládání návod upravit.
+- **Chytré hledání – otázky běžnou větou** (1. 10. 2026; uživatel chtěl „dialogovou řádku pro AI“, zvolil „postupně“: nejdřív
+  bez AI, AI později jako nadstavba přes serverovou funkci Netlify a klíč Claude API – klíč zatím není): `rozumejDotazu` v app.js
+  pozná srovnání dvou jazyků atlasu („co má společného němčina s italštinou“, „rozdíl mezi češtinou a slovenštinou“), jeden jazyk
+  s „kde/where“ („kde se mluví persky“ – i česká příslovce italsky, německy), stát (s předložkou v/ve/na/in/of má přednost, bez ní
+  jen když nesedí rodina) a rodinu či větev Glottologu (`PD.uzly`, české názvy z `PD.vetve` a rodin; alias „ugrofinské“ → uralská
+  s vysvětlením). Slova se porovnávají podle kmene bez **jedné** koncové samohlásky (víc dělalo z Romance Rumunsko a z turkických
+  Turecko); obecná slova (jazyky, languages, rodina…) se v názvech nepočítají („jazyky že“ sedělo na každý dotaz). Odpověď je
+  karta nahoře v polici (`kartaDotazu`: čemu rozumělo, počet jazyků, tlačítko, Enter v poli) a police ukáže místo textového
+  hledání příslušné jazyky (`bodyDotazu`). Akce: `ukazZemi` (jako klepnutí na zemi), `ukazSkupinu` (stav `dotazSkupina`, tečky
+  příznak 5, let nad střed), srovnání, výběr jazyka – **tytéž akce mají později dostat AI jako nástroje**. Zkušební sada 29 dotazů
+  cs/en je v testu `dotaz-test.mjs` (scratchpad) – při změně pravidel ji projít znovu. Návod (oddíl Seznam) to popisuje.
 - **Seznam z klávesnice**: do seznamu se vstoupí jedním Tabem (jedna dlaždice má `tabindex=0`), šipky
   vlevo/vpravo o dlaždici, nahoru/dolů o řádek (nejbližší dlaždice), Home/End, PageUp/PageDown o 10 řádků;
   další Tab seznam opustí. Při pohybu ke konci se dokreslí další dávka. Nadpisy skupin jsou `h2`.
