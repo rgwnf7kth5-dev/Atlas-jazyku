@@ -456,7 +456,8 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a živý web workflow Diag
   `domeny.js` pouští `/api/*` na obou doménách). Klíč `ANTHROPIC_API_KEY` je **jen v Netlify** (Environment variables, Secret,
   scope Functions, Production + Deploy Previews; uložen 1. 10. 2026); do stránky ani gitu nepatří. Funkce drží pevný systémový
   pokyn (jen otázky o jazycích, odpovídat z nástrojů, 2–4 věty, jazyk otázky, vykání), čtyři nástroje se `strict` a limity: jedna
-  otázka ≤ 300 znaků, dál jen výsledky nástrojů, nejvýš 4 kola, tělo ≤ 60 kB, 40 volání / 10 min na adresu (v instanci).
+  otázka ≤ 300 znaků, dál jen výsledky nástrojů, nejvýš 4 kola, tělo ≤ 60 kB, 20 nových otázek / 10 min na adresu (v instanci; s parametrem `model` z `#ai-test` 80 – první verze počítala
+  každé volání a porovnání skončilo „chyba: limit“). Na `limit-api` (429 od Anthropicu) stránka dvakrát počká a zkusí znovu.
   Nástroje (`naradiAI` v app.js) běží v prohlížeči nad daty atlasu: `jazyky_statu`, `jazyky_skupiny`, `info_o_jazyku`,
   `srovnej_jazyky`; po odpovědi se provede akce posledního nástroje (`provedAkciAI`). Obsah odpovědí AI se posílá zpět beze změny
   (i bloky přemýšlení). Model: `ATLAS_AI_MODEL` v Netlify (opus / sonnet / haiku nebo celé id), bez něj `claude-opus-5-5`;

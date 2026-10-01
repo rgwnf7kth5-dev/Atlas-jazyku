@@ -5495,8 +5495,13 @@ async function zeptejSeAI(otazka, model){
   const zpravy = [{role: "user", content: otazka}];
   let akce = null, spotreba = {vstup: 0, cache: 0, vystup: 0}, posl = null;
   for (let kolo = 0; kolo < 5; kolo++) {
-    const r = await fetch("/api/zeptej", {method: "POST", headers: {"content-type": "application/json"}, body: JSON.stringify({zpravy: zpravy, model: model})});
-    const d = await r.json().catch(function(){ return {chyba: "json"}; });
+    let r, d;
+    for (let pokus = 0; pokus < 3; pokus++) {      // limit API (429 od Anthropicu) bývá krátký: chvíli počkat a zkusit znovu
+      r = await fetch("/api/zeptej", {method: "POST", headers: {"content-type": "application/json"}, body: JSON.stringify({zpravy: zpravy, model: model})});
+      d = await r.json().catch(function(){ return {chyba: "json"}; });
+      if (d.chyba !== "limit-api") break;
+      await new Promise(function(ok){ setTimeout(ok, 4000 * (pokus + 1)); });
+    }
     if (!r.ok || d.chyba) throw new Error(d.chyba || ("http " + r.status));
     posl = d; ["vstup", "cache", "vystup"].forEach(function(k){ spotreba[k] += d.spotreba[k] || 0; });
     zpravy.push({role: "assistant", content: d.obsah});             // beze změny, i s bloky přemýšlení

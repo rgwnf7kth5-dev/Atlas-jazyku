@@ -27,10 +27,12 @@ Answer in the language of the question (Czech or English), in two to four plain 
 Each tool also shows its result on the globe, so you can refer to the globe ("na glóbu jsou zvýrazněné…").`;
 
 const hlasy = new Map();                      // jednoduchý limit na adresu v jedné instanci funkce
-function prilisCasto(ip) {
+/* počítají se nové otázky, ne kola nástrojů (jedna otázka = 2–3 volání); porovnání modelů (#ai-test, parametr model)
+   pokládá 16 otázek třem modelům, proto vyšší strop – útratu stejně hlídá měsíční limit v konzoli Anthropic */
+function prilisCasto(ip, test) {
   const ted = Date.now(), z = (hlasy.get(ip) || []).filter(t => ted - t < 600000);
   z.push(ted); hlasy.set(ip, z);
-  return z.length > 40;                       // 40 volání za 10 minut ≈ 10–20 otázek
+  return z.length > (test ? 80 : 20);
 }
 const odpoved = (data, status = 200) => new Response(JSON.stringify(data), { status, headers: { "content-type": "application/json; charset=utf-8", "cache-control": "no-store" } });
 
@@ -53,7 +55,7 @@ export default async (req, context) => {
   if (text.length > MAX_TELO) return odpoved({ chyba: "velke" }, 413);
   let telo; try { telo = JSON.parse(text); } catch { return odpoved({ chyba: "json" }, 400); }
   if (!platna(telo.zpravy)) return odpoved({ chyba: "tvar" }, 400);
-  if (prilisCasto(context?.ip || req.headers.get("x-nf-client-connection-ip") || "?")) return odpoved({ chyba: "limit" }, 429);
+  if (telo.zpravy.length === 1 && prilisCasto(context?.ip || req.headers.get("x-nf-client-connection-ip") || "?", !!telo.model)) return odpoved({ chyba: "limit" }, 429);
   const model = MODELY[telo.model] || VYCHOZI;          // zkušební stránka (#ai-test) porovnává tři modely
 
   const client = new Anthropic();
