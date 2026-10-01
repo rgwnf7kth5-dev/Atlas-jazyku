@@ -5413,6 +5413,7 @@ function bodyDotazu(d){
    (naradiAI). Po odpovědi se provede akce posledního nástroje (glóbus, karta, srovnání). Zatím skryté: zapne se adresou
    #ai (pamatuje se, #ai-vyp vypne), porovnání modelů je #ai-test. Jen web, ne artefakt ani soubor z disku. */
 const AI_MOZNE = !ARTEFAKT && /^https?:$/.test(location.protocol);
+const SLOZITA_OTAZKA = /(nejvic|nejmin|nejvets|nejmens|kolik|ohrozen|vymrel|probouz|proc |proc$|jak |rozdil|spolecn|nareci|alespon|vic nez|mene nez|most|least|largest|smallest|how many|why|endangered|extinct|dialect|common|more than|at least|\d)/;
 let aiZap = false;
 aiZap = AI_MOZNE;                               // od 1. 10. 2026 pro všechny; #ai-vyp vypne jen pro sebe
 try { if (localStorage.getItem("atlas-ai") === "0") aiZap = false; } catch (e) {}
@@ -5481,7 +5482,52 @@ function naradiAI(nazev, vstup){
       spolecne_staty: pa.staty.filter(function(s){ return pb.staty.indexOf(s) >= 0; }), zdroj: "Glottolog, Unicode CLDR, atlas"},
       akce: {typ: "srovnani", a: a, b: b}};
   }
+  if (nazev === "zebricek_statu") {
+    const sk = najdiSkupinuAI(vstup.rodina), mnoz = sk ? new Set(sk.body) : null, pocet = {};
+    for (let i = 0; i < POCET_B; i++) { if (skryty[i] || (mnoz && !mnoz.has(i))) continue;
+      (radek(i)[3] || "").split(" ").forEach(function(k){ if (k) pocet[k] = (pocet[k] || 0) + 1; }); }
+    let st = Object.keys(pocet).map(function(k){ return [k, pocet[k]]; }).filter(function(x){ return x[1] >= (vstup.min_jazyku || 0) && (!vstup.max_jazyku || x[1] <= vstup.max_jazyku); });
+    st.sort(function(a, b){ return vstup.razeni === "nejmin" ? a[1] - b[1] : b[1] - a[1]; });
+    return {data: {pocet_statu: st.length, filtr_rodina: sk ? nazevSkupiny(sk.u) : null,
+      staty: st.slice(0, Math.max(1, Math.min(40, vstup.limit || 15))).map(function(x){ return (PD.staty[T.lang][x[0]] || x[0]) + ": " + x[1]; }),
+      zdroj: "Glottolog (countries of each language); a language counts in every country Glottolog lists for it"}};
+  }
+  if (nazev === "vyber_jazyky") {
+    const VIT = {bezpecny: [0], ohrozeny: [1, 2, 3, 4], zranitelny: [1], jednoznacne_ohrozeny: [2], vazne_ohrozeny: [3], kriticky_ohrozeny: [4], vymrely: [5], probouzeny: [6]};
+    let kod = null;
+    if (vstup.stat) {
+      const z = IX.zeme.find(function(x){ return x.jmena.some(function(n){ return bezDiakritiky(n) === bezDiakritiky(vstup.stat); }); }) || IX.zeme.find(function(x){ return x.jmena.some(function(n){ return shodaNazvu(dotazSlova(vstup.stat), n); }); });
+      kod = z && PD.mapaStatu ? PD.mapaStatu[z.f.properties.name] : null;
+      if (!kod) return {data: {chyba: "Stát nenalezen / country not found: " + vstup.stat}};
+    }
+    const sk = vstup.rodina ? najdiSkupinuAI(vstup.rodina) : null;
+    if (vstup.rodina && !sk) return {data: {chyba: "Rodina nenalezena / family not found: " + vstup.rodina}};
+    const mnoz = sk ? new Set(sk.body) : null, vit = VIT[vstup.vitalita] || null, vyber = [];
+    for (let i = 0; i < POCET_B; i++) {
+      if (skryty[i] || (mnoz && !mnoz.has(i))) continue;
+      const r = radek(i), staty = (r[3] || "").split(" ").filter(Boolean);
+      if (kod && staty.indexOf(kod) < 0) continue;
+      if (vit && vit.indexOf(vitalitaBodu(i)) < 0) continue;
+      const nar = PD.nareci[i] ? PD.nareci[i].split("|").length : 0, ml = Array.isArray(r[10]) ? r[10][0] : r[8] > 0 ? r[8] : 0;
+      vyber.push({i: i, nar: nar, ml: ml, st: staty.length});
+    }
+    const kl = {nareci: "nar", mluvci: "ml", staty: "st"}[vstup.razeni];
+    if (kl) vyber.sort(function(a, b){ return b[kl] - a[kl]; }); else vyber.sort(function(a, b){ return jmenoBodu(a.i).localeCompare(jmenoBodu(b.i), T.lang); });
+    return {data: {pocet_jazyku: vyber.length, filtr: {stat: kod ? PD.staty[T.lang][kod] : null, rodina: sk ? nazevSkupiny(sk.u) : null, vitalita: vstup.vitalita},
+      jazyky: vyber.slice(0, Math.max(1, Math.min(40, vstup.limit || 15))).map(function(x){
+        const o = {jazyk: jmenoBodu(x.i)}; if (vstup.razeni === "nareci") o.nareci = x.nar; if (vstup.razeni === "mluvci") o.mluvci = x.ml || null; if (vstup.razeni === "staty") o.staty = x.st;
+        const v = vitalitaBodu(x.i); if (v >= 0) o.vitalita = nazevStupne(v); return o; }),
+      zdroj: "Glottolog (jazyky, nářečí, státy, vitalita), Wikidata a Unicode CLDR (mluvčí; ne u všech jazyků)"},
+      akce: vyber.length ? {typ: "skupina", u: -1, body: vyber.map(function(x){ return x.i; })} : null};
+  }
   return {data: {chyba: "neznámý nástroj"}};
+}
+function najdiSkupinuAI(nazev){
+  if (!nazev) return null;
+  const IX = pripravDotazy(), presne = bezDiakritiky(nazev).trim(), sl = dotazSlova(nazev);
+  let x = IX.uzly.filter(function(y){ return y.jmena.some(function(n){ return bezDiakritiky(n) === presne; }); });
+  if (!x.length) x = IX.uzly.filter(function(y){ return y.jmena.some(function(n){ return shodaNazvu(sl, n); }); });
+  return x.sort(function(a, b){ return b.body.length - a.body.length; })[0] || null;
 }
 function provedAkciAI(a){
   if (!a) return;
@@ -5577,8 +5623,12 @@ function postavPolici(filtr){
   seznam.textContent = "";
   const evropskyDen = !hledane && !mnozina && denJazyku();
   if (evropskyDen) seznam.appendChild(kartaDneJazyku());
-  if (dotaz) seznam.appendChild(kartaDotazu(dotaz));
-  else if (aiZap && dotazSlova(filtr || "").length >= 3) { const k = kartaAI(filtr.trim()); seznam.appendChild(k); dotazAkce = {typ: "ai", karta: k}; }
+  let kartaAIzde = null;
+  if (dotaz) {
+    seznam.appendChild(kartaDotazu(dotaz));
+    /* chytré hledání pochopilo jen část („ohrožené jazyky v Mexiku“ → jazyky Mexika): AI nabídnout i tak, Enter dál provede jeho akci */
+    if (aiZap && SLOZITA_OTAZKA.test(bezDiakritiky(filtr || ""))) { kartaAIzde = kartaAI(filtr.trim()); seznam.appendChild(kartaAIzde); }
+  } else if (aiZap && dotazSlova(filtr || "").length >= 3) { kartaAIzde = kartaAI(filtr.trim()); seznam.appendChild(kartaAIzde); dotazAkce = {typ: "ai", karta: kartaAIzde}; }
   if (!hledane && !evropskyDen && !dotaz) {            /* jazyk dne nahoře (na Evropský den jazyků místo něj evropské jazyky) */
     const dd = jazykDne(), d = dd && dd.j;
     if (d) {
@@ -5664,7 +5714,7 @@ function postavPolici(filtr){
   pridavej(true);
   hlidej();
 
-  if (!polozky.length && !vymNalez) {
+  if (!polozky.length && !vymNalez && !kartaAIzde) {          // pod nabídkou AI hláška „nic nenalezeno“ jen mátla
     const p = document.createElement("p"); p.className = "prazdno"; p.textContent = T.nicNenalezeno; seznam.insertBefore(p, zarazka);
   }
   const sPozdravem = polozky.filter(function(p){ return p.j; }).length;

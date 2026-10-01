@@ -18,11 +18,27 @@ const NASTROJE = [
     input_schema: { type: "object", properties: { jazyk: { type: "string", description: "Language name in English or Czech." } }, required: ["jazyk"], additionalProperties: false } },
   { name: "srovnej_jazyky", description: "Compares two languages from the atlas data: nearest common ancestor in the Glottolog tree (or that they are not known to be related), families, scripts, shared countries, speakers and vitality. Also opens the comparison.",
     input_schema: { type: "object", properties: { a: { type: "string" }, b: { type: "string" } }, required: ["a", "b"], additionalProperties: false } },
+  { name: "zebricek_statu", description: "Ranks or filters countries by the number of languages the atlas register (Glottolog) lists for them. Use for questions like 'which country has the most languages', 'countries with 5 or more languages', 'how many countries have more than 100 languages'. Optionally count only languages of one family or branch. Returns the number of matching countries and a ranked list.",
+    input_schema: { type: "object", properties: {
+      min_jazyku: { type: "integer", description: "Minimum number of languages, 0 = no minimum." },
+      max_jazyku: { type: "integer", description: "Maximum number of languages, 0 = no maximum." },
+      rodina: { type: "string", description: "Count only languages of this family or branch (English Glottolog or Czech name); empty string = all languages." },
+      razeni: { type: "string", enum: ["nejvic", "nejmin"], description: "Sort by most or fewest languages." },
+      limit: { type: "integer", description: "How many countries to list, 1–40." } },
+      required: ["min_jazyku", "max_jazyku", "rodina", "razeni", "limit"], additionalProperties: false } },
+  { name: "vyber_jazyky", description: "Selects languages from the whole register (about 8,000) by country, family or branch, and UNESCO vitality, ranks them and shows them all on the globe. Use for questions like 'which language has the most dialects', 'endangered languages of Mexico', 'largest Slavic languages', 'which languages are spoken in the most countries'. Sorting: 'nareci' = number of dialects listed in Glottolog, 'mluvci' = speakers (Wikidata or Unicode CLDR estimate, not available for all), 'staty' = number of countries, 'jmeno' = alphabetical.",
+    input_schema: { type: "object", properties: {
+      stat: { type: "string", description: "Country (English or Czech), empty string = any." },
+      rodina: { type: "string", description: "Family or branch (English Glottolog or Czech name), empty string = any." },
+      vitalita: { type: "string", enum: ["vse", "bezpecny", "ohrozeny", "zranitelny", "jednoznacne_ohrozeny", "vazne_ohrozeny", "kriticky_ohrozeny", "vymrely", "probouzeny"], description: "UNESCO vitality; 'ohrozeny' = any of the four endangered levels, 'vse' = any." },
+      razeni: { type: "string", enum: ["nareci", "mluvci", "staty", "jmeno"] },
+      limit: { type: "integer", description: "How many languages to list, 1–40." } },
+      required: ["stat", "rodina", "vitalita", "razeni", "limit"], additionalProperties: false } },
 ].map(t => ({ ...t, strict: true }));
 
 const SYSTEM = `You are the question box of The Language Atlas (Atlas jazyků), an encyclopedic atlas of the world's languages on a globe, for students and adults.
 Answer only questions about languages, language families, scripts and where languages are spoken. Politely decline anything else in one sentence.
-Facts must come from the atlas tools: call the tool that fits, then answer from its result. Do not add numbers, dates or claims that the tool result does not contain. If the tools cannot answer, say what the atlas can show instead.
+Facts must come from the atlas tools: call the tool that fits, then answer from its result. For rankings, counts and lists across countries or languages use zebricek_statu or vyber_jazyky; you may call several tools. Mention the data source the tool names (Glottolog, CLDR, Wikidata) when you give numbers. Do not add numbers, dates or claims that the tool result does not contain. If the tools cannot answer, say what the atlas can show instead.
 Answer in the language of the question (Czech or English), in two to four plain sentences, factual and neutral, without exclamations. In Czech use the formal "vy" form.
 Each tool also shows its result on the globe, so you can refer to the globe ("na glóbu jsou zvýrazněné…").`;
 
