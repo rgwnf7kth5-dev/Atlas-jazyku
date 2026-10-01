@@ -1387,6 +1387,31 @@ var AKVARELY = (function(){
       o += hrebeny(F, [[212, 5, 70, 4.5, "#8AB05A", 0]]) + kozolec(F, 150, 232, 60, 26, 1.1) + kozolec(F, 250, 214, 34, 15, .7);
       return o + trava(F, r, 150, 226, 254, ["#557F38", "#78A04A", "#46692E"]) + kvety(F, r, 24, 230, 252, ["#F4F0E4", "#E8D56A", "#5A7ED0"], .9);
     },
+    /* Bavorsko: Alpy za předhůřím, barokní kostel s cibulovou věží, statky s dřevěným patrem a balkonem, modrobílá májka, hnědý dobytek */
+    bavorsko: function(F, r){
+      const q = nahoda(F.sem + 457);
+      let o = nebe(F, "#6EA2DE", "#F2ECE2") + mraky(F, r, 3, 22, 56, 84);
+      o += hory(F, r, [[-10, 118], [50, 72], [96, 94], [150, 58], [200, 86], [262, 50], [316, 80], [362, 62], [410, 92]], 146, "#B8C2D2", "#7E8AA2", 84, .25);
+      o += lesik(F, q, -10, 410, 146, .8, mix("#3E5E48", F.opar, .25), true);
+      o += hrebeny(F, [[148, 10, 80, 2.2, "#9ABE64", .1]]) + hrebeny(F, [[176, 8, 90, 3, "#90B85C", .2]]);
+      o += kostel(F, q, 92, 194, 1.25, { vez: "barok", stena: "#FBF8F0", strecha: "#9A5A40", vezStrecha: "#5E8A72" });
+      const statek = { typ: "sedlo", stena: "#FBF8F0", bok: "#8A6444", strecha: "#7A5440", patra: 2, okna: 3, okenice: "#3E6E4E", hrazdi: "#7A5638", rh: 7, d: 18 };
+      o += vesnice(F, q, [[196, 206, 44, 21, statek], [256, 202, 38, 19, Object.assign({}, statek, { okenice: "#9A4436" })], [150, 212, 30, 15, Object.assign({}, statek, { patra: 1, okna: 2 })]]);
+      /* balkony z tmavého dřeva přes průčelí statků */
+      o += skupina(F, F.stetec, tah("M197 194 l43 0 M257 191 l37 0", "#5A3E2A", 1.6, .9) + tah("M200 194 l0 4 M207 194 l0 4 M214 194 l0 4 M221 194 l0 4 M228 194 l0 4 M235 194 l0 4 M260 191 l0 4 M267 191 l0 4 M274 191 l0 4 M281 191 l0 4 M288 191 l0 4", "#5A3E2A", .7, .8));
+      o += hrebeny(F, [[220, 4, 90, 4, "#86B054", 0]]);
+      /* májka (Maibaum): vysoký kmen s modrobílou šroubovicí, věnec a cechovní štíty po stranách */
+      const mx = 336, my0 = 236, my1 = 96;
+      let pruh = ""; for (let y = my1 + 8; y < my0 - 6; y += 9) pruh += "M" + f1(mx - 1.8) + " " + f1(y + 3) + " L" + f1(mx + 1.8) + " " + f1(y) + " ";
+      o += skupina(F, F.stetec, tah("M" + mx + " " + my0 + " L" + mx + " " + my1, "#F6F4EE", 3.6, .95) + tah(pruh, "#3E78C0", 2.2, .95) +
+        tah("M" + (mx - 6) + " " + (my1 + 22) + " Q" + mx + " " + (my1 + 28) + " " + (mx + 6) + " " + (my1 + 22), "#4E7A3A", 1.6, .9));
+      let stity = ""; [[132, -1], [150, 1], [168, -1], [186, 1]].forEach(function(t){ const y = t[0], sx = mx + t[1] * 9;
+        stity += "M" + f1(mx) + " " + y + " L" + f1(sx) + " " + y + " M" + f1(sx - 2.5) + " " + (y + 1) + " l5 0 l0 5 l-5 0 z "; });
+      o += skupina(F, F.stetec, tah(stity, "#6A4A30", .7, .85));
+      o += kravy(F, q, [[30, 236, 2.2], [82, 244, 2.5], [276, 238, 2]], "#8A6444", "#F2ECE0");
+      o += jehlicnan(F, q, 20, 246, 1.3, "#3E5E3E") + jehlicnan(F, q, 392, 248, 1.4, "#3E5E3E");
+      return o + trava(F, r, 160, 224, 254, ["#5A8A3A", "#7EA84C", "#4A7030"]) + kvety(F, r, 26, 228, 252, ["#F4F0E4", "#E8C84A", "#B04A8A"], .9);
+    },
     /* Bulharsko: horská vesnice obrozeneckých domů (bílé patro na kamenném přízemí, kamenné střechy), kostelík, růžová pole */
     bulharsko: function(F, r){
       const q = nahoda(F.sem + 229);

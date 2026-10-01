@@ -127,6 +127,12 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a živý web workflow Diag
   Tak jsou esperanto, interlingua a interslovanština – mezinárodní pomocné jazyky nevznikly na žádném místě
   (uživatel: „umělé jazyky by neměly mít polohu“). Efatština a rennellský znakový jazyk jsou v Glottologu také
   „umělé“, ale patří ke konkrétním ostrovům, tečku si nechávají. Glottolog jinak neopravovat bez důvodu.
+- **Bavorština** (`bar`, 1. 10. 2026, podnět uživatele: „existuje Bairisch – jasně, dialekty, ale sranda to je“; vybral plnou kartu):
+  164. jazyk atlasu. Tečku Glottologu `bava1246` jí dal ručně zapsaný odkaz v `data/glottolog.json` (sloupec 5 = `bar`), protože
+  `scripts/glottolog.mjs` by stáhl novou verzi Glottologu; při jeho dalším spuštění se propojí sama přes kód ISO `bar`.
+  Zajímavost vysvětluje, proč je jazykem i nářečím (ISO 639-3 × německá dialektologie), a šibolet Oachkatzlschwoaf.
+- **Jazyk dne den po tečce z rejstříku** (1. 10. 2026): po latině (30. 9.) spadla stránka – tečka rejstříku nemá `stred`, jen
+  `bod`; `stredJazyka` teď bere `j.bod` a bez polohy (esperanto) se směr cesty vynechá.
 - Od vybraného jazyka vedou světelné oblouky k nejbližším příbuzným (nejvýš 6, podle nejhlubšího společného
   předka ve stromu Glottologu). U jazyka z atlasu jen k jiným jazykům atlasu, karta je vypisuje.
 
@@ -823,8 +829,9 @@ Dřívější náhledový artefakt https://claude.ai/artifact/XS67Gsv9d4y2pMu7UW
   (pul, perska, ploska), `minaret` (tuzka, banka, hranol), `mesita`, `strazni` (svanetská/čečenská věž),
   `armensky`, `iwan`, `sikhara`, `gopuram`, `stupa`, `pagoda`, `praporky`. Uživatel 24. 9. 2026: „pokračuj pořád
   dál“ – dávky se po kontrole galerie rovnou pouštějí na web. Hotová i východní a jihovýchodní Asie (23; `sin`, `mostek`, `torii`, `wat`, `buvol`, `naKulech`). Hotová i Afrika (28; `ul`, `zebu`, `velbloud`,
-  `hlinenaMesita`, `dhau`, `piroga`, `kapskyStit`). Hotová i Amerika (17; `lamy`, `bizoni`, `tipi`, `agave`, `araukarie`, `misie`). Hotová i Oceánie (10). **Všech 163 jazyků má vlastní krajinu**
-  (163 druhů). Nový jazyk atlasu potřebuje vlastní druh, ne sdílený.
+  `hlinenaMesita`, `dhau`, `piroga`, `kapskyStit`). Hotová i Amerika (17; `lamy`, `bizoni`, `tipi`, `agave`, `araukarie`, `misie`). Hotová i Oceánie (10). **Všech 164 jazyků má vlastní krajinu**
+  (164 druhů; 1. 10. 2026 přibyla bavorština s druhem `bavorsko`: Alpy, barokní kostel s cibulovou věží, statky s dřevěným
+  balkonem, modrobílá májka, strakatý dobytek). Nový jazyk atlasu potřebuje vlastní druh, ne sdílený.
   **Čeština má horu Říp** (`rip`: zalesněná „obrácená mísa“ nad rovinou Polabí s rotundou sv. Jiří na temeni, lány,
   vesnice s červenými střechami, vlčí máky) – výslovné přání uživatele 24. 9. 2026 („Říp, nebo Pražský hrad“), jediná
   výjimka z pravidla bez památek. Český znakový jazyk má dál `kopce`.
@@ -854,7 +861,7 @@ Dřívější náhledový artefakt https://claude.ai/artifact/XS67Gsv9d4y2pMu7UW
   U norštiny se nevlní odraz hory ve vodě (kreslí se jako hora).
   **Jen malé obrázky jazyků** (karta a Jazyk dne) – uživatel 28. 9. 2026: „chci animaci jenom u malých obrázků jazyků“.
   Ilustrace Jazyků starověku a Příběhů, medailony, statické stránky jazyků ani vymyšlené jazyky nerozhýbávat.
-  Obalení kresbu nemění – po úpravě ověřit, že `scripts/malby.mjs` vyrobí všech 163 maleb bajt po bajtu stejně
+  Obalení kresbu nemění – po úpravě ověřit, že `scripts/malby.mjs` vyrobí všech 164 maleb bajt po bajtu stejně
   (`git status static/malby` prázdné). Plochy kopců, polí a mlhu neobalovat (vlnil by se horizont, pod mlhou kopce).
   Suché krajiny (Kutch, Kalahari, Tibet…) mají jen mraky a pár stébel, hýbou se proto málo – tak to je.
 - **Malby se ukazují jako bitmapa, ne jako živé SVG** (`malbaObrazek`, `vlozMalbu` v app.js). SVG s desítkami filtrů
