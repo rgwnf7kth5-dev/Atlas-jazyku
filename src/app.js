@@ -711,6 +711,7 @@ function postavPolici(filtr){
   dotazAkce = dotaz;
   const hledane = mnozina ? "" : bezDiakritiky(filtr || "").trim();
   $("hledej-x").hidden = !$("hledej").value;
+  if ($("hledej-tip")) $("hledej-tip").hidden = !!$("hledej").value;
   seznam.textContent = "";
   const evropskyDen = !hledane && !mnozina && denJazyku();
   if (evropskyDen) seznam.appendChild(kartaDneJazyku());
@@ -933,9 +934,25 @@ function pismeno(jm){
   const z = c.normalize("NFD").charAt(0);
   return /[A-Z]/.test(z) ? z : "#";
 }
-$("hledej").addEventListener("input", function(e){ postavPolici(e.target.value); });
+$("hledej").addEventListener("input", function(e){ postavPolici(e.target.value); obnovTipHledani(); });
+/* pod polem příklad otázky (uživatel 1. 10. 2026: „nikdo nepochopí, že se lze ptát“): s AI otázky větou, bez ní krátké
+   dotazy, kterým rozumí chytré hledání; klepnutí otázku vloží a položí */
+const TIP_POR = Math.floor(Math.random() * 7);
+function obnovTipHledani(){
+  const b = $("hledej-tip"); if (!b) return;
+  const pr = aiZap ? T.hledejPriklady : (T.lang === "cs" ? ["jazyky v Brazílii", "slovanské jazyky", "němčina a italština"] : ["languages of Brazil", "Slavic languages", "German and Italian"]);
+  const q = pr[TIP_POR % pr.length];
+  b.hidden = !!$("hledej").value;
+  b.textContent = "✦ " + T.hledejTip + " ";
+  b.appendChild(prvek("i", null, q));
+  b.onclick = function(){
+    const h = $("hledej"); h.value = q; postavPolici(q); obnovTipHledani();
+    if (dotazAkce) provedDotaz(dotazAkce);
+  };
+}
+obnovTipHledani();
 $("hledej").addEventListener("keydown", function(e){ if (e.key === "Enter" && dotazAkce) { e.preventDefault(); provedDotaz(dotazAkce); } });
-$("hledej-x").addEventListener("click", function(){ const h = $("hledej"); h.value = ""; postavPolici(""); h.focus(); });
+$("hledej-x").addEventListener("click", function(){ const h = $("hledej"); h.value = ""; postavPolici(""); obnovTipHledani(); h.focus(); });
 /* odkaz „Přeskočit na seznam“ pro klávesnici: jen přesune fokus, adresu (#jazyk) nemění */
 document.querySelector(".preskocit").addEventListener("click", function(e){ e.preventDefault(); $("hledej").focus(); });
 
@@ -3682,6 +3699,7 @@ function obnovTexty(){
   if (cesta) { cesta.kroky.forEach(function(x){ x.jazyk = nazevKroku(x.k); }); postavCestaPanel(); }
   if (brana) { postavBranu(); if (vymysleny) ukazVymysleny(vymysleny); }
   if (zvlastni) ukazZvlastni(zvlastni);
+  if (typeof obnovTipHledani === "function") obnovTipHledani();
   if (typVlastnost >= 0) obnovLegenduTypologie();
   if (mapyOkno.open) postavMapy();
 }

@@ -1386,3 +1386,8 @@ dialog.ai-test{width:min(1200px, 96vw); max-height:92vh; overflow:auto; padding:
 dialog.ai-test table{border-collapse:collapse; width:100%; table-layout:fixed; font-size:13px; overflow-wrap:anywhere}
 dialog.ai-test th, dialog.ai-test td{border-top:1px solid var(--linka); padding:8px; vertical-align:top; text-align:left}
 dialog.ai-test td small{display:block; margin-top:4px; color:var(--text3)}
+/* příklad otázky pod hledacím polem */
+.hledej-tip{align-self:stretch; text-align:left; margin:-3px 0 0; padding:2px 4px; border:0; background:none; color:var(--text2);
+  font:500 12.5px/1.4 inherit; cursor:pointer; text-wrap:pretty}
+.hledej-tip i{font-style:normal; color:var(--text); text-decoration:underline; text-decoration-color:var(--linka); text-underline-offset:3px}
+.hledej-tip:hover i{text-decoration-color:currentColor}

@@ -465,7 +465,10 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a živý web workflow Diag
   (`SLOZITA_OTAZKA`: nejvíc, kolik, ohrožené, proč, čísla…), nabídne se pod jeho kartou i AI;
   **s AI se pravidly řeší jen dotazy do 4 slov**, delší věta jde rovnou AI (pravidla z „budu se stěhovat do Bernu… jaký jazyk tam“
   vytrhla větev Taa ze slova „tam“); krátké názvy (Taa, Čad) se porovnávají jen celé. Pokyn AI dovoluje u měst a krajů (atlas
-  je nemá) přidat obecně známý fakt, ale čísla, data a žebříčky jen z nástrojů; po odpovědi se provede akce posledního nástroje (`provedAkciAI`). Obsah odpovědí AI se posílá zpět beze změny
+  je nemá) přidat obecně známý fakt, ale čísla, data a žebříčky jen z nástrojů;
+  V poli hledání je krátký text „Hledejte, nebo se zeptejte…“ (dlouhý se ořezával) a pod polem řádek „✦ Zkuste: <otázka>“
+  (`#hledej-tip`, `obnovTipHledani`; náhodný z `hledejPriklady`, bez AI krátké dotazy) – klepnutí otázku vloží a položí
+  (uživatel 1. 10. 2026: „nikdo nepochopí, že se lze ptát“); po odpovědi se provede akce posledního nástroje (`provedAkciAI`). Obsah odpovědí AI se posílá zpět beze změny
   (i bloky přemýšlení). Model: `ATLAS_AI_MODEL` v Netlify (opus / sonnet / haiku nebo celé id), bez něj `claude-sonnet-5-5`;
   Opus a Sonnet s `effort: low` a záložním modelem při odmítnutí (`fallbacks: "default"`, beta `server-side-fallback-2026-07-01`).
   **Vypnutí pro sebe:** `#ai-vyp` (pamatuje se v `atlas-ai`), `#ai` zase zapne. **Porovnání modelů:**
