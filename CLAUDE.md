@@ -461,7 +461,7 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a živý web workflow Diag
   Nástroje (`naradiAI` v app.js) běží v prohlížeči nad daty atlasu: `jazyky_statu`, `jazyky_skupiny`, `info_o_jazyku`,
   `srovnej_jazyky` a od 1. 10. 2026 i žebříčky (uživatel: „funguje jak prase“ – AI na „kde je 5 a víc jazyků“ a „který jazyk má
   nejvíc nářečí“ jen krčila rameny): `zebricek_statu` (min/max jazyků, rodina, řazení) a `vyber_jazyky` (stát, rodina, vitalita,
-  řazení podle nářečí / mluvčích / států; všechny vybrané rozsvítí na glóbu). Když chytré hledání pochopí jen část otázky
+  řazení podle nářečí / mluvčích / států; všechny vybrané rozsvítí na glóbu). `zebricek_statu` podbarví vypsané státy (`ukazStaty`, `dotazSkupina.staty`, kreslí `kresliUzemi`) – dřív AI psala „na glóbu jsou zvýrazněné“, ale nic nebylo (uživatel 1. 10. 2026). **Každý výsledek nástroje má pole `na_globu`** a pokyn AI smí glóbus zmínit jen tak, jak ho to pole popisuje. Když chytré hledání pochopí jen část otázky
   (`SLOZITA_OTAZKA`: nejvíc, kolik, ohrožené, proč, čísla…), nabídne se pod jeho kartou i AI;
   **s AI se pravidly řeší jen dotaz, kterému rozumí celému** (`celyDotaz`: každé slovo je část nalezeného názvu, nebo výplňové
   z `DOTAZ_VYPLN`), jinak jde AI – pravidla vytrhávala kousky („budu se stěhovat do Bernu… jaký jazyk tam“ → větev Taa ze slova

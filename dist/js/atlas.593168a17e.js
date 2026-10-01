@@ -5372,6 +5372,21 @@ function ukazSkupinu(u, body){
   $("tl-cely").hidden = false;
   letNadBody(dotazSkupina.body);
 }
+function ukazStaty(fs){                       /* několik států naráz (žebříček z AI): podbarvené, let nad jejich středy */
+  if (!globusOk || !fs.length) return;
+  if (vybrany || srovnani) { vybrany = null; srovnani = null; zrusCekani(); karta.hidden = true; delete karta.dataset.jazyk; oznacTlacitka(null); }
+  zeme = null; okno.hidden = true;
+  dotazSkupina = {u: -1, body: [], staty: fs};
+  obnovPriznaky(); spoctiPosun(); ozivit();
+  $("tl-cely").hidden = false;
+  const st = fs.map(function(f){ return vektor.apply(null, d3.geoCentroid(f)); });
+  let x = 0, y = 0, z = 0;
+  st.forEach(function(v){ x += v[0]; y += v[1]; z += v[2]; });
+  const d = Math.hypot(x, y, z) || 1; x /= d; y /= d; z /= d;
+  let uhel = 0.15;
+  st.forEach(function(v){ uhel = Math.max(uhel, Math.acos(Math.max(-1, Math.min(1, v[0] * x + v[1] * y + v[2] * z)))); });
+  letKe([Math.atan2(y, x) / R, Math.asin(z) / R], Math.max(1, Math.min(4.5, 1.5 / (uhel + 0.22))));
+}
 function provedDotaz(d){
   if (!d) return;
   if (d.typ === "ai") { d.karta.zeptej(); return; }
@@ -5462,7 +5477,8 @@ function naradiAI(nazev, vstup){
     if (!z) return {data: {chyba: "Stát v mapě atlasu nenalezen / country not found"}};
     const n = z.f.properties.name, body = bodyVeStatu(n) || [], atlas = (V_ZEMI[n] || []).map(function(j){ return j.n; });
     return {data: {stat: STATY_VSE[T.lang][n] || n, jazyku_na_globu: body.length, jazyky_atlasu_s_kartou: atlas,
-      dalsi_priklady: body.filter(function(i){ return !B[i][5]; }).slice(0, 25).map(jmenoBodu), zdroj: "Glottolog (countries), Unicode CLDR"},
+      dalsi_priklady: body.filter(function(i){ return !B[i][5]; }).slice(0, 25).map(jmenoBodu), zdroj: "Glottolog (countries), Unicode CLDR",
+      na_globu: "stát podbarvený, všechny jeho jazyky rozsvícené / country shaded, all its languages lit"},
       akce: {typ: "zeme", f: z.f}};
   }
   if (nazev === "jazyky_skupiny") {
@@ -5476,12 +5492,13 @@ function naradiAI(nazev, vstup){
     PD.nad.forEach(function(nad, u){ if (nad === s.u) { const y = IX.uzly.find(function(q){ return q.u === u; }); if (y) deti.push(nazevSkupiny(u) + " (" + y.body.length + ")"); } });
     const atlas = JAZYKY.filter(function(j){ return BOD_ATLASU[j.id] >= 0 && s.body.indexOf(BOD_ATLASU[j.id]) >= 0; }).map(function(j){ return j.n; });
     return {data: {nazev: nazevSkupiny(s.u), typ: s.koren ? "rodina / family" : "větev / branch", rodina: nazevSkupiny(k), jazyku_na_globu: s.body.length,
-      podskupiny: deti.slice(0, 12), jazyky_atlasu_s_kartou: atlas, zdroj: "Glottolog"}, akce: {typ: "skupina", u: s.u, body: s.body}};
+      podskupiny: deti.slice(0, 12), jazyky_atlasu_s_kartou: atlas, zdroj: "Glottolog",
+      na_globu: "rozsvícené všechny jazyky skupiny / all languages of the group lit"}, akce: {typ: "skupina", u: s.u, body: s.body}};
   }
   if (nazev === "info_o_jazyku") {
     const L = najdiJazykAI(vstup.jazyk);
     if (!L) return {data: {chyba: "Jazyk v atlasu nenalezen / language not found"}};
-    return {data: popisJazykaAI(L), akce: L.j ? {typ: "jazyk", j: L.j} : {typ: "bod", i: L.i}};
+    return {data: Object.assign(popisJazykaAI(L), {na_globu: "otevřená karta jazyka, území vyznačené / language card open, area marked"}), akce: L.j ? {typ: "jazyk", j: L.j} : {typ: "bod", i: L.i}};
   }
   if (nazev === "srovnej_jazyky") {
     const a = najdiJazykAI(vstup.a), b = najdiJazykAI(vstup.b);
@@ -5491,7 +5508,8 @@ function naradiAI(nazev, vstup){
     const pa = popisJazykaAI(a), pb = popisJazykaAI(b);
     return {data: {a: pa, b: pb, nejblizsi_spolecny_predek: spol >= 0 ? nazevVetve(spol, B[a.i][3]) : null,
       pribuznost: spol >= 0 ? "příbuzné / related" : "podle Glottologu nejsou příbuzné / not known to be related",
-      spolecne_staty: pa.staty.filter(function(s){ return pb.staty.indexOf(s) >= 0; }), zdroj: "Glottolog, Unicode CLDR, atlas"},
+      spolecne_staty: pa.staty.filter(function(s){ return pb.staty.indexOf(s) >= 0; }), zdroj: "Glottolog, Unicode CLDR, atlas",
+      na_globu: "srovnání: oba jazyky vyznačené, otevřené srovnávací okno / both languages marked, comparison open"},
       akce: {typ: "srovnani", a: a, b: b}};
   }
   if (nazev === "zebricek_statu") {
@@ -5500,9 +5518,13 @@ function naradiAI(nazev, vstup){
       (radek(i)[3] || "").split(" ").forEach(function(k){ if (k) pocet[k] = (pocet[k] || 0) + 1; }); }
     let st = Object.keys(pocet).map(function(k){ return [k, pocet[k]]; }).filter(function(x){ return x[1] >= (vstup.min_jazyku || 0) && (!vstup.max_jazyku || x[1] <= vstup.max_jazyku); });
     st.sort(function(a, b){ return vstup.razeni === "nejmin" ? a[1] - b[1] : b[1] - a[1]; });
+    const vypsane = st.slice(0, Math.max(1, Math.min(40, vstup.limit || 15))), kody = new Set(vypsane.map(function(x){ return x[0]; }));
+    const fs = ZEME.filter(function(f){ return PD.mapaStatu && kody.has(PD.mapaStatu[f.properties.name]); });
     return {data: {pocet_statu: st.length, filtr_rodina: sk ? nazevSkupiny(sk.u) : null,
-      staty: st.slice(0, Math.max(1, Math.min(40, vstup.limit || 15))).map(function(x){ return (PD.staty[T.lang][x[0]] || x[0]) + ": " + x[1]; }),
-      zdroj: "Glottolog (countries of each language); a language counts in every country Glottolog lists for it"}};
+      staty: vypsane.map(function(x){ return (PD.staty[T.lang][x[0]] || x[0]) + ": " + x[1]; }),
+      na_globu: fs.length ? "podbarveno " + fs.length + " vypsaných států (malé ostrovní státy na glóbu nemusí být vidět) / " + fs.length + " listed countries shaded" : "nic / nothing",
+      zdroj: "Glottolog (countries of each language); a language counts in every country Glottolog lists for it"},
+      akce: fs.length ? {typ: "staty", f: fs} : null};
   }
   if (nazev === "vyber_jazyky") {
     const VIT = {bezpecny: [0], ohrozeny: [1, 2, 3, 4], zranitelny: [1], jednoznacne_ohrozeny: [2], vazne_ohrozeny: [3], kriticky_ohrozeny: [4], vymrely: [5], probouzeny: [6]};
@@ -5529,7 +5551,8 @@ function naradiAI(nazev, vstup){
       jazyky: vyber.slice(0, Math.max(1, Math.min(40, vstup.limit || 15))).map(function(x){
         const o = {jazyk: jmenoBodu(x.i)}; if (vstup.razeni === "nareci") o.nareci = x.nar; if (vstup.razeni === "mluvci") o.mluvci = x.ml || null; if (vstup.razeni === "staty") o.staty = x.st;
         const v = vitalitaBodu(x.i); if (v >= 0) o.vitalita = nazevStupne(v); return o; }),
-      zdroj: "Glottolog (jazyky, nářečí, státy, vitalita), Wikidata a Unicode CLDR (mluvčí; ne u všech jazyků)"},
+      zdroj: "Glottolog (jazyky, nářečí, státy, vitalita), Wikidata a Unicode CLDR (mluvčí; ne u všech jazyků)",
+      na_globu: vyber.length ? "rozsvícené všechny vybrané jazyky (" + vyber.length + ") / all " + vyber.length + " selected languages lit" : "nic / nothing"},
       akce: vyber.length ? {typ: "skupina", u: -1, body: vyber.map(function(x){ return x.i; })} : null};
   }
   return {data: {chyba: "neznámý nástroj"}};
@@ -5545,6 +5568,7 @@ function provedAkciAI(a){
   if (!a) return;
   if (a.typ === "zeme") ukazZemi(a.f);
   else if (a.typ === "skupina") ukazSkupinu(a.u, a.body);
+  else if (a.typ === "staty") ukazStaty(a.f);
   else if (a.typ === "jazyk") vyber(a.j.id);
   else if (a.typ === "bod") vyberBod(a.i);
   else if (a.typ === "srovnani") { if (a.a.j) vyber(a.a.j.id); else vyberBod(a.a.i); cekaNaDruhy = jazykZVyberu(); dokonciSrovnani(a.b); }
@@ -6436,6 +6460,11 @@ function kresliStin(c, cx, cy, r){          /* koule k okraji tmavne, ať vypad�
   c.fillStyle = g; c.beginPath(); c.arc(cx, cy, r, 0, 6.283185); c.fill();
 }
 function kresliUzemi(c){                    /* území vybraného jazyka jednou oranžovou (--uzemi): barva rodiny by na modrém moři splývala */
+  if (dotazSkupina && dotazSkupina.staty) {  /* státy z odpovědi AI (žebříček): podbarvené stejně jako kliknutá země */
+    c.beginPath(); dotazSkupina.staty.forEach(function(f){ cestaPodklad(f); });
+    c.globalAlpha = 0.3; c.fillStyle = barvy.uzemi || barvy.cyan; c.fill(); c.globalAlpha = 0.95;
+    c.lineWidth = 2; c.strokeStyle = barvy.uzemi || barvy.cyan; c.stroke(); c.globalAlpha = 1;
+  }
   if (zeme) {                               /* kliknutá země: podbarvená a obtažená, dokud je otevřené její okno */
     c.beginPath(); cestaPodklad(zeme.f);
     c.globalAlpha = 0.3; c.fillStyle = barvy.uzemi || barvy.cyan; c.fill(); c.globalAlpha = 0.95;
