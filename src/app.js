@@ -503,7 +503,8 @@ function bodyDotazu(d){
    #ai (pamatuje se, #ai-vyp vypne), porovnání modelů je #ai-test. Jen web, ne artefakt ani soubor z disku. */
 const AI_MOZNE = !ARTEFAKT && /^https?:$/.test(location.protocol);
 let aiZap = false;
-try { aiZap = AI_MOZNE && localStorage.getItem("atlas-ai") === "1"; } catch (e) {}
+aiZap = AI_MOZNE;                               // od 1. 10. 2026 pro všechny; #ai-vyp vypne jen pro sebe
+try { if (localStorage.getItem("atlas-ai") === "0") aiZap = false; } catch (e) {}
 function najdiJazykAI(nazev){                   // jazyk atlasu podle jména (i v pádech), jinak tečka rejstříku podle přesného jména
   const IX = pripravDotazy(), slova = dotazSlova(nazev || "");
   const a = IX.jazyky.find(function(x){ return x.jmena.some(function(n){ return bezDiakritiky(n) === bezDiakritiky(nazev); }); })

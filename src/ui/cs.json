@@ -401,6 +401,7 @@
      "Stránky o civilizacích starověku a Příběhy jazyků píše atlas podle odborné literatury, která je uvedena na konci každé stránky; údaje jsou před zveřejněním ověřené. Fotografie pocházejí z Wikimedia Commons a mají volnou licenci (CC BY, CC BY-SA, CC0 nebo volné dílo); autor a licence jsou uvedeni u každého snímku. Znaky klínového písma a anatolských hieroglyfů vykresluje písmo Noto (SIL Open Font License)."
     ]
    },
+   {"h": "Otázky na AI", "p": ["Když hledání otázce nerozumí, lze se zeptat umělé inteligence (Claude Sonnet 5.5 od firmy Anthropic). Text otázky se pošle přes server atlasu (Netlify) službě Anthropic; atlas otázky neukládá. AI si vyhledává údaje jen v datech atlasu (Glottolog, Unicode CLDR, texty atlasu) a odpověď skládá z nich; přesto se může mýlit, proto u každé odpovědi stojí upozornění. Odpovídá jen na otázky o jazycích, písmech a jazykových rodinách."]},
    {
     "h": "Mapa",
     "p": [
@@ -535,6 +536,7 @@
     "p": [
      "Vyhledávat lze jazyk, stát i nářečí (například „hanáčtina“ najde češtinu). Křížek v poli hledání vymaže.",
      "Do pole hledání lze napsat i otázku běžnou větou: „jakými jazyky se mluví v Brazílii“ (jazyky státu), „najdi všechny slovanské jazyky“ (rodina nebo větev podle Glottologu), „co má společného němčina s italštinou“ (srovnání dvou jazyků) nebo „kde se mluví persky“. Nahoře v seznamu se objeví, čemu hledání rozumělo, a seznam ukáže příslušné jazyky; tlačítko nebo klávesa Enter je ukáže na glóbu. Odpověď vychází jen z dat atlasu.",
+     "Když hledání otázce nerozumí, nabídne tlačítko Zeptat se AI: umělá inteligence (Claude od firmy Anthropic) si vyhledá údaje v datech atlasu a odpoví dvěma až čtyřmi větami; výsledek zároveň ukáže na glóbu. Odpovídá jen na otázky o jazycích a může se mýlit. Na webu, ne v offline kopii.",
      "Řazení podle jazykových rodin, abecedy nebo světadílů. Jazyky s podrobnou kartou jsou uvedeny jako velké dlaždice, ostatní pod nimi.",
      "Jazyk dne se mění o půlnoci a vždy uvádí důvod výběru: buď je to den spojený s daným jazykem (viz Kalendář jazykových dnů), nebo postup kolem světa k nejbližšímu dalšímu jazyku. Na Evropský den jazyků (26. září) jsou místo něj uvedeny všechny evropské jazyky atlasu."
     ]

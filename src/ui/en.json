@@ -401,6 +401,7 @@
      "The Atlas writes the pages on ancient civilizations and the Language stories from the scholarly literature listed at the end of each page, and checks the facts before publication. The photographs come from Wikimedia Commons and have free licences (CC BY, CC BY-SA, CC0 or public domain); the author and licence are given with each image. Cuneiform signs and Anatolian hieroglyphs are rendered with the Noto fonts (SIL Open Font License)."
     ]
    },
+   {"h": "Questions for the AI", "p": ["If the search does not understand a question, you can ask an AI (Claude Sonnet 5.5 by Anthropic). The question text is sent via the atlas server (Netlify) to Anthropic; the atlas does not store questions. The AI looks things up only in the atlas data (Glottolog, Unicode CLDR, atlas texts) and builds its answer from them; it may still be wrong, so every answer carries a note. It answers only questions about languages, scripts and language families."]},
    {
     "h": "Map",
     "p": [
@@ -535,6 +536,7 @@
     "p": [
      "You can search for a language, a country or a dialect. The cross in the search box clears it.",
      "You can also type a question in plain words: “languages spoken in Brazil” (languages of a country), “Slavic languages” (a family or branch in Glottolog), “German and Italian” (comparing two languages) or “where is Persian spoken”. The top of the list shows what the search understood and the list shows the matching languages; the button or the Enter key shows them on the globe. Answers come only from the atlas data.",
+     "If the search does not understand a question, it offers Ask the AI: an AI (Claude by Anthropic) looks up the atlas data and answers in two to four sentences, showing the result on the globe. It answers only questions about languages and may be wrong. Website only.",
      "Sort by language family, alphabetically or by continent. Languages with a detailed card are shown as large tiles, the others below them.",
      "The Language of the Day changes at midnight and always states why it was chosen: either a day associated with that language (see the Calendar of language days) or the journey around the world to the next nearest language. On the European Day of Languages (26 September) all European languages of the atlas are shown instead."
     ]

@@ -6,7 +6,7 @@
 import Anthropic from "@anthropic-ai/sdk";
 
 const MODELY = { opus: "claude-opus-5-5", sonnet: "claude-sonnet-5-5", haiku: "claude-haiku-4-5" };
-const VYCHOZI = MODELY[process.env.ATLAS_AI_MODEL] || process.env.ATLAS_AI_MODEL || MODELY.opus;
+const VYCHOZI = MODELY[process.env.ATLAS_AI_MODEL] || process.env.ATLAS_AI_MODEL || MODELY.sonnet;   // Sonnet 5.5 vybral uživatel 1. 10. 2026 po porovnání
 const ZKOLA = 4, MAX_OTAZKA = 300, MAX_VYSLEDEK = 8000, MAX_TELO = 60000;
 
 const NASTROJE = [
