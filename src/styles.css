@@ -1380,3 +1380,9 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 .dotaz-odpoved .do-akce svg{width:14px; height:14px; fill:currentColor}
 .dotaz-odpoved .do-akce:focus-visible{outline:2px solid var(--text); outline-offset:2px}
 .dotaz-odpoved .do-zdroj{font-size:12px; color:var(--text3)}
+.dotaz-ai .do-ai-text{margin:2px 0; font-size:14.5px; line-height:1.55; color:var(--text)}
+.dotaz-odpoved .do-akce:disabled{opacity:.7; cursor:progress}
+dialog.ai-test{width:min(1200px, 96vw); max-height:92vh; overflow:auto; padding:18px 20px; border:1px solid var(--linka); border-radius:14px; background:var(--listek, var(--sklo)); color:var(--text)}
+dialog.ai-test table{border-collapse:collapse; width:100%; table-layout:fixed; font-size:13px; overflow-wrap:anywhere}
+dialog.ai-test th, dialog.ai-test td{border-top:1px solid var(--linka); padding:8px; vertical-align:top; text-align:left}
+dialog.ai-test td small{display:block; margin-top:4px; color:var(--text3)}

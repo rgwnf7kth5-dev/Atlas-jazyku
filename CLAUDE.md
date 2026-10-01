@@ -450,6 +450,23 @@ zkontrolovat nejde – ověřuj `dist/` v Playwrightu a živý web workflow Diag
   hledání příslušné jazyky (`bodyDotazu`). Akce: `ukazZemi` (jako klepnutí na zemi), `ukazSkupinu` (stav `dotazSkupina`, tečky
   příznak 5, let nad střed), srovnání, výběr jazyka – **tytéž akce mají později dostat AI jako nástroje**. Zkušební sada 29 dotazů
   cs/en je v testu `dotaz-test.mjs` (scratchpad) – při změně pravidel ji projít znovu. Návod (oddíl Seznam) to popisuje.
+- **Otázky na AI – krok 2** (1. 10. 2026, **zatím skryté**): když chytré hledání otázce nerozumí (aspoň 3 slova), karta nabídne
+  „Zeptat se AI“ (`kartaAI`, Enter). Prohlížeč posílá konverzaci serverové funkci **`netlify/functions/zeptej.mjs`** (cesta
+  `/api/zeptej`, závislost `@anthropic-ai/sdk` v package.json – jediná npm závislost projektu, jen pro funkci; edge funkce
+  `domeny.js` pouští `/api/*` na obou doménách). Klíč `ANTHROPIC_API_KEY` je **jen v Netlify** (Environment variables, Secret,
+  scope Functions, Production + Deploy Previews; uložen 1. 10. 2026); do stránky ani gitu nepatří. Funkce drží pevný systémový
+  pokyn (jen otázky o jazycích, odpovídat z nástrojů, 2–4 věty, jazyk otázky, vykání), čtyři nástroje se `strict` a limity: jedna
+  otázka ≤ 300 znaků, dál jen výsledky nástrojů, nejvýš 4 kola, tělo ≤ 60 kB, 40 volání / 10 min na adresu (v instanci).
+  Nástroje (`naradiAI` v app.js) běží v prohlížeči nad daty atlasu: `jazyky_statu`, `jazyky_skupiny`, `info_o_jazyku`,
+  `srovnej_jazyky`; po odpovědi se provede akce posledního nástroje (`provedAkciAI`). Obsah odpovědí AI se posílá zpět beze změny
+  (i bloky přemýšlení). Model: `ATLAS_AI_MODEL` v Netlify (opus / sonnet / haiku nebo celé id), bez něj `claude-opus-5-5`;
+  Opus a Sonnet s `effort: low` a záložním modelem při odmítnutí (`fallbacks: "default"`, beta `server-side-fallback-2026-07-01`).
+  **Zapnutí:** adresa `#ai` (pamatuje se v `atlas-ai`, `#ai-vyp` vypne) – veřejně zatím nic není vidět. **Porovnání modelů:**
+  `#ai-test` položí 16 otázek (`AI_SADA`) Opusu 5.5, Sonnetu 5.5 a Haiku 4.5 a ukáže odpovědi, nástroje, čas a cenu. Uživatel
+  vybere model, pak nastavit `ATLAS_AI_MODEL` v Netlify a AI zveřejnit (zrušit skrytí, doplnit návod a O datech: dotazy jdou
+  AI). Z prostředí Claude Code se API zkoušet nedá (klíč v nastavení prostředí se načte až v nové relaci; uživatele to mátlo,
+  nenutit) – zkouší se na webu. Test bez klíče: napodobenina serveru `mock-server.mjs` ve scratchpadu (pozor: `pkill -f` s jejím
+  jménem zabije i vlastní příkaz).
 - **Seznam z klávesnice**: do seznamu se vstoupí jedním Tabem (jedna dlaždice má `tabindex=0`), šipky
   vlevo/vpravo o dlaždici, nahoru/dolů o řádek (nejbližší dlaždice), Home/End, PageUp/PageDown o 10 řádků;
   další Tab seznam opustí. Při pohybu ke konci se dokreslí další dávka. Nadpisy skupin jsou `h2`.
