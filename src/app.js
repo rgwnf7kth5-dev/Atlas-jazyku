@@ -2966,7 +2966,7 @@ function prectiOdkaz(){
   }
   if (/^(vitalita|vitality)$/i.test(h)) { otevriStrankuVitality(); return; }
   if (/^cesta-/i.test(h)) { spustCestu(h.slice(6)); return; }
-  { const pj = PUTOVANI.find(function(x){ return x.adresa.cs === h || x.adresa.en === h; }); if (pj) { spustPutovani(pj.id); return; } }
+  { const pj = PUTOVANI.find(function(x){ return x.adresa.cs === h || x.adresa.en === h || x.adresa[T.lang] === h; }); if (pj) { spustPutovani(pj.id); return; } }
   if (/^mapa-/i.test(h)) { ukazMapu(h.slice(5)); try { history.replaceState(null, "", location.pathname + location.search); } catch (e) {} return; }
   if (civilizace(h)) { if (civOtevrena !== civilizace(h).id) otevriCivilizaci(h); return; }
   if (/^mellon(~|$)/i.test(h)) { otevriBranu(); const v = h.split("~")[1]; if (v) ukazVymysleny(v); return; }
@@ -3746,7 +3746,7 @@ function prelozStranku(){
   const oj = $("odkaz-jazyky");
   oj.hidden = ARTEFAKT || location.protocol === "file:";
   oj.textContent = T.stranky.vsechnyOdkaz;
-  oj.setAttribute("href", T.lang === "cs" ? korenVerze("cs") + "jazyky/" : korenVerze("en") + "languages/");   // italské stránky jazyků zatím nejsou
+  oj.setAttribute("href", korenVerze(T.lang) + ({cs: "jazyky/", it: "lingue/"}[T.lang] || "languages/"));
   if (oDatech.open) postavODatech();
   if (starovekOkno.open) otevriSekci(starovekOkno.dataset.sekce || "starovek");
   if (civOtevrena) { const c = civilizace(civOtevrena), y = civOkno.querySelector(".civ-svitek").scrollTop; postavCivilizaci(c); civOkno.querySelector(".civ-svitek").scrollTop = y; }

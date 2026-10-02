@@ -24,7 +24,8 @@ function tvar(lang, n, tvary) {
   if (lang === "cs" && n >= 2 && n <= 4) return tvary[1];
   return tvary[2];
 }
-function cislo(lang, n, des) { return n.toLocaleString(lang === "cs" ? "cs-CZ" : "en-GB", { minimumFractionDigits: des || 0, maximumFractionDigits: des || 0 }); }
+const LOC = { cs: "cs-CZ", en: "en-GB", it: "it-IT" }, OG = { cs: "cs_CZ", en: "en_GB", it: "it_IT" };
+function cislo(lang, n, des) { return n.toLocaleString(LOC[lang] || "en-GB", { minimumFractionDigits: des || 0, maximumFractionDigits: des || 0 }); }
 /* stejně jako lidi() v app.js: malá čísla přesně, velká zaokrouhleně */
 function lidi(lang, T, n) {
   if (n < 10000) return cislo(lang, n);
@@ -34,15 +35,17 @@ function lidi(lang, T, n) {
 }
 
 /* adresa stránky o civilizaci: /starovek/chetite/, /en/ancient/hittites/ */
-const starovekA = { cs: "/starovek/", en: "/en/ancient/" };
+const starovekA = { cs: "/starovek/", en: "/en/ancient/", it: "/it/antichita/" };
 /* Příběhy jazyků (sekce „pribehy“ v data/starovek.json): /pribehy/caj/, /en/stories/tea/ */
-const pribehyA = { cs: "/pribehy/", en: "/en/stories/" };
+const pribehyA = { cs: "/pribehy/", en: "/en/stories/", it: "/it/storie/" };
 const sekceA = c => c.sekce === "pribehy" ? pribehyA : starovekA;
 const civAdresa = (c, lang) => sekceA(c)[lang] + c.adresa[lang] + "/";
-export function vyrobStranky({ KOREN, WEB, NAHLED, UI, jazyky: vsechnyJazyky, glottolog, podrobnosti, nazvyZemi, ikona, fontyOdkaz, verze, dny, starovek, sablonaStarovek, stylStarovek }) {
+export function vyrobStranky({ KOREN, WEB, NAHLED, UI, JAZYKY_WEBU, jmenoTecky, rodinyJ, jazyky: vsechnyJazyky, glottolog, podrobnosti, nazvyZemi, ikona, fontyOdkaz, verze, dny, starovek, sablonaStarovek, stylStarovek, cestySlov }) {
+  /* JAZYKY_WEBU: cs, en a další (italština od 2. 10. 2026); jmenoTecky(i, lang) = jméno tečky rejstříku v daném jazyce,
+     rodinyJ[lang] = názvy rodin Glottologu. Data dalších jazyků přicházejí z buildu doplněná angličtinou. */
   const DIST = path.join(KOREN, "dist");
   const STAROVEK = new Function(sablonaStarovek + "\nreturn STAROVEK;")();
-  const CESTY_SLOV = JSON.parse(fs.readFileSync(path.join(KOREN, "data/cesty-slov.json"), "utf8")).slova;   // cesty slov na glóbu (tlačítka v Příbězích)   // šablona stránky o civilizaci (i pro aplikaci)
+  const CESTY_SLOV = cestySlov;   // cesty slov na glóbu (tlačítka v Příbězích)   // šablona stránky o civilizaci (i pro aplikaci)
   const bodPodleKodu = new Map(glottolog.body.map((b, i) => [b[6], i]));
   const bodJazyka = {};
   glottolog.body.forEach((b, i) => { if (b[5] && !(b[5] in bodJazyka)) bodJazyka[b[5]] = i; });
@@ -54,18 +57,22 @@ export function vyrobStranky({ KOREN, WEB, NAHLED, UI, jazyky: vsechnyJazyky, gl
   const bezRodu = new Set(BEZ_RODU.map(n => glottolog.rodiny.indexOf(n)));
 
   /* adresy stránek; jméno musí být jedinečné */
-  const adresy = { cs: {}, en: {} };
-  for (const lang of ["cs", "en"]) {
+  const JAZYK_A = { cs: "/jazyk/", en: "/en/language/", it: "/it/lingua/" };
+  const adresy = Object.fromEntries(JAZYKY_WEBU.map(l => [l, {}]));
+  for (const lang of JAZYKY_WEBU) {
     const videno = new Map();
     for (const j of jazyky) {
       const s = slug(j[lang].nazev);
       if (!s) throw new Error(`Jazyk „${j.id}“ nemá z čeho udělat adresu stránky (${lang}).`);
       if (videno.has(s)) throw new Error(`Dva jazyky mají stejnou adresu stránky „${s}“: ${videno.get(s)} a ${j.id}.`);
       videno.set(s, j.id);
-      adresy[lang][j.id] = (lang === "cs" ? "/jazyk/" : "/en/language/") + s + "/";
+      adresy[lang][j.id] = JAZYK_A[lang] + s + "/";
     }
   }
-  const prehled = { cs: "/jazyky/", en: "/en/languages/" }, oDatech = { cs: "/o-datech/", en: "/en/about-data/" }, kalendarA = { cs: "/kalendar-jazyku/", en: "/en/language-days/" }, navodA = { cs: "/navod/", en: "/en/guide/" }, vitalitaA = { cs: "/vitalita/", en: "/en/vitality/" }, domov = { cs: "/", en: "/en/" };
+  const prehled = { cs: "/jazyky/", en: "/en/languages/", it: "/it/lingue/" }, oDatech = { cs: "/o-datech/", en: "/en/about-data/", it: "/it/sui-dati/" },
+    kalendarA = { cs: "/kalendar-jazyku/", en: "/en/language-days/", it: "/it/giornate-delle-lingue/" }, navodA = { cs: "/navod/", en: "/en/guide/", it: "/it/guida/" },
+    vitalitaA = { cs: "/vitalita/", en: "/en/vitality/", it: "/it/vitalita/" }, domov = { cs: "/", en: "/en/", it: "/it/" };
+  const vse = m => Object.fromEntries(JAZYKY_WEBU.map(l => [l, typeof m === "function" ? m(l) : m[l]]));   // adresy stránky ve všech jazycích
 
   /* příbuzní v atlasu: nejhlubší společný předek ve stromu Glottologu (jako oblouky na glóbu) */
   const cesty = {};
@@ -99,7 +106,9 @@ a{color:var(--odkaz)}
 .hlava{display:flex; align-items:center; gap:14px; max-width:980px; margin:0 auto; padding:16px 20px; border-bottom:1px solid var(--linka)}
 .hlava .domu{display:flex; align-items:center; gap:10px; color:inherit; text-decoration:none; font:600 1.6rem/1 var(--nadpis)}
 .hlava .domu svg{width:40px; height:40px}
-.hlava .jinam{margin-left:auto; padding:7px 14px; border:1px solid var(--linka); border-radius:999px; color:inherit; text-decoration:none; font-weight:600; font-size:.9rem}
+.hlava .jinam{margin-left:auto; display:flex; gap:2px; padding:3px; border:1px solid var(--linka); border-radius:999px; font-weight:600; font-size:.8rem; letter-spacing:.05em}
+.hlava .jinam a,.hlava .jinam b{padding:5px 9px; border-radius:999px; color:inherit; text-decoration:none}
+.hlava .jinam b{background:color-mix(in srgb, var(--odkaz) 14%, transparent); color:var(--odkaz)} .hlava .jinam a{color:var(--text2)} .hlava .jinam a:hover{color:var(--text)}
 main{max-width:980px; margin:0 auto; padding:18px 20px 40px}
 .drobky{font-size:.85rem; color:var(--text2); margin:0 0 14px}
 .drobky a{color:inherit}
@@ -206,7 +215,7 @@ try{var u=new SpeechSynthesisUtterance(text);u.voice=hlas;u.lang=hlas.lang;u.rat
 u.onend=function(){if(sp)sp.textContent=T.znovu};u.onerror=function(){if(sp)sp.textContent=T.znovu;rekni(T.chyba,prep)};ss.cancel();ss.speak(u)}catch(err){rekni(T.chyba,prep)}});})();</script>`; };
 
   const SKRIPT_LISTEK = `<script>(function(){var poz=document.getElementById("listek-pozadi");if(!poz||!window.fetch||!window.DOMParser)return;
-var seznam=poz.dataset.seznam,titS=poz.dataset.titulek,JE=/\\/(jazyk|language)\\/[^\\/]+\\/$/;
+var seznam=poz.dataset.seznam,titS=poz.dataset.titulek,JE=/\\/(jazyk|language|lingua)\\/[^\\/]+\\/$/;
 function otevreny(){return !poz.hidden}
 function schovej(){poz.hidden=true;document.body.classList.remove("s-listkem");document.title=titS}
 function zavri(){if(history.state&&history.state.zeSeznamu){history.back();return}schovej();history.replaceState(null,"",seznam)}
@@ -223,9 +232,8 @@ var h=a.getAttribute("href");if(!h||!JE.test(h))return;e.preventDefault();nacti(
 document.addEventListener("keydown",function(e){if(!otevreny())return;if(e.key==="Escape"){e.preventDefault();zavri();return}
 if((e.key==="ArrowLeft"||e.key==="ArrowRight")&&!(e.target.closest&&e.target.closest("input,textarea,select"))){var s=poz.querySelector(e.key==="ArrowLeft"?".listek-pred":".listek-dalsi");if(s){e.preventDefault();nacti(s.getAttribute("href"),false)}}});
 window.addEventListener("popstate",function(){if(JE.test(location.pathname))nacti(location.pathname,false);else schovej()});})();</script>`;
-  function stranka({ lang, adresa, jinaAdresa, titulek, popis, obrazek, obsah, listek }) {
-    const T = UI[lang], jiny = lang === "cs" ? "en" : "cs", S = T.stranky;
-    const cs = lang === "cs" ? adresa : jinaAdresa, en = lang === "en" ? adresa : jinaAdresa;
+  function stranka({ lang, alt, titulek, popis, obrazek, obsah, listek }) {
+    const T = UI[lang], S = T.stranky, adresa = alt[lang], predpona = lang === "cs" ? "" : "/en";   // obrázky leží v kořeni; anglická doména je servíruje i pro /it/
     return `<!doctype html>
 <html lang="${lang}">
 <head>
@@ -234,8 +242,7 @@ window.addEventListener("popstate",function(){if(JE.test(location.pathname))nact
 <title>${escHtml(titulek)}</title>
 <meta name="description" content="${escHtml(popis)}">
 <link rel="canonical" href="${WEB(adresa)}">
-<link rel="alternate" hreflang="cs" href="${WEB(cs)}">
-<link rel="alternate" hreflang="en" href="${WEB(en)}">
+${JAZYKY_WEBU.map(l => `<link rel="alternate" hreflang="${l}" href="${WEB(alt[l])}">`).join("\n")}
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="theme-color" content="#FBF9F4" media="(prefers-color-scheme: light)">
@@ -244,14 +251,14 @@ window.addEventListener("popstate",function(){if(JE.test(location.pathname))nact
 <meta property="og:url" content="${WEB(adresa)}">
 <meta property="og:title" content="${escHtml(titulek)}">
 <meta property="og:description" content="${escHtml(popis)}">
-<meta property="og:image" content="${WEB((lang === "en" ? "/en" : "") + obrazek.src)}">
+<meta property="og:image" content="${WEB(predpona + obrazek.src)}">
 <meta property="og:image:width" content="${obrazek.w}">
 <meta property="og:image:height" content="${obrazek.h}">
-<meta property="og:locale" content="${lang === "cs" ? "cs_CZ" : "en_GB"}">
+<meta property="og:locale" content="${OG[lang]}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${escHtml(titulek)}">
 <meta name="twitter:description" content="${escHtml(popis)}">
-<meta name="twitter:image" content="${WEB((lang === "en" ? "/en" : "") + obrazek.src)}">
+<meta name="twitter:image" content="${WEB(predpona + obrazek.src)}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="${fontyOdkaz}">
@@ -260,7 +267,7 @@ window.addEventListener("popstate",function(){if(JE.test(location.pathname))nact
 <body>
 <header class="hlava">
  <a class="domu" href="${domov[lang]}">${znak}<span>${escHtml(T.nazev)}</span></a>
- <a class="jinam" href="${WEB(jinaAdresa)}" hreflang="${jiny}" lang="${jiny}">${escHtml(UI[jiny].nazevJazyka)}</a>
+ <nav class="jinam" aria-label="${escHtml(T.jazykVolba)}">${JAZYKY_WEBU.map(l => l === lang ? `<b aria-current="true">${l.toUpperCase()}</b>` : `<a href="${WEB(alt[l])}" hreflang="${l}" lang="${l}" title="${escHtml(UI[l].nazevJazyka)}">${l.toUpperCase()}</a>`).join("")}</nav>
 </header>
 <main>
 ${obsah}
@@ -283,8 +290,8 @@ ${listek ? SKRIPT_LISTEK : ""}
   const obrazekWebu = lang => ({ src: NAHLED[lang], w: 1200, h: 630 });
   const vsechny = [];
 
-  for (const lang of ["cs", "en"]) {
-    const T = UI[lang], S = T.stranky, jiny = lang === "cs" ? "en" : "cs", razic = new Intl.Collator(lang);
+  for (const lang of JAZYKY_WEBU) {
+    const T = UI[lang], S = T.stranky, razic = new Intl.Collator(lang);
     const serazene = jazyky.slice().sort((a, b) => razic.compare(a[lang].nazev, b[lang].nazev));
     const dlazdice = seznam => `<ul class="mrizka">${seznam.map(j => `<li><a href="${adresy[lang][j.id]}"><b dir="auto" lang="${escHtml(j.kod || "")}">${escHtml(j[lang].pozdrav || j.pozdrav)}</b><span>${escHtml(j[lang].nazev)}</span></a>${tlacitkoZvuk(lang, j, true)}</li>`).join("")}</ul>`;
 
@@ -342,21 +349,22 @@ ${dlazdice(serazene)}`;
 </article>`;
       const titulek = S.titulek.replace("{n}", P.nazev) + " · " + T.nazev;
       const popis = `${pozdrav} ${P.vyslovnost ? T.vyslovnost.replace("{x}", P.vyslovnost) + ". " : ""}${P.fakt || ""}`.trim();
-      zapis(adresy[lang][j.id], stranka({ lang, adresa: adresy[lang][j.id], jinaAdresa: adresy[jiny][j.id], titulek, popis,
+      const alt = vse(l => adresy[l][j.id]);
+      zapis(adresy[lang][j.id], stranka({ lang, alt, titulek, popis,
         obrazek: { src: `/malby/${j.id}.jpg`, w: 800, h: 500 }, obsah: seznamHtml("h2") + "\n" + pozadi(listek, false), listek: true }));
-      vsechny.push([adresy[lang][j.id], adresy[jiny][j.id], lang]);
+      vsechny.push([adresy[lang][j.id], alt, lang]);
     });
 
     /* přehled všech jazyků s pozdravem (lístky se nad ním otevírají) */
-    zapis(prehled[lang], stranka({ lang, adresa: prehled[lang], jinaAdresa: prehled[jiny], titulek: titulekSeznamu,
+    zapis(prehled[lang], stranka({ lang, alt: prehled, titulek: titulekSeznamu,
       popis: S.vsechnyPopis, obrazek: obrazekWebu(lang), obsah: seznamHtml("h1") + "\n" + pozadi("", true), listek: true }));
-    vsechny.push([prehled[lang], prehled[jiny], lang]);
+    vsechny.push([prehled[lang], prehled, lang]);
 
     /* O datech: stejný obsah jako okno v aplikaci */
     const O = T.oDatech, datum = d => d ? new Date(d + "T12:00:00Z").toLocaleDateString(T.locale, { day: "numeric", month: "long", year: "numeric" }) : "–";
     const dosad = s => s.replace(/\{(\w+)\}/g, (_, k) => ({ g: cislo(lang, verze.g), n: cislo(lang, verze.n), a: cislo(lang, vsechnyJazyky.length),
       gdat: datum(verze.glottolog), pdat: datum(verze.podrobnosti), wdat: datum(verze.wikidata) })[k] ?? "");
-    zapis(oDatech[lang], stranka({ lang, adresa: oDatech[lang], jinaAdresa: oDatech[jiny], titulek: O.nadpis + " · " + T.nazev,
+    zapis(oDatech[lang], stranka({ lang, alt: oDatech, titulek: O.nadpis + " · " + T.nazev,
       popis: dosad(O.uvod), obrazek: obrazekWebu(lang),
       obsah: `<nav class="drobky" aria-label="${escHtml(S.drobky)}"><a href="${domov[lang]}">${escHtml(T.nazev)}</a> › ${escHtml(O.odkaz)}</nav>
 <div class="text">
@@ -366,11 +374,11 @@ ${O.oddily.map(o => `<h2>${escHtml(dosad(o.h))}</h2>\n${o.p.map(p => `<p>${escHt
 <h2>${escHtml(O.verzeNadpis)}</h2>
 <table><tbody>${O.verze.map(v => `<tr>${v.map(b => `<td>${escHtml(dosad(b))}</td>`).join("")}</tr>`).join("")}</tbody></table>
 </div>` }));
-    vsechny.push([oDatech[lang], oDatech[jiny], lang]);
+    vsechny.push([oDatech[lang], oDatech, lang]);
 
     /* podrobný návod: stejný text jako okno v aplikaci */
     const N = T.navod;
-    zapis(navodA[lang], stranka({ lang, adresa: navodA[lang], jinaAdresa: navodA[jiny], titulek: N.nadpis + " · " + T.nazev,
+    zapis(navodA[lang], stranka({ lang, alt: navodA, titulek: N.nadpis + " · " + T.nazev,
       popis: N.uvod, obrazek: obrazekWebu(lang),
       obsah: `<nav class="drobky" aria-label="${escHtml(S.drobky)}"><a href="${domov[lang]}">${escHtml(T.nazev)}</a> › ${escHtml(N.nadpis)}</nav>
 <div class="text">
@@ -382,15 +390,15 @@ ${N.oddily.map(o => `<h2>${escHtml(o.h)}</h2>\n${o.p.map(p => `<p>${escHtml(p)}<
 <div class="tajemstvi-obsah"><h2>${escHtml(N.tajemstvi.nadpis)}</h2><p>${escHtml(N.tajemstvi.uvod)}</p>
 <dl>${N.tajemstvi.polozky.map(x => `<dt>${escHtml(x[0])}</dt><dd>${escHtml(x[1])}</dd>`).join("")}</dl></div></details>
 </div>` }));
-    vsechny.push([navodA[lang], navodA[jiny], lang]);
+    vsechny.push([navodA[lang], navodA, lang]);
 
     /* vitalita jazyků: stejný obsah jako stránka Vitalita v aplikaci (čísla z dat, texty T.vitStranka) */
     {
       const V = T.vitStranka, N = glottolog.body.length, vit = i => { const v = podrobnosti.radky[i][0]; return v == null ? -1 : v; };
       const PORADI = [0, 1, 2, 3, 4, 5, 6, -1], nazevSt = v => v < 0 ? T.vitalitaBezUdaje : T.aes[v][0];
-      const pr = (n, z) => { const p = 100 * n / z; return cislo(lang, p < 10 ? Math.round(p * 10) / 10 : Math.round(p), p < 10 ? 1 : 0) + (lang === "en" ? "%" : "\u00A0%"); };
+      const pr = (n, z) => { const p = 100 * n / z; return cislo(lang, p < 10 ? Math.round(p * 10) / 10 : Math.round(p), p < 10 ? 1 : 0) + (lang === "cs" ? "\u00A0%" : "%"); };
       const dosadV = (t, par) => t.replace(/\{(\w+)\}/g, (m, k) => par[k] ?? m);
-      const jmenoB = i => { const n = (lang === "cs" && podrobnosti.radky[i][9]) || glottolog.body[i][0]; return n.charAt(0).toUpperCase() + n.slice(1); };
+      const jmenoB = i => { const n = jmenoTecky(i, lang); return n.charAt(0).toUpperCase() + n.slice(1); };
       const pocty = {}, oblasti = glottolog.makro.map(() => ({ n: 0, v: {} })), rodiny = new Map();
       const rodinyCs = JSON.parse(fs.readFileSync(path.join(KOREN, "data/glottolog-families.cs.json"), "utf8"));
       const vyrazene = new Set(["Isolate", "Sign Language", ...BEZ_RODU]);
@@ -447,7 +455,7 @@ ${N.oddily.map(o => `<h2>${escHtml(o.h)}</h2>\n${o.p.map(p => `<p>${escHtml(p)}<
 ${tabulka(oblasti.map((o, k) => ({ nazev: T.makro[glottolog.makro[k]] || glottolog.makro[k], n: o.n, v: o.v })).filter(r => r.n), V.oblastiSloupce)}
 <h2>${escHtml(V.rodinyH)}</h2>
 <p>${escHtml(V.rodinyUvod.split(/(?<=\.) /)[0])}</p>
-${tabulka([...rodiny.entries()].sort((a, b) => b[1].n - a[1].n).slice(0, 15).map(([rn, r]) => { const n = lang === "cs" ? (rodinyCs[rn] || rn) : rn; return { nazev: n.charAt(0).toUpperCase() + n.slice(1), n: r.n, v: r.v }; }), V.rodinySloupce)}
+${tabulka([...rodiny.entries()].sort((a, b) => b[1].n - a[1].n).slice(0, 15).map(([rn, r]) => { const n = lang === "cs" ? (rodinyCs[rn] || rn) : (rodinyJ[lang] && rodinyJ[lang][rn]) || rn; return { nazev: n.charAt(0).toUpperCase() + n.slice(1), n: r.n, v: r.v }; }), V.rodinySloupce)}
 <h2>${escHtml(V.atlasH)}</h2>
 <ul class="vs-jazyky">${atlasOhr.map(r => `<li>${bod(r.v)}<a href="${adresy[lang][r.j.id]}">${escHtml(r.j[lang].nazev)}</a> <small>${escHtml(nazevSt(r.v))}</small></li>`).join("")}</ul>
 <h2>${escHtml(V.probouzeneH)}</h2>
@@ -458,9 +466,9 @@ ${pribeh ? `<p><a href="${civAdresa(pribeh, lang)}">${escHtml(T.pribehy.stitek)}
 ${V.metodika.map(p => `<p>${escHtml(dosadV(p, { n: cislo(lang, pocty[-1] || 0), d: verzeD }))}</p>`).join("\n")}
 <ul class="vs-zdroje">${V.zdroje.map(z => `<li>${escHtml(z)}</li>`).join("")}</ul>
 </div>`;
-      zapis(vitalitaA[lang], stranka({ lang, adresa: vitalitaA[lang], jinaAdresa: vitalitaA[jiny], titulek: V.nadpis + " · " + T.nazev,
+      zapis(vitalitaA[lang], stranka({ lang, alt: vitalitaA, titulek: V.nadpis + " · " + T.nazev,
         popis: dosadV(V.souhrn, { n: cislo(lang, ohr), p: pr(ohr, N) }) + " " + V.podtitul, obrazek: obrazekWebu(lang), obsah: obsahV }));
-      vsechny.push([vitalitaA[lang], vitalitaA[jiny], lang]);
+      vsechny.push([vitalitaA[lang], vitalitaA, lang]);
     }
 
     /* kalendář jazykových dnů: stejný seznam jako okno v aplikaci, odkazy na stránky jazyků */
@@ -469,20 +477,20 @@ ${V.metodika.map(p => `<p>${escHtml(dosadV(p, { n: cislo(lang, pocty[-1] || 0), 
       return new Date(rok, m, 1 + (wd - p1.getDay() + 7) % 7 + (n - 1) * 7); };
     const radky = Object.keys(dny).filter(k => k !== "_pozn").concat(["09-26"]).map(k => ({ k, pohyb: !/^\d\d-\d\d$/.test(k),
       d: /^\d\d-\d\d$/.test(k) ? new Date(rok, +k.slice(0, 2) - 1, +k.slice(3)) : denPohyblivy(k) })).sort((a, b) => a.d - b.d);
-    const nazevDne = (k, d) => k.pohyb ? S.druhaSobota : lang === "cs" ? d.getDate() + ". " + (d.getMonth() + 1) + "." : d.toLocaleDateString("en-GB", { day: "numeric", month: "short" });
+    const nazevDne = (k, d) => k.pohyb ? S.druhaSobota : lang === "cs" ? d.getDate() + ". " + (d.getMonth() + 1) + "." : d.toLocaleDateString(T.locale, { day: "numeric", month: "short" });
     let mes = -1, html = "";
     for (const x of radky) {
       if (x.d.getMonth() !== mes) { if (mes >= 0) html += "</ul>\n"; mes = x.d.getMonth(); html += `<h2>${escHtml(new Date(rok, mes, 1).toLocaleDateString(T.locale, { month: "long" }))}</h2>\n<ul class="kal">`; }
       let odkaz, jmeno, pozdrav = "", lg = "", proc;
       if (x.k === "09-26") { odkaz = domov[lang] + "?den-jazyku"; jmeno = T.denJazykuNadpis; proc = K.edl; }
       else { const s2 = dny[x.k]; proc = s2[lang];
-        if (s2.kod) { const b2 = glottolog.body.find(b => b[6] === s2.kod); odkaz = domov[lang] + "#" + s2.kod; jmeno = (lang === "cs" && podrobnosti.radky[glottolog.body.indexOf(b2)][9]) || b2[0]; pozdrav = s2.pozdrav; lg = s2.jazyk || ""; }
+        if (s2.kod) { const b2 = glottolog.body.find(b => b[6] === s2.kod); odkaz = domov[lang] + "#" + s2.kod; jmeno = jmenoTecky(glottolog.body.indexOf(b2), lang); pozdrav = s2.pozdrav; lg = s2.jazyk || ""; }
         else { const j = vsechnyJazyky.find(j => j.id === s2.id); odkaz = adresy[lang][j.id] || domov[lang] + "#" + j.id; jmeno = j[lang].nazev; pozdrav = j[lang].pozdrav || j.pozdrav; lg = j.kod || ""; } }
       if (jmeno) jmeno = jmeno.charAt(0).toUpperCase() + jmeno.slice(1);
       html += `<li><span class="kal-d">${escHtml(nazevDne(x, x.d))}</span><span><a href="${odkaz}">${pozdrav ? `<b dir="auto" lang="${escHtml(lg)}">${escHtml(pozdrav)}</b> ` : ""}${escHtml(jmeno)}</a><br><span class="kal-p">${escHtml(proc)}</span></span></li>\n`;
     }
     html += "</ul>";
-    zapis(kalendarA[lang], stranka({ lang, adresa: kalendarA[lang], jinaAdresa: kalendarA[jiny], titulek: K.nadpis + " · " + T.nazev,
+    zapis(kalendarA[lang], stranka({ lang, alt: kalendarA, titulek: K.nadpis + " · " + T.nazev,
       popis: K.uvod, obrazek: obrazekWebu(lang),
       obsah: `<nav class="drobky" aria-label="${escHtml(S.drobky)}"><a href="${domov[lang]}">${escHtml(T.nazev)}</a> › ${escHtml(K.nadpis)}</nav>
 <div class="text">
@@ -491,19 +499,19 @@ ${V.metodika.map(p => `<p>${escHtml(dosadV(p, { n: cislo(lang, pocty[-1] || 0), 
 ${html}
 <p>${escHtml(K.ostatni)}</p>
 </div>` }));
-    vsechny.push([kalendarA[lang], kalendarA[jiny], lang]);
+    vsechny.push([kalendarA[lang], kalendarA, lang]);
 
     /* jazyky starověku: stránky o civilizacích, stejná šablona (src/starovek.js) jako okno v aplikaci */
     for (const c of starovek.civilizace) {
-      const adresa = civAdresa(c, lang), jina = civAdresa(c, jiny), L = c[lang], Us = T.starovek, Uk = c.sekce === "pribehy" ? T.pribehy : T.starovek;
+      const adresa = civAdresa(c, lang), alt = vse(l => civAdresa(c, l)), L = c[lang], Us = T.starovek, Uk = c.sekce === "pribehy" ? T.pribehy : T.starovek;
       const tecka = k => { const i = bodPodleKodu.get(k); if (i === undefined) return null;
-        const n = (lang === "cs" && podrobnosti.radky[i][9]) || glottolog.body[i][0]; return { nazev: n.charAt(0).toUpperCase() + n.slice(1), href: domov[lang] + "#" + k }; };
+        const n = jmenoTecky(i, lang); return { nazev: n.charAt(0).toUpperCase() + n.slice(1), href: domov[lang] + "#" + k }; };
       const clanek = STAROVEK.html(c, lang, { U: Us, foto: k => `/starovek/${c.id}/${c.fotky[k].soubor}`, fotoMala: k => `/starovek/${c.id}/${k}-720.jpg`,
         malba: `<img src="/starovek/${c.id}/malba.jpg" alt="" width="1200" height="630">`, tecka,
         vsechny: starovek.civilizace, dalsi: starovek.civilizace.filter(x => (x.sekce || "") === (c.sekce || "")), odkazCiv: x => civAdresa(x, lang),
         odkazMapa: id => domov[lang] + "#mapa-" + id, cesty: CESTY_SLOV, odkazCesta: id => domov[lang] + "#cesta-" + id });
       const pisma = STAROVEK.odkazPisma(c);
-      zapis(adresa, stranka({ lang, adresa, jinaAdresa: jina, titulek: (c.prehled || c.sekce ? L.nazev : Us.titulek.replace("{n}", L.nazev)) + " · " + T.nazev, popis: L.perex,
+      zapis(adresa, stranka({ lang, alt, titulek: (c.prehled || c.sekce ? L.nazev : Us.titulek.replace("{n}", L.nazev)) + " · " + T.nazev, popis: L.perex,
         obrazek: { src: `/starovek/${c.id}/malba.jpg`, w: 1200, h: 630 },
         obsah: `${pisma ? `<link rel="stylesheet" href="${escHtml(pisma)}">` : ""}<style>${stylStarovek}
 main{max-width:1100px} .civ{border-radius:18px; overflow:hidden; box-shadow:0 30px 70px -40px rgba(25,32,60,.55); border:1px solid var(--linka)}
@@ -511,14 +519,14 @@ main{max-width:1100px} .civ{border-radius:18px; overflow:hidden; box-shadow:0 30
 <nav class="drobky" aria-label="${escHtml(S.drobky)}"><a href="${domov[lang]}">${escHtml(T.nazev)}</a> › <a href="${sekceA(c)[lang]}">${escHtml(Uk.stitek)}</a> › ${escHtml(L.nazev)}</nav>
 ${clanek}
 <p><a class="tl" href="${domov[lang]}#${c.adresa[lang]}">${escHtml(Us.zpet)}</a></p>` }));
-      vsechny.push([adresa, jina, lang]);
+      vsechny.push([adresa, alt, lang]);
     }
     /* rozcestníky Jazyky starověku (/starovek/, /en/ancient/) a Příběhy jazyků (/pribehy/, /en/stories/) */
     for (const [sekce, Us, A] of [["", T.starovek, starovekA], ["pribehy", T.pribehy, pribehyA]]) {
       const stranky = starovek.civilizace.filter(c => (c.sekce || "") === sekce);
       if (!stranky.length) continue;
       const karty = stranky.map(c => `<li><a class="civ-rozcestnik" href="${civAdresa(c, lang)}"><img src="/starovek/${c.id}/malba.jpg" alt="" width="1200" height="630" loading="lazy"><b>${escHtml(c[lang].nazev)}</b><small>${escHtml(c[lang].podtitul)}</small><span>${escHtml(c[lang].perex)}</span></a></li>`).join("");
-      zapis(A[lang], stranka({ lang, adresa: A[lang], jinaAdresa: A[jiny], titulek: Us.stitek + " · " + T.nazev, popis: Us.uvod,
+      zapis(A[lang], stranka({ lang, alt: A, titulek: Us.stitek + " · " + T.nazev, popis: Us.uvod,
         obrazek: { src: `/starovek/${stranky[0].id}/malba.jpg`, w: 1200, h: 630 },
         obsah: `<style>.civ-rozcestniky{list-style:none; margin:18px 0 0; padding:0; display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:16px}
 .civ-rozcestnik{display:flex; flex-direction:column; gap:4px; height:100%; padding:0 0 16px; border-radius:16px; overflow:hidden; background:var(--karta); border:1px solid var(--linka); color:inherit; text-decoration:none}
@@ -528,7 +536,7 @@ ${clanek}
 <h1>${escHtml(Us.stitek)}</h1>
 <p class="fakt">${escHtml(Us.uvod)}</p>
 <ul class="civ-rozcestniky">${karty}</ul>` }));
-      vsechny.push([A[lang], A[jiny], lang]); }
+      vsechny.push([A[lang], A, lang]); }
   }
   return { adresy, prehled, stranky: vsechny };
 }

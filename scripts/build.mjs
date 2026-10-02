@@ -226,17 +226,35 @@ fs.writeFileSync(path.join(KOREN, "dist", souborSkriptu), skriptWebu);
 fs.writeFileSync(path.join(KOREN, "dist/index.html"), cs.dokument);
 fs.writeFileSync(path.join(KOREN, "dist/en/index.html"), en.dokument);
 for (const l of DALSI) fs.writeFileSync(path.join(KOREN, `dist/${l}/index.html`), dalsi[l].dokument);
-for (const d of ["starovek", "en/ancient", "pribehy", "en/stories"]) fs.rmSync(path.join(KOREN, "dist", d), { recursive: true, force: true });   // stránky o civilizacích (fotky se zkopírují znovu)
+for (const d of ["starovek", "en/ancient", "pribehy", "en/stories", "it/antichita", "it/storie"]) fs.rmSync(path.join(KOREN, "dist", d), { recursive: true, force: true });   // stránky o civilizacích (fotky se zkopírují znovu)
 fs.cpSync(path.join(KOREN, "static"), path.join(KOREN, "dist"), { recursive: true });   // ikonky, náhledy, fotky civilizací
 
 // samostatné stránky jazyků, přehled a O datech (scripts/stranky.mjs); staré složky pryč, kdyby se jazyk přejmenoval
-for (const d of ["jazyk", "jazyky", "o-datech", "kalendar-jazyku", "navod", "en/language", "en/languages", "en/about-data", "en/language-days", "en/guide"]) fs.rmSync(path.join(KOREN, "dist", d), { recursive: true, force: true });
+for (const d of ["jazyk", "jazyky", "o-datech", "kalendar-jazyku", "navod", "en/language", "en/languages", "en/about-data", "en/language-days", "en/guide",
+  "it/lingua", "it/lingue", "it/sui-dati", "it/giornate-delle-lingue", "it/guida", "it/vitalita"]) fs.rmSync(path.join(KOREN, "dist", d), { recursive: true, force: true });
 const polozekSeznamu = JAZYKY.length + glottolog.body.length - new Set(glottolog.body.map(b => b[5]).filter(Boolean)).size;
-const { stranky } = vyrobStranky({ KOREN, WEB, NAHLED, UI, jazyky: jazykyAtlasu, glottolog, podrobnosti, nazvyZemi, ikona, fontyOdkaz: FONTY,
+/* statické stránky dalších jazyků: data {cs, en} doplněná o chybějící překlad z angličtiny (stejně jako doplnJazyky v app.js) */
+const doplnJ = o => {
+  if (Array.isArray(o)) { o.forEach(doplnJ); return o; }
+  if (!o || typeof o !== "object") return o;
+  const jaz = "cs" in o && "en" in o;
+  if (jaz) for (const l of DALSI) o[l] = spoj(o.en, o[l]);
+  for (const k of Object.keys(o)) if (!(jaz && JAZYKY_WEBU.includes(k))) doplnJ(o[k]);
+  return o;
+};
+const { stranky } = vyrobStranky({ KOREN, WEB, NAHLED, UI, JAZYKY_WEBU,
+  jmenoTecky: (i, lang) => (lang === "cs" ? podrobnosti.radky[i][9] : NAZVY[lang] ? NAZVY[lang].jazyky[glottolog.body[i][6]] : "") || glottolog.body[i][0],
+  rodinyJ: RODINY,
+  jazyky: jazykyAtlasu.map(j => ({ ...j, ...Object.fromEntries(DALSI.map(l => [l, spoj(j.en, j[l])])) })), glottolog,
+  podrobnosti: { ...podrobnosti, staty: { ...podrobnosti.staty, ...Object.fromEntries(DALSI.map(l => [l, NAZVY[l].staty])) },
+    pisma: { ...podrobnosti.pisma, ...Object.fromEntries(DALSI.map(l => [l, { ...podrobnosti.pisma.en, ...NAZVY[l].pisma }])) } },
+  nazvyZemi: { ...nazvyZemi, ...Object.fromEntries(DALSI.map(l => [l, NAZVY[l].zeme])) }, ikona, fontyOdkaz: FONTY,
   verze: { g: glottolog.body.length, n: polozekSeznamu, glottolog: glottolog.stazeno, podrobnosti: podrobnosti.stazeno, wikidata: json("data/wikidata.json").stazeno },
-  dny: json("data/dny-jazyku.json"), starovek: STAROVEK, sablonaStarovek: cti("src/starovek.js"), stylStarovek: cti("src/starovek.css") });
+  dny: doplnJ(json("data/dny-jazyku.json")), starovek: doplnJ(structuredClone(STAROVEK)), cestySlov: doplnJ(json("data/cesty-slov.json").slova),
+  sablonaStarovek: cti("src/starovek.js"), stylStarovek: cti("src/starovek.css") });
 
-// pro vyhledávače: obě jazykové verze a jejich vzájemné odkazy
+// pro vyhledávače: všechny jazykové verze a jejich vzájemné odkazy
+const UVODY = { cs: "/", en: "/en/", ...Object.fromEntries(DALSI.map(x => [x, `/${x}/`])) };
 const dnes = process.env.DATUM_STAVU || new Date().toISOString().slice(0, 10);
 for (const l of ["cs", "en"]) {
   const d = path.join(KOREN, l === "cs" ? "dist" : "dist/en");
@@ -251,12 +269,11 @@ for (const l of ["cs", "en"]) {
   fs.writeFileSync(path.join(d, "robots.txt"), `User-agent: *\nAllow: /\n\nSitemap: ${DOMENA[l]}/sitemap.xml\n`);
   fs.writeFileSync(path.join(d, "sitemap.xml"),
     `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n` +
-    [["/", "/en/", "cs"], ["/en/", "/", "en"]].concat(l === "en" ? DALSI.map(x => [`/${x}/`, "/", "en"]) : []).concat(stranky).filter(x => x[2] === l).map(([u, jina]) => {
-      const uvod = u === "/" || u === "/en/" || DALSI.some(x => u === `/${x}/`);
-      const cs = l === "cs" ? u : jina, en = l === "en" && !uvod ? u : uvod ? "/en/" : jina;
-      const alt = uvod ? [["cs", "/"], ["en", "/en/"]].concat(DALSI.map(x => [x, `/${x}/`])) : [["cs", cs], ["en", en]];
-      return `  <url>\n    <loc>${WEB(u)}</loc>\n    <lastmod>${dnes}</lastmod>\n` +
-        alt.map(([h, a]) => `    <xhtml:link rel="alternate" hreflang="${h}" href="${WEB(a)}"/>\n`).join("") + `  </url>\n`; }).join("") +
+    /* stránky další jazykové verze (/it/…) leží na anglické doméně, proto jsou v její mapě */
+    [["/", UVODY, "cs"], ["/en/", UVODY, "en"]].concat(DALSI.map(x => [`/${x}/`, UVODY, x])).concat(stranky)
+      .filter(x => x[2] === l || (l === "en" && DALSI.includes(x[2]))).map(([u, alt]) =>
+        `  <url>\n    <loc>${WEB(u)}</loc>\n    <lastmod>${dnes}</lastmod>\n` +
+        JAZYKY_WEBU.map(h => `    <xhtml:link rel="alternate" hreflang="${h}" href="${WEB(alt[h])}"/>\n`).join("") + `  </url>\n`).join("") +
     `</urlset>\n`);
 }
 // vlastní stránka 404 (Netlify ji vrátí u neexistující adresy), dvojjazyčná a bez skriptů
