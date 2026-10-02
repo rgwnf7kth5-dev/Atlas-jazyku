@@ -61,9 +61,20 @@ v build.mjs, `DOMENY.it` a `korenVerze` v app.js). V záhlaví je místo odkazu 
   teček (`PD.nazvy.it`, index → jméno; bez jména anglicky z Glottologu), státy, státy na mapě (Kosovo, Severní Kypr, Somaliland
   ručně), písma. Rodiny `data/glottolog-families.it.json` (~40 největších), větve `data/glottolog-branches.it.json` (~170
   nejčastějších na cestách jazyků atlasu; `prekladVetve()` v app.js, `PD.vetveJ`). Validace hlídá, že rodiny a větve v Glottologu jsou.
-- **Zatím anglicky** (s poznámkou v textu): stránky Jazyků starověku a Příběhů, putování, cesty slov, vymyšlené jazyky, statické
-  stránky jazyků (odkaz „Lingue con scheda dettagliata“ vede na anglické `/en/languages/`). Italské statické stránky `scripts/stranky.mjs`
-  zatím nevyrábí. Wikidata italská jména nemají (stahují se v Actions jen cs/en), Wikipedie se v italské verzi hledá italsky.
+- **Druhá etapa (2. 10. 2026, uživatel: „přelož všechno“):** přeloženo i 31 stránek Jazyků starověku a Příběhů (`it` v `data/starovek.json`,
+  `adresa.it` např. `antico-egitto`, `il-te` – ne `te`, to je kód telugštiny; popisky fotek `fotky[k].it`), 11 putování (`adresa.it`
+  `viaggio-ceco`…), cesty slov a vymyšlené jazyky. Překládalo osm pomocných agentů podle zadání (věrně, bez změny tvrzení, znaky písem,
+  přepisy a bibliografie beze změny), glosy ukázkových vět (oddíl `veta`, pole `slova`) doplněny zvlášť; pak čtyři nezávislé kontroly
+  (68 oprav: mj. „non è necessariamente imparentata“ u čaje – byl obrácený smysl, Tavolozza di Narmer, bustrofedo, Mikulčice: nejstarší
+  kamenné kostely ~800, Genji „figlio dell’imperatore“, ge’ez z nedoložené mateřské řeči, „alfabeto albano“ = kavkazské). Názvosloví:
+  české národní obrození = **„Rinascita nazionale (ceca)“, ne „Risorgimento“** (to je italské sjednocení); stupně UNESCO jako v rozhraní
+  („decisamente in pericolo“); „Lungo Computo“. Validace hlídá u stránek s `it` stejné oddíly jako `en`, `adresa.it` a popisky fotek.
+- **Italské statické stránky** (`scripts/stranky.mjs` je od 2. 10. 2026 pro libovolné jazyky `JAZYKY_WEBU`): `/it/lingua/<nome>/`,
+  `/it/lingue/`, `/it/sui-dati/`, `/it/giornate-delle-lingue/`, `/it/guida/`, `/it/vitalita/`, `/it/antichita/<…>/`, `/it/storie/<…>/`;
+  záhlaví má přepínač CS · EN · IT, hreflang všech tří verzí, sitemapa anglické domény obsahuje i `/it/`. Build stránkám předává data
+  doplněná angličtinou (`doplnJ`), jména teček (`jmenoTecky`) a rodiny (`rodinyJ`). Obrázky (malby, fotky, náhled) leží v kořeni a
+  og:image italských stránek míří na anglickou doménu bez `/it/`. Wikidata italská jména nemají (stahují se v Actions jen cs/en),
+  Wikipedie se v italské verzi hledá italsky.
 - **Chytré hledání** zná italská slova (`DOTAZ_SPUSTE`, předložky del/della/nel…, `DOTAZ_VYPLN`, „dove“) a italské názvy
   rodin, větví, států a jazyků; „lingue del Brasile“, „lingue slave“, „dove si parla il persiano“ fungují. AI odpovídá jazykem otázky.
 - Obrázek pro sdílení je zatím anglický (`NAHLED.it = NAHLED.en`, kopie v `dist/it/`), og:locale `it_IT`, hreflang všech tří

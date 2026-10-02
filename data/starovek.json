@@ -1582,7 +1582,7 @@
         "ukazka": null,
         "civ": "egypt",
         "jistota": "jista",
-        "pozn": "Il più antico alfabeto: segni presi in prestito dai geroglifici, ciascuno dei quali scrive solo la prima consonante del proprio nome. Iscrizioni dal Sinai (Serabit el-Khadim), dall’Egitto (Wadi el-Hol) e da Canaan; la datazione delle più antiche è controversa (ca. 1850 o anche solo 1550 a.C.)."
+        "pozn": "Il più antico alfabeto: segni presi in prestito dai geroglifici, ciascuno dei quali scrive solo la prima consonante del proprio nome. Iscrizioni dal Sinai (Serabit el-Khadim), dall’Egitto (Wadi el-Hol) e da Canaan; la datazione delle più antiche è controversa (ca. 1850 a.C. o forse solo verso il 1550 a.C.)."
        },
        {
         "id": "ugaritske",
@@ -2010,7 +2010,7 @@
         "ukazka": "𐘀𐘁𐘂𐘃",
         "civ": "recko",
         "jistota": "jista",
-        "pozn": "La scrittura sillabica di Creta minoica. I segni si possono vocalizzare a grandi linee in base alla lineare B, ma la lingua è sconosciuta. A Creta si usava accanto a essa la scrittura geroglifica cretese."
+        "pozn": "La scrittura sillabica di Creta minoica. I segni si possono leggere a grandi linee in base ai valori della lineare B, ma la lingua è sconosciuta. A Creta si usava accanto a essa la scrittura geroglifica cretese."
        },
        {
         "id": "linearniB",
@@ -2857,7 +2857,7 @@
     "nazev": "Glossario della scrittura",
     "stitek": "Lingue dell’antichità · panoramica",
     "podtitul": "Tipi di scrittura, segni, direzione di scrittura e le discipline che li studiano",
-    "perex": "Abjad, abugida, determinativo, bustrofedico, palinsesto: le pagine sulle scritture antiche non possono fare a meno dei termini tecnici. Questo glossario li spiega con esempi, presi per lo più dalle iscrizioni e dai manoscritti descritti nelle pagine sulle singole civiltà.",
+    "perex": "Abjad, abugida, determinativo, bustrofedo, palinsesto: le pagine sulle scritture antiche non possono fare a meno dei termini tecnici. Questo glossario li spiega con esempi, presi per lo più dalle iscrizioni e dai manoscritti descritti nelle pagine sulle singole civiltà.",
     "fakta": [
      [
       "Le scritture più antiche",
@@ -2917,7 +2917,7 @@
        ],
        [
         "Alfabeto",
-        "Scrittura in cui consonanti e vocali si scrivono allo stesso modo con lettere distinte e di pari rango. La prima scrittura di questo tipo nacque entro l’VIII secolo a.C., quando i greci adottarono l’alfabeto fenicio e usarono le lettere per consonanti assenti in greco per scrivere le vocali. Dall’alfabeto greco discendono, tra gli altri, la scrittura etrusca e attraverso di essa l’alfabeto latino, nonché le scritture copta e gotica e il cirillico. Nell’uso comune anche la scrittura fenicia si chiama alfabeto; nel senso tecnico più stretto è un abjad.",
+        "Scrittura in cui sia le consonanti sia le vocali si scrivono con lettere distinte e di pari rango. La prima scrittura di questo tipo nacque entro l’VIII secolo a.C., quando i greci adottarono l’alfabeto fenicio e usarono le lettere per consonanti assenti in greco per scrivere le vocali. Dall’alfabeto greco discendono, tra gli altri, la scrittura etrusca e attraverso di essa l’alfabeto latino, nonché le scritture copta e gotica e il cirillico. Nell’uso comune anche la scrittura fenicia si chiama alfabeto; nel senso tecnico più stretto è un abjad.",
         "Il fenicio ʾalp 𐤀 divenne l’alfa greca (Α), he divenne epsilon (Ε), ʿain omicron (Ο)."
        ],
        [
@@ -2965,7 +2965,7 @@
        [
         "Principio del rebus",
         "Uso di un segno per una parola che suona uguale o simile alla parola che il segno raffigurava in origine. È così che i segni pittografici diventano fonogrammi; su questo passaggio poggia la componente fonetica della scrittura cuneiforme, egiziana e cinese.",
-        "Il segno sumerico per la freccia (ti) serviva anche per til “vita”. Il nome del re Narmer è scritto sulla sua tavoletta con i segni del pesce gatto (nꜥr) e dello scalpello (mr). L’immagine cinese del frumento 來 passò a indicare la parola di suono simile “venire”."
+        "Il segno sumerico per la freccia (ti) serviva anche per til “vita”. Il nome del re Narmer è scritto sulla sua tavolozza con i segni del pesce gatto (nꜥr) e dello scalpello (mr). L’immagine cinese del frumento 來 passò a indicare la parola di suono simile “venire”."
        ],
        [
         "Acrofonia",
@@ -3024,7 +3024,7 @@
         "I geroglifici egiziani si scrivevano per lo più da destra a sinistra, ma anche da sinistra a destra e in colonne; la direzione si riconosce dalle figure di persone e animali, rivolte verso l’inizio della riga."
        ],
        [
-        "Bustrofedico",
+        "Bustrofedo",
         "Alternanza della direzione da una riga all’altra: una riga da sinistra a destra, la successiva da destra a sinistra. Il nome greco significa “come gira il bue nell’aratura”. Nelle righe invertite anche le singole lettere sono spesso speculari.",
         "Il codice di leggi di Gortina a Creta (V sec. a.C.), l’iscrizione del Lapis Niger nel Foro Romano, alcune iscrizioni sudarabiche. Anche le righe delle iscrizioni geroglifiche luvie si alternano."
        ],
@@ -3067,7 +3067,7 @@
        ],
        [
         "Paleografia",
-        "Studio delle scritture antiche a mano: l’evoluzione delle forme delle lettere, le abbreviazioni e le consuetudini degli scribi. Permette di leggere un manoscritto e di stimare dalla sua scrittura quando e dove sia stato scritto.",
+        "Studio delle antiche scritture a mano: l’evoluzione delle forme delle lettere, le abbreviazioni e le consuetudini degli scribi. Permette di leggere un manoscritto e di stimare dalla sua scrittura quando e dove sia stato scritto.",
         "Il libro di lino etrusco (Liber linteus) è datato in base alla scrittura al 250 a.C. circa; la datazione al radiocarbonio indica un lino più antico."
        ],
        [
@@ -3083,7 +3083,7 @@
        [
         "Decifrazione",
         "Stabilire come si leggono i segni di una scrittura sconosciuta e comprendere la lingua che registrano. Le due cose non vanno necessariamente insieme: una scrittura può essere leggibile mentre la sua lingua è sconosciuta, o viceversa.",
-        "La lineare B fu decifrata nel 1952 da Michael Ventris; si scoprì che registrava il greco. Le tavolette ittite si potevano leggere perché il cuneiforme era noto, ma la lingua fu compresa solo da Bedřich Hrozný (1915). La lineare A si può vocalizzare a grandi linee, ma la sua lingua è sconosciuta. La scrittura dell’Indo resta indecifrata."
+        "La lineare B fu decifrata nel 1952 da Michael Ventris; si scoprì che registrava il greco. Le tavolette ittite si potevano leggere perché il cuneiforme era noto, ma la lingua fu compresa solo da Bedřich Hrozný (1915). La lineare A si può leggere a grandi linee, ma la sua lingua è sconosciuta. La scrittura dell’Indo resta indecifrata."
        ],
        [
         "Tavoletta d’argilla",
@@ -4349,7 +4349,7 @@
      "zdroj": "https://commons.wikimedia.org/wiki/File:Narmer_palette_(obverse).jpg",
      "cs": "Narmerova paleta (asi 3100 př. n. l.), jeden z nejstarších dokladů egyptského písma: jméno krále nahoře je zapsané znaky sumce a dláta.",
      "en": "The Narmer Palette (c. 3100 BCE), one of the earliest records of Egyptian writing: the king's name at the top is written with the signs of a catfish and a chisel.",
-     "it": "La Tavoletta di Narmer (ca. 3100 a.C.), una delle più antiche testimonianze della scrittura egiziana: il nome del re, in alto, è scritto con i segni del pesce gatto e dello scalpello."
+     "it": "La Tavolozza di Narmer (ca. 3100 a.C.), una delle più antiche testimonianze della scrittura egiziana: il nome del re, in alto, è scritto con i segni del pesce gatto e dello scalpello."
     },
     "pisar": {
      "soubor": "pisar.jpg",
@@ -5557,7 +5557,7 @@
       "typ": "text",
       "h": "Le testimonianze più antiche",
       "p": [
-       "La scrittura egiziana compare alla fine del IV millennio a.C., all’incirca nello stesso periodo della scrittura cuneiforme in Mesopotamia. Tra gli esempi più antichi vi sono le etichette della tomba U-j ad Abido e la Tavoletta di Narmer, sulla quale il nome del re è scritto con due segni: un pesce gatto (nꜥr) e uno scalpello (mr).",
+       "La scrittura egiziana compare alla fine del IV millennio a.C., all’incirca nello stesso periodo della scrittura cuneiforme in Mesopotamia. Tra gli esempi più antichi vi sono le etichette della tomba U-j ad Abido e la Tavolozza di Narmer, sulla quale il nome del re è scritto con due segni: un pesce gatto (nꜥr) e uno scalpello (mr).",
        "Se gli egizi abbiano preso l’idea della scrittura dalla Mesopotamia o l’abbiano inventata da sé, non è stabilito; i segni e il modo di scrivere sono comunque loro."
       ]
      },
@@ -5866,7 +5866,7 @@
        ],
        [
         "ca. 3100 a.C.",
-        "Unificazione dell’Egitto; la Tavoletta di Narmer."
+        "Unificazione dell’Egitto; la Tavolozza di Narmer."
        ],
        [
         "XXVI sec. a.C.",
@@ -6057,7 +6057,7 @@
      "zdroj": "https://commons.wikimedia.org/wiki/File:Glazed_(originally_blue)_door_plaque_with_boss._The_Elamite_cuneiform_inscription_reads_%22Palace_of_Untash-Napirisha,_King_of_Elam%22._13th_centiury_BCE._From_Choga_Zanbil,_Iran._British_Museum.jpg",
      "cs": "Glazovaná (původně modrá) dveřní deska s puklicí z Čoga Zanbílu, 13. století př. n. l. Elamský klínový nápis na puklici zní „Palác Untaš-Napiriši, krále Elamu“. Britské muzeum, Londýn.",
      "en": "A glazed (originally blue) door plaque with a boss from Chogha Zanbil, 13th century BCE. The Elamite cuneiform inscription on the boss reads “Palace of Untash-Napirisha, King of Elam”. British Museum, London.",
-     "it": "Una placca da porta smaltata (in origine blu) con pomo da Chogha Zanbil, XIII secolo a.C. L’iscrizione cuneiforme elamica sul pomo recita “Palazzo di Untash-Napirisha, re di Elam”. British Museum, Londra."
+     "it": "Una placca da porta smaltata (in origine blu) con borchia da Chogha Zanbil, XIII secolo a.C. L’iscrizione cuneiforme elamica sulla borchia recita “Palazzo di Untash-Napirisha, re di Elam”. British Museum, Londra."
     },
     "tabulka": {
      "soubor": "tabulka.jpg",
@@ -7006,7 +7006,7 @@
      ],
      [
       "Decifrazione",
-      "il cuneiforme elamico nel XIX sec. grazie a Behistun; l’urarteo nel 1882 (A. H. Sayce); l’elamico lineare nel 2020–2022 (F. Desset e colleghi, accolta solo in parte)"
+      "il cuneiforme elamico nel XIX sec. grazie a Behistun; l’urarteo nel 1882 (A. H. Sayce); l’elamico lineare nel 2020–2022 (F. Desset e colleghi; decifrazione accolta solo in parte)"
      ]
     ],
     "nazvyTecek": {
@@ -7043,7 +7043,7 @@
       "typ": "text",
       "h": "La scrittura protoelamica",
       "p": [
-       "La scrittura più antica dell’Iran è detta protoelamica. Fu usata solo per breve tempo, circa 3100–2900 a.C., all’incirca all’epoca delle prime tavolette protocuneiformi di Uruk in Mesopotamia, con le quali ha molto in comune: tavolette d’argilla della stessa forma, lo stesso modo di iscriverle e lo stesso scopo contabile. I segni, però, sono diversi. Se ne conoscono circa 1600 tavolette; la stragrande maggioranza viene da Susa, altre da Anshan (Tall-e Malyan), Tepe Yahya, Tepe Sialk e da pochi altri siti fino all’Iran orientale.",
+       "La scrittura più antica dell’Iran è detta protoelamica. Fu usata solo per breve tempo, circa 3100–2900 a.C., all’incirca all’epoca delle prime tavolette protocuneiformi di Uruk in Mesopotamia, con le quali ha molto in comune: tavolette d’argilla della stessa forma, lo stesso modo di iscriverle e lo stesso scopo contabile. I segni, però, sono diversi. Si conoscono circa 1600 tavolette; la stragrande maggioranza viene da Susa, altre da Anshan (Tall-e Malyan), Tepe Yahya, Tepe Sialk e da pochi altri siti fino all’Iran orientale.",
        "La scrittura non è ancora stata decifrata. I numeri si possono leggere, perché somigliano a quelli delle tavolette mesopotamiche, e così il contenuto di molti testi è noto: sono conti, per esempio registrazioni di capre e pecore. Oltre a un sistema sessagesimale gli scribi usavano anche un sistema decimale. Gli altri segni sono più di mille, e la maggior parte di essi indicava probabilmente parole intere. Non si sa se gli scribi parlassero elamico, perché registrazioni di questo tipo non rivelano quasi nulla sulla lingua. Dal 2012 Jacob Dahl dell’Università di Oxford pubblica online le fotografie delle tavolette, perché anche altri ricercatori possano partecipare alla decifrazione. Nel 2022 François Desset ha proposto di leggere alcuni segni protoelamici con i valori che aveva attribuito all’elamico lineare; la maggior parte degli specialisti, compreso il gruppo di Dahl, non ha accolto la proposta."
       ]
      },
@@ -7191,8 +7191,8 @@
       "typ": "text",
       "h": "Urartu: il regno sul lago di Van",
       "p": [
-       "Il nome Urartu è assiro. Nella Bibbia lo stesso paese è chiamato Ararat, da cui i “monti dell’Ararat” sui quali, secondo la Genesi, si posò l’arca di Noè. Gli urartei stessi, dall’epoca del re Ishpuini, chiamavano il loro paese Biainili. Le iscrizioni assire menzionano Uruatri già nel XIII secolo a.C., che secondo studi più recenti era una delle terre di Nairi; un regno unitario sorse a metà del IX secolo a.C. Sarduri I (circa 832–820 a.C.) trasferì la sede del potere a Tushpa, sulla riva del lago di Van, dove una cittadella rupestre sorge presso l’odierna città di Van.",
-       "Nell’VIII secolo a.C. l’Urartu era uno degli stati più potenti del Vicino Oriente e un rivale dell’Assiria. Raggiunse l’apice della potenza sotto Argishti I e suo figlio Sarduri II; Argishti estese il regno fino al fiume Arasse e al lago Sevan. Nel 714 a.C. il re assiro Sargon II saccheggiò la città santa di Musasir con il tempio principale del dio Haldi. Indebolito dalle incursioni dei cimmeri e degli sciti, il regno decadde e giunse alla fine all’inizio del VI secolo a.C., per lo più datata a una conquista meda intorno al 590 a.C.; altri studiosi ritengono che sia sopravvissuto fino alla metà del secolo."
+       "Il nome Urartu è assiro. Nella Bibbia lo stesso paese è chiamato Ararat, da cui i “monti dell’Ararat” sui quali, secondo la Genesi, si posò l’arca di Noè. Gli urartei stessi, dall’epoca del re Ishpuini, chiamavano il loro paese Biainili. Le iscrizioni assire menzionano già nel XIII secolo a.C. Uruatri, che secondo studi più recenti era una delle terre di Nairi; un regno unitario sorse a metà del IX secolo a.C. Sarduri I (circa 832–820 a.C.) trasferì la sede del potere a Tushpa, sulla riva del lago di Van, dove una cittadella rupestre sorge presso l’odierna città di Van.",
+       "Nell’VIII secolo a.C. l’Urartu era uno degli stati più potenti del Vicino Oriente e un rivale dell’Assiria. Raggiunse l’apice della potenza sotto Argishti I e suo figlio Sarduri II; Argishti estese il regno fino al fiume Arasse e al lago Sevan. Nel 714 a.C. il re assiro Sargon II saccheggiò la città santa di Musasir con il tempio principale del dio Haldi. Indebolito dalle incursioni dei cimmeri e degli sciti, il regno decadde e cessò di esistere all’inizio del VI secolo a.C.; la sua fine si data per lo più a una conquista meda intorno al 590 a.C.; altri studiosi ritengono che sia sopravvissuto fino alla metà del secolo."
       ]
      },
      {
@@ -8810,7 +8810,7 @@
        ]
       ],
       "preklad": "“Qui nacque il Buddha Śākyamuni.”",
-      "vyklad": "Una proposizione dell’iscrizione sulla colonna di Lumbini (circa 248 a.C.). Aśoka dice che nel ventesimo anno dalla sua consacrazione venne di persona e rese omaggio a questo luogo perché qui era nato il Buddha; fece erigere una colonna di pietra ed esentò dalle tasse il villaggio di Lummini, che pagava soltanto un ottavo del suo raccolto. È la più antica attestazione dell’epiteto Śākyamuni. Il testo mostra tratti del pracrito orientale: il nominativo in -e (budhe) e l al posto di r (lājina, “dal re”). Gli scribi di Aśoka non scrivevano le consonanti doppie, perciò budhe sta per il sanscrito buddhaḥ. Sulla pietra le parole non sono separate in modo coerente; qui gli spazi sono aggiunti. Sulla pietra kya è un’unica legatura (ya sotto ka); il font Noto Sans Brahmi non ha legature, perciò qui ka porta il segno virāma (che sopprime la vocale)."
+      "vyklad": "Una proposizione dell’iscrizione sulla colonna di Lumbini (circa 248 a.C.). Aśoka dice che nel ventesimo anno dalla sua consacrazione venne di persona e rese omaggio a questo luogo perché qui era nato il Buddha; fece erigere una colonna di pietra ed esentò dalle tasse il villaggio di Lummini, che da allora versò soltanto un ottavo del suo raccolto. È la più antica attestazione dell’epiteto Śākyamuni. Il testo mostra tratti del pracrito orientale: il nominativo in -e (budhe) e l al posto di r (lājina, “dal re”). Gli scribi di Aśoka non scrivevano le consonanti doppie, perciò budhe sta per il sanscrito buddhaḥ. Sulla pietra le parole non sono separate in modo coerente; qui gli spazi sono aggiunti. Sulla pietra kya è un’unica legatura (ya sotto ka); il font Noto Sans Brahmi non ha legature, perciò qui ka porta il segno virāma (che sopprime la vocale)."
      },
      {
       "typ": "foto",
@@ -8821,7 +8821,7 @@
       "typ": "text",
       "h": "La brāhmī: una consonante con la a incorporata",
       "p": [
-       "La brāhmī si scriveva da sinistra a destra ed è un’abugida, una scrittura in cui ogni segno consonantico porta con sé anche la vocale a: 𑀓 si legge ka. Ogni altra vocale si indica con un tratto o un uncino attaccato alla consonante (𑀓𑀺 ki, 𑀓𑀼 ku); i segni vocalici indipendenti si usano solo all’inizio di parola o dopo un’altra vocale. L’origine della scrittura è discussa. La maggior parte degli studiosi ritiene che sia stata modellata su una scrittura semitica, molto probabilmente l’aramaico, mentre altri sostengono un’origine interna all’India; un legame con la scrittura dell’Indo, proposto da alcuni, non è stato dimostrato. Le più antiche iscrizioni in brāhmī datate con sicurezza sono quelle di Aśoka; i cocci con alcuni caratteri brāhmī da Anuradhapura, in Sri Lanka, datati al VI–IV secolo a.C., restano controversi.",
+       "La brāhmī si scriveva da sinistra a destra ed è un’abugida, una scrittura in cui ogni segno consonantico porta con sé anche la vocale a: 𑀓 si legge ka. Ogni altra vocale si indica con un tratto o un uncino attaccato alla consonante (𑀓𑀺 ki, 𑀓𑀼 ku); i segni vocalici indipendenti si usano solo all’inizio di parola o dopo un’altra vocale. L’origine della scrittura è discussa. La maggior parte degli studiosi ritiene che sia stata modellata su una scrittura semitica, molto probabilmente l’aramaica, mentre altri sostengono un’origine interna all’India; un legame con la scrittura dell’Indo, proposto da alcuni, non è stato dimostrato. Le più antiche iscrizioni in brāhmī datate con sicurezza sono quelle di Aśoka; i cocci con alcuni caratteri brāhmī da Anuradhapura, in Sri Lanka, datati al VI–IV secolo a.C., restano controversi.",
        "Nei secoli successivi dalla brāhmī nacque la grande maggioranza delle scritture dell’Asia meridionale e sudorientale. Il ramo settentrionale portò, attraverso la scrittura gupta, alla nāgarī, attestata dal VII secolo, e quindi alla devanāgarī, in uso regolare dall’VIII secolo e oggi impiegata per l’hindi, il marathi, il nepalese e il sanscrito. Il ramo meridionale produsse, tra le altre, le scritture tamil, telugu e kannada, e viaggiò con mercanti e monaci fino al Sud-est asiatico, dove diede origine alle scritture khmer, thai, lao, birmana e giavanese. Anche la scrittura tibetana deriva da modelli indiani. Tutte conservano, in sostanza, il principio della brāhmī: una consonante porta la vocale a e le altre vocali si aggiungono come segni."
       ]
      },
@@ -10320,7 +10320,7 @@
       "typ": "text",
       "h": "Un archivio in otto lingue",
       "p": [
-       "Da Hattusa provengono circa 30 000 tavolette d’argilla e frammenti: leggi, trattati, annali, preghiere, oracoli e rituali. Oltre all’ittita contengono testi in luvio, palaico, hattico e hurrita, in accadico e in sumerico, e anche parole indoarie. Un trattato sull’addestramento dei cavalli da carro, compilato sulla base del maestro mitannico Kikkuli, conta con numerali indoari: aika “uno”, tera “tre”, panza “cinque”, satta “sette”.",
+       "Da Hattusa provengono circa 30 000 tavolette d’argilla e frammenti: leggi, trattati, annali, preghiere, oracoli e rituali. Oltre all’ittita contengono testi in luvio, palaico, hattico e hurrita, in accadico e in sumerico, e anche parole indoarie. Un trattato sull’addestramento dei cavalli da carro, compilato secondo gli insegnamenti dell’addestratore mitannico Kikkuli, conta con numerali indoari: aika “uno”, tera “tre”, panza “cinque”, satta “sette”.",
        "La lingua internazionale della diplomazia era l’accadico. Per questo anche la versione ittita di uno dei più antichi trattati di pace conservati – l’accordo del re Hattusili III con il faraone egizio Ramses II, del 1259 a.C. circa – è scritta in accadico. La versione egizia è incisa in geroglifici sulle pareti dei templi di Karnak e del Ramesseum; una copia ingrandita della tavoletta ittita è esposta nella sede delle Nazioni Unite a New York."
       ]
      },
@@ -11572,7 +11572,7 @@
       "h": "L’ultima capitale degli Shang",
       "p": [
        "Le più antiche testimonianze consistenti della scrittura cinese vengono dalla dinastia Shang (商), che secondo la datazione moderna convenzionale governò il bacino del Fiume Giallo dal 1600 al 1046 a.C. circa. La sua ultima sede fu la città i cui resti sono oggi chiamati Yinxu (殷墟, ‘rovine di Yin’), presso Anyang nella provincia dello Henan. Le iscrizioni Shang chiamano lo stato Shang e la sua capitale ‘Grande insediamento Shang’ (大邑商); il nome Yin fu loro attribuito solo sotto la successiva dinastia Zhou.",
-       "La città fu capitale nella tarda epoca Shang (circa 1250–1046 a.C.), sotto dodici re; al più tardi durante il regno del re Wu Ding svolgeva chiaramente questo ruolo. Su circa 30 km² gli archeologi hanno portato alla luce le fondamenta di palazzi e santuari, tombe reali, officine del bronzo e dell’osso, sepolture di carri e oltre centomila ossa oracolari. La tomba di Fu Hao, moglie di Wu Ding e condottiera militare, scoperta nel 1976, è l’unica tomba della famiglia reale Shang trovata intatta dai saccheggiatori. Dopo la caduta degli Shang, collocata di solito nel 1046 a.C., la città andò in rovina. Yinxu è patrimonio mondiale dell’UNESCO dal 2006."
+       "La città fu capitale nella tarda epoca Shang (circa 1250–1046 a.C.), sotto dodici re; al più tardi durante il regno del re Wu Ding svolgeva chiaramente questo ruolo. Su circa 30 km² gli archeologi hanno portato alla luce le fondamenta di palazzi e santuari, tombe reali, officine del bronzo e dell’osso, sepolture di carri e oltre centomila ossa oracolari. La tomba di Fu Hao, moglie di Wu Ding e condottiera militare, scoperta nel 1976, è l’unica tomba della famiglia reale Shang trovata inviolata. Dopo la caduta degli Shang, collocata di solito nel 1046 a.C., la città andò in rovina. Yinxu è patrimonio mondiale dell’UNESCO dal 2006."
       ]
      },
      {
@@ -11585,7 +11585,7 @@
       "h": "La divinazione con il fuoco",
       "p": [
        "Le ossa oracolari (in cinese jiagu 甲骨, ‘gusci e ossa’) sono per lo più piastroni di tartaruga (la parte piatta inferiore del guscio) e scapole di bue, che gli indovini Shang usavano per la piromanzia, la divinazione mediante il fuoco. Praticavano nell’osso o nel guscio levigato una serie di cavità, forate o scalpellate, e vi applicavano una fonte di calore intenso finché la superficie anteriore si incrinava, più o meno con la forma del carattere 卜 ‘divinare’ (moderno bǔ). Il carattere raffigura probabilmente una crepa di questo tipo; la sua pronuncia in cinese antico, *pˤok secondo Baxter e Sagart, potrebbe aver imitato il suono dell’incrinatura.",
-       "Gli indovini ponevano domande agli antenati e alle divinità sul tempo atmosferico, i raccolti, le campagne militari, la costruzione di insediamenti, le nascite e le malattie nella famiglia reale, o i sacrifici. Incidevano la domanda nell’osso, talvolta con il pronostico del re e, in rari casi, con l’esito effettivo. Una registrazione completa è rara: la maggior parte delle iscrizioni riporta solo la data, il nome dell’indovino e l’argomento. I giorni si contavano in un ciclo di sessanta giorni che combinava dieci ‘tronchi celesti’ e dodici ‘rami terrestri’. Le ossa usate venivano sepolte in fosse, talvolta a centinaia o a migliaia; una fossa scoperta nel 1936 ne conteneva oltre 17 000 pezzi.",
+       "Gli indovini ponevano domande agli antenati e alle divinità sul tempo atmosferico, i raccolti, le campagne militari, la costruzione di insediamenti, le nascite e le malattie nella famiglia reale, o i sacrifici. Incidevano la domanda nell’osso, talvolta con il pronostico del re e, in rari casi, con l’esito effettivo. Una registrazione completa è rara: la maggior parte delle iscrizioni riporta solo la data, il nome dell’indovino e l’argomento. I giorni si contavano in un ciclo di sessanta giorni che combinava dieci ‘tronchi celesti’ e dodici ‘rami terrestri’. Le ossa usate venivano sepolte in fosse, talvolta a centinaia o a migliaia; una fossa scoperta nel 1936 conteneva oltre 17 000 pezzi.",
        "Le stime del totale variano: si citano almeno 160 000 pezzi, mentre un conteggio recente ha individuato circa 13 000 ossa con poco più di 130 000 iscrizioni in collezioni in Cina e in circa quattordici altri paesi. Le iscrizioni più antiche risalgono al regno del re Wu Ding. La durata del suo regno è discussa, ma la datazione al radiocarbonio di 26 ossa della sua epoca dà il 1254–1197 a.C. L’inizio dei testi cinesi continui si colloca quindi di solito intorno al 1250–1200 a.C."
       ]
      },
@@ -11787,7 +11787,7 @@
       "typ": "text",
       "h": "Un impero, una scrittura",
       "p": [
-       "Nel 221 a.C. il re di Qin sconfisse l’ultimo degli stati rivali e assunse il titolo di Primo Imperatore, Qin Shi Huang. Con il suo cancelliere Li Si unificò le leggi, i pesi e le misure, lo scartamento degli assi dei carri, la moneta e la scrittura. Proclamarono come norma imperiale la scrittura del piccolo sigillo (xiaozhuan 小篆), sviluppatasi nel Qin dalla scrittura degli Zhou; Li Si eliminò la maggior parte delle varianti dei caratteri e proibì le scritture locali degli stati conquistati. Alcuni studiosi sostengono che la tendenza verso forme standard fosse già in atto e che Li Si l’abbia portata a compimento. Secondo i commentari cinesi compilò anche un sillabario di caratteri, il Cangjiepian; nella sua forma Han, fuso con altri due sillabari Qin, contava circa 3300 caratteri e si conserva solo in parte.",
+       "Nel 221 a.C. il re di Qin sconfisse l’ultimo degli stati rivali e assunse il titolo di Primo Imperatore, Qin Shi Huang. Con il suo cancelliere Li Si unificò le leggi, i pesi e le misure, lo scartamento degli assi dei carri, la moneta e la scrittura. Proclamarono come norma imperiale la scrittura del piccolo sigillo (xiaozhuan 小篆), sviluppatasi nel Qin dalla scrittura degli Zhou; Li Si eliminò la maggior parte delle varianti dei caratteri e proibì le scritture locali degli stati conquistati. Alcuni studiosi sostengono che la tendenza verso forme standard fosse già in atto e che Li Si l’abbia portata a compimento. Secondo i commentari cinesi compilò anche un manuale di caratteri, il Cangjiepian; nella sua forma Han, fuso con altri due manuali Qin, contava circa 3300 caratteri e si conserva solo in parte.",
        "Dal 213 a.C., secondo la tradizione, l’imperatore su consiglio di Li Si fece bruciare la maggior parte dei libri, risparmiando le opere di astrologia, agricoltura, medicina, divinazione e storia dei Qin. L’impero stesso finì nel 206 a.C., ma la scrittura unificata gli sopravvisse."
       ]
      },
@@ -12910,7 +12910,7 @@
       "h": "Mercanti del mare",
       "p": [
        "Dopo il crollo dei grandi imperi dell’età del bronzo, intorno al 1200 a.C., sulla stretta costa ai piedi dei monti del Libano fiorirono città portuali indipendenti: Tiro, Sidone, Biblo e Arado. I loro abitanti si identificavano soprattutto con la propria città (se si chiamassero anche Cananei è controverso); il nome di Fenici fu dato loro dai Greci ed è di solito collegato con la parola greca per la porpora.",
-       "I Fenici esportavano legno di cedro, vetro, avorio e soprattutto la porpora ricavata dai molluschi marini del genere murex. Fondarono insediamenti a Cipro, in Sicilia e in Sardegna, in Spagna e in Nordafrica. Il più famoso, Cartagine, fu fondato secondo la tradizione da Tiro nell’814 a.C.; dopo tre guerre puniche contro Roma fu distrutto nel 146 a.C."
+       "I Fenici esportavano legno di cedro, vetro, avorio e soprattutto la porpora ricavata dai molluschi marini del genere murex. Fondarono insediamenti a Cipro, in Sicilia e in Sardegna, in Spagna e in Nordafrica. Il più famoso, Cartagine, fu fondato secondo la tradizione da Tiro nell’814 a.C.; dopo tre guerre puniche contro Roma la città fu distrutta nel 146 a.C."
       ]
      },
      {
@@ -14993,7 +14993,7 @@
       "p": [
        "L’aramaico si diffuse ben oltre gli Stati aramei. L’impero neoassiro, che li sottomise nel IX e VIII secolo a.C., lo adottò nella propria amministrazione, e così la lingua dei vinti divenne la lingua comune dell’intero impero. Dopo di esso lo usò l’impero neobabilonese, e gli Achemenidi vi amministrarono il loro regno dall’Egitto alla Battriana, come mostra la pagina sulla Persia. Gli studiosi chiamano questa forma ufficiale e uniforme della lingua aramaico imperiale.",
        "Come l’aramaico stesse diventando la lingua della diplomazia lo mostra il racconto biblico dell’assedio assiro di Gerusalemme nel 701 a.C.: i funzionari giudei chiedono all’inviato assiro di parlare loro in aramaico, che essi capiscono, e non in giudaico, alla portata d’orecchio del popolo che sta sulle mura (2 Re 18,26). Secondo questo racconto, la gente comune di Gerusalemme allora non capiva l’aramaico.",
-       "Ai tempi di Gesù la maggior parte degli Ebrei della Giudea e della Galilea parlava aramaico; l’ebraico era la lingua del culto e dello studio e in alcuni ambienti si parlava ancora. Secondo l’opinione prevalente Gesù parlava il dialetto galilaico dell’aramaico. I Vangeli, scritti in greco, conservano alcune sue parole aramaiche, come talitha kum, “fanciulla, alzati” (Mc 5,41); se e quanto spesso usasse anche l’ebraico o il greco è discusso. In aramaico sono scritti anche ampie parti del Talmud e i targumim, traduzioni aramaiche della Bibbia.",
+       "Ai tempi di Gesù la maggior parte degli Ebrei della Giudea e della Galilea parlava aramaico; l’ebraico era la lingua del culto e dello studio e in alcuni ambienti si parlava ancora. Secondo l’opinione prevalente Gesù parlava il dialetto galilaico dell’aramaico. I Vangeli, scritti in greco, conservano alcune sue parole aramaiche, come talitha kum, “fanciulla, alzati” (Mc 5,41); se e quanto spesso usasse anche l’ebraico o il greco è discusso. In aramaico sono scritte anche ampie parti del Talmud e i targumim, traduzioni aramaiche della Bibbia.",
        "L’aramaico non si è estinto. Lingue neoaramaiche sono parlate ancora dai cristiani assiri, da alcuni ebrei iracheni e dai mandei, e nella cittadina siriana di Maaloula e in due villaggi vicini sia da musulmani sia da cristiani. Le due maggiori, il sureth (neoaramaico assiro) e il turoyo (surayt), hanno circa un quarto di milione di parlanti ciascuna. Tutte le lingue neoaramaiche sono in pericolo."
       ]
      },
@@ -15039,7 +15039,7 @@
       "typ": "text",
       "h": "I masoreti e i segni vocalici",
       "p": [
-       "La scrittura ebraica annotava soltanto le consonanti, indicando le vocali tutt’al più con le lettere alef, he, vav e yod. Finché l’ebraico fu una lingua viva, questo bastava. Quando non fu più una lingua materna, la corretta lettura del testo sacro dovette essere assicurata in altro modo. Fu l’opera dei masoreti, studiosi e scribi attivi tra il VII e l’XI secolo a Tiberiade, a Gerusalemme e in Mesopotamia. Introdussero punti e trattini sopra e sotto le lettere (niqqud) e segni di accento, che si aggiungono al testo senza modificarlo, e scrissero ai margini note sull’ortografia, la masora. Tra i diversi sistemi prevalse quello tiberiense.",
+       "La scrittura ebraica annotava soltanto le consonanti, indicando le vocali tutt’al più con le lettere alef, he, vav e yod. Finché l’ebraico fu una lingua viva, questo bastava. Quando non fu più una lingua materna, la corretta lettura del testo sacro dovette essere assicurata in altro modo. Fu opera dei masoreti, studiosi e scribi attivi tra il VII e l’XI secolo a Tiberiade, a Gerusalemme e in Mesopotamia. Introdussero punti e trattini sopra e sotto le lettere (niqqud) e segni di accento, che si aggiungono al testo senza modificarlo, e scrissero ai margini note sull’ortografia, la masora. Tra i diversi sistemi prevalse quello tiberiense.",
        "Il modello della tradizione tiberiense è il Codice di Aleppo. Intorno al 920 lo scriba Shlomo ben Buya’a ne copiò il testo consonantico, e Aaron ben Moshe ben Asher, il più eminente dei masoreti di Tiberiade, aggiunse i segni vocalici, gli accenti e la masora. Anche Maimonide lo riconobbe come autorevole. Per quasi sei secoli il codice fu custodito nella Sinagoga centrale di Aleppo. La sinagoga fu data alle fiamme durante i disordini antiebraici del 1947, e quando il codice giunse in Israele nel 1958 restavano solo 294 dei circa 487 fogli stimati; mancava la maggior parte della Torah. Che cosa sia accaduto ai fogli mancanti non è chiaro. Il più antico manoscritto completo della Bibbia ebraica è perciò il Codice di Leningrado dell’inizio dell’XI secolo."
       ]
      },
@@ -15159,7 +15159,7 @@
       "p": [
        "L’ebraico si estinse come lingua materna nella tarda antichità, ma non smise mai di essere scritto. Per secoli gli Ebrei vi scrissero preghiere e poesia religiosa, opere giuridiche e filosofiche e lettere, e lo usarono per comunicare tra comunità di diversa lingua materna. Nel XVIII e XIX secolo lo riprese l’Illuminismo ebraico (Haskalah): i suoi autori volevano scrivere una letteratura moderna in ebraico biblico, ma si scontrarono con la mancanza di parole per il mondo contemporaneo.",
        "La rinascita dell’ebraico come lingua parlata è legata al nome di Eliezer Ben-Yehuda (1858–1922). Secondo la tradizione, ancora a Parigi tenne con alcuni amici la prima conversazione moderna in ebraico, e nel 1881 si trasferì a Gerusalemme. In casa parlava soltanto ebraico; suo figlio Itamar Ben-Avi (nato nel 1882) è spesso definito il primo parlante nativo dell’ebraico moderno. Ben-Yehuda pubblicò giornali in ebraico, coniò parole nuove e cominciò a compilare un grande dizionario dell’ebraico.",
-       "L’immagine di un solo uomo che fa rivivere la lingua da solo è però semplificata. Secondo lo stesso Ben-Yehuda, dieci anni dopo il suo arrivo solo quattro famiglie di Gerusalemme parlavano esclusivamente ebraico. Decisive si rivelarono le scuole degli insediamenti agricoli degli immigrati, dove dagli anni Ottanta del XIX secolo si insegnava in ebraico e dove i bambini fecero dell’ebraico la propria lingua. Nel 1913 la “guerra delle lingue” giunse al culmine sulla questione se il futuro istituto tecnico di Haifa avrebbe insegnato in tedesco o in ebraico, e nel 1922 l’ebraico divenne una delle tre lingue ufficiali della Palestina mandataria britannica. La sua pronuncia si basò sulla tradizione sefardita. Oggi l’ebraico è lingua ufficiale di Israele, parlato da circa nove milioni di persone, circa cinque milioni delle quali come lingua materna."
+       "L’immagine di un uomo che fa rivivere la lingua da solo è però semplificata. Secondo lo stesso Ben-Yehuda, dieci anni dopo il suo arrivo solo quattro famiglie di Gerusalemme parlavano esclusivamente ebraico. Decisive si rivelarono le scuole degli insediamenti agricoli degli immigrati, dove dagli anni Ottanta del XIX secolo si insegnava in ebraico e dove i bambini fecero dell’ebraico la propria lingua. Nel 1913 la “guerra delle lingue” giunse al culmine sulla questione se il futuro istituto tecnico di Haifa avrebbe insegnato in tedesco o in ebraico, e nel 1922 l’ebraico divenne una delle tre lingue ufficiali della Palestina mandataria britannica. La sua pronuncia si basò sulla tradizione sefardita. Oggi l’ebraico è lingua ufficiale di Israele, parlato da circa nove milioni di persone, circa cinque milioni delle quali come lingua materna."
       ]
      },
      {
@@ -15297,7 +15297,7 @@
        ],
        [
         "1947",
-        "La sinagoga di Aleppo viene incendiata; quando il codice ricomparve in Israele nel 1958, ne mancavano circa due quinti dei fogli."
+        "La sinagoga di Aleppo viene incendiata; quando il codice ricomparve in Israele nel 1958, mancavano circa due quinti dei suoi fogli."
        ]
       ]
      },
@@ -16511,7 +16511,7 @@
       "h": "Dialetti e lingua comune",
       "p": [
        "Il greco antico non aveva un’unica forma standard. I poemi omerici sono composti in una mescolanza artificiale di forme soprattutto ioniche ed eoliche, il dorico risuonava nella lirica corale, e l’attico di Atene divenne la lingua della tragedia (con una coloritura dorica nei cori) e della prosa classica: Tucidide, Platone e gli oratori; Erodoto, invece, scrisse in ionico.",
-       "Dopo le conquiste di Alessandro Magno dall’attico, con elementi ionici, si sviluppò un greco comune, la koinè, lingua del commercio e dell’amministrazione dall’Egitto all’India. Il Nuovo Testamento è scritto in koinè. Da essa una linea diretta conduce, attraverso il greco bizantino, al greco di oggi."
+       "Dopo le conquiste di Alessandro Magno, dall’attico, con elementi ionici, si sviluppò un greco comune, la koinè, lingua del commercio e dell’amministrazione dall’Egitto all’India. Il Nuovo Testamento è scritto in koinè. Da essa una linea diretta conduce, attraverso il greco bizantino, al greco di oggi."
       ]
      },
      {
@@ -18107,7 +18107,7 @@
       "h": "L’ogham: una scrittura a tratti",
       "p": [
        "In Irlanda, dove il dominio romano non giunse mai, nacque una scrittura propria: l’ogham. Le iscrizioni più antiche risalgono al IV secolo d.C. circa e la maggior parte al V e VI. Se ne conoscono circa 380–400, soprattutto nella provincia irlandese sudoccidentale del Munster (le contee di Cork e Kerry ospitano il 60 per cento delle pietre irlandesi), altre in Galles, nell’isola di Man, in Cornovaglia, nel Devon e in Scozia. La loro lingua è l’irlandese primitivo, la più antica forma attestata dell’irlandese, e in Scozia probabilmente anche il pittico.",
-       "Le lettere consistono in uno-cinque tratti o tacche su una linea di base, che su una pietra è costituita dallo spigolo. Le venti lettere fondamentali si dividono in quattro gruppi (aicme) di cinque: tratti da un lato della linea, tratti dall’altro lato, tratti obliqui che la attraversano e tacche per le vocali. Il testo si legge verso l’alto lungo lo spigolo e, nelle iscrizioni più lunghe, oltre la sommità e poi verso il basso. Le iscrizioni sono quasi sempre soltanto nomi in una formula fissa, X MAQI Y, “(la pietra) di X, figlio di Y”, spesso con MUCOI, “della stirpe di”.",
+       "Le lettere consistono in un numero di tratti o tacche da uno a cinque su una linea di base, che su una pietra è costituita dallo spigolo. Le venti lettere fondamentali si dividono in quattro gruppi (aicme) di cinque: tratti da un lato della linea, tratti dall’altro lato, tratti obliqui che la attraversano e tacche per le vocali. Il testo si legge verso l’alto lungo lo spigolo e, nelle iscrizioni più lunghe, oltre la sommità e poi verso il basso. Le iscrizioni sono quasi sempre soltanto nomi in una formula fissa, X MAQI Y, “(la pietra) di X, figlio di Y”, spesso con MUCOI, “della stirpe di”.",
        "La maggior parte degli studiosi ritiene che l’ogham sia stato modellato sull’alfabeto latino, forse attraverso i contatti con la Britannia romana. Alcune lettere indicano suoni che nel V secolo non si pronunciavano più, per cui la scrittura è probabilmente più antica delle pietre conservate e potrebbe essere stata scritta dapprima sul legno. L’ogham continuò a essere insegnato anche dopo l’adozione dell’alfabeto latino e compare nei manoscritti fino al XVI secolo.",
        "Trattati irlandesi medievali come l’Auraicept na n-Éces spiegano i nomi delle lettere come nomi di alberi, da cui la moderna denominazione di “alfabeto degli alberi”. Secondo Damian McManus si tratta di un’interpretazione posteriore: al massimo otto dei venti nomi sono davvero nomi di alberi, con certezza beith (betulla), fern (ontano), sail (salice), dair (quercia), coll (nocciolo) e onn (frassino). L’idea di un calendario arboreo druidico fu diffusa da Robert Graves in La dea bianca (1948) e non regge all’esame scientifico."
       ]
@@ -19590,7 +19590,7 @@
       "h": "Un alfabeto dai coloni greci",
       "p": [
        "Gli Etruschi presero la loro scrittura dai Greci dell’isola di Eubea, che nell’VIII secolo a.C. fondarono i primi insediamenti in Italia, Pithekoussai sull’isola d’Ischia e Cuma in Campania. Il più antico alfabeto etrusco noto, l’alfabeto di Marsiliana, è inciso sulla cornice di una piccola tavoletta cerata d’avorio da Marsiliana d’Albegna presso Grosseto, databile intorno al 700 a.C. Conta 26 lettere nell’ordine greco, tra cui digamma, san e qoppa; contiene anche lettere di cui gli Etruschi non avevano bisogno, come B, D e O.",
-       "L’etrusco non aveva le consonanti sonore b, d, g né la vocale o. Le lettere B, D e O caddero perciò in disuso, mentre il gamma greco (C) passò a indicare k e soppiantò K e Q. Per il suono f comparve intorno al 600–550 a.C. una nuova lettera a forma di 8; un’antica iscrizione sabellica fa pensare che gli Etruschi l’abbiano presa da vicini di lingua sabellica. Verso il 400 a.C. tutta l’Etruria usava l’alfabeto classico di 20 lettere. Si scriveva da destra a sinistra, e nelle iscrizioni più antiche talvolta in direzioni alterne (bustrofedico). Le iscrizioni più antiche non separano le parole; dal VI secolo a.C. esse sono divise da un punto o da due punti.",
+       "L’etrusco non aveva le consonanti sonore b, d, g né la vocale o. Le lettere B, D e O caddero perciò in disuso, mentre il gamma greco (C) passò a indicare k e soppiantò K e Q. Per il suono f comparve intorno al 600–550 a.C. una nuova lettera a forma di 8; un’antica iscrizione sabellica fa pensare che gli Etruschi l’abbiano presa da vicini di lingua sabellica. Verso il 400 a.C. tutta l’Etruria usava l’alfabeto classico di 20 lettere. Si scriveva da destra a sinistra, e nelle iscrizioni più antiche talvolta in direzioni alterne (bustrofedico). Le iscrizioni più antiche non separano le parole; dal VI secolo a.C. le parole sono divise da un punto o da due punti.",
        "Un forte accento sulla prima sillaba indeboliva le vocali delle sillabe successive, che poi non venivano scritte: il greco Alexandros è in etrusco Alcsntre, Herakles è Hercle. Questo spiega i nessi consonantici così insoliti nelle parole etrusche."
       ]
      },
@@ -20089,7 +20089,7 @@
      "zdroj": "https://commons.wikimedia.org/wiki/File:Behistun_inscription_reliefs.jpg",
      "cs": "Reliéf nad behistunským nápisem (provincie Kermánšáh, západní Írán): Dáreios I. s lukem šlape na poraženého Gaumátu, za ním stojí dva služebníci, před ním devět spoutaných vzbouřenců a nahoře se vznáší okřídlená postava, obvykle vykládaná jako Ahura Mazda. Kolem jsou pole klínového textu.",
      "en": "The relief above the Behistun inscription (Kermanshah province, western Iran): Darius I, holding a bow, sets his foot on the defeated Gaumata; two attendants stand behind him, nine bound rebels before him, and above floats a winged figure usually interpreted as Ahura Mazda. Panels of cuneiform text surround the scene.",
-     "it": "Il rilievo sopra l’iscrizione di Behistun (provincia di Kermanshah, Iran occidentale): Dario I, con un arco in mano, posa il piede sullo sconfitto Gaumata; dietro di lui stanno due attendenti, davanti a lui nove ribelli legati, e in alto si libra una figura alata di solito interpretata come Ahura Mazda. La scena è circondata da riquadri di testo cuneiforme."
+     "it": "Il rilievo sopra l’iscrizione di Behistun (provincia di Kermanshah, Iran occidentale): Dario I, con un arco in mano, posa il piede sullo sconfitto Gaumata; dietro di lui stanno due dignitari, davanti a lui nove ribelli legati, e in alto si libra una figura alata di solito interpretata come Ahura Mazda. La scena è circondata da riquadri di testo cuneiforme."
     },
     "gandzname": {
      "soubor": "gandzname.jpg",
@@ -25077,7 +25077,7 @@
       "h": "La terza scrittura del Caucaso",
       "p": [
        "Koriun attribuisce a Maštoc’ anche una scrittura per gli albani del Caucaso, un popolo che viveva nell’odierno Azerbaigian e nel Daghestan meridionale e parlava una lingua caucasica nord-orientale. La scrittura fu in uso dal V al XII secolo e poi cadde nell’oblio. Solo nel 1937 lo studioso georgiano Ilia Abuladze ne trovò l’alfabeto in un manoscritto armeno del XV secolo conservato al Matenadaran (n. 7117), che mette a confronto diversi alfabeti. Seguirono nel 1947–1952 brevi iscrizioni dagli scavi di Mingachevir.",
-       "Testi continui sono stati trovati solo nel Monastero di Santa Caterina sul Monte Sinai: nel 1996 lo studioso georgiano Zaza Aleksidze riconobbe, sotto il testo georgiano di alcuni palinsesti, uno strato inferiore scritto in alfabeto albanese (annunciato nel 1997). Contiene frammenti di un lezionario e del Vangelo di Giovanni, pubblicati nel 2008 da Aleksidze, Jost Gippert e altri; solo grazie a essi oggi la lingua si può leggere in larga parte. L’alfabeto ha 52 lettere e, secondo Gippert, la sua struttura dipende dall’alfabeto armeno più o meno come quello armeno dipende dal greco. L’udi, parlato da circa 8000 persone, è considerato l’ultimo discendente dell’albano caucasico."
+       "Testi continui sono stati trovati solo nel Monastero di Santa Caterina sul Monte Sinai: nel 1996 lo studioso georgiano Zaza Aleksidze riconobbe, sotto il testo georgiano di alcuni palinsesti, uno strato inferiore scritto in alfabeto albano (annunciato nel 1997). Contiene frammenti di un lezionario e del Vangelo di Giovanni, pubblicati nel 2008 da Aleksidze, Jost Gippert e altri; solo grazie a essi oggi la lingua si può leggere in larga parte. L’alfabeto ha 52 lettere e, secondo Gippert, la sua struttura dipende dall’alfabeto armeno più o meno come quello armeno dipende dal greco. L’udi, parlato da circa 8000 persone, è considerato l’ultimo discendente dell’albano caucasico."
       ]
      },
      {
@@ -27056,7 +27056,7 @@
       "h": "La Bibbia d’argento",
       "p": [
        "La Bibbia gotica sopravvive solo in frammenti, soprattutto dei Vangeli e delle Lettere di Paolo. Il più prezioso è la Bibbia d’argento (Codex argenteus) del VI secolo, scritta con inchiostro d’argento e d’oro su pergamena tinta di porpora. Fu con ogni probabilità realizzata in Italia sotto il re ostrogoto Teodorico il Grande (morto nel 526), forse a Ravenna. Dei 336 fogli originari ne sopravvivono 188.",
-       "Il codice venne alla luce nel XVI secolo nell’abbazia di Werden presso Essen e passò nelle collezioni dell’imperatore Rodolfo II a Praga. Nel 1648 le truppe svedesi lo portarono da lì a Stoccolma come bottino di guerra; dopo l’abdicazione della regina Cristina Isaac Vossius lo portò nei Paesi Bassi, dove negli anni Sessanta del Seicento il conte Magnus Gabriel De la Gardie lo acquistò e lo donò all’Università di Uppsala, dove si trova tuttora. L’ultimo foglio fu trovato nel 1970 a Spira. Dal 2011 il codice è iscritto nel registro Memoria del mondo dell’UNESCO."
+       "Il codice venne alla luce nel XVI secolo nell’abbazia di Werden presso Essen e passò nelle collezioni dell’imperatore Rodolfo II a Praga. Nel 1648 le truppe svedesi lo portarono da lì a Stoccolma come bottino di guerra; dopo l’abdicazione della regina Cristina, Isaac Vossius lo portò nei Paesi Bassi, dove negli anni Sessanta del Seicento il conte Magnus Gabriel De la Gardie lo acquistò e lo donò all’Università di Uppsala, dove si trova tuttora. L’ultimo foglio fu trovato nel 1970 a Spira. Dal 2011 il codice è iscritto nel registro Memoria del mondo dell’UNESCO."
       ]
      },
      {
@@ -28549,7 +28549,7 @@
       "typ": "text",
       "h": "La lingua geʽez",
       "p": [
-       "Il geʽez, chiamato nella letteratura scientifica anche etiopico classico, è una lingua semitica. Appartiene alle lingue semitiche d’Etiopia, e in particolare al loro ramo settentrionale insieme al tigrino e al tigré; l’amarico appartiene al ramo meridionale. Non deriva dal sabeo. Secondo l’opinione prevalente, tuttavia, non è nemmeno l’antenato comune delle moderne lingue semitiche d’Etiopia, ma se ne separò presto da una lingua madre comune non attestata.",
+       "Il geʽez, chiamato nella letteratura scientifica anche etiopico classico, è una lingua semitica. Appartiene alle lingue semitiche d’Etiopia, e in particolare al loro ramo settentrionale insieme al tigrino e al tigré; l’amarico appartiene al ramo meridionale. Non deriva dal sabeo. Secondo l’opinione prevalente, tuttavia, non è nemmeno l’antenato comune delle moderne lingue semitiche d’Etiopia, ma si separò precocemente da una lingua madre comune non attestata.",
        "Come le altre lingue semitiche, il geʽez si fonda su radici consonantiche e ha plurali interni (fratti), che cambiano le vocali all’interno della parola: bet “casa” – ʾabyāt “case”, faras “cavallo” – ʾafrās, kokab “stella” – kawākəbt. L’ordine abituale delle parole è verbo – soggetto – oggetto, e l’oggetto prende la desinenza -a: takala bəʾsi ʿəḍa “l’uomo piantò un albero”. Il possesso si esprime con lo stato costrutto, come in ebraico: walda nəguś “il figlio del re”. Tipiche delle lingue semitiche d’Etiopia sono le consonanti eiettive, pronunciate con la glottide chiusa, e le velari labializzate (kʷ, gʷ)."
       ]
      },
@@ -30596,7 +30596,7 @@
       "typ": "text",
       "h": "Gli hanja oggi",
       "p": [
-       "Lo hangul sostituì i caratteri cinesi solo nel XX secolo. A lungo si usò una scrittura mista: le parole sino-coreane, cioè prese a prestito dal cinese o formate da radici cinesi, in caratteri, e le radici e le desinenze coreane in hangul. Secondo la maggior parte delle stime le parole sino-coreane costituiscono più della metà dei lemmi dei dizionari (dal 50 al 65 per cento secondo Ho-min Sohn); le stime lessicografiche variano tuttavia, e i critici, che richiamano l’attenzione sulle molte parole inutilizzate dei dizionari più vecchi, ne indicano soltanto il 30 per cento circa. Si tratta soprattutto di termini tecnici e astratti.",
+       "Lo hangul sostituì i caratteri cinesi solo nel XX secolo. A lungo si usò una scrittura mista: le parole sino-coreane, cioè prese a prestito dal cinese o formate da radici cinesi, in caratteri, e le radici e le desinenze coreane in hangul. Secondo la maggior parte delle stime le parole sino-coreane costituiscono più della metà dei lemmi dei dizionari (dal 50 al 65 per cento secondo Ho-min Sohn); le stime lessicografiche variano tuttavia, e i critici che richiamano l’attenzione sulle molte parole inutilizzate dei dizionari più vecchi ne indicano soltanto il 30 per cento circa. Si tratta soprattutto di termini tecnici e astratti.",
        "In Corea del Nord i caratteri cinesi non si usano nei testi dal 1949, anche se vengono insegnati nelle scuole. La Corea del Sud oscillò a lungo tra abolirli e mantenerli: nel 1968 il governo annunciò un piano quinquennale per eliminarli dalle scuole e dall’uso ufficiale, e quattro anni dopo l’insegnamento dei caratteri tornò come materia facoltativa. Oggi nelle scuole secondarie si insegnano come materia facoltativa 1800 caratteri di base. I giornali passarono per lo più allo hangul negli anni Novanta; i caratteri restano nei titoli come abbreviazioni (中 Cina, 韓 Corea, 美 USA, 日 Giappone), nei nomi di persona, nei documenti ufficiali e nei dizionari, dove distinguono parole che suonano uguali."
       ]
      },
@@ -32188,7 +32188,7 @@
       "h": "Da dove viene la scrittura",
       "p": [
        "L’origine della scrittura è incerta. Già Thomsen riteneva che derivasse da una delle scritture discendenti dall’aramaico, e secondo l’opinione prevalente il suo antenato più prossimo è la scrittura sogdiana, usata dai mercanti iranici della Sogdiana, influenti alla corte dei Göktürk. Solo una parte delle lettere corrisponde, però, e nessuna derivazione diretta è stata dimostrata, perciò la questione resta controversa. Un’idea più antica, secondo cui le lettere sarebbero nate dalle tamga, i marchi con cui i nomadi contrassegnavano il bestiame, è considerata indimostrabile.",
-       "Anche le fonti cinesi del VII secolo si contraddicono. Il Libro dei Zhou afferma che i turchi avevano una scrittura simile a quella dei sogdiani, mentre il Libro dei Sui e la Storia delle dinastie settentrionali dicono che non ne avevano alcuna. Le iscrizioni runiche stesse risalgono solo all’VIII secolo; di eventuali forme più antiche della scrittura non si sa nulla di certo."
+       "Anche le fonti cinesi del VII secolo si contraddicono. Il Libro degli Zhou afferma che i turchi avevano una scrittura simile a quella dei sogdiani, mentre il Libro dei Sui e la Storia delle dinastie settentrionali dicono che non ne avevano alcuna. Le iscrizioni runiche stesse risalgono solo all’VIII secolo; di eventuali forme più antiche della scrittura non si sa nulla di certo."
       ]
      },
      {
@@ -32308,7 +32308,7 @@
        ],
        [
         "636–659",
-        "Il Libro dei Zhou, il Libro dei Sui e la Storia delle dinastie settentrionali, opere cinesi, non concordano sul fatto che i turchi abbiano una scrittura."
+        "Il Libro degli Zhou, il Libro dei Sui e la Storia delle dinastie settentrionali, opere cinesi, danno notizie discordanti sull’esistenza di una scrittura presso i turchi."
        ],
        [
         "682",
@@ -32417,7 +32417,7 @@
      "zdroj": "https://commons.wikimedia.org/wiki/File:Horyu-ji,_November_2016.jpg",
      "cs": "Zlatá síň (Kondó) a pětipatrová pagoda buddhistického chrámu Hórjúdži v Ikaruze v prefektuře Nara. Chrám patří k místům, odkud se v 7. století šířila buddhistická vzdělanost a s ní čínské písmo; od roku 1993 je na seznamu světového dědictví UNESCO.",
      "en": "The Golden Hall (Kondō) and the five-storey pagoda of the Buddhist temple of Hōryū-ji in Ikaruga, Nara Prefecture. The temple was one of the places from which Buddhist learning, and with it Chinese writing, spread in the 7th century; it has been a UNESCO World Heritage Site since 1993.",
-     "it": "Il Padiglione d’oro (Kondō) e la pagoda a cinque piani del tempio buddhista Hōryū-ji a Ikaruga, prefettura di Nara. Il tempio fu uno dei luoghi da cui nel VII secolo si diffusero la cultura buddhista e con essa la scrittura cinese; dal 1993 è patrimonio mondiale dell’UNESCO."
+     "it": "La Sala d’oro (Kondō) e la pagoda a cinque piani del tempio buddhista Hōryū-ji a Ikaruga, prefettura di Nara. Il tempio fu uno dei luoghi da cui nel VII secolo si diffusero la cultura buddhista e con essa la scrittura cinese; dal 1993 è patrimonio mondiale dell’UNESCO."
     },
     "mokkan": {
      "soubor": "mokkan.jpg",
@@ -33530,7 +33530,7 @@
     "nazev": "Giappone: caratteri cinesi e kana",
     "stitek": "Lingue dell’antichità",
     "podtitul": "Le isole giapponesi · dalle prime iscrizioni del V secolo alle scrittrici del periodo Heian",
-    "perex": "I giapponesi presero la scrittura dalla Cina, anche se la loro lingua non è imparentata con il cinese. All’inizio scrivevano in cinese, usando i caratteri per il loro solo suono soltanto nei nomi; poi impararono a leggere i testi cinesi come giapponese e svilupparono l’uso fonetico dei caratteri in un modo completo di scrivere il giapponese, detto man'yōgana. Da esso nacquero nel IX secolo due sillabari: lo hiragana, fluido, dalla scrittura corsiva, e il katakana, angoloso, da frammenti di caratteri. Le dame di corte del periodo Heian scrissero in hiragana opere come il Genji monogatari. Il giapponese moderno combina i caratteri cinesi con entrambi i kana, il che ne fa uno dei sistemi di scrittura più complessi del mondo.",
+    "perex": "I giapponesi presero la scrittura dalla Cina, anche se la loro lingua non è imparentata con il cinese. All’inizio scrivevano in cinese, usando i caratteri in funzione puramente fonetica soltanto nei nomi; poi impararono a leggere i testi cinesi come giapponese e svilupparono l’uso fonetico dei caratteri in un modo completo di scrivere il giapponese, detto man'yōgana. Da esso nacquero nel IX secolo due sillabari: lo hiragana, fluido, dalla scrittura corsiva, e il katakana, angoloso, da frammenti di caratteri. Le dame di corte del periodo Heian scrissero in hiragana opere come il Genji monogatari. Il giapponese moderno combina i caratteri cinesi con entrambi i kana, il che ne fa uno dei sistemi di scrittura più complessi del mondo.",
     "fakta": [
      [
       "Regione",
@@ -33739,7 +33739,7 @@
       "p": [
        "Nel periodo Heian (794–1185), che prende il nome dalla nuova capitale Heian-kyō, l’odierna Kyoto, la scrittura ufficiale degli uomini rimase il cinese e lo stile regolare dei caratteri, detto otokode (“mano maschile”). Lo hiragana si affermò invece nelle lettere private e nella poesia, e poiché era usato soprattutto dalle donne, alle quali di solito era negata un’istruzione cinese, fu chiamato onnade, “mano femminile”. Permise alle dame di corte di scrivere come si parlava, ed esse crearono i capolavori della prosa giapponese.",
        "Lo hiragana non era però solo per le donne. Nel 905 l’imperatore Daigo ordinò la compilazione del Kokin Wakashū (“Raccolta di poesie antiche e moderne”), la prima antologia di poesie giapponesi (waka) compilata per ordine imperiale. Uno dei compilatori, il poeta Ki no Tsurayuki, scrisse la prefazione giapponese in kana (kanajo); la prefazione cinese (manajo) è di Ki no Yoshimochi. Intorno al 935 lo stesso Tsurayuki scrisse il Diario di Tosa, che descrive il viaggio di ritorno alla capitale dalla provincia di Tosa, dove era stato governatore. Lo scrisse in hiragana, come se fosse opera di una donna del suo seguito.",
-       "Il vertice della prosa Heian è il Genji monogatari (Storia di Genji) di una dama di corte nota soltanto con il soprannome di Murasaki Shikibu. Il romanzo in 54 capitoli, scritto all’inizio dell’XI secolo per lo più in hiragana, narra la vita e gli amori del figlio dell’imperatore Genji e dei suoi discendenti, ed è spesso definito uno dei primi romanzi della letteratura mondiale. Più o meno dello stesso periodo sono le Note del guanciale (Makura no sōshi) della dama di corte Sei Shōnagon. Entrambe le autrici conoscevano la scrittura cinese, ma non erano tenute a scrivere in essa."
+       "Il vertice della prosa Heian è il Genji monogatari (Storia di Genji) di una dama di corte nota soltanto con il soprannome di Murasaki Shikibu. Il romanzo in 54 capitoli, scritto all’inizio dell’XI secolo per lo più in hiragana, narra la vita e gli amori di Genji, figlio dell’imperatore, e dei suoi discendenti, ed è spesso definito uno dei primi romanzi della letteratura mondiale. Più o meno dello stesso periodo sono le Note del guanciale (Makura no sōshi) della dama di corte Sei Shōnagon. Entrambe le autrici conoscevano la scrittura cinese, ma non erano tenute a scrivere in essa."
       ]
      },
      {
@@ -35032,7 +35032,7 @@
     "nazev": "Gli slavi e la Grande Moravia",
     "stitek": "Lingue dell’antichità",
     "podtitul": "Europa centrale e Balcani · dal protoslavo ai primi libri slavi",
-    "perex": "Nell’863 i fratelli Costantino e Metodio giunsero da Bisanzio nella Grande Moravia. Costantino creò per la lingua slava una nuova scrittura, il glagolitico, e i due tradussero i libri liturgici nella lingua oggi chiamata antico slavo ecclesiastico, la prima lingua letteraria degli slavi. Dopo che i discepoli di Metodio furono cacciati dalla Moravia, la loro scrittura fu accolta in Bulgaria, dove si sviluppò il cirillico, che da lì si diffuse nella Rus’ e in tutti i Balcani; in Croazia il glagolitico sopravvisse fino all’età moderna. Il ceco, alla fine, finì per essere scritto in alfabeto latino.",
+    "perex": "Nell’863 i fratelli Costantino e Metodio giunsero da Bisanzio nella Grande Moravia. Costantino creò per la lingua slava una nuova scrittura, il glagolitico, e i due tradussero i libri liturgici nella lingua oggi chiamata antico slavo ecclesiastico, la prima lingua letteraria degli slavi. Dopo che i discepoli di Metodio furono cacciati dalla Moravia, la loro scrittura fu accolta in Bulgaria, dove si sviluppò il cirillico, che da lì si diffuse nella Rus’ e in tutti i Balcani; in Croazia il glagolitico sopravvisse fino all’età moderna. Il ceco, alla fine, venne scritto in alfabeto latino.",
     "fakta": [
      [
       "Regione",
@@ -35073,7 +35073,7 @@
       "h": "Una lingua, molti dialetti",
       "p": [
        "Le lingue slave costituiscono un ramo della famiglia indoeuropea. Le loro parenti più strette sono le lingue baltiche (lituano e lettone), con cui condividono un antenato comune, il protobaltoslavo. L’antenato comune di tutte le lingue slave, il protoslavo, non è attestato per iscritto: i linguisti lo ricostruiscono confrontando le lingue posteriori, e per questo le parole ricostruite sono contrassegnate da un asterisco. Il protoslavo si frammentò in lingue distinte nella seconda metà del I millennio d.C., quando gli slavi si diffusero in gran parte dell’Europa orientale e centrale e nei Balcani.",
-       "Ancora nel IX secolo le differenze tra i dialetti slavi erano minime, ed è per questo che un’unica lingua letteraria poté servire agli slavi della Moravia, della Bulgaria e della Rus’. Oggi le lingue slave si dividono in occidentali (tra cui ceco, slovacco e polacco), orientali (russo, ucraino, bielorusso) e meridionali (sloveno, serbo, croato, bulgaro, macedone e altre). A cavallo del XXI secolo si stimava che contassero circa 315 milioni di parlanti."
+       "Ancora nel IX secolo le differenze tra i dialetti slavi erano minime, ed è per questo che un’unica lingua letteraria poté servire agli slavi della Moravia, della Bulgaria e della Rus’. Oggi le lingue slave si dividono in occidentali (tra cui ceco, slovacco e polacco), orientali (russo, ucraino, bielorusso) e meridionali (sloveno, serbo, croato, bulgaro, macedone e altre). A cavallo tra XX e XXI secolo si stimava che contassero circa 315 milioni di parlanti."
       ]
      },
      {
@@ -35133,7 +35133,7 @@
       "h": "La Grande Moravia",
       "p": [
        "Nel IX secolo nel bacino del fiume Morava sorse uno Stato slavo, che nel secolo successivo l’imperatore bizantino Costantino VII Porfirogenito chiamò «Grande Moravia». Secondo la ricostruzione tradizionale, intorno all’833, sotto il principe Mojmír I, la regione di Nitra fu unita alla Moravia; il regno raggiunse la massima estensione sotto Svatopluk (regno 870–894). Il suo nucleo si trovava nelle attuali Moravia meridionale e orientale e Slovacchia occidentale. Il cristianesimo vi fu portato dapprima da sacerdoti provenienti dalla Francia orientale, dall’Italia e dalla Dalmazia. Lo Stato cadde sotto gli attacchi ungari tra il 902 e il 907; la data esatta è ignota.",
-       "La fortezza meglio studiata è Mikulčice-Valy, presso Hodonín. La sua acropoli di sei ettari sorgeva su un’isola della Morava, protetta da un vallo con paramento in pietra; gli archeologi vi hanno portato alla luce un palazzo e dodici chiese, le più antiche delle quali in pietra, datate secondo stime diverse fra l’800 circa e la prima metà del IX secolo; tra queste c’è una basilica a tre navate che misura internamente 35 × 9 m. Un altro centro era l’agglomerato di Staré Město – Uherské Hradiště. Dove si trovasse la sede principale, che una tradizione posteriore chiama Veligrad, non è noto: i principali candidati sono Mikulčice e Staré Město."
+       "La fortezza meglio studiata è Mikulčice-Valy, presso Hodonín. La sua acropoli di sei ettari sorgeva su un’isola della Morava, protetta da un vallo con paramento in pietra; gli archeologi vi hanno portato alla luce un palazzo e dodici chiese (le più antiche chiese in pietra sono datate, secondo stime diverse, fra l’800 circa e la prima metà del IX secolo); tra queste c’è una basilica a tre navate che misura internamente 35 × 9 m. Un altro centro era l’agglomerato di Staré Město – Uherské Hradiště. Dove si trovasse la sede principale, che una tradizione posteriore chiama Veligrad, non è noto: i principali candidati sono Mikulčice e Staré Město."
       ]
      },
      {
@@ -35146,7 +35146,7 @@
       "h": "La missione da Salonicco",
       "p": [
        "Nell’862 il principe Rastislav chiese all’imperatore bizantino Michele III un «maestro» che spiegasse la fede al suo popolo nella sua lingua; secondo l’opinione prevalente, in precedenza si era rivolto senza successo a Roma. L’imperatore e il patriarca Fozio inviarono due fratelli di Salonicco, città in cui si parlava anche lo slavo: il dotto e diplomatico Costantino (nato circa nell’827), che aveva già guidato un’ambasceria presso i cazari, e il fratello maggiore Metodio (nato circa nell’815). Nell’863 giunsero in Moravia con traduzioni già pronte.",
-       "Nell’867 i fratelli partirono per Roma passando per la Pannonia, dove li accolse il principe Kocel. Nell’868 papa Adriano II approvò la liturgia slava e fece ordinare i loro discepoli. A Roma Costantino entrò in un monastero, assunse il nome di Cirillo e vi morì il 14 febbraio 869. Metodio divenne arcivescovo con giurisdizione sulla Moravia e sulla Pannonia. Dopo alcuni anni di prigionia presso i vescovi bavaresi (870–873) tornò in Moravia; nell’880 papa Giovanni VIII confermò la liturgia slava con la bolla Industriae tuae. Secondo la sua Vita, tradusse con alcuni collaboratori quasi tutta la Bibbia. Morì il 6 aprile 885."
+       "Nell’867 i fratelli partirono per Roma passando per la Pannonia, dove li accolse il principe Kocel. Nell’868 papa Adriano II approvò la liturgia slava e fece ordinare i loro discepoli. A Roma Costantino entrò in un monastero, assunse il nome di Cirillo e vi morì il 14 febbraio 869. Metodio divenne arcivescovo con giurisdizione sulla Moravia e sulla Pannonia. Dopo essere stato tenuto prigioniero per alcuni anni dai vescovi bavaresi (870–873) tornò in Moravia; nell’880 papa Giovanni VIII confermò la liturgia slava con la bolla Industriae tuae. Secondo la sua Vita, tradusse con alcuni collaboratori quasi tutta la Bibbia. Morì il 6 aprile 885."
       ]
      },
      {
@@ -35263,7 +35263,7 @@
       "typ": "rameček",
       "h": "Chrabr: Sulle lettere",
       "p": [
-       "Il monaco Chrabr, attivo secondo l’opinione prevalente in Bulgaria intorno al 900, difese la scrittura slava in un breve trattato, Sulle lettere. Un tempo, scrive, gli slavi non avevano lettere (né libri), ma «contavano e indovinavano con tratti e intagli»; dopo il battesimo scrivevano la loro lingua con lettere latine e greche, senza adattarle. Ma come si potevano scrivere in lettere greche parole come životъ, člověkъ o širota? Così Costantino il Filosofo creò per loro «trentotto lettere, alcune sul modello delle lettere greche, altre secondo la lingua slava»."
+       "Il monaco Chrabr, attivo secondo l’opinione prevalente in Bulgaria intorno al 900, difese la scrittura slava in un breve trattato, Sulle lettere. Un tempo, scrive, gli slavi non avevano lettere (né libri), ma «contavano e divinavano con tratti e intagli»; dopo il battesimo scrivevano la loro lingua con lettere latine e greche, senza adattarle. Ma come si potevano scrivere in lettere greche parole come životъ, člověkъ o širota? Così Costantino il Filosofo creò per loro «trentotto lettere, alcune sul modello delle lettere greche, altre secondo la lingua slava»."
       ]
      },
      {
@@ -35304,8 +35304,8 @@
       "typ": "text",
       "h": "Boemia: Sázava ed Emmaus",
       "p": [
-       "La liturgia slava sopravvisse anche in Boemia nel X e nell’XI secolo; secondo la leggenda, Metodio battezzò il principe ceco Bořivoj. Una redazione ceca dell’antico slavo ecclesiastico, con tratti del ceco dell’epoca, è attestata dai Frammenti glagolitici di Praga, da leggende e da glosse. Il suo ultimo centro fu il monastero di Sázava, sorto intorno al 1032 dall’eremo di san Procopio. Il duca Spytihněv II espulse i monaci slavi nel 1056, Vratislao II li richiamò nel 1061 e Břetislav II li espulse definitivamente alla fine del 1096 (la data tradizionale è il 1097). I libri slavi del monastero furono poi distrutti.",
-       "Nel 1347 Carlo IV fondò il monastero di Emmaus (Na Slovanech) nella Città Nuova di Praga e vi fece venire benedettini dalla Croazia che usavano il glagolitico angoloso. Qui, nel 1395, fu completata la parte glagolitica dell’Evangeliario di Reims; una nota nel manoscritto attribuisce la parte cirillica a san Procopio. Il libro lasciò Praga, probabilmente durante le guerre hussite, ricomparve a Costantinopoli e nel 1574 fu donato dal cardinale Carlo di Lorena alla cattedrale di Reims, dove i re di Francia vi prestavano giuramento durante le cerimonie di incoronazione. L’ultimo manoscritto glagolitico di Emmaus risale al 1450–1452. Nel 1926 Leoš Janáček mise in musica un testo della messa in antico slavo ecclesiastico nella sua Messa glagolitica."
+       "La liturgia slava sopravvisse anche in Boemia nel X e nell’XI secolo; secondo la leggenda, Metodio battezzò il principe ceco Bořivoj. Una redazione ceca dell’antico slavo ecclesiastico, con tratti del ceco dell’epoca, è attestata dai Frammenti glagolitici di Praga, da leggende e da glosse. Il suo ultimo centro fu il monastero di Sázava, sorto intorno al 1032 dall’eremo di san Procopio. Il duca Spytihněv II espulse i monaci slavi nel 1056, Vratislao II li richiamò nel 1061 e Bretislao II li espulse definitivamente alla fine del 1096 (la data tradizionale è il 1097). I libri slavi del monastero furono poi distrutti.",
+       "Nel 1347 Carlo IV fondò il monastero di Emmaus (Na Slovanech) nella Città Nuova di Praga e vi fece venire benedettini dalla Croazia che usavano il glagolitico angoloso. Qui, nel 1395, fu completata la parte glagolitica dell’Evangeliario di Reims; una nota nel manoscritto attribuisce la parte cirillica a san Procopio. Il libro lasciò Praga, probabilmente durante le guerre hussite, ricomparve a Costantinopoli e nel 1574 fu donato dal cardinale Carlo di Lorena alla cattedrale di Reims, dove i re di Francia giuravano su di esso durante le cerimonie di incoronazione. L’ultimo manoscritto glagolitico di Emmaus risale al 1450–1452. Nel 1926 Leoš Janáček mise in musica un testo della messa in antico slavo ecclesiastico nella sua Messa glagolitica."
       ]
      },
      {
@@ -36418,7 +36418,7 @@
       "h": "Segni per parole e per sillabe",
       "p": [
        "La scrittura maya è logosillabica, un po’ come la scrittura giapponese moderna. Alcuni segni (logogrammi) rappresentano parole intere, altri una sillaba (consonante più vocale, oppure una sola vocale). Uno scriba poteva scrivere una parola con un unico logogramma, interamente in sillabe oppure con entrambi insieme, e in tal caso il segno sillabico suggeriva come leggere il logogramma. La parola bʼalam «giaguaro» è attestata come logogramma, come sequenza di sillabe bʼa-la-ma e come combinazione delle due.",
-       "I segni sono raggruppati in blocchi quadrati, di solito da uno a quattro segni ciascuno. I blocchi si leggono a coppie di colonne, da sinistra a destra e dall’alto in basso. Una sillaba terminante in consonante si scrive con due segni, di cui la seconda vocale non si pronuncia: il nome Pakal si scrive pa-ka-la."
+       "I segni sono raggruppati in blocchi quadrati, di solito da uno a quattro segni ciascuno. I blocchi si leggono a coppie di colonne, da sinistra a destra e dall’alto in basso. Una sillaba terminante in consonante si scrive con due segni, e la vocale del secondo non si pronuncia: il nome Pakal si scrive pa-ka-la."
       ]
      },
      {
@@ -36565,7 +36565,7 @@
       "h": "Quattro libri",
       "p": [
        "I maya scrivevano anche libri: lunghe strisce di carta ricavata dalla corteccia interna di un fico selvatico, ricoperte da un sottile strato di calce (stucco) e piegate a fisarmonica. Probabilmente ce n’erano centinaia, forse migliaia. Il frate francescano Diego de Landa (in seguito vescovo dello Yucatán), che vi vedeva idolatria, fece bruciare libri e immagini a Maní, nello Yucatán, il 12 luglio 1562; per sua stessa ammissione, 27 libri.",
-       "Sopravvivono solo quattro libri maya, tutti del periodo postclassico (circa XI–XV secolo): i codici di Dresda, di Madrid e di Parigi e il Codice maya del Messico (in precedenza Codice Grolier), la cui autenticità è stata confermata da analisi nel 2016. Il Codice di Dresda fu acquistato a Vienna nel 1739 da Johann Christian Götze, direttore della biblioteca reale di Dresda. Il bibliotecario Ernst Förstemann ne pubblicò un facsimile nel 1880 e negli anni successivi vi ricostruì il calendario e i numeri maya. Durante il bombardamento di Dresda nel febbraio 1945 il codice fu danneggiato dall’acqua in uno scantinato allagato."
+       "Sopravvivono solo quattro libri maya, tutti del periodo postclassico (circa XI–XV secolo): i codici di Dresda, di Madrid e di Parigi e il Codice maya del Messico (in precedenza Codice Grolier), la cui autenticità è stata confermata da analisi nel 2016. Il Codice di Dresda fu acquistato a Vienna nel 1739 da Johann Christian Götze, direttore della biblioteca reale di Dresda. Il bibliotecario Ernst Förstemann ne pubblicò un facsimile nel 1880 e negli anni successivi, a partire da esso, ricostruì il calendario e i numeri maya. Durante il bombardamento di Dresda nel febbraio 1945 il codice fu danneggiato dall’acqua in uno scantinato allagato."
       ]
      },
      {
@@ -36582,7 +36582,7 @@
       "h": "La decifrazione, segno dopo segno",
       "p": [
        "I numeri e il calendario si potevano leggere già alla fine del XIX secolo, ma il resto della scrittura resistette a lungo. A metà del XX secolo il mayanista più influente, lo studioso britannico J. Eric S. Thompson, sosteneva che i segni rappresentassero soprattutto idee, senza rapporto con la pronuncia.",
-       "Nel 1952 il trentenne Jurij Knorozov di Leningrado pubblicò un articolo in cui sosteneva che il cosiddetto alfabeto di Landa fosse in realtà un elenco di sillabe. Thompson respinse il suo lavoro, e poiché in Occidente pochi osavano contraddirlo, esso si affermò solo lentamente. Dal 1960 Tatiana Proskouriakoff dimostrò, a partire dalle stele di Piedras Negras, che le loro date registrano nascite, ascese al trono e morti di sovrani reali: le iscrizioni sono storia, non solo astronomia.",
+       "Nel 1952 il trentenne Jurij Knorozov di Leningrado pubblicò un articolo in cui sosteneva che il cosiddetto alfabeto di Landa fosse in realtà un elenco di sillabe. Thompson respinse il suo lavoro, e poiché in Occidente pochi osavano contraddirlo, esso si affermò solo lentamente. Dal 1960 Tatiana Proskouriakoff dimostrò, a partire dalle stele di Piedras Negras, che le loro date registrano nascite, ascese al trono e morti di sovrani realmente esistiti: le iscrizioni sono storia, non solo astronomia.",
        "La svolta giunse nel dicembre 1973 alla prima conferenza Mesa Redonda di Palenque, dove Linda Schele, Peter Mathews e Floyd Lounsbury lessero gran parte dell’elenco dei re di Palenque. Dagli anni Ottanta le letture si moltiplicarono rapidamente; secondo una stima del 2008 circa l’80% dei testi maya può essere letto foneticamente e circa il 60% compreso."
       ]
      },
@@ -37893,7 +37893,7 @@
       "p": [
        "La scrittura azteca appartiene a una tradizione di scrittura pittografica che il Messico centrale condivideva con i mixtechi e altri popoli. Il tlacuilo, pittore e scriba al tempo stesso, non scriveva righe di segni ma dipingeva immagini: figure, impronte di piedi che indicavano un movimento, date del calendario e i glifi di luoghi e nomi. I concetti erano resi per immagini: la morte come un cadavere avvolto per la sepoltura, la guerra come uno scudo e una mazza, la parola come un piccolo cartiglio che esce dalla bocca. I segni non avevano un ordine di lettura fisso come quello delle iscrizioni maya.",
        "I segni pittografici potevano però rappresentare anche parole (logogrammi) e sfruttarne il suono: l’immagine di una parola veniva usata per un’altra che suonava uguale o simile, come in un rebus. Ciò è più evidente nei nomi di luoghi e persone. Il nome Tenochtitlan si scriveva con una pietra (tetl) da cui cresce un fico d’India (nochtli); in altri nomi il suffisso -tlan «luogo, presso» era rappresentato dall’immagine di denti, in nahuatl tlantli.",
-       "Fin dove arrivasse questo fonetismo è oggetto di discussione. Secondo l’opinione tradizionale la scrittura azteca non era un sistema di scrittura completo, poiché non poteva registrare qualsiasi frase come la scrittura maya, e i libri dipinti venivano interpretati ad alta voce anziché letti parola per parola. L’epigrafista spagnolo Alfonso Lacadena sostenne tuttavia nel 2008 che alla vigilia della conquista gli scribi di Texcoco disponessero di un insieme di segni sillabici. Altri obiettano che le grafie sillabiche sono note soprattutto da manoscritti del primo periodo coloniale e potrebbero essere nate sotto l’influsso dell’alfabeto latino.",
+       "Fin dove arrivasse questo fonetismo è oggetto di discussione. Secondo l’opinione tradizionale la scrittura azteca non era un sistema di scrittura completo, poiché non poteva registrare qualsiasi frase, come invece faceva la scrittura maya, e i libri dipinti venivano interpretati ad alta voce anziché letti parola per parola. L’epigrafista spagnolo Alfonso Lacadena sostenne tuttavia nel 2008 che alla vigilia della conquista gli scribi di Texcoco disponessero di un insieme di segni sillabici. Altri obiettano che le grafie sillabiche sono note soprattutto da manoscritti del primo periodo coloniale e potrebbero essere nate sotto l’influsso dell’alfabeto latino.",
        "I numeri si scrivevano in base venti: le unità con punti, il venti con una bandierina (pantli), il quattrocento con un segno simile a una piuma o a un alberello (tzontli, «capelli»), l’ottomila con una borsa (xiquipilli). Negli elenchi dei tributi del Codice Mendoza si può quindi leggere quanto di ciascun bene pagasse una provincia."
       ]
      },
@@ -39420,7 +39420,7 @@
       "h": "Khipu: registrazioni a nodi",
       "p": [
        "La scrittura in senso stretto, cioè segni che registrano la lingua parlata, era a quanto pare sconosciuta agli inca. Eppure l’amministrazione del loro impero si basava su registrazioni: i khipu (in quechua khipu o kipu, «nodo»). Un khipu è formato da una corda principale da cui pendono altre cordicelle, solo poche in alcuni khipu e diverse migliaia nei più grandi; ai pendenti possono essere attaccate ulteriori cordicelle sussidiarie. Le cordicelle erano filate in cotone o in lana di lama, alpaca e altri camelidi. L’informazione sta nel tipo e nella posizione dei nodi, ma anche nel colore delle cordicelle, nel loro ordine, nel senso della torsione e nel modo in cui sono attaccate.",
-       "I khipu sono più antichi degli inca. I primi esemplari indiscussi sono khipu di circa il 600–1000 d.C. attribuiti allo Stato wari. Sono più piccoli dei khipu inca, con cordicelle avvolte in colori vivaci e un sistema di nodi non ancora compreso. Ritrovamenti più antichi da Caral (circa 3000–1800 a.C.) e dal periodo Paracas tardo sono discussi come precursori. Gli inca usavano i khipu per registrare censimenti, tributi e prestazioni di lavoro (mit'a), il contenuto dei magazzini, l’esercito e il calendario.",
+       "I khipu sono più antichi degli inca. I primi esemplari indiscussi sono khipu di circa il 600–1000 d.C. attribuiti allo Stato wari. Sono più piccoli dei khipu inca, con cordicelle avvolte in colori vivaci e un sistema di nodi non ancora compreso. È controverso se ritrovamenti più antichi da Caral (circa 3000–1800 a.C.) e dal periodo Paracas tardo ne siano i precursori. Gli inca usavano i khipu per registrare censimenti, tributi e prestazioni di lavoro (mit'a), il contenuto dei magazzini, l’esercito e il calendario.",
        "I khipu erano annodati e letti dai khipukamayuq, «specialisti dei khipu». Secondo le cronache coloniali, i figli della nobiltà imparavano a leggerli nel terzo anno della scuola chiamata yachay wasi, «casa del sapere». Quando nel 1533 Hernando Pizarro percorse la strada reale dagli altopiani alla costa, annotò come i khipukamayuq sciogliessero nodi in una sezione di un khipu e li riannodassero in un’altra, probabilmente mentre distribuivano rifornimenti agli spagnoli. È probabilmente la più antica menzione europea dei khipu. Guaman Poma de Ayala scrisse in seguito che i khipukamayuq erano in grado di «leggerli» a occhi chiusi."
       ]
      },
@@ -40936,7 +40936,7 @@
       "typ": "text",
       "h": "Prestito o eredità?",
       "p": [
-       "Le parole di lingue diverse possono somigliarsi per due ragioni. Le parole affini (cognate) sono ereditate da lingue imparentate da un antenato comune: il ceco tři, il latino trēs e l'inglese three si somigliano perché risalgono tutti allo stesso numerale indoeuropeo, e i mutamenti fonetici che li hanno allontanati sono regolari. I prestiti, invece, sono ripresi da un'altra lingua, che non deve essere affatto imparentata. L'inglese e l'ungherese tea si scrivono allo stesso modo, sebbene l'inglese sia una lingua indoeuropea e l'ungherese uralica; hanno in comune soltanto il fatto di aver preso entrambi in prestito la parola.",
+       "Le parole di lingue diverse possono somigliarsi per due ragioni. Le parole affini (cognate) sono ereditate da lingue imparentate da un antenato comune: il ceco tři, il latino trēs e l'inglese three si somigliano perché risalgono tutti allo stesso numerale indoeuropeo, e i mutamenti fonetici che li hanno allontanati sono regolari. I prestiti, invece, sono ripresi da un'altra lingua, che non è necessariamente imparentata. L'inglese e l'ungherese tea si scrivono allo stesso modo, sebbene l'inglese sia una lingua indoeuropea e l'ungherese uralica; hanno in comune soltanto il fatto di aver preso entrambi in prestito la parola.",
        "Un prestito che si è diffuso in molte lingue, spesso lontane e non imparentate, si chiama parola viaggiatrice o migrante; i linguisti usano anche il termine tedesco Wanderwort (plurale Wanderwörter). Parole di questo tipo viaggiano di solito con merci, colture, animali o nuove tecniche. Per le Wanderwörter antiche, come le parole per rame, argento, vino o canapa, è spesso difficile stabilire da quale lingua siano partite. Il tè è un caso insolito, perché si è diffuso relativamente tardi e i suoi percorsi sono ben documentati."
       ]
      },
@@ -43046,7 +43046,7 @@
       "typ": "text",
       "h": "Una lingua che non si è mai interrotta",
       "p": [
-       "Il latino non si è estinto come l'etrusco, i cui parlanti passarono gradualmente a un'altra lingua. In Italia, in Gallia, nella penisola iberica e lungo il Danubio le persone trasmisero la propria parlata ai figli senza interruzioni; semplicemente, essa cambiò da una generazione all'altra. Nessuno avrebbe potuto vivere il giorno in cui smise di parlare latino e cominciò a parlare francese o spagnolo. Il confine tra «latino» e «lingue romanze» si traccia a posteriori, nel punto in cui i cambiamenti si erano accumulati abbastanza perché la gente li notasse e li mettesse per iscritto.",
+       "Il latino non si è estinto come l'etrusco, i cui parlanti passarono gradualmente a un'altra lingua. In Italia, in Gallia, nella penisola iberica e lungo il Danubio le persone trasmisero la propria parlata ai figli senza interruzioni; semplicemente, essa cambiò da una generazione all'altra. Nessuno avrebbe potuto vivere il giorno in cui si smise di parlare latino e si cominciò a parlare francese o spagnolo. Il confine tra «latino» e «lingue romanze» si traccia a posteriori, nel punto in cui i cambiamenti si erano accumulati abbastanza perché la gente li notasse e li mettesse per iscritto.",
        "Le lingue romanze continuano il latino parlato, non la forma scritta normativa nota dalla letteratura. Le due coesistettero per tutto il tempo: il latino scritto cambiava lentamente ed era sostenuto dalla scuola, mentre la lingua parlata cambiava più in fretta. Non erano però due lingue diverse. Il latinista ungherese József Herman, come oggi la maggior parte degli studiosi, sottolinea che non vi fu mai un divario incolmabile tra latino scritto e parlato, né tra la lingua delle persone colte e quella del popolo; si trattava di una gamma continua di registri, come in qualsiasi lingua."
       ]
      },
@@ -43054,7 +43054,7 @@
       "typ": "rameček",
       "h": "Perché latino «volgare»",
       "p": [
-       "La parola volgare non ha qui nulla a che fare con la rozzezza. Il latino vulgus significa «il popolo, la gente comune», e vulgaris «comune, ordinario». Gli stessi Romani chiamavano la lingua semplice e disadorna sermo vulgaris o sermo plebeius, «la lingua del popolo». La Vulgata, la Bibbia latina tradotta in gran parte da san Girolamo a cavallo del V secolo, prende il nome dalla stessa parola: la versione «di uso comune».",
+       "La parola volgare non ha qui nulla a che fare con la rozzezza. Il latino vulgus significa «il popolo, la gente comune», e vulgaris «comune, ordinario». Gli stessi Romani chiamavano la lingua semplice e disadorna sermo vulgaris o sermo plebeius, «la lingua del popolo». La Vulgata, la Bibbia latina tradotta in gran parte da san Girolamo a cavallo tra il IV e il V secolo, prende il nome dalla stessa parola: la versione «di uso comune».",
        "Come termine scientifico, latino volgare si affermò nel Rinascimento, quando gli umanisti italiani cercarono l'origine della propria lingua in un latino «corrotto». Molti linguisti lo considerano oggi impreciso, perché accomuna il latino colloquiale di secoli, regioni e gruppi sociali diversi, e preferiscono parlare di latino parlato, colloquiale o tardo. Il protoromanzo, invece, indica l'antenato comune ricostruito delle lingue romanze."
       ]
      },
@@ -43332,7 +43332,7 @@
       "h": "I primi testi in volgare",
       "p": [
        "Il più antico testo continuo scritto intenzionalmente in una lingua romanza antica della Francia sono i Giuramenti di Strasburgo del 14 febbraio 842, conservati nelle Historiae latine di Nitardo, nipote di Carlo Magno (se ne parla più diffusamente nella pagina su Roma). Nitardo introduce il giuramento dei soldati con la frase latina Romana lingua sic se habet, «in lingua romanza suona così», e il corrispondente giuramento dell'esercito di Ludovico il Germanico con Teudisca autem lingua, «e in lingua tedesca». Di una quarantina d'anni più recente è la Sequenza di sant'Eulalia (intorno all'880), la più antica poesia in francese giunta fino a noi.",
-       "In Italia le prime testimonianze datate con precisione sono i Placiti cassinesi, dichiarazioni giurate degli anni 960–963 in controversie su terre appartenenti al monastero di Montecassino. Nel marzo 960 un testimone davanti al tribunale di Capua dichiarò (è il Placito capuano): Sao ko kelle terre, per kelle fini que ki contene, trenta anni le possette parte sancti Benedicti – «So che quelle terre, entro i confini qui descritti, per trent'anni le ha possedute la parte di san Benedetto», cioè il monastero. Il verbale latino del processo riportò questa frase in volgare, secondo l'interpretazione corrente perché tutti i presenti la capissero. Il più antico Indovinello veronese (fine dell'VIII o inizio del IX secolo) si colloca al confine tra latino e romanzo, e la sua classificazione è controversa.",
+       "In Italia le prime testimonianze datate con precisione sono i Placiti cassinesi, dichiarazioni giurate degli anni 960–963 in controversie su terre appartenenti al monastero di Montecassino. Nel marzo 960 un testimone davanti al tribunale di Capua dichiarò (è il Placito capuano): Sao ko kelle terre, per kelle fini que ki contene, trenta anni le possette parte sancti Benedicti – «So che quelle terre, entro i confini qui descritti, per trent'anni le ha possedute la parte di san Benedetto», cioè il monastero. Il verbale latino del processo riportò questa frase in volgare, secondo l'interpretazione corrente perché tutti i presenti la capissero. L'Indovinello veronese, più antico (fine dell'VIII o inizio del IX secolo), si colloca al confine tra latino e romanzo, e la sua classificazione è controversa.",
        "Nella penisola iberica tra le prime testimonianze vi sono le Glosas Emilianenses, annotazioni scritte tra le righe e ai margini di un manoscritto latino del monastero di San Millán de la Cogolla, nella Rioja. Risalgono al X o all'XI secolo; la datazione esatta è controversa. Oltre alle note in romanzo contengono due brevi glosse in basco, citate di solito come le più antiche frasi scritte in quella lingua. Tra i più antichi testi datati in portoghese c'è il testamento del re Alfonso II del 1214. Il romeno è attestato per ultimo: il più antico testo romeno conservato databile con precisione è una lettera inviata nel 1521 da Neacșu di Câmpulung a Brașov. È scritta in cirillico; l'alfabeto latino si impose nel romeno solo nel XIX secolo (ufficialmente nel 1860–1862)."
       ]
      },
@@ -43345,7 +43345,7 @@
       "typ": "text",
       "h": "Il protoromanzo: che cosa si può ricostruire",
       "p": [
-       "Per la linguistica storica le lingue romanze sono un caso particolare: il loro antenato è noto dai testi. Il metodo comparativo, usato altrimenti per ricostruire il protoindoeuropeo o il protoslavo, può ricavare dalle lingue figlie il loro antenato comune, il protoromanzo, e il risultato può essere verificato sul latino reale. Le forme non attestate da nessuna parte, che esistono solo come ricostruzioni, sono contrassegnate da un asterisco.",
+       "Per la linguistica storica le lingue romanze sono un caso particolare: il loro antenato è noto dai testi. Il metodo comparativo, usato di solito per ricostruire il protoindoeuropeo o il protoslavo, può ricavare dalle lingue figlie il loro antenato comune, il protoromanzo, e il risultato può essere verificato sul latino reale. Le forme non attestate da nessuna parte, che esistono solo come ricostruzioni, sono contrassegnate da un asterisco.",
        "Il confronto mostra che la ricostruzione coglie in modo affidabile la forma parlata della lingua che le fonti scritte nascondono: nove vocali senza distinzione di quantità al posto delle dieci classiche (cinque brevi e cinque lunghe), che la maggior parte delle lingue romanze ridusse ulteriormente a sette, l'accusativo privo di -m, le parole colloquiali e perfino parole che non compaiono mai nei testi latini. Un esempio è *captiare, «cacciare», derivato da captare, «afferrare»: diede l'italiano cacciare, il francese chasser, lo spagnolo cazar e il portoghese caçar. Il progetto internazionale Dictionnaire Étymologique Roman (DÉRom), avviato nel 2008, ricostruisce sistematicamente in questo modo il lessico di base del protoromanzo.",
        "La ricostruzione ha però i suoi limiti. Ciò che è scomparso da tutte le lingue figlie non si può recuperare a partire da esse: nessuno potrebbe dedurre dalle lingue romanze che il latino aveva un futuro del tipo cantabo, un passivo formato con desinenze (amatur, «è amato») o la maggior parte dei suoi casi. La ricostruzione non fornisce nemmeno date precise; appiana le differenze tra regioni e gruppi sociali e coglie lo stato delle cose immediatamente prima della separazione delle lingue, non il latino dell'età classica. Il protoromanzo non è quindi la stessa cosa del «latino volgare»; è un modello che si avvicina al latino parlato dal lato opposto rispetto alle fonti scritte."
       ]
@@ -44475,16 +44475,16 @@
       "p": [
        "Dopo la sconfitta della rivolta degli Stati alla Montagna Bianca nel 1620, gran parte della nobiltà e del ceto colto non cattolici lasciò le terre ceche per l'esilio, tra cui Jan Amos Komenský (Comenio). Il Rinnovato ordinamento territoriale del 1627 (in Moravia del 1628) equiparò il tedesco al ceco. Nei decenni seguenti l'uso del ceco standard si restrinse gradualmente: per prima venne meno la scienza, poi gran parte della letteratura più ambiziosa e infine l'amministrazione. Il ceco continuò a essere scritto e stampato, in esilio e in patria, soprattutto negli ambienti gesuiti; si producevano prediche, poesia religiosa e letture per i lettori meno istruiti. Negli anni Settanta del Seicento il gesuita Bohuslav Balbín scrisse in latino una difesa della lingua ceca (Dissertatio apologetica), che fu stampata solo nel 1775.",
        "Mentre lo standard scritto cambiò poco in questo periodo, il ceco parlato continuò a evolversi. I dialetti, soprattutto quelli della Moravia e della Slesia, si allontanarono ulteriormente tra loro, e i prestiti tedeschi penetrarono nella lingua parlata delle città. Il divario tra la lingua dei libri e quella di tutti i giorni si allargò, e la codificazione della Rinascita nazionale dovette poi farci i conti.",
-       "Il XVII e il XVIII secolo furono chiamati «epoca delle tenebre» (doba temna). L'etichetta è un giudizio posteriore, risorgimentale, reso popolare soprattutto dal romanzo di Alois Jirásek Temno («Tenebre», 1915). Gli storici della letteratura la considerano oggi fuorviante come descrizione complessiva: il periodo vide sì un declino della scienza e della letteratura ambiziosa in lingua ceca, ma anche un ampio corpus di scritti barocchi, e il modo in cui valutarlo resta oggetto di dibattito scientifico."
+       "Il XVII e il XVIII secolo furono chiamati «epoca delle tenebre» (doba temna). L'etichetta è un giudizio posteriore, nato con la Rinascita nazionale, reso popolare soprattutto dal romanzo di Alois Jirásek Temno («Tenebre», 1915). Gli storici della letteratura la considerano oggi fuorviante come descrizione complessiva: il periodo vide sì un declino della scienza e della letteratura ambiziosa in lingua ceca, ma anche un ampio corpus di scritti barocchi, e il modo in cui valutarlo resta oggetto di dibattito scientifico."
       ]
      },
      {
       "typ": "text",
-      "h": "Il Risorgimento: Dobrovský, Jungmann, Šafařík",
+      "h": "La Rinascita nazionale: Dobrovský, Jungmann, Šafařík",
       "p": [
        "Alla fine del XVIII secolo, quando i tentativi di Giuseppe II di fare del tedesco l'unica lingua dell'amministrazione si rivelarono inattuabili, i dotti si proposero di restituire al ceco il ruolo di lingua della letteratura e della cultura. La parlata rurale della gente comune era loro estranea, e come modello scelsero la lingua letteraria della fine del XVI secolo – la cosiddetta età di Veleslavín – e le opere di Comenio. L'opera decisiva fu la grammatica di Josef Dobrovský (1753–1829) Ausführliches Lehrgebäude der böhmischen Sprache («Grammatica dettagliata della lingua ceca») del 1809, scritta in tedesco; nella seconda edizione del 1819 Dobrovský introdusse la cosiddetta correzione analogica, che regolarizzò la scrittura di i e y dopo c, s, z nelle desinenze secondo i modelli grammaticali. Considerava la lingua della Bibbia di Kralice il modello del ceco standard.",
        "Codificando il ceco del Cinquecento, Dobrovský lasciò fuori dallo standard i cambiamenti avvenuti nel frattempo nel ceco parlato della Boemia – per esempio il passaggio di ý a ej (dobrej, bejt), che nella lingua parlata compare già nel XV secolo. Per questo il ceco standard e il ceco comune convivono oggi con differenze regolari tra loro.",
-       "Il secondo pilastro della codificazione risorgimentale fu il Dizionario ceco-tedesco in cinque volumi di Josef Jungmann (1773–1847), pubblicato nel 1835–1839 (talvolta indicato come 1834–1839), con circa 120 000 lemmi. Jungmann attinse al lessico dell'epoca di Kralice e alla lingua dei suoi contemporanei; riportò in vita parole dimenticate da testi antichi, prese in prestito da altre lingue slave e ne coniò di nuove, molte delle quali attecchirono. Nello stesso periodo nacque la terminologia scientifica ceca; Jan Svatopluk Presl, per esempio, introdusse i nomi chimici kyslík (ossigeno) e vodík (idrogeno).",
+       "Il secondo pilastro della codificazione della Rinascita nazionale fu il Dizionario ceco-tedesco in cinque volumi di Josef Jungmann (1773–1847), pubblicato nel 1835–1839 (talvolta indicato come 1834–1839), con circa 120 000 lemmi. Jungmann attinse al lessico dell'epoca di Kralice e alla lingua dei suoi contemporanei; riportò in vita parole dimenticate da testi antichi, prese in prestito da altre lingue slave e ne coniò di nuove, molte delle quali attecchirono. Nello stesso periodo nacque la terminologia scientifica ceca; Jan Svatopluk Presl, per esempio, introdusse i nomi chimici kyslík (ossigeno) e vodík (idrogeno).",
        "Alla metà del XIX secolo l'ortografia si avvicinò a quella odierna. Negli anni Quaranta prevalse la cosiddetta oprava skladná («correzione coerente»), legata al nome di Pavel Josef Šafařík (1795–1861): si cominciò a scrivere j al posto di g e í al posto di j; le stampe della Matice česká la seguirono dal 1842. La scrittura di v al posto di w e di ou al posto di au, che il comitato del Museo respingeva ancora nel 1842, si affermò solo dal 1849–1850. Il fraktur, il carattere gotico delle stampe più antiche, fu gradualmente sostituito dal carattere romano."
       ]
      },
@@ -45472,7 +45472,7 @@
       "h": "Il mannese: la lingua che non scomparve",
       "p": [
        "Il mannese (Gaelg) è la lingua celtica goidelica dell'Isola di Man, nel Mare d'Irlanda, strettamente imparentata con l'irlandese e il gaelico scozzese. Henry Jenner stimò nel 1874 che lo parlasse ancora circa il 30% della popolazione dell'isola. I genitori, però, smisero di trasmetterlo ai figli, ritenendo l'inglese più utile, e al censimento del 1961 solo 165 persone dichiararono di conoscere il mannese.",
-       "La Società per la lingua mannese (Yn Çheshaght Ghailckagh) fu fondata nel 1899. Alla metà del XX secolo restavano solo pochi anziani parlanti nativi; nel 1948, su iniziativa di Éamon de Valera, la Commissione irlandese per il folclore li registrò, e le registrazioni aiutarono in seguito la rinascita. Ned Maddrell, morto il 27 dicembre 1974, è spesso indicato come l'ultimo parlante nativo del mannese – più precisamente, come l'ultima persona cresciuta in una comunità in cui il mannese era la lingua di tutti i giorni. «Ultimo parlante» è sempre una semplificazione, nel caso delle lingue che si estinguono, perché il confine tra parlanti nativi, persone che hanno solo sentito la lingua da bambine e chi l'ha imparata più tardi tende a essere sfumato.",
+       "La Società per la lingua mannese (Yn Çheshaght Ghailckagh) fu fondata nel 1899. Alla metà del XX secolo restavano solo pochi anziani parlanti nativi; nel 1948, su iniziativa di Éamon de Valera, la Commissione irlandese per il folclore li registrò, e le registrazioni aiutarono in seguito la rinascita. Ned Maddrell, morto il 27 dicembre 1974, è spesso indicato come l'ultimo parlante nativo del mannese – più precisamente, come l'ultima persona cresciuta in una comunità in cui il mannese era la lingua di tutti i giorni. «Ultimo parlante» è sempre in qualche misura una semplificazione, nel caso delle lingue che si estinguono, perché il confine tra parlanti nativi, persone che hanno solo sentito la lingua da bambine e chi l'ha imparata più tardi tende a essere sfumato.",
        "Il mannese non cadde mai del tutto in disuso. Alcuni appassionati lo impararono dagli ultimi parlanti e da fonti scritte, tra cui la traduzione mannese della Bibbia, pubblicata per la prima volta integralmente in un unico volume nel 1775. Nel 1992 fu istituita un'unità per la lingua mannese diretta da Brian Stowell, e oggi il mannese è insegnato come materia facoltativa in tutte le scuole primarie e secondarie dell'isola. La Bunscoill Ghaelgagh, una scuola primaria a St John's, svolge quasi tutto l'insegnamento in mannese (nel 2016 aveva 67 alunni), e i gruppi di gioco Mooinjer Veggey avvicinano alla lingua bambini ancora più piccoli. Il primo romanzo in mannese è uscito nel 2006.",
        "Al censimento del 2021 oltre 2000 residenti dell'isola dichiararono una qualche conoscenza del mannese, quasi tutti come seconda lingua; se i bambini cresciuti in mannese dalla nascita vadano considerati nuovi parlanti nativi è oggetto di dibattito. Nel 2009 l'Atlas of the World's Languages in Danger dell'UNESCO classificò il mannese come estinto, benché sull'isola lo parlassero centinaia di persone; in seguito l'UNESCO modificò la classificazione in «in pericolo critico». Questo atlante, seguendo Glottolog (fonte: ElCat), classifica il mannese come lingua in risveglio."
       ]
@@ -46794,7 +46794,7 @@
       "p": [
        "Una lingua isolata è una lingua di cui non è stata dimostrata la parentela con nessun'altra; forma una famiglia a sé. Ciò non significa che non abbia mai avuto parenti. O questi si sono estinti senza lasciare testimonianze, o la parentela è così remota che il metodo comparativo non riesce più a individuarla: dopo molti millenni di cambiamenti, le corrispondenze fonetiche regolari si perdono. Una lingua isolata non è quindi un mistero in senso sensazionalistico, ma un esito ordinario della storia linguistica. A seconda di quanto sono rigidi i criteri, se ne contano oltre un centinaio (Glottolog ne elenca circa 180, comprese quelle estinte), per lo più nelle Americhe.",
        "Il confine tra lingua isolata e famiglia può spostarsi. Il giapponese un tempo era classificato come isolato; oggi è raggruppato con le lingue ryukyuane nella famiglia giapponica. Il ket in Siberia è l'ultima lingua jenisseiana viva, eppure non è un isolato, perché i suoi parenti estinti, come l'arin, sono stati documentati. Le lingue isolate vanno inoltre distinte dalle lingue non classificate, di cui si sa troppo poco per classificarle in qualsiasi modo.",
-       "La lingua isolata più nota è il basco, l'unica lingua isolata d'Europa e, secondo l'opinione prevalente, l'unica lingua superstite dell'Europa occidentale anteriore all'arrivo delle lingue indoeuropee. L'aquitano, noto solo da nomi in iscrizioni latine del I–III secolo d.C., è considerato suo antenato o stretto parente (il nome Cison corrisponde al basco gizon ‘uomo’). L'aquitano è per lo più considerato l'antenato diretto del basco, ed è per questo che il basco resta un isolato; se fosse una lingua sorella, le due formerebbero una piccola famiglia vasconica. I tentativi di collegare il basco al georgiano sono oggi respinti, e un legame con l'iberico non è stato dimostrato. Dell'antichità, il sumerico e l'elamico sono isolati ben documentati: i testi sono così numerosi che eventuali parenti viventi sarebbero riconoscibili."
+       "La lingua isolata più nota è il basco, l'unica lingua isolata d'Europa e, secondo l'opinione prevalente, l'unica lingua superstite dell'Europa occidentale anteriore all'arrivo delle lingue indoeuropee. L'aquitano, noto solo da nomi in iscrizioni latine del I–III secolo d.C., è considerato suo antenato o stretto parente (il nome Cison corrisponde al basco gizon ‘uomo’). L'aquitano è per lo più considerato l'antenato diretto del basco, ed è per questo che il basco resta un isolato; se fosse una lingua sorella, le due formerebbero una piccola famiglia vasconica. I tentativi di collegare il basco al georgiano sono oggi respinti, e un legame con l'iberico non è stato dimostrato. Tra le lingue dell'antichità, il sumerico e l'elamico sono isolati ben documentati: i testi sono così numerosi che eventuali parenti viventi sarebbero riconoscibili."
       ]
      },
      {
@@ -46940,7 +46940,7 @@
       "pojmy": [
        [
         "Lingua isolata",
-        "Una lingua senza una parentela dimostrata con nessun'altra; forma una famiglia a sé. Ciò non significa che non abbia mai avuto parenti, ma solo che nessuno è stato dimostrato.",
+        "Una lingua senza una parentela dimostrata con nessun'altra; forma una famiglia a sé. Ciò non significa che non abbia mai avuto parenti, ma solo che nessuna parentela è stata dimostrata.",
         "Basco, burushaski, hadza; tra le lingue estinte il sumerico e l'elamico."
        ],
        [
