@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>The Language Atlas</title>
-<meta name="description" content="An interactive atlas of all 7,967 languages of the world after Glottolog: distribution, language families and trees, vitality, typology from WALS and sound inventories from PHOIBLE.">
+<title>Atlante delle lingue</title>
+<meta name="description" content="Un atlante interattivo di tutte le 7967 lingue del mondo secondo Glottolog: diffusione, famiglie e alberi linguistici, vitalità, tipologia dal WALS e inventari fonologici da PHOIBLE.">
 <meta name="theme-color" content="#FBF9F4" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#050914" media="(prefers-color-scheme: dark)">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20100%20100%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20aria-hidden%3D%22true%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2245%22%20fill%3D%22%23FBF9F4%22%20stroke%3D%22%2315192B%22%20stroke-width%3D%223.2%22%2F%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2238.5%22%20fill%3D%22none%22%20stroke%3D%22%2315192B%22%20stroke-width%3D%221.3%22%20opacity%3D%22.5%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%232E63D6%22%20stroke-width%3D%221.8%22%20opacity%3D%22.75%22%3E%3Cellipse%20cx%3D%2250%22%20cy%3D%2250%22%20rx%3D%2231%22%20ry%3D%2238.5%22%2F%3E%3Cpath%20d%3D%22M11.5%2050h29M59.5%2050h29%22%2F%3E%3C%2Fg%3E%3Cpath%20transform%3D%22translate(36%2034)%20scale(18)%22%20d%3D%22M0.038%20-0.355%200.281%200.271Q0.295%200.307%200.313%200.321Q0.331%200.334%200.345%200.335V0.355Q0.315%200.353%200.274%200.352Q0.234%200.352%200.193%200.352Q0.147%200.352%200.106%200.352Q0.065%200.353%200.04%200.355V0.335Q0.091%200.333%200.105%200.318Q0.118%200.302%200.098%200.251L-0.072%20-0.214L-0.053%20-0.24L-0.206%200.156Q-0.228%200.211%20-0.232%200.246Q-0.237%200.281%20-0.227%200.3Q-0.218%200.319%20-0.196%200.326Q-0.175%200.334%20-0.145%200.335V0.355Q-0.178%200.353%20-0.208%200.352Q-0.238%200.352%20-0.269%200.352Q-0.291%200.352%20-0.31%200.352Q-0.33%200.353%20-0.345%200.355V0.335Q-0.324%200.331%20-0.301%200.308Q-0.28%200.285%20-0.259%200.23L-0.031%20-0.355Q-0.015%20-0.354%200.004%20-0.354Q0.022%20-0.354%200.038%20-0.355ZM0.108%200.067V0.087H-0.19L-0.18%200.067Z%22%20fill%3D%22%2315192B%22%2F%3E%3Cpath%20transform%3D%22translate(64%2034)%20scale(18)%22%20d%3D%22M0.342%20-0.361V-0.341Q0.309%20-0.34%200.293%20-0.334Q0.277%20-0.327%200.272%20-0.309Q0.266%20-0.292%200.266%20-0.255V0.241Q0.266%200.277%200.272%200.295Q0.277%200.313%200.293%200.319Q0.309%200.325%200.342%200.327V0.347Q0.317%200.345%200.274%200.345Q0.232%200.344%200.183%200.344Q0.143%200.344%200.101%200.345Q0.058%200.345%200.032%200.347V0.327Q0.064%200.325%200.08%200.319Q0.096%200.313%200.102%200.295Q0.107%200.277%200.107%200.241V-0.255Q0.107%20-0.307%200.096%20-0.324Q0.085%20-0.341%200.045%20-0.341Q-0.023%20-0.341%20-0.051%20-0.298Q-0.079%20-0.255%20-0.079%20-0.178Q-0.079%20-0.131%20-0.068%20-0.092Q-0.056%20-0.054%20-0.025%20-0.031Q0.006%20-0.009%200.065%20-0.009H0.151Q0.151%20-0.009%200.151%200.001Q0.151%200.011%200.151%200.011H0.054Q-0.034%200.011%20-0.092%20-0.005Q-0.15%20-0.021%20-0.184%20-0.048Q-0.218%20-0.075%20-0.231%20-0.109Q-0.244%20-0.143%20-0.244%20-0.18Q-0.244%20-0.237%20-0.214%20-0.277Q-0.183%20-0.318%20-0.122%20-0.339Q-0.06%20-0.36%200.032%20-0.36Q0.051%20-0.36%200.096%20-0.359Q0.141%20-0.358%200.19%20-0.358Q0.232%20-0.358%200.274%20-0.359Q0.317%20-0.36%200.342%20-0.361ZM0.145%20-0.006%200.143%200.011H0.034Q0.004%200.011%20-0.014%200.03Q-0.032%200.048%20-0.042%200.08Q-0.051%200.111%20-0.058%200.153L-0.077%200.253Q-0.087%200.315%20-0.122%200.338Q-0.158%200.361%20-0.211%200.361Q-0.254%200.361%20-0.284%200.348Q-0.316%200.334%20-0.342%200.303L-0.328%200.291Q-0.318%200.302%20-0.309%200.308Q-0.3%200.313%20-0.287%200.314Q-0.269%200.314%20-0.259%200.298Q-0.248%200.282%20-0.24%200.242L-0.22%200.139Q-0.207%200.075%20-0.161%200.047Q-0.114%200.019%20-0.029%200.008Q-0.01%200.005%200.01%200.003Q0.029%200.001%200.06%20-0.002Q0.092%20-0.004%200.145%20-0.006Z%22%20fill%3D%22%2315192B%22%2F%3E%3Cpath%20transform%3D%22translate(50%2051)%20scale(18)%22%20d%3D%22M0.197%200.329Q0.196%200.318%200.192%200.305Q0.188%200.292%200.179%200.277Q0.169%200.263%200.149%200.245L-0.211%20-0.098Q-0.237%20-0.123%20-0.25%20-0.154Q-0.263%20-0.185%20-0.263%20-0.215Q-0.263%20-0.242%20-0.256%20-0.268Q-0.248%20-0.294%20-0.235%20-0.329H-0.201V-0.312Q-0.201%20-0.294%20-0.192%20-0.273Q-0.183%20-0.252%20-0.159%20-0.228L0.211%200.122Q0.226%200.137%200.236%200.154Q0.245%200.172%200.25%200.191Q0.255%200.21%200.255%200.231Q0.255%200.26%200.246%200.282Q0.236%200.304%200.221%200.329ZM-0.267%200.319V0.242H-0.25Q-0.233%200.242%20-0.227%200.235Q-0.221%200.229%20-0.225%200.213L-0.242%200.144Q-0.253%200.1%20-0.244%200.057Q-0.236%200.015%20-0.208%20-0.022L-0.158%20-0.089L-0.126%20-0.054L-0.152%20-0.012Q-0.173%200.022%20-0.173%200.048Q-0.174%200.074%20-0.153%200.111L-0.121%200.172Q-0.104%200.202%20-0.099%200.237Q-0.095%200.273%20-0.112%200.319ZM0.141%200.058%200.09%200.011Q0.09%200.001%200.096%20-0.016Q0.102%20-0.033%200.111%20-0.051Q0.12%20-0.07%200.129%20-0.084L0.173%20-0.158L0.22%20-0.142L0.172%20-0.062Q0.16%20-0.042%200.153%20-0.023Q0.146%20-0.004%200.144%200.016Q0.141%200.036%200.141%200.058ZM0.253%20-0.099%200.128%20-0.115Q0.094%20-0.119%200.081%20-0.139Q0.067%20-0.158%200.067%20-0.201Q0.067%20-0.227%200.073%20-0.259Q0.078%20-0.291%200.091%20-0.329H0.126V-0.311Q0.126%20-0.294%200.136%20-0.285Q0.146%20-0.275%200.165%20-0.273L0.209%20-0.267Q0.239%20-0.263%200.253%20-0.244Q0.267%20-0.225%200.267%20-0.189Q0.267%20-0.167%200.264%20-0.147Q0.26%20-0.128%200.253%20-0.099Z%22%20fill%3D%22%2315192B%22%2F%3E%3Cpath%20transform%3D%22translate(36.5%2067.5)%20scale(18)%22%20d%3D%22M0.019%200.388Q-0.059%200.388%20-0.116%200.36Q-0.173%200.332%20-0.204%200.28Q-0.235%200.228%20-0.235%200.158Q-0.235%200.05%20-0.16%20-0.031Q-0.192%20-0.046%20-0.217%20-0.07Q-0.241%20-0.095%20-0.253%20-0.122Q-0.265%20-0.149%20-0.265%20-0.174Q-0.265%20-0.204%20-0.254%20-0.238Q-0.242%20-0.273%20-0.222%20-0.304Q-0.201%20-0.336%20-0.176%20-0.357Q-0.139%20-0.388%20-0.098%20-0.388Q-0.063%20-0.388%20-0.025%20-0.365Q0.013%20-0.342%200.054%20-0.295L0.033%20-0.255Q0.003%20-0.267%20-0.023%20-0.272Q-0.049%20-0.278%20-0.072%20-0.278Q-0.107%20-0.278%20-0.135%20-0.27Q-0.162%20-0.263%20-0.194%20-0.246Q-0.191%20-0.192%20-0.158%20-0.156Q-0.124%20-0.12%20-0.067%20-0.106Q-0.023%20-0.132%200.025%20-0.153Q0.073%20-0.175%200.127%20-0.193Q0.138%20-0.177%200.138%20-0.142Q0.138%20-0.121%200.129%20-0.105Q0.121%20-0.088%200.102%20-0.075Q0.094%20-0.069%200.076%20-0.06Q0.058%20-0.052%200.031%20-0.041Q-0.056%20-0.007%20-0.099%200.021Q-0.142%200.049%20-0.163%200.082Q-0.173%200.098%20-0.179%200.116Q-0.184%200.134%20-0.184%200.152Q-0.184%200.209%20-0.132%200.241Q-0.079%200.273%200.021%200.273Q0.041%200.273%200.062%200.272Q0.083%200.27%200.105%200.267Q0.126%200.264%200.163%200.257Q0.2%200.249%200.252%200.237L0.265%200.279Q0.179%200.332%200.114%200.36Q0.05%200.388%200.019%200.388Z%22%20fill%3D%22%2315192B%22%2F%3E%3Cpath%20transform%3D%22translate(64%2067)%20scale(18)%22%20d%3D%22M-0.083%200.413Q0.048%200.388%200.131%200.343Q0.214%200.297%200.254%200.237Q0.293%200.178%200.293%200.111Q0.293%200.056%200.268%200.013Q0.243%20-0.029%200.198%20-0.053Q0.153%20-0.077%200.09%20-0.077Q0.04%20-0.077%20-0.011%20-0.062Q-0.062%20-0.048%20-0.121%20-0.015Q-0.18%200.017%20-0.224%200.062Q-0.268%200.107%20-0.291%200.152Q-0.315%200.198%20-0.315%200.233Q-0.315%200.247%20-0.309%200.254Q-0.303%200.261%20-0.291%200.261Q-0.264%200.261%20-0.231%200.247Q-0.199%200.233%20-0.165%200.211Q-0.131%200.189%20-0.103%200.164Q-0.076%200.141%20-0.048%200.11Q-0.02%200.078%200.006%200.043Q0.032%200.008%200.052%20-0.026Q0.071%20-0.06%200.08%20-0.087Q0.09%20-0.114%200.082%20-0.133Q0.074%20-0.151%200.045%20-0.17L0.053%20-0.182Q0.082%20-0.177%200.105%20-0.169Q0.127%20-0.16%200.142%20-0.144Q0.152%20-0.134%200.154%20-0.122Q0.156%20-0.11%200.152%20-0.096Q0.137%20-0.045%200.102%200.016Q0.067%200.077%200.019%200.136Q-0.028%200.195%20-0.078%200.241Q-0.138%200.299%20-0.202%200.33Q-0.267%200.361%20-0.321%200.361Q-0.359%200.361%20-0.381%200.338Q-0.404%200.315%20-0.404%200.27Q-0.404%200.218%20-0.38%200.167Q-0.357%200.117%20-0.316%200.073Q-0.276%200.029%20-0.224%20-0.007Q-0.172%20-0.043%20-0.116%20-0.067Q-0.067%20-0.09%20-0.011%20-0.102Q0.045%20-0.114%200.104%20-0.114Q0.196%20-0.114%200.263%20-0.078Q0.33%20-0.043%200.367%200.015Q0.403%200.072%200.403%200.139Q0.403%200.216%200.368%200.272Q0.333%200.327%200.269%200.363Q0.204%200.398%200.116%200.414Q0.027%200.431%20-0.079%200.432ZM-0.056%200.308Q-0.081%200.308%20-0.1%200.284Q-0.12%200.261%20-0.132%200.223Q-0.144%200.184%20-0.15%200.137Q-0.156%200.09%20-0.156%200.044Q-0.156%20-0.003%20-0.149%20-0.06Q-0.143%20-0.117%20-0.134%20-0.173Q-0.125%20-0.229%20-0.118%20-0.276Q-0.111%20-0.322%20-0.111%20-0.348Q-0.111%20-0.361%20-0.115%20-0.367Q-0.119%20-0.373%20-0.132%20-0.378Q-0.143%20-0.383%20-0.158%20-0.387Q-0.173%20-0.39%20-0.188%20-0.393L-0.189%20-0.407Q-0.173%20-0.415%20-0.153%20-0.424Q-0.133%20-0.432%20-0.118%20-0.432Q-0.089%20-0.432%20-0.059%20-0.423Q-0.029%20-0.413%20-0.009%20-0.399Q0.011%20-0.385%200.011%20-0.372Q0.011%20-0.36%200.004%20-0.349Q-0.003%20-0.339%20-0.011%20-0.327Q-0.019%20-0.315%20-0.024%20-0.297Q-0.033%20-0.261%20-0.042%20-0.221Q-0.051%20-0.181%20-0.058%20-0.141Q-0.066%20-0.1%20-0.071%20-0.061Q-0.076%20-0.022%20-0.076%200.013Q-0.076%200.065%20-0.065%200.101Q-0.055%200.138%20-0.041%200.165Q-0.028%200.193%20-0.018%200.216Q-0.008%200.239%20-0.008%200.264Q-0.008%200.287%20-0.021%200.297Q-0.034%200.308%20-0.056%200.308ZM-0.227%20-0.17Q-0.268%20-0.17%20-0.294%20-0.185Q-0.321%20-0.199%20-0.337%20-0.227Q-0.354%20-0.254%20-0.366%20-0.291L-0.355%20-0.301Q-0.329%20-0.285%20-0.307%20-0.274Q-0.285%20-0.263%20-0.261%20-0.258Q-0.238%20-0.253%20-0.21%20-0.253Q-0.174%20-0.253%20-0.139%20-0.257Q-0.104%20-0.261%20-0.074%20-0.266Q-0.004%20-0.279%200.046%20-0.298Q0.095%20-0.316%200.124%20-0.33Q0.152%20-0.344%200.159%20-0.344Q0.199%20-0.344%200.22%20-0.333Q0.241%20-0.321%200.241%20-0.299Q0.241%20-0.282%200.231%20-0.271Q0.221%20-0.259%200.202%20-0.252Q0.183%20-0.244%200.153%20-0.235Q0.123%20-0.226%200.086%20-0.217Q0.049%20-0.208%200.008%20-0.199Q-0.034%20-0.19%20-0.077%20-0.184Q-0.113%20-0.178%20-0.152%20-0.174Q-0.191%20-0.17%20-0.227%20-0.17Z%22%20fill%3D%22%2315192B%22%2F%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%225%22%20r%3D%224.2%22%20fill%3D%22%23D23A2B%22%20stroke%3D%22%23FBF9F4%22%20stroke-width%3D%221.6%22%2F%3E%3C%2Fsvg%3E">
@@ -1707,7 +1707,7 @@ dialog.ai-test td small{display:block; margin-top:4px; color:var(--text3)}
 .civ-pojem-priklad{display:block; margin-top:4px; font-size:.9rem; color:var(--civ-ink3)}
 .civ-pojem-priklad [class^="civ-"], .civ-pojmy dd [class^="civ-"]{font-size:1.4em; line-height:1.1}
 </style>
-<link rel="canonical" href="https://thelanguageatlas.com/">
+<link rel="canonical" href="https://thelanguageatlas.com/it/">
 <meta name="google-site-verification" content="zyKCEYlegO4cJQmz22iaMH9QuphSUalznP-e4iU_Gzg">
 <meta name="google-site-verification" content="R9cFXotbubItuaKstc9NVaT-CoYj0BqfVyLau7QR_GY">
 <link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/">
@@ -1715,19 +1715,19 @@ dialog.ai-test td small{display:block; margin-top:4px; color:var(--text3)}
 <link rel="alternate" hreflang="it" href="https://thelanguageatlas.com/it/">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://thelanguageatlas.com/">
-<meta property="og:title" content="The Language Atlas">
-<meta property="og:description" content="An interactive atlas of all 7,967 languages of the world after Glottolog: distribution, language families and trees, vitality, typology from WALS and sound inventories from PHOIBLE.">
-<meta property="og:image" content="https://thelanguageatlas.com/nahled-en.b035ee127a.jpg">
+<meta property="og:url" content="https://thelanguageatlas.com/it/">
+<meta property="og:title" content="Atlante delle lingue">
+<meta property="og:description" content="Un atlante interattivo di tutte le 7967 lingue del mondo secondo Glottolog: diffusione, famiglie e alberi linguistici, vitalità, tipologia dal WALS e inventari fonologici da PHOIBLE.">
+<meta property="og:image" content="https://thelanguageatlas.com/it/nahled-en.b035ee127a.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="A globe dotted with lights – each one is one of the world's languages">
-<meta property="og:locale" content="en_GB">
+<meta property="og:image:alt" content="Un globo punteggiato di luci – ognuna è una delle lingue del mondo">
+<meta property="og:locale" content="it_IT">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="The Language Atlas">
-<meta name="twitter:description" content="An interactive atlas of all 7,967 languages of the world after Glottolog: distribution, language families and trees, vitality, typology from WALS and sound inventories from PHOIBLE.">
-<meta name="twitter:image" content="https://thelanguageatlas.com/nahled-en.b035ee127a.jpg">
-<meta name="twitter:image:alt" content="A globe dotted with lights – each one is one of the world's languages">
+<meta name="twitter:title" content="Atlante delle lingue">
+<meta name="twitter:description" content="Un atlante interattivo di tutte le 7967 lingue del mondo secondo Glottolog: diffusione, famiglie e alberi linguistici, vitalità, tipologia dal WALS e inventari fonologici da PHOIBLE.">
+<meta name="twitter:image" content="https://thelanguageatlas.com/it/nahled-en.b035ee127a.jpg">
+<meta name="twitter:image:alt" content="Un globo punteggiato di luci – ognuna è una delle lingue del mondo">
 </head>
 <body>
 <svg aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
@@ -1760,131 +1760,131 @@ dialog.ai-test td small{display:block; margin-top:4px; color:var(--text3)}
  <symbol id="i-krizek" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></symbol>
 </svg>
 
-<a class="preskocit" href="#hledej" data-t="preskocit">Skip to the list of languages</a>
+<a class="preskocit" href="#hledej" data-t="preskocit">Vai all’elenco delle lingue</a>
 <canvas id="hvezdy" aria-hidden="true"></canvas>
 <div class="app">
  <header class="hlava sklo">
-  <a class="domu" id="domu" href="./" title="The Language Atlas – back to the start" aria-label="The Language Atlas – back to the start" data-t-title="domu" data-t-aria-label="domu">
+  <a class="domu" id="domu" href="./" title="Atlante delle lingue – torna all’inizio" aria-label="Atlante delle lingue – torna all’inizio" data-t-title="domu" data-t-aria-label="domu">
    <svg class="znak" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="50" cy="50" r="45" fill="var(--pozadi-loga)" stroke="currentColor" stroke-width="3.2"/><circle cx="50" cy="50" r="38.5" fill="none" stroke="currentColor" stroke-width="1.3" opacity=".5"/><g fill="none" stroke="var(--r-ie)" stroke-width="1.8" opacity=".75"><ellipse cx="50" cy="50" rx="31" ry="38.5"/><path d="M11.5 50h29M59.5 50h29"/></g><path transform="translate(36 34) scale(18)" d="M0.038 -0.355 0.281 0.271Q0.295 0.307 0.313 0.321Q0.331 0.334 0.345 0.335V0.355Q0.315 0.353 0.274 0.352Q0.234 0.352 0.193 0.352Q0.147 0.352 0.106 0.352Q0.065 0.353 0.04 0.355V0.335Q0.091 0.333 0.105 0.318Q0.118 0.302 0.098 0.251L-0.072 -0.214L-0.053 -0.24L-0.206 0.156Q-0.228 0.211 -0.232 0.246Q-0.237 0.281 -0.227 0.3Q-0.218 0.319 -0.196 0.326Q-0.175 0.334 -0.145 0.335V0.355Q-0.178 0.353 -0.208 0.352Q-0.238 0.352 -0.269 0.352Q-0.291 0.352 -0.31 0.352Q-0.33 0.353 -0.345 0.355V0.335Q-0.324 0.331 -0.301 0.308Q-0.28 0.285 -0.259 0.23L-0.031 -0.355Q-0.015 -0.354 0.004 -0.354Q0.022 -0.354 0.038 -0.355ZM0.108 0.067V0.087H-0.19L-0.18 0.067Z" fill="currentColor"/><path transform="translate(64 34) scale(18)" d="M0.342 -0.361V-0.341Q0.309 -0.34 0.293 -0.334Q0.277 -0.327 0.272 -0.309Q0.266 -0.292 0.266 -0.255V0.241Q0.266 0.277 0.272 0.295Q0.277 0.313 0.293 0.319Q0.309 0.325 0.342 0.327V0.347Q0.317 0.345 0.274 0.345Q0.232 0.344 0.183 0.344Q0.143 0.344 0.101 0.345Q0.058 0.345 0.032 0.347V0.327Q0.064 0.325 0.08 0.319Q0.096 0.313 0.102 0.295Q0.107 0.277 0.107 0.241V-0.255Q0.107 -0.307 0.096 -0.324Q0.085 -0.341 0.045 -0.341Q-0.023 -0.341 -0.051 -0.298Q-0.079 -0.255 -0.079 -0.178Q-0.079 -0.131 -0.068 -0.092Q-0.056 -0.054 -0.025 -0.031Q0.006 -0.009 0.065 -0.009H0.151Q0.151 -0.009 0.151 0.001Q0.151 0.011 0.151 0.011H0.054Q-0.034 0.011 -0.092 -0.005Q-0.15 -0.021 -0.184 -0.048Q-0.218 -0.075 -0.231 -0.109Q-0.244 -0.143 -0.244 -0.18Q-0.244 -0.237 -0.214 -0.277Q-0.183 -0.318 -0.122 -0.339Q-0.06 -0.36 0.032 -0.36Q0.051 -0.36 0.096 -0.359Q0.141 -0.358 0.19 -0.358Q0.232 -0.358 0.274 -0.359Q0.317 -0.36 0.342 -0.361ZM0.145 -0.006 0.143 0.011H0.034Q0.004 0.011 -0.014 0.03Q-0.032 0.048 -0.042 0.08Q-0.051 0.111 -0.058 0.153L-0.077 0.253Q-0.087 0.315 -0.122 0.338Q-0.158 0.361 -0.211 0.361Q-0.254 0.361 -0.284 0.348Q-0.316 0.334 -0.342 0.303L-0.328 0.291Q-0.318 0.302 -0.309 0.308Q-0.3 0.313 -0.287 0.314Q-0.269 0.314 -0.259 0.298Q-0.248 0.282 -0.24 0.242L-0.22 0.139Q-0.207 0.075 -0.161 0.047Q-0.114 0.019 -0.029 0.008Q-0.01 0.005 0.01 0.003Q0.029 0.001 0.06 -0.002Q0.092 -0.004 0.145 -0.006Z" fill="currentColor"/><path transform="translate(50 51) scale(18)" d="M0.197 0.329Q0.196 0.318 0.192 0.305Q0.188 0.292 0.179 0.277Q0.169 0.263 0.149 0.245L-0.211 -0.098Q-0.237 -0.123 -0.25 -0.154Q-0.263 -0.185 -0.263 -0.215Q-0.263 -0.242 -0.256 -0.268Q-0.248 -0.294 -0.235 -0.329H-0.201V-0.312Q-0.201 -0.294 -0.192 -0.273Q-0.183 -0.252 -0.159 -0.228L0.211 0.122Q0.226 0.137 0.236 0.154Q0.245 0.172 0.25 0.191Q0.255 0.21 0.255 0.231Q0.255 0.26 0.246 0.282Q0.236 0.304 0.221 0.329ZM-0.267 0.319V0.242H-0.25Q-0.233 0.242 -0.227 0.235Q-0.221 0.229 -0.225 0.213L-0.242 0.144Q-0.253 0.1 -0.244 0.057Q-0.236 0.015 -0.208 -0.022L-0.158 -0.089L-0.126 -0.054L-0.152 -0.012Q-0.173 0.022 -0.173 0.048Q-0.174 0.074 -0.153 0.111L-0.121 0.172Q-0.104 0.202 -0.099 0.237Q-0.095 0.273 -0.112 0.319ZM0.141 0.058 0.09 0.011Q0.09 0.001 0.096 -0.016Q0.102 -0.033 0.111 -0.051Q0.12 -0.07 0.129 -0.084L0.173 -0.158L0.22 -0.142L0.172 -0.062Q0.16 -0.042 0.153 -0.023Q0.146 -0.004 0.144 0.016Q0.141 0.036 0.141 0.058ZM0.253 -0.099 0.128 -0.115Q0.094 -0.119 0.081 -0.139Q0.067 -0.158 0.067 -0.201Q0.067 -0.227 0.073 -0.259Q0.078 -0.291 0.091 -0.329H0.126V-0.311Q0.126 -0.294 0.136 -0.285Q0.146 -0.275 0.165 -0.273L0.209 -0.267Q0.239 -0.263 0.253 -0.244Q0.267 -0.225 0.267 -0.189Q0.267 -0.167 0.264 -0.147Q0.26 -0.128 0.253 -0.099Z" fill="currentColor"/><path transform="translate(36.5 67.5) scale(18)" d="M0.019 0.388Q-0.059 0.388 -0.116 0.36Q-0.173 0.332 -0.204 0.28Q-0.235 0.228 -0.235 0.158Q-0.235 0.05 -0.16 -0.031Q-0.192 -0.046 -0.217 -0.07Q-0.241 -0.095 -0.253 -0.122Q-0.265 -0.149 -0.265 -0.174Q-0.265 -0.204 -0.254 -0.238Q-0.242 -0.273 -0.222 -0.304Q-0.201 -0.336 -0.176 -0.357Q-0.139 -0.388 -0.098 -0.388Q-0.063 -0.388 -0.025 -0.365Q0.013 -0.342 0.054 -0.295L0.033 -0.255Q0.003 -0.267 -0.023 -0.272Q-0.049 -0.278 -0.072 -0.278Q-0.107 -0.278 -0.135 -0.27Q-0.162 -0.263 -0.194 -0.246Q-0.191 -0.192 -0.158 -0.156Q-0.124 -0.12 -0.067 -0.106Q-0.023 -0.132 0.025 -0.153Q0.073 -0.175 0.127 -0.193Q0.138 -0.177 0.138 -0.142Q0.138 -0.121 0.129 -0.105Q0.121 -0.088 0.102 -0.075Q0.094 -0.069 0.076 -0.06Q0.058 -0.052 0.031 -0.041Q-0.056 -0.007 -0.099 0.021Q-0.142 0.049 -0.163 0.082Q-0.173 0.098 -0.179 0.116Q-0.184 0.134 -0.184 0.152Q-0.184 0.209 -0.132 0.241Q-0.079 0.273 0.021 0.273Q0.041 0.273 0.062 0.272Q0.083 0.27 0.105 0.267Q0.126 0.264 0.163 0.257Q0.2 0.249 0.252 0.237L0.265 0.279Q0.179 0.332 0.114 0.36Q0.05 0.388 0.019 0.388Z" fill="currentColor"/><path transform="translate(64 67) scale(18)" d="M-0.083 0.413Q0.048 0.388 0.131 0.343Q0.214 0.297 0.254 0.237Q0.293 0.178 0.293 0.111Q0.293 0.056 0.268 0.013Q0.243 -0.029 0.198 -0.053Q0.153 -0.077 0.09 -0.077Q0.04 -0.077 -0.011 -0.062Q-0.062 -0.048 -0.121 -0.015Q-0.18 0.017 -0.224 0.062Q-0.268 0.107 -0.291 0.152Q-0.315 0.198 -0.315 0.233Q-0.315 0.247 -0.309 0.254Q-0.303 0.261 -0.291 0.261Q-0.264 0.261 -0.231 0.247Q-0.199 0.233 -0.165 0.211Q-0.131 0.189 -0.103 0.164Q-0.076 0.141 -0.048 0.11Q-0.02 0.078 0.006 0.043Q0.032 0.008 0.052 -0.026Q0.071 -0.06 0.08 -0.087Q0.09 -0.114 0.082 -0.133Q0.074 -0.151 0.045 -0.17L0.053 -0.182Q0.082 -0.177 0.105 -0.169Q0.127 -0.16 0.142 -0.144Q0.152 -0.134 0.154 -0.122Q0.156 -0.11 0.152 -0.096Q0.137 -0.045 0.102 0.016Q0.067 0.077 0.019 0.136Q-0.028 0.195 -0.078 0.241Q-0.138 0.299 -0.202 0.33Q-0.267 0.361 -0.321 0.361Q-0.359 0.361 -0.381 0.338Q-0.404 0.315 -0.404 0.27Q-0.404 0.218 -0.38 0.167Q-0.357 0.117 -0.316 0.073Q-0.276 0.029 -0.224 -0.007Q-0.172 -0.043 -0.116 -0.067Q-0.067 -0.09 -0.011 -0.102Q0.045 -0.114 0.104 -0.114Q0.196 -0.114 0.263 -0.078Q0.33 -0.043 0.367 0.015Q0.403 0.072 0.403 0.139Q0.403 0.216 0.368 0.272Q0.333 0.327 0.269 0.363Q0.204 0.398 0.116 0.414Q0.027 0.431 -0.079 0.432ZM-0.056 0.308Q-0.081 0.308 -0.1 0.284Q-0.12 0.261 -0.132 0.223Q-0.144 0.184 -0.15 0.137Q-0.156 0.09 -0.156 0.044Q-0.156 -0.003 -0.149 -0.06Q-0.143 -0.117 -0.134 -0.173Q-0.125 -0.229 -0.118 -0.276Q-0.111 -0.322 -0.111 -0.348Q-0.111 -0.361 -0.115 -0.367Q-0.119 -0.373 -0.132 -0.378Q-0.143 -0.383 -0.158 -0.387Q-0.173 -0.39 -0.188 -0.393L-0.189 -0.407Q-0.173 -0.415 -0.153 -0.424Q-0.133 -0.432 -0.118 -0.432Q-0.089 -0.432 -0.059 -0.423Q-0.029 -0.413 -0.009 -0.399Q0.011 -0.385 0.011 -0.372Q0.011 -0.36 0.004 -0.349Q-0.003 -0.339 -0.011 -0.327Q-0.019 -0.315 -0.024 -0.297Q-0.033 -0.261 -0.042 -0.221Q-0.051 -0.181 -0.058 -0.141Q-0.066 -0.1 -0.071 -0.061Q-0.076 -0.022 -0.076 0.013Q-0.076 0.065 -0.065 0.101Q-0.055 0.138 -0.041 0.165Q-0.028 0.193 -0.018 0.216Q-0.008 0.239 -0.008 0.264Q-0.008 0.287 -0.021 0.297Q-0.034 0.308 -0.056 0.308ZM-0.227 -0.17Q-0.268 -0.17 -0.294 -0.185Q-0.321 -0.199 -0.337 -0.227Q-0.354 -0.254 -0.366 -0.291L-0.355 -0.301Q-0.329 -0.285 -0.307 -0.274Q-0.285 -0.263 -0.261 -0.258Q-0.238 -0.253 -0.21 -0.253Q-0.174 -0.253 -0.139 -0.257Q-0.104 -0.261 -0.074 -0.266Q-0.004 -0.279 0.046 -0.298Q0.095 -0.316 0.124 -0.33Q0.152 -0.344 0.159 -0.344Q0.199 -0.344 0.22 -0.333Q0.241 -0.321 0.241 -0.299Q0.241 -0.282 0.231 -0.271Q0.221 -0.259 0.202 -0.252Q0.183 -0.244 0.153 -0.235Q0.123 -0.226 0.086 -0.217Q0.049 -0.208 0.008 -0.199Q-0.034 -0.19 -0.077 -0.184Q-0.113 -0.178 -0.152 -0.174Q-0.191 -0.17 -0.227 -0.17Z" fill="currentColor"/><circle cx="50" cy="5" r="4.2" fill="var(--akcent)" stroke="var(--pozadi-loga)" stroke-width="1.6"/></svg>
-   <h1 data-t="nazev">The Language Atlas</h1>
+   <h1 data-t="nazev">Atlante delle lingue</h1>
   </a>
-  <nav class="jazyk-prepinac" id="jazyk-prepinac" aria-label="Website language" data-t-aria-label="jazykVolba">
-   <a href="../index.html" data-l="cs" hreflang="cs" lang="cs" title="Čeština">CS</a><a href="index.html" data-l="en" hreflang="en" lang="en" title="English">EN</a><a href="../it/index.html" data-l="it" hreflang="it" lang="it" title="Italiano">IT</a>
+  <nav class="jazyk-prepinac" id="jazyk-prepinac" aria-label="Lingua del sito" data-t-aria-label="jazykVolba">
+   <a href="../index.html" data-l="cs" hreflang="cs" lang="cs" title="Čeština">CS</a><a href="../en/index.html" data-l="en" hreflang="en" lang="en" title="English">EN</a><a href="index.html" data-l="it" hreflang="it" lang="it" title="Italiano">IT</a>
   </nav>
-  <button class="prepinac" id="prepinac" type="button" aria-pressed="false" aria-label="Switch between day and night look" title="Switch between day and night look" data-t-aria-label="motiv" data-t-title="motiv">
+  <button class="prepinac" id="prepinac" type="button" aria-pressed="false" aria-label="Passa dall’aspetto diurno a quello notturno" title="Passa dall’aspetto diurno a quello notturno" data-t-aria-label="motiv" data-t-title="motiv">
    <svg aria-hidden="true"><use href="#i-slunce" id="ikona-rezim"/></svg>
   </button>
  </header>
 
  <main class="mriz" id="obsah">
-  <section class="scena" id="scena" aria-label="Globe" data-t-aria-label="scena">
+  <section class="scena" id="scena" aria-label="Globo" data-t-aria-label="scena">
    <div class="globus-misto" aria-hidden="true"></div>
    <canvas id="podklad" aria-hidden="true"></canvas>
    <canvas id="gl" aria-hidden="true"></canvas>
    <canvas id="popisky" aria-hidden="true"></canvas>
-   <canvas id="globus" role="img" aria-label="Spinning globe; the selected language's area is highlighted" data-t-aria-label="platno"></canvas>
-   <canvas id="strom" role="img" hidden aria-label="Family tree of a language family" data-t-aria-label="stromPlatno"></canvas>
+   <canvas id="globus" role="img" aria-label="Globo rotante; l’area della lingua selezionata è evidenziata" data-t-aria-label="platno"></canvas>
+   <canvas id="strom" role="img" hidden aria-label="Albero genealogico di una famiglia linguistica" data-t-aria-label="stromPlatno"></canvas>
    <div class="strom-hlava sklo" id="strom-hlava" hidden>
-    <label><svg aria-hidden="true"><use href="#i-strom"/></svg><span data-t="stromRodina">Family</span><select id="strom-rodina"></select></label>
-    <button type="button" id="strom-cely" data-t="stromCely">Whole tree</button>
-    <button type="button" id="strom-vse" hidden data-t="stromVse">Circular overview</button>
+    <label><svg aria-hidden="true"><use href="#i-strom"/></svg><span data-t="stromRodina">Famiglia</span><select id="strom-rodina"></select></label>
+    <button type="button" id="strom-cely" data-t="stromCely">Albero intero</button>
+    <button type="button" id="strom-vse" hidden data-t="stromVse">Panoramica circolare</button>
    </div>
-   <canvas id="prehled" hidden tabindex="0" role="img" aria-label="Circular overview of language families: the width of a segment is the number of languages. Click a segment to go deeper, click the centre to go up one level." data-t-aria-label="prehledPlatno"></canvas>
+   <canvas id="prehled" hidden tabindex="0" role="img" aria-label="Panoramica circolare delle famiglie linguistiche: la larghezza di un settore è il numero di lingue. Clic su un settore per scendere, clic al centro per risalire di un livello." data-t-aria-label="prehledPlatno"></canvas>
    <section class="prehled-panel sklo" id="prehled-panel" hidden aria-live="polite">
-    <nav class="prehled-cesta" id="prehled-cesta" aria-label="Where you are in the overview" data-t-aria-label="prehledKde"></nav>
+    <nav class="prehled-cesta" id="prehled-cesta" aria-label="Dove ci si trova nella panoramica" data-t-aria-label="prehledKde"></nav>
     <h3 id="prehled-nazev"></h3>
     <p class="prehled-meta" id="prehled-meta"></p>
-    <button type="button" class="tl-rodokmen prehled-do-stromu" id="prehled-strom" hidden><svg aria-hidden="true"><use href="#i-strom"/></svg><span data-t="prehledOtevrit">Open the family tree</span></button>
+    <button type="button" class="tl-rodokmen prehled-do-stromu" id="prehled-strom" hidden><svg aria-hidden="true"><use href="#i-strom"/></svg><span data-t="prehledOtevrit">Apri l’albero genealogico</span></button>
     <ol class="prehled-radky" id="prehled-radky"></ol>
     <p class="prehled-vic" id="prehled-vic" hidden></p>
     <div class="prehled-legenda" id="prehled-legenda"></div>
    </section>
-   <p class="strom-napoveda" id="strom-napoveda" hidden data-t="stromNapoveda">The common ancestor of the whole family is at the bottom; individual languages are at the ends of the branches. Each ring marks a split; branch thickness reflects the number of languages descending from it. Large dots are languages with a detailed card. Drag to move, scroll or pinch to zoom, click a branch or a language to select it.</p>
+   <p class="strom-napoveda" id="strom-napoveda" hidden data-t="stromNapoveda">In basso c’è l’antenato comune dell’intera famiglia, alle estremità dei rami le singole lingue. Ogni anello segna una divisione; lo spessore di un ramo riflette il numero di lingue che ne discendono. I punti grandi sono lingue con scheda dettagliata. Trascinare per spostare, rotellina o due dita per ingrandire, clic su un ramo o una lingua per selezionarli.</p>
    <div class="brana" id="brana" hidden>
-    <div class="brana-hlava sklo"><strong data-t="branaNadpis">✦ Constructed languages from fiction</strong><p data-t="branaText">These languages were constructed by writers and linguists for books, films and television. They are not part of the register of natural languages and therefore have no place on the globe.</p>
-     <button class="tl-rodokmen" id="brana-zpet" type="button"><svg aria-hidden="true"><use href="#i-svet"/></svg><span data-t="branaZpet">Back to Earth</span></button></div>
+    <div class="brana-hlava sklo"><strong data-t="branaNadpis">✦ Lingue inventate dalla narrativa</strong><p data-t="branaText">Queste lingue sono state create da scrittori e linguisti per libri, film e televisione. Non fanno parte del registro delle lingue naturali e quindi non hanno un posto sul globo.</p>
+     <button class="tl-rodokmen" id="brana-zpet" type="button"><svg aria-hidden="true"><use href="#i-svet"/></svg><span data-t="branaZpet">Ritorno sulla Terra</span></button></div>
     <div class="brana-svety" id="brana-svety"></div>
    </div>
    <div class="hud" id="hud" aria-hidden="true"><span class="souradnice" id="hud-souradnice"></span><span class="stav-hud" id="hud-stav"></span></div>
    <section class="typ-legenda sklo" id="typ-legenda" hidden aria-labelledby="typ-leg-nazev"></section>
    <div class="eu-panel sklo cesta-panel" id="cesta-panel" hidden role="dialog" aria-labelledby="cesta-nadpis">
     <div class="eu-text"><strong id="cesta-nadpis"></strong><p id="cesta-uvod"></p></div>
-    <button class="zavrit" id="cesta-zavrit" type="button" aria-label="Close the word journey" data-t-aria-label="cestaZavrit"><svg aria-hidden="true"><use href="#i-krizek"/></svg></button>
+    <button class="zavrit" id="cesta-zavrit" type="button" aria-label="Chiudi il viaggio della parola" data-t-aria-label="cestaZavrit"><svg aria-hidden="true"><use href="#i-krizek"/></svg></button>
     <ol class="cesta-kroky" id="cesta-kroky"></ol>
     <div class="cesta-dalsi" id="cesta-dalsi"></div>
    </div>
    <div class="eu-panel sklo putovani-panel" id="putovani-panel" hidden role="dialog" aria-labelledby="put-nadpis">
     <div class="eu-text"><strong id="put-nadpis"></strong><p id="put-uvod"></p></div>
-    <button class="zavrit" id="put-zavrit" type="button" aria-label="Close the language journey" data-t-aria-label="putZavrit"><svg aria-hidden="true"><use href="#i-krizek"/></svg></button>
-    <div class="put-ovl"><button type="button" class="put-hraj" id="put-hraj">❚❚</button><input type="range" id="put-osa" min="0" max="599" step="1" value="0" aria-label="Timeline" data-t-aria-label="putOsa"></div>
+    <button class="zavrit" id="put-zavrit" type="button" aria-label="Chiudi il viaggio della lingua" data-t-aria-label="putZavrit"><svg aria-hidden="true"><use href="#i-krizek"/></svg></button>
+    <div class="put-ovl"><button type="button" class="put-hraj" id="put-hraj">❚❚</button><input type="range" id="put-osa" min="0" max="599" step="1" value="0" aria-label="Cronologia" data-t-aria-label="putOsa"></div>
     <ol class="put-etapy" id="put-etapy"></ol>
     <p class="put-zdroje" id="put-zdroje"></p>
    </div>
    <div class="vit-legenda sklo" id="vit-legenda" hidden><button type="button" id="vit-legenda-tl"></button></div>
-   <nav class="dok medailony" id="dok" aria-label="Atlas sections" data-t-aria-label="rozcestnik">
-    <button class="med" id="tl-starovek" type="button" aria-haspopup="dialog" title="Languages of antiquity: pages on civilizations, their languages and scripts" data-t-title="starovekTlacitko"><i class="med-obr" data-ikona="starovek"></i><span data-t="medStarovek">Ancient languages</span></button>
-    <button class="med" id="tl-pribehy" type="button" aria-haspopup="dialog" title="Language stories: travelling words, language change, revival and mysteries" data-t-title="pribehyTlacitko"><i class="med-obr" data-ikona="pribehy"></i><span data-t="medPribehy">Language stories</span></button>
-    <button class="med" id="tl-strom" type="button" aria-pressed="false" title="Language family tree: how the languages of one family are related" data-t-title="rodokmenPopis"><i class="med-obr" data-ikona="rodokmen"></i><span data-t="rodokmen">Family tree</span></button>
-    <button class="med" id="tl-mapy" type="button" aria-haspopup="dialog" title="Colour maps of languages: script, vitality and typology (WALS)" data-t-title="mapyPopis"><i class="med-obr" data-ikona="mapy"></i><span data-t="medMapy">Maps</span></button>
-    <button class="med" id="tl-vitalita-dok" type="button" aria-haspopup="dialog" title="Language vitality: degrees of endangerment on the UNESCO scale, figures and sources" data-t-title="vitalitaDokPopis"><i class="med-obr" data-ikona="vitalita"><b class="odznak-filtr" id="vitalita-pocet" hidden aria-hidden="true"></b></i><span data-t="vitalita">Vitality</span></button>
-    <button class="med maly" id="tl-zobrazeni" type="button" aria-expanded="false" aria-controls="panel-zobrazeni" title="Spin, names and sign languages" data-t-title="zobrazeniPopis"><i class="med-obr"><svg aria-hidden="true"><use href="#i-nastaveni"/></svg><b class="odznak-filtr" id="zobrazeni-pocet" hidden aria-hidden="true"></b></i><span data-t="zobrazeni">Settings</span></button>
+   <nav class="dok medailony" id="dok" aria-label="Sezioni dell’atlante" data-t-aria-label="rozcestnik">
+    <button class="med" id="tl-starovek" type="button" aria-haspopup="dialog" title="Lingue dell’antichità: pagine sulle civiltà, le loro lingue e scritture" data-t-title="starovekTlacitko"><i class="med-obr" data-ikona="starovek"></i><span data-t="medStarovek">Lingue antiche</span></button>
+    <button class="med" id="tl-pribehy" type="button" aria-haspopup="dialog" title="Storie delle lingue: parole in viaggio, cambiamento linguistico, rinascita e misteri" data-t-title="pribehyTlacitko"><i class="med-obr" data-ikona="pribehy"></i><span data-t="medPribehy">Storie delle lingue</span></button>
+    <button class="med" id="tl-strom" type="button" aria-pressed="false" title="Albero di una famiglia linguistica: come sono imparentate le lingue di una famiglia" data-t-title="rodokmenPopis"><i class="med-obr" data-ikona="rodokmen"></i><span data-t="rodokmen">Albero genealogico</span></button>
+    <button class="med" id="tl-mapy" type="button" aria-haspopup="dialog" title="Mappe a colori delle lingue: scrittura, vitalità e tipologia (WALS)" data-t-title="mapyPopis"><i class="med-obr" data-ikona="mapy"></i><span data-t="medMapy">Mappe</span></button>
+    <button class="med" id="tl-vitalita-dok" type="button" aria-haspopup="dialog" title="Vitalità delle lingue: gradi di pericolo sulla scala UNESCO, dati e fonti" data-t-title="vitalitaDokPopis"><i class="med-obr" data-ikona="vitalita"><b class="odznak-filtr" id="vitalita-pocet" hidden aria-hidden="true"></b></i><span data-t="vitalita">Vitalità</span></button>
+    <button class="med maly" id="tl-zobrazeni" type="button" aria-expanded="false" aria-controls="panel-zobrazeni" title="Rotazione, nomi e lingue dei segni" data-t-title="zobrazeniPopis"><i class="med-obr"><svg aria-hidden="true"><use href="#i-nastaveni"/></svg><b class="odznak-filtr" id="zobrazeni-pocet" hidden aria-hidden="true"></b></i><span data-t="zobrazeni">Impostazioni</span></button>
    </nav>
-   <div class="roh-ovladani" role="group" aria-label="Globe zoom" data-t-aria-label="zoomSkupina">
-    <button class="kolo" id="tl-cely" type="button" hidden aria-label="Whole world" title="Whole world" data-t-aria-label="celySvet" data-t-title="celySvet"><svg aria-hidden="true"><use href="#i-svet"/></svg></button>
-    <button class="kolo" id="tl-priblizi" type="button" aria-label="Zoom in" title="Zoom in" data-t-aria-label="priblizit" data-t-title="priblizit"><svg aria-hidden="true"><use href="#i-plus"/></svg></button>
+   <div class="roh-ovladani" role="group" aria-label="Zoom del globo" data-t-aria-label="zoomSkupina">
+    <button class="kolo" id="tl-cely" type="button" hidden aria-label="Tutto il mondo" title="Tutto il mondo" data-t-aria-label="celySvet" data-t-title="celySvet"><svg aria-hidden="true"><use href="#i-svet"/></svg></button>
+    <button class="kolo" id="tl-priblizi" type="button" aria-label="Ingrandisci" title="Ingrandisci" data-t-aria-label="priblizit" data-t-title="priblizit"><svg aria-hidden="true"><use href="#i-plus"/></svg></button>
     <span class="zoom-hod" id="zoom-hod">1,0&times;</span>
-    <button class="kolo" id="tl-oddal" type="button" aria-label="Zoom out" title="Zoom out" data-t-aria-label="oddalit" data-t-title="oddalit"><svg aria-hidden="true"><use href="#i-minus"/></svg></button>
+    <button class="kolo" id="tl-oddal" type="button" aria-label="Riduci" title="Riduci" data-t-aria-label="oddalit" data-t-title="oddalit"><svg aria-hidden="true"><use href="#i-minus"/></svg></button>
    </div>
    <div class="panel-zobrazeni sklo" id="panel-zobrazeni" hidden>
     <div id="pz-hlavni">
-     <div class="vp-hlava"><strong data-t="zobrazeni">Settings</strong>
-      <button class="zavrit" id="zobrazeni-zavrit" type="button" aria-label="Close" data-t-aria-label="zavritPanel"><svg aria-hidden="true"><use href="#i-krizek"/></svg></button></div>
-     <button class="volba-radek" id="tl-otacet" type="button" aria-pressed="false" aria-labelledby="n-otacet" aria-describedby="p-otacet"><svg aria-hidden="true"><use href="#i-otacet"/></svg><span><b id="n-otacet" data-t="otacet">Spin</b> <small id="p-otacet" data-t="otacetPopis">Let the globe spin slowly by itself</small></span><i class="spinac" aria-hidden="true"></i></button>
-     <button class="volba-radek" id="tl-jmena" type="button" aria-pressed="false" aria-labelledby="n-jmena" aria-describedby="p-jmena"><svg aria-hidden="true"><use href="#i-jmena"/></svg><span><b id="n-jmena" data-t="jmena">Names</b> <small id="p-jmena" data-t="jmenaPopis">Show the names of all languages when zoomed in (the selected language and its relatives always have them)</small></span><i class="spinac" aria-hidden="true"></i></button>
+     <div class="vp-hlava"><strong data-t="zobrazeni">Impostazioni</strong>
+      <button class="zavrit" id="zobrazeni-zavrit" type="button" aria-label="Chiudi" data-t-aria-label="zavritPanel"><svg aria-hidden="true"><use href="#i-krizek"/></svg></button></div>
+     <button class="volba-radek" id="tl-otacet" type="button" aria-pressed="false" aria-labelledby="n-otacet" aria-describedby="p-otacet"><svg aria-hidden="true"><use href="#i-otacet"/></svg><span><b id="n-otacet" data-t="otacet">Rotazione</b> <small id="p-otacet" data-t="otacetPopis">Lasciare che il globo ruoti lentamente da solo</small></span><i class="spinac" aria-hidden="true"></i></button>
+     <button class="volba-radek" id="tl-jmena" type="button" aria-pressed="false" aria-labelledby="n-jmena" aria-describedby="p-jmena"><svg aria-hidden="true"><use href="#i-jmena"/></svg><span><b id="n-jmena" data-t="jmena">Nomi</b> <small id="p-jmena" data-t="jmenaPopis">Mostrare i nomi di tutte le lingue con l’ingrandimento (la lingua selezionata e le sue parenti li hanno sempre)</small></span><i class="spinac" aria-hidden="true"></i></button>
      <div class="volba-oddil">
-      <p class="volba-nadpis"><svg aria-hidden="true"><use href="#i-ruka"/></svg><b data-t="znakoveSkupina">Sign languages</b></p>
-      <div class="segment" role="group" aria-label="Sign languages" aria-describedby="p-znakove" data-t-aria-label="znakoveSkupina">
-       <button type="button" data-znak="vse" aria-pressed="true" data-t="znakoveVse">All</button>
-       <button type="button" data-znak="bez" aria-pressed="false" data-t="znakoveBez">No sign languages</button>
-       <button type="button" data-znak="jen" aria-pressed="false" data-t="znakoveJen">Sign only</button>
+      <p class="volba-nadpis"><svg aria-hidden="true"><use href="#i-ruka"/></svg><b data-t="znakoveSkupina">Lingue dei segni</b></p>
+      <div class="segment" role="group" aria-label="Lingue dei segni" aria-describedby="p-znakove" data-t-aria-label="znakoveSkupina">
+       <button type="button" data-znak="vse" aria-pressed="true" data-t="znakoveVse">Tutte</button>
+       <button type="button" data-znak="bez" aria-pressed="false" data-t="znakoveBez">Senza lingue dei segni</button>
+       <button type="button" data-znak="jen" aria-pressed="false" data-t="znakoveJen">Solo dei segni</button>
       </div>
-      <small class="volba-pozn" id="p-znakove" data-t="znakovePopis">Sign languages are the natural languages of Deaf communities, using handshape and movement, facial expression and posture. There is no single universal sign language: many countries have their own, some several, and their boundaries do not coincide with national borders.</small>
+      <small class="volba-pozn" id="p-znakove" data-t="znakovePopis">Le lingue dei segni sono le lingue naturali delle comunità sorde e si servono di forma e movimento delle mani, espressione del viso e postura. Non esiste una lingua dei segni universale: molti paesi ne hanno una propria, alcuni più d’una, e i loro confini non coincidono con quelli degli stati.</small>
      </div>
     </div>
    </div>
-   <button class="tl-napoveda sklo" id="tl-napoveda" type="button" aria-expanded="false" aria-controls="napoveda" aria-label="Help" data-t-aria-label="napoveda">?</button>
+   <button class="tl-napoveda sklo" id="tl-napoveda" type="button" aria-expanded="false" aria-controls="napoveda" aria-label="Aiuto" data-t-aria-label="napoveda">?</button>
    <div class="napoveda" id="napoveda" hidden role="note">
     <ol>
-     <li data-krok="zatoc"><i></i><span><b data-t="krokZatoc">Rotate</b> <span data-t="krokZatocJak">– drag with the mouse or a finger</span></span></li>
-     <li data-krok="pribliz"><i></i><span><b data-t="krokPribliz">Zoom</b> <span data-t="krokPriblizJak">– mouse wheel or two fingers</span></span></li>
-     <li data-krok="klikni"><i></i><span><b data-t="krokKlikni">Select</b> <span data-t="krokKlikniJak">– click a point of light to open the language card, or a country to see the languages spoken there</span></span></li>
-     <li class="napoveda-navod"><i><svg aria-hidden="true"><use href="#i-kniha"/></svg></i><button type="button" id="napoveda-navod" aria-haspopup="dialog" data-t="navodNapoveda">Full guide – everything the atlas can do</button></li>
+     <li data-krok="zatoc"><i></i><span><b data-t="krokZatoc">Ruotare</b> <span data-t="krokZatocJak">– trascinare con il mouse o con un dito</span></span></li>
+     <li data-krok="pribliz"><i></i><span><b data-t="krokPribliz">Ingrandire</b> <span data-t="krokPriblizJak">– rotellina del mouse o due dita</span></span></li>
+     <li data-krok="klikni"><i></i><span><b data-t="krokKlikni">Selezionare</b> <span data-t="krokKlikniJak">– fare clic su un punto luminoso per aprire la scheda della lingua, o su un paese per vedere le lingue che vi si parlano</span></span></li>
+     <li class="napoveda-navod"><i><svg aria-hidden="true"><use href="#i-kniha"/></svg></i><button type="button" id="napoveda-navod" aria-haspopup="dialog" data-t="navodNapoveda">Guida completa – tutto ciò che l’atlante sa fare</button></li>
     </ol>
-    <button class="napoveda-x" id="napoveda-x" type="button" aria-label="Close the tips" data-t-aria-label="napovedaZavrit"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></button>
+    <button class="napoveda-x" id="napoveda-x" type="button" aria-label="Chiudi i suggerimenti" data-t-aria-label="napovedaZavrit"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></button>
    </div>
    <div class="eu-panel sklo" id="eu-panel" hidden role="dialog" aria-labelledby="eu-nadpis">
-    <svg class="eu-vlajka" viewBox="0 0 300 200" role="img" aria-label="Flag of the European Union" data-t-aria-label="euVlajka"><rect width="300" height="200" rx="10" fill="#003399"/><g fill="#FFCC00"><path class="eu-h" style="--i:0" d="M150.0,22.2L152.5,29.9L160.6,29.9L154.0,34.6L156.5,42.3L150.0,37.5L143.5,42.3L146.0,34.6L139.4,29.9L147.5,29.9Z"/><path class="eu-h" style="--i:1" d="M183.3,31.1L185.8,38.8L193.9,38.8L187.4,43.5L189.9,51.2L183.3,46.5L176.8,51.2L179.3,43.5L172.8,38.8L180.9,38.8Z"/><path class="eu-h" style="--i:2" d="M207.8,55.6L210.3,63.2L218.3,63.2L211.8,68.0L214.3,75.6L207.8,70.9L201.2,75.6L203.7,68.0L197.2,63.2L205.3,63.2Z"/><path class="eu-h" style="--i:3" d="M216.7,88.9L219.2,96.6L227.3,96.6L220.7,101.3L223.2,109.0L216.7,104.2L210.2,109.0L212.7,101.3L206.1,96.6L214.2,96.6Z"/><path class="eu-h" style="--i:4" d="M207.8,122.2L210.3,129.9L218.3,129.9L211.8,134.7L214.3,142.3L207.8,137.6L201.2,142.3L203.7,134.7L197.2,129.9L205.3,129.9Z"/><path class="eu-h" style="--i:5" d="M183.3,146.7L185.8,154.3L193.9,154.3L187.4,159.1L189.9,166.7L183.3,162.0L176.8,166.7L179.3,159.1L172.8,154.3L180.9,154.3Z"/><path class="eu-h" style="--i:6" d="M150.0,155.6L152.5,163.3L160.6,163.3L154.0,168.0L156.5,175.7L150.0,170.9L143.5,175.7L146.0,168.0L139.4,163.3L147.5,163.3Z"/><path class="eu-h" style="--i:7" d="M116.7,146.7L119.1,154.3L127.2,154.3L120.7,159.1L123.2,166.7L116.7,162.0L110.1,166.7L112.6,159.1L106.1,154.3L114.2,154.3Z"/><path class="eu-h" style="--i:8" d="M92.2,122.3L94.7,129.9L102.8,129.9L96.3,134.7L98.8,142.3L92.2,137.6L85.7,142.3L88.2,134.7L81.7,129.9L89.7,129.9Z"/><path class="eu-h" style="--i:9" d="M83.3,88.9L85.8,96.6L93.9,96.6L87.3,101.3L89.8,109.0L83.3,104.2L76.8,109.0L79.3,101.3L72.7,96.6L80.8,96.6Z"/><path class="eu-h" style="--i:10" d="M92.2,55.5L94.7,63.2L102.8,63.2L96.3,68.0L98.8,75.6L92.2,70.9L85.7,75.6L88.2,68.0L81.7,63.2L89.7,63.2Z"/><path class="eu-h" style="--i:11" d="M116.6,31.1L119.1,38.8L127.2,38.8L120.7,43.5L123.2,51.2L116.6,46.5L110.1,51.2L112.6,43.5L106.1,38.8L114.2,38.8Z"/></g></svg>
-    <div class="eu-text"><strong id="eu-nadpis" data-t="euNadpis">The 24 official languages of the European Union</strong><p data-t="euText">The gold stars on the globe mark the 24 official languages of the European Union. Click a star to open the language card.</p></div>
-    <button class="zavrit" id="eu-zavrit" type="button" aria-label="Close" data-t-aria-label="euZavrit"><svg aria-hidden="true"><use href="#i-krizek"/></svg></button>
+    <svg class="eu-vlajka" viewBox="0 0 300 200" role="img" aria-label="Bandiera dell’Unione europea" data-t-aria-label="euVlajka"><rect width="300" height="200" rx="10" fill="#003399"/><g fill="#FFCC00"><path class="eu-h" style="--i:0" d="M150.0,22.2L152.5,29.9L160.6,29.9L154.0,34.6L156.5,42.3L150.0,37.5L143.5,42.3L146.0,34.6L139.4,29.9L147.5,29.9Z"/><path class="eu-h" style="--i:1" d="M183.3,31.1L185.8,38.8L193.9,38.8L187.4,43.5L189.9,51.2L183.3,46.5L176.8,51.2L179.3,43.5L172.8,38.8L180.9,38.8Z"/><path class="eu-h" style="--i:2" d="M207.8,55.6L210.3,63.2L218.3,63.2L211.8,68.0L214.3,75.6L207.8,70.9L201.2,75.6L203.7,68.0L197.2,63.2L205.3,63.2Z"/><path class="eu-h" style="--i:3" d="M216.7,88.9L219.2,96.6L227.3,96.6L220.7,101.3L223.2,109.0L216.7,104.2L210.2,109.0L212.7,101.3L206.1,96.6L214.2,96.6Z"/><path class="eu-h" style="--i:4" d="M207.8,122.2L210.3,129.9L218.3,129.9L211.8,134.7L214.3,142.3L207.8,137.6L201.2,142.3L203.7,134.7L197.2,129.9L205.3,129.9Z"/><path class="eu-h" style="--i:5" d="M183.3,146.7L185.8,154.3L193.9,154.3L187.4,159.1L189.9,166.7L183.3,162.0L176.8,166.7L179.3,159.1L172.8,154.3L180.9,154.3Z"/><path class="eu-h" style="--i:6" d="M150.0,155.6L152.5,163.3L160.6,163.3L154.0,168.0L156.5,175.7L150.0,170.9L143.5,175.7L146.0,168.0L139.4,163.3L147.5,163.3Z"/><path class="eu-h" style="--i:7" d="M116.7,146.7L119.1,154.3L127.2,154.3L120.7,159.1L123.2,166.7L116.7,162.0L110.1,166.7L112.6,159.1L106.1,154.3L114.2,154.3Z"/><path class="eu-h" style="--i:8" d="M92.2,122.3L94.7,129.9L102.8,129.9L96.3,134.7L98.8,142.3L92.2,137.6L85.7,142.3L88.2,134.7L81.7,129.9L89.7,129.9Z"/><path class="eu-h" style="--i:9" d="M83.3,88.9L85.8,96.6L93.9,96.6L87.3,101.3L89.8,109.0L83.3,104.2L76.8,109.0L79.3,101.3L72.7,96.6L80.8,96.6Z"/><path class="eu-h" style="--i:10" d="M92.2,55.5L94.7,63.2L102.8,63.2L96.3,68.0L98.8,75.6L92.2,70.9L85.7,75.6L88.2,68.0L81.7,63.2L89.7,63.2Z"/><path class="eu-h" style="--i:11" d="M116.6,31.1L119.1,38.8L127.2,38.8L120.7,43.5L123.2,51.2L116.6,46.5L110.1,51.2L112.6,43.5L106.1,38.8L114.2,38.8Z"/></g></svg>
+    <div class="eu-text"><strong id="eu-nadpis" data-t="euNadpis">Le 24 lingue ufficiali dell’Unione europea</strong><p data-t="euText">Le stelle d’oro sul globo indicano le 24 lingue ufficiali dell’Unione europea. Fare clic su una stella per aprire la scheda della lingua.</p></div>
+    <button class="zavrit" id="eu-zavrit" type="button" aria-label="Chiudi" data-t-aria-label="euZavrit"><svg aria-hidden="true"><use href="#i-krizek"/></svg></button>
     <div class="eu-jazyky" id="eu-jazyky"></div>
    </div>
-   <div class="srovnani-vyzva sklo" id="srovnani-vyzva" hidden role="status"><svg aria-hidden="true"><use href="#i-porovnat"/></svg><span id="sv-text"></span><button type="button" id="sv-zrusit" data-t="porovnatZrusit">Cancel</button></div>
+   <div class="srovnani-vyzva sklo" id="srovnani-vyzva" hidden role="status"><svg aria-hidden="true"><use href="#i-porovnat"/></svg><span id="sv-text"></span><button type="button" id="sv-zrusit" data-t="porovnatZrusit">Annulla</button></div>
    <div class="zeme-okno sklo" id="zeme-okno" hidden></div>
    <div class="bublina-bod" id="bublina-bod" hidden></div>
    <div class="vypadek" id="vypadek" hidden>
-    <strong data-t="vypadekNadpis">The globe could not start.</strong>
-    <span data-t="vypadekText">The language list and the language cards still work. Please try reloading the page.</span>
+    <strong data-t="vypadekNadpis">Non è stato possibile avviare il globo.</strong>
+    <span data-t="vypadekText">L’elenco delle lingue e le schede funzionano comunque. Provare a ricaricare la pagina.</span>
    </div>
    <div class="ukazatel" id="ukazatel" hidden aria-hidden="true"><i></i><i></i></div>
 
    <article class="karta sklo" id="karta" hidden aria-live="polite">
-    <button class="uchyt" id="k-uchyt" type="button" aria-label="Show more" data-t-aria-label="kartaVic"><i></i></button>
+    <button class="uchyt" id="k-uchyt" type="button" aria-label="Mostra di più" data-t-aria-label="kartaVic"><i></i></button>
     <div class="k-hero" id="k-hero">
      <div class="k-malba" id="k-malba" hidden></div>
      <div class="k-lista">
       <p class="kod" id="k-kod"></p>
-      <button class="zavrit" id="k-sdilet" type="button" aria-label="Copy a link to this language" title="Copy a link to this language" data-t-aria-label="sdiletOdkaz" data-t-title="sdiletOdkaz"><svg aria-hidden="true"><use href="#i-odkaz"/></svg></button>
-      <button class="zavrit" id="k-zavrit" type="button" aria-label="Close language card" data-t-aria-label="zavritKartu"><svg aria-hidden="true"><use href="#i-krizek"/></svg></button>
+      <button class="zavrit" id="k-sdilet" type="button" aria-label="Copia il link a questa lingua" title="Copia il link a questa lingua" data-t-aria-label="sdiletOdkaz" data-t-title="sdiletOdkaz"><svg aria-hidden="true"><use href="#i-odkaz"/></svg></button>
+      <button class="zavrit" id="k-zavrit" type="button" aria-label="Chiudi la scheda della lingua" data-t-aria-label="zavritKartu"><svg aria-hidden="true"><use href="#i-krizek"/></svg></button>
      </div>
      <div class="k-pozdrav" id="k-plne">
       <p class="pozdrav" id="k-pozdrav"></p>
@@ -1893,41 +1893,41 @@ dialog.ai-test td small{display:block; margin-top:4px; color:var(--text3)}
      <h2 id="k-nazev"></h2>
      <p class="domaci" id="k-domaci"></p>
      <span class="odznak" id="k-odznak" hidden></span>
-     <button class="prehraj" id="k-prehraj" type="button"><svg aria-hidden="true"><use href="#i-zvuk"/></svg><span>Play pronunciation</span></button>
+     <button class="prehraj" id="k-prehraj" type="button"><svg aria-hidden="true"><use href="#i-zvuk"/></svg><span>Ascolta la pronuncia</span></button>
     </div>
     <p class="stav" id="k-stav" hidden></p>
     <p class="zkopirovano" id="k-zkopirovano" role="status" hidden></p>
     <div class="k-stitky" id="k-stitky"></div>
-    <nav class="k-cesta" id="k-cesta" hidden aria-label="Family tree of a language family" data-t-aria-label="stromPlatno"></nav>
-  <button class="k-porovnat" id="k-porovnat" type="button"><svg aria-hidden="true"><use href="#i-porovnat"/></svg><span data-t="porovnat">Compare with another language</span></button>
+    <nav class="k-cesta" id="k-cesta" hidden aria-label="Albero genealogico di una famiglia linguistica" data-t-aria-label="stromPlatno"></nav>
+  <button class="k-porovnat" id="k-porovnat" type="button"><svg aria-hidden="true"><use href="#i-porovnat"/></svg><span data-t="porovnat">Confronta con un’altra lingua</span></button>
     <div class="k-telo" id="k-telo"></div>
    </article>
   </section>
 
-  <aside class="police sklo" aria-label="Language list" data-t-aria-label="seznam">
+  <aside class="police sklo" aria-label="Elenco delle lingue" data-t-aria-label="seznam">
    <div class="hledani">
     <label class="pole">
      <svg aria-hidden="true"><use href="#i-lupa"/></svg>
-     <input id="hledej" type="search" placeholder="Search or ask a question…" aria-label="Search languages" data-t-placeholder="hledejPlaceholder" data-t-aria-label="hledejPopisek">
-     <button class="hledej-x" id="hledej-x" type="button" hidden aria-label="Clear search" title="Clear search" data-t-aria-label="hledejVymazat" data-t-title="hledejVymazat"><svg aria-hidden="true"><use href="#i-krizek"/></svg></button>
+     <input id="hledej" type="search" placeholder="Cerca o fai una domanda…" aria-label="Cerca lingue" data-t-placeholder="hledejPlaceholder" data-t-aria-label="hledejPopisek">
+     <button class="hledej-x" id="hledej-x" type="button" hidden aria-label="Cancella la ricerca" title="Cancella la ricerca" data-t-aria-label="hledejVymazat" data-t-title="hledejVymazat"><svg aria-hidden="true"><use href="#i-krizek"/></svg></button>
     </label>
     <button class="hledej-tip" id="hledej-tip" type="button" hidden></button>
-    <div class="razeni segment" role="group" aria-label="Sort" data-t-aria-label="radit">
-     <button type="button" data-razeni="rodiny" aria-pressed="true" data-t="raditRodiny">By family</button>
+    <div class="razeni segment" role="group" aria-label="Ordina" data-t-aria-label="radit">
+     <button type="button" data-razeni="rodiny" aria-pressed="true" data-t="raditRodiny">Per famiglia</button>
      <button type="button" data-razeni="abeceda" aria-pressed="false" data-t="raditAbeceda">A–Z</button>
-     <button type="button" data-razeni="svetadil" aria-pressed="false" data-t="raditSvetadil">By continent</button>
+     <button type="button" data-razeni="svetadil" aria-pressed="false" data-t="raditSvetadil">Per continente</button>
     </div>
     <div class="pocet-radek"><p class="pocet" id="pocet"></p>
-     <button class="tl hlavni" id="tl-nahoda" type="button"><svg aria-hidden="true"><use href="#i-kostka"/></svg><span data-t="prekvap">Random language</span></button></div>
+     <button class="tl hlavni" id="tl-nahoda" type="button"><svg aria-hidden="true"><use href="#i-kostka"/></svg><span data-t="prekvap">Lingua a caso</span></button></div>
    </div>
    <div class="seznam" id="seznam"></div>
    <footer class="paticka">
    <details class="pat-det" id="paticka-det">
-   <summary><svg aria-hidden="true"><use href="#i-kniha"/></svg><span data-t="patickaSouhrn">About, sources, contact, guide and calendar</span><svg class="pat-sipka" aria-hidden="true"><use href="#i-dal"/></svg></summary>
-   <p class="zpetna"><svg aria-hidden="true"><use href="#i-dopis"/></svg><span><span data-t="zpetna">Comments and corrections:</span>
-    <a id="zpetna-odkaz" href="mailto:info@atlasjazyku.cz" title="Send feedback by e-mail" data-t-title="zpetnaPopis">info@atlasjazyku.cz</a></span></p>
-   <p class="o-datech-radek"><button class="odkaz-o-datech" id="tl-o-datech" type="button" aria-haspopup="dialog"><span id="tl-o-datech-text"></span></button><button class="odkaz-o-datech" id="tl-navod-pat" type="button" aria-haspopup="dialog" data-t="navodOdkaz">Full guide</button><button class="odkaz-o-datech" id="tl-kalendar-pat" type="button" aria-haspopup="dialog" data-t="kalendarOdkaz">Calendar of language days</button><a class="odkaz-jazyky" id="odkaz-jazyky" hidden></a></p>
-   <p class="zdroje" data-t="zdroje">Dots: Glottolog (CC BY 4.0) · Grammar: WALS (CC BY 4.0) · Sounds: PHOIBLE (CC BY-SA 3.0) · Map: Natural Earth</p>
+   <summary><svg aria-hidden="true"><use href="#i-kniha"/></svg><span data-t="patickaSouhrn">Informazioni, fonti, contatti, guida e calendario</span><svg class="pat-sipka" aria-hidden="true"><use href="#i-dal"/></svg></summary>
+   <p class="zpetna"><svg aria-hidden="true"><use href="#i-dopis"/></svg><span><span data-t="zpetna">Commenti e correzioni:</span>
+    <a id="zpetna-odkaz" href="mailto:info@atlasjazyku.cz" title="Inviare un commento per e-mail" data-t-title="zpetnaPopis">info@atlasjazyku.cz</a></span></p>
+   <p class="o-datech-radek"><button class="odkaz-o-datech" id="tl-o-datech" type="button" aria-haspopup="dialog"><span id="tl-o-datech-text"></span></button><button class="odkaz-o-datech" id="tl-navod-pat" type="button" aria-haspopup="dialog" data-t="navodOdkaz">Guida completa</button><button class="odkaz-o-datech" id="tl-kalendar-pat" type="button" aria-haspopup="dialog" data-t="kalendarOdkaz">Calendario delle giornate delle lingue</button><a class="odkaz-jazyky" id="odkaz-jazyky" hidden></a></p>
+   <p class="zdroje" data-t="zdroje">Punti: Glottolog (CC BY 4.0) · Grammatica: WALS (CC BY 4.0) · Suoni: PHOIBLE (CC BY-SA 3.0) · Mappa: Natural Earth</p>
    </details>
    </footer>
   </aside>

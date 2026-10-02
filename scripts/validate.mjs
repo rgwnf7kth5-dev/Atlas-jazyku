@@ -32,7 +32,7 @@ for (const j of jazyky) {
     if (a.length !== 3 || Math.abs(a[0]) > 180 || Math.abs(a[1]) > 90 || !(a[2] > 0 && a[2] <= 8))
       chyby.push(`${kde}: podezřelý kruh areálu ${JSON.stringify(a)} (délka, šířka, poloměr ve stupních 0–8)`);
   }
-  for (const lang of ["cs", "en"]) {
+  for (const lang of ["cs", "en", "it"]) {
     const p = j[lang];
     if (!p) { chyby.push(`${kde}: chybí verze ${lang}`); continue; }
     for (const k of ["nazev", "vyslovnost", "rodina", "fakt"]) if (!p[k]) chyby.push(`${kde}: v ${lang} chybí „${k}“`);
@@ -43,6 +43,17 @@ for (const lang of ["cs", "en"]) for (const z of zeme) if (!nazvy[lang][z]) chyb
 const kCs = Object.keys(uiCs), kEn = Object.keys(uiEn);
 for (const k of kCs) if (!(k in uiEn)) chyby.push(`text „${k}“ chybí v src/ui/en.json`);
 for (const k of kEn) if (!(k in uiCs)) chyby.push(`text „${k}“ chybí v src/ui/cs.json`);
+/* další jazyky webu (italština): texty, které chybí, build vezme z angličtiny – jen upozornit; navíc nesmí být nic */
+const uiDalsi = { it: json("src/ui/it.json") };
+for (const [l, ui] of Object.entries(uiDalsi)) {
+  for (const k of Object.keys(ui)) if (!(k in uiEn)) chyby.push(`src/ui/${l}.json: text „${k}“ v src/ui/en.json není`);
+  for (const k of kEn) if (!(k in ui)) varovani.push(`src/ui/${l}.json: chybí „${k}“ (ukáže se anglicky)`);
+  if (ui.lang !== l) chyby.push(`src/ui/${l}.json: „lang“ musí být „${l}“`);
+  { const uzly = new Set(json("data/podrobnosti.json").uzly);
+    for (const k of Object.keys(json(`data/glottolog-branches.${l}.json`))) if (!k.startsWith("_") && !uzly.has(k)) chyby.push(`data/glottolog-branches.${l}.json: větev „${k}“ v Glottologu není`); }
+  for (const f of ["nazvy", "glottolog-families"]) { const s = f === "nazvy" ? `data/nazvy-${l}.json` : `data/glottolog-families.${l}.json`;
+    if (!fs.existsSync(path.join(KOREN, s))) chyby.push(`chybí ${s} (scripts/nazvy.mjs ${l})`); }
+}
 if (!glottolog.body || glottolog.body.length < 5000) chyby.push("data/glottolog.json vypadá neúplně – spusť node scripts/glottolog.mjs");
 const propojene = new Set(glottolog.body.map(b => b[5]).filter(Boolean));
 for (const id of propojene) if (!ids.has(id)) chyby.push(`Glottolog odkazuje na neexistující jazyk „${id}“`);
@@ -211,7 +222,7 @@ if (pd.uzly.length !== pd.nad.length) chyby.push("data/podrobnosti.json: strom p
     if (!k) chyby.push(`data/krajiny.json: jazyk „${j.id}“ nemá krajinu`);
     else if (!druhy.has(k.split(":")[0])) chyby.push(`data/krajiny.json: „${j.id}“ má neznámou krajinu „${k}“`);
   } }
-for (const [l, ui] of [["cs", uiCs], ["en", uiEn]]) {
+for (const [l, ui] of [["cs", uiCs], ["en", uiEn], ["it", uiDalsi.it]]) {
   if (!Array.isArray(ui.aes) || ui.aes.length !== 7) chyby.push(`src/ui/${l}.json: „aes“ musí mít 7 položek (6 stupňů UNESCO + probouzený)`);
   if (!Array.isArray(ui.aesZnak) || ui.aesZnak.length !== 7) chyby.push(`src/ui/${l}.json: „aesZnak“ musí mít 7 položek jako „aes“`);
   if (!Array.isArray(ui.med) || ui.med.length !== 5) chyby.push(`src/ui/${l}.json: „med“ musí mít 5 stupňů popsanosti`);

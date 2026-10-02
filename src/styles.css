@@ -86,9 +86,14 @@ button{font:inherit;color:inherit}
 .nadpisy{margin-right:auto; min-width:0}
 h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8vw,1.8rem); line-height:1; margin:0; letter-spacing:.01em;
   background:var(--nadpis-grad); -webkit-background-clip:text; background-clip:text; color:transparent}
-.jazyk-prepinac{height:38px; display:grid; place-items:center; padding:0 14px; border-radius:12px; text-decoration:none; color:var(--text);
-  font-weight:600; font-size:.84rem; background:var(--plocha); border:1px solid var(--sklo-okraj); transition:border-color .15s, box-shadow .15s}
-.jazyk-prepinac:hover{border-color:var(--cyan); box-shadow:0 0 18px -4px var(--cyan-zare)}
+/* přepínač jazyků webu CS · EN · IT (2. 10. 2026; dřív jeden odkaz na druhou verzi) – segment jako .segment, aktuální jazyk podbarvený */
+.jazyk-prepinac{height:38px; display:flex; align-items:stretch; gap:2px; padding:3px; border-radius:12px; flex:none;
+  background:var(--plocha); border:1px solid var(--sklo-okraj)}
+.jazyk-prepinac a{display:grid; place-items:center; padding:0 9px; border-radius:999px; text-decoration:none; color:var(--text2);
+  font-weight:600; font-size:.78rem; letter-spacing:.05em; transition:color .15s, background .15s}
+.jazyk-prepinac a:hover{color:var(--text)}
+.jazyk-prepinac a[aria-current]{background:var(--cyan-slabe); color:var(--aktivni-text); box-shadow:inset 0 0 0 1px var(--cyan)}
+.jazyk-prepinac a:focus-visible{outline:2px solid var(--cyan); outline-offset:1px}
 .prepinac{width:38px; height:38px; flex:none; display:grid; place-items:center; cursor:pointer; border-radius:12px; padding:0;
   background:var(--plocha); border:1px solid var(--sklo-okraj); transition:border-color .15s, box-shadow .15s}
 .prepinac:hover{border-color:var(--cyan); box-shadow:0 0 18px -4px var(--cyan-zare)}
@@ -543,7 +548,8 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
   .hlava{gap:10px 12px; padding:9px 12px; border-radius:18px}
   .znak{width:36px;height:36px}
   .nadpisy{flex:1 1 auto}
-    .jazyk-prepinac{height:34px}
+  .jazyk-prepinac{height:34px; padding:2px}
+  .jazyk-prepinac a{padding:0 7px}
   .prepinac{width:34px; height:34px}
 }
 @media (max-width:920px){
@@ -1391,3 +1397,15 @@ dialog.ai-test td small{display:block; margin-top:4px; color:var(--text3)}
   font:500 12.5px/1.4 inherit; cursor:pointer; text-wrap:pretty}
 .hledej-tip i{font-style:normal; color:var(--text); text-decoration:underline; text-decoration-color:var(--linka); text-underline-offset:3px}
 .hledej-tip:hover i{text-decoration-color:currentColor}
+
+/* záhlaví na telefonu v jednom řádku i s delším názvem („Atlante delle lingue“) a přepínačem CS · EN · IT (2. 10. 2026):
+   název se zmenší, přepínač je užší; dřív se tlačítko vzhledu zalomilo na další řádek */
+@media (max-width:620px){
+  .hlava{flex-wrap:nowrap; gap:8px}
+  .hlava .domu{min-width:0; flex:1 1 auto}
+  .hlava h1{font-size:clamp(1.05rem,5.6vw,1.6rem); white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+  .jazyk-prepinac a{padding:0 6px; font-size:.72rem}
+  html[lang="it"] .hlava h1{font-size:clamp(1rem,4.3vw,1.6rem)}   /* delší název se vejde celý */
+  html[lang="it"] .domu .znak{width:36px; height:36px}
+  html[lang="it"] .domu{gap:8px}
+}

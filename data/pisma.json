@@ -43,6 +43,10 @@
    "en": {
     "nazev": "Latin script",
     "text": "It arose in Italy in the 7th century BCE from the Etruscan form of the Greek alphabet. It is the most widespread script in the world: most languages of Europe, the Americas, sub-Saharan Africa and Oceania and many languages of Asia (Turkish, Vietnamese, Indonesian) are written in it, many of them only since the 19th and 20th centuries."
+   },
+   "it": {
+    "nazev": "Alfabeto latino",
+    "text": "Nacque in Italia nel VII secolo a.C. dalla forma etrusca dell’alfabeto greco. È la scrittura più diffusa al mondo: vi si scrivono la maggior parte delle lingue d’Europa, delle Americhe, dell’Africa subsahariana e dell’Oceania e molte lingue dell’Asia (turco, vietnamita, indonesiano), molte delle quali solo dal XIX e XX secolo."
    }
   },
   {
@@ -70,6 +74,10 @@
    "en": {
     "nazev": "Cyrillic",
     "text": "It arose in the late 9th or 10th century in the Bulgarian Empire, based on the Greek alphabet with letters for Slavic sounds taken from Glagolitic. It is used for Russian, Ukrainian, Belarusian, Bulgarian, Macedonian, Serbian (alongside Latin) and many non-Slavic languages of the former Soviet Union and Mongolia."
+   },
+   "it": {
+    "nazev": "Alfabeto cirillico",
+    "text": "Nacque alla fine del IX o nel X secolo nell’Impero bulgaro, sulla base dell’alfabeto greco con lettere per i suoni slavi prese dal glagolitico. Si usa per russo, ucraino, bielorusso, bulgaro, macedone, serbo (accanto al latino) e molte lingue non slave dell’ex Unione Sovietica e della Mongolia."
    }
   },
   {
@@ -93,6 +101,10 @@
    "en": {
     "nazev": "Greek script",
     "text": "The Greeks adopted it from the Phoenicians probably in the 9th or 8th century BCE and were the first to write vowels systematically. Today it is used for Greek; the Latin script (via the Etruscan alphabet), the Gothic, Coptic and Cyrillic scripts derive from it."
+   },
+   "it": {
+    "nazev": "Alfabeto greco",
+    "text": "I greci lo adottarono dai fenici probabilmente nel IX o VIII secolo a.C. e furono i primi a scrivere sistematicamente le vocali. Oggi si usa per il greco; ne derivano l’alfabeto latino (attraverso quello etrusco), il gotico, il copto e il cirillico."
    }
   },
   {
@@ -125,6 +137,10 @@
    "en": {
     "nazev": "Arabic script",
     "text": "It developed from the Nabataean script, an offshoot of Aramaic; transitional Nabataeo-Arabic inscriptions date from the 3rd–5th centuries, and the oldest dated inscription in Arabic script is from 512 (Zabad in Syria). With Islam it spread from North Africa to South-East Asia. Besides Arabic it is used for Persian, Pashto, Urdu, Sindhi, Uyghur and Sorani Kurdish. In Arabic it writes mainly consonants, long vowels with letters and short vowels only with optional marks; Uyghur and Sorani Kurdish, however, write all vowels."
+   },
+   "it": {
+    "nazev": "Alfabeto arabo",
+    "text": "Si sviluppò dalla scrittura nabatea, una derivazione dell’aramaico; le iscrizioni di transizione nabateo-arabe risalgono ai secoli III–V, e la più antica iscrizione datata in scrittura araba è del 512 (Zabad, in Siria). Con l’islam si diffuse dal Nordafrica al Sud-est asiatico. Oltre che per l’arabo si usa per persiano, pashtu, urdu, sindhi, uiguro e curdo sorani. In arabo scrive soprattutto le consonanti, le vocali lunghe con lettere e quelle brevi solo con segni facoltativi; l’uiguro e il curdo sorani scrivono invece tutte le vocali."
    }
   },
   {
@@ -148,6 +164,10 @@
    "en": {
     "nazev": "Hebrew script",
     "text": "Today's “square” script derives from the Aramaic script, which Jews adopted in the Persian period (from the 6th–5th century BCE) in place of the older Paleo-Hebrew script. It is used for Hebrew and Yiddish, formerly also for Ladino (now mostly written in Latin script) and other Jewish languages."
+   },
+   "it": {
+    "nazev": "Alfabeto ebraico",
+    "text": "L’odierna scrittura “quadrata” deriva dalla scrittura aramaica, che gli ebrei adottarono in epoca persiana (dal VI–V secolo a.C.) al posto della più antica scrittura paleoebraica. Si usa per l’ebraico e lo yiddish, un tempo anche per il giudeo-spagnolo (oggi scritto per lo più in alfabeto latino) e altre lingue ebraiche."
    }
   },
   {
@@ -172,6 +192,10 @@
    "en": {
     "nazev": "Syriac script",
     "text": "It arose from the Aramaic script around Edessa in the first centuries CE. It is used for Classical Syriac, the liturgical language of several Eastern churches, and for the Neo-Aramaic languages of Syriac Christians (Assyrians, Chaldeans, Arameans)."
+   },
+   "it": {
+    "nazev": "Alfabeto siriaco",
+    "text": "Nacque dalla scrittura aramaica nella zona di Edessa nei primi secoli d.C. Si usa per il siriaco classico, lingua liturgica di diverse Chiese orientali, e per le lingue neoaramaiche dei cristiani siriaci (assiri, caldei, aramei)."
    }
   },
   {
@@ -196,6 +220,10 @@
    "en": {
     "nazev": "Thaana",
     "text": "The script of Dhivehi, attested from the turn of the 17th century (inscriptions in the mosque on Kanditheemu), in general use from the 18th century. Its first nine letters derive from Arabic numerals and the next nine from Indic numerals; vowels are written with obligatory marks above and below the letters."
+   },
+   "it": {
+    "nazev": "Thaana",
+    "text": "La scrittura del divehi, attestata dalla fine del XVI o inizio del XVII secolo (iscrizioni nella moschea di Kanditheemu), di uso generale dal XVIII secolo. Le sue prime nove lettere derivano dai numerali arabi e le nove successive da quelli indiani; le vocali si scrivono con segni obbligatori sopra e sotto le lettere."
    }
   },
   {
@@ -219,6 +247,10 @@
    "en": {
     "nazev": "Devanagari",
     "text": "An Indian script derived from Brahmi via the Gupta and Nagari scripts; its letters hang from a continuous horizontal line. It is used for Hindi, Marathi, Nepali, Sanskrit and many other languages of northern India and Nepal."
+   },
+   "it": {
+    "nazev": "Devanagari",
+    "text": "Una scrittura indiana derivata dalla brahmi attraverso le scritture gupta e nagari; le sue lettere pendono da una linea orizzontale continua. Si usa per hindi, marathi, nepalese, sanscrito e molte altre lingue dell’India settentrionale e del Nepal."
    }
   },
   {
@@ -242,6 +274,10 @@
    "en": {
     "nazev": "Bengali script",
     "text": "An eastern Indian script from the same root as Devanagari. In two slightly different forms it is used for Bengali and Assamese, and also for Manipuri, where since 2021 it has been used concurrently with the revived Meitei Mayek script."
+   },
+   "it": {
+    "nazev": "Scrittura bengalese",
+    "text": "Una scrittura dell’India orientale con la stessa radice della devanagari. In due forme leggermente diverse si usa per il bengalese e l’assamese, e anche per il manipuri, dove dal 2021 si usa accanto alla rinata scrittura meitei mayek."
    }
   },
   {
@@ -265,6 +301,10 @@
    "en": {
     "nazev": "Gurmukhi",
     "text": "The script of Punjabi in India, associated with the Sikhs; according to tradition it was standardised in the 16th century by the second Sikh Guru, Angad. In Pakistan Punjabi is written in the Arabic script (Shahmukhi)."
+   },
+   "it": {
+    "nazev": "Gurmukhi",
+    "text": "La scrittura del punjabi in India, legata ai sikh; secondo la tradizione fu standardizzata nel XVI secolo dal secondo guru sikh, Angad. In Pakistan il punjabi si scrive in scrittura araba (shahmukhi)."
    }
   },
   {
@@ -288,6 +328,10 @@
    "en": {
     "nazev": "Gujarati script",
     "text": "A close relative of Devanagari, but without the continuous top line. It is used for Gujarati."
+   },
+   "it": {
+    "nazev": "Scrittura gujarati",
+    "text": "Una stretta parente della devanagari, ma senza la linea superiore continua. Si usa per il gujarati."
    }
   },
   {
@@ -311,6 +355,10 @@
    "en": {
     "nazev": "Odia script",
     "text": "The script of Odia in eastern India. Its typical rounded tops are usually explained by the tradition of writing with a stylus on palm leaves, which a straight line would tear."
+   },
+   "it": {
+    "nazev": "Scrittura odia",
+    "text": "La scrittura dell’odia nell’India orientale. Le sue tipiche sommità arrotondate si spiegano di solito con la tradizione di scrivere a stilo su foglie di palma, che una linea dritta avrebbe lacerato."
    }
   },
   {
@@ -334,6 +382,10 @@
    "en": {
     "nazev": "Tamil script",
     "text": "A South Indian script derived from Brahmi. It has fewer consonant letters than other Indian scripts because Tamil does not distinguish voicing or aspiration."
+   },
+   "it": {
+    "nazev": "Scrittura tamil",
+    "text": "Una scrittura dell’India meridionale derivata dalla brahmi. Ha meno lettere consonantiche delle altre scritture indiane perché il tamil non distingue sonorità e aspirazione."
    }
   },
   {
@@ -357,6 +409,10 @@
    "en": {
     "nazev": "Telugu script",
     "text": "A South Indian script with characteristic rounded shapes, closely related to the Kannada script. It is used for Telugu."
+   },
+   "it": {
+    "nazev": "Scrittura telugu",
+    "text": "Una scrittura dell’India meridionale dalle caratteristiche forme arrotondate, strettamente imparentata con quella kannada. Si usa per il telugu."
    }
   },
   {
@@ -380,6 +436,10 @@
    "en": {
     "nazev": "Kannada script",
     "text": "A South Indian script closely related to Telugu. It is used for Kannada and also for some smaller languages of Karnataka, such as Tulu."
+   },
+   "it": {
+    "nazev": "Scrittura kannada",
+    "text": "Una scrittura dell’India meridionale strettamente imparentata con quella telugu. Si usa per il kannada e anche per alcune lingue minori del Karnataka, come il tulu."
    }
   },
   {
@@ -403,6 +463,10 @@
    "en": {
     "nazev": "Malayalam script",
     "text": "The South Indian script of Malayalam in Kerala, derived from the Grantha script."
+   },
+   "it": {
+    "nazev": "Scrittura malayalam",
+    "text": "La scrittura dell’India meridionale del malayalam, nel Kerala, derivata dalla scrittura grantha."
    }
   },
   {
@@ -426,6 +490,10 @@
    "en": {
     "nazev": "Sinhala script",
     "text": "The script of Sinhala in Sri Lanka, derived from Brahmi."
+   },
+   "it": {
+    "nazev": "Scrittura singalese",
+    "text": "La scrittura del singalese in Sri Lanka, derivata dalla brahmi."
    }
   },
   {
@@ -449,6 +517,10 @@
    "en": {
     "nazev": "Tibetan script",
     "text": "According to tradition it was created in the 7th century by Thonmi Sambhota on an Indian model. It is used for Tibetan, Dzongkha in Bhutan and other Tibetic languages; its spelling preserves the pronunciation of Old Tibetan."
+   },
+   "it": {
+    "nazev": "Scrittura tibetana",
+    "text": "Secondo la tradizione fu creata nel VII secolo da Thonmi Sambhota su un modello indiano. Si usa per il tibetano, il dzongkha del Bhutan e altre lingue tibetiche; la sua ortografia conserva la pronuncia del tibetano antico."
    }
   },
   {
@@ -472,6 +544,10 @@
    "en": {
     "nazev": "Burmese script",
     "text": "A script of the South Indian family, traditionally held to have come via the Mon script (some scholars derive it from the Pyu script instead); its letters are built from circles and arcs. It is used for Burmese, Mon, Shan and other languages of Myanmar."
+   },
+   "it": {
+    "nazev": "Scrittura birmana",
+    "text": "Una scrittura della famiglia indiana meridionale, giunta secondo la tradizione attraverso la scrittura mon (alcuni studiosi la fanno derivare invece da quella pyu); le sue lettere sono costruite con cerchi e archi. Si usa per birmano, mon, shan e altre lingue del Myanmar."
    }
   },
   {
@@ -495,6 +571,10 @@
    "en": {
     "nazev": "Thai script",
     "text": "It arose from the Old Khmer script; tradition links its creation to King Ram Khamhaeng and the year 1283, though the authenticity of his inscription is disputed. It also marks the tones of Thai, and words are not separated by spaces."
+   },
+   "it": {
+    "nazev": "Scrittura thailandese",
+    "text": "Nacque dall’antica scrittura khmer; la tradizione ne lega la creazione al re Ram Khamhaeng e all’anno 1283, anche se l’autenticità della sua iscrizione è discussa. Indica anche i toni del thailandese, e le parole non sono separate da spazi."
    }
   },
   {
@@ -518,6 +598,10 @@
    "en": {
     "nazev": "Lao script",
     "text": "A close relative of the Thai script with simplified shapes. It is used for Lao."
+   },
+   "it": {
+    "nazev": "Scrittura lao",
+    "text": "Una stretta parente della scrittura thailandese, con forme semplificate. Si usa per il lao."
    }
   },
   {
@@ -541,6 +625,10 @@
    "en": {
     "nazev": "Khmer script",
     "text": "It developed from the South Indian Pallava script; the oldest dated Khmer inscription is from 611. It is used for Khmer, and the Thai and Lao scripts derive from it."
+   },
+   "it": {
+    "nazev": "Scrittura khmer",
+    "text": "Si sviluppò dalla scrittura pallava dell’India meridionale; la più antica iscrizione khmer datata è del 611. Si usa per il khmer, e ne derivano le scritture thailandese e lao."
    }
   },
   {
@@ -564,6 +652,10 @@
    "en": {
     "nazev": "Georgian script",
     "text": "The oldest Georgian inscriptions date from the 5th century. Today Georgian is written in the Mkhedruli alphabet of 33 letters, which has no case distinction in running text; Mtavruli forms are used only for all-caps titles."
+   },
+   "it": {
+    "nazev": "Alfabeto georgiano",
+    "text": "Le più antiche iscrizioni georgiane risalgono al V secolo. Oggi il georgiano si scrive nell’alfabeto mkhedruli di 33 lettere, che nel testo corrente non distingue maiuscole e minuscole; le forme mtavruli si usano solo per titoli tutti in maiuscolo."
    }
   },
   {
@@ -587,6 +679,10 @@
    "en": {
     "nazev": "Armenian script",
     "text": "Around 405 it was created by the monk Mesrop Mashtots so that the Bible could be translated into Armenian. It has 36 original letters, to which two more, ō and f, were added later (12th–13th century)."
+   },
+   "it": {
+    "nazev": "Alfabeto armeno",
+    "text": "Fu creato intorno al 405 dal monaco Mesrop Maštoc’ perché la Bibbia potesse essere tradotta in armeno. Ha 36 lettere originali, a cui se ne aggiunsero più tardi altre due, ō e f (XII–XIII secolo)."
    }
   },
   {
@@ -610,6 +706,10 @@
    "en": {
     "nazev": "Ethiopic script",
     "text": "It developed from the South Arabian script; in the 4th century vowel marks began to be attached to the consonants. It is used for Amharic, Tigrinya and the liturgical language Ge'ez."
+   },
+   "it": {
+    "nazev": "Scrittura etiopica",
+    "text": "Si sviluppò dalla scrittura sudarabica; nel IV secolo si cominciarono ad aggiungere alle consonanti segni vocalici. Si usa per amarico, tigrino e la lingua liturgica ge’ez."
    }
   },
   {
@@ -635,6 +735,10 @@
    "en": {
     "nazev": "Chinese characters",
     "text": "The oldest evidence is the oracle bone inscriptions of the Shang dynasty (c. 1250 BCE). A character usually writes one meaningful syllable. Simplified characters are used in the PRC and Singapore, traditional ones in Taiwan, Hong Kong and Macau."
+   },
+   "it": {
+    "nazev": "Caratteri cinesi",
+    "text": "Le testimonianze più antiche sono le iscrizioni su ossa oracolari della dinastia Shang (circa 1250 a.C.). Un carattere scrive di solito una sillaba dotata di significato. I caratteri semplificati si usano nella RPC e a Singapore, quelli tradizionali a Taiwan, Hong Kong e Macao."
    }
   },
   {
@@ -660,6 +764,10 @@
    "en": {
     "nazev": "Japanese script",
     "text": "It combines Chinese characters (kanji) with two syllabaries, hiragana and katakana, which developed from Chinese characters in the 9th century. It is written both horizontally and vertically."
+   },
+   "it": {
+    "nazev": "Scrittura giapponese",
+    "text": "Combina i caratteri cinesi (kanji) con due sillabari, hiragana e katakana, sviluppatisi dai caratteri cinesi nel IX secolo. Si scrive sia in orizzontale sia in verticale."
    }
   },
   {
@@ -684,6 +792,10 @@
    "en": {
     "nazev": "Hangul",
     "text": "The Korean script (Chosŏn’gŭl in North Korea), created at the initiative of King Sejong and promulgated in 1446. Letters are grouped into syllable blocks, and the shapes of the consonants imitate the position of the speech organs."
+   },
+   "it": {
+    "nazev": "Hangul",
+    "text": "La scrittura coreana (chosŏn’gŭl in Corea del Nord), creata per iniziativa del re Sejong e promulgata nel 1446. Le lettere si raggruppano in blocchi sillabici, e le forme delle consonanti imitano la posizione degli organi fonatori."
    }
   },
   {
@@ -708,6 +820,10 @@
    "en": {
     "nazev": "Mongolian script",
     "text": "It arose in the 13th century from the Uyghur script and is written vertically from top to bottom. In Mongolia it was replaced in everyday use by Cyrillic from the 1940s; since 2 January 2025, however, official documents there have been issued in both scripts. In Inner Mongolia in China it has remained in continuous use."
+   },
+   "it": {
+    "nazev": "Scrittura mongola",
+    "text": "Nacque nel XIII secolo dalla scrittura uigura e si scrive in verticale dall’alto in basso. In Mongolia fu sostituita nell’uso quotidiano dal cirillico dagli anni Quaranta; dal 2 gennaio 2025, però, vi si emettono documenti ufficiali in entrambe le scritture. Nella Mongolia Interna, in Cina, è rimasta in uso ininterrotto."
    }
   },
   {
@@ -732,6 +848,10 @@
    "en": {
     "nazev": "Canadian syllabics",
     "text": "It is usually credited to the missionary James Evans (c. 1840, Norway House), though Cree oral tradition attributes it to Mistanâkôwêw (Calling Badger). Traditionally called a syllabary, typologically it is an abugida. The shape of a sign gives the consonant and its orientation the vowel. It is used for Cree, Ojibwe and Inuktitut."
+   },
+   "it": {
+    "nazev": "Sillabario aborigeno canadese",
+    "text": "Si attribuisce di solito al missionario James Evans (circa 1840, Norway House), anche se la tradizione orale cree lo attribuisce a Mistanâkôwêw (Calling Badger). Tradizionalmente chiamato sillabario, dal punto di vista tipologico è un abugida. La forma di un segno indica la consonante e il suo orientamento la vocale. Si usa per cree, ojibwe e inuktitut."
    }
   },
   {
@@ -756,6 +876,10 @@
    "en": {
     "nazev": "Tifinagh",
     "text": "The script of the Berber languages, rooted in the ancient Libyco-Berber script; the Tuareg have used it continuously. Its modern form has been the officially adopted script for Berber in Morocco since 2003 (Berber has been an official language since 2011). Traditional Tuareg tifinagh mostly does not write vowels."
+   },
+   "it": {
+    "nazev": "Tifinagh",
+    "text": "La scrittura delle lingue berbere, radicata nell’antica scrittura libico-berbera; i tuareg l’hanno usata ininterrottamente. La sua forma moderna è dal 2003 la scrittura ufficialmente adottata per il berbero in Marocco (il berbero è lingua ufficiale dal 2011). Il tifinagh tradizionale tuareg per lo più non scrive le vocali."
    }
   },
   {
@@ -780,6 +904,10 @@
    "en": {
     "nazev": "Cherokee syllabary",
     "text": "It was created by Sequoyah and adopted by the Cherokee council in 1825; within a few years the Cherokee learned to write it en masse. Almost every one of its 85 signs writes a syllable (the exception is a standalone s)."
+   },
+   "it": {
+    "nazev": "Sillabario cherokee",
+    "text": "Fu creato da Sequoyah e adottato dal consiglio cherokee nel 1825; in pochi anni i cherokee impararono a scriverlo in massa. Quasi ognuno dei suoi 85 segni scrive una sillaba (l’eccezione è una s isolata)."
    }
   },
   {
@@ -804,6 +932,10 @@
    "en": {
     "nazev": "N'Ko",
     "text": "It was created in 1949 by the Guinean teacher Solomana Kanté for the Manding languages. It is written from right to left and also marks tones."
+   },
+   "it": {
+    "nazev": "N’Ko",
+    "text": "Fu creato nel 1949 dall’insegnante guineano Solomana Kanté per le lingue mandinghe. Si scrive da destra a sinistra e indica anche i toni."
    }
   },
   {
@@ -828,6 +960,10 @@
    "en": {
     "nazev": "Vai script",
     "text": "The syllabary of the Vai language in Liberia, created in the 1830s; tradition attributes it to Momolu Duwalu Bukele."
+   },
+   "it": {
+    "nazev": "Scrittura vai",
+    "text": "Il sillabario della lingua vai in Liberia, creato negli anni Trenta dell’Ottocento; la tradizione lo attribuisce a Momolu Duwalu Bukele."
    }
   },
   {
@@ -852,6 +988,10 @@
    "en": {
     "nazev": "Yi script",
     "text": "The syllabary of the Nuosu (Yi) language in Sichuan province, standardised in the 1970s from the traditional script."
+   },
+   "it": {
+    "nazev": "Scrittura yi",
+    "text": "Il sillabario della lingua nuosu (yi) nella provincia del Sichuan, standardizzato negli anni Settanta dalla scrittura tradizionale."
    }
   },
   {
@@ -876,6 +1016,10 @@
    "en": {
     "nazev": "Ol Chiki",
     "text": "The script of Santali, created in 1925 by Raghunath Murmu. Unlike the Brahmi-derived scripts, it is an alphabet with separate letters for vowels."
+   },
+   "it": {
+    "nazev": "Ol chiki",
+    "text": "La scrittura del santali, creata nel 1925 da Raghunath Murmu. A differenza delle scritture derivate dalla brahmi è un alfabeto con lettere separate per le vocali."
    }
   }
  ]

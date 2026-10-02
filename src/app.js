@@ -17,6 +17,23 @@ document.querySelectorAll(".med-obr[data-ikona]").forEach(function(i){ const u =
 const PUTOVANI = /*__PUTOVANI__*/null || [];   // putování jazyka (data/putovani.json): etapy s oblastmi a proudy na glóbu
 const CESTY = /*__CESTY__*/null || [];     // cesty slov na glóbu (data/cesty-slov.json): kroky jako strom, oblouk od rodiče k jazyku
 const TYP = /*__TYPOLOGIE__*/null;      // typologické mapy: vybrané vlastnosti WALS, texty a hodnota pro každou tečku
+/* další jazyky webu (italština od 2. 10. 2026): v datech, kde je překlad jen česky a anglicky, se místo chybějícího
+   překladu ukáže anglický – {cs, en} dostane it = en, částečný překlad se doplní po klíčích. Build totéž dělá s texty rozhraní. */
+const DALSI_JAZYKY = Object.keys(UI).filter(function(l){ return l !== "cs" && l !== "en"; });
+function spojJ(pod, nad){
+  if (nad == null) return pod;
+  if (!pod || typeof pod !== "object" || Array.isArray(pod) || typeof nad !== "object" || Array.isArray(nad)) return nad;
+  const v = Object.assign({}, pod); Object.keys(nad).forEach(function(k){ v[k] = spojJ(pod[k], nad[k]); }); return v;
+}
+function doplnJazyky(o){
+  if (!o || typeof o !== "object") return o;
+  if (Array.isArray(o)) { o.forEach(doplnJazyky); return o; }
+  const jazykove = "cs" in o && "en" in o;
+  if (jazykove) DALSI_JAZYKY.forEach(function(l){ o[l] = spojJ(o.en, o[l]); });
+  Object.keys(o).forEach(function(k){ if (!(jazykove && (k === "cs" || k === "en" || DALSI_JAZYKY.indexOf(k) >= 0))) doplnJazyky(o[k]); });
+  return o;
+}
+[STAROVEK_DATA.civilizace, VYMYSLENE, PUTOVANI, CESTY, TYP].forEach(doplnJazyky);
 let T = UI[VYCHOZI];
 let denni = document.documentElement.getAttribute("data-theme") === "light";   // denní vzhled (viz níž)
 let STATY = STATY_VSE[VYCHOZI];
@@ -67,8 +84,8 @@ function prelozData(){
   JAZYKY.forEach(function(j){
     const p = j.t[T.lang];
     j.n = p.n; j.prep = p.prep; j.rod = p.rod; j.fakt = p.fakt; j.pis = p.pis || j.pis0;
-    j.hledat = bezDiakritiky([j.t.cs.n, j.t.en.n, j.dom, j.pis, j.prep, j.rod]
-      .concat(j.zeme.map(function(z){ return STATY_VSE.cs[z] + " " + STATY_VSE.en[z]; })).join(" "));
+    j.hledat = bezDiakritiky([j.t.cs.n, j.t.en.n, j.dom, j.pis, j.prep, j.rod].concat(DALSI_JAZYKY.map(function(l){ return j.t[l].n; }))
+      .concat(j.zeme.map(function(z){ return STATY_VSE.cs[z] + " " + STATY_VSE.en[z] + DALSI_JAZYKY.map(function(l){ return " " + (STATY_VSE[l][z] || ""); }).join(""); })).join(" "));
   });
   REJSTRIK.rr = REJSTRIK.r[T.lang];
   REJSTRIK.mm = REJSTRIK.m[T.lang];
@@ -132,8 +149,8 @@ function atlasSkryty(j){
 function jmenoBodu(i){
   const id = B[i][5];
   if (id && PODLE_ID[id]) return PODLE_ID[id].n;
-  const cs = T.lang === "cs" && radek(i)[9];
-  return cs ? velke(cs) : B[i][0];
+  const jm = T.lang === "cs" ? radek(i)[9] : PD.nazvy && PD.nazvy[T.lang] ? PD.nazvy[T.lang][i] : "";   // jinak anglické jméno z Glottologu
+  return jm ? velke(jm) : B[i][0];
 }
 
 try { localStorage.removeItem("atlas-sbirka"); } catch (e) {}   // úklid po zrušené sbírce pozdravů
@@ -201,7 +218,7 @@ function dlazdice(j){
    Význačné dny (data/dny-jazyku.json: den jazyka, státní svátek, výročí) mají svůj jazyk a vysvětlení.
    Ostatní dny Jazyk dne cestuje kolem světa: pořadí CESTA vede od češtiny vždy k nejbližšímu dosud
    nenavštívenému jazyku a karta řekne, o kolik kilometrů a kterým směrem jsme se od včerejška posunuli. */
-const DNY = /*__DNY__*/null;
+const DNY = doplnJazyky(/*__DNY__*/null);
 function stredJazyka(j){                     /* i tečka rejstříku jako Jazyk dne (latina, esperanto) – ta nemá stred, jen bod */
   const i = j.bod != null ? j.bod : BOD_ATLASU[j.id];
   return i >= 0 && !BEZ_POLOHY[i] ? [B[i][1], B[i][2]] : j.stred;
@@ -339,11 +356,14 @@ function kartaDneJazyku(){
    („co má společného němčina s italštinou“). Tvary slov se porovnávají podle kmene (Brazílie – v Brazílii).
    Stejné akce (ukazZemi, ukazSkupinu, srovnání) mají později sloužit i AI jako nástroje. */
 let DOTAZ_IX = null, dotazSkupina = null, dotazAkce = null;
-const DOTAZ_SPUSTE = /^(jazyk|language|mluv|rec|speak|spoken|rodin|famil|vetev|vetv|branch|nareci|dialect)/;
-const DOTAZ_PREDLOZKY = {v: 1, ve: 1, na: 1, in: 1, of: 1};
+const DOTAZ_SPUSTE = /^(jazyk|language|mluv|rec|speak|spoken|rodin|famil|vetev|vetv|branch|nareci|dialect|lingu|parla|ramo|rami)/;   // i italsky (2. 10. 2026)
+const DOTAZ_PREDLOZKY = {v: 1, ve: 1, na: 1, in: 1, of: 1, del: 1, della: 1, dell: 1, dello: 1, di: 1, nel: 1, nella: 1, nello: 1, negli: 1, nei: 1, degli: 1};
 const DOTAZ_ALIASY_ZEMI = {"United States of America": ["usa", "us", "amerika", "america"], "United Kingdom": ["britanie", "britain", "uk", "anglie", "england"],
   "Netherlands": ["holandsko", "holland"], "Czechia": ["ceska republika", "czech republic"], "Dem. Rep. Congo": ["kongo kinshasa", "drc"]};
-const DOTAZ_ALIASY_UZLU = {"Uralic": ["ugrofinska", "finno-ugric", "finnougric"]};
+const DOTAZ_ALIASY_UZLU = {"Uralic": ["ugrofinska", "finno-ugric", "finnougric", "ugrofinniche"],
+  /* italské názvy hlavních větví (české jsou v PD.vetve): „lingue slave“, „lingue romanze“… */
+  "Slavic": ["slava"], "Germanic": ["germanica"], "Romance": ["romanza", "neolatina"], "Celtic": ["celtica"], "Eastern Baltic": ["baltica"],
+  "Indo-Aryan": ["indoaria", "indoarya"], "Iranian": ["iranica"], "Semitic": ["semitica"], "Narrow Bantu": ["bantu"], "Italic": ["italica"]};
 function dotazSlova(s){ return bezDiakritiky(s).replace(/[()]/g, " ").split(/[^a-z0-9'-]+/).filter(function(w){ return w.length >= 1; }); }
 /* slovo dotazu odpovídá slovu názvu: shodný kmen (bez koncových samohlásek), u krátkých kmenů jen malá odchylka */
 function shodaSlova(q, n){
@@ -366,16 +386,17 @@ function pripravDotazy(){
     if (body.length < 2) return;
     const n = PD.uzly[u], jm = [n];
     if (PD.vetve && PD.vetve[n]) jm.push(PD.vetve[n]);
+    DALSI_JAZYKY.forEach(function(l){ if (PD.vetveJ && PD.vetveJ[l][n]) jm.push(PD.vetveJ[l][n]); });
     const r = REJSTRIK.r.en.findIndex(function(x){ return x.toLowerCase() === n.toLowerCase(); });
-    if (r >= 0 && PD.nad[u] < 0) jm.push(REJSTRIK.r.cs[r]);
+    if (r >= 0 && PD.nad[u] < 0) { jm.push(REJSTRIK.r.cs[r]); DALSI_JAZYKY.forEach(function(l){ jm.push(REJSTRIK.r[l][r]); }); }
     (DOTAZ_ALIASY_UZLU[n] || []).forEach(function(a){ jm.push(a); });
     uzly.push({u: u, jmena: jm.map(function(x){ return x.replace(/\s*\(.*\)\s*/g, " ").trim(); }), body: body, koren: PD.nad[u] < 0});
   });
-  const zeme = ZEME.map(function(f){ const n = f.properties.name; return {f: f, jmena: [n, STATY_VSE.cs[n] || n, STATY_VSE.en[n] || n].concat(DOTAZ_ALIASY_ZEMI[n] || [])}; });
+  const zeme = ZEME.map(function(f){ const n = f.properties.name; return {f: f, jmena: [n, STATY_VSE.cs[n] || n, STATY_VSE.en[n] || n].concat(DALSI_JAZYKY.map(function(l){ return STATY_VSE[l][n] || n; }), DOTAZ_ALIASY_ZEMI[n] || [])}; });
   /* jazyky atlasu: jméno česky i anglicky a české příslovce (italština → italsky, němčina → německy) */
   const jazyky = JAZYKY.map(function(j){
     const cs = bezDiakritiky(j.t.cs.n), prisl = cs === "nemcina" ? "nemecky" : /stina$/.test(cs) ? cs.replace(/stina$/, "sky") : /ctina$/.test(cs) ? cs.replace(/ctina$/, "cky") : null;
-    return {j: j, jmena: [j.t.cs.n, j.t.en.n], prisl: prisl};
+    return {j: j, jmena: [j.t.cs.n, j.t.en.n].concat(DALSI_JAZYKY.map(function(l){ return j.t[l].n; })), prisl: prisl};
   });
   return (DOTAZ_IX = {uzly: uzly, zeme: zeme, jazyky: jazyky});
 }
@@ -389,7 +410,7 @@ function rozumejDotazu(text){
     return x.jmena.some(function(n){ return shodaNazvu(slova, n); }) || (x.prisl && slova.indexOf(x.prisl) >= 0);
   });
   if (jazyky.length >= 2) return {typ: "srovnani", a: jazyky[0].j, b: jazyky[1].j, jmena: jmenaJazyku(jazyky.slice(0, 2))};
-  if (jazyky.length === 1 && slova.some(function(w){ return w === "kde" || w === "where"; })) return {typ: "jazyk", j: jazyky[0].j, jmena: jmenaJazyku(jazyky)};   // „kde se mluví německy“
+  if (jazyky.length === 1 && slova.some(function(w){ return w === "kde" || w === "where" || w === "dove"; })) return {typ: "jazyk", j: jazyky[0].j, jmena: jmenaJazyku(jazyky)};   // „kde se mluví německy“
   /* stát: s předložkou („v Brazílii“, „of India“) má přednost; bez ní jen tehdy, když nesedí rodina („germánské jazyky“ ≠ Německo) */
   let stat = null;
   for (let k = 0; k < IX.zeme.length && !(stat && stat.predlozka); k++) {
@@ -405,7 +426,7 @@ function rozumejDotazu(text){
       if (!x.jmena.some(function(n){ return shodaNazvu(slova, n); })) return;
       if (!nej || x.body.length > nej.body.length) nej = x;
     });
-    if (nej) return {typ: "skupina", u: nej.u, body: nej.body, koren: nej.koren, jmena: nej.jmena, alias: DOTAZ_ALIASY_UZLU[PD.uzly[nej.u]] && !shodaNazvu(slova, PD.uzly[nej.u]) && !shodaNazvu(slova, PD.vetve[PD.uzly[nej.u]] || "") ? PD.uzly[nej.u] : null};
+    if (nej) return {typ: "skupina", u: nej.u, body: nej.body, koren: nej.koren, jmena: nej.jmena, alias: PD.uzly[nej.u] === "Uralic" && !shodaNazvu(slova, PD.uzly[nej.u]) && !shodaNazvu(slova, PD.vetve[PD.uzly[nej.u]] || "") ? PD.uzly[nej.u] : null};
   }
   if (stat) return stat;
   if (jazyky.length === 1 && spoust) return {typ: "jazyk", j: jazyky[0].j, jmena: jmenaJazyku(jazyky)};
@@ -417,7 +438,9 @@ function jmenaJazyku(x){ const j = []; x.forEach(function(y){ j.push.apply(j, y.
 const DOTAZ_VYPLN = new Set(("jazyk jazyky jazyku jazycich jazykem jazyce language languages rec reci mluvi mluvit mluvy se v ve na do z ze s o " +
   "of in the a and i jake jakymi jaky jaka jakych ktere kterymi ktery kde where which what are is spoken speak speaks vsechny vsech najdi ukaz " +
   "find show all list seznam rodina rodiny rodin family families branch vetev vetve mezi between porovnej srovnej compare srovnani vs versus " +
-  "co ma maji spolecneho have has common rozdil difference jsou").split(" "));
+  "co ma maji spolecneho have has common rozdil difference jsou " +
+  "lingua lingue si parla parlano parlata parlate del della dello dell dei degli delle di nel nella nello nei negli quali quale che dove tutte " +
+  "tutti mostra trova elenco famiglia famiglie ramo rami tra fra confronta confronto e ed il lo la le gli un una cosa hanno comune differenza sono").split(" "));
 function celyDotaz(text, d){
   if (!d || !d.jmena) return false;
   const nazvy = []; d.jmena.forEach(function(n){ dotazSlova(n).forEach(function(w){ if (w.length >= 2) nazvy.push(w); }); });
@@ -426,8 +449,10 @@ function celyDotaz(text, d){
 function nazevSkupiny(u){
   const n = PD.uzly[u];
   if (PD.nad[u] < 0) { const r = REJSTRIK.r.en.findIndex(function(x){ return x.toLowerCase() === n.toLowerCase(); }); if (r >= 0) return velke(REJSTRIK.rr[r]); }
-  return T.lang === "cs" && PD.vetve && PD.vetve[n] ? velke(PD.vetve[n]) : n;
+  return prekladVetve(n) ? velke(prekladVetve(n)) : n;
 }
+/* přeložený název větve Glottologu: česky PD.vetve, další jazyky PD.vetveJ (italsky jen hlavní větve); jinak nic → anglicky */
+function prekladVetve(n){ return T.lang === "cs" ? PD.vetve && PD.vetve[n] : PD.vetveJ && PD.vetveJ[T.lang] ? PD.vetveJ[T.lang][n] : ""; }
 /* let nad skupinu bodů: střed jako průměr vektorů, přiblížení podle nejvzdálenějšího bodu */
 function letNadBody(body){
   if (!globusOk || !body.length) return;
@@ -981,7 +1006,7 @@ $("hledej").addEventListener("input", function(e){ postavPolici(e.target.value);
 const TIP_POR = Math.floor(Math.random() * 7);
 function obnovTipHledani(){
   const b = $("hledej-tip"); if (!b) return;
-  const pr = aiZap ? T.hledejPriklady : (T.lang === "cs" ? ["jazyky v Brazílii", "slovanské jazyky", "němčina a italština"] : ["languages of Brazil", "Slavic languages", "German and Italian"]);
+  const pr = aiZap ? T.hledejPriklady : ({cs: ["jazyky v Brazílii", "slovanské jazyky", "němčina a italština"], it: ["lingue del Brasile", "lingue slave", "tedesco e italiano"]}[T.lang] || ["languages of Brazil", "Slavic languages", "German and Italian"]);
   const q = pr[TIP_POR % pr.length];
   b.hidden = !!$("hledej").value;
   b.textContent = "✦ " + T.hledejTip + " ";
@@ -2066,7 +2091,7 @@ const pamet = function(k){ try { return localStorage.getItem(k); } catch (e) { r
 const zapamatuj = function(k){ try { localStorage.setItem(k, "1"); } catch (e) {} };
 function ukazUkazatel(){
   if (pamet("atlas-uvitano") || vybrany || !globusOk) return;
-  ukazatelBod = BOD_ATLASU[T.lang === "en" ? "en" : "cs"];
+  ukazatelBod = BOD_ATLASU[T.lang] != null ? BOD_ATLASU[T.lang] : BOD_ATLASU.en;
   potrebaKresli = true;
 }
 function schovejUkazatel(trvale){
@@ -2485,7 +2510,7 @@ const POCTY_STUPNU = {};
 for (let i = 0; i < POCET_B; i++) { const v = vitalitaBodu(i); POCTY_STUPNU[v] = (POCTY_STUPNU[v] || 0) + 1; }
 const PORADI_V_PANELU = [0, 1, 2, 3, 4, 5, 6, -1];
 function nazevStupne(v){ return v < 0 ? T.vitalitaBezUdaje : T.aes[v][0]; }
-function procenta(n, z){ const p = 100 * n / z; return cislo(p < 10 ? Math.round(p * 10) / 10 : Math.round(p), p < 10 ? 1 : 0) + (T.lang === "en" ? "%" : "\u00A0%"); }   // česky s pevnou mezerou, anglicky bez mezery
+function procenta(n, z){ const p = 100 * n / z; return cislo(p < 10 ? Math.round(p * 10) / 10 : Math.round(p), p < 10 ? 1 : 0) + (T.lang === "cs" ? "\u00A0%" : "%"); }   // česky s pevnou mezerou, anglicky a italsky bez mezery
 function obnovVitalituPanel(){
   const n = povoleneStupne.size, filtruje = n < VSECHNY_STUPNE.length;
   $("vitalita-pocet").hidden = !filtruje;
@@ -3350,10 +3375,12 @@ function ukazKartuBodu(i){
   zalozky([{nazev: T.zalozkaPrehled, uzly: prehled}, {nazev: T.zalozkaStavba, uzly: stavba}, {nazev: T.zalozkaPribuzni, uzly: rod}]);
 
   const o = oddil(T.odkazyPopis), odk = prvek("div", "odkazy");
-  const hledat = T.lang === "cs" && r[9] ? r[9] : B[i][0] + " language";
+  const jmL = T.lang !== "cs" && T.lang !== "en" && PD.nazvy && PD.nazvy[T.lang] ? PD.nazvy[T.lang][i] : "";   // italské jméno (CLDR)
+  const hledat = T.lang === "cs" && r[9] ? r[9] : jmL ? "lingua " + jmL : B[i][0] + " language";
+  /* Wikidata říkají jen, jestli je článek česky (1) a anglicky (2); v italské verzi proto italské hledání, jinak anglický článek */
   let wiki = "https://" + T.wikiDomena + "/w/index.php?search=" + encodeURIComponent(hledat);
   const clanky = r[12] || 0;                            // 1 = článek na cs Wikipedii, 2 = na en
-  if (r[11] && clanky) {
+  if (r[11] && clanky && !(jmL && T.lang !== "en")) {
     const web = (T.lang === "cs" && (clanky & 1)) || !(clanky & 2) ? "cswiki" : "enwiki";
     wiki = "https://www.wikidata.org/wiki/Special:GoToLinkedPage/" + web + "/Q" + r[11];
   }
@@ -3401,11 +3428,12 @@ tlPrehraj.addEventListener("click", function(){
 
 /* ---------- přepnutí jazyka bez nového listu ---------- */
 const adresa = location.pathname.replace(/index\.html$/, "");
-const korenWebu = VYCHOZI === "en" ? adresa.replace(/en\/$/, "") : adresa;
-/* na vlastních doménách leží každá verze na své: atlasjazyku.cz česky, thelanguageatlas.com anglicky (bez /en/) */
-const DOMENY = { cs: "https://atlasjazyku.cz/", en: "https://thelanguageatlas.com/" };
+const korenWebu = VYCHOZI !== "cs" ? adresa.replace(new RegExp(VYCHOZI + "\\/$"), "") : adresa;
+/* na vlastních doménách leží každá verze na své: atlasjazyku.cz česky, thelanguageatlas.com anglicky (bez /en/),
+   italsky thelanguageatlas.com/it/ */
+const DOMENY = { cs: "https://atlasjazyku.cz/", en: "https://thelanguageatlas.com/", it: "https://thelanguageatlas.com/it/" };
 const naDomene = /(^|\.)(atlasjazyku\.cz|thelanguageatlas\.com)$/.test(location.hostname);
-function korenVerze(l){ return naDomene ? DOMENY[l] : (l === "en" ? korenWebu + "en/" : korenWebu); }
+function korenVerze(l){ return naDomene ? DOMENY[l] : (l === "cs" ? korenWebu : korenWebu + l + "/"); }
 const odkazJinam = $("jazyk-prepinac");
 /* ---------- O datech: odkud co je, co je odhad, verze dat a licence (texty T.oDatech, data VERZE z buildu) ---------- */
 const oDatech = $("o-datech");
@@ -3540,7 +3568,7 @@ navodOkno.addEventListener("click", function(e){ if (e.target === navodOkno) nav
    Vstupy: dlaždice „Jazyky starověku“ v seznamu, tlačítko na kartě tečky jazyka civilizace a odkaz #chetite / #hittites. */
 const civOkno = $("civ-okno");
 var civOtevrena = null;            // var: kodVyberu() se volá i dřív, než skript k deklaraci dojde
-function civilizace(id){ return STAROVEK_DATA.civilizace.find(function(c){ return c.id === id || c.adresa.cs === id || c.adresa.en === id; }) || null; }
+function civilizace(id){ return STAROVEK_DATA.civilizace.find(function(c){ return c.id === id || c.adresa.cs === id || c.adresa.en === id || c.adresa[T.lang] === id; }) || null; }
 function civPodleTecky(i){ const k = REJSTRIK.g[i]; return k ? STAROVEK_DATA.civilizace.find(function(c){ return !c.sekce && (c.tecky || []).indexOf(k) >= 0; }) || null : null; }   // Příběhy tlačítko na kartě jazyka nedávají
 /* stránky jedné sekce: Jazyky starověku (bez pole sekce) nebo Příběhy jazyků (sekce „pribehy“) */
 function strankySekce(sekce){ return STAROVEK_DATA.civilizace.filter(function(c){ return (c.sekce || "starovek") === sekce; }); }
@@ -3700,7 +3728,8 @@ function tlacitkoCivilizace(c){
 
 kalendar.addEventListener("click", function(e){ if (e.target === kalendar) kalendar.close(); });
 oDatech.addEventListener("click", function(e){ if (e.target === oDatech) oDatech.close(); });   // klik vedle okna zavře
-const puvodniOdkaz = odkazJinam.getAttribute("href");
+const puvodniOdkaz = {};
+Array.prototype.forEach.call(odkazJinam.querySelectorAll("a[data-l]"), function(a){ puvodniOdkaz[a.dataset.l] = a.getAttribute("href"); });
 function prelozStranku(){
   document.documentElement.lang = T.lang;
   document.title = T.nazev;
@@ -3717,21 +3746,23 @@ function prelozStranku(){
   const oj = $("odkaz-jazyky");
   oj.hidden = ARTEFAKT || location.protocol === "file:";
   oj.textContent = T.stranky.vsechnyOdkaz;
-  oj.setAttribute("href", korenVerze(T.lang) + (T.lang === "en" ? "languages/" : "jazyky/"));
+  oj.setAttribute("href", T.lang === "cs" ? korenVerze("cs") + "jazyky/" : korenVerze("en") + "languages/");   // italské stránky jazyků zatím nejsou
   if (oDatech.open) postavODatech();
   if (starovekOkno.open) otevriSekci(starovekOkno.dataset.sekce || "starovek");
   if (civOtevrena) { const c = civilizace(civOtevrena), y = civOkno.querySelector(".civ-svitek").scrollTop; postavCivilizaci(c); civOkno.querySelector(".civ-svitek").scrollTop = y; }
   if (kalendar.open) postavKalendar();
   if (navodOkno.open) postavNavod();
-  const jiny = T.lang === "cs" ? "en" : "cs";
-  odkazJinam.setAttribute("hreflang", jiny); odkazJinam.setAttribute("lang", jiny);
   obnovOdkazJinam();
 }
 /* odkaz na druhou jazykovou verzi nese i otevřený jazyk (#cs~sk), aby ho šlo otevřít i v novém listu */
+/* přepínač jazyků v záhlaví (CS · EN · IT): aktuální jazyk označený, ostatní vedou na svou verzi s otevřeným jazykem (#cs~sk) */
 function obnovOdkazJinam(){
-  const jiny = T.lang === "cs" ? "en" : "cs";
-  if (!ARTEFAKT && location.protocol !== "file:") odkazJinam.setAttribute("href", korenVerze(jiny) + location.hash);
-  else odkazJinam.setAttribute("href", T.lang === VYCHOZI ? puvodniOdkaz : "#");
+  Array.prototype.forEach.call(odkazJinam.querySelectorAll("a[data-l]"), function(a){
+    const l = a.dataset.l;
+    if (l === T.lang) a.setAttribute("aria-current", "true"); else a.removeAttribute("aria-current");
+    if (!ARTEFAKT && location.protocol !== "file:") a.setAttribute("href", korenVerze(l) + location.hash);
+    else a.setAttribute("href", puvodniOdkaz[l] || "#");
+  });
 }
 window.addEventListener("hashchange", obnovOdkazJinam);
 /* texty na stránce po změně jazyka nebo vzhledu */
@@ -3763,8 +3794,10 @@ function prepniJazyk(lang){
   }
 }
 odkazJinam.addEventListener("click", function(e){
+  const a = e.target.closest("a[data-l]");
+  if (!a || !UI[a.dataset.l]) return;
   e.preventDefault();
-  prepniJazyk(T.lang === "cs" ? "en" : "cs");
+  if (a.dataset.l !== T.lang) prepniJazyk(a.dataset.l);
 });
 
 /* ---------- start ---------- */
@@ -3834,7 +3867,7 @@ var strom = (function(){   // var: filtry a texty se na něj ptají dřív, než
   function nazevUzlu(u){
     const n = PD.uzly[u];
     if (m && u === m.koren.u) return velke(REJSTRIK.rr[rodina] || n);
-    return T.lang === "cs" && PD.vetve && PD.vetve[n] ? velke(PD.vetve[n]) : n;
+    return prekladVetve(n) ? velke(prekladVetve(n)) : n;
   }
   /* rodiny, které mají strom (aspoň tři jazyky; izolované jazyky strom nemají) */
   function rodinyStromu(){
@@ -4255,7 +4288,7 @@ var strom = (function(){   // var: filtry a texty se na něj ptají dřív, než
     if (t.g) return T.prehled[t.g];
     if (t.i != null) return velke(jmenoBodu(t.i));
     if (t.f != null) return velke(REJSTRIK.rr[t.f] || PD.uzly[t.u]);
-    const n = PD.uzly[t.u]; return T.lang === "cs" && PD.vetve && PD.vetve[n] ? velke(PD.vetve[n]) : n;
+    const n = PD.uzly[t.u]; return prekladVetve(n) ? velke(prekladVetve(n)) : n;
   }
   const jePredekP = function(a, b){ for (let x = b.p; x; x = x.p) if (x === a) return true; return false; };
   const rodinaUzlu = function(t){ for (let x = t; x; x = x.p) if (x.f != null) return x.f; return null; };
@@ -4868,7 +4901,7 @@ function pocetRodin(){                          /* rodiny a izolované jazyky me
    Když je zapnutá mapa Písmo, kreslí se pod popisky měkké oblasti živých písem. Oblast je sjednocení kruhů kolem teček jazyků,
    které se tím písmem píší podle Unicode CLDR (doložené r[13], jinak odhad r[15]); barva je skupina písma jako v legendě.
    Popisky jsou ukázky znaků psané písmem samým; klepnutí na popisek otevře kartu písma. Data jsou v data/pisma.json. */
-const PISMA_SVETA = /*__PISMA__*/null || [];
+const PISMA_SVETA = doplnJazyky(/*__PISMA__*/null || []);
 const KOD_PISMA = {};
 PISMA_SVETA.forEach(function(p, k){ p.kody.forEach(function(c){ KOD_PISMA[c] = k; }); });
 let pismaTecek = null, pismaStitky = [], fontyPisem = false;
@@ -5194,7 +5227,7 @@ function textL(L){ return L.sk ? "var(--t-" + L.sk + ")" : "var(--na-cyan)"; }
 function nazevVetve(u, rod){
   if (PD.nad[u] < 0) return velke(REJSTRIK.rr[rod] || PD.uzly[u]);
   const n = PD.uzly[u];
-  return T.lang === "cs" && PD.vetve[n] ? velke(PD.vetve[n]) : n;
+  return prekladVetve(n) ? velke(prekladVetve(n)) : n;
 }
 /* příbuznost: nejbližší společný předek ve stromu Glottologu */
 function vztah(a, b){
@@ -5300,7 +5333,7 @@ function ukazSrovnani(){
     rod.appendChild(prvek("p", null, t("pribuzneRodina", {r: REJSTRIK.rr[a.rod]})));
   } else if (v.typ === "predek") {
     rod.appendChild(prvek("p", "sr-verdikt", T.pribuzneAno));
-    rod.appendChild(prvek("p", null, v.koren ? t("pribuzneKoren", {r: REJSTRIK.rr[a.rod]}) : t("pribuzneSpolecny", {v: T.lang === "cs" && PD.vetve[PD.uzly[v.u]] ? nazevVetve(v.u, a.rod).toLowerCase() : nazevVetve(v.u, a.rod)})));
+    rod.appendChild(prvek("p", null, v.koren ? t("pribuzneKoren", {r: REJSTRIK.rr[a.rod]}) : t("pribuzneSpolecny", {v: prekladVetve(PD.uzly[v.u]) ? nazevVetve(v.u, a.rod).toLowerCase() : nazevVetve(v.u, a.rod)})));
     const mini = prvek("div", "strom-mini");
     mini.appendChild(prvek("div", "sm-predek", nazevVetve(v.u, a.rod)));
     [[a, v.cestaA], [b, v.cestaB]].forEach(function(x){

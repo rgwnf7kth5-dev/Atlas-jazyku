@@ -1,6 +1,6 @@
 # Atlas jazyků – pokyny pro Claude Code
 
-Encyklopedický atlas jazyků světa na otáčivém glóbu, česky a anglicky. Komunikuj česky.
+Encyklopedický atlas jazyků světa na otáčivém glóbu, česky, anglicky a od 2. 10. 2026 italsky. Komunikuj česky.
 **Publikum od 26. 9. 2026: studenti a výš** – vysokoškoláci, učitelé, dospělí zájemci i odborníci (uživatel: „pro studenty a výše, nejenom pro ně“). Česky se vyká. Texty věcné,
 encyklopedické, odborné termíny s vysvětlením, bez zvolání, výzev („Zkus to vyslovit!“) a zdrobnělin. Samostatná
 **varianta pro děti** (jiná grafika, animace, obrázky, mnohem méně jazyků) je nápad uživatele **na později, ne teď**.
@@ -13,7 +13,7 @@ Uživatel není programátor a pracuje na Macu (a iPhonu), ne na Windows: vysvě
 
 ```
 npm run check      # validace + sestavení; spusť vždy před commitem
-npm run build -- --artefakt build   # navíc fragmenty pro publikování jako artefakt (ODKAZ_CS, ODKAZ_EN)
+npm run build -- --artefakt build   # navíc fragmenty pro publikování jako artefakt (ODKAZ_CS, ODKAZ_EN, ODKAZ_IT)
 ```
 
 ## Web
@@ -41,6 +41,34 @@ Nasazení přes Netlify z větve `main` podle `netlify.toml` (build `npm run che
 Z prostředí Claude Code na webu je `*.netlify.app` blokované (curl i WebFetch vrací 403), živý web tedy odsud
 zkontrolovat nejde – ověřuj `dist/` v Playwrightu a živý web workflow Diagnóza webu (viz výš).
 Česky na `/`, anglicky na `/en/`. Když validace spadne, Netlify nový web nezveřejní – tak to má být.
+
+## Italská verze (od 2. 10. 2026)
+
+Uživatel se ptal, jak velký problém by byly další jazyky (IT, DE, FR), a zvolil **začít italštinou**, po etapách. Adresa
+**thelanguageatlas.com/it/** (`dist/it/`; edge funkce `domeny.js` cesty `/it/*` vynechává, `/it` → `/it/`; `DOMENA.it`, `WEB()`
+v build.mjs, `DOMENY.it` a `korenVerze` v app.js). V záhlaví je místo odkazu „English/Česky“ **přepínač CS · EN · IT**
+(`<nav id="jazyk-prepinac">` se třemi `a[data-l]`, aktuální `aria-current`; přepíná na místě jako dřív, `obnovOdkazJinam`).
+- **Jak funguje záloha:** jazyky webu jsou `JAZYKY_WEBU` v build.mjs, další (ne cs/en) `DALSI`. **Co v italštině chybí, ukáže se
+  anglicky**: texty rozhraní spojí build (`spoj(UI.en, it.json)` po klíčích), data `{cs, en}` doplní prohlížeč (`doplnJazyky`
+  v app.js: `it = en`, částečný překlad se doplní po klíčích; volá se na STAROVEK, VYMYSLENE, PUTOVANI, CESTY, TYP, DNY,
+  PISMA_SVETA). Validace u it.json hlídá jen navíc klíče a `lang`, chybějící klíč je upozornění.
+- **Přeloženo:** celé rozhraní `src/ui/it.json` (i návod, O datech, Vitalita, tajemství), karty 164 jazyků (`it` v languages.json:
+  název, výslovnost pro italského čtenáře, rodina, zajímavost – validace je hlídá jako cs/en), důvody Jazyka dne (`dny-jazyku.json`),
+  36 písem (`pisma.json`), typologické mapy (`typologie-popis.json`; příklady přizpůsobené italštině ověřené ve WALS: 81A SVO,
+  112A non, 116A jen intonace, 129A mano/braccio). Hlas záložní výslovnosti `it-IT`.
+- **Názvy:** `data/nazvy-it.json` vyrábí `node scripts/nazvy.mjs it` (CLDR 48.2 a i18n-iso-countries přes jsDelivr): 537 jmen
+  teček (`PD.nazvy.it`, index → jméno; bez jména anglicky z Glottologu), státy, státy na mapě (Kosovo, Severní Kypr, Somaliland
+  ručně), písma. Rodiny `data/glottolog-families.it.json` (~40 největších), větve `data/glottolog-branches.it.json` (~170
+  nejčastějších na cestách jazyků atlasu; `prekladVetve()` v app.js, `PD.vetveJ`). Validace hlídá, že rodiny a větve v Glottologu jsou.
+- **Zatím anglicky** (s poznámkou v textu): stránky Jazyků starověku a Příběhů, putování, cesty slov, vymyšlené jazyky, statické
+  stránky jazyků (odkaz „Lingue con scheda dettagliata“ vede na anglické `/en/languages/`). Italské statické stránky `scripts/stranky.mjs`
+  zatím nevyrábí. Wikidata italská jména nemají (stahují se v Actions jen cs/en), Wikipedie se v italské verzi hledá italsky.
+- **Chytré hledání** zná italská slova (`DOTAZ_SPUSTE`, předložky del/della/nel…, `DOTAZ_VYPLN`, „dove“) a italské názvy
+  rodin, větví, států a jazyků; „lingue del Brasile“, „lingue slave“, „dove si parla il persiano“ fungují. AI odpovídá jazykem otázky.
+- Obrázek pro sdílení je zatím anglický (`NAHLED.it = NAHLED.en`, kopie v `dist/it/`), og:locale `it_IT`, hreflang všech tří
+  verzí na úvodních stránkách a v sitemapě anglické domény.
+- Nový jazyk (DE, FR) = přidat do `JAZYKY_WEBU`, `LOCALE`, `DOMENA`, `DOMENY`, `src/ui/xx.json`, `node scripts/nazvy.mjs xx`,
+  rodiny a větve, odkaz v přepínači v `body.html`, edge funkce a netlify.toml; pak překlady dat.
 
 ## Struktura a pravidla
 

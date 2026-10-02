@@ -260,7 +260,7 @@ window.addEventListener("popstate",function(){if(JE.test(location.pathname))nact
 <body>
 <header class="hlava">
  <a class="domu" href="${domov[lang]}">${znak}<span>${escHtml(T.nazev)}</span></a>
- <a class="jinam" href="${WEB(jinaAdresa)}" hreflang="${jiny}" lang="${jiny}">${escHtml(T.jinyJazyk)}</a>
+ <a class="jinam" href="${WEB(jinaAdresa)}" hreflang="${jiny}" lang="${jiny}">${escHtml(UI[jiny].nazevJazyka)}</a>
 </header>
 <main>
 ${obsah}
