@@ -115,6 +115,10 @@ if (pd.uzly.length !== pd.nad.length) chyby.push("data/podrobnosti.json: strom p
 }
 { /* putování jazyka (data/putovani.json): jazyk atlasu, adresy, texty cs/en u etap, oblastí a proudů, barvy v styles.css, souřadnice */
   const co = "data/putovani.json", d = json(co), css = fs.readFileSync(path.join(path.dirname(new URL(import.meta.url).pathname), "..", "src", "styles.css"), "utf8");
+  /* glóbus čte barvy --put-* jen z výčtu v nactiBarvy (app.js); klíč, který tam chybí, se kreslí červeně */
+  const app = fs.readFileSync(path.join(path.dirname(new URL(import.meta.url).pathname), "..", "src", "app.js"), "utf8"), barvaOk = (k, kde) => {
+    if (!css.includes("--put-" + k + ":")) chyby.push(`${co}: ${kde} – barva --put-${k} není v styles.css`);
+    else if (!app.includes('"put-' + k + '"')) chyby.push(`${co}: ${kde} – barva put-${k} chybí ve výčtu barev v nactiBarvy (src/app.js)`); };
   const atlas = new Set(jazyky.map(j => j.id)), dvojj = (x, kde) => { if (!x || !x.cs || !x.en) chyby.push(`${co}: ${kde} nemá text cs i en`); };
   const souradnice = (b, kde) => { if (!Array.isArray(b) || !(b[0] >= -180 && b[0] <= 180 && b[1] >= -90 && b[1] <= 90)) chyby.push(`${co}: ${kde} má chybné souřadnice`); };
   for (const j of d.jazyky) {
@@ -132,10 +136,10 @@ if (pd.uzly.length !== pd.nad.length) chyby.push("data/podrobnosti.json: strom p
       const proudy = new Set((e.proudy || []).map(p => p.id));
       for (const o of e.oblasti || []) { (o.kruhy || []).forEach(k => souradnice(k, kde + "/" + o.id)); if (o.popisek) dvojj(o.popisek, kde + "/" + o.id);
         if (o.po && !proudy.has(o.po)) chyby.push(`${co}: ${kde}/${o.id} čeká na neexistující proud „${o.po}“`);
-        if (!css.includes("--put-" + o.barva + ":")) chyby.push(`${co}: ${kde}/${o.id} – barva --put-${o.barva} není v styles.css`); }
+        barvaOk(o.barva, kde + "/" + o.id); }
       for (const p of e.proudy || []) { if (!p.body || p.body.length < 2) chyby.push(`${co}: ${kde}/${p.id} potřebuje aspoň dva body`); (p.body || []).forEach(b => souradnice(b, kde + "/" + p.id));
         if (p.popisek) dvojj(p.popisek, kde + "/" + p.id);
-        if (!css.includes("--put-" + p.barva + ":")) chyby.push(`${co}: ${kde}/${p.id} – barva --put-${p.barva} není v styles.css`); }
+        barvaOk(p.barva, kde + "/" + p.id); }
     }
   }
 }
