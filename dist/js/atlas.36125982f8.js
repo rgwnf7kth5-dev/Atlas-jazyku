@@ -5547,13 +5547,16 @@ function naradiAI(nazev, vstup){
     }
     const kl = {nareci: "nar", mluvci: "ml", staty: "st"}[vstup.razeni];
     if (kl) vyber.sort(function(a, b){ return b[kl] - a[kl]; }); else vyber.sort(function(a, b){ return jmenoBodu(a.i).localeCompare(jmenoBodu(b.i), T.lang); });
+    /* na glóbu jen vypsané jazyky, když je výběr velký: „nejvíc nářečí“ jinak rozsvítilo všech 7 742 (uživatel 2. 10. 2026) */
+    const vypsano = vyber.slice(0, Math.max(1, Math.min(40, vstup.limit || 15))), naGlobu = vyber.length <= 400 ? vyber : vypsano;
     return {data: {pocet_jazyku: vyber.length, filtr: {stat: kod ? PD.staty[T.lang][kod] : null, rodina: sk ? nazevSkupiny(sk.u) : null, vitalita: vstup.vitalita},
-      jazyky: vyber.slice(0, Math.max(1, Math.min(40, vstup.limit || 15))).map(function(x){
+      jazyky: vypsano.map(function(x){
         const o = {jazyk: jmenoBodu(x.i)}; if (vstup.razeni === "nareci") o.nareci = x.nar; if (vstup.razeni === "mluvci") o.mluvci = x.ml || null; if (vstup.razeni === "staty") o.staty = x.st;
         const v = vitalitaBodu(x.i); if (v >= 0) o.vitalita = nazevStupne(v); return o; }),
       zdroj: "Glottolog (jazyky, nářečí, státy, vitalita), Wikidata a Unicode CLDR (mluvčí; ne u všech jazyků)",
-      na_globu: vyber.length ? "rozsvícené všechny vybrané jazyky (" + vyber.length + ") / all " + vyber.length + " selected languages lit" : "nic / nothing"},
-      akce: vyber.length ? {typ: "skupina", u: -1, body: vyber.map(function(x){ return x.i; })} : null};
+      na_globu: !vyber.length ? "nic / nothing" : naGlobu === vyber ? "rozsvícené všechny vybrané jazyky (" + vyber.length + ") / all " + vyber.length + " selected languages lit"
+        : "rozsvícené jen vypsané jazyky (" + vypsano.length + ") / only the " + vypsano.length + " listed languages lit"},
+      akce: vyber.length ? {typ: "skupina", u: -1, body: naGlobu.map(function(x){ return x.i; })} : null};
   }
   return {data: {chyba: "neznámý nástroj"}};
 }
@@ -5759,7 +5762,7 @@ function postavPolici(filtr){
     const p = document.createElement("p"); p.className = "prazdno"; p.textContent = T.nicNenalezeno; seznam.insertBefore(p, zarazka);
   }
   const sPozdravem = polozky.filter(function(p){ return p.j; }).length;
-  $("pocet").textContent = t(hledane ? "nalezeno" : "vychoziPocet",
+  $("pocet").textContent = !polozky.length && kartaAIzde ? "" : t(hledane ? "nalezeno" : "vychoziPocet",   // „Našlo se: 0 jazyků“ vedle odpovědi AI mátlo
     {a: cislo(polozky.length) + " " + tvar(polozky.length, T.jazyk), b: cislo(sPozdravem)});
 }
 /* dávkové kreslení police: dalších ~240 dlaždic, když se k jejímu konci doroluje */
@@ -6911,7 +6914,11 @@ function obnovPriznaky(){
     dulezite = [srovnani.a.i, b.i].filter(function(i){ return i >= 0; });
   }
   if (zeme) zeme.body.forEach(function(i){ if (!zakladJaz[i]) zakladJaz[i] = 5; });
-  if (dotazSkupina) dotazSkupina.body.forEach(function(i){ if (!zakladJaz[i]) zakladJaz[i] = 5; });
+  if (dotazSkupina) {
+    const malo = dotazSkupina.body.length <= 40;    // pár jazyků (žebříček z AI): výrazné tečky se jmény, jinak by v moři teček zapadly
+    dotazSkupina.body.forEach(function(i){ if (!zakladJaz[i]) zakladJaz[i] = malo ? 2 : 5; });
+    if (malo && !dulezite.length) dulezite = dotazSkupina.body.slice();
+  }
   if (eu) EU.forEach(function(x){ if (x.i >= 0 && !zakladJaz[x.i]) zakladJaz[x.i] = 5; });
   if (cesta) cesta.kroky.forEach(function(x){ if (!zakladJaz[x.i]) zakladJaz[x.i] = 5; });
   for (let i = 0; i < POCET_B; i++) if (skryty[i] || BEZ_POLOHY[i]) zakladJaz[i] = 4;
