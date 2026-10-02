@@ -9090,7 +9090,6 @@
   {
    "id": "italstina",
    "atlas": "it",
-   "koncept": true,
    "adresa": {
     "cs": "putovani-italstina",
     "en": "journey-italian",
@@ -9107,9 +9106,9 @@
     "it": "Dal latino di Roma al fiorentino di Dante e alla lingua dell'Italia unita"
    },
    "uvod": {
-    "cs": "Jak se z latiny jednoho města stal jazyk celé Itálie, proč základem spisovné italštiny je florentština 14. století a jak se italština stala jazykem většiny Italů teprve po sjednocení. Letopočty jsou přibližné, sporné výklady jsou přerušovaně.",
-    "en": "How the Latin of a single city became the language of all Italy, why standard Italian is based on 14th-century Florentine, and how Italian became the language of most Italians only after unification. Dates are approximate; disputed interpretations are dashed.",
-    "it": "Come il latino di una sola città divenne la lingua di tutta l'Italia, perché l'italiano standard si basa sul fiorentino del Trecento e come l'italiano divenne la lingua della maggior parte degli italiani solo dopo l'unità. Le date sono approssimative; le interpretazioni controverse sono tratteggiate."
+    "cs": "Jak se z latiny jednoho města stal jazyk celé Itálie, proč základem spisovné italštiny je florentština 14. století a jak se italština stala jazykem většiny Italů teprve po sjednocení. Letopočty jsou přibližné, sporné výklady jsou vyznačeny přerušovanou čarou.",
+    "en": "How the Latin of a single city became the language of all Italy, why standard Italian is based on 14th-century Florentine, and how Italian became the language of most Italians only after unification. Dates are approximate; disputed interpretations are shown with dashed lines.",
+    "it": "Come il latino di una sola città divenne la lingua di tutta l'Italia, perché l'italiano standard si basa sul fiorentino del Trecento e come l'italiano divenne la lingua della maggior parte degli italiani solo dopo l'unità. Le date sono approssimative; le interpretazioni controverse sono indicate con linea tratteggiata."
    },
    "etapy": [
     {
@@ -9130,7 +9129,7 @@
       "it": "Le lingue italiche e i loro vicini"
      },
      "text": {
-      "cs": "Italština je indoevropský jazyk z italické větve. Předkové mluvčích italických jazyků přišli na Apeninský poloostrov nejspíš ze severu přes Alpy, podle jiných výkladů přes Jadran z Balkánu, někdy ve 2. tisíciletí př. n. l.; cesta i doba jsou sporné. V 1. tisíciletí př. n. l. se v Itálii mluvilo mnoha jazyky: latinou a faliskou řečí v Laciu, oskicko-umbrijskými jazyky ve střední a jižní Itálii (oskičtina, umbrijština), neindoevropskou etruštinou v Etrurii, na severu keltsky a venetsky a v osadách Velkého Řecka na jihu a na Sicílii řecky.",
+      "cs": "Italština je indoevropský jazyk z italické větve. Předkové mluvčích italických jazyků přišli na Apeninský poloostrov nejspíš ze severu přes Alpy, podle jiných výkladů přes Jadran z Balkánu, někdy ve 2. tisíciletí př. n. l.; cesta i doba jsou sporné. V 1. tisíciletí př. n. l. se v Itálii mluvilo mnoha jazyky: latinou a falištinou v Laciu, oskicko-umbrijskými jazyky ve střední a jižní Itálii (oskičtina, umbrijština), neindoevropskou etruštinou v Etrurii, na severu keltsky a venetsky a v osadách Velkého Řecka na jihu a na Sicílii řecky.",
       "en": "Italian is an Indo-European language of the Italic branch. The ancestors of the speakers of the Italic languages most likely reached the Italian peninsula from the north across the Alps, according to other interpretations across the Adriatic from the Balkans, at some point in the 2nd millennium BCE; both the route and the date are disputed. In the 1st millennium BCE many languages were spoken in Italy: Latin and Faliscan in Latium, the Osco-Umbrian languages in central and southern Italy (Oscan, Umbrian), non-Indo-European Etruscan in Etruria, Celtic and Venetic in the north, and Greek in the colonies of Magna Graecia in the south and in Sicily.",
       "it": "L'italiano è una lingua indoeuropea del ramo italico. Gli antenati dei parlanti delle lingue italiche giunsero nella penisola molto probabilmente da nord attraverso le Alpi, secondo altre interpretazioni attraverso l'Adriatico dai Balcani, in un momento del II millennio a.C.; sia il percorso sia la data sono controversi. Nel I millennio a.C. in Italia si parlavano molte lingue: il latino e il falisco nel Lazio, le lingue osco-umbre nell'Italia centrale e meridionale (osco, umbro), l'etrusco, non indoeuropeo, in Etruria, il celtico e il venetico al nord e il greco nelle colonie della Magna Grecia al sud e in Sicilia."
      },
@@ -9229,8 +9228,8 @@
          0.25
         ],
         [
-         17.2,
-         40.45,
+         17.3,
+         40.5,
          0.3
         ]
        ],
@@ -9327,9 +9326,9 @@
       "it": "Il latino di Roma"
      },
      "text": {
-      "cs": "Latina byla zprvu jazykem malého Lacia. Podle tradice byl Řím založen roku 753 př. n. l.; k nejstarším latinským nápisům patří nápis na kamenném sloupku pod Lapis Niger na Foru Romanu (6. století př. n. l.). S římskou mocí se latina šířila po celé Itálii. Po spojenecké válce (91–88 př. n. l.) dostali obyvatelé Itálie římské občanství a oskičtina, umbrijština i etruština postupně ustoupily latině; oskicky se v Pompejích psalo ještě v 1. století př. n. l., poslední etruské nápisy jsou z počátku 1. století n. l. Italština nepochází z klasické latiny literatury, ale z latiny mluvené (lidové).",
-      "en": "Latin was at first the language of little Latium. According to tradition Rome was founded in 753 BCE; among the oldest Latin inscriptions is the one on the stone cippus beneath the Lapis Niger in the Roman Forum (6th century BCE). With Roman power, Latin spread throughout Italy. After the Social War (91–88 BCE) the inhabitants of Italy received Roman citizenship, and Oscan, Umbrian and Etruscan gradually gave way to Latin; in Pompeii Oscan was still being written in the 1st century BCE, and the last Etruscan inscriptions date from the early 1st century CE. Italian does not descend from the classical Latin of literature, but from spoken (Vulgar) Latin.",
-      "it": "Il latino fu all'inizio la lingua del piccolo Lazio. Secondo la tradizione Roma fu fondata nel 753 a.C.; tra le più antiche iscrizioni latine c'è quella sul cippo di pietra sotto il Lapis Niger nel Foro Romano (VI secolo a.C.). Con il potere romano il latino si diffuse in tutta l'Italia. Dopo la guerra sociale (91–88 a.C.) gli abitanti dell'Italia ottennero la cittadinanza romana, e l'osco, l'umbro e l'etrusco cedettero gradualmente il passo al latino; a Pompei si scriveva in osco ancora nel I secolo a.C., e le ultime iscrizioni etrusche risalgono all'inizio del I secolo d.C. L'italiano non discende dal latino classico della letteratura, ma dal latino parlato (volgare)."
+      "cs": "Latina byla zprvu jazykem malého Lacia. Podle tradice byl Řím založen roku 753 př. n. l.; k nejstarším latinským nápisům patří nápis na kamenném sloupku pod Lapis Niger na Foru Romanu (6. století př. n. l.). S římskou mocí se latina šířila po celé Itálii. Po spojenecké válce (91–88 př. n. l.) dostali italští spojenci jižně od Pádu římské občanství (obyvatelé za Pádem až roku 49 př. n. l.) a oskičtina, umbrijština i etruština postupně ustoupily latině; oskicky se v Pompejích psalo ještě v 1. století př. n. l. a podle nápisů na zdech snad i v 1. století n. l.; poslední etruské nápisy jsou z počátku 1. století n. l. Italština nepochází z klasické latiny literatury, ale z latiny mluvené (lidové).",
+      "en": "Latin was at first the language of little Latium. According to tradition Rome was founded in 753 BCE; among the oldest Latin inscriptions is the one on the stone cippus beneath the Lapis Niger in the Roman Forum (6th century BCE). With Roman power, Latin spread throughout Italy. After the Social War (91–88 BCE) the Italian allies south of the Po received Roman citizenship (those beyond the Po only in 49 BCE), and Oscan, Umbrian and Etruscan gradually gave way to Latin; in Pompeii Oscan was still written in the 1st century BCE and, judging from wall inscriptions, perhaps into the 1st century CE; the last Etruscan inscriptions date from the early 1st century CE. Italian does not descend from the classical Latin of literature, but from spoken (Vulgar) Latin.",
+      "it": "Il latino fu all'inizio la lingua del piccolo Lazio. Secondo la tradizione Roma fu fondata nel 753 a.C.; tra le più antiche iscrizioni latine c'è quella sul cippo di pietra sotto il Lapis Niger nel Foro Romano (VI secolo a.C.). Con il potere romano il latino si diffuse in tutta l'Italia. Dopo la guerra sociale (91–88 a.C.) gli alleati italici a sud del Po ottennero la cittadinanza romana (i Transpadani solo nel 49 a.C.), e l'osco, l'umbro e l'etrusco cedettero gradualmente il passo al latino; a Pompei si scriveva in osco ancora nel I secolo a.C. e, a giudicare dalle scritte murali, forse anche nel I secolo d.C.; le ultime iscrizioni etrusche risalgono all'inizio del I secolo d.C. L'italiano non discende dal latino classico della letteratura, ma dal latino parlato (volgare)."
      },
      "oblasti": [
       {
@@ -9370,9 +9369,9 @@
        "barva": "lat",
        "po": "na-sever",
        "popisek": {
-        "cs": "latina v Etrurii a Umbrii",
-        "en": "Latin in Etruria and Umbria",
-        "it": "il latino in Etruria e Umbria"
+        "cs": "latina v Etrurii, Umbrii a Předalpské Galii",
+        "en": "Latin in Etruria, Umbria and Cisalpine Gaul",
+        "it": "il latino in Etruria, Umbria e Gallia Cisalpina"
        }
       },
       {
@@ -9477,9 +9476,9 @@
       "it": "Il latino volgare e l'Italia divisa"
      },
      "text": {
-      "cs": "Mluvená latina se měnila a v každém kraji jinak; vyvinula se z ní místní nářečí, předchůdci dnešních italských nářečí. Po zániku západořímské říše (476) se Itálie politicky rozpadla: Langobardi, kteří přišli roku 568, ovládli sever a vévodství Spoleto a Benevento, Byzanc si udržela Ravennu, Řím, krajní jih a Sicílii, kde se mluvilo i řecky. Sicílii v letech 827–902 dobyli Arabové. Jazyk Langobardů zanikl, ale zanechal v italštině slova jako panca (lavice), schiena (záda) a guancia (tvář); z arabštiny přišla mimo jiné slova arancia (pomeranč) a zucchero (cukr).",
-      "en": "Spoken Latin changed, and differently in each region; it gave rise to local vernaculars, the forerunners of today's Italian dialects. After the fall of the Western Roman Empire (476) Italy broke apart politically: the Lombards, who arrived in 568, took the north and the duchies of Spoleto and Benevento, while Byzantium kept Ravenna, Rome, the far south and Sicily, where Greek was also spoken. Sicily was conquered by the Arabs in 827–902. The Lombards' language died out but left Italian words such as panca (bench), schiena (back) and guancia (cheek); from Arabic came, among others, arancia (orange) and zucchero (sugar).",
-      "it": "Il latino parlato cambiava, e in ogni regione in modo diverso; da esso nacquero i volgari locali, precursori degli odierni dialetti italiani. Dopo la caduta dell'Impero romano d'Occidente (476) l'Italia si divise politicamente: i longobardi, giunti nel 568, presero il nord e i ducati di Spoleto e Benevento, mentre Bisanzio conservò Ravenna, Roma, l'estremo sud e la Sicilia, dove si parlava anche greco. La Sicilia fu conquistata dagli arabi tra l'827 e il 902. La lingua dei longobardi si estinse, ma lasciò all'italiano parole come panca, schiena e guancia; dall'arabo vennero, tra le altre, arancia e zucchero."
+      "cs": "Mluvená latina se měnila a v každém kraji jinak; vyvinula se z ní místní nářečí, předchůdci dnešních italských nářečí. Po zániku západořímské říše (476) se Itálie politicky rozpadla: Langobardi, kteří přišli roku 568, ovládli většinu severu a vévodství Spoleto a Benevento, Byzanc si zprvu udržela Ravennu (do roku 751), Řím, Neapol, krajní jih a Sicílii, kde se mluvilo i řecky. Sicílii v letech 827–902 dobyli Arabové (poslední byzantská pevnost Rometta padla roku 965). Jazyk Langobardů zanikl, ale zanechal v italštině slova jako panca (lavice), schiena (záda) a guancia (tvář); z arabštiny přišla mimo jiné slova arancia (pomeranč) a zucchero (cukr).",
+      "en": "Spoken Latin changed, and differently in each region; it gave rise to local vernaculars, the forerunners of today's Italian dialects. After the fall of the Western Roman Empire (476) Italy broke apart politically: the Lombards, who arrived in 568, took most of the north and the duchies of Spoleto and Benevento, while Byzantium at first kept Ravenna (until 751), Rome, Naples, the far south and Sicily, where Greek was also spoken. Sicily was conquered by the Arabs in 827–902 (the last Byzantine stronghold, Rometta, fell in 965). The Lombards' language died out but left Italian words such as panca (bench), schiena (back) and guancia (cheek); from Arabic came, among others, arancia (orange) and zucchero (sugar).",
+      "it": "Il latino parlato cambiava, e in ogni regione in modo diverso; da esso nacquero i volgari locali, precursori degli odierni dialetti italiani. Dopo la caduta dell'Impero romano d'Occidente (476) l'Italia si divise politicamente: i longobardi, giunti nel 568, conquistarono gran parte del nord e i ducati di Spoleto e Benevento, mentre Bisanzio conservò dapprima Ravenna (fino al 751), Roma, Napoli, l'estremo sud e la Sicilia, dove si parlava anche greco. La Sicilia fu conquistata dagli arabi tra l'827 e il 902 (l'ultima roccaforte bizantina, Rometta, cadde nel 965). La lingua dei longobardi si estinse, ma lasciò all'italiano parole come panca, schiena e guancia; dall'arabo vennero, tra le altre, arancia e zucchero."
      },
      "oblasti": [
       {
@@ -9541,6 +9540,11 @@
          18.1,
          40.2,
          0.3
+        ],
+        [
+         14.25,
+         40.85,
+         0.2
         ]
        ],
        "barva": "byz",
@@ -9609,12 +9613,8 @@
        "id": "arabove",
        "body": [
         [
-         10.1,
-         35.7
-        ],
-        [
-         10.4,
-         35.95
+         10.64,
+         35.82
         ],
         [
          10.85,
@@ -9656,9 +9656,9 @@
       "it": "Le prime testimonianze del volgare"
      },
      "text": {
-      "cs": "Lidé mluvili jinak, než psali: psalo se latinsky. Jako jeden z prvních zápisů lidového jazyka se uvádí Veronská hádanka (Indovinello veronese) z přelomu 8. a 9. století, kterou roku 1924 zveřejnil Luigi Schiaparelli; zda je psaná lidovou řečí, nebo jen nedbalou latinou, je sporné. Za první jistý doklad se pokládá Placito capuano z roku 960, soudní záznam ze sporu o pozemky kláštera Montecassino. Svědci v něm opakují větu: Sao ko kelle terre, per kelle fini que ki contene, trenta anni le possette parte sancti Benedicti („Vím, že ty pozemky v hranicích, které jsou tu popsány, držel třicet let klášter svatého Benedikta“).",
-      "en": "People spoke differently from how they wrote: writing was in Latin. One of the first records of the vernacular is said to be the Veronese Riddle (Indovinello veronese) from the turn of the 8th and 9th centuries, published by Luigi Schiaparelli in 1924; whether it is written in the vernacular or merely in careless Latin is disputed. The first certain record is considered to be the Placito capuano of 960, a court record of a dispute over the lands of the monastery of Montecassino. In it witnesses repeat the sentence: Sao ko kelle terre, per kelle fini que ki contene, trenta anni le possette parte sancti Benedicti (\"I know that those lands, within the boundaries described here, were held for thirty years by the monastery of Saint Benedict\").",
-      "it": "Si parlava in un modo e si scriveva in un altro: si scriveva in latino. Tra le prime testimonianze del volgare si cita l'Indovinello veronese, della fine dell'VIII o dell'inizio del IX secolo, pubblicato da Luigi Schiaparelli nel 1924; se sia scritto in volgare o soltanto in un latino trascurato è controverso. Come prima testimonianza sicura si considera il Placito capuano del 960, il verbale di una causa sulle terre del monastero di Montecassino. In esso i testimoni ripetono la frase: Sao ko kelle terre, per kelle fini que ki contene, trenta anni le possette parte sancti Benedicti (“So che quelle terre, entro i confini qui descritti, le possedette per trent'anni il monastero di San Benedetto”)."
+      "cs": "Lidé mluvili jinak, než psali: psalo se latinsky. Jako jeden z prvních zápisů lidového jazyka se uvádí Veronská hádanka (Indovinello veronese) z přelomu 8. a 9. století, kterou roku 1924 objevil Luigi Schiaparelli; zda je psaná lidovou řečí, nebo jen nedbalou latinou, je sporné. Za první datovaný doklad, v němž je lidový jazyk použit záměrně a v úředním textu, se pokládá Placito capuano z března 960, soudní záznam ze sporu o pozemky kláštera Montecassino. Svědci v něm opakují větu: Sao ko kelle terre, per kelle fini que ki contene, trenta anni le possette parte sancti Benedicti („Vím, že ty pozemky v hranicích, které jsou tu popsány, držel třicet let klášter svatého Benedikta“).",
+      "en": "People spoke differently from how they wrote: writing was in Latin. One of the first records of the vernacular is said to be the Veronese Riddle (Indovinello veronese) from the turn of the 8th and 9th centuries, discovered by Luigi Schiaparelli in 1924; whether it is written in the vernacular or merely in careless Latin is disputed. The first dated document in which the vernacular is used deliberately, in an official text, is considered to be the Placito capuano of March 960, a court record of a dispute over the lands of the monastery of Montecassino. In it witnesses repeat the sentence: Sao ko kelle terre, per kelle fini que ki contene, trenta anni le possette parte sancti Benedicti (\"I know that those lands, within the boundaries described here, were held for thirty years by the monastery of Saint Benedict\").",
+      "it": "Si parlava in un modo e si scriveva in un altro: si scriveva in latino. Tra le prime testimonianze del volgare si cita l'Indovinello veronese, della fine dell'VIII o dell'inizio del IX secolo, scoperto da Luigi Schiaparelli nel 1924; se sia scritto in volgare o soltanto in un latino trascurato è controverso. Come primo documento datato in cui il volgare è usato consapevolmente, in un testo ufficiale, si considera il Placito capuano del marzo 960, il verbale di una causa sulle terre del monastero di Montecassino. In esso i testimoni ripetono la frase: Sao ko kelle terre, per kelle fini que ki contene, trenta anni le possette parte sancti Benedicti (“So che quelle terre, entro i confini qui descritti, le possedette per trent'anni il monastero di San Benedetto”)."
      },
      "oblasti": [
       {
@@ -9719,9 +9719,9 @@
       "it": "La Scuola siciliana e le tre corone fiorentine"
      },
      "text": {
-      "cs": "Na dvoře císaře Fridricha II. vznikla ve druhé čtvrtině 13. století sicilská básnická škola, první umělecká poezie v italském lidovém jazyce; jejímu členovi Giacomovi da Lentini se připisuje vynález sonetu. Její básně se dochovaly hlavně v toskánských opisech, které jejich jazyk přizpůsobily toskánštině. Rozhodující byli pak tři florentští autoři, „tři koruny“: Dante Alighieri (Božská komedie, asi 1304–1321; v latinském spisu De vulgari eloquentia hledal nejlepší lidový jazyk Itálie), Francesco Petrarca (Zpěvník) a Giovanni Boccaccio (Dekameron). Jejich prestiž udělala z florentské toskánštiny základ spisovné italštiny.",
-      "en": "At the court of Emperor Frederick II the Sicilian School of poetry arose in the second quarter of the 13th century, the first art poetry in an Italian vernacular; its member Giacomo da Lentini is credited with inventing the sonnet. Its poems survive mainly in Tuscan copies, which adapted their language to Tuscan. Then came the decisive three Florentine authors, the \"three crowns\": Dante Alighieri (the Divine Comedy, c. 1304–1321; in his Latin treatise De vulgari eloquentia he searched for the best vernacular of Italy), Francesco Petrarca (the Canzoniere) and Giovanni Boccaccio (the Decameron). Their prestige made Florentine Tuscan the basis of standard Italian.",
-      "it": "Alla corte dell'imperatore Federico II nacque nel secondo quarto del Duecento la Scuola poetica siciliana, la prima poesia d'arte in un volgare italiano; al suo esponente Giacomo da Lentini si attribuisce l'invenzione del sonetto. Le sue poesie ci sono giunte soprattutto in copie toscane, che ne adattarono la lingua al toscano. Decisivi furono poi tre autori fiorentini, le “tre corone”: Dante Alighieri (la Divina Commedia, circa 1304–1321; nel trattato latino De vulgari eloquentia cercò il miglior volgare d'Italia), Francesco Petrarca (il Canzoniere) e Giovanni Boccaccio (il Decameron). Il loro prestigio fece del toscano fiorentino la base dell'italiano standard."
+      "cs": "Na dvoře císaře Fridricha II. vznikla ve druhé čtvrtině 13. století sicilská básnická škola, první básnická škola v italském lidovém jazyce; jejímu členovi Giacomovi da Lentini se připisuje vynález sonetu. Její básně se dochovaly hlavně v toskánských opisech, které jejich jazyk přizpůsobily toskánštině. Rozhodující byli pak tři florentští autoři, „tři koruny“: Dante Alighieri (Božská komedie, asi 1304–1321; v latinském spisu De vulgari eloquentia hledal nejlepší lidový jazyk Itálie), Francesco Petrarca (Zpěvník) a Giovanni Boccaccio (Dekameron). Jejich prestiž udělala z florentské toskánštiny základ spisovné italštiny.",
+      "en": "At the court of Emperor Frederick II the Sicilian School of poetry arose in the second quarter of the 13th century, the first school of poetry in an Italian vernacular; its member Giacomo da Lentini is credited with inventing the sonnet. Its poems survive mainly in Tuscan copies, which adapted their language to Tuscan. Decisive, however, were three Florentine authors, the \"three crowns\": Dante Alighieri (the Divine Comedy, c. 1304–1321; in his Latin treatise De vulgari eloquentia he searched for the best vernacular of Italy), Francesco Petrarca (the Canzoniere) and Giovanni Boccaccio (the Decameron). Their prestige made Florentine Tuscan the basis of standard Italian.",
+      "it": "Alla corte dell'imperatore Federico II nacque nel secondo quarto del Duecento la Scuola poetica siciliana, la prima scuola poetica in un volgare italiano; al suo esponente Giacomo da Lentini si attribuisce l'invenzione del sonetto. Le sue poesie ci sono giunte soprattutto in copie toscane, che ne adattarono la lingua al toscano. Decisivi furono poi tre autori fiorentini, le “tre corone”: Dante Alighieri (la Divina Commedia, circa 1304–1321; nel trattato latino De vulgari eloquentia cercò il miglior volgare d'Italia), Francesco Petrarca (il Canzoniere) e Giovanni Boccaccio (il Decameron). Il loro prestigio fece del toscano fiorentino la base dell'italiano standard."
      },
      "oblasti": [
       {
@@ -9774,27 +9774,59 @@
        "body": [
         [
          13.4,
+         37.9
+        ],
+        [
+         14.3,
+         37.9
+        ],
+        [
+         14.75,
          38.0
         ],
         [
-         14.6,
-         38.0
+         15.4,
+         38.15
         ],
         [
-         15.6,
+         15.62,
          38.2
         ],
         [
-         16.0,
-         38.6
+         15.95,
+         38.3
         ],
         [
-         16.0,
-         39.6
+         16.05,
+         38.5
         ],
         [
-         15.3,
-         40.5
+         16.3,
+         38.75
+        ],
+        [
+         16.35,
+         39.0
+        ],
+        [
+         16.25,
+         39.3
+        ],
+        [
+         16.2,
+         39.8
+        ],
+        [
+         15.85,
+         40.1
+        ],
+        [
+         15.6,
+         40.4
+        ],
+        [
+         15.0,
+         40.75
         ],
         [
          14.3,
@@ -9840,9 +9872,9 @@
       "it": "La questione della lingua"
      },
      "text": {
-      "cs": "Itálie zůstala politicky rozdělená a v každém kraji se mluvilo místním nářečím, psaný jazyk ale hledal jednotnou normu. V tzv. sporu o jazyk (questione della lingua) prosadil Pietro Bembo spisem Prose della volgar lingua (1525) za vzor jazyk Petrarky a Boccaccia, tedy florentštinu 14. století; už roku 1501 připravil pro benátského tiskaře Alda Manutia vydání Petrarkových básní. Accademia della Crusca, založená ve Florencii v letech 1582–1583, vydala roku 1612 Vocabolario degli Accademici della Crusca, první velký slovník italštiny. V 19. století Milánčan Alessandro Manzoni přepracoval román Snoubenci (vydání 1840–1842) podle živé florentštiny vzdělaných lidí; sám to nazval „vymáchat hadry v Arnu“.",
-      "en": "Italy remained politically divided and each region spoke its local dialect, but the written language sought a single norm. In the \"language question\" (questione della lingua) Pietro Bembo, in his Prose della volgar lingua (1525), established as the model the language of Petrarch and Boccaccio, that is 14th-century Florentine; as early as 1501 he had edited Petrarch's poems for the Venetian printer Aldus Manutius. The Accademia della Crusca, founded in Florence in 1582–1583, published in 1612 the Vocabolario degli Accademici della Crusca, the first great dictionary of Italian. In the 19th century the Milanese Alessandro Manzoni revised his novel The Betrothed (edition of 1840–1842) according to the living Florentine of educated people; he himself called it \"rinsing the clothes in the Arno\".",
-      "it": "L'Italia rimase politicamente divisa e in ogni regione si parlava il dialetto locale, ma la lingua scritta cercava una norma unica. Nella questione della lingua Pietro Bembo, con le Prose della volgar lingua (1525), impose come modello la lingua di Petrarca e Boccaccio, cioè il fiorentino del Trecento; già nel 1501 aveva curato per il tipografo veneziano Aldo Manuzio l'edizione delle poesie di Petrarca. L'Accademia della Crusca, fondata a Firenze nel 1582–1583, pubblicò nel 1612 il Vocabolario degli Accademici della Crusca, il primo grande dizionario dell'italiano. Nell'Ottocento il milanese Alessandro Manzoni rivide il romanzo I promessi sposi (edizione del 1840–1842) secondo il fiorentino vivo delle persone colte; egli stesso lo chiamò “risciacquare i panni in Arno”."
+      "cs": "Itálie zůstala politicky rozdělená a v každém kraji se mluvilo místním nářečím, psaný jazyk ale hledal jednotnou normu. V tzv. sporu o jazyk (questione della lingua) prosadil Pietro Bembo spisem Prose della volgar lingua (1525) za vzor jazyk Petrarky a Boccaccia, tedy florentštinu 14. století; už roku 1501 připravil pro benátského tiskaře Alda Manutia vydání Petrarkových básní. Accademia della Crusca, založená ve Florencii v letech 1582–1583, vydala roku 1612 Vocabolario degli Accademici della Crusca, první velký slovník italštiny. V 19. století Milánčan Alessandro Manzoni přepracoval román Snoubenci (vydání 1840–1842) podle živé florentštiny vzdělaných lidí. Sám o tom psal jako o máchání prádla v Arnu; zlidovělo to v rčení „risciacquare i panni in Arno“ (vymáchat prádlo v Arnu).",
+      "en": "Italy remained politically divided and each region spoke its local dialect, but the written language sought a single norm. In the \"language question\" (questione della lingua) Pietro Bembo, in his Prose della volgar lingua (1525), established as the model the language of Petrarch and Boccaccio, that is 14th-century Florentine; as early as 1501 he had edited Petrarch's poems for the Venetian printer Aldus Manutius. The Accademia della Crusca, founded in Florence in 1582–1583, published in 1612 the Vocabolario degli Accademici della Crusca, the first great dictionary of Italian. In the 19th century the Milanese Alessandro Manzoni revised his novel The Betrothed (edition of 1840–1842) according to the living Florentine of educated people. He himself wrote of it as rinsing his linen in the Arno, which became proverbial as \"risciacquare i panni in Arno\" (rinsing the clothes in the Arno).",
+      "it": "L'Italia rimase politicamente divisa e in ogni regione si parlava il dialetto locale, ma la lingua scritta cercava una norma unica. Nella questione della lingua Pietro Bembo, con le Prose della volgar lingua (1525), impose come modello la lingua di Petrarca e Boccaccio, cioè il fiorentino del Trecento; già nel 1501 aveva curato per il tipografo veneziano Aldo Manuzio l'edizione delle poesie di Petrarca. L'Accademia della Crusca, fondata a Firenze nel 1582–1583, pubblicò nel 1612 il Vocabolario degli Accademici della Crusca, il primo grande dizionario dell'italiano. Nell'Ottocento il milanese Alessandro Manzoni rivide il romanzo I promessi sposi (edizione del 1840–1842) secondo il fiorentino vivo delle persone colte. Egli stesso ne scrisse come di un bucato da risciacquare in Arno; da qui l'espressione proverbiale “risciacquare i panni in Arno”."
      },
      "oblasti": [
       {
@@ -9903,23 +9935,47 @@
          45.46
         ],
         [
-         9.8,
-         45.0
+         9.0,
+         44.9
         ],
         [
-         10.5,
-         44.4
+         8.95,
+         44.45
         ],
         [
-         11.1,
-         43.85
+         9.5,
+         44.33
+        ],
+        [
+         9.95,
+         44.12
+        ],
+        [
+         10.15,
+         44.05
+        ],
+        [
+         10.4,
+         43.75
+        ],
+        [
+         10.35,
+         43.58
+        ],
+        [
+         10.9,
+         43.7
+        ],
+        [
+         11.2,
+         43.77
         ]
        ],
        "barva": "emi",
        "popisek": {
-        "cs": "Manzoni do Florencie (1827)",
-        "en": "Manzoni to Florence (1827)",
-        "it": "Manzoni a Firenze (1827)"
+        "cs": "Manzoni přes Livorno do Florencie (1827)",
+        "en": "Manzoni via Livorno to Florence (1827)",
+        "it": "Manzoni a Firenze via Livorno (1827)"
        }
       }
      ]
@@ -10004,13 +10060,23 @@
          14.1,
          37.5,
          0.8
+        ],
+        [
+         8.3,
+         44.75,
+         0.85
+        ],
+        [
+         9.0,
+         40.1,
+         0.7
         ]
        ],
        "barva": "it",
        "popisek": {
-        "cs": "Italské království 1861",
-        "en": "Kingdom of Italy 1861",
-        "it": "Regno d'Italia 1861"
+        "cs": "Itálie",
+        "en": "Italy",
+        "it": "Italia"
        }
       },
       {
@@ -10037,7 +10103,19 @@
          -58.4,
          -34.6,
          1.3
-        ],
+        ]
+       ],
+       "barva": "emi",
+       "po": "do-argentiny",
+       "popisek": {
+        "cs": "Buenos Aires",
+        "en": "Buenos Aires",
+        "it": "Buenos Aires"
+       }
+      },
+      {
+       "id": "saopaulo",
+       "kruhy": [
         [
          -46.6,
          -23.5,
@@ -10045,11 +10123,11 @@
         ]
        ],
        "barva": "emi",
-       "po": "do-argentiny",
+       "po": "do-brazilie",
        "popisek": {
-        "cs": "Buenos Aires, São Paulo",
-        "en": "Buenos Aires, São Paulo",
-        "it": "Buenos Aires, San Paolo"
+        "cs": "São Paulo",
+        "en": "São Paulo",
+        "it": "San Paolo"
        }
       }
      ],
@@ -10161,12 +10239,20 @@
          -36.0
         ],
         [
-         -57.5,
-         -35.2
+         -56.4,
+         -35.35
         ],
         [
-         -58.3,
-         -34.65
+         -57.3,
+         -34.9
+        ],
+        [
+         -57.95,
+         -34.72
+        ],
+        [
+         -58.33,
+         -34.6
         ]
        ],
        "barva": "emi",
@@ -10175,6 +10261,24 @@
         "en": "to Argentina and Brazil",
         "it": "verso l'Argentina e il Brasile"
        }
+      },
+      {
+       "id": "do-brazilie",
+       "body": [
+        [
+         -36.0,
+         -18.0
+        ],
+        [
+         -41.0,
+         -23.8
+        ],
+        [
+         -46.3,
+         -24.05
+        ]
+       ],
+       "barva": "emi"
       }
      ]
     },
@@ -10197,9 +10301,9 @@
       "it": "L'italiano oggi"
      },
      "text": {
-      "cs": "Italština je mateřským jazykem asi 65 milionů lidí. Je úředním jazykem Itálie, San Marina, Vatikánu a Švýcarska (v kantonu Ticino a v jižních údolích Graubündenu), úředně uznaná je i v pobřežních obcích slovinské Istrie a v chorvatské Istrii. Spisovná italština vychází z florentštiny, ale v každém kraji má vlastní výslovnost. Nářečí se dál používají, často střídavě s italštinou: podle ISTAT (2015) mluví v rodině převážně italsky asi 46 % lidí od šesti let, italsky i nářečím 32 % a převážně nářečím 14 %. Některé místní řeči, například sardštinu a furlanštinu, italský zákon z roku 1999 uznává jako jazyky menšin.",
-      "en": "Italian is the mother tongue of some 65 million people. It is an official language of Italy, San Marino, Vatican City and Switzerland (in the canton of Ticino and the southern valleys of Graubünden), and it is officially recognised in the coastal municipalities of Slovenian Istria and in Croatian Istria. Standard Italian is based on Florentine, but each region has its own pronunciation. Dialects remain in use, often alternating with Italian: according to ISTAT (2015), about 46% of people aged six and over speak mainly Italian in the family, 32% both Italian and dialect, and 14% mainly dialect. Some local languages, such as Sardinian and Friulian, are recognised as minority languages by an Italian law of 1999.",
-      "it": "L'italiano è la lingua materna di circa 65 milioni di persone. È lingua ufficiale dell'Italia, di San Marino, della Città del Vaticano e della Svizzera (nel Cantone Ticino e nelle valli meridionali dei Grigioni), ed è riconosciuto ufficialmente nei comuni costieri dell'Istria slovena e nell'Istria croata. L'italiano standard si basa sul fiorentino, ma ogni regione ha la propria pronuncia. I dialetti restano in uso, spesso in alternanza con l'italiano: secondo l'ISTAT (2015), circa il 46% delle persone dai sei anni in su parla in famiglia prevalentemente italiano, il 32% sia italiano sia dialetto e il 14% prevalentemente dialetto. Alcune parlate locali, come il sardo e il friulano, sono riconosciute come lingue minoritarie da una legge italiana del 1999."
+      "cs": "Italština je mateřským jazykem asi 65 milionů lidí. Je úředním jazykem Itálie, San Marina, Vatikánu a Švýcarska, kde je jedním ze tří úředních jazyků spolku a úředním jazykem kantonů Ticino a Graubünden (mluví se jí v Ticinu a v jižních údolích Graubündenu); úředně uznaná je i v pobřežních obcích slovinské Istrie a v chorvatské Istrii. Spisovná italština vychází z florentštiny, ale v každém kraji má vlastní výslovnost. Nářečí se dál používají, často střídavě s italštinou: podle ISTAT (2015) mluví v rodině převážně italsky asi 46 % lidí od šesti let, italsky i nářečím 32 % a převážně nářečím 14 %. Některé místní řeči, například sardštinu a furlanštinu, chrání italský zákon č. 482/1999 jako jazyky historických menšin.",
+      "en": "Italian is the mother tongue of some 65 million people. It is an official language of Italy, San Marino, Vatican City and Switzerland, where it is one of the three official languages of the Confederation and an official language of the cantons of Ticino and Graubünden (it is spoken in Ticino and in the southern valleys of Graubünden); it is also officially recognised in the coastal municipalities of Slovenian Istria and in Croatian Istria. Standard Italian is based on Florentine, but each region has its own pronunciation. Dialects remain in use, often alternating with Italian: according to ISTAT (2015), about 46% of people aged six and over speak mainly Italian in the family, 32% both Italian and dialect, and 14% mainly dialect. Some local languages, such as Sardinian and Friulian, are protected as languages of historical linguistic minorities by Italian Law No. 482 of 1999.",
+      "it": "L'italiano è la lingua materna di circa 65 milioni di persone. È lingua ufficiale dell'Italia, di San Marino, della Città del Vaticano e della Svizzera, dove è una delle tre lingue ufficiali della Confederazione e lingua ufficiale dei Cantoni Ticino e Grigioni (si parla in Ticino e nelle valli meridionali dei Grigioni); è inoltre riconosciuto ufficialmente nei comuni costieri dell'Istria slovena e nell'Istria croata. L'italiano standard si basa sul fiorentino, ma ogni regione ha la propria pronuncia. I dialetti restano in uso, spesso in alternanza con l'italiano: secondo l'ISTAT (2015), circa il 46% delle persone dai sei anni in su parla in famiglia prevalentemente italiano, il 32% sia italiano sia dialetto e il 14% prevalentemente dialetto. Alcune parlate locali, come il sardo e il friulano, sono tutelate come lingue delle minoranze linguistiche storiche dalla legge n. 482 del 1999."
      },
      "oblasti": [
       {
@@ -10269,6 +10373,16 @@
          17.4,
          40.7,
          0.5
+        ],
+        [
+         8.3,
+         44.75,
+         0.85
+        ],
+        [
+         13.45,
+         45.85,
+         0.45
         ]
        ],
        "barva": "it",
@@ -10282,7 +10396,7 @@
        "id": "svycarsko",
        "kruhy": [
         [
-         8.9,
+         8.8,
          46.35,
          0.3
         ],
@@ -10300,6 +10414,11 @@
          9.55,
          46.35,
          0.1
+        ],
+        [
+         8.93,
+         45.95,
+         0.15
         ]
        ],
        "barva": "itx",
@@ -10336,12 +10455,13 @@
    "zdroje": [
     "Maiden, M. (1995): A Linguistic History of Italian. London – New York: Longman.",
     "Migliorini, B. (1960): Storia della lingua italiana. Firenze: Sansoni.",
-    "Clackson, J. – Horrocks, G. (2007): The Blackwell History of the Latin Language. Oxford: Blackwell.",
-    "Bruni, F. (1984): L'italiano. Elementi di storia della lingua e della cultura. Torino: UTET.",
+    "Clackson, J. – Horrocks, G. (2007): The Blackwell History of the Latin Language. Malden, MA – Oxford: Blackwell.",
+    "Bruni, F. (1984): L'italiano. Elementi di storia della lingua e della cultura. Testi e documenti. Torino: UTET.",
     "Castellani, A. (1982): Quanti erano gl'italofoni nel 1861? Studi linguistici italiani 8, 3–26.",
     "De Mauro, T. (1963): Storia linguistica dell'Italia unita. Bari: Laterza.",
     "Bembo, P. (1525): Prose della volgar lingua. Venezia.",
-    "ISTAT (2017): L'uso della lingua italiana, dei dialetti e delle altre lingue in Italia. Anno 2015. Roma: Istituto nazionale di statistica."
+    "ISTAT (2017): L'uso della lingua italiana, dei dialetti e delle altre lingue in Italia. Anno 2015. Roma: Istituto nazionale di statistica.",
+    "Legge 15 dicembre 1999, n. 482: Norme in materia di tutela delle minoranze linguistiche storiche."
    ]
   }
  ]

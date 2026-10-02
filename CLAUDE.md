@@ -746,6 +746,17 @@ od 1130), jazyková otázka byl spor italštiny s angličtinou (britská strana 
 Għaqda tal-Kittieba tal-Malti založena 1920, pravopis zveřejněn 1924 a uznán 1934, Kantilenu složil Pietru Caxaro († 1485)
 a zapsal ji synovec 1533–1536, „ve spisovné podobě píše latinkou“, necelých 600 tisíc obyvatel (NSO 2025); šipky nesmí přes
 Bretaň, mys sv. Vincence, Cap Bon ani jihovýchodní cíp Sicílie.
+**Putování italštiny** (2. 10. 2026, uživatel: „přidělej ještě cestu jazyka Italština“; `#putovani-italstina` / `#journey-italian` /
+`#viaggio-italiano`, 8 etap: italické jazyky a sousedé (příchod přes Alpy / Jadran přerušovaně), latina Říma, lidová latina a rozdělená
+Itálie, první zápisy (Veronská hádanka sporně, Placito capuano 960), sicilská škola a tři florentské koruny, spor o jazyk (Bembo, Crusca,
+Manzoni), sjednocení a vystěhovalectví (šipky do New Yorku, Buenos Aires, São Paula; `predel` u etapy Dnes), italština dnes). Barvy
+`--put-ita, osu, etq, lgb, byz, vlg, sic, tos, it, emi, itx`. **Nový klíč `--put-*` musí být i ve výčtu v `nactiBarvy` (app.js)**, jinak se
+kreslí červeně – stalo se tu, validace to od té doby hlídá. Při ověření opraveno: italština úřední v celém Švýcarsku (spolkový jazyk, kantony
+Ticino a Graubünden), „risciacquare i panni in Arno“ je zlidovělé rčení podle Manzoniho dopisu (ne jeho doslovný výrok), Placito = první
+datovaný záměrný doklad (graffito Commodilla je starší), občanství 89 př. n. l. jen jižně od Pádu (za Pádem 49), oskičtina v Pompejích snad
+i v 1. století n. l., Langobardi „většinu severu“, Byzanc Ravenna do 751 a Neapol, Rometta 965, sicilská škola „první básnická škola“ (ne
+první poezie), zákon 482/1999 jazyky „chrání“, Itálie 1861 bez Benátska a Lazia (popisek jen „Itálie“), Manzoni 1827 přes Livorno; šipky
+nesmí přes zálivy Gioia Tauro a Sant'Eufemia (ze Sicílie do Toskánska po souši Kalábrií) ani přes pevninu u Punta Indio (La Plata).
 **Vstup do putování** (29. 9. 2026, uživatel vybral z návrhů jen „skupinu v Příbězích“): v okně Příběhy jazyků je za skupinou
 Slova na cestách skupina **Putování jazyků** (`vlozPutovani` v `otevriSekci`) s dlaždicí pro každé putování – akvarel jazyka
 (`/malby/<atlas>.jpg`, v artefaktu `malbaObrazek`, bez oživení), název a `podtitul` (povinný, validace). Tlačítko na kartě jazyka
