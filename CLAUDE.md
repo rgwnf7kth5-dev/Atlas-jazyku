@@ -56,6 +56,7 @@ v build.mjs, `DOMENY.it` a `korenVerze` v app.js). V záhlaví je místo odkazu 
   název, výslovnost pro italského čtenáře, rodina, zajímavost – validace je hlídá jako cs/en), důvody Jazyka dne (`dny-jazyku.json`),
   36 písem (`pisma.json`), typologické mapy (`typologie-popis.json`; příklady přizpůsobené italštině ověřené ve WALS: 81A SVO,
   112A non, 116A jen intonace, 129A mano/braccio). Hlas záložní výslovnosti `it-IT`.
+- **Nezávislá kontrola překladu** (2. 10. 2026) našla 44 připomínek, opraveny: niger-congo (ne niger-kordofaniana – to je širší skupina), „e altri {n}“ (země, nářečí), vzájemná srozumitelnost (srbština aj., wu), Bulharsko „annuire = no“, Slovensko 1993 jako stát, „lingue giudaiche“ (ne ebraiche), „indoaria“, „brittonico“, „cananeo“, vynechané pasáže návodu vráceny, jednotný přepis /ʒ/ jako „sg“ (bon-SGIUR, SGIV-io, bon-SGIU) a /ʃ/ jako „sc“, bez „ă“ a koncového „cc“; typologie: toni di contorno, marcatura marginale, „Nessuno“ u rodů.
 - **Názvy:** `data/nazvy-it.json` vyrábí `node scripts/nazvy.mjs it` (CLDR 48.2 a i18n-iso-countries přes jsDelivr): 537 jmen
   teček (`PD.nazvy.it`, index → jméno; bez jména anglicky z Glottologu), státy, státy na mapě (Kosovo, Severní Kypr, Somaliland
   ručně), písma. Rodiny `data/glottolog-families.it.json` (~40 největších), větve `data/glottolog-branches.it.json` (~170

@@ -240,7 +240,7 @@
    "popis": {
     "cs": "Zda výška tónu rozlišuje slova nebo mluvnické tvary. Jednoduchý systém má dvě tónové úrovně, složitý tři a více nebo tónové průběhy.",
     "en": "Whether pitch distinguishes words or grammatical forms. A simple system has two tone levels, a complex one three or more, or contour tones.",
-    "it": "Se l’altezza della voce distingue parole o forme grammaticali. Un sistema semplice ha due livelli tonali, uno complesso tre o più, oppure toni modulati."
+    "it": "Se l’altezza della voce distingue parole o forme grammaticali. Un sistema semplice ha due livelli tonali, uno complesso tre o più, oppure toni di contorno."
    },
    "hodnoty": {
     "1": {
@@ -492,7 +492,7 @@
     "1": {
      "cs": "žádný",
      "en": "None",
-     "it": "Nessuna"
+     "it": "Nessuno"
     },
     "2": {
      "cs": "dva",
@@ -522,7 +522,7 @@
      ],
      "cs": "žádný",
      "en": "none",
-     "it": "nessuna"
+     "it": "nessuno"
     },
     {
      "wals": [
@@ -570,7 +570,7 @@
    "popis": {
     "cs": "Počet pádů vyjadřovaných tvary podstatných jmen (koncovkami, předponami, změnou kmene). Předložky se nepočítají. „Okrajové“ jsou jazyky, kde pádové značení existuje jen v omezené míře.",
     "en": "The number of cases expressed in the forms of nouns (endings, prefixes, stem changes). Adpositions are not counted. 'Borderline' languages have case marking only to a limited extent.",
-    "it": "Il numero di casi espressi nelle forme dei nomi (desinenze, prefissi, mutamenti del tema). Le adposizioni non contano. Le lingue “di confine” hanno una marcatura dei casi solo in misura limitata."
+    "it": "Il numero di casi espressi nelle forme dei nomi (desinenze, prefissi, mutamenti del tema). Le adposizioni non contano. Le lingue con marcatura “marginale” hanno i casi solo in misura limitata."
    },
    "hodnoty": {
     "1": {
@@ -616,7 +616,7 @@
     "9": {
      "cs": "jen okrajové pádové značení",
      "en": "Exclusively borderline case-marking",
-     "it": "Solo marcatura dei casi di confine"
+     "it": "Solo marcatura di caso marginale"
     }
    },
    "tridy": [
@@ -676,7 +676,7 @@
      ],
      "cs": "jen okrajové pádové značení",
      "en": "borderline case-marking only",
-     "it": "solo marcatura di confine",
+     "it": "solo marcatura marginale",
      "barva": "jine"
     }
    ]
@@ -699,7 +699,7 @@
     "1": {
      "cs": "samostatné slovo odlišné od ukazovacího zájmena",
      "en": "Definite word distinct from demonstrative",
-     "it": "Parola determinativa distinta dal dimostrativo"
+     "it": "Articolo determinativo distinto dal dimostrativo"
     },
     "2": {
      "cs": "ukazovací zájmeno ve funkci členu",
@@ -714,7 +714,7 @@
     "4": {
      "cs": "jen neurčitý člen",
      "en": "No definite, but indefinite article",
-     "it": "Nessun determinativo, ma articolo indeterminativo"
+     "it": "Nessun articolo determinativo, ma uno indeterminativo"
     },
     "5": {
      "cs": "bez členů",
@@ -784,12 +784,12 @@
     "1": {
      "cs": "samostatné slovo odlišné od číslovky „jeden“",
      "en": "Indefinite word distinct from 'one'",
-     "it": "Parola indeterminativa distinta da “uno”"
+     "it": "Articolo indeterminativo distinto da “uno”"
     },
     "2": {
      "cs": "stejné slovo jako „jeden“",
      "en": "Indefinite word same as 'one'",
-     "it": "Parola indeterminativa uguale a “uno”"
+     "it": "Articolo indeterminativo uguale a “uno”"
     },
     "3": {
      "cs": "afix",
@@ -799,7 +799,7 @@
     "4": {
      "cs": "jen určitý člen",
      "en": "No indefinite, but definite article",
-     "it": "Nessun indeterminativo, ma articolo determinativo"
+     "it": "Nessun articolo indeterminativo, ma uno determinativo"
     },
     "5": {
      "cs": "bez členů",
@@ -1772,7 +1772,7 @@
    "popis": {
     "cs": "Počet základních barevných pojmů podle metodiky Berlina a Kaye (World Color Survey). Poloviční hodnoty označují kategorii, která je v jazyce jen zčásti ustálená. Angličtina, francouzština, němčina a ruština mají podle WALS 11.",
     "en": "The number of basic colour terms following Berlin and Kay's method (World Color Survey). Half values mark a category that is only partly established. English, French, German and Russian have 11 according to WALS.",
-    "it": "Il numero di termini cromatici di base secondo il metodo di Berlin e Kay (World Color Survey). I valori a metà indicano una categoria affermata solo in parte. Secondo il WALS inglese, francese, tedesco e russo ne hanno 11."
+    "it": "Il numero di termini cromatici di base secondo il metodo di Berlin e Kay (World Color Survey). I valori con ,5 indicano una categoria affermata solo in parte. Secondo il WALS inglese, francese, tedesco e russo ne hanno 11."
    },
    "hodnoty": {
     "1": {

@@ -64,7 +64,7 @@
    "nazev": "Slovacco",
    "vyslovnost": "A-hoi",
    "rodina": "indoeuropea – slava",
-   "fakt": "Ceco e slovacco sono reciprocamente comprensibili senza studio, anche grazie a decenni in uno stesso stato e a media comuni."
+   "fakt": "Ceco e slovacco sono reciprocamente comprensibili senza uno studio specifico, anche grazie a decenni in uno stesso stato e a media comuni."
   }
  },
  {
@@ -96,7 +96,7 @@
   },
   "it": {
    "nazev": "Polacco",
-   "vyslovnost": "cescc",
+   "vyslovnost": "cesc-ci",
    "rodina": "indoeuropea – slava",
    "fakt": "Il polacco ammette lunghi gruppi consonantici – “bezwzględny” (spietato) ha cinque lettere consonantiche di fila."
   }
@@ -306,7 +306,7 @@
   },
   "it": {
    "nazev": "Sloveno",
-   "vyslovnost": "GIV-io",
+   "vyslovnost": "SGIV-io",
    "rodina": "indoeuropea – slava",
    "fakt": "Lo sloveno ha conservato il duale: drevo – drevesi – drevesa, cioè un albero, due alberi, tre o più alberi."
   }
@@ -342,7 +342,7 @@
    "nazev": "Bulgaro",
    "vyslovnost": "zdra-VEI",
    "rodina": "indoeuropea – slava",
-   "fakt": "Il bulgaro ha perso la declinazione dei nomi e ha l’articolo determinativo posposto. In Bulgaria un cenno del capo dall’alto in basso significa tradizionalmente “no” e uno scuotimento “sì”."
+   "fakt": "Il bulgaro ha perso la declinazione dei nomi e ha l’articolo determinativo posposto. In Bulgaria annuire significa tradizionalmente “no” e scuotere la testa “sì”."
   }
  },
  {
@@ -617,7 +617,7 @@
    "nazev": "Bavarese",
    "vyslovnost": "SER-vus",
    "rodina": "indoeuropea – germanica",
-   "fakt": "Per la norma ISO 639-3 il bavarese è una lingua a sé (codice bar); in Germania e Austria i linguisti lo considerano di solito un gruppo di dialetti alto-tedeschi. Uno shibboleth noto è Oachkatzlschwoaf, “coda di scoiattolo”."
+   "fakt": "Per la norma ISO 639-3 il bavarese è lingua a sé (bar); i linguisti tedeschi e austriaci lo ritengono per lo più un gruppo di dialetti alto-tedeschi. Uno shibboleth noto è Oachkatzlschwoaf, “coda di scoiattolo” (ted. Eichhörnchenschwanz)."
   }
  },
  {
@@ -1064,7 +1064,7 @@
   },
   "it": {
    "nazev": "Rumeno",
-   "vyslovnost": "BU-nă",
+   "vyslovnost": "BU-na",
    "rodina": "indoeuropea – romanza",
    "fakt": "Il rumeno è una lingua romanza orientale discesa dal latino, circondata per lo più da lingue slave e dall’ungherese; i prestiti slavi formano una parte importante del suo lessico."
   }
@@ -1453,7 +1453,7 @@
   "it": {
    "nazev": "Hindi",
    "vyslovnost": "na-MAS-te",
-   "rodina": "indoeuropea – indoarya",
+   "rodina": "indoeuropea – indoaria",
    "fakt": "Si scrive in devanagari, un abugida: i segni consonantici portano una vocale intrinseca e una linea orizzontale superiore (shirorekha) unisce le lettere di una parola."
   }
  },
@@ -1496,14 +1496,14 @@
   },
   "en": {
    "nazev": "Bengali",
-   "vyslovnost": "NO-mosh-kar",
+   "vyslovnost": "NO-mosc-kar",
    "rodina": "Indo-European – Indo-Aryan",
    "fakt": "International Mother Language Day (UNESCO, 21 February) commemorates the 1952 demonstration in Dhaka for the recognition of Bengali."
   },
   "it": {
    "nazev": "Bengalese",
-   "vyslovnost": "NO-mosh-kar",
-   "rodina": "indoeuropea – indoarya",
+   "vyslovnost": "NO-mosc-kar",
+   "rodina": "indoeuropea – indoaria",
    "fakt": "La Giornata internazionale della lingua madre (UNESCO, 21 febbraio) commemora la manifestazione del 1952 a Dacca per il riconoscimento del bengalese."
   }
  },
@@ -1553,7 +1553,7 @@
   "it": {
    "nazev": "Urdu",
    "vyslovnost": "as-sa-LA-mu a-LEI-kum",
-   "rodina": "indoeuropea – indoarya",
+   "rodina": "indoeuropea – indoaria",
    "fakt": "L’urdu e l’hindi colloquiali sono reciprocamente comprensibili (hindustani), ma differiscono per la scrittura – l’urdu usa la scrittura perso-araba, da destra a sinistra – e per il lessico colto."
   }
  },
@@ -1606,7 +1606,7 @@
   "it": {
    "nazev": "Punjabi",
    "vyslovnost": "sat sri a-KAL",
-   "rodina": "indoeuropea – indoarya",
+   "rodina": "indoeuropea – indoaria",
    "fakt": "Il punjabi è tonale: l’altezza della voce distingue il significato delle parole, cosa rara tra le lingue indoeuropee."
   }
  },
@@ -1649,7 +1649,7 @@
   "it": {
    "nazev": "Marathi",
    "vyslovnost": "na-mas-KAR",
-   "rodina": "indoeuropea – indoarya",
+   "rodina": "indoeuropea – indoaria",
    "fakt": "Il marathi è la lingua ufficiale dello stato indiano del Maharashtra e si parla, tra l’altro, a Mumbai."
   }
  },
@@ -1692,7 +1692,7 @@
   "it": {
    "nazev": "Gujarati",
    "vyslovnost": "chem CIO",
-   "rodina": "indoeuropea – indoarya",
+   "rodina": "indoeuropea – indoaria",
    "fakt": "La scrittura gujarati deriva dalla devanagari, ma non ha la linea orizzontale superiore."
   }
  },
@@ -1737,7 +1737,7 @@
   "it": {
    "nazev": "Nepalese",
    "vyslovnost": "na-MAS-te",
-   "rodina": "indoeuropea – indoarya",
+   "rodina": "indoeuropea – indoaria",
    "fakt": "Il nepalese è la lingua ufficiale del Nepal e una delle lingue riconosciute dalla costituzione indiana. La parola “himal” (montagna innevata) è imparentata con il sanscrito “hima”, neve."
   }
  },
@@ -1780,7 +1780,7 @@
   "it": {
    "nazev": "Singalese",
    "vyslovnost": "A-iu-bo-van",
-   "rodina": "indoeuropea – indoarya",
+   "rodina": "indoeuropea – indoaria",
    "fakt": "Le lettere singalesi sono per lo più tondeggianti, il che si spiega di solito con la scrittura a stilo su foglie di palma, che i tratti dritti avrebbero spaccato."
   }
  },
@@ -2204,7 +2204,7 @@
    "nazev": "Oromo",
    "vyslovnost": "A-kam",
    "rodina": "afro-asiatica – cuscitica",
-   "fakt": "L’oromo ha il maggior numero di parlanti nativi in Etiopia, prima dell’amarico."
+   "fakt": "L’oromo ha il maggior numero di parlanti nativi in Etiopia, più dell’amarico."
   }
  },
  {
@@ -2262,7 +2262,7 @@
    "nazev": "Hausa",
    "vyslovnost": "SAN-nu",
    "rodina": "afro-asiatica – ciadica",
-   "fakt": "L’hausa è la principale lingua del commercio e della comunicazione più ampia nel nord della Nigeria e nel Niger e si usa anche nei paesi vicini."
+   "fakt": "L’hausa è la principale lingua veicolare e del commercio nel nord della Nigeria e nel Niger e si usa anche nei paesi vicini."
   }
  },
  {
@@ -2369,7 +2369,7 @@
    "nazev": "Yoruba",
    "vyslovnost": "BA-uo ni",
    "rodina": "niger-congo",
-   "fakt": "Lo yoruba distingue tre toni di livello, segnati nell’ortografia con i diacritici: owó ‘denaro’, ọwọ́ ‘mano’."
+   "fakt": "Lo yoruba distingue tre toni di registro (toni piani), segnati nell’ortografia con i diacritici: owó ‘denaro’, ọwọ́ ‘mano’."
   }
  },
  {
@@ -3066,7 +3066,7 @@
   "it": {
    "nazev": "Mongolo",
    "vyslovnost": "sain BAI-nu",
-   "rodina": "mongolica",
+   "rodina": "mongolico-kitan – mongolica",
    "fakt": "La scrittura mongola tradizionale si scrive dall’alto in basso in colonne verticali; la Mongolia usa soprattutto il cirillico, la Mongolia Interna (Cina) la scrittura tradizionale."
   }
  },
@@ -3808,7 +3808,7 @@
    "nazev": "Maori",
    "vyslovnost": "chi-a O-ra",
    "rodina": "austronesiana",
-   "fakt": "“Kia ora”, alla lettera “stai bene”, è molto usato anche nell’inglese della Nuova Zelanda. Il maori è lingua ufficiale dal 1987."
+   "fakt": "“Kia ora”, alla lettera “che tu stia bene”, è molto usato anche nell’inglese della Nuova Zelanda. Il maori è lingua ufficiale dal 1987."
   }
  },
  {
@@ -4362,7 +4362,7 @@
   "it": {
    "nazev": "Odia",
    "vyslovnost": "na-mas-KAR",
-   "rodina": "indoeuropea – indoarya",
+   "rodina": "indoeuropea – indoaria",
    "fakt": "Le sommità arrotondate delle lettere odia si spiegano di solito con la scrittura a stilo su foglie di palma, che i tratti orizzontali dritti avrebbero lacerato. L’odia è diventato lingua classica dell’India nel 2014."
   }
  },
@@ -4393,14 +4393,14 @@
   },
   "en": {
    "nazev": "Assamese",
-   "vyslovnost": "NO-mosh-kar",
+   "vyslovnost": "NO-mosc-kar",
    "rodina": "Indo-European – Indo-Aryan",
    "fakt": "Assamese is the official language of the Indian state of Assam. It uses the Eastern Nagari script shared with Bengali, differing in a few letters such as ৰ (r) and ৱ (w)."
   },
   "it": {
    "nazev": "Assamese",
-   "vyslovnost": "NO-mosh-kar",
-   "rodina": "indoeuropea – indoarya",
+   "vyslovnost": "NO-mosc-kar",
+   "rodina": "indoeuropea – indoaria",
    "fakt": "L’assamese è la lingua ufficiale dello stato indiano dell’Assam. Usa la scrittura nagari orientale comune al bengalese, da cui differisce per alcune lettere come ৰ (r) e ৱ (w)."
   }
  },
@@ -4443,7 +4443,7 @@
   "it": {
    "nazev": "Sindhi",
    "vyslovnost": "sa-LAM",
-   "rodina": "indoeuropea – indoarya",
+   "rodina": "indoeuropea – indoaria",
    "fakt": "In Pakistan il sindhi si scrive con un alfabeto arabo ampliato di 52 lettere; in India si usa anche la devanagari."
   }
  },
@@ -4486,7 +4486,7 @@
   "it": {
    "nazev": "Maithili",
    "vyslovnost": "pra-NAM",
-   "rodina": "indoeuropea – indoarya",
+   "rodina": "indoeuropea – indoaria",
    "fakt": "Il maithili si scriveva tradizionalmente nella scrittura tirhuta, oggi per lo più in devanagari. Il suo poeta più noto è Vidyapati (XIV–XV sec.); dal 2003 è una delle lingue riconosciute dalla costituzione indiana."
   }
  },
@@ -4626,7 +4626,7 @@
    "nazev": "Wu (shanghainese)",
    "vyslovnost": "non HO",
    "rodina": "sino-tibetana",
-   "fakt": "Lo shanghainese appartiene alle varietà wu del cinese e non è comprensibile per chi parla mandarino. A differenza del mandarino ha conservato le consonanti sonore b, d, g."
+   "fakt": "Lo shanghainese appartiene alle varietà wu del cinese e non è reciprocamente comprensibile con il mandarino. A differenza del mandarino ha conservato le consonanti sonore b, d, g."
   }
  },
  {
@@ -4806,7 +4806,7 @@
   },
   "it": {
    "nazev": "Hmong",
-   "vyslovnost": "nio jong",
+   "vyslovnost": "nio sgiong",
    "rodina": "hmong-mien",
    "fakt": "Gli hmong vivono in Cina, Vietnam, Laos e Thailandia, con una grande comunità negli Stati Uniti. Nell’ortografia latina degli anni Cinquanta il tono è indicato da una lettera finale – la -b di Hmoob indica un tono alto."
   }
@@ -4880,7 +4880,7 @@
    "nazev": "Luganda",
    "vyslovnost": "chi CA-ti",
    "rodina": "niger-congo – bantu",
-   "fakt": "Il luganda è la lingua dei baganda del regno del Buganda, dalla cui forma swahili del nome viene il nome dell’Uganda."
+   "fakt": "Il luganda è la lingua dei baganda del regno del Buganda; la forma swahili del nome Buganda ha dato il nome all’Uganda."
   }
  },
  {
@@ -5840,8 +5840,8 @@
   "it": {
    "nazev": "Romanì",
    "vyslovnost": "sar SAN",
-   "rodina": "indoeuropea – indoarya",
-   "fakt": "Il romanì è una lingua indoarya; la linguistica comparativa ha stabilito l’origine indiana dei rom negli anni Ottanta del Settecento. L’acqua è “pani” sia in romanì sia in hindi."
+   "rodina": "indoeuropea – indoaria",
+   "fakt": "Il romanì è una lingua indoaria; la linguistica comparativa ha stabilito l’origine indiana dei rom negli anni Ottanta del Settecento. L’acqua è “pani” sia in romanì sia in hindi."
   }
  },
  {
@@ -6010,10 +6010,10 @@
    "fakt": "Yakut (Sakha) is the northernmost Turkic language and has many Mongolic loanwords. It is spoken in Yakutia, home to Oymyakon and Verkhoyansk, the coldest permanently inhabited places on Earth."
   },
   "it": {
-   "nazev": "Jakuto (sacha)",
+   "nazev": "Sacha (jacuto)",
    "vyslovnost": "do-RO-bo",
    "rodina": "turca",
-   "fakt": "Il jakuto (sacha) è la lingua turca più settentrionale e ha molti prestiti mongolici. Si parla in Jacuzia, dove si trovano Ojmjakon e Verchojansk, i luoghi abitati in modo permanente più freddi della Terra."
+   "fakt": "Il sacha (jacuto) è la lingua turca più settentrionale e ha molti prestiti mongolici. Si parla in Jacuzia, dove si trovano Ojmjakon e Verchojansk, i luoghi abitati in modo permanente più freddi della Terra."
   }
  },
  {
@@ -6126,7 +6126,7 @@
   "it": {
    "nazev": "Divehi",
    "vyslovnost": "sa-LAM",
-   "rodina": "indoeuropea – indoarya",
+   "rodina": "indoeuropea – indoaria",
    "fakt": "La scrittura thaana delle Maldive si scrive da destra a sinistra. Le sue prime nove lettere derivano dai numerali arabi, le nove successive dai numerali indiani."
   }
  },
@@ -6641,7 +6641,7 @@
   },
   "it": {
    "nazev": "Ojibwe",
-   "vyslovnost": "BU-giu",
+   "vyslovnost": "BU-sgiu",
    "rodina": "algica",
    "fakt": "La parola “totem” viene dall’ojibwe “doodem” (clan, gruppo di parentela)."
   }
@@ -6767,7 +6767,7 @@
    "nazev": "Mapudungun",
    "vyslovnost": "MA-ri MA-ri",
    "rodina": "araucana",
-   "fakt": "Mapudungun significa “lingua della terra”. I mapuche resistettero sia agli inca sia agli spagnoli, che riconobbero la loro indipendenza nel trattato di Quilín (1641); il Cile li sottomise solo nel 1861–1883."
+   "fakt": "Mapudungun significa “lingua della terra”. I mapuche resistettero sia agli inca sia agli spagnoli, che riconobbero la loro indipendenza nel trattato di Quilín (1641); il Cile li sottomise solo tra il 1861 e il 1883."
   }
  },
  {
@@ -6803,7 +6803,7 @@
   },
   "it": {
    "nazev": "Maya yucateco",
-   "vyslovnost": "bash ca UA-lik",
+   "vyslovnost": "basc ca UA-lik",
    "rodina": "maya",
    "fakt": "Il maya yucateco è la seconda lingua indigena più parlata del Messico dopo il nahuatl. Le iscrizioni maya classiche sono scritte in una lingua affine del ramo ch’olano."
   }
@@ -6913,7 +6913,7 @@
   },
   "it": {
    "nazev": "Creolo haitiano",
-   "vyslovnost": "bon-JU",
+   "vyslovnost": "bon-SGIU",
    "rodina": "creolo a base francese",
    "fakt": "Il creolo haitiano ha un lessico per lo più francese e una grammatica influenzata da lingue dell’Africa occidentale. È ufficiale dal 1987 ed è parlato praticamente da tutti gli haitiani."
   }

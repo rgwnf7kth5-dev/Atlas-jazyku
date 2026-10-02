@@ -41,13 +41,13 @@
  "Southern Bantu": "bantu meridionale",
  "South Dravidian": "dravidico meridionale",
  "Iranian": "iranico",
- "Iranian-Nuristani": "iranico-nuristani",
+ "Iranian-Nuristani": "iranico-nuristano",
  "Northwestern Iranian": "iranico nordoccidentale",
  "Southwestern Iranian": "iranico sudoccidentale",
  "Insular Celtic": "celtico insulare",
  "Celtic": "celtico",
  "Goidelic": "goidelico",
- "Brythonic": "britannico",
+ "Brythonic": "brittonico",
  "High German": "alto-tedesco",
  "Upper German": "tedesco superiore",
  "Middle German": "tedesco centrale",
@@ -83,7 +83,7 @@
  "Hungaric": "ungherese",
  "Ethiosemitic": "etiosemitico",
  "Arabic": "arabo",
- "Canaanite": "cananaico",
+ "Canaanite": "cananeo",
  "Northwest Semitic": "semitico nordoccidentale",
  "Cushitic": "cuscitico",
  "East Cushitic": "cuscitico orientale",
@@ -159,7 +159,5 @@
  "Abkhaz-Abaza": "abcaso-abaza",
  "Mundaic": "munda",
  "Vietic": "vietico",
- "Khmeric": "khmer",
- "Central European Sign": "lingue dei segni dell’Europa centrale",
- "L1 Sign Language": "lingue dei segni dei sordi"
+ "Khmeric": "khmer"
 }

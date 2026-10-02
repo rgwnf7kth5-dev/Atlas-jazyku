@@ -65,7 +65,7 @@
   "jazykPopis": "La scheda elenca i paesi in cui la lingua si parla e mostra la sua area sul globo.",
   "zdroj": "Risposte solo dai dati dell’atlante (Glottolog, CLDR, WALS). Invio = vai."
  },
- "hledejTip": "Prova:",
+ "hledejTip": "Esempi:",
  "hledejPriklady": [
   "Quale lingua si parla a Berna?",
   "Quale lingua ha più dialetti?",
@@ -79,7 +79,7 @@
  "domaciJmeno": "nella lingua stessa: {x}",
  "vyslovnost": "si pronuncia: “{x}”",
  "areal": "La macchia colorata indica l’area approssimativa in cui si parla la lingua, non un confine di stato.",
- "aDalsich": "e altre {n}",
+ "aDalsich": "e altri {n}",
  "miliardy": [
   "miliardo",
   "miliardi",
@@ -103,7 +103,7 @@
  "vychoziPocet": "{a} · {b} con un saluto",
  "zemeBezPozdravu": "L’atlante non ha ancora una lingua con scheda dettagliata per questo paese. Le singole lingue si aprono facendo clic sui punti luminosi.",
  "tecka": "nome dal registro mondiale Glottolog",
- "teckaPozn": "Saluto, pronuncia e nota sono disponibili per 164 lingue scelte; questa non è ancora tra queste.",
+ "teckaPozn": "Saluto, pronuncia e nota sono disponibili per 164 lingue scelte, tra cui questa non figura ancora.",
  "zvukNeumi": "Questo dispositivo non supporta la sintesi vocale. Pronuncia approssimativa: “{x}”.",
  "zvukRodily": "Letta dalla voce sintetica del dispositivo per questa lingua.",
  "zvukZalozni": "Il dispositivo non ha una voce per questa lingua, quindi la pronuncia approssimativa è letta da una voce italiana. La pronuncia reale è diversa.",
@@ -116,7 +116,7 @@
   "st": "Famiglia sino-tibetana",
   "an": "Famiglia austronesiana",
   "afro": "Famiglia afro-asiatica",
-  "nk": "Famiglia niger-kordofaniana",
+  "nk": "Famiglia niger-congo",
   "ost": "Altre famiglie linguistiche"
  },
  "makro": {
@@ -219,7 +219,7 @@
   "toni"
  ],
  "pribuzenstvo": "Albero genealogico",
- "sourozenci": "Parenti più vicine",
+ "sourozenci": "Lingue più affini",
  "aDalsichPribuznych": "e altre {n}",
  "popsanost": "Documentazione",
  "med": [
@@ -244,7 +244,7 @@
  "mluvciHodnota": "circa {n} persone",
  "mluvciPoznRodili": "parlanti nativi · Wikidata{rok}",
  "mluvciPozn": "Wikidata{rok}",
- "hudVidet": "{n} di {m} lingue in vista",
+ "hudVidet": "{n} di {m} lingue visibili",
  "strany": [
   "N",
   "S",
@@ -393,7 +393,7 @@
   "odkaz": "Sui dati",
   "nadpis": "Sui dati e su come è nato l’atlante",
   "zavrit": "Chiudi",
-  "uvod": "L’atlante si basa su banche dati aperte compilate da linguisti di tutto il mondo. Qui si trova da dove viene ogni cosa, che cosa è certo e che cosa è solo una stima.",
+  "uvod": "L’atlante si basa su banche dati aperte compilate da linguisti di tutto il mondo. Qui si spiega da dove provengono i dati, che cosa è certo e che cosa è solo una stima.",
   "oddily": [
    {
     "h": "Che cosa c’è sul globo",
@@ -407,7 +407,7 @@
     "h": "Lingua o dialetto?",
     "p": [
      "Tra lingua e dialetto non c’è un confine netto, e spesso vi entrano la storia e la politica. L’atlante segue le decisioni di Glottolog. Per questo il bavarese ha un punto, mentre l’inglese australiano no – Glottolog lo considera una varietà dell’inglese. I dialetti sono elencati nella scheda della lingua, e cercandone uno si trova la sua lingua.",
-     "Serbo, croato, bosniaco e montenegrino sono facilmente comprensibili ai rispettivi parlanti e poggiano sulla stessa base dialettale, lo štokavo. Dal punto di vista linguistico sono varietà standard vicine di una lingua comune; ufficialmente e socialmente oggi sono lingue distinte. Glottolog li elenca come una sola lingua, il serbo-croato, che ha un punto sul globo. L’atlante ha anche il serbo e il croato come lingue distinte con un saluto, ma senza un punto proprio. L’hmong, al contrario, in Glottolog è costituito da più lingue e nell’atlante è una voce sola. Per questo l’elenco ha {n} voci e il globo {g} punti."
+     "Serbo, croato, bosniaco e montenegrino sono reciprocamente comprensibili con grande facilità e poggiano sulla stessa base dialettale, lo štokavo. Dal punto di vista linguistico sono varietà standard vicine di una lingua comune; ufficialmente e socialmente oggi sono lingue distinte. Glottolog li elenca come una sola lingua, il serbo-croato, che ha un punto sul globo. L’atlante ha anche il serbo e il croato come lingue distinte con un saluto, ma senza un punto proprio. L’hmong, al contrario, in Glottolog è costituito da più lingue e nell’atlante è una voce sola. Per questo l’elenco ha {n} voci e il globo {g} punti."
     ]
    },
    {
@@ -620,29 +620,30 @@
    {
     "h": "Lingue dell’antichità",
     "p": [
-     "Il medaglione Lingue antiche sotto il globo apre il menu delle civiltà; anche la ricerca le trova, per esempio “egypt”. Ogni voce apre una pagina sulla civiltà incentrata su lingua e scrittura: storia, esempi di segni, la storia della decifrazione, parole imparentate, grammatica, una cronologia, fotografie e bibliografia. Nella versione italiana queste pagine sono per ora in inglese.",
+     "Il medaglione Lingue antiche sotto il globo apre il menu delle civiltà; anche la ricerca le trova, per esempio “egypt”. Ogni voce apre una pagina sulla civiltà incentrata su lingua e scrittura: storia, esempi di segni, la storia della decifrazione, parole imparentate, grammatica, una cronologia, fotografie e bibliografia. Nel menu vengono prima due panoramiche: l’albero genealogico delle scritture (da dove viene ciascun alfabeto, con una tabella della parola “re” in venti scritture) e un glossario (abjad, abugida, determinativo, bustrofedico…). Sono pronte finora le pagine su Sumer e Akkad, Antico Egitto, Elam e Urartu, India antica, ittiti, Cina antica, fenici, ebrei e aramei, Grecia antica, celti, etruschi, Persia antica, Roma antica, armeni e georgiani, popoli germanici e rune, Aksum, Corea e hangul, Göktürk e scrittura dell’Orkhon, Giappone e kana, slavi e Grande Moravia, maya, aztechi e inca. Nella versione italiana queste pagine sono per ora in inglese.",
      "La pagina si apre sopra il globo; si chiude con la croce, il tasto Esc o un tocco fuori da essa. Il pulsante “‹ Lingue dell’antichità” in alto a sinistra torna all’elenco delle civiltà e la fine di ogni pagina rimanda alle altre. Si apre anche dalla scheda della lingua (per esempio dell’egiziano, del copto, dell’ittita o del luvio) e da link come thelanguageatlas.com/it/#egypt."
     ]
    },
    {
     "h": "Storie delle lingue",
     "p": [
-     "Il medaglione Storie delle lingue sotto il globo apre il menu delle storie: pagine tematiche nello stesso stile delle Lingue dell’antichità, raggruppate in Parole in viaggio, Viaggi delle lingue, Lingue nel tempo, Persone e lingue e Misteri. Anche queste pagine sono per ora in inglese.",
-     "Le pagine sul tè e sulle parole ceche hanno una sezione Viaggi delle parole sul globo con pulsanti per tè, caffè, zucchero, arancia, cioccolato, pomodoro, scacco matto, alcol, zero e cifra, shampoo, robot e dollaro. Il globo sorvola l’area attraversata dalla parola e gli archi si disegnano passo dopo passo dalla lingua d’origine; a ogni punto compaiono la forma della parola e la lingua. Un arco tratteggiato indica un percorso controverso. Il pannello in alto a destra (sotto il globo sul telefono) elenca i passaggi con date e note; un tocco su un passaggio apre la scheda della lingua. Si chiude con la croce, il tasto Esc o il pulsante Tutto il mondo."
+     "Il medaglione Storie delle lingue sotto il globo apre il menu delle storie: pagine tematiche nello stesso stile delle Lingue dell’antichità, raggruppate in Parole in viaggio, Viaggi delle lingue, Lingue nel tempo, Persone e lingue e Misteri. Sono pronte finora (in inglese): il tè e altre parole in viaggio (perché il mondo dice “cha” oppure “tè”), parole ceche nelle altre lingue (robot, dollaro, obice, pistola, polka – che cosa è documentato e che cosa è discusso), dal latino alle lingue romanze, come è nato il ceco standard, lingue che ritornano (gallese, maori, mannese, ebraico) e misteri linguistici (scritture indecifrate, lingue isolate e famiglie controverse).",
+     "Il pulsante Mostra sul globo nella pagina sul tè chiude la pagina e colora il globo con la mappa del WALS sull’origine della parola per tè. Anche la ricerca trova le storie (per esempio “robot”); i link sono del tipo thelanguageatlas.com/it/#tea.",
+     "Le pagine sul tè e sulle parole ceche hanno una sezione Viaggi delle parole sul globo con pulsanti per tè, caffè, zucchero, arancia, cioccolato, pomodoro, scacco matto, alcol, zero e cifra, shampoo, robot e dollaro. Il globo sorvola l’area attraversata dalla parola e gli archi si disegnano passo dopo passo dalla lingua d’origine; a ogni punto compaiono la forma della parola e la lingua. Un arco tratteggiato indica un percorso controverso. Il pannello in alto a destra (sotto il globo sul telefono) elenca i passaggi con date e note; un tocco su un passaggio apre la scheda della lingua. Riproduci di nuovo ripete l’animazione e gli altri pulsanti passano a un’altra parola. Si chiude con la croce, il tasto Esc o il pulsante Tutto il mondo; i link sono del tipo #cesta-caj."
     ]
    },
    {
     "h": "Viaggi delle lingue",
     "p": [
-     "I viaggi mostrano sul globo come una lingua si è sviluppata dalla sua protolingua fino a oggi: correnti colorate si diffondono sulla mappa tappa dopo tappa, le aree si riempiono e le tappe precedenti restano visibili in modo tenue come strati della storia. Le interpretazioni controverse sono tratteggiate. Ci sono i viaggi del ceco, del curdo, dell’ungherese, del romanì, del maori (con una deviazione verso il Madagascar), del turco, dell’inglese, del navajo, dello yiddish e del maltese. Il viaggio dell’alfabeto segue una scrittura invece di una lingua: come il disegno egizio di una testa di bue è diventato la lettera A attraverso fenici, greci e romani.",
-     "Un viaggio si apre dal gruppo Viaggi delle lingue nelle Storie delle lingue, dal pulsante nella scheda della lingua o da un link come thelanguageatlas.com/it/#journey-czech.",
+     "I viaggi mostrano sul globo come una lingua si è sviluppata dalla sua protolingua fino a oggi: correnti colorate si diffondono sulla mappa tappa dopo tappa, le aree si riempiono e le tappe precedenti restano visibili in modo tenue come strati della storia. Le interpretazioni controverse sono tratteggiate. Ci sono i viaggi del ceco, del curdo, dell’ungherese, del romanì, del maori (con una deviazione verso il Madagascar), del turco, dell’inglese, del navajo, dello yiddish e del maltese. Il viaggio dell’alfabeto segue una scrittura invece di una lingua: come il disegno egizio di una testa di bue è diventato la lettera A attraverso fenici, greci e romani; ogni tappa mostra sulla mappa la lettera della sua epoca. Si apre anche dalla legenda della mappa Scrittura e dalla scheda di una scrittura.",
+     "Un viaggio si apre dal gruppo Viaggi delle lingue nelle Storie delle lingue, dal pulsante nella scheda della lingua che porta il nome del viaggio, per esempio Il viaggio del ceco (scheda Curiosità), o da un link come thelanguageatlas.com/it/#journey-czech.",
      "Il pannello a destra (sotto il globo sul telefono) ha un pulsante di riproduzione e pausa, un cursore della cronologia e l’elenco delle tappe con date e testo; un tocco su una tappa la mostra per intero e mette in pausa. Le fonti sono elencate sotto le tappe. Un viaggio si chiude con la croce, il tasto Esc, il pulsante Tutto il mondo o selezionando un’altra lingua."
     ]
    },
    {
     "h": "Tastiera",
     "p": [
-     "Tab sposta tra i comandi. Un Tab entra nell’elenco delle lingue; i tasti freccia si spostano tra i riquadri, Home e Fine saltano all’inizio e alla fine, e Invio seleziona una lingua.",
+     "Il tasto Tab sposta il fuoco tra i comandi. Con un Tab si entra nell’elenco delle lingue; con i tasti freccia ci si sposta tra i riquadri, Home e Fine saltano all’inizio e alla fine, e Invio seleziona una lingua.",
      "I tasti + e − ingrandiscono e riducono il globo. Esc chiude una finestra, la scheda o un pannello."
     ]
    },
@@ -653,7 +654,7 @@
      "Calendario delle giornate delle lingue: i giorni dell’anno legati a una lingua (giornate delle lingue, feste nazionali, anniversari). Si apre al giorno più vicino; un clic su una lingua la mostra sul globo.",
      "Sui dati: le fonti (Glottolog, WALS, PHOIBLE, Wikidata, Unicode CLDR e altre), le loro versioni e licenze, e perché l’elenco ha più voci dei punti sul globo.",
      "Guida completa: questo testo.",
-     "Lingue con scheda dettagliata (solo sul sito web, per ora in inglese): tutte le 164 lingue in una pagina.",
+     "Lingue con scheda dettagliata (solo sul sito web, per ora in inglese): tutte le 164 lingue in una pagina. Ognuna si apre come una scheda; con le frecce si passa alla successiva.",
      "Contatti: commenti e correzioni a info@atlasjazyku.cz. Sotto si trovano le fonti dei dati e le loro licenze."
     ]
    },
@@ -799,7 +800,7 @@
   "metodika": [
    "I gradi seguono il criterio della trasmissione intergenerazionale del documento del gruppo di esperti UNESCO Language Vitality and Endangerment (2003). I nomi e le descrizioni seguono l’Atlas of the World’s Languages in Danger (Moseley 2010), che ha adottato la scala e rinominato due gradi (unsafe in vulnerable, definitively in definitely endangered).",
    "Glottolog assegna alla maggior parte delle lingue un Agglomerated Endangerment Status (AES), ricavato soprattutto da UNESCO, Ethnologue e dal Catalogue of Endangered Languages (ElCat). Ciascuno dei suoi gradi corrisponde esattamente a un grado UNESCO: not endangered = sicura, threatened = vulnerabile, shifting = decisamente in pericolo, moribund = gravemente in pericolo, nearly extinct = in pericolo critico, extinct = estinta.",
-   "Le valutazioni risalgono a anni diversi e le fonti talvolta non concordano, per cui il grado è un’indicazione più che una misura precisa. Tra le lingue estinte ci sono lingue note solo da documenti storici, come l’ittita e il sumerico, e il latino, che non ha parlanti nativi pur essendo ancora usato come seconda lingua (per esempio dalla Santa Sede). {n} lingue non hanno dati. I dati di Glottolog sono stati scaricati il {d}."
+   "Le valutazioni risalgono ad anni diversi e le fonti talvolta non concordano, per cui il grado è un’indicazione più che una misura precisa. Tra le lingue estinte ci sono lingue note solo da documenti storici, come l’ittita e il sumerico, e il latino, che non ha parlanti nativi pur essendo ancora usato come seconda lingua (per esempio dalla Santa Sede). {n} lingue non hanno dati. I dati di Glottolog sono stati scaricati il {d}."
   ],
   "zdroje": [
    "UNESCO Ad Hoc Expert Group on Endangered Languages (2003): Language Vitality and Endangerment. Paris: UNESCO.",
@@ -856,7 +857,7 @@
    ],
    [
     "nk",
-    "Niger-kordofaniana"
+    "Niger-congo"
    ],
    [
     "ost",
@@ -929,7 +930,7 @@
       {
        "h": "I nomi dei delfini",
        "p": [
-        "Il tursiope (Tursiops truncatus) ha un proprio cosiddetto fischio firma, diverso dai fischi degli altri (Caldwell e Caldwell 1965). Si sviluppa nei primi mesi di vita e spesso resta all’animale per tutta la vita (Janik e Sayigh 2013).",
+        "Il tursiope (Tursiops truncatus) ha un proprio cosiddetto fischio firma, diverso dai fischi degli altri (Caldwell e Caldwell 1965). Si sviluppa nei primi mesi di vita e spesso lo accompagna per tutta la vita (Janik e Sayigh 2013).",
         "I delfini talvolta copiano il fischio firma di un altro delfino, per lo più quello di un compagno stretto da cui sono stati separati (King et al. 2013). I delfini rispondono alla riproduzione di una copia del proprio fischio, ma non ai fischi degli altri (King e Janik 2013). Funziona quindi un po’ come un nome.",
         "I delfini ricordano i fischi di ex compagni anche dopo più di vent’anni di separazione (Bruck 2013)."
        ]
@@ -943,7 +944,7 @@
       {
        "h": "Intelligenza artificiale",
        "p": [
-        "Il Wild Dolphin Project di Denise Herzing registra dal 1985 le stenelle maculate atlantiche (Stenella frontalis) alle Bahamas. Nel 2025 Google, insieme al progetto e al Georgia Tech, ha presentato un modello di IA chiamato DolphinGemma, che apprende la struttura dei suoni dei delfini e dovrebbe aiutare a trovare schemi ricorrenti nelle registrazioni. Non sono ancora stati pubblicati risultati sottoposti a revisione (settembre 2026)."
+        "Il Wild Dolphin Project di Denise Herzing registra dal 1985 le stenelle maculate atlantiche (Stenella frontalis) alle Bahamas. Nel 2025 Google, insieme al progetto e al Georgia Tech, ha presentato un modello di IA chiamato DolphinGemma, che apprende la struttura dei suoni dei delfini e dovrebbe aiutare a trovare schemi ricorrenti nelle registrazioni. Non sono ancora stati pubblicati risultati sottoposti a revisione (a settembre 2026)."
        ]
       },
       {
@@ -1036,7 +1037,7 @@
       {
        "h": "Etemenanki",
        "p": [
-        "Il modello della torre fu molto probabilmente la ziqqurat Etemenanki, in sumerico “casa del fondamento del cielo e della terra”, accanto al tempio di Marduk, l’Esagila, a Babilonia. Secondo le sue stesse iscrizioni, ne completò il restauro Nabucodonosor II (regno 605–562 a.C.), all’epoca in cui parte del popolo di Giuda viveva in esilio a Babilonia.",
+        "Il modello della torre fu molto probabilmente la ziqqurat Etemenanki, in sumerico “casa del fondamento del cielo e della terra”, accanto al tempio di Marduk, l’Esagila, a Babilonia. Secondo le sue stesse iscrizioni, ne completò il restauro Nabucodonosor II (regnò dal 605 al 562 a.C.), all’epoca in cui parte del popolo di Giuda viveva in esilio a Babilonia.",
         "La cosiddetta tavoletta dell’Esagila, una copia cuneiforme di un testo più antico fatta a Uruk nel 229 a.C. (in epoca seleucide), indica una base quadrata di circa 91 metri per lato. Della torre oggi restano solo le fondamenta."
        ]
       }
@@ -1049,7 +1050,7 @@
        "h": "Perché tante lingue",
        "p": [
         "Tra le {n} lingue dell’atlante ci sono {r} famiglie linguistiche e {i} lingue isolate, la cui parentela con altre lingue non è stata dimostrata.",
-        "Che tutte le lingue risalgano a un unico antenato comune non si può dimostrare. Il metodo comparativo, con cui i linguisti ricostruiscono le protolingue, arriva indietro, secondo stime comuni, al massimo a circa 6000-10 000 anni fa, ma gli esseri umani parlano da molto più tempo. La diversità linguistica non è nata tutta in una volta: le lingue cambiano a ogni generazione, e i gruppi che smettono di parlarsi smettono di capirsi nel giro di secoli."
+        "Che tutte le lingue risalgano a un unico antenato comune non si può dimostrare. Il metodo comparativo, con cui i linguisti ricostruiscono le protolingue, risale, secondo le stime correnti, al massimo a circa 6000–10 000 anni fa, ma gli esseri umani parlano da molto più tempo. La diversità linguistica non è nata tutta in una volta: le lingue cambiano a ogni generazione, e i gruppi che smettono di parlarsi smettono di capirsi nel giro di secoli."
        ]
       }
      ]
