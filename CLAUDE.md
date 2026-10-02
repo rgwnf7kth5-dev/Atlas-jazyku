@@ -69,6 +69,7 @@ v build.mjs, `DOMENY.it` a `korenVerze` v app.js). V záhlaví je místo odkazu 
   kamenné kostely ~800, Genji „figlio dell’imperatore“, ge’ez z nedoložené mateřské řeči, „alfabeto albano“ = kavkazské). Názvosloví:
   české národní obrození = **„Rinascita nazionale (ceca)“, ne „Risorgimento“** (to je italské sjednocení); stupně UNESCO jako v rozhraní
   („decisamente in pericolo“); „Lungo Computo“. Validace hlídá u stránek s `it` stejné oddíly jako `en`, `adresa.it` a popisky fotek.
+- **Artefakt s italštinou má 15,2 MB (limit 16 MB).** Další jazyk (DE, FR) se do jednoho souboru už nevejde – pak by artefakt musel nést jen svůj jazyk nebo menší fotky civilizací.
 - **Italské statické stránky** (`scripts/stranky.mjs` je od 2. 10. 2026 pro libovolné jazyky `JAZYKY_WEBU`): `/it/lingua/<nome>/`,
   `/it/lingue/`, `/it/sui-dati/`, `/it/giornate-delle-lingue/`, `/it/guida/`, `/it/vitalita/`, `/it/antichita/<…>/`, `/it/storie/<…>/`;
   záhlaví má přepínač CS · EN · IT, hreflang všech tří verzí, sitemapa anglické domény obsahuje i `/it/`. Build stránkám předává data
