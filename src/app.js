@@ -283,7 +283,7 @@ function jazykDne(){
   const c = smerCesty(za, na);
   const km = c.km < 30 ? 0 : c.km < 1000 ? Math.round(c.km / 10) * 10 : Math.round(c.km / 50) * 50;
   /* uprostřed věty česky malým písmenem („u jazyka čeština“); vlastní jména jako Tok Pisin nechat */
-  const jm = T.lang === "cs" && /ina( |$)|jazyk/.test(pred.n) ? pred.n.charAt(0).toLowerCase() + pred.n.slice(1) : pred.n;
+  const jm = (T.lang === "cs" && /ina( |$)|jazyk/.test(pred.n)) || (T.lang === "it" && pred.id !== "tpi") ? pred.n.charAt(0).toLowerCase() + pred.n.slice(1) : pred.n;   // italsky názvy jazyků malým
   return {j: j, duvod: km ? t("cestaDuvod", {a: jm, km: cislo(km), smer: T.svetoveStrany[c.smer]}) : t("cestaVedle", {a: jm})};
 }
 let razeni = "rodiny";

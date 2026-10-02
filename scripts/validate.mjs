@@ -89,6 +89,11 @@ if (pd.uzly.length !== pd.nad.length) chyby.push("data/podrobnosti.json: strom p
     if (!fs.existsSync(path.join(KOREN, "static/starovek", c.id, "malba.jpg"))) chyby.push(`${co}: chybí static/starovek/${c.id}/malba.jpg (náhled ilustrace)`);
     const typy = l => (c[l].oddily || []).map(b => b.typ).join(",");
     if (typy("cs") !== typy("en")) chyby.push(`${co}: ${c.id} má v češtině a angličtině jiné oddíly`);
+    if (c.it) {   // italský překlad (od 2. 10. 2026): stejné oddíly jako anglicky, adresa a popisky fotek
+      if (typy("it") !== typy("en")) chyby.push(`${co}: ${c.id} má v italštině jiné oddíly než v angličtině`);
+      if (!c.adresa.it) chyby.push(`${co}: ${c.id} má italský text, ale ne adresu`);
+      for (const [k, f] of Object.entries(c.fotky || {})) if (!f.it) chyby.push(`${co}: fotka ${k} nemá italský popisek`);
+    }
     for (const l of ["cs", "en"]) for (const b of c[l].oddily) for (const f of [].concat(b.f || [])) if (!c.fotky[f]) chyby.push(`${co}: ${c.id}/${l} odkazuje na neznámou fotku „${f}“`);
     if (c === st.civilizace[0]) { const css = fs.readFileSync(path.join(KOREN, "src/starovek.css"), "utf8");
       for (const t of fs.readFileSync(path.join(KOREN, "src/starovek.js"), "utf8").matchAll(/\[\s*"(civ-[a-z]+)", "[^"]*", "Noto/g)) if (!css.includes("." + t[1] + "{")) chyby.push(`src/starovek.css: písmo ${t[1]} je v PISMA, ale nemá pravidlo ve starovek.css (bez pravidla ve starovek.css se nenačte)`); }
