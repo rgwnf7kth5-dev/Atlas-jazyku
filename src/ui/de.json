@@ -48,7 +48,7 @@
   "aiStitek": "Frage an die KI",
   "aiNabidka": "Diese Frage beantwortet eine KI anhand der Daten des Atlas.",
   "aiZeptat": "KI fragen",
-  "aiPremyslim": "Denkt nach…",
+  "aiKrokCte": "Ich lese die Frage", "aiKrokData": "Ich suche in den Daten des Atlas", "aiKrokOdpoved": "Ich formuliere die Antwort", "aiCas": "{s} s · das kann einen Moment dauern", "aiPremyslim": "Denkt nach…",
   "aiPozn": "Antwort von einer KI (Claude) anhand der Daten des Atlas verfasst; sie kann fehlerhaft sein.",
   "aiVypnuto": "Fragen an die KI sind noch nicht eingeschaltet.",
   "aiLimit": "Zu viele Fragen auf einmal, bitte versuchen Sie es in Kürze erneut.",

@@ -694,11 +694,12 @@ function provedAkciAI(a){
   else if (a.typ === "srovnani") { if (a.a.j) vyber(a.a.j.id); else vyberBod(a.a.i); cekaNaDruhy = jazykZVyberu(); dokonciSrovnani(a.b); }
 }
 /* jedna otázka = smyčka přes /api/zeptej, nejvýš 4 kola nástrojů; vrací {text, akce, model, spotreba} */
-async function zeptejSeAI(otazka, model){
+async function zeptejSeAI(otazka, model, prubeh){
   const zpravy = [{role: "user", content: otazka}];
   let akce = null, spotreba = {vstup: 0, cache: 0, vystup: 0}, posl = null;
   for (let kolo = 0; kolo < 5; kolo++) {
     let r, d;
+    if (prubeh) prubeh(kolo ? "odpoved" : "cte");   // stav pro kartu: čte otázku → hledá v datech → skládá odpověď
     for (let pokus = 0; pokus < 3; pokus++) {      // limit API (429 od Anthropicu) bývá krátký: chvíli počkat a zkusit znovu
       r = await fetch("/api/zeptej", {method: "POST", headers: {"content-type": "application/json"}, body: JSON.stringify({zpravy: zpravy, model: model})});
       d = await r.json().catch(function(){ return {chyba: "json"}; });
@@ -711,6 +712,7 @@ async function zeptejSeAI(otazka, model){
     const pouziti = d.obsah.filter(function(b){ return b.type === "tool_use"; });
     if (d.stop !== "tool_use" || !pouziti.length) break;
     if (kolo === 4) break;
+    if (prubeh) prubeh("data");
     zpravy.push({role: "user", content: pouziti.map(function(b){
       const v = naradiAI(b.name, b.input || {});
       if (v.akce) akce = v.akce;
@@ -726,16 +728,32 @@ function kartaAI(otazka){
   el.appendChild(prvek("span", "do-popis", U.aiNabidka));
   const b = prvek("button", "do-akce", U.aiZeptat); b.type = "button";
   b.insertAdjacentHTML("beforeend", '<svg aria-hidden="true"><use href="#i-dal"/></svg>');
+  /* čekání na AI musí být vidět (uživatel 3. 10. 2026: „když přemýšlí AI, věci neznalý ani nepozná“): karta se rozsvítí, točí se
+     hvězdička, text říká, co AI právě dělá, běží sekundy a pod tím probleskují řádky budoucí odpovědi */
   const zeptej = function(){
-    b.disabled = true; b.textContent = U.aiPremyslim;
-    zeptejSeAI(otazka).then(function(v){
+    if (el.classList.contains("ceka")) return;
+    b.hidden = true;
+    Array.prototype.forEach.call(el.querySelectorAll(".do-popis, .do-zdroj"), function(x){ x.remove(); });
+    const ceka = prvek("div", "do-ceka"), hl = prvek("div", "do-ceka-hl"), stav = prvek("span", "do-ceka-stav", U.aiKrokCte), cas = prvek("span", "do-ceka-cas", "");
+    hl.appendChild(prvek("span", "do-ceka-hvezda", "✦")); hl.appendChild(stav);
+    const tecky = prvek("span", "do-ceka-tecky"); tecky.setAttribute("aria-hidden", "true"); tecky.innerHTML = "<i></i><i></i><i></i>"; hl.appendChild(tecky);
+    ceka.appendChild(hl);
+    ceka.appendChild(prvek("q", "do-ceka-otazka", otazka));
+    const kostra = prvek("div", "do-ceka-kostra"); kostra.setAttribute("aria-hidden", "true"); kostra.innerHTML = "<i></i><i></i><i></i>"; ceka.appendChild(kostra);
+    ceka.appendChild(cas);
+    el.appendChild(ceka); el.classList.add("ceka"); el.setAttribute("aria-busy", "true");
+    stav.setAttribute("role", "status"); stav.setAttribute("aria-live", "polite");
+    const t0 = Date.now(), hodiny = setInterval(function(){ cas.textContent = (U.aiCas || "{s} s").replace("{s}", Math.round((Date.now() - t0) / 1000)); }, 1000);
+    const konec = function(){ clearInterval(hodiny); el.classList.remove("ceka"); el.removeAttribute("aria-busy"); ceka.remove(); };
+    zeptejSeAI(otazka, undefined, function(f){ stav.textContent = {cte: U.aiKrokCte, data: U.aiKrokData, odpoved: U.aiKrokOdpoved}[f] || U.aiPremyslim; }).then(function(v){
+      konec();
       el.textContent = "";
       el.appendChild(prvek("span", "do-stitek", "✦ " + U.aiStitek));
       v.text.split(/\n+/).forEach(function(odst){ el.appendChild(prvek("p", "do-ai-text", odst)); });
       el.appendChild(prvek("small", "do-zdroj", U.aiPozn));
       provedAkciAI(v.akce);
     }, function(e){
-      b.disabled = false; b.textContent = U.aiZeptat;
+      konec(); b.hidden = false;
       el.appendChild(prvek("small", "do-zdroj", /bez-klice|klic/.test(e.message) ? U.aiVypnuto : /limit/.test(e.message) ? U.aiLimit : U.aiChyba));
     });
   };

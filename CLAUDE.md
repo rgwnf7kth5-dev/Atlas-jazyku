@@ -534,6 +534,9 @@ jako italština, přepínač **CS · EN · IT · DE**. Název **Atlas der Sprach
   z `DOTAZ_VYPLN`), jinak jde AI – pravidla vytrhávala kousky („budu se stěhovat do Bernu… jaký jazyk tam“ → větev Taa ze slova
   „tam“, „Je rumunština slovanský jazyk?“ → větev Slovanská; dřívější hranice 4 slova nestačila); krátké názvy (Taa, Čad) se porovnávají jen celé. Pokyn AI dovoluje u měst a krajů (atlas
   je nemá) přidat obecně známý fakt, ale čísla, data a žebříčky jen z nástrojů;
+  **Čekání na AI je vidět** (3. 10. 2026, uživatel: „když přemýšlí AI, věci neznalý ani nepozná“): karta dostane třídu `ceka` – podbarvení
+  a záře v barvě akcentu, běžící barevný okraj, točící se hvězdička, stav podle průběhu (`prubeh` v `zeptejSeAI`: `aiKrokCte` → `aiKrokData`
+  → `aiKrokOdpoved`), otázka v uvozovkách, probleskující řádky budoucí odpovědi a běžící sekundy (`aiCas`); `prefers-reduced-motion` bez pohybu.
   V poli hledání je krátký text „Hledejte, nebo se zeptejte…“ (dlouhý se ořezával) a pod polem řádek „✦ Zkuste: <otázka>“
   (`#hledej-tip`, `obnovTipHledani`; náhodný z `hledejPriklady`, bez AI krátké dotazy) – klepnutí otázku vloží a položí
   (uživatel 1. 10. 2026: „nikdo nepochopí, že se lze ptát“); po odpovědi se provede akce posledního nástroje (`provedAkciAI`). Obsah odpovědí AI se posílá zpět beze změny

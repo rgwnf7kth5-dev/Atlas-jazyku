@@ -48,7 +48,7 @@
   "aiStitek": "Domanda all’IA",
   "aiNabidka": "A questa domanda risponderà un’intelligenza artificiale in base ai dati dell’atlante.",
   "aiZeptat": "Chiedi all’IA",
-  "aiPremyslim": "Elaborazione…",
+  "aiKrokCte": "Leggo la domanda", "aiKrokData": "Cerco nei dati dell’atlante", "aiKrokOdpoved": "Compongo la risposta", "aiCas": "{s} s · può richiedere qualche istante", "aiPremyslim": "Elaborazione…",
   "aiPozn": "Risposta scritta da un’IA (Claude) in base ai dati dell’atlante; può contenere errori.",
   "aiVypnuto": "Le domande all’IA non sono ancora attive.",
   "aiLimit": "Troppe domande in poco tempo, riprovare tra poco.",

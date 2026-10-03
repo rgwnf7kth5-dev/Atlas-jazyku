@@ -1429,6 +1429,33 @@ dialog.ai-test td small{display:block; margin-top:4px; color:var(--text3)}
   html[lang="it"] .domu .znak,html[lang="de"] .domu .znak{width:36px; height:36px}
   html[lang="it"] .domu,html[lang="de"] .domu{gap:8px}
 }
+/* AI pracuje (3. 10. 2026, uživatel: „když přemýšlí AI, věci neznalý ani nepozná“): karta se rozsvítí, okraj běží, hvězdička se točí,
+   stav říká, co AI dělá, a probleskují řádky budoucí odpovědi; bez pohybu (prefers-reduced-motion) zůstane barva a text */
+.dotaz-ai.ceka{border-color:color-mix(in srgb, var(--akcent) 45%, var(--linka)); border-top-color:transparent; position:relative; overflow:hidden;
+  background:linear-gradient(180deg, color-mix(in srgb, var(--akcent) 9%, var(--listek, var(--sklo))), var(--listek, var(--sklo)) 70%);
+  box-shadow:0 0 0 3px color-mix(in srgb, var(--akcent) 14%, transparent), 0 8px 24px -12px color-mix(in srgb, var(--akcent) 60%, transparent)}
+.dotaz-ai.ceka::before{content:""; position:absolute; left:0; right:0; top:0; height:3px;
+  background:linear-gradient(90deg, var(--akcent), #9055B0, var(--cyan), var(--akcent)); background-size:300% 100%; animation:ai-okraj 1.6s linear infinite}
+.do-ceka{display:flex; flex-direction:column; gap:8px; align-self:stretch; margin-top:4px}
+.do-ceka-hl{display:flex; align-items:center; gap:9px; font:600 15.5px/1.3 inherit; color:var(--text)}
+.do-ceka-hvezda{display:inline-grid; place-items:center; width:28px; height:28px; border-radius:50%; flex:none;
+  background:var(--akcent); color:var(--na-akcent); font-size:15px; animation:ai-hvezda 2.4s ease-in-out infinite}
+.do-ceka-tecky{display:inline-flex; gap:3px; margin-left:-4px; align-self:flex-end; padding-bottom:5px}
+.do-ceka-tecky i{width:4px; height:4px; border-radius:50%; background:var(--akcent); animation:ai-tecka 1.2s ease-in-out infinite}
+.do-ceka-tecky i:nth-child(2){animation-delay:.15s} .do-ceka-tecky i:nth-child(3){animation-delay:.3s}
+.do-ceka-otazka{font-style:italic; font-size:13.5px; line-height:1.45; color:var(--text2); quotes:"„" "“"}
+html[lang="en"] .do-ceka-otazka{quotes:"“" "”"} html[lang="it"] .do-ceka-otazka{quotes:"«" "»"}
+.do-ceka-kostra{display:flex; flex-direction:column; gap:7px; margin-top:2px}
+.do-ceka-kostra i{display:block; height:10px; border-radius:5px; width:100%;
+  background:linear-gradient(90deg, color-mix(in srgb, var(--text3) 18%, transparent) 30%, color-mix(in srgb, var(--akcent) 30%, transparent) 50%, color-mix(in srgb, var(--text3) 18%, transparent) 70%);
+  background-size:300% 100%; animation:ai-kostra 1.5s ease-in-out infinite}
+.do-ceka-kostra i:nth-child(2){width:88%; animation-delay:.12s} .do-ceka-kostra i:nth-child(3){width:62%; animation-delay:.24s}
+.do-ceka-cas{font-size:12px; color:var(--text3); font-variant-numeric:tabular-nums; min-height:1em}
+@keyframes ai-okraj{to{background-position:-300% 0}}
+@keyframes ai-hvezda{0%{transform:rotate(0) scale(1)} 50%{transform:rotate(180deg) scale(1.12)} 100%{transform:rotate(360deg) scale(1)}}
+@keyframes ai-tecka{0%,80%,100%{opacity:.25; transform:translateY(0)} 40%{opacity:1; transform:translateY(-3px)}}
+@keyframes ai-kostra{0%{background-position:100% 0} 100%{background-position:-200% 0}}
+@media (prefers-reduced-motion:reduce){ .dotaz-ai.ceka::before, .do-ceka-hvezda, .do-ceka-tecky i, .do-ceka-kostra i{animation:none} }
 
 /* ---------- jazyky starověku: stránka o civilizaci jako list ilustrované encyklopedie (okno nad glóbem i web) ----------
    Papír a inkoust jako u akvarelů na kartách; v tmavém vzhledu sépiová noc. Barvy jen tady, přes --civ-*. */
@@ -1948,6 +1975,6 @@ dialog.ai-test td small{display:block; margin-top:4px; color:var(--text3)}
  <dialog class="civ-okno" id="civ-okno" aria-labelledby="civ-nadpis"></dialog>
 </div>
 
-<script src="../js/atlas.eb9f9d78c7.js"></script>
+<script src="../js/atlas.ac58f068a1.js"></script>
 </body>
 </html>
