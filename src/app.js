@@ -43,7 +43,7 @@ const R = Math.PI / 180;
 const $ = function(id){ return document.getElementById(id); };
 const bezPohybu = window.matchMedia("(prefers-reduced-motion: reduce)");
 const nazevZeme = function(en){ return STATY[en] || en; };
-const bezDiakritiky = function(s){ return s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, ""); };
+const bezDiakritiky = function(s){ return s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/ß/g, "ss"); };   // ß kvůli němčině (größte → grosste)
 const cislo = function(n, des){
   return n.toLocaleString(T.locale, {maximumFractionDigits: des || 0, minimumFractionDigits: des || 0});
 };
@@ -557,7 +557,7 @@ function bodyDotazu(d){
    (naradiAI). Po odpovědi se provede akce posledního nástroje (glóbus, karta, srovnání). Zatím skryté: zapne se adresou
    #ai (pamatuje se, #ai-vyp vypne), porovnání modelů je #ai-test. Jen web, ne artefakt ani soubor z disku. */
 const AI_MOZNE = !ARTEFAKT && /^https?:$/.test(location.protocol);
-const SLOZITA_OTAZKA = /(nejvic|nejmin|nejvets|nejmens|kolik|ohrozen|vymrel|probouz|proc |proc$|jak |rozdil|spolecn|nareci|alespon|vic nez|mene nez|most|least|largest|smallest|how many|why|endangered|extinct|dialect|common|more than|at least|\d)/;
+const SLOZITA_OTAZKA = /(nejvic|nejmin|nejvets|nejmens|kolik|ohrozen|vymrel|probouz|proc |proc$|jak |rozdil|spolecn|nareci|alespon|vic nez|mene nez|most|least|largest|smallest|how many|why|endangered|extinct|dialect|common|more than|at least|piu |meno |quant|perche|pericolo|estint|comune|differenz|dialett|almeno|meiste|wenigste|grosst|kleinst|wie viel|warum|bedroht|gefahrd|ausgestorb|gemeinsam|unterschied|dialekt|mindestens|mehr als|weniger als|\d)/;   // i italsky a německy
 let aiZap = false;
 aiZap = AI_MOZNE;                               // od 1. 10. 2026 pro všechny; #ai-vyp vypne jen pro sebe
 try { if (localStorage.getItem("atlas-ai") === "0") aiZap = false; } catch (e) {}
@@ -853,7 +853,8 @@ function postavPolici(filtr){
   let vymNalez = 0;
   if (hledane.length >= 3) {                 /* vymyšlené jazyky jen při hledání, zvlášť a jinak vypadají */
     const nalez = VYMYSLENE.jazyky.filter(function(v){
-      return bezDiakritiky([v.cs.nazev, v.en.nazev, v.domaci || "", v.pozdrav, v.autor, v.cs.hledat, v.en.hledat, v.cs.dilo, v.en.dilo].join(" ")).indexOf(hledane) !== -1;
+      return bezDiakritiky([v.cs.nazev, v.en.nazev, v.domaci || "", v.pozdrav, v.autor, v.cs.hledat, v.en.hledat, v.cs.dilo, v.en.dilo]
+        .concat(DALSI_JAZYKY.map(function(l){ return v[l] ? [v[l].nazev, v[l].hledat || "", v[l].dilo || ""].join(" ") : ""; })).join(" ")).indexOf(hledane) !== -1;   // i italsky a německy („Elben“)
     });
     vymNalez = nalez.length;
     if (nalez.length) {

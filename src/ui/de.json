@@ -69,7 +69,7 @@
  "hledejPriklady": [
   "Welche Sprache wird in Bern gesprochen?",
   "Welche Sprache hat die meisten Dialekte?",
-  "Welche gefährdeten Sprachen gibt es in Mexiko?",
+  "Welche bedrohten Sprachen gibt es in Mexiko?",
   "Was haben Ungarisch und Finnisch gemeinsam?",
   "Welches Land hat die meisten Sprachen?",
   "In welcher Schrift wird Georgisch geschrieben?",
@@ -307,10 +307,10 @@
  "vitalitaPopis": "Sprachen nach dem Grad ihrer Gefährdung anzeigen (UNESCO-Skala)",
  "vitalitaNadpis": "Vitalität der Sprachen · UNESCO-Skala",
  "vitalitaVse": "Alle",
- "vitalitaOhrozene": "Nur gefährdete",
+ "vitalitaOhrozene": "Nur bedrohte",
  "vitalitaBezUdaje": "Keine Daten",
  "vitalitaZavrit": "Zurück",
- "nahledPopis": "Ein mit Lichtern übersäter Globus – jedes ist eine der Sprachen der Welt",
+ "nahledPopis": "Ein mit Lichtern übersäter Globus – jedes Licht ist eine der Sprachen der Welt",
  "zemeRejstrik": "{n} im Weltregister – auf dem Globus hervorgehoben",
  "zemeAtlas": "Sprachen mit ausführlichem Steckbrief:",
  "sdiletOdkaz": "Link zu dieser Sprache kopieren",
@@ -588,7 +588,7 @@
     "p": [
      "Die runden Schaltflächen unter dem Globus (auf dem Smartphone in zwei Reihen) öffnen die Hauptbereiche des Atlas: Sprachen der Antike, Geschichten der Sprachen, Stammbaum, Karten, Vitalität und Einstellungen. Zufällige Sprache befindet sich im Kopf der Sprachenliste neben der Zahl der Sprachen und öffnet den Steckbrief einer zufällig ausgewählten Sprache.",
      "Stammbaum zeigt den fächerförmigen Baum einer Sprachfamilie: bei ausgewählter Sprache deren Familie, sonst die im Menü oben gewählte Familie. Ziehen verschiebt, Mausrad oder zwei Finger zoomen, ein Klick auf einen Zweig stellt ihn in den Mittelpunkt, ein Klick auf eine Sprache wählt sie aus. Die Schaltfläche Kreisübersicht bietet eine andere Ansicht aller Familien zugleich: Die Breite eines Segments entspricht der Zahl der Sprachen; ein Klick auf ein Segment oder eine Zeile der Liste führt tiefer, ein Klick auf die Kreismitte wieder nach oben. Familien mit weniger als 25 Sprachen stehen unter Kleinere Familien; isolierte Sprachen, Gebärdensprachen, künstliche Sprachen und Pidgins unter Außerhalb von Familien. Zurück zum Baum oder Stammbaum öffnen führt zum Fächer zurück.",
-     "Vitalität öffnet eine Seite zur Gefährdung von Sprachen: die Zahl der Sprachen auf jeder Stufe der UNESCO-Skala, die Aufschlüsselung nach Weltregion und nach den fünfzehn größten Sprachfamilien (mit Link zum Stammbaum), gefährdete Sprachen im Atlas, wiedererweckte Sprachen sowie die Methode mit Quellen. Von dort aus lassen sich Globus und Stammbaum nach Vitalität einfärben – der Baum zeigt dann, welche Zweige einer Familie gefährdet oder ausgestorben sind –, und man kann ankreuzen, welche Stufen sichtbar bleiben (ein Filter). Solange die Farben eingeschaltet sind, steht unter dem Globus eine Legende; ein Klick darauf öffnet die Seite erneut. Die Seite öffnet sich auch über einen Link im Steckbrief der Sprache und über die Adresse #vitality.",
+     "Vitalität öffnet eine Seite zur Gefährdung von Sprachen: die Zahl der Sprachen auf jeder Stufe der UNESCO-Skala, die Aufschlüsselung nach Weltregion und nach den fünfzehn größten Sprachfamilien (mit Link zum Stammbaum), bedrohte Sprachen im Atlas, wiedererweckte Sprachen sowie die Methode mit Quellen. Von dort aus lassen sich Globus und Stammbaum nach Vitalität einfärben – der Baum zeigt dann, welche Zweige einer Familie bedroht oder ausgestorben sind –, und man kann ankreuzen, welche Stufen sichtbar bleiben (ein Filter). Solange die Farben eingeschaltet sind, steht unter dem Globus eine Legende; ein Klick darauf öffnet die Seite erneut. Die Seite öffnet sich auch über einen Link im Steckbrief der Sprache und über die Adresse #vitality.",
      "Karten öffnet eine Übersicht aller Farbkarten mit Vorschaubildern: Schrift, Vitalität und 24 typologische Merkmale aus WALS. Die Wahl einer Karte schließt das Fenster und färbt den Globus ein.",
      "Einstellungen: automatische Drehung, Namen der Sprachen und Gebärdensprachen (alle, keine oder nur diese).",
      "Vergrößern und Verkleinern (+ und −) sowie die Schaltfläche Ganze Welt befinden sich unauffällig oben rechts am Globus unter dem Fragezeichen der Hilfe; auf dem Smartphone wird mit zwei Fingern gezoomt."
@@ -605,7 +605,7 @@
     "h": "Karte der Schriften",
     "p": [
      "Die Karte Schrift (im Fenster Karten) färbt die Sprachen nach ihrer Hauptschrift ein: lateinische, kyrillische und arabische Schrift, brahmische Schriften (Indien, Südostasien, Tibet), chinesische Schriftzeichen mit Kana und Bopomofo sowie andere Schriften. Die Legende unten rechts nennt die Zahl der Sprachen; ein Tippen auf eine Gruppe hebt nur diese hervor.",
-     "Die Schriftenkarte zeigt außerdem die Gebiete von 36 lebenden Schriften und ihre Namen mit einer Probe in der Schrift selbst (Abc, Абв, अआइ…). Ein Tippen auf einen Namen oder ein farbiges Gebiet öffnet den Steckbrief der Schrift (bei hervorgehobener Gruppe nur Schriften daraus): Typ (Alphabet, Abdschad, Abugida, Silbenschrift, logografisch), Schreibrichtung, eine kurze Anmerkung zur Herkunft, die Sprachen des Atlas, die in ihr geschrieben werden, und die Länder, in denen sie eine Amtssprache schreibt; die Schaltfläche Sprache an dieser Stelle öffnet die angetippte Sprache. Auch ein Link wie thelanguageatlas.com/#pismo-latn öffnet den Steckbrief.",
+     "Die Schriftenkarte zeigt außerdem die Gebiete von 36 lebenden Schriften und ihre Namen mit einer Probe in der Schrift selbst (Abc, Абв, अआइ…). Ein Tippen auf einen Namen oder ein farbiges Gebiet öffnet den Steckbrief der Schrift (bei hervorgehobener Gruppe nur Schriften daraus): Typ (Alphabet, Abdschad, Abugida, Silbenschrift, logografisch), Schreibrichtung, eine kurze Anmerkung zur Herkunft, die Sprachen des Atlas, die in ihr geschrieben werden, und die Länder, in denen sie eine Amtssprache schreibt; die Schaltfläche Sprache an dieser Stelle öffnet die angetippte Sprache. Auch ein Link wie thelanguageatlas.com/de/#pismo-latn öffnet den Steckbrief.",
      "Die Daten stammen aus Unicode CLDR. Für Sprachen, zu denen CLDR ausführliche Daten führt, ist die Schrift belegt; für die übrigen ist sie eine Schätzung von CLDR (die Schrift, in der die Sprache geschrieben wird, sofern sie überhaupt geschrieben wird), und der Steckbrief der Sprache kennzeichnet sie als solche. Schriftenkarte und Typologiekarte werden nicht gleichzeitig angezeigt."
     ]
    },
@@ -618,23 +618,23 @@
    {
     "h": "Sprachen der Antike",
     "p": [
-     "Das Medaillon Sprachen der Antike unter dem Globus öffnet das Menü der Kulturen; auch die Suche findet sie, zum Beispiel „Ägypten“. Jeder Eintrag öffnet eine Seite zu einer Kultur mit Schwerpunkt auf Sprache und Schrift: Geschichte, Schriftzeichenbeispiele, die Geschichte der Entzifferung, verwandte Wörter, Grammatik, eine Zeitleiste, Fotografien und Literatur. Am Anfang des Menüs stehen zwei Übersichten: der Stammbaum der Schriften (woher jedes Alphabet stammt, mit einer Tabelle des Wortes „König“ in zwanzig Schriften) und ein Glossar der Fachbegriffe (Abdschad, Abugida, Determinativ, Bustrophedon …). Fertig sind bisher Seiten zu Sumer und Akkad, dem Alten Ägypten, Elam und Urartu, dem Alten Indien, den Hethitern, dem Alten China, den Phöniziern, den Hebräern und Aramäern, dem antiken Griechenland, den Kelten, den Etruskern, dem Alten Persien, dem antiken Rom, den Armeniern und Georgiern, den Germanen und Runen, Aksum, Korea und Hangul, den Göktürken und der Orchon-Schrift, Japan und Kana, den Slawen und Großmähren, den Maya, den Azteken und den Inka.",
-     "Die Seite öffnet sich über dem Globus; geschlossen wird sie mit dem Kreuz, der Escape-Taste oder durch Tippen außerhalb der Seite. Die Schaltfläche „‹ Sprachen der Antike“ oben links führt zur Liste der Kulturen zurück, und am Ende jeder Seite stehen Links zu den anderen. Die Schaltflächen im Abschnitt über die Sprachen auf dem Globus zeigen die betreffenden ausgestorbenen Sprachen auf dem Globus. Die Seite lässt sich auch aus dem Steckbrief einer Sprache öffnen (etwa des Ägyptischen, Koptischen, Hethitischen oder Luwischen) sowie über die Links thelanguageatlas.com/#egypt und #hittites; auf der Website ist sie außerdem eine eigene Seite."
+     "Das Medaillon Sprachen der Antike unter dem Globus öffnet das Menü der Kulturen; auch die Suche findet sie, zum Beispiel „Ägypten“. Jeder Eintrag öffnet eine Seite zu einer Kultur mit Schwerpunkt auf Sprache und Schrift: Geschichte, Schriftzeichenbeispiele, die Geschichte der Entzifferung, verwandte Wörter, Grammatik, eine Zeitleiste, Fotografien und Literatur. Am Anfang des Menüs stehen zwei Übersichten: der Stammbaum der Schriften (woher jedes Alphabet stammt, mit einer Tabelle des Wortes „König“ in zwanzig Schriften) und ein Glossar der Fachbegriffe (Abdschad, Abugida, Determinativ, Bustrophedon …). Fertig sind bisher Seiten zu Sumer und Akkad, dem alten Ägypten, Elam und Urartu, dem alten Indien, den Hethitern, dem alten China, den Phöniziern, den Hebräern und Aramäern, dem antiken Griechenland, den Kelten, den Etruskern, dem alten Persien, dem antiken Rom, den Armeniern und Georgiern, den Germanen und Runen, Aksum, Korea und Hangul, den Göktürken und der Orchon-Schrift, Japan und Kana, den Slawen und Großmähren, den Maya, den Azteken und den Inka.",
+     "Die Seite öffnet sich über dem Globus; geschlossen wird sie mit dem Kreuz, der Escape-Taste oder durch Tippen außerhalb der Seite. Die Schaltfläche „‹ Sprachen der Antike“ oben links führt zur Liste der Kulturen zurück, und am Ende jeder Seite stehen Links zu den anderen. Die Schaltflächen im Abschnitt über die Sprachen auf dem Globus zeigen die betreffenden ausgestorbenen Sprachen auf dem Globus. Die Seite lässt sich auch aus dem Steckbrief einer Sprache öffnen (etwa des Ägyptischen, Koptischen, Hethitischen oder Luwischen) sowie über die Links thelanguageatlas.com/de/#altes-aegypten und #hethiter; auf der Website ist sie außerdem eine eigene Seite."
     ]
    },
    {
     "h": "Geschichten der Sprachen",
     "p": [
-     "Das Medaillon Geschichten der Sprachen unter dem Globus öffnet das Menü der Geschichten: thematische Seiten im gleichen Stil wie die Sprachen der Antike, gruppiert in Wörter auf Reisen, Reisen der Sprachen, Sprachen im Wandel der Zeit, Menschen und Sprachen sowie Rätsel. Fertig sind bisher: Tee und andere Wörter auf Reisen (warum die Welt entweder „cha“ oder „tea“ sagt), Tschechische Wörter in anderen Sprachen (engl. robot, dollar, howitzer, pistol, polka – was belegt und was umstritten ist), Vom Lateinischen zu den romanischen Sprachen, Wie die tschechische Standardsprache entstand (von alttschechischen Glossen über die Kralitzer Bibel und die nationale Wiedergeburt bis zu den Rechtschreibregeln und zum Verhältnis von Standardtschechisch und Gemeintschechisch), Sprachen, die zurückkehren (Walisisch, Māori, Manx, Hebräisch), und Sprachliche Rätsel (unentzifferte Schriften, isolierte Sprachen und umstrittene Familien).",
-     "Die Schaltfläche Auf dem Globus zeigen auf der Seite über den Tee schließt die Seite und färbt den Globus mit der WALS-Karte zur Herkunft des Wortes für Tee ein. Auch die Suche findet die Geschichten (zum Beispiel „robot“); Links sehen aus wie thelanguageatlas.com/#tea, und auf der Website ist jede Geschichte auch eine eigene Seite unter /stories/.",
-     "Die Seiten über den Tee und über tschechische Wörter haben einen Abschnitt Wortreisen auf dem Globus mit Schaltflächen für Tee, Kaffee, Zucker, Orange, Schokolade, Tomate, Schach und matt, Alkohol, Null und Ziffer, Shampoo, Roboter und Dollar. Der Globus überfliegt das Gebiet, durch das das Wort gewandert ist, und von der Ausgangssprache aus werden Schritt für Schritt Bögen gezogen; an jedem Punkt erscheinen Wortform und Sprache. Ein gestrichelter Bogen kennzeichnet einen umstrittenen Weg. Das Panel oben rechts (auf dem Smartphone unter dem Globus) listet die Schritte mit Datierungen und Anmerkungen auf; ein Tippen auf einen Schritt öffnet den Steckbrief der Sprache. Erneut abspielen wiederholt die Animation, die anderen Schaltflächen wechseln zu einem anderen Wort. Geschlossen wird mit dem Kreuz, der Escape-Taste oder der Schaltfläche Ganze Welt; Links sehen aus wie #cesta-caj."
+     "Das Medaillon Geschichten der Sprachen unter dem Globus öffnet das Menü der Geschichten: thematische Seiten im gleichen Stil wie die Sprachen der Antike, gruppiert in Wörter auf Reisen, Reisen der Sprachen, Sprachen im Wandel der Zeit, Menschen und Sprachen sowie Rätsel. Fertig sind bisher: Tee und andere Wanderwörter (warum die Welt entweder „cha“ oder „Tee“ sagt), Tschechische Wörter in anderen Sprachen (Roboter, Dollar, Haubitze, Pistole, Polka – was belegt und was umstritten ist), Vom Latein zu den romanischen Sprachen, Wie das Standardtschechische entstand (von alttschechischen Glossen über die Kralitzer Bibel und die nationale Wiedergeburt bis zu den Rechtschreibregeln und zum Verhältnis von Standardtschechisch und Gemeintschechisch), Sprachen kehren zurück (Walisisch, Māori, Manx, Hebräisch), und Sprachliche Rätsel (unentzifferte Schriften, isolierte Sprachen und umstrittene Familien).",
+     "Die Schaltfläche Auf dem Globus zeigen auf der Seite über den Tee schließt die Seite und färbt den Globus mit der WALS-Karte zur Herkunft des Wortes für Tee ein. Auch die Suche findet die Geschichten (zum Beispiel „robot“); Links sehen aus wie thelanguageatlas.com/de/#der-tee, und auf der Website ist jede Geschichte auch eine eigene Seite unter /de/geschichten/.",
+     "Die Seiten über den Tee und über tschechische Wörter haben einen Abschnitt Wege der Wörter auf dem Globus mit Schaltflächen für Tee, Kaffee, Zucker, Orange, Schokolade, Tomate, Schach und matt, Alkohol, Null und Ziffer, Shampoo, Roboter und Dollar. Der Globus überfliegt das Gebiet, durch das das Wort gewandert ist, und von der Ausgangssprache aus werden Schritt für Schritt Bögen gezogen; an jedem Punkt erscheinen Wortform und Sprache. Ein gestrichelter Bogen kennzeichnet einen umstrittenen Weg. Das Panel oben rechts (auf dem Smartphone unter dem Globus) listet die Schritte mit Datierungen und Anmerkungen auf; ein Tippen auf einen Schritt öffnet den Steckbrief der Sprache. Erneut abspielen wiederholt die Animation, die anderen Schaltflächen wechseln zu einem anderen Wort. Geschlossen wird mit dem Kreuz, der Escape-Taste oder der Schaltfläche Ganze Welt; Links sehen aus wie #cesta-caj."
     ]
    },
    {
     "h": "Reisen der Sprachen",
     "p": [
      "Die Reisen zeigen auf dem Globus, wie sich eine Sprache von ihrer Ursprache bis heute entwickelt hat: Farbige Ströme breiten sich Etappe für Etappe über die Karte aus, Gebiete füllen sich, und frühere Etappen bleiben als Schichten der Geschichte schwach sichtbar. Umstrittene Deutungen sind gestrichelt gezeichnet. Es gibt Reisen des Tschechischen, Kurdischen, Ungarischen, Romani, Māori (mit einem Abstecher nach Madagaskar), Türkischen, Englischen, Navajo, Jiddischen und Maltesischen. Die Reise des Alphabets folgt statt einer Sprache einer Schrift: wie aus dem ägyptischen Bild eines Ochsenkopfes über Phönizier, Griechen und Römer der Buchstabe A wurde; jede Etappe zeigt auf der Karte den Buchstaben ihrer Zeit. Sie lässt sich auch aus der Legende der Karte Schrift und aus dem Steckbrief einer Schrift öffnen.",
-     "Eine Reise öffnet sich über die Gruppe Reisen der Sprachen in den Geschichten der Sprachen, über die nach der Reise benannte Schaltfläche im Steckbrief einer Sprache, etwa Die Reise des Tschechischen (Reiter Wissenswertes), oder über einen Link wie thelanguageatlas.com/#journey-czech.",
+     "Eine Reise öffnet sich über die Gruppe Reisen der Sprachen in den Geschichten der Sprachen, über die nach der Reise benannte Schaltfläche im Steckbrief einer Sprache, etwa Die Reise des Tschechischen (Reiter Wissenswertes), oder über einen Link wie thelanguageatlas.com/de/#reise-tschechisch.",
      "Das Panel rechts (auf dem Smartphone unter dem Globus) enthält eine Schaltfläche zum Abspielen und Anhalten, einen Schieberegler für die Zeitleiste und eine Liste der Etappen mit Datierung und Text; ein Tippen auf eine Etappe zeigt sie vollständig und hält die Wiedergabe an. Unter den Etappen sind die Quellen aufgeführt. Geschlossen wird eine Reise mit dem Kreuz, der Escape-Taste, der Schaltfläche Ganze Welt oder durch Auswahl einer anderen Sprache."
     ]
    },
@@ -659,7 +659,7 @@
    {
     "h": "Weiteres",
     "p": [
-     "Oben rechts lassen sich die Sprache der Oberfläche (Česky) und das helle oder dunkle Design umschalten. Ihre Auswahl wird gespeichert.",
+     "Oben rechts lassen sich die Sprache der Oberfläche (CS · EN · IT · DE) und das helle oder dunkle Design umschalten. Ihre Auswahl wird gespeichert.",
      "Die Suche kennt auch Sprachen, die für Literatur und Film geschaffen wurden (etwa Quenya oder Klingonisch); sie werden getrennt von den natürlichen Sprachen angezeigt."
     ]
    }
@@ -675,7 +675,7 @@
     ],
     [
      "Tor zu anderen Welten",
-     "Geben Sie „mellon“ ein, elbisch für „Freund“ und das Passwort für Durins Tor im „Herrn der Ringe“. Der Globus verschwindet, und die Welten erfundener Sprachen schweben zwischen den Sternen: Klingonisch, Quenya, Sindarin, Na'vi, Dothraki und Hochvalyrisch. Auch die Suche findet sie (zum Beispiel „elf“ oder „klingon“), und die Steckbriefe des Finnischen und des Walisischen enthalten Hinweise auf das Tor. Link #mellon."
+     "Geben Sie „mellon“ ein, elbisch für „Freund“ und das Passwort für Durins Tor im „Herrn der Ringe“. Der Globus verschwindet, und die Welten erfundener Sprachen schweben zwischen den Sternen: Klingonisch, Quenya, Sindarin, Na'vi, Dothraki und Hochvalyrisch. Auch die Suche findet sie (zum Beispiel „Elben“ oder „Klingonisch“), und die Steckbriefe des Finnischen und des Walisischen enthalten Hinweise auf das Tor. Link #mellon."
     ],
     [
      "Sprachverwirrung",
@@ -758,39 +758,39 @@
  "medVRodokmenu": "Im Stammbaum sind keine Farbkarten verfügbar – wechseln Sie zurück zum Globus",
  "vitStranka": {
   "nadpis": "Vitalität der Sprachen",
-  "podtitul": "Wie gefährdet die Sprachen der Welt sind · die UNESCO-Skala",
+  "podtitul": "Wie bedroht die Sprachen der Welt sind · die UNESCO-Skala",
   "uvod": "Die Vitalität beschreibt, ob eine Sprache an die nächste Generation weitergegeben wird. Der Atlas verwendet die sechsstufige Skala der UNESCO, von sicher bis ausgestorben, und kennzeichnet gesondert wiedererweckte Sprachen – Sprachen, die Glottolog als ausgestorben führt, die aber wieder gelernt und verwendet werden. Die Daten stammen von Glottolog und umfassen alle {n} Sprachen auf dem Globus.",
   "cislaBezpecne": "sicher",
-  "cislaOhrozene": "gefährdet (von gefährdet bis kritisch gefährdet)",
+  "cislaOhrozene": "bedroht (gefährdet bis kritisch gefährdet)",
   "cislaVymrele": "ausgestorben",
   "cislaProbouzene": "wiedererweckt",
-  "souhrn": "{n} Sprachen, also {p} aller Sprachen auf dem Globus, sind in irgendeinem Grad gefährdet.",
+  "souhrn": "{n} Sprachen, also {p} aller Sprachen auf dem Globus, sind in irgendeinem Grad bedroht.",
   "barvyZap": "Globus und Stammbaum nach Vitalität einfärben",
   "barvyVyp": "Vitalitätsfarben ausschalten",
   "stupneH": "Vitalitätsstufen",
   "stupneUvod": "Die Länge jedes Balkens gibt die Zahl der Sprachen an. Angekreuzte Stufen bleiben auf dem Globus, im Stammbaum, in der Liste und in der Suche sichtbar; entfernen Sie das Häkchen bei einer Stufe, um ihre Sprachen auszublenden (der Filter funktioniert auch ohne die Farben).",
   "filtrTitulek": "Sprachen dieser Stufe ein- oder ausblenden",
   "filtrVse": "Alle",
-  "filtrOhrozene": "Nur gefährdete",
+  "filtrOhrozene": "Nur bedrohte",
   "bezUdajePopis": "Glottolog gibt für die Sprache keinen Gefährdungsgrad an.",
   "oblastiH": "Nach Weltregion",
   "oblastiUvod": "Die Regionen sind die Makroareale von Glottolog. Der Balken zeigt den Anteil der Sprachen der Region auf jeder Stufe (Farben wie oben).",
   "oblastiSloupce": [
    "Region",
    "Sprachen",
-   "Gefährdet",
+   "Bedroht",
    "Ausgestorben"
   ],
   "rodinyH": "Nach Sprachfamilie",
-  "rodinyUvod": "Die fünfzehn größten Sprachfamilien in Glottolog (ohne isolierte Sprachen, Gebärdensprachen und Gruppierungen, die keine Familien sind). Die Schaltfläche öffnet den Stammbaum; bei eingeschalteten Vitalitätsfarben sind seine Sprachen nach Stufe eingefärbt, sodass man sieht, welche Zweige gefährdet oder ausgestorben sind.",
+  "rodinyUvod": "Die fünfzehn größten Sprachfamilien in Glottolog (ohne isolierte Sprachen, Gebärdensprachen und Gruppierungen, die keine Familien sind). Die Schaltfläche öffnet den Stammbaum; bei eingeschalteten Vitalitätsfarben sind seine Sprachen nach Stufe eingefärbt, sodass man sieht, welche Zweige bedroht oder ausgestorben sind.",
   "rodinySloupce": [
    "Familie",
    "Sprachen",
-   "Gefährdet",
+   "Bedroht",
    "Ausgestorben"
   ],
-  "atlasH": "Gefährdete Sprachen im Atlas",
-  "atlasUvod": "Sprachen mit ausführlichem Steckbrief, die Glottolog als in irgendeinem Grad gefährdet oder als wiedererweckt führt, die am stärksten gefährdeten zuerst. Ein Klick öffnet den Steckbrief der Sprache.",
+  "atlasH": "Bedrohte Sprachen im Atlas",
+  "atlasUvod": "Sprachen mit ausführlichem Steckbrief, die Glottolog als in irgendeinem Grad bedroht oder als wiedererweckt führt, die am stärksten bedrohten zuerst. Ein Klick öffnet den Steckbrief der Sprache.",
   "probouzeneH": "Wiedererweckte Sprachen",
   "probouzeneUvod": "Es gibt {n} wiedererweckte Sprachen. Glottolog führt sie als ausgestorben, doch werden sie wieder gelernt und verwendet. Glottolog behandelt dies nicht als eigene Stufe; der Atlas erkennt sie an der Anmerkung „Awakening“ (Catalogue of Endangered Languages) oder „Reawakening“ (Ethnologue), die Glottolog aus der ursprünglichen Quelle übernimmt. Ein Klick auf eine Sprache zeigt sie auf dem Globus.",
   "pribehStitek": "Geschichten der Sprachen",
