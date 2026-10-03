@@ -878,6 +878,8 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 .pat-det > summary:hover{color:var(--text)}
 .pat-det > summary:focus-visible{outline:2px solid var(--cyan); outline-offset:-2px; border-radius:8px}
 .pat-det .zpetna{border-top:0; padding-top:0}
+/* autor atlasu (uživatel 3. 10. 2026) – první řádek rozbalené patičky */
+.pat-det .autor{margin:0; padding:10px 16px 8px; font-size:.8rem; line-height:1.4; font-weight:600; color:var(--text)}
 .pat-det .o-datech-radek{padding-top:2px}
 .pat-det .zdroje{border-top:1px solid var(--linka)}
 @media (prefers-reduced-motion:reduce){ .pat-det > summary .pat-sipka{transition:none} }

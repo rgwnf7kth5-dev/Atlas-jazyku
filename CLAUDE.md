@@ -121,6 +121,8 @@ jako italština, přepínač **CS · EN · IT · DE**. Název **Atlas der Sprach
   odstraněna – nedávala smysl. Znovu ji nepřidávat.
 - **Patička seznamu je sbalená** do jednoho řádku „O atlasu, zdroje, kontakt, návod a kalendář“ (`<details class="pat-det">`, uživatel
   25. 9. 2026: „zabírá zbytečně moc místa, musí se schovávat“). Rozbalí se kontakt, O datech, Jazyky s pozdravem a zdroje.
+- **Autor** (uživatel 3. 10. 2026): první řádek rozbalené patičky v aplikaci i na statických stránkách „Nápad, koncepce, vývoj: Tomáš Kubín“
+  (klíče `autor`, `autorJmeno` v `src/ui/*.json`, ve všech jazycích; `<meta name="author">` na všech stránkách). Nemazat.
 - Zpětná vazba e-mailem na **info@atlasjazyku.cz** (přesměrovaná na autora; 25. 9. 2026 místo dřívější soukromé adresy,
   kterou uživatel smazal – soukromou adresu na web nedávat). Řádek je v patičce seznamu i na statických stránkách,
   předmět podle jazyka, v artefaktu se odkaz otevírá v novém okně. Klíče `zpetna…` v `src/ui/*.json`.

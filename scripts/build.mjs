@@ -190,6 +190,7 @@ function sestav(lang, { odkazy, artefakt }) {
   const hlavicka =
     `<title>${escHtml(T.nazev)}</title>\n` +
     `<meta name="description" content="${escHtml(T.popis)}">\n` +
+    `<meta name="author" content="${escHtml(T.autorJmeno)}">\n` +
     `<meta name="theme-color" content="#FBF9F4" media="(prefers-color-scheme: light)">\n` +
     `<meta name="theme-color" content="#050914" media="(prefers-color-scheme: dark)">\n` +
     `<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,${encodeURIComponent(ikona)}">\n` +

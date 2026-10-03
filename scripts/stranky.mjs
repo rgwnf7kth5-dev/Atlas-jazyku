@@ -241,6 +241,7 @@ window.addEventListener("popstate",function(){if(JE.test(location.pathname))nact
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${escHtml(titulek)}</title>
 <meta name="description" content="${escHtml(popis)}">
+<meta name="author" content="${escHtml(T.autorJmeno)}">
 <link rel="canonical" href="${WEB(adresa)}">
 ${JAZYKY_WEBU.map(l => `<link rel="alternate" hreflang="${l}" href="${WEB(alt[l])}">`).join("\n")}
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -278,6 +279,7 @@ ${listek ? SKRIPT_LISTEK : ""}
  <details>
   <summary>${escHtml(T.patickaSouhrn)}</summary>
   <p><a href="${domov[lang]}">${escHtml(S.globus)}</a> · <a href="${prehled[lang]}">${escHtml(S.vsechnyOdkaz)}</a> · <a href="${kalendarA[lang]}">${escHtml(T.kalendarOdkaz)}</a> · <a href="${navodA[lang]}">${escHtml(T.navod.odkaz)}</a> · <a href="${vitalitaA[lang]}">${escHtml(T.vitStranka.nadpis)}</a> · <a href="${oDatech[lang]}">${escHtml(T.oDatech.odkaz)}</a></p>
+  <p>${escHtml(T.autor)}</p>
   <p>${escHtml(T.zpetna)} <a href="mailto:${escHtml(T.zpetnaAdresa)}?subject=${encodeURIComponent(T.zpetnaPredmet)}">${escHtml(T.zpetnaAdresa)}</a></p>
   <p>${escHtml(T.zdroje)}</p>
  </details>
