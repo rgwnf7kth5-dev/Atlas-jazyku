@@ -1407,7 +1407,7 @@ dialog.ai-test td small{display:block; margin-top:4px; color:var(--text3)}
   .hlava .domu{min-width:0; flex:1 1 auto}
   .hlava h1{font-size:clamp(1.05rem,5.6vw,1.6rem); white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
   .jazyk-prepinac a{padding:0 6px; font-size:.72rem}
-  html[lang="it"] .hlava h1{font-size:clamp(1rem,4.3vw,1.6rem)}   /* delší název se vejde celý */
-  html[lang="it"] .domu .znak{width:36px; height:36px}
-  html[lang="it"] .domu{gap:8px}
+  html[lang="it"] .hlava h1,html[lang="de"] .hlava h1{font-size:clamp(1rem,4.3vw,1.6rem)}   /* delší název se vejde celý */
+  html[lang="it"] .domu .znak,html[lang="de"] .domu .znak{width:36px; height:36px}
+  html[lang="it"] .domu,html[lang="de"] .domu{gap:8px}
 }

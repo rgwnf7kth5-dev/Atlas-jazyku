@@ -1422,9 +1422,9 @@ dialog.ai-test td small{display:block; margin-top:4px; color:var(--text3)}
   .hlava .domu{min-width:0; flex:1 1 auto}
   .hlava h1{font-size:clamp(1.05rem,5.6vw,1.6rem); white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
   .jazyk-prepinac a{padding:0 6px; font-size:.72rem}
-  html[lang="it"] .hlava h1{font-size:clamp(1rem,4.3vw,1.6rem)}   /* delší název se vejde celý */
-  html[lang="it"] .domu .znak{width:36px; height:36px}
-  html[lang="it"] .domu{gap:8px}
+  html[lang="it"] .hlava h1,html[lang="de"] .hlava h1{font-size:clamp(1rem,4.3vw,1.6rem)}   /* delší název se vejde celý */
+  html[lang="it"] .domu .znak,html[lang="de"] .domu .znak{width:36px; height:36px}
+  html[lang="it"] .domu,html[lang="de"] .domu{gap:8px}
 }
 
 /* ---------- jazyky starověku: stránka o civilizaci jako list ilustrované encyklopedie (okno nad glóbem i web) ----------
@@ -1715,6 +1715,7 @@ dialog.ai-test td small{display:block; margin-top:4px; color:var(--text3)}
 <link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/">
 <link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/">
 <link rel="alternate" hreflang="it" href="https://thelanguageatlas.com/it/">
+<link rel="alternate" hreflang="de" href="https://thelanguageatlas.com/de/">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://thelanguageatlas.com/it/">
@@ -1771,7 +1772,7 @@ dialog.ai-test td small{display:block; margin-top:4px; color:var(--text3)}
    <h1 data-t="nazev">Atlante delle lingue</h1>
   </a>
   <nav class="jazyk-prepinac" id="jazyk-prepinac" aria-label="Lingua del sito" data-t-aria-label="jazykVolba">
-   <a href="../index.html" data-l="cs" hreflang="cs" lang="cs" title="Čeština">CS</a><a href="../en/index.html" data-l="en" hreflang="en" lang="en" title="English">EN</a><a href="index.html" data-l="it" hreflang="it" lang="it" title="Italiano">IT</a>
+   <a href="../index.html" data-l="cs" hreflang="cs" lang="cs" title="Čeština">CS</a><a href="../en/index.html" data-l="en" hreflang="en" lang="en" title="English">EN</a><a href="index.html" data-l="it" hreflang="it" lang="it" title="Italiano">IT</a><a href="../de/index.html" data-l="de" hreflang="de" lang="de" title="Deutsch">DE</a>
   </nav>
   <button class="prepinac" id="prepinac" type="button" aria-pressed="false" aria-label="Passa dall’aspetto diurno a quello notturno" title="Passa dall’aspetto diurno a quello notturno" data-t-aria-label="motiv" data-t-title="motiv">
    <svg aria-hidden="true"><use href="#i-slunce" id="ikona-rezim"/></svg>
@@ -1943,6 +1944,6 @@ dialog.ai-test td small{display:block; margin-top:4px; color:var(--text3)}
  <dialog class="civ-okno" id="civ-okno" aria-labelledby="civ-nadpis"></dialog>
 </div>
 
-<script src="../js/atlas.882fbb8d2a.js"></script>
+<script src="../js/atlas.c49f9c414c.js"></script>
 </body>
 </html>

@@ -24,7 +24,7 @@ function tvar(lang, n, tvary) {
   if (lang === "cs" && n >= 2 && n <= 4) return tvary[1];
   return tvary[2];
 }
-const LOC = { cs: "cs-CZ", en: "en-GB", it: "it-IT" }, OG = { cs: "cs_CZ", en: "en_GB", it: "it_IT" };
+const LOC = { cs: "cs-CZ", en: "en-GB", it: "it-IT", de: "de-DE" }, OG = { cs: "cs_CZ", en: "en_GB", it: "it_IT", de: "de_DE" };
 function cislo(lang, n, des) { return n.toLocaleString(LOC[lang] || "en-GB", { minimumFractionDigits: des || 0, maximumFractionDigits: des || 0 }); }
 /* stejně jako lidi() v app.js: malá čísla přesně, velká zaokrouhleně */
 function lidi(lang, T, n) {
@@ -35,9 +35,9 @@ function lidi(lang, T, n) {
 }
 
 /* adresa stránky o civilizaci: /starovek/chetite/, /en/ancient/hittites/ */
-const starovekA = { cs: "/starovek/", en: "/en/ancient/", it: "/it/antichita/" };
+const starovekA = { cs: "/starovek/", en: "/en/ancient/", it: "/it/antichita/", de: "/de/antike/" };
 /* Příběhy jazyků (sekce „pribehy“ v data/starovek.json): /pribehy/caj/, /en/stories/tea/ */
-const pribehyA = { cs: "/pribehy/", en: "/en/stories/", it: "/it/storie/" };
+const pribehyA = { cs: "/pribehy/", en: "/en/stories/", it: "/it/storie/", de: "/de/geschichten/" };
 const sekceA = c => c.sekce === "pribehy" ? pribehyA : starovekA;
 const civAdresa = (c, lang) => sekceA(c)[lang] + c.adresa[lang] + "/";
 export function vyrobStranky({ KOREN, WEB, NAHLED, UI, JAZYKY_WEBU, jmenoTecky, rodinyJ, jazyky: vsechnyJazyky, glottolog, podrobnosti, nazvyZemi, ikona, fontyOdkaz, verze, dny, starovek, sablonaStarovek, stylStarovek, cestySlov }) {
@@ -57,7 +57,7 @@ export function vyrobStranky({ KOREN, WEB, NAHLED, UI, JAZYKY_WEBU, jmenoTecky, 
   const bezRodu = new Set(BEZ_RODU.map(n => glottolog.rodiny.indexOf(n)));
 
   /* adresy stránek; jméno musí být jedinečné */
-  const JAZYK_A = { cs: "/jazyk/", en: "/en/language/", it: "/it/lingua/" };
+  const JAZYK_A = { cs: "/jazyk/", en: "/en/language/", it: "/it/lingua/", de: "/de/sprache/" };
   const adresy = Object.fromEntries(JAZYKY_WEBU.map(l => [l, {}]));
   for (const lang of JAZYKY_WEBU) {
     const videno = new Map();
@@ -69,9 +69,9 @@ export function vyrobStranky({ KOREN, WEB, NAHLED, UI, JAZYKY_WEBU, jmenoTecky, 
       adresy[lang][j.id] = JAZYK_A[lang] + s + "/";
     }
   }
-  const prehled = { cs: "/jazyky/", en: "/en/languages/", it: "/it/lingue/" }, oDatech = { cs: "/o-datech/", en: "/en/about-data/", it: "/it/sui-dati/" },
-    kalendarA = { cs: "/kalendar-jazyku/", en: "/en/language-days/", it: "/it/giornate-delle-lingue/" }, navodA = { cs: "/navod/", en: "/en/guide/", it: "/it/guida/" },
-    vitalitaA = { cs: "/vitalita/", en: "/en/vitality/", it: "/it/vitalita/" }, domov = { cs: "/", en: "/en/", it: "/it/" };
+  const prehled = { cs: "/jazyky/", en: "/en/languages/", it: "/it/lingue/", de: "/de/sprachen/" }, oDatech = { cs: "/o-datech/", en: "/en/about-data/", it: "/it/sui-dati/", de: "/de/ueber-die-daten/" },
+    kalendarA = { cs: "/kalendar-jazyku/", en: "/en/language-days/", it: "/it/giornate-delle-lingue/", de: "/de/sprachentage/" }, navodA = { cs: "/navod/", en: "/en/guide/", it: "/it/guida/", de: "/de/anleitung/" },
+    vitalitaA = { cs: "/vitalita/", en: "/en/vitality/", it: "/it/vitalita/", de: "/de/vitalitaet/" }, domov = { cs: "/", en: "/en/", it: "/it/", de: "/de/" };
   const vse = m => Object.fromEntries(JAZYKY_WEBU.map(l => [l, typeof m === "function" ? m(l) : m[l]]));   // adresy stránky ve všech jazycích
 
   /* příbuzní v atlasu: nejhlubší společný předek ve stromu Glottologu (jako oblouky na glóbu) */
@@ -215,7 +215,7 @@ try{var u=new SpeechSynthesisUtterance(text);u.voice=hlas;u.lang=hlas.lang;u.rat
 u.onend=function(){if(sp)sp.textContent=T.znovu};u.onerror=function(){if(sp)sp.textContent=T.znovu;rekni(T.chyba,prep)};ss.cancel();ss.speak(u)}catch(err){rekni(T.chyba,prep)}});})();</script>`; };
 
   const SKRIPT_LISTEK = `<script>(function(){var poz=document.getElementById("listek-pozadi");if(!poz||!window.fetch||!window.DOMParser)return;
-var seznam=poz.dataset.seznam,titS=poz.dataset.titulek,JE=/\\/(jazyk|language|lingua)\\/[^\\/]+\\/$/;
+var seznam=poz.dataset.seznam,titS=poz.dataset.titulek,JE=/\\/(jazyk|language|lingua|sprache)\\/[^\\/]+\\/$/;
 function otevreny(){return !poz.hidden}
 function schovej(){poz.hidden=true;document.body.classList.remove("s-listkem");document.title=titS}
 function zavri(){if(history.state&&history.state.zeSeznamu){history.back();return}schovej();history.replaceState(null,"",seznam)}
@@ -396,7 +396,7 @@ ${N.oddily.map(o => `<h2>${escHtml(o.h)}</h2>\n${o.p.map(p => `<p>${escHtml(p)}<
     {
       const V = T.vitStranka, N = glottolog.body.length, vit = i => { const v = podrobnosti.radky[i][0]; return v == null ? -1 : v; };
       const PORADI = [0, 1, 2, 3, 4, 5, 6, -1], nazevSt = v => v < 0 ? T.vitalitaBezUdaje : T.aes[v][0];
-      const pr = (n, z) => { const p = 100 * n / z; return cislo(lang, p < 10 ? Math.round(p * 10) / 10 : Math.round(p), p < 10 ? 1 : 0) + (lang === "cs" ? "\u00A0%" : "%"); };
+      const pr = (n, z) => { const p = 100 * n / z; return cislo(lang, p < 10 ? Math.round(p * 10) / 10 : Math.round(p), p < 10 ? 1 : 0) + (lang === "cs" || lang === "de" ? "\u00A0%" : "%"); };
       const dosadV = (t, par) => t.replace(/\{(\w+)\}/g, (m, k) => par[k] ?? m);
       const jmenoB = i => { const n = jmenoTecky(i, lang); return n.charAt(0).toUpperCase() + n.slice(1); };
       const pocty = {}, oblasti = glottolog.makro.map(() => ({ n: 0, v: {} })), rodiny = new Map();

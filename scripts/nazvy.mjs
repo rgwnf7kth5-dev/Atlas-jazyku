@@ -33,7 +33,8 @@ const json = p => JSON.parse(fs.readFileSync(path.join(KOREN, p), "utf8"));
 
 /* státy na mapě, které nemají vlastní kód ISO 3166 (world-atlas je vede zvlášť) */
 const RUCNE = {
-  it: { "Kosovo": "Kosovo", "N. Cyprus": "Cipro del Nord", "Somaliland": "Somaliland" }
+  it: { "Kosovo": "Kosovo", "N. Cyprus": "Cipro del Nord", "Somaliland": "Somaliland" },
+  de: { "Kosovo": "Kosovo", "N. Cyprus": "Nordzypern", "Somaliland": "Somaliland" }
 };
 
 // --- glottocode → ISO 639-3 (Glottolog) a ISO 639-1 → 639-3
@@ -55,7 +56,11 @@ for (const [k, v] of Object.entries(JSON.parse(cti(`cldr-${L}.json`)).main[L].lo
   if (gc && rejstrik.has(gc) && !jazyky[gc]) jazyky[gc] = v;
 }
 const z = JSON.parse(cti(`zeme-${L}.json`)).countries;
-const staty = Object.fromEntries(Object.entries(z).map(([k, v]) => [k, Array.isArray(v) ? v[0] : v]));
+/* úřední tvary s čárkou („Tansania, Vereinigte Republik“) nahradit běžným názvem */
+const BEZNE = {
+  de: { SY: "Syrien", TZ: "Tansania", US: "Vereinigte Staaten", UM: "Kleinere Amerikanische Überseeinseln", CZ: "Tschechien" }
+};
+const staty = Object.fromEntries(Object.entries(z).map(([k, v]) => [k, (BEZNE[L] || {})[k] || (Array.isArray(v) ? v[0] : v)]));
 const mapaStatu = json("data/podrobnosti.json").mapaStatu;
 const zeme = {};
 for (const n of Object.keys(json("data/country-names.json").en)) {

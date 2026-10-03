@@ -1,0 +1,1949 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Atlas der Sprachen</title>
+<meta name="description" content="An interactive atlas of all 7,967 languages of the world after Glottolog: distribution, language families and trees, vitality, typology from WALS and sound inventories from PHOIBLE.">
+<meta name="theme-color" content="#FBF9F4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#050914" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20100%20100%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20aria-hidden%3D%22true%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2245%22%20fill%3D%22%23FBF9F4%22%20stroke%3D%22%2315192B%22%20stroke-width%3D%223.2%22%2F%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2238.5%22%20fill%3D%22none%22%20stroke%3D%22%2315192B%22%20stroke-width%3D%221.3%22%20opacity%3D%22.5%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%232E63D6%22%20stroke-width%3D%221.8%22%20opacity%3D%22.75%22%3E%3Cellipse%20cx%3D%2250%22%20cy%3D%2250%22%20rx%3D%2231%22%20ry%3D%2238.5%22%2F%3E%3Cpath%20d%3D%22M11.5%2050h29M59.5%2050h29%22%2F%3E%3C%2Fg%3E%3Cpath%20transform%3D%22translate(36%2034)%20scale(18)%22%20d%3D%22M0.038%20-0.355%200.281%200.271Q0.295%200.307%200.313%200.321Q0.331%200.334%200.345%200.335V0.355Q0.315%200.353%200.274%200.352Q0.234%200.352%200.193%200.352Q0.147%200.352%200.106%200.352Q0.065%200.353%200.04%200.355V0.335Q0.091%200.333%200.105%200.318Q0.118%200.302%200.098%200.251L-0.072%20-0.214L-0.053%20-0.24L-0.206%200.156Q-0.228%200.211%20-0.232%200.246Q-0.237%200.281%20-0.227%200.3Q-0.218%200.319%20-0.196%200.326Q-0.175%200.334%20-0.145%200.335V0.355Q-0.178%200.353%20-0.208%200.352Q-0.238%200.352%20-0.269%200.352Q-0.291%200.352%20-0.31%200.352Q-0.33%200.353%20-0.345%200.355V0.335Q-0.324%200.331%20-0.301%200.308Q-0.28%200.285%20-0.259%200.23L-0.031%20-0.355Q-0.015%20-0.354%200.004%20-0.354Q0.022%20-0.354%200.038%20-0.355ZM0.108%200.067V0.087H-0.19L-0.18%200.067Z%22%20fill%3D%22%2315192B%22%2F%3E%3Cpath%20transform%3D%22translate(64%2034)%20scale(18)%22%20d%3D%22M0.342%20-0.361V-0.341Q0.309%20-0.34%200.293%20-0.334Q0.277%20-0.327%200.272%20-0.309Q0.266%20-0.292%200.266%20-0.255V0.241Q0.266%200.277%200.272%200.295Q0.277%200.313%200.293%200.319Q0.309%200.325%200.342%200.327V0.347Q0.317%200.345%200.274%200.345Q0.232%200.344%200.183%200.344Q0.143%200.344%200.101%200.345Q0.058%200.345%200.032%200.347V0.327Q0.064%200.325%200.08%200.319Q0.096%200.313%200.102%200.295Q0.107%200.277%200.107%200.241V-0.255Q0.107%20-0.307%200.096%20-0.324Q0.085%20-0.341%200.045%20-0.341Q-0.023%20-0.341%20-0.051%20-0.298Q-0.079%20-0.255%20-0.079%20-0.178Q-0.079%20-0.131%20-0.068%20-0.092Q-0.056%20-0.054%20-0.025%20-0.031Q0.006%20-0.009%200.065%20-0.009H0.151Q0.151%20-0.009%200.151%200.001Q0.151%200.011%200.151%200.011H0.054Q-0.034%200.011%20-0.092%20-0.005Q-0.15%20-0.021%20-0.184%20-0.048Q-0.218%20-0.075%20-0.231%20-0.109Q-0.244%20-0.143%20-0.244%20-0.18Q-0.244%20-0.237%20-0.214%20-0.277Q-0.183%20-0.318%20-0.122%20-0.339Q-0.06%20-0.36%200.032%20-0.36Q0.051%20-0.36%200.096%20-0.359Q0.141%20-0.358%200.19%20-0.358Q0.232%20-0.358%200.274%20-0.359Q0.317%20-0.36%200.342%20-0.361ZM0.145%20-0.006%200.143%200.011H0.034Q0.004%200.011%20-0.014%200.03Q-0.032%200.048%20-0.042%200.08Q-0.051%200.111%20-0.058%200.153L-0.077%200.253Q-0.087%200.315%20-0.122%200.338Q-0.158%200.361%20-0.211%200.361Q-0.254%200.361%20-0.284%200.348Q-0.316%200.334%20-0.342%200.303L-0.328%200.291Q-0.318%200.302%20-0.309%200.308Q-0.3%200.313%20-0.287%200.314Q-0.269%200.314%20-0.259%200.298Q-0.248%200.282%20-0.24%200.242L-0.22%200.139Q-0.207%200.075%20-0.161%200.047Q-0.114%200.019%20-0.029%200.008Q-0.01%200.005%200.01%200.003Q0.029%200.001%200.06%20-0.002Q0.092%20-0.004%200.145%20-0.006Z%22%20fill%3D%22%2315192B%22%2F%3E%3Cpath%20transform%3D%22translate(50%2051)%20scale(18)%22%20d%3D%22M0.197%200.329Q0.196%200.318%200.192%200.305Q0.188%200.292%200.179%200.277Q0.169%200.263%200.149%200.245L-0.211%20-0.098Q-0.237%20-0.123%20-0.25%20-0.154Q-0.263%20-0.185%20-0.263%20-0.215Q-0.263%20-0.242%20-0.256%20-0.268Q-0.248%20-0.294%20-0.235%20-0.329H-0.201V-0.312Q-0.201%20-0.294%20-0.192%20-0.273Q-0.183%20-0.252%20-0.159%20-0.228L0.211%200.122Q0.226%200.137%200.236%200.154Q0.245%200.172%200.25%200.191Q0.255%200.21%200.255%200.231Q0.255%200.26%200.246%200.282Q0.236%200.304%200.221%200.329ZM-0.267%200.319V0.242H-0.25Q-0.233%200.242%20-0.227%200.235Q-0.221%200.229%20-0.225%200.213L-0.242%200.144Q-0.253%200.1%20-0.244%200.057Q-0.236%200.015%20-0.208%20-0.022L-0.158%20-0.089L-0.126%20-0.054L-0.152%20-0.012Q-0.173%200.022%20-0.173%200.048Q-0.174%200.074%20-0.153%200.111L-0.121%200.172Q-0.104%200.202%20-0.099%200.237Q-0.095%200.273%20-0.112%200.319ZM0.141%200.058%200.09%200.011Q0.09%200.001%200.096%20-0.016Q0.102%20-0.033%200.111%20-0.051Q0.12%20-0.07%200.129%20-0.084L0.173%20-0.158L0.22%20-0.142L0.172%20-0.062Q0.16%20-0.042%200.153%20-0.023Q0.146%20-0.004%200.144%200.016Q0.141%200.036%200.141%200.058ZM0.253%20-0.099%200.128%20-0.115Q0.094%20-0.119%200.081%20-0.139Q0.067%20-0.158%200.067%20-0.201Q0.067%20-0.227%200.073%20-0.259Q0.078%20-0.291%200.091%20-0.329H0.126V-0.311Q0.126%20-0.294%200.136%20-0.285Q0.146%20-0.275%200.165%20-0.273L0.209%20-0.267Q0.239%20-0.263%200.253%20-0.244Q0.267%20-0.225%200.267%20-0.189Q0.267%20-0.167%200.264%20-0.147Q0.26%20-0.128%200.253%20-0.099Z%22%20fill%3D%22%2315192B%22%2F%3E%3Cpath%20transform%3D%22translate(36.5%2067.5)%20scale(18)%22%20d%3D%22M0.019%200.388Q-0.059%200.388%20-0.116%200.36Q-0.173%200.332%20-0.204%200.28Q-0.235%200.228%20-0.235%200.158Q-0.235%200.05%20-0.16%20-0.031Q-0.192%20-0.046%20-0.217%20-0.07Q-0.241%20-0.095%20-0.253%20-0.122Q-0.265%20-0.149%20-0.265%20-0.174Q-0.265%20-0.204%20-0.254%20-0.238Q-0.242%20-0.273%20-0.222%20-0.304Q-0.201%20-0.336%20-0.176%20-0.357Q-0.139%20-0.388%20-0.098%20-0.388Q-0.063%20-0.388%20-0.025%20-0.365Q0.013%20-0.342%200.054%20-0.295L0.033%20-0.255Q0.003%20-0.267%20-0.023%20-0.272Q-0.049%20-0.278%20-0.072%20-0.278Q-0.107%20-0.278%20-0.135%20-0.27Q-0.162%20-0.263%20-0.194%20-0.246Q-0.191%20-0.192%20-0.158%20-0.156Q-0.124%20-0.12%20-0.067%20-0.106Q-0.023%20-0.132%200.025%20-0.153Q0.073%20-0.175%200.127%20-0.193Q0.138%20-0.177%200.138%20-0.142Q0.138%20-0.121%200.129%20-0.105Q0.121%20-0.088%200.102%20-0.075Q0.094%20-0.069%200.076%20-0.06Q0.058%20-0.052%200.031%20-0.041Q-0.056%20-0.007%20-0.099%200.021Q-0.142%200.049%20-0.163%200.082Q-0.173%200.098%20-0.179%200.116Q-0.184%200.134%20-0.184%200.152Q-0.184%200.209%20-0.132%200.241Q-0.079%200.273%200.021%200.273Q0.041%200.273%200.062%200.272Q0.083%200.27%200.105%200.267Q0.126%200.264%200.163%200.257Q0.2%200.249%200.252%200.237L0.265%200.279Q0.179%200.332%200.114%200.36Q0.05%200.388%200.019%200.388Z%22%20fill%3D%22%2315192B%22%2F%3E%3Cpath%20transform%3D%22translate(64%2067)%20scale(18)%22%20d%3D%22M-0.083%200.413Q0.048%200.388%200.131%200.343Q0.214%200.297%200.254%200.237Q0.293%200.178%200.293%200.111Q0.293%200.056%200.268%200.013Q0.243%20-0.029%200.198%20-0.053Q0.153%20-0.077%200.09%20-0.077Q0.04%20-0.077%20-0.011%20-0.062Q-0.062%20-0.048%20-0.121%20-0.015Q-0.18%200.017%20-0.224%200.062Q-0.268%200.107%20-0.291%200.152Q-0.315%200.198%20-0.315%200.233Q-0.315%200.247%20-0.309%200.254Q-0.303%200.261%20-0.291%200.261Q-0.264%200.261%20-0.231%200.247Q-0.199%200.233%20-0.165%200.211Q-0.131%200.189%20-0.103%200.164Q-0.076%200.141%20-0.048%200.11Q-0.02%200.078%200.006%200.043Q0.032%200.008%200.052%20-0.026Q0.071%20-0.06%200.08%20-0.087Q0.09%20-0.114%200.082%20-0.133Q0.074%20-0.151%200.045%20-0.17L0.053%20-0.182Q0.082%20-0.177%200.105%20-0.169Q0.127%20-0.16%200.142%20-0.144Q0.152%20-0.134%200.154%20-0.122Q0.156%20-0.11%200.152%20-0.096Q0.137%20-0.045%200.102%200.016Q0.067%200.077%200.019%200.136Q-0.028%200.195%20-0.078%200.241Q-0.138%200.299%20-0.202%200.33Q-0.267%200.361%20-0.321%200.361Q-0.359%200.361%20-0.381%200.338Q-0.404%200.315%20-0.404%200.27Q-0.404%200.218%20-0.38%200.167Q-0.357%200.117%20-0.316%200.073Q-0.276%200.029%20-0.224%20-0.007Q-0.172%20-0.043%20-0.116%20-0.067Q-0.067%20-0.09%20-0.011%20-0.102Q0.045%20-0.114%200.104%20-0.114Q0.196%20-0.114%200.263%20-0.078Q0.33%20-0.043%200.367%200.015Q0.403%200.072%200.403%200.139Q0.403%200.216%200.368%200.272Q0.333%200.327%200.269%200.363Q0.204%200.398%200.116%200.414Q0.027%200.431%20-0.079%200.432ZM-0.056%200.308Q-0.081%200.308%20-0.1%200.284Q-0.12%200.261%20-0.132%200.223Q-0.144%200.184%20-0.15%200.137Q-0.156%200.09%20-0.156%200.044Q-0.156%20-0.003%20-0.149%20-0.06Q-0.143%20-0.117%20-0.134%20-0.173Q-0.125%20-0.229%20-0.118%20-0.276Q-0.111%20-0.322%20-0.111%20-0.348Q-0.111%20-0.361%20-0.115%20-0.367Q-0.119%20-0.373%20-0.132%20-0.378Q-0.143%20-0.383%20-0.158%20-0.387Q-0.173%20-0.39%20-0.188%20-0.393L-0.189%20-0.407Q-0.173%20-0.415%20-0.153%20-0.424Q-0.133%20-0.432%20-0.118%20-0.432Q-0.089%20-0.432%20-0.059%20-0.423Q-0.029%20-0.413%20-0.009%20-0.399Q0.011%20-0.385%200.011%20-0.372Q0.011%20-0.36%200.004%20-0.349Q-0.003%20-0.339%20-0.011%20-0.327Q-0.019%20-0.315%20-0.024%20-0.297Q-0.033%20-0.261%20-0.042%20-0.221Q-0.051%20-0.181%20-0.058%20-0.141Q-0.066%20-0.1%20-0.071%20-0.061Q-0.076%20-0.022%20-0.076%200.013Q-0.076%200.065%20-0.065%200.101Q-0.055%200.138%20-0.041%200.165Q-0.028%200.193%20-0.018%200.216Q-0.008%200.239%20-0.008%200.264Q-0.008%200.287%20-0.021%200.297Q-0.034%200.308%20-0.056%200.308ZM-0.227%20-0.17Q-0.268%20-0.17%20-0.294%20-0.185Q-0.321%20-0.199%20-0.337%20-0.227Q-0.354%20-0.254%20-0.366%20-0.291L-0.355%20-0.301Q-0.329%20-0.285%20-0.307%20-0.274Q-0.285%20-0.263%20-0.261%20-0.258Q-0.238%20-0.253%20-0.21%20-0.253Q-0.174%20-0.253%20-0.139%20-0.257Q-0.104%20-0.261%20-0.074%20-0.266Q-0.004%20-0.279%200.046%20-0.298Q0.095%20-0.316%200.124%20-0.33Q0.152%20-0.344%200.159%20-0.344Q0.199%20-0.344%200.22%20-0.333Q0.241%20-0.321%200.241%20-0.299Q0.241%20-0.282%200.231%20-0.271Q0.221%20-0.259%200.202%20-0.252Q0.183%20-0.244%200.153%20-0.235Q0.123%20-0.226%200.086%20-0.217Q0.049%20-0.208%200.008%20-0.199Q-0.034%20-0.19%20-0.077%20-0.184Q-0.113%20-0.178%20-0.152%20-0.174Q-0.191%20-0.17%20-0.227%20-0.17Z%22%20fill%3D%22%2315192B%22%2F%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%225%22%20r%3D%224.2%22%20fill%3D%22%23D23A2B%22%20stroke%3D%22%23FBF9F4%22%20stroke-width%3D%221.6%22%2F%3E%3C%2Fsvg%3E">
+<script>(function(){var m=null;try{m=localStorage.getItem("atlas-motiv")}catch(e){}if(!m)m=window.matchMedia&&matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";document.documentElement.setAttribute("data-theme",m)})()</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800&display=swap">
+<style>
+/* Atlas jazyků – „Hvězdná mapa se sklem“ (návrh B + sklo z A, vybral uživatel 22. 9. 2026).
+   Jen tmavý vesmír. Barvy rodin (--r-*) prošly validátorem palet (skill dataviz) na #04060F i #101634;
+   pořadí ie → st → an → afro → nk → ost je součást ověření, neměnit. */
+:root{
+  color-scheme:dark;
+  --vesmir1:#0B1433; --vesmir2:#02030A;
+  --sklo:rgba(14,22,56,.52); --sklo2:rgba(20,30,74,.66); --sklo-okraj:rgba(150,205,255,.22); --sklo-lesk:rgba(255,255,255,.12);
+  --text:#EAF4FF; --text2:#A3B6D8; --text3:#8494BA;
+  --cyan:#35D6FF; --fialova:#B26BFF; --hvezda:#FFD45E; --cervena:#FF6B5E;
+  --pozadi:radial-gradient(120% 90% at 60% 35%, #0B1433, #02030A 72%) fixed, #02030A;
+  --linka:rgba(150,205,255,.16); --linka2:rgba(150,205,255,.3); --plocha:rgba(255,255,255,.05); --plocha2:rgba(255,255,255,.08);
+  --sklo-tl:rgba(14,22,56,.55); --vstup:rgba(3,6,20,.45); --stin:rgba(0,0,0,.7);
+  --cyan-slabe:rgba(53,214,255,.14); --cyan-okraj:rgba(53,214,255,.4); --cyan-zare:rgba(53,214,255,.65);
+  --aktivni-text:#DFF8FF; --na-cyan:#050818;
+  --nadpis-grad:linear-gradient(90deg,#FFFFFF,#BFF3FF 55%,#DDC6FF);
+  /* glóbus (čte je i app.js) */
+  --koule1:#0B1A45; --koule2:#02040E; --atmosfera:rgba(53,214,255,.5); --atmosfera2:rgba(80,120,255,.16);
+  --sit:rgba(127,233,255,.07); --hranice:120,170,255; --okraj-koule:rgba(127,233,255,.4);
+  --more1:#030817; --more2:#0C2352; --souse1:#1E2C58; --souse2:#5569A6;   /* reliéf: hluboké a mělké moře, stín a světlo pevniny */
+  --pevnina:#1D3170; --pobrezi:rgba(120,175,255,.42); --stin-koule:rgba(0,0,10,.55);   /* pevnina světlejší než moře */
+  --tecka-jazyk:#FFC98A; --tecka-lem:#0A1024; --tecka-bod:#FFFFFF;
+  /* vitalita podle významu (uživatel 25. 9. 2026: „výrazněji odlišit“): bezpečný modře, čtyři stupně ohrožení
+     jako teplá stupnice (prošla validátorem palet --ordinal na #1F2B55: rozptyl odstínu 38°, kroky ΔL ≥ 0,06),
+     vymřelý bledě šedý („vybledl“), probouzený zeleně, bez údaje tmavě šedý; sousední dvojice prošly CVD */
+  --vit-0:#4EA3F2; --vit-1:#ffcc81; --vit-2:#ffa55b; --vit-3:#ef7e3c; --vit-4:#dc5426; --vit-5:#B8BFD0;
+  --vit-6:#21AE70; --vit-nic:#5E6C8E;
+  --popisek:#EAF4FF; --popisek-lem:rgba(2,4,14,.88); --zamerovac-lem:rgba(2,4,14,.7);
+  /* barvy jazykových rodin a text na nich */
+  --r-ie:#5E92EC; --r-st:#E4645A; --r-an:#12A3BC; --r-afro:#A5761A; --r-nk:#21AE70; --r-ost:#A268DC;
+  --t-ie:#070A1E; --t-st:#070A1E; --t-an:#070A1E; --t-afro:#070A1E; --t-nk:#070A1E; --t-ost:#070A1E;
+  --pismo-nadpis:"Chakra Petch","Outfit",system-ui,sans-serif;
+  --pismo-text:"Outfit",system-ui,"Segoe UI",sans-serif;
+  --pismo-data:"JetBrains Mono",ui-monospace,"Cascadia Mono",monospace;
+}
+/* Denní vzhled (přání uživatele 22. 9. 2026): světlá obloha, bílé sklo, světlá planeta.
+   Barvy rodin jsou světlá sada, která prošla validátorem palet (skill dataviz) na bílém podkladu;
+   zlatá (afro) má na bílé kontrast jen 2,4 : 1, proto nese tmavý text. Pořadí rodin neměnit. */
+:root[data-theme="light"]{
+  color-scheme:light;
+  --pozadi:radial-gradient(110% 80% at 72% 0%, #FFFFFF, #E4EEFF 45%, #C8DAF8) fixed, #C8DAF8;
+  --sklo:rgba(255,255,255,.5); --sklo2:rgba(255,255,255,.74); --sklo-okraj:rgba(255,255,255,.9); --sklo-lesk:rgba(255,255,255,.95);
+  --text:#0E1838; --text2:#4A5A80; --text3:#66759B;
+  --cyan:#0A77AD; --fialova:#8A44C8; --hvezda:#D99A00; --cervena:#D8453A;
+  --linka:rgba(40,80,160,.14); --linka2:rgba(40,80,160,.28); --plocha:rgba(40,80,160,.05); --plocha2:rgba(40,80,160,.1);
+  --sklo-tl:rgba(255,255,255,.62); --vstup:rgba(255,255,255,.75); --stin:rgba(40,70,140,.28);
+  --cyan-slabe:rgba(10,119,173,.1); --cyan-okraj:rgba(10,119,173,.45); --cyan-zare:rgba(10,119,173,.35);
+  --aktivni-text:#064E73; --na-cyan:#FFFFFF;
+  --nadpis-grad:linear-gradient(90deg,#0E1838,#1F4FA8 55%,#6A36B0);
+  --koule1:#FFFFFF; --koule2:#D3E1F5; --atmosfera:rgba(90,170,255,.42); --atmosfera2:rgba(140,190,255,.16);
+  --sit:rgba(40,90,170,.1); --hranice:40,80,160; --okraj-koule:rgba(40,110,200,.45);
+  --more1:#0C3A8A; --more2:#3E80D4; --souse1:#9EA6B2; --souse2:#FCFBF7;
+  --pevnina:#A9BEE2; --pobrezi:rgba(40,80,160,.4); --stin-koule:rgba(40,70,140,.16);   /* pevnina tmavší než moře */
+  --tecka-jazyk:#7A2E1C; --tecka-lem:#FBF9F4; --tecka-bod:#0E1838;
+  /* denní vitalita: stupně ohrožení prošly --ordinal na #E6E8EC (rozptyl 35°), sousední dvojice prošly CVD */
+  --vit-0:#2F7FC1; --vit-1:#d07c00; --vit-2:#b35200; --vit-3:#932900; --vit-4:#6f0000; --vit-5:#4A4E5C;
+  --vit-6:#23A862; --vit-nic:#A3AAB8;
+  --popisek:#0E1838; --popisek-lem:rgba(255,255,255,.92); --zamerovac-lem:rgba(255,255,255,.85);
+  --r-ie:#2E63D6; --r-st:#E2544A; --r-an:#0A9BB5; --r-afro:#E09A18; --r-nk:#0A7541; --r-ost:#8A44C8;
+  --t-ie:#FFFFFF; --t-st:#FFFFFF; --t-an:#FFFFFF; --t-afro:#161A3A; --t-nk:#FFFFFF; --t-ost:#FFFFFF;
+}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{height:100%}
+body{
+  margin:0; color:var(--text); font-family:var(--pismo-text); font-size:15px; line-height:1.5;
+  background:var(--pozadi);
+  -webkit-font-smoothing:antialiased;
+}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--cyan); outline-offset:3px; border-radius:8px}
+#hvezdy{position:fixed; inset:0; width:100%; height:100%; z-index:0; pointer-events:none}
+
+/* ---------- sklo ---------- */
+.sklo{
+  background:linear-gradient(150deg, var(--sklo2), var(--sklo) 60%);
+  backdrop-filter:blur(18px) saturate(160%); -webkit-backdrop-filter:blur(18px) saturate(160%);
+  border:1px solid var(--sklo-okraj);
+  box-shadow:inset 0 1px 0 var(--sklo-lesk), 0 18px 50px -20px var(--stin);
+}
+
+/* ---------- kostra ---------- */
+.app{position:relative; z-index:1; height:100%; display:flex; flex-direction:column; min-height:0; padding:12px; gap:12px}
+.hlava{display:flex; align-items:center; gap:14px; flex-wrap:wrap; padding:10px 14px 10px 12px; border-radius:20px;
+  padding-top:calc(10px + env(safe-area-inset-top,0px))}
+.znak{width:44px;height:44px;flex:none}
+.nadpisy{margin-right:auto; min-width:0}
+h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8vw,1.8rem); line-height:1; margin:0; letter-spacing:.01em;
+  background:var(--nadpis-grad); -webkit-background-clip:text; background-clip:text; color:transparent}
+/* přepínač jazyků webu CS · EN · IT (2. 10. 2026; dřív jeden odkaz na druhou verzi) – segment jako .segment, aktuální jazyk podbarvený */
+.jazyk-prepinac{height:38px; display:flex; align-items:stretch; gap:2px; padding:3px; border-radius:12px; flex:none;
+  background:var(--plocha); border:1px solid var(--sklo-okraj)}
+.jazyk-prepinac a{display:grid; place-items:center; padding:0 9px; border-radius:999px; text-decoration:none; color:var(--text2);
+  font-weight:600; font-size:.78rem; letter-spacing:.05em; transition:color .15s, background .15s}
+.jazyk-prepinac a:hover{color:var(--text)}
+.jazyk-prepinac a[aria-current]{background:var(--cyan-slabe); color:var(--aktivni-text); box-shadow:inset 0 0 0 1px var(--cyan)}
+.jazyk-prepinac a:focus-visible{outline:2px solid var(--cyan); outline-offset:1px}
+.prepinac{width:38px; height:38px; flex:none; display:grid; place-items:center; cursor:pointer; border-radius:12px; padding:0;
+  background:var(--plocha); border:1px solid var(--sklo-okraj); transition:border-color .15s, box-shadow .15s}
+.prepinac:hover{border-color:var(--cyan); box-shadow:0 0 18px -4px var(--cyan-zare)}
+.prepinac svg{width:18px; height:18px; color:var(--hvezda)}
+
+.mriz{flex:1; min-height:0; display:grid; grid-template-columns:minmax(0,1fr) 380px; gap:12px}
+
+/* ---------- scéna s glóbem ---------- */
+.scena{position:relative; min-height:0; overflow:hidden; border-radius:24px}
+.scena canvas{position:absolute; inset:0; width:100%; height:100%}
+#podklad{z-index:1} #gl{z-index:2} #popisky{z-index:3} #globus{z-index:4; touch-action:none; cursor:grab}
+#globus.tahne{cursor:grabbing}
+/* rodokmen: 3D strom rodiny místo glóbu */
+#strom{z-index:4; touch-action:none; cursor:grab}
+#strom.tahne{cursor:grabbing}
+.scena.rezim-strom :is(#podklad,#gl,#popisky,#globus,.hud,.napoveda,.tl-napoveda,.ukazatel,.zoom-ovl,#tl-cely,.zeme-okno,.bublina-bod){display:none !important}
+#tl-strom:not(.med)[aria-pressed="true"]{background:var(--cyan-slabe); color:var(--aktivni-text)}
+.strom-hlava{position:absolute; z-index:5; top:14px; right:16px; display:flex; align-items:center; gap:6px; padding:5px; border-radius:999px; max-width:calc(100% - 32px)}
+.strom-hlava label{display:flex; align-items:center; gap:8px; min-width:0; padding-left:8px; font-size:.78rem; font-weight:600; color:var(--text2)}
+.strom-hlava svg{width:17px; height:17px; flex:none; color:var(--cyan)}
+.strom-hlava select{min-width:0; max-width:230px; font:inherit; font-size:.82rem; font-weight:600; color:var(--text); background:var(--plocha); border:1px solid var(--linka2); border-radius:999px; padding:6px 10px; cursor:pointer}
+.strom-hlava button{flex:none; font:inherit; font-size:.78rem; font-weight:600; color:var(--text); background:transparent; border:1px solid var(--linka2); border-radius:999px; padding:6px 12px; cursor:pointer}
+.strom-hlava button:hover:not(:disabled),.strom-hlava select:hover{border-color:var(--cyan)}
+.strom-hlava button:disabled{opacity:.45; cursor:default}
+.strom-napoveda{position:absolute; z-index:5; left:18px; top:16px; max-width:min(330px,40%); margin:0; font-size:.76rem; line-height:1.45; color:var(--text2); pointer-events:none;
+  padding:8px 12px; border-radius:14px; background:var(--sklo-tl); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border:1px solid var(--linka)}
+.scena:has(.karta:not([hidden])) .strom-napoveda{display:none}
+/* velikonoční vajíčko „eulang“: panel s vlajkou EU; hvězdičky vlajky naskočí jedna po druhé, vlajka vlaje */
+.scena.rezim-eu :is(.napoveda,.tl-napoveda){display:none}
+.eu-panel{position:absolute; z-index:7; top:16px; right:16px; width:min(350px, 44%); display:grid; grid-template-columns:auto 1fr auto; gap:6px 12px;
+  align-items:start; padding:12px; border-radius:20px; animation:eu-in .45s cubic-bezier(.2,.9,.3,1.2)}
+@keyframes eu-in{from{opacity:0; transform:translateY(-14px) scale(.92)}}
+.eu-vlajka{width:84px; height:56px; border-radius:6px; box-shadow:0 8px 22px -8px rgba(0,30,120,.6); transform-origin:left center; animation:eu-vlni 3.2s ease-in-out infinite}
+@keyframes eu-vlni{0%,100%{transform:perspective(300px) rotateY(0) skewY(0)} 50%{transform:perspective(300px) rotateY(-14deg) skewY(-2deg)}}
+.eu-h{transform-box:fill-box; transform-origin:center; animation:eu-hv .5s cubic-bezier(.3,1.6,.5,1) calc(var(--i) * 80ms + .25s) both}
+@keyframes eu-hv{from{opacity:0; transform:scale(0) rotate(-140deg)}}
+.eu-text strong{display:block; font-family:var(--pismo-nadpis); font-size:.95rem; line-height:1.2; color:var(--text)}
+.eu-text p{margin:4px 0 0; font-size:.76rem; line-height:1.4; color:var(--text2)}
+.eu-panel .zavrit{grid-column:3}
+.eu-jazyky{grid-column:1 / -1; display:flex; flex-wrap:wrap; gap:5px; max-height:132px; overflow:auto; scrollbar-width:thin}
+.eu-jazyky button{font:inherit; font-size:.74rem; font-weight:600; padding:4px 10px; border-radius:999px; cursor:pointer; color:#003399;
+  background:#FFCC00; border:1px solid #E0B000}
+.eu-jazyky button:hover{background:#FFE066}
+/* srovnání dvou jazyků */
+.k-porovnat{display:flex; align-items:center; justify-content:center; gap:8px; width:calc(100% - 28px); margin:10px 14px 0; padding:9px 14px;
+  border-radius:14px; cursor:pointer; font:inherit; font-size:.84rem; font-weight:700; color:var(--text);
+  background:var(--plocha); border:1px dashed var(--linka2)}
+.k-porovnat svg{width:18px; height:18px; color:var(--cyan)}
+.k-porovnat:hover{border-style:solid; border-color:var(--cyan)}
+:root .k-hero.srovnani, :root[data-theme="light"] .k-hero.srovnani{color:var(--text); background:linear-gradient(150deg, var(--plocha2), var(--plocha))}
+.k-hero.srovnani > :not(.k-lista):not(.k-dvojice){display:none}
+.k-dvojice{display:grid; grid-template-columns:minmax(0,1fr) auto minmax(0,1fr); gap:6px; align-items:stretch; margin-top:4px}
+.k-strana{display:flex; flex-direction:column; gap:3px; min-width:0; padding:11px 12px; border-radius:16px; background:var(--r-barva); color:var(--r-text)}
+.ks-pozdrav{font-family:"Noto Sans","Noto Sans Arabic","Noto Sans Devanagari","Noto Sans CJK SC","Segoe UI",system-ui,sans-serif; font-weight:800; font-size:1.3rem; line-height:1.15; overflow-wrap:anywhere}
+.ks-nazev{font-size:.98rem; line-height:1.2; overflow-wrap:anywhere}
+.ks-rodina{font-size:.74rem; opacity:.85}
+.k-mezi{align-self:center; font-size:1.3rem; font-weight:800; color:var(--text2)}
+.sr-verdikt{font-weight:800; font-size:1rem; color:var(--text); margin-bottom:4px}
+.sr-radek{display:block; margin-top:3px; font-size:.8rem; line-height:1.4; color:var(--text2)}
+.sr-radek b{color:var(--text); font-weight:700}
+.sr-tecka{display:inline-block; width:9px; height:9px; border-radius:50%; margin-right:6px; vertical-align:1px; box-shadow:0 0 0 1.5px var(--plocha)}
+.strom-mini{display:grid; grid-template-columns:1fr 1fr; gap:8px 12px; margin:10px 0 4px}
+.sm-predek{grid-column:1 / -1; justify-self:center; padding:6px 14px; border-radius:999px; font-weight:700; font-size:.82rem;
+  background:var(--plocha); border:1px solid var(--linka2); color:var(--text)}
+.sm-vetev{display:flex; flex-direction:column; gap:3px; min-width:0; padding-left:10px; border-left:3px solid var(--r-barva); font-size:.76rem; color:var(--text2)}
+.sm-vetev b{font-size:.86rem; color:var(--text)}
+.sr-pata{display:flex; flex-wrap:wrap; gap:8px}
+.sr-pata /* Brána do jiných světů („mellon“): glóbus odletí do dálky, ve hvězdách se vznášejí vymyšlené světy */
+.scena canvas{transition:transform .9s cubic-bezier(.5,0,.2,1), opacity .7s ease}
+.scena.rezim-brana :is(#podklad,#gl,#popisky,#globus){transform:scale(.08); transform-origin:20% 78%; opacity:0; pointer-events:none}
+.scena.rezim-brana :is(.hud,.napoveda,.tl-napoveda,.ukazatel,.zoom-ovl,#tl-cely,.zeme-okno,.bublina-bod,.srovnani-vyzva){display:none !important}
+.brana{position:absolute; inset:0; z-index:5; pointer-events:none}
+.brana > *{pointer-events:auto}
+.brana-hlava{position:absolute; top:16px; right:16px; width:min(420px, 56%); padding:12px 14px; border-radius:18px; animation:eu-in .5s .3s both}
+.brana-hlava strong{display:block; font-family:var(--pismo-nadpis); font-size:1.02rem; color:var(--text)}
+.brana-hlava p{margin:4px 0 8px; font-size:.78rem; line-height:1.45; color:var(--text2)}
+.brana-hlava .tl-rodokmen{margin-top:0}
+.brana-svety{position:absolute; inset:0; pointer-events:none}
+.svet{position:absolute; display:flex; flex-direction:column; align-items:center; gap:5px; transform:translate(-50%, -50%);
+  pointer-events:auto; animation:svet-in .7s cubic-bezier(.2,1.4,.4,1) calc(.35s + var(--i, 0) * .12s) both}
+@keyframes svet-in{from{opacity:0; scale:.2}}
+@keyframes vznaset{50%{translate:0 -9px}}
+.svet .koule{display:block; width:112px; height:112px; border-radius:50%;
+  background:radial-gradient(circle at 34% 30%, var(--k1), var(--k2) 55%, var(--k3));
+  box-shadow:0 0 34px -6px var(--k2), inset -12px -14px 26px rgba(0,0,0,.45);
+  animation:vznaset 6s ease-in-out calc(var(--i, 0) * -1.4s) infinite}   /* vznáší se jen koule, tlačítka stojí */
+.svet .koule.obrazek{background:none; box-shadow:0 0 34px -6px var(--k2)}
+.svet .koule.obrazek svg{display:block; width:100%; height:100%}
+.svet > b{font-family:var(--pismo-nadpis); font-size:.95rem; color:var(--text); text-shadow:0 1px 8px var(--pozadi, transparent)}
+.svet.zeme{left:20%; top:78%; --k1:#A9E6FF; --k2:#2B6FD6; --k3:#0B2A66; cursor:pointer; border:0; background:none; font:inherit; color:inherit; padding:0}
+.svet.zeme .koule{width:62px; height:62px}
+.svet.zeme small{font-size:.74rem; color:var(--text2)}
+.svet[data-svet="qonos"]{left:46%; top:40%}
+.svet[data-svet="stredozem"]{left:76%; top:44%}
+.svet[data-svet="pandora"]{left:52%; top:76%}
+.svet[data-svet="essos"]{left:82%; top:77%}
+.svet[data-svet="qonos"] .koule{box-shadow:0 0 34px -6px var(--k2), inset -12px -14px 26px rgba(0,0,0,.5), 0 0 0 7px rgba(255,120,90,.12)}
+.svet-jazyky{display:flex; flex-wrap:wrap; justify-content:center; gap:5px; max-width:230px}
+.svet-jazyky button, .jaz.vymysleny{font:inherit; cursor:pointer; color:#1B1440; border:1px dashed #8F7BFF;
+  background:linear-gradient(120deg, #EFE4FF, #D3F4FF)}
+.svet-jazyky button{font-size:.76rem; font-weight:700; padding:5px 11px; border-radius:999px}
+.svet-jazyky button:hover, .svet-jazyky button[aria-pressed="true"]{border-style:solid; box-shadow:0 0 16px -3px #B26BFF}
+.jaz.vymysleny .nm{color:#3A2E6B}
+.jaz.vymysleny::before{background:#8F7BFF}
+.z-jinych h3{color:#8F7BFF}
+.k-hero.vymysleny, :root[data-theme="light"] .k-hero.vymysleny{color:#fff;
+  background:radial-gradient(circle at 85% 15%, rgba(255,255,255,.35) 0 1px, transparent 2px) 0 0/23px 23px,
+             radial-gradient(circle at 30% 70%, rgba(255,255,255,.25) 0 1px, transparent 2px) 0 0/37px 37px,
+             linear-gradient(135deg, #2A1B5E, #6B3FB8 50%, #1F7A8C)}
+.stopa{margin-top:8px; font-size:.78rem; font-style:italic; color:#8F7BFF}
+.tl-rodokmen{margin-top:0}
+.srovnani-vyzva{position:absolute; z-index:8; top:16px; left:50%; transform:translateX(-50%); display:flex; align-items:center; gap:10px;
+  width:max-content; max-width:calc(100% - 32px); padding:8px 8px 8px 14px; border-radius:18px; font-size:.82rem; font-weight:600; color:var(--text);
+  animation:panel-in .25s ease-out, vyzva-puls 2s ease-in-out .3s infinite}
+@keyframes vyzva-puls{50%{box-shadow:0 0 0 4px var(--cyan-slabe), 0 12px 30px -12px var(--cyan-zare)}}
+.srovnani-vyzva > svg{width:20px; height:20px; flex:none; color:var(--cyan)}
+.srovnani-vyzva button{flex:none; font:inherit; font-size:.78rem; font-weight:700; padding:6px 12px; border-radius:999px; cursor:pointer;
+  color:var(--text); background:var(--plocha); border:1px solid var(--linka2)}
+.tl-rodokmen{display:inline-flex; align-items:center; gap:8px; margin-top:12px; padding:8px 15px; border-radius:999px; cursor:pointer;
+  border:1px solid var(--sklo-okraj); background:var(--plocha); color:var(--text); font:inherit; font-size:.8rem; font-weight:600}
+.tl-rodokmen svg{width:16px; height:16px; color:var(--cyan)}
+.tl-rodokmen:hover{border-color:var(--cyan)}
+.hud{position:absolute; inset:14px; z-index:5; pointer-events:none; font-family:var(--pismo-data); font-size:.7rem; letter-spacing:.1em; color:var(--cyan)}
+.hud .souradnice{position:absolute; left:4px; bottom:3px; opacity:.85; font-variant-numeric:tabular-nums}
+.hud .stav-hud{position:absolute; right:4px; bottom:3px; opacity:.85}
+
+.tl{display:inline-flex; align-items:center; gap:8px; cursor:pointer; white-space:nowrap; font-weight:600; font-size:.84rem;
+  padding:9px 15px; border-radius:999px; color:var(--text);
+  background:var(--sklo-tl); backdrop-filter:blur(14px) saturate(160%); -webkit-backdrop-filter:blur(14px) saturate(160%);
+  border:1px solid var(--sklo-okraj); box-shadow:inset 0 1px 0 var(--sklo-lesk);
+  transition:border-color .15s, box-shadow .15s, transform .15s}
+.tl:hover{border-color:var(--cyan); box-shadow:inset 0 1px 0 var(--sklo-lesk), 0 0 20px -4px var(--cyan-zare)}
+.tl:active{transform:scale(.97)}
+.tl svg{width:16px;height:16px;flex:none}
+.tl.hlavni{background:linear-gradient(120deg,#35D6FF,#8F7BFF 60%,#B26BFF); color:#050818; border-color:transparent;
+  box-shadow:0 0 26px -6px var(--cyan-zare)}
+@keyframes toceni{to{transform:rotate(360deg)}}
+.segment{display:flex; align-items:center; gap:2px; padding:3px 3px 3px 10px; border-radius:999px;
+  background:var(--sklo-tl); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border:1px solid var(--sklo-okraj)}
+.segment svg{width:16px; height:16px; flex:none; color:var(--cyan); margin-right:4px}
+.segment button{cursor:pointer; border:0; background:transparent; color:var(--text2); font-weight:600; font-size:.74rem;
+  padding:6px 10px; border-radius:999px; white-space:nowrap}
+.segment button:hover{color:var(--text); background:var(--plocha2)}
+.segment button[aria-pressed="true"]{background:var(--cyan-slabe); color:var(--aktivni-text); box-shadow:inset 0 0 0 1px var(--cyan)}
+.odznak-filtr{font-family:var(--pismo-data); font-weight:500; font-size:.74rem; padding:1px 6px; border-radius:999px; background:var(--cyan); color:var(--na-cyan)}
+.vitalita-panel{width:min(318px, calc(100vw - 32px)); border-radius:18px; padding:12px 12px 10px; max-height:min(520px, 70vh); overflow:auto; scrollbar-width:thin}
+.vp-hlava{display:flex; align-items:center; gap:8px; margin-bottom:8px}
+.vp-hlava strong{font-family:var(--pismo-data); font-weight:500; font-size:.74rem; letter-spacing:.1em; text-transform:uppercase; color:var(--text2)}
+.vp-hlava .zavrit{width:28px; height:28px}
+.vp-predvolby{display:flex; gap:6px; margin-bottom:8px}
+.vp-predvolby button{cursor:pointer; font-weight:600; font-size:.74rem; padding:5px 11px; border-radius:999px; background:var(--plocha); border:1px solid var(--linka2); color:var(--text)}
+.vp-predvolby button:hover{border-color:var(--cyan)}
+.vp-stupne{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:4px}
+.vp-stupne button{width:100%; cursor:pointer; display:grid; grid-template-columns:18px 50px 1fr auto; align-items:center; gap:9px; text-align:left;
+  padding:6px 9px; border-radius:12px; border:1px solid var(--linka); background:transparent; color:var(--text2); font-size:.8rem; font-weight:600}
+.vp-stupne button:hover{border-color:var(--linka2); color:var(--text)}
+.vp-stupne button[aria-pressed="true"]{background:var(--cyan-slabe); border-color:var(--cyan-okraj); color:var(--text)}
+.vp-stupne .zatrzeni{width:16px; height:16px; border-radius:5px; border:1.5px solid var(--linka2); display:grid; place-items:center; font-size:.74rem; line-height:1}
+.vp-stupne button[aria-pressed="true"] .zatrzeni{background:var(--cyan); border-color:var(--cyan); color:var(--na-cyan)}
+.vp-stupne .mini{display:flex; gap:2px}
+.vp-stupne .mini i{flex:1; height:6px; border-radius:3px; background:var(--plocha2)}
+.vp-stupne .mini i.plny{background:var(--vit-barva)}
+.vp-stupne .pocet-st{font-family:var(--pismo-data); font-weight:400; font-size:.74rem; color:var(--text3); font-variant-numeric:tabular-nums}
+.vp-zdroj{margin:9px 2px 0; font-size:.78rem; line-height:1.4; color:var(--text3)}
+.ohrozeni[style] i.plny{background:var(--vit-barva); box-shadow:none}
+.zkopirovano{margin:10px 14px 0; font-size:.8rem; padding:6px 10px; border-radius:10px; background:var(--cyan-slabe); border:1px solid var(--cyan-okraj); color:var(--text)}
+.zeme-okno .zeme-pocet{margin:0 0 7px; color:var(--text)}
+.zeme-okno .zeme-pozn{margin:0 0 5px; font-size:.72rem; color:var(--text3)}
+.zoom-ovl{display:flex; align-items:center; gap:2px; padding:3px; border-radius:999px;
+  background:var(--sklo-tl); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border:1px solid var(--sklo-okraj)}
+.kolo{width:32px;height:32px; flex:none; display:grid; place-items:center; cursor:pointer; border:0; border-radius:50%;
+  background:var(--plocha); color:var(--text)}
+.kolo:hover{background:var(--cyan); color:var(--na-cyan)}
+.kolo:disabled{opacity:.3; cursor:default}
+.kolo:disabled:hover{background:var(--plocha); color:var(--text)}
+.kolo svg{width:14px;height:14px}
+.zoom-hod{min-width:46px; text-align:center; font-family:var(--pismo-data); font-size:.72rem; color:var(--cyan); font-variant-numeric:tabular-nums}
+
+.napoveda{position:absolute; z-index:5; margin:0; font-size:.76rem; color:var(--text2); pointer-events:none;
+  padding:6px 12px; border-radius:14px; background:var(--sklo-tl); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
+  border:1px solid var(--linka)}
+/* nápověda za otazníkem vpravo nahoře: tři kroky, hotový se odškrtne */
+.tl-napoveda{position:absolute; z-index:6; top:16px; right:16px; width:36px; height:36px; padding:0; border-radius:50%; cursor:pointer;
+  display:grid; place-items:center; font:700 1.05rem/1 var(--pismo-nadpis); color:var(--text); border:1px solid var(--sklo-okraj)}
+.tl-napoveda:hover,.tl-napoveda[aria-expanded="true"]{border-color:var(--cyan); color:var(--cyan)}
+@media (hover:hover){
+  .tl-napoveda::after{content:attr(aria-label); position:absolute; top:calc(100% + 7px); right:0; white-space:nowrap; pointer-events:none;
+    font:600 .62rem/1 var(--pismo-data); letter-spacing:.14em; text-transform:uppercase; color:var(--text); padding:6px 9px; border-radius:8px;
+    background:var(--sklo2); border:1px solid var(--sklo-okraj); opacity:0; transform:translateY(-3px); transition:opacity .15s, transform .15s}
+  .tl-napoveda:hover::after,.tl-napoveda:focus-visible::after{opacity:1; transform:none}
+  .tl-napoveda[aria-expanded="true"]::after{display:none}
+}
+.napoveda{z-index:7; right:16px; top:62px; max-width:min(330px,calc(100% - 32px)); padding:11px 36px 11px 12px; border-radius:16px; pointer-events:auto; font-size:.8rem;
+  transition:opacity .5s, transform .5s}
+.napoveda.mizi{opacity:0; transform:translateY(-6px); transition-delay:.6s}
+.napoveda ol{list-style:none; margin:0; padding:0; display:grid; gap:8px; counter-reset:krok}
+.napoveda li{display:flex; align-items:center; gap:10px; line-height:1.3; counter-increment:krok}
+.napoveda li i{flex:none; width:21px; height:21px; border-radius:50%; border:1.5px solid color-mix(in srgb,var(--text2) 60%,transparent); display:grid; place-items:center;
+  font:600 .68rem/1 var(--pismo-data); font-style:normal; color:var(--text); transition:background .3s, border-color .3s, color .3s}
+.napoveda li i::before{content:counter(krok)}
+.napoveda li b{color:var(--text); font-weight:600}
+.napoveda li > span{transition:opacity .3s}
+.napoveda li.hotovo i{background:var(--cyan); border-color:var(--cyan); color:var(--na-cyan)}
+.napoveda li.hotovo i::before{content:"\2713"}
+.napoveda li.hotovo > span{opacity:.5}
+.napoveda-x{position:absolute; top:7px; right:7px; width:24px; height:24px; padding:0; border:0; border-radius:8px; background:none;
+  color:var(--text2); cursor:pointer; display:grid; place-items:center}
+.napoveda-x:hover{color:var(--text); background:var(--plocha)}
+.napoveda-x svg{width:12px; height:12px}
+
+/* ---------- karta jazyka ---------- */
+.karta{position:absolute; z-index:6; left:18px; top:62px; width:min(360px,44%); max-height:calc(100% - 130px); overflow:auto;
+  padding:0; border-radius:22px; scrollbar-width:thin}
+.karta::before{content:""; position:absolute; inset:0; border-radius:inherit; padding:1.2px; pointer-events:none;
+  background:conic-gradient(from var(--uhel,0deg), #35D6FF, #B26BFF, #FF6B5E, #35D6FF);
+  -webkit-mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite:xor; mask-composite:exclude;
+  animation:obvod 7s linear infinite; opacity:.9}
+@property --uhel{syntax:"<angle>"; inherits:false; initial-value:0deg}
+.scena.spi .karta::before{animation-play-state:paused}   /* po chvíli bez dotyku ať se nepřekresluje */
+.scena .karta.sklo{backdrop-filter:blur(12px) saturate(150%); -webkit-backdrop-filter:blur(12px) saturate(150%)}
+@keyframes obvod{to{--uhel:360deg}}
+.kod{margin:0 0 3px; font-family:var(--pismo-data); font-size:.7rem; letter-spacing:.14em; text-transform:uppercase; color:var(--cyan)}
+.karta h2{font-family:var(--pismo-nadpis); font-weight:700; font-size:1.4rem; line-height:1.1; margin:0; letter-spacing:.01em}
+.karta .domaci{font-size:.82rem; color:var(--text2); margin:2px 0 0}
+.zavrit{margin-left:auto; flex:none; width:32px;height:32px; border-radius:10px; cursor:pointer; display:grid; place-items:center;
+  background:var(--plocha); border:1px solid var(--sklo-okraj)}
+.zavrit:hover{border-color:var(--cyan)}
+.zavrit svg{width:12px;height:12px}
+.pozdrav{font-family:"Noto Sans","Noto Sans Arabic","Noto Sans Devanagari","Noto Sans CJK SC","Segoe UI",system-ui,sans-serif;
+  font-size:clamp(1.5rem,4.4vw,2.1rem); line-height:1.25; font-weight:800; margin:0; overflow-wrap:break-word; text-wrap:balance}
+.prepis{margin:3px 0 0; font-style:italic; font-weight:600; font-size:1rem; opacity:.85}
+.prehraj{margin-top:12px; display:inline-flex; align-items:center; gap:7px; cursor:pointer; font-weight:700; font-size:.8rem;
+  padding:7px 15px; border-radius:999px; background:var(--r-text); color:var(--r-barva); border:0; position:relative; z-index:1}
+.prehraj:hover{transform:scale(1.04)}
+.prehraj svg{width:14px;height:14px}
+.stav{margin:10px 14px 0; font-size:.76rem; line-height:1.35; text-align:left; background:rgba(7,10,30,.88); color:#EAF4FF; border-radius:10px; padding:6px 9px}
+.fakt{margin:0; font-size:.95rem; line-height:1.55; color:var(--text)}
+.staty{display:flex; flex-wrap:wrap; gap:5px; margin:6px 0 0; padding:0; list-style:none}
+.staty li{font-size:.76rem; padding:2px 9px; border-radius:999px; background:var(--plocha); border:1px solid var(--linka)}
+.staty li.vic{background:transparent; border-style:dashed; color:var(--text2)}
+.rejstrik-pozn{margin:0 0 11px; font-size:.85rem; line-height:1.5; background:var(--plocha); border:1px dashed var(--linka2); border-radius:14px; padding:10px 12px}
+.odznak{display:inline-block; font-family:var(--pismo-data); font-size:.7rem; letter-spacing:.1em; text-transform:uppercase;
+  padding:3px 9px; border-radius:999px; background:var(--cyan-slabe); border:1px solid var(--cyan-okraj); color:var(--cyan); margin-top:5px}
+
+/* ---------- karta jako pohlednice: záhlaví v barvě rodiny, štítky, záložky ---------- */
+.k-hero{position:relative; overflow:hidden; padding:13px 15px 16px; border-radius:21px 21px 18px 18px; color:var(--r-text);
+  background:linear-gradient(150deg, color-mix(in srgb, var(--r-barva) 76%, #fff), var(--r-barva) 70%);
+  box-shadow:0 16px 36px -20px var(--r-barva)}
+:root[data-theme="light"] .k-hero{background:linear-gradient(150deg, var(--r-barva) 35%, color-mix(in srgb, var(--r-barva) 74%, #000))}
+.k-hero::before{content:""; position:absolute; inset:0; pointer-events:none; opacity:.28;      /* tečky jako na glóbu */
+  background:radial-gradient(circle, currentColor 1.1px, transparent 1.6px) 0 0/11px 11px;
+  -webkit-mask-image:radial-gradient(120% 90% at 100% 0%, #000, transparent 70%); mask-image:radial-gradient(120% 90% at 100% 0%, #000, transparent 70%)}
+.k-hero > *{position:relative}
+.k-lista{display:flex; align-items:center; gap:6px; margin-bottom:4px}
+.k-lista .kod{margin:0 auto 0 0; color:inherit; opacity:.72}
+.k-hero .zavrit{margin:0; width:30px; height:30px; color:inherit; background:color-mix(in srgb, var(--r-text) 12%, transparent); border-color:color-mix(in srgb, var(--r-text) 28%, transparent)}
+.k-hero .zavrit:hover{border-color:currentColor}
+.k-hero #k-sdilet svg{width:15px; height:15px}
+.k-pozdrav{margin:6px 0 4px}
+.k-pozdrav .pozdrav{font-size:clamp(2rem,5vw,2.7rem); line-height:1.12}
+.k-hero h2{font-family:var(--pismo-nadpis); font-weight:700; font-size:1.3rem; line-height:1.15; margin:10px 0 0}
+.k-hero .domaci{font-size:.82rem; margin:2px 0 0; color:inherit; opacity:.8}
+.k-hero .odznak{color:inherit; background:color-mix(in srgb, var(--r-text) 12%, transparent); border-color:color-mix(in srgb, var(--r-text) 30%, transparent)}
+.k-stitky{display:grid; grid-template-columns:repeat(auto-fit,minmax(96px,1fr)); gap:7px; padding:12px 14px 2px}
+.k-stitky:empty{display:none}
+.stitek{background:var(--plocha); border:1px solid var(--linka); border-radius:13px; padding:7px 10px; min-width:0}
+.st-nazev{display:block; font-family:var(--pismo-data); font-size:.7rem; letter-spacing:.1em; text-transform:uppercase; color:var(--text3)}
+.st-hodnota{display:flex; align-items:center; gap:6px; margin-top:2px; font-weight:600; font-size:.86rem; line-height:1.25}
+.st-pozn{font-weight:500; font-size:.72rem; color:var(--text3)}
+.st-tecka{width:9px; height:9px; border-radius:50%; flex:none}
+.k-telo{padding:8px 14px 14px}
+.k-telo > .podrobnosti + .podrobnosti{margin-top:6px}
+.zalozky{display:flex; gap:3px; padding:3px; margin:4px 0 12px; border-radius:999px; background:var(--plocha); border:1px solid var(--linka)}
+.zalozky button{flex:1; min-width:0; cursor:pointer; border:0; border-radius:999px; padding:6px 8px; background:transparent;
+  color:var(--text2); font-weight:600; font-size:.74rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+.zalozky button:hover{color:var(--text)}
+.zalozky button[aria-selected="true"]{background:var(--cyan-slabe); color:var(--text); box-shadow:inset 0 0 0 1px var(--cyan-okraj)}
+.k-pata{margin-top:14px; padding-top:12px; border-top:1px solid var(--linka)}
+.karta.vjezd{animation:vjezd .5s cubic-bezier(.2,.9,.3,1.15)}
+.karta.vjezd .k-pozdrav{animation:vjezd-pozdrav .7s .08s cubic-bezier(.2,.9,.3,1.3) backwards}
+@keyframes vjezd{from{opacity:0; transform:translateY(16px) scale(.97)}}
+@keyframes vjezd-pozdrav{from{opacity:0; transform:scale(.7)}}
+.uchyt{display:none}
+
+/* ---------- dok dole na glóbu a panel „Zobrazení“ ---------- */
+.dok{position:absolute; z-index:6; bottom:18px; left:var(--dok-x,50%); transform:translateX(-50%); display:flex; align-items:center; gap:4px;
+  padding:5px; border-radius:999px; white-space:nowrap}
+.dok .tl{padding:8px 14px; background:transparent; backdrop-filter:none; -webkit-backdrop-filter:none; border-color:transparent; box-shadow:none}
+.dok .tl:hover{background:var(--plocha2); box-shadow:none}
+.dok .tl.hlavni{background:linear-gradient(120deg,#35D6FF,#8F7BFF 60%,#B26BFF); color:#050818; box-shadow:0 0 22px -6px var(--cyan-zare)}
+.dok .zoom-ovl{background:transparent; backdrop-filter:none; -webkit-backdrop-filter:none; border:0; border-left:1px solid var(--linka); border-right:1px solid var(--linka); border-radius:0; padding:0 6px}
+#tl-zobrazeni[aria-expanded="true"]{background:var(--cyan-slabe); color:var(--aktivni-text)}
+.panel-zobrazeni{position:absolute; z-index:7; bottom:82px; left:var(--dok-x,50%); transform:translateX(-50%); width:min(340px, calc(100% - 24px));
+  max-height:calc(100% - 110px); overflow:auto; border-radius:20px; padding:10px; scrollbar-width:thin; animation:panel-in .25s ease-out}
+@keyframes panel-in{from{opacity:0; transform:translate(-50%, 10px)}}
+.panel-zobrazeni .vp-hlava{padding:2px 4px 2px 8px}
+.volba-radek{width:100%; display:grid; grid-template-columns:20px 1fr auto; align-items:center; gap:11px; text-align:left; cursor:pointer;
+  padding:9px 10px; border-radius:14px; border:1px solid transparent; background:transparent; color:var(--text)}
+.volba-radek:hover{background:var(--plocha); border-color:var(--linka)}
+.volba-radek > svg{width:18px; height:18px; color:var(--cyan)}
+.volba-radek b, .volba-nadpis b{display:block; font-size:.86rem; font-weight:600}
+.volba-radek small, .volba-pozn{display:block; font-size:.78rem; line-height:1.35; color:var(--text3); font-weight:400}
+.volba-radek.dal{grid-template-columns:20px 1fr auto auto}
+.sipka-dal{width:14px; height:14px; color:var(--text3)}
+.spinac{position:relative; width:38px; height:22px; border-radius:999px; background:var(--plocha2); border:1px solid var(--linka2); transition:background .2s, border-color .2s}
+.spinac::after{content:""; position:absolute; top:3px; left:3px; width:14px; height:14px; border-radius:50%; background:var(--text3); transition:transform .2s, background .2s}
+.volba-radek[aria-pressed="true"] .spinac{background:var(--cyan); border-color:var(--cyan)}
+.volba-radek[aria-pressed="true"] .spinac::after{transform:translateX(16px); background:var(--na-cyan)}
+#tl-otacet[aria-pressed="true"] > svg{animation:toceni 2.4s linear infinite}
+@keyframes toceni{to{transform:rotate(360deg)}}
+.volba-oddil{padding:9px 10px}
+.volba-nadpis{display:flex; align-items:center; gap:11px; margin:0 0 8px}
+.volba-nadpis svg{width:18px; height:18px; color:var(--cyan)}
+.volba-oddil .segment{background:var(--plocha); backdrop-filter:none; -webkit-backdrop-filter:none; padding:3px; margin-bottom:6px}
+.volba-oddil .segment button{flex:1}
+.zpet{flex:none; width:30px; height:30px; border-radius:10px; cursor:pointer; display:grid; place-items:center; background:var(--plocha); border:1px solid var(--sklo-okraj); color:var(--text)}
+.zpet:hover{border-color:var(--cyan)}
+.zpet svg{width:14px; height:14px}
+.panel-zobrazeni .vitalita-panel{width:auto; max-height:none; overflow:visible; padding:2px}
+
+/* při prvním otevření jedna tečka tiše pulzuje: dá se na ni kliknout (dřív žlutá bublina „Klikni na mě“) */
+.ukazatel{position:absolute; z-index:5; left:0; top:0; pointer-events:none; width:0; height:0}
+.ukazatel i{position:absolute; left:-15px; top:-15px; width:30px; height:30px; border-radius:50%; border:1.5px solid var(--text);
+  opacity:0; animation:pulz 2.8s ease-out infinite}
+.ukazatel i + i{animation-delay:1.4s}
+@keyframes pulz{0%{transform:scale(.3); opacity:.75} 100%{transform:scale(1.2); opacity:0}}
+@media (prefers-reduced-motion:reduce){ .ukazatel i{animation:none !important; opacity:.5; transform:scale(.7)} .ukazatel i + i{display:none} }
+
+/* ---------- podrobnosti o jazyce ze světového rejstříku ---------- */
+.podrobnosti{display:flex; flex-direction:column; gap:13px; margin-bottom:4px}
+.podrobnosti h3{margin:0 0 6px; font-family:var(--pismo-data); font-weight:400; font-size:.7rem; letter-spacing:.12em; text-transform:uppercase; color:var(--text3)}
+.podrobnosti p{margin:0; font-size:.88rem; line-height:1.45}
+.podrobnosti .pozn{font-size:.72rem; color:var(--text2); margin-top:3px}
+.ohrozeni{display:flex; gap:4px; margin:2px 0 7px}
+.ohrozeni i{flex:1; height:7px; border-radius:4px; background:var(--plocha2)}
+.ohrozeni i.plny{background:linear-gradient(90deg,var(--cyan),var(--fialova)); box-shadow:0 0 10px -2px var(--cyan-zare)}
+.ohrozeni-nazev{font-weight:700}
+.dvojice{display:grid; grid-template-columns:1fr 1fr; gap:8px}
+.ukazka{margin:0; padding:10px 12px; border-radius:14px; background:var(--plocha); border:1px solid var(--linka);
+  font-family:"Noto Sans","Noto Sans Arabic","Noto Sans Devanagari","Noto Sans CJK SC","Segoe UI",system-ui,sans-serif; font-size:.92rem; line-height:1.5}
+.vlastnosti{margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:7px}
+.vlastnosti li{display:grid; grid-template-columns:94px 1fr; gap:8px; font-size:.85rem; line-height:1.4}
+.vlastnosti b{font-family:var(--pismo-data); font-weight:400; font-size:.7rem; letter-spacing:.06em; text-transform:uppercase; color:var(--cyan); padding-top:3px}
+.cesta{font-size:.82rem; line-height:1.55}
+.cesta span{white-space:nowrap}
+.cesta .sipka{color:var(--cyan); margin:0 5px}
+.pribuzni{display:flex; flex-wrap:wrap; gap:5px; margin:0; padding:0; list-style:none}
+.pribuzni button{cursor:pointer; font-size:.76rem; padding:3px 10px; border-radius:999px; background:rgba(178,107,255,.1); border:1px solid rgba(178,107,255,.4); color:var(--text)}
+.pribuzni button:hover{border-color:var(--fialova); box-shadow:0 0 14px -3px rgba(178,107,255,.8)}
+.pribuzni .vic{font-size:.76rem; color:var(--text2); padding:4px}
+.odkazy{display:flex; gap:8px; flex-wrap:wrap}
+.odkazy a{font-size:.78rem; font-weight:600; color:var(--text); text-decoration:none; padding:5px 12px; border-radius:999px; border:1px solid var(--sklo-okraj); background:var(--plocha)}
+.odkazy a:hover{border-color:var(--cyan); box-shadow:0 0 16px -4px var(--cyan-zare)}
+
+/* ---------- police jazyků ---------- */
+.police{display:flex; flex-direction:column; min-height:0; border-radius:24px; overflow:hidden}
+.hledani{padding:14px 16px 11px; border-bottom:1px solid var(--linka); display:flex; flex-direction:column; gap:9px}
+.pole{position:relative; display:flex; align-items:center}
+.pole svg{position:absolute; left:13px; width:16px;height:16px; color:var(--cyan); pointer-events:none}
+#hledej{width:100%; font:inherit; color:var(--text); padding:10px 12px 10px 38px; border-radius:14px;
+  border:1px solid var(--sklo-okraj); background:var(--vstup)}
+#hledej:focus{outline:none; border-color:var(--cyan); box-shadow:0 0 0 3px var(--cyan-slabe), 0 0 22px -6px var(--cyan-zare)}
+#hledej::placeholder{color:var(--text3)}
+.pocet{margin:0; font-family:var(--pismo-data); font-size:.78rem; letter-spacing:.06em; color:var(--text2)}
+.seznam{overflow-y:auto; padding:6px 16px 12px; min-height:0; flex:1; scrollbar-width:thin; scrollbar-color:var(--linka2) transparent}
+.o-datech-radek{margin:0; padding:10px 16px 9px; border-top:1px solid var(--linka); display:flex; gap:9px; align-items:flex-start;
+  font-size:.8rem; line-height:1.4; color:var(--text2)}
+.odkaz-o-datech svg{width:17px; height:17px; flex:none; margin-top:1px; color:var(--cyan)}
+.odkaz-o-datech{color:var(--cyan); font-weight:600; text-decoration:underline; text-underline-offset:2px; white-space:nowrap}
+.odkaz-o-datech:hover{text-decoration-thickness:2px}
+.zdroje{margin:0; padding:9px 16px; padding-bottom:calc(9px + env(safe-area-inset-bottom,0px)); border-top:1px solid var(--linka);
+  font-family:var(--pismo-data); font-size:.78rem; letter-spacing:.04em; color:var(--text3)}
+.rodina{margin-top:18px}
+.rodina:first-child{margin-top:8px}
+.rodina h2{display:flex; align-items:center; gap:8px; margin:0 0 9px; font-family:var(--pismo-data); font-weight:400; font-size:.7rem; letter-spacing:.12em; text-transform:uppercase; color:var(--text2)}
+.rodina h2::after{content:""; flex:1; height:1px; background:linear-gradient(90deg, var(--linka2), transparent)}
+.tecka{width:9px;height:9px;border-radius:50%; flex:none; box-shadow:0 0 10px currentColor}
+.mrizka{display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr)); gap:7px}
+.mrizka + .mrizka{margin-top:7px}
+.zarazka{height:1px}
+.jaz{position:relative; text-align:left; cursor:pointer; padding:8px 10px 8px 11px; border-radius:14px;
+  background:linear-gradient(135deg, color-mix(in srgb, var(--r-barva, #5ADCFF) 12%, transparent), var(--plocha));
+  border:1px solid var(--linka); display:flex; align-items:center; gap:10px; transition:border-color .15s, box-shadow .15s, transform .15s}
+.jaz:hover{transform:translateY(-1px); border-color:color-mix(in srgb, var(--r-barva, var(--cyan)) 70%, white);
+  box-shadow:0 0 22px -8px var(--r-barva, var(--cyan))}
+.jaz[aria-pressed="true"]{border-color:var(--r-barva, var(--cyan)); box-shadow:0 0 24px -6px var(--r-barva, var(--cyan)), inset 0 0 0 1px var(--r-barva, var(--cyan))}
+.jaz .pruh{width:4px; align-self:stretch; border-radius:4px; flex:none; background:var(--r-barva, var(--text3)); box-shadow:0 0 10px var(--r-barva, transparent)}
+.jaz .txt{min-width:0}
+.jaz .nm{display:block; font-weight:600; font-size:.88rem; line-height:1.2; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.jaz .sub{display:block; font-size:.72rem; color:var(--text2); overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.jaz.s-pozdravem{flex-direction:column; align-items:flex-start; gap:2px; padding:9px 11px 9px 13px; overflow:hidden}
+.jaz.s-pozdravem::before{content:""; position:absolute; left:0; top:8px; bottom:8px; width:3px; border-radius:0 3px 3px 0; background:var(--r-barva); box-shadow:0 0 10px var(--r-barva)}
+.jaz .pz{display:block; max-width:100%; font-family:"Noto Sans","Noto Sans Arabic","Noto Sans Devanagari","Noto Sans CJK SC","Segoe UI",system-ui,sans-serif;
+  font-weight:800; font-size:1.05rem; line-height:1.25; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.jaz.s-pozdravem .nm{font-weight:500; font-size:.76rem; color:var(--text2)}
+/* jazyk dne: vlastní barvy „východu slunce“, ne barva rodiny – má vyčnívat nad ostatními dlaždicemi.
+   Bílý text má na všech třech zastávkách přechodu kontrast aspoň 4,9 : 1 (#C2410C, #BE185D, #7E22CE). */
+.jazyk-dne{position:relative; display:flex; flex-direction:column; align-items:flex-start; gap:4px; width:100%; margin:12px 0 10px; padding:16px 18px 16px;
+  border:0; border-radius:22px; cursor:pointer; text-align:left; overflow:hidden; color:#fff;
+  background:linear-gradient(135deg, #C2410C 0%, #BE185D 55%, #7E22CE 100%);
+  box-shadow:0 18px 40px -18px #BE185D, 0 0 0 1px rgba(255,255,255,.14) inset; transition:transform .18s, box-shadow .18s}
+.jazyk-dne::before{content:""; position:absolute; right:-40px; top:-50px; width:190px; height:190px; border-radius:50%; pointer-events:none;
+  background:radial-gradient(circle, rgba(255,214,140,.75), rgba(255,170,90,.25) 45%, transparent 70%)}
+.jazyk-dne::after{content:""; position:absolute; inset:0; pointer-events:none; transform:translateX(-120%);
+  background:linear-gradient(105deg, transparent 35%, rgba(255,255,255,.28) 50%, transparent 65%); animation:jd-lesk 7s ease-in-out 1.2s infinite}
+@keyframes jd-lesk{0%{transform:translateX(-120%)} 22%,100%{transform:translateX(120%)}}
+.jazyk-dne:hover{transform:translateY(-3px); box-shadow:0 24px 44px -18px #BE185D, 0 0 0 1px rgba(255,255,255,.2) inset}
+.jazyk-dne:focus-visible{outline:3px solid var(--cyan); outline-offset:3px}
+.jazyk-dne > *{position:relative; z-index:1}
+.jd-stitek{display:inline-flex; align-items:center; gap:6px; padding:4px 11px 4px 8px; border-radius:99px; margin-bottom:4px;
+  background:#fff; color:#9A3412; font-weight:700; font-size:.78rem; letter-spacing:.01em; box-shadow:0 4px 12px -4px rgba(0,0,0,.35)}
+.jd-stitek svg{width:15px; height:15px; color:#F59E0B}
+.jd-pozdrav{font-family:"Noto Sans","Noto Sans Arabic","Noto Sans Devanagari","Noto Sans CJK SC","Segoe UI",system-ui,sans-serif; font-weight:800; font-size:2.5rem; line-height:1.1;
+  text-shadow:0 2px 14px rgba(80,0,40,.35); max-width:100%; overflow-wrap:anywhere}
+.jd-nazev{font-weight:600; font-size:.95rem}
+.jd-fakt{font-size:.84rem; line-height:1.4; opacity:.92; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; margin-top:2px}
+.jd-akce{display:inline-flex; align-items:center; gap:4px; margin-top:8px; padding:7px 12px 7px 14px; border-radius:99px;
+  background:rgba(255,255,255,.18); box-shadow:0 0 0 1px rgba(255,255,255,.35) inset; font-weight:700; font-size:.82rem}
+.jd-akce svg{width:14px; height:14px}
+.jazyk-dne:hover .jd-akce{background:rgba(255,255,255,.3)}
+@media (prefers-reduced-motion: reduce){ .jazyk-dne::after{animation:none; display:none} }
+.razeni{display:flex; background:var(--plocha); backdrop-filter:none; -webkit-backdrop-filter:none; padding:3px}
+.razeni button{flex:1}
+.jaz.tecka-jaz{background:var(--plocha)}
+.mrizka.drobne{grid-template-columns:repeat(auto-fill,minmax(130px,1fr)); gap:5px}
+.drobne .jaz{padding:5px 8px 5px 9px; border-radius:10px; gap:8px}
+.drobne .jaz .pruh{width:3px}
+.drobne .jaz .nm{font-size:.8rem}
+.drobne .jaz .sub{font-size:.74rem}
+.dalsi{margin:12px 0 6px; font-family:var(--pismo-data); font-size:.74rem; letter-spacing:.06em; text-transform:uppercase; color:var(--text3)}
+.jaz.tecka-jaz .pruh{background:var(--tecka-jazyk); opacity:.6; box-shadow:0 0 8px var(--tecka-jazyk)}
+.prazdno{padding:26px 4px; text-align:center; color:var(--text2); font-size:.88rem}
+
+/* ---------- vyskakovací okénka ---------- */
+.zeme-okno{position:absolute; z-index:7; border-radius:16px; padding:10px 12px; max-width:250px}
+.zeme-okno h4{margin:0 0 6px; font-family:var(--pismo-nadpis); font-weight:700; font-size:1rem}
+.zeme-okno p{margin:0; font-size:.8rem; color:var(--text2)}
+.zeme-okno ul{margin:0; padding:0; list-style:none; display:flex; flex-wrap:wrap; gap:5px}
+.zeme-okno button{cursor:pointer; font-size:.76rem; padding:3px 10px; border-radius:999px; background:var(--plocha); border:1px solid var(--linka2)}
+.zeme-okno button:hover{border-color:var(--cyan)}
+.bublina-bod{position:absolute; z-index:8; pointer-events:none; max-width:240px; font-family:var(--pismo-data); font-size:.74rem; letter-spacing:.02em;
+  padding:5px 10px; border-radius:10px; color:#DFF8FF; background:rgba(4,8,24,.9); border:1px solid rgba(53,214,255,.5); box-shadow:0 0 18px -6px rgba(53,214,255,.8)}
+.vypadek{position:absolute; inset:0; z-index:4; display:flex; flex-direction:column; justify-content:center; gap:8px; padding:30px; text-align:center; color:var(--text)}
+.vypadek strong{font-family:var(--pismo-nadpis); font-size:1.2rem}
+.vypadek span{font-size:.9rem; max-width:36ch; margin:0 auto; color:var(--text2)}
+
+@media (prefers-reduced-motion:reduce){ *{animation-duration:.001ms !important; transition-duration:.001ms !important} }
+
+/* ---------- mobil ---------- */
+@media (max-width:620px){
+  .app{padding:8px; gap:8px}
+  .hlava{gap:10px 12px; padding:9px 12px; border-radius:18px}
+  .znak{width:36px;height:36px}
+  .nadpisy{flex:1 1 auto}
+  .jazyk-prepinac{height:34px; padding:2px}
+  .jazyk-prepinac a{padding:0 7px}
+  .prepinac{width:34px; height:34px}
+}
+@media (max-width:920px){
+  .app{height:auto; min-height:100%}
+  .mriz{grid-template-columns:minmax(0,1fr); grid-template-rows:auto auto}
+  .scena{display:flex; flex-direction:column; overflow:visible; border-radius:22px; padding-bottom:8px}
+  .scena canvas{position:absolute; inset:auto; top:0; left:0; width:100%; height:auto; aspect-ratio:1/1; max-height:58vh}
+  .scena .globus-misto{width:100%; aspect-ratio:1/1; max-height:58vh; flex:none}
+  .hud{inset:10px; bottom:auto; height:calc(min(100vw - 16px, 58vh) - 20px)}
+  .hud .souradnice{top:3px; bottom:auto}
+    .tl-napoveda{top:10px; right:10px}
+    .napoveda{top:54px; right:10px; max-width:calc(100% - 20px)}
+  .dok{position:relative; left:auto; bottom:auto; transform:none; align-self:center; margin:4px auto 10px; max-width:calc(100% - 16px)}
+  .dok .tl{padding:8px 11px}
+  .dok .zoom-hod{display:none}
+  .panel-zobrazeni{position:relative; left:auto; bottom:auto; transform:none; width:auto; max-height:none; margin:0 12px 12px; animation:none}
+  .strom-hlava{top:8px; left:8px; right:8px; max-width:none; justify-content:space-between}
+  /* na telefonu místo volně rozházených světů přehledná mřížka, glóbus i jeho místo zmizí */
+  .scena.rezim-brana .globus-misto{display:none}
+  .brana{position:relative; inset:auto}
+  .brana-hlava{position:static; width:auto; margin:8px 8px 0; padding:10px 12px; display:flex; align-items:center; justify-content:space-between; gap:8px}
+  .brana-hlava strong{font-size:.92rem}
+  .brana-hlava p{display:none}
+  .brana-hlava .tl-rodokmen{flex:none}
+  .brana-svety{position:static; display:grid; grid-template-columns:1fr 1fr; gap:16px 10px; padding:16px 8px 12px}
+  .svet, .svet[data-svet]{position:static; transform:none}
+  .svet .koule{width:88px; height:88px}
+  .svet.zeme{grid-column:1 / -1; order:9; flex-direction:row; justify-content:center; gap:10px}
+  .svet.zeme .koule{width:36px; height:36px}
+  .svet-jazyky{max-width:none}
+  .eu-panel{top:8px; left:8px; right:8px; width:auto; padding:9px; gap:4px 10px}
+  .srovnani-vyzva{top:8px; left:8px; right:8px; transform:none; width:auto; max-width:none; animation:vyzva-puls 2s ease-in-out infinite}
+  .eu-vlajka{width:60px; height:40px}
+  .eu-jazyky{display:none}
+  .eu-text p{display:none}                /* na telefonu jen nadpis, ať panel nezakrývá Evropu */
+  .eu-text strong{font-size:.88rem}
+  .strom-hlava select{max-width:none; flex:1}
+  .strom-hlava{flex-wrap:wrap; border-radius:22px}                      /* výběr rodiny na celý řádek, tlačítka pod ním */
+  .strom-hlava label{flex:1 1 100%}
+  .strom-hlava button{flex:1 1 0}
+  .strom-napoveda{position:static; max-width:none; margin:0 12px 10px; order:5}
+  /* karta jako list, který vyjede zespodu; tažením nahoru se roztáhne */
+  .karta{position:fixed; z-index:30; left:0; right:0; bottom:0; top:auto; width:auto; max-height:50vh; border-radius:26px 26px 0 0;
+    transition:max-height .3s ease, transform .25s ease; overscroll-behavior:contain; padding-bottom:env(safe-area-inset-bottom,0px); box-shadow:0 -18px 50px -10px rgba(0,0,0,.55)}
+  .karta.plna{max-height:90vh}
+  .karta.vjezd{animation:vyjezd .4s cubic-bezier(.2,.9,.3,1)}
+  @keyframes vyjezd{from{transform:translateY(100%)}}
+  .uchyt{display:block; position:sticky; top:0; z-index:5; width:100%; height:30px; margin-bottom:-30px; border:0; background:transparent; cursor:pointer; touch-action:none; color:#fff}
+  .uchyt i{display:block; width:52px; height:6px; margin:9px auto 0; border-radius:3px; background:currentColor; opacity:.75; box-shadow:0 1px 4px rgba(0,0,0,.3)}
+  .k-hero{touch-action:none}              /* tažení za záhlaví posouvá list, ne stránku */
+  /* uklizená karta: jen lišta se jménem a pozdravem, zbytek plochy patří glóbu nebo stromu */
+  .karta.mala{max-height:128px; overflow:hidden}
+  .karta.mala :is(.prepis,.domaci,.prehraj,.odznak,.k-stitky,.k-telo,.stav,.zkopirovano){display:none}
+  .karta.mala .k-hero{padding-bottom:12px}
+  .karta.mala .k-hero .pozdrav{font-size:1.5rem}
+  .karta.mala .k-hero h2{margin:0}
+  .scena:has(.karta.mala:not([hidden])) ~ .police{padding-bottom:150px}
+  .k-hero{border-radius:26px 26px 18px 18px; padding-top:22px}
+  .scena:has(.karta:not([hidden])) ~ .police{padding-bottom:52vh}
+  .police{max-height:none}
+  .seznam{overflow:visible}
+}
+@media (max-width:700px){        /* s tlačítkem Vitalita se popisky do lišty vejdou až od 700 px */
+  .dok .tl:not(.hlavni) span{position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap}
+  .dok .tl:not(.hlavni){padding:9px 11px}
+}
+
+/* ==============================================================================================   REDESIGN (náhled 24. 9. 2026): „obrázková encyklopedie“ podle obrázku B (den) a C (noc).
+   Patkové titulky (Playfair Display), papírový podklad, bílé karty s jemným stínem, červené hlavní tlačítko,
+   reliéfní glóbus. Denní vzhled = B, noční = C (tmavá modř, tlumený reliéf, světélka).
+   ===================================================================================================== */
+:root{
+  --pismo-nadpis:"Playfair Display",Georgia,"Times New Roman",serif;
+  --pismo-data:"Outfit",system-ui,sans-serif;
+  --pismo-pozdrav:"Playfair Display","Noto Serif",Georgia,"Noto Sans Arabic","Noto Sans Devanagari","Noto Sans CJK SC",serif;
+  --pozadi:radial-gradient(120% 90% at 40% 30%, #0C1734, #050914 70%) fixed, #050914;
+  --sklo:rgba(11,18,38,.82); --sklo2:rgba(14,23,48,.9); --sklo-okraj:rgba(170,195,255,.13); --sklo-lesk:rgba(255,255,255,.05);
+  --akcent:#E0503F; --na-akcent:#FFFFFF;
+  --uzemi:#F2913D; --souse-vit:#1F2B55;   /* území vybraného jazyka na glóbu: oranžová, ať nesplývá s modrým mořem */
+  --nadpis-grad:none;
+  --atmosfera:rgba(90,150,255,.3); --atmosfera2:rgba(60,110,230,0);
+  --sit:rgba(160,200,255,.07);
+}
+:root[data-theme="light"]{
+  --pozadi:#FBF9F4;   /* světlý papír jako stránka knihy */
+  --sklo:#FFFFFF; --sklo2:#FFFFFF; --sklo-okraj:rgba(20,24,40,.08); --sklo-lesk:rgba(255,255,255,0);
+  --text:#15192B; --text2:#5A6073; --text3:#676D7E;
+  --cyan:#1F4FB8; --cervena:#D23A2B; --akcent:#D23A2B; --uzemi:#EE7A22; --souse-vit:#E6E8EC;
+  --linka:rgba(20,24,40,.09); --linka2:rgba(20,24,40,.18); --plocha:rgba(20,24,40,.035); --plocha2:rgba(20,24,40,.07);
+  --sklo-tl:#FFFFFF; --vstup:#FFFFFF; --stin:rgba(25,32,60,.2);
+  --cyan-slabe:rgba(31,79,184,.08); --cyan-okraj:rgba(31,79,184,.35); --cyan-zare:rgba(31,79,184,.25);
+  --aktivni-text:#15306E;
+  --atmosfera:rgba(110,160,230,.32); --atmosfera2:rgba(160,195,240,0);
+  --sit:rgba(255,255,255,.2); --stin-koule:rgba(8,28,80,.2); --okraj-koule:rgba(20,60,140,.25);
+  --tecka-jazyk:#7A2E1C; --tecka-lem:#FBF9F4;   /* teplý inkoust se světlým lemem (28. 9. 2026, proti „modré kaši“) */
+}
+.sklo{background:var(--sklo); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border:1px solid var(--sklo-okraj);
+  box-shadow:0 1px 0 var(--sklo-lesk) inset, 0 14px 40px -22px var(--stin)}
+:root[data-theme="light"] .sklo{backdrop-filter:none; -webkit-backdrop-filter:none; box-shadow:0 1px 2px rgba(20,24,40,.04), 0 18px 40px -26px var(--stin)}
+#hvezdy{opacity:.7}
+:root[data-theme="light"] #hvezdy{display:none}
+
+/* záhlaví: bez karty, jen tenká linka jako v knize */
+.hlava{background:transparent; box-shadow:none; border:0; border-bottom:1px solid var(--linka); border-radius:0; padding:6px 4px 12px;
+  backdrop-filter:none; -webkit-backdrop-filter:none}
+h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2vw,2.35rem); letter-spacing:-.005em; line-height:1.05;
+  background:none; color:var(--text); -webkit-background-clip:border-box; background-clip:border-box}
+.jazyk-prepinac,.prepinac{background:var(--sklo); border:1px solid var(--linka2); border-radius:999px}
+.prepinac{border-radius:50%}
+
+/* hlavní tlačítko červeně (obrázek B) */
+.tl.hlavni,.dok .tl.hlavni{background:var(--akcent); color:var(--na-akcent); border-color:transparent; box-shadow:0 8px 20px -10px var(--akcent)}
+.tl.hlavni:hover,.dok .tl.hlavni:hover{background:color-mix(in srgb, var(--akcent) 88%, #000); box-shadow:0 10px 22px -10px var(--akcent)}
+.dok{border-radius:999px; padding:6px}
+.tl:hover{box-shadow:none}
+
+/* pozdravy patkovým písmem */
+.pozdrav,.jaz .pz,.jd-pozdrav{font-family:var(--pismo-pozdrav); font-weight:700; letter-spacing:-.01em}
+.k-pozdrav .pozdrav{font-size:clamp(2.2rem,5.2vw,3rem); line-height:1.05}
+.karta h2,.k-hero h2{font-family:var(--pismo-nadpis); font-weight:600; font-size:1.55rem; letter-spacing:0}
+.prepis{font-family:var(--pismo-nadpis); font-weight:500}
+
+/* štítky nadpisů: řídké verzálky (kod, rodiny v seznamu, počty) */
+.kod,.rodina h2,.pocet,.stitek-nadpis,.k-stitky .stitek > :first-child{font-family:var(--pismo-text); letter-spacing:.16em; text-transform:uppercase; font-weight:600}
+.pocet{letter-spacing:.08em; text-transform:none; font-weight:500}
+
+/* karta jazyka: bílý list s pohlednicí nahoře; bez svítícího obvodu */
+.karta::before{display:none}
+.karta{border-radius:20px}
+:root[data-theme="light"] .scena .karta.sklo{background:#FFFFFF}
+.k-hero{margin:8px; border-radius:14px; padding:14px 16px 18px;
+  background:linear-gradient(160deg, color-mix(in srgb, var(--r-barva) 88%, #fff) 0%, var(--r-barva) 55%, color-mix(in srgb, var(--r-barva) 80%, #000) 100%);
+  box-shadow:0 12px 26px -18px var(--r-barva)}
+:root[data-theme="light"] .k-hero{background:linear-gradient(160deg, color-mix(in srgb, var(--r-barva) 88%, #fff) 0%, var(--r-barva) 55%, color-mix(in srgb, var(--r-barva) 80%, #000) 100%)}
+/* pohlednice: jemné papírové zrno a obvodová linka jako u známky */
+.k-hero::before{opacity:.5; background:
+  repeating-linear-gradient(0deg, rgba(255,255,255,.035) 0 1px, transparent 1px 3px),
+  radial-gradient(120% 80% at 100% 0%, rgba(255,255,255,.22), transparent 60%);
+  -webkit-mask-image:none; mask-image:none}
+.k-hero::after{content:""; position:absolute; inset:6px; border:1px solid rgba(255,255,255,.28); border-radius:10px; pointer-events:none}
+.k-stitky{padding:10px 14px 2px}
+.stitek{border-radius:12px; background:var(--plocha)}
+
+/* cesta v rodokmenu (obrázek C) */
+.k-cesta{display:flex; flex-wrap:wrap; align-items:center; gap:4px 5px; margin:12px 14px 0; padding:10px 12px; border-radius:14px;
+  border:1px solid var(--linka); background:var(--plocha)}
+.k-cesta::before{content:attr(aria-label); flex-basis:100%; font-size:.7rem; font-weight:600; letter-spacing:.16em; text-transform:uppercase; color:var(--text2); margin-bottom:3px}
+.k-cesta button{font:inherit; font-size:.76rem; font-weight:600; color:var(--text); cursor:pointer; padding:4px 10px; border-radius:999px;
+  background:var(--sklo); border:1px solid var(--linka2)}
+.k-cesta button:hover{border-color:var(--cyan); color:var(--cyan)}
+.k-cesta button.posledni{background:var(--r-barva, var(--cyan)); color:var(--r-text, #fff); border-color:transparent}
+.k-cesta-sip{color:var(--text3); font-size:.9rem}
+.k-porovnat{border-radius:999px}
+.zalozky{border-radius:999px}
+
+/* seznam: bílé dlaždice, patkový pozdrav */
+.jaz{background:var(--sklo); border:1px solid var(--linka); border-radius:12px}
+:root:not([data-theme="light"]) .jaz{background:rgba(255,255,255,.03)}
+.jaz.s-pozdravem::before{box-shadow:none}
+.jaz .pz{font-size:1.15rem}
+.rodina h2{font-size:.7rem; color:var(--text2)}
+.rodina h2::after{background:var(--linka)}
+.tecka{box-shadow:none}
+
+/* jazyk dne jako pohlednice z obrázku B: bílá karta, červená tečka, velký patkový pozdrav */
+.jazyk-dne{color:var(--text); background:var(--sklo); border:1px solid var(--linka); border-radius:18px;
+  box-shadow:0 18px 40px -26px var(--stin)}
+.jazyk-dne::before{right:auto; left:auto; top:auto; bottom:-70px; right:-50px; width:220px; height:220px;
+  background:radial-gradient(circle, color-mix(in srgb, var(--akcent) 22%, transparent), transparent 70%)}
+.jazyk-dne::after{display:none}
+.jazyk-dne:hover{box-shadow:0 22px 44px -24px var(--stin)}
+.jd-stitek{background:transparent; color:var(--text); box-shadow:none; padding:0; font-family:var(--pismo-nadpis); font-weight:600; font-size:1rem; letter-spacing:0}
+.jd-stitek svg{display:none}
+.jd-stitek::before{content:""; width:10px; height:10px; border-radius:50%; background:var(--akcent); margin-right:3px}
+.jd-pozdrav{font-size:2.9rem; line-height:1.02; color:var(--text); text-shadow:none}
+.jd-nazev{font-family:var(--pismo-nadpis); font-weight:500; font-size:1.2rem; color:var(--text)}
+.jd-fakt{color:var(--text2); opacity:1}
+.jd-akce{background:var(--akcent); color:var(--na-akcent); border:0}
+.jazyk-dne:hover .jd-akce{background:color-mix(in srgb, var(--akcent) 88%, #000)}
+
+.znak{color:var(--text); width:48px; height:48px}
+.hud{color:var(--text2)}
+.hlava.sklo,:root[data-theme="light"] .hlava.sklo{box-shadow:none; background:transparent}
+
+
+/* pohlednice s malovanou krajinou (src/akvarely.js): malba nahoře přes celou šířku, text pod ní na kartě */
+.k-hero.s-malbou{background:transparent; color:var(--text); box-shadow:none; padding-top:0; margin:0}
+:root[data-theme="light"] .k-hero.s-malbou{background:transparent}
+.k-hero.s-malbou::before,.k-hero.s-malbou::after{display:none}
+.k-hero > .k-malba{display:block; position:relative; margin:0 -16px 12px; aspect-ratio:400/250; overflow:hidden; border-radius:20px 20px 0 0; background:#FBF7EE}
+.k-malba svg,.jd-malba svg,.k-malba img,.jd-malba img{display:block; width:100%; height:100%; object-fit:cover}
+.k-malba img,.jd-malba img{opacity:0; transition:opacity .6s ease}
+.k-malba img.ukazana,.jd-malba img.ukazana{opacity:1}
+@media (prefers-reduced-motion:reduce){ .k-malba img,.jd-malba img{transition:none} }
+.k-malba canvas.zive,.jd-malba canvas.zive{position:absolute; inset:0; width:100%; height:100%; display:block; opacity:0; transition:opacity .8s ease}
+.k-malba canvas.zive.ukazana,.jd-malba canvas.zive.ukazana{opacity:1}
+.k-hero.s-malbou .k-lista{position:absolute; top:10px; left:12px; right:12px; z-index:2; margin:0}
+.k-hero.s-malbou .k-lista .kod{color:#15192B; opacity:1; background:rgba(255,255,255,.82); padding:3px 8px; border-radius:99px}
+.k-hero.s-malbou .zavrit{color:#15192B; background:rgba(255,255,255,.85); border-color:transparent}
+.k-hero.s-malbou .k-pozdrav{margin-top:0}
+.k-hero.s-malbou .prepis,.k-hero.s-malbou .domaci{color:var(--text2); opacity:1}
+.k-hero.s-malbou .prehraj{background:var(--r-barva); color:var(--r-text)}
+.k-hero.s-malbou h2{margin-top:6px}
+/* jazyk dne: malba nahoře jako obrázek na pohlednici */
+.jazyk-dne > .jd-malba{position:relative; display:block; align-self:stretch; aspect-ratio:400/210; margin:-16px -18px 10px; overflow:hidden; border-radius:18px 18px 0 0}
+.jazyk-dne.s-malbou::before{display:none}
+@media (max-width:920px){
+  .k-hero > .k-malba{aspect-ratio:400/165; border-radius:22px 22px 0 0}
+  .karta.mala .k-hero > .k-malba{display:none}
+  .karta.mala .k-hero.s-malbou .k-lista{position:static}
+}
+
+/* logo + název = odkaz „domů“: vrátí stránku do výchozího stavu (domu() v app.js) */
+.domu{display:flex; align-items:center; gap:14px; margin-right:auto; min-width:0; color:inherit; text-decoration:none; border-radius:14px}
+.domu .znak{width:56px; height:56px; flex:none; color:var(--text); --pozadi-loga:transparent; transition:transform .25s}
+.domu:hover .znak{transform:rotate(-8deg) scale(1.04)}
+.domu h1{font-size:clamp(1.9rem,3.8vw,2.8rem)}
+@media (max-width:620px){ .domu{gap:10px} .domu .znak{width:42px; height:42px} .domu h1{font-size:clamp(1.05rem, 4.9vw, 1.7rem); white-space:nowrap} }
+@media (prefers-reduced-motion:reduce){ .domu:hover .znak{transform:none} }
+
+/* Brána do jiných světů má vždy tmavé hvězdné nebe, i v denním vzhledu (přání uživatele: světy nepatří na papír) */
+.scena.rezim-brana{
+  --text:#EAF4FF; --text2:#A3B6D8; --text3:#8494BA; --linka:rgba(150,205,255,.16); --linka2:rgba(150,205,255,.3);
+  --sklo:rgba(14,22,56,.72); --sklo2:rgba(20,30,74,.8); --sklo-okraj:rgba(150,205,255,.2); --plocha:rgba(255,255,255,.06); --pozadi:#050A1E;
+  color:var(--text); border-radius:24px;
+  background:
+    radial-gradient(1.2px 1.2px at 12% 18%, #fff 60%, transparent), radial-gradient(1px 1px at 27% 64%, #cfe3ff 60%, transparent),
+    radial-gradient(1.4px 1.4px at 41% 12%, #fff 60%, transparent), radial-gradient(1px 1px at 58% 38%, #fff 60%, transparent),
+    radial-gradient(1.3px 1.3px at 67% 83%, #dfe9ff 60%, transparent), radial-gradient(1px 1px at 78% 22%, #fff 60%, transparent),
+    radial-gradient(1.5px 1.5px at 88% 57%, #fff 60%, transparent), radial-gradient(1px 1px at 8% 88%, #fff 60%, transparent),
+    radial-gradient(1px 1px at 34% 91%, #cfe3ff 60%, transparent), radial-gradient(1.2px 1.2px at 94% 8%, #fff 60%, transparent),
+    radial-gradient(1px 1px at 18% 42%, #fff 60%, transparent), radial-gradient(1px 1px at 52% 58%, #dfe9ff 60%, transparent),
+    radial-gradient(120% 90% at 60% 35%, #16205A, #050A1E 72%);
+}
+.scena.rezim-brana .sklo{background:var(--sklo); border-color:var(--sklo-okraj)}
+:root[data-theme="light"] .scena.rezim-brana .karta.sklo,.scena.rezim-brana .karta.sklo{background:linear-gradient(150deg, var(--sklo2), var(--sklo) 60%); border-color:var(--sklo-okraj)}
+.scena.rezim-brana .stitek{background:var(--plocha); border-color:var(--linka)}
+/* Evropský den jazyků (26. září): karta nad Jazykem dne, pozdravy evropských jazyků se střídají */
+.den-jazyku{position:relative; display:flex; flex-direction:column; align-items:flex-start; gap:4px; margin:12px 0 4px; padding:16px 18px;
+  border-radius:22px; color:#fff; overflow:hidden; background:linear-gradient(135deg, #1D4ED8 0%, #0E7490 60%, #0F766E 100%);
+  box-shadow:0 18px 40px -20px #1D4ED8, 0 0 0 1px rgba(255,255,255,.14) inset}
+.den-jazyku::before{content:"“"; position:absolute; right:14px; bottom:-58px; font:700 150px/1 Georgia, serif; color:rgba(255,255,255,.1); pointer-events:none}
+.den-jazyku > *{position:relative}
+.dj-stitek{display:inline-flex; padding:4px 11px; border-radius:99px; background:#fff; color:#1D4ED8; font-weight:700; font-size:.78rem}
+.dj-pozdrav{font-family:"Noto Sans","Noto Sans Arabic","Segoe UI",system-ui,sans-serif; font-weight:800; font-size:2.3rem; line-height:1.1; margin-top:6px; min-height:2.6rem}
+.dj-pozdrav.dj-vjezd{animation:dj-vjezd .5s cubic-bezier(.2,.8,.3,1)}
+@keyframes dj-vjezd{from{opacity:0; transform:translateY(8px)}}
+.dj-jazyk{font-weight:600; font-size:.9rem; opacity:.9}
+.dj-text{margin:6px 0 0; font-size:.86rem; line-height:1.45; opacity:.95}
+.dj-akce{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
+.dj-tl{font:inherit; font-weight:700; font-size:.82rem; padding:7px 14px; border-radius:99px; cursor:pointer; color:#fff;
+  background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.4)}
+.dj-tl.hlavni{background:#fff; color:#1D4ED8; border-color:#fff}
+.dj-tl:hover{transform:translateY(-1px)}
+.dj-zavrit{position:absolute; top:10px; right:10px; width:28px; height:28px; border-radius:50%; display:grid; place-items:center; cursor:pointer;
+  color:#fff; background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.3); padding:0}
+.dj-zavrit svg{width:11px; height:11px}
+@media (prefers-reduced-motion:reduce){ .dj-pozdrav.dj-vjezd{animation:none} }
+/* redesign: Den jazyků jako bílá karta z knihy, s modrým akcentem (Jazyk dne má červený) */
+.den-jazyku{color:var(--text); background:var(--sklo); border:1px solid var(--linka); box-shadow:0 18px 40px -26px var(--stin); border-radius:18px}
+.den-jazyku::before{color:color-mix(in srgb, var(--cyan) 10%, transparent)}
+.dj-stitek{background:transparent; color:var(--text); padding:0; font-family:var(--pismo-nadpis); font-weight:600; font-size:1rem; gap:8px; align-items:center}
+.dj-stitek::before{content:""; width:10px; height:10px; border-radius:50%; background:var(--cyan)}
+.dj-pozdrav{font-family:var(--pismo-pozdrav); font-weight:700; font-size:2.6rem}
+.dj-jazyk{font-family:var(--pismo-nadpis); font-weight:500; font-size:1.1rem}
+.dj-text{color:var(--text2)}
+.dj-tl{color:var(--cyan); background:transparent; border-color:var(--cyan-okraj)}
+.dj-tl.hlavni{background:var(--cyan); color:var(--na-cyan); border-color:var(--cyan)}
+.dj-zavrit{color:var(--text2); background:var(--plocha); border-color:var(--linka)}
+
+/* Přístupnost a drobnosti podle dvou nezávislých hodnocení webu (24. 9. 2026) */
+.preskocit{position:absolute; left:12px; top:-60px; z-index:100; padding:10px 16px; border-radius:12px; background:var(--akcent); color:var(--na-akcent);
+  font-weight:600; text-decoration:none; transition:top .15s}
+.preskocit:focus{top:12px; outline:3px solid var(--cyan); outline-offset:2px}
+.paticka{display:contents}
+#hledej{padding-right:44px}
+#hledej::-webkit-search-cancel-button{-webkit-appearance:none; appearance:none}   /* vlastní křížek níž, ať nejsou dva */
+.hledej-x{position:absolute; right:4px; top:50%; transform:translateY(-50%); width:36px; height:36px; display:grid; place-items:center;
+  border:0; border-radius:10px; background:transparent; color:var(--text2); cursor:pointer}
+.hledej-x svg{position:static; width:14px; height:14px; color:currentColor}
+.hledej-x:hover,.hledej-x:focus-visible{background:var(--plocha2); color:var(--text)}
+/* malba v nočním vzhledu ztlumená, ať v tmavé kartě nesvítí jako lampa */
+:root:not([data-theme="light"]) .k-malba,:root:not([data-theme="light"]) .jd-malba{filter:brightness(.8) saturate(.92)}
+/* na dotykových displejích větší terče (zoom, křížky) */
+@media (pointer:coarse){
+  .kolo,.zavrit{width:40px; height:40px}
+  .vp-hlava .zavrit{width:36px; height:36px}
+}
+/* souřadnice na kartě malými písmeny: „48,0° s. š.“ (verzálky „S. Š.“ se špatně čtou) */
+.kod.sour{text-transform:none; letter-spacing:.04em}
+
+/* O datech: odkaz v patičce seznamu a okno (<dialog>) */
+.odkaz-o-datech{display:inline-flex; align-items:center; gap:8px; padding:4px 0; border:0; background:none; font:inherit; font-size:.85rem; font-weight:600; color:var(--cyan); cursor:pointer}
+.o-datech{width:min(720px, calc(100vw - 32px)); max-height:min(86vh, 900px); padding:0; border:1px solid var(--sklo-okraj); border-radius:22px;
+  background:var(--sklo2); color:var(--text); box-shadow:0 30px 80px -30px rgba(0,0,0,.6); overflow:hidden}
+.o-datech[open]{display:flex; flex-direction:column}
+.o-datech::backdrop{background:rgba(8,12,28,.5); backdrop-filter:blur(3px)}
+.od-hlava{display:flex; align-items:center; gap:12px; padding:18px 20px 12px 24px; border-bottom:1px solid var(--linka)}
+.od-hlava h2{margin:0; font-family:var(--pismo-nadpis); font-weight:600; font-size:1.55rem; line-height:1.2}
+.od-telo{overflow:auto; padding:6px 24px 24px; line-height:1.55; font-size:.95rem}
+.od-telo h3{margin:22px 0 6px; font-family:var(--pismo-nadpis); font-weight:600; font-size:1.15rem}
+.od-telo p{margin:0 0 9px; color:var(--text2)}
+.od-telo .od-uvod{margin-top:14px; font-size:1.02rem; color:var(--text)}
+.od-verze{width:100%; border-collapse:collapse; font-size:.86rem}
+.od-verze td{padding:7px 8px 7px 0; border-bottom:1px solid var(--linka); vertical-align:top; color:var(--text2)}
+.od-verze td:first-child{color:var(--text)}
+.od-verze td:last-child{white-space:nowrap; text-align:right; padding-right:0}
+@media (max-width:620px){ .od-verze td:nth-child(2){display:none} .od-telo{padding:4px 18px 20px} }
+.o-datech-radek{flex-wrap:wrap; align-items:center; column-gap:18px}
+.odkaz-jazyky{font-size:.85rem; font-weight:600; color:var(--cyan); text-underline-offset:2px}
+/* zpětná vazba e-mailem (info@atlasjazyku.cz, přesměrovaná na autora) */
+.zpetna{margin:0; padding:10px 16px 9px; border-top:1px solid var(--linka); display:flex; gap:9px; align-items:flex-start;
+  font-size:.8rem; line-height:1.4; color:var(--text2)}
+.zpetna svg{width:17px; height:17px; flex:none; margin-top:1px; color:var(--cyan)}
+.zpetna a{color:var(--cyan); font-weight:600; text-decoration:underline; text-underline-offset:2px; white-space:nowrap}
+.zpetna a:hover{text-decoration-thickness:2px}
+.zpetna + .o-datech-radek{border-top:0; padding-top:0}
+/* patička seznamu je sbalená do jednoho řádku (uživatel 25. 9. 2026: „zabírá zbytečně moc místa“) */
+.pat-det{flex:none; border-top:1px solid var(--linka)}
+.pat-det > summary{display:flex; align-items:center; gap:9px; padding:9px 16px; padding-bottom:calc(9px + env(safe-area-inset-bottom,0px));
+  list-style:none; cursor:pointer; font-size:.8rem; font-weight:600; color:var(--text2); user-select:none}
+.pat-det > summary::-webkit-details-marker{display:none}
+.pat-det > summary > svg{width:16px; height:16px; flex:none; color:var(--cyan)}
+.pat-det > summary .pat-sipka{width:13px; height:13px; margin-left:auto; color:var(--text3); transform:rotate(-90deg); transition:transform .2s}
+.pat-det[open] > summary .pat-sipka{transform:rotate(90deg)}
+.pat-det > summary:hover{color:var(--text)}
+.pat-det > summary:focus-visible{outline:2px solid var(--cyan); outline-offset:-2px; border-radius:8px}
+.pat-det .zpetna{border-top:0; padding-top:0}
+.pat-det .o-datech-radek{padding-top:2px}
+.pat-det .zdroje{border-top:1px solid var(--linka)}
+@media (prefers-reduced-motion:reduce){ .pat-det > summary .pat-sipka{transition:none} }
+/* tlačítko „Vitalita“ v liště a vysvětlivka stupňů, jen když jsou barvy zapnuté */
+#tl-vitalita-dok:not(.med)[aria-pressed="true"]{background:var(--cyan-slabe); color:var(--aktivni-text)}
+.vit-legenda{position:absolute; z-index:6; bottom:80px; left:var(--dok-x,50%); transform:translateX(-50%); border-radius:999px; padding:3px; max-width:calc(100% - 24px)}
+.vit-legenda[hidden]{display:none}
+.vit-legenda > button{display:flex; align-items:center; flex-wrap:wrap; justify-content:center; gap:5px 10px; padding:6px 14px; border:0; border-radius:999px;
+  background:none; color:var(--text2); font:inherit; font-size:.76rem; font-weight:600; cursor:pointer; white-space:nowrap}
+.vit-legenda > button:hover{color:var(--text)}
+.vit-legenda > button:focus-visible{outline:2px solid var(--cyan); outline-offset:2px}
+.vl-pruh{display:inline-flex; gap:2px}
+.vl-pruh i,.vl-dalsi i{display:inline-block; width:14px; height:10px; border-radius:3px; box-shadow:inset 0 0 0 1px var(--linka2)}
+.vl-pruh i:first-child{border-radius:5px 3px 3px 5px} .vl-pruh i:last-child{border-radius:3px 5px 5px 3px}
+.vl-dalsi{display:inline-flex; align-items:center; gap:5px; font-weight:500}
+.vl-dalsi i{width:10px; border-radius:50%}
+.scena.rezim-brana .vit-legenda{display:none}   /* v rodokmenu zůstává: barvy vitality platí i pro strom */
+@media (max-width:920px){
+  .vit-legenda{position:relative; left:auto; bottom:auto; transform:none; align-self:center; margin:4px auto 0}
+}
+/* na úzkém telefonu se s tlačítkem Vitalita lišta nevejde: zoom je dvěma prsty, tlačítka + a − schovám */
+@media (max-width:480px){ .dok .zoom-ovl{display:none} }
+/* počítač s užším oknem: lišta s popisky by přesáhla přes seznam, popisky se schovají podle šířky scény */
+@media (min-width:921px){ .scena{container-type:inline-size; container-name:scena} }
+@container scena (max-width:820px){
+  .dok .tl:not(.hlavni) span{position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap}
+  .dok .tl:not(.hlavni){padding:9px 11px}
+}
+/* Evropský den jazyků: místo Jazyka dne všechny evropské jazyky najednou */
+.dj-nadpis{margin:2px 0 0; font-family:var(--pismo-nadpis); font-size:1.75rem; font-weight:600; line-height:1.15; color:var(--text)}
+.dj-jazyky{display:grid; grid-template-columns:repeat(auto-fill, minmax(116px, 1fr)); gap:6px; width:100%; margin-top:14px}
+.dj-j{display:flex; flex-direction:column; align-items:flex-start; gap:1px; min-width:0; padding:7px 10px; border-radius:12px; cursor:pointer;
+  font:inherit; text-align:left; color:var(--text); background:var(--plocha); border:1px solid var(--linka); border-left:3px solid var(--r-barva, var(--linka2))}
+.dj-j:hover{background:var(--plocha2)}
+.dj-j:focus-visible{outline:2px solid var(--cyan); outline-offset:2px}
+.dj-pz{max-width:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-family:var(--pismo-pozdrav); font-weight:700; font-size:1.05rem; line-height:1.25}
+.dj-jm{max-width:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:.74rem; color:var(--text2)}
+/* hvězdičky evropských jazyků: bez vlajky EU a v jiných barvách (Den jazyků je Rady Evropy, ne EU) */
+.eu-panel.evropa{grid-template-columns:1fr auto}
+.eu-panel.evropa .eu-vlajka{display:none}
+.eu-panel.evropa .zavrit{grid-column:2}
+.eu-panel.evropa .eu-jazyky button{color:var(--text); background:var(--plocha2); border-color:var(--linka2)}
+.eu-panel.evropa .eu-jazyky button:hover{background:var(--plocha)}
+.den-jazyku .dj-zavrit{z-index:2}
+.den-jazyku .dj-stitek{max-width:calc(100% - 38px)}
+/* Jazyk dne: proč právě dnes */
+.jd-proc{display:block; margin-top:6px; font-size:.84rem; line-height:1.45; opacity:.96}
+.jd-proc b{font-weight:700}
+/* plocha pod glóbem a jeho stín (kreslí app.js do plátna, barvy odsud) */
+:root{--podlaha:rgba(60,95,180,.16); --podlaha-2:rgba(40,70,150,.10); --obzor:rgba(140,190,255,.18);
+  --stin-plochy:rgba(0,0,0,.62); --stin-plochy-2:rgba(0,0,0,.3)}
+:root[data-theme="light"]{--podlaha:rgba(120,110,90,.09); --podlaha-2:rgba(120,110,90,.15); --obzor:rgba(60,60,80,.13);
+  --stin-plochy:rgba(40,44,70,.34); --stin-plochy-2:rgba(40,44,70,.16)}
+/* kalendář jazykových dnů: odkaz pod Jazykem dne a okno se seznamem dnů */
+  font:inherit; font-size:.84rem; font-weight:600; color:var(--cyan); cursor:pointer; text-decoration:underline; text-underline-offset:2px}
+.kal-seznam{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:4px}
+.kal-den{display:flex; align-items:flex-start; gap:14px; width:100%; padding:9px 12px; border:1px solid var(--linka); border-radius:12px; background:var(--plocha);
+  font:inherit; text-align:left; color:var(--text); cursor:pointer}
+.kal-den:hover{background:var(--plocha2); border-color:var(--linka2)}
+.kal-den:focus-visible{outline:2px solid var(--cyan); outline-offset:2px}
+.kal-den.dnes{border-color:var(--akcent); box-shadow:inset 3px 0 0 var(--akcent)}
+.kal-datum{flex:none; width:3.6em; font-family:var(--pismo-nadpis); font-weight:600; font-size:1.05rem; line-height:1.3; color:var(--text)}
+.kal-stred{display:flex; flex-direction:column; gap:2px; min-width:0}
+.kal-jazyk{font-weight:700; font-size:.95rem}
+.kal-pz{font-family:var(--pismo-pozdrav); font-weight:700; margin-right:4px}
+.kal-proc{font-size:.84rem; line-height:1.45; color:var(--text2)}
+.kal-dnes{align-self:flex-start; margin-top:3px; padding:1px 8px; border-radius:99px; background:var(--akcent); color:var(--na-akcent); font-size:.72rem; font-weight:700}
+.kal-pozn{margin-top:18px !important; font-style:italic}
+/* v podstránce Vitalita je vpravo i křížek, který zavře celý panel */
+#vitalita-panel .vp-hlava #vitalita-x{margin-left:auto}
+/* nápověda pod otazníkem: čtvrtý řádek je odkaz na podrobný návod, ne krok k odškrtnutí */
+.napoveda li.napoveda-navod{counter-increment:none; margin-top:2px; padding-top:8px; border-top:1px solid var(--linka)}
+.napoveda li.napoveda-navod i{border-color:transparent; color:var(--cyan)}
+.napoveda li.napoveda-navod i::before{content:none}
+.napoveda li.napoveda-navod i svg{width:17px; height:17px}
+#napoveda-navod{padding:2px 0; border:0; background:none; font:inherit; font-weight:600; color:var(--cyan); text-align:left; cursor:pointer;
+  text-decoration:underline; text-underline-offset:2px}
+.pat-det > summary{font-size:.76rem; gap:8px}
+.pat-det > summary > span{min-width:0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+
+/* ---------- karta jazyka jako kartotéční lístek (25. 9. 2026, podle lístku na stránkách jazyků: uživatel „velice povedený“) ----------
+   Krémový papír, červená linka nahoře, pod ní řádek s polohou a tlačítky, malba vsazená do lístku, údaje jako linkované řádky,
+   záložky jako výřezy kartotéky a dírka dole. Brána do jiných světů si nechává hvězdné sklo (viz výš). */
+:root{--listek:#121A36; --linka-listku:rgba(140,180,255,.09); --dirka:#070C1C}
+:root[data-theme="light"]{--listek:#FFFDF6; --linka-listku:rgba(60,110,200,.11); --dirka:#C9CCD3}
+.scena:not(.rezim-brana) .karta.sklo, :root[data-theme="light"] .scena:not(.rezim-brana) .karta.sklo{background:var(--listek);
+  backdrop-filter:none; -webkit-backdrop-filter:none; border:0; border-top:4px solid var(--akcent); border-radius:6px 6px 10px 10px;
+  box-shadow:0 30px 70px -30px rgba(0,0,0,.6), 0 2px 0 rgba(0,0,0,.04)}
+.scena:not(.rezim-brana) .k-hero:not(.vymysleny){display:flex; flex-direction:column; align-items:flex-start; margin:0; padding:0 16px 10px;
+  border-radius:0; background:transparent; color:var(--text); box-shadow:none}
+.scena:not(.rezim-brana) .k-hero:not(.vymysleny)::before, .scena:not(.rezim-brana) .k-hero:not(.vymysleny)::after{display:none}
+.scena:not(.rezim-brana) .k-hero:not(.vymysleny) > *{align-self:stretch}
+.scena:not(.rezim-brana) .k-hero:not(.vymysleny) > :is(.prehraj,.odznak){align-self:flex-start}
+/* hlava lístku: poloha, odkaz a křížek na papíře, pod nimi červená linka */
+.scena:not(.rezim-brana) .k-hero:not(.vymysleny) .k-lista{order:-1; position:static; margin:0 -6px 12px; padding:9px 0 8px;
+  border-bottom:2px solid color-mix(in srgb, var(--akcent) 55%, transparent)}
+.scena:not(.rezim-brana) .k-hero:not(.vymysleny) .k-lista .kod{color:var(--text2); background:none; padding:0 0 0 6px; opacity:1}
+.scena:not(.rezim-brana) .k-hero:not(.vymysleny) .zavrit{width:34px; height:34px; color:var(--text); background:transparent; border:1px solid var(--linka2)}
+.scena:not(.rezim-brana) .k-hero:not(.vymysleny) .zavrit:hover{border-color:var(--akcent); color:var(--akcent)}
+.scena:not(.rezim-brana) .k-hero > .k-malba{margin:0 0 14px; border-radius:8px; box-shadow:0 10px 24px -16px rgba(0,0,0,.55)}
+.scena:not(.rezim-brana) .k-hero:not(.vymysleny) :is(.prepis,.domaci){color:var(--text2); opacity:1}
+.scena:not(.rezim-brana) .k-hero:not(.vymysleny) .odznak{color:var(--text); background:transparent;
+  border-color:color-mix(in srgb, var(--r-barva, var(--cyan)) 60%, transparent)}
+.scena:not(.rezim-brana) .k-hero:not(.vymysleny):not(.s-malbou) h2{margin-top:2px}
+.scena:not(.rezim-brana) .k-hero .prehraj{background:var(--r-barva, var(--cyan)); color:var(--r-text, #fff)}
+/* údaje jako řádky lístku: název vlevo, hodnota vpravo, tenká linka pod každým */
+.scena:not(.rezim-brana) .k-stitky{display:block; padding:2px 16px 0}
+.scena:not(.rezim-brana) .stitek{display:grid; grid-template-columns:minmax(6.5em,38%) 1fr; align-items:baseline; gap:8px;
+  padding:6px 0; background:none; border:0; border-bottom:1px solid var(--linka-listku); border-radius:0}
+.scena:not(.rezim-brana) .k-stitky .stitek > :first-child{font-size:.66rem; letter-spacing:.12em; color:var(--text2)}
+.scena:not(.rezim-brana) :is(.k-cesta){background:transparent; border-style:dashed; border-radius:8px; margin:14px 16px 0}
+.scena:not(.rezim-brana) .k-porovnat{width:calc(100% - 32px); margin:10px 16px 0}
+/* záložky jako výřezy kartotéky */
+.scena:not(.rezim-brana) .zalozky{gap:4px; padding:0; margin:6px 0 12px; background:none; border:0; border-bottom:2px solid color-mix(in srgb, var(--akcent) 55%, transparent); border-radius:0}
+.scena:not(.rezim-brana) .zalozky button{border-radius:8px 8px 0 0; padding:7px 8px 6px; background:color-mix(in srgb, var(--text) 5%, transparent); box-shadow:none}
+.scena:not(.rezim-brana) .zalozky button[aria-selected="true"]{background:color-mix(in srgb, var(--akcent) 16%, var(--listek)); color:var(--text); box-shadow:none}
+/* linkovaný spodek a dírka na konci lístku */
+.scena:not(.rezim-brana) .k-telo{padding:8px 16px 44px; position:relative;
+  background-image:repeating-linear-gradient(to bottom, transparent 0 31px, var(--linka-listku) 31px 32px)}
+.scena:not(.rezim-brana) .k-telo::after{content:""; position:absolute; left:50%; bottom:14px; width:14px; height:14px; margin-left:-7px; border-radius:50%;
+  background:var(--dirka); box-shadow:inset 0 1px 3px rgba(0,0,0,.4)}
+@media (max-width:920px){
+  .scena:not(.rezim-brana) .karta.sklo{border-radius:10px 10px 0 0}
+  .scena:not(.rezim-brana) .uchyt{color:var(--text2)}
+  .scena:not(.rezim-brana) .uchyt i{height:5px; margin-top:6px; box-shadow:none; opacity:.5}
+  .scena:not(.rezim-brana) .k-hero:not(.vymysleny) .k-lista{padding-top:26px}
+}
+@media (max-width:920px){
+  /* uklizená karta (jen lišta): tlačítka vpravo nahoře, poloha schovaná, ať se vejde pozdrav a jméno */
+  .scena:not(.rezim-brana) .karta.mala .k-hero:not(.vymysleny){padding:24px 104px 10px 16px}
+  .scena:not(.rezim-brana) .karta.mala .k-hero:not(.vymysleny) .k-lista{position:absolute; top:24px; right:10px; left:auto; margin:0; padding:0; border:0}
+  .scena:not(.rezim-brana) .karta.mala .k-hero:not(.vymysleny) .k-lista .kod{display:none}
+}
+@media (max-width:920px){ .scena:not(.rezim-brana) .karta.mala :is(.k-stitky,.k-cesta,.k-porovnat){display:none} }
+
+/* ---------- typologické mapy (WALS) ----------
+   Barvy ověřené validátorem palet (skill dataviz) pro všechny dvojice na jednolité pevnině (--souse-vit):
+   5 nominálních odstínů (noc: nejhorší dvojice CVD ΔE 9,6, normální 18,5; den: 8,9 a 20,7), „jiné“ v barvě inkoustu
+   a modrá stupnice o 7 krocích (--ordinal, ve dne i v noci PASS). Kontrast k pevnině je pod 3 : 1 → legenda s popisky
+   a počty je povinná (druhotné rozlišení), nerušit. Pořadí odstínů je součást ověření, neměnit. */
+:root{--typ-1:#2794fb; --typ-2:#e63281; --typ-3:#137f1f; --typ-4:#aa9117; --typ-5:#8038d1; --typ-jine:#e6eaee; --typ-nic:#3a4670;
+  --typ-r0:#2b66ae; --typ-r1:#447abd; --typ-r2:#5d8ecc; --typ-r3:#75a2db; --typ-r4:#8eb6e9; --typ-r5:#a7caf8; --typ-r6:#c0dfff}
+:root[data-theme="light"]{--typ-1:#0064b5; --typ-2:#d0126f; --typ-3:#02b827; --typ-4:#887311; --typ-5:#ad74ff; --typ-jine:#1a1a1a; --typ-nic:#b9bec8;
+  --typ-r0:#6ea1e2; --typ-r1:#588cce; --typ-r2:#4278bb; --typ-r3:#2b64a8; --typ-r4:#115096; --typ-r5:#003c83; --typ-r6:#002871}
+.typ-bod{display:inline-block; width:11px; height:11px; border-radius:50%; flex:none; box-shadow:0 0 0 1.5px var(--sklo2)}
+/* seznam vlastností v (dřív panel Zobrazení › Typologie; styly .typ-vypnout používá okno Mapy) */
+.vp-uvod{margin:0 4px 8px; font-size:.8rem; line-height:1.45; color:var(--text2)}
+.typ-oblast{margin:12px 4px 4px}
+.typ-vlastnosti{list-style:none; margin:0; padding:0}
+.typ-vlastnosti button{width:100%; display:flex; align-items:baseline; gap:8px; padding:7px 8px; border-radius:10px; border:1px solid transparent;
+  background:transparent; color:var(--text); font:500 .86rem/1.3 var(--pismo-text); text-align:left; cursor:pointer}
+.typ-vlastnosti button:hover{background:var(--plocha2)}
+.typ-vlastnosti button[aria-pressed="true"]{background:var(--cyan-slabe); border-color:var(--cyan-okraj); font-weight:600}
+.typ-vlastnosti .typ-jm{flex:1}
+.typ-vypnout{width:100%; margin:0 0 4px; padding:8px 10px; border-radius:10px; cursor:pointer; font:600 .82rem/1 var(--pismo-text);
+  color:var(--text); background:transparent; border:1px solid var(--linka2)}
+/* legenda na glóbu: vpravo dole (na počítači), na telefonu pod lištou */
+.typ-legenda{position:absolute; z-index:6; right:16px; bottom:88px; width:min(310px, calc(100% - 32px)); max-height:calc(100% - 160px); overflow:auto;
+  border-radius:16px; padding:10px 12px 10px; scrollbar-width:thin}
+.typ-legenda[hidden]{display:none}
+.typ-leg-hlava{display:flex; align-items:flex-start; gap:8px}
+.typ-leg-hlava h3{flex:1; margin:2px 0 0; font:600 1.02rem/1.25 var(--pismo-nadpis)}
+.typ-leg-hlava .zavrit{width:28px; height:28px; flex:none}
+.typ-jina{margin:2px 0 0; padding:3px 10px; border-radius:999px; border:1px solid var(--linka2); background:transparent; color:var(--text2);
+  font:600 .74rem/1.3 var(--pismo-text); cursor:pointer}
+.typ-jina:hover,.typ-jina:focus-visible{color:var(--text); border-color:var(--cyan)}
+.typ-leg-popis{margin:4px 0 6px; font-size:.8rem; color:var(--text2)}
+.typ-leg-popis summary{cursor:pointer; font-weight:600; color:var(--text2)}
+.typ-leg-popis p{margin:6px 0 0; line-height:1.45}
+.typ-leg-hodnoty{list-style:none; margin:4px 0 0; padding:0}
+.typ-leg-hodnoty button, .typ-bez > span{width:100%; display:flex; align-items:center; gap:9px; padding:5px 6px; border-radius:8px; border:0;
+  background:transparent; color:var(--text); font:500 .84rem/1.3 var(--pismo-text); text-align:left; cursor:pointer}
+.typ-bez > span{cursor:default; color:var(--text2)}
+.typ-leg-hodnoty button > span:nth-of-type(1), .typ-bez > span > span:nth-of-type(1){flex:1}
+.typ-leg-hodnoty button:hover{background:var(--plocha2)}
+.typ-leg-hodnoty button[aria-pressed="true"]{background:var(--plocha2); font-weight:700}
+.typ-leg-hodnoty button.potlaceno{opacity:.45}
+.typ-leg-hodnoty .pocet-st{font:500 .74rem/1 var(--pismo-data); color:var(--text2); font-variant-numeric:tabular-nums}
+.typ-leg-zdroj{margin:8px 2px 0; font-size:.74rem}
+.typ-leg-zdroj a{color:var(--text2)}
+.scena:is(.rezim-strom,.rezim-brana,.rezim-eu) .typ-legenda{display:none}
+.scena.s-typologii .vit-legenda{display:none}
+@media (max-width:920px){
+  .typ-legenda{position:relative; right:auto; bottom:auto; width:auto; max-height:none; margin:4px 12px 12px}
+}
+/* typologie na kartě jazyka */
+.typ-karta{display:grid; grid-template-columns:minmax(0,46%) 1fr; gap:0 12px; margin:6px 0 0}
+.typ-karta dt, .typ-karta dd{padding:6px 0; border-bottom:1px solid var(--linka-listku, var(--linka)); font-size:.84rem; line-height:1.35}
+.typ-karta dd{margin:0; display:flex; gap:7px; align-items:baseline}
+.typ-karta dd .typ-bod{width:9px; height:9px; transform:translateY(1px)}
+.typ-karta-vl{padding:0; border:0; background:none; color:var(--text2); font:inherit; text-align:left; cursor:pointer; text-decoration:underline dotted; text-underline-offset:3px}
+.typ-karta-vl:hover{color:var(--text)}
+.typ-karta .vybrana{font-weight:700}
+.typ-karta dt.vybrana .typ-karta-vl{color:var(--text)}
+
+/* ---------- cesta slova na glóbu (Příběhy jazyků) ---------- */
+.cesta-panel{grid-template-columns:1fr auto; width:min(340px, 40%); max-height:calc(100% - 120px); overflow:auto; scrollbar-width:thin}
+.cesta-panel .zavrit{grid-column:2}
+.scena.rezim-cesta :is(.napoveda,.tl-napoveda,.typ-legenda){display:none}
+.cesta-kroky{grid-column:1 / -1; list-style:none; margin:2px 0 0; padding:0 0 0 12px; border-left:2px solid var(--cervena)}
+.cesta-kroky li{position:relative; animation:cesta-in .35s ease-out both}
+.cesta-kroky li::before{content:""; position:absolute; left:-18px; top:11px; width:8px; height:8px; border-radius:50%; background:var(--cervena); box-shadow:0 0 0 2px var(--popisek-lem)}
+.cesta-kroky li.sporna::before{background:var(--popisek-lem); box-shadow:inset 0 0 0 2px var(--cervena)}
+@keyframes cesta-in{from{opacity:0; transform:translateY(4px)}}
+.cesta-kroky button{display:grid; grid-template-columns:auto 1fr; gap:0 8px; width:100%; padding:4px 6px; border:0; border-radius:8px; background:transparent; color:var(--text); text-align:left; font:inherit; cursor:pointer}
+.cesta-kroky button:hover{background:var(--plocha2)}
+.cesta-kroky button:focus-visible{outline:2px solid var(--cyan); outline-offset:1px}
+.cesta-kroky b{font-size:.86rem}
+.cesta-kroky span{font-size:.76rem; color:var(--text2); align-self:center}
+.cesta-kroky small{grid-column:1 / -1; font-size:.7rem; line-height:1.35; color:var(--text3)}
+.cesta-dalsi{grid-column:1 / -1; display:flex; flex-wrap:wrap; gap:5px; padding-top:4px; border-top:1px solid var(--linka)}
+.cesta-dalsi button{font:inherit; font-size:.74rem; font-weight:600; padding:4px 10px; border-radius:999px; cursor:pointer; color:var(--text); background:var(--plocha2); border:1px solid var(--linka2, var(--linka))}
+.cesta-dalsi button:hover{background:var(--plocha)}
+.cesta-dalsi .cesta-znovu{border-color:var(--cervena)}
+.cesta-dalsi .cesta-pribeh{background:transparent}
+@media (prefers-reduced-motion: reduce){ .cesta-kroky li{animation:none} }
+@media (max-width:920px){ .cesta-panel{position:relative; top:auto; left:auto; right:auto; width:auto; max-height:none; margin:4px 12px 12px} .cesta-panel .eu-text p{display:block} }
+
+/* ==============================================================================================
+   MEDAILONY POD GLÓBEM (27. 9. 2026, uživatel vybral variantu „medailony s rámem“ v řadě pod glóbem)
+   Místo lišty: Jazyky starověku, Příběhy jazyků, Rodokmen, Mapy, Vitalita (akvarely ve static/ikony/) a menší Nastavení.
+   Rám je ve dne porcelánově papírový, v noci tmavý; každé tlačítko má trvalý popisek. Náhodný jazyk je v panelu
+   seznamu vedle počtu jazyků, zoom a Celý svět nenápadně v pravém horním rohu pod otazníkem.
+   ===================================================================================================== */
+:root{--med-ram1:#3A4058; --med-ram2:rgba(0,0,0,.55); --med-stin:rgba(0,0,0,.7); --med-papir:#2A3048; --med-papir2:#1A1E30; --med-lesk:rgba(255,255,255,.28)}
+:root[data-theme="light"]{--med-ram1:#ECE5D5; --med-ram2:rgba(120,100,70,.42); --med-stin:rgba(50,38,20,.42); --med-papir:#FBF8F0; --med-papir2:#E4DCCB; --med-lesk:rgba(255,255,255,.8)}
+.dok.medailony{background:none; border:0; border-radius:0; box-shadow:none; padding:0; backdrop-filter:none; -webkit-backdrop-filter:none;
+  bottom:12px; gap:14px; align-items:flex-start; white-space:normal}
+/* jemný podklad pod řadou, aby přes medailony neprosvítala jména jazyků z přiblíženého glóbu */
+.dok.medailony::before{content:""; position:absolute; z-index:-1; left:-26px; right:-26px; top:-6px; bottom:-10px; border-radius:60px;
+  background:var(--sklo, rgba(251,249,244,.8)); filter:blur(14px); opacity:.85; pointer-events:none}
+:root[data-theme="light"] .dok.medailony::before{background:rgba(251,249,244,.9)}
+.med{display:flex; flex-direction:column; align-items:center; gap:9px; width:88px; padding:6px 0 0; border:0; background:none;
+  font:inherit; color:var(--text); cursor:pointer; -webkit-tap-highlight-color:transparent}
+.med[hidden]{display:none}
+.med span{font-size:12px; font-weight:600; line-height:1.15; text-align:center; color:var(--text2); transition:color .2s}
+.med-obr{position:relative; display:grid; place-items:center; width:68px; height:68px; border-radius:50%; font-style:normal;
+  background:var(--med-papir) center / cover no-repeat;
+  box-shadow:0 0 0 5px var(--med-ram1), 0 0 0 6px var(--med-ram2), 0 10px 18px -6px var(--med-stin), inset 0 2px 5px rgba(0,0,0,.32);
+  transition:transform .25s cubic-bezier(.2,.9,.3,1.3), box-shadow .25s}
+.med-obr::before{content:""; position:absolute; inset:-6px; border-radius:50%; pointer-events:none;
+  background:linear-gradient(160deg, var(--med-lesk), rgba(255,255,255,0) 36%, rgba(0,0,0,0) 64%, rgba(0,0,0,.22));
+  -webkit-mask:radial-gradient(circle, transparent 33.5px, #000 34.5px); mask:radial-gradient(circle, transparent 33.5px, #000 34.5px)}
+.med:hover .med-obr{transform:translateY(-3px); box-shadow:0 0 0 5px var(--med-ram1), 0 0 0 6px var(--med-ram2), 0 16px 22px -8px var(--med-stin), inset 0 2px 5px rgba(0,0,0,.32)}
+.med:hover span, .med[aria-pressed="true"] span, .med[aria-expanded="true"] span{color:var(--text)}
+.med:focus-visible{outline:none}
+.med:focus-visible .med-obr{outline:3px solid var(--cyan); outline-offset:8px}
+.med:is([aria-pressed="true"],[aria-expanded="true"]) .med-obr{box-shadow:0 0 0 5px var(--akcent), 0 0 0 6px var(--med-ram2), 0 10px 18px -6px var(--med-stin), inset 0 2px 5px rgba(0,0,0,.32)}
+.med.maly .med-obr{width:50px; height:50px; margin-top:9px; margin-bottom:9px; color:var(--text); background:linear-gradient(160deg, var(--med-papir), var(--med-papir2))}
+.med.maly .med-obr::before{-webkit-mask:radial-gradient(circle, transparent 24.5px, #000 25.5px); mask:radial-gradient(circle, transparent 24.5px, #000 25.5px)}
+.med.maly svg{width:22px; height:22px}
+.med .odznak-filtr{position:absolute; top:-8px; right:-8px}
+@media (prefers-reduced-motion: reduce){ .med-obr{transition:none} .med:hover .med-obr{transform:none} }
+/* panely a vysvětlivky nad řadou medailonů */
+.panel-zobrazeni{bottom:128px}
+.vit-legenda{bottom:128px}
+.typ-legenda{bottom:128px}
+/* zoom a Celý svět: nenápadně v pravém horním rohu, bez podkladu */
+.roh-ovladani{position:absolute; z-index:6; top:58px; right:17px; display:flex; flex-direction:column; align-items:center; gap:0}
+.roh-ovladani .kolo{width:34px; height:34px; border:0; background:transparent; box-shadow:none; color:var(--text2); opacity:.85}
+.roh-ovladani .kolo:hover{opacity:1; color:var(--text); background:var(--plocha2)}
+.roh-ovladani .kolo svg{width:15px; height:15px}
+.roh-ovladani #tl-cely svg{width:18px; height:18px}
+.roh-ovladani .zoom-hod{font-family:var(--pismo-data); font-size:10.5px; color:var(--text3); padding:1px 0}
+.scena:is(.rezim-cesta,.rezim-eu,.rezim-brana) .roh-ovladani{display:none}
+/* Náhodný jazyk v panelu seznamu, vedle počtu jazyků */
+.pocet-radek{display:flex; align-items:center; justify-content:space-between; gap:10px}
+.pocet-radek #tl-nahoda{flex:none; padding:7px 14px 7px 11px; min-height:0; font-size:13px; gap:7px; border-radius:999px}
+.pocet-radek #tl-nahoda svg{width:17px; height:17px}
+@media (max-width:920px){
+  .dok.medailony::before{display:none}
+  .dok.medailony{position:relative; left:auto; bottom:auto; transform:none; display:grid; grid-template-columns:repeat(3, 96px); justify-content:center;
+    gap:12px 16px; margin:10px auto 18px; max-width:none}
+  .med{width:96px}
+  .med-obr{width:58px; height:58px}
+  .med-obr::before{-webkit-mask:radial-gradient(circle, transparent 28.5px, #000 29.5px); mask:radial-gradient(circle, transparent 28.5px, #000 29.5px)}
+  .med.maly .med-obr{width:46px; height:46px; margin:6px 0}
+  .med.maly .med-obr::before{-webkit-mask:radial-gradient(circle, transparent 22.5px, #000 23.5px); mask:radial-gradient(circle, transparent 22.5px, #000 23.5px)}
+  .panel-zobrazeni, .vit-legenda, .typ-legenda{bottom:auto}
+  .roh-ovladani{top:52px; right:10px}
+  .roh-ovladani :is(#tl-priblizi,#tl-oddal,.zoom-hod){display:none}      /* na telefonu se přibližuje dvěma prsty */
+}
+
+/* ---------- okno Mapy: barevné mapy s kulatým náhledem (medailon Mapy pod glóbem) ---------- */
+.mapy-okno{width:min(760px, calc(100vw - 32px))}
+.mapy-okno .od-telo{padding-bottom:18px}
+.mapy-okno .typ-vypnout{margin:2px 0 6px}
+.mapy-okno .od-telo h3.mapy-oblast{display:flex; align-items:center; gap:10px; margin:18px 4px 8px; font-family:var(--pismo-text); font-size:.72rem; font-weight:700;
+  line-height:1.2; letter-spacing:.1em; text-transform:uppercase; color:var(--text3)}
+.mapy-oblast::after{content:""; flex:1; height:1px; background:var(--linka)}
+.mapy-mriz{display:grid; grid-template-columns:repeat(auto-fill, minmax(210px, 1fr)); gap:4px 10px}
+.mapa-tl{display:flex; align-items:center; gap:12px; width:100%; padding:7px 8px; border:0; border-radius:12px; background:transparent;
+  color:var(--text); text-align:left; font:inherit; cursor:pointer}
+.mapa-tl:hover{background:var(--cyan-slabe)}
+.mapa-tl:focus-visible{outline:3px solid var(--cyan); outline-offset:1px}
+.mapa-obr{flex:none; width:52px; height:52px; border-radius:50%; background:var(--med-papir) center/cover no-repeat;
+  box-shadow:0 0 0 3px var(--med-ram1), 0 0 0 4px var(--med-ram2), 0 6px 10px -5px var(--med-stin)}
+.mapa-tl[aria-pressed="true"] .mapa-obr{box-shadow:0 0 0 3px var(--akcent), 0 0 0 4px var(--med-ram2), 0 6px 10px -5px var(--med-stin)}
+.mapa-tl span{display:flex; flex-direction:column; gap:2px; min-width:0}
+.mapa-tl b{font-size:.9rem; font-weight:600; line-height:1.25}
+.mapa-tl[aria-pressed="true"] b{color:var(--akcent)}
+.mapa-tl small{font-size:.75rem; line-height:1.3; color:var(--text3)}
+@media (max-width: 520px){ .mapy-mriz{grid-template-columns:1fr 1fr; gap:2px 4px} .mapa-tl{gap:8px; padding:6px 4px} .mapa-obr{width:44px; height:44px} .mapa-tl b{font-size:.84rem} }
+/* v rodokmenu jsou Mapy a Vitalita nečinné (barví jen glóbus): šedé, bez zvednutí */
+.med[aria-disabled="true"]{cursor:not-allowed}
+.med[aria-disabled="true"] .med-obr, .med[aria-disabled="true"]:hover .med-obr{filter:grayscale(1) contrast(.85); opacity:.5; transform:none;
+  box-shadow:0 0 0 5px var(--med-ram1), 0 0 0 6px var(--med-ram2), 0 10px 18px -6px var(--med-stin), inset 0 2px 5px rgba(0,0,0,.32)}
+.med[aria-disabled="true"] span{color:var(--text3)}
+
+/* ---------- stránka Vitalita (medailon pod glóbem): čísla, stupně s pruhy a filtrem, oblasti, jazyky, metodika ---------- */
+.med.zapnuto .med-obr{box-shadow:0 0 0 5px var(--akcent), 0 0 0 6px var(--med-ram2), 0 10px 18px -6px var(--med-stin), inset 0 2px 5px rgba(0,0,0,.32)}
+.med.zapnuto span{color:var(--text)}
+.vitalita-okno{width:min(860px, calc(100vw - 32px))}
+.vitalita-okno .od-hlava h2{margin:0}
+.vs-podtitul{margin:2px 0 0; font-size:.82rem; color:var(--text3)}
+.vs-telo{padding-bottom:22px}
+.vs-cisla{display:grid; grid-template-columns:repeat(4, 1fr); gap:10px; margin:14px 0 8px}
+.vs-cislo{display:flex; flex-direction:column; gap:3px; padding:12px 12px 11px; border:1px solid var(--linka); border-top:4px solid var(--vs-barva); border-radius:12px; background:var(--sklo-slabe, transparent)}
+.vs-cislo b{font-family:var(--pismo-nadpis, inherit); font-size:1.7rem; line-height:1.05; font-variant-numeric:tabular-nums; color:var(--text)}
+.vs-cislo span{font-size:.8rem; line-height:1.3; color:var(--text2)}
+.vs-cislo small{font-size:.75rem; color:var(--text3); font-variant-numeric:tabular-nums}
+.vs-souhrn{margin:8px 0 12px; color:var(--text2)}
+.vs-barvy{margin:0 0 4px}
+.vs-oddil{margin-top:24px}
+.vs-oddil h3{margin:0 0 6px; font-family:var(--pismo-nadpis, inherit); font-size:1.15rem; color:var(--text)}
+.vs-uvod{margin:0 0 10px; font-size:.86rem; line-height:1.5; color:var(--text2)}
+.vs-oddil > p:not(.vs-uvod){font-size:.88rem; line-height:1.55; color:var(--text2)}
+.vitalita-okno .vp-predvolby{margin:0 0 6px}
+.vs-stupne{list-style:none; margin:0; padding:0; display:grid; gap:2px}
+.vs-stupen{display:grid; grid-template-columns:22px minmax(0, 1.25fr) minmax(80px, 1fr) 76px; align-items:center; gap:12px; width:100%; padding:8px 8px;
+  border:0; border-radius:10px; background:transparent; color:var(--text); text-align:left; font:inherit; cursor:pointer}
+.vs-stupen:hover{background:var(--cyan-slabe)}
+.vs-stupen:focus-visible{outline:3px solid var(--cyan); outline-offset:1px}
+.vs-stupen .zatrzeni{display:grid; place-items:center; width:20px; height:20px; border:1.5px solid var(--linka2); border-radius:6px; font-size:.75rem; font-weight:700}
+.vs-stupen[aria-pressed="true"] .zatrzeni{background:var(--cyan); border-color:var(--cyan); color:var(--na-cyan)}
+.vs-stupen[aria-pressed="false"] :is(.vs-jm, .vs-pruh, .vs-pocet){opacity:.45}
+.vs-jm{display:flex; flex-direction:column; gap:2px; min-width:0}
+.vs-jm b{display:flex; align-items:center; gap:7px; font-size:.9rem; font-weight:600}
+.vs-jm small{font-size:.75rem; line-height:1.35; color:var(--text3)}
+.vs-bod{flex:none; display:inline-block; width:11px; height:11px; border-radius:50%; box-shadow:0 0 0 2px var(--papir, #fff)}
+.vs-pruh{display:block; height:12px; border-radius:0 4px 4px 0}
+.vs-pruh i{display:block; height:100%; min-width:2px; border-radius:0 4px 4px 0}
+.vs-pocet{display:flex; flex-direction:column; align-items:flex-end; font-variant-numeric:tabular-nums}
+.vs-pocet b{font-size:.9rem; font-weight:600}
+.vs-pocet small{font-size:.72rem; color:var(--text3)}
+.vs-oblasti{width:100%; border-collapse:collapse; font-size:.86rem; font-variant-numeric:tabular-nums}
+.vs-oblasti th, .vs-oblasti td{padding:8px 8px; border-bottom:1px solid var(--linka); text-align:right; vertical-align:top}
+.vs-oblasti thead th{font-size:.72rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--text3)}
+.vs-oblasti th:first-child{text-align:left; width:52%}
+.vs-oblasti tbody th{font-weight:600}
+.vs-skladba{display:flex; gap:2px; height:9px; margin-top:6px}
+.vs-skladba i{display:block; min-width:2px; border-radius:2px}
+.vs-jazyky{display:grid; grid-template-columns:repeat(auto-fill, minmax(190px, 1fr)); gap:4px 8px}
+.vs-jazyk{display:flex; align-items:center; gap:10px; padding:7px 8px; border:0; border-radius:10px; background:transparent; color:var(--text); text-align:left; font:inherit; cursor:pointer}
+.vs-jazyk:hover{background:var(--cyan-slabe)}
+.vs-jazyk span{display:flex; flex-direction:column; gap:1px; min-width:0}
+.vs-jazyk b{font-size:.9rem; font-weight:600}
+.vs-jazyk small{font-size:.74rem; color:var(--text3)}
+.vs-probouzene{list-style:none; margin:0 0 12px; padding:0; display:flex; flex-wrap:wrap; gap:6px}
+.vs-probouzene button{padding:5px 11px; border:1px solid var(--linka2); border-radius:999px; background:transparent; color:var(--text); font:inherit; font-size:.8rem; cursor:pointer}
+.vs-probouzene button:hover{border-color:var(--vit-6); background:var(--cyan-slabe)}
+.vs-pribeh{display:grid; grid-template-columns:96px 1fr auto; align-items:center; gap:12px; width:100%; padding:6px; border:1px solid var(--linka); border-radius:12px;
+  background:transparent; color:var(--text); text-align:left; font:inherit; cursor:pointer}
+.vs-pribeh:hover{background:var(--cyan-slabe)}
+.vs-pribeh span{display:flex; flex-direction:column; gap:2px}
+.vs-pribeh small{font-size:.7rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--text3)}
+.vs-pribeh svg{width:18px; height:18px; color:var(--text3)}
+.vs-zdroje{margin:6px 0 0; padding-left:18px; font-size:.8rem; line-height:1.5; color:var(--text2)}
+.vs-zdroje li{margin:3px 0; overflow-wrap:anywhere}
+.vs-odkaz{margin-top:6px}
+@media (max-width: 620px){
+  .vs-cisla{grid-template-columns:1fr 1fr}
+  .vs-stupen{grid-template-columns:22px 1fr 64px; row-gap:6px}
+  .vs-stupen .vs-pruh{grid-column:2 / 4; grid-row:2}
+  .vs-oblasti th:first-child{width:auto}
+}
+.vs-do-stromu{display:inline-flex; align-items:center; gap:6px; margin-top:7px; padding:3px 0; border:0; background:none; color:var(--cyan);
+  font:inherit; font-size:.78rem; font-weight:600; cursor:pointer}
+.vs-do-stromu svg{width:15px; height:15px}
+.vs-do-stromu:hover{text-decoration:underline; text-underline-offset:2px}
+
+/* ---------- kruhový přehled všech rodin (výchozí pohled Rodokmenu, 27. 9. 2026) ---------- */
+#prehled{z-index:4; touch-action:manipulation}
+#prehled:focus-visible{outline:none}
+.scena.rezim-prehled .strom-napoveda{display:none}
+.prehled-panel{position:absolute; z-index:6; top:68px; right:16px; width:min(340px, 36%); max-height:calc(100% - 200px); overflow:auto; scrollbar-width:thin;
+  padding:14px 14px 10px; border-radius:18px; display:flex; flex-direction:column}
+.prehled-cesta{display:flex; flex-wrap:wrap; align-items:center; gap:2px; font-size:.76rem; margin-bottom:6px}
+.prehled-cesta button{border:0; background:none; padding:2px 5px; border-radius:6px; font:inherit; color:var(--cyan); cursor:pointer}
+.prehled-cesta button:hover{background:var(--cyan-slabe)}
+.prehled-cesta .sip{color:var(--text3)}
+.prehled-cesta .ted{font-weight:600; color:var(--text); padding:2px 5px}
+.prehled-panel h3{margin:0; font-family:var(--pismo-nadpis); font-size:1.3rem; line-height:1.2; color:var(--text); text-wrap:balance}
+.prehled-meta{margin:3px 0 10px; font-size:.8rem; color:var(--text2); font-variant-numeric:tabular-nums}
+.prehled-do-stromu{align-self:flex-start; margin:0 0 8px}
+.prehled-radky{list-style:none; margin:0; padding:0}
+.prehled-radek{display:grid; grid-template-columns:11px minmax(0,1fr) auto 10px; column-gap:9px; row-gap:4px; align-items:center; width:100%;
+  padding:8px 4px; border:0; border-top:1px solid var(--linka); background:none; text-align:left; font:inherit; color:var(--text); cursor:pointer}
+.prehled-radky li:first-child .prehled-radek{border-top:0}
+.prehled-radek:hover, .prehled-radek.najeto{background:var(--cyan-slabe)}
+.prehled-radek:focus-visible{outline:2px solid var(--cyan); outline-offset:-2px}
+.prehled-radek .bod{width:11px; height:11px; border-radius:50%}
+.prehled-radek .jm{font-size:.86rem; font-weight:600; min-width:0; overflow-wrap:anywhere}
+.prehled-radek .jm small{display:block; font-weight:400; font-style:italic; color:var(--text3); font-size:.74rem; line-height:1.35}
+.prehled-radek .n{font-family:var(--pismo-data, "JetBrains Mono", monospace); font-size:.74rem; color:var(--text2); font-variant-numeric:tabular-nums}
+.prehled-radek .dal{color:var(--text3)}
+.prehled-radek .pruh{grid-column:2 / 4; height:3px; border-radius:2px; background:var(--linka)}
+.prehled-radek .pruh i{display:block; height:100%; border-radius:2px}
+.prehled-vic{margin:8px 4px 2px; font-size:.76rem; color:var(--text3)}
+.prehled-legenda{display:flex; flex-wrap:wrap; gap:4px 12px; margin-top:10px; padding-top:8px; border-top:1px solid var(--linka); font-size:.72rem; color:var(--text2)}
+.prehled-legenda span{display:inline-flex; align-items:center; gap:5px}
+.prehled-legenda i{width:9px; height:9px; border-radius:50%}
+@media (max-width:920px){
+  .prehled-panel{position:relative; top:auto; right:auto; width:auto; max-height:52vh; margin:4px 12px 12px}
+}
+
+.scena.rezim-strom .roh-ovladani{display:none}   /* + a − ovládají glóbus; strom se přibližuje kolečkem a prsty */
+
+/* ---------- tajemství: převrácený glóbus, karta velryb a Babylónu (28. 9. 2026) ---------- */
+.scena canvas.padani{position:absolute; inset:auto; z-index:5; pointer-events:none; aspect-ratio:auto; max-height:none}
+.tajemstvi-zdroje{margin:0; padding-left:1.1em; display:grid; gap:6px; font-size:.82rem; color:var(--text2)}
+.tl-koda{margin-bottom:6px}
+.scena.prevraceni :is(.ukazatel,.bublina-bod){opacity:0 !important; transition:opacity .3s}
+
+/* ---------- tablet: karta místo seznamu (29. 9. 2026) ---------- */
+@media (min-width:921px) and (max-width:1400px){
+  .mriz.karta-vpravo{grid-template-columns:minmax(0,1fr)}
+  .mriz.karta-vpravo > .police{display:none}
+  .mriz.karta-vpravo .karta{left:auto; right:0; top:0; bottom:0; width:380px; max-height:none; border-radius:24px}
+  /* ovládání vpravo nahoře (nápověda, zoom), počítadlo dole vpravo a panely vpravo se odsunou vlevo od karty */
+  .mriz.karta-vpravo :is(.tl-napoveda,.napoveda,.eu-panel){right:408px}
+  .mriz.karta-vpravo .roh-ovladani{right:409px}
+  .mriz.karta-vpravo .hud{right:406px}
+  .mriz.karta-vpravo :is(.prehled-panel,.strom-hlava){right:408px}
+}
+
+/* ---------- putování jazyka (29. 9. 2026) ---------- */
+:root{--put-ie:#5B82C8; --put-bs:#239A8C; --put-sl:#B8892A; --put-zsl:#CF6450; --put-jsl:#9B6CC4; --put-vsl:#2A7F4E; --put-cs:#E0503F;
+  --put-ii:#239A8C; --put-ir:#B8892A; --put-ku:#E0503F; --put-kmr:#CF6450; --put-ckb:#9B6CC4; --put-sdh:#2A7F4E;
+  --put-ur:#239A8C; --put-ug:#B8892A; --put-hu:#E0503F; --put-in:#B8892A; --put-rom:#E0503F; --put-bal:#9B6CC4; --put-vla:#CF6450; --put-cen:#2A7F4E; --put-svy:#239A8C; --put-szap:#5B82C8; --put-ko:#9B6CC4;
+  --put-an:#239A8C; --put-mp:#B8892A; --put-pap:#2A7F4E; --put-oc:#9B6CC4; --put-pol:#E0503F; --put-mi:#CF6450; --put-mg:#9B6CC4;
+  --put-ptu:#239A8C; --put-ogr:#5B82C8; --put-gok:#B8892A; --put-ogz:#CF6450; --put-tr:#E0503F; --put-pri:#9B6CC4;
+  --put-gm:#239A8C; --put-en:#E0503F; --put-en2:#CF6450; --put-kel:#B8892A; --put-non:#9B6CC4; --put-fr:#9B6CC4; --put-cr:#B8892A;
+  --put-jen:#9B6CC4; --put-nd:#239A8C; --put-apa:#B8892A; --put-nv:#E0503F;
+  --put-jid:#E0503F; --put-rmn:#B8892A; --put-zjd:#9B6CC4; --put-ztr:#9A948C;
+  --put-psa:#B8892A; --put-sin:#239A8C; --put-fen:#9B6CC4; --put-rek:#2A7F4E; --put-etr:#CF6450; --put-lat:#E0503F; --put-ara:#B8892A; --put-heb:#9B6CC4; --put-arb:#2A7F4E; --put-kha:#CF6450; --put-hla:#239A8C; --put-cyr:#9B6CC4;
+  --put-sem:#239A8C; --put-sar:#B8892A; --put-mt:#E0503F; --put-itm:#2A7F4E; --put-enm:#9B6CC4;
+  --put-ita:#239A8C; --put-osu:#B8892A; --put-etq:#9B6CC4; --put-lgb:#5B82C8; --put-byz:#2A7F4E; --put-vlg:#CF6450; --put-sic:#B8892A; --put-tos:#E0503F; --put-it:#E0503F; --put-emi:#9B6CC4; --put-itx:#239A8C}
+:root[data-theme="light"]{--put-ie:#3D6CC0; --put-bs:#16968A; --put-sl:#C98A1A; --put-zsl:#C8553D; --put-jsl:#9055B0; --put-vsl:#1F7448; --put-cs:#D23A2B;
+  --put-ii:#16968A; --put-ir:#C98A1A; --put-ku:#D23A2B; --put-kmr:#C8553D; --put-ckb:#9055B0; --put-sdh:#1F7448;
+  --put-ur:#16968A; --put-ug:#C98A1A; --put-hu:#D23A2B; --put-in:#C98A1A; --put-rom:#D23A2B; --put-bal:#9055B0; --put-vla:#C8553D; --put-cen:#1F7448; --put-svy:#16968A; --put-szap:#3D6CC0; --put-ko:#9055B0;
+  --put-an:#16968A; --put-mp:#C98A1A; --put-pap:#1F7448; --put-oc:#9055B0; --put-pol:#D23A2B; --put-mi:#C8553D; --put-mg:#9055B0;
+  --put-ptu:#16968A; --put-ogr:#3D6CC0; --put-gok:#C98A1A; --put-ogz:#C8553D; --put-tr:#D23A2B; --put-pri:#9055B0;
+  --put-gm:#16968A; --put-en:#D23A2B; --put-en2:#C8553D; --put-kel:#C98A1A; --put-non:#9055B0; --put-fr:#9055B0; --put-cr:#C98A1A;
+  --put-jen:#9055B0; --put-nd:#16968A; --put-apa:#C98A1A; --put-nv:#D23A2B;
+  --put-jid:#D23A2B; --put-rmn:#C98A1A; --put-zjd:#9055B0; --put-ztr:#6F6A64;
+  --put-psa:#C98A1A; --put-sin:#16968A; --put-fen:#9055B0; --put-rek:#1F7448; --put-etr:#C8553D; --put-lat:#D23A2B; --put-ara:#C98A1A; --put-heb:#9055B0; --put-arb:#1F7448; --put-kha:#C8553D; --put-hla:#16968A; --put-cyr:#9055B0;
+  --put-sem:#16968A; --put-sar:#C98A1A; --put-mt:#D23A2B; --put-itm:#1F7448; --put-enm:#9055B0;
+  --put-ita:#16968A; --put-osu:#C98A1A; --put-etq:#9055B0; --put-lgb:#3D6CC0; --put-byz:#1F7448; --put-vlg:#C8553D; --put-sic:#C98A1A; --put-tos:#D23A2B; --put-it:#D23A2B; --put-emi:#9055B0; --put-itx:#16968A}
+.putovani-panel{grid-template-columns:1fr auto; width:min(360px, 40%); max-height:calc(100% - 120px); overflow:auto; scrollbar-width:thin}
+.putovani-panel .zavrit{grid-column:2}
+.put-ovl{grid-column:1 / -1; display:flex; align-items:center; gap:10px}
+.put-hraj{flex:none; width:34px; height:34px; border-radius:50%; border:0; background:var(--akcent, #D23A2B); color:#fff; font-size:.8rem; cursor:pointer}
+.put-ovl input{flex:1; accent-color:var(--akcent, #D23A2B)}
+.put-etapy{grid-column:1 / -1; list-style:none; margin:0; padding:0 0 0 14px; border-left:2px solid var(--linka2); display:grid; gap:4px}
+.put-etapy li{position:relative}
+.put-etapy li::before{content:""; position:absolute; left:-20px; top:10px; width:10px; height:10px; border-radius:50%; background:var(--plocha2); box-shadow:0 0 0 2px var(--linka2)}
+.put-etapy li.minula::before{background:var(--text3)}
+.put-etapy li.aktivni::before{background:var(--akcent, #D23A2B); box-shadow:0 0 0 3px color-mix(in srgb, var(--akcent, #D23A2B) 30%, transparent)}
+.put-etapa{display:grid; gap:1px; width:100%; text-align:left; background:none; border:0; padding:4px 0; color:var(--text); font:inherit; cursor:pointer}
+.put-etapa strong{font-size:.9rem}
+.put-doba{font-size:.72rem; letter-spacing:.06em; text-transform:uppercase; color:var(--text2)}
+.put-text{display:none; margin:2px 0 8px; font-size:.82rem; line-height:1.5; color:var(--text2)}
+.put-etapy li.aktivni .put-text{display:block}
+.put-zdroje{grid-column:1 / -1; margin:4px 0 0; font-size:.72rem; line-height:1.45; color:var(--text3)}
+.scena.rezim-putovani #gl{opacity:.35; transition:opacity .6s}
+.scena.rezim-putovani #popisky{opacity:0}
+@media (max-width:920px){ .putovani-panel{position:relative; top:auto; left:auto; right:auto; width:auto; max-height:none; margin:4px 12px 12px} }
+
+/* tajemství na konci návodu (vajíčko) */
+.navod-tajemstvi{margin:30px 0 6px; text-align:center}
+.navod-tajemstvi > summary{display:inline-flex; list-style:none; cursor:pointer; padding:6px; border-radius:50%; color:var(--text2); opacity:.55; transition:opacity .2s}
+.navod-tajemstvi > summary::-webkit-details-marker{display:none}
+.navod-tajemstvi > summary:hover, .navod-tajemstvi > summary:focus-visible, .navod-tajemstvi[open] > summary{opacity:1}
+.navod-tajemstvi > summary:focus-visible{outline:2px solid var(--akcent); outline-offset:2px}
+.navod-tajemstvi .vejce{display:block; width:22px; height:28px; transform-origin:50% 85%}
+.navod-tajemstvi > summary:hover .vejce{animation:vejce-kyv .6s ease-in-out}
+.navod-tajemstvi[open] .vejce{transform:rotate(-14deg)}
+@keyframes vejce-kyv{25%{transform:rotate(-12deg)} 55%{transform:rotate(10deg)} 80%{transform:rotate(-5deg)}}
+@media (prefers-reduced-motion:reduce){.navod-tajemstvi > summary:hover .vejce{animation:none}}
+.navod-tajemstvi .tajemstvi-obsah{text-align:left; margin-top:10px; padding-top:14px; border-top:1px dashed var(--linka)}
+.navod-tajemstvi .tajemstvi-obsah dt{font-weight:600; color:var(--text); margin-top:12px}
+.navod-tajemstvi .tajemstvi-obsah dd{margin:3px 0 0; color:var(--text2)}
+/* Písma světa: karta písma a legenda */
+.typ-leg-tip{margin:6px 0 2px; font-size:.78rem; color:var(--text2)}
+.pismo-jazyky{list-style:none; margin:4px 0 8px; padding:0; display:flex; flex-wrap:wrap; gap:6px}
+.pismo-jazyky button{border:1px solid var(--linka); background:var(--plocha); color:var(--text); border-radius:999px; padding:4px 10px; font:inherit; font-size:.82rem; cursor:pointer}
+.pismo-jazyky button:hover{border-color:var(--akcent)}
+
+/* ---------- chytré hledání: odpověď na otázku nahoře v polici (1. 10. 2026) ---------- */
+.dotaz-odpoved{display:flex; flex-direction:column; align-items:flex-start; gap:4px; margin:12px 0 10px; padding:14px 16px 12px;
+  background:var(--listek, var(--sklo)); color:var(--text); border:1px solid var(--linka); border-top:3px solid var(--akcent); border-radius:12px}
+.dotaz-odpoved .do-stitek{font:600 11px/1.2 var(--pismo-data, monospace); letter-spacing:.08em; text-transform:uppercase; color:var(--text2)}
+.dotaz-odpoved .do-titul{font:600 19px/1.25 "Playfair Display", Georgia, serif; text-wrap:balance}
+.dotaz-odpoved .do-popis{font-size:13.5px; line-height:1.45; color:var(--text2)}
+.dotaz-odpoved .do-akce{display:inline-flex; align-items:center; gap:6px; margin-top:6px; padding:7px 14px; border:0; border-radius:999px;
+  background:var(--akcent); color:var(--na-akcent); font:600 13.5px/1 inherit; cursor:pointer}
+.dotaz-odpoved .do-akce svg{width:14px; height:14px; fill:currentColor}
+.dotaz-odpoved .do-akce:focus-visible{outline:2px solid var(--text); outline-offset:2px}
+.dotaz-odpoved .do-zdroj{font-size:12px; color:var(--text3)}
+.dotaz-ai .do-ai-text{margin:2px 0; font-size:14.5px; line-height:1.55; color:var(--text)}
+.dotaz-odpoved .do-akce:disabled{opacity:.7; cursor:progress}
+dialog.ai-test{width:min(1200px, 96vw); max-height:92vh; overflow:auto; padding:18px 20px; border:1px solid var(--linka); border-radius:14px; background:var(--listek, var(--sklo)); color:var(--text)}
+dialog.ai-test table{border-collapse:collapse; width:100%; table-layout:fixed; font-size:13px; overflow-wrap:anywhere}
+dialog.ai-test th, dialog.ai-test td{border-top:1px solid var(--linka); padding:8px; vertical-align:top; text-align:left}
+dialog.ai-test td small{display:block; margin-top:4px; color:var(--text3)}
+/* příklad otázky pod hledacím polem */
+.hledej-tip{align-self:stretch; text-align:left; margin:-3px 0 0; padding:2px 4px; border:0; background:none; color:var(--text2);
+  font:500 12.5px/1.4 inherit; cursor:pointer; text-wrap:pretty}
+.hledej-tip i{font-style:normal; color:var(--text); text-decoration:underline; text-decoration-color:var(--linka); text-underline-offset:3px}
+.hledej-tip:hover i{text-decoration-color:currentColor}
+
+/* záhlaví na telefonu v jednom řádku i s delším názvem („Atlante delle lingue“) a přepínačem CS · EN · IT (2. 10. 2026):
+   název se zmenší, přepínač je užší; dřív se tlačítko vzhledu zalomilo na další řádek */
+@media (max-width:620px){
+  .hlava{flex-wrap:nowrap; gap:8px}
+  .hlava .domu{min-width:0; flex:1 1 auto}
+  .hlava h1{font-size:clamp(1.05rem,5.6vw,1.6rem); white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+  .jazyk-prepinac a{padding:0 6px; font-size:.72rem}
+  html[lang="it"] .hlava h1,html[lang="de"] .hlava h1{font-size:clamp(1rem,4.3vw,1.6rem)}   /* delší název se vejde celý */
+  html[lang="it"] .domu .znak,html[lang="de"] .domu .znak{width:36px; height:36px}
+  html[lang="it"] .domu,html[lang="de"] .domu{gap:8px}
+}
+
+/* ---------- jazyky starověku: stránka o civilizaci jako list ilustrované encyklopedie (okno nad glóbem i web) ----------
+   Papír a inkoust jako u akvarelů na kartách; v tmavém vzhledu sépiová noc. Barvy jen tady, přes --civ-*. */
+.civ{
+  --civ-papir:#FBF7EE; --civ-papir2:#F2EADA; --civ-ink:#2B241C; --civ-ink2:#5E5244; --civ-ink3:#7C6E5C;
+  --civ-akcent:#A4472A; --civ-linka:rgba(90,66,34,.18); --civ-stin:rgba(60,40,20,.18); --civ-zlato:#9A6B1E;
+  background:var(--civ-papir); color:var(--civ-ink); font-family:var(--pismo-text, "Outfit", system-ui, sans-serif);
+  line-height:1.65; font-size:1rem; text-align:left;
+}
+:root[data-theme="dark"] .civ{
+  --civ-papir:#17140F; --civ-papir2:#221D16; --civ-ink:#EFE6D4; --civ-ink2:#C4B79F; --civ-ink3:#A3957E;
+  --civ-akcent:#E3875C; --civ-linka:rgba(240,220,180,.14); --civ-stin:rgba(0,0,0,.5); --civ-zlato:#E0B458;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme]) .civ{
+    --civ-papir:#17140F; --civ-papir2:#221D16; --civ-ink:#EFE6D4; --civ-ink2:#C4B79F; --civ-ink3:#A3957E;
+    --civ-akcent:#E3875C; --civ-linka:rgba(240,220,180,.14); --civ-stin:rgba(0,0,0,.5); --civ-zlato:#E0B458;
+  }
+}
+.civ h1, .civ h2, .civ h3{font-family:"Playfair Display", Georgia, serif; font-weight:600; color:var(--civ-ink); letter-spacing:0; text-transform:none}
+.civ a{color:var(--civ-akcent)}
+.civ-klin{font-family:"Noto Sans Cuneiform", sans-serif; font-weight:400}
+.civ-egy{font-family:"Noto Sans Egyptian Hieroglyphs", sans-serif; font-weight:400; font-size:1.45em; line-height:1; vertical-align:-.15em}
+.civ-kopt{font-family:"Noto Sans Coptic", sans-serif; font-weight:400}
+.civ-fen{font-family:"Noto Sans Phoenician", sans-serif; font-weight:400; font-size:1.25em}
+.civ-ugar{font-family:"Noto Sans Ugaritic", sans-serif; font-weight:400; font-size:1.2em}
+.civ-perskl{font-family:"Noto Sans Old Persian", sans-serif; font-weight:400; font-size:1.2em}
+.civ-linb{font-family:"Noto Sans Linear B", sans-serif; font-weight:400; font-size:1.3em}
+.civ-lina{font-family:"Noto Sans Linear A", sans-serif; font-weight:400; font-size:1.3em}
+.civ-mayc{font-family:"Noto Sans Mayan Numerals", sans-serif; font-weight:400; font-size:1.4em}
+.civ-ital{font-family:"Noto Sans Old Italic", sans-serif; font-weight:400; font-size:1.25em}
+.civ-brahmi{font-family:"Noto Sans Brahmi", sans-serif; font-weight:400; font-size:1.25em}
+.civ-khar{font-family:"Noto Sans Kharoshthi", sans-serif; font-weight:400; font-size:1.25em}
+.civ-deva{font-family:"Noto Serif Devanagari", serif; font-weight:400; font-size:1.15em}
+.civ-aram{font-family:"Noto Sans Imperial Aramaic", sans-serif; font-weight:400; font-size:1.25em}
+.civ-avest{font-family:"Noto Sans Avestan", sans-serif; font-weight:400; font-size:1.25em}
+.civ-pahl{font-family:"Noto Sans Inscriptional Pahlavi", sans-serif; font-weight:400; font-size:1.25em}
+.civ-sarab{font-family:"Noto Sans Old South Arabian", sans-serif; font-weight:400; font-size:1.25em}
+.civ-etio{font-family:"Noto Serif Ethiopic", serif; font-weight:400; font-size:1.15em}
+.civ-han{font-family:var(--civ-han, "Noto Serif TC"), serif; font-weight:500; font-size:1.1em}
+.civ-kana{font-family:"Noto Serif JP", serif; font-weight:500; font-size:1.1em}
+.civ-hang{font-family:"Noto Serif KR", serif; font-weight:500; font-size:1.1em}
+.civ-run{font-family:"Noto Sans Runic", sans-serif; font-weight:400; font-size:1.2em}
+.civ-orkh{font-family:"Noto Sans Old Turkic", sans-serif; font-weight:400; font-size:1.2em}
+.civ-got{font-family:"Noto Sans Gothic", sans-serif; font-weight:400; font-size:1.2em}
+.civ-ogam{font-family:"Noto Sans Ogham", sans-serif; font-weight:400; font-size:1.2em}
+.civ-hlah{font-family:"Noto Sans Glagolitic", sans-serif; font-weight:400; font-size:1.2em}
+.civ-hebr{font-family:"Noto Serif Hebrew", serif; font-weight:400; font-size:1.15em}
+.civ-syr{font-family:"Noto Sans Syriac", sans-serif; font-weight:400; font-size:1.2em}
+.civ-nab{font-family:"Noto Sans Nabataean", sans-serif; font-weight:400; font-size:1.25em}
+.civ-palm{font-family:"Noto Sans Palmyrene", sans-serif; font-weight:400; font-size:1.25em}
+.civ-sam{font-family:"Noto Sans Samaritan", sans-serif; font-weight:400; font-size:1.2em}
+.civ-arab{font-family:"Noto Naskh Arabic", serif; font-weight:400; font-size:1.2em}
+.civ-arm{font-family:"Noto Serif Armenian", serif; font-weight:400; font-size:1.1em}
+.civ-gruz{font-family:"Noto Serif Georgian", serif; font-weight:400; font-size:1.1em}
+.civ-tib{font-family:"Noto Serif Tibetan", serif; font-weight:400; font-size:1.2em}
+.civ-taml{font-family:"Noto Serif Tamil", serif; font-weight:400; font-size:1.1em}
+.civ-znak.civ-fen, .civ-znak.civ-ugar, .civ-znak.civ-perskl, .civ-znak.civ-linb, .civ-znak.civ-lina, .civ-znak.civ-mayc, .civ-znak.civ-ital, .civ-znak.civ-brahmi, .civ-znak.civ-khar, .civ-znak.civ-deva, .civ-znak.civ-aram, .civ-znak.civ-avest, .civ-znak.civ-pahl, .civ-znak.civ-sarab, .civ-znak.civ-etio, .civ-znak.civ-han, .civ-znak.civ-run, .civ-znak.civ-got, .civ-znak.civ-ogam, .civ-znak.civ-hlah, .civ-znak.civ-hebr, .civ-znak.civ-syr, .civ-znak.civ-nab, .civ-znak.civ-palm, .civ-znak.civ-sam, .civ-znak.civ-arab, .civ-znak.civ-arm, .civ-znak.civ-gruz, .civ-znak.civ-tib, .civ-znak.civ-taml, .civ-znak.civ-orkh{font-size:2.4rem}
+.civ-znak-radek.civ-mayc{display:inline-flex; white-space:pre-line; line-height:1.05; text-align:center; font-size:2rem; align-self:center}
+.civ-priklad:has(.civ-mayc){align-items:center}
+.civ-znak.civ-egy, .civ-znak-radek.civ-egy{font-size:2.5rem; vertical-align:0}
+.civ-hier{font-family:"Noto Sans Anatolian Hieroglyphs", sans-serif; font-weight:400; font-size:1.7em; line-height:1; vertical-align:-.2em}
+
+/* úvodní ilustrace s nadpisem */
+.civ-hero{position:relative; background:#FBF7EE}
+.civ-malba{aspect-ratio:16/7; overflow:hidden}
+.civ-malba svg, .civ-malba img{display:block; width:100%; height:100%; object-fit:cover}
+.civ-titul{position:absolute; left:0; right:0; bottom:0; padding:70px 40px 22px;
+  background:linear-gradient(180deg, transparent, color-mix(in srgb, var(--civ-papir) 82%, transparent) 55%, var(--civ-papir))}
+.civ-stitek{margin:0 0 4px; font-size:.78rem; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--civ-akcent)}
+.civ h1{margin:0; font-size:clamp(2.3rem, 5.4vw, 3.6rem); line-height:1.05}
+.civ-podtitul{margin:6px 0 0; font-size:1.02rem; color:var(--civ-ink2)}
+
+/* tělo: text do šířky čtení, fakta v rámečku vpravo jako v encyklopedii */
+.civ-telo{padding:10px 40px 36px}
+.civ-telo::after{content:""; display:block; clear:both}
+.civ-perex{font-family:"Playfair Display", Georgia, serif; font-size:1.28rem; line-height:1.5; margin:14px 0 8px; max-width:40em; color:var(--civ-ink)}
+.civ-text, .civ-slova, .civ-osa, .civ-znaky, .civ-tecky, .civ-zdroje, .civ-galerie{max-width:none}
+.civ-text p, .civ-slova > p, .civ-tecky > p{max-width:40em; margin:0 0 12px; color:var(--civ-ink2)}
+.civ h2{font-size:1.6rem; line-height:1.2; margin:34px 0 10px}
+.civ-fakta{float:right; width:300px; margin:18px 0 18px 30px; padding:16px 18px 10px; background:var(--civ-papir2); border:1px solid var(--civ-linka); border-radius:12px; font-size:.9rem}
+.civ-fakta h2{margin:0 0 8px; font-size:1.05rem; letter-spacing:.02em}
+.civ-fakta dl{margin:0}
+.civ-fakta div{padding:7px 0; border-top:1px solid var(--civ-linka)}
+.civ-fakta dt{font-size:.72rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--civ-ink3)}
+.civ-fakta dd{margin:1px 0 0; color:var(--civ-ink)}
+
+/* fotky */
+.civ-foto{margin:22px 0; }
+.civ-foto img{display:block; width:100%; height:auto; border-radius:10px; box-shadow:0 14px 30px -18px var(--civ-stin); background:var(--civ-papir2)}
+.civ-foto figcaption{margin-top:8px; font-size:.86rem; line-height:1.5; color:var(--civ-ink2); max-width:48em}
+.civ-kredit{display:block; margin-top:2px; font-size:.74rem; color:var(--civ-ink3)}
+.civ-kredit a{color:inherit}
+.civ-foto.siroka{clear:both}
+.civ-foto.na-vysku, .civ-foto:not(.siroka){float:left; width:min(40%, 360px); margin:6px 28px 14px 0}
+.civ-galerie{clear:both}
+.civ-galerie .civ-foto{float:none; width:auto; margin:0}
+.civ-mrizka{display:grid; grid-template-columns:repeat(auto-fit, minmax(210px, 1fr)); gap:18px}
+.civ-mrizka img{aspect-ratio:3/2; object-fit:cover}
+
+/* rámeček s odbočkou */
+.civ-ramecek{clear:both; margin:24px 0; padding:18px 22px; border-left:4px solid var(--civ-zlato); background:var(--civ-papir2); border-radius:0 12px 12px 0; max-width:44em}
+.civ-ramecek h3{margin:0 0 6px; font-size:1.15rem}
+.civ-ramecek p{margin:0; color:var(--civ-ink2)}
+
+/* znaky klínového písma */
+.civ-znaky{clear:both}
+.civ-znaky-seznam{list-style:none; margin:12px 0 0; padding:0; display:grid; grid-template-columns:repeat(auto-fill, minmax(118px, 1fr)); gap:10px}
+.civ-znaky-seznam li{display:flex; flex-direction:column; align-items:center; gap:2px; padding:12px 8px 10px; border:1px solid var(--civ-linka); border-radius:10px; background:var(--civ-papir2); text-align:center}
+.civ-znak{font-size:2.5rem; line-height:1.25; color:var(--civ-ink)}
+.civ-znaky-seznam b{font-family:var(--pismo-data, monospace); font-size:.9rem; font-weight:500}
+.civ-znaky-seznam small{font-size:.74rem; line-height:1.3; color:var(--civ-ink3)}
+.civ-priklad{display:flex; flex-wrap:wrap; align-items:baseline; gap:6px 16px; margin:14px 0 0; padding:12px 16px; border:1px dashed var(--civ-linka); border-radius:10px; color:var(--civ-ink2)}
+.civ-znak-radek{font-size:2rem; color:var(--civ-ink)}
+.civ-prepis{font-family:var(--pismo-data, monospace); font-size:.92rem; color:var(--civ-akcent)}
+.civ-pozn{margin:8px 0 0; font-size:.8rem; color:var(--civ-ink3); max-width:48em}
+
+/* věta, kterou Hrozný rozluštil */
+.civ-veta{clear:both; margin:20px 0 26px; padding:22px 24px; background:var(--civ-papir2); border:1px solid var(--civ-linka); border-radius:14px}
+.civ-veta-klin{margin:0; font-size:clamp(1.5rem, 3.4vw, 2.3rem); line-height:1.4; letter-spacing:.06em; color:var(--civ-ink); overflow-wrap:anywhere}
+.civ-veta .civ-prepis{margin:8px 0 12px}
+.civ-glosy{display:flex; flex-wrap:wrap; gap:8px; margin:0 0 14px}
+.civ-glosy div{padding:6px 10px; border-radius:8px; background:var(--civ-papir); border:1px solid var(--civ-linka)}
+.civ-glosy dt{font-family:var(--pismo-data, monospace); font-size:.88rem; color:var(--civ-ink)}
+.civ-glosy dd{margin:0; font-size:.78rem; color:var(--civ-ink3)}
+.civ-veta figcaption q{display:block; font-family:"Playfair Display", Georgia, serif; font-style:italic; font-size:1.3rem; color:var(--civ-ink); quotes:"„" "“"}
+.civ[lang="en"] .civ-veta figcaption q{quotes:"“" "”"}
+.civ-veta figcaption > span{display:block; margin-top:8px; font-size:.92rem; color:var(--civ-ink2); max-width:44em}
+
+/* tabulka příbuzných slov */
+.civ-slova{clear:both}
+.civ-tabulka{overflow-x:auto}
+.civ-slova table{border-collapse:collapse; width:100%; max-width:46em; font-size:.94rem}
+.civ-slova th, .civ-slova td{padding:9px 12px 9px 0; border-bottom:1px solid var(--civ-linka); text-align:left; vertical-align:top}
+.civ-slova thead th{font-size:.72rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--civ-ink3)}
+.civ-slova tbody th{font-family:"Playfair Display", Georgia, serif; font-style:italic; font-weight:600; font-size:1.05rem; color:var(--civ-akcent); white-space:nowrap}
+.civ-slova tbody th [class^="civ-"]{font-style:normal; font-weight:400; font-size:1.35em; line-height:1; margin-right:.25em; vertical-align:-.1em}
+.civ-slova td [class^="civ-"]{font-size:1.5em; line-height:1.1}
+.civ-slova td .civ-egy, .civ-slova td .civ-klin, .civ-slova td .civ-hier{font-size:1.9em}
+.civ-slova td{color:var(--civ-ink2)}
+
+/* časová osa */
+.civ-osa{clear:both}
+.civ-osa ol{list-style:none; margin:10px 0 0; padding:0 0 0 18px; border-left:2px solid var(--civ-linka); max-width:46em}
+.civ-osa li{position:relative; padding:0 0 14px 14px}
+.civ-osa li::before{content:""; position:absolute; left:-25px; top:.55em; width:10px; height:10px; border-radius:50%; background:var(--civ-papir); border:2px solid var(--civ-akcent)}
+.civ-osa b{display:block; font-size:.8rem; letter-spacing:.04em; color:var(--civ-akcent)}
+.civ-osa span{color:var(--civ-ink2)}
+
+/* jazyky na glóbu, zdroje, pata */
+.civ-tecky{clear:both}
+.civ-tecky-seznam{list-style:none; margin:6px 0 0; padding:0; display:flex; flex-wrap:wrap; gap:8px}
+.civ-tecka{display:inline-flex; align-items:center; gap:7px; padding:8px 14px; border-radius:999px; border:1px solid var(--civ-linka); background:var(--civ-papir2);
+  color:var(--civ-ink); font:inherit; font-size:.9rem; text-decoration:none; cursor:pointer}
+.civ-tecka svg{width:16px; height:16px; color:var(--civ-akcent)}
+.civ-tecka:hover{border-color:var(--civ-akcent)}
+.civ-tecka:focus-visible{outline:3px solid var(--civ-akcent); outline-offset:2px}
+/* odkaz na typologickou mapu na glóbu (Příběhy) */
+.civ-mapa{clear:both; margin:24px 0; padding:18px 22px; border:1px solid var(--civ-linka); border-radius:14px; background:var(--civ-papir2); max-width:44em}
+.civ-mapa h2{margin-top:0}
+.civ-mapa p{color:var(--civ-ink2)}
+.civ-mapa-tl{display:inline-flex; align-items:center; gap:8px; margin-top:4px; padding:10px 18px; border-radius:999px; border:0; background:var(--civ-akcent);
+  color:var(--civ-papir); font:inherit; font-weight:600; text-decoration:none; cursor:pointer}
+.civ-mapa-tl svg{width:18px; height:18px}
+.civ-cesty{display:flex; flex-wrap:wrap; gap:8px; margin-top:4px}
+.civ-cesty .civ-mapa-tl{margin-top:0}
+.civ-mapa-tl:hover{filter:brightness(1.08)}
+.civ-mapa-tl:focus-visible{outline:3px solid var(--civ-akcent); outline-offset:3px}
+.civ-zdroje{clear:both}
+.civ-zdroje ul{margin:6px 0 0; padding-left:18px; color:var(--civ-ink2); font-size:.9rem; max-width:46em}
+.civ-pata{clear:both; margin-top:30px; padding-top:14px; border-top:1px solid var(--civ-linka); font-size:.8rem; color:var(--civ-ink3)}
+.civ-pata p{margin:0}
+
+@media (max-width:760px){
+  .civ-malba{aspect-ratio:4/3}
+  .civ-titul{padding:60px 18px 16px}
+  .civ-telo{padding:6px 18px 28px}
+  .civ-fakta{float:none; width:auto; margin:16px 0}
+  .civ-foto.na-vysku, .civ-foto:not(.siroka){float:none; width:auto; margin:18px 0}
+  .civ-perex{font-size:1.15rem}
+  .civ-veta{padding:16px}
+}
+
+/* okno nad glóbem */
+.civ-okno{width:min(1100px, calc(100vw - 24px)); height:min(94vh, 1500px); max-height:none; padding:0; border:0; border-radius:18px; overflow:hidden; background:transparent;
+  box-shadow:0 40px 90px -30px rgba(0,0,0,.75)}
+.civ-okno[open]{display:block}
+.civ-okno::backdrop{background:rgba(8,12,28,.55); backdrop-filter:blur(3px)}
+.civ-svitek{height:100%; overflow:auto; overscroll-behavior:contain; background:#FBF7EE}
+:root[data-theme="dark"] .civ-svitek{background:#17140F}
+.civ-zavrit{position:absolute; top:12px; right:12px; z-index:2; width:42px; height:42px; display:grid; place-items:center; border-radius:50%; border:0; cursor:pointer;
+  background:rgba(251,247,238,.9); color:#2B241C; box-shadow:0 6px 18px -6px rgba(0,0,0,.45)}
+.civ-zavrit svg{width:18px; height:18px}
+.civ-zavrit:focus-visible{outline:3px solid #A4472A; outline-offset:2px}
+@media (max-width:760px){ .civ-okno{width:100vw; height:100dvh; max-width:none; border-radius:0} }
+
+/* návrat do výběru civilizací (vlevo nahoře v okně) a rozcestník na konci stránky */
+.civ-zpet{position:absolute; top:12px; left:12px; z-index:2; height:42px; display:inline-flex; align-items:center; gap:6px; padding:0 16px 0 10px; border-radius:999px; border:0; cursor:pointer;
+  background:rgba(251,247,238,.92); color:#2B241C; font:600 .88rem var(--pismo-text, sans-serif); box-shadow:0 6px 18px -6px rgba(0,0,0,.45)}
+.civ-zpet svg{width:18px; height:18px}
+.civ-zpet:focus-visible{outline:3px solid #A4472A; outline-offset:2px}
+.civ-dalsi{clear:both; margin-top:34px}
+.civ-dalsi ul{list-style:none; margin:10px 0 0; padding:0; display:grid; grid-template-columns:repeat(auto-fill, minmax(220px, 1fr)); gap:10px}
+.civ-dalsi-tl{display:flex; flex-direction:column; gap:2px; width:100%; height:100%; padding:12px 16px; border-radius:12px; border:1px solid var(--civ-linka); background:var(--civ-papir2);
+  color:var(--civ-ink); font:inherit; text-align:left; text-decoration:none; cursor:pointer}
+.civ-dalsi-tl:hover{border-color:var(--civ-akcent)}
+.civ-dalsi-tl:focus-visible{outline:3px solid var(--civ-akcent); outline-offset:2px}
+.civ-dalsi-tl b{font-family:"Playfair Display", Georgia, serif; font-size:1.1rem; font-weight:600}
+.civ-dalsi-tl small{font-size:.8rem; color:var(--civ-ink3)}
+/* vstup ze seznamu jazyků: „Jazyky starověku“ */
+.starovek-karta{display:flex; flex-direction:column; gap:8px; width:100%; margin:0 0 12px; padding:12px; border-radius:18px; border:1px solid var(--sklo-okraj, rgba(0,0,0,.1)); background:var(--plocha, transparent)}
+.starovek-stitek{display:flex; align-items:center; gap:7px; margin:0 4px; font-size:.72rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:var(--text2)}
+.starovek-tl{display:grid; grid-template-columns:96px 1fr auto; align-items:center; gap:12px; width:100%; padding:6px; border:0; border-radius:12px; background:transparent; color:var(--text); text-align:left; font:inherit; cursor:pointer}
+.starovek-tl:hover{background:var(--plocha2, rgba(0,0,0,.04))}
+.starovek-tl:focus-visible{outline:3px solid var(--cyan); outline-offset:2px}
+.starovek-malba{display:block; aspect-ratio:16/10; border-radius:8px; overflow:hidden; background:#FBF7EE}
+.starovek-malba svg, .starovek-malba img{display:block; width:100%; height:100%; object-fit:cover; object-position:50% 80%}
+.starovek-malba img{opacity:0; transition:opacity .5s} .starovek-malba img.ukazana{opacity:1}
+.starovek-tl b{display:block; font-family:"Playfair Display", Georgia, serif; font-size:1.1rem; font-weight:600}
+.starovek-tl small{display:block; font-size:.8rem; line-height:1.35; color:var(--text2)}
+.starovek-tl > svg{width:16px; height:16px; color:var(--text2)}
+/* odkaz z karty jazyka */
+.k-civ{display:flex; align-items:center; gap:10px; width:100%; margin:0 0 12px; padding:8px 10px 8px 8px; border-radius:14px; border:1px solid var(--linka2); background:var(--plocha); color:var(--text); font:inherit; text-align:left; cursor:pointer}
+.k-civ:hover{border-color:var(--cyan-okraj)}
+.k-civ .starovek-malba{width:72px; flex:none}
+.k-civ b{display:block; font-family:"Playfair Display", Georgia, serif; font-weight:600}
+.k-civ small{display:block; font-size:.78rem; color:var(--text2)}
+.civ-svitek:focus{outline:none}
+
+/* ikona chrámu v záhlaví a nabídka civilizací */
+.starovek-ikona svg{color:var(--text)}
+/* bublina s vysvětlením při najetí myší nebo fokusu (uživatel: „na tu ikonu mouseover, o co jde“) */
+.starovek-ikona{position:relative}
+.starovek-ikona .bublina{position:absolute; top:calc(100% + 10px); right:-8px; z-index:30; width:max-content; max-width:240px; padding:8px 12px;
+  border-radius:10px; background:var(--text); color:var(--vesmir2, #02030A); font:500 .8rem/1.35 var(--pismo-text); text-align:left; white-space:normal;
+  box-shadow:0 10px 26px -10px rgba(0,0,0,.5); opacity:0; transform:translateY(-4px); pointer-events:none; transition:opacity .15s, transform .15s}
+.starovek-ikona .bublina::before{content:""; position:absolute; top:-5px; right:22px; width:10px; height:10px; background:inherit; transform:rotate(45deg)}
+.starovek-ikona:hover .bublina, .starovek-ikona:focus-visible .bublina{opacity:1; transform:none}
+:root[data-theme="light"] .starovek-ikona .bublina{background:#1E2436; color:#fff}
+@media (hover:none){ .starovek-ikona .bublina{display:none} }
+.starovek-okno{width:min(520px, calc(100vw - 32px))}
+.starovek-okno .starovek-tl{margin:4px 0}
+/* Příběhy jazyků: nadpisy skupin v nabídce (Slova na cestách, Jazyky v čase…) */
+.starovek-okno .od-telo h3.pribehy-skupina{display:flex; align-items:center; gap:10px; margin:18px 8px 6px; font-family:var(--pismo-text); font-size:.72rem; font-weight:700; line-height:1.2; letter-spacing:.1em; text-transform:uppercase; color:var(--text3)}
+.pribehy-skupina::after{content:""; flex:1; height:1px; background:var(--linka)}
+.starovek-okno .od-uvod + h3.pribehy-skupina{margin-top:10px}
+/* přehledy nahoře nabídky: jemně podbarvený blok a pod ním ozdobný předěl (čára s kosočtvercem) */
+.starovek-prehledy{margin:6px 0 0; padding:4px 6px; border-radius:14px; background:color-mix(in srgb, var(--text) 5%, transparent); border:1px solid var(--linka)}
+.starovek-prehledy .starovek-tl:hover{background:color-mix(in srgb, var(--text) 6%, transparent)}
+.starovek-predel{display:flex; align-items:center; gap:12px; margin:16px 8px 10px; color:var(--text3)}
+.starovek-predel::before, .starovek-predel::after{content:""; flex:1; height:1px; background:linear-gradient(90deg, transparent, var(--linka2, var(--linka)) 30%, var(--linka2, var(--linka)) 70%, transparent)}
+.starovek-predel span{width:7px; height:7px; transform:rotate(45deg); border:1px solid currentColor; opacity:.7; box-shadow:0 0 0 3px color-mix(in srgb, currentColor 0%, transparent)}
+.starovek-okno .od-telo{padding-bottom:18px}
+/* rodokmen písem (oddíl „strom“): vnořený seznam s čarami; přerušovaná čára = sporné odvození */
+.civ-strom{clear:both; margin:28px 0}
+.civ-strom > p{max-width:40em; color:var(--civ-ink2)}
+.civ-strom ul{list-style:none; margin:0; padding:0}
+.civ-strom-koren > li{margin:0 0 18px}
+.civ-strom li li{position:relative; padding-left:26px}
+.civ-strom li li::before{content:""; position:absolute; left:9px; top:0; bottom:0; border-left:1.5px solid var(--civ-linka)}
+.civ-strom li li:last-child::before{bottom:auto; height:24px}
+.civ-strom li li::after{content:""; position:absolute; left:9px; top:24px; width:14px; border-top:1.5px solid var(--civ-linka)}
+.civ-strom li.sporna::after{border-top-style:dashed; border-top-color:var(--civ-akcent)}
+.civ-strom li.sporna::before{border-left-style:dashed}
+.civ-uzel-karta{display:flex; align-items:flex-start; gap:12px; margin:6px 0; padding:8px 12px; border:1px solid var(--civ-linka); border-radius:10px; background:var(--civ-papir2); max-width:40em}
+.civ-uzel-ukazka{flex:0 0 auto; min-width:4.2em; font-size:1.45rem; line-height:1.25; color:var(--civ-ink); white-space:nowrap}
+.civ-uzel-ukazka.civ-bez-ukazky{color:var(--civ-ink3)}
+.civ-uzel-text{display:flex; flex-direction:column; gap:2px; min-width:0}
+.civ-uzel-text b{font-family:"Playfair Display", Georgia, serif; font-weight:600; font-size:1.02rem; color:var(--civ-ink)}
+.civ-uzel-text b a, .civ-uzel-text b button{font:inherit; color:var(--civ-akcent); background:none; border:0; padding:0; cursor:pointer; text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:3px}
+.civ-uzel-text small{font-size:.8rem; color:var(--civ-ink3)}
+.civ-uzel-text span{font-size:.88rem; color:var(--civ-ink2)}
+@media (max-width:600px){ .civ-strom li li{padding-left:16px} .civ-strom li li::before{left:4px} .civ-strom li li::after{left:4px; width:10px} .civ-uzel-karta{flex-direction:column; gap:4px} }
+/* slovníček pojmů */
+.civ-pojmy{clear:both; margin:28px 0}
+.civ-pojmy > p{max-width:40em; color:var(--civ-ink2)}
+.civ-pojmy dl{margin:0; max-width:44em}
+.civ-pojmy dl > div{padding:12px 0; border-bottom:1px solid var(--civ-linka)}
+.civ-pojmy dt{font-family:"Playfair Display", Georgia, serif; font-weight:600; font-size:1.08rem; color:var(--civ-akcent)}
+.civ-pojmy dd{margin:4px 0 0; color:var(--civ-ink2)}
+.civ-pojem-priklad{display:block; margin-top:4px; font-size:.9rem; color:var(--civ-ink3)}
+.civ-pojem-priklad [class^="civ-"], .civ-pojmy dd [class^="civ-"]{font-size:1.4em; line-height:1.1}
+</style>
+<link rel="canonical" href="https://thelanguageatlas.com/de/">
+<meta name="google-site-verification" content="zyKCEYlegO4cJQmz22iaMH9QuphSUalznP-e4iU_Gzg">
+<meta name="google-site-verification" content="R9cFXotbubItuaKstc9NVaT-CoYj0BqfVyLau7QR_GY">
+<link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/">
+<link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/">
+<link rel="alternate" hreflang="it" href="https://thelanguageatlas.com/it/">
+<link rel="alternate" hreflang="de" href="https://thelanguageatlas.com/de/">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://thelanguageatlas.com/de/">
+<meta property="og:title" content="Atlas der Sprachen">
+<meta property="og:description" content="An interactive atlas of all 7,967 languages of the world after Glottolog: distribution, language families and trees, vitality, typology from WALS and sound inventories from PHOIBLE.">
+<meta property="og:image" content="https://thelanguageatlas.com/de/nahled-en.b035ee127a.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A globe dotted with lights – each one is one of the world's languages">
+<meta property="og:locale" content="de_DE">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Atlas der Sprachen">
+<meta name="twitter:description" content="An interactive atlas of all 7,967 languages of the world after Glottolog: distribution, language families and trees, vitality, typology from WALS and sound inventories from PHOIBLE.">
+<meta name="twitter:image" content="https://thelanguageatlas.com/de/nahled-en.b035ee127a.jpg">
+<meta name="twitter:image:alt" content="A globe dotted with lights – each one is one of the world's languages">
+</head>
+<body>
+<svg aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
+ <symbol id="i-slunce" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.5 1.5M17.6 17.6l1.5 1.5M19.1 4.9l-1.5 1.5M6.4 17.6l-1.5 1.5"/></symbol>
+ <symbol id="i-mesic" viewBox="0 0 24 24"><path fill="currentColor" d="M20.7 14.6A8.6 8.6 0 0 1 9.4 3.3a8.6 8.6 0 1 0 11.3 11.3z"/></symbol>
+ <symbol id="i-dopis" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"><rect x="3" y="5.5" width="18" height="13" rx="2.6"/><path d="M4 7.5l8 5.8 8-5.8" stroke-linecap="round"/></symbol>
+ <symbol id="i-kalendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="2.6"/><path d="M3.5 10h17M8 3v4M16 3v4"/><circle cx="12" cy="15" r="1.3" fill="currentColor" stroke="none"/></symbol>
+ <symbol id="i-kniha" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round"><path d="M12 6.5C10.2 5 7.6 4.4 4 4.6v13.6c3.6-.2 6.2.4 8 1.9 1.8-1.5 4.4-2.1 8-1.9V4.6c-3.6-.2-6.2.4-8 1.9zM12 6.5v13.6"/></symbol>
+ <symbol id="i-ruka" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 12.5V5.2a1.4 1.4 0 0 1 2.8 0v6.3M11.3 11V3.9a1.4 1.4 0 0 1 2.8 0V11M14.1 11V5.4a1.4 1.4 0 0 1 2.8 0v7.8M8.5 12.5l-1.6-2a1.5 1.5 0 0 0-2.3 1.9l3 4.3A7.2 7.2 0 0 0 13.4 20h.4a5 5 0 0 0 5-5v-3.2a1.4 1.4 0 0 0-2.8 0"/></symbol>
+ <symbol id="i-vitalita" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 20V14M9.3 20V10M14.7 20V6.5M20 20V3.5"/></symbol>
+ <symbol id="i-odkaz" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13.5a4.2 4.2 0 0 0 6 .4l3-3a4.2 4.2 0 0 0-6-6l-1.2 1.2"/><path d="M14 10.5a4.2 4.2 0 0 0-6-.4l-3 3a4.2 4.2 0 0 0 6 6l1.2-1.2"/></symbol>
+ <symbol id="i-nastaveni" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h9M17 7h3M4 17h3M11 17h9"/><circle cx="15" cy="7" r="2.2"/><circle cx="9" cy="17" r="2.2"/></symbol>
+ <symbol id="i-hvezda" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.6l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z"/></symbol>
+ <symbol id="i-strom" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M12 17.6V12M12 12L6 7.6M12 12V7.2M12 12l6-4.4"/><circle cx="12" cy="19.6" r="2"/><circle cx="5.2" cy="6" r="2"/><circle cx="12" cy="5" r="2"/><circle cx="18.8" cy="6" r="2"/></symbol>
+ <symbol id="i-porovnat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h15M15 4l4 4-4 4M20 16H5M9 12l-4 4 4 4"/></symbol>
+ <symbol id="i-dal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></symbol>
+ <symbol id="i-zpet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></symbol>
+ <symbol id="i-typologie" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1"><circle cx="6.5" cy="7" r="2.6"/><circle cx="17.5" cy="7" r="2.6" fill="currentColor"/><circle cx="6.5" cy="17" r="2.6" fill="currentColor"/><circle cx="17.5" cy="17" r="2.6"/></symbol>
+ <symbol id="i-pismo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M2.6 19.5L7.6 5h1.6l5 14.5M4.4 14.6h8"/><path d="M15.6 10.4c1.6-1.4 5.4-1.2 5.4 1.9v7.2M21 14.2c-3.6-.4-5.8.5-5.8 2.7 0 2.4 3.6 2.9 5.8.4"/></symbol>
+ <symbol id="i-kostka" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="4.4"/><circle cx="8.4" cy="8.4" r="1.4" fill="currentColor" stroke="none"/><circle cx="15.6" cy="15.6" r="1.4" fill="currentColor" stroke="none"/><circle cx="15.6" cy="8.4" r="1.4" fill="currentColor" stroke="none"/><circle cx="8.4" cy="15.6" r="1.4" fill="currentColor" stroke="none"/></symbol>
+ <symbol id="i-svet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="9.2"/><path d="M2.8 12h18.4M12 2.8c2.6 2.6 3.9 6 3.9 9.2s-1.3 6.6-3.9 9.2c-2.6-2.6-3.9-6-3.9-9.2S9.4 5.4 12 2.8z"/></symbol>
+ <symbol id="i-zvuk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M4 9.2h3.4L12 5v14l-4.6-4.2H4z" fill="currentColor"/><path d="M16 9.4a3.7 3.7 0 0 1 0 5.2M18.7 6.7a7.5 7.5 0 0 1 0 10.6" stroke-linecap="round"/></symbol>
+ <symbol id="i-lupa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="10.6" cy="10.6" r="6.6"/><path d="M15.4 15.4L21 21"/></symbol>
+ <symbol id="i-otacet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-2.4-5.7"/><path d="M20 4v4.5h-4.5"/></symbol>
+ <symbol id="i-jmena" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 12.2V5.5a2 2 0 0 1 2-2h6.7l8.3 8.3a2 2 0 0 1 0 2.8l-5.9 5.9a2 2 0 0 1-2.8 0z"/><circle cx="8" cy="8" r="1.5" fill="currentColor" stroke="none"/></symbol>
+ <symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></symbol>
+ <symbol id="i-minus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M5 12h14"/></symbol>
+ <symbol id="i-pribehy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3.8h10.5a2.7 2.7 0 0 1 2.7 2.7v13.7H7.7A2.7 2.7 0 0 1 5 17.5z"/><path d="M5 17.5a2.7 2.7 0 0 1 2.7-2.7h10.5M8.8 7.6h5.6M8.8 10.6h3.8"/></symbol>
+ <symbol id="i-chram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.2 9.4L12 4l8.8 5.4zM4.5 9.4h15M6.3 12v6M10.1 12v6M13.9 12v6M17.7 12v6M3.6 20.4h16.8"/></symbol>
+ <symbol id="i-krizek" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></symbol>
+</svg>
+
+<a class="preskocit" href="#hledej" data-t="preskocit">Skip to the list of languages</a>
+<canvas id="hvezdy" aria-hidden="true"></canvas>
+<div class="app">
+ <header class="hlava sklo">
+  <a class="domu" id="domu" href="./" title="The Language Atlas – back to the start" aria-label="The Language Atlas – back to the start" data-t-title="domu" data-t-aria-label="domu">
+   <svg class="znak" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="50" cy="50" r="45" fill="var(--pozadi-loga)" stroke="currentColor" stroke-width="3.2"/><circle cx="50" cy="50" r="38.5" fill="none" stroke="currentColor" stroke-width="1.3" opacity=".5"/><g fill="none" stroke="var(--r-ie)" stroke-width="1.8" opacity=".75"><ellipse cx="50" cy="50" rx="31" ry="38.5"/><path d="M11.5 50h29M59.5 50h29"/></g><path transform="translate(36 34) scale(18)" d="M0.038 -0.355 0.281 0.271Q0.295 0.307 0.313 0.321Q0.331 0.334 0.345 0.335V0.355Q0.315 0.353 0.274 0.352Q0.234 0.352 0.193 0.352Q0.147 0.352 0.106 0.352Q0.065 0.353 0.04 0.355V0.335Q0.091 0.333 0.105 0.318Q0.118 0.302 0.098 0.251L-0.072 -0.214L-0.053 -0.24L-0.206 0.156Q-0.228 0.211 -0.232 0.246Q-0.237 0.281 -0.227 0.3Q-0.218 0.319 -0.196 0.326Q-0.175 0.334 -0.145 0.335V0.355Q-0.178 0.353 -0.208 0.352Q-0.238 0.352 -0.269 0.352Q-0.291 0.352 -0.31 0.352Q-0.33 0.353 -0.345 0.355V0.335Q-0.324 0.331 -0.301 0.308Q-0.28 0.285 -0.259 0.23L-0.031 -0.355Q-0.015 -0.354 0.004 -0.354Q0.022 -0.354 0.038 -0.355ZM0.108 0.067V0.087H-0.19L-0.18 0.067Z" fill="currentColor"/><path transform="translate(64 34) scale(18)" d="M0.342 -0.361V-0.341Q0.309 -0.34 0.293 -0.334Q0.277 -0.327 0.272 -0.309Q0.266 -0.292 0.266 -0.255V0.241Q0.266 0.277 0.272 0.295Q0.277 0.313 0.293 0.319Q0.309 0.325 0.342 0.327V0.347Q0.317 0.345 0.274 0.345Q0.232 0.344 0.183 0.344Q0.143 0.344 0.101 0.345Q0.058 0.345 0.032 0.347V0.327Q0.064 0.325 0.08 0.319Q0.096 0.313 0.102 0.295Q0.107 0.277 0.107 0.241V-0.255Q0.107 -0.307 0.096 -0.324Q0.085 -0.341 0.045 -0.341Q-0.023 -0.341 -0.051 -0.298Q-0.079 -0.255 -0.079 -0.178Q-0.079 -0.131 -0.068 -0.092Q-0.056 -0.054 -0.025 -0.031Q0.006 -0.009 0.065 -0.009H0.151Q0.151 -0.009 0.151 0.001Q0.151 0.011 0.151 0.011H0.054Q-0.034 0.011 -0.092 -0.005Q-0.15 -0.021 -0.184 -0.048Q-0.218 -0.075 -0.231 -0.109Q-0.244 -0.143 -0.244 -0.18Q-0.244 -0.237 -0.214 -0.277Q-0.183 -0.318 -0.122 -0.339Q-0.06 -0.36 0.032 -0.36Q0.051 -0.36 0.096 -0.359Q0.141 -0.358 0.19 -0.358Q0.232 -0.358 0.274 -0.359Q0.317 -0.36 0.342 -0.361ZM0.145 -0.006 0.143 0.011H0.034Q0.004 0.011 -0.014 0.03Q-0.032 0.048 -0.042 0.08Q-0.051 0.111 -0.058 0.153L-0.077 0.253Q-0.087 0.315 -0.122 0.338Q-0.158 0.361 -0.211 0.361Q-0.254 0.361 -0.284 0.348Q-0.316 0.334 -0.342 0.303L-0.328 0.291Q-0.318 0.302 -0.309 0.308Q-0.3 0.313 -0.287 0.314Q-0.269 0.314 -0.259 0.298Q-0.248 0.282 -0.24 0.242L-0.22 0.139Q-0.207 0.075 -0.161 0.047Q-0.114 0.019 -0.029 0.008Q-0.01 0.005 0.01 0.003Q0.029 0.001 0.06 -0.002Q0.092 -0.004 0.145 -0.006Z" fill="currentColor"/><path transform="translate(50 51) scale(18)" d="M0.197 0.329Q0.196 0.318 0.192 0.305Q0.188 0.292 0.179 0.277Q0.169 0.263 0.149 0.245L-0.211 -0.098Q-0.237 -0.123 -0.25 -0.154Q-0.263 -0.185 -0.263 -0.215Q-0.263 -0.242 -0.256 -0.268Q-0.248 -0.294 -0.235 -0.329H-0.201V-0.312Q-0.201 -0.294 -0.192 -0.273Q-0.183 -0.252 -0.159 -0.228L0.211 0.122Q0.226 0.137 0.236 0.154Q0.245 0.172 0.25 0.191Q0.255 0.21 0.255 0.231Q0.255 0.26 0.246 0.282Q0.236 0.304 0.221 0.329ZM-0.267 0.319V0.242H-0.25Q-0.233 0.242 -0.227 0.235Q-0.221 0.229 -0.225 0.213L-0.242 0.144Q-0.253 0.1 -0.244 0.057Q-0.236 0.015 -0.208 -0.022L-0.158 -0.089L-0.126 -0.054L-0.152 -0.012Q-0.173 0.022 -0.173 0.048Q-0.174 0.074 -0.153 0.111L-0.121 0.172Q-0.104 0.202 -0.099 0.237Q-0.095 0.273 -0.112 0.319ZM0.141 0.058 0.09 0.011Q0.09 0.001 0.096 -0.016Q0.102 -0.033 0.111 -0.051Q0.12 -0.07 0.129 -0.084L0.173 -0.158L0.22 -0.142L0.172 -0.062Q0.16 -0.042 0.153 -0.023Q0.146 -0.004 0.144 0.016Q0.141 0.036 0.141 0.058ZM0.253 -0.099 0.128 -0.115Q0.094 -0.119 0.081 -0.139Q0.067 -0.158 0.067 -0.201Q0.067 -0.227 0.073 -0.259Q0.078 -0.291 0.091 -0.329H0.126V-0.311Q0.126 -0.294 0.136 -0.285Q0.146 -0.275 0.165 -0.273L0.209 -0.267Q0.239 -0.263 0.253 -0.244Q0.267 -0.225 0.267 -0.189Q0.267 -0.167 0.264 -0.147Q0.26 -0.128 0.253 -0.099Z" fill="currentColor"/><path transform="translate(36.5 67.5) scale(18)" d="M0.019 0.388Q-0.059 0.388 -0.116 0.36Q-0.173 0.332 -0.204 0.28Q-0.235 0.228 -0.235 0.158Q-0.235 0.05 -0.16 -0.031Q-0.192 -0.046 -0.217 -0.07Q-0.241 -0.095 -0.253 -0.122Q-0.265 -0.149 -0.265 -0.174Q-0.265 -0.204 -0.254 -0.238Q-0.242 -0.273 -0.222 -0.304Q-0.201 -0.336 -0.176 -0.357Q-0.139 -0.388 -0.098 -0.388Q-0.063 -0.388 -0.025 -0.365Q0.013 -0.342 0.054 -0.295L0.033 -0.255Q0.003 -0.267 -0.023 -0.272Q-0.049 -0.278 -0.072 -0.278Q-0.107 -0.278 -0.135 -0.27Q-0.162 -0.263 -0.194 -0.246Q-0.191 -0.192 -0.158 -0.156Q-0.124 -0.12 -0.067 -0.106Q-0.023 -0.132 0.025 -0.153Q0.073 -0.175 0.127 -0.193Q0.138 -0.177 0.138 -0.142Q0.138 -0.121 0.129 -0.105Q0.121 -0.088 0.102 -0.075Q0.094 -0.069 0.076 -0.06Q0.058 -0.052 0.031 -0.041Q-0.056 -0.007 -0.099 0.021Q-0.142 0.049 -0.163 0.082Q-0.173 0.098 -0.179 0.116Q-0.184 0.134 -0.184 0.152Q-0.184 0.209 -0.132 0.241Q-0.079 0.273 0.021 0.273Q0.041 0.273 0.062 0.272Q0.083 0.27 0.105 0.267Q0.126 0.264 0.163 0.257Q0.2 0.249 0.252 0.237L0.265 0.279Q0.179 0.332 0.114 0.36Q0.05 0.388 0.019 0.388Z" fill="currentColor"/><path transform="translate(64 67) scale(18)" d="M-0.083 0.413Q0.048 0.388 0.131 0.343Q0.214 0.297 0.254 0.237Q0.293 0.178 0.293 0.111Q0.293 0.056 0.268 0.013Q0.243 -0.029 0.198 -0.053Q0.153 -0.077 0.09 -0.077Q0.04 -0.077 -0.011 -0.062Q-0.062 -0.048 -0.121 -0.015Q-0.18 0.017 -0.224 0.062Q-0.268 0.107 -0.291 0.152Q-0.315 0.198 -0.315 0.233Q-0.315 0.247 -0.309 0.254Q-0.303 0.261 -0.291 0.261Q-0.264 0.261 -0.231 0.247Q-0.199 0.233 -0.165 0.211Q-0.131 0.189 -0.103 0.164Q-0.076 0.141 -0.048 0.11Q-0.02 0.078 0.006 0.043Q0.032 0.008 0.052 -0.026Q0.071 -0.06 0.08 -0.087Q0.09 -0.114 0.082 -0.133Q0.074 -0.151 0.045 -0.17L0.053 -0.182Q0.082 -0.177 0.105 -0.169Q0.127 -0.16 0.142 -0.144Q0.152 -0.134 0.154 -0.122Q0.156 -0.11 0.152 -0.096Q0.137 -0.045 0.102 0.016Q0.067 0.077 0.019 0.136Q-0.028 0.195 -0.078 0.241Q-0.138 0.299 -0.202 0.33Q-0.267 0.361 -0.321 0.361Q-0.359 0.361 -0.381 0.338Q-0.404 0.315 -0.404 0.27Q-0.404 0.218 -0.38 0.167Q-0.357 0.117 -0.316 0.073Q-0.276 0.029 -0.224 -0.007Q-0.172 -0.043 -0.116 -0.067Q-0.067 -0.09 -0.011 -0.102Q0.045 -0.114 0.104 -0.114Q0.196 -0.114 0.263 -0.078Q0.33 -0.043 0.367 0.015Q0.403 0.072 0.403 0.139Q0.403 0.216 0.368 0.272Q0.333 0.327 0.269 0.363Q0.204 0.398 0.116 0.414Q0.027 0.431 -0.079 0.432ZM-0.056 0.308Q-0.081 0.308 -0.1 0.284Q-0.12 0.261 -0.132 0.223Q-0.144 0.184 -0.15 0.137Q-0.156 0.09 -0.156 0.044Q-0.156 -0.003 -0.149 -0.06Q-0.143 -0.117 -0.134 -0.173Q-0.125 -0.229 -0.118 -0.276Q-0.111 -0.322 -0.111 -0.348Q-0.111 -0.361 -0.115 -0.367Q-0.119 -0.373 -0.132 -0.378Q-0.143 -0.383 -0.158 -0.387Q-0.173 -0.39 -0.188 -0.393L-0.189 -0.407Q-0.173 -0.415 -0.153 -0.424Q-0.133 -0.432 -0.118 -0.432Q-0.089 -0.432 -0.059 -0.423Q-0.029 -0.413 -0.009 -0.399Q0.011 -0.385 0.011 -0.372Q0.011 -0.36 0.004 -0.349Q-0.003 -0.339 -0.011 -0.327Q-0.019 -0.315 -0.024 -0.297Q-0.033 -0.261 -0.042 -0.221Q-0.051 -0.181 -0.058 -0.141Q-0.066 -0.1 -0.071 -0.061Q-0.076 -0.022 -0.076 0.013Q-0.076 0.065 -0.065 0.101Q-0.055 0.138 -0.041 0.165Q-0.028 0.193 -0.018 0.216Q-0.008 0.239 -0.008 0.264Q-0.008 0.287 -0.021 0.297Q-0.034 0.308 -0.056 0.308ZM-0.227 -0.17Q-0.268 -0.17 -0.294 -0.185Q-0.321 -0.199 -0.337 -0.227Q-0.354 -0.254 -0.366 -0.291L-0.355 -0.301Q-0.329 -0.285 -0.307 -0.274Q-0.285 -0.263 -0.261 -0.258Q-0.238 -0.253 -0.21 -0.253Q-0.174 -0.253 -0.139 -0.257Q-0.104 -0.261 -0.074 -0.266Q-0.004 -0.279 0.046 -0.298Q0.095 -0.316 0.124 -0.33Q0.152 -0.344 0.159 -0.344Q0.199 -0.344 0.22 -0.333Q0.241 -0.321 0.241 -0.299Q0.241 -0.282 0.231 -0.271Q0.221 -0.259 0.202 -0.252Q0.183 -0.244 0.153 -0.235Q0.123 -0.226 0.086 -0.217Q0.049 -0.208 0.008 -0.199Q-0.034 -0.19 -0.077 -0.184Q-0.113 -0.178 -0.152 -0.174Q-0.191 -0.17 -0.227 -0.17Z" fill="currentColor"/><circle cx="50" cy="5" r="4.2" fill="var(--akcent)" stroke="var(--pozadi-loga)" stroke-width="1.6"/></svg>
+   <h1 data-t="nazev">Atlas der Sprachen</h1>
+  </a>
+  <nav class="jazyk-prepinac" id="jazyk-prepinac" aria-label="Website language" data-t-aria-label="jazykVolba">
+   <a href="../index.html" data-l="cs" hreflang="cs" lang="cs" title="Čeština">CS</a><a href="../en/index.html" data-l="en" hreflang="en" lang="en" title="English">EN</a><a href="../it/index.html" data-l="it" hreflang="it" lang="it" title="Italiano">IT</a><a href="index.html" data-l="de" hreflang="de" lang="de" title="Deutsch">DE</a>
+  </nav>
+  <button class="prepinac" id="prepinac" type="button" aria-pressed="false" aria-label="Switch between day and night look" title="Switch between day and night look" data-t-aria-label="motiv" data-t-title="motiv">
+   <svg aria-hidden="true"><use href="#i-slunce" id="ikona-rezim"/></svg>
+  </button>
+ </header>
+
+ <main class="mriz" id="obsah">
+  <section class="scena" id="scena" aria-label="Globe" data-t-aria-label="scena">
+   <div class="globus-misto" aria-hidden="true"></div>
+   <canvas id="podklad" aria-hidden="true"></canvas>
+   <canvas id="gl" aria-hidden="true"></canvas>
+   <canvas id="popisky" aria-hidden="true"></canvas>
+   <canvas id="globus" role="img" aria-label="Spinning globe; the selected language's area is highlighted" data-t-aria-label="platno"></canvas>
+   <canvas id="strom" role="img" hidden aria-label="Family tree of a language family" data-t-aria-label="stromPlatno"></canvas>
+   <div class="strom-hlava sklo" id="strom-hlava" hidden>
+    <label><svg aria-hidden="true"><use href="#i-strom"/></svg><span data-t="stromRodina">Family</span><select id="strom-rodina"></select></label>
+    <button type="button" id="strom-cely" data-t="stromCely">Whole tree</button>
+    <button type="button" id="strom-vse" hidden data-t="stromVse">Circular overview</button>
+   </div>
+   <canvas id="prehled" hidden tabindex="0" role="img" aria-label="Circular overview of language families: the width of a segment is the number of languages. Click a segment to go deeper, click the centre to go up one level." data-t-aria-label="prehledPlatno"></canvas>
+   <section class="prehled-panel sklo" id="prehled-panel" hidden aria-live="polite">
+    <nav class="prehled-cesta" id="prehled-cesta" aria-label="Where you are in the overview" data-t-aria-label="prehledKde"></nav>
+    <h3 id="prehled-nazev"></h3>
+    <p class="prehled-meta" id="prehled-meta"></p>
+    <button type="button" class="tl-rodokmen prehled-do-stromu" id="prehled-strom" hidden><svg aria-hidden="true"><use href="#i-strom"/></svg><span data-t="prehledOtevrit">Open the family tree</span></button>
+    <ol class="prehled-radky" id="prehled-radky"></ol>
+    <p class="prehled-vic" id="prehled-vic" hidden></p>
+    <div class="prehled-legenda" id="prehled-legenda"></div>
+   </section>
+   <p class="strom-napoveda" id="strom-napoveda" hidden data-t="stromNapoveda">The common ancestor of the whole family is at the bottom; individual languages are at the ends of the branches. Each ring marks a split; branch thickness reflects the number of languages descending from it. Large dots are languages with a detailed card. Drag to move, scroll or pinch to zoom, click a branch or a language to select it.</p>
+   <div class="brana" id="brana" hidden>
+    <div class="brana-hlava sklo"><strong data-t="branaNadpis">✦ Constructed languages from fiction</strong><p data-t="branaText">These languages were constructed by writers and linguists for books, films and television. They are not part of the register of natural languages and therefore have no place on the globe.</p>
+     <button class="tl-rodokmen" id="brana-zpet" type="button"><svg aria-hidden="true"><use href="#i-svet"/></svg><span data-t="branaZpet">Back to Earth</span></button></div>
+    <div class="brana-svety" id="brana-svety"></div>
+   </div>
+   <div class="hud" id="hud" aria-hidden="true"><span class="souradnice" id="hud-souradnice"></span><span class="stav-hud" id="hud-stav"></span></div>
+   <section class="typ-legenda sklo" id="typ-legenda" hidden aria-labelledby="typ-leg-nazev"></section>
+   <div class="eu-panel sklo cesta-panel" id="cesta-panel" hidden role="dialog" aria-labelledby="cesta-nadpis">
+    <div class="eu-text"><strong id="cesta-nadpis"></strong><p id="cesta-uvod"></p></div>
+    <button class="zavrit" id="cesta-zavrit" type="button" aria-label="Close the word journey" data-t-aria-label="cestaZavrit"><svg aria-hidden="true"><use href="#i-krizek"/></svg></button>
+    <ol class="cesta-kroky" id="cesta-kroky"></ol>
+    <div class="cesta-dalsi" id="cesta-dalsi"></div>
+   </div>
+   <div class="eu-panel sklo putovani-panel" id="putovani-panel" hidden role="dialog" aria-labelledby="put-nadpis">
+    <div class="eu-text"><strong id="put-nadpis"></strong><p id="put-uvod"></p></div>
+    <button class="zavrit" id="put-zavrit" type="button" aria-label="Close the language journey" data-t-aria-label="putZavrit"><svg aria-hidden="true"><use href="#i-krizek"/></svg></button>
+    <div class="put-ovl"><button type="button" class="put-hraj" id="put-hraj">❚❚</button><input type="range" id="put-osa" min="0" max="599" step="1" value="0" aria-label="Timeline" data-t-aria-label="putOsa"></div>
+    <ol class="put-etapy" id="put-etapy"></ol>
+    <p class="put-zdroje" id="put-zdroje"></p>
+   </div>
+   <div class="vit-legenda sklo" id="vit-legenda" hidden><button type="button" id="vit-legenda-tl"></button></div>
+   <nav class="dok medailony" id="dok" aria-label="Atlas sections" data-t-aria-label="rozcestnik">
+    <button class="med" id="tl-starovek" type="button" aria-haspopup="dialog" title="Languages of antiquity: pages on civilizations, their languages and scripts" data-t-title="starovekTlacitko"><i class="med-obr" data-ikona="starovek"></i><span data-t="medStarovek">Ancient languages</span></button>
+    <button class="med" id="tl-pribehy" type="button" aria-haspopup="dialog" title="Language stories: travelling words, language change, revival and mysteries" data-t-title="pribehyTlacitko"><i class="med-obr" data-ikona="pribehy"></i><span data-t="medPribehy">Language stories</span></button>
+    <button class="med" id="tl-strom" type="button" aria-pressed="false" title="Language family tree: how the languages of one family are related" data-t-title="rodokmenPopis"><i class="med-obr" data-ikona="rodokmen"></i><span data-t="rodokmen">Family tree</span></button>
+    <button class="med" id="tl-mapy" type="button" aria-haspopup="dialog" title="Colour maps of languages: script, vitality and typology (WALS)" data-t-title="mapyPopis"><i class="med-obr" data-ikona="mapy"></i><span data-t="medMapy">Maps</span></button>
+    <button class="med" id="tl-vitalita-dok" type="button" aria-haspopup="dialog" title="Language vitality: degrees of endangerment on the UNESCO scale, figures and sources" data-t-title="vitalitaDokPopis"><i class="med-obr" data-ikona="vitalita"><b class="odznak-filtr" id="vitalita-pocet" hidden aria-hidden="true"></b></i><span data-t="vitalita">Vitality</span></button>
+    <button class="med maly" id="tl-zobrazeni" type="button" aria-expanded="false" aria-controls="panel-zobrazeni" title="Spin, names and sign languages" data-t-title="zobrazeniPopis"><i class="med-obr"><svg aria-hidden="true"><use href="#i-nastaveni"/></svg><b class="odznak-filtr" id="zobrazeni-pocet" hidden aria-hidden="true"></b></i><span data-t="zobrazeni">Settings</span></button>
+   </nav>
+   <div class="roh-ovladani" role="group" aria-label="Globe zoom" data-t-aria-label="zoomSkupina">
+    <button class="kolo" id="tl-cely" type="button" hidden aria-label="Whole world" title="Whole world" data-t-aria-label="celySvet" data-t-title="celySvet"><svg aria-hidden="true"><use href="#i-svet"/></svg></button>
+    <button class="kolo" id="tl-priblizi" type="button" aria-label="Zoom in" title="Zoom in" data-t-aria-label="priblizit" data-t-title="priblizit"><svg aria-hidden="true"><use href="#i-plus"/></svg></button>
+    <span class="zoom-hod" id="zoom-hod">1,0&times;</span>
+    <button class="kolo" id="tl-oddal" type="button" aria-label="Zoom out" title="Zoom out" data-t-aria-label="oddalit" data-t-title="oddalit"><svg aria-hidden="true"><use href="#i-minus"/></svg></button>
+   </div>
+   <div class="panel-zobrazeni sklo" id="panel-zobrazeni" hidden>
+    <div id="pz-hlavni">
+     <div class="vp-hlava"><strong data-t="zobrazeni">Settings</strong>
+      <button class="zavrit" id="zobrazeni-zavrit" type="button" aria-label="Close" data-t-aria-label="zavritPanel"><svg aria-hidden="true"><use href="#i-krizek"/></svg></button></div>
+     <button class="volba-radek" id="tl-otacet" type="button" aria-pressed="false" aria-labelledby="n-otacet" aria-describedby="p-otacet"><svg aria-hidden="true"><use href="#i-otacet"/></svg><span><b id="n-otacet" data-t="otacet">Spin</b> <small id="p-otacet" data-t="otacetPopis">Let the globe spin slowly by itself</small></span><i class="spinac" aria-hidden="true"></i></button>
+     <button class="volba-radek" id="tl-jmena" type="button" aria-pressed="false" aria-labelledby="n-jmena" aria-describedby="p-jmena"><svg aria-hidden="true"><use href="#i-jmena"/></svg><span><b id="n-jmena" data-t="jmena">Names</b> <small id="p-jmena" data-t="jmenaPopis">Show the names of all languages when zoomed in (the selected language and its relatives always have them)</small></span><i class="spinac" aria-hidden="true"></i></button>
+     <div class="volba-oddil">
+      <p class="volba-nadpis"><svg aria-hidden="true"><use href="#i-ruka"/></svg><b data-t="znakoveSkupina">Sign languages</b></p>
+      <div class="segment" role="group" aria-label="Sign languages" aria-describedby="p-znakove" data-t-aria-label="znakoveSkupina">
+       <button type="button" data-znak="vse" aria-pressed="true" data-t="znakoveVse">All</button>
+       <button type="button" data-znak="bez" aria-pressed="false" data-t="znakoveBez">No sign languages</button>
+       <button type="button" data-znak="jen" aria-pressed="false" data-t="znakoveJen">Sign only</button>
+      </div>
+      <small class="volba-pozn" id="p-znakove" data-t="znakovePopis">Sign languages are the natural languages of Deaf communities, using handshape and movement, facial expression and posture. There is no single universal sign language: many countries have their own, some several, and their boundaries do not coincide with national borders.</small>
+     </div>
+    </div>
+   </div>
+   <button class="tl-napoveda sklo" id="tl-napoveda" type="button" aria-expanded="false" aria-controls="napoveda" aria-label="Help" data-t-aria-label="napoveda">?</button>
+   <div class="napoveda" id="napoveda" hidden role="note">
+    <ol>
+     <li data-krok="zatoc"><i></i><span><b data-t="krokZatoc">Rotate</b> <span data-t="krokZatocJak">– drag with the mouse or a finger</span></span></li>
+     <li data-krok="pribliz"><i></i><span><b data-t="krokPribliz">Zoom</b> <span data-t="krokPriblizJak">– mouse wheel or two fingers</span></span></li>
+     <li data-krok="klikni"><i></i><span><b data-t="krokKlikni">Select</b> <span data-t="krokKlikniJak">– click a point of light to open the language card, or a country to see the languages spoken there</span></span></li>
+     <li class="napoveda-navod"><i><svg aria-hidden="true"><use href="#i-kniha"/></svg></i><button type="button" id="napoveda-navod" aria-haspopup="dialog" data-t="navodNapoveda">Full guide – everything the atlas can do</button></li>
+    </ol>
+    <button class="napoveda-x" id="napoveda-x" type="button" aria-label="Close the tips" data-t-aria-label="napovedaZavrit"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></button>
+   </div>
+   <div class="eu-panel sklo" id="eu-panel" hidden role="dialog" aria-labelledby="eu-nadpis">
+    <svg class="eu-vlajka" viewBox="0 0 300 200" role="img" aria-label="Flag of the European Union" data-t-aria-label="euVlajka"><rect width="300" height="200" rx="10" fill="#003399"/><g fill="#FFCC00"><path class="eu-h" style="--i:0" d="M150.0,22.2L152.5,29.9L160.6,29.9L154.0,34.6L156.5,42.3L150.0,37.5L143.5,42.3L146.0,34.6L139.4,29.9L147.5,29.9Z"/><path class="eu-h" style="--i:1" d="M183.3,31.1L185.8,38.8L193.9,38.8L187.4,43.5L189.9,51.2L183.3,46.5L176.8,51.2L179.3,43.5L172.8,38.8L180.9,38.8Z"/><path class="eu-h" style="--i:2" d="M207.8,55.6L210.3,63.2L218.3,63.2L211.8,68.0L214.3,75.6L207.8,70.9L201.2,75.6L203.7,68.0L197.2,63.2L205.3,63.2Z"/><path class="eu-h" style="--i:3" d="M216.7,88.9L219.2,96.6L227.3,96.6L220.7,101.3L223.2,109.0L216.7,104.2L210.2,109.0L212.7,101.3L206.1,96.6L214.2,96.6Z"/><path class="eu-h" style="--i:4" d="M207.8,122.2L210.3,129.9L218.3,129.9L211.8,134.7L214.3,142.3L207.8,137.6L201.2,142.3L203.7,134.7L197.2,129.9L205.3,129.9Z"/><path class="eu-h" style="--i:5" d="M183.3,146.7L185.8,154.3L193.9,154.3L187.4,159.1L189.9,166.7L183.3,162.0L176.8,166.7L179.3,159.1L172.8,154.3L180.9,154.3Z"/><path class="eu-h" style="--i:6" d="M150.0,155.6L152.5,163.3L160.6,163.3L154.0,168.0L156.5,175.7L150.0,170.9L143.5,175.7L146.0,168.0L139.4,163.3L147.5,163.3Z"/><path class="eu-h" style="--i:7" d="M116.7,146.7L119.1,154.3L127.2,154.3L120.7,159.1L123.2,166.7L116.7,162.0L110.1,166.7L112.6,159.1L106.1,154.3L114.2,154.3Z"/><path class="eu-h" style="--i:8" d="M92.2,122.3L94.7,129.9L102.8,129.9L96.3,134.7L98.8,142.3L92.2,137.6L85.7,142.3L88.2,134.7L81.7,129.9L89.7,129.9Z"/><path class="eu-h" style="--i:9" d="M83.3,88.9L85.8,96.6L93.9,96.6L87.3,101.3L89.8,109.0L83.3,104.2L76.8,109.0L79.3,101.3L72.7,96.6L80.8,96.6Z"/><path class="eu-h" style="--i:10" d="M92.2,55.5L94.7,63.2L102.8,63.2L96.3,68.0L98.8,75.6L92.2,70.9L85.7,75.6L88.2,68.0L81.7,63.2L89.7,63.2Z"/><path class="eu-h" style="--i:11" d="M116.6,31.1L119.1,38.8L127.2,38.8L120.7,43.5L123.2,51.2L116.6,46.5L110.1,51.2L112.6,43.5L106.1,38.8L114.2,38.8Z"/></g></svg>
+    <div class="eu-text"><strong id="eu-nadpis" data-t="euNadpis">The 24 official languages of the European Union</strong><p data-t="euText">The gold stars on the globe mark the 24 official languages of the European Union. Click a star to open the language card.</p></div>
+    <button class="zavrit" id="eu-zavrit" type="button" aria-label="Close" data-t-aria-label="euZavrit"><svg aria-hidden="true"><use href="#i-krizek"/></svg></button>
+    <div class="eu-jazyky" id="eu-jazyky"></div>
+   </div>
+   <div class="srovnani-vyzva sklo" id="srovnani-vyzva" hidden role="status"><svg aria-hidden="true"><use href="#i-porovnat"/></svg><span id="sv-text"></span><button type="button" id="sv-zrusit" data-t="porovnatZrusit">Cancel</button></div>
+   <div class="zeme-okno sklo" id="zeme-okno" hidden></div>
+   <div class="bublina-bod" id="bublina-bod" hidden></div>
+   <div class="vypadek" id="vypadek" hidden>
+    <strong data-t="vypadekNadpis">The globe could not start.</strong>
+    <span data-t="vypadekText">The language list and the language cards still work. Please try reloading the page.</span>
+   </div>
+   <div class="ukazatel" id="ukazatel" hidden aria-hidden="true"><i></i><i></i></div>
+
+   <article class="karta sklo" id="karta" hidden aria-live="polite">
+    <button class="uchyt" id="k-uchyt" type="button" aria-label="Show more" data-t-aria-label="kartaVic"><i></i></button>
+    <div class="k-hero" id="k-hero">
+     <div class="k-malba" id="k-malba" hidden></div>
+     <div class="k-lista">
+      <p class="kod" id="k-kod"></p>
+      <button class="zavrit" id="k-sdilet" type="button" aria-label="Copy a link to this language" title="Copy a link to this language" data-t-aria-label="sdiletOdkaz" data-t-title="sdiletOdkaz"><svg aria-hidden="true"><use href="#i-odkaz"/></svg></button>
+      <button class="zavrit" id="k-zavrit" type="button" aria-label="Close language card" data-t-aria-label="zavritKartu"><svg aria-hidden="true"><use href="#i-krizek"/></svg></button>
+     </div>
+     <div class="k-pozdrav" id="k-plne">
+      <p class="pozdrav" id="k-pozdrav"></p>
+      <p class="prepis" id="k-prepis"></p>
+     </div>
+     <h2 id="k-nazev"></h2>
+     <p class="domaci" id="k-domaci"></p>
+     <span class="odznak" id="k-odznak" hidden></span>
+     <button class="prehraj" id="k-prehraj" type="button"><svg aria-hidden="true"><use href="#i-zvuk"/></svg><span>Play pronunciation</span></button>
+    </div>
+    <p class="stav" id="k-stav" hidden></p>
+    <p class="zkopirovano" id="k-zkopirovano" role="status" hidden></p>
+    <div class="k-stitky" id="k-stitky"></div>
+    <nav class="k-cesta" id="k-cesta" hidden aria-label="Family tree of a language family" data-t-aria-label="stromPlatno"></nav>
+  <button class="k-porovnat" id="k-porovnat" type="button"><svg aria-hidden="true"><use href="#i-porovnat"/></svg><span data-t="porovnat">Compare with another language</span></button>
+    <div class="k-telo" id="k-telo"></div>
+   </article>
+  </section>
+
+  <aside class="police sklo" aria-label="Language list" data-t-aria-label="seznam">
+   <div class="hledani">
+    <label class="pole">
+     <svg aria-hidden="true"><use href="#i-lupa"/></svg>
+     <input id="hledej" type="search" placeholder="Search or ask a question…" aria-label="Search languages" data-t-placeholder="hledejPlaceholder" data-t-aria-label="hledejPopisek">
+     <button class="hledej-x" id="hledej-x" type="button" hidden aria-label="Clear search" title="Clear search" data-t-aria-label="hledejVymazat" data-t-title="hledejVymazat"><svg aria-hidden="true"><use href="#i-krizek"/></svg></button>
+    </label>
+    <button class="hledej-tip" id="hledej-tip" type="button" hidden></button>
+    <div class="razeni segment" role="group" aria-label="Sort" data-t-aria-label="radit">
+     <button type="button" data-razeni="rodiny" aria-pressed="true" data-t="raditRodiny">By family</button>
+     <button type="button" data-razeni="abeceda" aria-pressed="false" data-t="raditAbeceda">A–Z</button>
+     <button type="button" data-razeni="svetadil" aria-pressed="false" data-t="raditSvetadil">By continent</button>
+    </div>
+    <div class="pocet-radek"><p class="pocet" id="pocet"></p>
+     <button class="tl hlavni" id="tl-nahoda" type="button"><svg aria-hidden="true"><use href="#i-kostka"/></svg><span data-t="prekvap">Random language</span></button></div>
+   </div>
+   <div class="seznam" id="seznam"></div>
+   <footer class="paticka">
+   <details class="pat-det" id="paticka-det">
+   <summary><svg aria-hidden="true"><use href="#i-kniha"/></svg><span data-t="patickaSouhrn">About, sources, contact, guide and calendar</span><svg class="pat-sipka" aria-hidden="true"><use href="#i-dal"/></svg></summary>
+   <p class="zpetna"><svg aria-hidden="true"><use href="#i-dopis"/></svg><span><span data-t="zpetna">Comments and corrections:</span>
+    <a id="zpetna-odkaz" href="mailto:info@atlasjazyku.cz" title="Send feedback by e-mail" data-t-title="zpetnaPopis">info@atlasjazyku.cz</a></span></p>
+   <p class="o-datech-radek"><button class="odkaz-o-datech" id="tl-o-datech" type="button" aria-haspopup="dialog"><span id="tl-o-datech-text"></span></button><button class="odkaz-o-datech" id="tl-navod-pat" type="button" aria-haspopup="dialog" data-t="navodOdkaz">Full guide</button><button class="odkaz-o-datech" id="tl-kalendar-pat" type="button" aria-haspopup="dialog" data-t="kalendarOdkaz">Calendar of language days</button><a class="odkaz-jazyky" id="odkaz-jazyky" hidden></a></p>
+   <p class="zdroje" data-t="zdroje">Dots: Glottolog (CC BY 4.0) · Grammar: WALS (CC BY 4.0) · Sounds: PHOIBLE (CC BY-SA 3.0) · Map: Natural Earth</p>
+   </details>
+   </footer>
+  </aside>
+ </main>
+ <dialog class="o-datech" id="o-datech" aria-labelledby="od-nadpis"></dialog>
+ <dialog class="o-datech kalendar" id="kalendar" aria-labelledby="kal-nadpis"></dialog>
+ <dialog class="o-datech navod" id="navod" aria-labelledby="nav-nadpis"></dialog>
+ <dialog class="o-datech starovek-okno" id="starovek-okno" aria-labelledby="st-nadpis"></dialog>
+ <dialog class="o-datech vitalita-okno" id="vitalita-okno" aria-labelledby="vit-nadpis"></dialog>
+ <dialog class="o-datech mapy-okno" id="mapy-okno" aria-labelledby="mapy-nadpis"></dialog>
+ <dialog class="civ-okno" id="civ-okno" aria-labelledby="civ-nadpis"></dialog>
+</div>
+
+<script src="../js/atlas.c49f9c414c.js"></script>
+</body>
+</html>

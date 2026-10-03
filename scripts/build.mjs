@@ -21,7 +21,7 @@ const podrobnosti = json("data/podrobnosti.json");
 const rodinyCz = json("data/glottolog-families.cs.json");
 /* jazyky webu: čeština a angličtina jsou úplné; další (italština od 2. 10. 2026) se doplňují postupně a co v nich chybí,
    bere se z angličtiny – texty rozhraní po klíčích (spoj), data v prohlížeči (doplnJazyky v app.js) */
-const JAZYKY_WEBU = ["cs", "en", "it"];
+const JAZYKY_WEBU = ["cs", "en", "it", "de"];
 const DALSI = JAZYKY_WEBU.filter(l => l !== "cs" && l !== "en");
 const NAZVY = Object.fromEntries(DALSI.map(l => [l, json(`data/nazvy-${l}.json`)]));          // státy, písma, jazyky (scripts/nazvy.mjs)
 const RODINY = Object.fromEntries(DALSI.map(l => [l, json(`data/glottolog-families.${l}.json`)]));
@@ -53,11 +53,11 @@ const nareci = json("data/nareci.json");                 // jména nářečí z 
 // adresy webu: česká verze na atlasjazyku.cz, anglická na thelanguageatlas.com (dist/en/ servírovaná z kořene).
 // Canonical, og:url a og:image musí mířit na tu doménu, na které stránka opravdu leží: Facebook podle og:url stránku
 // načte znovu a se starou adresou atlasoflanguages.netlify.app ukazoval odkaz bez obrázku (25. 9. 2026).
-const DOMENA = { cs: "https://atlasjazyku.cz", en: "https://thelanguageatlas.com", it: "https://thelanguageatlas.com/it" };   // italština na anglické doméně v /it/ (dist/it/)
+const DOMENA = { cs: "https://atlasjazyku.cz", en: "https://thelanguageatlas.com", it: "https://thelanguageatlas.com/it", de: "https://thelanguageatlas.com/de" };   // další jazyky na anglické doméně v /it/, /de/ (dist/it/, dist/de/)
 // ověření vlastnictví v Google Search Console (značka HTML), na úvodních stránkách obou domén; kódy nemazat,
 // jinak Search Console ověření po čase zruší
 const GOOGLE_OVERENI = ["zyKCEYlegO4cJQmz22iaMH9QuphSUalznP-e4iU_Gzg", "R9cFXotbubItuaKstc9NVaT-CoYj0BqfVyLau7QR_GY"];
-const WEB = p => p === "/en" || p.startsWith("/en/") ? DOMENA.en + p.slice(3) : p.startsWith("/it/") ? DOMENA.en + p : DOMENA.cs + p;   // cesta v dist/ → plná adresa
+const WEB = p => p === "/en" || p.startsWith("/en/") ? DOMENA.en + p.slice(3) : DALSI.some(l => p.startsWith(`/${l}/`)) ? DOMENA.en + p : DOMENA.cs + p;   // cesta v dist/ → plná adresa
 const ikona = cti("static/favicon.svg").trim();
 // náhled pro sdílení s otiskem v adrese: X, Facebook a spol. si obrázek pamatují podle adresy, takže po změně
 // obrázku by pod odkazem dál ukazovaly starý (uživatel 25. 9. 2026 na X: „pořád ještě ukazuje starou upoutávku“)
@@ -68,7 +68,7 @@ for (const l of DALSI) NAHLED[l] = NAHLED.en;   // vlastní obrázek pro sdílen
 const FONTY = "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800&display=swap";
 const escHtml = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 // data jdou do <script>, proto „<“ zapíšu jako < – řetězec „</script>“ v datech by stránku rozbil
-const doSkriptu = hodnota => (typeof hodnota === "string" ? hodnota : JSON.stringify(hodnota)).replace(/</g, "\\u003c");
+const doSkriptuVse = hodnota => (typeof hodnota === "string" ? hodnota : JSON.stringify(hodnota)).replace(/</g, "\\u003c");
 
 // texty rozhraní obou jazyků
 const UI = {};
@@ -111,21 +111,34 @@ function starovekDoSkriptu(artefakt) {
   }
   return { civilizace: STAROVEK.civilizace, foto, nahled };
 }
-/* skript stránky s daty; na webu je jeden pro obě jazykové verze (jazyk si přečte z <html lang>) */
+/* Artefakt (jeden soubor, limit 16 MB) nese jen češtinu a angličtinu: každý další jazyk webu přidá asi 1 MB textů
+   a se čtyřmi jazyky by artefakt limit přesáhl (3. 10. 2026). Přepínač v artefaktu vede pro IT a DE na web.
+   jenJazyky vyhodí z dat klíče ostatních jazyků – jen u objektů, které mají i „en“ (dvojice {cs, en, it, de}). */
+const ARTEFAKT_JAZYKY = ["cs", "en"], VYNECHAT = JAZYKY_WEBU.filter(l => !ARTEFAKT_JAZYKY.includes(l));
+function jenJazyky(o) {
+  if (Array.isArray(o)) return o.map(jenJazyky);
+  if (!o || typeof o !== "object") return o;
+  const n = {};
+  for (const [k, v] of Object.entries(o)) if (!("en" in o && VYNECHAT.includes(k))) n[k] = jenJazyky(v);
+  return n;
+}
+/* skript stránky s daty; na webu je jeden pro všechny jazykové verze (jazyk si přečte z <html lang>) */
 function skriptStranky(vychozi, artefakt) {
+  const doSkriptu = h => doSkriptuVse(artefakt ? jenJazyky(h) : h);
+  const jenJ = h => artefakt ? jenJazyky(h) : h;
   const skript = aplikace
     .replace("/*__UI__*/null", () => doSkriptu(UI))
     .replace('/*__VYCHOZI__*/"cs"', () => vychozi)
     .replace("/*__ARTEFAKT__*/false", () => String(!!artefakt))
-    .replace("/*__SVET__*/null", () => doSkriptu(svet))
+    .replace("/*__SVET__*/null", () => doSkriptuVse(svet))
     .replace("/*__JAZYKY__*/null", () => doSkriptu(JAZYKY))
     .replace("/*__DNY__*/null", () => { const d = json("data/dny-jazyku.json"); delete d._pozn; return doSkriptu(d); })
     .replace("/*__VERZE__*/null", () => doSkriptu({ glottolog: glottolog.stazeno, podrobnosti: podrobnosti.stazeno, wikidata: json("data/wikidata.json").stazeno }))
-    .replace("/*__STATY__*/null", () => doSkriptu({ ...nazvyZemi, ...Object.fromEntries(DALSI.map(l => [l, NAZVY[l].zeme])) }))
+    .replace("/*__STATY__*/null", () => doSkriptu({ ...nazvyZemi, ...Object.fromEntries(DALSI.map(l => [l, NAZVY[l].zeme])) }))   // má klíč en, jenJazyky ho zúží
     .replace("/*__REJSTRIK__*/null", () => doSkriptu(REJSTRIK))
     .replace("/*__VYMYSLENE__*/null", () => doSkriptu(json("data/vymyslene.json")))
     .replace("/*__STAROVEK__*/null", () => doSkriptu(starovekDoSkriptu(artefakt)))
-    .replace("/*__IKONY__*/null", () => doSkriptu(Object.fromEntries(   // obrázky medailonů pod glóbem a náhledy map v okně Mapy (mapa-<id>)
+    .replace("/*__IKONY__*/null", () => doSkriptuVse(Object.fromEntries(   // obrázky medailonů pod glóbem a náhledy map v okně Mapy (mapa-<id>)
       ["starovek", "pribehy", "rodokmen", "mapy", "vitalita"].map(k => ["ikony/" + k, k])
         .concat(fs.readdirSync(path.join(KOREN, "static/mapy")).filter(f => f.endsWith(".jpg")).map(f => ["mapy/" + f.slice(0, -4), "mapa-" + f.slice(0, -4)]))
         .map(([soubor, k]) => [k, artefakt ? "data:image/jpeg;base64," + fs.readFileSync(path.join(KOREN, `static/${soubor}.jpg`)).toString("base64") : `/${soubor}.jpg`]))))
@@ -134,17 +147,17 @@ function skriptStranky(vychozi, artefakt) {
       .filter(j => !j.koncept || process.env.PUT_KONCEPTY)))                              //   do webu jde jen s PUT_KONCEPTY=1 (náhled)
     // cesty slov na glóbu (Příběhy)
     .replace("/*__PISMA__*/null", () => doSkriptu(json("data/pisma.json").pisma))   // vrstva Písma světa
-    .replace("/*__KRAJINY__*/null", () => doSkriptu(json("data/krajiny.json")))
+    .replace("/*__KRAJINY__*/null", () => doSkriptuVse(json("data/krajiny.json")))   // klíče jsou id jazyků atlasu (i „de“, „it“), nezužovat
     .replace("/*__RELIEF__*/null", () => JSON.stringify("data:image/webp;base64," + fs.readFileSync(path.join(KOREN, "data/relief.webp")).toString("base64")))
     .replace("/*__TYPOLOGIE__*/null", () => { const d = json("data/typologie.json"), p = json("data/typologie-popis.json");   // typologické mapy (WALS)
       return doSkriptu({ oblasti: p.oblasti, vlastnosti: p.vlastnosti.map(function(v, k){ return Object.assign({}, v, d.vlastnosti[k]); }) }); })
-    .replace("/*__PODROBNOSTI__*/null", () => doSkriptu({ uzly: podrobnosti.uzly, nad: podrobnosti.nad,
-                                                          staty: { ...podrobnosti.staty, ...Object.fromEntries(DALSI.map(l => [l, NAZVY[l].staty])) }, udhr: podrobnosti.udhr, mapaStatu: podrobnosti.mapaStatu,
-                                                          pisma: { ...podrobnosti.pisma, ...Object.fromEntries(DALSI.map(l => [l, { ...podrobnosti.pisma.en, ...NAZVY[l].pisma }])) }, atlasCldr: podrobnosti.atlasCldr,
+    .replace("/*__PODROBNOSTI__*/null", () => doSkriptuVse({ uzly: podrobnosti.uzly, nad: podrobnosti.nad,
+                                                          staty: jenJ({ ...podrobnosti.staty, ...Object.fromEntries(DALSI.map(l => [l, NAZVY[l].staty])) }), udhr: podrobnosti.udhr, mapaStatu: podrobnosti.mapaStatu,
+                                                          pisma: jenJ({ ...podrobnosti.pisma, ...Object.fromEntries(DALSI.map(l => [l, { ...podrobnosti.pisma.en, ...NAZVY[l].pisma }])) }), atlasCldr: podrobnosti.atlasCldr,
                                                           // jména teček v dalších jazycích: index tečky → jméno (CLDR); bez jména zůstane anglické z Glottologu
-                                                          nazvy: Object.fromEntries(DALSI.map(l => [l, Object.fromEntries(glottolog.body.map((b, i) => [i, NAZVY[l].jazyky[b[6]]]).filter(x => x[1]))])),
+                                                          nazvy: Object.fromEntries(DALSI.filter(l => !artefakt || !VYNECHAT.includes(l)).map(l => [l, Object.fromEntries(glottolog.body.map((b, i) => [i, NAZVY[l].jazyky[b[6]]]).filter(x => x[1]))])),
                                                           radky: podrobnosti.radky, vetve: json("data/glottolog-branches.cs.json"),
-                                                          vetveJ: Object.fromEntries(DALSI.map(l => [l, json(`data/glottolog-branches.${l}.json`)])),   // názvy větví v dalších jazycích
+                                                          vetveJ: Object.fromEntries(DALSI.filter(l => !artefakt || !VYNECHAT.includes(l)).map(l => [l, json(`data/glottolog-branches.${l}.json`)])),   // názvy větví v dalších jazycích
                                                           nareci: glottolog.body.map(b => nareci[b[6]] || ""), nareciCs: json("data/nareci-cs.json") }));
   // pojistka: rozbitý skript by stránku úplně vyřadil (stalo se při úklidu kódu), proto ho build zkusí přeložit
   try { new Function(skript); } catch (e) { throw new Error(`Skript stránky má chybu syntaxe: ${e.message}`); }
@@ -159,11 +172,11 @@ const skriptWebu = knihovny.join("\n;\n") + "\n;\n" +
     'document.documentElement.lang === "en" || /(^|\\.)thelanguageatlas\\.com$/.test(location.hostname) ? "en" : "cs"', false);
 const souborSkriptu = `js/atlas.${crypto.createHash("sha256").update(skriptWebu).digest("hex").slice(0, 10)}.js`;
 
-const LOCALE = { cs: "cs_CZ", en: "en_GB", it: "it_IT" };
+const LOCALE = { cs: "cs_CZ", en: "en_GB", it: "it_IT", de: "de_DE" };
 function sestav(lang, { odkazy, artefakt }) {
   const T = UI[lang];
   // přepínač jazyků v záhlaví: odkaz na každou verzi (aktuální označí skript)
-  const zastupne = { ...T, odkazCs: odkazy.cs, odkazEn: odkazy.en, odkazIt: odkazy.it };
+  const zastupne = { ...T, ...Object.fromEntries(JAZYKY_WEBU.map(l => ["odkaz" + l[0].toUpperCase() + l.slice(1), odkazy[l]])) };
   let html = telo.replace(/\{\{(\w+)\}\}/g, (_, k) => {
     if (!(k in zastupne)) throw new Error(`V šabloně je {{${k}}}, ale v src/ui/${lang}.json chybí.`);
     return escHtml(zastupne[k]);
@@ -215,8 +228,8 @@ const argumenty = process.argv.slice(2);
 const i = argumenty.indexOf("--artefakt");
 const slozkaArtefaktu = i >= 0 ? path.resolve(argumenty[i + 1]) : null;
 
-const cs = sestav("cs", { odkazy: { cs: "index.html", en: "en/index.html", it: "it/index.html" }, artefakt: false });
-const en = sestav("en", { odkazy: { cs: "../index.html", en: "index.html", it: "../it/index.html" }, artefakt: false });
+const cs = sestav("cs", { odkazy: { cs: "index.html", en: "en/index.html", ...Object.fromEntries(DALSI.map(x => [x, `${x}/index.html`])) }, artefakt: false });
+const en = sestav("en", { odkazy: { cs: "../index.html", en: "index.html", ...Object.fromEntries(DALSI.map(x => [x, `../${x}/index.html`])) }, artefakt: false });
 const dalsi = Object.fromEntries(DALSI.map(l => [l, sestav(l, { odkazy: { cs: "../index.html", en: "../en/index.html", [l]: "index.html", ...Object.fromEntries(DALSI.filter(x => x !== l).map(x => [x, `../${x}/index.html`])) }, artefakt: false })]));
 fs.mkdirSync(path.join(KOREN, "dist/en"), { recursive: true });
 for (const l of DALSI) fs.mkdirSync(path.join(KOREN, "dist", l), { recursive: true });
@@ -226,12 +239,13 @@ fs.writeFileSync(path.join(KOREN, "dist", souborSkriptu), skriptWebu);
 fs.writeFileSync(path.join(KOREN, "dist/index.html"), cs.dokument);
 fs.writeFileSync(path.join(KOREN, "dist/en/index.html"), en.dokument);
 for (const l of DALSI) fs.writeFileSync(path.join(KOREN, `dist/${l}/index.html`), dalsi[l].dokument);
-for (const d of ["starovek", "en/ancient", "pribehy", "en/stories", "it/antichita", "it/storie"]) fs.rmSync(path.join(KOREN, "dist", d), { recursive: true, force: true });   // stránky o civilizacích (fotky se zkopírují znovu)
+for (const d of ["starovek", "en/ancient", "pribehy", "en/stories", "it/antichita", "it/storie", "de/antike", "de/geschichten"]) fs.rmSync(path.join(KOREN, "dist", d), { recursive: true, force: true });   // stránky o civilizacích (fotky se zkopírují znovu)
 fs.cpSync(path.join(KOREN, "static"), path.join(KOREN, "dist"), { recursive: true });   // ikonky, náhledy, fotky civilizací
 
 // samostatné stránky jazyků, přehled a O datech (scripts/stranky.mjs); staré složky pryč, kdyby se jazyk přejmenoval
 for (const d of ["jazyk", "jazyky", "o-datech", "kalendar-jazyku", "navod", "en/language", "en/languages", "en/about-data", "en/language-days", "en/guide",
-  "it/lingua", "it/lingue", "it/sui-dati", "it/giornate-delle-lingue", "it/guida", "it/vitalita"]) fs.rmSync(path.join(KOREN, "dist", d), { recursive: true, force: true });
+  "it/lingua", "it/lingue", "it/sui-dati", "it/giornate-delle-lingue", "it/guida", "it/vitalita",
+  "de/sprache", "de/sprachen", "de/ueber-die-daten", "de/sprachentage", "de/anleitung", "de/vitalitaet"]) fs.rmSync(path.join(KOREN, "dist", d), { recursive: true, force: true });
 const polozekSeznamu = JAZYKY.length + glottolog.body.length - new Set(glottolog.body.map(b => b[5]).filter(Boolean)).size;
 /* statické stránky dalších jazyků: data {cs, en} doplněná o chybějící překlad z angličtiny (stejně jako doplnJazyky v app.js) */
 const doplnJ = o => {
@@ -325,9 +339,9 @@ console.log(`dist/index.html (česky) ${kb(cs.dokument)}, dist/en/index.html (an
 
 if (slozkaArtefaktu) {
   fs.mkdirSync(slozkaArtefaktu, { recursive: true });
-  // v artefaktu přepíná jazyk skript na místě; odkazy vedou na ostatní artefakty (ODKAZ_CS, ODKAZ_EN, ODKAZ_IT)
-  const odkazy = Object.fromEntries(JAZYKY_WEBU.map(l => [l, process.env["ODKAZ_" + l.toUpperCase()] || "#"]));
-  const soubory = { cs: "atlas-jazyku.html", en: "language-atlas.html", it: "atlante-delle-lingue.html" };
-  for (const l of JAZYKY_WEBU) fs.writeFileSync(path.join(slozkaArtefaktu, soubory[l]), sestav(l, { odkazy, artefakt: true }).fragment);
+  // v artefaktu přepíná jazyk skript na místě (cs, en); odkazy vedou na druhý artefakt (ODKAZ_CS, ODKAZ_EN), IT a DE na web
+  const odkazy = Object.fromEntries(JAZYKY_WEBU.map(l => [l, VYNECHAT.includes(l) ? DOMENA[l] + "/" : process.env["ODKAZ_" + l.toUpperCase()] || "#"]));
+  const soubory = { cs: "atlas-jazyku.html", en: "language-atlas.html" };
+  for (const l of ARTEFAKT_JAZYKY) fs.writeFileSync(path.join(slozkaArtefaktu, soubory[l]), sestav(l, { odkazy, artefakt: true }).fragment);
   console.log(`artefakty v ${slozkaArtefaktu}`);
 }

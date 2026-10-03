@@ -6,6 +6,8 @@ const KOREN = path.resolve(path.dirname(new URL(import.meta.url).pathname), ".."
 /* šablona stránek o civilizacích (src/starovek.js) – kvůli kontrole písem */
 const STAROVEK_SABLONA = new Function(fs.readFileSync(path.join(KOREN, "src/starovek.js"), "utf8") + ";return STAROVEK")();
 const json = p => JSON.parse(fs.readFileSync(path.join(KOREN, p), "utf8"));
+/* další jazyky webu (ne cs, en) podle JAZYKY_WEBU v build.mjs – jeden zdroj pravdy */
+const DALSI = JSON.parse(fs.readFileSync(path.join(KOREN, "scripts/build.mjs"), "utf8").match(/const JAZYKY_WEBU = (\[[^\]]*\])/)[1]).filter(l => l !== "cs" && l !== "en");
 const chyby = [], varovani = [];
 
 const jazyky = json("data/languages.json");
@@ -32,9 +34,9 @@ for (const j of jazyky) {
     if (a.length !== 3 || Math.abs(a[0]) > 180 || Math.abs(a[1]) > 90 || !(a[2] > 0 && a[2] <= 8))
       chyby.push(`${kde}: podezřelý kruh areálu ${JSON.stringify(a)} (délka, šířka, poloměr ve stupních 0–8)`);
   }
-  for (const lang of ["cs", "en", "it"]) {
+  for (const lang of ["cs", "en", ...DALSI]) {
     const p = j[lang];
-    if (!p) { chyby.push(`${kde}: chybí verze ${lang}`); continue; }
+    if (!p) { (DALSI.includes(lang) ? varovani : chyby).push(`${kde}: chybí verze ${lang}`); continue; }   // další jazyky: ukáže se anglicky
     for (const k of ["nazev", "vyslovnost", "rodina", "fakt"]) if (!p[k]) chyby.push(`${kde}: v ${lang} chybí „${k}“`);
     if (p.fakt && p.fakt.length > 240) varovani.push(`${kde}: zajímavost v ${lang} je dlouhá (${p.fakt.length} znaků)`);
   }
@@ -43,8 +45,8 @@ for (const lang of ["cs", "en"]) for (const z of zeme) if (!nazvy[lang][z]) chyb
 const kCs = Object.keys(uiCs), kEn = Object.keys(uiEn);
 for (const k of kCs) if (!(k in uiEn)) chyby.push(`text „${k}“ chybí v src/ui/en.json`);
 for (const k of kEn) if (!(k in uiCs)) chyby.push(`text „${k}“ chybí v src/ui/cs.json`);
-/* další jazyky webu (italština): texty, které chybí, build vezme z angličtiny – jen upozornit; navíc nesmí být nic */
-const uiDalsi = { it: json("src/ui/it.json") };
+/* další jazyky webu (italština, němčina): texty, které chybí, build vezme z angličtiny – jen upozornit; navíc nesmí být nic */
+const uiDalsi = Object.fromEntries(DALSI.map(l => [l, json(`src/ui/${l}.json`)]));
 for (const [l, ui] of Object.entries(uiDalsi)) {
   for (const k of Object.keys(ui)) if (!(k in uiEn)) chyby.push(`src/ui/${l}.json: text „${k}“ v src/ui/en.json není`);
   for (const k of kEn) if (!(k in ui)) varovani.push(`src/ui/${l}.json: chybí „${k}“ (ukáže se anglicky)`);
@@ -89,10 +91,10 @@ if (pd.uzly.length !== pd.nad.length) chyby.push("data/podrobnosti.json: strom p
     if (!fs.existsSync(path.join(KOREN, "static/starovek", c.id, "malba.jpg"))) chyby.push(`${co}: chybí static/starovek/${c.id}/malba.jpg (náhled ilustrace)`);
     const typy = l => (c[l].oddily || []).map(b => b.typ).join(",");
     if (typy("cs") !== typy("en")) chyby.push(`${co}: ${c.id} má v češtině a angličtině jiné oddíly`);
-    if (c.it) {   // italský překlad (od 2. 10. 2026): stejné oddíly jako anglicky, adresa a popisky fotek
-      if (typy("it") !== typy("en")) chyby.push(`${co}: ${c.id} má v italštině jiné oddíly než v angličtině`);
-      if (!c.adresa.it) chyby.push(`${co}: ${c.id} má italský text, ale ne adresu`);
-      for (const [k, f] of Object.entries(c.fotky || {})) if (!f.it) chyby.push(`${co}: fotka ${k} nemá italský popisek`);
+    for (const l of DALSI) if (c[l]) {   // překlad do dalšího jazyka (it od 2. 10., de od 3. 10. 2026): stejné oddíly jako anglicky, adresa a popisky fotek
+      if (typy(l) !== typy("en")) chyby.push(`${co}: ${c.id} má v ${l} jiné oddíly než v angličtině`);
+      if (!c.adresa[l]) chyby.push(`${co}: ${c.id} má text v ${l}, ale ne adresu`);
+      for (const [k, f] of Object.entries(c.fotky || {})) if (!f[l]) chyby.push(`${co}: fotka ${k} nemá popisek v ${l}`);
     }
     for (const l of ["cs", "en"]) for (const b of c[l].oddily) for (const f of [].concat(b.f || [])) if (!c.fotky[f]) chyby.push(`${co}: ${c.id}/${l} odkazuje na neznámou fotku „${f}“`);
     if (c === st.civilizace[0]) { const css = fs.readFileSync(path.join(KOREN, "src/starovek.css"), "utf8");
@@ -231,7 +233,7 @@ if (pd.uzly.length !== pd.nad.length) chyby.push("data/podrobnosti.json: strom p
     if (!k) chyby.push(`data/krajiny.json: jazyk „${j.id}“ nemá krajinu`);
     else if (!druhy.has(k.split(":")[0])) chyby.push(`data/krajiny.json: „${j.id}“ má neznámou krajinu „${k}“`);
   } }
-for (const [l, ui] of [["cs", uiCs], ["en", uiEn], ["it", uiDalsi.it]]) {
+for (const [l, ui] of [["cs", uiCs], ["en", uiEn], ...Object.entries(uiDalsi)]) {
   if (!Array.isArray(ui.aes) || ui.aes.length !== 7) chyby.push(`src/ui/${l}.json: „aes“ musí mít 7 položek (6 stupňů UNESCO + probouzený)`);
   if (!Array.isArray(ui.aesZnak) || ui.aesZnak.length !== 7) chyby.push(`src/ui/${l}.json: „aesZnak“ musí mít 7 položek jako „aes“`);
   if (!Array.isArray(ui.med) || ui.med.length !== 5) chyby.push(`src/ui/${l}.json: „med“ musí mít 5 stupňů popsanosti`);

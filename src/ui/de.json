@@ -1,0 +1,1100 @@
+{
+ "domu": "The Language Atlas – back to the start",
+ "denJazykuZavrit": "Close",
+ "denJazykuDatum": "26 September · European Day of Languages",
+ "denJazykuText": "Why today? 26 September is the European Day of Languages, declared by the Council of Europe in 2001. It highlights the linguistic diversity of Europe, home to some 225 indigenous languages, and promotes language learning. Instead of a single Language of the Day, the atlas therefore shows all {n} European languages it contains.",
+ "denJazykuEU": "The 24 languages of the EU",
+ "napoveda": "Help",
+ "krokZatoc": "Rotate",
+ "krokZatocJak": "– drag with the mouse or a finger",
+ "krokPribliz": "Zoom",
+ "krokPriblizJak": "– mouse wheel or two fingers",
+ "krokKlikni": "Select",
+ "krokKlikniJak": "– click a point of light to open the language card, or a country to see the languages spoken there",
+ "krokKlikniJakDen": "– click a dot to open the language card, or a country to see the languages spoken there",
+ "napovedaZavrit": "Close the tips",
+ "lang": "de",
+ "locale": "de-DE",
+ "nazevJazyka": "Deutsch",
+ "nazev": "Atlas der Sprachen",
+ "popis": "An interactive atlas of all 7,967 languages of the world after Glottolog: distribution, language families and trees, vitality, typology from WALS and sound inventories from PHOIBLE.",
+ "jazykVolba": "Website language",
+ "scena": "Globe",
+ "platno": "Spinning globe; the selected language's area is highlighted",
+ "prekvap": "Random language",
+ "celySvet": "Whole world",
+ "zoomSkupina": "Globe zoom",
+ "oddalit": "Zoom out",
+ "priblizit": "Zoom in",
+ "vypadekNadpis": "The globe could not start.",
+ "vypadekText": "The language list and the language cards still work. Please try reloading the page.",
+ "zavritKartu": "Close language card",
+ "poslechni": "Play pronunciation",
+ "posloucha": "Playing…",
+ "znovu": "Play again",
+ "mluvcich": "Speakers",
+ "rodina": "Family",
+ "vis": "Note",
+ "kdeMluvi": "Where it is spoken",
+ "seznam": "Language list",
+ "hledejPopisek": "Search languages",
+ "dotazZeme": "Languages of {z}",
+ "dotazPocet": "{n} on the globe according to Glottolog.",
+ "dotazRodina": "Language family: {r}",
+ "dotazVetev": "Branch: {r}",
+ "dotazVRodine": "{r} family",
+ "dotazSrovnani": "Comparison: {a} and {b}",
+ "dotaz": {
+  "aiStitek": "Ask the AI",
+  "aiNabidka": "An AI will answer this question from the atlas data.",
+  "aiZeptat": "Ask the AI",
+  "aiPremyslim": "Thinking…",
+  "aiPozn": "Answer written by an AI (Claude) from the atlas data; it may be wrong.",
+  "aiVypnuto": "AI questions are not switched on yet.",
+  "aiLimit": "Too many questions at once, please try again shortly.",
+  "aiChyba": "Could not get an answer, please try again.",
+  "aiOdmitnuto": "The AI will not answer this question.",
+  "aiNic": "The AI found no answer in the atlas data.",
+  "stitek": "Understood",
+  "ukaz": "Show on the globe",
+  "porovnej": "Compare",
+  "otevri": "Open the language card",
+  "zemeBezKodu": "The register has no code for this country; only atlas languages are shown.",
+  "ugrofin": "Glottolog does not list Finno-Ugric as a separate branch: these languages belong to the Uralic family together with the Samoyedic languages.",
+  "srovnaniPopis": "Relatedness and nearest common ancestor, structure from WALS, speakers and script.",
+  "jazykPopis": "The card lists the countries where the language is spoken and shows its area on the globe.",
+  "zdroj": "Answers only from the atlas data (Glottolog, CLDR, WALS). Enter = go."
+ },
+ "hledejTip": "Try:",
+ "hledejPriklady": [
+  "Which language is spoken in Bern?",
+  "Which language has the most dialects?",
+  "Which endangered languages are in Mexico?",
+  "What do Hungarian and Finnish have in common?",
+  "Which country has the most languages?",
+  "What script is Georgian written in?",
+  "Is Romanian a Slavic language?"
+ ],
+ "hledejPlaceholder": "Search or ask a question…",
+ "domaciJmeno": "in its own words: {x}",
+ "vyslovnost": "say it: “{x}”",
+ "areal": "The coloured patch is the rough area where the language is spoken, not a country border.",
+ "aDalsich": "and {n} more",
+ "miliardy": [
+  "billion",
+  "billion",
+  "billion",
+  "billion"
+ ],
+ "milionu": [
+  "million",
+  "million",
+  "million",
+  "million"
+ ],
+ "tisic": [
+  "thousand",
+  "thousand",
+  "thousand"
+ ],
+ "hrstka": "only a few speakers left",
+ "nicNenalezeno": "No results. You can search for a language, a country or a dialect, e.g. “Brazil”, “Quechua” or “Scots”.",
+ "nalezeno": "Found {a}, {b} with a greeting",
+ "vychoziPocet": "{a} · {b} with a greeting",
+ "zemeBezPozdravu": "The atlas has no language with a detailed card for this country yet. Individual languages can be opened by clicking the points of light.",
+ "tecka": "name from the Glottolog world register",
+ "teckaPozn": "A greeting, pronunciation and note are given for 164 selected languages; this one is not among them yet.",
+ "zvukNeumi": "This device does not support speech synthesis. Approximate pronunciation: “{x}”.",
+ "zvukRodily": "Read by your device's synthetic voice for this language.",
+ "zvukZalozni": "Your device has no voice for this language, so the approximate pronunciation is read by an English voice. The actual pronunciation differs.",
+ "zvukZadny": "Your device has no speech-synthesis voice. Approximate pronunciation: “{x}”.",
+ "zvukChyba": "Playback failed. Approximate pronunciation: “{x}”.",
+ "hlasZalozni": "en-GB",
+ "zdroje": "Dots: Glottolog (CC BY 4.0) · Grammar: WALS (CC BY 4.0) · Sounds: PHOIBLE (CC BY-SA 3.0) · Map: Natural Earth",
+ "rodiny": {
+  "ie": "Indo-European family",
+  "st": "Sino-Tibetan family",
+  "an": "Austronesian family",
+  "afro": "Afroasiatic family",
+  "nk": "Niger-Congo family",
+  "ost": "Other language families"
+ },
+ "makro": {
+  "Africa": "Africa",
+  "Eurasia": "Eurasia",
+  "Papunesia": "New Guinea and the Pacific",
+  "North America": "North America",
+  "South America": "South America",
+  "Australia": "Australia"
+ },
+ "otacet": "Spin",
+ "otacetPopis": "Let the globe spin slowly by itself",
+ "jmena": "Names",
+ "jmenaPopis": "Show the names of all languages when zoomed in (the selected language and its relatives always have them)",
+ "teckaNazev": "register name: {x}",
+ "teckaMezinarodni": "name from the Glottolog world register",
+ "ohrozeni": "Language vitality",
+ "aes": [
+  [
+   "Safe",
+   "Spoken by all generations; parents pass it on to their children without interruption."
+  ],
+  [
+   "Vulnerable",
+   "Most children speak it, but it may be restricted to certain domains, such as the home."
+  ],
+  [
+   "Definitely endangered",
+   "Children no longer learn it at home as their mother tongue."
+  ],
+  [
+   "Severely endangered",
+   "It is spoken by grandparents and older generations. Parents may understand it, but do not speak it to their children or among themselves."
+  ],
+  [
+   "Critically endangered",
+   "The youngest speakers are grandparents and older, and they speak it only partially and infrequently."
+  ],
+  [
+   "Extinct",
+   "There are no living speakers left."
+  ],
+  [
+   "Awakening",
+   "It lost its traditional native speakers, but people are learning it again and bringing it back to life. Glottolog classifies it as extinct."
+  ]
+ ],
+ "uzivatelu": "Used by",
+ "uzivateluHodnota": "about {n} people",
+ "uzivateluPozn": "Unicode CLDR estimate, including people who learned it",
+ "nareci": "Dialects",
+ "kdeMluviTecka": "Where it is spoken",
+ "ukazka": "Sample text",
+ "ukazkaPopis": "The beginning of Article 1 of the Universal Declaration of Human Rights in this language. In English: “All human beings are born free and equal in dignity and rights…”",
+ "pismo": "Script",
+ "pismoPozn": "According to Unicode CLDR. Where there are several scripts, the most common is listed first.",
+ "pismoVrstva": "Script",
+ "pismoRadekPopis": "Dots coloured by each language's main script (Unicode CLDR)",
+ "pismoVrstvaPopis": "The colour of a dot shows the language's main script according to Unicode CLDR; where a language uses several, the most common one counts. For languages about which CLDR keeps detailed data (mostly standardised written languages) the script is attested. For the rest it is a CLDR estimate (likely subtags): the script in which the language is written, if it is written at all – many of these languages are written only to a limited extent. Brahmic scripts descend from the Indian Brahmi script (Devanagari, Bengali, Tamil, Thai, Burmese, Tibetan and others); kana and bopomofo developed from Chinese characters. Other scripts include Ethiopic, Hebrew, Greek, Georgian, Armenian and Korean, and Canadian Aboriginal syllabics. Sign languages are not counted.",
+ "pismoSkupiny": [
+  "Latin",
+  "Cyrillic",
+  "Arabic",
+  "Brahmic scripts (India, Southeast Asia, Tibet)",
+  "Chinese characters, kana, bopomofo",
+  "Other scripts"
+ ],
+ "pismoBezUdaje": "no data in CLDR, sign languages",
+ "pismoZdroj": "Unicode CLDR 48 · languageData, likelySubtags",
+ "pismoOdhad": "{p} (estimate)",
+ "pismoOdhadPozn": "Unicode CLDR estimate (likely subtags): the script in which the language is written, if it is written at all. CLDR keeps no detailed data on the language itself.",
+ "pismoOMape": "About the script map",
+ "uredni": "Official language",
+ "uredniStav": [
+  "",
+  "",
+  "de facto",
+  "regional"
+ ],
+ "uredniPozn": "According to Unicode CLDR. “De facto” means the language is used officially without explicit legal status; “regional” means it is official only in part of the country (a province, autonomous region, etc.).",
+ "uredniZdroj": "According to Unicode CLDR.",
+ "stavba": "Structure",
+ "hlasky": "Sounds",
+ "hlaskyHodnota": "{c} {cs} and {v} {vs}",
+ "hlaskyTony": ", plus {t} {ts}",
+ "hlaskySrovnani": "English, for comparison: {c} and {v}.",
+ "souhlaska": [
+  "consonant",
+  "consonants",
+  "consonants"
+ ],
+ "samohlaska": [
+  "vowel",
+  "vowels",
+  "vowels"
+ ],
+ "ton": [
+  "tone",
+  "tones",
+  "tones"
+ ],
+ "pribuzenstvo": "Family tree",
+ "sourozenci": "Closest relatives",
+ "aDalsichPribuznych": "and {n} more",
+ "popsanost": "Documentation",
+ "med": [
+  "a detailed grammar (300+ pages)",
+  "a grammar",
+  "a grammar sketch",
+  "only texts or a phonological description",
+  "only a word list or less – the language is barely documented"
+ ],
+ "odkazGlottolog": "Glottolog",
+ "odkazWikipedie": "Wikipedia",
+ "odkazyPopis": "More about it",
+ "wikiDomena": "de.wikipedia.org",
+ "srovnavaciJazyk": "en",
+ "mluvci": "Speakers",
+ "odhad": "estimate",
+ "mluvciAtlas": "A rounded estimate by the atlas, including people who learned the language as a second language.",
+ "mluvciAtlasZnak": "A rounded estimate by the atlas, including people who learned the language as a second language.",
+ "mluvciAtlasWd": "Wikidata gives about {n} speakers{rok}.",
+ "mluvciAtlasWdRodili": "Wikidata gives about {n} native speakers{rok}.",
+ "mluvciAtlasWdRodiliZnak": "Wikidata gives about {n} native signers{rok}.",
+ "mluvciHodnota": "about {n} people",
+ "mluvciPoznRodili": "native speakers · Wikidata{rok}",
+ "mluvciPozn": "Wikidata{rok}",
+ "hudVidet": "{n} of {m} languages in view",
+ "strany": [
+  "N",
+  "S",
+  "E",
+  "W"
+ ],
+ "pribuzniAtlas": "Relatives in the atlas",
+ "pribuzniOblouky": "Arcs of light on the globe lead to them.",
+ "motiv": "Switch between day and night look",
+ "zemeBezPozdravuDen": "The atlas has no language with a detailed card for this country yet. Individual languages can be opened by clicking the dots.",
+ "pribuzniObloukyDen": "Arcs on the globe lead to them.",
+ "znakoveSkupina": "Sign languages",
+ "znakoveVse": "All",
+ "znakoveBez": "No sign languages",
+ "znakoveJen": "Sign only",
+ "znakovePopis": "Sign languages are the natural languages of Deaf communities, using handshape and movement, facial expression and posture. There is no single universal sign language: many countries have their own, some several, and their boundaries do not coincide with national borders.",
+ "znakovyCo": "What is a sign language",
+ "znakovyVysvetleni": "A sign language is a full natural language in the visual-gestural modality: it uses handshape and movement, facial expression and body movement. It is used mainly by Deaf people and their families. It is not a spoken language rendered in signs – it has its own vocabulary and grammar.",
+ "aesZnak": [
+  [
+   "Safe",
+   "Deaf children pick it up naturally – from Deaf parents, at school and in the Deaf community."
+  ],
+  [
+   "Vulnerable",
+   "Deaf children use it, but only in some places – for example only in some schools or towns."
+  ],
+  [
+   "Definitely endangered",
+   "Most Deaf children no longer learn it."
+  ],
+  [
+   "Severely endangered",
+   "Mostly older Deaf people sign it; younger ones no longer pick it up."
+  ],
+  [
+   "Critically endangered",
+   "Only a few elderly signers are left, and they rarely use it."
+  ],
+  [
+   "Extinct",
+   "Nobody uses it any more."
+  ],
+  [
+   "Awakening",
+   "It lost its traditional native signers, but people are learning it again. Glottolog classifies it as extinct."
+  ]
+ ],
+ "kdeZnakuje": "Where it is used",
+ "znakuje": "Signers",
+ "uzivateluZnak": "Signers",
+ "mluvciPoznRodiliZnak": "native signers · Wikidata{rok}",
+ "jazyk": [
+  "language",
+  "languages",
+  "languages"
+ ],
+ "vitalitaZdroj": "The six-level UNESCO scale. Data from Glottolog, which combines UNESCO, Ethnologue and the Catalogue of Endangered Languages.",
+ "vitalita": "Vitality",
+ "vitalitaPopis": "Show languages by how endangered they are (UNESCO scale)",
+ "vitalitaNadpis": "Language vitality · UNESCO scale",
+ "vitalitaVse": "All",
+ "vitalitaOhrozene": "Endangered only",
+ "vitalitaBezUdaje": "No data",
+ "vitalitaZavrit": "Back",
+ "nahledPopis": "A globe dotted with lights – each one is one of the world's languages",
+ "zemeRejstrik": "{n} in the world register – highlighted on the globe",
+ "zemeAtlas": "Languages with a detailed card:",
+ "sdiletOdkaz": "Copy a link to this language",
+ "sdiletHotovo": "Link copied.",
+ "zobrazeni": "Settings",
+ "zobrazeniPopis": "Spin, names and sign languages",
+ "zavritPanel": "Close",
+ "kartaVic": "Show more",
+ "zalozkaPrehled": "Overview",
+ "zalozkaStavba": "Structure",
+ "jazykDne": "Language of the day",
+ "radit": "Sort",
+ "raditRodiny": "By family",
+ "raditAbeceda": "A–Z",
+ "raditSvetadil": "By continent",
+ "svetadilOstatni": "Elsewhere",
+ "zalozkaZajimavost": "Fun fact",
+ "zalozkaPribuzni": "Relatives",
+ "izolovane": "Language isolates – no known relatives",
+ "nezarazene": "Unclassified",
+ "dalsiJazyky": "More languages ({a})",
+ "jazykDneUkaz": "Show on the globe",
+ "rodokmen": "Family tree",
+ "globus": "Globe",
+ "rodokmenPopis": "Language family tree: how the languages of one family are related",
+ "stromPlatno": "Family tree of a language family",
+ "stromRodina": "Family",
+ "stromCely": "Whole tree",
+ "stromNapoveda": "The common ancestor of the whole family is at the bottom; individual languages are at the ends of the branches. Each ring marks a split; branch thickness reflects the number of languages descending from it. Large dots are languages with a detailed card. Drag to move, scroll or pinch to zoom, click a branch or a language to select it.",
+ "stromUkazat": "Show in the family tree",
+ "euNadpis": "The 24 official languages of the European Union",
+ "euText": "The gold stars on the globe mark the 24 official languages of the European Union. Click a star to open the language card.",
+ "euZavrit": "Close",
+ "euVlajka": "Flag of the European Union",
+ "porovnat": "Compare with another language",
+ "porovnatVyzva": "Comparing: {a} ⇄ ? Choose the second language: click a dot on the globe, a language in the list, or search for one.",
+ "porovnatZrusit": "Cancel",
+ "srovnani": "Comparison",
+ "zalozkaPribuznost": "Kinship",
+ "zalozkaCisla": "Numbers",
+ "pribuzne": "Related",
+ "ano": "yes",
+ "ne": "no",
+ "pribuzneAno": "They are related.",
+ "pribuzneSpolecny": "Their closest common ancestor is the {v} branch. From there the lines of descent run as follows:",
+ "pribuzneKoren": "They belong to the same family ({r}) but parted at its very first split. Their common ancestor is the ancestor of the whole family:",
+ "pribuzneRodina": "Both belong to the same family ({r}).",
+ "pribuzneNe": "They are not related.",
+ "pribuzneNeText": "Each belongs to a different language family and, as far as is currently known, they share no common ancestor.",
+ "izolatText": "{a} is an isolate – it has no known relatives.",
+ "pribuzneNevime": "No data on their relationship are available.",
+ "spolecne": "What they share",
+ "rozdily": "How they differ",
+ "bezUdaju": "We don't have enough data on how these languages work to compare them.",
+ "spolecneStaty": "Both are used in",
+ "zpetNa": "Back to: {a}",
+ "porovnatJiny": "Compare with another",
+ "stromObe": "Show both in the family tree",
+ "bezRodu": "{a} is a {druh}. It did not develop gradually from a single ancestor like other languages, so it belongs to no language family and has no relatives.",
+ "bezDomova": "Not on the map",
+ "bezDomovaText": "{a} has no single place of origin – it was constructed as an international auxiliary language. It therefore has no dot on the globe and appears only in the list.",
+ "branaNadpis": "✦ Constructed languages from fiction",
+ "branaText": "These languages were constructed by writers and linguists for books, films and television. They are not part of the register of natural languages and therefore have no place on the globe.",
+ "branaZpet": "Back to Earth",
+ "branaZeme": "Earth",
+ "branaZemePocet": "{n} real languages",
+ "vymyslenyJazyk": "Invented language",
+ "svet": "World",
+ "autorJazyka": "Created by",
+ "vyznamPozdravu": "What the greeting means",
+ "zJinychSvetu": "✦ From other worlds",
+ "nareciPozn": "Glottolog lists these as dialects, not separate languages, so they have no dot of their own on the globe.",
+ "hledejVymazat": "Clear search",
+ "preskocit": "Skip to the list of languages",
+ "filtryZapnute": "filters on: {n}",
+ "nenalezenaNadpis": "This page does not exist",
+ "nenalezenaText": "There is no page at this address. All 7,967 languages of the world are available on the globe.",
+ "nenalezenaZpet": "Back to the globe",
+ "oDatech": {
+  "odkaz": "About the data",
+  "nadpis": "About the data and how the atlas was made",
+  "zavrit": "Close",
+  "uvod": "The atlas is built on open databases put together by linguists from all over the world. Here is where everything comes from, what is certain and what is only an estimate.",
+  "oddily": [
+   {
+    "h": "What is on the globe",
+    "p": [
+     "Each dot is one language. The list of languages comes from Glottolog, an open database of the world's languages run by the Max Planck Institute for Evolutionary Anthropology in Leipzig. The atlas takes everything Glottolog lists as a language and gives a location: {g} languages.",
+     "A dot stands where Glottolog places the language, usually in the middle of the area where it is spoken. Even a language spoken all over the world has just one dot, at its home.",
+     "Left out are only Glottolog's special bins: bookkeeping entries, languages known only by name and languages we know so little about that they cannot be classified. Esperanto, Interlingua and Interslavic have no dot because they did not arise in any one place; they are still in the list and in search."
+    ]
+   },
+   {
+    "h": "Language or dialect?",
+    "p": [
+     "There is no sharp line between a language and a dialect, and history and politics often play a part. The atlas follows Glottolog's decisions. That is why Bavarian has a dot but Australian English does not – Glottolog counts it as a variety of English. Dialects are listed on the language card, and searching for one finds its language.",
+     "Serbian, Croatian, Bosnian and Montenegrin are very easy to understand for each other's speakers and rest on the same dialect base, Shtokavian. Linguistically they are close standard varieties of one shared language; officially and socially they are separate languages today. Glottolog lists them as one language, Serbo-Croatian, which has a dot on the globe. The atlas also has Serbian and Croatian as separate languages with a greeting, but they have no dot of their own. Hmong, on the other hand, is several languages in Glottolog and one entry in the atlas. That is why the list has {n} entries and the globe {g} dots."
+    ]
+   },
+   {
+    "h": "{a} languages with a detailed card",
+    "p": [
+     "For 164 selected languages the atlas gives a greeting, an approximate pronunciation, a note, the number of speakers and the area of distribution. These are compiled by hand and the notes are fact-checked.",
+     "The pronunciation guide is only approximate. Speaker numbers are rounded estimates that include second-language speakers.",
+     "The orange area on the globe is drawn by hand and approximate, not measured. There are no open data with exact language boundaries for the whole world.",
+     "The Play pronunciation button uses the device's speech synthesis; for some languages the device has no voice.",
+     "The illustrations show the typical landscape and vernacular architecture of the region the language comes from. They do not depict particular places."
+    ]
+   },
+   {
+    "h": "Details for the other languages",
+    "p": [
+     "Vitality: the UNESCO scale (safe to extinct) based on Glottolog data.",
+     "Typology (word order, cases, tone, consonant inventory… – 24 features): WALS Online, the World Atlas of Language Structures (Dryer & Haspelmath 2013). WALS describes a sample of about 2,600 languages; the others have no value. For the map some values are merged into groups; the language card always shows the exact WALS value.",
+     "Number of sounds: PHOIBLE. Sample text: Article 1 of the Universal Declaration of Human Rights (UDHR in Unicode).",
+     "Speaker numbers: Wikidata; where missing, an estimate from Unicode CLDR.",
+     "Script and official status: Unicode CLDR (languageData, territoryInfo). Official status is national, de facto or regional; CLDR records it only for languages whose country data it tracks, so it is often missing for minority languages even where they have some official standing. For other languages the script map (Maps › Script) uses the script estimate from CLDR likelySubtags, so that the map shows a script for about 6,800 languages in all. The language card marks an estimate as such.",
+     "Relatives and the family tree: the Glottolog tree, with Glottolog's branch names.",
+     "Nothing is made up: if a source has no data, the card does not show it."
+    ]
+   },
+   {
+    "h": "Languages of antiquity and Language stories",
+    "p": [
+     "The Atlas writes the pages on ancient civilizations and the Language stories from the scholarly literature listed at the end of each page, and checks the facts before publication. The photographs come from Wikimedia Commons and have free licences (CC BY, CC BY-SA, CC0 or public domain); the author and licence are given with each image. Cuneiform signs and Anatolian hieroglyphs are rendered with the Noto fonts (SIL Open Font License)."
+    ]
+   },
+   {
+    "h": "Questions for the AI",
+    "p": [
+     "If the search does not understand a question, you can ask an AI (Claude Sonnet 5.5 by Anthropic). The question text is sent via the atlas server (Netlify) to Anthropic; the atlas does not store questions. The AI looks things up only in the atlas data (Glottolog, Unicode CLDR, atlas texts) and builds its answer from them; it may still be wrong, so every answer carries a note. It answers only questions about languages, scripts and language families."
+    ]
+   },
+   {
+    "h": "Map",
+    "p": [
+     "Country borders and land come from Natural Earth (simplified, scale 1:110 million). Relief and the sea floor come from Natural Earth and NOAA ETOPO1."
+    ]
+   }
+  ],
+  "verzeNadpis": "Data versions and licences",
+  "verze": [
+   [
+    "Glottolog – languages, families, vitality, dialects",
+    "downloaded {gdat}",
+    "CC BY 4.0"
+   ],
+   [
+    "WALS Online (2013) – grammar",
+    "downloaded {pdat}",
+    "CC BY 4.0"
+   ],
+   [
+    "PHOIBLE 2.0 – sounds",
+    "downloaded {pdat}",
+    "CC BY-SA 3.0"
+   ],
+   [
+    "Wikidata – speaker numbers",
+    "downloaded {wdat}",
+    "CC0"
+   ],
+   [
+    "Unicode CLDR 48 – language names, script, official status, estimates",
+    "",
+    "Unicode License"
+   ],
+   [
+    "UDHR in Unicode – sample texts",
+    "udhr package 6.0.0",
+    "MIT"
+   ],
+   [
+    "Wikimedia Commons – photographs for the civilization pages",
+    "with each image",
+    "CC BY, CC BY-SA, CC0"
+   ],
+   [
+    "Natural Earth, NOAA ETOPO1 – map and relief",
+    "",
+    "public domain"
+   ]
+  ]
+ },
+ "stranky": {
+  "najit": "Find it on the globe",
+  "globus": "Spinning globe",
+  "vsechnyOdkaz": "Languages with a detailed card",
+  "vsechnyNadpis": "{a} languages with a detailed card",
+  "vsechnyPopis": "Selected languages of the world with a greeting, approximate pronunciation, number of speakers, distribution, relatives and a note. All 7,967 languages are on the interactive globe.",
+  "titulek": "{n} – distribution, relatives and pronunciation",
+  "malbaAlt": "Illustration of the landscape where {n} comes from",
+  "uzivatelu": "Users",
+  "kdeMluvi": "Where it is spoken",
+  "kdeZnakuje": "Where it is signed",
+  "aDalsi": "and {n} more",
+  "drobky": "Breadcrumbs",
+  "druhaSobota": "2nd Saturday of September",
+  "predchozi": "Previous language",
+  "dalsi": "Next language",
+  "zavrit": "Close and back to the list"
+ },
+ "zpetna": "Comments and corrections:",
+ "zpetnaAdresa": "info@atlasjazyku.cz",
+ "zpetnaPredmet": "The Language Atlas – feedback",
+ "zpetnaPopis": "Send feedback by e-mail",
+ "patickaSouhrn": "About, sources, contact, guide and calendar",
+ "vitalitaDokPopis": "Language vitality: degrees of endangerment on the UNESCO scale, figures and sources",
+ "vitalitaLegendaPopis": "Degrees of vitality – click to open the Vitality page",
+ "denJazykuNadpis": "Languages of Europe",
+ "denJazykuGlobus": "Show them all on the globe",
+ "evropaNadpis": "{n} languages of Europe",
+ "evropaText": "Today is the European Day of Languages. The red stars mark the European languages in the atlas; click one to open its card.",
+ "jazykDneProc": "Why today?",
+ "cestaUvod": "The Language of the Day moves around the world, each day to the next nearest language.",
+ "cestaDuvod": "Moving around the world: the previous Language of the Day was {a}; today's language lies {km} km further {smer}.",
+ "cestaVedle": "Moving around the world: the previous Language of the Day was {a}; today's language is its immediate neighbour.",
+ "svetoveStrany": [
+  "north",
+  "north-east",
+  "east",
+  "south-east",
+  "south",
+  "south-west",
+  "west",
+  "north-west"
+ ],
+ "cestaPoDniJazyku": "After the European Day of Languages, the Language of the Day continues around the world, each day to the next nearest language.",
+ "kalendarOdkaz": "Calendar of language days",
+ "kalendar": {
+  "nadpis": "Calendar of language days",
+  "uvod": "Days of the year associated with a particular language: UN and UNESCO language days, national language days, public holidays and anniversaries. On such a day that language is the Language of the Day. Click one to show it on the globe.",
+  "edl": "European Day of Languages (Council of Europe). Instead of one Language of the Day, all European languages in the atlas are shown at once.",
+  "dnes": "today",
+  "ostatni": "On all other days the Language of the Day moves around the world, each day to the next nearest language."
+ },
+ "navod": {
+  "odkaz": "Full guide",
+  "napoveda": "Full guide – all features of the atlas",
+  "nadpis": "How to use the atlas",
+  "uvod": "The atlas shows all 7,967 languages of the world after Glottolog on an interactive globe. This guide describes every feature and how to use it with a mouse, touch or the keyboard.",
+  "oddily": [
+   {
+    "h": "The globe",
+    "p": [
+     "Rotate: drag with the mouse or one finger. Zoom: mouse wheel, pinch with two fingers, the + and − buttons at the top right of the globe, or the + and − keys.",
+     "Each dot is one language, placed where Glottolog locates it, usually in the middle of the area where it is spoken. Click a dot to open the language card. The selected language and its relatives are named next to their dots; names of all languages from 2× zoom can be switched on in Settings (Names).",
+     "Clicking a country away from the dots highlights the country and all its languages and shows their number according to Glottolog.",
+     "The Whole world button and the Language Atlas logo in the top left return the globe to its initial view."
+    ]
+   },
+   {
+    "h": "The language card",
+    "p": [
+     "164 selected languages have a detailed card: an illustration of the region, a greeting with approximate pronunciation and a Play pronunciation button (it uses the device's speech synthesis). Below are the number of speakers, the language family and vitality, and the tabs Note (note, distribution, official status, script, dialects), Vitality, Structure and Relatives.",
+     "All other languages have the tabs Overview (vitality, distribution, official status, script, dialects, speaker numbers, sample text), Structure (WALS typology, PHOIBLE sound inventory, documentation) and Relatives.",
+     "Official status lists the countries where the language is official – nationally, de facto (without explicit legal status) or regionally (in part of the country only). Script lists the scripts the language is usually written in, the most common first. Both come from Unicode CLDR and are available for about 800 languages.",
+     "The Structure tab gives the exact value for each WALS feature; click a feature name to open its typology map.",
+     "Arcs on the globe lead from the selected language to its closest relatives. The language family tree line shows its classification in the Glottolog tree.",
+     "The chain button copies a link to the language. On a phone the card sits at the bottom of the screen: drag it up to enlarge it, down to shrink or close it."
+    ]
+   },
+   {
+    "h": "The language list",
+    "p": [
+     "You can search for a language, a country or a dialect. The cross in the search box clears it.",
+     "You can also type a question in plain words: “languages spoken in Brazil” (languages of a country), “Slavic languages” (a family or branch in Glottolog), “German and Italian” (comparing two languages) or “where is Persian spoken”. The top of the list shows what the search understood and the list shows the matching languages; the button or the Enter key shows them on the globe. Answers come only from the atlas data.",
+     "If the search does not understand a question, it offers Ask the AI: an AI (Claude by Anthropic) looks up the atlas data and answers in two to four sentences, showing the result on the globe. It answers only questions about languages and may be wrong. Website only.",
+     "Sort by language family, alphabetically or by continent. Languages with a detailed card are shown as large tiles, the others below them.",
+     "The Language of the Day changes at midnight and always states why it was chosen: either a day associated with that language (see the Calendar of language days) or the journey around the world to the next nearest language. On the European Day of Languages (26 September) all European languages of the atlas are shown instead."
+    ]
+   },
+   {
+    "h": "Medallions below the globe",
+    "p": [
+     "The round buttons below the globe (in two rows on a phone) open the main parts of the atlas: Ancient languages, Language stories, Family tree, Maps, Vitality and Settings. Random language sits in the header of the language list, next to the language count, and opens the card of a randomly selected language.",
+     "Family tree shows the fan-shaped tree of a language family: with a language selected, its family, otherwise the family chosen in the menu at the top. Drag to move, use the wheel or two fingers to zoom, click a branch to focus on it and click a language to select it. The Circular overview button offers another view of all families at once: the width of a segment is the number of languages; click a segment or a row of the list to go deeper, and click the centre of the circle to go back up. Families with fewer than 25 languages are under Smaller families; isolates, sign and artificial languages and pidgins under Outside families. Back to the tree or Open the family tree returns to the fan.",
+     "Vitality opens a page on language endangerment: the number of languages in each degree of the UNESCO scale, the breakdown by world region and by the fifteen largest language families (with a link to the family tree), endangered languages in the atlas, awakening languages, and the method with sources. From there you can colour the globe and the family tree by vitality – the tree then shows which branches of a family are endangered or extinct – and tick which degrees stay visible (a filter). While the colours are on, a key sits below the globe; click it to open the page again. The page also opens from a link on the language card and from the address #vitality.",
+     "Maps opens an overview of all colour maps with previews: script, vitality and 24 typological features from WALS. Choosing a map closes the window and colours the globe.",
+     "Settings: automatic rotation, language names and sign languages (all, none or only these).",
+     "Zoom in and out (+ and −) and the Whole world button sit discreetly at the top right of the globe, below the help question mark; on a phone, pinch with two fingers to zoom."
+    ]
+   },
+   {
+    "h": "Typology maps (WALS)",
+    "p": [
+     "In the Maps window you can choose one of 24 features in five areas (phonology, morphology, word order, clause structure, lexicon). The languages take the colour of their value and a key appears at the bottom right with the number of languages, a description of the feature and a link to the relevant WALS chapter.",
+     "After a choice the window closes; Another map… in the key or the Maps medallion opens it again. Clicking a value in the key highlights only the languages with that value. WALS describes a sample of about 2,600 languages; the other dots stay grey."
+    ]
+   },
+   {
+    "h": "Map of scripts",
+    "p": [
+     "The Script map (in the Maps window) colours languages by their main script: Latin, Cyrillic, Arabic, Brahmic scripts (India, Southeast Asia, Tibet), Chinese characters with kana and bopomofo, and other scripts. The legend at the bottom right gives the number of languages; tapping a group highlights it alone.",
+     "The script map also shows the areas of 36 living scripts and their names with a sample written in the script itself (Abc, Абв, अआइ…). Tapping a name or a coloured area opens the script card (with a group highlighted, only scripts from it): type (alphabet, abjad, abugida, syllabary, logographic), writing direction, a short note on its origin, the atlas languages written in it and the countries where it writes an official language; the Language at this spot button opens the language you tapped. A link such as thelanguageatlas.com/#pismo-latn opens the card as well.",
+     "The data come from Unicode CLDR. For languages about which CLDR keeps detailed data the script is attested; for the rest it is a CLDR estimate (the script in which the language is written, if it is written at all), and the language card marks it as such. The script map and a typological map are not shown at the same time."
+    ]
+   },
+   {
+    "h": "Comparing two languages",
+    "p": [
+     "On a language card choose Compare with another language and select the second language on the globe, in the list or by searching. The comparison shows the relationship and the closest common ancestor, shared and differing WALS features, sound inventories, speaker numbers and script."
+    ]
+   },
+   {
+    "h": "Languages of antiquity",
+    "p": [
+     "The Ancient languages medallion below the globe opens the menu of civilizations; the search also finds them, for example “egypt”. Each item opens a civilization page focused on language and script: history, sample signs, the story of decipherment, related words, grammar, a timeline, photographs and literature. Two overviews come first in the menu: the family tree of scripts (where each alphabet came from, with a table of the word “king” in twenty scripts) and a glossary of terms (abjad, abugida, determinative, boustrophedon…). Pages on Sumer and Akkad, Ancient Egypt, Elam and Urartu, Ancient India, the Hittites, Ancient China, the Phoenicians, the Hebrews and Arameans, Ancient Greece, the Celts, the Etruscans, Ancient Persia, Ancient Rome, the Armenians and Georgians, the Germanic peoples and runes, Aksum, Korea and Hangul, the Göktürks and the Orkhon script, Japan and kana, the Slavs and Great Moravia, the Maya, the Aztecs and the Incas are ready so far.",
+     "The page opens above the globe; close it with the cross, the Escape key or by tapping outside it. The “‹ Languages of antiquity” button at the top left returns to the list of civilizations, and the end of each page links to the others. The buttons in the section on languages on the globe show the extinct languages concerned on the globe. The page can also be opened from the language card (for example of Egyptian, Coptic, Hittite or Luwian) and with the links thelanguageatlas.com/#egypt and #hittites; on the website it is also a separate page."
+    ]
+   },
+   {
+    "h": "Language stories",
+    "p": [
+     "The Language stories medallion below the globe opens the menu of stories: thematic pages in the same style as Languages of antiquity, grouped into Travelling words, Journeys of languages, Languages through time, People and languages, and Mysteries. Ready so far: Tea and other travelling words (why the world says either “cha” or “tea”), Czech words in other languages (robot, dollar, howitzer, pistol, polka – what is attested and what is disputed), From Latin to the Romance languages, How Standard Czech came about (from Old Czech glosses through the Bible of Kralice and the National Revival to the spelling rules and Standard versus Common Czech), Languages coming back (Welsh, Māori, Manx, Hebrew) and Linguistic mysteries (undeciphered scripts, language isolates and disputed families).",
+     "The Show on the globe button on the tea page closes the page and colours the globe with the WALS map of the origin of the word for tea. The search finds the stories too (for example “robot”); links look like thelanguageatlas.com/#tea, and on the website each story is also a separate page under /stories/.",
+     "The pages about tea and about Czech words have a section Word journeys on the globe with buttons for tea, coffee, sugar, orange, chocolate, tomato, check and mate, alcohol, zero and cipher, shampoo, robot and dollar. The globe flies over the area the word travelled through and arcs are drawn step by step from the source language; the word form and the language appear at each dot. A dashed arc marks a disputed route. The panel at the top right (below the globe on a phone) lists the steps with dates and notes; tapping a step opens the language card. Play again repeats the animation and the other buttons switch to another word. Close it with the cross, the Escape key or the Whole world button; links look like #cesta-caj."
+    ]
+   },
+   {
+    "h": "Journeys of languages",
+    "p": [
+     "Journeys show on the globe how one language developed from its proto-language to the present: coloured streams spread across the map stage by stage, areas fill in, and earlier stages stay faintly visible as layers of history. Disputed interpretations are drawn dashed. There are journeys of Czech, Kurdish, Hungarian, Romani, Māori (with a detour to Madagascar), Turkish, English, Navajo, Yiddish and Maltese. The journey of the alphabet follows a script instead of a language: how an Egyptian picture of an ox head became the letter A via the Phoenicians, Greeks and Romans; each stage shows the letter of its time on the map. It also opens from the legend of the Script map and from a script card.",
+     "A journey opens from the Journeys of languages group in Language stories, with the button on a language card named after the journey, such as The journey of Czech (Interesting fact tab), or with a link such as thelanguageatlas.com/#journey-czech.",
+     "The panel on the right (below the globe on a phone) has a play and pause button, a timeline slider and a list of stages with their dates and text; tapping a stage shows it in full and pauses playback. Sources are listed below the stages. A journey is closed with the cross, the Escape key, the Whole world button or by selecting another language."
+    ]
+   },
+   {
+    "h": "Keyboard",
+    "p": [
+     "Tab moves between controls. One Tab enters the language list; the arrow keys move between tiles, Home and End jump to the start and end, and Enter selects a language.",
+     "The + and − keys zoom the globe. Escape closes a window, the card or a panel."
+    ]
+   },
+   {
+    "h": "About, sources, contact, guide and calendar",
+    "p": [
+     "At the end of the language list (on a phone, at the end of the page) there is a folded line: About, sources, contact, guide and calendar. Click it to expand it.",
+     "Calendar of language days: the days of the year associated with a particular language (language days, public holidays, anniversaries). It opens at the nearest day; click a language to show it on the globe.",
+     "About the data: the sources (Glottolog, WALS, PHOIBLE, Wikidata, Unicode CLDR and others), their versions and licences, and why the list has more entries than there are dots on the globe.",
+     "Full guide: this text.",
+     "Languages with a detailed card (website only): all 164 languages on one page. Each opens as a card; use the arrows to move to the next one.",
+     "Contact: comments and corrections to info@atlasjazyku.cz. Below are the data sources and their licences."
+    ]
+   },
+   {
+    "h": "More",
+    "p": [
+     "In the top right you can switch the interface language (Česky) and the light or dark theme. Your choices are saved.",
+     "Search also knows languages constructed for literature and film (such as Quenya or Klingon); they are shown separately from natural languages."
+    ]
+   }
+  ],
+  "tajemstvi": {
+   "tlacitko": "Secrets of the atlas",
+   "nadpis": "Secrets of the atlas",
+   "uvod": "The atlas hides a few small things that are not described anywhere else. The passwords can be typed anywhere on the page (outside text fields) or into the search box, which also works on a phone.",
+   "polozky": [
+    [
+     "Languages of the European Union",
+     "Type “eulang”. The globe flies over Europe, gold stars appear one by one at all 24 official languages of the EU, and a waving flag with the list of languages appears on the right. Link #eulang."
+    ],
+    [
+     "Gate to other worlds",
+     "Type “mellon”, Elvish for “friend” and the password of Durin's Door in The Lord of the Rings. The globe disappears and the worlds of invented languages float among the stars: Klingon, Quenya, Sindarin, Na'vi, Dothraki and High Valyrian. Search finds them too (for example “elf” or “klingon”), and the cards of Finnish and Welsh hold clues to the gate. Link #mellon."
+    ],
+    [
+     "Confusion of tongues",
+     "Type “babel”. The words on the screen briefly scatter into foreign scripts and a card about the Tower of Babel opens. Link #babel."
+    ],
+    [
+     "Do cetaceans talk?",
+     "Tap the same spot in the ocean three times quickly. A card opens about sperm whale codas, humpback songs, dolphin names and orca dialects – and why none of it has been shown to be a language. Link #cetaceans."
+    ],
+    [
+     "The upside-down globe",
+     "Tap The Language Atlas logo seven times quickly. The globe turns upside down, the languages fall off it and then return to their places. It does not run when reduced motion is set on the device."
+    ]
+   ]
+  }
+ },
+ "navodOdkaz": "Full guide",
+ "navodNapoveda": "Full guide – everything the atlas can do",
+ "typologie": "Typology (WALS)",
+ "typologiePopis": "Maps of language features: word order, cases, tone, consonants…",
+ "typologieNadpis": "Language typology",
+ "typologieUvod": "After a feature is chosen, the languages on the globe take the colour of its value. The data come from the World Atlas of Language Structures (WALS), which describes a sample of languages – the other dots have no value.",
+ "typologieZdroj": "Dryer, Matthew S. & Haspelmath, Martin (eds.) 2013. The World Atlas of Language Structures Online. Leipzig: Max Planck Institute for Evolutionary Anthropology. Licence CC BY 4.0.",
+ "typologieVypnout": "Turn off the typology map",
+ "typologieBezUdaje": "no WALS data",
+ "typologieKapitola": "WALS, chapter {n} · {autor}",
+ "typologieOdkaz": "Open in WALS",
+ "typologieIzolace": "Highlight only this value (click again to undo)",
+ "typologieOPopisu": "About this feature",
+ "typologieKarta": "Typology (WALS)",
+ "typologieKartaPozn": "Features and values from WALS Online. Only those WALS describes for the language are listed.",
+ "typologieNaMape": "Show on the map",
+ "typologieJazykuWals": "{n} in the WALS data",
+ "typologieJina": "Another map…",
+ "starovek": {
+  "stitek": "Languages of antiquity",
+  "vKostce": "At a glance",
+  "foto": "Photo",
+  "volneDilo": "public domain",
+  "zavrit": "Close page",
+  "karta": "Civilization page: language and script",
+  "pata": "Illustration: The Language Atlas. Photographs: Wikimedia Commons, with authors and licences given beside each image. Text: The Language Atlas, based on the scholarly literature listed above.",
+  "titulek": "{n}: language and script",
+  "zpet": "Back to the globe",
+  "uvod": "Pages on ancient civilizations focused on language and script: history, sample signs, decipherment, photographs. Two overviews come first: the family tree of scripts and a glossary of terms.",
+  "mapaTlacitko": "Show on the globe",
+  "dalsi": "More pages",
+  "prehledUvod": "Pages on ancient civilizations focused on language and script: history, sample signs, decipherment, photographs. More are being added."
+ },
+ "pribehy": {
+  "stitek": "Language stories",
+  "uvod": "Thematic pages about languages: how words travel between languages, how languages change, how they come back and what linguistics still does not know.",
+  "skupiny": {
+   "slova": "Travelling words",
+   "promeny": "Languages through time",
+   "lide": "People and languages",
+   "zahady": "Mysteries",
+   "putovani": "Journeys of languages"
+  }
+ },
+ "cestaNadpis": "The journey of the word {s}",
+ "putZavrit": "Close the language journey",
+ "putOsa": "Timeline",
+ "putHraj": "Play",
+ "putPauza": "Pause",
+ "putZdroje": "Sources:",
+ "cestaZavrit": "Close the word journey",
+ "cestaZnovu": "Play again",
+ "cestaPribeh": "Story: {n}",
+ "cestaTlacitko": "Journey on the globe",
+ "rozcestnik": "Atlas sections",
+ "medStarovek": "Ancient languages",
+ "medPribehy": "Language stories",
+ "medMapy": "Maps",
+ "mapyUvod": "A colour map colours the language dots on the globe by one property; only one can be on at a time. The legend at the bottom right (below the globe on a phone) gives the colours, language counts and source. The typological maps are based on the World Atlas of Language Structures (WALS), which describes a selected sample of languages – the other dots have no data.",
+ "mapyVypnout": "Turn off the colour map",
+ "mapyPrehled": "Script and vitality",
+ "mapyPismoPopis": "main script of the language · Unicode CLDR",
+ "mapyVitalitaPopis": "degree of endangerment · UNESCO, Glottolog",
+ "medVRodokmenu": "Colour maps are not available in the family tree – switch back to the globe",
+ "vitStranka": {
+  "nadpis": "Language vitality",
+  "podtitul": "How endangered the world’s languages are · the UNESCO scale",
+  "uvod": "Vitality describes whether a language is being passed on to the next generation. The atlas uses UNESCO’s six-degree scale, from safe to extinct, and separately marks awakening languages – languages that Glottolog lists as extinct but that people are learning and using again. The data come from Glottolog and cover all {n} languages on the globe.",
+  "cislaBezpecne": "safe",
+  "cislaOhrozene": "endangered (vulnerable to critically endangered)",
+  "cislaVymrele": "extinct",
+  "cislaProbouzene": "awakening",
+  "souhrn": "{n} languages, or {p} of all languages on the globe, are endangered to some degree.",
+  "barvyZap": "Colour the globe and family tree by vitality",
+  "barvyVyp": "Turn off vitality colours",
+  "stupneH": "Degrees of vitality",
+  "stupneUvod": "The length of each bar gives the number of languages. Ticked degrees stay visible on the globe, in the family tree, in the list and in search; untick a degree to hide its languages (the filter works without the colours too).",
+  "filtrTitulek": "Show or hide the languages of this degree",
+  "filtrVse": "All",
+  "filtrOhrozene": "Endangered only",
+  "bezUdajePopis": "Glottolog gives no degree of endangerment for the language.",
+  "oblastiH": "By world region",
+  "oblastiUvod": "The regions are Glottolog’s macroareas. The bar shows the share of the region’s languages at each degree (colours as above).",
+  "oblastiSloupce": [
+   "Region",
+   "Languages",
+   "Endangered",
+   "Extinct"
+  ],
+  "rodinyH": "By language family",
+  "rodinyUvod": "The fifteen largest language families in Glottolog (excluding isolates, sign languages and groupings that are not families). The button opens the family tree; with vitality colours on, its languages are coloured by degree, so you can see which branches are endangered or extinct.",
+  "rodinySloupce": [
+   "Family",
+   "Languages",
+   "Endangered",
+   "Extinct"
+  ],
+  "atlasH": "Endangered languages in the atlas",
+  "atlasUvod": "Languages with a detailed card that Glottolog lists as endangered to some degree or as awakening, most endangered first. Click to open the language card.",
+  "probouzeneH": "Awakening languages",
+  "probouzeneUvod": "There are {n} awakening languages. Glottolog classifies them as extinct, but people are learning and using them again. Glottolog does not treat this as a separate degree; the atlas recognises them from the note “Awakening” (Catalogue of Endangered Languages) or “Reawakening” (Ethnologue) that Glottolog carries over from the original source. Click a language to show it on the globe.",
+  "pribehStitek": "Language stories",
+  "metodikaH": "Method and sources",
+  "metodika": [
+   "The degrees follow the intergenerational transmission criterion in the UNESCO expert group document Language Vitality and Endangerment (2003). Their names and descriptions follow the Atlas of the World’s Languages in Danger (Moseley 2010), which adopted the scale and renamed two degrees (unsafe to vulnerable, definitively to definitely endangered).",
+   "Glottolog gives most languages an Agglomerated Endangerment Status (AES), compiled mainly from UNESCO, Ethnologue and the Catalogue of Endangered Languages (ElCat). Each of its degrees corresponds to exactly one UNESCO degree: not endangered = safe, threatened = vulnerable, shifting = definitely endangered, moribund = severely endangered, nearly extinct = critically endangered, extinct = extinct.",
+   "The assessments date from different years and the sources sometimes disagree, so the degree is an indication rather than a precise measurement. The extinct languages include languages known only from historical records, such as Hittite and Sumerian, as well as Latin, which has no native speakers although it is still used as a second language (for example by the Holy See). {n} languages have no data. The Glottolog data were downloaded on {d}."
+  ],
+  "zdroje": [
+   "UNESCO Ad Hoc Expert Group on Endangered Languages (2003): Language Vitality and Endangerment. Paris: UNESCO.",
+   "Moseley, Christopher (ed.) (2010): Atlas of the World’s Languages in Danger. 3rd edn. Paris: UNESCO Publishing.",
+   "Hammarström, Harald; Castermans, Thom; Forkel, Robert; Verbeek, Kevin; Westenberg, Michel A.; Speckmann, Bettina (2018): Simultaneous Visualization of Language Endangerment and Language Description. Language Documentation & Conservation 12, 359–392. http://hdl.handle.net/10125/24792",
+   "Hammarström, Harald; Forkel, Robert; Haspelmath, Martin; Bank, Sebastian (2025): Glottolog 5.2.1. Leipzig: Max Planck Institute for Evolutionary Anthropology. https://doi.org/10.5281/zenodo.596479",
+   "Catalogue of Endangered Languages (ElCat). University of Hawaiʻi at Mānoa. https://www.endangeredlanguages.com",
+   "Eberhard, David M.; Simons, Gary F.; Fennig, Charles D. (eds.): Ethnologue: Languages of the World. Dallas: SIL International."
+  ],
+  "odkazKarta": "Vitality of the world’s languages ›"
+ },
+ "stromVse": "Circular overview",
+ "stromZpet": "Back to the tree",
+ "prehledPlatno": "Circular overview of language families: the width of a segment is the number of languages. Click a segment to go deeper, click the centre to go up one level.",
+ "prehledKde": "Where you are in the overview",
+ "prehledOtevrit": "Open the family tree",
+ "prehled": {
+  "svet": "Languages of the world",
+  "mensi": "Smaller families",
+  "mimo": "Outside families",
+  "izolovane": "Isolates",
+  "znakove": "Sign languages",
+  "pidziny": "Pidgins",
+  "smisene": "Mixed languages",
+  "umele": "Artificial languages",
+  "mluvy": "Speech registers",
+  "nezarazene": "Unclassified languages",
+  "nedolozene": "Unattested languages",
+  "vyse": "‹ one level up",
+  "vetve": [
+   "branch",
+   "branches",
+   "branches"
+  ],
+  "primo": "{n} directly",
+  "dalsich": "… and {n} more (all are in the circle)",
+  "ostatni": "Other families",
+  "legenda": [
+   [
+    "ie",
+    "Indo-European"
+   ],
+   [
+    "st",
+    "Sino-Tibetan"
+   ],
+   [
+    "an",
+    "Austronesian"
+   ],
+   [
+    "afro",
+    "Afro-Asiatic"
+   ],
+   [
+    "nk",
+    "Niger-Congo"
+   ],
+   [
+    "ost",
+    "Other families"
+   ],
+   [
+    "mimo",
+    "Outside families"
+   ]
+  ]
+ },
+ "mapyPopis": "Colour maps of languages: script, vitality and typology (WALS)",
+ "pribehyTlacitko": "Language stories: travelling words, language change, revival and mysteries",
+ "starovekTlacitko": "Languages of antiquity: pages on civilizations, their languages and scripts",
+ "tajemstvi": {
+  "velryby": {
+   "stitek": "Languages of the sea",
+   "nazev": "Do cetaceans talk?",
+   "pozdrav": "•  •  • • •",
+   "prepis": "the “1+1+3” coda of the sperm whales off Dominica",
+   "stitky": [
+    [
+     "Who",
+     "sperm whale, humpback, dolphin, orca"
+    ],
+    [
+     "Language?",
+     "not yet shown"
+    ]
+   ],
+   "prehraj": "Play the coda rhythm",
+   "prehrajPozn": "A sketch of the rhythm made of clicks generated in the browser, not a recording.",
+   "zalozky": [
+    {
+     "nazev": "Whales",
+     "oddily": [
+      {
+       "h": "Sperm whales: codas",
+       "p": [
+        "The sperm whale (Physeter macrocephalus) communicates with codas – short series of roughly 3 to 40 clicks in a fixed rhythm. They were first described by William Watkins and William Schevill in 1977.",
+        "Females and their young live in stable family units. Units with a similar repertoire of codas form a so-called vocal clan; clans differ much like dialects, and calves most likely learn the repertoire from those around them. Off the island of Dominica in the Caribbean, the typical coda of clan EC1 is “1+1+3”: two spaced clicks followed by three quick ones."
+       ]
+      },
+      {
+       "h": "A phonetic alphabet?",
+       "p": [
+        "In 2024 the Project CETI team (Sharma et al., Nature Communications) showed on recordings from Dominica that codas also differ in finer features: tempo, rhythm, gradual lengthening and shortening of successive codas (rubato) and an extra click (ornamentation). These features combine independently, so there are far more distinct codas than was thought.",
+        "The authors speak of a “sperm whale phonetic alphabet”. What the individual combinations mean, nobody knows yet."
+       ]
+      },
+      {
+       "h": "Humpbacks: songs",
+       "p": [
+        "Male humpback whales (Megaptera novaeangliae) sing songs lasting from a few minutes to tens of minutes, repeated for hours. They are structured on several levels: individual sounds form phrases, repeated phrases form themes, and themes form the song. They were described by Roger Payne and Scott McVay in 1971.",
+        "The males of one population sing essentially the same song at a given time, and the song gradually changes. In the South Pacific, new songs spread from eastern Australia eastwards from population to population (Garland et al. 2011), much like a cultural fashion."
+       ]
+      },
+      {
+       "h": "Language-like statistics",
+       "p": [
+        "A 2025 study (Arnon et al., Science) split the songs into recurring segments with a method inspired by how infants find words in speech: it placed boundaries where the probability of one sound following another drops. The frequency of the segments follows Zipf’s law, like words in human languages. In experiments with humans such a distribution makes learning easier; it does not mean that the segments carry meaning.",
+        "Humpback song is also on the 1977 Voyager Golden Record: it follows the greetings in 55 human languages, as a backdrop to greetings from UN delegates."
+       ]
+      }
+     ]
+    },
+    {
+     "nazev": "Dolphins",
+     "oddily": [
+      {
+       "h": "Dolphin names",
+       "p": [
+        "A bottlenose dolphin (Tursiops truncatus) has its own so-called signature whistle, which differs from the whistles of others (Caldwell and Caldwell 1965). It develops in the first months of life and often stays with the animal for life (Janik and Sayigh 2013).",
+        "Dolphins occasionally copy another dolphin's signature whistle, mostly that of a close companion they have been separated from (King et al. 2013). Dolphins respond to a playback copy of their own whistle, but not to the whistles of others (King and Janik 2013). It thus works much like a name.",
+        "Dolphins remember the whistles of former companions even after more than twenty years apart (Bruck 2013)."
+       ]
+      },
+      {
+       "h": "Understanding sentences",
+       "p": [
+        "In the 1980s Louis Herman in Hawaii taught two female bottlenose dolphins artificial languages: Akeakamai a language of gestures and Phoenix one of computer-generated sounds. They understood new sentences too and distinguished word order: taking the surfboard to the hoop is different from taking the hoop to the surfboard (Herman et al. 1984). But this was understanding of a language invented by humans, not the dolphins' own speech."
+       ]
+      },
+      {
+       "h": "Artificial intelligence",
+       "p": [
+        "Denise Herzing's Wild Dolphin Project has been recording Atlantic spotted dolphins (Stenella frontalis) in the Bahamas since 1985. In 2025 Google, together with the project and Georgia Tech, presented an AI model called DolphinGemma, which learns the structure of dolphin sounds and is meant to help find recurring patterns in the recordings. No peer-reviewed results have been published yet (as of September 2026)."
+       ]
+      },
+      {
+       "h": "Orcas: family dialects",
+       "p": [
+        "The orca or killer whale (Orcinus orca) is the largest of the dolphins. Fish-eating orcas off British Columbia and Washington State live in family groups descended from one mother (matrilines), and each group has its own set of stereotyped calls. Groups that share some of their calls form an acoustic clan (Ford 1991). Calves probably learn the calls from their mothers, and the group keeps them with little change for decades, which is why they are spoken of as dialects."
+       ]
+      },
+      {
+       "h": "Silent hunters",
+       "p": [
+        "Orcas that hunt marine mammals such as seals, sea lions and porpoises (Bigg's orcas) call much less than fish-eaters, probably because their prey would hear them. They call mainly after a successful kill and during play at the surface (Deecke et al. 2005)."
+       ]
+      },
+      {
+       "h": "Imitation",
+       "p": [
+        "Orcas can imitate unfamiliar sounds. Orcas kept together with bottlenose dolphins began producing more whistles and clicks, as dolphins do, and one picked up a chirp sequence that humans had taught the dolphins (Musser et al. 2014). A captive female, Wikie, imitated human words such as “hello” and “bye bye” (Abramson et al. 2018). That does not mean she understood them."
+       ]
+      }
+     ]
+    },
+    {
+     "nazev": "A language?",
+     "oddily": [
+      {
+       "h": "Not shown",
+       "p": [
+        "At least not in the sense in which English or British Sign Language is a language. Human language combines units that mean something, according to rules, into ever new utterances. We know that cetacean communication has a complex structure, is passed on by learning and differs between groups much like dialects. Sperm whale codas and orca calls are known to reveal which group the caller belongs to, and dolphin signature whistles work much like names. But we do not know whether codas, humpback songs or orca calls carry word-like meaning, let alone whether they combine into new utterances.",
+        "That is why cetaceans have no dot on the globe: the atlas records human languages according to Glottolog."
+       ]
+      }
+     ]
+    },
+    {
+     "nazev": "Sources",
+     "zdroje": [
+      "Watkins, W. A. – Schevill, W. E. (1977): Sperm whale codas. Journal of the Acoustical Society of America 62: 1485–1490.",
+      "Rendell, L. – Whitehead, H. (2003): Vocal clans in sperm whales (Physeter macrocephalus). Proceedings of the Royal Society B 270: 225–231.",
+      "Sharma, P. et al. (2024): Contextual and combinatorial structure in sperm whale vocalisations. Nature Communications 15: 3617.",
+      "Payne, R. S. – McVay, S. (1971): Songs of humpback whales. Science 173: 585–597.",
+      "Garland, E. C. et al. (2011): Dynamic horizontal cultural transmission of humpback whale song at the ocean basin scale. Current Biology 21: 687–691.",
+      "Arnon, I. et al. (2025): Whale song shows language-like statistical structure. Science 387: 649–653.",
+      "Caldwell, M. C. – Caldwell, D. K. (1965): Individualized whistle contours in bottle-nosed dolphins (Tursiops truncatus). Nature 207: 434–435.",
+      "King, S. L. – Janik, V. M. (2013): Bottlenose dolphins can use learned vocal labels to address each other. PNAS 110: 13216–13221.",
+      "Bruck, J. N. (2013): Decades-long social memory in bottlenose dolphins. Proceedings of the Royal Society B 280: 20131726.",
+      "Herman, L. M. – Richards, D. G. – Wolz, J. P. (1984): Comprehension of sentences by bottlenosed dolphins. Cognition 16: 129–219.",
+      "Ford, J. K. B. (1991): Vocal traditions among resident killer whales (Orcinus orca) in coastal waters of British Columbia. Canadian Journal of Zoology 69: 1454–1483.",
+      "Deecke, V. B. – Ford, J. K. B. – Slater, P. J. B. (2005): The vocal behaviour of mammal-eating killer whales: communicating with costly calls. Animal Behaviour 69: 395–405.",
+      "Musser, W. B. et al. (2014): Differences in acoustic features of vocalizations produced by killer whales cross-socialized with bottlenose dolphins. Journal of the Acoustical Society of America 136: 1990–2002.",
+      "Abramson, J. Z. et al. (2018): Imitation of novel conspecific and human speech sounds in the killer whale (Orcinus orca). Proceedings of the Royal Society B 285: 20172171.",
+      "Janik, V. M. – Sayigh, L. S. (2013): Communication in bottlenose dolphins: 50 years of signature whistle research. Journal of Comparative Physiology A 199: 479–489.",
+      "King, S. L. – Sayigh, L. S. – Wells, R. S. – Fellner, W. – Janik, V. M. (2013): Vocal copying of individually distinctive signature whistles in bottlenose dolphins. Proceedings of the Royal Society B 280: 20130053.",
+      "Hersh, T. A. et al. (2022): Evidence from sperm whale clans of symbolic marking in non-human cultures. PNAS 119: e2201692119."
+     ]
+    }
+   ]
+  },
+  "babel": {
+   "stitek": "Confusion of tongues",
+   "nazev": "The Tower of Babel",
+   "pozdrav": "בָּבֶל",
+   "prepis": "Hebrew Bavel, Akkadian Bāb-ili",
+   "stitky": [
+    [
+     "Where",
+     "Babylon, today Iraq"
+    ],
+    [
+     "Source",
+     "Genesis 11:1–9"
+    ]
+   ],
+   "zalozky": [
+    {
+     "nazev": "The story",
+     "oddily": [
+      {
+       "h": "One language",
+       "p": [
+        "According to chapter eleven of the Book of Genesis, all people spoke one language. In the land of Shinar they built a city and a tower whose top was to reach the heavens, to “make a name” for themselves. The Lord confused their language so that they would not understand one another, and scattered them over all the earth.",
+        "The text explains the city’s name by a pun: it links Hebrew Bavel with the verb bālal, “to confuse”. The real origin of the name is different. The Babylonians interpreted it as Bāb-ili, “gate of god”, and the name may be even older."
+       ]
+      }
+     ]
+    },
+    {
+     "nazev": "The tower",
+     "oddily": [
+      {
+       "h": "Etemenanki",
+       "p": [
+        "The tower was most likely modelled on the ziggurat Etemenanki, Sumerian for “house of the foundation of heaven and earth”, beside Marduk’s temple Esagila in Babylon. According to his own inscriptions, its restoration was completed by Nebuchadnezzar II (r. 605–562 BCE), at the time when part of the people of Judah lived in Babylon in exile.",
+        "The so-called Esagila tablet, a cuneiform copy of an older text made at Uruk in 229 BCE (in the Seleucid period), gives a square base about 91 metres on each side. Only the foundations of the tower remain today."
+       ]
+      }
+     ]
+    },
+    {
+     "nazev": "Linguistics",
+     "oddily": [
+      {
+       "h": "Why so many languages",
+       "p": [
+        "Among the {n} languages of the atlas there are {r} language families and {i} isolates whose relationship to other languages has not been demonstrated.",
+        "Whether all languages go back to one common ancestor cannot be proven. The comparative method, by which linguists reconstruct proto-languages, reaches back, by common estimates, no more than roughly 6,000 to 10,000 years, but people have been speaking far longer. Linguistic diversity did not arise all at once: languages change with every generation, and groups that stop talking to each other stop understanding each other within centuries."
+       ]
+      }
+     ]
+    },
+    {
+     "nazev": "Sources",
+     "zdroje": [
+      "Genesis 11:1–9.",
+      "George, A. R. (2005–2006): The Tower of Babel: archaeology, history and cuneiform texts. Archiv für Orientforschung 51: 75–95.",
+      "Hammarström, H. et al.: Glottolog (glottolog.org).",
+      "Campbell, L. (2013): Historical Linguistics: An Introduction. 3rd ed. Edinburgh University Press."
+     ]
+    }
+   ]
+  }
+ },
+ "pismaSveta": {
+  "naMiste": "Language at this spot: {j} ›",
+  "stitek": "Script",
+  "typ": "Type",
+  "smer": "Direction",
+  "jazyku": "Languages on the globe",
+  "zToho": "of which {n} estimated",
+  "typy": {
+   "abeceda": "alphabet (letters for consonants and vowels)",
+   "abdzad": "abjad (writes mainly consonants)",
+   "abugida": "abugida (consonant with an attached vowel)",
+   "slabicne": "syllabary",
+   "logograficke": "logographic script (a sign = a meaningful syllable)",
+   "smisene": "mixed (characters and syllabaries)"
+  },
+  "smery": {
+   "ltr": "left to right",
+   "rtl": "right to left",
+   "ttb": "top to bottom, columns left to right"
+  },
+  "oPismu": "About the script",
+  "jazyky": "Languages",
+  "jazykyAtlasu": "Atlas languages written in this script",
+  "uredni": "Official languages written in this script",
+  "uredniKratce": "Where official",
+  "rodokmen": "Family of scripts",
+  "zadnyAtlas": "None of the languages with a detailed card is written in this script.",
+  "zadnyStat": "According to CLDR, no official language of any country is written in this script.",
+  "jazykyPozn": "The area of a script on the globe is formed by the dots of all languages written in it according to Unicode CLDR; for languages without detailed data it is a CLDR estimate. A language written in several scripts belongs to several areas.",
+  "zdroj": "Countries where a language written in this script is official nationwide, according to Unicode CLDR.",
+  "tip": "Tap a coloured area or a script sample to open the script card."
+ }
+}
