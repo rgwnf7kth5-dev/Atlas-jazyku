@@ -1,6 +1,6 @@
 # Atlas jazyků – pokyny pro Claude Code
 
-Encyklopedický atlas jazyků světa na otáčivém glóbu, česky, anglicky a od 2. 10. 2026 italsky. Komunikuj česky.
+Encyklopedický atlas jazyků světa na otáčivém glóbu, česky, anglicky, od 2. 10. 2026 italsky a od 3. 10. 2026 německy. Komunikuj česky.
 **Publikum od 26. 9. 2026: studenti a výš** – vysokoškoláci, učitelé, dospělí zájemci i odborníci (uživatel: „pro studenty a výše, nejenom pro ně“). Česky se vyká. Texty věcné,
 encyklopedické, odborné termíny s vysvětlením, bez zvolání, výzev („Zkus to vyslovit!“) a zdrobnělin. Samostatná
 **varianta pro děti** (jiná grafika, animace, obrázky, mnohem méně jazyků) je nápad uživatele **na později, ne teď**.
@@ -13,7 +13,7 @@ Uživatel není programátor a pracuje na Macu (a iPhonu), ne na Windows: vysvě
 
 ```
 npm run check      # validace + sestavení; spusť vždy před commitem
-npm run build -- --artefakt build   # navíc fragmenty pro publikování jako artefakt (ODKAZ_CS, ODKAZ_EN, ODKAZ_IT)
+npm run build -- --artefakt build   # navíc fragmenty pro publikování jako artefakt (jen cs a en; ODKAZ_CS, ODKAZ_EN)
 ```
 
 ## Web
@@ -69,7 +69,7 @@ v build.mjs, `DOMENY.it` a `korenVerze` v app.js). V záhlaví je místo odkazu 
   kamenné kostely ~800, Genji „figlio dell’imperatore“, ge’ez z nedoložené mateřské řeči, „alfabeto albano“ = kavkazské). Názvosloví:
   české národní obrození = **„Rinascita nazionale (ceca)“, ne „Risorgimento“** (to je italské sjednocení); stupně UNESCO jako v rozhraní
   („decisamente in pericolo“); „Lungo Computo“. Validace hlídá u stránek s `it` stejné oddíly jako `en`, `adresa.it` a popisky fotek.
-- **Artefakt s italštinou má 15,2 MB (limit 16 MB).** Další jazyk (DE, FR) se do jednoho souboru už nevejde – pak by artefakt musel nést jen svůj jazyk nebo menší fotky civilizací.
+- **Artefakt nese od 3. 10. 2026 jen češtinu a angličtinu** (`ARTEFAKT_JAZYKY` a `jenJazyky` v build.mjs vyhodí z dat klíče ostatních jazyků; s italštinou měl 15,2 MB, s němčinou by přesáhl limit 16 MB; teď ~15,0 MB = 14,3 MiB). V přepínači artefaktu vedou IT a DE na web (nový list).
 - **Italské statické stránky** (`scripts/stranky.mjs` je od 2. 10. 2026 pro libovolné jazyky `JAZYKY_WEBU`): `/it/lingua/<nome>/`,
   `/it/lingue/`, `/it/sui-dati/`, `/it/giornate-delle-lingue/`, `/it/guida/`, `/it/vitalita/`, `/it/antichita/<…>/`, `/it/storie/<…>/`;
   záhlaví má přepínač CS · EN · IT, hreflang všech tří verzí, sitemapa anglické domény obsahuje i `/it/`. Build stránkám předává data
@@ -82,6 +82,30 @@ v build.mjs, `DOMENY.it` a `korenVerze` v app.js). V záhlaví je místo odkazu 
   verzí na úvodních stránkách a v sitemapě anglické domény.
 - Nový jazyk (DE, FR) = přidat do `JAZYKY_WEBU`, `LOCALE`, `DOMENA`, `DOMENY`, `src/ui/xx.json`, `node scripts/nazvy.mjs xx`,
   rodiny a větve, odkaz v přepínači v `body.html`, edge funkce a netlify.toml; pak překlady dat.
+
+## Německá verze (od 3. 10. 2026)
+
+Uživatel: „přidělej teď ještě v plném rozsahu také verzi pro DE“. Adresa **thelanguageatlas.com/de/** (`dist/de/`), stejná kostra
+jako italština, přepínač **CS · EN · IT · DE**. Název **Atlas der Sprachen** („Sprachatlas“ je v němčině nářeční atlas). **Vyká se („Sie“).**
+- Kostra je teď obecná: `JAZYKY_WEBU` v build.mjs je jediný zdroj (validace si ho čte), `DOMENA`, `LOCALE`, `WEB()` a odkazy přepínače
+  (`odkaz<Jazyk>` v šabloně) se odvozují; `body.html` má odkaz na každý jazyk, edge funkce `domeny.js` vynechává `/it/*` i `/de/*`,
+  netlify.toml přesměruje `/de` → `/de/`. Statické stránky `/de/sprache/<name>/`, `/de/sprachen/`, `/de/ueber-die-daten/`,
+  `/de/sprachentage/`, `/de/anleitung/`, `/de/vitalitaet/`, `/de/antike/<…>/`, `/de/geschichten/<…>/`. Procenta s pevnou mezerou jako česky.
+- Názvy: `node scripts/nazvy.mjs de` (CLDR 48.2: 544 jmen teček, státy, písma; `BEZNE` nahrazuje úřední tvary s čárkou – „Tansania“,
+  „Syrien“, „Vereinigte Staaten“, „Tschechien“), rodiny `glottolog-families.de.json`, větve `glottolog-branches.de.json` (stejné klíče jako it).
+- Hledání zná německá slova (`DOTAZ_SPUSTE` sprach/sprech/gesproch/zweig/dialekt, předložky im/von/aus/der, `DOTAZ_VYPLN`, „wo“); Wikipedie
+  se hledá německy („<Name> Sprache“). Záložní hlas výslovnosti `de-DE`, srovnání hlásek s němčinou, ukázka VDLP německy.
+- Přeloženo **vše** (dvanáct pomocných agentů z angličtiny podle zadání, devět nezávislých kontrol, asi 150 oprav): rozhraní `src/ui/de.json`,
+  164 karet (`de` v languages.json, výslovnost přepsaná pro německého čtenáře: sch/tsch/dsch/w/j, přízvuk velkými), Jazyk dne, 36 písem,
+  typologie (německé příklady ověřené ve WALS: 85A předložky, 87A, 88A, 116A slovosled; u 86A genitivu zůstaly anglické příklady, WALS
+  vede němčinu jako „jméno – genitiv“), 31 stránek Jazyků starověku a Příběhů (`adresa.de` např. `hethiter`, `altes-aegypten`, `der-tee`),
+  12 putování (`reise-tschechisch`…), cesty slov, vymyšlené jazyky. Nástroje překladu a kontroly jsou ve scratchpadu `de-preklad/`
+  (ZADANI.md, KONTROLA.md, `vytahni*.mjs`, `kontrola*.mjs`, `vedle*.mjs`, `opravy.mjs`, `vloz-de.py`) – pro další jazyk zkopírovat.
+- **Názvosloví:** stupně UNESCO **sicher · gefährdet (vulnerable) · definitiv gefährdet · ernsthaft gefährdet · kritisch gefährdet ·
+  ausgestorben · wiedererweckt**, souhrnně „bedroht“ (nesmí kolidovat s „gefährdet“); indogermanisch; Glagoliza; Kiewer Blätter; tschechische
+  nationale Wiedergeburt; Kralitzer Bibel; karta atlasu = „Steckbrief“ („Karte“ = mapa). Opraveno při kontrole mj.: obrácený smysl u
+  akkadštiny a aramejštiny, Omri a Moab na stéle Méšově, „Lesezeichen“ (= záložka) u kunten, předpona kh- (přepis se nemění), „den Zehnten“,
+  angl. daler „spätestens seit“, ethnicita × původ u maorštiny, Mendele/Perez a jidiš, „Republik Moldau“ × Moldau (kraj).
 
 ## Struktura a pravidla
 

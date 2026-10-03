@@ -4,27 +4,32 @@
   "fonologie": {
    "cs": "Fonologie",
    "en": "Phonology",
-   "it": "Fonologia"
+   "it": "Fonologia",
+   "de": "Phonologie"
   },
   "morfologie": {
    "cs": "Morfologie",
    "en": "Morphology",
-   "it": "Morfologia"
+   "it": "Morfologia",
+   "de": "Morphologie"
   },
   "slovosled": {
    "cs": "Slovosled",
    "en": "Word order",
-   "it": "Ordine delle parole"
+   "it": "Ordine delle parole",
+   "de": "Wortstellung"
   },
   "veta": {
    "cs": "Větná stavba",
    "en": "Clause structure",
-   "it": "Struttura della frase"
+   "it": "Struttura della frase",
+   "de": "Satzbau"
   },
   "slovnik": {
    "cs": "Slovní zásoba",
    "en": "Lexicon",
-   "it": "Lessico"
+   "it": "Lessico",
+   "de": "Lexikon"
   }
  },
  "vlastnosti": [
@@ -35,38 +40,45 @@
    "nazev": {
     "cs": "Souhláskový inventář",
     "en": "Consonant inventories",
-    "it": "Inventari consonantici"
+    "it": "Inventari consonantici",
+    "de": "Konsonanteninventar"
    },
    "popis": {
     "cs": "Počet souhláskových fonémů jazyka. Hranice kategorií podle WALS: malý 6–14, středně malý 15–18, průměrný 19–25, středně velký 26–33, velký 34 a více.",
     "en": "The number of consonant phonemes. WALS category limits: small 6–14, moderately small 15–18, average 19–25, moderately large 26–33, large 34 or more.",
-    "it": "Il numero di fonemi consonantici. Limiti delle categorie del WALS: piccolo 6–14, medio-piccolo 15–18, medio 19–25, medio-grande 26–33, grande 34 o più."
+    "it": "Il numero di fonemi consonantici. Limiti delle categorie del WALS: piccolo 6–14, medio-piccolo 15–18, medio 19–25, medio-grande 26–33, grande 34 o più.",
+    "de": "Die Anzahl der Konsonantenphoneme. Klassengrenzen nach WALS: klein 6–14, mäßig klein 15–18, durchschnittlich 19–25, mäßig groß 26–33, groß 34 oder mehr."
    },
    "hodnoty": {
     "1": {
      "cs": "malý (6–14)",
      "en": "Small (6–14)",
-     "it": "Piccolo (6–14)"
+     "it": "Piccolo (6–14)",
+     "de": "Klein (6–14)"
     },
     "2": {
      "cs": "středně malý (15–18)",
      "en": "Moderately small (15–18)",
-     "it": "Medio-piccolo (15–18)"
+     "it": "Medio-piccolo (15–18)",
+     "de": "Mäßig klein (15–18)"
     },
     "3": {
      "cs": "průměrný (19–25)",
      "en": "Average (19–25)",
-     "it": "Medio (19–25)"
+     "it": "Medio (19–25)",
+     "de": "Durchschnittlich (19–25)"
     },
     "4": {
      "cs": "středně velký (26–33)",
      "en": "Moderately large (26–33)",
-     "it": "Medio-grande (26–33)"
+     "it": "Medio-grande (26–33)",
+     "de": "Mäßig groß (26–33)"
     },
     "5": {
      "cs": "velký (34 a více)",
      "en": "Large (34 or more)",
-     "it": "Grande (34 o più)"
+     "it": "Grande (34 o più)",
+     "de": "Groß (34 oder mehr)"
     }
    },
    "tridy": [
@@ -76,7 +88,8 @@
      ],
      "cs": "malý (6–14)",
      "en": "small (6–14)",
-     "it": "piccolo (6–14)"
+     "it": "piccolo (6–14)",
+     "de": "klein (6–14)"
     },
     {
      "wals": [
@@ -84,7 +97,8 @@
      ],
      "cs": "středně malý (15–18)",
      "en": "moderately small (15–18)",
-     "it": "medio-piccolo (15–18)"
+     "it": "medio-piccolo (15–18)",
+     "de": "mäßig klein (15–18)"
     },
     {
      "wals": [
@@ -92,7 +106,8 @@
      ],
      "cs": "průměrný (19–25)",
      "en": "average (19–25)",
-     "it": "medio (19–25)"
+     "it": "medio (19–25)",
+     "de": "durchschnittlich (19–25)"
     },
     {
      "wals": [
@@ -100,7 +115,8 @@
      ],
      "cs": "středně velký (26–33)",
      "en": "moderately large (26–33)",
-     "it": "medio-grande (26–33)"
+     "it": "medio-grande (26–33)",
+     "de": "mäßig groß (26–33)"
     },
     {
      "wals": [
@@ -108,7 +124,8 @@
      ],
      "cs": "velký (34 a více)",
      "en": "large (34 or more)",
-     "it": "grande (34 o più)"
+     "it": "grande (34 o più)",
+     "de": "groß (34 oder mehr)"
     }
    ]
   },
@@ -119,28 +136,33 @@
    "nazev": {
     "cs": "Samohláskový inventář",
     "en": "Vowel quality inventories",
-    "it": "Inventari dei timbri vocalici"
+    "it": "Inventari dei timbri vocalici",
+    "de": "Inventar der Vokalqualitäten"
    },
    "popis": {
     "cs": "Počet samohláskových kvalit bez ohledu na délku, nosovost a další rysy, které kvalitu nemění.",
     "en": "The number of vowel qualities, disregarding length, nasalization and other features that do not change quality.",
-    "it": "Il numero di timbri vocalici, senza contare lunghezza, nasalizzazione e altri tratti che non cambiano il timbro."
+    "it": "Il numero di timbri vocalici, senza contare lunghezza, nasalizzazione e altri tratti che non cambiano il timbro.",
+    "de": "Die Anzahl der Vokalqualitäten, ohne Berücksichtigung von Länge, Nasalierung und anderen Merkmalen, die die Qualität nicht verändern."
    },
    "hodnoty": {
     "1": {
      "cs": "malý (2–4 kvality)",
      "en": "Small (2–4)",
-     "it": "Piccolo (2–4)"
+     "it": "Piccolo (2–4)",
+     "de": "Klein (2–4)"
     },
     "2": {
      "cs": "průměrný (5–6 kvalit)",
      "en": "Average (5–6)",
-     "it": "Medio (5–6)"
+     "it": "Medio (5–6)",
+     "de": "Durchschnittlich (5–6)"
     },
     "3": {
      "cs": "velký (7–14 kvalit)",
      "en": "Large (7–14)",
-     "it": "Grande (7–14)"
+     "it": "Grande (7–14)",
+     "de": "Groß (7–14)"
     }
    },
    "tridy": [
@@ -150,7 +172,8 @@
      ],
      "cs": "malý (2–4)",
      "en": "small (2–4)",
-     "it": "piccolo (2–4)"
+     "it": "piccolo (2–4)",
+     "de": "klein (2–4)"
     },
     {
      "wals": [
@@ -158,7 +181,8 @@
      ],
      "cs": "průměrný (5–6)",
      "en": "average (5–6)",
-     "it": "medio (5–6)"
+     "it": "medio (5–6)",
+     "de": "durchschnittlich (5–6)"
     },
     {
      "wals": [
@@ -166,7 +190,8 @@
      ],
      "cs": "velký (7–14)",
      "en": "large (7–14)",
-     "it": "grande (7–14)"
+     "it": "grande (7–14)",
+     "de": "groß (7–14)"
     }
    ]
   },
@@ -177,28 +202,33 @@
    "nazev": {
     "cs": "Stavba slabiky",
     "en": "Syllable structure",
-    "it": "Struttura della sillaba"
+    "it": "Struttura della sillaba",
+    "de": "Silbenstruktur"
    },
    "popis": {
     "cs": "Nejsložitější slabika, kterou jazyk dovoluje. Jednoduchá: nejvýš jedna souhláska před samohláskou (C)V. Středně složitá: CVC nebo dvě souhlásky na začátku, z nichž druhá je likvida nebo polosamohláska. Složitá: delší shluky souhlásek.",
     "en": "The most complex syllable a language allows. Simple: at most one consonant before the vowel, (C)V. Moderately complex: CVC, or two initial consonants the second of which is a liquid or glide. Complex: longer consonant clusters.",
-    "it": "La sillaba più complessa che una lingua ammette. Semplice: al massimo una consonante prima della vocale, (C)V. Moderatamente complessa: CVC, oppure due consonanti iniziali di cui la seconda è una liquida o un’approssimante. Complessa: gruppi consonantici più lunghi."
+    "it": "La sillaba più complessa che una lingua ammette. Semplice: al massimo una consonante prima della vocale, (C)V. Moderatamente complessa: CVC, oppure due consonanti iniziali di cui la seconda è una liquida o un’approssimante. Complessa: gruppi consonantici più lunghi.",
+    "de": "Die komplexeste Silbe, die eine Sprache zulässt. Einfach: höchstens ein Konsonant vor dem Vokal, (C)V. Mäßig komplex: CVC oder zwei anlautende Konsonanten, deren zweiter ein Liquid oder Gleitlaut ist. Komplex: längere Konsonantenverbindungen."
    },
    "hodnoty": {
     "1": {
      "cs": "jednoduchá",
      "en": "Simple",
-     "it": "Semplice"
+     "it": "Semplice",
+     "de": "Einfach"
     },
     "2": {
      "cs": "středně složitá",
      "en": "Moderately complex",
-     "it": "Moderatamente complessa"
+     "it": "Moderatamente complessa",
+     "de": "Mäßig komplex"
     },
     "3": {
      "cs": "složitá",
      "en": "Complex",
-     "it": "Complessa"
+     "it": "Complessa",
+     "de": "Komplex"
     }
    },
    "tridy": [
@@ -208,7 +238,8 @@
      ],
      "cs": "jednoduchá",
      "en": "simple",
-     "it": "semplice"
+     "it": "semplice",
+     "de": "einfach"
     },
     {
      "wals": [
@@ -216,7 +247,8 @@
      ],
      "cs": "středně složitá",
      "en": "moderately complex",
-     "it": "moderatamente complessa"
+     "it": "moderatamente complessa",
+     "de": "mäßig komplex"
     },
     {
      "wals": [
@@ -224,7 +256,8 @@
      ],
      "cs": "složitá",
      "en": "complex",
-     "it": "complessa"
+     "it": "complessa",
+     "de": "komplex"
     }
    ]
   },
@@ -235,28 +268,33 @@
    "nazev": {
     "cs": "Tóny",
     "en": "Tone",
-    "it": "Toni"
+    "it": "Toni",
+    "de": "Töne"
    },
    "popis": {
     "cs": "Zda výška tónu rozlišuje slova nebo mluvnické tvary. Jednoduchý systém má dvě tónové úrovně, složitý tři a více nebo tónové průběhy.",
     "en": "Whether pitch distinguishes words or grammatical forms. A simple system has two tone levels, a complex one three or more, or contour tones.",
-    "it": "Se l’altezza della voce distingue parole o forme grammaticali. Un sistema semplice ha due livelli tonali, uno complesso tre o più, oppure toni di contorno."
+    "it": "Se l’altezza della voce distingue parole o forme grammaticali. Un sistema semplice ha due livelli tonali, uno complesso tre o più, oppure toni di contorno.",
+    "de": "Ob die Tonhöhe Wörter oder grammatische Formen unterscheidet. Ein einfaches System hat zwei Tonstufen, ein komplexes drei oder mehr oder Konturtöne."
    },
    "hodnoty": {
     "1": {
      "cs": "bez tónů",
      "en": "No tones",
-     "it": "Nessun tono"
+     "it": "Nessun tono",
+     "de": "Keine Töne"
     },
     "2": {
      "cs": "jednoduchý tónový systém",
      "en": "Simple tone system",
-     "it": "Sistema tonale semplice"
+     "it": "Sistema tonale semplice",
+     "de": "Einfaches Tonsystem"
     },
     "3": {
      "cs": "složitý tónový systém",
      "en": "Complex tone system",
-     "it": "Sistema tonale complesso"
+     "it": "Sistema tonale complesso",
+     "de": "Komplexes Tonsystem"
     }
    },
    "tridy": [
@@ -266,7 +304,8 @@
      ],
      "cs": "bez tónů",
      "en": "no tones",
-     "it": "nessun tono"
+     "it": "nessun tono",
+     "de": "keine Töne"
     },
     {
      "wals": [
@@ -274,7 +313,8 @@
      ],
      "cs": "jednoduchý tónový systém",
      "en": "simple tone system",
-     "it": "sistema tonale semplice"
+     "it": "sistema tonale semplice",
+     "de": "einfaches Tonsystem"
     },
     {
      "wals": [
@@ -282,7 +322,8 @@
      ],
      "cs": "složitý tónový systém",
      "en": "complex tone system",
-     "it": "sistema tonale complesso"
+     "it": "sistema tonale complesso",
+     "de": "komplexes Tonsystem"
     }
    ]
   },
@@ -293,48 +334,57 @@
    "nazev": {
     "cs": "Neobvyklé souhlásky",
     "en": "Presence of uncommon consonants",
-    "it": "Presenza di consonanti rare"
+    "it": "Presenza di consonanti rare",
+    "de": "Vorkommen seltener Konsonanten"
    },
    "popis": {
     "cs": "Výskyt čtyř typů souhlásek, které jsou ve světě vzácné: mlaskavek (kliků), labiovelár (současné uzávěry rty a zadní částí jazyka, [k͡p], [ɡ͡b]), faryngál a zubních frikativ („th“, [θ], [ð]).",
     "en": "The presence of four consonant types that are rare worldwide: clicks, labial-velars (simultaneous closure at the lips and velum, [k͡p], [ɡ͡b]), pharyngeals and dental fricatives ('th', [θ], [ð]).",
-    "it": "La presenza di quattro tipi di consonanti rari nel mondo: clic, labiovelari (chiusura simultanea alle labbra e al velo, [k͡p], [ɡ͡b]), faringali e fricative dentali (“th”, [θ], [ð])."
+    "it": "La presenza di quattro tipi di consonanti rari nel mondo: clic, labiovelari (chiusura simultanea alle labbra e al velo, [k͡p], [ɡ͡b]), faringali e fricative dentali (“th”, [θ], [ð]).",
+    "de": "Das Vorkommen von vier weltweit seltenen Konsonantentypen: Klicklaute, Labiovelare (gleichzeitiger Verschluss an den Lippen und am Velum, [k͡p], [ɡ͡b]), Pharyngale und dentale Frikative („th“, [θ], [ð])."
    },
    "hodnoty": {
     "1": {
      "cs": "žádné z nich",
      "en": "None",
-     "it": "Nessuna"
+     "it": "Nessuna",
+     "de": "Keine"
     },
     "2": {
      "cs": "mlaskavky",
      "en": "Clicks",
-     "it": "Clic"
+     "it": "Clic",
+     "de": "Klicklaute"
     },
     "3": {
      "cs": "labioveláry",
      "en": "Labial-velars",
-     "it": "Labiovelari"
+     "it": "Labiovelari",
+     "de": "Labiovelare"
     },
     "4": {
      "cs": "faryngály",
      "en": "Pharyngeals",
-     "it": "Faringali"
+     "it": "Faringali",
+     "de": "Pharyngale"
     },
     "5": {
      "cs": "zubní frikativy („th“)",
      "en": "'Th' sounds",
-     "it": "Suoni “th”"
+     "it": "Suoni “th”",
+     "de": "„th“-Laute"
     },
     "6": {
      "cs": "mlaskavky, faryngály i „th“",
      "en": "Clicks, pharyngeals and 'th'",
-     "it": "Clic, faringali e “th”"
+     "it": "Clic, faringali e “th”",
+     "de": "Klicklaute, Pharyngale und „th“"
     },
     "7": {
      "cs": "faryngály i „th“",
      "en": "Pharyngeals and 'th'",
-     "it": "Faringali e “th”"
+     "it": "Faringali e “th”",
+     "de": "Pharyngale und „th“"
     }
    },
    "tridy": [
@@ -344,7 +394,8 @@
      ],
      "cs": "mlaskavky",
      "en": "clicks",
-     "it": "clic"
+     "it": "clic",
+     "de": "Klicklaute"
     },
     {
      "wals": [
@@ -352,7 +403,8 @@
      ],
      "cs": "labioveláry",
      "en": "labial-velars",
-     "it": "labiovelari"
+     "it": "labiovelari",
+     "de": "Labiovelare"
     },
     {
      "wals": [
@@ -360,7 +412,8 @@
      ],
      "cs": "faryngály",
      "en": "pharyngeals",
-     "it": "faringali"
+     "it": "faringali",
+     "de": "Pharyngale"
     },
     {
      "wals": [
@@ -368,7 +421,8 @@
      ],
      "cs": "zubní frikativy („th“)",
      "en": "'th' sounds",
-     "it": "suoni “th”"
+     "it": "suoni “th”",
+     "de": "„th“-Laute"
     },
     {
      "wals": [
@@ -377,7 +431,8 @@
      ],
      "cs": "více těchto typů",
      "en": "several of these types",
-     "it": "più di uno di questi tipi"
+     "it": "più di uno di questi tipi",
+     "de": "mehrere dieser Typen"
     },
     {
      "wals": [
@@ -386,6 +441,7 @@
      "cs": "žádné z nich",
      "en": "none",
      "it": "nessuna",
+     "de": "keine",
      "barva": "jine"
     }
    ]
@@ -397,43 +453,51 @@
    "nazev": {
     "cs": "Předpony a přípony v ohýbání",
     "en": "Prefixing vs. suffixing in inflectional morphology",
-    "it": "Prefissi o suffissi nella morfologia flessiva"
+    "it": "Prefissi o suffissi nella morfologia flessiva",
+    "de": "Präfigierung vs. Suffigierung in der Flexionsmorphologie"
    },
    "popis": {
     "cs": "Zda jazyk vyjadřuje mluvnické kategorie (pád, osobu, čas…) spíše příponami, nebo předponami. WALS rozlišuje silnou a slabou převahu; zde jsou obě sloučené.",
     "en": "Whether a language expresses grammatical categories (case, person, tense…) mainly with suffixes or with prefixes. WALS distinguishes strong and weak preference; here the two are merged.",
-    "it": "Se una lingua esprime le categorie grammaticali (caso, persona, tempo…) soprattutto con suffissi o con prefissi. Il WALS distingue una preferenza forte e una debole; qui le due sono unite."
+    "it": "Se una lingua esprime le categorie grammaticali (caso, persona, tempo…) soprattutto con suffissi o con prefissi. Il WALS distingue una preferenza forte e una debole; qui le due sono unite.",
+    "de": "Ob eine Sprache grammatische Kategorien (Kasus, Person, Tempus …) überwiegend mit Suffixen oder mit Präfixen ausdrückt. WALS unterscheidet eine starke und eine schwache Präferenz; hier sind beide zusammengefasst."
    },
    "hodnoty": {
     "1": {
      "cs": "málo afixace",
      "en": "Little affixation",
-     "it": "Poca affissazione"
+     "it": "Poca affissazione",
+     "de": "Wenig Affigierung"
     },
     "2": {
      "cs": "výrazně příponový",
      "en": "Strongly suffixing",
-     "it": "Fortemente suffissante"
+     "it": "Fortemente suffissante",
+     "de": "Stark suffigierend"
     },
     "3": {
      "cs": "mírně příponový",
      "en": "Weakly suffixing",
-     "it": "Debolmente suffissante"
+     "it": "Debolmente suffissante",
+     "de": "Schwach suffigierend"
     },
     "4": {
      "cs": "předpony a přípony stejně",
      "en": "Equal prefixing and suffixing",
-     "it": "Prefissi e suffissi in egual misura"
+     "it": "Prefissi e suffissi in egual misura",
+     "de": "Gleichermaßen präfigierend und suffigierend"
     },
     "5": {
      "cs": "mírně předponový",
      "en": "Weakly prefixing",
-     "it": "Debolmente prefissante"
+     "it": "Debolmente prefissante",
+     "de": "Schwach präfigierend"
     },
     "6": {
      "cs": "výrazně předponový",
      "en": "Strongly prefixing",
-     "it": "Fortemente prefissante"
+     "it": "Fortemente prefissante",
+     "de": "Stark präfigierend"
     }
    },
    "tridy": [
@@ -444,7 +508,8 @@
      ],
      "cs": "převážně přípony",
      "en": "mainly suffixing",
-     "it": "soprattutto suffissi"
+     "it": "soprattutto suffissi",
+     "de": "überwiegend suffigierend"
     },
     {
      "wals": [
@@ -453,7 +518,8 @@
      ],
      "cs": "převážně předpony",
      "en": "mainly prefixing",
-     "it": "soprattutto prefissi"
+     "it": "soprattutto prefissi",
+     "de": "überwiegend präfigierend"
     },
     {
      "wals": [
@@ -461,7 +527,8 @@
      ],
      "cs": "předpony i přípony stejně",
      "en": "equal prefixing and suffixing",
-     "it": "prefissi e suffissi in egual misura"
+     "it": "prefissi e suffissi in egual misura",
+     "de": "gleichermaßen präfigierend und suffigierend"
     },
     {
      "wals": [
@@ -470,6 +537,7 @@
      "cs": "málo afixace",
      "en": "little affixation",
      "it": "poca affissazione",
+     "de": "wenig Affigierung",
      "barva": "jine"
     }
    ]
@@ -481,38 +549,45 @@
    "nazev": {
     "cs": "Počet jmenných rodů",
     "en": "Number of genders",
-    "it": "Numero di generi"
+    "it": "Numero di generi",
+    "de": "Anzahl der Genera"
    },
    "popis": {
     "cs": "Počet tříd podstatných jmen, které se projevují shodou (u přídavných jmen, zájmen, sloves). Sem patří i systémy jmenných tříd, např. v bantuských jazycích.",
     "en": "The number of noun classes reflected in agreement (on adjectives, pronouns, verbs). This includes noun-class systems such as those of Bantu languages.",
-    "it": "Il numero di classi nominali che si riflettono nell’accordo (su aggettivi, pronomi, verbi). Sono compresi i sistemi di classi nominali come quelli delle lingue bantu."
+    "it": "Il numero di classi nominali che si riflettono nell’accordo (su aggettivi, pronomi, verbi). Sono compresi i sistemi di classi nominali come quelli delle lingue bantu.",
+    "de": "Die Anzahl der Nominalklassen, die sich in der Kongruenz (an Adjektiven, Pronomen, Verben) niederschlagen. Dazu gehören auch Nominalklassensysteme wie die der Bantusprachen."
    },
    "hodnoty": {
     "1": {
      "cs": "žádný",
      "en": "None",
-     "it": "Nessuno"
+     "it": "Nessuno",
+     "de": "Keine"
     },
     "2": {
      "cs": "dva",
      "en": "Two",
-     "it": "Due"
+     "it": "Due",
+     "de": "Zwei"
     },
     "3": {
      "cs": "tři",
      "en": "Three",
-     "it": "Tre"
+     "it": "Tre",
+     "de": "Drei"
     },
     "4": {
      "cs": "čtyři",
      "en": "Four",
-     "it": "Quattro"
+     "it": "Quattro",
+     "de": "Vier"
     },
     "5": {
      "cs": "pět a více",
      "en": "Five or more",
-     "it": "Cinque o più"
+     "it": "Cinque o più",
+     "de": "Fünf oder mehr"
     }
    },
    "tridy": [
@@ -522,7 +597,8 @@
      ],
      "cs": "žádný",
      "en": "none",
-     "it": "nessuno"
+     "it": "nessuno",
+     "de": "keine"
     },
     {
      "wals": [
@@ -530,7 +606,8 @@
      ],
      "cs": "dva",
      "en": "two",
-     "it": "due"
+     "it": "due",
+     "de": "zwei"
     },
     {
      "wals": [
@@ -538,7 +615,8 @@
      ],
      "cs": "tři",
      "en": "three",
-     "it": "tre"
+     "it": "tre",
+     "de": "drei"
     },
     {
      "wals": [
@@ -546,7 +624,8 @@
      ],
      "cs": "čtyři",
      "en": "four",
-     "it": "quattro"
+     "it": "quattro",
+     "de": "vier"
     },
     {
      "wals": [
@@ -554,7 +633,8 @@
      ],
      "cs": "pět a více",
      "en": "five or more",
-     "it": "cinque o più"
+     "it": "cinque o più",
+     "de": "fünf oder mehr"
     }
    ]
   },
@@ -565,58 +645,69 @@
    "nazev": {
     "cs": "Počet pádů",
     "en": "Number of cases",
-    "it": "Numero di casi"
+    "it": "Numero di casi",
+    "de": "Anzahl der Kasus"
    },
    "popis": {
     "cs": "Počet pádů vyjadřovaných tvary podstatných jmen (koncovkami, předponami, změnou kmene). Předložky se nepočítají. „Okrajové“ jsou jazyky, kde pádové značení existuje jen v omezené míře.",
     "en": "The number of cases expressed in the forms of nouns (endings, prefixes, stem changes). Adpositions are not counted. 'Borderline' languages have case marking only to a limited extent.",
-    "it": "Il numero di casi espressi nelle forme dei nomi (desinenze, prefissi, mutamenti del tema). Le adposizioni non contano. Le lingue con marcatura “marginale” hanno i casi solo in misura limitata."
+    "it": "Il numero di casi espressi nelle forme dei nomi (desinenze, prefissi, mutamenti del tema). Le adposizioni non contano. Le lingue con marcatura “marginale” hanno i casi solo in misura limitata.",
+    "de": "Die Anzahl der Kasus, die in den Formen der Substantive ausgedrückt werden (Endungen, Präfixe, Stammveränderungen). Adpositionen werden nicht mitgezählt. Sprachen mit „Grenzfällen“ haben eine Kasusmarkierung nur in begrenztem Umfang."
    },
    "hodnoty": {
     "1": {
      "cs": "žádné morfologické pády",
      "en": "No morphological case-marking",
-     "it": "Nessuna marcatura morfologica dei casi"
+     "it": "Nessuna marcatura morfologica dei casi",
+     "de": "Keine morphologische Kasusmarkierung"
     },
     "2": {
      "cs": "2 pády",
      "en": "2 cases",
-     "it": "2 casi"
+     "it": "2 casi",
+     "de": "2 Kasus"
     },
     "3": {
      "cs": "3 pády",
      "en": "3 cases",
-     "it": "3 casi"
+     "it": "3 casi",
+     "de": "3 Kasus"
     },
     "4": {
      "cs": "4 pády",
      "en": "4 cases",
-     "it": "4 casi"
+     "it": "4 casi",
+     "de": "4 Kasus"
     },
     "5": {
      "cs": "5 pádů",
      "en": "5 cases",
-     "it": "5 casi"
+     "it": "5 casi",
+     "de": "5 Kasus"
     },
     "6": {
      "cs": "6–7 pádů",
      "en": "6–7 cases",
-     "it": "6–7 casi"
+     "it": "6–7 casi",
+     "de": "6–7 Kasus"
     },
     "7": {
      "cs": "8–9 pádů",
      "en": "8–9 cases",
-     "it": "8–9 casi"
+     "it": "8–9 casi",
+     "de": "8–9 Kasus"
     },
     "8": {
      "cs": "10 a více pádů",
      "en": "10 or more cases",
-     "it": "10 o più casi"
+     "it": "10 o più casi",
+     "de": "10 oder mehr Kasus"
     },
     "9": {
      "cs": "jen okrajové pádové značení",
      "en": "Exclusively borderline case-marking",
-     "it": "Solo marcatura di caso marginale"
+     "it": "Solo marcatura di caso marginale",
+     "de": "Ausschließlich Grenzfälle der Kasusmarkierung"
     }
    },
    "tridy": [
@@ -626,7 +717,8 @@
      ],
      "cs": "žádné",
      "en": "none",
-     "it": "nessuna"
+     "it": "nessuna",
+     "de": "keine"
     },
     {
      "wals": [
@@ -635,7 +727,8 @@
      ],
      "cs": "2–3",
      "en": "2–3",
-     "it": "2–3"
+     "it": "2–3",
+     "de": "2–3"
     },
     {
      "wals": [
@@ -644,7 +737,8 @@
      ],
      "cs": "4–5",
      "en": "4–5",
-     "it": "4–5"
+     "it": "4–5",
+     "de": "4–5"
     },
     {
      "wals": [
@@ -652,7 +746,8 @@
      ],
      "cs": "6–7",
      "en": "6–7",
-     "it": "6–7"
+     "it": "6–7",
+     "de": "6–7"
     },
     {
      "wals": [
@@ -660,7 +755,8 @@
      ],
      "cs": "8–9",
      "en": "8–9",
-     "it": "8–9"
+     "it": "8–9",
+     "de": "8–9"
     },
     {
      "wals": [
@@ -668,7 +764,8 @@
      ],
      "cs": "10 a více",
      "en": "10 or more",
-     "it": "10 o più"
+     "it": "10 o più",
+     "de": "10 oder mehr"
     },
     {
      "wals": [
@@ -677,6 +774,7 @@
      "cs": "jen okrajové pádové značení",
      "en": "borderline case-marking only",
      "it": "solo marcatura marginale",
+     "de": "nur Grenzfälle der Kasusmarkierung",
      "barva": "jine"
     }
    ]
@@ -688,38 +786,45 @@
    "nazev": {
     "cs": "Určitý člen",
     "en": "Definite articles",
-    "it": "Articoli determinativi"
+    "it": "Articoli determinativi",
+    "de": "Bestimmter Artikel"
    },
    "popis": {
     "cs": "Zda má jazyk určitý člen (jako anglické the) a jakou má podobu: samostatné slovo, ukazovací zájmeno v roli členu, nebo afix (například přípona v rumunštině či ve skandinávských jazycích).",
     "en": "Whether a language has a definite article (like English the) and in what form: a separate word, a demonstrative used as an article, or an affix (such as the suffix in Romanian or the Scandinavian languages).",
-    "it": "Se una lingua ha un articolo determinativo (come l’italiano il) e in quale forma: una parola a sé, un dimostrativo usato come articolo, oppure un affisso (come il suffisso del rumeno o delle lingue scandinave)."
+    "it": "Se una lingua ha un articolo determinativo (come l’italiano il) e in quale forma: una parola a sé, un dimostrativo usato come articolo, oppure un affisso (come il suffisso del rumeno o delle lingue scandinave).",
+    "de": "Ob eine Sprache einen bestimmten Artikel hat (wie englisch the) und in welcher Form: als eigenes Wort, als Demonstrativum in der Funktion eines Artikels oder als Affix (etwa das Suffix im Rumänischen oder in den skandinavischen Sprachen)."
    },
    "hodnoty": {
     "1": {
      "cs": "samostatné slovo odlišné od ukazovacího zájmena",
      "en": "Definite word distinct from demonstrative",
-     "it": "Articolo determinativo distinto dal dimostrativo"
+     "it": "Articolo determinativo distinto dal dimostrativo",
+     "de": "Definites Wort, verschieden vom Demonstrativum"
     },
     "2": {
      "cs": "ukazovací zájmeno ve funkci členu",
      "en": "Demonstrative word used as definite article",
-     "it": "Dimostrativo usato come articolo determinativo"
+     "it": "Dimostrativo usato come articolo determinativo",
+     "de": "Demonstrativum als bestimmter Artikel"
     },
     "3": {
      "cs": "afix",
      "en": "Definite affix",
-     "it": "Affisso determinativo"
+     "it": "Affisso determinativo",
+     "de": "Definitaffix"
     },
     "4": {
      "cs": "jen neurčitý člen",
      "en": "No definite, but indefinite article",
-     "it": "Nessun articolo determinativo, ma uno indeterminativo"
+     "it": "Nessun articolo determinativo, ma uno indeterminativo",
+     "de": "Kein bestimmter, aber ein unbestimmter Artikel"
     },
     "5": {
      "cs": "bez členů",
      "en": "No definite or indefinite article",
-     "it": "Nessun articolo, né determinativo né indeterminativo"
+     "it": "Nessun articolo, né determinativo né indeterminativo",
+     "de": "Weder bestimmter noch unbestimmter Artikel"
     }
    },
    "tridy": [
@@ -729,7 +834,8 @@
      ],
      "cs": "samostatné slovo",
      "en": "separate word",
-     "it": "parola a sé"
+     "it": "parola a sé",
+     "de": "eigenes Wort"
     },
     {
      "wals": [
@@ -737,7 +843,8 @@
      ],
      "cs": "ukazovací zájmeno jako člen",
      "en": "demonstrative used as article",
-     "it": "dimostrativo usato come articolo"
+     "it": "dimostrativo usato come articolo",
+     "de": "Demonstrativum als Artikel"
     },
     {
      "wals": [
@@ -745,7 +852,8 @@
      ],
      "cs": "afix",
      "en": "affix",
-     "it": "affisso"
+     "it": "affisso",
+     "de": "Affix"
     },
     {
      "wals": [
@@ -753,7 +861,8 @@
      ],
      "cs": "jen neurčitý člen",
      "en": "indefinite article only",
-     "it": "solo articolo indeterminativo"
+     "it": "solo articolo indeterminativo",
+     "de": "nur unbestimmter Artikel"
     },
     {
      "wals": [
@@ -762,6 +871,7 @@
      "cs": "bez členů",
      "en": "no articles",
      "it": "nessun articolo",
+     "de": "keine Artikel",
      "barva": "jine"
     }
    ]
@@ -773,38 +883,45 @@
    "nazev": {
     "cs": "Neurčitý člen",
     "en": "Indefinite articles",
-    "it": "Articoli indeterminativi"
+    "it": "Articoli indeterminativi",
+    "de": "Unbestimmter Artikel"
    },
    "popis": {
     "cs": "Zda má jazyk neurčitý člen (jako anglické a) a zda je shodný s číslovkou „jeden“.",
     "en": "Whether a language has an indefinite article (like English a) and whether it is the same as the numeral 'one'.",
-    "it": "Se una lingua ha un articolo indeterminativo (come l’italiano un) e se coincide con il numerale “uno”."
+    "it": "Se una lingua ha un articolo indeterminativo (come l’italiano un) e se coincide con il numerale “uno”.",
+    "de": "Ob eine Sprache einen unbestimmten Artikel hat (wie englisch a) und ob er mit dem Zahlwort ‚eins‘ identisch ist."
    },
    "hodnoty": {
     "1": {
      "cs": "samostatné slovo odlišné od číslovky „jeden“",
      "en": "Indefinite word distinct from 'one'",
-     "it": "Articolo indeterminativo distinto da “uno”"
+     "it": "Articolo indeterminativo distinto da “uno”",
+     "de": "Indefinites Wort, verschieden von ‚eins‘"
     },
     "2": {
      "cs": "stejné slovo jako „jeden“",
      "en": "Indefinite word same as 'one'",
-     "it": "Articolo indeterminativo uguale a “uno”"
+     "it": "Articolo indeterminativo uguale a “uno”",
+     "de": "Indefinites Wort identisch mit ‚eins‘"
     },
     "3": {
      "cs": "afix",
      "en": "Indefinite affix",
-     "it": "Affisso indeterminativo"
+     "it": "Affisso indeterminativo",
+     "de": "Indefinitaffix"
     },
     "4": {
      "cs": "jen určitý člen",
      "en": "No indefinite, but definite article",
-     "it": "Nessun articolo indeterminativo, ma uno determinativo"
+     "it": "Nessun articolo indeterminativo, ma uno determinativo",
+     "de": "Kein unbestimmter, aber ein bestimmter Artikel"
     },
     "5": {
      "cs": "bez členů",
      "en": "No definite or indefinite article",
-     "it": "Nessun articolo, né determinativo né indeterminativo"
+     "it": "Nessun articolo, né determinativo né indeterminativo",
+     "de": "Weder bestimmter noch unbestimmter Artikel"
     }
    },
    "tridy": [
@@ -814,7 +931,8 @@
      ],
      "cs": "odlišné od „jeden“",
      "en": "distinct from 'one'",
-     "it": "distinto da “uno”"
+     "it": "distinto da “uno”",
+     "de": "verschieden von ‚eins‘"
     },
     {
      "wals": [
@@ -822,7 +940,8 @@
      ],
      "cs": "stejné jako „jeden“",
      "en": "same as 'one'",
-     "it": "uguale a “uno”"
+     "it": "uguale a “uno”",
+     "de": "identisch mit ‚eins‘"
     },
     {
      "wals": [
@@ -830,7 +949,8 @@
      ],
      "cs": "afix",
      "en": "affix",
-     "it": "affisso"
+     "it": "affisso",
+     "de": "Affix"
     },
     {
      "wals": [
@@ -838,7 +958,8 @@
      ],
      "cs": "jen určitý člen",
      "en": "definite article only",
-     "it": "solo articolo determinativo"
+     "it": "solo articolo determinativo",
+     "de": "nur bestimmter Artikel"
     },
     {
      "wals": [
@@ -847,6 +968,7 @@
      "cs": "bez členů",
      "en": "no articles",
      "it": "nessun articolo",
+     "de": "keine Artikel",
      "barva": "jine"
     }
    ]
@@ -858,48 +980,57 @@
    "nazev": {
     "cs": "Pořadí podmětu, předmětu a slovesa",
     "en": "Order of subject, object and verb",
-    "it": "Ordine di soggetto, oggetto e verbo"
+    "it": "Ordine di soggetto, oggetto e verbo",
+    "de": "Abfolge von Subjekt, Objekt und Verb"
    },
    "popis": {
     "cs": "Převládající pořadí podmětu (S), předmětu (O) a slovesa (V) v oznamovací větě s plnými jmennými frázemi. Čeština je podle WALS SVO. Pořadí se slovesem na začátku (VSO, VOS) a s předmětem na začátku (OVS, OSV) jsou zde sloučená.",
     "en": "The dominant order of subject (S), object (O) and verb (V) in declarative clauses with full noun phrases. Czech is SVO according to WALS. Verb-initial (VSO, VOS) and object-initial (OVS, OSV) orders are merged here.",
-    "it": "L’ordine dominante di soggetto (S), oggetto (O) e verbo (V) nelle frasi dichiarative con sintagmi nominali pieni. L’italiano è SVO secondo il WALS. Gli ordini con verbo iniziale (VSO, VOS) e con oggetto iniziale (OVS, OSV) sono qui uniti."
+    "it": "L’ordine dominante di soggetto (S), oggetto (O) e verbo (V) nelle frasi dichiarative con sintagmi nominali pieni. L’italiano è SVO secondo il WALS. Gli ordini con verbo iniziale (VSO, VOS) e con oggetto iniziale (OVS, OSV) sono qui uniti.",
+    "de": "Die dominante Abfolge von Subjekt (S), Objekt (O) und Verb (V) in Aussagesätzen mit vollen Nominalphrasen. Das Tschechische ist nach WALS SVO. Verbinitiale (VSO, VOS) und objektinitiale (OVS, OSV) Abfolgen sind hier zusammengefasst."
    },
    "hodnoty": {
     "1": {
      "cs": "SOV",
      "en": "SOV",
-     "it": "SOV"
+     "it": "SOV",
+     "de": "SOV"
     },
     "2": {
      "cs": "SVO",
      "en": "SVO",
-     "it": "SVO"
+     "it": "SVO",
+     "de": "SVO"
     },
     "3": {
      "cs": "VSO",
      "en": "VSO",
-     "it": "VSO"
+     "it": "VSO",
+     "de": "VSO"
     },
     "4": {
      "cs": "VOS",
      "en": "VOS",
-     "it": "VOS"
+     "it": "VOS",
+     "de": "VOS"
     },
     "5": {
      "cs": "OVS",
      "en": "OVS",
-     "it": "OVS"
+     "it": "OVS",
+     "de": "OVS"
     },
     "6": {
      "cs": "OSV",
      "en": "OSV",
-     "it": "OSV"
+     "it": "OSV",
+     "de": "OSV"
     },
     "7": {
      "cs": "bez převládajícího pořadí",
      "en": "No dominant order",
-     "it": "Nessun ordine dominante"
+     "it": "Nessun ordine dominante",
+     "de": "Keine dominante Abfolge"
     }
    },
    "tridy": [
@@ -909,7 +1040,8 @@
      ],
      "cs": "SOV",
      "en": "SOV",
-     "it": "SOV"
+     "it": "SOV",
+     "de": "SOV"
     },
     {
      "wals": [
@@ -917,7 +1049,8 @@
      ],
      "cs": "SVO",
      "en": "SVO",
-     "it": "SVO"
+     "it": "SVO",
+     "de": "SVO"
     },
     {
      "wals": [
@@ -926,7 +1059,8 @@
      ],
      "cs": "sloveso na začátku (VSO, VOS)",
      "en": "verb-initial (VSO, VOS)",
-     "it": "verbo iniziale (VSO, VOS)"
+     "it": "verbo iniziale (VSO, VOS)",
+     "de": "verbinitial (VSO, VOS)"
     },
     {
      "wals": [
@@ -935,7 +1069,8 @@
      ],
      "cs": "předmět na začátku (OVS, OSV)",
      "en": "object-initial (OVS, OSV)",
-     "it": "oggetto iniziale (OVS, OSV)"
+     "it": "oggetto iniziale (OVS, OSV)",
+     "de": "objektinitial (OVS, OSV)"
     },
     {
      "wals": [
@@ -944,6 +1079,7 @@
      "cs": "bez převládajícího pořadí",
      "en": "no dominant order",
      "it": "nessun ordine dominante",
+     "de": "keine dominante Abfolge",
      "barva": "jine"
     }
    ]
@@ -955,28 +1091,33 @@
    "nazev": {
     "cs": "Pořadí předmětu a slovesa",
     "en": "Order of object and verb",
-    "it": "Ordine di oggetto e verbo"
+    "it": "Ordine di oggetto e verbo",
+    "de": "Abfolge von Objekt und Verb"
    },
    "popis": {
     "cs": "Zda předmět převážně stojí před slovesem (OV), nebo za ním (VO). Patří k nejdůležitějším slovosledným parametrům, s nímž souvisí řada dalších.",
     "en": "Whether the object mainly precedes the verb (OV) or follows it (VO). One of the most important word-order parameters, correlating with many others.",
-    "it": "Se l’oggetto precede di solito il verbo (OV) o lo segue (VO). È uno dei parametri più importanti dell’ordine delle parole e si correla con molti altri."
+    "it": "Se l’oggetto precede di solito il verbo (OV) o lo segue (VO). È uno dei parametri più importanti dell’ordine delle parole e si correla con molti altri.",
+    "de": "Ob das Objekt dem Verb überwiegend vorausgeht (OV) oder folgt (VO). Einer der wichtigsten Wortstellungsparameter, der mit vielen anderen korreliert."
    },
    "hodnoty": {
     "1": {
      "cs": "OV",
      "en": "OV",
-     "it": "OV"
+     "it": "OV",
+     "de": "OV"
     },
     "2": {
      "cs": "VO",
      "en": "VO",
-     "it": "VO"
+     "it": "VO",
+     "de": "VO"
     },
     "3": {
      "cs": "bez převládajícího pořadí",
      "en": "No dominant order",
-     "it": "Nessun ordine dominante"
+     "it": "Nessun ordine dominante",
+     "de": "Keine dominante Abfolge"
     }
    },
    "tridy": [
@@ -986,7 +1127,8 @@
      ],
      "cs": "OV",
      "en": "OV",
-     "it": "OV"
+     "it": "OV",
+     "de": "OV"
     },
     {
      "wals": [
@@ -994,7 +1136,8 @@
      ],
      "cs": "VO",
      "en": "VO",
-     "it": "VO"
+     "it": "VO",
+     "de": "VO"
     },
     {
      "wals": [
@@ -1003,6 +1146,7 @@
      "cs": "bez převládajícího pořadí",
      "en": "no dominant order",
      "it": "nessun ordine dominante",
+     "de": "keine dominante Abfolge",
      "barva": "jine"
     }
    ]
@@ -1014,38 +1158,45 @@
    "nazev": {
     "cs": "Předložky a záložky",
     "en": "Order of adposition and noun phrase",
-    "it": "Ordine di adposizione e sintagma nominale"
+    "it": "Ordine di adposizione e sintagma nominale",
+    "de": "Abfolge von Adposition und Nominalphrase"
    },
    "popis": {
     "cs": "Zda jazyk užívá předložky (před jménem, „v domě“), nebo záložky (za jménem, turecké ev için „dům pro“). Vnitřní adpozice (uvnitř jmenné fráze) jsou vzácné a patří zde k „jiným“.",
     "en": "Whether a language uses prepositions (before the noun, 'in the house') or postpositions (after it, Turkish ev için 'house for'). Inpositions (inside the noun phrase) are rare and grouped here with 'other'.",
-    "it": "Se una lingua usa preposizioni (prima del nome, “in casa”) o posposizioni (dopo il nome, turco ev için “casa per”). Le inposizioni (dentro il sintagma nominale) sono rare e qui sono raggruppate con “altro”."
+    "it": "Se una lingua usa preposizioni (prima del nome, “in casa”) o posposizioni (dopo il nome, turco ev için “casa per”). Le inposizioni (dentro il sintagma nominale) sono rare e qui sono raggruppate con “altro”.",
+    "de": "Ob eine Sprache Präpositionen (vor dem Nomen, „im Haus“) oder Postpositionen (danach, türkisch ev için ‚Haus für‘) verwendet. Inpositionen (innerhalb der Nominalphrase) sind selten und werden hier unter „andere“ eingeordnet."
    },
    "hodnoty": {
     "1": {
      "cs": "záložky (postpozice)",
      "en": "Postpositions",
-     "it": "Posposizioni"
+     "it": "Posposizioni",
+     "de": "Postpositionen"
     },
     "2": {
      "cs": "předložky (prepozice)",
      "en": "Prepositions",
-     "it": "Preposizioni"
+     "it": "Preposizioni",
+     "de": "Präpositionen"
     },
     "3": {
      "cs": "vnitřní adpozice",
      "en": "Inpositions",
-     "it": "Inposizioni"
+     "it": "Inposizioni",
+     "de": "Inpositionen"
     },
     "4": {
      "cs": "bez převládajícího pořadí",
      "en": "No dominant order",
-     "it": "Nessun ordine dominante"
+     "it": "Nessun ordine dominante",
+     "de": "Keine dominante Abfolge"
     },
     "5": {
      "cs": "bez adpozic",
      "en": "No adpositions",
-     "it": "Nessuna adposizione"
+     "it": "Nessuna adposizione",
+     "de": "Keine Adpositionen"
     }
    },
    "tridy": [
@@ -1055,7 +1206,8 @@
      ],
      "cs": "záložky",
      "en": "postpositions",
-     "it": "posposizioni"
+     "it": "posposizioni",
+     "de": "Postpositionen"
     },
     {
      "wals": [
@@ -1063,7 +1215,8 @@
      ],
      "cs": "předložky",
      "en": "prepositions",
-     "it": "preposizioni"
+     "it": "preposizioni",
+     "de": "Präpositionen"
     },
     {
      "wals": [
@@ -1071,7 +1224,8 @@
      ],
      "cs": "bez adpozic",
      "en": "no adpositions",
-     "it": "nessuna adposizione"
+     "it": "nessuna adposizione",
+     "de": "keine Adpositionen"
     },
     {
      "wals": [
@@ -1081,6 +1235,7 @@
      "cs": "jiné (vnitřní, bez převládajícího pořadí)",
      "en": "other (inpositions, no dominant order)",
      "it": "altro (inposizioni, nessun ordine dominante)",
+     "de": "andere (Inpositionen, keine dominante Abfolge)",
      "barva": "jine"
     }
    ]
@@ -1092,28 +1247,33 @@
    "nazev": {
     "cs": "Pořadí genitivu a jména",
     "en": "Order of genitive and noun",
-    "it": "Ordine di genitivo e nome"
+    "it": "Ordine di genitivo e nome",
+    "de": "Abfolge von Genitiv und Nomen"
    },
    "popis": {
     "cs": "Zda přivlastňovací (genitivní) člen stojí před řídícím jménem („Petrův dům“, angl. John's house), nebo za ním („dům Petra“).",
     "en": "Whether the possessor (genitive) precedes the head noun (John's house) or follows it (the house of John).",
-    "it": "Se il possessore (genitivo) precede il nome reggente (inglese John’s house) o lo segue (la casa di Giovanni)."
+    "it": "Se il possessore (genitivo) precede il nome reggente (inglese John’s house) o lo segue (la casa di Giovanni).",
+    "de": "Ob der Possessor (Genitiv) dem Bezugsnomen vorausgeht (englisch John's house) oder ihm folgt (englisch the house of John)."
    },
    "hodnoty": {
     "1": {
      "cs": "genitiv – jméno",
      "en": "Genitive–Noun",
-     "it": "Genitivo–Nome"
+     "it": "Genitivo–Nome",
+     "de": "Genitiv–Nomen"
     },
     "2": {
      "cs": "jméno – genitiv",
      "en": "Noun–Genitive",
-     "it": "Nome–Genitivo"
+     "it": "Nome–Genitivo",
+     "de": "Nomen–Genitiv"
     },
     "3": {
      "cs": "bez převládajícího pořadí",
      "en": "No dominant order",
-     "it": "Nessun ordine dominante"
+     "it": "Nessun ordine dominante",
+     "de": "Keine dominante Abfolge"
     }
    },
    "tridy": [
@@ -1123,7 +1283,8 @@
      ],
      "cs": "genitiv – jméno",
      "en": "genitive–noun",
-     "it": "genitivo–nome"
+     "it": "genitivo–nome",
+     "de": "Genitiv–Nomen"
     },
     {
      "wals": [
@@ -1131,7 +1292,8 @@
      ],
      "cs": "jméno – genitiv",
      "en": "noun–genitive",
-     "it": "nome–genitivo"
+     "it": "nome–genitivo",
+     "de": "Nomen–Genitiv"
     },
     {
      "wals": [
@@ -1140,6 +1302,7 @@
      "cs": "bez převládajícího pořadí",
      "en": "no dominant order",
      "it": "nessun ordine dominante",
+     "de": "keine dominante Abfolge",
      "barva": "jine"
     }
    ]
@@ -1151,33 +1314,39 @@
    "nazev": {
     "cs": "Pořadí přídavného jména a jména",
     "en": "Order of adjective and noun",
-    "it": "Ordine di aggettivo e nome"
+    "it": "Ordine di aggettivo e nome",
+    "de": "Abfolge von Adjektiv und Nomen"
    },
    "popis": {
     "cs": "Zda přívlastkové přídavné jméno převážně stojí před jménem („velký dům“), nebo za ním (franc. maison blanche).",
     "en": "Whether an attributive adjective mainly precedes the noun (big house) or follows it (French maison blanche).",
-    "it": "Se un aggettivo attributivo precede di solito il nome (inglese big house) o lo segue (casa bianca)."
+    "it": "Se un aggettivo attributivo precede di solito il nome (inglese big house) o lo segue (casa bianca).",
+    "de": "Ob ein attributives Adjektiv dem Nomen überwiegend vorausgeht (großes Haus) oder folgt (französisch maison blanche)."
    },
    "hodnoty": {
     "1": {
      "cs": "přídavné jméno – jméno",
      "en": "Adjective–Noun",
-     "it": "Aggettivo–Nome"
+     "it": "Aggettivo–Nome",
+     "de": "Adjektiv–Nomen"
     },
     "2": {
      "cs": "jméno – přídavné jméno",
      "en": "Noun–Adjective",
-     "it": "Nome–Aggettivo"
+     "it": "Nome–Aggettivo",
+     "de": "Nomen–Adjektiv"
     },
     "3": {
      "cs": "bez převládajícího pořadí",
      "en": "No dominant order",
-     "it": "Nessun ordine dominante"
+     "it": "Nessun ordine dominante",
+     "de": "Keine dominante Abfolge"
     },
     "4": {
      "cs": "jen vnitřně řízené vztažné věty",
      "en": "Only internally-headed relative clauses",
-     "it": "Solo relative a testa interna"
+     "it": "Solo relative a testa interna",
+     "de": "Nur Relativsätze mit internem Kopf"
     }
    },
    "tridy": [
@@ -1187,7 +1356,8 @@
      ],
      "cs": "přídavné jméno – jméno",
      "en": "adjective–noun",
-     "it": "aggettivo–nome"
+     "it": "aggettivo–nome",
+     "de": "Adjektiv–Nomen"
     },
     {
      "wals": [
@@ -1195,7 +1365,8 @@
      ],
      "cs": "jméno – přídavné jméno",
      "en": "noun–adjective",
-     "it": "nome–aggettivo"
+     "it": "nome–aggettivo",
+     "de": "Nomen–Adjektiv"
     },
     {
      "wals": [
@@ -1205,6 +1376,7 @@
      "cs": "jiné (bez převládajícího pořadí)",
      "en": "other (no dominant order)",
      "it": "altro (nessun ordine dominante)",
+     "de": "andere (keine dominante Abfolge)",
      "barva": "jine"
     }
    ]
@@ -1216,43 +1388,51 @@
    "nazev": {
     "cs": "Pořadí ukazovacího zájmena a jména",
     "en": "Order of demonstrative and noun",
-    "it": "Ordine di dimostrativo e nome"
+    "it": "Ordine di dimostrativo e nome",
+    "de": "Abfolge von Demonstrativum und Nomen"
    },
    "popis": {
     "cs": "Zda ukazovací zájmeno stojí před jménem („ten dům“), za ním, nebo je afixem připojeným ke jménu.",
     "en": "Whether the demonstrative precedes the noun (that house), follows it, or is an affix attached to the noun.",
-    "it": "Se il dimostrativo precede il nome (quella casa), lo segue o è un affisso unito al nome."
+    "it": "Se il dimostrativo precede il nome (quella casa), lo segue o è un affisso unito al nome.",
+    "de": "Ob das Demonstrativum dem Nomen vorausgeht (jenes Haus), ihm folgt oder ein an das Nomen angefügtes Affix ist."
    },
    "hodnoty": {
     "1": {
      "cs": "ukazovací zájmeno – jméno",
      "en": "Demonstrative–Noun",
-     "it": "Dimostrativo–Nome"
+     "it": "Dimostrativo–Nome",
+     "de": "Demonstrativum–Nomen"
     },
     "2": {
      "cs": "jméno – ukazovací zájmeno",
      "en": "Noun–Demonstrative",
-     "it": "Nome–Dimostrativo"
+     "it": "Nome–Dimostrativo",
+     "de": "Nomen–Demonstrativum"
     },
     "3": {
      "cs": "ukazovací předpona",
      "en": "Demonstrative prefix",
-     "it": "Prefisso dimostrativo"
+     "it": "Prefisso dimostrativo",
+     "de": "Demonstrativpräfix"
     },
     "4": {
      "cs": "ukazovací přípona",
      "en": "Demonstrative suffix",
-     "it": "Suffisso dimostrativo"
+     "it": "Suffisso dimostrativo",
+     "de": "Demonstrativsuffix"
     },
     "5": {
      "cs": "před i za jménem",
      "en": "Demonstrative before and after noun",
-     "it": "Dimostrativo prima e dopo il nome"
+     "it": "Dimostrativo prima e dopo il nome",
+     "de": "Demonstrativum vor und nach dem Nomen"
     },
     "6": {
      "cs": "smíšené",
      "en": "Mixed",
-     "it": "Misto"
+     "it": "Misto",
+     "de": "Gemischt"
     }
    },
    "tridy": [
@@ -1262,7 +1442,8 @@
      ],
      "cs": "před jménem",
      "en": "before the noun",
-     "it": "prima del nome"
+     "it": "prima del nome",
+     "de": "vor dem Nomen"
     },
     {
      "wals": [
@@ -1270,7 +1451,8 @@
      ],
      "cs": "za jménem",
      "en": "after the noun",
-     "it": "dopo il nome"
+     "it": "dopo il nome",
+     "de": "nach dem Nomen"
     },
     {
      "wals": [
@@ -1279,7 +1461,8 @@
      ],
      "cs": "afix (předpona, přípona)",
      "en": "affix (prefix, suffix)",
-     "it": "affisso (prefisso, suffisso)"
+     "it": "affisso (prefisso, suffisso)",
+     "de": "Affix (Präfix, Suffix)"
     },
     {
      "wals": [
@@ -1289,6 +1472,7 @@
      "cs": "jiné (před i za jménem, smíšené)",
      "en": "other (both sides, mixed)",
      "it": "altro (da entrambi i lati, misto)",
+     "de": "andere (beidseitig, gemischt)",
      "barva": "jine"
     }
    ]
@@ -1300,43 +1484,51 @@
    "nazev": {
     "cs": "Zarovnání pádového značení",
     "en": "Alignment of case marking of full noun phrases",
-    "it": "Allineamento della marcatura dei casi dei sintagmi nominali pieni"
+    "it": "Allineamento della marcatura dei casi dei sintagmi nominali pieni",
+    "de": "Alignment der Kasusmarkierung voller Nominalphrasen"
    },
    "popis": {
     "cs": "Jak pádové tvary plných jmenných frází odlišují podmět nepřechodného slovesa (S), činitele (A) a zasažený předmět (P) přechodného slovesa. Nominativ–akuzativ: S = A ≠ P (čeština). Ergativ–absolutiv: S = P ≠ A (např. lezginština). Tripartitní: všechny tři odlišné. Aktivní–inaktivní: podmět se značí podle toho, zda děj ovládá (WALS sem řadí baskičtinu a gruzínštinu). Neutrální: bez rozlišení.",
     "en": "How the case forms of full noun phrases distinguish the single argument of an intransitive verb (S) from the agent (A) and patient (P) of a transitive verb. Nominative–accusative: S = A ≠ P. Ergative–absolutive: S = P ≠ A (e.g. Lezgian). Tripartite: all three differ. Active–inactive: marking depends on control (WALS places Basque and Georgian here). Neutral: no distinction.",
-    "it": "Come le forme casuali dei sintagmi nominali pieni distinguono l’unico argomento di un verbo intransitivo (S) dall’agente (A) e dal paziente (P) di un verbo transitivo. Nominativo–accusativo: S = A ≠ P. Ergativo–assolutivo: S = P ≠ A (ad es. lezgo). Tripartito: tutti e tre diversi. Attivo–inattivo: la marcatura dipende dal controllo (il WALS vi colloca il basco e il georgiano). Neutro: nessuna distinzione."
+    "it": "Come le forme casuali dei sintagmi nominali pieni distinguono l’unico argomento di un verbo intransitivo (S) dall’agente (A) e dal paziente (P) di un verbo transitivo. Nominativo–accusativo: S = A ≠ P. Ergativo–assolutivo: S = P ≠ A (ad es. lezgo). Tripartito: tutti e tre diversi. Attivo–inattivo: la marcatura dipende dal controllo (il WALS vi colloca il basco e il georgiano). Neutro: nessuna distinzione.",
+    "de": "Wie die Kasusformen voller Nominalphrasen das einzige Argument eines intransitiven Verbs (S) vom Agens (A) und Patiens (P) eines transitiven Verbs unterscheiden. Nominativ–Akkusativ: S = A ≠ P. Ergativ–Absolutiv: S = P ≠ A (z. B. Lesgisch). Tripartit: alle drei verschieden. Aktiv–Inaktiv: Die Markierung hängt von der Kontrolle ab (WALS ordnet hier das Baskische und das Georgische ein). Neutral: keine Unterscheidung."
    },
    "hodnoty": {
     "1": {
      "cs": "neutrální",
      "en": "Neutral",
-     "it": "Neutro"
+     "it": "Neutro",
+     "de": "Neutral"
     },
     "2": {
      "cs": "nominativ – akuzativ (standardní)",
      "en": "Nominative–accusative (standard)",
-     "it": "Nominativo–accusativo (standard)"
+     "it": "Nominativo–accusativo (standard)",
+     "de": "Nominativ–Akkusativ (Standard)"
     },
     "3": {
      "cs": "nominativ – akuzativ (se značeným nominativem)",
      "en": "Nominative–accusative (marked nominative)",
-     "it": "Nominativo–accusativo (nominativo marcato)"
+     "it": "Nominativo–accusativo (nominativo marcato)",
+     "de": "Nominativ–Akkusativ (markierter Nominativ)"
     },
     "4": {
      "cs": "ergativ – absolutiv",
      "en": "Ergative–absolutive",
-     "it": "Ergativo–assolutivo"
+     "it": "Ergativo–assolutivo",
+     "de": "Ergativ–Absolutiv"
     },
     "5": {
      "cs": "tripartitní",
      "en": "Tripartite",
-     "it": "Tripartito"
+     "it": "Tripartito",
+     "de": "Tripartit"
     },
     "6": {
      "cs": "aktivní – inaktivní",
      "en": "Active–inactive",
-     "it": "Attivo–inattivo"
+     "it": "Attivo–inattivo",
+     "de": "Aktiv–Inaktiv"
     }
    },
    "tridy": [
@@ -1347,7 +1539,8 @@
      ],
      "cs": "nominativ – akuzativ",
      "en": "nominative–accusative",
-     "it": "nominativo–accusativo"
+     "it": "nominativo–accusativo",
+     "de": "Nominativ–Akkusativ"
     },
     {
      "wals": [
@@ -1355,7 +1548,8 @@
      ],
      "cs": "ergativ – absolutiv",
      "en": "ergative–absolutive",
-     "it": "ergativo–assolutivo"
+     "it": "ergativo–assolutivo",
+     "de": "Ergativ–Absolutiv"
     },
     {
      "wals": [
@@ -1363,7 +1557,8 @@
      ],
      "cs": "tripartitní",
      "en": "tripartite",
-     "it": "tripartito"
+     "it": "tripartito",
+     "de": "tripartit"
     },
     {
      "wals": [
@@ -1371,7 +1566,8 @@
      ],
      "cs": "aktivní – inaktivní",
      "en": "active–inactive",
-     "it": "attivo–inattivo"
+     "it": "attivo–inattivo",
+     "de": "Aktiv–Inaktiv"
     },
     {
      "wals": [
@@ -1380,6 +1576,7 @@
      "cs": "neutrální (bez rozlišení)",
      "en": "neutral (no distinction)",
      "it": "neutro (nessuna distinzione)",
+     "de": "neutral (keine Unterscheidung)",
      "barva": "jine"
     }
    ]
@@ -1391,43 +1588,51 @@
    "nazev": {
     "cs": "Vyjádření záporu",
     "en": "Negative morphemes",
-    "it": "Morfemi negativi"
+    "it": "Morfemi negativi",
+    "de": "Negationsmorpheme"
    },
    "popis": {
     "cs": "Jakým prostředkem jazyk tvoří zápor věty: afixem na slovese („ne-jdu“), zápornou částicí (angl. not), záporným pomocným slovesem (finština), nebo dvěma zápornými prvky zároveň.",
     "en": "How a language negates a clause: with an affix on the verb, a negative particle (English not), a negative auxiliary verb (Finnish), or two negative elements at once.",
-    "it": "Come una lingua nega una frase: con un affisso sul verbo, una particella negativa (italiano non), un verbo ausiliare negativo (finlandese) o due elementi negativi insieme."
+    "it": "Come una lingua nega una frase: con un affisso sul verbo, una particella negativa (italiano non), un verbo ausiliare negativo (finlandese) o due elementi negativi insieme.",
+    "de": "Wie eine Sprache einen Satz verneint: mit einem Affix am Verb, einer Negationspartikel (englisch not), einem negativen Hilfsverb (Finnisch) oder mit zwei Negationselementen zugleich."
    },
    "hodnoty": {
     "1": {
      "cs": "záporný afix",
      "en": "Negative affix",
-     "it": "Affisso negativo"
+     "it": "Affisso negativo",
+     "de": "Negationsaffix"
     },
     "2": {
      "cs": "záporná částice",
      "en": "Negative particle",
-     "it": "Particella negativa"
+     "it": "Particella negativa",
+     "de": "Negationspartikel"
     },
     "3": {
      "cs": "záporné pomocné sloveso",
      "en": "Negative auxiliary verb",
-     "it": "Verbo ausiliare negativo"
+     "it": "Verbo ausiliare negativo",
+     "de": "Negatives Hilfsverb"
     },
     "4": {
      "cs": "záporné slovo nejasné povahy",
      "en": "Negative word, unclear if verb or particle",
-     "it": "Parola negativa, non è chiaro se verbo o particella"
+     "it": "Parola negativa, non è chiaro se verbo o particella",
+     "de": "Negationswort, unklar, ob Verb oder Partikel"
     },
     "5": {
      "cs": "střídání záporného slova a afixu",
      "en": "Variation between negative word and affix",
-     "it": "Alternanza tra parola negativa e affisso"
+     "it": "Alternanza tra parola negativa e affisso",
+     "de": "Variation zwischen Negationswort und -affix"
     },
     "6": {
      "cs": "dvojí zápor",
      "en": "Double negation",
-     "it": "Doppia negazione"
+     "it": "Doppia negazione",
+     "de": "Doppelte Negation"
     }
    },
    "tridy": [
@@ -1437,7 +1642,8 @@
      ],
      "cs": "afix",
      "en": "affix",
-     "it": "affisso"
+     "it": "affisso",
+     "de": "Affix"
     },
     {
      "wals": [
@@ -1445,7 +1651,8 @@
      ],
      "cs": "částice",
      "en": "particle",
-     "it": "particella"
+     "it": "particella",
+     "de": "Partikel"
     },
     {
      "wals": [
@@ -1453,7 +1660,8 @@
      ],
      "cs": "pomocné sloveso",
      "en": "auxiliary verb",
-     "it": "verbo ausiliare"
+     "it": "verbo ausiliare",
+     "de": "Hilfsverb"
     },
     {
      "wals": [
@@ -1461,7 +1669,8 @@
      ],
      "cs": "dvojí zápor",
      "en": "double negation",
-     "it": "doppia negazione"
+     "it": "doppia negazione",
+     "de": "doppelte Negation"
     },
     {
      "wals": [
@@ -1471,6 +1680,7 @@
      "cs": "jiné (nejasné, střídání)",
      "en": "other (unclear, variation)",
      "it": "altro (non chiaro, alternanza)",
+     "de": "andere (unklar, Variation)",
      "barva": "jine"
     }
    ]
@@ -1482,48 +1692,57 @@
    "nazev": {
     "cs": "Zjišťovací otázky",
     "en": "Polar questions",
-    "it": "Domande polari"
+    "it": "Domande polari",
+    "de": "Entscheidungsfragen"
    },
    "popis": {
     "cs": "Jak jazyk odlišuje otázku typu ano/ne od oznamovací věty: tázací částicí (pol. czy), tvarem slovesa, změnou slovosledu (podle WALS čeština a němčina: Kommst du?), nebo jen intonací (rumunština).",
     "en": "How a language distinguishes yes/no questions from statements: with a question particle (Polish czy), verb morphology, a change of word order (German Kommst du?; WALS classes Czech here too), or intonation only (Romanian).",
-    "it": "Come una lingua distingue le domande sì/no dalle affermazioni: con una particella interrogativa (polacco czy), con la morfologia del verbo, con un cambiamento dell’ordine delle parole (tedesco Kommst du?; il WALS vi colloca anche il ceco) o con la sola intonazione (rumeno, italiano)."
+    "it": "Come una lingua distingue le domande sì/no dalle affermazioni: con una particella interrogativa (polacco czy), con la morfologia del verbo, con un cambiamento dell’ordine delle parole (tedesco Kommst du?; il WALS vi colloca anche il ceco) o con la sola intonazione (rumeno, italiano).",
+    "de": "Wie eine Sprache Ja/Nein-Fragen von Aussagesätzen unterscheidet: mit einer Fragepartikel (polnisch czy), durch Verbmorphologie, durch eine Änderung der Wortstellung (deutsch Kommst du?; WALS ordnet auch das Tschechische hier ein) oder allein durch die Intonation (Rumänisch)."
    },
    "hodnoty": {
     "1": {
      "cs": "tázací částice",
      "en": "Question particle",
-     "it": "Particella interrogativa"
+     "it": "Particella interrogativa",
+     "de": "Fragepartikel"
     },
     "2": {
      "cs": "tázací tvar slovesa",
      "en": "Interrogative verb morphology",
-     "it": "Morfologia verbale interrogativa"
+     "it": "Morfologia verbale interrogativa",
+     "de": "Interrogative Verbmorphologie"
     },
     "3": {
      "cs": "částice i tvar slovesa",
      "en": "Mixture of previous two types",
-     "it": "Combinazione dei due tipi precedenti"
+     "it": "Combinazione dei due tipi precedenti",
+     "de": "Mischung der beiden vorigen Typen"
     },
     "4": {
      "cs": "slovosled",
      "en": "Interrogative word order",
-     "it": "Ordine delle parole interrogativo"
+     "it": "Ordine delle parole interrogativo",
+     "de": "Interrogative Wortstellung"
     },
     "5": {
      "cs": "absence oznamovacích morfémů",
      "en": "Absence of declarative morphemes",
-     "it": "Assenza di morfemi dichiarativi"
+     "it": "Assenza di morfemi dichiarativi",
+     "de": "Fehlen deklarativer Morpheme"
     },
     "6": {
      "cs": "jen intonace",
      "en": "Interrogative intonation only",
-     "it": "Solo intonazione interrogativa"
+     "it": "Solo intonazione interrogativa",
+     "de": "Nur Frageintonation"
     },
     "7": {
      "cs": "bez rozlišení",
      "en": "No interrogative-declarative distinction",
-     "it": "Nessuna distinzione tra interrogativa e dichiarativa"
+     "it": "Nessuna distinzione tra interrogativa e dichiarativa",
+     "de": "Keine Unterscheidung zwischen Frage und Aussage"
     }
    },
    "tridy": [
@@ -1533,7 +1752,8 @@
      ],
      "cs": "částice",
      "en": "particle",
-     "it": "particella"
+     "it": "particella",
+     "de": "Partikel"
     },
     {
      "wals": [
@@ -1541,7 +1761,8 @@
      ],
      "cs": "tvar slovesa",
      "en": "verb morphology",
-     "it": "morfologia del verbo"
+     "it": "morfologia del verbo",
+     "de": "Verbmorphologie"
     },
     {
      "wals": [
@@ -1549,7 +1770,8 @@
      ],
      "cs": "slovosled",
      "en": "word order",
-     "it": "ordine delle parole"
+     "it": "ordine delle parole",
+     "de": "Wortstellung"
     },
     {
      "wals": [
@@ -1557,7 +1779,8 @@
      ],
      "cs": "jen intonace",
      "en": "intonation only",
-     "it": "solo intonazione"
+     "it": "solo intonazione",
+     "de": "nur Intonation"
     },
     {
      "wals": [
@@ -1565,7 +1788,8 @@
      ],
      "cs": "částice i tvar slovesa",
      "en": "particle and verb morphology",
-     "it": "particella e morfologia del verbo"
+     "it": "particella e morfologia del verbo",
+     "de": "Partikel und Verbmorphologie"
     },
     {
      "wals": [
@@ -1575,6 +1799,7 @@
      "cs": "jiné",
      "en": "other",
      "it": "altro",
+     "de": "andere",
      "barva": "jine"
     }
    ]
@@ -1586,23 +1811,27 @@
    "nazev": {
     "cs": "Ruka a paže",
     "en": "Hand and arm",
-    "it": "Mano e braccio"
+    "it": "Mano e braccio",
+    "de": "Hand und Arm"
    },
    "popis": {
     "cs": "Zda jazyk pojmenovává ruku (dlaň s prsty) a paži jedním slovem, jako česká „ruka“ nebo ruská „рука“, nebo dvěma (angl. hand a arm).",
     "en": "Whether a language names the hand and the arm with one word (as Czech ruka does) or with two (English hand and arm).",
-    "it": "Se una lingua chiama la mano e il braccio con una sola parola (come il ceco ruka) o con due (italiano mano e braccio)."
+    "it": "Se una lingua chiama la mano e il braccio con una sola parola (come il ceco ruka) o con due (italiano mano e braccio).",
+    "de": "Ob eine Sprache Hand und Arm mit einem Wort bezeichnet (wie tschechisch ruka) oder mit zwei (englisch hand und arm)."
    },
    "hodnoty": {
     "1": {
      "cs": "stejné slovo",
      "en": "Identical",
-     "it": "Una sola parola"
+     "it": "Una sola parola",
+     "de": "Identisch"
     },
     "2": {
      "cs": "různá slova",
      "en": "Different",
-     "it": "Parole diverse"
+     "it": "Parole diverse",
+     "de": "Verschieden"
     }
    },
    "tridy": [
@@ -1612,7 +1841,8 @@
      ],
      "cs": "jedno slovo",
      "en": "identical",
-     "it": "una sola parola"
+     "it": "una sola parola",
+     "de": "identisch"
     },
     {
      "wals": [
@@ -1620,7 +1850,8 @@
      ],
      "cs": "dvě slova",
      "en": "different",
-     "it": "parole diverse"
+     "it": "parole diverse",
+     "de": "verschieden"
     }
    ]
   },
@@ -1631,23 +1862,27 @@
    "nazev": {
     "cs": "Prst a ruka",
     "en": "Finger and hand",
-    "it": "Dito e mano"
+    "it": "Dito e mano",
+    "de": "Finger und Hand"
    },
    "popis": {
     "cs": "Zda jazyk pojmenovává prst a ruku jedním slovem, nebo dvěma.",
     "en": "Whether a language names the finger and the hand with one word or with two.",
-    "it": "Se una lingua chiama il dito e la mano con una sola parola o con due."
+    "it": "Se una lingua chiama il dito e la mano con una sola parola o con due.",
+    "de": "Ob eine Sprache Finger und Hand mit einem Wort bezeichnet oder mit zwei."
    },
    "hodnoty": {
     "1": {
      "cs": "stejné slovo",
      "en": "Identical",
-     "it": "Una sola parola"
+     "it": "Una sola parola",
+     "de": "Identisch"
     },
     "2": {
      "cs": "různá slova",
      "en": "Different",
-     "it": "Parole diverse"
+     "it": "Parole diverse",
+     "de": "Verschieden"
     }
    },
    "tridy": [
@@ -1657,7 +1892,8 @@
      ],
      "cs": "jedno slovo",
      "en": "identical",
-     "it": "una sola parola"
+     "it": "una sola parola",
+     "de": "identisch"
     },
     {
      "wals": [
@@ -1665,7 +1901,8 @@
      ],
      "cs": "dvě slova",
      "en": "different",
-     "it": "parole diverse"
+     "it": "parole diverse",
+     "de": "verschieden"
     }
    ]
   },
@@ -1676,43 +1913,51 @@
    "nazev": {
     "cs": "Základ číselné soustavy",
     "en": "Numeral bases",
-    "it": "Basi numeriche"
+    "it": "Basi numeriche",
+    "de": "Basis des Zahlensystems"
    },
    "popis": {
     "cs": "Na jakém základu stojí číslovky: desítkový (jako čeština), dvacítkový (jako řada mezoamerických jazyků), jejich kombinace, soustava částí těla, nebo jen omezená řada číslovek.",
     "en": "The base of the numeral system: decimal, vigesimal (as in many Mesoamerican languages), a mixture of the two, a body-part system, or only a restricted set of numerals.",
-    "it": "La base del sistema numerale: decimale, vigesimale (come in molte lingue mesoamericane), una combinazione delle due, un sistema basato sulle parti del corpo, oppure solo un insieme ristretto di numerali."
+    "it": "La base del sistema numerale: decimale, vigesimale (come in molte lingue mesoamericane), una combinazione delle due, un sistema basato sulle parti del corpo, oppure solo un insieme ristretto di numerali.",
+    "de": "Die Basis des Zahlensystems: dezimal, vigesimal (wie in vielen mesoamerikanischen Sprachen), eine Mischung aus beiden, ein Körperteilsystem oder nur ein begrenzter Bestand an Zahlwörtern."
    },
    "hodnoty": {
     "1": {
      "cs": "desítková",
      "en": "Decimal",
-     "it": "Decimale"
+     "it": "Decimale",
+     "de": "Dezimal"
     },
     "2": {
      "cs": "smíšená dvacítková a desítková",
      "en": "Hybrid vigesimal-decimal",
-     "it": "Ibrido vigesimale-decimale"
+     "it": "Ibrido vigesimale-decimale",
+     "de": "Hybrid vigesimal-dezimal"
     },
     "3": {
      "cs": "čistě dvacítková",
      "en": "Pure vigesimal",
-     "it": "Vigesimale puro"
+     "it": "Vigesimale puro",
+     "de": "Rein vigesimal"
     },
     "4": {
      "cs": "jiný základ",
      "en": "Other base",
-     "it": "Altra base"
+     "it": "Altra base",
+     "de": "Andere Basis"
     },
     "5": {
      "cs": "rozšířená soustava částí těla",
      "en": "Extended body-part system",
-     "it": "Sistema esteso basato sulle parti del corpo"
+     "it": "Sistema esteso basato sulle parti del corpo",
+     "de": "Erweitertes Körperteilsystem"
     },
     "6": {
      "cs": "omezená",
      "en": "Restricted",
-     "it": "Ristretto"
+     "it": "Ristretto",
+     "de": "Eingeschränkt"
     }
    },
    "tridy": [
@@ -1722,7 +1967,8 @@
      ],
      "cs": "desítková",
      "en": "decimal",
-     "it": "decimale"
+     "it": "decimale",
+     "de": "dezimal"
     },
     {
      "wals": [
@@ -1730,7 +1976,8 @@
      ],
      "cs": "dvacítková i desítková",
      "en": "hybrid vigesimal-decimal",
-     "it": "ibrido vigesimale-decimale"
+     "it": "ibrido vigesimale-decimale",
+     "de": "hybrid vigesimal-dezimal"
     },
     {
      "wals": [
@@ -1738,7 +1985,8 @@
      ],
      "cs": "dvacítková",
      "en": "pure vigesimal",
-     "it": "vigesimale puro"
+     "it": "vigesimale puro",
+     "de": "rein vigesimal"
     },
     {
      "wals": [
@@ -1746,7 +1994,8 @@
      ],
      "cs": "omezená",
      "en": "restricted",
-     "it": "ristretto"
+     "it": "ristretto",
+     "de": "eingeschränkt"
     },
     {
      "wals": [
@@ -1756,6 +2005,7 @@
      "cs": "jiná (jiný základ, části těla)",
      "en": "other (other base, body parts)",
      "it": "altro (altra base, parti del corpo)",
+     "de": "andere (andere Basis, Körperteile)",
      "barva": "jine"
     }
    ]
@@ -1767,48 +2017,57 @@
    "nazev": {
     "cs": "Počet základních barevných kategorií",
     "en": "Number of basic colour categories",
-    "it": "Numero di categorie cromatiche di base"
+    "it": "Numero di categorie cromatiche di base",
+    "de": "Anzahl der Grundfarbkategorien"
    },
    "popis": {
     "cs": "Počet základních barevných pojmů podle metodiky Berlina a Kaye (World Color Survey). Poloviční hodnoty označují kategorii, která je v jazyce jen zčásti ustálená. Angličtina, francouzština, němčina a ruština mají podle WALS 11.",
     "en": "The number of basic colour terms following Berlin and Kay's method (World Color Survey). Half values mark a category that is only partly established. English, French, German and Russian have 11 according to WALS.",
-    "it": "Il numero di termini cromatici di base secondo il metodo di Berlin e Kay (World Color Survey). I valori con ,5 indicano una categoria affermata solo in parte. Secondo il WALS inglese, francese, tedesco e russo ne hanno 11."
+    "it": "Il numero di termini cromatici di base secondo il metodo di Berlin e Kay (World Color Survey). I valori con ,5 indicano una categoria affermata solo in parte. Secondo il WALS inglese, francese, tedesco e russo ne hanno 11.",
+    "de": "Die Anzahl der Grundfarbwörter nach der Methode von Berlin und Kay (World Color Survey). Halbe Werte bezeichnen eine nur teilweise etablierte Kategorie. Englisch, Französisch, Deutsch und Russisch haben nach WALS 11."
    },
    "hodnoty": {
     "1": {
      "cs": "3–4",
      "en": "3–4",
-     "it": "3–4"
+     "it": "3–4",
+     "de": "3–4"
     },
     "2": {
      "cs": "4,5–5,5",
      "en": "4.5–5.5",
-     "it": "4,5–5,5"
+     "it": "4,5–5,5",
+     "de": "4,5–5,5"
     },
     "3": {
      "cs": "6–6,5",
      "en": "6–6.5",
-     "it": "6–6,5"
+     "it": "6–6,5",
+     "de": "6–6,5"
     },
     "4": {
      "cs": "7–7,5",
      "en": "7–7.5",
-     "it": "7–7,5"
+     "it": "7–7,5",
+     "de": "7–7,5"
     },
     "5": {
      "cs": "8–8,5",
      "en": "8–8.5",
-     "it": "8–8,5"
+     "it": "8–8,5",
+     "de": "8–8,5"
     },
     "6": {
      "cs": "9–10",
      "en": "9–10",
-     "it": "9–10"
+     "it": "9–10",
+     "de": "9–10"
     },
     "7": {
      "cs": "11",
      "en": "11",
-     "it": "11"
+     "it": "11",
+     "de": "11"
     }
    },
    "tridy": [
@@ -1818,7 +2077,8 @@
      ],
      "cs": "3–4",
      "en": "3–4",
-     "it": "3–4"
+     "it": "3–4",
+     "de": "3–4"
     },
     {
      "wals": [
@@ -1826,7 +2086,8 @@
      ],
      "cs": "4,5–5,5",
      "en": "4.5–5.5",
-     "it": "4,5–5,5"
+     "it": "4,5–5,5",
+     "de": "4,5–5,5"
     },
     {
      "wals": [
@@ -1834,7 +2095,8 @@
      ],
      "cs": "6–6,5",
      "en": "6–6.5",
-     "it": "6–6,5"
+     "it": "6–6,5",
+     "de": "6–6,5"
     },
     {
      "wals": [
@@ -1842,7 +2104,8 @@
      ],
      "cs": "7–7,5",
      "en": "7–7.5",
-     "it": "7–7,5"
+     "it": "7–7,5",
+     "de": "7–7,5"
     },
     {
      "wals": [
@@ -1850,7 +2113,8 @@
      ],
      "cs": "8–8,5",
      "en": "8–8.5",
-     "it": "8–8,5"
+     "it": "8–8,5",
+     "de": "8–8,5"
     },
     {
      "wals": [
@@ -1858,7 +2122,8 @@
      ],
      "cs": "9–10",
      "en": "9–10",
-     "it": "9–10"
+     "it": "9–10",
+     "de": "9–10"
     },
     {
      "wals": [
@@ -1866,7 +2131,8 @@
      ],
      "cs": "11",
      "en": "11",
-     "it": "11"
+     "it": "11",
+     "de": "11"
     }
    ]
   },
@@ -1877,28 +2143,33 @@
    "nazev": {
     "cs": "Čaj",
     "en": "Tea",
-    "it": "Tè"
+    "it": "Tè",
+    "de": "Tee"
    },
    "popis": {
     "cs": "Původ slova pro čaj. Podoby z čínského cha (tak zní v mandarínštině i kantonštině) se šířily převážně po souši (čeština „čaj“, ruština, hindština, turečtina), podoby z jihominského (amojského) te převážně po moři přes nizozemské obchodníky (angl. tea, něm. Tee). Výjimkou je portugalština: chá převzala námořní cestou z kantonské výslovnosti v Macau.",
     "en": "The origin of the word for tea. Forms from Chinese cha (the pronunciation in both Mandarin and Cantonese) spread mostly overland (Czech čaj, Russian, Hindi, Turkish), forms from Southern Min (Amoy) te mostly by sea through Dutch traders (English tea, German Tee). Portuguese is the exception: it took chá by sea, from the Cantonese pronunciation in Macau.",
-    "it": "L’origine della parola per il tè. Le forme dal cinese cha (la pronuncia sia in mandarino sia in cantonese) si sono diffuse per lo più via terra (ceco čaj, russo, hindi, turco), quelle dal min meridionale (Amoy) te per lo più via mare attraverso i mercanti olandesi (italiano tè, inglese tea, tedesco Tee). Fa eccezione il portoghese: ha preso chá via mare, dalla pronuncia cantonese di Macao."
+    "it": "L’origine della parola per il tè. Le forme dal cinese cha (la pronuncia sia in mandarino sia in cantonese) si sono diffuse per lo più via terra (ceco čaj, russo, hindi, turco), quelle dal min meridionale (Amoy) te per lo più via mare attraverso i mercanti olandesi (italiano tè, inglese tea, tedesco Tee). Fa eccezione il portoghese: ha preso chá via mare, dalla pronuncia cantonese di Macao.",
+    "de": "Die Herkunft des Wortes für Tee. Formen aus dem chinesischen cha (so die Aussprache sowohl im Mandarin als auch im Kantonesischen) verbreiteten sich überwiegend auf dem Landweg (tschechisch čaj, Russisch, Hindi, Türkisch), Formen aus dem südlichen Min (Amoy) te überwiegend auf dem Seeweg über niederländische Händler (englisch tea, deutsch Tee). Eine Ausnahme ist das Portugiesische: Es übernahm chá auf dem Seeweg, aus der kantonesischen Aussprache in Macau."
    },
    "hodnoty": {
     "1": {
      "cs": "z čínského cha",
      "en": "Words derived from Sinitic cha",
-     "it": "Parole derivate dal cinese cha"
+     "it": "Parole derivate dal cinese cha",
+     "de": "Wörter aus sinitisch cha"
     },
     "2": {
      "cs": "z minnanského te",
      "en": "Words derived from Min Nan Chinese te",
-     "it": "Parole derivate dal min nan te"
+     "it": "Parole derivate dal min nan te",
+     "de": "Wörter aus Min-Nan-chinesisch te"
     },
     "3": {
      "cs": "jiné",
      "en": "Others",
-     "it": "Altre"
+     "it": "Altre",
+     "de": "Andere"
     }
    },
    "tridy": [
@@ -1908,7 +2179,8 @@
      ],
      "cs": "z čínského cha",
      "en": "from Sinitic cha",
-     "it": "dal cinese cha"
+     "it": "dal cinese cha",
+     "de": "aus sinitisch cha"
     },
     {
      "wals": [
@@ -1916,7 +2188,8 @@
      ],
      "cs": "z minnanského te",
      "en": "from Min Nan te",
-     "it": "dal min nan te"
+     "it": "dal min nan te",
+     "de": "aus Min Nan te"
     },
     {
      "wals": [
@@ -1925,6 +2198,7 @@
      "cs": "jiný původ",
      "en": "other origin",
      "it": "altra origine",
+     "de": "andere Herkunft",
      "barva": "jine"
     }
    ]

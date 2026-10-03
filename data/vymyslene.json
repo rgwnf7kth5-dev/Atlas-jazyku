@@ -19,6 +19,10 @@
    "it": {
     "nazev": "Qo'noS",
     "popis": "Il pianeta natale dei Klingon in Star Trek."
+   },
+   "de": {
+    "nazev": "Qo'noS",
+    "popis": "Der Heimatplanet der Klingonen in „Star Trek“."
    }
   },
   {
@@ -39,6 +43,10 @@
    "it": {
     "nazev": "Terra di Mezzo",
     "popis": "Il mondo del Signore degli Anelli. Tolkien la immaginava come la nostra stessa Terra in un remoto passato inventato."
+   },
+   "de": {
+    "nazev": "Mittelerde",
+    "popis": "Die Welt aus „Der Herr der Ringe“. Tolkien stellte sie sich als unsere eigene Erde in einer erfundenen fernen Vergangenheit vor."
    }
   },
   {
@@ -59,6 +67,10 @@
    "it": {
     "nazev": "Pandora",
     "popis": "Una luna di un pianeta gigante vicino alla stella Alfa Centauri, patria dei Na'vi nel film Avatar."
+   },
+   "de": {
+    "nazev": "Pandora",
+    "popis": "Ein Mond eines Riesenplaneten nahe dem Stern Alpha Centauri, Heimat der Na'vi im Film „Avatar“."
    }
   },
   {
@@ -79,6 +91,10 @@
    "it": {
     "nazev": "Essos",
     "popis": "Un continente del mondo del Trono di Spade. Vi abitano i Dothraki e un tempo vi sorgeva Valyria."
+   },
+   "de": {
+    "nazev": "Essos",
+    "popis": "Ein Kontinent in der Welt von „Game of Thrones“. Hier leben die Dothraki, und hier lag einst Valyria."
    }
   }
  ],
@@ -112,6 +128,14 @@
     "vyznam": "Letteralmente “Che cosa vuoi?” – l'etichetta klingon non conosce formule di cortesia.",
     "fakt": "Il klingon ha come ordine basico delle parole oggetto–verbo–soggetto: “puq legh yaS” significa “l'ufficiale vede il bambino”, letteralmente “bambino vede ufficiale”. Tra le lingue naturali questo ordine è molto raro (WALS 81A).",
     "hledat": "klingon star trek okrand"
+   },
+   "de": {
+    "nazev": "Klingonisch",
+    "vyslovnost": "NUK-nech",
+    "dilo": "Star Trek (Filme)",
+    "vyznam": "Wörtlich „Was willst du?“ – die klingonische Etikette kennt keine Höflichkeitsformeln.",
+    "fakt": "Das Klingonische hat die Grundwortstellung Objekt–Verb–Subjekt: „puq legh yaS“ bedeutet „der Offizier sieht das Kind“, wörtlich „Kind sieht Offizier“. Diese Wortstellung ist unter natürlichen Sprachen sehr selten (WALS 81A).",
+    "hledat": "klingonisch klingone star trek okrand"
    }
   },
   {
@@ -143,6 +167,14 @@
     "vyznam": "“Salve!” – la lingua degli Alti Elfi.",
     "fakt": "Tolkien vi attinse soprattutto dal finlandese. Diceva che erano venute prima le lingue e che le storie erano state scritte per dare loro un mondo in cui potessero essere parlate.",
     "hledat": "quenya elfo elfi elfico tolkien signore degli anelli lord of the rings"
+   },
+   "de": {
+    "nazev": "Quenya",
+    "vyslovnost": "AI-ja",
+    "dilo": "Der Herr der Ringe (Buch)",
+    "vyznam": "„Sei gegrüßt!“ – die Sprache der Hochelben.",
+    "fakt": "Tolkien stützte sich dabei vor allem auf das Finnische. Er sagte, die Sprachen seien zuerst da gewesen, und die Geschichten seien geschrieben worden, um ihnen eine Welt zu geben, in der sie gesprochen werden konnten.",
+    "hledat": "quenya elb elben elbisch tolkien herr der ringe"
    }
   },
   {
@@ -174,6 +206,14 @@
     "vyznam": "“Ben trovato.”",
     "fakt": "Il suo sistema fonetico ricorda il gallese, che Tolkien ammirava. L'iscrizione sulle Porte di Moria dice “Di', amico, ed entra” – e la parola d'ordine è proprio la parola “amico”: mellon.",
     "hledat": "sindarin elfo elfi elfico tolkien signore degli anelli lord of the rings mellon"
+   },
+   "de": {
+    "nazev": "Sindarin",
+    "vyslovnost": "mai go-WAN-nen",
+    "dilo": "Der Herr der Ringe (Buch)",
+    "vyznam": "„Gut getroffen.“",
+    "fakt": "Sein Lautsystem erinnert an das Walisische, das Tolkien bewunderte. Die Inschrift auf dem Tor von Moria lautet „Sprich, Freund, und tritt ein“ – und das Losungswort ist das Wort „Freund“ selbst: mellon.",
+    "hledat": "sindarin elb elben elbisch tolkien herr der ringe mellon"
    }
   },
   {
@@ -204,6 +244,14 @@
     "dilo": "Avatar (film, 2009)",
     "vyznam": "“Ciao!”",
     "fakt": "Il linguista Paul Frommer le diede le eiettive kx, px e tx, prodotte con una contemporanea chiusura della glottide. Non esistono né in inglese né in ceco, ma si trovano per esempio in georgiano o in amarico.",
+    "hledat": "navi na'vi avatar pandora frommer"
+   },
+   "de": {
+    "nazev": "Na'vi",
+    "vyslovnost": "kal-T'I",
+    "dilo": "Avatar (Film, 2009)",
+    "vyznam": "„Hallo!“",
+    "fakt": "Der Sprachwissenschaftler Paul Frommer gab ihr die Ejektive kx, px und tx, die mit gleichzeitigem Verschluss der Stimmritze gebildet werden. Weder das Englische noch das Tschechische hat sie, sie kommen aber zum Beispiel im Georgischen oder Amharischen vor.",
     "hledat": "navi na'vi avatar pandora frommer"
    }
   },
@@ -236,6 +284,14 @@
     "vyznam": "“Con rispetto!” – così si salutano i Dothraki.",
     "fakt": "Nei libri George R. R. Martin usò solo una manciata di parole dothraki. Per la serie il linguista David J. Peterson ne ricavò una lingua completa, con una propria grammatica e un lessico di migliaia di parole.",
     "hledat": "dothraki trono di spade game of thrones peterson"
+   },
+   "de": {
+    "nazev": "Dothraki",
+    "vyslovnost": "m-ath-tscho-ma-RUN",
+    "dilo": "Game of Thrones (Fernsehserie, 2011)",
+    "vyznam": "„Mit Respekt!“ – so begrüßen sich die Dothraki.",
+    "fakt": "George R. R. Martin verwendete in den Büchern nur eine Handvoll dothrakischer Wörter. Der Sprachwissenschaftler David J. Peterson baute daraus für die Serie eine vollständige Sprache mit eigener Grammatik und einem Wortschatz von Tausenden Wörtern.",
+    "hledat": "dothraki dothrakisch game of thrones peterson"
    }
   },
   {
@@ -267,6 +323,14 @@
     "vyznam": "“Ciao!”",
     "fakt": "Anche l'alto valyriano è opera di David J. Peterson. Dal 2017 ha un proprio corso su Duolingo.",
     "hledat": "valyriano alto valyriano valyrian high valyrian trono di spade game of thrones daenerys peterson"
+   },
+   "de": {
+    "nazev": "Hochvalyrisch",
+    "vyslovnost": "RIT-sas",
+    "dilo": "Game of Thrones (Fernsehserie, 2011)",
+    "vyznam": "„Hallo!“",
+    "fakt": "Auch das Hochvalyrische schuf David J. Peterson. Seit 2017 gibt es dafür einen eigenen Kurs auf Duolingo.",
+    "hledat": "valyrisch hochvalyrisch valyrian game of thrones daenerys peterson"
    }
   }
  ],
@@ -274,12 +338,14 @@
   "fi": {
    "cs": "Finštinou se Tolkien inspiroval při tvorbě quenijštiny, jazyka svých elfů.",
    "en": "Tolkien drew on Finnish when creating Quenya, the language of his Elves.",
-   "it": "Tolkien attinse dal finlandese per creare il quenya, la lingua dei suoi Elfi."
+   "it": "Tolkien attinse dal finlandese per creare il quenya, la lingua dei suoi Elfi.",
+   "de": "Tolkien stützte sich bei der Schaffung des Quenya, der Sprache seiner Elben, auf das Finnische."
   },
   "cy": {
    "cs": "Velštinou se Tolkien inspiroval při tvorbě sindarštiny, dalšího elfského jazyka.",
    "en": "Tolkien drew on Welsh when creating Sindarin, another Elvish language.",
-   "it": "Tolkien attinse dal gallese per creare il sindarin, un'altra lingua elfica."
+   "it": "Tolkien attinse dal gallese per creare il sindarin, un'altra lingua elfica.",
+   "de": "Tolkien stützte sich bei der Schaffung des Sindarin, einer weiteren Elbensprache, auf das Walisische."
   }
  }
 }
