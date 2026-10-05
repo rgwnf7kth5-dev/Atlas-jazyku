@@ -46,7 +46,7 @@
  "dotazSrovnani": "Vergleich: {a} und {b}",
  "dotaz": {
   "aiStitek": "Frage an die KI",
-  "aiNabidka": "Diese Frage beantwortet eine KI anhand der Daten des Atlas.",
+  "aiNabidka": "Diese Frage beantwortet eine KI anhand der Daten des Atlas; was der Atlas nicht enthält, sucht sie im Web.",
   "aiZeptat": "KI fragen",
   "aiKrokCte": "Ich lese die Frage", "aiKrokData": "Ich suche in den Daten des Atlas", "aiKrokOdpoved": "Ich formuliere die Antwort", "aiCas": "{s} s · das kann einen Moment dauern", "aiPremyslim": "Denkt nach…",
   "aiPozn": "Antwort von einer KI (Claude) anhand der Daten des Atlas verfasst; sie kann fehlerhaft sein.",
@@ -55,7 +55,7 @@
   "aiChyba": "Es konnte keine Antwort abgerufen werden, bitte versuchen Sie es erneut.",
   "aiOdmitnuto": "Diese Frage beantwortet die KI nicht.",
   "aiNic": "Die KI hat in den Daten des Atlas keine Antwort gefunden.",
-  "euPopis": "24 Sprachen, 27 Mitgliedstaaten. Goldene Sterne markieren sie auf dem Globus.", "euStaty": "Sprachen der EU-Mitgliedstaaten", "euStatyPopis": "Jede Sprache zählt nur einmal, auch wenn sie in mehreren Staaten gesprochen wird. Die EU hat 24 Amtssprachen.", "stitek": "Verstanden",
+  "euPopis": "24 Sprachen, 27 Mitgliedstaaten. Goldene Sterne markieren sie auf dem Globus.", "euStaty": "Sprachen der EU-Mitgliedstaaten", "euStatyPopis": "Jede Sprache zählt nur einmal, auch wenn sie in mehreren Staaten gesprochen wird. Die EU hat 24 Amtssprachen.", "aiKrokWeb": "Suche im Web", "aiZdrojeWeb": "Quellen aus dem Web", "aiPoznWeb": "Antwort von einer KI (Claude) anhand der Daten des Atlas und des Webs verfasst; sie kann fehlerhaft sein.", "stitek": "Verstanden",
   "ukaz": "Auf dem Globus zeigen",
   "porovnej": "Vergleichen",
   "otevri": "Steckbrief der Sprache öffnen",
@@ -442,7 +442,7 @@
    {
     "h": "Fragen an die KI",
     "p": [
-     "Versteht die Suche eine Frage nicht, können Sie eine KI fragen (Claude Sonnet 5.5 von Anthropic). Der Text der Frage wird über den Server des Atlas (Netlify) an Anthropic gesendet; der Atlas speichert keine Fragen. Die KI sucht nur in den Daten des Atlas (Glottolog, Unicode CLDR, Texte des Atlas) und baut ihre Antwort daraus auf; dennoch kann sie sich irren, deshalb trägt jede Antwort einen Hinweis. Sie beantwortet nur Fragen zu Sprachen, Schriften und Sprachfamilien."
+     "Versteht die Suche eine Frage nicht, können Sie eine KI fragen (Claude Sonnet 5.5 von Anthropic). Der Text der Frage wird über den Server des Atlas (Netlify) an Anthropic gesendet; der Atlas speichert keine Fragen. Die KI sucht zuerst in den Daten des Atlas (Glottolog, Unicode CLDR, Texte des Atlas); was der Atlas nicht enthält, sucht sie im Web (Websuche von Anthropic) und nennt die Webquellen unter der Antwort. Dennoch kann sie sich irren, deshalb trägt jede Antwort einen Hinweis. Sie beantwortet nur Fragen zu Sprachen, Schriften und Sprachfamilien."
     ]
    },
    {
@@ -581,7 +581,7 @@
     "p": [
      "Sie können nach einer Sprache, einem Land oder einem Dialekt suchen. Das Kreuz im Suchfeld löscht die Eingabe.",
      "Sie können auch eine Frage in einfachen Worten eingeben: „Sprachen in Brasilien“ (Sprachen eines Landes), „slawische Sprachen“ (eine Familie oder ein Zweig in Glottolog), „Deutsch und Italienisch“ (Vergleich zweier Sprachen) oder „wo wird Persisch gesprochen“. Oben in der Liste steht, was die Suche verstanden hat, und die Liste zeigt die passenden Sprachen; die Schaltfläche oder die Eingabetaste zeigt sie auf dem Globus. Die Antworten stammen nur aus den Daten des Atlas.",
-     "Versteht die Suche eine Frage nicht, bietet sie KI fragen an: Eine KI (Claude von Anthropic) schlägt in den Daten des Atlas nach, antwortet in zwei bis vier Sätzen und zeigt das Ergebnis auf dem Globus. Sie beantwortet nur Fragen zu Sprachen und kann sich irren. Nur auf der Website.",
+     "Versteht die Suche eine Frage nicht, bietet sie KI fragen an: Eine KI (Claude von Anthropic) schlägt in den Daten des Atlas nach, sucht im Web, was dort fehlt (mit Quellen), antwortet in wenigen Sätzen und zeigt das Ergebnis auf dem Globus. Sie beantwortet nur Fragen zu Sprachen und kann sich irren. Nur auf der Website.",
      "Sortiert wird nach Sprachfamilie, alphabetisch oder nach Kontinent. Sprachen mit ausführlichem Steckbrief erscheinen als große Kacheln, die übrigen darunter.",
      "Die Sprache des Tages wechselt um Mitternacht und nennt immer den Grund ihrer Wahl: entweder einen Tag, der mit dieser Sprache verbunden ist (siehe Kalender der Sprachentage), oder die Reise um die Welt zur nächstgelegenen Sprache. Am Europäischen Tag der Sprachen (26. September) werden stattdessen alle europäischen Sprachen des Atlas gezeigt."
     ]

@@ -551,6 +551,18 @@ jako italština, přepínač **CS · EN · IT · DE**. Název **Atlas der Sprach
   (uživatel 1. 10. 2026: „nikdo nepochopí, že se lze ptát“); po odpovědi se provede akce posledního nástroje (`provedAkciAI`). Obsah odpovědí AI se posílá zpět beze změny
   (i bloky přemýšlení). Model: `ATLAS_AI_MODEL` v Netlify (opus / sonnet / haiku nebo celé id), bez něj `claude-sonnet-5-5`;
   Opus a Sonnet s `effort: low` a záložním modelem při odmítnutí (`fallbacks: "default"`, beta `server-side-fallback-2026-07-01`).
+  **Hledání mimo atlas** (5. 10. 2026, uživatel: „čekal bych, že AI bude hledat informace, které atlas nemá, i mimo atlas“ – na „jak se
+  liší moderní ivrit od hebrejštiny“ odpověděla jen, že atlas rozdíly nepopisuje): (1) nástroj **`texty_atlasu`** prohledá vlastní ověřené
+  texty atlasu – stránky Jazyků starověku a Příběhů, putování (`textyAtlasu()` v app.js, úseky ≥ 60 znaků v jazyce stránky, shoda kmenů slov);
+  (2) **hledání na webu** – serverový nástroj Anthropicu `web_search_20260209` (`max_uses: 3`, u Haiku `web_search_20250305`), vypne ho
+  `ATLAS_AI_WEB=0` v Netlify. Platí se zvlášť (10 USD za 1 000 hledání + tokeny výsledků). Když je hledání na webu v konzoli Anthropicu
+  pro organizaci vypnuté (400), funkce zopakuje dotaz bez něj. Výsledky hledání se posílají zpět celé (šifrovaný obsah) – proto
+  `MAX_TELO` 600 kB; `stop_reason: "pause_turn"` stránka pošle zpět bez nové zprávy (`platna` povoluje konverzaci končící odpovědí AI
+  se `server_tool_use`). Odpověď s webem je rozdělená do bloků podle citací – lepí se bez zalomení; pod odpovědí jsou odkazy
+  „Zdroje z webu“ (`.do-ai-web`, z `citations`) a poznámka „z dat atlasu a z webu“ (`aiPoznWeb`), stav čekání „Hledám na webu“
+  (`aiKrokWeb`). Pokyn: nejdřív atlas, pak texty atlasu, pak web; spolehlivé zdroje; říct, co je z webu; 2–6 vět. `srovnej_jazyky`
+  odmítne dva názvy téhož jazyka (dřív „ivrit × biblická hebrejština“ srovnával hebrejštinu se sebou a AI psala o srovnání na glóbu).
+  Mock server ve scratchpadu umí web („ivrit“) i `pause_turn` („pauza“).
   **Vypnutí pro sebe:** `#ai-vyp` (pamatuje se v `atlas-ai`), `#ai` zase zapne. **Porovnání modelů:**
   `#ai-test` položí 16 otázek (`AI_SADA`) Opusu 5.5, Sonnetu 5.5 a Haiku 4.5 a ukáže odpovědi, nástroje, čas a cenu. Uživatel
   vybere model, pak nastavit `ATLAS_AI_MODEL` v Netlify a AI zveřejnit (zrušit skrytí, doplnit návod a O datech: dotazy jdou

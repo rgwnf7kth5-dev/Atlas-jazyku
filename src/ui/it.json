@@ -46,7 +46,7 @@
  "dotazSrovnani": "Confronto: {a} e {b}",
  "dotaz": {
   "aiStitek": "Domanda all’IA",
-  "aiNabidka": "A questa domanda risponderà un’intelligenza artificiale in base ai dati dell’atlante.",
+  "aiNabidka": "A questa domanda risponderà un’intelligenza artificiale in base ai dati dell’atlante; ciò che l’atlante non contiene, lo cercherà sul web.",
   "aiZeptat": "Chiedi all’IA",
   "aiKrokCte": "Leggo la domanda", "aiKrokData": "Cerco nei dati dell’atlante", "aiKrokOdpoved": "Compongo la risposta", "aiCas": "{s} s · può richiedere qualche istante", "aiPremyslim": "Elaborazione…",
   "aiPozn": "Risposta scritta da un’IA (Claude) in base ai dati dell’atlante; può contenere errori.",
@@ -55,7 +55,7 @@
   "aiChyba": "Non è stato possibile ottenere una risposta, riprovare.",
   "aiOdmitnuto": "L’IA non risponderà a questa domanda.",
   "aiNic": "L’IA non ha trovato una risposta nei dati dell’atlante.",
-  "euPopis": "24 lingue, 27 Stati membri. Le stelle dorate le segnano sul globo.", "euStaty": "Lingue degli Stati membri dell'UE", "euStatyPopis": "Ogni lingua è contata una volta sola, anche se è parlata in più Stati. Le lingue ufficiali dell'UE sono 24.", "stitek": "Ho capito",
+  "euPopis": "24 lingue, 27 Stati membri. Le stelle dorate le segnano sul globo.", "euStaty": "Lingue degli Stati membri dell'UE", "euStatyPopis": "Ogni lingua è contata una volta sola, anche se è parlata in più Stati. Le lingue ufficiali dell'UE sono 24.", "aiKrokWeb": "Cerco sul web", "aiZdrojeWeb": "Fonti web", "aiPoznWeb": "Risposta scritta da un’IA (Claude) in base ai dati dell’atlante e al web; può contenere errori.", "stitek": "Ho capito",
   "ukaz": "Mostra sul globo",
   "porovnej": "Confronta",
   "otevri": "Apri la scheda della lingua",
@@ -443,7 +443,7 @@
    {
     "h": "Domande all’IA",
     "p": [
-     "Se la ricerca non capisce una domanda, la si può porre a un’intelligenza artificiale (Claude Sonnet 5.5 di Anthropic). Il testo della domanda viene inviato tramite il server dell’atlante (Netlify) ad Anthropic; l’atlante non conserva le domande. L’IA cerca le informazioni solo nei dati dell’atlante (Glottolog, Unicode CLDR, testi dell’atlante) e costruisce la risposta su di essi; può comunque sbagliare, perciò ogni risposta porta un avviso. Risponde solo a domande su lingue, scritture e famiglie linguistiche."
+     "Se la ricerca non capisce una domanda, la si può porre a un’intelligenza artificiale (Claude Sonnet 5.5 di Anthropic). Il testo della domanda viene inviato tramite il server dell’atlante (Netlify) ad Anthropic; l’atlante non conserva le domande. L’IA cerca prima nei dati dell’atlante (Glottolog, Unicode CLDR, testi dell’atlante); ciò che l’atlante non contiene, lo cerca sul web (ricerca web di Anthropic) ed elenca le fonti web sotto la risposta. Può comunque sbagliare, perciò ogni risposta porta un avviso. Risponde solo a domande su lingue, scritture e famiglie linguistiche."
     ]
    },
    {
@@ -582,7 +582,7 @@
     "p": [
      "Si può cercare una lingua, un paese o un dialetto. La croce nella casella di ricerca la cancella.",
      "Si può anche scrivere una domanda con parole semplici: “lingue del Brasile” (le lingue di un paese), “lingue slave” (una famiglia o un ramo in Glottolog), “tedesco e italiano” (confronto di due lingue) o “dove si parla il persiano”. In cima all’elenco compare ciò che la ricerca ha capito e l’elenco mostra le lingue corrispondenti; il pulsante o il tasto Invio le mostrano sul globo. Le risposte provengono solo dai dati dell’atlante.",
-     "Se la ricerca non capisce una domanda, propone Chiedi all’IA: un’intelligenza artificiale (Claude di Anthropic) consulta i dati dell’atlante, risponde in due-quattro frasi e mostra il risultato sul globo. Risponde solo a domande sulle lingue e può sbagliare. Solo sul sito web.",
+     "Se la ricerca non capisce una domanda, propone Chiedi all’IA: un’intelligenza artificiale (Claude di Anthropic) consulta i dati dell’atlante, cerca sul web ciò che manca (indicando le fonti), risponde in poche frasi e mostra il risultato sul globo. Risponde solo a domande sulle lingue e può sbagliare. Solo sul sito web.",
      "Ordinamento per famiglia linguistica, in ordine alfabetico o per continente. Le lingue con scheda dettagliata sono mostrate come grandi riquadri, le altre sotto di esse.",
      "La Lingua del giorno cambia a mezzanotte e indica sempre il motivo della scelta: un giorno legato a quella lingua (vedi il Calendario delle giornate delle lingue) oppure il viaggio intorno al mondo verso la lingua più vicina. Nella Giornata europea delle lingue (26 settembre) sono invece mostrate tutte le lingue europee dell’atlante."
     ]

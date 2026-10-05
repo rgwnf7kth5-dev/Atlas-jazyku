@@ -7,7 +7,7 @@ import Anthropic from "@anthropic-ai/sdk";
 
 const MODELY = { opus: "claude-opus-5-5", sonnet: "claude-sonnet-5-5", haiku: "claude-haiku-4-5" };
 const VYCHOZI = MODELY[process.env.ATLAS_AI_MODEL] || process.env.ATLAS_AI_MODEL || MODELY.sonnet;   // Sonnet 5.5 vybral uživatel 1. 10. 2026 po porovnání
-const ZKOLA = 4, MAX_OTAZKA = 300, MAX_VYSLEDEK = 8000, MAX_TELO = 60000;
+const ZKOLA = 4, MAX_OTAZKA = 300, MAX_VYSLEDEK = 8000, MAX_TELO = 600000;   // výsledky hledání na webu se posílají zpět celé (šifrovaný obsah), proto větší tělo
 
 const NASTROJE = [
   { name: "jazyky_statu", description: "Languages spoken in one country, from the atlas register (Glottolog countries). Returns the number of languages on the globe, the atlas languages with a detailed card and examples. Also highlights the country on the globe.",
@@ -36,12 +36,18 @@ const NASTROJE = [
       required: ["stat", "rodina", "vitalita", "razeni", "limit"], additionalProperties: false } },
   { name: "jazyky_eu", description: "The European Union in the atlas. druh 'uredni': the 24 official languages of the EU (Council Regulation No 1/1958 as amended) and the 27 member states; shows the EU flag panel and gold stars on the globe. druh 'clenske_staty': all languages the atlas register (Glottolog) lists in the 27 member states, the number per state and the atlas languages among them; lights them on the globe. Use for any question about EU languages, EU member states or official EU languages.",
     input_schema: { type: "object", properties: { druh: { type: "string", enum: ["uredni", "clenske_staty"], description: "'uredni' = the 24 official EU languages, 'clenske_staty' = all languages spoken in the member states." } }, required: ["druh"], additionalProperties: false } },
+  { name: "texty_atlasu", description: "Full-text search in the atlas's own encyclopedic texts: the pages on ancient civilizations and their writing, the Stories of languages (words on the move, how languages change, revival, mysteries) and the Journeys of languages (history of a language in stages: Czech, Kurdish, Hungarian, Romani, Maori, Turkish, English, Navajo, Yiddish, the alphabet, Maltese, Italian, Hebrew, Aramaic). These texts are checked against sources. Use for history, origins, revival, scripts or differences between stages of a language, before searching the web. Returns matching passages with the page name.",
+    input_schema: { type: "object", properties: { dotaz: { type: "string", description: "Keywords in the language of the question, e.g. 'ivrit oživení Ben Jehuda' or 'Hebrew revival'." } }, required: ["dotaz"], additionalProperties: false } },
 ].map(t => ({ ...t, strict: true }));
+/* hledání na webu (uživatel 5. 10. 2026: „čekal bych, že AI bude hledat informace, které atlas nemá, i mimo atlas“).
+   Běží na serveru Anthropicu, platí se zvlášť za každé hledání; ATLAS_AI_WEB=0 v Netlify ho vypne. */
+const WEB = process.env.ATLAS_AI_WEB !== "0";
+const webNastroj = model => ({ type: model === MODELY.haiku ? "web_search_20250305" : "web_search_20260209", name: "web_search", max_uses: 3 });
 
 const SYSTEM = `You are the question box of The Language Atlas (Atlas jazyků), an encyclopedic atlas of the world's languages on a globe, for students and adults.
 Answer only questions about languages, language families, scripts and where languages are spoken (including practical ones such as which language is used in a city one is moving to). Politely decline anything else in one sentence.
-Use the atlas tools for data: call the tool that fits, then answer from its result. The atlas has no data on cities or regions; for such details (e.g. that Bern is in the German-speaking part of Switzerland) you may add well-established, uncontroversial general knowledge in one short clause, but never invent numbers, dates or rankings - those must come from a tool. For rankings, counts and lists across countries or languages use zebricek_statu or vyber_jazyky; you may call several tools. For the European Union (official EU languages, languages of the member states) use jazyky_eu. Mention the data source the tool names (Glottolog, CLDR, Wikidata) when you give numbers. Do not add numbers, dates or claims that the tool result does not contain. If the tools cannot answer, say what the atlas can show instead.
-Answer in the language of the question (Czech, English, Italian or German), in two to four plain sentences, factual and neutral, without exclamations. In Czech use the formal "vy" form, and never refer to yourself with gendered forms such as "musel(a)" or "mohl(a)"; phrase it impersonally or with the atlas as the subject.
+Use the atlas tools first: call the tool that fits, then answer from its result. For history, origins, revival, scripts or stages of a language also search the atlas's own texts with texty_atlasu. When the atlas does not cover what was asked (grammar, vocabulary, pronunciation, differences between varieties or stages, history, cities and regions, anything recent), search the web with web_search and answer from what you find; prefer reliable sources such as encyclopedias, universities, language academies and official institutions, and say briefly which part comes from the web. Never invent numbers, dates or rankings - they must come from a tool or a web source. For rankings, counts and lists across countries or languages use zebricek_statu or vyber_jazyky; you may call several tools. For the European Union (official EU languages, languages of the member states) use jazyky_eu. Mention the data source the tool names (Glottolog, CLDR, Wikidata) when you give numbers. Do not add numbers, dates or claims that the tool result does not contain. If the tools cannot answer, say what the atlas can show instead.
+Answer in the language of the question (Czech, English, Italian or German), in two to six plain sentences, factual and neutral, without exclamations. In Czech use the formal "vy" form, and never refer to yourself with gendered forms such as "musel(a)" or "mohl(a)"; phrase it impersonally or with the atlas as the subject.
 The user cannot reply to your answer: every question is a new conversation. So never ask the user to choose or clarify. Take the most likely reading, answer it with the tools, and if another reading is likely, say in one short sentence what to type for it.
 Each tool result has a field na_globu saying what the atlas shows on the globe after your answer. Mention the globe only as that field describes it, and never if it says nothing is shown. If you call several tools, only the display of the last one that shows something remains on the globe.`;
 
@@ -57,14 +63,15 @@ const odpoved = (data, status = 200) => new Response(JSON.stringify(data), { sta
 
 /* povolený tvar konverzace: první zpráva je otázka (text), dál jen odpovědi AI a výsledky nástrojů */
 function platna(zpravy) {
-  if (!Array.isArray(zpravy) || !zpravy.length || zpravy.length > 1 + 2 * ZKOLA) return false;
+  if (!Array.isArray(zpravy) || !zpravy.length || zpravy.length > 3 + 2 * ZKOLA) return false;
   const prvni = zpravy[0];
   if (prvni.role !== "user" || typeof prvni.content !== "string" || !prvni.content.trim() || prvni.content.length > MAX_OTAZKA) return false;
   return zpravy.slice(1).every((z, k) => {
     if (k % 2 === 0) return z.role === "assistant" && Array.isArray(z.content);
     return z.role === "user" && Array.isArray(z.content) && z.content.length > 0 &&
       z.content.every(b => b && b.type === "tool_result" && typeof b.tool_use_id === "string" && typeof b.content === "string" && b.content.length <= MAX_VYSLEDEK);
-  }) && zpravy.length % 2 === 1;
+  }) && (zpravy.length % 2 === 1 ||                   // nebo pokračování přerušeného hledání na webu (pause_turn): končí odpovědí AI se server_tool_use
+    zpravy[zpravy.length - 1].content.some(b => b && b.type === "server_tool_use"));
 }
 
 export default async (req, context) => {
@@ -79,16 +86,22 @@ export default async (req, context) => {
 
   const client = new Anthropic();
   const parametry = {
-    model, max_tokens: 2000, system: SYSTEM, tools: NASTROJE, messages: telo.zpravy,
+    model, max_tokens: 3000, system: SYSTEM, tools: WEB ? [...NASTROJE, webNastroj(model)] : NASTROJE, messages: telo.zpravy,
     cache_control: { type: "ephemeral" },              // systém a nástroje se opakují – levnější další kola
   };
+  const zavolej = p => model === MODELY.haiku ? client.messages.create(p)
+    : client.beta.messages.create({ ...p, output_config: { effort: "low" },
+      betas: ["server-side-fallback-2026-07-01"], fallbacks: "default" });   // odmítnutí bezpečnostním filtrem přebere záložní model
   try {
     let r;
-    if (model === MODELY.haiku) r = await client.messages.create(parametry);
-    else r = await client.beta.messages.create({ ...parametry, output_config: { effort: "low" },
-      betas: ["server-side-fallback-2026-07-01"], fallbacks: "default" });   // odmítnutí bezpečnostním filtrem přebere záložní model
+    try { r = await zavolej(parametry); }
+    catch (e) {                                          // hledání na webu vypnuté v konzoli Anthropicu: odpovědět aspoň z atlasu
+      if (!(WEB && e instanceof Anthropic.BadRequestError && /web.?search/i.test(e.message) && telo.zpravy.length === 1)) throw e;
+      r = await zavolej({ ...parametry, tools: NASTROJE });
+    }
     return odpoved({ obsah: r.content, stop: r.stop_reason, model: r.model,
-      spotreba: { vstup: r.usage.input_tokens, cache: r.usage.cache_read_input_tokens || 0, vystup: r.usage.output_tokens } });
+      spotreba: { vstup: r.usage.input_tokens, cache: r.usage.cache_read_input_tokens || 0, vystup: r.usage.output_tokens,
+        web: r.usage.server_tool_use?.web_search_requests || 0 } });
   } catch (e) {
     if (e instanceof Anthropic.RateLimitError) return odpoved({ chyba: "limit-api" }, 429);
     if (e instanceof Anthropic.AuthenticationError) return odpoved({ chyba: "klic" }, 503);

@@ -640,6 +640,18 @@ function naradiAI(nazev, vstup){
       podskupiny: deti.slice(0, 12), jazyky_atlasu_s_kartou: atlas, zdroj: "Glottolog",
       na_globu: "rozsvícené všechny jazyky skupiny / all languages of the group lit"}, akce: {typ: "skupina", u: s.u, body: s.body}};
   }
+  if (nazev === "texty_atlasu") {
+    const sl = dotazSlova(vstup.dotaz || "").filter(function(w){ return w.length >= 4 && !DOTAZ_VYPLN.has(w); }).map(function(w){ return w.slice(0, Math.max(4, w.length - 2)); });
+    if (!sl.length) return {data: {chyba: "Prázdný dotaz / empty query"}};
+    const nalez = textyAtlasu().map(function(x){
+      const b = bezDiakritiky(x.text + " " + x.nazev).toLowerCase(); let n = 0;
+      sl.forEach(function(k){ if (b.indexOf(k) >= 0) n++; });
+      return {x: x, n: n};
+    }).filter(function(y){ return y.n >= Math.min(2, sl.length); }).sort(function(a, b){ return b.n - a.n; }).slice(0, 6);
+    return {data: {nalezeno: nalez.length, useky: nalez.map(function(y){ return {stranka: y.x.nazev, sekce: y.x.sekce, text: y.x.text.slice(0, 900)}; }),
+      zdroj: "texty atlasu (ověřené, se zdroji na stránkách) / atlas texts",
+      na_globu: "nic / nothing"}};
+  }
   if (nazev === "jazyky_eu") {
     if (vstup.druh === "clenske_staty") {
       const body = bodyEU(), m = new Set(EU_STATY), pocet = {};
@@ -667,6 +679,8 @@ function naradiAI(nazev, vstup){
   if (nazev === "srovnej_jazyky") {
     const a = najdiJazykAI(vstup.a), b = najdiJazykAI(vstup.b);
     if (!a || !b) return {data: {chyba: "Jazyk nenalezen / not found: " + (!a ? vstup.a : vstup.b)}};
+    /* „moderní ivrit × biblická hebrejština“ vedlo na tutéž kartu a AI pak psala o srovnání na glóbu (uživatel 5. 10. 2026) */
+    if ((a.j && b.j && a.j === b.j) || (!a.j && !b.j && a.i === b.i)) return {data: {chyba: "Oba názvy vedou na tentýž jazyk atlasu (" + (a.j ? a.j.n : jmenoBodu(a.i)) + "); jeho historické nebo moderní podoby atlas zvlášť nevede. / Both names lead to the same atlas language; the atlas has no separate data for its varieties or stages.", na_globu: "nic / nothing"}};
     const ra = retez(a.i), rb = retez(b.i);
     let spol = -1; for (let k = 0; k < Math.min(ra.length, rb.length) && ra[k] === rb[k]; k++) spol = ra[k];
     const pa = popisJazykaAI(a), pb = popisJazykaAI(b);
@@ -724,6 +738,28 @@ function naradiAI(nazev, vstup){
   }
   return {data: {chyba: "neznámý nástroj"}};
 }
+/* úseky vlastních textů atlasu pro AI: stránky Jazyků starověku a Příběhů, putování jazyků (5. 10. 2026) */
+let TEXTY_AI = null;
+function textyAtlasu(){
+  if (TEXTY_AI && TEXTY_AI.lang === T.lang) return TEXTY_AI.useky;
+  const useky = [], ciste = function(x){ return String(x).replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim(); };
+  const sber = function(o, nazev, sekce){
+    if (typeof o === "string") { const c = ciste(o); if (c.length >= 60) useky.push({nazev: nazev, sekce: sekce, text: c}); return; }
+    if (Array.isArray(o)) { o.forEach(function(y){ sber(y, nazev, sekce); }); return; }
+    if (o && typeof o === "object") Object.keys(o).forEach(function(k){ if (!/^(typ|id|fotka|foto|klic|obrazek|font|barva|url)$/.test(k)) sber(o[k], nazev, sekce); });
+  };
+  (STAROVEK_DATA.civilizace || []).forEach(function(c){
+    const x = c[T.lang] || c.en; if (!x) return;
+    sber([x.perex, x.oddily], x.nazev, c.sekce === "pribehy" ? T.medPribehy : T.medStarovek || "Jazyky starověku");
+  });
+  PUTOVANI.forEach(function(p){
+    const nz = p.nazev && (p.nazev[T.lang] || p.nazev.en);
+    if (p.uvod) sber(p.uvod[T.lang] || p.uvod.en, nz, "Putování jazyků");
+    (p.etapy || []).forEach(function(e){ const t = e.text && (e.text[T.lang] || e.text.en); if (t) sber((e.nazev && (e.nazev[T.lang] || e.nazev.en) || "") + " (" + (e.doba && (e.doba[T.lang] || e.doba.en) || "") + "): " + t, nz, "Putování jazyků"); });
+  });
+  TEXTY_AI = {lang: T.lang, useky: useky};
+  return useky;
+}
 function najdiSkupinuAI(nazev){
   if (!nazev) return null;
   const IX = pripravDotazy(), presne = bezDiakritiky(nazev).trim(), sl = dotazSlova(nazev);
@@ -757,7 +793,9 @@ async function zeptejSeAI(otazka, model, prubeh){
     if (!r.ok || d.chyba) throw new Error(d.chyba || ("http " + r.status));
     posl = d; ["vstup", "cache", "vystup"].forEach(function(k){ spotreba[k] += d.spotreba[k] || 0; });
     zpravy.push({role: "assistant", content: d.obsah});             // beze změny, i s bloky přemýšlení
+    if (d.stop === "pause_turn" && kolo < 4) { if (prubeh) prubeh("web"); continue; }   // hledání na webu běží dál na serveru Anthropicu
     const pouziti = d.obsah.filter(function(b){ return b.type === "tool_use"; });
+    if (d.obsah.some(function(b){ return b.type === "server_tool_use"; }) && prubeh) prubeh("web");
     if (d.stop !== "tool_use" || !pouziti.length) break;
     if (kolo === 4) break;
     if (prubeh) prubeh("data");
@@ -767,8 +805,11 @@ async function zeptejSeAI(otazka, model, prubeh){
       return {type: "tool_result", tool_use_id: b.id, content: JSON.stringify(v.data).slice(0, 7900)};
     })});
   }
-  const text = posl.obsah.filter(function(b){ return b.type === "text"; }).map(function(b){ return b.text; }).join("\n").trim();
-  return {text: posl.stop === "refusal" ? T.dotaz.aiOdmitnuto : (text || T.dotaz.aiNic), akce: akce, model: posl.model, spotreba: spotreba, zpravy: zpravy};
+  /* s hledáním na webu je odpověď rozsekaná do bloků podle citací – lepí se bez zalomení */
+  const bloky = posl.obsah.filter(function(b){ return b.type === "text"; });
+  const text = bloky.map(function(b){ return b.text; }).join("").trim(), zdroje = [], videno = {};
+  bloky.forEach(function(b){ (b.citations || []).forEach(function(c){ if (c.url && /^https?:/.test(c.url) && !videno[c.url]) { videno[c.url] = 1; zdroje.push({url: c.url, nazev: c.title || c.url}); } }); });
+  return {text: posl.stop === "refusal" ? T.dotaz.aiOdmitnuto : (text || T.dotaz.aiNic), zdroje: zdroje.slice(0, 6), akce: akce, model: posl.model, spotreba: spotreba, zpravy: zpravy};
 }
 function kartaAI(otazka){
   const U = T.dotaz, el = prvek("div", "dotaz-odpoved dotaz-ai");
@@ -793,12 +834,18 @@ function kartaAI(otazka){
     stav.setAttribute("role", "status"); stav.setAttribute("aria-live", "polite");
     const t0 = Date.now(), hodiny = setInterval(function(){ cas.textContent = (U.aiCas || "{s} s").replace("{s}", Math.round((Date.now() - t0) / 1000)); }, 1000);
     const konec = function(){ clearInterval(hodiny); el.classList.remove("ceka"); el.removeAttribute("aria-busy"); ceka.remove(); };
-    zeptejSeAI(otazka, undefined, function(f){ stav.textContent = {cte: U.aiKrokCte, data: U.aiKrokData, odpoved: U.aiKrokOdpoved}[f] || U.aiPremyslim; }).then(function(v){
+    zeptejSeAI(otazka, undefined, function(f){ stav.textContent = {cte: U.aiKrokCte, data: U.aiKrokData, web: U.aiKrokWeb, odpoved: U.aiKrokOdpoved}[f] || U.aiPremyslim; }).then(function(v){
       konec();
       el.textContent = "";
       el.appendChild(prvek("span", "do-stitek", "✦ " + U.aiStitek));
       v.text.split(/\n+/).forEach(function(odst){ el.appendChild(prvek("p", "do-ai-text", odst)); });
-      el.appendChild(prvek("small", "do-zdroj", U.aiPozn));
+      if (v.zdroje.length) {                     // zdroje z hledání na webu (5. 10. 2026)
+        const z = prvek("div", "do-ai-web"); z.appendChild(prvek("b", null, U.aiZdrojeWeb));
+        const ul = prvek("ul");
+        v.zdroje.forEach(function(q){ const li = prvek("li"), a = prvek("a", null, q.nazev); a.href = q.url; a.target = "_blank"; a.rel = "noopener noreferrer"; li.appendChild(a); ul.appendChild(li); });
+        z.appendChild(ul); el.appendChild(z);
+      }
+      el.appendChild(prvek("small", "do-zdroj", v.zdroje.length ? U.aiPoznWeb : U.aiPozn));
       provedAkciAI(v.akce);
     }, function(e){
       konec(); b.hidden = false;
