@@ -1159,6 +1159,10 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 .roh-ovladani .kolo:hover{opacity:1; color:var(--text); background:var(--plocha2)}
 .roh-ovladani .kolo svg{width:15px; height:15px}
 .roh-ovladani #tl-cely svg{width:18px; height:18px}
+.roh-ovladani .tl-eu{margin-top:6px; opacity:1}                   /* malé logo EU: otevře 24 úředních jazyků (5. 10. 2026) */
+.roh-ovladani .tl-eu svg{width:20px; height:20px; border-radius:50%; box-shadow:0 1px 3px rgb(0 20 80 / .35); transition:transform .2s}
+.roh-ovladani .tl-eu:hover{background:transparent}
+.roh-ovladani .tl-eu:hover svg{transform:scale(1.15)}
 .roh-ovladani .zoom-hod{font-family:var(--pismo-data); font-size:10.5px; color:var(--text3); padding:1px 0}
 .scena:is(.rezim-cesta,.rezim-eu,.rezim-brana) .roh-ovladani{display:none}
 /* Náhodný jazyk v panelu seznamu, vedle počtu jazyků */
@@ -1869,6 +1873,7 @@ html[lang="en"] .do-ceka-otazka{quotes:"“" "”"} html[lang="it"] .do-ceka-ota
     <button class="kolo" id="tl-priblizi" type="button" aria-label="Vergrößern" title="Vergrößern" data-t-aria-label="priblizit" data-t-title="priblizit"><svg aria-hidden="true"><use href="#i-plus"/></svg></button>
     <span class="zoom-hod" id="zoom-hod">1,0&times;</span>
     <button class="kolo" id="tl-oddal" type="button" aria-label="Verkleinern" title="Verkleinern" data-t-aria-label="oddalit" data-t-title="oddalit"><svg aria-hidden="true"><use href="#i-minus"/></svg></button>
+    <button class="kolo tl-eu" id="tl-eu" type="button" aria-label="Amtssprachen der Europäischen Union" title="Amtssprachen der Europäischen Union" data-t-aria-label="euTlacitko" data-t-title="euTlacitko"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#003399"/><path fill="#FFCC00" d="M12.00,3.25L12.41,4.43L13.66,4.46L12.67,5.22L13.03,6.42L12.00,5.70L10.97,6.42L11.33,5.22L10.34,4.46L11.59,4.43ZM15.50,4.19L15.91,5.37L17.16,5.40L16.17,6.15L16.53,7.35L15.50,6.64L14.47,7.35L14.83,6.15L13.84,5.40L15.09,5.37ZM18.06,6.75L18.47,7.93L19.73,7.96L18.73,8.72L19.09,9.92L18.06,9.20L17.03,9.92L17.40,8.72L16.40,7.96L17.65,7.93ZM19.00,10.25L19.41,11.43L20.66,11.46L19.67,12.22L20.03,13.42L19.00,12.70L17.97,13.42L18.33,12.22L17.34,11.46L18.59,11.43ZM18.06,13.75L18.47,14.93L19.73,14.96L18.73,15.72L19.09,16.92L18.06,16.20L17.03,16.92L17.40,15.72L16.40,14.96L17.65,14.93ZM15.50,16.31L15.91,17.50L17.16,17.52L16.17,18.28L16.53,19.48L15.50,18.76L14.47,19.48L14.83,18.28L13.84,17.52L15.09,17.50ZM12.00,17.25L12.41,18.43L13.66,18.46L12.67,19.22L13.03,20.42L12.00,19.70L10.97,20.42L11.33,19.22L10.34,18.46L11.59,18.43ZM8.50,16.31L8.91,17.50L10.16,17.52L9.17,18.28L9.53,19.48L8.50,18.76L7.47,19.48L7.83,18.28L6.84,17.52L8.09,17.50ZM5.94,13.75L6.35,14.93L7.60,14.96L6.60,15.72L6.97,16.92L5.94,16.20L4.91,16.92L5.27,15.72L4.27,14.96L5.53,14.93ZM5.00,10.25L5.41,11.43L6.66,11.46L5.67,12.22L6.03,13.42L5.00,12.70L3.97,13.42L4.33,12.22L3.34,11.46L4.59,11.43ZM5.94,6.75L6.35,7.93L7.60,7.96L6.60,8.72L6.97,9.92L5.94,9.20L4.91,9.92L5.27,8.72L4.27,7.96L5.53,7.93ZM8.50,4.19L8.91,5.37L10.16,5.40L9.17,6.15L9.53,7.35L8.50,6.64L7.47,7.35L7.83,6.15L6.84,5.40L8.09,5.37Z"/></svg></button>
    </div>
    <div class="panel-zobrazeni sklo" id="panel-zobrazeni" hidden>
     <div id="pz-hlavni">
@@ -1977,6 +1982,6 @@ html[lang="en"] .do-ceka-otazka{quotes:"“" "”"} html[lang="it"] .do-ceka-ota
  <dialog class="civ-okno" id="civ-okno" aria-labelledby="civ-nadpis"></dialog>
 </div>
 
-<script src="../js/atlas.74a0d83196.js"></script>
+<script src="../js/atlas.e2b89bd7cd.js"></script>
 </body>
 </html>

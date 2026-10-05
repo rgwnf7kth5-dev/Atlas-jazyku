@@ -1143,6 +1143,10 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 .roh-ovladani .kolo:hover{opacity:1; color:var(--text); background:var(--plocha2)}
 .roh-ovladani .kolo svg{width:15px; height:15px}
 .roh-ovladani #tl-cely svg{width:18px; height:18px}
+.roh-ovladani .tl-eu{margin-top:6px; opacity:1}                   /* malé logo EU: otevře 24 úředních jazyků (5. 10. 2026) */
+.roh-ovladani .tl-eu svg{width:20px; height:20px; border-radius:50%; box-shadow:0 1px 3px rgb(0 20 80 / .35); transition:transform .2s}
+.roh-ovladani .tl-eu:hover{background:transparent}
+.roh-ovladani .tl-eu:hover svg{transform:scale(1.15)}
 .roh-ovladani .zoom-hod{font-family:var(--pismo-data); font-size:10.5px; color:var(--text3); padding:1px 0}
 .scena:is(.rezim-cesta,.rezim-eu,.rezim-brana) .roh-ovladani{display:none}
 /* Náhodný jazyk v panelu seznamu, vedle počtu jazyků */

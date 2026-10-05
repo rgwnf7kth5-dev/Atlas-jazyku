@@ -375,6 +375,15 @@ jako italština, přepínač **CS · EN · IT · DE**. Název **Atlas der Sprach
   naskočí postupně, a se seznamem jazyků. Chorvatština v Glottologu tečku nemá (je pod srbochorvatštinou), její hvězdička
   stojí na `stred` z atlasu a klik na ni funguje přes `EU` (ne přes tečku). Zavírá se křížkem, Escape
   a tlačítkem Celý svět. Barvy vlajky `#003399` a `#FFCC00` jsou oficiální a patří jen sem.
+  **Od 5. 10. 2026 není jen tajemstvím** (uživatel: „nejenom eulang easter egg, někam dej malinké logo EU“): pod zoomem vpravo
+  nahoře na glóbu je malé kolečko s logem EU (`#tl-eu` v `.roh-ovladani`, na telefonu pod otazníkem), klik panel otevře / zavře.
+  **Hledání zná EU** (`dotazEU` v app.js; dřív AI odpovídala „atlas nemá údaje o úředních jazycích EU“ a ptala se zpět):
+  „jazyky EU“, „oficiální / úřední jazyky EU“, „EU languages“, „lingue dell'UE“, „EU-Sprachen“ → karta 24 úředních jazyků
+  a Enter otevře panel; se slovem členské státy / země / member / Stati / Mitgliedstaaten → **jazyky členských států**
+  (`bodyEU`: každá tečka, kterou Glottolog uvádí aspoň v jednom z 27 států `EU_STATY`, 243 jazyků) a rozsvítí je.
+  AI má nástroj **`jazyky_eu`** (`druh`: `uredni` / `clenske_staty`). Systémový pokyn AI nově: **neptat se zpět** (každá otázka
+  je nová konverzace, uživatel nemůže odpovědět – AI dřív končila „Co z toho chcete?“), česky bez rodových tvarů („musel(a)“),
+  odpovídat i italsky a německy.
 - **Brána do jiných světů – vymyšlené jazyky** (nápad uživatele 24. 9. 2026): klingonština, quenijština,
   sindarština, na'vijština, dothračtina a vznešená valyrijština v `data/vymyslene.json` (světy Qo'noS, Středozem,
   Pandora, Essos; validace hlídá strukturu). **Nejsou na glóbu, v běžném seznamu, v Jazyku dne ani v Překvap mě.**

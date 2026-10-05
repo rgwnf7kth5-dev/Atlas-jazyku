@@ -405,7 +405,9 @@ function pripravDotazy(){
 function rozumejDotazu(text){
   const slova = dotazSlova(text || "");
   if (slova.filter(function(w){ return w.length >= 2; }).length < 2 && !(slova.length === 1 && slova[0].length >= 6)) return null;
-  const IX = pripravDotazy(), spoust = slova.some(function(w){ return DOTAZ_SPUSTE.test(w); });
+  const IX = pripravDotazy(), spoust = slova.some(function(w){ return DOTAZ_SPUSTE.test(w) || /^eu-/.test(w) && DOTAZ_SPUSTE.test(w.slice(3)); });
+  const eu = dotazEU(slova, spoust);
+  if (eu) return eu;
   const jazyky = IX.jazyky.filter(function(x){
     if (atlasSkryty(x.j)) return false;
     return x.jmena.some(function(n){ return shodaNazvu(slova, n); }) || (x.prisl && slova.indexOf(x.prisl) >= 0);
@@ -433,11 +435,31 @@ function rozumejDotazu(text){
   if (jazyky.length === 1 && spoust) return {typ: "jazyk", j: jazyky[0].j, jmena: jmenaJazyku(jazyky)};
   return null;
 }
+/* Evropská unie (5. 10. 2026): „jazyky EU“ → 24 úředních jazyků (panel jako „eulang“), „jazyky členských států EU“ → všechny
+   jazyky, které rejstřík (Glottolog) uvádí v 27 členských státech. Dřív hledání EU neznalo a AI jen odmítla. */
+const EU_STATY = "AT BE BG CY CZ DE DK EE ES FI FR GR HR HU IE IT LT LU LV MT NL PL PT RO SE SI SK".split(" ");
+const EU_SLOVO = /^(eu|ue|eu-[a-z]+|evropsk[a-z]*|european|europea|europee|europaisch[a-z]*|unie|unii|uniji|union|unione|clensk[a-z]*|zemi|zemich|zeme|statu|staty|statech|member|states|countries|paesi|stati|staaten|lander|mitglied[a-z]*|uredni|oficialni|official|ufficiali|amtssprach[a-z]*|amtlichen?)$/;
+function dotazEU(slova, spoust){
+  const sl = slova.map(function(w){ return w.split("'").pop(); });
+  const zkratka = sl.some(function(w){ return w === "eu" || w === "ue" || /^eu-/.test(w); });
+  const unie = sl.some(function(w){ return /^(evropsk|european|europea|europee|europaisch)/.test(w); }) && sl.some(function(w){ return /^(unie|unii|uniji|union|unione)$/.test(w); });
+  const uredni = sl.some(function(w){ return /^(uredni|oficialni|official|ufficiali|amtssprach|amtlich)/.test(w); });
+  if (!(zkratka || unie) || !(spoust || uredni)) return null;
+  const staty = !uredni && sl.some(function(w){ return /^(clensk|zemi|zemich|statu|staty|statech|member|countr|paesi|stati$|staaten|lander|mitglied)/.test(w.replace(/^eu-/, "")); });
+  const d = {typ: "eu", staty: staty, jmena: sl.filter(function(w){ return EU_SLOVO.test(w); })};
+  if (staty) d.body = bodyEU();
+  return d;
+}
+function bodyEU(){                              // jazyky rejstříku, které Glottolog uvádí aspoň v jednom členském státě
+  const m = new Set(EU_STATY), body = [];
+  for (let i = 0; i < POCET_B; i++) if (!skryty[i] && (radek(i)[3] || "").split(" ").some(function(k){ return m.has(k); })) body.push(i);
+  return body;
+}
 function jmenaJazyku(x){ const j = []; x.forEach(function(y){ j.push.apply(j, y.jmena); if (y.prisl) j.push(y.prisl); }); return j; }
 /* rozumělo hledání celému dotazu? Každé slovo musí být buď součástí nalezeného názvu, nebo výplňové („jazyky“, „v“, „kde“…).
    S AI se pravidla použijí jen tehdy – jinak z otázky vytrhnou kousek („Je rumunština slovanský jazyk?“ → větev Slovanská) */
 const DOTAZ_VYPLN = new Set(("jazyk jazyky jazyku jazycich jazykem jazyce language languages rec reci mluvi mluvit mluvy se v ve na do z ze s o " +
-  "of in the a and i jake jakymi jaky jaka jakych ktere kterymi ktery kde where which what are is spoken speak speaks vsechny vsech najdi ukaz " +
+  "mi me mne prosim of in the a and i jake jakymi jaky jaka jakych ktere kterymi ktery kde where which what are is spoken speak speaks vsechny vsech najdi ukaz " +
   "find show all list seznam rodina rodiny rodin family families branch vetev vetve mezi between porovnej srovnej compare srovnani vs versus " +
   "co ma maji spolecneho have has common rozdil difference jsou " +
   "lingua lingue si parla parlano parlata parlate del della dello dell dei degli delle di nel nella nello nei negli quali quale che dove tutte " +
@@ -447,7 +469,8 @@ const DOTAZ_VYPLN = new Set(("jazyk jazyky jazyku jazycich jazykem jazyce langua
 function celyDotaz(text, d){
   if (!d || !d.jmena) return false;
   const nazvy = []; d.jmena.forEach(function(n){ dotazSlova(n).forEach(function(w){ if (w.length >= 2) nazvy.push(w); }); });
-  return dotazSlova(text).every(function(w){ return DOTAZ_VYPLN.has(w) || nazvy.some(function(n){ return shodaSlova(w, n); }); });
+  return dotazSlova(text).every(function(w){ const v = w.split("'").pop();      // „dell'UE“, „dell'Unione“
+    return DOTAZ_VYPLN.has(w) || DOTAZ_VYPLN.has(v) || nazvy.some(function(n){ return shodaSlova(w, n) || shodaSlova(v, n); }); });
 }
 function nazevSkupiny(u){
   const n = PD.uzly[u];
@@ -508,6 +531,7 @@ function provedDotaz(d){
   if (!d) return;
   if (d.typ === "ai") { d.karta.zeptej(); return; }
   if (d.typ === "zeme") ukazZemi(d.f);
+  else if (d.typ === "eu") { if (d.staty) ukazSkupinu(-1, d.body); else spustEU(); }
   else if (d.typ === "skupina") ukazSkupinu(d.u, d.body);
   else if (d.typ === "jazyk") vyber(d.j.id);
   else if (d.typ === "srovnani") { vyber(d.a.id); cekaNaDruhy = jazykZVyberu(); dokonciSrovnani(jazykAtlasu(d.b.id)); }
@@ -528,6 +552,9 @@ function kartaDotazu(d){
     popis = t("dotazPocet", {n: cislo(n) + " " + tvar(n, T.jazyk)});
     if (!d.koren) { let k = d.u; while (PD.nad[k] >= 0) k = PD.nad[k]; popis += " · " + t("dotazVRodine", {r: nazevSkupiny(k)}); }
     if (d.alias) popis += " " + U.ugrofin;
+  } else if (d.typ === "eu") {
+    if (d.staty) { titul = U.euStaty; popis = t("dotazPocet", {n: cislo(d.body.length) + " " + tvar(d.body.length, T.jazyk)}) + " " + U.euStatyPopis; }
+    else { titul = T.euNadpis; popis = U.euPopis; }
   } else if (d.typ === "srovnani") {
     titul = t("dotazSrovnani", {a: d.a.n, b: d.b.n}); popis = U.srovnaniPopis; akce = U.porovnej;
   } else if (d.typ === "jazyk") {
@@ -547,6 +574,7 @@ function bodyDotazu(d){
   if (!d) return null;
   if (d.typ === "zeme") return {body: new Set(bodyVeStatu(d.f.properties.name) || []), atlas: new Set((V_ZEMI[d.f.properties.name] || []).map(function(j){ return j.id; }))};
   if (d.typ === "skupina") return {body: new Set(d.body), atlas: new Set()};
+  if (d.typ === "eu") return d.staty ? {body: new Set(d.body), atlas: new Set()} : {body: new Set(), atlas: new Set(EU_JAZYKY)};
   if (d.typ === "srovnani") return {body: new Set(), atlas: new Set([d.a.id, d.b.id])};
   if (d.typ === "jazyk") return {body: new Set(), atlas: new Set([d.j.id])};
   return null;
@@ -611,6 +639,25 @@ function naradiAI(nazev, vstup){
     return {data: {nazev: nazevSkupiny(s.u), typ: s.koren ? "rodina / family" : "větev / branch", rodina: nazevSkupiny(k), jazyku_na_globu: s.body.length,
       podskupiny: deti.slice(0, 12), jazyky_atlasu_s_kartou: atlas, zdroj: "Glottolog",
       na_globu: "rozsvícené všechny jazyky skupiny / all languages of the group lit"}, akce: {typ: "skupina", u: s.u, body: s.body}};
+  }
+  if (nazev === "jazyky_eu") {
+    if (vstup.druh === "clenske_staty") {
+      const body = bodyEU(), m = new Set(EU_STATY), pocet = {};
+      body.forEach(function(i){ (radek(i)[3] || "").split(" ").forEach(function(k){ if (m.has(k)) pocet[k] = (pocet[k] || 0) + 1; }); });
+      const mn = new Set(body), atlas = JAZYKY.filter(function(j){ return BOD_ATLASU[j.id] >= 0 && mn.has(BOD_ATLASU[j.id]); }).map(function(j){ return j.n; });
+      return {data: {pocet_clenskych_statu: EU_STATY.length, pocet_jazyku: body.length,
+        staty: EU_STATY.slice().sort(function(a, b){ return (pocet[b] || 0) - (pocet[a] || 0); }).map(function(k){ return (PD.staty[T.lang][k] || k) + ": " + (pocet[k] || 0); }),
+        jazyky_atlasu_s_kartou: atlas, uredni_jazyky_eu: EU_JAZYKY.length,
+        zdroj: "Glottolog (countries of each language); a language counts once even if spoken in several member states",
+        na_globu: "rozsvícené všechny jazyky členských států (" + body.length + ") / all " + body.length + " languages of the member states lit"},
+        akce: {typ: "skupina", u: -1, body: body}};
+    }
+    return {data: {pocet_uradnich_jazyku: EU_JAZYKY.length, pocet_clenskych_statu: EU_STATY.length,
+      uredni_jazyky: EU_JAZYKY.map(function(x){ return PODLE_ID[x].n; }).sort(function(a, b){ return a.localeCompare(b, T.locale); }),
+      clenske_staty: EU_STATY.map(function(k){ return PD.staty[T.lang][k] || k; }),
+      zdroj: "Council Regulation No 1/1958 as amended (official languages of the EU)",
+      na_globu: "panel s vlajkou EU a seznamem jazyků, zlaté hvězdy u 24 úředních jazyků / EU flag panel with the list, gold stars on the 24 official languages"},
+      akce: {typ: "eu"}};
   }
   if (nazev === "info_o_jazyku") {
     const L = najdiJazykAI(vstup.jazyk);
@@ -689,6 +736,7 @@ function provedAkciAI(a){
   if (a.typ === "zeme") ukazZemi(a.f);
   else if (a.typ === "skupina") ukazSkupinu(a.u, a.body);
   else if (a.typ === "staty") ukazStaty(a.f);
+  else if (a.typ === "eu") spustEU();
   else if (a.typ === "jazyk") vyber(a.j.id);
   else if (a.typ === "bod") vyberBod(a.i);
   else if (a.typ === "srovnani") { if (a.a.j) vyber(a.a.j.id); else vyberBod(a.a.i); cekaNaDruhy = jazykZVyberu(); dokonciSrovnani(a.b); }
@@ -4612,6 +4660,7 @@ function ukonciEU(bezZoomu){
   if (!bezZoomu && !vybrany) odznac();
 }
 $("eu-zavrit").addEventListener("click", function(){ ukonciEU(); });
+$("tl-eu").addEventListener("click", function(){ if (eu && eu.druh === "eu") ukonciEU(); else spustEU(); });   // malé logo EU u ovládání glóbu
 /* ---------- cesty slov na glóbu (Příběhy jazyků, 26. 9. 2026) ----------
    Data data/cesty-slov.json: kroky slova tvoří strom; každý krok má oblouk od tečky rodiče. Oblouky se kreslí jeden po druhém
    v pořadí kroků (CESTA_KROK ms), přerušovaně, když je krok sporný; u tečky naskočí tvar slova a jazyk. Glóbus předtím
