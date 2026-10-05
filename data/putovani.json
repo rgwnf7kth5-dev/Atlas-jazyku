@@ -10997,7 +10997,6 @@
    "tecky": [
     "anci1244"
    ],
-   "koncept": true,
    "adresa": {
     "cs": "putovani-hebrejstina",
     "en": "journey-hebrew",
@@ -11160,10 +11159,10 @@
       "de": "Biblisches Hebräisch"
      },
      "text": {
-      "cs": "V královstvích Izrael a Juda byla hebrejština jazykem dvora, chrámu a písařů. Z té doby jsou například siloámský nápis v tunelu pod Jeruzalémem (asi 700 př. n. l.), dopisy z Lachiše (počátek 6. století př. n. l.) a stříbrné amulety z Ketef Hinom s kněžským požehnáním, pokládané za nejstarší známý text odpovídající pasáži hebrejské Bible. Moábský král Méša se na své stéle (asi 840 př. n. l.) chlubí vítězstvím nad Izraelem v jazyce velmi blízkém hebrejštině. Hebrejská Bible je psána hebrejsky, jen části knih Daniel a Ezdráš aramejsky.",
-      "en": "In the kingdoms of Israel and Judah, Hebrew was the language of the court, the temple and the scribes. From this period come, for example, the Siloam inscription in the tunnel under Jerusalem (c. 700 BCE), the Lachish letters (early 6th century BCE) and the silver amulets from Ketef Hinnom with the Priestly Blessing, considered the oldest known text corresponding to a passage of the Hebrew Bible. On his stele (c. 840 BCE) King Mesha of Moab boasts of a victory over Israel in a language very close to Hebrew. The Hebrew Bible is written in Hebrew, with only parts of the books of Daniel and Ezra in Aramaic.",
-      "it": "Nei regni di Israele e di Giuda l'ebraico era la lingua della corte, del tempio e degli scribi. Di quest'epoca sono, per esempio, l'iscrizione di Siloe nel tunnel sotto Gerusalemme (circa 700 a.C.), le lettere di Lachish (inizio del VI secolo a.C.) e gli amuleti d'argento di Ketef Hinnom con la benedizione sacerdotale, considerati il più antico testo noto corrispondente a un passo della Bibbia ebraica. Sulla sua stele (circa 840 a.C.) il re moabita Mesha si vanta di una vittoria su Israele in una lingua molto vicina all'ebraico. La Bibbia ebraica è scritta in ebraico, solo parti dei libri di Daniele ed Esdra sono in aramaico.",
-      "de": "In den Königreichen Israel und Juda war Hebräisch die Sprache des Hofes, des Tempels und der Schreiber. Aus dieser Zeit stammen etwa die Siloah-Inschrift im Tunnel unter Jerusalem (um 700 v. Chr.), die Lachisch-Briefe (Anfang des 6. Jahrhunderts v. Chr.) und die Silberamulette von Ketef Hinnom mit dem Priestersegen, die als ältester bekannter Text gelten, der einer Stelle der Hebräischen Bibel entspricht. Auf seiner Stele (um 840 v. Chr.) rühmt sich König Mescha von Moab eines Sieges über Israel in einer dem Hebräischen sehr nahen Sprache. Die Hebräische Bibel ist hebräisch geschrieben, nur Teile der Bücher Daniel und Esra aramäisch."
+      "cs": "V královstvích Izrael a Juda byla hebrejština jazykem dvora, chrámu a písařů. Z té doby jsou například siloámský nápis v tunelu pod Jeruzalémem (asi 700 př. n. l.), dopisy z Lachiše (počátek 6. století př. n. l.) a stříbrné amulety z Ketef Hinom s kněžským požehnáním, pokládané za nejstarší známý text odpovídající pasáži hebrejské Bible. Moábský král Méša se na své stéle (asi 840 př. n. l.) chlubí vítězstvím nad Izraelem v jazyce velmi blízkém hebrejštině. Hebrejská Bible je psána hebrejsky; aramejsky jsou jen části knih Daniel (2,4b–7,28) a Ezdráš (4,8–6,18; 7,12–26), jeden verš u Jeremiáše (10,11) a dvě slova v Genesis (31,47).",
+      "en": "In the kingdoms of Israel and Judah, Hebrew was the language of the court, the temple and the scribes. From this period come, for example, the Siloam inscription in the tunnel under Jerusalem (c. 700 BCE), the Lachish letters (early 6th century BCE) and the silver amulets from Ketef Hinnom with the Priestly Blessing, considered the oldest known text corresponding to a passage of the Hebrew Bible. On his stele (c. 840 BCE) King Mesha of Moab boasts of a victory over Israel in a language very close to Hebrew. The Hebrew Bible is written in Hebrew; only parts of Daniel (2:4b–7:28) and Ezra (4:8–6:18; 7:12–26), one verse of Jeremiah (10:11) and two words in Genesis (31:47) are in Aramaic.",
+      "it": "Nei regni di Israele e di Giuda l'ebraico era la lingua della corte, del tempio e degli scribi. Di quest'epoca sono, per esempio, l'iscrizione di Siloe nel tunnel sotto Gerusalemme (circa 700 a.C.), le lettere di Lachish (inizio del VI secolo a.C.) e gli amuleti d'argento di Ketef Hinnom con la benedizione sacerdotale, considerati il più antico testo noto corrispondente a un passo della Bibbia ebraica. Sulla sua stele (circa 840 a.C.) il re moabita Mesha si vanta di una vittoria su Israele in una lingua molto vicina all'ebraico. La Bibbia ebraica è scritta in ebraico; sono in aramaico solo parti dei libri di Daniele (2,4b–7,28) ed Esdra (4,8–6,18; 7,12–26), un versetto di Geremia (10,11) e due parole della Genesi (31,47).",
+      "de": "In den Königreichen Israel und Juda war Hebräisch die Sprache des Hofes, des Tempels und der Schreiber. Aus dieser Zeit stammen etwa die Siloah-Inschrift im Tunnel unter Jerusalem (um 700 v. Chr.), die Lachisch-Briefe (Anfang des 6. Jahrhunderts v. Chr.) und die Silberamulette von Ketef Hinnom mit dem Priestersegen, die als ältester bekannter Text gelten, der einer Stelle der Hebräischen Bibel entspricht. Auf seiner Stele (um 840 v. Chr.) rühmt sich König Mescha von Moab eines Sieges über Israel in einer dem Hebräischen sehr nahen Sprache. Die Hebräische Bibel ist hebräisch geschrieben; aramäisch sind nur Teile der Bücher Daniel (2,4b–7,28) und Esra (4,8–6,18; 7,12–26), ein Vers bei Jeremia (10,11) und zwei Wörter in Genesis (31,47)."
      },
      "oblasti": [
       {
@@ -11232,10 +11231,10 @@
     {
      "id": "babylon",
      "doba": {
-      "cs": "586 př. n. l. – 1. století n. l.",
-      "en": "586 BCE – 1st century CE",
-      "it": "586 a.C. – I secolo d.C.",
-      "de": "586 v. Chr. – 1. Jahrhundert n. Chr."
+      "cs": "587/586 př. n. l. – 1. století n. l.",
+      "en": "587/586 BCE – 1st century CE",
+      "it": "587/586 a.C. – I secolo d.C.",
+      "de": "587/586 v. Chr. – 1. Jahrhundert n. Chr."
      },
      "pohled": [
       39.8,
@@ -11251,7 +11250,7 @@
      "text": {
       "cs": "Roku 587 nebo 586 př. n. l. dobyli Babyloňané Jeruzalém a část obyvatel Judska odvlekli do Babylonie. Perský král Kýros roku 538 př. n. l. dovolil návrat, velká židovská obec však v Babylonii zůstala. V Perské říši byla úředním jazykem aramejština; Židé od ní převzali písmo, z něhož vzniklo dnešní hebrejské „čtvercové“ písmo, a postupně i jazyk běžného hovoru. Hebrejsky se ale dál psalo a v Judsku i mluvilo: svitky od Mrtvého moře (3. století př. n. l. – 1. století n. l.) jsou většinou hebrejské, další aramejské a řecké.",
       "en": "In 587 or 586 BCE the Babylonians took Jerusalem and deported part of the population of Judah to Babylonia. In 538 BCE the Persian king Cyrus permitted the return, but a large Jewish community remained in Babylonia. Aramaic was the official language of the Persian Empire; from it the Jews adopted the script from which today's Hebrew \"square\" script developed, and gradually also the language of everyday speech. Hebrew, however, continued to be written and, in Judea, spoken: the Dead Sea Scrolls (3rd century BCE – 1st century CE) are mostly in Hebrew, others in Aramaic and Greek.",
-      "it": "Nel 587 o 586 a.C. i babilonesi presero Gerusalemme e deportarono in Babilonia parte della popolazione di Giuda. Nel 538 a.C. il re persiano Ciro permise il ritorno, ma in Babilonia rimase una grande comunità ebraica. Lingua ufficiale dell'Impero persiano era l'aramaico; dagli aramei gli ebrei adottarono la scrittura da cui si sviluppò l'odierna scrittura ebraica «quadrata» e, gradualmente, anche la lingua parlata quotidiana. L'ebraico però continuò a essere scritto e, in Giudea, anche parlato: i manoscritti del Mar Morto (III secolo a.C. – I secolo d.C.) sono per lo più in ebraico, altri in aramaico e in greco.",
+      "it": "Nel 587 o 586 a.C. i babilonesi presero Gerusalemme e deportarono in Babilonia parte della popolazione di Giuda. Nel 538 a.C. il re persiano Ciro permise il ritorno, ma in Babilonia rimase una grande comunità ebraica. Lingua ufficiale dell'Impero persiano era l'aramaico; da esso gli ebrei adottarono la scrittura da cui si sviluppò l'odierna scrittura ebraica «quadrata» e, gradualmente, anche la lingua parlata quotidiana. L'ebraico però continuò a essere scritto e, in Giudea, anche parlato: i manoscritti del Mar Morto (III secolo a.C. – I secolo d.C.) sono per lo più in ebraico, altri in aramaico e in greco.",
       "de": "587 oder 586 v. Chr. eroberten die Babylonier Jerusalem und verschleppten einen Teil der Bevölkerung Judas nach Babylonien. 538 v. Chr. erlaubte der Perserkönig Kyros die Rückkehr, doch eine große jüdische Gemeinde blieb in Babylonien. Amtssprache des Perserreichs war das Aramäische; von ihm übernahmen die Juden die Schrift, aus der sich die heutige hebräische „Quadratschrift“ entwickelte, und nach und nach auch die Umgangssprache. Hebräisch wurde aber weiter geschrieben und in Judäa auch gesprochen: Die Schriftrollen vom Toten Meer (3. Jahrhundert v. Chr. – 1. Jahrhundert n. Chr.) sind überwiegend hebräisch, andere aramäisch und griechisch."
      },
      "oblasti": [
@@ -11331,10 +11330,10 @@
        ],
        "barva": "dia",
        "popisek": {
-        "cs": "do Babylonie (586 př. n. l.)",
-        "en": "to Babylonia (586 BCE)",
-        "it": "verso Babilonia (586 a.C.)",
-        "de": "nach Babylonien (586 v. Chr.)"
+        "cs": "do Babylonie (587/586 př. n. l.)",
+        "en": "to Babylonia (587/586 BCE)",
+        "it": "verso Babilonia (587/586 a.C.)",
+        "de": "nach Babylonien (587/586 v. Chr.)"
        }
       }
      ]
@@ -11359,10 +11358,10 @@
       "de": "Die Sprache der Gelehrten und des Gebets"
      },
      "text": {
-      "cs": "Kolem roku 200 n. l. dal Juda ha-Nasi v Galileji písemnou podobu Mišně, sbírce ústního zákona psané hebrejsky; její mišnaická hebrejština se od biblické liší slovní zásobou i mluvnicí. Jako mateřský jazyk hebrejština přibližně v té době ustoupila aramejštině; kdy přesně, je sporné. Gemara obou talmudů, galilejského i babylonského, je psána převážně aramejsky. Hebrejština zůstala jazykem modlitby, Písma a učenosti. Masoreti v Tiberiadě v 7.–10. století doplnili k písmenům znaménka pro samohlásky a přízvuk (tiberiadská vokalizace); jejich práci zachovává Aleppský kodex (asi 930).",
-      "en": "Around 200 CE Judah ha-Nasi gave written form in Galilee to the Mishnah, a collection of the oral law written in Hebrew; its Mishnaic Hebrew differs from the biblical language in vocabulary and grammar. As a mother tongue, Hebrew gave way to Aramaic at about that time; exactly when is disputed. The Gemara of both Talmuds, the Galilean and the Babylonian, is written mainly in Aramaic. Hebrew remained the language of prayer, scripture and learning. The Masoretes of Tiberias added signs for vowels and accents to the letters in the 7th–10th centuries (Tiberian vocalization); their work is preserved in the Aleppo Codex (c. 930).",
-      "it": "Intorno al 200 d.C. Giuda ha-Nasi diede in Galilea forma scritta alla Mishnah, raccolta della legge orale redatta in ebraico; il suo ebraico mishnaico differisce da quello biblico per lessico e grammatica. Come lingua materna l'ebraico cedette il passo all'aramaico più o meno in quel periodo; quando esattamente, è controverso. La Gemara di entrambi i Talmud, quello galilaico e quello babilonese, è scritta prevalentemente in aramaico. L'ebraico rimase la lingua della preghiera, della Scrittura e dello studio. Tra il VII e il X secolo i masoreti di Tiberiade aggiunsero alle lettere i segni per le vocali e l'accento (vocalizzazione tiberiense); il loro lavoro è conservato nel Codice di Aleppo (circa 930).",
-      "de": "Um 200 n. Chr. brachte Juda ha-Nasi in Galiläa die Mischna, eine hebräisch verfasste Sammlung des mündlichen Gesetzes, in schriftliche Form; ihr mischnaisches Hebräisch unterscheidet sich im Wortschatz und in der Grammatik vom biblischen. Als Muttersprache wich das Hebräische ungefähr zu dieser Zeit dem Aramäischen; wann genau, ist umstritten. Die Gemara beider Talmude, des galiläischen und des babylonischen, ist überwiegend aramäisch geschrieben. Hebräisch blieb die Sprache des Gebets, der Schrift und der Gelehrsamkeit. Die Masoreten von Tiberias fügten im 7.–10. Jahrhundert den Buchstaben Zeichen für Vokale und Akzente hinzu (tiberische Vokalisation); ihre Arbeit bewahrt der Aleppo-Kodex (um 930)."
+      "cs": "Kolem roku 200 n. l. uspořádal Juda ha-Nasi v Galileji Mišnu, sbírku ústního zákona v hebrejštině (zda ji už tehdy dal i zapsat, je sporné); její mišnaická hebrejština se od biblické liší slovní zásobou i mluvnicí. Jako mateřský jazyk hebrejština přibližně v té době ustoupila aramejštině; kdy přesně, je sporné. Gemara obou talmudů, jeruzalémského (palestinského) i babylonského, je psána převážně aramejsky. Hebrejština zůstala jazykem modlitby, Písma a učenosti. Masoreti v Tiberiadě v 7.–10. století doplnili k písmenům znaménka pro samohlásky a přízvuk (tiberiadská vokalizace); jejich práci zachovává Aleppský kodex (asi 930).",
+      "en": "Around 200 CE Judah ha-Nasi edited the Mishnah in Galilee, a collection of the oral law in Hebrew (whether he also had it written down is disputed); its Mishnaic Hebrew differs from the biblical language in vocabulary and grammar. As a mother tongue, Hebrew gave way to Aramaic at about that time; exactly when is disputed. The Gemara of both Talmuds, the Jerusalem (Palestinian) and the Babylonian, is written mainly in Aramaic. Hebrew remained the language of prayer, scripture and learning. The Masoretes of Tiberias added signs for vowels and accents to the letters in the 7th–10th centuries (Tiberian vocalization); their work is preserved in the Aleppo Codex (c. 930).",
+      "it": "Intorno al 200 d.C. Giuda ha-Nasi redasse in Galilea la Mishnah, raccolta della legge orale in ebraico (se l'abbia già anche messa per iscritto è controverso); il suo ebraico mishnaico differisce da quello biblico per lessico e grammatica. Come lingua materna l'ebraico cedette il passo all'aramaico più o meno in quel periodo; quando esattamente, è controverso. La Gemara di entrambi i Talmud, quello di Gerusalemme (palestinese) e quello babilonese, è scritta prevalentemente in aramaico. L'ebraico rimase la lingua della preghiera, della Scrittura e dello studio. Tra il VII e il X secolo i masoreti di Tiberiade aggiunsero alle lettere i segni per le vocali e l'accento (vocalizzazione tiberiense); il loro lavoro è conservato nel Codice di Aleppo (circa 930).",
+      "de": "Um 200 n. Chr. redigierte Juda ha-Nasi in Galiläa die Mischna, eine Sammlung des mündlichen Gesetzes in hebräischer Sprache (ob er sie auch schriftlich fixieren ließ, ist umstritten); ihr mischnaisches Hebräisch unterscheidet sich im Wortschatz und in der Grammatik vom biblischen. Als Muttersprache wich das Hebräische ungefähr zu dieser Zeit dem Aramäischen; wann genau, ist umstritten. Die Gemara beider Talmude, des Jerusalemer (palästinischen) und des babylonischen, ist überwiegend aramäisch geschrieben. Hebräisch blieb die Sprache des Gebets, der Schrift und der Gelehrsamkeit. Die Masoreten von Tiberias fügten im 7.–10. Jahrhundert den Buchstaben Zeichen für Vokale und Akzente hinzu (tiberische Vokalisation); ihre Arbeit bewahrt der Aleppo-Kodex (um 930)."
      },
      "oblasti": [
       {
@@ -11421,10 +11420,10 @@
       "de": "Schriftsprache in der Diaspora"
      },
      "text": {
-      "cs": "Židé v diaspoře mluvili jazyky svého okolí nebo vlastními židovskými jazyky (jidiš, ladino, židovská arabština), hebrejsky však psali o náboženství, právu, filozofii i poezii. V al-Andalusu vzkvétala v 11. a 12. století hebrejská poezie (Šelomo ibn Gabirol, Jehuda ha-Levi), v Troyes psal Raši (1040–1105) komentáře k Bibli a Talmudu. První datovaná tištěná hebrejská kniha vyšla roku 1475 v Reggio di Calabria. Káhirská geniza ve Fustátu uchovala stovky tisíc zlomků rukopisů.",
-      "en": "Jews in the diaspora spoke the languages of their surroundings or their own Jewish languages (Yiddish, Ladino, Judeo-Arabic), but they wrote in Hebrew on religion, law, philosophy and poetry. In al-Andalus Hebrew poetry flourished in the 11th and 12th centuries (Solomon ibn Gabirol, Judah Halevi); in Troyes Rashi (1040–1105) wrote commentaries on the Bible and the Talmud. The first dated printed Hebrew book appeared in 1475 in Reggio di Calabria. The Cairo Genizah in Fustat preserved hundreds of thousands of manuscript fragments.",
-      "it": "Nella diaspora gli ebrei parlavano le lingue dei luoghi in cui vivevano o proprie lingue giudaiche (yiddish, giudeo-spagnolo, giudeo-arabo), ma scrivevano in ebraico di religione, diritto, filosofia e poesia. In al-Andalus la poesia ebraica fiorì nell'XI e nel XII secolo (Salomon ibn Gabirol, Yehuda ha-Levi); a Troyes Rashi (1040–1105) scrisse commenti alla Bibbia e al Talmud. Il primo libro ebraico a stampa datato uscì nel 1475 a Reggio Calabria. La Genizah del Cairo, a Fustat, ha conservato centinaia di migliaia di frammenti di manoscritti.",
-      "de": "In der Diaspora sprachen Juden die Sprachen ihrer Umgebung oder eigene jüdische Sprachen (Jiddisch, Judenspanisch, Judäo-Arabisch), schrieben aber hebräisch über Religion, Recht, Philosophie und Dichtung. In al-Andalus blühte im 11. und 12. Jahrhundert die hebräische Dichtung (Salomo ibn Gabirol, Jehuda ha-Levi), in Troyes schrieb Raschi (1040–1105) Kommentare zu Bibel und Talmud. Das erste datierte gedruckte hebräische Buch erschien 1475 in Reggio di Calabria. Die Kairoer Geniza in Fustat bewahrte Hunderttausende Handschriftenfragmente."
+      "cs": "Židé v diaspoře mluvili jazyky svého okolí nebo vlastními židovskými jazyky (jidiš, ladino, židovská arabština), hebrejsky však psali o náboženství, právu, filozofii i poezii; v islámském světě vznikala mnohá díla, hlavně filozofická, i v židovské arabštině (například Maimonidův Průvodce zbloudilých). V al-Andalusu vzkvétala v 11. a 12. století hebrejská poezie (Šelomo ibn Gabirol, Jehuda ha-Levi), v Troyes psal Raši (1040–1105) komentáře k Bibli a Talmudu. První datovaná tištěná hebrejská kniha vyšla roku 1475 v Reggio di Calabria. Káhirská geniza ve Fustátu uchovala stovky tisíc zlomků rukopisů.",
+      "en": "Jews in the diaspora spoke the languages of their surroundings or their own Jewish languages (Yiddish, Ladino, Judeo-Arabic), but they wrote in Hebrew on religion, law, philosophy and poetry; in the Islamic world many works, especially philosophical ones, were also written in Judeo-Arabic (for example Maimonides' Guide for the Perplexed). In al-Andalus Hebrew poetry flourished in the 11th and 12th centuries (Solomon ibn Gabirol, Judah Halevi); in Troyes Rashi (1040–1105) wrote commentaries on the Bible and the Talmud. The first dated printed Hebrew book appeared in 1475 in Reggio di Calabria. The Cairo Genizah in Fustat preserved hundreds of thousands of manuscript fragments.",
+      "it": "Nella diaspora gli ebrei parlavano le lingue dei luoghi in cui vivevano o proprie lingue giudaiche (yiddish, giudeo-spagnolo, giudeo-arabo), ma scrivevano in ebraico di religione, diritto, filosofia e poesia; nel mondo islamico molte opere, soprattutto filosofiche, furono scritte anche in giudeo-arabo (per esempio la Guida dei perplessi di Maimonide). In al-Andalus la poesia ebraica fiorì nell'XI e nel XII secolo (Salomon ibn Gabirol, Yehuda ha-Levi); a Troyes Rashi (1040–1105) scrisse commenti alla Bibbia e al Talmud. Il primo libro ebraico a stampa datato uscì nel 1475 a Reggio Calabria. La Genizah del Cairo, a Fustat, ha conservato centinaia di migliaia di frammenti di manoscritti.",
+      "de": "In der Diaspora sprachen Juden die Sprachen ihrer Umgebung oder eigene jüdische Sprachen (Jiddisch, Judenspanisch, Judäo-Arabisch), schrieben aber hebräisch über Religion, Recht, Philosophie und Dichtung; in der islamischen Welt entstanden viele Werke, vor allem philosophische, auch auf Judäo-Arabisch (etwa der „Führer der Unschlüssigen“ des Maimonides). In al-Andalus blühte im 11. und 12. Jahrhundert die hebräische Dichtung (Salomo ibn Gabirol, Jehuda ha-Levi), in Troyes schrieb Raschi (1040–1105) Kommentare zu Bibel und Talmud. Das erste datierte gedruckte hebräische Buch erschien 1475 in Reggio di Calabria. Die Kairoer Geniza in Fustat bewahrte Hunderttausende Handschriftenfragmente."
      },
      "oblasti": [
       {
@@ -11505,10 +11504,10 @@
     {
      "id": "oziveni",
      "doba": {
-      "cs": "1881 – 1948",
-      "en": "1881 – 1948",
-      "it": "1881 – 1948",
-      "de": "1881–1948"
+      "cs": "konec 18. století – 1948",
+      "en": "late 18th century – 1948",
+      "it": "fine del XVIII secolo – 1948",
+      "de": "spätes 18. Jahrhundert – 1948"
      },
      "pohled": [
       29.0,
@@ -11591,12 +11590,8 @@
        "id": "alija",
        "body": [
         [
-         27.85,
-         55.4
-        ],
-        [
-         29.5,
-         50.5
+         36.23,
+         49.99
         ],
         [
          30.73,
@@ -11607,24 +11602,132 @@
          44.0
         ],
         [
-         29.15,
-         41.25
+         29.135,
+         41.235
         ],
         [
-         28.98,
+         29.115,
+         41.205
+        ],
+        [
+         29.095,
+         41.185
+        ],
+        [
+         29.07,
+         41.168
+        ],
+        [
+         29.065,
+         41.15
+        ],
+        [
+         29.075,
+         41.135
+        ],
+        [
+         29.068,
+         41.11
+        ],
+        [
+         29.06,
+         41.09
+        ],
+        [
+         29.052,
+         41.072
+        ],
+        [
+         29.04,
+         41.055
+        ],
+        [
+         29.015,
+         41.042
+        ],
+        [
+         29.0,
+         41.035
+        ],
+        [
+         29.003,
          41.02
         ],
         [
-         28.0,
-         40.75
+         29.0,
+         41.0
         ],
         [
-         26.6,
-         40.3
+         28.98,
+         40.985
         ],
         [
-         26.1,
-         40.0
+         28.4,
+         40.85
+        ],
+        [
+         27.6,
+         40.78
+        ],
+        [
+         27.3,
+         40.64
+        ],
+        [
+         27.05,
+         40.54
+        ],
+        [
+         26.85,
+         40.47
+        ],
+        [
+         26.7,
+         40.43
+        ],
+        [
+         26.645,
+         40.37
+        ],
+        [
+         26.585,
+         40.31
+        ],
+        [
+         26.515,
+         40.26
+        ],
+        [
+         26.46,
+         40.225
+        ],
+        [
+         26.4,
+         40.2
+        ],
+        [
+         26.385,
+         40.17
+        ],
+        [
+         26.385,
+         40.145
+        ],
+        [
+         26.355,
+         40.125
+        ],
+        [
+         26.32,
+         40.1
+        ],
+        [
+         26.22,
+         40.05
+        ],
+        [
+         26.0,
+         39.9
         ],
         [
          25.7,
@@ -11647,12 +11750,12 @@
          37.0
         ],
         [
-         26.6,
-         36.2
+         26.65,
+         36.45
         ],
         [
-         26.65,
-         35.5
+         26.6,
+         35.35
         ],
         [
          30.0,
@@ -11665,10 +11768,10 @@
        ],
        "barva": "ziv",
        "popisek": {
-        "cs": "první alija (od 1882)",
-        "en": "First Aliyah (from 1882)",
-        "it": "prima aliyah (dal 1882)",
-        "de": "Erste Alija (ab 1882)"
+        "cs": "první alija: Bilu z Charkova (1882)",
+        "en": "First Aliyah: Bilu from Kharkiv (1882)",
+        "it": "prima aliyah: i Bilu da Charkiv (1882)",
+        "de": "Erste Alija: Bilu aus Charkiw (1882)"
        }
       }
      ]
@@ -11694,34 +11797,39 @@
       "de": "Hebräisch heute"
      },
      "text": {
-      "cs": "Hebrejština je státním jazykem Izraele; podle zákona z roku 2018 má arabština, do té doby rovněž úřední, zvláštní postavení. Mluví jí asi 9 milionů lidí, rodilých mluvčích je přes 5 milionů. Normu udržuje Akademie hebrejského jazyka (od roku 1953). Píše se zprava doleva čtvercovým písmem, obvykle bez znamének pro samohlásky. Moderní hebrejština přejala slova mimo jiné z jidiš, arabštiny, ruštiny a angličtiny a je nejznámějším příkladem jazyka, který se po staletích, kdy jím nikdo nemluvil jako mateřským, stal znovu mateřským jazykem celé společnosti.",
-      "en": "Hebrew is the state language of Israel; under a law of 2018, Arabic, until then also an official language, has a special status. It is spoken by about 9 million people, of whom more than 5 million are native speakers. The norm is maintained by the Academy of the Hebrew Language (since 1953). It is written from right to left in the square script, usually without vowel signs. Modern Hebrew has borrowed words from Yiddish, Arabic, Russian and English, among others, and is the best-known example of a language that, after centuries in which no one spoke it as a mother tongue, became the mother tongue of a whole society again.",
-      "it": "L'ebraico è la lingua di Stato di Israele; secondo una legge del 2018 l'arabo, fino ad allora anch'esso lingua ufficiale, ha uno status speciale. Lo parlano circa 9 milioni di persone, di cui oltre 5 milioni madrelingua. La norma è curata dall'Accademia della lingua ebraica (dal 1953). Si scrive da destra a sinistra in scrittura quadrata, di solito senza i segni vocalici. L'ebraico moderno ha preso parole, tra l'altro, dallo yiddish, dall'arabo, dal russo e dall'inglese ed è l'esempio più noto di una lingua che, dopo secoli in cui nessuno la parlava come lingua materna, è tornata a essere la lingua materna di un'intera società.",
-      "de": "Hebräisch ist die Staatssprache Israels; nach einem Gesetz von 2018 hat das Arabische, bis dahin ebenfalls Amtssprache, einen besonderen Status. Es wird von etwa 9 Millionen Menschen gesprochen, davon über 5 Millionen Muttersprachlern. Die Norm pflegt die Akademie der hebräischen Sprache (seit 1953). Geschrieben wird von rechts nach links in Quadratschrift, meist ohne Vokalzeichen. Das moderne Hebräisch hat Wörter unter anderem aus dem Jiddischen, Arabischen, Russischen und Englischen übernommen und ist das bekannteste Beispiel einer Sprache, die nach Jahrhunderten, in denen niemand sie als Muttersprache sprach, wieder zur Muttersprache einer ganzen Gesellschaft wurde."
+      "cs": "Hebrejština je státním jazykem Izraele. Arabština byla do roku 2018 rovněž pokládána za úřední jazyk; základní zákon z roku 2018 jí přiznává „zvláštní postavení“ a stanoví, že tím není dotčeno postavení, které měla v praxi předtím. Mluví jí asi 9 milionů lidí, rodilých mluvčích je přes 5 milionů. Normu udržuje Akademie hebrejského jazyka (od roku 1953). Píše se zprava doleva čtvercovým písmem, obvykle bez znamének pro samohlásky. Moderní hebrejština přejala slova mimo jiné z jidiš, arabštiny, ruštiny a angličtiny a je nejznámějším příkladem jazyka, který se po staletích, kdy jím nikdo nemluvil jako mateřským, stal znovu mateřským jazykem celé společnosti.",
+      "en": "Hebrew is the state language of Israel. Arabic was also regarded as an official language until 2018; the Basic Law of 2018 gives it a \"special status\" and states that this does not affect the status it had in practice before. It is spoken by about 9 million people, of whom more than 5 million are native speakers. The norm is maintained by the Academy of the Hebrew Language (since 1953). It is written from right to left in the square script, usually without vowel signs. Modern Hebrew has borrowed words from Yiddish, Arabic, Russian and English, among others, and is the best-known example of a language that, after centuries in which no one spoke it as a mother tongue, became the mother tongue of a whole society again.",
+      "it": "L'ebraico è la lingua dello Stato di Israele. Fino al 2018 anche l'arabo era considerato lingua ufficiale; la Legge fondamentale del 2018 gli riconosce uno «status speciale» e stabilisce che ciò non pregiudica lo status di cui godeva in pratica in precedenza. Lo parlano circa 9 milioni di persone, di cui oltre 5 milioni madrelingua. La norma è curata dall'Accademia della lingua ebraica (dal 1953). Si scrive da destra a sinistra in scrittura quadrata, di solito senza i segni vocalici. L'ebraico moderno ha preso parole, tra l'altro, dallo yiddish, dall'arabo, dal russo e dall'inglese ed è l'esempio più noto di una lingua che, dopo secoli in cui nessuno la parlava come lingua materna, è tornata a essere la lingua materna di un'intera società.",
+      "de": "Hebräisch ist die Staatssprache Israels. Arabisch galt bis 2018 ebenfalls als Amtssprache; das Grundgesetz von 2018 verleiht ihm einen „besonderen Status“ und bestimmt, dass dadurch der Status, den es zuvor in der Praxis hatte, nicht beeinträchtigt wird. Es wird von etwa 9 Millionen Menschen gesprochen, davon über 5 Millionen Muttersprachlern. Die Norm pflegt die Akademie der hebräischen Sprache (seit 1953). Geschrieben wird von rechts nach links in Quadratschrift, meist ohne Vokalzeichen. Das moderne Hebräisch hat Wörter unter anderem aus dem Jiddischen, Arabischen, Russischen und Englischen übernommen und ist das bekannteste Beispiel einer Sprache, die nach Jahrhunderten, in denen niemand sie als Muttersprache sprach, wieder zur Muttersprache einer ganzen Gesellschaft wurde."
      },
      "oblasti": [
       {
        "id": "izrael",
        "kruhy": [
         [
-         34.95,
-         31.6,
-         0.45
+         34.85,
+         32.1,
+         0.3
         ],
         [
-         35.2,
-         32.6,
-         0.4
+         35.25,
+         32.85,
+         0.3
+        ],
+        [
+         34.75,
+         31.3,
+         0.3
         ],
         [
          34.85,
-         30.8,
-         0.35
+         30.6,
+         0.3
         ],
         [
          34.95,
-         30.0,
-         0.3
+         29.9,
+         0.2
         ]
        ],
        "barva": "hbr",
@@ -11738,7 +11846,7 @@
    "zdroje": [
     "Sáenz-Badillos, A. (1993): A History of the Hebrew Language. Cambridge: Cambridge University Press.",
     "Kutscher, E. Y. (1982): A History of the Hebrew Language. Jerusalem: Magnes Press – Leiden: Brill.",
-    "Rendsburg, G. A. (2013): Hebrew. In: Khan, G. (ed.): Encyclopedia of Hebrew Language and Linguistics. Leiden: Brill.",
+    "Khan, G. (ed.) (2013): Encyclopedia of Hebrew Language and Linguistics. 4 vols. Leiden – Boston: Brill.",
     "Schniedewind, W. M. (2013): A Social History of Hebrew: Its Origins Through the Rabbinic Period. New Haven: Yale University Press.",
     "Fellman, J. (1973): The Revival of a Classical Tongue: Eliezer Ben Yehuda and the Modern Hebrew Language. The Hague: Mouton.",
     "Zuckermann, G. (2020): Revivalistics: From the Genesis of Israeli to Language Reclamation in Australia and Beyond. Oxford: Oxford University Press.",
@@ -11748,7 +11856,6 @@
   {
    "id": "aramejstina",
    "obrazek": "hebrejci",
-   "koncept": true,
    "tecky": [
     "assy1241",
     "chal1275",
@@ -11785,10 +11892,10 @@
     "de": "Die Sprache der Großreiche, der Zeit Jesu und der heutigen neuaramäischen Gemeinschaften"
    },
    "uvod": {
-    "cs": "Jak se jazyk aramejských států v Sýrii stal úředním jazykem perské říše, mluvila jím Palestina Ježíšovy doby, syrské křesťanství ho neslo až do Číny a Indie a jak dnes jeho živá nářečí přežívají převážně v emigraci. Aramejština je písemně doložena přes tři tisíciletí. Letopočty jsou přibližné, sporné výklady jsou vyznačeny přerušovanou čarou.",
-    "en": "How the language of the Aramaean states in Syria became the official language of the Persian Empire, was spoken in Palestine in the time of Jesus, was carried by Syriac Christianity as far as China and India, and how its living dialects survive today mostly in emigration. Aramaic has been attested in writing for more than three millennia. Dates are approximate; disputed interpretations are shown with dashed lines.",
-    "it": "Come la lingua degli stati aramei di Siria divenne la lingua ufficiale dell'Impero persiano, si parlava nella Palestina dell'epoca di Gesù, fu portata dal cristianesimo siriaco fino in Cina e in India, e come oggi i suoi dialetti vivi sopravvivano soprattutto nell'emigrazione. L'aramaico è attestato per iscritto da oltre tre millenni. Le date sono approssimative; le interpretazioni controverse sono indicate con linea tratteggiata.",
-    "de": "Wie die Sprache der aramäischen Staaten in Syrien zur Amtssprache des Perserreichs wurde, im Palästina der Zeit Jesu gesprochen wurde, vom syrischen Christentum bis nach China und Indien getragen wurde und wie ihre lebenden Dialekte heute überwiegend in der Emigration überdauern. Das Aramäische ist seit über drei Jahrtausenden schriftlich belegt. Die Datierungen sind ungefähr; umstrittene Deutungen sind gestrichelt dargestellt."
+    "cs": "Jak se jazyk aramejských států v Sýrii stal úředním jazykem perské říše, mluvila jím Palestina Ježíšovy doby, syrské křesťanství ho neslo až do Číny a Indie a jak dnes jeho živá nářečí přežívají převážně v emigraci. Aramejština je písemně doložena téměř tři tisíciletí. Letopočty jsou přibližné, sporné výklady jsou vyznačeny přerušovanou čarou.",
+    "en": "How the language of the Aramaean states in Syria became the official language of the Persian Empire, was spoken in Palestine in the time of Jesus, was carried by Syriac Christianity as far as China and India, and how its living dialects survive today mostly in emigration. Aramaic has been attested in writing for almost three millennia. Dates are approximate; disputed interpretations are shown with dashed lines.",
+    "it": "Come la lingua degli stati aramei di Siria divenne la lingua ufficiale dell'Impero persiano, si parlava nella Palestina dell'epoca di Gesù, fu portata dal cristianesimo siriaco fino in Cina e in India, e come oggi i suoi dialetti vivi sopravvivano soprattutto nell'emigrazione. L'aramaico è attestato per iscritto da quasi tre millenni. Le date sono approssimative; le interpretazioni controverse sono indicate con linea tratteggiata.",
+    "de": "Wie die Sprache der aramäischen Staaten in Syrien zur Amtssprache des Perserreichs wurde, im Palästina der Zeit Jesu gesprochen wurde, vom syrischen Christentum bis nach China und Indien getragen wurde und wie ihre lebenden Dialekte heute überwiegend in der Emigration überdauern. Das Aramäische ist seit fast drei Jahrtausenden schriftlich belegt. Die Datierungen sind ungefähr; umstrittene Deutungen sind gestrichelt dargestellt."
    },
    "etapy": [
     {
@@ -11811,7 +11918,7 @@
       "de": "Die aramäischen Staaten"
      },
      "text": {
-      "cs": "Aramejština je semitský jazyk severozápadní větve, příbuzný hebrejštině a féničtině. Aramejci se v asyrských pramenech objevují kolem roku 1100 př. n. l.; v 10.–8. století existovaly v Sýrii a horní Mezopotámii aramejské státy jako Aram-Damašek, Hamát, Arpad, Bít-Adini nebo Samal. Nejstarší aramejské nápisy jsou z 9. století př. n. l.: socha z Tell Fecherije s dvojjazyčným nápisem akkadsky a aramejsky a stéla z Tel Danu, jejíž slova bjtdwd se obvykle čtou jako „dům Davidův“. Aramejci převzali fénické písmo, z něhož se vyvinulo písmo aramejské.",
+      "cs": "Aramejština je semitský jazyk severozápadní větve, příbuzný hebrejštině a féničtině. Aramejci se v asyrských pramenech objevují kolem roku 1100 př. n. l.; v 10.–8. století existovaly v Sýrii a horní Mezopotámii aramejské státy jako Aram-Damašek, Hamát, Arpad, Bít-Adini nebo Samal. Nejstarší aramejské nápisy jsou z 9. století př. n. l.: socha z Tell Fecherije s dvojjazyčným nápisem akkadsky a aramejsky a stéla z Tel Danu, jejíž slova bytdwd se obvykle čtou jako „dům Davidův“. Aramejci převzali fénické písmo, z něhož se vyvinulo písmo aramejské.",
       "en": "Aramaic is a Semitic language of the Northwest branch, related to Hebrew and Phoenician. The Aramaeans appear in Assyrian sources around 1100 BCE; in the 10th–8th centuries there were Aramaean states in Syria and Upper Mesopotamia such as Aram-Damascus, Hamath, Arpad, Bit-Adini and Sam'al. The oldest Aramaic inscriptions date from the 9th century BCE: the statue from Tell Fekheriye with a bilingual inscription in Akkadian and Aramaic, and the Tel Dan stele, whose words bytdwd are usually read as \"House of David\". The Aramaeans adopted the Phoenician script, from which the Aramaic script developed.",
       "it": "L'aramaico è una lingua semitica del ramo nordoccidentale, imparentata con l'ebraico e il fenicio. Gli aramei compaiono nelle fonti assire intorno al 1100 a.C.; tra il X e l'VIII secolo in Siria e nell'alta Mesopotamia esistevano stati aramei come Aram-Damasco, Hamat, Arpad, Bit-Adini o Sam'al. Le più antiche iscrizioni aramaiche risalgono al IX secolo a.C.: la statua di Tell Fekheriye con un'iscrizione bilingue in accadico e aramaico e la stele di Tel Dan, le cui parole bytdwd si leggono di solito come «casa di Davide». Gli aramei adottarono l'alfabeto fenicio, da cui si sviluppò la scrittura aramaica.",
       "de": "Aramäisch ist eine semitische Sprache des nordwestlichen Zweigs, verwandt mit dem Hebräischen und dem Phönizischen. Die Aramäer erscheinen in assyrischen Quellen um 1100 v. Chr.; im 10.–8. Jahrhundert gab es in Syrien und Obermesopotamien aramäische Staaten wie Aram-Damaskus, Hamat, Arpad, Bit-Adini oder Sam'al. Die ältesten aramäischen Inschriften stammen aus dem 9. Jahrhundert v. Chr.: die Statue von Tell Fecheriye mit einer zweisprachigen Inschrift auf Akkadisch und Aramäisch und die Stele von Tel Dan, deren Wörter bytdwd meist als „Haus Davids“ gelesen werden. Die Aramäer übernahmen das phönizische Alphabet, aus dem sich die aramäische Schrift entwickelte."
@@ -11913,7 +12020,7 @@
       "cs": "Asyrská říše přesídlovala Aramejce po celém svém území a od 8. století vedle akkadštiny užívala i aramejštinu; na reliéfech stojí písař s perem a svitkem vedle písaře s hliněnou tabulkou. Když roku 701 př. n. l. vyjednávali asyrští vyslanci před Jeruzalémem, judští úředníci je podle Bible prosili, ať mluví aramejsky, ne judsky (2 Kr 18,26). V perské říši Achaimenovců (550–330 př. n. l.) byla říšská aramejština jazykem správy od Egypta po Baktrii: papyry z Elefantiny (5. století př. n. l.) zanechala posádka židovských vojáků. Ještě indický král Ašóka dal kolem roku 260 př. n. l. vytesat u Kandaháru nápis řecky a aramejsky.",
       "en": "The Assyrian Empire resettled Aramaeans throughout its territory and from the 8th century used Aramaic alongside Akkadian; on reliefs a scribe with pen and scroll stands next to a scribe with a clay tablet. When Assyrian envoys negotiated before Jerusalem in 701 BCE, the Judean officials, according to the Bible, asked them to speak Aramaic, not Judean (2 Kings 18:26). In the Achaemenid Persian Empire (550–330 BCE) Imperial Aramaic was the language of administration from Egypt to Bactria: the Elephantine papyri (5th century BCE) were left by a garrison of Jewish soldiers. Even the Indian king Ashoka had an inscription carved near Kandahar in Greek and Aramaic around 260 BCE.",
       "it": "L'Impero assiro trasferì gli aramei in tutto il suo territorio e dall'VIII secolo usò l'aramaico accanto all'accadico; nei rilievi uno scriba con penna e rotolo sta accanto a uno scriba con la tavoletta d'argilla. Quando nel 701 a.C. gli inviati assiri trattavano davanti a Gerusalemme, i funzionari di Giuda, secondo la Bibbia, li pregarono di parlare in aramaico e non in giudaico (2 Re 18,26). Nell'Impero persiano achemenide (550–330 a.C.) l'aramaico imperiale fu la lingua dell'amministrazione dall'Egitto alla Battriana: i papiri di Elefantina (V secolo a.C.) furono lasciati da una guarnigione di soldati ebrei. Ancora il re indiano Ashoka fece incidere intorno al 260 a.C., presso Kandahar, un'iscrizione in greco e in aramaico.",
-      "de": "Das Assyrerreich siedelte Aramäer in seinem ganzen Gebiet um und verwendete ab dem 8. Jahrhundert neben dem Akkadischen auch das Aramäische; auf Reliefs steht ein Schreiber mit Feder und Schriftrolle neben einem Schreiber mit Tontafel. Als 701 v. Chr. assyrische Gesandte vor Jerusalem verhandelten, baten sie die judäischen Beamten laut der Bibel, aramäisch und nicht judäisch zu sprechen (2 Kön 18,26). Im Perserreich der Achämeniden (550–330 v. Chr.) war das Reichsaramäische die Verwaltungssprache von Ägypten bis Baktrien: Die Papyri von Elephantine (5. Jahrhundert v. Chr.) hinterließ eine Garnison jüdischer Soldaten. Noch der indische König Ashoka ließ um 260 v. Chr. bei Kandahar eine Inschrift auf Griechisch und Aramäisch einmeißeln."
+      "de": "Das Assyrerreich siedelte Aramäer in seinem ganzen Gebiet um und verwendete ab dem 8. Jahrhundert neben dem Akkadischen auch das Aramäische; auf Reliefs steht ein Schreiber mit Feder und Schriftrolle neben einem Schreiber mit Tontafel. Als 701 v. Chr. assyrische Gesandte vor Jerusalem verhandelten, baten laut der Bibel die judäischen Beamten die Gesandten, aramäisch und nicht judäisch zu sprechen (2 Kön 18,26). Im Perserreich der Achämeniden (550–330 v. Chr.) war das Reichsaramäische die Verwaltungssprache von Ägypten bis Baktrien: Die Papyri von Elephantine (5. Jahrhundert v. Chr.) hinterließ eine Garnison jüdischer Soldaten. Noch der indische König Ashoka ließ um 260 v. Chr. bei Kandahar eine Inschrift auf Griechisch und Aramäisch einmeißeln."
      },
      "oblasti": [
       {
@@ -12228,10 +12335,10 @@
       "de": "Syrisch und die Kirche des Ostens"
      },
      "text": {
-      "cs": "Aramejština Edessy, syrština, se stala jazykem syrského křesťanství. Do syrštiny byla přeložena Bible (Pešitta) a vznikla bohatá literatura; syrsky psal například Efrém Syrský (4. století). Misionáři Církve Východu se sídlem v Seleukii-Ktésifóntu nesli syrštinu po Hedvábné stezce do Střední Asie a Číny: stéla ze Si-anu z roku 781 má nápis čínsky a syrsky. Syrštinu jako liturgický jazyk převzali i křesťané sv. Tomáše v jižní Indii. Syrsky se v několika církvích slouží bohoslužby dodnes.",
-      "en": "The Aramaic of Edessa, Syriac, became the language of Syriac Christianity. The Bible was translated into Syriac (the Peshitta) and a rich literature arose; Ephrem the Syrian (4th century), for example, wrote in Syriac. Missionaries of the Church of the East, whose see was at Seleucia-Ctesiphon, carried Syriac along the Silk Road to Central Asia and China: the Xi'an Stele of 781 bears an inscription in Chinese and Syriac. The Saint Thomas Christians of southern India also adopted Syriac as their liturgical language. Several churches still celebrate the liturgy in Syriac today.",
-      "it": "L'aramaico di Edessa, il siriaco, divenne la lingua del cristianesimo siriaco. La Bibbia fu tradotta in siriaco (la Peshitta) e nacque una ricca letteratura; in siriaco scrisse per esempio Efrem il Siro (IV secolo). I missionari della Chiesa d'Oriente, con sede a Seleucia-Ctesifonte, portarono il siriaco lungo la Via della seta fino in Asia centrale e in Cina: la stele di Xi'an del 781 reca un'iscrizione in cinese e in siriaco. Anche i cristiani di san Tommaso dell'India meridionale adottarono il siriaco come lingua liturgica. In diverse Chiese la liturgia si celebra in siriaco ancora oggi.",
-      "de": "Das Aramäische von Edessa, das Syrische, wurde zur Sprache des syrischen Christentums. Die Bibel wurde ins Syrische übersetzt (Peschitta), und es entstand eine reiche Literatur; syrisch schrieb zum Beispiel Ephräm der Syrer (4. Jahrhundert). Missionare der Kirche des Ostens mit Sitz in Seleukia-Ktesiphon trugen das Syrische über die Seidenstraße nach Zentralasien und China: Die Stele von Xi'an aus dem Jahr 781 trägt eine Inschrift auf Chinesisch und Syrisch. Auch die Thomaschristen in Südindien übernahmen Syrisch als Liturgiesprache. In mehreren Kirchen wird der Gottesdienst bis heute syrisch gefeiert."
+      "cs": "Aramejština Edessy, syrština, se stala jazykem syrského křesťanství. Do syrštiny byla přeložena Bible (Pešitta) a vznikla bohatá literatura; syrsky psal například Efrém Syrský (4. století). Misionáři Církve Východu, jejíž patriarcha sídlil v Seleukii-Ktésifóntu (od roku 780 v Bagdádu), nesli syrštinu po Hedvábné stezce do Střední Asie a Číny: stéla ze Si-anu z roku 781 má nápis čínsky a syrsky. Syrštinu jako liturgický jazyk převzali i křesťané sv. Tomáše v jižní Indii. Syrsky se v několika církvích slouží bohoslužby dodnes.",
+      "en": "The Aramaic of Edessa, Syriac, became the language of Syriac Christianity. The Bible was translated into Syriac (the Peshitta) and a rich literature arose; Ephrem the Syrian (4th century), for example, wrote in Syriac. Missionaries of the Church of the East, whose patriarch resided at Seleucia-Ctesiphon (from 780 in Baghdad), carried Syriac along the Silk Road to Central Asia and China: the Xi'an Stele of 781 bears an inscription in Chinese and Syriac. The Saint Thomas Christians of southern India also adopted Syriac as their liturgical language. Several churches still celebrate the liturgy in Syriac today.",
+      "it": "L'aramaico di Edessa, il siriaco, divenne la lingua del cristianesimo siriaco. La Bibbia fu tradotta in siriaco (la Peshitta) e nacque una ricca letteratura; in siriaco scrisse per esempio Efrem il Siro (IV secolo). I missionari della Chiesa d'Oriente, il cui patriarca risiedeva a Seleucia-Ctesifonte (dal 780 a Baghdad), portarono il siriaco lungo la Via della seta fino in Asia centrale e in Cina: la stele di Xi'an del 781 reca un'iscrizione in cinese e in siriaco. Anche i cristiani di san Tommaso dell'India meridionale adottarono il siriaco come lingua liturgica. In diverse Chiese la liturgia si celebra in siriaco ancora oggi.",
+      "de": "Das Aramäische von Edessa, das Syrische, wurde zur Sprache des syrischen Christentums. Die Bibel wurde ins Syrische übersetzt (Peschitta), und es entstand eine reiche Literatur; syrisch schrieb zum Beispiel Ephräm der Syrer (4. Jahrhundert). Missionare der Kirche des Ostens, deren Patriarch in Seleukia-Ktesiphon (ab 780 in Bagdad) residierte, trugen das Syrische über die Seidenstraße nach Zentralasien und China: Die Stele von Xi'an aus dem Jahr 781 trägt eine Inschrift auf Chinesisch und Syrisch. Auch die Thomaschristen in Südindien übernahmen Syrisch als Liturgiesprache. In mehreren Kirchen wird der Gottesdienst bis heute syrisch gefeiert."
      },
      "oblasti": [
       {
@@ -12263,14 +12370,19 @@
          44.58,
          33.09,
          0.3
+        ],
+        [
+         44.37,
+         33.31,
+         0.2
         ]
        ],
        "barva": "syr",
        "popisek": {
-        "cs": "Seleukie-Ktésifón",
-        "en": "Seleucia-Ctesiphon",
-        "it": "Seleucia-Ctesifonte",
-        "de": "Seleukia-Ktesiphon"
+        "cs": "Seleukie-Ktésifón, Bagdád",
+        "en": "Seleucia-Ctesiphon, Baghdad",
+        "it": "Seleucia-Ctesifonte, Baghdad",
+        "de": "Seleukia-Ktesiphon, Bagdad"
        }
       },
       {
@@ -12402,6 +12514,10 @@
          30.5
         ],
         [
+         48.75,
+         29.9
+        ],
+        [
          49.5,
          28.7
         ],
@@ -12410,8 +12526,20 @@
          26.8
         ],
         [
-         56.4,
-         26.6
+         54.2,
+         26.2
+        ],
+        [
+         55.6,
+         26.25
+        ],
+        [
+         56.45,
+         26.55
+        ],
+        [
+         56.75,
+         25.9
         ],
         [
          59.0,
@@ -12451,14 +12579,14 @@
      "nazev": {
       "cs": "Ústup před arabštinou",
       "en": "Retreat before Arabic",
-      "it": "Il ritiro davanti all'arabo",
+      "it": "L'arretramento di fronte all'arabo",
       "de": "Rückzug vor dem Arabischen"
      },
      "text": {
-      "cs": "Po arabských výbojích ve 30. a 40. letech 7. století se v Sýrii a Mezopotámii během několika staletí postupně prosadila arabština. Aramejsky se dál mluvilo hlavně v křesťanských, židovských a mandejských obcích, v horách a vesnicích, kam arabština (a na severu kurdština a turečtina) pronikala pomaleji. Mandejci v jižní Mezopotámii psali vlastní aramejštinou, mandejštinou. Během první světové války postihla syrské křesťany v Osmanské říši genocida, nazývaná sajfo („meč“); mnoho aramejsky mluvících obcí v jihovýchodní Anatolii zaniklo.",
-      "en": "After the Arab conquests of the 630s and 640s, Arabic gradually prevailed in Syria and Mesopotamia over several centuries. Aramaic continued to be spoken mainly in Christian, Jewish and Mandaean communities, in the mountains and in villages where Arabic (and in the north Kurdish and Turkish) spread more slowly. The Mandaeans of southern Mesopotamia wrote in their own Aramaic, Mandaic. During the First World War the Syriac Christians of the Ottoman Empire suffered a genocide known as Sayfo (\"sword\"); many Aramaic-speaking communities in south-eastern Anatolia were destroyed.",
-      "it": "Dopo le conquiste arabe degli anni Trenta e Quaranta del VII secolo, in Siria e in Mesopotamia si impose gradualmente, nel corso di diversi secoli, l'arabo. L'aramaico continuò a essere parlato soprattutto nelle comunità cristiane, ebraiche e mandee, sulle montagne e nei villaggi dove l'arabo (e al nord il curdo e il turco) penetrava più lentamente. I mandei della Mesopotamia meridionale scrivevano in un proprio aramaico, il mandaico. Durante la prima guerra mondiale i cristiani siriaci dell'Impero ottomano furono colpiti da un genocidio chiamato Sayfo («spada»); molte comunità di lingua aramaica dell'Anatolia sudorientale scomparvero.",
-      "de": "Nach den arabischen Eroberungen der 630er- und 640er-Jahre setzte sich in Syrien und Mesopotamien im Laufe mehrerer Jahrhunderte allmählich das Arabische durch. Aramäisch wurde vor allem in christlichen, jüdischen und mandäischen Gemeinden weitergesprochen, in den Bergen und in Dörfern, in die das Arabische (und im Norden das Kurdische und Türkische) langsamer vordrang. Die Mandäer im südlichen Mesopotamien schrieben in einem eigenen Aramäisch, dem Mandäischen. Während des Ersten Weltkriegs wurden die syrischen Christen im Osmanischen Reich Opfer eines Völkermords, genannt Sayfo („Schwert“); viele aramäischsprachige Gemeinden im Südosten Anatoliens wurden ausgelöscht."
+      "cs": "Po arabských výbojích ve 30. a 40. letech 7. století se v Sýrii a Mezopotámii během několika staletí postupně prosadila arabština. Aramejsky se dál mluvilo hlavně v křesťanských, židovských a mandejských obcích, v horách a vesnicích, kam arabština (a na severu kurdština a turečtina) pronikala pomaleji. Mandejci v jižní Mezopotámii psali vlastní aramejštinou, mandejštinou. Během první světové války postihly křesťany syrské tradice v Osmanské říši a v sousední severozápadní Persii masakry a deportace, nazývané sajfo („meč“); Mezinárodní asociace badatelů o genocidě (2007) i parlamenty několika států je označují za genocidu, Turecko toto označení odmítá. Mnoho aramejsky mluvících obcí v jihovýchodní Anatolii tehdy zaniklo.",
+      "en": "After the Arab conquests of the 630s and 640s, Arabic gradually prevailed in Syria and Mesopotamia over several centuries. Aramaic continued to be spoken mainly in Christian, Jewish and Mandaean communities, in the mountains and in villages where Arabic (and in the north Kurdish and Turkish) spread more slowly. The Mandaeans of southern Mesopotamia wrote in their own Aramaic, Mandaic. During the First World War the Syriac Christians of the Ottoman Empire and neighbouring north-western Persia suffered massacres and deportations known as Sayfo (\"sword\"); the International Association of Genocide Scholars (2007) and the parliaments of several states classify them as genocide, a designation Turkey rejects. Many Aramaic-speaking communities in south-eastern Anatolia were destroyed at that time.",
+      "it": "Dopo le conquiste arabe degli anni Trenta e Quaranta del VII secolo, in Siria e in Mesopotamia si impose gradualmente, nel corso di diversi secoli, l'arabo. L'aramaico continuò a essere parlato soprattutto nelle comunità cristiane, ebraiche e mandee, sulle montagne e nei villaggi dove l'arabo (e al nord il curdo e il turco) penetrava più lentamente. I mandei della Mesopotamia meridionale scrivevano in un proprio aramaico, il mandaico. Durante la prima guerra mondiale i cristiani di tradizione siriaca dell'Impero ottomano e della vicina Persia nordoccidentale subirono massacri e deportazioni, chiamati Sayfo («spada»); l'Associazione internazionale degli studiosi di genocidio (2007) e i parlamenti di diversi Stati li qualificano come genocidio, definizione che la Turchia respinge. Molte comunità di lingua aramaica dell'Anatolia sudorientale scomparvero allora.",
+      "de": "Nach den arabischen Eroberungen der 630er- und 640er-Jahre setzte sich in Syrien und Mesopotamien im Laufe mehrerer Jahrhunderte allmählich das Arabische durch. Aramäisch wurde vor allem in christlichen, jüdischen und mandäischen Gemeinden weitergesprochen, in den Bergen und in Dörfern, in die das Arabische (und im Norden das Kurdische und Türkische) langsamer vordrang. Die Mandäer im südlichen Mesopotamien schrieben in einem eigenen Aramäisch, dem Mandäischen. Während des Ersten Weltkriegs wurden die Christen syrischer Tradition im Osmanischen Reich und im benachbarten Nordwestpersien Opfer von Massakern und Deportationen, genannt Sayfo („Schwert“); die International Association of Genocide Scholars (2007) und die Parlamente mehrerer Staaten werten sie als Völkermord, was die Türkei zurückweist. Viele aramäischsprachige Gemeinden im Südosten Anatoliens wurden damals ausgelöscht."
      },
      "oblasti": [
       {
@@ -12610,10 +12738,10 @@
       "de": "Neuaramäisch heute"
      },
      "text": {
-      "cs": "Dnešní novoaramejská nářečí patří mezi ohrožené jazyky. Západní novoaramejštinou, posledním živým západoaramejským jazykem, mluví několik tisíc lidí v Maalúle a dvou sousedních vesnicích v Sýrii. Turojo pochází z Tur Abdinu v jihovýchodním Turecku, severovýchodní novoaramejská nářečí (mezi nimi asyrská a chaldejská) z Iráku, Íránu a Turecka; novomandejštinou mluví jen nepočetná skupina v Íránu. Války a pronásledování ve 20. a 21. století vyhnaly většinu mluvčích do emigrace – do Švédska, Německa, USA nebo Austrálie, kde mladší generace aramejštinu často už neovládají. Odhady počtu mluvčích všech nářečí se pohybují v řádu stovek tisíc.",
-      "en": "Today's Neo-Aramaic dialects are endangered languages. Western Neo-Aramaic, the last living Western Aramaic language, is spoken by a few thousand people in Maaloula and two neighbouring villages in Syria. Turoyo comes from Tur Abdin in south-eastern Turkey, the Northeastern Neo-Aramaic dialects (among them Assyrian and Chaldean) from Iraq, Iran and Turkey; Neo-Mandaic is spoken only by a small group in Iran. Wars and persecution in the 20th and 21st centuries drove most speakers into emigration – to Sweden, Germany, the USA or Australia, where younger generations often no longer master Aramaic. Estimates of the number of speakers of all dialects are in the hundreds of thousands.",
-      "it": "Gli odierni dialetti neoaramaici sono lingue in pericolo. Il neoaramaico occidentale, l'ultima lingua aramaica occidentale ancora viva, è parlato da alcune migliaia di persone a Maalula e in due villaggi vicini in Siria. Il turoyo proviene dal Tur Abdin, nella Turchia sudorientale, i dialetti neoaramaici nordorientali (tra cui l'assiro e il caldeo) dall'Iraq, dall'Iran e dalla Turchia; il neomandaico è parlato solo da un piccolo gruppo in Iran. Guerre e persecuzioni nel XX e XXI secolo hanno spinto la maggior parte dei parlanti all'emigrazione – in Svezia, Germania, Stati Uniti o Australia, dove le generazioni più giovani spesso non padroneggiano più l'aramaico. Le stime del numero di parlanti di tutti i dialetti sono nell'ordine delle centinaia di migliaia.",
-      "de": "Die heutigen neuaramäischen Dialekte gehören zu den bedrohten Sprachen. Westneuaramäisch, die letzte lebende westaramäische Sprache, sprechen einige Tausend Menschen in Maalula und zwei Nachbardörfern in Syrien. Turoyo stammt aus dem Tur Abdin im Südosten der Türkei, die nordostneuaramäischen Dialekte (darunter das Assyrische und das Chaldäische) aus dem Irak, dem Iran und der Türkei; Neumandäisch spricht nur eine kleine Gruppe im Iran. Kriege und Verfolgung im 20. und 21. Jahrhundert trieben die meisten Sprecher in die Emigration – nach Schweden, Deutschland, in die USA oder nach Australien, wo jüngere Generationen das Aramäische oft nicht mehr beherrschen. Schätzungen der Sprecherzahl aller Dialekte liegen im Bereich von Hunderttausenden."
+      "cs": "Dnešní novoaramejská nářečí patří mezi ohrožené jazyky. Západní novoaramejštinou, posledním živým západoaramejským jazykem, se mluví v Maalúle a Džubbadínu v Sýrii, do občanské války i v sousední Bachʿe; před válkou ji podle odhadů ovládalo asi 15 000 lidí, dnešní počet je nejistý. Turojo pochází z Tur Abdinu v jihovýchodním Turecku, křesťanská severovýchodní novoaramejská nářečí (mezi nimi nářečí označovaná jako asyrská a chaldejská) z Iráku, Íránu, Turecka a severovýchodní Sýrie; mluvčí židovských nářečí z téže oblasti žijí dnes převážně v Izraeli. Novomandejštinou mluví jen nepočetná skupina v Íránu. Mluvčí se podle církve a přesvědčení nazývají Asyřané, Aramejci nebo Chaldejci; žádné z těchto jmen nepřijímají všichni. Války a pronásledování ve 20. a 21. století vyhnaly velkou část mluvčích do emigrace – do Švédska, Německa, USA nebo Austrálie, kde mladší generace aramejštinu často už neovládají. Odhady počtu mluvčích všech nářečí se pohybují v řádu stovek tisíc.",
+      "en": "Today's Neo-Aramaic dialects are endangered languages. Western Neo-Aramaic, the last living Western Aramaic language, is spoken in Maaloula and Jubb'adin in Syria and, until the civil war, also in neighbouring Bakh'a; before the war it was estimated to have about 15,000 speakers, and the present number is uncertain. Turoyo comes from Tur Abdin in south-eastern Turkey, the Christian Northeastern Neo-Aramaic dialects (among them those known as Assyrian and Chaldean) from Iraq, Iran, Turkey and north-eastern Syria; speakers of the Jewish dialects of the same region now live mostly in Israel. Neo-Mandaic is spoken only by a small group in Iran. Depending on church and conviction, speakers call themselves Assyrians, Aramaeans or Chaldeans; none of these names is accepted by all. Wars and persecution in the 20th and 21st centuries drove a large part of the speakers into emigration – to Sweden, Germany, the USA or Australia, where younger generations often no longer master Aramaic. Estimates of the number of speakers of all dialects are in the hundreds of thousands.",
+      "it": "Gli odierni dialetti neoaramaici sono lingue in pericolo. Il neoaramaico occidentale, l'ultima lingua aramaica occidentale ancora viva, è parlato a Maalula e a Jubb'adin, in Siria, e fino alla guerra civile anche nella vicina Bakh'a; prima della guerra lo parlavano secondo le stime circa 15 000 persone, il numero attuale è incerto. Il turoyo proviene dal Tur Abdin, nella Turchia sudorientale, i dialetti neoaramaici nordorientali cristiani (tra cui quelli detti assiro e caldeo) dall'Iraq, dall'Iran, dalla Turchia e dalla Siria nordorientale; i parlanti dei dialetti ebraici della stessa regione vivono oggi per lo più in Israele. Il neomandaico è parlato solo da un piccolo gruppo in Iran. A seconda della Chiesa e delle convinzioni, i parlanti si definiscono assiri, aramei o caldei; nessuno di questi nomi è accettato da tutti. Guerre e persecuzioni nel XX e XXI secolo hanno spinto gran parte dei parlanti all'emigrazione – in Svezia, Germania, Stati Uniti o Australia, dove le generazioni più giovani spesso non padroneggiano più l'aramaico. Le stime del numero di parlanti di tutti i dialetti sono nell'ordine delle centinaia di migliaia.",
+      "de": "Die heutigen neuaramäischen Dialekte gehören zu den bedrohten Sprachen. Westneuaramäisch, die letzte lebende westaramäische Sprache, wird in Maalula und Jubbʿadin in Syrien gesprochen, bis zum Bürgerkrieg auch im benachbarten Bachʿa; vor dem Krieg wurde die Zahl der Sprecher auf etwa 15 000 geschätzt, die heutige Zahl ist ungewiss. Turoyo stammt aus dem Tur Abdin im Südosten der Türkei, die christlichen nordostneuaramäischen Dialekte (darunter die als assyrisch und chaldäisch bezeichneten) aus dem Irak, dem Iran, der Türkei und dem Nordosten Syriens; die Sprecher der jüdischen Dialekte derselben Region leben heute überwiegend in Israel. Neumandäisch spricht nur eine kleine Gruppe im Iran. Je nach Kirche und Überzeugung nennen sich die Sprecher Assyrer, Aramäer oder Chaldäer; keiner dieser Namen wird von allen akzeptiert. Kriege und Verfolgung im 20. und 21. Jahrhundert trieben einen großen Teil der Sprecher in die Emigration – nach Schweden, Deutschland, in die USA oder nach Australien, wo jüngere Generationen das Aramäische oft nicht mehr beherrschen. Schätzungen der Sprecherzahl aller Dialekte liegen im Bereich von Hunderttausenden."
      },
      "oblasti": [
       {
@@ -12808,10 +12936,10 @@
    "zdroje": [
     "Gzella, H. (2015): A Cultural History of Aramaic: From the Beginnings to the Advent of Islam. Leiden: Brill.",
     "Beyer, K. (1986): The Aramaic Language: Its Distribution and Subdivisions. Göttingen: Vandenhoeck & Ruprecht.",
-    "Healey, J. F. (2019): Aramaic. In: Huehnergard, J. – Pat-El, N. (eds.): The Semitic Languages. 2nd ed. London: Routledge.",
+    "Creason, S. (2004): Aramaic. In: Woodard, R. D. (ed.): The Cambridge Encyclopedia of the World's Ancient Languages. Cambridge: Cambridge University Press, 391–426.",
     "Brock, S. (2006): An Introduction to Syriac Studies. Piscataway: Gorgias Press.",
-    "Khan, G. (2019): The Neo-Aramaic Dialects and Their Historical Background. In: Khan, G. (ed.): The Semitic Languages. London: Routledge.",
-    "Arnold, W. (2019): Western Neo-Aramaic. In: Khan, G. – Coghill, E. (eds.): The Semitic Languages. London: Routledge.",
+    "Khan, G. (2019): The Neo-Aramaic Dialects and Their Historical Background. In: King, D. (ed.): The Syriac World. London – New York: Routledge, 266–289.",
+    "Arnold, W. (2011): Western Neo-Aramaic. In: Weninger, S. et al. (eds.): The Semitic Languages: An International Handbook. Berlin – Boston: De Gruyter Mouton, 685–696.",
     "Gaunt, D. (2006): Massacres, Resistance, Protectors: Muslim-Christian Relations in Eastern Anatolia during World War I. Piscataway: Gorgias Press."
    ]
   }

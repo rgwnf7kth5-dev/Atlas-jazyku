@@ -786,6 +786,20 @@ datovaný záměrný doklad (graffito Commodilla je starší), občanství 89 p�
 i v 1. století n. l., Langobardi „většinu severu“, Byzanc Ravenna do 751 a Neapol, Rometta 965, sicilská škola „první básnická škola“ (ne
 první poezie), zákon 482/1999 jazyky „chrání“, Itálie 1861 bez Benátska a Lazia (popisek jen „Itálie“), Manzoni 1827 přes Livorno; šipky
 nesmí přes zálivy Gioia Tauro a Sant'Eufemia (ze Sicílie do Toskánska po souši Kalábrií) ani přes pevninu u Punta Indio (La Plata).
+**Putování hebrejštiny a aramejštiny** (5. 10. 2026, uživatel: „přidej putování hebrejštiny / jivrit a aramejštiny“; texty rovnou cs/en/it/de).
+Hebrejština (`#putovani-hebrejstina` / `#journey-hebrew` / `#viaggio-ebraico` / `#reise-hebraeisch`, 7 etap: kenaanské jazyky, biblická hebrejština,
+babylonské zajetí a aramejština, Mišna a masoreti, diaspora, oživení se šipkou první aliji – Bilu z Charkova přes Oděsu, Bospor, Dardanely
+a Egejské moře do Jaffy –, ivrit dnes). Aramejština (`#putovani-aramejstina` …, 6 etap: aramejské státy, jazyk říší s šipkami do Egypta a na
+východ, Ježíšova doba/Petra/Palmýra, syrština a Církev Východu s Hedvábnou stezkou a cestou do Indie, ústup před arabštinou a sajfo, novoaramejština
+dnes s emigrací). **Aramejština nemá kartu atlasu:** nový typ putování s `tecky` (glottocody teček rejstříku) a `obrazek` (dlaždice v Příbězích =
+náhled stránky Hebrejci a Aramejci); tlačítko je na kartách těch teček (`tlacitkoPutovaniBodu` v `ukazKartuBodu`), validace hlídá kódy.
+`tecky` může mít i putování s `atlas` (hebrejština: `anci1244`). Barvy `--put-hbr, kna, dia, ziv, aram, asy, nab, pal, syr, neo`.
+Při ověření opraveno: v němčině obrácený smysl 2 Kr 18,26, šipka aliji přes Istanbul, Marmaru, Gelibolu, Astypalaiu a Kasos, šipka do Indie přes
+Kešm a Makrán, tři chybné citace (Healey, Khan, Arnold) a Rendsburg, sajfo neutrálně (IAGS 2007 a parlamenty → genocida, Turecko odmítá, i
+severozápadní Persie), západní novoaramejština ~15 000 před válkou a Bachʿa, židovská nářečí v Izraeli, pojmenování Asyřané/Aramejci/Chaldejci,
+zákon 2018 (§ 4 c: postavení arabštiny v praxi nedotčeno), „téměř tři tisíciletí“, patriarcha od 780 v Bagdádu, jeruzalémský (ne galilejský)
+Talmud, Juda ha-Nasi Mišnu „uspořádal“ (zápis sporný), všechny aramejské pasáže Bible, filozofie v židovské arabštině, 587/586; oblast „ivrit“
+jen v hranicích Izraele z roku 1949 (bez územního tvrzení).
 **Vstup do putování** (29. 9. 2026, uživatel vybral z návrhů jen „skupinu v Příbězích“): v okně Příběhy jazyků je za skupinou
 Slova na cestách skupina **Putování jazyků** (`vlozPutovani` v `otevriSekci`) s dlaždicí pro každé putování – akvarel jazyka
 (`/malby/<atlas>.jpg`, v artefaktu `malbaObrazek`, bez oživení), název a `podtitul` (povinný, validace). Tlačítko na kartě jazyka
