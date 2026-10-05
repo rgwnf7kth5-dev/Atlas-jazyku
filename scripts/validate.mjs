@@ -128,7 +128,10 @@ if (pd.uzly.length !== pd.nad.length) chyby.push("data/podrobnosti.json: strom p
       const kody = new Set(json("data/pisma.json").pisma.map(p => p.kod));
       for (const k of j.pisma) if (!kody.has(k)) chyby.push(`${co}: ${j.id} – písmo „${k}“ není v data/pisma.json`);
       if (!json("data/starovek.json").civilizace.some(c => c.id === j.obrazek)) chyby.push(`${co}: ${j.id} – obrázek „${j.obrazek}“ není stránka v data/starovek.json`);
+    } else if (!j.atlas && j.tecky) {         // putování jazyka bez karty atlasu (aramejština): tečky rejstříku a obrázek civilizace pro dlaždici
+      if (!json("data/starovek.json").civilizace.some(c => c.id === j.obrazek)) chyby.push(`${co}: ${j.id} – obrázek „${j.obrazek}“ není stránka v data/starovek.json`);
     } else if (!atlas.has(j.atlas)) chyby.push(`${co}: ${j.id} – jazyk atlasu „${j.atlas}“ neexistuje`);
+    if (j.tecky) { const kody = new Set(glottolog.body.map(b => b[6])); for (const k of j.tecky) if (!kody.has(k)) chyby.push(`${co}: ${j.id} – tečka „${k}“ není v rejstříku`); }
     dvojj(j.adresa, j.id + " adresa"); dvojj(j.nazev, j.id + " název"); dvojj(j.podtitul, j.id + " podtitul (dlaždice v Příbězích)"); dvojj(j.uvod, j.id + " úvod");
     if (!j.zdroje || !j.zdroje.length) chyby.push(`${co}: ${j.id} nemá zdroje`);
     for (const e of j.etapy) {

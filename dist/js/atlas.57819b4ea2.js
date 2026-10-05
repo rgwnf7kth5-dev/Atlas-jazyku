@@ -5987,7 +5987,7 @@ function nactiBarvy(){
    "atmosfera", "atmosfera2", "sit", "hranice", "okraj-koule", "zamerovac-lem",
    "r-ie", "r-st", "r-an", "r-afro", "r-nk", "r-ost", "more1", "more2", "souse1", "souse2", "souse-vit", "uzemi",
    "podlaha", "podlaha-2", "obzor", "text2", "stin-plochy", "stin-plochy-2",
-   "put-ie", "put-bs", "put-sl", "put-zsl", "put-jsl", "put-vsl", "put-cs", "put-ii", "put-ir", "put-ku", "put-kmr", "put-ckb", "put-sdh", "put-ur", "put-ug", "put-hu", "put-in", "put-rom", "put-bal", "put-vla", "put-cen", "put-svy", "put-szap", "put-ko", "put-an", "put-mp", "put-pap", "put-oc", "put-pol", "put-mi", "put-mg", "put-ptu", "put-ogr", "put-gok", "put-ogz", "put-tr", "put-pri", "put-gm", "put-en", "put-en2", "put-kel", "put-non", "put-fr", "put-cr", "put-jen", "put-nd", "put-apa", "put-nv", "put-jid", "put-rmn", "put-zjd", "put-ztr", "put-psa", "put-sin", "put-fen", "put-rek", "put-etr", "put-lat", "put-ara", "put-heb", "put-arb", "put-kha", "put-hla", "put-cyr", "put-sem", "put-sar", "put-mt", "put-itm", "put-enm", "put-ita", "put-osu", "put-etq", "put-lgb", "put-byz", "put-vlg", "put-sic", "put-tos", "put-it", "put-emi", "put-itx"].forEach(function(k){ barvy[k] = s.getPropertyValue("--" + k).trim(); });
+   "put-ie", "put-bs", "put-sl", "put-zsl", "put-jsl", "put-vsl", "put-cs", "put-ii", "put-ir", "put-ku", "put-kmr", "put-ckb", "put-sdh", "put-ur", "put-ug", "put-hu", "put-in", "put-rom", "put-bal", "put-vla", "put-cen", "put-svy", "put-szap", "put-ko", "put-an", "put-mp", "put-pap", "put-oc", "put-pol", "put-mi", "put-mg", "put-ptu", "put-ogr", "put-gok", "put-ogz", "put-tr", "put-pri", "put-gm", "put-en", "put-en2", "put-kel", "put-non", "put-fr", "put-cr", "put-jen", "put-nd", "put-apa", "put-nv", "put-jid", "put-rmn", "put-zjd", "put-ztr", "put-psa", "put-sin", "put-fen", "put-rek", "put-etr", "put-lat", "put-ara", "put-heb", "put-arb", "put-kha", "put-hla", "put-cyr", "put-sem", "put-sar", "put-mt", "put-itm", "put-enm", "put-ita", "put-osu", "put-etq", "put-lgb", "put-byz", "put-vlg", "put-sic", "put-tos", "put-it", "put-emi", "put-itx", "put-hbr", "put-kna", "put-dia", "put-ziv", "put-aram", "put-asy", "put-nab", "put-pal", "put-syr", "put-neo"].forEach(function(k){ barvy[k] = s.getPropertyValue("--" + k).trim(); });
 }
 
 const fJaz = new Float32Array(POCET_B), zakladJaz = new Float32Array(POCET_B);   // příznaky teček: 0 obyčejná, 1 vybraná, 2 příbuzná, 3 pod myší
@@ -8230,6 +8230,7 @@ function ukazKartuBodu(i){
 
   const prehled = [], stavba = [], rod = [];
   { const c = civPodleTecky(i); if (c) prehled.push(tlacitkoCivilizace(c)); }   /* jazyk starověké civilizace: odkaz na její stránku */
+  { const p = tlacitkoPutovaniBodu(i); if (p) prehled.push(p); }   /* tečka, ke které patří putování bez karty atlasu (aramejština) */
   if (znak) { const o = oddil(T.znakovyCo); o.appendChild(prvek("p", null, T.znakovyVysvetleni)); prehled.push(o); }
   if (r[0] >= 0) prehled.push(oddilVitality(r[0], znak));
   const staty = BEZ_POLOHY[i] ? [] : (r[3] || "").split(" ").filter(Boolean);
@@ -9601,11 +9602,16 @@ function postavCestaPanel(){
    glóbu) a podbarvují oblasti. Dřívější etapy zůstávají slabě vidět jako vrstvy dějin. Sporné výklady přerušovaně. */
 const PUT_ETAPA = 4000;                         // ms na etapu při přehrávání
 let putCesta = null;
-function tlacitkoPutovani(id){
-  const pj = PUTOVANI.find(function(x){ return x.atlas === id; }); if (!pj) return null;
+function tlacitkoPutovani(id, pj){
+  pj = pj || PUTOVANI.find(function(x){ return x.atlas === id; }); if (!pj) return null;
   const b = prvek("button", "tl-rodokmen tl-putovani", pj.nazev[T.lang]); b.type = "button";
   b.addEventListener("click", function(){ spustPutovani(pj.id); });
   return b;
+}
+/* putování může patřit i tečkám rejstříku („tecky“: glottocody) – aramejština nemá kartu atlasu, tlačítko je na kartách jejích teček */
+function tlacitkoPutovaniBodu(i){
+  const g = REJSTRIK.g[i], pj = PUTOVANI.find(function(x){ return x.tecky && x.tecky.indexOf(g) >= 0; });
+  return pj ? tlacitkoPutovani(null, pj) : null;
 }
 function hustaCesta(body){                      /* body [délka, šířka] → hustá cesta po povrchu (vektory) s délkami */
   const v = body.map(function(b){ return vektor(b[0], b[1]); }), out = [];
