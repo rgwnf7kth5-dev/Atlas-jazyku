@@ -877,6 +877,11 @@ Při ověření opraveno mj.: Doctrina Christiana „pokládaná za“ první kn
 - **Postup ověření:** texty napsat, pak je nechat nezávisle zkontrolovat (agent proti staženým zdrojům) a opravit.
   U Chetitů tak opraveno např. Istanbul jen 1914 (ne 1914–1915), -ma = „však“, Lví brána bez pevné datace,
   „jedna z nejstarších“ mírových smluv, Egyptské znění i v Ramesseu.
+  **Archiv z Kayalıpınaru** (9. 10. 2026, podnět uživatele ze zprávy Türkiye Today): odstavec v oddílu „Archiv osmi jazyků“, řádek
+  časové osy 2025–2026 a zdroj (příspěvek ministra M. N. Ersoye na NSosyal a zpráva AA, obojí 8. 10. 2026). 131 kusů z 2026 + 53 z 2025
+  = 184 „tabulek a zlomků“; datace do doby Tudchaliji II. a „nejrozsáhlejší archiv 21. století“ jsou připsané ministerstvu a vedení
+  výzkumu, Šamucha „ztotožňovaná“, výhrada k číslování králů jménem Tudchalija; texty zatím nevydané. Zpráva Archaeology Magazine
+  z 2025 (56 tabulek, pečeti Tudchaliji IV., „před 3 200 lety“) se jako zdroj nepoužila – tvrdí něco jiného. Až vyjde odborná edice, doplnit.
   U Egypta: r n km.t je doloženo jen v Příběhu Sinuhetově (ne „vlastní jméno jazyka“), Kleopatra není na
   Rosettské desce (je na obelisku z Philae), ústav 1958 vedl nejdřív Lexa a od 1960 Žába, arabské dobytí 639–642.
   U Mezopotámie: „život“ je til (ne ti), číslice se vtlačovaly, pečeť patří Hašhamerovi (ne Ur-Nammuovi), Rawlinson
