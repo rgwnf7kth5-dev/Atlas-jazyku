@@ -6,6 +6,7 @@ import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
 import { vyrobStranky } from "./stranky.mjs";
+import { opravHranice } from "./hranice.mjs";
 
 const KOREN = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
 const cti = p => fs.readFileSync(path.join(KOREN, p), "utf8");
@@ -33,7 +34,7 @@ const spoj = (pod, nad) => {
   for (const k of Object.keys(nad)) v[k] = spoj(pod[k], nad[k]);
   return v;
 };
-const svet = cti("data/countries-110m.json");
+const svet = JSON.stringify(opravHranice(cti("data/countries-110m.json")));   // Krym k Ukrajině (scripts/hranice.mjs)
 const knihovny = ["vendor/d3-array.min.js", "vendor/d3-geo.min.js", "vendor/topojson-client.min.js"].map(cti);
 const styly = cti("src/styles.css") + "\n" + cti("src/starovek.css");   // + stránky o civilizacích starověku
 const telo = cti("src/body.html");

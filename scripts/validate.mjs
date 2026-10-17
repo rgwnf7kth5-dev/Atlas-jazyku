@@ -1,6 +1,7 @@
 // Kontrola dat Atlasu jazyků. Chyba = konec s kódem 1.
 import fs from "node:fs";
 import path from "node:path";
+import { opravHranice } from "./hranice.mjs";
 
 const KOREN = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
 /* šablona stránek o civilizacích (src/starovek.js) – kvůli kontrole písem */
@@ -9,6 +10,8 @@ const json = p => JSON.parse(fs.readFileSync(path.join(KOREN, p), "utf8"));
 /* další jazyky webu (ne cs, en) podle JAZYKY_WEBU v build.mjs – jeden zdroj pravdy */
 const DALSI = JSON.parse(fs.readFileSync(path.join(KOREN, "scripts/build.mjs"), "utf8").match(/const JAZYKY_WEBU = (\[[^\]]*\])/)[1]).filter(l => l !== "cs" && l !== "en");
 const chyby = [], varovani = [];
+/* hranice podle mezinárodního práva: Krym musí jít přeřadit k Ukrajině (scripts/hranice.mjs), jinak build spadne */
+try { opravHranice(fs.readFileSync(path.join(KOREN, "data/countries-110m.json"), "utf8")); } catch (e) { chyby.push("data/countries-110m.json: " + e.message); }
 
 const jazyky = json("data/languages.json");
 const svet = json("data/countries-110m.json");

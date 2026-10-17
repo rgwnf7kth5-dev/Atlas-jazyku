@@ -172,6 +172,12 @@ jako italština, přepínač **CS · EN · IT · DE**. Název **Atlas der Sprach
 - **Odkaz na jazyk**: `#cs` (id jazyka z atlasu) nebo `#corn1251` (glottocode tečky, build ho dává do `REJSTRIK.g`).
   Výběr zapíše adresu (`history.replaceState`), otevření odkazu jazyk vybere; když ho schovává filtr, filtry se zruší.
   Tlačítko s řetízkem na kartě odkaz zkopíruje (v artefaktu je skryté).
+- **Hranice podle mezinárodního práva** (17. 10. 2026, uživatel: „naprosto nepřijatelné – Rusko Krym okupovalo vojenskou silou a protiprávně“):
+  podkladová mapa `data/countries-110m.json` (world-atlas / Natural Earth) vede Krym a Sevastopol jako Rusko. `scripts/hranice.mjs`
+  (`opravHranice`) je při buildu přesune k Ukrajině a spojí s ní (hranice na Perekopské šíji se nekreslí); rezoluce VS OSN 68/262.
+  Validace spadne, když oprava v nových datech mapy nenajde Krym. **Datový soubor mapy needitovat ručně, opravy patří do `hranice.mjs`.**
+  Další sporná místa podkladu (stav 17. 10. 2026, zatím neměněno, čeká na rozhodnutí uživatele): Golany jsou v 110m mapě součástí Izraele,
+  Severní Kypr a Somaliland jsou samostatné útvary, Kosovo samostatně (ČR ho uznává), Západní Sahara samostatně.
 - **Klik na zemi** stát hned podbarví, rozsvítí jeho jazyky (příznak 5) a ukáže počet všech jazyků státu z rejstříku
   (Glottolog `Countries`; převod názvu státu z mapy na kód je `mapaStatu` v `podrobnosti.json`); zavřením okna vše zhasne.
   Kosovo, Severní Kypr a Somaliland kód nemají – ukáže se jen seznam jazyků z atlasu.
