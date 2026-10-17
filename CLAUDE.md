@@ -626,7 +626,9 @@ sporné a typologicky abugida, ladino dnes většinou latinkou, manipurština so
 (`.github/workflows/wikidata.yml`, 1. v měsíci a ručně přes Actions → Run workflow). Výsledek přijde jako pull request;
 Netlify k němu udělá náhled. Pro pull request musí být v Settings → Actions → General zapnuté
 „Allow GitHub Actions to create and approve pull requests“. `.github/workflows/kontrola.yml` spouští `npm run check`
-u každého pushe.
+u každého pushe. Měsíční automat vždy vychází z `main` a přes `scripts/wikidata-pr.sh` commituje jen
+`data/wikidata.json` a `data/podrobnosti.json`; nikdy celé `data/` ani generované `dist/`. Po ručním Merge
+Netlify sestaví web ze sloučeného `main`. Regresní test: `node --test scripts/wikidata-pr.test.mjs` (i v CI).
 
 ## Jazyky starověku: stránky o civilizacích (od 26. 9. 2026)
 
