@@ -51,6 +51,10 @@
    "de": {
     "nazev": "Lateinische Schrift",
     "text": "Sie entstand im 7. Jahrhundert v. Chr. in Italien aus der etruskischen Form des griechischen Alphabets. Sie ist die am weitesten verbreitete Schrift der Welt: Die meisten Sprachen Europas, Amerikas, Afrikas südlich der Sahara und Ozeaniens sowie viele Sprachen Asiens (Türkisch, Vietnamesisch, Indonesisch) werden in ihr geschrieben, viele davon erst seit dem 19. und 20. Jahrhundert."
+   },
+   "fr": {
+    "nazev": "Alphabet latin",
+    "text": "Il est né en Italie au VIIe siècle av. J.-C. à partir de la forme étrusque de l'alphabet grec. C'est l'écriture la plus répandue au monde : la plupart des langues d'Europe, des Amériques, d'Afrique subsaharienne et d'Océanie ainsi que de nombreuses langues d'Asie (turc, vietnamien, indonésien) s'écrivent en caractères latins, beaucoup d'entre elles seulement depuis les XIXe et XXe siècles."
    }
   },
   {
@@ -86,6 +90,10 @@
    "de": {
     "nazev": "Kyrillische Schrift",
     "text": "Sie entstand Ende des 9. oder im 10. Jahrhundert im Bulgarischen Reich auf der Grundlage des griechischen Alphabets, ergänzt um Buchstaben für slawische Laute aus der Glagoliza. Sie wird für Russisch, Ukrainisch, Belarussisch, Bulgarisch, Mazedonisch, Serbisch (neben der lateinischen Schrift) und viele nichtslawische Sprachen der ehemaligen Sowjetunion und der Mongolei verwendet."
+   },
+   "fr": {
+    "nazev": "Alphabet cyrillique",
+    "text": "Il est né à la fin du IXe ou au Xe siècle dans l'Empire bulgare, sur la base de l'alphabet grec complété par des lettres empruntées au glagolitique pour les sons slaves. Il sert à écrire le russe, l'ukrainien, le biélorusse, le bulgare, le macédonien, le serbe (à côté de l'alphabet latin) et de nombreuses langues non slaves de l'ex-Union soviétique et de Mongolie."
    }
   },
   {
@@ -117,6 +125,10 @@
    "de": {
     "nazev": "Griechische Schrift",
     "text": "Die Griechen übernahmen sie wahrscheinlich im 9. oder 8. Jahrhundert v. Chr. von den Phöniziern und schrieben als Erste systematisch Vokale. Heute wird sie für das Griechische verwendet; von ihr leiten sich die lateinische Schrift (über das etruskische Alphabet) sowie die gotische, die koptische und die kyrillische Schrift ab."
+   },
+   "fr": {
+    "nazev": "Alphabet grec",
+    "text": "Les Grecs l'ont emprunté aux Phéniciens, probablement au IXe ou au VIIIe siècle av. J.-C., et ont été les premiers à noter systématiquement les voyelles. Il sert aujourd'hui à écrire le grec ; l'alphabet latin (par l'intermédiaire de l'alphabet étrusque), les alphabets gotique, copte et cyrillique en dérivent."
    }
   },
   {
@@ -157,6 +169,10 @@
    "de": {
     "nazev": "Arabische Schrift",
     "text": "Sie entwickelte sich aus der nabatäischen Schrift, einem Ableger der aramäischen; nabatäisch-arabische Übergangsinschriften stammen aus dem 3.–5. Jahrhundert, und die älteste datierte Inschrift in arabischer Schrift stammt aus dem Jahr 512 (Zabad in Syrien). Mit dem Islam verbreitete sie sich von Nordafrika bis nach Südostasien. Außer für das Arabische wird sie für Persisch, Paschtu, Urdu, Sindhi, Uigurisch und Sorani-Kurdisch verwendet. Im Arabischen gibt sie vor allem Konsonanten wieder, lange Vokale mit Buchstaben und kurze Vokale nur mit fakultativen Zeichen; das Uigurische und das Sorani-Kurdische schreiben dagegen alle Vokale."
+   },
+   "fr": {
+    "nazev": "Écriture arabe",
+    "text": "Elle s'est développée à partir de l'écriture nabatéenne, rameau de l'araméen ; les inscriptions de transition nabatéo-arabes datent des IIIe–Ve siècles, et la plus ancienne inscription datée en écriture arabe est de 512 (Zabad, en Syrie). Avec l'islam, elle s'est répandue de l'Afrique du Nord à l'Asie du Sud-Est. Outre l'arabe, elle sert à écrire le persan, le pachto, l'ourdou, le sindhi, l'ouïghour et le kurde sorani. En arabe, elle note surtout les consonnes, les voyelles longues par des lettres et les voyelles brèves seulement par des signes facultatifs ; l'ouïghour et le kurde sorani notent en revanche toutes les voyelles."
    }
   },
   {
@@ -188,6 +204,10 @@
    "de": {
     "nazev": "Hebräische Schrift",
     "text": "Die heutige „Quadratschrift“ geht auf die aramäische Schrift zurück, die die Juden in persischer Zeit (ab dem 6.–5. Jahrhundert v. Chr.) anstelle der älteren althebräischen Schrift übernahmen. Sie wird für Hebräisch und Jiddisch verwendet, früher auch für Ladino (heute meist in lateinischer Schrift geschrieben) und andere jüdische Sprachen."
+   },
+   "fr": {
+    "nazev": "Alphabet hébreu",
+    "text": "L'écriture « carrée » actuelle dérive de l'écriture araméenne, que les Juifs adoptèrent à l'époque perse (à partir des VIe–Ve siècles av. J.-C.) à la place de l'ancienne écriture paléo-hébraïque. Elle sert à écrire l'hébreu et le yiddish, autrefois aussi le ladino (aujourd'hui écrit surtout en caractères latins) et d'autres langues juives."
    }
   },
   {
@@ -220,6 +240,10 @@
    "de": {
     "nazev": "Syrische Schrift",
     "text": "Sie entstand in den ersten Jahrhunderten n. Chr. aus der aramäischen Schrift im Raum Edessa. Sie wird für das klassische Syrisch verwendet, die Liturgiesprache mehrerer östlicher Kirchen, sowie für die neuaramäischen Sprachen der syrischen Christen (Assyrer, Chaldäer, Aramäer)."
+   },
+   "fr": {
+    "nazev": "Alphabet syriaque",
+    "text": "Il est né de l'écriture araméenne dans la région d'Édesse au cours des premiers siècles de notre ère. Il sert à écrire le syriaque classique, langue liturgique de plusieurs Églises orientales, et les langues néo-araméennes des chrétiens syriaques (Assyriens, Chaldéens, Araméens)."
    }
   },
   {
@@ -252,6 +276,10 @@
    "de": {
     "nazev": "Thaana",
     "text": "Die Schrift des Dhivehi, belegt seit der Wende zum 17. Jahrhundert (Inschriften in der Moschee auf Kanditheemu), allgemein in Gebrauch seit dem 18. Jahrhundert. Ihre ersten neun Buchstaben gehen auf arabische Ziffern zurück, die nächsten neun auf indische Ziffern; Vokale werden mit obligatorischen Zeichen über und unter den Buchstaben geschrieben."
+   },
+   "fr": {
+    "nazev": "Thâna",
+    "text": "L'écriture du divehi, attestée au tournant du XVIIe siècle (inscriptions de la mosquée de Kanditheemu), d'usage général à partir du XVIIIe siècle. Ses neuf premières lettres dérivent des chiffres arabes et les neuf suivantes des chiffres indiens ; les voyelles sont notées par des signes obligatoires placés au-dessus et au-dessous des lettres."
    }
   },
   {
@@ -283,6 +311,10 @@
    "de": {
     "nazev": "Devanagari",
     "text": "Eine indische Schrift, die über die Gupta- und die Nagari-Schrift auf die Brahmi zurückgeht; ihre Buchstaben hängen an einer durchgehenden waagerechten Linie. Sie wird für Hindi, Marathi, Nepali, Sanskrit und viele andere Sprachen Nordindiens und Nepals verwendet."
+   },
+   "fr": {
+    "nazev": "Devanagari",
+    "text": "Écriture indienne dérivée de la brahmi par l'intermédiaire des écritures gupta et nagari ; ses lettres sont suspendues à une ligne horizontale continue. Elle sert à écrire le hindi, le marathi, le népalais, le sanskrit et de nombreuses autres langues du nord de l'Inde et du Népal."
    }
   },
   {
@@ -314,6 +346,10 @@
    "de": {
     "nazev": "Bengalische Schrift",
     "text": "Eine ostindische Schrift aus derselben Wurzel wie die Devanagari. In zwei leicht unterschiedlichen Formen wird sie für Bengalisch und Assamesisch verwendet, außerdem für Manipuri, wo sie seit 2021 parallel zur wiederbelebten Meitei-Mayek-Schrift gebraucht wird."
+   },
+   "fr": {
+    "nazev": "Écriture bengalie",
+    "text": "Écriture de l'est de l'Inde, issue de la même souche que la devanagari. Sous deux formes légèrement différentes, elle sert à écrire le bengali et l'assamais, ainsi que le manipuri, pour lequel elle est employée depuis 2021 concurremment avec l'écriture meitei mayek, remise en usage."
    }
   },
   {
@@ -345,6 +381,10 @@
    "de": {
     "nazev": "Gurmukhi",
     "text": "Die Schrift des Panjabi in Indien, mit den Sikhs verbunden; der Überlieferung nach wurde sie im 16. Jahrhundert vom zweiten Guru der Sikhs, Angad, vereinheitlicht. In Pakistan wird Panjabi in arabischer Schrift (Shahmukhi) geschrieben."
+   },
+   "fr": {
+    "nazev": "Gurmukhi",
+    "text": "L'écriture du pendjabi en Inde, associée aux sikhs ; selon la tradition, elle a été normalisée au XVIe siècle par le deuxième gourou sikh, Angad. Au Pakistan, le pendjabi s'écrit en écriture arabe (shahmukhi)."
    }
   },
   {
@@ -376,6 +416,10 @@
    "de": {
     "nazev": "Gujarati-Schrift",
     "text": "Eine nahe Verwandte der Devanagari, jedoch ohne die durchgehende Kopflinie. Sie wird für Gujarati verwendet."
+   },
+   "fr": {
+    "nazev": "Écriture gujarati",
+    "text": "Proche parente de la devanagari, mais sans la ligne supérieure continue. Elle sert à écrire le gujarati."
    }
   },
   {
@@ -407,6 +451,10 @@
    "de": {
     "nazev": "Odia-Schrift",
     "text": "Die Schrift des Odia in Ostindien. Ihre typischen gerundeten Oberteile werden meist mit der Tradition erklärt, mit einem Griffel auf Palmblätter zu schreiben, die eine gerade Linie zerreißen würde."
+   },
+   "fr": {
+    "nazev": "Écriture odia",
+    "text": "L'écriture de l'odia, dans l'est de l'Inde. Ses sommets arrondis caractéristiques s'expliquent généralement par la tradition de l'écriture au stylet sur feuilles de palmier, qu'un trait droit aurait déchirées."
    }
   },
   {
@@ -438,6 +486,10 @@
    "de": {
     "nazev": "Tamilische Schrift",
     "text": "Eine südindische Schrift, die auf die Brahmi zurückgeht. Sie hat weniger Konsonantenbuchstaben als andere indische Schriften, weil das Tamil weder Stimmhaftigkeit noch Aspiration unterscheidet."
+   },
+   "fr": {
+    "nazev": "Écriture tamoule",
+    "text": "Écriture de l'Inde du Sud dérivée de la brahmi. Elle compte moins de lettres consonantiques que les autres écritures indiennes, car le tamoul ne distingue ni le voisement ni l'aspiration."
    }
   },
   {
@@ -469,6 +521,10 @@
    "de": {
     "nazev": "Telugu-Schrift",
     "text": "Eine südindische Schrift mit charakteristischen runden Formen, eng verwandt mit der Kannada-Schrift. Sie wird für Telugu verwendet."
+   },
+   "fr": {
+    "nazev": "Écriture télougou",
+    "text": "Écriture de l'Inde du Sud aux formes arrondies caractéristiques, étroitement apparentée à l'écriture kannada. Elle sert à écrire le télougou."
    }
   },
   {
@@ -500,6 +556,10 @@
    "de": {
     "nazev": "Kannada-Schrift",
     "text": "Eine südindische Schrift, eng verwandt mit der Telugu-Schrift. Sie wird für Kannada verwendet, außerdem für einige kleinere Sprachen Karnatakas wie Tulu."
+   },
+   "fr": {
+    "nazev": "Écriture kannada",
+    "text": "Écriture de l'Inde du Sud étroitement apparentée à l'écriture télougou. Elle sert à écrire le kannada ainsi que quelques langues moins répandues du Karnataka, comme le toulou."
    }
   },
   {
@@ -531,6 +591,10 @@
    "de": {
     "nazev": "Malayalam-Schrift",
     "text": "Die südindische Schrift des Malayalam in Kerala, abgeleitet von der Grantha-Schrift."
+   },
+   "fr": {
+    "nazev": "Écriture malayalam",
+    "text": "L'écriture du malayalam au Kerala, dans le sud de l'Inde, dérivée de l'écriture grantha."
    }
   },
   {
@@ -562,6 +626,10 @@
    "de": {
     "nazev": "Singhalesische Schrift",
     "text": "Die Schrift des Singhalesischen in Sri Lanka, abgeleitet von der Brahmi."
+   },
+   "fr": {
+    "nazev": "Écriture cinghalaise",
+    "text": "L'écriture du cinghalais au Sri Lanka, dérivée de la brahmi."
    }
   },
   {
@@ -593,6 +661,10 @@
    "de": {
     "nazev": "Tibetische Schrift",
     "text": "Der Überlieferung nach wurde sie im 7. Jahrhundert von Thönmi Sambhota nach indischem Vorbild geschaffen. Sie wird für Tibetisch, für Dzongkha in Bhutan und andere tibetische Sprachen verwendet; ihre Rechtschreibung bewahrt die Aussprache des Alttibetischen."
+   },
+   "fr": {
+    "nazev": "Écriture tibétaine",
+    "text": "Selon la tradition, elle a été créée au VIIe siècle par Thonmi Sambhota sur un modèle indien. Elle sert à écrire le tibétain, le dzongkha au Bhoutan et d'autres langues tibétiques ; son orthographe conserve la prononciation du vieux tibétain."
    }
   },
   {
@@ -624,6 +696,10 @@
    "de": {
     "nazev": "Birmanische Schrift",
     "text": "Eine Schrift der südindischen Familie, die nach traditioneller Auffassung über die Mon-Schrift vermittelt wurde (manche Forscher leiten sie stattdessen von der Pyu-Schrift ab); ihre Buchstaben sind aus Kreisen und Bögen aufgebaut. Sie wird für Birmanisch, Mon, Shan und andere Sprachen Myanmars verwendet."
+   },
+   "fr": {
+    "nazev": "Écriture birmane",
+    "text": "Écriture de la famille sud-indienne, traditionnellement considérée comme venue par l'intermédiaire de l'écriture môn (certains chercheurs la font plutôt dériver de l'écriture pyu) ; ses lettres sont formées de cercles et d'arcs. Elle sert à écrire le birman, le môn, le shan et d'autres langues de Birmanie."
    }
   },
   {
@@ -655,6 +731,10 @@
    "de": {
     "nazev": "Thailändische Schrift",
     "text": "Sie entstand aus der altkhmerischen Schrift; die Überlieferung verbindet ihre Schaffung mit König Ram Khamhaeng und dem Jahr 1283, doch die Echtheit seiner Inschrift ist umstritten. Sie bezeichnet auch die Töne des Thai, und Wörter werden nicht durch Leerzeichen getrennt."
+   },
+   "fr": {
+    "nazev": "Écriture thaïe",
+    "text": "Elle est née de l'écriture khmère ancienne ; la tradition attribue sa création au roi Ram Khamhaeng et la date de 1283, bien que l'authenticité de son inscription soit discutée. Elle note aussi les tons du thaï, et les mots ne sont pas séparés par des espaces."
    }
   },
   {
@@ -686,6 +766,10 @@
    "de": {
     "nazev": "Laotische Schrift",
     "text": "Eine nahe Verwandte der thailändischen Schrift mit vereinfachten Formen. Sie wird für Laotisch verwendet."
+   },
+   "fr": {
+    "nazev": "Écriture lao",
+    "text": "Proche parente de l'écriture thaïe, aux formes simplifiées. Elle sert à écrire le lao."
    }
   },
   {
@@ -717,6 +801,10 @@
    "de": {
     "nazev": "Khmer-Schrift",
     "text": "Sie entwickelte sich aus der südindischen Pallava-Schrift; die älteste datierte Khmer-Inschrift stammt aus dem Jahr 611. Sie wird für Khmer verwendet, und die thailändische und die laotische Schrift leiten sich von ihr ab."
+   },
+   "fr": {
+    "nazev": "Écriture khmère",
+    "text": "Elle s'est développée à partir de l'écriture pallava de l'Inde du Sud ; la plus ancienne inscription khmère datée est de 611. Elle sert à écrire le khmer, et les écritures thaïe et lao en dérivent."
    }
   },
   {
@@ -748,6 +836,10 @@
    "de": {
     "nazev": "Georgische Schrift",
     "text": "Die ältesten georgischen Inschriften stammen aus dem 5. Jahrhundert. Heute wird das Georgische im Mchedruli-Alphabet mit 33 Buchstaben geschrieben, das im fortlaufenden Text keine Groß- und Kleinschreibung kennt; Mtawruli-Formen dienen nur für Überschriften in Versalien."
+   },
+   "fr": {
+    "nazev": "Alphabet géorgien",
+    "text": "Les plus anciennes inscriptions géorgiennes datent du Ve siècle. Le géorgien s'écrit aujourd'hui avec l'alphabet mkhedrouli de 33 lettres, qui ne distingue pas majuscules et minuscules dans le texte courant ; les formes mtavrouli ne servent qu'aux titres entièrement en capitales."
    }
   },
   {
@@ -779,6 +871,10 @@
    "de": {
     "nazev": "Armenische Schrift",
     "text": "Um 405 schuf sie der Mönch Mesrop Maschtoz, damit die Bibel ins Armenische übersetzt werden konnte. Sie hat 36 ursprüngliche Buchstaben, zu denen später (12.–13. Jahrhundert) zwei weitere, ō und f, hinzukamen."
+   },
+   "fr": {
+    "nazev": "Alphabet arménien",
+    "text": "Il a été créé vers 405 par le moine Mesrop Machtots afin que la Bible puisse être traduite en arménien. Il compte 36 lettres d'origine, auxquelles deux autres, ō et f, ont été ajoutées plus tard (XIIe–XIIIe siècle)."
    }
   },
   {
@@ -810,6 +906,10 @@
    "de": {
     "nazev": "Äthiopische Schrift",
     "text": "Sie entwickelte sich aus der südarabischen Schrift; im 4. Jahrhundert begann man, den Konsonanten Vokalzeichen anzufügen. Sie wird für Amharisch, Tigrinya und die Liturgiesprache Ge'ez verwendet."
+   },
+   "fr": {
+    "nazev": "Écriture éthiopienne",
+    "text": "Elle s'est développée à partir de l'écriture sud-arabique ; au IVe siècle, on a commencé à adjoindre aux consonnes des signes vocaliques. Elle sert à écrire l'amharique, le tigrigna et la langue liturgique guèze."
    }
   },
   {
@@ -843,6 +943,10 @@
    "de": {
     "nazev": "Chinesische Schriftzeichen",
     "text": "Die ältesten Belege sind die Orakelknocheninschriften der Shang-Dynastie (um 1250 v. Chr.). Ein Schriftzeichen schreibt in der Regel eine bedeutungstragende Silbe. Kurzzeichen werden in der VR China und in Singapur verwendet, Langzeichen in Taiwan, Hongkong und Macau."
+   },
+   "fr": {
+    "nazev": "Caractères chinois",
+    "text": "Les plus anciens témoignages sont les inscriptions oraculaires sur os de la dynastie Shang (vers 1250 av. J.-C.). Un caractère note généralement une syllabe porteuse de sens. Les caractères simplifiés sont employés en RPC et à Singapour, les caractères traditionnels à Taïwan, à Hong Kong et à Macao."
    }
   },
   {
@@ -876,6 +980,10 @@
    "de": {
     "nazev": "Japanische Schrift",
     "text": "Sie kombiniert chinesische Schriftzeichen (Kanji) mit zwei Silbenschriften, Hiragana und Katakana, die sich im 9. Jahrhundert aus chinesischen Schriftzeichen entwickelten. Sie wird sowohl waagerecht als auch senkrecht geschrieben."
+   },
+   "fr": {
+    "nazev": "Écriture japonaise",
+    "text": "Elle combine les caractères chinois (kanji) avec deux syllabaires, les hiragana et les katakana, issus des caractères chinois au IXe siècle. Elle s'écrit aussi bien horizontalement que verticalement."
    }
   },
   {
@@ -908,6 +1016,10 @@
    "de": {
     "nazev": "Hangul",
     "text": "Die koreanische Schrift (in Nordkorea Chosŏn’gŭl), auf Initiative König Sejongs geschaffen und 1446 verkündet. Die Buchstaben werden zu Silbenblöcken zusammengefasst, und die Formen der Konsonanten bilden die Stellung der Sprechorgane nach."
+   },
+   "fr": {
+    "nazev": "Hangul",
+    "text": "L'écriture coréenne (chosŏn'gŭl en Corée du Nord), créée à l'initiative du roi Sejong et promulguée en 1446. Les lettres sont regroupées en blocs syllabiques, et la forme des consonnes imite la position des organes de la parole."
    }
   },
   {
@@ -940,6 +1052,10 @@
    "de": {
     "nazev": "Mongolische Schrift",
     "text": "Sie entstand im 13. Jahrhundert aus der uigurischen Schrift und wird senkrecht von oben nach unten geschrieben. In der Mongolei wurde sie ab den 1940er-Jahren im Alltag durch die kyrillische Schrift ersetzt; seit dem 2. Januar 2025 werden amtliche Dokumente dort jedoch in beiden Schriften ausgestellt. In der Inneren Mongolei in China ist sie ununterbrochen in Gebrauch geblieben."
+   },
+   "fr": {
+    "nazev": "Écriture mongole",
+    "text": "Elle est née au XIIIe siècle de l'écriture ouïghoure et s'écrit verticalement, de haut en bas. En Mongolie, elle a été remplacée dans l'usage courant par le cyrillique à partir des années 1940 ; depuis le 2 janvier 2025, les documents officiels y sont toutefois établis dans les deux écritures. En Mongolie-Intérieure, en Chine, elle est restée en usage sans interruption."
    }
   },
   {
@@ -972,6 +1088,10 @@
    "de": {
     "nazev": "Kanadische Silbenschrift",
     "text": "Sie wird gewöhnlich dem Missionar James Evans zugeschrieben (um 1840, Norway House), die mündliche Überlieferung der Cree schreibt sie jedoch Mistanâkôwêw (Calling Badger) zu. Traditionell als Silbenschrift bezeichnet, ist sie typologisch eine Abugida. Die Form eines Zeichens gibt den Konsonanten an, seine Ausrichtung den Vokal. Sie wird für Cree, Ojibwe und Inuktitut verwendet."
+   },
+   "fr": {
+    "nazev": "Syllabaire autochtone canadien",
+    "text": "On l'attribue généralement au missionnaire James Evans (vers 1840, Norway House), bien que la tradition orale crie l'attribue à Mistanâkôwêw (Calling Badger). Traditionnellement appelé syllabaire, il est typologiquement un abugida. La forme d'un signe indique la consonne, et son orientation la voyelle. Il sert à écrire le cri, l'ojibwé et l'inuktitut."
    }
   },
   {
@@ -1004,6 +1124,10 @@
    "de": {
     "nazev": "Tifinagh",
     "text": "Die Schrift der Berbersprachen, die in der antiken libysch-berberischen Schrift wurzelt; die Tuareg haben sie ununterbrochen verwendet. Ihre moderne Form ist in Marokko seit 2003 die offiziell eingeführte Schrift für das Berberische (Berberisch ist seit 2011 Amtssprache). Das traditionelle Tifinagh der Tuareg schreibt die Vokale meist nicht."
+   },
+   "fr": {
+    "nazev": "Tifinagh",
+    "text": "L'écriture des langues berbères, enracinée dans l'ancienne écriture libyco-berbère ; les Touaregs l'ont employée sans interruption. Sa forme moderne est depuis 2003 l'écriture officiellement adoptée pour le berbère au Maroc (le berbère y est langue officielle depuis 2011). Le tifinagh touareg traditionnel ne note généralement pas les voyelles."
    }
   },
   {
@@ -1036,6 +1160,10 @@
    "de": {
     "nazev": "Cherokee-Silbenschrift",
     "text": "Sie wurde von Sequoyah geschaffen und 1825 vom Rat der Cherokee angenommen; innerhalb weniger Jahre lernten die Cherokee in großer Zahl, in ihr zu schreiben. Fast jedes ihrer 85 Zeichen schreibt eine Silbe (die Ausnahme ist ein alleinstehendes s)."
+   },
+   "fr": {
+    "nazev": "Syllabaire cherokee",
+    "text": "Créé par Sequoyah, il a été adopté par le conseil cherokee en 1825 ; en quelques années, les Cherokees ont appris en masse à l'écrire. Presque chacun de ses 85 signes note une syllabe (l'exception est un s isolé)."
    }
   },
   {
@@ -1068,6 +1196,10 @@
    "de": {
     "nazev": "N'Ko",
     "text": "Sie wurde 1949 von dem guineischen Lehrer Solomana Kanté für die Manding-Sprachen geschaffen. Sie wird von rechts nach links geschrieben und bezeichnet auch die Töne."
+   },
+   "fr": {
+    "nazev": "N'ko",
+    "text": "Il a été créé en 1949 par l'enseignant guinéen Solomana Kanté pour les langues mandingues. Il s'écrit de droite à gauche et note aussi les tons."
    }
   },
   {
@@ -1100,6 +1232,10 @@
    "de": {
     "nazev": "Vai-Schrift",
     "text": "Die Silbenschrift der Sprache Vai in Liberia, geschaffen in den 1830er-Jahren; die Überlieferung schreibt sie Momolu Duwalu Bukele zu."
+   },
+   "fr": {
+    "nazev": "Écriture vaï",
+    "text": "Le syllabaire de la langue vaï au Liberia, créé dans les années 1830 ; la tradition l'attribue à Momolu Duwalu Bukele."
    }
   },
   {
@@ -1132,6 +1268,10 @@
    "de": {
     "nazev": "Yi-Schrift",
     "text": "Die Silbenschrift der Sprache Nuosu (Yi) in der Provinz Sichuan, in den 1970er-Jahren auf der Grundlage der traditionellen Schrift standardisiert."
+   },
+   "fr": {
+    "nazev": "Écriture yi",
+    "text": "Le syllabaire de la langue nuosu (yi) dans la province du Sichuan, normalisé dans les années 1970 à partir de l'écriture traditionnelle."
    }
   },
   {
@@ -1164,6 +1304,10 @@
    "de": {
     "nazev": "Ol Chiki",
     "text": "Die Schrift des Santali, 1925 von Raghunath Murmu geschaffen. Anders als die von der Brahmi abgeleiteten Schriften ist sie ein Alphabet mit eigenen Buchstaben für Vokale."
+   },
+   "fr": {
+    "nazev": "Ol chiki",
+    "text": "L'écriture du santali, créée en 1925 par Raghunath Murmu. À la différence des écritures dérivées de la brahmi, c'est un alphabet doté de lettres distinctes pour les voyelles."
    }
   }
  ]
