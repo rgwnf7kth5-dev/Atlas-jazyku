@@ -34,7 +34,8 @@ const json = p => JSON.parse(fs.readFileSync(path.join(KOREN, p), "utf8"));
 /* státy na mapě, které nemají vlastní kód ISO 3166 (world-atlas je vede zvlášť) */
 const RUCNE = {
   it: { "Kosovo": "Kosovo", "N. Cyprus": "Cipro del Nord", "Somaliland": "Somaliland" },
-  de: { "Kosovo": "Kosovo", "N. Cyprus": "Nordzypern", "Somaliland": "Somaliland" }
+  de: { "Kosovo": "Kosovo", "N. Cyprus": "Nordzypern", "Somaliland": "Somaliland" },
+  fr: { "Kosovo": "Kosovo", "N. Cyprus": "Chypre du Nord", "Somaliland": "Somaliland" }
 };
 
 // --- glottocode → ISO 639-3 (Glottolog) a ISO 639-1 → 639-3
@@ -58,7 +59,9 @@ for (const [k, v] of Object.entries(JSON.parse(cti(`cldr-${L}.json`)).main[L].lo
 const z = JSON.parse(cti(`zeme-${L}.json`)).countries;
 /* úřední tvary s čárkou („Tansania, Vereinigte Republik“) nahradit běžným názvem */
 const BEZNE = {
-  de: { SY: "Syrien", TZ: "Tansania", US: "Vereinigte Staaten", UM: "Kleinere Amerikanische Überseeinseln", CZ: "Tschechien" }
+  de: { SY: "Syrien", TZ: "Tansania", US: "Vereinigte Staaten", UM: "Kleinere Amerikanische Überseeinseln", CZ: "Tschechien" },
+  fr: { TZ: "Tanzanie", US: "États-Unis", CZ: "Tchéquie", CF: "République centrafricaine", DO: "République dominicaine", SZ: "Eswatini",
+        VG: "Îles Vierges britanniques", VI: "Îles Vierges des États-Unis", IO: "Territoire britannique de l’océan Indien" }
 };
 const staty = Object.fromEntries(Object.entries(z).map(([k, v]) => [k, (BEZNE[L] || {})[k] || (Array.isArray(v) ? v[0] : v)]));
 const mapaStatu = json("data/podrobnosti.json").mapaStatu;

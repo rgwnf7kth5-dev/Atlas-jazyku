@@ -22,7 +22,7 @@ const podrobnosti = json("data/podrobnosti.json");
 const rodinyCz = json("data/glottolog-families.cs.json");
 /* jazyky webu: čeština a angličtina jsou úplné; další (italština od 2. 10. 2026) se doplňují postupně a co v nich chybí,
    bere se z angličtiny – texty rozhraní po klíčích (spoj), data v prohlížeči (doplnJazyky v app.js) */
-const JAZYKY_WEBU = ["cs", "en", "it", "de"];
+const JAZYKY_WEBU = ["cs", "en", "it", "de", "fr"];
 const DALSI = JAZYKY_WEBU.filter(l => l !== "cs" && l !== "en");
 const NAZVY = Object.fromEntries(DALSI.map(l => [l, json(`data/nazvy-${l}.json`)]));          // státy, písma, jazyky (scripts/nazvy.mjs)
 const RODINY = Object.fromEntries(DALSI.map(l => [l, json(`data/glottolog-families.${l}.json`)]));
@@ -54,7 +54,7 @@ const nareci = json("data/nareci.json");                 // jména nářečí z 
 // adresy webu: česká verze na atlasjazyku.cz, anglická na thelanguageatlas.com (dist/en/ servírovaná z kořene).
 // Canonical, og:url a og:image musí mířit na tu doménu, na které stránka opravdu leží: Facebook podle og:url stránku
 // načte znovu a se starou adresou atlasoflanguages.netlify.app ukazoval odkaz bez obrázku (25. 9. 2026).
-const DOMENA = { cs: "https://atlasjazyku.cz", en: "https://thelanguageatlas.com", it: "https://thelanguageatlas.com/it", de: "https://thelanguageatlas.com/de" };   // další jazyky na anglické doméně v /it/, /de/ (dist/it/, dist/de/)
+const DOMENA = { cs: "https://atlasjazyku.cz", en: "https://thelanguageatlas.com", it: "https://thelanguageatlas.com/it", de: "https://thelanguageatlas.com/de", fr: "https://thelanguageatlas.com/fr" };   // další jazyky na anglické doméně v /it/, /de/ (dist/it/, dist/de/)
 // ověření vlastnictví v Google Search Console (značka HTML), na úvodních stránkách obou domén; kódy nemazat,
 // jinak Search Console ověření po čase zruší
 const GOOGLE_OVERENI = ["zyKCEYlegO4cJQmz22iaMH9QuphSUalznP-e4iU_Gzg", "R9cFXotbubItuaKstc9NVaT-CoYj0BqfVyLau7QR_GY"];
@@ -173,7 +173,7 @@ const skriptWebu = knihovny.join("\n;\n") + "\n;\n" +
     'document.documentElement.lang === "en" || /(^|\\.)thelanguageatlas\\.com$/.test(location.hostname) ? "en" : "cs"', false);
 const souborSkriptu = `js/atlas.${crypto.createHash("sha256").update(skriptWebu).digest("hex").slice(0, 10)}.js`;
 
-const LOCALE = { cs: "cs_CZ", en: "en_GB", it: "it_IT", de: "de_DE" };
+const LOCALE = { cs: "cs_CZ", en: "en_GB", it: "it_IT", de: "de_DE", fr: "fr_FR" };
 function sestav(lang, { odkazy, artefakt }) {
   const T = UI[lang];
   // přepínač jazyků v záhlaví: odkaz na každou verzi (aktuální označí skript)

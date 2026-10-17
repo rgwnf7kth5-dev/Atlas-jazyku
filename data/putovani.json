@@ -12942,6 +12942,1588 @@
     "Arnold, W. (2011): Western Neo-Aramaic. In: Weninger, S. et al. (eds.): The Semitic Languages: An International Handbook. Berlin – Boston: De Gruyter Mouton, 685–696.",
     "Gaunt, D. (2006): Massacres, Resistance, Protectors: Muslim-Christian Relations in Eastern Anatolia during World War I. Piscataway: Gorgias Press."
    ]
+  },
+  {
+   "id": "francouzstina",
+   "atlas": "fr",
+   "koncept": true,
+   "adresa": {
+    "cs": "putovani-francouzstina",
+    "en": "journey-french",
+    "it": "viaggio-francese",
+    "de": "reise-franzoesisch",
+    "fr": "voyage-francais"
+   },
+   "nazev": {
+    "cs": "Putování francouzštiny",
+    "en": "The journey of French",
+    "it": "Il viaggio del francese",
+    "de": "Die Reise des Französischen",
+    "fr": "Le voyage du français"
+   },
+   "podtitul": {
+    "cs": "Od lidové latiny Galie ke světovému jazyku na pěti kontinentech",
+    "en": "From the Vulgar Latin of Gaul to a world language on five continents",
+    "it": "Dal latino volgare della Gallia a lingua mondiale su cinque continenti",
+    "de": "Vom Vulgärlatein Galliens zur Weltsprache auf fünf Kontinenten",
+    "fr": "Du latin populaire de la Gaule à une langue mondiale sur cinq continents"
+   },
+   "uvod": {
+    "cs": "Jak se z latiny římské Galie stala francouzština, proč se francouzsky mluví v Québecu, na Haiti i v Kinshase a proč většina dnešních frankofonů žije v Africe. Letopočty jsou přibližné, sporné výklady jsou přerušovaně.",
+    "en": "How the Latin of Roman Gaul became French, why French is spoken in Quebec, Haiti and Kinshasa, and why most French speakers today live in Africa. Dates are approximate; disputed interpretations are dashed.",
+    "it": "Come il latino della Gallia romana divenne il francese, perché si parla francese in Québec, ad Haiti e a Kinshasa e perché oggi la maggior parte dei francofoni vive in Africa. Le date sono approssimative; le interpretazioni controverse sono tratteggiate.",
+    "de": "Wie aus dem Latein des römischen Galliens das Französische wurde, warum man in Québec, auf Haiti und in Kinshasa Französisch spricht und warum heute die meisten Französischsprachigen in Afrika leben. Die Jahreszahlen sind ungefähr, umstrittene Deutungen sind gestrichelt.",
+    "fr": "Comment le latin de la Gaule romaine est devenu le français, pourquoi l’on parle français au Québec, en Haïti et à Kinshasa, et pourquoi la plupart des francophones vivent aujourd’hui en Afrique. Les dates sont approximatives ; les interprétations controversées sont en pointillé."
+   },
+   "etapy": [
+    {
+     "id": "galie",
+     "doba": {
+      "cs": "asi 600 – 50 př. n. l.",
+      "en": "c. 600 – 50 BCE",
+      "it": "circa 600 – 50 a.C.",
+      "de": "um 600 – 50 v. Chr.",
+      "fr": "vers 600 – 50 av. J.-C."
+     },
+     "pohled": [
+      2.0,
+      46.0,
+      2.6
+     ],
+     "nazev": {
+      "cs": "Galie před Římany",
+      "en": "Gaul before the Romans",
+      "it": "La Gallia prima dei Romani",
+      "de": "Gallien vor den Römern",
+      "fr": "La Gaule avant les Romains"
+     },
+     "text": {
+      "cs": "Francouzština je románský jazyk, potomek latiny. Než do Galie přišli Římané, mluvilo se v ní převážně galsky, keltským jazykem; na jihozápadě akvitánsky, jazykem, který byl nejspíš předchůdcem nebo blízkým příbuzným baskičtiny. Kolem roku 600 př. n. l. založili řečtí osadníci z Fókaie na pobřeží Středozemního moře Massalii, dnešní Marseille.",
+      "en": "French is a Romance language, a descendant of Latin. Before the Romans arrived, Gaul spoke mainly Gaulish, a Celtic language; in the south-west people spoke Aquitanian, most likely an ancestor or close relative of Basque. Around 600 BCE Greek settlers from Phocaea founded Massalia, today's Marseille, on the Mediterranean coast.",
+      "it": "Il francese è una lingua romanza, discendente del latino. Prima dell’arrivo dei Romani in Gallia si parlava soprattutto il gallico, una lingua celtica; nel sud-ovest si parlava l’aquitano, molto probabilmente un antenato o uno stretto parente del basco. Intorno al 600 a.C. coloni greci provenienti da Focea fondarono sulla costa mediterranea Massalia, l’odierna Marsiglia.",
+      "de": "Das Französische ist eine romanische Sprache, ein Nachfahre des Lateinischen. Bevor die Römer kamen, sprach man in Gallien vor allem Gallisch, eine keltische Sprache; im Südwesten sprach man Aquitanisch, höchstwahrscheinlich ein Vorläufer oder naher Verwandter des Baskischen. Um 600 v. Chr. gründeten griechische Siedler aus Phokaia an der Mittelmeerküste Massalia, das heutige Marseille.",
+      "fr": "Le français est une langue romane, issue du latin. Avant l’arrivée des Romains, on parlait surtout en Gaule le gaulois, une langue celtique ; au sud-ouest, on parlait l’aquitain, très probablement un ancêtre ou un proche parent du basque. Vers 600 av. J.-C., des colons grecs venus de Phocée fondèrent sur la côte méditerranéenne Massalia, l’actuelle Marseille."
+     },
+     "oblasti": [
+      {
+       "id": "galove",
+       "kruhy": [
+        [
+         2.3,
+         47.6,
+         1.9
+        ],
+        [
+         0.0,
+         47.6,
+         1.3
+        ],
+        [
+         4.8,
+         48.6,
+         1.3
+        ],
+        [
+         4.3,
+         45.9,
+         1.3
+        ],
+        [
+         1.8,
+         45.3,
+         1.2
+        ],
+        [
+         -2.8,
+         48.0,
+         0.8
+        ],
+        [
+         5.5,
+         50.2,
+         0.8
+        ]
+       ],
+       "barva": "gal",
+       "popisek": {
+        "cs": "galština",
+        "en": "Gaulish",
+        "it": "gallico",
+        "de": "Gallisch",
+        "fr": "gaulois"
+       }
+      },
+      {
+       "id": "akvitanci",
+       "kruhy": [
+        [
+         -0.6,
+         43.8,
+         0.9
+        ],
+        [
+         0.4,
+         43.3,
+         0.6
+        ]
+       ],
+       "barva": "aqu",
+       "popisek": {
+        "cs": "akvitánština",
+        "en": "Aquitanian",
+        "it": "aquitano",
+        "de": "Aquitanisch",
+        "fr": "aquitain"
+       }
+      },
+      {
+       "id": "massalia",
+       "kruhy": [
+        [
+         5.37,
+         43.3,
+         0.3
+        ]
+       ],
+       "barva": "rek",
+       "popisek": {
+        "cs": "Massalia (řecky)",
+        "en": "Massalia (Greek)",
+        "it": "Massalia (greco)",
+        "de": "Massalia (Griechisch)",
+        "fr": "Massalia (grec)"
+       }
+      }
+     ],
+     "proudy": []
+    },
+    {
+     "id": "rim",
+     "doba": {
+      "cs": "121 př. n. l. – 5. století",
+      "en": "121 BCE – 5th century CE",
+      "it": "121 a.C. – V secolo d.C.",
+      "de": "121 v. Chr. – 5. Jh. n. Chr.",
+      "fr": "121 av. J.-C. – Ve siècle apr. J.-C."
+     },
+     "pohled": [
+      5.5,
+      45.0,
+      2.4
+     ],
+     "nazev": {
+      "cs": "Latina římské Galie",
+      "en": "The Latin of Roman Gaul",
+      "it": "Il latino della Gallia romana",
+      "de": "Das Latein des römischen Galliens",
+      "fr": "Le latin de la Gaule romaine"
+     },
+     "text": {
+      "cs": "Roku 121 př. n. l. vznikla na jihu Galie římská provincie, později zvaná Gallia Narbonensis, a v letech 58–50 př. n. l. dobyl Julius Caesar zbytek země. Obyvatelé postupně přešli na latinu, a to na latinu mluvenou (lidovou), z níž se vyvinula francouzština. Galština ustupovala pomalu, na venkově snad přežila až do 5. či 6. století. Ve francouzštině po ní zůstal jen nevelký počet slov, například chêne ‚dub‘, ruche ‚úl‘ a alouette ‚skřivan‘.",
+      "en": "In 121 BCE a Roman province, later called Gallia Narbonensis, was created in the south of Gaul, and in 58–50 BCE Julius Caesar conquered the rest of the country. The inhabitants gradually shifted to Latin – to spoken (Vulgar) Latin, from which French developed. Gaulish retreated slowly and may have survived in the countryside until the 5th or 6th century. It left only a small number of words in French, for example chêne ‘oak’, ruche ‘beehive’ and alouette ‘lark’.",
+      "it": "Nel 121 a.C. nel sud della Gallia fu creata una provincia romana, poi chiamata Gallia Narbonense, e nel 58–50 a.C. Giulio Cesare conquistò il resto del paese. Gli abitanti passarono gradualmente al latino, cioè al latino parlato (volgare), da cui si sviluppò il francese. Il gallico arretrò lentamente e nelle campagne sopravvisse forse fino al V o VI secolo. Nel francese ha lasciato solo un numero ridotto di parole, per esempio chêne ‘quercia’, ruche ‘alveare’ e alouette ‘allodola’.",
+      "de": "121 v. Chr. entstand im Süden Galliens eine römische Provinz, später Gallia Narbonensis genannt, und 58–50 v. Chr. eroberte Julius Caesar den Rest des Landes. Die Bewohner gingen allmählich zum Latein über, und zwar zum gesprochenen (Vulgär-)Latein, aus dem sich das Französische entwickelte. Das Gallische wich langsam zurück und hielt sich auf dem Land vielleicht bis ins 5. oder 6. Jahrhundert. Im Französischen hinterließ es nur eine kleine Zahl von Wörtern, etwa chêne ‚Eiche‘, ruche ‚Bienenstock‘ und alouette ‚Lerche‘.",
+      "fr": "En 121 av. J.-C. fut créée dans le sud de la Gaule une province romaine, appelée plus tard Gaule narbonnaise, et en 58–50 av. J.-C. Jules César conquit le reste du pays. Les habitants adoptèrent peu à peu le latin, plus précisément le latin parlé (populaire), dont est issu le français. Le gaulois recula lentement et survécut peut-être dans les campagnes jusqu’au Ve ou au VIe siècle. Il n’a laissé en français qu’un petit nombre de mots, par exemple chêne, ruche et alouette."
+     },
+     "oblasti": [
+      {
+       "id": "narbonensis",
+       "kruhy": [
+        [
+         4.6,
+         43.7,
+         0.8
+        ],
+        [
+         3.0,
+         43.3,
+         0.6
+        ],
+        [
+         6.2,
+         43.6,
+         0.5
+        ]
+       ],
+       "barva": "lat",
+       "po": "z-rima",
+       "popisek": {
+        "cs": "Gallia Narbonensis",
+        "en": "Gallia Narbonensis",
+        "it": "Gallia Narbonense",
+        "de": "Gallia Narbonensis",
+        "fr": "Gaule narbonnaise"
+       }
+      },
+      {
+       "id": "galie-lat",
+       "kruhy": [
+        [
+         2.3,
+         47.6,
+         1.7
+        ],
+        [
+         0.2,
+         47.3,
+         1.2
+        ],
+        [
+         4.5,
+         48.6,
+         1.2
+        ],
+        [
+         4.4,
+         46.0,
+         1.1
+        ],
+        [
+         1.6,
+         45.3,
+         1.0
+        ]
+       ],
+       "barva": "lat",
+       "po": "na-sever",
+       "popisek": {
+        "cs": "lidová latina",
+        "en": "Vulgar Latin",
+        "it": "latino volgare",
+        "de": "Vulgärlatein",
+        "fr": "latin populaire"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "z-rima",
+       "body": [
+        [
+         12.5,
+         41.9
+        ],
+        [
+         11.3,
+         43.3
+        ],
+        [
+         10.1,
+         44.0
+        ],
+        [
+         8.6,
+         44.5
+        ],
+        [
+         7.4,
+         44.1
+        ],
+        [
+         6.1,
+         43.7
+        ],
+        [
+         4.8,
+         43.7
+        ],
+        [
+         3.0,
+         43.2
+        ]
+       ],
+       "barva": "lat",
+       "popisek": {
+        "cs": "z Říma",
+        "en": "from Rome",
+        "it": "da Roma",
+        "de": "aus Rom",
+        "fr": "de Rome"
+       }
+      },
+      {
+       "id": "na-sever",
+       "body": [
+        [
+         4.8,
+         43.9
+        ],
+        [
+         4.85,
+         45.75
+        ],
+        [
+         3.6,
+         47.4
+        ],
+        [
+         2.35,
+         48.85
+        ]
+       ],
+       "barva": "lat",
+       "popisek": {
+        "cs": "Caesarovo dobytí",
+        "en": "Caesar's conquest",
+        "it": "conquista di Cesare",
+        "de": "Caesars Eroberung",
+        "fr": "conquête de César"
+       }
+      }
+     ]
+    },
+    {
+     "id": "frankove",
+     "doba": {
+      "cs": "5. – 9. století",
+      "en": "5th – 9th century",
+      "it": "V – IX secolo",
+      "de": "5. – 9. Jahrhundert",
+      "fr": "Ve – IXe siècle"
+     },
+     "pohled": [
+      1.5,
+      47.5,
+      2.6
+     ],
+     "nazev": {
+      "cs": "Frankové a Bretonci",
+      "en": "Franks and Bretons",
+      "it": "Franchi e Bretoni",
+      "de": "Franken und Bretonen",
+      "fr": "Francs et Bretons"
+     },
+     "text": {
+      "cs": "V 5. století se Galie rozdělila mezi germánské kmeny: Vizigóty na jihozápadě, Burgundy na východě a Franky na severu. Franský král Chlodvík († 511) ovládl většinu Galie a sídlil v Paříži. Frankové přijali jazyk obyvatel, ale franština zanechala ve vznikající francouzštině několik set slov, například guerre ‚válka‘, garder ‚hlídat‘, blanc ‚bílý‘ a jardin ‚zahrada‘, a podle obvyklého výkladu i vyslovované h na začátku slov jako haut ‚vysoký‘ (z latinského altus). Po Francích se jmenuje Francie i francouzština. V 5. a 6. století se na poloostrov Armoriku stěhovali Britonové z Británie; jejich jazyk se stal základem bretonštiny.",
+      "en": "In the 5th century Gaul was divided among Germanic peoples: the Visigoths in the south-west, the Burgundians in the east and the Franks in the north. The Frankish king Clovis (d. 511) brought most of Gaul under his rule and resided in Paris. The Franks adopted the language of the population, but Frankish left several hundred words in emerging French, for example guerre ‘war’, garder ‘to guard’, blanc ‘white’ and jardin ‘garden’, and according to the usual interpretation also the pronounced h at the beginning of words such as haut ‘high’ (from Latin altus). France and French are named after the Franks. In the 5th and 6th centuries Britons from Britain migrated to the Armorican peninsula; their language became the basis of Breton.",
+      "it": "Nel V secolo la Gallia si divise tra popoli germanici: i Visigoti a sud-ovest, i Burgundi a est e i Franchi a nord. Il re franco Clodoveo († 511) sottomise la maggior parte della Gallia e risiedette a Parigi. I Franchi adottarono la lingua della popolazione, ma il francone lasciò nel francese nascente alcune centinaia di parole, per esempio guerre ‘guerra’, garder ‘custodire’, blanc ‘bianco’ e jardin ‘giardino’, e secondo l’interpretazione più comune anche la h pronunciata all’inizio di parole come haut ‘alto’ (dal latino altus). Dai Franchi prendono il nome la Francia e il francese. Nel V e VI secolo i Britanni della Britannia emigrarono nella penisola armoricana; la loro lingua divenne la base del bretone.",
+      "de": "Im 5. Jahrhundert teilten germanische Völker Gallien unter sich auf: die Westgoten im Südwesten, die Burgunder im Osten und die Franken im Norden. Der fränkische König Chlodwig († 511) brachte den größten Teil Galliens unter seine Herrschaft und residierte in Paris. Die Franken übernahmen die Sprache der Bevölkerung, doch das Fränkische hinterließ im entstehenden Französischen einige hundert Wörter, etwa guerre ‚Krieg‘, garder ‚bewachen‘, blanc ‚weiß‘ und jardin ‚Garten‘, und nach der üblichen Deutung auch das gesprochene h am Wortanfang wie in haut ‚hoch‘ (aus lateinisch altus). Nach den Franken sind Frankreich und das Französische benannt. Im 5. und 6. Jahrhundert wanderten Britannier aus Britannien auf die Halbinsel Armorika aus; ihre Sprache wurde zur Grundlage des Bretonischen.",
+      "fr": "Au Ve siècle, la Gaule fut partagée entre des peuples germaniques : les Wisigoths au sud-ouest, les Burgondes à l’est et les Francs au nord. Le roi franc Clovis († 511) soumit la plus grande partie de la Gaule et résida à Paris. Les Francs adoptèrent la langue de la population, mais le francique laissa dans le français naissant plusieurs centaines de mots, par exemple guerre, garder, blanc et jardin, et selon l’interprétation habituelle le h prononcé à l’initiale de mots comme haut (du latin altus). C’est aux Francs que la France et le français doivent leur nom. Aux Ve et VIe siècles, des Bretons venus de l’île de Bretagne s’installèrent dans la péninsule armoricaine ; leur langue est à l’origine du breton."
+     },
+     "oblasti": [
+      {
+       "id": "frankove",
+       "kruhy": [
+        [
+         2.6,
+         49.4,
+         1.1
+        ],
+        [
+         4.4,
+         50.4,
+         0.8
+        ],
+        [
+         1.2,
+         48.6,
+         0.8
+        ]
+       ],
+       "barva": "frk",
+       "po": "franci",
+       "popisek": {
+        "cs": "Frankové",
+        "en": "Franks",
+        "it": "Franchi",
+        "de": "Franken",
+        "fr": "Francs"
+       }
+      },
+      {
+       "id": "vizigoti",
+       "kruhy": [
+        [
+         0.6,
+         43.9,
+         1.0
+        ],
+        [
+         2.5,
+         43.4,
+         0.6
+        ]
+       ],
+       "barva": "frk",
+       "popisek": {
+        "cs": "Vizigóti",
+        "en": "Visigoths",
+        "it": "Visigoti",
+        "de": "Westgoten",
+        "fr": "Wisigoths"
+       }
+      },
+      {
+       "id": "burgundi",
+       "kruhy": [
+        [
+         5.4,
+         46.6,
+         0.9
+        ]
+       ],
+       "barva": "frk",
+       "popisek": {
+        "cs": "Burgundi",
+        "en": "Burgundians",
+        "it": "Burgundi",
+        "de": "Burgunder",
+        "fr": "Burgondes"
+       }
+      },
+      {
+       "id": "bretonci",
+       "kruhy": [
+        [
+         -3.2,
+         48.2,
+         0.7
+        ]
+       ],
+       "barva": "bre",
+       "po": "britonove",
+       "popisek": {
+        "cs": "Bretonci",
+        "en": "Bretons",
+        "it": "Bretoni",
+        "de": "Bretonen",
+        "fr": "Bretons"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "franci",
+       "body": [
+        [
+         6.2,
+         51.6
+        ],
+        [
+         4.8,
+         50.8
+        ],
+        [
+         3.4,
+         50.0
+        ],
+        [
+         2.35,
+         48.9
+        ]
+       ],
+       "barva": "frk",
+       "popisek": {
+        "cs": "Frankové",
+        "en": "Franks",
+        "it": "Franchi",
+        "de": "Franken",
+        "fr": "Francs"
+       }
+      },
+      {
+       "id": "britonove",
+       "body": [
+        [
+         -4.8,
+         50.35
+        ],
+        [
+         -4.6,
+         49.5
+        ],
+        [
+         -4.0,
+         48.75
+        ]
+       ],
+       "barva": "bre",
+       "popisek": {
+        "cs": "z Británie",
+        "en": "from Britain",
+        "it": "dalla Britannia",
+        "de": "aus Britannien",
+        "fr": "de l’île de Bretagne"
+       }
+      }
+     ]
+    },
+    {
+     "id": "oil-oc",
+     "doba": {
+      "cs": "842 – 13. století",
+      "en": "842 – 13th century",
+      "it": "842 – XIII secolo",
+      "de": "842 – 13. Jahrhundert",
+      "fr": "842 – XIIIe siècle"
+     },
+     "pohled": [
+      1.5,
+      47.5,
+      2.4
+     ],
+     "nazev": {
+      "cs": "Jazyk oïl a jazyk oc",
+      "en": "The langue d’oïl and the langue d’oc",
+      "it": "Lingua d’oïl e lingua d’oc",
+      "de": "Langue d’oïl und Langue d’oc",
+      "fr": "Langue d’oïl et langue d’oc"
+     },
+     "text": {
+      "cs": "Roku 842 si ve Štrasburku přísahali spojenectví vnuci Karla Velikého Ludvík Němec a Karel Holý; Ludvík přísahal románsky, aby mu rozuměla Karlova vojska, Karel ve staré horní němčině. Štrasburské přísahy, zapsané kronikářem Nithardem, jsou nejstarším dochovaným textem v jazyce, z něhož se vyvinula francouzština. Ve středověku se Francie dělila na dvě velké jazykové oblasti pojmenované podle slova pro ‚ano‘: na severu langue d’oïl (z oïl je dnešní oui), na jihu langue d’oc, okcitánština; na východě mezi nimi leží francouzsko-provensálština. V jazyce oïl vznikla kolem roku 1100 Píseň o Rolandovi, v okcitánštině poezie trubadúrů. Roku 1066 dobyl normanský vévoda Vilém Anglii; anglonormanská francouzština pak zhruba tři století sloužila anglické šlechtě a úřadům a zanechala v angličtině tisíce slov.",
+      "en": "In 842 two grandsons of Charlemagne, Louis the German and Charles the Bald, swore an alliance at Strasbourg; Louis swore in Romance so that Charles’s troops would understand him, Charles in Old High German. The Oaths of Strasbourg, recorded by the chronicler Nithard, are the oldest surviving text in the language from which French developed. In the Middle Ages France was divided into two large language areas named after the word for ‘yes’: in the north the langue d’oïl (oïl gave today’s oui), in the south the langue d’oc, Occitan; between them in the east lies Franco-Provençal. Around 1100 the Song of Roland was composed in the langue d’oïl, and the poetry of the troubadours in Occitan. In 1066 Duke William of Normandy conquered England; Anglo-Norman French then served the English nobility and administration for about three centuries and left thousands of words in English.",
+      "it": "Nell’842 due nipoti di Carlo Magno, Ludovico il Germanico e Carlo il Calvo, si giurarono alleanza a Strasburgo; Ludovico giurò in romanzo perché lo capissero le truppe di Carlo, Carlo in antico alto tedesco. I Giuramenti di Strasburgo, trascritti dal cronista Nitardo, sono il più antico testo conservato nella lingua da cui si sviluppò il francese. Nel Medioevo la Francia era divisa in due grandi aree linguistiche, chiamate secondo la parola per ‘sì’: a nord la langue d’oïl (da oïl viene l’odierno oui), a sud la langue d’oc, l’occitano; a est, tra le due, si trova il francoprovenzale. Intorno al 1100 nacque in lingua d’oïl la Chanson de Roland, in occitano la poesia dei trovatori. Nel 1066 il duca Guglielmo di Normandia conquistò l’Inghilterra; il francese anglo-normanno servì poi per circa tre secoli alla nobiltà e all’amministrazione inglesi e lasciò nell’inglese migliaia di parole.",
+      "de": "842 schworen sich zwei Enkel Karls des Großen, Ludwig der Deutsche und Karl der Kahle, in Straßburg ein Bündnis; Ludwig schwor auf Romanisch, damit ihn Karls Truppen verstanden, Karl auf Althochdeutsch. Die Straßburger Eide, vom Chronisten Nithard aufgezeichnet, sind der älteste erhaltene Text in der Sprache, aus der sich das Französische entwickelte. Im Mittelalter teilte sich Frankreich in zwei große Sprachräume, benannt nach dem Wort für ‚ja‘: im Norden die Langue d’oïl (aus oïl wurde das heutige oui), im Süden die Langue d’oc, das Okzitanische; im Osten dazwischen liegt das Frankoprovenzalische. Um 1100 entstand in der Langue d’oïl das Rolandslied, im Okzitanischen die Dichtung der Trobadors. 1066 eroberte Herzog Wilhelm von der Normandie England; das anglonormannische Französisch diente danach etwa drei Jahrhunderte lang dem englischen Adel und der Verwaltung und hinterließ im Englischen Tausende von Wörtern.",
+      "fr": "En 842, deux petits-fils de Charlemagne, Louis le Germanique et Charles le Chauve, se jurèrent alliance à Strasbourg ; Louis prêta serment en roman pour être compris des troupes de Charles, Charles en vieux haut allemand. Les Serments de Strasbourg, consignés par le chroniqueur Nithard, sont le plus ancien texte conservé dans la langue dont est issu le français. Au Moyen Âge, la France se partageait entre deux grandes aires linguistiques nommées d’après le mot signifiant « oui » : au nord la langue d’oïl (oïl a donné l’actuel oui), au sud la langue d’oc, l’occitan ; à l’est, entre les deux, se trouve le francoprovençal. Vers 1100 naquit en langue d’oïl la Chanson de Roland, en occitan la poésie des troubadours. En 1066, le duc Guillaume de Normandie conquit l’Angleterre ; le français anglo-normand servit ensuite pendant environ trois siècles à la noblesse et à l’administration anglaises et laissa en anglais des milliers de mots."
+     },
+     "oblasti": [
+      {
+       "id": "strasburk",
+       "kruhy": [
+        [
+         7.75,
+         48.58,
+         0.25
+        ]
+       ],
+       "barva": "fr",
+       "popisek": {
+        "cs": "Štrasburk 842",
+        "en": "Strasbourg 842",
+        "it": "Strasburgo 842",
+        "de": "Straßburg 842",
+        "fr": "Strasbourg 842"
+       }
+      },
+      {
+       "id": "oil",
+       "kruhy": [
+        [
+         2.3,
+         48.6,
+         1.6
+        ],
+        [
+         0.0,
+         48.2,
+         1.2
+        ],
+        [
+         4.4,
+         49.3,
+         1.0
+        ],
+        [
+         1.0,
+         46.9,
+         1.1
+        ],
+        [
+         3.4,
+         47.2,
+         0.9
+        ],
+        [
+         -2.0,
+         47.6,
+         0.6
+        ]
+       ],
+       "barva": "oil",
+       "popisek": {
+        "cs": "langue d’oïl",
+        "en": "langue d’oïl",
+        "it": "lingua d’oïl",
+        "de": "Langue d’oïl",
+        "fr": "langue d’oïl"
+       }
+      },
+      {
+       "id": "oc",
+       "kruhy": [
+        [
+         1.5,
+         44.1,
+         1.3
+        ],
+        [
+         4.4,
+         44.0,
+         0.9
+        ],
+        [
+         -0.6,
+         44.3,
+         0.9
+        ],
+        [
+         2.6,
+         45.3,
+         0.8
+        ],
+        [
+         6.3,
+         43.9,
+         0.6
+        ]
+       ],
+       "barva": "oc",
+       "popisek": {
+        "cs": "langue d’oc (okcitánština)",
+        "en": "langue d’oc (Occitan)",
+        "it": "lingua d’oc (occitano)",
+        "de": "Langue d’oc (Okzitanisch)",
+        "fr": "langue d’oc (occitan)"
+       }
+      },
+      {
+       "id": "frp",
+       "kruhy": [
+        [
+         5.4,
+         45.8,
+         0.5
+        ],
+        [
+         6.3,
+         46.3,
+         0.35
+        ],
+        [
+         7.3,
+         45.75,
+         0.25
+        ]
+       ],
+       "barva": "frp",
+       "popisek": {
+        "cs": "francouzsko-provensálština",
+        "en": "Franco-Provençal",
+        "it": "francoprovenzale",
+        "de": "Frankoprovenzalisch",
+        "fr": "francoprovençal"
+       }
+      },
+      {
+       "id": "anglie",
+       "kruhy": [
+        [
+         0.3,
+         51.3,
+         0.6
+        ],
+        [
+         -1.3,
+         52.0,
+         0.6
+        ]
+       ],
+       "barva": "fr",
+       "po": "normane",
+       "popisek": {
+        "cs": "anglonormanská francouzština",
+        "en": "Anglo-Norman French",
+        "it": "francese anglo-normanno",
+        "de": "Anglonormannisch",
+        "fr": "anglo-normand"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "normane",
+       "body": [
+        [
+         1.6,
+         50.18
+        ],
+        [
+         1.0,
+         50.5
+        ],
+        [
+         0.35,
+         50.8
+        ]
+       ],
+       "barva": "fr",
+       "popisek": {
+        "cs": "1066",
+        "en": "1066",
+        "it": "1066",
+        "de": "1066",
+        "fr": "1066"
+       }
+      }
+     ]
+    },
+    {
+     "id": "kralovstvi",
+     "doba": {
+      "cs": "14. – 17. století",
+      "en": "14th – 17th century",
+      "it": "XIV – XVII secolo",
+      "de": "14. – 17. Jahrhundert",
+      "fr": "XIVe – XVIIe siècle"
+     },
+     "pohled": [
+      2.3,
+      47.0,
+      2.8
+     ],
+     "nazev": {
+      "cs": "Jazyk krále a úřadů",
+      "en": "The language of the king and the administration",
+      "it": "La lingua del re e dell’amministrazione",
+      "de": "Die Sprache des Königs und der Verwaltung",
+      "fr": "La langue du roi et de l’administration"
+     },
+     "text": {
+      "cs": "Spisovná francouzština vyrostla z jazyka Paříže a královského dvora. Starší představa, že jejím základem bylo jediné nářečí, takzvaná franština (francien), je dnes sporná: jazyk Paříže sám vznikl mísením řečí okolních krajů. Ordonance z Villers-Cotterêts krále Františka I. (1539) nařídila psát soudní a úřední listiny „v mateřském jazyce francouzském a ne jinak“; mířila hlavně proti latině, zda i proti regionálním jazykům, se vykládá různě. Roku 1635 založil kardinál Richelieu Francouzskou akademii, její slovník vyšel poprvé roku 1694. Většina obyvatel království přitom dál mluvila regionálními jazyky a nářečími.",
+      "en": "Standard French grew out of the language of Paris and the royal court. The older idea that it was based on a single dialect, so-called Francien, is now disputed: the language of Paris itself arose from a mixture of the speech of the surrounding regions. The Ordinance of Villers-Cotterêts issued by King Francis I (1539) required court records and official documents to be written “in the French mother tongue and not otherwise”; it was aimed mainly at Latin – whether also at the regional languages is interpreted in different ways. In 1635 Cardinal Richelieu founded the Académie française, whose dictionary first appeared in 1694. Most inhabitants of the kingdom nevertheless continued to speak regional languages and dialects.",
+      "it": "Il francese standard nacque dalla lingua di Parigi e della corte reale. L’idea più antica che si basasse su un unico dialetto, il cosiddetto franciano (francien), è oggi controversa: la lingua di Parigi stessa nacque dalla mescolanza delle parlate delle regioni circostanti. L’ordinanza di Villers-Cotterêts del re Francesco I (1539) prescrisse di redigere gli atti giudiziari e ufficiali «nella lingua materna francese e non altrimenti»; era diretta soprattutto contro il latino, mentre se lo fosse anche contro le lingue regionali è interpretato in modi diversi. Nel 1635 il cardinale Richelieu fondò l’Académie française, il cui dizionario uscì per la prima volta nel 1694. La maggior parte degli abitanti del regno continuò tuttavia a parlare lingue regionali e dialetti.",
+      "de": "Das Standardfranzösische erwuchs aus der Sprache von Paris und des königlichen Hofes. Die ältere Vorstellung, es beruhe auf einem einzigen Dialekt, dem sogenannten Franzischen (francien), ist heute umstritten: Die Sprache von Paris entstand selbst aus einer Mischung der Mundarten der umliegenden Gegenden. Die Ordonnance von Villers-Cotterêts König Franz’ I. (1539) schrieb vor, Gerichts- und Amtsurkunden „in der französischen Muttersprache und nicht anders“ abzufassen; sie richtete sich vor allem gegen das Lateinische, ob auch gegen die Regionalsprachen, wird unterschiedlich gedeutet. 1635 gründete Kardinal Richelieu die Académie française, deren Wörterbuch erstmals 1694 erschien. Die meisten Bewohner des Königreichs sprachen dennoch weiterhin Regionalsprachen und Mundarten.",
+      "fr": "Le français standard est né de la langue de Paris et de la cour royale. L’idée ancienne selon laquelle il reposerait sur un seul dialecte, le « francien », est aujourd’hui contestée : la langue de Paris est elle-même issue d’un mélange des parlers des régions environnantes. L’ordonnance de Villers-Cotterêts du roi François Ier (1539) imposa de rédiger les actes de justice et les actes officiels « en langage maternel françois et non autrement » ; elle visait surtout le latin, et la question de savoir si elle visait aussi les langues régionales fait l’objet d’interprétations divergentes. En 1635, le cardinal de Richelieu fonda l’Académie française, dont le dictionnaire parut pour la première fois en 1694. La plupart des habitants du royaume continuèrent néanmoins à parler des langues régionales et des dialectes."
+     },
+     "oblasti": [
+      {
+       "id": "pariz",
+       "kruhy": [
+        [
+         2.35,
+         48.85,
+         0.4
+        ]
+       ],
+       "barva": "fr",
+       "popisek": {
+        "cs": "Paříž a dvůr",
+        "en": "Paris and the court",
+        "it": "Parigi e la corte",
+        "de": "Paris und der Hof",
+        "fr": "Paris et la cour"
+       }
+      },
+      {
+       "id": "villers",
+       "kruhy": [
+        [
+         3.09,
+         49.25,
+         0.15
+        ]
+       ],
+       "barva": "fr",
+       "popisek": {
+        "cs": "Villers-Cotterêts 1539",
+        "en": "Villers-Cotterêts 1539",
+        "it": "Villers-Cotterêts 1539",
+        "de": "Villers-Cotterêts 1539",
+        "fr": "Villers-Cotterêts 1539"
+       }
+      },
+      {
+       "id": "regiony",
+       "kruhy": [
+        [
+         1.5,
+         44.2,
+         1.2
+        ],
+        [
+         -3.2,
+         48.2,
+         0.6
+        ],
+        [
+         4.4,
+         44.0,
+         0.8
+        ],
+        [
+         5.5,
+         46.0,
+         0.5
+        ],
+        [
+         -0.6,
+         44.3,
+         0.8
+        ]
+       ],
+       "barva": "oc",
+       "popisek": {
+        "cs": "regionální jazyky",
+        "en": "regional languages",
+        "it": "lingue regionali",
+        "de": "Regionalsprachen",
+        "fr": "langues régionales"
+       }
+      }
+     ],
+     "proudy": []
+    },
+    {
+     "id": "zamori",
+     "doba": {
+      "cs": "17. – 18. století",
+      "en": "17th – 18th century",
+      "it": "XVII – XVIII secolo",
+      "de": "17. – 18. Jahrhundert",
+      "fr": "XVIIe – XVIIIe siècle"
+     },
+     "pohled": [
+      -35.0,
+      30.0,
+      1.0
+     ],
+     "nazev": {
+      "cs": "Za oceán",
+      "en": "Across the ocean",
+      "it": "Oltre l’oceano",
+      "de": "Über den Ozean",
+      "fr": "Outre-mer"
+     },
+     "text": {
+      "cs": "V 17. století zakládala Francie osady za oceánem: Akádii (1604), Québec, který roku 1608 založil Samuel de Champlain, na Antilách Martinik a Guadeloupe (1635), v Africe Saint-Louis v Senegalu (1659), v Indickém oceánu od 60. let 17. století ostrov Bourbon (dnešní Réunion) a roku 1718 Nový Orleans v Louisianě. Na plantážích, kde pracovali otroci přivezení z Afriky, vznikly z francouzštiny kreolské jazyky, například haitská kreolština, dnes mateřský jazyk většiny obyvatel Haiti. V 18. století byla francouzština jazykem evropské diplomacie a vzdělanců.",
+      "en": "In the 17th century France founded settlements overseas: Acadia (1604), Quebec, founded by Samuel de Champlain in 1608, Martinique and Guadeloupe in the Antilles (1635), Saint-Louis in Senegal in Africa (1659), the island of Bourbon (today’s Réunion) in the Indian Ocean from the 1660s, and New Orleans in Louisiana in 1718. On the plantations, where enslaved people brought from Africa worked, French-based creole languages emerged, for example Haitian Creole, today the mother tongue of most of Haiti’s population. In the 18th century French was the language of European diplomacy and of the educated.",
+      "it": "Nel XVII secolo la Francia fondò insediamenti oltremare: l’Acadia (1604), il Québec, fondato da Samuel de Champlain nel 1608, la Martinica e la Guadalupa nelle Antille (1635), Saint-Louis in Senegal, in Africa (1659), l’isola di Bourbon (l’odierna Riunione) nell’oceano Indiano dagli anni ’60 del Seicento e nel 1718 New Orleans in Louisiana. Nelle piantagioni, dove lavoravano schiavi portati dall’Africa, nacquero lingue creole a base francese, per esempio il creolo haitiano, oggi lingua materna della maggior parte degli abitanti di Haiti. Nel XVIII secolo il francese era la lingua della diplomazia europea e delle persone colte.",
+      "de": "Im 17. Jahrhundert gründete Frankreich Siedlungen in Übersee: Akadien (1604), Québec, 1608 von Samuel de Champlain gegründet, auf den Antillen Martinique und Guadeloupe (1635), in Afrika Saint-Louis im Senegal (1659), im Indischen Ozean ab den 1660er-Jahren die Insel Bourbon (das heutige Réunion) und 1718 New Orleans in Louisiana. Auf den Plantagen, wo aus Afrika verschleppte Versklavte arbeiteten, entstanden französisch basierte Kreolsprachen, etwa das Haitianische, heute die Muttersprache der meisten Einwohner Haitis. Im 18. Jahrhundert war das Französische die Sprache der europäischen Diplomatie und der Gebildeten.",
+      "fr": "Au XVIIe siècle, la France fonda des établissements outre-mer : l’Acadie (1604), Québec, fondée par Samuel de Champlain en 1608, la Martinique et la Guadeloupe aux Antilles (1635), Saint-Louis du Sénégal en Afrique (1659), l’île Bourbon (l’actuelle Réunion) dans l’océan Indien à partir des années 1660, et La Nouvelle-Orléans en Louisiane en 1718. Dans les plantations, où travaillaient des esclaves amenés d’Afrique, naquirent des créoles à base française, par exemple le créole haïtien, aujourd’hui langue maternelle de la plupart des habitants d’Haïti. Au XVIIIe siècle, le français était la langue de la diplomatie européenne et des élites cultivées."
+     },
+     "oblasti": [
+      {
+       "id": "quebec",
+       "kruhy": [
+        [
+         -71.3,
+         46.9,
+         1.2
+        ],
+        [
+         -69.0,
+         48.0,
+         0.9
+        ],
+        [
+         -73.6,
+         45.6,
+         0.8
+        ]
+       ],
+       "barva": "fr",
+       "po": "do-quebecu",
+       "popisek": {
+        "cs": "Nová Francie (Québec 1608)",
+        "en": "New France (Quebec 1608)",
+        "it": "Nuova Francia (Québec 1608)",
+        "de": "Neufrankreich (Québec 1608)",
+        "fr": "Nouvelle-France (Québec 1608)"
+       }
+      },
+      {
+       "id": "akadie",
+       "kruhy": [
+        [
+         -65.3,
+         45.2,
+         0.7
+        ],
+        [
+         -63.8,
+         46.2,
+         0.5
+        ]
+       ],
+       "barva": "fr",
+       "po": "do-quebecu",
+       "popisek": {
+        "cs": "Akádie",
+        "en": "Acadia",
+        "it": "Acadia",
+        "de": "Akadien",
+        "fr": "Acadie"
+       }
+      },
+      {
+       "id": "louisiana",
+       "kruhy": [
+        [
+         -90.1,
+         30.0,
+         0.9
+        ]
+       ],
+       "barva": "fr",
+       "popisek": {
+        "cs": "Louisiana (1718)",
+        "en": "Louisiana (1718)",
+        "it": "Louisiana (1718)",
+        "de": "Louisiana (1718)",
+        "fr": "Louisiane (1718)"
+       }
+      },
+      {
+       "id": "antily",
+       "kruhy": [
+        [
+         -61.55,
+         16.2,
+         0.35
+        ],
+        [
+         -61.0,
+         14.65,
+         0.3
+        ],
+        [
+         -72.5,
+         19.0,
+         0.8
+        ]
+       ],
+       "barva": "kre",
+       "po": "na-antily",
+       "popisek": {
+        "cs": "kreolské jazyky (Antily, Haiti)",
+        "en": "creoles (Antilles, Haiti)",
+        "it": "creoli (Antille, Haiti)",
+        "de": "Kreolsprachen (Antillen, Haiti)",
+        "fr": "créoles (Antilles, Haïti)"
+       }
+      },
+      {
+       "id": "senegal",
+       "kruhy": [
+        [
+         -16.5,
+         16.0,
+         0.4
+        ]
+       ],
+       "barva": "fr",
+       "po": "do-senegalu",
+       "popisek": {
+        "cs": "Saint-Louis (1659)",
+        "en": "Saint-Louis (1659)",
+        "it": "Saint-Louis (1659)",
+        "de": "Saint-Louis (1659)",
+        "fr": "Saint-Louis (1659)"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "do-quebecu",
+       "body": [
+        [
+         -2.0,
+         48.75
+        ],
+        [
+         -5.6,
+         48.6
+        ],
+        [
+         -30.0,
+         48.0
+        ],
+        [
+         -50.0,
+         46.4
+        ],
+        [
+         -56.5,
+         45.8
+        ],
+        [
+         -59.8,
+         47.1
+        ],
+        [
+         -63.5,
+         48.4
+        ],
+        [
+         -66.5,
+         49.4
+        ],
+        [
+         -68.6,
+         48.7
+        ],
+        [
+         -69.9,
+         47.8
+        ],
+        [
+         -71.1,
+         46.85
+        ]
+       ],
+       "barva": "fr",
+       "popisek": {
+        "cs": "do Nové Francie",
+        "en": "to New France",
+        "it": "verso la Nuova Francia",
+        "de": "nach Neufrankreich",
+        "fr": "vers la Nouvelle-France"
+       }
+      },
+      {
+       "id": "na-antily",
+       "body": [
+        [
+         -1.3,
+         46.1
+        ],
+        [
+         -3.0,
+         45.5
+        ],
+        [
+         -20.0,
+         35.0
+        ],
+        [
+         -45.0,
+         22.0
+        ],
+        [
+         -60.4,
+         15.4
+        ],
+        [
+         -60.95,
+         14.8
+        ]
+       ],
+       "barva": "fr",
+       "popisek": {
+        "cs": "na Antily",
+        "en": "to the Antilles",
+        "it": "verso le Antille",
+        "de": "zu den Antillen",
+        "fr": "vers les Antilles"
+       }
+      },
+      {
+       "id": "do-senegalu",
+       "body": [
+        [
+         -1.3,
+         46.1
+        ],
+        [
+         -3.5,
+         45.2
+        ],
+        [
+         -14.0,
+         36.0
+        ],
+        [
+         -19.0,
+         27.5
+        ],
+        [
+         -17.6,
+         20.0
+        ],
+        [
+         -16.6,
+         16.15
+        ]
+       ],
+       "barva": "fr",
+       "popisek": {
+        "cs": "do Senegalu",
+        "en": "to Senegal",
+        "it": "verso il Senegal",
+        "de": "in den Senegal",
+        "fr": "vers le Sénégal"
+       }
+      }
+     ]
+    },
+    {
+     "id": "republika",
+     "doba": {
+      "cs": "1789 – 1960",
+      "en": "1789 – 1960",
+      "it": "1789 – 1960",
+      "de": "1789 – 1960",
+      "fr": "1789 – 1960"
+     },
+     "pohled": [
+      3.0,
+      42.0,
+      2.0
+     ],
+     "nazev": {
+      "cs": "Revoluce, škola a koloniální říše",
+      "en": "Revolution, school and colonial empire",
+      "it": "Rivoluzione, scuola e impero coloniale",
+      "de": "Revolution, Schule und Kolonialreich",
+      "fr": "Révolution, école et empire colonial"
+     },
+     "text": {
+      "cs": "Na konci 18. století mluvila francouzsky jen část obyvatel Francie. Abbé Grégoire roku 1794 ve zprávě Národnímu konventu uvedl, že nejméně šest milionů Francouzů francouzsky neumí, stejný počet se v ní neudrží v souvislém rozhovoru a čistě jí mluví nanejvýš tři miliony. Revoluce prosazovala francouzštinu jako jazyk národa. Zákony Julese Ferryho z let 1881–1882 zavedly bezplatnou a povinnou základní školu, kde se vyučovalo francouzsky a regionální jazyky (bretonština, okcitánština, baskičtina, alsaština, korsičtina, katalánština, vlámština) byly potlačovány; ve 20. století se většina obyvatel Francie stala francouzsky mluvícími. S koloniální říší se francouzština šířila do severní Afriky (Alžírsko od roku 1830), západní a střední Afriky, na Madagaskar a do Indočíny. Většina afrických kolonií získala nezávislost roku 1960 a mnohé ponechaly francouzštinu jako úřední jazyk.",
+      "en": "At the end of the 18th century only part of the population of France spoke French. In his 1794 report to the National Convention Abbé Grégoire stated that at least six million French people did not know French, an equal number could not hold a sustained conversation in it, and no more than three million spoke it purely. The Revolution promoted French as the language of the nation. The laws of Jules Ferry of 1881–1882 introduced free and compulsory primary school, where teaching was in French and the regional languages (Breton, Occitan, Basque, Alsatian, Corsican, Catalan, Flemish) were suppressed; in the 20th century most of the population of France became French speakers. With the colonial empire French spread to North Africa (Algeria from 1830), West and Central Africa, Madagascar and Indochina. Most African colonies became independent in 1960, and many kept French as an official language.",
+      "it": "Alla fine del XVIII secolo solo una parte della popolazione della Francia parlava francese. Nel suo rapporto del 1794 alla Convenzione nazionale l’abate Grégoire affermò che almeno sei milioni di francesi non conoscevano il francese, un numero uguale non era in grado di sostenere in esso una conversazione continuata e non più di tre milioni lo parlavano correttamente. La Rivoluzione promosse il francese come lingua della nazione. Le leggi di Jules Ferry del 1881–1882 introdussero la scuola elementare gratuita e obbligatoria, in cui si insegnava in francese e le lingue regionali (bretone, occitano, basco, alsaziano, corso, catalano, fiammingo) venivano represse; nel XX secolo la maggior parte della popolazione della Francia divenne francofona. Con l’impero coloniale il francese si diffuse in Nordafrica (Algeria dal 1830), in Africa occidentale e centrale, in Madagascar e in Indocina. La maggior parte delle colonie africane divenne indipendente nel 1960 e molte mantennero il francese come lingua ufficiale.",
+      "de": "Ende des 18. Jahrhunderts sprach nur ein Teil der Bevölkerung Frankreichs Französisch. Abbé Grégoire erklärte 1794 in seinem Bericht an den Nationalkonvent, mindestens sechs Millionen Franzosen könnten kein Französisch, ebenso viele könnten darin kein zusammenhängendes Gespräch führen, und höchstens drei Millionen sprächen es rein. Die Revolution förderte das Französische als Sprache der Nation. Die Gesetze von Jules Ferry von 1881–1882 führten die kostenlose Pflichtgrundschule ein, in der auf Französisch unterrichtet und die Regionalsprachen (Bretonisch, Okzitanisch, Baskisch, Elsässisch, Korsisch, Katalanisch, Flämisch) unterdrückt wurden; im 20. Jahrhundert wurde die Mehrheit der Bevölkerung Frankreichs französischsprachig. Mit dem Kolonialreich verbreitete sich das Französische nach Nordafrika (Algerien ab 1830), West- und Zentralafrika, Madagaskar und Indochina. Die meisten afrikanischen Kolonien wurden 1960 unabhängig, und viele behielten das Französische als Amtssprache.",
+      "fr": "À la fin du XVIIIe siècle, seule une partie de la population de la France parlait français. Dans son rapport de 1794 à la Convention nationale, l’abbé Grégoire affirmait qu’au moins six millions de Français ignoraient la langue française, qu’un nombre égal était à peu près incapable de soutenir une conversation suivie et que le nombre de ceux qui la parlaient purement n’excédait pas trois millions. La Révolution promut le français comme langue de la nation. Les lois de Jules Ferry de 1881–1882 instaurèrent l’école primaire gratuite et obligatoire, où l’on enseignait en français et où les langues régionales (breton, occitan, basque, alsacien, corse, catalan, flamand) étaient réprimées ; au XXe siècle, la majorité de la population de la France devint francophone. Avec l’empire colonial, le français se répandit en Afrique du Nord (Algérie à partir de 1830), en Afrique de l’Ouest et en Afrique centrale, à Madagascar et en Indochine. La plupart des colonies africaines accédèrent à l’indépendance en 1960, et beaucoup conservèrent le français comme langue officielle."
+     },
+     "oblasti": [
+      {
+       "id": "francie",
+       "kruhy": [
+        [
+         2.3,
+         47.8,
+         1.6
+        ],
+        [
+         0.2,
+         46.8,
+         1.2
+        ],
+        [
+         4.5,
+         48.4,
+         1.0
+        ],
+        [
+         2.0,
+         45.3,
+         1.1
+        ]
+       ],
+       "barva": "fr",
+       "popisek": {
+        "cs": "francouzština ve škole",
+        "en": "French at school",
+        "it": "il francese a scuola",
+        "de": "Französisch in der Schule",
+        "fr": "le français à l’école"
+       }
+      },
+      {
+       "id": "bretonstina",
+       "kruhy": [
+        [
+         -3.3,
+         48.2,
+         0.55
+        ]
+       ],
+       "barva": "bre",
+       "popisek": {
+        "cs": "bretonština",
+        "en": "Breton",
+        "it": "bretone",
+        "de": "Bretonisch",
+        "fr": "breton"
+       }
+      },
+      {
+       "id": "okcitanstina",
+       "kruhy": [
+        [
+         1.6,
+         43.9,
+         1.0
+        ],
+        [
+         4.6,
+         43.9,
+         0.7
+        ],
+        [
+         -0.4,
+         44.2,
+         0.7
+        ]
+       ],
+       "barva": "oc",
+       "popisek": {
+        "cs": "okcitánština",
+        "en": "Occitan",
+        "it": "occitano",
+        "de": "Okzitanisch",
+        "fr": "occitan"
+       }
+      },
+      {
+       "id": "baskictina",
+       "kruhy": [
+        [
+         -1.25,
+         43.25,
+         0.25
+        ]
+       ],
+       "barva": "aqu",
+       "popisek": {
+        "cs": "baskičtina",
+        "en": "Basque",
+        "it": "basco",
+        "de": "Baskisch",
+        "fr": "basque"
+       }
+      },
+      {
+       "id": "alsastina",
+       "kruhy": [
+        [
+         7.5,
+         48.4,
+         0.35
+        ]
+       ],
+       "barva": "frk",
+       "popisek": {
+        "cs": "alsaština",
+        "en": "Alsatian",
+        "it": "alsaziano",
+        "de": "Elsässisch",
+        "fr": "alsacien"
+       }
+      },
+      {
+       "id": "korsictina",
+       "kruhy": [
+        [
+         9.05,
+         42.15,
+         0.3
+        ]
+       ],
+       "barva": "ita",
+       "popisek": {
+        "cs": "korsičtina",
+        "en": "Corsican",
+        "it": "corso",
+        "de": "Korsisch",
+        "fr": "corse"
+       }
+      },
+      {
+       "id": "alzirsko",
+       "kruhy": [
+        [
+         3.0,
+         36.3,
+         0.8
+        ],
+        [
+         0.0,
+         35.4,
+         0.6
+        ],
+        [
+         6.6,
+         36.3,
+         0.5
+        ]
+       ],
+       "barva": "fr",
+       "po": "do-alziru",
+       "popisek": {
+        "cs": "Alžírsko (od 1830)",
+        "en": "Algeria (from 1830)",
+        "it": "Algeria (dal 1830)",
+        "de": "Algerien (ab 1830)",
+        "fr": "Algérie (à partir de 1830)"
+       }
+      }
+     ],
+     "proudy": [
+      {
+       "id": "do-alziru",
+       "body": [
+        [
+         5.37,
+         43.25
+        ],
+        [
+         5.2,
+         41.0
+        ],
+        [
+         4.6,
+         38.5
+        ],
+        [
+         3.06,
+         36.8
+        ]
+       ],
+       "barva": "fr",
+       "popisek": {
+        "cs": "do Alžírska",
+        "en": "to Algeria",
+        "it": "verso l’Algeria",
+        "de": "nach Algerien",
+        "fr": "vers l’Algérie"
+       }
+      }
+     ]
+    },
+    {
+     "id": "dnes",
+     "predel": true,
+     "doba": {
+      "cs": "dnes",
+      "en": "today",
+      "it": "oggi",
+      "de": "heute",
+      "fr": "aujourd’hui"
+     },
+     "pohled": [
+      5.0,
+      15.0,
+      0.95
+     ],
+     "nazev": {
+      "cs": "Frankofonie dnes",
+      "en": "The French-speaking world today",
+      "it": "La francofonia oggi",
+      "de": "Die frankophone Welt heute",
+      "fr": "La francophonie aujourd’hui"
+     },
+     "text": {
+      "cs": "Podle zprávy Mezinárodní organizace frankofonie (OIF) z roku 2026 mluví francouzsky asi 396 milionů lidí; nová metoda přitom poprvé počítá i děti od šesti do devíti let, které chodí do francouzských škol v zemích, kde je francouzština úředním jazykem nebo jazykem výuky. Přibližně 65 % z nich žije v Africe. Mateřským jazykem většiny obyvatel je francouzština hlavně ve Francii, ve Valonsku a Bruselu, ve frankofonním Švýcarsku a v Québecu; v Africe je většinou druhým jazykem školy a úřadů vedle domácích jazyků. Francouzština je jedním z úředních jazyků OSN a Evropské unie.",
+      "en": "According to the 2026 report of the International Organisation of La Francophonie (OIF), about 396 million people speak French; for the first time its new method also counts children aged six to nine attending French-medium schools in countries where French is an official language or a language of instruction. About 65% of them live in Africa. French is the mother tongue of most of the population mainly in France, Wallonia and Brussels, French-speaking Switzerland and Quebec; in Africa it is mostly a second language of school and administration alongside local languages. French is one of the official languages of the United Nations and the European Union.",
+      "it": "Secondo il rapporto 2026 dell’Organizzazione internazionale della Francofonia (OIF), il francese è parlato da circa 396 milioni di persone; il nuovo metodo conta per la prima volta anche i bambini dai sei ai nove anni che frequentano scuole in lingua francese nei paesi in cui il francese è lingua ufficiale o lingua d’insegnamento. Circa il 65 % di loro vive in Africa. Il francese è lingua materna della maggior parte della popolazione soprattutto in Francia, in Vallonia e a Bruxelles, nella Svizzera francofona e in Québec; in Africa è per lo più una seconda lingua della scuola e dell’amministrazione accanto alle lingue locali. Il francese è una delle lingue ufficiali dell’ONU e dell’Unione europea.",
+      "de": "Nach dem Bericht der Internationalen Organisation der Frankophonie (OIF) von 2026 sprechen etwa 396 Millionen Menschen Französisch; die neue Methode zählt erstmals auch Kinder von sechs bis neun Jahren, die in Ländern mit Französisch als Amts- oder Unterrichtssprache französischsprachige Schulen besuchen. Etwa 65 % von ihnen leben in Afrika. Muttersprache der Bevölkerungsmehrheit ist das Französische vor allem in Frankreich, in Wallonien und Brüssel, in der französischsprachigen Schweiz und in Québec; in Afrika ist es meist eine Zweitsprache von Schule und Verwaltung neben den einheimischen Sprachen. Französisch ist eine der Amtssprachen der Vereinten Nationen und der Europäischen Union.",
+      "fr": "Selon le rapport 2026 de l’Organisation internationale de la Francophonie (OIF), environ 396 millions de personnes parlent français ; la nouvelle méthode compte pour la première fois les enfants de six à neuf ans scolarisés en français dans les pays où le français est langue officielle ou langue d’enseignement. Environ 65 % d’entre eux vivent en Afrique. Le français est la langue maternelle de la majorité de la population surtout en France, en Wallonie et à Bruxelles, en Suisse romande et au Québec ; en Afrique, il est le plus souvent une langue seconde, celle de l’école et de l’administration, à côté des langues locales. Le français est l’une des langues officielles de l’ONU et de l’Union européenne."
+     },
+     "oblasti": [
+      {
+       "id": "evropa",
+       "kruhy": [
+        [
+         2.3,
+         47.6,
+         2.0
+        ],
+        [
+         4.6,
+         50.4,
+         0.6
+        ],
+        [
+         6.8,
+         46.6,
+         0.45
+        ]
+       ],
+       "barva": "fr",
+       "popisek": {
+        "cs": "Francie, Belgie, Švýcarsko",
+        "en": "France, Belgium, Switzerland",
+        "it": "Francia, Belgio, Svizzera",
+        "de": "Frankreich, Belgien, Schweiz",
+        "fr": "France, Belgique, Suisse"
+       }
+      },
+      {
+       "id": "kanada",
+       "kruhy": [
+        [
+         -71.5,
+         47.5,
+         2.0
+        ],
+        [
+         -65.5,
+         47.2,
+         0.6
+        ]
+       ],
+       "barva": "fr",
+       "popisek": {
+        "cs": "Québec a Akádie",
+        "en": "Quebec and Acadia",
+        "it": "Québec e Acadia",
+        "de": "Québec und Akadien",
+        "fr": "Québec et Acadie"
+       }
+      },
+      {
+       "id": "haiti",
+       "kruhy": [
+        [
+         -72.5,
+         19.0,
+         0.7
+        ],
+        [
+         -61.3,
+         15.5,
+         0.6
+        ]
+       ],
+       "barva": "kre",
+       "popisek": {
+        "cs": "Haiti a Antily",
+        "en": "Haiti and the Antilles",
+        "it": "Haiti e Antille",
+        "de": "Haiti und Antillen",
+        "fr": "Haïti et Antilles"
+       }
+      },
+      {
+       "id": "zapadni-afrika",
+       "kruhy": [
+        [
+         -14.5,
+         14.5,
+         1.4
+        ],
+        [
+         -3.0,
+         15.5,
+         3.0
+        ],
+        [
+         -5.5,
+         7.6,
+         1.8
+        ],
+        [
+         2.0,
+         12.0,
+         1.6
+        ],
+        [
+         1.5,
+         7.5,
+         1.0
+        ],
+        [
+         8.0,
+         16.5,
+         2.5
+        ]
+       ],
+       "barva": "frx",
+       "popisek": {
+        "cs": "západní Afrika",
+        "en": "West Africa",
+        "it": "Africa occidentale",
+        "de": "Westafrika",
+        "fr": "Afrique de l’Ouest"
+       }
+      },
+      {
+       "id": "stredni-afrika",
+       "kruhy": [
+        [
+         12.5,
+         5.5,
+         2.0
+        ],
+        [
+         18.5,
+         15.0,
+         2.5
+        ],
+        [
+         20.5,
+         6.5,
+         1.8
+        ],
+        [
+         15.0,
+         -0.5,
+         1.6
+        ],
+        [
+         23.5,
+         -2.5,
+         4.0
+        ],
+        [
+         29.8,
+         -2.5,
+         0.6
+        ]
+       ],
+       "barva": "frx",
+       "popisek": {
+        "cs": "střední Afrika",
+        "en": "Central Africa",
+        "it": "Africa centrale",
+        "de": "Zentralafrika",
+        "fr": "Afrique centrale"
+       }
+      },
+      {
+       "id": "magreb",
+       "kruhy": [
+        [
+         3.0,
+         33.5,
+         2.5
+        ],
+        [
+         -6.0,
+         32.0,
+         2.0
+        ],
+        [
+         9.5,
+         34.0,
+         1.2
+        ]
+       ],
+       "barva": "frx",
+       "popisek": {
+        "cs": "Maghreb (druhý jazyk)",
+        "en": "Maghreb (second language)",
+        "it": "Maghreb (seconda lingua)",
+        "de": "Maghreb (Zweitsprache)",
+        "fr": "Maghreb (langue seconde)"
+       }
+      },
+      {
+       "id": "madagaskar",
+       "kruhy": [
+        [
+         46.8,
+         -19.0,
+         2.3
+        ],
+        [
+         55.5,
+         -21.1,
+         0.3
+        ]
+       ],
+       "barva": "frx",
+       "popisek": {
+        "cs": "Madagaskar a Réunion",
+        "en": "Madagascar and Réunion",
+        "it": "Madagascar e Riunione",
+        "de": "Madagaskar und Réunion",
+        "fr": "Madagascar et La Réunion"
+       }
+      }
+     ],
+     "proudy": []
+    }
+   ],
+   "zdroje": [
+    "Lodge, R. A. (1993): French: From Dialect to Standard. London – New York: Routledge.",
+    "Walter, H. (1988): Le français dans tous les sens. Paris: Robert Laffont.",
+    "Rey, A. – Duval, F. – Siouffi, G. (2007): Mille ans de langue française. Histoire d’une passion. Paris: Perrin.",
+    "Lambert, P.-Y. (2003): La langue gauloise. Paris: Errance.",
+    "Ayres-Bennett, W. (1996): A History of the French Language through Texts. London: Routledge.",
+    "Grégoire, H. (1794): Rapport sur la nécessité et les moyens d’anéantir les patois et d’universaliser l’usage de la langue française. Paris: Convention nationale.",
+    "Organisation internationale de la Francophonie (2026): La langue française dans le monde 2023–2026. Paris: Gallimard."
+   ]
   }
  ]
 }
