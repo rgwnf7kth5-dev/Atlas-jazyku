@@ -236,7 +236,7 @@
     "en": "The most complex syllable a language allows. Simple: at most one consonant before the vowel, (C)V. Moderately complex: CVC, or two initial consonants the second of which is a liquid or glide. Complex: longer consonant clusters.",
     "it": "La sillaba più complessa che una lingua ammette. Semplice: al massimo una consonante prima della vocale, (C)V. Moderatamente complessa: CVC, oppure due consonanti iniziali di cui la seconda è una liquida o un’approssimante. Complessa: gruppi consonantici più lunghi.",
     "de": "Die komplexeste Silbe, die eine Sprache zulässt. Einfach: höchstens ein Konsonant vor dem Vokal, (C)V. Mäßig komplex: CVC oder zwei anlautende Konsonanten, deren zweiter ein Liquid oder Gleitlaut ist. Komplex: längere Konsonantenverbindungen.",
-    "fr": "La syllabe la plus complexe qu'admet une langue. Simple : au plus une consonne avant la voyelle, (C)V. Moyennement complexe : CVC, ou deux consonnes initiales dont la seconde est une liquide ou une semi-voyelle. Complexe : groupes consonantiques plus longs."
+    "fr": "La syllabe la plus complexe qu’admet une langue. Simple : au plus une consonne avant la voyelle, (C)V. Moyennement complexe : CVC, ou deux consonnes initiales dont la seconde est une liquide ou une semi-voyelle. Complexe : groupes consonantiques plus longs."
    },
    "hodnoty": {
     "1": {
@@ -384,7 +384,7 @@
     "en": "The presence of four consonant types that are rare worldwide: clicks, labial-velars (simultaneous closure at the lips and velum, [k͡p], [ɡ͡b]), pharyngeals and dental fricatives ('th', [θ], [ð]).",
     "it": "La presenza di quattro tipi di consonanti rari nel mondo: clic, labiovelari (chiusura simultanea alle labbra e al velo, [k͡p], [ɡ͡b]), faringali e fricative dentali (“th”, [θ], [ð]).",
     "de": "Das Vorkommen von vier weltweit seltenen Konsonantentypen: Klicklaute, Labiovelare (gleichzeitiger Verschluss an den Lippen und am Velum, [k͡p], [ɡ͡b]), Pharyngale und dentale Frikative („th“, [θ], [ð]).",
-    "fr": "La présence de quatre types de consonnes rares à l'échelle mondiale : clics, labio-vélaires (occlusion simultanée aux lèvres et au voile du palais, [k͡p], [ɡ͡b]), pharyngales et fricatives dentales (« th », [θ], [ð])."
+    "fr": "La présence de quatre types de consonnes rares à l’échelle mondiale : clics, labio-vélaires (occlusion simultanée aux lèvres et au voile du palais, [k͡p], [ɡ͡b]), pharyngales et fricatives dentales (« th », [θ], [ð])."
    },
    "hodnoty": {
     "1": {
@@ -526,7 +526,7 @@
      "en": "Little affixation",
      "it": "Poca affissazione",
      "de": "Wenig Affigierung",
-     "fr": "Peu d'affixation"
+     "fr": "Peu d’affixation"
     },
     "2": {
      "cs": "výrazně příponový",
@@ -605,7 +605,7 @@
      "en": "little affixation",
      "it": "poca affissazione",
      "de": "wenig Affigierung",
-     "fr": "peu d'affixation",
+     "fr": "peu d’affixation",
      "barva": "jine"
     }
    ]
@@ -626,7 +626,7 @@
     "en": "The number of noun classes reflected in agreement (on adjectives, pronouns, verbs). This includes noun-class systems such as those of Bantu languages.",
     "it": "Il numero di classi nominali che si riflettono nell’accordo (su aggettivi, pronomi, verbi). Sono compresi i sistemi di classi nominali come quelli delle lingue bantu.",
     "de": "Die Anzahl der Nominalklassen, die sich in der Kongruenz (an Adjektiven, Pronomen, Verben) niederschlagen. Dazu gehören auch Nominalklassensysteme wie die der Bantusprachen.",
-    "fr": "Le nombre de classes nominales reflétées par l'accord (sur les adjectifs, les pronoms, les verbes). Cela inclut les systèmes de classes nominales comme ceux des langues bantoues."
+    "fr": "Le nombre de classes nominales reflétées par l’accord (sur les adjectifs, les pronoms, les verbes). Cela inclut les systèmes de classes nominales comme ceux des langues bantoues."
    },
    "hodnoty": {
     "1": {
@@ -734,7 +734,7 @@
     "en": "The number of cases expressed in the forms of nouns (endings, prefixes, stem changes). Adpositions are not counted. 'Borderline' languages have case marking only to a limited extent.",
     "it": "Il numero di casi espressi nelle forme dei nomi (desinenze, prefissi, mutamenti del tema). Le adposizioni non contano. Le lingue con marcatura “marginale” hanno i casi solo in misura limitata.",
     "de": "Die Anzahl der Kasus, die in den Formen der Substantive ausgedrückt werden (Endungen, Präfixe, Stammveränderungen). Adpositionen werden nicht mitgezählt. Sprachen mit „Grenzfällen“ haben eine Kasusmarkierung nur in begrenztem Umfang.",
-    "fr": "Le nombre de cas exprimés par les formes des noms (désinences, préfixes, modifications du radical). Les adpositions ne sont pas comptées. Les langues « limites » n'ont de marquage casuel que dans une mesure restreinte."
+    "fr": "Le nombre de cas exprimés par les formes des noms (désinences, préfixes, modifications du radical). Les adpositions ne sont pas comptées. Les langues « limites » n’ont de marquage casuel que dans une mesure restreinte."
    },
    "hodnoty": {
     "1": {
@@ -893,7 +893,7 @@
     "en": "Whether a language has a definite article (like English the) and in what form: a separate word, a demonstrative used as an article, or an affix (such as the suffix in Romanian or the Scandinavian languages).",
     "it": "Se una lingua ha un articolo determinativo (come l’italiano il) e in quale forma: una parola a sé, un dimostrativo usato come articolo, oppure un affisso (come il suffisso del rumeno o delle lingue scandinave).",
     "de": "Ob eine Sprache einen bestimmten Artikel hat (wie englisch the) und in welcher Form: als eigenes Wort, als Demonstrativum in der Funktion eines Artikels oder als Affix (etwa das Suffix im Rumänischen oder in den skandinavischen Sprachen).",
-    "fr": "Si une langue possède un article défini (comme l'anglais the) et sous quelle forme : un mot distinct, un démonstratif employé comme article, ou un affixe (comme le suffixe du roumain ou des langues scandinaves)."
+    "fr": "Si une langue possède un article défini (comme l’anglais the) et sous quelle forme : un mot distinct, un démonstratif employé comme article, ou un affixe (comme le suffixe du roumain ou des langues scandinaves)."
    },
    "hodnoty": {
     "1": {
@@ -901,7 +901,7 @@
      "en": "Definite word distinct from demonstrative",
      "it": "Articolo determinativo distinto dal dimostrativo",
      "de": "Definites Wort, verschieden vom Demonstrativum",
-     "fr": "Mot défini distinct du démonstratif"
+     "fr": "Article défini distinct du démonstratif"
     },
     "2": {
      "cs": "ukazovací zájmeno ve funkci členu",
@@ -922,7 +922,7 @@
      "en": "No definite, but indefinite article",
      "it": "Nessun articolo determinativo, ma uno indeterminativo",
      "de": "Kein bestimmter, aber ein unbestimmter Artikel",
-     "fr": "Pas d'article défini, mais un article indéfini"
+     "fr": "Pas d’article défini, mais un article indéfini"
     },
     "5": {
      "cs": "bez členů",
@@ -981,7 +981,7 @@
      "en": "no articles",
      "it": "nessun articolo",
      "de": "keine Artikel",
-     "fr": "pas d'articles",
+     "fr": "pas d’articles",
      "barva": "jine"
     }
    ]
@@ -1002,7 +1002,7 @@
     "en": "Whether a language has an indefinite article (like English a) and whether it is the same as the numeral 'one'.",
     "it": "Se una lingua ha un articolo indeterminativo (come l’italiano un) e se coincide con il numerale “uno”.",
     "de": "Ob eine Sprache einen unbestimmten Artikel hat (wie englisch a) und ob er mit dem Zahlwort ‚eins‘ identisch ist.",
-    "fr": "Si une langue possède un article indéfini (comme l'anglais a) et s'il est identique au numéral « un »."
+    "fr": "Si une langue possède un article indéfini (comme l’anglais a) et s’il est identique au numéral « un »."
    },
    "hodnoty": {
     "1": {
@@ -1010,14 +1010,14 @@
      "en": "Indefinite word distinct from 'one'",
      "it": "Articolo indeterminativo distinto da “uno”",
      "de": "Indefinites Wort, verschieden von ‚eins‘",
-     "fr": "Mot indéfini distinct de « un »"
+     "fr": "Article indéfini distinct de « un »"
     },
     "2": {
      "cs": "stejné slovo jako „jeden“",
      "en": "Indefinite word same as 'one'",
      "it": "Articolo indeterminativo uguale a “uno”",
      "de": "Indefinites Wort identisch mit ‚eins‘",
-     "fr": "Mot indéfini identique à « un »"
+     "fr": "Article indéfini identique à « un »"
     },
     "3": {
      "cs": "afix",
@@ -1031,7 +1031,7 @@
      "en": "No indefinite, but definite article",
      "it": "Nessun articolo indeterminativo, ma uno determinativo",
      "de": "Kein unbestimmter, aber ein bestimmter Artikel",
-     "fr": "Pas d'article indéfini, mais un article défini"
+     "fr": "Pas d’article indéfini, mais un article défini"
     },
     "5": {
      "cs": "bez členů",
@@ -1090,7 +1090,7 @@
      "en": "no articles",
      "it": "nessun articolo",
      "de": "keine Artikel",
-     "fr": "pas d'articles",
+     "fr": "pas d’articles",
      "barva": "jine"
     }
    ]
@@ -1104,14 +1104,14 @@
     "en": "Order of subject, object and verb",
     "it": "Ordine di soggetto, oggetto e verbo",
     "de": "Abfolge von Subjekt, Objekt und Verb",
-    "fr": "Ordre du sujet, de l'objet et du verbe"
+    "fr": "Ordre du sujet, de l’objet et du verbe"
    },
    "popis": {
     "cs": "Převládající pořadí podmětu (S), předmětu (O) a slovesa (V) v oznamovací větě s plnými jmennými frázemi. Čeština je podle WALS SVO. Pořadí se slovesem na začátku (VSO, VOS) a s předmětem na začátku (OVS, OSV) jsou zde sloučená.",
     "en": "The dominant order of subject (S), object (O) and verb (V) in declarative clauses with full noun phrases. Czech is SVO according to WALS. Verb-initial (VSO, VOS) and object-initial (OVS, OSV) orders are merged here.",
     "it": "L’ordine dominante di soggetto (S), oggetto (O) e verbo (V) nelle frasi dichiarative con sintagmi nominali pieni. L’italiano è SVO secondo il WALS. Gli ordini con verbo iniziale (VSO, VOS) e con oggetto iniziale (OVS, OSV) sono qui uniti.",
     "de": "Die dominante Abfolge von Subjekt (S), Objekt (O) und Verb (V) in Aussagesätzen mit vollen Nominalphrasen. Das Tschechische ist nach WALS SVO. Verbinitiale (VSO, VOS) und objektinitiale (OVS, OSV) Abfolgen sind hier zusammengefasst.",
-    "fr": "L'ordre dominant du sujet (S), de l'objet (O) et du verbe (V) dans les propositions déclaratives à syntagmes nominaux pleins. Selon le WALS, le tchèque est SVO. Les ordres à verbe initial (VSO, VOS) et à objet initial (OVS, OSV) sont ici réunis."
+    "fr": "L’ordre dominant du sujet (S), de l’objet (O) et du verbe (V) dans les propositions déclaratives à syntagmes nominaux pleins. Selon le WALS, le tchèque est SVO. Les ordres à verbe initial (VSO, VOS) et à objet initial (OVS, OSV) sont ici réunis."
    },
    "hodnoty": {
     "1": {
@@ -1161,7 +1161,7 @@
      "en": "No dominant order",
      "it": "Nessun ordine dominante",
      "de": "Keine dominante Abfolge",
-     "fr": "Pas d'ordre dominant"
+     "fr": "Pas d’ordre dominant"
     }
    },
    "tridy": [
@@ -1215,7 +1215,7 @@
      "en": "no dominant order",
      "it": "nessun ordine dominante",
      "de": "keine dominante Abfolge",
-     "fr": "pas d'ordre dominant",
+     "fr": "pas d’ordre dominant",
      "barva": "jine"
     }
    ]
@@ -1229,14 +1229,14 @@
     "en": "Order of object and verb",
     "it": "Ordine di oggetto e verbo",
     "de": "Abfolge von Objekt und Verb",
-    "fr": "Ordre de l'objet et du verbe"
+    "fr": "Ordre de l’objet et du verbe"
    },
    "popis": {
     "cs": "Zda předmět převážně stojí před slovesem (OV), nebo za ním (VO). Patří k nejdůležitějším slovosledným parametrům, s nímž souvisí řada dalších.",
     "en": "Whether the object mainly precedes the verb (OV) or follows it (VO). One of the most important word-order parameters, correlating with many others.",
     "it": "Se l’oggetto precede di solito il verbo (OV) o lo segue (VO). È uno dei parametri più importanti dell’ordine delle parole e si correla con molti altri.",
     "de": "Ob das Objekt dem Verb überwiegend vorausgeht (OV) oder folgt (VO). Einer der wichtigsten Wortstellungsparameter, der mit vielen anderen korreliert.",
-    "fr": "Si l'objet précède principalement le verbe (OV) ou le suit (VO). C'est l'un des paramètres d'ordre des mots les plus importants, en corrélation avec de nombreux autres."
+    "fr": "Si l’objet précède principalement le verbe (OV) ou le suit (VO). C’est l’un des paramètres d’ordre des mots les plus importants, en corrélation avec de nombreux autres."
    },
    "hodnoty": {
     "1": {
@@ -1258,7 +1258,7 @@
      "en": "No dominant order",
      "it": "Nessun ordine dominante",
      "de": "Keine dominante Abfolge",
-     "fr": "Pas d'ordre dominant"
+     "fr": "Pas d’ordre dominant"
     }
    },
    "tridy": [
@@ -1290,7 +1290,7 @@
      "en": "no dominant order",
      "it": "nessun ordine dominante",
      "de": "keine dominante Abfolge",
-     "fr": "pas d'ordre dominant",
+     "fr": "pas d’ordre dominant",
      "barva": "jine"
     }
    ]
@@ -1304,14 +1304,14 @@
     "en": "Order of adposition and noun phrase",
     "it": "Ordine di adposizione e sintagma nominale",
     "de": "Abfolge von Adposition und Nominalphrase",
-    "fr": "Ordre de l'adposition et du syntagme nominal"
+    "fr": "Ordre de l’adposition et du syntagme nominal"
    },
    "popis": {
     "cs": "Zda jazyk užívá předložky (před jménem, „v domě“), nebo záložky (za jménem, turecké ev için „dům pro“). Vnitřní adpozice (uvnitř jmenné fráze) jsou vzácné a patří zde k „jiným“.",
     "en": "Whether a language uses prepositions (before the noun, 'in the house') or postpositions (after it, Turkish ev için 'house for'). Inpositions (inside the noun phrase) are rare and grouped here with 'other'.",
     "it": "Se una lingua usa preposizioni (prima del nome, “in casa”) o posposizioni (dopo il nome, turco ev için “casa per”). Le inposizioni (dentro il sintagma nominale) sono rare e qui sono raggruppate con “altro”.",
     "de": "Ob eine Sprache Präpositionen (vor dem Nomen, „im Haus“) oder Postpositionen (danach, türkisch ev için ‚Haus für‘) verwendet. Inpositionen (innerhalb der Nominalphrase) sind selten und werden hier unter „andere“ eingeordnet.",
-    "fr": "Si une langue emploie des prépositions (avant le nom, « dans la maison ») ou des postpositions (après lui, turc ev için « maison pour »). Les inpositions (à l'intérieur du syntagme nominal) sont rares et sont ici rangées avec « autre »."
+    "fr": "Si une langue emploie des prépositions (avant le nom, « dans la maison ») ou des postpositions (après lui, turc ev için « maison pour »). Les inpositions (à l’intérieur du syntagme nominal) sont rares et sont ici rangées avec « autre »."
    },
    "hodnoty": {
     "1": {
@@ -1340,14 +1340,14 @@
      "en": "No dominant order",
      "it": "Nessun ordine dominante",
      "de": "Keine dominante Abfolge",
-     "fr": "Pas d'ordre dominant"
+     "fr": "Pas d’ordre dominant"
     },
     "5": {
      "cs": "bez adpozic",
      "en": "No adpositions",
      "it": "Nessuna adposizione",
      "de": "Keine Adpositionen",
-     "fr": "Pas d'adpositions"
+     "fr": "Pas d’adpositions"
     }
    },
    "tridy": [
@@ -1379,7 +1379,7 @@
      "en": "no adpositions",
      "it": "nessuna adposizione",
      "de": "keine Adpositionen",
-     "fr": "pas d'adpositions"
+     "fr": "pas d’adpositions"
     },
     {
      "wals": [
@@ -1390,7 +1390,7 @@
      "en": "other (inpositions, no dominant order)",
      "it": "altro (inposizioni, nessun ordine dominante)",
      "de": "andere (Inpositionen, keine dominante Abfolge)",
-     "fr": "autre (inpositions, pas d'ordre dominant)",
+     "fr": "autre (inpositions, pas d’ordre dominant)",
      "barva": "jine"
     }
    ]
@@ -1433,7 +1433,7 @@
      "en": "No dominant order",
      "it": "Nessun ordine dominante",
      "de": "Keine dominante Abfolge",
-     "fr": "Pas d'ordre dominant"
+     "fr": "Pas d’ordre dominant"
     }
    },
    "tridy": [
@@ -1465,7 +1465,7 @@
      "en": "no dominant order",
      "it": "nessun ordine dominante",
      "de": "keine dominante Abfolge",
-     "fr": "pas d'ordre dominant",
+     "fr": "pas d’ordre dominant",
      "barva": "jine"
     }
    ]
@@ -1479,14 +1479,14 @@
     "en": "Order of adjective and noun",
     "it": "Ordine di aggettivo e nome",
     "de": "Abfolge von Adjektiv und Nomen",
-    "fr": "Ordre de l'adjectif et du nom"
+    "fr": "Ordre de l’adjectif et du nom"
    },
    "popis": {
     "cs": "Zda přívlastkové přídavné jméno převážně stojí před jménem („velký dům“), nebo za ním (franc. maison blanche).",
     "en": "Whether an attributive adjective mainly precedes the noun (big house) or follows it (French maison blanche).",
     "it": "Se un aggettivo attributivo precede di solito il nome (inglese big house) o lo segue (casa bianca).",
     "de": "Ob ein attributives Adjektiv dem Nomen überwiegend vorausgeht (großes Haus) oder folgt (französisch maison blanche).",
-    "fr": "Si l'adjectif épithète précède principalement le nom (anglais big house) ou le suit (français maison blanche)."
+    "fr": "Si l’adjectif épithète précède principalement le nom (anglais big house) ou le suit (français maison blanche)."
    },
    "hodnoty": {
     "1": {
@@ -1508,7 +1508,7 @@
      "en": "No dominant order",
      "it": "Nessun ordine dominante",
      "de": "Keine dominante Abfolge",
-     "fr": "Pas d'ordre dominant"
+     "fr": "Pas d’ordre dominant"
     },
     "4": {
      "cs": "jen vnitřně řízené vztažné věty",
@@ -1548,7 +1548,7 @@
      "en": "other (no dominant order)",
      "it": "altro (nessun ordine dominante)",
      "de": "andere (keine dominante Abfolge)",
-     "fr": "autre (pas d'ordre dominant)",
+     "fr": "autre (pas d’ordre dominant)",
      "barva": "jine"
     }
    ]
@@ -1677,7 +1677,7 @@
     "en": "How the case forms of full noun phrases distinguish the single argument of an intransitive verb (S) from the agent (A) and patient (P) of a transitive verb. Nominative–accusative: S = A ≠ P. Ergative–absolutive: S = P ≠ A (e.g. Lezgian). Tripartite: all three differ. Active–inactive: marking depends on control (WALS places Basque and Georgian here). Neutral: no distinction.",
     "it": "Come le forme casuali dei sintagmi nominali pieni distinguono l’unico argomento di un verbo intransitivo (S) dall’agente (A) e dal paziente (P) di un verbo transitivo. Nominativo–accusativo: S = A ≠ P. Ergativo–assolutivo: S = P ≠ A (ad es. lezgo). Tripartito: tutti e tre diversi. Attivo–inattivo: la marcatura dipende dal controllo (il WALS vi colloca il basco e il georgiano). Neutro: nessuna distinzione.",
     "de": "Wie die Kasusformen voller Nominalphrasen das einzige Argument eines intransitiven Verbs (S) vom Agens (A) und Patiens (P) eines transitiven Verbs unterscheiden. Nominativ–Akkusativ: S = A ≠ P. Ergativ–Absolutiv: S = P ≠ A (z. B. Lesgisch). Tripartit: alle drei verschieden. Aktiv–Inaktiv: Die Markierung hängt von der Kontrolle ab (WALS ordnet hier das Baskische und das Georgische ein). Neutral: keine Unterscheidung.",
-    "fr": "La manière dont les formes casuelles des syntagmes nominaux pleins distinguent l'argument unique d'un verbe intransitif (S) de l'agent (A) et du patient (P) d'un verbe transitif. Nominatif–accusatif : S = A ≠ P. Ergatif–absolutif : S = P ≠ A (par exemple le lezguien). Tripartite : les trois diffèrent. Actif–inactif : le marquage dépend du contrôle (le WALS y range le basque et le géorgien). Neutre : aucune distinction."
+    "fr": "La manière dont les formes casuelles des syntagmes nominaux pleins distinguent l’argument unique d’un verbe intransitif (S) de l’agent (A) et du patient (P) d’un verbe transitif. Nominatif–accusatif : S = A ≠ P. Ergatif–absolutif : S = P ≠ A (par exemple le lezguien). Tripartite : les trois diffèrent. Actif–inactif : le marquage dépend du contrôle (le WALS y range le basque et le géorgien). Neutre : aucune distinction."
    },
    "hodnoty": {
     "1": {
@@ -1911,7 +1911,7 @@
     "en": "How a language distinguishes yes/no questions from statements: with a question particle (Polish czy), verb morphology, a change of word order (German Kommst du?; WALS classes Czech here too), or intonation only (Romanian).",
     "it": "Come una lingua distingue le domande sì/no dalle affermazioni: con una particella interrogativa (polacco czy), con la morfologia del verbo, con un cambiamento dell’ordine delle parole (tedesco Kommst du?; il WALS vi colloca anche il ceco) o con la sola intonazione (rumeno, italiano).",
     "de": "Wie eine Sprache Ja/Nein-Fragen von Aussagesätzen unterscheidet: mit einer Fragepartikel (polnisch czy), durch Verbmorphologie, durch eine Änderung der Wortstellung (deutsch Kommst du?; WALS ordnet auch das Tschechische hier ein) oder allein durch die Intonation (Rumänisch).",
-    "fr": "La manière dont une langue distingue les questions fermées (oui/non) des affirmations : par une particule interrogative (polonais czy), la morphologie verbale, un changement de l'ordre des mots (allemand Kommst du? ; le WALS y range aussi le tchèque) ou la seule intonation (roumain)."
+    "fr": "La manière dont une langue distingue les questions fermées (oui/non) des affirmations : par une particule interrogative (polonais czy), la morphologie verbale, un changement de l’ordre des mots (allemand Kommst du? ; le WALS y range aussi le tchèque) ou la seule intonation (roumain)."
    },
    "hodnoty": {
     "1": {
@@ -2276,7 +2276,7 @@
     "en": "The number of basic colour terms following Berlin and Kay's method (World Color Survey). Half values mark a category that is only partly established. English, French, German and Russian have 11 according to WALS.",
     "it": "Il numero di termini cromatici di base secondo il metodo di Berlin e Kay (World Color Survey). I valori con ,5 indicano una categoria affermata solo in parte. Secondo il WALS inglese, francese, tedesco e russo ne hanno 11.",
     "de": "Die Anzahl der Grundfarbwörter nach der Methode von Berlin und Kay (World Color Survey). Halbe Werte bezeichnen eine nur teilweise etablierte Kategorie. Englisch, Französisch, Deutsch und Russisch haben nach WALS 11.",
-    "fr": "Le nombre de termes de couleur de base selon la méthode de Berlin et Kay (World Color Survey). Les demi-valeurs signalent une catégorie qui n'est que partiellement établie. Selon le WALS, l'anglais, le français, l'allemand et le russe en comptent 11."
+    "fr": "Le nombre de termes de couleur de base selon la méthode de Berlin et Kay (World Color Survey). Les demi-valeurs signalent une catégorie qui n’est que partiellement établie. Selon le WALS, l’anglais, le français, l’allemand et le russe en comptent 11."
    },
    "hodnoty": {
     "1": {
@@ -2418,7 +2418,7 @@
     "en": "The origin of the word for tea. Forms from Chinese cha (the pronunciation in both Mandarin and Cantonese) spread mostly overland (Czech čaj, Russian, Hindi, Turkish), forms from Southern Min (Amoy) te mostly by sea through Dutch traders (English tea, German Tee). Portuguese is the exception: it took chá by sea, from the Cantonese pronunciation in Macau.",
     "it": "L’origine della parola per il tè. Le forme dal cinese cha (la pronuncia sia in mandarino sia in cantonese) si sono diffuse per lo più via terra (ceco čaj, russo, hindi, turco), quelle dal min meridionale (Amoy) te per lo più via mare attraverso i mercanti olandesi (italiano tè, inglese tea, tedesco Tee). Fa eccezione il portoghese: ha preso chá via mare, dalla pronuncia cantonese di Macao.",
     "de": "Die Herkunft des Wortes für Tee. Formen aus dem chinesischen cha (so die Aussprache sowohl im Mandarin als auch im Kantonesischen) verbreiteten sich überwiegend auf dem Landweg (tschechisch čaj, Russisch, Hindi, Türkisch), Formen aus dem südlichen Min (Amoy) te überwiegend auf dem Seeweg über niederländische Händler (englisch tea, deutsch Tee). Eine Ausnahme ist das Portugiesische: Es übernahm chá auf dem Seeweg, aus der kantonesischen Aussprache in Macau.",
-    "fr": "L'origine du mot désignant le thé. Les formes issues du chinois cha (prononciation commune au mandarin et au cantonais) se sont répandues surtout par voie de terre (tchèque čaj, russe, hindi, turc), les formes issues du min du Sud (Amoy) te surtout par mer, par l'intermédiaire des marchands néerlandais (anglais tea, allemand Tee). Le portugais fait exception : il a reçu chá par mer, de la prononciation cantonaise de Macao."
+    "fr": "L’origine du mot désignant le thé. Les formes issues du chinois cha (prononciation commune au mandarin et au cantonais) se sont répandues surtout par voie de terre (tchèque čaj, russe, hindi, turc), les formes issues du min du Sud (Amoy) te surtout par mer, par l’intermédiaire des marchands néerlandais (anglais tea, allemand Tee). Le portugais fait exception : il a reçu chá par mer, de la prononciation cantonaise de Macao."
    },
    "hodnoty": {
     "1": {

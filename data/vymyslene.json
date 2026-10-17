@@ -54,7 +54,7 @@
    },
    "fr": {
     "nazev": "Terre du Milieu",
-    "popis": "Le monde du Seigneur des anneaux. Tolkien l'imaginait comme notre propre Terre dans un passé lointain inventé."
+    "popis": "Le monde du Seigneur des anneaux. Tolkien l’imaginait comme notre propre Terre dans un passé lointain inventé."
    }
   },
   {
@@ -82,7 +82,7 @@
    },
    "fr": {
     "nazev": "Pandora",
-    "popis": "Une lune d'une planète géante proche de l'étoile Alpha du Centaure, patrie des Na'vi dans le film Avatar."
+    "popis": "Une lune d’une planète géante proche de l’étoile Alpha du Centaure, patrie des Na'vi dans le film Avatar."
    }
   },
   {
@@ -110,7 +110,7 @@
    },
    "fr": {
     "nazev": "Essos",
-    "popis": "Un continent du monde de Game of Thrones. C'est là que vivent les Dothrakis et que se dressait autrefois Valyria."
+    "popis": "Un continent du monde de Game of Thrones. C’est là que vivent les Dothrakis et que se dressait autrefois Valyria."
    }
   }
  ],
@@ -157,8 +157,8 @@
     "nazev": "Klingon",
     "vyslovnost": "NOUK-nekh",
     "dilo": "Star Trek (films)",
-    "vyznam": "Littéralement « Que voulez-vous ? » – l'étiquette klingonne ignore les formules de politesse.",
-    "fakt": "L'ordre de base des mots en klingon est objet–verbe–sujet : « puq legh yaS » signifie « l'officier voit l'enfant », littéralement « enfant voit officier ». Cet ordre est très rare parmi les langues naturelles (WALS 81A).",
+    "vyznam": "Littéralement « Que voulez-vous ? » – l’étiquette klingonne ignore les formules de politesse.",
+    "fakt": "L’ordre de base des mots en klingon est objet–verbe–sujet : « puq legh yaS » signifie « l’officier voit l’enfant », littéralement « enfant voit officier ». Cet ordre est très rare parmi les langues naturelles (WALS 81A).",
     "hledat": "klingon klingonne star trek okrand"
    }
   },
@@ -205,7 +205,7 @@
     "vyslovnost": "AÏ-ia",
     "dilo": "Le Seigneur des anneaux (livre)",
     "vyznam": "« Salut ! » – la langue des Hauts-Elfes.",
-    "fakt": "Tolkien s'est inspiré surtout du finnois pour le créer. Il disait que les langues étaient venues en premier et que les récits avaient été écrits pour leur donner un monde où elles pourraient être parlées.",
+    "fakt": "Tolkien s’est inspiré surtout du finnois pour le créer. Il disait que les langues étaient venues en premier et que les récits avaient été écrits pour leur donner un monde où elles pourraient être parlées.",
     "hledat": "quenya elfe elfes elfique tolkien seigneur des anneaux lord of the rings"
    }
   },
@@ -252,7 +252,7 @@
     "vyslovnost": "maï go-VANN-enn",
     "dilo": "Le Seigneur des anneaux (livre)",
     "vyznam": "« Heureuse rencontre. »",
-    "fakt": "Son système phonique rappelle le gallois, que Tolkien admirait. L'inscription des Portes de la Moria dit « Parlez, ami, et entrez » – et le mot de passe est le mot « ami » lui-même : mellon.",
+    "fakt": "Son système phonique rappelle le gallois, que Tolkien admirait. L’inscription des Portes de la Moria dit « Parlez, ami, et entrez » – et le mot de passe est le mot « ami » lui-même : mellon.",
     "hledat": "sindarin elfe elfes elfique tolkien seigneur des anneaux lord of the rings mellon"
    }
   },
@@ -296,10 +296,10 @@
    },
    "fr": {
     "nazev": "Na'vi",
-    "vyslovnost": "kal-T'I",
+    "vyslovnost": "kal-T’I",
     "dilo": "Avatar (film, 2009)",
     "vyznam": "« Bonjour ! »",
-    "fakt": "Le linguiste Paul Frommer l'a doté des éjectives kx, px et tx, produites avec une fermeture simultanée de la glotte. Ni l'anglais ni le tchèque n'en possèdent, mais on en trouve par exemple en géorgien ou en amharique.",
+    "fakt": "Le linguiste Paul Frommer l’a doté des éjectives kx, px et tx, produites avec une fermeture simultanée de la glotte. Ni l’anglais ni le tchèque n’en possèdent, mais on en trouve par exemple en géorgien ou en amharique.",
     "hledat": "navi na'vi avatar pandora frommer"
    }
   },
@@ -345,8 +345,8 @@
     "nazev": "Dothraki",
     "vyslovnost": "m-ath-tcho-ma-ROUN",
     "dilo": "Game of Thrones (série télévisée, 2011)",
-    "vyznam": "« Avec respect ! » – c'est ainsi que les Dothrakis se saluent.",
-    "fakt": "George R. R. Martin n'a employé dans ses livres qu'une poignée de mots dothrakis. Le linguiste David J. Peterson en a tiré, pour la série, une langue complète, dotée de sa propre grammaire et d'un vocabulaire de plusieurs milliers de mots.",
+    "vyznam": "« Avec respect ! » – c’est ainsi que les Dothrakis se saluent.",
+    "fakt": "George R. R. Martin n’a employé dans ses livres qu’une poignée de mots dothrakis. Le linguiste David J. Peterson en a tiré, pour la série, une langue complète, dotée de sa propre grammaire et d’un vocabulaire de plusieurs milliers de mots.",
     "hledat": "dothraki dothrakis game of thrones trône de fer peterson"
    }
   },
@@ -404,14 +404,14 @@
    "en": "Tolkien drew on Finnish when creating Quenya, the language of his Elves.",
    "it": "Tolkien attinse dal finlandese per creare il quenya, la lingua dei suoi Elfi.",
    "de": "Tolkien stützte sich bei der Schaffung des Quenya, der Sprache seiner Elben, auf das Finnische.",
-   "fr": "Tolkien s'est inspiré du finnois pour créer le quenya, la langue de ses Elfes."
+   "fr": "Tolkien s’est inspiré du finnois pour créer le quenya, la langue de ses Elfes."
   },
   "cy": {
    "cs": "Velštinou se Tolkien inspiroval při tvorbě sindarštiny, dalšího elfského jazyka.",
    "en": "Tolkien drew on Welsh when creating Sindarin, another Elvish language.",
    "it": "Tolkien attinse dal gallese per creare il sindarin, un'altra lingua elfica.",
    "de": "Tolkien stützte sich bei der Schaffung des Sindarin, einer weiteren Elbensprache, auf das Walisische.",
-   "fr": "Tolkien s'est inspiré du gallois pour créer le sindarin, une autre langue elfique."
+   "fr": "Tolkien s’est inspiré du gallois pour créer le sindarin, une autre langue elfique."
   }
  }
 }

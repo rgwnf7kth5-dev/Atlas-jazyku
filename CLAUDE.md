@@ -1,6 +1,6 @@
 # Atlas jazyků – pokyny pro Claude Code
 
-Encyklopedický atlas jazyků světa na otáčivém glóbu, česky, anglicky, od 2. 10. 2026 italsky a od 3. 10. 2026 německy. Komunikuj česky.
+Encyklopedický atlas jazyků světa na otáčivém glóbu, česky, anglicky, od 2. 10. 2026 italsky, od 3. 10. 2026 německy a od 17. 10. 2026 francouzsky. Komunikuj česky.
 **Publikum od 26. 9. 2026: studenti a výš** – vysokoškoláci, učitelé, dospělí zájemci i odborníci (uživatel: „pro studenty a výše, nejenom pro ně“). Česky se vyká. Texty věcné,
 encyklopedické, odborné termíny s vysvětlením, bez zvolání, výzev („Zkus to vyslovit!“) a zdrobnělin. Samostatná
 **varianta pro děti** (jiná grafika, animace, obrázky, mnohem méně jazyků) je nápad uživatele **na později, ne teď**.
@@ -106,6 +106,27 @@ jako italština, přepínač **CS · EN · IT · DE**. Název **Atlas der Sprach
   nationale Wiedergeburt; Kralitzer Bibel; karta atlasu = „Steckbrief“ („Karte“ = mapa). Opraveno při kontrole mj.: obrácený smysl u
   akkadštiny a aramejštiny, Omri a Moab na stéle Méšově, „Lesezeichen“ (= záložka) u kunten, předpona kh- (přepis se nemění), „den Zehnten“,
   angl. daler „spätestens seit“, ethnicita × původ u maorštiny, Mendele/Perez a jidiš, „Republik Moldau“ × Moldau (kraj).
+
+## Francouzská verze (od 17. 10. 2026)
+
+Uživatel: „přidělej teď francouzskou verzi a také putování francouzštiny“. Adresa **thelanguageatlas.com/fr/** (`dist/fr/`), stejná kostra
+jako italština a němčina, přepínač **CS · EN · IT · DE · FR**. Název **Atlas des langues**. **Vyká se („vous“).** Statické stránky
+`/fr/langue/<nom>/`, `/fr/langues/`, `/fr/a-propos-des-donnees/`, `/fr/journees-des-langues/`, `/fr/guide/`, `/fr/vitalite/`,
+`/fr/antiquite/<…>/`, `/fr/histoires/<…>/`. Procenta s pevnou mezerou; jména jazyků v textu malým jako v italštině; Wikipedie „langue <nom>“.
+- Názvy: `node scripts/nazvy.mjs fr` (CLDR 48.2; `BEZNE.fr`: Tanzanie, États-Unis, Tchéquie, République centrafricaine…), rodiny
+  a větve `glottolog-*.fr.json` jako ženská přídavná jména k « famille » / « branche » (austronésienne, slave, atlantico-congolaise).
+- Hledání zná francouzská slova (`langu`, `parl`, předložky du/des/de/en/au/aux, „où“, tázací tvary parle-t-on…, elize l'/d'/qu' se
+  v `dotazSlova` rozdělí, `œ` → oe), EU („langues de l'UE“, „États membres“), AI odpovídá i francouzsky.
+- Přeloženo **vše**: 15 pomocných agentů (rozhraní, 164 karet s výslovností přepsanou pro francouzského čtenáře – ou, ch, tch, dj, ï,
+  přízvuk velkými –, putování, cesty slov, vymyšlené jazyky, Jazyk dne, písma, typologie, 31 stránek starověku a Příběhů), pak
+  11 nezávislých kontrol (~180 oprav). Nástroje ve scratchpadu `fr-preklad/` (ZADANI.md, KONTROLA.md, `vytahni*.mjs`, `kontrola*.mjs`,
+  `vedle*.mjs`, `opravy.mjs`, **`vloz-fr.py`** – vkládá `fr` za `de`, opakovatelně).
+- **Názvosloví:** UNESCO **sûre · vulnérable · en danger · sérieusement en danger · en situation critique · éteinte · en réveil**, souhrnně
+  « menacée »; karta = « fiche » (« carte » = mapa); **« hangeul »** všude (rozhraní chtělo „hangul“, stránky „hangeul“ – zvoleno hangeul);
+  kharosthi; Holocaust = « Shoah »; apostrof ve francouzských elizích typografický ’ (rovný zůstává v přepisech: Na'vi, Gwich'in).
+  Století v datacích etap putování s horním indexem (« XIIIᵉ siècle »), jinak by je verzálky v `.put-doba` změnily na „XIIIE“.
+- Při kontrole opraveno mj.: bulharské kývání hlavou, « registre de parole » (ne „registre de langue“), shoda rodu větví, chybně
+  doplněné anglické názvy zákonů u Velšanů a Maorů, « Article indéfini » (WALS), « vingt moins trois » u etruských číslovek.
 
 ## Struktura a pravidla
 
@@ -827,6 +848,14 @@ severozápadní Persie), západní novoaramejština ~15 000 před válkou a Bach
 zákon 2018 (§ 4 c: postavení arabštiny v praxi nedotčeno), „téměř tři tisíciletí“, patriarcha od 780 v Bagdádu, jeruzalémský (ne galilejský)
 Talmud, Juda ha-Nasi Mišnu „uspořádal“ (zápis sporný), všechny aramejské pasáže Bible, filozofie v židovské arabštině, 587/586; oblast „ivrit“
 jen v hranicích Izraele z roku 1949 (bez územního tvrzení).
+**Putování francouzštiny** (17. 10. 2026, `#putovani-francouzstina` / `#journey-french` / `#viaggio-francese` / `#reise-franzoesisch` /
+`#voyage-francais`, texty rovnou cs/en/it/de/fr, generátor `put-fr/francouzstina.py` ve scratchpadu; 8 etap: Galie před Římany, latina
+římské Galie, Frankové a Bretonci, jazyk oïl a oc (Štrasburské přísahy, 1066), jazyk krále (Villers-Cotterêts, Akademie), za oceán,
+revoluce/škola/kolonie, frankofonie dnes – OIF 2026: 396 milionů, 65 % v Africe včetně Blízkého východu, nová metoda s dětmi 6–9 let).
+Barvy `--put-gal, aqu, frk, oil, frp, bre, kre, frx`. Při ověření opraveno: 17. **a počátek 18.** století (Nový Orleans 1718), většina
+Francouzů mluvila francouzsky už v 19. století (ve 20. se stala mateřským jazykem téměř všech), Kongo, Rwanda a Burundi byly belgické,
+h aspiré je dnes němé, Grégoire „téměř neschopen“, francien (ne „franština“ – to je franský jazyk), Chlodvík sídlem Paříž až kolem 508,
+Saint-Domingue od 1697, šipky nesmí přes Bretaň, Galicii, Poloostrov Gaspé, Janovský záliv ani Lví záliv.
 **Vstup do putování** (29. 9. 2026, uživatel vybral z návrhů jen „skupinu v Příbězích“): v okně Příběhy jazyků je za skupinou
 Slova na cestách skupina **Putování jazyků** (`vlozPutovani` v `otevriSekci`) s dlaždicí pro každé putování – akvarel jazyka
 (`/malby/<atlas>.jpg`, v artefaktu `malbaObrazek`, bez oživení), název a `podtitul` (povinný, validace). Tlačítko na kartě jazyka

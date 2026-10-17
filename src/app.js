@@ -468,7 +468,7 @@ const DOTAZ_VYPLN = new Set(("jazyk jazyky jazyku jazycich jazykem jazyce langua
   "zwischen vergleiche vergleich und der die das den dem des ein eine einer im von aus mit was haben hat gemeinsam unterschied sind ist auf " +
   "langue langues parle parlee parlees parlent parler on se quelle quelles quel quels ou toutes tous montre montrez trouve trouvez liste " +
   "famille familles branche branches entre compare comparer comparaison et le les l un une du de d qu que qui ont a commun commune " +
-  "difference est au aux en par avec").split(" "));
+  "difference est au aux en par avec parle-t-on parle-t-il parlent-ils trouve-t-on ecrit-on ecrit s").split(" "));
 function celyDotaz(text, d){
   if (!d || !d.jmena) return false;
   const nazvy = []; d.jmena.forEach(function(n){ dotazSlova(n).forEach(function(w){ if (w.length >= 2) nazvy.push(w); }); });
