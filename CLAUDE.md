@@ -917,6 +917,9 @@ Při ověření opraveno mj.: Doctrina Christiana „pokládaná za“ první kn
   = 184 „tabulek a zlomků“; datace do doby Tudchaliji II. a „nejrozsáhlejší archiv 21. století“ jsou připsané ministerstvu a vedení
   výzkumu, Šamucha „ztotožňovaná“, výhrada k číslování králů jménem Tudchalija; texty zatím nevydané. Zpráva Archaeology Magazine
   z 2025 (56 tabulek, pečeti Tudchaliji IV., „před 3 200 lety“) se jako zdroj nepoužila – tvrdí něco jiného. Až vyjde odborná edice, doplnit.
+  18. 10. 2026 (podnět uživatele, „jenom bezpochybná fakta“): doplněno, že vykopávky vede Çiğdem Maner z Koç University (Istanbul), zdroj
+  Bible History Daily 16. 10. 2026. Rok „od 2021“ z článku se nepřevzal – sama Maner v tureckém tisku mluví o výzkumu od 2022 a před ní
+  kopal od 2005 jiný tým; nepřevzaty ani dohady článku (nereagující král) a podrobnosti o princezně a epidemii.
   U Egypta: r n km.t je doloženo jen v Příběhu Sinuhetově (ne „vlastní jméno jazyka“), Kleopatra není na
   Rosettské desce (je na obelisku z Philae), ústav 1958 vedl nejdřív Lexa a od 1960 Žába, arabské dobytí 639–642.
   U Mezopotámie: „život“ je til (ne ti), číslice se vtlačovaly, pečeť patří Hašhamerovi (ne Ur-Nammuovi), Rawlinson
