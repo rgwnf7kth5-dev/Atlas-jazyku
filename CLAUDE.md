@@ -920,6 +920,9 @@ Při ověření opraveno mj.: Doctrina Christiana „pokládaná za“ první kn
   18. 10. 2026 (podnět uživatele, „jenom bezpochybná fakta“): doplněno, že vykopávky vede Çiğdem Maner z Koç University (Istanbul), zdroj
   Bible History Daily 16. 10. 2026. Rok „od 2021“ z článku se nepřevzal – sama Maner v tureckém tisku mluví o výzkumu od 2022 a před ní
   kopal od 2005 jiný tým; nepřevzaty ani dohady článku (nereagující král) a podrobnosti o princezně a epidemii.
+  Hlavní zdroj je od 18. 10. 2026 **tisková zpráva ministerstva** (basin.ktb.gov.tr/TR-475961, 8. 10. 2026): potvrzuje 131 + 53 = 184,
+  Tudchaliju II., chetitštinu a churrijštinu, ptakopravce i tým Çiğdem Maner; uvádí výzkum „od 2021“ (Maner v tisku „od 2022“) – rok
+  proto na stránce není. Zmiňuje i místo Ziulila (nelokalizované), kde princezna onemocněla.
   U Egypta: r n km.t je doloženo jen v Příběhu Sinuhetově (ne „vlastní jméno jazyka“), Kleopatra není na
   Rosettské desce (je na obelisku z Philae), ústav 1958 vedl nejdřív Lexa a od 1960 Žába, arabské dobytí 639–642.
   U Mezopotámie: „život“ je til (ne ti), číslice se vtlačovaly, pečeť patří Hašhamerovi (ne Ur-Nammuovi), Rawlinson
