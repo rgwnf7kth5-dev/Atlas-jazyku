@@ -1,7 +1,9 @@
 // Opravy státních hranic podkladové mapy (data/countries-110m.json z world-atlas / Natural Earth).
-// Atlas kreslí hranice podle mezinárodního práva a postoje OSN, ne podle stavu, který vznikl silou.
-// 17. 10. 2026 (uživatel): Natural Earth vede Krym a Sevastopol jako součást Ruska. Anexe z roku 2014 je
+// Území obsazená silou se kreslí jako součást státu, kterému patří; o každém sporném území rozhodl uživatel.
+// 17. 10. 2026: Natural Earth vede Krym a Sevastopol jako součást Ruska. Anexe z roku 2014 je
 // protiprávní (rezoluce Valného shromáždění OSN 68/262 o územní celistvosti Ukrajiny), proto patří k Ukrajině.
+// 18. 10. 2026: Severní Kypr je území Kyperské republiky okupované Tureckem (rezoluce RB OSN 541/1983),
+// Natural Earth ho kreslí jako samostatný stát. Golany zůstávají u Izraele a Somaliland samostatně (rozhodnutí uživatele).
 import fs from "node:fs";
 import path from "node:path";
 import vm from "node:vm";
@@ -26,5 +28,11 @@ export function opravHranice(svet){
   /* sloučit s Ukrajinou: společná hranice na Perekopské šíji zmizí (nekreslí se jako státní hranice) */
   const spoj = T.mergeArcs(t, [ua, {type: "Polygon", arcs: krym[0]}]);
   ua.type = spoj.type; ua.arcs = spoj.arcs;
+  /* Severní Kypr ke Kypru: hranice podél nárazníkového pásma zmizí, „N. Cyprus“ přestane být státem na mapě */
+  const sk = g.find(x => x.properties.name === "N. Cyprus"), cy = g.find(x => x.properties.name === "Cyprus");
+  if (!sk || !cy) throw new Error("oprava hranic: v mapě chybí Severní Kypr nebo Kypr – zkontrolovat data mapy");
+  const ostrov = T.mergeArcs(t, [cy, sk]);
+  cy.type = ostrov.type; cy.arcs = ostrov.arcs;
+  g.splice(g.indexOf(sk), 1);
   return t;
 }

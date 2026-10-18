@@ -10,11 +10,11 @@ const json = p => JSON.parse(fs.readFileSync(path.join(KOREN, p), "utf8"));
 /* další jazyky webu (ne cs, en) podle JAZYKY_WEBU v build.mjs – jeden zdroj pravdy */
 const DALSI = JSON.parse(fs.readFileSync(path.join(KOREN, "scripts/build.mjs"), "utf8").match(/const JAZYKY_WEBU = (\[[^\]]*\])/)[1]).filter(l => l !== "cs" && l !== "en");
 const chyby = [], varovani = [];
-/* hranice podle mezinárodního práva: Krym musí jít přeřadit k Ukrajině (scripts/hranice.mjs), jinak build spadne */
-try { opravHranice(fs.readFileSync(path.join(KOREN, "data/countries-110m.json"), "utf8")); } catch (e) { chyby.push("data/countries-110m.json: " + e.message); }
+/* hranice: Krym k Ukrajině, Severní Kypr ke Kypru (scripts/hranice.mjs); když oprava selže, build spadne */
+let svet = json("data/countries-110m.json");
+try { svet = opravHranice(svet); } catch (e) { chyby.push("data/countries-110m.json: " + e.message); }
 
 const jazyky = json("data/languages.json");
-const svet = json("data/countries-110m.json");
 const nazvy = json("data/country-names.json");
 const glottolog = json("data/glottolog.json");
 const uiCs = json("src/ui/cs.json"), uiEn = json("src/ui/en.json");

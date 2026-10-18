@@ -58,7 +58,7 @@ v build.mjs, `DOMENY.it` a `korenVerze` v app.js). V záhlaví je místo odkazu 
   112A non, 116A jen intonace, 129A mano/braccio). Hlas záložní výslovnosti `it-IT`.
 - **Nezávislá kontrola překladu** (2. 10. 2026) našla 44 připomínek, opraveny: niger-congo (ne niger-kordofaniana – to je širší skupina), „e altri {n}“ (země, nářečí), vzájemná srozumitelnost (srbština aj., wu), Bulharsko „annuire = no“, Slovensko 1993 jako stát, „lingue giudaiche“ (ne ebraiche), „indoaria“, „brittonico“, „cananeo“, vynechané pasáže návodu vráceny, jednotný přepis /ʒ/ jako „sg“ (bon-SGIUR, SGIV-io, bon-SGIU) a /ʃ/ jako „sc“, bez „ă“ a koncového „cc“; typologie: toni di contorno, marcatura marginale, „Nessuno“ u rodů.
 - **Názvy:** `data/nazvy-it.json` vyrábí `node scripts/nazvy.mjs it` (CLDR 48.2 a i18n-iso-countries přes jsDelivr): 537 jmen
-  teček (`PD.nazvy.it`, index → jméno; bez jména anglicky z Glottologu), státy, státy na mapě (Kosovo, Severní Kypr, Somaliland
+  teček (`PD.nazvy.it`, index → jméno; bez jména anglicky z Glottologu), státy, státy na mapě (Kosovo, Somaliland
   ručně), písma. Rodiny `data/glottolog-families.it.json` (~40 největších), větve `data/glottolog-branches.it.json` (~170
   nejčastějších na cestách jazyků atlasu; `prekladVetve()` v app.js, `PD.vetveJ`). Validace hlídá, že rodiny a větve v Glottologu jsou.
 - **Druhá etapa (2. 10. 2026, uživatel: „přelož všechno“):** přeloženo i 31 stránek Jazyků starověku a Příběhů (`it` v `data/starovek.json`,
@@ -197,11 +197,13 @@ jako italština a němčina, přepínač **CS · EN · IT · DE · FR**. Název 
   podkladová mapa `data/countries-110m.json` (world-atlas / Natural Earth) vede Krym a Sevastopol jako Rusko. `scripts/hranice.mjs`
   (`opravHranice`) je při buildu přesune k Ukrajině a spojí s ní (hranice na Perekopské šíji se nekreslí); rezoluce VS OSN 68/262.
   Validace spadne, když oprava v nových datech mapy nenajde Krym. **Datový soubor mapy needitovat ručně, opravy patří do `hranice.mjs`.**
-  Další sporná místa podkladu (stav 17. 10. 2026, zatím neměněno, čeká na rozhodnutí uživatele): Golany jsou v 110m mapě součástí Izraele,
-  Severní Kypr a Somaliland jsou samostatné útvary, Kosovo samostatně (ČR ho uznává), Západní Sahara samostatně.
+  **Rozhodnutí uživatele 18. 10. 2026:** „Golany jsou součástí Izraele, Severní Kypr je okupovaný Tureckem a Somaliland je samostatná země.“
+  Proto `opravHranice` připojí i **Severní Kypr ke Kypru** (útvar „N. Cyprus“ z mapy zmizí, ostrov je jeden polygon bez hranice podél
+  nárazníkového pásma; „N. Cyprus“ zmizel i z `country-names.json`, `nazvy-*.json`, `RUCNE` v nazvy.mjs a ze států turečtiny).
+  **Golany zůstávají u Izraele a Somaliland samostatně**, jak je má podklad – neměnit. Kosovo a Západní Sahara také beze změny.
 - **Klik na zemi** stát hned podbarví, rozsvítí jeho jazyky (příznak 5) a ukáže počet všech jazyků státu z rejstříku
   (Glottolog `Countries`; převod názvu státu z mapy na kód je `mapaStatu` v `podrobnosti.json`); zavřením okna vše zhasne.
-  Kosovo, Severní Kypr a Somaliland kód nemají – ukáže se jen seznam jazyků z atlasu.
+  Kosovo a Somaliland kód nemají – ukáže se jen seznam jazyků z atlasu.
 - Náhled pro sdílení odkazu (og:image) je `static/nahled-cs.jpg` / `nahled-en.jpg`, ikonka `static/favicon.svg`
   (vkládá se do stránky) a `apple-touch-icon.png`. Build kopíruje `static/` do `dist/`. Obrázky vyrábí
   `scripts/nahledy.mjs` (potřebuje Playwright). Po přestavbě na medailony (27. 9. 2026) je uživatel **obnovovat nechce** („1 dělat nebudeme vůbec“) – nenavrhovat. V `og:image` je soubor s otiskem obsahu

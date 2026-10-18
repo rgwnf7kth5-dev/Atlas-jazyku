@@ -33,9 +33,9 @@ const json = p => JSON.parse(fs.readFileSync(path.join(KOREN, p), "utf8"));
 
 /* státy na mapě, které nemají vlastní kód ISO 3166 (world-atlas je vede zvlášť) */
 const RUCNE = {
-  it: { "Kosovo": "Kosovo", "N. Cyprus": "Cipro del Nord", "Somaliland": "Somaliland" },
-  de: { "Kosovo": "Kosovo", "N. Cyprus": "Nordzypern", "Somaliland": "Somaliland" },
-  fr: { "Kosovo": "Kosovo", "N. Cyprus": "Chypre du Nord", "Somaliland": "Somaliland" }
+  it: { "Kosovo": "Kosovo", "Somaliland": "Somaliland" },
+  de: { "Kosovo": "Kosovo", "Somaliland": "Somaliland" },
+  fr: { "Kosovo": "Kosovo", "Somaliland": "Somaliland" }
 };
 
 // --- glottocode → ISO 639-3 (Glottolog) a ISO 639-1 → 639-3
