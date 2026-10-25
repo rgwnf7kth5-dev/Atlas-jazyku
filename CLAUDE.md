@@ -878,6 +878,23 @@ Barvy `--put-gal, aqu, frk, oil, frp, bre, kre, frx`. Při ověření opraveno: 
 Francouzů mluvila francouzsky už v 19. století (ve 20. se stala mateřským jazykem téměř všech), Kongo, Rwanda a Burundi byly belgické,
 h aspiré je dnes němé, Grégoire „téměř neschopen“, francien (ne „franština“ – to je franský jazyk), Chlodvík sídlem Paříž až kolem 508,
 Saint-Domingue od 1697, šipky nesmí přes Bretaň, Galicii, Poloostrov Gaspé, Janovský záliv ani Lví záliv.
+**Putování němčiny a španělštiny** (25. 10. 2026, uživatel: „už dlouho jsi nic nezkoumal a nedoplnil nic nového“; němčina byla jediný
+jazyk webu bez vlastního putování). Texty rovnou cs/en/it/de/fr, napsali je pomocní agenti s ověřením zdrojů, pak nezávislá kontrola
+faktů a opravy; šipky ověřené proti pevnině Natural Earth 50m a 10m (`geo/chk.py` ve scratchpadu, s přechodem přes 180. poledník).
+Němčina (`#putovani-nemcina` / `#journey-german` / `#viaggio-tedesco` / `#reise-deutsch` / `#voyage-allemand`, 8 etap: pragermánština
+a jastorfská kultura, Germáni a Řím, stěhování národů a druhý posun hlásek, stará horní němčina, střední horní němčina a východní
+osídlení s Hanzou, knihtisk/Luther/spisovná norma, Volha a zámoří, válka/vysídlení/dnešek s `predel`). Při kontrole opraveno: Němci
+z Rumunska nebyli vysídleni (odvlečeni 1945 na nucené práce do SSSR), Duden 1880 jednotný pravopis nepřinesl (až konference 1901,
+závazné 1902), Jižní Tyrolsko vysvětleno (bavorské osídlení, Itálii 1919), na začátku slova se posunulo jen p a t, Germanicus 14–16,
+limes od konce 1. stol., Německá jihozápadní Afrika → Namibie 1990, genocida Židů a Romů, vysídlení s násilím v Jugoslávii.
+Španělština (`#putovani-spanelstina` / `#journey-spanish` / `#viaggio-spagnolo` / `#reise-spanisch` / `#voyage-espagnol`, 9 etap:
+předřímská Hispánie, latina a Vizigóti, al-Andalus, kastilský klín, rok 1492, do Ameriky, **přes Tichý oceán** (manilské galeony
+1565–1815, Filipíny, chavacano – samostatná etapa, protože z pohledu na Atlantik Filipíny nejsou vidět; pohled [176, 13]), akademie
+a nezávislé státy, dnes podle Instituto Cervantes 2025 s výhradou Ethnologue). Opraveno: glosy nejstarší románské zápisy jen na
+Pyrenejském poloostrově, edikt 1492 nařizoval odchod (křest jen jako možnost zůstat), doplněn osud muslimů a morisků, Izmir až později,
+seseo přesně, „jen část obyvatel“ při nezávislosti, lusitánština neutrální šedou (`ztr`). Nové barvy `--put-ahd, de, dex, zan`
+a `--put-ibe, bsk, ibr, cas, esx, ind, lad` (ve španělštině je baskičtina `bsk`, Vizigóti `gm`, judeošpanělština `lad`, aby se
+v jedné etapě nepotkaly stejné barvy). Šipka galeon přechází 180. poledník – kreslí se správně (jako u maorštiny).
 **Vstup do putování** (29. 9. 2026, uživatel vybral z návrhů jen „skupinu v Příbězích“): v okně Příběhy jazyků je za skupinou
 Slova na cestách skupina **Putování jazyků** (`vlozPutovani` v `otevriSekci`) s dlaždicí pro každé putování – akvarel jazyka
 (`/malby/<atlas>.jpg`, v artefaktu `malbaObrazek`, bez oživení), název a `podtitul` (povinný, validace). Tlačítko na kartě jazyka
