@@ -753,7 +753,7 @@ function textyAtlasu(){
   };
   (STAROVEK_DATA.civilizace || []).forEach(function(c){
     const x = c[T.lang] || c.en; if (!x) return;
-    sber([x.perex, x.oddily], x.nazev, c.sekce === "pribehy" ? T.medPribehy : T.medStarovek || "Jazyky starověku");
+    sber([x.perex, x.oddily.filter(function(o){ return !o.vynechat; })], x.nazev, c.sekce === "pribehy" ? T.medPribehy : T.medStarovek || "Jazyky starověku");
   });
   PUTOVANI.forEach(function(p){
     const nz = p.nazev && (p.nazev[T.lang] || p.nazev.en);
@@ -3796,7 +3796,11 @@ function otevriSekci(sekce){
   const vlozPutovani = function(){
     if (putovaniVlozeno || sekce !== "pribehy" || !PUTOVANI.length) return; putovaniVlozeno = true;
     telo.appendChild(prvek("h3", "pribehy-skupina", (U.skupiny || {}).putovani || "Putování"));
-    PUTOVANI.forEach(function(pj){
+    /* napřed putování jazyka čtenáře, pak ostatní podle abecedy – v anglické verzi nemá být první čeština */
+    const poradi = PUTOVANI.slice().sort(function(a, b){
+      return (b.atlas === T.lang) - (a.atlas === T.lang) || a.nazev[T.lang].localeCompare(b.nazev[T.lang], T.lang);
+    });
+    poradi.forEach(function(pj){
       const b = prvek("button", "starovek-tl"); b.type = "button";
       const civ = pj.obrazek && STAROVEK_DATA.civilizace.find(function(c){ return c.id === pj.obrazek; });
       if (civ) { b.appendChild(malbaCivilizace(civ)); const t = prvek("span"); t.appendChild(prvek("b", null, pj.nazev[T.lang])); t.appendChild(prvek("small", null, pj.podtitul[T.lang])); b.appendChild(t);

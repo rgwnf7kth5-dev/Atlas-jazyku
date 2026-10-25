@@ -71,6 +71,7 @@ var STAROVEK = (function(){
       '" loading="lazy" decoding="async" alt="' + esc(f[lang]) + '"><figcaption>' + text(f[lang]) + " " + kredit(f, o.U) + "</figcaption></figure>";
   }
   function oddil(c, b, lang, o){
+    if (b.vynechat) return "";                     // oddíl jen pro české čtenáře (např. Česká egyptologie) – v ostatních jazycích se nekreslí
     const U = o.U, h = b.h ? "<h2>" + esc(b.h) + "</h2>" : "";
     switch (b.typ) {
       case "text": return '<section class="civ-text">' + h + b.p.map(function(p){ return "<p>" + text(p) + "</p>"; }).join("") + "</section>";
