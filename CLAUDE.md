@@ -151,7 +151,7 @@ a hlaholice, Voynichův rukopis v Praze, Stříbrná bible v Praze, Bójové a j
   „ani tohle není v jiných jazycích potřeba“). V jiných jazycích není v nabídce, hledání, rozcestníku „Další stránky“, textech pro AI
   (`proCtenare` v app.js, `civilizace()` ji nenajde ani z odkazu) a statická stránka se nevyrábí (`proJazyk` ve stranky.mjs; hreflang
   české stránky míří na rozcestník Příběhů). Návod v en/it/de/fr ji nezmiňuje (příklad hledání „tea“ místo „robot“). Cesty slov
-  robot a dollar zůstávají dostupné odkazem `#cesta-robot`. Jak vznikla spisovná čeština zatím zůstává ve všech jazycích.
+  robot a dollar zůstávají dostupné odkazem `#cesta-robot`. Totéž od téhož dne i **Jak vznikla spisovná čeština** (uživatel: „ano, nech jenom v CZ“); návod v en/it/de/fr ji nevyjmenovává.
 
 ## Struktura a pravidla
 

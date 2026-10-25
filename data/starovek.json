@@ -70077,6 +70077,9 @@
   },
   {
    "id": "spisovna-cestina",
+   "jazyky": [
+    "cs"
+   ],
    "sekce": "pribehy",
    "skupina": "promeny",
    "adresa": {
