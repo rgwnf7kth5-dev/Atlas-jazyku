@@ -128,6 +128,26 @@ jako italština a němčina, přepínač **CS · EN · IT · DE · FR**. Název 
 - Při kontrole opraveno mj.: bulharské kývání hlavou, « registre de parole » (ne „registre de langue“), shoda rodu větví, chybně
   doplněné anglické názvy zákonů u Velšanů a Maorů, « Article indéfini » (WALS), « vingt moins trois » u etruských číslovek.
 
+## Cizojazyčné verze bez češství (25. 10. 2026)
+
+Uživatel: „přezkoumej, zda by v EN verzi neměla být čeština tak upřednostňována třeba v příbězích“. Pravidlo: **v en/it/de/fr nemá být
+obsah, který tam je jen proto, že čtenář je Čech**; čeština zůstává tam, kde je historicky ústřední (Hrozný a chetitština, Velká Morava
+a hlaholice, Voynichův rukopis v Praze, Stříbrná bible v Praze, Bójové a jméno Bohemia, Slova z češtiny, Jak vznikla spisovná čeština).
+- **Putování v nabídce Příběhů**: napřed putování jazyka čtenáře (cs čeština, en angličtina, it italština, de němčina, fr francouzština),
+  ostatní podle abecedy v jazyce stránky (`poradi` ve `vlozPutovani`). Návod (oddíl Putování) vyjmenovává putování ve stejném duchu
+  a příklad odkazu je v jazyce čtenáře (#journey-english, #viaggio-italiano, #reise-deutsch, #voyage-francais).
+- **Oddíl jen pro české čtenáře** dostane v en/it/de/fr `"vynechat": true` (šablona `starovek.js` ho nekreslí, `textyAtlasu` pro AI
+  ho přeskakuje; typy oddílů zůstávají shodné, takže validace platí dál): Česká egyptologie + galerie (Egypt), Čeští badatelé
+  (Mezopotámie), Hebrejské písmo v Praze (Hebrejci), Čeština: od thé k čaji a tabulka Cesty dalších slov do češtiny (Čaj).
+- Upraveno v en/it/de/fr: Egypt bez Abúsíru v perexu a na ose a bez Českého egyptologického ústavu ve zdrojích; Gilgameš – překlad
+  v jazyce čtenáře (George: Allen Lane 1999 / Penguin Classics 2000; Pettinato, Rusconi 1992; Maul, C. H. Beck 2005; Bottéro, Gallimard
+  1992) místo Matouše; Persie bez Klímových českých překladů; Japonsko – katakanou cizí místní jména (London, Paris, Roma, Berlin, Wien)
+  místo Prahy, bez věty o české transkripci; Řím – latina na středověkých univerzitách (Bologna, Paříž, Praha 1348, Krakov 1364) a rané
+  latinské výpůjčky do germánských jazyků (street, wall, wine, Fenster, Mauer, Ziegel; school opatrně) místo českých; Germáni – Grimmův
+  zákon srovnáván s latinou, řečtinou a sanskrtem (ne s češtinou), gótské kunnan = „znát“, hlaif = angl. loaf / něm. Laib; Čaj – příklady
+  pojmů (tea z niz. thee, Zucker z ital. zucchero; kalk gratte-ciel / Wolkenkratzer / grattacielo podle skyscraper), bez řádku faktů
+  o češtině; Keltové bez řádku „Stopy v Česku“. Vše prošlo nezávislou kontrolou faktů. Česká verze se nemění.
+
 ## Struktura a pravidla
 
 - `data/*.json` je jediný zdroj pravdy. `dist/` se generuje, needituj ho ručně.
