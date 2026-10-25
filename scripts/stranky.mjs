@@ -72,6 +72,7 @@ export function vyrobStranky({ KOREN, WEB, NAHLED, UI, JAZYKY_WEBU, jmenoTecky, 
   const prehled = { cs: "/jazyky/", en: "/en/languages/", it: "/it/lingue/", de: "/de/sprachen/", fr: "/fr/langues/" }, oDatech = { cs: "/o-datech/", en: "/en/about-data/", it: "/it/sui-dati/", de: "/de/ueber-die-daten/", fr: "/fr/a-propos-des-donnees/" },
     kalendarA = { cs: "/kalendar-jazyku/", en: "/en/language-days/", it: "/it/giornate-delle-lingue/", de: "/de/sprachentage/", fr: "/fr/journees-des-langues/" }, navodA = { cs: "/navod/", en: "/en/guide/", it: "/it/guida/", de: "/de/anleitung/", fr: "/fr/guide/" },
     vitalitaA = { cs: "/vitalita/", en: "/en/vitality/", it: "/it/vitalita/", de: "/de/vitalitaet/", fr: "/fr/vitalite/" }, domov = { cs: "/", en: "/en/", it: "/it/", de: "/de/", fr: "/fr/" };
+  const proJazyk = (c, l) => !c.jazyky || c.jazyky.includes(l);   // stránka s polem jazyky jen v těch jazycích
   const vse = m => Object.fromEntries(JAZYKY_WEBU.map(l => [l, typeof m === "function" ? m(l) : m[l]]));   // adresy stránky ve všech jazycích
 
   /* příbuzní v atlasu: nejhlubší společný předek ve stromu Glottologu (jako oblouky na glóbu) */
@@ -505,12 +506,13 @@ ${html}
 
     /* jazyky starověku: stránky o civilizacích, stejná šablona (src/starovek.js) jako okno v aplikaci */
     for (const c of starovek.civilizace) {
-      const adresa = civAdresa(c, lang), alt = vse(l => civAdresa(c, l)), L = c[lang], Us = T.starovek, Uk = c.sekce === "pribehy" ? T.pribehy : T.starovek;
+      if (!proJazyk(c, lang)) continue;         // stránka jen pro české čtenáře (pole jazyky) – jinde se nevyrábí
+      const adresa = civAdresa(c, lang), alt = vse(l => proJazyk(c, l) ? civAdresa(c, l) : (c.sekce === "pribehy" ? pribehyA : starovekA)[l]), L = c[lang], Us = T.starovek, Uk = c.sekce === "pribehy" ? T.pribehy : T.starovek;
       const tecka = k => { const i = bodPodleKodu.get(k); if (i === undefined) return null;
         const n = jmenoTecky(i, lang); return { nazev: n.charAt(0).toUpperCase() + n.slice(1), href: domov[lang] + "#" + k }; };
       const clanek = STAROVEK.html(c, lang, { U: Us, foto: k => `/starovek/${c.id}/${c.fotky[k].soubor}`, fotoMala: k => `/starovek/${c.id}/${k}-720.jpg`,
         malba: `<img src="/starovek/${c.id}/malba.jpg" alt="" width="1200" height="630">`, tecka,
-        vsechny: starovek.civilizace, dalsi: starovek.civilizace.filter(x => (x.sekce || "") === (c.sekce || "")), odkazCiv: x => civAdresa(x, lang),
+        vsechny: starovek.civilizace, dalsi: starovek.civilizace.filter(x => (x.sekce || "") === (c.sekce || "") && proJazyk(x, lang)), odkazCiv: x => civAdresa(x, lang),
         odkazMapa: id => domov[lang] + "#mapa-" + id, cesty: CESTY_SLOV, odkazCesta: id => domov[lang] + "#cesta-" + id });
       const pisma = STAROVEK.odkazPisma(c);
       zapis(adresa, stranka({ lang, alt, titulek: (c.prehled || c.sekce ? L.nazev : Us.titulek.replace("{n}", L.nazev)) + " · " + T.nazev, popis: L.perex,
@@ -525,7 +527,7 @@ ${clanek}
     }
     /* rozcestníky Jazyky starověku (/starovek/, /en/ancient/) a Příběhy jazyků (/pribehy/, /en/stories/) */
     for (const [sekce, Us, A] of [["", T.starovek, starovekA], ["pribehy", T.pribehy, pribehyA]]) {
-      const stranky = starovek.civilizace.filter(c => (c.sekce || "") === sekce);
+      const stranky = starovek.civilizace.filter(c => (c.sekce || "") === sekce && proJazyk(c, lang));
       if (!stranky.length) continue;
       const karty = stranky.map(c => `<li><a class="civ-rozcestnik" href="${civAdresa(c, lang)}"><img src="/starovek/${c.id}/malba.jpg" alt="" width="1200" height="630" loading="lazy"><b>${escHtml(c[lang].nazev)}</b><small>${escHtml(c[lang].podtitul)}</small><span>${escHtml(c[lang].perex)}</span></a></li>`).join("");
       zapis(A[lang], stranka({ lang, alt: A, titulek: Us.stitek + " · " + T.nazev, popis: Us.uvod,

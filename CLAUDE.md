@@ -147,6 +147,11 @@ a hlaholice, Voynichův rukopis v Praze, Stříbrná bible v Praze, Bójové a j
   zákon srovnáván s latinou, řečtinou a sanskrtem (ne s češtinou), gótské kunnan = „znát“, hlaif = angl. loaf / něm. Laib; Čaj – příklady
   pojmů (tea z niz. thee, Zucker z ital. zucchero; kalk gratte-ciel / Wolkenkratzer / grattacielo podle skyscraper), bez řádku faktů
   o češtině; Keltové bez řádku „Stopy v Česku“. Vše prošlo nezávislou kontrolou faktů. Česká verze se nemění.
+- **Celá stránka jen pro české čtenáře**: pole `"jazyky": ["cs"]` u stránky v `starovek.json` (uživatel 25. 10. 2026 u Slov z češtiny ve světě:
+  „ani tohle není v jiných jazycích potřeba“). V jiných jazycích není v nabídce, hledání, rozcestníku „Další stránky“, textech pro AI
+  (`proCtenare` v app.js, `civilizace()` ji nenajde ani z odkazu) a statická stránka se nevyrábí (`proJazyk` ve stranky.mjs; hreflang
+  české stránky míří na rozcestník Příběhů). Návod v en/it/de/fr ji nezmiňuje (příklad hledání „tea“ místo „robot“). Cesty slov
+  robot a dollar zůstávají dostupné odkazem `#cesta-robot`. Jak vznikla spisovná čeština zatím zůstává ve všech jazycích.
 
 ## Struktura a pravidla
 

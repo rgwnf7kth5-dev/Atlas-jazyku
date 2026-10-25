@@ -752,7 +752,7 @@ function textyAtlasu(){
     if (o && typeof o === "object") Object.keys(o).forEach(function(k){ if (!/^(typ|id|fotka|foto|klic|obrazek|font|barva|url)$/.test(k)) sber(o[k], nazev, sekce); });
   };
   (STAROVEK_DATA.civilizace || []).forEach(function(c){
-    const x = c[T.lang] || c.en; if (!x) return;
+    const x = c[T.lang] || c.en; if (!x || !proCtenare(c)) return;
     sber([x.perex, x.oddily.filter(function(o){ return !o.vynechat; })], x.nazev, c.sekce === "pribehy" ? T.medPribehy : T.medStarovek || "Jazyky starověku");
   });
   PUTOVANI.forEach(function(p){
@@ -3690,10 +3690,13 @@ navodOkno.addEventListener("click", function(e){ if (e.target === navodOkno) nav
    Vstupy: dlaždice „Jazyky starověku“ v seznamu, tlačítko na kartě tečky jazyka civilizace a odkaz #chetite / #hittites. */
 const civOkno = $("civ-okno");
 var civOtevrena = null;            // var: kodVyberu() se volá i dřív, než skript k deklaraci dojde
-function civilizace(id){ return STAROVEK_DATA.civilizace.find(function(c){ return c.id === id || c.adresa.cs === id || c.adresa.en === id || c.adresa[T.lang] === id; }) || null; }
+/* stránka s polem jazyky (např. Slova z češtiny ve světě: ["cs"]) patří jen čtenářům v těch jazycích – jinde není v nabídce,
+   hledání, rozcestníku ani v textech pro AI (uživatel 25. 10. 2026: „ani tohle není v jiných jazycích potřeba“) */
+function proCtenare(c){ return !c.jazyky || c.jazyky.indexOf(T.lang) >= 0; }
+function civilizace(id){ return STAROVEK_DATA.civilizace.find(function(c){ return proCtenare(c) && (c.id === id || c.adresa.cs === id || c.adresa.en === id || c.adresa[T.lang] === id); }) || null; }
 function civPodleTecky(i){ const k = REJSTRIK.g[i]; return k ? STAROVEK_DATA.civilizace.find(function(c){ return !c.sekce && (c.tecky || []).indexOf(k) >= 0; }) || null : null; }   // Příběhy tlačítko na kartě jazyka nedávají
 /* stránky jedné sekce: Jazyky starověku (bez pole sekce) nebo Příběhy jazyků (sekce „pribehy“) */
-function strankySekce(sekce){ return STAROVEK_DATA.civilizace.filter(function(c){ return (c.sekce || "starovek") === sekce; }); }
+function strankySekce(sekce){ return STAROVEK_DATA.civilizace.filter(function(c){ return (c.sekce || "starovek") === sekce && proCtenare(c); }); }
 function textySekce(sekce){ return sekce === "pribehy" ? T.pribehy : T.starovek; }
 /* odkaz z Příběhů na typologickou mapu (#mapa-138A): obarví glóbus podle vlastnosti WALS, nebo podle písma (#mapa-pismo) */
 function ukazMapu(id){
