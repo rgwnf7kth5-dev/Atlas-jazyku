@@ -8031,16 +8031,6 @@
     <xhtml:link rel="alternate" hreflang="he" href="https://thelanguageatlas.com/he/language/ojibwe/"/>
   </url>
   <url>
-    <loc>https://thelanguageatlas.com/he/language/odia/</loc>
-    <lastmod>2026-10-26</lastmod>
-    <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/jazyk/urijstina/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/language/odia/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://thelanguageatlas.com/it/lingua/odia/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://thelanguageatlas.com/de/sprache/odia/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://thelanguageatlas.com/fr/langue/odia/"/>
-    <xhtml:link rel="alternate" hreflang="he" href="https://thelanguageatlas.com/he/language/odia/"/>
-  </url>
-  <url>
     <loc>https://thelanguageatlas.com/he/language/ewe/</loc>
     <lastmod>2026-10-26</lastmod>
     <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/jazyk/evestina/"/>
@@ -8119,6 +8109,16 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://thelanguageatlas.com/de/sprache/oromo/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://thelanguageatlas.com/fr/langue/oromo/"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://thelanguageatlas.com/he/language/oromo/"/>
+  </url>
+  <url>
+    <loc>https://thelanguageatlas.com/he/language/odia/</loc>
+    <lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/jazyk/urijstina/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/language/odia/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://thelanguageatlas.com/it/lingua/odia/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://thelanguageatlas.com/de/sprache/odia/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://thelanguageatlas.com/fr/langue/odia/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://thelanguageatlas.com/he/language/odia/"/>
   </url>
   <url>
     <loc>https://thelanguageatlas.com/he/language/azerbaijani/</loc>
@@ -8619,16 +8619,6 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://thelanguageatlas.com/de/sprache/zapotekisch/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://thelanguageatlas.com/fr/langue/zapoteque/"/>
     <xhtml:link rel="alternate" hreflang="he" href="https://thelanguageatlas.com/he/language/zapotec/"/>
-  </url>
-  <url>
-    <loc>https://thelanguageatlas.com/he/language/khmer/</loc>
-    <lastmod>2026-10-26</lastmod>
-    <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/jazyk/khmerstina/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/language/khmer/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://thelanguageatlas.com/it/lingua/khmer/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://thelanguageatlas.com/de/sprache/khmer/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://thelanguageatlas.com/fr/langue/khmer/"/>
-    <xhtml:link rel="alternate" hreflang="he" href="https://thelanguageatlas.com/he/language/khmer/"/>
   </url>
   <url>
     <loc>https://thelanguageatlas.com/he/language/tagalog/</loc>
@@ -9401,6 +9391,16 @@
     <xhtml:link rel="alternate" hreflang="he" href="https://thelanguageatlas.com/he/language/french/"/>
   </url>
   <url>
+    <loc>https://thelanguageatlas.com/he/language/kannada/</loc>
+    <lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/jazyk/kannadstina/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/language/kannada/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://thelanguageatlas.com/it/lingua/kannada/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://thelanguageatlas.com/de/sprache/kannada/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://thelanguageatlas.com/fr/langue/kannada/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://thelanguageatlas.com/he/language/kannada/"/>
+  </url>
+  <url>
     <loc>https://thelanguageatlas.com/he/language/xhosa/</loc>
     <lastmod>2026-10-26</lastmod>
     <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/jazyk/xhostina/"/>
@@ -9471,14 +9471,14 @@
     <xhtml:link rel="alternate" hreflang="he" href="https://thelanguageatlas.com/he/language/kikongo/"/>
   </url>
   <url>
-    <loc>https://thelanguageatlas.com/he/language/kannada/</loc>
+    <loc>https://thelanguageatlas.com/he/language/khmer/</loc>
     <lastmod>2026-10-26</lastmod>
-    <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/jazyk/kannadstina/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/language/kannada/"/>
-    <xhtml:link rel="alternate" hreflang="it" href="https://thelanguageatlas.com/it/lingua/kannada/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://thelanguageatlas.com/de/sprache/kannada/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://thelanguageatlas.com/fr/langue/kannada/"/>
-    <xhtml:link rel="alternate" hreflang="he" href="https://thelanguageatlas.com/he/language/kannada/"/>
+    <xhtml:link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/jazyk/khmerstina/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/language/khmer/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://thelanguageatlas.com/it/lingua/khmer/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://thelanguageatlas.com/de/sprache/khmer/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://thelanguageatlas.com/fr/langue/khmer/"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://thelanguageatlas.com/he/language/khmer/"/>
   </url>
   <url>
     <loc>https://thelanguageatlas.com/he/language/kanuri/</loc>
