@@ -1,817 +1,817 @@
 {
- "domu": "The Language Atlas – back to the start",
- "denJazykuZavrit": "Close",
- "denJazykuDatum": "26 September · European Day of Languages",
- "denJazykuText": "Why today? 26 September is the European Day of Languages, declared by the Council of Europe in 2001. It highlights the linguistic diversity of Europe, home to some 225 indigenous languages, and promotes language learning. Instead of a single Language of the Day, the atlas therefore shows all {n} European languages it contains.",
- "denJazykuEU": "The 24 languages of the EU",
- "napoveda": "Help",
- "krokZatoc": "Rotate",
- "krokZatocJak": "– drag with the mouse or a finger",
- "krokPribliz": "Zoom",
- "krokPriblizJak": "– mouse wheel or two fingers",
- "krokKlikni": "Select",
- "krokKlikniJak": "– click a point of light to open the language card, or a country to see the languages spoken there",
- "krokKlikniJakDen": "– click a dot to open the language card, or a country to see the languages spoken there",
- "napovedaZavrit": "Close the tips",
+ "domu": "אטלס השפות – חזרה להתחלה",
+ "denJazykuZavrit": "סגירה",
+ "denJazykuDatum": "26 בספטמבר · היום האירופי לשפות",
+ "denJazykuText": "למה דווקא היום? 26 בספטמבר הוא היום האירופי לשפות, שעליו הכריזה מועצת אירופה בשנת 2001. הוא מבליט את המגוון הלשוני של אירופה, שבה כ-225 שפות ילידיות, ומעודד לימוד שפות. לכן, במקום שפת יום אחת, האטלס מציג את כל {n} השפות האירופיות שהוא כולל.",
+ "denJazykuEU": "24 השפות של האיחוד האירופי",
+ "napoveda": "עזרה",
+ "krokZatoc": "סיבוב",
+ "krokZatocJak": "– גררו בעכבר או באצבע",
+ "krokPribliz": "זום",
+ "krokPriblizJak": "– גלגלת העכבר או שתי אצבעות",
+ "krokKlikni": "בחירה",
+ "krokKlikniJak": "– לחצו על נקודת אור כדי לפתוח את כרטיס השפה, או על מדינה כדי לראות את השפות המדוברות בה",
+ "krokKlikniJakDen": "– לחצו על נקודה כדי לפתוח את כרטיס השפה, או על מדינה כדי לראות את השפות המדוברות בה",
+ "napovedaZavrit": "סגירת העצות",
  "lang": "he",
- "locale": "en-GB",
- "nazevJazyka": "English",
- "nazev": "The Language Atlas",
- "popis": "An interactive atlas of all 7,967 languages of the world after Glottolog: distribution, language families and trees, vitality, typology from WALS and sound inventories from PHOIBLE.",
- "jazykVolba": "Website language",
- "scena": "Globe",
- "platno": "Spinning globe; the selected language's area is highlighted",
- "prekvap": "Random language",
- "celySvet": "Whole world",
- "zoomSkupina": "Globe zoom",
- "oddalit": "Zoom out",
- "priblizit": "Zoom in",
- "vypadekNadpis": "The globe could not start.",
- "vypadekText": "The language list and the language cards still work. Please try reloading the page.",
- "zavritKartu": "Close language card",
- "poslechni": "Play pronunciation",
- "posloucha": "Playing…",
- "znovu": "Play again",
- "mluvcich": "Speakers",
- "rodina": "Family",
- "vis": "Note",
- "kdeMluvi": "Where it is spoken",
- "seznam": "Language list",
- "hledejPopisek": "Search languages",
- "dotazZeme": "Languages of {z}",
- "dotazPocet": "{n} on the globe according to Glottolog.",
- "dotazRodina": "Language family: {r}",
- "dotazVetev": "Branch: {r}",
- "dotazVRodine": "{r} family",
- "dotazSrovnani": "Comparison: {a} and {b}",
+ "locale": "he-IL",
+ "nazevJazyka": "עברית",
+ "nazev": "אטלס השפות",
+ "popis": "אטלס אינטראקטיבי של כל 7,967 השפות בעולם לפי Glottolog: תפוצה, משפחות שפות ועצי שפות, חיוניות, טיפולוגיה מ-WALS ומלאי צלילים מ-PHOIBLE.",
+ "jazykVolba": "שפת האתר",
+ "scena": "גלובוס",
+ "platno": "גלובוס מסתובב; אזור השפה הנבחרת מודגש",
+ "prekvap": "שפה אקראית",
+ "celySvet": "העולם כולו",
+ "zoomSkupina": "זום הגלובוס",
+ "oddalit": "התרחקות",
+ "priblizit": "התקרבות",
+ "vypadekNadpis": "לא ניתן היה להפעיל את הגלובוס.",
+ "vypadekText": "רשימת השפות וכרטיסי השפות ממשיכים לפעול. נסו לטעון את הדף מחדש.",
+ "zavritKartu": "סגירת כרטיס השפה",
+ "poslechni": "השמעת ההגייה",
+ "posloucha": "בהשמעה…",
+ "znovu": "השמעה חוזרת",
+ "mluvcich": "דוברים",
+ "rodina": "משפחה",
+ "vis": "הערה",
+ "kdeMluvi": "היכן מדברים בה",
+ "seznam": "רשימת השפות",
+ "hledejPopisek": "חיפוש שפות",
+ "dotazZeme": "השפות של {z}",
+ "dotazPocet": "{n} על הגלובוס לפי Glottolog.",
+ "dotazRodina": "משפחת שפות: {r}",
+ "dotazVetev": "ענף: {r}",
+ "dotazVRodine": "משפחת {r}",
+ "dotazSrovnani": "השוואה בין {a} לבין {b}",
  "dotaz": {
-  "aiStitek": "Ask the AI",
-  "aiNabidka": "An AI will answer this question from the atlas data and look up on the web what the atlas does not have.",
-  "aiZeptat": "Ask the AI",
-  "aiKrokCte": "Reading the question",
-  "aiKrokData": "Searching the atlas data",
-  "aiKrokOdpoved": "Writing the answer",
-  "aiCas": "{s} s · this may take a moment",
-  "aiPremyslim": "Thinking…",
-  "aiPozn": "Answer written by an AI (Claude) from the atlas data; it may be wrong.",
-  "aiVypnuto": "AI questions are not switched on yet.",
-  "aiLimit": "Too many questions at once, please try again shortly.",
-  "aiChyba": "Could not get an answer, please try again.",
-  "aiOdmitnuto": "The AI will not answer this question.",
-  "aiNic": "The AI found no answer in the atlas data.",
-  "euPopis": "24 languages, 27 member states. Gold stars mark them on the globe.",
-  "euStaty": "Languages of the EU member states",
-  "euStatyPopis": "A language counts once even if it is spoken in several states. The EU has 24 official languages.",
-  "aiKrokWeb": "Searching the web",
-  "aiZdrojeWeb": "Web sources",
-  "aiPoznWeb": "Answer written by an AI (Claude) from the atlas data and the web; it may be wrong.",
-  "stitek": "Understood",
-  "ukaz": "Show on the globe",
-  "porovnej": "Compare",
-  "otevri": "Open the language card",
-  "zemeBezKodu": "The register has no code for this country; only atlas languages are shown.",
-  "ugrofin": "Glottolog does not list Finno-Ugric as a separate branch: these languages belong to the Uralic family together with the Samoyedic languages.",
-  "srovnaniPopis": "Relatedness and nearest common ancestor, structure from WALS, speakers and script.",
-  "jazykPopis": "The card lists the countries where the language is spoken and shows its area on the globe.",
-  "zdroj": "Answers only from the atlas data (Glottolog, CLDR, WALS). Enter = go."
+  "aiStitek": "שאלו את הבינה המלאכותית",
+  "aiNabidka": "בינה מלאכותית תענה על השאלה הזאת על סמך נתוני האטלס ותחפש ברשת את מה שאין באטלס.",
+  "aiZeptat": "שאלו את הבינה המלאכותית",
+  "aiKrokCte": "קריאת השאלה",
+  "aiKrokData": "חיפוש בנתוני האטלס",
+  "aiKrokOdpoved": "כתיבת התשובה",
+  "aiCas": "{s} שנ׳ · זה עשוי להימשך רגע",
+  "aiPremyslim": "בתהליך חשיבה…",
+  "aiPozn": "התשובה נכתבה על ידי בינה מלאכותית (Claude) על סמך נתוני האטלס; ייתכנו בה טעויות.",
+  "aiVypnuto": "שאלות לבינה המלאכותית עדיין אינן מופעלות.",
+  "aiLimit": "יותר מדי שאלות בבת אחת, נסו שוב בעוד רגע.",
+  "aiChyba": "לא התקבלה תשובה, נסו שוב.",
+  "aiOdmitnuto": "הבינה המלאכותית לא תענה על השאלה הזאת.",
+  "aiNic": "הבינה המלאכותית לא מצאה תשובה בנתוני האטלס.",
+  "euPopis": "24 שפות, 27 מדינות חברות. כוכבים זהובים מסמנים אותן על הגלובוס.",
+  "euStaty": "שפות המדינות החברות באיחוד האירופי",
+  "euStatyPopis": "שפה נספרת פעם אחת גם אם מדברים בה בכמה מדינות. לאיחוד האירופי 24 שפות רשמיות.",
+  "aiKrokWeb": "חיפוש ברשת",
+  "aiZdrojeWeb": "מקורות מהרשת",
+  "aiPoznWeb": "התשובה נכתבה על ידי בינה מלאכותית (Claude) על סמך נתוני האטלס והרשת; ייתכנו בה טעויות.",
+  "stitek": "הובן כך",
+  "ukaz": "הצגה על הגלובוס",
+  "porovnej": "השוואה",
+  "otevri": "פתיחת כרטיס השפה",
+  "zemeBezKodu": "למדינה זו אין קוד במרשם; מוצגות רק שפות האטלס.",
+  "ugrofin": "Glottolog אינו מונה את השפות הפינו-אוגריות כענף נפרד: שפות אלה שייכות למשפחה האורלית יחד עם השפות הסמויאדיות.",
+  "srovnaniPopis": "קרבה לשונית והאב הקדמון המשותף הקרוב ביותר, מבנה לפי WALS, דוברים וכתב.",
+  "jazykPopis": "הכרטיס מפרט את המדינות שבהן מדברים בשפה ומציג את אזורה על הגלובוס.",
+  "zdroj": "תשובות רק מנתוני האטלס (Glottolog, CLDR, WALS). Enter = מעבר."
  },
- "hledejTip": "Try:",
+ "hledejTip": "נסו:",
  "hledejPriklady": [
-  "Which language is spoken in Bern?",
-  "Which language has the most dialects?",
-  "Which endangered languages are in Mexico?",
-  "What do Hungarian and Finnish have in common?",
-  "Which country has the most languages?",
-  "What script is Georgian written in?",
-  "Is Romanian a Slavic language?"
+  "איזו שפה מדברים בברן?",
+  "לאיזו שפה יש הכי הרבה ניבים?",
+  "אילו שפות בסכנת הכחדה יש במקסיקו?",
+  "מה משותף להונגרית ולפינית?",
+  "באיזו מדינה יש הכי הרבה שפות?",
+  "באיזה כתב כותבים גאורגית?",
+  "האם רומנית היא שפה סלאבית?"
  ],
- "hledejPlaceholder": "Search or ask a question…",
- "domaciJmeno": "in its own words: {x}",
- "vyslovnost": "say it: “{x}”",
- "areal": "The coloured patch is the rough area where the language is spoken, not a country border.",
- "aDalsich": "and {n} more",
+ "hledejPlaceholder": "חפשו או שאלו שאלה…",
+ "domaciJmeno": "בשפה עצמה: {x}",
+ "vyslovnost": "הגייה: \"{x}\"",
+ "areal": "הכתם הצבעוני הוא האזור המשוער שבו מדברים בשפה, לא גבול של מדינה.",
+ "aDalsich": "ועוד {n}",
  "miliardy": [
-  "billion",
-  "billion",
-  "billion",
-  "billion"
+  "מיליארד",
+  "מיליארד",
+  "מיליארד",
+  "מיליארד"
  ],
  "milionu": [
-  "million",
-  "million",
-  "million",
-  "million"
+  "מיליון",
+  "מיליון",
+  "מיליון",
+  "מיליון"
  ],
  "tisic": [
-  "thousand",
-  "thousand",
-  "thousand"
+  "אלף",
+  "אלף",
+  "אלף"
  ],
- "hrstka": "only a few speakers left",
- "nicNenalezeno": "No results. You can search for a language, a country or a dialect, e.g. “Brazil”, “Quechua” or “Scots”.",
- "nalezeno": "Found {a}, {b} with a greeting",
- "vychoziPocet": "{a} · {b} with a greeting",
- "zemeBezPozdravu": "The atlas has no language with a detailed card for this country yet. Individual languages can be opened by clicking the points of light.",
- "tecka": "name from the Glottolog world register",
- "teckaPozn": "A greeting, pronunciation and note are given for 164 selected languages; this one is not among them yet.",
- "zvukNeumi": "This device does not support speech synthesis. Approximate pronunciation: “{x}”.",
- "zvukRodily": "Read by your device's synthetic voice for this language.",
- "zvukZalozni": "Your device has no voice for this language, so the approximate pronunciation is read by an English voice. The actual pronunciation differs.",
- "zvukZadny": "Your device has no speech-synthesis voice. Approximate pronunciation: “{x}”.",
- "zvukChyba": "Playback failed. Approximate pronunciation: “{x}”.",
- "hlasZalozni": "en-GB",
- "zdroje": "Dots: Glottolog (CC BY 4.0) · Grammar: WALS (CC BY 4.0) · Sounds: PHOIBLE (CC BY-SA 3.0) · Map: Natural Earth",
+ "hrstka": "נותרו רק דוברים מעטים",
+ "nicNenalezeno": "אין תוצאות. אפשר לחפש שפה, מדינה או ניב, למשל \"ברזיל\", \"קצ'ואה\" או \"סקוטס\".",
+ "nalezeno": "נמצאו {a}, {b} עם ברכה",
+ "vychoziPocet": "{a} · {b} עם ברכה",
+ "zemeBezPozdravu": "לאטלס עדיין אין שפה עם כרטיס מפורט עבור מדינה זו. אפשר לפתוח שפות בודדות בלחיצה על נקודות האור.",
+ "tecka": "שם מתוך המרשם העולמי של Glottolog",
+ "teckaPozn": "ברכה, הגייה והערה מובאות עבור 164 שפות נבחרות; שפה זו עדיין אינה ביניהן.",
+ "zvukNeumi": "מכשיר זה אינו תומך בסינתזת דיבור. הגייה משוערת: \"{x}\".",
+ "zvukRodily": "מוקרא בקול הסינתטי של המכשיר שלכם לשפה זו.",
+ "zvukZalozni": "במכשיר שלכם אין קול לשפה זו, ולכן ההגייה המשוערת מוקראת בקול עברי. ההגייה בפועל שונה.",
+ "zvukZadny": "במכשיר שלכם אין קול לסינתזת דיבור. הגייה משוערת: \"{x}\".",
+ "zvukChyba": "ההשמעה נכשלה. הגייה משוערת: \"{x}\".",
+ "hlasZalozni": "he-IL",
+ "zdroje": "נקודות: Glottolog (CC BY 4.0) · דקדוק: WALS (CC BY 4.0) · צלילים: PHOIBLE (CC BY-SA 3.0) · מפה: Natural Earth",
  "rodiny": {
-  "ie": "Indo-European family",
-  "st": "Sino-Tibetan family",
-  "an": "Austronesian family",
-  "afro": "Afroasiatic family",
-  "nk": "Niger-Congo family",
-  "ost": "Other language families"
+  "ie": "משפחת השפות ההודו-אירופיות",
+  "st": "משפחת השפות הסינו-טיבטיות",
+  "an": "משפחת השפות האוסטרונזיות",
+  "afro": "משפחת השפות האפרו-אסיאתיות",
+  "nk": "משפחת שפות ניז'ר-קונגו",
+  "ost": "משפחות שפות אחרות"
  },
  "makro": {
-  "Africa": "Africa",
-  "Eurasia": "Eurasia",
-  "Papunesia": "New Guinea and the Pacific",
-  "North America": "North America",
-  "South America": "South America",
-  "Australia": "Australia"
+  "Africa": "אפריקה",
+  "Eurasia": "אירואסיה",
+  "Papunesia": "גינאה החדשה והאוקיינוס השקט",
+  "North America": "אמריקה הצפונית",
+  "South America": "אמריקה הדרומית",
+  "Australia": "אוסטרליה"
  },
- "otacet": "Spin",
- "otacetPopis": "Let the globe spin slowly by itself",
- "jmena": "Names",
- "jmenaPopis": "Show the names of all languages when zoomed in (the selected language and its relatives always have them)",
- "teckaNazev": "register name: {x}",
- "teckaMezinarodni": "name from the Glottolog world register",
- "ohrozeni": "Language vitality",
+ "otacet": "סיבוב",
+ "otacetPopis": "הגלובוס יסתובב לאט מעצמו",
+ "jmena": "שמות",
+ "jmenaPopis": "הצגת השמות של כל השפות בהתקרבות (לשפה הנבחרת ולקרובותיה יש שמות תמיד)",
+ "teckaNazev": "שם במרשם: {x}",
+ "teckaMezinarodni": "שם מתוך המרשם העולמי של Glottolog",
+ "ohrozeni": "חיוניות השפה",
  "aes": [
   [
-   "Safe",
-   "Spoken by all generations; parents pass it on to their children without interruption."
+   "בטוחה",
+   "מדברים בה כל הדורות; ההורים מעבירים אותה לילדיהם ללא הפסקה."
   ],
   [
-   "Vulnerable",
-   "Most children speak it, but it may be restricted to certain domains, such as the home."
+   "פגיעה",
+   "רוב הילדים מדברים בה, אך ייתכן שהשימוש בה מוגבל לתחומים מסוימים, כמו הבית."
   ],
   [
-   "Definitely endangered",
-   "Children no longer learn it at home as their mother tongue."
+   "בסכנה ודאית",
+   "ילדים כבר אינם לומדים אותה בבית כשפת אם."
   ],
   [
-   "Severely endangered",
-   "It is spoken by grandparents and older generations. Parents may understand it, but do not speak it to their children or among themselves."
+   "בסכנה חמורה",
+   "מדברים בה בני דור הסבים והדורות המבוגרים יותר. ייתכן שההורים מבינים אותה, אך הם אינם מדברים בה עם ילדיהם או ביניהם לבין עצמם."
   ],
   [
-   "Critically endangered",
-   "The youngest speakers are grandparents and older, and they speak it only partially and infrequently."
+   "בסכנה קריטית",
+   "הדוברים הצעירים ביותר הם בני דור הסבים ומעלה, והם מדברים בה באופן חלקי ולעתים רחוקות."
   ],
   [
-   "Extinct",
-   "There are no living speakers left."
+   "נכחדה",
+   "לא נותרו לה דוברים חיים."
   ],
   [
-   "Awakening",
-   "It lost its traditional native speakers, but people are learning it again and bringing it back to life. Glottolog classifies it as extinct."
+   "מתעוררת",
+   "היא איבדה את דובריה הילידיים המסורתיים, אך אנשים לומדים אותה מחדש ומחיים אותה. Glottolog מסווג אותה כנכחדת."
   ]
  ],
- "uzivatelu": "Used by",
- "uzivateluHodnota": "about {n} people",
- "uzivateluPozn": "Unicode CLDR estimate, including people who learned it",
- "nareci": "Dialects",
- "kdeMluviTecka": "Where it is spoken",
- "ukazka": "Sample text",
- "ukazkaPopis": "The beginning of Article 1 of the Universal Declaration of Human Rights in this language. In English: “All human beings are born free and equal in dignity and rights…”",
- "pismo": "Script",
- "pismoPozn": "According to Unicode CLDR. Where there are several scripts, the most common is listed first.",
- "pismoVrstva": "Script",
- "pismoRadekPopis": "Dots coloured by each language's main script (Unicode CLDR)",
- "pismoVrstvaPopis": "The colour of a dot shows the language's main script according to Unicode CLDR; where a language uses several, the most common one counts. For languages about which CLDR keeps detailed data (mostly standardised written languages) the script is attested. For the rest it is a CLDR estimate (likely subtags): the script in which the language is written, if it is written at all – many of these languages are written only to a limited extent. Brahmic scripts descend from the Indian Brahmi script (Devanagari, Bengali, Tamil, Thai, Burmese, Tibetan and others); kana and bopomofo developed from Chinese characters. Other scripts include Ethiopic, Hebrew, Greek, Georgian, Armenian and Korean, and Canadian Aboriginal syllabics. Sign languages are not counted.",
+ "uzivatelu": "בשימוש בקרב",
+ "uzivateluHodnota": "כ-{n} בני אדם",
+ "uzivateluPozn": "הערכה של Unicode CLDR, כולל אנשים שלמדו אותה",
+ "nareci": "ניבים",
+ "kdeMluviTecka": "היכן מדברים בה",
+ "ukazka": "טקסט לדוגמה",
+ "ukazkaPopis": "תחילת סעיף 1 של ההכרזה לכל באי עולם בדבר זכויות האדם בשפה זו. בעברית: \"כל בני אדם נולדו בני חורין ושווים בערכם ובזכויותיהם…\"",
+ "pismo": "כתב",
+ "pismoPozn": "לפי Unicode CLDR. כשיש כמה כתבים, הנפוץ ביותר מופיע ראשון.",
+ "pismoVrstva": "כתב",
+ "pismoRadekPopis": "נקודות בצבע הכתב העיקרי של כל שפה (Unicode CLDR)",
+ "pismoVrstvaPopis": "צבע הנקודה מציין את הכתב העיקרי של השפה לפי Unicode CLDR; כששפה משתמשת בכמה כתבים, נלקח בחשבון הנפוץ ביותר. בשפות ש-CLDR מחזיק עליהן נתונים מפורטים (בעיקר שפות כתובות מתוקננות) הכתב מתועד. בשאר השפות זוהי הערכה של CLDR (likely subtags): הכתב שבו השפה נכתבת, אם היא נכתבת בכלל – רבות מהשפות האלה נכתבות רק במידה מוגבלת. הכתבים הברהמיים מוצאם בכתב הברהמי ההודי (דוונאגרי, בנגלי, טמילי, תאי, בורמזי, טיבטי ועוד); קאנה ובופומופו התפתחו מהסימנים הסיניים. בין הכתבים האחרים נמנים הכתב האתיופי, העברי, היווני, הגאורגי, הארמני והקוריאני, וכן הכתב ההברתי של הילידים בקנדה. שפות סימנים אינן נכללות בספירה.",
  "pismoSkupiny": [
-  "Latin",
-  "Cyrillic",
-  "Arabic",
-  "Brahmic scripts (India, Southeast Asia, Tibet)",
-  "Chinese characters, kana, bopomofo",
-  "Other scripts"
+  "לטיני",
+  "קירילי",
+  "ערבי",
+  "כתבים ברהמיים (הודו, דרום-מזרח אסיה, טיבט)",
+  "סימנים סיניים, קאנה, בופומופו",
+  "כתבים אחרים"
  ],
- "pismoBezUdaje": "no data in CLDR, sign languages",
+ "pismoBezUdaje": "אין נתונים ב-CLDR, שפות סימנים",
  "pismoZdroj": "Unicode CLDR 48 · languageData, likelySubtags",
- "pismoOdhad": "{p} (estimate)",
- "pismoOdhadPozn": "Unicode CLDR estimate (likely subtags): the script in which the language is written, if it is written at all. CLDR keeps no detailed data on the language itself.",
- "pismoOMape": "About the script map",
- "uredni": "Official language",
+ "pismoOdhad": "{p} (הערכה)",
+ "pismoOdhadPozn": "הערכה של Unicode CLDR (likely subtags): הכתב שבו השפה נכתבת, אם היא נכתבת בכלל. ל-CLDR אין נתונים מפורטים על השפה עצמה.",
+ "pismoOMape": "על מפת הכתבים",
+ "uredni": "שפה רשמית",
  "uredniStav": [
   "",
   "",
-  "de facto",
-  "regional"
+  "דה פקטו",
+  "אזורית"
  ],
- "uredniPozn": "According to Unicode CLDR. “De facto” means the language is used officially without explicit legal status; “regional” means it is official only in part of the country (a province, autonomous region, etc.).",
- "uredniZdroj": "According to Unicode CLDR.",
- "stavba": "Structure",
- "hlasky": "Sounds",
- "hlaskyHodnota": "{c} {cs} and {v} {vs}",
- "hlaskyTony": ", plus {t} {ts}",
- "hlaskySrovnani": "English, for comparison: {c} and {v}.",
+ "uredniPozn": "לפי Unicode CLDR. \"דה פקטו\" פירושו שהשפה משמשת באופן רשמי בלי מעמד חוקי מפורש; \"אזורית\" פירושו שהיא רשמית רק בחלק מהמדינה (מחוז, אזור אוטונומי וכדומה).",
+ "uredniZdroj": "לפי Unicode CLDR.",
+ "stavba": "מבנה",
+ "hlasky": "צלילים",
+ "hlaskyHodnota": "{c} {cs} ו-{v} {vs}",
+ "hlaskyTony": ", וכן {t} {ts}",
+ "hlaskySrovnani": "לשם השוואה, בעברית: {c} ו-{v}.",
  "souhlaska": [
-  "consonant",
-  "consonants",
-  "consonants"
+  "עיצור",
+  "עיצורים",
+  "עיצורים"
  ],
  "samohlaska": [
-  "vowel",
-  "vowels",
-  "vowels"
+  "תנועה",
+  "תנועות",
+  "תנועות"
  ],
  "ton": [
-  "tone",
-  "tones",
-  "tones"
+  "טון",
+  "טונים",
+  "טונים"
  ],
- "pribuzenstvo": "Family tree",
- "sourozenci": "Closest relatives",
- "aDalsichPribuznych": "and {n} more",
- "popsanost": "Documentation",
+ "pribuzenstvo": "עץ המשפחה",
+ "sourozenci": "השפות הקרובות ביותר",
+ "aDalsichPribuznych": "ועוד {n}",
+ "popsanost": "תיעוד",
  "med": [
-  "a detailed grammar (300+ pages)",
-  "a grammar",
-  "a grammar sketch",
-  "only texts or a phonological description",
-  "only a word list or less – the language is barely documented"
+  "דקדוק מפורט (יותר מ-300 עמודים)",
+  "דקדוק",
+  "תקציר דקדוק",
+  "רק טקסטים או תיאור פונולוגי",
+  "רק רשימת מילים או פחות – השפה כמעט אינה מתועדת"
  ],
  "odkazGlottolog": "Glottolog",
  "odkazWikipedie": "Wikipedia",
- "odkazyPopis": "More about it",
- "wikiDomena": "en.wikipedia.org",
- "srovnavaciJazyk": "en",
- "mluvci": "Speakers",
- "odhad": "estimate",
- "mluvciAtlas": "A rounded estimate by the atlas, including people who learned the language as a second language.",
- "mluvciAtlasZnak": "A rounded estimate by the atlas, including people who learned the language as a second language.",
- "mluvciAtlasWd": "Wikidata gives about {n} speakers{rok}.",
- "mluvciAtlasWdRodili": "Wikidata gives about {n} native speakers{rok}.",
- "mluvciAtlasWdRodiliZnak": "Wikidata gives about {n} native signers{rok}.",
- "mluvciHodnota": "about {n} people",
- "mluvciPoznRodili": "native speakers · Wikidata{rok}",
+ "odkazyPopis": "מידע נוסף",
+ "wikiDomena": "he.wikipedia.org",
+ "srovnavaciJazyk": "he",
+ "mluvci": "דוברים",
+ "odhad": "הערכה",
+ "mluvciAtlas": "הערכה מעוגלת של האטלס, כולל אנשים שלמדו את השפה כשפה שנייה.",
+ "mluvciAtlasZnak": "הערכה מעוגלת של האטלס, כולל אנשים שלמדו את השפה כשפה שנייה.",
+ "mluvciAtlasWd": "לפי Wikidata יש לה כ-{n} דוברים{rok}.",
+ "mluvciAtlasWdRodili": "לפי Wikidata יש לה כ-{n} דוברי שפת אם{rok}.",
+ "mluvciAtlasWdRodiliZnak": "לפי Wikidata יש לה כ-{n} משתמשים כשפת אם{rok}.",
+ "mluvciHodnota": "כ-{n} בני אדם",
+ "mluvciPoznRodili": "דוברי שפת אם · Wikidata{rok}",
  "mluvciPozn": "Wikidata{rok}",
- "hudVidet": "{n} of {m} languages in view",
+ "hudVidet": "{n} מתוך {m} שפות בתצוגה",
  "strany": [
-  "N",
-  "S",
-  "E",
-  "W"
+  "צ׳",
+  "ד׳",
+  "מז׳",
+  "מע׳"
  ],
- "pribuzniAtlas": "Relatives in the atlas",
- "pribuzniOblouky": "Arcs of light on the globe lead to them.",
- "motiv": "Switch between day and night look",
- "zemeBezPozdravuDen": "The atlas has no language with a detailed card for this country yet. Individual languages can be opened by clicking the dots.",
- "pribuzniObloukyDen": "Arcs on the globe lead to them.",
- "znakoveSkupina": "Sign languages",
- "znakoveVse": "All",
- "znakoveBez": "No sign languages",
- "znakoveJen": "Sign only",
- "znakovePopis": "Sign languages are the natural languages of Deaf communities, using handshape and movement, facial expression and posture. There is no single universal sign language: many countries have their own, some several, and their boundaries do not coincide with national borders.",
- "znakovyCo": "What is a sign language",
- "znakovyVysvetleni": "A sign language is a full natural language in the visual-gestural modality: it uses handshape and movement, facial expression and body movement. It is used mainly by Deaf people and their families. It is not a spoken language rendered in signs – it has its own vocabulary and grammar.",
+ "pribuzniAtlas": "שפות קרובות באטלס",
+ "pribuzniOblouky": "קשתות אור על הגלובוס מובילות אליהן.",
+ "motiv": "מעבר בין מראה יום למראה לילה",
+ "zemeBezPozdravuDen": "לאטלס עדיין אין שפה עם כרטיס מפורט עבור מדינה זו. אפשר לפתוח שפות בודדות בלחיצה על הנקודות.",
+ "pribuzniObloukyDen": "קשתות על הגלובוס מובילות אליהן.",
+ "znakoveSkupina": "שפות סימנים",
+ "znakoveVse": "הכול",
+ "znakoveBez": "ללא שפות סימנים",
+ "znakoveJen": "רק שפות סימנים",
+ "znakovePopis": "שפות סימנים הן השפות הטבעיות של קהילות החירשים, והן משתמשות בצורת היד ובתנועתה, בהבעות פנים ובתנוחת הגוף. אין שפת סימנים אוניברסלית אחת: למדינות רבות יש שפת סימנים משלהן, לחלקן כמה, וגבולותיהן אינם חופפים לגבולות המדינות.",
+ "znakovyCo": "מהי שפת סימנים",
+ "znakovyVysvetleni": "שפת סימנים היא שפה טבעית מלאה בערוץ החזותי-תנועתי: היא משתמשת בצורת היד ובתנועתה, בהבעות פנים ובתנועות הגוף. משתמשים בה בעיקר אנשים חירשים ובני משפחותיהם. אין זו שפה מדוברת המועברת בסימנים – יש לה אוצר מילים ודקדוק משלה.",
  "aesZnak": [
   [
-   "Safe",
-   "Deaf children pick it up naturally – from Deaf parents, at school and in the Deaf community."
+   "בטוחה",
+   "ילדים חירשים רוכשים אותה באופן טבעי – מהורים חירשים, בבית הספר ובקהילת החירשים."
   ],
   [
-   "Vulnerable",
-   "Deaf children use it, but only in some places – for example only in some schools or towns."
+   "פגיעה",
+   "ילדים חירשים משתמשים בה, אך רק במקומות מסוימים – למשל רק בחלק מבתי הספר או מהערים."
   ],
   [
-   "Definitely endangered",
-   "Most Deaf children no longer learn it."
+   "בסכנה ודאית",
+   "רוב הילדים החירשים כבר אינם לומדים אותה."
   ],
   [
-   "Severely endangered",
-   "Mostly older Deaf people sign it; younger ones no longer pick it up."
+   "בסכנה חמורה",
+   "משתמשים בה בעיקר חירשים מבוגרים; הצעירים כבר אינם רוכשים אותה."
   ],
   [
-   "Critically endangered",
-   "Only a few elderly signers are left, and they rarely use it."
+   "בסכנה קריטית",
+   "נותרו רק מעט משתמשים קשישים, והם משתמשים בה לעתים רחוקות."
   ],
   [
-   "Extinct",
-   "Nobody uses it any more."
+   "נכחדה",
+   "איש כבר אינו משתמש בה."
   ],
   [
-   "Awakening",
-   "It lost its traditional native signers, but people are learning it again. Glottolog classifies it as extinct."
+   "מתעוררת",
+   "היא איבדה את משתמשיה הילידיים המסורתיים, אך אנשים לומדים אותה מחדש. Glottolog מסווג אותה כנכחדת."
   ]
  ],
- "kdeZnakuje": "Where it is used",
- "znakuje": "Signers",
- "uzivateluZnak": "Signers",
- "mluvciPoznRodiliZnak": "native signers · Wikidata{rok}",
+ "kdeZnakuje": "היכן משתמשים בה",
+ "znakuje": "משתמשים",
+ "uzivateluZnak": "משתמשים",
+ "mluvciPoznRodiliZnak": "משתמשים כשפת אם · Wikidata{rok}",
  "jazyk": [
-  "language",
-  "languages",
-  "languages"
+  "שפה",
+  "שפות",
+  "שפות"
  ],
- "vitalitaZdroj": "The six-level UNESCO scale. Data from Glottolog, which combines UNESCO, Ethnologue and the Catalogue of Endangered Languages.",
- "vitalita": "Vitality",
- "vitalitaPopis": "Show languages by how endangered they are (UNESCO scale)",
- "vitalitaNadpis": "Language vitality · UNESCO scale",
- "vitalitaVse": "All",
- "vitalitaOhrozene": "Endangered only",
- "vitalitaBezUdaje": "No data",
- "vitalitaZavrit": "Back",
- "nahledPopis": "A globe dotted with lights – each one is one of the world's languages",
- "zemeRejstrik": "{n} in the world register – highlighted on the globe",
- "zemeAtlas": "Languages with a detailed card:",
- "sdiletOdkaz": "Copy a link to this language",
- "sdiletHotovo": "Link copied.",
- "zobrazeni": "Settings",
- "zobrazeniPopis": "Spin, names and sign languages",
- "zavritPanel": "Close",
- "kartaVic": "Show more",
- "zalozkaPrehled": "Overview",
- "zalozkaStavba": "Structure",
- "jazykDne": "Language of the day",
- "radit": "Sort",
- "raditRodiny": "By family",
- "raditAbeceda": "A–Z",
- "raditSvetadil": "By continent",
- "svetadilOstatni": "Elsewhere",
- "zalozkaZajimavost": "Fun fact",
- "zalozkaPribuzni": "Relatives",
- "izolovane": "Language isolates – no known relatives",
- "nezarazene": "Unclassified",
- "dalsiJazyky": "More languages ({a})",
- "jazykDneUkaz": "Show on the globe",
- "rodokmen": "Family tree",
- "globus": "Globe",
- "rodokmenPopis": "Language family tree: how the languages of one family are related",
- "stromPlatno": "Family tree of a language family",
- "stromRodina": "Family",
- "stromCely": "Whole tree",
- "stromNapoveda": "The common ancestor of the whole family is at the bottom; individual languages are at the ends of the branches. Each ring marks a split; branch thickness reflects the number of languages descending from it. Large dots are languages with a detailed card. Drag to move, scroll or pinch to zoom, click a branch or a language to select it.",
- "stromUkazat": "Show in the family tree",
- "euNadpis": "The 24 official languages of the European Union",
- "euText": "The gold stars on the globe mark the 24 official languages of the European Union. Click a star to open the language card.",
- "euZavrit": "Close",
- "euVlajka": "Flag of the European Union",
- "euTlacitko": "Official languages of the European Union",
- "porovnat": "Compare with another language",
- "porovnatVyzva": "Comparing: {a} ⇄ ? Choose the second language: click a dot on the globe, a language in the list, or search for one.",
- "porovnatZrusit": "Cancel",
- "srovnani": "Comparison",
- "zalozkaPribuznost": "Kinship",
- "zalozkaCisla": "Numbers",
- "pribuzne": "Related",
- "ano": "yes",
- "ne": "no",
- "pribuzneAno": "They are related.",
- "pribuzneSpolecny": "Their closest common ancestor is the {v} branch. From there the lines of descent run as follows:",
- "pribuzneKoren": "They belong to the same family ({r}) but parted at its very first split. Their common ancestor is the ancestor of the whole family:",
- "pribuzneRodina": "Both belong to the same family ({r}).",
- "pribuzneNe": "They are not related.",
- "pribuzneNeText": "Each belongs to a different language family and, as far as is currently known, they share no common ancestor.",
- "izolatText": "{a} is an isolate – it has no known relatives.",
- "pribuzneNevime": "No data on their relationship are available.",
- "spolecne": "What they share",
- "rozdily": "How they differ",
- "bezUdaju": "We don't have enough data on how these languages work to compare them.",
- "spolecneStaty": "Both are used in",
- "zpetNa": "Back to: {a}",
- "porovnatJiny": "Compare with another",
- "stromObe": "Show both in the family tree",
- "bezRodu": "{a} is a {druh}. It did not develop gradually from a single ancestor like other languages, so it belongs to no language family and has no relatives.",
- "bezDomova": "Not on the map",
- "bezDomovaText": "{a} has no single place of origin – it was constructed as an international auxiliary language. It therefore has no dot on the globe and appears only in the list.",
- "branaNadpis": "✦ Constructed languages from fiction",
- "branaText": "These languages were constructed by writers and linguists for books, films and television. They are not part of the register of natural languages and therefore have no place on the globe.",
- "branaZpet": "Back to Earth",
- "branaZeme": "Earth",
- "branaZemePocet": "{n} real languages",
- "vymyslenyJazyk": "Invented language",
- "svet": "World",
- "autorJazyka": "Created by",
- "vyznamPozdravu": "What the greeting means",
- "zJinychSvetu": "✦ From other worlds",
- "nareciPozn": "Glottolog lists these as dialects, not separate languages, so they have no dot of their own on the globe.",
- "hledejVymazat": "Clear search",
- "preskocit": "Skip to the list of languages",
- "filtryZapnute": "filters on: {n}",
- "nenalezenaNadpis": "This page does not exist",
- "nenalezenaText": "There is no page at this address. All 7,967 languages of the world are available on the globe.",
- "nenalezenaZpet": "Back to the globe",
+ "vitalitaZdroj": "סולם UNESCO בן שש הדרגות. הנתונים מ-Glottolog, המשלב את UNESCO, את Ethnologue ואת Catalogue of Endangered Languages.",
+ "vitalita": "חיוניות",
+ "vitalitaPopis": "הצגת השפות לפי מידת הסכנה שהן נתונות בה (סולם UNESCO)",
+ "vitalitaNadpis": "חיוניות השפות · סולם UNESCO",
+ "vitalitaVse": "הכול",
+ "vitalitaOhrozene": "רק בסכנת הכחדה",
+ "vitalitaBezUdaje": "אין נתונים",
+ "vitalitaZavrit": "חזרה",
+ "nahledPopis": "גלובוס זרוע אורות – כל אחד מהם הוא אחת משפות העולם",
+ "zemeRejstrik": "{n} במרשם העולמי – מודגשות על הגלובוס",
+ "zemeAtlas": "שפות עם כרטיס מפורט:",
+ "sdiletOdkaz": "העתקת קישור לשפה זו",
+ "sdiletHotovo": "הקישור הועתק.",
+ "zobrazeni": "הגדרות",
+ "zobrazeniPopis": "סיבוב, שמות ושפות סימנים",
+ "zavritPanel": "סגירה",
+ "kartaVic": "הצגת עוד",
+ "zalozkaPrehled": "סקירה",
+ "zalozkaStavba": "מבנה",
+ "jazykDne": "שפת היום",
+ "radit": "מיון",
+ "raditRodiny": "לפי משפחה",
+ "raditAbeceda": "א–ת",
+ "raditSvetadil": "לפי יבשת",
+ "svetadilOstatni": "במקומות אחרים",
+ "zalozkaZajimavost": "עובדה מעניינת",
+ "zalozkaPribuzni": "שפות קרובות",
+ "izolovane": "שפות מבודדות – ללא קרובות ידועות",
+ "nezarazene": "לא מסווגות",
+ "dalsiJazyky": "שפות נוספות ({a})",
+ "jazykDneUkaz": "הצגה על הגלובוס",
+ "rodokmen": "עץ המשפחה",
+ "globus": "גלובוס",
+ "rodokmenPopis": "עץ משפחת השפות: כיצד קשורות זו לזו השפות של משפחה אחת",
+ "stromPlatno": "עץ המשפחה של משפחת שפות",
+ "stromRodina": "משפחה",
+ "stromCely": "העץ כולו",
+ "stromNapoveda": "האב הקדמון המשותף של המשפחה כולה נמצא בתחתית; השפות עצמן נמצאות בקצות הענפים. כל טבעת מסמנת פיצול; עובי הענף משקף את מספר השפות שהתפתחו ממנו. נקודות גדולות הן שפות עם כרטיס מפורט. גררו כדי להזיז, גללו או צבטו כדי לשנות את הזום, ולחצו על ענף או על שפה כדי לבחור בהם.",
+ "stromUkazat": "הצגה בעץ המשפחה",
+ "euNadpis": "24 השפות הרשמיות של האיחוד האירופי",
+ "euText": "הכוכבים הזהובים על הגלובוס מסמנים את 24 השפות הרשמיות של האיחוד האירופי. לחצו על כוכב כדי לפתוח את כרטיס השפה.",
+ "euZavrit": "סגירה",
+ "euVlajka": "דגל האיחוד האירופי",
+ "euTlacitko": "השפות הרשמיות של האיחוד האירופי",
+ "porovnat": "השוואה לשפה אחרת",
+ "porovnatVyzva": "השוואה: {a} ⇄ ? בחרו את השפה השנייה: לחצו על נקודה על הגלובוס או על שפה ברשימה, או חפשו אותה.",
+ "porovnatZrusit": "ביטול",
+ "srovnani": "השוואה",
+ "zalozkaPribuznost": "קרבה",
+ "zalozkaCisla": "מספרים",
+ "pribuzne": "קרובות",
+ "ano": "כן",
+ "ne": "לא",
+ "pribuzneAno": "הן קרובות זו לזו.",
+ "pribuzneSpolecny": "האב הקדמון המשותף הקרוב ביותר שלהן הוא הענף {v}. משם מסתעפים קווי ההתפתחות כך:",
+ "pribuzneKoren": "הן שייכות לאותה משפחה ({r}), אך נפרדו כבר בפיצול הראשון שלה. האב הקדמון המשותף שלהן הוא האב הקדמון של המשפחה כולה:",
+ "pribuzneRodina": "שתיהן שייכות לאותה משפחה ({r}).",
+ "pribuzneNe": "הן אינן קרובות.",
+ "pribuzneNeText": "כל אחת מהן שייכת למשפחת שפות אחרת, ולפי הידוע כיום אין להן אב קדמון משותף.",
+ "izolatText": "{a} היא שפה מבודדת – אין לה קרובות ידועות.",
+ "pribuzneNevime": "אין נתונים על הקשר ביניהן.",
+ "spolecne": "מה משותף להן",
+ "rozdily": "במה הן שונות",
+ "bezUdaju": "אין לנו די נתונים על אופן פעולתן של השפות האלה כדי להשוות ביניהן.",
+ "spolecneStaty": "שתיהן בשימוש במדינות",
+ "zpetNa": "חזרה אל: {a}",
+ "porovnatJiny": "השוואה לשפה אחרת",
+ "stromObe": "הצגת שתיהן בעץ המשפחה",
+ "bezRodu": "{a} היא {druh}. היא לא התפתחה בהדרגה מאב קדמון יחיד כמו שפות אחרות, ולכן אינה שייכת לשום משפחת שפות ואין לה קרובות.",
+ "bezDomova": "לא על המפה",
+ "bezDomovaText": "{a} לא צמחה במקום מוצא אחד – היא נבנתה כשפת עזר בין-לאומית. לכן אין לה נקודה על הגלובוס והיא מופיעה רק ברשימה.",
+ "branaNadpis": "✦ שפות מתוכננות מיצירות בדיון",
+ "branaText": "את השפות האלה בנו סופרים ובלשנים עבור ספרים, סרטים וטלוויזיה. הן אינן חלק מהמרשם של השפות הטבעיות, ולכן אין להן מקום על הגלובוס.",
+ "branaZpet": "חזרה לכדור הארץ",
+ "branaZeme": "כדור הארץ",
+ "branaZemePocet": "{n} שפות אמיתיות",
+ "vymyslenyJazyk": "שפה מומצאת",
+ "svet": "עולם",
+ "autorJazyka": "נוצרה על ידי",
+ "vyznamPozdravu": "משמעות הברכה",
+ "zJinychSvetu": "✦ מעולמות אחרים",
+ "nareciPozn": "Glottolog מונה אותם כניבים ולא כשפות נפרדות, ולכן אין להם נקודה משלהם על הגלובוס.",
+ "hledejVymazat": "ניקוי החיפוש",
+ "preskocit": "דילוג לרשימת השפות",
+ "filtryZapnute": "מסננים פעילים: {n}",
+ "nenalezenaNadpis": "הדף אינו קיים",
+ "nenalezenaText": "אין דף בכתובת זו. כל 7,967 השפות בעולם זמינות על הגלובוס.",
+ "nenalezenaZpet": "חזרה לגלובוס",
  "oDatech": {
-  "odkaz": "About the data",
-  "nadpis": "About the data and how the atlas was made",
-  "zavrit": "Close",
-  "uvod": "The atlas is built on open databases put together by linguists from all over the world. Here is where everything comes from, what is certain and what is only an estimate.",
+  "odkaz": "על הנתונים",
+  "nadpis": "על הנתונים ועל אופן הכנת האטלס",
+  "zavrit": "סגירה",
+  "uvod": "האטלס מבוסס על מאגרי נתונים פתוחים שהרכיבו בלשנים מכל העולם. כאן מוסבר מהיכן מגיע כל דבר, מה ודאי ומה אינו אלא הערכה.",
   "oddily": [
    {
-    "h": "What is on the globe",
+    "h": "מה יש על הגלובוס",
     "p": [
-     "Each dot is one language. The list of languages comes from Glottolog, an open database of the world's languages run by the Max Planck Institute for Evolutionary Anthropology in Leipzig. The atlas takes everything Glottolog lists as a language and gives a location: {g} languages.",
-     "A dot stands where Glottolog places the language, usually in the middle of the area where it is spoken. Even a language spoken all over the world has just one dot, at its home.",
-     "Left out are only Glottolog's special bins: bookkeeping entries, languages known only by name and languages we know so little about that they cannot be classified. Esperanto, Interlingua and Interslavic have no dot because they did not arise in any one place; they are still in the list and in search."
+     "כל נקודה היא שפה אחת. רשימת השפות לקוחה מ-Glottolog, מאגר נתונים פתוח של שפות העולם שמפעיל מכון מקס פלנק לאנתרופולוגיה אבולוציונית בלייפציג. האטלס לוקח כל מה ש-Glottolog מונה כשפה ומציין עבורו מיקום: {g} שפות.",
+     "הנקודה עומדת במקום שבו Glottolog ממקם את השפה, בדרך כלל במרכז האזור שבו מדברים בה. גם לשפה שמדברים בה בכל העולם יש נקודה אחת בלבד, במולדתה.",
+     "הושמטו רק הקטגוריות המיוחדות של Glottolog: רשומות לצורכי רישום, שפות הידועות רק בשמן ושפות שידוע עליהן כה מעט שאי אפשר לסווג אותן. לאספרנטו, לאינטרלינגואה ולאינטרסלאבית אין נקודה, משום שהן לא נוצרו במקום אחד מסוים; הן עדיין מופיעות ברשימה ובחיפוש."
     ]
    },
    {
-    "h": "Language or dialect?",
+    "h": "שפה או ניב?",
     "p": [
-     "There is no sharp line between a language and a dialect, and history and politics often play a part. The atlas follows Glottolog's decisions. That is why Bavarian has a dot but Australian English does not – Glottolog counts it as a variety of English. Dialects are listed on the language card, and searching for one finds its language.",
-     "Serbian, Croatian, Bosnian and Montenegrin are very easy to understand for each other's speakers and rest on the same dialect base, Shtokavian. Linguistically they are close standard varieties of one shared language; officially and socially they are separate languages today. Glottolog lists them as one language, Serbo-Croatian, which has a dot on the globe. The atlas also has Serbian and Croatian as separate languages with a greeting, but they have no dot of their own. Hmong, on the other hand, is several languages in Glottolog and one entry in the atlas. That is why the list has {n} entries and the globe {g} dots."
+     "אין קו חד בין שפה לניב, ולעתים קרובות ההיסטוריה והפוליטיקה משחקות תפקיד. האטלס הולך בעקבות ההחלטות של Glottolog. לכן לבווארית יש נקודה, אבל לאנגלית האוסטרלית אין – Glottolog מחשיב אותה כזן של אנגלית. הניבים מפורטים בכרטיס השפה, וחיפוש של ניב מוצא את השפה שאליה הוא שייך.",
+     "סרבית, קרואטית, בוסנית ומונטנגרית מובנות בקלות רבה לדוברי כל אחת מהן ומבוססות על אותו בסיס ניבי, השטוקבי. מבחינה לשונית הן זנים תקניים קרובים של שפה משותפת אחת; מבחינה רשמית וחברתית הן כיום שפות נפרדות. Glottolog מונה אותן כשפה אחת, סרבו-קרואטית, ולה יש נקודה על הגלובוס. באטלס יש גם סרבית וקרואטית כשפות נפרדות עם ברכה, אבל אין להן נקודה משלהן. מנגד, המונג היא כמה שפות ב-Glottolog ורשומה אחת באטלס. לכן ברשימה יש {n} רשומות ועל הגלובוס {g} נקודות."
     ]
    },
    {
-    "h": "{a} languages with a detailed card",
+    "h": "{a} שפות עם כרטיס מפורט",
     "p": [
-     "For 164 selected languages the atlas gives a greeting, an approximate pronunciation, a note, the number of speakers and the area of distribution. These are compiled by hand and the notes are fact-checked.",
-     "The pronunciation guide is only approximate. Speaker numbers are rounded estimates that include second-language speakers.",
-     "The orange area on the globe is drawn by hand and approximate, not measured. There are no open data with exact language boundaries for the whole world.",
-     "The Play pronunciation button uses the device's speech synthesis; for some languages the device has no voice.",
-     "The illustrations show the typical landscape and vernacular architecture of the region the language comes from. They do not depict particular places."
+     "עבור 164 שפות נבחרות האטלס מביא ברכה, הגייה משוערת, הערה, מספר דוברים ואזור תפוצה. הנתונים האלה נאספו ידנית, וההערות עברו בדיקת עובדות.",
+     "מדריך ההגייה משוער בלבד. מספרי הדוברים הם הערכות מעוגלות, הכוללות גם דוברים של השפה כשפה שנייה.",
+     "האזור הכתום על הגלובוס משורטט ביד והוא משוער, לא מדוד. אין נתונים פתוחים עם גבולות לשוניים מדויקים לעולם כולו.",
+     "הכפתור \"השמעת ההגייה\" משתמש בסינתזת הדיבור של המכשיר; לחלק מהשפות אין במכשיר קול.",
+     "האיורים מציגים את הנוף האופייני ואת האדריכלות העממית של האזור שממנו באה השפה. הם אינם מתארים מקומות מסוימים."
     ]
    },
    {
-    "h": "Details for the other languages",
+    "h": "פרטים על שאר השפות",
     "p": [
-     "Vitality: the UNESCO scale (safe to extinct) based on Glottolog data.",
-     "Typology (word order, cases, tone, consonant inventory… – 24 features): WALS Online, the World Atlas of Language Structures (Dryer & Haspelmath 2013). WALS describes a sample of about 2,600 languages; the others have no value. For the map some values are merged into groups; the language card always shows the exact WALS value.",
-     "Number of sounds: PHOIBLE. Sample text: Article 1 of the Universal Declaration of Human Rights (UDHR in Unicode).",
-     "Speaker numbers: Wikidata; where missing, an estimate from Unicode CLDR.",
-     "Script and official status: Unicode CLDR (languageData, territoryInfo). Official status is national, de facto or regional; CLDR records it only for languages whose country data it tracks, so it is often missing for minority languages even where they have some official standing. For other languages the script map (Maps › Script) uses the script estimate from CLDR likelySubtags, so that the map shows a script for about 6,800 languages in all. The language card marks an estimate as such.",
-     "Relatives and the family tree: the Glottolog tree, with Glottolog's branch names.",
-     "Nothing is made up: if a source has no data, the card does not show it."
+     "חיוניות: סולם UNESCO (מבטוחה ועד נכחדה) על סמך נתוני Glottolog.",
+     "טיפולוגיה (סדר מילים, יחסות, טונים, מלאי עיצורים… – 24 תכונות): WALS Online, האטלס העולמי של מבני שפה (Dryer & Haspelmath 2013). WALS מתאר מדגם של כ-2,600 שפות; לשאר אין ערך. לצורך המפה חלק מהערכים מאוחדים לקבוצות; כרטיס השפה מציג תמיד את הערך המדויק של WALS.",
+     "מספר הצלילים: PHOIBLE. טקסט לדוגמה: סעיף 1 של ההכרזה לכל באי עולם בדבר זכויות האדם (UDHR in Unicode).",
+     "מספרי דוברים: Wikidata; היכן שחסר – הערכה של Unicode CLDR.",
+     "כתב ומעמד רשמי: Unicode CLDR (languageData, territoryInfo). המעמד הרשמי הוא ארצי, דה פקטו או אזורי; CLDR מתעד אותו רק בשפות שהוא עוקב אחר נתוני המדינות שלהן, ולכן לעתים קרובות הוא חסר בשפות מיעוט גם כשיש להן מעמד רשמי כלשהו. בשאר השפות מפת הכתבים (מפות › כתב) משתמשת בהערכת הכתב מתוך CLDR likelySubtags, כך שבסך הכול המפה מציגה כתב לכ-6,800 שפות. כרטיס השפה מסמן הערכה ככזו.",
+     "שפות קרובות ועץ המשפחה: העץ של Glottolog, עם שמות הענפים של Glottolog.",
+     "שום דבר אינו מומצא: אם למקור אין נתונים, הכרטיס אינו מציג אותם."
     ]
    },
    {
-    "h": "Languages of antiquity and Language stories",
+    "h": "שפות העת העתיקה וסיפורי שפות",
     "p": [
-     "The Atlas writes the pages on ancient civilizations and the Language stories from the scholarly literature listed at the end of each page, and checks the facts before publication. The photographs come from Wikimedia Commons and have free licences (CC BY, CC BY-SA, CC0 or public domain); the author and licence are given with each image. Cuneiform signs and Anatolian hieroglyphs are rendered with the Noto fonts (SIL Open Font License)."
+     "האטלס כותב את הדפים על תרבויות קדומות ואת סיפורי השפות על סמך הספרות המחקרית המפורטת בסוף כל דף, ובודק את העובדות לפני הפרסום. התצלומים לקוחים מ-Wikimedia Commons ומופצים ברישיונות חופשיים (CC BY, CC BY-SA, CC0 או נחלת הכלל); היוצר והרישיון מצוינים ליד כל תמונה. סימני כתב היתדות וההירוגליפים האנטוליים מוצגים בגופני Noto (SIL Open Font License)."
     ]
    },
    {
-    "h": "Questions for the AI",
+    "h": "שאלות לבינה המלאכותית",
     "p": [
-     "If the search does not understand a question, you can ask an AI (Claude Sonnet 5.5 by Anthropic). The question text is sent via the atlas server (Netlify) to Anthropic; the atlas does not store questions. The AI looks in the atlas data first (Glottolog, Unicode CLDR, atlas texts); what the atlas does not have, it looks up on the web (Anthropic web search) and lists the web sources under the answer. It may still be wrong, so every answer carries a note. It answers only questions about languages, scripts and language families."
+     "אם החיפוש אינו מבין שאלה, אפשר לשאול בינה מלאכותית (Claude Sonnet 5.5 של Anthropic). נוסח השאלה נשלח דרך השרת של האטלס (Netlify) אל Anthropic; האטלס אינו שומר את השאלות. הבינה המלאכותית מחפשת תחילה בנתוני האטלס (Glottolog, Unicode CLDR, טקסטי האטלס); את מה שאין באטלס היא מחפשת ברשת (חיפוש הרשת של Anthropic), ואת המקורות מהרשת היא מפרטת מתחת לתשובה. היא עדיין עלולה לטעות, ולכן כל תשובה מלווה בהערה. היא עונה רק על שאלות על שפות, כתבים ומשפחות שפות."
     ]
    },
    {
-    "h": "Map",
+    "h": "מפה",
     "p": [
-     "Country borders and land come from Natural Earth (simplified, scale 1:110 million). Relief and the sea floor come from Natural Earth and NOAA ETOPO1."
+     "גבולות המדינות והיבשה לקוחים מ-Natural Earth (בגרסה מפושטת, קנה מידה 1:110 מיליון). התבליט וקרקעית הים לקוחים מ-Natural Earth ומ-NOAA ETOPO1."
     ]
    }
   ],
-  "verzeNadpis": "Data versions and licences",
+  "verzeNadpis": "גרסאות הנתונים ורישיונות",
   "verze": [
    [
-    "Glottolog – languages, families, vitality, dialects",
-    "downloaded {gdat}",
+    "Glottolog – שפות, משפחות, חיוניות, ניבים",
+    "הורדה: {gdat}",
     "CC BY 4.0"
    ],
    [
-    "WALS Online (2013) – grammar",
-    "downloaded {pdat}",
+    "WALS Online (2013) – דקדוק",
+    "הורדה: {pdat}",
     "CC BY 4.0"
    ],
    [
-    "PHOIBLE 2.0 – sounds",
-    "downloaded {pdat}",
+    "PHOIBLE 2.0 – צלילים",
+    "הורדה: {pdat}",
     "CC BY-SA 3.0"
    ],
    [
-    "Wikidata – speaker numbers",
-    "downloaded {wdat}",
+    "Wikidata – מספרי דוברים",
+    "הורדה: {wdat}",
     "CC0"
    ],
    [
-    "Unicode CLDR 48 – language names, script, official status, estimates",
+    "Unicode CLDR 48 – שמות שפות, כתב, מעמד רשמי, הערכות",
     "",
     "Unicode License"
    ],
    [
-    "UDHR in Unicode – sample texts",
-    "udhr package 6.0.0",
+    "UDHR in Unicode – טקסטים לדוגמה",
+    "חבילת udhr 6.0.0",
     "MIT"
    ],
    [
-    "Wikimedia Commons – photographs for the civilization pages",
-    "with each image",
+    "Wikimedia Commons – תצלומים לדפי התרבויות",
+    "ליד כל תמונה",
     "CC BY, CC BY-SA, CC0"
    ],
    [
-    "Natural Earth, NOAA ETOPO1 – map and relief",
+    "Natural Earth, NOAA ETOPO1 – מפה ותבליט",
     "",
-    "public domain"
+    "נחלת הכלל"
    ]
   ]
  },
  "stranky": {
-  "najit": "Find it on the globe",
-  "globus": "Spinning globe",
-  "vsechnyOdkaz": "Languages with a detailed card",
-  "vsechnyNadpis": "{a} languages with a detailed card",
-  "vsechnyPopis": "Selected languages of the world with a greeting, approximate pronunciation, number of speakers, distribution, relatives and a note. All 7,967 languages are on the interactive globe.",
-  "titulek": "{n} – distribution, relatives and pronunciation",
-  "malbaAlt": "Illustration of the landscape where {n} comes from",
-  "uzivatelu": "Users",
-  "kdeMluvi": "Where it is spoken",
-  "kdeZnakuje": "Where it is signed",
-  "aDalsi": "and {n} more",
-  "drobky": "Breadcrumbs",
-  "druhaSobota": "2nd Saturday of September",
-  "predchozi": "Previous language",
-  "dalsi": "Next language",
-  "zavrit": "Close and back to the list"
+  "najit": "איתור על הגלובוס",
+  "globus": "גלובוס מסתובב",
+  "vsechnyOdkaz": "שפות עם כרטיס מפורט",
+  "vsechnyNadpis": "{a} שפות עם כרטיס מפורט",
+  "vsechnyPopis": "שפות נבחרות של העולם עם ברכה, הגייה משוערת, מספר דוברים, תפוצה, שפות קרובות והערה. כל 7,967 השפות נמצאות על הגלובוס האינטראקטיבי.",
+  "titulek": "{n} – תפוצה, שפות קרובות והגייה",
+  "malbaAlt": "איור של הנוף שממנו באה השפה {n}",
+  "uzivatelu": "משתמשים",
+  "kdeMluvi": "היכן מדברים בה",
+  "kdeZnakuje": "היכן משתמשים בה",
+  "aDalsi": "ועוד {n}",
+  "drobky": "פירורי לחם",
+  "druhaSobota": "השבת השנייה של ספטמבר",
+  "predchozi": "השפה הקודמת",
+  "dalsi": "השפה הבאה",
+  "zavrit": "סגירה וחזרה לרשימה"
  },
- "zpetna": "Comments and corrections:",
- "autor": "Idea, concept and development: Tomáš Kubín",
+ "zpetna": "הערות ותיקונים:",
+ "autor": "רעיון, קונספט ופיתוח: Tomáš Kubín",
  "autorJmeno": "Tomáš Kubín",
  "zpetnaAdresa": "info@atlasjazyku.cz",
- "zpetnaPredmet": "The Language Atlas – feedback",
- "zpetnaPopis": "Send feedback by e-mail",
- "patickaSouhrn": "About, sources, contact, guide and calendar",
- "vitalitaDokPopis": "Language vitality: degrees of endangerment on the UNESCO scale, figures and sources",
- "vitalitaLegendaPopis": "Degrees of vitality – click to open the Vitality page",
- "denJazykuNadpis": "Languages of Europe",
- "denJazykuGlobus": "Show them all on the globe",
- "evropaNadpis": "{n} languages of Europe",
- "evropaText": "Today is the European Day of Languages. The red stars mark the European languages in the atlas; click one to open its card.",
- "jazykDneProc": "Why today?",
- "cestaUvod": "The Language of the Day moves around the world, each day to the next nearest language.",
- "cestaDuvod": "Moving around the world: the previous Language of the Day was {a}; today's language lies {km} km further {smer}.",
- "cestaVedle": "Moving around the world: the previous Language of the Day was {a}; today's language is its immediate neighbour.",
+ "zpetnaPredmet": "אטלס השפות – משוב",
+ "zpetnaPopis": "שליחת משוב בדוא״ל",
+ "patickaSouhrn": "אודות, מקורות, יצירת קשר, מדריך ולוח שנה",
+ "vitalitaDokPopis": "חיוניות השפות: דרגות הסכנה בסולם UNESCO, נתונים ומקורות",
+ "vitalitaLegendaPopis": "דרגות החיוניות – לחצו כדי לפתוח את דף החיוניות",
+ "denJazykuNadpis": "שפות אירופה",
+ "denJazykuGlobus": "הצגת כולן על הגלובוס",
+ "evropaNadpis": "{n} שפות אירופיות",
+ "evropaText": "היום הוא היום האירופי לשפות. הכוכבים האדומים מסמנים את השפות האירופיות שבאטלס; לחצו על אחד מהם כדי לפתוח את כרטיס השפה.",
+ "jazykDneProc": "למה היום?",
+ "cestaUvod": "שפת היום נעה סביב העולם, בכל יום אל השפה הקרובה הבאה.",
+ "cestaDuvod": "מסע סביב העולם: שפת היום הקודמת הייתה {a}; השפה של היום נמצאת {km} ק״מ {smer} ממנה.",
+ "cestaVedle": "מסע סביב העולם: שפת היום הקודמת הייתה {a}; השפה של היום היא שכנתה הקרובה.",
  "svetoveStrany": [
-  "north",
-  "north-east",
-  "east",
-  "south-east",
-  "south",
-  "south-west",
-  "west",
-  "north-west"
+  "צפונה",
+  "צפון-מזרחה",
+  "מזרחה",
+  "דרום-מזרחה",
+  "דרומה",
+  "דרום-מערבה",
+  "מערבה",
+  "צפון-מערבה"
  ],
- "cestaPoDniJazyku": "After the European Day of Languages, the Language of the Day continues around the world, each day to the next nearest language.",
- "kalendarOdkaz": "Calendar of language days",
+ "cestaPoDniJazyku": "אחרי היום האירופי לשפות, שפת היום ממשיכה במסעה סביב העולם, בכל יום אל השפה הקרובה הבאה.",
+ "kalendarOdkaz": "לוח ימי השפות",
  "kalendar": {
-  "nadpis": "Calendar of language days",
-  "uvod": "Days of the year associated with a particular language: UN and UNESCO language days, national language days, public holidays and anniversaries. On such a day that language is the Language of the Day. Click one to show it on the globe.",
-  "edl": "European Day of Languages (Council of Europe). Instead of one Language of the Day, all European languages in the atlas are shown at once.",
-  "dnes": "today",
-  "ostatni": "On all other days the Language of the Day moves around the world, each day to the next nearest language."
+  "nadpis": "לוח ימי השפות",
+  "uvod": "ימים בשנה הקשורים לשפה מסוימת: ימי שפה של האו״ם ושל UNESCO, ימי שפה לאומיים, חגים רשמיים וימי שנה. ביום כזה השפה הזאת היא שפת היום. לחצו על אחד מהם כדי להציג אותה על הגלובוס.",
+  "edl": "היום האירופי לשפות (מועצת אירופה). במקום שפת יום אחת מוצגות בבת אחת כל השפות האירופיות שבאטלס.",
+  "dnes": "היום",
+  "ostatni": "בכל שאר הימים שפת היום נעה סביב העולם, בכל יום אל השפה הקרובה הבאה."
  },
  "navod": {
-  "odkaz": "Full guide",
-  "napoveda": "Full guide – all features of the atlas",
-  "nadpis": "How to use the atlas",
-  "uvod": "The atlas shows all 7,967 languages of the world after Glottolog on an interactive globe. This guide describes every feature and how to use it with a mouse, touch or the keyboard.",
+  "odkaz": "המדריך המלא",
+  "napoveda": "המדריך המלא – כל האפשרויות של האטלס",
+  "nadpis": "איך משתמשים באטלס",
+  "uvod": "האטלס מציג על גלובוס אינטראקטיבי את כל 7,967 השפות בעולם לפי Glottolog. המדריך הזה מתאר כל אחת מהאפשרויות ואת אופן השימוש בה בעכבר, במגע או במקלדת.",
   "oddily": [
    {
-    "h": "The globe",
+    "h": "הגלובוס",
     "p": [
-     "Rotate: drag with the mouse or one finger. Zoom: mouse wheel, pinch with two fingers, the + and − buttons at the top right of the globe, or the + and − keys.",
-     "Each dot is one language, placed where Glottolog locates it, usually in the middle of the area where it is spoken. Click a dot to open the language card. The selected language and its relatives are named next to their dots; names of all languages from 2× zoom can be switched on in Settings (Names).",
-     "Clicking a country away from the dots highlights the country and all its languages and shows their number according to Glottolog.",
-     "The Whole world button and the Language Atlas logo in the top left return the globe to its initial view."
+     "סיבוב: גררו בעכבר או באצבע אחת. זום: גלגלת העכבר, צביטה בשתי אצבעות, הכפתורים + ו-− בפינה הימנית העליונה של הגלובוס, או המקשים + ו-−.",
+     "כל נקודה היא שפה אחת, הממוקמת במקום שבו Glottolog ממקם אותה, בדרך כלל במרכז האזור שבו מדברים בה. לחצו על נקודה כדי לפתוח את כרטיס השפה. שמות השפה הנבחרת ושל קרובותיה מופיעים ליד הנקודות שלהן; את השמות של כל השפות, החל מזום פי 2, אפשר להפעיל ב\"הגדרות\" (\"שמות\").",
+     "לחיצה על מדינה הרחק מהנקודות מדגישה את המדינה ואת כל השפות שלה ומציגה את מספרן לפי Glottolog.",
+     "הכפתור \"העולם כולו\" והלוגו של אטלס השפות בפינה הימנית העליונה מחזירים את הגלובוס לתצוגה ההתחלתית."
     ]
    },
    {
-    "h": "The language card",
+    "h": "כרטיס השפה",
     "p": [
-     "164 selected languages have a detailed card: an illustration of the region, a greeting with approximate pronunciation and a Play pronunciation button (it uses the device's speech synthesis). Below are the number of speakers, the language family and vitality, and the tabs Note (note, distribution, official status, script, dialects), Vitality, Structure and Relatives.",
-     "All other languages have the tabs Overview (vitality, distribution, official status, script, dialects, speaker numbers, sample text), Structure (WALS typology, PHOIBLE sound inventory, documentation) and Relatives.",
-     "Official status lists the countries where the language is official – nationally, de facto (without explicit legal status) or regionally (in part of the country only). Script lists the scripts the language is usually written in, the most common first. Both come from Unicode CLDR and are available for about 800 languages.",
-     "The Structure tab gives the exact value for each WALS feature; click a feature name to open its typology map.",
-     "Arcs on the globe lead from the selected language to its closest relatives. The language family tree line shows its classification in the Glottolog tree.",
-     "The chain button copies a link to the language. On a phone the card sits at the bottom of the screen: drag it up to enlarge it, down to shrink or close it."
+     "ל-164 שפות נבחרות יש כרטיס מפורט: איור של האזור, ברכה עם הגייה משוערת והכפתור \"השמעת ההגייה\" (הוא משתמש בסינתזת הדיבור של המכשיר). מתחת לאלה מופיעים מספר הדוברים, משפחת השפות והחיוניות, וכן הלשוניות \"הערה\" (הערה, תפוצה, מעמד רשמי, כתב, ניבים), \"חיוניות\", \"מבנה\" ו\"שפות קרובות\".",
+     "לכל שאר השפות יש הלשוניות \"סקירה\" (חיוניות, תפוצה, מעמד רשמי, כתב, ניבים, מספרי דוברים, טקסט לדוגמה), \"מבנה\" (טיפולוגיה של WALS, מלאי הצלילים של PHOIBLE, תיעוד) ו\"שפות קרובות\".",
+     "בסעיף \"מעמד רשמי\" מפורטות המדינות שבהן השפה רשמית – ברמה הארצית, דה פקטו (בלי מעמד חוקי מפורש) או ברמה האזורית (רק בחלק מהמדינה). בסעיף \"כתב\" מפורטים הכתבים שבהם השפה נכתבת בדרך כלל, הנפוץ ביותר ראשון. שני הנתונים לקוחים מ-Unicode CLDR וזמינים לכ-800 שפות.",
+     "הלשונית \"מבנה\" מביאה את הערך המדויק של כל תכונה ב-WALS; לחצו על שם של תכונה כדי לפתוח את המפה הטיפולוגית שלה.",
+     "קשתות על הגלובוס מובילות מהשפה הנבחרת אל קרובותיה הקרובות ביותר. שורת עץ משפחת השפות מציגה את סיווגה בעץ של Glottolog.",
+     "כפתור השרשרת מעתיק קישור לשפה. בטלפון הכרטיס נמצא בתחתית המסך: גררו אותו למעלה כדי להגדיל אותו, ולמטה כדי להקטין או לסגור אותו."
     ]
    },
    {
-    "h": "The language list",
+    "h": "רשימת השפות",
     "p": [
-     "You can search for a language, a country or a dialect. The cross in the search box clears it.",
-     "You can also type a question in plain words: “languages spoken in Brazil” (languages of a country), “Slavic languages” (a family or branch in Glottolog), “German and Italian” (comparing two languages) or “where is Persian spoken”. The top of the list shows what the search understood and the list shows the matching languages; the button or the Enter key shows them on the globe. Answers come only from the atlas data.",
-     "If the search does not understand a question, it offers Ask the AI: an AI (Claude by Anthropic) looks up the atlas data, searches the web for what is not there (listing the sources), and answers in a few sentences, showing the result on the globe. It answers only questions about languages and may be wrong. Website only.",
-     "Sort by language family, alphabetically or by continent. Languages with a detailed card are shown as large tiles, the others below them.",
-     "The Language of the Day changes at midnight and always states why it was chosen: either a day associated with that language (see the Calendar of language days) or the journey around the world to the next nearest language. On the European Day of Languages (26 September) all European languages of the atlas are shown instead."
+     "אפשר לחפש שפה, מדינה או ניב. האיקס בתיבת החיפוש מנקה אותה.",
+     "אפשר גם להקליד שאלה במילים פשוטות: \"שפות שמדברים בברזיל\" (שפות של מדינה), \"שפות סלאביות\" (משפחה או ענף ב-Glottolog), \"גרמנית ואיטלקית\" (השוואה בין שתי שפות) או \"איפה מדברים פרסית\". בראש הרשימה מוצג מה החיפוש הבין, והרשימה מציגה את השפות המתאימות; הכפתור או המקש Enter מציגים אותן על הגלובוס. התשובות מבוססות רק על נתוני האטלס.",
+     "אם החיפוש אינו מבין שאלה, הוא מציע \"שאלו את הבינה המלאכותית\": בינה מלאכותית (Claude של Anthropic) מעיינת בנתוני האטלס, מחפשת ברשת את מה שאין בהם (ומפרטת את המקורות) ועונה בכמה משפטים, תוך הצגת התוצאה על הגלובוס. היא עונה רק על שאלות על שפות ועלולה לטעות. באתר בלבד.",
+     "אפשר למיין לפי משפחת שפות, לפי סדר האלף-בית או לפי יבשת. שפות עם כרטיס מפורט מוצגות כאריחים גדולים, והאחרות מתחתיהן.",
+     "שפת היום מתחלפת בחצות ותמיד מציינת מדוע נבחרה: או יום הקשור לשפה זו (ראו \"לוח ימי השפות\") או המסע סביב העולם אל השפה הקרובה הבאה. ביום האירופי לשפות (26 בספטמבר) מוצגות במקומה כל השפות האירופיות של האטלס."
     ]
    },
    {
-    "h": "Medallions below the globe",
+    "h": "מדליונים מתחת לגלובוס",
     "p": [
-     "The round buttons below the globe (in two rows on a phone) open the main parts of the atlas: Ancient languages, Language stories, Family tree, Maps, Vitality and Settings. Random language sits in the header of the language list, next to the language count, and opens the card of a randomly selected language.",
-     "Family tree shows the fan-shaped tree of a language family: with a language selected, its family, otherwise the family chosen in the menu at the top. Drag to move, use the wheel or two fingers to zoom, click a branch to focus on it and click a language to select it. The Circular overview button offers another view of all families at once: the width of a segment is the number of languages; click a segment or a row of the list to go deeper, and click the centre of the circle to go back up. Families with fewer than 25 languages are under Smaller families; isolates, sign and artificial languages and pidgins under Outside families. Back to the tree or Open the family tree returns to the fan.",
-     "Vitality opens a page on language endangerment: the number of languages in each degree of the UNESCO scale, the breakdown by world region and by the fifteen largest language families (with a link to the family tree), endangered languages in the atlas, awakening languages, and the method with sources. From there you can colour the globe and the family tree by vitality – the tree then shows which branches of a family are endangered or extinct – and tick which degrees stay visible (a filter). While the colours are on, a key sits below the globe; click it to open the page again. The page also opens from a link on the language card and from the address #vitality.",
-     "Maps opens an overview of all colour maps with previews: script, vitality and 24 typological features from WALS. Choosing a map closes the window and colours the globe.",
-     "Settings: automatic rotation, language names and sign languages (all, none or only these).",
-     "Zoom in and out (+ and −) and the Whole world button sit discreetly at the top right of the globe, below the help question mark; on a phone, pinch with two fingers to zoom."
+     "הכפתורים העגולים מתחת לגלובוס (בשתי שורות בטלפון) פותחים את החלקים העיקריים של האטלס: \"שפות עתיקות\", \"סיפורי שפות\", \"עץ המשפחה\", \"מפות\", \"חיוניות\" ו\"הגדרות\". הכפתור \"שפה אקראית\" נמצא בכותרת רשימת השפות, ליד מספר השפות, ופותח את הכרטיס של שפה שנבחרה באקראי.",
+     "\"עץ המשפחה\" מציג את העץ דמוי המניפה של משפחת שפות: כשנבחרה שפה – את המשפחה שלה, ואחרת את המשפחה שנבחרה בתפריט שלמעלה. גררו כדי להזיז, השתמשו בגלגלת או בשתי אצבעות לזום, לחצו על ענף כדי להתמקד בו ועל שפה כדי לבחור בה. הכפתור \"סקירה מעגלית\" מציע תצוגה אחרת של כל המשפחות בבת אחת: רוחב המקטע הוא מספר השפות; לחצו על מקטע או על שורה ברשימה כדי להעמיק, ועל מרכז העיגול כדי לחזור רמה אחת למעלה. משפחות שיש בהן פחות מ-25 שפות נמצאות תחת \"משפחות קטנות יותר\"; שפות מבודדות, שפות סימנים, שפות מלאכותיות ופידג'ינים – תחת \"מחוץ למשפחות\". \"חזרה לעץ\" או \"פתיחת עץ המשפחה\" מחזירים למניפה.",
+     "\"חיוניות\" פותח דף על סכנת ההכחדה של שפות: מספר השפות בכל דרגה של סולם UNESCO, הפילוח לפי אזורי העולם ולפי חמש עשרה משפחות השפות הגדולות ביותר (עם קישור לעץ המשפחה), שפות בסכנת הכחדה באטלס, שפות מתעוררות, והשיטה והמקורות. משם אפשר לצבוע את הגלובוס ואת עץ המשפחה לפי חיוניות – העץ מראה אז אילו ענפים של משפחה נמצאים בסכנת הכחדה או נכחדו – ולסמן אילו דרגות יישארו גלויות (מסנן). כשהצבעים מופעלים, מתחת לגלובוס מופיע מקרא; לחצו עליו כדי לפתוח את הדף שוב. הדף נפתח גם מקישור בכרטיס השפה ומהכתובת #vitality.",
+     "\"מפות\" פותח סקירה של כל המפות הצבעוניות עם תצוגות מקדימות: כתב, חיוניות ו-24 תכונות טיפולוגיות מ-WALS. בחירת מפה סוגרת את החלון וצובעת את הגלובוס.",
+     "\"הגדרות\": סיבוב אוטומטי, שמות שפות ושפות סימנים (כולן, אף אחת או רק הן).",
+     "התקרבות והתרחקות (+ ו-−) והכפתור \"העולם כולו\" נמצאים בצורה לא בולטת בפינה הימנית העליונה של הגלובוס, מתחת לסימן השאלה של העזרה; בטלפון עושים זום בצביטה בשתי אצבעות."
     ]
    },
    {
-    "h": "Typology maps (WALS)",
+    "h": "מפות טיפולוגיות (WALS)",
     "p": [
-     "In the Maps window you can choose one of 24 features in five areas (phonology, morphology, word order, clause structure, lexicon). The languages take the colour of their value and a key appears at the bottom right with the number of languages, a description of the feature and a link to the relevant WALS chapter.",
-     "After a choice the window closes; Another map… in the key or the Maps medallion opens it again. Clicking a value in the key highlights only the languages with that value. WALS describes a sample of about 2,600 languages; the other dots stay grey."
+     "בחלון \"מפות\" אפשר לבחור אחת מ-24 תכונות בחמישה תחומים (פונולוגיה, מורפולוגיה, סדר מילים, מבנה המשפט, לקסיקון). השפות מקבלות את צבע הערך שלהן, ובפינה הימנית התחתונה מופיע מקרא עם מספר השפות, תיאור התכונה וקישור לפרק הרלוונטי ב-WALS.",
+     "לאחר הבחירה החלון נסגר; \"מפה אחרת…\" במקרא או המדליון \"מפות\" פותחים אותו שוב. לחיצה על ערך במקרא מדגישה רק את השפות שיש להן ערך זה. WALS מתאר מדגם של כ-2,600 שפות; שאר הנקודות נשארות אפורות."
     ]
    },
    {
-    "h": "Map of scripts",
+    "h": "מפת הכתבים",
     "p": [
-     "The Script map (in the Maps window) colours languages by their main script: Latin, Cyrillic, Arabic, Brahmic scripts (India, Southeast Asia, Tibet), Chinese characters with kana and bopomofo, and other scripts. The legend at the bottom right gives the number of languages; tapping a group highlights it alone.",
-     "The script map also shows the areas of 36 living scripts and their names with a sample written in the script itself (Abc, Абв, अआइ…). Tapping a name or a coloured area opens the script card (with a group highlighted, only scripts from it): type (alphabet, abjad, abugida, syllabary, logographic), writing direction, a short note on its origin, the atlas languages written in it and the countries where it writes an official language; the Language at this spot button opens the language you tapped. A link such as thelanguageatlas.com/#pismo-latn opens the card as well.",
-     "The data come from Unicode CLDR. For languages about which CLDR keeps detailed data the script is attested; for the rest it is a CLDR estimate (the script in which the language is written, if it is written at all), and the language card marks it as such. The script map and a typological map are not shown at the same time."
+     "מפת \"כתב\" (בחלון \"מפות\") צובעת את השפות לפי הכתב העיקרי שלהן: לטיני, קירילי, ערבי, כתבים ברהמיים (הודו, דרום-מזרח אסיה, טיבט), סימנים סיניים עם קאנה ובופומופו, וכתבים אחרים. המקרא בפינה הימנית התחתונה מציג את מספר השפות; הקשה על קבוצה מדגישה רק אותה.",
+     "מפת הכתבים מציגה גם את האזורים של 36 כתבים חיים ואת שמותיהם עם דוגמה הכתובה בכתב עצמו (Abc, Абв, अआइ…). הקשה על שם או על אזור צבוע פותחת את כרטיס הכתב (כשקבוצה מודגשת – רק כתבים מתוכה): סוג (אלפבית, אבג'ד, אבוגידה, כתב הברתי, כתב לוגוגרפי), כיוון הכתיבה, הערה קצרה על מוצאו, שפות האטלס הנכתבות בו והמדינות שבהן הוא משמש לכתיבת שפה רשמית; הכפתור \"השפה במקום הזה\" פותח את השפה שעליה הקשתם. גם קישור כגון thelanguageatlas.com/#pismo-latn פותח את הכרטיס.",
+     "הנתונים לקוחים מ-Unicode CLDR. בשפות ש-CLDR מחזיק עליהן נתונים מפורטים הכתב מתועד; בשאר השפות זוהי הערכה של CLDR (הכתב שבו השפה נכתבת, אם היא נכתבת בכלל), וכרטיס השפה מסמן אותה ככזו. מפת הכתבים ומפה טיפולוגית אינן מוצגות בו-זמנית."
     ]
    },
    {
-    "h": "Comparing two languages",
+    "h": "השוואה בין שתי שפות",
     "p": [
-     "On a language card choose Compare with another language and select the second language on the globe, in the list or by searching. The comparison shows the relationship and the closest common ancestor, shared and differing WALS features, sound inventories, speaker numbers and script."
+     "בכרטיס שפה בחרו \"השוואה לשפה אחרת\", ואז בחרו את השפה השנייה על הגלובוס, ברשימה או בחיפוש. ההשוואה מציגה את הקרבה ואת האב הקדמון המשותף הקרוב ביותר, תכונות WALS משותפות ושונות, מלאי צלילים, מספרי דוברים וכתב."
     ]
    },
    {
-    "h": "Languages of antiquity",
+    "h": "שפות העת העתיקה",
     "p": [
-     "The Ancient languages medallion below the globe opens the menu of civilizations; the search also finds them, for example “egypt”. Each item opens a civilization page focused on language and script: history, sample signs, the story of decipherment, related words, grammar, a timeline, photographs and literature. Two overviews come first in the menu: the family tree of scripts (where each alphabet came from, with a table of the word “king” in twenty scripts) and a glossary of terms (abjad, abugida, determinative, boustrophedon…). Pages on Sumer and Akkad, Ancient Egypt, Elam and Urartu, Ancient India, the Hittites, Ancient China, the Phoenicians, the Hebrews and Arameans, Ancient Greece, the Celts, the Etruscans, Ancient Persia, Ancient Rome, the Armenians and Georgians, the Germanic peoples and runes, Aksum, Korea and Hangul, the Göktürks and the Orkhon script, Japan and kana, the Slavs and Great Moravia, the Maya, the Aztecs and the Incas are ready so far.",
-     "The page opens above the globe; close it with the cross, the Escape key or by tapping outside it. The “‹ Languages of antiquity” button at the top left returns to the list of civilizations, and the end of each page links to the others. The buttons in the section on languages on the globe show the extinct languages concerned on the globe. The page can also be opened from the language card (for example of Egyptian, Coptic, Hittite or Luwian) and with the links thelanguageatlas.com/#egypt and #hittites; on the website it is also a separate page."
+     "המדליון \"שפות עתיקות\" מתחת לגלובוס פותח את תפריט התרבויות; גם החיפוש מוצא אותן, למשל \"מצרים\". כל פריט פותח דף תרבות המתמקד בשפה ובכתב: היסטוריה, סימנים לדוגמה, סיפור הפענוח, מילים קשורות, דקדוק, ציר זמן, תצלומים וספרות. בראש התפריט שתי סקירות: עץ המשפחה של הכתבים (מאין בא כל אלפבית, עם טבלה של המילה \"מלך\" בעשרים כתבים) ומילון מונחים (אבג'ד, אבוגידה, דטרמיננטיב, בוסטרופדון…). עד כה מוכנים דפים על שומר ואכד, מצרים העתיקה, עילם ואורארטו, הודו העתיקה, החתים, סין העתיקה, הפיניקים, העברים והארמים, יוון העתיקה, הקלטים, האטרוסקים, פרס העתיקה, רומא העתיקה, הארמנים והגאורגים, העמים הגרמאניים והרונות, אקסום, קוריאה והאנגול, הגוקטורקים וכתב אורחון, יפן והקאנה, הסלאבים ומוראביה רבתי, המאיה, האצטקים והאינקה.",
+     "הדף נפתח מעל הגלובוס; סוגרים אותו באיקס, במקש Escape או בהקשה מחוץ לו. הכפתור \"‹ שפות העת העתיקה\" בפינה השמאלית העליונה מחזיר לרשימת התרבויות, ובסוף כל דף יש קישורים לדפים האחרים. הכפתורים בסעיף על השפות על הגלובוס מציגים על הגלובוס את השפות הנכחדות הנוגעות בדבר. אפשר לפתוח את הדף גם מכרטיס השפה (למשל של מצרית, קופטית, חתית או לווית) ובקישורים thelanguageatlas.com/#egypt ו-#hittites; באתר הוא גם דף נפרד."
     ]
    },
    {
-    "h": "Language stories",
+    "h": "סיפורי שפות",
     "p": [
-     "The Language stories medallion below the globe opens the menu of stories: thematic pages in the same style as Languages of antiquity, grouped into Travelling words, Journeys of languages, Languages through time, People and languages, and Mysteries. Ready so far: Tea and other travelling words (why the world says either “cha” or “tea”), From Latin to the Romance languages, Languages coming back (Welsh, Māori, Manx, Hebrew) and Linguistic mysteries (undeciphered scripts, language isolates and disputed families).",
-     "The Show on the globe button on the tea page closes the page and colours the globe with the WALS map of the origin of the word for tea. The search finds the stories too (for example “tea”); links look like thelanguageatlas.com/#tea, and on the website each story is also a separate page under /stories/.",
-     "The page about tea has a section Word journeys on the globe with buttons for tea, coffee, sugar, orange, chocolate, tomato, check and mate, alcohol, zero and cipher, and shampoo. The globe flies over the area the word travelled through and arcs are drawn step by step from the source language; the word form and the language appear at each dot. A dashed arc marks a disputed route. The panel at the top right (below the globe on a phone) lists the steps with dates and notes; tapping a step opens the language card. Play again repeats the animation and the other buttons switch to another word. Close it with the cross, the Escape key or the Whole world button; links look like #cesta-caj."
+     "המדליון \"סיפורי שפות\" מתחת לגלובוס פותח את תפריט הסיפורים: דפים נושאיים באותו סגנון כמו \"שפות העת העתיקה\", המקובצים תחת \"מילים נודדות\", \"מסעות של שפות\", \"שפות לאורך הזמן\", \"אנשים ושפות\" ו\"תעלומות\". מוכנים עד כה: \"תה ומילים נודדות אחרות\" (מדוע העולם אומר \"צ'ה\" או \"טי\"), \"מלטינית לשפות הרומאניות\", \"שפות שחוזרות\" (ולשית, מאורית, מאנית, עברית) ו\"תעלומות לשוניות\" (כתבים שלא פוענחו, שפות מבודדות ומשפחות שנויות במחלוקת).",
+     "הכפתור \"הצגה על הגלובוס\" בדף על התה סוגר את הדף וצובע את הגלובוס במפת WALS של מקור המילה לתה. גם החיפוש מוצא את הסיפורים (למשל \"תה\"); הקישורים נראים כמו thelanguageatlas.com/#tea, ובאתר כל סיפור הוא גם דף נפרד תחת /stories/.",
+     "בדף על התה יש סעיף \"מסעות מילים על הגלובוס\" עם כפתורים לתה, קפה, סוכר, תפוז, שוקולד, עגבנייה, שח ומט, אלכוהול, אפס וצופן, ושמפו. הגלובוס עף מעל האזור שדרכו נדדה המילה, וקשתות משורטטות צעד אחר צעד משפת המקור; צורת המילה והשפה מופיעות ליד כל נקודה. קשת מקווקוות מסמנת מסלול שנוי במחלוקת. הלוח בפינה הימנית העליונה (מתחת לגלובוס בטלפון) מפרט את השלבים עם תאריכים והערות; הקשה על שלב פותחת את כרטיס השפה. \"הפעלה חוזרת\" מריץ שוב את ההנפשה, והכפתורים האחרים עוברים למילה אחרת. סוגרים באיקס, במקש Escape או בכפתור \"העולם כולו\"; הקישורים נראים כמו #cesta-caj."
     ]
    },
    {
-    "h": "Journeys of languages",
+    "h": "מסעות של שפות",
     "p": [
-     "Journeys show on the globe how one language developed from its proto-language to the present: coloured streams spread across the map stage by stage, areas fill in, and earlier stages stay faintly visible as layers of history. Disputed interpretations are drawn dashed. There are journeys of English, Aramaic, Czech, French, German, Hebrew, Hungarian, Italian, Kurdish, Maltese, Māori (with a detour to Madagascar), Navajo, Romani, Spanish, Turkish and Yiddish. The journey of the alphabet follows a script instead of a language: how an Egyptian picture of an ox head became the letter A via the Phoenicians, Greeks and Romans; each stage shows the letter of its time on the map. It also opens from the legend of the Script map and from a script card.",
-     "A journey opens from the Journeys of languages group in Language stories, with the button on a language card named after the journey, such as The journey of English (Interesting fact tab), or with a link such as thelanguageatlas.com/#journey-english.",
-     "The panel on the right (below the globe on a phone) has a play and pause button, a timeline slider and a list of stages with their dates and text; tapping a stage shows it in full and pauses playback. Sources are listed below the stages. A journey is closed with the cross, the Escape key, the Whole world button or by selecting another language."
+     "המסעות מראים על הגלובוס כיצד שפה אחת התפתחה מהפרוטו-שפה שלה ועד ימינו: זרמים צבעוניים מתפשטים על פני המפה שלב אחר שלב, אזורים מתמלאים, והשלבים המוקדמים נשארים גלויים במעומעם כשכבות של היסטוריה. פרשנויות שנויות במחלוקת משורטטות בקו מקווקו. יש מסעות של אנגלית, ארמית, צ'כית, צרפתית, גרמנית, עברית, הונגרית, איטלקית, כורדית, מלטית, מאורית (עם עיקוף למדגסקר), נאוואחו, רומאני, ספרדית, טורקית ויידיש. מסע האלפבית עוקב אחר כתב במקום אחר שפה: כיצד ציור מצרי של ראש שור הפך לאות A דרך הפיניקים, היוונים והרומאים; כל שלב מציג על המפה את האות של תקופתו. הוא נפתח גם מהמקרא של מפת \"כתב\" ומכרטיס של כתב.",
+     "מסע נפתח מהקבוצה \"מסעות של שפות\" ב\"סיפורי שפות\", מהכפתור בכרטיס השפה הנקרא על שם המסע, כמו \"המסע של האנגלית\" (לשונית \"עובדה מעניינת\"), או מקישור כגון thelanguageatlas.com/#journey-english.",
+     "בלוח מימין (מתחת לגלובוס בטלפון) יש כפתור הפעלה והשהיה, מחוון של ציר הזמן ורשימת שלבים עם התאריכים והטקסט שלהם; הקשה על שלב מציגה אותו במלואו ומשהה את ההפעלה. המקורות מפורטים מתחת לשלבים. סוגרים מסע באיקס, במקש Escape, בכפתור \"העולם כולו\" או בבחירת שפה אחרת."
     ]
    },
    {
-    "h": "Keyboard",
+    "h": "מקלדת",
     "p": [
-     "Tab moves between controls. One Tab enters the language list; the arrow keys move between tiles, Home and End jump to the start and end, and Enter selects a language.",
-     "The + and − keys zoom the globe. Escape closes a window, the card or a panel."
+     "Tab עובר בין הפקדים. Tab אחד נכנס לרשימת השפות; מקשי החצים עוברים בין האריחים, Home ו-End קופצים להתחלה ולסוף, ו-Enter בוחר שפה.",
+     "המקשים + ו-− משנים את הזום של הגלובוס. Escape סוגר חלון, את הכרטיס או לוח."
     ]
    },
    {
-    "h": "About, sources, contact, guide and calendar",
+    "h": "אודות, מקורות, יצירת קשר, מדריך ולוח שנה",
     "p": [
-     "At the end of the language list (on a phone, at the end of the page) there is a folded line: About, sources, contact, guide and calendar. Click it to expand it.",
-     "Calendar of language days: the days of the year associated with a particular language (language days, public holidays, anniversaries). It opens at the nearest day; click a language to show it on the globe.",
-     "About the data: the sources (Glottolog, WALS, PHOIBLE, Wikidata, Unicode CLDR and others), their versions and licences, and why the list has more entries than there are dots on the globe.",
-     "Full guide: this text.",
-     "Languages with a detailed card (website only): all 164 languages on one page. Each opens as a card; use the arrows to move to the next one.",
-     "Contact: comments and corrections to info@atlasjazyku.cz. Below are the data sources and their licences."
+     "בסוף רשימת השפות (בטלפון – בסוף הדף) יש שורה מקופלת: \"אודות, מקורות, יצירת קשר, מדריך ולוח שנה\". לחצו עליה כדי לפתוח אותה.",
+     "\"לוח ימי השפות\": ימי השנה הקשורים לשפה מסוימת (ימי שפה, חגים רשמיים, ימי שנה). הוא נפתח ביום הקרוב ביותר; לחצו על שפה כדי להציג אותה על הגלובוס.",
+     "\"על הנתונים\": המקורות (Glottolog, WALS, PHOIBLE, Wikidata, Unicode CLDR ואחרים), הגרסאות והרישיונות שלהם, ומדוע ברשימה יש יותר רשומות מנקודות על הגלובוס.",
+     "\"המדריך המלא\": הטקסט הזה.",
+     "\"שפות עם כרטיס מפורט\" (באתר בלבד): כל 164 השפות בדף אחד. כל אחת נפתחת ככרטיס; השתמשו בחצים כדי לעבור לבאה.",
+     "יצירת קשר: הערות ותיקונים לכתובת info@atlasjazyku.cz. מתחת מופיעים מקורות הנתונים והרישיונות שלהם."
     ]
    },
    {
-    "h": "More",
+    "h": "עוד",
     "p": [
-     "In the top right you can switch the interface language (Česky) and the light or dark theme. Your choices are saved.",
-     "Search also knows languages constructed for literature and film (such as Quenya or Klingon); they are shown separately from natural languages."
+     "בפינה הימנית העליונה אפשר להחליף את שפת הממשק (Česky) ואת ערכת הנושא הבהירה או הכהה. הבחירות שלכם נשמרות.",
+     "החיפוש מכיר גם שפות שנבנו לספרות ולקולנוע (כמו קווניה או קלינגונית); הן מוצגות בנפרד מהשפות הטבעיות."
     ]
    }
   ],
   "tajemstvi": {
-   "tlacitko": "Secrets of the atlas",
-   "nadpis": "Secrets of the atlas",
-   "uvod": "The atlas hides a few small things that are not described anywhere else. The passwords can be typed anywhere on the page (outside text fields) or into the search box, which also works on a phone.",
+   "tlacitko": "סודות האטלס",
+   "nadpis": "סודות האטלס",
+   "uvod": "האטלס מסתיר כמה דברים קטנים שאינם מתוארים בשום מקום אחר. את הסיסמאות אפשר להקליד בכל מקום בדף (מחוץ לשדות טקסט) או בתיבת החיפוש, וכך זה עובד גם בטלפון.",
    "polozky": [
     [
-     "Languages of the European Union",
-     "Type “eulang”. The globe flies over Europe, gold stars appear one by one at all 24 official languages of the EU, and a waving flag with the list of languages appears on the right. Link #eulang."
+     "שפות האיחוד האירופי",
+     "הקלידו \"eulang\". הגלובוס עף מעל אירופה, כוכבים זהובים מופיעים בזה אחר זה ליד כל 24 השפות הרשמיות של האיחוד האירופי, ומימין מופיע דגל מתנופף עם רשימת השפות. קישור: #eulang."
     ],
     [
-     "Gate to other worlds",
-     "Type “mellon”, Elvish for “friend” and the password of Durin's Door in The Lord of the Rings. The globe disappears and the worlds of invented languages float among the stars: Klingon, Quenya, Sindarin, Na'vi, Dothraki and High Valyrian. Search finds them too (for example “elf” or “klingon”), and the cards of Finnish and Welsh hold clues to the gate. Link #mellon."
+     "שער לעולמות אחרים",
+     "הקלידו \"mellon\" – \"ידיד\" בשפת האלפים והסיסמה של שער דורין ב\"שר הטבעות\". הגלובוס נעלם, ועולמות השפות המומצאות מרחפים בין הכוכבים: קלינגונית, קווניה, סינדרין, נאבי, דותראקית וואלירית עילית. גם החיפוש מוצא אותן (למשל \"אלפים\" או \"קלינגון\"), ובכרטיסים של פינית ושל ולשית מסתתרים רמזים לשער. קישור: #mellon."
     ],
     [
-     "Confusion of tongues",
-     "Type “babel”. The words on the screen briefly scatter into foreign scripts and a card about the Tower of Babel opens. Link #babel."
+     "בלבול השפות",
+     "הקלידו \"babel\". המילים על המסך מתפזרות לרגע לכתבים זרים, ונפתח כרטיס על מגדל בבל. קישור: #babel."
     ],
     [
-     "Do cetaceans talk?",
-     "Tap the same spot in the ocean three times quickly. A card opens about sperm whale codas, humpback songs, dolphin names and orca dialects – and why none of it has been shown to be a language. Link #cetaceans."
+     "האם לווייתנאים מדברים?",
+     "הקישו שלוש פעמים במהירות על אותה נקודה באוקיינוס. נפתח כרטיס על קודות של ראשתנים, שירת לווייתנים גדולי סנפיר, שמות של דולפינים וניבים של קטלנים – ועל הסיבה שעד כה לא הוכח שאחד מאלה הוא שפה. קישור: #cetaceans."
     ],
     [
-     "The upside-down globe",
-     "Tap The Language Atlas logo seven times quickly. The globe turns upside down, the languages fall off it and then return to their places. It does not run when reduced motion is set on the device."
+     "הגלובוס ההפוך",
+     "הקישו שבע פעמים במהירות על הלוגו של אטלס השפות. הגלובוס מתהפך, השפות נופלות ממנו ואז חוזרות למקומן. האפקט אינו פועל כשבמכשיר מוגדרת הפחתת תנועה."
     ]
    ]
   }
  },
- "navodOdkaz": "Full guide",
- "navodNapoveda": "Full guide – everything the atlas can do",
- "typologie": "Typology (WALS)",
- "typologiePopis": "Maps of language features: word order, cases, tone, consonants…",
- "typologieNadpis": "Language typology",
- "typologieUvod": "After a feature is chosen, the languages on the globe take the colour of its value. The data come from the World Atlas of Language Structures (WALS), which describes a sample of languages – the other dots have no value.",
- "typologieZdroj": "Dryer, Matthew S. & Haspelmath, Martin (eds.) 2013. The World Atlas of Language Structures Online. Leipzig: Max Planck Institute for Evolutionary Anthropology. Licence CC BY 4.0.",
- "typologieVypnout": "Turn off the typology map",
- "typologieBezUdaje": "no WALS data",
- "typologieKapitola": "WALS, chapter {n} · {autor}",
- "typologieOdkaz": "Open in WALS",
- "typologieIzolace": "Highlight only this value (click again to undo)",
- "typologieOPopisu": "About this feature",
- "typologieKarta": "Typology (WALS)",
- "typologieKartaPozn": "Features and values from WALS Online. Only those WALS describes for the language are listed.",
- "typologieNaMape": "Show on the map",
- "typologieJazykuWals": "{n} in the WALS data",
- "typologieJina": "Another map…",
+ "navodOdkaz": "המדריך המלא",
+ "navodNapoveda": "המדריך המלא – כל מה שהאטלס יודע לעשות",
+ "typologie": "טיפולוגיה (WALS)",
+ "typologiePopis": "מפות של תכונות לשוניות: סדר מילים, יחסות, טונים, עיצורים…",
+ "typologieNadpis": "טיפולוגיה לשונית",
+ "typologieUvod": "לאחר בחירת תכונה, השפות על הגלובוס מקבלות את צבע הערך שלהן. הנתונים לקוחים מ-World Atlas of Language Structures (WALS), המתאר מדגם של שפות – לשאר הנקודות אין ערך.",
+ "typologieZdroj": "Dryer, Matthew S. & Haspelmath, Martin (eds.) 2013. The World Atlas of Language Structures Online. Leipzig: Max Planck Institute for Evolutionary Anthropology. רישיון CC BY 4.0.",
+ "typologieVypnout": "כיבוי המפה הטיפולוגית",
+ "typologieBezUdaje": "אין נתוני WALS",
+ "typologieKapitola": "WALS, פרק {n} · {autor}",
+ "typologieOdkaz": "פתיחה ב-WALS",
+ "typologieIzolace": "הדגשת הערך הזה בלבד (לחיצה נוספת מבטלת)",
+ "typologieOPopisu": "על התכונה הזאת",
+ "typologieKarta": "טיפולוגיה (WALS)",
+ "typologieKartaPozn": "תכונות וערכים מ-WALS Online. מפורטות רק התכונות ש-WALS מתאר עבור השפה.",
+ "typologieNaMape": "הצגה על המפה",
+ "typologieJazykuWals": "{n} בנתוני WALS",
+ "typologieJina": "מפה אחרת…",
  "starovek": {
-  "stitek": "Languages of antiquity",
-  "vKostce": "At a glance",
-  "foto": "Photo",
-  "volneDilo": "public domain",
-  "zavrit": "Close page",
-  "karta": "Civilization page: language and script",
-  "pata": "Illustration: The Language Atlas. Photographs: Wikimedia Commons, with authors and licences given beside each image. Text: The Language Atlas, based on the scholarly literature listed above.",
-  "titulek": "{n}: language and script",
-  "zpet": "Back to the globe",
-  "uvod": "Pages on ancient civilizations focused on language and script: history, sample signs, decipherment, photographs. Two overviews come first: the family tree of scripts and a glossary of terms.",
-  "mapaTlacitko": "Show on the globe",
-  "dalsi": "More pages",
-  "prehledUvod": "Pages on ancient civilizations focused on language and script: history, sample signs, decipherment, photographs. More are being added."
+  "stitek": "שפות העת העתיקה",
+  "vKostce": "בקצרה",
+  "foto": "צילום",
+  "volneDilo": "נחלת הכלל",
+  "zavrit": "סגירת הדף",
+  "karta": "דף תרבות: שפה וכתב",
+  "pata": "איור: אטלס השפות. תצלומים: Wikimedia Commons, עם היוצרים והרישיונות ליד כל תמונה. טקסט: אטלס השפות, על סמך הספרות המחקרית המפורטת לעיל.",
+  "titulek": "{n}: שפה וכתב",
+  "zpet": "חזרה לגלובוס",
+  "uvod": "דפים על תרבויות קדומות המתמקדים בשפה ובכתב: היסטוריה, סימנים לדוגמה, פענוח, תצלומים. בראש מופיעות שתי סקירות: עץ המשפחה של הכתבים ומילון מונחים.",
+  "mapaTlacitko": "הצגה על הגלובוס",
+  "dalsi": "דפים נוספים",
+  "prehledUvod": "דפים על תרבויות קדומות המתמקדים בשפה ובכתב: היסטוריה, סימנים לדוגמה, פענוח, תצלומים. דפים נוספים מתווספים בהדרגה."
  },
  "pribehy": {
-  "stitek": "Language stories",
-  "uvod": "Thematic pages about languages: how words travel between languages, how languages change, how they come back and what linguistics still does not know.",
+  "stitek": "סיפורי שפות",
+  "uvod": "דפים נושאיים על שפות: איך מילים נודדות בין שפות, איך שפות משתנות, איך הן חוזרות ומה הבלשנות עדיין אינה יודעת.",
   "skupiny": {
-   "slova": "Travelling words",
-   "promeny": "Languages through time",
-   "lide": "People and languages",
-   "zahady": "Mysteries",
-   "putovani": "Journeys of languages"
+   "slova": "מילים נודדות",
+   "promeny": "שפות לאורך הזמן",
+   "lide": "אנשים ושפות",
+   "zahady": "תעלומות",
+   "putovani": "מסעות של שפות"
   }
  },
- "cestaNadpis": "The journey of the word {s}",
- "putZavrit": "Close the language journey",
- "putOsa": "Timeline",
- "putHraj": "Play",
- "putPauza": "Pause",
- "putZdroje": "Sources:",
- "cestaZavrit": "Close the word journey",
- "cestaZnovu": "Play again",
- "cestaPribeh": "Story: {n}",
- "cestaTlacitko": "Journey on the globe",
- "rozcestnik": "Atlas sections",
- "medStarovek": "Ancient languages",
- "medPribehy": "Language stories",
- "medMapy": "Maps",
- "mapyUvod": "A colour map colours the language dots on the globe by one property; only one can be on at a time. The legend at the bottom right (below the globe on a phone) gives the colours, language counts and source. The typological maps are based on the World Atlas of Language Structures (WALS), which describes a selected sample of languages – the other dots have no data.",
- "mapyVypnout": "Turn off the colour map",
- "mapyPrehled": "Script and vitality",
- "mapyPismoPopis": "main script of the language · Unicode CLDR",
- "mapyVitalitaPopis": "degree of endangerment · UNESCO, Glottolog",
- "medVRodokmenu": "Colour maps are not available in the family tree – switch back to the globe",
+ "cestaNadpis": "המסע של המילה {s}",
+ "putZavrit": "סגירת מסע השפה",
+ "putOsa": "ציר זמן",
+ "putHraj": "הפעלה",
+ "putPauza": "השהיה",
+ "putZdroje": "מקורות:",
+ "cestaZavrit": "סגירת מסע המילה",
+ "cestaZnovu": "הפעלה חוזרת",
+ "cestaPribeh": "סיפור: {n}",
+ "cestaTlacitko": "מסע על הגלובוס",
+ "rozcestnik": "מדורי האטלס",
+ "medStarovek": "שפות עתיקות",
+ "medPribehy": "סיפורי שפות",
+ "medMapy": "מפות",
+ "mapyUvod": "מפה צבעונית צובעת את נקודות השפות על הגלובוס לפי תכונה אחת; אפשר להפעיל רק מפה אחת בכל פעם. המקרא בפינה הימנית התחתונה (מתחת לגלובוס בטלפון) מציג את הצבעים, את מספרי השפות ואת המקור. המפות הטיפולוגיות מבוססות על World Atlas of Language Structures (WALS), המתאר מדגם נבחר של שפות – לשאר הנקודות אין נתונים.",
+ "mapyVypnout": "כיבוי המפה הצבעונית",
+ "mapyPrehled": "כתב וחיוניות",
+ "mapyPismoPopis": "הכתב העיקרי של השפה · Unicode CLDR",
+ "mapyVitalitaPopis": "דרגת הסכנה · UNESCO, Glottolog",
+ "medVRodokmenu": "מפות צבעוניות אינן זמינות בעץ המשפחה – חזרו לגלובוס",
  "vitStranka": {
-  "nadpis": "Language vitality",
-  "podtitul": "How endangered the world’s languages are · the UNESCO scale",
-  "uvod": "Vitality describes whether a language is being passed on to the next generation. The atlas uses UNESCO’s six-degree scale, from safe to extinct, and separately marks awakening languages – languages that Glottolog lists as extinct but that people are learning and using again. The data come from Glottolog and cover all {n} languages on the globe.",
-  "cislaBezpecne": "safe",
-  "cislaOhrozene": "endangered (vulnerable to critically endangered)",
-  "cislaVymrele": "extinct",
-  "cislaProbouzene": "awakening",
-  "souhrn": "{n} languages, or {p} of all languages on the globe, are endangered to some degree.",
-  "barvyZap": "Colour the globe and family tree by vitality",
-  "barvyVyp": "Turn off vitality colours",
-  "stupneH": "Degrees of vitality",
-  "stupneUvod": "The length of each bar gives the number of languages. Ticked degrees stay visible on the globe, in the family tree, in the list and in search; untick a degree to hide its languages (the filter works without the colours too).",
-  "filtrTitulek": "Show or hide the languages of this degree",
-  "filtrVse": "All",
-  "filtrOhrozene": "Endangered only",
-  "bezUdajePopis": "Glottolog gives no degree of endangerment for the language.",
-  "oblastiH": "By world region",
-  "oblastiUvod": "The regions are Glottolog’s macroareas. The bar shows the share of the region’s languages at each degree (colours as above).",
+  "nadpis": "חיוניות השפות",
+  "podtitul": "עד כמה שפות העולם נמצאות בסכנת הכחדה · סולם UNESCO",
+  "uvod": "החיוניות מתארת אם שפה מועברת לדור הבא. האטלס משתמש בסולם בן שש הדרגות של UNESCO, מבטוחה ועד נכחדה, ומסמן בנפרד שפות מתעוררות – שפות ש-Glottolog מונה כנכחדות, אבל אנשים לומדים אותן ומשתמשים בהן שוב. הנתונים לקוחים מ-Glottolog ומכסים את כל {n} השפות על הגלובוס.",
+  "cislaBezpecne": "בטוחות",
+  "cislaOhrozene": "בסכנת הכחדה (מפגיעות ועד בסכנה קריטית)",
+  "cislaVymrele": "נכחדות",
+  "cislaProbouzene": "מתעוררות",
+  "souhrn": "{n} שפות, שהן {p} מכלל השפות על הגלובוס, נמצאות בסכנת הכחדה במידה כלשהי.",
+  "barvyZap": "צביעת הגלובוס ועץ המשפחה לפי חיוניות",
+  "barvyVyp": "כיבוי צבעי החיוניות",
+  "stupneH": "דרגות החיוניות",
+  "stupneUvod": "אורך כל פס מציין את מספר השפות. דרגות מסומנות נשארות גלויות על הגלובוס, בעץ המשפחה, ברשימה ובחיפוש; בטלו את הסימון של דרגה כדי להסתיר את השפות שלה (המסנן פועל גם בלי הצבעים).",
+  "filtrTitulek": "הצגה או הסתרה של השפות בדרגה זו",
+  "filtrVse": "הכול",
+  "filtrOhrozene": "רק בסכנת הכחדה",
+  "bezUdajePopis": "Glottolog אינו מציין דרגת סכנה לשפה זו.",
+  "oblastiH": "לפי אזורי העולם",
+  "oblastiUvod": "האזורים הם אזורי-העל של Glottolog. הפס מציג את חלקן של שפות האזור בכל דרגה (הצבעים כמו למעלה).",
   "oblastiSloupce": [
-   "Region",
-   "Languages",
-   "Endangered",
-   "Extinct"
+   "אזור",
+   "שפות",
+   "בסכנת הכחדה",
+   "נכחדות"
   ],
-  "rodinyH": "By language family",
-  "rodinyUvod": "The fifteen largest language families in Glottolog (excluding isolates, sign languages and groupings that are not families). The button opens the family tree; with vitality colours on, its languages are coloured by degree, so you can see which branches are endangered or extinct.",
+  "rodinyH": "לפי משפחת שפות",
+  "rodinyUvod": "חמש עשרה משפחות השפות הגדולות ביותר ב-Glottolog (ללא שפות מבודדות, שפות סימנים וקיבוצים שאינם משפחות). הכפתור פותח את עץ המשפחה; כשצבעי החיוניות מופעלים, השפות בו צבועות לפי דרגה, כך שאפשר לראות אילו ענפים נמצאים בסכנת הכחדה או נכחדו.",
   "rodinySloupce": [
-   "Family",
-   "Languages",
-   "Endangered",
-   "Extinct"
+   "משפחה",
+   "שפות",
+   "בסכנת הכחדה",
+   "נכחדות"
   ],
-  "atlasH": "Endangered languages in the atlas",
-  "atlasUvod": "Languages with a detailed card that Glottolog lists as endangered to some degree or as awakening, most endangered first. Click to open the language card.",
-  "probouzeneH": "Awakening languages",
-  "probouzeneUvod": "There are {n} awakening languages. Glottolog classifies them as extinct, but people are learning and using them again. Glottolog does not treat this as a separate degree; the atlas recognises them from the note “Awakening” (Catalogue of Endangered Languages) or “Reawakening” (Ethnologue) that Glottolog carries over from the original source. Click a language to show it on the globe.",
-  "pribehStitek": "Language stories",
-  "metodikaH": "Method and sources",
+  "atlasH": "שפות בסכנת הכחדה באטלס",
+  "atlasUvod": "שפות עם כרטיס מפורט ש-Glottolog מונה כנמצאות בסכנת הכחדה במידה כלשהי או כמתעוררות; הנתונות בסכנה הגדולה ביותר מופיעות ראשונות. לחצו כדי לפתוח את כרטיס השפה.",
+  "probouzeneH": "שפות מתעוררות",
+  "probouzeneUvod": "יש {n} שפות מתעוררות. Glottolog מסווג אותן כנכחדות, אבל אנשים לומדים אותן ומשתמשים בהן שוב. Glottolog אינו רואה בכך דרגה נפרדת; האטלס מזהה אותן לפי ההערה \"Awakening\" (Catalogue of Endangered Languages) או \"Reawakening\" (Ethnologue), ש-Glottolog מעתיק מהמקור המקורי. לחצו על שפה כדי להציג אותה על הגלובוס.",
+  "pribehStitek": "סיפורי שפות",
+  "metodikaH": "שיטה ומקורות",
   "metodika": [
-   "The degrees follow the intergenerational transmission criterion in the UNESCO expert group document Language Vitality and Endangerment (2003). Their names and descriptions follow the Atlas of the World’s Languages in Danger (Moseley 2010), which adopted the scale and renamed two degrees (unsafe to vulnerable, definitively to definitely endangered).",
-   "Glottolog gives most languages an Agglomerated Endangerment Status (AES), compiled mainly from UNESCO, Ethnologue and the Catalogue of Endangered Languages (ElCat). Each of its degrees corresponds to exactly one UNESCO degree: not endangered = safe, threatened = vulnerable, shifting = definitely endangered, moribund = severely endangered, nearly extinct = critically endangered, extinct = extinct.",
-   "The assessments date from different years and the sources sometimes disagree, so the degree is an indication rather than a precise measurement. The extinct languages include languages known only from historical records, such as Hittite and Sumerian, as well as Latin, which has no native speakers although it is still used as a second language (for example by the Holy See). {n} languages have no data. The Glottolog data were downloaded on {d}."
+   "הדרגות מבוססות על קריטריון ההעברה הבין-דורית במסמך Language Vitality and Endangerment (2003) של קבוצת המומחים של UNESCO. שמותיהן ותיאוריהן הולכים בעקבות Atlas of the World’s Languages in Danger (Moseley 2010), שאימץ את הסולם ושינה את שמותיהן של שתי דרגות (unsafe ל-vulnerable, definitively ל-definitely endangered).",
+   "Glottolog מעניק לרוב השפות סטטוס סכנה מצטבר (Agglomerated Endangerment Status, AES), המורכב בעיקר מנתוני UNESCO, Ethnologue ו-Catalogue of Endangered Languages (ElCat). כל אחת מדרגותיו תואמת בדיוק דרגה אחת של UNESCO: not endangered = בטוחה, threatened = פגיעה, shifting = בסכנה ודאית, moribund = בסכנה חמורה, nearly extinct = בסכנה קריטית, extinct = נכחדה.",
+   "ההערכות נעשו בשנים שונות והמקורות חלוקים לעתים ביניהם, ולכן הדרגה היא אינדיקציה ולא מדידה מדויקת. בין השפות הנכחדות נמנות שפות הידועות רק מתעודות היסטוריות, כמו חתית ושומרית, וכן לטינית, שאין לה דוברי שפת אם אף שהיא עדיין משמשת כשפה שנייה (למשל בכס הקדוש). ל-{n} שפות אין נתונים. נתוני Glottolog הורדו ב-{d}."
   ],
   "zdroje": [
    "UNESCO Ad Hoc Expert Group on Endangered Languages (2003): Language Vitality and Endangerment. Paris: UNESCO.",
@@ -821,177 +821,177 @@
    "Catalogue of Endangered Languages (ElCat). University of Hawaiʻi at Mānoa. https://www.endangeredlanguages.com",
    "Eberhard, David M.; Simons, Gary F.; Fennig, Charles D. (eds.): Ethnologue: Languages of the World. Dallas: SIL International."
   ],
-  "odkazKarta": "Vitality of the world’s languages ›"
+  "odkazKarta": "חיוניות שפות העולם ›"
  },
- "stromVse": "Circular overview",
- "stromZpet": "Back to the tree",
- "prehledPlatno": "Circular overview of language families: the width of a segment is the number of languages. Click a segment to go deeper, click the centre to go up one level.",
- "prehledKde": "Where you are in the overview",
- "prehledOtevrit": "Open the family tree",
+ "stromVse": "סקירה מעגלית",
+ "stromZpet": "חזרה לעץ",
+ "prehledPlatno": "סקירה מעגלית של משפחות השפות: רוחב המקטע הוא מספר השפות. לחצו על מקטע כדי להעמיק, ועל המרכז כדי לעלות רמה אחת.",
+ "prehledKde": "המיקום הנוכחי בסקירה",
+ "prehledOtevrit": "פתיחת עץ המשפחה",
  "prehled": {
-  "svet": "Languages of the world",
-  "mensi": "Smaller families",
-  "mimo": "Outside families",
-  "izolovane": "Isolates",
-  "znakove": "Sign languages",
-  "pidziny": "Pidgins",
-  "smisene": "Mixed languages",
-  "umele": "Artificial languages",
-  "mluvy": "Speech registers",
-  "nezarazene": "Unclassified languages",
-  "nedolozene": "Unattested languages",
-  "vyse": "‹ one level up",
+  "svet": "שפות העולם",
+  "mensi": "משפחות קטנות יותר",
+  "mimo": "מחוץ למשפחות",
+  "izolovane": "שפות מבודדות",
+  "znakove": "שפות סימנים",
+  "pidziny": "פידג'ינים",
+  "smisene": "שפות מעורבות",
+  "umele": "שפות מלאכותיות",
+  "mluvy": "משלבי דיבור",
+  "nezarazene": "שפות לא מסווגות",
+  "nedolozene": "שפות לא מתועדות",
+  "vyse": "‹ רמה אחת למעלה",
   "vetve": [
-   "branch",
-   "branches",
-   "branches"
+   "ענף",
+   "ענפים",
+   "ענפים"
   ],
-  "primo": "{n} directly",
-  "dalsich": "… and {n} more (all are in the circle)",
-  "ostatni": "Other families",
+  "primo": "{n} ישירות",
+  "dalsich": "… ועוד {n} (כל הפריטים מופיעים במעגל)",
+  "ostatni": "משפחות אחרות",
   "legenda": [
    [
     "ie",
-    "Indo-European"
+    "הודו-אירופית"
    ],
    [
     "st",
-    "Sino-Tibetan"
+    "סינו-טיבטית"
    ],
    [
     "an",
-    "Austronesian"
+    "אוסטרונזית"
    ],
    [
     "afro",
-    "Afro-Asiatic"
+    "אפרו-אסיאתית"
    ],
    [
     "nk",
-    "Niger-Congo"
+    "ניז'ר-קונגו"
    ],
    [
     "ost",
-    "Other families"
+    "משפחות אחרות"
    ],
    [
     "mimo",
-    "Outside families"
+    "מחוץ למשפחות"
    ]
   ]
  },
- "mapyPopis": "Colour maps of languages: script, vitality and typology (WALS)",
- "pribehyTlacitko": "Language stories: travelling words, language change, revival and mysteries",
- "starovekTlacitko": "Languages of antiquity: pages on civilizations, their languages and scripts",
+ "mapyPopis": "מפות צבעוניות של שפות: כתב, חיוניות וטיפולוגיה (WALS)",
+ "pribehyTlacitko": "סיפורי שפות: מילים נודדות, שינוי לשוני, החייאה ותעלומות",
+ "starovekTlacitko": "שפות העת העתיקה: דפים על תרבויות, על שפותיהן ועל כתביהן",
  "tajemstvi": {
   "velryby": {
-   "stitek": "Languages of the sea",
-   "nazev": "Do cetaceans talk?",
-   "pozdrav": "•  •  • • •",
-   "prepis": "the “1+1+3” coda of the sperm whales off Dominica",
+   "stitek": "שפות הים",
+   "nazev": "האם לווייתנאים מדברים?",
+   "pozdrav": "•  •  • • •",
+   "prepis": "הקודה \"1+1+3\" של הראשתנים מול חופי דומיניקה",
    "stitky": [
     [
-     "Who",
-     "sperm whale, humpback, dolphin, orca"
+     "מי",
+     "ראשתן, לווייתן גדול סנפיר, דולפין, קטלן"
     ],
     [
-     "Language?",
-     "not yet shown"
+     "שפה?",
+     "טרם הוכח"
     ]
    ],
-   "prehraj": "Play the coda rhythm",
-   "prehrajPozn": "A sketch of the rhythm made of clicks generated in the browser, not a recording.",
+   "prehraj": "השמעת קצב הקודה",
+   "prehrajPozn": "סקיצה של הקצב מנקישות שנוצרות בדפדפן, לא הקלטה.",
    "zalozky": [
     {
-     "nazev": "Whales",
+     "nazev": "לווייתנים",
      "oddily": [
       {
-       "h": "Sperm whales: codas",
+       "h": "ראשתנים: קודות",
        "p": [
-        "The sperm whale (Physeter macrocephalus) communicates with codas – short series of roughly 3 to 40 clicks in a fixed rhythm. They were first described by William Watkins and William Schevill in 1977.",
-        "Females and their young live in stable family units. Units with a similar repertoire of codas form a so-called vocal clan; clans differ much like dialects, and calves most likely learn the repertoire from those around them. Off the island of Dominica in the Caribbean, the typical coda of clan EC1 is “1+1+3”: two spaced clicks followed by three quick ones."
+        "הראשתן (Physeter macrocephalus) מתקשר באמצעות קודות – סדרות קצרות של כ-3 עד 40 נקישות בקצב קבוע. הן תוארו לראשונה בידי ויליאם ווטקינס וויליאם שוויל ב-1977.",
+        "הנקבות וצאצאיהן חיים ביחידות משפחתיות יציבות. יחידות בעלות רפרטואר קודות דומה יוצרות מה שמכונה שבט קולי; השבטים נבדלים זה מזה בדומה לניבים, והעגלים לומדים את הרפרטואר ככל הנראה מסביבתם. מול האי דומיניקה שבקריביים, הקודה האופיינית של השבט EC1 היא \"1+1+3\": שתי נקישות מרווחות ואחריהן שלוש מהירות."
        ]
       },
       {
-       "h": "A phonetic alphabet?",
+       "h": "אלפבית פונטי?",
        "p": [
-        "In 2024 the Project CETI team (Sharma et al., Nature Communications) showed on recordings from Dominica that codas also differ in finer features: tempo, rhythm, gradual lengthening and shortening of successive codas (rubato) and an extra click (ornamentation). These features combine independently, so there are far more distinct codas than was thought.",
-        "The authors speak of a “sperm whale phonetic alphabet”. What the individual combinations mean, nobody knows yet."
+        "ב-2024 הראה צוות Project CETI (Sharma et al., Nature Communications) בהקלטות מדומיניקה שהקודות נבדלות גם בתכונות עדינות יותר: טמפו, קצב, התארכות והתקצרות הדרגתיות של קודות עוקבות (רובאטו) ונקישה נוספת (קישוט). התכונות האלה משתלבות זו בזו באופן בלתי תלוי, ולכן יש הרבה יותר קודות שונות ממה שחשבו.",
+        "המחברים מדברים על \"אלפבית פונטי של הראשתנים\". מה משמעותם של הצירופים השונים – איש עדיין אינו יודע."
        ]
       },
       {
-       "h": "Humpbacks: songs",
+       "h": "לווייתנים גדולי סנפיר: שירים",
        "p": [
-        "Male humpback whales (Megaptera novaeangliae) sing songs lasting from a few minutes to tens of minutes, repeated for hours. They are structured on several levels: individual sounds form phrases, repeated phrases form themes, and themes form the song. They were described by Roger Payne and Scott McVay in 1971.",
-        "The males of one population sing essentially the same song at a given time, and the song gradually changes. In the South Pacific, new songs spread from eastern Australia eastwards from population to population (Garland et al. 2011), much like a cultural fashion."
+        "זכרי הלווייתן גדול הסנפיר (Megaptera novaeangliae) שרים שירים הנמשכים מכמה דקות ועד עשרות דקות, וחוזרים עליהם במשך שעות. השירים בנויים בכמה רמות: צלילים בודדים יוצרים פראזות, פראזות חוזרות יוצרות נושאים, והנושאים יוצרים את השיר. הם תוארו בידי רוג'ר פיין וסקוט מקוויי ב-1971.",
+        "הזכרים של אוכלוסייה אחת שרים בכל זמן נתון בעיקרו של דבר את אותו שיר, והשיר משתנה בהדרגה. בדרום האוקיינוס השקט שירים חדשים מתפשטים ממזרח אוסטרליה מזרחה, מאוכלוסייה לאוכלוסייה (Garland et al. 2011), בדומה לאופנה תרבותית."
        ]
       },
       {
-       "h": "Language-like statistics",
+       "h": "סטטיסטיקה דמוית שפה",
        "p": [
-        "A 2025 study (Arnon et al., Science) split the songs into recurring segments with a method inspired by how infants find words in speech: it placed boundaries where the probability of one sound following another drops. The frequency of the segments follows Zipf’s law, like words in human languages. In experiments with humans such a distribution makes learning easier; it does not mean that the segments carry meaning.",
-        "Humpback song is also on the 1977 Voyager Golden Record: it follows the greetings in 55 human languages, as a backdrop to greetings from UN delegates."
+        "מחקר מ-2025 (Arnon et al., Science) פיצל את השירים למקטעים חוזרים בשיטה בהשראת האופן שבו תינוקות מוצאים מילים בדיבור: הוא הציב גבולות במקומות שבהם יורדת ההסתברות שצליל אחד יבוא אחרי צליל אחר. שכיחות המקטעים מצייתת לחוק זיף, כמו מילים בשפות אנושיות. בניסויים בבני אדם התפלגות כזו מקלה על הלמידה; אין פירוש הדבר שהמקטעים נושאים משמעות.",
+        "שירת הלווייתן גדול הסנפיר מופיעה גם בתקליט הזהב של וויאג'ר מ-1977: היא באה אחרי הברכות ב-55 שפות אנושיות, כרקע לברכות של נציגים באו״ם."
        ]
       }
      ]
     },
     {
-     "nazev": "Dolphins",
+     "nazev": "דולפינים",
      "oddily": [
       {
-       "h": "Dolphin names",
+       "h": "שמות של דולפינים",
        "p": [
-        "A bottlenose dolphin (Tursiops truncatus) has its own so-called signature whistle, which differs from the whistles of others (Caldwell and Caldwell 1965). It develops in the first months of life and often stays with the animal for life (Janik and Sayigh 2013).",
-        "Dolphins occasionally copy another dolphin's signature whistle, mostly that of a close companion they have been separated from (King et al. 2013). Dolphins respond to a playback copy of their own whistle, but not to the whistles of others (King and Janik 2013). It thus works much like a name.",
-        "Dolphins remember the whistles of former companions even after more than twenty years apart (Bruck 2013)."
+        "לדולפינן המצוי (Tursiops truncatus) יש שריקה משלו, מה שמכונה שריקת חתימה, השונה מהשריקות של אחרים (Caldwell and Caldwell 1965). היא מתפתחת בחודשי החיים הראשונים ולעתים קרובות נשארת עם בעל החיים כל חייו (Janik and Sayigh 2013).",
+        "דולפינים מעתיקים לפעמים את שריקת החתימה של דולפין אחר, בדרך כלל של בן לוויה קרוב שהופרדו ממנו (King et al. 2013). דולפינים מגיבים להשמעה של העתק של השריקה שלהם עצמם, אבל לא לשריקות של אחרים (King and Janik 2013). כך היא מתפקדת במידה רבה כמו שם.",
+        "דולפינים זוכרים את השריקות של בני לוויה לשעבר גם אחרי יותר מעשרים שנות פרידה (Bruck 2013)."
        ]
       },
       {
-       "h": "Understanding sentences",
+       "h": "הבנת משפטים",
        "p": [
-        "In the 1980s Louis Herman in Hawaii taught two female bottlenose dolphins artificial languages: Akeakamai a language of gestures and Phoenix one of computer-generated sounds. They understood new sentences too and distinguished word order: taking the surfboard to the hoop is different from taking the hoop to the surfboard (Herman et al. 1984). But this was understanding of a language invented by humans, not the dolphins' own speech."
+        "בשנות ה-80 של המאה ה-20 לימד לואיס הרמן בהוואי שתי נקבות של דולפינן מצוי שפות מלאכותיות: את אקאקמאי – שפת מחוות, ואת פיניקס – שפה של צלילים שנוצרו במחשב. הן הבינו גם משפטים חדשים והבחינו בסדר המילים: לקחת את גלשן הגלים אל החישוק שונה מלקחת את החישוק אל גלשן הגלים (Herman et al. 1984). אבל זו הייתה הבנה של שפה שהמציאו בני אדם, לא הדיבור של הדולפינים עצמם."
        ]
       },
       {
-       "h": "Artificial intelligence",
+       "h": "בינה מלאכותית",
        "p": [
-        "Denise Herzing's Wild Dolphin Project has been recording Atlantic spotted dolphins (Stenella frontalis) in the Bahamas since 1985. In 2025 Google, together with the project and Georgia Tech, presented an AI model called DolphinGemma, which learns the structure of dolphin sounds and is meant to help find recurring patterns in the recordings. No peer-reviewed results have been published yet (as of September 2026)."
+        "פרויקט Wild Dolphin Project של דניז הרזינג מקליט מאז 1985 דולפינים מנוקדים אטלנטיים (Stenella frontalis) באיי בהאמה. ב-2025 הציגה Google, יחד עם הפרויקט ועם Georgia Tech, מודל בינה מלאכותית בשם DolphinGemma, הלומד את מבנה הצלילים של דולפינים ונועד לעזור למצוא דפוסים חוזרים בהקלטות. עד כה לא פורסמו תוצאות שעברו ביקורת עמיתים (נכון לספטמבר 2026)."
        ]
       },
       {
-       "h": "Orcas: family dialects",
+       "h": "קטלנים: ניבים משפחתיים",
        "p": [
-        "The orca or killer whale (Orcinus orca) is the largest of the dolphins. Fish-eating orcas off British Columbia and Washington State live in family groups descended from one mother (matrilines), and each group has its own set of stereotyped calls. Groups that share some of their calls form an acoustic clan (Ford 1991). Calves probably learn the calls from their mothers, and the group keeps them with little change for decades, which is why they are spoken of as dialects."
+        "הקטלן, או האורקה (Orcinus orca), הוא הגדול שבדולפינים. קטלנים אוכלי דגים מול חופי קולומביה הבריטית ומדינת וושינגטון חיים בקבוצות משפחתיות שמוצאן מאם אחת (מטרילינים), ולכל קבוצה מערך קריאות סטריאוטיפיות משלה. קבוצות שחולקות חלק מהקריאות שלהן יוצרות שבט אקוסטי (Ford 1991). העגלים לומדים כנראה את הקריאות מאמותיהם, והקבוצה שומרת עליהן בשינויים קלים במשך עשרות שנים, ולכן מדברים עליהן כעל ניבים."
        ]
       },
       {
-       "h": "Silent hunters",
+       "h": "ציידים שקטים",
        "p": [
-        "Orcas that hunt marine mammals such as seals, sea lions and porpoises (Bigg's orcas) call much less than fish-eaters, probably because their prey would hear them. They call mainly after a successful kill and during play at the surface (Deecke et al. 2005)."
+        "קטלנים שצדים יונקים ימיים כמו כלבי ים, אריות ים ופוקנות (קטלני ביג) קוראים הרבה פחות מאוכלי הדגים, כנראה משום שהטרף שלהם היה שומע אותם. הם קוראים בעיקר אחרי הריגה מוצלחת ובזמן משחק על פני המים (Deecke et al. 2005)."
        ]
       },
       {
-       "h": "Imitation",
+       "h": "חיקוי",
        "p": [
-        "Orcas can imitate unfamiliar sounds. Orcas kept together with bottlenose dolphins began producing more whistles and clicks, as dolphins do, and one picked up a chirp sequence that humans had taught the dolphins (Musser et al. 2014). A captive female, Wikie, imitated human words such as “hello” and “bye bye” (Abramson et al. 2018). That does not mean she understood them."
+        "קטלנים מסוגלים לחקות צלילים לא מוכרים. קטלנים שהוחזקו יחד עם דולפיננים מצויים החלו להפיק יותר שריקות ונקישות, כמו דולפינים, ואחד מהם אימץ רצף ציוצים שבני אדם לימדו את הדולפינים (Musser et al. 2014). נקבה בשבי, ויקי, חיקתה מילים אנושיות כמו \"hello\" ו-\"bye bye\" (Abramson et al. 2018). אין פירוש הדבר שהיא הבינה אותן."
        ]
       }
      ]
     },
     {
-     "nazev": "A language?",
+     "nazev": "שפה?",
      "oddily": [
       {
-       "h": "Not shown",
+       "h": "לא הוכח",
        "p": [
-        "At least not in the sense in which English or British Sign Language is a language. Human language combines units that mean something, according to rules, into ever new utterances. We know that cetacean communication has a complex structure, is passed on by learning and differs between groups much like dialects. Sperm whale codas and orca calls are known to reveal which group the caller belongs to, and dolphin signature whistles work much like names. But we do not know whether codas, humpback songs or orca calls carry word-like meaning, let alone whether they combine into new utterances.",
-        "That is why cetaceans have no dot on the globe: the atlas records human languages according to Glottolog."
+        "לפחות לא במובן שבו עברית או שפת הסימנים הישראלית הן שפות. השפה האנושית מצרפת יחידות בעלות משמעות, לפי כללים, למבעים חדשים תמיד. אנו יודעים שלתקשורת של הלווייתנאים יש מבנה מורכב, שהיא מועברת בלמידה ושהיא נבדלת בין קבוצות בדומה לניבים. ידוע שקודות של ראשתנים וקריאות של קטלנים מגלות לאיזו קבוצה שייך מי שקורא אותן, ושריקות החתימה של דולפינים מתפקדות במידה רבה כמו שמות. אבל איננו יודעים אם לקודות, לשירי הלווייתנים גדולי הסנפיר או לקריאות הקטלנים יש משמעות דמוית מילים, ועל אחת כמה וכמה אם הם מצטרפים למבעים חדשים.",
+        "לכן אין ללווייתנאים נקודה על הגלובוס: האטלס מתעד שפות אנושיות לפי Glottolog."
        ]
       }
      ]
     },
     {
-     "nazev": "Sources",
+     "nazev": "מקורות",
      "zdroje": [
       "Watkins, W. A. – Schevill, W. E. (1977): Sperm whale codas. Journal of the Acoustical Society of America 62: 1485–1490.",
       "Rendell, L. – Whitehead, H. (2003): Vocal clans in sperm whales (Physeter macrocephalus). Proceedings of the Royal Society B 270: 225–231.",
@@ -1015,61 +1015,61 @@
    ]
   },
   "babel": {
-   "stitek": "Confusion of tongues",
-   "nazev": "The Tower of Babel",
+   "stitek": "בלבול השפות",
+   "nazev": "מגדל בבל",
    "pozdrav": "בָּבֶל",
-   "prepis": "Hebrew Bavel, Akkadian Bāb-ili",
+   "prepis": "עברית: בבל; אכדית: Bāb-ili",
    "stitky": [
     [
-     "Where",
-     "Babylon, today Iraq"
+     "היכן",
+     "בבל, כיום עיראק"
     ],
     [
-     "Source",
-     "Genesis 11:1–9"
+     "מקור",
+     "בראשית יא, א–ט"
     ]
    ],
    "zalozky": [
     {
-     "nazev": "The story",
+     "nazev": "הסיפור",
      "oddily": [
       {
-       "h": "One language",
+       "h": "שפה אחת",
        "p": [
-        "According to chapter eleven of the Book of Genesis, all people spoke one language. In the land of Shinar they built a city and a tower whose top was to reach the heavens, to “make a name” for themselves. The Lord confused their language so that they would not understand one another, and scattered them over all the earth.",
-        "The text explains the city’s name by a pun: it links Hebrew Bavel with the verb bālal, “to confuse”. The real origin of the name is different. The Babylonians interpreted it as Bāb-ili, “gate of god”, and the name may be even older."
+        "לפי הפרק האחד-עשר של ספר בראשית, כל בני האדם דיברו בשפה אחת. בארץ שנער הם בנו עיר ומגדל שראשו יגיע לשמים, כדי \"לעשות להם שם\". ה' בלל את שפתם כדי שלא יבינו זה את זה, והפיץ אותם על פני כל הארץ.",
+        "הטקסט מסביר את שם העיר במשחק מילים: הוא מקשר את השם העברי בבל עם הפועל בלל, \"לבלבל\". מקורו האמיתי של השם שונה. הבבלים פירשו אותו כ-Bāb-ili, \"שער האל\", וייתכן שהשם עתיק עוד יותר."
        ]
       }
      ]
     },
     {
-     "nazev": "The tower",
+     "nazev": "המגדל",
      "oddily": [
       {
-       "h": "Etemenanki",
+       "h": "אתמננקי",
        "p": [
-        "The tower was most likely modelled on the ziggurat Etemenanki, Sumerian for “house of the foundation of heaven and earth”, beside Marduk’s temple Esagila in Babylon. According to his own inscriptions, its restoration was completed by Nebuchadnezzar II (r. 605–562 BCE), at the time when part of the people of Judah lived in Babylon in exile.",
-        "The so-called Esagila tablet, a cuneiform copy of an older text made at Uruk in 229 BCE (in the Seleucid period), gives a square base about 91 metres on each side. Only the foundations of the tower remain today."
+        "המגדל עוצב ככל הנראה בדמות הזיגורת אתמננקי – בשומרית \"בית יסוד השמים והארץ\" – שליד מקדש מרדוך אסגילה בבבל. לפי כתובותיו שלו, את שיקומה השלים נבוכדנצר השני (מלך בשנים 605–562 לפנה״ס), בתקופה שבה חלק מבני יהודה חיו בבבל בגלות.",
+        "מה שמכונה לוח אסגילה, העתק בכתב יתדות של טקסט עתיק יותר שנעשה באורוק ב-229 לפנה״ס (בתקופה הסלאוקית), מציין בסיס רבוע שאורך כל צלע שלו כ-91 מטר. כיום נותרו מהמגדל רק היסודות."
        ]
       }
      ]
     },
     {
-     "nazev": "Linguistics",
+     "nazev": "בלשנות",
      "oddily": [
       {
-       "h": "Why so many languages",
+       "h": "למה יש כל כך הרבה שפות",
        "p": [
-        "Among the {n} languages of the atlas there are {r} language families and {i} isolates whose relationship to other languages has not been demonstrated.",
-        "Whether all languages go back to one common ancestor cannot be proven. The comparative method, by which linguists reconstruct proto-languages, reaches back, by common estimates, no more than roughly 6,000 to 10,000 years, but people have been speaking far longer. Linguistic diversity did not arise all at once: languages change with every generation, and groups that stop talking to each other stop understanding each other within centuries."
+        "בין {n} השפות של האטלס יש {r} משפחות שפות ו-{i} שפות מבודדות שלא הוכחה קרבתן לשפות אחרות.",
+        "אי אפשר להוכיח אם כל השפות מקורן באב קדמון משותף אחד. השיטה ההשוואתית, שבעזרתה בלשנים משחזרים פרוטו-שפות, מגיעה לפי הערכות מקובלות לא יותר מכ-6,000 עד 10,000 שנה אחורה, אבל בני האדם מדברים זמן רב הרבה יותר. המגוון הלשוני לא נוצר בבת אחת: שפות משתנות בכל דור, וקבוצות שמפסיקות לדבר זו עם זו מפסיקות להבין זו את זו בתוך מאות שנים."
        ]
       }
      ]
     },
     {
-     "nazev": "Sources",
+     "nazev": "מקורות",
      "zdroje": [
-      "Genesis 11:1–9.",
+      "בראשית יא, א–ט.",
       "George, A. R. (2005–2006): The Tower of Babel: archaeology, history and cuneiform texts. Archiv für Orientforschung 51: 75–95.",
       "Hammarström, H. et al.: Glottolog (glottolog.org).",
       "Campbell, L. (2013): Historical Linguistics: An Introduction. 3rd ed. Edinburgh University Press."
@@ -1079,35 +1079,35 @@
   }
  },
  "pismaSveta": {
-  "naMiste": "Language at this spot: {j} ›",
-  "stitek": "Script",
-  "typ": "Type",
-  "smer": "Direction",
-  "jazyku": "Languages on the globe",
-  "zToho": "of which {n} estimated",
+  "naMiste": "השפה במקום הזה: {j} ›",
+  "stitek": "כתב",
+  "typ": "סוג",
+  "smer": "כיוון",
+  "jazyku": "שפות על הגלובוס",
+  "zToho": "מהן {n} בהערכה",
   "typy": {
-   "abeceda": "alphabet (letters for consonants and vowels)",
-   "abdzad": "abjad (writes mainly consonants)",
-   "abugida": "abugida (consonant with an attached vowel)",
-   "slabicne": "syllabary",
-   "logograficke": "logographic script (a sign = a meaningful syllable)",
-   "smisene": "mixed (characters and syllabaries)"
+   "abeceda": "אלפבית (אותיות לעיצורים ולתנועות)",
+   "abdzad": "אבג'ד (נכתבים בעיקר העיצורים)",
+   "abugida": "אבוגידה (עיצור עם תנועה מצורפת)",
+   "slabicne": "כתב הברתי",
+   "logograficke": "כתב לוגוגרפי (סימן = הברה בעלת משמעות)",
+   "smisene": "מעורב (סימנים וכתבים הברתיים)"
   },
   "smery": {
-   "ltr": "left to right",
-   "rtl": "right to left",
-   "ttb": "top to bottom, columns left to right"
+   "ltr": "משמאל לימין",
+   "rtl": "מימין לשמאל",
+   "ttb": "מלמעלה למטה, טורים משמאל לימין"
   },
-  "oPismu": "About the script",
-  "jazyky": "Languages",
-  "jazykyAtlasu": "Atlas languages written in this script",
-  "uredni": "Official languages written in this script",
-  "uredniKratce": "Where official",
-  "rodokmen": "Family of scripts",
-  "zadnyAtlas": "None of the languages with a detailed card is written in this script.",
-  "zadnyStat": "According to CLDR, no official language of any country is written in this script.",
-  "jazykyPozn": "The area of a script on the globe is formed by the dots of all languages written in it according to Unicode CLDR; for languages without detailed data it is a CLDR estimate. A language written in several scripts belongs to several areas.",
-  "zdroj": "Countries where a language written in this script is official nationwide, according to Unicode CLDR.",
-  "tip": "Tap a coloured area or a script sample to open the script card."
+  "oPismu": "על הכתב",
+  "jazyky": "שפות",
+  "jazykyAtlasu": "שפות האטלס הנכתבות בכתב זה",
+  "uredni": "שפות רשמיות הנכתבות בכתב זה",
+  "uredniKratce": "היכן רשמי",
+  "rodokmen": "משפחת הכתבים",
+  "zadnyAtlas": "אף אחת מהשפות עם כרטיס מפורט אינה נכתבת בכתב זה.",
+  "zadnyStat": "לפי CLDR, אף שפה רשמית של מדינה כלשהי אינה נכתבת בכתב זה.",
+  "jazykyPozn": "האזור של כתב על הגלובוס נוצר מהנקודות של כל השפות הנכתבות בו לפי Unicode CLDR; בשפות שאין עליהן נתונים מפורטים זוהי הערכה של CLDR. שפה הנכתבת בכמה כתבים שייכת לכמה אזורים.",
+  "zdroj": "מדינות שבהן שפה הנכתבת בכתב זה היא רשמית ברמה הארצית, לפי Unicode CLDR.",
+  "tip": "הקישו על אזור צבוע או על דוגמת כתב כדי לפתוח את כרטיס הכתב."
  }
 }

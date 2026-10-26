@@ -143,8 +143,10 @@ var STAROVEK = (function(){
   }
   function html(c, lang, o){
     const L = c[lang], U = o.U;
+    /* stránka ještě nepřeložená do jazyka webu (ivrit, etapa 1) má jen anglický text: anglicky a zleva doprava, ať se interpunkce nepřehází */
+    const jl = lang !== "en" && L === c.en ? "en" : lang, smer = jl === "he" ? "rtl" : "ltr";
     /* čínské znaky v japonském nebo korejském textu mají mít japonské / korejské tvary: c.hanPismo („Noto Serif JP“) */
-    return '<article class="civ" lang="' + lang + '"' + (c.hanPismo ? ' style="--civ-han:&quot;' + esc(c.hanPismo) + '&quot;"' : "") + ">" +
+    return '<article class="civ" lang="' + jl + '" dir="' + smer + '"' + (c.hanPismo ? ' style="--civ-han:&quot;' + esc(c.hanPismo) + '&quot;"' : "") + ">" +
       '<header class="civ-hero"><div class="civ-malba">' + (o.malba || "") + '</div><div class="civ-titul"><p class="civ-stitek">' + esc(L.stitek) + '</p><h1 id="civ-nadpis">' + esc(L.nazev) +
       '</h1><p class="civ-podtitul">' + esc(L.podtitul) + "</p></div></header>" +
       '<div class="civ-telo">' + (L.fakta && L.fakta.length ? '<aside class="civ-fakta" aria-label="' + esc(U.vKostce) + '"><h2>' + esc(U.vKostce) + "</h2><dl>" +

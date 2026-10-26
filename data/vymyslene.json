@@ -160,6 +160,9 @@
     "vyznam": "Littéralement « Que voulez-vous ? » – l’étiquette klingonne ignore les formules de politesse.",
     "fakt": "L’ordre de base des mots en klingon est objet–verbe–sujet : « puq legh yaS » signifie « l’officier voit l’enfant », littéralement « enfant voit officier ». Cet ordre est très rare parmi les langues naturelles (WALS 81A).",
     "hledat": "klingon klingonne star trek okrand"
+   },
+   "he": {
+    "hledat": "קלינגון קלינגונית מסע בין כוכבים klingon star trek okrand"
    }
   },
   {
@@ -207,6 +210,9 @@
     "vyznam": "« Salut ! » – la langue des Hauts-Elfes.",
     "fakt": "Tolkien s’est inspiré surtout du finnois pour le créer. Il disait que les langues étaient venues en premier et que les récits avaient été écrits pour leur donner un monde où elles pourraient être parlées.",
     "hledat": "quenya elfe elfes elfique tolkien seigneur des anneaux lord of the rings"
+   },
+   "he": {
+    "hledat": "קווניה אלפים אלפית טולקין שר הטבעות quenya elf elvish tolkien lord of the rings"
    }
   },
   {
@@ -254,6 +260,9 @@
     "vyznam": "« Heureuse rencontre. »",
     "fakt": "Son système phonique rappelle le gallois, que Tolkien admirait. L’inscription des Portes de la Moria dit « Parlez, ami, et entrez » – et le mot de passe est le mot « ami » lui-même : mellon.",
     "hledat": "sindarin elfe elfes elfique tolkien seigneur des anneaux lord of the rings mellon"
+   },
+   "he": {
+    "hledat": "סינדארין אלפים אלפית טולקין שר הטבעות sindarin elf elvish tolkien lord of the rings mellon"
    }
   },
   {
@@ -301,6 +310,9 @@
     "vyznam": "« Bonjour ! »",
     "fakt": "Le linguiste Paul Frommer l’a doté des éjectives kx, px et tx, produites avec une fermeture simultanée de la glotte. Ni l’anglais ni le tchèque n’en possèdent, mais on en trouve par exemple en géorgien ou en amharique.",
     "hledat": "navi na'vi avatar pandora frommer"
+   },
+   "he": {
+    "hledat": "נאבי אווטאר פנדורה navi na'vi avatar pandora frommer"
    }
   },
   {
@@ -348,6 +360,9 @@
     "vyznam": "« Avec respect ! » – c’est ainsi que les Dothrakis se saluent.",
     "fakt": "George R. R. Martin n’a employé dans ses livres qu’une poignée de mots dothrakis. Le linguiste David J. Peterson en a tiré, pour la série, une langue complète, dotée de sa propre grammaire et d’un vocabulaire de plusieurs milliers de mots.",
     "hledat": "dothraki dothrakis game of thrones trône de fer peterson"
+   },
+   "he": {
+    "hledat": "דותראקי משחקי הכס dothraki game of thrones peterson"
    }
   },
   {
@@ -395,6 +410,9 @@
     "vyznam": "« Bonjour ! »",
     "fakt": "Le haut valyrien a lui aussi été créé par David J. Peterson. Depuis 2017, il dispose de son propre cours sur Duolingo.",
     "hledat": "valyrien haut valyrien valyrian high valyrian game of thrones trône de fer daenerys peterson"
+   },
+   "he": {
+    "hledat": "ואלירית משחקי הכס דנאריס valyrian high valyrian game of thrones daenerys peterson"
    }
   }
  ],

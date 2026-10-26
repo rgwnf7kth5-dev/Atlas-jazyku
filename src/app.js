@@ -376,6 +376,10 @@ function shodaSlova(q, n){
   return false;
 }
 function shodaSlova1(q, n){
+  if (/^[\u05D0-\u05EA]/.test(q) && /^[\u05D0-\u05EA]/.test(n)) {   // ivrit: jednotné a množné číslo přídavného jména (סלאבית × סלאביות)
+    const k = function(w){ return w.replace(/(יות|ית|ים|ות|י)$/, ""); }, a = k(q), b = k(n);
+    return q === n || (b.length >= 3 && a === b);
+  }
   const s = n.replace(/[aeiouy]$/, "");     // jen jedna koncová samohláska: Romania ≠ Romance, Turkey ≠ turkické
   if (s.length >= 4) return q.indexOf(s) === 0 && q.length <= s.length + 4;
   return q === n || (n.length >= 4 && q.indexOf(s) === 0 && q.length <= n.length + 1);   // krátké názvy (Taa, Čad) jen celé: „tam“ ≠ Taa

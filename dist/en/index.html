@@ -1475,6 +1475,10 @@ html[lang="en"] .do-ceka-otazka{quotes:"“" "”"} html[lang="it"] .do-ceka-ota
    stránky – jinak by se vykřičník u „Sannu!“ přesunul na začátek. plaintext = směr podle vlastního obsahu. */
 [dir="rtl"] .pozdrav, [dir="rtl"] .jaz .pz, [dir="rtl"] .jd-pozdrav, [dir="rtl"] .dj-pz, [dir="rtl"] .dj-pozdrav,
 [dir="rtl"] .kal-pz, [dir="rtl"] .ks-pozdrav, [dir="rtl"] #k-pozdrav{unicode-bidi:plaintext}
+/* šipky „dál“ a „zpět“ ukazují ve směru čtení */
+[dir="rtl"] svg:has(use[href="#i-dal"]), [dir="rtl"] svg:has(use[href="#i-zpet"]){transform:scaleX(-1)}
+/* panely, jejichž texty jsou v etapě 1 ještě anglicky (putování, cesty slov, legendy map, karta písma): směr odstavce podle obsahu */
+[dir="rtl"] :is(#putovani-panel, #cesta-panel, .typ-legenda, #typ-legenda) :is(p, li, h2, h3, h4, b, small, span){unicode-bidi:plaintext}
 
 /* ---------- jazyky starověku: stránka o civilizaci jako list ilustrované encyklopedie (okno nad glóbem i web) ----------
    Papír a inkoust jako u akvarelů na kartách; v tmavém vzhledu sépiová noc. Barvy jen tady, přes --civ-*. */
@@ -1997,6 +2001,6 @@ html[lang="en"] .do-ceka-otazka{quotes:"“" "”"} html[lang="it"] .do-ceka-ota
  <dialog class="civ-okno" id="civ-okno" aria-labelledby="civ-nadpis"></dialog>
 </div>
 
-<script src="../js/atlas.692419d3ad.js"></script>
+<script src="../js/atlas.d2dd0a4486.js"></script>
 </body>
 </html>
