@@ -178,6 +178,11 @@
     "hledat": "klingon klingonne star trek okrand"
    },
    "he": {
+    "nazev": "קלינגונית",
+    "vyslovnost": "ˈנוק-נח",
+    "dilo": "מסע בין כוכבים (סרטים)",
+    "vyznam": "מילולית: \"מה אתם רוצים?\" – בנימוס הקלינגוני אין נוסחאות נימוס.",
+    "fakt": "סדר המילים הבסיסי בקלינגונית הוא מושא–פועל–נושא: \"puq legh yaS\" פירושו \"הקצין רואה את הילד\", ומילולית \"ילד רואה קצין\". סדר כזה נדיר מאוד בשפות טבעיות (WALS 81A).",
     "hledat": "קלינגון קלינגונית מסע בין כוכבים klingon star trek okrand"
    }
   },
@@ -228,6 +233,11 @@
     "hledat": "quenya elfe elfes elfique tolkien seigneur des anneaux lord of the rings"
    },
    "he": {
+    "nazev": "קווניה",
+    "vyslovnost": "ˈאיי-יה",
+    "dilo": "שר הטבעות (ספר)",
+    "vyznam": "\"ברכה!\" – שפת האלפים העליונים.",
+    "fakt": "טולקין שאב בעיקר מהפינית. לדבריו, השפות באו קודם, והסיפורים נכתבו כדי לתת להן עולם שבו אפשר לדבר בהן.",
     "hledat": "קווניה אלפים אלפית טולקין שר הטבעות quenya elf elvish tolkien lord of the rings"
    }
   },
@@ -278,6 +288,11 @@
     "hledat": "sindarin elfe elfes elfique tolkien seigneur des anneaux lord of the rings mellon"
    },
    "he": {
+    "nazev": "סינדארין",
+    "vyslovnost": "מאי גו-ˈואנ-נן",
+    "dilo": "שר הטבעות (ספר)",
+    "vyznam": "\"טוב שנפגשנו.\"",
+    "fakt": "מערכת ההגאים שלה מזכירה את הוולשית, שטולקין העריץ. על שערי מוריה כתוב \"דבר, ידיד, והיכנס\" – והסיסמה היא המילה \"ידיד\" עצמה: mellon.",
     "hledat": "סינדארין אלפים אלפית טולקין שר הטבעות sindarin elf elvish tolkien lord of the rings mellon"
    }
   },
@@ -328,6 +343,11 @@
     "hledat": "navi na'vi avatar pandora frommer"
    },
    "he": {
+    "nazev": "נאבי",
+    "vyslovnost": "קאל-ˈטי",
+    "dilo": "אווטאר (סרט, 2009)",
+    "vyznam": "\"שלום!\"",
+    "fakt": "הבלשן פול פרומר העניק לה את העיצורים המפליטים kx, px ו-tx, הנהגים תוך סגירה בו-זמנית של הגלוטיס. אין אותם לא באנגלית ולא בעברית, אבל הם קיימים למשל בגאורגית ובאמהרית.",
     "hledat": "נאבי אווטאר פנדורה navi na'vi avatar pandora frommer"
    }
   },
@@ -378,6 +398,11 @@
     "hledat": "dothraki dothrakis game of thrones trône de fer peterson"
    },
    "he": {
+    "nazev": "דותראקית",
+    "vyslovnost": "מ-את׳-צ׳ו-מא-ˈרון",
+    "dilo": "משחקי הכס (סדרת טלוויזיה, 2011)",
+    "vyznam": "\"בכבוד!\" – כך מברכים הדותראקים זה את זה.",
+    "fakt": "ג׳ורג׳ ר. ר. מרטין השתמש בספרים רק בקומץ מילים דותראקיות. הבלשן דייוויד ג׳. פיטרסון בנה מהן עבור הסדרה שפה שלמה, עם דקדוק משלה ואוצר מילים של אלפי מילים.",
     "hledat": "דותראקי משחקי הכס dothraki game of thrones peterson"
    }
   },
@@ -428,6 +453,11 @@
     "hledat": "valyrien haut valyrien valyrian high valyrian game of thrones trône de fer daenerys peterson"
    },
    "he": {
+    "nazev": "ואלירית עילית",
+    "vyslovnost": "ˈריט-סאס",
+    "dilo": "משחקי הכס (סדרת טלוויזיה, 2011)",
+    "vyznam": "\"שלום!\"",
+    "fakt": "גם את הוואלירית העילית יצר דייוויד ג׳. פיטרסון. מאז 2017 יש לה קורס משלה ב-Duolingo.",
     "hledat": "ואלירית משחקי הכס דנאריס valyrian high valyrian game of thrones daenerys peterson"
    }
   }
@@ -447,7 +477,7 @@
    "it": "Tolkien attinse dal gallese per creare il sindarin, un'altra lingua elfica.",
    "de": "Tolkien stützte sich bei der Schaffung des Sindarin, einer weiteren Elbensprache, auf das Walisische.",
    "fr": "Tolkien s’est inspiré du gallois pour créer le sindarin, une autre langue elfique.",
-   "he": "טולקין שאב השראה מהוולשית כשיצר את הסינדארין, שפה אלפית נוספת."
+   "he": "טולקין שאב השראה מהוולשית כשיצר את הסינדרין, שפה אלפית נוספת."
   }
  }
 }

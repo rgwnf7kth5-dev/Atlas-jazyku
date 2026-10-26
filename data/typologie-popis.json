@@ -593,7 +593,7 @@
      "it": "Fortemente suffissante",
      "de": "Stark suffigierend",
      "fr": "Fortement suffixante",
-     "he": "סופיות במובהק"
+     "he": "נטייה חזקה לסופיות"
     },
     "3": {
      "cs": "mírně příponový",
@@ -625,7 +625,7 @@
      "it": "Fortemente prefissante",
      "de": "Stark präfigierend",
      "fr": "Fortement préfixante",
-     "he": "תחיליות במובהק"
+     "he": "נטייה חזקה לתחיליות"
     }
    },
    "tridy": [
@@ -1863,7 +1863,7 @@
     "it": "Come le forme casuali dei sintagmi nominali pieni distinguono l’unico argomento di un verbo intransitivo (S) dall’agente (A) e dal paziente (P) di un verbo transitivo. Nominativo–accusativo: S = A ≠ P. Ergativo–assolutivo: S = P ≠ A (ad es. lezgo). Tripartito: tutti e tre diversi. Attivo–inattivo: la marcatura dipende dal controllo (il WALS vi colloca il basco e il georgiano). Neutro: nessuna distinzione.",
     "de": "Wie die Kasusformen voller Nominalphrasen das einzige Argument eines intransitiven Verbs (S) vom Agens (A) und Patiens (P) eines transitiven Verbs unterscheiden. Nominativ–Akkusativ: S = A ≠ P. Ergativ–Absolutiv: S = P ≠ A (z. B. Lesgisch). Tripartit: alle drei verschieden. Aktiv–Inaktiv: Die Markierung hängt von der Kontrolle ab (WALS ordnet hier das Baskische und das Georgische ein). Neutral: keine Unterscheidung.",
     "fr": "La manière dont les formes casuelles des syntagmes nominaux pleins distinguent l’argument unique d’un verbe intransitif (S) de l’agent (A) et du patient (P) d’un verbe transitif. Nominatif–accusatif : S = A ≠ P. Ergatif–absolutif : S = P ≠ A (par exemple le lezguien). Tripartite : les trois diffèrent. Actif–inactif : le marquage dépend du contrôle (le WALS y range le basque et le géorgien). Neutre : aucune distinction.",
-    "he": "כיצד צורות היחסה של צירופים שמניים מלאים מבחינות בין הארגומנט היחיד של פועל עומד (S) לבין הפועל (A) והמושפע (P) של פועל יוצא. נומינטיבי–אקוזטיבי: S = A ≠ P. ארגטיבי–אבסולוטיבי: S = P ≠ A (למשל לזגית). תלת-חלקי: שלושתם שונים. אקטיבי–לא אקטיבי: הסימון תלוי בשליטה (WALS מציב כאן את הבסקית ואת הגאורגית). ניטרלי: אין הבחנה."
+    "he": "כיצד צורות היחסה של צירופים שמניים מלאים מבחינות בין הארגומנט היחיד של פועל עומד (S) לבין העושה (A) והסובל (P) של פועל יוצא. נומינטיבי–אקוזטיבי: S = A ≠ P. ארגטיבי–אבסולוטיבי: S = P ≠ A (למשל לזגית). תלת-חלקי: שלושתם שונים. אקטיבי–לא אקטיבי: הסימון תלוי בשליטה (WALS מציב כאן את הבסקית ואת הגאורגית). ניטרלי: אין הבחנה."
    },
    "hodnoty": {
     "1": {
@@ -2123,7 +2123,7 @@
     "it": "Come una lingua distingue le domande sì/no dalle affermazioni: con una particella interrogativa (polacco czy), con la morfologia del verbo, con un cambiamento dell’ordine delle parole (tedesco Kommst du?; il WALS vi colloca anche il ceco) o con la sola intonazione (rumeno, italiano).",
     "de": "Wie eine Sprache Ja/Nein-Fragen von Aussagesätzen unterscheidet: mit einer Fragepartikel (polnisch czy), durch Verbmorphologie, durch eine Änderung der Wortstellung (deutsch Kommst du?; WALS ordnet auch das Tschechische hier ein) oder allein durch die Intonation (Rumänisch).",
     "fr": "La manière dont une langue distingue les questions fermées (oui/non) des affirmations : par une particule interrogative (polonais czy), la morphologie verbale, un changement de l’ordre des mots (allemand Kommst du? ; le WALS y range aussi le tchèque) ou la seule intonation (roumain).",
-    "he": "כיצד השפה מבחינה בין שאלות כן/לא לבין משפטי חיווי: במילית שאלה (czy בפולנית), במורפולוגיה של הפועל, בשינוי סדר המילים (Kommst du? בגרמנית; WALS מסווג כאן גם את הצ׳כית) או באינטונציה בלבד (רומנית)."
+    "he": "כיצד השפה מבחינה בין שאלות כן/לא לבין משפטי חיווי: במילית שאלה (czy בפולנית), במורפולוגיה של הפועל, בשינוי סדר המילים (בגרמנית Kommst du?‎; WALS מסווג כאן גם את הצ׳כית) או באינטונציה בלבד (רומנית)."
    },
    "hodnoty": {
     "1": {

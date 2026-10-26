@@ -165,11 +165,23 @@ procentový řetězec, proto `stranky.mjs` bere slug z anglického názvu. LOCAL
   hebrejským písmem** (rozhodnutí: Izraelci latinskou výslovnost nečtou): slabiky spojovníkem, přízvuk znakem ˈ před slabikou, geresh
   pro hlásky, které hebrejština nemá (צ׳ = č, ג׳ = dž, ז׳ = ž), v = ו/וו. Prošlo dvěma nezávislými kontrolami (karty a rodiny 51 oprav
   karet + 27 názvů rodin a větví – názvy jazyků podle hebrejské Wikipedie; rozhraní zvlášť).
-- **Etapa 2 (chybí)**: starověk, Příběhy, putování, cesty slov, typologie, písma, vymyšlené jazyky, Jazyk dne a `adresa.he`
-  u stránek. Do té doby se ukazují **anglicky** (záloha `DALSI` → en, viz italština) – článek pak dostane `lang="en" dir="ltr"`
-  (`starovek.js`: `L === c.en` znamená chybějící překlad), aby se anglický text v RTL stránce nerozsypal. `civAdresa` bere `adresa.en`.
-  Vymyšlené jazyky a dvě stránky starověku mají aspoň hebrejská hledací slova (`hledat`).
-- **RTL**: build dává `<html lang="he" dir="rtl">`, app při přepnutí jazyka nastaví `document.documentElement.dir`. V CSS
+- **Etapa 2 (hotová 26. 10. 2026)**: 29 stránek starověku a Příběhů (dvě české zůstávají jen v cs), 17 putování, 12 cest slov,
+  Jazyk dne a dny jazyků, popisy písem, typologie WALS, vymyšlené jazyky. 14 překladatelů z angličtiny + 7 nezávislých kontrol
+  (~390 oprav: např. צרף „tavit kov“ místo vypalování hlíny, „תנ״ך הכסף“ → קודקס הכסף, biblické verše ověřené, mozarabština,
+  Göktürkové גקטורקים/כגאנות). Nástroje ve scratchpadu `he2/`: `vytahni.py` (najde objekty s `fr` bez `he`, dávky podle `skupiny.json`),
+  `kontrola.py` (struktura, nepřekládaná pole), `oprava.py` (opravy kontrolorů {davka, klic, stare, nove}), `sjednoceni.py`
+  (napříč dávkami: אונסק״ו, יוניקוד, אוגם, ארמית ממלכתית, מנדאים, דריווש, LRM před *rekonstruovaným tvarem), **`vloz.py`** (vloží `he`
+  za `fr`, opakovatelně; `adresa.he` = anglická). Ukázky jazyka s nikudem (עִבְרִית, מֶלֶךְ, Gn 1,1) jsou záměr.
+- **Adresy stránek v hebrejštině jsou anglické** (`adresa.he` = `adresa.en`, `#hebrews`, `/he/ancient/hebrews/`); hebrejský slug by
+  byl nečitelný. Kde překlad chybí, ukáže se angličtina s `lang="en" dir="ltr"` (`starovek.js`: `L === c.en`).
+- **Názvy písem a jazyků z CLDR** mají v hebrejštině mnoho strojových tvarů (כתב חרטומים, חרושתי = „průmyslový“, כיכר = „náměstí“…).
+  Ruční opravy jsou v **`data/nazvy-he-opravy.json`** (pisma 82, jazyky 103; jména teček sjednocená s kartami), `scripts/nazvy.mjs`
+  je použije po každém stažení CLDR. Nový jazyk webu: soubor `nazvy-xx-opravy.json` funguje stejně.
+- Při překladu opraveny i věcné chyby originálu ve všech jazycích: Čoga Zanbíl jedna z prvních tří íránských památek UNESCO (ne první),
+  Behistun – elamské znění vytesáno dvakrát, dochovaná kopie má tři sloupce (edice Amiri Parian, CDLB 2017–2020; dřívější „260 řádků
+  v osmi sloupcích“ nesedělo), Chamalières „dvanáct řádků, asi 60 slov“ (místo neověřitelných 396 písmen / 47 slov), novoaramejsky
+  mluví kurdští (ne „někteří iráčtí“) Židé, zapotécké nápisy od 5. st. **př. n. l.**, překlep Glagogl → Glagol.
+- **RTL**: build i statické stránky (`stranky.mjs`, od 26. 10.) dávají `<html lang="he" dir="rtl">`, app při přepnutí jazyka nastaví `document.documentElement.dir`. V CSS
   (`styles.css`, `starovek.css`) jsou okraje, odsazení, rámečky a zarovnání **logickými vlastnostmi** (`margin-inline-start`,
   `padding-inline-end`, `text-align:start`…), takže se v RTL obrátí samy a v LTR vypadají stejně jako dřív (ověřeno pixelovým
   srovnáním české verze). **Fyzické `left:`/`right:` u poloh zůstaly** – glóbus, překryvy na něm a panely se nezrcadlí, mapa
