@@ -62,7 +62,7 @@ export function vyrobStranky({ KOREN, WEB, NAHLED, UI, JAZYKY_WEBU, jmenoTecky, 
   for (const lang of JAZYKY_WEBU) {
     const videno = new Map();
     for (const j of jazyky) {
-      const s = slug(j[lang].nazev);
+      const s = slug(j[lang].nazev) || slug(j.en.nazev);   // hebrejský název nemá latinku – adresa z anglického (/he/language/arabic/)
       if (!s) throw new Error(`Jazyk „${j.id}“ nemá z čeho udělat adresu stránky (${lang}).`);
       if (videno.has(s)) throw new Error(`Dva jazyky mají stejnou adresu stránky „${s}“: ${videno.get(s)} a ${j.id}.`);
       videno.set(s, j.id);

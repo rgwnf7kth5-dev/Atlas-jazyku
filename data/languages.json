@@ -43,6 +43,12 @@
    "vyslovnost": "A-hoï",
    "rodina": "Indo-européenne – slave",
    "fakt": "Le mot « robot » s’est répandu du tchèque dans de nombreuses langues. Josef Čapek l’a forgé pour R.U.R. (1920), pièce de son frère Karel."
+  },
+  "he": {
+   "nazev": "צ׳כית",
+   "vyslovnost": "ˈא-הוי",
+   "rodina": "הודו-אירופית – סלאבית",
+   "fakt": "המילה “רובוט” התפשטה מהצ׳כית לשפות רבות. יוזף צ׳אפק טבע אותה עבור המחזה R.U.R. (1920) של אחיו קארל."
   }
  },
  {
@@ -89,6 +95,12 @@
    "vyslovnost": "A-hoï",
    "rodina": "Indo-européenne – slave",
    "fakt": "Le tchèque et le slovaque sont mutuellement intelligibles sans apprentissage formel, ce que favorisent aussi des décennies passées dans un même État et des médias communs."
+  },
+  "he": {
+   "nazev": "סלובקית",
+   "vyslovnost": "ˈא-הוי",
+   "rodina": "הודו-אירופית – סלאבית",
+   "fakt": "צ׳כית וסלובקית מובנות הדדית גם בלי לימוד מסודר, בין היתר בזכות עשרות שנים במדינה אחת ותקשורת משותפת."
   }
  },
  {
@@ -135,6 +147,12 @@
    "vyslovnost": "tchèchtch",
    "rodina": "Indo-européenne – slave",
    "fakt": "Le polonais admet de longs groupes de consonnes : « bezwzględny » (impitoyable) compte cinq lettres consonnes à la suite."
+  },
+  "he": {
+   "nazev": "פולנית",
+   "vyslovnost": "צ׳שץ׳",
+   "rodina": "הודו-אירופית – סלאבית",
+   "fakt": "הפולנית מתירה רצפי עיצורים ארוכים – במילה “bezwzględny” (חסר רחמים) יש חמש אותיות עיצור ברצף."
   }
  },
  {
@@ -184,6 +202,12 @@
    "vyslovnost": "pri-VIET",
    "rodina": "Indo-européenne – slave",
    "fakt": "Il s’écrit en alphabet cyrillique. La lettre « Я » se lit [ja] et forme à elle seule le pronom « je »."
+  },
+  "he": {
+   "nazev": "רוסית",
+   "vyslovnost": "פרי-ˈבייט",
+   "rodina": "הודו-אירופית – סלאבית",
+   "fakt": "היא נכתבת באלפבית הקירילי. האות “Я” נקראת [ja], ולבדה היא כינוי הגוף “אני”."
   }
  },
  {
@@ -230,6 +254,12 @@
    "vyslovnost": "pri-VIT",
    "rodina": "Indo-européenne – slave",
    "fakt": "L’ukrainien possède un riche système de suffixes diminutifs, et les diminutifs peuvent se former en plusieurs degrés successifs."
+  },
+  "he": {
+   "nazev": "אוקראינית",
+   "vyslovnost": "פרי-ˈביט",
+   "rodina": "הודו-אירופית – סלאבית",
+   "fakt": "לאוקראינית מערכת עשירה של סיומות הקטנה, ואפשר ליצור צורות הקטנה בכמה דרגות זו אחר זו."
   }
  },
  {
@@ -276,6 +306,12 @@
    "vyslovnost": "vi-TA-you",
    "rodina": "Indo-européenne – slave",
    "fakt": "L’orthographe biélorusse est largement phonétique : elle note par exemple l’akanié, la prononciation du o inaccentué comme a."
+  },
+  "he": {
+   "nazev": "בלארוסית",
+   "vyslovnost": "בי-ˈטא-יו",
+   "rodina": "הודו-אירופית – סלאבית",
+   "fakt": "הכתיב הבלארוסי פונטי במידה רבה: הוא משקף, למשל, את האקאניה (akanye) – הגיית o שאינה מוטעמת כ-a."
   }
  },
  {
@@ -324,6 +360,12 @@
    "vyslovnost": "ZDRA-vo",
    "rodina": "Indo-européenne – slave",
    "fakt": "Le serbe est digraphique : il emploie à la fois l’écriture cyrillique et l’écriture latine. La Constitution fait du cyrillique l’écriture officielle."
+  },
+  "he": {
+   "nazev": "סרבית",
+   "vyslovnost": "ˈזדרא-בו",
+   "rodina": "הודו-אירופית – סלאבית",
+   "fakt": "הסרבית דו-כתבית: היא משתמשת גם בכתב הקירילי וגם בכתב הלטיני. החוקה קובעת את הקירילי ככתב הרשמי."
   }
  },
  {
@@ -371,6 +413,12 @@
    "vyslovnost": "bok",
    "rodina": "Indo-européenne – slave",
    "fakt": "Le croate préfère les créations autochtones aux emprunts : l’ordinateur se dit « računalo », l’aéroport « zračna luka » (port aérien)."
+  },
+  "he": {
+   "nazev": "קרואטית",
+   "vyslovnost": "בוק",
+   "rodina": "הודו-אירופית – סלאבית",
+   "fakt": "הקרואטית מעדיפה חידושי מילים מקומיים על פני מילים שאולות: מחשב הוא “računalo”, ונמל תעופה “zračna luka” (נמל אוויר)."
   }
  },
  {
@@ -417,6 +465,12 @@
    "vyslovnost": "JIV-yo",
    "rodina": "Indo-européenne – slave",
    "fakt": "Le slovène a conservé le duel : drevo – drevesi – drevesa, c’est-à-dire un arbre, deux arbres, trois arbres ou plus."
+  },
+  "he": {
+   "nazev": "סלובנית",
+   "vyslovnost": "ˈז׳יב-יו",
+   "rodina": "הודו-אירופית – סלאבית",
+   "fakt": "הסלובנית שמרה על המספר הזוגי: drevo – drevesi – drevesa, כלומר עץ אחד, שני עצים, שלושה עצים או יותר."
   }
  },
  {
@@ -463,6 +517,12 @@
    "vyslovnost": "zdra-VEÏ",
    "rodina": "Indo-européenne – slave",
    "fakt": "Le bulgare a perdu la déclinaison des noms et possède un article défini postposé. En Bulgarie, un signe de tête de haut en bas signifie traditionnellement « non » et un mouvement de gauche à droite « oui »."
+  },
+  "he": {
+   "nazev": "בולגרית",
+   "vyslovnost": "זדרא-ˈביי",
+   "rodina": "הודו-אירופית – סלאבית",
+   "fakt": "הבולגרית איבדה את נטיית שמות העצם ביחסות, ויש לה תווית יידוע הבאה אחרי המילה. בבולגריה הנהון מסמל באופן מסורתי “לא”, ונענוע ראש לצדדים “כן”."
   }
  },
  {
@@ -509,6 +569,12 @@
    "vyslovnost": "ZDRA-vo",
    "rodina": "Indo-européenne – slave",
    "fakt": "Comme le bulgare, le macédonien a perdu la déclinaison des noms et exprime les relations grammaticales par les prépositions et l’ordre des mots."
+  },
+  "he": {
+   "nazev": "מקדונית",
+   "vyslovnost": "ˈזדרא-בו",
+   "rodina": "הודו-אירופית – סלאבית",
+   "fakt": "כמו הבולגרית, גם המקדונית איבדה את נטיית שמות העצם ביחסות, והיא מבטאת יחסים דקדוקיים באמצעות מילות יחס וסדר מילים."
   }
  },
  {
@@ -591,6 +657,12 @@
    "vyslovnost": "hè-LO",
    "rodina": "Indo-européenne – germanique",
    "fakt": "Selon les estimations courantes, l’anglais compte plus de locuteurs en langue seconde qu’en langue maternelle. C’est la principale langue de l’aviation internationale et d’Internet."
+  },
+  "he": {
+   "nazev": "אנגלית",
+   "vyslovnost": "ה-ˈלו",
+   "rodina": "הודו-אירופית – גרמאנית",
+   "fakt": "לפי הערכות מקובלות, מספר דוברי האנגלית כשפה שנייה גדול ממספר דובריה כשפת אם. היא השפה העיקרית של התעופה הבין-לאומית ושל האינטרנט."
   }
  },
  {
@@ -641,6 +713,12 @@
    "vyslovnost": "HA-lo",
    "rodina": "Indo-européenne – germanique",
    "fakt": "L’allemand forme des composés de longueur presque illimitée. Les plus longs mots attestés dans des textes officiels comptent plus de soixante lettres."
+  },
+  "he": {
+   "nazev": "גרמנית",
+   "vyslovnost": "ˈהא-לו",
+   "rodina": "הודו-אירופית – גרמאנית",
+   "fakt": "הגרמנית יוצרת מילים מורכבות באורך כמעט בלתי מוגבל. המילים הארוכות ביותר שתועדו בטקסטים רשמיים מונות יותר משישים אותיות."
   }
  },
  {
@@ -786,6 +864,12 @@
    "vyslovnost": "SÈR-vouss",
    "rodina": "Indo-européenne – germanique",
    "fakt": "Langue à part pour l’ISO 639-3 (code bar), d’ordinaire groupe de dialectes de l’allemand supérieur pour les linguistes allemands et autrichiens. Schibboleth souvent cité : Oachkatzlschwoaf, « queue d’écureuil » (all. Eichhörnchenschwanz)."
+  },
+  "he": {
+   "nazev": "בווארית",
+   "vyslovnost": "ˈסר-ווס",
+   "rodina": "הודו-אירופית – גרמאנית",
+   "fakt": "תקן ISO 639-3 מגדיר את הבווארית כשפה נפרדת (קוד bar); בלשנים בגרמניה ובאוסטריה מסווגים אותה בדרך כלל כקבוצה של ניבים גרמניים עליונים. מילת שיבולת שמרבים לצטט היא Oachkatzlschwoaf, “זנב של סנאי” (בגרמנית Eichhörnchenschwanz)."
   }
  },
  {
@@ -834,6 +918,12 @@
    "vyslovnost": "HA-lo",
    "rodina": "Indo-européenne – germanique",
    "fakt": "Les mots anglais yacht, cookie et boss viennent du néerlandais. Le néerlandais est aussi la langue officielle du Suriname, en Amérique du Sud."
+  },
+  "he": {
+   "nazev": "הולנדית",
+   "vyslovnost": "ˈהא-לו",
+   "rodina": "הודו-אירופית – גרמאנית",
+   "fakt": "המילים האנגליות yacht, cookie ו-boss מקורן בהולנדית. ההולנדית היא גם השפה הרשמית של סורינאם שבדרום אמריקה."
   }
  },
  {
@@ -881,6 +971,12 @@
    "vyslovnost": "hèï",
    "rodina": "Indo-européenne – germanique",
    "fakt": "En suédois, « hej » est la salutation habituelle ; redoublé, « hej hej » sert familièrement à prendre congé."
+  },
+  "he": {
+   "nazev": "שוודית",
+   "vyslovnost": "היי",
+   "rodina": "הודו-אירופית – גרמאנית",
+   "fakt": "“hej” היא הברכה הרגילה בשוודית; הצורה הכפולה “hej hej” משמשת בדיבור לפרידה."
   }
  },
  {
@@ -927,6 +1023,12 @@
    "vyslovnost": "hèï",
    "rodina": "Indo-européenne – germanique",
    "fakt": "Le norvégien possède deux normes écrites officielles de statut égal, le bokmål et le nynorsk. Les élèves apprennent les deux à l’école."
+  },
+  "he": {
+   "nazev": "נורווגית",
+   "vyslovnost": "היי",
+   "rodina": "הודו-אירופית – גרמאנית",
+   "fakt": "לנורווגית שני תקני כתיבה רשמיים שווי מעמד, בוקמול (Bokmål) ונינורשק (Nynorsk). בבית הספר לומדים את שניהם."
   }
  },
  {
@@ -974,6 +1076,12 @@
    "vyslovnost": "haï",
    "rodina": "Indo-européenne – germanique",
    "fakt": "La prononciation danoise réduit de nombreux sons, si bien que le danois parlé et le danois écrit diffèrent sensiblement. Norvégiens et Suédois comprennent moins aisément le danois parlé que le danois écrit."
+  },
+  "he": {
+   "nazev": "דנית",
+   "vyslovnost": "האי",
+   "rodina": "הודו-אירופית – גרמאנית",
+   "fakt": "בהגייה הדנית הגאים רבים מצטמצמים, ולכן הדנית המדוברת והכתובה שונות זו מזו במידה ניכרת. בנורווגיה ובשוודיה מבינים דנית מדוברת בקושי רב יותר מדנית כתובה."
   }
  },
  {
@@ -1020,6 +1128,12 @@
    "vyslovnost": "HAL-lo",
    "rodina": "Indo-européenne – germanique",
    "fakt": "L’islandais est très conservateur dans sa morphologie et son orthographe ; les sagas en vieil islandais du XIIIe siècle restent aujourd’hui largement lisibles."
+  },
+  "he": {
+   "nazev": "איסלנדית",
+   "vyslovnost": "ˈהאל-לו",
+   "rodina": "הודו-אירופית – גרמאנית",
+   "fakt": "האיסלנדית שמרנית מאוד בצורות ובכתיב; את הסאגות האיסלנדיות העתיקות מהמאה ה-13 אפשר עדיין לקרוא היום במידה רבה."
   }
  },
  {
@@ -1085,6 +1199,12 @@
    "vyslovnost": "HA-lo",
    "rodina": "Indo-européenne – germanique",
    "fakt": "Issu des dialectes néerlandais des colons du Cap à partir du XVIIe siècle, il a été officiellement reconnu comme langue standard distincte en 1925."
+  },
+  "he": {
+   "nazev": "אפריקאנס",
+   "vyslovnost": "ˈהא-לו",
+   "rodina": "הודו-אירופית – גרמאנית",
+   "fakt": "היא התפתחה מהניבים ההולנדיים של המתיישבים בכף מהמאה ה-17 ואילך, והוכרה רשמית כשפה תקנית נפרדת ב-1925."
   }
  },
  {
@@ -1156,6 +1276,12 @@
    "vyslovnost": "bon-JOUR",
    "rodina": "Indo-européenne – romane",
    "fakt": "Selon l’Organisation internationale de la Francophonie, la plupart des personnes qui emploient le français au quotidien vivent aujourd’hui en Afrique. Kinshasa est la plus grande ville francophone du monde."
+  },
+  "he": {
+   "nazev": "צרפתית",
+   "vyslovnost": "בון-ˈז׳ור",
+   "rodina": "הודו-אירופית – רומאנית",
+   "fakt": "לפי הארגון הבין-לאומי של הפרנקופוניה, רוב המשתמשים היומיומיים בצרפתית חיים כיום באפריקה. קינשאסה היא העיר הדוברת צרפתית הגדולה בעולם."
   }
  },
  {
@@ -1222,6 +1348,12 @@
    "vyslovnost": "O-la",
    "rodina": "Indo-européenne – romane",
    "fakt": "L’orthographe espagnole ouvre les questions par un point d’interrogation renversé ¿ et les exclamations par un point d’exclamation renversé ¡."
+  },
+  "he": {
+   "nazev": "ספרדית",
+   "vyslovnost": "ˈאו-לה",
+   "rodina": "הודו-אירופית – רומאנית",
+   "fakt": "בכתיב הספרדי שאלה נפתחת בסימן שאלה הפוך ¿, וקריאה בסימן קריאה הפוך ¡."
   }
  },
  {
@@ -1273,6 +1405,12 @@
    "vyslovnost": "o-LA",
    "rodina": "Indo-européenne – romane",
    "fakt": "La plupart des locuteurs du portugais vivent au Brésil, qui compte plus de deux cents millions d’habitants."
+  },
+  "he": {
+   "nazev": "פורטוגזית",
+   "vyslovnost": "או-ˈלה",
+   "rodina": "הודו-אירופית – רומאנית",
+   "fakt": "רוב דוברי הפורטוגזית חיים בברזיל, שבה יותר ממאתיים מיליון תושבים."
   }
  },
  {
@@ -1320,6 +1458,12 @@
    "vyslovnost": "tchao",
    "rodina": "Indo-européenne – romane",
    "fakt": "La terminologie musicale est largement italienne – piano, forte, allegro, crescendo – parce qu’elle s’est imposée dans la musique italienne des XVIIe et XVIIIe siècles."
+  },
+  "he": {
+   "nazev": "איטלקית",
+   "vyslovnost": "צ׳או",
+   "rodina": "הודו-אירופית – רומאנית",
+   "fakt": "המינוח המוזיקלי איטלקי ברובו – piano, forte, allegro, crescendo – משום שהוא התקבע במוזיקה האיטלקית של המאות ה-17 וה-18."
   }
  },
  {
@@ -1367,6 +1511,12 @@
    "vyslovnost": "BOU-ne",
    "rodina": "Indo-européenne – romane",
    "fakt": "Le roumain est une langue romane orientale issue du latin, entourée surtout de langues slaves et du hongrois ; les emprunts slaves forment une part importante de son vocabulaire."
+  },
+  "he": {
+   "nazev": "רומנית",
+   "vyslovnost": "ˈבו-נה",
+   "rodina": "הודו-אירופית – רומאנית",
+   "fakt": "הרומנית היא שפה רומאנית מזרחית שמוצאה בלטינית, והיא מוקפת ברובה בשפות סלאביות ובהונגרית; מילים שאולות מסלאבית הן חלק ניכר מאוצר המילים שלה."
   }
  },
  {
@@ -1437,6 +1587,12 @@
    "vyslovnost": "O-la",
    "rodina": "Indo-européenne – romane",
    "fakt": "Le catalan est une langue romane à part entière, et non un dialecte de l’espagnol. C’est la seule langue officielle d’Andorre."
+  },
+  "he": {
+   "nazev": "קטלאנית",
+   "vyslovnost": "ˈאו-לה",
+   "rodina": "הודו-אירופית – רומאנית",
+   "fakt": "הקטלאנית היא שפה רומאנית בפני עצמה, לא ניב של ספרדית. היא השפה הרשמית היחידה של אנדורה."
   }
  },
  {
@@ -1484,6 +1640,12 @@
    "vyslovnost": "YA sou",
    "rodina": "Indo-européenne – grecque",
    "fakt": "Le grec est attesté par écrit depuis plus de trois mille ans (linéaire B). De nombreux mots internationaux viennent du grec : école, téléphone, démocratie."
+  },
+  "he": {
+   "nazev": "יוונית",
+   "vyslovnost": "ˈיא סו",
+   "rodina": "הודו-אירופית – יוונית",
+   "fakt": "היוונית מתועדת בכתב יותר משלושת אלפים שנה (כתב ליניארי B). מילים בין-לאומיות רבות מקורן ביוונית: school (בית ספר), טלפון, דמוקרטיה."
   }
  },
  {
@@ -1530,6 +1692,12 @@
    "vyslovnost": "DJI-a gouitt",
    "rodina": "Indo-européenne – celtique",
    "fakt": "La salutation irlandaise « Dia duit » signifie littéralement « Dieu soit avec toi » ; la réponse « Dia is Muire duit » signifie « Dieu et Marie soient avec toi »."
+  },
+  "he": {
+   "nazev": "אירית",
+   "vyslovnost": "ˈג׳י-אה גוויט",
+   "rodina": "הודו-אירופית – קלטית",
+   "fakt": "פירושה המילולי של הברכה האירית “Dia duit” הוא “אלוהים עמך”; התשובה “Dia is Muire duit” פירושה “אלוהים ומרים עמך”."
   }
  },
  {
@@ -1585,6 +1753,12 @@
    "vyslovnost": "CHOU-maï",
    "rodina": "Indo-européenne – celtique",
    "fakt": "Le village gallois de Llanfairpwllgwyngyll… compte 58 lettres sous sa forme complète, l’un des plus longs toponymes d’Europe."
+  },
+  "he": {
+   "nazev": "ולשית",
+   "vyslovnost": "ˈשו-מאי",
+   "rodina": "הודו-אירופית – קלטית",
+   "fakt": "לשמו המלא של הכפר הוולשי Llanfairpwllgwyngyll… יש 58 אותיות, והוא מבין שמות המקומות הארוכים ביותר באירופה."
   }
  },
  {
@@ -1631,6 +1805,12 @@
    "vyslovnost": "LA-bass",
    "rodina": "Indo-européenne – balte",
    "fakt": "Le lituanien est l’une des langues indo-européennes vivantes les plus archaïques ; il conserve de nombreux traits du proto-indo-européen tardif, comme une riche flexion nominale."
+  },
+  "he": {
+   "nazev": "ליטאית",
+   "vyslovnost": "ˈלא-באס",
+   "rodina": "הודו-אירופית – בלטית",
+   "fakt": "הליטאית היא מן השפות ההודו-אירופיות החיות הארכאיות ביותר, והיא משמרת תכונות רבות של הפרוטו-הודו-אירופית המאוחרת, כגון נטייה עשירה של שמות."
   }
  },
  {
@@ -1677,6 +1857,12 @@
    "vyslovnost": "SVEÏ-ki",
    "rodina": "Indo-européenne – balte",
    "fakt": "Avec le lituanien, il forme la branche balte orientale de l’indo-européen ; les langues baltes occidentales, comme le vieux-prussien, sont éteintes."
+  },
+  "he": {
+   "nazev": "לטבית",
+   "vyslovnost": "ˈסביי-קי",
+   "rodina": "הודו-אירופית – בלטית",
+   "fakt": "יחד עם הליטאית היא יוצרת את הענף הבלטי המזרחי של המשפחה ההודו-אירופית; השפות הבלטיות המערביות, כגון הפרוסית העתיקה, נכחדו."
   }
  },
  {
@@ -1742,6 +1928,12 @@
    "vyslovnost": "toun-djat-YÈ-ta",
    "rodina": "Indo-européenne – branche à part",
    "fakt": "L’albanais forme une branche indépendante de la famille indo-européenne, sans parent proche."
+  },
+  "he": {
+   "nazev": "אלבנית",
+   "vyslovnost": "טון-ג׳את-ˈיה-טה",
+   "rodina": "הודו-אירופית – ענף עצמאי",
+   "fakt": "האלבנית מהווה ענף עצמאי במשפחה ההודו-אירופית, ואין לה שפות קרובות לה במיוחד."
   }
  },
  {
@@ -1788,6 +1980,12 @@
    "vyslovnost": "BA-rèv",
    "rodina": "Indo-européenne – branche à part",
    "fakt": "L’alphabet arménien a été créé vers 405 par le moine Mesrop Machtots et reste en usage. L’arménien forme une branche indépendante de l’indo-européen."
+  },
+  "he": {
+   "nazev": "ארמנית",
+   "vyslovnost": "ˈבא-רב",
+   "rodina": "הודו-אירופית – ענף עצמאי",
+   "fakt": "האלפבית הארמני נוצר בסביבות שנת 405 בידי הנזיר מסרופ משטוץ, והוא עדיין בשימוש. הארמנית מהווה ענף עצמאי במשפחה ההודו-אירופית."
   }
  },
  {
@@ -1863,6 +2061,12 @@
    "vyslovnost": "na-MAS-té",
    "rodina": "Indo-européenne – indo-aryenne",
    "fakt": "Il s’écrit en devanagari, un abugida : les signes consonantiques portent une voyelle inhérente, et une barre horizontale (shirorekha) relie les lettres d’un mot."
+  },
+  "he": {
+   "nazev": "הינדי",
+   "vyslovnost": "נה-ˈמס-טה",
+   "rodina": "הודו-אירופית – הודו-ארית",
+   "fakt": "היא נכתבת בדוונאגרי, אבוגידה: סימני העיצורים נושאים תנועה מובנית, וקו עליון אופקי (shirorekha) מחבר את אותיות המילה."
   }
  },
  {
@@ -1925,6 +2129,12 @@
    "vyslovnost": "NO-moch-kar",
    "rodina": "Indo-européenne – indo-aryenne",
    "fakt": "La Journée internationale de la langue maternelle (UNESCO, 21 février) commémore la manifestation de 1952 à Dacca pour la reconnaissance du bengali."
+  },
+  "he": {
+   "nazev": "בנגלית",
+   "vyslovnost": "ˈנו-מוש-קאר",
+   "rodina": "הודו-אירופית – הודו-ארית",
+   "fakt": "יום שפת האם הבין-לאומי (אונסק״ו, 21 בפברואר) מציין את ההפגנה בדאקה ב-1952 למען הכרה בבנגלית."
   }
  },
  {
@@ -1987,6 +2197,12 @@
    "vyslovnost": "as-sa-LA-mou a-LEÏ-koum",
    "rodina": "Indo-européenne – indo-aryenne",
    "fakt": "L’ourdou et le hindi familiers sont mutuellement intelligibles (hindoustani), mais diffèrent par l’écriture – l’ourdou emploie l’alphabet perso-arabe, de droite à gauche – et par le vocabulaire soutenu."
+  },
+  "he": {
+   "nazev": "אורדו",
+   "vyslovnost": "אס-סא-ˈלא-מו א-ˈליי-קום",
+   "rodina": "הודו-אירופית – הודו-ארית",
+   "fakt": "האורדו וההינדי המדוברות מובנות הדדית (הינדוסטאני), אך הן נבדלות בכתב – האורדו נכתבת בכתב פרסי-ערבי, מימין לשמאל – ובאוצר המילים הרשמי."
   }
  },
  {
@@ -2052,6 +2268,12 @@
    "vyslovnost": "sat chri a-KAL",
    "rodina": "Indo-européenne – indo-aryenne",
    "fakt": "Le pendjabi est une langue tonale : la hauteur distingue le sens des mots, ce qui est rare parmi les langues indo-européennes."
+  },
+  "he": {
+   "nazev": "פנג׳אבית",
+   "vyslovnost": "סת שרי א-ˈקאל",
+   "rodina": "הודו-אירופית – הודו-ארית",
+   "fakt": "הפנג׳אבית היא שפה טונלית: גובה הצליל מבחין בין משמעויות של מילים, דבר נדיר בשפות ההודו-אירופיות."
   }
  },
  {
@@ -2107,6 +2329,12 @@
    "vyslovnost": "na-mas-KAR",
    "rodina": "Indo-européenne – indo-aryenne",
    "fakt": "Le marathi est la langue officielle de l’État indien du Maharashtra et se parle, entre autres, à Mumbai."
+  },
+  "he": {
+   "nazev": "מראטהית",
+   "vyslovnost": "נה-מס-ˈקאר",
+   "rodina": "הודו-אירופית – הודו-ארית",
+   "fakt": "המראטהית היא השפה הרשמית של מדינת מהאראשטרה בהודו, ומדברים בה בין היתר במומבאי."
   }
  },
  {
@@ -2162,6 +2390,12 @@
    "vyslovnost": "kèm TCHO",
    "rodina": "Indo-européenne – indo-aryenne",
    "fakt": "L’écriture goudjarati dérive du devanagari mais n’a pas la barre horizontale."
+  },
+  "he": {
+   "nazev": "גוג׳ראטית",
+   "vyslovnost": "קם ˈצ׳ו",
+   "rodina": "הודו-אירופית – הודו-ארית",
+   "fakt": "כתב הגוג׳ראטית נגזר מדוונאגרי, אך אין בו הקו העליון האופקי."
   }
  },
  {
@@ -2219,6 +2453,12 @@
    "vyslovnost": "na-MAS-té",
    "rodina": "Indo-européenne – indo-aryenne",
    "fakt": "Le népalais est la langue officielle du Népal et l’une des langues répertoriées de l’Inde. Le mot « himal » (montagne enneigée) est apparenté au sanskrit « hima », neige."
+  },
+  "he": {
+   "nazev": "נפאלית",
+   "vyslovnost": "נה-ˈמס-טה",
+   "rodina": "הודו-אירופית – הודו-ארית",
+   "fakt": "הנפאלית היא השפה הרשמית של נפאל ואחת השפות המנויות בחוקת הודו. המילה “himal” (הר מושלג) קרובה למילה הסנסקריטית “hima”, שלג."
   }
  },
  {
@@ -2274,6 +2514,12 @@
    "vyslovnost": "A-you-bo-vann",
    "rodina": "Indo-européenne – indo-aryenne",
    "fakt": "Les lettres cingalaises sont surtout arrondies, ce qu’on explique d’ordinaire par l’écriture au stylet sur des feuilles de palmier, que des traits droits fendraient."
+  },
+  "he": {
+   "nazev": "סינהלית",
+   "vyslovnost": "ˈא-יו-בו-ואן",
+   "rodina": "הודו-אירופית – הודו-ארית",
+   "fakt": "אותיות הסינהלית מעוגלות ברובן, ובדרך כלל מוסבר הדבר בכתיבה בחרט על עלי דקל, שקווים ישרים היו מבקעים אותם."
   }
  },
  {
@@ -2322,6 +2568,12 @@
    "vyslovnost": "sa-LAM",
    "rodina": "Indo-européenne – iranienne",
    "fakt": "Bazar, caravane et pyjama viennent du persan ; « échec et mat » s’explique généralement par « le roi est sans défense »."
+  },
+  "he": {
+   "nazev": "פרסית",
+   "vyslovnost": "סא-ˈלאם",
+   "rodina": "הודו-אירופית – איראנית",
+   "fakt": "המילים בזאר, קרוואן ופיג׳מה מקורן בפרסית; “שח מט” מוסבר בדרך כלל כ“המלך חסר אונים”."
   }
  },
  {
@@ -2387,6 +2639,12 @@
    "vyslovnost": "sa-LAM",
    "rodina": "Indo-européenne – iranienne",
    "fakt": "La société pachtoune suit un code non écrit de l’honneur et de l’hospitalité appelé pachtounwali."
+  },
+  "he": {
+   "nazev": "פשטו",
+   "vyslovnost": "סא-ˈלאם",
+   "rodina": "הודו-אירופית – איראנית",
+   "fakt": "החברה הפשטונית נוהגת לפי קוד לא כתוב של כבוד והכנסת אורחים, הנקרא פשטונוואלי."
   }
  },
  {
@@ -2457,6 +2715,12 @@
    "vyslovnost": "SI-lav",
    "rodina": "Indo-européenne – iranienne",
    "fakt": "Selon le pays, le kurde s’écrit dans trois alphabets : latin (Turquie, Syrie), perso-arabe (Irak, Iran) et, autrefois, cyrillique (ex-Union soviétique)."
+  },
+  "he": {
+   "nazev": "כורדית",
+   "vyslovnost": "ˈסי-לאב",
+   "rodina": "הודו-אירופית – איראנית",
+   "fakt": "הכורדית נכתבת בשלושה כתבים, לפי המדינה: לטיני (טורקיה, סוריה), פרסי-ערבי (עיראק, איראן) ובעבר גם קירילי (ברית המועצות לשעבר)."
   }
  },
  {
@@ -2512,6 +2776,12 @@
    "vyslovnost": "KAÏ-cho",
    "rodina": "Langue isolée – sans parenté connue",
    "fakt": "Le basque est un isolat sans parenté démontrée – la seule langue pré-indo-européenne d’Europe occidentale à avoir survécu jusqu’à nos jours."
+  },
+  "he": {
+   "nazev": "בסקית",
+   "vyslovnost": "ˈקאי-שו",
+   "rodina": "שפה מבודדת – ללא קרובות ידועות",
+   "fakt": "הבסקית היא שפה מבודדת שלא הוכחו לה קרובות – השפה הקדם-הודו-אירופית היחידה במערב אירופה ששרדה עד ימינו."
   }
  },
  {
@@ -2580,6 +2850,12 @@
    "vyslovnost": "MAR-ha-bann",
    "rodina": "Afro-asiatique – sémitique",
    "fakt": "L’écriture arabe va de droite à gauche, et les lettres ont jusqu’à quatre formes selon leur position (isolée, initiale, médiane, finale)."
+  },
+  "he": {
+   "nazev": "ערבית",
+   "vyslovnost": "ˈמר-חה-בא",
+   "rodina": "אפרו-אסייתית – שמית",
+   "fakt": "הכתב הערבי נכתב מימין לשמאל, ולאותיות יש עד ארבע צורות לפי מיקומן (מבודדת, תחילית, אמצעית, סופית)."
   }
  },
  {
@@ -2626,6 +2902,12 @@
    "vyslovnost": "cha-LOM",
    "rodina": "Afro-asiatique – sémitique",
    "fakt": "Pendant près de deux mille ans, l’hébreu n’a été la langue maternelle de personne, seulement une langue de liturgie et de littérature. Sa renaissance aux XIXe et XXe siècles est un cas unique de revitalisation linguistique réussie."
+  },
+  "he": {
+   "nazev": "עברית",
+   "vyslovnost": "שָׁלוֹם",
+   "rodina": "אפרו-אסייתית – שמית",
+   "fakt": "במשך כמעט אלפיים שנה לא הייתה העברית שפת האם של אף אחד, אלא שפת תפילה וספרות בלבד. תחייתה במאות ה-19 וה-20 היא מקרה יחיד במינו של החייאת שפה מוצלחת."
   }
  },
  {
@@ -2686,6 +2968,12 @@
    "vyslovnost": "sè-LAM",
    "rodina": "Afro-asiatique – sémitique",
    "fakt": "Il utilise l’écriture éthiopienne (guèze), un abugida de plus de 200 caractères, chacun représentant une syllabe."
+  },
+  "he": {
+   "nazev": "אמהרית",
+   "vyslovnost": "סה-ˈלאם",
+   "rodina": "אפרו-אסייתית – שמית",
+   "fakt": "היא נכתבת בכתב האתיופי (געז), אבוגידה של יותר מ-200 סימנים, שכל אחד מהם מייצג הברה."
   }
  },
  {
@@ -2745,6 +3033,12 @@
    "vyslovnost": "IS-ka oua-RANN",
    "rodina": "Afro-asiatique – couchitique",
    "fakt": "Le somali n’a reçu sa norme écrite officielle en alphabet latin qu’en 1972 ; jusque-là, c’était surtout la langue d’une riche poésie orale."
+  },
+  "he": {
+   "nazev": "סומלית",
+   "vyslovnost": "ˈאיס-קה וא-ˈראן",
+   "rodina": "אפרו-אסייתית – כושית",
+   "fakt": "הסומלית קיבלה תקן כתיבה רשמי בכתב לטיני רק ב-1972; עד אז הייתה בעיקר שפה של שירה עשירה בעל-פה."
   }
  },
  {
@@ -2805,6 +3099,12 @@
    "vyslovnost": "A-kam",
    "rodina": "Afro-asiatique – couchitique",
    "fakt": "L’oromo est la langue d’Éthiopie qui compte le plus de locuteurs natifs, devant l’amharique."
+  },
+  "he": {
+   "nazev": "אורומו",
+   "vyslovnost": "ˈאק-קאם",
+   "rodina": "אפרו-אסייתית – כושית",
+   "fakt": "לאורומו יש באתיופיה המספר הגדול ביותר של דוברים כשפת אם, לפני האמהרית."
   }
  },
  {
@@ -2875,6 +3175,12 @@
    "vyslovnost": "SAN-nou",
    "rodina": "Afro-asiatique – tchadique",
    "fakt": "Le haoussa est la principale langue du commerce et de la communication élargie dans le nord du Nigeria et au Niger, et il s’emploie aussi dans les pays voisins."
+  },
+  "he": {
+   "nazev": "האוסה",
+   "vyslovnost": "ˈסאן-נו",
+   "rodina": "אפרו-אסייתית – צ׳אדית",
+   "fakt": "האוסה היא השפה העיקרית של המסחר ושל התקשורת הרחבה בצפון ניגריה ובניז׳ר, והיא משמשת גם במדינות השכנות."
   }
  },
  {
@@ -2941,6 +3247,12 @@
    "vyslovnost": "DJAM-bo",
    "rodina": "Nigéro-congolaise – bantoue",
    "fakt": "Le swahili est une lingua franca d’Afrique de l’Est et une langue officielle de l’Union africaine. L’expression « hakuna matata » signifie « pas de souci »."
+  },
+  "he": {
+   "nazev": "סווהילי",
+   "vyslovnost": "ˈג׳אם-בו",
+   "rodina": "ניז׳ר-קונגו – בנטו",
+   "fakt": "הסווהילי היא לינגואה פרנקה במזרח אפריקה ואחת השפות הרשמיות של האיחוד האפריקאי. הביטוי “hakuna matata” פירושו “אין דאגות”."
   }
  },
  {
@@ -3006,6 +3318,12 @@
    "vyslovnost": "BA-ouo ni",
    "rodina": "Nigéro-congolaise",
    "fakt": "Le yoruba distingue trois tons ponctuels, marqués dans l’orthographe par des diacritiques : owó ‘argent’, ọwọ́ ‘main’."
+  },
+  "he": {
+   "nazev": "יורובה",
+   "vyslovnost": "ˈבא-וו ני",
+   "rodina": "ניז׳ר-קונגו",
+   "fakt": "היורובה מבחינה בין שלושה טונים מישוריים, המסומנים בכתיב בסימנים דיאקריטיים: owó ‘כסף’, ọwọ́ ‘יד’."
   }
  },
  {
@@ -3061,6 +3379,12 @@
    "vyslovnost": "n-DÈ-ouo",
    "rodina": "Nigéro-congolaise",
    "fakt": "L’igbo compte de nombreux dialectes ; la langue standard a été élaborée au XXe siècle sur la base de plusieurs d’entre eux."
+  },
+  "he": {
+   "nazev": "איגבו",
+   "vyslovnost": "נ-ˈדה-וו",
+   "rodina": "ניז׳ר-קונגו",
+   "fakt": "לאיגבו ניבים רבים; השפה התקנית פותחה במאה ה-20 על בסיס כמה מהם."
   }
  },
  {
@@ -3116,6 +3440,12 @@
    "vyslovnost": "sa-ou-BO-na",
    "rodina": "Nigéro-congolaise – bantoue",
    "fakt": "« Sawubona » signifie littéralement « nous te voyons » ; on répond « yebo, sawubona » et, à la question de savoir comment on va, « ngikhona » – « je suis là »."
+  },
+  "he": {
+   "nazev": "זולו",
+   "vyslovnost": "סא-וו-ˈבו-נה",
+   "rodina": "ניז׳ר-קונגו – בנטו",
+   "fakt": "פירושה המילולי של הברכה “sawubona” הוא “אנחנו רואים אותך”; התשובה היא “yebo, sawubona”, ולשאלה מה שלומך עונים “ngikhona” – “אני כאן”."
   }
  },
  {
@@ -3162,6 +3492,12 @@
    "vyslovnost": "m-HO-ro",
    "rodina": "Nigéro-congolaise – bantoue",
    "fakt": "Le nom du Zimbabwe vient du shona « dzimba dza mabwe », maisons de pierre, d’après les ruines du Grand Zimbabwe."
+  },
+  "he": {
+   "nazev": "שונה",
+   "vyslovnost": "מ-ˈהו-רו",
+   "rodina": "ניז׳ר-קונגו – בנטו",
+   "fakt": "השם זימבבואה בא מהמילים בשונה “dzimba dza mabwe”, בתי אבן, על שם חורבות זימבבואה הגדולה."
   }
  },
  {
@@ -3215,6 +3551,12 @@
    "vyslovnost": "NAN-ga dèf",
    "rodina": "Nigéro-congolaise",
    "fakt": "Le wolof est la principale langue véhiculaire du Sénégal. Le mot européen « banane » vient probablement du wolof ou d’une autre langue d’Afrique de l’Ouest."
+  },
+  "he": {
+   "nazev": "וולוף",
+   "vyslovnost": "ˈנאן-גה דף",
+   "rodina": "ניז׳ר-קונגו",
+   "fakt": "הוולוף היא הלינגואה פרנקה העיקרית של סנגל. המילה האירופית “בננה” באה כנראה מוולוף או משפה מערב-אפריקאית אחרת."
   }
  },
  {
@@ -3305,6 +3647,12 @@
    "vyslovnost": "djam tann",
    "rodina": "Nigéro-congolaise",
    "fakt": "Le peul est parlé par une population traditionnellement pastorale répartie dans tout le Sahel, dans une vingtaine de pays, du Sénégal au Soudan."
+  },
+  "he": {
+   "nazev": "פולה",
+   "vyslovnost": "ג׳אם טאן",
+   "rodina": "ניז׳ר-קונגו",
+   "fakt": "בפולה מדברת אוכלוסייה רועה במסורתה, הפזורה ברחבי הסאהל בכעשרים מדינות, מסנגל ועד סודאן."
   }
  },
  {
@@ -3397,6 +3745,12 @@
    "vyslovnost": "ni hao",
    "rodina": "Sino-tibétaine",
    "fakt": "Les caractères chinois représentent en général des morphèmes (syllabes), non des sons. Lire un journal exige environ trois mille caractères."
+  },
+  "he": {
+   "nazev": "סינית מנדרינית",
+   "vyslovnost": "ני האו",
+   "rodina": "סינו-טיבטית",
+   "fakt": "הסימנים הסיניים מייצגים בדרך כלל מורפמות (הברות), ולא הגאים. כדי לקרוא עיתון צריך להכיר כשלושת אלפים סימנים."
   }
  },
  {
@@ -3462,6 +3816,12 @@
    "vyslovnost": "neï HO",
    "rodina": "Sino-tibétaine",
    "fakt": "Le cantonais a de six à neuf tons selon l’analyse ; le mandarin en a quatre."
+  },
+  "he": {
+   "nazev": "קנטונזית",
+   "vyslovnost": "ניי ˈהו",
+   "rodina": "סינו-טיבטית",
+   "fakt": "לקנטונזית שישה עד תשעה טונים, תלוי בניתוח; למנדרינית ארבעה."
   }
  },
  {
@@ -3517,6 +3877,12 @@
    "vyslovnost": "ming-ga-la-BA",
    "rodina": "Sino-tibétaine",
    "fakt": "L’écriture birmane se compose surtout de formes circulaires, ce qu’on explique d’ordinaire par l’écriture sur des feuilles de palmier, que des traits droits fendraient."
+  },
+  "he": {
+   "nazev": "בורמזית",
+   "vyslovnost": "מינג-גה-לה-ˈבא",
+   "rodina": "סינו-טיבטית",
+   "fakt": "הכתב הבורמזי מורכב ברובו מצורות עגולות, ובדרך כלל מוסבר הדבר בכתיבה על עלי דקל, שקווים ישרים היו מבקעים אותם."
   }
  },
  {
@@ -3597,6 +3963,12 @@
    "vyslovnost": "TA-chi DÈ-lèk",
    "rodina": "Sino-tibétaine",
    "fakt": "L’orthographe tibétaine est très conservatrice : elle reflète la prononciation du vieux tibétain, si bien que de nombreuses lettres écrites ne se prononcent plus."
+  },
+  "he": {
+   "nazev": "טיבטית",
+   "vyslovnost": "ˈטא-שי ˈדה-לק",
+   "rodina": "סינו-טיבטית",
+   "fakt": "הכתיב הטיבטי שמרני מאוד: הוא משקף את הגיית הטיבטית העתיקה, ולכן אותיות כתובות רבות כבר אינן נהגות."
   }
  },
  {
@@ -3667,6 +4039,12 @@
    "vyslovnost": "va-NAK-kam",
    "rodina": "Dravidienne",
    "fakt": "Le tamoul est l’une des plus anciennes langues vivantes dotées d’une tradition littéraire ininterrompue ; la plus ancienne poésie du Sangam a quelque deux mille ans."
+  },
+  "he": {
+   "nazev": "טמילית",
+   "vyslovnost": "וה-ˈנאק-קם",
+   "rodina": "דרווידית",
+   "fakt": "הטמילית היא מן השפות החיות העתיקות ביותר שיש להן מסורת ספרותית רצופה; שירת הסנגם הקדומה ביותר היא בת כאלפיים שנה."
   }
  },
  {
@@ -3722,6 +4100,12 @@
    "vyslovnost": "na-mas-KA-ram",
    "rodina": "Dravidienne",
    "fakt": "Presque tous les mots se terminent par une voyelle ; c’est pourquoi le voyageur vénitien du XVe siècle Niccolò de' Conti appela le télougou « l’italien de l’Orient »."
+  },
+  "he": {
+   "nazev": "טלוגו",
+   "vyslovnost": "נה-מס-ˈקא-רם",
+   "rodina": "דרווידית",
+   "fakt": "כמעט כל מילה מסתיימת בתנועה, ולכן כינה הנוסע הוונציאני בן המאה ה-15 ניקולו דה קונטי את הטלוגו “האיטלקית של המזרח”."
   }
  },
  {
@@ -3768,6 +4152,12 @@
    "vyslovnost": "kon-ni-tchi-oua",
    "rodina": "Japonique",
    "fakt": "Le japonais combine trois écritures : les kanji, d’origine chinoise, et deux syllabaires, les hiragana et les katakana, avec des lettres latines dans certains contextes."
+  },
+  "he": {
+   "nazev": "יפנית",
+   "vyslovnost": "קון-ני-צ׳י-ווה",
+   "rodina": "יפונית",
+   "fakt": "היפנית משלבת שלושה כתבים: קאנג׳י שמקורם בסינית ושני כתבים הברתיים, היראגנה וקטקנה, ובהקשרים מסוימים גם אותיות לטיניות."
   }
  },
  {
@@ -3815,6 +4205,12 @@
    "vyslovnost": "an-nyong-ha-sè-yo",
    "rodina": "Coréanique",
    "fakt": "Le hangeul a été créé en 1443 sous le roi Sejong. La forme des lettres consonnes représente schématiquement la position des organes de la parole."
+  },
+  "he": {
+   "nazev": "קוריאנית",
+   "vyslovnost": "אן-ניונג-הא-סה-יו",
+   "rodina": "קוריאנית",
+   "fakt": "ההנגול נוצר ב-1443 בימי המלך סג׳ונג. צורות אותיות העיצורים מתארות באופן סכמטי את מנח אברי הדיבור."
   }
  },
  {
@@ -3872,6 +4268,12 @@
    "vyslovnost": "saïn BAÏ-nou",
    "rodina": "Mongolo-khitane – mongole",
    "fakt": "L’écriture mongole traditionnelle se trace de haut en bas, en colonnes verticales ; la Mongolie emploie surtout le cyrillique, la Mongolie-Intérieure (Chine) l’écriture traditionnelle."
+  },
+  "he": {
+   "nazev": "מונגולית",
+   "vyslovnost": "סאין ˈבאי-נו",
+   "rodina": "מונגולית-חיטאנית – מונגולית",
+   "fakt": "הכתב המונגולי המסורתי נכתב מלמעלה למטה בטורים אנכיים; במונגוליה משתמשים בעיקר בכתב הקירילי, ובמונגוליה הפנימית (סין) בכתב המסורתי."
   }
  },
  {
@@ -3918,6 +4320,12 @@
    "vyslovnost": "ga-mar-DJO-ba",
    "rodina": "Kartvélienne",
    "fakt": "L’écriture géorgienne mkhedrouli ne distingue pas majuscules et minuscules ; le géorgien appartient à la famille distincte des langues kartvéliennes."
+  },
+  "he": {
+   "nazev": "גאורגית",
+   "vyslovnost": "גא-מאר-ˈג׳ו-בה",
+   "rodina": "קרטוולית",
+   "fakt": "בכתב המחדרולי הגאורגי אין הבחנה בין אותיות גדולות לקטנות; הגאורגית שייכת למשפחה הקרטוולית הנפרדת."
   }
  },
  {
@@ -3965,6 +4373,12 @@
    "vyslovnost": "MÈR-ha-ba",
    "rodina": "Turque",
    "fakt": "Le turc est agglutinant : les significations grammaticales s’expriment par des chaînes de suffixes, si bien qu’un seul mot peut correspondre à toute une phrase anglaise."
+  },
+  "he": {
+   "nazev": "טורקית",
+   "vyslovnost": "ˈמר-הה-בה",
+   "rodina": "טורקית",
+   "fakt": "הטורקית היא שפה צמגנית: משמעויות דקדוקיות מבוטאות בשרשראות של סיומות, ולכן מילה אחת יכולה להתאים למשפט שלם."
   }
  },
  {
@@ -4022,6 +4436,12 @@
    "vyslovnost": "sa-LAM",
    "rodina": "Turque",
    "fakt": "L’azerbaïdjanais et le turc sont des langues turques oghouzes, largement intercompréhensibles."
+  },
+  "he": {
+   "nazev": "אזרית",
+   "vyslovnost": "סא-ˈלאם",
+   "rodina": "טורקית",
+   "fakt": "האזרית והטורקית הן שפות טורקיות אוגוזיות, ומידת ההבנה ההדדית ביניהן גבוהה."
   }
  },
  {
@@ -4068,6 +4488,12 @@
    "vyslovnost": "SÈ-lèm",
    "rodina": "Turque",
    "fakt": "Le kazakh passe progressivement du cyrillique à l’alphabet latin ; le gouvernement prévoit d’achever la transition dans les années 2030."
+  },
+  "he": {
+   "nazev": "קזחית",
+   "vyslovnost": "סה-ˈלם",
+   "rodina": "טורקית",
+   "fakt": "הקזחית עוברת בהדרגה מהכתב הקירילי לאלפבית הלטיני; הממשלה מתכננת להשלים את המעבר בשנות ה-30 של המאה ה-21."
   }
  },
  {
@@ -4114,6 +4540,12 @@
    "vyslovnost": "sa-LOM",
    "rodina": "Turque",
    "fakt": "L’ouzbek est la langue turque la plus parlée après le turc."
+  },
+  "he": {
+   "nazev": "אוזבקית",
+   "vyslovnost": "סא-ˈלום",
+   "rodina": "טורקית",
+   "fakt": "האוזבקית היא השפה הטורקית המדוברת ביותר אחרי הטורקית."
   }
  },
  {
@@ -4174,6 +4606,12 @@
    "vyslovnost": "yakh-chi-mou-SIZ",
    "rodina": "Turque",
    "fakt": "L’ouïghour est une langue turque écrite dans un alphabet arabe modifié qui, contrairement à l’arabe, note systématiquement les voyelles."
+  },
+  "he": {
+   "nazev": "אויגורית",
+   "vyslovnost": "יאח-שי-מו-ˈסיז",
+   "rodina": "טורקית",
+   "fakt": "האויגורית היא שפה טורקית הנכתבת בכתב ערבי מותאם, שבניגוד לערבית מציין את התנועות באופן עקבי."
   }
  },
  {
@@ -4220,6 +4658,12 @@
    "vyslovnost": "hèï",
    "rodina": "Ouralienne",
    "fakt": "Le finnois compte quinze cas, dont beaucoup expriment des relations spatiales que l’anglais rend par des prépositions."
+  },
+  "he": {
+   "nazev": "פינית",
+   "vyslovnost": "היי",
+   "rodina": "אורלית",
+   "fakt": "בפינית חמש-עשרה יחסות, ורבות מהן מבטאות יחסים מרחביים שבעברית מבוטאים במילות יחס."
   }
  },
  {
@@ -4266,6 +4710,12 @@
    "vyslovnost": "SI-ya",
    "rodina": "Ouralienne",
    "fakt": "Le hongrois est une langue finno-ougrienne ; ses plus proches parents sont le khanty et le mansi, en Sibérie occidentale."
+  },
+  "he": {
+   "nazev": "הונגרית",
+   "vyslovnost": "ˈסי-יה",
+   "rodina": "אורלית",
+   "fakt": "ההונגרית היא שפה פינו-אוגרית; קרובותיה הקרובות ביותר הן החאנטית והמאנסית שבמערב סיביר."
   }
  },
  {
@@ -4312,6 +4762,12 @@
    "vyslovnost": "TÈ-rè",
    "rodina": "Ouralienne",
    "fakt": "L’estonien distingue trois degrés de quantité (bref, long et surlong), qui peuvent différencier le sens des mots."
+  },
+  "he": {
+   "nazev": "אסטונית",
+   "vyslovnost": "ˈטה-רה",
+   "rodina": "אורלית",
+   "fakt": "האסטונית מבחינה בין שלוש דרגות אורך (קצר, ארוך וארוך במיוחד), שיכולות להבחין בין משמעויות של מילים."
   }
  },
  {
@@ -4377,6 +4833,12 @@
    "vyslovnost": "BOU-rèss",
    "rodina": "Ouralienne",
    "fakt": "Les langues sames disposent d’une terminologie étendue pour la neige et pour les rennes selon l’âge, la robe et la forme des bois."
+  },
+  "he": {
+   "nazev": "סאמית צפונית",
+   "vyslovnost": "ˈבו-רס",
+   "rodina": "אורלית",
+   "fakt": "לשפות הסאמיות מינוח נרחב לשלג, ולאיילי צפון לפי גילם, צבעם וצורת קרניהם."
   }
  },
  {
@@ -4423,6 +4885,12 @@
    "vyslovnost": "sinn tchao",
    "rodina": "Austroasiatique",
    "fakt": "Le vietnamien s’écrit en alphabet latin avec des diacritiques ; une même lettre peut porter deux signes, l’un pour le timbre de la voyelle, l’autre pour le ton."
+  },
+  "he": {
+   "nazev": "וייטנאמית",
+   "vyslovnost": "סין צ׳או",
+   "rodina": "אוסטרו-אסייתית",
+   "fakt": "הווייטנאמית נכתבת בכתב לטיני עם סימנים דיאקריטיים; אות אחת יכולה לשאת שני סימנים, אחד לאיכות התנועה ואחד לטון."
   }
  },
  {
@@ -4469,6 +4937,12 @@
    "vyslovnost": "sou-os-DEÏ",
    "rodina": "Austroasiatique",
    "fakt": "Selon le Livre Guinness des records, l’alphabet khmer compte 74 lettres, plus que tout autre."
+  },
+  "he": {
+   "nazev": "חמרית",
+   "vyslovnost": "סו-אס-ˈדיי",
+   "rodina": "אוסטרו-אסייתית",
+   "fakt": "לפי ספר השיאים של גינס, באלפבית החמרי 74 אותיות, יותר מבכל אלפבית אחר."
   }
  },
  {
@@ -4515,6 +4989,12 @@
    "vyslovnost": "sa-ouat-DI",
    "rodina": "Kra-daï",
    "fakt": "L’écriture thaïe ne met pas d’espace entre les mots ; les espaces séparent les propositions ou les phrases."
+  },
+  "he": {
+   "nazev": "תאית",
+   "vyslovnost": "סא-וואט-ˈדי",
+   "rodina": "קרה-דאי",
+   "fakt": "בכתב התאי אין רווחים בין מילים; רווחים מפרידים בין צירופים או בין משפטים."
   }
  },
  {
@@ -4561,6 +5041,12 @@
    "vyslovnost": "sa-baï-DI",
    "rodina": "Kra-daï",
    "fakt": "Le lao et le thaï sont étroitement apparentés et largement intercompréhensibles ; au Laos, on regarde couramment la télévision thaïlandaise."
+  },
+  "he": {
+   "nazev": "לאית",
+   "vyslovnost": "סא-באי-ˈדי",
+   "rodina": "קרה-דאי",
+   "fakt": "הלאית והתאית קרובות מאוד ומובנות הדדית במידה רבה; בלאוס צופים באופן שגרתי בטלוויזיה התאילנדית."
   }
  },
  {
@@ -4607,6 +5093,12 @@
    "vyslovnost": "HA-lo",
    "rodina": "Austronésienne",
    "fakt": "Le pluriel peut s’exprimer par redoublement : « anak » enfant, « anak-anak » enfants. L’indonésien est une forme standardisée du malais."
+  },
+  "he": {
+   "nazev": "אינדונזית",
+   "vyslovnost": "ˈהא-לו",
+   "rodina": "אוסטרונזית",
+   "fakt": "אפשר לבטא ריבוי באמצעות הכפלה: “anak” ילד, “anak-anak” ילדים. האינדונזית היא צורה תקנית של המלאית."
   }
  },
  {
@@ -4654,6 +5146,12 @@
    "vyslovnost": "se-LA-mat",
    "rodina": "Austronésienne",
    "fakt": "Les mots orang-outan (« personne de la forêt ») et amok viennent du malais."
+  },
+  "he": {
+   "nazev": "מלאית",
+   "vyslovnost": "סה-ˈלא-מאט",
+   "rodina": "אוסטרונזית",
+   "fakt": "המילים אורנגאוטן (“איש היער”) ואמוק מקורן במלאית."
   }
  },
  {
@@ -4714,6 +5212,12 @@
    "vyslovnost": "sou-GUÈNG ènn-DJING",
    "rodina": "Austronésienne",
    "fakt": "Le javanais possède un système de niveaux de langue (ngoko, krama) : on choisit un vocabulaire différent selon sa relation avec l’interlocuteur."
+  },
+  "he": {
+   "nazev": "ג׳אוונית",
+   "vyslovnost": "סו-ˈגנג אן-ˈג׳ינג",
+   "rodina": "אוסטרונזית",
+   "fakt": "בג׳אוונית יש מערכת של רמות דיבור (ngoko, krama): אוצר המילים נבחר לפי היחסים עם הנמען."
   }
  },
  {
@@ -4760,6 +5264,12 @@
    "vyslovnost": "kou-MOUS-ta",
    "rodina": "Austronésienne",
    "fakt": "Le tagalog compte de nombreux emprunts à l’espagnol ; la salutation « kumusta » vient de l’espagnol « ¿cómo está? »."
+  },
+  "he": {
+   "nazev": "טגלוג (פיליפינית)",
+   "vyslovnost": "קו-ˈמוס-טה",
+   "rodina": "אוסטרונזית",
+   "fakt": "בטגלוג מילים שאולות רבות מספרדית; הברכה “kumusta” באה מהספרדית “¿cómo está?”."
   }
  },
  {
@@ -4806,6 +5316,12 @@
    "vyslovnost": "sa-LA-ma",
    "rodina": "Austronésienne",
    "fakt": "Le malgache est une langue austronésienne dont les plus proches parents sont des langues du sud de Bornéo, à plus de 7000 km."
+  },
+  "he": {
+   "nazev": "מלגשית",
+   "vyslovnost": "סא-ˈלא-מה",
+   "rodina": "אוסטרונזית",
+   "fakt": "המלגשית היא שפה אוסטרונזית שקרובותיה הקרובות ביותר הן שפות מדרום בורנאו, במרחק של יותר מ-7,000 ק״מ."
   }
  },
  {
@@ -4852,6 +5368,12 @@
    "vyslovnost": "ki-a O-ra",
    "rodina": "Austronésienne",
    "fakt": "« Kia ora », littéralement « porte-toi bien », est aussi très employé en anglais néo-zélandais. Le maori est langue officielle depuis 1987."
+  },
+  "he": {
+   "nazev": "מאורית",
+   "vyslovnost": "קי-אה ˈאו-רה",
+   "rodina": "אוסטרונזית",
+   "fakt": "“Kia ora”, שפירושו המילולי “להיות בריאים”, נפוץ מאוד גם באנגלית של ניו זילנד. המאורית היא שפה רשמית מאז 1987."
   }
  },
  {
@@ -4907,6 +5429,12 @@
    "vyslovnost": "a-LO-ha",
    "rodina": "Austronésienne",
    "fakt": "L’alphabet hawaïen ne compte que 13 lettres : cinq voyelles et huit consonnes, dont le coup de glotte ʻokina. « Aloha » sert de salutation, d’adieu et de marque d’affection."
+  },
+  "he": {
+   "nazev": "הוואית",
+   "vyslovnost": "א-ˈלו-הה",
+   "rodina": "אוסטרונזית",
+   "fakt": "באלפבית ההוואי רק 13 אותיות: חמש תנועות ושמונה עיצורים, ובהם עצירת הקול ʻokina. “Aloha” משמשת לברכה, לפרידה ולהבעת חיבה."
   }
  },
  {
@@ -4953,6 +5481,12 @@
    "vyslovnost": "BOU-la",
    "rodina": "Austronésienne",
    "fakt": "La salutation « bula » abrège « ni sa bula vinaka » et signifie littéralement « vie ». Le fidjien est officiel avec l’anglais et le hindi des Fidji."
+  },
+  "he": {
+   "nazev": "פיג׳ית",
+   "vyslovnost": "ˈמבו-לה",
+   "rodina": "אוסטרונזית",
+   "fakt": "הברכה “bula” היא קיצור של “ni sa bula vinaka”, ופירושה המילולי “חיים”. הפיג׳ית רשמית לצד האנגלית והינדי פיג׳י."
   }
  },
  {
@@ -4999,6 +5533,12 @@
    "vyslovnost": "GOU-dè",
    "rodina": "Créole à base anglaise",
    "fakt": "Créole au vocabulaire surtout anglais et langue officielle de la Papouasie-Nouvelle-Guinée. La possession se marque par « bilong » : « gras bilong fes » (barbe), littéralement « herbe du visage »."
+  },
+  "he": {
+   "nazev": "טוק פיסין",
+   "vyslovnost": "ˈגו-דה",
+   "rodina": "קריאולית על בסיס אנגלי",
+   "fakt": "שפה קריאולית שאוצר המילים שלה בא ברובו מאנגלית, ואחת השפות הרשמיות של פפואה גינאה החדשה. שייכות מסומנת במילה “bilong”: “gras bilong fes” (זקן), מילולית “דשא של הפנים”."
   }
  },
  {
@@ -5079,6 +5619,12 @@
    "vyslovnost": "ri-maï-kou-YAÏ-ki",
    "rodina": "Quechua",
    "fakt": "Le quechua était la langue administrative de l’Empire inca. Par l’espagnol, il nous a donné lama, condor, puma, coca et guano."
+  },
+  "he": {
+   "nazev": "קצ׳ואה",
+   "vyslovnost": "רי-מאי-קו-ˈיאי-קי",
+   "rodina": "קצ׳ואה",
+   "fakt": "הקצ׳ואה הייתה שפת המנהל של האימפריה האינקאית. דרך הספרדית עברו ממנה לשפות אחרות המילים למה, קונדור, פומה, קוקה וגואנו."
   }
  },
  {
@@ -5139,6 +5685,12 @@
    "vyslovnost": "ka-mi-sa-RA-ki",
    "rodina": "Aymara",
    "fakt": "En aymara, le passé est associé à l’espace devant le locuteur et l’avenir à l’espace derrière lui, ce que confirment les études des gestes (Núñez & Sweetser, 2006)."
+  },
+  "he": {
+   "nazev": "איימרה",
+   "vyslovnost": "קא-מי-סא-ˈרא-קי",
+   "rodina": "איימרה",
+   "fakt": "באיימרה העבר מזוהה עם המרחב שלפני הדובר, והעתיד עם המרחב שמאחוריו, כפי שמאשרים מחקרי מחוות (Núñez & Sweetser, 2006)."
   }
  },
  {
@@ -5196,6 +5748,12 @@
    "vyslovnost": "mba-ÈÏ-tcha-pa",
    "rodina": "Tupi – tupi-guarani",
    "fakt": "Le guarani est co-officiel avec l’espagnol au Paraguay et parlé par la majorité de la population, y compris des personnes d’ascendance non autochtone – un cas unique dans les Amériques."
+  },
+  "he": {
+   "nazev": "גוארני",
+   "vyslovnost": "מבא-ˈאיי-שא-פה",
+   "rodina": "טופי – טופי-גוארני",
+   "fakt": "הגוארני רשמית לצד הספרדית בפרגוואי, ורוב האוכלוסייה מדברת בה, כולל אנשים שאינם ממוצא ילידי – מקרה יחיד במינו ביבשת אמריקה."
   }
  },
  {
@@ -5261,6 +5819,12 @@
    "vyslovnost": "NIL-tsè",
    "rodina": "Uto-aztèque",
    "fakt": "Le nahuatl était la langue de l’Empire aztèque. En viennent tomate (tomatl), avocat (ahuacatl), coyote (coyotl) et chili ; l’origine de « chocolat » est discutée."
+  },
+  "he": {
+   "nazev": "נאוואטל",
+   "vyslovnost": "ˈניל-צה",
+   "rodina": "יוטו-אצטקית",
+   "fakt": "הנאוואטל הייתה שפת האימפריה האצטקית. ממנה באו המילים tomato (tomatl), אבוקדו (ahuacatl), קויוט (coyotl) וצ׳ילי; מוצא המילה “שוקולד” שנוי במחלוקת."
   }
  },
  {
@@ -5326,6 +5890,12 @@
    "vyslovnost": "a-LOU",
    "rodina": "Eskimo-aléoute",
    "fakt": "Le groenlandais est polysynthétique : de nombreux suffixes s’attachent à une racine, si bien qu’un mot peut exprimer toute une phrase anglaise. Depuis 2009, c’est la seule langue officielle du Groenland."
+  },
+  "he": {
+   "nazev": "גרינלנדית",
+   "vyslovnost": "א-ˈלו",
+   "rodina": "אסקימו-אלאוטית",
+   "fakt": "הגרינלנדית היא שפה פוליסינתטית: סיומות רבות מצטרפות לשורש אחד, כך שמילה אחת יכולה לבטא משפט שלם. מאז 2009 היא השפה הרשמית היחידה של גרינלנד."
   }
  },
  {
@@ -5391,6 +5961,12 @@
    "vyslovnost": "AÏ-ngaï",
    "rodina": "Eskimo-aléoute",
    "fakt": "Le syllabaire inuktitut a été adapté du syllabaire cri. La forme d’un signe indique la consonne, son orientation la voyelle : ᐱ pi, ᐳ pu, ᐸ pa."
+  },
+  "he": {
+   "nazev": "אינוקטיטוט",
+   "vyslovnost": "ˈאיי-נגאי",
+   "rodina": "אסקימו-אלאוטית",
+   "fakt": "הכתב ההברתי של האינוקטיטוט עובד מהכתב ההברתי של הקרי. צורת הסימן מציינת את העיצור, וכיוונו את התנועה: ᐱ pi, ᐳ pu, ᐸ pa."
   }
  },
  {
@@ -5446,6 +6022,12 @@
    "vyslovnost": "na-mas-KA-ra",
    "rodina": "Dravidienne",
    "fakt": "Les plus anciennes inscriptions en kannada remontent aux environs du Ve siècle. L’Inde a accordé au kannada le statut de langue classique en 2008."
+  },
+  "he": {
+   "nazev": "קנאדה",
+   "vyslovnost": "נה-מס-ˈקא-רה",
+   "rodina": "דרווידית",
+   "fakt": "כתובות הקנאדה הקדומות ביותר הן מסביבות המאה ה-5. הודו העניקה לקנאדה מעמד של שפה קלאסית ב-2008."
   }
  },
  {
@@ -5501,6 +6083,12 @@
    "vyslovnost": "na-mas-KA-ram",
    "rodina": "Dravidienne",
    "fakt": "Le malayalam s’est séparé du tamoul approximativement entre le IXe et le XIIIe siècle. En transcription latine, son nom est un palindrome : Malayalam."
+  },
+  "he": {
+   "nazev": "מלאיאלאם",
+   "vyslovnost": "נה-מס-ˈקא-רם",
+   "rodina": "דרווידית",
+   "fakt": "המלאיאלאם התפצלה מהטמילית בערך בין המאה ה-9 למאה ה-13. בתעתיק לטיני שמה הוא פלינדרום: Malayalam."
   }
  },
  {
@@ -5551,6 +6139,12 @@
    "vyslovnost": "na-mas-KAR",
    "rodina": "Indo-européenne – indo-aryenne",
    "fakt": "Le sommet arrondi des lettres odia s’explique d’ordinaire par l’écriture au stylet sur des feuilles de palmier, que des traits horizontaux droits déchireraient. L’odia est devenu langue classique de l’Inde en 2014."
+  },
+  "he": {
+   "nazev": "אודיה",
+   "vyslovnost": "נה-מס-ˈקאר",
+   "rodina": "הודו-אירופית – הודו-ארית",
+   "fakt": "הקצוות העליונים המעוגלים של אותיות האודיה מוסברים בדרך כלל בכתיבה בחרט על עלי דקל, שקווים אופקיים ישרים היו קורעים אותם. האודיה הוכרה כשפה קלאסית של הודו ב-2014."
   }
  },
  {
@@ -5601,6 +6195,12 @@
    "vyslovnost": "NO-moch-kar",
    "rodina": "Indo-européenne – indo-aryenne",
    "fakt": "L’assamais est la langue officielle de l’État indien d’Assam. Il emploie l’écriture nagari orientale, commune avec le bengali, dont il diffère par quelques lettres comme ৰ (r) et ৱ (w)."
+  },
+  "he": {
+   "nazev": "אסאמית",
+   "vyslovnost": "ˈנו-מוס-קאר",
+   "rodina": "הודו-אירופית – הודו-ארית",
+   "fakt": "האסאמית היא השפה הרשמית של מדינת אסאם בהודו. היא משתמשת בכתב הנאגרי המזרחי, המשותף לה ולבנגלית, ונבדלת בכמה אותיות, כמו ৰ (r) ו-ৱ (w)."
   }
  },
  {
@@ -5656,6 +6256,12 @@
    "vyslovnost": "sa-LAM",
    "rodina": "Indo-européenne – indo-aryenne",
    "fakt": "Au Pakistan, le sindhi s’écrit dans un alphabet arabe étendu de 52 lettres ; en Inde, on emploie aussi le devanagari."
+  },
+  "he": {
+   "nazev": "סינדהי",
+   "vyslovnost": "סא-ˈלאם",
+   "rodina": "הודו-אירופית – הודו-ארית",
+   "fakt": "בפקיסטן נכתבת הסינדהי באלפבית ערבי מורחב בן 52 אותיות; בהודו משתמשים גם בדוונאגרי."
   }
  },
  {
@@ -5711,6 +6317,12 @@
    "vyslovnost": "pra-NAM",
    "rodina": "Indo-européenne – indo-aryenne",
    "fakt": "Le maïthili s’écrivait traditionnellement en tirhuta, aujourd’hui surtout en devanagari. Son poète le plus connu est Vidyapati (XIVe–XVe s.) ; il est langue répertoriée de l’Inde depuis 2003."
+  },
+  "he": {
+   "nazev": "מאיתילי",
+   "vyslovnost": "פרה-ˈנאם",
+   "rodina": "הודו-אירופית – הודו-ארית",
+   "fakt": "המאיתילי נכתבה במסורת בכתב טירהוטה, וכיום בעיקר בדוונאגרי. המשורר הידוע ביותר שלה הוא וידיאפטי (המאות ה-14–15); מאז 2003 היא אחת השפות המנויות בחוקת הודו."
   }
  },
  {
@@ -5766,6 +6378,12 @@
    "vyslovnost": "oui-lou-DJÈNG",
    "rodina": "Austronésienne",
    "fakt": "Le soundanais est la deuxième langue maternelle la plus parlée d’Indonésie, après le javanais. Il a sa propre écriture, l’aksara Sunda, renormalisée à la fin du XXe siècle."
+  },
+  "he": {
+   "nazev": "סונדית",
+   "vyslovnost": "וי-לו-ˈג׳נג",
+   "rodina": "אוסטרונזית",
+   "fakt": "הסונדית היא שפת האם השנייה בתפוצתה באינדונזיה, אחרי הג׳אוונית. יש לה כתב משלה, aksara Sunda, שתוקנן מחדש בסוף המאה ה-20."
   }
  },
  {
@@ -5826,6 +6444,12 @@
    "vyslovnost": "kou-MOUS-ta",
    "rodina": "Austronésienne",
    "fakt": "Le cebuano est la principale langue du sud des Philippines. Il contient de nombreux emprunts à l’espagnol, langue de plus de trois siècles de domination coloniale."
+  },
+  "he": {
+   "nazev": "סבואנו",
+   "vyslovnost": "קו-ˈמוס-טה",
+   "rodina": "אוסטרונזית",
+   "fakt": "הסבואנו היא השפה העיקרית של דרום הפיליפינים. יש בה מילים שאולות רבות מספרדית, שפת השלטון הקולוניאלי במשך יותר משלוש מאות שנה."
   }
  },
  {
@@ -5886,6 +6510,12 @@
    "vyslovnost": "nong HO",
    "rodina": "Sino-tibétaine",
    "fakt": "Le shanghaïen appartient aux variétés wu du chinois et n’est pas intercompréhensible avec le mandarin. Contrairement au mandarin, il a conservé les consonnes sonores b, d, g."
+  },
+  "he": {
+   "nazev": "סינית וו (שנגחאית)",
+   "vyslovnost": "נונג ˈהו",
+   "rodina": "סינו-טיבטית",
+   "fakt": "השנגחאית שייכת לזני הוו של הסינית ואינה מובנת הדדית עם המנדרינית. בניגוד למנדרינית היא שמרה על העיצורים הקוליים b, d, g."
   }
  },
  {
@@ -5951,6 +6581,12 @@
    "vyslovnost": "LI-ho",
    "rodina": "Sino-tibétaine",
    "fakt": "Le min du Sud (hokkien, taïwanais) s’est répandu en Asie du Sud-Est avec les émigrants. Les formes « tea », « thé » et « Tee » en viennent, alors que « chai » remonte au mandarin « chá »."
+  },
+  "he": {
+   "nazev": "הוקיין",
+   "vyslovnost": "ˈלי-הו",
+   "rodina": "סינו-טיבטית",
+   "fakt": "המין הדרומית (הוקיין, טאיוואנית) התפשטה ברחבי דרום-מזרח אסיה עם המהגרים. הצורות “tea”, “thé” ו-“Tee” באות ממנה, ואילו “chai” מקורה במנדרינית “chá”."
   }
  },
  {
@@ -6006,6 +6642,12 @@
    "vyslovnost": "ngui HO",
    "rodina": "Sino-tibétaine",
    "fakt": "Le nom hakka (客家) signifie « familles invitées » et rappelle la migration du groupe du nord vers le sud de la Chine. On leur associe les tulou, maisons rondes fortifiées inscrites à l’UNESCO."
+  },
+  "he": {
+   "nazev": "האקה",
+   "vyslovnost": "נגי ˈהו",
+   "rodina": "סינו-טיבטית",
+   "fakt": "השם האקה (客家) פירושו “משפחות אורחות”, זכר להגירת הקבוצה מצפון סין לדרומה. בתי הטולו העגולים והמבוצרים, הרשומים ברשימת אונסק״ו, מזוהים איתם."
   }
  },
  {
@@ -6056,6 +6698,12 @@
    "vyslovnost": "moung ndeï",
    "rodina": "Kra-daï",
    "fakt": "Langue de la plus grande minorité ethnique de Chine, le zhuang appartient à la famille taï-kadaï, apparenté au thaï plutôt qu’au chinois. Son orthographe latine officielle date de 1957."
+  },
+  "he": {
+   "nazev": "ג׳ואנג",
+   "vyslovnost": "מונג נדיי",
+   "rodina": "קרה-דאי",
+   "fakt": "הג׳ואנג היא שפת המיעוט האתני הגדול ביותר בסין, והיא שייכת למשפחת הטאי-קדאי – קרובה לתאית ולא לסינית. הכתיב הלטיני הרשמי שלה הוא משנת 1957."
   }
  },
  {
@@ -6116,6 +6764,12 @@
    "vyslovnost": "gno jong",
    "rodina": "Hmong-mien",
    "fakt": "Les Hmong vivent en Chine, au Vietnam, au Laos et en Thaïlande, avec une grande communauté aux États-Unis. L’orthographe latine des années 1950 note le ton par une lettre finale : le -b de Hmoob marque un ton haut."
+  },
+  "he": {
+   "nazev": "המונג",
+   "vyslovnost": "ניאו ז׳ונג",
+   "rodina": "המונג-מיין",
+   "fakt": "בני ההמונג חיים בסין, בווייטנאם, בלאוס ובתאילנד, ויש קהילה גדולה בארצות הברית. בכתיב הלטיני משנות ה-50 הטון מסומן באות סופית – ה-b במילה Hmoob מסמנת טון גבוה."
   }
  },
  {
@@ -6162,6 +6816,12 @@
    "vyslovnost": "mou-RA-ho",
    "rodina": "Nigéro-congolaise – bantoue",
    "fakt": "Le kinyarwanda est parlé par presque tous les Rwandais, ce qui est rare en Afrique. Il est intercompréhensible avec le kirundi du Burundi."
+  },
+  "he": {
+   "nazev": "קיניארואנדה",
+   "vyslovnost": "מו-ˈרא-הו",
+   "rodina": "ניז׳ר-קונגו – בנטו",
+   "fakt": "בקיניארואנדה מדברים כמעט כל תושבי רואנדה, דבר נדיר באפריקה. היא מובנת הדדית עם הקירונדי של בורונדי."
   }
  },
  {
@@ -6212,6 +6872,12 @@
    "vyslovnost": "ki KA-ti",
    "rodina": "Nigéro-congolaise – bantoue",
    "fakt": "Le luganda est la langue des Baganda du royaume du Buganda, dont le nom, sous sa forme swahilie, a donné son nom à l’Ouganda."
+  },
+  "he": {
+   "nazev": "לוגנדה",
+   "vyslovnost": "קי ˈקא-טי",
+   "rodina": "ניז׳ר-קונגו – בנטו",
+   "fakt": "הלוגנדה היא שפתם של בני הבאגנדה מממלכת בוגנדה, ושם הממלכה בצורתו הסווהילית נתן לאוגנדה את שמה."
   }
  },
  {
@@ -6272,6 +6938,12 @@
    "vyslovnost": "m-BO-tè",
    "rodina": "Nigéro-congolaise – bantoue",
    "fakt": "Le lingala est né sur le cours moyen du Congo comme langue commerciale et s’est diffusé par l’armée et la musique populaire. La rumba congolaise, chantée surtout en lingala, est inscrite à l’UNESCO depuis 2021."
+  },
+  "he": {
+   "nazev": "לינגלה",
+   "vyslovnost": "ˈמבו-טה",
+   "rodina": "ניז׳ר-קונגו – בנטו",
+   "fakt": "הלינגלה נוצרה לאורך מהלכו האמצעי של נהר קונגו כשפת מסחר, והתפשטה דרך הצבא והמוזיקה הפופולרית. הרומבה הקונגולזית, המושרת ברובה בלינגלה, נכנסה לרשימת אונסק״ו ב-2021."
   }
  },
  {
@@ -6327,6 +6999,12 @@
    "vyslovnost": "m-BO-tè",
    "rodina": "Nigéro-congolaise – bantoue",
    "fakt": "Le kikongo était la langue du royaume du Kongo (à partir du XIVe siècle). Selon une explication, le mot « zombie » dérive du kikongo « nzambi » (dieu, esprit)."
+  },
+  "he": {
+   "nazev": "קיקונגו",
+   "vyslovnost": "ˈמבו-טה",
+   "rodina": "ניז׳ר-קונגו – בנטו",
+   "fakt": "הקיקונגו הייתה שפת ממלכת קונגו (מהמאה ה-14). אחד ההסברים למילה “זומבי” גוזר אותה מהמילה בקיקונגו “nzambi” (אל, רוח)."
   }
  },
  {
@@ -6379,6 +7057,12 @@
    "vyslovnost": "MO-ni",
    "rodina": "Nigéro-congolaise – bantoue",
    "fakt": "Le chichewa est la langue nationale du Malawi ; en Zambie et au Mozambique, on l’appelle nyanja. Le nom Malawi vient de l’État historique du Maravi et se glose d’ordinaire « flammes »."
+  },
+  "he": {
+   "nazev": "צ׳יצ׳ווה",
+   "vyslovnost": "ˈמו-ני",
+   "rodina": "ניז׳ר-קונגו – בנטו",
+   "fakt": "הצ׳יצ׳ווה היא השפה הלאומית של מלאווי, ובזמביה ובמוזמביק היא נקראת ניאנג׳ה. השם מלאווי בא ממדינת מרווי ההיסטורית, ומתורגם בדרך כלל “להבות”."
   }
  },
  {
@@ -6434,6 +7118,12 @@
    "vyslovnost": "sè-LAM",
    "rodina": "Afro-asiatique – sémitique",
    "fakt": "Le tigrigna est la principale langue de l’Érythrée et du Tigré éthiopien. Il emploie l’abugida guèze, comme l’amharique, auquel il est apparenté sans être intercompréhensible."
+  },
+  "he": {
+   "nazev": "תיגריניה",
+   "vyslovnost": "סה-ˈלאם",
+   "rodina": "אפרו-אסייתית – שמית",
+   "fakt": "התיגריניה היא השפה העיקרית של אריתריאה ושל חבל תיגראי באתיופיה. היא משתמשת באבוגידה של געז כמו האמהרית, הקרובה לה אך אינה מובנת הדדית."
   }
  },
  {
@@ -6489,6 +7179,12 @@
    "vyslovnost": "MO-lo",
    "rodina": "Nigéro-congolaise – bantoue",
    "fakt": "Le xhosa possède des consonnes à clic notées c, q et x – son propre nom, isiXhosa, commence par l’une d’elles. C’était la langue maternelle de Nelson Mandela."
+  },
+  "he": {
+   "nazev": "קוסה",
+   "vyslovnost": "ˈמו-לו",
+   "rodina": "ניז׳ר-קונגו – בנטו",
+   "fakt": "בקוסה יש עיצורי נקישה הנכתבים c, q ו-x – גם שמה, isiXhosa, מתחיל באחד מהם. זו הייתה שפת האם של נלסון מנדלה."
   }
  },
  {
@@ -6541,6 +7237,12 @@
    "vyslovnost": "dou-MÈ-la",
    "rodina": "Nigéro-congolaise – bantoue",
    "fakt": "Le sesotho est langue officielle du Lesotho et de l’Afrique du Sud ; des missionnaires l’ont mis par écrit dans les années 1830. Le Lesotho est le seul pays indépendant situé tout entier au-dessus de 1000 m."
+  },
+  "he": {
+   "nazev": "ססותו",
+   "vyslovnost": "דו-ˈמה-לה",
+   "rodina": "ניז׳ר-קונגו – בנטו",
+   "fakt": "הססותו היא שפה רשמית בלסוטו ובדרום אפריקה; מיסיונרים העלו אותה לראשונה על הכתב בשנות ה-30 של המאה ה-19. לסוטו היא המדינה העצמאית היחידה ששוכנת כולה בגובה של יותר מ-1,000 מ׳."
   }
  },
  {
@@ -6593,6 +7295,12 @@
    "vyslovnost": "dou-MÈ-la",
    "rodina": "Nigéro-congolaise – bantoue",
    "fakt": "Le setswana est la principale langue du Botswana. La monnaie du pays, le pula, porte le mot setswana pour « pluie », qui signifie aussi « bénédiction »."
+  },
+  "he": {
+   "nazev": "סטסואנה",
+   "vyslovnost": "דו-ˈמה-לה",
+   "rodina": "ניז׳ר-קונגו – בנטו",
+   "fakt": "הסטסואנה היא השפה העיקרית של בוטסואנה. המטבע הבוטסואני, הפולה, נושא את המילה בסטסואנה לגשם, שפירושה גם ברכה."
   }
  },
  {
@@ -6648,6 +7356,12 @@
    "vyslovnost": "è-tè SÈNN",
    "rodina": "Nigéro-congolaise",
    "fakt": "Les prénoms akan indiquent souvent le jour de naissance : Kofi est un garçon né un vendredi (comme Kofi Annan), Ama une fille née un samedi."
+  },
+  "he": {
+   "nazev": "אקאן (טווי)",
+   "vyslovnost": "אה-טה ˈסן",
+   "rodina": "ניז׳ר-קונגו",
+   "fakt": "שמות באקאן מקודדים לעיתים קרובות את יום הלידה: קופי הוא בן שנולד ביום שישי (כמו קופי אנאן), ואמה – בת שנולדה בשבת."
   }
  },
  {
@@ -6703,6 +7417,12 @@
    "vyslovnost": "OUÈ-zo",
    "rodina": "Nigéro-congolaise",
    "fakt": "L’éwé est l’exemple classique d’une langue qui oppose les fricatives bilabiales [ɸ] et [β], notées ƒ et ʋ. Il est tonal, et les tambours parlants imitent sa mélodie."
+  },
+  "he": {
+   "nazev": "אווה",
+   "vyslovnost": "ˈווה-זו",
+   "rodina": "ניז׳ר-קונגו",
+   "fakt": "האווה היא הדוגמה הקלאסית לשפה המבחינה בין העיצורים החוככים הדו-שפתיים [ɸ] ו-[β], הנכתבים ƒ ו-ʋ. היא שפה טונלית, ותופי דיבור מחקים את המנגינה שלה."
   }
  },
  {
@@ -6758,6 +7478,12 @@
    "vyslovnost": "i ni TCHÈ",
    "rodina": "Mandé",
    "fakt": "Le bambara s’écrit en alphabet latin et aussi en n’ko, créé en 1949 pour les langues mandingues par le savant guinéen Solomana Kanté. Le n’ko s’écrit de droite à gauche."
+  },
+  "he": {
+   "nazev": "במבארה",
+   "vyslovnost": "אי ני ˈצ׳ה",
+   "rodina": "מנדה",
+   "fakt": "הבמבארה נכתבת בכתב לטיני וגם בכתב נ׳קו (N'Ko), שיצר ב-1949 המלומד הגינאי סולומנה קאנטה עבור שפות המנדינג. כתב נ׳קו נכתב מימין לשמאל."
   }
  },
  {
@@ -6808,6 +7534,12 @@
    "vyslovnost": "nè yi OUIND-ga",
    "rodina": "Nigéro-congolaise",
    "fakt": "Le mooré est la langue des Mossi, le peuple le plus nombreux du Burkina Faso. Ses salutations dépendent du moment de la journée, et l’échange est souvent long."
+  },
+  "he": {
+   "nazev": "מורה (מוסי)",
+   "vyslovnost": "נה יי ˈווינד-גה",
+   "rodina": "ניז׳ר-קונגו",
+   "fakt": "מורה (Mooré) היא שפתם של בני המוסי, העם הגדול ביותר בבורקינה פאסו. הברכות בה תלויות בשעה ביום, וחילופי הברכות ארוכים לעיתים קרובות."
   }
  },
  {
@@ -6878,6 +7610,12 @@
    "vyslovnost": "a-ZOUL",
    "rodina": "Afro-asiatique – berbère",
    "fakt": "Les langues berbères s’écrivent notamment en tifinagh, qui prolonge l’ancienne écriture libyco-berbère, attestée depuis plus de deux mille ans. Le tamazight est officiel au Maroc (2011) et en Algérie (2016)."
+  },
+  "he": {
+   "nazev": "תמזיע׳ת (ברברית)",
+   "vyslovnost": "א-ˈזול",
+   "rodina": "אפרו-אסייתית – ברברית",
+   "fakt": "השפות הברבריות נכתבות, בין השאר, בכתב תיפינאע׳, הממשיך את הכתב הלובי-ברברי הקדום, המתועד יותר מאלפיים שנה. התמזיע׳ת רשמית במרוקו (2011) ובאלג׳יריה (2016)."
   }
  },
  {
@@ -6928,6 +7666,12 @@
    "vyslovnost": "na da",
    "rodina": "Saharienne",
    "fakt": "Le kanouri était la langue de l’Empire du Kanem-Bornou, l’un des États les plus durables d’Afrique (IXe siècle–1893). On le parle autour du lac Tchad, dont la superficie a diminué d’env. 90 % depuis les années 1960."
+  },
+  "he": {
+   "nazev": "קנורי",
+   "vyslovnost": "נא דא",
+   "rodina": "סהרית",
+   "fakt": "הקנורי הייתה שפת אימפריית כאנם-בורנו, אחת המדינות ארוכות הימים באפריקה (מהמאה ה-9 עד 1893). מדברים בה סביב אגם צ׳אד, ששטחו הצטמק בכ-90% מאז שנות ה-60."
   }
  },
  {
@@ -6978,6 +7722,12 @@
    "vyslovnost": "BONN-djou",
    "rodina": "Afro-asiatique – sémitique",
    "fakt": "Le maltais est la seule langue sémitique officielle de l’UE et s’écrit en alphabet latin. Sa grammaire est sémitique, mais une grande part de son vocabulaire vient de l’italien, du sicilien et de l’anglais."
+  },
+  "he": {
+   "nazev": "מלטית",
+   "vyslovnost": "ˈבון-ג׳ו",
+   "rodina": "אפרו-אסייתית – שמית",
+   "fakt": "המלטית היא השפה השמית היחידה בין השפות הרשמיות של האיחוד האירופי, והיא נכתבת באלפבית הלטיני. הדקדוק שלה שמי, אך חלק ניכר מאוצר המילים שלה בא מאיטלקית, מסיציליאנית ומאנגלית."
   }
  },
  {
@@ -7024,6 +7774,12 @@
    "vyslovnost": "MOÏ-ènn",
    "rodina": "Indo-européenne – germanique",
    "fakt": "Le luxembourgeois a longtemps passé pour un dialecte allemand ; une loi de 1984 l’a reconnu comme langue nationale. Le français et l’allemand sont aussi d’usage officiel au Luxembourg."
+  },
+  "he": {
+   "nazev": "לוקסמבורגית",
+   "vyslovnost": "ˈמוי-אן",
+   "rodina": "הודו-אירופית – גרמאנית",
+   "fakt": "הלוקסמבורגית נחשבה זמן רב לניב של גרמנית; חוק משנת 1984 הכיר בה כשפה הלאומית. בלוקסמבורג משמשות באופן רשמי גם הצרפתית והגרמנית."
   }
  },
  {
@@ -7074,6 +7830,12 @@
    "vyslovnost": "HAL-lo",
    "rodina": "Indo-européenne – germanique",
    "fakt": "L’orthographe féroïenne, conçue en 1846 par V. U. Hammershaimb, est étymologique : la lettre ð est donc d’ordinaire muette. Le nom Føroyar s’interprète comme « îles aux moutons »."
+  },
+  "he": {
+   "nazev": "פארואזית",
+   "vyslovnost": "ˈהאל-לו",
+   "rodina": "הודו-אירופית – גרמאנית",
+   "fakt": "הכתיב הפארואזי, שיצר ב-1846 ו. או. המרסהיימב (V. U. Hammershaimb), הוא אטימולוגי, ולכן האות ð בדרך כלל אינה נהגית. השם Føroyar מתפרש כ“איי הכבשים”."
   }
  },
  {
@@ -7124,6 +7886,12 @@
    "vyslovnost": "GOU-ye daï",
    "rodina": "Indo-européenne – germanique",
    "fakt": "Le frison et l’anglais forment la branche anglo-frisonne du germanique occidental ; aussi dit-on souvent du frison qu’il est le plus proche parent de l’anglais sur le continent européen."
+  },
+  "he": {
+   "nazev": "פריזית מערבית",
+   "vyslovnost": "ˈגו-יה דיי",
+   "rodina": "הודו-אירופית – גרמאנית",
+   "fakt": "הפריזית והאנגלית יוצרות את הענף האנגלו-פריזי של הגרמאנית המערבית, ולכן הפריזית מכונה לעיתים קרובות השפה הקרובה ביותר לאנגלית ביבשת אירופה."
   }
  },
  {
@@ -7174,6 +7942,12 @@
    "vyslovnost": "O-la",
    "rodina": "Indo-européenne – romane",
    "fakt": "Le galicien et le portugais descendent du galaïco-portugais médiéval, langue de la lyrique courtoise et des Cantigas de Santa Maria d’Alphonse X. Ils commencent à diverger au XIVe siècle."
+  },
+  "he": {
+   "nazev": "גליסית",
+   "vyslovnost": "ˈאו-לה",
+   "rodina": "הודו-אירופית – רומאנית",
+   "fakt": "הגליסית והפורטוגזית יצאו מהגליסית-פורטוגזית של ימי הביניים, שפת שירת החצר ו“שירי מרים הקדושה” (Cantigas de Santa Maria) של אלפונסו העשירי. הן החלו להיפרד במאה ה-14."
   }
  },
  {
@@ -7224,6 +7998,12 @@
    "vyslovnost": "boun-DJOUR",
    "rodina": "Indo-européenne – romane",
    "fakt": "Les troubadours des XIe–XIIIe siècles composaient leur poésie lyrique en occitan, influençant la versification européenne. Le nom « langue d’oc » vient de « oc » (oui)."
+  },
+  "he": {
+   "nazev": "אוקסיטנית",
+   "vyslovnost": "בון-ˈג׳ור",
+   "rodina": "הודו-אירופית – רומאנית",
+   "fakt": "הטרובדורים של המאות ה-11 עד ה-13 חיברו את שירתם הלירית באוקסיטנית והשפיעו על השירה האירופית. השם “langue d'oc” בא מהמילה “oc” (כן)."
   }
  },
  {
@@ -7274,6 +8054,12 @@
    "vyslovnost": "sa-LOU-dè",
    "rodina": "Indo-européenne – romane",
    "fakt": "Le sarde est souvent cité comme la langue romane vivante la plus proche du latin sur le plan phonologique : maison se dit « domu » (latin domus)."
+  },
+  "he": {
+   "nazev": "סרדינית",
+   "vyslovnost": "סא-ˈלו-דה",
+   "rodina": "הודו-אירופית – רומאנית",
+   "fakt": "הסרדינית מוזכרת לעיתים קרובות כשפה הרומאנית החיה הקרובה ביותר ללטינית מבחינה פונולוגית: בית הוא “domu” (בלטינית domus)."
   }
  },
  {
@@ -7324,6 +8110,12 @@
    "vyslovnost": "DÈ-mat",
    "rodina": "Indo-européenne – celtique",
    "fakt": "Le breton est la seule langue celtique de tradition vivante sur le continent européen. Des colons venus de l’île de Bretagne l’ont apporté en Bretagne aux Ve–VIe siècles ; il est apparenté au gallois."
+  },
+  "he": {
+   "nazev": "ברטונית",
+   "vyslovnost": "ˈדה-מאט",
+   "rodina": "הודו-אירופית – קלטית",
+   "fakt": "הברטונית היא השפה הקלטית היחידה שיש לה מסורת חיה ביבשת אירופה. מתיישבים מבריטניה הביאו אותה לבריטני במאות ה-5–6; היא קרובה לוולשית."
   }
  },
  {
@@ -7374,6 +8166,12 @@
    "vyslovnost": "HA-lo",
    "rodina": "Indo-européenne – celtique",
    "fakt": "Le mot « whisky » vient du gaélique « uisge beatha », eau de vie. Le gaélique écossais est une langue officiellement reconnue en Écosse depuis 2005."
+  },
+  "he": {
+   "nazev": "גאלית סקוטית",
+   "vyslovnost": "ˈהא-לו",
+   "rodina": "הודו-אירופית – קלטית",
+   "fakt": "המילה “ויסקי” באה מהגאלית “uisge beatha”, מי חיים. הגאלית הסקוטית היא שפה מוכרת רשמית בסקוטלנד מאז 2005."
   }
  },
  {
@@ -7449,6 +8247,12 @@
    "vyslovnost": "sar SANN",
    "rodina": "Indo-européenne – indo-aryenne",
    "fakt": "Le romani est une langue indo-aryenne ; la linguistique comparée a établi l’origine indienne des Roms dans les années 1780. L’eau se dit « pani » en romani comme en hindi."
+  },
+  "he": {
+   "nazev": "רומאני",
+   "vyslovnost": "סאר ˈסאן",
+   "rodina": "הודו-אירופית – הודו-ארית",
+   "fakt": "הרומאני היא שפה הודו-ארית; הבלשנות ההשוואתית הוכיחה את המוצא ההודי של הרומה בשנות ה-80 של המאה ה-18. מים הם “pani” גם ברומאני וגם בהינדי."
   }
  },
  {
@@ -7509,6 +8313,12 @@
    "vyslovnost": "CHO-lèm a-LEÏ-khèm",
    "rodina": "Indo-européenne – germanique",
    "fakt": "Le yiddish est une langue germanique écrite en alphabet hébreu, avec des composantes hébraïco-araméenne et slave. Isaac Bashevis Singer, prix Nobel de littérature (1978), écrivait en yiddish."
+  },
+  "he": {
+   "nazev": "יידיש",
+   "vyslovnost": "ˈשו-לם א-ˈליי-חם",
+   "rodina": "הודו-אירופית – גרמאנית",
+   "fakt": "היידיש היא שפה גרמאנית הנכתבת באלפבית העברי, ויש בה רכיבים עבריים-ארמיים וסלאביים. יצחק בשביס זינגר, חתן פרס נובל לספרות (1978), כתב ביידיש."
   }
  },
  {
@@ -7559,6 +8369,12 @@
    "vyslovnost": "sa-LAM",
    "rodina": "Nakho-daghestanienne",
    "fakt": "Le tchétchène possède un riche système vocalique : selon certaines analyses, une trentaine de voyelles en comptant longueur, nasalisation et diphtongues. L’anglais compte environ douze monophtongues."
+  },
+  "he": {
+   "nazev": "צ׳צ׳נית",
+   "vyslovnost": "סא-ˈלאם",
+   "rodina": "נאח-דאגסטנית",
+   "fakt": "לצ׳צ׳נית מערכת תנועות עשירה: לפי ניתוחים מסוימים כשלושים, כולל אורך, אינפוף ודיפתונגים. בעברית החדשה יש חמש תנועות בלבד."
   }
  },
  {
@@ -7614,6 +8430,12 @@
    "vyslovnost": "i-SÈNN-mè-sèz",
    "rodina": "Turque",
    "fakt": "Le tatar est co-officiel avec le russe au Tatarstan. Il s’écrit en cyrillique depuis 1939 ; une tentative de passage à l’alphabet latin a été stoppée par une loi fédérale russe de 2002."
+  },
+  "he": {
+   "nazev": "טטרית",
+   "vyslovnost": "אי-ˈסן-מה-סז",
+   "rodina": "טורקית",
+   "fakt": "הטטרית רשמית לצד הרוסית בטטרסטן. היא נכתבת בכתב הקירילי מאז 1939; ניסיון לעבור לכתב לטיני נעצר בחוק פדרלי רוסי משנת 2002."
   }
  },
  {
@@ -7669,6 +8491,12 @@
    "vyslovnost": "do-RO-bo",
    "rodina": "Turque",
    "fakt": "Le iakoute (sakha), langue turque la plus septentrionale, compte de nombreux emprunts mongols. On le parle en Iakoutie, où se trouvent Oïmiakon et Verkhoïansk, les lieux habités en permanence les plus froids du globe."
+  },
+  "he": {
+   "nazev": "יקוטית (סאחה)",
+   "vyslovnost": "דו-ˈרו-בו",
+   "rodina": "טורקית",
+   "fakt": "היקוטית (סאחה) היא השפה הטורקית הצפונית ביותר, ויש בה מילים שאולות רבות משפות מונגוליות. מדברים בה ביקוטיה, שבה נמצאים אוימיאקון וורחויאנסק, המקומות המיושבים דרך קבע הקרים ביותר על פני כדור הארץ."
   }
  },
  {
@@ -7719,6 +8547,12 @@
    "vyslovnost": "sa-LAM",
    "rodina": "Indo-européenne – iranienne",
    "fakt": "L’ossète est une langue iranienne du Caucase, considérée comme issue de la langue des Alains, et donc de celle des Sarmates et des Scythes."
+  },
+  "he": {
+   "nazev": "אוסטית",
+   "vyslovnost": "סא-ˈלאם",
+   "rodina": "הודו-אירופית – איראנית",
+   "fakt": "האוסטית היא שפה איראנית בקווקז, הנחשבת לצאצאית שפת האלאנים, ובכך גם של הסרמטים והסקיתים."
   }
  },
  {
@@ -7769,6 +8603,12 @@
    "vyslovnost": "bzi-A-ra",
    "rodina": "Caucasienne du Nord-Ouest",
    "fakt": "L’abkhaze ne compte que deux phonèmes vocaliques mais une soixantaine de consonnes, l’un des rapports consonnes/voyelles les plus élevés de toutes les langues."
+  },
+  "he": {
+   "nazev": "אבחזית",
+   "vyslovnost": "בזי-ˈא-רה",
+   "rodina": "קווקזית צפון-מערבית",
+   "fakt": "באבחזית רק שתי פונמות תנועה אך כשישים עיצורים, אחד מיחסי העיצורים לתנועות הגבוהים ביותר בשפות העולם."
   }
  },
  {
@@ -7819,12 +8659,18 @@
    "vyslovnost": "sa-LAM",
    "rodina": "Indo-européenne – indo-aryenne",
    "fakt": "Le thaana, écriture des Maldives, se lit de droite à gauche. Ses neuf premières lettres dérivent des chiffres arabes, les neuf suivantes des chiffres indiens."
+  },
+  "he": {
+   "nazev": "דיבהי",
+   "vyslovnost": "סא-ˈלאם",
+   "rodina": "הודו-אירופית – הודו-ארית",
+   "fakt": "כתב התאנה המלדיבי נכתב מימין לשמאל. תשע האותיות הראשונות שלו נגזרו מספרות ערביות, ותשע הבאות מספרות הודיות."
   }
  },
  {
   "id": "dz",
   "skupina": "st",
-  "pozdrav": "བཀྲ་ཤིས་བདེ་ལེགས!",
+  "pozdrav": "སྐུ་གཟུགས་བཟང་པོ་ལགས།",
   "domaci": "རྫོང་ཁ",
   "mluvcich": 0.2,
   "kod": "dz",
@@ -7838,33 +8684,39 @@
   "areal": [],
   "cs": {
    "nazev": "Dzongkha",
-   "vyslovnost": "kuzu zangpo",
+   "vyslovnost": "kuzu zangpo la",
    "rodina": "sinotibetská",
    "fakt": "Dzongkha, doslova „řeč dzongů“ (klášterních pevností), je národním jazykem Bhútánu. Píše se tibetským písmem."
   },
   "en": {
    "nazev": "Dzongkha",
-   "vyslovnost": "koo-zoo ZANG-poh",
+   "vyslovnost": "koo-zoo ZANG-poh lah",
    "rodina": "Sino-Tibetan",
    "fakt": "Dzongkha, literally “language of the dzongs” (monastery fortresses), is the national language of Bhutan. It is written in Tibetan script."
   },
   "it": {
    "nazev": "Dzongkha",
-   "vyslovnost": "cu-zu ZANG-po",
+   "vyslovnost": "cu-zu ZANG-po la",
    "rodina": "sino-tibetana",
    "fakt": "Il dzongkha, alla lettera “lingua dei dzong” (fortezze-monastero), è la lingua nazionale del Bhutan. Si scrive in scrittura tibetana."
   },
   "de": {
    "nazev": "Dzongkha",
-   "vyslovnost": "ku-su SANG-po",
+   "vyslovnost": "ku-su SANG-po la",
    "rodina": "sino-tibetisch",
    "fakt": "Dzongkha, wörtlich „Sprache der Dzongs“ (Klosterburgen), ist die Nationalsprache Bhutans. Es wird in tibetischer Schrift geschrieben."
   },
   "fr": {
    "nazev": "Dzongkha",
-   "vyslovnost": "kou-zou ZANG-po",
+   "vyslovnost": "kou-zou ZANG-po la",
    "rodina": "Sino-tibétaine",
    "fakt": "Le dzongkha, littéralement « langue des dzongs » (forteresses-monastères), est la langue nationale du Bhoutan. Il utilise l’écriture tibétaine."
+  },
+  "he": {
+   "nazev": "דזונגקה",
+   "vyslovnost": "קו-זו ˈזאנג-פו לה",
+   "rodina": "סינו-טיבטית",
+   "fakt": "דזונגקה, מילולית “שפת הדזונגים” (מבצרי מנזר), היא השפה הלאומית של בהוטן. היא נכתבת בכתב הטיבטי."
   }
  },
  {
@@ -7920,6 +8772,12 @@
    "vyslovnost": "djo-HAR",
    "rodina": "Austroasiatique",
    "fakt": "En 1925, Raghunath Murmu a créé l’écriture ol chiki pour le santali. Depuis 2003, le santali est l’une des langues répertoriées dans la Constitution indienne."
+  },
+  "he": {
+   "nazev": "סנטאלי",
+   "vyslovnost": "ג׳ו-ˈהאר",
+   "rodina": "אוסטרו-אסייתית",
+   "fakt": "ב-1925 יצר רגונאת מורמו את כתב אול צ׳יקי (Ol Chiki) עבור הסנטאלי. מאז 2003 הסנטאלי היא אחת השפות המנויות בחוקת הודו."
   }
  },
  {
@@ -7970,6 +8828,12 @@
    "vyslovnost": "khou-roum-DJA-ri",
    "rodina": "Sino-tibétaine",
    "fakt": "Le manipuri (meitei) avait sa propre écriture, le meitei mayek, remplacé par l’écriture bengalie au XVIIIe siècle. Depuis la fin du XXe siècle, l’ancienne écriture est revenue dans l’usage officiel et à l’école."
+  },
+  "he": {
+   "nazev": "מניפורית (מייטיי)",
+   "vyslovnost": "קו-רום-ˈג׳א-רי",
+   "rodina": "סינו-טיבטית",
+   "fakt": "למניפורית (מייטיי) היה כתב משלה, מייטיי מאייק (Meitei Mayek), שהוחלף בכתב הבנגלי במאה ה-18. מאז סוף המאה ה-20 חזר הכתב הישן לשימוש רשמי ולבתי הספר."
   }
  },
  {
@@ -8020,6 +8884,12 @@
    "vyslovnost": "maï soung KHA",
    "rodina": "Kra-daï",
    "fakt": "Le shan est une langue taï apparentée au thaï et au lao, écrite dans un alphabet dérivé du birman. Le nom Shan est probablement lié à l’ancien nom Siam."
+  },
+  "he": {
+   "nazev": "שאן",
+   "vyslovnost": "מאי סונג ˈקא",
+   "rodina": "קרה-דאי",
+   "fakt": "השאן היא שפת טאי הקרובה לתאית וללאית, והיא נכתבת בכתב שנגזר מהכתב הבורמזי. השם שאן קשור כנראה לשם הקדום סיאם."
   }
  },
  {
@@ -8066,6 +8936,12 @@
    "vyslovnost": "bonn-DI-a",
    "rodina": "Austronésienne",
    "fakt": "Le tétoum est co-officiel avec le portugais au Timor oriental. Il a emprunté de nombreux mots portugais ; la salutation « bondia » vient de « bom dia »."
+  },
+  "he": {
+   "nazev": "טטום",
+   "vyslovnost": "בון-ˈדי-אה",
+   "rodina": "אוסטרונזית",
+   "fakt": "הטטום רשמית לצד הפורטוגזית במזרח טימור. היא שאלה מילים פורטוגזיות רבות; הברכה “bondia” באה מ-“bom dia”."
   }
  },
  {
@@ -8121,6 +8997,12 @@
    "vyslovnost": "HA-fa daï",
    "rodina": "Austronésienne",
    "fakt": "Le chamorro est la langue austronésienne de Guam et des îles Mariannes du Nord, avec une grande part de vocabulaire espagnol, y compris les nombres. La fosse des Mariannes est toute proche."
+  },
+  "he": {
+   "nazev": "צ׳מורו",
+   "vyslovnost": "ˈהא-פה דאי",
+   "rodina": "אוסטרונזית",
+   "fakt": "הצ׳מורו היא השפה האוסטרונזית של גואם ושל איי מריאנה הצפוניים, ויש בה חלק גדול של אוצר מילים ספרדי, כולל המספרים. תעלת מריאנה שוכנת בקרבת מקום."
   }
  },
  {
@@ -8176,6 +9058,12 @@
    "vyslovnost": "ta-LO-fa",
    "rodina": "Austronésienne",
    "fakt": "Outre le vocabulaire courant, le samoan possède un registre de respect particulier, employé envers les chefs (matai) et lors des cérémonies."
+  },
+  "he": {
+   "nazev": "סמואית",
+   "vyslovnost": "טא-ˈלו-פה",
+   "rodina": "אוסטרונזית",
+   "fakt": "מלבד אוצר המילים היומיומי, יש בסמואית משלב כבוד מיוחד, המשמש בפנייה לראשים מסורתיים (matai) ובטקסים."
   }
  },
  {
@@ -8226,6 +9114,12 @@
    "vyslovnost": "MA-lo è lè-LEÏ",
    "rodina": "Austronésienne",
    "fakt": "Le mot « tabou » vient du tongien « tapu ». Il est entré dans les langues européennes par les journaux de James Cook de 1777."
+  },
+  "he": {
+   "nazev": "טונגאית",
+   "vyslovnost": "ˈמא-לו אה לה-ˈליי",
+   "rodina": "אוסטרונזית",
+   "fakt": "המילה “טאבו” באה מהטונגאית “tapu”. היא נכנסה לשפות האירופיות דרך יומניו של ג׳יימס קוק משנת 1777."
   }
  },
  {
@@ -8281,6 +9175,12 @@
    "vyslovnost": "ya O-ra na",
    "rodina": "Austronésienne",
    "fakt": "Le mot « tatouage » vient du tahitien « tatau » et a gagné l’Europe par les récits du voyage de Cook (1769)."
+  },
+  "he": {
+   "nazev": "טהיטית",
+   "vyslovnost": "יא ˈאו-רה נא",
+   "rodina": "אוסטרונזית",
+   "fakt": "המילה “tattoo” (קעקוע) באה מהטהיטית “tatau” והגיעה לאירופה דרך תיאורי מסעו של קוק (1769)."
   }
  },
  {
@@ -8331,6 +9231,12 @@
    "vyslovnost": "yo-RA-na",
    "rodina": "Austronésienne",
    "fakt": "L’île de Pâques conserve des tablettes de bois gravées en rongorongo, une écriture toujours indéchiffrée. Le rapanui est aujourd’hui sérieusement en danger."
+  },
+  "he": {
+   "nazev": "רפא נוי",
+   "vyslovnost": "יו-ˈרא-נה",
+   "rodina": "אוסטרונזית",
+   "fakt": "באי הפסחא השתמרו לוחות עץ החרותים ברונגורונגו, כתב שטרם פוענח. רפא נוי נמצאת כיום בסכנת הכחדה חמורה."
   }
  },
  {
@@ -8381,6 +9287,12 @@
    "vyslovnost": "YA-at-è",
    "rodina": "Na-dené",
    "fakt": "Le navajo est la langue autochtone la plus parlée aux États-Unis. Pendant la Seconde Guerre mondiale, le corps des Marines des États-Unis en a tiré un code qui n’a jamais été percé."
+  },
+  "he": {
+   "nazev": "נאוואחו",
+   "vyslovnost": "ˈיא-את-אה",
+   "rodina": "נה-דנה",
+   "fakt": "הנאוואחו היא השפה הילידית המדוברת ביותר בארצות הברית. במלחמת העולם השנייה בנה עליה חיל הנחתים האמריקאי צופן שלא נפרץ."
   }
  },
  {
@@ -8436,6 +9348,12 @@
    "vyslovnost": "o-SI-yo",
    "rodina": "Iroquoienne",
    "fakt": "Le syllabaire cherokee a été créé vers 1821 par Sequoyah, qui jusque-là ne savait ni lire ni écrire. En quelques années, une grande partie de la Nation cherokee savait le lire."
+  },
+  "he": {
+   "nazev": "צ׳ירוקי",
+   "vyslovnost": "או-ˈסי-יו",
+   "rodina": "אירוקואית",
+   "fakt": "הכתב ההברתי של הצ׳ירוקי נוצר בסביבות 1821 בידי סקויה, שלא ידע קרוא וכתוב קודם לכן. בתוך שנים ספורות חלק גדול מאומת הצ׳ירוקי יכול היה לקרוא בו."
   }
  },
  {
@@ -8491,6 +9409,12 @@
    "vyslovnost": "BOU-jou",
    "rodina": "Algique",
    "fakt": "Le mot « totem » vient de l’ojibwé « doodem » (clan, groupe de parenté)."
+  },
+  "he": {
+   "nazev": "אוג׳יבווה",
+   "vyslovnost": "ˈבו-ז׳ו",
+   "rodina": "אלגית",
+   "fakt": "המילה “טוטם” באה מהמילה באוג׳יבווה “doodem” (שבט, קבוצת קרבה)."
   }
  },
  {
@@ -8546,6 +9470,12 @@
    "vyslovnost": "TA-ni-si",
    "rodina": "Algique",
    "fakt": "Le cri est la langue autochtone la plus parlée du Canada. Le missionnaire James Evans a créé son syllabaire vers 1840 ; celui-ci a ensuite été adapté à l’inuktitut."
+  },
+  "he": {
+   "nazev": "קרי",
+   "vyslovnost": "ˈטא-ני-סי",
+   "rodina": "אלגית",
+   "fakt": "הקרי היא השפה הילידית המדוברת ביותר בקנדה. המיסיונר ג׳יימס אוונס יצר את הכתב ההברתי שלה בסביבות 1840; מאוחר יותר הוא הותאם לאינוקטיטוט."
   }
  },
  {
@@ -8596,6 +9526,12 @@
    "vyslovnost": "haou",
    "rodina": "Siouane",
    "fakt": "Le lakota distingue le parler des hommes et celui des femmes par des particules de fin de phrase, par exemple dans les questions et les ordres."
+  },
+  "he": {
+   "nazev": "לקוטה",
+   "vyslovnost": "האו",
+   "rodina": "סיו",
+   "fakt": "הלקוטה מבחינה בין דיבור של גברים לדיבור של נשים במיליות שבסוף המשפט, למשל בשאלות ובציוויים."
   }
  },
  {
@@ -8651,6 +9587,12 @@
    "vyslovnost": "MA-ri MA-ri",
    "rodina": "Araucane",
    "fakt": "Mapudungun signifie « parole de la terre ». Les Mapuches ont résisté aux Incas puis aux Espagnols, qui reconnurent leur indépendance au traité de Quilín (1641) ; le Chili ne les soumit qu’en 1861–1883."
+  },
+  "he": {
+   "nazev": "מפודונגון",
+   "vyslovnost": "ˈמא-רי ˈמא-רי",
+   "rodina": "ארואקנית",
+   "fakt": "מפודונגון פירושו “לשון הארץ”. המפוצ׳ה עמדו בפני האינקה ובפני הספרדים, שהכירו בעצמאותם בהסכם קילין (1641); צ׳ילה הכניעה אותם רק בשנים 1861–1883."
   }
  },
  {
@@ -8701,6 +9643,12 @@
    "vyslovnost": "bach ka OUA-lik",
    "rodina": "Maya",
    "fakt": "Le maya yucatèque est la deuxième langue autochtone la plus parlée du Mexique, après le nahuatl. Les inscriptions mayas classiques sont écrites dans une langue apparentée de la branche cholane."
+  },
+  "he": {
+   "nazev": "מאיה יוקטקית",
+   "vyslovnost": "באש קא ˈווא-ליק",
+   "rodina": "מאיה",
+   "fakt": "המאיה היוקטקית היא השפה הילידית השנייה בתפוצתה במקסיקו, אחרי הנאוואטל. כתובות המאיה הקלאסיות כתובות בשפה קרובה מהענף הצ׳ולני."
   }
  },
  {
@@ -8751,6 +9699,12 @@
    "vyslovnost": "sa-ka-RIK",
    "rodina": "Maya",
    "fakt": "Le k'iche' est la langue maya la plus parlée. Au XVIe siècle, le Popol Vuh, livre maya de la création, y a été consigné en alphabet latin."
+  },
+  "he": {
+   "nazev": "קיצ׳ה",
+   "vyslovnost": "סא-קא-ˈריק",
+   "rodina": "מאיה",
+   "fakt": "הקיצ׳ה היא שפת המאיה המדוברת ביותר. במאה ה-16 הועלה בה על הכתב, בכתב לטיני, הפופול ווח (Popol Vuh), ספר הבריאה של המאיה."
   }
  },
  {
@@ -8801,6 +9755,12 @@
    "vyslovnost": "pa-DIOU-chi",
    "rodina": "Oto-mangue – zapotèque",
    "fakt": "Le zapotèque est en réalité un groupe de langues apparentées. Les Zapotèques employaient l’écriture dès le Ier millénaire av. J.-C., l’une des plus anciennes de Mésoamérique."
+  },
+  "he": {
+   "nazev": "זפוטקית",
+   "vyslovnost": "פא-ˈדיו-שי",
+   "rodina": "אוטו-מנגאית – זפוטקית",
+   "fakt": "הזפוטקית היא למעשה קבוצה של שפות קרובות. הזפוטקים השתמשו בכתב כבר באלף הראשון לפני הספירה – אחד הכתבים העתיקים ביותר במסו-אמריקה."
   }
  },
  {
@@ -8847,6 +9807,12 @@
    "vyslovnost": "bon-JOU",
    "rodina": "Créole à base française",
    "fakt": "Le créole haïtien a un vocabulaire surtout français et une grammaire influencée par des langues d’Afrique de l’Ouest. Il est officiel depuis 1987 et parlé par la quasi-totalité des Haïtiens."
+  },
+  "he": {
+   "nazev": "קריאולית האיטית",
+   "vyslovnost": "בון-ˈז׳ו",
+   "rodina": "קריאולית על בסיס צרפתי",
+   "fakt": "לקריאולית האיטית אוצר מילים צרפתי ברובו ודקדוק שהושפע משפות מערב אפריקה. היא רשמית מאז 1987, וכמעט כל תושבי האיטי מדברים בה."
   }
  },
  {
@@ -8897,6 +9863,12 @@
    "vyslovnost": "bonn DI-a",
    "rodina": "Créole",
    "fakt": "Le papiamento est né à Aruba, Bonaire et Curaçao sur une base portugaise et espagnole, avec des éléments néerlandais et africains. Il est officiel à Aruba et à Curaçao."
+  },
+  "he": {
+   "nazev": "פפיאמנטו",
+   "vyslovnost": "בון ˈדי-אה",
+   "rodina": "קריאולית",
+   "fakt": "הפפיאמנטו נוצרה בארובה, בבונייר ובקוראסאו על בסיס פורטוגזי וספרדי, עם יסודות הולנדיים ואפריקאיים. היא רשמית בארובה ובקוראסאו."
   }
  },
  {
@@ -8947,6 +9919,12 @@
    "vyslovnost": "i-rann-ka-RAP-tè",
    "rodina": "Aïnoue",
    "fakt": "L’aïnou de Hokkaido forme une petite famille avec ceux, éteints, de Sakhaline et des Kouriles, sans parenté plus large démontrée. « Irankarapte » se lit traditionnellement « laisse-moi toucher doucement ton cœur »."
+  },
+  "he": {
+   "nazev": "איינו",
+   "vyslovnost": "אי-ראן-קא-ˈראפ-טה",
+   "rodina": "איינו",
+   "fakt": "האיינו של הוקאידו יוצרת משפחה קטנה עם האיינו של סחלין ושל איי הקוריל, שנכחדו, ולא הוכחו לה קרובות רחוקות יותר. הברכה “irankarapte” מתפרשת במסורת כ“הרשו לי לגעת ברוך בלבכם”."
   }
  },
  {
@@ -8997,6 +9975,12 @@
    "rodina": "Langue des signes",
    "fakt": "La langue des signes tchèque n’est pas du tchèque montré avec les mains : elle a sa grammaire et son lexique propres. La Tchéquie l’a reconnue par la loi en 1998 ; il existe plus de deux cents langues des signes dans le monde.",
    "pozdrav": "Ahoj (en signes)"
+  },
+  "he": {
+   "nazev": "שפת הסימנים הצ׳כית",
+   "vyslovnost": "כף היד נעה קדימה מהמצח",
+   "rodina": "שפת סימנים",
+   "fakt": "שפת הסימנים הצ׳כית אינה צ׳כית המוצגת בידיים: יש לה דקדוק ואוצר מילים משלה. צ׳כיה הכירה בה בחוק ב-1998; בעולם יש יותר ממאתיים שפות סימנים."
   }
  }
 ]

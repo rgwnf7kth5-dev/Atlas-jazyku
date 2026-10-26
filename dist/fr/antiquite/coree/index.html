@@ -141,7 +141,7 @@ footer a{color:inherit}
   --civ-papir:#FBF7EE; --civ-papir2:#F2EADA; --civ-ink:#2B241C; --civ-ink2:#5E5244; --civ-ink3:#7C6E5C;
   --civ-akcent:#A4472A; --civ-linka:rgba(90,66,34,.18); --civ-stin:rgba(60,40,20,.18); --civ-zlato:#9A6B1E;
   background:var(--civ-papir); color:var(--civ-ink); font-family:var(--pismo-text, "Outfit", system-ui, sans-serif);
-  line-height:1.65; font-size:1rem; text-align:left;
+  line-height:1.65; font-size:1rem; text-align:start;
 }
 :root[data-theme="dark"] .civ{
   --civ-papir:#17140F; --civ-papir2:#221D16; --civ-ink:#EFE6D4; --civ-ink2:#C4B79F; --civ-ink3:#A3957E;
@@ -235,7 +235,7 @@ footer a{color:inherit}
 .civ-mrizka img{aspect-ratio:3/2; object-fit:cover}
 
 /* rámeček s odbočkou */
-.civ-ramecek{clear:both; margin:24px 0; padding:18px 22px; border-left:4px solid var(--civ-zlato); background:var(--civ-papir2); border-radius:0 12px 12px 0; max-width:44em}
+.civ-ramecek{clear:both; margin:24px 0; padding:18px 22px; border-inline-start:4px solid var(--civ-zlato); background:var(--civ-papir2); border-radius:0 12px 12px 0; max-width:44em}
 .civ-ramecek h3{margin:0 0 6px; font-size:1.15rem}
 .civ-ramecek p{margin:0; color:var(--civ-ink2)}
 
@@ -267,17 +267,17 @@ footer a{color:inherit}
 .civ-slova{clear:both}
 .civ-tabulka{overflow-x:auto}
 .civ-slova table{border-collapse:collapse; width:100%; max-width:46em; font-size:.94rem}
-.civ-slova th, .civ-slova td{padding:9px 12px 9px 0; border-bottom:1px solid var(--civ-linka); text-align:left; vertical-align:top}
+.civ-slova th, .civ-slova td{padding:9px 12px 9px 0; border-bottom:1px solid var(--civ-linka); text-align:start; vertical-align:top}
 .civ-slova thead th{font-size:.72rem; font-weight:600; letter-spacing:.1em; text-transform:uppercase; color:var(--civ-ink3)}
 .civ-slova tbody th{font-family:"Playfair Display", Georgia, serif; font-style:italic; font-weight:600; font-size:1.05rem; color:var(--civ-akcent); white-space:nowrap}
-.civ-slova tbody th [class^="civ-"]{font-style:normal; font-weight:400; font-size:1.35em; line-height:1; margin-right:.25em; vertical-align:-.1em}
+.civ-slova tbody th [class^="civ-"]{font-style:normal; font-weight:400; font-size:1.35em; line-height:1; margin-inline-end:.25em; vertical-align:-.1em}
 .civ-slova td [class^="civ-"]{font-size:1.5em; line-height:1.1}
 .civ-slova td .civ-egy, .civ-slova td .civ-klin, .civ-slova td .civ-hier{font-size:1.9em}
 .civ-slova td{color:var(--civ-ink2)}
 
 /* časová osa */
 .civ-osa{clear:both}
-.civ-osa ol{list-style:none; margin:10px 0 0; padding:0 0 0 18px; border-left:2px solid var(--civ-linka); max-width:46em}
+.civ-osa ol{list-style:none; margin:10px 0 0; padding:0 0 0 18px; border-inline-start:2px solid var(--civ-linka); max-width:46em}
 .civ-osa li{position:relative; padding:0 0 14px 14px}
 .civ-osa li::before{content:""; position:absolute; left:-25px; top:.55em; width:10px; height:10px; border-radius:50%; background:var(--civ-papir); border:2px solid var(--civ-akcent)}
 .civ-osa b{display:block; font-size:.8rem; letter-spacing:.04em; color:var(--civ-akcent)}
@@ -303,7 +303,7 @@ footer a{color:inherit}
 .civ-mapa-tl:hover{filter:brightness(1.08)}
 .civ-mapa-tl:focus-visible{outline:3px solid var(--civ-akcent); outline-offset:3px}
 .civ-zdroje{clear:both}
-.civ-zdroje ul{margin:6px 0 0; padding-left:18px; color:var(--civ-ink2); font-size:.9rem; max-width:46em}
+.civ-zdroje ul{margin:6px 0 0; padding-inline-start:18px; color:var(--civ-ink2); font-size:.9rem; max-width:46em}
 .civ-pata{clear:both; margin-top:30px; padding-top:14px; border-top:1px solid var(--civ-linka); font-size:.8rem; color:var(--civ-ink3)}
 .civ-pata p{margin:0}
 
@@ -338,7 +338,7 @@ footer a{color:inherit}
 .civ-dalsi{clear:both; margin-top:34px}
 .civ-dalsi ul{list-style:none; margin:10px 0 0; padding:0; display:grid; grid-template-columns:repeat(auto-fill, minmax(220px, 1fr)); gap:10px}
 .civ-dalsi-tl{display:flex; flex-direction:column; gap:2px; width:100%; height:100%; padding:12px 16px; border-radius:12px; border:1px solid var(--civ-linka); background:var(--civ-papir2);
-  color:var(--civ-ink); font:inherit; text-align:left; text-decoration:none; cursor:pointer}
+  color:var(--civ-ink); font:inherit; text-align:start; text-decoration:none; cursor:pointer}
 .civ-dalsi-tl:hover{border-color:var(--civ-akcent)}
 .civ-dalsi-tl:focus-visible{outline:3px solid var(--civ-akcent); outline-offset:2px}
 .civ-dalsi-tl b{font-family:"Playfair Display", Georgia, serif; font-size:1.1rem; font-weight:600}
@@ -346,7 +346,7 @@ footer a{color:inherit}
 /* vstup ze seznamu jazyků: „Jazyky starověku“ */
 .starovek-karta{display:flex; flex-direction:column; gap:8px; width:100%; margin:0 0 12px; padding:12px; border-radius:18px; border:1px solid var(--sklo-okraj, rgba(0,0,0,.1)); background:var(--plocha, transparent)}
 .starovek-stitek{display:flex; align-items:center; gap:7px; margin:0 4px; font-size:.72rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:var(--text2)}
-.starovek-tl{display:grid; grid-template-columns:96px 1fr auto; align-items:center; gap:12px; width:100%; padding:6px; border:0; border-radius:12px; background:transparent; color:var(--text); text-align:left; font:inherit; cursor:pointer}
+.starovek-tl{display:grid; grid-template-columns:96px 1fr auto; align-items:center; gap:12px; width:100%; padding:6px; border:0; border-radius:12px; background:transparent; color:var(--text); text-align:start; font:inherit; cursor:pointer}
 .starovek-tl:hover{background:var(--plocha2, rgba(0,0,0,.04))}
 .starovek-tl:focus-visible{outline:3px solid var(--cyan); outline-offset:2px}
 .starovek-malba{display:block; aspect-ratio:16/10; border-radius:8px; overflow:hidden; background:#FBF7EE}
@@ -356,7 +356,7 @@ footer a{color:inherit}
 .starovek-tl small{display:block; font-size:.8rem; line-height:1.35; color:var(--text2)}
 .starovek-tl > svg{width:16px; height:16px; color:var(--text2)}
 /* odkaz z karty jazyka */
-.k-civ{display:flex; align-items:center; gap:10px; width:100%; margin:0 0 12px; padding:8px 10px 8px 8px; border-radius:14px; border:1px solid var(--linka2); background:var(--plocha); color:var(--text); font:inherit; text-align:left; cursor:pointer}
+.k-civ{display:flex; align-items:center; gap:10px; width:100%; margin:0 0 12px; padding:8px 10px 8px 8px; border-radius:14px; border:1px solid var(--linka2); background:var(--plocha); color:var(--text); font:inherit; text-align:start; cursor:pointer}
 .k-civ:hover{border-color:var(--cyan-okraj)}
 .k-civ .starovek-malba{width:72px; flex:none}
 .k-civ b{display:block; font-family:"Playfair Display", Georgia, serif; font-weight:600}
@@ -368,7 +368,7 @@ footer a{color:inherit}
 /* bublina s vysvětlením při najetí myší nebo fokusu (uživatel: „na tu ikonu mouseover, o co jde“) */
 .starovek-ikona{position:relative}
 .starovek-ikona .bublina{position:absolute; top:calc(100% + 10px); right:-8px; z-index:30; width:max-content; max-width:240px; padding:8px 12px;
-  border-radius:10px; background:var(--text); color:var(--vesmir2, #02030A); font:500 .8rem/1.35 var(--pismo-text); text-align:left; white-space:normal;
+  border-radius:10px; background:var(--text); color:var(--vesmir2, #02030A); font:500 .8rem/1.35 var(--pismo-text); text-align:start; white-space:normal;
   box-shadow:0 10px 26px -10px rgba(0,0,0,.5); opacity:0; transform:translateY(-4px); pointer-events:none; transition:opacity .15s, transform .15s}
 .starovek-ikona .bublina::before{content:""; position:absolute; top:-5px; right:22px; width:10px; height:10px; background:inherit; transform:rotate(45deg)}
 .starovek-ikona:hover .bublina, .starovek-ikona:focus-visible .bublina{opacity:1; transform:none}
@@ -392,12 +392,12 @@ footer a{color:inherit}
 .civ-strom > p{max-width:40em; color:var(--civ-ink2)}
 .civ-strom ul{list-style:none; margin:0; padding:0}
 .civ-strom-koren > li{margin:0 0 18px}
-.civ-strom li li{position:relative; padding-left:26px}
-.civ-strom li li::before{content:""; position:absolute; left:9px; top:0; bottom:0; border-left:1.5px solid var(--civ-linka)}
+.civ-strom li li{position:relative; padding-inline-start:26px}
+.civ-strom li li::before{content:""; position:absolute; left:9px; top:0; bottom:0; border-inline-start:1.5px solid var(--civ-linka)}
 .civ-strom li li:last-child::before{bottom:auto; height:24px}
 .civ-strom li li::after{content:""; position:absolute; left:9px; top:24px; width:14px; border-top:1.5px solid var(--civ-linka)}
 .civ-strom li.sporna::after{border-top-style:dashed; border-top-color:var(--civ-akcent)}
-.civ-strom li.sporna::before{border-left-style:dashed}
+.civ-strom li.sporna::before{border-inline-start-style:dashed}
 .civ-uzel-karta{display:flex; align-items:flex-start; gap:12px; margin:6px 0; padding:8px 12px; border:1px solid var(--civ-linka); border-radius:10px; background:var(--civ-papir2); max-width:40em}
 .civ-uzel-ukazka{flex:0 0 auto; min-width:4.2em; font-size:1.45rem; line-height:1.25; color:var(--civ-ink); white-space:nowrap}
 .civ-uzel-ukazka.civ-bez-ukazky{color:var(--civ-ink3)}
@@ -406,7 +406,7 @@ footer a{color:inherit}
 .civ-uzel-text b a, .civ-uzel-text b button{font:inherit; color:var(--civ-akcent); background:none; border:0; padding:0; cursor:pointer; text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:3px}
 .civ-uzel-text small{font-size:.8rem; color:var(--civ-ink3)}
 .civ-uzel-text span{font-size:.88rem; color:var(--civ-ink2)}
-@media (max-width:600px){ .civ-strom li li{padding-left:16px} .civ-strom li li::before{left:4px} .civ-strom li li::after{left:4px; width:10px} .civ-uzel-karta{flex-direction:column; gap:4px} }
+@media (max-width:600px){ .civ-strom li li{padding-inline-start:16px} .civ-strom li li::before{left:4px} .civ-strom li li::after{left:4px; width:10px} .civ-uzel-karta{flex-direction:column; gap:4px} }
 /* slovníček pojmů */
 .civ-pojmy{clear:both; margin:28px 0}
 .civ-pojmy > p{max-width:40em; color:var(--civ-ink2)}
