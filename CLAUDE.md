@@ -153,6 +153,39 @@ a hlaholice, Voynichův rukopis v Praze, Stříbrná bible v Praze, Bójové a j
   české stránky míří na rozcestník Příběhů). Návod v en/it/de/fr ji nezmiňuje (příklad hledání „tea“ místo „robot“). Cesty slov
   robot a dollar zůstávají dostupné odkazem `#cesta-robot`. Totéž od téhož dne i **Jak vznikla spisovná čeština** (uživatel: „ano, nech jenom v CZ“); návod v en/it/de/fr ji nevyjmenovává.
 
+## Hebrejská verze (od 26. 10. 2026)
+
+Uživatel: „šlo by udělat i verzi v jivrit?“ a „bude to pro izraelce“. Adresa **thelanguageatlas.com/he/** (`dist/he/`), přepínač
+**CS · EN · IT · DE · FR · HE**, název **אטלס השפות**, moderní izraelská hebrejština **bez nikudu**, oslovení neutrální (rozkazovací
+tvary jako na izraelských webech). Statické stránky mají anglické cesty (`/he/language/<name>/`, `/he/languages/`, `/he/about-data/`,
+`/he/language-days/`, `/he/guide/`, `/he/vitality/`, `/he/ancient/`, `/he/stories/`); hebrejský slug by v adrese byl nečitelný
+procentový řetězec, proto `stranky.mjs` bere slug z anglického názvu. LOCALE `he_IL`.
+- **Etapa 1 (hotová)**: rozhraní (`src/ui/he.json`), 164 karet (pole `he` za `fr` v `languages.json`), názvy států (`nazvy-he.json`,
+  `RUCNE.he`: קוסובו, סומלילנד), rodiny a větve (`glottolog-*.he.json`), hledání, AI odpovídá hebrejsky. **Výslovnost na kartách je
+  hebrejským písmem** (rozhodnutí: Izraelci latinskou výslovnost nečtou): slabiky spojovníkem, přízvuk znakem ˈ před slabikou, geresh
+  pro hlásky, které hebrejština nemá (צ׳ = č, ג׳ = dž, ז׳ = ž), v = ו/וו. Prošlo dvěma nezávislými kontrolami (karty a rodiny 51 oprav
+  karet + 27 názvů rodin a větví – názvy jazyků podle hebrejské Wikipedie; rozhraní zvlášť).
+- **Etapa 2 (chybí)**: starověk, Příběhy, putování, cesty slov, typologie, písma, vymyšlené jazyky, Jazyk dne a `adresa.he`
+  u stránek. Do té doby se ukazují **anglicky** (záloha `DALSI` → en, viz italština) – článek pak dostane `lang="en" dir="ltr"`
+  (`starovek.js`: `L === c.en` znamená chybějící překlad), aby se anglický text v RTL stránce nerozsypal. `civAdresa` bere `adresa.en`.
+  Vymyšlené jazyky a dvě stránky starověku mají aspoň hebrejská hledací slova (`hledat`).
+- **RTL**: build dává `<html lang="he" dir="rtl">`, app při přepnutí jazyka nastaví `document.documentElement.dir`. V CSS
+  (`styles.css`, `starovek.css`) jsou okraje, odsazení, rámečky a zarovnání **logickými vlastnostmi** (`margin-inline-start`,
+  `padding-inline-end`, `text-align:start`…), takže se v RTL obrátí samy a v LTR vypadají stejně jako dřív (ověřeno pixelovým
+  srovnáním české verze). **Fyzické `left:`/`right:` u poloh zůstaly** – glóbus, překryvy na něm a panely se nezrcadlí, mapa
+  je mapa. Pozdravy a anglické zálohy mají `unicode-bidi:plaintext`; šipky „dál“ se v RTL otočí (`svg:has(use[href="#i-dal"])`).
+  Blok pravidel pro RTL je na konci `styles.css`. **Při novém CSS psát logické vlastnosti**, jinak se hebrejská verze rozbije.
+- **Písma**: Assistant (text) a Frank Ruhl Libre (nadpisy) z Google Fonts, zařazená v řetězcích písem, takže je prohlížeč použije
+  jen na hebrejské znaky.
+- **Hledání**: `dotazSlova` pustí hebrejská písmena; `bezDiakritiky` maže nikud a geresh ׳ mění na apostrof (צ'כית = צ׳כית);
+  `shodaSlova` zkusí slovo i bez 1–2 předpon z והבלמשכ (בברזיל → ברזיל) a `shodaSlova1` odřízne koncovky יות|ית|ים|ות|י
+  (שפות סלאביות → סלאבית). Hebrejská výplňová a tázací slova jsou v `DOTAZ_SPUSTE`, `DOTAZ_PREDLOZKY` (של), `DOTAZ_VYPLN`,
+  kontrola „kde“ (איפה, היכן) a `SLOZITA_OTAZKA`.
+- Při přípravě opravena chyba v datech: pozdrav dzongkhy byl nesmyslný, teď `སྐུ་གཟུགས་བཟང་པོ་ལགས།` (kuzu zangpo la) ve všech jazycích.
+- Hranice (uživatel 26. 10. 2026: „je to soukromý projekt a ne blábol OSN“): **Severní Kypr je sloučený s Kyprem** (`hranice.mjs`),
+  Golany zůstávají u Izraele a Somaliland samostatný, jak je měla mapa už dřív.
+- Artefakty v claude.ai hebrejštinu neobsahují (jen cs a en).
+
 ## Struktura a pravidla
 
 - `data/*.json` je jediný zdroj pravdy. `dist/` se generuje, needituj ho ručně.
