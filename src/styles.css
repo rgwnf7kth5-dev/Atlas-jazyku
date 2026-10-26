@@ -28,8 +28,8 @@
   /* barvy jazykových rodin a text na nich */
   --r-ie:#5E92EC; --r-st:#E4645A; --r-an:#12A3BC; --r-afro:#A5761A; --r-nk:#21AE70; --r-ost:#A268DC;
   --t-ie:#070A1E; --t-st:#070A1E; --t-an:#070A1E; --t-afro:#070A1E; --t-nk:#070A1E; --t-ost:#070A1E;
-  --pismo-nadpis:"Chakra Petch","Outfit",system-ui,sans-serif;
-  --pismo-text:"Outfit",system-ui,"Segoe UI",sans-serif;
+  --pismo-nadpis:"Chakra Petch","Outfit","Assistant",system-ui,sans-serif;
+  --pismo-text:"Outfit","Assistant",system-ui,"Segoe UI",sans-serif;
   --pismo-data:"JetBrains Mono",ui-monospace,"Cascadia Mono",monospace;
 }
 /* Denní vzhled (přání uživatele 22. 9. 2026): světlá obloha, bílé sklo, světlá planeta.
@@ -622,9 +622,9 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
    reliéfní glóbus. Denní vzhled = B, noční = C (tmavá modř, tlumený reliéf, světélka).
    ===================================================================================================== */
 :root{
-  --pismo-nadpis:"Playfair Display",Georgia,"Times New Roman",serif;
-  --pismo-data:"Outfit",system-ui,sans-serif;
-  --pismo-pozdrav:"Playfair Display","Noto Serif",Georgia,"Noto Sans Arabic","Noto Sans Devanagari","Noto Sans CJK SC",serif;
+  --pismo-nadpis:"Playfair Display","Frank Ruhl Libre",Georgia,"Times New Roman",serif;
+  --pismo-data:"Outfit","Assistant",system-ui,sans-serif;
+  --pismo-pozdrav:"Playfair Display","Frank Ruhl Libre","Noto Serif",Georgia,"Noto Sans Arabic","Noto Sans Devanagari","Noto Sans CJK SC",serif;
   --pozadi:radial-gradient(120% 90% at 40% 30%, #0C1734, #050914 70%) fixed, #050914;
   --sklo:rgba(11,18,38,.82); --sklo2:rgba(14,23,48,.9); --sklo-okraj:rgba(170,195,255,.13); --sklo-lesk:rgba(255,255,255,.05);
   --akcent:#E0503F; --na-akcent:#FFFFFF;
@@ -1453,3 +1453,9 @@ html[lang="en"] .do-ceka-otazka{quotes:"“" "”"} html[lang="it"] .do-ceka-ota
 .do-ai-web b{font-size:11px; letter-spacing:.06em; text-transform:uppercase; color:var(--text3)}
 .do-ai-web ul{margin:0; padding-left:18px; display:grid; gap:2px}
 .do-ai-web a{color:var(--cyan); overflow-wrap:anywhere}
+
+/* ---------- ivrit: zprava doleva (26. 10. 2026) ----------
+   Rozložení zrcadlí <html dir="rtl"> samo (mřížka, flex). Pozdravy a jména v cizích písmech ale nesmí převzít směr
+   stránky – jinak by se vykřičník u „Sannu!“ přesunul na začátek. plaintext = směr podle vlastního obsahu. */
+[dir="rtl"] .pozdrav, [dir="rtl"] .jaz .pz, [dir="rtl"] .jd-pozdrav, [dir="rtl"] .dj-pz, [dir="rtl"] .dj-pozdrav,
+[dir="rtl"] .kal-pz, [dir="rtl"] .ks-pozdrav, [dir="rtl"] #k-pozdrav{unicode-bidi:plaintext}

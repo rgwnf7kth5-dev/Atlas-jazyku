@@ -12,7 +12,7 @@
 <script>(function(){var m=null;try{m=localStorage.getItem("atlas-motiv")}catch(e){}if(!m)m=window.matchMedia&&matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";document.documentElement.setAttribute("data-theme",m)})()</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800&family=Frank+Ruhl+Libre:wght@500;700&family=Assistant:wght@400;600;700&display=swap">
 <style>
 /* Atlas jazyků – „Hvězdná mapa se sklem“ (návrh B + sklo z A, vybral uživatel 22. 9. 2026).
    Jen tmavý vesmír. Barvy rodin (--r-*) prošly validátorem palet (skill dataviz) na #04060F i #101634;
@@ -44,8 +44,8 @@
   /* barvy jazykových rodin a text na nich */
   --r-ie:#5E92EC; --r-st:#E4645A; --r-an:#12A3BC; --r-afro:#A5761A; --r-nk:#21AE70; --r-ost:#A268DC;
   --t-ie:#070A1E; --t-st:#070A1E; --t-an:#070A1E; --t-afro:#070A1E; --t-nk:#070A1E; --t-ost:#070A1E;
-  --pismo-nadpis:"Chakra Petch","Outfit",system-ui,sans-serif;
-  --pismo-text:"Outfit",system-ui,"Segoe UI",sans-serif;
+  --pismo-nadpis:"Chakra Petch","Outfit","Assistant",system-ui,sans-serif;
+  --pismo-text:"Outfit","Assistant",system-ui,"Segoe UI",sans-serif;
   --pismo-data:"JetBrains Mono",ui-monospace,"Cascadia Mono",monospace;
 }
 /* Denní vzhled (přání uživatele 22. 9. 2026): světlá obloha, bílé sklo, světlá planeta.
@@ -638,9 +638,9 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
    reliéfní glóbus. Denní vzhled = B, noční = C (tmavá modř, tlumený reliéf, světélka).
    ===================================================================================================== */
 :root{
-  --pismo-nadpis:"Playfair Display",Georgia,"Times New Roman",serif;
-  --pismo-data:"Outfit",system-ui,sans-serif;
-  --pismo-pozdrav:"Playfair Display","Noto Serif",Georgia,"Noto Sans Arabic","Noto Sans Devanagari","Noto Sans CJK SC",serif;
+  --pismo-nadpis:"Playfair Display","Frank Ruhl Libre",Georgia,"Times New Roman",serif;
+  --pismo-data:"Outfit","Assistant",system-ui,sans-serif;
+  --pismo-pozdrav:"Playfair Display","Frank Ruhl Libre","Noto Serif",Georgia,"Noto Sans Arabic","Noto Sans Devanagari","Noto Sans CJK SC",serif;
   --pozadi:radial-gradient(120% 90% at 40% 30%, #0C1734, #050914 70%) fixed, #050914;
   --sklo:rgba(11,18,38,.82); --sklo2:rgba(14,23,48,.9); --sklo-okraj:rgba(170,195,255,.13); --sklo-lesk:rgba(255,255,255,.05);
   --akcent:#E0503F; --na-akcent:#FFFFFF;
@@ -1470,6 +1470,12 @@ html[lang="en"] .do-ceka-otazka{quotes:"“" "”"} html[lang="it"] .do-ceka-ota
 .do-ai-web ul{margin:0; padding-left:18px; display:grid; gap:2px}
 .do-ai-web a{color:var(--cyan); overflow-wrap:anywhere}
 
+/* ---------- ivrit: zprava doleva (26. 10. 2026) ----------
+   Rozložení zrcadlí <html dir="rtl"> samo (mřížka, flex). Pozdravy a jména v cizích písmech ale nesmí převzít směr
+   stránky – jinak by se vykřičník u „Sannu!“ přesunul na začátek. plaintext = směr podle vlastního obsahu. */
+[dir="rtl"] .pozdrav, [dir="rtl"] .jaz .pz, [dir="rtl"] .jd-pozdrav, [dir="rtl"] .dj-pz, [dir="rtl"] .dj-pozdrav,
+[dir="rtl"] .kal-pz, [dir="rtl"] .ks-pozdrav, [dir="rtl"] #k-pozdrav{unicode-bidi:plaintext}
+
 /* ---------- jazyky starověku: stránka o civilizaci jako list ilustrované encyklopedie (okno nad glóbem i web) ----------
    Papír a inkoust jako u akvarelů na kartách; v tmavém vzhledu sépiová noc. Barvy jen tady, přes --civ-*. */
 .civ{
@@ -1760,6 +1766,7 @@ html[lang="en"] .do-ceka-otazka{quotes:"“" "”"} html[lang="it"] .do-ceka-ota
 <link rel="alternate" hreflang="it" href="https://thelanguageatlas.com/it/">
 <link rel="alternate" hreflang="de" href="https://thelanguageatlas.com/de/">
 <link rel="alternate" hreflang="fr" href="https://thelanguageatlas.com/fr/">
+<link rel="alternate" hreflang="he" href="https://thelanguageatlas.com/he/">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://atlasjazyku.cz/">
@@ -1816,7 +1823,7 @@ html[lang="en"] .do-ceka-otazka{quotes:"“" "”"} html[lang="it"] .do-ceka-ota
    <h1 data-t="nazev">Atlas jazyků</h1>
   </a>
   <nav class="jazyk-prepinac" id="jazyk-prepinac" aria-label="Jazyk webu" data-t-aria-label="jazykVolba">
-   <a href="index.html" data-l="cs" hreflang="cs" lang="cs" title="Čeština">CS</a><a href="en/index.html" data-l="en" hreflang="en" lang="en" title="English">EN</a><a href="it/index.html" data-l="it" hreflang="it" lang="it" title="Italiano">IT</a><a href="de/index.html" data-l="de" hreflang="de" lang="de" title="Deutsch">DE</a><a href="fr/index.html" data-l="fr" hreflang="fr" lang="fr" title="Français">FR</a>
+   <a href="index.html" data-l="cs" hreflang="cs" lang="cs" title="Čeština">CS</a><a href="en/index.html" data-l="en" hreflang="en" lang="en" title="English">EN</a><a href="it/index.html" data-l="it" hreflang="it" lang="it" title="Italiano">IT</a><a href="de/index.html" data-l="de" hreflang="de" lang="de" title="Deutsch">DE</a><a href="fr/index.html" data-l="fr" hreflang="fr" lang="fr" title="Français">FR</a><a href="he/index.html" data-l="he" hreflang="he" lang="he" dir="rtl" title="עברית">HE</a>
   </nav>
   <button class="prepinac" id="prepinac" type="button" aria-pressed="false" aria-label="Přepnout denní a noční vzhled" title="Přepnout denní a noční vzhled" data-t-aria-label="motiv" data-t-title="motiv">
    <svg aria-hidden="true"><use href="#i-slunce" id="ikona-rezim"/></svg>
@@ -1990,6 +1997,6 @@ html[lang="en"] .do-ceka-otazka{quotes:"“" "”"} html[lang="it"] .do-ceka-ota
  <dialog class="civ-okno" id="civ-okno" aria-labelledby="civ-nadpis"></dialog>
 </div>
 
-<script src="js/atlas.e6be813f4a.js"></script>
+<script src="js/atlas.b9bf58e032.js"></script>
 </body>
 </html>

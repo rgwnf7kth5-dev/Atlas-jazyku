@@ -32,6 +32,11 @@
   to = "/fr/"
   status = 301
 
+[[redirects]]
+  from = "/he"
+  to = "/he/"
+  status = 301
+
 [[headers]]
   for = "/*"
   [headers.values]

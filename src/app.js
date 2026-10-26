@@ -43,7 +43,7 @@ const R = Math.PI / 180;
 const $ = function(id){ return document.getElementById(id); };
 const bezPohybu = window.matchMedia("(prefers-reduced-motion: reduce)");
 const nazevZeme = function(en){ return STATY[en] || en; };
-const bezDiakritiky = function(s){ return s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/ß/g, "ss").replace(/œ/g, "oe").replace(/æ/g, "ae"); };   // ß kvůli němčině (größte → grosste), œ kvůli francouzštině
+const bezDiakritiky = function(s){ return s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/ß/g, "ss").replace(/œ/g, "oe").replace(/æ/g, "ae").replace(/[\u0591-\u05C7]/g, "").replace(/[\u05F3`]/g, "'").replace(/\u05F4/g, '"'); };   // ivrit: bez niqqudu, geresh ׳ = apostrof (צ׳כית i צ'כית)   // ß kvůli němčině (größte → grosste), œ kvůli francouzštině
 const cislo = function(n, des){
   return n.toLocaleString(T.locale, {maximumFractionDigits: des || 0, minimumFractionDigits: des || 0});
 };
@@ -356,8 +356,8 @@ function kartaDneJazyku(){
    („co má společného němčina s italštinou“). Tvary slov se porovnávají podle kmene (Brazílie – v Brazílii).
    Stejné akce (ukazZemi, ukazSkupinu, srovnání) mají později sloužit i AI jako nástroje. */
 let DOTAZ_IX = null, dotazSkupina = null, dotazAkce = null;
-const DOTAZ_SPUSTE = /^(jazyk|language|mluv|rec|speak|spoken|rodin|famil|vetev|vetv|branch|nareci|dialect|lingu|parla|ramo|rami|sprach|sprech|sprich|gesproch|zweig|dialekt|mundart|langu|parl|patois)/;   // i francouzsky (17. 10. 2026)   // i italsky (2. 10.) a německy (3. 10. 2026)
-const DOTAZ_PREDLOZKY = {v: 1, ve: 1, na: 1, in: 1, of: 1, del: 1, della: 1, dell: 1, dello: 1, di: 1, nel: 1, nella: 1, nello: 1, negli: 1, nei: 1, degli: 1, im: 1, von: 1, aus: 1, der: 1, en: 1, au: 1, aux: 1, du: 1, des: 1, de: 1};
+const DOTAZ_SPUSTE = /^(jazyk|language|mluv|rec|speak|spoken|rodin|famil|vetev|vetv|branch|nareci|dialect|lingu|parla|ramo|rami|sprach|sprech|sprich|gesproch|zweig|dialekt|mundart|langu|parl|patois|[והבלמשכ]{0,2}(?:שפ|דובר|מדבר|ניב|משפח|ענף))/;   // i hebrejsky (26. 10. 2026)   // i francouzsky (17. 10. 2026)   // i italsky (2. 10.) a německy (3. 10. 2026)
+const DOTAZ_PREDLOZKY = {v: 1, ve: 1, na: 1, in: 1, of: 1, del: 1, della: 1, dell: 1, dello: 1, di: 1, nel: 1, nella: 1, nello: 1, negli: 1, nei: 1, degli: 1, im: 1, von: 1, aus: 1, der: 1, en: 1, au: 1, aux: 1, du: 1, des: 1, de: 1, "של": 1};
 const DOTAZ_ALIASY_ZEMI = {"United States of America": ["usa", "us", "amerika", "america"], "United Kingdom": ["britanie", "britain", "uk", "anglie", "england"],
   "Netherlands": ["holandsko", "holland"], "Czechia": ["ceska republika", "czech republic", "tschechische republik"], "Dem. Rep. Congo": ["kongo kinshasa", "drc"],
   "Germany": ["brd"]};
@@ -365,9 +365,17 @@ const DOTAZ_ALIASY_UZLU = {"Uralic": ["ugrofinska", "finno-ugric", "finnougric",
   /* italské názvy hlavních větví (české jsou v PD.vetve): „lingue slave“, „lingue romanze“… */
   "Slavic": ["slava"], "Germanic": ["germanica"], "Romance": ["romanza", "neolatina"], "Celtic": ["celtica"], "Eastern Baltic": ["baltica"],
   "Indo-Aryan": ["indoaria", "indoarya"], "Iranian": ["iranica"], "Semitic": ["semitica"], "Narrow Bantu": ["bantu", "bantusprachen"], "Italic": ["italica"]};
-function dotazSlova(s){ return bezDiakritiky(s).replace(/[’‘]/g, "'").replace(/\b(l|d|qu|j|n|s|c|dell|all|nell|dall|sull)'/g, "$1 ").replace(/[()]/g, " ")   /* francouzské a italské elize: l'italien → l italien */.split(/[^a-z0-9'-]+/).filter(function(w){ return w.length >= 1; }); }
+function dotazSlova(s){ return bezDiakritiky(s).replace(/[’‘]/g, "'").replace(/\b(l|d|qu|j|n|s|c|dell|all|nell|dall|sull)'/g, "$1 ").replace(/[()]/g, " ")   /* francouzské a italské elize: l'italien → l italien */.split(/[^a-z0-9'\u05D0-\u05EA-]+/).filter(function(w){ return w.length >= 1; }); }   // i hebrejská písmena
 /* slovo dotazu odpovídá slovu názvu: shodný kmen (bez koncových samohlásek), u krátkých kmenů jen malá odchylka */
+/* ivrit: předložky a členy se píšou dohromady se slovem (בישראל = v Izraeli, השפות = ty jazyky, ובצרפת = a ve Francii) –
+   když slovo nesedí, zkusí se bez jedné až dvou předpon ו ה ב ל מ ש כ */
 function shodaSlova(q, n){
+  if (shodaSlova1(q, n)) return true;
+  if (!/^[\u05D0-\u05EA]/.test(q)) return false;
+  for (let k = 1; k <= 2 && q.length - k >= 2 && "והבלמשכ".indexOf(q.charAt(k - 1)) >= 0; k++) if (shodaSlova1(q.slice(k), n)) return true;
+  return false;
+}
+function shodaSlova1(q, n){
   const s = n.replace(/[aeiouy]$/, "");     // jen jedna koncová samohláska: Romania ≠ Romance, Turkey ≠ turkické
   if (s.length >= 4) return q.indexOf(s) === 0 && q.length <= s.length + 4;
   return q === n || (n.length >= 4 && q.indexOf(s) === 0 && q.length <= n.length + 1);   // krátké názvy (Taa, Čad) jen celé: „tam“ ≠ Taa
@@ -413,7 +421,7 @@ function rozumejDotazu(text){
     return x.jmena.some(function(n){ return shodaNazvu(slova, n); }) || (x.prisl && slova.indexOf(x.prisl) >= 0);
   });
   if (jazyky.length >= 2) return {typ: "srovnani", a: jazyky[0].j, b: jazyky[1].j, jmena: jmenaJazyku(jazyky.slice(0, 2))};
-  if (jazyky.length === 1 && slova.some(function(w){ return w === "kde" || w === "where" || w === "dove" || w === "wo" || w === "ou"; })) return {typ: "jazyk", j: jazyky[0].j, jmena: jmenaJazyku(jazyky)};   // „kde se mluví německy“
+  if (jazyky.length === 1 && slova.some(function(w){ return w === "kde" || w === "where" || w === "dove" || w === "wo" || w === "ou" || w === "איפה" || w === "היכן"; })) return {typ: "jazyk", j: jazyky[0].j, jmena: jmenaJazyku(jazyky)};   // „kde se mluví německy“
   /* stát: s předložkou („v Brazílii“, „of India“) má přednost; bez ní jen tehdy, když nesedí rodina („germánské jazyky“ ≠ Německo) */
   let stat = null;
   for (let k = 0; k < IX.zeme.length && !(stat && stat.predlozka); k++) {
@@ -468,7 +476,9 @@ const DOTAZ_VYPLN = new Set(("jazyk jazyky jazyku jazycich jazykem jazyce langua
   "zwischen vergleiche vergleich und der die das den dem des ein eine einer im von aus mit was haben hat gemeinsam unterschied sind ist auf " +
   "langue langues parle parlee parlees parlent parler on se quelle quelles quel quels ou toutes tous montre montrez trouve trouvez liste " +
   "famille familles branche branches entre compare comparer comparaison et le les l un une du de d qu que qui ont a commun commune " +
-  "difference est au aux en par avec parle-t-on parle-t-il parlent-ils trouve-t-on ecrit-on ecrit s").split(" "));
+  "difference est au aux en par avec parle-t-on parle-t-il parlent-ils trouve-t-on ecrit-on ecrit s " +
+  "שפה שפות השפה השפות בשפה בשפות לשפה לשפות של את מדברים מדברות מדבר מדברת דוברים דוברי איפה היכן באיזו באיזה באילו איזו איזה אילו מה מהן מהם " +
+  "יש הן הם כל כל כלל רשימה הראו הצג הציגו מצא מצאו משפחה משפחת משפחות המשפחה ענף ענפי הענף בין השוואה השוו לעומת ו ה ב ל עם ניב ניבים במדינה").split(" "));
 function celyDotaz(text, d){
   if (!d || !d.jmena) return false;
   const nazvy = []; d.jmena.forEach(function(n){ dotazSlova(n).forEach(function(w){ if (w.length >= 2) nazvy.push(w); }); });
@@ -588,7 +598,7 @@ function bodyDotazu(d){
    (naradiAI). Po odpovědi se provede akce posledního nástroje (glóbus, karta, srovnání). Zatím skryté: zapne se adresou
    #ai (pamatuje se, #ai-vyp vypne), porovnání modelů je #ai-test. Jen web, ne artefakt ani soubor z disku. */
 const AI_MOZNE = !ARTEFAKT && /^https?:$/.test(location.protocol);
-const SLOZITA_OTAZKA = /(nejvic|nejmin|nejvets|nejmens|kolik|ohrozen|vymrel|probouz|proc |proc$|jak |rozdil|spolecn|nareci|alespon|vic nez|mene nez|most|least|largest|smallest|how many|why|endangered|extinct|dialect|common|more than|at least|piu |meno |quant|perche|pericolo|estint|comune|differenz|dialett|almeno|meiste|wenigste|grosst|kleinst|wie viel|warum|bedroht|gefahrd|ausgestorb|gemeinsam|unterschied|dialekt|mindestens|mehr als|weniger als|le plus|plus de|moins de|combien|pourquoi|menace|eteint|au moins|differen|\d)/;   // i italsky a německy
+const SLOZITA_OTAZKA = /(nejvic|nejmin|nejvets|nejmens|kolik|ohrozen|vymrel|probouz|proc |proc$|jak |rozdil|spolecn|nareci|alespon|vic nez|mene nez|most|least|largest|smallest|how many|why|endangered|extinct|dialect|common|more than|at least|piu |meno |quant|perche|pericolo|estint|comune|differenz|dialett|almeno|meiste|wenigste|grosst|kleinst|wie viel|warum|bedroht|gefahrd|ausgestorb|gemeinsam|unterschied|dialekt|mindestens|mehr als|weniger als|le plus|plus de|moins de|combien|pourquoi|menace|eteint|au moins|differen|\d|הכי|כמה|בסכנה|נכחד|למה|מדוע|איך|הבדל|משות|ניבים|לפחות|יותר מ)/;   // i italsky a německy
 let aiZap = false;
 aiZap = AI_MOZNE;                               // od 1. 10. 2026 pro všechny; #ai-vyp vypne jen pro sebe
 try { if (localStorage.getItem("atlas-ai") === "0") aiZap = false; } catch (e) {}
@@ -1126,7 +1136,7 @@ $("hledej").addEventListener("input", function(e){ postavPolici(e.target.value);
 const TIP_POR = Math.floor(Math.random() * 7);
 function obnovTipHledani(){
   const b = $("hledej-tip"); if (!b) return;
-  const pr = aiZap ? T.hledejPriklady : ({cs: ["jazyky v Brazílii", "slovanské jazyky", "němčina a italština"], it: ["lingue del Brasile", "lingue slave", "tedesco e italiano"], de: ["Sprachen in Brasilien", "slawische Sprachen", "Deutsch und Italienisch"], fr: ["langues du Brésil", "langues slaves", "allemand et italien"]}[T.lang] || ["languages of Brazil", "Slavic languages", "German and Italian"]);
+  const pr = aiZap ? T.hledejPriklady : ({cs: ["jazyky v Brazílii", "slovanské jazyky", "němčina a italština"], it: ["lingue del Brasile", "lingue slave", "tedesco e italiano"], de: ["Sprachen in Brasilien", "slawische Sprachen", "Deutsch und Italienisch"], fr: ["langues du Brésil", "langues slaves", "allemand et italien"], he: ["השפות בברזיל", "שפות סלאביות", "גרמנית ואיטלקית"]}[T.lang] || ["languages of Brazil", "Slavic languages", "German and Italian"]);
   const q = pr[TIP_POR % pr.length];
   b.hidden = !!$("hledej").value;
   b.textContent = "✦ " + T.hledejTip + " ";
@@ -3498,7 +3508,7 @@ function ukazKartuBodu(i){
 
   const o = oddil(T.odkazyPopis), odk = prvek("div", "odkazy");
   const jmL = T.lang !== "cs" && T.lang !== "en" && PD.nazvy && PD.nazvy[T.lang] ? PD.nazvy[T.lang][i] : "";   // italské jméno (CLDR)
-  const hledat = T.lang === "cs" && r[9] ? r[9] : jmL ? (T.lang === "de" ? jmL + " Sprache" : T.lang === "fr" ? "langue " + jmL : "lingua " + jmL) : B[i][0] + " language";
+  const hledat = T.lang === "cs" && r[9] ? r[9] : jmL ? (T.lang === "de" ? jmL + " Sprache" : T.lang === "fr" ? "langue " + jmL : T.lang === "he" ? jmL : "lingua " + jmL) : B[i][0] + " language";
   /* Wikidata říkají jen, jestli je článek česky (1) a anglicky (2); v italské a německé verzi proto hledání v tom jazyce, jinak anglický článek */
   let wiki = "https://" + T.wikiDomena + "/w/index.php?search=" + encodeURIComponent(hledat);
   const clanky = r[12] || 0;                            // 1 = článek na cs Wikipedii, 2 = na en
@@ -3553,7 +3563,7 @@ const adresa = location.pathname.replace(/index\.html$/, "");
 const korenWebu = VYCHOZI !== "cs" ? adresa.replace(new RegExp(VYCHOZI + "\\/$"), "") : adresa;
 /* na vlastních doménách leží každá verze na své: atlasjazyku.cz česky, thelanguageatlas.com anglicky (bez /en/),
    italsky thelanguageatlas.com/it/, německy thelanguageatlas.com/de/ */
-const DOMENY = { cs: "https://atlasjazyku.cz/", en: "https://thelanguageatlas.com/", it: "https://thelanguageatlas.com/it/", de: "https://thelanguageatlas.com/de/", fr: "https://thelanguageatlas.com/fr/" };
+const DOMENY = { cs: "https://atlasjazyku.cz/", en: "https://thelanguageatlas.com/", it: "https://thelanguageatlas.com/it/", de: "https://thelanguageatlas.com/de/", fr: "https://thelanguageatlas.com/fr/", he: "https://thelanguageatlas.com/he/" };
 const naDomene = /(^|\.)(atlasjazyku\.cz|thelanguageatlas\.com)$/.test(location.hostname);
 function korenVerze(l){ return naDomene ? DOMENY[l] : (l === "cs" ? korenWebu : korenWebu + l + "/"); }
 const odkazJinam = $("jazyk-prepinac");
@@ -3861,6 +3871,7 @@ const puvodniOdkaz = {};
 Array.prototype.forEach.call(odkazJinam.querySelectorAll("a[data-l]"), function(a){ puvodniOdkaz[a.dataset.l] = a.getAttribute("href"); });
 function prelozStranku(){
   document.documentElement.lang = T.lang;
+  document.documentElement.dir = T.lang === "he" ? "rtl" : "ltr";   // ivrit zprava doleva (26. 10. 2026)
   document.title = T.nazev;
   Array.prototype.forEach.call(document.querySelectorAll("[data-t]"), function(el){ el.textContent = tx(el.dataset.t); });
   [["title", "tTitle"], ["aria-label", "tAriaLabel"], ["placeholder", "tPlaceholder"]].forEach(function(a){

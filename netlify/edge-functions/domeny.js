@@ -17,11 +17,11 @@ export default async (request) => {
   const host = url.hostname.toLowerCase(), p = url.pathname;
   if (host === "thelanguageatlas.com" || host === "www.thelanguageatlas.com") {
     if (p === "/en") return Response.redirect("https://thelanguageatlas.com/" + url.search, 301);
-    if (p === "/it" || p === "/de" || p === "/fr") return Response.redirect("https://thelanguageatlas.com" + p + "/" + url.search, 301);
+    if (p === "/it" || p === "/de" || p === "/fr" || p === "/he") return Response.redirect("https://thelanguageatlas.com" + p + "/" + url.search, 301);
     if (SPOLECNE.test(p)) return;
     return new URL("/en" + p + url.search, url);          // přepis (rewrite): adresa v prohlížeči zůstane
   }
   if (host === "www.atlasjazyku.cz") return Response.redirect("https://atlasjazyku.cz" + p + url.search, 301);
 };
 
-export const config = { path: "/*", excludedPath: ["/en/*", "/it/*", "/de/*", "/fr/*", "/js/*", "/malby/*", "/starovek/*", "/ikony/*", "/mapy/*", "/api/*"] };
+export const config = { path: "/*", excludedPath: ["/en/*", "/it/*", "/de/*", "/fr/*", "/he/*", "/js/*", "/malby/*", "/starovek/*", "/ikony/*", "/mapy/*", "/api/*"] };

@@ -22,7 +22,7 @@ const podrobnosti = json("data/podrobnosti.json");
 const rodinyCz = json("data/glottolog-families.cs.json");
 /* jazyky webu: čeština a angličtina jsou úplné; další (italština od 2. 10. 2026) se doplňují postupně a co v nich chybí,
    bere se z angličtiny – texty rozhraní po klíčích (spoj), data v prohlížeči (doplnJazyky v app.js) */
-const JAZYKY_WEBU = ["cs", "en", "it", "de", "fr"];
+const JAZYKY_WEBU = ["cs", "en", "it", "de", "fr", "he"];
 const DALSI = JAZYKY_WEBU.filter(l => l !== "cs" && l !== "en");
 const NAZVY = Object.fromEntries(DALSI.map(l => [l, json(`data/nazvy-${l}.json`)]));          // státy, písma, jazyky (scripts/nazvy.mjs)
 const RODINY = Object.fromEntries(DALSI.map(l => [l, json(`data/glottolog-families.${l}.json`)]));
@@ -54,7 +54,7 @@ const nareci = json("data/nareci.json");                 // jména nářečí z 
 // adresy webu: česká verze na atlasjazyku.cz, anglická na thelanguageatlas.com (dist/en/ servírovaná z kořene).
 // Canonical, og:url a og:image musí mířit na tu doménu, na které stránka opravdu leží: Facebook podle og:url stránku
 // načte znovu a se starou adresou atlasoflanguages.netlify.app ukazoval odkaz bez obrázku (25. 9. 2026).
-const DOMENA = { cs: "https://atlasjazyku.cz", en: "https://thelanguageatlas.com", it: "https://thelanguageatlas.com/it", de: "https://thelanguageatlas.com/de", fr: "https://thelanguageatlas.com/fr" };   // další jazyky na anglické doméně v /it/, /de/ (dist/it/, dist/de/)
+const DOMENA = { cs: "https://atlasjazyku.cz", en: "https://thelanguageatlas.com", it: "https://thelanguageatlas.com/it", de: "https://thelanguageatlas.com/de", fr: "https://thelanguageatlas.com/fr", he: "https://thelanguageatlas.com/he" };   // další jazyky na anglické doméně v /it/, /de/ (dist/it/, dist/de/)
 // ověření vlastnictví v Google Search Console (značka HTML), na úvodních stránkách obou domén; kódy nemazat,
 // jinak Search Console ověření po čase zruší
 const GOOGLE_OVERENI = ["zyKCEYlegO4cJQmz22iaMH9QuphSUalznP-e4iU_Gzg", "R9cFXotbubItuaKstc9NVaT-CoYj0BqfVyLau7QR_GY"];
@@ -66,7 +66,7 @@ const ikona = cti("static/favicon.svg").trim();
 const NAHLED = Object.fromEntries(["cs", "en"].map(l => [l, `/nahled-${l}.` +
   crypto.createHash("sha256").update("2").update(fs.readFileSync(path.join(KOREN, `static/nahled-${l}.jpg`))).digest("hex").slice(0, 10) + ".jpg"]));
 for (const l of DALSI) NAHLED[l] = NAHLED.en;   // vlastní obrázek pro sdílení zatím nemají (anglický je bez textu v jazyce)
-const FONTY = "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800&display=swap";
+const FONTY = "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800&family=Frank+Ruhl+Libre:wght@500;700&family=Assistant:wght@400;600;700&display=swap";   // Frank Ruhl Libre a Assistant: hebrejské znaky (ivrit od 26. 10. 2026; Google stahuje jen podmnožinu, kterou stránka použije)
 const escHtml = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 // data jdou do <script>, proto „<“ zapíšu jako < – řetězec „</script>“ v datech by stránku rozbil
 const doSkriptuVse = hodnota => (typeof hodnota === "string" ? hodnota : JSON.stringify(hodnota)).replace(/</g, "\\u003c");
@@ -173,7 +173,7 @@ const skriptWebu = knihovny.join("\n;\n") + "\n;\n" +
     'document.documentElement.lang === "en" || /(^|\\.)thelanguageatlas\\.com$/.test(location.hostname) ? "en" : "cs"', false);
 const souborSkriptu = `js/atlas.${crypto.createHash("sha256").update(skriptWebu).digest("hex").slice(0, 10)}.js`;
 
-const LOCALE = { cs: "cs_CZ", en: "en_GB", it: "it_IT", de: "de_DE", fr: "fr_FR" };
+const LOCALE = { cs: "cs_CZ", en: "en_GB", it: "it_IT", de: "de_DE", fr: "fr_FR", he: "he_IL" };
 function sestav(lang, { odkazy, artefakt }) {
   const T = UI[lang];
   // přepínač jazyků v záhlaví: odkaz na každou verzi (aktuální označí skript)
@@ -220,7 +220,7 @@ function sestav(lang, { odkazy, artefakt }) {
     // X bere og: jen jako náhradu; vlastní značky twitter: náhled na X spolehlivěji ukážou
     `<meta name="twitter:title" content="${escHtml(T.nazev)}">\n<meta name="twitter:description" content="${escHtml(T.popis)}">\n` +
     `<meta name="twitter:image" content="${DOMENA[lang]}${NAHLED[lang]}">\n<meta name="twitter:image:alt" content="${escHtml(T.nahledPopis)}">\n`;
-  const dokument = `<!doctype html>\n<html lang="${lang}">\n<head>\n<meta charset="utf-8">\n` +
+  const dokument = `<!doctype html>\n<html lang="${lang}"${lang === "he" ? ' dir="rtl"' : ""}>\n<head>\n<meta charset="utf-8">\n` +
     `<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n` +
     hlavicka + sdileni + `</head>\n<body>\n${html}\n${skripty}\n</body>\n</html>\n`;
   return { fragment, dokument };

@@ -24,7 +24,7 @@ function tvar(lang, n, tvary) {
   if (lang === "cs" && n >= 2 && n <= 4) return tvary[1];
   return tvary[2];
 }
-const LOC = { cs: "cs-CZ", en: "en-GB", it: "it-IT", de: "de-DE", fr: "fr-FR" }, OG = { cs: "cs_CZ", en: "en_GB", it: "it_IT", de: "de_DE", fr: "fr_FR" };
+const LOC = { cs: "cs-CZ", en: "en-GB", it: "it-IT", de: "de-DE", fr: "fr-FR", he: "he-IL" }, OG = { cs: "cs_CZ", en: "en_GB", it: "it_IT", de: "de_DE", fr: "fr_FR", he: "he_IL" };
 function cislo(lang, n, des) { return n.toLocaleString(LOC[lang] || "en-GB", { minimumFractionDigits: des || 0, maximumFractionDigits: des || 0 }); }
 /* stejně jako lidi() v app.js: malá čísla přesně, velká zaokrouhleně */
 function lidi(lang, T, n) {
@@ -35,11 +35,11 @@ function lidi(lang, T, n) {
 }
 
 /* adresa stránky o civilizaci: /starovek/chetite/, /en/ancient/hittites/ */
-const starovekA = { cs: "/starovek/", en: "/en/ancient/", it: "/it/antichita/", de: "/de/antike/", fr: "/fr/antiquite/" };
+const starovekA = { cs: "/starovek/", en: "/en/ancient/", it: "/it/antichita/", de: "/de/antike/", fr: "/fr/antiquite/", he: "/he/ancient/" };
 /* Příběhy jazyků (sekce „pribehy“ v data/starovek.json): /pribehy/caj/, /en/stories/tea/ */
-const pribehyA = { cs: "/pribehy/", en: "/en/stories/", it: "/it/storie/", de: "/de/geschichten/", fr: "/fr/histoires/" };
+const pribehyA = { cs: "/pribehy/", en: "/en/stories/", it: "/it/storie/", de: "/de/geschichten/", fr: "/fr/histoires/", he: "/he/stories/" };
 const sekceA = c => c.sekce === "pribehy" ? pribehyA : starovekA;
-const civAdresa = (c, lang) => sekceA(c)[lang] + c.adresa[lang] + "/";
+const civAdresa = (c, lang) => sekceA(c)[lang] + (c.adresa[lang] || c.adresa.en) + "/";   // bez vlastní adresy (he zatím) anglická
 export function vyrobStranky({ KOREN, WEB, NAHLED, UI, JAZYKY_WEBU, jmenoTecky, rodinyJ, jazyky: vsechnyJazyky, glottolog, podrobnosti, nazvyZemi, ikona, fontyOdkaz, verze, dny, starovek, sablonaStarovek, stylStarovek, cestySlov }) {
   /* JAZYKY_WEBU: cs, en a další (italština od 2. 10. 2026); jmenoTecky(i, lang) = jméno tečky rejstříku v daném jazyce,
      rodinyJ[lang] = názvy rodin Glottologu. Data dalších jazyků přicházejí z buildu doplněná angličtinou. */
@@ -57,7 +57,7 @@ export function vyrobStranky({ KOREN, WEB, NAHLED, UI, JAZYKY_WEBU, jmenoTecky, 
   const bezRodu = new Set(BEZ_RODU.map(n => glottolog.rodiny.indexOf(n)));
 
   /* adresy stránek; jméno musí být jedinečné */
-  const JAZYK_A = { cs: "/jazyk/", en: "/en/language/", it: "/it/lingua/", de: "/de/sprache/", fr: "/fr/langue/" };
+  const JAZYK_A = { cs: "/jazyk/", en: "/en/language/", it: "/it/lingua/", de: "/de/sprache/", fr: "/fr/langue/", he: "/he/language/" };
   const adresy = Object.fromEntries(JAZYKY_WEBU.map(l => [l, {}]));
   for (const lang of JAZYKY_WEBU) {
     const videno = new Map();
@@ -69,9 +69,9 @@ export function vyrobStranky({ KOREN, WEB, NAHLED, UI, JAZYKY_WEBU, jmenoTecky, 
       adresy[lang][j.id] = JAZYK_A[lang] + s + "/";
     }
   }
-  const prehled = { cs: "/jazyky/", en: "/en/languages/", it: "/it/lingue/", de: "/de/sprachen/", fr: "/fr/langues/" }, oDatech = { cs: "/o-datech/", en: "/en/about-data/", it: "/it/sui-dati/", de: "/de/ueber-die-daten/", fr: "/fr/a-propos-des-donnees/" },
-    kalendarA = { cs: "/kalendar-jazyku/", en: "/en/language-days/", it: "/it/giornate-delle-lingue/", de: "/de/sprachentage/", fr: "/fr/journees-des-langues/" }, navodA = { cs: "/navod/", en: "/en/guide/", it: "/it/guida/", de: "/de/anleitung/", fr: "/fr/guide/" },
-    vitalitaA = { cs: "/vitalita/", en: "/en/vitality/", it: "/it/vitalita/", de: "/de/vitalitaet/", fr: "/fr/vitalite/" }, domov = { cs: "/", en: "/en/", it: "/it/", de: "/de/", fr: "/fr/" };
+  const prehled = { cs: "/jazyky/", en: "/en/languages/", it: "/it/lingue/", de: "/de/sprachen/", fr: "/fr/langues/", he: "/he/languages/" }, oDatech = { cs: "/o-datech/", en: "/en/about-data/", it: "/it/sui-dati/", de: "/de/ueber-die-daten/", fr: "/fr/a-propos-des-donnees/", he: "/he/about-data/" },
+    kalendarA = { cs: "/kalendar-jazyku/", en: "/en/language-days/", it: "/it/giornate-delle-lingue/", de: "/de/sprachentage/", fr: "/fr/journees-des-langues/", he: "/he/language-days/" }, navodA = { cs: "/navod/", en: "/en/guide/", it: "/it/guida/", de: "/de/anleitung/", fr: "/fr/guide/", he: "/he/guide/" },
+    vitalitaA = { cs: "/vitalita/", en: "/en/vitality/", it: "/it/vitalita/", de: "/de/vitalitaet/", fr: "/fr/vitalite/", he: "/he/vitality/" }, domov = { cs: "/", en: "/en/", it: "/it/", de: "/de/", fr: "/fr/", he: "/he/" };
   const proJazyk = (c, l) => !c.jazyky || c.jazyky.includes(l);   // stránka s polem jazyky jen v těch jazycích
   const vse = m => Object.fromEntries(JAZYKY_WEBU.map(l => [l, typeof m === "function" ? m(l) : m[l]]));   // adresy stránky ve všech jazycích
 

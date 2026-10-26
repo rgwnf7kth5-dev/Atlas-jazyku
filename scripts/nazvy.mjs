@@ -35,7 +35,8 @@ const json = p => JSON.parse(fs.readFileSync(path.join(KOREN, p), "utf8"));
 const RUCNE = {
   it: { "Kosovo": "Kosovo", "Somaliland": "Somaliland" },
   de: { "Kosovo": "Kosovo", "Somaliland": "Somaliland" },
-  fr: { "Kosovo": "Kosovo", "Somaliland": "Somaliland" }
+  fr: { "Kosovo": "Kosovo", "Somaliland": "Somaliland" },
+  he: { "Kosovo": "קוסובו", "Somaliland": "סומלילנד" }
 };
 
 // --- glottocode → ISO 639-3 (Glottolog) a ISO 639-1 → 639-3
