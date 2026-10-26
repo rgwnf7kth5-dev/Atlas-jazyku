@@ -27,6 +27,10 @@
    "fr": {
     "nazev": "Qo'noS",
     "popis": "La planète natale des Klingons dans Star Trek."
+   },
+   "he": {
+    "nazev": "Qo'noS",
+    "popis": "כוכב הלכת שממנו באים הקלינגונים ב\"מסע בין כוכבים\"."
    }
   },
   {
@@ -55,6 +59,10 @@
    "fr": {
     "nazev": "Terre du Milieu",
     "popis": "Le monde du Seigneur des anneaux. Tolkien l’imaginait comme notre propre Terre dans un passé lointain inventé."
+   },
+   "he": {
+    "nazev": "הארץ התיכונה",
+    "popis": "העולם של \"שר הטבעות\". טולקין דמיין אותו כארץ שלנו בעבר רחוק ומומצא."
    }
   },
   {
@@ -83,6 +91,10 @@
    "fr": {
     "nazev": "Pandora",
     "popis": "Une lune d’une planète géante proche de l’étoile Alpha du Centaure, patrie des Na'vi dans le film Avatar."
+   },
+   "he": {
+    "nazev": "פנדורה",
+    "popis": "ירח של כוכב לכת ענק ליד הכוכב אלפא קנטאורי, ביתם של הנאבי בסרט \"אווטאר\"."
    }
   },
   {
@@ -111,6 +123,10 @@
    "fr": {
     "nazev": "Essos",
     "popis": "Un continent du monde de Game of Thrones. C’est là que vivent les Dothrakis et que se dressait autrefois Valyria."
+   },
+   "he": {
+    "nazev": "אסוס",
+    "popis": "יבשת בעולם של \"משחקי הכס\". כאן חיים הדותראקים, וכאן עמדה פעם ואליריה."
    }
   }
  ],
@@ -422,14 +438,16 @@
    "en": "Tolkien drew on Finnish when creating Quenya, the language of his Elves.",
    "it": "Tolkien attinse dal finlandese per creare il quenya, la lingua dei suoi Elfi.",
    "de": "Tolkien stützte sich bei der Schaffung des Quenya, der Sprache seiner Elben, auf das Finnische.",
-   "fr": "Tolkien s’est inspiré du finnois pour créer le quenya, la langue de ses Elfes."
+   "fr": "Tolkien s’est inspiré du finnois pour créer le quenya, la langue de ses Elfes.",
+   "he": "טולקין שאב השראה מהפינית כשיצר את הקווניה, שפת האלפים שלו."
   },
   "cy": {
    "cs": "Velštinou se Tolkien inspiroval při tvorbě sindarštiny, dalšího elfského jazyka.",
    "en": "Tolkien drew on Welsh when creating Sindarin, another Elvish language.",
    "it": "Tolkien attinse dal gallese per creare il sindarin, un'altra lingua elfica.",
    "de": "Tolkien stützte sich bei der Schaffung des Sindarin, einer weiteren Elbensprache, auf das Walisische.",
-   "fr": "Tolkien s’est inspiré du gallois pour créer le sindarin, une autre langue elfique."
+   "fr": "Tolkien s’est inspiré du gallois pour créer le sindarin, une autre langue elfique.",
+   "he": "טולקין שאב השראה מהוולשית כשיצר את הסינדארין, שפה אלפית נוספת."
   }
  }
 }

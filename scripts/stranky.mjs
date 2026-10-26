@@ -236,7 +236,7 @@ window.addEventListener("popstate",function(){if(JE.test(location.pathname))nact
   function stranka({ lang, alt, titulek, popis, obrazek, obsah, listek }) {
     const T = UI[lang], S = T.stranky, adresa = alt[lang], predpona = lang === "cs" ? "" : "/en";   // obrázky leží v kořeni; anglická doména je servíruje i pro /it/
     return `<!doctype html>
-<html lang="${lang}">
+<html lang="${lang}"${lang === "he" ? ' dir="rtl"' : ""}>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">

@@ -75,6 +75,10 @@ const pisma = {};
 for (const [k, v] of Object.entries(JSON.parse(cti(`cldr-pisma-${L}.json`)).main[L].localeDisplayNames.scripts))
   if (/^[A-Z][a-z]{3}$/.test(k)) pisma[k] = v;
 
+/* ruční opravy strojových tvarů CLDR (data/nazvy-he-opravy.json: {pisma: {kód: název}, jazyky: {glottocode: název}}) */
+const opravy = path.join(KOREN, `data/nazvy-${L}-opravy.json`);
+if (fs.existsSync(opravy)) { const o = json(`data/nazvy-${L}-opravy.json`); Object.assign(pisma, o.pisma || {}); Object.assign(jazyky, o.jazyky || {}); }
+
 const vystup = { _zdroj: "Unicode CLDR 48.2 (jazyky, písma), i18n-iso-countries 7.14 (státy); scripts/nazvy.mjs", jazyky, staty, zeme, pisma };
 fs.writeFileSync(path.join(KOREN, `data/nazvy-${L}.json`), JSON.stringify(vystup, null, 1) + "\n");
 console.log(`data/nazvy-${L}.json: jazyky ${Object.keys(jazyky).length}, státy ${Object.keys(staty).length}, mapa ${Object.keys(zeme).length}, písma ${Object.keys(pisma).length}`);

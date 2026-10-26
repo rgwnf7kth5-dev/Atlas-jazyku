@@ -9,14 +9,16 @@
     "en": "tea",
     "it": "tè",
     "de": "Tee",
-    "fr": "thé"
+    "fr": "thé",
+    "he": "תה"
    },
    "uvod": {
     "cs": "Čínský znak 茶 se čte různě: severní výslovnost cha se šířila hlavně po souši, kantonská cha po moři do portugalštiny, jihominská te po moři s nizozemskými obchodníky.",
     "en": "The Chinese character 茶 is read in different ways: the northern pronunciation cha spread mainly overland, the Cantonese cha by sea into Portuguese, and the Southern Min te by sea with Dutch traders.",
     "it": "Il carattere cinese 茶 si legge in modi diversi: la pronuncia settentrionale cha si diffuse soprattutto via terra, quella cantonese cha via mare fino al portoghese, e quella min meridionale te via mare con i mercanti olandesi.",
     "de": "Das chinesische Schriftzeichen 茶 wird unterschiedlich gelesen: Die nördliche Aussprache cha verbreitete sich vor allem über Land, die kantonesische cha über das Meer ins Portugiesische und die südliche Min-Aussprache te über das Meer mit niederländischen Händlern.",
-    "fr": "Le caractère chinois 茶 se lit de différentes manières : la prononciation du Nord cha s’est répandue surtout par voie de terre, la prononciation cantonaise cha par mer jusqu’au portugais, et la prononciation min du Sud te par mer avec les marchands néerlandais."
+    "fr": "Le caractère chinois 茶 se lit de différentes manières : la prononciation du Nord cha s’est répandue surtout par voie de terre, la prononciation cantonaise cha par mer jusqu’au portugais, et la prononciation min du Sud te par mer avec les marchands néerlandais.",
+    "he": "את הסימן הסיני 茶 קוראים בדרכים שונות: ההגייה הצפונית cha התפשטה בעיקר ביבשה, ההגייה הקנטונזית cha הגיעה בדרך הים לפורטוגזית, וההגייה te של מין דרומית הגיעה בדרך הים עם סוחרים הולנדים."
    },
    "kroky": [
     {
@@ -28,7 +30,8 @@
       "en": "Chinese (Mandarin)",
       "it": "cinese (mandarino)",
       "de": "Chinesisch (Mandarin)",
-      "fr": "chinois (mandarin)"
+      "fr": "chinois (mandarin)",
+      "he": "סינית (מנדרינית)"
      },
      "tvar": "茶 chá",
      "doba": {
@@ -36,7 +39,8 @@
       "en": "",
       "it": "",
       "de": "",
-      "fr": ""
+      "fr": "",
+      "he": ""
      }
     },
     {
@@ -49,7 +53,8 @@
       "en": "overland through Central Asia",
       "it": "via terra attraverso l'Asia centrale",
       "de": "über Land durch Zentralasien",
-      "fr": "par voie de terre à travers l’Asie centrale"
+      "fr": "par voie de terre à travers l’Asie centrale",
+      "he": "ביבשה, דרך מרכז אסיה"
      }
     },
     {
@@ -62,7 +67,8 @@
       "en": "from Persian",
       "it": "dal persiano",
       "de": "aus dem Persischen",
-      "fr": "du persan"
+      "fr": "du persan",
+      "he": "מפרסית"
      }
     },
     {
@@ -75,7 +81,8 @@
       "en": "from Persian",
       "it": "dal persiano",
       "de": "aus dem Persischen",
-      "fr": "du persan"
+      "fr": "du persan",
+      "he": "מפרסית"
      }
     },
     {
@@ -88,7 +95,8 @@
       "en": "from Persian",
       "it": "dal persiano",
       "de": "aus dem Persischen",
-      "fr": "du persan"
+      "fr": "du persan",
+      "he": "מפרסית"
      }
     },
     {
@@ -101,7 +109,8 @@
       "en": "17th century",
       "it": "XVII secolo",
       "de": "17. Jahrhundert",
-      "fr": "XVIIe siècle"
+      "fr": "XVIIe siècle",
+      "he": "המאה ה-17"
      },
      "jistota": "sporna",
      "pozn": {
@@ -109,7 +118,8 @@
       "en": "the route is disputed: via Persian, Turkic languages or Mongolian",
       "it": "il percorso è controverso: attraverso il persiano, le lingue turche o il mongolo",
       "de": "der Weg ist umstritten: über das Persische, die Turksprachen oder das Mongolische",
-      "fr": "la voie est discutée : par le persan, les langues turques ou le mongol"
+      "fr": "la voie est discutée : par le persan, les langues turques ou le mongol",
+      "he": "הדרך שנויה במחלוקת: דרך הפרסית, השפות הטורקיות או המונגולית"
      }
     },
     {
@@ -122,7 +132,8 @@
       "en": "19th century; earlier thé",
       "it": "XIX secolo; prima thé",
       "de": "19. Jahrhundert; früher thé",
-      "fr": "XIXe siècle ; auparavant thé"
+      "fr": "XIXe siècle ; auparavant thé",
+      "he": "המאה ה-19; קודם לכן thé"
      }
     },
     {
@@ -134,7 +145,8 @@
       "en": "Cantonese",
       "it": "cantonese",
       "de": "Kantonesisch",
-      "fr": "cantonais"
+      "fr": "cantonais",
+      "he": "קנטונזית"
      },
      "tvar": "茶 caa4",
      "doba": {
@@ -142,7 +154,8 @@
       "en": "Canton and Macau",
       "it": "Canton e Macao",
       "de": "Kanton und Macau",
-      "fr": "Canton et Macao"
+      "fr": "Canton et Macao",
+      "he": "קנטון ומקאו"
      }
     },
     {
@@ -155,7 +168,8 @@
       "en": "by sea from Macau, 16th century",
       "it": "via mare da Macao, XVI secolo",
       "de": "über das Meer aus Macau, 16. Jahrhundert",
-      "fr": "par mer depuis Macao, XVIe siècle"
+      "fr": "par mer depuis Macao, XVIe siècle",
+      "he": "בדרך הים ממקאו, המאה ה-16"
      }
     },
     {
@@ -167,7 +181,8 @@
       "en": "Southern Min",
       "it": "min meridionale",
       "de": "Südliches Min",
-      "fr": "min du Sud"
+      "fr": "min du Sud",
+      "he": "מין דרומית"
      },
      "tvar": "茶 tê",
      "doba": {
@@ -175,7 +190,8 @@
       "en": "the port of Xiamen (Amoy)",
       "it": "il porto di Xiamen (Amoy)",
       "de": "der Hafen Xiamen (Amoy)",
-      "fr": "le port de Xiamen (Amoy)"
+      "fr": "le port de Xiamen (Amoy)",
+      "he": "נמל שיאמן (אמוי)"
      }
     },
     {
@@ -188,7 +204,8 @@
       "en": "from Southern Min traders",
       "it": "dai mercanti di lingua min meridionale",
       "de": "von Händlern, die Südliches Min sprachen",
-      "fr": "par les marchands min du Sud"
+      "fr": "par les marchands min du Sud",
+      "he": "מסוחרים דוברי מין דרומית"
      }
     },
     {
@@ -201,14 +218,16 @@
       "en": "17th century",
       "it": "XVII secolo",
       "de": "17. Jahrhundert",
-      "fr": "XVIIe siècle"
+      "fr": "XVIIe siècle",
+      "he": "המאה ה-17"
      },
      "pozn": {
       "cs": "od jihominských nebo malajských obchodníků",
       "en": "from Southern Min or Malay traders",
       "it": "dai mercanti di lingua min meridionale o malese",
       "de": "von Händlern, die Südliches Min oder Malaiisch sprachen",
-      "fr": "par les marchands min du Sud ou malais"
+      "fr": "par les marchands min du Sud ou malais",
+      "he": "מסוחרים דוברי מין דרומית או מלאית"
      }
     },
     {
@@ -221,7 +240,8 @@
       "en": "17th century",
       "it": "XVII secolo",
       "de": "17. Jahrhundert",
-      "fr": "XVIIe siècle"
+      "fr": "XVIIe siècle",
+      "he": "המאה ה-17"
      }
     },
     {
@@ -234,7 +254,8 @@
       "en": "from Dutch",
       "it": "dall'olandese",
       "de": "aus dem Niederländischen",
-      "fr": "du néerlandais"
+      "fr": "du néerlandais",
+      "he": "מהולנדית"
      }
     },
     {
@@ -247,7 +268,8 @@
       "en": "from Dutch",
       "it": "dall'olandese",
       "de": "aus dem Niederländischen",
-      "fr": "du néerlandais"
+      "fr": "du néerlandais",
+      "he": "מהולנדית"
      }
     }
    ]
@@ -260,14 +282,16 @@
     "en": "coffee",
     "it": "caffè",
     "de": "Kaffee",
-    "fr": "café"
+    "fr": "café",
+    "he": "קפה"
    },
    "uvod": {
     "cs": "Arabské slovo qahwa, které dřív označovalo i víno, se do Evropy dostalo přes osmanskou turečtinu.",
     "en": "The Arabic word qahwa, which earlier also meant wine, reached Europe through Ottoman Turkish.",
     "it": "La parola araba qahwa, che in precedenza indicava anche il vino, giunse in Europa attraverso il turco ottomano.",
     "de": "Das arabische Wort qahwa, das früher auch Wein bedeutete, gelangte über das Osmanisch-Türkische nach Europa.",
-    "fr": "Le mot arabe qahwa, qui désignait auparavant aussi le vin, est parvenu en Europe par l’intermédiaire du turc ottoman."
+    "fr": "Le mot arabe qahwa, qui désignait auparavant aussi le vin, est parvenu en Europe par l’intermédiaire du turc ottoman.",
+    "he": "המילה הערבית qahwa, שבעבר ציינה גם יין, הגיעה לאירופה דרך הטורקית העות׳מאנית."
    },
    "kroky": [
     {
@@ -279,7 +303,8 @@
       "en": "Arabic",
       "it": "arabo",
       "de": "Arabisch",
-      "fr": "arabe"
+      "fr": "arabe",
+      "he": "ערבית"
      },
      "tvar": "قهوة qahwa",
      "doba": {
@@ -287,7 +312,8 @@
       "en": "",
       "it": "",
       "de": "",
-      "fr": ""
+      "fr": "",
+      "he": ""
      }
     },
     {
@@ -299,7 +325,8 @@
       "en": "Ottoman Turkish",
       "it": "turco ottomano",
       "de": "Osmanisch-Türkisch",
-      "fr": "turc ottoman"
+      "fr": "turc ottoman",
+      "he": "טורקית עות׳מאנית"
      },
      "tvar": "قهوه kahve",
      "doba": {
@@ -307,7 +334,8 @@
       "en": "from Arabic",
       "it": "dall'arabo",
       "de": "aus dem Arabischen",
-      "fr": "de l’arabe"
+      "fr": "de l’arabe",
+      "he": "מערבית"
      }
     },
     {
@@ -320,7 +348,8 @@
       "en": "from Turkish",
       "it": "dal turco",
       "de": "aus dem Türkischen",
-      "fr": "du turc"
+      "fr": "du turc",
+      "he": "מטורקית"
      }
     },
     {
@@ -333,7 +362,8 @@
       "en": "from Italian, 17th century",
       "it": "dall'italiano, XVII secolo",
       "de": "aus dem Italienischen, 17. Jahrhundert",
-      "fr": "de l’italien, XVIIe siècle"
+      "fr": "de l’italien, XVIIe siècle",
+      "he": "מאיטלקית, המאה ה-17"
      }
     },
     {
@@ -346,14 +376,16 @@
       "en": "17th century",
       "it": "XVII secolo",
       "de": "17. Jahrhundert",
-      "fr": "XVIIe siècle"
+      "fr": "XVIIe siècle",
+      "he": "המאה ה-17"
      },
      "pozn": {
       "cs": "z francouzského café, vedle toho i z anglického coffee; do 18. století se psalo Kaffee i Koffee",
       "en": "from French café, alongside English coffee; Kaffee and Koffee coexisted until the 18th century",
       "it": "dal francese café, accanto all'inglese coffee; Kaffee e Koffee convissero fino al XVIII secolo",
       "de": "aus französisch café, neben englisch coffee; Kaffee und Koffee bestanden bis ins 18. Jahrhundert nebeneinander",
-      "fr": "du français café, à côté de l’anglais coffee ; Kaffee et Koffee ont coexisté jusqu’au XVIIIe siècle"
+      "fr": "du français café, à côté de l’anglais coffee ; Kaffee et Koffee ont coexisté jusqu’au XVIIIe siècle",
+      "he": "מ-café הצרפתית, לצד coffee האנגלית; Kaffee ו-Koffee התקיימו זו לצד זו עד המאה ה-18"
      }
     },
     {
@@ -366,7 +398,8 @@
       "en": "from Turkish",
       "it": "dal turco",
       "de": "aus dem Türkischen",
-      "fr": "du turc"
+      "fr": "du turc",
+      "he": "מטורקית"
      }
     },
     {
@@ -379,14 +412,16 @@
       "en": "National Revival, established 1812–1830; earlier kafe from German",
       "it": "Rinascita nazionale, si affermò nel 1812–1830; prima kafe dal tedesco",
       "de": "tschechische nationale Wiedergeburt, durchgesetzt 1812–1830; früher kafe aus dem Deutschen",
-      "fr": "Renaissance nationale, fixé entre 1812 et 1830 ; auparavant kafe, de l’allemand"
+      "fr": "Renaissance nationale, fixé entre 1812 et 1830 ; auparavant kafe, de l’allemand",
+      "he": "תקופת התחייה הלאומית, התקבעה ב-1812–1830; קודם לכן kafe, מגרמנית"
      },
      "pozn": {
       "cs": "obrozenci nahradili kafe podle polského kawa (uvádí se i srbochorvatské kava)",
       "en": "Revival writers replaced kafe after Polish kawa (Serbo-Croatian kava is also cited)",
       "it": "gli scrittori della Rinascita nazionale sostituirono kafe sul modello del polacco kawa (si cita anche il serbo-croato kava)",
       "de": "die Autoren der Wiedergeburt ersetzten kafe nach polnisch kawa (genannt wird auch serbokroatisch kava)",
-      "fr": "les écrivains de la Renaissance nationale ont remplacé kafe d’après le polonais kawa (on cite aussi le serbo-croate kava)"
+      "fr": "les écrivains de la Renaissance nationale ont remplacé kafe d’après le polonais kawa (on cite aussi le serbo-croate kava)",
+      "he": "סופרי התחייה החליפו את kafe בהשראת kawa הפולנית (מוזכרת גם kava הסרבו-קרואטית)"
      },
      "jistota": "sporna"
     },
@@ -400,14 +435,16 @@
       "en": "17th century",
       "it": "XVII secolo",
       "de": "17. Jahrhundert",
-      "fr": "XVIIe siècle"
+      "fr": "XVIIe siècle",
+      "he": "המאה ה-17"
      },
      "pozn": {
       "cs": "z osmanské turečtiny; jiný výklad počítá i s přímým vlivem arabštiny z námořního obchodu s Jemenem",
       "en": "from Ottoman Turkish; another view allows direct Arabic influence via the sea trade with Yemen",
       "it": "dal turco ottomano; secondo un'altra opinione è possibile un influsso arabo diretto attraverso il commercio marittimo con lo Yemen",
       "de": "aus dem Osmanisch-Türkischen; eine andere Auffassung hält direkten arabischen Einfluss über den Seehandel mit dem Jemen für möglich",
-      "fr": "du turc ottoman ; une autre hypothèse admet une influence arabe directe par le commerce maritime avec le Yémen"
+      "fr": "du turc ottoman ; une autre hypothèse admet une influence arabe directe par le commerce maritime avec le Yémen",
+      "he": "מטורקית עות׳מאנית; לפי דעה אחרת ייתכנה גם השפעה ערבית ישירה דרך סחר הים עם תימן"
      }
     },
     {
@@ -420,7 +457,8 @@
       "en": "1582, from Dutch",
       "it": "1582, dall'olandese",
       "de": "1582, aus dem Niederländischen",
-      "fr": "1582, du néerlandais"
+      "fr": "1582, du néerlandais",
+      "he": "1582, מהולנדית"
      }
     }
    ]
@@ -433,14 +471,16 @@
     "en": "sugar",
     "it": "zucchero",
     "de": "Zucker",
-    "fr": "sucre"
+    "fr": "sucre",
+    "he": "סוכר"
    },
    "uvod": {
     "cs": "Sanskrtské śarkarā, ‚drcený či krystalický cukr‘, putovalo s pěstováním a obchodem přes Persii a arabský svět do Evropy.",
     "en": "Sanskrit śarkarā, ‘ground or candied sugar’, travelled with cultivation and trade through Persia and the Arab world to Europe.",
     "it": "Il sanscrito śarkarā, ‘zucchero macinato o candito’, viaggiò con la coltivazione e il commercio attraverso la Persia e il mondo arabo fino all'Europa.",
     "de": "Sanskrit śarkarā, „gemahlener oder kandierter Zucker“, wanderte mit Anbau und Handel über Persien und die arabische Welt nach Europa.",
-    "fr": "Le sanskrit śarkarā, « sucre moulu ou candi », a voyagé, avec la culture et le commerce du sucre, à travers la Perse et le monde arabe jusqu’en Europe."
+    "fr": "Le sanskrit śarkarā, « sucre moulu ou candi », a voyagé, avec la culture et le commerce du sucre, à travers la Perse et le monde arabe jusqu’en Europe.",
+    "he": "המילה הסנסקריטית śarkarā, \"סוכר טחון או מגובש\", נדדה עם הגידול והמסחר דרך פרס והעולם הערבי לאירופה."
    },
    "kroky": [
     {
@@ -453,7 +493,8 @@
       "en": "",
       "it": "",
       "de": "",
-      "fr": ""
+      "fr": "",
+      "he": ""
      }
     },
     {
@@ -465,7 +506,8 @@
       "en": "Persian",
       "it": "persiano",
       "de": "Persisch",
-      "fr": "persan"
+      "fr": "persan",
+      "he": "פרסית"
      },
      "tvar": "شکر šakar",
      "doba": {
@@ -473,7 +515,8 @@
       "en": "from Sanskrit",
       "it": "dal sanscrito",
       "de": "aus dem Sanskrit",
-      "fr": "du sanskrit"
+      "fr": "du sanskrit",
+      "he": "מסנסקריט"
      }
     },
     {
@@ -485,7 +528,8 @@
       "en": "Arabic",
       "it": "arabo",
       "de": "Arabisch",
-      "fr": "arabe"
+      "fr": "arabe",
+      "he": "ערבית"
      },
      "tvar": "سكر sukkar",
      "doba": {
@@ -493,7 +537,8 @@
       "en": "from Persian",
       "it": "dal persiano",
       "de": "aus dem Persischen",
-      "fr": "du persan"
+      "fr": "du persan",
+      "he": "מפרסית"
      }
     },
     {
@@ -505,7 +550,8 @@
       "en": "Medieval Latin and Italian",
       "it": "latino medievale e italiano",
       "de": "Mittellatein und Italienisch",
-      "fr": "latin médiéval et italien"
+      "fr": "latin médiéval et italien",
+      "he": "לטינית של ימי הביניים ואיטלקית"
      },
      "tvar": "succarum, zucchero",
      "doba": {
@@ -513,7 +559,8 @@
       "en": "from Arabic",
       "it": "dall'arabo",
       "de": "aus dem Arabischen",
-      "fr": "de l’arabe"
+      "fr": "de l’arabe",
+      "he": "מערבית"
      }
     },
     {
@@ -526,7 +573,8 @@
       "en": "from Italian",
       "it": "dall'italiano",
       "de": "aus dem Italienischen",
-      "fr": "de l’italien"
+      "fr": "de l’italien",
+      "he": "מאיטלקית"
      }
     },
     {
@@ -539,7 +587,8 @@
       "en": "from German",
       "it": "dal tedesco",
       "de": "aus dem Deutschen",
-      "fr": "de l’allemand"
+      "fr": "de l’allemand",
+      "he": "מגרמנית"
      }
     }
    ]
@@ -552,14 +601,16 @@
     "en": "orange",
     "it": "arancia",
     "de": "Orange",
-    "fr": "orange"
+    "fr": "orange",
+    "he": "תפוז"
    },
    "uvod": {
     "cs": "Sanskrtské nāraṅga je patrně přejaté z drávidského jazyka. Arabské nāranj dalo italské arancia a francouzské orange; české pomeranč je z němčiny, ze středolatinského pomerancia (pōmum ‚ovoce, jablko‘ + arancia).",
     "en": "Sanskrit nāraṅga was probably borrowed from a Dravidian language. Arabic nāranj gave Italian arancia and French orange; Czech pomeranč comes through German, from Medieval Latin pomerancia (pōmum ‘fruit, apple’ + arancia).",
     "it": "Il sanscrito nāraṅga fu probabilmente preso in prestito da una lingua dravidica. L'arabo nāranj diede l'italiano arancia e il francese orange; il ceco pomeranč viene attraverso il tedesco dal latino medievale pomerancia (pōmum ‘frutto, mela’ + arancia).",
     "de": "Sanskrit nāraṅga wurde wahrscheinlich aus einer drawidischen Sprache entlehnt. Arabisch nāranj ergab italienisch arancia und französisch orange; tschechisch pomeranč kam über das Deutsche aus mittellateinisch pomerancia (pōmum „Frucht, Apfel“ + arancia).",
-    "fr": "Le sanskrit nāraṅga a probablement été emprunté à une langue dravidienne. L’arabe nāranj a donné l’italien arancia et le français orange ; le tchèque pomeranč vient de l’allemand, du latin médiéval pomerancia (pōmum « fruit, pomme » + arancia)."
+    "fr": "Le sanskrit nāraṅga a probablement été emprunté à une langue dravidienne. L’arabe nāranj a donné l’italien arancia et le français orange ; le tchèque pomeranč vient de l’allemand, du latin médiéval pomerancia (pōmum « fruit, pomme » + arancia).",
+    "he": "המילה הסנסקריטית nāraṅga נשאלה כנראה משפה דראווידית. מ-nāranj הערבית באו arancia האיטלקית ו-orange הצרפתית; pomeranč הצ׳כית הגיעה דרך הגרמנית, מ-pomerancia של לטינית ימי הביניים (pōmum, \"פרי, תפוח\" + arancia)."
    },
    "kroky": [
     {
@@ -571,7 +622,8 @@
       "en": "a Dravidian language (perhaps Tamil or Telugu)",
       "it": "una lingua dravidica (forse tamil o telugu)",
       "de": "eine drawidische Sprache (vielleicht Tamil oder Telugu)",
-      "fr": "une langue dravidienne (peut-être le tamoul ou le télougou)"
+      "fr": "une langue dravidienne (peut-être le tamoul ou le télougou)",
+      "he": "שפה דראווידית (אולי טמילית או טלוגו)"
      },
      "tvar": "?",
      "doba": {
@@ -579,7 +631,8 @@
       "en": "",
       "it": "",
       "de": "",
-      "fr": ""
+      "fr": "",
+      "he": ""
      }
     },
     {
@@ -592,7 +645,8 @@
       "en": "",
       "it": "",
       "de": "",
-      "fr": ""
+      "fr": "",
+      "he": ""
      },
      "jistota": "sporna",
      "pozn": {
@@ -600,7 +654,8 @@
       "en": "a Dravidian origin is likely but not certain",
       "it": "l'origine dravidica è probabile ma non certa",
       "de": "eine drawidische Herkunft ist wahrscheinlich, aber nicht sicher",
-      "fr": "une origine dravidienne est probable, mais non certaine"
+      "fr": "une origine dravidienne est probable, mais non certaine",
+      "he": "מוצא דראווידי סביר, אך לא ודאי"
      }
     },
     {
@@ -612,7 +667,8 @@
       "en": "Persian",
       "it": "persiano",
       "de": "Persisch",
-      "fr": "persan"
+      "fr": "persan",
+      "he": "פרסית"
      },
      "tvar": "نارنگ nārang",
      "doba": {
@@ -620,7 +676,8 @@
       "en": "from Sanskrit",
       "it": "dal sanscrito",
       "de": "aus dem Sanskrit",
-      "fr": "du sanskrit"
+      "fr": "du sanskrit",
+      "he": "מסנסקריט"
      }
     },
     {
@@ -632,7 +689,8 @@
       "en": "Arabic",
       "it": "arabo",
       "de": "Arabisch",
-      "fr": "arabe"
+      "fr": "arabe",
+      "he": "ערבית"
      },
      "tvar": "نارنج nāranj",
      "doba": {
@@ -640,7 +698,8 @@
       "en": "from Persian",
       "it": "dal persiano",
       "de": "aus dem Persischen",
-      "fr": "du persan"
+      "fr": "du persan",
+      "he": "מפרסית"
      }
     },
     {
@@ -653,7 +712,8 @@
       "en": "from Arabic",
       "it": "dall'arabo",
       "de": "aus dem Arabischen",
-      "fr": "de l’arabe"
+      "fr": "de l’arabe",
+      "he": "מערבית"
      }
     },
     {
@@ -666,7 +726,8 @@
       "en": "the initial n- was lost",
       "it": "la n- iniziale cadde",
       "de": "das anlautende n- ging verloren",
-      "fr": "le n- initial a disparu"
+      "fr": "le n- initial a disparu",
+      "he": "ה-n- שבתחילת המילה נשמטה"
      }
     },
     {
@@ -679,14 +740,16 @@
       "en": "c. 1200 pome d'orenge, a calque of Italian melarancia",
       "it": "circa 1200 pome d'orenge, calco dell'italiano melarancia",
       "de": "um 1200 pome d'orenge, eine Lehnübersetzung von italienisch melarancia",
-      "fr": "vers 1200 pome d’orenge, calque de l’italien melarancia"
+      "fr": "vers 1200 pome d’orenge, calque de l’italien melarancia",
+      "he": "בערך 1200 pome d'orenge, תרגום שאילה של melarancia האיטלקית"
      },
      "pozn": {
       "cs": "o- snad podle města Orange nebo okcitánského auranja",
       "en": "the o- perhaps after the town of Orange or Old Occitan auranja",
       "it": "la o- forse per influsso della città di Orange o dell'antico occitano auranja",
       "de": "das o- vielleicht nach der Stadt Orange oder altokzitanisch auranja",
-      "fr": "le o- peut-être d’après la ville d’Orange ou l’ancien occitan auranja"
+      "fr": "le o- peut-être d’après la ville d’Orange ou l’ancien occitan auranja",
+      "he": "ה-o- אולי בהשפעת העיר אורנז׳ או auranja של האוקסיטנית העתיקה"
      }
     },
     {
@@ -699,14 +762,16 @@
       "en": "15th century, from Medieval Latin pomerancia (Latin pōmum ‘fruit, apple’ + arancia)",
       "it": "XV secolo, dal latino medievale pomerancia (latino pōmum ‘frutto, mela’ + arancia)",
       "de": "15. Jahrhundert, aus mittellateinisch pomerancia (lateinisch pōmum „Frucht, Apfel“ + arancia)",
-      "fr": "XVe siècle, du latin médiéval pomerancia (latin pōmum « fruit, pomme » + arancia)"
+      "fr": "XVe siècle, du latin médiéval pomerancia (latin pōmum « fruit, pomme » + arancia)",
+      "he": "המאה ה-15, מ-pomerancia של לטינית ימי הביניים (pōmum הלטינית, \"פרי, תפוח\" + arancia)"
      },
      "pozn": {
       "cs": "hořký pomeranč (Citrus aurantium)",
       "en": "the bitter orange (Citrus aurantium)",
       "it": "l'arancio amaro (Citrus aurantium)",
       "de": "die Bitterorange (Citrus aurantium)",
-      "fr": "l’orange amère (Citrus aurantium)"
+      "fr": "l’orange amère (Citrus aurantium)",
+      "he": "התפוז המר (Citrus aurantium)"
      }
     },
     {
@@ -719,7 +784,8 @@
       "en": "from German",
       "it": "dal tedesco",
       "de": "aus dem Deutschen",
-      "fr": "de l’allemand"
+      "fr": "de l’allemand",
+      "he": "מגרמנית"
      }
     }
    ]
@@ -732,14 +798,16 @@
     "en": "robot",
     "it": "robot",
     "de": "Roboter",
-    "fr": "robot"
+    "fr": "robot",
+    "he": "רובוט"
    },
    "uvod": {
     "cs": "Slovo robot poprvé zaznělo ve hře Karla Čapka R.U.R. (1920, premiéra 1921); podle Karla Čapka ho navrhl bratr Josef. Do světa se rozšířilo s překlady a inscenacemi hry.",
     "en": "The word robot first appeared in Karel Čapek’s play R.U.R. (1920, premiered 1921); according to Karel Čapek, his brother Josef suggested it. It spread with translations and productions of the play.",
     "it": "La parola robot comparve per la prima volta nel dramma R.U.R. di Karel Čapek (1920, prima rappresentazione 1921); secondo Karel Čapek gliela suggerì il fratello Josef. Si diffuse con le traduzioni e le messe in scena del dramma.",
     "de": "Das Wort robot erschien zuerst in Karel Čapeks Drama R.U.R. (1920, uraufgeführt 1921); nach Karel Čapek schlug es sein Bruder Josef vor. Es verbreitete sich mit den Übersetzungen und Inszenierungen des Stücks.",
-    "fr": "Le mot robot est apparu pour la première fois dans la pièce R.U.R. de Karel Čapek (1920, créée en 1921) ; selon Karel Čapek, c’est son frère Josef qui le lui a suggéré. Il s’est répandu avec les traductions et les mises en scène de la pièce."
+    "fr": "Le mot robot est apparu pour la première fois dans la pièce R.U.R. de Karel Čapek (1920, créée en 1921) ; selon Karel Čapek, c’est son frère Josef qui le lui a suggéré. Il s’est répandu avec les traductions et les mises en scène de la pièce.",
+    "he": "המילה robot הופיעה לראשונה במחזה R.U.R. של קארל צ׳אפק (1920, הוצג לראשונה ב-1921); לדברי קארל צ׳אפק, את המילה הציע אחיו יוזף. היא התפשטה עם התרגומים וההפקות של המחזה."
    },
    "kroky": [
     {
@@ -752,7 +820,8 @@
       "en": "R.U.R., 1920",
       "it": "R.U.R., 1920",
       "de": "R.U.R., 1920",
-      "fr": "R.U.R., 1920"
+      "fr": "R.U.R., 1920",
+      "he": "R.U.R., 1920"
      }
     },
     {
@@ -765,7 +834,8 @@
       "en": "New York 1922, London 1923",
       "it": "New York 1922, Londra 1923",
       "de": "New York 1922, London 1923",
-      "fr": "New York 1922, Londres 1923"
+      "fr": "New York 1922, Londres 1923",
+      "he": "ניו יורק 1922, לונדון 1923"
      }
     },
     {
@@ -778,7 +848,8 @@
       "en": "1922, Otto Pick’s translation (suffix -er)",
       "it": "1922, traduzione di Otto Pick (suffisso -er)",
       "de": "1922, Übersetzung von Otto Pick (Suffix -er)",
-      "fr": "1922, traduction d’Otto Pick (suffixe -er)"
+      "fr": "1922, traduction d’Otto Pick (suffixe -er)",
+      "he": "1922, בתרגומו של אוטו פיק (הסיומת -er)"
      }
     },
     {
@@ -791,7 +862,8 @@
       "en": "1924, Paris production (Hanuš Jelínek’s translation)",
       "it": "1924, messa in scena parigina (traduzione di Hanuš Jelínek)",
       "de": "1924, Pariser Inszenierung (Übersetzung von Hanuš Jelínek)",
-      "fr": "1924, mise en scène parisienne (traduction de Hanuš Jelínek)"
+      "fr": "1924, mise en scène parisienne (traduction de Hanuš Jelínek)",
+      "he": "1924, ההפקה בפריז (בתרגומו של האנוש ילינק)"
      }
     },
     {
@@ -804,7 +876,8 @@
       "en": "",
       "it": "",
       "de": "",
-      "fr": ""
+      "fr": "",
+      "he": ""
      }
     }
    ]
@@ -817,14 +890,16 @@
     "en": "dollar",
     "it": "dollaro",
     "de": "Dollar",
-    "fr": "dollar"
+    "fr": "dollar",
+    "he": "דולר"
    },
    "uvod": {
     "cs": "Stříbrné mince z Jáchymova (Joachimsthal) se od let 1519–1520 jmenovaly Joachimsthaler, zkráceně Taler. Slovo je německé, ale pochází z Čech.",
     "en": "The silver coins of Jáchymov (Joachimsthal) were called Joachimsthaler, short Taler, from 1519–1520. The word is German, but it comes from Bohemia.",
     "it": "Le monete d'argento di Jáchymov (Joachimsthal) si chiamavano dal 1519–1520 Joachimsthaler, in forma abbreviata Taler. La parola è tedesca, ma viene dalla Boemia.",
     "de": "Die Silbermünzen aus Jáchymov (Joachimsthal) hießen ab 1519–1520 Joachimsthaler, kurz Taler. Das Wort ist deutsch, stammt aber aus Böhmen.",
-    "fr": "Les pièces d’argent de Jáchymov (Joachimsthal) étaient appelées Joachimsthaler, en abrégé Taler, à partir de 1519–1520. Le mot est allemand, mais il vient de Bohême."
+    "fr": "Les pièces d’argent de Jáchymov (Joachimsthal) étaient appelées Joachimsthaler, en abrégé Taler, à partir de 1519–1520. Le mot est allemand, mais il vient de Bohême.",
+    "he": "מטבעות הכסף של יאכימוב (Joachimsthal) נקראו מ-1519–1520 Joachimsthaler, ובקיצור Taler. המילה גרמנית, אבל מקורה בבוהמיה."
    },
    "kroky": [
     {
@@ -836,7 +911,8 @@
       "en": "German (Jáchymov in Bohemia)",
       "it": "tedesco (Jáchymov in Boemia)",
       "de": "Deutsch (Jáchymov in Böhmen)",
-      "fr": "allemand (Jáchymov, en Bohême)"
+      "fr": "allemand (Jáchymov, en Bohême)",
+      "he": "גרמנית (יאכימוב שבבוהמיה)"
      },
      "tvar": "Joachimsthaler, Taler",
      "doba": {
@@ -844,7 +920,8 @@
       "en": "coin from 1519–1520, short form Taler from the 1530s",
       "it": "moneta dal 1519–1520, forma abbreviata Taler dagli anni Trenta del Cinquecento",
       "de": "Münze ab 1519–1520, Kurzform Taler ab den 1530er-Jahren",
-      "fr": "pièce frappée à partir de 1519–1520, forme abrégée Taler à partir des années 1530"
+      "fr": "pièce frappée à partir de 1519–1520, forme abrégée Taler à partir des années 1530",
+      "he": "המטבע מ-1519–1520, הצורה המקוצרת Taler משנות ה-30 של המאה ה-16"
      }
     },
     {
@@ -857,7 +934,8 @@
       "en": "",
       "it": "",
       "de": "",
-      "fr": ""
+      "fr": "",
+      "he": ""
      }
     },
     {
@@ -870,7 +948,8 @@
       "en": "",
       "it": "",
       "de": "",
-      "fr": ""
+      "fr": "",
+      "he": ""
      }
     },
     {
@@ -882,7 +961,8 @@
       "en": "Low German",
       "it": "basso tedesco",
       "de": "Niederdeutsch",
-      "fr": "bas allemand"
+      "fr": "bas allemand",
+      "he": "גרמנית תחתית"
      },
      "tvar": "daler",
      "doba": {
@@ -890,7 +970,8 @@
       "en": "16th century",
       "it": "XVI secolo",
       "de": "16. Jahrhundert",
-      "fr": "XVIe siècle"
+      "fr": "XVIe siècle",
+      "he": "המאה ה-16"
      }
     },
     {
@@ -903,14 +984,16 @@
       "en": "daler c. 1550, dollar c. 1600; in the USA from 1785",
       "it": "daler circa 1550, dollar circa 1600; negli Stati Uniti dal 1785",
       "de": "daler um 1550, dollar um 1600; in den USA ab 1785",
-      "fr": "daler vers 1550, dollar vers 1600 ; aux États-Unis à partir de 1785"
+      "fr": "daler vers 1550, dollar vers 1600 ; aux États-Unis à partir de 1785",
+      "he": "daler בערך 1550, dollar בערך 1600; בארה״ב מ-1785"
      },
      "pozn": {
       "cs": "z dolnoněmeckého nebo vlámského daler",
       "en": "from Low German or early Flemish daler",
       "it": "dal basso tedesco o dal primo fiammingo daler",
       "de": "aus niederdeutsch oder frühflämisch daler",
-      "fr": "du bas allemand ou du flamand ancien daler"
+      "fr": "du bas allemand ou du flamand ancien daler",
+      "he": "מ-daler של הגרמנית התחתית או של הפלמית המוקדמת"
      }
     }
    ]
@@ -923,14 +1006,16 @@
     "en": "chocolate",
     "it": "cioccolato",
     "de": "Schokolade",
-    "fr": "chocolat"
+    "fr": "chocolat",
+    "he": "שוקולד"
    },
    "uvod": {
     "cs": "Španělské chocolate je doložené od roku 1579 a s nápojem se v 17. století rozšířilo po Evropě. Odkud Španělé slovo vzali, je sporné: v raných textech se aztécký kakaový nápoj jmenuje cacahuatl ‚kakaová voda‘, ne chocolatl. Do češtiny slovo přišlo nejspíš z italštiny, nejstarší doklady mají tvar čokolata.",
     "en": "Spanish chocolate is attested from 1579 and spread across Europe with the drink in the 17th century. Where the Spaniards got the word is disputed: early texts call the Aztec cacao drink cacahuatl, ‘cacao water’, not chocolatl. Czech probably took the word from Italian; the earliest records have the form čokolata.",
     "it": "Lo spagnolo chocolate è attestato dal 1579 e nel XVII secolo si diffuse in Europa insieme alla bevanda. Da dove gli spagnoli abbiano preso la parola è controverso: i primi testi chiamano la bevanda azteca di cacao cacahuatl, ‘acqua di cacao’, non chocolatl. Il ceco prese la parola probabilmente dall'italiano; le attestazioni più antiche hanno la forma čokolata.",
     "de": "Spanisch chocolate ist ab 1579 belegt und verbreitete sich im 17. Jahrhundert mit dem Getränk in ganz Europa. Woher die Spanier das Wort hatten, ist umstritten: Frühe Texte nennen das aztekische Kakaogetränk cacahuatl, „Kakaowasser“, nicht chocolatl. Das Tschechische übernahm das Wort wahrscheinlich aus dem Italienischen; die frühesten Belege haben die Form čokolata.",
-    "fr": "L’espagnol chocolate est attesté à partir de 1579 et s’est répandu dans toute l’Europe avec la boisson au XVIIe siècle. La provenance du mot chez les Espagnols est discutée : les premiers textes appellent la boisson aztèque au cacao cacahuatl, « eau de cacao », et non chocolatl. Le tchèque a probablement emprunté le mot à l’italien ; les plus anciennes attestations présentent la forme čokolata."
+    "fr": "L’espagnol chocolate est attesté à partir de 1579 et s’est répandu dans toute l’Europe avec la boisson au XVIIe siècle. La provenance du mot chez les Espagnols est discutée : les premiers textes appellent la boisson aztèque au cacao cacahuatl, « eau de cacao », et non chocolatl. Le tchèque a probablement emprunté le mot à l’italien ; les plus anciennes attestations présentent la forme čokolata.",
+    "he": "המילה הספרדית chocolate מתועדת מ-1579, והתפשטה ברחבי אירופה יחד עם המשקה במאה ה-17. מהיכן לקחו אותה הספרדים שנוי במחלוקת: הטקסטים המוקדמים קוראים למשקה הקקאו של האצטקים cacahuatl, \"מי קקאו\", ולא chocolatl. הצ׳כית קיבלה את המילה כנראה מהאיטלקית; ברישומים המוקדמים ביותר מופיעה הצורה čokolata."
    },
    "kroky": [
     {
@@ -942,7 +1027,8 @@
       "en": "Nahuatl or Nawat",
       "it": "nahuatl o nawat",
       "de": "Nahuatl oder Nawat",
-      "fr": "nahuatl ou nawat"
+      "fr": "nahuatl ou nawat",
+      "he": "נאוואטל או נאוואט"
      },
      "tvar": "chocolatl?",
      "doba": {
@@ -950,14 +1036,16 @@
       "en": "Mexico and Central America",
       "it": "Messico e America centrale",
       "de": "Mexiko und Mittelamerika",
-      "fr": "Mexique et Amérique centrale"
+      "fr": "Mexique et Amérique centrale",
+      "he": "מקסיקו ומרכז אמריקה"
      },
      "pozn": {
       "cs": "původ je sporný: tvar chocolatl v raných nahuatlských textech chybí; navrhuje se hypotetické xocoatl ‚hořký nápoj‘ (podle Michaela a Sophie Coeových nepravděpodobné) nebo nawatské chikola:tl nejasného významu",
       "en": "the origin is disputed: the form chocolatl is missing from early Nahuatl texts; proposals include a hypothetical xocoatl ‘bitter drink’ (unlikely according to Michael and Sophie Coe) or Nawat chikola:tl of unclear meaning",
       "it": "l'origine è controversa: la forma chocolatl manca nei primi testi in nahuatl; tra le proposte figurano un ipotetico xocoatl ‘bevanda amara’ (improbabile secondo Michael e Sophie Coe) o il nawat chikola:tl, di significato poco chiaro",
       "de": "die Herkunft ist umstritten: Die Form chocolatl fehlt in frühen Nahuatl-Texten; vorgeschlagen werden u. a. ein hypothetisches xocoatl „bitteres Getränk“ (nach Michael und Sophie Coe unwahrscheinlich) oder Nawat chikola:tl unklarer Bedeutung",
-      "fr": "l’origine est discutée : la forme chocolatl est absente des premiers textes en nahuatl ; on a proposé un hypothétique xocoatl « boisson amère » (peu vraisemblable selon Michael et Sophie Coe) ou le nawat chikola:tl, de sens obscur"
+      "fr": "l’origine est discutée : la forme chocolatl est absente des premiers textes en nahuatl ; on a proposé un hypothétique xocoatl « boisson amère » (peu vraisemblable selon Michael et Sophie Coe) ou le nawat chikola:tl, de sens obscur",
+      "he": "המוצא שנוי במחלוקת: הצורה chocolatl חסרה בטקסטים המוקדמים בנאוואטל; בין ההצעות xocoatl היפותטית, \"משקה מר\" (לא סביר לדעת מייקל וסופי קו), או chikola:tl בנאוואט, שמשמעותה אינה ברורה"
      },
      "jistota": "sporna"
     },
@@ -971,7 +1059,8 @@
       "en": "attested 1579",
       "it": "attestato nel 1579",
       "de": "belegt 1579",
-      "fr": "attesté en 1579"
+      "fr": "attesté en 1579",
+      "he": "מתועד ב-1579"
      }
     },
     {
@@ -984,7 +1073,8 @@
       "en": "1604, translation of Acosta’s Natural and Moral History of the Indies",
       "it": "1604, traduzione della Historia natural y moral de las Indias di Acosta",
       "de": "1604, Übersetzung von Acostas Natural and Moral History of the Indies",
-      "fr": "1604, traduction de l’Histoire naturelle et morale des Indes d’Acosta"
+      "fr": "1604, traduction de l’Histoire naturelle et morale des Indes d’Acosta",
+      "he": "1604, בתרגום ספרו של אקוסטה \"ההיסטוריה הטבעית והמוסרית של הודו\""
      }
     },
     {
@@ -997,7 +1087,8 @@
       "en": "from Spanish",
       "it": "dallo spagnolo",
       "de": "aus dem Spanischen",
-      "fr": "de l’espagnol"
+      "fr": "de l’espagnol",
+      "he": "מספרדית"
      }
     },
     {
@@ -1010,7 +1101,8 @@
       "en": "from Spanish",
       "it": "dallo spagnolo",
       "de": "aus dem Spanischen",
-      "fr": "de l’espagnol"
+      "fr": "de l’espagnol",
+      "he": "מספרדית"
      }
     },
     {
@@ -1023,7 +1115,8 @@
       "en": "from Spanish",
       "it": "dallo spagnolo",
       "de": "aus dem Spanischen",
-      "fr": "de l’espagnol"
+      "fr": "de l’espagnol",
+      "he": "מספרדית"
      }
     },
     {
@@ -1036,14 +1129,16 @@
       "en": "17th century",
       "it": "XVII secolo",
       "de": "17. Jahrhundert",
-      "fr": "XVIIe siècle"
+      "fr": "XVIIe siècle",
+      "he": "המאה ה-17"
      },
      "pozn": {
       "cs": "podle Klugeho z nizozemského chocolade; nejstarší německé doklady kolísají (Chocolate, Schockolata)",
       "en": "according to Kluge from Dutch chocolade; the earliest German forms vary (Chocolate, Schockolata)",
       "it": "secondo Kluge dall'olandese chocolade; le prime forme tedesche variano (Chocolate, Schockolata)",
       "de": "nach Kluge aus niederländisch chocolade; die frühesten deutschen Formen schwanken (Chocolate, Schockolata)",
-      "fr": "selon Kluge, du néerlandais chocolade ; les plus anciennes formes allemandes varient (Chocolate, Schockolata)"
+      "fr": "selon Kluge, du néerlandais chocolade ; les plus anciennes formes allemandes varient (Chocolate, Schockolata)",
+      "he": "לפי קלוגה (Kluge) מ-chocolade ההולנדית; הצורות הגרמניות המוקדמות ביותר משתנות (Chocolate, Schockolata)"
      },
      "jistota": "sporna"
     },
@@ -1057,14 +1152,16 @@
       "en": "17th century",
       "it": "XVII secolo",
       "de": "17. Jahrhundert",
-      "fr": "XVIIe siècle"
+      "fr": "XVIIe siècle",
+      "he": "המאה ה-17"
      },
      "pozn": {
       "cs": "nejstarší doklady mají tvar čokolata a č- ukazuje na italské cioccolata; podoba s š- přišla později z němčiny",
       "en": "the earliest records have the form čokolata, and the č- points to Italian cioccolata; a form with š- came later from German",
       "it": "le attestazioni più antiche hanno la forma čokolata, e la č- rimanda all'italiano cioccolata; una forma con š- giunse più tardi dal tedesco",
       "de": "die frühesten Belege haben die Form čokolata, und das č- weist auf italienisch cioccolata; eine Form mit š- kam später aus dem Deutschen",
-      "fr": "les plus anciennes attestations présentent la forme čokolata, et le č- renvoie à l’italien cioccolata ; une forme en š- est venue plus tard de l’allemand"
+      "fr": "les plus anciennes attestations présentent la forme čokolata, et le č- renvoie à l’italien cioccolata ; une forme en š- est venue plus tard de l’allemand",
+      "he": "ברישומים המוקדמים ביותר מופיעה הצורה čokolata, וה-č- מצביעה על cioccolata האיטלקית; צורה עם š- באה מאוחר יותר מגרמנית"
      },
      "jistota": "sporna"
     },
@@ -1078,14 +1175,16 @@
       "en": "",
       "it": "",
       "de": "",
-      "fr": ""
+      "fr": "",
+      "he": ""
      },
      "pozn": {
       "cs": "podle Vasmera přes německé Schokolade (starší tvary s č- z italského cioccolata); uvádí se i nizozemština",
       "en": "according to Vasmer through German Schokolade (older forms with č- from Italian cioccolata); Dutch is also suggested",
       "it": "secondo Vasmer attraverso il tedesco Schokolade (le forme più antiche con č- dall'italiano cioccolata); si propone anche l'olandese",
       "de": "nach Vasmer über deutsch Schokolade (ältere Formen mit č- aus italienisch cioccolata); vorgeschlagen wird auch das Niederländische",
-      "fr": "selon Vasmer, par l’allemand Schokolade (les formes plus anciennes en č- viennent de l’italien cioccolata) ; on propose aussi le néerlandais"
+      "fr": "selon Vasmer, par l’allemand Schokolade (les formes plus anciennes en č- viennent de l’italien cioccolata) ; on propose aussi le néerlandais",
+      "he": "לפי פסמר (Vasmer) דרך Schokolade הגרמנית (הצורות הישנות יותר עם č- מ-cioccolata האיטלקית); מוצעת גם ההולנדית"
      },
      "jistota": "sporna"
     }
@@ -1099,14 +1198,16 @@
     "en": "tomato",
     "it": "pomodoro",
     "de": "Tomate",
-    "fr": "tomate"
+    "fr": "tomate",
+    "he": "עגבנייה"
    },
    "uvod": {
     "cs": "Nahuatlské tomatl přešlo do španělštiny jako tomate a odtud do angličtiny, francouzštiny a (přes francouzštinu) do němčiny. Italové plodu říkali pomi d'oro ‚zlatá jablka‘, odtud polské pomidor a ruské помидор. Čeština slovo tomato pro plod nepřevzala (zná ho jen přídavné jméno tomatový): rajče je odvozené od rajské jablko, podle rakousko-německého Paradeisapfel, stejně jako rakouské Paradeiser, maďarské paradicsom a srbské paradajz.",
     "en": "Nahuatl tomatl passed into Spanish as tomate and from there into English, French and (through French) German. Italians called the fruit pomi d'oro, ‘golden apples’, hence Polish pomidor and Russian pomidor. Czech did not take the word tomato for the fruit (only the adjective tomatový has it): rajče is derived from rajské jablko, ‘paradise apple’, after Austrian German Paradeisapfel, like Austrian Paradeiser, Hungarian paradicsom and Serbian paradajz.",
     "it": "Il nahuatl tomatl passò allo spagnolo come tomate e da lì all'inglese, al francese e (attraverso il francese) al tedesco. Gli italiani chiamarono il frutto pomi d'oro, ‘mele d'oro’, da cui il polacco pomidor e il russo pomidor. Il ceco non adottò la parola tomato per il frutto (la conserva solo l'aggettivo tomatový): rajče deriva da rajské jablko, ‘mela del paradiso’, sul modello del tedesco austriaco Paradeisapfel, come l'austriaco Paradeiser, l'ungherese paradicsom e il serbo paradajz.",
     "de": "Nahuatl tomatl gelangte als tomate ins Spanische und von dort ins Englische, Französische und (über das Französische) ins Deutsche. Die Italiener nannten die Frucht pomi d'oro, „goldene Äpfel“, daher polnisch pomidor und russisch pomidor. Das Tschechische übernahm das Wort tomato für die Frucht nicht (nur das Adjektiv tomatový enthält es): rajče ist von rajské jablko, „Paradiesapfel“, abgeleitet, nach österreichisch-deutsch Paradeisapfel, wie österreichisch Paradeiser, ungarisch paradicsom und serbisch paradajz.",
-    "fr": "Le nahuatl tomatl est passé en espagnol sous la forme tomate, puis de là en anglais, en français et (par le français) en allemand. Les Italiens appelèrent le fruit pomi d’oro, « pommes d’or », d’où le polonais pomidor et le russe pomidor. Le tchèque n’a pas adopté le mot tomato pour désigner le fruit (seul l’adjectif tomatový le conserve) : rajče est dérivé de rajské jablko, « pomme du paradis », d’après l’allemand d’Autriche Paradeisapfel, comme l’autrichien Paradeiser, le hongrois paradicsom et le serbe paradajz."
+    "fr": "Le nahuatl tomatl est passé en espagnol sous la forme tomate, puis de là en anglais, en français et (par le français) en allemand. Les Italiens appelèrent le fruit pomi d’oro, « pommes d’or », d’où le polonais pomidor et le russe pomidor. Le tchèque n’a pas adopté le mot tomato pour désigner le fruit (seul l’adjectif tomatový le conserve) : rajče est dérivé de rajské jablko, « pomme du paradis », d’après l’allemand d’Autriche Paradeisapfel, comme l’autrichien Paradeiser, le hongrois paradicsom et le serbe paradajz.",
+    "he": "המילה tomatl מנאוואטל עברה לספרדית כ-tomate, ומשם לאנגלית, לצרפתית ו(דרך הצרפתית) לגרמנית. האיטלקים קראו לפרי pomi d'oro, \"תפוחי זהב\", ומכאן pomidor הפולנית ו-pomidor הרוסית. הצ׳כית לא קיבלה את המילה tomato לציון הפרי (היא קיימת רק בשם התואר tomatový): rajče נגזרה מ-rajské jablko, \"תפוח גן עדן\", על פי Paradeisapfel של הגרמנית האוסטרית, כמו Paradeiser האוסטרית, paradicsom ההונגרית ו-paradajz הסרבית."
    },
    "kroky": [
     {
@@ -1118,7 +1219,8 @@
       "en": "Nahuatl",
       "it": "nahuatl",
       "de": "Nahuatl",
-      "fr": "nahuatl"
+      "fr": "nahuatl",
+      "he": "נאוואטל"
      },
      "tvar": "tomatl",
      "doba": {
@@ -1126,7 +1228,8 @@
       "en": "‘tomato, tomatillo’; the red tomato xitomatl",
       "it": "‘pomodoro, tomatillo’; il pomodoro rosso xitomatl",
       "de": "„Tomate, Tomatillo“; die rote Tomate xitomatl",
-      "fr": "« tomate, tomatillo » ; la tomate rouge xitomatl"
+      "fr": "« tomate, tomatillo » ; la tomate rouge xitomatl",
+      "he": "\"עגבנייה, טומטיליו\"; העגבנייה האדומה – xitomatl"
      }
     },
     {
@@ -1139,7 +1242,8 @@
       "en": "16th century",
       "it": "XVI secolo",
       "de": "16. Jahrhundert",
-      "fr": "XVIe siècle"
+      "fr": "XVIe siècle",
+      "he": "המאה ה-16"
      }
     },
     {
@@ -1152,14 +1256,16 @@
       "en": "tomate 1604, tomato from the 18th century",
       "it": "tomate 1604, tomato dal XVIII secolo",
       "de": "tomate 1604, tomato ab dem 18. Jahrhundert",
-      "fr": "tomate en 1604, tomato à partir du XVIIIe siècle"
+      "fr": "tomate en 1604, tomato à partir du XVIIIe siècle",
+      "he": "tomate ב-1604, tomato מהמאה ה-18"
      },
      "pozn": {
       "cs": "koncové -o snad podle potato",
       "en": "the final -o perhaps after potato",
       "it": "la -o finale forse per influsso di potato",
       "de": "das auslautende -o vielleicht nach potato",
-      "fr": "le -o final peut-être d’après potato"
+      "fr": "le -o final peut-être d’après potato",
+      "he": "ה-o הסופית אולי בהשפעת potato"
      }
     },
     {
@@ -1172,14 +1278,16 @@
       "en": "from Spanish",
       "it": "dallo spagnolo",
       "de": "aus dem Spanischen",
-      "fr": "de l’espagnol"
+      "fr": "de l’espagnol",
+      "he": "מספרדית"
      },
      "pozn": {
       "cs": "dříve pomme d'amour ‚jablko lásky‘",
       "en": "earlier pomme d'amour, ‘love apple’",
       "it": "prima pomme d'amour, ‘mela d'amore’",
       "de": "früher pomme d'amour, „Liebesapfel“",
-      "fr": "auparavant pomme d’amour"
+      "fr": "auparavant pomme d’amour",
+      "he": "קודם לכן pomme d'amour, \"תפוח אהבה\""
      }
     },
     {
@@ -1192,14 +1300,16 @@
       "en": "17th century, from French",
       "it": "XVII secolo, dal francese",
       "de": "17. Jahrhundert, aus dem Französischen",
-      "fr": "XVIIe siècle, du français"
+      "fr": "XVIIe siècle, du français",
+      "he": "המאה ה-17, מצרפתית"
      },
      "pozn": {
       "cs": "v cestopisech 17. století i španělský plurál Tomates",
       "en": "17th-century travel writing also has the Spanish plural Tomates",
       "it": "nella letteratura di viaggio del XVII secolo compare anche il plurale spagnolo Tomates",
       "de": "Reiseberichte des 17. Jahrhunderts kennen auch den spanischen Plural Tomates",
-      "fr": "les récits de voyage du XVIIe siècle présentent aussi le pluriel espagnol Tomates"
+      "fr": "les récits de voyage du XVIIe siècle présentent aussi le pluriel espagnol Tomates",
+      "he": "בספרות המסעות של המאה ה-17 מופיעה גם צורת הרבים הספרדית Tomates"
      }
     },
     {
@@ -1212,14 +1322,16 @@
       "en": "1554 pomi d'oro, ‘golden apples’ (Mattioli)",
       "it": "1554 pomi d'oro, ‘mele d'oro’ (Mattioli)",
       "de": "1554 pomi d'oro, „goldene Äpfel“ (Mattioli)",
-      "fr": "1554 pomi d’oro, « pommes d’or » (Mattioli)"
+      "fr": "1554 pomi d’oro, « pommes d’or » (Mattioli)",
+      "he": "1554 pomi d'oro, \"תפוחי זהב\" (מתיולי)"
      },
      "pozn": {
       "cs": "s tomatl nesouvisí: plod přišel nejspíš přes Španělsko, jméno ne",
       "en": "unrelated to tomatl: the fruit probably came through Spain, the name did not",
       "it": "senza legame con tomatl: il frutto giunse probabilmente attraverso la Spagna, il nome no",
       "de": "ohne Zusammenhang mit tomatl: Die Frucht kam wahrscheinlich über Spanien, der Name nicht",
-      "fr": "sans rapport avec tomatl : le fruit est probablement arrivé par l’Espagne, le nom non"
+      "fr": "sans rapport avec tomatl : le fruit est probablement arrivé par l’Espagne, le nom non",
+      "he": "אין קשר ל-tomatl: הפרי הגיע כנראה דרך ספרד, השם לא"
      }
     },
     {
@@ -1232,7 +1344,8 @@
       "en": "from Italian pomi d'oro",
       "it": "dall'italiano pomi d'oro",
       "de": "aus italienisch pomi d'oro",
-      "fr": "de l’italien pomi d’oro"
+      "fr": "de l’italien pomi d’oro",
+      "he": "מ-pomi d'oro האיטלקית"
      }
     },
     {
@@ -1245,14 +1358,16 @@
       "en": "",
       "it": "",
       "de": "",
-      "fr": ""
+      "fr": "",
+      "he": ""
      },
      "pozn": {
       "cs": "z italštiny, přímo nebo přes polštinu; vedle toho томат tomat",
       "en": "from Italian, directly or through Polish; alongside томат tomat",
       "it": "dall'italiano, direttamente o attraverso il polacco; accanto a томат tomat",
       "de": "aus dem Italienischen, direkt oder über das Polnische; neben томат tomat",
-      "fr": "de l’italien, directement ou par le polonais ; à côté de томат tomat"
+      "fr": "de l’italien, directement ou par le polonais ; à côté de томат tomat",
+      "he": "מאיטלקית, ישירות או דרך הפולנית; לצד томат tomat"
      },
      "jistota": "sporna"
     },
@@ -1265,7 +1380,8 @@
       "en": "German in Austria",
       "it": "tedesco d'Austria",
       "de": "Deutsch in Österreich",
-      "fr": "allemand d’Autriche"
+      "fr": "allemand d’Autriche",
+      "he": "גרמנית באוסטריה"
      },
      "tvar": "Paradeisapfel, Paradeiser",
      "doba": {
@@ -1273,7 +1389,8 @@
       "en": "‘paradise apple’",
       "it": "‘mela del paradiso’",
       "de": "„Paradiesapfel“",
-      "fr": "« pomme du paradis »"
+      "fr": "« pomme du paradis »",
+      "he": "\"תפוח גן עדן\""
      }
     },
     {
@@ -1286,14 +1403,16 @@
       "en": "derived from rajské jablko",
       "it": "derivato da rajské jablko",
       "de": "abgeleitet von rajské jablko",
-      "fr": "dérivé de rajské jablko"
+      "fr": "dérivé de rajské jablko",
+      "he": "נגזרה מ-rajské jablko"
      },
      "pozn": {
       "cs": "kalk rakousko-německého Paradeisapfel, ne přejaté slovo; na východní Moravě i přejaté paradajka",
       "en": "a calque of Austrian German Paradeisapfel, not a loanword; eastern Moravian dialects also have the loan paradajka",
       "it": "calco del tedesco austriaco Paradeisapfel, non un prestito; i dialetti della Moravia orientale hanno anche il prestito paradajka",
       "de": "eine Lehnübersetzung von österreichisch-deutsch Paradeisapfel, kein Lehnwort; ostmährische Dialekte kennen auch das Lehnwort paradajka",
-      "fr": "calque de l’allemand d’Autriche Paradeisapfel, et non emprunt ; les dialectes de Moravie orientale connaissent aussi l’emprunt paradajka"
+      "fr": "calque de l’allemand d’Autriche Paradeisapfel, et non emprunt ; les dialectes de Moravie orientale connaissent aussi l’emprunt paradajka",
+      "he": "תרגום שאילה של Paradeisapfel הגרמנית האוסטרית, לא מילה שאולה; בניבים של מזרח מורביה יש גם את המילה השאולה paradajka"
      }
     },
     {
@@ -1306,7 +1425,8 @@
       "en": "both ‘paradise’ and ‘tomato’",
       "it": "sia ‘paradiso’ sia ‘pomodoro’",
       "de": "sowohl „Paradies“ als auch „Tomate“",
-      "fr": "à la fois « paradis » et « tomate »"
+      "fr": "à la fois « paradis » et « tomate »",
+      "he": "גם \"גן עדן\" וגם \"עגבנייה\""
      }
     },
     {
@@ -1318,7 +1438,8 @@
       "en": "Serbian",
       "it": "serbo",
       "de": "Serbisch",
-      "fr": "serbe"
+      "fr": "serbe",
+      "he": "סרבית"
      },
      "tvar": "парадајз paradajz",
      "doba": {
@@ -1326,7 +1447,8 @@
       "en": "from Austrian Paradeis(er)",
       "it": "dall'austriaco Paradeis(er)",
       "de": "aus österreichisch Paradeis(er)",
-      "fr": "de l’autrichien Paradeis(er)"
+      "fr": "de l’autrichien Paradeis(er)",
+      "he": "מ-Paradeis(er) האוסטרית"
      }
     }
    ]
@@ -1339,14 +1461,16 @@
     "en": "check and mate",
     "it": "scacco e matto",
     "de": "Schach und matt",
-    "fr": "échec et mat"
+    "fr": "échec et mat",
+    "he": "שח ומט"
    },
    "uvod": {
     "cs": "Sledujeme slovo šach, ne název hry. Perské šāh ‚král‘ hráči hlásili při napadení krále a šāh māt (‚král je bezradný‘) ukončilo hru. Přes arabštinu, středověkou latinu, starou francouzštinu a němčinu z něj vzniklo české šach i šachy, anglické check i chess. Název hry šel jinudy: sanskrtská čaturanga dala středoperské čatrang a arabské šatrandž, odtud španělské ajedrez.",
     "en": "We follow the word check, not the name of the game. Players called out Persian shāh, ‘king’, when the king was attacked, and shāh māt (‘the king is helpless’) ended the game. Through Arabic, Medieval Latin, Old French and German it gave Czech šach and šachy, English check and chess. The name of the game took another route: Sanskrit chaturanga gave Middle Persian chatrang and Arabic shatranj, hence Spanish ajedrez.",
     "it": "Seguiamo la parola scacco, non il nome del gioco. I giocatori gridavano il persiano shāh, ‘re’, quando il re era attaccato, e shāh māt (‘il re è impotente’) concludeva la partita. Attraverso l'arabo, il latino medievale, l'antico francese e il tedesco diede il ceco šach e šachy e l'inglese check e chess. Il nome del gioco seguì un'altra strada: il sanscrito chaturanga diede il medio persiano chatrang e l'arabo shatranj, da cui lo spagnolo ajedrez.",
     "de": "Wir verfolgen das Wort check, nicht den Namen des Spiels. Die Spieler riefen persisch shāh, „König“, wenn der König angegriffen wurde, und shāh māt („der König ist hilflos“) beendete das Spiel. Über das Arabische, Mittellateinische, Altfranzösische und Deutsche ergab es tschechisch šach und šachy, englisch check und chess. Der Name des Spiels nahm einen anderen Weg: Sanskrit chaturanga ergab mittelpersisch chatrang und arabisch shatranj, daher spanisch ajedrez.",
-    "fr": "On suit ici le mot échec, et non le nom du jeu. Les joueurs criaient le persan shāh, « roi », lorsque le roi était attaqué, et shāh māt (« le roi est impuissant ») mettait fin à la partie. Par l’arabe, le latin médiéval, l’ancien français et l’allemand, il a donné le tchèque šach et šachy, l’anglais check et chess. Le nom du jeu a suivi une autre voie : le sanskrit chaturanga a donné le moyen-perse chatrang et l’arabe shatranj, d’où l’espagnol ajedrez."
+    "fr": "On suit ici le mot échec, et non le nom du jeu. Les joueurs criaient le persan shāh, « roi », lorsque le roi était attaqué, et shāh māt (« le roi est impuissant ») mettait fin à la partie. Par l’arabe, le latin médiéval, l’ancien français et l’allemand, il a donné le tchèque šach et šachy, l’anglais check et chess. Le nom du jeu a suivi une autre voie : le sanskrit chaturanga a donné le moyen-perse chatrang et l’arabe shatranj, d’où l’espagnol ajedrez.",
+    "he": "אנחנו עוקבים אחר המילה check (\"שח\"), לא אחר שם המשחק. כשהמלך הותקף, קראו השחקנים בפרסית shāh, \"מלך\", ו-shāh māt (\"המלך חסר אונים\") סיים את המשחק. דרך הערבית, הלטינית של ימי הביניים, הצרפתית העתיקה והגרמנית נתנה המילה לצ׳כית את šach ו-šachy, ולאנגלית את check ו-chess. שם המשחק עבר בדרך אחרת: chaturanga הסנסקריטית נתנה את chatrang של הפרסית התיכונה ואת shatranj הערבית, ומכאן ajedrez הספרדית."
    },
    "kroky": [
     {
@@ -1358,7 +1482,8 @@
       "en": "Persian",
       "it": "persiano",
       "de": "Persisch",
-      "fr": "persan"
+      "fr": "persan",
+      "he": "פרסית"
      },
      "tvar": "شاه šāh",
      "doba": {
@@ -1366,7 +1491,8 @@
       "en": "‘king’",
       "it": "‘re’",
       "de": "„König“",
-      "fr": "« roi »"
+      "fr": "« roi »",
+      "he": "\"מלך\""
      }
     },
     {
@@ -1378,7 +1504,8 @@
       "en": "Arabic",
       "it": "arabo",
       "de": "Arabisch",
-      "fr": "arabe"
+      "fr": "arabe",
+      "he": "ערבית"
      },
      "tvar": "شاه مات šāh māt",
      "doba": {
@@ -1386,14 +1513,16 @@
       "en": "in the game of shatranj",
       "it": "nel gioco dello shatranj",
       "de": "im Spiel shatranj",
-      "fr": "dans le jeu de shatranj"
+      "fr": "dans le jeu de shatranj",
+      "he": "במשחק השטרנג׳"
      },
      "pozn": {
       "cs": "mat je perské māt ‚bezradný, ohromený‘; čtení ‚král zemřel‘ (arab. māta ‚zemřel‘) je pozdější lidový výklad",
       "en": "mate is Persian māt, ‘helpless, stunned’; the reading ‘the king died’ (Arabic māta, ‘died’) is a later folk interpretation",
       "it": "matto è il persiano māt, ‘impotente, stordito’; la lettura ‘il re è morto’ (arabo māta, ‘morì’) è una successiva interpretazione popolare",
       "de": "mate ist persisch māt, „hilflos, betäubt“; die Deutung „der König ist gestorben“ (arabisch māta, „starb“) ist eine spätere volkstümliche Auslegung",
-      "fr": "mat est le persan māt, « impuissant, abasourdi » ; la lecture « le roi est mort » (arabe māta, « il est mort ») est une interprétation populaire tardive"
+      "fr": "mat est le persan māt, « impuissant, abasourdi » ; la lecture « le roi est mort » (arabe māta, « il est mort ») est une interprétation populaire tardive",
+      "he": "mate היא māt הפרסית, \"חסר אונים, המום\"; הפירוש \"המלך מת\" (בערבית māta, \"מת\") הוא פרשנות עממית מאוחרת"
      }
     },
     {
@@ -1405,7 +1534,8 @@
       "en": "Medieval Latin",
       "it": "latino medievale",
       "de": "Mittellatein",
-      "fr": "latin médiéval"
+      "fr": "latin médiéval",
+      "he": "לטינית של ימי הביניים"
      },
      "tvar": "scaccus, mn. č. scacci",
      "doba": {
@@ -1413,7 +1543,8 @@
       "en": "around 1000 (the Einsiedeln verses)",
       "it": "intorno al 1000 (i versi di Einsiedeln)",
       "de": "um 1000 (die Einsiedler Verse)",
-      "fr": "vers l’an 1000 (vers d’Einsiedeln)"
+      "fr": "vers l’an 1000 (vers d’Einsiedeln)",
+      "he": "בסביבות שנת 1000 (שירי איינזידלן)"
      }
     },
     {
@@ -1425,7 +1556,8 @@
       "en": "Old French",
       "it": "antico francese",
       "de": "Altfranzösisch",
-      "fr": "ancien français"
+      "fr": "ancien français",
+      "he": "צרפתית עתיקה"
      },
      "tvar": "eschec, mn. č. esches",
      "doba": {
@@ -1433,7 +1565,8 @@
       "en": "from Medieval Latin",
       "it": "dal latino medievale",
       "de": "aus dem Mittellateinischen",
-      "fr": "du latin médiéval"
+      "fr": "du latin médiéval",
+      "he": "מלטינית של ימי הביניים"
      }
     },
     {
@@ -1446,14 +1579,16 @@
       "en": "from Old French",
       "it": "dall'antico francese",
       "de": "aus dem Altfranzösischen",
-      "fr": "de l’ancien français"
+      "fr": "de l’ancien français",
+      "he": "מצרפתית עתיקה"
      },
      "pozn": {
       "cs": "chess z množného čísla esches, check z eschec",
       "en": "chess from the plural esches, check from eschec",
       "it": "chess dal plurale esches, check da eschec",
       "de": "chess aus dem Plural esches, check aus eschec",
-      "fr": "chess du pluriel esches, check de eschec"
+      "fr": "chess du pluriel esches, check de eschec",
+      "he": "chess מצורת הרבים esches, check מ-eschec"
      }
     },
     {
@@ -1465,7 +1600,8 @@
       "en": "Middle High German",
       "it": "medio alto tedesco",
       "de": "Mittelhochdeutsch",
-      "fr": "moyen haut-allemand"
+      "fr": "moyen haut-allemand",
+      "he": "גרמנית עילית תיכונה"
      },
      "tvar": "schāch",
      "doba": {
@@ -1473,14 +1609,16 @@
       "en": "from Old French",
       "it": "dall'antico francese",
       "de": "aus dem Altfranzösischen",
-      "fr": "de l’ancien français"
+      "fr": "de l’ancien français",
+      "he": "מצרפתית עתיקה"
      },
      "pozn": {
       "cs": "podle Klugeho ze stfr. eschec; stará horní němčina má už ve 12. st. skâhzabal ‚šachovnice‘ ze středolat. scaccus, cesta mohla vést i přes latinu",
       "en": "according to Kluge from Old French eschec; Old High German already has skâhzabal ‘chessboard’ (12th c.) from Medieval Latin scaccus, so the route may also have run through Latin",
       "it": "secondo Kluge dall'antico francese eschec; l'antico alto tedesco ha già skâhzabal ‘scacchiera’ (XII sec.) dal latino medievale scaccus, quindi il percorso può essere passato anche attraverso il latino",
       "de": "nach Kluge aus altfranzösisch eschec; das Althochdeutsche hat bereits skâhzabal „Schachbrett“ (12. Jh.) aus mittellateinisch scaccus, der Weg kann also auch über das Lateinische geführt haben",
-      "fr": "selon Kluge, de l’ancien français eschec ; le vieux haut-allemand connaît déjà skâhzabal « échiquier » (XIIe s.), du latin médiéval scaccus, si bien que la voie a pu passer aussi par le latin"
+      "fr": "selon Kluge, de l’ancien français eschec ; le vieux haut-allemand connaît déjà skâhzabal « échiquier » (XIIe s.), du latin médiéval scaccus, si bien que la voie a pu passer aussi par le latin",
+      "he": "לפי קלוגה מ-eschec של הצרפתית העתיקה; בגרמנית העילית העתיקה כבר מופיעה skâhzabal, \"לוח שחמט\" (המאה ה-12), מ-scaccus של לטינית ימי הביניים, כך שייתכן שהדרך עברה גם דרך הלטינית"
      },
      "jistota": "sporna"
     },
@@ -1494,7 +1632,8 @@
       "en": "from German",
       "it": "dal tedesco",
       "de": "aus dem Deutschen",
-      "fr": "de l’allemand"
+      "fr": "de l’allemand",
+      "he": "מגרמנית"
      }
     },
     {
@@ -1507,14 +1646,16 @@
       "en": "‘check mate’",
       "it": "‘scacco matto’",
       "de": "„Schachmatt“",
-      "fr": "« échec et mat »"
+      "fr": "« échec et mat »",
+      "he": "\"שח מט\""
      },
      "pozn": {
       "cs": "hra přišla na Rus nejspíš z východu, ne přes Evropu (ферзь z perského farzín, слон ‚slon‘); přesná cesta je sporná",
       "en": "the game probably reached Rus from the east, not through Europe (ферзь from Persian farzīn, слон ‘elephant’); the exact route is disputed",
       "it": "il gioco giunse probabilmente nella Rus' da est, non attraverso l'Europa (ферзь dal persiano farzīn, слон ‘elefante’); il percorso esatto è controverso",
       "de": "das Spiel gelangte wahrscheinlich aus dem Osten in die Rus, nicht über Europa (ферзь aus persisch farzīn, слон „Elefant“); der genaue Weg ist umstritten",
-      "fr": "le jeu est probablement parvenu en Rus' par l’est, et non par l’Europe (ферзь du persan farzīn, слон « éléphant ») ; la voie exacte est discutée"
+      "fr": "le jeu est probablement parvenu en Rus' par l’est, et non par l’Europe (ферзь du persan farzīn, слон « éléphant ») ; la voie exacte est discutée",
+      "he": "המשחק הגיע לרוס כנראה מהמזרח, ולא דרך אירופה (ферзь מ-farzīn הפרסית, слон \"פיל\"); הדרך המדויקת שנויה במחלוקת"
      },
      "jistota": "sporna"
     }
@@ -1528,14 +1669,16 @@
     "en": "alcohol",
     "it": "alcol",
     "de": "Alkohol",
-    "fr": "alcool"
+    "fr": "alcool",
+    "he": "אלכוהול"
    },
    "uvod": {
     "cs": "Arabské al-kuḥl je jemný antimonový prášek, kterým se líčily oči (kohl). Alchymisté ve středověké latině tak říkali jemnému prášku a Paracelsus v 16. století i těkavé kapalině (alcool vini ‚podstata vína‘). Na význam ‚líh‘ se slovo zúžilo v 18. století.",
     "en": "Arabic al-kuḥl is the fine antimony powder used to line the eyes (kohl). Alchemists writing Medieval Latin used the word for a fine powder, and Paracelsus in the 16th century also for a volatile liquid (alcool vini, ‘essence of wine’). The meaning narrowed to ‘spirit of wine’ in the 18th century.",
     "it": "L'arabo al-kuḥl è la finissima polvere di antimonio usata per contornare gli occhi (kohl). Gli alchimisti che scrivevano in latino medievale usarono la parola per una polvere fine, e Paracelso nel XVI secolo anche per un liquido volatile (alcool vini, ‘essenza del vino’). Il significato si restrinse a ‘spirito di vino’ nel XVIII secolo.",
     "de": "Arabisch al-kuḥl ist das feine Antimonpulver, mit dem man die Augen umrandet (Kajal). Alchemisten, die mittellateinisch schrieben, verwendeten das Wort für ein feines Pulver, Paracelsus im 16. Jahrhundert auch für eine flüchtige Flüssigkeit (alcool vini, „Essenz des Weines“). Im 18. Jahrhundert verengte sich die Bedeutung auf „Weingeist“.",
-    "fr": "L’arabe al-kuḥl désigne la fine poudre d’antimoine dont on se souligne les yeux (khôl). Les alchimistes écrivant en latin médiéval employaient le mot pour une poudre fine, et Paracelse, au XVIe siècle, aussi pour un liquide volatil (alcool vini, « essence du vin »). Le sens s’est restreint à « esprit-de-vin » au XVIIIe siècle."
+    "fr": "L’arabe al-kuḥl désigne la fine poudre d’antimoine dont on se souligne les yeux (khôl). Les alchimistes écrivant en latin médiéval employaient le mot pour une poudre fine, et Paracelse, au XVIe siècle, aussi pour un liquide volatil (alcool vini, « essence du vin »). Le sens s’est restreint à « esprit-de-vin » au XVIIIe siècle.",
+    "he": "al-kuḥl הערבית היא אבקת האנטימון הדקה שבה מאפרים את העיניים (כוחל). אלכימאים שכתבו בלטינית של ימי הביניים השתמשו במילה לציון אבקה דקה, ופרצלסוס במאה ה-16 גם לציון נוזל נדיף (alcool vini, \"תמצית היין\"). במאה ה-18 הצטמצמה המשמעות ל\"רוח יין\"."
    },
    "kroky": [
     {
@@ -1547,7 +1690,8 @@
       "en": "Arabic",
       "it": "arabo",
       "de": "Arabisch",
-      "fr": "arabe"
+      "fr": "arabe",
+      "he": "ערבית"
      },
      "tvar": "الكحل al-kuḥl",
      "doba": {
@@ -1555,14 +1699,16 @@
       "en": "‘antimony powder, eyeliner’",
       "it": "‘polvere di antimonio, matita per gli occhi’",
       "de": "„Antimonpulver, Augenschminke“",
-      "fr": "« poudre d’antimoine, fard pour les yeux »"
+      "fr": "« poudre d’antimoine, fard pour les yeux »",
+      "he": "\"אבקת אנטימון, איפור עיניים\""
      },
      "pozn": {
       "cs": "slovo je doložené v řadě semitských jazyků (akkad. guḫlum, aram. kuḥlā); arabština ho nejspíš přejala z aramejštiny, starší předhistorie je nejistá",
       "en": "the word is attested across Semitic (Akkadian guḫlum, Aramaic kuḥlā); Arabic probably took it from Aramaic, and its earlier history is uncertain",
       "it": "la parola è attestata in tutto il semitico (accadico guḫlum, aramaico kuḥlā); l'arabo la prese probabilmente dall'aramaico, e la sua storia precedente è incerta",
       "de": "das Wort ist im ganzen Semitischen belegt (akkadisch guḫlum, aramäisch kuḥlā); das Arabische übernahm es wahrscheinlich aus dem Aramäischen, seine frühere Geschichte ist unsicher",
-      "fr": "le mot est attesté dans tout le domaine sémitique (akkadien guḫlum, araméen kuḥlā) ; l’arabe l’a probablement emprunté à l’araméen, et son histoire antérieure est incertaine"
+      "fr": "le mot est attesté dans tout le domaine sémitique (akkadien guḫlum, araméen kuḥlā) ; l’arabe l’a probablement emprunté à l’araméen, et son histoire antérieure est incertaine",
+      "he": "המילה מתועדת ברחבי השפות השמיות (באכדית guḫlum, בארמית kuḥlā); הערבית לקחה אותה כנראה מהארמית, ותולדותיה הקודמות אינן ודאיות"
      }
     },
     {
@@ -1575,14 +1721,16 @@
       "en": "from the Arabic of Spain",
       "it": "dall'arabo di Spagna",
       "de": "aus dem Arabischen Spaniens",
-      "fr": "de l’arabe d’Espagne"
+      "fr": "de l’arabe d’Espagne",
+      "he": "מהערבית של ספרד"
      },
      "pozn": {
       "cs": "původně líčidlo na oči",
       "en": "originally eyeliner",
       "it": "in origine matita per gli occhi",
       "de": "ursprünglich Augenschminke",
-      "fr": "à l’origine, fard pour les yeux"
+      "fr": "à l’origine, fard pour les yeux",
+      "he": "במקור איפור עיניים"
      }
     },
     {
@@ -1594,7 +1742,8 @@
       "en": "the Medieval Latin of alchemists",
       "it": "il latino medievale degli alchimisti",
       "de": "das Mittellatein der Alchemisten",
-      "fr": "le latin médiéval des alchimistes"
+      "fr": "le latin médiéval des alchimistes",
+      "he": "הלטינית של האלכימאים בימי הביניים"
      },
      "tvar": "alcohol, alcool",
      "doba": {
@@ -1602,7 +1751,8 @@
       "en": "‘fine powder’; Paracelsus (16th c.) also ‘volatile liquid’",
       "it": "‘polvere fine’; Paracelso (XVI sec.) anche ‘liquido volatile’",
       "de": "„feines Pulver“; Paracelsus (16. Jh.) auch „flüchtige Flüssigkeit“",
-      "fr": "« poudre fine » ; chez Paracelse (XVIe s.) aussi « liquide volatil »"
+      "fr": "« poudre fine » ; chez Paracelse (XVIe s.) aussi « liquide volatil »",
+      "he": "\"אבקה דקה\"; אצל פרצלסוס (המאה ה-16) גם \"נוזל נדיף\""
      }
     },
     {
@@ -1615,7 +1765,8 @@
       "en": "1543 ‘fine powder’; ‘spirit of wine’ from the 18th century",
       "it": "1543 ‘polvere fine’; ‘spirito di vino’ dal XVIII secolo",
       "de": "1543 „feines Pulver“; „Weingeist“ ab dem 18. Jahrhundert",
-      "fr": "1543 « poudre fine » ; « esprit-de-vin » à partir du XVIIIe siècle"
+      "fr": "1543 « poudre fine » ; « esprit-de-vin » à partir du XVIIIe siècle",
+      "he": "1543 \"אבקה דקה\"; \"רוח יין\" מהמאה ה-18"
      }
     },
     {
@@ -1628,7 +1779,8 @@
       "en": "from Medieval Latin",
       "it": "dal latino medievale",
       "de": "aus dem Mittellateinischen",
-      "fr": "du latin médiéval"
+      "fr": "du latin médiéval",
+      "he": "מלטינית של ימי הביניים"
      }
     },
     {
@@ -1641,7 +1793,8 @@
       "en": "from Medieval Latin",
       "it": "dal latino medievale",
       "de": "aus dem Mittellateinischen",
-      "fr": "du latin médiéval"
+      "fr": "du latin médiéval",
+      "he": "מלטינית של ימי הביניים"
      }
     },
     {
@@ -1654,7 +1807,8 @@
       "en": "probably from German",
       "it": "probabilmente dal tedesco",
       "de": "wahrscheinlich aus dem Deutschen",
-      "fr": "probablement de l’allemand"
+      "fr": "probablement de l’allemand",
+      "he": "כנראה מגרמנית"
      },
      "jistota": "sporna"
     },
@@ -1668,14 +1822,16 @@
       "en": "",
       "it": "",
       "de": "",
-      "fr": ""
+      "fr": "",
+      "he": ""
      },
      "pozn": {
       "cs": "z němčiny nebo francouzštiny",
       "en": "from German or French",
       "it": "dal tedesco o dal francese",
       "de": "aus dem Deutschen oder Französischen",
-      "fr": "de l’allemand ou du français"
+      "fr": "de l’allemand ou du français",
+      "he": "מגרמנית או מצרפתית"
      },
      "jistota": "sporna"
     }
@@ -1689,14 +1845,16 @@
     "en": "zero and cipher",
     "it": "zero e cifra",
     "de": "Null und Ziffer",
-    "fr": "zéro et chiffre"
+    "fr": "zéro et chiffre",
+    "he": "אפס וספרה"
    },
    "uvod": {
     "cs": "Sanskrtské śūnya ‚prázdno‘ Arabové přeložili slovem ṣifr ‚prázdný‘. Ve středověké latině z něj vzniklo zephirum i cifra: první větev dala zero, druhá cifru, Ziffer a chiffre, které z ‚nuly‘ zobecněly na ‚číslici‘. Česká nula s touto cestou nesouvisí: je z latinského nulla ‚žádná‘ (číslice), stejně jako německé Null.",
     "en": "Arabic scholars translated Sanskrit śūnya, ‘emptiness’, with ṣifr, ‘empty’. Medieval Latin made two words of it, zephirum and cifra: the first branch gave zero, the second cipher, Ziffer and chiffre, which widened from ‘zero’ to ‘digit’. Czech nula is unrelated to this route: it comes from Latin nulla, ‘no’ (digit), like German Null.",
     "it": "Gli studiosi arabi tradussero il sanscrito śūnya, ‘il vuoto’, con ṣifr, ‘vuoto’. Il latino medievale ne ricavò due parole, zephirum e cifra: dal primo ramo venne zero, dal secondo cipher, Ziffer e chiffre, il cui significato si allargò da ‘zero’ a ‘cifra’. Il ceco nula non ha legami con questo percorso: viene dal latino nulla, ‘nessuna’ (cifra), come il tedesco Null.",
     "de": "Arabische Gelehrte übersetzten Sanskrit śūnya, „Leere“, mit ṣifr, „leer“. Das Mittellatein machte daraus zwei Wörter, zephirum und cifra: Aus dem ersten Zweig ging zero hervor, aus dem zweiten cipher, Ziffer und chiffre, deren Bedeutung sich von „Null“ zu „Ziffer“ erweiterte. Tschechisch nula hat mit diesem Weg nichts zu tun: Es stammt aus lateinisch nulla, „keine“ (Ziffer), wie deutsch Null.",
-    "fr": "Les savants arabes ont traduit le sanskrit śūnya, « le vide », par ṣifr, « vide ». Le latin médiéval en a tiré deux mots, zephirum et cifra : la première branche a donné zéro, la seconde cipher, Ziffer et chiffre, dont le sens s’est élargi de « zéro » à « chiffre ». Le tchèque nula est étranger à cette voie : il vient du latin nulla, « aucun » (chiffre), comme l’allemand Null."
+    "fr": "Les savants arabes ont traduit le sanskrit śūnya, « le vide », par ṣifr, « vide ». Le latin médiéval en a tiré deux mots, zephirum et cifra : la première branche a donné zéro, la seconde cipher, Ziffer et chiffre, dont le sens s’est élargi de « zéro » à « chiffre ». Le tchèque nula est étranger à cette voie : il vient du latin nulla, « aucun » (chiffre), comme l’allemand Null.",
+    "he": "מלומדים ערבים תרגמו את śūnya הסנסקריטית, \"ריקות\", ב-ṣifr, \"ריק\". הלטינית של ימי הביניים עשתה ממנה שתי מילים, zephirum ו-cifra: הענף הראשון נתן את zero, השני את cipher, Ziffer ו-chiffre, שמשמעותן התרחבה מ\"אפס\" ל\"ספרה\". nula הצ׳כית אינה קשורה לדרך הזאת: מקורה ב-nulla הלטינית, \"אף לא אחת\" (ספרה), כמו Null הגרמנית."
    },
    "kroky": [
     {
@@ -1709,7 +1867,8 @@
       "en": "‘emptiness, zero’",
       "it": "‘vuoto, zero’",
       "de": "„Leere, Null“",
-      "fr": "« vide, zéro »"
+      "fr": "« vide, zéro »",
+      "he": "\"ריקות, אפס\""
      }
     },
     {
@@ -1721,7 +1880,8 @@
       "en": "Arabic",
       "it": "arabo",
       "de": "Arabisch",
-      "fr": "arabe"
+      "fr": "arabe",
+      "he": "ערבית"
      },
      "tvar": "صفر ṣifr",
      "doba": {
@@ -1729,14 +1889,16 @@
       "en": "‘empty’; as ‘zero’ a translation of śūnya",
       "it": "‘vuoto’; come ‘zero’ traduzione di śūnya",
       "de": "„leer“; als „Null“ eine Übersetzung von śūnya",
-      "fr": "« vide » ; au sens de « zéro », traduction de śūnya"
+      "fr": "« vide » ; au sens de « zéro », traduction de śūnya",
+      "he": "\"ריק\"; במשמעות \"אפס\" – תרגום של śūnya"
      },
      "pozn": {
       "cs": "slovo se nepřejalo, přeložil se jeho význam",
       "en": "the word was not borrowed, its meaning was translated",
       "it": "non fu presa in prestito la parola, ma ne fu tradotto il significato",
       "de": "nicht das Wort wurde entlehnt, sondern seine Bedeutung übersetzt",
-      "fr": "le mot n’a pas été emprunté, c’est son sens qui a été traduit"
+      "fr": "le mot n’a pas été emprunté, c’est son sens qui a été traduit",
+      "he": "המילה לא נשאלה; משמעותה תורגמה"
      }
     },
     {
@@ -1748,7 +1910,8 @@
       "en": "Medieval Latin",
       "it": "latino medievale",
       "de": "Mittellatein",
-      "fr": "latin médiéval"
+      "fr": "latin médiéval",
+      "he": "לטינית של ימי הביניים"
      },
      "tvar": "zephirum, cifra",
      "doba": {
@@ -1756,7 +1919,8 @@
       "en": "zephirum in Fibonacci (1202)",
       "it": "zephirum in Fibonacci (1202)",
       "de": "zephirum bei Fibonacci (1202)",
-      "fr": "zephirum chez Fibonacci (1202)"
+      "fr": "zephirum chez Fibonacci (1202)",
+      "he": "zephirum אצל פיבונאצ׳י (1202)"
      }
     },
     {
@@ -1769,14 +1933,16 @@
       "en": "from Latin zephirum",
       "it": "dal latino zephirum",
       "de": "aus lateinisch zephirum",
-      "fr": "du latin zephirum"
+      "fr": "du latin zephirum",
+      "he": "מ-zephirum הלטינית"
      },
      "pozn": {
       "cs": "tvar snad ovlivnilo zefiro ‚západní vítr‘",
       "en": "the form was perhaps influenced by zefiro, ‘west wind’",
       "it": "la forma fu forse influenzata da zefiro, ‘vento di ponente’",
       "de": "die Form wurde vielleicht von zefiro, „Westwind“, beeinflusst",
-      "fr": "la forme a peut-être été influencée par zefiro, « vent d’ouest »"
+      "fr": "la forme a peut-être été influencée par zefiro, « vent d’ouest »",
+      "he": "ייתכן שהצורה הושפעה מ-zefiro, \"רוח מערבית\""
      }
     },
     {
@@ -1788,7 +1954,8 @@
       "en": "Venetian",
       "it": "veneziano",
       "de": "Venezianisch",
-      "fr": "vénitien"
+      "fr": "vénitien",
+      "he": "ונציאנית"
      },
      "tvar": "zevero → zero",
      "doba": {
@@ -1796,14 +1963,16 @@
       "en": "zero in the 15th century",
       "it": "zero nel XV secolo",
       "de": "zero im 15. Jahrhundert",
-      "fr": "zero au XVe siècle"
+      "fr": "zero au XVe siècle",
+      "he": "zero במאה ה-15"
      },
      "pozn": {
       "cs": "benátský mezičlánek je předpoklad; italské zero je doložené v 15. století (Florencie)",
       "en": "the Venetian step is an assumption; Italian zero is attested in the 15th century (Florence)",
       "it": "il passaggio veneziano è un'ipotesi; l'italiano zero è attestato nel XV secolo (Firenze)",
       "de": "die venezianische Etappe ist eine Annahme; italienisch zero ist im 15. Jahrhundert belegt (Florenz)",
-      "fr": "l’étape vénitienne est une hypothèse ; l’italien zero est attesté au XVe siècle (Florence)"
+      "fr": "l’étape vénitienne est une hypothèse ; l’italien zero est attesté au XVe siècle (Florence)",
+      "he": "השלב הוונציאני הוא הנחה; zero האיטלקית מתועדת במאה ה-15 (פירנצה)"
      },
      "jistota": "sporna"
     },
@@ -1817,14 +1986,16 @@
       "en": "late 15th century",
       "it": "fine del XV secolo",
       "de": "spätes 15. Jahrhundert",
-      "fr": "fin du XVe siècle"
+      "fr": "fin du XVe siècle",
+      "he": "סוף המאה ה-15"
      },
      "pozn": {
       "cs": "z italského zero",
       "en": "from Italian zero",
       "it": "dall'italiano zero",
       "de": "aus italienisch zero",
-      "fr": "de l’italien zero"
+      "fr": "de l’italien zero",
+      "he": "מ-zero האיטלקית"
      }
     },
     {
@@ -1837,14 +2008,16 @@
       "en": "1598",
       "it": "1598",
       "de": "1598",
-      "fr": "1598"
+      "fr": "1598",
+      "he": "1598"
      },
      "pozn": {
       "cs": "z francouzštiny nebo přímo z italštiny",
       "en": "from French or directly from Italian",
       "it": "dal francese o direttamente dall'italiano",
       "de": "aus dem Französischen oder direkt aus dem Italienischen",
-      "fr": "du français ou directement de l’italien"
+      "fr": "du français ou directement de l’italien",
+      "he": "מצרפתית או ישירות מאיטלקית"
      },
      "jistota": "sporna"
     },
@@ -1857,7 +2030,8 @@
       "en": "Old French",
       "it": "antico francese",
       "de": "Altfranzösisch",
-      "fr": "ancien français"
+      "fr": "ancien français",
+      "he": "צרפתית עתיקה"
      },
      "tvar": "cifre",
      "doba": {
@@ -1865,7 +2039,8 @@
       "en": "‘zero’, later ‘digit’; today chiffre",
       "it": "‘zero’, poi ‘cifra’; oggi chiffre",
       "de": "„Null“, später „Ziffer“; heute chiffre",
-      "fr": "« zéro », plus tard « chiffre » ; aujourd’hui chiffre"
+      "fr": "« zéro », plus tard « chiffre » ; aujourd’hui chiffre",
+      "he": "\"אפס\", אחר כך \"ספרה\"; היום chiffre"
      }
     },
     {
@@ -1877,7 +2052,8 @@
       "en": "Middle English",
       "it": "medio inglese",
       "de": "Mittelenglisch",
-      "fr": "moyen anglais"
+      "fr": "moyen anglais",
+      "he": "אנגלית תיכונה"
      },
      "tvar": "cifre → cipher",
      "doba": {
@@ -1885,14 +2061,16 @@
       "en": "late 14th century",
       "it": "fine del XIV secolo",
       "de": "spätes 14. Jahrhundert",
-      "fr": "fin du XIVe siècle"
+      "fr": "fin du XIVe siècle",
+      "he": "סוף המאה ה-14"
      },
      "pozn": {
       "cs": "‚nula‘, pak ‚číslice‘ a ‚šifra‘",
       "en": "‘zero’, then ‘digit’ and ‘code’",
       "it": "‘zero’, poi ‘cifra’ e ‘codice’",
       "de": "„Null“, dann „Ziffer“ und „Geheimschrift“",
-      "fr": "« zéro », puis « chiffre » et « code »"
+      "fr": "« zéro », puis « chiffre » et « code »",
+      "he": "\"אפס\", אחר כך \"ספרה\" ו\"צופן\""
      }
     },
     {
@@ -1905,14 +2083,16 @@
       "en": "15th century (late Middle High German zifer)",
       "it": "XV secolo (tardo medio alto tedesco zifer)",
       "de": "15. Jahrhundert (spätmittelhochdeutsch zifer)",
-      "fr": "XVe siècle (moyen haut-allemand tardif zifer)"
+      "fr": "XVe siècle (moyen haut-allemand tardif zifer)",
+      "he": "המאה ה-15 (zifer בגרמנית העילית התיכונה המאוחרת)"
      },
      "pozn": {
       "cs": "ze stfr. cifre; původně ‚nula‘, od 16. st. i ‚šifra‘",
       "en": "from Old French cifre; originally ‘zero’, from the 16th c. also ‘code’",
       "it": "dall'antico francese cifre; in origine ‘zero’, dal XVI sec. anche ‘codice’",
       "de": "aus altfranzösisch cifre; ursprünglich „Null“, ab dem 16. Jh. auch „Geheimschrift“",
-      "fr": "de l’ancien français cifre ; à l’origine « zéro », à partir du XVIe s. aussi « code »"
+      "fr": "de l’ancien français cifre ; à l’origine « zéro », à partir du XVIe s. aussi « code »",
+      "he": "מ-cifre של הצרפתית העתיקה; במקור \"אפס\", מהמאה ה-16 גם \"צופן\""
      }
     },
     {
@@ -1925,14 +2105,16 @@
       "en": "",
       "it": "",
       "de": "",
-      "fr": ""
+      "fr": "",
+      "he": ""
      },
      "pozn": {
       "cs": "z němčiny (Ziffer), zakončení -a snad podle latinského cifra",
       "en": "from German Ziffer, the ending -a perhaps after Latin cifra",
       "it": "dal tedesco Ziffer, la terminazione -a forse per influsso del latino cifra",
       "de": "aus deutsch Ziffer, die Endung -a vielleicht nach lateinisch cifra",
-      "fr": "de l’allemand Ziffer, la terminaison -a peut-être d’après le latin cifra"
+      "fr": "de l’allemand Ziffer, la terminaison -a peut-être d’après le latin cifra",
+      "he": "מ-Ziffer הגרמנית, הסיומת -a אולי בהשפעת cifra הלטינית"
      },
      "jistota": "sporna"
     }
@@ -1946,14 +2128,16 @@
     "en": "shampoo",
     "it": "shampoo",
     "de": "Shampoo",
-    "fr": "shampooing"
+    "fr": "shampooing",
+    "he": "שמפו"
    },
    "uvod": {
     "cs": "V hindustánštině (hindštině a urdštině) znamená čā̃pō ‚tiskni, masíruj‘. Angličané v Indii tak od roku 1762 říkali masáži (hnětení těla v lázni). Ve významu ‚mýt vlasy‘ je shampoo doložené od roku 1860 a jako název přípravku se rozšířilo po světě.",
     "en": "In Hindustani (Hindi-Urdu), čā̃pō means ‘press, knead’. The British in India used it from 1762 for massage (kneading the body in the bath). In the sense ‘to wash the hair’ shampoo is attested from 1860, and as the name of the product it spread around the world.",
     "it": "In hindustani (hindi-urdu) čā̃pō significa ‘premi, impasta’. Gli inglesi in India lo usarono dal 1762 per il massaggio (impastare il corpo durante il bagno). Nel senso di ‘lavare i capelli’ shampoo è attestato dal 1860, e come nome del prodotto si è diffuso in tutto il mondo.",
     "de": "Im Hindustani (Hindi-Urdu) bedeutet čā̃pō „drücke, knete“. Die Briten in Indien verwendeten es ab 1762 für die Massage (das Kneten des Körpers im Bad). In der Bedeutung „die Haare waschen“ ist shampoo ab 1860 belegt, und als Name des Produkts verbreitete es sich in aller Welt.",
-    "fr": "En hindoustani (hindi-ourdou), čā̃pō signifie « presse, pétris ». Les Britanniques en Inde l’employaient à partir de 1762 pour le massage (pétrissage du corps au bain). Au sens de « laver les cheveux », shampoo est attesté à partir de 1860, et c’est comme nom du produit qu’il s’est répandu dans le monde entier."
+    "fr": "En hindoustani (hindi-ourdou), čā̃pō signifie « presse, pétris ». Les Britanniques en Inde l’employaient à partir de 1762 pour le massage (pétrissage du corps au bain). Au sens de « laver les cheveux », shampoo est attesté à partir de 1860, et c’est comme nom du produit qu’il s’est répandu dans le monde entier.",
+    "he": "בהינדוסטאנית (הינדי-אורדו) פירוש čā̃pō הוא \"לחץ, לוש\". הבריטים בהודו השתמשו במילה מ-1762 לציון עיסוי (לישת הגוף באמבט). במובן \"לחפוף את השיער\" shampoo מתועדת מ-1860, וכשם המוצר התפשטה בכל העולם."
    },
    "kroky": [
     {
@@ -1965,7 +2149,8 @@
       "en": "Hindustani",
       "it": "hindustani",
       "de": "Hindustani",
-      "fr": "hindoustani"
+      "fr": "hindoustani",
+      "he": "הינדוסטאנית"
      },
      "tvar": "चाँपो čā̃pō",
      "doba": {
@@ -1973,14 +2158,16 @@
       "en": "‘press, knead’",
       "it": "‘premi, impasta’",
       "de": "„drücke, knete“",
-      "fr": "« presse, pétris »"
+      "fr": "« presse, pétris »",
+      "he": "\"לחץ, לוש\""
      },
      "pozn": {
       "cs": "rozkazovací způsob slovesa čā̃pnā",
       "en": "the imperative of the verb čā̃pnā",
       "it": "l'imperativo del verbo čā̃pnā",
       "de": "der Imperativ des Verbs čā̃pnā",
-      "fr": "impératif du verbe čā̃pnā"
+      "fr": "impératif du verbe čā̃pnā",
+      "he": "צורת הציווי של הפועל čā̃pnā"
      }
     },
     {
@@ -1993,14 +2180,16 @@
       "en": "1762 ‘massage’; ‘hair wash’ from 1860",
       "it": "1762 ‘massaggio’; ‘lavaggio dei capelli’ dal 1860",
       "de": "1762 „Massage“; „Haarwäsche“ ab 1860",
-      "fr": "1762 « massage » ; « lavage des cheveux » à partir de 1860"
+      "fr": "1762 « massage » ; « lavage des cheveux » à partir de 1860",
+      "he": "1762 \"עיסוי\"; \"חפיפת שיער\" מ-1860"
      },
      "pozn": {
       "cs": "v Anglii masáž (shampooing) zpopularizoval Sake Dean Mahomed, v Brightonu od roku 1814",
       "en": "in England Sake Dean Mahomed popularised the massage (shampooing), in Brighton from 1814",
       "it": "in Inghilterra Sake Dean Mahomed rese popolare il massaggio (shampooing), a Brighton dal 1814",
       "de": "in England machte Sake Dean Mahomed die Massage (shampooing) populär, in Brighton ab 1814",
-      "fr": "en Angleterre, Sake Dean Mahomed a popularisé ce massage (shampooing), à Brighton à partir de 1814"
+      "fr": "en Angleterre, Sake Dean Mahomed a popularisé ce massage (shampooing), à Brighton à partir de 1814",
+      "he": "באנגליה הפך סייק דין מוחמד את העיסוי (shampooing) לפופולרי, בברייטון מ-1814"
      }
     },
     {
@@ -2013,7 +2202,8 @@
       "en": "from English",
       "it": "dall'inglese",
       "de": "aus dem Englischen",
-      "fr": "de l’anglais"
+      "fr": "de l’anglais",
+      "he": "מאנגלית"
      }
     },
     {
@@ -2026,7 +2216,8 @@
       "en": "from English",
       "it": "dall'inglese",
       "de": "aus dem Englischen",
-      "fr": "de l’anglais"
+      "fr": "de l’anglais",
+      "he": "מאנגלית"
      }
     },
     {
@@ -2039,14 +2230,16 @@
       "en": "",
       "it": "",
       "de": "",
-      "fr": ""
+      "fr": "",
+      "he": ""
      },
      "pozn": {
       "cs": "nejspíš z německého Schampon; zakončení -on se liší od anglického -oo",
       "en": "probably from German Schampon; the ending -on differs from English -oo",
       "it": "probabilmente dal tedesco Schampon; la terminazione -on è diversa dall'inglese -oo",
       "de": "wahrscheinlich aus deutsch Schampon; die Endung -on weicht von englisch -oo ab",
-      "fr": "probablement de l’allemand Schampon ; la terminaison -on diffère de l’anglais -oo"
+      "fr": "probablement de l’allemand Schampon ; la terminaison -on diffère de l’anglais -oo",
+      "he": "כנראה מ-Schampon הגרמנית; הסיומת -on שונה מ-oo- האנגלית"
      },
      "jistota": "sporna"
     },
@@ -2060,14 +2253,16 @@
       "en": "",
       "it": "",
       "de": "",
-      "fr": ""
+      "fr": "",
+      "he": ""
      },
      "pozn": {
       "cs": "nejspíš z němčiny",
       "en": "probably from German",
       "it": "probabilmente dal tedesco",
       "de": "wahrscheinlich aus dem Deutschen",
-      "fr": "probablement de l’allemand"
+      "fr": "probablement de l’allemand",
+      "he": "כנראה מגרמנית"
      },
      "jistota": "sporna"
     },
@@ -2081,14 +2276,16 @@
       "en": "",
       "it": "",
       "de": "",
-      "fr": ""
+      "fr": "",
+      "he": ""
      },
      "pozn": {
       "cs": "z francouzského shampooing nebo německého Schampun",
       "en": "from French shampooing or German Schampun",
       "it": "dal francese shampooing o dal tedesco Schampun",
       "de": "aus französisch shampooing oder deutsch Schampun",
-      "fr": "du français shampooing ou de l’allemand Schampun"
+      "fr": "du français shampooing ou de l’allemand Schampun",
+      "he": "מ-shampooing הצרפתית או מ-Schampun הגרמנית"
      },
      "jistota": "sporna"
     },
@@ -2102,7 +2299,8 @@
       "en": "from English",
       "it": "dall'inglese",
       "de": "aus dem Englischen",
-      "fr": "de l’anglais"
+      "fr": "de l’anglais",
+      "he": "מאנגלית"
      }
     },
     {
@@ -2115,7 +2313,8 @@
       "en": "from English",
       "it": "dall'inglese",
       "de": "aus dem Englischen",
-      "fr": "de l’anglais"
+      "fr": "de l’anglais",
+      "he": "מאנגלית"
      }
     }
    ]

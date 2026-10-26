@@ -55,6 +55,10 @@
    "fr": {
     "nazev": "Alphabet latin",
     "text": "Il est né en Italie au VIIe siècle av. J.-C. à partir de la forme étrusque de l’alphabet grec. C’est l’écriture la plus répandue au monde : la plupart des langues d’Europe, des Amériques, d’Afrique subsaharienne et d’Océanie ainsi que de nombreuses langues d’Asie (turc, vietnamien, indonésien) s’écrivent en caractères latins, beaucoup d’entre elles seulement depuis les XIXe et XXe siècles."
+   },
+   "he": {
+    "nazev": "כתב לטיני",
+    "text": "נוצר באיטליה במאה ה-7 לפנה״ס מהגרסה האטרוסקית של האלפבית היווני. זהו הכתב הנפוץ ביותר בעולם: בו נכתבות רוב השפות של אירופה, של יבשות אמריקה, של אפריקה שמדרום לסהרה ושל אוקיאניה, וכן שפות רבות באסיה (טורקית, וייטנאמית, אינדונזית) – רבות מהן רק מאז המאות ה-19 וה-20."
    }
   },
   {
@@ -94,6 +98,10 @@
    "fr": {
     "nazev": "Alphabet cyrillique",
     "text": "Il est né à la fin du IXe ou au Xe siècle dans l’Empire bulgare, sur la base de l’alphabet grec complété par des lettres empruntées au glagolitique pour les sons slaves. Il sert à écrire le russe, l’ukrainien, le biélorusse, le bulgare, le macédonien, le serbe (à côté de l’alphabet latin) et de nombreuses langues non slaves de l’ex-Union soviétique et de Mongolie."
+   },
+   "he": {
+    "nazev": "כתב קירילי",
+    "text": "נוצר בסוף המאה ה-9 או במאה ה-10 באימפריה הבולגרית, על בסיס האלפבית היווני, ואת האותיות לצלילים הסלאביים שאל מהכתב הגלגוליטי. הוא משמש לכתיבת רוסית, אוקראינית, בלארוסית, בולגרית, מקדונית, סרבית (לצד הכתב הלטיני) ושפות רבות שאינן סלאביות בברית המועצות לשעבר ובמונגוליה."
    }
   },
   {
@@ -129,6 +137,10 @@
    "fr": {
     "nazev": "Alphabet grec",
     "text": "Les Grecs l’ont emprunté aux Phéniciens, probablement au IXe ou au VIIIe siècle av. J.-C., et ont été les premiers à noter systématiquement les voyelles. Il sert aujourd’hui à écrire le grec ; l’alphabet latin (par l’intermédiaire de l’alphabet étrusque), les alphabets gotique, copte et cyrillique en dérivent."
+   },
+   "he": {
+    "nazev": "כתב יווני",
+    "text": "היוונים אימצו אותו מהפיניקים, כנראה במאה ה-9 או ה-8 לפנה״ס, והיו הראשונים שכתבו את התנועות באופן שיטתי. כיום הוא משמש לכתיבת יוונית; ממנו נגזרו הכתב הלטיני (דרך האלפבית האטרוסקי), הכתב הגותי, הכתב הקופטי והכתב הקירילי."
    }
   },
   {
@@ -173,6 +185,10 @@
    "fr": {
     "nazev": "Écriture arabe",
     "text": "Elle s’est développée à partir de l’écriture nabatéenne, rameau de l’araméen ; les inscriptions de transition nabatéo-arabes datent des IIIe–Ve siècles, et la plus ancienne inscription datée en écriture arabe est de 512 (Zabad, en Syrie). Avec l’islam, elle s’est répandue de l’Afrique du Nord à l’Asie du Sud-Est. Outre l’arabe, elle sert à écrire le persan, le pachto, l’ourdou, le sindhi, l’ouïghour et le kurde sorani. En arabe, elle note surtout les consonnes, les voyelles longues par des lettres et les voyelles brèves seulement par des signes facultatifs ; l’ouïghour et le kurde sorani notent en revanche toutes les voyelles."
+   },
+   "he": {
+    "nazev": "כתב ערבי",
+    "text": "התפתח מהכתב הנבטי, שלוחה של הכתב הארמי; כתובות מעבר נבטיות-ערביות מתוארכות למאות ה-3–5, והכתובת המתוארכת העתיקה ביותר בכתב ערבי היא משנת 512 (זבד שבסוריה). עם האסלאם התפשט מצפון אפריקה ועד דרום-מזרח אסיה. מלבד ערבית הוא משמש לכתיבת פרסית, פשטו, אורדו, סינדית, אויגורית וכורדית סוראנית. בערבית הוא מציין בעיקר עיצורים: התנועות הארוכות נכתבות באותיות, והקצרות רק בסימנים שאינם חובה; לעומת זאת, באויגורית ובכורדית סוראנית נכתבות כל התנועות."
    }
   },
   {
@@ -208,6 +224,10 @@
    "fr": {
     "nazev": "Alphabet hébreu",
     "text": "L’écriture « carrée » actuelle dérive de l’écriture araméenne, que les Juifs adoptèrent à l’époque perse (à partir des VIe–Ve siècles av. J.-C.) à la place de l’ancienne écriture paléo-hébraïque. Elle sert à écrire l’hébreu et le yiddish, autrefois aussi le ladino (aujourd’hui écrit surtout en caractères latins) et d’autres langues juives."
+   },
+   "he": {
+    "nazev": "כתב עברי",
+    "text": "הכתב המרובע של ימינו נגזר מהכתב הארמי, שהיהודים אימצו בתקופה הפרסית (מהמאה ה-6–5 לפנה״ס) במקום הכתב העברי הקדום. הוא משמש לכתיבת עברית ויידיש, ובעבר גם לכתיבת לדינו (שכיום נכתבת בעיקר בכתב לטיני) ושפות יהודיות אחרות."
    }
   },
   {
@@ -244,6 +264,10 @@
    "fr": {
     "nazev": "Alphabet syriaque",
     "text": "Il est né de l’écriture araméenne dans la région d’Édesse au cours des premiers siècles de notre ère. Il sert à écrire le syriaque classique, langue liturgique de plusieurs Églises orientales, et les langues néo-araméennes des chrétiens syriaques (Assyriens, Chaldéens, Araméens)."
+   },
+   "he": {
+    "nazev": "כתב סורי",
+    "text": "נוצר מהכתב הארמי בסביבת אדסה במאות הראשונות לספירה. הוא משמש לכתיבת סורית קלאסית, שפת הליטורגיה של כמה כנסיות מזרחיות, ולכתיבת השפות הארמיות החדשות של הנוצרים הסורים (אשורים, כשדים, ארמים)."
    }
   },
   {
@@ -280,6 +304,10 @@
    "fr": {
     "nazev": "Thâna",
     "text": "L’écriture du divehi, attestée au tournant du XVIIe siècle (inscriptions de la mosquée de Kanditheemu), d’usage général à partir du XVIIIe siècle. Ses neuf premières lettres dérivent des chiffres arabes et les neuf suivantes des chiffres indiens ; les voyelles sont notées par des signes obligatoires placés au-dessus et au-dessous des lettres."
+   },
+   "he": {
+    "nazev": "תאנה",
+    "text": "הכתב של דיבהי. הוא מתועד מסוף המאה ה-16 ותחילת המאה ה-17 (כתובות במסגד שבאי קנדיתימו) ונמצא בשימוש כללי מהמאה ה-18. תשע האותיות הראשונות שלו נגזרו מהספרות הערביות, ותשע הבאות מהספרות ההודיות; את התנועות מסמנים בסימני חובה מעל האותיות ומתחתן."
    }
   },
   {
@@ -315,6 +343,10 @@
    "fr": {
     "nazev": "Devanagari",
     "text": "Écriture indienne dérivée de la brahmi par l’intermédiaire des écritures gupta et nagari ; ses lettres sont suspendues à une ligne horizontale continue. Elle sert à écrire le hindi, le marathi, le népalais, le sanskrit et de nombreuses autres langues du nord de l’Inde et du Népal."
+   },
+   "he": {
+    "nazev": "דוונאגרי",
+    "text": "כתב הודי שנגזר מכתב ברהמי דרך כתב גופטה וכתב נאגרי; האותיות שלו תלויות מקו אופקי רציף. הוא משמש לכתיבת הינדי, מראטהית, נפאלית, סנסקריט ושפות רבות אחרות בצפון הודו ובנפאל."
    }
   },
   {
@@ -350,6 +382,10 @@
    "fr": {
     "nazev": "Écriture bengalie",
     "text": "Écriture de l’est de l’Inde, issue de la même souche que la devanagari. Sous deux formes légèrement différentes, elle sert à écrire le bengali et l’assamais, ainsi que le manipuri, pour lequel elle est employée depuis 2021 concurremment avec l’écriture meitei mayek, remise en usage."
+   },
+   "he": {
+    "nazev": "כתב בנגלי",
+    "text": "כתב של מזרח הודו, מאותו שורש כמו דוונאגרי. בשתי גרסאות שונות מעט הוא משמש לכתיבת בנגלית ואסאמית, וגם לכתיבת מניפורית, שבה הוא משמש מאז 2021 לצד הכתב מאיטי מאייק, שזכה לתחייה."
    }
   },
   {
@@ -385,6 +421,10 @@
    "fr": {
     "nazev": "Gurmukhi",
     "text": "L’écriture du pendjabi en Inde, associée aux sikhs ; selon la tradition, elle a été normalisée au XVIe siècle par le deuxième gourou sikh, Angad. Au Pakistan, le pendjabi s’écrit en écriture arabe (shahmukhi)."
+   },
+   "he": {
+    "nazev": "גורמוקי",
+    "text": "הכתב של פנג׳אבי בהודו, הקשור לסיקים; לפי המסורת תיקן אותו במאה ה-16 הגורו השני של הסיקים, אנגד. בפקיסטן כותבים פנג׳אבי בכתב ערבי (שאהמוקהי)."
    }
   },
   {
@@ -420,6 +460,10 @@
    "fr": {
     "nazev": "Écriture gujarati",
     "text": "Proche parente de la devanagari, mais sans la ligne supérieure continue. Elle sert à écrire le gujarati."
+   },
+   "he": {
+    "nazev": "כתב גוג׳רטי",
+    "text": "קרוב משפחה של דוונאגרי, אבל בלי הקו העליון הרציף. הוא משמש לכתיבת גוג׳ראטית."
    }
   },
   {
@@ -455,6 +499,10 @@
    "fr": {
     "nazev": "Écriture odia",
     "text": "L’écriture de l’odia, dans l’est de l’Inde. Ses sommets arrondis caractéristiques s’expliquent généralement par la tradition de l’écriture au stylet sur feuilles de palmier, qu’un trait droit aurait déchirées."
+   },
+   "he": {
+    "nazev": "כתב אודייה",
+    "text": "הכתב של אורייה (אודיה) במזרח הודו. את ראשי האותיות המעוגלים האופייניים לו מסבירים בדרך כלל במסורת הכתיבה בחרט על עלי דקל, שקו ישר היה קורע אותם."
    }
   },
   {
@@ -490,6 +538,10 @@
    "fr": {
     "nazev": "Écriture tamoule",
     "text": "Écriture de l’Inde du Sud dérivée de la brahmi. Elle compte moins de lettres consonantiques que les autres écritures indiennes, car le tamoul ne distingue ni le voisement ni l’aspiration."
+   },
+   "he": {
+    "nazev": "כתב טמילי",
+    "text": "כתב של דרום הודו שנגזר מכתב ברהמי. יש בו פחות אותיות לעיצורים מאשר בכתבים הודיים אחרים, משום שטמילית אינה מבחינה בין עיצורים קוליים לאטומים ובין עיצורים נשופים ללא נשופים."
    }
   },
   {
@@ -525,6 +577,10 @@
    "fr": {
     "nazev": "Écriture télougou",
     "text": "Écriture de l’Inde du Sud aux formes arrondies caractéristiques, étroitement apparentée à l’écriture kannada. Elle sert à écrire le télougou."
+   },
+   "he": {
+    "nazev": "כתב טלוגו",
+    "text": "כתב של דרום הודו עם צורות מעוגלות אופייניות, קרוב מאוד לכתב קאנאדה. הוא משמש לכתיבת טלוגו."
    }
   },
   {
@@ -560,6 +616,10 @@
    "fr": {
     "nazev": "Écriture kannada",
     "text": "Écriture de l’Inde du Sud étroitement apparentée à l’écriture télougou. Elle sert à écrire le kannada ainsi que quelques langues moins répandues du Karnataka, comme le toulou."
+   },
+   "he": {
+    "nazev": "כתב קאנאדה",
+    "text": "כתב של דרום הודו, קרוב מאוד לכתב טלוגו. הוא משמש לכתיבת קאנדה וגם לכתיבת כמה שפות קטנות יותר בקרנטקה, כמו טולו."
    }
   },
   {
@@ -595,6 +655,10 @@
    "fr": {
     "nazev": "Écriture malayalam",
     "text": "L’écriture du malayalam au Kerala, dans le sud de l’Inde, dérivée de l’écriture grantha."
+   },
+   "he": {
+    "nazev": "כתב מליאלאם",
+    "text": "הכתב של מלאיאלאם בקרלה שבדרום הודו, שנגזר מכתב גרנתה."
    }
   },
   {
@@ -630,6 +694,10 @@
    "fr": {
     "nazev": "Écriture cinghalaise",
     "text": "L’écriture du cinghalais au Sri Lanka, dérivée de la brahmi."
+   },
+   "he": {
+    "nazev": "כתב סינהלה",
+    "text": "הכתב של סינהלית בסרי לנקה, שנגזר מכתב ברהמי."
    }
   },
   {
@@ -665,6 +733,10 @@
    "fr": {
     "nazev": "Écriture tibétaine",
     "text": "Selon la tradition, elle a été créée au VIIe siècle par Thonmi Sambhota sur un modèle indien. Elle sert à écrire le tibétain, le dzongkha au Bhoutan et d’autres langues tibétiques ; son orthographe conserve la prononciation du vieux tibétain."
+   },
+   "he": {
+    "nazev": "כתב טיבטי",
+    "text": "לפי המסורת יצר אותו במאה ה-7 תונמי סמבהוטה על פי דגם הודי. הוא משמש לכתיבת טיבטית, דזונגקה בבהוטן ושפות טיבטיות אחרות; הכתיב שלו משמר את ההגייה של הטיבטית העתיקה."
    }
   },
   {
@@ -700,6 +772,10 @@
    "fr": {
     "nazev": "Écriture birmane",
     "text": "Écriture de la famille sud-indienne, traditionnellement considérée comme venue par l’intermédiaire de l’écriture môn (certains chercheurs la font plutôt dériver de l’écriture pyu) ; ses lettres sont formées de cercles et d’arcs. Elle sert à écrire le birman, le môn, le shan et d’autres langues de Birmanie."
+   },
+   "he": {
+    "nazev": "כתב בורמזי",
+    "text": "כתב ממשפחת הכתבים של דרום הודו, שלפי ההסבר המסורתי הגיע דרך כתב מון (יש חוקרים שגוזרים אותו דווקא מכתב פיו); האותיות שלו בנויות מעיגולים ומקשתות. הוא משמש לכתיבת בורמזית, מון, שאן ושפות אחרות של מיאנמר."
    }
   },
   {
@@ -735,6 +811,10 @@
    "fr": {
     "nazev": "Écriture thaïe",
     "text": "Elle est née de l’écriture khmère ancienne ; la tradition attribue sa création au roi Ram Khamhaeng et la date de 1283, bien que l’authenticité de son inscription soit discutée. Elle note aussi les tons du thaï, et les mots ne sont pas séparés par des espaces."
+   },
+   "he": {
+    "nazev": "כתב תאי",
+    "text": "נוצר מהכתב החמרי העתיק; המסורת קושרת את יצירתו למלך רם קהמהנג ולשנת 1283, אם כי האותנטיות של הכתובת שלו שנויה במחלוקת. הוא מסמן גם את הטונים של תאית, והמילים אינן מופרדות ברווחים."
    }
   },
   {
@@ -770,6 +850,10 @@
    "fr": {
     "nazev": "Écriture lao",
     "text": "Proche parente de l’écriture thaïe, aux formes simplifiées. Elle sert à écrire le lao."
+   },
+   "he": {
+    "nazev": "כתב לאי",
+    "text": "קרוב משפחה של הכתב התאי, בצורות פשוטות יותר. הוא משמש לכתיבת לאית."
    }
   },
   {
@@ -805,6 +889,10 @@
    "fr": {
     "nazev": "Écriture khmère",
     "text": "Elle s’est développée à partir de l’écriture pallava de l’Inde du Sud ; la plus ancienne inscription khmère datée est de 611. Elle sert à écrire le khmer, et les écritures thaïe et lao en dérivent."
+   },
+   "he": {
+    "nazev": "כתב חמרי",
+    "text": "התפתח מכתב פלאווה של דרום הודו; הכתובת הקמרית המתוארכת העתיקה ביותר היא משנת 611. הוא משמש לכתיבת קמרית, וממנו נגזרו הכתב התאי והכתב הלאי."
    }
   },
   {
@@ -840,6 +928,10 @@
    "fr": {
     "nazev": "Alphabet géorgien",
     "text": "Les plus anciennes inscriptions géorgiennes datent du Ve siècle. Le géorgien s’écrit aujourd’hui avec l’alphabet mkhedrouli de 33 lettres, qui ne distingue pas majuscules et minuscules dans le texte courant ; les formes mtavrouli ne servent qu’aux titres entièrement en capitales."
+   },
+   "he": {
+    "nazev": "כתב גאורגי",
+    "text": "הכתובות הגאורגיות העתיקות ביותר הן מהמאה ה-5. כיום כותבים גאורגית באלפבית מחדרולי בן 33 אותיות, שאין בו הבחנה בין אותיות גדולות לקטנות בטקסט רציף; צורות מתאוורולי משמשות רק לכותרות באותיות גדולות בלבד."
    }
   },
   {
@@ -875,6 +967,10 @@
    "fr": {
     "nazev": "Alphabet arménien",
     "text": "Il a été créé vers 405 par le moine Mesrop Machtots afin que la Bible puisse être traduite en arménien. Il compte 36 lettres d’origine, auxquelles deux autres, ō et f, ont été ajoutées plus tard (XIIe–XIIIe siècle)."
+   },
+   "he": {
+    "nazev": "כתב ארמני",
+    "text": "בסביבות שנת 405 יצר אותו הנזיר מסרופ משטוץ, כדי שאפשר יהיה לתרגם את התנ״ך לארמנית. יש בו 36 אותיות מקוריות, ואליהן נוספו מאוחר יותר (במאות ה-12–13) שתיים נוספות, ō ו-f."
    }
   },
   {
@@ -910,6 +1006,10 @@
    "fr": {
     "nazev": "Écriture éthiopienne",
     "text": "Elle s’est développée à partir de l’écriture sud-arabique ; au IVe siècle, on a commencé à adjoindre aux consonnes des signes vocaliques. Elle sert à écrire l’amharique, le tigrigna et la langue liturgique guèze."
+   },
+   "he": {
+    "nazev": "כתב אתיופי",
+    "text": "התפתח מהכתב הדרום-ערבי; במאה ה-4 החלו לצרף לעיצורים סימנים לתנועות. הוא משמש לכתיבת אמהרית, תיגרינית ושפת הליטורגיה געז."
    }
   },
   {
@@ -947,6 +1047,10 @@
    "fr": {
     "nazev": "Caractères chinois",
     "text": "Les plus anciens témoignages sont les inscriptions oraculaires sur os de la dynastie Shang (vers 1250 av. J.-C.). Un caractère note généralement une syllabe porteuse de sens. Les caractères simplifiés sont employés en RPC et à Singapour, les caractères traditionnels à Taïwan, à Hong Kong et à Macao."
+   },
+   "he": {
+    "nazev": "סימנים סיניים",
+    "text": "העדויות העתיקות ביותר הן כתובות עצמות האורקל משושלת שאנג (בערך 1250 לפנה״ס). סימן אחד כותב בדרך כלל הברה אחת בעלת משמעות. סימנים מפושטים משמשים ברפובליקה העממית של סין ובסינגפור, וסימנים מסורתיים בטייוואן, בהונג קונג ובמקאו."
    }
   },
   {
@@ -984,6 +1088,10 @@
    "fr": {
     "nazev": "Écriture japonaise",
     "text": "Elle combine les caractères chinois (kanji) avec deux syllabaires, les hiragana et les katakana, issus des caractères chinois au IXe siècle. Elle s’écrit aussi bien horizontalement que verticalement."
+   },
+   "he": {
+    "nazev": "כתב יפני",
+    "text": "משלב סימנים סיניים (קאנג׳י) עם שני כתבים הברתיים, הירגאנה וקטקאנה, שהתפתחו מסימנים סיניים במאה ה-9. כותבים אותו גם בשורות אופקיות וגם בטורים אנכיים."
    }
   },
   {
@@ -1020,6 +1128,10 @@
    "fr": {
     "nazev": "Hangeul",
     "text": "L’écriture coréenne (chosŏn'gŭl en Corée du Nord), créée à l’initiative du roi Sejong et promulguée en 1446. Les lettres sont regroupées en blocs syllabiques, et la forme des consonnes imite la position des organes de la parole."
+   },
+   "he": {
+    "nazev": "האנגול",
+    "text": "הכתב הקוריאני (בקוריאה הצפונית: צ׳וסונגול, Chosŏn’gŭl), שנוצר ביוזמת המלך סג׳ונג והוכרז ב-1446. האותיות מקובצות לגושי הברות, וצורות העיצורים מחקות את מנח איברי הדיבור."
    }
   },
   {
@@ -1056,6 +1168,10 @@
    "fr": {
     "nazev": "Écriture mongole",
     "text": "Elle est née au XIIIe siècle de l’écriture ouïghoure et s’écrit verticalement, de haut en bas. En Mongolie, elle a été remplacée dans l’usage courant par le cyrillique à partir des années 1940 ; depuis le 2 janvier 2025, les documents officiels y sont toutefois établis dans les deux écritures. En Mongolie-Intérieure, en Chine, elle est restée en usage sans interruption."
+   },
+   "he": {
+    "nazev": "כתב מונגולי",
+    "text": "נוצר במאה ה-13 מהכתב האויגורי, וכותבים אותו בטורים אנכיים מלמעלה למטה. במונגוליה הוא הוחלף בשימוש היומיומי בכתב הקירילי מאז שנות ה-40 של המאה ה-20; אולם מאז 2 בינואר 2025 מנפיקים שם מסמכים רשמיים בשני הכתבים. במונגוליה הפנימית שבסין הוא נשאר בשימוש רציף."
    }
   },
   {
@@ -1092,6 +1208,10 @@
    "fr": {
     "nazev": "Syllabaire autochtone canadien",
     "text": "On l’attribue généralement au missionnaire James Evans (vers 1840, Norway House), bien que la tradition orale crie l’attribue à Mistanâkôwêw (Calling Badger). Traditionnellement appelé syllabaire, il est typologiquement un abugida. La forme d’un signe indique la consonne, et son orientation la voyelle. Il sert à écrire le cri, l’ojibwé et l’inuktitut."
+   },
+   "he": {
+    "nazev": "הכתב ההברתי של הילידים בקנדה",
+    "text": "בדרך כלל מייחסים אותו למיסיונר ג׳יימס אוונס (בערך 1840, נורוויי האוס), אבל המסורת שבעל פה של בני הקרי מייחסת אותו למיסטנאקואו (Mistanâkôwêw, \"הגירית הקוראת\"). באופן מסורתי הוא מכונה כתב הברתי, אבל מבחינה טיפולוגית זוהי אבוגידה. צורת הסימן מציינת את העיצור, וכיוונו מציין את התנועה. הוא משמש לכתיבת קרי, אוג׳יבווה ואינוקטיטוט."
    }
   },
   {
@@ -1128,6 +1248,10 @@
    "fr": {
     "nazev": "Tifinagh",
     "text": "L’écriture des langues berbères, enracinée dans l’ancienne écriture libyco-berbère ; les Touaregs l’ont employée sans interruption. Sa forme moderne est depuis 2003 l’écriture officiellement adoptée pour le berbère au Maroc (le berbère y est langue officielle depuis 2011). Le tifinagh touareg traditionnel ne note généralement pas les voyelles."
+   },
+   "he": {
+    "nazev": "טיפינה",
+    "text": "הכתב של השפות הברבריות, ששורשיו בכתב הלובי-ברברי העתיק; הטוארגים משתמשים בו ברציפות. צורתו המודרנית היא מאז 2003 הכתב שאומץ רשמית לברברית במרוקו (הברברית היא שפה רשמית מאז 2011). הטיפינה המסורתי של הטוארגים אינו מציין לרוב את התנועות."
    }
   },
   {
@@ -1164,6 +1288,10 @@
    "fr": {
     "nazev": "Syllabaire cherokee",
     "text": "Créé par Sequoyah, il a été adopté par le conseil cherokee en 1825 ; en quelques années, les Cherokees ont appris en masse à l’écrire. Presque chacun de ses 85 signes note une syllabe (l’exception est un s isolé)."
+   },
+   "he": {
+    "nazev": "כתב הברתי צ׳רוקי",
+    "text": "יצר אותו סקויה, ומועצת הצ׳רוקי אימצה אותו ב-1825; בתוך שנים ספורות למדו בני הצ׳רוקי לכתוב בו בהמוניהם. כמעט כל אחד מ-85 הסימנים שלו כותב הברה (היוצא מן הכלל הוא s עצמאי)."
    }
   },
   {
@@ -1200,6 +1328,10 @@
    "fr": {
     "nazev": "N’ko",
     "text": "Il a été créé en 1949 par l’enseignant guinéen Solomana Kanté pour les langues mandingues. Il s’écrit de droite à gauche et note aussi les tons."
+   },
+   "he": {
+    "nazev": "נ׳קו",
+    "text": "יצר אותו ב-1949 המורה הגינאי סולומנה קנטה עבור שפות המנדינג. כותבים אותו מימין לשמאל, והוא מסמן גם טונים."
    }
   },
   {
@@ -1236,6 +1368,10 @@
    "fr": {
     "nazev": "Écriture vaï",
     "text": "Le syllabaire de la langue vaï au Liberia, créé dans les années 1830 ; la tradition l’attribue à Momolu Duwalu Bukele."
+   },
+   "he": {
+    "nazev": "כתב ואי",
+    "text": "הכתב ההברתי של שפת ואי בליבריה, שנוצר בשנות ה-30 של המאה ה-19; המסורת מייחסת אותו למומולו דוואלו בוקלה."
    }
   },
   {
@@ -1272,6 +1408,10 @@
    "fr": {
     "nazev": "Écriture yi",
     "text": "Le syllabaire de la langue nuosu (yi) dans la province du Sichuan, normalisé dans les années 1970 à partir de l’écriture traditionnelle."
+   },
+   "he": {
+    "nazev": "כתב יי",
+    "text": "הכתב ההברתי של שפת נואסו (יי) במחוז סצ׳ואן, שתוקנן בשנות ה-70 על בסיס הכתב המסורתי."
    }
   },
   {
@@ -1308,6 +1448,10 @@
    "fr": {
     "nazev": "Ol chiki",
     "text": "L’écriture du santali, créée en 1925 par Raghunath Murmu. À la différence des écritures dérivées de la brahmi, c’est un alphabet doté de lettres distinctes pour les voyelles."
+   },
+   "he": {
+    "nazev": "אול צ׳יקי",
+    "text": "הכתב של סנטאלי, שיצר ב-1925 רגונאת מורמו. בניגוד לכתבים שנגזרו מכתב ברהמי, זהו אלפבית עם אותיות נפרדות לתנועות."
    }
   }
  ]
