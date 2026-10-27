@@ -1161,7 +1161,8 @@ document.querySelector(".preskocit").addEventListener("click", function(e){ e.pr
    #gl       – světélka jazyků (WebGL; když chybí, kreslí se 2D)
    #popisky  – jména jazyků
    #globus   – oblouky k příbuzným a zaměřovač vybraného místa; bere myš a prsty */
-const scena = $("scena"), platno = $("globus"), podklad = $("podklad"), platnoGl = $("gl"), platnoPopisky = $("popisky");
+const scena = $("scena"), platno = $("globus"), podklad = $("podklad"), platnoPopisky = $("popisky");
+let platnoGl = $("gl");   // při ztrátě kontextu WebGL se vymění za nové (hlidejGl)
 let ctx = null, ctxPodklad = null, ctxPopisky = null, ctxBody = null;
 const proj = globusOk ? d3.geoOrthographic().clipAngle(90).precision(0.9) : null;
 const sit = globusOk ? d3.geoGraticule().step([20, 20])() : null;
@@ -1274,6 +1275,26 @@ function pripravGl(){
   glJaz.hust = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, glJaz.hust); gl.bufferData(gl.ARRAY_BUFFER, hust, gl.STATIC_DRAW);
   gl.enable(gl.BLEND);
   return true;
+}
+/* Safari (iPhone, Mac po probuzení) umí kontext WebGL zahodit a obnovení často nepošle – glóbus pak zůstal bez teček
+   (uživatel 27. 10. 2026). Když se kontext do 1,5 s neobnoví, plátno teček se vymění za nové; bez WebGL kreslí tečky 2D. */
+function hlidejGl(c){
+  c.addEventListener("webglcontextlost", function(e){
+    e.preventDefault();
+    setTimeout(function(){ if (c === platnoGl && gl && gl.isContextLost()) novePlatnoGl(); }, 1500);
+  });
+  c.addEventListener("webglcontextrestored", function(){ if (c === platnoGl && pripravGl()) obnovTecky(); });
+}
+function novePlatnoGl(){
+  const n = platnoGl.cloneNode(false);
+  platnoGl.replaceWith(n); platnoGl = n; gl = null; glJaz = null; ctxBody = null;
+  hlidejGl(n);
+  if (!pripravGl()) ctxBody = n.getContext("2d");
+  zmer(); obnovTecky();
+}
+function obnovTecky(){
+  if (gl) { nahrajPriznaky(glJaz); nahrajTypologii(); }
+  teckyZmeneny = true; potrebaKresli = true; ozivit();
 }
 function nahrajPriznaky(v){ if (!gl) return; gl.bindBuffer(gl.ARRAY_BUFFER, v.flag); gl.bufferSubData(gl.ARRAY_BUFFER, 0, v.data); }
 function barvaGl(u, hex, alfa){ const c = rgb(hex); gl.uniform4f(u, c[0], c[1], c[2], alfa); }
@@ -1514,13 +1535,20 @@ function malbaNaKarte(id){
   el.hidden = !ma;
   if (el.dataset.id !== (id || "")) { if (ma) vlozMalbu(el, id); else el.replaceChildren(); el.dataset.id = id || ""; }
 }
-const relief = {platno: null, gl: null, u: {}, hotovo: false, sirkaTex: 1};
+const relief = {platno: null, gl: null, u: {}, hotovo: false, sirkaTex: 1, pokusy: 0};
 function pripravRelief(){
   if (!RELIEF) return;
   const p = document.createElement("canvas");
   let g = null;
   try { g = p.getContext("webgl2", {alpha: true, premultipliedAlpha: true, antialias: false, depth: false, stencil: false, preserveDrawingBuffer: true}); } catch (e) {}
   if (!g) return;
+  /* ztracený kontext (Safari): do obnovení plochá pevnina, pak nové plátno – nejvýš třikrát */
+  p.addEventListener("webglcontextlost", function(e){
+    e.preventDefault();
+    if (relief.platno !== p) return;
+    relief.hotovo = false; relief.gl = null; relief.platno = null; koule.klic = ""; potrebaKresli = true; ozivit();
+    if (relief.pokusy++ < 3) setTimeout(pripravRelief, 1500);
+  });
   const vs = "#version 300 es\nin vec2 a_p; void main(){ gl_Position = vec4(a_p, 0.0, 1.0); }";
   const fs = [
     "#version 300 es",
@@ -1564,6 +1592,7 @@ function pripravRelief(){
   relief.platno = p; relief.gl = g;
   const obr = new Image();
   obr.onload = function(){
+    if (relief.gl !== g || g.isContextLost()) return;
     const t = g.createTexture(); g.bindTexture(g.TEXTURE_2D, t);
     g.pixelStorei(g.UNPACK_ALIGNMENT, 1);
     g.texImage2D(g.TEXTURE_2D, 0, g.R8, g.RED, g.UNSIGNED_BYTE, obr);
@@ -1798,6 +1827,10 @@ function kresliPodklad(){
     c.setTransform(1, 0, 0, 1, 0, 0); c.drawImage(koule.platno, 0, 0); c.setTransform(dpr, 0, 0, dpr, 0, 0);
   } else kresliKouli(c, cx, cy, r);
   c.lineWidth = 1;
+  if (relief.hotovo && relief.gl.isContextLost()) {   // pojistka, kdyby událost o ztrátě kontextu nepřišla
+    relief.hotovo = false; relief.gl = null; relief.platno = null; koule.klic = "";
+    if (relief.pokusy++ < 3) setTimeout(pripravRelief, 1500);
+  }
   if (relief.hotovo) {                 /* reliéf nahradí plochou kouli i pevninu */
     c.setTransform(1, 0, 0, 1, 0, 0); c.drawImage(kresliRelief(cx, cy, r), 0, 0); c.setTransform(dpr, 0, 0, dpr, 0, 0);
     c.beginPath(); cestaPodklad(sit); c.strokeStyle = barvy.sit; c.stroke();
@@ -2217,6 +2250,18 @@ function posunDok(){
   else if (k && !k.hidden) x = Math.min(sirka - w / 2 - 12, Math.max(x, k.offsetLeft + k.offsetWidth + 10 + w / 2));
   x = Math.round(x);
   if (x !== dokX) { dokX = x; scena.style.setProperty("--dok-x", x + "px"); }
+  hudNadDok(x, w);
+}
+/* souřadnice a počítadlo „v záběru …“ v dolních rozích: když na ně dojede řada medailonů (odsune ji otevřená karta),
+   vyjedou nad ni (dřív ležely přes popisek „Nastavení“) */
+function hudNadDok(x, w){
+  const hud = $("hud"), dok = $("dok"), vyska = dok.offsetHeight + 12;
+  [hudStav, hudSouradnice].forEach(function(el){
+    el.classList.remove("nad-dokem");
+    if (!desktop.matches || !el.offsetWidth) return;
+    const l = hud.offsetLeft + el.offsetLeft, r = l + el.offsetWidth;
+    if (r > x - w / 2 - 8 && l < x + w / 2 + 8) { el.classList.add("nad-dokem"); el.style.setProperty("--nad-dokem", vyska + "px"); }
+  });
 }
 /* Nápověda za otazníkem vpravo nahoře: tři kroky (zatoč, přibliž, klikni), které se odškrtávají; po všech třech zmizí.
    Místo bubliny „Klikni na mě“ jedna tečka slabě pulzuje, dokud si člověk poprvé nevybere jazyk. */
@@ -3964,8 +4009,7 @@ if (globusOk) {
     ctx = platno.getContext("2d"); ctxPodklad = podklad.getContext("2d"); ctxPopisky = platnoPopisky.getContext("2d");
     if (!ctx || !ctxPodklad || !ctxPopisky) throw new Error("plátno neumí 2D");
     if (!pripravGl()) { ctxBody = platnoGl.getContext("2d"); if (!ctxBody) throw new Error("plátno neumí kreslit tečky"); }
-    platnoGl.addEventListener("webglcontextlost", function(e){ e.preventDefault(); });
-    platnoGl.addEventListener("webglcontextrestored", function(){ if (pripravGl()) { nahrajPriznaky(glJaz); teckyZmeneny = true; } });
+    hlidejGl(platnoGl);
     cestaPodklad = d3.geoPath(proj, ctxPodklad);
     nactiBarvy();
     pripravRelief();
@@ -4748,6 +4792,7 @@ function spustCestu(id){
   if (strom && strom.zapnuto) strom.prepni(false);
   if (brana) zavriBranu(true);
   if (eu) ukonciEU(true);
+  if (putovani) ukonciPutovani(true);   // jinak zůstal panel putování otevřený pod cestou slova (27. 10. 2026)
   if (vybrany || srovnani) { srovnani = null; vybrany = null; karta.hidden = true; delete karta.dataset.jazyk; oznacTlacitka(null); }
   zeme = null; okno.hidden = true; bublinaBod.hidden = true;
   schovejUkazatel(true);

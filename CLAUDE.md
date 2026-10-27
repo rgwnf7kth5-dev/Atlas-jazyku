@@ -565,6 +565,8 @@ procentový řetězec, proto `stranky.mjs` bere slug z anglického názvu. LOCAL
   odhad atlasu včetně nerodilých mluvčích) a údajem z Wikidat s rokem, pokud je (`oddilMluvciAtlas`; hodnocení webu 28. 9. 2026:
   zdroj přímo u čísla). Statické stránky jazyků mají „(odhad)“. Počítadlo dole na glóbu je „v záběru N z 7 967 jazyků“
   (dřív „na glóbu“, hodnotitelé to četli jako nesoulad dat). Nápověda u kroku Výběr zmiňuje i klepnutí na zemi.
+- Souřadnice a počítadlo „v záběru …“ v dolních rozích vyjedou nad řadu medailonů, když na ně řada dojede (`hudNadDok` v `posunDok`,
+  třída `.nad-dokem`; 27. 10. 2026 – s otevřenou kartou ležely přes popisek „Nastavení“).
 - **Počty**: glóbus má 7 967 teček (jazyky Glottologu), seznam 7 970 položek. Srbštinu a chorvatštinu vede Glottolog
   jako jeden jazyk (srbochorvatština má tečku) a hmongštinu jako několik, atlas je má zvlášť – tečku nemají.
   Vysvětluje to jen stránka O datech (oddíl Jazyk, nebo nářečí). Věta v patičce seznamu byla 25. 9. 2026 na přání
@@ -1061,6 +1063,12 @@ Při ověření opraveno mj.: Doctrina Christiana „pokládaná za“ první kn
   Každá barva má vždy i textový popisek (druhotné rozlišení – nerušit).
 
 ## Výkon
+
+**Ztráta kontextu WebGL** (27. 10. 2026, uživatel poslal snímek prázdné modré koule bez pevniny a teček – Safari na Macu/iPhonu umí
+kontext po uspání nebo při nedostatku paměti zahodit a obnovení často nepošle): `hlidejGl` u teček – když se kontext do 1,5 s neobnoví,
+`novePlatnoGl` vymění `#gl` za nové plátno (bez WebGL kreslí tečky 2D, `ctxBody`); reliéf (`pripravRelief`) při ztrátě kreslí plochou
+pevninu (`relief.hotovo = false`) a nejvýš třikrát si vytvoří nové plátno, pojistka `isContextLost()` i bez události. Test: zachytit
+kontexty přes `addInitScript` (obal `getContext`) a zavolat `WEBGL_lose_context.loseContext()` – `ztrata.mjs` ve scratchpadu `pw/`.
 
 Glóbus má čtyři plátna nad sebou: `#podklad` (koule, pevnina, území vybraného jazyka, hranice – 2D),
 `#gl` (7 967 světélek – WebGL, bez něj záložní 2D; barva a velikost podle příznaku 0–5 z polí `u_b`, `u_vel`, `u_mek`), `#popisky` a `#globus` (oblouky a zaměřovač; bere myš).

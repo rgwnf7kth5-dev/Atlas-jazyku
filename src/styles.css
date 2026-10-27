@@ -219,6 +219,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
 .hud{position:absolute; inset:14px; z-index:5; pointer-events:none; font-family:var(--pismo-data); font-size:.7rem; letter-spacing:.1em; color:var(--cyan)}
 .hud .souradnice{position:absolute; left:4px; bottom:3px; opacity:.85; font-variant-numeric:tabular-nums}
 .hud .stav-hud{position:absolute; right:4px; bottom:3px; opacity:.85}
+.hud .nad-dokem{bottom:var(--nad-dokem, 3px)}   /* nad řadou medailonů, když na roh dojede (hudNadDok) */
 
 .tl{display:inline-flex; align-items:center; gap:8px; cursor:pointer; white-space:nowrap; font-weight:600; font-size:.84rem;
   padding:9px 15px; border-radius:999px; color:var(--text);

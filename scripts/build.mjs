@@ -79,7 +79,7 @@ for (const l of DALSI) UI[l] = spoj(UI.en, json(`src/ui/${l}.json`));
 const JAZYKY = jazykyAtlasu.map(j => {
   const t = {};
   for (const l of JAZYKY_WEBU) {
-    const p = spoj(j.en, j[l]);
+    const p = l === "cs" ? j.cs : spoj(j.en, j[l]);   // čeština se z angličtiny nedoplňuje: její pozdrav je v j.pozdrav (znaková čeština „Ahoj (rukou)“)
     t[l] = { n: p.nazev, prep: p.vyslovnost, rod: p.rodina, fakt: p.fakt };
     if (p.pozdrav) t[l].pis = p.pozdrav;
   }
