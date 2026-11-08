@@ -998,6 +998,19 @@ Pyrenejském poloostrově, edikt 1492 nařizoval odchod (křest jen jako možnos
 seseo přesně, „jen část obyvatel“ při nezávislosti, lusitánština neutrální šedou (`ztr`). Nové barvy `--put-ahd, de, dex, zan`
 a `--put-ibe, bsk, ibr, cas, esx, ind, lad` (ve španělštině je baskičtina `bsk`, Vizigóti `gm`, judeošpanělština `lad`, aby se
 v jedné etapě nepotkaly stejné barvy). Šipka galeon přechází 180. poledník – kreslí se správně (jako u maorštiny).
+**Putování čínštiny** (8. 11. 2026, uživatel: „napřed udělej příběh čínštiny“; `#putovani-cinstina` / `#journey-chinese` / `#viaggio-cinese` /
+`#reise-chinesisch` / `#voyage-chinois`, v he a zh anglická adresa; texty ve všech sedmi jazycích, autor + nezávislá kontrola (35 oprav) +
+pět překladatelů; generátor `put-zh-skripty/stavba.py`, poznámky `put-zh/POZNAMKY.md` a `OVERENI.md` ve scratchpadu). 9 etap: prasinotibetština
+(severní Čína – Zhang a kol. 2019, Sagart a kol. 2019 – proti jihozápadu, sporně), věštebné kosti a stará čínština, klasická čínština a sjednocení
+Čchin (Galambos 2004: sjednocení písma sporné), na jih od Jang-c'-ťiang (311, 1127; pět vln hakka jen tradice; Čchie-jün 601), čínské písmo ve
+východní Asii, kuan-chua (Coblin: spíš Nan-ťing), do světa (Nan-jang, Kalifornie, Viktorie, Kuba a Peru asi 220 tisíc), spisovný jazyk 20. století,
+čínské jazyky dnes. Barvy `--put-sit, tb, och, kla, ri, jih, zhn, wu, gan, xia, hak, min, yue, sx, jap, hq` (+ `an`). Při ověření opraveno mj.:
+1,3–1,4 miliardy mluvčích (Ethnologue 2025, 403 – jen přes Wikipedii, při další příležitosti ověřit přímo), Fu-ťien osídlen Chany až od konce Chan,
+hakka na Tchaj-wanu až za Čching, Tchaj-wan 1945 „převzala správu po japonské kapitulaci“ (bez postoje ke svrchovanosti), omezování tchajwanských
+jazyků do konce 80. let, Hongkong „dva psané a tři mluvené jazyky“, novela zákona o celostátním společném jazyce (přijata 27. 12. 2025, účinná
+1. 1. 2026: pchu-tchung-chua základním vyučovacím jazykem) **vedle** kritiky ústupu výuky v tibetštině a mongolštině (HRW 2020, protesty ve Vnitřním
+Mongolsku 2020) – symetricky, bez hodnocení. „Dialekt × jazyk“: dělí se sami jazykovědci podle měřítka. V čínské verzi mandarínština na Tchaj-wanu
+a v Singapuru 华语 (místní úřední termín), jinde 官话; skupiny 语群 (ani 方言, ani 语言).
 **Vstup do putování** (29. 9. 2026, uživatel vybral z návrhů jen „skupinu v Příbězích“): v okně Příběhy jazyků je za skupinou
 Slova na cestách skupina **Putování jazyků** (`vlozPutovani` v `otevriSekci`) s dlaždicí pro každé putování – akvarel jazyka
 (`/malby/<atlas>.jpg`, v artefaktu `malbaObrazek`, bez oživení), název a `podtitul` (povinný, validace). Tlačítko na kartě jazyka

@@ -23550,33 +23550,54 @@
   },
   {
    "id": "cinstina",
-   "koncept": true,
    "atlas": "zh",
    "adresa": {
     "cs": "putovani-cinstina",
     "en": "journey-chinese",
     "it": "viaggio-cinese",
     "de": "reise-chinesisch",
-    "fr": "voyage-chinois"
+    "fr": "voyage-chinois",
+    "he": "journey-chinese",
+    "zh": "journey-chinese"
    },
    "nazev": {
     "cs": "Putování čínštiny",
-    "en": "The journey of Chinese"
+    "en": "The journey of Chinese",
+    "it": "Il viaggio del cinese",
+    "de": "Die Reise des Chinesischen",
+    "fr": "Le voyage du chinois",
+    "he": "המסע של הסינית",
+    "zh": "汉语的旅程"
    },
    "podtitul": {
     "cs": "Od věštebných kostí k jazyku s nejvíce rodilými mluvčími na světě",
-    "en": "From the oracle bones to the language with the most native speakers in the world"
+    "en": "From the oracle bones to the language with the most native speakers in the world",
+    "it": "Dalle ossa oracolari alla lingua con più madrelingua al mondo",
+    "de": "Von den Orakelknochen zur Sprache mit den meisten Muttersprachlern der Welt",
+    "fr": "Des os oraculaires à la langue qui compte le plus de locuteurs natifs au monde",
+    "he": "מעצמות האורקל לשפה בעלת מספר דוברי האם הגדול בעולם",
+    "zh": "从甲骨文到世界上母语使用者最多的语言"
    },
    "uvod": {
     "cs": "Odkud podle dnešních hypotéz pochází sinotibetská rodina a jak se z ní vyvinula čínština, proč se v Číně mluví mnoha varietami, které si navzájem nerozumějí, jak čínské písmo a klasická čínština ovlivnily Koreu, Japonsko a Vietnam, jak se jižní čínské jazyky dostaly do jihovýchodní Asie, Ameriky a Austrálie a jak vznikla dnešní spisovná mandarínština. Letopočty nejstarších období jsou přibližné.",
-    "en": "Where the Sino-Tibetan family may have originated and how Chinese developed from it, why China has many varieties that are mutually unintelligible, how Chinese writing and Classical Chinese shaped Korea, Japan and Vietnam, how the southern Chinese languages reached South-East Asia, America and Australia, and how today’s standard Mandarin came about. Dates for the earliest periods are approximate."
+    "en": "Where the Sino-Tibetan family may have originated and how Chinese developed from it, why China has many varieties that are mutually unintelligible, how Chinese writing and Classical Chinese shaped Korea, Japan and Vietnam, how the southern Chinese languages reached South-East Asia, America and Australia, and how today’s standard Mandarin came about. Dates for the earliest periods are approximate.",
+    "it": "Dove potrebbe aver avuto origine la famiglia sino-tibetana e come se ne sviluppò il cinese, perché la Cina ha molte varietà reciprocamente incomprensibili, come la scrittura cinese e il cinese classico plasmarono la Corea, il Giappone e il Vietnam, come le lingue cinesi meridionali giunsero nel Sud-est asiatico, in America e in Australia, e come nacque l’odierno mandarino standard. Le date dei periodi più antichi sono approssimative.",
+    "de": "Wo die sinotibetische Sprachfamilie ihren Ursprung haben könnte und wie sich aus ihr das Chinesische entwickelte, warum in China viele Varietäten gesprochen werden, die sich gegenseitig nicht verstehen, wie die chinesische Schrift und das klassische Chinesisch Korea, Japan und Vietnam prägten, wie die südchinesischen Sprachen nach Südostasien, Amerika und Australien gelangten und wie das heutige Standardmandarin entstand. Die Datierungen der frühesten Epochen sind ungefähr.",
+    "fr": "Où la famille sino-tibétaine a pu naître et comment le chinois en est issu, pourquoi la Chine compte de nombreuses variétés mutuellement inintelligibles, comment l’écriture chinoise et le chinois classique ont façonné la Corée, le Japon et le Vietnam, comment les langues chinoises du Sud ont atteint l’Asie du Sud-Est, l’Amérique et l’Australie, et comment est né le mandarin standard d’aujourd’hui. Les dates des périodes les plus anciennes sont approximatives.",
+    "he": "היכן אולי נולדה המשפחה הסינו-טיבטית וכיצד התפתחה ממנה הסינית, מדוע מדברים בסין זנים לשוניים רבים שדובריהם אינם מבינים זה את זה, כיצד עיצבו הכתב הסיני והסינית הקלאסית את קוריאה, יפן ווייטנאם, כיצד הגיעו השפות הסיניות הדרומיות לדרום-מזרח אסיה, לאמריקה ולאוסטרליה, וכיצד נוצרה המנדרינית התקנית של ימינו. התאריכים של התקופות הקדומות ביותר משוערים.",
+    "zh": "汉藏语系可能起源于何处，汉语又如何从中发展而来；为什么中国有许多彼此听不懂的语言变体；汉字和文言如何影响了朝鲜半岛、日本和越南；南方的汉语族语言如何传到东南亚、美洲和澳大利亚；以及今天的标准官话是怎样形成的。最早时期的年代均为约数。"
    },
    "etapy": [
     {
      "id": "prasinotibetstina",
      "doba": {
       "cs": "asi 7000 – 4000 př. n. l. (odhady se liší)",
-      "en": "c. 7000 – 4000 BCE (estimates differ)"
+      "en": "c. 7000 – 4000 BCE (estimates differ)",
+      "it": "circa 7000 – 4000 a.C. (le stime divergono)",
+      "de": "um 7000 – 4000 v. Chr. (Schätzungen gehen auseinander)",
+      "fr": "vers 7000 – 4000 av. J.-C. (les estimations divergent)",
+      "he": "בערך 7000–4000 לפנה״ס (ההערכות שונות)",
+      "zh": "约公元前7000—前4000年（各家估计不一）"
      },
      "pohled": [
       99,
@@ -23585,11 +23606,21 @@
      ],
      "nazev": {
       "cs": "Prasinotibetština",
-      "en": "Proto-Sino-Tibetan"
+      "en": "Proto-Sino-Tibetan",
+      "it": "Il protosinotibetano",
+      "de": "Das Ursinotibetische",
+      "fr": "Le proto-sino-tibétain",
+      "he": "פרוטו-סינו-טיבטית",
+      "zh": "原始汉藏语"
      },
      "text": {
       "cs": "Čínština patří do sinotibetské jazykové rodiny (George van Driem ji nazývá transhimálajskou), která má asi 500 jazyků a přes 1,4 miliardy mluvčích; vedle čínských jazyků k ní patří tibetština, barmština a stovky menších jazyků od Himálaje po Myanmar. Kde a kdy se mluvilo jejím prajazykem, je sporné. Dvě fylogenetické studie z roku 2019 jej kladou na sever Číny, mezi zemědělce pěstující proso na střední a horní Žluté řece: podle Zhanga a kol. (Nature) se rodina začala štěpit asi před 5900 lety, v době kultury Jang-šao a pozdější Ma-ťia-jao, podle Sagarta a kol. (PNAS) asi před 7200 lety, na konci kultury Cch'-šan a na počátku Jang-šao. Jiní badatelé kladou počátky rodiny do jihozápadní Číny nebo na severovýchod Indie, a to až před devět tisíc let. Sporné je i vnitřní členění: tradičně se rodina dělí na čínskou a tibetobarmskou větev a podle Sagarta a kol. se čínské jazyky možná oddělily jako první, van Driem však tibetobarmskou větev jako samostatnou skupinu odmítá. Podle severní hypotézy se část mluvčích šířila z Kan-su na jihozápad přes Tibetskou náhorní plošinu a jiní na jih horskými údolími k Jün-nanu a Myanmaru.",
-      "en": "Chinese belongs to the Sino-Tibetan language family (George van Driem calls it Trans-Himalayan), which has about 500 languages and more than 1.4 billion speakers; besides the Chinese languages it includes Tibetan, Burmese and hundreds of smaller languages from the Himalayas to Myanmar. Where and when its proto-language was spoken is disputed. Two phylogenetic studies published in 2019 place it in northern China, among millet farmers on the middle and upper Yellow River: according to Zhang et al. (Nature) the family began to split about 5,900 years ago, at the time of the Yangshao and later Majiayao cultures; according to Sagart et al. (PNAS) about 7,200 years ago, at the end of the Cishan and the beginning of the Yangshao culture. Other scholars place the family’s origins in south-western China or north-eastern India, as long as nine thousand years ago. Its internal structure is also disputed: traditionally the family is divided into a Chinese and a Tibeto-Burman branch, and according to Sagart et al. the Chinese languages may have been the first to split off, whereas van Driem rejects Tibeto-Burman as a separate group. According to the northern hypothesis some speakers spread from Gansu south-west across the Tibetan Plateau, and others south through the mountain valleys towards Yunnan and Myanmar."
+      "en": "Chinese belongs to the Sino-Tibetan language family (George van Driem calls it Trans-Himalayan), which has about 500 languages and more than 1.4 billion speakers; besides the Chinese languages it includes Tibetan, Burmese and hundreds of smaller languages from the Himalayas to Myanmar. Where and when its proto-language was spoken is disputed. Two phylogenetic studies published in 2019 place it in northern China, among millet farmers on the middle and upper Yellow River: according to Zhang et al. (Nature) the family began to split about 5,900 years ago, at the time of the Yangshao and later Majiayao cultures; according to Sagart et al. (PNAS) about 7,200 years ago, at the end of the Cishan and the beginning of the Yangshao culture. Other scholars place the family’s origins in south-western China or north-eastern India, as long as nine thousand years ago. Its internal structure is also disputed: traditionally the family is divided into a Chinese and a Tibeto-Burman branch, and according to Sagart et al. the Chinese languages may have been the first to split off, whereas van Driem rejects Tibeto-Burman as a separate group. According to the northern hypothesis some speakers spread from Gansu south-west across the Tibetan Plateau, and others south through the mountain valleys towards Yunnan and Myanmar.",
+      "it": "Il cinese appartiene alla famiglia linguistica sino-tibetana (George van Driem la chiama transhimalayana), che conta circa 500 lingue e oltre 1,4 miliardi di parlanti; oltre alle lingue cinesi ne fanno parte il tibetano, il birmano e centinaia di lingue minori dall’Himalaya al Myanmar. Dove e quando si parlasse la sua protolingua è controverso. Due studi filogenetici pubblicati nel 2019 la collocano nella Cina settentrionale, tra i coltivatori di miglio del medio e alto corso del Fiume Giallo: secondo Zhang et al. (Nature) la famiglia cominciò a dividersi circa 5900 anni fa, all’epoca della cultura di Yangshao e della successiva cultura di Majiayao; secondo Sagart et al. (PNAS) circa 7200 anni fa, alla fine della cultura di Cishan e all’inizio di quella di Yangshao. Altri studiosi collocano le origini della famiglia nella Cina sud-occidentale o nell’India nord-orientale, fino a novemila anni fa. Controversa è anche la sua struttura interna: tradizionalmente la famiglia si divide in un ramo cinese e in uno tibeto-birmano, e secondo Sagart et al. le lingue cinesi potrebbero essere state le prime a separarsi, mentre van Driem rifiuta il tibeto-birmano come gruppo a sé. Secondo l’ipotesi settentrionale una parte dei parlanti si diffuse dal Gansu verso sud-ovest attraverso l’altopiano del Tibet, e altri verso sud lungo le valli montane, in direzione dello Yunnan e del Myanmar.",
+      "de": "Das Chinesische gehört zur sinotibetischen Sprachfamilie (George van Driem nennt sie transhimalayisch), die etwa 500 Sprachen und über 1,4 Milliarden Sprecher umfasst; neben den chinesischen Sprachen gehören zu ihr das Tibetische, das Birmanische und Hunderte kleinerer Sprachen vom Himalaya bis Myanmar. Wo und wann ihre Ursprache gesprochen wurde, ist umstritten. Zwei phylogenetische Studien aus dem Jahr 2019 verorten sie im Norden Chinas, bei Hirsebauern am mittleren und oberen Gelben Fluss: Nach Zhang et al. (Nature) begann sich die Familie vor etwa 5900 Jahren aufzuspalten, zur Zeit der Yangshao- und der späteren Majiayao-Kultur, nach Sagart et al. (PNAS) vor etwa 7200 Jahren, am Ende der Cishan- und zu Beginn der Yangshao-Kultur. Andere Forscher verlegen die Anfänge der Familie in den Südwesten Chinas oder in den Nordosten Indiens, und zwar bis zu neuntausend Jahre zurück. Umstritten ist auch die innere Gliederung: Traditionell wird die Familie in einen chinesischen und einen tibetobirmanischen Zweig geteilt, und nach Sagart et al. haben sich die chinesischen Sprachen möglicherweise als erste abgespalten, van Driem dagegen lehnt das Tibetobirmanische als eigene Gruppe ab. Nach der Nordhypothese zog ein Teil der Sprecher von Gansu nach Südwesten über das Hochland von Tibet, andere durch die Gebirgstäler nach Süden in Richtung Yunnan und Myanmar.",
+      "fr": "Le chinois appartient à la famille des langues sino-tibétaines (George van Driem la nomme trans-himalayenne), qui compte environ 500 langues et plus de 1,4 milliard de locuteurs ; outre les langues chinoises, elle comprend le tibétain, le birman et des centaines de langues plus petites, de l’Himalaya au Myanmar. Le lieu et l’époque où l’on parlait sa proto-langue sont contestés. Deux études phylogénétiques publiées en 2019 la situent dans le nord de la Chine, parmi les cultivateurs de millet du cours moyen et supérieur du fleuve Jaune : selon Zhang et al. (Nature), la famille commença à se diviser il y a environ 5 900 ans, à l’époque de la culture de Yangshao et de la culture plus tardive de Majiayao ; selon Sagart et al. (PNAS), il y a environ 7 200 ans, à la fin de la culture de Cishan et au début de celle de Yangshao. D’autres chercheurs situent les origines de la famille dans le sud-ouest de la Chine ou dans le nord-est de l’Inde, il y a jusqu’à neuf mille ans. Sa structure interne est également contestée : traditionnellement, la famille est divisée en une branche chinoise et une branche tibéto-birmane, et selon Sagart et al. les langues chinoises ont peut-être été les premières à se séparer, tandis que van Driem rejette le tibéto-birman comme groupe distinct. Selon l’hypothèse septentrionale, une partie des locuteurs se répandit depuis le Gansu vers le sud-ouest à travers le plateau tibétain, et d’autres vers le sud par les vallées de montagne, en direction du Yunnan et du Myanmar.",
+      "he": "הסינית שייכת למשפחת השפות הסינו-טיבטית (ג׳ורג׳ ואן דרים מכנה אותה טרנס-הימלאית), שבה כ-500 שפות ויותר מ-1.4 מיליארד דוברים; מלבד השפות הסיניות נמנות עמה הטיבטית, הבורמזית ומאות שפות קטנות יותר, מההימלאיה ועד מיאנמר. היכן ומתי דיברו בשפת האם שלה – שנוי במחלוקת. שני מחקרים פילוגנטיים שפורסמו ב-2019 ממקמים אותה בצפון סין, בקרב חקלאים שגידלו דוחן לאורך מהלכו התיכון והעליון של הנהר הצהוב: לפי ג׳אנג ועמיתיו (Nature) החלה המשפחה להתפצל לפני כ-5,900 שנה, בתקופת תרבות יאנגשאו ותרבות מג׳יאיאו המאוחרת ממנה; לפי סגאר ועמיתיו (PNAS) – לפני כ-7,200 שנה, בסוף תרבות צישאן ובראשית תרבות יאנגשאו. חוקרים אחרים ממקמים את ראשית המשפחה בדרום-מערב סין או בצפון-מזרח הודו, ומקדימים אותה עד לפני תשעת אלפים שנה. גם המבנה הפנימי שלה שנוי במחלוקת: באופן מסורתי מחלקים את המשפחה לענף סיני ולענף טיבטו-בורמזי, ולפי סגאר ועמיתיו ייתכן שהשפות הסיניות היו הראשונות שהתפצלו, ואילו ואן דרים דוחה את הטיבטו-בורמזית כקבוצה נפרדת. לפי ההשערה הצפונית התפשטו חלק מהדוברים מגאנסו דרומה-מערבה על פני הרמה הטיבטית, ואחרים דרומה דרך עמקי ההרים, לעבר יונאן ומיאנמר.",
+      "zh": "汉语属于汉藏语系（范德瑞姆〔George van Driem〕称之为跨喜马拉雅语系），该语系约有500种语言、超过14亿使用者；除汉语族语言外，还包括藏语、缅甸语以及从喜马拉雅山到缅甸的数百种较小的语言。它的原始语在何时何地使用，存在争议。2019年发表的两项系统发生学研究把它定在中国北方，即黄河中上游种植粟黍的农人之中：据张梦翰等（《自然》）的研究，该语系约在5900年前开始分化，时值仰韶文化及其后的马家窑文化；据沙加尔〔Sagart〕等（《美国国家科学院院刊》）的研究，则约在7200年前，即磁山文化末期、仰韶文化初期。另一些学者把该语系的起源定在中国西南或印度东北部，时间早至九千年前。其内部分类同样有争议：传统上该语系分为汉语族和藏缅语族两支，据沙加尔等的研究，汉语族语言可能最先分出，而范德瑞姆则不承认藏缅语族是一个独立的类群。按照北方起源假说，一部分使用者从甘肃向西南越过青藏高原扩散，另一部分则沿山谷向南走向云南和缅甸。"
      },
      "oblasti": [
       {
@@ -23619,7 +23650,12 @@
        "barva": "sit",
        "popisek": {
         "cs": "prasinotibetština (Žlutá řeka)",
-        "en": "Proto-Sino-Tibetan (Yellow River)"
+        "en": "Proto-Sino-Tibetan (Yellow River)",
+        "it": "protosinotibetano (Fiume Giallo)",
+        "de": "Ursinotibetisch (Gelber Fluss)",
+        "fr": "proto-sino-tibétain (fleuve Jaune)",
+        "he": "פרוטו-סינו-טיבטית (הנהר הצהוב)",
+        "zh": "原始汉藏语（黄河）"
        }
       },
       {
@@ -23640,7 +23676,12 @@
        "sporna": true,
        "popisek": {
         "cs": "jiná hypotéza: jihozápad",
-        "en": "alternative: the south-west"
+        "en": "alternative: the south-west",
+        "it": "alternativa: il sud-ovest",
+        "de": "Alternative: der Südwesten",
+        "fr": "autre hypothèse : le sud-ouest",
+        "he": "חלופה: הדרום-מערב",
+        "zh": "另一假说：西南"
        }
       },
       {
@@ -23666,7 +23707,12 @@
        "po": "na-tibet",
        "popisek": {
         "cs": "Tibetská plošina",
-        "en": "Tibetan Plateau"
+        "en": "Tibetan Plateau",
+        "it": "altopiano del Tibet",
+        "de": "Hochland von Tibet",
+        "fr": "plateau tibétain",
+        "he": "הרמה הטיבטית",
+        "zh": "青藏高原"
        }
       },
       {
@@ -23693,7 +23739,12 @@
        "po": "na-jih",
        "popisek": {
         "cs": "tibetobarmské jazyky na jihu",
-        "en": "Tibeto-Burman in the south"
+        "en": "Tibeto-Burman in the south",
+        "it": "tibeto-birmano a sud",
+        "de": "Tibetobirmanisch im Süden",
+        "fr": "langues tibéto-birmanes au sud",
+        "he": "שפות טיבטו-בורמזיות בדרום",
+        "zh": "南方的藏缅语言"
        }
       }
      ],
@@ -23741,7 +23792,12 @@
        "barva": "tb",
        "popisek": {
         "cs": "na Tibetskou plošinu",
-        "en": "onto the Tibetan Plateau"
+        "en": "onto the Tibetan Plateau",
+        "it": "verso l’altopiano del Tibet",
+        "de": "ins Hochland von Tibet",
+        "fr": "vers le plateau tibétain",
+        "he": "אל הרמה הטיבטית",
+        "zh": "进入青藏高原"
        }
       },
       {
@@ -23792,7 +23848,12 @@
        "sporna": true,
        "popisek": {
         "cs": "na jih (sporné)",
-        "en": "to the south (disputed)"
+        "en": "to the south (disputed)",
+        "it": "verso sud (controverso)",
+        "de": "nach Süden (umstritten)",
+        "fr": "vers le sud (contesté)",
+        "he": "דרומה (שנוי במחלוקת)",
+        "zh": "向南（有争议）"
        }
       }
      ]
@@ -23801,7 +23862,12 @@
      "id": "stara-cinstina",
      "doba": {
       "cs": "asi 1250 – 256 př. n. l.",
-      "en": "c. 1250 – 256 BCE"
+      "en": "c. 1250 – 256 BCE",
+      "it": "circa 1250 – 256 a.C.",
+      "de": "um 1250 – 256 v. Chr.",
+      "fr": "vers 1250 – 256 av. J.-C.",
+      "he": "בערך 1250–256 לפנה״ס",
+      "zh": "约公元前1250—前256年"
      },
      "pohled": [
       110.5,
@@ -23810,11 +23876,21 @@
      ],
      "nazev": {
       "cs": "Věštebné kosti a stará čínština",
-      "en": "Oracle bones and Old Chinese"
+      "en": "Oracle bones and Old Chinese",
+      "it": "Le ossa oracolari e il cinese antico",
+      "de": "Orakelknochen und Altchinesisch",
+      "fr": "Les os oraculaires et le chinois archaïque",
+      "he": "עצמות אורקל וסינית עתיקה",
+      "zh": "甲骨与上古汉语"
      },
      "text": {
-      "cs": "Nejstarší souvislé doklady čínštiny jsou nápisy na věštebných kostech, lopatkách skotu a spodních štítech želvích krunýřů, do nichž věštci posledních králů dynastie Šang vyrývali otázky a odpovědi. Většina jich pochází z Jin-sü (殷墟), poslední šangské metropole u dnešního An-jangu v provincii Che-nan; nejstarší pocházejí z doby krále U Tinga, kterou radiokarbonové datování kostí klade asi do let 1254–1197 př. n. l. (tradiční chronologie se liší) Písmo je v nich už vyspělé a mnoho znaků lze sledovat až k dnešním. Jazyk šangských a čouských nápisů a nejstarších textů, jako je Kniha písní (Š'-ťing), se nazývá stará čínština; jeho výslovnost se rekonstruuje z rýmů, ze stavby znaků a z pozdějších čínských variet a jednotlivé rekonstrukce se liší (Baxter a Sagart 2014). Kolem poloviny 11. století př. n. l. porazili Šang Čouové z údolí řeky Wej; bronzové nádoby s dlouhými nápisy pak šířily týž psaný jazyk po rozsáhlém území od povodí Žluté řeky po Jang-c'-ťiang. Na západ od Šangů žili Čchiangové, které nápisy zmiňují jako nepřátele; jakým jazykem mluvili, není známo. Jako písmo rozpoznal věštebné kosti podle obvyklého podání teprve roku 1899 učenec Wang I-žung.",
-      "en": "The earliest continuous records of Chinese are inscriptions on oracle bones – cattle shoulder blades and turtle plastrons into which the diviners of the last kings of the Shang dynasty carved questions and answers. Most come from Yinxu (殷墟), the last Shang capital near present-day Anyang in Henan province; the oldest date from the reign of King Wu Ding, which radiocarbon dating of the bones places at about 1254–1197 BCE (traditional chronologies differ). The script is already mature, and many characters can be traced down to those used today. The language of the Shang and Zhou inscriptions and of the oldest texts, such as the Book of Odes (Shijing), is called Old Chinese; its pronunciation is reconstructed from rhymes, from the structure of the characters and from later Chinese varieties, and the reconstructions differ (Baxter and Sagart 2014). Around the middle of the 11th century BCE the Shang were defeated by the Zhou from the Wei valley; bronze vessels with long inscriptions then spread the same written language over a wide area from the Yellow River basin to the Yangtze. West of the Shang lived the Qiang, whom the inscriptions mention as enemies; what language they spoke is unknown. According to the usual account, the oracle bones were recognised as writing only in 1899, by the scholar Wang Yirong."
+      "cs": "Nejstarší souvislé doklady čínštiny jsou nápisy na věštebných kostech, lopatkách skotu a spodních štítech želvích krunýřů, do nichž věštci posledních králů dynastie Šang vyrývali otázky a odpovědi. Většina jich pochází z Jin-sü (殷墟), poslední šangské metropole u dnešního An-jangu v provincii Che-nan; nejstarší pocházejí z doby krále U Tinga, kterou radiokarbonové datování kostí klade asi do let 1254–1197 př. n. l. (tradiční chronologie se liší). Písmo je v nich už vyspělé a mnoho znaků lze sledovat až k dnešním. Jazyk šangských a čouských nápisů a nejstarších textů, jako je Kniha písní (Š'-ťing), se nazývá stará čínština; jeho výslovnost se rekonstruuje z rýmů, ze stavby znaků a z pozdějších čínských variet a jednotlivé rekonstrukce se liší (Baxter a Sagart 2014). Kolem poloviny 11. století př. n. l. porazili Šang Čouové z údolí řeky Wej; bronzové nádoby s dlouhými nápisy pak šířily týž psaný jazyk po rozsáhlém území od povodí Žluté řeky po Jang-c'-ťiang. Na západ od Šangů žili Čchiangové, které nápisy zmiňují jako nepřátele; jakým jazykem mluvili, není známo. Jako písmo rozpoznal věštebné kosti podle obvyklého podání teprve roku 1899 učenec Wang I-žung.",
+      "en": "The earliest continuous records of Chinese are inscriptions on oracle bones – cattle shoulder blades and turtle plastrons into which the diviners of the last kings of the Shang dynasty carved questions and answers. Most come from Yinxu (殷墟), the last Shang capital near present-day Anyang in Henan province; the oldest date from the reign of King Wu Ding, which radiocarbon dating of the bones places at about 1254–1197 BCE (traditional chronologies differ). The script is already mature, and many characters can be traced down to those used today. The language of the Shang and Zhou inscriptions and of the oldest texts, such as the Book of Odes (Shijing), is called Old Chinese; its pronunciation is reconstructed from rhymes, from the structure of the characters and from later Chinese varieties, and the reconstructions differ (Baxter and Sagart 2014). Around the middle of the 11th century BCE the Shang were defeated by the Zhou from the Wei valley; bronze vessels with long inscriptions then spread the same written language over a wide area from the Yellow River basin to the Yangtze. West of the Shang lived the Qiang, whom the inscriptions mention as enemies; what language they spoke is unknown. According to the usual account, the oracle bones were recognised as writing only in 1899, by the scholar Wang Yirong.",
+      "it": "Le più antiche testimonianze continue del cinese sono le iscrizioni sulle ossa oracolari – scapole di bovini e piastroni di tartaruga su cui gli indovini degli ultimi re della dinastia Shang incidevano domande e risposte. La maggior parte proviene da Yinxu (殷墟), l’ultima capitale Shang, presso l’odierna Anyang nella provincia dello Henan; le più antiche risalgono al regno del re Wu Ding, che la datazione al radiocarbonio delle ossa colloca intorno al 1254–1197 a.C. (le cronologie tradizionali divergono). La scrittura è già matura, e molti caratteri si possono seguire fino a quelli usati oggi. La lingua delle iscrizioni Shang e Zhou e dei testi più antichi, come il Libro delle Odi (Shijing), è detta cinese antico; la sua pronuncia si ricostruisce dalle rime, dalla struttura dei caratteri e dalle varietà cinesi successive, e le ricostruzioni divergono (Baxter e Sagart 2014). Intorno alla metà dell’XI secolo a.C. gli Shang furono sconfitti dagli Zhou, provenienti dalla valle del Wei; vasi di bronzo con lunghe iscrizioni diffusero poi la stessa lingua scritta su un’ampia area, dal bacino del Fiume Giallo fino allo Yangtze. A ovest degli Shang vivevano i Qiang, che le iscrizioni menzionano come nemici; quale lingua parlassero non è noto. Secondo il racconto consueto, le ossa oracolari furono riconosciute come scrittura solo nel 1899, dallo studioso Wang Yirong.",
+      "de": "Die frühesten zusammenhängenden Zeugnisse des Chinesischen sind Inschriften auf Orakelknochen – Schulterblättern von Rindern und Bauchpanzern von Schildkröten, in die die Wahrsager der letzten Könige der Shang-Dynastie Fragen und Antworten ritzten. Die meisten stammen aus Yinxu (殷墟), der letzten Hauptstadt der Shang beim heutigen Anyang in der Provinz Henan; die ältesten gehen auf die Regierungszeit König Wu Dings zurück, die die Radiokarbondatierung der Knochen auf etwa 1254–1197 v. Chr. ansetzt (traditionelle Chronologien weichen davon ab). Die Schrift ist bereits ausgereift, und viele Zeichen lassen sich bis zu den heute gebräuchlichen verfolgen. Die Sprache der Inschriften der Shang und Zhou und der ältesten Texte wie des Buchs der Lieder (Shijing) heißt Altchinesisch; ihre Aussprache wird aus Reimen, aus dem Aufbau der Zeichen und aus späteren chinesischen Varietäten rekonstruiert, und die Rekonstruktionen unterscheiden sich (Baxter und Sagart 2014). Um die Mitte des 11. Jahrhunderts v. Chr. wurden die Shang von den Zhou aus dem Wei-Tal besiegt; Bronzegefäße mit langen Inschriften verbreiteten dieselbe Schriftsprache danach über ein weites Gebiet vom Becken des Gelben Flusses bis zum Jangtse. Westlich der Shang lebten die Qiang, die in den Inschriften als Feinde erwähnt werden; welche Sprache sie sprachen, ist unbekannt. Der üblichen Darstellung zufolge erkannte erst 1899 der Gelehrte Wang Yirong die Orakelknochen als Schrift.",
+      "fr": "Les plus anciens témoignages continus du chinois sont les inscriptions sur os oraculaires – omoplates de bovins et plastrons de tortue, dans lesquels les devins des derniers rois de la dynastie Shang gravaient questions et réponses. La plupart proviennent de Yinxu (殷墟), la dernière capitale des Shang, près de l’actuelle Anyang, dans la province du Henan ; les plus anciennes datent du règne du roi Wu Ding, que la datation par le radiocarbone des os situe vers 1254–1197 av. J.-C. (les chronologies traditionnelles diffèrent). L’écriture y est déjà élaborée, et de nombreux caractères peuvent être suivis jusqu’à ceux d’aujourd’hui. La langue des inscriptions des Shang et des Zhou et des textes les plus anciens, comme le Classique des vers (Shijing), est appelée chinois archaïque ; sa prononciation est reconstruite à partir des rimes, de la structure des caractères et des variétés chinoises plus tardives, et les reconstructions divergent (Baxter et Sagart 2014). Vers le milieu du XIᵉ siècle av. J.-C., les Shang furent vaincus par les Zhou, venus de la vallée de la Wei ; des vases de bronze portant de longues inscriptions diffusèrent alors la même langue écrite sur un vaste territoire, du bassin du fleuve Jaune au Yangzi. À l’ouest des Shang vivaient les Qiang, que les inscriptions mentionnent comme ennemis ; on ignore quelle langue ils parlaient. Selon le récit habituel, les os oraculaires ne furent reconnus comme écriture qu’en 1899, par le lettré Wang Yirong.",
+      "he": "התיעוד הרציף הקדום ביותר של הסינית הוא כתובות על עצמות אורקל – שכמות של בקר ושריונות בטן של צבים, שבהן חרטו המגידים של המלכים האחרונים לבית שאנג שאלות ותשובות. רובן באות מיינשו (殷墟), בירתה האחרונה של שאנג, סמוך לאניאנג של היום שבמחוז חנאן; העתיקות ביותר הן מימי מלכותו של המלך וו דינג, שתיארוך פחמן רדיואקטיבי של העצמות ממקם בערך ב-1254–1197 לפנה״ס (הכרונולוגיות המסורתיות שונות). הכתב כבר בשל, ואת רבים מהסימנים אפשר להתחקות עד לאלה שבשימוש היום. השפה של כתובות שאנג וג׳ואו ושל הטקסטים העתיקים ביותר, כמו ספר השירים (שיג׳ינג), נקראת סינית עתיקה; את ההגייה שלה משחזרים מתוך החרוזים, מתוך מבנה הסימנים ומתוך זנים סיניים מאוחרים יותר, והשחזורים שונים זה מזה (בקסטר וסגאר, Baxter & Sagart 2014). בסביבות אמצע המאה ה-11 לפנה״ס הובסו בני שאנג בידי בני ג׳ואו מעמק נהר ויי; כלי ארד עם כתובות ארוכות הפיצו אז את אותה שפה כתובה על פני שטח נרחב, מאגן הנהר הצהוב ועד היאנגצה. ממערב לבני שאנג חיו בני צ׳יאנג, שהכתובות מזכירות כאויבים; איזו שפה דיברו – אין יודעים. לפי המסופר בדרך כלל, עצמות האורקל זוהו ככתב רק ב-1899, בידי המלומד ואנג יי-רונג.",
+      "zh": "最早成段的汉语记录是甲骨上的刻辞：商朝最后几代王的贞人把卜问之辞和答辞刻在牛肩胛骨和龟腹甲上。其中大部分出自商朝最后的都城殷墟，位于今河南省安阳附近；最早的一批属于商王武丁时期，据对甲骨的放射性碳测年，约在公元前1254—前1197年（传统年表与此不同）。这些刻辞中的文字已相当成熟，许多字可以一直追溯到今天使用的汉字。商周铭文以及《诗经》等最古老文献的语言称为上古汉语；其读音依据韵脚、汉字结构和后世的汉语变体构拟，各家构拟不尽相同（白一平〔Baxter〕、沙加尔，2014）。约公元前11世纪中叶，来自渭河流域的周人打败了商；此后，铸有长篇铭文的青铜器把同一种书面语传播到从黄河流域到长江的广大地区。商的西面居住着羌人，卜辞把他们记为敌人；他们说什么语言，不得而知。按照通常的说法，直到1899年，学者王懿荣才认出甲骨上刻的是文字。"
      },
      "oblasti": [
       {
@@ -23844,7 +23920,12 @@
        "barva": "och",
        "popisek": {
         "cs": "Šang (An-jang)",
-        "en": "Shang (Anyang)"
+        "en": "Shang (Anyang)",
+        "it": "Shang (Anyang)",
+        "de": "Shang (Anyang)",
+        "fr": "Shang (Anyang)",
+        "he": "שאנג (אניאנג)",
+        "zh": "商（安阳）"
        }
       },
       {
@@ -23864,7 +23945,12 @@
        "barva": "och",
        "popisek": {
         "cs": "Čou (údolí Wej)",
-        "en": "Zhou (Wei valley)"
+        "en": "Zhou (Wei valley)",
+        "it": "Zhou (valle del Wei)",
+        "de": "Zhou (Wei-Tal)",
+        "fr": "Zhou (vallée de la Wei)",
+        "he": "ג׳ואו (עמק ויי)",
+        "zh": "周（渭河流域）"
        }
       },
       {
@@ -23880,7 +23966,12 @@
        "sporna": true,
        "popisek": {
         "cs": "Čchiangové (jazyk neznámý)",
-        "en": "Qiang (language unknown)"
+        "en": "Qiang (language unknown)",
+        "it": "Qiang (lingua ignota)",
+        "de": "Qiang (Sprache unbekannt)",
+        "fr": "Qiang (langue inconnue)",
+        "he": "צ׳יאנג (שפה לא ידועה)",
+        "zh": "羌（语言不详）"
        }
       }
      ],
@@ -23908,7 +23999,12 @@
        "barva": "och",
        "popisek": {
         "cs": "Čou na východ (11. st. př. n. l.)",
-        "en": "Zhou move east (11th c. BCE)"
+        "en": "Zhou move east (11th c. BCE)",
+        "it": "gli Zhou verso est (XI sec. a.C.)",
+        "de": "Zhou ziehen nach Osten (11. Jh. v. Chr.)",
+        "fr": "les Zhou vers l’est (XIᵉ s. av. J.-C.)",
+        "he": "ג׳ואו מזרחה (המאה ה-11 לפנה״ס)",
+        "zh": "周人东进（公元前11世纪）"
        }
       }
      ]
@@ -23917,7 +24013,12 @@
      "id": "klasicka",
      "doba": {
       "cs": "asi 500 př. n. l. – 220 n. l.",
-      "en": "c. 500 BCE – 220 CE"
+      "en": "c. 500 BCE – 220 CE",
+      "it": "circa 500 a.C. – 220 d.C.",
+      "de": "um 500 v. Chr. – 220 n. Chr.",
+      "fr": "vers 500 av. J.-C. – 220 apr. J.-C.",
+      "he": "בערך 500 לפנה״ס – 220 לספירה",
+      "zh": "约公元前500年—公元220年"
      },
      "pohled": [
       111,
@@ -23926,11 +24027,21 @@
      ],
      "nazev": {
       "cs": "Klasická čínština a sjednocení říše",
-      "en": "Classical Chinese and the unification of the empire"
+      "en": "Classical Chinese and the unification of the empire",
+      "it": "Il cinese classico e l’unificazione dell’impero",
+      "de": "Klassisches Chinesisch und die Einigung des Reiches",
+      "fr": "Le chinois classique et l’unification de l’empire",
+      "he": "הסינית הקלאסית ואיחוד האימפריה",
+      "zh": "文言与帝国的统一"
      },
      "text": {
       "cs": "V období Válčících států (475–221 př. n. l.) vznikla díla, z nichž vychází klasická čínština (wen-jen, 文言): Hovory, do nichž Konfuciovi (551–479 př. n. l.) žáci a jejich následovníci zapsali jeho výroky, a spisy Mencia, Mo-c' a Čuang-c'. Jednotlivé státy psaly různými tvary znaků. Když roku 221 př. n. l. stát Čchin porazil poslední soupeře a jeho vládce přijal titul Čchin Š'-chuang, První císař, sjednotil podle tradice spolu s měrami a mincemi i písmo: vzorem bylo čchinské písmo, později zvané malá pečeť, a vedle něj se šířilo jednodušší úřednické písmo li-šu, které vzniklo z běžného písma písařů. Jak rychle a důkladně sjednocení proběhlo, je sporné; vykopané rukopisy ukazují pestrost tvarů ještě dlouho poté (Galambos 2004). Už vojska Čchin a po nich dynastie Chan (206 př. n. l. – 220 n. l.) dobyla jih až k dnešnímu Kantonu a roku 111 př. n. l. i sever dnešního Vietnamu, kde žily národy nečínských jazyků, souhrnně nazývané Paj-jüe; jakými jazyky mluvily, je nejisté. Od jména dynastie se odvozuje označení Chanové i čínského jazyka chan-jü (汉语). Kolem roku 100 n. l. dokončil Sü Šen slovník Šuo-wen ťie-c', který rozebírá stavbu 9353 znaků. Klasická čínština zůstala spisovným jazykem až do počátku 20. století, ačkoli se od ní mluvená řeč mezitím hodně vzdálila.",
-      "en": "The Warring States period (475–221 BCE) produced the works on which Classical Chinese (wenyan, 文言) is based: the Analects, in which the disciples of Confucius (551–479 BCE) and their followers recorded his sayings, and the writings of Mencius, Mozi and Zhuangzi. Each state wrote characters in its own forms. When in 221 BCE the state of Qin defeated its last rivals and its ruler took the title Qin Shi Huang, the First Emperor, he is traditionally said to have standardised the script along with weights, measures and coinage: the model was the Qin script later called small seal, and alongside it spread the simpler clerical script (lishu), which had grown out of the everyday hand of scribes. How quickly and how thoroughly the standardisation took effect is disputed; excavated manuscripts show a variety of forms long afterwards (Galambos 2004). The armies of Qin, and after them the Han dynasty (206 BCE – 220 CE), conquered the south as far as present-day Guangzhou and in 111 BCE also what is now northern Vietnam, home to peoples speaking non-Chinese languages who were known collectively as the Baiyue; which languages they spoke is uncertain. The name of the dynasty gave rise to the terms Han for the Chinese people and Hanyu (汉语) for their language. Around 100 CE Xu Shen completed the dictionary Shuowen jiezi, which analyses the structure of 9,353 characters. Classical Chinese remained the written standard until the early 20th century, even though the spoken language had by then moved far away from it."
+      "en": "The Warring States period (475–221 BCE) produced the works on which Classical Chinese (wenyan, 文言) is based: the Analects, in which the disciples of Confucius (551–479 BCE) and their followers recorded his sayings, and the writings of Mencius, Mozi and Zhuangzi. Each state wrote characters in its own forms. When in 221 BCE the state of Qin defeated its last rivals and its ruler took the title Qin Shi Huang, the First Emperor, he is traditionally said to have standardised the script along with weights, measures and coinage: the model was the Qin script later called small seal, and alongside it spread the simpler clerical script (lishu), which had grown out of the everyday hand of scribes. How quickly and how thoroughly the standardisation took effect is disputed; excavated manuscripts show a variety of forms long afterwards (Galambos 2004). The armies of Qin, and after them the Han dynasty (206 BCE – 220 CE), conquered the south as far as present-day Guangzhou and in 111 BCE also what is now northern Vietnam, home to peoples speaking non-Chinese languages who were known collectively as the Baiyue; which languages they spoke is uncertain. The name of the dynasty gave rise to the terms Han for the Chinese people and Hanyu (汉语) for their language. Around 100 CE Xu Shen completed the dictionary Shuowen jiezi, which analyses the structure of 9,353 characters. Classical Chinese remained the written standard until the early 20th century, even though the spoken language had by then moved far away from it.",
+      "it": "Il periodo degli Stati Combattenti (475–221 a.C.) produsse le opere su cui si fonda il cinese classico (wenyan, 文言): i Dialoghi, in cui i discepoli di Confucio (551–479 a.C.) e i loro seguaci raccolsero i suoi detti, e gli scritti di Mencio, Mozi e Zhuangzi. Ogni stato scriveva i caratteri in forme proprie. Quando nel 221 a.C. lo stato di Qin sconfisse gli ultimi rivali e il suo sovrano assunse il titolo di Qin Shi Huang, il Primo Imperatore, secondo la tradizione egli unificò la scrittura insieme a pesi, misure e moneta: il modello fu la scrittura di Qin poi detta piccolo sigillo, e accanto a essa si diffuse la più semplice scrittura clericale (lishu), nata dalla grafia quotidiana degli scribi. Quanto rapidamente e quanto a fondo l’unificazione abbia avuto effetto è controverso; i manoscritti rinvenuti negli scavi mostrano una varietà di forme ancora a lungo dopo (Galambos 2004). Gli eserciti di Qin, e dopo di loro la dinastia Han (206 a.C. – 220 d.C.), conquistarono il sud fino all’odierna Guangzhou e nel 111 a.C. anche l’attuale Vietnam settentrionale, abitato da popoli di lingue non cinesi noti collettivamente come Baiyue; quali lingue parlassero è incerto. Dal nome della dinastia derivano i termini Han per il popolo cinese e Hanyu (汉语) per la sua lingua. Intorno al 100 d.C. Xu Shen completò il dizionario Shuowen jiezi, che analizza la struttura di 9353 caratteri. Il cinese classico rimase lo standard scritto fino all’inizio del XX secolo, benché la lingua parlata se ne fosse ormai molto allontanata.",
+      "de": "In der Zeit der Streitenden Reiche (475–221 v. Chr.) entstanden die Werke, auf denen das klassische Chinesisch (wenyan, 文言) beruht: die Gespräche (Lunyu), in denen die Schüler des Konfuzius (551–479 v. Chr.) und ihre Nachfolger seine Aussprüche festhielten, sowie die Schriften des Menzius, des Mozi und des Zhuangzi. Jeder Staat schrieb die Zeichen in eigenen Formen. Als 221 v. Chr. der Staat Qin seine letzten Rivalen besiegte und sein Herrscher den Titel Qin Shi Huang, Erster Kaiser, annahm, soll er der Überlieferung nach zusammen mit Gewichten, Maßen und Münzen auch die Schrift vereinheitlicht haben: Vorbild war die Schrift von Qin, die später kleine Siegelschrift genannt wurde, und daneben verbreitete sich die einfachere Kanzleischrift (lishu), die aus der Alltagshand der Schreiber hervorgegangen war. Wie schnell und wie gründlich die Vereinheitlichung wirkte, ist umstritten; ausgegrabene Handschriften zeigen noch lange danach eine Vielfalt von Formen (Galambos 2004). Die Heere der Qin und nach ihnen der Han-Dynastie (206 v. Chr. – 220 n. Chr.) eroberten den Süden bis zum heutigen Guangzhou und 111 v. Chr. auch das heutige Nordvietnam, Heimat von Völkern mit nichtchinesischen Sprachen, die man zusammenfassend Baiyue nannte; welche Sprachen sie sprachen, ist ungewiss. Vom Namen der Dynastie leiten sich die Bezeichnungen Han für das chinesische Volk und Hanyu (汉语) für seine Sprache ab. Um 100 n. Chr. vollendete Xu Shen das Wörterbuch Shuowen jiezi, das den Aufbau von 9353 Zeichen analysiert. Das klassische Chinesisch blieb bis zum Anfang des 20. Jahrhunderts die Norm der Schriftsprache, obwohl sich die gesprochene Sprache bis dahin weit von ihm entfernt hatte.",
+      "fr": "La période des Royaumes combattants (475–221 av. J.-C.) produisit les œuvres sur lesquelles repose le chinois classique (wenyan, 文言) : les Entretiens, dans lesquels les disciples de Confucius (551–479 av. J.-C.) et leurs successeurs consignèrent ses paroles, ainsi que les écrits de Mencius, de Mozi et de Zhuangzi. Chaque État écrivait les caractères sous ses propres formes. Lorsqu’en 221 av. J.-C. l’État de Qin vainquit ses derniers rivaux et que son souverain prit le titre de Qin Shi Huang, le Premier Empereur, celui-ci aurait, selon la tradition, unifié l’écriture en même temps que les poids, les mesures et la monnaie : le modèle en était l’écriture de Qin, appelée plus tard petite écriture sigillaire, et à côté d’elle se répandit l’écriture des scribes (lishu), plus simple, issue de l’écriture courante des copistes. La rapidité et la profondeur de cette unification sont contestées ; les manuscrits mis au jour montrent une grande variété de formes longtemps encore après (Galambos 2004). Les armées de Qin, puis la dynastie Han (206 av. J.-C. – 220 apr. J.-C.), conquirent le sud jusqu’à l’actuelle Guangzhou et, en 111 av. J.-C., également l’actuel nord du Vietnam, habité par des peuples de langues non chinoises désignés collectivement sous le nom de Baiyue ; les langues qu’ils parlaient restent incertaines. Du nom de la dynastie dérivent les termes Han, pour le peuple chinois, et Hanyu (汉语), pour sa langue. Vers 100 apr. J.-C., Xu Shen acheva le dictionnaire Shuowen jiezi, qui analyse la structure de 9 353 caractères. Le chinois classique demeura la norme écrite jusqu’au début du XXᵉ siècle, bien que la langue parlée s’en fût entre-temps considérablement éloignée.",
+      "he": "תקופת המדינות הלוחמות (475–221 לפנה״ס) הולידה את היצירות שעליהן מבוססת הסינית הקלאסית (ונין, wenyan, 文言): השיחות (Lunyu), שבהן רשמו תלמידיו של קונפוציוס (551–479 לפנה״ס) וממשיכיהם את אמרותיו, וכתביהם של מנציוס, מוצי וג׳ואנגצי. כל מדינה כתבה את הסימנים בצורות משלה. כשב-221 לפנה״ס הביסה מדינת צ׳ין את אחרונות יריבותיה ושליטה נטל את התואר צ׳ין שי חואנג, הקיסר הראשון, הוא איחד לפי המסורת את הכתב יחד עם המשקלות, המידות והמטבעות: הדגם היה כתב צ׳ין שנקרא מאוחר יותר \"החותם הקטן\", ולצדו התפשט כתב הפקידים (לישו, lishu) הפשוט יותר, שצמח מתוך כתב היד היומיומי של הסופרים. עד כמה מהר ועד כמה ביסודיות נקלט האיחוד – שנוי במחלוקת; כתבי יד שנחשפו בחפירות מראים מגוון צורות עוד זמן רב אחר כך (גלמבוש, Galambos 2004). צבאות צ׳ין, ואחריהם שושלת האן (206 לפנה״ס – 220 לספירה), כבשו את הדרום עד גואנגג׳ואו של היום, וב-111 לפנה״ס גם את מה שהוא היום צפון וייטנאם – מולדתם של עמים דוברי שפות לא-סיניות שנודעו בשם הכולל באי-יואה; אילו שפות דיברו – אין ודאות. משמה של השושלת נגזרו הכינוי האן לעם הסיני והכינוי האניו (汉语) לשפתו. בסביבות 100 לספירה השלים שו שן את המילון שואוון ג׳ייצה (Shuowen jiezi), המנתח את המבנה של 9,353 סימנים. הסינית הקלאסית נשארה התקן הכתוב עד תחילת המאה ה-20, אף שהשפה המדוברת התרחקה ממנה עד אז מאוד.",
+      "zh": "战国时期（公元前475—前221年）产生了文言赖以为本的典籍：孔子（公元前551—前479年）的弟子及其后学记录其言论的《论语》，以及孟子、墨子和庄子的著作。各国书写的字形各不相同。公元前221年，秦国灭掉最后的对手，其君主称始皇帝，即秦始皇；按照传统说法，他在统一度量衡和货币的同时也统一了文字：标准是后来称为小篆的秦国文字，与之并行传播的还有更简便的隶书，它是从书吏日常书写的字体中发展出来的。这次统一推行得多快、多彻底，尚有争议；出土写本显示，此后很长时间里字形仍然多种多样（高奕睿〔Galambos〕，2004）。秦军以及其后的汉朝（公元前206—公元220年）向南一直征服到今广州一带，公元前111年又征服了今越南北部；那里居住着说非汉语语言的民族，统称“百越”；他们说的是哪些语言，尚无定论。汉族的“汉”和汉语的“汉”都源自这个朝代的名称。约公元100年，许慎完成字书《说文解字》，分析了9353个字的结构。文言作为书面标准语一直沿用到20世纪初，尽管口语早已与之相去甚远。"
      },
      "oblasti": [
       {
@@ -23965,7 +24076,12 @@
        "barva": "kla",
        "popisek": {
         "cs": "klasická čínština",
-        "en": "Classical Chinese"
+        "en": "Classical Chinese",
+        "it": "cinese classico",
+        "de": "klassisches Chinesisch",
+        "fr": "chinois classique",
+        "he": "סינית קלאסית",
+        "zh": "文言"
        }
       },
       {
@@ -23985,7 +24101,12 @@
        "barva": "ri",
        "popisek": {
         "cs": "Čchin (Sien-jang)",
-        "en": "Qin (Xianyang)"
+        "en": "Qin (Xianyang)",
+        "it": "Qin (Xianyang)",
+        "de": "Qin (Xianyang)",
+        "fr": "Qin (Xianyang)",
+        "he": "צ׳ין (שיאניאנג)",
+        "zh": "秦（咸阳）"
        }
       },
       {
@@ -24021,7 +24142,12 @@
        "sporna": true,
        "popisek": {
         "cs": "Paj-jüe (jazyky jihu)",
-        "en": "Baiyue (southern languages)"
+        "en": "Baiyue (southern languages)",
+        "it": "Baiyue (lingue del sud)",
+        "de": "Baiyue (Sprachen des Südens)",
+        "fr": "Baiyue (langues du Sud)",
+        "he": "באי-יואה (שפות הדרום)",
+        "zh": "百越（南方诸语言）"
        }
       }
      ],
@@ -24053,7 +24179,12 @@
        "barva": "ri",
        "popisek": {
         "cs": "sjednocení (221 př. n. l.)",
-        "en": "unification (221 BCE)"
+        "en": "unification (221 BCE)",
+        "it": "unificazione (221 a.C.)",
+        "de": "Einigung (221 v. Chr.)",
+        "fr": "unification (221 av. J.-C.)",
+        "he": "איחוד (221 לפנה״ס)",
+        "zh": "统一（公元前221年）"
        }
       },
       {
@@ -24091,7 +24222,12 @@
        "barva": "ri",
        "popisek": {
         "cs": "na jih (214 a 111 př. n. l.)",
-        "en": "to the south (214 and 111 BCE)"
+        "en": "to the south (214 and 111 BCE)",
+        "it": "verso sud (214 e 111 a.C.)",
+        "de": "nach Süden (214 und 111 v. Chr.)",
+        "fr": "vers le sud (214 et 111 av. J.-C.)",
+        "he": "דרומה (214 ו-111 לפנה״ס)",
+        "zh": "向南（公元前214年和前111年）"
        }
       },
       {
@@ -24121,7 +24257,12 @@
        "barva": "ri",
        "popisek": {
         "cs": "do Ťiao-č' (111 př. n. l.)",
-        "en": "to Jiaozhi (111 BCE)"
+        "en": "to Jiaozhi (111 BCE)",
+        "it": "verso il Jiaozhi (111 a.C.)",
+        "de": "nach Jiaozhi (111 v. Chr.)",
+        "fr": "vers le Jiaozhi (111 av. J.-C.)",
+        "he": "לג׳יאוג׳י (111 לפנה״ס)",
+        "zh": "至交趾（公元前111年）"
        }
       }
      ]
@@ -24130,7 +24271,12 @@
      "id": "jih",
      "doba": {
       "cs": "asi 300 – 1300",
-      "en": "c. 300 – 1300"
+      "en": "c. 300 – 1300",
+      "it": "circa 300 – 1300",
+      "de": "um 300 – 1300",
+      "fr": "vers 300 – 1300",
+      "he": "בערך 300–1300",
+      "zh": "约300—1300年"
      },
      "pohled": [
       114.5,
@@ -24139,11 +24285,21 @@
      ],
      "nazev": {
       "cs": "Na jih od Jang-c'-ťiang",
-      "en": "South of the Yangtze"
+      "en": "South of the Yangtze",
+      "it": "A sud dello Yangtze",
+      "de": "Südlich des Jangtse",
+      "fr": "Au sud du Yangzi",
+      "he": "מדרום ליאנגצה",
+      "zh": "长江以南"
      },
      "text": {
       "cs": "Mluvená čínština se nejvíc rozrůznila na jihu, kam z povodí Žluté řeky přicházely vlny osadníků. Od konce dynastie Chan pronikali do Fu-ťienu osadníci z dnešního Če-ťiangu a nejstarší vrstva jazyků min se podle Jerryho Normana oddělila od ostatní čínštiny přibližně v chanské době. Po dobytí Luo-jangu roku 311 uprchla velká část severní elity na jih a Východní Ťin vládl od roku 317 z Ťien-kchangu, dnešního Nan-ťingu; další vlny přinesly povstání An Lu-šana (755–763) a pád severní Sung roku 1127, po němž se dvůr usadil v Chang-čou. Nová severní řeč se vrstvila na starší čínštinu i na nečínské jazyky jihu. Tak se utvářely skupiny, které se dnes nazývají wu (Šanghaj, Su-čou), kan (Ťiang-si), siang (Chu-nan), min (Fu-ťien), jüe (kantonština) a hakka; hakka vznikla v horách na pomezí Ťiang-si, Fu-ťienu a Kuang-tungu a tradiční vyprávění o pěti vlnách stěhování jejích předků ze severu je sporné. Tyto variety si navzájem často nerozumějí; čínská tradice je nazývá fang-jen (方言, „místní řeči“), což se obvykle překládá jako „dialekty“. Mnozí jazykovědci je kvůli vzájemné nesrozumitelnosti pokládají za samostatné jazyky, jiní za nářečí jednoho jazyka se společným spisovným jazykem a písmem; záleží na tom, které měřítko se použije. Jazyk této doby, střední čínština, je zachycen v rýmovém slovníku Čchie-jün, který roku 601 dokončil Lu Fa-jen; zda popisuje řeč jednoho města, nebo normu složenou z několika nářečí, je sporné.",
-      "en": "Spoken Chinese diversified most in the south, where successive waves of settlers arrived from the Yellow River basin. From the end of the Han dynasty settlers from present-day Zhejiang moved into Fujian, and according to Jerry Norman the oldest layer of the Min languages split from the rest of Chinese at about the Han period. After Luoyang fell in 311 much of the northern elite fled south, and from 317 the Eastern Jin ruled from Jiankang, today’s Nanjing; further waves followed the An Lushan rebellion (755–763) and the fall of the Northern Song in 1127, after which the court settled in Hangzhou. The new northern speech was layered over older Chinese and over the non-Chinese languages of the south. This is how the groups known today as Wu (Shanghai, Suzhou), Gan (Jiangxi), Xiang (Hunan), Min (Fujian), Yue (Cantonese) and Hakka took shape; Hakka formed in the mountains where Jiangxi, Fujian and Guangdong meet, and the traditional account of five waves of migration of its speakers’ ancestors from the north is disputed. These varieties are often mutually unintelligible; Chinese tradition calls them fangyan (方言, ‘local speech’), usually translated as ‘dialects’. Many linguists regard them as separate languages because they are mutually unintelligible, others as dialects of one language with a shared written standard and script; the answer depends on the criterion applied. The language of this period, Middle Chinese, is recorded in the rhyme dictionary Qieyun, completed by Lu Fayan in 601; whether it describes the speech of a single city or a standard combining several dialects is disputed."
+      "en": "Spoken Chinese diversified most in the south, where successive waves of settlers arrived from the Yellow River basin. From the end of the Han dynasty settlers from present-day Zhejiang moved into Fujian, and according to Jerry Norman the oldest layer of the Min languages split from the rest of Chinese at about the Han period. After Luoyang fell in 311 much of the northern elite fled south, and from 317 the Eastern Jin ruled from Jiankang, today’s Nanjing; further waves followed the An Lushan rebellion (755–763) and the fall of the Northern Song in 1127, after which the court settled in Hangzhou. The new northern speech was layered over older Chinese and over the non-Chinese languages of the south. This is how the groups known today as Wu (Shanghai, Suzhou), Gan (Jiangxi), Xiang (Hunan), Min (Fujian), Yue (Cantonese) and Hakka took shape; Hakka formed in the mountains where Jiangxi, Fujian and Guangdong meet, and the traditional account of five waves of migration of its speakers’ ancestors from the north is disputed. These varieties are often mutually unintelligible; Chinese tradition calls them fangyan (方言, ‘local speech’), usually translated as ‘dialects’. Many linguists regard them as separate languages because they are mutually unintelligible, others as dialects of one language with a shared written standard and script; the answer depends on the criterion applied. The language of this period, Middle Chinese, is recorded in the rhyme dictionary Qieyun, completed by Lu Fayan in 601; whether it describes the speech of a single city or a standard combining several dialects is disputed.",
+      "it": "Il cinese parlato si differenziò soprattutto al sud, dove giunsero successive ondate di coloni dal bacino del Fiume Giallo. Dalla fine della dinastia Han coloni dall’odierno Zhejiang si spostarono nel Fujian e, secondo Jerry Norman, lo strato più antico delle lingue min si separò dal resto del cinese all’incirca in epoca Han. Dopo la caduta di Luoyang nel 311 gran parte dell’élite settentrionale fuggì a sud, e dal 317 i Jin orientali governarono da Jiankang, l’odierna Nanjing; altre ondate seguirono la ribellione di An Lushan (755–763) e la caduta dei Song settentrionali nel 1127, dopo la quale la corte si stabilì a Hangzhou. La nuova parlata del nord si sovrappose al cinese più antico e alle lingue non cinesi del sud. Così presero forma i gruppi oggi noti come wu (Shanghai, Suzhou), gan (Jiangxi), xiang (Hunan), min (Fujian), yue (cantonese) e hakka; l’hakka si formò sulle montagne dove si incontrano Jiangxi, Fujian e Guangdong, e il racconto tradizionale delle cinque ondate migratorie degli antenati dei suoi parlanti dal nord è controverso. Queste varietà sono spesso reciprocamente incomprensibili; la tradizione cinese le chiama fangyan (方言, ‘parlata locale’), di solito tradotto con ‘dialetti’. Molti linguisti le considerano lingue distinte perché reciprocamente incomprensibili, altri dialetti di un’unica lingua con uno standard scritto e una scrittura comuni; la risposta dipende dal criterio adottato. La lingua di questo periodo, il cinese medio, è documentata nel dizionario di rime Qieyun, completato da Lu Fayan nel 601; se descriva la parlata di una sola città o uno standard che combinava più dialetti è controverso.",
+      "de": "Am stärksten fächerte sich das gesprochene Chinesisch im Süden auf, wohin aus dem Becken des Gelben Flusses Welle um Welle Siedler kamen. Seit dem Ende der Han-Dynastie zogen Siedler aus dem heutigen Zhejiang nach Fujian, und nach Jerry Norman trennte sich die älteste Schicht der Min-Sprachen etwa in der Han-Zeit vom übrigen Chinesischen. Nach dem Fall Luoyangs 311 floh ein großer Teil der nördlichen Elite nach Süden, und ab 317 herrschten die Östlichen Jin von Jiankang aus, dem heutigen Nanjing; weitere Wellen folgten auf den An-Lushan-Aufstand (755–763) und auf den Untergang der Nördlichen Song 1127, nach dem sich der Hof in Hangzhou niederließ. Die neue nördliche Sprache legte sich über älteres Chinesisch und über die nichtchinesischen Sprachen des Südens. So bildeten sich die Gruppen heraus, die heute Wu (Shanghai, Suzhou), Gan (Jiangxi), Xiang (Hunan), Min (Fujian), Yue (Kantonesisch) und Hakka heißen; das Hakka entstand in den Bergen im Grenzgebiet von Jiangxi, Fujian und Guangdong, und die traditionelle Erzählung von fünf Wanderungswellen der Vorfahren seiner Sprecher aus dem Norden ist umstritten. Diese Varietäten sind untereinander oft nicht verständlich; die chinesische Tradition nennt sie fangyan (方言, „örtliche Sprechweisen“), was meist mit „Dialekte“ übersetzt wird. Viele Sprachwissenschaftler halten sie wegen der fehlenden gegenseitigen Verständlichkeit für eigene Sprachen, andere für Dialekte einer Sprache mit gemeinsamer Schriftsprache und Schrift; die Antwort hängt davon ab, welches Kriterium man anlegt. Die Sprache dieser Epoche, das Mittelchinesische, ist im Reimwörterbuch Qieyun festgehalten, das Lu Fayan 601 vollendete; ob es die Sprache einer einzigen Stadt beschreibt oder eine aus mehreren Dialekten zusammengesetzte Norm, ist umstritten.",
+      "fr": "C’est dans le sud que le chinois parlé se diversifia le plus, là où arrivèrent des vagues successives de colons venus du bassin du fleuve Jaune. Dès la fin de la dynastie Han, des colons de l’actuel Zhejiang s’installèrent au Fujian, et selon Jerry Norman la couche la plus ancienne des langues min se sépara du reste du chinois à peu près à l’époque des Han. Après la chute de Luoyang en 311, une grande partie de l’élite du Nord s’enfuit vers le sud, et à partir de 317 les Jin orientaux régnèrent depuis Jiankang, l’actuelle Nanjing ; d’autres vagues suivirent la révolte d’An Lushan (755–763) et la chute des Song du Nord en 1127, après laquelle la cour s’établit à Hangzhou. Le nouveau parler du Nord se superposa au chinois plus ancien et aux langues non chinoises du Sud. Ainsi se formèrent les groupes appelés aujourd’hui wu (Shanghai, Suzhou), gan (Jiangxi), xiang (Hunan), min (Fujian), yue (cantonais) et hakka ; le hakka se forma dans les montagnes aux confins du Jiangxi, du Fujian et du Guangdong, et le récit traditionnel des cinq vagues de migration des ancêtres de ses locuteurs depuis le nord est contesté. Ces variétés sont souvent mutuellement inintelligibles ; la tradition chinoise les appelle fangyan (方言, « parlers locaux »), terme généralement traduit par « dialectes ». De nombreux linguistes les considèrent comme des langues distinctes parce qu’elles sont mutuellement inintelligibles, d’autres comme des dialectes d’une même langue dotée d’une norme écrite et d’une écriture communes ; la réponse dépend du critère retenu. La langue de cette période, le chinois médiéval, est consignée dans le dictionnaire de rimes Qieyun, achevé par Lu Fayan en 601 ; la question de savoir s’il décrit le parler d’une seule ville ou une norme combinant plusieurs dialectes est contestée.",
+      "he": "הסינית המדוברת התגוונה יותר מכול בדרום, שאליו הגיעו בזה אחר זה גלים של מתיישבים מאגן הנהר הצהוב. מסוף שושלת האן עברו מתיישבים מג׳ג׳יאנג של היום לפוג׳יאן, ולפי ג׳רי נורמן נפרדה השכבה העתיקה ביותר של שפות המין משאר הסינית בערך בתקופת האן. אחרי נפילת לואויאנג ב-311 נמלט חלק גדול מהאליטה הצפונית דרומה, ומ-317 שלטה ג׳ין המזרחית מג׳יאנקאנג, היא נאנג׳ינג של היום; גלים נוספים באו בעקבות מרד אן לושאן (755–763) ונפילת סונג הצפונית ב-1127, שאחריה השתקעה החצר בהאנגג׳ואו. הדיבור הצפוני החדש נערם בשכבה על גבי סינית עתיקה יותר ועל גבי השפות הלא-סיניות של הדרום. כך התגבשו הקבוצות הנקראות היום וו (שאנגחאי, סוג׳ואו), גאן (ג׳יאנגשי), שיאנג (חונאן), מין (פוג׳יאן), יואה (קנטונזית) והאקה; ההאקה התגבשה בהרים שבהם נפגשות ג׳יאנגשי, פוג׳יאן וגואנגדונג, והמסורת על חמשת גלי ההגירה של אבות דובריה מהצפון שנויה במחלוקת. דוברי הזנים האלה לעתים קרובות אינם מבינים זה את זה; המסורת הסינית מכנה אותם פאנגיאן (方言, \"דיבור מקומי\"), ובדרך כלל מתרגמים זאת \"ניבים\". בלשנים רבים רואים בהם שפות נפרדות משום שדובריהם אינם מבינים זה את זה, ואחרים – ניבים של שפה אחת שיש לה תקן כתוב וכתב משותפים; התשובה תלויה באמת המידה שמפעילים. שפת התקופה, הסינית התיכונה, מתועדת במילון החרוזים צ׳ייה-יון (Qieyun), שהשלים לו פאיאן ב-601; אם הוא מתאר את הדיבור של עיר אחת או תקן המשלב כמה ניבים – שנוי במחלוקת.",
+      "zh": "汉语口语在南方分化得最厉害，来自黄河流域的移民一波接一波地来到那里。从汉末起，来自今浙江的移民进入福建；据罗杰瑞〔Jerry Norman〕的看法，闽语最古老的层次大约在汉代就从其余汉语中分离出来。311年洛阳陷落后，北方的大批精英南逃，自317年起东晋定都建康，即今南京；此后，安史之乱（755—763年）和1127年北宋灭亡又引发了新的移民潮，北宋灭亡后朝廷定居杭州。新来的北方话叠加在较早的汉语和南方的非汉语语言之上。今天所说的吴语（上海、苏州）、赣语（江西）、湘语（湖南）、闽语（福建）、粤语（广府话）和客家语等语群就这样形成了；客家语形成于江西、福建和广东三省交界的山区，关于客家先民五次从北方南迁的传统说法存在争议。这些变体往往彼此听不懂；中国传统称之为“方言”（即“一方之言”），译成西方语言时通常作“dialects”。许多语言学家因其彼此听不懂而把它们视为独立的语言，另一些则把它们视为拥有共同书面标准语和文字的同一种语言的方言；答案取决于采用什么标准。这一时期的语言即中古汉语，记录在陆法言于601年编成的韵书《切韵》中；它描述的是某一城市的语音，还是综合了几种方言的标准音，存在争议。"
      },
      "oblasti": [
       {
@@ -24178,7 +24334,12 @@
        "barva": "zhn",
        "popisek": {
         "cs": "střední čínština (sever)",
-        "en": "Middle Chinese (north)"
+        "en": "Middle Chinese (north)",
+        "it": "cinese medio (nord)",
+        "de": "Mittelchinesisch (Norden)",
+        "fr": "chinois médiéval (nord)",
+        "he": "סינית תיכונה (צפון)",
+        "zh": "中古汉语（北方）"
        }
       },
       {
@@ -24208,7 +24369,12 @@
        "barva": "wu",
        "popisek": {
         "cs": "wu",
-        "en": "Wu"
+        "en": "Wu",
+        "it": "wu",
+        "de": "Wu",
+        "fr": "wu",
+        "he": "וו",
+        "zh": "吴语"
        }
       },
       {
@@ -24234,7 +24400,12 @@
        "po": "do-fu-tienu",
        "popisek": {
         "cs": "min (Fu-ťien)",
-        "en": "Min (Fujian)"
+        "en": "Min (Fujian)",
+        "it": "min (Fujian)",
+        "de": "Min (Fujian)",
+        "fr": "min (Fujian)",
+        "he": "מין (פוג׳יאן)",
+        "zh": "闽语（福建）"
        }
       },
       {
@@ -24256,7 +24427,12 @@
        "po": "hakka",
        "popisek": {
         "cs": "hakka",
-        "en": "Hakka"
+        "en": "Hakka",
+        "it": "hakka",
+        "de": "Hakka",
+        "fr": "hakka",
+        "he": "האקה",
+        "zh": "客家语"
        }
       },
       {
@@ -24286,7 +24462,12 @@
        "barva": "yue",
        "popisek": {
         "cs": "jüe (kantonština)",
-        "en": "Yue (Cantonese)"
+        "en": "Yue (Cantonese)",
+        "it": "yue (cantonese)",
+        "de": "Yue (Kantonesisch)",
+        "fr": "yue (cantonais)",
+        "he": "יואה (קנטונזית)",
+        "zh": "粤语（广府话）"
        }
       },
       {
@@ -24306,7 +24487,12 @@
        "barva": "gan",
        "popisek": {
         "cs": "kan",
-        "en": "Gan"
+        "en": "Gan",
+        "it": "gan",
+        "de": "Gan",
+        "fr": "gan",
+        "he": "גאן",
+        "zh": "赣语"
        }
       },
       {
@@ -24326,7 +24512,12 @@
        "barva": "xia",
        "popisek": {
         "cs": "siang",
-        "en": "Xiang"
+        "en": "Xiang",
+        "it": "xiang",
+        "de": "Xiang",
+        "fr": "xiang",
+        "he": "שיאנג",
+        "zh": "湘语"
        }
       }
      ],
@@ -24358,7 +24549,12 @@
        "barva": "zhn",
        "popisek": {
         "cs": "na jih po roce 311",
-        "en": "south after 311"
+        "en": "south after 311",
+        "it": "verso sud dopo il 311",
+        "de": "nach Süden ab 311",
+        "fr": "vers le sud après 311",
+        "he": "דרומה אחרי 311",
+        "zh": "311年后南迁"
        }
       },
       {
@@ -24392,7 +24588,12 @@
        "barva": "zhn",
        "popisek": {
         "cs": "dvůr Sung na jih (1127)",
-        "en": "Song court moves south (1127)"
+        "en": "Song court moves south (1127)",
+        "it": "la corte Song a sud (1127)",
+        "de": "Song-Hof zieht nach Süden (1127)",
+        "fr": "la cour des Song vers le sud (1127)",
+        "he": "חצר סונג דרומה (1127)",
+        "zh": "宋室南迁（1127年）"
        }
       },
       {
@@ -24418,7 +24619,12 @@
        "barva": "min",
        "popisek": {
         "cs": "do Fu-ťienu (od konce Chan)",
-        "en": "into Fujian (from the late Han)"
+        "en": "into Fujian (from the late Han)",
+        "it": "nel Fujian (dalla tarda epoca Han)",
+        "de": "nach Fujian (ab später Han-Zeit)",
+        "fr": "vers le Fujian (dès la fin des Han)",
+        "he": "לפוג׳יאן (מסוף האן)",
+        "zh": "入闽（汉末起）"
        }
       },
       {
@@ -24445,7 +24651,12 @@
        "sporna": true,
        "popisek": {
         "cs": "předkové hakka (sporné)",
-        "en": "ancestors of the Hakka (disputed)"
+        "en": "ancestors of the Hakka (disputed)",
+        "it": "antenati degli Hakka (controverso)",
+        "de": "Vorfahren der Hakka (umstritten)",
+        "fr": "ancêtres des Hakka (contesté)",
+        "he": "אבות ההאקה (שנוי במחלוקת)",
+        "zh": "客家先民（有争议）"
        }
       }
      ]
@@ -24454,7 +24665,12 @@
      "id": "sinosfera",
      "doba": {
       "cs": "asi 100 př. n. l. – počátek 20. století",
-      "en": "c. 100 BCE – early 20th century"
+      "en": "c. 100 BCE – early 20th century",
+      "it": "circa 100 a.C. – inizio del XX secolo",
+      "de": "um 100 v. Chr. – Anfang des 20. Jh.",
+      "fr": "vers 100 av. J.-C. – début du XXᵉ siècle",
+      "he": "בערך 100 לפנה״ס – תחילת המאה ה-20",
+      "zh": "约公元前100年—20世纪初"
      },
      "pohled": [
       119,
@@ -24463,11 +24679,21 @@
      ],
      "nazev": {
       "cs": "Čínské písmo ve východní Asii",
-      "en": "Chinese writing in East Asia"
+      "en": "Chinese writing in East Asia",
+      "it": "La scrittura cinese nell’Asia orientale",
+      "de": "Die chinesische Schrift in Ostasien",
+      "fr": "L’écriture chinoise en Asie orientale",
+      "he": "הכתב הסיני במזרח אסיה",
+      "zh": "汉字在东亚"
      },
      "text": {
       "cs": "Čínské písmo a s ním klasická čínština se staly psaným jazykem velké části východní Asie, ačkoli se tam mluvilo nepříbuznými jazyky. Do Koreje se dostaly nejpozději s chanskými komandériemi, z nichž Le-lang u dnešního Pchjongjangu vznikla roku 108 př. n. l., do Japonska přes Korejský poloostrov, nejpozději v 5. století. Úředníci, mniši a učenci četli čínské texty po svém: v Japonsku metodou kanbun kundoku, při níž čtenář přeskupuje slova podle japonské větné stavby a doplňuje japonské koncovky, v Koreji podobným způsobem. Z čínských znaků vznikla i vlastní písma: japonské slabičné kana v 9. století a vietnamské chữ Nôm, doložené jednotlivými jmény v nápisech od 11. století a literárními texty od 13. století (dochovanými v pozdějších opisech). V Koreji vyhlásil král Sedžong roku 1446 hangul, hláskové písmo nečínského typu. Slova přejatá z čínštiny tvoří podle slovníkových odhadů v japonštině, korejštině i vietnamštině zhruba polovinu až dvě třetiny slovní zásoby, v běžném textu méně; protože uchovávají starší výslovnost, pomáhají rekonstruovat střední čínštinu. Vietnam, který byl s přestávkami pod čínskou vládou až do 10. století a znovu v letech 1407–1427, pořádal úřednické zkoušky v klasické čínštině až do roku 1919; pak převládla latinka quốc ngữ. Japonsko čínské znaky (kandži) užívá dodnes, Korea je z většiny nahradila hangulem.",
-      "en": "Chinese writing, and with it Classical Chinese, became the written language of much of East Asia, although the languages spoken there were unrelated. It reached Korea no later than with the Han commanderies, of which Lelang near present-day Pyongyang was founded in 108 BCE, and Japan via the Korean peninsula, by the 5th century at the latest. Officials, monks and scholars read Chinese texts in their own way: in Japan by the kanbun kundoku method, in which the reader rearranges the words to fit Japanese word order and adds Japanese endings, and in Korea in a similar way. Chinese characters also gave rise to scripts of their own: the Japanese kana syllabaries in the 9th century and Vietnamese chữ Nôm, attested by individual names in inscriptions from the 11th century and by literary texts from the 13th (surviving in later copies). In Korea King Sejong promulgated hangul, an alphabet not of the Chinese type, in 1446. According to dictionary-based estimates, words borrowed from Chinese make up roughly half to two thirds of the vocabulary of Japanese, Korean and Vietnamese, though less of everyday text; because they preserve older pronunciations, they help to reconstruct Middle Chinese. Vietnam, under Chinese rule with interruptions until the 10th century and again in 1407–1427, held civil service examinations in Classical Chinese until 1919, after which the Latin-based quốc ngữ prevailed. Japan still uses Chinese characters (kanji) today, while Korea has largely replaced them with hangul."
+      "en": "Chinese writing, and with it Classical Chinese, became the written language of much of East Asia, although the languages spoken there were unrelated. It reached Korea no later than with the Han commanderies, of which Lelang near present-day Pyongyang was founded in 108 BCE, and Japan via the Korean peninsula, by the 5th century at the latest. Officials, monks and scholars read Chinese texts in their own way: in Japan by the kanbun kundoku method, in which the reader rearranges the words to fit Japanese word order and adds Japanese endings, and in Korea in a similar way. Chinese characters also gave rise to scripts of their own: the Japanese kana syllabaries in the 9th century and Vietnamese chữ Nôm, attested by individual names in inscriptions from the 11th century and by literary texts from the 13th (surviving in later copies). In Korea King Sejong promulgated hangul, an alphabet not of the Chinese type, in 1446. According to dictionary-based estimates, words borrowed from Chinese make up roughly half to two thirds of the vocabulary of Japanese, Korean and Vietnamese, though less of everyday text; because they preserve older pronunciations, they help to reconstruct Middle Chinese. Vietnam, under Chinese rule with interruptions until the 10th century and again in 1407–1427, held civil service examinations in Classical Chinese until 1919, after which the Latin-based quốc ngữ prevailed. Japan still uses Chinese characters (kanji) today, while Korea has largely replaced them with hangul.",
+      "it": "La scrittura cinese, e con essa il cinese classico, divenne la lingua scritta di gran parte dell’Asia orientale, benché le lingue parlate lì non fossero imparentate. Giunse in Corea al più tardi con le comanderie Han, delle quali Lelang, presso l’odierna Pyongyang, fu fondata nel 108 a.C., e in Giappone attraverso la penisola coreana, al più tardi entro il V secolo. Funzionari, monaci e dotti leggevano i testi cinesi a modo loro: in Giappone con il metodo kanbun kundoku, in cui il lettore riordina le parole secondo l’ordine giapponese e aggiunge desinenze giapponesi, e in Corea in modo simile. Dai caratteri cinesi nacquero anche scritture proprie: i sillabari giapponesi kana nel IX secolo e il chữ Nôm vietnamita, attestato da singoli nomi in iscrizioni dall’XI secolo e da testi letterari dal XIII (conservati in copie successive). In Corea il re Sejong promulgò nel 1446 lo hangul, un alfabeto non di tipo cinese. Secondo stime basate sui dizionari, le parole prese in prestito dal cinese costituiscono all’incirca da metà a due terzi del lessico del giapponese, del coreano e del vietnamita, ma una parte minore dei testi quotidiani; poiché conservano pronunce più antiche, aiutano a ricostruire il cinese medio. Il Vietnam, sotto dominio cinese con interruzioni fino al X secolo e di nuovo nel 1407–1427, tenne esami per i funzionari in cinese classico fino al 1919, dopo di che prevalse il quốc ngữ in alfabeto latino. Il Giappone usa ancora oggi i caratteri cinesi (kanji), mentre la Corea li ha in gran parte sostituiti con lo hangul.",
+      "de": "Die chinesische Schrift und mit ihr das klassische Chinesisch wurden zur Schriftsprache weiter Teile Ostasiens, obwohl die dort gesprochenen Sprachen nicht mit dem Chinesischen verwandt waren. Nach Korea gelangte sie spätestens mit den Han-Kommanderien, von denen Lelang beim heutigen Pjöngjang 108 v. Chr. gegründet wurde, nach Japan über die Koreanische Halbinsel, spätestens im 5. Jahrhundert. Beamte, Mönche und Gelehrte lasen chinesische Texte auf ihre eigene Weise: in Japan nach der Methode kanbun kundoku, bei der der Leser die Wörter in die japanische Wortstellung umordnet und japanische Endungen ergänzt, in Korea auf ähnliche Weise. Aus den chinesischen Zeichen gingen auch eigene Schriften hervor: im 9. Jahrhundert die japanischen Kana-Silbenschriften und das vietnamesische chữ Nôm, belegt durch einzelne Namen in Inschriften seit dem 11. und durch literarische Texte seit dem 13. Jahrhundert (erhalten in späteren Abschriften). In Korea verkündete König Sejong 1446 das Hangeul, eine Alphabetschrift nicht chinesischer Art. Schätzungen auf der Grundlage von Wörterbüchern zufolge machen Lehnwörter aus dem Chinesischen etwa die Hälfte bis zwei Drittel des Wortschatzes des Japanischen, Koreanischen und Vietnamesischen aus, in alltäglichen Texten allerdings weniger; weil sie ältere Aussprachen bewahren, helfen sie bei der Rekonstruktion des Mittelchinesischen. Vietnam, das mit Unterbrechungen bis zum 10. Jahrhundert und erneut 1407–1427 unter chinesischer Herrschaft stand, hielt bis 1919 Beamtenprüfungen in klassischem Chinesisch ab; danach setzte sich das lateinschriftliche quốc ngữ durch. Japan verwendet chinesische Zeichen (Kanji) bis heute, Korea hat sie dagegen weitgehend durch das Hangeul ersetzt.",
+      "fr": "L’écriture chinoise, et avec elle le chinois classique, devint la langue écrite d’une grande partie de l’Asie orientale, bien que les langues qu’on y parlait ne lui fussent pas apparentées. Elle atteignit la Corée au plus tard avec les commanderies des Han, dont celle de Lelang, près de l’actuelle Pyongyang, fut fondée en 108 av. J.-C., et le Japon par la péninsule coréenne, au plus tard au Vᵉ siècle. Fonctionnaires, moines et lettrés lisaient les textes chinois à leur manière : au Japon selon la méthode du kanbun kundoku, dans laquelle le lecteur réordonne les mots selon l’ordre de la phrase japonaise et ajoute des terminaisons japonaises, et en Corée de façon similaire. Les caractères chinois donnèrent aussi naissance à des écritures propres : les syllabaires japonais kana au IXᵉ siècle et le chữ Nôm vietnamien, attesté par des noms isolés dans des inscriptions à partir du XIᵉ siècle et par des textes littéraires à partir du XIIIᵉ (conservés dans des copies plus tardives). En Corée, le roi Sejong promulgua en 1446 le hangul, un alphabet qui n’est pas de type chinois. Selon des estimations fondées sur les dictionnaires, les mots empruntés au chinois représentent environ la moitié à deux tiers du vocabulaire du japonais, du coréen et du vietnamien, mais une part moindre dans les textes courants ; comme ils conservent des prononciations plus anciennes, ils aident à reconstruire le chinois médiéval. Le Vietnam, sous domination chinoise, avec des interruptions, jusqu’au Xᵉ siècle puis de nouveau en 1407–1427, organisa des concours de recrutement des fonctionnaires en chinois classique jusqu’en 1919, après quoi s’imposa le quốc ngữ, fondé sur l’alphabet latin. Le Japon utilise encore aujourd’hui les caractères chinois (kanji), tandis que la Corée les a en grande partie remplacés par le hangul.",
+      "he": "הכתב הסיני, ועמו הסינית הקלאסית, הפך לשפה הכתובה של חלק גדול ממזרח אסיה, אף שהשפות שדיברו שם לא היו קרובות לסינית. הוא הגיע לקוריאה לכל המאוחר עם מחוזות הפיקוד של האן, שאחד מהם, לה-לאנג, ליד פיונגיאנג של היום, נוסד ב-108 לפנה״ס, וליפן דרך חצי האי הקוריאני, לכל המאוחר במאה ה-5. פקידים, נזירים ומלומדים קראו טקסטים סיניים בדרכם שלהם: ביפן בשיטת קאנבון קונדוקו (kanbun kundoku), שבה הקורא מסדר מחדש את המילים לפי סדר המילים היפני ומוסיף סיומות יפניות, ובקוריאה בדרך דומה. מהסימנים הסיניים צמחו גם כתבים עצמאיים: הכתבים ההברתיים היפניים, קאנה, במאה ה-9, והכתב הווייטנאמי צ׳ו נום (chữ Nôm), המתועד בשמות בודדים בכתובות מהמאה ה-11 ובטקסטים ספרותיים מהמאה ה-13 (שהשתמרו בהעתקים מאוחרים). בקוריאה הכריז המלך סג׳ונג ב-1446 על ההנגול, אלפבית שאינו מהסוג הסיני. לפי הערכות המבוססות על מילונים, מילים שאולות מסינית הן בערך מחצית עד שני שלישים מאוצר המילים של היפנית, הקוריאנית והווייטנאמית, אם כי בטקסט יומיומי חלקן קטן יותר; מאחר שהן משמרות הגיות עתיקות יותר, הן עוזרות לשחזר את הסינית התיכונה. וייטנאם, שהייתה תחת שלטון סיני, בהפסקות, עד המאה ה-10 ושוב ב-1407–1427, קיימה בחינות לשירות המדינה בסינית קלאסית עד 1919, ואחר כך גבר הכתב הלטיני קווק נגו (quốc ngữ). יפן משתמשת בסימנים סיניים (קאנג׳י) עד היום, ואילו קוריאה החליפה אותם ברובם בהנגול.",
+      "zh": "汉字以及随之而来的文言成为东亚大部分地区的书面语，尽管那里所说的语言与汉语并无亲缘关系。汉字最迟随汉朝所设的郡传入朝鲜半岛，其中位于今平壤附近的乐浪郡设于公元前108年；又经朝鲜半岛传入日本，最迟在5世纪。官员、僧侣和学者用自己的方式阅读汉文：在日本用“汉文训读”法，读者按日语语序调整词序并添加日语词尾；在朝鲜半岛也有类似的读法。汉字还催生了各自的文字：9世纪出现的日本假名音节文字，以及越南的喃字（chữ Nôm）——11世纪起的碑铭中有用它写的个别名称，13世纪起有用它写的文学作品（以后世抄本传世）。在朝鲜半岛，世宗于1446年颁布了谚文，这是一种不属于汉字类型的字母文字。据基于词典的估计，汉语借词约占日语、朝鲜语和越南语词汇的一半到三分之二，在日常文本中所占比例则较低；这些借词保留了较古的读音，因而有助于构拟中古汉语。越南在10世纪以前时断时续地处于中国统治之下，1407—1427年再度如此；越南用文言举行科举考试，直到1919年，此后以拉丁字母为基础的国语字（quốc ngữ）占了上风。日本今天仍使用汉字，而朝鲜半岛已基本以谚文取代汉字。"
      },
      "oblasti": [
       {
@@ -24502,7 +24728,12 @@
        "barva": "kla",
        "popisek": {
         "cs": "klasická čínština",
-        "en": "Classical Chinese"
+        "en": "Classical Chinese",
+        "it": "cinese classico",
+        "de": "klassisches Chinesisch",
+        "fr": "chinois classique",
+        "he": "סינית קלאסית",
+        "zh": "文言"
        }
       },
       {
@@ -24533,7 +24764,12 @@
        "po": "do-koreje",
        "popisek": {
         "cs": "Korea",
-        "en": "Korea"
+        "en": "Korea",
+        "it": "Corea",
+        "de": "Korea",
+        "fr": "Corée",
+        "he": "קוריאה",
+        "zh": "朝鲜半岛"
        }
       },
       {
@@ -24564,7 +24800,12 @@
        "po": "do-japonska",
        "popisek": {
         "cs": "Japonsko",
-        "en": "Japan"
+        "en": "Japan",
+        "it": "Giappone",
+        "de": "Japan",
+        "fr": "Japon",
+        "he": "יפן",
+        "zh": "日本"
        }
       },
       {
@@ -24585,7 +24826,12 @@
        "po": "do-vietnamu",
        "popisek": {
         "cs": "Vietnam",
-        "en": "Vietnam"
+        "en": "Vietnam",
+        "it": "Vietnam",
+        "de": "Vietnam",
+        "fr": "Vietnam",
+        "he": "וייטנאם",
+        "zh": "越南"
        }
       }
      ],
@@ -24629,7 +24875,12 @@
        "barva": "sx",
        "popisek": {
         "cs": "do Koreje (108 př. n. l.)",
-        "en": "to Korea (108 BCE)"
+        "en": "to Korea (108 BCE)",
+        "it": "in Corea (108 a.C.)",
+        "de": "nach Korea (108 v. Chr.)",
+        "fr": "vers la Corée (108 av. J.-C.)",
+        "he": "לקוריאה (108 לפנה״ס)",
+        "zh": "至朝鲜半岛（公元前108年）"
        }
       },
       {
@@ -24671,7 +24922,12 @@
        "barva": "jap",
        "popisek": {
         "cs": "do Japonska (nejpozději 5. st.)",
-        "en": "to Japan (5th c. at the latest)"
+        "en": "to Japan (5th c. at the latest)",
+        "it": "in Giappone (entro il V sec.)",
+        "de": "nach Japan (spätestens 5. Jh.)",
+        "fr": "vers le Japon (Vᵉ s. au plus tard)",
+        "he": "ליפן (לכל המאוחר במאה ה-5)",
+        "zh": "至日本（最迟5世纪）"
        }
       },
       {
@@ -24701,7 +24957,12 @@
        "barva": "sx",
        "popisek": {
         "cs": "do Vietnamu",
-        "en": "to Vietnam"
+        "en": "to Vietnam",
+        "it": "in Vietnam",
+        "de": "nach Vietnam",
+        "fr": "vers le Vietnam",
+        "he": "לווייטנאם",
+        "zh": "至越南"
        }
       }
      ]
@@ -24710,7 +24971,12 @@
      "id": "kuan-chua",
      "doba": {
       "cs": "1324 – 1911",
-      "en": "1324 – 1911"
+      "en": "1324 – 1911",
+      "it": "1324 – 1911",
+      "de": "1324 – 1911",
+      "fr": "1324 – 1911",
+      "he": "1324–1911",
+      "zh": "1324—1911年"
      },
      "pohled": [
       111,
@@ -24719,11 +24985,21 @@
      ],
      "nazev": {
       "cs": "Kuan-chua – řeč úředníků",
-      "en": "Guanhua – the speech of officials"
+      "en": "Guanhua – the speech of officials",
+      "it": "Il guanhua – la lingua dei funzionari",
+      "de": "Guanhua – die Sprache der Beamten",
+      "fr": "Le guanhua – la langue des fonctionnaires",
+      "he": "גואנהואה – לשון הפקידים",
+      "zh": "官话：官员的语言"
      },
      "text": {
       "cs": "Roku 1324 zachytil Čou Te-čching v rýmové knize Čung-jüan jin-jün severní výslovnost, v níž už byly slabiky starého vstupního tónu rozděleny mezi ostatní tóny; jazyk této doby se nazývá stará mandarínština. Za dynastií Ming (1368–1644) a Čching (1644–1911) se úředníci z různých provincií, jejichž rodné řeči si navzájem nerozuměly, dorozumívali kuan-chua (官话), „řečí úředníků“; podle úředníků, které Portugalci nazývali mandarim, dostala v evropských jazycích jméno mandarínština. Roku 1421 přenesl císař Jung-le hlavní město z Nan-ťingu do Pej-ťingu, podle W. South Coblina však kuan-chua ještě dlouho vycházela spíš z řeči kolem Nan-ťingu a k pekingské výslovnosti se přiklonila až v 19. století. Císař Jung-čeng roku 1728 nařídil, aby se úředníci z Fu-ťienu a Kuang-tungu učili správné výslovnosti, a vznikly k tomu akademie čeng-jin šu-jüan. Mingská vojska a osadníci, kteří od let 1381–1382 přicházeli do Jün-nanu a Kuej-čou, přinesli na jihozápad severní čínštinu, z níž se vyvinula jihozápadní mandarínština. Vedle klasické čínštiny se psalo i v paj-chua (白话), psaném jazyce blízkém mluvené severní řeči: v něm vznikly romány Příběhy od jezera a Putování na západ (oba známé z vydání 16. století) a Sen v červeném domě (18. století).",
-      "en": "In 1324 Zhou Deqing recorded in his rhyme book Zhongyuan yinyun a northern pronunciation in which syllables of the old entering tone had already been distributed among the other tones; the language of this period is called Old Mandarin. Under the Ming (1368–1644) and Qing (1644–1911) dynasties, officials from different provinces, whose native speech was mutually unintelligible, communicated in guanhua (官话), ‘the speech of officials’; it was named Mandarin in European languages after the officials whom the Portuguese called mandarim. In 1421 the Yongle Emperor moved the capital from Nanjing to Beijing, but according to W. South Coblin guanhua long remained closer to the speech of the Nanjing area and turned to Beijing pronunciation only in the 19th century. In 1728 the Yongzheng Emperor ordered officials from Fujian and Guangdong to learn correct pronunciation, and academies (zhengyin shuyuan) were set up for the purpose. Ming soldiers and settlers, who arrived in Yunnan and Guizhou from 1381–1382, brought northern Chinese to the south-west, where it developed into South-western Mandarin. Besides Classical Chinese, people also wrote in baihua (白话), a written language close to northern speech: it was used for the novels Water Margin and Journey to the West (both known from 16th-century editions) and Dream of the Red Chamber (18th century)."
+      "en": "In 1324 Zhou Deqing recorded in his rhyme book Zhongyuan yinyun a northern pronunciation in which syllables of the old entering tone had already been distributed among the other tones; the language of this period is called Old Mandarin. Under the Ming (1368–1644) and Qing (1644–1911) dynasties, officials from different provinces, whose native speech was mutually unintelligible, communicated in guanhua (官话), ‘the speech of officials’; it was named Mandarin in European languages after the officials whom the Portuguese called mandarim. In 1421 the Yongle Emperor moved the capital from Nanjing to Beijing, but according to W. South Coblin guanhua long remained closer to the speech of the Nanjing area and turned to Beijing pronunciation only in the 19th century. In 1728 the Yongzheng Emperor ordered officials from Fujian and Guangdong to learn correct pronunciation, and academies (zhengyin shuyuan) were set up for the purpose. Ming soldiers and settlers, who arrived in Yunnan and Guizhou from 1381–1382, brought northern Chinese to the south-west, where it developed into South-western Mandarin. Besides Classical Chinese, people also wrote in baihua (白话), a written language close to northern speech: it was used for the novels Water Margin and Journey to the West (both known from 16th-century editions) and Dream of the Red Chamber (18th century).",
+      "it": "Nel 1324 Zhou Deqing registrò nel suo libro di rime Zhongyuan yinyun una pronuncia settentrionale in cui le sillabe dell’antico tono entrante erano già state distribuite fra gli altri toni; la lingua di questo periodo è detta mandarino antico. Sotto le dinastie Ming (1368–1644) e Qing (1644–1911) i funzionari di province diverse, le cui parlate native erano reciprocamente incomprensibili, comunicavano in guanhua (官话), ‘la lingua dei funzionari’; nelle lingue europee fu chiamato mandarino, dai funzionari che i portoghesi chiamavano mandarim. Nel 1421 l’imperatore Yongle trasferì la capitale da Nanjing a Beijing, ma secondo W. South Coblin il guanhua rimase a lungo più vicino alla parlata dell’area di Nanjing e si orientò verso la pronuncia di Beijing solo nel XIX secolo. Nel 1728 l’imperatore Yongzheng ordinò ai funzionari del Fujian e del Guangdong di imparare la pronuncia corretta, e a tale scopo furono istituite accademie (zhengyin shuyuan). Soldati e coloni Ming, giunti nello Yunnan e nel Guizhou dal 1381–1382, portarono il cinese settentrionale nel sud-ovest, dove si sviluppò nel mandarino sud-occidentale. Oltre che in cinese classico si scriveva anche in baihua (白话), una lingua scritta vicina alla parlata settentrionale: in essa furono scritti i romanzi I briganti e Il viaggio in Occidente (entrambi noti da edizioni del XVI secolo) e Il sogno della camera rossa (XVIII secolo).",
+      "de": "1324 hielt Zhou Deqing in seinem Reimbuch Zhongyuan yinyun eine nördliche Aussprache fest, in der die Silben des alten Eingangstons bereits auf die übrigen Töne verteilt waren; die Sprache dieser Zeit wird Altmandarin genannt. Unter den Dynastien Ming (1368–1644) und Qing (1644–1911) verständigten sich Beamte aus verschiedenen Provinzen, deren Muttersprachen untereinander nicht verständlich waren, in guanhua (官话), der „Sprache der Beamten“; in den europäischen Sprachen erhielt sie den Namen Mandarin nach den Beamten, die die Portugiesen mandarim nannten. 1421 verlegte der Yongle-Kaiser die Hauptstadt von Nanjing nach Beijing, nach W. South Coblin blieb das guanhua jedoch noch lange der Sprache der Gegend um Nanjing näher und wandte sich erst im 19. Jahrhundert der Pekinger Aussprache zu. 1728 ordnete der Yongzheng-Kaiser an, dass Beamte aus Fujian und Guangdong die richtige Aussprache lernen sollten, und dafür wurden Akademien (zhengyin shuyuan) eingerichtet. Soldaten und Siedler der Ming, die ab 1381–1382 nach Yunnan und Guizhou kamen, brachten das nördliche Chinesisch in den Südwesten, wo sich daraus das Südwest-Mandarin entwickelte. Neben dem klassischen Chinesisch schrieb man auch in baihua (白话), einer Schriftsprache nahe der nördlichen gesprochenen Sprache: In ihr entstanden die Romane Die Räuber vom Liangshan-Moor und Die Reise nach Westen (beide aus Ausgaben des 16. Jahrhunderts bekannt) sowie Der Traum der roten Kammer (18. Jahrhundert).",
+      "fr": "En 1324, Zhou Deqing consigna dans son livre de rimes Zhongyuan yinyun une prononciation du Nord dans laquelle les syllabes de l’ancien ton entrant avaient déjà été réparties entre les autres tons ; la langue de cette période est appelée ancien mandarin. Sous les dynasties Ming (1368–1644) et Qing (1644–1911), les fonctionnaires de différentes provinces, dont les parlers maternels étaient mutuellement inintelligibles, communiquaient en guanhua (官话), « la langue des fonctionnaires » ; dans les langues européennes, elle reçut le nom de mandarin, d’après les fonctionnaires que les Portugais appelaient mandarim. En 1421, l’empereur Yongle transféra la capitale de Nanjing à Beijing, mais selon W. South Coblin le guanhua resta longtemps plus proche du parler de la région de Nanjing et ne se tourna vers la prononciation de Beijing qu’au XIXᵉ siècle. En 1728, l’empereur Yongzheng ordonna aux fonctionnaires du Fujian et du Guangdong d’apprendre la prononciation correcte, et des académies (zhengyin shuyuan) furent créées à cet effet. Les soldats et les colons des Ming, arrivés au Yunnan et au Guizhou à partir de 1381–1382, apportèrent le chinois du Nord dans le sud-ouest, où il donna naissance au mandarin du Sud-Ouest. Outre le chinois classique, on écrivait aussi en baihua (白话), une langue écrite proche du parler du Nord : on l’employa pour les romans Au bord de l’eau et La Pérégrination vers l’Ouest (tous deux connus par des éditions du XVIᵉ siècle) et pour Le Rêve dans le pavillon rouge (XVIIIᵉ siècle).",
+      "he": "ב-1324 תיעד ג׳ואו דה-צ׳ינג בספר החרוזים שלו, ג׳ונגיואן יין-יון (Zhongyuan yinyun), הגייה צפונית שבה כבר חולקו ההברות של \"הטון הנכנס\" הישן בין הטונים האחרים; שפת התקופה נקראת מנדרינית עתיקה. תחת שושלות מינג (1368–1644) וצ׳ינג (1644–1911) תקשרו פקידים ממחוזות שונים, שלשונות האם שלהם לא היו מובנות זו לזו, בגואנהואה (官话), \"לשון הפקידים\"; בשפות האירופיות היא נקראה מנדרינית, על שם הפקידים שהפורטוגלים כינו mandarim. ב-1421 העביר הקיסר יונגלה את הבירה מנאנג׳ינג לבייג׳ינג, אך לפי ו. סאות׳ קובלין (W. South Coblin) נותרה הגואנהואה זמן רב קרובה יותר לדיבור של אזור נאנג׳ינג, ופנתה להגייה של בייג׳ינג רק במאה ה-19. ב-1728 הורה הקיסר יונגג׳נג לפקידים מפוג׳יאן ומגואנגדונג ללמוד הגייה נכונה, ולשם כך הוקמו אקדמיות (ג׳נגיין שויואן, zhengyin shuyuan). חיילים ומתיישבים של מינג, שהגיעו ליונאן ולגווייג׳ואו מ-1381–1382, הביאו את הסינית הצפונית לדרום-מערב, ושם התפתחה ממנה המנדרינית הדרום-מערבית. מלבד הסינית הקלאסית כתבו גם בבאיהואה (白话), שפה כתובה הקרובה לדיבור הצפוני: בה נכתבו הרומנים \"שולי המים\" ו\"המסע מערבה\" (שניהם ידועים ממהדורות מהמאה ה-16) ו\"חלום החדר האדום\" (המאה ה-18).",
+      "zh": "1324年，周德清在韵书《中原音韵》中记录了一种北方语音，其中原属古入声的字已分别归入其他声调；这一时期的语言称为早期官话。明（1368—1644年）清（1644—1911年）两代，来自不同省份、乡音彼此听不懂的官员用“官话”交流；在欧洲语言中，它得名于葡萄牙人对这些官员的称呼mandarim，叫作Mandarin。1421年，永乐帝把都城从南京迁到北京，但据柯蔚南〔W. South Coblin〕的看法，官话在很长时间里仍更接近南京一带的语音，直到19世纪才转向北京音。1728年，雍正帝命福建、广东的官员学习正音，并为此设立了正音书院。1381—1382年起进入云南和贵州的明朝军士和移民把北方汉语带到西南，它在那里发展成西南官话。除文言外，人们也用接近北方口语的书面语“白话”写作：小说《水浒传》《西游记》（二者都见于16世纪的刻本）和《红楼梦》（18世纪）都用白话写成。"
      },
      "oblasti": [
       {
@@ -24768,7 +25044,12 @@
        "barva": "zhn",
        "popisek": {
         "cs": "kuan-chua (mandarínština)",
-        "en": "guanhua (Mandarin)"
+        "en": "guanhua (Mandarin)",
+        "it": "guanhua (mandarino)",
+        "de": "guanhua (Mandarin)",
+        "fr": "guanhua (mandarin)",
+        "he": "גואנהואה (מנדרינית)",
+        "zh": "官话"
        }
       },
       {
@@ -24799,7 +25080,12 @@
        "po": "do-jun-nanu",
        "popisek": {
         "cs": "jihozápadní mandarínština",
-        "en": "South-western Mandarin"
+        "en": "South-western Mandarin",
+        "it": "mandarino sud-occidentale",
+        "de": "Südwest-Mandarin",
+        "fr": "mandarin du Sud-Ouest",
+        "he": "מנדרינית דרום-מערבית",
+        "zh": "西南官话"
        }
       },
       {
@@ -24819,7 +25105,12 @@
        "barva": "wu",
        "popisek": {
         "cs": "wu",
-        "en": "Wu"
+        "en": "Wu",
+        "it": "wu",
+        "de": "Wu",
+        "fr": "wu",
+        "he": "וו",
+        "zh": "吴语"
        }
       },
       {
@@ -24839,7 +25130,12 @@
        "barva": "min",
        "popisek": {
         "cs": "min",
-        "en": "Min"
+        "en": "Min",
+        "it": "min",
+        "de": "Min",
+        "fr": "min",
+        "he": "מין",
+        "zh": "闽语"
        }
       },
       {
@@ -24859,7 +25155,12 @@
        "barva": "yue",
        "popisek": {
         "cs": "jüe",
-        "en": "Yue"
+        "en": "Yue",
+        "it": "yue",
+        "de": "Yue",
+        "fr": "yue",
+        "he": "יואה",
+        "zh": "粤语"
        }
       },
       {
@@ -24874,7 +25175,12 @@
        "barva": "hak",
        "popisek": {
         "cs": "hakka",
-        "en": "Hakka"
+        "en": "Hakka",
+        "it": "hakka",
+        "de": "Hakka",
+        "fr": "hakka",
+        "he": "האקה",
+        "zh": "客家语"
        }
       },
       {
@@ -24889,7 +25195,12 @@
        "barva": "gan",
        "popisek": {
         "cs": "kan",
-        "en": "Gan"
+        "en": "Gan",
+        "it": "gan",
+        "de": "Gan",
+        "fr": "gan",
+        "he": "גאן",
+        "zh": "赣语"
        }
       },
       {
@@ -24904,7 +25215,12 @@
        "barva": "xia",
        "popisek": {
         "cs": "siang",
-        "en": "Xiang"
+        "en": "Xiang",
+        "it": "xiang",
+        "de": "Xiang",
+        "fr": "xiang",
+        "he": "שיאנג",
+        "zh": "湘语"
        }
       }
      ],
@@ -24944,7 +25260,12 @@
        "barva": "zhn",
        "popisek": {
         "cs": "hlavní město do Pej-ťingu (1421)",
-        "en": "capital moves to Beijing (1421)"
+        "en": "capital moves to Beijing (1421)",
+        "it": "la capitale a Beijing (1421)",
+        "de": "Hauptstadt nach Beijing (1421)",
+        "fr": "la capitale à Beijing (1421)",
+        "he": "הבירה עוברת לבייג׳ינג (1421)",
+        "zh": "迁都北京（1421年）"
        }
       },
       {
@@ -24998,7 +25319,12 @@
        "barva": "zhn",
        "popisek": {
         "cs": "do Jün-nanu (1381–1382)",
-        "en": "to Yunnan (1381–1382)"
+        "en": "to Yunnan (1381–1382)",
+        "it": "verso lo Yunnan (1381–1382)",
+        "de": "nach Yunnan (1381–1382)",
+        "fr": "vers le Yunnan (1381–1382)",
+        "he": "ליונאן (1381–1382)",
+        "zh": "至云南（1381—1382年）"
        }
       }
      ]
@@ -25007,7 +25333,12 @@
      "id": "do-sveta",
      "doba": {
       "cs": "17. – počátek 20. století",
-      "en": "17th – early 20th century"
+      "en": "17th – early 20th century",
+      "it": "XVII – inizio del XX secolo",
+      "de": "17. Jh. – Anfang des 20. Jh.",
+      "fr": "XVIIᵉ – début du XXᵉ siècle",
+      "he": "המאה ה-17 – תחילת המאה ה-20",
+      "zh": "17世纪—20世纪初"
      },
      "pohled": [
       168,
@@ -25016,11 +25347,21 @@
      ],
      "nazev": {
       "cs": "Do světa",
-      "en": "Out into the world"
+      "en": "Out into the world",
+      "it": "Nel mondo",
+      "de": "Hinaus in die Welt",
+      "fr": "Vers le vaste monde",
+      "he": "אל העולם",
+      "zh": "走向世界"
      },
      "text": {
       "cs": "Od 17. století odcházely z jižních přístavů Fu-ťienu a Kuang-tungu nejprve statisíce, později miliony lidí. Na Tchaj-wan připlouvali osadníci z jižního Fu-ťienu už za nizozemské vlády (1624–1662), za Čeng Čcheng-kunga a jeho nástupců a po roce 1683 za dynastie Čching, kdy přibyli i hakkové z Kuang-tungu; jazyky austronéských obyvatel nížin postupně zanikaly a austronéské jazyky se udržely hlavně v horách a na východě ostrova. Do jihovýchodní Asie, kterou Číňané nazývali Nan-jang („Jižní moře“), odcházeli obchodníci a dělníci do Manily, Batávie, Bangkoku, na Malajský poloostrov a do Singapuru, založeného jako britský přístav roku 1819. Po roce 1848 se z delty Perlové řeky, hlavně z okresů S'-i kolem Tchaj-šanu, vydávaly desetitisíce mužů za zlatem do Kalifornie, kde v letech 1865–1869 tvořili čínští dělníci většinu pracovníků na stavbě železnice Central Pacific, a v 50. letech do australské Viktorie; kvůli viktoriánské vstupní dani přistálo v letech 1857–1863 přes 16 tisíc z nich v Robe v Jižní Austrálii a pokračovali pěšky na zlatá pole. Přes dvě stě tisíc smluvních dělníků bylo v letech 1847–1874 přepraveno na Kubu (kolem 125 tisíc) a do Peru (kolem 95 tisíc). Spojené státy zákonem z roku 1882 příchod čínských dělníků zakázaly. Vystěhovalci mluvili hlavně jižními jazyky: hokkienem (min), čchao-čouštinou, kantonštinou a hakka; mandarínština se v diaspoře rozšířila až ve 20. století.",
-      "en": "From the 17th century first hundreds of thousands and later millions of people left the southern ports of Fujian and Guangdong. Settlers from southern Fujian sailed to Taiwan as early as the Dutch period (1624–1662), under Zheng Chenggong (Koxinga) and his successors, and after 1683 under the Qing dynasty, when Hakka from Guangdong also arrived; the languages of the Austronesian lowland peoples gradually died out, and Austronesian languages survived mainly in the mountains and on the east of the island. To South-East Asia, which the Chinese called Nanyang (‘the Southern Ocean’), merchants and labourers went to Manila, Batavia, Bangkok, the Malay Peninsula and Singapore, founded as a British port in 1819. After 1848 tens of thousands of men from the Pearl River Delta, mainly from the Siyi counties around Taishan, set out for the gold of California, where in 1865–1869 Chinese labourers made up most of the workforce building the Central Pacific Railroad, and in the 1850s for the Australian colony of Victoria; to avoid the Victorian entry tax, more than 16,000 of them landed at Robe in South Australia in 1857–1863 and walked on to the goldfields. More than 200,000 contract labourers were shipped to Cuba (some 125,000) and Peru (some 95,000) in 1847–1874. In 1882 the United States barred Chinese labourers by law. The emigrants spoke mainly southern languages – Hokkien (Min), Teochew, Cantonese and Hakka; Mandarin spread in the diaspora only in the 20th century."
+      "en": "From the 17th century first hundreds of thousands and later millions of people left the southern ports of Fujian and Guangdong. Settlers from southern Fujian sailed to Taiwan as early as the Dutch period (1624–1662), under Zheng Chenggong (Koxinga) and his successors, and after 1683 under the Qing dynasty, when Hakka from Guangdong also arrived; the languages of the Austronesian lowland peoples gradually died out, and Austronesian languages survived mainly in the mountains and on the east of the island. To South-East Asia, which the Chinese called Nanyang (‘the Southern Ocean’), merchants and labourers went to Manila, Batavia, Bangkok, the Malay Peninsula and Singapore, founded as a British port in 1819. After 1848 tens of thousands of men from the Pearl River Delta, mainly from the Siyi counties around Taishan, set out for the gold of California, where in 1865–1869 Chinese labourers made up most of the workforce building the Central Pacific Railroad, and in the 1850s for the Australian colony of Victoria; to avoid the Victorian entry tax, more than 16,000 of them landed at Robe in South Australia in 1857–1863 and walked on to the goldfields. More than 200,000 contract labourers were shipped to Cuba (some 125,000) and Peru (some 95,000) in 1847–1874. In 1882 the United States barred Chinese labourers by law. The emigrants spoke mainly southern languages – Hokkien (Min), Teochew, Cantonese and Hakka; Mandarin spread in the diaspora only in the 20th century.",
+      "it": "Dal XVII secolo prima centinaia di migliaia e poi milioni di persone lasciarono i porti meridionali del Fujian e del Guangdong. Coloni del Fujian meridionale navigarono verso Taiwan già nel periodo olandese (1624–1662), sotto Zheng Chenggong (Koxinga) e i suoi successori, e dopo il 1683 sotto la dinastia Qing, quando arrivarono anche Hakka dal Guangdong; le lingue dei popoli austronesiani delle pianure si estinsero gradualmente, e le lingue austronesiane sopravvissero soprattutto sulle montagne e nell’est dell’isola. Nel Sud-est asiatico, che i cinesi chiamavano Nanyang (‘l’Oceano meridionale’), mercanti e lavoratori si recarono a Manila, a Batavia, a Bangkok, nella penisola malese e a Singapore, fondata come porto britannico nel 1819. Dopo il 1848 decine di migliaia di uomini del delta del Fiume delle Perle, soprattutto delle contee di Siyi intorno a Taishan, partirono per l’oro della California, dove nel 1865–1869 i lavoratori cinesi costituirono la maggior parte della manodopera che costruiva la Central Pacific Railroad, e negli anni 1850 per la colonia australiana di Victoria; per evitare la tassa d’ingresso del Victoria, oltre 16 000 di loro sbarcarono nel 1857–1863 a Robe, nell’Australia Meridionale, e proseguirono a piedi fino ai campi auriferi. Oltre 200 000 lavoratori a contratto furono imbarcati per Cuba (circa 125 000) e per il Perù (circa 95 000) nel 1847–1874. Nel 1882 gli Stati Uniti esclusero per legge i lavoratori cinesi. Gli emigranti parlavano soprattutto lingue meridionali – hokkien (min), teochew, cantonese e hakka; il mandarino si diffuse nella diaspora solo nel XX secolo.",
+      "de": "Ab dem 17. Jahrhundert verließen zunächst Hunderttausende und später Millionen Menschen die südlichen Häfen von Fujian und Guangdong. Siedler aus dem südlichen Fujian fuhren schon in der niederländischen Zeit (1624–1662) nach Taiwan, unter Zheng Chenggong (Koxinga) und seinen Nachfolgern und nach 1683 unter der Qing-Dynastie, als auch Hakka aus Guangdong kamen; die Sprachen der austronesischen Völker der Ebenen starben nach und nach aus, und austronesische Sprachen hielten sich vor allem in den Bergen und im Osten der Insel. Kaufleute und Arbeiter zogen nach Südostasien, das die Chinesen Nanyang („Südmeer“) nannten: nach Manila, Batavia, Bangkok, auf die Malaiische Halbinsel und nach Singapur, das 1819 als britischer Hafen gegründet wurde. Nach 1848 brachen Zehntausende Männer aus dem Perlflussdelta, vor allem aus den Siyi-Kreisen um Taishan, zum Gold Kaliforniens auf, wo chinesische Arbeiter 1865–1869 den Großteil der Arbeitskräfte beim Bau der Central Pacific Railroad stellten, und in den 1850er-Jahren in die australische Kolonie Victoria; um der Einreisesteuer Victorias zu entgehen, landeten 1857–1863 über 16.000 von ihnen in Robe in Südaustralien und zogen zu Fuß weiter zu den Goldfeldern. Über 200.000 Kontraktarbeiter wurden 1847–1874 nach Kuba (rund 125.000) und Peru (rund 95.000) verschifft. 1882 verboten die Vereinigten Staaten per Gesetz die Einwanderung chinesischer Arbeiter. Die Auswanderer sprachen vor allem südliche Sprachen – Hokkien (Min), Teochew, Kantonesisch und Hakka; das Mandarin verbreitete sich in der Diaspora erst im 20. Jahrhundert.",
+      "fr": "À partir du XVIIᵉ siècle, des centaines de milliers, puis des millions de personnes quittèrent les ports méridionaux du Fujian et du Guangdong. Des colons du sud du Fujian gagnèrent Taïwan dès la période néerlandaise (1624–1662), sous Zheng Chenggong (Koxinga) et ses successeurs, puis après 1683 sous la dynastie Qing, lorsqu’arrivèrent aussi des Hakka du Guangdong ; les langues des peuples austronésiens des plaines s’éteignirent peu à peu, et les langues austronésiennes se maintinrent surtout dans les montagnes et dans l’est de l’île. Vers l’Asie du Sud-Est, que les Chinois appelaient Nanyang (« l’océan du Sud »), marchands et travailleurs partirent pour Manille, Batavia, Bangkok, la péninsule Malaise et Singapour, port britannique fondé en 1819. Après 1848, des dizaines de milliers d’hommes du delta de la rivière des Perles, surtout des districts de Siyi autour de Taishan, partirent chercher l’or de la Californie, où, en 1865–1869, les ouvriers chinois constituaient la majeure partie de la main-d’œuvre qui construisait le chemin de fer du Central Pacific, et, dans les années 1850, celui de la colonie australienne de Victoria ; pour échapper à la taxe d’entrée victorienne, plus de 16 000 d’entre eux débarquèrent en 1857–1863 à Robe, en Australie-Méridionale, et gagnèrent à pied les champs aurifères. Plus de 200 000 travailleurs sous contrat furent acheminés vers Cuba (quelque 125 000) et le Pérou (quelque 95 000) en 1847–1874. En 1882, les États-Unis interdirent par la loi l’entrée des travailleurs chinois. Les émigrants parlaient surtout des langues du Sud – le hokkien (min), le teochew, le cantonais et le hakka ; le mandarin ne se répandit dans la diaspora qu’au XXᵉ siècle.",
+      "he": "מהמאה ה-17 עזבו את נמלי הדרום של פוג׳יאן וגואנגדונג תחילה מאות אלפים ואחר כך מיליוני בני אדם. מתיישבים מדרום פוג׳יאן הפליגו לטאיוואן כבר בתקופה ההולנדית (1624–1662), תחת ג׳נג צ׳נגגונג (קושינגה) ויורשיו, ואחרי 1683 תחת שושלת צ׳ינג, כשהגיעו גם בני האקה מגואנגדונג; שפותיהם של העמים האוסטרונזיים של השפלה נכחדו בהדרגה, והשפות האוסטרונזיות שרדו בעיקר בהרים ובמזרח האי. לדרום-מזרח אסיה, שהסינים כינו נאניאנג (\"האוקיינוס הדרומי\"), יצאו סוחרים ופועלים – למנילה, לבטאוויה, לבנגקוק, לחצי האי המלאי ולסינגפור, שנוסדה כנמל בריטי ב-1819. אחרי 1848 יצאו עשרות אלפי גברים מדלתת נהר הפנינים, בעיקר מנפות סה-יי (Siyi) שסביב טאישאן, אל הזהב של קליפורניה, שם ב-1865–1869 היו הפועלים הסינים רוב כוח העבודה שבנה את מסילת הרכבת סנטרל פסיפיק (Central Pacific Railroad), ובשנות ה-50 של המאה ה-19 אל המושבה האוסטרלית ויקטוריה; כדי להתחמק ממס הכניסה של ויקטוריה ירדו יותר מ-16,000 מהם לחוף ברוב (Robe) שבדרום אוסטרליה ב-1857–1863 והמשיכו ברגל אל שדות הזהב. יותר מ-200,000 פועלי חוזה הובלו בספינות לקובה (כ-125,000) ולפרו (כ-95,000) ב-1847–1874. ב-1882 אסרה ארצות הברית בחוק את כניסתם של פועלים סינים. המהגרים דיברו בעיקר שפות דרומיות – הוקיין (מין), טאוצ׳ו (Teochew), קנטונזית והאקה; המנדרינית התפשטה בתפוצה הסינית רק במאה ה-20.",
+      "zh": "从17世纪起，先是数十万、后来是数百万人从福建和广东的南方港口出洋。闽南移民早在荷兰人统治时期（1624—1662年）就渡海前往台湾，在郑成功（国姓爷）及其后继者时期，以及1683年以后的清代也陆续前往，清代还有来自广东的客家人到来；平原地带南岛民族的语言逐渐消亡，南岛语言主要在山区和岛的东部保存下来。商人和劳工前往华人称为“南洋”的东南亚：马尼拉、巴达维亚、曼谷、马来半岛，以及1819年作为英国港口建立的新加坡。1848年以后，数以万计的珠江三角洲男子——主要来自台山一带的四邑——前往加利福尼亚淘金，1865—1869年间，修建中央太平洋铁路的工人大多是华工；19世纪50年代，又有人前往澳大利亚的维多利亚殖民地：为了逃避维多利亚的入境税，1857—1863年间其中有1.6万多人在南澳大利亚的罗布（Robe）登陆，再步行前往金矿区。1847—1874年间，20多万契约劳工被运往古巴（约12.5万人）和秘鲁（约9.5万人）。1882年，美国立法禁止华工入境。这些移民主要说南方语言：闽南语（闽语）、潮州话、粤语和客家语；官话直到20世纪才在海外华人中传播开来。"
      },
      "oblasti": [
       {
@@ -25046,7 +25387,12 @@
        "po": "na-tchaj-wan",
        "popisek": {
         "cs": "Tchaj-wan: min a hakka",
-        "en": "Taiwan: Min and Hakka"
+        "en": "Taiwan: Min and Hakka",
+        "it": "Taiwan: min e hakka",
+        "de": "Taiwan: Min und Hakka",
+        "fr": "Taïwan : min et hakka",
+        "he": "טאיוואן: מין והאקה",
+        "zh": "台湾：闽语和客家语"
        }
       },
       {
@@ -25066,7 +25412,12 @@
        "barva": "an",
        "popisek": {
         "cs": "austronéské jazyky",
-        "en": "Austronesian languages"
+        "en": "Austronesian languages",
+        "it": "lingue austronesiane",
+        "de": "austronesische Sprachen",
+        "fr": "langues austronésiennes",
+        "he": "שפות אוסטרונזיות",
+        "zh": "南岛语言"
        }
       },
       {
@@ -25082,7 +25433,12 @@
        "po": "do-manily",
        "popisek": {
         "cs": "Manila",
-        "en": "Manila"
+        "en": "Manila",
+        "it": "Manila",
+        "de": "Manila",
+        "fr": "Manille",
+        "he": "מנילה",
+        "zh": "马尼拉"
        }
       },
       {
@@ -25098,7 +25454,12 @@
        "po": "do-bangkoku",
        "popisek": {
         "cs": "Bangkok",
-        "en": "Bangkok"
+        "en": "Bangkok",
+        "it": "Bangkok",
+        "de": "Bangkok",
+        "fr": "Bangkok",
+        "he": "בנגקוק",
+        "zh": "曼谷"
        }
       },
       {
@@ -25124,7 +25485,12 @@
        "po": "do-singapuru",
        "popisek": {
         "cs": "Singapur a Malajsko",
-        "en": "Singapore and Malaya"
+        "en": "Singapore and Malaya",
+        "it": "Singapore e Malaya",
+        "de": "Singapur und Malaya",
+        "fr": "Singapour et Malaisie",
+        "he": "סינגפור ומלאיה",
+        "zh": "新加坡和马来亚"
        }
       },
       {
@@ -25140,7 +25506,12 @@
        "po": "do-batavie",
        "popisek": {
         "cs": "Batávie",
-        "en": "Batavia"
+        "en": "Batavia",
+        "it": "Batavia",
+        "de": "Batavia",
+        "fr": "Batavia",
+        "he": "בטאוויה",
+        "zh": "巴达维亚"
        }
       },
       {
@@ -25161,7 +25532,12 @@
        "po": "do-kalifornie",
        "popisek": {
         "cs": "Kalifornie",
-        "en": "California"
+        "en": "California",
+        "it": "California",
+        "de": "Kalifornien",
+        "fr": "Californie",
+        "he": "קליפורניה",
+        "zh": "加利福尼亚"
        }
       },
       {
@@ -25187,7 +25563,12 @@
        "po": "pesky-na-pole",
        "popisek": {
         "cs": "Viktorie (Austrálie)",
-        "en": "Victoria (Australia)"
+        "en": "Victoria (Australia)",
+        "it": "Victoria (Australia)",
+        "de": "Victoria (Australien)",
+        "fr": "Victoria (Australie)",
+        "he": "ויקטוריה (אוסטרליה)",
+        "zh": "维多利亚（澳大利亚）"
        }
       }
      ],
@@ -25227,7 +25608,12 @@
        "barva": "min",
        "popisek": {
         "cs": "na Tchaj-wan (17. st.)",
-        "en": "to Taiwan (17th c.)"
+        "en": "to Taiwan (17th c.)",
+        "it": "verso Taiwan (XVII sec.)",
+        "de": "nach Taiwan (17. Jh.)",
+        "fr": "vers Taïwan (XVIIᵉ s.)",
+        "he": "לטאיוואן (המאה ה-17)",
+        "zh": "至台湾（17世纪）"
        }
       },
       {
@@ -25285,7 +25671,12 @@
        "barva": "hq",
        "popisek": {
         "cs": "do Manily",
-        "en": "to Manila"
+        "en": "to Manila",
+        "it": "verso Manila",
+        "de": "nach Manila",
+        "fr": "vers Manille",
+        "he": "למנילה",
+        "zh": "至马尼拉"
        }
       },
       {
@@ -25383,7 +25774,12 @@
        "barva": "hq",
        "popisek": {
         "cs": "do Bangkoku",
-        "en": "to Bangkok"
+        "en": "to Bangkok",
+        "it": "verso Bangkok",
+        "de": "nach Bangkok",
+        "fr": "vers Bangkok",
+        "he": "לבנגקוק",
+        "zh": "至曼谷"
        }
       },
       {
@@ -25465,7 +25861,12 @@
        "barva": "hq",
        "popisek": {
         "cs": "do Singapuru",
-        "en": "to Singapore"
+        "en": "to Singapore",
+        "it": "verso Singapore",
+        "de": "nach Singapur",
+        "fr": "vers Singapour",
+        "he": "לסינגפור",
+        "zh": "至新加坡"
        }
       },
       {
@@ -25503,7 +25904,12 @@
        "barva": "hq",
        "popisek": {
         "cs": "na Penang",
-        "en": "to Penang"
+        "en": "to Penang",
+        "it": "verso Penang",
+        "de": "nach Penang",
+        "fr": "vers Penang",
+        "he": "לפנאנג",
+        "zh": "至槟城"
        }
       },
       {
@@ -25557,7 +25963,12 @@
        "barva": "hq",
        "popisek": {
         "cs": "do Batávie",
-        "en": "to Batavia"
+        "en": "to Batavia",
+        "it": "verso Batavia",
+        "de": "nach Batavia",
+        "fr": "vers Batavia",
+        "he": "לבטאוויה",
+        "zh": "至巴达维亚"
        }
       },
       {
@@ -25807,7 +26218,12 @@
        "barva": "hq",
        "popisek": {
         "cs": "do Kalifornie (od 1848)",
-        "en": "to California (from 1848)"
+        "en": "to California (from 1848)",
+        "it": "verso la California (dal 1848)",
+        "de": "nach Kalifornien (ab 1848)",
+        "fr": "vers la Californie (dès 1848)",
+        "he": "לקליפורניה (מ-1848)",
+        "zh": "至加利福尼亚（1848年起）"
        }
       },
       {
@@ -26057,7 +26473,12 @@
        "barva": "hq",
        "popisek": {
         "cs": "do Austrálie (50. léta 19. st.)",
-        "en": "to Australia (1850s)"
+        "en": "to Australia (1850s)",
+        "it": "verso l’Australia (anni 1850)",
+        "de": "nach Australien (1850er-Jahre)",
+        "fr": "vers l’Australie (années 1850)",
+        "he": "לאוסטרליה (שנות ה-50 של המאה ה-19)",
+        "zh": "至澳大利亚（19世纪50年代）"
        }
       },
       {
@@ -26095,7 +26516,12 @@
        "barva": "hq",
        "popisek": {
         "cs": "pěšky na zlatá pole",
-        "en": "on foot to the goldfields"
+        "en": "on foot to the goldfields",
+        "it": "a piedi verso i campi auriferi",
+        "de": "zu Fuß zu den Goldfeldern",
+        "fr": "à pied vers les champs aurifères",
+        "he": "ברגל אל שדות הזהב",
+        "zh": "步行前往金矿区"
        }
       }
      ]
@@ -26104,7 +26530,12 @@
      "id": "spisovny",
      "doba": {
       "cs": "1917 – 1979",
-      "en": "1917 – 1979"
+      "en": "1917 – 1979",
+      "it": "1917 – 1979",
+      "de": "1917 – 1979",
+      "fr": "1917 – 1979",
+      "he": "1917–1979",
+      "zh": "1917—1979年"
      },
      "pohled": [
       113,
@@ -26113,11 +26544,21 @@
      ],
      "nazev": {
       "cs": "Spisovný jazyk 20. století",
-      "en": "A standard language for the 20th century"
+      "en": "A standard language for the 20th century",
+      "it": "Una lingua standard per il XX secolo",
+      "de": "Eine Standardsprache für das 20. Jahrhundert",
+      "fr": "Une langue standard pour le XXᵉ siècle",
+      "he": "שפה תקנית למאה ה-20",
+      "zh": "20世纪的标准语"
      },
      "text": {
       "cs": "Na počátku 20. století se klasická čínština stala terčem reformátorů. Roku 1917 vyzval Chu Š' v časopise Nové mládí (Sin čching-nien) k literatuře v paj-chua, Lu Sün roku 1918 vydal v hovorovém jazyce povídku Deník šílence a hnutí 4. května 1919 dalo celému proudu jméno. Roku 1920 nařídilo ministerstvo školství Čínské republiky, aby se v prvních dvou ročnících základních škol místo klasické čínštiny učil psaný jazyk blízký mluvené řeči. Spisovný mluvený jazyk se nazýval kuo-jü (国语, „národní jazyk“), od roku 1918 měl hláskové písmo ču-jin a od roku 1932 jako normu pekingskou výslovnost. Čínská lidová republika jej nazvala pchu-tchung-chua (普通话, „obecná řeč“) a v únoru 1956 vymezila: pekingská výslovnost, severní nářečí jako základ a vzorová díla moderní paj-chua jako mluvnická norma. Roku 1956 zavedla první zjednodušené znaky (souhrnný seznam 1964) a 11. února 1958 schválilo Všečínské shromáždění lidových zástupců přepis pinyin. Na Tchaj-wanu, jehož správu po japonské kapitulaci roku 1945 převzala Čínská republika a kam se roku 1949 přesunula její vláda, se prosazoval kuo-jü a zůstaly tradiční znaky; tchajwanský hokkien, hakka a austronéské jazyky se do konce 80. let ve školách a ve vysílání omezovaly. V Hongkongu a Macao převládala kantonština. V Singapuru, který v letech 1969–1976 zavedl zjednodušené znaky, zahájila vláda roku 1979 kampaň Speak Mandarin, aby Číňané místo hokkienu, kantonštiny a dalších jižních jazyků užívali mandarínštinu.",
-      "en": "In the early 20th century Classical Chinese became a target of reformers. In 1917 Hu Shi called in the magazine New Youth (Xin qingnian) for literature in baihua, in 1918 Lu Xun published his story A Madman’s Diary in the vernacular, and the May Fourth Movement of 1919 gave the whole current its name. In 1920 the Ministry of Education of the Republic of China ordered that the first two years of primary school should teach a written language close to speech instead of Classical Chinese. The spoken standard was called guoyu (国语, ‘national language’); from 1918 it had a phonetic script, zhuyin, and from 1932 Beijing pronunciation as its norm. The People’s Republic of China named it putonghua (普通话, ‘common speech’) and in February 1956 defined it as follows: Beijing pronunciation, the northern dialects as its base and model works of modern baihua as its grammatical norm. In 1956 the PRC introduced the first simplified characters (with a consolidated list in 1964), and on 11 February 1958 the National People’s Congress approved the pinyin romanisation. In Taiwan, whose administration the Republic of China took over after the Japanese surrender in 1945 and to which its government moved in 1949, guoyu was promoted and traditional characters remained in use; Taiwanese Hokkien, Hakka and the Austronesian languages were restricted in schools and broadcasting until the end of the 1980s. In Hong Kong and Macau Cantonese prevailed. In Singapore, which introduced simplified characters in 1969–1976, the government launched the Speak Mandarin Campaign in 1979 to encourage Chinese Singaporeans to use Mandarin instead of Hokkien, Cantonese and other southern languages."
+      "en": "In the early 20th century Classical Chinese became a target of reformers. In 1917 Hu Shi called in the magazine New Youth (Xin qingnian) for literature in baihua, in 1918 Lu Xun published his story A Madman’s Diary in the vernacular, and the May Fourth Movement of 1919 gave the whole current its name. In 1920 the Ministry of Education of the Republic of China ordered that the first two years of primary school should teach a written language close to speech instead of Classical Chinese. The spoken standard was called guoyu (国语, ‘national language’); from 1918 it had a phonetic script, zhuyin, and from 1932 Beijing pronunciation as its norm. The People’s Republic of China named it putonghua (普通话, ‘common speech’) and in February 1956 defined it as follows: Beijing pronunciation, the northern dialects as its base and model works of modern baihua as its grammatical norm. In 1956 the PRC introduced the first simplified characters (with a consolidated list in 1964), and on 11 February 1958 the National People’s Congress approved the pinyin romanisation. In Taiwan, whose administration the Republic of China took over after the Japanese surrender in 1945 and to which its government moved in 1949, guoyu was promoted and traditional characters remained in use; Taiwanese Hokkien, Hakka and the Austronesian languages were restricted in schools and broadcasting until the end of the 1980s. In Hong Kong and Macau Cantonese prevailed. In Singapore, which introduced simplified characters in 1969–1976, the government launched the Speak Mandarin Campaign in 1979 to encourage Chinese Singaporeans to use Mandarin instead of Hokkien, Cantonese and other southern languages.",
+      "it": "All’inizio del XX secolo il cinese classico divenne il bersaglio dei riformatori. Nel 1917 Hu Shi invocò sulla rivista Nuova Gioventù (Xin qingnian) una letteratura in baihua, nel 1918 Lu Xun pubblicò in lingua volgare il racconto Diario di un pazzo, e il Movimento del 4 maggio del 1919 diede il nome all’intera corrente. Nel 1920 il Ministero dell’istruzione della Repubblica di Cina dispose che nei primi due anni della scuola primaria si insegnasse, al posto del cinese classico, una lingua scritta vicina al parlato. Lo standard parlato fu chiamato guoyu (国语, ‘lingua nazionale’); dal 1918 ebbe una scrittura fonetica, lo zhuyin, e dal 1932 la pronuncia di Beijing come norma. La Repubblica Popolare Cinese lo chiamò putonghua (普通话, ‘lingua comune’) e nel febbraio 1956 lo definì così: la pronuncia di Beijing, i dialetti settentrionali come base e le opere esemplari del baihua moderno come norma grammaticale. Nel 1956 la RPC introdusse i primi caratteri semplificati (con un elenco consolidato nel 1964), e l’11 febbraio 1958 l’Assemblea nazionale del popolo approvò la romanizzazione pinyin. A Taiwan, di cui la Repubblica di Cina assunse l’amministrazione dopo la resa giapponese del 1945 e dove il suo governo si trasferì nel 1949, fu promosso il guoyu e rimasero in uso i caratteri tradizionali; l’hokkien taiwanese, l’hakka e le lingue austronesiane furono limitati nelle scuole e nelle trasmissioni radiotelevisive fino alla fine degli anni Ottanta. A Hong Kong e Macao prevalse il cantonese. A Singapore, che introdusse i caratteri semplificati nel 1969–1976, il governo lanciò nel 1979 la Speak Mandarin Campaign per incoraggiare i singaporiani di etnia cinese a usare il mandarino invece dell’hokkien, del cantonese e di altre lingue meridionali.",
+      "de": "Zu Beginn des 20. Jahrhunderts geriet das klassische Chinesisch ins Visier der Reformer. 1917 rief Hu Shi in der Zeitschrift Neue Jugend (Xin qingnian) zu einer Literatur in baihua auf, 1918 veröffentlichte Lu Xun seine Erzählung Tagebuch eines Verrückten in der Umgangssprache, und die Bewegung des Vierten Mai 1919 gab der ganzen Strömung ihren Namen. 1920 ordnete das Bildungsministerium der Republik China an, in den ersten beiden Jahren der Grundschule statt des klassischen Chinesisch eine der gesprochenen Sprache nahe Schriftsprache zu unterrichten. Die gesprochene Standardsprache hieß guoyu (国语, „Nationalsprache“); seit 1918 hatte sie eine Lautschrift, zhuyin, und seit 1932 die Pekinger Aussprache als Norm. Die Volksrepublik China nannte sie putonghua (普通话, „Gemeinsprache“) und bestimmte sie im Februar 1956 so: Pekinger Aussprache, die nördlichen Dialekte als Grundlage und mustergültige Werke des modernen baihua als grammatische Norm. 1956 führte die Volksrepublik die ersten vereinfachten Schriftzeichen ein (mit einer Gesamtliste 1964), und am 11. Februar 1958 billigte der Nationale Volkskongress die Umschrift Pinyin. In Taiwan, dessen Verwaltung die Republik China nach der japanischen Kapitulation 1945 übernahm und wohin 1949 ihre Regierung zog, wurde das guoyu gefördert, und die traditionellen Schriftzeichen blieben in Gebrauch; das taiwanische Hokkien, das Hakka und die austronesischen Sprachen wurden bis Ende der 1980er-Jahre in Schulen und Rundfunk eingeschränkt. In Hongkong und Macau setzte sich das Kantonesische durch. In Singapur, das 1969–1976 vereinfachte Schriftzeichen einführte, startete die Regierung 1979 die Kampagne Speak Mandarin, um chinesischstämmige Singapurer dazu zu bewegen, statt Hokkien, Kantonesisch und anderer südlicher Sprachen Mandarin zu verwenden.",
+      "fr": "Au début du XXᵉ siècle, le chinois classique devint la cible des réformateurs. En 1917, Hu Shi appela dans la revue La Nouvelle Jeunesse (Xin qingnian) à une littérature en baihua, en 1918 Lu Xun publia en langue vernaculaire sa nouvelle Le Journal d’un fou, et le mouvement du 4 Mai 1919 donna son nom à l’ensemble de ce courant. En 1920, le ministère de l’Éducation de la République de Chine ordonna que les deux premières années de l’école primaire enseignent, à la place du chinois classique, une langue écrite proche de la langue parlée. La norme parlée fut appelée guoyu (国语, « langue nationale ») ; elle disposa à partir de 1918 d’une écriture phonétique, le zhuyin, et à partir de 1932 de la prononciation de Beijing comme norme. La République populaire de Chine la nomma putonghua (普通话, « langue commune ») et la définit en février 1956 ainsi : la prononciation de Beijing, les dialectes du Nord comme base et les œuvres modèles du baihua moderne comme norme grammaticale. En 1956, la RPC introduisit les premiers caractères simplifiés (avec une liste récapitulative en 1964), et le 11 février 1958 l’Assemblée populaire nationale approuva la romanisation pinyin. À Taïwan, dont la République de Chine reprit l’administration après la capitulation japonaise de 1945 et où son gouvernement s’installa en 1949, le guoyu fut promu et les caractères traditionnels restèrent en usage ; le hokkien taïwanais, le hakka et les langues austronésiennes furent restreints dans les écoles et dans la radiodiffusion jusqu’à la fin des années 1980. À Hong Kong et à Macao, le cantonais s’imposa. À Singapour, qui introduisit les caractères simplifiés en 1969–1976, le gouvernement lança en 1979 la campagne Speak Mandarin pour encourager les Singapouriens d’origine chinoise à utiliser le mandarin au lieu du hokkien, du cantonais et des autres langues du Sud.",
+      "he": "בראשית המאה ה-20 הפכה הסינית הקלאסית למטרה של הרפורמטורים. ב-1917 קרא הו שי בכתב העת \"נוער חדש\" (Xin qingnian) לספרות בבאיהואה, ב-1918 פרסם לו שון בשפת הדיבור את סיפורו \"יומנו של משוגע\", ותנועת הארבעה במאי של 1919 נתנה לזרם כולו את שמו. ב-1920 הורה משרד החינוך של הרפובליקה של סין ללמד בשתי השנים הראשונות של בית הספר היסודי, במקום הסינית הקלאסית, שפה כתובה הקרובה לדיבור. התקן המדובר נקרא גואויו (国语, \"השפה הלאומית\"); מ-1918 היה לו כתב פונטי, ג׳ויין (zhuyin), ומ-1932 – ההגייה של בייג׳ינג כנורמה. הרפובליקה העממית של סין קראה לו פוטונגהואה (普通话, \"הדיבור המשותף\") ובפברואר 1956 הגדירה אותו כך: ההגייה של בייג׳ינג, הניבים הצפוניים כבסיס, ויצירות מופת של הבאיהואה המודרנית כנורמה הדקדוקית. ב-1956 הנהיגה הרפובליקה העממית את הסימנים המפושטים הראשונים (עם רשימה מאוחדת ב-1964), וב-11 בפברואר 1958 אישר הקונגרס העממי הלאומי את תעתיק הפין-יין (pinyin) לאותיות לטיניות. בטאיוואן, שאת ניהולה קיבלה לידיה הרפובליקה של סין אחרי כניעת יפן ב-1945 ושאליה עברה ממשלתה ב-1949, קודמה הגואויו ונשארו בשימוש הסימנים המסורתיים; ההוקיין הטאיוואני, ההאקה והשפות האוסטרונזיות הוגבלו בבתי הספר ובשידורים עד סוף שנות ה-80. בהונג קונג ובמקאו גברה הקנטונזית. בסינגפור, שהנהיגה סימנים מפושטים ב-1969–1976, פתחה הממשלה ב-1979 במבצע Speak Mandarin, כדי לעודד את הסינגפורים ממוצא סיני להשתמש במנדרינית במקום בהוקיין, בקנטונזית ובשפות דרומיות אחרות.",
+      "zh": "20世纪初，文言成了改革者攻击的对象。1917年，胡适在《新青年》杂志上提倡白话文学；1918年，鲁迅用白话发表了小说《狂人日记》；1919年的五四运动则为整个潮流命了名。1920年，中华民国教育部下令小学头两年改教接近口语的书面语，不再教文言。口语标准称为“国语”；它1918年起有了表音的注音符号，1932年起以北京语音为标准。中华人民共和国将其称为“普通话”，并于1956年2月作出如下界定：以北京语音为标准音，以北方话为基础方言，以典范的现代白话文著作为语法规范。1956年，中华人民共和国推行第一批简化字（1964年发布汇总的《简化字总表》）；1958年2月11日，全国人民代表大会批准了《汉语拼音方案》。在台湾——1945年日本投降后由中华民国接管其行政，1949年中华民国政府迁往该地——推行国语，并继续使用繁体字；台湾闽南语、客家语和南岛语言在学校和广播电视中受到限制，直到20世纪80年代末。在香港和澳门，粤语占了主导。新加坡于1969—1976年间推行简体字，1979年政府发起“讲华语运动”，鼓励新加坡华人用华语取代闽南语、粤语和其他南方语言。"
      },
      "oblasti": [
       {
@@ -26167,7 +26608,12 @@
        "barva": "zhn",
        "popisek": {
         "cs": "pchu-tchung-chua",
-        "en": "Putonghua"
+        "en": "Putonghua",
+        "it": "putonghua",
+        "de": "Putonghua",
+        "fr": "putonghua",
+        "he": "פוטונגהואה",
+        "zh": "普通话"
        }
       },
       {
@@ -26193,7 +26639,12 @@
        "po": "na-tchaj-wan",
        "popisek": {
         "cs": "kuo-jü (Tchaj-wan)",
-        "en": "Guoyu (Taiwan)"
+        "en": "Guoyu (Taiwan)",
+        "it": "guoyu (Taiwan)",
+        "de": "Guoyu (Taiwan)",
+        "fr": "guoyu (Taïwan)",
+        "he": "גואויו (טאיוואן)",
+        "zh": "国语（台湾）"
        }
       },
       {
@@ -26208,7 +26659,12 @@
        "barva": "yue",
        "popisek": {
         "cs": "kantonština (Hongkong, Macao)",
-        "en": "Cantonese (Hong Kong, Macau)"
+        "en": "Cantonese (Hong Kong, Macau)",
+        "it": "cantonese (Hong Kong, Macao)",
+        "de": "Kantonesisch (Hongkong, Macau)",
+        "fr": "cantonais (Hong Kong, Macao)",
+        "he": "קנטונזית (הונג קונג, מקאו)",
+        "zh": "粤语（香港、澳门）"
        }
       },
       {
@@ -26223,7 +26679,12 @@
        "barva": "zhn",
        "popisek": {
         "cs": "Singapur (Speak Mandarin, 1979)",
-        "en": "Singapore (Speak Mandarin, 1979)"
+        "en": "Singapore (Speak Mandarin, 1979)",
+        "it": "Singapore (Speak Mandarin, 1979)",
+        "de": "Singapur (Speak Mandarin, 1979)",
+        "fr": "Singapour (Speak Mandarin, 1979)",
+        "he": "סינגפור (Speak Mandarin, 1979)",
+        "zh": "新加坡（讲华语运动，1979年）"
        }
       }
      ],
@@ -26271,7 +26732,12 @@
        "barva": "zhn",
        "popisek": {
         "cs": "na Tchaj-wan (1945–1949)",
-        "en": "to Taiwan (1945–1949)"
+        "en": "to Taiwan (1945–1949)",
+        "it": "verso Taiwan (1945–1949)",
+        "de": "nach Taiwan (1945–1949)",
+        "fr": "vers Taïwan (1945–1949)",
+        "he": "לטאיוואן (1945–1949)",
+        "zh": "至台湾（1945—1949年）"
        }
       }
      ]
@@ -26280,7 +26746,12 @@
      "id": "dnes",
      "doba": {
       "cs": "dnes",
-      "en": "today"
+      "en": "today",
+      "it": "oggi",
+      "de": "heute",
+      "fr": "aujourd’hui",
+      "he": "היום",
+      "zh": "今天"
      },
      "pohled": [
       110,
@@ -26289,11 +26760,21 @@
      ],
      "nazev": {
       "cs": "Čínské jazyky dnes",
-      "en": "Chinese languages today"
+      "en": "Chinese languages today",
+      "it": "Le lingue cinesi oggi",
+      "de": "Die chinesischen Sprachen heute",
+      "fr": "Les langues chinoises aujourd’hui",
+      "he": "השפות הסיניות היום",
+      "zh": "今天的汉语族语言"
      },
      "text": {
       "cs": "Čínské jazyky jsou mateřštinou asi 1,3 až 1,4 miliardy lidí. Největší z nich, mandarínština, má asi 940 až 990 milionů rodilých mluvčích, s nerodilými přes 1,1 miliardy, a ze všech jazyků světa nejvíc rodilých mluvčích (Ethnologue 2023–2026; odhady se liší). Jazykový atlas Číny (2. vydání, 2012) rozlišuje vedle mandarínštiny devět skupin: ťin, wu, chuej, kan, siang, min, jüe, pching-chua a hakka; postavení ťin a pching-chua je sporné. Pchu-tchung-chua je podle zákona z roku 2000 celostátním společným jazykem Čínské lidové republiky; podle ministerstva školství se v ní roku 2020 dorozumělo 80,72 % obyvatel, roku 2000 53,06 %. Novela účinná od roku 2026 ji stanoví základním vyučovacím jazykem škol s jednotnými celostátními učebnicemi, jako cíl uvádí upevnění společenství čínského národa a svobodu národností užívat a rozvíjet vlastní jazyky dál uznává. Část badatelů a organizace pro lidská práva upozorňují na ústup výuky v tibetštině, mongolštině a dalších jazycích menšin; změna výuky ve Vnitřním Mongolsku roku 2020 vyvolala protesty. Studie z velkých měst, jako je Šanghaj, ukazují, že mladí lidé mluví místní varietou méně než starší generace. Na Tchaj-wanu je mandarínština hlavním jazykem úřadů a škol a zákony z let 2017–2019 uznaly za národní jazyky jazyky všech skupin obyvatel, tedy i tchajwanský hokkien (min), hakka, austronéské jazyky a tchajwanský znakový jazyk. V Singapuru je mandarínština jedním ze čtyř úředních jazyků. V Hongkongu a Macao převládá kantonština; hongkongská jazyková politika má od roku 1997 za cíl „dva psané a tři mluvené jazyky“ (čínštinu a angličtinu; kantonštinu, angličtinu a pchu-tchung-chua). Čínské znění Charty OSN je jedním z pěti rovnocenných a čínština je od roku 1973 také pracovním jazykem Valného shromáždění.",
-      "en": "Chinese languages are the mother tongue of some 1.3 to 1.4 billion people. The largest of them, Mandarin, has some 940 to 990 million native speakers, more than 1.1 billion including second-language speakers, and more native speakers than any other language in the world (Ethnologue 2023–2026; estimates vary). The Language Atlas of China (2nd edition, 2012) distinguishes nine groups besides Mandarin: Jin, Wu, Hui, Gan, Xiang, Min, Yue, Pinghua and Hakka; the status of Jin and Pinghua is disputed. Under a law of 2000 Putonghua is the national common language of the People’s Republic of China; according to the Ministry of Education 80.72 per cent of the population could communicate in it in 2020, against 53.06 per cent in 2000. A revision in force since 2026 makes it the basic language of instruction in schools, with unified national textbooks, names forging a strong sense of community of the Chinese nation among its aims, and still recognises the freedom of ethnic groups to use and develop their own languages. Some scholars and human rights organisations point to a decline of teaching in Tibetan, Mongolian and other minority languages; a change to schooling in Inner Mongolia in 2020 led to protests. Studies from large cities such as Shanghai show that young people speak the local variety less than older generations. In Taiwan Mandarin is the main language of government and schools, and laws passed in 2017–2019 recognised the languages of all the island’s groups as national languages, including Taiwanese Hokkien (Min), Hakka, the Austronesian languages and Taiwan Sign Language. In Singapore Mandarin is one of four official languages. In Hong Kong and Macau Cantonese predominates; since 1997 Hong Kong’s language policy has aimed at being ‘biliterate and trilingual’ (written Chinese and English; spoken Cantonese, English and Putonghua). The Chinese text of the UN Charter is one of its five equally authentic versions, and since 1973 Chinese has also been a working language of the General Assembly."
+      "en": "Chinese languages are the mother tongue of some 1.3 to 1.4 billion people. The largest of them, Mandarin, has some 940 to 990 million native speakers, more than 1.1 billion including second-language speakers, and more native speakers than any other language in the world (Ethnologue 2023–2026; estimates vary). The Language Atlas of China (2nd edition, 2012) distinguishes nine groups besides Mandarin: Jin, Wu, Hui, Gan, Xiang, Min, Yue, Pinghua and Hakka; the status of Jin and Pinghua is disputed. Under a law of 2000 Putonghua is the national common language of the People’s Republic of China; according to the Ministry of Education 80.72 per cent of the population could communicate in it in 2020, against 53.06 per cent in 2000. A revision in force since 2026 makes it the basic language of instruction in schools, with unified national textbooks, names forging a strong sense of community of the Chinese nation among its aims, and still recognises the freedom of ethnic groups to use and develop their own languages. Some scholars and human rights organisations point to a decline of teaching in Tibetan, Mongolian and other minority languages; a change to schooling in Inner Mongolia in 2020 led to protests. Studies from large cities such as Shanghai show that young people speak the local variety less than older generations. In Taiwan Mandarin is the main language of government and schools, and laws passed in 2017–2019 recognised the languages of all the island’s groups as national languages, including Taiwanese Hokkien (Min), Hakka, the Austronesian languages and Taiwan Sign Language. In Singapore Mandarin is one of four official languages. In Hong Kong and Macau Cantonese predominates; since 1997 Hong Kong’s language policy has aimed at being ‘biliterate and trilingual’ (written Chinese and English; spoken Cantonese, English and Putonghua). The Chinese text of the UN Charter is one of its five equally authentic versions, and since 1973 Chinese has also been a working language of the General Assembly.",
+      "it": "Le lingue cinesi sono la lingua materna di circa 1,3–1,4 miliardi di persone. La più grande, il mandarino, conta circa 940–990 milioni di madrelingua, oltre 1,1 miliardi contando anche chi lo parla come seconda lingua, e più madrelingua di qualsiasi altra lingua al mondo (Ethnologue 2023–2026; le stime variano). L’Atlante linguistico della Cina (2ª edizione, 2012) distingue, oltre al mandarino, nove gruppi: jin, wu, hui, gan, xiang, min, yue, pinghua e hakka; lo status del jin e del pinghua è controverso. In base a una legge del 2000 il putonghua è la lingua comune nazionale della Repubblica Popolare Cinese; secondo il Ministero dell’istruzione nel 2020 era in grado di comunicarvi l’80,72% della popolazione, contro il 53,06% del 2000. Una revisione in vigore dal 2026 ne fa la lingua di base dell’insegnamento nelle scuole, con libri di testo nazionali unificati, indica tra i suoi obiettivi il forgiare un forte senso di comunità della nazione cinese e riconosce tuttora la libertà dei gruppi etnici di usare e sviluppare le proprie lingue. Alcuni studiosi e organizzazioni per i diritti umani segnalano un declino dell’insegnamento in tibetano, in mongolo e in altre lingue minoritarie; un cambiamento nell’istruzione in Mongolia Interna nel 2020 provocò proteste. Studi su grandi città come Shanghai mostrano che i giovani parlano la varietà locale meno delle generazioni più anziane. A Taiwan il mandarino è la lingua principale dell’amministrazione e della scuola, e leggi approvate nel 2017–2019 hanno riconosciuto come lingue nazionali le lingue di tutti i gruppi dell’isola, tra cui l’hokkien taiwanese (min), l’hakka, le lingue austronesiane e la lingua dei segni taiwanese. A Singapore il mandarino è una delle quattro lingue ufficiali. A Hong Kong e Macao predomina il cantonese; dal 1997 la politica linguistica di Hong Kong mira a essere ‘biletterata e trilingue’ (cinese e inglese scritti; cantonese, inglese e putonghua parlati). Il testo cinese della Carta delle Nazioni Unite è una delle sue cinque versioni ugualmente autentiche, e dal 1973 il cinese è anche lingua di lavoro dell’Assemblea generale.",
+      "de": "Die chinesischen Sprachen sind die Muttersprache von etwa 1,3 bis 1,4 Milliarden Menschen. Die größte von ihnen, das Mandarin, hat etwa 940 bis 990 Millionen Muttersprachler, einschließlich der Zweitsprachler über 1,1 Milliarden Sprecher, und mehr Muttersprachler als jede andere Sprache der Welt (Ethnologue 2023–2026; die Schätzungen schwanken). Der Language Atlas of China (2. Auflage, 2012) unterscheidet neben dem Mandarin neun Gruppen: Jin, Wu, Hui, Gan, Xiang, Min, Yue, Pinghua und Hakka; der Status von Jin und Pinghua ist umstritten. Nach einem Gesetz von 2000 ist das Putonghua die landesweite Gemeinsprache der Volksrepublik China; nach Angaben des Bildungsministeriums konnten sich 2020 80,72 Prozent der Bevölkerung darin verständigen, gegenüber 53,06 Prozent im Jahr 2000. Eine seit 2026 geltende Novelle macht es zur grundlegenden Unterrichtssprache der Schulen mit einheitlichen landesweiten Lehrbüchern, nennt unter ihren Zielen, ein starkes Gemeinschaftsbewusstsein der chinesischen Nation zu schmieden, und erkennt weiterhin die Freiheit der ethnischen Gruppen an, ihre eigenen Sprachen zu gebrauchen und zu entwickeln. Einige Forscher und Menschenrechtsorganisationen weisen auf einen Rückgang des Unterrichts in Tibetisch, Mongolisch und anderen Minderheitensprachen hin; eine Änderung des Schulunterrichts in der Inneren Mongolei führte 2020 zu Protesten. Studien aus Großstädten wie Shanghai zeigen, dass junge Menschen die örtliche Varietät seltener sprechen als ältere Generationen. In Taiwan ist das Mandarin die Hauptsprache von Verwaltung und Schule, und Gesetze von 2017–2019 erkannten die Sprachen aller Bevölkerungsgruppen der Insel als Nationalsprachen an, darunter das taiwanische Hokkien (Min), das Hakka, die austronesischen Sprachen und die Taiwanische Gebärdensprache. In Singapur ist das Mandarin eine von vier Amtssprachen. In Hongkong und Macau überwiegt das Kantonesische; seit 1997 strebt die Sprachpolitik Hongkongs „Zweischriftigkeit und Dreisprachigkeit“ an (geschrieben Chinesisch und Englisch; gesprochen Kantonesisch, Englisch und Putonghua). Der chinesische Text der UN-Charta ist eine ihrer fünf gleichermaßen verbindlichen Fassungen, und seit 1973 ist Chinesisch auch Arbeitssprache der Generalversammlung.",
+      "fr": "Les langues chinoises sont la langue maternelle de quelque 1,3 à 1,4 milliard de personnes. La plus importante d’entre elles, le mandarin, compte quelque 940 à 990 millions de locuteurs natifs, plus de 1,1 milliard en comptant les locuteurs de langue seconde, et davantage de locuteurs natifs que toute autre langue au monde (Ethnologue 2023–2026 ; les estimations varient). L’Atlas linguistique de la Chine (2ᵉ édition, 2012) distingue, outre le mandarin, neuf groupes : jin, wu, hui, gan, xiang, min, yue, pinghua et hakka ; le statut du jin et du pinghua est contesté. En vertu d’une loi de 2000, le putonghua est la langue commune nationale de la République populaire de Chine ; selon le ministère de l’Éducation, 80,72 % de la population pouvait communiquer dans cette langue en 2020, contre 53,06 % en 2000. Une révision en vigueur depuis 2026 en fait la langue d’enseignement de base dans les écoles, avec des manuels nationaux unifiés, cite parmi ses objectifs celui de forger un solide sentiment de communauté de la nation chinoise et reconnaît toujours la liberté des groupes ethniques d’utiliser et de développer leurs propres langues. Certains chercheurs et des organisations de défense des droits humains signalent un recul de l’enseignement en tibétain, en mongol et dans d’autres langues minoritaires ; un changement de la scolarité en Mongolie-Intérieure en 2020 a provoqué des manifestations. Des études menées dans de grandes villes comme Shanghai montrent que les jeunes parlent moins la variété locale que les générations plus âgées. À Taïwan, le mandarin est la principale langue de l’administration et de l’école, et des lois adoptées en 2017–2019 ont reconnu comme langues nationales les langues de tous les groupes de l’île, y compris le hokkien taïwanais (min), le hakka, les langues austronésiennes et la langue des signes taïwanaise. À Singapour, le mandarin est l’une des quatre langues officielles. À Hong Kong et à Macao, le cantonais prédomine ; depuis 1997, la politique linguistique de Hong Kong vise la « bilittératie et le trilinguisme » (chinois et anglais à l’écrit ; cantonais, anglais et putonghua à l’oral). Le texte chinois de la Charte des Nations unies est l’une de ses cinq versions faisant également foi, et depuis 1973 le chinois est aussi une langue de travail de l’Assemblée générale.",
+      "he": "השפות הסיניות הן שפת האם של כ-1.3 עד 1.4 מיליארד בני אדם. הגדולה שבהן, המנדרינית, מונה כ-940 עד 990 מיליון דוברים ילידיים, יותר מ-1.1 מיליארד כולל דוברים בשפה שנייה, ויותר דוברים ילידיים מכל שפה אחרת בעולם (Ethnologue 2023–2026; ההערכות שונות). האטלס הלשוני של סין (מהדורה שנייה, 2012) מבחין, מלבד המנדרינית, בתשע קבוצות: ג׳ין, וו, הווי, גאן, שיאנג, מין, יואה, פינגהואה והאקה; מעמדן של ג׳ין ופינגהואה שנוי במחלוקת. לפי חוק משנת 2000 הפוטונגהואה היא השפה המשותפת הלאומית של הרפובליקה העממית של סין; לפי משרד החינוך, 80.72% מהאוכלוסייה יכלו לתקשר בה ב-2020, לעומת 53.06% ב-2000. תיקון לחוק שבתוקף מ-2026 קובע אותה כשפת ההוראה הבסיסית בבתי הספר, עם ספרי לימוד ארציים אחידים, מונה בין מטרותיו את גיבושה של תחושה חזקה של קהילת האומה הסינית, ועדיין מכיר בחופש של הקבוצות האתניות להשתמש בשפותיהן ולפתח אותן. חלק מהחוקרים וארגוני זכויות אדם מצביעים על ירידה בהוראה בטיבטית, במונגולית ובשפות מיעוטים אחרות; שינוי בחינוך במונגוליה הפנימית ב-2020 עורר מחאות. מחקרים מערים גדולות כמו שאנגחאי מראים שהצעירים מדברים בזן המקומי פחות מהדורות המבוגרים. בטאיוואן המנדרינית היא השפה העיקרית של הממשל ושל בתי הספר, וחוקים שהתקבלו ב-2017–2019 הכירו בשפות של כל הקבוצות באי כשפות לאומיות, ובהן ההוקיין הטאיוואני (מין), ההאקה, השפות האוסטרונזיות ושפת הסימנים הטאיוואנית. בסינגפור המנדרינית היא אחת מארבע השפות הרשמיות. בהונג קונג ובמקאו שולטת הקנטונזית; מאז 1997 שואפת מדיניות הלשון של הונג קונג ל\"דו-כתביות ותלת-לשוניות\" (סינית ואנגלית בכתב; קנטונזית, אנגלית ופוטונגהואה בדיבור). הנוסח הסיני של מגילת האו״ם הוא אחד מחמשת נוסחיה המוסמכים במידה שווה, ומאז 1973 הסינית היא גם שפת עבודה של העצרת הכללית.",
+      "zh": "汉语族语言是约13亿至14亿人的母语。其中最大的官话约有9.4亿至9.9亿母语使用者，连同第二语言使用者超过11亿，母语使用者人数居世界各语言之首（《民族语》2023—2026年；各家估计不一）。《中国语言地图集》（第2版，2012年）在官话之外区分了九个语群：晋语、吴语、徽语、赣语、湘语、闽语、粤语、平话和客家语；晋语和平话的地位存在争议。根据2000年的《国家通用语言文字法》，普通话是中华人民共和国的国家通用语言；据教育部统计，2020年能用普通话交流的人口占80.72%，2000年为53.06%。2026年起施行的修订版把普通话定为学校的基本教学语言，使用国家统编教材，把铸牢中华民族共同体意识列为目标之一，同时仍承认各民族使用和发展自己语言的自由。一些学者和人权组织指出，用藏语、蒙古语和其他少数民族语言进行的教学在减少；2020年内蒙古学校教学的一项调整引发了抗议。来自上海等大城市的研究表明，年轻人比老一辈更少说本地话。在台湾，华语是政府和学校的主要语言；2017—2019年通过的法律承认岛上各族群的语言都是国家语言，包括台湾闽南语（闽语）、客家语、南岛语言和台湾手语。在新加坡，华语是四种官方语言之一。在香港和澳门，粤语占主导；1997年以来，香港的语言政策以“两文三语”为目标（书面上是中文和英文；口语上是粤语、英语和普通话）。《联合国宪章》的中文本是其五种同等作准的文本之一；自1973年起，中文也是联合国大会的工作语言。"
      },
      "oblasti": [
       {
@@ -26373,7 +26854,12 @@
        "barva": "zhn",
        "popisek": {
         "cs": "mandarínština",
-        "en": "Mandarin"
+        "en": "Mandarin",
+        "it": "mandarino",
+        "de": "Mandarin",
+        "fr": "mandarin",
+        "he": "מנדרינית",
+        "zh": "官话"
        }
       },
       {
@@ -26398,7 +26884,12 @@
        "barva": "wu",
        "popisek": {
         "cs": "wu (šanghajština)",
-        "en": "Wu (Shanghainese)"
+        "en": "Wu (Shanghainese)",
+        "it": "wu (shanghainese)",
+        "de": "Wu (Shanghaiisch)",
+        "fr": "wu (shanghaïen)",
+        "he": "וו (שאנגחאית)",
+        "zh": "吴语（上海话）"
        }
       },
       {
@@ -26428,7 +26919,12 @@
        "barva": "min",
        "popisek": {
         "cs": "min (hokkien)",
-        "en": "Min (Hokkien)"
+        "en": "Min (Hokkien)",
+        "it": "min (hokkien)",
+        "de": "Min (Hokkien)",
+        "fr": "min (hokkien)",
+        "he": "מין (הוקיין)",
+        "zh": "闽语（闽南语）"
        }
       },
       {
@@ -26453,7 +26949,12 @@
        "barva": "yue",
        "popisek": {
         "cs": "jüe (kantonština)",
-        "en": "Yue (Cantonese)"
+        "en": "Yue (Cantonese)",
+        "it": "yue (cantonese)",
+        "de": "Yue (Kantonesisch)",
+        "fr": "yue (cantonais)",
+        "he": "יואה (קנטונזית)",
+        "zh": "粤语（广府话）"
        }
       },
       {
@@ -26468,7 +26969,12 @@
        "barva": "hak",
        "popisek": {
         "cs": "hakka",
-        "en": "Hakka"
+        "en": "Hakka",
+        "it": "hakka",
+        "de": "Hakka",
+        "fr": "hakka",
+        "he": "האקה",
+        "zh": "客家语"
        }
       },
       {
@@ -26483,7 +26989,12 @@
        "barva": "gan",
        "popisek": {
         "cs": "kan",
-        "en": "Gan"
+        "en": "Gan",
+        "it": "gan",
+        "de": "Gan",
+        "fr": "gan",
+        "he": "גאן",
+        "zh": "赣语"
        }
       },
       {
@@ -26498,7 +27009,12 @@
        "barva": "xia",
        "popisek": {
         "cs": "siang",
-        "en": "Xiang"
+        "en": "Xiang",
+        "it": "xiang",
+        "de": "Xiang",
+        "fr": "xiang",
+        "he": "שיאנג",
+        "zh": "湘语"
        }
       },
       {
@@ -26523,7 +27039,12 @@
        "barva": "zhn",
        "popisek": {
         "cs": "Tchaj-wan: mandarínština, min",
-        "en": "Taiwan: Mandarin, Min"
+        "en": "Taiwan: Mandarin, Min",
+        "it": "Taiwan: mandarino, min",
+        "de": "Taiwan: Mandarin, Min",
+        "fr": "Taïwan : mandarin, min",
+        "he": "טאיוואן: מנדרינית, מין",
+        "zh": "台湾：华语、闽语"
        }
       },
       {
@@ -26548,7 +27069,12 @@
        "barva": "tb",
        "popisek": {
         "cs": "tibetské jazyky",
-        "en": "Tibetic languages"
+        "en": "Tibetic languages",
+        "it": "lingue tibetiche",
+        "de": "tibetische Sprachen",
+        "fr": "langues tibétiques",
+        "he": "שפות טיבטיות",
+        "zh": "藏语支语言"
        }
       }
      ],
