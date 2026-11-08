@@ -207,10 +207,16 @@ statických stránkách), název **语言地图集**, LOCALE `zh_CN`. Statické 
 `/zh/stories/`). Čtenář z pevninské Číny a Singapuru: tam jsou Google Fonts a Wikipedie blokované – web funguje i bez nich.
 - **Etapa 1 (8. 11. 2026)**: rozhraní `src/ui/zh.json` (772 textů), 164 karet (`zh` za `he` v languages.json), rodiny a větve
   `glottolog-*.zh.json` (…语系, …语族/语支/亚语支, technické uzly …语群), názvy z CLDR (`node scripts/nazvy.mjs zh`). Pět překladatelů,
-  tři nezávislé kontroly (rozhraní 17 oprav, karty 33, CLDR 129). **Etapa 2 (starověk, Příběhy, putování, cesty slov, dny, písma,
-  typologie, vymyšlené jazyky) zatím chybí** – ukazuje se anglicky; postup jako u hebrejštiny (`he2/` ve scratchpadu: vytahni, kontrola,
-  oprava, sjednoceni, vloz – jen místo `he` za `fr` vložit `zh` za `he`). Vymyšlené jazyky a několik stránek starověku mají aspoň
-  čínská hledací slova (`hledat`), aby fungovaly příklady z návodu (埃及, 茶, 精灵, 克林贡).
+  tři nezávislé kontroly (rozhraní 17 oprav, karty 33, CLDR 129).
+- **Etapa 2 (8. 11. 2026)**: 29 stránek starověku a Příběhů, 17 putování, 12 cest slov, Jazyk dne a dny jazyků, 36 písem, typologie
+  WALS, vymyšlené jazyky (pole `zh` za `he`, `adresa.zh` = anglická). 14 překladatelů z angličtiny + 10 nezávislých kontrol (~310 oprav:
+  mj. latina „nezanikla jako etruština“ měla obrácený smysl, Vulgata „přelom 4. a 5. st.“, 犹太人大屠杀 místo obecného 大屠杀,
+  绳纹器文化 (ne 绳纹陶 – plete se s Džómon), heterogram 训读词 (异读词 znamená něco jiného), předložky 前置词 × záložky 后置词,
+  citace Sedžonga, Čŏng In-džiho (不終朝而會) a kolofonu Čikči podle 解例本, Bible podle 和合本). Nástroje ve scratchpadu `zh2/`
+  (`vytahni.py`, `kontrola.py`, `oprava.py`, **`sjednoceni.py`**: 阿拉姆语/阿拉姆字母, 巴尔米拉 (i písmo Palm v `nazvy-zh-opravy.json`),
+  rozsahy let pomlčkou „—“ podle GB/T 15834, jen v textech s čínskými znaky a mimo WALS; **`vloz.py`**). Mandžusko = **今中国东北**
+  (满洲 je v ČLR zatížené, holé 中国东北 by u roku 552 bylo anachronické). Navažský Long Walk = “长途步行”（Long Walk）, ne 长征.
+  Výslovnost vymyšlených jazyků podle pravidel karet (ˈnuk-nêh, mai go-ˈvan-nên).
 - **Výslovnost na kartě: pinyinem a pod ní anglicky** (`vyslovnostEn`, `.prepis-en` v app.js, `.cteme-en` ve stranky.mjs; klíč
   `vyslovnostEn` mají všechna rozhraní, používá ho jen čínština). Pravidla zápisu (dohodnutá napříč kartami, kontrola je sjednotila):
   hodnoty písmen jako v pinyinu, slabiky spojovníkem, **přízvuk ˈ před slabikou** (čínští studenti ho znají z anglických slovníků),

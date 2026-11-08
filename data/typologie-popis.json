@@ -7,7 +7,8 @@
    "it": "Fonologia",
    "de": "Phonologie",
    "fr": "Phonologie",
-   "he": "פונולוגיה"
+   "he": "פונולוגיה",
+   "zh": "音系"
   },
   "morfologie": {
    "cs": "Morfologie",
@@ -15,7 +16,8 @@
    "it": "Morfologia",
    "de": "Morphologie",
    "fr": "Morphologie",
-   "he": "מורפולוגיה"
+   "he": "מורפולוגיה",
+   "zh": "形态"
   },
   "slovosled": {
    "cs": "Slovosled",
@@ -23,7 +25,8 @@
    "it": "Ordine delle parole",
    "de": "Wortstellung",
    "fr": "Ordre des mots",
-   "he": "סדר מילים"
+   "he": "סדר מילים",
+   "zh": "语序"
   },
   "veta": {
    "cs": "Větná stavba",
@@ -31,7 +34,8 @@
    "it": "Struttura della frase",
    "de": "Satzbau",
    "fr": "Structure de la proposition",
-   "he": "מבנה המשפט"
+   "he": "מבנה המשפט",
+   "zh": "小句结构"
   },
   "slovnik": {
    "cs": "Slovní zásoba",
@@ -39,7 +43,8 @@
    "it": "Lessico",
    "de": "Lexikon",
    "fr": "Lexique",
-   "he": "לקסיקון"
+   "he": "לקסיקון",
+   "zh": "词汇"
   }
  },
  "vlastnosti": [
@@ -53,7 +58,8 @@
     "it": "Inventari consonantici",
     "de": "Konsonanteninventar",
     "fr": "Inventaires consonantiques",
-    "he": "מלאי העיצורים"
+    "he": "מלאי העיצורים",
+    "zh": "辅音音位数量"
    },
    "popis": {
     "cs": "Počet souhláskových fonémů jazyka. Hranice kategorií podle WALS: malý 6–14, středně malý 15–18, průměrný 19–25, středně velký 26–33, velký 34 a více.",
@@ -61,7 +67,8 @@
     "it": "Il numero di fonemi consonantici. Limiti delle categorie del WALS: piccolo 6–14, medio-piccolo 15–18, medio 19–25, medio-grande 26–33, grande 34 o più.",
     "de": "Die Anzahl der Konsonantenphoneme. Klassengrenzen nach WALS: klein 6–14, mäßig klein 15–18, durchschnittlich 19–25, mäßig groß 26–33, groß 34 oder mehr.",
     "fr": "Le nombre de phonèmes consonantiques. Limites des catégories du WALS : petit 6–14, assez petit 15–18, moyen 19–25, assez grand 26–33, grand 34 ou plus.",
-    "he": "מספר הפונמות העיצוריות. גבולות הקטגוריות לפי WALS: קטן 6–14, קטן למדי 15–18, ממוצע 19–25, גדול למדי 26–33, גדול 34 ומעלה."
+    "he": "מספר הפונמות העיצוריות. גבולות הקטגוריות לפי WALS: קטן 6–14, קטן למדי 15–18, ממוצע 19–25, גדול למדי 26–33, גדול 34 ומעלה.",
+    "zh": "辅音音位的数量。WALS 的分类界限：少 6–14，偏少 15–18，中等 19–25，偏多 26–33，多 34个及以上。"
    },
    "hodnoty": {
     "1": {
@@ -70,7 +77,8 @@
      "it": "Piccolo (6–14)",
      "de": "Klein (6–14)",
      "fr": "Petit (6–14)",
-     "he": "קטן (6–14)"
+     "he": "קטן (6–14)",
+     "zh": "少（6–14）"
     },
     "2": {
      "cs": "středně malý (15–18)",
@@ -78,7 +86,8 @@
      "it": "Medio-piccolo (15–18)",
      "de": "Mäßig klein (15–18)",
      "fr": "Assez petit (15–18)",
-     "he": "קטן למדי (15–18)"
+     "he": "קטן למדי (15–18)",
+     "zh": "偏少（15–18）"
     },
     "3": {
      "cs": "průměrný (19–25)",
@@ -86,7 +95,8 @@
      "it": "Medio (19–25)",
      "de": "Durchschnittlich (19–25)",
      "fr": "Moyen (19–25)",
-     "he": "ממוצע (19–25)"
+     "he": "ממוצע (19–25)",
+     "zh": "中等（19–25）"
     },
     "4": {
      "cs": "středně velký (26–33)",
@@ -94,7 +104,8 @@
      "it": "Medio-grande (26–33)",
      "de": "Mäßig groß (26–33)",
      "fr": "Assez grand (26–33)",
-     "he": "גדול למדי (26–33)"
+     "he": "גדול למדי (26–33)",
+     "zh": "偏多（26–33）"
     },
     "5": {
      "cs": "velký (34 a více)",
@@ -102,7 +113,8 @@
      "it": "Grande (34 o più)",
      "de": "Groß (34 oder mehr)",
      "fr": "Grand (34 ou plus)",
-     "he": "גדול (34 ומעלה)"
+     "he": "גדול (34 ומעלה)",
+     "zh": "多（34个及以上）"
     }
    },
    "tridy": [
@@ -115,7 +127,8 @@
      "it": "piccolo (6–14)",
      "de": "klein (6–14)",
      "fr": "petit (6–14)",
-     "he": "קטן (6–14)"
+     "he": "קטן (6–14)",
+     "zh": "少（6–14）"
     },
     {
      "wals": [
@@ -126,7 +139,8 @@
      "it": "medio-piccolo (15–18)",
      "de": "mäßig klein (15–18)",
      "fr": "assez petit (15–18)",
-     "he": "קטן למדי (15–18)"
+     "he": "קטן למדי (15–18)",
+     "zh": "偏少（15–18）"
     },
     {
      "wals": [
@@ -137,7 +151,8 @@
      "it": "medio (19–25)",
      "de": "durchschnittlich (19–25)",
      "fr": "moyen (19–25)",
-     "he": "ממוצע (19–25)"
+     "he": "ממוצע (19–25)",
+     "zh": "中等（19–25）"
     },
     {
      "wals": [
@@ -148,7 +163,8 @@
      "it": "medio-grande (26–33)",
      "de": "mäßig groß (26–33)",
      "fr": "assez grand (26–33)",
-     "he": "גדול למדי (26–33)"
+     "he": "גדול למדי (26–33)",
+     "zh": "偏多（26–33）"
     },
     {
      "wals": [
@@ -159,7 +175,8 @@
      "it": "grande (34 o più)",
      "de": "groß (34 oder mehr)",
      "fr": "grand (34 ou plus)",
-     "he": "גדול (34 ומעלה)"
+     "he": "גדול (34 ומעלה)",
+     "zh": "多（34个及以上）"
     }
    ]
   },
@@ -173,7 +190,8 @@
     "it": "Inventari dei timbri vocalici",
     "de": "Inventar der Vokalqualitäten",
     "fr": "Inventaires des qualités vocaliques",
-    "he": "מלאי איכויות התנועות"
+    "he": "מלאי איכויות התנועות",
+    "zh": "元音音质数量"
    },
    "popis": {
     "cs": "Počet samohláskových kvalit bez ohledu na délku, nosovost a další rysy, které kvalitu nemění.",
@@ -181,7 +199,8 @@
     "it": "Il numero di timbri vocalici, senza contare lunghezza, nasalizzazione e altri tratti che non cambiano il timbro.",
     "de": "Die Anzahl der Vokalqualitäten, ohne Berücksichtigung von Länge, Nasalierung und anderen Merkmalen, die die Qualität nicht verändern.",
     "fr": "Le nombre de qualités vocaliques, abstraction faite de la longueur, de la nasalisation et des autres traits qui ne modifient pas la qualité.",
-    "he": "מספר איכויות התנועות, בלי להביא בחשבון אורך, אנפוף ותכונות אחרות שאינן משנות את איכות התנועה."
+    "he": "מספר איכויות התנועות, בלי להביא בחשבון אורך, אנפוף ותכונות אחרות שאינן משנות את איכות התנועה.",
+    "zh": "元音音质的数量，不计长短、鼻化及其他不改变音质的特征。"
    },
    "hodnoty": {
     "1": {
@@ -190,7 +209,8 @@
      "it": "Piccolo (2–4)",
      "de": "Klein (2–4)",
      "fr": "Petit (2–4)",
-     "he": "קטן (2–4)"
+     "he": "קטן (2–4)",
+     "zh": "少（2–4）"
     },
     "2": {
      "cs": "průměrný (5–6 kvalit)",
@@ -198,7 +218,8 @@
      "it": "Medio (5–6)",
      "de": "Durchschnittlich (5–6)",
      "fr": "Moyen (5–6)",
-     "he": "ממוצע (5–6)"
+     "he": "ממוצע (5–6)",
+     "zh": "中等（5–6）"
     },
     "3": {
      "cs": "velký (7–14 kvalit)",
@@ -206,7 +227,8 @@
      "it": "Grande (7–14)",
      "de": "Groß (7–14)",
      "fr": "Grand (7–14)",
-     "he": "גדול (7–14)"
+     "he": "גדול (7–14)",
+     "zh": "多（7–14）"
     }
    },
    "tridy": [
@@ -219,7 +241,8 @@
      "it": "piccolo (2–4)",
      "de": "klein (2–4)",
      "fr": "petit (2–4)",
-     "he": "קטן (2–4)"
+     "he": "קטן (2–4)",
+     "zh": "少（2–4）"
     },
     {
      "wals": [
@@ -230,7 +253,8 @@
      "it": "medio (5–6)",
      "de": "durchschnittlich (5–6)",
      "fr": "moyen (5–6)",
-     "he": "ממוצע (5–6)"
+     "he": "ממוצע (5–6)",
+     "zh": "中等（5–6）"
     },
     {
      "wals": [
@@ -241,7 +265,8 @@
      "it": "grande (7–14)",
      "de": "groß (7–14)",
      "fr": "grand (7–14)",
-     "he": "גדול (7–14)"
+     "he": "גדול (7–14)",
+     "zh": "多（7–14）"
     }
    ]
   },
@@ -255,7 +280,8 @@
     "it": "Struttura della sillaba",
     "de": "Silbenstruktur",
     "fr": "Structure syllabique",
-    "he": "מבנה ההברה"
+    "he": "מבנה ההברה",
+    "zh": "音节结构"
    },
    "popis": {
     "cs": "Nejsložitější slabika, kterou jazyk dovoluje. Jednoduchá: nejvýš jedna souhláska před samohláskou (C)V. Středně složitá: CVC nebo dvě souhlásky na začátku, z nichž druhá je likvida nebo polosamohláska. Složitá: delší shluky souhlásek.",
@@ -263,7 +289,8 @@
     "it": "La sillaba più complessa che una lingua ammette. Semplice: al massimo una consonante prima della vocale, (C)V. Moderatamente complessa: CVC, oppure due consonanti iniziali di cui la seconda è una liquida o un’approssimante. Complessa: gruppi consonantici più lunghi.",
     "de": "Die komplexeste Silbe, die eine Sprache zulässt. Einfach: höchstens ein Konsonant vor dem Vokal, (C)V. Mäßig komplex: CVC oder zwei anlautende Konsonanten, deren zweiter ein Liquid oder Gleitlaut ist. Komplex: längere Konsonantenverbindungen.",
     "fr": "La syllabe la plus complexe qu’admet une langue. Simple : au plus une consonne avant la voyelle, (C)V. Moyennement complexe : CVC, ou deux consonnes initiales dont la seconde est une liquide ou une semi-voyelle. Complexe : groupes consonantiques plus longs.",
-    "he": "ההברה המורכבת ביותר שהשפה מתירה. פשוט: לכל היותר עיצור אחד לפני התנועה, (C)V. מורכב במידה בינונית: CVC, או שני עיצורים בפתח ההברה שהשני בהם הוא עיצור נוזלי או עיצור מעבר. מורכב: צרורות עיצורים ארוכים יותר."
+    "he": "ההברה המורכבת ביותר שהשפה מתירה. פשוט: לכל היותר עיצור אחד לפני התנועה, (C)V. מורכב במידה בינונית: CVC, או שני עיצורים בפתח ההברה שהשני בהם הוא עיצור נוזלי או עיצור מעבר. מורכב: צרורות עיצורים ארוכים יותר.",
+    "zh": "语言所允许的最复杂的音节。简单：元音前至多一个辅音，即 (C)V。中等复杂：CVC，或两个起首辅音且第二个为流音或滑音。复杂：更长的辅音丛。"
    },
    "hodnoty": {
     "1": {
@@ -272,7 +299,8 @@
      "it": "Semplice",
      "de": "Einfach",
      "fr": "Simple",
-     "he": "פשוט"
+     "he": "פשוט",
+     "zh": "简单"
     },
     "2": {
      "cs": "středně složitá",
@@ -280,7 +308,8 @@
      "it": "Moderatamente complessa",
      "de": "Mäßig komplex",
      "fr": "Moyennement complexe",
-     "he": "מורכב במידה בינונית"
+     "he": "מורכב במידה בינונית",
+     "zh": "中等复杂"
     },
     "3": {
      "cs": "složitá",
@@ -288,7 +317,8 @@
      "it": "Complessa",
      "de": "Komplex",
      "fr": "Complexe",
-     "he": "מורכב"
+     "he": "מורכב",
+     "zh": "复杂"
     }
    },
    "tridy": [
@@ -301,7 +331,8 @@
      "it": "semplice",
      "de": "einfach",
      "fr": "simple",
-     "he": "פשוט"
+     "he": "פשוט",
+     "zh": "简单"
     },
     {
      "wals": [
@@ -312,7 +343,8 @@
      "it": "moderatamente complessa",
      "de": "mäßig komplex",
      "fr": "moyennement complexe",
-     "he": "מורכב במידה בינונית"
+     "he": "מורכב במידה בינונית",
+     "zh": "中等复杂"
     },
     {
      "wals": [
@@ -323,7 +355,8 @@
      "it": "complessa",
      "de": "komplex",
      "fr": "complexe",
-     "he": "מורכב"
+     "he": "מורכב",
+     "zh": "复杂"
     }
    ]
   },
@@ -337,7 +370,8 @@
     "it": "Toni",
     "de": "Töne",
     "fr": "Ton",
-    "he": "טונים"
+    "he": "טונים",
+    "zh": "声调"
    },
    "popis": {
     "cs": "Zda výška tónu rozlišuje slova nebo mluvnické tvary. Jednoduchý systém má dvě tónové úrovně, složitý tři a více nebo tónové průběhy.",
@@ -345,7 +379,8 @@
     "it": "Se l’altezza della voce distingue parole o forme grammaticali. Un sistema semplice ha due livelli tonali, uno complesso tre o più, oppure toni di contorno.",
     "de": "Ob die Tonhöhe Wörter oder grammatische Formen unterscheidet. Ein einfaches System hat zwei Tonstufen, ein komplexes drei oder mehr oder Konturtöne.",
     "fr": "Si la hauteur mélodique distingue des mots ou des formes grammaticales. Un système simple comporte deux niveaux tonals, un système complexe trois ou plus, ou bien des tons modulés.",
-    "he": "האם גובה הצליל מבחין בין מילים או בין צורות דקדוקיות. במערכת פשוטה יש שתי רמות טון; במערכת מורכבת יש שלוש רמות או יותר, או טונים משתנים (קונטור)."
+    "he": "האם גובה הצליל מבחין בין מילים או בין צורות דקדוקיות. במערכת פשוטה יש שתי רמות טון; במערכת מורכבת יש שלוש רמות או יותר, או טונים משתנים (קונטור).",
+    "zh": "音高是否用来区别词语或语法形式。简单声调系统有两个调阶，复杂声调系统有三个或更多调阶，或者有曲折调。"
    },
    "hodnoty": {
     "1": {
@@ -354,7 +389,8 @@
      "it": "Nessun tono",
      "de": "Keine Töne",
      "fr": "Pas de tons",
-     "he": "אין טונים"
+     "he": "אין טונים",
+     "zh": "无声调"
     },
     "2": {
      "cs": "jednoduchý tónový systém",
@@ -362,7 +398,8 @@
      "it": "Sistema tonale semplice",
      "de": "Einfaches Tonsystem",
      "fr": "Système tonal simple",
-     "he": "מערכת טונים פשוטה"
+     "he": "מערכת טונים פשוטה",
+     "zh": "简单声调系统"
     },
     "3": {
      "cs": "složitý tónový systém",
@@ -370,7 +407,8 @@
      "it": "Sistema tonale complesso",
      "de": "Komplexes Tonsystem",
      "fr": "Système tonal complexe",
-     "he": "מערכת טונים מורכבת"
+     "he": "מערכת טונים מורכבת",
+     "zh": "复杂声调系统"
     }
    },
    "tridy": [
@@ -383,7 +421,8 @@
      "it": "nessun tono",
      "de": "keine Töne",
      "fr": "pas de tons",
-     "he": "אין טונים"
+     "he": "אין טונים",
+     "zh": "无声调"
     },
     {
      "wals": [
@@ -394,7 +433,8 @@
      "it": "sistema tonale semplice",
      "de": "einfaches Tonsystem",
      "fr": "système tonal simple",
-     "he": "מערכת טונים פשוטה"
+     "he": "מערכת טונים פשוטה",
+     "zh": "简单声调系统"
     },
     {
      "wals": [
@@ -405,7 +445,8 @@
      "it": "sistema tonale complesso",
      "de": "komplexes Tonsystem",
      "fr": "système tonal complexe",
-     "he": "מערכת טונים מורכבת"
+     "he": "מערכת טונים מורכבת",
+     "zh": "复杂声调系统"
     }
    ]
   },
@@ -419,7 +460,8 @@
     "it": "Presenza di consonanti rare",
     "de": "Vorkommen seltener Konsonanten",
     "fr": "Présence de consonnes rares",
-    "he": "עיצורים נדירים"
+    "he": "עיצורים נדירים",
+    "zh": "罕见辅音"
    },
    "popis": {
     "cs": "Výskyt čtyř typů souhlásek, které jsou ve světě vzácné: mlaskavek (kliků), labiovelár (současné uzávěry rty a zadní částí jazyka, [k͡p], [ɡ͡b]), faryngál a zubních frikativ („th“, [θ], [ð]).",
@@ -427,7 +469,8 @@
     "it": "La presenza di quattro tipi di consonanti rari nel mondo: clic, labiovelari (chiusura simultanea alle labbra e al velo, [k͡p], [ɡ͡b]), faringali e fricative dentali (“th”, [θ], [ð]).",
     "de": "Das Vorkommen von vier weltweit seltenen Konsonantentypen: Klicklaute, Labiovelare (gleichzeitiger Verschluss an den Lippen und am Velum, [k͡p], [ɡ͡b]), Pharyngale und dentale Frikative („th“, [θ], [ð]).",
     "fr": "La présence de quatre types de consonnes rares à l’échelle mondiale : clics, labio-vélaires (occlusion simultanée aux lèvres et au voile du palais, [k͡p], [ɡ͡b]), pharyngales et fricatives dentales (« th », [θ], [ð]).",
-    "he": "הימצאותם של ארבעה סוגי עיצורים שנדירים בשפות העולם: עיצורי הקלקה, עיצורים שפתיים-וילוניים (סגר בו-זמני בשפתיים ובווילון, [k͡p], [ɡ͡b]), עיצורים לועיים, ועיצורים חוככים שיניים (\"th\", [θ], [ð])."
+    "he": "הימצאותם של ארבעה סוגי עיצורים שנדירים בשפות העולם: עיצורי הקלקה, עיצורים שפתיים-וילוניים (סגר בו-זמני בשפתיים ובווילון, [k͡p], [ɡ͡b]), עיצורים לועיים, ועיצורים חוככים שיניים (\"th\", [θ], [ð]).",
+    "zh": "是否存在四类在世界上罕见的辅音：搭嘴音、唇软腭音（双唇和软腭同时闭塞，[k͡p]、[ɡ͡b]）、咽音和齿擦音（“th”，[θ]、[ð]）。"
    },
    "hodnoty": {
     "1": {
@@ -436,7 +479,8 @@
      "it": "Nessuna",
      "de": "Keine",
      "fr": "Aucune",
-     "he": "אין"
+     "he": "אין",
+     "zh": "无"
     },
     "2": {
      "cs": "mlaskavky",
@@ -444,7 +488,8 @@
      "it": "Clic",
      "de": "Klicklaute",
      "fr": "Clics",
-     "he": "עיצורי הקלקה"
+     "he": "עיצורי הקלקה",
+     "zh": "搭嘴音"
     },
     "3": {
      "cs": "labioveláry",
@@ -452,7 +497,8 @@
      "it": "Labiovelari",
      "de": "Labiovelare",
      "fr": "Labio-vélaires",
-     "he": "שפתיים-וילוניים"
+     "he": "שפתיים-וילוניים",
+     "zh": "唇软腭音"
     },
     "4": {
      "cs": "faryngály",
@@ -460,7 +506,8 @@
      "it": "Faringali",
      "de": "Pharyngale",
      "fr": "Pharyngales",
-     "he": "לועיים"
+     "he": "לועיים",
+     "zh": "咽音"
     },
     "5": {
      "cs": "zubní frikativy („th“)",
@@ -468,7 +515,8 @@
      "it": "Suoni “th”",
      "de": "„th“-Laute",
      "fr": "Sons « th »",
-     "he": "צלילי th"
+     "he": "צלילי th",
+     "zh": "“th”音"
     },
     "6": {
      "cs": "mlaskavky, faryngály i „th“",
@@ -476,7 +524,8 @@
      "it": "Clic, faringali e “th”",
      "de": "Klicklaute, Pharyngale und „th“",
      "fr": "Clics, pharyngales et « th »",
-     "he": "הקלקה, לועיים ו-th"
+     "he": "הקלקה, לועיים ו-th",
+     "zh": "搭嘴音、咽音和“th”音"
     },
     "7": {
      "cs": "faryngály i „th“",
@@ -484,7 +533,8 @@
      "it": "Faringali e “th”",
      "de": "Pharyngale und „th“",
      "fr": "Pharyngales et « th »",
-     "he": "לועיים ו-th"
+     "he": "לועיים ו-th",
+     "zh": "咽音和“th”音"
     }
    },
    "tridy": [
@@ -497,7 +547,8 @@
      "it": "clic",
      "de": "Klicklaute",
      "fr": "clics",
-     "he": "עיצורי הקלקה"
+     "he": "עיצורי הקלקה",
+     "zh": "搭嘴音"
     },
     {
      "wals": [
@@ -508,7 +559,8 @@
      "it": "labiovelari",
      "de": "Labiovelare",
      "fr": "labio-vélaires",
-     "he": "שפתיים-וילוניים"
+     "he": "שפתיים-וילוניים",
+     "zh": "唇软腭音"
     },
     {
      "wals": [
@@ -519,7 +571,8 @@
      "it": "faringali",
      "de": "Pharyngale",
      "fr": "pharyngales",
-     "he": "לועיים"
+     "he": "לועיים",
+     "zh": "咽音"
     },
     {
      "wals": [
@@ -530,7 +583,8 @@
      "it": "suoni “th”",
      "de": "„th“-Laute",
      "fr": "sons « th »",
-     "he": "צלילי th"
+     "he": "צלילי th",
+     "zh": "“th”音"
     },
     {
      "wals": [
@@ -542,7 +596,8 @@
      "it": "più di uno di questi tipi",
      "de": "mehrere dieser Typen",
      "fr": "plusieurs de ces types",
-     "he": "כמה מהסוגים האלה"
+     "he": "כמה מהסוגים האלה",
+     "zh": "兼有其中几类"
     },
     {
      "wals": [
@@ -554,6 +609,7 @@
      "de": "keine",
      "fr": "aucune",
      "he": "אין",
+     "zh": "无",
      "barva": "jine"
     }
    ]
@@ -568,7 +624,8 @@
     "it": "Prefissi o suffissi nella morfologia flessiva",
     "de": "Präfigierung vs. Suffigierung in der Flexionsmorphologie",
     "fr": "Préfixation ou suffixation dans la morphologie flexionnelle",
-    "he": "תחיליות לעומת סופיות במורפולוגיה הנטייתית"
+    "he": "תחיליות לעומת סופיות במורפולוגיה הנטייתית",
+    "zh": "屈折形态的前缀与后缀"
    },
    "popis": {
     "cs": "Zda jazyk vyjadřuje mluvnické kategorie (pád, osobu, čas…) spíše příponami, nebo předponami. WALS rozlišuje silnou a slabou převahu; zde jsou obě sloučené.",
@@ -576,7 +633,8 @@
     "it": "Se una lingua esprime le categorie grammaticali (caso, persona, tempo…) soprattutto con suffissi o con prefissi. Il WALS distingue una preferenza forte e una debole; qui le due sono unite.",
     "de": "Ob eine Sprache grammatische Kategorien (Kasus, Person, Tempus …) überwiegend mit Suffixen oder mit Präfixen ausdrückt. WALS unterscheidet eine starke und eine schwache Präferenz; hier sind beide zusammengefasst.",
     "fr": "Si une langue exprime les catégories grammaticales (cas, personne, temps…) principalement par des suffixes ou par des préfixes. Le WALS distingue une préférence forte et une préférence faible ; elles sont ici réunies.",
-    "he": "האם השפה מבטאת קטגוריות דקדוקיות (יחסה, גוף, זמן…) בעיקר בסופיות או בתחיליות. WALS מבחין בין העדפה חזקה לחלשה; כאן שתיהן מאוחדות."
+    "he": "האם השפה מבטאת קטגוריות דקדוקיות (יחסה, גוף, זמן…) בעיקר בסופיות או בתחיליות. WALS מבחין בין העדפה חזקה לחלשה; כאן שתיהן מאוחדות.",
+    "zh": "语言主要用后缀还是前缀来表达语法范畴（格、人称、时……）。WALS 区分强倾向和弱倾向，这里将两者合并。"
    },
    "hodnoty": {
     "1": {
@@ -585,7 +643,8 @@
      "it": "Poca affissazione",
      "de": "Wenig Affigierung",
      "fr": "Peu d’affixation",
-     "he": "מעט מוספיות"
+     "he": "מעט מוספיות",
+     "zh": "词缀很少"
     },
     "2": {
      "cs": "výrazně příponový",
@@ -593,7 +652,8 @@
      "it": "Fortemente suffissante",
      "de": "Stark suffigierend",
      "fr": "Fortement suffixante",
-     "he": "נטייה חזקה לסופיות"
+     "he": "נטייה חזקה לסופיות",
+     "zh": "强后缀型"
     },
     "3": {
      "cs": "mírně příponový",
@@ -601,7 +661,8 @@
      "it": "Debolmente suffissante",
      "de": "Schwach suffigierend",
      "fr": "Faiblement suffixante",
-     "he": "נטייה קלה לסופיות"
+     "he": "נטייה קלה לסופיות",
+     "zh": "弱后缀型"
     },
     "4": {
      "cs": "předpony a přípony stejně",
@@ -609,7 +670,8 @@
      "it": "Prefissi e suffissi in egual misura",
      "de": "Gleichermaßen präfigierend und suffigierend",
      "fr": "Préfixation et suffixation équilibrées",
-     "he": "תחיליות וסופיות במידה שווה"
+     "he": "תחיליות וסופיות במידה שווה",
+     "zh": "前缀后缀相当"
     },
     "5": {
      "cs": "mírně předponový",
@@ -617,7 +679,8 @@
      "it": "Debolmente prefissante",
      "de": "Schwach präfigierend",
      "fr": "Faiblement préfixante",
-     "he": "נטייה קלה לתחיליות"
+     "he": "נטייה קלה לתחיליות",
+     "zh": "弱前缀型"
     },
     "6": {
      "cs": "výrazně předponový",
@@ -625,7 +688,8 @@
      "it": "Fortemente prefissante",
      "de": "Stark präfigierend",
      "fr": "Fortement préfixante",
-     "he": "נטייה חזקה לתחיליות"
+     "he": "נטייה חזקה לתחיליות",
+     "zh": "强前缀型"
     }
    },
    "tridy": [
@@ -639,7 +703,8 @@
      "it": "soprattutto suffissi",
      "de": "überwiegend suffigierend",
      "fr": "surtout suffixante",
-     "he": "בעיקר סופיות"
+     "he": "בעיקר סופיות",
+     "zh": "以后缀为主"
     },
     {
      "wals": [
@@ -651,7 +716,8 @@
      "it": "soprattutto prefissi",
      "de": "überwiegend präfigierend",
      "fr": "surtout préfixante",
-     "he": "בעיקר תחיליות"
+     "he": "בעיקר תחיליות",
+     "zh": "以前缀为主"
     },
     {
      "wals": [
@@ -662,7 +728,8 @@
      "it": "prefissi e suffissi in egual misura",
      "de": "gleichermaßen präfigierend und suffigierend",
      "fr": "préfixation et suffixation équilibrées",
-     "he": "תחיליות וסופיות במידה שווה"
+     "he": "תחיליות וסופיות במידה שווה",
+     "zh": "前缀后缀相当"
     },
     {
      "wals": [
@@ -674,6 +741,7 @@
      "de": "wenig Affigierung",
      "fr": "peu d’affixation",
      "he": "מעט מוספיות",
+     "zh": "词缀很少",
      "barva": "jine"
     }
    ]
@@ -688,7 +756,8 @@
     "it": "Numero di generi",
     "de": "Anzahl der Genera",
     "fr": "Nombre de genres",
-    "he": "מספר המינים הדקדוקיים"
+    "he": "מספר המינים הדקדוקיים",
+    "zh": "语法性别数目"
    },
    "popis": {
     "cs": "Počet tříd podstatných jmen, které se projevují shodou (u přídavných jmen, zájmen, sloves). Sem patří i systémy jmenných tříd, např. v bantuských jazycích.",
@@ -696,7 +765,8 @@
     "it": "Il numero di classi nominali che si riflettono nell’accordo (su aggettivi, pronomi, verbi). Sono compresi i sistemi di classi nominali come quelli delle lingue bantu.",
     "de": "Die Anzahl der Nominalklassen, die sich in der Kongruenz (an Adjektiven, Pronomen, Verben) niederschlagen. Dazu gehören auch Nominalklassensysteme wie die der Bantusprachen.",
     "fr": "Le nombre de classes nominales reflétées par l’accord (sur les adjectifs, les pronoms, les verbes). Cela inclut les systèmes de classes nominales comme ceux des langues bantoues.",
-    "he": "מספר מחלקות השם שבאות לידי ביטוי בהתאם (בשמות תואר, בכינויים, בפעלים). כולל מערכות של מחלקות שם כמו בשפות הבנטו."
+    "he": "מספר מחלקות השם שבאות לידי ביטוי בהתאם (בשמות תואר, בכינויים, בפעלים). כולל מערכות של מחלקות שם כמו בשפות הבנטו.",
+    "zh": "在一致关系中（形容词、代词、动词上）体现出来的名词类别数目，也包括班图诸语言那样的名词类别系统。"
    },
    "hodnoty": {
     "1": {
@@ -705,7 +775,8 @@
      "it": "Nessuno",
      "de": "Keine",
      "fr": "Aucun",
-     "he": "אין"
+     "he": "אין",
+     "zh": "无"
     },
     "2": {
      "cs": "dva",
@@ -713,7 +784,8 @@
      "it": "Due",
      "de": "Zwei",
      "fr": "Deux",
-     "he": "שניים"
+     "he": "שניים",
+     "zh": "两个"
     },
     "3": {
      "cs": "tři",
@@ -721,7 +793,8 @@
      "it": "Tre",
      "de": "Drei",
      "fr": "Trois",
-     "he": "שלושה"
+     "he": "שלושה",
+     "zh": "三个"
     },
     "4": {
      "cs": "čtyři",
@@ -729,7 +802,8 @@
      "it": "Quattro",
      "de": "Vier",
      "fr": "Quatre",
-     "he": "ארבעה"
+     "he": "ארבעה",
+     "zh": "四个"
     },
     "5": {
      "cs": "pět a více",
@@ -737,7 +811,8 @@
      "it": "Cinque o più",
      "de": "Fünf oder mehr",
      "fr": "Cinq ou plus",
-     "he": "חמישה ומעלה"
+     "he": "חמישה ומעלה",
+     "zh": "五个及以上"
     }
    },
    "tridy": [
@@ -750,7 +825,8 @@
      "it": "nessuno",
      "de": "keine",
      "fr": "aucun",
-     "he": "אין"
+     "he": "אין",
+     "zh": "无"
     },
     {
      "wals": [
@@ -761,7 +837,8 @@
      "it": "due",
      "de": "zwei",
      "fr": "deux",
-     "he": "שניים"
+     "he": "שניים",
+     "zh": "两个"
     },
     {
      "wals": [
@@ -772,7 +849,8 @@
      "it": "tre",
      "de": "drei",
      "fr": "trois",
-     "he": "שלושה"
+     "he": "שלושה",
+     "zh": "三个"
     },
     {
      "wals": [
@@ -783,7 +861,8 @@
      "it": "quattro",
      "de": "vier",
      "fr": "quatre",
-     "he": "ארבעה"
+     "he": "ארבעה",
+     "zh": "四个"
     },
     {
      "wals": [
@@ -794,7 +873,8 @@
      "it": "cinque o più",
      "de": "fünf oder mehr",
      "fr": "cinq ou plus",
-     "he": "חמישה ומעלה"
+     "he": "חמישה ומעלה",
+     "zh": "五个及以上"
     }
    ]
   },
@@ -808,7 +888,8 @@
     "it": "Numero di casi",
     "de": "Anzahl der Kasus",
     "fr": "Nombre de cas",
-    "he": "מספר היחסות"
+    "he": "מספר היחסות",
+    "zh": "格的数目"
    },
    "popis": {
     "cs": "Počet pádů vyjadřovaných tvary podstatných jmen (koncovkami, předponami, změnou kmene). Předložky se nepočítají. „Okrajové“ jsou jazyky, kde pádové značení existuje jen v omezené míře.",
@@ -816,7 +897,8 @@
     "it": "Il numero di casi espressi nelle forme dei nomi (desinenze, prefissi, mutamenti del tema). Le adposizioni non contano. Le lingue con marcatura “marginale” hanno i casi solo in misura limitata.",
     "de": "Die Anzahl der Kasus, die in den Formen der Substantive ausgedrückt werden (Endungen, Präfixe, Stammveränderungen). Adpositionen werden nicht mitgezählt. Sprachen mit „Grenzfällen“ haben eine Kasusmarkierung nur in begrenztem Umfang.",
     "fr": "Le nombre de cas exprimés par les formes des noms (désinences, préfixes, modifications du radical). Les adpositions ne sont pas comptées. Les langues « limites » n’ont de marquage casuel que dans une mesure restreinte.",
-    "he": "מספר היחסות שבאות לידי ביטוי בצורות של שמות העצם (סיומות, תחיליות, שינויים בגזע). מילות יחס אינן נספרות. בשפות \"גבוליות\" יש סימון יחסה רק במידה מוגבלת."
+    "he": "מספר היחסות שבאות לידי ביטוי בצורות של שמות העצם (סיומות, תחיליות, שינויים בגזע). מילות יחס אינן נספרות. בשפות \"גבוליות\" יש סימון יחסה רק במידה מוגבלת.",
+    "zh": "名词形式（词尾、前缀、词干变化）所表达的格的数目，不计前置词和后置词。“边缘”型语言只在有限范围内有格标记。"
    },
    "hodnoty": {
     "1": {
@@ -825,7 +907,8 @@
      "it": "Nessuna marcatura morfologica dei casi",
      "de": "Keine morphologische Kasusmarkierung",
      "fr": "Pas de marquage casuel morphologique",
-     "he": "אין סימון יחסה מורפולוגי"
+     "he": "אין סימון יחסה מורפולוגי",
+     "zh": "无形态格标记"
     },
     "2": {
      "cs": "2 pády",
@@ -833,7 +916,8 @@
      "it": "2 casi",
      "de": "2 Kasus",
      "fr": "2 cas",
-     "he": "2 יחסות"
+     "he": "2 יחסות",
+     "zh": "2个格"
     },
     "3": {
      "cs": "3 pády",
@@ -841,7 +925,8 @@
      "it": "3 casi",
      "de": "3 Kasus",
      "fr": "3 cas",
-     "he": "3 יחסות"
+     "he": "3 יחסות",
+     "zh": "3个格"
     },
     "4": {
      "cs": "4 pády",
@@ -849,7 +934,8 @@
      "it": "4 casi",
      "de": "4 Kasus",
      "fr": "4 cas",
-     "he": "4 יחסות"
+     "he": "4 יחסות",
+     "zh": "4个格"
     },
     "5": {
      "cs": "5 pádů",
@@ -857,7 +943,8 @@
      "it": "5 casi",
      "de": "5 Kasus",
      "fr": "5 cas",
-     "he": "5 יחסות"
+     "he": "5 יחסות",
+     "zh": "5个格"
     },
     "6": {
      "cs": "6–7 pádů",
@@ -865,7 +952,8 @@
      "it": "6–7 casi",
      "de": "6–7 Kasus",
      "fr": "6–7 cas",
-     "he": "6–7 יחסות"
+     "he": "6–7 יחסות",
+     "zh": "6–7个格"
     },
     "7": {
      "cs": "8–9 pádů",
@@ -873,7 +961,8 @@
      "it": "8–9 casi",
      "de": "8–9 Kasus",
      "fr": "8–9 cas",
-     "he": "8–9 יחסות"
+     "he": "8–9 יחסות",
+     "zh": "8–9个格"
     },
     "8": {
      "cs": "10 a více pádů",
@@ -881,7 +970,8 @@
      "it": "10 o più casi",
      "de": "10 oder mehr Kasus",
      "fr": "10 cas ou plus",
-     "he": "10 יחסות ומעלה"
+     "he": "10 יחסות ומעלה",
+     "zh": "10个及以上"
     },
     "9": {
      "cs": "jen okrajové pádové značení",
@@ -889,7 +979,8 @@
      "it": "Solo marcatura di caso marginale",
      "de": "Ausschließlich Grenzfälle der Kasusmarkierung",
      "fr": "Uniquement un marquage casuel limite",
-     "he": "סימון יחסה גבולי בלבד"
+     "he": "סימון יחסה גבולי בלבד",
+     "zh": "仅有边缘性格标记"
     }
    },
    "tridy": [
@@ -902,7 +993,8 @@
      "it": "nessuna",
      "de": "keine",
      "fr": "aucun",
-     "he": "אין"
+     "he": "אין",
+     "zh": "无"
     },
     {
      "wals": [
@@ -914,7 +1006,8 @@
      "it": "2–3",
      "de": "2–3",
      "fr": "2–3",
-     "he": "2–3"
+     "he": "2–3",
+     "zh": "2–3"
     },
     {
      "wals": [
@@ -926,7 +1019,8 @@
      "it": "4–5",
      "de": "4–5",
      "fr": "4–5",
-     "he": "4–5"
+     "he": "4–5",
+     "zh": "4–5"
     },
     {
      "wals": [
@@ -937,7 +1031,8 @@
      "it": "6–7",
      "de": "6–7",
      "fr": "6–7",
-     "he": "6–7"
+     "he": "6–7",
+     "zh": "6–7"
     },
     {
      "wals": [
@@ -948,7 +1043,8 @@
      "it": "8–9",
      "de": "8–9",
      "fr": "8–9",
-     "he": "8–9"
+     "he": "8–9",
+     "zh": "8–9"
     },
     {
      "wals": [
@@ -959,7 +1055,8 @@
      "it": "10 o più",
      "de": "10 oder mehr",
      "fr": "10 ou plus",
-     "he": "10 ומעלה"
+     "he": "10 ומעלה",
+     "zh": "10个及以上"
     },
     {
      "wals": [
@@ -971,6 +1068,7 @@
      "de": "nur Grenzfälle der Kasusmarkierung",
      "fr": "marquage casuel limite seulement",
      "he": "סימון גבולי בלבד",
+     "zh": "仅有边缘性格标记",
      "barva": "jine"
     }
    ]
@@ -985,7 +1083,8 @@
     "it": "Articoli determinativi",
     "de": "Bestimmter Artikel",
     "fr": "Articles définis",
-    "he": "תווית יידוע"
+    "he": "תווית יידוע",
+    "zh": "定冠词"
    },
    "popis": {
     "cs": "Zda má jazyk určitý člen (jako anglické the) a jakou má podobu: samostatné slovo, ukazovací zájmeno v roli členu, nebo afix (například přípona v rumunštině či ve skandinávských jazycích).",
@@ -993,7 +1092,8 @@
     "it": "Se una lingua ha un articolo determinativo (come l’italiano il) e in quale forma: una parola a sé, un dimostrativo usato come articolo, oppure un affisso (come il suffisso del rumeno o delle lingue scandinave).",
     "de": "Ob eine Sprache einen bestimmten Artikel hat (wie englisch the) und in welcher Form: als eigenes Wort, als Demonstrativum in der Funktion eines Artikels oder als Affix (etwa das Suffix im Rumänischen oder in den skandinavischen Sprachen).",
     "fr": "Si une langue possède un article défini (comme l’anglais the) et sous quelle forme : un mot distinct, un démonstratif employé comme article, ou un affixe (comme le suffixe du roumain ou des langues scandinaves).",
-    "he": "האם יש בשפה תווית יידוע (כמו the באנגלית) ובאיזו צורה: מילה נפרדת, כינוי רמז שמשמש תווית, או מוספית (כמו הסופית ברומנית או בשפות הסקנדינביות)."
+    "he": "האם יש בשפה תווית יידוע (כמו the באנגלית) ובאיזו צורה: מילה נפרדת, כינוי רמז שמשמש תווית, או מוספית (כמו הסופית ברומנית או בשפות הסקנדינביות).",
+    "zh": "语言是否有定冠词（如英语 the），以及它的形式：独立的词、用作冠词的指示词，或词缀（如罗马尼亚语或斯堪的纳维亚诸语言中的后缀）。"
    },
    "hodnoty": {
     "1": {
@@ -1002,7 +1102,8 @@
      "it": "Articolo determinativo distinto dal dimostrativo",
      "de": "Definites Wort, verschieden vom Demonstrativum",
      "fr": "Article défini distinct du démonstratif",
-     "he": "מילת יידוע שונה מכינוי הרמז"
+     "he": "מילת יידוע שונה מכינוי הרמז",
+     "zh": "有别于指示词的定冠词"
     },
     "2": {
      "cs": "ukazovací zájmeno ve funkci členu",
@@ -1010,7 +1111,8 @@
      "it": "Dimostrativo usato come articolo determinativo",
      "de": "Demonstrativum als bestimmter Artikel",
      "fr": "Démonstratif employé comme article défini",
-     "he": "כינוי רמז שמשמש תווית יידוע"
+     "he": "כינוי רמז שמשמש תווית יידוע",
+     "zh": "指示词兼作定冠词"
     },
     "3": {
      "cs": "afix",
@@ -1018,7 +1120,8 @@
      "it": "Affisso determinativo",
      "de": "Definitaffix",
      "fr": "Affixe défini",
-     "he": "מוספית יידוע"
+     "he": "מוספית יידוע",
+     "zh": "定指词缀"
     },
     "4": {
      "cs": "jen neurčitý člen",
@@ -1026,7 +1129,8 @@
      "it": "Nessun articolo determinativo, ma uno indeterminativo",
      "de": "Kein bestimmter, aber ein unbestimmter Artikel",
      "fr": "Pas d’article défini, mais un article indéfini",
-     "he": "אין תווית יידוע, אבל יש תווית סתמית"
+     "he": "אין תווית יידוע, אבל יש תווית סתמית",
+     "zh": "无定冠词，但有不定冠词"
     },
     "5": {
      "cs": "bez členů",
@@ -1034,7 +1138,8 @@
      "it": "Nessun articolo, né determinativo né indeterminativo",
      "de": "Weder bestimmter noch unbestimmter Artikel",
      "fr": "Ni article défini ni article indéfini",
-     "he": "אין תווית יידוע ואין תווית סתמית"
+     "he": "אין תווית יידוע ואין תווית סתמית",
+     "zh": "既无定冠词也无不定冠词"
     }
    },
    "tridy": [
@@ -1047,7 +1152,8 @@
      "it": "parola a sé",
      "de": "eigenes Wort",
      "fr": "mot distinct",
-     "he": "מילה נפרדת"
+     "he": "מילה נפרדת",
+     "zh": "独立的词"
     },
     {
      "wals": [
@@ -1058,7 +1164,8 @@
      "it": "dimostrativo usato come articolo",
      "de": "Demonstrativum als Artikel",
      "fr": "démonstratif employé comme article",
-     "he": "כינוי רמז כתווית"
+     "he": "כינוי רמז כתווית",
+     "zh": "指示词兼作冠词"
     },
     {
      "wals": [
@@ -1069,7 +1176,8 @@
      "it": "affisso",
      "de": "Affix",
      "fr": "affixe",
-     "he": "מוספית"
+     "he": "מוספית",
+     "zh": "词缀"
     },
     {
      "wals": [
@@ -1080,7 +1188,8 @@
      "it": "solo articolo indeterminativo",
      "de": "nur unbestimmter Artikel",
      "fr": "article indéfini seulement",
-     "he": "רק תווית סתמית"
+     "he": "רק תווית סתמית",
+     "zh": "仅有不定冠词"
     },
     {
      "wals": [
@@ -1092,6 +1201,7 @@
      "de": "keine Artikel",
      "fr": "pas d’articles",
      "he": "אין תוויות",
+     "zh": "无冠词",
      "barva": "jine"
     }
    ]
@@ -1106,7 +1216,8 @@
     "it": "Articoli indeterminativi",
     "de": "Unbestimmter Artikel",
     "fr": "Articles indéfinis",
-    "he": "תווית סתמית"
+    "he": "תווית סתמית",
+    "zh": "不定冠词"
    },
    "popis": {
     "cs": "Zda má jazyk neurčitý člen (jako anglické a) a zda je shodný s číslovkou „jeden“.",
@@ -1114,7 +1225,8 @@
     "it": "Se una lingua ha un articolo indeterminativo (come l’italiano un) e se coincide con il numerale “uno”.",
     "de": "Ob eine Sprache einen unbestimmten Artikel hat (wie englisch a) und ob er mit dem Zahlwort ‚eins‘ identisch ist.",
     "fr": "Si une langue possède un article indéfini (comme l’anglais a) et s’il est identique au numéral « un ».",
-    "he": "האם יש בשפה תווית סתמית (כמו a באנגלית) והאם היא זהה למספר \"אחד\"."
+    "he": "האם יש בשפה תווית סתמית (כמו a באנגלית) והאם היא זהה למספר \"אחד\".",
+    "zh": "语言是否有不定冠词（如英语 a），以及它是否与数词“一”相同。"
    },
    "hodnoty": {
     "1": {
@@ -1123,7 +1235,8 @@
      "it": "Articolo indeterminativo distinto da “uno”",
      "de": "Indefinites Wort, verschieden von ‚eins‘",
      "fr": "Article indéfini distinct de « un »",
-     "he": "מילה סתמית שונה מ\"אחד\""
+     "he": "מילה סתמית שונה מ\"אחד\"",
+     "zh": "有别于“一”的不定冠词"
     },
     "2": {
      "cs": "stejné slovo jako „jeden“",
@@ -1131,7 +1244,8 @@
      "it": "Articolo indeterminativo uguale a “uno”",
      "de": "Indefinites Wort identisch mit ‚eins‘",
      "fr": "Article indéfini identique à « un »",
-     "he": "מילה סתמית זהה ל\"אחד\""
+     "he": "מילה סתמית זהה ל\"אחד\"",
+     "zh": "与“一”相同的不定冠词"
     },
     "3": {
      "cs": "afix",
@@ -1139,7 +1253,8 @@
      "it": "Affisso indeterminativo",
      "de": "Indefinitaffix",
      "fr": "Affixe indéfini",
-     "he": "מוספית סתמית"
+     "he": "מוספית סתמית",
+     "zh": "不定指词缀"
     },
     "4": {
      "cs": "jen určitý člen",
@@ -1147,7 +1262,8 @@
      "it": "Nessun articolo indeterminativo, ma uno determinativo",
      "de": "Kein unbestimmter, aber ein bestimmter Artikel",
      "fr": "Pas d’article indéfini, mais un article défini",
-     "he": "אין תווית סתמית, אבל יש תווית יידוע"
+     "he": "אין תווית סתמית, אבל יש תווית יידוע",
+     "zh": "无不定冠词，但有定冠词"
     },
     "5": {
      "cs": "bez členů",
@@ -1155,7 +1271,8 @@
      "it": "Nessun articolo, né determinativo né indeterminativo",
      "de": "Weder bestimmter noch unbestimmter Artikel",
      "fr": "Ni article défini ni article indéfini",
-     "he": "אין תווית יידוע ואין תווית סתמית"
+     "he": "אין תווית יידוע ואין תווית סתמית",
+     "zh": "既无定冠词也无不定冠词"
     }
    },
    "tridy": [
@@ -1168,7 +1285,8 @@
      "it": "distinto da “uno”",
      "de": "verschieden von ‚eins‘",
      "fr": "distinct de « un »",
-     "he": "שונה מ\"אחד\""
+     "he": "שונה מ\"אחד\"",
+     "zh": "有别于“一”"
     },
     {
      "wals": [
@@ -1179,7 +1297,8 @@
      "it": "uguale a “uno”",
      "de": "identisch mit ‚eins‘",
      "fr": "identique à « un »",
-     "he": "זהה ל\"אחד\""
+     "he": "זהה ל\"אחד\"",
+     "zh": "与“一”相同"
     },
     {
      "wals": [
@@ -1190,7 +1309,8 @@
      "it": "affisso",
      "de": "Affix",
      "fr": "affixe",
-     "he": "מוספית"
+     "he": "מוספית",
+     "zh": "词缀"
     },
     {
      "wals": [
@@ -1201,7 +1321,8 @@
      "it": "solo articolo determinativo",
      "de": "nur bestimmter Artikel",
      "fr": "article défini seulement",
-     "he": "רק תווית יידוע"
+     "he": "רק תווית יידוע",
+     "zh": "仅有定冠词"
     },
     {
      "wals": [
@@ -1213,6 +1334,7 @@
      "de": "keine Artikel",
      "fr": "pas d’articles",
      "he": "אין תוויות",
+     "zh": "无冠词",
      "barva": "jine"
     }
    ]
@@ -1227,7 +1349,8 @@
     "it": "Ordine di soggetto, oggetto e verbo",
     "de": "Abfolge von Subjekt, Objekt und Verb",
     "fr": "Ordre du sujet, de l’objet et du verbe",
-    "he": "סדר הנושא, המושא והפועל"
+    "he": "סדר הנושא, המושא והפועל",
+    "zh": "主语、宾语和动词的语序"
    },
    "popis": {
     "cs": "Převládající pořadí podmětu (S), předmětu (O) a slovesa (V) v oznamovací větě s plnými jmennými frázemi. Čeština je podle WALS SVO. Pořadí se slovesem na začátku (VSO, VOS) a s předmětem na začátku (OVS, OSV) jsou zde sloučená.",
@@ -1235,7 +1358,8 @@
     "it": "L’ordine dominante di soggetto (S), oggetto (O) e verbo (V) nelle frasi dichiarative con sintagmi nominali pieni. L’italiano è SVO secondo il WALS. Gli ordini con verbo iniziale (VSO, VOS) e con oggetto iniziale (OVS, OSV) sono qui uniti.",
     "de": "Die dominante Abfolge von Subjekt (S), Objekt (O) und Verb (V) in Aussagesätzen mit vollen Nominalphrasen. Das Tschechische ist nach WALS SVO. Verbinitiale (VSO, VOS) und objektinitiale (OVS, OSV) Abfolgen sind hier zusammengefasst.",
     "fr": "L’ordre dominant du sujet (S), de l’objet (O) et du verbe (V) dans les propositions déclaratives à syntagmes nominaux pleins. Selon le WALS, le tchèque est SVO. Les ordres à verbe initial (VSO, VOS) et à objet initial (OVS, OSV) sont ici réunis.",
-    "he": "הסדר השולט של הנושא (S), המושא (O) והפועל (V) במשפטי חיווי עם צירופים שמניים מלאים. לפי WALS, צ׳כית היא SVO. סדרים שבהם הפועל בא ראשון (VSO, VOS) וסדרים שבהם המושא בא ראשון (OVS, OSV) מאוחדים כאן."
+    "he": "הסדר השולט של הנושא (S), המושא (O) והפועל (V) במשפטי חיווי עם צירופים שמניים מלאים. לפי WALS, צ׳כית היא SVO. סדרים שבהם הפועל בא ראשון (VSO, VOS) וסדרים שבהם המושא בא ראשון (OVS, OSV) מאוחדים כאן.",
+    "zh": "陈述句中使用完整名词短语时，主语（S）、宾语（O）和动词（V）的优势语序。按 WALS，捷克语为 SVO。动词居首（VSO、VOS）和宾语居首（OVS、OSV）的语序在这里合并。"
    },
    "hodnoty": {
     "1": {
@@ -1244,7 +1368,8 @@
      "it": "SOV",
      "de": "SOV",
      "fr": "SOV",
-     "he": "נושא–מושא–פועל (SOV)"
+     "he": "נושא–מושא–פועל (SOV)",
+     "zh": "主–宾–动（SOV）"
     },
     "2": {
      "cs": "SVO",
@@ -1252,7 +1377,8 @@
      "it": "SVO",
      "de": "SVO",
      "fr": "SVO",
-     "he": "נושא–פועל–מושא (SVO)"
+     "he": "נושא–פועל–מושא (SVO)",
+     "zh": "主–动–宾（SVO）"
     },
     "3": {
      "cs": "VSO",
@@ -1260,7 +1386,8 @@
      "it": "VSO",
      "de": "VSO",
      "fr": "VSO",
-     "he": "פועל–נושא–מושא (VSO)"
+     "he": "פועל–נושא–מושא (VSO)",
+     "zh": "动–主–宾（VSO）"
     },
     "4": {
      "cs": "VOS",
@@ -1268,7 +1395,8 @@
      "it": "VOS",
      "de": "VOS",
      "fr": "VOS",
-     "he": "פועל–מושא–נושא (VOS)"
+     "he": "פועל–מושא–נושא (VOS)",
+     "zh": "动–宾–主（VOS）"
     },
     "5": {
      "cs": "OVS",
@@ -1276,7 +1404,8 @@
      "it": "OVS",
      "de": "OVS",
      "fr": "OVS",
-     "he": "מושא–פועל–נושא (OVS)"
+     "he": "מושא–פועל–נושא (OVS)",
+     "zh": "宾–动–主（OVS）"
     },
     "6": {
      "cs": "OSV",
@@ -1284,7 +1413,8 @@
      "it": "OSV",
      "de": "OSV",
      "fr": "OSV",
-     "he": "מושא–נושא–פועל (OSV)"
+     "he": "מושא–נושא–פועל (OSV)",
+     "zh": "宾–主–动（OSV）"
     },
     "7": {
      "cs": "bez převládajícího pořadí",
@@ -1292,7 +1422,8 @@
      "it": "Nessun ordine dominante",
      "de": "Keine dominante Abfolge",
      "fr": "Pas d’ordre dominant",
-     "he": "אין סדר שולט"
+     "he": "אין סדר שולט",
+     "zh": "无优势语序"
     }
    },
    "tridy": [
@@ -1305,7 +1436,8 @@
      "it": "SOV",
      "de": "SOV",
      "fr": "SOV",
-     "he": "SOV"
+     "he": "SOV",
+     "zh": "主–宾–动（SOV）"
     },
     {
      "wals": [
@@ -1316,7 +1448,8 @@
      "it": "SVO",
      "de": "SVO",
      "fr": "SVO",
-     "he": "SVO"
+     "he": "SVO",
+     "zh": "主–动–宾（SVO）"
     },
     {
      "wals": [
@@ -1328,7 +1461,8 @@
      "it": "verbo iniziale (VSO, VOS)",
      "de": "verbinitial (VSO, VOS)",
      "fr": "verbe initial (VSO, VOS)",
-     "he": "הפועל ראשון (VSO, VOS)"
+     "he": "הפועל ראשון (VSO, VOS)",
+     "zh": "动词居首（VSO、VOS）"
     },
     {
      "wals": [
@@ -1340,7 +1474,8 @@
      "it": "oggetto iniziale (OVS, OSV)",
      "de": "objektinitial (OVS, OSV)",
      "fr": "objet initial (OVS, OSV)",
-     "he": "המושא ראשון (OVS, OSV)"
+     "he": "המושא ראשון (OVS, OSV)",
+     "zh": "宾语居首（OVS、OSV）"
     },
     {
      "wals": [
@@ -1352,6 +1487,7 @@
      "de": "keine dominante Abfolge",
      "fr": "pas d’ordre dominant",
      "he": "אין סדר שולט",
+     "zh": "无优势语序",
      "barva": "jine"
     }
    ]
@@ -1366,7 +1502,8 @@
     "it": "Ordine di oggetto e verbo",
     "de": "Abfolge von Objekt und Verb",
     "fr": "Ordre de l’objet et du verbe",
-    "he": "סדר המושא והפועל"
+    "he": "סדר המושא והפועל",
+    "zh": "宾语和动词的语序"
    },
    "popis": {
     "cs": "Zda předmět převážně stojí před slovesem (OV), nebo za ním (VO). Patří k nejdůležitějším slovosledným parametrům, s nímž souvisí řada dalších.",
@@ -1374,7 +1511,8 @@
     "it": "Se l’oggetto precede di solito il verbo (OV) o lo segue (VO). È uno dei parametri più importanti dell’ordine delle parole e si correla con molti altri.",
     "de": "Ob das Objekt dem Verb überwiegend vorausgeht (OV) oder folgt (VO). Einer der wichtigsten Wortstellungsparameter, der mit vielen anderen korreliert.",
     "fr": "Si l’objet précède principalement le verbe (OV) ou le suit (VO). C’est l’un des paramètres d’ordre des mots les plus importants, en corrélation avec de nombreux autres.",
-    "he": "האם המושא בא בעיקר לפני הפועל (OV) או אחריו (VO). זהו אחד הפרמטרים החשובים ביותר של סדר המילים, והוא נמצא במתאם עם פרמטרים רבים אחרים."
+    "he": "האם המושא בא בעיקר לפני הפועל (OV) או אחריו (VO). זהו אחד הפרמטרים החשובים ביותר של סדר המילים, והוא נמצא במתאם עם פרמטרים רבים אחרים.",
+    "zh": "宾语主要位于动词之前（OV）还是之后（VO）。这是最重要的语序参数之一，与许多其他参数相关联。"
    },
    "hodnoty": {
     "1": {
@@ -1383,7 +1521,8 @@
      "it": "OV",
      "de": "OV",
      "fr": "OV",
-     "he": "מושא–פועל (OV)"
+     "he": "מושא–פועל (OV)",
+     "zh": "宾–动（OV）"
     },
     "2": {
      "cs": "VO",
@@ -1391,7 +1530,8 @@
      "it": "VO",
      "de": "VO",
      "fr": "VO",
-     "he": "פועל–מושא (VO)"
+     "he": "פועל–מושא (VO)",
+     "zh": "动–宾（VO）"
     },
     "3": {
      "cs": "bez převládajícího pořadí",
@@ -1399,7 +1539,8 @@
      "it": "Nessun ordine dominante",
      "de": "Keine dominante Abfolge",
      "fr": "Pas d’ordre dominant",
-     "he": "אין סדר שולט"
+     "he": "אין סדר שולט",
+     "zh": "无优势语序"
     }
    },
    "tridy": [
@@ -1412,7 +1553,8 @@
      "it": "OV",
      "de": "OV",
      "fr": "OV",
-     "he": "OV"
+     "he": "OV",
+     "zh": "宾–动（OV）"
     },
     {
      "wals": [
@@ -1423,7 +1565,8 @@
      "it": "VO",
      "de": "VO",
      "fr": "VO",
-     "he": "VO"
+     "he": "VO",
+     "zh": "动–宾（VO）"
     },
     {
      "wals": [
@@ -1435,6 +1578,7 @@
      "de": "keine dominante Abfolge",
      "fr": "pas d’ordre dominant",
      "he": "אין סדר שולט",
+     "zh": "无优势语序",
      "barva": "jine"
     }
    ]
@@ -1449,7 +1593,8 @@
     "it": "Ordine di adposizione e sintagma nominale",
     "de": "Abfolge von Adposition und Nominalphrase",
     "fr": "Ordre de l’adposition et du syntagme nominal",
-    "he": "סדר מילת היחס והצירוף השמני"
+    "he": "סדר מילת היחס והצירוף השמני",
+    "zh": "前置词/后置词与名词短语的语序"
    },
    "popis": {
     "cs": "Zda jazyk užívá předložky (před jménem, „v domě“), nebo záložky (za jménem, turecké ev için „dům pro“). Vnitřní adpozice (uvnitř jmenné fráze) jsou vzácné a patří zde k „jiným“.",
@@ -1457,7 +1602,8 @@
     "it": "Se una lingua usa preposizioni (prima del nome, “in casa”) o posposizioni (dopo il nome, turco ev için “casa per”). Le inposizioni (dentro il sintagma nominale) sono rare e qui sono raggruppate con “altro”.",
     "de": "Ob eine Sprache Präpositionen (vor dem Nomen, „im Haus“) oder Postpositionen (danach, türkisch ev için ‚Haus für‘) verwendet. Inpositionen (innerhalb der Nominalphrase) sind selten und werden hier unter „andere“ eingeordnet.",
     "fr": "Si une langue emploie des prépositions (avant le nom, « dans la maison ») ou des postpositions (après lui, turc ev için « maison pour »). Les inpositions (à l’intérieur du syntagme nominal) sont rares et sont ici rangées avec « autre ».",
-    "he": "האם השפה משתמשת במילות יחס קדמיות (לפני שם העצם, \"בתוך הבית\") או במילות יחס אחוריות (אחריו, בטורקית ev için, מילולית \"בית בשביל\"). מילות יחס פנימיות (בתוך הצירוף השמני) נדירות, וכאן הן נכללות בקבוצה \"אחר\"."
+    "he": "האם השפה משתמשת במילות יחס קדמיות (לפני שם העצם, \"בתוך הבית\") או במילות יחס אחוריות (אחריו, בטורקית ev için, מילולית \"בית בשביל\"). מילות יחס פנימיות (בתוך הצירוף השמני) נדירות, וכאן הן נכללות בקבוצה \"אחר\".",
+    "zh": "语言使用前置词（位于名词之前，“in the house”）还是后置词（位于名词之后，土耳其语 ev için，字面为“房子 为了”）。内置词（位于名词短语内部）很少见，这里归入“其他”。"
    },
    "hodnoty": {
     "1": {
@@ -1466,7 +1612,8 @@
      "it": "Posposizioni",
      "de": "Postpositionen",
      "fr": "Postpositions",
-     "he": "מילות יחס אחוריות"
+     "he": "מילות יחס אחוריות",
+     "zh": "后置词"
     },
     "2": {
      "cs": "předložky (prepozice)",
@@ -1474,7 +1621,8 @@
      "it": "Preposizioni",
      "de": "Präpositionen",
      "fr": "Prépositions",
-     "he": "מילות יחס קדמיות"
+     "he": "מילות יחס קדמיות",
+     "zh": "前置词"
     },
     "3": {
      "cs": "vnitřní adpozice",
@@ -1482,7 +1630,8 @@
      "it": "Inposizioni",
      "de": "Inpositionen",
      "fr": "Inpositions",
-     "he": "מילות יחס פנימיות"
+     "he": "מילות יחס פנימיות",
+     "zh": "内置词"
     },
     "4": {
      "cs": "bez převládajícího pořadí",
@@ -1490,7 +1639,8 @@
      "it": "Nessun ordine dominante",
      "de": "Keine dominante Abfolge",
      "fr": "Pas d’ordre dominant",
-     "he": "אין סדר שולט"
+     "he": "אין סדר שולט",
+     "zh": "无优势语序"
     },
     "5": {
      "cs": "bez adpozic",
@@ -1498,7 +1648,8 @@
      "it": "Nessuna adposizione",
      "de": "Keine Adpositionen",
      "fr": "Pas d’adpositions",
-     "he": "אין מילות יחס"
+     "he": "אין מילות יחס",
+     "zh": "无前置词或后置词"
     }
    },
    "tridy": [
@@ -1511,7 +1662,8 @@
      "it": "posposizioni",
      "de": "Postpositionen",
      "fr": "postpositions",
-     "he": "מילות יחס אחוריות"
+     "he": "מילות יחס אחוריות",
+     "zh": "后置词"
     },
     {
      "wals": [
@@ -1522,7 +1674,8 @@
      "it": "preposizioni",
      "de": "Präpositionen",
      "fr": "prépositions",
-     "he": "מילות יחס קדמיות"
+     "he": "מילות יחס קדמיות",
+     "zh": "前置词"
     },
     {
      "wals": [
@@ -1533,7 +1686,8 @@
      "it": "nessuna adposizione",
      "de": "keine Adpositionen",
      "fr": "pas d’adpositions",
-     "he": "אין מילות יחס"
+     "he": "אין מילות יחס",
+     "zh": "无前置词或后置词"
     },
     {
      "wals": [
@@ -1546,6 +1700,7 @@
      "de": "andere (Inpositionen, keine dominante Abfolge)",
      "fr": "autre (inpositions, pas d’ordre dominant)",
      "he": "אחר (מילות יחס פנימיות, אין סדר שולט)",
+     "zh": "其他（内置词、无优势语序）",
      "barva": "jine"
     }
    ]
@@ -1560,7 +1715,8 @@
     "it": "Ordine di genitivo e nome",
     "de": "Abfolge von Genitiv und Nomen",
     "fr": "Ordre du génitif et du nom",
-    "he": "סדר הגניטיב ושם העצם"
+    "he": "סדר הגניטיב ושם העצם",
+    "zh": "属格与名词的语序"
    },
    "popis": {
     "cs": "Zda přivlastňovací (genitivní) člen stojí před řídícím jménem („Petrův dům“, angl. John's house), nebo za ním („dům Petra“).",
@@ -1568,7 +1724,8 @@
     "it": "Se il possessore (genitivo) precede il nome reggente (inglese John’s house) o lo segue (la casa di Giovanni).",
     "de": "Ob der Possessor (Genitiv) dem Bezugsnomen vorausgeht (englisch John's house) oder ihm folgt (englisch the house of John).",
     "fr": "Si le possesseur (génitif) précède le nom tête (anglais John's house) ou le suit (anglais the house of John).",
-    "he": "האם הבעלים (הגניטיב) בא לפני שם העצם הראשי (באנגלית John's house) או אחריו (\"הבית של ג׳ון\")."
+    "he": "האם הבעלים (הגניטיב) בא לפני שם העצם הראשי (באנגלית John's house) או אחריו (\"הבית של ג׳ון\").",
+    "zh": "领有者（属格）位于中心名词之前（John's house）还是之后（the house of John）。"
    },
    "hodnoty": {
     "1": {
@@ -1577,7 +1734,8 @@
      "it": "Genitivo–Nome",
      "de": "Genitiv–Nomen",
      "fr": "Génitif–Nom",
-     "he": "גניטיב–שם עצם"
+     "he": "גניטיב–שם עצם",
+     "zh": "属格–名词"
     },
     "2": {
      "cs": "jméno – genitiv",
@@ -1585,7 +1743,8 @@
      "it": "Nome–Genitivo",
      "de": "Nomen–Genitiv",
      "fr": "Nom–Génitif",
-     "he": "שם עצם–גניטיב"
+     "he": "שם עצם–גניטיב",
+     "zh": "名词–属格"
     },
     "3": {
      "cs": "bez převládajícího pořadí",
@@ -1593,7 +1752,8 @@
      "it": "Nessun ordine dominante",
      "de": "Keine dominante Abfolge",
      "fr": "Pas d’ordre dominant",
-     "he": "אין סדר שולט"
+     "he": "אין סדר שולט",
+     "zh": "无优势语序"
     }
    },
    "tridy": [
@@ -1606,7 +1766,8 @@
      "it": "genitivo–nome",
      "de": "Genitiv–Nomen",
      "fr": "génitif–nom",
-     "he": "גניטיב–שם עצם"
+     "he": "גניטיב–שם עצם",
+     "zh": "属格–名词"
     },
     {
      "wals": [
@@ -1617,7 +1778,8 @@
      "it": "nome–genitivo",
      "de": "Nomen–Genitiv",
      "fr": "nom–génitif",
-     "he": "שם עצם–גניטיב"
+     "he": "שם עצם–גניטיב",
+     "zh": "名词–属格"
     },
     {
      "wals": [
@@ -1629,6 +1791,7 @@
      "de": "keine dominante Abfolge",
      "fr": "pas d’ordre dominant",
      "he": "אין סדר שולט",
+     "zh": "无优势语序",
      "barva": "jine"
     }
    ]
@@ -1643,7 +1806,8 @@
     "it": "Ordine di aggettivo e nome",
     "de": "Abfolge von Adjektiv und Nomen",
     "fr": "Ordre de l’adjectif et du nom",
-    "he": "סדר שם התואר ושם העצם"
+    "he": "סדר שם התואר ושם העצם",
+    "zh": "形容词与名词的语序"
    },
    "popis": {
     "cs": "Zda přívlastkové přídavné jméno převážně stojí před jménem („velký dům“), nebo za ním (franc. maison blanche).",
@@ -1651,7 +1815,8 @@
     "it": "Se un aggettivo attributivo precede di solito il nome (inglese big house) o lo segue (casa bianca).",
     "de": "Ob ein attributives Adjektiv dem Nomen überwiegend vorausgeht (großes Haus) oder folgt (französisch maison blanche).",
     "fr": "Si l’adjectif épithète précède principalement le nom (anglais big house) ou le suit (français maison blanche).",
-    "he": "האם שם תואר לוואי בא בעיקר לפני שם העצם (באנגלית big house) או אחריו (בצרפתית maison blanche)."
+    "he": "האם שם תואר לוואי בא בעיקר לפני שם העצם (באנגלית big house) או אחריו (בצרפתית maison blanche).",
+    "zh": "定语形容词主要位于名词之前（big house）还是之后（法语 maison blanche）。"
    },
    "hodnoty": {
     "1": {
@@ -1660,7 +1825,8 @@
      "it": "Aggettivo–Nome",
      "de": "Adjektiv–Nomen",
      "fr": "Adjectif–Nom",
-     "he": "שם תואר–שם עצם"
+     "he": "שם תואר–שם עצם",
+     "zh": "形容词–名词"
     },
     "2": {
      "cs": "jméno – přídavné jméno",
@@ -1668,7 +1834,8 @@
      "it": "Nome–Aggettivo",
      "de": "Nomen–Adjektiv",
      "fr": "Nom–Adjectif",
-     "he": "שם עצם–שם תואר"
+     "he": "שם עצם–שם תואר",
+     "zh": "名词–形容词"
     },
     "3": {
      "cs": "bez převládajícího pořadí",
@@ -1676,7 +1843,8 @@
      "it": "Nessun ordine dominante",
      "de": "Keine dominante Abfolge",
      "fr": "Pas d’ordre dominant",
-     "he": "אין סדר שולט"
+     "he": "אין סדר שולט",
+     "zh": "无优势语序"
     },
     "4": {
      "cs": "jen vnitřně řízené vztažné věty",
@@ -1684,7 +1852,8 @@
      "it": "Solo relative a testa interna",
      "de": "Nur Relativsätze mit internem Kopf",
      "fr": "Uniquement des relatives à tête interne",
-     "he": "רק פסוקיות זיקה בעלות גרעין פנימי"
+     "he": "רק פסוקיות זיקה בעלות גרעין פנימי",
+     "zh": "仅有中心语内置关系从句"
     }
    },
    "tridy": [
@@ -1697,7 +1866,8 @@
      "it": "aggettivo–nome",
      "de": "Adjektiv–Nomen",
      "fr": "adjectif–nom",
-     "he": "שם תואר–שם עצם"
+     "he": "שם תואר–שם עצם",
+     "zh": "形容词–名词"
     },
     {
      "wals": [
@@ -1708,7 +1878,8 @@
      "it": "nome–aggettivo",
      "de": "Nomen–Adjektiv",
      "fr": "nom–adjectif",
-     "he": "שם עצם–שם תואר"
+     "he": "שם עצם–שם תואר",
+     "zh": "名词–形容词"
     },
     {
      "wals": [
@@ -1721,6 +1892,7 @@
      "de": "andere (keine dominante Abfolge)",
      "fr": "autre (pas d’ordre dominant)",
      "he": "אחר (אין סדר שולט)",
+     "zh": "其他（无优势语序）",
      "barva": "jine"
     }
    ]
@@ -1735,7 +1907,8 @@
     "it": "Ordine di dimostrativo e nome",
     "de": "Abfolge von Demonstrativum und Nomen",
     "fr": "Ordre du démonstratif et du nom",
-    "he": "סדר כינוי הרמז ושם העצם"
+    "he": "סדר כינוי הרמז ושם העצם",
+    "zh": "指示词与名词的语序"
    },
    "popis": {
     "cs": "Zda ukazovací zájmeno stojí před jménem („ten dům“), za ním, nebo je afixem připojeným ke jménu.",
@@ -1743,7 +1916,8 @@
     "it": "Se il dimostrativo precede il nome (quella casa), lo segue o è un affisso unito al nome.",
     "de": "Ob das Demonstrativum dem Nomen vorausgeht (jenes Haus), ihm folgt oder ein an das Nomen angefügtes Affix ist.",
     "fr": "Si le démonstratif précède le nom (anglais that house), le suit, ou est un affixe attaché au nom.",
-    "he": "האם כינוי הרמז בא לפני שם העצם (באנגלית that house), אחריו, או שהוא מוספית הצמודה לשם העצם."
+    "he": "האם כינוי הרמז בא לפני שם העצם (באנגלית that house), אחריו, או שהוא מוספית הצמודה לשם העצם.",
+    "zh": "指示词位于名词之前（that house）、之后，还是作为词缀附着在名词上。"
    },
    "hodnoty": {
     "1": {
@@ -1752,7 +1926,8 @@
      "it": "Dimostrativo–Nome",
      "de": "Demonstrativum–Nomen",
      "fr": "Démonstratif–Nom",
-     "he": "כינוי רמז–שם עצם"
+     "he": "כינוי רמז–שם עצם",
+     "zh": "指示词–名词"
     },
     "2": {
      "cs": "jméno – ukazovací zájmeno",
@@ -1760,7 +1935,8 @@
      "it": "Nome–Dimostrativo",
      "de": "Nomen–Demonstrativum",
      "fr": "Nom–Démonstratif",
-     "he": "שם עצם–כינוי רמז"
+     "he": "שם עצם–כינוי רמז",
+     "zh": "名词–指示词"
     },
     "3": {
      "cs": "ukazovací předpona",
@@ -1768,7 +1944,8 @@
      "it": "Prefisso dimostrativo",
      "de": "Demonstrativpräfix",
      "fr": "Préfixe démonstratif",
-     "he": "תחילית רמז"
+     "he": "תחילית רמז",
+     "zh": "指示词前缀"
     },
     "4": {
      "cs": "ukazovací přípona",
@@ -1776,7 +1953,8 @@
      "it": "Suffisso dimostrativo",
      "de": "Demonstrativsuffix",
      "fr": "Suffixe démonstratif",
-     "he": "סופית רמז"
+     "he": "סופית רמז",
+     "zh": "指示词后缀"
     },
     "5": {
      "cs": "před i za jménem",
@@ -1784,7 +1962,8 @@
      "it": "Dimostrativo prima e dopo il nome",
      "de": "Demonstrativum vor und nach dem Nomen",
      "fr": "Démonstratif avant et après le nom",
-     "he": "כינוי רמז לפני שם העצם ואחריו"
+     "he": "כינוי רמז לפני שם העצם ואחריו",
+     "zh": "名词前后均有指示词"
     },
     "6": {
      "cs": "smíšené",
@@ -1792,7 +1971,8 @@
      "it": "Misto",
      "de": "Gemischt",
      "fr": "Mixte",
-     "he": "מעורב"
+     "he": "מעורב",
+     "zh": "混合型"
     }
    },
    "tridy": [
@@ -1805,7 +1985,8 @@
      "it": "prima del nome",
      "de": "vor dem Nomen",
      "fr": "avant le nom",
-     "he": "לפני שם העצם"
+     "he": "לפני שם העצם",
+     "zh": "名词之前"
     },
     {
      "wals": [
@@ -1816,7 +1997,8 @@
      "it": "dopo il nome",
      "de": "nach dem Nomen",
      "fr": "après le nom",
-     "he": "אחרי שם העצם"
+     "he": "אחרי שם העצם",
+     "zh": "名词之后"
     },
     {
      "wals": [
@@ -1828,7 +2010,8 @@
      "it": "affisso (prefisso, suffisso)",
      "de": "Affix (Präfix, Suffix)",
      "fr": "affixe (préfixe, suffixe)",
-     "he": "מוספית (תחילית, סופית)"
+     "he": "מוספית (תחילית, סופית)",
+     "zh": "词缀（前缀、后缀）"
     },
     {
      "wals": [
@@ -1841,6 +2024,7 @@
      "de": "andere (beidseitig, gemischt)",
      "fr": "autre (des deux côtés, mixte)",
      "he": "אחר (משני הצדדים, מעורב)",
+     "zh": "其他（前后两侧、混合型）",
      "barva": "jine"
     }
    ]
@@ -1855,7 +2039,8 @@
     "it": "Allineamento della marcatura dei casi dei sintagmi nominali pieni",
     "de": "Alignment der Kasusmarkierung voller Nominalphrasen",
     "fr": "Alignement du marquage casuel des syntagmes nominaux pleins",
-    "he": "מערך סימון היחסה בצירופים שמניים מלאים"
+    "he": "מערך סימון היחסה בצירופים שמניים מלאים",
+    "zh": "完整名词短语格标记的配列"
    },
    "popis": {
     "cs": "Jak pádové tvary plných jmenných frází odlišují podmět nepřechodného slovesa (S), činitele (A) a zasažený předmět (P) přechodného slovesa. Nominativ–akuzativ: S = A ≠ P (čeština). Ergativ–absolutiv: S = P ≠ A (např. lezginština). Tripartitní: všechny tři odlišné. Aktivní–inaktivní: podmět se značí podle toho, zda děj ovládá (WALS sem řadí baskičtinu a gruzínštinu). Neutrální: bez rozlišení.",
@@ -1863,7 +2048,8 @@
     "it": "Come le forme casuali dei sintagmi nominali pieni distinguono l’unico argomento di un verbo intransitivo (S) dall’agente (A) e dal paziente (P) di un verbo transitivo. Nominativo–accusativo: S = A ≠ P. Ergativo–assolutivo: S = P ≠ A (ad es. lezgo). Tripartito: tutti e tre diversi. Attivo–inattivo: la marcatura dipende dal controllo (il WALS vi colloca il basco e il georgiano). Neutro: nessuna distinzione.",
     "de": "Wie die Kasusformen voller Nominalphrasen das einzige Argument eines intransitiven Verbs (S) vom Agens (A) und Patiens (P) eines transitiven Verbs unterscheiden. Nominativ–Akkusativ: S = A ≠ P. Ergativ–Absolutiv: S = P ≠ A (z. B. Lesgisch). Tripartit: alle drei verschieden. Aktiv–Inaktiv: Die Markierung hängt von der Kontrolle ab (WALS ordnet hier das Baskische und das Georgische ein). Neutral: keine Unterscheidung.",
     "fr": "La manière dont les formes casuelles des syntagmes nominaux pleins distinguent l’argument unique d’un verbe intransitif (S) de l’agent (A) et du patient (P) d’un verbe transitif. Nominatif–accusatif : S = A ≠ P. Ergatif–absolutif : S = P ≠ A (par exemple le lezguien). Tripartite : les trois diffèrent. Actif–inactif : le marquage dépend du contrôle (le WALS y range le basque et le géorgien). Neutre : aucune distinction.",
-    "he": "כיצד צורות היחסה של צירופים שמניים מלאים מבחינות בין הארגומנט היחיד של פועל עומד (S) לבין העושה (A) והסובל (P) של פועל יוצא. נומינטיבי–אקוזטיבי: S = A ≠ P. ארגטיבי–אבסולוטיבי: S = P ≠ A (למשל לזגית). תלת-חלקי: שלושתם שונים. אקטיבי–לא אקטיבי: הסימון תלוי בשליטה (WALS מציב כאן את הבסקית ואת הגאורגית). ניטרלי: אין הבחנה."
+    "he": "כיצד צורות היחסה של צירופים שמניים מלאים מבחינות בין הארגומנט היחיד של פועל עומד (S) לבין העושה (A) והסובל (P) של פועל יוצא. נומינטיבי–אקוזטיבי: S = A ≠ P. ארגטיבי–אבסולוטיבי: S = P ≠ A (למשל לזגית). תלת-חלקי: שלושתם שונים. אקטיבי–לא אקטיבי: הסימון תלוי בשליטה (WALS מציב כאן את הבסקית ואת הגאורגית). ניטרלי: אין הבחנה.",
+    "zh": "完整名词短语的格形式如何区分不及物动词的唯一论元（S）与及物动词的施事（A）和受事（P）。主格–宾格：S = A ≠ P。作格–通格：S = P ≠ A（如列兹金语）。三分型：三者各不相同。主动–非主动型：标记取决于控制性（WALS 将巴斯克语和格鲁吉亚语归入此类）。中性：不加区分。"
    },
    "hodnoty": {
     "1": {
@@ -1872,7 +2058,8 @@
      "it": "Neutro",
      "de": "Neutral",
      "fr": "Neutre",
-     "he": "ניטרלי"
+     "he": "ניטרלי",
+     "zh": "中性"
     },
     "2": {
      "cs": "nominativ – akuzativ (standardní)",
@@ -1880,7 +2067,8 @@
      "it": "Nominativo–accusativo (standard)",
      "de": "Nominativ–Akkusativ (Standard)",
      "fr": "Nominatif–accusatif (standard)",
-     "he": "נומינטיבי–אקוזטיבי (רגיל)"
+     "he": "נומינטיבי–אקוזטיבי (רגיל)",
+     "zh": "主格–宾格（标准型）"
     },
     "3": {
      "cs": "nominativ – akuzativ (se značeným nominativem)",
@@ -1888,7 +2076,8 @@
      "it": "Nominativo–accusativo (nominativo marcato)",
      "de": "Nominativ–Akkusativ (markierter Nominativ)",
      "fr": "Nominatif–accusatif (nominatif marqué)",
-     "he": "נומינטיבי–אקוזטיבי (נומינטיב מסומן)"
+     "he": "נומינטיבי–אקוזטיבי (נומינטיב מסומן)",
+     "zh": "主格–宾格（有标记主格）"
     },
     "4": {
      "cs": "ergativ – absolutiv",
@@ -1896,7 +2085,8 @@
      "it": "Ergativo–assolutivo",
      "de": "Ergativ–Absolutiv",
      "fr": "Ergatif–absolutif",
-     "he": "ארגטיבי–אבסולוטיבי"
+     "he": "ארגטיבי–אבסולוטיבי",
+     "zh": "作格–通格"
     },
     "5": {
      "cs": "tripartitní",
@@ -1904,7 +2094,8 @@
      "it": "Tripartito",
      "de": "Tripartit",
      "fr": "Tripartite",
-     "he": "תלת-חלקי"
+     "he": "תלת-חלקי",
+     "zh": "三分型"
     },
     "6": {
      "cs": "aktivní – inaktivní",
@@ -1912,7 +2103,8 @@
      "it": "Attivo–inattivo",
      "de": "Aktiv–Inaktiv",
      "fr": "Actif–inactif",
-     "he": "אקטיבי–לא אקטיבי"
+     "he": "אקטיבי–לא אקטיבי",
+     "zh": "主动–非主动型"
     }
    },
    "tridy": [
@@ -1926,7 +2118,8 @@
      "it": "nominativo–accusativo",
      "de": "Nominativ–Akkusativ",
      "fr": "nominatif–accusatif",
-     "he": "נומינטיבי–אקוזטיבי"
+     "he": "נומינטיבי–אקוזטיבי",
+     "zh": "主格–宾格"
     },
     {
      "wals": [
@@ -1937,7 +2130,8 @@
      "it": "ergativo–assolutivo",
      "de": "Ergativ–Absolutiv",
      "fr": "ergatif–absolutif",
-     "he": "ארגטיבי–אבסולוטיבי"
+     "he": "ארגטיבי–אבסולוטיבי",
+     "zh": "作格–通格"
     },
     {
      "wals": [
@@ -1948,7 +2142,8 @@
      "it": "tripartito",
      "de": "tripartit",
      "fr": "tripartite",
-     "he": "תלת-חלקי"
+     "he": "תלת-חלקי",
+     "zh": "三分型"
     },
     {
      "wals": [
@@ -1959,7 +2154,8 @@
      "it": "attivo–inattivo",
      "de": "Aktiv–Inaktiv",
      "fr": "actif–inactif",
-     "he": "אקטיבי–לא אקטיבי"
+     "he": "אקטיבי–לא אקטיבי",
+     "zh": "主动–非主动型"
     },
     {
      "wals": [
@@ -1971,6 +2167,7 @@
      "de": "neutral (keine Unterscheidung)",
      "fr": "neutre (aucune distinction)",
      "he": "ניטרלי (אין הבחנה)",
+     "zh": "中性（不加区分）",
      "barva": "jine"
     }
    ]
@@ -1985,7 +2182,8 @@
     "it": "Morfemi negativi",
     "de": "Negationsmorpheme",
     "fr": "Morphèmes négatifs",
-    "he": "מורפמות שלילה"
+    "he": "מורפמות שלילה",
+    "zh": "否定语素"
    },
    "popis": {
     "cs": "Jakým prostředkem jazyk tvoří zápor věty: afixem na slovese („ne-jdu“), zápornou částicí (angl. not), záporným pomocným slovesem (finština), nebo dvěma zápornými prvky zároveň.",
@@ -1993,7 +2191,8 @@
     "it": "Come una lingua nega una frase: con un affisso sul verbo, una particella negativa (italiano non), un verbo ausiliare negativo (finlandese) o due elementi negativi insieme.",
     "de": "Wie eine Sprache einen Satz verneint: mit einem Affix am Verb, einer Negationspartikel (englisch not), einem negativen Hilfsverb (Finnisch) oder mit zwei Negationselementen zugleich.",
     "fr": "La manière dont une langue nie une proposition : par un affixe sur le verbe, une particule négative (anglais not), un verbe auxiliaire négatif (finnois) ou deux éléments négatifs à la fois.",
-    "he": "כיצד השפה שוללת משפט: במוספית על הפועל, במילית שלילה (not באנגלית), בפועל עזר שולל (בפינית), או בשני רכיבי שלילה בבת אחת."
+    "he": "כיצד השפה שוללת משפט: במוספית על הפועל, במילית שלילה (not באנגלית), בפועל עזר שולל (בפינית), או בשני רכיבי שלילה בבת אחת.",
+    "zh": "语言如何否定一个小句：用动词上的词缀、否定小品词（英语 not）、否定助动词（芬兰语），或同时使用两个否定成分。"
    },
    "hodnoty": {
     "1": {
@@ -2002,7 +2201,8 @@
      "it": "Affisso negativo",
      "de": "Negationsaffix",
      "fr": "Affixe négatif",
-     "he": "מוספית שלילה"
+     "he": "מוספית שלילה",
+     "zh": "否定词缀"
     },
     "2": {
      "cs": "záporná částice",
@@ -2010,7 +2210,8 @@
      "it": "Particella negativa",
      "de": "Negationspartikel",
      "fr": "Particule négative",
-     "he": "מילית שלילה"
+     "he": "מילית שלילה",
+     "zh": "否定小品词"
     },
     "3": {
      "cs": "záporné pomocné sloveso",
@@ -2018,7 +2219,8 @@
      "it": "Verbo ausiliare negativo",
      "de": "Negatives Hilfsverb",
      "fr": "Verbe auxiliaire négatif",
-     "he": "פועל עזר שולל"
+     "he": "פועל עזר שולל",
+     "zh": "否定助动词"
     },
     "4": {
      "cs": "záporné slovo nejasné povahy",
@@ -2026,7 +2228,8 @@
      "it": "Parola negativa, non è chiaro se verbo o particella",
      "de": "Negationswort, unklar, ob Verb oder Partikel",
      "fr": "Mot négatif, verbe ou particule (statut incertain)",
-     "he": "מילת שלילה – לא ברור אם פועל או מילית"
+     "he": "מילת שלילה – לא ברור אם פועל או מילית",
+     "zh": "否定词（是动词还是小品词不明）"
     },
     "5": {
      "cs": "střídání záporného slova a afixu",
@@ -2034,7 +2237,8 @@
      "it": "Alternanza tra parola negativa e affisso",
      "de": "Variation zwischen Negationswort und -affix",
      "fr": "Variation entre mot négatif et affixe",
-     "he": "חילופים בין מילת שלילה למוספית"
+     "he": "חילופים בין מילת שלילה למוספית",
+     "zh": "否定词与词缀交替使用"
     },
     "6": {
      "cs": "dvojí zápor",
@@ -2042,7 +2246,8 @@
      "it": "Doppia negazione",
      "de": "Doppelte Negation",
      "fr": "Double négation",
-     "he": "שלילה כפולה"
+     "he": "שלילה כפולה",
+     "zh": "双重否定标记"
     }
    },
    "tridy": [
@@ -2055,7 +2260,8 @@
      "it": "affisso",
      "de": "Affix",
      "fr": "affixe",
-     "he": "מוספית"
+     "he": "מוספית",
+     "zh": "词缀"
     },
     {
      "wals": [
@@ -2066,7 +2272,8 @@
      "it": "particella",
      "de": "Partikel",
      "fr": "particule",
-     "he": "מילית"
+     "he": "מילית",
+     "zh": "小品词"
     },
     {
      "wals": [
@@ -2077,7 +2284,8 @@
      "it": "verbo ausiliare",
      "de": "Hilfsverb",
      "fr": "verbe auxiliaire",
-     "he": "פועל עזר"
+     "he": "פועל עזר",
+     "zh": "助动词"
     },
     {
      "wals": [
@@ -2088,7 +2296,8 @@
      "it": "doppia negazione",
      "de": "doppelte Negation",
      "fr": "double négation",
-     "he": "שלילה כפולה"
+     "he": "שלילה כפולה",
+     "zh": "双重否定标记"
     },
     {
      "wals": [
@@ -2101,6 +2310,7 @@
      "de": "andere (unklar, Variation)",
      "fr": "autre (statut incertain, variation)",
      "he": "אחר (לא ברור, חילופים)",
+     "zh": "其他（不明、交替使用）",
      "barva": "jine"
     }
    ]
@@ -2115,7 +2325,8 @@
     "it": "Domande polari",
     "de": "Entscheidungsfragen",
     "fr": "Questions totales",
-    "he": "שאלות כן/לא"
+    "he": "שאלות כן/לא",
+    "zh": "是非问句"
    },
    "popis": {
     "cs": "Jak jazyk odlišuje otázku typu ano/ne od oznamovací věty: tázací částicí (pol. czy), tvarem slovesa, změnou slovosledu (podle WALS čeština a němčina: Kommst du?), nebo jen intonací (rumunština).",
@@ -2123,7 +2334,8 @@
     "it": "Come una lingua distingue le domande sì/no dalle affermazioni: con una particella interrogativa (polacco czy), con la morfologia del verbo, con un cambiamento dell’ordine delle parole (tedesco Kommst du?; il WALS vi colloca anche il ceco) o con la sola intonazione (rumeno, italiano).",
     "de": "Wie eine Sprache Ja/Nein-Fragen von Aussagesätzen unterscheidet: mit einer Fragepartikel (polnisch czy), durch Verbmorphologie, durch eine Änderung der Wortstellung (deutsch Kommst du?; WALS ordnet auch das Tschechische hier ein) oder allein durch die Intonation (Rumänisch).",
     "fr": "La manière dont une langue distingue les questions fermées (oui/non) des affirmations : par une particule interrogative (polonais czy), la morphologie verbale, un changement de l’ordre des mots (allemand Kommst du? ; le WALS y range aussi le tchèque) ou la seule intonation (roumain).",
-    "he": "כיצד השפה מבחינה בין שאלות כן/לא לבין משפטי חיווי: במילית שאלה (czy בפולנית), במורפולוגיה של הפועל, בשינוי סדר המילים (בגרמנית Kommst du?‎; WALS מסווג כאן גם את הצ׳כית) או באינטונציה בלבד (רומנית)."
+    "he": "כיצד השפה מבחינה בין שאלות כן/לא לבין משפטי חיווי: במילית שאלה (czy בפולנית), במורפולוגיה של הפועל, בשינוי סדר המילים (בגרמנית Kommst du?‎; WALS מסווג כאן גם את הצ׳כית) או באינטונציה בלבד (רומנית).",
+    "zh": "语言如何区分是非问句与陈述句：用疑问小品词（波兰语 czy）、动词形态、改变语序（德语 Kommst du?；WALS 也将捷克语归入此类），或仅靠语调（罗马尼亚语）。"
    },
    "hodnoty": {
     "1": {
@@ -2132,7 +2344,8 @@
      "it": "Particella interrogativa",
      "de": "Fragepartikel",
      "fr": "Particule interrogative",
-     "he": "מילית שאלה"
+     "he": "מילית שאלה",
+     "zh": "疑问小品词"
     },
     "2": {
      "cs": "tázací tvar slovesa",
@@ -2140,7 +2353,8 @@
      "it": "Morfologia verbale interrogativa",
      "de": "Interrogative Verbmorphologie",
      "fr": "Morphologie verbale interrogative",
-     "he": "מורפולוגיית שאלה בפועל"
+     "he": "מורפולוגיית שאלה בפועל",
+     "zh": "疑问动词形态"
     },
     "3": {
      "cs": "částice i tvar slovesa",
@@ -2148,7 +2362,8 @@
      "it": "Combinazione dei due tipi precedenti",
      "de": "Mischung der beiden vorigen Typen",
      "fr": "Combinaison des deux types précédents",
-     "he": "שילוב של שני הסוגים הקודמים"
+     "he": "שילוב של שני הסוגים הקודמים",
+     "zh": "前两种兼用"
     },
     "4": {
      "cs": "slovosled",
@@ -2156,7 +2371,8 @@
      "it": "Ordine delle parole interrogativo",
      "de": "Interrogative Wortstellung",
      "fr": "Ordre des mots interrogatif",
-     "he": "סדר מילים של שאלה"
+     "he": "סדר מילים של שאלה",
+     "zh": "疑问语序"
     },
     "5": {
      "cs": "absence oznamovacích morfémů",
@@ -2164,7 +2380,8 @@
      "it": "Assenza di morfemi dichiarativi",
      "de": "Fehlen deklarativer Morpheme",
      "fr": "Absence de morphèmes déclaratifs",
-     "he": "היעדר מורפמות של חיווי"
+     "he": "היעדר מורפמות של חיווי",
+     "zh": "缺少陈述语素"
     },
     "6": {
      "cs": "jen intonace",
@@ -2172,7 +2389,8 @@
      "it": "Solo intonazione interrogativa",
      "de": "Nur Frageintonation",
      "fr": "Intonation interrogative seule",
-     "he": "אינטונציית שאלה בלבד"
+     "he": "אינטונציית שאלה בלבד",
+     "zh": "仅靠疑问语调"
     },
     "7": {
      "cs": "bez rozlišení",
@@ -2180,7 +2398,8 @@
      "it": "Nessuna distinzione tra interrogativa e dichiarativa",
      "de": "Keine Unterscheidung zwischen Frage und Aussage",
      "fr": "Pas de distinction entre interrogatif et déclaratif",
-     "he": "אין הבחנה בין שאלה לחיווי"
+     "he": "אין הבחנה בין שאלה לחיווי",
+     "zh": "疑问句与陈述句不加区分"
     }
    },
    "tridy": [
@@ -2193,7 +2412,8 @@
      "it": "particella",
      "de": "Partikel",
      "fr": "particule",
-     "he": "מילית"
+     "he": "מילית",
+     "zh": "小品词"
     },
     {
      "wals": [
@@ -2204,7 +2424,8 @@
      "it": "morfologia del verbo",
      "de": "Verbmorphologie",
      "fr": "morphologie verbale",
-     "he": "מורפולוגיה של הפועל"
+     "he": "מורפולוגיה של הפועל",
+     "zh": "动词形态"
     },
     {
      "wals": [
@@ -2215,7 +2436,8 @@
      "it": "ordine delle parole",
      "de": "Wortstellung",
      "fr": "ordre des mots",
-     "he": "סדר מילים"
+     "he": "סדר מילים",
+     "zh": "语序"
     },
     {
      "wals": [
@@ -2226,7 +2448,8 @@
      "it": "solo intonazione",
      "de": "nur Intonation",
      "fr": "intonation seule",
-     "he": "אינטונציה בלבד"
+     "he": "אינטונציה בלבד",
+     "zh": "仅靠语调"
     },
     {
      "wals": [
@@ -2237,7 +2460,8 @@
      "it": "particella e morfologia del verbo",
      "de": "Partikel und Verbmorphologie",
      "fr": "particule et morphologie verbale",
-     "he": "מילית ומורפולוגיה של הפועל"
+     "he": "מילית ומורפולוגיה של הפועל",
+     "zh": "小品词和动词形态"
     },
     {
      "wals": [
@@ -2250,6 +2474,7 @@
      "de": "andere",
      "fr": "autre",
      "he": "אחר",
+     "zh": "其他",
      "barva": "jine"
     }
    ]
@@ -2264,7 +2489,8 @@
     "it": "Mano e braccio",
     "de": "Hand und Arm",
     "fr": "Main et bras",
-    "he": "כף יד וזרוע"
+    "he": "כף יד וזרוע",
+    "zh": "手与臂"
    },
    "popis": {
     "cs": "Zda jazyk pojmenovává ruku (dlaň s prsty) a paži jedním slovem, jako česká „ruka“ nebo ruská „рука“, nebo dvěma (angl. hand a arm).",
@@ -2272,7 +2498,8 @@
     "it": "Se una lingua chiama la mano e il braccio con una sola parola (come il ceco ruka) o con due (italiano mano e braccio).",
     "de": "Ob eine Sprache Hand und Arm mit einem Wort bezeichnet (wie tschechisch ruka) oder mit zwei (englisch hand und arm).",
     "fr": "Si une langue désigne la main et le bras par un seul mot (comme le tchèque ruka) ou par deux (anglais hand et arm).",
-    "he": "האם השפה קוראת לכף היד ולזרוע במילה אחת (כמו ruka בצ׳כית) או בשתי מילים (באנגלית hand ו-arm)."
+    "he": "האם השפה קוראת לכף היד ולזרוע במילה אחת (כמו ruka בצ׳כית) או בשתי מילים (באנגלית hand ו-arm).",
+    "zh": "语言用一个词（如捷克语 ruka）还是两个词（如英语 hand 和 arm）来称呼手和臂。"
    },
    "hodnoty": {
     "1": {
@@ -2281,7 +2508,8 @@
      "it": "Una sola parola",
      "de": "Identisch",
      "fr": "Identiques",
-     "he": "אותה מילה"
+     "he": "אותה מילה",
+     "zh": "同一个词"
     },
     "2": {
      "cs": "různá slova",
@@ -2289,7 +2517,8 @@
      "it": "Parole diverse",
      "de": "Verschieden",
      "fr": "Différents",
-     "he": "מילים שונות"
+     "he": "מילים שונות",
+     "zh": "不同的词"
     }
    },
    "tridy": [
@@ -2302,7 +2531,8 @@
      "it": "una sola parola",
      "de": "identisch",
      "fr": "identiques",
-     "he": "אותה מילה"
+     "he": "אותה מילה",
+     "zh": "同一个词"
     },
     {
      "wals": [
@@ -2313,7 +2543,8 @@
      "it": "parole diverse",
      "de": "verschieden",
      "fr": "différents",
-     "he": "מילים שונות"
+     "he": "מילים שונות",
+     "zh": "不同的词"
     }
    ]
   },
@@ -2327,7 +2558,8 @@
     "it": "Dito e mano",
     "de": "Finger und Hand",
     "fr": "Doigt et main",
-    "he": "אצבע וכף יד"
+    "he": "אצבע וכף יד",
+    "zh": "手指与手"
    },
    "popis": {
     "cs": "Zda jazyk pojmenovává prst a ruku jedním slovem, nebo dvěma.",
@@ -2335,7 +2567,8 @@
     "it": "Se una lingua chiama il dito e la mano con una sola parola o con due.",
     "de": "Ob eine Sprache Finger und Hand mit einem Wort bezeichnet oder mit zwei.",
     "fr": "Si une langue désigne le doigt et la main par un seul mot ou par deux.",
-    "he": "האם השפה קוראת לאצבע ולכף היד במילה אחת או בשתי מילים."
+    "he": "האם השפה קוראת לאצבע ולכף היד במילה אחת או בשתי מילים.",
+    "zh": "语言用一个词还是两个词来称呼手指和手。"
    },
    "hodnoty": {
     "1": {
@@ -2344,7 +2577,8 @@
      "it": "Una sola parola",
      "de": "Identisch",
      "fr": "Identiques",
-     "he": "אותה מילה"
+     "he": "אותה מילה",
+     "zh": "同一个词"
     },
     "2": {
      "cs": "různá slova",
@@ -2352,7 +2586,8 @@
      "it": "Parole diverse",
      "de": "Verschieden",
      "fr": "Différents",
-     "he": "מילים שונות"
+     "he": "מילים שונות",
+     "zh": "不同的词"
     }
    },
    "tridy": [
@@ -2365,7 +2600,8 @@
      "it": "una sola parola",
      "de": "identisch",
      "fr": "identiques",
-     "he": "אותה מילה"
+     "he": "אותה מילה",
+     "zh": "同一个词"
     },
     {
      "wals": [
@@ -2376,7 +2612,8 @@
      "it": "parole diverse",
      "de": "verschieden",
      "fr": "différents",
-     "he": "מילים שונות"
+     "he": "מילים שונות",
+     "zh": "不同的词"
     }
    ]
   },
@@ -2390,7 +2627,8 @@
     "it": "Basi numeriche",
     "de": "Basis des Zahlensystems",
     "fr": "Bases numérales",
-    "he": "בסיס שיטת הספירה"
+    "he": "בסיס שיטת הספירה",
+    "zh": "数词的进制"
    },
    "popis": {
     "cs": "Na jakém základu stojí číslovky: desítkový (jako čeština), dvacítkový (jako řada mezoamerických jazyků), jejich kombinace, soustava částí těla, nebo jen omezená řada číslovek.",
@@ -2398,7 +2636,8 @@
     "it": "La base del sistema numerale: decimale, vigesimale (come in molte lingue mesoamericane), una combinazione delle due, un sistema basato sulle parti del corpo, oppure solo un insieme ristretto di numerali.",
     "de": "Die Basis des Zahlensystems: dezimal, vigesimal (wie in vielen mesoamerikanischen Sprachen), eine Mischung aus beiden, ein Körperteilsystem oder nur ein begrenzter Bestand an Zahlwörtern.",
     "fr": "La base du système de numération : décimale, vigésimale (comme dans de nombreuses langues mésoaméricaines), un mélange des deux, un système fondé sur les parties du corps, ou seulement un ensemble restreint de numéraux.",
-    "he": "הבסיס של מערכת המספרים: עשרוני, בסיס 20 (כמו בשפות רבות של מסו-אמריקה), שילוב של השניים, שיטה המבוססת על איברי הגוף, או רק מערכת מוגבלת של מספרים."
+    "he": "הבסיס של מערכת המספרים: עשרוני, בסיס 20 (כמו בשפות רבות של מסו-אמריקה), שילוב של השניים, שיטה המבוססת על איברי הגוף, או רק מערכת מוגבלת של מספרים.",
+    "zh": "数词系统的基数：十进制、二十进制（如许多中美洲语言）、两者混合、身体部位计数系统，或者只有有限的几个数词。"
    },
    "hodnoty": {
     "1": {
@@ -2407,7 +2646,8 @@
      "it": "Decimale",
      "de": "Dezimal",
      "fr": "Décimale",
-     "he": "עשרוני"
+     "he": "עשרוני",
+     "zh": "十进制"
     },
     "2": {
      "cs": "smíšená dvacítková a desítková",
@@ -2415,7 +2655,8 @@
      "it": "Ibrido vigesimale-decimale",
      "de": "Hybrid vigesimal-dezimal",
      "fr": "Hybride vigésimale-décimale",
-     "he": "מעורב: בסיס 20 ועשרוני"
+     "he": "מעורב: בסיס 20 ועשרוני",
+     "zh": "二十进制与十进制混合"
     },
     "3": {
      "cs": "čistě dvacítková",
@@ -2423,7 +2664,8 @@
      "it": "Vigesimale puro",
      "de": "Rein vigesimal",
      "fr": "Vigésimale pure",
-     "he": "בסיס 20 טהור"
+     "he": "בסיס 20 טהור",
+     "zh": "纯二十进制"
     },
     "4": {
      "cs": "jiný základ",
@@ -2431,7 +2673,8 @@
      "it": "Altra base",
      "de": "Andere Basis",
      "fr": "Autre base",
-     "he": "בסיס אחר"
+     "he": "בסיס אחר",
+     "zh": "其他进制"
     },
     "5": {
      "cs": "rozšířená soustava částí těla",
@@ -2439,7 +2682,8 @@
      "it": "Sistema esteso basato sulle parti del corpo",
      "de": "Erweitertes Körperteilsystem",
      "fr": "Système étendu fondé sur les parties du corps",
-     "he": "שיטה מורחבת של איברי גוף"
+     "he": "שיטה מורחבת של איברי גוף",
+     "zh": "扩展的身体部位计数系统"
     },
     "6": {
      "cs": "omezená",
@@ -2447,7 +2691,8 @@
      "it": "Ristretto",
      "de": "Eingeschränkt",
      "fr": "Restreinte",
-     "he": "מוגבל"
+     "he": "מוגבל",
+     "zh": "数词有限"
     }
    },
    "tridy": [
@@ -2460,7 +2705,8 @@
      "it": "decimale",
      "de": "dezimal",
      "fr": "décimale",
-     "he": "עשרוני"
+     "he": "עשרוני",
+     "zh": "十进制"
     },
     {
      "wals": [
@@ -2471,7 +2717,8 @@
      "it": "ibrido vigesimale-decimale",
      "de": "hybrid vigesimal-dezimal",
      "fr": "hybride vigésimale-décimale",
-     "he": "מעורב: בסיס 20 ועשרוני"
+     "he": "מעורב: בסיס 20 ועשרוני",
+     "zh": "二十进制与十进制混合"
     },
     {
      "wals": [
@@ -2482,7 +2729,8 @@
      "it": "vigesimale puro",
      "de": "rein vigesimal",
      "fr": "vigésimale pure",
-     "he": "בסיס 20 טהור"
+     "he": "בסיס 20 טהור",
+     "zh": "纯二十进制"
     },
     {
      "wals": [
@@ -2493,7 +2741,8 @@
      "it": "ristretto",
      "de": "eingeschränkt",
      "fr": "restreinte",
-     "he": "מוגבל"
+     "he": "מוגבל",
+     "zh": "数词有限"
     },
     {
      "wals": [
@@ -2506,6 +2755,7 @@
      "de": "andere (andere Basis, Körperteile)",
      "fr": "autre (autre base, parties du corps)",
      "he": "אחר (בסיס אחר, איברי גוף)",
+     "zh": "其他（其他进制、身体部位）",
      "barva": "jine"
     }
    ]
@@ -2520,7 +2770,8 @@
     "it": "Numero di categorie cromatiche di base",
     "de": "Anzahl der Grundfarbkategorien",
     "fr": "Nombre de catégories de couleurs de base",
-    "he": "מספר קטגוריות הצבע הבסיסיות"
+    "he": "מספר קטגוריות הצבע הבסיסיות",
+    "zh": "基本颜色范畴数目"
    },
    "popis": {
     "cs": "Počet základních barevných pojmů podle metodiky Berlina a Kaye (World Color Survey). Poloviční hodnoty označují kategorii, která je v jazyce jen zčásti ustálená. Angličtina, francouzština, němčina a ruština mají podle WALS 11.",
@@ -2528,7 +2779,8 @@
     "it": "Il numero di termini cromatici di base secondo il metodo di Berlin e Kay (World Color Survey). I valori con ,5 indicano una categoria affermata solo in parte. Secondo il WALS inglese, francese, tedesco e russo ne hanno 11.",
     "de": "Die Anzahl der Grundfarbwörter nach der Methode von Berlin und Kay (World Color Survey). Halbe Werte bezeichnen eine nur teilweise etablierte Kategorie. Englisch, Französisch, Deutsch und Russisch haben nach WALS 11.",
     "fr": "Le nombre de termes de couleur de base selon la méthode de Berlin et Kay (World Color Survey). Les demi-valeurs signalent une catégorie qui n’est que partiellement établie. Selon le WALS, l’anglais, le français, l’allemand et le russe en comptent 11.",
-    "he": "מספר מונחי הצבע הבסיסיים לפי השיטה של ברלין וקיי (World Color Survey). ערכים של חצאים מציינים קטגוריה שהתבססה רק בחלקה. לפי WALS, באנגלית, בצרפתית, בגרמנית וברוסית יש 11."
+    "he": "מספר מונחי הצבע הבסיסיים לפי השיטה של ברלין וקיי (World Color Survey). ערכים של חצאים מציינים קטגוריה שהתבססה רק בחלקה. לפי WALS, באנגלית, בצרפתית, בגרמנית וברוסית יש 11.",
+    "zh": "按伯林（Berlin）和凯（Kay）的方法（世界颜色调查，World Color Survey）统计的基本颜色词数目。带 .5 的数值表示某一范畴只部分确立。按 WALS，英语、法语、德语和俄语都有 11 个。"
    },
    "hodnoty": {
     "1": {
@@ -2537,7 +2789,8 @@
      "it": "3–4",
      "de": "3–4",
      "fr": "3–4",
-     "he": "3–4"
+     "he": "3–4",
+     "zh": "3–4"
     },
     "2": {
      "cs": "4,5–5,5",
@@ -2545,7 +2798,8 @@
      "it": "4,5–5,5",
      "de": "4,5–5,5",
      "fr": "4,5–5,5",
-     "he": "4.5–5.5"
+     "he": "4.5–5.5",
+     "zh": "4.5–5.5"
     },
     "3": {
      "cs": "6–6,5",
@@ -2553,7 +2807,8 @@
      "it": "6–6,5",
      "de": "6–6,5",
      "fr": "6–6,5",
-     "he": "6–6.5"
+     "he": "6–6.5",
+     "zh": "6–6.5"
     },
     "4": {
      "cs": "7–7,5",
@@ -2561,7 +2816,8 @@
      "it": "7–7,5",
      "de": "7–7,5",
      "fr": "7–7,5",
-     "he": "7–7.5"
+     "he": "7–7.5",
+     "zh": "7–7.5"
     },
     "5": {
      "cs": "8–8,5",
@@ -2569,7 +2825,8 @@
      "it": "8–8,5",
      "de": "8–8,5",
      "fr": "8–8,5",
-     "he": "8–8.5"
+     "he": "8–8.5",
+     "zh": "8–8.5"
     },
     "6": {
      "cs": "9–10",
@@ -2577,7 +2834,8 @@
      "it": "9–10",
      "de": "9–10",
      "fr": "9–10",
-     "he": "9–10"
+     "he": "9–10",
+     "zh": "9–10"
     },
     "7": {
      "cs": "11",
@@ -2585,7 +2843,8 @@
      "it": "11",
      "de": "11",
      "fr": "11",
-     "he": "11"
+     "he": "11",
+     "zh": "11"
     }
    },
    "tridy": [
@@ -2598,7 +2857,8 @@
      "it": "3–4",
      "de": "3–4",
      "fr": "3–4",
-     "he": "3–4"
+     "he": "3–4",
+     "zh": "3–4"
     },
     {
      "wals": [
@@ -2609,7 +2869,8 @@
      "it": "4,5–5,5",
      "de": "4,5–5,5",
      "fr": "4,5–5,5",
-     "he": "4.5–5.5"
+     "he": "4.5–5.5",
+     "zh": "4.5–5.5"
     },
     {
      "wals": [
@@ -2620,7 +2881,8 @@
      "it": "6–6,5",
      "de": "6–6,5",
      "fr": "6–6,5",
-     "he": "6–6.5"
+     "he": "6–6.5",
+     "zh": "6–6.5"
     },
     {
      "wals": [
@@ -2631,7 +2893,8 @@
      "it": "7–7,5",
      "de": "7–7,5",
      "fr": "7–7,5",
-     "he": "7–7.5"
+     "he": "7–7.5",
+     "zh": "7–7.5"
     },
     {
      "wals": [
@@ -2642,7 +2905,8 @@
      "it": "8–8,5",
      "de": "8–8,5",
      "fr": "8–8,5",
-     "he": "8–8.5"
+     "he": "8–8.5",
+     "zh": "8–8.5"
     },
     {
      "wals": [
@@ -2653,7 +2917,8 @@
      "it": "9–10",
      "de": "9–10",
      "fr": "9–10",
-     "he": "9–10"
+     "he": "9–10",
+     "zh": "9–10"
     },
     {
      "wals": [
@@ -2664,7 +2929,8 @@
      "it": "11",
      "de": "11",
      "fr": "11",
-     "he": "11"
+     "he": "11",
+     "zh": "11"
     }
    ]
   },
@@ -2678,7 +2944,8 @@
     "it": "Tè",
     "de": "Tee",
     "fr": "Thé",
-    "he": "תה"
+    "he": "תה",
+    "zh": "茶"
    },
    "popis": {
     "cs": "Původ slova pro čaj. Podoby z čínského cha (tak zní v mandarínštině i kantonštině) se šířily převážně po souši (čeština „čaj“, ruština, hindština, turečtina), podoby z jihominského (amojského) te převážně po moři přes nizozemské obchodníky (angl. tea, něm. Tee). Výjimkou je portugalština: chá převzala námořní cestou z kantonské výslovnosti v Macau.",
@@ -2686,7 +2953,8 @@
     "it": "L’origine della parola per il tè. Le forme dal cinese cha (la pronuncia sia in mandarino sia in cantonese) si sono diffuse per lo più via terra (ceco čaj, russo, hindi, turco), quelle dal min meridionale (Amoy) te per lo più via mare attraverso i mercanti olandesi (italiano tè, inglese tea, tedesco Tee). Fa eccezione il portoghese: ha preso chá via mare, dalla pronuncia cantonese di Macao.",
     "de": "Die Herkunft des Wortes für Tee. Formen aus dem chinesischen cha (so die Aussprache sowohl im Mandarin als auch im Kantonesischen) verbreiteten sich überwiegend auf dem Landweg (tschechisch čaj, Russisch, Hindi, Türkisch), Formen aus dem südlichen Min (Amoy) te überwiegend auf dem Seeweg über niederländische Händler (englisch tea, deutsch Tee). Eine Ausnahme ist das Portugiesische: Es übernahm chá auf dem Seeweg, aus der kantonesischen Aussprache in Macau.",
     "fr": "L’origine du mot désignant le thé. Les formes issues du chinois cha (prononciation commune au mandarin et au cantonais) se sont répandues surtout par voie de terre (tchèque čaj, russe, hindi, turc), les formes issues du min du Sud (Amoy) te surtout par mer, par l’intermédiaire des marchands néerlandais (anglais tea, allemand Tee). Le portugais fait exception : il a reçu chá par mer, de la prononciation cantonaise de Macao.",
-    "he": "מקור המילה לתה. צורות שמקורן ב-cha הסינית (כך הוגים את המילה גם במנדרינית וגם בקנטונזית) התפשטו בעיקר ביבשה (čaj בצ׳כית, וכן ברוסית, בהינדי ובטורקית); צורות שמקורן ב-te של סינית מין דרומית (אמוי) התפשטו בעיקר בים, דרך סוחרים הולנדים (tea באנגלית, Tee בגרמנית). פורטוגזית היא היוצאת מן הכלל: היא קיבלה את chá בדרך הים, מההגייה הקנטונזית במקאו."
+    "he": "מקור המילה לתה. צורות שמקורן ב-cha הסינית (כך הוגים את המילה גם במנדרינית וגם בקנטונזית) התפשטו בעיקר ביבשה (čaj בצ׳כית, וכן ברוסית, בהינדי ובטורקית); צורות שמקורן ב-te של סינית מין דרומית (אמוי) התפשטו בעיקר בים, דרך סוחרים הולנדים (tea באנגלית, Tee בגרמנית). פורטוגזית היא היוצאת מן הכלל: היא קיבלה את chá בדרך הים, מההגייה הקנטונזית במקאו.",
+    "zh": "“茶”一词的来源。源自汉语 cha（官话和粤语中的读音）的形式大多经陆路传播（捷克语 čaj、俄语、印地语、土耳其语），源自闽南语（厦门话）te 的形式大多由荷兰商人经海路传播（英语 tea、德语 Tee）。葡萄牙语是例外：它经海路借入了 chá，来自澳门的粤语读音。"
    },
    "hodnoty": {
     "1": {
@@ -2695,7 +2963,8 @@
      "it": "Parole derivate dal cinese cha",
      "de": "Wörter aus sinitisch cha",
      "fr": "Mots dérivés du sinitique cha",
-     "he": "מילים שמקורן ב-cha הסינית"
+     "he": "מילים שמקורן ב-cha הסינית",
+     "zh": "源自汉语 cha 的词"
     },
     "2": {
      "cs": "z minnanského te",
@@ -2703,7 +2972,8 @@
      "it": "Parole derivate dal min nan te",
      "de": "Wörter aus Min-Nan-chinesisch te",
      "fr": "Mots dérivés du chinois min nan te",
-     "he": "מילים שמקורן ב-te של סינית מין דרומית"
+     "he": "מילים שמקורן ב-te של סינית מין דרומית",
+     "zh": "源自闽南语 te 的词"
     },
     "3": {
      "cs": "jiné",
@@ -2711,7 +2981,8 @@
      "it": "Altre",
      "de": "Andere",
      "fr": "Autres",
-     "he": "אחרות"
+     "he": "אחרות",
+     "zh": "其他"
     }
    },
    "tridy": [
@@ -2724,7 +2995,8 @@
      "it": "dal cinese cha",
      "de": "aus sinitisch cha",
      "fr": "du sinitique cha",
-     "he": "מ-cha הסינית"
+     "he": "מ-cha הסינית",
+     "zh": "源自汉语 cha"
     },
     {
      "wals": [
@@ -2735,7 +3007,8 @@
      "it": "dal min nan te",
      "de": "aus Min Nan te",
      "fr": "du min nan te",
-     "he": "מ-te של מין דרומית"
+     "he": "מ-te של מין דרומית",
+     "zh": "源自闽南语 te"
     },
     {
      "wals": [
@@ -2747,6 +3020,7 @@
      "de": "andere Herkunft",
      "fr": "autre origine",
      "he": "מקור אחר",
+     "zh": "其他来源",
      "barva": "jine"
     }
    ]

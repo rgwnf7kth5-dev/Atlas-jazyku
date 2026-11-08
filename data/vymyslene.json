@@ -31,6 +31,10 @@
    "he": {
     "nazev": "Qo'noS",
     "popis": "כוכב הלכת שממנו באים הקלינגונים ב\"מסע בין כוכבים\"."
+   },
+   "zh": {
+    "nazev": "克罗诺斯（Qo'noS）",
+    "popis": "《星际迷航》中克林贡人的母星。"
    }
   },
   {
@@ -63,6 +67,10 @@
    "he": {
     "nazev": "הארץ התיכונה",
     "popis": "העולם של \"שר הטבעות\". טולקין דמיין אותו כארץ שלנו בעבר רחוק ומומצא."
+   },
+   "zh": {
+    "nazev": "中土世界",
+    "popis": "《魔戒》的世界。托尔金把它设想为我们自己的地球，处在一个虚构的遥远过去。"
    }
   },
   {
@@ -95,6 +103,10 @@
    "he": {
     "nazev": "פנדורה",
     "popis": "ירח של כוכב לכת ענק ליד הכוכב אלפא קנטאורי, ביתם של הנאבי בסרט \"אווטאר\"."
+   },
+   "zh": {
+    "nazev": "潘多拉",
+    "popis": "半人马座α星附近一颗巨行星的卫星，是电影《阿凡达》中纳美人的家园。"
    }
   },
   {
@@ -127,6 +139,10 @@
    "he": {
     "nazev": "אסוס",
     "popis": "יבשת בעולם של \"משחקי הכס\". כאן חיים הדות׳ראקים, וכאן עמדה פעם ואליריה."
+   },
+   "zh": {
+    "nazev": "厄斯索斯",
+    "popis": "《权力的游戏》世界中的一块大陆。多斯拉克人生活在这里，瓦雷利亚也曾坐落于此。"
    }
   }
  ],
@@ -186,6 +202,11 @@
     "hledat": "קלינגון קלינגונית מסע בין כוכבים klingon star trek okrand"
    },
    "zh": {
+    "nazev": "克林贡语",
+    "vyslovnost": "ˈnuk-nêh",
+    "dilo": "《星际迷航》（电影）",
+    "vyznam": "字面意思是“你想要什么？”——克林贡人的礼节中没有客套用语。",
+    "fakt": "克林贡语的基本语序是宾语–动词–主语：“puq legh yaS”的意思是“军官看见孩子”，字面为“孩子 看见 军官”。这种语序在自然语言中非常罕见（WALS 81A）。",
     "hledat": "克林贡 克林贡语 星际迷航 klingon star trek okrand"
    }
   },
@@ -244,6 +265,11 @@
     "hledat": "עלפים קווניה אלפים אלפית טולקין שר הטבעות quenya elf elvish tolkien lord of the rings"
    },
    "zh": {
+    "nazev": "昆雅语",
+    "vyslovnost": "ˈai-ya",
+    "dilo": "《魔戒》（小说）",
+    "vyznam": "“致敬！”——高等精灵的语言。",
+    "fakt": "托尔金创造它时主要借鉴了芬兰语。他说，先有语言，故事是为了给这些语言一个可以使用它们的世界才写出来的。",
     "hledat": "昆雅 昆雅语 精灵 精灵语 托尔金 魔戒 指环王 quenya elf elvish tolkien lord of the rings"
    }
   },
@@ -302,6 +328,11 @@
     "hledat": "עלפים סינדרין סינדארין אלפים אלפית טולקין שר הטבעות sindarin elf elvish tolkien lord of the rings mellon"
    },
    "zh": {
+    "nazev": "辛达林语",
+    "vyslovnost": "mai go-ˈvan-nên",
+    "dilo": "《魔戒》（小说）",
+    "vyznam": "“幸会。”",
+    "fakt": "它的语音系统让人想起托尔金所喜爱的威尔士语。墨瑞亚大门上的铭文写着“开口吧，朋友，然后进入”——而口令正是“朋友”这个词本身：mellon。",
     "hledat": "辛达林 辛达林语 精灵 精灵语 托尔金 魔戒 指环王 mellon sindarin elf elvish tolkien lord of the rings mellon"
    }
   },
@@ -360,6 +391,11 @@
     "hledat": "נא׳בית נאבית נאבי אווטאר פנדורה navi na'vi avatar pandora frommer"
    },
    "zh": {
+    "nazev": "纳美语",
+    "vyslovnost": "kal-ˈti",
+    "dilo": "《阿凡达》（电影，2009年）",
+    "vyznam": "“你好！”",
+    "fakt": "语言学家保罗·弗罗默（Paul Frommer）为它设计了挤喉音 kx、px 和 tx，发音时声门同时闭合。英语和捷克语都没有这类音，但格鲁吉亚语或阿姆哈拉语等语言中就有。",
     "hledat": "纳美 纳美语 阿凡达 潘多拉 navi na'vi avatar pandora frommer"
    }
   },
@@ -418,6 +454,11 @@
     "hledat": "דותראקית דות׳ראקית דות׳ראקים דותראקי משחקי הכס dothraki game of thrones peterson"
    },
    "zh": {
+    "nazev": "多斯拉克语",
+    "vyslovnost": "math-cho-ma-ˈrun",
+    "dilo": "《权力的游戏》（电视剧，2011年）",
+    "vyznam": "“致以敬意！”——多斯拉克人之间就这样互相问候。",
+    "fakt": "乔治·R·R·马丁在小说中只用了寥寥几个多斯拉克语词。语言学家戴维·J·彼得森（David J. Peterson）以它们为基础，为电视剧构建了一门完整的语言，有自己的语法，词汇量达数千词。",
     "hledat": "多斯拉克 多斯拉克语 权力的游戏 dothraki game of thrones peterson"
    }
   },
@@ -476,6 +517,11 @@
     "hledat": "ואלירית משחקי הכס דנאריס valyrian high valyrian game of thrones daenerys peterson"
    },
    "zh": {
+    "nazev": "高等瓦雷利亚语",
+    "vyslovnost": "ˈri-cas",
+    "dilo": "《权力的游戏》（电视剧，2011年）",
+    "vyznam": "“你好！”",
+    "fakt": "高等瓦雷利亚语同样由戴维·J·彼得森创造。自2017年起，它在多邻国（Duolingo）上有了自己的课程。",
     "hledat": "瓦雷利亚 瓦雷利亚语 高等瓦雷利亚语 权力的游戏 龙母 valyrian high valyrian game of thrones daenerys peterson"
    }
   }
@@ -487,7 +533,8 @@
    "it": "Tolkien attinse dal finlandese per creare il quenya, la lingua dei suoi Elfi.",
    "de": "Tolkien stützte sich bei der Schaffung des Quenya, der Sprache seiner Elben, auf das Finnische.",
    "fr": "Tolkien s’est inspiré du finnois pour créer le quenya, la langue de ses Elfes.",
-   "he": "טולקין שאב השראה מהפינית כשיצר את הקווניה, שפת האלפים שלו."
+   "he": "טולקין שאב השראה מהפינית כשיצר את הקווניה, שפת האלפים שלו.",
+   "zh": "托尔金创造他笔下精灵的语言昆雅语时借鉴了芬兰语。"
   },
   "cy": {
    "cs": "Velštinou se Tolkien inspiroval při tvorbě sindarštiny, dalšího elfského jazyka.",
@@ -495,7 +542,8 @@
    "it": "Tolkien attinse dal gallese per creare il sindarin, un'altra lingua elfica.",
    "de": "Tolkien stützte sich bei der Schaffung des Sindarin, einer weiteren Elbensprache, auf das Walisische.",
    "fr": "Tolkien s’est inspiré du gallois pour créer le sindarin, une autre langue elfique.",
-   "he": "טולקין שאב השראה מהוולשית כשיצר את הסינדרין, שפה אלפית נוספת."
+   "he": "טולקין שאב השראה מהוולשית כשיצר את הסינדרין, שפה אלפית נוספת.",
+   "zh": "托尔金创造另一种精灵语辛达林语时借鉴了威尔士语。"
   }
  }
 }
