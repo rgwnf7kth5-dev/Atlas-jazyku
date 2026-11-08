@@ -47,6 +47,10 @@ const bezDiakritiky = function(s){ return s.toLowerCase().normalize("NFD").repla
 const cislo = function(n, des){
   return n.toLocaleString(T.locale, {maximumFractionDigits: des || 0, minimumFractionDigits: des || 0});
 };
+/* čínsky plnošířková interpunkce: 汉藏语系（518）, 拉丁文、西里尔文, 句号 */
+const zavorka = function(x){ return T.lang === "zh" ? "（" + x + "）" : " (" + x + ")"; };
+const vycet = function(a){ return a.join(T.lang === "zh" ? "、" : ", "); };
+const tecka = function(){ return T.lang === "zh" ? "。" : "."; };
 /* text rozhraní; ve dne má pár textů vlastní znění („bod“ místo „světélka“) s příponou Den */
 function tx(klic){ return denni && T[klic + "Den"] != null ? T[klic + "Den"] : T[klic]; }
 function t(klic, promenne){
@@ -661,7 +665,7 @@ function naradiAI(nazev, vstup){
     const s = x.sort(function(a, b){ return b.body.length - a.body.length; })[0];
     let k = s.u; while (PD.nad[k] >= 0) k = PD.nad[k];
     const deti = [];
-    PD.nad.forEach(function(nad, u){ if (nad === s.u) { const y = IX.uzly.find(function(q){ return q.u === u; }); if (y) deti.push(nazevSkupiny(u) + " (" + y.body.length + ")"); } });
+    PD.nad.forEach(function(nad, u){ if (nad === s.u) { const y = IX.uzly.find(function(q){ return q.u === u; }); if (y) deti.push(nazevSkupiny(u) + zavorka(y.body.length)); } });
     const atlas = JAZYKY.filter(function(j){ return BOD_ATLASU[j.id] >= 0 && s.body.indexOf(BOD_ATLASU[j.id]) >= 0; }).map(function(j){ return j.n; });
     return {data: {nazev: nazevSkupiny(s.u), typ: s.koren ? "rodina / family" : "větev / branch", rodina: nazevSkupiny(k), jazyku_na_globu: s.body.length,
       podskupiny: deti.slice(0, 12), jazyky_atlasu_s_kartou: atlas, zdroj: "Glottolog",
@@ -1033,7 +1037,7 @@ function pridavej(prvni){
     const g = fronta[0];
     if (!g.sekce) {
       g.sekce = document.createElement("section"); g.sekce.className = "rodina";
-      g.sekce.appendChild(nadpis(g.nazev + " (" + cislo(g.s.length + g.bez.length) + ")", g.barva));
+      g.sekce.appendChild(nadpis(g.nazev + zavorka(cislo(g.s.length + g.bez.length)), g.barva));
       if (g.s.length) {
         const m = document.createElement("div"); m.className = "mrizka";
         g.s.forEach(function(p){ m.appendChild(dlazdice(p.j)); });
@@ -2760,7 +2764,7 @@ function tabulkaVitality(radky, sloupce){
     }
     tr.appendChild(th);
     tr.appendChild(prvek("td", null, cislo(r.n)));
-    tr.appendChild(prvek("td", null, cislo(oh) + " (" + procenta(oh, r.n) + ")"));
+    tr.appendChild(prvek("td", null, cislo(oh) + zavorka(procenta(oh, r.n))));
     tr.appendChild(prvek("td", null, cislo(r.v[5] || 0)));
     tb.appendChild(tr);
   });
@@ -3375,7 +3379,7 @@ function prvek(tag, trida, text){
 function oddilNareci(i){
   if (!(i >= 0) || !PD.nareci[i]) return null;
   const jmena = PD.nareci[i].split("|").map(function(n){ return T.lang === "cs" && PD.nareciCs[n] ? PD.nareciCs[n] : n; });
-  const o = oddil(T.nareci + " (" + cislo(jmena.length) + ")"), ul = prvek("ul", "staty");
+  const o = oddil(T.nareci + zavorka(cislo(jmena.length))), ul = prvek("ul", "staty");
   jmena.slice(0, 24).forEach(function(n){ ul.appendChild(prvek("li", null, n)); });
   if (jmena.length > 24) ul.appendChild(prvek("li", "vic", t("aDalsich", {n: jmena.length - 24})));
   o.appendChild(ul);
@@ -3388,7 +3392,7 @@ function cldrUdaje(i, id){
   const r = i >= 0 ? radek(i) : [], z = id && PD.atlasCldr[id] && !(r[13] || r[14]) ? PD.atlasCldr[id] : [r[13], r[14]];
   return {pisma: (z[0] || "").split(" ").filter(Boolean), uredni: (z[1] || "").split(" ").filter(Boolean)};
 }
-function nazvyPisem(kody){ return velke(kody.map(function(k){ return PD.pisma[T.lang][k] || k; }).join(", ")); }
+function nazvyPisem(kody){ return velke(vycet(kody.map(function(k){ return PD.pisma[T.lang][k] || k; }))); }
 function oddilPisma(i, id){
   const kody = cldrUdaje(i, id).pisma;
   if (!kody.length && i >= 0 && radek(i)[15] && !ZNAKOVY[i]) {   // jen odhad CLDR (likelySubtags): ukázat jako odhad
@@ -3410,7 +3414,7 @@ function oddilUredni(i, id){
   const o = oddil(T.uredni), ul = prvek("ul", "staty");
   polozky.slice(0, 16).forEach(function(x){
     const stav = T.uredniStav[+x.slice(2)];
-    ul.appendChild(prvek("li", null, jmeno(x) + (stav ? " · " + stav : "")));
+    ul.appendChild(prvek("li", null, jmeno(x) + (stav ? (T.lang === "zh" ? zavorka(stav) : " · " + stav) : "")));
   });
   if (polozky.length > 16) ul.appendChild(prvek("li", "vic", t("aDalsich", {n: polozky.length - 16})));
   o.appendChild(ul);
@@ -3424,7 +3428,7 @@ function oddilMluvciAtlas(j, i, znak){
   o.appendChild(prvek("p", null, pocetMluvcich(j.mlu)));
   o.appendChild(prvek("p", "pozn", znak ? T.mluvciAtlasZnak : T.mluvciAtlas));
   const wdm = i >= 0 && Array.isArray(radek(i)[10]) ? radek(i)[10] : null;
-  if (wdm) o.appendChild(prvek("p", "pozn", t(wdm[2] ? (znak ? "mluvciAtlasWdRodiliZnak" : "mluvciAtlasWdRodili") : "mluvciAtlasWd", {n: lidi(wdm[0]), rok: wdm[1] ? " (" + wdm[1] + ")" : ""})));
+  if (wdm) o.appendChild(prvek("p", "pozn", t(wdm[2] ? (znak ? "mluvciAtlasWdRodiliZnak" : "mluvciAtlasWdRodili") : "mluvciAtlasWd", {n: lidi(wdm[0]), rok: wdm[1] ? zavorka(wdm[1]) : ""})));
   return o;
 }
 function lidi(n){                  /* počet lidí: malá čísla přesně, velká zaokrouhleně, ale ne hrubě */
@@ -3529,12 +3533,12 @@ function ukazKartuBodu(i){
     const h = r[6], o = oddil(T.hlasky);
     let txt = t("hlaskyHodnota", {c: h[0], cs: tvar(h[0], T.souhlaska), v: h[1], vs: tvar(h[1], T.samohlaska)});
     if (h[2] > 0) txt += t("hlaskyTony", {t: h[2], ts: tvar(h[2], T.ton)});
-    o.appendChild(prvek("p", null, txt + "."));
+    o.appendChild(prvek("p", null, txt + tecka()));
     if (!hlaskyVzor || hlaskyVzor.lang !== T.lang) hlaskyVzor = {lang: T.lang, h: hlaskySrovnani()};
     if (hlaskyVzor.h) o.appendChild(prvek("p", "pozn", t("hlaskySrovnani", {c: hlaskyVzor.h[0], v: hlaskyVzor.h[1]})));
     stavba.push(o);
   }
-  if (r[1] >= 0) { const o = oddil(T.popsanost); o.appendChild(prvek("p", null, velke(T.med[r[1]]) + ".")); stavba.push(o); }
+  if (r[1] >= 0) { const o = oddil(T.popsanost); o.appendChild(prvek("p", null, velke(T.med[r[1]]) + tecka())); stavba.push(o); }
 
   if (BEZ_RODU.has(B[i][3])) {                         /* umělý jazyk, pidžin…: žádná rodina, žádní příbuzní */
     const o = oddil(T.pribuzenstvo);
@@ -3556,7 +3560,7 @@ function ukazKartuBodu(i){
     const bratri = (sourozenci.get(r[2]) || []).filter(function(j){ return j !== i; })
       .sort(function(x, y){ return (oblouk.indexOf(x) < 0) - (oblouk.indexOf(y) < 0); });
     if (bratri.length) {
-      const o2 = oddil(T.sourozenci + " (" + bratri.length + ")"), ul = prvek("ul", "pribuzni");
+      const o2 = oddil(T.sourozenci + zavorka(bratri.length)), ul = prvek("ul", "pribuzni");
       bratri.slice(0, 8).forEach(function(j){
         const li = prvek("li"), b = prvek("button", null, jmenoBodu(j));
         b.type = "button";
@@ -4084,7 +4088,7 @@ var strom = (function(){   // var: filtry a texty se na něj ptají dřív, než
     const s = $("strom-rodina"); s.textContent = "";
     rodinyStromu().forEach(function(x){
       const o = document.createElement("option"); o.value = x[0];
-      o.textContent = velke(REJSTRIK.rr[x[0]]) + " (" + cislo(x[1]) + ")"; s.appendChild(o);
+      o.textContent = velke(REJSTRIK.rr[x[0]]) + zavorka(cislo(x[1])); s.appendChild(o);
     });
     s.value = String(rodina);
   }
@@ -4642,7 +4646,7 @@ var strom = (function(){   // var: filtry a texty se na něj ptají dřív, než
       const li = prvek("li"), b = prvek("button", "prehled-radek"); b.type = "button"; b._u = ch;
       const bod = prvek("i", "bod"); bod.style.background = barvaBodu(ch); b.appendChild(bod);
       const jm = prvek("span", "jm", nazevP(ch));
-      const pod = ch.c ? (ch.a && ch.a.length ? ch.a.slice(0, 5).map(function(i){ return velke(jmenoBodu(i)); }).join(", ") : "") : kdeBod(ch.i);
+      const pod = ch.c ? (ch.a && ch.a.length ? vycet(ch.a.slice(0, 5).map(function(i){ return velke(jmenoBodu(i)); })) : "") : kdeBod(ch.i);
       if (pod) jm.appendChild(prvek("small", null, pod));
       b.appendChild(jm);
       b.appendChild(prvek("span", "n", ch.c ? cislo(ch.s) : ""));

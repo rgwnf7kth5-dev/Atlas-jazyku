@@ -166,7 +166,7 @@ footer a{color:inherit}
  
  </div>
 </article></div>
-<script>(function(){var T={"rodily":"由您设备上该语言的合成语音朗读。","zalozni":"您的设备没有这种语言的语音，因此近似读音由中文语音朗读。实际发音与此不同。","zadny":"您的设备没有语音合成语音。近似读音：“{x}”。","neumi":"此设备不支持语音合成。近似读音：“{x}”。","chyba":"播放失败。近似读音：“{x}”。","posloucha":"正在播放……","znovu":"再播放一次","hlas":"en-GB","en":true},hlasy=[],ss=window.speechSynthesis;function nacti(){try{hlasy=ss.getVoices()||[]}catch(e){hlasy=[]}}
+<script>(function(){var T={"rodily":"由您设备上该语言的合成语音朗读。","zalozni":"您的设备没有这种语言的语音，因此近似读音由英语语音朗读。实际发音与此不同。","zadny":"您的设备没有可用于语音合成的语音。近似读音：“{x}”。","neumi":"此设备不支持语音合成。近似读音：“{x}”。","chyba":"播放失败。近似读音：“{x}”。","posloucha":"正在播放……","znovu":"再播放一次","hlas":"en-GB","en":true},hlasy=[],ss=window.speechSynthesis;function nacti(){try{hlasy=ss.getVoices()||[]}catch(e){hlasy=[]}}
 if(ss){nacti();ss.addEventListener("voiceschanged",nacti)}
 function najdi(k){if(!k||!hlasy.length)return null;k=k.toLowerCase().replace("_","-");var z=k.split("-")[0],n=function(v){return v.lang.toLowerCase().replace("_","-")};
 return hlasy.filter(function(v){return n(v)===k})[0]||hlasy.filter(function(v){return n(v).split("-")[0]===z})[0]||null}

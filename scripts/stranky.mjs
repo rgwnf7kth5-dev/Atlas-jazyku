@@ -320,15 +320,15 @@ ${dlazdice(serazene)}`;
       if (j.mluvcich) udaje.push([znakovy ? S.uzivatelu : T.mluvcich, Math.round(j.mluvcich * 1e6) < 100 ? T.hrstka : lidi(lang, T, Math.round(j.mluvcich * 1e6)) + " (" + T.odhad + ")"]);
       if (P.rodina) udaje.push([T.rodina, P.rodina]);
       if (r && r[0] >= 0) udaje.push([T.vitalita, (znakovy ? T.aesZnak : T.aes)[r[0]][0]]);
-      const st = staty(j, lang);
-      if (st.length) udaje.push([znakovy ? S.kdeZnakuje : S.kdeMluvi, st.slice(0, 12).join(", ") + (st.length > 12 ? " " + S.aDalsi.replace("{n}", st.length - 12) : "")]);
+      const st = staty(j, lang), carka = lang === "zh" ? "、" : ", ", zav = x => lang === "zh" ? "（" + x + "）" : " (" + x + ")";   // čínsky plnošířková interpunkce
+      if (st.length) udaje.push([znakovy ? S.kdeZnakuje : S.kdeMluvi, st.slice(0, 12).join(carka) + (st.length > 12 ? " " + S.aDalsi.replace("{n}", st.length - 12) : "")]);
       const cldr = r && (r[13] || r[14]) ? [r[13], r[14]] : podrobnosti.atlasCldr[j.id] || [];   // písmo a úřední status (CLDR)
       const pisma = cldr[0] ? cldr[0].split(" ").map(k => podrobnosti.pisma[lang][k] || k) : [];
-      if (pisma.length) udaje.push([T.pismo, pisma.join(", ").replace(/^./, c => c.toUpperCase())]);
+      if (pisma.length) udaje.push([T.pismo, pisma.join(carka).replace(/^./, c => c.toUpperCase())]);
       const jmenoStatu = x => podrobnosti.staty[lang][x.slice(0, 2)] || x.slice(0, 2);
       const uredni = cldr[1] ? cldr[1].split(" ").sort((x, y) => x.slice(2) - y.slice(2) || jmenoStatu(x).localeCompare(jmenoStatu(y), T.locale))
-        .map(x => jmenoStatu(x) + (T.uredniStav[+x.slice(2)] ? " (" + T.uredniStav[+x.slice(2)] + ")" : "")) : [];
-      if (uredni.length) udaje.push([T.uredni, uredni.slice(0, 12).join(", ") + (uredni.length > 12 ? " " + S.aDalsi.replace("{n}", uredni.length - 12) : "")]);
+        .map(x => jmenoStatu(x) + (T.uredniStav[+x.slice(2)] ? zav(T.uredniStav[+x.slice(2)]) : "")) : [];
+      if (uredni.length) udaje.push([T.uredni, uredni.slice(0, 12).join(carka) + (uredni.length > 12 ? " " + S.aDalsi.replace("{n}", uredni.length - 12) : "")]);
       const pr = pribuzni(j.id);
       const pred = serazene[(poradi - 1 + serazene.length) % serazene.length], dalsi = serazene[(poradi + 1) % serazene.length];
       const listek = `<article class="listek" role="dialog" aria-modal="true" aria-labelledby="listek-nazev">
