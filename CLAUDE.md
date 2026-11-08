@@ -969,6 +969,10 @@ severozápadní Persie), západní novoaramejština ~15 000 před válkou a Bach
 zákon 2018 (§ 4 c: postavení arabštiny v praxi nedotčeno), „téměř tři tisíciletí“, patriarcha od 780 v Bagdádu, jeruzalémský (ne galilejský)
 Talmud, Juda ha-Nasi Mišnu „uspořádal“ (zápis sporný), všechny aramejské pasáže Bible, filozofie v židovské arabštině, 587/586; oblast „ivrit“
 jen v hranicích Izraele z roku 1949 (bez územního tvrzení).
+**Pozor na závorky v `styles.css`** (8. 11. 2026): barvy putování němčiny a španělštiny (`--put-ahd`…) stály od 25. 10. za uzavírací `}`
+bloku, prohlížeč je zahodil i s celou denní sadou `:root[data-theme="light"]` (ve dne se kreslily noční barvy, němčina a španělština
+bez barev), a osiřelý kus pravidla odkazu kalendáře (od 18. 10.) shodil styl `.kal-seznam`. Validace teď hlídá `--put-*` mimo blok
+a nadbytečnou `}`.
 **Putování francouzštiny** (17. 10. 2026, `#putovani-francouzstina` / `#journey-french` / `#viaggio-francese` / `#reise-franzoesisch` /
 `#voyage-francais`, texty rovnou cs/en/it/de/fr, generátor `put-fr/francouzstina.py` ve scratchpadu; 8 etap: Galie před Římany, latina
 římské Galie, Frankové a Bretonci, jazyk oïl a oc (Štrasburské přísahy, 1066), jazyk krále (Villers-Cotterêts, Akademie), za oceán,
