@@ -952,7 +952,6 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 :root[data-theme="light"]{--podlaha:rgba(120,110,90,.09); --podlaha-2:rgba(120,110,90,.15); --obzor:rgba(60,60,80,.13);
   --stin-plochy:rgba(40,44,70,.34); --stin-plochy-2:rgba(40,44,70,.16)}
 /* kalendář jazykových dnů: odkaz pod Jazykem dne a okno se seznamem dnů */
-  font:inherit; font-size:.84rem; font-weight:600; color:var(--cyan); cursor:pointer; text-decoration:underline; text-underline-offset:2px}
 .kal-seznam{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:4px}
 .kal-den{display:flex; align-items:flex-start; gap:14px; width:100%; padding:9px 12px; border:1px solid var(--linka); border-radius:12px; background:var(--plocha);
   font:inherit; text-align:start; color:var(--text); cursor:pointer}
@@ -1350,8 +1349,9 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
   --put-psa:#B8892A; --put-sin:#239A8C; --put-fen:#9B6CC4; --put-rek:#2A7F4E; --put-etr:#CF6450; --put-lat:#E0503F; --put-ara:#B8892A; --put-heb:#9B6CC4; --put-arb:#2A7F4E; --put-kha:#CF6450; --put-hla:#239A8C; --put-cyr:#9B6CC4;
   --put-sem:#239A8C; --put-sar:#B8892A; --put-mt:#E0503F; --put-itm:#2A7F4E; --put-enm:#9B6CC4;
   --put-gal:#2A7F4E; --put-aqu:#B8892A; --put-frk:#5B82C8; --put-oil:#CF6450; --put-frp:#239A8C; --put-bre:#9B6CC4; --put-kre:#B8892A; --put-frx:#E0503F; --put-ita:#239A8C; --put-osu:#B8892A; --put-etq:#9B6CC4; --put-lgb:#5B82C8; --put-byz:#2A7F4E; --put-vlg:#CF6450; --put-sic:#B8892A; --put-tos:#E0503F; --put-it:#E0503F; --put-emi:#9B6CC4; --put-itx:#239A8C;
-  --put-hbr:#E0503F; --put-kna:#5B82C8; --put-dia:#9B6CC4; --put-ziv:#CF6450; --put-aram:#B8892A; --put-asy:#CF6450; --put-nab:#9B6CC4; --put-pal:#5B82C8; --put-syr:#239A8C; --put-neo:#E0503F}
+  --put-hbr:#E0503F; --put-kna:#5B82C8; --put-dia:#9B6CC4; --put-ziv:#CF6450; --put-aram:#B8892A; --put-asy:#CF6450; --put-nab:#9B6CC4; --put-pal:#5B82C8; --put-syr:#239A8C; --put-neo:#E0503F;
   --put-ahd:#B8892A; --put-de:#E0503F; --put-dex:#9B6CC4; --put-zan:#9A948C; --put-ibe:#239A8C; --put-bsk:#5B82C8; --put-ibr:#9B6CC4; --put-cas:#E0503F; --put-esx:#CF6450; --put-ind:#239A8C; --put-lad:#9B6CC4;
+  --put-sit:#239A8C; --put-tb:#5B82C8; --put-och:#E0503F; --put-kla:#E0503F; --put-ri:#B8892A; --put-jih:#2A7F4E; --put-zhn:#E0503F; --put-wu:#5B82C8; --put-gan:#239A8C; --put-xia:#2A7F4E; --put-hak:#B8892A; --put-min:#CF6450; --put-yue:#9B6CC4; --put-sx:#9B6CC4; --put-jap:#239A8C; --put-hq:#B8892A}
 :root[data-theme="light"]{--put-ie:#3D6CC0; --put-bs:#16968A; --put-sl:#C98A1A; --put-zsl:#C8553D; --put-jsl:#9055B0; --put-vsl:#1F7448; --put-cs:#D23A2B;
   --put-ii:#16968A; --put-ir:#C98A1A; --put-ku:#D23A2B; --put-kmr:#C8553D; --put-ckb:#9055B0; --put-sdh:#1F7448;
   --put-ur:#16968A; --put-ug:#C98A1A; --put-hu:#D23A2B; --put-in:#C98A1A; --put-rom:#D23A2B; --put-bal:#9055B0; --put-vla:#C8553D; --put-cen:#1F7448; --put-svy:#16968A; --put-szap:#3D6CC0; --put-ko:#9055B0;
@@ -1363,8 +1363,9 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
   --put-psa:#C98A1A; --put-sin:#16968A; --put-fen:#9055B0; --put-rek:#1F7448; --put-etr:#C8553D; --put-lat:#D23A2B; --put-ara:#C98A1A; --put-heb:#9055B0; --put-arb:#1F7448; --put-kha:#C8553D; --put-hla:#16968A; --put-cyr:#9055B0;
   --put-sem:#16968A; --put-sar:#C98A1A; --put-mt:#D23A2B; --put-itm:#1F7448; --put-enm:#9055B0;
   --put-gal:#1F7448; --put-aqu:#C98A1A; --put-frk:#3D6CC0; --put-oil:#C8553D; --put-frp:#16968A; --put-bre:#9055B0; --put-kre:#C98A1A; --put-frx:#D23A2B; --put-ita:#16968A; --put-osu:#C98A1A; --put-etq:#9055B0; --put-lgb:#3D6CC0; --put-byz:#1F7448; --put-vlg:#C8553D; --put-sic:#C98A1A; --put-tos:#D23A2B; --put-it:#D23A2B; --put-emi:#9055B0; --put-itx:#16968A;
-  --put-hbr:#D23A2B; --put-kna:#3D6CC0; --put-dia:#9055B0; --put-ziv:#C8553D; --put-aram:#C98A1A; --put-asy:#C8553D; --put-nab:#9055B0; --put-pal:#3D6CC0; --put-syr:#16968A; --put-neo:#D23A2B}
+  --put-hbr:#D23A2B; --put-kna:#3D6CC0; --put-dia:#9055B0; --put-ziv:#C8553D; --put-aram:#C98A1A; --put-asy:#C8553D; --put-nab:#9055B0; --put-pal:#3D6CC0; --put-syr:#16968A; --put-neo:#D23A2B;
   --put-ahd:#C98A1A; --put-de:#D23A2B; --put-dex:#9055B0; --put-zan:#6F6A64; --put-ibe:#16968A; --put-bsk:#3D6CC0; --put-ibr:#9055B0; --put-cas:#D23A2B; --put-esx:#C8553D; --put-ind:#16968A; --put-lad:#9055B0;
+  --put-sit:#16968A; --put-tb:#3D6CC0; --put-och:#D23A2B; --put-kla:#D23A2B; --put-ri:#C98A1A; --put-jih:#1F7448; --put-zhn:#D23A2B; --put-wu:#3D6CC0; --put-gan:#16968A; --put-xia:#1F7448; --put-hak:#C98A1A; --put-min:#C8553D; --put-yue:#9055B0; --put-sx:#9055B0; --put-jap:#16968A; --put-hq:#C98A1A}
 .putovani-panel{grid-template-columns:1fr auto; width:min(360px, 40%); max-height:calc(100% - 120px); overflow:auto; scrollbar-width:thin}
 .putovani-panel .zavrit{grid-column:2}
 .put-ovl{grid-column:1 / -1; display:flex; align-items:center; gap:10px}
@@ -2024,6 +2025,6 @@ html[lang="en"] .do-ceka-otazka{quotes:"“" "”"} html[lang="it"] .do-ceka-ota
  <dialog class="civ-okno" id="civ-okno" aria-labelledby="civ-nadpis"></dialog>
 </div>
 
-<script src="js/atlas.85896545fb.js"></script>
+<script src="js/atlas.7a6447323e.js"></script>
 </body>
 </html>
