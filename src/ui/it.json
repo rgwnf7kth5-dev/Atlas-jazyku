@@ -78,6 +78,7 @@
  "hledejPlaceholder": "Cerca o fai una domanda…",
  "domaciJmeno": "nella lingua stessa: {x}",
  "vyslovnost": "si pronuncia: “{x}”",
+ "vyslovnostEn": "in inglese: «{x}»",
  "areal": "La macchia colorata indica l’area approssimativa in cui si parla la lingua, non un confine di stato.",
  "aDalsich": "e altri {n}",
  "miliardy": [

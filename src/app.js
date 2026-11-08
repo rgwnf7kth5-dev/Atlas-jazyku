@@ -356,8 +356,8 @@ function kartaDneJazyku(){
    („co má společného němčina s italštinou“). Tvary slov se porovnávají podle kmene (Brazílie – v Brazílii).
    Stejné akce (ukazZemi, ukazSkupinu, srovnání) mají později sloužit i AI jako nástroje. */
 let DOTAZ_IX = null, dotazSkupina = null, dotazAkce = null;
-const DOTAZ_SPUSTE = /^(jazyk|language|mluv|rec|speak|spoken|rodin|famil|vetev|vetv|branch|nareci|dialect|lingu|parla|ramo|rami|sprach|sprech|sprich|gesproch|zweig|dialekt|mundart|langu|parl|patois|[והבלמשכ]{0,2}(?:שפ|דובר|מדבר|ניב|משפח|ענף))/;   // i hebrejsky (26. 10. 2026)   // i francouzsky (17. 10. 2026)   // i italsky (2. 10.) a německy (3. 10. 2026)
-const DOTAZ_PREDLOZKY = {v: 1, ve: 1, na: 1, in: 1, of: 1, del: 1, della: 1, dell: 1, dello: 1, di: 1, nel: 1, nella: 1, nello: 1, negli: 1, nei: 1, degli: 1, im: 1, von: 1, aus: 1, der: 1, en: 1, au: 1, aux: 1, du: 1, des: 1, de: 1, "של": 1};
+const DOTAZ_SPUSTE = /^(jazyk|language|mluv|rec|speak|spoken|rodin|famil|vetev|vetv|branch|nareci|dialect|lingu|parla|ramo|rami|sprach|sprech|sprich|gesproch|zweig|dialekt|mundart|langu|parl|patois|[והבלמשכ]{0,2}(?:שפ|דובר|מדבר|ניב|משפח|ענף|语言|语系|语族|语支|方言|说|讲|使用))/;   // i hebrejsky (26. 10. 2026)   // i francouzsky (17. 10. 2026)   // i italsky (2. 10.) a německy (3. 10. 2026)
+const DOTAZ_PREDLOZKY = {v: 1, ve: 1, na: 1, in: 1, of: 1, del: 1, della: 1, dell: 1, dello: 1, di: 1, nel: 1, nella: 1, nello: 1, negli: 1, nei: 1, degli: 1, im: 1, von: 1, aus: 1, der: 1, en: 1, au: 1, aux: 1, du: 1, des: 1, de: 1, "של": 1, "在": 1};
 const DOTAZ_ALIASY_ZEMI = {"United States of America": ["usa", "us", "amerika", "america"], "United Kingdom": ["britanie", "britain", "uk", "anglie", "england"],
   "Netherlands": ["holandsko", "holland"], "Czechia": ["ceska republika", "czech republic", "tschechische republik"], "Dem. Rep. Congo": ["kongo kinshasa", "drc"],
   "Germany": ["brd"]};
@@ -365,7 +365,12 @@ const DOTAZ_ALIASY_UZLU = {"Uralic": ["ugrofinska", "finno-ugric", "finnougric",
   /* italské názvy hlavních větví (české jsou v PD.vetve): „lingue slave“, „lingue romanze“… */
   "Slavic": ["slava"], "Germanic": ["germanica"], "Romance": ["romanza", "neolatina"], "Celtic": ["celtica"], "Eastern Baltic": ["baltica"],
   "Indo-Aryan": ["indoaria", "indoarya"], "Iranian": ["iranica"], "Semitic": ["semitica"], "Narrow Bantu": ["bantu", "bantusprachen"], "Italic": ["italica"]};
-function dotazSlova(s){ return bezDiakritiky(s).replace(/[’‘]/g, "'").replace(/\b(l|d|qu|j|n|s|c|dell|all|nell|dall|sull)'/g, "$1 ").replace(/[()]/g, " ")   /* francouzské a italské elize: l'italien → l italien */.split(/[^a-z0-9'\u05D0-\u05EA-]+/).filter(function(w){ return w.length >= 1; }); }   // i hebrejská písmena
+/* čínština nepíše mezery: dotaz se rozdělí kolem pomocných a tázacích slov (巴西的语言 → 巴西 的 语言, 说波斯语 → 说 波斯语),
+   názvy se pak hledají jako celé úseky (shodaSlova1) */
+   Jen u dotazu, ne u názvů: 和 je i v 共和国 (republika), proto se 共和国 před dělením schová. */
+const ZH_CASTICE = /(哪些|哪种|哪个|哪里|哪儿|什么|为什么|多少|怎么|所有|全部|列出|显示|比较|对比|区别|不同|共同|之间|欧盟|官方|成员国|语言|方言|使用|的|在|和|与|跟|有|说|讲|用|是|吗|呢)/g;
+function zhRozdel(s){ return s.replace(/[\u3400-\u9FFF]+/g, function(r){ return " " + r.replace(/共和国/g, "\u0001").replace(ZH_CASTICE, " $1 ").replace(/\u0001/g, "共和国") + " "; }); }
+function dotazSlova(s, nazev){ return (nazev ? bezDiakritiky(s) : zhRozdel(bezDiakritiky(s))).replace(/[’‘]/g, "'").replace(/\b(l|d|qu|j|n|s|c|dell|all|nell|dall|sull)'/g, "$1 ").replace(/[()]/g, " ")   /* francouzské a italské elize: l'italien → l italien */.split(/[^a-z0-9'\u05D0-\u05EA\u3400-\u9FFF-]+/).filter(function(w){ return w.length >= 1; }); }   // i hebrejská písmena
 /* slovo dotazu odpovídá slovu názvu: shodný kmen (bez koncových samohlásek), u krátkých kmenů jen malá odchylka */
 /* ivrit: předložky a členy se píšou dohromady se slovem (בישראל = v Izraeli, השפות = ty jazyky, ובצרפת = a ve Francii) –
    když slovo nesedí, zkusí se bez jedné až dvou předpon ו ה ב ל מ ש כ */
@@ -376,6 +381,10 @@ function shodaSlova(q, n){
   return false;
 }
 function shodaSlova1(q, n){
+  if (/[\u3400-\u9FFF]/.test(q) || /[\u3400-\u9FFF]/.test(n)) {   // čínsky: celý název, koncovky 语系/语族/语支/语 se nepočítají (斯拉夫 = 斯拉夫语族)
+    const k = function(w){ return w.replace(/(语系|语族|语支|语群|语言|语|人)$/, ""); }, a = k(q), b = k(n);
+    return q === n || (b.length >= 2 && a === b);
+  }
   if (/^[\u05D0-\u05EA]/.test(q) && /^[\u05D0-\u05EA]/.test(n)) {   // ivrit: jednotné a množné číslo přídavného jména (סלאבית × סלאביות)
     const k = function(w){ return w.replace(/(יות|ית|ים|ות|י)$/, ""); }, a = k(q), b = k(n);
     return q === n || (b.length >= 3 && a === b);
@@ -385,7 +394,7 @@ function shodaSlova1(q, n){
   return q === n || (n.length >= 4 && q.indexOf(s) === 0 && q.length <= n.length + 1);   // krátké názvy (Taa, Čad) jen celé: „tam“ ≠ Taa
 }
 function shodaNazvu(slova, nazev){              // všechna podstatná slova názvu musí v dotazu být
-  const ns = dotazSlova(nazev).filter(function(w){ return w.length >= 3 && !/^(and|of|the|a|republika?|jazyk[a-z]*|languages?|group|branch|family|rodina|skupina|vetev)$/.test(w); });   // „jazyky že“ nesmí sedět na každé „jazyky“
+  const ns = dotazSlova(nazev, true).filter(function(w){ return (w.length >= 3 || w.length === 2 && /[\u3400-\u9FFF]/.test(w)) && !/^(and|of|the|a|republika?|jazyk[a-z]*|languages?|group|branch|family|rodina|skupina|vetev)$/.test(w); });   // „jazyky že“ nesmí sedět na každé „jazyky“
   if (!ns.length) return false;
   return ns.every(function(n){ return slova.some(function(q){ return shodaSlova(q, n); }); });
 }
@@ -425,7 +434,7 @@ function rozumejDotazu(text){
     return x.jmena.some(function(n){ return shodaNazvu(slova, n); }) || (x.prisl && slova.indexOf(x.prisl) >= 0);
   });
   if (jazyky.length >= 2) return {typ: "srovnani", a: jazyky[0].j, b: jazyky[1].j, jmena: jmenaJazyku(jazyky.slice(0, 2))};
-  if (jazyky.length === 1 && slova.some(function(w){ return w === "kde" || w === "where" || w === "dove" || w === "wo" || w === "ou" || w === "איפה" || w === "היכן"; })) return {typ: "jazyk", j: jazyky[0].j, jmena: jmenaJazyku(jazyky)};   // „kde se mluví německy“
+  if (jazyky.length === 1 && slova.some(function(w){ return w === "kde" || w === "where" || w === "dove" || w === "wo" || w === "ou" || w === "איפה" || w === "היכן" || w === "哪里" || w === "哪儿"; })) return {typ: "jazyk", j: jazyky[0].j, jmena: jmenaJazyku(jazyky)};   // „kde se mluví německy“
   /* stát: s předložkou („v Brazílii“, „of India“) má přednost; bez ní jen tehdy, když nesedí rodina („germánské jazyky“ ≠ Německo) */
   let stat = null;
   for (let k = 0; k < IX.zeme.length && !(stat && stat.predlozka); k++) {
@@ -450,14 +459,14 @@ function rozumejDotazu(text){
 /* Evropská unie (5. 10. 2026): „jazyky EU“ → 24 úředních jazyků (panel jako „eulang“), „jazyky členských států EU“ → všechny
    jazyky, které rejstřík (Glottolog) uvádí v 27 členských státech. Dřív hledání EU neznalo a AI jen odmítla. */
 const EU_STATY = "AT BE BG CY CZ DE DK EE ES FI FR GR HR HU IE IT LT LU LV MT NL PL PT RO SE SI SK".split(" ");
-const EU_SLOVO = /^(eu|ue|eu-[a-z]+|evropsk[a-z]*|european|europea|europee|europeenne|europaisch[a-z]*|unie|unii|uniji|union|unione|clensk[a-z]*|zemi|zemich|zeme|statu|staty|statech|member|states|countries|paesi|stati|staaten|lander|mitglied[a-z]*|membres?|pays|etats|uredni|oficialni|official|ufficiali|officielles?|amtssprach[a-z]*|amtlichen?)$/;
+const EU_SLOVO = /^(欧盟|官方|成员国|eu|ue|eu-[a-z]+|evropsk[a-z]*|european|europea|europee|europeenne|europaisch[a-z]*|unie|unii|uniji|union|unione|clensk[a-z]*|zemi|zemich|zeme|statu|staty|statech|member|states|countries|paesi|stati|staaten|lander|mitglied[a-z]*|membres?|pays|etats|uredni|oficialni|official|ufficiali|officielles?|amtssprach[a-z]*|amtlichen?)$/;
 function dotazEU(slova, spoust){
   const sl = slova.map(function(w){ return w.split("'").pop(); });
-  const zkratka = sl.some(function(w){ return w === "eu" || w === "ue" || /^eu-/.test(w); });
+  const zkratka = sl.some(function(w){ return w === "eu" || w === "ue" || w === "欧盟" || /^eu-/.test(w); });
   const unie = sl.some(function(w){ return /^(evropsk|european|europea|europee|europaisch)/.test(w); }) && sl.some(function(w){ return /^(unie|unii|uniji|union|unione)$/.test(w); });
-  const uredni = sl.some(function(w){ return /^(uredni|oficialni|official|ufficiali|officiel|amtssprach|amtlich)/.test(w); });
+  const uredni = sl.some(function(w){ return /^(uredni|oficialni|official|ufficiali|officiel|amtssprach|amtlich|官方)/.test(w); });
   if (!(zkratka || unie) || !(spoust || uredni)) return null;
-  const staty = !uredni && sl.some(function(w){ return /^(clensk|zemi|zemich|statu|staty|statech|member|membre|countr|paesi|pays|etats|stati$|staaten|lander|mitglied)/.test(w.replace(/^eu-/, "")); });
+  const staty = !uredni && sl.some(function(w){ return /^(clensk|zemi|zemich|statu|staty|statech|member|membre|countr|paesi|pays|etats|stati$|staaten|lander|mitglied|成员国|国家)/.test(w.replace(/^eu-/, "")); });
   const d = {typ: "eu", staty: staty, jmena: sl.filter(function(w){ return EU_SLOVO.test(w); })};
   if (staty) d.body = bodyEU();
   return d;
@@ -482,6 +491,7 @@ const DOTAZ_VYPLN = new Set(("jazyk jazyky jazyku jazycich jazykem jazyce langua
   "famille familles branche branches entre compare comparer comparaison et le les l un une du de d qu que qui ont a commun commune " +
   "difference est au aux en par avec parle-t-on parle-t-il parlent-ils trouve-t-on ecrit-on ecrit s " +
   "שפה שפות השפה השפות בשפה בשפות לשפה לשפות של את מדברים מדברות מדבר מדברת דוברים דוברי איפה היכן באיזו באיזה באילו איזו איזה אילו מה מהן מהם " +
+  "语言 方言 语 的 在 和 与 跟 有 说 讲 用 使用 是 吗 呢 哪些 哪种 哪个 哪里 哪儿 什么 所有 全部 列出 显示 比较 对比 区别 不同 共同 之间 语系 语族 语支 家族 国家 地区 请 给 我 看 找 中 里 哪 种 点 " +
   "יש הן הם כל כל כלל רשימה הראו הצג הציגו מצא מצאו משפחה משפחת משפחות המשפחה ענף ענפי הענף בין השוואה השוו לעומת ו ה ב ל עם ניב ניבים במדינה").split(" "));
 function celyDotaz(text, d){
   if (!d || !d.jmena) return false;
@@ -602,7 +612,7 @@ function bodyDotazu(d){
    (naradiAI). Po odpovědi se provede akce posledního nástroje (glóbus, karta, srovnání). Zatím skryté: zapne se adresou
    #ai (pamatuje se, #ai-vyp vypne), porovnání modelů je #ai-test. Jen web, ne artefakt ani soubor z disku. */
 const AI_MOZNE = !ARTEFAKT && /^https?:$/.test(location.protocol);
-const SLOZITA_OTAZKA = /(nejvic|nejmin|nejvets|nejmens|kolik|ohrozen|vymrel|probouz|proc |proc$|jak |rozdil|spolecn|nareci|alespon|vic nez|mene nez|most|least|largest|smallest|how many|why|endangered|extinct|dialect|common|more than|at least|piu |meno |quant|perche|pericolo|estint|comune|differenz|dialett|almeno|meiste|wenigste|grosst|kleinst|wie viel|warum|bedroht|gefahrd|ausgestorb|gemeinsam|unterschied|dialekt|mindestens|mehr als|weniger als|le plus|plus de|moins de|combien|pourquoi|menace|eteint|au moins|differen|\d|הכי|כמה|בסכנה|נכחד|למה|מדוע|איך|הבדל|משות|ניבים|לפחות|יותר מ)/;   // i italsky a německy
+const SLOZITA_OTAZKA = /(nejvic|nejmin|nejvets|nejmens|kolik|ohrozen|vymrel|probouz|proc |proc$|jak |rozdil|spolecn|nareci|alespon|vic nez|mene nez|most|least|largest|smallest|how many|why|endangered|extinct|dialect|common|more than|at least|piu |meno |quant|perche|pericolo|estint|comune|differenz|dialett|almeno|meiste|wenigste|grosst|kleinst|wie viel|warum|bedroht|gefahrd|ausgestorb|gemeinsam|unterschied|dialekt|mindestens|mehr als|weniger als|le plus|plus de|moins de|combien|pourquoi|menace|eteint|au moins|differen|\d|הכי|כמה|בסכנה|נכחד|למה|מדוע|איך|הבדל|משות|ניבים|לפחות|יותר מ|最|多少|几|濒危|灭绝|为什么|怎么|区别|共同|方言|至少|超过|少于)/;   // i italsky a německy
 let aiZap = false;
 aiZap = AI_MOZNE;                               // od 1. 10. 2026 pro všechny; #ai-vyp vypne jen pro sebe
 try { if (localStorage.getItem("atlas-ai") === "0") aiZap = false; } catch (e) {}
@@ -1140,7 +1150,7 @@ $("hledej").addEventListener("input", function(e){ postavPolici(e.target.value);
 const TIP_POR = Math.floor(Math.random() * 7);
 function obnovTipHledani(){
   const b = $("hledej-tip"); if (!b) return;
-  const pr = aiZap ? T.hledejPriklady : ({cs: ["jazyky v Brazílii", "slovanské jazyky", "němčina a italština"], it: ["lingue del Brasile", "lingue slave", "tedesco e italiano"], de: ["Sprachen in Brasilien", "slawische Sprachen", "Deutsch und Italienisch"], fr: ["langues du Brésil", "langues slaves", "allemand et italien"], he: ["השפות בברזיל", "שפות סלאביות", "גרמנית ואיטלקית"]}[T.lang] || ["languages of Brazil", "Slavic languages", "German and Italian"]);
+  const pr = aiZap ? T.hledejPriklady : ({cs: ["jazyky v Brazílii", "slovanské jazyky", "němčina a italština"], it: ["lingue del Brasile", "lingue slave", "tedesco e italiano"], de: ["Sprachen in Brasilien", "slawische Sprachen", "Deutsch und Italienisch"], fr: ["langues du Brésil", "langues slaves", "allemand et italien"], he: ["השפות בברזיל", "שפות סלאביות", "גרמנית ואיטלקית"], zh: ["巴西的语言", "斯拉夫语言", "德语和意大利语"]}[T.lang] || ["languages of Brazil", "Slavic languages", "German and Italian"]);
   const q = pr[TIP_POR % pr.length];
   b.hidden = !!$("hledej").value;
   b.textContent = "✦ " + T.hledejTip + " ";
@@ -3296,6 +3306,7 @@ function ukazKartu(j){
   pz.style.fontSize = j.pis.length > 20 ? "1.5rem" : j.pis.length > 14 ? "1.85rem" : j.pis.length > 10 ? "2.2rem" : "";
   if (j.kod) pz.setAttribute("lang", j.kod); else pz.removeAttribute("lang");
   $("k-prepis").textContent = t("vyslovnost", {x: j.prep});
+  if (T.lang === "zh" && j.t.en.prep && j.t.en.prep !== j.prep) $("k-prepis").appendChild(prvek("span", "prepis-en", t("vyslovnostEn", {x: j.t.en.prep})));   // čínsky pinyinem i anglicky (uživatel 8. 11. 2026)
   tlPrehraj.hidden = !j.kod;
   popisPrehraj.textContent = T.poslechni;
 
@@ -3557,7 +3568,7 @@ function ukazKartuBodu(i){
 
   const o = oddil(T.odkazyPopis), odk = prvek("div", "odkazy");
   const jmL = T.lang !== "cs" && T.lang !== "en" && PD.nazvy && PD.nazvy[T.lang] ? PD.nazvy[T.lang][i] : "";   // italské jméno (CLDR)
-  const hledat = T.lang === "cs" && r[9] ? r[9] : jmL ? (T.lang === "de" ? jmL + " Sprache" : T.lang === "fr" ? "langue " + jmL : T.lang === "he" ? jmL : "lingua " + jmL) : B[i][0] + " language";
+  const hledat = T.lang === "cs" && r[9] ? r[9] : jmL ? (T.lang === "de" ? jmL + " Sprache" : T.lang === "fr" ? "langue " + jmL : T.lang === "he" || T.lang === "zh" ? jmL : "lingua " + jmL) : B[i][0] + " language";
   /* Wikidata říkají jen, jestli je článek česky (1) a anglicky (2); v italské a německé verzi proto hledání v tom jazyce, jinak anglický článek */
   let wiki = "https://" + T.wikiDomena + "/w/index.php?search=" + encodeURIComponent(hledat);
   const clanky = r[12] || 0;                            // 1 = článek na cs Wikipedii, 2 = na en
@@ -3612,7 +3623,7 @@ const adresa = location.pathname.replace(/index\.html$/, "");
 const korenWebu = VYCHOZI !== "cs" ? adresa.replace(new RegExp(VYCHOZI + "\\/$"), "") : adresa;
 /* na vlastních doménách leží každá verze na své: atlasjazyku.cz česky, thelanguageatlas.com anglicky (bez /en/),
    italsky thelanguageatlas.com/it/, německy thelanguageatlas.com/de/ */
-const DOMENY = { cs: "https://atlasjazyku.cz/", en: "https://thelanguageatlas.com/", it: "https://thelanguageatlas.com/it/", de: "https://thelanguageatlas.com/de/", fr: "https://thelanguageatlas.com/fr/", he: "https://thelanguageatlas.com/he/" };
+const DOMENY = { cs: "https://atlasjazyku.cz/", en: "https://thelanguageatlas.com/", it: "https://thelanguageatlas.com/it/", de: "https://thelanguageatlas.com/de/", fr: "https://thelanguageatlas.com/fr/", he: "https://thelanguageatlas.com/he/", zh: "https://thelanguageatlas.com/zh/" };
 const naDomene = /(^|\.)(atlasjazyku\.cz|thelanguageatlas\.com)$/.test(location.hostname);
 function korenVerze(l){ return naDomene ? DOMENY[l] : (l === "cs" ? korenWebu : korenWebu + l + "/"); }
 const odkazJinam = $("jazyk-prepinac");

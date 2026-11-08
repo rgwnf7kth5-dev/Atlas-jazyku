@@ -88,6 +88,7 @@
  "hledejPlaceholder": "Recherchez ou posez une question…",
  "domaciJmeno": "dans la langue elle-même : {x}",
  "vyslovnost": "prononciation : « {x} »",
+ "vyslovnostEn": "en anglais : « {x} »",
  "areal": "La surface colorée indique approximativement l’aire où la langue est parlée, et non une frontière nationale.",
  "aDalsich": "et {n} autres",
  "miliardy": [

@@ -50,6 +50,7 @@
  "hledejPlaceholder": "Search or ask a question…",
  "domaciJmeno": "in its own words: {x}",
  "vyslovnost": "say it: “{x}”",
+ "vyslovnostEn": "English respelling: “{x}”",
  "areal": "The coloured patch is the rough area where the language is spoken, not a country border.",
  "aDalsich": "and {n} more",
  "miliardy": [

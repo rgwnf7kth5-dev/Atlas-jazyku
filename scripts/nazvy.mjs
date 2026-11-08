@@ -36,7 +36,8 @@ const RUCNE = {
   it: { "Kosovo": "Kosovo", "Somaliland": "Somaliland" },
   de: { "Kosovo": "Kosovo", "Somaliland": "Somaliland" },
   fr: { "Kosovo": "Kosovo", "Somaliland": "Somaliland" },
-  he: { "Kosovo": "קוסובו", "Somaliland": "סומלילנד" }
+  he: { "Kosovo": "קוסובו", "Somaliland": "סומלילנד" },
+  zh: { "Kosovo": "科索沃", "Somaliland": "索马里兰" }
 };
 
 // --- glottocode → ISO 639-3 (Glottolog) a ISO 639-1 → 639-3
@@ -62,7 +63,10 @@ const z = JSON.parse(cti(`zeme-${L}.json`)).countries;
 const BEZNE = {
   de: { SY: "Syrien", TZ: "Tansania", US: "Vereinigte Staaten", UM: "Kleinere Amerikanische Überseeinseln", CZ: "Tschechien" },
   fr: { TZ: "Tanzanie", US: "États-Unis", CZ: "Tchéquie", CF: "République centrafricaine", DO: "République dominicaine", SZ: "Eswatini",
-        VG: "Îles Vierges britanniques", VI: "Îles Vierges des États-Unis", IO: "Territoire britannique de l’océan Indien" }
+        VG: "Îles Vierges britanniques", VI: "Îles Vierges des États-Unis", IO: "Territoire britannique de l’océan Indien" },
+  /* i18n-iso-countries má čínsky politicky zabarvené tvary („中国台湾省“, Západní Sahara jako SADR) – neutrální tvary
+     jako v čínských encyklopediích; Eswatini se tak jmenuje od 2018 */
+  zh: { TW: "台湾", EH: "西撒哈拉", SZ: "埃斯瓦蒂尼" }
 };
 const staty = Object.fromEntries(Object.entries(z).map(([k, v]) => [k, (BEZNE[L] || {})[k] || (Array.isArray(v) ? v[0] : v)]));
 const mapaStatu = json("data/podrobnosti.json").mapaStatu;

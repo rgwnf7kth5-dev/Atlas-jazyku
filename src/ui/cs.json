@@ -50,6 +50,7 @@
  "hledejPlaceholder": "Hledejte, nebo se zeptejte…",
  "domaciJmeno": "vlastním jménem: {x}",
  "vyslovnost": "čteme „{x}“",
+ "vyslovnostEn": "anglicky čteme „{x}“",
  "areal": "Barevná plocha na glóbu je přibližný jazykový areál, ne hranice státu.",
  "aDalsich": "a dalších {n}",
  "miliardy": [

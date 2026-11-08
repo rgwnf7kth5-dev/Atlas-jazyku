@@ -24,7 +24,7 @@ function tvar(lang, n, tvary) {
   if (lang === "cs" && n >= 2 && n <= 4) return tvary[1];
   return tvary[2];
 }
-const LOC = { cs: "cs-CZ", en: "en-GB", it: "it-IT", de: "de-DE", fr: "fr-FR", he: "he-IL" }, OG = { cs: "cs_CZ", en: "en_GB", it: "it_IT", de: "de_DE", fr: "fr_FR", he: "he_IL" };
+const LOC = { cs: "cs-CZ", en: "en-GB", it: "it-IT", de: "de-DE", fr: "fr-FR", he: "he-IL", zh: "zh-CN" }, OG = { cs: "cs_CZ", en: "en_GB", it: "it_IT", de: "de_DE", fr: "fr_FR", he: "he_IL", zh: "zh_CN" };
 function cislo(lang, n, des) { return n.toLocaleString(LOC[lang] || "en-GB", { minimumFractionDigits: des || 0, maximumFractionDigits: des || 0 }); }
 /* stejně jako lidi() v app.js: malá čísla přesně, velká zaokrouhleně */
 function lidi(lang, T, n) {
@@ -35,9 +35,9 @@ function lidi(lang, T, n) {
 }
 
 /* adresa stránky o civilizaci: /starovek/chetite/, /en/ancient/hittites/ */
-const starovekA = { cs: "/starovek/", en: "/en/ancient/", it: "/it/antichita/", de: "/de/antike/", fr: "/fr/antiquite/", he: "/he/ancient/" };
+const starovekA = { cs: "/starovek/", en: "/en/ancient/", it: "/it/antichita/", de: "/de/antike/", fr: "/fr/antiquite/", he: "/he/ancient/", zh: "/zh/ancient/" };
 /* Příběhy jazyků (sekce „pribehy“ v data/starovek.json): /pribehy/caj/, /en/stories/tea/ */
-const pribehyA = { cs: "/pribehy/", en: "/en/stories/", it: "/it/storie/", de: "/de/geschichten/", fr: "/fr/histoires/", he: "/he/stories/" };
+const pribehyA = { cs: "/pribehy/", en: "/en/stories/", it: "/it/storie/", de: "/de/geschichten/", fr: "/fr/histoires/", he: "/he/stories/", zh: "/zh/stories/" };
 const sekceA = c => c.sekce === "pribehy" ? pribehyA : starovekA;
 const civAdresa = (c, lang) => sekceA(c)[lang] + (c.adresa[lang] || c.adresa.en) + "/";   // bez vlastní adresy (he zatím) anglická
 export function vyrobStranky({ KOREN, WEB, NAHLED, UI, JAZYKY_WEBU, jmenoTecky, rodinyJ, jazyky: vsechnyJazyky, glottolog, podrobnosti, nazvyZemi, ikona, fontyOdkaz, verze, dny, starovek, sablonaStarovek, stylStarovek, cestySlov }) {
@@ -57,7 +57,7 @@ export function vyrobStranky({ KOREN, WEB, NAHLED, UI, JAZYKY_WEBU, jmenoTecky, 
   const bezRodu = new Set(BEZ_RODU.map(n => glottolog.rodiny.indexOf(n)));
 
   /* adresy stránek; jméno musí být jedinečné */
-  const JAZYK_A = { cs: "/jazyk/", en: "/en/language/", it: "/it/lingua/", de: "/de/sprache/", fr: "/fr/langue/", he: "/he/language/" };
+  const JAZYK_A = { cs: "/jazyk/", en: "/en/language/", it: "/it/lingua/", de: "/de/sprache/", fr: "/fr/langue/", he: "/he/language/", zh: "/zh/language/" };
   const adresy = Object.fromEntries(JAZYKY_WEBU.map(l => [l, {}]));
   for (const lang of JAZYKY_WEBU) {
     const videno = new Map();
@@ -69,9 +69,9 @@ export function vyrobStranky({ KOREN, WEB, NAHLED, UI, JAZYKY_WEBU, jmenoTecky, 
       adresy[lang][j.id] = JAZYK_A[lang] + s + "/";
     }
   }
-  const prehled = { cs: "/jazyky/", en: "/en/languages/", it: "/it/lingue/", de: "/de/sprachen/", fr: "/fr/langues/", he: "/he/languages/" }, oDatech = { cs: "/o-datech/", en: "/en/about-data/", it: "/it/sui-dati/", de: "/de/ueber-die-daten/", fr: "/fr/a-propos-des-donnees/", he: "/he/about-data/" },
-    kalendarA = { cs: "/kalendar-jazyku/", en: "/en/language-days/", it: "/it/giornate-delle-lingue/", de: "/de/sprachentage/", fr: "/fr/journees-des-langues/", he: "/he/language-days/" }, navodA = { cs: "/navod/", en: "/en/guide/", it: "/it/guida/", de: "/de/anleitung/", fr: "/fr/guide/", he: "/he/guide/" },
-    vitalitaA = { cs: "/vitalita/", en: "/en/vitality/", it: "/it/vitalita/", de: "/de/vitalitaet/", fr: "/fr/vitalite/", he: "/he/vitality/" }, domov = { cs: "/", en: "/en/", it: "/it/", de: "/de/", fr: "/fr/", he: "/he/" };
+  const prehled = { cs: "/jazyky/", en: "/en/languages/", it: "/it/lingue/", de: "/de/sprachen/", fr: "/fr/langues/", he: "/he/languages/", zh: "/zh/languages/" }, oDatech = { cs: "/o-datech/", en: "/en/about-data/", it: "/it/sui-dati/", de: "/de/ueber-die-daten/", fr: "/fr/a-propos-des-donnees/", he: "/he/about-data/", zh: "/zh/about-data/" },
+    kalendarA = { cs: "/kalendar-jazyku/", en: "/en/language-days/", it: "/it/giornate-delle-lingue/", de: "/de/sprachentage/", fr: "/fr/journees-des-langues/", he: "/he/language-days/", zh: "/zh/language-days/" }, navodA = { cs: "/navod/", en: "/en/guide/", it: "/it/guida/", de: "/de/anleitung/", fr: "/fr/guide/", he: "/he/guide/", zh: "/zh/guide/" },
+    vitalitaA = { cs: "/vitalita/", en: "/en/vitality/", it: "/it/vitalita/", de: "/de/vitalitaet/", fr: "/fr/vitalite/", he: "/he/vitality/", zh: "/zh/vitality/" }, domov = { cs: "/", en: "/en/", it: "/it/", de: "/de/", fr: "/fr/", he: "/he/", zh: "/zh/" };
   const proJazyk = (c, l) => !c.jazyky || c.jazyky.includes(l);   // stránka s polem jazyky jen v těch jazycích
   const vse = m => Object.fromEntries(JAZYKY_WEBU.map(l => [l, typeof m === "function" ? m(l) : m[l]]));   // adresy stránky ve všech jazycích
 
@@ -118,6 +118,7 @@ main{max-width:980px; margin:0 auto; padding:18px 20px 40px}
 @media (prefers-color-scheme:dark){.malba{filter:brightness(.85)}}
 .pozdrav{margin:0; font:600 clamp(2.6rem,6vw,3.6rem)/1.1 var(--nadpis)}
 .cteme{margin:4px 0 14px; font:italic 1.1rem var(--nadpis); color:var(--text2)}
+.cteme-en{font-size:.85em}
 h1{margin:0; font:600 2rem/1.2 var(--nadpis)}
 .domaci{margin:2px 0 18px; color:var(--text2)}
 .tl{display:inline-flex; align-items:center; gap:8px; padding:12px 22px; border-radius:999px; background:var(--akcent); color:#fff; text-decoration:none; font-weight:700}
@@ -269,7 +270,7 @@ ${JAZYKY_WEBU.map(l => `<link rel="alternate" hreflang="${l}" href="${WEB(alt[l]
 <body>
 <header class="hlava">
  <a class="domu" href="${domov[lang]}">${znak}<span>${escHtml(T.nazev)}</span></a>
- <nav class="jinam" aria-label="${escHtml(T.jazykVolba)}">${JAZYKY_WEBU.map(l => l === lang ? `<b aria-current="true">${l.toUpperCase()}</b>` : `<a href="${WEB(alt[l])}" hreflang="${l}" lang="${l}" title="${escHtml(UI[l].nazevJazyka)}">${l.toUpperCase()}</a>`).join("")}</nav>
+ <nav class="jinam" aria-label="${escHtml(T.jazykVolba)}">${JAZYKY_WEBU.map(l => l === lang ? `<b aria-current="true">${l === "zh" ? "中文" : l.toUpperCase()}</b>` : `<a href="${WEB(alt[l])}" hreflang="${l}" lang="${l}" title="${escHtml(UI[l].nazevJazyka)}">${l === "zh" ? "中文" : l.toUpperCase()}</a>`).join("")}</nav>
 </header>
 <main>
 ${obsah}
@@ -337,7 +338,7 @@ ${dlazdice(serazene)}`;
   <img class="malba" src="/malby/${j.id}.jpg" width="800" height="500" alt="${escHtml(S.malbaAlt.replace("{n}", P.nazev))}">
   <div>
    <p class="pozdrav" dir="auto" lang="${escHtml(j.kod || "")}">${escHtml(pozdrav)}</p>
-   ${P.vyslovnost ? `<p class="cteme">${escHtml(T.vyslovnost.replace("{x}", P.vyslovnost))}</p>` : ""}
+   ${P.vyslovnost ? `<p class="cteme">${escHtml(T.vyslovnost.replace("{x}", P.vyslovnost))}${lang === "zh" && j.en.vyslovnost && j.en.vyslovnost !== P.vyslovnost ? `<br><span class="cteme-en">${escHtml(T.vyslovnostEn.replace("{x}", j.en.vyslovnost))}</span>` : ""}</p>` : ""}
    <h1 id="listek-nazev">${escHtml(P.nazev)}</h1>
    ${j.domaci ? `<p class="domaci">${escHtml(T.domaciJmeno.replace("{x}", j.domaci))}</p>` : ""}
    <div class="akce">${tlacitkoZvuk(lang, j, false)}<a class="tl" href="${domov[lang]}#${j.id}">${escHtml(S.najit)}</a></div>

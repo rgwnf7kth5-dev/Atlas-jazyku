@@ -326,6 +326,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
 .pozdrav{font-family:"Noto Sans","Noto Sans Arabic","Noto Sans Devanagari","Noto Sans CJK SC","Segoe UI",system-ui,sans-serif;
   font-size:clamp(1.5rem,4.4vw,2.1rem); line-height:1.25; font-weight:800; margin:0; overflow-wrap:break-word; text-wrap:balance}
 .prepis{margin:3px 0 0; font-style:italic; font-weight:600; font-size:1rem; opacity:.85}
+.prepis-en{display:block; font-size:.85em; font-weight:500; opacity:.85}
 .prehraj{margin-top:12px; display:inline-flex; align-items:center; gap:7px; cursor:pointer; font-weight:700; font-size:.8rem;
   padding:7px 15px; border-radius:999px; background:var(--r-text); color:var(--r-barva); border:0; position:relative; z-index:1}
 .prehraj:hover{transform:scale(1.04)}
@@ -1464,3 +1465,14 @@ html[lang="en"] .do-ceka-otazka{quotes:"“" "”"} html[lang="it"] .do-ceka-ota
 [dir="rtl"] svg:has(use[href="#i-dal"]), [dir="rtl"] svg:has(use[href="#i-zpet"]){transform:scaleX(-1)}
 /* panely, jejichž texty jsou v etapě 1 ještě anglicky (putování, cesty slov, legendy map, karta písma): směr odstavce podle obsahu */
 [dir="rtl"] :is(#putovani-panel, #cesta-panel, .typ-legenda, #typ-legenda) :is(p, li, h2, h3, h4, b, small, span){unicode-bidi:plaintext}
+
+/* ---------- čínština (zjednodušené znaky, od 8. 11. 2026): systémová písma, Google Fonts se pro čínštinu nestahují
+   (velké soubory a v pevninské Číně blokované). Jen pro <html lang="zh">, aby japonské a korejské znaky v ostatních
+   verzích nedostaly čínské tvary. ---------- */
+:root:lang(zh){
+  --pismo-nadpis:"Playfair Display","Songti SC","STSong","Noto Serif CJK SC","Noto Serif SC","Source Han Serif SC","SimSun",serif;
+  --pismo-text:"Outfit","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC","Noto Sans SC","Source Han Sans SC",system-ui,sans-serif;
+  --pismo-data:"Outfit","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC","Noto Sans SC",system-ui,sans-serif;
+}
+:lang(zh) body{line-height:1.6}
+

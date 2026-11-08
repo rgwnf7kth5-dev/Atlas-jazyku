@@ -88,6 +88,7 @@
  "hledejPlaceholder": "חפשו או שאלו שאלה…",
  "domaciJmeno": "בשפה עצמה: {x}",
  "vyslovnost": "הגייה: \"{x}\"",
+ "vyslovnostEn": "באנגלית: \"{x}\"",
  "areal": "הכתם הצבעוני הוא האזור המשוער שבו מדברים בשפה, לא גבול של מדינה.",
  "aDalsich": "ועוד {n}",
  "miliardy": [

@@ -279,3 +279,6 @@
 .civ-pojmy dd{margin:4px 0 0; color:var(--civ-ink2)}
 .civ-pojem-priklad{display:block; margin-top:4px; font-size:.9rem; color:var(--civ-ink3)}
 .civ-pojem-priklad [class^="civ-"], .civ-pojmy dd [class^="civ-"]{font-size:1.4em; line-height:1.1}
+/* čínská verze: nadpisy patkovým systémovým písmem (Songti), text bezpatkovým */
+:lang(zh) .civ h1, :lang(zh) .civ h2, :lang(zh) .civ h3{font-family:"Playfair Display","Songti SC","STSong","Noto Serif CJK SC","Noto Serif SC","SimSun",serif}
+
