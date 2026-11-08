@@ -490,13 +490,22 @@
      "kod": "stan1293",
      "tvar": "coffee",
      "doba": {
-      "cs": "1582, z nizozemštiny",
-      "en": "1582, from Dutch",
-      "it": "1582, dall'olandese",
-      "de": "1582, aus dem Niederländischen",
-      "fr": "1582, du néerlandais",
-      "he": "1582, מהולנדית",
-      "zh": "1582年，来自荷兰语"
+      "cs": "1598, podoba coffee počátkem 17. století z nizozemštiny",
+      "en": "1598, the form coffee from Dutch in the early 17th century",
+      "it": "1598, la forma coffee dall'olandese all'inizio del XVII secolo",
+      "de": "1598, die Form coffee Anfang des 17. Jahrhunderts aus dem Niederländischen",
+      "fr": "1598, la forme coffee du néerlandais au début du XVIIe siècle",
+      "he": "1598, הצורה coffee מהולנדית בראשית המאה ה-17",
+      "zh": "1598年，coffee这一形式17世纪初来自荷兰语"
+     },
+     "pozn": {
+      "cs": "nejstarší doklad chaoua v anglickém překladu Linschotenova cestopisu",
+      "en": "earliest record chaoua, in the English translation of Linschoten's travels",
+      "it": "prima attestazione chaoua, nella traduzione inglese dei viaggi di Linschoten",
+      "de": "frühester Beleg chaoua, in der englischen Übersetzung von Linschotens Reisebericht",
+      "fr": "première attestation chaoua, dans la traduction anglaise du récit de voyage de Linschoten",
+      "he": "התיעוד הראשון chaoua, בתרגום האנגלי של מסעות לינסחוטן",
+      "zh": "最早的记载为林斯霍滕游记英译本中的chaoua"
      }
     }
    ]
