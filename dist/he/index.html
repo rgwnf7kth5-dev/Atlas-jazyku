@@ -1435,6 +1435,12 @@ dialog.ai-test td small{display:block; margin-top:4px; color:var(--text3)}
   .hlava .domu{min-width:0; flex:1 1 auto}
   .hlava h1{font-size:clamp(1.05rem,5.6vw,1.6rem); white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
   .jazyk-prepinac a{padding:0 6px; font-size:.72rem}
+  /* se sedmi jazyky (8. 11. 2026, čínština) se přepínač vedle názvu nevešel a název se zkracoval na „At…“:
+     přepínač má na telefonu vlastní řádek pod názvem, tlačítko vzhledu zůstává vpravo vedle názvu */
+  .hlava{flex-wrap:wrap; row-gap:8px}
+  .hlava .prepinac{order:2}
+  .jazyk-prepinac{order:3; flex:1 1 100%}
+  .jazyk-prepinac a{flex:1 1 0; padding:0 4px; font-size:.75rem}
   html[lang="it"] .hlava h1,html[lang="de"] .hlava h1{font-size:clamp(1rem,4.3vw,1.6rem)}   /* delší název se vejde celý */
   html[lang="it"] .domu .znak,html[lang="de"] .domu .znak{width:36px; height:36px}
   html[lang="it"] .domu,html[lang="de"] .domu{gap:8px}
@@ -2018,6 +2024,6 @@ html[lang="en"] .do-ceka-otazka{quotes:"“" "”"} html[lang="it"] .do-ceka-ota
  <dialog class="civ-okno" id="civ-okno" aria-labelledby="civ-nadpis"></dialog>
 </div>
 
-<script src="../js/atlas.a68c3e28af.js"></script>
+<script src="../js/atlas.4656398d02.js"></script>
 </body>
 </html>

@@ -54,7 +54,7 @@
    "nazev": "捷克语",
    "vyslovnost": "ˈa-hoi",
    "rodina": "印欧语系 – 斯拉夫语族",
-   "fakt": "“robot”（机器人）一词从捷克语传入许多语言。它由约瑟夫·恰佩克为其兄卡雷尔的剧作《R.U.R.》（1920）创造。"
+   "fakt": "“robot”（机器人）一词从捷克语传入许多语言。它由约瑟夫·恰佩克为其弟卡雷尔的剧作《R.U.R.》（1920）创造。"
   }
  },
  {
@@ -488,43 +488,43 @@
    "nazev": "Slovinština",
    "vyslovnost": "živjo",
    "rodina": "indoevropská – slovanská",
-   "fakt": "Slovinština zachovala dvojné číslo (duál): drevo – drevesi – drevesa, tedy jeden strom, dva stromy, tři a více stromů."
+   "fakt": "Slovinština zachovala dvojné číslo (duál): drevo – drevesi – drevesa, tedy jeden strom, dva stromy, tři nebo čtyři stromy (od pěti dreves)."
   },
   "en": {
    "nazev": "Slovene",
    "vyslovnost": "ZHEEV-yo",
    "rodina": "Indo-European – Slavic",
-   "fakt": "Slovene has kept the dual number: drevo – drevesi – drevesa, i.e. one tree, two trees, three or more trees."
+   "fakt": "Slovene has kept the dual number: drevo – drevesi – drevesa, i.e. one tree, two trees, three or four trees (from five on: dreves)."
   },
   "it": {
    "nazev": "Sloveno",
    "vyslovnost": "SGIV-io",
    "rodina": "indoeuropea – slava",
-   "fakt": "Lo sloveno ha conservato il duale: drevo – drevesi – drevesa, cioè un albero, due alberi, tre o più alberi."
+   "fakt": "Lo sloveno ha conservato il duale: drevo – drevesi – drevesa, cioè un albero, due alberi, tre o quattro alberi (da cinque in su: dreves)."
   },
   "de": {
    "nazev": "Slowenisch",
    "vyslovnost": "SCHIW-jo",
    "rodina": "indogermanisch – slawisch",
-   "fakt": "Das Slowenische hat den Dual bewahrt: drevo – drevesi – drevesa, also ein Baum, zwei Bäume, drei oder mehr Bäume."
+   "fakt": "Das Slowenische hat den Dual bewahrt: drevo – drevesi – drevesa, also ein Baum, zwei Bäume, drei oder vier Bäume (ab fünf: dreves)."
   },
   "fr": {
    "nazev": "Slovène",
    "vyslovnost": "JIV-yo",
    "rodina": "Indo-européenne – slave",
-   "fakt": "Le slovène a conservé le duel : drevo – drevesi – drevesa, c’est-à-dire un arbre, deux arbres, trois arbres ou plus."
+   "fakt": "Le slovène a conservé le duel : drevo – drevesi – drevesa, c’est-à-dire un arbre, deux arbres, trois ou quatre arbres (à partir de cinq : dreves)."
   },
   "he": {
    "nazev": "סלובנית",
    "vyslovnost": "ˈז׳יב-יו",
    "rodina": "הודו-אירופית – סלאבית",
-   "fakt": "הסלובנית שמרה על המספר הזוגי: drevo – drevesi – drevesa, כלומר עץ אחד, שני עצים, שלושה עצים או יותר."
+   "fakt": "הסלובנית שמרה על המספר הזוגי: drevo – drevesi – drevesa, כלומר עץ אחד, שני עצים, שלושה או ארבעה עצים (מחמישה ואילך: dreves)."
   },
   "zh": {
    "nazev": "斯洛文尼亚语",
    "vyslovnost": "ˈriv-yo",
    "rodina": "印欧语系 – 斯拉夫语族",
-   "fakt": "斯洛文尼亚语保留了双数：drevo – drevesi – drevesa，即一棵树、两棵树、三棵及以上的树。"
+   "fakt": "斯洛文尼亚语保留了双数：drevo – drevesi – drevesa，即一棵树、两棵树、三棵或四棵树（五棵及以上用dreves）。"
   }
  },
  {
@@ -1011,7 +1011,7 @@
   },
   "zh": {
    "nazev": "荷兰语",
-   "vyslovnost": "ˈha-lo",
+   "vyslovnost": "ha-ˈlo",
    "rodina": "印欧语系 – 日耳曼语族",
    "fakt": "英语的yacht、cookie和boss都来自荷兰语。荷兰语也是南美洲苏里南的官方语言。"
   }
@@ -1321,10 +1321,10 @@
    "fakt": "היא התפתחה מהניבים ההולנדיים של המתיישבים בכף מהמאה ה-17 ואילך, והוכרה רשמית כשפה תקנית נפרדת ב-1925."
   },
   "zh": {
-   "nazev": "南非语",
+   "nazev": "阿非利卡语",
    "vyslovnost": "ˈha-lo",
    "rodina": "印欧语系 – 日耳曼语族",
-   "fakt": "南非语从17世纪起由开普殖民者的荷兰语方言发展而来，1925年被正式承认为独立的标准语。"
+   "fakt": "阿非利卡语从17世纪起由开普殖民者的荷兰语方言发展而来，1925年被正式承认为独立的标准语。"
   }
  },
  {
@@ -4453,43 +4453,43 @@
    "nazev": "Telugština",
    "vyslovnost": "namaskáram",
    "rodina": "drávidská",
-   "fakt": "Téměř všechna slova končí samohláskou; proto telugštinu benátský cestovatel Niccolò de' Conti v 15. století nazval „italštinou Východu“."
+   "fakt": "Téměř všechna slova končí samohláskou; proto telugštinu benátský cestovatel Niccolò de' Conti v 15. století podle tradice nazval „italštinou Východu“."
   },
   "en": {
    "nazev": "Telugu",
    "vyslovnost": "nuh-mus-KAH-rum",
    "rodina": "Dravidian",
-   "fakt": "Nearly every word ends in a vowel, which is why the 15th-century Venetian traveller Niccolò de' Conti called Telugu “the Italian of the East”."
+   "fakt": "Nearly every word ends in a vowel, which is why the 15th-century Venetian traveller Niccolò de' Conti is said to have called Telugu “the Italian of the East”."
   },
   "it": {
    "nazev": "Telugu",
    "vyslovnost": "na-mas-KA-ram",
    "rodina": "dravidica",
-   "fakt": "Quasi ogni parola termina in vocale, ed è per questo che il viaggiatore veneziano del XV secolo Niccolò de’ Conti chiamò il telugu “l’italiano d’Oriente”."
+   "fakt": "Quasi ogni parola termina in vocale, ed è per questo che il viaggiatore veneziano del XV secolo Niccolò de’ Conti avrebbe chiamato il telugu “l’italiano d’Oriente”."
   },
   "de": {
    "nazev": "Telugu",
    "vyslovnost": "na-mas-KA-ram",
    "rodina": "drawidisch",
-   "fakt": "Fast jedes Wort endet auf einen Vokal, weshalb der venezianische Reisende Niccolò de' Conti im 15. Jahrhundert das Telugu „das Italienisch des Ostens“ nannte."
+   "fakt": "Fast jedes Wort endet auf einen Vokal, weshalb der venezianische Reisende Niccolò de' Conti im 15. Jahrhundert das Telugu der Überlieferung nach „das Italienisch des Ostens“ nannte."
   },
   "fr": {
    "nazev": "Télougou",
    "vyslovnost": "na-mas-KA-ram",
    "rodina": "Dravidienne",
-   "fakt": "Presque tous les mots se terminent par une voyelle ; c’est pourquoi le voyageur vénitien du XVe siècle Niccolò de' Conti appela le télougou « l’italien de l’Orient »."
+   "fakt": "Presque tous les mots se terminent par une voyelle ; c’est pourquoi le voyageur vénitien du XVe siècle Niccolò de' Conti aurait appelé le télougou « l’italien de l’Orient »."
   },
   "he": {
    "nazev": "טלוגו",
    "vyslovnost": "נה-מס-ˈקא-רם",
    "rodina": "דראווידית",
-   "fakt": "כמעט כל מילה מסתיימת בתנועה, ולכן כינה הנוסע הוונציאני בן המאה ה-15 ניקולו דה קונטי את הטלוגו “האיטלקית של המזרח”."
+   "fakt": "כמעט כל מילה מסתיימת בתנועה, ולכן, לפי המסורת, כינה הנוסע הוונציאני בן המאה ה-15 ניקולו דה קונטי את הטלוגו “האיטלקית של המזרח”."
   },
   "zh": {
    "nazev": "泰卢固语",
    "vyslovnost": "na-mas-ˈka-ram",
    "rodina": "达罗毗荼语系",
-   "fakt": "泰卢固语几乎每个词都以元音结尾，因此15世纪的威尼斯旅行家尼科洛·德·孔蒂（Niccolò de' Conti）称其为“东方的意大利语”。"
+   "fakt": "泰卢固语几乎每个词都以元音结尾，因此15世纪的威尼斯旅行家尼科洛·德·孔蒂（Niccolò de' Conti）据说称其为“东方的意大利语”。"
   }
  },
  {
@@ -4546,7 +4546,7 @@
   "zh": {
    "nazev": "日语",
    "vyslovnost": "kon-ni-qi-wa",
-   "rodina": "日本-琉球语系",
+   "rodina": "日琉语系",
    "fakt": "日语兼用三种文字：源自中国的汉字，以及平假名和片假名两种音节文字；在某些场合还使用拉丁字母。"
   }
  },
@@ -4790,7 +4790,7 @@
   },
   "zh": {
    "nazev": "土耳其语",
-   "vyslovnost": "mêr-ˈha-ba",
+   "vyslovnost": "ˈmêr-ha-ba",
    "rodina": "突厥语系",
    "fakt": "土耳其语是黏着语：语法意义通过一连串后缀表达，因此一个词可以相当于英语中的一整句话。"
   }
@@ -4861,7 +4861,7 @@
    "nazev": "阿塞拜疆语",
    "vyslovnost": "sa-ˈlam",
    "rodina": "突厥语系",
-   "fakt": "阿塞拜疆语和土耳其语同属突厥语族乌古斯语支，相互可懂度很高。"
+   "fakt": "阿塞拜疆语和土耳其语同属突厥语系乌古斯语支，相互可懂度很高。"
   }
  },
  {
@@ -5047,7 +5047,7 @@
   },
   "zh": {
    "nazev": "维吾尔语",
-   "vyslovnost": "yah-xi-mu-ˈsiz",
+   "vyslovnost": "yah-xi-mu-ˈxiz",
    "rodina": "突厥语系",
    "fakt": "维吾尔语是突厥语言，用改良的阿拉伯字母书写；与阿拉伯文不同，它始终标写元音。"
   }
@@ -5163,7 +5163,7 @@
   },
   "zh": {
    "nazev": "匈牙利语",
-   "vyslovnost": "ˈsi-ya",
+   "vyslovnost": "ˈxi-ya",
    "rodina": "乌拉尔语系",
    "fakt": "匈牙利语属于芬兰-乌戈尔语族；与它最接近的亲属语言是西西伯利亚的汉特语和曼西语。"
   }
@@ -5356,7 +5356,7 @@
   },
   "zh": {
    "nazev": "越南语",
-   "vyslovnost": "sin jao",
+   "vyslovnost": "xin jao",
    "rodina": "南亚语系",
    "fakt": "越南语用带附加符号的拉丁字母书写；一个字母上可以有两个符号，一个表示元音音质，一个表示声调。"
   }
@@ -6075,7 +6075,7 @@
    "fakt": "שפה קריאולית שאוצר המילים שלה בא ברובו מאנגלית, ואחת השפות הרשמיות של פפואה גינאה החדשה. שייכות מסומנת במילה “bilong”: “gras bilong fes” (זקן), מילולית “דשא של הפנים”."
   },
   "zh": {
-   "nazev": "托克皮辛语",
+   "nazev": "巴布亚皮钦语",
    "vyslovnost": "ˈgu-dê",
    "rodina": "以英语为基础的克里奥尔语",
    "fakt": "一种词汇大多来自英语的克里奥尔语，是巴布亚新几内亚的官方语言之一。所属关系用“bilong”表示：“gras bilong fes”（胡须），字面意为“脸上的草”。"
@@ -6934,7 +6934,7 @@
    "nazev": "迈蒂利语",
    "vyslovnost": "pra-ˈnam",
    "rodina": "印欧语系 – 印度-雅利安语支",
-   "fakt": "迈蒂利语传统上用提尔胡塔文书写，如今多用天城文。最著名的诗人是维德亚帕蒂（Vidyapati，14—15世纪）；自2003年起列入印度宪法附表语言。"
+   "fakt": "迈蒂利语传统上用迈蒂利文（Tirhuta）书写，如今多用天城文。其最著名的诗人是维德亚帕蒂（Vidyapati，14—15世纪）；自2003年起被列为印度宪法附表语言。"
   }
  },
  {
@@ -7810,10 +7810,10 @@
    "fakt": "התיגרינית היא השפה העיקרית של אריתריאה ושל חבל תיגראי באתיופיה. היא משתמשת באבוגידה של געז כמו האמהרית, הקרובה לה אך אינה מובנת הדדית."
   },
   "zh": {
-   "nazev": "提格利尼亚语",
-   "vyslovnost": "sê-ˈlam",
+   "nazev": "提格雷尼亚语",
+   "vyslovnost": "se-ˈlam",
    "rodina": "亚非语系 – 闪米特语族",
-   "fakt": "提格利尼亚语是厄立特里亚和埃塞俄比亚提格雷地区的主要语言。它与阿姆哈拉语一样使用吉兹元音附标文字；两者有亲缘关系，但不能互通。"
+   "fakt": "提格雷尼亚语是厄立特里亚和埃塞俄比亚提格雷地区的主要语言。它与阿姆哈拉语一样使用吉兹元音附标文字；两者有亲缘关系，但不能互通。"
   }
  },
  {
@@ -7941,10 +7941,10 @@
    "fakt": "הססותו היא שפה רשמית בלסוטו ובדרום אפריקה; מיסיונרים העלו אותה לראשונה על הכתב בשנות ה-30 של המאה ה-19. לסוטו היא המדינה העצמאית היחידה ששוכנת כולה בגובה של יותר מ-1,000 מ׳."
   },
   "zh": {
-   "nazev": "塞索托语",
+   "nazev": "索托语",
    "vyslovnost": "du-ˈmê-la",
    "rodina": "尼日尔-刚果语系 – 班图语支",
-   "fakt": "塞索托语是莱索托和南非的官方语言之一，19世纪30年代由传教士首次形诸文字。莱索托是唯一全境海拔都在1000米以上的独立国家。"
+   "fakt": "索托语是莱索托和南非的官方语言之一，19世纪30年代由传教士首次形诸文字。莱索托是唯一全境海拔都在1000米以上的独立国家。"
   }
  },
  {
@@ -8072,10 +8072,10 @@
    "fakt": "שמות באקאן מקודדים לעיתים קרובות את יום הלידה: קופי הוא בן שנולד ביום שישי (כמו קופי אנאן), ואמה – בת שנולדה בשבת."
   },
   "zh": {
-   "nazev": "阿肯语（契维语）",
+   "nazev": "阿坎语（契维语）",
    "vyslovnost": "ê-tê ˈsên",
    "rodina": "尼日尔-刚果语系",
-   "fakt": "阿肯人的名字常体现出生在星期几：Kofi是星期五出生的男孩（科菲·安南即是如此），Ama是星期六出生的女孩。"
+   "fakt": "阿坎人的名字常体现出生在星期几：Kofi是星期五出生的男孩（科菲·安南即是如此），Ama是星期六出生的女孩。"
   }
  },
  {
@@ -8414,7 +8414,7 @@
   "zh": {
    "nazev": "卡努里语",
    "vyslovnost": "na da",
-   "rodina": "撒哈拉语族",
+   "rodina": "撒哈拉语系",
    "fakt": "卡努里语是加涅姆-博尔努帝国的语言，该帝国是非洲存续最久的国家之一（9世纪至1893年）。卡努里语通行于乍得湖周边，乍得湖面积自20世纪60年代以来缩小了约90%。"
   }
  },
@@ -8533,7 +8533,7 @@
   },
   "zh": {
    "nazev": "卢森堡语",
-   "vyslovnost": "ˈmoi-ên",
+   "vyslovnost": "ˈmoi-en",
    "rodina": "印欧语系 – 日耳曼语族",
    "fakt": "卢森堡语长期被视为德语方言；1984年的一项法律承认其为国语。在卢森堡，法语和德语也是官方用语。"
   }
@@ -8656,10 +8656,10 @@
    "fakt": "הפריזית והאנגלית יוצרות את הענף האנגלו-פריזי של הגרמאנית המערבית, ולכן הפריזית מכונה לעיתים קרובות השפה הקרובה ביותר לאנגלית ביבשת אירופה."
   },
   "zh": {
-   "nazev": "西弗里西亚语",
+   "nazev": "西弗里斯兰语",
    "vyslovnost": "ˈgu-ye dai",
    "rodina": "印欧语系 – 日耳曼语族",
-   "fakt": "弗里西亚语与英语同属西日耳曼语支的盎格鲁-弗里西亚分支，因此弗里西亚语常被称为英语在欧洲大陆上最近的亲属。"
+   "fakt": "弗里斯兰语与英语同属西日耳曼语支的盎格鲁-弗里斯兰分支，因此弗里斯兰语常被称为英语在欧洲大陆上最近的亲属。"
   }
  },
  {
@@ -9128,7 +9128,7 @@
    "nazev": "意第绪语",
    "vyslovnost": "ˈsho-lem a-ˈlei-hem",
    "rodina": "印欧语系 – 日耳曼语族",
-   "fakt": "意第绪语是用希伯来字母书写的日耳曼语言，含有希伯来-阿拉米语和斯拉夫语成分。诺贝尔文学奖得主（1978年）艾萨克·巴什维斯·辛格用意第绪语写作。"
+   "fakt": "意第绪语是用希伯来字母书写的日耳曼语言，含有希伯来-阿拉米语和斯拉夫语成分。1978年诺贝尔文学奖得主艾萨克·巴什维斯·辛格用意第绪语写作。"
   }
  },
  {
@@ -9385,7 +9385,7 @@
   "zh": {
    "nazev": "奥塞梯语",
    "vyslovnost": "sa-ˈlam",
-   "rodina": "印欧语系 – 伊朗语族",
+   "rodina": "印欧语系 – 伊朗语支",
    "fakt": "奥塞梯语是高加索地区的一种伊朗语言，被认为源自阿兰人的语言，进而可追溯到萨尔马提亚人和斯基泰人的语言。"
   }
  },
@@ -10269,7 +10269,7 @@
   },
   "zh": {
    "nazev": "切罗基语",
-   "vyslovnost": "o-ˈsi-yo",
+   "vyslovnost": "o-ˈxi-yo",
    "rodina": "易洛魁语系",
    "fakt": "切罗基文是一种音节文字，由此前并不识字的塞阔雅（Sequoyah）于1821年前后创制。短短几年内，切罗基族中很大一部分人就能阅读。"
   }
@@ -10403,7 +10403,7 @@
   },
   "zh": {
    "nazev": "克里语",
-   "vyslovnost": "ˈta-ni-si",
+   "vyslovnost": "ˈta-ni-xi",
    "rodina": "阿尔吉克语系",
    "fakt": "克里语是加拿大使用人数最多的原住民语言。传教士詹姆斯·埃文斯（James Evans）于1840年前后为其创制了音节文字，后来又被改编用于伊努克提图特语。"
   }
@@ -10718,7 +10718,7 @@
   },
   "zh": {
    "nazev": "萨波特克语",
-   "vyslovnost": "pa-ˈdyu-shi",
+   "vyslovnost": "pa-ˈdiu-xi",
    "rodina": "奥托-曼格语系 – 萨波特克语族",
    "fakt": "萨波特克语实际上是一组相关语言。早在公元前1千纪，萨波特克人就已使用文字，这是中美洲最古老的文字之一。"
   }
@@ -10776,7 +10776,7 @@
   },
   "zh": {
    "nazev": "海地克里奥尔语",
-   "vyslovnost": "bon-ˈru",
+   "vyslovnost": "bong-ˈru",
    "rodina": "以法语为基础的克里奥尔语",
    "fakt": "海地克里奥尔语的词汇大多来自法语，语法则受西非语言影响。它自1987年起成为官方语言，几乎所有海地人都会说。"
   }

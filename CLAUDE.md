@@ -1,6 +1,6 @@
 # Atlas jazyků – pokyny pro Claude Code
 
-Encyklopedický atlas jazyků světa na otáčivém glóbu, česky, anglicky, od 2. 10. 2026 italsky, od 3. 10. 2026 německy a od 17. 10. 2026 francouzsky. Komunikuj česky.
+Encyklopedický atlas jazyků světa na otáčivém glóbu, česky, anglicky, od 2. 10. 2026 italsky, od 3. 10. 2026 německy, od 17. 10. 2026 francouzsky, od 26. 10. 2026 hebrejsky a od 8. 11. 2026 čínsky. Komunikuj česky.
 **Publikum od 26. 9. 2026: studenti a výš** – vysokoškoláci, učitelé, dospělí zájemci i odborníci (uživatel: „pro studenty a výše, nejenom pro ně“). Česky se vyká. Texty věcné,
 encyklopedické, odborné termíny s vysvětlením, bez zvolání, výzev („Zkus to vyslovit!“) a zdrobnělin. Samostatná
 **varianta pro děti** (jiná grafika, animace, obrázky, mnohem méně jazyků) je nápad uživatele **na později, ne teď**.
@@ -197,6 +197,47 @@ procentový řetězec, proto `stranky.mjs` bere slug z anglického názvu. LOCAL
 - Hranice (uživatel 26. 10. 2026: „je to soukromý projekt a ne blábol OSN“): **Severní Kypr je sloučený s Kyprem** (`hranice.mjs`),
   Golany zůstávají u Izraele a Somaliland samostatný, jak je měla mapa už dřív.
 - Artefakty v claude.ai hebrejštinu neobsahují (jen cs a en).
+
+## Čínská verze (od 8. 11. 2026)
+
+Uživatel: „bylo by možné udělat jazykovou verzi stránky v čínštině?“, pak volby **zjednodušené znaky** a **výslovnost pinyinem
+i anglicky**. Adresa **thelanguageatlas.com/zh/** (`dist/zh/`), `<html lang="zh">`, přepínač ukazuje **中文** (ne „ZH“, i na
+statických stránkách), název **语言地图集**, LOCALE `zh_CN`. Statické stránky mají anglické cesty jako hebrejština
+(`/zh/language/<name>/`, `/zh/languages/`, `/zh/about-data/`, `/zh/language-days/`, `/zh/guide/`, `/zh/vitality/`, `/zh/ancient/`,
+`/zh/stories/`). Čtenář z pevninské Číny a Singapuru: tam jsou Google Fonts a Wikipedie blokované – web funguje i bez nich.
+- **Etapa 1 (8. 11. 2026)**: rozhraní `src/ui/zh.json` (772 textů), 164 karet (`zh` za `he` v languages.json), rodiny a větve
+  `glottolog-*.zh.json` (…语系, …语族/语支/亚语支, technické uzly …语群), názvy z CLDR (`node scripts/nazvy.mjs zh`). Pět překladatelů,
+  tři nezávislé kontroly (rozhraní 17 oprav, karty 33, CLDR 129). **Etapa 2 (starověk, Příběhy, putování, cesty slov, dny, písma,
+  typologie, vymyšlené jazyky) zatím chybí** – ukazuje se anglicky; postup jako u hebrejštiny (`he2/` ve scratchpadu: vytahni, kontrola,
+  oprava, sjednoceni, vloz – jen místo `he` za `fr` vložit `zh` za `he`). Vymyšlené jazyky a několik stránek starověku mají aspoň
+  čínská hledací slova (`hledat`), aby fungovaly příklady z návodu (埃及, 茶, 精灵, 克林贡).
+- **Výslovnost na kartě: pinyinem a pod ní anglicky** (`vyslovnostEn`, `.prepis-en` v app.js, `.cteme-en` ve stranky.mjs; klíč
+  `vyslovnostEn` mají všechna rozhraní, používá ho jen čínština). Pravidla zápisu (dohodnutá napříč kartami, kontrola je sjednotila):
+  hodnoty písmen jako v pinyinu, slabiky spojovníkem, **přízvuk ˈ před slabikou** (čínští studenti ho znají z anglických slovníků),
+  bez tónů; [e]/[ɛ] = ê, šva = e, [dʒ] = zh (před i j), [tʃ] = ch, [ʃ] = sh, [ʒ] = r, [si] = xi (pinyinové si/shi/zi nemají [i]),
+  [ju] = you. Čínské jazyky: `zh` pinyin s tóny (nǐ hǎo), `yue` jyutping s čísly, `nan` Tâi-lô, `hak` Pha̍k-fa-sṳ, `wuu` bez tónů.
+  Karta mandarínštiny se jmenuje **官话（普通话）**, tečka `mand1415` 官话. Záložní hlas výslovnosti čte v čínské verzi **anglickou
+  výslovnost anglickým hlasem** (čínský hlas by pinyinový přepis cizího pozdravu četl špatně).
+- **Písma**: žádná webová písma pro čínštinu; `:root:lang(zh)` v styles.css přidá do `--pismo-*` systémová (PingFang SC, Hiragino
+  Sans GB, Microsoft YaHei, Noto Sans CJK SC; nadpisy Songti SC / Noto Serif CJK SC). Jen pro `lang="zh"`, aby japonské a korejské
+  znaky jinde nedostaly čínské tvary.
+- **Hledání** (čínština nepíše mezery): `zhRozdel` v `dotazSlova` rozdělí dotaz kolem pomocných a tázacích slov (`ZH_CASTICE`:
+  的 在 和 与 语言 哪里 欧盟 官方 成员国…; 共和国 se předem schová, jinak by 和 rozbilo 中非共和国), u názvů se nedělí
+  (`dotazSlova(nazev, true)`). `shodaSlova1` porovnává čínsky celé úseky a toleruje koncovky 语系/语族/语支/语群/语言/语/人
+  (斯拉夫 = 斯拉夫语族). Jednoslovný čínský dotaz stačí od 3 znaků (印欧语系). Aliasy států 中非共和国, 刚果民主共和国, 捷克共和国…
+  EU: 欧盟, 官方, 成员国. Ověřené dotazy: 巴西的语言, 以色列的语言, 哪里说波斯语, 斯拉夫语言, 德语和意大利语, 欧盟官方语言,
+  中非共和国的语言, 印欧语系; AI odpovídá zjednodušenou čínštinou.
+- **Čísla a interpunkce**: počty lidí po 万 a 亿 (`lidi()` v app.js i stranky.mjs: 25万, 1200万, 12亿); texty skládané kódem mají
+  v čínštině plnošířkovou interpunkci (`zavorka`, `vycet`, `tecka` v app.js: 汉藏语系（518）, 拉丁文、西里尔文, 。). „279 种语言“ s mezerou
+  mezi číslem a znakem je záměr (běžná moderní sazba).
+- **Názvy z CLDR**: i18n-iso-countries má čínsky politicky zabarvené tvary – `BEZNE.zh` v nazvy.mjs je nahrazuje neutrálními
+  (TW **台湾**, ne 中国台湾省; EH **西撒哈拉**, ne název SADR; SZ 埃斯瓦蒂尼). Ruční opravy jazyků a písem (chybné tvary jako
+  遗传学术语 „genetický termín“ u Zinh, 种子 „semeno“ v názvu jazyka; sjednocení teček s kartami; 30 teček bez CLDR jména doplněno)
+  jsou v **`data/nazvy-zh-opravy.json`**.
+- **Záhlaví na telefonu** (≤ 620 px): se sedmi jazyky se přepínač nevešel vedle názvu a název se zkracoval na „At…“ ve všech jazycích;
+  přepínač má teď vlastní řádek pod názvem.
+- Při překladu opraveno i v ostatních jazycích: bengálština NO-mosh-kar (překlep), arménské Barev s přízvukem na konci, katalánské hola
+  OH-luh, slovinský duál „tři nebo čtyři stromy (od pěti dreves)“, Conti a „italština Východu“ jen podle tradice (primární doklad chybí).
 
 ## Struktura a pravidla
 
