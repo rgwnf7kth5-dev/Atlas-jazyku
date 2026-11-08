@@ -124,6 +124,9 @@ if (pd.uzly.length !== pd.nad.length) chyby.push("data/podrobnosti.json: strom p
   const app = fs.readFileSync(path.join(path.dirname(new URL(import.meta.url).pathname), "..", "src", "app.js"), "utf8"), barvaOk = (k, kde) => {
     if (!css.includes("--put-" + k + ":")) chyby.push(`${co}: ${kde} – barva --put-${k} není v styles.css`);
     else if (!app.includes('"put-' + k + '"')) chyby.push(`${co}: ${kde} – barva put-${k} chybí ve výčtu barev v nactiBarvy (src/app.js)`); };
+  /* deklarace --put-* mimo blok {} prohlížeč zahodí i s pravidlem za ní (25. 10. 2026 tak zmizely barvy němčiny, španělštiny a celá denní sada) */
+  { let hloubka = 0, i = 0; const bezKom = css.replace(/\/\*[\s\S]*?\*\//g, m => " ".repeat(m.length));
+    for (const m of bezKom.matchAll(/[{}]|--put-[a-z0-9]+\s*:/g)) { if (m[0] === "{") hloubka++; else if (m[0] === "}") { if (--hloubka < 0) { chyby.push("src/styles.css: nadbytečná } (kus pravidla bez selektoru) – prohlížeč zahodí pravidlo za ní"); hloubka = 0; } } else if (hloubka < 1) { chyby.push(`src/styles.css: ${m[0]} stojí mimo blok {} – prohlížeč ji zahodí`); if (++i > 3) break; } } }
   const atlas = new Set(jazyky.map(j => j.id)), dvojj = (x, kde) => { if (!x || !x.cs || !x.en) chyby.push(`${co}: ${kde} nemá text cs i en`); };
   const souradnice = (b, kde) => { if (!Array.isArray(b) || !(b[0] >= -180 && b[0] <= 180 && b[1] >= -90 && b[1] <= 90)) chyby.push(`${co}: ${kde} má chybné souřadnice`); };
   for (const j of d.jazyky) {
