@@ -13,7 +13,7 @@
    },
    "krajina": "pisarna",
    "prehled": true,
-   "hledat": "rodokmen pisem family tree of scripts abeceda alphabet puvod pisma origin of writing abdzad abjad abugida hieroglyfy hieroglyphs protosinajske proto-sinaitic fenicke phoenician aramejske aramaic brahmi runy runes ogam ogham hlaholice glagolitic cyrilice cyrillic klinove pismo cuneiform kral king",
+   "hledat": "rodokmen pisem family tree of scripts abeceda alphabet puvod pisma origin of writing abdzad abjad abugida hieroglyfy hieroglyphs protosinajske proto-sinaitic fenicke phoenician aramejske aramaic brahmi runy runes ogam ogham hlaholice glagolitic cyrilice cyrillic klinove pismo cuneiform kral king 文字 谱系 字母",
    "tecky": [],
    "pisma": [
     "Noto Sans Egyptian Hieroglyphs",
@@ -6211,7 +6211,7 @@
     "he": "sumer-and-akkad"
    },
    "krajina": "mezopotamie",
-   "hledat": "sumer akkad mezopotamie mesopotamia sumerstina sumerian akkadstina akkadian babylon asyrie assyria klinove pismo cuneiform gilgames gilgamesh chammurapi hammurabi",
+   "hledat": "sumer akkad mezopotamie mesopotamia sumerstina sumerian akkadstina akkadian babylon asyrie assyria klinove pismo cuneiform gilgames gilgamesh chammurapi hammurabi 苏美尔 阿卡德 楔形文字 美索不达米亚",
    "tecky": [
     "sume1241",
     "akka1240",
@@ -8402,7 +8402,7 @@
     "he": "egypt"
    },
    "krajina": "egypt",
-   "hledat": "egypt egyptstina egyptian hieroglyfy hieroglyphs koptstina coptic rosetta champollion faraon pharaoh nil nile pyramidy מצרים מצרית הירוגליפים",
+   "hledat": "egypt egyptstina egyptian hieroglyfy hieroglyphs koptstina coptic rosetta champollion faraon pharaoh nil nile pyramidy מצרים מצרית הירוגליפים 埃及 古埃及 象形文字",
    "tecky": [
     "egyp1246",
     "copt1239"
@@ -17556,7 +17556,7 @@
     "he": "hittites"
    },
    "krajina": "chattusa",
-   "hledat": "chetite chetitstina hittite hittites chattusa hattusa hrozny luvijstina luwian anatolie anatolia",
+   "hledat": "chetite chetitstina hittite hittites chattusa hattusa hrozny luvijstina luwian anatolie anatolia 赫梯 赫梯人 赫梯语",
    "tecky": [
     "hitt1242",
     "cune1239",
@@ -20186,7 +20186,7 @@
     "he": "china"
    },
    "krajina": "sang",
-   "hledat": "cina china cinstina chinese stara cinstina old chinese klasicka cinstina classical chinese literary chinese cinske znaky chinese characters hanzi vestebne kosti oracle bones jiaguwen sang shang jin-su yinxu an-jang anyang bronz bronze jinwen mao-kung ting mao gong ding cchin qin li si pecetni pismo seal script kancelarske pismo li-su clerical script suo-wen shuowen su sen xu shen konfucius confucius bambus bamboo kuo-tien guodian",
+   "hledat": "cina china cinstina chinese stara cinstina old chinese klasicka cinstina classical chinese literary chinese cinske znaky chinese characters hanzi vestebne kosti oracle bones jiaguwen sang shang jin-su yinxu an-jang anyang bronz bronze jinwen mao-kung ting mao gong ding cchin qin li si pecetni pismo seal script kancelarske pismo li-su clerical script suo-wen shuowen su sen xu shen konfucius confucius bambus bamboo kuo-tien guodian 中国 古代中国 甲骨文 汉字",
    "tecky": [
     "oldc1244",
     "lite1248",
@@ -25445,7 +25445,7 @@
     "he": "hebrews"
    },
    "krajina": "kumran",
-   "hledat": "hebrejci hebrejstina hebrejske pismo aramejci aramejstina hebrews hebrew aramaic arameans paleohebrejske paleo-hebrew ctvercove pismo square script kumran qumran svitky mrtve more dead sea scrolls izaias isaiah masoreti masoretes nikud niqqud aleppo kodex codex siloam siloe gezer mesa mesha tel dan syrstina syriac nabatejci nabataean palmyra ben jehuda yehuda",
+   "hledat": "hebrejci hebrejstina hebrejske pismo aramejci aramejstina hebrews hebrew aramaic arameans paleohebrejske paleo-hebrew ctvercove pismo square script kumran qumran svitky mrtve more dead sea scrolls izaias isaiah masoreti masoretes nikud niqqud aleppo kodex codex siloam siloe gezer mesa mesha tel dan syrstina syriac nabatejci nabataean palmyra ben jehuda yehuda 希伯来 希伯来人 阿拉姆",
    "tecky": [
     "anci1244",
     "hebr1245",
@@ -29492,7 +29492,7 @@
     "he": "greece"
    },
    "krajina": "akropole",
-   "hledat": "recko greece recka starorectina greek linearni pismo b linear b ventris mykeny mycenae kreta crete alfabeta alphabet hlaholice",
+   "hledat": "recko greece recka starorectina greek linearni pismo b linear b ventris mykeny mycenae kreta crete alfabeta alphabet hlaholice 希腊 古希腊 线形文字",
    "tecky": [
     "myce1241",
     "anci1242",
@@ -41628,7 +41628,7 @@
     "he": "rome"
    },
    "krajina": "forum",
-   "hledat": "rim rome rimska rise roman empire latina latin latinka latin alphabet stara latina old latin klasicka latina classical latin vulgarni latina vulgar latin romanske jazyky romance languages lapis niger duenos praeneste fibula spona scipio augustus res gestae trajan trajanuv sloup vindolanda pompeje pompeii vergilius strasburske prisahy oaths of strasbourg etruskove etruscans",
+   "hledat": "rim rome rimska rise roman empire latina latin latinka latin alphabet stara latina old latin klasicka latina classical latin vulgarni latina vulgar latin romanske jazyky romance languages lapis niger duenos praeneste fibula spona scipio augustus res gestae trajan trajanuv sloup vindolanda pompeje pompeii vergilius strasburske prisahy oaths of strasbourg etruskove etruscans 罗马 古罗马 拉丁语",
    "tecky": [
     "lati1261",
     "osca1245",
@@ -55717,7 +55717,7 @@
     "he": "korea"
    },
    "krajina": "kjongbok",
-   "hledat": "korea korejstina korean hangul hangeul cosongul chosongul joseongeul hanca hanja hanmun idu hjangccal hyangchal hjangga hyangga kugjol gugyeol sedzong sejong hunmin congum hunminjeongeum harje haerye onha eonhae cikci jikji tripitaka koreana haeinsa hainsa kwanggatcho gwanggaeto stela stele kogurjo goguryeo silla pakce baekje korjo goryeo coson joseon kjongbokkung gyeongbokgung jongbi occhonga yongbieocheonga cchomalli choe malli jonsangun yeonsangun cedzustina cedzu jeju den hangulu hangul day kimci kimchi taekwondo slabicne bloky syllable blocks kovove litery metal type",
+   "hledat": "korea korejstina korean hangul hangeul cosongul chosongul joseongeul hanca hanja hanmun idu hjangccal hyangchal hjangga hyangga kugjol gugyeol sedzong sejong hunmin congum hunminjeongeum harje haerye onha eonhae cikci jikji tripitaka koreana haeinsa hainsa kwanggatcho gwanggaeto stela stele kogurjo goguryeo silla pakce baekje korjo goryeo coson joseon kjongbokkung gyeongbokgung jongbi occhonga yongbieocheonga cchomalli choe malli jonsangun yeonsangun cedzustina cedzu jeju den hangulu hangul day kimci kimchi taekwondo slabicne bloky syllable blocks kovove litery metal type 朝鲜 韩国 谚文",
    "tecky": [
     "kore1280",
     "jeju1234"
@@ -62194,7 +62194,7 @@
     "he": "japan"
    },
    "krajina": "heian",
-   "hledat": "japonsko japan japonstina japanese stara japonstina old japanese kanji kandzi kana hiragana katakana manjogana manyogana man'yogana manjosu manyoshu man'yoshu kodziki kojiki nihon soki nihon shoki mokkan kanbun kundoku kaeriten kun'jomi kunyomi on'jomi onyomi heian nara kjoto kyoto murasaki sikibu shikibu gendzi genji tosa nikki curajuki tsurayuki kokinsu kokinshu kokin wakashu kanadzo kanajo iroha kukai godzuon gojuon hentaigana romadzi romaji hepburn inarijama inariyama horjudzi horyuji kacura-bon katsura-bon rjukju ryukyu okinawstina okinawan hacidzo hachijo ainstina ainu kimono tsunami cunami karaoke emodzi emoji samuraj samurai",
+   "hledat": "japonsko japan japonstina japanese stara japonstina old japanese kanji kandzi kana hiragana katakana manjogana manyogana man'yogana manjosu manyoshu man'yoshu kodziki kojiki nihon soki nihon shoki mokkan kanbun kundoku kaeriten kun'jomi kunyomi on'jomi onyomi heian nara kjoto kyoto murasaki sikibu shikibu gendzi genji tosa nikki curajuki tsurayuki kokinsu kokinshu kokin wakashu kanadzo kanajo iroha kukai godzuon gojuon hentaigana romadzi romaji hepburn inarijama inariyama horjudzi horyuji kacura-bon katsura-bon rjukju ryukyu okinawstina okinawan hacidzo hachijo ainstina ainu kimono tsunami cunami karaoke emodzi emoji samuraj samurai 日本 假名",
    "tecky": [
     "nucl1643",
     "oldj1239",
@@ -68052,7 +68052,7 @@
     "he": "maya"
    },
    "krajina": "maya",
-   "hledat": "mayove maya mayan mayska maystina mayske pismo maya script glyfy kodex codex palenque pakal tikal knorozov yucatan guatemala",
+   "hledat": "mayove maya mayan mayska maystina mayske pismo maya script glyfy kodex codex palenque pakal tikal knorozov yucatan guatemala 玛雅",
    "tecky": [
     "epig1241",
     "chor1273",
@@ -76244,7 +76244,7 @@
     "he": "tea"
    },
    "krajina": "cajovnik",
-   "hledat": "caj tea cha te chai cajovnik tea plant putovni slovo wanderwort travelling word migrant word vypujcka prejate slovo loanword kognat cognate kalk calque etymologie etymology cinstina chinese mandarinstina mandarin min nan southern min amoy sia-men xiamen kantonstina cantonese macao portugalstina portuguese nizozemska vychodoindicka spolecnost dutch east india company persstina persian rustina russian cestina czech herbata wals dahl kava coffee cukr sugar pomeranc orange oranzovy rajce tomato cokolada chocolate תה",
+   "hledat": "caj tea cha te chai cajovnik tea plant putovni slovo wanderwort travelling word migrant word vypujcka prejate slovo loanword kognat cognate kalk calque etymologie etymology cinstina chinese mandarinstina mandarin min nan southern min amoy sia-men xiamen kantonstina cantonese macao portugalstina portuguese nizozemska vychodoindicka spolecnost dutch east india company persstina persian rustina russian cestina czech herbata wals dahl kava coffee cukr sugar pomeranc orange oranzovy rajce tomato cokolada chocolate תה 茶 茶叶",
    "tecky": [
     "minn1241",
     "mand1415",

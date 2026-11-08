@@ -1,6 +1,1114 @@
 {
+ "domu": "语言地图集 – 返回首页",
+ "denJazykuZavrit": "关闭",
+ "denJazykuDatum": "9月26日 · 欧洲语言日",
+ "denJazykuText": "为什么是今天？9月26日是欧洲语言日，由欧洲委员会于2001年设立。这一天旨在彰显欧洲的语言多样性（欧洲约有225种本土语言），并鼓励语言学习。因此，本图集今天不展示单独的“今日语言”，而是展示所收录的全部{n}种欧洲语言。",
+ "denJazykuEU": "欧盟的24种语言",
+ "napoveda": "帮助",
+ "krokZatoc": "旋转",
+ "krokZatocJak": "– 用鼠标或手指拖动",
+ "krokPribliz": "缩放",
+ "krokPriblizJak": "– 鼠标滚轮或双指",
+ "krokKlikni": "选择",
+ "krokKlikniJak": "– 点击光点打开语言卡片，点击国家查看该国使用的语言",
+ "krokKlikniJakDen": "– 点击圆点打开语言卡片，点击国家查看该国使用的语言",
+ "napovedaZavrit": "关闭提示",
  "lang": "zh",
+ "locale": "zh-CN",
  "nazevJazyka": "简体中文",
  "nazev": "语言地图集",
- "wikiDomena": "zh.wikipedia.org"
+ "popis": "依据Glottolog收录世界全部7967种语言的交互式地图集：分布、语系与谱系树、语言活力、源自WALS的语言类型学数据以及源自PHOIBLE的音位清单。",
+ "jazykVolba": "网站语言",
+ "scena": "地球仪",
+ "platno": "旋转的地球仪；所选语言的分布区域以高亮显示",
+ "prekvap": "随机语言",
+ "celySvet": "全世界",
+ "zoomSkupina": "地球仪缩放",
+ "oddalit": "缩小",
+ "priblizit": "放大",
+ "vypadekNadpis": "地球仪无法启动。",
+ "vypadekText": "语言列表和语言卡片仍可正常使用。请尝试重新加载页面。",
+ "zavritKartu": "关闭语言卡片",
+ "poslechni": "播放发音",
+ "posloucha": "正在播放……",
+ "znovu": "再播放一次",
+ "mluvcich": "使用人数",
+ "rodina": "语系",
+ "vis": "注释",
+ "kdeMluvi": "使用地区",
+ "seznam": "语言列表",
+ "hledejPopisek": "搜索语言",
+ "dotazZeme": "{z}的语言",
+ "dotazPocet": "据Glottolog，地球仪上有{n}。",
+ "dotazRodina": "语系：{r}",
+ "dotazVetev": "分支：{r}",
+ "dotazVRodine": "属于{r}",
+ "dotazSrovnani": "比较：{a}与{b}",
+ "dotaz": {
+  "aiStitek": "询问AI",
+  "aiNabidka": "AI将根据本图集的数据回答这个问题，图集中没有的内容会到网上查找。",
+  "aiZeptat": "询问AI",
+  "aiKrokCte": "正在阅读问题",
+  "aiKrokData": "正在检索图集数据",
+  "aiKrokOdpoved": "正在撰写回答",
+  "aiCas": "{s}秒 · 可能需要一点时间",
+  "aiPremyslim": "正在思考……",
+  "aiPozn": "此回答由AI（Claude）根据图集数据撰写，可能有误。",
+  "aiVypnuto": "AI问答尚未开启。",
+  "aiLimit": "同时提问过多，请稍后再试。",
+  "aiChyba": "未能获得回答，请重试。",
+  "aiOdmitnuto": "AI不回答这个问题。",
+  "aiNic": "AI未在图集数据中找到答案。",
+  "euPopis": "24种语言，27个成员国。地球仪上以金色星标标出。",
+  "euStaty": "欧盟成员国的语言",
+  "euStatyPopis": "在多个国家使用的语言只计一次。欧盟有24种官方语言。",
+  "aiKrokWeb": "正在网上搜索",
+  "aiZdrojeWeb": "网络来源",
+  "aiPoznWeb": "此回答由AI（Claude）根据图集数据和网络资料撰写，可能有误。",
+  "stitek": "已理解",
+  "ukaz": "在地球仪上显示",
+  "porovnej": "比较",
+  "otevri": "打开语言卡片",
+  "zemeBezKodu": "登记册中没有这个国家的代码，因此只显示图集收录的语言。",
+  "ugrofin": "Glottolog不把芬兰-乌戈尔语族列为单独的分支：这些语言与萨莫耶德诸语言一起属于乌拉尔语系。",
+  "srovnaniPopis": "亲缘关系与最近共同祖先、WALS中的语言结构、使用人数和文字。",
+  "jazykPopis": "卡片列出使用该语言的国家，并在地球仪上显示其分布区域。",
+  "zdroj": "仅根据图集数据（Glottolog、CLDR、WALS）作答。按Enter键执行。"
+ },
+ "hledejTip": "试试：",
+ "hledejPriklady": [
+  "伯尔尼说什么语言？",
+  "哪种语言的方言最多？",
+  "墨西哥有哪些濒危语言？",
+  "匈牙利语和芬兰语有什么共同点？",
+  "哪个国家的语言最多？",
+  "格鲁吉亚语用什么文字书写？",
+  "罗马尼亚语是斯拉夫语言吗？"
+ ],
+ "hledejPlaceholder": "搜索或提问……",
+ "domaciJmeno": "自称：{x}",
+ "vyslovnost": "读作：“{x}”",
+ "vyslovnostEn": "英语读法：“{x}”",
+ "areal": "彩色区域是该语言大致的使用范围，并非国界。",
+ "aDalsich": "另有{n}个",
+ "miliardy": [
+  "十亿",
+  "十亿",
+  "十亿",
+  "十亿"
+ ],
+ "milionu": [
+  "百万",
+  "百万",
+  "百万",
+  "百万"
+ ],
+ "tisic": [
+  "千",
+  "千",
+  "千"
+ ],
+ "hrstka": "仅剩少数使用者",
+ "nicNenalezeno": "没有结果。可以搜索语言、国家或方言，例如“巴西”“克丘亚语”或“苏格兰语”。",
+ "nalezeno": "找到{a}，其中{b}种附有问候语",
+ "vychoziPocet": "{a} · 其中{b}种附有问候语",
+ "zemeBezPozdravu": "图集中暂无这个国家附有详细卡片的语言。点击光点可打开各个语言。",
+ "tecka": "名称取自Glottolog世界语言登记册",
+ "teckaPozn": "本图集为164种精选语言提供问候语、读音和注释；这种语言暂未收录其中。",
+ "zvukNeumi": "此设备不支持语音合成。近似读音：“{x}”。",
+ "zvukRodily": "由您设备上该语言的合成语音朗读。",
+ "zvukZalozni": "您的设备没有这种语言的语音，因此近似读音由中文语音朗读。实际发音与此不同。",
+ "zvukZadny": "您的设备没有语音合成语音。近似读音：“{x}”。",
+ "zvukChyba": "播放失败。近似读音：“{x}”。",
+ "hlasZalozni": "zh-CN",
+ "zdroje": "圆点：Glottolog（CC BY 4.0） · 语法：WALS（CC BY 4.0） · 语音：PHOIBLE（CC BY-SA 3.0） · 地图：Natural Earth",
+ "rodiny": {
+  "ie": "印欧语系",
+  "st": "汉藏语系",
+  "an": "南岛语系",
+  "afro": "亚非语系",
+  "nk": "尼日尔-刚果语系",
+  "ost": "其他语系"
+ },
+ "makro": {
+  "Africa": "非洲",
+  "Eurasia": "欧亚大陆",
+  "Papunesia": "新几内亚与太平洋",
+  "North America": "北美洲",
+  "South America": "南美洲",
+  "Australia": "澳大利亚"
+ },
+ "otacet": "旋转",
+ "otacetPopis": "让地球仪自行缓慢旋转",
+ "jmena": "名称",
+ "jmenaPopis": "放大后显示所有语言的名称（所选语言及其亲属语言始终显示名称）",
+ "teckaNazev": "登记册名称：{x}",
+ "teckaMezinarodni": "名称取自Glottolog世界语言登记册",
+ "ohrozeni": "语言活力",
+ "aes": [
+  [
+   "安全",
+   "所有世代都在使用；父母不间断地将其传给子女。"
+  ],
+  [
+   "脆弱",
+   "大多数儿童会说，但可能仅限于特定领域，例如家庭。"
+  ],
+  [
+   "确有危险",
+   "儿童不再在家中把它作为母语习得。"
+  ],
+  [
+   "严重危险",
+   "只有祖父母辈及更老的世代使用。父母辈也许能听懂，但不对子女说，彼此之间也不说。"
+  ],
+  [
+   "极度危险",
+   "最年轻的使用者是祖父母辈或更老的人，而且只是部分地、偶尔地使用。"
+  ],
+  [
+   "灭绝",
+   "已没有在世的使用者。"
+  ],
+  [
+   "复苏中",
+   "它已失去传统的母语使用者，但人们重新学习它，使它恢复生机。Glottolog将其归为灭绝。"
+  ]
+ ],
+ "uzivatelu": "使用人数",
+ "uzivateluHodnota": "约{n}人",
+ "uzivateluPozn": "Unicode CLDR的估计，包括后天习得者",
+ "nareci": "方言",
+ "kdeMluviTecka": "使用地区",
+ "ukazka": "文本示例",
+ "ukazkaPopis": "《世界人权宣言》第一条开头的该语言文本。中文为：“人人生而自由，在尊严和权利上一律平等……”",
+ "pismo": "文字",
+ "pismoPozn": "依据Unicode CLDR。使用多种文字时，最常用的列在首位。",
+ "pismoVrstva": "文字",
+ "pismoRadekPopis": "按各语言的主要文字为圆点着色（Unicode CLDR）",
+ "pismoVrstvaPopis": "圆点的颜色表示该语言依据Unicode CLDR的主要文字；一种语言使用多种文字时，以最常用的为准。对于CLDR有详细数据的语言（多为已规范化的书面语），文字有文献依据。其余语言则是CLDR的估计（likely subtags）：即该语言书写时所用的文字（如果它有书面形式的话）——其中许多语言的书面使用十分有限。婆罗米系文字源自印度的婆罗米文字（天城文、孟加拉文、泰米尔文、泰文、缅甸文、藏文等）；假名和注音符号由汉字发展而来。其他文字包括埃塞俄比亚文、希伯来文、希腊文、格鲁吉亚文、亚美尼亚文和韩文，以及加拿大土著统一音节。手语不计在内。",
+ "pismoSkupiny": [
+  "拉丁文",
+  "西里尔文",
+  "阿拉伯文",
+  "婆罗米系文字（印度、东南亚、西藏）",
+  "汉字、假名、注音符号",
+  "其他文字"
+ ],
+ "pismoBezUdaje": "CLDR无数据、手语",
+ "pismoZdroj": "Unicode CLDR 48 · languageData, likelySubtags",
+ "pismoOdhad": "{p}（估计）",
+ "pismoOdhadPozn": "Unicode CLDR的估计（likely subtags）：即该语言书写时所用的文字（如果它有书面形式的话）。CLDR对该语言本身没有详细数据。",
+ "pismoOMape": "关于文字地图",
+ "uredni": "官方语言",
+ "uredniStav": [
+  "",
+  "",
+  "事实上",
+  "地区性"
+ ],
+ "uredniPozn": "依据Unicode CLDR。“事实上”指该语言在官方场合使用，但没有明确的法律地位；“地区性”指它只在该国的部分地区（省、自治区等）具有官方地位。",
+ "uredniZdroj": "依据Unicode CLDR。",
+ "stavba": "结构",
+ "hlasky": "语音",
+ "hlaskyHodnota": "{c}个{cs}、{v}个{vs}",
+ "hlaskyTony": "，另有{t}个{ts}",
+ "hlaskySrovnani": "作为比较，汉语普通话：{c}个辅音、{v}个元音。",
+ "souhlaska": [
+  "辅音",
+  "辅音",
+  "辅音"
+ ],
+ "samohlaska": [
+  "元音",
+  "元音",
+  "元音"
+ ],
+ "ton": [
+  "声调",
+  "声调",
+  "声调"
+ ],
+ "pribuzenstvo": "谱系树",
+ "sourozenci": "最近的亲属语言",
+ "aDalsichPribuznych": "另有{n}种",
+ "popsanost": "记录程度",
+ "med": [
+  "详细的语法书（300页以上）",
+  "语法书",
+  "语法概要",
+  "仅有文本或音系描写",
+  "仅有词表或更少——该语言几乎没有记录"
+ ],
+ "odkazGlottolog": "Glottolog",
+ "odkazWikipedie": "维基百科",
+ "odkazyPopis": "更多信息",
+ "wikiDomena": "zh.wikipedia.org",
+ "srovnavaciJazyk": "zh",
+ "mluvci": "使用人数",
+ "odhad": "估计",
+ "mluvciAtlas": "本图集给出的约数，包括将该语言作为第二语言习得的人。",
+ "mluvciAtlasZnak": "本图集给出的约数，包括将该语言作为第二语言习得的人。",
+ "mluvciAtlasWd": "Wikidata给出的使用人数约为{n}{rok}。",
+ "mluvciAtlasWdRodili": "Wikidata给出的母语使用者约为{n}{rok}。",
+ "mluvciAtlasWdRodiliZnak": "Wikidata给出的母语手语者约为{n}{rok}。",
+ "mluvciHodnota": "约{n}人",
+ "mluvciPoznRodili": "母语使用者 · Wikidata{rok}",
+ "mluvciPozn": "Wikidata{rok}",
+ "hudVidet": "视野内{n}种语言，共{m}种",
+ "strany": [
+  "N",
+  "S",
+  "E",
+  "W"
+ ],
+ "pribuzniAtlas": "图集中的亲属语言",
+ "pribuzniOblouky": "地球仪上的光弧通向它们。",
+ "motiv": "切换日间和夜间外观",
+ "zemeBezPozdravuDen": "图集中暂无这个国家附有详细卡片的语言。点击圆点可打开各个语言。",
+ "pribuzniObloukyDen": "地球仪上的弧线通向它们。",
+ "znakoveSkupina": "手语",
+ "znakoveVse": "全部",
+ "znakoveBez": "不含手语",
+ "znakoveJen": "仅手语",
+ "znakovePopis": "手语是聋人群体的自然语言，借助手形与动作、面部表情和身体姿态表达。世界上并没有统一的通用手语：许多国家有自己的手语，有些国家还有好几种，而且手语的界线与国界并不重合。",
+ "znakovyCo": "什么是手语",
+ "znakovyVysvetleni": "手语是一种完整的自然语言，使用视觉-手势模态：它运用手形与动作、面部表情和身体动作。手语主要由聋人及其家人使用。手语不是用手势表现的有声语言——它有自己的词汇和语法。",
+ "aesZnak": [
+  [
+   "安全",
+   "聋童自然习得——从聋人父母那里、在学校以及在聋人社群中。"
+  ],
+  [
+   "脆弱",
+   "聋童会使用，但只在部分地方——例如只在部分学校或城镇。"
+  ],
+  [
+   "确有危险",
+   "大多数聋童已不再学习它。"
+  ],
+  [
+   "严重危险",
+   "主要由年长的聋人使用；年轻一代已不再习得。"
+  ],
+  [
+   "极度危险",
+   "只剩少数年迈的手语者，而且很少使用。"
+  ],
+  [
+   "灭绝",
+   "已无人使用。"
+  ],
+  [
+   "复苏中",
+   "它已失去传统的母语手语者，但人们重新学习它。Glottolog将其归为灭绝。"
+  ]
+ ],
+ "kdeZnakuje": "使用地区",
+ "znakuje": "手语者",
+ "uzivateluZnak": "手语者",
+ "mluvciPoznRodiliZnak": "母语手语者 · Wikidata{rok}",
+ "jazyk": [
+  "种语言",
+  "种语言",
+  "种语言"
+ ],
+ "vitalitaZdroj": "联合国教科文组织的六级量表。数据来自Glottolog，它综合了联合国教科文组织、Ethnologue和濒危语言目录（Catalogue of Endangered Languages）的资料。",
+ "vitalita": "语言活力",
+ "vitalitaPopis": "按濒危程度显示语言（联合国教科文组织量表）",
+ "vitalitaNadpis": "语言活力 · 联合国教科文组织量表",
+ "vitalitaVse": "全部",
+ "vitalitaOhrozene": "仅濒危语言",
+ "vitalitaBezUdaje": "无数据",
+ "vitalitaZavrit": "返回",
+ "nahledPopis": "缀满光点的地球仪——每个光点都是世界上的一种语言",
+ "zemeRejstrik": "世界语言登记册中有{n}——已在地球仪上高亮显示",
+ "zemeAtlas": "附有详细卡片的语言：",
+ "sdiletOdkaz": "复制这种语言的链接",
+ "sdiletHotovo": "链接已复制。",
+ "zobrazeni": "设置",
+ "zobrazeniPopis": "旋转、名称和手语",
+ "zavritPanel": "关闭",
+ "kartaVic": "显示更多",
+ "zalozkaPrehled": "概览",
+ "zalozkaStavba": "结构",
+ "jazykDne": "今日语言",
+ "radit": "排序",
+ "raditRodiny": "按语系",
+ "raditAbeceda": "A–Z",
+ "raditSvetadil": "按大洲",
+ "svetadilOstatni": "其他地区",
+ "zalozkaZajimavost": "趣闻",
+ "zalozkaPribuzni": "亲属语言",
+ "izolovane": "孤立语言——没有已知的亲属语言",
+ "nezarazene": "未分类",
+ "dalsiJazyky": "更多语言（{a}）",
+ "jazykDneUkaz": "在地球仪上显示",
+ "rodokmen": "谱系树",
+ "globus": "地球仪",
+ "rodokmenPopis": "语系谱系树：同一语系的语言如何相互关联",
+ "stromPlatno": "一个语系的谱系树",
+ "stromRodina": "语系",
+ "stromCely": "整棵树",
+ "stromNapoveda": "整个语系的共同祖先位于底部；各个语言位于分支末端。每个圆环表示一次分化；分支的粗细反映由它派生的语言数量。大圆点是附有详细卡片的语言。拖动可移动，滚动滚轮或双指捏合可缩放，点击分支或语言可将其选中。",
+ "stromUkazat": "在谱系树中显示",
+ "euNadpis": "欧洲联盟的24种官方语言",
+ "euText": "地球仪上的金色星标标出欧洲联盟的24种官方语言。点击星标可打开语言卡片。",
+ "euZavrit": "关闭",
+ "euVlajka": "欧洲联盟旗帜",
+ "euTlacitko": "欧洲联盟官方语言",
+ "porovnat": "与另一种语言比较",
+ "porovnatVyzva": "正在比较：{a} ⇄ ？请选择第二种语言：点击地球仪上的圆点、列表中的语言，或进行搜索。",
+ "porovnatZrusit": "取消",
+ "srovnani": "比较",
+ "zalozkaPribuznost": "亲缘关系",
+ "zalozkaCisla": "数字",
+ "pribuzne": "有亲缘关系",
+ "ano": "是",
+ "ne": "否",
+ "pribuzneAno": "它们有亲缘关系。",
+ "pribuzneSpolecny": "它们最近的共同祖先是{v}这一分支。由此往下，两者的谱系如下：",
+ "pribuzneKoren": "它们属于同一语系（{r}），但在该语系的第一次分化时就已分开。它们的共同祖先就是整个语系的祖先：",
+ "pribuzneRodina": "两者属于同一语系（{r}）。",
+ "pribuzneNe": "它们没有亲缘关系。",
+ "pribuzneNeText": "两者分属不同的语系，就目前所知，没有共同祖先。",
+ "izolatText": "{a}是孤立语言——没有已知的亲属语言。",
+ "pribuzneNevime": "没有关于两者亲缘关系的数据。",
+ "spolecne": "共同点",
+ "rozdily": "不同点",
+ "bezUdaju": "关于这两种语言结构的数据不足，无法进行比较。",
+ "spolecneStaty": "两者都在以下国家使用",
+ "zpetNa": "返回：{a}",
+ "porovnatJiny": "与其他语言比较",
+ "stromObe": "在谱系树中显示两者",
+ "bezRodu": "{a}是一种{druh}。它不像其他语言那样由单一祖先逐渐演变而来，因此不属于任何语系，也没有亲属语言。",
+ "bezDomova": "不在地图上",
+ "bezDomovaText": "{a}没有单一的发源地——它是作为国际辅助语而创制的。因此它在地球仪上没有圆点，只出现在列表中。",
+ "branaNadpis": "✦ 虚构作品中的人造语言",
+ "branaText": "这些语言是作家和语言学家为书籍、电影和电视剧创制的。它们不在自然语言登记册之列，因此在地球仪上没有位置。",
+ "branaZpet": "返回地球",
+ "branaZeme": "地球",
+ "branaZemePocet": "{n}种真实语言",
+ "vymyslenyJazyk": "虚构语言",
+ "svet": "世界",
+ "autorJazyka": "创制者",
+ "vyznamPozdravu": "问候语的含义",
+ "zJinychSvetu": "✦ 来自其他世界",
+ "nareciPozn": "Glottolog将它们列为方言而不是独立的语言，因此它们在地球仪上没有自己的圆点。",
+ "hledejVymazat": "清除搜索",
+ "preskocit": "跳到语言列表",
+ "filtryZapnute": "已开启筛选：{n}",
+ "nenalezenaNadpis": "此页面不存在",
+ "nenalezenaText": "此地址没有页面。世界全部7967种语言都可以在地球仪上查看。",
+ "nenalezenaZpet": "返回地球仪",
+ "oDatech": {
+  "odkaz": "关于数据",
+  "nadpis": "关于数据以及本图集的制作方式",
+  "zavrit": "关闭",
+  "uvod": "本图集建立在世界各地语言学家共同编制的开放数据库之上。这里说明各项内容的来源，哪些是确切的，哪些只是估计。",
+  "oddily": [
+   {
+    "h": "地球仪上有什么",
+    "p": [
+     "每个圆点代表一种语言。语言清单来自Glottolog，这是由莱比锡马克斯·普朗克进化人类学研究所运营的世界语言开放数据库。本图集收录Glottolog列为语言并给出位置的全部条目：共{g}种语言。",
+     "圆点位于Glottolog标定的语言位置，通常在其使用区域的中央。即使是在全世界使用的语言，也只有一个圆点，位于其发源地。",
+     "仅排除Glottolog的特殊类别：用于编目管理的条目、只知其名的语言，以及所知甚少、无法归类的语言。世界语、国际语和斯拉夫国际语没有圆点，因为它们并非在某一个地方产生；但它们仍在列表中，也可以搜索到。"
+    ]
+   },
+   {
+    "h": "语言还是方言？",
+    "p": [
+     "语言和方言之间没有截然的界线，历史和政治因素也常常起作用。本图集遵循Glottolog的划分。因此巴伐利亚语有圆点，而澳大利亚英语没有——Glottolog把它算作英语的一个变体。方言列在语言卡片上，搜索某种方言会找到它所属的语言。",
+     "塞尔维亚语、克罗地亚语、波斯尼亚语和黑山语的使用者彼此之间很容易沟通，这几种语言建立在同一个方言基础——什托卡维亚方言之上。从语言学上看，它们是同一种共同语言的几种相近的标准变体；在官方和社会层面上，它们如今是各自独立的语言。Glottolog将它们列为一种语言，即塞尔维亚-克罗地亚语，它在地球仪上有一个圆点。本图集还把塞尔维亚语和克罗地亚语作为附有问候语的独立语言收录，但它们没有自己的圆点。苗语则相反：在Glottolog中是几种语言，在本图集中只有一个条目。因此列表有{n}个条目，而地球仪上有{g}个圆点。"
+    ]
+   },
+   {
+    "h": "{a}种附有详细卡片的语言",
+    "p": [
+     "本图集为164种精选语言提供问候语、近似读音、注释、使用人数和分布区域。这些内容由人工整理，注释经过事实核查。",
+     "读音说明只是近似的。使用人数是取整的估计值，包括第二语言使用者。",
+     "地球仪上的橙色区域由人工绘制，是近似的，并非实测。目前没有覆盖全世界、标明精确语言边界的开放数据。",
+     "“播放发音”按钮使用设备的语音合成功能；对于某些语言，设备没有相应的语音。",
+     "插图展现该语言发源地区的典型景观和乡土建筑，并不描绘具体地点。"
+    ]
+   },
+   {
+    "h": "其他语言的详细信息",
+    "p": [
+     "语言活力：依据Glottolog数据的联合国教科文组织量表（从安全到灭绝）。",
+     "语言类型学（语序、格、声调、辅音清单……共24项特征）：WALS Online，即《世界语言结构地图集》（Dryer & Haspelmath 2013）。WALS描述了约2600种语言的样本；其他语言没有取值。地图上部分取值合并为组；语言卡片上始终显示WALS的确切取值。",
+     "语音数量：PHOIBLE。文本示例：《世界人权宣言》第一条（UDHR in Unicode）。",
+     "使用人数：Wikidata；缺少数据时采用Unicode CLDR的估计。",
+     "文字和官方地位：Unicode CLDR（languageData、territoryInfo）。官方地位分为全国性、事实上和地区性三种；CLDR只为其追踪国家数据的语言记录这一信息，因此少数民族语言即使具有某种官方地位，也常常缺少记录。对于其他语言，文字地图（地图 › 文字）采用CLDR likelySubtags中的文字估计，因此地图上共有约6800种语言显示了文字。语言卡片会把估计值标明为估计。",
+     "亲属语言和谱系树：Glottolog的谱系树，分支名称采用Glottolog的名称。",
+     "没有任何编造的内容：来源中没有的数据，卡片上就不显示。"
+    ]
+   },
+   {
+    "h": "古代语言与语言故事",
+    "p": [
+     "关于古代文明的页面和“语言故事”由本图集依据各页末尾列出的学术文献撰写，发布前经过事实核查。照片来自维基共享资源（Wikimedia Commons），采用自由许可（CC BY、CC BY-SA、CC0或公有领域）；每张图片都注明作者和许可。楔形文字符号和安纳托利亚象形文字使用Noto字体（SIL Open Font License）显示。"
+    ]
+   },
+   {
+    "h": "向AI提问",
+    "p": [
+     "如果搜索无法理解某个问题，可以向AI（Anthropic公司的Claude Sonnet 5.5）提问。问题文本经由本图集的服务器（Netlify）发送给Anthropic；本图集不存储问题。AI首先查阅图集数据（Glottolog、Unicode CLDR、图集文本）；图集中没有的内容，它会到网上查找（Anthropic网络搜索），并在回答下方列出网络来源。它仍可能出错，因此每个回答都附有提示。它只回答有关语言、文字和语系的问题。"
+    ]
+   },
+   {
+    "h": "地图",
+    "p": [
+     "国界和陆地来自Natural Earth（简化版，比例尺1:1.1亿）。地形和海底来自Natural Earth和NOAA ETOPO1。"
+    ]
+   }
+  ],
+  "verzeNadpis": "数据版本与许可",
+  "verze": [
+   [
+    "Glottolog——语言、语系、语言活力、方言",
+    "下载于{gdat}",
+    "CC BY 4.0"
+   ],
+   [
+    "WALS Online（2013）——语法",
+    "下载于{pdat}",
+    "CC BY 4.0"
+   ],
+   [
+    "PHOIBLE 2.0——语音",
+    "下载于{pdat}",
+    "CC BY-SA 3.0"
+   ],
+   [
+    "Wikidata——使用人数",
+    "下载于{wdat}",
+    "CC0"
+   ],
+   [
+    "Unicode CLDR 48——语言名称、文字、官方地位、估计值",
+    "",
+    "Unicode License"
+   ],
+   [
+    "UDHR in Unicode——文本示例",
+    "udhr软件包6.0.0",
+    "MIT"
+   ],
+   [
+    "维基共享资源——文明页面的照片",
+    "见各图片",
+    "CC BY, CC BY-SA, CC0"
+   ],
+   [
+    "Natural Earth、NOAA ETOPO1——地图和地形",
+    "",
+    "公有领域"
+   ]
+  ]
+ },
+ "stranky": {
+  "najit": "在地球仪上查找",
+  "globus": "旋转的地球仪",
+  "vsechnyOdkaz": "附有详细卡片的语言",
+  "vsechnyNadpis": "{a}种附有详细卡片的语言",
+  "vsechnyPopis": "世界各地的精选语言，附有问候语、近似读音、使用人数、分布、亲属语言和注释。全部7967种语言都在交互式地球仪上。",
+  "titulek": "{n}——分布、亲属语言和读音",
+  "malbaAlt": "{n}发源地的风景插图",
+  "uzivatelu": "使用人数",
+  "kdeMluvi": "使用地区",
+  "kdeZnakuje": "使用地区",
+  "aDalsi": "另有{n}个",
+  "drobky": "导航路径",
+  "druhaSobota": "9月第二个星期六",
+  "predchozi": "上一种语言",
+  "dalsi": "下一种语言",
+  "zavrit": "关闭并返回列表"
+ },
+ "zpetna": "意见和更正：",
+ "autor": "创意、构思与开发：Tomáš Kubín",
+ "autorJmeno": "Tomáš Kubín",
+ "zpetnaAdresa": "info@atlasjazyku.cz",
+ "zpetnaPredmet": "语言地图集——反馈",
+ "zpetnaPopis": "通过电子邮件发送反馈",
+ "patickaSouhrn": "关于、来源、联系方式、指南和日历",
+ "vitalitaDokPopis": "语言活力：联合国教科文组织量表中的濒危等级、数据和来源",
+ "vitalitaLegendaPopis": "语言活力等级——点击打开“语言活力”页面",
+ "denJazykuNadpis": "欧洲的语言",
+ "denJazykuGlobus": "在地球仪上全部显示",
+ "evropaNadpis": "欧洲的{n}种语言",
+ "evropaText": "今天是欧洲语言日。红色星标标出本图集中的欧洲语言；点击即可打开其卡片。",
+ "jazykDneProc": "为什么是今天？",
+ "cestaUvod": "“今日语言”环游世界，每天前往距离最近的下一种语言。",
+ "cestaDuvod": "环游世界：前一种“今日语言”是{a}；今天的语言位于其{smer}方向{km}公里处。",
+ "cestaVedle": "环游世界：前一种“今日语言”是{a}；今天的语言就是它的近邻。",
+ "svetoveStrany": [
+  "北",
+  "东北",
+  "东",
+  "东南",
+  "南",
+  "西南",
+  "西",
+  "西北"
+ ],
+ "cestaPoDniJazyku": "欧洲语言日过后，“今日语言”继续环游世界，每天前往距离最近的下一种语言。",
+ "kalendarOdkaz": "语言节日日历",
+ "kalendar": {
+  "nadpis": "语言节日日历",
+  "uvod": "一年中与某种语言相关的日子：联合国和联合国教科文组织的语言日、各国的语言日、国家节日和纪念日。在这样的日子里，该语言就是“今日语言”。点击即可在地球仪上显示。",
+  "edl": "欧洲语言日（欧洲委员会）。这一天不展示单独的“今日语言”，而是同时展示本图集中的全部欧洲语言。",
+  "dnes": "今天",
+  "ostatni": "其他日子里，“今日语言”环游世界，每天前往距离最近的下一种语言。"
+ },
+ "navod": {
+  "odkaz": "完整指南",
+  "napoveda": "完整指南——本图集的全部功能",
+  "nadpis": "如何使用本图集",
+  "uvod": "本图集在交互式地球仪上展示依据Glottolog的世界全部7967种语言。本指南介绍每一项功能，以及如何用鼠标、触摸屏或键盘使用它。",
+  "oddily": [
+   {
+    "h": "地球仪",
+    "p": [
+     "旋转：用鼠标或单指拖动。缩放：鼠标滚轮、双指捏合、地球仪右上角的 + 和 − 按钮，或 + 和 − 键。",
+     "每个圆点代表一种语言，位于Glottolog标定的位置，通常在其使用区域的中央。点击圆点可打开语言卡片。所选语言及其亲属语言的名称显示在各自圆点旁；在“设置”中开启“名称”后，放大到2倍以上时会显示所有语言的名称。",
+     "在圆点以外点击某个国家，会高亮显示该国及其全部语言，并显示依据Glottolog的语言数量。",
+     "“全世界”按钮和左上角的“语言地图集”标志可使地球仪回到初始视图。"
+    ]
+   },
+   {
+    "h": "语言卡片",
+    "p": [
+     "164种精选语言附有详细卡片：该地区的插图、附有近似读音的问候语，以及“播放发音”按钮（使用设备的语音合成功能）。下方是使用人数、语系和语言活力，以及“趣闻”（注释、分布、官方地位、文字、方言）、“语言活力”、“结构”和“亲属语言”等标签页。",
+     "其他所有语言都有“概览”（语言活力、分布、官方地位、文字、方言、使用人数、文本示例）、“结构”（WALS类型学数据、PHOIBLE音位清单、记录程度）和“亲属语言”标签页。",
+     "“官方语言”列出该语言具有官方地位的国家——全国性、事实上（没有明确的法律地位）或地区性（仅在该国部分地区）。“文字”列出该语言通常使用的文字，最常用的列在首位。两者都来自Unicode CLDR，约有800种语言具备这些数据。",
+     "“结构”标签页给出每项WALS特征的确切取值；点击特征名称可打开相应的类型学地图。",
+     "地球仪上的弧线从所选语言通向其最近的亲属语言。“语系谱系树”一行显示该语言在Glottolog谱系树中的归类。",
+     "链条按钮可复制该语言的链接。在手机上，卡片位于屏幕底部：向上拖动可放大，向下拖动可缩小或关闭。"
+    ]
+   },
+   {
+    "h": "语言列表",
+    "p": [
+     "可以搜索语言、国家或方言。搜索框中的叉号可清除搜索内容。",
+     "也可以用日常语句输入问题：“巴西的语言”（某国的语言）、“斯拉夫语言”（Glottolog中的语系或分支）、“德语和意大利语”（比较两种语言）或“波斯语在哪里使用”。列表顶部显示搜索理解到的内容，列表中显示相应的语言；点击按钮或按Enter键可在地球仪上显示它们。回答仅来自图集数据。",
+     "如果搜索无法理解某个问题，会提供“询问AI”：AI（Anthropic公司的Claude）查阅图集数据，到网上搜索图集中没有的内容（并列出来源），用几句话作答，并在地球仪上显示结果。它只回答有关语言的问题，而且可能出错。仅限网站版。",
+     "可以按语系、按字母顺序或按大洲排序。附有详细卡片的语言以大图块显示，其他语言排在下方。",
+     "“今日语言”在午夜更换，并且总会说明入选的理由：要么这一天与该语言有关（见“语言节日日历”），要么是环游世界、前往距离最近的下一种语言。在欧洲语言日（9月26日）这一天，则改为展示本图集中的全部欧洲语言。"
+    ]
+   },
+   {
+    "h": "地球仪下方的圆形按钮",
+    "p": [
+     "地球仪下方的圆形按钮（在手机上分两行排列）可打开本图集的主要部分：古代语言、语言故事、谱系树、地图、语言活力和设置。“随机语言”位于语言列表的标题栏中、语言数量旁边，可打开随机选取的一种语言的卡片。",
+     "“谱系树”以扇形显示一个语系的谱系树：如已选定某种语言，显示其所属语系，否则显示顶部菜单中选择的语系。拖动可移动，用滚轮或双指可缩放，点击分支可聚焦于该分支，点击语言可将其选中。“环形总览”按钮提供另一种视图，一次显示所有语系：扇区的宽度表示语言数量；点击扇区或列表中的某一行可深入下一层，点击圆心可返回上一层。语言少于25种的语系归入“较小语系”；孤立语言、手语、人造语言和皮钦语归入“语系之外”。点击“返回谱系树”或“打开语系谱系树”可回到扇形视图。",
+     "“语言活力”打开一个关于语言濒危状况的页面：联合国教科文组织量表各等级的语言数量，按世界地区和按十五个最大语系的细分（附有通往谱系树的链接），本图集中的濒危语言、复苏中的语言，以及方法和来源。在该页面可以按语言活力为地球仪和谱系树着色——谱系树会显示一个语系中哪些分支处于濒危或已经灭绝——并勾选哪些等级保持可见（筛选）。着色开启期间，地球仪下方会显示图例；点击图例可再次打开该页面。该页面也可以通过语言卡片上的链接和地址#vitality打开。",
+     "“地图”打开所有彩色地图的总览，附有预览：文字、语言活力，以及来自WALS的24项类型学特征。选择一幅地图后，窗口关闭，地球仪随之着色。",
+     "设置：自动旋转、语言名称和手语（全部、不含手语或仅手语）。",
+     "放大和缩小（+ 和 −）以及“全世界”按钮不显眼地位于地球仪右上角、帮助问号的下方；在手机上用双指捏合缩放。"
+    ]
+   },
+   {
+    "h": "类型学地图（WALS）",
+    "p": [
+     "在“地图”窗口中，可以从五个领域（音系、形态、语序、小句结构、词汇）中选择24项特征之一。各语言按其取值着色，右下角出现图例，显示语言数量、该特征的说明以及通往WALS相应章节的链接。",
+     "选择后窗口关闭；点击图例中的“其他地图……”或“地图”圆形按钮可再次打开。点击图例中的某个取值，只突出显示具有该取值的语言。WALS描述了约2600种语言的样本；其他圆点保持灰色。"
+    ]
+   },
+   {
+    "h": "文字地图",
+    "p": [
+     "“文字”地图（在“地图”窗口中）按主要文字为语言着色：拉丁文、西里尔文、阿拉伯文、婆罗米系文字（印度、东南亚、西藏）、汉字及假名和注音符号，以及其他文字。右下角的图例给出语言数量；点击某一组可只突出显示该组。",
+     "文字地图还显示36种现行文字的分布区域及其名称，并附有用该文字本身书写的示例（Abc、Абв、अआइ……）。点击名称或彩色区域可打开文字卡片（突出显示某一组时，只针对该组的文字）：类型（全音素文字、辅音音素文字、元音附标文字、音节文字、语素文字）、书写方向、关于其起源的简短说明、本图集中用该文字书写的语言，以及该文字用于书写官方语言的国家；“此处的语言”按钮可打开所点位置的语言。thelanguageatlas.com/zh/#pismo-latn这样的链接也可以打开文字卡片。",
+     "数据来自Unicode CLDR。对于CLDR有详细数据的语言，文字有文献依据；其余语言则是CLDR的估计（即该语言书写时所用的文字，如果它有书面形式的话），语言卡片会将其标明为估计。文字地图和类型学地图不会同时显示。"
+    ]
+   },
+   {
+    "h": "比较两种语言",
+    "p": [
+     "在语言卡片上选择“与另一种语言比较”，然后在地球仪上、列表中或通过搜索选择第二种语言。比较内容包括亲缘关系和最近共同祖先、相同和不同的WALS特征、音位清单、使用人数和文字。"
+    ]
+   },
+   {
+    "h": "古代语言",
+    "p": [
+     "地球仪下方的“古代语言”圆形按钮可打开文明菜单；搜索也能找到它们，例如“埃及”。每一项都会打开一个以语言和文字为中心的文明页面：历史、符号示例、破译的经过、相关词语、语法、年表、照片和参考文献。菜单最前面是两个总览：文字谱系树（各种字母从何而来，附有用二十种文字书写的“国王”一词的对照表）和术语表（辅音音素文字、元音附标文字、限定符、牛耕式转行书写法……）。目前已完成的页面有：苏美尔与阿卡德、古埃及、埃兰与乌拉尔图、古印度、赫梯人、古代中国、腓尼基人、希伯来人与阿拉姆人、古希腊、凯尔特人、伊特鲁里亚人、古波斯、古罗马、亚美尼亚人与格鲁吉亚人、日耳曼人与卢恩字母、阿克苏姆、朝鲜半岛与谚文、突厥与鄂尔浑文、日本与假名、斯拉夫人与大摩拉维亚、玛雅、阿兹特克和印加。",
+     "页面在地球仪上方打开；点击叉号、按Escape键或点击页面以外的地方即可关闭。左上角的“‹ 古代语言”按钮可返回文明列表，每个页面末尾都有通往其他页面的链接。“地球仪上的语言”一节中的按钮可在地球仪上显示相关的已灭绝语言。也可以从语言卡片（例如埃及语、科普特语、赫梯语或卢维语的卡片）以及通过thelanguageatlas.com/zh/#egypt和#hittites这样的链接打开页面；在网站上，每个页面也是一个独立的网页。"
+    ]
+   },
+   {
+    "h": "语言故事",
+    "p": [
+     "地球仪下方的“语言故事”圆形按钮可打开故事菜单：与“古代语言”风格相同的专题页面，分为“旅行的词语”“语言的旅程”“时间中的语言”“人与语言”和“未解之谜”几组。目前已完成：茶和其他旅行的词语（为什么世界各地要么说“cha”，要么说“tea”）、从拉丁语到罗曼语族、回归的语言（威尔士语、毛利语、马恩语、希伯来语）以及语言之谜（未破译的文字、孤立语言和有争议的语系）。",
+     "茶这一页上的“在地球仪上显示”按钮会关闭页面，并用WALS中“茶”一词来源的地图为地球仪着色。搜索也能找到这些故事（例如“茶”）；链接形如thelanguageatlas.com/zh/#tea，在网站上，每个故事也是/stories/下的一个独立网页。",
+     "茶这一页有“地球仪上的词语之旅”一节，其中有以下词语的按钮：茶、咖啡、糖、橙子、巧克力、番茄、将军与将死、酒精、零与数字，以及洗发水。地球仪飞到该词传播经过的区域上空，从源语言出发逐步画出弧线；每个圆点旁显示该词的形式和语言。虚线弧表示有争议的路线。右上角的面板（在手机上位于地球仪下方）列出各个步骤及其年代和注释；点击某一步可打开语言卡片。“再播放一次”可重放动画，其他按钮可切换到另一个词。点击叉号、按Escape键或点击“全世界”按钮即可关闭；链接形如#cesta-caj。"
+    ]
+   },
+   {
+    "h": "语言的旅程",
+    "p": [
+     "“旅程”在地球仪上展示一种语言如何从其原始语发展到今天：彩色的流向一个阶段接一个阶段地在地图上扩展，区域逐渐填满，较早的阶段则作为历史的层次淡淡地保留下来。有争议的解释以虚线绘制。现有以下语言的旅程：阿拉姆语、德语、法语、捷克语、库尔德语、罗姆语、马耳他语、毛利语（含通往马达加斯加的支线）、纳瓦霍语、土耳其语、西班牙语、希伯来语、匈牙利语、意大利语、意第绪语和英语。“字母的旅程”追踪的不是一种语言，而是一种文字：埃及的牛头图形如何经由腓尼基人、希腊人和罗马人变成字母A；每个阶段都在地图上显示当时的字母形态。它也可以从“文字”地图的图例和文字卡片中打开。",
+     "可以从“语言故事”中的“语言的旅程”一组、语言卡片上以旅程命名的按钮（如“英语的旅程”，位于“趣闻”标签页），或通过thelanguageatlas.com/zh/#journey-english这样的链接打开旅程。",
+     "右侧面板（在手机上位于地球仪下方）有播放和暂停按钮、时间轴滑块以及各阶段的列表，附有年代和文字说明；点击某一阶段可完整显示该阶段并暂停播放。来源列在各阶段下方。点击叉号、按Escape键、点击“全世界”按钮或选择另一种语言即可关闭旅程。"
+    ]
+   },
+   {
+    "h": "键盘",
+    "p": [
+     "Tab键在各控件之间移动。按一次Tab进入语言列表；方向键在图块之间移动，Home和End键跳到开头和末尾，Enter键选择语言。",
+     "+ 和 − 键缩放地球仪。Escape键关闭窗口、卡片或面板。"
+    ]
+   },
+   {
+    "h": "关于、来源、联系方式、指南和日历",
+    "p": [
+     "语言列表的末尾（在手机上位于页面末尾）有一行折叠的内容：关于、来源、联系方式、指南和日历。点击即可展开。",
+     "语言节日日历：一年中与某种语言相关的日子（语言日、国家节日、纪念日）。日历在最近的日子处打开；点击某种语言可在地球仪上显示它。",
+     "关于数据：数据来源（Glottolog、WALS、PHOIBLE、Wikidata、Unicode CLDR等）、其版本和许可，以及列表条目为何多于地球仪上的圆点。",
+     "完整指南：即本文。",
+     "附有详细卡片的语言（仅限网站版）：全部164种语言集中在一个页面上。每种语言以卡片形式打开；用箭头可切换到下一种。",
+     "联系方式：意见和更正请发送至info@atlasjazyku.cz。下方列有数据来源及其许可。"
+    ]
+   },
+   {
+    "h": "其他",
+    "p": [
+     "在右上角可以切换界面语言（CS · EN · IT · DE · FR · HE · 中文）以及浅色或深色主题。您的选择会被保存。",
+     "搜索也能找到为文学作品和电影创制的语言（如昆雅语或克林贡语）；它们与自然语言分开显示。"
+    ]
+   }
+  ],
+  "tajemstvi": {
+   "tlacitko": "图集的秘密",
+   "nadpis": "图集的秘密",
+   "uvod": "本图集藏着几个在别处都没有介绍的小彩蛋。口令可以在页面上任意位置（文本框以外）输入，也可以输入搜索框，这在手机上同样有效。",
+   "polozky": [
+    [
+     "欧洲联盟的语言",
+     "输入“eulang”。地球仪飞到欧洲上空，欧盟全部24种官方语言处逐一出现金色星标，右侧出现一面飘扬的旗帜和语言列表。链接#eulang。"
+    ],
+    [
+     "通往其他世界之门",
+     "输入“mellon”，这是精灵语的“朋友”，也是《魔戒》中都林之门的口令。地球仪消失，虚构语言的世界在群星间漂浮：克林贡语、昆雅语、辛达林语、纳美语、多斯拉克语和高等瓦雷利亚语。搜索也能找到它们（例如“精灵”或“克林贡”），芬兰语和威尔士语的卡片上藏有通往这扇门的线索。链接#mellon。"
+    ],
+    [
+     "语言的变乱",
+     "输入“babel”。屏幕上的文字会短暂地散落成各种外国文字，随后打开一张关于巴别塔的卡片。链接#babel。"
+    ],
+    [
+     "鲸类会说话吗？",
+     "在海洋中的同一位置快速点击三次。会打开一张卡片，介绍抹香鲸的尾声、座头鲸的歌、海豚的名字和虎鲸的方言——以及为什么这些都尚未被证明是语言。链接#cetaceans。"
+    ],
+    [
+     "颠倒的地球仪",
+     "快速点击“语言地图集”标志七次。地球仪会上下颠倒，语言从上面掉落，然后回到原位。如果设备开启了“减少动态效果”，则不会运行。"
+    ]
+   ]
+  }
+ },
+ "navodOdkaz": "完整指南",
+ "navodNapoveda": "完整指南——本图集的全部功能",
+ "typologie": "语言类型学（WALS）",
+ "typologiePopis": "语言特征地图：语序、格、声调、辅音……",
+ "typologieNadpis": "语言类型学",
+ "typologieUvod": "选定一项特征后，地球仪上的语言按其取值着色。数据来自《世界语言结构地图集》（WALS），它描述的是语言样本——其他圆点没有取值。",
+ "typologieZdroj": "Dryer, Matthew S. & Haspelmath, Martin (eds.) 2013. The World Atlas of Language Structures Online. Leipzig: Max Planck Institute for Evolutionary Anthropology. Licence CC BY 4.0.",
+ "typologieVypnout": "关闭类型学地图",
+ "typologieBezUdaje": "无WALS数据",
+ "typologieKapitola": "WALS，第{n}章 · {autor}",
+ "typologieOdkaz": "在WALS中打开",
+ "typologieIzolace": "只突出显示此取值（再次点击可撤销）",
+ "typologieOPopisu": "关于此特征",
+ "typologieKarta": "语言类型学（WALS）",
+ "typologieKartaPozn": "特征及取值来自WALS Online。只列出WALS对该语言有描述的特征。",
+ "typologieNaMape": "在地图上显示",
+ "typologieJazykuWals": "WALS数据中有{n}",
+ "typologieJina": "其他地图……",
+ "starovek": {
+  "stitek": "古代语言",
+  "vKostce": "概要",
+  "foto": "照片",
+  "volneDilo": "公有领域",
+  "zavrit": "关闭页面",
+  "karta": "文明页面：语言与文字",
+  "pata": "插图：语言地图集。照片：维基共享资源，每张图片旁注明作者和许可。文字：语言地图集，依据上方列出的学术文献撰写。",
+  "titulek": "{n}：语言与文字",
+  "zpet": "返回地球仪",
+  "uvod": "关于古代文明、以语言和文字为中心的页面：历史、符号示例、破译、照片。最前面是两个总览：文字谱系树和术语表。",
+  "mapaTlacitko": "在地球仪上显示",
+  "dalsi": "更多页面",
+  "prehledUvod": "关于古代文明、以语言和文字为中心的页面：历史、符号示例、破译、照片。更多页面正在陆续添加。"
+ },
+ "pribehy": {
+  "stitek": "语言故事",
+  "uvod": "关于语言的专题页面：词语如何在语言之间旅行，语言如何变化，如何回归，以及语言学至今仍不知道的事情。",
+  "skupiny": {
+   "slova": "旅行的词语",
+   "promeny": "时间中的语言",
+   "lide": "人与语言",
+   "zahady": "未解之谜",
+   "putovani": "语言的旅程"
+  }
+ },
+ "cestaNadpis": "“{s}”一词的旅程",
+ "putZavrit": "关闭语言的旅程",
+ "putOsa": "时间轴",
+ "putHraj": "播放",
+ "putPauza": "暂停",
+ "putZdroje": "来源：",
+ "cestaZavrit": "关闭词语之旅",
+ "cestaZnovu": "再播放一次",
+ "cestaPribeh": "故事：{n}",
+ "cestaTlacitko": "地球仪上的旅程",
+ "rozcestnik": "图集各部分",
+ "medStarovek": "古代语言",
+ "medPribehy": "语言故事",
+ "medMapy": "地图",
+ "mapyUvod": "彩色地图按某一属性为地球仪上的语言圆点着色；一次只能开启一幅。右下角（在手机上位于地球仪下方）的图例给出颜色、语言数量和来源。类型学地图依据《世界语言结构地图集》（WALS），它描述的是选定的语言样本——其他圆点没有数据。",
+ "mapyVypnout": "关闭彩色地图",
+ "mapyPrehled": "文字与语言活力",
+ "mapyPismoPopis": "语言的主要文字 · Unicode CLDR",
+ "mapyVitalitaPopis": "濒危程度 · 联合国教科文组织、Glottolog",
+ "medVRodokmenu": "谱系树中不提供彩色地图——请切换回地球仪",
+ "vitStranka": {
+  "nadpis": "语言活力",
+  "podtitul": "世界语言的濒危程度 · 联合国教科文组织量表",
+  "uvod": "语言活力描述一种语言是否传给下一代。本图集采用联合国教科文组织从“安全”到“灭绝”的六级量表，并单独标出复苏中的语言——即Glottolog列为灭绝、但人们重新学习和使用的语言。数据来自Glottolog，覆盖地球仪上全部{n}种语言。",
+  "cislaBezpecne": "安全",
+  "cislaOhrozene": "濒危（从脆弱到极度危险）",
+  "cislaVymrele": "灭绝",
+  "cislaProbouzene": "复苏中",
+  "souhrn": "有{n}种语言，即地球仪上全部语言的{p}，处于不同程度的濒危状态。",
+  "barvyZap": "按语言活力为地球仪和谱系树着色",
+  "barvyVyp": "关闭语言活力着色",
+  "stupneH": "语言活力等级",
+  "stupneUvod": "每条横条的长度表示语言数量。勾选的等级在地球仪、谱系树、列表和搜索中保持可见；取消勾选某一等级即可隐藏其语言（不着色时筛选同样有效）。",
+  "filtrTitulek": "显示或隐藏这一等级的语言",
+  "filtrVse": "全部",
+  "filtrOhrozene": "仅濒危语言",
+  "bezUdajePopis": "Glottolog没有给出这种语言的濒危等级。",
+  "oblastiH": "按世界地区",
+  "oblastiUvod": "地区为Glottolog的宏观区域。横条显示该地区各等级语言所占的比例（颜色同上）。",
+  "oblastiSloupce": [
+   "地区",
+   "语言",
+   "濒危",
+   "灭绝"
+  ],
+  "rodinyH": "按语系",
+  "rodinyUvod": "Glottolog中十五个最大的语系（不含孤立语言、手语以及并非语系的类别）。按钮可打开谱系树；开启语言活力着色后，其中的语言按等级着色，可以看出哪些分支处于濒危或已经灭绝。",
+  "rodinySloupce": [
+   "语系",
+   "语言",
+   "濒危",
+   "灭绝"
+  ],
+  "atlasH": "本图集中的濒危语言",
+  "atlasUvod": "附有详细卡片、被Glottolog列为不同程度濒危或复苏中的语言，最濒危的排在前面。点击可打开语言卡片。",
+  "probouzeneH": "复苏中的语言",
+  "probouzeneUvod": "复苏中的语言共有{n}种。Glottolog将它们归为灭绝，但人们重新学习和使用它们。Glottolog并不把这视为单独的等级；本图集依据Glottolog从原始来源沿用的注记“Awakening”（濒危语言目录）或“Reawakening”（Ethnologue）来识别它们。点击某种语言可在地球仪上显示。",
+  "pribehStitek": "语言故事",
+  "metodikaH": "方法与来源",
+  "metodika": [
+   "各等级依据联合国教科文组织专家组文件《语言活力与语言濒危》（Language Vitality and Endangerment，2003）中的代际传承标准。等级的名称和说明依据《世界濒危语言地图集》（Atlas of the World’s Languages in Danger，Moseley 2010），该地图集采用了这一量表，并更改了两个等级的英文名称（unsafe改为vulnerable，definitively endangered改为definitely endangered）。",
+   "Glottolog为大多数语言给出“综合濒危状态”（Agglomerated Endangerment Status，AES），主要依据联合国教科文组织、Ethnologue和濒危语言目录（ElCat）的资料汇编而成。它的每个等级都恰好对应联合国教科文组织的一个等级：not endangered = 安全，threatened = 脆弱，shifting = 确有危险，moribund = 严重危险，nearly extinct = 极度危险，extinct = 灭绝。",
+   "各项评估出自不同年份，来源之间有时也不一致，因此等级只是一种参考，而非精确的测量。灭绝语言既包括只见于历史文献的语言，如赫梯语和苏美尔语，也包括拉丁语——它没有母语使用者，尽管仍作为第二语言使用（例如在教廷）。有{n}种语言没有数据。Glottolog数据下载于{d}。"
+  ],
+  "zdroje": [
+   "UNESCO Ad Hoc Expert Group on Endangered Languages (2003): Language Vitality and Endangerment. Paris: UNESCO.",
+   "Moseley, Christopher (ed.) (2010): Atlas of the World’s Languages in Danger. 3rd edn. Paris: UNESCO Publishing.",
+   "Hammarström, Harald; Castermans, Thom; Forkel, Robert; Verbeek, Kevin; Westenberg, Michel A.; Speckmann, Bettina (2018): Simultaneous Visualization of Language Endangerment and Language Description. Language Documentation & Conservation 12, 359–392. http://hdl.handle.net/10125/24792",
+   "Hammarström, Harald; Forkel, Robert; Haspelmath, Martin; Bank, Sebastian (2025): Glottolog 5.2.1. Leipzig: Max Planck Institute for Evolutionary Anthropology. https://doi.org/10.5281/zenodo.596479",
+   "Catalogue of Endangered Languages (ElCat). University of Hawaiʻi at Mānoa. https://www.endangeredlanguages.com",
+   "Eberhard, David M.; Simons, Gary F.; Fennig, Charles D. (eds.): Ethnologue: Languages of the World. Dallas: SIL International."
+  ],
+  "odkazKarta": "世界语言的活力 ›"
+ },
+ "stromVse": "环形总览",
+ "stromZpet": "返回谱系树",
+ "prehledPlatno": "语系环形总览：扇区的宽度表示语言数量。点击扇区可深入下一层，点击圆心可返回上一层。",
+ "prehledKde": "您在总览中的位置",
+ "prehledOtevrit": "打开语系谱系树",
+ "prehled": {
+  "svet": "世界的语言",
+  "mensi": "较小语系",
+  "mimo": "语系之外",
+  "izolovane": "孤立语言",
+  "znakove": "手语",
+  "pidziny": "皮钦语",
+  "smisene": "混合语",
+  "umele": "人造语言",
+  "mluvy": "言语语体",
+  "nezarazene": "未分类语言",
+  "nedolozene": "无实证语言",
+  "vyse": "‹ 返回上一层",
+  "vetve": [
+   "个分支",
+   "个分支",
+   "个分支"
+  ],
+  "primo": "直属{n}",
+  "dalsich": "……另有{n}个（全部显示在圆环中）",
+  "ostatni": "其他语系",
+  "legenda": [
+   [
+    "ie",
+    "印欧语系"
+   ],
+   [
+    "st",
+    "汉藏语系"
+   ],
+   [
+    "an",
+    "南岛语系"
+   ],
+   [
+    "afro",
+    "亚非语系"
+   ],
+   [
+    "nk",
+    "尼日尔-刚果语系"
+   ],
+   [
+    "ost",
+    "其他语系"
+   ],
+   [
+    "mimo",
+    "语系之外"
+   ]
+  ]
+ },
+ "mapyPopis": "语言彩色地图：文字、语言活力和语言类型学（WALS）",
+ "pribehyTlacitko": "语言故事：旅行的词语、语言变化、语言复兴和未解之谜",
+ "starovekTlacitko": "古代语言：关于各个文明及其语言和文字的页面",
+ "tajemstvi": {
+  "velryby": {
+   "stitek": "海洋的语言",
+   "nazev": "鲸类会说话吗？",
+   "pozdrav": "•  •  • • •",
+   "prepis": "多米尼克附近海域抹香鲸的“1+1+3”尾声",
+   "stitky": [
+    [
+     "谁",
+     "抹香鲸、座头鲸、海豚、虎鲸"
+    ],
+    [
+     "是语言吗？",
+     "尚未证实"
+    ]
+   ],
+   "prehraj": "播放尾声的节奏",
+   "prehrajPozn": "由浏览器生成的咔嗒声模拟的节奏示意，并非录音。",
+   "zalozky": [
+    {
+     "nazev": "鲸",
+     "oddily": [
+      {
+       "h": "抹香鲸：尾声",
+       "p": [
+        "抹香鲸（Physeter macrocephalus）借助“尾声”（coda）交流——尾声是由大约3到40次咔嗒声按固定节奏组成的短序列。威廉·沃特金斯（William Watkins）和威廉·谢维尔（William Schevill）于1977年首次描述了尾声。",
+        "雌鲸及其幼崽生活在稳定的家庭单位中。尾声库相似的单位构成所谓的“声音族群”（vocal clan）；族群之间的差异很像方言，幼鲸很可能是从周围的个体那里学会尾声库的。在加勒比海的多米尼克岛附近，EC1族群的典型尾声是“1+1+3”：两次间隔较长的咔嗒声，接着是三次快速的咔嗒声。"
+       ]
+      },
+      {
+       "h": "语音字母表？",
+       "p": [
+        "2024年，CETI项目团队（Sharma等，《自然·通讯》）根据在多米尼克录制的录音证明，尾声在更细微的特征上也有差异：速度、节奏、连续尾声的逐渐拉长和缩短（rubato）以及额外的一次咔嗒声（装饰音）。这些特征彼此独立地组合，因此不同尾声的数量远远多于此前的设想。",
+        "作者称之为“抹香鲸语音字母表”。至于各种组合的含义，目前还没有人知道。"
+       ]
+      },
+      {
+       "h": "座头鲸：歌声",
+       "p": [
+        "雄性座头鲸（Megaptera novaeangliae）唱的歌长达几分钟到几十分钟，并会重复数小时。歌曲在多个层次上具有结构：单个声音构成乐句，重复的乐句构成主题，主题构成歌曲。罗杰·佩恩（Roger Payne）和斯科特·麦凯（Scott McVay）于1971年描述了这种歌声。",
+        "同一种群的雄鲸在同一时期唱的基本上是同一首歌，而歌曲会逐渐变化。在南太平洋，新的歌曲从澳大利亚东部向东逐个种群地传播（Garland等，2011），很像一种文化潮流。"
+       ]
+      },
+      {
+       "h": "类似语言的统计特征",
+       "p": [
+        "2025年的一项研究（Arnon等，《科学》）用一种受婴儿在言语中发现词语的方式启发的方法，把歌曲切分为反复出现的片段：在一个声音后接另一个声音的概率下降之处设置边界。这些片段的频率遵循齐普夫定律，与人类语言中的词语一样。在以人为对象的实验中，这样的分布使学习更加容易；但这并不意味着这些片段承载意义。",
+        "座头鲸的歌声也收录在1977年的旅行者号金唱片中：它紧接在55种人类语言的问候语之后，作为联合国代表致辞的背景。"
+       ]
+      }
+     ]
+    },
+    {
+     "nazev": "海豚",
+     "oddily": [
+      {
+       "h": "海豚的名字",
+       "p": [
+        "宽吻海豚（Tursiops truncatus）有自己的所谓“标志性哨声”（signature whistle），与其他个体的哨声不同（Caldwell和Caldwell，1965）。它在出生后的头几个月形成，往往伴随其一生（Janik和Sayigh，2013）。",
+        "海豚偶尔会模仿另一只海豚的标志性哨声，大多是与之分离的亲密同伴的哨声（King等，2013）。海豚会回应播放出来的自己哨声的复制品，但不回应其他个体的哨声（King和Janik，2013）。因此，它的作用很像名字。",
+        "即使分开二十多年，海豚仍能记住昔日同伴的哨声（Bruck，2013）。"
+       ]
+      },
+      {
+       "h": "理解句子",
+       "p": [
+        "20世纪80年代，路易斯·赫尔曼（Louis Herman）在夏威夷教两只雌性宽吻海豚学习人造语言：教阿基卡迈（Akeakamai）手势语言，教菲尼克斯（Phoenix）由计算机生成的声音语言。它们也能理解新的句子，并能区分语序：把冲浪板带到圆环那里，与把圆环带到冲浪板那里是不同的（Herman等，1984）。但这是对人类发明的语言的理解，而不是海豚自己的言语。"
+       ]
+      },
+      {
+       "h": "人工智能",
+       "p": [
+        "丹尼丝·赫尔辛（Denise Herzing）的“野生海豚项目”（Wild Dolphin Project）自1985年起在巴哈马录制大西洋点斑原海豚（Stenella frontalis）的声音。2025年，谷歌与该项目及佐治亚理工学院一起推出了名为DolphinGemma的AI模型，它学习海豚声音的结构，旨在帮助在录音中找出反复出现的模式。迄今尚未发表经过同行评审的结果（截至2026年9月）。"
+       ]
+      },
+      {
+       "h": "虎鲸：家族方言",
+       "p": [
+        "虎鲸（Orcinus orca）是海豚科中体型最大的种类。不列颠哥伦比亚省和华盛顿州附近以鱼为食的虎鲸生活在由同一位母亲繁衍而来的家族群（母系群）中，每个群都有自己的一套固定叫声。共享部分叫声的群构成一个声学族群（Ford，1991）。幼鲸很可能从母亲那里学会这些叫声，群体在几十年间几乎不加改变地保留它们，因此人们把它们称为方言。"
+       ]
+      },
+      {
+       "h": "沉默的猎手",
+       "p": [
+        "捕食海豹、海狮和鼠海豚等海洋哺乳动物的虎鲸（比格氏虎鲸）发出的叫声比以鱼为食的虎鲸少得多，可能是因为猎物会听到它们。它们主要在成功捕猎之后以及在水面嬉戏时发出叫声（Deecke等，2005）。"
+       ]
+      },
+      {
+       "h": "模仿",
+       "p": [
+        "虎鲸能够模仿陌生的声音。与宽吻海豚一起饲养的虎鲸开始像海豚那样发出更多的哨声和咔嗒声，其中一只还学会了人类教给海豚的一段啁啾声序列（Musser等，2014）。圈养的雌性虎鲸维姬（Wikie）模仿过“hello”和“bye bye”等人类词语（Abramson等，2018）。但这并不意味着它理解这些词。"
+       ]
+      }
+     ]
+    },
+    {
+     "nazev": "是语言吗？",
+     "oddily": [
+      {
+       "h": "尚未证实",
+       "p": [
+        "至少不是在汉语或中国手语是语言的那种意义上。人类语言把有意义的单位按照规则组合成无穷无尽的新话语。我们知道，鲸类的交流具有复杂的结构，通过学习传承，并且像方言一样因群体而异。已知抹香鲸的尾声和虎鲸的叫声能透露发声者属于哪个群体，海豚的标志性哨声的作用很像名字。但我们不知道尾声、座头鲸的歌声或虎鲸的叫声是否承载类似词语的意义，更不知道它们能否组合成新的话语。",
+        "因此，鲸类在地球仪上没有圆点：本图集依据Glottolog收录人类语言。"
+       ]
+      }
+     ]
+    },
+    {
+     "nazev": "来源",
+     "zdroje": [
+      "Watkins, W. A. – Schevill, W. E. (1977): Sperm whale codas. Journal of the Acoustical Society of America 62: 1485–1490.",
+      "Rendell, L. – Whitehead, H. (2003): Vocal clans in sperm whales (Physeter macrocephalus). Proceedings of the Royal Society B 270: 225–231.",
+      "Sharma, P. et al. (2024): Contextual and combinatorial structure in sperm whale vocalisations. Nature Communications 15: 3617.",
+      "Payne, R. S. – McVay, S. (1971): Songs of humpback whales. Science 173: 585–597.",
+      "Garland, E. C. et al. (2011): Dynamic horizontal cultural transmission of humpback whale song at the ocean basin scale. Current Biology 21: 687–691.",
+      "Arnon, I. et al. (2025): Whale song shows language-like statistical structure. Science 387: 649–653.",
+      "Caldwell, M. C. – Caldwell, D. K. (1965): Individualized whistle contours in bottle-nosed dolphins (Tursiops truncatus). Nature 207: 434–435.",
+      "King, S. L. – Janik, V. M. (2013): Bottlenose dolphins can use learned vocal labels to address each other. PNAS 110: 13216–13221.",
+      "Bruck, J. N. (2013): Decades-long social memory in bottlenose dolphins. Proceedings of the Royal Society B 280: 20131726.",
+      "Herman, L. M. – Richards, D. G. – Wolz, J. P. (1984): Comprehension of sentences by bottlenosed dolphins. Cognition 16: 129–219.",
+      "Ford, J. K. B. (1991): Vocal traditions among resident killer whales (Orcinus orca) in coastal waters of British Columbia. Canadian Journal of Zoology 69: 1454–1483.",
+      "Deecke, V. B. – Ford, J. K. B. – Slater, P. J. B. (2005): The vocal behaviour of mammal-eating killer whales: communicating with costly calls. Animal Behaviour 69: 395–405.",
+      "Musser, W. B. et al. (2014): Differences in acoustic features of vocalizations produced by killer whales cross-socialized with bottlenose dolphins. Journal of the Acoustical Society of America 136: 1990–2002.",
+      "Abramson, J. Z. et al. (2018): Imitation of novel conspecific and human speech sounds in the killer whale (Orcinus orca). Proceedings of the Royal Society B 285: 20172171.",
+      "Janik, V. M. – Sayigh, L. S. (2013): Communication in bottlenose dolphins: 50 years of signature whistle research. Journal of Comparative Physiology A 199: 479–489.",
+      "King, S. L. – Sayigh, L. S. – Wells, R. S. – Fellner, W. – Janik, V. M. (2013): Vocal copying of individually distinctive signature whistles in bottlenose dolphins. Proceedings of the Royal Society B 280: 20130053.",
+      "Hersh, T. A. et al. (2022): Evidence from sperm whale clans of symbolic marking in non-human cultures. PNAS 119: e2201692119."
+     ]
+    }
+   ]
+  },
+  "babel": {
+   "stitek": "语言的变乱",
+   "nazev": "巴别塔",
+   "pozdrav": "בָּבֶל",
+   "prepis": "希伯来语Bavel，阿卡德语Bāb-ili",
+   "stitky": [
+    [
+     "地点",
+     "巴比伦，今伊拉克"
+    ],
+    [
+     "出处",
+     "《创世记》11:1–9"
+    ]
+   ],
+   "zalozky": [
+    {
+     "nazev": "故事",
+     "oddily": [
+      {
+       "h": "同一种语言",
+       "p": [
+        "据《创世记》第十一章记载，那时天下人都说同一种语言。他们在示拿地建造一座城和一座塔，塔顶要通天，为要“传扬我们的名”。耶和华变乱了他们的语言，使他们彼此言语不通，又使他们分散在全地上。",
+        "经文用一个双关语来解释这座城的名字：它把希伯来语Bavel与动词bālal（“变乱”）联系起来。这个名字的真正来源与此不同。巴比伦人把它解释为Bāb-ili，即“神之门”，而这个名字可能还要更古老。"
+       ]
+      }
+     ]
+    },
+    {
+     "nazev": "塔",
+     "oddily": [
+      {
+       "h": "埃特曼安吉",
+       "p": [
+        "这座塔的原型很可能是巴比伦马尔杜克神庙埃萨吉拉旁的塔庙埃特曼安吉（Etemenanki），苏美尔语意为“天地之基的殿宇”。据尼布甲尼撒二世（前605—前562年在位）本人的铭文，塔庙的修复由他完成，当时一部分犹大人正被掳居住在巴比伦。",
+        "所谓的“埃萨吉拉泥板”是公元前229年（塞琉古时期）在乌鲁克制作的一份较古老文本的楔形文字抄本，它记载塔基为正方形，每边约91米。如今只剩下塔的地基。"
+       ]
+      }
+     ]
+    },
+    {
+     "nazev": "语言学",
+     "oddily": [
+      {
+       "h": "为什么有这么多语言",
+       "p": [
+        "在本图集的{n}种语言中，有{r}个语系，以及{i}种孤立语言，其与其他语言的亲缘关系尚未得到证明。",
+        "所有语言是否都可追溯到同一个共同祖先，无法得到证明。语言学家用来构拟原始语的比较方法，按通常的估计最多只能回溯约6000年至1万年，而人类说话的历史要长得多。语言的多样性并非一下子产生的：语言每一代都在变化，彼此不再交谈的群体，几个世纪内就会无法相互理解。"
+       ]
+      }
+     ]
+    },
+    {
+     "nazev": "来源",
+     "zdroje": [
+      "《创世记》11:1–9。",
+      "George, A. R. (2005–2006): The Tower of Babel: archaeology, history and cuneiform texts. Archiv für Orientforschung 51: 75–95.",
+      "Hammarström, H. et al.: Glottolog (glottolog.org).",
+      "Campbell, L. (2013): Historical Linguistics: An Introduction. 3rd ed. Edinburgh University Press."
+     ]
+    }
+   ]
+  }
+ },
+ "pismaSveta": {
+  "naMiste": "此处的语言：{j} ›",
+  "stitek": "文字",
+  "typ": "类型",
+  "smer": "书写方向",
+  "jazyku": "地球仪上的语言",
+  "zToho": "其中{n}种为估计",
+  "typy": {
+   "abeceda": "全音素文字（辅音和元音都有字母）",
+   "abdzad": "辅音音素文字（主要书写辅音）",
+   "abugida": "元音附标文字（辅音附带元音）",
+   "slabicne": "音节文字",
+   "logograficke": "语素文字（一个符号 = 一个有意义的音节）",
+   "smisene": "混合文字（汉字与音节文字）"
+  },
+  "smery": {
+   "ltr": "从左到右",
+   "rtl": "从右到左",
+   "ttb": "从上到下，各列从左到右"
+  },
+  "oPismu": "关于这种文字",
+  "jazyky": "语言",
+  "jazykyAtlasu": "本图集中用这种文字书写的语言",
+  "uredni": "用这种文字书写的官方语言",
+  "uredniKratce": "官方地位",
+  "rodokmen": "文字谱系",
+  "zadnyAtlas": "附有详细卡片的语言中，没有一种用这种文字书写。",
+  "zadnyStat": "据CLDR，没有任何国家的官方语言用这种文字书写。",
+  "jazykyPozn": "地球仪上一种文字的区域，由依据Unicode CLDR用该文字书写的所有语言的圆点构成；对于没有详细数据的语言，采用CLDR的估计。用多种文字书写的语言属于多个区域。",
+  "zdroj": "依据Unicode CLDR，以这种文字书写的语言在全国范围内具有官方地位的国家。",
+  "tip": "点击彩色区域或文字示例可打开文字卡片。"
+ }
 }

@@ -29,6 +29,10 @@ function cislo(lang, n, des) { return n.toLocaleString(LOC[lang] || "en-GB", { m
 /* stejně jako lidi() v app.js: malá čísla přesně, velká zaokrouhleně */
 function lidi(lang, T, n) {
   if (n < 10000) return cislo(lang, n);
+  if (lang === "zh") {               // čínsky po 万 a 亿 jako v app.js
+    if (n < 1e8) { const w = n < 1e6 ? Math.round(n / 1e3) / 10 : Math.round(n / 1e4); return cislo(lang, w, Math.floor(w) === w ? 0 : 1) + "万"; }
+    const y = Math.round(n / 1e7) / 10; return cislo(lang, y, Math.floor(y) === y ? 0 : 1) + "亿";
+  }
   if (n < 1e6) { const k = Math.round(n / 1000); return cislo(lang, k) + " " + tvar(lang, k, T.tisic); }
   if (n < 1e9) { const m = n < 1e7 ? Math.round(n / 1e5) / 10 : Math.round(n / 1e6); return cislo(lang, m, Math.floor(m) === m ? 0 : 1) + " " + tvar(lang, m, T.milionu); }
   const g = Math.round(n / 1e8) / 10; return cislo(lang, g, Math.floor(g) === g ? 0 : 1) + " " + tvar(lang, g, T.miliardy);
@@ -199,9 +203,9 @@ footer a{color:inherit}
   /* tlačítko Poslechni si to: data-kod (jazyk pro hlas), data-text (pozdrav), data-prep (výslovnost) */
   const znakovyJ = j => { const i = bodJazyka[j.id]; return i >= 0 && glottolog.rodiny[glottolog.body[i][3]] === "Sign Language"; };
   /* jako v atlasu: bez kódu jazyka (a u znakového jazyka) se nic nepřehrává */
-  const tlacitkoZvuk = (lang, j, maly) => !j.kod || znakovyJ(j) ? "" : `<button type="button" class="${maly ? "posl" : "prehraj"}" data-kod="${escHtml(j.kod || "")}" data-text="${escHtml(j[lang].pozdrav || j.pozdrav)}" data-prep="${escHtml(j[lang].vyslovnost || "")}"${maly ? ` aria-label="${escHtml(UI[lang].poslechni + ": " + j[lang].nazev)}" title="${escHtml(UI[lang].poslechni)}"` : ""}>${IKONA_ZVUK}${maly ? "" : `<span>${escHtml(UI[lang].poslechni)}</span>`}</button>`;
+  const tlacitkoZvuk = (lang, j, maly) => !j.kod || znakovyJ(j) ? "" : `<button type="button" class="${maly ? "posl" : "prehraj"}" data-kod="${escHtml(j.kod || "")}" data-text="${escHtml(j[lang].pozdrav || j.pozdrav)}" data-prep="${escHtml((lang === "zh" ? j.en.vyslovnost : j[lang].vyslovnost) || "")}"${maly ? ` aria-label="${escHtml(UI[lang].poslechni + ": " + j[lang].nazev)}" title="${escHtml(UI[lang].poslechni)}"` : ""}>${IKONA_ZVUK}${maly ? "" : `<span>${escHtml(UI[lang].poslechni)}</span>`}</button>`;
   const skriptZvuk = lang => { const T = UI[lang], texty = JSON.stringify({ rodily: T.zvukRodily, zalozni: T.zvukZalozni, zadny: T.zvukZadny, neumi: T.zvukNeumi,
-      chyba: T.zvukChyba, posloucha: T.posloucha, znovu: T.znovu, hlas: T.hlasZalozni, en: lang === "en" }).replace(/</g, "\\u003c");
+      chyba: T.zvukChyba, posloucha: T.posloucha, znovu: T.znovu, hlas: lang === "zh" ? "en-GB" : T.hlasZalozni, en: lang === "en" || lang === "zh" }).replace(/</g, "\\u003c");   // čínsky čte záložní hlas anglickou výslovnost (jako app.js)
     return `<script>(function(){var T=${texty},hlasy=[],ss=window.speechSynthesis;function nacti(){try{hlasy=ss.getVoices()||[]}catch(e){hlasy=[]}}
 if(ss){nacti();ss.addEventListener("voiceschanged",nacti)}
 function najdi(k){if(!k||!hlasy.length)return null;k=k.toLowerCase().replace("_","-");var z=k.split("-")[0],n=function(v){return v.lang.toLowerCase().replace("_","-")};

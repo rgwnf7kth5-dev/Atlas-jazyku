@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>如何使用本图集 · 语言地图集</title>
+<meta name="description" content="本图集在交互式地球仪上展示依据Glottolog的世界全部7967种语言。本指南介绍每一项功能，以及如何用鼠标、触摸屏或键盘使用它。">
+<meta name="author" content="Tomáš Kubín">
+<link rel="canonical" href="https://thelanguageatlas.com/zh/guide/">
+<link rel="alternate" hreflang="cs" href="https://atlasjazyku.cz/navod/">
+<link rel="alternate" hreflang="en" href="https://thelanguageatlas.com/guide/">
+<link rel="alternate" hreflang="it" href="https://thelanguageatlas.com/it/guida/">
+<link rel="alternate" hreflang="de" href="https://thelanguageatlas.com/de/anleitung/">
+<link rel="alternate" hreflang="fr" href="https://thelanguageatlas.com/fr/guide/">
+<link rel="alternate" hreflang="he" href="https://thelanguageatlas.com/he/guide/">
+<link rel="alternate" hreflang="zh" href="https://thelanguageatlas.com/zh/guide/">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#FBF9F4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#070C1C" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://thelanguageatlas.com/zh/guide/">
+<meta property="og:title" content="如何使用本图集 · 语言地图集">
+<meta property="og:description" content="本图集在交互式地球仪上展示依据Glottolog的世界全部7967种语言。本指南介绍每一项功能，以及如何用鼠标、触摸屏或键盘使用它。">
+<meta property="og:image" content="https://thelanguageatlas.com/nahled-en.b035ee127a.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="如何使用本图集 · 语言地图集">
+<meta name="twitter:description" content="本图集在交互式地球仪上展示依据Glottolog的世界全部7967种语言。本指南介绍每一项功能，以及如何用鼠标、触摸屏或键盘使用它。">
+<meta name="twitter:image" content="https://thelanguageatlas.com/nahled-en.b035ee127a.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800&family=Frank+Ruhl+Libre:wght@500;700&family=Assistant:wght@400;600;700&display=swap">
+<style>
+:root{color-scheme:light dark; --listek:#FFFDF6; --linka-listku:rgba(60,110,200,.10); --papir:#FBF9F4; --karta:#FFFFFF; --text:#15192B; --text2:#5A6073; --linka:rgba(20,24,40,.1); --akcent:#D23A2B; --odkaz:#1F4FB8;
+  --nadpis:"Playfair Display",Georgia,serif; --pismo:"Outfit",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root{--listek:#121A36; --linka-listku:rgba(140,180,255,.08); --papir:#070C1C; --karta:#101834; --text:#EAF4FF; --text2:#A3B6D8; --linka:rgba(150,205,255,.16); --akcent:#E0503F; --odkaz:#8FB4FF}}
+*{box-sizing:border-box}
+body{margin:0; background:var(--papir); color:var(--text); font:17px/1.55 var(--pismo)}
+a{color:var(--odkaz)}
+.hlava{display:flex; align-items:center; gap:14px; max-width:980px; margin:0 auto; padding:16px 20px; border-bottom:1px solid var(--linka)}
+.hlava .domu{display:flex; align-items:center; gap:10px; color:inherit; text-decoration:none; font:600 1.6rem/1 var(--nadpis)}
+.hlava .domu svg{width:40px; height:40px}
+.hlava .jinam{margin-left:auto; display:flex; gap:2px; padding:3px; border:1px solid var(--linka); border-radius:999px; font-weight:600; font-size:.8rem; letter-spacing:.05em}
+.hlava .jinam a,.hlava .jinam b{padding:5px 9px; border-radius:999px; color:inherit; text-decoration:none}
+.hlava .jinam b{background:color-mix(in srgb, var(--odkaz) 14%, transparent); color:var(--odkaz)} .hlava .jinam a{color:var(--text2)} .hlava .jinam a:hover{color:var(--text)}
+main{max-width:980px; margin:0 auto; padding:18px 20px 40px}
+.drobky{font-size:.85rem; color:var(--text2); margin:0 0 14px}
+.drobky a{color:inherit}
+.jazyk{display:grid; grid-template-columns:minmax(0,1.15fr) minmax(0,1fr); gap:28px; align-items:start}
+.malba{width:100%; height:auto; aspect-ratio:8/5; border-radius:18px; display:block; background:#EFE9DC; box-shadow:0 18px 40px -26px rgba(25,32,60,.5)}
+@media (prefers-color-scheme:dark){.malba{filter:brightness(.85)}}
+.pozdrav{margin:0; font:600 clamp(2.6rem,6vw,3.6rem)/1.1 var(--nadpis)}
+.cteme{margin:4px 0 14px; font:italic 1.1rem var(--nadpis); color:var(--text2)}
+.cteme-en{font-size:.85em}
+h1{margin:0; font:600 2rem/1.2 var(--nadpis)}
+.domaci{margin:2px 0 18px; color:var(--text2)}
+.tl{display:inline-flex; align-items:center; gap:8px; padding:12px 22px; border-radius:999px; background:var(--akcent); color:#fff; text-decoration:none; font-weight:700}
+.tl:focus-visible{outline:3px solid var(--text); outline-offset:3px}
+dl{display:grid; grid-template-columns:auto 1fr; gap:6px 16px; margin:22px 0 0; font-size:.95rem}
+dt{color:var(--text2)} dd{margin:0}
+h2{font:600 1.35rem var(--nadpis); margin:30px 0 8px}
+.fakt{font-size:1.1rem; max-width:44em}
+.mrizka{display:grid; grid-template-columns:repeat(auto-fill,minmax(170px,1fr)); gap:10px; padding:0; margin:0; list-style:none}
+.akce{display:flex; flex-wrap:wrap; align-items:center; gap:10px}
+.prehraj{display:inline-flex; align-items:center; gap:8px; padding:12px 20px; border-radius:999px; border:0; cursor:pointer; font:inherit; font-weight:700;
+  background:#1F4FB8; color:#fff}
+@media (prefers-color-scheme:dark){.prehraj{background:#4C7BE0}}
+.prehraj svg{width:18px; height:18px}
+.prehraj:focus-visible,.posl:focus-visible{outline:3px solid var(--text); outline-offset:3px}
+.zvuk-stav{margin:10px 0 0; font-size:.9rem; color:var(--text2)}
+.zvuk-stav.bublina{position:fixed; left:50%; bottom:18px; transform:translateX(-50%); z-index:10; max-width:min(520px, calc(100% - 32px)); margin:0;
+  padding:10px 16px; border-radius:14px; background:var(--karta); color:var(--text); border:1px solid var(--linka); box-shadow:0 12px 30px -12px rgba(0,0,0,.4)}
+.mrizka li{position:relative}
+.posl{position:absolute; top:8px; right:8px; width:34px; height:34px; display:grid; place-items:center; border-radius:50%; border:1px solid var(--linka);
+  background:var(--papir); color:var(--odkaz); cursor:pointer}
+.posl:hover{border-color:var(--odkaz)}
+.posl svg{width:16px; height:16px}
+.mrizka li:has(.posl) a{padding-right:48px}
+.mrizka a b{overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.mrizka a{display:block; padding:10px 14px; border-radius:14px; background:var(--karta); border:1px solid var(--linka); color:inherit; text-decoration:none}
+.mrizka a:hover,.mrizka a:focus-visible{border-color:var(--odkaz)}
+.mrizka b{display:block; font:600 1.25rem/1.25 var(--nadpis)}
+.mrizka span{font-size:.88rem; color:var(--text2)}
+.text p{max-width:46em; color:var(--text2)} .text .uvod{color:var(--text); font-size:1.08rem}
+table{border-collapse:collapse; width:100%; max-width:46em; font-size:.92rem}
+td{padding:7px 10px 7px 0; border-bottom:1px solid var(--linka); vertical-align:top}
+ul.kal{list-style:none; padding:0; margin:0 0 8px; max-width:46em}
+ul.kal li{display:flex; gap:14px; padding:9px 0; border-bottom:1px solid var(--linka)}
+.kal-d{flex:none; width:5.5em; font:600 1rem var(--nadpis)}
+ul.kal a{font-weight:600; text-decoration:none} ul.kal a:hover{text-decoration:underline}
+ul.kal b{font-family:var(--nadpis)} .kal-p{font-size:.92rem; color:var(--text2)}
+footer{max-width:980px; margin:0 auto; padding:10px 20px 24px; border-top:1px solid var(--linka); font-size:.85rem; color:var(--text2)}
+footer summary{cursor:pointer; font-weight:600; padding:6px 0}
+footer details p{margin:8px 0}
+/* kartoteční lístek nad seznamem */
+body.s-listkem{overflow:hidden}
+.listek-pozadi{position:fixed; inset:0; z-index:50; overflow:auto; padding:32px 16px; background:rgba(20,24,40,.42); backdrop-filter:blur(2px)}
+.listek-pozadi[hidden]{display:none}
+.listek{position:relative; max-width:940px; margin:0 auto; padding:14px 28px 40px; border-radius:6px 6px 10px 10px; background:var(--listek);
+  box-shadow:0 30px 70px -30px rgba(0,0,0,.55), 0 2px 0 rgba(0,0,0,.04); border-top:4px solid var(--akcent)}
+.listek::after{content:""; position:absolute; left:50%; bottom:12px; width:16px; height:16px; margin-left:-8px; border-radius:50%;
+  background:rgba(20,24,40,.42); box-shadow:inset 0 1px 3px rgba(0,0,0,.35)}
+.listek-hlava{display:flex; align-items:center; gap:8px; margin:0 -12px 14px; padding-bottom:10px; border-bottom:2px solid color-mix(in srgb, var(--akcent) 55%, transparent)}
+.listek-poradi{font-size:.85rem; color:var(--text2); font-variant-numeric:tabular-nums}
+.listek-sip,.listek-x{display:grid; place-items:center; width:40px; height:40px; border-radius:50%; text-decoration:none; color:var(--text);
+  font-size:1.6rem; line-height:1; border:1px solid var(--linka)}
+.listek-x{margin-left:auto; font-size:1.7rem}
+.listek-sip:hover,.listek-x:hover{border-color:var(--odkaz); color:var(--odkaz)}
+.listek-sip:focus-visible,.listek-x:focus-visible{outline:3px solid var(--odkaz); outline-offset:2px}
+.listek-linky{margin-top:6px; background-image:repeating-linear-gradient(to bottom, transparent 0 31px, var(--linka-listku) 31px 32px)}
+.listek h1{font:600 2rem/1.2 var(--nadpis); margin:0}
+.nadpis-seznamu{font:600 2rem/1.2 var(--nadpis); margin:0}
+@media (max-width:760px){ .listek-pozadi{padding:0} .listek{min-height:100%; border-radius:0; padding:10px 16px 40px} }
+footer a{color:inherit}
+@media (max-width:760px){.jazyk{grid-template-columns:1fr; gap:18px} .hlava .domu{font-size:1.3rem} .hlava .domu svg{width:34px; height:34px}}.navod-tajemstvi{margin:30px 0 6px; text-align:center}
+.navod-tajemstvi > summary{display:inline-flex; list-style:none; cursor:pointer; padding:6px; border-radius:50%; color:var(--text2); opacity:.55; transition:opacity .2s}
+.navod-tajemstvi > summary::-webkit-details-marker{display:none}
+.navod-tajemstvi > summary:hover, .navod-tajemstvi > summary:focus-visible, .navod-tajemstvi[open] > summary{opacity:1}
+.navod-tajemstvi > summary:focus-visible{outline:2px solid var(--akcent); outline-offset:2px}
+.navod-tajemstvi .vejce{display:block; width:22px; height:28px; transform-origin:50% 85%}
+.navod-tajemstvi > summary:hover .vejce{animation:vejce-kyv .6s ease-in-out}
+.navod-tajemstvi[open] .vejce{transform:rotate(-14deg)}
+@keyframes vejce-kyv{25%{transform:rotate(-12deg)} 55%{transform:rotate(10deg)} 80%{transform:rotate(-5deg)}}
+@media (prefers-reduced-motion:reduce){.navod-tajemstvi > summary:hover .vejce{animation:none}}
+.navod-tajemstvi .tajemstvi-obsah{text-align:left; margin-top:10px; padding-top:14px; border-top:1px dashed var(--linka)}
+.navod-tajemstvi dl{display:block; margin:0}
+.navod-tajemstvi dt{font-weight:600; color:var(--text); margin-top:12px}
+.navod-tajemstvi dd{margin:3px 0 0; color:var(--text2)}
+</style>
+</head>
+<body>
+<header class="hlava">
+ <a class="domu" href="/zh/"><svg aria-hidden="true" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="50" cy="50" r="45" fill="#FBF9F4" stroke="#15192B" stroke-width="3.2"/><circle cx="50" cy="50" r="38.5" fill="none" stroke="#15192B" stroke-width="1.3" opacity=".5"/><g fill="none" stroke="#2E63D6" stroke-width="1.8" opacity=".75"><ellipse cx="50" cy="50" rx="31" ry="38.5"/><path d="M11.5 50h29M59.5 50h29"/></g><path transform="translate(36 34) scale(18)" d="M0.038 -0.355 0.281 0.271Q0.295 0.307 0.313 0.321Q0.331 0.334 0.345 0.335V0.355Q0.315 0.353 0.274 0.352Q0.234 0.352 0.193 0.352Q0.147 0.352 0.106 0.352Q0.065 0.353 0.04 0.355V0.335Q0.091 0.333 0.105 0.318Q0.118 0.302 0.098 0.251L-0.072 -0.214L-0.053 -0.24L-0.206 0.156Q-0.228 0.211 -0.232 0.246Q-0.237 0.281 -0.227 0.3Q-0.218 0.319 -0.196 0.326Q-0.175 0.334 -0.145 0.335V0.355Q-0.178 0.353 -0.208 0.352Q-0.238 0.352 -0.269 0.352Q-0.291 0.352 -0.31 0.352Q-0.33 0.353 -0.345 0.355V0.335Q-0.324 0.331 -0.301 0.308Q-0.28 0.285 -0.259 0.23L-0.031 -0.355Q-0.015 -0.354 0.004 -0.354Q0.022 -0.354 0.038 -0.355ZM0.108 0.067V0.087H-0.19L-0.18 0.067Z" fill="#15192B"/><path transform="translate(64 34) scale(18)" d="M0.342 -0.361V-0.341Q0.309 -0.34 0.293 -0.334Q0.277 -0.327 0.272 -0.309Q0.266 -0.292 0.266 -0.255V0.241Q0.266 0.277 0.272 0.295Q0.277 0.313 0.293 0.319Q0.309 0.325 0.342 0.327V0.347Q0.317 0.345 0.274 0.345Q0.232 0.344 0.183 0.344Q0.143 0.344 0.101 0.345Q0.058 0.345 0.032 0.347V0.327Q0.064 0.325 0.08 0.319Q0.096 0.313 0.102 0.295Q0.107 0.277 0.107 0.241V-0.255Q0.107 -0.307 0.096 -0.324Q0.085 -0.341 0.045 -0.341Q-0.023 -0.341 -0.051 -0.298Q-0.079 -0.255 -0.079 -0.178Q-0.079 -0.131 -0.068 -0.092Q-0.056 -0.054 -0.025 -0.031Q0.006 -0.009 0.065 -0.009H0.151Q0.151 -0.009 0.151 0.001Q0.151 0.011 0.151 0.011H0.054Q-0.034 0.011 -0.092 -0.005Q-0.15 -0.021 -0.184 -0.048Q-0.218 -0.075 -0.231 -0.109Q-0.244 -0.143 -0.244 -0.18Q-0.244 -0.237 -0.214 -0.277Q-0.183 -0.318 -0.122 -0.339Q-0.06 -0.36 0.032 -0.36Q0.051 -0.36 0.096 -0.359Q0.141 -0.358 0.19 -0.358Q0.232 -0.358 0.274 -0.359Q0.317 -0.36 0.342 -0.361ZM0.145 -0.006 0.143 0.011H0.034Q0.004 0.011 -0.014 0.03Q-0.032 0.048 -0.042 0.08Q-0.051 0.111 -0.058 0.153L-0.077 0.253Q-0.087 0.315 -0.122 0.338Q-0.158 0.361 -0.211 0.361Q-0.254 0.361 -0.284 0.348Q-0.316 0.334 -0.342 0.303L-0.328 0.291Q-0.318 0.302 -0.309 0.308Q-0.3 0.313 -0.287 0.314Q-0.269 0.314 -0.259 0.298Q-0.248 0.282 -0.24 0.242L-0.22 0.139Q-0.207 0.075 -0.161 0.047Q-0.114 0.019 -0.029 0.008Q-0.01 0.005 0.01 0.003Q0.029 0.001 0.06 -0.002Q0.092 -0.004 0.145 -0.006Z" fill="#15192B"/><path transform="translate(50 51) scale(18)" d="M0.197 0.329Q0.196 0.318 0.192 0.305Q0.188 0.292 0.179 0.277Q0.169 0.263 0.149 0.245L-0.211 -0.098Q-0.237 -0.123 -0.25 -0.154Q-0.263 -0.185 -0.263 -0.215Q-0.263 -0.242 -0.256 -0.268Q-0.248 -0.294 -0.235 -0.329H-0.201V-0.312Q-0.201 -0.294 -0.192 -0.273Q-0.183 -0.252 -0.159 -0.228L0.211 0.122Q0.226 0.137 0.236 0.154Q0.245 0.172 0.25 0.191Q0.255 0.21 0.255 0.231Q0.255 0.26 0.246 0.282Q0.236 0.304 0.221 0.329ZM-0.267 0.319V0.242H-0.25Q-0.233 0.242 -0.227 0.235Q-0.221 0.229 -0.225 0.213L-0.242 0.144Q-0.253 0.1 -0.244 0.057Q-0.236 0.015 -0.208 -0.022L-0.158 -0.089L-0.126 -0.054L-0.152 -0.012Q-0.173 0.022 -0.173 0.048Q-0.174 0.074 -0.153 0.111L-0.121 0.172Q-0.104 0.202 -0.099 0.237Q-0.095 0.273 -0.112 0.319ZM0.141 0.058 0.09 0.011Q0.09 0.001 0.096 -0.016Q0.102 -0.033 0.111 -0.051Q0.12 -0.07 0.129 -0.084L0.173 -0.158L0.22 -0.142L0.172 -0.062Q0.16 -0.042 0.153 -0.023Q0.146 -0.004 0.144 0.016Q0.141 0.036 0.141 0.058ZM0.253 -0.099 0.128 -0.115Q0.094 -0.119 0.081 -0.139Q0.067 -0.158 0.067 -0.201Q0.067 -0.227 0.073 -0.259Q0.078 -0.291 0.091 -0.329H0.126V-0.311Q0.126 -0.294 0.136 -0.285Q0.146 -0.275 0.165 -0.273L0.209 -0.267Q0.239 -0.263 0.253 -0.244Q0.267 -0.225 0.267 -0.189Q0.267 -0.167 0.264 -0.147Q0.26 -0.128 0.253 -0.099Z" fill="#15192B"/><path transform="translate(36.5 67.5) scale(18)" d="M0.019 0.388Q-0.059 0.388 -0.116 0.36Q-0.173 0.332 -0.204 0.28Q-0.235 0.228 -0.235 0.158Q-0.235 0.05 -0.16 -0.031Q-0.192 -0.046 -0.217 -0.07Q-0.241 -0.095 -0.253 -0.122Q-0.265 -0.149 -0.265 -0.174Q-0.265 -0.204 -0.254 -0.238Q-0.242 -0.273 -0.222 -0.304Q-0.201 -0.336 -0.176 -0.357Q-0.139 -0.388 -0.098 -0.388Q-0.063 -0.388 -0.025 -0.365Q0.013 -0.342 0.054 -0.295L0.033 -0.255Q0.003 -0.267 -0.023 -0.272Q-0.049 -0.278 -0.072 -0.278Q-0.107 -0.278 -0.135 -0.27Q-0.162 -0.263 -0.194 -0.246Q-0.191 -0.192 -0.158 -0.156Q-0.124 -0.12 -0.067 -0.106Q-0.023 -0.132 0.025 -0.153Q0.073 -0.175 0.127 -0.193Q0.138 -0.177 0.138 -0.142Q0.138 -0.121 0.129 -0.105Q0.121 -0.088 0.102 -0.075Q0.094 -0.069 0.076 -0.06Q0.058 -0.052 0.031 -0.041Q-0.056 -0.007 -0.099 0.021Q-0.142 0.049 -0.163 0.082Q-0.173 0.098 -0.179 0.116Q-0.184 0.134 -0.184 0.152Q-0.184 0.209 -0.132 0.241Q-0.079 0.273 0.021 0.273Q0.041 0.273 0.062 0.272Q0.083 0.27 0.105 0.267Q0.126 0.264 0.163 0.257Q0.2 0.249 0.252 0.237L0.265 0.279Q0.179 0.332 0.114 0.36Q0.05 0.388 0.019 0.388Z" fill="#15192B"/><path transform="translate(64 67) scale(18)" d="M-0.083 0.413Q0.048 0.388 0.131 0.343Q0.214 0.297 0.254 0.237Q0.293 0.178 0.293 0.111Q0.293 0.056 0.268 0.013Q0.243 -0.029 0.198 -0.053Q0.153 -0.077 0.09 -0.077Q0.04 -0.077 -0.011 -0.062Q-0.062 -0.048 -0.121 -0.015Q-0.18 0.017 -0.224 0.062Q-0.268 0.107 -0.291 0.152Q-0.315 0.198 -0.315 0.233Q-0.315 0.247 -0.309 0.254Q-0.303 0.261 -0.291 0.261Q-0.264 0.261 -0.231 0.247Q-0.199 0.233 -0.165 0.211Q-0.131 0.189 -0.103 0.164Q-0.076 0.141 -0.048 0.11Q-0.02 0.078 0.006 0.043Q0.032 0.008 0.052 -0.026Q0.071 -0.06 0.08 -0.087Q0.09 -0.114 0.082 -0.133Q0.074 -0.151 0.045 -0.17L0.053 -0.182Q0.082 -0.177 0.105 -0.169Q0.127 -0.16 0.142 -0.144Q0.152 -0.134 0.154 -0.122Q0.156 -0.11 0.152 -0.096Q0.137 -0.045 0.102 0.016Q0.067 0.077 0.019 0.136Q-0.028 0.195 -0.078 0.241Q-0.138 0.299 -0.202 0.33Q-0.267 0.361 -0.321 0.361Q-0.359 0.361 -0.381 0.338Q-0.404 0.315 -0.404 0.27Q-0.404 0.218 -0.38 0.167Q-0.357 0.117 -0.316 0.073Q-0.276 0.029 -0.224 -0.007Q-0.172 -0.043 -0.116 -0.067Q-0.067 -0.09 -0.011 -0.102Q0.045 -0.114 0.104 -0.114Q0.196 -0.114 0.263 -0.078Q0.33 -0.043 0.367 0.015Q0.403 0.072 0.403 0.139Q0.403 0.216 0.368 0.272Q0.333 0.327 0.269 0.363Q0.204 0.398 0.116 0.414Q0.027 0.431 -0.079 0.432ZM-0.056 0.308Q-0.081 0.308 -0.1 0.284Q-0.12 0.261 -0.132 0.223Q-0.144 0.184 -0.15 0.137Q-0.156 0.09 -0.156 0.044Q-0.156 -0.003 -0.149 -0.06Q-0.143 -0.117 -0.134 -0.173Q-0.125 -0.229 -0.118 -0.276Q-0.111 -0.322 -0.111 -0.348Q-0.111 -0.361 -0.115 -0.367Q-0.119 -0.373 -0.132 -0.378Q-0.143 -0.383 -0.158 -0.387Q-0.173 -0.39 -0.188 -0.393L-0.189 -0.407Q-0.173 -0.415 -0.153 -0.424Q-0.133 -0.432 -0.118 -0.432Q-0.089 -0.432 -0.059 -0.423Q-0.029 -0.413 -0.009 -0.399Q0.011 -0.385 0.011 -0.372Q0.011 -0.36 0.004 -0.349Q-0.003 -0.339 -0.011 -0.327Q-0.019 -0.315 -0.024 -0.297Q-0.033 -0.261 -0.042 -0.221Q-0.051 -0.181 -0.058 -0.141Q-0.066 -0.1 -0.071 -0.061Q-0.076 -0.022 -0.076 0.013Q-0.076 0.065 -0.065 0.101Q-0.055 0.138 -0.041 0.165Q-0.028 0.193 -0.018 0.216Q-0.008 0.239 -0.008 0.264Q-0.008 0.287 -0.021 0.297Q-0.034 0.308 -0.056 0.308ZM-0.227 -0.17Q-0.268 -0.17 -0.294 -0.185Q-0.321 -0.199 -0.337 -0.227Q-0.354 -0.254 -0.366 -0.291L-0.355 -0.301Q-0.329 -0.285 -0.307 -0.274Q-0.285 -0.263 -0.261 -0.258Q-0.238 -0.253 -0.21 -0.253Q-0.174 -0.253 -0.139 -0.257Q-0.104 -0.261 -0.074 -0.266Q-0.004 -0.279 0.046 -0.298Q0.095 -0.316 0.124 -0.33Q0.152 -0.344 0.159 -0.344Q0.199 -0.344 0.22 -0.333Q0.241 -0.321 0.241 -0.299Q0.241 -0.282 0.231 -0.271Q0.221 -0.259 0.202 -0.252Q0.183 -0.244 0.153 -0.235Q0.123 -0.226 0.086 -0.217Q0.049 -0.208 0.008 -0.199Q-0.034 -0.19 -0.077 -0.184Q-0.113 -0.178 -0.152 -0.174Q-0.191 -0.17 -0.227 -0.17Z" fill="#15192B"/><circle cx="50" cy="5" r="4.2" fill="#D23A2B" stroke="#FBF9F4" stroke-width="1.6"/></svg><span>语言地图集</span></a>
+ <nav class="jinam" aria-label="网站语言"><a href="https://atlasjazyku.cz/navod/" hreflang="cs" lang="cs" title="Česky">CS</a><a href="https://thelanguageatlas.com/guide/" hreflang="en" lang="en" title="English">EN</a><a href="https://thelanguageatlas.com/it/guida/" hreflang="it" lang="it" title="Italiano">IT</a><a href="https://thelanguageatlas.com/de/anleitung/" hreflang="de" lang="de" title="Deutsch">DE</a><a href="https://thelanguageatlas.com/fr/guide/" hreflang="fr" lang="fr" title="Français">FR</a><a href="https://thelanguageatlas.com/he/guide/" hreflang="he" lang="he" title="עברית">HE</a><b aria-current="true">中文</b></nav>
+</header>
+<main>
+<nav class="drobky" aria-label="导航路径"><a href="/zh/">语言地图集</a> › 如何使用本图集</nav>
+<div class="text">
+<h1>如何使用本图集</h1>
+<p class="uvod">本图集在交互式地球仪上展示依据Glottolog的世界全部7967种语言。本指南介绍每一项功能，以及如何用鼠标、触摸屏或键盘使用它。</p>
+<h2>地球仪</h2>
+<p>旋转：用鼠标或单指拖动。缩放：鼠标滚轮、双指捏合、地球仪右上角的 + 和 − 按钮，或 + 和 − 键。</p>
+<p>每个圆点代表一种语言，位于Glottolog标定的位置，通常在其使用区域的中央。点击圆点可打开语言卡片。所选语言及其亲属语言的名称显示在各自圆点旁；在“设置”中开启“名称”后，放大到2倍以上时会显示所有语言的名称。</p>
+<p>在圆点以外点击某个国家，会高亮显示该国及其全部语言，并显示依据Glottolog的语言数量。</p>
+<p>“全世界”按钮和左上角的“语言地图集”标志可使地球仪回到初始视图。</p>
+<h2>语言卡片</h2>
+<p>164种精选语言附有详细卡片：该地区的插图、附有近似读音的问候语，以及“播放发音”按钮（使用设备的语音合成功能）。下方是使用人数、语系和语言活力，以及“趣闻”（注释、分布、官方地位、文字、方言）、“语言活力”、“结构”和“亲属语言”等标签页。</p>
+<p>其他所有语言都有“概览”（语言活力、分布、官方地位、文字、方言、使用人数、文本示例）、“结构”（WALS类型学数据、PHOIBLE音位清单、记录程度）和“亲属语言”标签页。</p>
+<p>“官方语言”列出该语言具有官方地位的国家——全国性、事实上（没有明确的法律地位）或地区性（仅在该国部分地区）。“文字”列出该语言通常使用的文字，最常用的列在首位。两者都来自Unicode CLDR，约有800种语言具备这些数据。</p>
+<p>“结构”标签页给出每项WALS特征的确切取值；点击特征名称可打开相应的类型学地图。</p>
+<p>地球仪上的弧线从所选语言通向其最近的亲属语言。“语系谱系树”一行显示该语言在Glottolog谱系树中的归类。</p>
+<p>链条按钮可复制该语言的链接。在手机上，卡片位于屏幕底部：向上拖动可放大，向下拖动可缩小或关闭。</p>
+<h2>语言列表</h2>
+<p>可以搜索语言、国家或方言。搜索框中的叉号可清除搜索内容。</p>
+<p>也可以用日常语句输入问题：“巴西的语言”（某国的语言）、“斯拉夫语言”（Glottolog中的语系或分支）、“德语和意大利语”（比较两种语言）或“波斯语在哪里使用”。列表顶部显示搜索理解到的内容，列表中显示相应的语言；点击按钮或按Enter键可在地球仪上显示它们。回答仅来自图集数据。</p>
+<p>如果搜索无法理解某个问题，会提供“询问AI”：AI（Anthropic公司的Claude）查阅图集数据，到网上搜索图集中没有的内容（并列出来源），用几句话作答，并在地球仪上显示结果。它只回答有关语言的问题，而且可能出错。仅限网站版。</p>
+<p>可以按语系、按字母顺序或按大洲排序。附有详细卡片的语言以大图块显示，其他语言排在下方。</p>
+<p>“今日语言”在午夜更换，并且总会说明入选的理由：要么这一天与该语言有关（见“语言节日日历”），要么是环游世界、前往距离最近的下一种语言。在欧洲语言日（9月26日）这一天，则改为展示本图集中的全部欧洲语言。</p>
+<h2>地球仪下方的圆形按钮</h2>
+<p>地球仪下方的圆形按钮（在手机上分两行排列）可打开本图集的主要部分：古代语言、语言故事、谱系树、地图、语言活力和设置。“随机语言”位于语言列表的标题栏中、语言数量旁边，可打开随机选取的一种语言的卡片。</p>
+<p>“谱系树”以扇形显示一个语系的谱系树：如已选定某种语言，显示其所属语系，否则显示顶部菜单中选择的语系。拖动可移动，用滚轮或双指可缩放，点击分支可聚焦于该分支，点击语言可将其选中。“环形总览”按钮提供另一种视图，一次显示所有语系：扇区的宽度表示语言数量；点击扇区或列表中的某一行可深入下一层，点击圆心可返回上一层。语言少于25种的语系归入“较小语系”；孤立语言、手语、人造语言和皮钦语归入“语系之外”。点击“返回谱系树”或“打开语系谱系树”可回到扇形视图。</p>
+<p>“语言活力”打开一个关于语言濒危状况的页面：联合国教科文组织量表各等级的语言数量，按世界地区和按十五个最大语系的细分（附有通往谱系树的链接），本图集中的濒危语言、复苏中的语言，以及方法和来源。在该页面可以按语言活力为地球仪和谱系树着色——谱系树会显示一个语系中哪些分支处于濒危或已经灭绝——并勾选哪些等级保持可见（筛选）。着色开启期间，地球仪下方会显示图例；点击图例可再次打开该页面。该页面也可以通过语言卡片上的链接和地址#vitality打开。</p>
+<p>“地图”打开所有彩色地图的总览，附有预览：文字、语言活力，以及来自WALS的24项类型学特征。选择一幅地图后，窗口关闭，地球仪随之着色。</p>
+<p>设置：自动旋转、语言名称和手语（全部、不含手语或仅手语）。</p>
+<p>放大和缩小（+ 和 −）以及“全世界”按钮不显眼地位于地球仪右上角、帮助问号的下方；在手机上用双指捏合缩放。</p>
+<h2>类型学地图（WALS）</h2>
+<p>在“地图”窗口中，可以从五个领域（音系、形态、语序、小句结构、词汇）中选择24项特征之一。各语言按其取值着色，右下角出现图例，显示语言数量、该特征的说明以及通往WALS相应章节的链接。</p>
+<p>选择后窗口关闭；点击图例中的“其他地图……”或“地图”圆形按钮可再次打开。点击图例中的某个取值，只突出显示具有该取值的语言。WALS描述了约2600种语言的样本；其他圆点保持灰色。</p>
+<h2>文字地图</h2>
+<p>“文字”地图（在“地图”窗口中）按主要文字为语言着色：拉丁文、西里尔文、阿拉伯文、婆罗米系文字（印度、东南亚、西藏）、汉字及假名和注音符号，以及其他文字。右下角的图例给出语言数量；点击某一组可只突出显示该组。</p>
+<p>文字地图还显示36种现行文字的分布区域及其名称，并附有用该文字本身书写的示例（Abc、Абв、अआइ……）。点击名称或彩色区域可打开文字卡片（突出显示某一组时，只针对该组的文字）：类型（全音素文字、辅音音素文字、元音附标文字、音节文字、语素文字）、书写方向、关于其起源的简短说明、本图集中用该文字书写的语言，以及该文字用于书写官方语言的国家；“此处的语言”按钮可打开所点位置的语言。thelanguageatlas.com/zh/#pismo-latn这样的链接也可以打开文字卡片。</p>
+<p>数据来自Unicode CLDR。对于CLDR有详细数据的语言，文字有文献依据；其余语言则是CLDR的估计（即该语言书写时所用的文字，如果它有书面形式的话），语言卡片会将其标明为估计。文字地图和类型学地图不会同时显示。</p>
+<h2>比较两种语言</h2>
+<p>在语言卡片上选择“与另一种语言比较”，然后在地球仪上、列表中或通过搜索选择第二种语言。比较内容包括亲缘关系和最近共同祖先、相同和不同的WALS特征、音位清单、使用人数和文字。</p>
+<h2>古代语言</h2>
+<p>地球仪下方的“古代语言”圆形按钮可打开文明菜单；搜索也能找到它们，例如“埃及”。每一项都会打开一个以语言和文字为中心的文明页面：历史、符号示例、破译的经过、相关词语、语法、年表、照片和参考文献。菜单最前面是两个总览：文字谱系树（各种字母从何而来，附有用二十种文字书写的“国王”一词的对照表）和术语表（辅音音素文字、元音附标文字、限定符、牛耕式转行书写法……）。目前已完成的页面有：苏美尔与阿卡德、古埃及、埃兰与乌拉尔图、古印度、赫梯人、古代中国、腓尼基人、希伯来人与阿拉姆人、古希腊、凯尔特人、伊特鲁里亚人、古波斯、古罗马、亚美尼亚人与格鲁吉亚人、日耳曼人与卢恩字母、阿克苏姆、朝鲜半岛与谚文、突厥与鄂尔浑文、日本与假名、斯拉夫人与大摩拉维亚、玛雅、阿兹特克和印加。</p>
+<p>页面在地球仪上方打开；点击叉号、按Escape键或点击页面以外的地方即可关闭。左上角的“‹ 古代语言”按钮可返回文明列表，每个页面末尾都有通往其他页面的链接。“地球仪上的语言”一节中的按钮可在地球仪上显示相关的已灭绝语言。也可以从语言卡片（例如埃及语、科普特语、赫梯语或卢维语的卡片）以及通过thelanguageatlas.com/zh/#egypt和#hittites这样的链接打开页面；在网站上，每个页面也是一个独立的网页。</p>
+<h2>语言故事</h2>
+<p>地球仪下方的“语言故事”圆形按钮可打开故事菜单：与“古代语言”风格相同的专题页面，分为“旅行的词语”“语言的旅程”“时间中的语言”“人与语言”和“未解之谜”几组。目前已完成：茶和其他旅行的词语（为什么世界各地要么说“cha”，要么说“tea”）、从拉丁语到罗曼语族、回归的语言（威尔士语、毛利语、马恩语、希伯来语）以及语言之谜（未破译的文字、孤立语言和有争议的语系）。</p>
+<p>茶这一页上的“在地球仪上显示”按钮会关闭页面，并用WALS中“茶”一词来源的地图为地球仪着色。搜索也能找到这些故事（例如“茶”）；链接形如thelanguageatlas.com/zh/#tea，在网站上，每个故事也是/stories/下的一个独立网页。</p>
+<p>茶这一页有“地球仪上的词语之旅”一节，其中有以下词语的按钮：茶、咖啡、糖、橙子、巧克力、番茄、将军与将死、酒精、零与数字，以及洗发水。地球仪飞到该词传播经过的区域上空，从源语言出发逐步画出弧线；每个圆点旁显示该词的形式和语言。虚线弧表示有争议的路线。右上角的面板（在手机上位于地球仪下方）列出各个步骤及其年代和注释；点击某一步可打开语言卡片。“再播放一次”可重放动画，其他按钮可切换到另一个词。点击叉号、按Escape键或点击“全世界”按钮即可关闭；链接形如#cesta-caj。</p>
+<h2>语言的旅程</h2>
+<p>“旅程”在地球仪上展示一种语言如何从其原始语发展到今天：彩色的流向一个阶段接一个阶段地在地图上扩展，区域逐渐填满，较早的阶段则作为历史的层次淡淡地保留下来。有争议的解释以虚线绘制。现有以下语言的旅程：阿拉姆语、德语、法语、捷克语、库尔德语、罗姆语、马耳他语、毛利语（含通往马达加斯加的支线）、纳瓦霍语、土耳其语、西班牙语、希伯来语、匈牙利语、意大利语、意第绪语和英语。“字母的旅程”追踪的不是一种语言，而是一种文字：埃及的牛头图形如何经由腓尼基人、希腊人和罗马人变成字母A；每个阶段都在地图上显示当时的字母形态。它也可以从“文字”地图的图例和文字卡片中打开。</p>
+<p>可以从“语言故事”中的“语言的旅程”一组、语言卡片上以旅程命名的按钮（如“英语的旅程”，位于“趣闻”标签页），或通过thelanguageatlas.com/zh/#journey-english这样的链接打开旅程。</p>
+<p>右侧面板（在手机上位于地球仪下方）有播放和暂停按钮、时间轴滑块以及各阶段的列表，附有年代和文字说明；点击某一阶段可完整显示该阶段并暂停播放。来源列在各阶段下方。点击叉号、按Escape键、点击“全世界”按钮或选择另一种语言即可关闭旅程。</p>
+<h2>键盘</h2>
+<p>Tab键在各控件之间移动。按一次Tab进入语言列表；方向键在图块之间移动，Home和End键跳到开头和末尾，Enter键选择语言。</p>
+<p>+ 和 − 键缩放地球仪。Escape键关闭窗口、卡片或面板。</p>
+<h2>关于、来源、联系方式、指南和日历</h2>
+<p>语言列表的末尾（在手机上位于页面末尾）有一行折叠的内容：关于、来源、联系方式、指南和日历。点击即可展开。</p>
+<p>语言节日日历：一年中与某种语言相关的日子（语言日、国家节日、纪念日）。日历在最近的日子处打开；点击某种语言可在地球仪上显示它。</p>
+<p>关于数据：数据来源（Glottolog、WALS、PHOIBLE、Wikidata、Unicode CLDR等）、其版本和许可，以及列表条目为何多于地球仪上的圆点。</p>
+<p>完整指南：即本文。</p>
+<p>附有详细卡片的语言（仅限网站版）：全部164种语言集中在一个页面上。每种语言以卡片形式打开；用箭头可切换到下一种。</p>
+<p>联系方式：意见和更正请发送至info@atlasjazyku.cz。下方列有数据来源及其许可。</p>
+<h2>其他</h2>
+<p>在右上角可以切换界面语言（CS · EN · IT · DE · FR · HE · 中文）以及浅色或深色主题。您的选择会被保存。</p>
+<p>搜索也能找到为文学作品和电影创制的语言（如昆雅语或克林贡语）；它们与自然语言分开显示。</p>
+<p><a class="tl" href="/zh/">旋转的地球仪</a></p>
+<details class="navod-tajemstvi"><summary title="图集的秘密" aria-label="图集的秘密"><svg class="vejce" viewBox="0 0 24 30" aria-hidden="true"><path d="M12 1.2C6.6 1.2 2.6 10.8 2.6 18.3a9.4 9.4 0 0 0 18.8 0C21.4 10.8 17.4 1.2 12 1.2Z" fill="#F6EBD3" stroke="currentColor" stroke-width="1.1"/><path d="M3.6 14.6l2.1 2 2.1-2 2.1 2 2.1-2 2.1 2 2.1-2 2.1 2 2.1-2" fill="none" stroke="#D23A2B" stroke-width="1.5" stroke-linejoin="round"/><g fill="#D99A12"><circle cx="8.4" cy="8.6" r="1.1"/><circle cx="15.6" cy="8.6" r="1.1"/><circle cx="12" cy="5.4" r=".9"/><circle cx="7.4" cy="22" r="1.1"/><circle cx="12" cy="24.2" r="1.1"/><circle cx="16.6" cy="22" r="1.1"/></g></svg></summary>
+<div class="tajemstvi-obsah"><h2>图集的秘密</h2><p>本图集藏着几个在别处都没有介绍的小彩蛋。口令可以在页面上任意位置（文本框以外）输入，也可以输入搜索框，这在手机上同样有效。</p>
+<dl><dt>欧洲联盟的语言</dt><dd>输入“eulang”。地球仪飞到欧洲上空，欧盟全部24种官方语言处逐一出现金色星标，右侧出现一面飘扬的旗帜和语言列表。链接#eulang。</dd><dt>通往其他世界之门</dt><dd>输入“mellon”，这是精灵语的“朋友”，也是《魔戒》中都林之门的口令。地球仪消失，虚构语言的世界在群星间漂浮：克林贡语、昆雅语、辛达林语、纳美语、多斯拉克语和高等瓦雷利亚语。搜索也能找到它们（例如“精灵”或“克林贡”），芬兰语和威尔士语的卡片上藏有通往这扇门的线索。链接#mellon。</dd><dt>语言的变乱</dt><dd>输入“babel”。屏幕上的文字会短暂地散落成各种外国文字，随后打开一张关于巴别塔的卡片。链接#babel。</dd><dt>鲸类会说话吗？</dt><dd>在海洋中的同一位置快速点击三次。会打开一张卡片，介绍抹香鲸的尾声、座头鲸的歌、海豚的名字和虎鲸的方言——以及为什么这些都尚未被证明是语言。链接#cetaceans。</dd><dt>颠倒的地球仪</dt><dd>快速点击“语言地图集”标志七次。地球仪会上下颠倒，语言从上面掉落，然后回到原位。如果设备开启了“减少动态效果”，则不会运行。</dd></dl></div></details>
+</div>
+
+
+</main>
+<footer>
+ <details>
+  <summary>关于、来源、联系方式、指南和日历</summary>
+  <p><a href="/zh/">旋转的地球仪</a> · <a href="/zh/languages/">附有详细卡片的语言</a> · <a href="/zh/language-days/">语言节日日历</a> · <a href="/zh/guide/">完整指南</a> · <a href="/zh/vitality/">语言活力</a> · <a href="/zh/about-data/">关于数据</a></p>
+  <p>创意、构思与开发：Tomáš Kubín</p>
+  <p>意见和更正： <a href="mailto:info@atlasjazyku.cz?subject=%E8%AF%AD%E8%A8%80%E5%9C%B0%E5%9B%BE%E9%9B%86%E2%80%94%E2%80%94%E5%8F%8D%E9%A6%88">info@atlasjazyku.cz</a></p>
+  <p>圆点：Glottolog（CC BY 4.0） · 语法：WALS（CC BY 4.0） · 语音：PHOIBLE（CC BY-SA 3.0） · 地图：Natural Earth</p>
+ </details>
+</footer>
+</body>
+</html>

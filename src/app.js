@@ -359,14 +359,14 @@ let DOTAZ_IX = null, dotazSkupina = null, dotazAkce = null;
 const DOTAZ_SPUSTE = /^(jazyk|language|mluv|rec|speak|spoken|rodin|famil|vetev|vetv|branch|nareci|dialect|lingu|parla|ramo|rami|sprach|sprech|sprich|gesproch|zweig|dialekt|mundart|langu|parl|patois|[והבלמשכ]{0,2}(?:שפ|דובר|מדבר|ניב|משפח|ענף|语言|语系|语族|语支|方言|说|讲|使用))/;   // i hebrejsky (26. 10. 2026)   // i francouzsky (17. 10. 2026)   // i italsky (2. 10.) a německy (3. 10. 2026)
 const DOTAZ_PREDLOZKY = {v: 1, ve: 1, na: 1, in: 1, of: 1, del: 1, della: 1, dell: 1, dello: 1, di: 1, nel: 1, nella: 1, nello: 1, negli: 1, nei: 1, degli: 1, im: 1, von: 1, aus: 1, der: 1, en: 1, au: 1, aux: 1, du: 1, des: 1, de: 1, "של": 1, "在": 1};
 const DOTAZ_ALIASY_ZEMI = {"United States of America": ["usa", "us", "amerika", "america"], "United Kingdom": ["britanie", "britain", "uk", "anglie", "england"],
-  "Netherlands": ["holandsko", "holland"], "Czechia": ["ceska republika", "czech republic", "tschechische republik"], "Dem. Rep. Congo": ["kongo kinshasa", "drc"],
+  "Netherlands": ["holandsko", "holland"], "Czechia": ["ceska republika", "czech republic", "tschechische republik", "捷克共和国"], "Dem. Rep. Congo": ["kongo kinshasa", "drc", "刚果民主共和国", "刚果金"], "Congo": ["刚果共和国", "刚果布"], "Central African Rep.": ["中非共和国"],
   "Germany": ["brd"]};
 const DOTAZ_ALIASY_UZLU = {"Uralic": ["ugrofinska", "finno-ugric", "finnougric", "ugrofinniche", "finnougrisch", "finno-ugrisch"],
   /* italské názvy hlavních větví (české jsou v PD.vetve): „lingue slave“, „lingue romanze“… */
   "Slavic": ["slava"], "Germanic": ["germanica"], "Romance": ["romanza", "neolatina"], "Celtic": ["celtica"], "Eastern Baltic": ["baltica"],
   "Indo-Aryan": ["indoaria", "indoarya"], "Iranian": ["iranica"], "Semitic": ["semitica"], "Narrow Bantu": ["bantu", "bantusprachen"], "Italic": ["italica"]};
 /* čínština nepíše mezery: dotaz se rozdělí kolem pomocných a tázacích slov (巴西的语言 → 巴西 的 语言, 说波斯语 → 说 波斯语),
-   názvy se pak hledají jako celé úseky (shodaSlova1) */
+   názvy se pak hledají jako celé úseky (shodaSlova1).
    Jen u dotazu, ne u názvů: 和 je i v 共和国 (republika), proto se 共和国 před dělením schová. */
 const ZH_CASTICE = /(哪些|哪种|哪个|哪里|哪儿|什么|为什么|多少|怎么|所有|全部|列出|显示|比较|对比|区别|不同|共同|之间|欧盟|官方|成员国|语言|方言|使用|的|在|和|与|跟|有|说|讲|用|是|吗|呢)/g;
 function zhRozdel(s){ return s.replace(/[\u3400-\u9FFF]+/g, function(r){ return " " + r.replace(/共和国/g, "\u0001").replace(ZH_CASTICE, " $1 ").replace(/\u0001/g, "共和国") + " "; }); }
@@ -425,7 +425,7 @@ function pripravDotazy(){
 /* porozumění dotazu → {typ, …} nebo null; přednost má srovnání, pak stát, pak rodina či větev, nakonec jeden jazyk */
 function rozumejDotazu(text){
   const slova = dotazSlova(text || "");
-  if (slova.filter(function(w){ return w.length >= 2; }).length < 2 && !(slova.length === 1 && slova[0].length >= 6)) return null;
+  if (slova.filter(function(w){ return w.length >= 2; }).length < 2 && !(slova.length === 1 && (slova[0].length >= 6 || slova[0].length >= 3 && /[\u3400-\u9FFF]/.test(slova[0])))) return null;   // čínsky stačí 3 znaky (印欧语系)
   const IX = pripravDotazy(), spoust = slova.some(function(w){ return DOTAZ_SPUSTE.test(w) || /^eu-/.test(w) && DOTAZ_SPUSTE.test(w.slice(3)); });
   const eu = dotazEU(slova, spoust);
   if (eu) return eu;
@@ -3429,6 +3429,10 @@ function oddilMluvciAtlas(j, i, znak){
 }
 function lidi(n){                  /* počet lidí: malá čísla přesně, velká zaokrouhleně, ale ne hrubě */
   if (n < 10000) return cislo(n);
+  if (T.lang === "zh") {             // čínsky po deseti tisících (万) a stech milionech (亿): 25万, 1200万, 12亿
+    if (n < 1e8) { const w = n < 1e6 ? Math.round(n / 1e3) / 10 : Math.round(n / 1e4); return cislo(w, Math.floor(w) === w ? 0 : 1) + "万"; }
+    const y = Math.round(n / 1e7) / 10; return cislo(y, Math.floor(y) === y ? 0 : 1) + "亿";
+  }
   if (n < 1e6) { const k = Math.round(n / 1000); return cislo(k) + " " + tvar(k, T.tisic); }
   if (n < 1e9) {
     const m = n < 1e7 ? Math.round(n / 1e5) / 10 : Math.round(n / 1e6);
@@ -3603,10 +3607,11 @@ tlPrehraj.addEventListener("click", function(){
   stav.hidden = false;
   if (!("speechSynthesis" in window)) { stav.textContent = t("zvukNeumi", {x: j.prep}); return; }
   nactiHlasy();
-  const rodily = najdiHlas(j.kod), zalozni = najdiHlas(T.hlasZalozni);
+  /* čínsky: záložní hlas čte anglickou výslovnost anglickým hlasem – čínský hlas by pinyinový přepis cizího pozdravu četl špatně */
+  const zh = T.lang === "zh", rodily = najdiHlas(j.kod), zalozni = najdiHlas(zh ? "en-GB" : T.hlasZalozni);
   let text, hlas, rychlost;
   if (rodily) { text = j.pis.replace(/[!¡?¿]/g, ""); hlas = rodily; rychlost = 0.8; stav.textContent = T.zvukRodily; }
-  else if (zalozni) { text = T.lang === "en" ? j.prep.toLowerCase() : j.prep; hlas = zalozni; rychlost = 0.75; stav.textContent = T.zvukZalozni; }
+  else if (zalozni) { text = T.lang === "en" || zh ? j.t.en.prep.toLowerCase() : j.prep; hlas = zalozni; rychlost = 0.75; stav.textContent = T.zvukZalozni; }
   else { stav.textContent = t("zvukZadny", {x: j.prep}); return; }
   try {
     const u = new SpeechSynthesisUtterance(text);
