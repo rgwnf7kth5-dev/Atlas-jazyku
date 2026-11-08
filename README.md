@@ -50,6 +50,23 @@ Každý push do větve `main` web obnoví. Kterou verzi dostane která doména, 
 `netlify/edge-functions/domeny.js`. Když kontrola dat spadne, Netlify nový web nezveřejní – tak to má být.
 Živý web jde prověřit zvenku přes Actions → **Diagnóza webu**.
 
+## Měsíční aktualizace dat
+
+Actions → **Data z Wikidat** běží 1. den v měsíci v **04:17 UTC** nebo ručně přes **Run workflow**.
+Vždy vychází z aktuálního `main`, stáhne Wikidata a obnoví podrobnosti, pak spustí celé `npm run check`.
+Teprve po úspěšné kontrole vytvoří větev a PR obsahující výhradně `data/wikidata.json` a
+`data/podrobnosti.json` (`scripts/wikidata-pr.sh`). Pokud se ani jeden z nich nezměnil, PR nevznikne.
+
+Sestavené `dist/` ani ostatní soubory v `data/` do automatického commitu nepatří. I když PR čeká déle,
+jeho sloučení proto nepřepíše mezitím upravené texty, překlady ani sestavený web. Prohlédněte náhled
+Netlify a výsledky kontrol a PR schvalte ručně; automat jej neslučuje. Při případném požadavku GitHubu
+**Approve workflows to run** povolte běh kontrol. Po Merge Netlify znovu spustí `npm run check` ze
+sloučeného `main` a zveřejní čerstvý `dist/`; při chybě zůstane poslední úspěšné nasazení.
+
+`dist/` v repozitáři může po datovém PR za zdroji zaostávat: pro aktuální offline kopii po stažení
+změn spusťte `npm run check`. Bezpečnost postupu ověřuje `node --test scripts/wikidata-pr.test.mjs`
+(včetně sloučení starší datové větve po novějších úpravách webu a `data/starovek.json`); běží i v CI.
+
 ## Úpravy
 
 Potřeba je [Node.js](https://nodejs.org) 22 nebo novější. Jediný npm balíček (`@anthropic-ai/sdk`) potřebuje

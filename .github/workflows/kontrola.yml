@@ -1,4 +1,4 @@
-# Při každém pushi a pull requestu zkontroluje data a sestaví obě jazykové verze.
+# Při každém pushi a pull requestu ověří datový PR, zkontroluje data a sestaví všechny jazykové verze.
 name: Kontrola
 
 on:
@@ -14,4 +14,6 @@ jobs:
       - uses: actions/setup-node@v5
         with:
           node-version: 22
+      - name: Regresní test datového PR
+        run: node --test scripts/wikidata-pr.test.mjs
       - run: npm run check
