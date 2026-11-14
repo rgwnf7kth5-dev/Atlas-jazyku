@@ -245,6 +245,10 @@ statických stránkách), název **语言地图集**, LOCALE `zh_CN`. Statické 
 - Při překladu opraveno i v ostatních jazycích: bengálština NO-mosh-kar (překlep), arménské Barev s přízvukem na konci, katalánské hola
   OH-luh, slovinský duál „tři nebo čtyři stromy (od pěti dreves)“, Conti a „italština Východu“ jen podle tradice (primární doklad chybí).
 
+**Nástroje pro překlad a putování jsou od 14. 11. 2026 v repozitáři** (`nastroje/preklad/`, `nastroje/putovani/`, popis
+v `nastroje/README.md`); dřív ležely jen ve scratchpadu relace, který s ní zmizí – zmínky o scratchpadu výš jsou historické.
+Předávací shrnutí pro nový chat: `NOVY-CHAT.md`.
+
 ## Struktura a pravidla
 
 - `data/*.json` je jediný zdroj pravdy. `dist/` se generuje, needituj ho ručně.

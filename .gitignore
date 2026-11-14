@@ -7,3 +7,5 @@ kandidati/
 
 # snímky z ověřování patří do scratchpadu, ne do repozitáře
 /*.png
+nastroje/putovani/land-*.geojson
+nastroje/**/__pycache__/
