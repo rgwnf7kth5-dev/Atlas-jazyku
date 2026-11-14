@@ -523,7 +523,9 @@
      "Rotate: drag with the mouse or one finger. Zoom: mouse wheel, pinch with two fingers, the + and − buttons at the top right of the globe, or the + and − keys.",
      "Each dot is one language, placed where Glottolog locates it, usually in the middle of the area where it is spoken. Click a dot to open the language card. The selected language and its relatives are named next to their dots; names of all languages from 2× zoom can be switched on in Settings (Names).",
      "Clicking a country away from the dots highlights the country and all its languages and shows their number according to Glottolog.",
-     "The Whole world button and the Language Atlas logo in the top left return the globe to its initial view."
+     "The Whole world button and the Language Atlas logo in the top left return the globe to its initial view.",
+     "Magnifier: press and hold a finger or the mouse button on the globe to show a magnifier with enlarged points and their names. Drag to move it; when you let go, the language marked by the ring is selected. It helps where many points lie close together, for example in New Guinea.",
+     "Above the globe a bar shows what is currently switched on: a filter, a highlighted group of languages, a comparison, a question to the AI and, on phones, a colour map. The cross next to each line turns it off."
     ]
    },
    {
@@ -534,7 +536,8 @@
      "Official status lists the countries where the language is official – nationally, de facto (without explicit legal status) or regionally (in part of the country only). Script lists the scripts the language is usually written in, the most common first. Both come from Unicode CLDR and are available for about 800 languages.",
      "The Structure tab gives the exact value for each WALS feature; click a feature name to open its typology map.",
      "Arcs on the globe lead from the selected language to its closest relatives. The language family tree line shows its classification in the Glottolog tree.",
-     "The chain button copies a link to the language. On a phone the card sits at the bottom of the screen: drag it up to enlarge it, down to shrink or close it."
+     "The chain button copies a link to the language. On a phone the card sits at the bottom of the screen: drag it up to enlarge it, down to shrink or close it.",
+     "Next to Play pronunciation you can choose a speed of 1×, 0.75× or 0.5×; the choice is saved and the button shows progress while playing. The Where the data come from button below the card slides out a list of the sources behind the card."
     ]
    },
    {
@@ -544,7 +547,8 @@
      "You can also type a question in plain words: “languages spoken in Brazil” (languages of a country), “Slavic languages” (a family or branch in Glottolog), “German and Italian” (comparing two languages) or “where is Persian spoken”. The top of the list shows what the search understood and the list shows the matching languages; the button or the Enter key shows them on the globe. Answers come only from the atlas data.",
      "If the search does not understand a question, it offers Ask the AI: an AI (Claude by Anthropic) looks up the atlas data, searches the web for what is not there (listing the sources), and answers in a few sentences, showing the result on the globe. It answers only questions about languages and may be wrong. Website only.",
      "Sort by language family, alphabetically or by continent. Languages with a detailed card are shown as large tiles, the others below them.",
-     "The Language of the Day changes at midnight and always states why it was chosen: either a day associated with that language (see the Calendar of language days) or the journey around the world to the next nearest language. On the European Day of Languages (26 September) all European languages of the atlas are shown instead."
+     "The Language of the Day changes at midnight and always states why it was chosen: either a day associated with that language (see the Calendar of language days) or the journey around the world to the next nearest language. On the European Day of Languages (26 September) all European languages of the atlas are shown instead.",
+     "The chips above the list show the six largest language families and how many languages each has. Tap one to show the family in the list and on the globe; tap it again to clear the selection."
     ]
    },
    {
@@ -583,7 +587,8 @@
     "h": "Languages of antiquity",
     "p": [
      "The Ancient languages medallion below the globe opens the menu of civilizations; the search also finds them, for example “egypt”. Each item opens a civilization page focused on language and script: history, sample signs, the story of decipherment, related words, grammar, a timeline, photographs and literature. Two overviews come first in the menu: the family tree of scripts (where each alphabet came from, with a table of the word “king” in twenty scripts) and a glossary of terms (abjad, abugida, determinative, boustrophedon…). Pages on Sumer and Akkad, Ancient Egypt, Elam and Urartu, Ancient India, the Hittites, Ancient China, the Phoenicians, the Hebrews and Arameans, Ancient Greece, the Celts, the Etruscans, Ancient Persia, Ancient Rome, the Armenians and Georgians, the Germanic peoples and runes, Aksum, Korea and Hangul, the Göktürks and the Orkhon script, Japan and kana, the Slavs and Great Moravia, the Maya, the Aztecs and the Incas are ready so far.",
-     "The page opens above the globe; close it with the cross, the Escape key or by tapping outside it. The “‹ Languages of antiquity” button at the top left returns to the list of civilizations, and the end of each page links to the others. The buttons in the section on languages on the globe show the extinct languages concerned on the globe. The page can also be opened from the language card (for example of Egyptian, Coptic, Hittite or Luwian) and with the links thelanguageatlas.com/#egypt and #hittites; on the website it is also a separate page."
+     "The page opens above the globe; close it with the cross, the Escape key or by tapping outside it. The “‹ Languages of antiquity” button at the top left returns to the list of civilizations, and the end of each page links to the others. The buttons in the section on languages on the globe show the extinct languages concerned on the globe. The page can also be opened from the language card (for example of Egyptian, Coptic, Hittite or Luwian) and with the links thelanguageatlas.com/#egypt and #hittites; on the website it is also a separate page.",
+     "Tap a photograph on the page to enlarge it; use the arrow keys or swipe to browse the other photographs on the page, and Escape to put it back. The caption with the author and licence stays visible. In a wide window the menu is a list of names with a large illustration and the introduction of the page under the mouse."
     ]
    },
    {
@@ -599,14 +604,16 @@
     "p": [
      "Journeys show on the globe how one language developed from its proto-language to the present: coloured streams spread across the map stage by stage, areas fill in, and earlier stages stay faintly visible as layers of history. Disputed interpretations are drawn dashed. There are journeys of English, Aramaic, Czech, French, German, Hebrew, Hungarian, Italian, Kurdish, Maltese, Māori (with a detour to Madagascar), Navajo, Romani, Spanish, Turkish and Yiddish. The journey of the alphabet follows a script instead of a language: how an Egyptian picture of an ox head became the letter A via the Phoenicians, Greeks and Romans; each stage shows the letter of its time on the map. It also opens from the legend of the Script map and from a script card.",
      "A journey opens from the Journeys of languages group in Language stories, with the button on a language card named after the journey, such as The journey of English (Interesting fact tab), or with a link such as thelanguageatlas.com/#journey-english.",
-     "The panel on the right (below the globe on a phone) has a play and pause button, a timeline slider and a list of stages with their dates and text; tapping a stage shows it in full and pauses playback. Sources are listed below the stages. A journey is closed with the cross, the Escape key, the Whole world button or by selecting another language."
+     "The panel on the right (below the globe on a phone) has a play and pause button, a timeline slider and a list of stages with their dates and text; tapping a stage shows it in full and pauses playback. Sources are listed below the stages. A journey is closed with the cross, the Escape key, the Whole world button or by selecting another language.",
+     "Stages are collapsed to their dates and titles; the active stage unfolds with its full text and the panel scrolls to it."
     ]
    },
    {
     "h": "Keyboard",
     "p": [
      "Tab moves between controls. One Tab enters the language list; the arrow keys move between tiles, Home and End jump to the start and end, and Enter selects a language.",
-     "The + and − keys zoom the globe. Escape closes a window, the card or a panel."
+     "The + and − keys zoom the globe. Escape closes a window, the card or a panel.",
+     "Press / or ⌘K (Ctrl+K) anywhere to jump to the search field; the down arrow leads from it to the first result. Keys 1 to 6 open the medallions below the globe in the order they appear."
     ]
    },
    {
@@ -1004,5 +1011,34 @@
   "jazykyPozn": "The area of a script on the globe is formed by the dots of all languages written in it according to Unicode CLDR; for languages without detailed data it is a CLDR estimate. A language written in several scripts belongs to several areas.",
   "zdroj": "Countries where a language written in this script is official nationwide, according to Unicode CLDR.",
   "tip": "Tap a coloured area or a script sample to open the script card."
- }
+ },
+ "ovlZnakJen": "Sign languages only",
+ "ovlZnakBez": "Without sign languages",
+ "ovlVitalita": "Vitality: {n} of {z} levels",
+ "ovlPocet": "{n} of {z}",
+ "ovlZrusitFiltr": "Clear filter",
+ "ovlZrusit": "Clear highlight",
+ "ovlZvyrazneno": "Highlighted: {r}",
+ "ovlStaty": "{n} countries",
+ "ovlMapa": "Map: {m}",
+ "ovlVypnout": "Turn off colour map",
+ "ovlAI": "AI: {k}",
+ "ovlKlavesaHledat": "Search (press / or ⌘K)",
+ "ovlRodinyCipy": "Largest language families",
+ "ovlRychlost": "Pronunciation speed",
+ "ovlFotka": "Photograph",
+ "ovlPredchozi": "Previous photograph",
+ "ovlDalsi": "Next photograph",
+ "ovlZavritFotku": "Close photograph",
+ "ovlZdrojeTl": "Where the data come from",
+ "ovlZdrPoloha": "Location, family, relatives",
+ "ovlZdrVitalita": "Vitality",
+ "ovlZdrVitalitaZ": "Glottolog, UNESCO scale",
+ "ovlZdrStavba": "Structure",
+ "ovlZdrHlasky": "Sounds",
+ "ovlZdrPismo": "Script and official status",
+ "ovlZdrMluvci": "Number of speakers",
+ "ovlZdrMluvciZ": "atlas estimate; Wikidata for other languages",
+ "ovlZdrMapa": "Map",
+ "ovlZdrVice": "About the data, versions and licences ›"
 }

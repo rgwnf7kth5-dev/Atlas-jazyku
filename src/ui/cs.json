@@ -523,7 +523,9 @@
      "Otáčení: tažením myší nebo jedním prstem. Přiblížení: kolečkem myši, roztažením dvou prstů, tlačítky + a − vpravo nahoře na glóbu nebo klávesami + a −.",
      "Každý bod je jeden jazyk, umístěný podle Glottologu obvykle doprostřed oblasti, kde se jím mluví. Klepnutím se otevře karta jazyka. Vybraný jazyk a jeho příbuzní mají u bodu jméno; názvy všech jazyků od přiblížení 2× se zapínají v Nastavení (Jména).",
      "Klepnutí na stát mimo body zvýrazní stát a všechny jeho jazyky a ukáže jejich počet podle Glottologu.",
-     "Tlačítko Celý svět i logo Atlas jazyků vlevo nahoře vrátí glóbus do výchozího pohledu."
+     "Tlačítko Celý svět i logo Atlas jazyků vlevo nahoře vrátí glóbus do výchozího pohledu.",
+     "Lupa: podržením prstu nebo tlačítka myši na glóbu se ukáže lupa se zvětšenými body a jejich názvy. Tažením se posouvá, po puštění se vybere jazyk označený kroužkem. Hodí se tam, kde leží mnoho bodů blízko u sebe, například na Nové Guineji.",
+     "Nahoře nad glóbem se ukazuje, co je právě zapnuté: filtr, zvýrazněná skupina jazyků, srovnání, otázka pro AI a na telefonu i barevná mapa. Křížkem u řádku se zruší."
     ]
    },
    {
@@ -534,7 +536,8 @@
      "Úřední status uvádí státy, v nichž je jazyk úřední – celostátně, de facto (bez výslovného zakotvení v zákoně) nebo regionálně (jen v části státu). Písmo uvádí písma, jimiž se jazyk běžně zapisuje, nejběžnější první. Oba údaje pocházejí z Unicode CLDR a jsou k dispozici asi u 800 jazyků.",
      "Záložka Stavba uvádí u každé vlastnosti WALS přesnou hodnotu; klepnutím na název vlastnosti se zobrazí typologická mapa.",
      "Od vybraného jazyka vedou na glóbu oblouky k nejbližším příbuzným. Řádek Rodokmen jazykové rodiny ukazuje zařazení ve stromu Glottologu.",
-     "Tlačítko s řetízkem zkopíruje odkaz na jazyk. Na telefonu je karta ve spodní části obrazovky: tažením nahoru se zvětší, dolů zmenší nebo zavře."
+     "Tlačítko s řetízkem zkopíruje odkaz na jazyk. Na telefonu je karta ve spodní části obrazovky: tažením nahoru se zvětší, dolů zmenší nebo zavře.",
+     "Vedle tlačítka Přehrát výslovnost lze zvolit rychlost 1×, 0,75× nebo 0,5×; volba se ukládá a tlačítko během přehrávání ukazuje průběh. Tlačítko Odkud jsou údaje pod kartou vysune přehled zdrojů údajů na kartě."
     ]
    },
    {
@@ -544,7 +547,8 @@
      "Do pole hledání lze napsat i otázku běžnou větou: „jakými jazyky se mluví v Brazílii“ (jazyky státu), „najdi všechny slovanské jazyky“ (rodina nebo větev podle Glottologu), „co má společného němčina s italštinou“ (srovnání dvou jazyků) nebo „kde se mluví persky“. Nahoře v seznamu se objeví, čemu hledání rozumělo, a seznam ukáže příslušné jazyky; tlačítko nebo klávesa Enter je ukáže na glóbu. Odpověď vychází jen z dat atlasu.",
      "Když hledání otázce nerozumí, nabídne tlačítko Zeptat se AI: umělá inteligence (Claude od firmy Anthropic) si vyhledá údaje v datech atlasu, co v nich není, dohledá na webu (zdroje vypíše), a odpoví několika větami; výsledek zároveň ukáže na glóbu. Odpovídá jen na otázky o jazycích a může se mýlit. Na webu, ne v offline kopii.",
      "Řazení podle jazykových rodin, abecedy nebo světadílů. Jazyky s podrobnou kartou jsou uvedeny jako velké dlaždice, ostatní pod nimi.",
-     "Jazyk dne se mění o půlnoci a vždy uvádí důvod výběru: buď je to den spojený s daným jazykem (viz Kalendář jazykových dnů), nebo postup kolem světa k nejbližšímu dalšímu jazyku. Na Evropský den jazyků (26. září) jsou místo něj uvedeny všechny evropské jazyky atlasu."
+     "Jazyk dne se mění o půlnoci a vždy uvádí důvod výběru: buď je to den spojený s daným jazykem (viz Kalendář jazykových dnů), nebo postup kolem světa k nejbližšímu dalšímu jazyku. Na Evropský den jazyků (26. září) jsou místo něj uvedeny všechny evropské jazyky atlasu.",
+     "Čipy nad seznamem ukazují šest největších jazykových rodin a počet jejich jazyků. Klepnutím se rodina ukáže v seznamu i na glóbu, druhým klepnutím se výběr zruší."
     ]
    },
    {
@@ -583,7 +587,8 @@
     "h": "Jazyky starověku",
     "p": [
      "Medailon Jazyky starověku pod glóbem otevře nabídku civilizací; najde je i vyhledávání, například „egypt“. Každá položka otevře stránku o civilizaci zaměřenou na jazyk a písmo: dějiny, ukázky znaků, příběh rozluštění, příbuzná slova, stavbu jazyka, časovou osu, fotografie a literaturu. Na začátku nabídky jsou dva přehledy: rodokmen písem (odkud se která abeceda vzala, s tabulkou slova „král“ v dvaceti písmech) a slovníček pojmů (abdžad, abugida, determinativ, bústrofédon…). Hotové jsou stránky o Sumeru a Akkadu, starověkém Egyptě, Elamu a Urartu, starověké Indii, Chetitech, starověké Číně, Féničanech, Hebrejcích a Aramejcích, starověkém Řecku, Keltech, Etruscích, starověké Persii, starověkém Římě, Arménech a Gruzíncích, Germánech a runách, Aksumu, Koreji a hangulu, Turkutech a orchonském písmu, Japonsku a kaně, Slovanech a Velké Moravě, Mayích, Aztécích a Incích.",
-     "Stránka se otevře nad glóbem; zavře ji křížek, klávesa Escape nebo klepnutí vedle ní. Tlačítko „‹ Jazyky starověku“ vlevo nahoře vrátí do výběru civilizací a na konci stránky jsou odkazy na ostatní civilizace. Tlačítka v oddílu o jazycích na glóbu ukážou příslušné vymřelé jazyky na glóbu. Stránku otevře také tlačítko na kartě jazyka (například egyptštiny, koptštiny, chetitštiny nebo luvijštiny) a odkazy atlasjazyku.cz/#egypt a #chetite; na webu je i jako samostatná stránka."
+     "Stránka se otevře nad glóbem; zavře ji křížek, klávesa Escape nebo klepnutí vedle ní. Tlačítko „‹ Jazyky starověku“ vlevo nahoře vrátí do výběru civilizací a na konci stránky jsou odkazy na ostatní civilizace. Tlačítka v oddílu o jazycích na glóbu ukážou příslušné vymřelé jazyky na glóbu. Stránku otevře také tlačítko na kartě jazyka (například egyptštiny, koptštiny, chetitštiny nebo luvijštiny) a odkazy atlasjazyku.cz/#egypt a #chetite; na webu je i jako samostatná stránka.",
+     "Fotografii na stránce zvětšíte klepnutím; šipkami nebo přejetím prstem lze listovat ostatními fotografiemi stránky, Escape ji vrátí na místo. Popisek s autorem a licencí zůstává. Na širokém okně je nabídka seznamem jmen s velkou ilustrací a úvodem stránky, na kterou míří myš."
     ]
    },
    {
@@ -599,14 +604,16 @@
     "p": [
      "Putování ukazují na glóbu vývoj jednoho jazyka od prajazyka po dnešek: barevné proudy se po etapách rozlévají po mapě, oblasti se vybarvují a starší etapy zůstávají slabě vidět jako vrstvy dějin. Sporné výklady jsou kresleny přerušovaně. Hotová jsou putování češtiny, angličtiny, aramejštiny, francouzštiny, hebrejštiny, italštiny, jidiš, kurdštiny, maďarštiny, maltštiny, maorštiny (s odbočkou na Madagaskar), navažštiny, němčiny, romštiny, španělštiny a turečtiny. Putování abecedy sleduje místo jazyka písmo: jak se z egyptského obrázku volské hlavy přes Féničany, Řeky a Římany stalo písmeno A; v každé etapě je na mapě písmeno té doby. Otevře se i z legendy mapy Písmo a z karty písma.",
      "Putování se otevře ze skupiny Putování jazyků v Příbězích jazyků, tlačítkem Putování … na kartě jazyka (záložka Zajímavost) nebo odkazem, například atlasjazyku.cz/#putovani-cestina.",
-     "Panel vpravo (na telefonu pod glóbem) má tlačítko pro přehrání a pozastavení, posuvník časové osy a seznam etap s dobou a textem; klepnutím na etapu se zobrazí celá a přehrávání se zastaví. Pod etapami jsou uvedeny zdroje. Putování zavře křížek, klávesa Escape, tlačítko Celý svět nebo výběr jiného jazyka."
+     "Panel vpravo (na telefonu pod glóbem) má tlačítko pro přehrání a pozastavení, posuvník časové osy a seznam etap s dobou a textem; klepnutím na etapu se zobrazí celá a přehrávání se zastaví. Pod etapami jsou uvedeny zdroje. Putování zavře křížek, klávesa Escape, tlačítko Celý svět nebo výběr jiného jazyka.",
+     "Etapy jsou sbalené na dobu a název; aktivní etapa se rozvine s celým textem a panel se k ní posune."
     ]
    },
    {
     "h": "Klávesnice",
     "p": [
      "Tab přechází mezi ovládacími prvky. Do seznamu jazyků se vstoupí jedním stiskem Tab, mezi dlaždicemi se pohybuje šipkami, Home a End skočí na začátek a konec, Enter jazyk vybere.",
-     "Klávesy + a − přibližují glóbus. Escape zavře okno, kartu nebo panel."
+     "Klávesy + a − přibližují glóbus. Escape zavře okno, kartu nebo panel.",
+     "Klávesa / nebo ⌘K (Ctrl+K) přesune kurzor odkudkoli do pole hledání, šipka dolů z něj vede na první výsledek. Klávesy 1 až 6 otevřou medailony pod glóbem v pořadí, v jakém jsou seřazené."
     ]
    },
    {
@@ -1004,5 +1011,34 @@
   "jazykyPozn": "Oblast písma na glóbu tvoří tečky všech jazyků, které se jím podle Unicode CLDR píší; u jazyků bez podrobných údajů jde o odhad CLDR. Jazyk psaný víc písmy patří do více oblastí.",
   "zdroj": "Státy, v nichž je jazyk psaný tímto písmem celostátně úřední, podle Unicode CLDR.",
   "tip": "Klepnutím do barevné oblasti nebo na ukázku písma se otevře karta písma."
- }
+ },
+ "ovlZnakJen": "Jen znakové jazyky",
+ "ovlZnakBez": "Bez znakových jazyků",
+ "ovlVitalita": "Vitalita: {n} z {z} stupňů",
+ "ovlPocet": "{n} z {z}",
+ "ovlZrusitFiltr": "Zrušit filtr",
+ "ovlZrusit": "Zrušit zvýraznění",
+ "ovlZvyrazneno": "Zvýrazněno: {r}",
+ "ovlStaty": "{n} států",
+ "ovlMapa": "Mapa: {m}",
+ "ovlVypnout": "Vypnout barevnou mapu",
+ "ovlAI": "AI: {k}",
+ "ovlKlavesaHledat": "Hledat (klávesa / nebo ⌘K)",
+ "ovlRodinyCipy": "Největší jazykové rodiny",
+ "ovlRychlost": "Rychlost výslovnosti",
+ "ovlFotka": "Fotografie",
+ "ovlPredchozi": "Předchozí fotografie",
+ "ovlDalsi": "Další fotografie",
+ "ovlZavritFotku": "Zavřít fotografii",
+ "ovlZdrojeTl": "Odkud jsou údaje",
+ "ovlZdrPoloha": "Poloha, rodina, příbuzní",
+ "ovlZdrVitalita": "Vitalita",
+ "ovlZdrVitalitaZ": "Glottolog, stupnice UNESCO",
+ "ovlZdrStavba": "Stavba jazyka",
+ "ovlZdrHlasky": "Hlásky",
+ "ovlZdrPismo": "Písmo a úřední status",
+ "ovlZdrMluvci": "Počet mluvčích",
+ "ovlZdrMluvciZ": "odhad atlasu, u ostatních jazyků Wikidata",
+ "ovlZdrMapa": "Mapa",
+ "ovlZdrVice": "O datech, verzích a licencích ›"
 }

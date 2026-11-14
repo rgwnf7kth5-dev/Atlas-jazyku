@@ -564,7 +564,9 @@
      "Ruotare: trascinare con il mouse o con un dito. Ingrandire: rotellina del mouse, due dita, i pulsanti + e − in alto a destra del globo, oppure i tasti + e −.",
      "Ogni punto è una lingua, collocata dove la situa Glottolog, di solito al centro dell’area in cui si parla. Un clic su un punto apre la scheda della lingua. La lingua selezionata e le sue parenti hanno il nome accanto al punto; i nomi di tutte le lingue a partire da un ingrandimento di 2× si attivano nelle Impostazioni (Nomi).",
      "Un clic su un paese lontano dai punti evidenzia il paese e tutte le sue lingue e ne mostra il numero secondo Glottolog.",
-     "Il pulsante Tutto il mondo e il logo dell’Atlante delle lingue in alto a sinistra riportano il globo alla vista iniziale."
+     "Il pulsante Tutto il mondo e il logo dell’Atlante delle lingue in alto a sinistra riportano il globo alla vista iniziale.",
+     "Lente: tenendo premuto un dito o il tasto del mouse sul globo compare una lente con i punti ingranditi e i loro nomi. Trascinandola si sposta; al rilascio viene selezionata la lingua segnata dal cerchio. È utile dove molti punti sono vicini, per esempio in Nuova Guinea.",
+     "Sopra il globo è indicato ciò che è attivo in quel momento: un filtro, un gruppo di lingue evidenziato, un confronto, una domanda all’IA e, sul telefono, una mappa a colori. La crocetta accanto a ogni riga lo disattiva."
     ]
    },
    {
@@ -575,7 +577,8 @@
      "Lo status ufficiale elenca i paesi in cui la lingua è ufficiale – a livello nazionale, de facto (senza uno status giuridico esplicito) o regionale (solo in una parte del paese). La scrittura indica le scritture in cui la lingua si scrive di solito, la più diffusa per prima. Entrambi provengono da Unicode CLDR e sono disponibili per circa 800 lingue.",
      "La scheda Struttura indica il valore esatto per ogni caratteristica del WALS; un clic sul nome di una caratteristica apre la relativa mappa tipologica.",
      "Gli archi sul globo vanno dalla lingua selezionata alle sue parenti più vicine. La riga dell’albero della famiglia linguistica mostra la sua classificazione nell’albero di Glottolog.",
-     "Il pulsante con la catena copia il link alla lingua. Sul telefono la scheda sta in fondo allo schermo: trascinarla verso l’alto per ingrandirla, verso il basso per ridurla o chiuderla."
+     "Il pulsante con la catena copia il link alla lingua. Sul telefono la scheda sta in fondo allo schermo: trascinarla verso l’alto per ingrandirla, verso il basso per ridurla o chiuderla.",
+     "Accanto ad Ascolta la pronuncia si può scegliere la velocità 1×, 0,75× o 0,5×; la scelta viene salvata e durante l’ascolto il pulsante mostra l’avanzamento. Il pulsante Da dove vengono i dati sotto la scheda fa comparire l’elenco delle fonti della scheda."
     ]
    },
    {
@@ -585,7 +588,8 @@
      "Si può anche scrivere una domanda con parole semplici: “lingue del Brasile” (le lingue di un paese), “lingue slave” (una famiglia o un ramo in Glottolog), “tedesco e italiano” (confronto di due lingue) o “dove si parla il persiano”. In cima all’elenco compare ciò che la ricerca ha capito e l’elenco mostra le lingue corrispondenti; il pulsante o il tasto Invio le mostrano sul globo. Le risposte provengono solo dai dati dell’atlante.",
      "Se la ricerca non capisce una domanda, propone Chiedi all’IA: un’intelligenza artificiale (Claude di Anthropic) consulta i dati dell’atlante, cerca sul web ciò che manca (indicando le fonti), risponde in poche frasi e mostra il risultato sul globo. Risponde solo a domande sulle lingue e può sbagliare. Solo sul sito web.",
      "Ordinamento per famiglia linguistica, in ordine alfabetico o per continente. Le lingue con scheda dettagliata sono mostrate come grandi riquadri, le altre sotto di esse.",
-     "La Lingua del giorno cambia a mezzanotte e indica sempre il motivo della scelta: un giorno legato a quella lingua (vedi il Calendario delle giornate delle lingue) oppure il viaggio intorno al mondo verso la lingua più vicina. Nella Giornata europea delle lingue (26 settembre) sono invece mostrate tutte le lingue europee dell’atlante."
+     "La Lingua del giorno cambia a mezzanotte e indica sempre il motivo della scelta: un giorno legato a quella lingua (vedi il Calendario delle giornate delle lingue) oppure il viaggio intorno al mondo verso la lingua più vicina. Nella Giornata europea delle lingue (26 settembre) sono invece mostrate tutte le lingue europee dell’atlante.",
+     "I pulsanti sopra l’elenco mostrano le sei famiglie linguistiche più grandi con il numero delle loro lingue. Toccandone uno la famiglia compare nell’elenco e sul globo; toccandolo di nuovo la selezione viene annullata."
     ]
    },
    {
@@ -624,7 +628,8 @@
     "h": "Lingue dell’antichità",
     "p": [
      "Il medaglione Lingue antiche sotto il globo apre il menu delle civiltà; anche la ricerca le trova, per esempio “egitto”. Ogni voce apre una pagina sulla civiltà incentrata su lingua e scrittura: storia, esempi di segni, la storia della decifrazione, parole imparentate, grammatica, una cronologia, fotografie e bibliografia. Nel menu vengono prima due panoramiche: l’albero genealogico delle scritture (da dove viene ciascun alfabeto, con una tabella della parola “re” in venti scritture) e un glossario (abjad, abugida, determinativo, bustrofedico…). Sono pronte finora le pagine su Sumer e Akkad, Antico Egitto, Elam e Urartu, India antica, ittiti, Cina antica, fenici, ebrei e aramei, Grecia antica, celti, etruschi, Persia antica, Roma antica, armeni e georgiani, popoli germanici e rune, Aksum, Corea e hangul, Göktürk e scrittura dell’Orkhon, Giappone e kana, slavi e Grande Moravia, maya, aztechi e inca.",
-     "La pagina si apre sopra il globo; si chiude con la croce, il tasto Esc o un tocco fuori da essa. Il pulsante “‹ Lingue dell’antichità” in alto a sinistra torna all’elenco delle civiltà e la fine di ogni pagina rimanda alle altre. Si apre anche dalla scheda della lingua (per esempio dell’egiziano, del copto, dell’ittita o del luvio) e da link come thelanguageatlas.com/it/#antico-egitto."
+     "La pagina si apre sopra il globo; si chiude con la croce, il tasto Esc o un tocco fuori da essa. Il pulsante “‹ Lingue dell’antichità” in alto a sinistra torna all’elenco delle civiltà e la fine di ogni pagina rimanda alle altre. Si apre anche dalla scheda della lingua (per esempio dell’egiziano, del copto, dell’ittita o del luvio) e da link come thelanguageatlas.com/it/#antico-egitto.",
+     "Toccando una fotografia della pagina la si ingrandisce; con le frecce o scorrendo con il dito si sfogliano le altre fotografie della pagina, con Esc la si rimette al suo posto. La didascalia con autore e licenza resta visibile. In una finestra larga il menu è un elenco di nomi con una grande illustrazione e l’introduzione della pagina su cui si trova il mouse."
     ]
    },
    {
@@ -640,14 +645,16 @@
     "p": [
      "I viaggi mostrano sul globo come una lingua si è sviluppata dalla sua protolingua fino a oggi: correnti colorate si diffondono sulla mappa tappa dopo tappa, le aree si riempiono e le tappe precedenti restano visibili in modo tenue come strati della storia. Le interpretazioni controverse sono tratteggiate. Ci sono i viaggi dell’italiano, dell’aramaico, del ceco, del curdo, dell’ebraico, del francese, dell’inglese, del maltese, del maori (con una deviazione verso il Madagascar), del navajo, del romanì, dello spagnolo, del tedesco, del turco, dell’ungherese e dello yiddish. Il viaggio dell’alfabeto segue una scrittura invece di una lingua: come il disegno egizio di una testa di bue è diventato la lettera A attraverso fenici, greci e romani; ogni tappa mostra sulla mappa la lettera della sua epoca. Si apre anche dalla legenda della mappa Scrittura e dalla scheda di una scrittura.",
      "Un viaggio si apre dal gruppo Viaggi delle lingue nelle Storie delle lingue, dal pulsante nella scheda della lingua che porta il nome del viaggio, per esempio Il viaggio dell’italiano (scheda Curiosità), o da un link come thelanguageatlas.com/it/#viaggio-italiano.",
-     "Il pannello a destra (sotto il globo sul telefono) ha un pulsante di riproduzione e pausa, un cursore della cronologia e l’elenco delle tappe con date e testo; un tocco su una tappa la mostra per intero e mette in pausa. Le fonti sono elencate sotto le tappe. Un viaggio si chiude con la croce, il tasto Esc, il pulsante Tutto il mondo o selezionando un’altra lingua."
+     "Il pannello a destra (sotto il globo sul telefono) ha un pulsante di riproduzione e pausa, un cursore della cronologia e l’elenco delle tappe con date e testo; un tocco su una tappa la mostra per intero e mette in pausa. Le fonti sono elencate sotto le tappe. Un viaggio si chiude con la croce, il tasto Esc, il pulsante Tutto il mondo o selezionando un’altra lingua.",
+     "Le tappe sono ridotte a data e titolo; la tappa attiva si apre con il testo completo e il pannello vi scorre."
     ]
    },
    {
     "h": "Tastiera",
     "p": [
      "Il tasto Tab sposta il fuoco tra i comandi. Con un Tab si entra nell’elenco delle lingue; con i tasti freccia ci si sposta tra i riquadri, Home e Fine saltano all’inizio e alla fine, e Invio seleziona una lingua.",
-     "I tasti + e − ingrandiscono e riducono il globo. Esc chiude una finestra, la scheda o un pannello."
+     "I tasti + e − ingrandiscono e riducono il globo. Esc chiude una finestra, la scheda o un pannello.",
+     "Il tasto / o ⌘K (Ctrl+K) porta da qualsiasi punto al campo di ricerca; la freccia giù conduce al primo risultato. I tasti da 1 a 6 aprono i medaglioni sotto il globo nell’ordine in cui sono disposti."
     ]
    },
    {
@@ -1101,5 +1108,34 @@
   "jazykyPozn": "L’area di una scrittura sul globo è formata dai punti di tutte le lingue che vi si scrivono secondo Unicode CLDR; per le lingue senza dati dettagliati è una stima di CLDR. Una lingua scritta in più scritture appartiene a più aree.",
   "zdroj": "Paesi in cui una lingua scritta in questa scrittura è ufficiale a livello nazionale, secondo Unicode CLDR.",
   "tip": "Toccare un’area colorata o un esempio di scrittura per aprire la scheda della scrittura."
- }
+ },
+ "ovlZnakJen": "Solo lingue dei segni",
+ "ovlZnakBez": "Senza lingue dei segni",
+ "ovlVitalita": "Vitalità: {n} livelli su {z}",
+ "ovlPocet": "{n} su {z}",
+ "ovlZrusitFiltr": "Rimuovi il filtro",
+ "ovlZrusit": "Rimuovi l’evidenziazione",
+ "ovlZvyrazneno": "In evidenza: {r}",
+ "ovlStaty": "{n} stati",
+ "ovlMapa": "Mappa: {m}",
+ "ovlVypnout": "Disattiva la mappa a colori",
+ "ovlAI": "IA: {k}",
+ "ovlKlavesaHledat": "Cerca (tasto / o ⌘K)",
+ "ovlRodinyCipy": "Le famiglie linguistiche più grandi",
+ "ovlRychlost": "Velocità della pronuncia",
+ "ovlFotka": "Fotografia",
+ "ovlPredchozi": "Fotografia precedente",
+ "ovlDalsi": "Fotografia successiva",
+ "ovlZavritFotku": "Chiudi la fotografia",
+ "ovlZdrojeTl": "Da dove vengono i dati",
+ "ovlZdrPoloha": "Posizione, famiglia, lingue affini",
+ "ovlZdrVitalita": "Vitalità",
+ "ovlZdrVitalitaZ": "Glottolog, scala dell’UNESCO",
+ "ovlZdrStavba": "Struttura",
+ "ovlZdrHlasky": "Suoni",
+ "ovlZdrPismo": "Scrittura e status ufficiale",
+ "ovlZdrMluvci": "Numero di parlanti",
+ "ovlZdrMluvciZ": "stima dell’atlante; per le altre lingue Wikidata",
+ "ovlZdrMapa": "Mappa",
+ "ovlZdrVice": "Sui dati, le versioni e le licenze ›"
 }

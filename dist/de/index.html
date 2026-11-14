@@ -180,7 +180,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
 .sr-pata /* Brána do jiných světů („mellon“): glóbus odletí do dálky, ve hvězdách se vznášejí vymyšlené světy */
 .scena canvas{transition:transform .9s cubic-bezier(.5,0,.2,1), opacity .7s ease}
 .scena.rezim-brana :is(#podklad,#gl,#popisky,#globus){transform:scale(.08); transform-origin:20% 78%; opacity:0; pointer-events:none}
-.scena.rezim-brana :is(.hud,.napoveda,.tl-napoveda,.ukazatel,.zoom-ovl,#tl-cely,.zeme-okno,.bublina-bod,.srovnani-vyzva){display:none !important}
+.scena.rezim-brana :is(.hud,.napoveda,.tl-napoveda,.ukazatel,.zoom-ovl,#tl-cely,.zeme-okno,.bublina-bod,.srovnani-vyzva,.ostrov){display:none !important}
 .brana{position:absolute; inset:0; z-index:5; pointer-events:none}
 .brana > *{pointer-events:auto}
 .brana-hlava{position:absolute; top:16px; right:16px; width:min(420px, 56%); padding:12px 14px; border-radius:18px; animation:eu-in .5s .3s both}
@@ -221,8 +221,28 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
              linear-gradient(135deg, #2A1B5E, #6B3FB8 50%, #1F7A8C)}
 .stopa{margin-top:8px; font-size:.78rem; font-style:italic; color:#8F7BFF}
 .tl-rodokmen{margin-top:0}
-.srovnani-vyzva{position:absolute; z-index:8; top:16px; left:50%; transform:translateX(-50%); display:flex; align-items:center; gap:10px;
-  width:max-content; max-width:calc(100% - 32px); padding:8px 8px 8px 14px; border-radius:18px; font-size:.82rem; font-weight:600; color:var(--text);
+/* stavový ostrůvek (14. 11. 2026): nahoře nad glóbem jedna místo, kde je vidět, co je zapnuté (srovnání, filtry, zvýraznění, AI);
+   v klidu prázdný a neviditelný. Řádky se roztahují podle obsahu, každý má vlastní zrušení. */
+.ostrov{position:absolute; z-index:8; top:16px; left:50%; transform:translateX(-50%); display:flex; flex-direction:column; align-items:center; gap:6px;
+  width:max-content; max-width:calc(100% - 32px); pointer-events:none}
+.ostrov > *{pointer-events:auto}
+.ostrov-dalsi{display:contents}
+.ostrov-radek{display:flex; align-items:center; gap:9px; max-width:100%; padding:6px 6px 6px 12px; border-radius:18px; font-size:.8rem; font-weight:600; color:var(--text);
+  animation:ostrov-in .32s cubic-bezier(.3,1.3,.5,1) both}
+@keyframes ostrov-in{from{opacity:0; transform:translateY(-6px) scale(.96)}}
+.ostrov-radek > svg{width:17px; height:17px; flex:none; color:var(--cyan)}
+.ostrov-radek .o-text{min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.ostrov-radek .o-text small{font-weight:500; color:var(--text3); margin-inline-start:6px; font-variant-numeric:tabular-nums}
+.ostrov-radek button{flex:none; font:inherit; font-size:.76rem; font-weight:700; padding:5px 11px; border-radius:999px; cursor:pointer;
+  color:var(--text); background:var(--plocha); border:1px solid var(--linka2)}
+.ostrov-radek button:hover{border-color:var(--cyan)}
+.ostrov-radek button.o-x{padding:5px 7px; line-height:0}
+.ostrov-radek button.o-x svg{width:12px; height:12px}
+.ostrov-radek .o-dych{width:8px; height:8px; flex:none; border-radius:50%; background:var(--akcent); animation:o-dych 1.2s ease-in-out infinite}
+@keyframes o-dych{50%{opacity:.3}}
+.scena.rezim-strom .ostrov-dalsi{display:none}
+.srovnani-vyzva{display:flex; align-items:center; gap:10px;
+  width:max-content; max-width:100%; padding:8px 8px 8px 14px; border-radius:18px; font-size:.82rem; font-weight:600; color:var(--text);
   animation:panel-in .25s ease-out, vyzva-puls 2s ease-in-out .3s infinite}
 @keyframes vyzva-puls{50%{box-shadow:0 0 0 4px var(--cyan-slabe), 0 12px 30px -12px var(--cyan-zare)}}
 .srovnani-vyzva > svg{width:20px; height:20px; flex:none; color:var(--cyan)}
@@ -599,7 +619,9 @@ h1{font-family:var(--pismo-nadpis); font-weight:700; font-size:clamp(1.3rem,2.8v
   .svet.zeme .koule{width:36px; height:36px}
   .svet-jazyky{max-width:none}
   .eu-panel{top:8px; left:8px; right:8px; width:auto; padding:9px; gap:4px 10px}
-  .srovnani-vyzva{top:8px; left:8px; right:8px; transform:none; width:auto; max-width:none; animation:vyzva-puls 2s ease-in-out infinite}
+  .ostrov{top:8px; left:8px; right:8px; transform:none; width:auto; max-width:none; align-items:stretch}
+  .srovnani-vyzva{width:auto; max-width:none; animation:vyzva-puls 2s ease-in-out infinite}
+  .ostrov-radek{align-self:center}
   .eu-vlajka{width:60px; height:40px}
   .eu-jazyky{display:none}
   .eu-text p{display:none}                /* na telefonu jen nadpis, ať panel nezakrývá Evropu */
@@ -848,6 +870,11 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 .hledej-x{position:absolute; right:4px; top:50%; transform:translateY(-50%); width:36px; height:36px; display:grid; place-items:center;
   border:0; border-radius:10px; background:transparent; color:var(--text2); cursor:pointer}
 .hledej-x svg{position:static; width:14px; height:14px; color:currentColor}
+/* 2 · klávesa / (a ⌘K) skočí do hledání odkudkoli; nápověda vpravo v poli jen u myši a jen když je pole prázdné a bez fokusu */
+.hledej-kbd{position:absolute; inset-inline-end:10px; top:50%; transform:translateY(-50%); min-width:22px; padding:1px 6px; border-radius:6px; text-align:center;
+  font-family:var(--pismo-data); font-size:.74rem; font-weight:600; color:var(--text3); border:1px solid var(--linka2); background:var(--plocha); pointer-events:none}
+#hledej:focus ~ .hledej-kbd, #hledej:not(:placeholder-shown) ~ .hledej-kbd{display:none}
+@media (pointer:coarse){ .hledej-kbd{display:none} }
 .hledej-x:hover,.hledej-x:focus-visible{background:var(--plocha2); color:var(--text)}
 /* malba v nočním vzhledu ztlumená, ať v tmavé kartě nesvítí jako lampa */
 :root:not([data-theme="light"]) .k-malba,:root:not([data-theme="light"]) .jd-malba{filter:brightness(.8) saturate(.92)}
@@ -1371,16 +1398,22 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 .put-ovl{grid-column:1 / -1; display:flex; align-items:center; gap:10px}
 .put-hraj{flex:none; width:34px; height:34px; border-radius:50%; border:0; background:var(--akcent, #D23A2B); color:#fff; font-size:.8rem; cursor:pointer}
 .put-ovl input{flex:1; accent-color:var(--akcent, #D23A2B)}
-.put-etapy{grid-column:1 / -1; list-style:none; margin:0; padding:0 0 0 14px; border-inline-start:2px solid var(--linka2); display:grid; gap:4px}
+.put-etapy{grid-column:1 / -1; list-style:none; margin:0; padding:0 0 0 14px; border-inline-start:2px solid var(--linka2); display:grid; gap:6px}
 .put-etapy li{position:relative}
-.put-etapy li::before{content:""; position:absolute; left:-20px; top:10px; width:10px; height:10px; border-radius:50%; background:var(--plocha2); box-shadow:0 0 0 2px var(--linka2)}
+.put-etapy li::before{content:""; position:absolute; left:-21px; top:14px; width:10px; height:10px; border-radius:50%; background:var(--plocha2); box-shadow:0 0 0 2px var(--linka2)}
 .put-etapy li.minula::before{background:var(--text3)}
 .put-etapy li.aktivni::before{background:var(--akcent, #D23A2B); box-shadow:0 0 0 3px color-mix(in srgb, var(--akcent, #D23A2B) 30%, transparent)}
-.put-etapa{display:grid; gap:1px; width:100%; text-align:start; background:none; border:0; padding:4px 0; color:var(--text); font:inherit; cursor:pointer}
+/* 6 · etapy jako skládací karty: neaktivní je pilulka s dobou a názvem, aktivní se plynule rozvine s textem */
+.put-etapy li{border-radius:16px; border:1px solid var(--linka2); background:var(--plocha); transition:border-color .3s, background .3s, box-shadow .3s}
+.put-etapy li:hover{border-color:var(--text3)}
+.put-etapy li.aktivni{border-color:var(--akcent, #D23A2B); background:var(--sklo2); box-shadow:inset 3px 0 0 var(--akcent, #D23A2B), 0 8px 22px -16px var(--stin)}
+.put-etapa{display:grid; gap:1px; width:100%; text-align:start; background:none; border:0; padding:7px 12px; color:var(--text); font:inherit; cursor:pointer; border-radius:16px}
 .put-etapa strong{font-size:.9rem}
 .put-doba{font-size:.72rem; letter-spacing:.06em; text-transform:uppercase; color:var(--text2)}
-.put-text{display:none; margin:2px 0 8px; font-size:.82rem; line-height:1.5; color:var(--text2)}
-.put-etapy li.aktivni .put-text{display:block}
+.put-telo{display:grid; grid-template-rows:0fr; transition:grid-template-rows .42s cubic-bezier(.4,0,.2,1)}
+.put-telo > div{overflow:hidden; min-height:0}
+.put-etapy li.aktivni .put-telo{grid-template-rows:1fr}
+.put-text{margin:0 12px 10px; font-size:.82rem; line-height:1.5; color:var(--text2)}
 .put-zdroje{grid-column:1 / -1; margin:4px 0 0; font-size:.72rem; line-height:1.45; color:var(--text3)}
 .scena.rezim-putovani #gl{opacity:.35; transition:opacity .6s}
 .scena.rezim-putovani #popisky{opacity:0}
@@ -1499,6 +1532,140 @@ html[lang="en"] .do-ceka-otazka{quotes:"“" "”"} html[lang="it"] .do-ceka-ota
 }
 :lang(zh) body{line-height:1.6}
 
+
+/* 3 · lupa na glóbu (podržení prstu nebo myši) */
+.lupa-globu{position:absolute; z-index:9; width:176px; height:176px; border-radius:50%; overflow:hidden; pointer-events:none;
+  box-shadow:0 0 0 3px var(--sklo2), 0 0 0 4px var(--linka2), 0 18px 40px -12px rgba(0,0,0,.5); background:var(--more1);
+  transform:translate(-50%,-50%) scale(.6); opacity:0; transition:opacity .15s, transform .2s cubic-bezier(.3,1.4,.5,1)}
+.lupa-globu.zap{opacity:1; transform:translate(-50%,-50%) scale(1)}
+.lupa-globu canvas{position:absolute; inset:0; width:100%; height:100%}
+.lupa-globu::after{content:""; position:absolute; left:50%; top:50%; width:16px; height:16px; margin:-8px; border-radius:50%; border:1.6px solid var(--akcent)}
+
+/* 4 · čipy největších rodin nad seznamem: počet v čipu, výběr se vlije barvou rodiny od místa kliknutí */
+.rodiny-cipy{display:flex; gap:6px; overflow-x:auto; scrollbar-width:none; margin:0 -2px; padding:2px}
+.rodiny-cipy::-webkit-scrollbar{display:none}
+.rc-cip{position:relative; isolation:isolate; overflow:hidden; flex:none; display:inline-flex; align-items:baseline; gap:6px; padding:5px 11px; border-radius:999px;
+  font:inherit; font-size:.76rem; font-weight:600; color:var(--text); background:var(--plocha); border:1px solid var(--linka2); cursor:pointer; transition:color .3s}
+.rc-cip::before{content:""; width:7px; height:7px; border-radius:50%; background:var(--rc); align-self:center}
+.rc-pocet{font-family:var(--pismo-data); font-size:.7rem; font-weight:500; color:var(--text3); font-variant-numeric:tabular-nums; transition:color .3s}
+.rc-inkoust{position:absolute; inset:-1px; z-index:-1; background:var(--rc); clip-path:circle(0 at var(--x,50%) var(--y,50%)); transition:clip-path .5s cubic-bezier(.4,0,.2,1)}
+.rc-cip[aria-pressed="true"]{color:#fff; border-color:transparent}
+.rc-cip[aria-pressed="true"] .rc-pocet{color:rgba(255,255,255,.85)}
+.rc-cip[aria-pressed="true"]::before{background:#fff}
+.rc-cip[aria-pressed="true"] .rc-inkoust{clip-path:circle(160% at var(--x,50%) var(--y,50%))}
+:root[data-theme="light"] .rc-cip[aria-pressed="true"][style*="afro"]{color:#161A3A}
+:root[data-theme="light"] .rc-cip[aria-pressed="true"][style*="afro"] .rc-pocet{color:rgba(22,26,58,.8)}
+:root[data-theme="light"] .rc-cip[aria-pressed="true"][style*="afro"]::before{background:#161A3A}
+:root:not([data-theme="light"]) .rc-cip[aria-pressed="true"]{color:#070A1E}
+:root:not([data-theme="light"]) .rc-cip[aria-pressed="true"] .rc-pocet{color:rgba(7,10,30,.75)}
+:root:not([data-theme="light"]) .rc-cip[aria-pressed="true"]::before{background:#070A1E}
+.rc-cip:hover{border-color:var(--rc)}
+
+/* 5 · jedna bublina nad medailony (popis + klávesa 1–6), plynule přejíždí; jen u myši */
+.med-bublina{position:absolute; z-index:9; left:0; top:0; transform:translate(-50%,-100%); display:flex; align-items:center; gap:8px; max-width:280px;
+  padding:6px 7px 6px 12px; border-radius:12px; background:var(--text); color:var(--pozadi-loga, #FBF9F4); font-size:.76rem; font-weight:600; line-height:1.3;
+  pointer-events:none; opacity:0; transition:left .28s cubic-bezier(.3,1.25,.5,1), top .28s, opacity .15s}
+:root:not([data-theme="light"]) .med-bublina{color:#0B1226}
+.med-bublina.zap{opacity:1}
+.med-bublina kbd{flex:none; min-width:20px; padding:1px 5px; border-radius:6px; text-align:center; font-family:var(--pismo-data); font-size:.72rem;
+  background:color-mix(in srgb, currentColor 18%, transparent)}
+.med-bublina::after{content:""; position:absolute; left:50%; bottom:-4px; width:9px; height:9px; margin-left:-4.5px; background:inherit; transform:rotate(45deg); border-radius:2px}
+.med.stisk .med-obr{transform:scale(.9)}
+@media (prefers-reduced-motion: reduce){ .med-bublina{transition:opacity .15s} }
+
+/* 9 · výslovnost: volba rychlosti vedle tlačítka a průběh přehrávání jako výplň tlačítka */
+.k-hlas{display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin-top:12px}
+.k-hlas .prehraj{margin-top:0; position:relative; overflow:hidden; isolation:isolate}
+.k-hlas .prehraj.hraje::after{content:""; position:absolute; inset:0; z-index:-1; background:rgba(255,255,255,.28); transform-origin:left; transform:scaleX(var(--prubeh, 0))}
+[dir="rtl"] .k-hlas .prehraj.hraje::after{transform-origin:right}
+.prehraj[hidden] + .k-rychlost{display:none}
+.k-rychlost{display:inline-flex; padding:2px; border-radius:999px; background:var(--plocha2); border:1px solid var(--linka)}
+.k-rychlost button{border:0; background:none; border-radius:999px; padding:4px 8px; font:inherit; font-family:var(--pismo-data); font-size:.72rem; font-weight:600;
+  color:var(--text2); cursor:pointer; font-variant-numeric:tabular-nums}
+.k-rychlost button[aria-pressed="true"]{background:var(--sklo2); color:var(--text); box-shadow:0 1px 3px rgba(0,0,0,.14)}
+
+/* 11 · zdroje za lístkem: tlačítko pod kartou vysune druhý lístek (plochý výsuv) */
+.k-zdroje{padding:0 16px 14px; text-align:center}
+.k-zdroje-tl{display:inline-flex; align-items:center; gap:6px; padding:5px 12px; border-radius:999px; border:1px solid var(--linka2); background:var(--plocha);
+  font:inherit; font-size:.76rem; font-weight:600; color:var(--text2); cursor:pointer}
+.k-zdroje-tl:hover{color:var(--text); border-color:var(--text3)}
+.k-zdroje-tl svg{width:12px; height:12px; transform:rotate(90deg); transition:transform .35s}
+.k-zdroje.otevreno .k-zdroje-tl svg{transform:rotate(-90deg)}
+.k-rub{display:grid; grid-template-rows:0fr; transition:grid-template-rows .45s cubic-bezier(.3,1.1,.5,1); text-align:start}
+.k-rub > div{overflow:hidden; min-height:0}
+.k-zdroje.otevreno .k-rub{grid-template-rows:1fr}
+.k-rub-list{margin:12px 0 8px; padding:12px 14px; display:grid; grid-template-columns:auto minmax(0,1fr); gap:5px 12px; font-size:.78rem; line-height:1.4;
+  background:var(--listek, var(--sklo2)); border-top:3px solid var(--akcent); border-radius:4px 4px 8px 8px; box-shadow:0 10px 24px -18px var(--stin);
+  transform:translateY(-14px); transition:transform .45s cubic-bezier(.3,1.1,.5,1)}
+.k-zdroje.otevreno .k-rub-list{transform:none}
+.k-rub-list dt{color:var(--text3)}
+.k-rub-list dd{margin:0; color:var(--text)}
+.k-rub-vic{border:0; background:none; padding:2px 4px; font:inherit; font-size:.76rem; font-weight:600; color:var(--cyan); cursor:pointer; text-decoration:underline; text-underline-offset:2px}
+.karta.mala .k-zdroje{display:none}
+/* 12 · stará malba nad novou s kruhovým „rozlitím“ */
+.k-malba img.malba-stara{position:absolute; inset:0; z-index:3; width:100%; height:100%; object-fit:cover; opacity:1; pointer-events:none;
+  -webkit-mask-image:radial-gradient(circle at var(--mx) var(--my), transparent calc(var(--r) - 70px), #000 var(--r));
+          mask-image:radial-gradient(circle at var(--mx) var(--my), transparent calc(var(--r) - 70px), #000 var(--r))}
+/* 13 · ikonky se pohnou jen při najetí myší, v klidu stojí */
+@media (hover:hover) and (prefers-reduced-motion: no-preference){
+  :is(.ik-posuvniky,.ik-svet,.ik-kostka) svg, .zavrit svg{transition:transform .38s cubic-bezier(.3,1.4,.5,1)}
+  .ik-posuvniky:hover svg{transform:scaleX(-1)}
+  .ik-svet:hover svg{transform:rotate(-24deg)}
+  .ik-kostka:hover svg{transform:rotate(-16deg) scale(1.08)}
+  .zavrit:hover svg{transform:rotate(90deg)}
+  .ik-otaznik{transition:transform .38s cubic-bezier(.3,1.4,.5,1)}
+  .ik-otaznik:hover{transform:rotate(-10deg)}
+}
+
+/* 7 · rejstřík s náhledem na širokém okně (aplikace): seznam jmen vlevo, velká malba s úvodem vpravo */
+.starovek-okno.rejstrik{width:min(1060px, calc(100vw - 48px))}
+.st-rejstrik{display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.05fr); grid-template-rows:minmax(0,1fr); min-height:0; flex:1}
+.st-rejstrik > .od-telo{min-height:0}
+.rejstrik .starovek-tl{grid-template-columns:1fr auto; padding:7px 10px; margin:1px 0}
+.rejstrik .starovek-tl .starovek-malba{display:none}
+.rejstrik .starovek-tl b{font-size:1.05rem; color:var(--text2); transition:color .2s}
+.rejstrik .starovek-tl small{max-height:0; overflow:hidden; opacity:0; transition:max-height .3s, opacity .3s}
+.rejstrik .starovek-tl.akt{background:var(--plocha2, rgba(0,0,0,.05))}
+.rejstrik .starovek-tl.akt b{color:var(--text)}
+.rejstrik .starovek-tl.akt small{max-height:3em; opacity:1}
+.st-nahled{overflow:auto; padding:18px 24px 24px; border-inline-start:1px solid var(--linka)}
+.st-nahled-obr{position:relative; aspect-ratio:1200/630; border-radius:12px; overflow:hidden; background:#FBF7EE}
+.st-nahled-obr img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; transform:scale(1.03); transition:opacity .4s, transform .8s}
+.st-nahled-obr img.ukazana{opacity:1; transform:none}
+.st-nahled h3{margin:14px 0 2px; font-family:"Playfair Display", Georgia, serif; font-weight:600; font-size:1.45rem; line-height:1.2}
+.st-nahled-pod{margin:0 0 10px; font-size:.86rem; color:var(--text2)}
+.st-nahled-perex{margin:0; font-size:.92rem; line-height:1.6; color:var(--text)}
+@media (prefers-reduced-motion: reduce){ .st-nahled-obr img{transition:opacity .2s; transform:none} }
+
+/* 10 · fotografie přes celou obrazovku (jen v aplikaci, okno #civ-okno) */
+#civ-okno figure.civ-foto img{cursor:zoom-in}
+#civ-okno figure.civ-foto img:focus-visible{outline:3px solid var(--cyan); outline-offset:3px}
+.svetlo{position:fixed; inset:0; z-index:50; display:flex; flex-direction:column; gap:8px; padding:max(14px, env(safe-area-inset-top)) 14px max(12px, env(safe-area-inset-bottom));
+  background:rgba(8,10,18,.97); color:#E9ECF4; animation:svetlo-in .25s ease both}
+.svetlo.zavira{animation:svetlo-ven .34s ease both}
+@keyframes svetlo-in{from{background:rgba(8,10,18,0)}}
+@keyframes svetlo-ven{to{background:rgba(8,10,18,0)}}
+.svetlo-plocha{position:relative; flex:1; min-height:0; display:flex; align-items:center; justify-content:center}
+.svetlo-plocha img{max-width:100%; max-height:100%; object-fit:contain; border-radius:4px}
+.svetlo-popisek{max-width:72ch; margin:0 auto; text-align:center; font-size:.85rem; line-height:1.45; color:#C7CDDB}
+.svetlo-popisek a{color:#A9C8FF}
+.svetlo.zavira .svetlo-popisek,.svetlo.zavira .svetlo-pata,.svetlo.zavira button{opacity:0; transition:opacity .15s}
+.svetlo-pata{display:flex; align-items:center; gap:12px; justify-content:center; min-width:0}
+.svetlo-pocet{flex:none; font-family:var(--pismo-data, monospace); font-size:.75rem; color:#9CA5BA; font-variant-numeric:tabular-nums}
+.svetlo-pas{display:flex; gap:6px; overflow-x:auto; padding:3px; min-width:0; scrollbar-width:none}
+.svetlo-pas button{flex:none; width:54px; height:54px; padding:0; border:2px solid transparent; border-radius:6px; overflow:hidden; cursor:pointer; opacity:.5; background:none}
+.svetlo-pas button[aria-current="true"]{border-color:#fff; opacity:1}
+.svetlo-pas img{width:100%; height:100%; object-fit:cover; display:block}
+.svetlo.jedna .svetlo-pas,.svetlo.jedna .svetlo-sipka,.svetlo.jedna .svetlo-pocet{display:none}
+.svetlo-sipka,.svetlo-zavrit{position:absolute; width:44px; height:44px; display:grid; place-items:center; border:0; border-radius:50%; background:rgba(255,255,255,.14); color:#fff; cursor:pointer}
+.svetlo-sipka svg,.svetlo-zavrit svg{width:18px; height:18px}
+.svetlo-sipka:hover,.svetlo-zavrit:hover{background:rgba(255,255,255,.26)}
+.svetlo-zpet{left:0; top:50%; margin-top:-22px} .svetlo-dal{right:0; top:50%; margin-top:-22px}
+.svetlo-zavrit{top:max(14px, env(safe-area-inset-top)); right:14px}
+[dir="rtl"] .svetlo-zpet svg,[dir="rtl"] .svetlo-dal svg{transform:scaleX(-1)}
+.svetlo-letec{position:fixed; z-index:51; object-fit:cover; border-radius:6px; pointer-events:none}
+@media (max-width:620px){ .svetlo-sipka{display:none} }
+[dir="rtl"] .svetlo-zpet{left:auto; right:0} [dir="rtl"] .svetlo-dal{right:auto; left:0}
 
 /* ---------- jazyky starověku: stránka o civilizaci jako list ilustrované encyklopedie (okno nad glóbem i web) ----------
    Papír a inkoust jako u akvarelů na kartách; v tmavém vzhledu sépiová noc. Barvy jen tady, přes --civ-*. */
@@ -1951,7 +2118,10 @@ html[lang="en"] .do-ceka-otazka{quotes:"“" "”"} html[lang="it"] .do-ceka-ota
     <button class="zavrit" id="eu-zavrit" type="button" aria-label="Schließen" data-t-aria-label="euZavrit"><svg aria-hidden="true"><use href="#i-krizek"/></svg></button>
     <div class="eu-jazyky" id="eu-jazyky"></div>
    </div>
-   <div class="srovnani-vyzva sklo" id="srovnani-vyzva" hidden role="status"><svg aria-hidden="true"><use href="#i-porovnat"/></svg><span id="sv-text"></span><button type="button" id="sv-zrusit" data-t="porovnatZrusit">Abbrechen</button></div>
+   <div class="ostrov" id="ostrov">
+    <div class="srovnani-vyzva sklo" id="srovnani-vyzva" hidden role="status"><svg aria-hidden="true"><use href="#i-porovnat"/></svg><span id="sv-text"></span><button type="button" id="sv-zrusit" data-t="porovnatZrusit">Abbrechen</button></div>
+    <div class="ostrov-dalsi" id="ostrov-dalsi" role="status" aria-live="polite"></div>
+   </div>
    <div class="zeme-okno sklo" id="zeme-okno" hidden></div>
    <div class="bublina-bod" id="bublina-bod" hidden></div>
    <div class="vypadek" id="vypadek" hidden>
@@ -1976,7 +2146,10 @@ html[lang="en"] .do-ceka-otazka{quotes:"“" "”"} html[lang="it"] .do-ceka-ota
      <h2 id="k-nazev"></h2>
      <p class="domaci" id="k-domaci"></p>
      <span class="odznak" id="k-odznak" hidden></span>
-     <button class="prehraj" id="k-prehraj" type="button"><svg aria-hidden="true"><use href="#i-zvuk"/></svg><span>Aussprache abspielen</span></button>
+     <div class="k-hlas">
+      <button class="prehraj" id="k-prehraj" type="button"><svg aria-hidden="true"><use href="#i-zvuk"/></svg><span>Aussprache abspielen</span></button>
+      <div class="k-rychlost" id="k-rychlost" role="group" aria-label="Geschwindigkeit der Aussprache" data-t-aria-label="ovlRychlost"><button type="button" data-r="1">1×</button><button type="button" data-r="0.75">0,75×</button><button type="button" data-r="0.5">0,5×</button></div>
+     </div>
     </div>
     <p class="stav" id="k-stav" hidden></p>
     <p class="zkopirovano" id="k-zkopirovano" role="status" hidden></p>
@@ -1984,6 +2157,18 @@ html[lang="en"] .do-ceka-otazka{quotes:"“" "”"} html[lang="it"] .do-ceka-ota
     <nav class="k-cesta" id="k-cesta" hidden aria-label="Stammbaum einer Sprachfamilie" data-t-aria-label="stromPlatno"></nav>
   <button class="k-porovnat" id="k-porovnat" type="button"><svg aria-hidden="true"><use href="#i-porovnat"/></svg><span data-t="porovnat">Mit einer anderen Sprache vergleichen</span></button>
     <div class="k-telo" id="k-telo"></div>
+    <div class="k-zdroje" id="k-zdroje" hidden>
+     <button class="k-zdroje-tl" id="k-zdroje-tl" type="button" aria-expanded="false" aria-controls="k-rub"><span data-t="ovlZdrojeTl">Woher die Angaben stammen</span><svg aria-hidden="true"><use href="#i-dal"/></svg></button>
+     <div class="k-rub" id="k-rub"><div><dl class="k-rub-list">
+      <dt data-t="ovlZdrPoloha">Lage, Familie, Verwandte</dt><dd>Glottolog 5.2.1 (CC BY 4.0)</dd>
+      <dt data-t="ovlZdrVitalita">Vitalität</dt><dd data-t="ovlZdrVitalitaZ">Glottolog, UNESCO-Skala</dd>
+      <dt data-t="ovlZdrStavba">Struktur</dt><dd>WALS Online 2013 (CC BY 4.0)</dd>
+      <dt data-t="ovlZdrHlasky">Laute</dt><dd>PHOIBLE (CC BY-SA 3.0)</dd>
+      <dt data-t="ovlZdrPismo">Schrift und Amtsstatus</dt><dd>Unicode CLDR 48</dd>
+      <dt data-t="ovlZdrMluvci">Zahl der Sprecher</dt><dd data-t="ovlZdrMluvciZ">Schätzung des Atlas, bei anderen Sprachen Wikidata</dd>
+      <dt data-t="ovlZdrMapa">Karte</dt><dd>Natural Earth</dd>
+     </dl><button class="k-rub-vic" id="k-rub-vic" type="button" aria-haspopup="dialog" data-t="ovlZdrVice">Über die Daten, Versionen und Lizenzen ›</button></div></div>
+    </div>
    </article>
   </section>
 
@@ -1992,6 +2177,7 @@ html[lang="en"] .do-ceka-otazka{quotes:"“" "”"} html[lang="it"] .do-ceka-ota
     <label class="pole">
      <svg aria-hidden="true"><use href="#i-lupa"/></svg>
      <input id="hledej" type="search" placeholder="Suchen oder fragen Sie …" aria-label="Sprachen suchen" data-t-placeholder="hledejPlaceholder" data-t-aria-label="hledejPopisek">
+     <kbd class="hledej-kbd" id="hledej-kbd" aria-hidden="true" title="Suchen (Taste / oder ⌘K)" data-t-title="ovlKlavesaHledat">/</kbd>
      <button class="hledej-x" id="hledej-x" type="button" hidden aria-label="Suche löschen" title="Suche löschen" data-t-aria-label="hledejVymazat" data-t-title="hledejVymazat"><svg aria-hidden="true"><use href="#i-krizek"/></svg></button>
     </label>
     <button class="hledej-tip" id="hledej-tip" type="button" hidden></button>
@@ -2000,6 +2186,7 @@ html[lang="en"] .do-ceka-otazka{quotes:"“" "”"} html[lang="it"] .do-ceka-ota
      <button type="button" data-razeni="abeceda" aria-pressed="false" data-t="raditAbeceda">A–Z</button>
      <button type="button" data-razeni="svetadil" aria-pressed="false" data-t="raditSvetadil">Nach Kontinent</button>
     </div>
+    <div class="rodiny-cipy" id="rodiny-cipy" role="group" aria-label="Die größten Sprachfamilien" data-t-aria-label="ovlRodinyCipy"></div>
     <div class="pocet-radek"><p class="pocet" id="pocet"></p>
      <button class="tl hlavni" id="tl-nahoda" type="button"><svg aria-hidden="true"><use href="#i-kostka"/></svg><span data-t="prekvap">Zufällige Sprache</span></button></div>
    </div>
@@ -2025,6 +2212,6 @@ html[lang="en"] .do-ceka-otazka{quotes:"“" "”"} html[lang="it"] .do-ceka-ota
  <dialog class="civ-okno" id="civ-okno" aria-labelledby="civ-nadpis"></dialog>
 </div>
 
-<script src="../js/atlas.b32e839517.js"></script>
+<script src="../js/atlas.2ec8917788.js"></script>
 </body>
 </html>

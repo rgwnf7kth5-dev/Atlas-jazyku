@@ -137,7 +137,10 @@
     <button class="zavrit" id="eu-zavrit" type="button" aria-label="{{euZavrit}}" data-t-aria-label="euZavrit"><svg aria-hidden="true"><use href="#i-krizek"/></svg></button>
     <div class="eu-jazyky" id="eu-jazyky"></div>
    </div>
-   <div class="srovnani-vyzva sklo" id="srovnani-vyzva" hidden role="status"><svg aria-hidden="true"><use href="#i-porovnat"/></svg><span id="sv-text"></span><button type="button" id="sv-zrusit" data-t="porovnatZrusit">{{porovnatZrusit}}</button></div>
+   <div class="ostrov" id="ostrov">
+    <div class="srovnani-vyzva sklo" id="srovnani-vyzva" hidden role="status"><svg aria-hidden="true"><use href="#i-porovnat"/></svg><span id="sv-text"></span><button type="button" id="sv-zrusit" data-t="porovnatZrusit">{{porovnatZrusit}}</button></div>
+    <div class="ostrov-dalsi" id="ostrov-dalsi" role="status" aria-live="polite"></div>
+   </div>
    <div class="zeme-okno sklo" id="zeme-okno" hidden></div>
    <div class="bublina-bod" id="bublina-bod" hidden></div>
    <div class="vypadek" id="vypadek" hidden>
@@ -162,7 +165,10 @@
      <h2 id="k-nazev"></h2>
      <p class="domaci" id="k-domaci"></p>
      <span class="odznak" id="k-odznak" hidden></span>
-     <button class="prehraj" id="k-prehraj" type="button"><svg aria-hidden="true"><use href="#i-zvuk"/></svg><span>{{poslechni}}</span></button>
+     <div class="k-hlas">
+      <button class="prehraj" id="k-prehraj" type="button"><svg aria-hidden="true"><use href="#i-zvuk"/></svg><span>{{poslechni}}</span></button>
+      <div class="k-rychlost" id="k-rychlost" role="group" aria-label="{{ovlRychlost}}" data-t-aria-label="ovlRychlost"><button type="button" data-r="1">1×</button><button type="button" data-r="0.75">0,75×</button><button type="button" data-r="0.5">0,5×</button></div>
+     </div>
     </div>
     <p class="stav" id="k-stav" hidden></p>
     <p class="zkopirovano" id="k-zkopirovano" role="status" hidden></p>
@@ -170,6 +176,18 @@
     <nav class="k-cesta" id="k-cesta" hidden aria-label="{{stromPlatno}}" data-t-aria-label="stromPlatno"></nav>
   <button class="k-porovnat" id="k-porovnat" type="button"><svg aria-hidden="true"><use href="#i-porovnat"/></svg><span data-t="porovnat">{{porovnat}}</span></button>
     <div class="k-telo" id="k-telo"></div>
+    <div class="k-zdroje" id="k-zdroje" hidden>
+     <button class="k-zdroje-tl" id="k-zdroje-tl" type="button" aria-expanded="false" aria-controls="k-rub"><span data-t="ovlZdrojeTl">{{ovlZdrojeTl}}</span><svg aria-hidden="true"><use href="#i-dal"/></svg></button>
+     <div class="k-rub" id="k-rub"><div><dl class="k-rub-list">
+      <dt data-t="ovlZdrPoloha">{{ovlZdrPoloha}}</dt><dd>Glottolog 5.2.1 (CC BY 4.0)</dd>
+      <dt data-t="ovlZdrVitalita">{{ovlZdrVitalita}}</dt><dd data-t="ovlZdrVitalitaZ">{{ovlZdrVitalitaZ}}</dd>
+      <dt data-t="ovlZdrStavba">{{ovlZdrStavba}}</dt><dd>WALS Online 2013 (CC BY 4.0)</dd>
+      <dt data-t="ovlZdrHlasky">{{ovlZdrHlasky}}</dt><dd>PHOIBLE (CC BY-SA 3.0)</dd>
+      <dt data-t="ovlZdrPismo">{{ovlZdrPismo}}</dt><dd>Unicode CLDR 48</dd>
+      <dt data-t="ovlZdrMluvci">{{ovlZdrMluvci}}</dt><dd data-t="ovlZdrMluvciZ">{{ovlZdrMluvciZ}}</dd>
+      <dt data-t="ovlZdrMapa">{{ovlZdrMapa}}</dt><dd>Natural Earth</dd>
+     </dl><button class="k-rub-vic" id="k-rub-vic" type="button" aria-haspopup="dialog" data-t="ovlZdrVice">{{ovlZdrVice}}</button></div></div>
+    </div>
    </article>
   </section>
 
@@ -178,6 +196,7 @@
     <label class="pole">
      <svg aria-hidden="true"><use href="#i-lupa"/></svg>
      <input id="hledej" type="search" placeholder="{{hledejPlaceholder}}" aria-label="{{hledejPopisek}}" data-t-placeholder="hledejPlaceholder" data-t-aria-label="hledejPopisek">
+     <kbd class="hledej-kbd" id="hledej-kbd" aria-hidden="true" title="{{ovlKlavesaHledat}}" data-t-title="ovlKlavesaHledat">/</kbd>
      <button class="hledej-x" id="hledej-x" type="button" hidden aria-label="{{hledejVymazat}}" title="{{hledejVymazat}}" data-t-aria-label="hledejVymazat" data-t-title="hledejVymazat"><svg aria-hidden="true"><use href="#i-krizek"/></svg></button>
     </label>
     <button class="hledej-tip" id="hledej-tip" type="button" hidden></button>
@@ -186,6 +205,7 @@
      <button type="button" data-razeni="abeceda" aria-pressed="false" data-t="raditAbeceda">{{raditAbeceda}}</button>
      <button type="button" data-razeni="svetadil" aria-pressed="false" data-t="raditSvetadil">{{raditSvetadil}}</button>
     </div>
+    <div class="rodiny-cipy" id="rodiny-cipy" role="group" aria-label="{{ovlRodinyCipy}}" data-t-aria-label="ovlRodinyCipy"></div>
     <div class="pocet-radek"><p class="pocet" id="pocet"></p>
      <button class="tl hlavni" id="tl-nahoda" type="button"><svg aria-hidden="true"><use href="#i-kostka"/></svg><span data-t="prekvap">{{prekvap}}</span></button></div>
    </div>

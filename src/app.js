@@ -1026,6 +1026,7 @@ function postavPolici(filtr){
   const sPozdravem = polozky.filter(function(p){ return p.j; }).length;
   $("pocet").textContent = !polozky.length && kartaAIzde ? "" : t(hledane ? "nalezeno" : "vychoziPocet",   // „Našlo se: 0 jazyků“ vedle odpovědi AI mátlo
     {a: cislo(polozky.length) + " " + tvar(polozky.length, T.jazyk), b: cislo(sPozdravem)});
+  if (window.obnovCipy) window.obnovCipy();
 }
 /* dávkové kreslení police: dalších ~240 dlaždic, když se k jejímu konci doroluje */
 const zarazka = document.createElement("div"); zarazka.className = "zarazka";
@@ -1544,11 +1545,21 @@ function zivaSmycka(ted){
   ZIVE.posl = ted;
   ZIVE.seznam.forEach(function(z){ z.kresli(ted / 1000); });
 }
+let malbaMinula = null;
 function malbaNaKarte(id){
   const ma = !!(id && KRAJINY[id] && typeof AKVARELY !== "undefined"), el = $("k-malba");
   kartaHero.classList.toggle("s-malbou", ma);
   el.hidden = !ma;
-  if (el.dataset.id !== (id || "")) { if (ma) vlozMalbu(el, id); else el.replaceChildren(); el.dataset.id = id || ""; }
+  if (el.dataset.id !== (id || "")) {
+    /* 12 · stará malba se „rozlije“ do nové; otevriKartu malbu nejdřív smaže (id null), proto si ji na chvíli pamatuje */
+    const stara = el.querySelector("img.ukazana");
+    let staraSrc = stara && !karta.hidden ? stara.src : "";
+    if (!id && staraSrc) malbaMinula = {src: staraSrc, t: performance.now()};
+    if (id && !staraSrc && malbaMinula && performance.now() - malbaMinula.t < 200) staraSrc = malbaMinula.src;
+    if (id) malbaMinula = null;
+    if (ma) vlozMalbu(el, id); else el.replaceChildren(); el.dataset.id = id || "";
+    if (ma && staraSrc && typeof rozlijMalbu === "function") rozlijMalbu(el, staraSrc);
+  }
 }
 const relief = {platno: null, gl: null, u: {}, hotovo: false, sirkaTex: 1, pokusy: 0};
 function pripravRelief(){
@@ -2370,6 +2381,79 @@ function smycka(cas){
   popredBezelo = anim;                  // ještě jeden snímek po konci animace, ať nic nezůstane viset
 }
 
+/* ---------- 3 · lupa (14. 11. 2026): podržení prstu nebo tlačítka myši (380 ms bez pohybu) ukáže kruhovou lupu
+   se zvětšenými tečkami a jmény; tažení ji posouvá, puštění vybere jazyk pod kroužkem uprostřed. Na hustých místech
+   (Nová Guinea, Nigérie, Kamerun) se do správné tečky jinak netrefí. Na dotyku je lupa nad prstem, ať ji nezakrývá. ---------- */
+const lupa = (function(){
+  const NAS = 3.2, VEL = 176;
+  let el = null, cv = null, c = null, casovac = 0, x = 0, y = 0, dotyk = false;
+  const L = {zap: false};
+  function priprav(){
+    if (el) return;
+    el = prvek("div", "lupa-globu"); el.setAttribute("aria-hidden", "true");
+    cv = document.createElement("canvas"); el.appendChild(cv); c = cv.getContext("2d");
+    $("scena").appendChild(el);
+  }
+  function barvaBodu(i, ink){
+    if (barvitVitalitu) { const v = vitalitaBodu(i); return v < 0 ? cssVar("--vit-nic") : cssVar("--vit-" + v); }
+    if (typVlastnost >= 0 && typTr) { const k = typTr[i]; return k < 0 ? cssVar("--typ-nic") : cssVar(typBarvy(typVl(typVlastnost))[k]); }
+    return ink;
+  }
+  function kresli(){
+    const dpr = Math.min(2, window.devicePixelRatio || 1);
+    if (cv.width !== VEL * dpr) { cv.width = cv.height = VEL * dpr; }
+    c.setTransform(dpr, 0, 0, dpr, 0, 0); c.clearRect(0, 0, VEL, VEL);
+    const r = platno.getBoundingClientRect(), pr = podklad.width / Math.max(1, r.width), polo = VEL / NAS / 2;
+    c.imageSmoothingQuality = "high";
+    try { c.drawImage(podklad, (x - polo) * pr, (y - polo) * pr, 2 * polo * pr, 2 * polo * pr, 0, 0, VEL, VEL); } catch (e) {}
+    const ink = cssVar("--tecka-jazyk"), lem = cssVar("--tecka-lem"), txt = cssVar("--text");
+    const blizko = [];
+    for (let i = 0; i < POCET_B; i++) {
+      if (!bVid[i] || skryty[i]) continue;
+      const dx = bPx[i] - x, dy = bPy[i] - y;
+      if (Math.abs(dx) > polo + 4 || Math.abs(dy) > polo + 4) continue;
+      const px = VEL / 2 + dx * NAS, py = VEL / 2 + dy * NAS;
+      c.beginPath(); c.arc(px, py, 4.2, 0, 6.2832); c.fillStyle = barvaBodu(i, ink); c.fill(); c.lineWidth = 1.4; c.strokeStyle = lem; c.stroke();
+      blizko.push([i, px, py, dx * dx + dy * dy]);
+    }
+    blizko.sort(function(a, b){ return a[3] - b[3]; });
+    L.cil = blizko.length && blizko[0][3] <= 100 ? blizko[0][0] : -1;     // vybere se tečka do 10 px od středu
+    if (L.cil >= 0) { c.beginPath(); c.arc(blizko[0][1], blizko[0][2], 8, 0, 6.2832); c.lineWidth = 2.4; c.strokeStyle = cssVar("--akcent"); c.stroke(); }
+    c.font = "600 11px " + getComputedStyle(document.body).fontFamily; c.textBaseline = "middle"; c.lineJoin = "round";
+    const obs = [];
+    blizko.slice(0, 16).forEach(function(b){
+      const j = jmenoBodu(b[0]), w = c.measureText(j).width, box = [b[1] + 7, b[2] - 7, w, 14];
+      if (box[0] + w > VEL - 2 && b[1] - 7 - w > 2) box[0] = b[1] - 7 - w;
+      if (obs.some(function(o){ return box[0] < o[0] + o[2] && box[0] + box[2] > o[0] && box[1] < o[1] + o[3] && box[1] + box[3] > o[1]; })) return;
+      obs.push(box);
+      c.lineWidth = 3; c.strokeStyle = lem; c.strokeText(j, box[0], b[2]); c.fillStyle = txt; c.fillText(j, box[0], b[2]);
+    });
+  }
+  function umisti(){
+    el.style.left = x + "px"; el.style.top = (y - (dotyk ? 110 : 0)) + "px";
+    kresli();
+  }
+  L.cekej = function(e){
+    clearTimeout(casovac);
+    if (!e.isPrimary) return;
+    const r = platno.getBoundingClientRect(); x = e.clientX - r.left; y = e.clientY - r.top; dotyk = e.pointerType === "touch";
+    casovac = setTimeout(function(){
+      priprav(); L.zap = true; bublinaBod.hidden = true;
+      el.classList.add("zap"); umisti();
+      if (navigator.vibrate && dotyk) { try { navigator.vibrate(8); } catch (x) {} }
+    }, 380);
+  };
+  L.posun = function(e){ const r = platno.getBoundingClientRect(); x = e.clientX - r.left; y = e.clientY - r.top; umisti(); };
+  L.zrus = function(){ clearTimeout(casovac); if (L.zap) { L.zap = false; el.classList.remove("zap"); } };
+  L.pust = function(vybrat){
+    L.zrus();
+    if (!vybrat) return;
+    const i = L.cil;
+    if (i >= 0) { okno.hidden = true; vyberBod(i); krokNapovedy("klikni"); }
+  };
+  return L;
+})();
+function cssVar(n){ return getComputedStyle(document.documentElement).getPropertyValue(n).trim(); }
 /* ---------- myš a prsty: tažení otáčí, dva prsty a kolečko přibližují ---------- */
 if (globusOk) {
   let start = null, pinch = null;
@@ -2388,21 +2472,27 @@ if (globusOk) {
     else if (prsty.size === 1) {
       start = {x: e.clientX, y: e.clientY, rot: rot.slice(), posun: 0};
       tahne = true; platno.classList.add("tahne");
+      lupa.cekej(e);                              // 3 · podržení prstu (myši) otevře lupu
     }
+    if (prsty.size > 1) lupa.zrus();
   });
   platno.addEventListener("pointermove", function(e){
     if (prsty.has(e.pointerId)) prsty.set(e.pointerId, {x: e.clientX, y: e.clientY});
+    if (lupa.zap) { lupa.posun(e); return; }
     if (pinch && prsty.size >= 2) { const d = vzdalenostPrstu(); if (d > 0 && pinch.d > 0) { nastavZoom(pinch.zoom * d / pinch.d); krokNapovedy("pribliz"); } return; }
     ozivit();
     if (!start) { if (!prsty.size) najedNaBod(e); return; }
     const dx = e.clientX - start.x, dy = e.clientY - start.y;
     start.posun = Math.max(start.posun, Math.abs(dx) + Math.abs(dy));
+    if (start.posun > 6) lupa.zrus();
     if (start.posun > 40) krokNapovedy("zatoc");
     const k = 0.32 * (320 / Math.max(160, polomer));
     rot = [start.rot[0] + dx * k, Math.max(-88, Math.min(88, start.rot[1] - dy * k))];
     potrebaKresli = true;
   });
   const pustPrst = function(e, klik){
+    if (lupa.zap) { prsty.delete(e.pointerId); start = null; pinch = null; tahne = false; platno.classList.remove("tahne"); lupa.pust(klik); return; }
+    lupa.zrus();
     prsty.delete(e.pointerId);
     if (prsty.size < 2) pinch = null;
     if (prsty.size === 0) {
@@ -2877,7 +2967,7 @@ function postavStrankuVitality(){
 function otevriStrankuVitality(){
   if (!panelZob.hidden) otevriZobrazeni(false);
   postavStrankuVitality();
-  if (vitOkno.showModal) { if (!vitOkno.open) vitOkno.showModal(); } else vitOkno.setAttribute("open", "");
+  if (vitOkno.showModal) { if (!vitOkno.open || vitOkno.dataset.zavira) vitOkno.showModal(); } else vitOkno.setAttribute("open", "");
   vitOkno.querySelector(".od-telo").scrollTop = 0;
 }
 vitOkno.addEventListener("click", function(e){ if (e.target === vitOkno) vitOkno.close(); });
@@ -3040,7 +3130,7 @@ function postavMapy(){
 function otevriMapy(){
   if (!panelZob.hidden) otevriZobrazeni(false);
   postavMapy();
-  if (mapyOkno.showModal) { if (!mapyOkno.open) mapyOkno.showModal(); } else mapyOkno.setAttribute("open", "");
+  if (mapyOkno.showModal) { if (!mapyOkno.open || mapyOkno.dataset.zavira) mapyOkno.showModal(); } else mapyOkno.setAttribute("open", "");
   const b = mapyOkno.querySelector('.mapa-tl[aria-pressed="true"]'); if (b) b.focus();
 }
 $("tl-mapy").addEventListener("click", function(){ if (this.getAttribute("aria-disabled") !== "true") otevriMapy(); });
@@ -3606,6 +3696,30 @@ function najdiHlas(kod){
   return hlasy.filter(function(v){ return norm(v) === k; })[0]
       || hlasy.filter(function(v){ return norm(v).split("-")[0] === zaklad; })[0] || null;
 }
+/* 9 · rychlost výslovnosti (1×, 0,75×, 0,5×, pamatuje se) a průběh přehrávání na tlačítku */
+let rychlostHlasu = 1;
+try { const r = parseFloat(localStorage.getItem("atlas-rychlost")); if ([1, 0.75, 0.5].indexOf(r) >= 0) rychlostHlasu = r; } catch (e) {}
+const tlRychlost = $("k-rychlost");
+function obnovRychlost(){
+  Array.prototype.forEach.call(tlRychlost.children, function(b){ const r = +b.dataset.r; b.textContent = cislo(r, r === 1 ? 0 : 2).replace(/0$/, "") + "×"; b.setAttribute("aria-pressed", r === rychlostHlasu ? "true" : "false"); });
+}
+tlRychlost.addEventListener("click", function(e){
+  const b = e.target.closest("[data-r]"); if (!b) return;
+  rychlostHlasu = +b.dataset.r; obnovRychlost();
+  try { if (rychlostHlasu === 1) localStorage.removeItem("atlas-rychlost"); else localStorage.setItem("atlas-rychlost", String(rychlostHlasu)); } catch (x) {}
+  if (window.speechSynthesis && window.speechSynthesis.speaking) tlPrehraj.click();     // hraje: znovu novou rychlostí
+});
+obnovRychlost();
+let prubehId = 0;
+function prubehHlasu(u, delka, rate){
+  cancelAnimationFrame(prubehId); tlPrehraj.style.removeProperty("--prubeh"); tlPrehraj.classList.toggle("hraje", !!u);
+  if (!u) return;
+  const t0 = performance.now(), odhad = Math.max(700, delka * 95 / rate);
+  let hranice = 0;
+  u.onboundary = function(ev){ if (ev.charIndex >= 0) hranice = Math.min(1, (ev.charIndex + (ev.charLength || 1)) / Math.max(1, delka)); };
+  const krok = function(){ const p = Math.max(hranice, Math.min(0.95, (performance.now() - t0) / odhad)); tlPrehraj.style.setProperty("--prubeh", p.toFixed(3)); prubehId = requestAnimationFrame(krok); };
+  prubehId = requestAnimationFrame(krok);
+}
 tlPrehraj.addEventListener("click", function(){
   if (!vybrany || vybrany.typ !== "atlas") return;
   const j = PODLE_ID[vybrany.id], stav = $("k-stav");
@@ -3620,10 +3734,11 @@ tlPrehraj.addEventListener("click", function(){
   else { stav.textContent = t("zvukZadny", {x: j.prep}); return; }
   try {
     const u = new SpeechSynthesisUtterance(text);
-    u.voice = hlas; u.lang = hlas.lang; u.rate = rychlost;
+    u.voice = hlas; u.lang = hlas.lang; u.rate = rychlost * rychlostHlasu;
     popisPrehraj.textContent = T.posloucha;
-    u.onend = function(){ popisPrehraj.textContent = T.znovu; };
-    u.onerror = function(){ popisPrehraj.textContent = T.znovu; stav.textContent = t("zvukChyba", {x: j.prep}); };
+    prubehHlasu(u, text.length, rychlost * rychlostHlasu);
+    u.onend = function(){ popisPrehraj.textContent = T.znovu; prubehHlasu(null); };
+    u.onerror = function(){ popisPrehraj.textContent = T.znovu; prubehHlasu(null); stav.textContent = t("zvukChyba", {x: j.prep}); };
     window.speechSynthesis.cancel(); window.speechSynthesis.speak(u);
   } catch (e) { stav.textContent = t("zvukChyba", {x: j.prep}); }
 });
@@ -3887,6 +4002,7 @@ function otevriSekci(sekce){
     poradi.forEach(function(pj){
       const b = prvek("button", "starovek-tl"); b.type = "button";
       const civ = pj.obrazek && STAROVEK_DATA.civilizace.find(function(c){ return c.id === pj.obrazek; });
+      b.dataset.put = pj.id;
       if (civ) { b.appendChild(malbaCivilizace(civ)); const t = prvek("span"); t.appendChild(prvek("b", null, pj.nazev[T.lang])); t.appendChild(prvek("small", null, pj.podtitul[T.lang])); b.appendChild(t);
         b.insertAdjacentHTML("beforeend", '<svg aria-hidden="true"><use href="#i-dal"/></svg>'); b.addEventListener("click", function(){ starovekOkno.close(); spustPutovani(pj.id); }); telo.appendChild(b); return; }
       const m = prvek("span", "starovek-malba"), i = prvek("img"); i.alt = ""; i.decoding = "async"; m.appendChild(i);
@@ -3902,7 +4018,7 @@ function otevriSekci(sekce){
   };
   strankySekce(sekce).forEach(function(c){
     if (sekce === "pribehy" && c.skupina !== skupina) { if (skupina === "slova") vlozPutovani(); skupina = c.skupina; telo.appendChild(prvek("h3", "pribehy-skupina", (U.skupiny || {})[skupina] || skupina)); }
-    const b = prvek("button", "starovek-tl"); b.type = "button";
+    const b = prvek("button", "starovek-tl"); b.type = "button"; b.dataset.civ = c.id;
     b.appendChild(malbaCivilizace(c));
     const t = prvek("span"); t.appendChild(prvek("b", null, c[T.lang].nazev)); t.appendChild(prvek("small", null, c[T.lang].podtitul)); b.appendChild(t);
     b.insertAdjacentHTML("beforeend", '<svg aria-hidden="true"><use href="#i-dal"/></svg>');
@@ -3912,7 +4028,43 @@ function otevriSekci(sekce){
   });
   vlozPutovani();                                // kdyby za Slovy na cestách žádná skupina nebyla
   starovekOkno.appendChild(telo);
-  if (starovekOkno.showModal) { if (!starovekOkno.open) starovekOkno.showModal(); } else starovekOkno.setAttribute("open", "");
+  rejstrikSNahledem(telo);
+  if (starovekOkno.showModal) { if (!starovekOkno.open || starovekOkno.dataset.zavira) starovekOkno.showModal(); } else starovekOkno.setAttribute("open", "");
+}
+/* 7 · rejstřík s náhledem (14. 11. 2026): na širokém okně je nabídka seznam jmen jako v rejstříku knihy a vpravo velká malba
+   s podtitulem a úvodem stránky, která se mění podle toho, na čem je myš nebo fokus. Na úzkém okně zůstávají dlaždice. */
+function rejstrikSNahledem(telo){
+  starovekOkno.classList.remove("rejstrik");
+  if (!window.matchMedia("(min-width: 980px)").matches) return;
+  starovekOkno.classList.add("rejstrik");
+  const nah = prvek("aside", "st-nahled"); nah.setAttribute("aria-live", "polite");
+  const ram = prvek("div", "st-nahled-obr"), img = prvek("img"); img.alt = ""; img.decoding = "async"; ram.appendChild(img);
+  const h = prvek("h3"), pod = prvek("p", "st-nahled-pod"), per = prvek("p", "st-nahled-perex");
+  nah.appendChild(ram); nah.appendChild(h); nah.appendChild(pod); nah.appendChild(per);
+  const obal = prvek("div", "st-rejstrik"); obal.appendChild(nah);
+  telo.parentNode.insertBefore(obal, telo); obal.insertBefore(telo, nah);
+  const web = !ARTEFAKT && /^https?:$/.test(location.protocol);
+  let ted = null;
+  function ukaz(b){
+    if (!b || b === ted) return; ted = b;
+    Array.prototype.forEach.call(telo.querySelectorAll(".starovek-tl.akt"), function(x){ x.classList.remove("akt"); });
+    b.classList.add("akt");
+    const c = b.dataset.civ && STAROVEK_DATA.civilizace.find(function(x){ return x.id === b.dataset.civ; });
+    const pj = b.dataset.put && PUTOVANI.find(function(x){ return x.id === b.dataset.put; });
+    const mala = b.querySelector(".starovek-malba img");
+    let url = mala && mala.src || "";
+    if (web && c) url = "/starovek/" + c.id + "/malba.jpg";
+    else if (web && pj && !pj.obrazek) url = "/malby/" + pj.atlas + ".jpg";
+    else if (web && pj && pj.obrazek) url = "/starovek/" + pj.obrazek + "/malba.jpg";
+    img.classList.remove("ukazana");
+    if (url) { const nove = new Image(); nove.onload = function(){ if (ted === b) { img.src = url; img.classList.add("ukazana"); } }; nove.onerror = function(){ if (mala && ted === b) { img.src = mala.src; img.classList.add("ukazana"); } }; nove.src = url; }
+    h.textContent = (b.querySelector("b") || {}).textContent || "";
+    pod.textContent = (b.querySelector("small") || {}).textContent || "";
+    per.textContent = c && c[T.lang] && c[T.lang].perex ? c[T.lang].perex : pj && pj.uvod ? pj.uvod[T.lang] || "" : "";
+  }
+  telo.addEventListener("pointerover", function(e){ ukaz(e.target.closest(".starovek-tl")); });
+  telo.addEventListener("focusin", function(e){ ukaz(e.target.closest(".starovek-tl")); });
+  ukaz(telo.querySelector(".starovek-tl[data-civ]:not(.starovek-prehledy .starovek-tl)") || telo.querySelector(".starovek-tl"));
 }
 $("tl-starovek").addEventListener("click", otevriStarovek);
 $("tl-starovek").hidden = !strankySekce("starovek").length;
@@ -3999,6 +4151,8 @@ function prepniJazyk(lang){
   T = UI[lang]; STATY = STATY_VSE[lang];
   prelozData(); zmerPopisky();
   obnovTexty();
+  if (window.postavCipy) window.postavCipy();
+  obnovRychlost();
   zobrazenyZoom = ""; if (globusOk) { uplatniZoom(); hudTxt = ""; }
   if (!ARTEFAKT && location.protocol !== "file:" && !naDomene && history.replaceState) {   // doménu adresa změnit nemůže
     try { history.replaceState(null, "", korenVerze(lang) + location.hash); } catch (e) {}
@@ -4958,7 +5112,8 @@ function postavPutovaniPanel(){
     const li = prvek("li"), b = prvek("button", "put-etapa"); b.type = "button";
     b.appendChild(prvek("span", "put-doba", e.doba[T.lang])); b.appendChild(prvek("strong", null, e.nazev[T.lang]));
     b.addEventListener("click", function(){ putovani.hraje = false; jdiNaEtapu(k, true); putovani.stav = k + 0.999; obnovPutovaniPanel(); ozivit(); potrebaKresli = true; });
-    li.appendChild(b); li.appendChild(prvek("p", "put-text", e.text[T.lang])); ol.appendChild(li);
+    const telo = prvek("div", "put-telo"), vnitr = prvek("div"); vnitr.appendChild(prvek("p", "put-text", e.text[T.lang])); telo.appendChild(vnitr);
+    li.appendChild(b); li.appendChild(telo); ol.appendChild(li);
   });
   const z = $("put-zdroje"); z.textContent = ""; z.appendChild(prvek("strong", null, T.putZdroje + " "));
   z.appendChild(document.createTextNode(j.zdroje.join(" · ")));
@@ -4966,7 +5121,16 @@ function postavPutovaniPanel(){
 function obnovPutovaniPanel(){
   if (!putovani) return;
   const k = putovani.etapa;
-  Array.prototype.forEach.call($("put-etapy").children, function(li, n){ li.classList.toggle("aktivni", n === k); li.classList.toggle("minula", n < k); });
+  Array.prototype.forEach.call($("put-etapy").children, function(li, n){
+    const byla = li.classList.contains("aktivni");
+    li.classList.toggle("aktivni", n === k); li.classList.toggle("minula", n < k);
+    const b = li.firstChild; if (n === k) b.setAttribute("aria-current", "step"); else b.removeAttribute("aria-current");
+    if (n === k && !byla) {                 // 6 · aktivní etapu posunout do panelu (jen panel, ne stránku)
+      const pan = $("putovani-panel");
+      setTimeout(function(){ if (pan.scrollHeight > pan.clientHeight + 4) { const pr = pan.getBoundingClientRect(), lr = li.getBoundingClientRect();
+        if (lr.top < pr.top + 60 || lr.bottom > pr.bottom - 10) pan.scrollTo({top: pan.scrollTop + lr.top - pr.top - 70, behavior: bezPohybu.matches ? "auto" : "smooth"}); } }, bezPohybu.matches ? 0 : 460);   // až se karty přeskládají
+    }
+  });
   const tl = $("put-hraj"); tl.textContent = putovani.hraje ? "❚❚" : "▶"; tl.setAttribute("aria-label", putovani.hraje ? T.putPauza : T.putHraj);
   $("put-osa").value = Math.round(putovani.stav * 100);
 }
@@ -5796,6 +5960,334 @@ function tlacitkoRodokmenu(i){
   b.addEventListener("click", function(){ strom.otevriPro(i); });
   return b;
 }
+
+/* =====================================================================================================
+   VYLEPŠENÍ OVLÁDÁNÍ (14. 11. 2026, náhled „bestdesignsonx“ – uživatel: „udělej všechno“)
+   ===================================================================================================== */
+const IK = function(id){ return '<svg aria-hidden="true"><use href="#i-' + id + '"/></svg>'; };
+
+/* 1 · stavový ostrůvek: co je zapnuté, na jednom místě nahoře nad glóbem (srovnání má vlastní řádek #srovnani-vyzva).
+   Stav se sbírá z proměnných aplikace; řádky se přestaví, jen když se jejich podpis změní (kontrola každých 400 ms). */
+(function(){
+  const misto = $("ostrov-dalsi"); let podpis = "";
+  function radek(ikona, text, maly, tlacitka){
+    const r = prvek("div", "ostrov-radek sklo");
+    if (ikona === "dych") r.appendChild(prvek("i", "o-dych")); else r.insertAdjacentHTML("beforeend", IK(ikona));
+    const sp = prvek("span", "o-text", text); if (maly) sp.appendChild(prvek("small", null, maly)); r.appendChild(sp);
+    tlacitka.forEach(function(x){
+      const b = prvek("button", x.krizek ? "o-x" : null, x.krizek ? null : x.text); b.type = "button";
+      if (x.krizek) { b.innerHTML = IK("krizek"); b.setAttribute("aria-label", x.text); b.title = x.text; }
+      b.addEventListener("click", x.akce); r.appendChild(b);
+    });
+    return r;
+  }
+  function stav(){
+    const r = [];
+    const filtrStupne = povoleneStupne.size < VSECHNY_STUPNE.length;
+    if (rezimZnak !== "vse" || filtrStupne) {
+      const casti = [];
+      if (rezimZnak === "jen") casti.push(T.ovlZnakJen); else if (rezimZnak === "bez") casti.push(T.ovlZnakBez);
+      if (filtrStupne) casti.push(t("ovlVitalita", {n: povoleneStupne.size, z: VSECHNY_STUPNE.length}));
+      r.push({k: "f" + rezimZnak + Array.from(povoleneStupne).join(""), ikona: "nastaveni", text: casti.join(" · "),
+        maly: t("ovlPocet", {n: cislo(povolenych), z: cislo(POCET_B)}),
+        tl: [{text: T.ovlZrusitFiltr, krizek: true, akce: function(){ zrusFiltry(); }}]});
+    }
+    if (dotazSkupina && !vybrany && !srovnani) {
+      const d = dotazSkupina, n = d.staty ? d.staty.length : d.body.length;
+      const nazev = d.staty ? t("ovlStaty", {n: cislo(n)}) : d.u >= 0 ? nazevSkupiny(d.u) : T.dotaz.euStaty;
+      r.push({k: "s" + d.u + ":" + n, ikona: "lupa", text: t("ovlZvyrazneno", {r: nazev}),
+        maly: d.staty ? "" : cislo(n) + " " + tvar(n, T.jazyk),
+        tl: [{text: T.ovlZrusit, krizek: true, akce: function(){ odznac(); }}]});
+    }
+    if (!desktop.matches && (typVlastnost >= 0 || vitalitaZap)) {        // na telefonu je legenda mapy až pod glóbem
+      const nazev = typVlastnost >= 0 ? typVl(typVlastnost).nazev[T.lang] : T.vitalita;
+      r.push({k: "m" + typVlastnost + vitalitaZap, ikona: "typologie", text: t("ovlMapa", {m: nazev}), maly: "",
+        tl: [{text: T.typologieJina, akce: otevriMapy},
+             {text: T.ovlVypnout, krizek: true, akce: function(){ if (typVlastnost >= 0) nastavTypologii(-1); else nastavBarvyVitality(false); }}]});
+    }
+    const ai = document.querySelector(".dotaz-odpoved.ceka .do-ceka-stav");
+    if (ai) r.push({k: "a" + ai.textContent, ikona: "dych", text: t("ovlAI", {k: ai.textContent}), maly: "", tl: []});
+    return r;
+  }
+  function obnov(){
+    const r = stav(), p = r.map(function(x){ return x.k + "|" + x.text + "|" + x.maly; }).join("¦") + T.lang;
+    if (p === podpis) return;
+    const stare = {}; Array.prototype.forEach.call(misto.children, function(el){ stare[el.dataset.k] = el; });
+    podpis = p; misto.textContent = "";
+    r.forEach(function(x){
+      const el = radek(x.ikona, x.text, x.maly, x.tl); el.dataset.k = x.k;
+      if (stare[x.k]) el.style.animation = "none";          // řádek, který už byl vidět, nevjíždí znovu
+      misto.appendChild(el);
+    });
+  }
+  window.obnovOstrov = obnov;
+  setInterval(obnov, 400);
+})();
+
+
+/* 2 · hledání odkudkoli: „/“ nebo ⌘K / Ctrl+K skočí do pole hledání (na tabletu s kartou vpravo kartu zavře, na telefonu
+   odroluje k poli); šipka dolů z pole vede na odpověď dotazu nebo na první dlaždici. Písmena se nepoužívají – patří heslům. */
+(function(){
+  const pole = $("hledej");
+  function doHledani(){
+    const zavrena = karta && !karta.hidden && $("obsah").classList.contains("karta-vpravo");
+    if (zavrena) $("k-zavrit").click();                 // na tabletu je seznam schovaný pod kartou: kartu zavřít
+    const fokus = function(){
+      if (!desktop.matches) pole.scrollIntoView({block: "center", behavior: bezPohybu.matches ? "auto" : "smooth"});
+      pole.focus({preventScroll: desktop.matches}); pole.select();
+    };
+    if (zavrena) setTimeout(fokus, 60); else fokus();   // seznam se ukáže až po zavření karty (MutationObserver)
+  }
+  document.addEventListener("keydown", function(e){
+    const c = e.target, vPoli = c && (c.tagName === "INPUT" || c.tagName === "TEXTAREA" || c.tagName === "SELECT" || c.isContentEditable);
+    const cmdK = (e.metaKey || e.ctrlKey) && !e.altKey && (e.key === "k" || e.key === "K");
+    if (!cmdK && (vPoli || e.key !== "/" || e.metaKey || e.ctrlKey || e.altKey)) return;
+    if (document.querySelector("dialog[open]:not([data-zavira])")) return;            // nad otevřeným oknem ne
+    e.preventDefault(); doHledani();
+  });
+  pole.addEventListener("keydown", function(e){
+    if (e.key !== "ArrowDown") return;
+    const akce = seznam.querySelector(".dotaz-odpoved .do-akce:not([disabled])");
+    if (akce) { e.preventDefault(); akce.focus(); return; }
+    const prvni = seznam.querySelector(DLAZDICE);
+    if (prvni) { e.preventDefault(); zamerDlazdici(prvni); }
+  });
+  window.doHledani = doHledani;
+})();
+
+
+/* 4 · čipy největších rodin nad seznamem: počet jazyků (s filtry) v čipu, výběr se „vlije“ barvou od místa kliknutí
+   a spustí totéž jako hledání názvu rodiny – police ukáže její jazyky a glóbus je rozsvítí. Druhé klepnutí zruší. */
+(function(){
+  const misto = $("rodiny-cipy"); if (!misto) return;
+  const BARVA = {"Indo-European": "ie", "Sino-Tibetan": "st", "Austronesian": "an", "Afro-Asiatic": "afro", "Atlantic-Congo": "nk"};
+  const pocty = {}; let poradi = [];
+  for (let i = 0; i < POCET_B; i++) pocty[B[i][3]] = (pocty[B[i][3]] || 0) + 1;
+  const nerodina = function(f){ const en = REJSTRIK.r.en[f] || ""; return BEZ_RODU.has(f) || /^isolate/.test(en) || en === "sign language"; };
+  poradi = Object.keys(pocty).map(Number).filter(function(f){ return !nerodina(f); }).sort(function(a, b){ return pocty[b] - pocty[a]; }).slice(0, 6);
+  let vybrana = -1;
+  function postav(){
+    misto.textContent = "";
+    poradi.forEach(function(f){
+      const b = prvek("button", "rc-cip"); b.type = "button"; b.dataset.f = f;
+      b.style.setProperty("--rc", "var(--r-" + (BARVA[REJSTRIK.r.en[f]] || "ost") + ")");
+      b.setAttribute("aria-pressed", f === vybrana ? "true" : "false");
+      b.appendChild(prvek("i", "rc-inkoust"));
+      b.appendChild(prvek("span", "rc-nazev", velke(REJSTRIK.rr[f])));
+      b.appendChild(prvek("small", "rc-pocet", ""));
+      b.addEventListener("click", function(e){
+        const r = b.getBoundingClientRect();
+        b.style.setProperty("--x", (e.clientX ? e.clientX - r.left : r.width / 2) + "px");
+        b.style.setProperty("--y", (e.clientY ? e.clientY - r.top : r.height / 2) + "px");
+        const pole = $("hledej");
+        if (vybrana === f) { vybrana = -1; pole.value = ""; postavPolici(""); obnovTipHledani(); odznac(); return; }
+        vybrana = f; pole.value = velke(REJSTRIK.rr[f]); postavPolici(pole.value); obnovTipHledani();
+        if (dotazAkce && dotazAkce.typ === "skupina") provedDotaz(dotazAkce);
+      });
+      misto.appendChild(b);
+    });
+    obnov();
+  }
+  function obnov(){
+    const n = {}; for (let i = 0; i < POCET_B; i++) if (!skryty[i]) n[B[i][3]] = (n[B[i][3]] || 0) + 1;
+    const text = $("hledej").value.trim();
+    if (vybrana >= 0 && text !== velke(REJSTRIK.rr[vybrana])) vybrana = -1;       // hledání se mezitím změnilo
+    Array.prototype.forEach.call(misto.children, function(b){
+      const f = +b.dataset.f; b.querySelector(".rc-pocet").textContent = cislo(n[f] || 0);
+      b.setAttribute("aria-pressed", f === vybrana ? "true" : "false");
+      b.setAttribute("aria-label", velke(REJSTRIK.rr[f]) + ": " + cislo(n[f] || 0) + " " + tvar(n[f] || 0, T.jazyk));
+    });
+  }
+  window.obnovCipy = obnov; window.postavCipy = postav;
+  postav();
+})();
+
+
+/* 5 · medailony: jedna bublina s popisem a číslem klávesy přejíždí mezi medailony (jen u myši); klávesy 1–6 medailon
+   stisknou. Čísla, ne písmena: písmena napsaná kdekoli patří heslům (eulang, mellon, babel). */
+(function(){
+  const dok = $("dok"), scenaEl = $("scena"); if (!dok) return;
+  const mysi = window.matchMedia("(hover: hover) and (pointer: fine)");
+  const bub = prvek("div", "med-bublina"); bub.setAttribute("aria-hidden", "true");
+  const txt = prvek("span"), kl = prvek("kbd"); bub.appendChild(txt); bub.appendChild(kl); scenaEl.appendChild(bub);
+  let skryt = 0;
+  const meds = function(){ return Array.prototype.filter.call(dok.querySelectorAll(".med"), function(m){ return m.offsetParent !== null; }); };
+  function ukaz(m){
+    if (!mysi.matches) return;
+    clearTimeout(skryt);
+    const popis = m.dataset.popis || m.title; if (m.title) { m.dataset.popis = m.title; m.removeAttribute("title"); }
+    const i = meds().indexOf(m); if (i < 0) return;
+    txt.textContent = popis; kl.textContent = String(i + 1);
+    const r = m.getBoundingClientRect(), sc = scenaEl.getBoundingClientRect();
+    bub.style.left = (r.left - sc.left + r.width / 2) + "px"; bub.style.top = (r.top - sc.top - 10) + "px";
+    bub.classList.add("zap");
+  }
+  function schovej(m){ skryt = setTimeout(function(){ bub.classList.remove("zap"); }, 140); if (m && m.dataset.popis && !m.title) m.title = m.dataset.popis; }
+  dok.addEventListener("pointerover", function(e){ const m = e.target.closest(".med"); if (m) ukaz(m); });
+  dok.addEventListener("pointerout", function(e){ const m = e.target.closest(".med"); if (m && !m.contains(e.relatedTarget)) schovej(m); });
+  dok.addEventListener("focusin", function(e){ const m = e.target.closest(".med"); if (m && m.matches(":focus-visible")) ukaz(m); });
+  dok.addEventListener("focusout", function(e){ schovej(e.target.closest(".med")); });
+  document.addEventListener("keydown", function(e){
+    if (e.metaKey || e.ctrlKey || e.altKey || !/^[1-6]$/.test(e.key)) return;
+    const c = e.target;
+    if (c && (c.tagName === "INPUT" || c.tagName === "TEXTAREA" || c.tagName === "SELECT" || c.isContentEditable)) return;
+    if (document.querySelector("dialog[open]:not([data-zavira])")) return;
+    const m = meds()[+e.key - 1]; if (!m) return;
+    e.preventDefault();
+    m.classList.add("stisk"); setTimeout(function(){ m.classList.remove("stisk"); }, 160);
+    m.click();
+  });
+})();
+
+
+/* 8 · okna vyrůstají z medailonu (Jazyky starověku, Příběhy, Mapy, Vitalita): otevřené klepnutím na medailon se
+   rozvinou z jeho kolečka a při zavření (křížek, Escape, klik vedle) se do něj schovají. Otevřené jinak (odkaz, legenda)
+   se ukážou jako dřív. Při omezení pohybu bez animace. */
+(function(){
+  let zdroj = null, kdy = 0;
+  $("dok").addEventListener("click", function(e){ const m = e.target.closest(".med"); if (m) { zdroj = m; kdy = performance.now(); } }, true);
+  function animuj(d, m, otevrit){
+    const o = (m.querySelector(".med-obr") || m).getBoundingClientRect(), r = d.getBoundingClientRect();
+    const dx = o.left + o.width / 2 - (r.left + r.width / 2), dy = o.top + o.height / 2 - (r.top + r.height / 2);
+    const z = "translate(" + dx + "px," + dy + "px) scale(" + (o.width / r.width) + "," + (o.height / r.height) + ")";
+    const k = [{transform: z, borderRadius: "50%", opacity: 0.4}, {transform: "none", borderRadius: getComputedStyle(d).borderRadius, opacity: 1}];
+    const a = d.animate(otevrit ? k : k.slice().reverse(), {duration: otevrit ? 440 : 340, easing: otevrit ? "cubic-bezier(.3,1.12,.5,1)" : "cubic-bezier(.55,0,.8,.3)"});
+    try { d.animate(otevrit ? [{opacity: 0}, {opacity: 1}] : [{opacity: 1}, {opacity: 0}], {duration: otevrit ? 300 : 340, pseudoElement: "::backdrop", fill: "forwards"}); } catch (x) {}
+    return a;
+  }
+  ["starovek-okno", "mapy-okno", "vitalita-okno"].forEach(function(id){
+    const d = $(id); if (!d || !d.showModal) return;
+    const ukaz = HTMLDialogElement.prototype.showModal, zavri = HTMLDialogElement.prototype.close;
+    d.showModal = function(){
+      if (d._anim) { d._anim.cancel(); d._anim = null; delete d.dataset.zavira; zavri.call(d); }
+      ukaz.call(d);
+      d._z = performance.now() - kdy < 700 && zdroj && zdroj.offsetParent ? zdroj : null;
+      if (d._z && !bezPohybu.matches) animuj(d, d._z, true);
+    };
+    d.close = function(v){
+      if (!d.open || d._anim) return;
+      const m = d._z; d._z = null;
+      if (!m || bezPohybu.matches || !m.offsetParent) { zavri.call(d, v); return; }
+      d._anim = animuj(d, m, false); d.dataset.zavira = "1";       // zavírá se: klávesové zkratky už platí
+      d._anim.onfinish = function(){ d._anim = null; delete d.dataset.zavira; zavri.call(d, v); };
+    };
+    d.addEventListener("cancel", function(e){ if (d._z) { e.preventDefault(); d.close(); } });
+  });
+})();
+
+
+/* 10 · fotografie na stránkách Jazyků starověku a Příběhů přes celou obrazovku: klik na fotku ji plynule zvětší,
+   dole je pruh s ostatními fotkami stránky, šipky a přejetí prstem listují, Escape nebo klik vedle ji vrátí na místo.
+   Popisek i s autorem a licencí zůstává (u CC BY-SA povinný). */
+(function(){
+  const okno = $("civ-okno"); if (!okno) return;
+  let sv = null, fotky = [], ted = 0;
+  function letec(src, z, na, hotovo){
+    if (bezPohybu.matches || !z.width || !na.width) { hotovo(); return; }
+    const l = prvek("img", "svetlo-letec"); l.src = src; l.alt = ""; okno.appendChild(l);
+    const a = l.animate([{left: z.left + "px", top: z.top + "px", width: z.width + "px", height: z.height + "px"},
+                         {left: na.left + "px", top: na.top + "px", width: na.width + "px", height: na.height + "px"}],
+                        {duration: 380, easing: "cubic-bezier(.3,1.05,.5,1)", fill: "forwards"});
+    a.onfinish = function(){ l.remove(); hotovo(); };
+  }
+  function nastav(){
+    const f = fotky[ted], img = sv.querySelector(".svetlo-plocha img");
+    img.src = f.src; img.alt = f.alt;
+    const cap = f.closest("figure").querySelector("figcaption");
+    sv.querySelector(".svetlo-popisek").innerHTML = cap ? cap.innerHTML : "";
+    Array.prototype.forEach.call(sv.querySelectorAll(".svetlo-pas button"), function(b, k){ b.setAttribute("aria-current", k === ted ? "true" : "false"); if (k === ted) b.scrollIntoView({block: "nearest", inline: "center"}); });
+    sv.querySelector(".svetlo-pocet").textContent = (ted + 1) + " / " + fotky.length;
+  }
+  function posun(d){ ted = (ted + d + fotky.length) % fotky.length; nastav(); }
+  function otevri(img){
+    fotky = Array.prototype.slice.call(okno.querySelectorAll("figure.civ-foto img")); ted = Math.max(0, fotky.indexOf(img));
+    sv = prvek("div", "svetlo"); sv.setAttribute("role", "dialog"); sv.setAttribute("aria-modal", "true"); sv.setAttribute("aria-label", T.ovlFotka);
+    sv.innerHTML = '<div class="svetlo-plocha"><img alt=""></div><p class="svetlo-popisek"></p><div class="svetlo-pata"><span class="svetlo-pocet"></span><div class="svetlo-pas"></div></div>';
+    [["svetlo-zpet", "zpet", T.ovlPredchozi, -1], ["svetlo-dal", "dal", T.ovlDalsi, 1]].forEach(function(x){
+      const b = prvek("button", "svetlo-sipka " + x[0]); b.type = "button"; b.innerHTML = IK(x[1]); b.setAttribute("aria-label", x[2]); b.addEventListener("click", function(){ posun(x[3]); }); sv.querySelector(".svetlo-plocha").appendChild(b); });
+    const zav = prvek("button", "svetlo-zavrit"); zav.type = "button"; zav.innerHTML = IK("krizek"); zav.setAttribute("aria-label", T.ovlZavritFotku); zav.addEventListener("click", zavri); sv.appendChild(zav);
+    const pas = sv.querySelector(".svetlo-pas");
+    fotky.forEach(function(f, k){ const b = prvek("button"); b.type = "button"; b.setAttribute("aria-label", f.alt); const i = prvek("img"); i.src = f.currentSrc || f.src; i.alt = ""; b.appendChild(i); b.addEventListener("click", function(){ ted = k; nastav(); }); pas.appendChild(b); });
+    if (fotky.length < 2) sv.classList.add("jedna");
+    okno.appendChild(sv);
+    const velka = sv.querySelector(".svetlo-plocha img"); velka.style.visibility = "hidden"; nastav();
+    const z = img.getBoundingClientRect();
+    (velka.decode ? velka.decode() : Promise.resolve()).catch(function(){}).then(function(){ letec(velka.src, z, velka.getBoundingClientRect(), function(){ velka.style.visibility = ""; }); });
+    sv.addEventListener("click", function(e){ if (e.target.classList.contains("svetlo-plocha")) zavri(); });
+    let sx = null;
+    sv.addEventListener("pointerdown", function(e){ sx = e.clientX; });
+    sv.addEventListener("pointerup", function(e){ if (sx !== null && Math.abs(e.clientX - sx) > 50 && fotky.length > 1) posun((e.clientX < sx) !== (document.documentElement.dir === "rtl") ? 1 : -1); sx = null; });
+    zav.focus();
+  }
+  function zavri(){
+    if (!sv) return;
+    const s = sv, velka = s.querySelector(".svetlo-plocha img"), z = velka.getBoundingClientRect(), cil = fotky[ted];
+    sv = null; s.classList.add("zavira"); velka.style.visibility = "hidden";
+    cil.scrollIntoView({block: "nearest"});
+    letec(velka.src, z, cil.getBoundingClientRect(), function(){ s.remove(); cil.closest("figure").querySelector("img").focus && cil.focus(); });
+  }
+  okno.addEventListener("click", function(e){
+    const img = e.target.closest && e.target.closest("figure.civ-foto img");
+    if (img && !sv) { e.preventDefault(); otevri(img); }
+  });
+  okno.addEventListener("keydown", function(e){
+    if (!sv) { const img = e.target.matches && e.target.matches("figure.civ-foto img") && e.target; if (img && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); otevri(img); } return; }
+    if (e.key === "Escape") { e.preventDefault(); e.stopPropagation(); zavri(); }
+    else if (e.key === "ArrowRight") posun(document.documentElement.dir === "rtl" ? -1 : 1);
+    else if (e.key === "ArrowLeft") posun(document.documentElement.dir === "rtl" ? 1 : -1);
+  }, true);
+  okno.addEventListener("cancel", function(e){ if (sv) { e.preventDefault(); zavri(); } });
+  new MutationObserver(function(){                      // fotky dostupné z klávesnice a s kurzorem lupy
+    Array.prototype.forEach.call(okno.querySelectorAll("figure.civ-foto img:not([tabindex])"), function(i){ i.tabIndex = 0; i.setAttribute("role", "button"); });
+  }).observe(okno, {childList: true, subtree: true});
+})();
+
+
+/* 11 · zdroje vysunuté zpoza lístku: pod kartou jazyka tlačítko „Odkud jsou údaje“ vysune druhý lístek se zdroji
+   (plochý výsuv, ne 3D otočka – otáčení uživatel u rodokmenu odmítl). Jen u karty jazyka, ne u srovnání a tajemství. */
+(function(){
+  const obal = $("k-zdroje"), tl = $("k-zdroje-tl"); if (!obal) return;
+  function obnov(){
+    const ukaz = !!vybrany && !srovnani && !zvlastni && !vymysleny && !karta.hidden;
+    if (obal.hidden !== !ukaz) obal.hidden = !ukaz;
+  }
+  tl.addEventListener("click", function(){ const o = obal.classList.toggle("otevreno"); tl.setAttribute("aria-expanded", o ? "true" : "false");
+    if (o) setTimeout(function(){ obal.scrollIntoView({block: "nearest", behavior: bezPohybu.matches ? "auto" : "smooth"}); }, 380); });
+  $("k-rub-vic").addEventListener("click", function(){ const b = $("tl-o-datech"); if (b) b.click(); });
+  new MutationObserver(function(){ obal.classList.remove("otevreno"); tl.setAttribute("aria-expanded", "false"); obnov(); }).observe($("k-telo"), {childList: true});
+  new MutationObserver(obnov).observe(karta, {attributes: true, attributeFilter: ["hidden"]});
+  setInterval(obnov, 500);
+})();
+
+/* 12 · akvarel na kartě se při změně jazyka vymění „rozlitím“: stará malba zmizí v kruhu s rozmytým okrajem, který se
+   šíří od strany, kde se klepalo (tečka na glóbu, dlaždice vpravo…), a odkryje novou. Při omezení pohybu naráz. */
+let posledniKlep = null;
+document.addEventListener("pointerdown", function(e){ posledniKlep = {x: e.clientX, y: e.clientY, t: performance.now()}; }, true);
+function rozlijMalbu(el, staraSrc){
+  if (!staraSrc || bezPohybu.matches || el.hidden) return;
+  const nova = el.querySelector("img"); if (!nova) return;
+  const st = prvek("img", "malba-stara"); st.src = staraSrc; st.alt = ""; st.setAttribute("aria-hidden", "true"); el.appendChild(st);
+  const r = el.getBoundingClientRect();
+  let x = r.width / 2, y = r.height / 2;
+  if (posledniKlep && performance.now() - posledniKlep.t < 3000) { x = Math.max(0, Math.min(r.width, posledniKlep.x - r.left)); y = Math.max(0, Math.min(r.height, posledniKlep.y - r.top)); }
+  st.style.setProperty("--mx", x + "px"); st.style.setProperty("--my", y + "px"); st.style.setProperty("--r", "0px");
+  const max = Math.hypot(Math.max(x, r.width - x), Math.max(y, r.height - y)) + 90;
+  let start = 0, konec = setTimeout(function(){ if (!start) { st.style.transition = "opacity .5s"; st.style.opacity = "0"; setTimeout(function(){ st.remove(); }, 520); } }, 5000);
+  const spust = function(){
+    if (start || !st.isConnected) return; start = performance.now(); clearTimeout(konec); nova.style.transition = "none";
+    const krok = function(t){ const p = Math.min(1, (t - start) / 1050), e = 1 - Math.pow(1 - p, 2.2);
+      st.style.setProperty("--r", (e * max) + "px"); if (p < 1) requestAnimationFrame(krok); else { st.remove(); nova.style.transition = ""; } };
+    requestAnimationFrame(krok);
+  };
+  if (nova.classList.contains("ukazana")) spust();
+  else new MutationObserver(function(_, o){ if (nova.classList.contains("ukazana")) { o.disconnect(); spust(); } }).observe(nova, {attributes: true, attributeFilter: ["class"]});
+}
+
+/* 13 · ikonky se pohnou jen při najetí (styly .ik-*); tady jen označení tlačítek, kterých se to týká */
+(function(){
+  [["tl-zobrazeni", "ik-posuvniky"], ["tl-cely", "ik-svet"], ["tl-nahoda", "ik-kostka"], ["tl-napoveda", "ik-otaznik"]].forEach(function(x){ const b = $(x[0]); if (b) b.classList.add(x[1]); });
+})();
+
 prectiOdkaz();                              // otevřeno přes odkaz na jazyk
 if (!globusOk) {
   [platno, podklad, platnoGl, platnoPopisky].forEach(function(c){ c.hidden = true; });

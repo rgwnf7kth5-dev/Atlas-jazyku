@@ -355,6 +355,45 @@ Předávací shrnutí pro nový chat: `NOVY-CHAT.md`.
 - Od vybraného jazyka vedou světelné oblouky k nejbližším příbuzným (nejvýš 6, podle nejhlubšího společného
   předka ve stromu Glottologu). U jazyka z atlasu jen k jiným jazykům atlasu, karta je vypisuje.
 
+## Vylepšení ovládání (14. 11. 2026, náhled z bestdesignsonx.com, uživatel: „udělej všechno“)
+
+Uživatel chtěl projít přehlídku bestdesignsonx.com (prošlo se 120 nejnovějších ukázek) a navrhnout, co by šlo použít. Ze 13 návrhů
+vznikl klikací náhled (artefakt https://claude.ai/artifact/DQCqeFcAupEwUQi2ygpPtA) a uživatel řekl „udělej všechno“. Kód je v app.js
+v bloku „VYLEPŠENÍ OVLÁDÁNÍ“ před `prectiOdkaz()` na konci souboru (kromě lupy a výslovnosti, které jsou u své obsluhy), styly
+na konci `styles.css`, texty jsou klíče `ovl…` ve všech `src/ui/*.json` a nové odstavce návodu. **Na větvi, na main zatím ne.**
+1. **Stavový ostrůvek** (`#ostrov` nahoře nad glóbem): obal kolem dřívější výzvy srovnání `#srovnani-vyzva` a řádky `#ostrov-dalsi`
+   pro filtr (znakové, stupně vitality, s počtem), zvýrazněnou skupinu (`dotazSkupina`), čekání na AI a na telefonu i barevnou mapu
+   (na počítači má mapa vlastní legendu). Každý řádek má křížek. Stav se čte z proměnných každých 400 ms a přestaví se jen při změně
+   podpisu – není potřeba ho volat z jednotlivých funkcí. V klidu je prázdný.
+2. **Hledání odkudkoli**: `/` a ⌘K / Ctrl+K skočí do `#hledej` (na tabletu s kartou vpravo kartu zavře, na telefonu odroluje), šipka
+   dolů z pole vede na odpověď dotazu nebo první dlaždici. Nad otevřeným oknem (`dialog[open]`) ne. V poli je u myši nápověda `<kbd>/</kbd>`.
+   **Písmena se jako zkratky nepoužívají** – patří heslům eulang, mellon, babel.
+3. **Lupa na glóbu** (`lupa` v app.js před obsluhou myši): podržení prstu nebo myši 380 ms bez pohybu, kruh 176 px, zvětšení 3,2×,
+   podklad je výřez `#podklad`, tečky a jména kreslí sama (barvy i podle vitality a typologie). Tečka, která se po puštění vybere
+   (do 10 px od středu), má v lupě červený kroužek. Na dotyku je lupa 110 px nad prstem. Pohyb nad 6 px nebo druhý prst lupu zruší.
+4. **Čipy rodin** (`#rodiny-cipy` nad počtem v polici): šest největších rodin Glottologu (bez izolátů, znakových a `BEZ_RODU`) s počtem
+   (respektuje filtry), klepnutí vloží název rodiny do hledání a provede dotaz (police + glóbus), barva se vlije od místa kliknutí.
+   Druhé klepnutí zruší. Barvy `--r-*` podle skupiny, ostatní rodiny `--r-ost`.
+5. **Bublina medailonů**: jedna `.med-bublina` (popis z `title` + číslo klávesy) přejíždí mezi medailony, jen u myši; klávesy 1–6
+   medailon stisknou (v pořadí DOM, v hebrejštině tedy zprava).
+6. **Putování**: etapy jsou karty, neaktivní sbalené na dobu a název, aktivní se rozvine (`grid-template-rows`) a panel se k ní posune
+   až po 460 ms (dřív se posouval při přeskládání a etapa byla useknutá).
+7. **Rejstřík s náhledem**: okno Jazyků starověku a Příběhů má od šířky 980 px seznam jmen vlevo a vpravo velkou malbu
+   (`/starovek/<id>/malba.jpg`, u putování `/malby/<id>.jpg`, v artefaktu náhled) s podtitulem a perexem (`rejstrikSNahledem`).
+8. **Okna z medailonu**: `starovek-okno`, `mapy-okno`, `vitalita-okno` mají přepsané `showModal`/`close` – otevřené klepnutím na medailon
+   (do 700 ms) se rozvinou z jeho kolečka a zavřou do něj (i Escape přes `cancel`). Otevřené jinak beze změny.
+9. **Výslovnost**: vedle tlačítka volba 1× / 0,75× / 0,5× (`atlas-rychlost`, násobí dřívější rychlost 0,8 / 0,75) a průběh na tlačítku
+   (`onboundary`, jinak odhad). Jen v aplikaci, statické stránky jazyků zatím ne.
+10. **Fotografie přes celou obrazovku** v `#civ-okno` (Jazyky starověku a Příběhy): klik, Enter, šipky, přejetí, Escape, pruh náhledů,
+    popisek s autorem a licencí. Jen v aplikaci.
+11. **Zdroje za lístkem** (`#k-zdroje` pod kartou jazyka): plochý výsuv druhého lístku se zdroji (Glottolog 5.2.1, WALS, PHOIBLE,
+    CLDR 48, Wikidata, Natural Earth) a odkaz do O datech. **Při změně zdrojů nebo verzí upravit i tady** (body.html, klíče `ovlZdr…`).
+12. **Inkoustový přechod malby**: při změně jazyka stará malba zmizí v rozšiřujícím se kruhu s měkkým okrajem od místa klepnutí
+    (`rozlijMalbu`, `malbaMinula` – `otevriKartu` malbu nejdřív smaže, proto si ji `malbaNaKarte` na 200 ms pamatuje).
+13. **Ikonky** se pohnou jen při najetí myší (Nastavení, Celý svět, Náhodný jazyk, otazník, křížky).
+Vše respektuje `prefers-reduced-motion`. Testy v Playwrightu (`pw/zaklad.cjs` ve scratchpadu: dist přes `page.route` na falešné doméně,
+aby fungovaly absolutní cesty /malby, /starovek).
+
 ## Rozhraní (grafické vylepšení 23. 9. 2026, uživatel schválil všech 7 bodů)
 
 - **Medailony pod glóbem** (27. 9. 2026, uživatel vybral variantu „B, medailony s rámem, pod glóbem, nová ikonka
