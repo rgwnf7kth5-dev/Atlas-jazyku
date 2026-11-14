@@ -10,8 +10,8 @@ tady je jen to nejdůležitější a co je rozdělané.
 - **Nasazení** = push do `redesign-encyklopedie` a hned fast-forward `main` (`git push origin redesign-encyklopedie:main`).
   Netlify staví z `main` (`npm run check`), `dist/` je v gitu. Neověřený obsah jen do `redesign-encyklopedie` (nebo jako `koncept`).
 - Po každé viditelné změně: `npm run build -- --artefakt build` a znovu zveřejnit oba artefakty (jen cs a en):
-  - česky https://claude.ai/artifact/Hn5yzLvaVWXqFgaanUUdmn ← `build/atlas-jazyku.html` (naposledy verze 137)
-  - anglicky https://claude.ai/artifact/1XdgMqQZJJnJku4anjxqwC ← `build/language-atlas.html` (verze 135)
+  - česky https://claude.ai/artifact/Hn5yzLvaVWXqFgaanUUdmn ← `build/atlas-jazyku.html` (naposledy verze 138)
+  - anglicky https://claude.ai/artifact/1XdgMqQZJJnJku4anjxqwC ← `build/language-atlas.html` (verze 136)
 - Před commitem vždy `npm run check` (0 chyb). Commit končí řádky `Co-Authored-By: …` a `Claude-Session: …` podle systémové připomínky.
   Hook na konci vyžaduje commit a push.
 - Web: atlasjazyku.cz (cs), thelanguageatlas.com (en a /it/, /de/, /fr/, /he/, /zh/).
@@ -29,6 +29,9 @@ tady je jen to nejdůležitější a co je rozdělané.
 
 - **7 jazyků webu:** cs, en, it, de, fr, he (zprava doleva), zh (zjednodušené znaky). Všechny přeložené celé – rozhraní, 164 karet,
   29–31 stránek Jazyků starověku a Příběhů, 18 putování, cesty slov, Jazyk dne, písma, typologie WALS, vymyšlené jazyky.
+- **14. 11. 2026 na webu: 13 vylepšení ovládání** podle přehlídky bestdesignsonx.com (ostrůvek, hledání klávesou /, lupa na glóbu,
+  čipy rodin, klávesy 1–6, rejstřík, fotografie přes celou obrazovku, rychlost výslovnosti, zdroje za lístkem…); podrobně v CLAUDE.md
+  v oddílu „Vylepšení ovládání“. Lupu ještě vyzkoušet na iPhonu.
 - **Naposledy hotovo (8.–14. 11.):**
   - čínská etapa 2 (14 překladatelů + 10 kontrol, ~310 oprav);
   - **putování čínštiny** v 9 etapách, ve všech 7 jazycích (`#putovani-cinstina` / `#journey-chinese`);

@@ -360,7 +360,7 @@ Předávací shrnutí pro nový chat: `NOVY-CHAT.md`.
 Uživatel chtěl projít přehlídku bestdesignsonx.com (prošlo se 120 nejnovějších ukázek) a navrhnout, co by šlo použít. Ze 13 návrhů
 vznikl klikací náhled (artefakt https://claude.ai/artifact/DQCqeFcAupEwUQi2ygpPtA) a uživatel řekl „udělej všechno“. Kód je v app.js
 v bloku „VYLEPŠENÍ OVLÁDÁNÍ“ před `prectiOdkaz()` na konci souboru (kromě lupy a výslovnosti, které jsou u své obsluhy), styly
-na konci `styles.css`, texty jsou klíče `ovl…` ve všech `src/ui/*.json` a nové odstavce návodu. **Na větvi, na main zatím ne.**
+na konci `styles.css`, texty jsou klíče `ovl…` ve všech `src/ui/*.json` a nové odstavce návodu. Na webu od 14. 11. 2026 („pusť to na web“).
 1. **Stavový ostrůvek** (`#ostrov` nahoře nad glóbem): obal kolem dřívější výzvy srovnání `#srovnani-vyzva` a řádky `#ostrov-dalsi`
    pro filtr (znakové, stupně vitality, s počtem), zvýrazněnou skupinu (`dotazSkupina`), čekání na AI a na telefonu i barevnou mapu
    (na počítači má mapa vlastní legendu). Každý řádek má křížek. Stav se čte z proměnných každých 400 ms a přestaví se jen při změně
