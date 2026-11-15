@@ -11201,6 +11201,42 @@ function rozlijMalbu(el, staraSrc){
   [["tl-zobrazeni", "ik-posuvniky"], ["tl-cely", "ik-svet"], ["tl-nahoda", "ik-kostka"], ["tl-napoveda", "ik-otaznik"]].forEach(function(x){ const b = $(x[0]); if (b) b.classList.add(x[1]); });
 })();
 
+
+/* tekutý jezdec v přepínačích (15. 11. 2026, uživatel: „něco efektního s pilulkami v celém Atlasu“): pod aktivní volbou leží
+   jeden podklad (.jezdec), který při změně k nové volbě dojede; okraj ve směru pohybu jede rychleji, zadní dobíhá, takže se
+   cestou protáhne. Sleduje aria-pressed / aria-selected / aria-current, velikost skupiny a nově vzniklé záložky karty. */
+(function(){
+  const AKT = '[aria-pressed="true"],[aria-selected="true"],[aria-current]:not([aria-current="false"])';
+  function pripoj(sk){
+    if (!sk || sk.classList.contains("s-jezdcem")) return;
+    sk.classList.add("s-jezdcem");
+    const j = prvek("span", "jezdec bez"); j.setAttribute("aria-hidden", "true"); sk.insertBefore(j, sk.firstChild);
+    let posl = null;
+    function umisti(hned){
+      const a = Array.prototype.find.call(sk.children, function(c){ return c !== j && c.matches(AKT); });
+      if (!a || !a.offsetWidth) { j.style.opacity = "0"; posl = null; return; }
+      j.style.opacity = "";
+      const l = a.offsetLeft, r = sk.clientWidth - l - a.offsetWidth;
+      const doprava = posl && l > posl.l, doleva = posl && l < posl.l;
+      j.style.setProperty("--jdl", doprava ? ".46s" : ".26s");      // zadní okraj dobíhá
+      j.style.setProperty("--jdr", doleva ? ".46s" : ".26s");
+      j.classList.toggle("bez", !!hned || !posl);
+      j.style.setProperty("--jl", l + "px"); j.style.setProperty("--jr", r + "px");
+      j.style.setProperty("--jt", a.offsetTop + "px"); j.style.setProperty("--jh", a.offsetHeight + "px");
+      posl = {l: l};
+      if (j.classList.contains("bez")) { void j.offsetWidth; requestAnimationFrame(function(){ j.classList.remove("bez"); }); }
+    }
+    new MutationObserver(function(){ umisti(false); }).observe(sk, {subtree: true, attributes: true, attributeFilter: ["aria-pressed", "aria-selected", "aria-current"]});
+    if (window.ResizeObserver) new ResizeObserver(function(){ umisti(true); }).observe(sk);
+    umisti(true);
+  }
+  function vse(){
+    Array.prototype.forEach.call(document.querySelectorAll(".razeni, .volba-oddil .segment, #jazyk-prepinac, #k-rychlost, .zalozky"), pripoj);
+  }
+  vse();
+  new MutationObserver(vse).observe($("k-telo"), {childList: true, subtree: true});    // záložky se staví s každou kartou
+})();
+
 prectiOdkaz();                              // otevřeno přes odkaz na jazyk
 if (!globusOk) {
   [platno, podklad, platnoGl, platnoPopisky].forEach(function(c){ c.hidden = true; });

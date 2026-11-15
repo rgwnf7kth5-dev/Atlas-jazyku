@@ -391,6 +391,11 @@ na konci `styles.css`, texty jsou klíče `ovl…` ve všech `src/ui/*.json` a n
 12. **Inkoustový přechod malby**: při změně jazyka stará malba zmizí v rozšiřujícím se kruhu s měkkým okrajem od místa klepnutí
     (`rozlijMalbu`, `malbaMinula` – `otevriKartu` malbu nejdřív smaže, proto si ji `malbaNaKarte` na 200 ms pamatuje).
 13. **Ikonky** se pohnou jen při najetí myší (Nastavení, Celý svět, Náhodný jazyk, otazník, křížky).
+14. **Tekutý jezdec v přepínačích** (15. 11. 2026, uživatel: „něco efektního s pilulkami v celém Atlasu“): řazení, záložky karty,
+    přepínač jazyka webu, znakové jazyky v Nastavení a rychlost výslovnosti mají jeden podklad `.jezdec` (třída skupiny `.s-jezdcem`),
+    který k nové volbě dojede; okraj ve směru pohybu za 0,26 s, zadní za 0,46 s, takže se cestou protáhne. Aktivní tlačítko má
+    vlastní pozadí potlačené. Pilulky se při stisku zmáčknou na 0,95. Bublina medailonů je od téhož dne světlá (sklo jako panely),
+    černá se uživateli nelíbila.
 Vše respektuje `prefers-reduced-motion`. Testy v Playwrightu (`pw/zaklad.cjs` ve scratchpadu: dist přes `page.route` na falešné doméně,
 aby fungovaly absolutní cesty /malby, /starovek).
 
