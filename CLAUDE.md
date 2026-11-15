@@ -380,6 +380,10 @@ na konci `styles.css`, texty jsou klíče `ovl…` ve všech `src/ui/*.json` a n
    až po 460 ms (dřív se posouval při přeskládání a etapa byla useknutá).
 7. **Rejstřík s náhledem**: okno Jazyků starověku a Příběhů má od šířky 980 px seznam jmen vlevo a vpravo velkou malbu
    (`/starovek/<id>/malba.jpg`, u putování `/malby/<id>.jpg`, v artefaktu náhled) s podtitulem a perexem (`rejstrikSNahledem`).
+   **Seznam platí v každé šířce** (15. 11. 2026, uživatel: „v příbězích zmizel rozbalovací seznam a jsou tam zase plné obrázky“);
+   náhled vpravo jen od 980 px. Obecná funkce `rejstrik(okno, telo, popis)`; **okno Mapy používá tentýž rejstřík** (uživatel:
+   „těžce nekonzistentní, úplně odlišný design“) – položky `.starovek-tl.mapa-polozka`, náhled = kulatý snímek glóbu, popis
+   a legenda barev (`popisMapy`). Nová okna se seznamem dělat stejně, ne vlastní mřížkou.
 8. **Okna z medailonu**: `starovek-okno`, `mapy-okno`, `vitalita-okno` mají přepsané `showModal`/`close` – otevřené klepnutím na medailon
    (do 700 ms) se rozvinou z jeho kolečka a zavřou do něj (i Escape přes `cancel`). Otevřené jinak beze změny.
 9. **Výslovnost**: vedle tlačítka volba 1× / 0,75× / 0,5× (`atlas-rychlost`, násobí dřívější rychlost 0,8 / 0,75) a průběh na tlačítku
@@ -395,7 +399,8 @@ na konci `styles.css`, texty jsou klíče `ovl…` ve všech `src/ui/*.json` a n
     přepínač jazyka webu, znakové jazyky v Nastavení a rychlost výslovnosti mají jeden podklad `.jezdec` (třída skupiny `.s-jezdcem`),
     který k nové volbě dojede; okraj ve směru pohybu za 0,26 s, zadní za 0,46 s, takže se cestou protáhne. Aktivní tlačítko má
     vlastní pozadí potlačené. Pilulky se při stisku zmáčknou na 0,95. Bublina medailonů je od téhož dne světlá (sklo jako panely),
-    černá se uživateli nelíbila.
+    černá se uživateli nelíbila. Jezdec v klidu nebyl vidět („žádné změny nevidím“), proto mají pilulky navíc **inkoustové
+    najetí**: od místa kurzoru se rozlije kruh akcentu (`.inkoust-hover`, `@property --inkr`, `--ix/--iy`), při stisku víc (`.vlity`).
 Vše respektuje `prefers-reduced-motion`. Testy v Playwrightu (`pw/zaklad.cjs` ve scratchpadu: dist přes `page.route` na falešné doméně,
 aby fungovaly absolutní cesty /malby, /starovek).
 

@@ -1604,7 +1604,14 @@ html[lang="en"] .do-ceka-otazka{quotes:"“" "”"} html[lang="it"] .do-ceka-ota
 }
 
 /* 7 · rejstřík s náhledem na širokém okně (aplikace): seznam jmen vlevo, velká malba s úvodem vpravo */
-.starovek-okno.rejstrik{width:min(1060px, calc(100vw - 48px))}
+.rejstrik-siroky{width:min(1060px, calc(100vw - 48px))}
+.rejstrik .mapy-mriz{display:block}
+.rejstrik .od-telo h3.pribehy-skupina{display:flex; align-items:center; gap:10px; margin:18px 8px 6px; font-family:var(--pismo-text); font-size:.72rem; font-weight:700;
+  line-height:1.2; letter-spacing:.1em; text-transform:uppercase; color:var(--text3)}
+.rejstrik .od-telo h3.pribehy-skupina::after{content:""; flex:1; height:1px; background:var(--linka)}
+.rejstrik .starovek-tl[aria-pressed="true"] b{color:var(--akcent)}
+.rejstrik .starovek-tl[aria-pressed="true"] b::after{content:""; display:inline-block; width:7px; height:7px; margin-inline-start:8px; border-radius:50%; background:var(--akcent); vertical-align:2px}
+.rejstrik:not(.rejstrik-siroky) .starovek-tl small{max-height:none; opacity:1}
 .st-rejstrik{display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.05fr); grid-template-rows:minmax(0,1fr); min-height:0; flex:1}
 .st-rejstrik > .od-telo{min-height:0}
 .rejstrik .starovek-tl{grid-template-columns:1fr auto; padding:7px 10px; margin:1px 0}
@@ -1671,3 +1678,19 @@ html[lang="en"] .do-ceka-otazka{quotes:"“" "”"} html[lang="it"] .do-ceka-ota
 @media (prefers-reduced-motion: no-preference){
   :is(.s-jezdcem > button, .s-jezdcem > a, .rc-cip, .tl-rodokmen, .k-zdroje-tl, .ostrov-radek button, .typ-jina, .do-akce, .k-porovnat):active{transform:scale(.95)}
 }
+
+.st-nahled-obr.kruh{aspect-ratio:auto; height:230px; display:grid; place-items:center; background:var(--plocha)}
+.st-nahled-obr.kruh img{position:static; width:196px; height:196px; border-radius:50%; object-fit:cover;
+  box-shadow:0 0 0 5px var(--med-ram, #EFE8DA), 0 0 0 6px var(--linka2), 0 14px 26px -14px var(--stin)}
+.st-nahled-leg{list-style:none; margin:12px 0 0; padding:0; display:grid; gap:5px}
+.st-nahled-leg:empty{display:none}
+.st-nahled-leg li{display:flex; align-items:center; gap:9px; font-size:.86rem; color:var(--text)}
+.st-nahled-leg i{width:11px; height:11px; flex:none; border-radius:50%; box-shadow:0 0 0 1.5px var(--sklo2), 0 0 0 2.5px var(--linka2)}
+
+/* pilulky: při najetí (a stisku) se od místa, kde do pilulky vjede kurzor nebo prst, rozlije jemná barva (15. 11. 2026) */
+@property --inkr{syntax:"<length>"; inherits:false; initial-value:0px}
+.inkoust-hover{--inkr:0px; background-image:radial-gradient(circle at var(--ix,50%) var(--iy,50%), var(--ink, color-mix(in srgb, var(--cyan) 14%, transparent)) var(--inkr), transparent calc(var(--inkr) + 1px));
+  transition:--inkr .45s cubic-bezier(.3,.8,.4,1), transform .14s ease, color .2s, border-color .2s}
+.inkoust-hover.vlity{--inkr:220px}
+.scena:not(.rezim-brana) .zalozky .inkoust-hover{--ink:color-mix(in srgb, var(--akcent) 12%, transparent)}
+@media (prefers-reduced-motion: reduce){ .inkoust-hover{transition:none} }

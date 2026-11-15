@@ -7994,11 +7994,12 @@ function nastavTypologii(k, start){
 /* ---------- okno Mapy (medailon pod glóbem): všechny barevné mapy s náhledem – písmo, vitalita a 24 vlastností WALS ----------
    jedna barevná vrstva naráz; výběr okno zavře, aby nezakrývalo mapu (uživatel 26. 9. 2026) */
 function dlazdiceMapy(id, nazev, popis, zap, akce){
-  const b = prvek("button", "mapa-tl"); b.type = "button"; b.setAttribute("aria-pressed", zap ? "true" : "false");
-  const o = prvek("i", "mapa-obr"), u = IKONY["mapa-" + id];
-  if (u) o.style.backgroundImage = "url(" + u + ")";
+  const b = prvek("button", "starovek-tl mapa-polozka"); b.type = "button"; b.dataset.mapa = id; b.setAttribute("aria-pressed", zap ? "true" : "false");
+  const o = prvek("span", "starovek-malba kulata"), u = IKONY["mapa-" + id];
+  if (u) { const i = prvek("img"); i.alt = ""; i.className = "ukazana"; i.src = u; o.appendChild(i); }
   b.appendChild(o);
   const t = prvek("span"); t.appendChild(prvek("b", null, nazev)); t.appendChild(prvek("small", null, popis)); b.appendChild(t);
+  b.insertAdjacentHTML("beforeend", '<svg aria-hidden="true"><use href="#i-dal"/></svg>');
   b.addEventListener("click", function(){
     mapyOkno.close();
     if (!zap) akce();
@@ -8006,6 +8007,17 @@ function dlazdiceMapy(id, nazev, popis, zap, akce){
     nahoruKeGlobu();
   });
   return b;
+}
+/* náhled mapy v rejstříku: snímek glóbu, popis vlastnosti a barvy jejích hodnot */
+function popisMapy(b){
+  const id = b.dataset.mapa, u = IKONY["mapa-" + id];
+  if (id === "vitalita") return {url: u, kruh: true, per: T.vitStranka && T.vitStranka.uvod ? T.vitStranka.uvod : "",
+    legenda: [0, 1, 2, 3, 4, 5, 6].map(function(k){ return ["var(--vit-" + k + ")", T.aes[k][0]]; })};
+  const k = id === "pismo" ? PISMO_K : TYP.vlastnosti.findIndex(function(v){ return v.id === id; });
+  const v = typVl(k); if (!v) return {url: u, kruh: true};
+  const barvy = typBarvy(v);
+  return {url: u, kruh: true, per: (v.popis[T.lang] || v.popis.cs || ""),
+    legenda: v.tridy.map(function(tr, c){ return ["var(" + barvy[c] + ")", tr[T.lang] || tr.cs]; })};
 }
 function postavMapy(){
   mapyOkno.textContent = "";
@@ -8018,16 +8030,16 @@ function postavMapy(){
   telo.appendChild(prvek("p", "od-uvod", T.mapyUvod));
   if (typVlastnost >= 0 || vitalitaZap) {
     const vyp = prvek("button", "typ-vypnout", T.mapyVypnout); vyp.type = "button";
-    vyp.addEventListener("click", function(){ nastavTypologii(-1); nastavBarvyVitality(false); postavMapy(); mapyOkno.querySelector(".mapa-tl").focus(); });
+    vyp.addEventListener("click", function(){ nastavTypologii(-1); nastavBarvyVitality(false); postavMapy(); mapyOkno.querySelector(".mapa-polozka").focus(); });
     telo.appendChild(vyp);
   }
-  telo.appendChild(prvek("h3", "mapy-oblast", T.mapyPrehled));
+  telo.appendChild(prvek("h3", "mapy-oblast pribehy-skupina", T.mapyPrehled));
   let m = prvek("div", "mapy-mriz");
   m.appendChild(dlazdiceMapy("pismo", T.pismoVrstva, T.mapyPismoPopis, typVlastnost === PISMO_K, function(){ nastavTypologii(PISMO_K); }));
   m.appendChild(dlazdiceMapy("vitalita", T.vitalita, T.mapyVitalitaPopis, vitalitaZap, function(){ nastavBarvyVitality(true); }));
   telo.appendChild(m);
   Object.keys(TYP.oblasti).forEach(function(o){
-    telo.appendChild(prvek("h3", "mapy-oblast", TYP.oblasti[o][T.lang] + " · WALS"));
+    telo.appendChild(prvek("h3", "mapy-oblast pribehy-skupina", TYP.oblasti[o][T.lang] + " · WALS"));
     m = prvek("div", "mapy-mriz");
     TYP.vlastnosti.forEach(function(v, k){
       if (v.oblast !== o) return;
@@ -8039,12 +8051,13 @@ function postavMapy(){
   });
   telo.appendChild(prvek("p", "vp-zdroj", T.typologieZdroj));
   mapyOkno.appendChild(telo);
+  rejstrik(mapyOkno, telo, popisMapy);
 }
 function otevriMapy(){
   if (!panelZob.hidden) otevriZobrazeni(false);
   postavMapy();
   if (mapyOkno.showModal) { if (!mapyOkno.open || mapyOkno.dataset.zavira) mapyOkno.showModal(); } else mapyOkno.setAttribute("open", "");
-  const b = mapyOkno.querySelector('.mapa-tl[aria-pressed="true"]'); if (b) b.focus();
+  const b = mapyOkno.querySelector('.mapa-polozka[aria-pressed="true"]'); if (b) b.focus();
 }
 $("tl-mapy").addEventListener("click", function(){ if (this.getAttribute("aria-disabled") !== "true") otevriMapy(); });
 mapyOkno.addEventListener("click", function(e){ if (e.target === mapyOkno) mapyOkno.close(); });
@@ -8946,38 +8959,51 @@ function otevriSekci(sekce){
 }
 /* 7 · rejstřík s náhledem (14. 11. 2026): na širokém okně je nabídka seznam jmen jako v rejstříku knihy a vpravo velká malba
    s podtitulem a úvodem stránky, která se mění podle toho, na čem je myš nebo fokus. Na úzkém okně zůstávají dlaždice. */
-function rejstrikSNahledem(telo){
-  starovekOkno.classList.remove("rejstrik");
+function rejstrikSNahledem(telo){ rejstrik(starovekOkno, telo, popisStranky); }
+/* náhled stránky Jazyků starověku, Příběhů nebo putování: velká malba, podtitul a perex */
+function popisStranky(b){
+  const web = !ARTEFAKT && /^https?:$/.test(location.protocol);
+  const c = b.dataset.civ && STAROVEK_DATA.civilizace.find(function(x){ return x.id === b.dataset.civ; });
+  const pj = b.dataset.put && PUTOVANI.find(function(x){ return x.id === b.dataset.put; });
+  const mala = b.querySelector(".starovek-malba img");
+  let url = mala && mala.src || "";
+  if (web && c) url = "/starovek/" + c.id + "/malba.jpg";
+  else if (web && pj && !pj.obrazek) url = "/malby/" + pj.atlas + ".jpg";
+  else if (web && pj && pj.obrazek) url = "/starovek/" + pj.obrazek + "/malba.jpg";
+  return {url: url, zaloha: mala && mala.src, per: c && c[T.lang] && c[T.lang].perex ? c[T.lang].perex : pj && pj.uvod ? pj.uvod[T.lang] || "" : ""};
+}
+/* 7 · rejstřík (14.–15. 11. 2026): nabídky Jazyků starověku, Příběhů i Map vypadají stejně – seznam jmen jako v rejstříku knihy
+   (v každé šířce okna, bez dlaždic s obrázky); od 980 px je vpravo velký náhled toho, na čem je myš nebo fokus.
+   popis(b) vrací {url, zaloha, per, kruh, legenda: [[css barva, text]]}. */
+function rejstrik(okno, telo, popis){
+  okno.classList.remove("rejstrik-siroky"); okno.classList.add("rejstrik");
   if (!window.matchMedia("(min-width: 980px)").matches) return;
-  starovekOkno.classList.add("rejstrik");
+  okno.classList.add("rejstrik-siroky");
   const nah = prvek("aside", "st-nahled"); nah.setAttribute("aria-live", "polite");
   const ram = prvek("div", "st-nahled-obr"), img = prvek("img"); img.alt = ""; img.decoding = "async"; ram.appendChild(img);
-  const h = prvek("h3"), pod = prvek("p", "st-nahled-pod"), per = prvek("p", "st-nahled-perex");
-  nah.appendChild(ram); nah.appendChild(h); nah.appendChild(pod); nah.appendChild(per);
+  const h = prvek("h3"), pod = prvek("p", "st-nahled-pod"), per = prvek("p", "st-nahled-perex"), leg = prvek("ul", "st-nahled-leg");
+  nah.appendChild(ram); nah.appendChild(h); nah.appendChild(pod); nah.appendChild(per); nah.appendChild(leg);
   const obal = prvek("div", "st-rejstrik"); obal.appendChild(nah);
   telo.parentNode.insertBefore(obal, telo); obal.insertBefore(telo, nah);
-  const web = !ARTEFAKT && /^https?:$/.test(location.protocol);
   let ted = null;
   function ukaz(b){
     if (!b || b === ted) return; ted = b;
     Array.prototype.forEach.call(telo.querySelectorAll(".starovek-tl.akt"), function(x){ x.classList.remove("akt"); });
     b.classList.add("akt");
-    const c = b.dataset.civ && STAROVEK_DATA.civilizace.find(function(x){ return x.id === b.dataset.civ; });
-    const pj = b.dataset.put && PUTOVANI.find(function(x){ return x.id === b.dataset.put; });
-    const mala = b.querySelector(".starovek-malba img");
-    let url = mala && mala.src || "";
-    if (web && c) url = "/starovek/" + c.id + "/malba.jpg";
-    else if (web && pj && !pj.obrazek) url = "/malby/" + pj.atlas + ".jpg";
-    else if (web && pj && pj.obrazek) url = "/starovek/" + pj.obrazek + "/malba.jpg";
+    const d = popis(b);
+    ram.classList.toggle("kruh", !!d.kruh);
     img.classList.remove("ukazana");
-    if (url) { const nove = new Image(); nove.onload = function(){ if (ted === b) { img.src = url; img.classList.add("ukazana"); } }; nove.onerror = function(){ if (mala && ted === b) { img.src = mala.src; img.classList.add("ukazana"); } }; nove.src = url; }
+    if (d.url) { const nove = new Image(); nove.onload = function(){ if (ted === b) { img.src = d.url; img.classList.add("ukazana"); } };
+      nove.onerror = function(){ if (d.zaloha && ted === b) { img.src = d.zaloha; img.classList.add("ukazana"); } }; nove.src = d.url; }
     h.textContent = (b.querySelector("b") || {}).textContent || "";
     pod.textContent = (b.querySelector("small") || {}).textContent || "";
-    per.textContent = c && c[T.lang] && c[T.lang].perex ? c[T.lang].perex : pj && pj.uvod ? pj.uvod[T.lang] || "" : "";
+    per.textContent = d.per || "";
+    leg.textContent = "";
+    (d.legenda || []).forEach(function(x){ const li = prvek("li"), i = prvek("i"); i.style.background = x[0]; li.appendChild(i); li.appendChild(document.createTextNode(x[1])); leg.appendChild(li); });
   }
   telo.addEventListener("pointerover", function(e){ ukaz(e.target.closest(".starovek-tl")); });
   telo.addEventListener("focusin", function(e){ ukaz(e.target.closest(".starovek-tl")); });
-  ukaz(telo.querySelector(".starovek-tl[data-civ]:not(.starovek-prehledy .starovek-tl)") || telo.querySelector(".starovek-tl"));
+  ukaz(telo.querySelector('.starovek-tl[aria-pressed="true"]') || telo.querySelector(".starovek-tl[data-civ]:not(.starovek-prehledy .starovek-tl)") || telo.querySelector(".starovek-tl"));
 }
 $("tl-starovek").addEventListener("click", otevriStarovek);
 $("tl-starovek").hidden = !strankySekce("starovek").length;
@@ -11235,6 +11261,23 @@ function rozlijMalbu(el, staraSrc){
   }
   vse();
   new MutationObserver(vse).observe($("k-telo"), {childList: true, subtree: true});    // záložky se staví s každou kartou
+})();
+
+
+/* pilulky: barva se při najetí rozlije od místa vstupu kurzoru (u dotyku od prstu), při odjetí se stáhne zpátky k místu odchodu */
+(function(){
+  const SEL = ".segment button, .zalozky button, .jazyk-prepinac a, .tl-rodokmen, .k-porovnat, .typ-jina, .k-zdroje-tl, .ostrov-radek button, .k-rychlost button, .rc-cip, .hledej-tip, .vp-predvolby button, .do-akce, .pilulka-ink";
+  function misto(el, e){ const r = el.getBoundingClientRect(); el.style.setProperty("--ix", (e.clientX - r.left) + "px"); el.style.setProperty("--iy", (e.clientY - r.top) + "px"); }
+  document.addEventListener("pointerover", function(e){
+    const el = e.target.closest && e.target.closest(SEL); if (!el || el.contains(e.relatedTarget)) return;
+    if (el.matches('[aria-pressed="true"],[aria-selected="true"],a[aria-current]') && el.closest(".s-jezdcem")) return;
+    el.classList.add("inkoust-hover"); misto(el, e); void el.offsetWidth; el.classList.add("vlity");
+  });
+  document.addEventListener("pointerout", function(e){
+    const el = e.target.closest && e.target.closest(SEL); if (!el || el.contains(e.relatedTarget)) return;
+    misto(el, e); el.classList.remove("vlity");
+  });
+  document.addEventListener("click", function(e){ const el = e.target.closest && e.target.closest(SEL); if (el && el.closest(".s-jezdcem")) el.classList.remove("vlity"); }, true);
 })();
 
 prectiOdkaz();                              // otevřeno přes odkaz na jazyk
