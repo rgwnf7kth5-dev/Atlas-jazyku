@@ -1720,3 +1720,12 @@ html[lang="en"] .do-ceka-otazka{quotes:"“" "”"} html[lang="it"] .do-ceka-ota
   color:var(--text); background:var(--plocha); border:1px solid var(--linka2)}
 .sk-vic:hover{border-color:var(--cyan)}
 @media (prefers-reduced-motion:reduce){ .sk-hlava svg{transition:none} }
+
+/* výraznější pole hledání (uživatel 25. 11. 2026: „okénko na vyhledávání je málo výrazné“): silný rámeček v barvě ovládání,
+   větší písmo a lupa, tmavší nápověda, jemný stín */
+#hledej{padding-block:13px; padding-inline-start:46px; font-size:1.02rem; font-weight:500; border:2px solid var(--cyan);
+  background:color-mix(in srgb, var(--cyan) 5%, var(--vstup)); box-shadow:0 8px 20px -12px var(--cyan-zare)}
+#hledej::placeholder{color:var(--text2); font-weight:500; opacity:1}
+#hledej:focus{box-shadow:0 0 0 4px var(--cyan-slabe), 0 8px 22px -10px var(--cyan-zare)}
+.pole > svg:first-child{width:20px; height:20px; left:15px}
+[dir="rtl"] .pole > svg:first-child{left:auto; right:15px}
