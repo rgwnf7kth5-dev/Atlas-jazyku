@@ -978,6 +978,7 @@ function postavPolici(filtr){
     const izolat = REJSTRIK.r.en.findIndex(function(r){ return /^isolate/.test(r); }),
           znakove = REJSTRIK.r.en.indexOf("sign language");
     const nakonec = function(g){ return g.klic == null || g.klic < 0 || (razeni === "rodiny" && g.klic === izolat) ? 1 : 0; };
+    skupiny.forEach(function(g){ g.konec = nakonec(g) || (razeni === "rodiny" && g.klic === znakove); });
     /* napřed rodina a světadíl jazyka, ve kterém čtenář stránku čte (čeština i angličtina: indoevropská, Eurasie) */
     const domov = PODLE_ID[T.lang] ? (razeni === "svetadil" ? OBLAST_ATLASU[T.lang] : RODINA_ATLASU[T.lang]) : null;
     const doma = function(g){ return g.klic === domov ? 0 : 1; };
@@ -1008,10 +1009,10 @@ function postavPolici(filtr){
       sekce.appendChild(m); seznam.appendChild(sekce);
     }
   }
-  fronta = skupiny;
-  seznam.appendChild(zarazka);
-  pridavej(true);
-  hlidej();
+  /* bez hledání je police rejstřík: skupiny jsou sbalené řádky, jazyky se ukážou až po rozbalení (uživatel 25. 11. 2026:
+     nekonečný proud 8 000 dlaždic „je nepoužitelný“); výsledky hledání a dotazů se dál vypisují rovnou */
+  if (!hledane && !mnozina) { fronta = []; seznam.appendChild(zarazka); zarazka.hidden = true; rejstrikPolice(skupiny); hlidej(); }
+  else { fronta = skupiny; seznam.appendChild(zarazka); pridavej(true); hlidej(); }
 
   if (!polozky.length && !vymNalez && !kartaAIzde) {          // pod nabídkou AI hláška „nic nenalezeno“ jen mátla
     const p = document.createElement("p"); p.className = "prazdno"; p.textContent = T.nicNenalezeno; seznam.insertBefore(p, zarazka);
@@ -1020,6 +1021,68 @@ function postavPolici(filtr){
   $("pocet").textContent = !polozky.length && kartaAIzde ? "" : t(hledane ? "nalezeno" : "vychoziPocet",   // „Našlo se: 0 jazyků“ vedle odpovědi AI mátlo
     {a: cislo(polozky.length) + " " + tvar(polozky.length, T.jazyk), b: cislo(sPozdravem)});
   if (window.obnovCipy) window.obnovCipy();
+}
+/* rejstřík police: řádek skupiny (název, počet) → po rozbalení jazyky s pozdravem a tlačítko „Další jazyky (n)“,
+   které přidává ostatní jazyky skupiny po 120. Rodiny pod 25 jazyků jsou pohromadě pod „Menší rodiny“.
+   Co je rozbalené, se pamatuje do příštího překreslení (podle řazení). */
+const SK_OTEVRENE = {}, SK_DAVKA = 120, SK_MALA = 25;
+function rejstrikPolice(skupiny){
+  const otevrene = SK_OTEVRENE[razeni] || (SK_OTEVRENE[razeni] = new Set());
+  const radek = function(g, kam){
+    const sekce = prvek("section", "rodina sk"), h = document.createElement("h2"), b = prvek("button", "sk-hlava"), telo = prvek("div", "sk-telo");
+    b.type = "button"; b.setAttribute("aria-expanded", "false"); telo.hidden = true;
+    if (razeni === "rodiny") { const tc = prvek("span", "sk-tecka"); tc.style.background = g.barva || "var(--linka2)"; b.appendChild(tc); }   // bez jazyka atlasu šedá tečka, ať názvy lícují
+    b.appendChild(prvek("span", "sk-nazev", g.nazev));
+    b.appendChild(prvek("span", "sk-pocet", cislo(g.pocet != null ? g.pocet : g.s.length + g.bez.length)));
+    b.insertAdjacentHTML("beforeend", '<svg aria-hidden="true"><use href="#i-dal"/></svg>');
+    h.appendChild(b); sekce.appendChild(h); sekce.appendChild(telo);
+    let postaveno = false;
+    const prepni = function(ano){
+      b.setAttribute("aria-expanded", ano ? "true" : "false"); telo.hidden = !ano;
+      if (ano) otevrene.add(g.klic); else otevrene.delete(g.klic);
+      if (ano && !postaveno) { postaveno = true; if (g.deti) g.deti.forEach(function(d){ radek(d, telo); }); else naplnSkupinu(g, telo); }
+      pripravKlavesnici();
+    };
+    b.addEventListener("click", function(){ prepni(telo.hidden); });
+    kam.appendChild(sekce);
+    if (otevrene.has(g.klic)) prepni(true);
+  };
+  let hlavni = skupiny, male = [];
+  if (razeni === "rodiny") {
+    male = skupiny.filter(function(g){ return !g.konec && g.s.length + g.bez.length < SK_MALA; });
+    if (male.length < 2) male = [];
+    hlavni = skupiny.filter(function(g){ return male.indexOf(g) < 0; });
+  }
+  const obal = prvek("div", "sk-rejstrik");
+  hlavni.filter(function(g){ return !g.konec; }).forEach(function(g){ radek(g, obal); });
+  if (male.length) radek({klic: "mensi", nazev: T.prehled.mensi, pocet: male.reduce(function(a, g){ return a + g.s.length + g.bez.length; }, 0), deti: male}, obal);
+  hlavni.filter(function(g){ return g.konec; }).forEach(function(g){ radek(g, obal); });
+  seznam.insertBefore(obal, zarazka);
+  pripravKlavesnici();
+}
+function naplnSkupinu(g, telo){
+  if (g.s.length) {
+    const m = prvek("div", "mrizka");
+    g.s.forEach(function(p){ m.appendChild(dlazdice(p.j)); });
+    telo.appendChild(m);
+  }
+  if (!g.bez.length) return;
+  const m2 = prvek("div", "mrizka drobne"), vic = prvek("button", "sk-vic pilulka-ink"); vic.type = "button";
+  let od = 0;
+  const pridej = function(n){
+    const do_ = Math.min(g.bez.length, od + n);
+    for (; od < do_; od++) {
+      const i = g.bez[od].i;
+      const tl = tlacitko(g.bez[od].jm, razeni === "abeceda" ? velke(REJSTRIK.rr[B[i][3]]) : kdeBod(i), null, "tecka-jaz");
+      tl.addEventListener("click", function(){ vyberBod(i); });
+      m2.appendChild(tl);
+    }
+    if (od >= g.bez.length) vic.remove(); else vic.textContent = t("dalsiJazyky", {a: cislo(g.bez.length - od)});
+    pripravKlavesnici();
+  };
+  telo.appendChild(m2); telo.appendChild(vic);
+  vic.addEventListener("click", function(){ const prvni = m2.children.length; pridej(SK_DAVKA); if (m2.children[prvni]) zamerDlazdici(m2.children[prvni]); });
+  pridej(g.s.length ? 0 : Math.min(40, SK_DAVKA));       // skupina bez jazyků s pozdravem ukáže rovnou prvních čtyřicet
 }
 /* dávkové kreslení police: dalších ~240 dlaždic, když se k jejímu konci doroluje */
 const zarazka = document.createElement("div"); zarazka.className = "zarazka";
@@ -1058,7 +1121,7 @@ function pridavej(prvni){
    Dlaždic je až 8 000, proto se tabulátorem do seznamu vstoupí jen jednou (na jednu dlaždici, tabindex 0)
    a mezi dlaždicemi se chodí šipkami: vlevo/vpravo o jednu, nahoru/dolů o řádek (nejbližší dlaždice pod/nad),
    Home/End na začátek a konec, PageUp/PageDown o deset řádků. Další Tab seznam opustí. */
-const DLAZDICE = "#seznam .mrizka > button, #seznam button.jazyk-dne, #seznam .dj-jazyky > button";
+const DLAZDICE = "#seznam .mrizka > button, #seznam button.jazyk-dne, #seznam .dj-jazyky > button, #seznam .sk-hlava, #seznam .sk-vic";
 let aktivniDlazdice = null;
 function pripravKlavesnici(){
   const vse = seznam.querySelectorAll(DLAZDICE);

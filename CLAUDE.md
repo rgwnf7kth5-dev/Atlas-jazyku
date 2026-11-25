@@ -467,6 +467,11 @@ aby fungovaly absolutní cesty /malby, /starovek).
   (`.mala`) má tlačítka vpravo a polohu schovanou.
 - **Kouzlo výběru**: let k jazyku s „poskokem“ (u daleké cesty se glóbus cestou oddálí), po doletu se území
   rozlije vlnou od domovské tečky (`ODHALENI`, 950 ms) a oblouky k příbuzným vystřelí jeden po druhém.
+- **Police je od 25. 11. 2026 rejstřík** (uživatel k nekonečnému proudu 8 000 dlaždic: „to je nepoužitelné“; návrh schválil): bez
+  hledání jsou skupiny (rodiny / písmena / světadíly) **sbalené řádky** s názvem a počtem (`rejstrikPolice`, `.rodina.sk`, `.sk-hlava`);
+  rozbalení ukáže jazyky s pozdravem a tlačítko „Další jazyky (n)“ (`.sk-vic`, `naplnSkupinu`), které přidává ostatní po 120. Rodiny
+  pod 25 jazyků jsou pod řádkem „Menší rodiny“ (vnořené řádky), znakové a izolované na konci. Rozbalené skupiny se pamatují do
+  překreslení (`SK_OTEVRENE`). **Výsledky hledání a dotazů se vypisují rovnou jako dřív** (dávky `pridavej`). Proud všech dlaždic nevracet.
 - **Police ukazuje všechny jazyky**, ne jen atlas (uživatel: jen pár desítek působilo neúplně). Ve skupině jsou
   napřed jazyky z atlasu jako velké dlaždice s pozdravem, pod nimi „Další jazyky“ z rejstříku jako malé dlaždice
   (podtitul stát, u abecedy rodina). Řazení podle rodin (rodiny Glottologu od největší, izolované jazyky na konec) /
