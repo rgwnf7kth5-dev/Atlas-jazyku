@@ -279,16 +279,9 @@ function jazykDne(){
   if (s) return {j: jazykZDne(s), duvod: s[T.lang]};
   const j = jazykCesty(den);
   if (!j) return null;
-  const vcera = new Date(dnes.getTime() - 864e5), sv = svatekDne(vcera), pred = sv ? jazykZDne(sv) : jazykCesty(den - 1);
-  if (vcera.getMonth() === 8 && vcera.getDate() === 26) return {j: j, duvod: T.cestaPoDniJazyku};   // včera byl Evropský den jazyků, ne Jazyk dne
-  if (!pred || pred === j) return {j: j, duvod: T.cestaUvod};
-  const za = stredJazyka(pred), na = stredJazyka(j);
-  if (!za || !na) return {j: j, duvod: T.cestaUvod};   // tečka bez polohy (esperanto): směr nejde spočítat
-  const c = smerCesty(za, na);
-  const km = c.km < 30 ? 0 : c.km < 1000 ? Math.round(c.km / 10) * 10 : Math.round(c.km / 50) * 50;
-  /* uprostřed věty česky malým písmenem („u jazyka čeština“); vlastní jména jako Tok Pisin nechat */
-  const jm = (T.lang === "cs" && /ina( |$)|jazyk/.test(pred.n)) || ((T.lang === "it" || T.lang === "fr") && pred.id !== "tpi") ? pred.n.charAt(0).toLowerCase() + pred.n.slice(1) : pred.n;   // italsky názvy jazyků malým
-  return {j: j, duvod: km ? t("cestaDuvod", {a: jm, km: cislo(km), smer: T.svetoveStrany[c.smer]}) : t("cestaVedle", {a: jm})};
+  /* v běžný den bez důvodu (uživatel 25. 11. 2026: „Postup kolem světa… o 260 km dál na jih“ je „totálně pitomé a nesmyslné“):
+     odstavec „Proč dnes?“ je jen u dne opravdu spojeného s jazykem; pořadí jazyků (CESTA) zůstává. Nevracet. */
+  return {j: j, duvod: null};
 }
 let razeni = "rodiny";
 try { razeni = localStorage.getItem("atlas-razeni") || "rodiny"; } catch (e) {}

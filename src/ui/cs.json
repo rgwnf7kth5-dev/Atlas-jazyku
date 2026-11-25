@@ -548,7 +548,7 @@
      "Do pole hledání lze napsat i otázku běžnou větou: „jakými jazyky se mluví v Brazílii“ (jazyky státu), „najdi všechny slovanské jazyky“ (rodina nebo větev podle Glottologu), „co má společného němčina s italštinou“ (srovnání dvou jazyků) nebo „kde se mluví persky“. Nahoře v seznamu se objeví, čemu hledání rozumělo, a seznam ukáže příslušné jazyky; tlačítko nebo klávesa Enter je ukáže na glóbu. Odpověď vychází jen z dat atlasu.",
      "Když hledání otázce nerozumí, nabídne tlačítko Zeptat se AI: umělá inteligence (Claude od firmy Anthropic) si vyhledá údaje v datech atlasu, co v nich není, dohledá na webu (zdroje vypíše), a odpoví několika větami; výsledek zároveň ukáže na glóbu. Odpovídá jen na otázky o jazycích a může se mýlit. Na webu, ne v offline kopii.",
      "Řazení podle jazykových rodin, abecedy nebo světadílů. Jazyky s podrobnou kartou jsou uvedeny jako velké dlaždice, ostatní pod nimi.",
-     "Jazyk dne se mění o půlnoci a vždy uvádí důvod výběru: buď je to den spojený s daným jazykem (viz Kalendář jazykových dnů), nebo postup kolem světa k nejbližšímu dalšímu jazyku. Na Evropský den jazyků (26. září) jsou místo něj uvedeny všechny evropské jazyky atlasu.",
+     "Jazyk dne se mění o půlnoci. V den spojený s určitým jazykem (viz Kalendář jazykových dnů) uvádí důvod výběru; v ostatní dny se jazyky atlasu postupně střídají. Na Evropský den jazyků (26. září) jsou místo něj uvedeny všechny evropské jazyky atlasu.",
      "Čipy nad seznamem ukazují šest největších jazykových rodin a počet jejich jazyků. Klepnutím se rodina ukáže v seznamu i na glóbu, druhým klepnutím se výběr zruší."
     ]
    },

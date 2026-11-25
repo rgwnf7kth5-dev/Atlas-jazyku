@@ -477,7 +477,9 @@ aby fungovaly absolutní cesty /malby, /starovek).
   přechod „východu slunce“ `#C2410C → #BE185D → #7E22CE` (bílý text min. 5,2 : 1), bílý štítek s hvězdičkou a dnešním
   datem, velký pozdrav, zajímavost a tlačítko „Ukaž mi ho na glóbu“. Barvu rodiny nepoužívá, aby nevypadal jako další dlaždice.
   Jazyk se mění o půlnoci místního času.
-  **Jazyk dne má vždy důvod** („Proč dnes?“, přání uživatele 25. 9. 2026). Význačné dny jsou v `data/dny-jazyku.json`
+  **Od 25. 11. 2026 má Jazyk dne odstavec „Proč dnes?“ jen ve význačný den** – větu „Postup kolem světa: … o 260 km dál na jih“ uživatel
+  označil za „totálně pitomou a nesmyslnou“; v běžný den je jen zajímavost, pořadí `CESTA` zůstává. Nevracet. Níže popsané texty cesty se už neukazují.
+  **Jazyk dne měl dřív vždy důvod** („Proč dnes?“, přání uživatele 25. 9. 2026). Význačné dny jsou v `data/dny-jazyku.json`
   (MM-DD → jazyk a důvod cs/en: dny jazyků OSN a UNESCO, národní dny jazyka, státní svátky, výročí; validace
   hlídá tvar, jazyk a oba texty; 60 dní – 23. 4. je v OSN den angličtiny i španělštiny, karta ukáže angličtinu a zmíní obě,
   romština má 8. 4. Mezinárodní den Romů i 5. 11. Mezinárodní den romského jazyka). **Každý důvod musí být pravdivý** – nový den ověřit. Ostatní dny Jazyk dne
