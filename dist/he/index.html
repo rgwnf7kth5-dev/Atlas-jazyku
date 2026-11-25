@@ -1746,6 +1746,16 @@ html[lang="en"] .do-ceka-otazka{quotes:"“" "”"} html[lang="it"] .do-ceka-ota
 .pole > svg:first-child{width:20px; height:20px; left:15px}
 [dir="rtl"] .pole > svg:first-child{left:auto; right:15px}
 
+/* Jazyk dne nahoře nad hledáním (25. 11. 2026): celá police roluje v .police-rol, hledání se při rolování přichytí nahoře */
+.police-rol{flex:1; min-height:0; overflow-y:auto; scrollbar-width:thin; scrollbar-color:var(--linka2) transparent}
+.police-rol > .seznam{overflow:visible; flex:none; min-height:0}
+.police-rol > .hledani{position:sticky; top:0; z-index:3; background:#0B1226}
+:root[data-theme="light"] .police-rol > .hledani{background:#fff}
+.jd-misto{padding:14px 16px 0}
+.jd-misto:empty{display:none}
+.jd-misto > *{margin-top:0}
+@media (max-width:920px){ .police-rol{overflow:visible} .police-rol > .hledani{position:static} }
+
 /* ---------- jazyky starověku: stránka o civilizaci jako list ilustrované encyklopedie (okno nad glóbem i web) ----------
    Papír a inkoust jako u akvarelů na kartách; v tmavém vzhledu sépiová noc. Barvy jen tady, přes --civ-*. */
 .civ{
@@ -2252,6 +2262,8 @@ html[lang="en"] .do-ceka-otazka{quotes:"“" "”"} html[lang="it"] .do-ceka-ota
   </section>
 
   <aside class="police sklo" aria-label="רשימת השפות" data-t-aria-label="seznam">
+   <div class="police-rol" id="police-rol">
+   <div class="jd-misto" id="jd-misto"></div>
    <div class="hledani">
     <label class="pole">
      <svg aria-hidden="true"><use href="#i-lupa"/></svg>
@@ -2270,6 +2282,7 @@ html[lang="en"] .do-ceka-otazka{quotes:"“" "”"} html[lang="it"] .do-ceka-ota
      <button class="tl hlavni" id="tl-nahoda" type="button"><svg aria-hidden="true"><use href="#i-kostka"/></svg><span data-t="prekvap">שפה אקראית</span></button></div>
    </div>
    <div class="seznam" id="seznam"></div>
+   </div>
    <footer class="paticka">
    <details class="pat-det" id="paticka-det">
    <summary><svg aria-hidden="true"><use href="#i-kniha"/></svg><span data-t="patickaSouhrn">אודות, מקורות, יצירת קשר, מדריך ולוח שנה</span><svg class="pat-sipka" aria-hidden="true"><use href="#i-dal"/></svg></summary>
@@ -2291,6 +2304,6 @@ html[lang="en"] .do-ceka-otazka{quotes:"“" "”"} html[lang="it"] .do-ceka-ota
  <dialog class="civ-okno" id="civ-okno" aria-labelledby="civ-nadpis"></dialog>
 </div>
 
-<script src="../js/atlas.ad75c4b7e9.js"></script>
+<script src="../js/atlas.a2121a2e49.js"></script>
 </body>
 </html>

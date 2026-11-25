@@ -478,6 +478,9 @@ aby fungovaly absolutní cesty /malby, /starovek).
   A–Z (česky i Č, Ch, Ř, Š, Ž) / světadílů (`atlas-razeni`). Filtry i hledání platí i tady. Dlaždic je skoro 8 000,
   proto se kreslí po dávkách 240 (`pridavej`, zarážka hlídaná `IntersectionObserver`).
   Skupiny začínají tam, kde je čtenář doma: u rodin indoevropská (rodina češtiny i angličtiny), u světadílů Eurasie.
+- **Jazyk dne je úplně nahoře nad hledáním** (25. 11. 2026, uživatel: „Jazyk dne dát úplně nahoru a až pod ním vyhledávání“): `#jd-misto`
+  před `.hledani`, obojí i `#seznam` v jednom rolovacím obalu `#police-rol` (seznam sám už neroluje); hledání je `position:sticky`,
+  takže po odrolování Jazyka dne zůstane nahoře. Při hledání a dotazech `#jd-misto` zmizí. Na telefonu roluje stránka jako dřív.
 - **Jazyk dne** nahoře v polici musí být vidět (uživatel: malý a v barvě rodiny si ho nikdo nevšiml). Má vlastní
   přechod „východu slunce“ `#C2410C → #BE185D → #7E22CE` (bílý text min. 5,2 : 1), bílý štítek s hvězdičkou a dnešním
   datem, velký pozdrav, zajímavost a tlačítko „Ukaž mi ho na glóbu“. Barvu rodiny nepoužívá, aby nevypadal jako další dlaždice.

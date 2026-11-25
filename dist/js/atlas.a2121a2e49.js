@@ -5832,8 +5832,11 @@ function postavPolici(filtr){
   $("hledej-x").hidden = !$("hledej").value;
   if ($("hledej-tip")) $("hledej-tip").hidden = !!$("hledej").value;
   seznam.textContent = "";
+  /* Jazyk dne (a karta Evropského dne jazyků) stojí úplně nahoře nad hledáním (uživatel 25. 11. 2026); roluje se s policí pryč,
+     hledání zůstává přichycené. Při hledání a dotazech místo zmizí. */
+  const jdMisto = $("jd-misto"); jdMisto.textContent = "";
   const evropskyDen = !hledane && !mnozina && denJazyku();
-  if (evropskyDen) seznam.appendChild(kartaDneJazyku());
+  if (evropskyDen) jdMisto.appendChild(kartaDneJazyku());
   let kartaAIzde = null;
   if (dotaz) {
     seznam.appendChild(kartaDotazu(dotaz));
@@ -5858,7 +5861,7 @@ function postavPolici(filtr){
       tl.appendChild(cta);
       if (KRAJINY[d.id] && typeof AKVARELY !== "undefined") { const m = prvek("span", "jd-malba"); vlozMalbu(m, d.id); tl.insertBefore(m, tl.firstChild); tl.classList.add("s-malbou"); }
       tl.addEventListener("click", function(){ if (d.bod >= 0) vyberBod(d.bod); else vyber(d.id); });
-      seznam.appendChild(tl);
+      jdMisto.appendChild(tl);
     }
   }
   ["starovek", "pribehy"].forEach(function(sk){ const ks = hledane ? kartaStarovek(hledane, sk) : null; if (ks) seznam.appendChild(ks); });   /* jazyky starověku jen při hledání; jinak ikona chrámu v záhlaví */
@@ -6095,12 +6098,12 @@ function hlidej(){
   if (hlidac) hlidac.disconnect();
   if (!fronta.length) return;
   if (!("IntersectionObserver" in window)) { while (fronta.length) pridavej(); return; }
-  const vlastniRolovani = getComputedStyle(seznam).overflowY !== "visible";
+  const rol = $("police-rol"), vlastniRolovani = getComputedStyle(rol).overflowY !== "visible";
   hlidac = new IntersectionObserver(function(zaznamy){
     if (!zaznamy.some(function(z){ return z.isIntersecting; })) return;
     pridavej();
     hlidej();                  // znovu pozorovat: když je zarážka pořád na očích, přijde další dávka
-  }, {root: vlastniRolovani ? seznam : null, rootMargin: "900px 0px"});
+  }, {root: vlastniRolovani ? rol : null, rootMargin: "900px 0px"});
   hlidac.observe(zarazka);
 }
 /* podtitul malé dlaždice: první stát (a kolik dalších), jinak světadíl */
@@ -7689,7 +7692,7 @@ function domu(){
   otevriZobrazeni(false);
   odznac(); zhasniZemi();
   if ($("hledej").value) { $("hledej").value = ""; postavPolici(""); }
-  seznam.scrollTop = 0;
+  seznam.scrollTop = 0; $("police-rol").scrollTop = 0;
   if (globusOk) letKe([15, 25], 1);
   if (!ARTEFAKT && history.replaceState) { try { history.replaceState(null, "", location.pathname); obnovOdkazJinam(); } catch (e) {} }
   window.scrollTo({top: 0, behavior: bezPohybu.matches ? "auto" : "smooth"});
