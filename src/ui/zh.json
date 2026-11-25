@@ -263,6 +263,7 @@
   "W"
  ],
  "pribuzniAtlas": "图集中的亲属语言",
+ "pribuzniProc": "图集中在 Glottolog 谱系树上与其最接近的语言（最多六种）；亲缘程度相同时，地理位置较近者优先。",
  "pribuzniOblouky": "地球仪上的光弧通向它们。",
  "motiv": "切换日间和夜间外观",
  "zemeBezPozdravuDen": "图集中暂无这个国家附有详细卡片的语言。点击圆点可打开各个语言。",

@@ -1042,7 +1042,7 @@ h1{font-family:var(--pismo-nadpis); font-weight:600; font-size:clamp(1.6rem,3.2v
 .scena:not(.rezim-brana) .zalozky button[aria-selected="true"]{background:color-mix(in srgb, var(--akcent) 16%, var(--listek)); color:var(--text); box-shadow:none}
 /* linkovaný spodek a dírka na konci lístku */
 .scena:not(.rezim-brana) .k-telo{padding:8px 16px 44px; position:relative;
-  background-image:repeating-linear-gradient(to bottom, transparent 0 31px, var(--linka-listku) 31px 32px)}
+  background:linear-gradient(var(--linka-listku), var(--linka-listku)) left bottom 43px / 100% 1px no-repeat}   /* jen jedna linka nad dírkou: linky po 32 px vedly přes text záložek (25. 11. 2026) */
 .scena:not(.rezim-brana) .k-telo::after{content:""; position:absolute; left:50%; bottom:14px; width:14px; height:14px; margin-inline-start:-7px; border-radius:50%;
   background:var(--dirka); box-shadow:inset 0 1px 3px rgba(0,0,0,.4)}
 @media (max-width:920px){
@@ -1711,6 +1711,10 @@ html[lang="en"] .do-ceka-otazka{quotes:"“" "”"} html[lang="it"] .do-ceka-ota
 .scena:not(.rezim-brana) .zalozky .inkoust-hover{--ink:color-mix(in srgb, var(--akcent) 12%, transparent)}
 @media (prefers-reduced-motion: reduce){ .inkoust-hover{transition:none} }
 
+/* 25. 11. 2026: hláška o hlasu na lístku je světlá (černý štítek se k papíru nehodil), vynechávka v cestě rodokmenu není tlačítko */
+.scena:not(.rezim-brana) .karta .stav{background:color-mix(in srgb, var(--text) 6%, var(--listek)); color:var(--text2); border:1px solid var(--linka-listku)}
+.k-cesta-vynech{color:var(--text3); font-size:.8rem; padding:0 2px}
+
 /* ---------- jazyky starověku: stránka o civilizaci jako list ilustrované encyklopedie (okno nad glóbem i web) ----------
    Papír a inkoust jako u akvarelů na kartách; v tmavém vzhledu sépiová noc. Barvy jen tady, přes --civ-*. */
 .civ{
@@ -2256,6 +2260,6 @@ html[lang="en"] .do-ceka-otazka{quotes:"“" "”"} html[lang="it"] .do-ceka-ota
  <dialog class="civ-okno" id="civ-okno" aria-labelledby="civ-nadpis"></dialog>
 </div>
 
-<script src="js/atlas.6ff91a64c7.js"></script>
+<script src="js/atlas.d51303e787.js"></script>
 </body>
 </html>

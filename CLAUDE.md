@@ -401,6 +401,13 @@ na konci `styles.css`, texty jsou klíče `ovl…` ve všech `src/ui/*.json` a n
     vlastní pozadí potlačené. Pilulky se při stisku zmáčknou na 0,95. Bublina medailonů je od téhož dne světlá (sklo jako panely),
     černá se uživateli nelíbila. Jezdec v klidu nebyl vidět („žádné změny nevidím“), proto mají pilulky navíc **inkoustové
     najetí**: od místa kurzoru se rozlije kruh akcentu (`.inkoust-hover`, `@property --inkr`, `--ix/--iy`), při stisku víc (`.vlity`).
+**Kontrola karty (25. 11. 2026, uživatel: „karta je strašně nepřehledná… nefunguje přehrávání… mišmaš znaků“):** u rychlosti stálo
+„NaN×“ – `obnovRychlost` procházela i vložený `.jezdec` (teď jen `[data-r]`; **do skupiny s jezdcem nesahat přes `children`**).
+Přehrávání: události zrušeného hlášení nepřepisují stav nového (`hlaseniC`), němý hlas (nezačne do 1,6 s nebo „domluví“ do 140 ms)
+se zkusí bez pevného hlasu, pak výslovnost záložním hlasem, teprve pak chyba; skutečný zvuk odsud ověřit nejde. Linky lístku už
+nevedou přes text záložek (jen jedna nad dírkou), hláška o hlasu je světlá, „…“ v cestě rodokmenu není tlačítko, u Příbuzných je
+věta, proč zrovna tyto jazyky (`pribuzniProc`, 7 jazyků – he a zh bez nezávislé kontroly). Návrhy přestavby karty (zdvojené údaje,
+záložka Zajímavost jako sběrný koš, anglická jména nářečí) čekají na rozhodnutí uživatele.
 Vše respektuje `prefers-reduced-motion`. Testy v Playwrightu (`pw/zaklad.cjs` ve scratchpadu: dist přes `page.route` na falešné doméně,
 aby fungovaly absolutní cesty /malby, /starovek).
 

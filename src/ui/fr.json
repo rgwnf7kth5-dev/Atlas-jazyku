@@ -263,6 +263,7 @@
   "O"
  ],
  "pribuzniAtlas": "Langues apparentées dans l’atlas",
+ "pribuzniProc": "Jusqu’à six langues de l’atlas les plus proches dans l’arbre généalogique de Glottolog ; à parenté égale, la plus proche géographiquement passe en premier.",
  "pribuzniOblouky": "Des arcs lumineux sur le globe y mènent.",
  "motiv": "Basculer entre l’affichage de jour et de nuit",
  "zemeBezPozdravuDen": "L’atlas ne contient encore aucune langue de ce pays dotée d’une fiche détaillée. Chaque langue peut être ouverte en cliquant sur les points.",

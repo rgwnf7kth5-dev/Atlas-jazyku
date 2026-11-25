@@ -3450,6 +3450,7 @@ function ukazKartu(j){
       li.appendChild(b); seznamP.appendChild(li);
     });
     pribuzni.appendChild(seznamP);
+    pribuzni.appendChild(prvek("p", "pozn", T.pribuzniProc));      // proč zrovna tyto jazyky (uživatel 25. 11. 2026: „není jasné, proč je tam seznam zrovna těch jazyků“)
     if (globusOk) pribuzni.appendChild(prvek("p", "pozn", tx("pribuzniOblouky")));
   }
   zalozky([
@@ -3567,6 +3568,7 @@ function cestaRodokmenu(i){
   zobraz.push(jmenoBodu(i));
   zobraz.forEach(function(n, k){
     if (k) nav.appendChild(prvek("span", "k-cesta-sip", "›"));
+    if (n === "…") { nav.appendChild(prvek("span", "k-cesta-vynech", n)); return; }
     const b = prvek("button", k === zobraz.length - 1 ? "posledni" : null, n);
     b.type = "button";
     b.addEventListener("click", function(){ strom.otevriPro(i); });
@@ -3714,7 +3716,7 @@ let rychlostHlasu = 1;
 try { const r = parseFloat(localStorage.getItem("atlas-rychlost")); if ([1, 0.75, 0.5].indexOf(r) >= 0) rychlostHlasu = r; } catch (e) {}
 const tlRychlost = $("k-rychlost");
 function obnovRychlost(){
-  Array.prototype.forEach.call(tlRychlost.children, function(b){ const r = +b.dataset.r; b.textContent = cislo(r, r === 1 ? 0 : 2).replace(/0$/, "") + "×"; b.setAttribute("aria-pressed", r === rychlostHlasu ? "true" : "false"); });
+  Array.prototype.forEach.call(tlRychlost.querySelectorAll("[data-r]"), function(b){ const r = +b.dataset.r; b.textContent = cislo(r, r === 1 ? 0 : 2).replace(/0$/, "") + "×"; b.setAttribute("aria-pressed", r === rychlostHlasu ? "true" : "false"); });
 }
 tlRychlost.addEventListener("click", function(e){
   const b = e.target.closest("[data-r]"); if (!b) return;
@@ -3745,16 +3747,41 @@ tlPrehraj.addEventListener("click", function(){
   if (rodily) { text = j.pis.replace(/[!¡?¿]/g, ""); hlas = rodily; rychlost = 0.8; stav.textContent = T.zvukRodily; }
   else if (zalozni) { text = T.lang === "en" || zh ? j.t.en.prep.toLowerCase() : j.prep; hlas = zalozni; rychlost = 0.75; stav.textContent = T.zvukZalozni; }
   else { stav.textContent = t("zvukZadny", {x: j.prep}); return; }
-  try {
-    const u = new SpeechSynthesisUtterance(text);
-    u.voice = hlas; u.lang = hlas.lang; u.rate = rychlost * rychlostHlasu;
-    popisPrehraj.textContent = T.posloucha;
-    prubehHlasu(u, text.length, rychlost * rychlostHlasu);
-    u.onend = function(){ popisPrehraj.textContent = T.znovu; prubehHlasu(null); };
-    u.onerror = function(){ popisPrehraj.textContent = T.znovu; prubehHlasu(null); stav.textContent = t("zvukChyba", {x: j.prep}); };
-    window.speechSynthesis.cancel(); window.speechSynthesis.speak(u);
-  } catch (e) { stav.textContent = t("zvukChyba", {x: j.prep}); }
+  /* 25. 11. 2026 (uživatel: „nefunguje přehrávání“): události starého hlášení (zrušeného cancel()) nesmějí přepsat stav nového;
+     když hlas mlčí (nezačne, nebo skončí hned), zkusí se bez pevně zvoleného hlasu a pak výslovnost záložním hlasem;
+     teprve potom se ohlásí chyba. Hlášení se drží v proměnné, jinak ho Safari může uklidit dřív, než domluví. */
+  const ss = window.speechSynthesis, cislo1 = ++hlaseniC, rate = rychlost * rychlostHlasu;
+  const pokusy = [{text: text, hlas: hlas, lang: hlas.lang}];
+  if (rodily) { pokusy.push({text: text, hlas: null, lang: j.kod});
+    if (zalozni) pokusy.push({text: T.lang === "en" || zh ? j.t.en.prep.toLowerCase() : j.prep, hlas: zalozni, lang: zalozni.lang, zprava: T.zvukZalozni, rate: 0.75 * rychlostHlasu}); }
+  const selhalo = function(){ popisPrehraj.textContent = T.znovu; prubehHlasu(null); stav.textContent = t("zvukChyba", {x: j.prep}); };
+  const zkus = function(k){
+    if (cislo1 !== hlaseniC) return;
+    const pk = pokusy[k]; if (!pk) { selhalo(); return; }
+    let zacalo = false, hotovo = false; const t0 = performance.now();
+    const dalsi = function(){ if (hotovo || cislo1 !== hlaseniC) return; hotovo = true; clearTimeout(hlidac); try { ss.cancel(); } catch (e) {} setTimeout(function(){ zkus(k + 1); }, 90); };
+    let hlidac = 0;
+    try {
+      const u = hlaseni = new SpeechSynthesisUtterance(pk.text);
+      if (pk.hlas) u.voice = pk.hlas; u.lang = pk.lang; u.rate = pk.rate || rate;
+      if (pk.zprava) stav.textContent = pk.zprava;
+      popisPrehraj.textContent = T.posloucha;
+      prubehHlasu(u, pk.text.length, u.rate);
+      const hranice = u.onboundary;
+      u.onstart = function(){ zacalo = true; };
+      u.onboundary = function(ev){ zacalo = true; if (hranice) hranice(ev); };
+      u.onend = function(){ if (hotovo || cislo1 !== hlaseniC) return;
+        if (performance.now() - t0 < 140 && pk.text.length > 1) { dalsi(); return; }      // „domluvil“ dřív, než mohl začít: hlas mlčí
+        hotovo = true; clearTimeout(hlidac); popisPrehraj.textContent = T.znovu; prubehHlasu(null); };
+      u.onerror = function(ev){ if (hotovo || cislo1 !== hlaseniC) return; if (ev && (ev.error === "interrupted" || ev.error === "canceled")) return; dalsi(); };
+      try { ss.resume(); } catch (e) {}
+      ss.speak(u);
+      hlidac = setTimeout(function(){ if (!zacalo && !ss.speaking) dalsi(); }, 1600);
+    } catch (e) { dalsi(); }
+  };
+  if (ss.speaking || ss.pending) { ss.cancel(); setTimeout(function(){ zkus(0); }, 90); } else zkus(0);
 });
+let hlaseni = null, hlaseniC = 0;
 
 /* ---------- přepnutí jazyka bez nového listu ---------- */
 const adresa = location.pathname.replace(/index\.html$/, "");
